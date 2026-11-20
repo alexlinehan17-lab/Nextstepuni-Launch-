@@ -1,0 +1,10473 @@
+{
+ "doc": "Biology 2022 Ordinary Level, deferred sitting: reviewed task ledger, carded for the first time.\n\nIndependent visual sweep (2026-11-19), every page rendered and read:\n  * LC025GLP038EV (deferredexams/2022; Sections A and B and Answerbook), 40 pages: p1 cover, p2\n    instructions, p3-p6 Section A Questions 1-7, p7-p9 Section B Questions 8-10, p10 Section C\n    answerbook instructions, p11-p12 graph paper, p13-p39 ruled answer pages, p40 back cover with the\n    copyright notice.\n  * LC025GLP040EV (Section C), 12 pages: p1 cover, p2-p10 Questions 11-17, p11 \"Do not hand this\n    question paper up\", p12 back cover with the copyright notice.\n  * LC025GLP000EV (deferredmarkingschemes/2022), 24 pages: p1 cover, p2 the deferred-scheme note, p3\n    introduction, p4-p5 marking examples, p6-p22 Questions 1-17, p23 blank, p24 back cover.\n\nThe sitting has the June 2022 Ordinary shape (any four of Section A, any one of B, any three of C). The\ndeferred scheme sets out every printed ask, so no card needs the \"prints no answer\" row. Tariffs as the\nscheme prints them: Q1, Q3 and Q7 five answers at 4; Q2, Q4, Q5 and Q6 one ladder each, 6(3) + 2;\nSection B parts (a) 2(3) and (b) 8(3); Section C ladders 5 + 2(2), 3(5) + 6(2) and 2(6) + 6(2) under\neach part's \"Number of correct responses\" table; Q16 and Q17 any two of (a)-(d), each 2(7) + 8(2).\nEvery response on a ladder is carded at the ladder's first rate, and each part's responses are counted\nagainst its table (CHECKSUMS). Two definitions are set over two printed lines that the tables count as\ntwo responses: Q17(c)(i) excretion and Q17(d)(i) evolution, the only count that reaches each table's\nten. Q6's ticks are read from their positions (Wingdings 2 check marks). Numbered asks (Q11(b)(i)1-4,\nQ12(b)(i)1-3, Q12(c)(iii)1-5, Q15(c)(iv)1-2, Q16(a)(ii)1-2, Q16(b)(vi)1-2, Q16(c)(i)1-2,\nQ17(b)(ii)1-3, Q17(c)(ii)1-2, Q17(c)(vi)1-2) are separately counted responses, carded one each. Three\nanswers are printed at the end of their reprint's line (Q12(b)(i)2 \"Nn\", Q12(c)(iii)1 \"XY\", Q17(b)(ii)3\n\"Correct location indicated\") and are read from there. The scheme's completed Punnett square for\nQ12(b)(ii) is that card's solution figure.\n",
+ "reviewedAt": "2026-11-19",
+ "SOURCES": {
+  "038": {
+   "path": "paper-trail-corpus/deferredexams/2022/LC025GLP038EV.pdf",
+   "fileid": "LC025GLP038EV-deferred.pdf",
+   "sha256": "14f2ccdc6780c1a04888070eef7b586977a7b6862d844672ace1ebd651fbaf66",
+   "pages": 40
+  },
+  "040": {
+   "path": "paper-trail-corpus/deferredexams/2022/LC025GLP040EV.pdf",
+   "fileid": "LC025GLP040EV-deferred.pdf",
+   "sha256": "9466381567a8071e8ac1bd4b6cef2e380f669a6e59760ba0a9a31bc021113210",
+   "pages": 12
+  },
+  "scheme": {
+   "path": "paper-trail-corpus/deferredmarkingschemes/2022/LC025GLP000EV.pdf",
+   "fileid": "LC025GLP000EV-deferred.pdf",
+   "sha256": "5eeb83e11eb6395a0c998b4621fc7e9ee99fe1f7088470e45b3f31365b4c6200",
+   "pages": 24
+  }
+ },
+ "PAGE_ROLES": {
+  "038": {
+   "1": "cover",
+   "2": "instructions",
+   "3": "questions",
+   "4": "questions",
+   "5": "questions",
+   "6": "questions",
+   "7": "questions",
+   "8": "questions",
+   "9": "questions",
+   "10": "answerbook-instructions",
+   "11": "graph-paper",
+   "12": "graph-paper",
+   "13": "answer-pages",
+   "14": "answer-pages",
+   "15": "answer-pages",
+   "16": "answer-pages",
+   "17": "answer-pages",
+   "18": "answer-pages",
+   "19": "answer-pages",
+   "20": "answer-pages",
+   "21": "answer-pages",
+   "22": "answer-pages",
+   "23": "answer-pages",
+   "24": "answer-pages",
+   "25": "answer-pages",
+   "26": "answer-pages",
+   "27": "answer-pages",
+   "28": "answer-pages",
+   "29": "answer-pages",
+   "30": "answer-pages",
+   "31": "answer-pages",
+   "32": "answer-pages",
+   "33": "answer-pages",
+   "34": "answer-pages",
+   "35": "answer-pages",
+   "36": "answer-pages",
+   "37": "answer-pages",
+   "38": "answer-pages",
+   "39": "answer-pages",
+   "40": "back-cover"
+  },
+  "040": {
+   "1": "cover",
+   "2": "questions",
+   "3": "questions",
+   "4": "questions",
+   "5": "questions",
+   "6": "questions",
+   "7": "questions",
+   "8": "questions",
+   "9": "questions",
+   "10": "questions",
+   "11": "blank",
+   "12": "back-cover"
+  },
+  "scheme": {
+   "1": "cover",
+   "2": "note",
+   "3": "introduction",
+   "4": "marking-examples",
+   "5": "marking-examples",
+   "6": "marking",
+   "7": "marking",
+   "8": "marking",
+   "9": "marking",
+   "10": "marking",
+   "11": "marking",
+   "12": "marking",
+   "13": "marking",
+   "14": "marking",
+   "15": "marking",
+   "16": "marking",
+   "17": "marking",
+   "18": "marking",
+   "19": "marking",
+   "20": "marking",
+   "21": "marking",
+   "22": "marking",
+   "23": "blank",
+   "24": "back-cover"
+  }
+ },
+ "QUESTION_TOTALS": {
+  "1": 20,
+  "2": 20,
+  "3": 20,
+  "4": 20,
+  "5": 20,
+  "6": 20,
+  "7": 20,
+  "8": 30,
+  "9": 30,
+  "10": 30,
+  "11": 60,
+  "12": 60,
+  "13": 60,
+  "14": 60,
+  "15": 60,
+  "16": 120,
+  "17": 120
+ },
+ "PART_TOTALS": {
+  "8a": 6,
+  "9a": 6,
+  "10a": 6,
+  "8b": 24,
+  "9b": 24,
+  "10b": 24
+ },
+ "BEST_OF": {},
+ "LADDERS": {
+  "2": {
+   "steps": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2
+   ],
+   "notation": "6(3) + 2"
+  },
+  "4": {
+   "steps": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2
+   ],
+   "notation": "6(3) + 2"
+  },
+  "5": {
+   "steps": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2
+   ],
+   "notation": "6(3) + 2"
+  },
+  "6": {
+   "steps": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2
+   ],
+   "notation": "6(3) + 2"
+  },
+  "11a": {
+   "steps": [
+    5,
+    2,
+    2
+   ],
+   "notation": "5 + 2(2)"
+  },
+  "12a": {
+   "steps": [
+    5,
+    2,
+    2
+   ],
+   "notation": "5 + 2(2)"
+  },
+  "13a": {
+   "steps": [
+    5,
+    2,
+    2
+   ],
+   "notation": "5 + 2(2)"
+  },
+  "14a": {
+   "steps": [
+    5,
+    2,
+    2
+   ],
+   "notation": "5 + 2(2)"
+  },
+  "15a": {
+   "steps": [
+    5,
+    2,
+    2
+   ],
+   "notation": "5 + 2(2)"
+  },
+  "11b": {
+   "steps": [
+    5,
+    5,
+    5,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "3(5) + 6(2)"
+  },
+  "12b": {
+   "steps": [
+    5,
+    5,
+    5,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "3(5) + 6(2)"
+  },
+  "13b": {
+   "steps": [
+    5,
+    5,
+    5,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "3(5) + 6(2)"
+  },
+  "14b": {
+   "steps": [
+    5,
+    5,
+    5,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "3(5) + 6(2)"
+  },
+  "15b": {
+   "steps": [
+    5,
+    5,
+    5,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "3(5) + 6(2)"
+  },
+  "11c": {
+   "steps": [
+    6,
+    6,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "2(6) + 6(2)"
+  },
+  "12c": {
+   "steps": [
+    6,
+    6,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "2(6) + 6(2)"
+  },
+  "13c": {
+   "steps": [
+    6,
+    6,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "2(6) + 6(2)"
+  },
+  "14c": {
+   "steps": [
+    6,
+    6,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "2(6) + 6(2)"
+  },
+  "15c": {
+   "steps": [
+    6,
+    6,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "2(6) + 6(2)"
+  },
+  "16a": {
+   "steps": [
+    7,
+    7,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "2(7) + 8(2)"
+  },
+  "16b": {
+   "steps": [
+    7,
+    7,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "2(7) + 8(2)"
+  },
+  "16c": {
+   "steps": [
+    7,
+    7,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "2(7) + 8(2)"
+  },
+  "16d": {
+   "steps": [
+    7,
+    7,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "2(7) + 8(2)"
+  },
+  "17a": {
+   "steps": [
+    7,
+    7,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "2(7) + 8(2)"
+  },
+  "17b": {
+   "steps": [
+    7,
+    7,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "2(7) + 8(2)"
+  },
+  "17c": {
+   "steps": [
+    7,
+    7,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "2(7) + 8(2)"
+  },
+  "17d": {
+   "steps": [
+    7,
+    7,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "notation": "2(7) + 8(2)"
+  }
+ },
+ "CHECKSUMS": {
+  "1": {
+   "4": 5
+  },
+  "3": {
+   "4": 5
+  },
+  "7": {
+   "4": 5
+  },
+  "2": {
+   "3": 7
+  },
+  "4": {
+   "3": 7
+  },
+  "5": {
+   "3": 7
+  },
+  "6": {
+   "3": 7
+  },
+  "8a": {
+   "3": 2
+  },
+  "9a": {
+   "3": 2
+  },
+  "10a": {
+   "3": 2
+  },
+  "8b": {
+   "3": 8
+  },
+  "9b": {
+   "3": 8
+  },
+  "10b": {
+   "3": 8
+  },
+  "11a": {
+   "5": 3
+  },
+  "12a": {
+   "5": 3
+  },
+  "13a": {
+   "5": 3
+  },
+  "14a": {
+   "5": 3
+  },
+  "15a": {
+   "5": 3
+  },
+  "11b": {
+   "5": 9
+  },
+  "12b": {
+   "5": 9
+  },
+  "13b": {
+   "5": 9
+  },
+  "14b": {
+   "5": 9
+  },
+  "15b": {
+   "5": 9
+  },
+  "11c": {
+   "6": 8
+  },
+  "12c": {
+   "6": 8
+  },
+  "13c": {
+   "6": 8
+  },
+  "14c": {
+   "6": 8
+  },
+  "15c": {
+   "6": 8
+  },
+  "16a": {
+   "7": 10
+  },
+  "16b": {
+   "7": 10
+  },
+  "16c": {
+   "7": 10
+  },
+  "16d": {
+   "7": 10
+  },
+  "17a": {
+   "7": 10
+  },
+  "17b": {
+   "7": 10
+  },
+  "17c": {
+   "7": 10
+  },
+  "17d": {
+   "7": 10
+  }
+ },
+ "SCAN_PAGES": {
+  "038": [
+   2,
+   9
+  ],
+  "040": [
+   2,
+   10
+  ]
+ },
+ "SELECTION_SCAN": [
+  [
+   "038",
+   2,
+   "or",
+   "Instructions: \"blue or black pen\", not a question."
+  ],
+  [
+   "038",
+   2,
+   "any four",
+   "Section A rubric: whole-question choice; every question is carded."
+  ],
+  [
+   "038",
+   2,
+   "any one",
+   "Section B rubric: whole-question choice; every question is carded."
+  ],
+  [
+   "038",
+   2,
+   "any three",
+   "Section C rubric: whole-question choice; every question is carded."
+  ],
+  [
+   "038",
+   3,
+   "any four",
+   "Section A rubric repeated."
+  ],
+  [
+   "038",
+   3,
+   "the following",
+   "Q1 lead-in: every part asked."
+  ],
+  [
+   "038",
+   3,
+   "the following",
+   "Q2(a) \"Complete the following\": every item asked, one card each."
+  ],
+  [
+   "038",
+   4,
+   "the following",
+   "Q3 \"Complete the following sentences\": every sentence asked."
+  ],
+  [
+   "038",
+   5,
+   "the following",
+   "Q5(a) \"Complete the following\": every item asked, one card each."
+  ],
+  [
+   "038",
+   6,
+   "the following",
+   "Q6 lead-in: every statement asked."
+  ],
+  [
+   "038",
+   6,
+   "or",
+   "Q6 \"true or false\": the answer options."
+  ],
+  [
+   "038",
+   6,
+   "or",
+   "Q6(c) statement \"one or more products\": the statement judged, not a choice."
+  ],
+  [
+   "038",
+   6,
+   "choose",
+   "Q7 \"Choose each structure\": a matching list, every structure placed; one card per lettered function."
+  ],
+  [
+   "038",
+   6,
+   "the following",
+   "Q7 structure list."
+  ],
+  [
+   "038",
+   7,
+   "any one",
+   "Section B rubric repeated."
+  ],
+  [
+   "038",
+   7,
+   "the following",
+   "Q8(a) \"each of the following terms\": every term asked, one card each."
+  ],
+  [
+   "038",
+   8,
+   "or",
+   "Q9(a)(i) \"lipid or protein or carbohydrate\": the answer options."
+  ],
+  [
+   "038",
+   8,
+   "or",
+   "Q9(a)(i), same options."
+  ],
+  [
+   "038",
+   8,
+   "or",
+   "Q9(a)(ii) \"folded or fibrous\": the answer options."
+  ],
+  [
+   "038",
+   8,
+   "the following",
+   "Q9(b) lead-in: every part asked."
+  ],
+  [
+   "038",
+   9,
+   "the following",
+   "Q10(b) lead-in: every part asked."
+  ],
+  [
+   "038",
+   9,
+   "both",
+   "Q10(b)(vi) \"both the experiment and the control\": both required; one card."
+  ],
+  [
+   "040",
+   2,
+   "any three",
+   "Section C rubric: whole-question choice; every question is carded."
+  ],
+  [
+   "040",
+   2,
+   "the following",
+   "Q11(b)(i) \"each of the following\": every process asked, one card each."
+  ],
+  [
+   "040",
+   2,
+   "the following",
+   "Q11(c) \"the following passage\": a reference."
+  ],
+  [
+   "040",
+   2,
+   "any one",
+   "Q11(c)(iv) \"any one of the following areas\": open choice of area; one card."
+  ],
+  [
+   "040",
+   2,
+   "the following",
+   "Q11(c)(iv), the areas listed."
+  ],
+  [
+   "040",
+   3,
+   "the following",
+   "Q12(a): every term asked, one card each."
+  ],
+  [
+   "040",
+   3,
+   "the following",
+   "Q12(b)(i): each genotype asked, one card per item."
+  ],
+  [
+   "040",
+   3,
+   "both",
+   "Q12(b)(ii) \"both heterozygous\": the cross described, not a choice."
+  ],
+  [
+   "040",
+   3,
+   "or",
+   "Q12(b)(ii) \"Using a Punnett square, or otherwise\": method, not a choice of task."
+  ],
+  [
+   "040",
+   3,
+   "the following",
+   "Q12(c)(iii): each cell asked, one card per item."
+  ],
+  [
+   "040",
+   7,
+   "any two",
+   "Q16 \"any two of (a), (b), (c), (d)\": whole-part choice; every part is carded."
+  ],
+  [
+   "040",
+   7,
+   "the following",
+   "Q16(a)(ii) \"the following shapes\": each shape asked, one card per item."
+  ],
+  [
+   "040",
+   8,
+   "the following",
+   "Q16(c)(i) \"each of the following\": each source asked, one card per item."
+  ],
+  [
+   "040",
+   8,
+   "any one",
+   "Q16(c)(iv) \"any one of the named products\": open single answer; one card."
+  ],
+  [
+   "040",
+   9,
+   "any two",
+   "Q17 \"any two of (a), (b), (c), (d)\": whole-part choice; every part is carded."
+  ],
+  [
+   "040",
+   9,
+   "the following",
+   "Q17(b)(i) \"Label the following parts\": every label asked; one card."
+  ],
+  [
+   "040",
+   9,
+   "the following",
+   "Q17(b)(ii) \"the following events\": each event asked, one card per item."
+  ],
+  [
+   "040",
+   10,
+   "both",
+   "Q17(c)(iii) \"found in both urine and sweat\": the product described, not a choice."
+  ]
+ ],
+ "ROUTES": {},
+ "ATLAS_UNIT_EQUIV": {
+  "bio-u1": "bio-u2"
+ },
+ "FIGURES": {
+  "q2-cell": [
+   "038",
+   3,
+   [
+    355,
+    428,
+    538,
+    600
+   ],
+   "State Examinations Commission",
+   [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "Diagram of a plant cell: a rounded rectangle with a thick outer wall, a large dark round body, oval bodies with stacked internal lines, and a large clear central space; A points to two of the oval bodies, B to the outer wall, C to the dark round body and D to the clear central space.",
+   false
+  ],
+  "q4-chain": [
+   "038",
+   4,
+   [
+    300,
+    372,
+    410,
+    396
+   ],
+   "State Examinations Commission",
+   [
+    "A",
+    "B",
+    "C"
+   ],
+   "The food chain as printed: A, an arrow, B, an arrow, C.",
+   false
+  ],
+  "q5-male": [
+   "038",
+   5,
+   [
+    160,
+    80,
+    440,
+    330
+   ],
+   "State Examinations Commission",
+   [
+    "A",
+    "B",
+    "C"
+   ],
+   "Diagram of the human male reproductive system from the front: the bladder at the top, tubes looping from each testis up and over the bladder, a dark gland below the bladder, and the penis; A points to one of the looping tubes, B to a testis and C to the dark gland below the bladder.",
+   false
+  ],
+  "q9-graph": [
+   "038",
+   8,
+   [
+    200,
+    540,
+    470,
+    735
+   ],
+   "State Examinations Commission",
+   [],
+   "Graph of rate of enzyme activity against temperature: the curve starts low and flat, then rises steeply; the rest of the axis is left empty for the student to complete.",
+   false
+  ],
+  "q11-carbon": [
+   "040",
+   2,
+   [
+    280,
+    195,
+    545,
+    340
+   ],
+   "State Examinations Commission",
+   [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G"
+   ],
+   "Diagram of part of the carbon cycle with five boxes: Carbon dioxide in air, Carbon in plants, Carbon in animals, Dead organic matter and Fossil fuels, joined by arrows labelled with letters: A and B between Carbon dioxide in air and Carbon in plants, C from Carbon in animals to Carbon dioxide in air, G from Carbon in plants to Carbon in animals, D from Carbon in plants and from Carbon in animals to Dead organic matter, E from Dead organic matter to Fossil fuels, and F from Fossil fuels to Carbon dioxide in air.",
+   false
+  ],
+  "q12-cells": [
+   "040",
+   3,
+   [
+    160,
+    555,
+    500,
+    718
+   ],
+   "State Examinations Commission",
+   [],
+   "Diagram of two large cells, one containing XX and one containing XY, each with two arrows down to two smaller cells: the XX cell gives two cells each containing X, and the XY cell gives one cell containing X and one containing Y.",
+   false
+  ],
+  "q12b-ii-scheme": [
+   "scheme",
+   14,
+   [
+    108,
+    302,
+    540,
+    413
+   ],
+   "State Examinations Commission",
+   [],
+   "The marking scheme’s answer: Nn x Nn; a Punnett square with N and N along the top and N and n down the side, the boxes reading NN, Nn, Nn and nn; then NN: Normal wing, Nn: Normal wing, nn: Short wing, beside the scheme’s five one-point notes.",
+   true
+  ],
+  "q13-digestive": [
+   "040",
+   4,
+   [
+    185,
+    353,
+    440,
+    602
+   ],
+   "State Examinations Commission",
+   [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "Diagram of part of the human digestive system: a large organ at the upper left labelled A, a small sac beneath it labelled B, a tube leading down from the top labelled D, a curved bag labelled E, and the start of the intestine curving below it labelled C.",
+   false
+  ],
+  "q14-stem": [
+   "040",
+   5,
+   [
+    425,
+    52,
+    540,
+    155
+   ],
+   "State Examinations Commission",
+   [
+    "X"
+   ],
+   "Diagram of a section through a stem: a circle with small dark patches scattered through it; X points to one of the patches.",
+   false
+  ],
+  "q14-plant": [
+   "040",
+   5,
+   [
+    383,
+    195,
+    540,
+    358
+   ],
+   "State Examinations Commission",
+   [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "Drawing of a whole plant: A points to a flower at the top, B to the stem, C to the roots below the soil line, and a bracket labelled D spans everything above the soil.",
+   false
+  ],
+  "q14-leaf": [
+   "040",
+   5,
+   [
+    186,
+    408,
+    428,
+    588
+   ],
+   "State Examinations Commission",
+   [
+    "E",
+    "F",
+    "G",
+    "H"
+   ],
+   "Diagram of a leaf cross section under a light microscope: E points to the top layer of cells, a bracket labelled F spans the cells in the middle of the leaf, and G and H point to two groups of cells in a bundle in the middle.",
+   false
+  ],
+  "q15-heart": [
+   "040",
+   6,
+   [
+    198,
+    165,
+    388,
+    360
+   ],
+   "State Examinations Commission",
+   [
+    "A",
+    "B",
+    "C",
+    "D",
+    "X"
+   ],
+   "Diagram of the human heart in section: A points to the upper chamber on the left of the picture, B to the wall dividing the two sides, C to the lower chamber on the right of the picture, D to the upper chamber on the right of the picture, and X to a flap at the base of a large blood vessel leaving the top of the heart.",
+   false
+  ],
+  "q16-viruses": [
+   "040",
+   7,
+   [
+    335,
+    130,
+    532,
+    282
+   ],
+   "State Examinations Commission",
+   [
+    "A",
+    "B"
+   ],
+   "Two virus particles: A is a round particle with a knobbly surface; B has a many-sided head on a long tail with thin legs at its base.",
+   false
+  ],
+  "q16-mitosis": [
+   "040",
+   7,
+   [
+    195,
+    347,
+    480,
+    492
+   ],
+   "State Examinations Commission",
+   [
+    "X"
+   ],
+   "Diagram of a dividing cell: X-shaped chromosomes lined up across the middle of the cell, with lines fanning out from each end of the cell to them; Chromosome and Cell membrane are labelled, and X points to one of the lines.",
+   false
+  ],
+  "q16-plant": [
+   "040",
+   8,
+   [
+    212,
+    78,
+    408,
+    243
+   ],
+   "State Examinations Commission",
+   [],
+   "Drawing of a plant in soil with arrows: Light coming in from above, Carbon dioxide going into the leaves and Oxygen coming out.",
+   false
+  ],
+  "q16-arm": [
+   "040",
+   8,
+   [
+    195,
+    438,
+    418,
+    610
+   ],
+   "State Examinations Commission",
+   [
+    "X",
+    "Y",
+    "Z"
+   ],
+   "Drawing of the bones and muscles of a bent human arm: Biceps and Triceps are labelled; X points to the bone of the upper arm, and Y and Z to the two bones of the forearm.",
+   false
+  ],
+  "q17-amoeba": [
+   "040",
+   9,
+   [
+    115,
+    104,
+    448,
+    292
+   ],
+   "State Examinations Commission",
+   [
+    "A",
+    "B",
+    "C"
+   ],
+   "Diagram of an Amoeba: an irregular cell with finger-like extensions; A points to a large round body near the middle, B to the outer edge of the cell, C to a small round body containing a dark particle, and a clear round space is labelled Contractile vacuole.",
+   false
+  ],
+  "q17-graph": [
+   "040",
+   10,
+   [
+    115,
+    298,
+    525,
+    530
+   ],
+   "State Examinations Commission",
+   [],
+   "Graph of urine and sweat produced (cm3/hour, 0 to 200) against outside temperature (°C, 0 to 40): the Urine line falls steadily from 100, and the Sweat line stays low then rises steeply, crossing the Urine line partway along.",
+   false
+  ],
+  "q13b-i-question": [
+   "040",
+   4,
+   [
+    80,
+    124,
+    365,
+    182
+   ],
+   "State Examinations Commission",
+   [],
+   "The printed question: (b) The photograph shows the mouth of a carnivore. This animal demonstrates heterotrophic nutrition, with carnivore and heterotrophic underlined, then (i) Explain the underlined terms.",
+   false
+  ],
+  "q17d-i-question": [
+   "040",
+   10,
+   [
+    80,
+    539,
+    520,
+    598
+   ],
+   "State Examinations Commission",
+   [],
+   "The printed question: (d) The evolution of birds has occurred over 10 million years and has led to increased variation and the development of 10,000 species of birds on Earth today, with evolution and species underlined, then (i) Explain briefly the underlined terms.",
+   false,
+   [
+    [
+     383,
+     584,
+     522,
+     598
+    ]
+   ]
+  ],
+  "q13-mouth": [
+   "040",
+   4,
+   [
+    430,
+    124,
+    540,
+    284
+   ],
+   "State Examinations Commission",
+   [],
+   "Photograph of the wide-open mouth of a carnivore, showing long pointed canine teeth at the front and the teeth behind them.",
+   false
+  ]
+ },
+ "TASKS": [
+  {
+   "key": "1a",
+   "ref": "Q1(a)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "Proteins always contain C, H, O and one other element."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "N or nitrogen"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-1-2",
+   "concept": "elements-in-protein",
+   "sq": {
+    "SQ": {
+     "page": 6,
+     "start": "Proteins always contain C, H, O and one other element."
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "Use your knowledge of nutrition to answer the following questions."
+     }
+    }
+   ]
+  },
+  {
+   "key": "1b",
+   "ref": "Q1(b)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "Give one example of a water-soluble vitamin."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "C or B (or named B vitamin)"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-1-2",
+   "concept": "water-soluble-vitamins",
+   "sq": {
+    "SQ": {
+     "page": 6,
+     "start": "Give one example of a water-soluble vitamin."
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "Use your knowledge of nutrition to answer the following questions."
+     }
+    }
+   ]
+  },
+  {
+   "key": "1c",
+   "ref": "Q1(c)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "Give one function of carbohydrates in living organisms."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Energy storage or energy production"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-1-2",
+   "concept": "function-of-carbohydrates",
+   "sq": {
+    "SQ": {
+     "page": 6,
+     "start": "Give one function of carbohydrates in living organisms."
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "Use your knowledge of nutrition to answer the following questions."
+     }
+    }
+   ]
+  },
+  {
+   "key": "1d",
+   "ref": "Q1(d)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "Name a good source of protein in the human diet."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Meat (or named meat) or eggs or fish or other correct"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-1-2",
+   "concept": "sources-of-protein",
+   "sq": {
+    "SQ": {
+     "page": 6,
+     "start": "Name a good source of protein in the human diet."
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "Use your knowledge of nutrition to answer the following questions."
+     }
+    }
+   ]
+  },
+  {
+   "key": "1e",
+   "ref": "Q1(e)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "Name one product of fat digestion."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Glycerol or fatty acids"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-1-2",
+   "concept": "products-of-fat-digestion",
+   "sq": {
+    "SQ": {
+     "page": 6,
+     "start": "Name one product of fat digestion."
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "Use your knowledge of nutrition to answer the following questions."
+     }
+    }
+   ]
+  },
+  {
+   "key": "2ai",
+   "ref": "Q2(a)(i)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "Site of sugar production"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "A"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-1-3",
+   "concept": "site-of-photosynthesis",
+   "sq": {
+    "SQ": {
+     "page": 6,
+     "start": "Site of sugar production:"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "The diagram shows a typical plant cell."
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Complete the following using the letters A, B, C, D from the diagram."
+     }
+    }
+   ],
+   "fig": "q2-cell",
+   "decision": "The answer is a letter on the printed diagram; each item is a response on the question's ladder, 6(3) + 2."
+  },
+  {
+   "key": "2aii",
+   "ref": "Q2(a)(ii)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "Location of cellulose"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "B"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-1-3",
+   "concept": "location-of-cellulose",
+   "sq": {
+    "SQ": {
+     "page": 6,
+     "start": "Location of cellulose:"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "The diagram shows a typical plant cell."
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Complete the following using the letters A, B, C, D from the diagram."
+     }
+    }
+   ],
+   "fig": "q2-cell",
+   "decision": "The answer is a letter on the printed diagram; each item is a response on the question's ladder, 6(3) + 2."
+  },
+  {
+   "key": "2aiii",
+   "ref": "Q2(a)(iii)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "Storage of water and salts"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "D"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-1-3",
+   "concept": "vacuole-storage",
+   "sq": {
+    "SQ": {
+     "page": 6,
+     "start": "Storage of water and salts:"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "The diagram shows a typical plant cell."
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Complete the following using the letters A, B, C, D from the diagram."
+     }
+    }
+   ],
+   "fig": "q2-cell",
+   "decision": "The answer is a letter on the printed diagram; each item is a response on the question's ladder, 6(3) + 2."
+  },
+  {
+   "key": "2aiv",
+   "ref": "Q2(a)(iv)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "Location of chromosomes"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "C"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-1-3",
+   "concept": "location-of-chromosomes",
+   "sq": {
+    "SQ": {
+     "page": 6,
+     "start": "Location of chromosomes:"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "The diagram shows a typical plant cell."
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Complete the following using the letters A, B, C, D from the diagram."
+     }
+    }
+   ],
+   "fig": "q2-cell",
+   "decision": "The answer is a letter on the printed diagram; each item is a response on the question's ladder, 6(3) + 2."
+  },
+  {
+   "key": "2b",
+   "ref": "Q2(b)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "Give two features of this cell which are not present in an animal cell."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 3,
+      "sel": {
+       "S": {
+        "start": "Presence of chloroplasts / presence of cell wall / presence of large central vacuole"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-1-3",
+   "concept": "plant-cell-features",
+   "sq": {
+    "SQ": {
+     "page": 6,
+     "start": "Give two features of this cell which are not present"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "The diagram shows a typical plant cell."
+     }
+    }
+   ],
+   "fig": "q2-cell"
+  },
+  {
+   "key": "2c",
+   "ref": "Q2(c)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "Give one function of the structure labelled B."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Protection or structure or shape"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-1-3",
+   "concept": "function-of-cell-wall",
+   "sq": {
+    "SQ": {
+     "page": 6,
+     "start": "Give one function of the structure labelled B."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "The diagram shows a typical plant cell."
+     }
+    }
+   ],
+   "fig": "q2-cell",
+   "labels": [
+    {
+     "L": {
+      "letter": "B",
+      "meaning_sel": {
+       "S": {
+        "start": "Location of cellulose:",
+        "page": 6
+       }
+      },
+      "asked": true
+     }
+    }
+   ],
+   "decision": "The scheme names B only as the answer to (a)(ii), \"Location of cellulose: B\"; that line is its key."
+  },
+  {
+   "key": "3a",
+   "ref": "Q3(a)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "Phototropism is the growth response of a plant to"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Light"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-2-4",
+   "concept": "phototropism",
+   "sq": {
+    "SQ": {
+     "page": 7,
+     "start": "Phototropism is the growth response of a plant to"
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "Complete the following sentences:"
+     }
+    }
+   ]
+  },
+  {
+   "key": "3b",
+   "ref": "Q3(b)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "An example of a synovial joint is"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Hinge or ball and socket or knee or hip or other correct example"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-2-4",
+   "concept": "synovial-joints",
+   "sq": {
+    "SQ": {
+     "page": 7,
+     "start": "An example of a synovial joint is"
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "Complete the following sentences:"
+     }
+    }
+   ]
+  },
+  {
+   "key": "3c",
+   "ref": "Q3(c)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "The endocrine gland that secretes insulin is called the"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Islets of Langerhans or pancreas"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-2-4",
+   "concept": "insulin-gland",
+   "sq": {
+    "SQ": {
+     "page": 7,
+     "start": "The endocrine gland that secretes insulin is called the"
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "Complete the following sentences:"
+     }
+    }
+   ]
+  },
+  {
+   "key": "3d",
+   "ref": "Q3(d)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "Gas exchange between a leaf and the atmosphere takes place through the"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Stomata"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "stomata",
+   "sq": {
+    "SQ": {
+     "page": 7,
+     "start": "Gas exchange between a leaf and the atmosphere takes place through the"
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "Complete the following sentences:"
+     }
+    }
+   ]
+  },
+  {
+   "key": "3e",
+   "ref": "Q3(e)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "The semi-circular canals are located in the"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "(Inner) ear"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-2-4",
+   "concept": "semicircular-canals",
+   "sq": {
+    "SQ": {
+     "page": 7,
+     "start": "The semi-circular canals are located in the"
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "Complete the following sentences:"
+     }
+    }
+   ]
+  },
+  {
+   "key": "4ai",
+   "ref": "Q4(a)(i)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "Name an ecosystem you have studied."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Correctly named ecosystem"
+       }
+      },
+      "marks": 3,
+      "kind": "criterion"
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "named-ecosystem",
+   "sq": {
+    "SQ": {
+     "page": 7,
+     "start": "Name an ecosystem you have studied."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "A simple food chain can be represented by:"
+     }
+    }
+   ],
+   "fig": "q4-chain"
+  },
+  {
+   "key": "4aii",
+   "ref": "Q4(a)(ii)",
+   "sec": "A",
+   "q": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "Give one example of an organism for A, B and C."
+     }
+    },
+    {
+     "Q": {
+      "page": 4,
+      "start": "A:",
+      "br": true
+     }
+    }
+   ],
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "A: Correctly named producer"
+       }
+      },
+      "marks": 3,
+      "kind": "criterion"
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "example-producer",
+   "sq": {
+    "SQ": {
+     "page": 7,
+     "start": "Give one example of an organism for A, B and C."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "A simple food chain can be represented by:"
+     }
+    }
+   ],
+   "fig": "q4-chain",
+   "decision": "The paper prints one answer box per letter, each its own roman; one card each."
+  },
+  {
+   "key": "4aiii",
+   "ref": "Q4(a)(iii)",
+   "sec": "A",
+   "q": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "Give one example of an organism for A, B and C."
+     }
+    },
+    {
+     "Q": {
+      "page": 4,
+      "start": "B:",
+      "br": true
+     }
+    }
+   ],
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "B: Correctly named primary consumer"
+       }
+      },
+      "marks": 3,
+      "kind": "criterion"
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "example-primary-consumer",
+   "sq": {
+    "SQ": {
+     "page": 7,
+     "start": "Give one example of an organism for A, B and C."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "A simple food chain can be represented by:"
+     }
+    }
+   ],
+   "fig": "q4-chain",
+   "decision": "The paper prints one answer box per letter, each its own roman; one card each."
+  },
+  {
+   "key": "4aiv",
+   "ref": "Q4(a)(iv)",
+   "sec": "A",
+   "q": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "Give one example of an organism for A, B and C."
+     }
+    },
+    {
+     "Q": {
+      "page": 4,
+      "start": "C:",
+      "br": true
+     }
+    }
+   ],
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "C: Correctly named secondary consumer"
+       }
+      },
+      "marks": 3,
+      "kind": "criterion"
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "example-secondary-consumer",
+   "sq": {
+    "SQ": {
+     "page": 7,
+     "start": "Give one example of an organism for A, B and C."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "A simple food chain can be represented by:"
+     }
+    }
+   ],
+   "fig": "q4-chain",
+   "decision": "The paper prints one answer box per letter, each its own roman; one card each."
+  },
+  {
+   "key": "4b",
+   "ref": "Q4(b)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "Which of the organisms A, B, C is a primary consumer?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "B"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "primary-consumer",
+   "sq": {
+    "SQ": {
+     "page": 7,
+     "start": "Which of the organisms A, B, C is a primary consumer?"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "A simple food chain can be represented by:"
+     }
+    }
+   ],
+   "fig": "q4-chain"
+  },
+  {
+   "key": "4c",
+   "ref": "Q4(c)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "Which of the organisms A, B, C is a producer?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "A"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "producer",
+   "sq": {
+    "SQ": {
+     "page": 7,
+     "start": "Which of the organisms A, B, C is a producer?"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "A simple food chain can be represented by:"
+     }
+    }
+   ],
+   "fig": "q4-chain"
+  },
+  {
+   "key": "4d",
+   "ref": "Q4(d)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "State one role of producers in an ecosystem."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Make food (or described)"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "role-of-producers",
+   "sq": {
+    "SQ": {
+     "page": 7,
+     "start": "State one role of producers in an ecosystem."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "A simple food chain can be represented by:"
+     }
+    }
+   ]
+  },
+  {
+   "key": "5ai",
+   "ref": "Q5(a)(i)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "Site of sperm production"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "B"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-5",
+   "concept": "site-of-sperm-production",
+   "sq": {
+    "SQ": {
+     "page": 8,
+     "start": "Site of sperm production"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the human male reproductive system."
+     }
+    },
+    {
+     "Q": {
+      "page": 5,
+      "start": "Complete the following using the letters A, B, C from the diagram."
+     }
+    }
+   ],
+   "fig": "q5-male",
+   "decision": "The answer is a letter on the printed diagram; each item is a response on the question's ladder, 6(3) + 2."
+  },
+  {
+   "key": "5aii",
+   "ref": "Q5(a)(ii)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "Site of secretion of seminal fluid"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "C"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-5",
+   "concept": "seminal-fluid-glands",
+   "sq": {
+    "SQ": {
+     "page": 8,
+     "start": "Site of secretion of seminal fluid"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the human male reproductive system."
+     }
+    },
+    {
+     "Q": {
+      "page": 5,
+      "start": "Complete the following using the letters A, B, C from the diagram."
+     }
+    }
+   ],
+   "fig": "q5-male",
+   "decision": "The answer is a letter on the printed diagram; each item is a response on the question's ladder, 6(3) + 2."
+  },
+  {
+   "key": "5aiii",
+   "ref": "Q5(a)(iii)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "Transport of semen"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "A"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-5",
+   "concept": "transport-of-semen",
+   "sq": {
+    "SQ": {
+     "page": 8,
+     "start": "Transport of semen"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the human male reproductive system."
+     }
+    },
+    {
+     "Q": {
+      "page": 5,
+      "start": "Complete the following using the letters A, B, C from the diagram."
+     }
+    }
+   ],
+   "fig": "q5-male",
+   "decision": "The answer is a letter on the printed diagram; each item is a response on the question's ladder, 6(3) + 2."
+  },
+  {
+   "key": "5b",
+   "ref": "Q5(b)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "What is meant by the term secondary sexual characteristics?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Physical traits that distinguish males from females apart from the sex organs"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-5",
+   "concept": "secondary-sexual-characteristics",
+   "sq": {
+    "SQ": {
+     "page": 8,
+     "start": "What is meant by the term secondary sexual characteristics?"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the human male reproductive system."
+     }
+    }
+   ],
+   "fig": "q5-male"
+  },
+  {
+   "key": "5c",
+   "ref": "Q5(c)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "State two secondary sexual characteristics of the human male."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 3,
+      "sel": {
+       "S": {
+        "start": "Deep voice / broad shoulders / larger musculature (than female) / other correct"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-2-5",
+   "concept": "male-secondary-sexual-characteristics",
+   "sq": {
+    "SQ": {
+     "page": 8,
+     "start": "State two secondary sexual characteristics"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the human male reproductive system."
+     }
+    }
+   ],
+   "fig": "q5-male"
+  },
+  {
+   "key": "5d",
+   "ref": "Q5(d)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "State one cause of male infertility."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Low sperm count or low sperm mobility or hormonal"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-5",
+   "concept": "male-infertility",
+   "sq": {
+    "SQ": {
+     "page": 8,
+     "start": "State one cause of male infertility."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the human male reproductive system."
+     }
+    }
+   ],
+   "fig": "q5-male"
+  },
+  {
+   "key": "6a",
+   "ref": "Q6(a)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Cell membranes are fully permeable."
+    }
+   },
+   "rows": [
+    {
+     "G": {
+      "kind": "tick-col",
+      "page": 8,
+      "clip": [
+       55,
+       342,
+       560,
+       367
+      ],
+      "headers": [
+       "True",
+       "False"
+      ],
+      "expect": "False",
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-1-3",
+   "concept": "membrane-permeability",
+   "sq": {
+    "SQ": {
+     "page": 8,
+     "start": "Cell membranes are fully permeable."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "State whether each of the following statements is true or false by putting a (✓) in the",
+      "end": "appropriate box in each case."
+     }
+    }
+   ],
+   "notes": "Question 6 is marked on one ladder, 6(3) + 2.",
+   "decision": "The scheme answers with a tick in the True or False column; read from its position."
+  },
+  {
+   "key": "6b",
+   "ref": "Q6(b)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "A tissue is a group of cells with a shared function."
+    }
+   },
+   "rows": [
+    {
+     "G": {
+      "kind": "tick-col",
+      "page": 8,
+      "clip": [
+       55,
+       367,
+       560,
+       394
+      ],
+      "headers": [
+       "True",
+       "False"
+      ],
+      "expect": "True",
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-1-3",
+   "concept": "tissue",
+   "sq": {
+    "SQ": {
+     "page": 8,
+     "start": "A tissue is a group of cells with a shared function."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "State whether each of the following statements is true or false by putting a (✓) in the",
+      "end": "appropriate box in each case."
+     }
+    }
+   ],
+   "notes": "Question 6 is marked on one ladder, 6(3) + 2.",
+   "decision": "The scheme answers with a tick in the True or False column; read from its position."
+  },
+  {
+   "key": "6c",
+   "ref": "Q6(c)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "An enzyme converts its substrate to one or more products."
+    }
+   },
+   "rows": [
+    {
+     "G": {
+      "kind": "tick-col",
+      "page": 8,
+      "clip": [
+       55,
+       394,
+       560,
+       420
+      ],
+      "headers": [
+       "True",
+       "False"
+      ],
+      "expect": "True",
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-1",
+   "concept": "enzyme-substrate-products",
+   "sq": {
+    "SQ": {
+     "page": 8,
+     "start": "An enzyme converts its substrate to one or more products."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "State whether each of the following statements is true or false by putting a (✓) in the",
+      "end": "appropriate box in each case."
+     }
+    }
+   ],
+   "notes": "Question 6 is marked on one ladder, 6(3) + 2.",
+   "decision": "The scheme answers with a tick in the True or False column; read from its position."
+  },
+  {
+   "key": "6d",
+   "ref": "Q6(d)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "A plant cell that has lost water is said to be turgid."
+    }
+   },
+   "rows": [
+    {
+     "G": {
+      "kind": "tick-col",
+      "page": 8,
+      "clip": [
+       55,
+       420,
+       560,
+       447
+      ],
+      "headers": [
+       "True",
+       "False"
+      ],
+      "expect": "False",
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "turgidity",
+   "sq": {
+    "SQ": {
+     "page": 8,
+     "start": "A plant cell that has lost water is said to be turgid."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "State whether each of the following statements is true or false by putting a (✓) in the",
+      "end": "appropriate box in each case."
+     }
+    }
+   ],
+   "notes": "Question 6 is marked on one ladder, 6(3) + 2.",
+   "decision": "The scheme answers with a tick in the True or False column; read from its position."
+  },
+  {
+   "key": "6e",
+   "ref": "Q6(e)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Aerobic respiration does not require oxygen."
+    }
+   },
+   "rows": [
+    {
+     "G": {
+      "kind": "tick-col",
+      "page": 8,
+      "clip": [
+       55,
+       447,
+       560,
+       473
+      ],
+      "headers": [
+       "True",
+       "False"
+      ],
+      "expect": "False",
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-2",
+   "concept": "aerobic-respiration-oxygen",
+   "sq": {
+    "SQ": {
+     "page": 8,
+     "start": "Aerobic respiration does not require oxygen."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "State whether each of the following statements is true or false by putting a (✓) in the",
+      "end": "appropriate box in each case."
+     }
+    }
+   ],
+   "notes": "Question 6 is marked on one ladder, 6(3) + 2.",
+   "decision": "The scheme answers with a tick in the True or False column; read from its position."
+  },
+  {
+   "key": "6f",
+   "ref": "Q6(f)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Fermentation is anaerobic respiration."
+    }
+   },
+   "rows": [
+    {
+     "G": {
+      "kind": "tick-col",
+      "page": 8,
+      "clip": [
+       55,
+       473,
+       560,
+       499
+      ],
+      "headers": [
+       "True",
+       "False"
+      ],
+      "expect": "True",
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-2",
+   "concept": "fermentation",
+   "sq": {
+    "SQ": {
+     "page": 8,
+     "start": "Fermentation is anaerobic respiration."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "State whether each of the following statements is true or false by putting a (✓) in the",
+      "end": "appropriate box in each case."
+     }
+    }
+   ],
+   "notes": "Question 6 is marked on one ladder, 6(3) + 2.",
+   "decision": "The scheme answers with a tick in the True or False column; read from its position."
+  },
+  {
+   "key": "6g",
+   "ref": "Q6(g)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Genetic screening is used to identify a mutated gene."
+    }
+   },
+   "rows": [
+    {
+     "G": {
+      "kind": "tick-col",
+      "page": 8,
+      "clip": [
+       55,
+       499,
+       560,
+       525
+      ],
+      "headers": [
+       "True",
+       "False"
+      ],
+      "expect": "True",
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "genetic-screening",
+   "sq": {
+    "SQ": {
+     "page": 8,
+     "start": "Genetic screening is used to identify a mutated gene."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "State whether each of the following statements is true or false by putting a (✓) in the",
+      "end": "appropriate box in each case."
+     }
+    }
+   ],
+   "notes": "Question 6 is marked on one ladder, 6(3) + 2.",
+   "decision": "The scheme answers with a tick in the True or False column; read from its position."
+  },
+  {
+   "key": "7a",
+   "ref": "Q7(a)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Prevent collapse of the trachea"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Rings of cartilage"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "rings-of-cartilage",
+   "sq": {
+    "SQ": {
+     "page": 9,
+     "start": "Prevent collapse of the trachea"
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "Choose each structure from the following list and place it in Column B to match a function in",
+      "end": "has been completed as an example."
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Diaphragm"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Pulmonary",
+      "end": "artery"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Alveoli"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Rings of",
+      "end": "cartilage"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Bronchus"
+     }
+    }
+   ],
+   "decision": "Lettered parts are separate printed addresses; the completed example (Larynx, struck through in the list) is left out of the stem."
+  },
+  {
+   "key": "7b",
+   "ref": "Q7(b)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Gas exchange"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Alveoli"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "alveoli",
+   "sq": {
+    "SQ": {
+     "page": 9,
+     "start": "Gas exchange"
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "Choose each structure from the following list and place it in Column B to match a function in",
+      "end": "has been completed as an example."
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Diaphragm"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Pulmonary",
+      "end": "artery"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Alveoli"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Rings of",
+      "end": "cartilage"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Bronchus"
+     }
+    }
+   ],
+   "decision": "Lettered parts are separate printed addresses; the completed example (Larynx, struck through in the list) is left out of the stem."
+  },
+  {
+   "key": "7c",
+   "ref": "Q7(c)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Contracts to increase chest volume"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Diaphragm"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "diaphragm",
+   "sq": {
+    "SQ": {
+     "page": 9,
+     "start": "Contracts to increase chest volume"
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "Choose each structure from the following list and place it in Column B to match a function in",
+      "end": "has been completed as an example."
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Diaphragm"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Pulmonary",
+      "end": "artery"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Alveoli"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Rings of",
+      "end": "cartilage"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Bronchus"
+     }
+    }
+   ],
+   "decision": "Lettered parts are separate printed addresses; the completed example (Larynx, struck through in the list) is left out of the stem."
+  },
+  {
+   "key": "7d",
+   "ref": "Q7(d)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Carries blood to the lungs"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Pulmonary artery"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "pulmonary-artery",
+   "sq": {
+    "SQ": {
+     "page": 9,
+     "start": "Carries blood to the lungs"
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "Choose each structure from the following list and place it in Column B to match a function in",
+      "end": "has been completed as an example."
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Diaphragm"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Pulmonary",
+      "end": "artery"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Alveoli"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Rings of",
+      "end": "cartilage"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Bronchus"
+     }
+    }
+   ],
+   "decision": "Lettered parts are separate printed addresses; the completed example (Larynx, struck through in the list) is left out of the stem."
+  },
+  {
+   "key": "7e",
+   "ref": "Q7(e)",
+   "sec": "A",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Carries air into each lung"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Bronchus"
+       }
+      },
+      "marks": 4
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "bronchus",
+   "sq": {
+    "SQ": {
+     "page": 9,
+     "start": "Carries air into each lung"
+    }
+   },
+   "total": 4,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "Choose each structure from the following list and place it in Column B to match a function in",
+      "end": "has been completed as an example."
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Diaphragm"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Pulmonary",
+      "end": "artery"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Alveoli"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Rings of",
+      "end": "cartilage"
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "Bronchus"
+     }
+    }
+   ],
+   "decision": "Lettered parts are separate printed addresses; the completed example (Larynx, struck through in the list) is left out of the stem."
+  },
+  {
+   "key": "8ai",
+   "ref": "Q8(a)(i)",
+   "sec": "B",
+   "q": [
+    {
+     "Q": {
+      "page": 7,
+      "start": "Explain each of the following terms used in ecology."
+     }
+    },
+    {
+     "Q": {
+      "page": 7,
+      "start": "Ecosystem",
+      "br": true
+     }
+    }
+   ],
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Ecosystem: Organisms and environment"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "ecosystem",
+   "sq": {
+    "SQ": {
+     "page": 10,
+     "start": "Explain each of the following terms used in ecology."
+    }
+   },
+   "total": 3
+  },
+  {
+   "key": "8aii",
+   "ref": "Q8(a)(ii)",
+   "sec": "B",
+   "q": [
+    {
+     "Q": {
+      "page": 7,
+      "start": "Explain each of the following terms used in ecology."
+     }
+    },
+    {
+     "Q": {
+      "page": 7,
+      "start": "Habitat",
+      "br": true
+     }
+    }
+   ],
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Place where an organism lives"
+       }
+      },
+      "marks": 3,
+      "label": {
+       "S": {
+        "start": "Habitat:"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "habitat",
+   "sq": {
+    "SQ": {
+     "page": 10,
+     "start": "Explain each of the following terms used in ecology."
+    }
+   },
+   "total": 3
+  },
+  {
+   "key": "8bi",
+   "ref": "Q8(b)(i)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "State two features used to identify a named animal in the ecosystem you have",
+     "end": "studied."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Named animal: correctly named animal"
+       }
+      },
+      "marks": 3,
+      "kind": "criterion"
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "correctly named first feature"
+       }
+      },
+      "marks": 3,
+      "kind": "criterion",
+      "label": {
+       "S": {
+        "start": "Feature 1:"
+       }
+      },
+      "note_sel": {
+       "S": {
+        "start": "(must match named animal)"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "correctly named second feature"
+       }
+      },
+      "marks": 3,
+      "kind": "criterion",
+      "label": {
+       "S": {
+        "start": "Feature 2:"
+       }
+      },
+      "note_sel": {
+       "S": {
+        "start": "(must match named animal)",
+        "after": "Feature 2:"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "identifying-an-animal",
+   "sq": {
+    "SQ": {
+     "page": 10,
+     "start": "State two features used to identify a named animal"
+    }
+   },
+   "total": 9,
+   "decision": "The scheme prices the named animal and each feature \"3\"."
+  },
+  {
+   "key": "8bii",
+   "ref": "Q8(b)(ii)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "Name one piece of apparatus that could be used to collect the animal named at",
+     "end": "part (b) (i) above."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Correctly named piece of apparatus"
+       }
+      },
+      "marks": 3,
+      "kind": "criterion"
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "collecting-apparatus",
+   "sq": {
+    "SQ": {
+     "page": 10,
+     "start": "Name one piece of apparatus that could be used to collect"
+    }
+   },
+   "total": 3
+  },
+  {
+   "key": "8biii",
+   "ref": "Q8(b)(iii)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "Describe how you would use the piece of apparatus named at part (b) (ii) above."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Correct description of the use of the piece of apparatus"
+       }
+      },
+      "marks": 6,
+      "kind": "criterion",
+      "units": [
+       3,
+       3
+      ],
+      "note_sel": {
+       "S": {
+        "start": "(Must match named piece of apparatus)",
+        "skip_marks": true
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "using-collecting-apparatus",
+   "sq": {
+    "SQ": {
+     "page": 10,
+     "start": "Describe how you would use the piece of apparatus"
+    }
+   },
+   "total": 6,
+   "decision": "The scheme prices the description \"2(3)\": one row of two responses."
+  },
+  {
+   "key": "8biv",
+   "ref": "Q8(b)(iv)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "Describe how you would estimate the population of the animal named at",
+     "end": "part (b) (i) above."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Method named (or described)"
+       }
+      },
+      "marks": 3,
+      "kind": "criterion"
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Count"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "estimating-animal-population",
+   "sq": {
+    "SQ": {
+     "page": 10,
+     "start": "Describe how you would estimate the population"
+    }
+   },
+   "total": 6
+  },
+  {
+   "key": "9ai",
+   "ref": "Q9(a)(i)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "What is the chemical nature of an enzyme: lipid or protein or carbohydrate?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Protein"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-1",
+   "concept": "enzymes-are-proteins",
+   "sq": {
+    "SQ": {
+     "page": 11,
+     "start": "What is the chemical nature of an enzyme: lipid or protein or carbohydrate?"
+    }
+   },
+   "total": 3
+  },
+  {
+   "key": "9aii",
+   "ref": "Q9(a)(ii)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "What shape are enzymes: folded or fibrous?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Folded"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-1",
+   "concept": "enzyme-shape",
+   "sq": {
+    "SQ": {
+     "page": 11,
+     "start": "What shape are enzymes: folded or fibrous?"
+    }
+   },
+   "total": 3
+  },
+  {
+   "key": "9bi",
+   "ref": "Q9(b)(i)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "Name the enzyme you used in this investigation."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Catalase or protease or amylase"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-1",
+   "concept": "enzyme-used",
+   "sq": {
+    "SQ": {
+     "page": 11,
+     "start": "Name the enzyme you used in this investigation."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "Answer the following questions on an investigation you carried out to show the effect",
+      "end": "of temperature on the rate of enzyme activity."
+     }
+    }
+   ]
+  },
+  {
+   "key": "9bii",
+   "ref": "Q9(b)(ii)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "How did you vary the temperature?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Used a waterbath"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-1",
+   "concept": "varying-temperature",
+   "sq": {
+    "SQ": {
+     "page": 11,
+     "start": "How did you vary the temperature?"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "Answer the following questions on an investigation you carried out to show the effect",
+      "end": "of temperature on the rate of enzyme activity."
+     }
+    }
+   ]
+  },
+  {
+   "key": "9biii",
+   "ref": "Q9(b)(iii)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "Name one factor you kept constant."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "pH or other correct factor"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-1",
+   "concept": "factor-kept-constant",
+   "sq": {
+    "SQ": {
+     "page": 11,
+     "start": "Name one factor you kept constant."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "Answer the following questions on an investigation you carried out to show the effect",
+      "end": "of temperature on the rate of enzyme activity."
+     }
+    }
+   ]
+  },
+  {
+   "key": "9biv",
+   "ref": "Q9(b)(iv)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "How did you keep this factor constant?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Buffer or other correct"
+       }
+      },
+      "marks": 3,
+      "note_sel": {
+       "S": {
+        "start": "(must match named factor)"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-2-1",
+   "concept": "keeping-factor-constant",
+   "sq": {
+    "SQ": {
+     "page": 11,
+     "start": "How did you keep this factor constant?"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "Answer the following questions on an investigation you carried out to show the effect",
+      "end": "of temperature on the rate of enzyme activity."
+     }
+    }
+   ]
+  },
+  {
+   "key": "9bv",
+   "ref": "Q9(b)(v)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "How did you measure the rate of enzyme activity?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Measured volume (or other correct factor)"
+       }
+      },
+      "marks": 3
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Per minute (or per unit time)"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-1",
+   "concept": "measuring-enzyme-rate",
+   "sq": {
+    "SQ": {
+     "page": 11,
+     "start": "How did you measure the rate of enzyme activity?"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "Answer the following questions on an investigation you carried out to show the effect",
+      "end": "of temperature on the rate of enzyme activity."
+     }
+    }
+   ]
+  },
+  {
+   "key": "9bvi",
+   "ref": "Q9(b)(vi)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "Describe one safety measure you took in this investigation."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Wore lab coat or wore safety gloves or wore safety glasses or other correct",
+        "end": "safety precaution"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-2-1",
+   "concept": "safety-measure",
+   "sq": {
+    "SQ": {
+     "page": 11,
+     "start": "Describe one safety measure you took in this investigation."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "Answer the following questions on an investigation you carried out to show the effect",
+      "end": "of temperature on the rate of enzyme activity."
+     }
+    }
+   ]
+  },
+  {
+   "key": "9bvii",
+   "ref": "Q9(b)(vii)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "Complete the graph to show how the rate of activity of the enzyme you used",
+     "end": "would continue to change at higher temperatures."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Line levels off and then falls"
+       }
+      },
+      "marks": 3,
+      "kind": "criterion"
+     }
+    }
+   ],
+   "topic": "bio-2-1",
+   "concept": "temperature-and-enzyme-activity",
+   "sq": {
+    "SQ": {
+     "page": 11,
+     "start": "Complete the graph to show how the rate of activity"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "Answer the following questions on an investigation you carried out to show the effect",
+      "end": "of temperature on the rate of enzyme activity."
+     }
+    }
+   ],
+   "fig": "q9-graph",
+   "decision": "The answer is a line drawn on the printed graph: a criterion row."
+  },
+  {
+   "key": "10ai",
+   "ref": "Q10(a)(i)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "To which kingdom do yeasts belong?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Fungi"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "yeast-kingdom",
+   "sq": {
+    "SQ": {
+     "page": 12,
+     "start": "To which kingdom do yeasts belong?"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "Leaf yeasts can reproduce on the surface of leaves."
+     }
+    }
+   ]
+  },
+  {
+   "key": "10aii",
+   "ref": "Q10(a)(ii)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "Name the method by which yeast cells reproduce."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Budding"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "budding",
+   "sq": {
+    "SQ": {
+     "page": 12,
+     "start": "Name the method by which yeast cells reproduce."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "Leaf yeasts can reproduce on the surface of leaves."
+     }
+    }
+   ]
+  },
+  {
+   "key": "10bi",
+   "ref": "Q10(b)(i)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "Name the plant from which you obtained the leaves."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Ash or any other suitable plant"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "leaf-yeast-plant",
+   "sq": {
+    "SQ": {
+     "page": 12,
+     "start": "Name the plant from which you obtained"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "Answer the following questions on an investigation that you carried out into the",
+      "end": "growth of leaf yeast."
+     }
+    }
+   ],
+   "decision": ""
+  },
+  {
+   "key": "10bii",
+   "ref": "Q10(b)(ii)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "Describe how you collected the leaf from the plant."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Using a tweezers or with gloves or without touching the leaf or placed in a sterile",
+        "end": "petri dish or container"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "collecting-the-leaf",
+   "sq": {
+    "SQ": {
+     "page": 12,
+     "start": "Describe how you collected the leaf from"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "Answer the following questions on an investigation that you carried out into the",
+      "end": "growth of leaf yeast."
+     }
+    }
+   ],
+   "decision": ""
+  },
+  {
+   "key": "10biii",
+   "ref": "Q10(b)(iii)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "Draw a labelled diagram, in the space below, of the setup you used."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Petri dish and agar and leaf attached to lid"
+       }
+      },
+      "marks": 3,
+      "kind": "criterion",
+      "label": {
+       "S": {
+        "start": "Diagram:"
+       }
+      }
+     }
+    },
+    {
+     "anyn": {
+      "claim": 1,
+      "per": 3,
+      "sel": {
+       "S": {
+        "start": "Petri dish / agar / leaf / other correct labels"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "leaf-yeast-setup",
+   "sq": {
+    "SQ": {
+     "page": 12,
+     "start": "Draw a labelled diagram, in the space"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "Answer the following questions on an investigation that you carried out into the",
+      "end": "growth of leaf yeast."
+     }
+    }
+   ],
+   "decision": "The scheme prices the diagram \"3\" and any one of its labels \"3\"."
+  },
+  {
+   "key": "10biv",
+   "ref": "Q10(b)(iv)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "The equipment that you used was sterile. What does sterile mean here?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Free from all organisms"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "sterile",
+   "sq": {
+    "SQ": {
+     "page": 12,
+     "start": "The equipment that you used was sterile."
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "Answer the following questions on an investigation that you carried out into the",
+      "end": "growth of leaf yeast."
+     }
+    }
+   ],
+   "decision": ""
+  },
+  {
+   "key": "10bv",
+   "ref": "Q10(b)(v)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "Describe how you safely disposed of the unwanted material at the end of the",
+     "end": "investigation."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Placed in disinfectant for 24 h and then placed in general waste or other correct",
+        "end": "method"
+       }
+      },
+      "marks": 3
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "safe-disposal",
+   "sq": {
+    "SQ": {
+     "page": 12,
+     "start": "Describe how you safely disposed of the"
+    }
+   },
+   "total": 3,
+   "stem": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "Answer the following questions on an investigation that you carried out into the",
+      "end": "growth of leaf yeast."
+     }
+    }
+   ],
+   "decision": ""
+  },
+  {
+   "key": "10bvi",
+   "ref": "Q10(b)(vi)",
+   "sec": "B",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "Describe the results that you obtained in both the experiment and the control."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Experiment: Pink colonies visible"
+       }
+      },
+      "marks": 3
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "No pink colonies visible"
+       }
+      },
+      "marks": 3,
+      "label": {
+       "S": {
+        "start": "Control:"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "leaf-yeast-results",
+   "sq": {
+    "SQ": {
+     "page": 12,
+     "start": "Describe the results that you obtained in"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "Answer the following questions on an investigation that you carried out into the",
+      "end": "growth of leaf yeast."
+     }
+    }
+   ],
+   "decision": ""
+  },
+  {
+   "key": "11ai",
+   "ref": "Q11(a)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "Name a decomposer."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Fungi or insects or worms or bacteria or other correct"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "decomposers",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "Name a decomposer."
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 2,
+      "start": "Decay is the breakdown of dead organisms and other organic matter by decomposers."
+     }
+    }
+   ],
+   "notes": "Every response on the part's ladder is carded at its first rate."
+  },
+  {
+   "key": "11aii",
+   "ref": "Q11(a)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "Give two reasons why decay is important in nature."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 5,
+      "sel": {
+       "S": {
+        "start": "So nutrients do not run out / to make nutrients available for other organisms / other",
+        "end": "correct"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "importance-of-decay",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "Give two reasons why decay is important in nature."
+    }
+   },
+   "total": 10,
+   "stem": [
+    {
+     "Q": {
+      "page": 2,
+      "start": "Decay is the breakdown of dead organisms and other organic matter by decomposers."
+     }
+    }
+   ]
+  },
+  {
+   "key": "11bi1",
+   "ref": "Q11(b)(i)1",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "1.",
+     "end": "Photosynthesis",
+     "after": "following:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "A"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "carbon-cycle-photosynthesis",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "1. Photosynthesis:"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 2,
+      "start": "The diagram outlines part of the carbon cycle."
+     }
+    },
+    {
+     "Q": {
+      "page": 2,
+      "start": "In your answerbook, give",
+      "end": "following:"
+     }
+    }
+   ],
+   "fig": "q11-carbon",
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "11bi2",
+   "ref": "Q11(b)(i)2",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "2.",
+     "end": "Combustion",
+     "after": "following:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "F"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "carbon-cycle-combustion",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "2. Combustion:"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 2,
+      "start": "The diagram outlines part of the carbon cycle."
+     }
+    },
+    {
+     "Q": {
+      "page": 2,
+      "start": "In your answerbook, give",
+      "end": "following:"
+     }
+    }
+   ],
+   "fig": "q11-carbon",
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "11bi3",
+   "ref": "Q11(b)(i)3",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "3.",
+     "end": "Plant respiration",
+     "after": "following:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "B"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "carbon-cycle-plant-respiration",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "3. Plant respiration:"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 2,
+      "start": "The diagram outlines part of the carbon cycle."
+     }
+    },
+    {
+     "Q": {
+      "page": 2,
+      "start": "In your answerbook, give",
+      "end": "following:"
+     }
+    }
+   ],
+   "fig": "q11-carbon",
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "11bi4",
+   "ref": "Q11(b)(i)4",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "4.",
+     "end": "Decomposition",
+     "after": "following:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "D"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "carbon-cycle-decomposition",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "4. Decomposition:"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 2,
+      "start": "The diagram outlines part of the carbon cycle."
+     }
+    },
+    {
+     "Q": {
+      "page": 2,
+      "start": "In your answerbook, give",
+      "end": "following:"
+     }
+    }
+   ],
+   "fig": "q11-carbon",
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "11bii",
+   "ref": "Q11(b)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "What process is represented by the letter G in the diagram?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Assimilation (accept eating or ingestion)"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "carbon-cycle-assimilation",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "What process is represented by the letter G in the diagram?"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 2,
+      "start": "The diagram outlines part of the carbon cycle."
+     }
+    }
+   ],
+   "fig": "q11-carbon"
+  },
+  {
+   "key": "11biii",
+   "ref": "Q11(b)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "Which letter represents animal respiration?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "C"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "carbon-cycle-animal-respiration",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "Which letter represents animal respiration?"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 2,
+      "start": "The diagram outlines part of the carbon cycle."
+     }
+    }
+   ],
+   "fig": "q11-carbon"
+  },
+  {
+   "key": "11biv",
+   "ref": "Q11(b)(iv)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "Describe how changes to two processes from the carbon cycle could contribute",
+     "end": "to reducing carbon dioxide levels."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 5,
+      "sel": {
+       "S": {
+        "start": "Burn less fossil fuels / plant more trees and plants / other correct"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "reducing-carbon-dioxide",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "Describe how changes to two processes from the carbon cycle"
+    }
+   },
+   "total": 10,
+   "stem": [
+    {
+     "Q": {
+      "page": 2,
+      "start": "The diagram outlines part of the carbon cycle."
+     }
+    }
+   ],
+   "fig": "q11-carbon"
+  },
+  {
+   "key": "11bv",
+   "ref": "Q11(b)(v)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "The carbon cycle is one pathway by which nutrients are recycled.",
+     "end": "Name another cycle you have studied."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Nitrogen or other correct"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "nutrient-cycles",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "The carbon cycle is one pathway by which nutrients are recycled."
+    }
+   },
+   "total": 5
+  },
+  {
+   "key": "11ci",
+   "ref": "Q11(c)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "Name one method of waste disposal that is used in Ireland."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Landfill or incineration or other correct"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "waste-disposal",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "Name one method of waste disposal that"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 2,
+      "start": "Read the following passage and answer the questions that follow."
+     }
+    },
+    {
+     "Q": {
+      "page": 2,
+      "start": "Ireland’s waste levels are to reach crisis levels",
+      "end": "reduce, reuse and recycle."
+     }
+    },
+    {
+     "Q": {
+      "page": 2,
+      "start": "(Adapted from"
+     }
+    }
+   ]
+  },
+  {
+   "key": "11cii",
+   "ref": "Q11(c)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "Give two problems associated with waste management."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 6,
+      "sel": {
+       "S": {
+        "start": "Unsightly / attract vermin / cause pollution / costly / other correct"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "waste-management-problems",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "Give two problems associated with waste management."
+    }
+   },
+   "total": 12,
+   "stem": [
+    {
+     "Q": {
+      "page": 2,
+      "start": "Read the following passage and answer the questions that follow."
+     }
+    },
+    {
+     "Q": {
+      "page": 2,
+      "start": "Ireland’s waste levels are to reach crisis levels",
+      "end": "reduce, reuse and recycle."
+     }
+    },
+    {
+     "Q": {
+      "page": 2,
+      "start": "(Adapted from"
+     }
+    }
+   ]
+  },
+  {
+   "key": "11ciii",
+   "ref": "Q11(c)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "What is pollution?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Harmful addition to the environment"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "pollution",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "What is pollution?"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 2,
+      "start": "Read the following passage and answer the questions that follow."
+     }
+    },
+    {
+     "Q": {
+      "page": 2,
+      "start": "Ireland’s waste levels are to reach crisis levels",
+      "end": "reduce, reuse and recycle."
+     }
+    },
+    {
+     "Q": {
+      "page": 2,
+      "start": "(Adapted from"
+     }
+    }
+   ]
+  },
+  {
+   "key": "11civ",
+   "ref": "Q11(c)(iv)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "Name one pollutant, other than carbon dioxide, from any one of the following",
+     "end": "industrial."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Any correct pollutant"
+       }
+      },
+      "marks": 6,
+      "kind": "criterion"
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "pollutants",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "Name one pollutant, other than carbon dioxide,"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 2,
+      "start": "Read the following passage and answer the questions that follow."
+     }
+    },
+    {
+     "Q": {
+      "page": 2,
+      "start": "Ireland’s waste levels are to reach crisis levels",
+      "end": "reduce, reuse and recycle."
+     }
+    },
+    {
+     "Q": {
+      "page": 2,
+      "start": "(Adapted from"
+     }
+    }
+   ]
+  },
+  {
+   "key": "11cv",
+   "ref": "Q11(c)(v)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 2,
+     "start": "Describe three ways waste can be minimised."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Reduce"
+       }
+      },
+      "marks": 6
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Reuse"
+       }
+      },
+      "marks": 6
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Recycle"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-3-1",
+   "concept": "minimising-waste",
+   "sq": {
+    "SQ": {
+     "page": 13,
+     "start": "Describe three ways waste can be minimised."
+    }
+   },
+   "total": 18,
+   "stem": [
+    {
+     "Q": {
+      "page": 2,
+      "start": "Read the following passage and answer the questions that follow."
+     }
+    },
+    {
+     "Q": {
+      "page": 2,
+      "start": "Ireland’s waste levels are to reach crisis levels",
+      "end": "reduce, reuse and recycle."
+     }
+    },
+    {
+     "Q": {
+      "page": 2,
+      "start": "(Adapted from"
+     }
+    }
+   ]
+  },
+  {
+   "key": "12ai",
+   "ref": "Q12(a)(i)",
+   "sec": "C",
+   "q": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "Explain the following terms used in genetics:"
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Allele",
+      "br": true
+     }
+    }
+   ],
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "(Different) form of a gene"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "Allele:"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "allele",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "Explain the following terms used in genetics:"
+    }
+   },
+   "total": 5,
+   "decision": "Each term is a separately counted response on the part's ladder: one card each."
+  },
+  {
+   "key": "12aii",
+   "ref": "Q12(a)(ii)",
+   "sec": "C",
+   "q": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "Explain the following terms used in genetics:"
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Homozygous",
+      "br": true
+     }
+    }
+   ],
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Homozygous: Alleles are the same on homologous chromosomes"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "homozygous",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "Explain the following terms used in genetics:"
+    }
+   },
+   "total": 5,
+   "decision": "Each term is a separately counted response on the part's ladder: one card each."
+  },
+  {
+   "key": "12aiii",
+   "ref": "Q12(a)(iii)",
+   "sec": "C",
+   "q": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "Explain the following terms used in genetics:"
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Dominance.",
+      "br": true
+     }
+    }
+   ],
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Allele masks the effect of a recessive allele or expressed in either the",
+        "end": "homozygous or heterozygous conditions"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "Dominance:"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "dominance",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "Explain the following terms used in genetics:"
+    }
+   },
+   "total": 5,
+   "decision": "Each term is a separately counted response on the part's ladder: one card each."
+  },
+  {
+   "key": "12bi1",
+   "ref": "Q12(b)(i)1",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "1.",
+     "end": "A housefly that is homozygous for normal wing.",
+     "after": "Give the genotype of each of the following:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "NN"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "homozygous-dominant-genotype",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "1. A housefly that is homozygous for normal wing"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "In houseflies, the allele for normal wing (N) is dominant to the allele for short wing (n)."
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Give the genotype of each of the following:"
+     }
+    }
+   ],
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "12bi2",
+   "ref": "Q12(b)(i)2",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "2.",
+     "end": "A housefly that is heterozygous for normal wing.",
+     "after": "Give the genotype of each of the following:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Nn",
+        "after": "1. A housefly that is homozygous"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "heterozygous-genotype",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "2. A housefly that is heterozygous for normal wing"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "In houseflies, the allele for normal wing (N) is dominant to the allele for short wing (n)."
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Give the genotype of each of the following:"
+     }
+    }
+   ],
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each. The scheme prints this answer at the end of its reprint's line."
+  },
+  {
+   "key": "12bi3",
+   "ref": "Q12(b)(i)3",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "3.",
+     "end": "A short-winged housefly.",
+     "after": "Give the genotype of each of the following:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "nn"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "homozygous-recessive-genotype",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "3. A short-winged housefly"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "In houseflies, the allele for normal wing (N) is dominant to the allele for short wing (n)."
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Give the genotype of each of the following:"
+     }
+    }
+   ],
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "12bii",
+   "ref": "Q12(b)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "Two houseflies, both heterozygous for normal wing, were crossed.",
+     "end": "matching phenotypes of the offspring from this cross."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Nn x Nn"
+       }
+      },
+      "marks": 5,
+      "note_sel": {
+       "S": {
+        "start": "(One point for correct parental genotypes)"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "(One point for correct gamete genotypes)"
+       }
+      },
+      "marks": 5,
+      "kind": "criterion"
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "(One point for correct use of Punnett square)"
+       }
+      },
+      "marks": 5,
+      "kind": "criterion"
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "(One point for the correct offspring genotypes)"
+       }
+      },
+      "marks": 5,
+      "kind": "criterion"
+     }
+    },
+    {
+     "allof": {
+      "parts": [
+       [
+        {
+         "S": {
+          "start": "NN:"
+         }
+        },
+        {
+         "S": {
+          "start": "Normal wing"
+         }
+        }
+       ],
+       [
+        {
+         "S": {
+          "start": "Nn:"
+         }
+        },
+        {
+         "S": {
+          "start": "Normal wing",
+          "nth": 2
+         }
+        }
+       ],
+       [
+        {
+         "S": {
+          "start": "nn:"
+         }
+        },
+        {
+         "S": {
+          "start": "Short wing"
+         }
+        }
+       ]
+      ],
+      "marks": 5,
+      "note_sel": {
+       "S": {
+        "start": "(One point for the correctly matched phenotypes)"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "monohybrid-cross",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "Two houseflies, both heterozygous for normal wing, were crossed."
+    }
+   },
+   "total": 25,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "In houseflies, the allele for normal wing (N) is dominant to the allele for short wing (n)."
+     }
+    }
+   ],
+   "fig": "q12b-ii-scheme",
+   "decision": "The scheme gives five points: the parental genotypes, the gametes, the use of the Punnett square, the offspring genotypes and the matched phenotypes. Its completed Punnett square is the solution figure."
+  },
+  {
+   "key": "12biii",
+   "ref": "Q12(b)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "What percentage of the offspring would have normal wing?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "75%"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "percentage-normal-wing",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "What percentage of the offspring would have normal wing?"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "In houseflies, the allele for normal wing (N) is dominant to the allele for short wing (n)."
+     }
+    }
+   ]
+  },
+  {
+   "key": "12ci",
+   "ref": "Q12(c)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "What term describes the passing on of genetic material (e.g. chromosomes) from",
+     "end": "one generation to the next?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Heredity"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "heredity",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "What term describes the passing on of genetic material"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "The sex chromosomes in the nuclei of human cells are indicated by the use of the",
+      "end": "gametes."
+     }
+    }
+   ],
+   "fig": "q12-cells"
+  },
+  {
+   "key": "12cii",
+   "ref": "Q12(c)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "Some of the cells in the diagram below are haploid and some are diploid.",
+     "end": "on each."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "One set of chromosomes (or chromosomes appear singly)"
+       }
+      },
+      "marks": 6,
+      "label": {
+       "S": {
+        "start": "Haploid:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Two sets of chromosomes (or chromosomes appear in pairs)"
+       }
+      },
+      "marks": 6,
+      "label": {
+       "S": {
+        "start": "Diploid:"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-2-3",
+   "concept": "haploid-and-diploid",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "Distinguish between the terms, haploid and diploid"
+    }
+   },
+   "total": 12,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "The sex chromosomes in the nuclei of human cells are indicated by the use of the",
+      "end": "gametes."
+     }
+    }
+   ],
+   "fig": "q12-cells"
+  },
+  {
+   "key": "12ciii1",
+   "ref": "Q12(c)(iii)1",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "1.",
+     "end": "An ordinary body cell (e.g. muscle cell) of a male.",
+     "after": "each of the following human cells:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "XY",
+        "after": "human cells:"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "male-body-cell-sex-chromosomes",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "An ordinary body cell (e.g. muscle cell) of a male."
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "The sex chromosomes in the nuclei of human cells are indicated by the use of the",
+      "end": "gametes."
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Using the letters X and Y, indicate the sex chromosome(s) present in the nuclei of",
+      "end": "each of the following human cells:"
+     }
+    }
+   ],
+   "fig": "q12-cells",
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each. The scheme prints this answer at the end of its reprint's line."
+  },
+  {
+   "key": "12ciii2",
+   "ref": "Q12(c)(iii)2",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "2.",
+     "end": "An ordinary body cell of a female.",
+     "after": "each of the following human cells:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "XX"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "female-body-cell-sex-chromosomes",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "An ordinary body cell of a female."
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "The sex chromosomes in the nuclei of human cells are indicated by the use of the",
+      "end": "gametes."
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Using the letters X and Y, indicate the sex chromosome(s) present in the nuclei of",
+      "end": "each of the following human cells:"
+     }
+    }
+   ],
+   "fig": "q12-cells",
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "12ciii3",
+   "ref": "Q12(c)(iii)3",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "3.",
+     "end": "A sperm cell.",
+     "after": "each of the following human cells:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "X or Y"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "sperm-sex-chromosomes",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "A sperm cell."
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "The sex chromosomes in the nuclei of human cells are indicated by the use of the",
+      "end": "gametes."
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Using the letters X and Y, indicate the sex chromosome(s) present in the nuclei of",
+      "end": "each of the following human cells:"
+     }
+    }
+   ],
+   "fig": "q12-cells",
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "12ciii4",
+   "ref": "Q12(c)(iii)4",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "4.",
+     "end": "An egg cell.",
+     "after": "each of the following human cells:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "X"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "egg-sex-chromosomes",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "An egg cell."
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "The sex chromosomes in the nuclei of human cells are indicated by the use of the",
+      "end": "gametes."
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Using the letters X and Y, indicate the sex chromosome(s) present in the nuclei of",
+      "end": "each of the following human cells:"
+     }
+    }
+   ],
+   "fig": "q12-cells",
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "12ciii5",
+   "ref": "Q12(c)(iii)5",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 3,
+     "start": "5.",
+     "end": "A zygote.",
+     "after": "each of the following human cells:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "XX or XY"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-1-4",
+   "concept": "zygote-sex-chromosomes",
+   "sq": {
+    "SQ": {
+     "page": 14,
+     "start": "A zygote."
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 3,
+      "start": "The sex chromosomes in the nuclei of human cells are indicated by the use of the",
+      "end": "gametes."
+     }
+    },
+    {
+     "Q": {
+      "page": 3,
+      "start": "Using the letters X and Y, indicate the sex chromosome(s) present in the nuclei of",
+      "end": "each of the following human cells:"
+     }
+    }
+   ],
+   "fig": "q12-cells",
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "13ai",
+   "ref": "Q13(a)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "In relation to the human diet, name a food that contains fibre."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Vegetables or fruit or bread or other correct"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-1-2",
+   "concept": "sources-of-fibre",
+   "sq": {
+    "SQ": {
+     "page": 15,
+     "start": "In relation to the human diet, name a food that contains fibre."
+    }
+   },
+   "total": 5
+  },
+  {
+   "key": "13aii",
+   "ref": "Q13(a)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "Give two reasons why fibre is important in the human diet."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 5,
+      "sel": {
+       "S": {
+        "start": "Prevent constipation / enables peristalsis / other correct"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "importance-of-fibre",
+   "sq": {
+    "SQ": {
+     "page": 15,
+     "start": "Give two reasons why fibre is important in the human diet."
+    }
+   },
+   "total": 10
+  },
+  {
+   "key": "13bi",
+   "ref": "Q13(b)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "Explain the underlined terms."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "animal that eats other animals only"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "Carnivore:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "organism that obtains nutrition from other organisms"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "Heterotrophic:"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "carnivore-and-heterotrophic",
+   "sq": {
+    "SQ": {
+     "page": 15,
+     "start": "Explain the underlined terms."
+    }
+   },
+   "total": 10,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "The photograph shows the mouth of a carnivore.",
+      "end": "This animal demonstrates heterotrophic nutrition."
+     }
+    }
+   ],
+   "qfig": "q13b-i-question",
+   "decision": "The paper marks the terms to explain by underlining them, which the text layer drops: the question is shown as printed."
+  },
+  {
+   "key": "13bii",
+   "ref": "Q13(b)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "Name and describe one other type of heterotrophic",
+     "end": "nutrition found in animals."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Saprophytic or parasitic or other correct"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "Name:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Saprophytic: where an organism feeds on dead matter",
+        "end": "feeds off a living host"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "Describe:"
+       }
+      },
+      "whole": true,
+      "note_sel": {
+       "S": {
+        "start": "(must match named type of nutrition)"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "types-of-heterotrophic-nutrition",
+   "sq": {
+    "SQ": {
+     "page": 15,
+     "start": "Name and describe one other type of heterotrophic nutrition"
+    }
+   },
+   "total": 10,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "The photograph shows the mouth of a carnivore.",
+      "end": "This animal demonstrates heterotrophic nutrition."
+     }
+    }
+   ],
+   "fig": "q13-mouth"
+  },
+  {
+   "key": "13biii",
+   "ref": "Q13(b)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "Nutrition starts with ingestion.",
+     "end": "What is ingestion?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Taking in of food"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "ingestion",
+   "sq": {
+    "SQ": {
+     "page": 15,
+     "start": "Nutrition starts with ingestion."
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "The photograph shows the mouth of a carnivore.",
+      "end": "This animal demonstrates heterotrophic nutrition."
+     }
+    }
+   ],
+   "fig": "q13-mouth"
+  },
+  {
+   "key": "13biv",
+   "ref": "Q13(b)(iv)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "Canine teeth are one type of tooth present in animals.",
+     "end": "functions."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 5,
+      "options": [
+       {
+        "S": {
+         "start": "Incisors"
+        }
+       },
+       {
+        "S": {
+         "start": "/ Pre-molars:",
+         "piece": [
+          2,
+          1
+         ],
+         "psep": [
+          "/ ",
+          ":"
+         ]
+        }
+       },
+       {
+        "S": {
+         "start": "Grind and crush food / Molars:",
+         "piece": [
+          2,
+          1
+         ],
+         "psep": [
+          " / ",
+          ":"
+         ]
+        }
+       }
+      ],
+      "sel": null
+     }
+    },
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 5,
+      "options": [
+       {
+        "S": {
+         "start": "Cut food"
+        }
+       },
+       {
+        "S": {
+         "start": "Grind and crush food / Molars:",
+         "piece": 1,
+         "psep": " / "
+        }
+       },
+       {
+        "S": {
+         "start": "Grind and crush food",
+         "after": "Grind and crush food / Molars:"
+        }
+       }
+      ],
+      "sel": null
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "types-of-teeth",
+   "sq": {
+    "SQ": {
+     "page": 15,
+     "start": "Canine teeth are one type of tooth present in animals."
+    }
+   },
+   "total": 20,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "The photograph shows the mouth of a carnivore.",
+      "end": "This animal demonstrates heterotrophic nutrition."
+     }
+    }
+   ],
+   "decision": "The scheme prints three teeth, each named over its function, \"Any two\": two names and their two matching functions are four responses on the part's ladder.",
+   "fig": "q13-mouth"
+  },
+  {
+   "key": "13ci",
+   "ref": "Q13(c)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "Name A, B, C, D and E."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Liver"
+       }
+      },
+      "marks": 6,
+      "label": {
+       "S": {
+        "start": "A:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Gall bladder"
+       }
+      },
+      "marks": 6,
+      "label": {
+       "S": {
+        "start": "B:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Duodenum (or small intestine)"
+       }
+      },
+      "marks": 6,
+      "label": {
+       "S": {
+        "start": "C:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Oesophagus"
+       }
+      },
+      "marks": 6,
+      "label": {
+       "S": {
+        "start": "D:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Stomach"
+       }
+      },
+      "marks": 6,
+      "label": {
+       "S": {
+        "start": "E:"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "parts-of-the-digestive-system",
+   "sq": {
+    "SQ": {
+     "page": 15,
+     "start": "Name A, B, C, D and E."
+    }
+   },
+   "total": 30,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "The diagram shows part of the human digestive system."
+     }
+    }
+   ],
+   "fig": "q13-digestive",
+   "labels": [
+    {
+     "L": {
+      "letter": "A",
+      "meaning_sel": {
+       "S": {
+        "start": "Liver",
+        "page": 15
+       }
+      },
+      "asked": true
+     }
+    },
+    {
+     "L": {
+      "letter": "B",
+      "meaning_sel": {
+       "S": {
+        "start": "Gall bladder",
+        "page": 15
+       }
+      },
+      "asked": true
+     }
+    },
+    {
+     "L": {
+      "letter": "C",
+      "meaning_sel": {
+       "S": {
+        "start": "Duodenum (or small intestine)",
+        "page": 15
+       }
+      },
+      "asked": true
+     }
+    },
+    {
+     "L": {
+      "letter": "D",
+      "meaning_sel": {
+       "S": {
+        "start": "Oesophagus",
+        "page": 15
+       }
+      },
+      "asked": true
+     }
+    },
+    {
+     "L": {
+      "letter": "E",
+      "meaning_sel": {
+       "S": {
+        "start": "Stomach",
+        "page": 15
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "13cii",
+   "ref": "Q13(c)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "Protein is a common and important part of the human diet.",
+     "end": "Name one region on the diagram in which protein digestion occurs."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Stomach (or other correct)"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "site-of-protein-digestion",
+   "sq": {
+    "SQ": {
+     "page": 15,
+     "start": "Name one region on the diagram in which protein digestion occurs."
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "The diagram shows part of the human digestive system."
+     }
+    }
+   ],
+   "fig": "q13-digestive"
+  },
+  {
+   "key": "13ciii",
+   "ref": "Q13(c)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "Why is it necessary to digest protein?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "So it can be absorbed (into the blood)"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "why-digest-protein",
+   "sq": {
+    "SQ": {
+     "page": 15,
+     "start": "Why is it necessary to digest protein?"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "The diagram shows part of the human digestive system."
+     }
+    }
+   ],
+   "fig": "q13-digestive"
+  },
+  {
+   "key": "13civ",
+   "ref": "Q13(c)(iv)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 4,
+     "start": "Give one function of B."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Store bile"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "function-of-gall-bladder",
+   "sq": {
+    "SQ": {
+     "page": 15,
+     "start": "Give one function of B."
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 4,
+      "start": "The diagram shows part of the human digestive system."
+     }
+    }
+   ],
+   "fig": "q13-digestive",
+   "labels": [
+    {
+     "L": {
+      "letter": "B",
+      "meaning_sel": {
+       "S": {
+        "start": "Gall bladder",
+        "page": 15
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "14ai",
+   "ref": "Q14(a)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "Name the structure labelled X."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Vascular bundle"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "vascular-bundle",
+   "sq": {
+    "SQ": {
+     "page": 16,
+     "start": "Name the structure labelled X."
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows a section through the stem of a",
+      "end": "monocotyledonous (monocot) plant."
+     }
+    }
+   ],
+   "fig": "q14-stem",
+   "labels": [
+    {
+     "L": {
+      "letter": "X",
+      "meaning_sel": {
+       "S": {
+        "start": "Vascular bundle",
+        "page": 16
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "14aii",
+   "ref": "Q14(a)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "Explain the term monocotyledonous."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Containing one seed leaf"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "monocotyledonous",
+   "sq": {
+    "SQ": {
+     "page": 16,
+     "start": "Explain the term monocotyledonous."
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows a section through the stem of a",
+      "end": "monocotyledonous (monocot) plant."
+     }
+    }
+   ],
+   "fig": "q14-stem"
+  },
+  {
+   "key": "14aiii",
+   "ref": "Q14(a)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "What feature shown in the diagram indicates it is a",
+     "end": "monocot?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Vascular bundles are scattered"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "monocot-stem-feature",
+   "sq": {
+    "SQ": {
+     "page": 16,
+     "start": "What feature shown in the diagram indicates it is a monocot?"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows a section through the stem of a",
+      "end": "monocotyledonous (monocot) plant."
+     }
+    }
+   ],
+   "fig": "q14-stem"
+  },
+  {
+   "key": "14bi",
+   "ref": "Q14(b)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "Name the parts labelled A, B, C and give one",
+     "end": "function for each named part."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Flower"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "A:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Sexual reproduction"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "Function of A:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Stem"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "B:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Function of B: Support (or other correct)"
+       }
+      },
+      "marks": 5
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Root"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "C:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Absorption of water and minerals (or other correct)"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "Function of C:"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "parts-of-a-plant",
+   "sq": {
+    "SQ": {
+     "page": 16,
+     "start": "Name the parts labelled A, B, C and give one function"
+    }
+   },
+   "total": 30,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the external structure of a typical plant."
+     }
+    }
+   ],
+   "fig": "q14-plant",
+   "labels": [
+    {
+     "L": {
+      "letter": "A",
+      "meaning_sel": {
+       "S": {
+        "start": "Flower",
+        "page": 16
+       }
+      },
+      "asked": true
+     }
+    },
+    {
+     "L": {
+      "letter": "B",
+      "meaning_sel": {
+       "S": {
+        "start": "Stem",
+        "page": 16
+       }
+      },
+      "asked": true
+     }
+    },
+    {
+     "L": {
+      "letter": "C",
+      "meaning_sel": {
+       "S": {
+        "start": "Root",
+        "page": 16
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "14bii",
+   "ref": "Q14(b)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "What is the name given to the part of the plant",
+     "end": "diagram?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Shoot"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "shoot",
+   "sq": {
+    "SQ": {
+     "page": 16,
+     "start": "What is the name given to the part of the plant above soil level"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the external structure of a typical plant."
+     }
+    }
+   ],
+   "fig": "q14-plant",
+   "labels": [
+    {
+     "L": {
+      "letter": "D",
+      "meaning_sel": {
+       "S": {
+        "start": "Shoot",
+        "page": 16
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "14biii",
+   "ref": "Q14(b)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "The meristem is a type of tissue in plants. What",
+     "end": "is the meristem?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Part of a plant containing rapidly dividing cells"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "meristem",
+   "sq": {
+    "SQ": {
+     "page": 16,
+     "start": "What is the meristem?"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the external structure of a typical plant."
+     }
+    }
+   ],
+   "fig": "q14-plant"
+  },
+  {
+   "key": "14biv",
+   "ref": "Q14(b)(iv)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "Give one specific location in plants for a",
+     "end": "meristem."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Shoot tip or root tip or bud or other correct"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "location-of-meristems",
+   "sq": {
+    "SQ": {
+     "page": 16,
+     "start": "Give one specific location in plants for a meristem."
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the external structure of a typical plant."
+     }
+    }
+   ],
+   "fig": "q14-plant"
+  },
+  {
+   "key": "14ci",
+   "ref": "Q14(c)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "Name the layer of cells, E, on the top surface of a leaf and give one function for",
+     "end": "this layer."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Dermal (or epidermal)"
+       }
+      },
+      "marks": 6,
+      "label": {
+       "S": {
+        "start": "Name:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Function: Protection or other correct"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "dermal-tissue",
+   "sq": {
+    "SQ": {
+     "page": 16,
+     "start": "Name the layer of cells, E, on the top surface of a leaf"
+    }
+   },
+   "total": 12,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the cross section of a leaf as seen under a light microscope."
+     }
+    }
+   ],
+   "fig": "q14-leaf",
+   "labels": [
+    {
+     "L": {
+      "letter": "E",
+      "meaning_sel": {
+       "S": {
+        "start": "Dermal (or epidermal)",
+        "page": 16
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "14cii",
+   "ref": "Q14(c)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "Name the group of cells, F, that make up the bulk of the internal part of a leaf."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Ground"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "ground-tissue",
+   "sq": {
+    "SQ": {
+     "page": 16,
+     "start": "Name the group of cells, F, that make up the bulk"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the cross section of a leaf as seen under a light microscope."
+     }
+    }
+   ],
+   "fig": "q14-leaf",
+   "labels": [
+    {
+     "L": {
+      "letter": "F",
+      "meaning_sel": {
+       "S": {
+        "start": "Ground",
+        "page": 16
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "14ciii",
+   "ref": "Q14(c)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "Water is transported through a plant by specialised cells labelled G on the",
+     "end": "diagram. Name these cells."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Xylem vessels or xylem tracheids"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "xylem",
+   "sq": {
+    "SQ": {
+     "page": 16,
+     "start": "Water is transported through a plant by specialised cells"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the cross section of a leaf as seen under a light microscope."
+     }
+    }
+   ],
+   "fig": "q14-leaf",
+   "labels": [
+    {
+     "L": {
+      "letter": "G",
+      "meaning_sel": {
+       "S": {
+        "start": "Xylem vessels or xylem tracheids",
+        "page": 16
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "14civ",
+   "ref": "Q14(c)(iv)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "Give two features of the cells named at part (c) (iii) above that enable them to",
+     "end": "transport water."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 6,
+      "sel": {
+       "S": {
+        "start": "Thick walls / lignin / pits / narrow / hollow / tubes"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "xylem-adaptations",
+   "sq": {
+    "SQ": {
+     "page": 16,
+     "start": "Give two features of the cells named at part (c) (iii)"
+    }
+   },
+   "total": 12,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the cross section of a leaf as seen under a light microscope."
+     }
+    }
+   ],
+   "fig": "q14-leaf"
+  },
+  {
+   "key": "14cv",
+   "ref": "Q14(c)(v)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "Food is transported through a plant by specialised cells labelled H on the",
+     "end": "diagram. Name these cells."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Phloem sieve tube cells"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "phloem",
+   "sq": {
+    "SQ": {
+     "page": 16,
+     "start": "Food is transported through a plant by specialised cells"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the cross section of a leaf as seen under a light microscope."
+     }
+    }
+   ],
+   "fig": "q14-leaf",
+   "labels": [
+    {
+     "L": {
+      "letter": "H",
+      "meaning_sel": {
+       "S": {
+        "start": "Phloem sieve tube cells",
+        "page": 16
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "14cvi",
+   "ref": "Q14(c)(vi)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 5,
+     "start": "Which two letters on the diagram together make up the veins of a leaf?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "G and H"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "leaf-veins",
+   "sq": {
+    "SQ": {
+     "page": 16,
+     "start": "Which two letters on the diagram together make up the veins"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 5,
+      "start": "The diagram shows the cross section of a leaf as seen under a light microscope."
+     }
+    }
+   ],
+   "fig": "q14-leaf"
+  },
+  {
+   "key": "15ai",
+   "ref": "Q15(a)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Name the liquid component of blood."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Plasma"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "plasma",
+   "sq": {
+    "SQ": {
+     "page": 17,
+     "start": "Name the liquid component of blood."
+    }
+   },
+   "total": 5
+  },
+  {
+   "key": "15aii",
+   "ref": "Q15(a)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Name the cells in the blood that fight infection."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "White (blood cells)"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "white-blood-cells",
+   "sq": {
+    "SQ": {
+     "page": 17,
+     "start": "Name the cells in the blood that fight infection."
+    }
+   },
+   "total": 5
+  },
+  {
+   "key": "15aiii",
+   "ref": "Q15(a)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Name the chemical present in red blood cells that transports oxygen."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Haemoglobin"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "haemoglobin",
+   "sq": {
+    "SQ": {
+     "page": 17,
+     "start": "Name the chemical present in red blood cells that transports oxygen."
+    }
+   },
+   "total": 5
+  },
+  {
+   "key": "15bi",
+   "ref": "Q15(b)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Name the parts labelled A, B, C, D."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Right atrium"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "A:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Septum"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "B:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Left ventricle"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "C:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Left atrium"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "D:"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "parts-of-the-heart",
+   "sq": {
+    "SQ": {
+     "page": 17,
+     "start": "Name the parts labelled A, B, C, D."
+    }
+   },
+   "total": 20,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "The diagram is of the human heart which is part of the human circulatory system."
+     }
+    }
+   ],
+   "fig": "q15-heart",
+   "labels": [
+    {
+     "L": {
+      "letter": "A",
+      "meaning_sel": {
+       "S": {
+        "start": "Right atrium",
+        "page": 17
+       }
+      },
+      "asked": true
+     }
+    },
+    {
+     "L": {
+      "letter": "B",
+      "meaning_sel": {
+       "S": {
+        "start": "Septum",
+        "page": 17
+       }
+      },
+      "asked": true
+     }
+    },
+    {
+     "L": {
+      "letter": "C",
+      "meaning_sel": {
+       "S": {
+        "start": "Left ventricle",
+        "page": 17
+       }
+      },
+      "asked": true
+     }
+    },
+    {
+     "L": {
+      "letter": "D",
+      "meaning_sel": {
+       "S": {
+        "start": "Left atrium",
+        "page": 17
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "15bii",
+   "ref": "Q15(b)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Name the structure located in the wall of chamber A that controls the heartbeat."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Pacemaker"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "pacemaker",
+   "sq": {
+    "SQ": {
+     "page": 17,
+     "start": "Name the structure located in the wall of chamber A"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "The diagram is of the human heart which is part of the human circulatory system."
+     }
+    }
+   ],
+   "fig": "q15-heart",
+   "labels": [
+    {
+     "L": {
+      "letter": "A",
+      "meaning_sel": {
+       "S": {
+        "start": "Right atrium",
+        "page": 17
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "15biii",
+   "ref": "Q15(b)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Name an activity that causes the heart to beat faster."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Exercise (or other correct)"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "raising-heart-rate",
+   "sq": {
+    "SQ": {
+     "page": 17,
+     "start": "Name an activity that causes the heart to beat faster."
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "The diagram is of the human heart which is part of the human circulatory system."
+     }
+    }
+   ],
+   "fig": "q15-heart"
+  },
+  {
+   "key": "15biv",
+   "ref": "Q15(b)(iv)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Explain why chamber C has a thicker muscular wall than the other chambers."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "It has to pump blood further within the body (or described)"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "left-ventricle-wall",
+   "sq": {
+    "SQ": {
+     "page": 17,
+     "start": "Explain why chamber C has a thicker muscular wall"
+    }
+   },
+   "total": 5,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "The diagram is of the human heart which is part of the human circulatory system."
+     }
+    }
+   ],
+   "fig": "q15-heart",
+   "labels": [
+    {
+     "L": {
+      "letter": "C",
+      "meaning_sel": {
+       "S": {
+        "start": "Left ventricle",
+        "page": 17
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "15bv",
+   "ref": "Q15(b)(v)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Name and give the function of the structure labelled X."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Semilunar (or aortic) valve"
+       }
+      },
+      "marks": 5,
+      "label": {
+       "S": {
+        "start": "Name:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Function: Prevent backflow of blood"
+       }
+      },
+      "marks": 5
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "semilunar-valve",
+   "sq": {
+    "SQ": {
+     "page": 17,
+     "start": "Name and give the function of the structure labelled X."
+    }
+   },
+   "total": 10,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "The diagram is of the human heart which is part of the human circulatory system."
+     }
+    }
+   ],
+   "fig": "q15-heart",
+   "labels": [
+    {
+     "L": {
+      "letter": "X",
+      "meaning_sel": {
+       "S": {
+        "start": "Semilunar (or aortic) valve",
+        "page": 17
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "15ci",
+   "ref": "Q15(c)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Name the circuit that carries blood from the heart around the body."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Systemic"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "systemic-circuit",
+   "sq": {
+    "SQ": {
+     "page": 17,
+     "start": "Name the circuit that carries blood from the heart around the body."
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "There is a two-circuit circulatory system in the human body."
+     }
+    }
+   ]
+  },
+  {
+   "key": "15cii",
+   "ref": "Q15(c)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Describe two differences between an artery and a vein."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 6,
+      "sel": {
+       "S": {
+        "start": "Artery has a thicker wall or vein has a thinner wall / artery does not have valves or vein has",
+        "end": "towards the heart"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "arteries-and-veins",
+   "sq": {
+    "SQ": {
+     "page": 17,
+     "start": "Describe two differences between an artery and a vein."
+    }
+   },
+   "total": 12,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "There is a two-circuit circulatory system in the human body."
+     }
+    }
+   ]
+  },
+  {
+   "key": "15ciii",
+   "ref": "Q15(c)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "Name the small blood vessels that provide food and oxygen to body cells."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Capillaries"
+       }
+      },
+      "marks": 6
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "capillaries",
+   "sq": {
+    "SQ": {
+     "page": 17,
+     "start": "Name the small blood vessels that provide food and oxygen"
+    }
+   },
+   "total": 6,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "There is a two-circuit circulatory system in the human body."
+     }
+    }
+   ]
+  },
+  {
+   "key": "15civ1",
+   "ref": "Q15(c)(iv)1",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "1.",
+     "end": "Name two parts of the lymphatic system.",
+     "after": "The lymphatic system is another type",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 6,
+      "sel": {
+       "S": {
+        "start": "Lymph nodes / lymph vessels / spleen / thymus / other correct"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "parts-of-the-lymphatic-system",
+   "sq": {
+    "SQ": {
+     "page": 17,
+     "start": "1. Name two parts of the lymphatic system."
+    }
+   },
+   "total": 12,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "There is a two-circuit circulatory system in the human body."
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "The lymphatic system is another type of circulatory system."
+     }
+    }
+   ],
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "15civ2",
+   "ref": "Q15(c)(iv)2",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 6,
+     "start": "2.",
+     "end": "Give two functions of the lymphatic system.",
+     "after": "Name two parts of the lymphatic system.",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 6,
+      "sel": {
+       "S": {
+        "start": "Fight infection / store white blood cells / mature white blood cells / take away excess",
+        "end": "other correct"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "functions-of-the-lymphatic-system",
+   "sq": {
+    "SQ": {
+     "page": 17,
+     "start": "2. Give two functions of the lymphatic system."
+    }
+   },
+   "total": 12,
+   "stem": [
+    {
+     "Q": {
+      "page": 6,
+      "start": "There is a two-circuit circulatory system in the human body."
+     }
+    },
+    {
+     "Q": {
+      "page": 6,
+      "start": "The lymphatic system is another type of circulatory system."
+     }
+    }
+   ],
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "16ai",
+   "ref": "Q16(a)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "It is difficult to describe viruses as living organisms.",
+     "end": "Give one reason why."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "They are not cells or they only have one type of nucleic acid or other correct description"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-1-1",
+   "concept": "viruses-and-life",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "It is difficult to describe viruses as living organisms."
+    }
+   },
+   "total": 7,
+   "notes": "Every response on the part's ladder is carded at its first rate."
+  },
+  {
+   "key": "16aii1",
+   "ref": "Q16(a)(ii)1",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "1.",
+     "end": "Complex",
+     "after": "following shapes:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "B"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-1-1",
+   "concept": "virus-shape-complex",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "1. Complex:"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 7,
+      "start": "Viruses can be classified based on shape. Match each virus in the picture to the",
+      "end": "following shapes:"
+     }
+    }
+   ],
+   "fig": "q16-viruses",
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "16aii2",
+   "ref": "Q16(a)(ii)2",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "2.",
+     "end": "Round.",
+     "after": "following shapes:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "A"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-1-1",
+   "concept": "virus-shape-round",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "2. Round:"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 7,
+      "start": "Viruses can be classified based on shape. Match each virus in the picture to the",
+      "end": "following shapes:"
+     }
+    }
+   ],
+   "fig": "q16-viruses",
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "16aiii",
+   "ref": "Q16(a)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "Name two harmful viruses."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 7,
+      "sel": {
+       "S": {
+        "start": "Coronavirus / cold (or flu) virus / HIV / other correct"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-1-1",
+   "concept": "harmful-viruses",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "Name two harmful viruses."
+    }
+   },
+   "total": 14
+  },
+  {
+   "key": "16aiv",
+   "ref": "Q16(a)(iv)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "Bacteria are living organisms that are",
+     "end": "shapes."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Cocci (round)"
+       }
+      },
+      "marks": 7
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Rod"
+       }
+      },
+      "marks": 7
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Spiral"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "bacterial-shapes",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "Name the three types of bacterial shapes."
+    }
+   },
+   "total": 21
+  },
+  {
+   "key": "16av",
+   "ref": "Q16(a)(v)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "Give two examples of beneficial bacteria."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 7,
+      "sel": {
+       "S": {
+        "start": "Lactic acid bacteria / E. coli / other correct"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "beneficial-bacteria",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "Give two examples of beneficial bacteria."
+    }
+   },
+   "total": 14
+  },
+  {
+   "key": "16bi",
+   "ref": "Q16(b)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "Name structure X."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "(Spindle) fibre"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-3",
+   "concept": "spindle-fibres",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "Name structure X."
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 7,
+      "start": "Cell continuity is important for all life. The diagram shows a stage of mitosis."
+     }
+    }
+   ],
+   "fig": "q16-mitosis",
+   "labels": [
+    {
+     "L": {
+      "letter": "X",
+      "meaning_sel": {
+       "S": {
+        "start": "(Spindle) fibre",
+        "page": 18
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "16bii",
+   "ref": "Q16(b)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "Explain the term chromosome."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "DNA and protein (or other correct explanation)"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-3",
+   "concept": "chromosome",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "Explain the term chromosome."
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 7,
+      "start": "Cell continuity is important for all life. The diagram shows a stage of mitosis."
+     }
+    }
+   ],
+   "fig": "q16-mitosis"
+  },
+  {
+   "key": "16biii",
+   "ref": "Q16(b)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "Mitosis is where the cell is dividing. What name is given to the stage of the cell",
+     "end": "cycle where the cell is not dividing?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Interphase"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-3",
+   "concept": "interphase",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "What name is given to the stage of the cell cycle where the cell is not dividing?"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 7,
+      "start": "Cell continuity is important for all life. The diagram shows a stage of mitosis."
+     }
+    }
+   ],
+   "fig": "q16-mitosis"
+  },
+  {
+   "key": "16biv",
+   "ref": "Q16(b)(iv)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "Describe what is happening at the stage of mitosis shown in the diagram."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Chromosomes are lined up along the middle of the cell."
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-3",
+   "concept": "metaphase",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "Describe what is happening at the stage of"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 7,
+      "start": "Cell continuity is important for all life. The diagram shows a stage of mitosis."
+     }
+    }
+   ],
+   "fig": "q16-mitosis"
+  },
+  {
+   "key": "16bv",
+   "ref": "Q16(b)(v)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "What happens to the chromosomes during the stage that immediately follows",
+     "end": "the one shown in the diagram?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "They are pulled to the poles of the cell."
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-3",
+   "concept": "anaphase",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "What happens to the chromosomes during the stage"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 7,
+      "start": "Cell continuity is important for all life. The diagram shows a stage of mitosis."
+     }
+    }
+   ],
+   "fig": "q16-mitosis"
+  },
+  {
+   "key": "16bvi1",
+   "ref": "Q16(b)(vi)1",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "1.",
+     "end": "a single-celled organism.",
+     "after": "Describe the function of mitosis in:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Reproduction"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-3",
+   "concept": "mitosis-in-single-celled-organisms",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "1. a single-celled organism:"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 7,
+      "start": "Cell continuity is important for all life. The diagram shows a stage of mitosis."
+     }
+    },
+    {
+     "Q": {
+      "page": 7,
+      "start": "Describe the function of mitosis in:"
+     }
+    }
+   ],
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+   "fig": "q16-mitosis"
+  },
+  {
+   "key": "16bvi2",
+   "ref": "Q16(b)(vi)2",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "2.",
+     "end": "a multicellular organism.",
+     "after": "Describe the function of mitosis in:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Growth or repair or other correct"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-3",
+   "concept": "mitosis-in-multicellular-organisms",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "2. a multicellular organism:"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 7,
+      "start": "Cell continuity is important for all life. The diagram shows a stage of mitosis."
+     }
+    },
+    {
+     "Q": {
+      "page": 7,
+      "start": "Describe the function of mitosis in:"
+     }
+    }
+   ],
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+   "fig": "q16-mitosis"
+  },
+  {
+   "key": "16bvii",
+   "ref": "Q16(b)(vii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "Name a disorder in which cells lose normal control of mitosis."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Cancer"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-3",
+   "concept": "cancer",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "Name a disorder in which cells lose normal control of mitosis."
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 7,
+      "start": "Cell continuity is important for all life. The diagram shows a stage of mitosis."
+     }
+    }
+   ],
+   "fig": "q16-mitosis"
+  },
+  {
+   "key": "16bviii",
+   "ref": "Q16(b)(viii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "Give one possible cause of the disorder you named at part (b) (vii) above."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "UV light or cigarette smoke or genetics or other correct"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-3",
+   "concept": "causes-of-cancer",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "Give one possible cause of the disorder you named"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 7,
+      "start": "Cell continuity is important for all life. The diagram shows a stage of mitosis."
+     }
+    }
+   ],
+   "fig": "q16-mitosis"
+  },
+  {
+   "key": "16bix",
+   "ref": "Q16(b)(ix)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 7,
+     "start": "Give one difference between the products of mitosis and meiosis."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Mitosis produces identical cells or meiosis produces variation or other correct difference"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-3",
+   "concept": "mitosis-and-meiosis",
+   "sq": {
+    "SQ": {
+     "page": 18,
+     "start": "Give one difference between the products of mitosis and meiosis."
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 7,
+      "start": "Cell continuity is important for all life. The diagram shows a stage of mitosis."
+     }
+    }
+   ],
+   "fig": "q16-mitosis"
+  },
+  {
+   "key": "16ci1",
+   "ref": "Q16(c)(i)1",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "1.",
+     "end": "Light",
+     "after": "State a source for each of the following",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Sun (or other correct)"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-2",
+   "concept": "source-of-light",
+   "sq": {
+    "SQ": {
+     "page": 19,
+     "start": "1. Light:"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "The diagram shows a plant photosynthesising."
+     }
+    },
+    {
+     "Q": {
+      "page": 8,
+      "start": "State a source for each of the following, which are essential for photosynthesis:"
+     }
+    }
+   ],
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+   "fig": "q16-plant"
+  },
+  {
+   "key": "16ci2",
+   "ref": "Q16(c)(i)2",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "2.",
+     "end": "Water.",
+     "after": "State a source for each of the following",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Ground (or other correct)"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-2",
+   "concept": "source-of-water",
+   "sq": {
+    "SQ": {
+     "page": 19,
+     "start": "2. Water:"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "The diagram shows a plant photosynthesising."
+     }
+    },
+    {
+     "Q": {
+      "page": 8,
+      "start": "State a source for each of the following, which are essential for photosynthesis:"
+     }
+    }
+   ],
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each.",
+   "fig": "q16-plant"
+  },
+  {
+   "key": "16cii",
+   "ref": "Q16(c)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "Name the green pigment in leaves that traps light energy for photosynthesis."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Chlorophyll"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-2",
+   "concept": "chlorophyll",
+   "sq": {
+    "SQ": {
+     "page": 19,
+     "start": "Name the green pigment in leaves that traps light energy"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "The diagram shows a plant photosynthesising."
+     }
+    }
+   ],
+   "fig": "q16-plant"
+  },
+  {
+   "key": "16ciii",
+   "ref": "Q16(c)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "Light energy is used to split water into three products.",
+     "end": "Name these three products."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Oxygen (or O"
+       }
+      },
+      "marks": 7
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Protons (or H"
+       }
+      },
+      "marks": 7
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "(High energy) electrons (or e"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-2",
+   "concept": "products-of-splitting-water",
+   "sq": {
+    "SQ": {
+     "page": 19,
+     "start": "Light energy is used to split water into three products."
+    }
+   },
+   "total": 21,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "The diagram shows a plant photosynthesising."
+     }
+    }
+   ],
+   "fig": "q16-plant"
+  },
+  {
+   "key": "16civ",
+   "ref": "Q16(c)(iv)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "Give the fate of any one of the named products in part (c) (iii) above."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "O",
+        "end": "passed to chlorophyll or used to make carbohydrate"
+       }
+      },
+      "marks": 7,
+      "whole": true
+     }
+    }
+   ],
+   "topic": "bio-2-2",
+   "concept": "fate-of-light-stage-products",
+   "sq": {
+    "SQ": {
+     "page": 19,
+     "start": "Give the fate of any one of the named products"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "The diagram shows a plant photosynthesising."
+     }
+    }
+   ],
+   "decision": "The scheme prints a fate for each of the three products, joined by \"or\": one response, one row.",
+   "fig": "q16-plant"
+  },
+  {
+   "key": "16cv",
+   "ref": "Q16(c)(v)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "Using the information given, complete a word equation for photosynthesis."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Carbon dioxide + water → Glucose + oxygen"
+       }
+      },
+      "marks": 14,
+      "units": [
+       7,
+       7
+      ]
+     }
+    }
+   ],
+   "topic": "bio-2-2",
+   "concept": "photosynthesis-equation",
+   "sq": {
+    "SQ": {
+     "page": 19,
+     "start": "Using the information given, complete a word equation for photosynthesis."
+    }
+   },
+   "total": 14,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "The diagram shows a plant photosynthesising."
+     }
+    }
+   ],
+   "fig": "q16-plant",
+   "decision": "The scheme prices the equation \"Two points\": one row of two responses."
+  },
+  {
+   "key": "16cvi",
+   "ref": "Q16(c)(vi)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "Suggest a reason for pumping carbon dioxide into greenhouses."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Increase the rate of photosynthesis (or other correct reason)"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-2",
+   "concept": "carbon-dioxide-in-greenhouses",
+   "sq": {
+    "SQ": {
+     "page": 19,
+     "start": "Suggest a reason for pumping carbon dioxide into greenhouses."
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "The diagram shows a plant photosynthesising."
+     }
+    }
+   ],
+   "fig": "q16-plant"
+  },
+  {
+   "key": "16di",
+   "ref": "Q16(d)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "Name the bones X, Y, Z."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "X: Humerus"
+       }
+      },
+      "marks": 7
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Y: Radius"
+       }
+      },
+      "marks": 7
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Z: Ulna"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-4",
+   "concept": "bones-of-the-arm",
+   "sq": {
+    "SQ": {
+     "page": 19,
+     "start": "Name the bones X, Y, Z."
+    }
+   },
+   "total": 21,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "The diagram shows some of the bones and muscles found in the human arm."
+     }
+    }
+   ],
+   "fig": "q16-arm",
+   "labels": [
+    {
+     "L": {
+      "letter": "X",
+      "meaning_sel": {
+       "S": {
+        "start": "Humerus",
+        "page": 19
+       }
+      },
+      "asked": true
+     }
+    },
+    {
+     "L": {
+      "letter": "Y",
+      "meaning_sel": {
+       "S": {
+        "start": "Radius",
+        "page": 19
+       }
+      },
+      "asked": true
+     }
+    },
+    {
+     "L": {
+      "letter": "Z",
+      "meaning_sel": {
+       "S": {
+        "start": "Ulna",
+        "page": 19
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "16dii",
+   "ref": "Q16(d)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "The diagram shows a pair of antagonistic muscles.",
+     "end": "Explain what is meant by antagonistic muscles."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "(Muscles) that have opposite effects"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-4",
+   "concept": "antagonistic-muscles",
+   "sq": {
+    "SQ": {
+     "page": 19,
+     "start": "The diagram shows a pair of antagonistic muscles."
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "The diagram shows some of the bones and muscles found in the human arm."
+     }
+    }
+   ],
+   "fig": "q16-arm"
+  },
+  {
+   "key": "16diii",
+   "ref": "Q16(d)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "What is the name of the structure that connects the biceps muscle to bone Y?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Tendon"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-4",
+   "concept": "tendon",
+   "sq": {
+    "SQ": {
+     "page": 19,
+     "start": "What is the name of the structure that connects the biceps"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "The diagram shows some of the bones and muscles found in the human arm."
+     }
+    }
+   ],
+   "fig": "q16-arm",
+   "labels": [
+    {
+     "L": {
+      "letter": "Y",
+      "meaning_sel": {
+       "S": {
+        "start": "Radius",
+        "page": 19
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "16div",
+   "ref": "Q16(d)(iv)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "Give two functions of the human skeleton."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 7,
+      "sel": {
+       "S": {
+        "start": "Protection / movement / production of blood cells / shape or support / other correct"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-2-4",
+   "concept": "functions-of-the-skeleton",
+   "sq": {
+    "SQ": {
+     "page": 19,
+     "start": "Give two functions of the human skeleton."
+    }
+   },
+   "total": 14,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "The diagram shows some of the bones and muscles found in the human arm."
+     }
+    }
+   ],
+   "fig": "q16-arm"
+  },
+  {
+   "key": "16dv",
+   "ref": "Q16(d)(v)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "Name a disorder of the musculoskeletal system."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Arthritis or osteoporosis or other correct"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-4",
+   "concept": "musculoskeletal-disorder",
+   "sq": {
+    "SQ": {
+     "page": 19,
+     "start": "Name a disorder of the musculoskeletal system."
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "The diagram shows some of the bones and muscles found in the human arm."
+     }
+    }
+   ],
+   "fig": "q16-arm"
+  },
+  {
+   "key": "16dvi",
+   "ref": "Q16(d)(vi)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 8,
+     "start": "Give one cause and one treatment of the disorder named in part (d) (v) above."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Correct cause"
+       }
+      },
+      "marks": 7,
+      "kind": "criterion",
+      "note_sel": {
+       "S": {
+        "start": "[Must match named disorder in part (v)]"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Correct treatment"
+       }
+      },
+      "marks": 7,
+      "kind": "criterion",
+      "note_sel": {
+       "S": {
+        "start": "[Must match named disorder in part (v)]",
+        "nth": 2
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-2-4",
+   "concept": "cause-and-treatment-of-disorder",
+   "sq": {
+    "SQ": {
+     "page": 19,
+     "start": "Give one cause and one treatment of the disorder"
+    }
+   },
+   "total": 14,
+   "stem": [
+    {
+     "Q": {
+      "page": 8,
+      "start": "The diagram shows some of the bones and muscles found in the human arm."
+     }
+    }
+   ],
+   "fig": "q16-arm"
+  },
+  {
+   "key": "17ai",
+   "ref": "Q17(a)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "To which kingdom does Amoeba belong?",
+     "end": "Give one reason for including Amoeba in this kingdom."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Kingdom: Protista"
+       }
+      },
+      "marks": 7
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "It is heterotrophic or other correct reason"
+       }
+      },
+      "marks": 7,
+      "label": {
+       "S": {
+        "start": "Reason:"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "amoeba-kingdom",
+   "sq": {
+    "SQ": {
+     "page": 20,
+     "start": "To which kingdom does Amoeba belong?"
+    }
+   },
+   "total": 14,
+   "stem": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "The diagram shows an Amoeba."
+     }
+    }
+   ],
+   "notes": "Every response on the part's ladder is carded at its first rate.",
+   "fig": "q17-amoeba"
+  },
+  {
+   "key": "17aii",
+   "ref": "Q17(a)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "Name the parts labelled A, B, C and give one function of each part."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Nucleus"
+       }
+      },
+      "marks": 7,
+      "label": {
+       "S": {
+        "start": "A:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "controls all activities of the cell"
+       }
+      },
+      "marks": 7,
+      "label": {
+       "S": {
+        "start": "Function of A:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Cell membrane"
+       }
+      },
+      "marks": 7,
+      "label": {
+       "S": {
+        "start": "B:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "controls what enters and leaves the cell"
+       }
+      },
+      "marks": 7,
+      "label": {
+       "S": {
+        "start": "Function of B:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Food vacuole"
+       }
+      },
+      "marks": 7,
+      "label": {
+       "S": {
+        "start": "C:"
+       }
+      }
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "digestion or nutrition"
+       }
+      },
+      "marks": 7,
+      "label": {
+       "S": {
+        "start": "Function of C:"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "parts-of-amoeba",
+   "sq": {
+    "SQ": {
+     "page": 20,
+     "start": "Name the parts labelled A, B, C and give one function of each part."
+    }
+   },
+   "total": 42,
+   "stem": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "The diagram shows an Amoeba."
+     }
+    }
+   ],
+   "fig": "q17-amoeba",
+   "labels": [
+    {
+     "L": {
+      "letter": "A",
+      "meaning_sel": {
+       "S": {
+        "start": "Nucleus",
+        "page": 20
+       }
+      },
+      "asked": true
+     }
+    },
+    {
+     "L": {
+      "letter": "B",
+      "meaning_sel": {
+       "S": {
+        "start": "Cell membrane",
+        "page": 20
+       }
+      },
+      "asked": true
+     }
+    },
+    {
+     "L": {
+      "letter": "C",
+      "meaning_sel": {
+       "S": {
+        "start": "Food vacuole",
+        "page": 20
+       }
+      },
+      "asked": true
+     }
+    }
+   ]
+  },
+  {
+   "key": "17aiii",
+   "ref": "Q17(a)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "Describe how the contractile vacuole carries out its function."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Takes in (or stores) excess water"
+       }
+      },
+      "marks": 7
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Expels water out of cell when full"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-3-2",
+   "concept": "contractile-vacuole",
+   "sq": {
+    "SQ": {
+     "page": 20,
+     "start": "Describe how the contractile vacuole carries out its function."
+    }
+   },
+   "total": 14,
+   "stem": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "The diagram shows an Amoeba."
+     }
+    }
+   ],
+   "fig": "q17-amoeba"
+  },
+  {
+   "key": "17bi",
+   "ref": "Q17(b)(i)",
+   "sec": "C",
+   "q": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "Draw a diagram of the female reproductive system.",
+      "end": "Label the following parts."
+     }
+    },
+    {
+     "Q": {
+      "page": 9,
+      "start": "Ovary",
+      "br": true
+     }
+    },
+    {
+     "Q": {
+      "page": 9,
+      "start": "Fallopian tube",
+      "br": true
+     }
+    },
+    {
+     "Q": {
+      "page": 9,
+      "start": "Uterus",
+      "br": true
+     }
+    }
+   ],
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Drawing: Ovary and fallopian tube and uterus and vagina"
+       }
+      },
+      "marks": 7,
+      "kind": "criterion"
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Ovary",
+        "after": "Labels:"
+       }
+      },
+      "marks": 7,
+      "kind": "criterion"
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Fallopian tube",
+        "after": "Labels:"
+       }
+      },
+      "marks": 7,
+      "kind": "criterion"
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Uterus",
+        "after": "Labels:"
+       }
+      },
+      "marks": 7,
+      "kind": "criterion"
+     }
+    }
+   ],
+   "topic": "bio-2-5",
+   "concept": "drawing-female-reproductive-system",
+   "sq": {
+    "SQ": {
+     "page": 20,
+     "start": "Draw a diagram of the female reproductive system."
+    }
+   },
+   "total": 28,
+   "decision": "The scheme counts the drawing and each of its three labels as a response on the part's ladder."
+  },
+  {
+   "key": "17bii1",
+   "ref": "Q17(b)(ii)1",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "1.",
+     "end": "Ovulation",
+     "after": "Indicate on your diagram the location",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Correct location indicated"
+       }
+      },
+      "marks": 7,
+      "kind": "criterion"
+     }
+    }
+   ],
+   "topic": "bio-2-5",
+   "concept": "site-of-ovulation",
+   "sq": {
+    "SQ": {
+     "page": 20,
+     "start": "1. Ovulation:"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "Indicate on your diagram the location of the following events:"
+     }
+    }
+   ],
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "17bii2",
+   "ref": "Q17(b)(ii)2",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "2.",
+     "end": "Fertilisation",
+     "after": "Indicate on your diagram the location",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Correct location indicated"
+       }
+      },
+      "marks": 7,
+      "kind": "criterion"
+     }
+    }
+   ],
+   "topic": "bio-2-5",
+   "concept": "site-of-fertilisation",
+   "sq": {
+    "SQ": {
+     "page": 20,
+     "start": "2. Fertilisation:"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "Indicate on your diagram the location of the following events:"
+     }
+    }
+   ],
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "17bii3",
+   "ref": "Q17(b)(ii)3",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "3.",
+     "end": "Implantation.",
+     "after": "Indicate on your diagram the location",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Correct location indicated",
+        "after": "2. Fertilisation:",
+        "nth": 2
+       }
+      },
+      "marks": 7,
+      "kind": "criterion"
+     }
+    }
+   ],
+   "topic": "bio-2-5",
+   "concept": "site-of-implantation",
+   "sq": {
+    "SQ": {
+     "page": 20,
+     "start": "3. Implantation:"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 9,
+      "start": "Indicate on your diagram the location of the following events:"
+     }
+    }
+   ],
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each. The scheme prints this answer at the end of its reprint's line."
+  },
+  {
+   "key": "17biii",
+   "ref": "Q17(b)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "The ovary is an endocrine gland and secretes hormones.",
+     "end": "hormone."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Hormone: Oestrogen or progesterone and Function: correct matching function given"
+       }
+      },
+      "marks": 7,
+      "whole": true
+     }
+    }
+   ],
+   "topic": "bio-2-5",
+   "concept": "ovarian-hormones",
+   "sq": {
+    "SQ": {
+     "page": 20,
+     "start": "Name one hormone secreted by the ovary"
+    }
+   },
+   "total": 7
+  },
+  {
+   "key": "17biv",
+   "ref": "Q17(b)(iv)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 9,
+     "start": "Give two methods of contraception."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 7,
+      "sel": {
+       "S": {
+        "start": "Condom / dome / pill / natural (or rhythm) / other correct"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-2-5",
+   "concept": "contraception",
+   "sq": {
+    "SQ": {
+     "page": 20,
+     "start": "Give two methods of contraception."
+    }
+   },
+   "total": 14
+  },
+  {
+   "key": "17ci",
+   "ref": "Q17(c)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 10,
+     "start": "What is excretion?"
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Getting rid of waste products"
+       }
+      },
+      "marks": 7
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "of metabolism from the body"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "excretion",
+   "sq": {
+    "SQ": {
+     "page": 21,
+     "start": "What is excretion?"
+    }
+   },
+   "total": 14,
+   "decision": "The part's table counts ten responses; the scheme sets this definition on two lines, each a response, the only count of its printed answers that reaches ten."
+  },
+  {
+   "key": "17cii1",
+   "ref": "Q17(c)(ii)1",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 10,
+     "start": "1.",
+     "end": "Urine",
+     "after": "Name the organ that produces:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Kidney"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "organ-producing-urine",
+   "sq": {
+    "SQ": {
+     "page": 21,
+     "start": "1. Urine:"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 10,
+      "start": "Name the organ that produces:"
+     }
+    }
+   ],
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "17cii2",
+   "ref": "Q17(c)(ii)2",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 10,
+     "start": "2.",
+     "end": "Sweat.",
+     "after": "Name the organ that produces:",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Skin"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "organ-producing-sweat",
+   "sq": {
+    "SQ": {
+     "page": 21,
+     "start": "2. Sweat:"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 10,
+      "start": "Name the organ that produces:"
+     }
+    }
+   ],
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "17ciii",
+   "ref": "Q17(c)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 10,
+     "start": "Name a waste product that is found in both urine and sweat."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Water or salts or urea"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "waste-in-urine-and-sweat",
+   "sq": {
+    "SQ": {
+     "page": 21,
+     "start": "Name a waste product that is found in both urine and sweat."
+    }
+   },
+   "total": 7
+  },
+  {
+   "key": "17civ",
+   "ref": "Q17(c)(iv)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 10,
+     "start": "Name another organ of excretion."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Lungs"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "lungs-as-excretory-organ",
+   "sq": {
+    "SQ": {
+     "page": 21,
+     "start": "Name another organ of excretion."
+    }
+   },
+   "total": 7
+  },
+  {
+   "key": "17cv",
+   "ref": "Q17(c)(v)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 10,
+     "start": "Name an excretory substance released by the organ referred to in part (c) (iv)",
+     "end": "above."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Carbon dioxide or water vapour"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-6",
+   "concept": "substances-excreted-by-lungs",
+   "sq": {
+    "SQ": {
+     "page": 21,
+     "start": "Name an excretory substance released by the organ"
+    }
+   },
+   "total": 7
+  },
+  {
+   "key": "17cvi1",
+   "ref": "Q17(c)(vi)1",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 10,
+     "start": "1.",
+     "end": "volumes of sweat and urine the same.",
+     "after": "body vary with temperature.",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "25 °C"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-4",
+   "concept": "reading-sweat-urine-graph",
+   "sq": {
+    "SQ": {
+     "page": 21,
+     "start": "1. State the temperature at which the volumes"
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 10,
+      "start": "The graph below shows how the volumes of sweat and urine produced by the",
+      "end": "body vary with temperature."
+     }
+    }
+   ],
+   "fig": "q17-graph",
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "17cvi2",
+   "ref": "Q17(c)(vi)2",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 10,
+     "start": "2.",
+     "end": "Give a reason for your answer.",
+     "after": "volumes of sweat and urine the same.",
+     "br": true
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Increases"
+       }
+      },
+      "marks": 7
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "The body secretes sweat to cool down through evaporation"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-2-4",
+   "concept": "sweating-and-temperature",
+   "sq": {
+    "SQ": {
+     "page": 21,
+     "start": "2. What happens to the volume of sweat produced as the temperature rises?"
+    }
+   },
+   "total": 14,
+   "stem": [
+    {
+     "Q": {
+      "page": 10,
+      "start": "The graph below shows how the volumes of sweat and urine produced by the",
+      "end": "body vary with temperature."
+     }
+    }
+   ],
+   "fig": "q17-graph",
+   "decision": "Numbered items are separately counted responses on the part's ladder: one card each."
+  },
+  {
+   "key": "17di-evolution",
+   "ref": "Q17(d)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 10,
+     "start": "Explain briefly the underlined terms."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Evolution: Genetic changes in populations"
+       }
+      },
+      "marks": 7
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "in response to the environment (over time)"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-1-5",
+   "concept": "evolution",
+   "sq": {
+    "SQ": {
+     "page": 22,
+     "start": "Explain briefly the underlined terms."
+    }
+   },
+   "total": 14,
+   "stem": [
+    {
+     "Q": {
+      "page": 10,
+      "start": "The evolution of birds has occurred over 10 million years and has led to increased",
+      "end": "species of birds on Earth today."
+     }
+    }
+   ],
+   "qfig": "q17d-i-question",
+   "item": [
+    "evolution",
+    "Evolution"
+   ],
+   "decision": "Each underlined term is explained on its own scheme rows: one card each. The part's table counts ten responses; the scheme sets the definition of evolution on two lines, each a response, the only count that reaches ten. The paper marks the terms by underlining them: the question is shown as printed."
+  },
+  {
+   "key": "17di-species",
+   "ref": "Q17(d)(i)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 10,
+     "start": "Explain briefly the underlined terms."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "(Group of) organisms capable of interbreeding (to produce fertile offspring)"
+       }
+      },
+      "marks": 7,
+      "label": {
+       "S": {
+        "start": "Species:"
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-1-5",
+   "concept": "species",
+   "sq": {
+    "SQ": {
+     "page": 22,
+     "start": "Explain briefly the underlined terms."
+    }
+   },
+   "total": 7,
+   "stem": [
+    {
+     "Q": {
+      "page": 10,
+      "start": "The evolution of birds has occurred over 10 million years and has led to increased",
+      "end": "species of birds on Earth today."
+     }
+    }
+   ],
+   "qfig": "q17d-i-question",
+   "item": [
+    "species",
+    "Species"
+   ],
+   "decision": "Each underlined term is explained on its own scheme rows: one card each."
+  },
+  {
+   "key": "17dii",
+   "ref": "Q17(d)(ii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 10,
+     "start": "Give two causes of variation in species."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Sexual reproduction"
+       }
+      },
+      "marks": 7
+     }
+    },
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "Mutation"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-1-5",
+   "concept": "causes-of-variation",
+   "sq": {
+    "SQ": {
+     "page": 22,
+     "start": "Give two causes of variation in species."
+    }
+   },
+   "total": 14,
+   "stem": [
+    {
+     "Q": {
+      "page": 10,
+      "start": "The evolution of birds has occurred over 10 million years and has led to increased",
+      "end": "species of birds on Earth today."
+     }
+    }
+   ]
+  },
+  {
+   "key": "17diii",
+   "ref": "Q17(d)(iii)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 10,
+     "start": "Name one scientist who is responsible for the",
+     "end": "theory of natural selection."
+    }
+   },
+   "rows": [
+    {
+     "pt": {
+      "sel": {
+       "S": {
+        "start": "(Charles) Darwin or (Alfred Russell -) Wallace"
+       }
+      },
+      "marks": 7
+     }
+    }
+   ],
+   "topic": "bio-1-5",
+   "concept": "darwin-and-wallace",
+   "sq": {
+    "SQ": {
+     "page": 22,
+     "start": "Name one scientist who is responsible for the theory of natural selection."
+    }
+   },
+   "total": 7
+  },
+  {
+   "key": "17div",
+   "ref": "Q17(d)(iv)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 10,
+     "start": "Give a broad outline of the theory of natural",
+     "end": "selection."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 2,
+      "per": 7,
+      "sel": {
+       "S": {
+        "start": "High reproductive rates / competition (or a struggle for survival) / those with the more",
+        "end": "with each generation."
+       }
+      }
+     }
+    }
+   ],
+   "topic": "bio-1-5",
+   "concept": "natural-selection",
+   "sq": {
+    "SQ": {
+     "page": 22,
+     "start": "Give a broad outline of the theory of natural selection."
+    }
+   },
+   "total": 14
+  },
+  {
+   "key": "17dv",
+   "ref": "Q17(d)(v)",
+   "sec": "C",
+   "q": {
+    "Q": {
+     "page": 10,
+     "start": "Describe in detail one source of evidence for",
+     "end": "the theory of natural selection."
+    }
+   },
+   "rows": [
+    {
+     "anyn": {
+      "claim": 1,
+      "per": 7,
+      "options": [
+       {
+        "S": {
+         "start": "Fossils"
+        }
+       },
+       {
+        "S": {
+         "start": "Comparative embryology"
+        }
+       },
+       {
+        "S": {
+         "start": "Comparative anatomy"
+        }
+       },
+       {
+        "S": {
+         "start": "Other correct name"
+        }
+       }
+      ],
+      "sel": null
+     }
+    },
+    {
+     "anyn": {
+      "claim": 1,
+      "per": 7,
+      "options": [
+       {
+        "S": {
+         "start": "show increased complexity over time"
+        }
+       },
+       {
+        "S": {
+         "start": "Embryos from different species show similarities"
+        }
+       },
+       {
+        "S": {
+         "start": "Pentadactyl limb shows similarities in different species"
+        }
+       },
+       {
+        "S": {
+         "start": "Other correct description"
+        }
+       }
+      ],
+      "sel": null
+     }
+    }
+   ],
+   "topic": "bio-1-5",
+   "concept": "evidence-for-evolution",
+   "sq": {
+    "SQ": {
+     "page": 22,
+     "start": "Describe in detail one source of evidence for the theory of natural selection"
+    }
+   },
+   "total": 14,
+   "decision": "The scheme prints each source named over its description, joined by \"or\": one name and its matching description, two responses."
+  }
+ ]
+}

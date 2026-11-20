@@ -1,0 +1,497 @@
+{
+  "sitting": "2023 Higher Level deferred examination (paper LC002ALP100EV/LC002ALP200EV, scheme LC002ALP000EV in deferredexams/ and deferredmarkingschemes/ 2023)",
+  "grid": {
+    "family": "hl-h1-h8",
+    "gridPages": [
+      4,
+      38
+    ],
+    "capRule": {
+      "kind": "purpose-primacy"
+    },
+    "capRulePage": 3,
+    "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Appendix 2 (PDF38) prints the discrete 100/70/60/50 grids and the combined 40/30/20/10 rows; the combined 15-mark row is printed with the Question A tasks (PDF4)."
+  },
+  "papers": {
+    "p1": {
+      "notes": [
+        "Three QA groups of 15/15/20 plus three B 50 and seven composing 100 = 19 tasks. QA(ii) is printed word for word under TEXT 1 and TEXT 2 (fictional stories) and differently under TEXT 3 (true stories); all three ask about the candidate’s own reading preferences: the TEXT 1/2 pair is one card with two placements.",
+        "Readers under printed headings: TEXT 1 Telling Other People’s Stories PDF2–3, TEXT 2 Shuggie’s Story PDF4–5, TEXT 3 The Story of Another Life PDF6–7. PDF9–11 print no examination material.",
+        "The deferred scheme (PDF2: “finalised for the questions attempted by the candidates”) sets out QA and QB for every text and COMPOSING 1, 3, 4, 5 and 6 (PDF14–18); Compositions 2 and 7 are marked on PDF3’s criteria and the Appendix 2 grid, PDF38. C/L ≤ P (PDF3)."
+      ],
+      "tally": {
+        "baseTasks": 19,
+        "finiteRoutes": 19,
+        "basis": "Three QA groups of 15/15/20 plus three B 50 and seven composing 100 = 19 tasks (no printed choice); the TEXT 1/2 QA(ii) pair publishes as one card."
+      },
+      "schemePagesChecked": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        37,
+        38,
+        39,
+        40
+      ],
+      "schemePagesViewed": [
+        2,
+        3,
+        4,
+        5,
+        13,
+        14,
+        38
+      ]
+    },
+    "p2": {
+      "notes": [
+        "Single Text 5 texts × (i)/(ii) 60 = 10; Comparative 3 modes × (Q1(a) 30 + Q1(b) 40 + Q2 70) = 9; Unseen Q1(a) 10, Q1(b) 10, Q2 20 = 3; Prescribed 5 poets × 50 = 5; 27 tasks, 27 cards (no printed choice).",
+        "Reader: unseen A Song at Imbolc (Moya Cannon) PDF6, with its epigraph from Antoine Ó Raifteirí and three printed notes. Poet headings (underlined above each prescribed question) out of the prompts. Cover N.B.: Shakespearean drama (Macbeth in Section I, or Macbeth / Othello in Section II).",
+        "The deferred scheme sets out Single Text C (Macbeth) (i) and (ii) only (PDF20–21), Comparative A Q2 and every B and C task (PDF23–29), and every Unseen and Prescribed task (PDF30–36). Single Texts A, B, D, E and Comparative A Q1(a)/(b) are marked on PDF3’s criteria and the Appendix 2 grid, PDF38."
+      ],
+      "tally": {
+        "baseTasks": 27,
+        "finiteRoutes": 27,
+        "basis": "Single Text 5 × 2 = 10, Comparative 3 × 3 = 9, Unseen 3, Prescribed 5: 27 tasks, 27 cards."
+      },
+      "schemePagesChecked": [
+        3,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "schemePagesViewed": [
+        3,
+        19,
+        20,
+        22,
+        23,
+        30,
+        31,
+        38
+      ]
+    }
+  },
+  "sourcePages": {
+    "p1": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "p2": [
+      6
+    ]
+  },
+  "sources": {
+    "english-2023-hl-deferred-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Telling Other People’s Stories",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Kit de Waal — edited extracts from a manifesto she delivered at A National Day for Writers organised by Words Ireland in 2018, with a photograph of the writer (PDF2–3). As reproduced in the SEC 2023 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2023-hl-deferred-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Telling Other People’s Stories",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Kit de Waal — edited extracts from a manifesto she delivered at A National Day for Writers organised by Words Ireland in 2018, with a photograph of the writer (PDF2–3). As reproduced in the SEC 2023 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2023-hl-deferred-p1-t1-a-ii": {
+      "kind": "not-required",
+      "reason": "Self-contained: why the candidate prefers to engage with other people’s fictional stories through the printed media; scheme PDF5 assesses the candidate’s own reasons and never refers to TEXT 1. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2023-hl-deferred-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Shuggie’s Story",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Douglas Stuart — edited extracts from the opening paragraphs of his Booker Prize-winning novel Shuggie Bain (Picador, 2020), with the book’s cover (PDF4–5). As reproduced in the SEC 2023 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2023-hl-deferred-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Shuggie’s Story",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Douglas Stuart — edited extracts from the opening paragraphs of his Booker Prize-winning novel Shuggie Bain (Picador, 2020), with the book’s cover (PDF4–5). As reproduced in the SEC 2023 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2023-hl-deferred-p1-t2-a-ii": {
+      "kind": "not-required",
+      "reason": "Self-contained: why the candidate prefers to engage with other people’s fictional stories through the printed media; scheme PDF7 assesses the candidate’s own reasons and never refers to TEXT 2. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2023-hl-deferred-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Story of Another Life",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Michael Viney — edited extracts from the first column of his series Another Life, first published in The Irish Times in 1977, with a photograph of him in Mayo in 1977 (PDF6–7). As reproduced in the SEC 2023 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2023-hl-deferred-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Story of Another Life",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Michael Viney — edited extracts from the first column of his series Another Life, first published in The Irish Times in 1977, with a photograph of him in Mayo in 1977 (PDF6–7). As reproduced in the SEC 2023 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2023-hl-deferred-p1-t3-a-ii": {
+      "kind": "not-required",
+      "reason": "Self-contained: why the candidate prefers to engage with other people’s non-fictional stories through the printed media; scheme PDF10 assesses the candidate’s own reasons and never refers to TEXT 3. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2023-hl-deferred-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "A Song at Imbolc",
+      "pages": [
+        6
+      ],
+      "attribution": "A Song at Imbolc — Moya Cannon, as reproduced in the SEC 2023 deferred paper.",
+      "reason": "Paper PDF6 prints the introduction, the title, the epigraph, the whole poem, the byline and three notes above the questions; visually verified."
+    },
+    "english-2023-hl-deferred-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "A Song at Imbolc",
+      "pages": [
+        6
+      ],
+      "attribution": "A Song at Imbolc — Moya Cannon, as reproduced in the SEC 2023 deferred paper.",
+      "reason": "Paper PDF6 prints the introduction, the title, the epigraph, the whole poem, the byline and three notes above the questions; visually verified."
+    },
+    "english-2023-hl-deferred-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "A Song at Imbolc",
+      "pages": [
+        6
+      ],
+      "attribution": "A Song at Imbolc — Moya Cannon, as reproduced in the SEC 2023 deferred paper.",
+      "reason": "Paper PDF6 prints the introduction, the title, the epigraph, the whole poem, the byline and three notes above the questions; visually verified."
+    }
+  },
+  "duplicates": {
+    "english-2023-hl-deferred-p1-t2-a-ii": {
+      "canonical": "english-2023-hl-deferred-p1-t1-a-ii",
+      "reason": "Printed identically under TEXT 1 and TEXT 2 (paper PDF3, PDF5), same tariff (15), grid and no reader: it asks about the candidate’s own preference among novels, plays and films (scheme PDF5, PDF7). One practice identity, keeping both printed placements in the Atlas; TEXT 3’s QA(ii) asks about true stories and is its own card."
+    }
+  },
+  "criteria": {
+    "defaults": {
+      "qa": {
+        "mode": "holistic",
+        "notes": "One global mark ex {marks} from the H1–H8 band printed with the task (combined criteria grid PDF38); no P/C/L/M submarks.",
+        "absentNotes": "One global mark ex {marks} on the combined H1–H8 grid printed in Appendix 2 (PDF38); no P/C/L/M submarks."
+      },
+      "qb": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2023 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF38.",
+        "absentNotes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for {marks} marks is printed on PDF38 (Appendix 2)."
+      },
+      "composing": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2023 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF38.",
+        "absentNotes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for {marks} marks is printed on PDF38 (Appendix 2)."
+      },
+      "single": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2023 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF38.",
+        "absentNotes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for {marks} marks is printed on PDF38 (Appendix 2)."
+      },
+      "comparative-q1": {
+        "mode": "holistic",
+        "notes": "One global mark ex {marks} from the H1–H8 band printed with the task (combined criteria grid PDF38); no P/C/L/M submarks.",
+        "absentNotes": "One global mark ex {marks} on the combined H1–H8 grid printed in Appendix 2 (PDF38); no P/C/L/M submarks."
+      },
+      "comparative-q2": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2023 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF38.",
+        "absentNotes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for {marks} marks is printed on PDF38 (Appendix 2)."
+      },
+      "unseen": {
+        "mode": "holistic",
+        "notes": "One global mark ex {marks} from the H1–H8 band printed with the task (combined criteria grid PDF38); no P/C/L/M submarks.",
+        "absentNotes": "One global mark ex {marks} on the combined H1–H8 grid printed in Appendix 2 (PDF38); no P/C/L/M submarks."
+      },
+      "prescribed": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2023 HL deferred PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF38.",
+        "absentNotes": "PDF3 gives Clarity of Purpose, Coherence of Delivery and Efficiency of Language Use 30% each and Accuracy of Mechanics 10% of the marks for every task, and C or L cannot exceed P; the discrete H1–H8 grid for {marks} marks is printed on PDF38 (Appendix 2)."
+      }
+    },
+    "generalCriteriaPages": {
+      "p1": [
+        3,
+        4,
+        13,
+        37,
+        38,
+        39
+      ],
+      "p2": [
+        3,
+        19,
+        22,
+        37,
+        38,
+        39
+      ]
+    },
+    "absentPages": {
+      "composing": [
+        3,
+        13,
+        38
+      ],
+      "single": [
+        3,
+        19,
+        38
+      ],
+      "comparative-q1": [
+        3,
+        22,
+        38
+      ]
+    },
+    "absentReason": {
+      "composing": "All 12 paper pages viewed; the prompt and its 100-mark tariff are the paper’s (“Each composition carries 100 marks”). Marked as every composition on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 100-mark grid of Appendix 2, PDF38. No task-specific guidance exists to quote.",
+      "single": "All 8 paper pages viewed; the prompt and its 60-mark tariff are the paper’s (SECTION I THE SINGLE TEXT (60 marks)). Marked as every Single Text task on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 60-mark grid of Appendix 2, PDF38. No task-specific guidance exists to quote.",
+      "comparative-q1": "All 8 paper pages viewed; the prompt and its {marks}-mark tariff are the paper’s. Marked as every two-part Comparative part on this scheme: one combined mark on the {marks}-mark H1–H8 row of Appendix 2, PDF38. No task-specific guidance exists to quote.",
+      "comparative-q2": "All 8 paper pages viewed; the prompt and its 70-mark tariff are the paper’s. Marked as every 70-mark Comparative question on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 70-mark grid of Appendix 2, PDF38. No task-specific guidance exists to quote.",
+      "prescribed": "All 8 paper pages viewed; the prompt and its 50-mark tariff are the paper’s. Marked as every Prescribed Poetry question on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 50-mark grid of Appendix 2, PDF38. No task-specific guidance exists to quote.",
+      "qb": "All 12 paper pages viewed; the prompt and its 50-mark tariff are the paper’s. Marked as every Question B on this scheme: PDF3’s criteria (P, C, L 30%, M 10%; C/L ≤ P) and the discrete 50-mark grid of Appendix 2, PDF38.",
+      "qa": "All 12 paper pages viewed; the prompt and its {marks}-mark tariff are the paper’s. One combined mark on the {marks}-mark H1–H8 row of Appendix 2, PDF38.",
+      "unseen": "All 8 paper pages viewed; the prompt and its {marks}-mark tariff are the paper’s. One combined mark on the {marks}-mark H1–H8 row of Appendix 2, PDF38."
+    },
+    "presentReason": {
+      "qa": "All 12 paper pages viewed. Exact task and award verified on scheme PDF{page}: “Mark ex {marks} by reference to the criteria for assessment” with the H1–H8 band printed with the task (combined grid PDF38). No invented splits or submarks.",
+      "qb": "All 12 paper pages viewed. Exact task and award verified on scheme PDF{page}: “Mark ex 50 by reference to the criteria for assessment”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF38).",
+      "composing": "All 12 paper pages viewed. Exact task and award verified on scheme PDF{page}: “Mark ex 100 by reference to the criteria for assessment”, P 30 / C 30 / L 30 / M 10 printed with the composition (discrete grid PDF38).",
+      "single": "All 8 paper pages viewed. Exact task and award verified on scheme PDF{page}: “Mark ex 60 … using the breakdown of marks below”, P 18 / C 18 / L 18 / M 6 printed with the task (discrete grid PDF38).",
+      "comparative-q1": "All 8 paper pages viewed. Exact task and award verified on scheme PDF{page}: “Mark ex {marks} by reference to the criteria for assessment”, one H1–H8 row printed with the part (combined grid PDF38); the P/C/L/M lines describe the criteria and carry no marks.",
+      "comparative-q2": "All 8 paper pages viewed. Exact task and award verified on scheme PDF{page}: “Mark ex 70 … using the breakdown of marks below”, P 21 / C 21 / L 21 / M 7 printed with the task (discrete grid PDF38).",
+      "unseen": "All 8 paper pages viewed. Exact task and award verified on scheme PDF{page}: “Mark ex {marks} by reference to the criteria for assessment” (combined grid PDF38). No invented splits or submarks.",
+      "prescribed": "All 8 paper pages viewed. Exact task and award verified on scheme PDF{page}: “Mark ex 50 … using the breakdown of marks below”, P 15 / C 15 / L 15 / M 5 printed with the task (discrete grid PDF38)."
+    }
+  },
+  "selection": {
+    "english-2023-hl-deferred-p1-t1-a-ii": {
+      "kind": "flexible",
+      "reason": "Scheme PDF{page}: “at least two reasons” the candidate prefers novels or plays or films for other people’s fictional stories; “Candidates may refer to novels, plays and films in a comparative fashion”, so one medium or a comparison is marked on one grid. One 15-mark response."
+    },
+    "english-2023-hl-deferred-p1-t2-a-ii": {
+      "kind": "flexible",
+      "reason": "Scheme PDF{page}: “at least two reasons” the candidate prefers novels or plays or films for other people’s fictional stories; “Candidates may refer to novels, plays and films in a comparative fashion”, so one medium or a comparison is marked on one grid. One 15-mark response."
+    },
+    "english-2023-hl-deferred-p1-t3-a-ii": {
+      "kind": "flexible",
+      "reason": "Scheme PDF{page}: “at least two reasons” the candidate prefers biographies or memoirs or documentary films for true stories; they “may refer to biographies or memoirs or documentary films in a comparative fashion”. One 15-mark response."
+    },
+    "english-2023-hl-deferred-p1-t2-b": {
+      "kind": "required",
+      "reason": "Scheme PDF{page}: a Careers Handbook article from 2043 that explains what inspired the career path, outlines challenges and set-backs overcome and reflects on what was learned; “interesting or unusual” describes the handbook, not a choice; all aspects required. One 50-mark response."
+    },
+    "english-2023-hl-deferred-p1-t3-b": {
+      "kind": "required",
+      "reason": "Scheme PDF{page}: three blog posts at the three printed points (the night before leaving, a month in, a year on), each with its printed focus; all three required. One 50-mark response."
+    },
+    "english-2023-hl-deferred-p1-composing-2": {
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this composition (PDF2 note). The paper asks for one feature article exploring our fascination with the lives of others, celebrities and people we know well. One 100-mark composition."
+    },
+    "english-2023-hl-deferred-p1-composing-3": {
+      "kind": "required",
+      "reason": "Scheme PDF{page}: a short story set in a fictitious supermarket in which at least one employee is in ongoing tension with both the manager and the customers; both tensions required. One 100-mark composition."
+    },
+    "english-2023-hl-deferred-p1-composing-4": {
+      "kind": "required",
+      "reason": "Scheme PDF{page}: a personal essay reflecting on the balance between work and leisure and evaluating the candidate’s own lifestyle; both required. One 100-mark composition."
+    },
+    "english-2023-hl-deferred-p1-composing-5": {
+      "kind": "open",
+      "reason": "Scheme PDF{page}: a discursive essay considering some lifestyle choices the candidate believes environmentally ethical and appropriate in 2023. One 100-mark composition."
+    },
+    "english-2023-hl-deferred-p1-composing-6": {
+      "kind": "open",
+      "reason": "Scheme PDF{page}: a personal essay reflecting on some of the worst advice the candidate was given; “serious or humorous or both” is the register, not a choice of task. One 100-mark composition."
+    },
+    "english-2023-hl-deferred-p1-composing-7": {
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this composition (PDF2 note). The paper asks for at least one scene for a radio play in which a middle-aged woman in a midlands town is embroiled in a bitter dispute with her neighbours. One 100-mark composition."
+    },
+    "english-2023-hl-deferred-p2-single-a-i": {
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task (PDF2 note); the paper asks for the three choices or decisions the candidate believes most important; “You may refer to any combination of choices or decisions”. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-b-i": {
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task (PDF2 note); the paper asks for the three choices or decisions the candidate believes most important; “You may refer to any combination of choices or decisions”. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-c-i": {
+      "kind": "open",
+      "reason": "Scheme PDF{page}: the three choices or decisions the candidate believes most important; “You may refer to any combination of choices or decisions”. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-d-i": {
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task (PDF2 note); the paper asks for the three choices or decisions the candidate believes most important; “You may refer to any combination of choices or decisions”. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-e-i": {
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task (PDF2 note); the paper asks for the three choices or decisions the candidate believes most important; “You may refer to any combination of choices or decisions”. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-a-ii": {
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task (PDF2 note); the paper asks whether the printed aspect does or does not undermine the narrative’s credibility — a reasoned judgement either way, not routes. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-d-ii": {
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task (PDF2 note); the paper asks whether the printed aspect does or does not undermine the narrative’s credibility — a reasoned judgement either way, not routes. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-single-e-ii": {
+      "kind": "open",
+      "reason": "The deferred scheme sets out no block for this task (PDF2 note); the paper asks whether the printed aspect does or does not undermine the narrative’s credibility — a reasoned judgement either way, not routes. One 60-mark response."
+    },
+    "english-2023-hl-deferred-p2-comparative-a-q1-b": {
+      "kind": "flexible",
+      "reason": "The deferred scheme sets out no block for this part (PDF2 note); the paper asks about at least one technique in each of two other texts, “the same technique or different techniques”. One 40-mark response."
+    },
+    "english-2023-hl-deferred-p2-comparative-b-q1-a": {
+      "kind": "open",
+      "reason": "Scheme PDF{page}: a theme or issue of the candidate’s choosing in one text and what it revealed about them. One 30-mark response."
+    },
+    "english-2023-hl-deferred-p2-comparative-b-q1-b": {
+      "kind": "open",
+      "reason": "Scheme PDF{page}: the same theme or issue in two other texts of the candidate’s choosing. One 40-mark response."
+    },
+    "english-2023-hl-deferred-p2-comparative-b-q2": {
+      "kind": "flexible",
+      "reason": "Scheme PDF{page}: at least two texts; “tension or conflict” used to explore the same theme or issue — either or both. One 70-mark response."
+    },
+    "english-2023-hl-deferred-p2-comparative-c-q1-a": {
+      "kind": "open",
+      "reason": "Scheme PDF{page}: the portrayal of any kind of love, of the candidate’s choosing, in one text. One 30-mark response."
+    },
+    "english-2023-hl-deferred-p2-comparative-c-q1-b": {
+      "kind": "open",
+      "reason": "Scheme PDF{page}: the portrayal of any kind of love in two other texts of the candidate’s choosing. One 40-mark response."
+    },
+    "english-2023-hl-deferred-p2-comparative-c-q2": {
+      "kind": "flexible",
+      "reason": "Scheme PDF{page}: at least two texts of the candidate’s choosing; the extent to which their idealism influenced the general vision and viewpoint. One 70-mark response."
+    },
+    "english-2023-hl-deferred-p2-unseen-q1-b": {
+      "kind": "open",
+      "reason": "Scheme PDF{page}: whether the poem should or should not be included, with reasons from its poetic merits — a judgement either way. One 10-mark response."
+    },
+    "english-2023-hl-deferred-p2-prescribed-1": {
+      "kind": "open",
+      "reason": "Scheme PDF{page}: agree or disagree with the printed statement, poems of the candidate’s choosing — a graded judgement. One 50-mark response."
+    },
+    "english-2023-hl-deferred-p2-prescribed-2": {
+      "kind": "open",
+      "reason": "Scheme PDF{page}: agree or disagree with the printed statement, poems of the candidate’s choosing — a graded judgement. One 50-mark response."
+    },
+    "english-2023-hl-deferred-p2-prescribed-3": {
+      "kind": "open",
+      "reason": "Scheme PDF{page}: agree or disagree with the printed statement, poems of the candidate’s choosing — a graded judgement. One 50-mark response."
+    },
+    "english-2023-hl-deferred-p2-prescribed-4": {
+      "kind": "open",
+      "reason": "Scheme PDF{page}: agree or disagree with the printed statement, poems of the candidate’s choosing — a graded judgement. One 50-mark response."
+    },
+    "english-2023-hl-deferred-p2-prescribed-5": {
+      "kind": "open",
+      "reason": "Scheme PDF{page}: agree or disagree with the printed statement, poems of the candidate’s choosing — a graded judgement. One 50-mark response."
+    }
+  },
+  "raw": {}
+}

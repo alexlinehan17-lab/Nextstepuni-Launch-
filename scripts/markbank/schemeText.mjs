@@ -96,6 +96,19 @@ const ORDINAL_TARIFF = /\b\d+\s*(?:st|nd|rd|th)\s*[@x]\s*\d+\b/gi;
 const INLINE_ASIDE = /\[[^\]]*\]|\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})*\s*(?:m|marks?)\s*\)/gi;
 
 /**
+ * A split printed inside an answer that wraps: older Italian schemes print the
+ * ask's split at the end of the answer's first line, "They give up their free
+ * time/ they volunteer (2m) to be tourist (2+2+1)" over "guides/ to do tours
+ * (2m)" (2020 Higher Dialogue 3 Q1), so the lifted point "to be tourist
+ * guides/ to do tours" is cut in two by digits normalise() keeps. Only a
+ * bracket holding digits joined by plus signs and nothing else - never "(2m)",
+ * never marks with words. Stripped as an ADDED form, for the reason
+ * ORDINAL_TARIFF and INLINE_ASIDE are: it only removes printed characters, so
+ * no wording the SEC did not print can pass (coordinator ruling, 19 Nov 2026).
+ */
+const SPLIT_ONLY = /\(\s*\d+(?:\s*\+\s*\d+)+\s*\)/g;
+
+/**
  * The extractor's own page markers.
  *
  * A marking point does not stop at a page break — the SEC prints "Less Risk /
@@ -483,6 +496,7 @@ export const comparableScheme = (raw) => {
     normalise(foldOriya(joined)),
     normalise(joined.replace(ORDINAL_TARIFF, ' ')),
     normalise(joined.replace(INLINE_ASIDE, ' ')),
+    normalise(joined.replace(SPLIT_ONLY, ' ')),
     normalise(joined.replace(LANGUAGE_TARIFF, ' ')),
     normalise(repairGlyphs(joined)),
     normalise(sourceLines.map((l) => l.replace(MARKS_COLUMN, ''))

@@ -53,35 +53,47 @@ export const HOSTED_AUDIO_MISSING: readonly string[] = [
   'audio/2016/LC011ZLP017EV.mp3',
   'audio/2016/LC012ZLP017EV.mp3',
   'audio/2016/LC058ZLP017EV.mp3',
+  'audio/2016/LC067ZLP117EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'audio/2016/LC067ZLP217EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2016/LC099ZLP017EV.mp3',
   'audio/2017/LC001BLP017IV.mp3',
   'audio/2017/LC001ZLP017IV.mp3',
   'audio/2017/LC011ZLP017EV.mp3',
   'audio/2017/LC012ZLP017EV.mp3',
   'audio/2017/LC058ZLP017EV.mp3',
+  'audio/2017/LC067ZLP117EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'audio/2017/LC067ZLP217EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2018/LC001BLP017IV.mp3',
   'audio/2018/LC001ZLP017IV.mp3',
   'audio/2018/LC011ZLP017EV.mp3',
   'audio/2018/LC012ZLP017EV.mp3',
   'audio/2018/LC058ZLP017EV.mp3',
+  'audio/2018/LC067ZLP117EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'audio/2018/LC067ZLP217EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2018/LC099ZLP017EV.mp3',
   'audio/2019/LC001BLP017IV.mp3',
   'audio/2019/LC001ZLP017IV.mp3',
   'audio/2019/LC011ZLP017EV.mp3',
   'audio/2019/LC012ZLP017EV.mp3',
   'audio/2019/LC058ZLP017EV.mp3',
+  'audio/2019/LC067ZLP117EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'audio/2019/LC067ZLP217EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2019/LC099ZLP017EV.mp3',
   'audio/2020/LC001BLP017IV.mp3',
   'audio/2020/LC001ZLP017IV.mp3',
   'audio/2020/LC011ZLP017EV.mp3',
   'audio/2020/LC012ZLP017EV.mp3',
   'audio/2020/LC058ZLP017EV.mp3',
+  'audio/2020/LC067ZLP117EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'audio/2020/LC067ZLP217EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2020/LC099ZLP017EV.mp3',
   'audio/2021/LC001BLP017IV.mp3',
   'audio/2021/LC001ZLP017IV.mp3',
   'audio/2021/LC011ZLP017EV.mp3',
   'audio/2021/LC012ZLP017EV.mp3',
   'audio/2021/LC058ZLP017EV.mp3',
+  'audio/2021/LC067ZLP117EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'audio/2021/LC067ZLP217EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2021/LC099ZLP017EV.mp3',
   'audio/2022/LC001BLP017IV.mp3',
   'audio/2022/LC001ZLP017IV-deferred.mp3',
@@ -92,6 +104,8 @@ export const HOSTED_AUDIO_MISSING: readonly string[] = [
   'audio/2022/LC012ZLP017BV.mp3',
   'audio/2022/LC018ZLP017BV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026 (CARD-STANDARD 10g): the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane; file name from the SEC archive listing saved 31 Aug 2026.
   'audio/2022/LC058ZLP017BV.mp3',
+  'audio/2022/LC067ZLP045EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'audio/2022/LC067ZLP046EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2022/LC099ZLP017BV.mp3',
   'audio/2022/LC548ZLP017BV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2023/LC001BLP017IV.mp3',
@@ -101,6 +115,8 @@ export const HOSTED_AUDIO_MISSING: readonly string[] = [
   'audio/2023/LC012ZLP017BV.mp3',
   'audio/2023/LC018ZLP017BV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026 (CARD-STANDARD 10g): the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane; file name from the SEC archive listing saved 31 Aug 2026.
   'audio/2023/LC058ZLP017BV.mp3',
+  'audio/2023/LC067ZLP045EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'audio/2023/LC067ZLP046EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2023/LC099ZLP017BV.mp3',
   'audio/2023/LC548ZLP017BV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2024/LC001BLP017IV.mp3',

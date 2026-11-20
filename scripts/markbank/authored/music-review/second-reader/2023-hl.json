@@ -1,0 +1,510 @@
+{
+ "readingFile": "2023-hl.json",
+ "readBy": "second reader (Opus helper), 19 Nov 2026",
+ "method": "each string compared word for word with a 150 dpi render of the printed page",
+ "booklet": "examiner-reports/music/papers/2023-hl-008-paper.pdf",
+ "pagesRendered": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  10,
+  11,
+  12,
+  13,
+  14,
+  18,
+  19,
+  20
+ ],
+ "crossCheck": "Cross-check only: every string was also searched, character for character, in the booklet's text layer decoded by glyph id (scripts/markbank/glyph_ids.py plus a capitals map read off the renders); every string was found there. The verdicts rest on the renders.",
+ "asks": [
+  {
+   "address": "Q1(a)",
+   "page": 3,
+   "strings": [
+    "Identify two features of the music in this excerpt.",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(b)",
+   "page": 3,
+   "strings": [
+    "Name a recording technique used in this excerpt. Describe this recording technique with reference to the music in this excerpt.",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(c)",
+   "page": 3,
+   "strings": [
+    "Describe the music played by the piano in this excerpt.",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(d)",
+   "page": 4,
+   "strings": [
+    "The chord heard at the word gun in line 2 is",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 3, played three times. The lyrics are printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(e)",
+   "page": 4,
+   "strings": [
+    "Identify and describe the instrumental technique played by the bass guitar at the end of line 2.",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 3, played three times. The lyrics are printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "Figure shows the lyrics, part (d) with its options, and (e); the lyrics are needed for 'line 2'."
+   ]
+  },
+  {
+   "address": "Q1(f)",
+   "page": 5,
+   "strings": [
+    "Describe two differences between the music in Excerpt 3 and the music in Excerpt 4. Refer to both excerpts in your answer.",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 3, played once more and Excerpt 4, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(g)",
+   "page": 5,
+   "strings": [
+    "Identify two features of the guitar music in this excerpt.",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 5, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(a)",
+   "page": 6,
+   "strings": [
+    "Name the section of the work from which the excerpt is taken.",
+    "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(b)",
+   "page": 6,
+   "strings": [
+    "The theme heard in this excerpt is the",
+    "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(c)(i)",
+   "page": 6,
+   "strings": [
+    "Identify two features of the music heard in this excerpt.",
+    "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(c)(ii)",
+   "page": 6,
+   "strings": [
+    "Describe one of the features you have chosen with reference to the music in this excerpt.",
+    "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(d)",
+   "page": 7,
+   "strings": [
+    "Describe one way in which Tchaikovsky creates a feeling of tension in the music heard in this excerpt.",
+    "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(a)",
+   "page": 8,
+   "strings": [
+    "Describe the texture of the music in this excerpt.",
+    "An excerpt from Piano Quartet No.1 by Gerald Barry, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(b)",
+   "page": 8,
+   "strings": [
+    "Identify one feature of 20th century music in this excerpt.",
+    "An excerpt from Piano Quartet No.1 by Gerald Barry, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(c)",
+   "page": 8,
+   "strings": [
+    "Describe one difference between the music heard in this excerpt and the music which immediately follows this excerpt in Piano Quartet No.1 by Gerald Barry.",
+    "An excerpt from Piano Quartet No.1 by Gerald Barry, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(d)",
+   "page": 8,
+   "strings": [
+    "Describe Barry’s treatment of the tune Sí Beag, Sí Mór in Piano Quartet No.1.",
+    "An excerpt from Piano Quartet No.1 by Gerald Barry, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(a)",
+   "page": 10,
+   "strings": [
+    "Insert the four missing notes at X on the score.",
+    "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.",
+    "Excerpt 1, played three times. An outline score of the opening four bars of the excerpt is printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(b)",
+   "page": 10,
+   "strings": [
+    "Describe one feature of Baroque music in this excerpt.",
+    "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(c)",
+   "page": 11,
+   "strings": [
+    "Describe one similarity and one difference between the music in Excerpt 1 and the music in Excerpt 2. Refer to both excerpts in your answer.",
+    "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.",
+    "Excerpt 1 and Excerpt 2 once more."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5 A(a)",
+   "page": 12,
+   "strings": [
+    "Name the instrument playing in this excerpt.",
+    "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.",
+    "Excerpt 1."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5 A(b)",
+   "page": 12,
+   "strings": [
+    "The music in this excerpt features (tick two)",
+    "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.",
+    "Excerpt 1."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5 A(c)",
+   "page": 12,
+   "strings": [
+    "Using letters, write down the form of the music in this excerpt.",
+    "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.",
+    "Excerpt 1."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5 A(d)",
+   "page": 12,
+   "strings": [
+    "Identify the type of dance tune in this excerpt. Give its time signature and one bar of rhythm associated with it.",
+    "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.",
+    "Excerpt 2."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5 A(e)",
+   "page": 13,
+   "strings": [
+    "Name two instruments which play the melody in this excerpt.",
+    "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.",
+    "Excerpt 2."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "excerptLine 'Excerpt 2.' checked on page 12, where the heading prints before (d); (e) is at the top of page 13."
+   ]
+  },
+  {
+   "address": "Q5 A(f)",
+   "page": 13,
+   "strings": [
+    "Identify two features of sean nós singing as heard in this excerpt.",
+    "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.",
+    "Excerpt 3."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5 A(g)",
+   "page": 13,
+   "strings": [
+    "Describe two features of the instrumental accompaniment heard in this excerpt.",
+    "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.",
+    "Excerpt 3."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5 B(i)",
+   "page": 14,
+   "strings": [
+    "Give an account of the contribution made by Irish music to the music of North America in the 19th and 20th centuries."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext and excerptLine are null. The page prints 'B  Answer one of the following:' above (i)-(v); every HL reading file leaves the B essays without context, so there is no string to compare."
+   ]
+  },
+  {
+   "address": "Q5 B(ii)",
+   "page": 14,
+   "strings": [
+    "Give an account of the flute or tin whistle in the context of Irish traditional music. Refer to playing styles and well-known performers in your answer."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext and excerptLine are null (see Q5 B(i))."
+   ]
+  },
+  {
+   "address": "Q5 B(iii)",
+   "page": 14,
+   "strings": [
+    "Write an account of the work of one of the great collectors and their contribution to the preservation of Irish music."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext and excerptLine are null (see Q5 B(i))."
+   ]
+  },
+  {
+   "address": "Q5 B(iv)",
+   "page": 14,
+   "strings": [
+    "Discuss the music of a well-known composer or performer that fuses traditional Irish music with another style."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext and excerptLine are null (see Q5 B(i))."
+   ]
+  },
+  {
+   "address": "Q5 B(v)",
+   "page": 14,
+   "strings": [
+    "Write an account of the sean nós singing tradition in Irish traditional music. Refer to well-known performers in your answer."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext and excerptLine are null (see Q5 B(i))."
+   ]
+  },
+  {
+   "address": "Q6(a)",
+   "page": 18,
+   "strings": [
+    "How many full bars of music are heard in the introduction, before the vocalist enters?",
+    "Aural Skills This question is based on five excerpts of music.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext: the page prints 'Aural Skills' (bold, no full stop) on its own line, then 'This question is based on five excerpts of music.'; the file joins them with a space. Every word kept."
+   ]
+  },
+  {
+   "address": "Q6(b)",
+   "page": 18,
+   "strings": [
+    "Identify a feature of the music played by the piano in this excerpt.",
+    "Aural Skills This question is based on five excerpts of music.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(c)",
+   "page": 18,
+   "strings": [
+    "Identify two features of the vocal music heard in this excerpt.",
+    "Aural Skills This question is based on five excerpts of music.",
+    "Excerpt 2, played three times. The lyrics are printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "excerptLine: the page prints the bold heading 'Excerpt 2, played three times.' and, under it, the bullet '• The lyrics are printed below.'; the file joins them. Every word kept."
+   ]
+  },
+  {
+   "address": "Q6(d)",
+   "page": 18,
+   "strings": [
+    "Name two instruments (other than piano) heard playing in lines 5–6.",
+    "Aural Skills This question is based on five excerpts of music.",
+    "Excerpt 2, played three times. The lyrics are printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "excerptLine as for Q6(c).",
+    "Figure starts at the bullet 'The lyrics are printed below.' and shows lines 1-6, part (c) with its answer boxes, and (d)."
+   ]
+  },
+  {
+   "address": "Q6(e)",
+   "page": 19,
+   "strings": [
+    "Name the instrument which plays the melody at the start of this excerpt.",
+    "Aural Skills This question is based on five excerpts of music.",
+    "Excerpt 3, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(f)",
+   "page": 19,
+   "strings": [
+    "Describe the texture of the music heard in this excerpt.",
+    "Aural Skills This question is based on five excerpts of music.",
+    "Excerpt 3, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(g)",
+   "page": 19,
+   "strings": [
+    "The missing notes at X on the score are",
+    "Aural Skills This question is based on five excerpts of music.",
+    "Excerpt 4, played three times. An outline score is printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(h)",
+   "page": 20,
+   "strings": [
+    "From your prescribed works, select the work which most closely resembles the music heard in this excerpt. Give a reason for your choice.",
+    "Aural Skills This question is based on five excerpts of music.",
+    "Excerpt 5, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  }
+ ]
+}

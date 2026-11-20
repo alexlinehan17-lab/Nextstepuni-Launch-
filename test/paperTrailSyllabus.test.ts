@@ -78,6 +78,17 @@ describe('Paper Trail syllabus history', () => {
 const DCG_DEFERRED_PAPERS: string[] = ['2022|LC562ALP014EV-deferred.pdf', '2022|LC562ALP039EV-deferred.pdf',
   '2023|LC562ALP014EV-deferred.pdf', '2023|LC562ALP039EV-deferred.pdf'];
 const IRISH_DEFERRED_PAPERS: string[] = ['2025|LC001ALP100IV-deferred.pdf', '2025|LC001ALP200IV-deferred.pdf', '2025|LC001GLP100IV-deferred.pdf', '2025|LC001GLP200IV-deferred.pdf', '2024|LC001ALP100IV-deferred.pdf', '2024|LC001ALP200IV-deferred.pdf', '2024|LC001GLP100IV-deferred.pdf', '2024|LC001GLP200IV-deferred.pdf', '2023|LC001ALP100IV-deferred.pdf', '2023|LC001ALP200IV-deferred.pdf', '2023|LC001GLP100IV-deferred.pdf', '2023|LC001GLP200IV-deferred.pdf', '2022|LC001GLP100IV-deferred.pdf', '2022|LC001GLP200IV-deferred.pdf', '2022|LC001ALP100IV-deferred.pdf', '2022|LC001ALP200IV-deferred.pdf'];
+// Biology's carded deferred sittings: both booklets of each (Sections A and B, Section C).
+const BIOLOGY_DEFERRED_PAPERS: string[] = [
+  '2022|LC025ALP038EV-deferred.pdf', '2022|LC025ALP040EV-deferred.pdf',
+  '2022|LC025GLP038EV-deferred.pdf', '2022|LC025GLP040EV-deferred.pdf',
+];
+const ENGLISH_DEFERRED_PAPERS: string[] = ['2025|LC002ALP100EV-deferred.pdf', '2025|LC002ALP200EV-deferred.pdf',
+  '2024|LC002ALP100EV-deferred.pdf', '2024|LC002ALP200EV-deferred.pdf',
+  '2024|LC002GLP100EV-deferred.pdf', '2024|LC002GLP200EV-deferred.pdf',
+  '2023|LC002ALP100EV-deferred.pdf', '2023|LC002ALP200EV-deferred.pdf',
+  '2022|LC002ALP100EV-deferred.pdf', '2022|LC002ALP200EV-deferred.pdf',
+  '2022|LC002GLP100EV-deferred.pdf', '2022|LC002GLP200EV-deferred.pdf'];
 const ADMITTED_DEFERRED = new Set([
   'economics|2022|LC034ALP000EV-deferred.pdf',
   'history|2022|LC004ALP000EV-deferred.pdf',
@@ -87,6 +98,7 @@ const ADMITTED_DEFERRED = new Set([
   ...IRISH_DEFERRED_PAPERS.map(paper => `irish|${paper}`),
   ...DCG_DEFERRED_PAPERS.map(paper => `design-and-communication-graphics|${paper}`),
   'engineering|2022|LC027ALP000EV-deferred.pdf',
+  ...BIOLOGY_DEFERRED_PAPERS.map(paper => `biology|${paper}`),
   'engineering|2023|LC027ALP000EV-deferred.pdf',
   // Spanish 2022 Higher, the deferred sitting (2026-11-12): written and listening.
   'spanish|2022|LC012ALP000EV-deferred.pdf',
@@ -94,6 +106,8 @@ const ADMITTED_DEFERRED = new Set([
   // German 2022 Higher, the deferred sitting (2026-11-13): written and listening.
   'german|2022|LC011ALP000BV-deferred.pdf',
   'german|2022|LC011ALPA00BV-deferred.pdf',
+  // English's deferred sittings, published paper by paper (english_publish.py, from 2026-11-19).
+  ...ENGLISH_DEFERRED_PAPERS.map(paper => `english|${paper}`),
   // Codex's reviewed Physics and Home Economics deferred sittings, released 2026-11-18.
   'physics|2022|LC021ALP000EV-deferred.pdf',
   'physics|2023|LC021ALP000EV-deferred.pdf',

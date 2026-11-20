@@ -2654,7 +2654,7 @@
       0.45
     ],
     "figureCrop": null,
-    "questionText": "Preparatory work: Plot the chords available in the key of Eb major, either in the chord bank grid or on the stave below.",
+    "questionText": "Preparatory work: Plot the chords available in the key of E♭ major, either in the chord bank grid or on the stave below.",
     "questionContext": "Section B Harmony 60 marks Answer one question only in this section: Question 4 Composing melody and bass notes from a set of chords",
     "excerptLine": null,
     "printedOptions": null,
@@ -2675,7 +2675,8 @@
     "choiceGroup": "composing-SectionB (answer one of Q4, Q5, Q6)",
     "unnumbered": true,
     "schemeVerbatim": "[The scheme prints nothing for the preparatory work; Q4 rows are Melody (40) and Bass (20) only.]",
-    "notes": "Labelled \"Preparatory work\" in bold but not numbered; the scheme gives it no marks and prints no answer. Listed so the builder can decide; it is excluded from the numbered-ask count. Fully deterministic (triads of E♭ major), so cardable from music theory, but the SEC prints no answer to lift."
+    "notes": "Labelled \"Preparatory work\" in bold but not numbered; the scheme gives it no marks and prints no answer. Listed so the builder can decide; it is excluded from the numbered-ask count. Fully deterministic (triads of E♭ major), so cardable from music theory, but the SEC prints no answer to lift.",
+    "conceptText": "Preparatory work: Plot the chords available in the key of Eb major, either in the chord bank grid or on the stave below."
   },
   {
     "paper": "composing",
@@ -2697,7 +2698,7 @@
       0.9,
       0.865
     ],
-    "questionText": "Composing melody and bass notes from a set of chords Preparatory work: Plot the chords available in the key of Eb major, either in the chord bank grid or on the stave below. • Study the following piece of music. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
+    "questionText": "Composing melody and bass notes from a set of chords Preparatory work: Plot the chords available in the key of E♭ major, either in the chord bank grid or on the stave below. • Study the following piece of music. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
     "questionContext": "Section B Harmony 60 marks Answer one question only in this section:",
     "excerptLine": null,
     "printedOptions": null,

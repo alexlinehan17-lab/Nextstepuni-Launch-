@@ -802,6 +802,17 @@ function spanishGridFault(c, scheme, schemeCells = '', schemeRanges = '') {
       if (k.bands || allowed.length !== items + 1 || allowed.some((m, i) => m !== i * rate)) return `${k.label} is not placed on every count from 0 to ${items}`;
       continue;
     }
+    // A Music band line may print a half-mark top (2018 HL Composing Q4's bass
+    // quality "8 – 9.5", beside 0.5 x 21 = 10.5): every whole mark below it and
+    // the printed top. Every other criterion is the whole ladder 0..max.
+    const halfTop = SUBJECT_ID === 'music' && !Number.isInteger(k.maxMarks) && Number.isInteger(k.maxMarks * 2);
+    if (halfTop) {
+      const ladder = [...Array(Math.floor(k.maxMarks) + 1).keys(), k.maxMarks];
+      if (allowed.length !== ladder.length || allowed.some((m, i) => m !== ladder[i])) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
+      const marks = (k.bands ?? []).flatMap(b => b.marks).sort((a, b) => a - b);
+      if (marks.length !== ladder.length || marks.some((m, i) => m !== ladder[i])) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
+      continue;
+    }
     if (allowed.length !== k.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
     if (k.bands) {
       const marks = k.bands.flatMap(b => b.marks).sort((a, b) => a - b);
@@ -910,6 +921,7 @@ const DEFERRED_ID = {
   spanish: /^es-\d{4}-(?:hl|ol)-deferred-/,
   dcg: /^dcg-\d{4}-(?:hl|ol)-deferred-/,
   german: /^de-\d{4}-(?:hl|ol)-deferred-/,
+  biology: /^bio-\d{4}-(?:hl|ol)-deferred-/,
   physics: /^phys-\d{4}-(?:hl|ol)-deferred-/,
   'home-economics': /^he-\d{4}-(?:hl|ol)-deferred-/,
   maths: /^maths-\d{4}-(?:hl|ol|fl)-deferred-/,
@@ -1127,7 +1139,10 @@ function brokenGlyphs(text) {
   if (DOUBLED_MATHS_DIGIT.test(text)) {
     return 'a doubled maths digit whose value the text layer has lost — the font mis-maps some digits, so the pair cannot be collapsed';
   }
-  const hits = (text.match(BROKEN) ?? []).filter(ch => !REAL.test(ch));
+  // A Music scheme prints the forte dynamic as "ƒ" (U+0192), and its text
+  // layer carries it so ("sudden ƒ", 2022 OL Q3(c)): a sign of the subject,
+  // not a broken glyph. Music only; every other deck is checked as before.
+  const hits = (text.match(BROKEN) ?? []).filter(ch => !REAL.test(ch) && !(SUBJECT_ID === 'music' && ch === 'ƒ'));
   if (!hits.length) return null;
   const uniq = [...new Set(hits)];
   return `${hits.length} unreadable glyph(s) from a broken font subset, e.g. `
@@ -2218,15 +2233,15 @@ for (const c of cards) {
    * audioQuestionPaperFileid. No other deck has these. */
   const listening = (SUBJECT_ID === 'spanish' && c.section === 'L')
     || (SUBJECT_ID === 'german' && /^L[1-4]$/.test(c.section));
-  /* A DCG deferred sitting is two booklets, as June's is: its card opens the
-   * one that prints its section, never simply the entry's first. */
+  /* A DCG or Biology deferred sitting is two booklets, as June's is: its card
+   * opens the one that prints its section, never simply the entry's first. */
   const fileid = reviewedSource
     ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
     : deferredEntry && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
     ? deferredDoc(SUBJECT_ID, c, listening ? 'Aural Paper' : 'Exam Paper')
     : deferredEntry
-    ? (SUBJECT_ID === 'dcg'
-      ? resolvePaperFileid('dcg', year, level, paperSection, 'deferred')
+    ? (SUBJECT_ID === 'dcg' || SUBJECT_ID === 'biology'
+      ? resolvePaperFileid(SUBJECT_ID, year, level, paperSection, 'deferred')
       : String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null)
     : listening
       ? resolveCompanionFileid(SUBJECT_ID, year, level, 'Aural Paper')

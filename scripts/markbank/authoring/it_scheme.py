@@ -90,7 +90,10 @@ UNIT_A = re.compile(r'^SECTION\s+A\s+READING\s+COMPREHENSION\b', re.I)
 # 2026 heads the section "SECTION B Literary Passage (60 marks)" and its routes
 # "B 1. Unseen passage" and "B 2. Prescribed novel".
 UNIT_B_HL = re.compile(r'^SECTION\s+B\s+Unseen\s+Literary\s+Passage\b'
-                       r'|^B\s*1\.?\s*Unseen\s+passage\b', re.I)
+                       r'|^B\s*1\.?\s*Unseen\s+passage\b'
+                       # 2015-2017: "SECTION B (60 marks)" over "Unseen Literary
+                       # Passage", or "Unseen Literary Passage <title>"
+                       r'|^Unseen\s+Literary\s+Passage\b', re.I)
 UNIT_B2_HL = re.compile(r'^B\s*2\.?\s*Literary\s+passage\s+from\s+[Pp]rescribed\s+novel\b'
                         r'|^B\s*2\.?\s*Prescribed\s+novel\b', re.I)
 UNIT_B3_HL = re.compile(r'^B\s*3\.?\s*Essay\s+on\s+prescribed\s+text\b', re.I)
@@ -210,6 +213,16 @@ BAND_LINE = re.compile(r'^\d{1,2}\s+points?\b|^\(\s*0\s*,', re.I)
 # capital, which no wrap rule may join without joining separate answers
 # everywhere: the two printed lines, joined exactly here.
 WRAPS = {
+    # 2018 Higher Dialogue 3 prints Q8's tariff on the line ABOVE its number,
+    # "4 marks" over "8. His family (1) for at least (1m) two (1) weeks(1)
+    # (1+1+1+1)", where the reader hangs it on Q7 as a second heading: the
+    # printed tariff is set back on Q8's own line, no word changed.
+    (2018, 'hl'): [('4 marks\n8. His family (1) for at least (1m) two (1) weeks(1) (1+1+1+1)',
+                    '8. His family (1) for at least (1m) two (1) weeks(1) 4 marks (1+1+1+1)')],
+    # 2017 Higher B1 the same: "4 marks" over "1. (a)".
+    (2017, 'hl'): [('4 marks\n1. (a)\nSua madre era scomparsa', '1. (a) 4 marks\nSua madre era scomparsa')],
+    # 2016 Higher B1 the same: "6marks (3+3)" over "1. (a)".
+    (2016, 'hl'): [('6marks (3+3)\n1. (a)\n', '1. (a) 6 marks (3+3)\n')],
     # 2018 Ordinary B Question 4, ask 3 prices two prizes on two lines, "2nd
     # prize … 3 marks" and "3rd prize A book (1m) written your favourite" /
     # "Writer/ of your choice (1m) 2 marks"; the question's 10 marks need both.
