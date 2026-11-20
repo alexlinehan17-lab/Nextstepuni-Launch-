@@ -2446,6 +2446,106 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2018 Higher Level — © State Examinations Commission.",
+    id: "est-2018-hl-i-5", topicId: "estonian-0-1", conceptId: "valeuudiste-levik-traditsioonilise-meedia-uha-suurenev",
+    section: "I", questionRef: "2018 HL Section I Q5",
+    questionText: "„Valeuudiste levik ja traditsioonilise meedia üha suurenev meelelahutuslikkus, millega püütakse vastata tarbijate ootustele, võivad viidata demokraatia haavatavusele, milles ollakse vastuvõtlik manipulatsioonidele.“ Selgita artiklile tuginedes, mis põhjusel on sinu arvates mõni ühiskonna huvigrupp meedia manipuleerimisele vastuvõtlikum kui teine.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pidev infovoog on muutnud inimeste ootusi uudiste edastamise kiiruse, hulga ning sisu suhtes, samuti annab panustamine meelelahutuslikkusele rohkem klikke ning suuremat kasumit meediaväljaannetele. Seetõttu on meediaväljaanded väga huvitatud just õige sihtrühmani jõudmisest. Nii et võib öelda, et lihtsam on manipuleerida nendega, kes tarbivad uudiseid peamiselt sotsiaalmeedia vahendusel. Sotsiaalvõrgustikus on lihtne jääda kinni kitsa ringkonna mõttemaailma ja neid hinnanguid siis kas teadlikult või teadmatult ise edasi kanda. Kuna sotsiaalmeedia ja reklaamitööstus tegutsevad käsikäes, on neil väga kerge konstrueerida uudise taha oma sisu, lisada kõmu ja varustada „õige“ reklaamiga, ning saata see seejärel tarbimiseks just oma sihtrühmale tema eelistusi arvesse võttes. Lisaks on internetimeedia täis inimeste enda loodud sisu, millega on samuti võimalik inimesi vajalikus suunas mõtlema mõjutada. Inimestele üldiselt meeldib subjektiivne lähenemine, see mõjub usaldusväärsema ja autentsemana kui näiteks ajaleheartiklid või õhtused uudised. Samas mõjutab uudiste edastamise kiirus ja inforohkus oluliselt faktide õigsust, uudised on tihti poolikud, kontekstist välja rebitud või moonutatud. Inimeselt inimesele jagatava sisu osas on hea meeles pidada, et subjektiivsus ei tähenda tingimata objektiivsust.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2018 Higher Level — © State Examinations Commission.",
+    id: "est-2018-hl-i-6", topicId: "estonian-0-1", conceptId: "koigist-ponnistustest-soltumata-paistab-sedasi-voti",
+    section: "I", questionRef: "2018 HL Section I Q6",
+    questionText: "„Kõigist ponnistustest sõltumata paistab sedasi, et võti on tavaliste inimeste käes: polariseerumise ja seega ka valeuudiste vastu aitab eeskätt julgus vastu võtta kriitikat ka enda seisukohtade aadressil ning tunnustada kasvõi ühtainsat oponendi väidetest.“ Arutle artikli põhjal, kuidas peaks kriitikat taluv ja kaasvestleja arvamust austav suhtumine aitama ehtsatel uudistel esiplaanile jõuda.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Teise poole arvamuse ärakuulamine aitab aru saada, kas on üldse eriarvamusi, võib-olla ei ole põhjust väitlust alustadagi. Kui see siiski osutub möödapääsmatuks, viib tõeni argumenteeritud, viisakas ja faktipõhine vaidlus, mis keskendub lahenduse otsimisele. Vestluspartneri suhtes lugupidava hoiaku ja tasakaaluka tooni säilitamine aitab isegi siis, kui tema arvamusega pole võimalik nõustuda. Võitja pole see, kes kõvemini karjub.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme reprints the question’s last words as “kriitikat taluv ja kaasvestleja arvamust austav suhtumine peaks aitama ehtsatel uudistel esiplaanile jõuda.” (the paper: “peaks kriitikat taluv ja kaasvestleja arvamust austav suhtumine aitama ehtsatel uudistel esiplaanile jõuda.”)." },
+    { id: "r-2", kind: "point", verbatim: "Kriitikat on üldiselt raske taluda, selle tegemine nõuab julgust ja taktitunnet, ning selle vastvõtmine on õpitav. Kriitika tekitab küll enamasti konflikti, aga see omakorda viib ehk lahenduseni.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Nii ühiskondliku kui virtuaalkommunikatsiooni parendamiseks on oluline, et lahmiv ja agressiivne suhtlusstiil, enesekiitmine, teiste inimeste halvustamine ning nende ärakasutamine asenduks sisulise ärakuulamise ja faktipõhise väitlusega.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2018 Higher Level — © State Examinations Commission.",
+    id: "est-2018-hl-ii-1", topicId: "estonian-1-0", conceptId: "kas-voltsuudiseid-tingib-ajastu-milles-sisust",
+    section: "II", questionRef: "2018 HL Section II Q1",
+    questionText: "„Kas võltsuudiseid tingib ajastu, milles sisust on olulisem reaktsioon ja tõest olulisem tähelepanu?“ Milline on sinu arvamus selles küsimuses? Kommenteeri oma seisukohta umbes 100–150 sõnaga.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Nutisõltuvus, noorte ja laste digiharjumused”; “Anonüümne või avalik internet, privaatsus, ohutus, identiteet”; “Küberkuritegevus, küberkiusamine”; “Inimestevaheline suhtlus, kiire elutempo, tarbimine, positsioon ühiskonnas”; “Massikultuur, globaliseerumine, turundus, reklaam, keeleoskus”; “Igaühemeedia – klikkimine, postitamine, kommentaariumid, meelelahutus, vihakõne”. The scheme reprints the task’s last words as “Kommenteeri oma seisukohta 100–150 sõnaga.” (the paper: “Kommenteeri oma seisukohta umbes 100–150 sõnaga.”).", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II ÜLESANNE",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2018 Higher Level — © State Examinations Commission.",
+    id: "est-2018-hl-iii-1", topicId: "estonian-1-1", conceptId: "igauhel-oma-tode-ning-alati-pole",
+    section: "III", questionRef: "2018 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Igaühel on oma tõde, ning alati pole sinu tõde minu tõde",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2018 Higher Level — © State Examinations Commission.",
+    id: "est-2018-hl-iii-2", topicId: "estonian-1-1", conceptId: "riided-teevad-inimese-kas-tosi-inimeste",
+    section: "III", questionRef: "2018 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. „Riided teevad inimese“. Kas on tõsi, et inimeste üle saab otsustada riiete põhjal, mida nad kannavad? Kaalu nii poolt- kui vastuargumente ning esita oma seisukoht.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2019, level: "higher",
     paperFileid: "LC552ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2019 Higher Level — © State Examinations Commission.",

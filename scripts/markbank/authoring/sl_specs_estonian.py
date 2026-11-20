@@ -615,5 +615,649 @@ SPECS[2017] = [
 ]
 
 
+# ================================================================ 2018 HL ===
+# Drafted (small-languages lane, 20 Nov): the five open asks of this sitting,
+# I5, I6, II1, III1, III2. Live: I1 (whole), I2, I3, I4 (4 cards); not touched
+# (audited: see estonian-live-faults-2018-2025.json; all four carry the wrong
+# row).
+# Paper (rendered pp2-4): the rule "Vasta küsimustele I, II ja III ülesandes.
+# Kõikidele küsimustele tuleb vastata eesti keeles." (p2 y65); "I ÜLESANNE
+# (30/100)" (p2 y100) and "... Iga õige vastus annab 5 punkti." (y121-136);
+# the article "POLARISEERUMINE JA VALEUUDISED" runs pp2-3 (title p2 y156,
+# paragraphs 1-11 to the byline "Maari Põim, ajalehest Postimees, ..." p3 y730
+# and the editing note y748); p4 holds only questions: Q1 "(5 × 1)" (p4 y65)
+# over 1)-5); Q2-Q6 "(5)" each, set at the right under or beside the
+# question's last line (rendered p4); "II ÜLESANNE (30/100)" (p4 y510); "III
+# ÜLESANNE (40/100)" (p4 y619), "Kirjuta umbes 300sõnaline kirjand. Vali üks
+# antud teemadest." (bold, y640) over two NUMBERED titles "1) Igaühel on oma
+# tõde, ..." (y673) and "2) „Riided teevad inimese“. ..." (y693).
+# PRICES:
+# - I5, I6: "(5)" each (census tariff (1, 5, 5): PP()); the scheme prints the
+#   same "(5)" at the end of each reprint (lines 90, 111).
+# - II1: the head's "(30/100)" (PARTP); scheme "II ÜLESANNE kuni 30 punkti"
+#   (135).
+# - III1, III2: "(40/100)" (PARTP); scheme "III ÜLESANNE kuni 40 punkti" (147).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-5 = printed pages 1-3; answers
+# in italics):
+# - Q5 (86-90 reprint the question with "(5)"): ONE italic paragraph, 91-106,
+#   "Pidev infovoog on muutnud ... ei tähenda tingimata objektiivsust."
+# - Q6 (107-111 reprint the question with "(5)"): THREE italic paragraphs
+#   with a gap between each (rendered p4): 112-116 ("Teise poole arvamuse ...
+#   kes kõvemini karjub."), 117-119 ("Kriitikat on üldiselt ... lahenduseni."),
+#   120-122 ("Nii ühiskondliku kui ... faktipõhise väitlusega."). No split.
+# - Criteria (p5 top, 127-134): "II ja III ülesande hindamisel arvestatakse
+#   järgmisi kriteeriume:" (bold) -- for Parts II AND III. 1. "– 30%" (128-
+#   129), 2. "– 30%" (130-131), 3. "– 30%" (132-133), 4. "– 10%" (134): all
+#   four printed, 100 %.
+# - Part II (135): the task reprinted (136-138), then "Näiteks:" (139, italic)
+#   over six italic items, one per line (140-145), and "Jne." (146). No
+#   descriptive line of its own this sitting.
+# - Part III (147): one descriptive line, 148-149, "Umbes 300sõnaline sidus
+#   teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava
+#   lausestusega." Nothing per title.
+# SHAPES:
+# - I5: one printed paragraph = one row at the paper's 5 (one(), PP()), as
+#   Bulgarian 2015 I5 and Danish 2018 I4/I5.
+# - I6: three printed paragraphs and no split: three shown rows, priced as a
+#   whole on the paper's 5 (questionTotal, 10a), as Romanian 2020 I3/I5.
+# - II1: graded (10b), 30/30/30/10 % of 30 = 9/9/9/3. With no descriptive line
+#   for Part II, the head is the criteria's own lead (127), as Czech 2013/2014
+#   and Romanian 2016/2017/2020 head a Part II that has none; the six items
+#   quoted under the scheme's own "Näiteks:" as examples, not a checklist
+#   (10a).
+# - III1, III2: graded (10b), 12/12/12/4 of 40. Head: the descriptive line
+#   (148-149); the criteria's lead quoted (it names Parts II and III).
+# JUDGEMENT CALLS:
+# - I6 shown, not one(): three separate paragraphs (rendered) are three
+#   points of a model answer the scheme prices only as a whole. If the lead
+#   prefers one claimable row (as the live 2019/2021 I6 cards): one(L(112,
+#   122), PP()).
+# - Part II's "Jne." (146, "etc.") is left out of the quoted examples, as in
+#   helper A's 2010: not an example.
+# - The scheme reprints Part II's task without the paper's "umbes" ("...
+#   Kommenteeri oma seisukohta 100–150 sõnaga.", line 137-138; paper p4 y545
+#   "... Kommenteeri oma seisukohta umbes 100–150 sõnaga."): a reprint, not
+#   an answer; the paper wins on the question (10f) and the difference is a
+#   single word, quoted on II1's row.
+# - The scheme reprints Q6 with "peaks" moved ("kuidas kriitikat taluv ja
+#   kaasvestleja arvamust austav suhtumine peaks aitama", 110-111; paper p4
+#   y421 "kuidas peaks kriitikat taluv ... suhtumine aitama"): word order
+#   only, the paper's words carded; quoted in the note (10f).
+# - III1/III2 questions: the bold instruction, then the title, cut from the
+#   paper's lines (the census gives the bare title).
+# - Reading text pp2-3 (rendered: title p2 y156, the text to the byline and
+#   editing note at the foot of p3; p4 opens with Q1). I5, I6, II1 carry
+#   pages=(2, 3). The live 2018 cards' sourceMaterial.pages [2, 3] agree with
+#   the render.
+# GLYPHS: none. õ ä ö ü read cleanly in every line used (paper and scheme;
+# "Õigekiri", "kõvemini", "väitlusega", "Küberkuritegevus" checked on the
+# render); no š/ž in the lines used.
+
+CRIT_2018 = crit((128, 129), (130, 131), (132, 133), 134)
+LEAD_2018 = quote(S(127), lead='The scheme prints')
+ESSAY_2018 = 'Kirjuta umbes 300sõnaline'
+
+
+def _q6_reprint_2018(d):
+    return (f'The scheme reprints the question’s last words as “{L(110, 111, after="kuidas ", before=" (5)").text(d)}” '
+            f'(the paper: “{J(PC(4, "artikli põhjal, kuidas peaks", after="kuidas "), PL(4, "ehtsatel uudistel")).text(d)}”).')
+
+
+def _p2_reprint_2018(d):
+    return (f'The scheme reprints the task’s last words as “{L(137, 138, after="küsimuses? ").text(d)}” '
+            f'(the paper: “{J(PC(4, "tähelepanu?“ Milline", after="küsimuses? "), PL(4, "100–150 sõnaga")).text(d)}”).')
+
+
+SPECS[2018] = [
+    R('I5', [one(L(91, 106), PP())], pages=(2, 3)),
+    R('I6', [shown(L(112, 116)), shown(L(117, 119)), shown(L(120, 122))], whole=True,
+      rownote=_q6_reprint_2018, pages=(2, 3)),
+    R('II1', [graded(S(127), PARTP(), CRIT_2018)],
+      rownote=both(examples(S(139), *[S(n) for n in range(140, 146)]), _p2_reprint_2018),
+      pages=(2, 3)),
+    R('III1', [graded(L(148, 149), PARTP(), CRIT_2018)], rownote=LEAD_2018,
+      question=QP(4, ESSAY_2018, '1) Igaühel')),
+    R('III2', [graded(L(148, 149), PARTP(), CRIT_2018)], rownote=LEAD_2018,
+      question=QP(4, ESSAY_2018, '2) „Riided')),
+]
+
+
+# ================================================================ 2019 HL ===
+# Drafted (small-languages lane, 20 Nov): the four open asks of this sitting,
+# I5, II1, III1, III2. Live: I1 (whole), I2, I3, I4, I6 (5 cards); not touched
+# (audited: see estonian-live-faults-2018-2025.json; all five carry a wrong or
+# run-on row).
+# Paper (rendered pp2-4): "I ÜLESANNE (30/100)" (p2 y65); the rule "Vasta
+# küsimustele I, II ja III ülesandes. Kõikidele küsimustele tuleb vastata
+# eesti keeles. ..." (p2 y86); the article "KASINUSE DISKREETNE VÕLU" runs
+# pp2-3 (title p2 y177, paragraphs 1-7 to the byline "Mari Laaniste, ..." p3
+# y594 and the editing note y613); Q1 "(5 × 1)" (p3 y653) over 1)-5) at the
+# foot of p3; Q2-Q6 "(5)" each at the right of the question's last line (p4);
+# "II ÜLESANNE (30/100)" (p4 y383); "III ÜLESANNE (40/100)" (p4 y543), "Kirjuta
+# umbes 300sõnaline kirjand. Vali üks antud teemadest." (bold) over two
+# NUMBERED titles "1) Saastatud keskkond ..." (y583) and "2) Vaheaasta ..."
+# (y617, its second line "Esita oma seisukoht ... Kaalu mõlema poole
+# argumente." set under it, one text-layer line).
+# PRICES:
+# - I5: "(5)" (p4 y233; census tariff (1, 5, 5): PP()); scheme "(5)" at the
+#   end of its reprint (76).
+# - II1: "(30/100)" (PARTP); scheme "II ÜLESANNE kuni 30 punkti" (105).
+# - III1, III2: "(40/100)" (PARTP); scheme "III ÜLESANNE kuni 40 punkti" (115).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-4 = printed pages 1-2):
+# - Q5 (75-76 reprint the question with "(5)"): FOUR italic points, each
+#   opening with "*" and on a line of its own (77, 78, 79, 80), then "Jne."
+#   (81). No split.
+# - Criteria (p4, 97-104): "II ja III ülesande hindamisel arvestatakse
+#   järgmisi kriteeriume:" (bold) -- Parts II AND III; 30 % (98-99), 30 %
+#   (100-101), 30 % (102-103), 10 % (104).
+# - Part II (105): the descriptive line "Umbes 100–150sõnaline ladus
+#   kommentaar, et tõestada teksti sisust arusaamist." (106), "Näiteks:" (107,
+#   italic) over three italic items (108-110, 111-112, 113) and "Jne." (114).
+# - Part III (115): one descriptive line, 116-117, "Umbes 300sõnaline sidus
+#   teemakohane kirjand ...". Nothing per title.
+# SHAPES:
+# - I5: the four points shown, priced as a whole on the paper's 5
+#   (questionTotal, 10a); the scheme's closing "Jne." quoted in the note (it
+#   says the list is open).
+# - II1: graded (10b), 9/9/9/3 of 30; head the descriptive line (106); the
+#   items quoted under "Näiteks:" as examples, not a checklist (10a); the
+#   criteria's lead quoted.
+# - III1, III2: graded (10b), 12/12/12/4 of 40; head the descriptive line
+#   (116-117); the criteria's lead quoted.
+# JUDGEMENT CALLS:
+# - I5's rows are cut after the printed "*" (the bullet strip does not take
+#   it), as Maltese 2024 I4.
+# - Part II's "Jne." (114) left out of the quoted examples, as 2010/2018.
+# - III2's question is the instruction, then title 2 with the task line the
+#   paper sets under it ("Esita oma seisukoht umbes 300sõnalises kirjandis.
+#   Kaalu mõlema poole argumente."): one text-layer line, lifted whole.
+# - Reading text pp2-3 (rendered: title p2 y177, the text to the byline and
+#   editing note on p3 y594-613; Q1 at the foot of p3, Q2-Q6 on p4). I5 and
+#   II1 carry pages=(2, 3). The live 2019 cards' sourceMaterial.pages [2, 3]
+#   agree with the render.
+# GLYPHS: none. õ ä ö ü clean in every line used ("Ökoloogiline",
+# "Üksikisiku", "säästlikuma" checked on the render); no š/ž in the lines used.
+
+CRIT_2019 = crit((98, 99), (100, 101), (102, 103), 104)
+LEAD_2019 = quote(S(97), lead='The scheme prints')
+ESSAY_2019 = 'Kirjuta umbes 300sõnaline'
+
+SPECS[2019] = [
+    R('I5', [shown(S(77, after='*')), shown(S(78, after='*')), shown(S(79, after='*')), shown(S(80, after='*'))],
+      whole=True, rownote=quote(S(81), lead='The scheme closes the list with'), pages=(2, 3)),
+    R('II1', [graded(S(106), PARTP(), CRIT_2019)],
+      rownote=both(examples(S(107), L(108, 110), L(111, 112), S(113)), LEAD_2019),
+      pages=(2, 3)),
+    R('III1', [graded(L(116, 117), PARTP(), CRIT_2019)], rownote=LEAD_2019,
+      question=QP(4, ESSAY_2019, '1) Saastatud')),
+    R('III2', [graded(L(116, 117), PARTP(), CRIT_2019)], rownote=LEAD_2019,
+      question=QP(4, ESSAY_2019, '2) Vaheaasta')),
+]
+
+
+# ================================================================ 2021 HL ===
+# Drafted (small-languages lane, 20 Nov): the three open asks of this sitting,
+# I5, II1, II2. Live: I1 (whole), I2, I3, I4, I6 (5 cards); not touched
+# (audited: see estonian-live-faults-2018-2025.json; all five carry a wrong or
+# run-on row).
+# A TWO-PART sitting: "Vasta I ja II ülesandele." / "Ülesannetele tuleb vastata
+# eesti keeles." / "Kokku 70 punkti" (p2 y65-106); "I ÜLESANNE (30/70)" (p2
+# y139); "II ÜLESANNE (40/70)" (p4 y601) is the essay, keys II1/II2 its two
+# titles (ruling B; a two-part sitting's Part II is the essay).
+# Paper (rendered pp2-4): the article runs pp2-4 (paragraphs 1-10, the text
+# ending p4 y159, byline "Kristjan Otsmann, ajalehest Müürileht, ..." p4 y178,
+# editing note y190); Q1 "(5 × 1)" (p4 y228) over 1)-5); Q2-Q6 "(5)" each at
+# the right of the question's last line (p4); Part II: "Kirjuta kirjand
+# (vähemalt 300 sõna). Vali üks antud teemadest." (y631) over "1) Tuleviku
+# töömaailm ning seal vajaminevad oskused ja omadused." (y667), "Või" (y693,
+# centred), "2) „Me ei saa välja mõelda omaenda fakte ... kuuleme.“" (y722)
+# and "- Greta Thunberg" (y739, right).
+# PRICES:
+# - I5: "(5)" (p4 y457; census tariff (1, 5, 5): PP()); scheme "(5)" (82).
+# - II1, II2: "(40/70)" (PARTP); scheme "II ÜLESANNE kuni 40 punkti" (136).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-5 = printed pages 1-3):
+# - Q5 (81-82 reprint the question with "(5)"): THREE italic paragraphs with a
+#   gap between each (rendered p4): 83-92 ("Lühem töönädal eeldab ...
+#   mittemateriaalseid hüvesid ja inimsuhteid."), 93-95 ("Artiklis mainitakse
+#   Eesti puhul ka madalamat tootlikkust, ... töövahendeid."), 96-98 ("Lõpuks
+#   tuleb arvestada ... kasulikult käima saada."). Key words UNDERLINED in each
+#   ("inimväärne elatustase", "viisakas sissetulek", "madalamat tootlikkust",
+#   "töökultuur ja tööharjumused"); no marks beside them, no split.
+# - Criteria (p5, 128-135): "II ülesande hindamisel arvestatakse järgmisi
+#   kriteeriume:" (underlined) -- for Part II, the essay -- then four criteria
+#   WITH NO PERCENTAGES (rendered p5: 129-130 end "mõtteid esitama", 131-132
+#   "eesmärgipärane", 133-134 "väljendamiseks", 135 "kirjavahemärgid"; the
+#   2018-2019 "– 30%" / "– 10%" are gone).
+# - Part II (136): one descriptive line, 137-138, "Vähemalt 300 sõnaline sidus
+#   teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava
+#   lausestusega.", then the two titles reprinted (139-142). Nothing per title.
+# SHAPES:
+# - I5: the three paragraphs shown, priced as a whole on the paper's 5
+#   (questionTotal, 10a): three printed points of a model answer.
+# - II1, II2: criteria printed for this part WITHOUT percentages: the four
+#   criteria as shown rows on the paper's 40 (questionTotal; coordinator
+#   ruling F, Bulgarian 2021); the descriptive line and the criteria's lead
+#   quoted.
+# JUDGEMENT CALLS:
+# - I5 shown, not one(): three separate paragraphs (rendered). If the lead
+#   prefers one claimable row: one(L(83, 98), PP()). The underlining is not
+#   carried (a row is plain text); no mark hangs on it.
+# - The criteria rows keep their printed numbers "1." to "4." (as the graded
+#   parts of 2018/2019 do); line 135 is set at the margin, not indented like
+#   1.-3. (rendered p5): layout only.
+# - II1's question: the instruction, then title 1; the census glues the
+#   centred "Või" (y693) to title 1 (JOINER takes it off). II2: the
+#   instruction, title 2 and its attribution line "- Greta Thunberg" (printed
+#   under the title at the right), as printed.
+# - Reading text pp2-4 (rendered: the article from p2 to the editing note at
+#   p4 y190; Q1 opens p4 y228). I5 carries pages=(2, 3, 4). The live 2021
+#   cards' sourceMaterial.pages [2, 3, 4] agree with the render.
+# - No `pages` on Part II (the essay of a two-part sitting).
+# GLYPHS: none. õ ä ö ü clean in the lines used ("Õigekiri", "töönädal",
+# "lüüasaamine"); the scheme types U+2010 HYPHEN in "40‐tunnise", "kaela‐" and
+# "‐ Greta Thunberg" (lines 59, 65, 142): real hyphens, rendered as such, not
+# in any row here.
+
+CRIT_ROWS_2021 = (L(129, 130), L(131, 132), L(133, 134), S(135))
+ESSAY_2021 = 'Kirjuta kirjand (vähemalt 300 sõna)'
+
+
+def _crit_note_2021(d):
+    return (f'Under Part II the scheme prints “{L(137, 138).text(d)}” Under “{S(128).text(d)}” it prints the '
+            f'four criteria with no marks or percentages beside them, so they are shown and the part is scored '
+            f'on its printed total.')
+
+
+SPECS[2021] = [
+    R('I5', [shown(L(83, 92)), shown(L(93, 95)), shown(L(96, 98))], whole=True, pages=(2, 3, 4)),
+    R('II1', [shown(c) for c in CRIT_ROWS_2021], whole=True, rownote=_crit_note_2021,
+      question=QP(4, ESSAY_2021, '1) Tuleviku')),
+    R('II2', [shown(c) for c in CRIT_ROWS_2021], whole=True, rownote=_crit_note_2021,
+      question=QP(4, ESSAY_2021, '2) „Me ei saa', '- Greta Thunberg')),
+]
+
+
+# ================================================================ 2022 HL ===
+# Drafted (small-languages lane, 20 Nov): the four open asks of this sitting,
+# I5, I6, II1, II2. Live: I1 (whole), I2, I3, I4 (4 cards); not touched
+# (audited: see estonian-live-faults-2018-2025.json; all four carry the wrong
+# row).
+# A TWO-PART sitting: "Vasta I ja II ülesandele." / "Ülesannetele tuleb vastata
+# eesti keeles. Kokku on võimalik saada kuni 70 punkti." (p2 y65-86); "I
+# ÜLESANNE (30 punkti)" (p2 y118); "II ÜLESANNE (40 punkti)" (p4 y419) is the
+# essay, keys II1/II2 its two titles (ruling B).
+# Paper (rendered pp2-4): the article "KÕIK EI OLE ISAAC NEWTONID" runs pp2-3
+# (title p2 y207, the text to the byline "Ilmar Tomusk, ajalehest Postimees,
+# 30.11.2021" p3 y592 and the editing note y610); Q1 "(5 × 1)" (p3 y650) at
+# the foot of p3; Q2-Q6 "(5)" each (p4; Q6's "(5)" at the end of its own last
+# line, y324, which the census reads); Part II: "Kirjuta kirjand (vähemalt 300
+# sõna), vali üks antud teemadest." (bold, y440) over "1) Tänapäeva Isaac
+# Newtonite ees seisvad suurimad väljakutsed" with "Uued ajad, uued
+# kangelased" set under it in the same item (y480, one text-layer line) and
+# "2) Kuidas tekib tõeline sõprus?" (y553).
+# PRICES:
+# - I5, I6: "(5)" each (census tariff (1, 5, 5): PP()); scheme "(5)" (86, 99).
+# - II1, II2: "(40 punkti)" (PARTP); scheme "II ÜLESANNE kuni 40 punkti" (126).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-5 = printed pages 1-3):
+# - Q5 (83-86 reprint the question, "(5)" on a line of its own): ONE italic
+#   paragraph, 87-95, "Autori arvates on inimesed loodud ... väga oluline."
+# - Q6 ("6." alone on line 96, the question reprinted 97-99 with "(5)"):
+#   "Näiteks:" (100, italic) over TWO italic paragraphs with a gap between
+#   them (rendered p4): 101-107, how technology CONNECTS ("digipädevus on
+#   tänapäeva kooli elementaarne osa – ... õpetajate vahel, jne."), and
+#   108-113, how it DIVIDES ("Digivahendite ületarbimine ... koolikius, jne.").
+#   No split.
+# - Criteria (p5, 118-125): "II ülesande hindamisel arvestatakse järgmisi
+#   kriteeriume:" -- for Part II, the essay -- four criteria WITH NO
+#   PERCENTAGES (rendered p5).
+# - Part II (126): the instruction and both titles reprinted (127-130), then
+#   the descriptive line "Vähemalt 300 sõna pikkune sidus teemakohane kirjand
+#   läbimõeldud sisu, selge ülesehituse ning sorava lausestusega." (131-132).
+# SHAPES:
+# - I5: one printed paragraph = one row at the paper's 5 (one(), PP()).
+# - I6: the two example paragraphs shown under the scheme's own "Näiteks:",
+#   priced as a whole on the paper's 5 (questionTotal, 10a); the heading
+#   quoted.
+# - II1, II2: criteria printed for this part WITHOUT percentages: the four
+#   criteria as shown rows on the paper's 40 (questionTotal; ruling F); the
+#   descriptive line and the criteria's lead quoted.
+# JUDGEMENT CALLS:
+# - 10f, Q5: the scheme reprints the task as "Selgita, mispärast on autor
+#   mures ... Kas see mure on sinu arvates õigustatud?" with no "Põhjenda oma
+#   seisukohta." (84-85); the paper prints "Selgita, miks on autor mures ...
+#   õigustatud? Põhjenda oma seisukohta." (p4 y210-254): the paper's words
+#   carded, the scheme's quoted on the row.
+# - 10f, Q6: the scheme reprints "Arutle loetule ja omaenda kogemusele" (98)
+#   for the paper's "Arutle loetule ja oma kogemusele" (p4 y295): quoted.
+# - I6's second paragraph: line 110 opens with the printed dash ("tervisele" /
+#   "– keskendumisraskused ..."), which the bullet strip would drop: SR(110)
+#   keeps it (Romanian 2015, Danish 2018 d)).
+# - I6's two paragraphs answer the two sides the question offers ("pigem
+#   ühendab või lahutab"); both shown, neither claimable alone.
+# - II1's question keeps the subtitle line "Uued ajad, uued kangelased" the
+#   paper prints under title 1 inside the same numbered item (rendered p4;
+#   the scheme reprints both lines, 128-129); not a third title.
+# - Reading text pp2-3 (rendered: title p2 y207 to the byline and editing note
+#   on p3; Q1 at the foot of p3, Q2-Q6 on p4). I5 and I6 carry pages=(2, 3).
+#   The live 2022 cards' sourceMaterial.pages [2, 3] agree with the render.
+# - No `pages` on Part II (the essay of a two-part sitting).
+# GLYPHS: none. õ ä ö ü clean in the lines used ("Õigekiri", "võõrandumine",
+# "üleelamisi"); the scheme types U+2010 HYPHEN in "silmast‐silma" (87), a
+# real hyphen (rendered "silmast-silma"), kept inside I5's row as printed.
+
+CRIT_ROWS_2022 = (L(119, 120), L(121, 122), L(123, 124), S(125))
+ESSAY_2022 = 'Kirjuta kirjand (vähemalt 300 sõna)'
+
+
+def _crit_note_2022(d):
+    return (f'Under Part II the scheme prints “{L(131, 132).text(d)}” Under “{S(118).text(d)}” it prints the '
+            f'four criteria with no marks or percentages beside them, so they are shown and the part is scored '
+            f'on its printed total.')
+
+
+SPECS[2022] = [
+    R('I5', [one(L(87, 95), PP())],
+      rownote=quote(L(84, 85, after='avaldab.“ '), lead='The scheme reprints the task as'), pages=(2, 3)),
+    R('I6', [shown(L(101, 107)), shown(J(L(108, 109), SR(110), L(111, 113)))], whole=True,
+      rownote=both(quote(S(100), lead='The scheme heads them'),
+                   quote(S(98, after='lahuta.“ ', before=', kas'), lead='It reprints the task as')),
+      pages=(2, 3)),
+    R('II1', [shown(c) for c in CRIT_ROWS_2022], whole=True, rownote=_crit_note_2022,
+      question=QP(4, ESSAY_2022, '1) Tänapäeva')),
+    R('II2', [shown(c) for c in CRIT_ROWS_2022], whole=True, rownote=_crit_note_2022,
+      question=QP(4, ESSAY_2022, '2) Kuidas tekib')),
+]
+
+
+# ================================================================ 2023 HL ===
+# Drafted (small-languages lane, 20 Nov): the four open asks of this sitting,
+# I5, II1, III1, III2. Live: I1 (whole), I2, I3, I4, I6 (5 cards); not touched
+# (audited: see estonian-live-faults-2018-2025.json; all five carry a wrong or
+# run-on row).
+# Paper (rendered pp2-4): "Vasta I, II ja III ülesandele." / "Ülesannetele
+# tuleb vastata eesti keeles. Kokku on võimalik saada kuni 100 punkti." (p2
+# y65-86); "I ÜLESANNE (30/100)" (p2 y118); the article "LOODUS EI ARVUSTA
+# SIND" runs pp2-3 (title p2 y207, paragraphs 1-9 to the byline "Tuul Sepp,
+# ajalehest Postimees, 7.11.2022" p3 y743 and the editing note y762); p4 holds
+# only questions: Q1 "(5 × 1)" (y65), Q2-Q6 "(5)" each at the right of the
+# question's last line; "II ÜLESANNE (30/100)" (y536); "III ÜLESANNE
+# (40/100)" (y684), "Kirjuta umbes 300sõnaline kirjand. Vali üks antud
+# teemadest." over "1. Ruum me ümber kujundab me mõtteviisi." (y733) and "2.
+# „Ajad on teised, inimesed endised.” (Anton Hansen Tammsaare)" (y762).
+# PRICES:
+# - I5: "(5)" (p4 y409; census tariff (1, 5, 5): PP()); scheme "(5)" (90).
+# - II1: "(30/100)" (PARTP); scheme "II ÜLESANNE kuni 30 punkti" (136).
+# - III1, III2: "(40/100)" (PARTP); scheme "III ÜLESANNE kuni 40 punkti" (149).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-5 = printed pages 1-3):
+# - Q5 (87-90 reprint the question with "(5)"): ONE italic paragraph, 91-103,
+#   "Loodus õpetab meid oma elu juhtima ... koostöö tähtsus."
+# - Criteria (p5, 128-135): "II ja III ülesande hindamisel arvestatakse
+#   järgmisi kriteeriume:" (bold) -- Parts II AND III; 30 % (129-130), 30 %
+#   (131-132), 30 % (133-134), 10 % (135).
+# - Part II (136): the task reprinted (137-140), "Näiteks:" (141) over three
+#   italic items (142; 143-145; 146-147) and "Jne." (148). No descriptive
+#   line of its own this sitting.
+# - Part III (149): the descriptive line "Umbes 300sõnaline sidus teemakohane
+#   kirjand ..." (150-151), then both titles reprinted (152-153).
+# SHAPES:
+# - I5: one printed paragraph = one row at the paper's 5 (one(), PP()).
+# - II1: graded (10b), 9/9/9/3 of 30; with no descriptive line for Part II,
+#   the head is the criteria's own lead (128), as 2018; the items quoted
+#   under "Näiteks:" as examples, not a checklist (10a).
+# - III1, III2: graded (10b), 12/12/12/4 of 40; head the descriptive line
+#   (150-151); the criteria's lead quoted.
+# JUDGEMENT CALLS:
+# - 10f, Q5: the scheme reprints "Arutle teksti põhjal" (88) for the paper's
+#   "Arutle artikli põhjal" (p4 y365): the paper's words carded, the
+#   scheme's quoted on the row.
+# - Part II's third item breaks a hyphenated compound at the line end
+#   ("vaatlemine‐uurimine‐" / "analüüs", 146-147, U+2010; rendered p5):
+#   joined with no space (Join sep='', as Romanian 2020 I4), so the quoted
+#   example reads the printed word "vaatlemine‐uurimine‐analüüs".
+# - The scheme reprints Part II's quotation with THREE opening marks
+#   ("„„„Loodus ei arvusta sind“", 137; rendered p5 the same) where the paper
+#   prints two (p4 y557): a reprint, not used; the paper's text is the
+#   question.
+# - "Jne." (148) left out of the quoted examples, as 2018/2019.
+# - III1/III2 questions: the instruction, then the title, cut from the
+#   paper's lines (the census gives the bare title). Title 2 keeps the
+#   paper's ” closing mark and its attribution "(Anton Hansen Tammsaare)".
+# - Reading text pp2-3 (rendered: title p2 y207, the text to the byline and
+#   editing note at the foot of p3; p4 opens with Q1). I5 and II1 carry
+#   pages=(2, 3). The live 2023 cards' sourceMaterial.pages [2, 3] agree with
+#   the render.
+# GLYPHS: none. õ ä ö ü clean in the lines used ("Õigekiri", "Ükskõik",
+# "tööprotsessis", "külvamine"); the scheme's U+2010 HYPHEN in
+# "külvamine‐kasvatamine‐hooldamine‐hoolitsemine" (94, inside I5's row) and
+# "vaatlemine‐uurimine‐" (146) are real hyphens (rendered as such).
+
+CRIT_2023 = crit((129, 130), (131, 132), (133, 134), 135)
+LEAD_2023 = quote(S(128), lead='The scheme prints')
+ESSAY_2023 = 'Kirjuta umbes 300sõnaline'
+
+SPECS[2023] = [
+    R('I5', [one(L(91, 103), PP())],
+      rownote=quote(S(88, after='võtmesõnad.“ ', before=','), lead='The scheme reprints the task’s opening as'),
+      pages=(2, 3)),
+    R('II1', [graded(S(128), PARTP(), CRIT_2023)],
+      rownote=examples(S(141), S(142), L(143, 145), Join(S(146), S(147), sep='')),
+      pages=(2, 3)),
+    R('III1', [graded(L(150, 151), PARTP(), CRIT_2023)], rownote=LEAD_2023,
+      question=QP(4, ESSAY_2023, '1. Ruum')),
+    R('III2', [graded(L(150, 151), PARTP(), CRIT_2023)], rownote=LEAD_2023,
+      question=QP(4, ESSAY_2023, '2. „Ajad')),
+]
+
+
+# ================================================================ 2024 HL ===
+# Drafted (small-languages lane, 20 Nov): the nine open asks of this sitting,
+# I1a-e, I5, II1, III1, III2. Live: I2, I3, I4, I6 (4 cards); not touched
+# (audited: see estonian-live-faults-2018-2025.json; all four carry a wrong or
+# run-on row).
+# Paper (rendered pp2-4): "Vasta I, II ja III ülesandele." / "Kõikidele
+# ülesannetele tuleb vastata eesti keeles. Kokku on võimalik saada kuni 100
+# punkti." (p2 y65-86); "I ÜLESANNE (30 punkti)" (p2 y118); the article
+# "TEHISARU KASUTAMINE NÕUAB ARU" runs pp2-3 (title p2 y186, the text to the
+# editing note p3 y616); p4 holds only questions: Q1's stem over two lines,
+# "(5 × 1)" at the right of its second line (y86), over five LETTERED
+# expressions a) digiriik, b) nutikas, c) äge, d) pärssima, e) maailmaga
+# suhestuma (y106-189, italic); Q2-Q6 "(5)" each; "II ÜLESANNE (30/100)"
+# (y575); "III ÜLESANNE (40/100)" (y696), "Kirjuta umbes 300sõnaline kirjand.
+# Vali üks antud teemadest." (bold) over "1. Tehnoloogia areng – nagu kahe
+# teraga mõõk" (y740) and "2. „Eesti suurim turvalisusrisk on harimatus.“
+# (Jaak Jõerüüt)" (y766).
+# PRICES:
+# - I1a-e: "(5 × 1)": five expressions at 1 each, adding to Q1's 5; the
+#   census walks the head down to the letters (tariff (1, 1, 1) each: PP()).
+#   Per letter, as the brief rules for printed per-expression marks.
+# - I5: "(5)" (p4 y427; PP()); scheme "(5)" (88).
+# - II1: "(30/100)" (PARTP); scheme "II ÜLESANNE kuni 30 punkti" (123).
+# - III1, III2: "(40/100)" (PARTP); scheme "III ÜLESANNE kuni 40 punkti" (134).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-5 = printed pages 1-3):
+# - Q1 (50-51 reprint the stem with "(5 × 1)"): the five expressions NUMBERED
+#   "1)" to "5)" where the paper LETTERS them a)-e), each reprinted with its
+#   gloss after " – " (52-53, 54, 55, 56, 57). Paired by WORDS and order:
+#   1) digiriik = a), 2) nutikas = b), 3) äge = c), 4) pärssima = d), 5)
+#   maailmaga suhestuma = e). (The exclusions' "the scheme prices no ask that
+#   pairs with it" is the letter/number mismatch, not a missing answer.)
+# - Q5 (85-88 reprint the question with "(5)"): TWO italic paragraphs with a
+#   gap between them (rendered p4): 89-91 ("Valikute tegemise oskus on
+#   kõigepealt oluline ... suunanäitajana.") and 92-99 ("Valikute tegemise
+#   oskus aitab meil ... töömeetodeid."). No split.
+# - Criteria (p5, 115-122): "II ja III ülesande hindamisel arvestatakse
+#   järgmisi kriteeriume:" -- Parts II AND III; 30/30/30/10 % (117, 119, 121,
+#   122).
+# - Part II (123): the task reprinted (124-127), "Näiteks:" (128) over ONE
+#   italic run of topics, 129-132 ("digivahendid ja tehnoloogia, ... kodu,
+#   kooli ja riigi roll;"), and "jne." (133). No descriptive line.
+# - Part III (134): the descriptive line "Umbes 300sõnaline sidus
+#   teemakohane kirjand ..." (135-136), then both titles reprinted (137-138).
+# SHAPES:
+# - I1a-e: one stated gloss each = one row at the paper's 1 (PP()), the
+#   expression cut off (after " – ").
+# - I5: the two paragraphs shown, priced as a whole on the paper's 5
+#   (questionTotal, 10a).
+# - II1: graded (10b), 9/9/9/3 of 30; with no descriptive line for Part II,
+#   the head is the criteria's own lead (115), as 2018/2023; the topic run
+#   quoted under "Näiteks:" as examples, not a checklist (10a).
+# - III1, III2: graded (10b), 12/12/12/4 of 40; head the descriptive line
+#   (135-136); the criteria's lead quoted.
+# JUDGEMENT CALLS:
+# - 10f, Q1: the scheme reprints the stem as "Selgita järgmiste sõnade ja
+#   väljendite tähendust, nii nagu need esinevad teksti kontekstis:" (50),
+#   without the paper's "Sõnad ja väljendid on esitatud paksus kirjas." (p4
+#   y86): the paper's words carded (the census text: stem and expression),
+#   the scheme's line quoted on each Q1 row.
+# - I1a's gloss is one entry with two phrasings joined by the scheme's ";"
+#   ("riik, mis kasutab ...; riik, mida iseloomustab ..."): one row, as
+#   printed (one gloss line wrapped onto 53).
+# - Part II's topic run ends with the scheme's own ";" (132): kept as
+#   printed inside the quote; "jne." (133) left out.
+# - Reading text pp2-3 (rendered: title p2 y186 to the editing note p3 y616;
+#   p4 opens with Q1). I1a-e, I5 and II1 carry pages=(2, 3). The live 2024
+#   cards' sourceMaterial.pages [2, 3] agree with the render.
+# GLYPHS: none. õ ä ö ü clean in the lines used ("äge", "pärssima",
+# "Õigekiri", "töömeetodeid"); no š/ž in the lines used.
+
+CRIT_2024 = crit((116, 117), (118, 119), (120, 121), 122)
+LEAD_2024 = quote(S(115), lead='The scheme prints')
+ESSAY_2024 = 'Kirjuta umbes 300sõnaline'
+Q1HEAD_2024 = quote(S(50, after='1. '), lead='The scheme reprints the question as')
+
+SPECS[2024] = [
+    R('I1a', [one(L(52, 53, after='– '), PP())], rownote=Q1HEAD_2024, pages=(2, 3)),
+    R('I1b', [one(S(54, after='– '), PP())], rownote=Q1HEAD_2024, pages=(2, 3)),
+    R('I1c', [one(S(55, after='– '), PP())], rownote=Q1HEAD_2024, pages=(2, 3)),
+    R('I1d', [one(S(56, after='– '), PP())], rownote=Q1HEAD_2024, pages=(2, 3)),
+    R('I1e', [one(S(57, after='– '), PP())], rownote=Q1HEAD_2024, pages=(2, 3)),
+    R('I5', [shown(L(89, 91)), shown(L(92, 99))], whole=True, pages=(2, 3)),
+    R('II1', [graded(S(115), PARTP(), CRIT_2024)],
+      rownote=examples(S(128), L(129, 132)),
+      pages=(2, 3)),
+    R('III1', [graded(L(135, 136), PARTP(), CRIT_2024)], rownote=LEAD_2024,
+      question=QP(4, ESSAY_2024, '1. Tehnoloogia areng')),
+    R('III2', [graded(L(135, 136), PARTP(), CRIT_2024)], rownote=LEAD_2024,
+      question=QP(4, ESSAY_2024, '2. „Eesti suurim')),
+]
+
+
+# ================================================================ 2025 HL ===
+# Drafted (small-languages lane, 20 Nov): the ten open asks of this sitting,
+# I1a-e, I5, I6, II1, III1, III2. Live: I2, I3, I4 (3 cards); not touched
+# (audited: see estonian-live-faults-2018-2025.json; all three carry the wrong
+# row).
+# Paper (rendered pp2-4): "Vasta I, II ja III ülesandele." / "Kõikidele
+# ülesannetele tuleb vastata eesti keeles. Kokku on võimalik saada kuni 100
+# punkti." (p2 y65-86); "I ÜLESANNE (30 punkti)" (p2 y112); the article
+# "Eestlased ja protestid" runs pp2-3 (title p2 y168, paragraphs 1-10 to the
+# byline "Anu Realo, lühendatult ajalehest Edasi.org, 10. juuni 2024" p3 y771
+# and the editing note y784); p4 holds only questions: Q1 "Seleta oma
+# sõnadega lahti järgmised sõnad ja väljendid:" over five LETTERED expressions
+# a) innukas ... e) upitama, "(5 × 1)" at the right of e)'s line (y162);
+# Q2-Q6 "(5)" each at the right of the question's last line (Q6's at y511);
+# "II ÜLESANNE (30/100)" (y555); "III ÜLESANNE (40/100)" (y669), "Kirjuta
+# vähemalt 300 sõna pikkune kirjand. Vali üks antud teemadest." (bold) over
+# "1. Aktiivsed noored – ..." (y712) and "2. „Keskkond pole mitte meid
+# ümbritsev, ... me sisaldume selles," / "oleme ise selle koostisosa.“" with
+# the attribution "Fred Jüssi (bioloog, loodusfotograaf ja looduse
+# populariseerija)" set small at the right of the second line (y742-757).
+# PRICES:
+# - I1a-e: "(5 × 1)": five expressions at 1 each, adding to Q1's 5; the
+#   census walks the head down to the letters (tariff (1, 1, 1) each: PP()).
+# - I5: "(5)" (p4 y401; PP()); scheme "(5)" (100).
+# - I6: the census reads NO price (tariff None) and the exclusion says
+#   "neither document states a tariff". BOTH ARE WRONG: the paper PRINTS
+#   "(5)" at the right of Q6's last line "kogemusele tuginedes selle küsimuse
+#   üle." (p4 y511 x482, rendered), and the scheme prints "(5)" at the end of
+#   its reprint (line 118). The census misses it because the question's
+#   quotation and its task are set as separate blocks (y442; y477-511) and it
+#   keeps only the first. PY cannot read the paper's cell (its pattern needs a
+#   mark word; this paper prints a bare "(5)") and PaperP cannot pick it (five
+#   lines of p4 open "(5)"), so it is priced from the scheme's own printed
+#   "(5)" on line 118 (RX), the same 5. If the lead extends PY to bare
+#   bracketed cells: PY(4, 511). Not a remainder, not 10i.
+# - II1: "(30/100)" (PARTP); scheme "II ÜLESANNE kuni 30 punkti" (134).
+# - III1, III2: "(40/100)" (PARTP); scheme "III ÜLESANNE kuni 40 punkti" (143).
+# WHAT THE SCHEME PRINTS (rendered scheme pp4-6 = printed pages 4-6; p3 the
+# annotations table, pp7-8 blank but for page numbers):
+# - Q1 (62-63 reprint the stem with "(5 × 1)"): the expressions NUMBERED 1)-5)
+#   where the paper LETTERS them a)-e), each with its gloss after " – "
+#   (64-68). Paired by WORDS and order: 1) innukas = a), 2) murendama = b), 3)
+#   keskne = c), 4) nappima = d), 5) upitama = e). (The exclusions' "prices no
+#   ask that pairs with it" is the letter/number mismatch.)
+# - Q5 (98-100 reprint the question in bold with "(5)"): SEVEN italic bullets
+#   (101-103, 104, 105-106, 107-108, 109-111, 112, 113). No split.
+# - Q6 (114-118 reprint the question in bold with "(5)"): SIX italic bullets
+#   (119-120, 121-122, 123-124, 125-126, 127-128, 129), the second to sixth
+#   each opening with a label ("Kanalid:", "Roll:", "Teemad:", "Omadused:",
+#   "Tulemus:"). No split.
+# - Part II (134): the task reprinted (135-139), then ONE italic run of
+#   topics, 140-142 ("Rahumeelsed meeleavaldused ja vägivaldsed
+#   väljaastumised, ... tehnoloogiline võimekus jne."), with no heading.
+# - Part III (143): one descriptive line, 144-145, "Vähemalt 300 sõna pikkune
+#   sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava
+#   lausestusega.", then both titles reprinted (146-149).
+# - NO criteria and NO percentages anywhere in this scheme (rendered pp4-6;
+#   the "II ja III ülesande hindamisel ..." block of 2018-2024 is gone).
+# SHAPES:
+# - I1a-e: one stated gloss each = one row at the paper's 1 (PP()), the
+#   expression cut off (after " – ").
+# - I5, I6: the bullets shown, priced as a whole on the 5 (questionTotal,
+#   10a).
+# - II1: the topic run is the scheme's content for the part (10a): one shown
+#   row, priced as a whole on the paper's 30 (questionTotal), as Bulgarian
+#   2025 II1; no criteria printed, so no graded row.
+# - III1, III2: only a descriptive line and no criteria: R4 (unprinted) at
+#   the paper's 40, the note quoting the line (ruling 4).
+# JUDGEMENT CALLS:
+# - 10f, Q1: the scheme reprints the stem as "Selgita järgmiste sõnade ja
+#   väljendite tähendust (nii nagu need esinevad teksti kontekstis)." (62-63,
+#   2024's wording) where the paper prints "Seleta oma sõnadega lahti
+#   järgmised sõnad ja väljendid:" (p4 y65): the paper's words carded, the
+#   scheme's quoted on each Q1 row.
+# - I6's question is cut from the paper's lines: the quotation (y442) and the
+#   task (y477-511); the census keeps only the quotation.
+# - III2's question: the text layer files the right-hand attribution between
+#   the title's two lines (y756 before y757); taken in the rendered order:
+#   title line 1, "oleme ise selle koostisosa.“", then "Fred Jüssi (...)".
+# - Part II's topic run keeps its closing "jne." (inside line 142).
+# - The bullets' labels in I6 ("Kanalid:", "Roll:" ...) are the scheme's own
+#   words at the head of each bullet: kept in the rows.
+# - Reading text pp2-3 (rendered: title p2 y168 to the editing note p3 y784;
+#   p4 opens with Q1). I1a-e, I5, I6, II1 carry pages=(2, 3). The live 2025
+#   cards' sourceMaterial.pages [2, 3] agree with the render.
+# GLYPHS: none. õ ä ö ü clean in the lines used ("ükskõiksed",
+# "ühtekuuluvustunne", "väljaastumised", "Jüssi"); no š/ž in the lines used.
+# The hyphens in "Kodu- ja välismaised" (119) and "ida- ja lõunaosas" (81) are
+# ASCII hyphen-minus (checked), rendered as printed.
+
+ESSAY_2025 = 'Kirjuta vähemalt 300 sõna pikkune'
+Q1HEAD_2025 = quote(L(62, 63, after='1. ', before=' (5'), lead='The scheme reprints the question as')
+
+
+def _essay_2025(d):
+    return (f'Under Part III the scheme prints only “{L(144, 145).text(d)}” and reprints the two titles. '
+            f'It prints no criteria and no split of the part\'s marks.')
+
+
+SPECS[2025] = [
+    R('I1a', [one(S(64, after='– '), PP())], rownote=Q1HEAD_2025, pages=(2, 3)),
+    R('I1b', [one(S(65, after='– '), PP())], rownote=Q1HEAD_2025, pages=(2, 3)),
+    R('I1c', [one(S(66, after='– '), PP())], rownote=Q1HEAD_2025, pages=(2, 3)),
+    R('I1d', [one(S(67, after='– '), PP())], rownote=Q1HEAD_2025, pages=(2, 3)),
+    R('I1e', [one(S(68, after='– '), PP())], rownote=Q1HEAD_2025, pages=(2, 3)),
+    R('I5', [shown(L(101, 103)), shown(S(104)), shown(L(105, 106)), shown(L(107, 108)), shown(L(109, 111)),
+             shown(S(112)), shown(S(113))], whole=True, pages=(2, 3)),
+    R('I6', [shown(L(119, 120)), shown(L(121, 122)), shown(L(123, 124)), shown(L(125, 126)), shown(L(127, 128)),
+             shown(S(129))], whole=True, total=RX(118, r'\((\d)\)'),
+      question=QP(4, '6. „Usk enda', Run('Kui suurt rolli', 'kogemusele tuginedes')), pages=(2, 3)),
+    R('II1', [shown(L(140, 142))], whole=True, pages=(2, 3)),
+    R('III1', [unprinted(_essay_2025)],
+      question=QP(4, ESSAY_2025, '1. Aktiivsed noored')),
+    R('III2', [unprinted(_essay_2025)],
+      question=QP(4, ESSAY_2025, '2. „Keskkond', 'oleme ise selle', 'Fred Jüssi')),
+]
+
+
 def specs(year):
     return SPECS.get(year, [])
