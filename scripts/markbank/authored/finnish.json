@@ -4383,6 +4383,98 @@
   }
  },
  {
+  "id": "fin-2016-hl-ii-1",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2016,
+  "section": "II",
+  "topicId": "finnish-1-0",
+  "conceptId": "kirjoita-noin-100-sanan-mittainen-kommentti",
+  "questionRef": "2016 HL Section II Q1",
+  "questionText": "Kirjoita noin 100 sanan mittainen kommentti tekstin väitteeseen: ”Jos haluamme puhua tasa-arvoisesta yhteiskunnasta, ainakin siviiliviranomaisten vahvistama liitto on tuotava kaikkien ulottuville.”",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kokelaan on hyvä sijoittaa käsittelynsä alkupuolelle oma määritelmänsä tasa-arvoisesta yhteiskunnasta. Kokelas voi vastustaa väitettä, osoittaa samanmielisyyttä tai vaatia enemmänkin (lainauksessa ”ainakin”). Kanta ei vaikuta pisteytykseen, vaan kokelaan perustelut.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Jos kokelas osoittaa erimielisyyttä, hän voi esimerkiksi todeta parisuhteen rekisteröinnin takaavan juridisen tasa-arvon riittävästi. Väitettä voi puolustaa vetoamalla ihmisoikeuksiin tai yhdenvertaisuuden periaatteeseen.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II TEHTÄVÄ",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2016-hl-iii-1",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "finnish-1-1",
+  "conceptId": "rakkaus-avioliitto-voiko-naista-valita-vain",
+  "questionRef": "2016 HL Section III Q1",
+  "questionText": "Kirjoita noin 300 sanan essee. Valitse aiheeksesi toinen näistä. Rakkaus ja avioliitto – voiko näistä valita vain toisen? Pohdi noin 300 sanan esseessä molempia puolia: rakkautta ilman avioliittoa ja avioliittoa ilman rakkautta.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Esseen tulee olla rakenteellisesti eheä: aiheeseen johdatteleva aloituskappale, selkeät käsittelykappaleet, kokoava päätäntä. Kumpikin näkökulma (rakkaus ilman avioliittoa ja avioliitto ilman rakkautta) tulee näkyä käsittelyssä tasapainoisesti. Käsittely voi liikkua yleisellä ja yksilön tasolla.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "fin-2016-hl-iii-2",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "finnish-1-1",
+  "conceptId": "maailma-voi-olla-karu-paikka-jos",
+  "questionRef": "2016 HL Section III Q2",
+  "questionText": "Kirjoita noin 300 sanan essee. Valitse aiheeksesi toinen näistä. ”Maailma voi olla karu paikka, jos emme yhdessä tee siitä tasa-arvoisempaa, demokraattisempaa ja kestävämpää.” Fintan O’Toole, The Irish Times, 22.02.2016. Pohdi väitettä noin 300 sanan esseessä. Millaisia toimia tasa-arvosta, demokratiasta ja kestävästä kehityksestä huolehtiminen edellyttää?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Esseen tulee olla rakenteellisesti eheä: aiheeseen johdatteleva aloituskappale, selkeät käsittelykappaleet, kokoava päätäntä. Käsittelyssä voi puhua yleisistä arvoista sekä aivan konkreettisista toimista paremman yhteiskunnan rakentamisessa. Kokelas voi myös pohtia sitä, mitä ”me ” tässä tarkoittaa: kenen on toimittava. Mitä uhkat ovat, jos emme toimi?",
+    "marks": null,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "fin-2018-hl-i-1-a",
   "subjectId": "finnish",
   "level": "higher",
