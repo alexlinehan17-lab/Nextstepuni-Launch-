@@ -3146,6 +3146,520 @@
   }
  },
  {
+  "id": "lv-2016-hl-i-2",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "paskaidrojiet-autoresprat-sevi-ietver-jedziens-english",
+  "questionRef": "2016 HL Section I Q2",
+  "questionText": "Paskaidrojiet, ko, autoresprāt, sevī ietver jēdziens “English Latvian”?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "English Latvian” ir latviešu un angļu valodas sajaukums.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Bērni veido jaunu vārdu krājumu mītnes zemē, bet, tā kā lielāko daļu sava laika viņi pavada angliski runājošo vidē, angļu valoda kļūst par dominējošo valodu.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Bērni bieži nespēj atcerēties, atrast vārdus dzimtajā valodā, lai pastāstītu par savu ikdienu un skolas dzīvi, tāpēc bieži lieto angļu valodas vārdus un angļu valodas gramatikas konstrukcijas latviešu valodā.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Runātāji dzimtajā valodā izsakās nepilnīgi, tāpēc tā tiek dēvēta par “English Latvian”.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2016-hl-i-3",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "kapec-par-spiti-vecaku-pulem-berniem",
+  "questionRef": "2016 HL Section I Q3",
+  "questionText": "Kāpēc “Par spīti vecāku pūlēm bērniem latviešu valoda kļūst arvien sekundārāka”, t.i., mazāk svarīga par mītnes zemes valodu?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dzīvojot ārzemēs, dominējošā valoda sadzīvē un skolā ir angļu vai cita valoda, tāpēc angļu valodai ir lielāka nozīme ikdienas dzīvē un komunikācijā. “..līdz ko sākās par skolas lietām, viņi nemāk to izstāstīt, viņi nemāk paskaidrot latviski, ” stāsta kāds no vecākiem, tāpēc latviešu valoda zaudē savu nozīmi un kļūst sekundāra.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Bērni kautrējas runāt latviski, daudzi emigrantu bērni izvēlas drīzāk pat apzināti norobežoties no savas dzimtās valodas, cerot ātrāk un vieglāk iejusties jaunajā kopienā.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Latviešu bērni, tiekoties arī ar citiem savas tautības vienaudžiem, ļoti drīz sāk komunicēt angļu valodā, jo tā ir vieglāk, un vecākiem dažkārt ir īpaši jāaicina runāt latviski.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Jo mazāks bijis bērns, ierodoties Lielbritānijā, jo pasīvāks viņš ir informācijas ieguvē savā dzimtajā valodā.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2016-hl-i-4",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "latviesi-emigracija-megina-saglabat-latviesu-valodu",
+  "questionRef": "2016 HL Section I Q4",
+  "questionText": "Kā latvieši emigrācijā mēģina saglabāt latviešu valodu un savu identitāti?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lietojot dažādus informācijas avotus un medijus, interneta portālus dzimtajā valodā, tas palīdz paplašināt vārdu krājumu, stiprina piederības izjūtu Latvijai.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Skatoties televīzijas kanālus latviešu valodā.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Lejupielādējot bērniem no interneta multiplikācijas filmas latviešu valodā.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Pērkot un lasot grāmatas un laikrakstus latviešu valodā.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Apmeklējot latviešu nedēļas nogales skolas.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Organizējot dažādas izklaidējošas aktivitātes.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Apmeklējot vasaras nometnes bērniem Latvijā, kas varētu palīdzēt saglabāt saikni ar Latviju.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2016-hl-i-5",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "aptaujas-dati-rada-ieverojami-lielaka-dala",
+  "questionRef": "2016 HL Section I Q5",
+  "questionText": "“Aptaujas dati rāda, ka ievērojami lielākā daļa - 85% - no tiem Latvijas emigrantiem ar bērniem, kas Latvijā ģimenē runāja latviešu valodā, turpina to darīt, arī dzīvojot Lielbritānijā. Lielākā daļa vecāku (70%) uzskata, ka viņiem ir svarīgi, lai bērns vai nu brīvi pārvaldītu latviešu valodu (50%) vai lai vismaz to saprastu (20%). Vienlaikus diezgan lielai daļai emigrantu - (27%) - nav svarīgi, lai bērns spētu saprasties latviešu valodā”. Ko šie fakti liecina par latviešu valodas nākotni un izdzīvošanas iespējām ārzemēs?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Šie fakti atklāj, ka bērnu skaits, kas latviešu valodu nepārvalda brīvi, ir liels un acīmredzami nākotnē pieaugs. Jāņem vērā, ka daudzās ģimenēs ir jauktas laulības, kur viens no vecākiem ir citas tautības cilvēks. Šādu ģimeņu skaits ar laiku pieaugs. Tātad arī ģimenēs latviešu valodas nozīme nākotnē var mazināties.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Fakts, ka 47% emigrantu, kuriem nav pietiekoši būtiski vai nav svarīgi, lai bērni brīvi pārvaldītu latviešu valodu, liecina par to, ka latviešu valodas izdzīvošanas iespējas ārzemēs ir mazas. Iespējams, latviešu valoda izzudīs vai arī pārtaps par “English Latvian”.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Ņemot vērā faktu, ka latviešu valodai mītnes zemē ir otršķirīga loma, varam secināt, ka 50% latviešu valodas lietotāju nav pietiekošs skaits, lai valoda ilgtermiņā izdzīvotu un saglabātos.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Latviešu valoda var pastāvēt, ja vecākiem tas ir būtiski un viņi dara visu iespējamo, lai bērniem nodrošinātu latvisku vidi, kā arī ja vecāki runā latviski, iedrošina bērnus runāt dzimtajā valodā pēc iespējas biežāk un nodrošina valodas apgūšanas iespējas.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2016-hl-i-6",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2016,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "pedejos-gados-aizbraukusie-lielakoties-ekonomiskie-begli",
+  "questionRef": "2016 HL Section I Q6",
+  "questionText": "“...pēdējos 25 gados aizbraukušie lielākoties ir ekonomiskie bēgļi, un vienai daļai no viņiem latviskuma jautājums nepastāv. Tauta un valoda tiek saglabāta, pateicoties tiem latviešiem, kuriem nav vienalga,” apgalvo raksta lasītājs ar pseidonīmu Vilburs. Izskatiet savu viedokli par šo apgalvojumu, atklājot, kā šie vārdi raksturo ārzemēs dzīvojošo latviešu pasaules uztveri, vērtības un nākotni mītnes zemēs?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tā ir patiesība, ka pēdējās desmitgadēs ekonomiskās situācijas dēļ no Latvijas uz ārzemēm emigrējis liels skaits latviešu un “vienai daļai no viņiem latviskuma jautājums nepastāv”.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total. The scheme reprints the instruction as: “Izsakiet savu viedokli par šo apgalvojumu, atklājot, kā šie vārdi raksturo ārzemēs dzīvojošo latviešu pasaules uztveri, vērtības un nākotni mītnes zemēs?”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Fakts, ka daļa emigrējušo latviešu neizjūt piederību Latvijai, ir skumjš un pat šokējošs, ņemot vērā, ka lielākā daļa Latvijā ir gan uzauguši, gan ieguvuši izglītību. Darba trūkuma un zemo ienākumu dēļ daudzi no šiem cilvēkiem neredz savu nākotni Latvijā, daļa jūtas nevajadzīgi savai valstij. Kamēr nenotiks būtiski uzlabojumi valsts ekonomikā, radot jaunas, labi apmaksātas darba vietas, maz ticams, ka situācija būtiski mainīsies un ka šie cilvēki atgriezīsies Latvijā vai jutīsies piederīgi Latvijai.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Lielākai daļai latviešu emigrantu tas ir liels izaicinājums saglabāt svešumā tradīcijas un valodu. Viņu prioritāte ir adaptēties, iedzīvoties jaunajā vidē pēc iespējas ātrāk. Tas varētu būt viens no iemesliem, kāpēc cilvēki bieži vien aizmirst par savām saknēm un mēģina pieņemt jaunās mītnes valsts sabiedrības vērtības un dzīves stilu.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Vēl jo grūtāk ir saglabāt latvietību, ja mītnes zemē ir maz tautiešu vai maz tādu, kuriem identitātes saglabāšana ir būtiska.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "No vienas puses, mums var likties nepieņemami, ka tautiešiem ārzemēs identitātes jautājums ir mazsvarīgs, bet, no otras puses, tās ir viņu tiesības veidot jaunu dzīvi mītnes zemē, pielāgojoties jaunajai videi, it īpaši, ja tas palīdz nodrošināt labāku nākotni.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Šie fakti liecina, ka latviskā piederības izjūta nav ļoti spēcīga un cilvēki labākas dzīves meklējumos var aizmirst par savu nacionālo identitāti un bieži jūtas iederīgāki mītnes zemē nekā dzimtenē.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Tauta un valoda tiek saglabāta, pateicoties tiem latviešiem, kuriem nav vienalga, kuri organizē latviešu skolas, biedrības, asociācijas, dažādus kultūras pasākumus mītnes zemēs.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2016-hl-ii",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2016,
+  "section": "II",
+  "topicId": "latvian-1-0",
+  "conceptId": "latviesu-valodas-zinasanas-piederibas-apliecinajums-latvijai",
+  "questionRef": "2016 HL Section II",
+  "questionText": "“Latviešu valodas zināšanas ir piederības apliecinājums Latvijai un latviešiem”. Izsakiet savu viedokli par šo apgalvojumu! (vismaz 100 vārdu)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lai gan uz citām valodām šis apgalvojums nav attiecināms ( piem., angļu valodā runā vairākās pasaules valstīs), tad uz latviešu valodu tas attiecas pilnā mērā. Tā kā Latvija ir vienīgā valsts, kur runā latviski un latviešu skaits ir salīdzinoši neliels, var teikt un apgalvot, ka latviešu valodas zināšana ir piederības apliecinājums Latvijai un latviešiem.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints these points with no mark on any of them and no criteria for the part: examples, not a checklist. The scheme reprints the statement as: ““Latviešu valodas zināšana ir piederības apliecinājums Latvijai un latviešiem”.”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Nezinot latviešu valodu, būtu grūti komunicēt Latvijā. Ja cilvēks runā latviski, tas vairums gadījumu nozīmē, ka viņš ir latvietis - daļa no Latvijas kultūras telpas un sabiedrības.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Latviešu valodas zināšana ir viena no nosacījumiem, lai lasītu latviešu daiļliteratūru, spētu sekot līdzi notikumiem valstī: politikā, ekonomikā u.c. Tas ir acīm redzami, ka, nezinot valodu, cilvēkam ir grūtāk justies kā daļai no šīs kultūras.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Latviešu valodas zināšana var nebūt “piederības apliecinājums Latvijai un latviešiem”, ja cilvēks nejūtas piederīgs vai nav lojāls šai zemei. Ir cilvēki, kas dzīvo ārzemēs un ir zaudējuši saikni ar dzimteni: viņu draugi ir cittautieši, viņu vecākiem nav svarīga saiknes saglābšana ar dzimteni, un viņos nav vairs vēlmes atgriezties. Ja cilvēks jūtas piederīgs Latvijai, tad viņam rūp gan valoda, gan tas, kas notiek dzimtajā zemē.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Ir cilvēki, kas arī nezinot latviešu valodu, jūtas piederīgi Latvijai (piemēram, latvieši, kuri jau otrajā vai trešajā paaudzē dzīvo ārzemēs vai nelatvieši, kuri mīl šo zemi un uzskata par savām mājām).",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Latvijā diemžēl ir arī cilvēki, kuri, lai arī runā Latviski, nav lojāli valstij. Daži latviski runājošie tiek ignorēti dažādu aizspriedumu dēļ. (Piem., bieži tieši nelatvieši cieš šo aizspriedumu dēļ).",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II DAĻA",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2016-hl-iii-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "latvian-1-0",
+  "conceptId": "saglabaju-saikni-savu-dzimteni-vai",
+  "questionRef": "2016 HL Section III Q1",
+  "questionText": "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) Kā es saglabāju saikni ar savu dzimteni.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dzimtās valodas regulāra lietošana veicina saiknes saglabāšanu ar dzimteni.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints these points with no mark on any of them and no criteria for the part: examples, not a checklist."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Tiekoties ar citiem latviešiem mītnes zemē, var veidot un stiprināt latvisko identitāti.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Var organizēt un piedalīties dažādos latviešu pasākumos mītnes zemē.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Ja bērns no agra vecuma dzīvo citā valstī, bieži vien bērnam apzināta saikne ar dzimteni ir ļoti trausla vai vispār tās nav, tāpēc ir ļoti svarīgi pēc iespējas biežāk ciemoties dzimtenē.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Svarīgi un būtiski ir regulāri kontaktēties, sazināties ar radiniekiem un draugiem dzimtenē.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Jālasa prese, jāseko līdzi politikas, ekonomikas un citiem notikumiem dzimtenē, jāseko līdzi informācijai dzimtajā valodā.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Jāapmeklē, jāseko līdzi dažādām kultūras norisēm dzimtenē.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Grāmatu lasīšana dzimtajā valodā bagātina valodu un paplašina cilvēka redzes loku.",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Latviešu nedēļas nogales skolu, vasaras nometņu apmeklēšana Latvijā ir labs veids, kā saglabāt saikni ar tautiešiem un dzimteni.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "lv-2016-hl-iii-2",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "latvian-1-0",
+  "conceptId": "visi-kopa-nestradasim-pie-lai-pasaule",
+  "questionRef": "2016 HL Section III Q2",
+  "questionText": "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) “Ja visi kopā nestrādāsim pie tā, lai pasaule kļūtu vienlīdzīgāka, demokrātiskāka un ilgtspējīgāka, tā var izrādīties diezgan slikta vieta”. (Fintan O’’Toole, The Irish Times, 22.02.2016)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints the part's head, the instruction and both titles. It prints nine points under the first title and nothing under this one: no criteria, no descriptive line and no split of the part's marks."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "lv-2017-hl-i-1",
   "subjectId": "latvian",
   "level": "higher",
