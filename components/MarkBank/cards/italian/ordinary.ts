@@ -227,8 +227,8 @@ export const CARDS: SecCard[] = [
     questionText: "Who are the founders of MammaPack?\nGive two details about them.\n(Par. 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Founders: Romolo Ganzerli and Flavio Nappi", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They started the business for cultural reasons” 2 marks; “They started the business out of economic necessity” 2 marks; “Romolo emigrated to Ginevra in 2008” 2 marks; “Flavio emigrated to Parigi in 2010” 2 marks; “Romolo emigrated in 2008” 1 mark; “Flavio emigrated in 2010” 1 mark. The scheme lists 1 further lesser answer(s) for this ask.", permittedMarks: [0,1,2,4] },
-    { id: "r-2", kind: "anyN", verbatim: "Details: Two of: — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Details: Two of:”.", group: {"claimMax":2,"perOption":3,"options":["They are Italian","They are young","They are Neapolitan","Romolo emigrated to Geneva in 2008","Flavio emigrated to Paris in 2010","They started the business for cultural reasons and economic necessity"]} },
+    { id: "r-1", kind: "criterion", verbatim: "Founders: Romolo Ganzerli and Flavio Nappi", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They started the business for cultural reasons” 2 marks; “They started the business out of economic necessity” 2 marks; “Romolo emigrated to Ginevra in 2008” 2 marks; “Flavio emigrated to Parigi in 2010” 2 marks; “Romolo emigrated in 2008” 1 mark; “Flavio emigrated in 2010” 1 mark; “They are (Italian) emigrants” 1 mark.", permittedMarks: [0,1,2,4] },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints: “Details: Two of:”.", group: {"claimMax":2,"options":["They are Italian","They are young","They are Neapolitan","Romolo emigrated to Geneva in 2008","Flavio emigrated to Paris in 2010","They started the business for cultural reasons and economic necessity"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -436,7 +436,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is this advertisement aimed at?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “A musician” 1 mark; “A young person” 1 mark.", group: {"claimMax":2,"options":["A guitarist","Someone with two years [1] (musical) experience in a band [1]","Someone who loves Italian/ international [1] rock music [1]","Someone who would like to join a rock [1] band [1]","Someone who is free to go on tour [1] throughout","Sardinia/ in the summer season [1]."],"perOption":2} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “A musician” 1 mark; “A young person” 1 mark.", group: {"claimMax":2,"options":["A guitarist","Someone with two years [1] (musical) experience in a band [1]","Someone who loves Italian/ international [1] rock music [1]","Someone who would like to join a rock [1] band [1]","Someone who is free to go on tour [1] throughout Sardinia/ in the summer season [1]."],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -482,7 +482,7 @@ export const CARDS: SecCard[] = [
     questionText: "In the fourth advertisement, give two details\nabout the service Elio is offering.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “The service is offered both online and in your own home” 2 marks; “He also facilitates (small) groups” 1 mark.", group: {"claimMax":2,"perOption":3,"options":["He will help you get fit [3]","He will help you get healthy [3]","He is offering his services as an experienced [1] personal trainer [2]","He devises personalised [1] eating plans [2]","He devises personalised [1] training sessions [2]","He offers fitness classes [2] to people in their own home [1]","He offers fitness classes [2] to people on-line [1]","He offers fitness classes [2] to people for €35 (an hour) [1]","(The omission of the word fitness before classes/lessons will be acceptable and will be awarded 2 marks, if the other answer given states the service is for fitness/personal training)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “The service is offered both online and in your own home” 2 marks; “He also facilitates (small) groups” 1 mark. The scheme also prints: “(The omission of the word fitness before classes/lessons will be acceptable and will be awarded 2 marks, if the other answer given states the service is for fitness/personal training)”.", group: {"claimMax":2,"options":["He will help you get fit [3]","He will help you get healthy [3]","He is offering his services as an experienced [1] personal trainer [2]","He devises personalised [1] eating plans [2]","He devises personalised [1] training sessions [2]","He offers fitness classes [2] to people in their own home [1]","He offers fitness classes [2] to people on-line [1]","He offers fitness classes [2] to people for €35 (an hour) [1]"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -787,7 +787,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is the competition aimed at?\nGive one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Students” 1 mark.", group: {"claimMax":1,"perOption":2,"options":["Those who are passionate about music","Those who are passionate about dance","Those who are experts in social media","Students aged between 15-17 years old","(When the answer ‘Students aged between 15-17 years old/Students’ is awarded the marks in this question, it cannot be awarded additional marks in question 3)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Students” 1 mark. The scheme also prints: “(When the answer ‘Students aged between 15-17 years old/Students’ is awarded the marks in this question, it cannot be awarded additional marks in question 3)”.", group: {"claimMax":1,"options":["Those who are passionate about music","Those who are passionate about dance","Those who are experts in social media","Students aged between 15-17 years old"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1367,7 +1367,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about the shoemaker\njob in the fourth advertisement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “In Rome” 1 mark; “Experience required” 1 mark.", group: {"claimMax":2,"options":["Jobs are for newly opened premises in Rome","Manual skills in working with leather","Manual skills in the use of all the tools of the trade","Must be able to repair used shoes","Must be able to create new shoes as requested by customers","Must be creative","Further information is available by phoning the number provided"],"perOption":2} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “In Rome” 1 mark; “Experience required” 1 mark.", group: {"claimMax":2,"options":["Jobs are for newly opened premises in Rome","Candidates must have Minimum 10 years’ experience","Manual skills in working with leather","Manual skills in the use of all the tools of the trade","Must be able to repair used shoes","Must be able to create new shoes as requested by customers","Must be creative","Further information is available by phoning the number provided"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2172,7 +2172,8 @@ export const CARDS: SecCard[] = [
     questionText: "In the fourth advertisement, who are\nSofia and Filippo hoping to employ?\nGive two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "One of People (who are) / One of Who will — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “18-year-olds” 1 mark. The scheme prices this half of the ask separately, under the heading “One of People (who are) / One of Who will”.", group: {"claimMax":2,"perOption":2,"options":["energetic","interested","willing","keen","over 18s","work on the farm","in the mountains","in agriculture","with animals","with nature","in a quiet place"]} },
+    { id: "r-1", kind: "anyN", verbatim: "People (who are) — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “18-year-olds” 1 mark. The scheme prints these answers under the heading “People (who are)”: one of them earns 2 marks.", group: {"claimMax":1,"options":["energetic","interested","willing","keen","over 18s"],"perOption":2} },
+    { id: "r-2", kind: "anyN", verbatim: "Who will — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Who will”: one of them earns 2 marks.", group: {"claimMax":1,"options":["work on the farm","in the mountains","in agriculture","with animals","with nature","in a quiet place"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2312,7 +2313,7 @@ export const CARDS: SecCard[] = [
     questionText: "How do we know that Kikky is\nfocused on environmental\nsustainability? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It is 100% committed to it” 1 mark; “They recycle” 1 mark.", group: {"claimMax":1,"perOption":2,"options":["No object used is made of plastic","They use compostable bamboo for all the eating utensils","Drinks come in glass bottles or cans","They also use the waste products to work towards having net zero (impact on the environment) (compostable/bamboo materials/used 1 mark)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “compostable/bamboo materials/used” 1 mark; “It is 100% committed to it” 1 mark; “They recycle” 1 mark.", group: {"claimMax":1,"options":["No object used is made of plastic","They use compostable bamboo for all the eating utensils","Drinks come in glass bottles or cans","They also use the waste products to work towards having net zero (impact on the environment)"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2755,7 +2756,7 @@ export const CARDS: SecCard[] = [
     questionText: "List three requirements in order to\nbe included in the list of accessible\nbeaches.\n(Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "That the beaches have — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Access pathway/Umbrellas/ Parking/Wheelchairs” 1 mark; “Disability/Wheelchair accessibility” 2 marks; “Helpful services” 1 mark. The scheme prices this half of the ask separately, under the heading “That the beaches have”.", group: {"claimMax":3,"perOption":3,"options":["boardwalks on the sand","accessible toilet facilities","accessible changing rooms","disability parking","designated (sun) umbrellas/ beach wheelchairs"]} },
+    { id: "r-1", kind: "anyN", verbatim: "That the beaches have — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Access pathway/Umbrellas/ Parking/Wheelchairs” 1 mark; “Disability/Wheelchair accessibility” 2 marks; “Helpful services” 1 mark. Each answer completes the scheme’s “That the beaches have”.", group: {"claimMax":3,"options":["boardwalks on the sand","accessible toilet facilities","accessible changing rooms","disability parking","designated (sun) umbrellas/ beach wheelchairs"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2778,7 +2779,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the carrozzine per disabili\nda spiaggia. Give one detail. (Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They are wheelchairs” 3 marks; “They are big/colourful” 2 marks.", group: {"claimMax":1,"options":["The carrozzine per disabili are (Specialised) beach wheelchairs,","Larger than (conventional) wheelchairs","Often very colourful wheelchairs","Wheelchairs that have very big (inflatable) wheels","Submersible wheelchairs","Wheelchairs that move freely/roll easily on the sand"],"perOption":5} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They are wheelchairs” 3 marks; “They are big/colourful” 2 marks. Each answer completes the scheme’s “The carrozzine per disabili are”.", group: {"claimMax":1,"options":["(Specialised) beach wheelchairs,","Larger than (conventional) wheelchairs","Often very colourful wheelchairs","Wheelchairs that have very big (inflatable) wheels","Submersible wheelchairs","Wheelchairs that move freely/roll easily on the sand"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3077,7 +3078,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is the competition aimed at?\nGive full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "It is aimed at students who are studying Fashion, who are in their last year of secondary school/who are in further education", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Students who are studying/like fashion” 3 marks; “Secondary schools/students” 1 mark; “Students in their last year of secondary School/who are in further education” 3 marks.", permittedMarks: [0,1,3,4] },
+    { id: "r-1", kind: "criterion", verbatim: "It is aimed at students who are studying Fashion, who are in their last year of secondary school/who are in further education", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Students in their last year of secondary School/who are in further education” 3 marks; “Students who are studying/like fashion” 3 marks; “Secondary schools/students” 1 mark.", permittedMarks: [0,1,3,4] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3589,7 +3590,7 @@ export const CARDS: SecCard[] = [
     questionText: "What can the participants do during\nthe event Occhio al Giallo.\nGive one detail.\n(Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "They can — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Enjoy nature/the fresh air” 3 marks; “Temperature” 3 marks. The scheme prices this half of the ask separately, under the heading “They can”.", group: {"claimMax":1,"options":["spend time together","spend time walking","breathe in the forest (wood) scent/smells","recognise (and identify) flowers/leaves","hug a tree","heel the heat/temperature of the bark (wood)","be blown away by the wind","be in the sun/ Be warmed by the sun"],"perOption":4} },
+    { id: "r-1", kind: "anyN", verbatim: "They can — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Enjoy nature/the fresh air” 3 marks; “Temperature” 3 marks. Each answer completes the scheme’s “They can”.", group: {"claimMax":1,"options":["spend time together","spend time walking","breathe in the forest (wood) scent/smells","recognise (and identify) flowers/leaves","hug a tree","heel the heat/temperature of the bark (wood)","be blown away by the wind","be in the sun/ Be warmed by the sun"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3637,7 +3638,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention two details about\nNoisyVision’s mission.\n(Par. 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Their mission is to — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Help boost senses” 2 marks; “To be accessible/inclusive” 1 mark; “To raise awareness about Disabilities/ Nature” 1 mark. The scheme prices this half of the ask separately, under the heading “Their mission is to”.", group: {"claimMax":2,"options":["create experiences that are open","create experiences that are accessible to all.","organise excursions","organise walks (pilgrimages)","organise itineraries","create enjoyable/fun moments (great experiences)","create moments of personal growth","create moments for collective growth.","live amongst nature","live in places of excellence for our senses"],"perOption":3} },
+    { id: "r-1", kind: "anyN", verbatim: "Their mission is to — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Help boost senses” 2 marks; “To be accessible/inclusive” 1 mark; “To raise awareness about Disabilities/ Nature” 1 mark. Each answer completes the scheme’s “Their mission is to”.", group: {"claimMax":2,"options":["create experiences that are open","create experiences that are accessible to all.","organise excursions","organise walks (pilgrimages)","organise itineraries","create enjoyable/fun moments (great experiences)","create moments of personal growth","create moments for collective growth.","live amongst nature","live in places of excellence for our senses"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3660,7 +3661,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is Dario Sorgato?\n(Par. 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "He is of NoisyVision’s — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “He is of NoisyVision’s”.", group: {"claimMax":2,"perOption":2,"options":["founder","president","organiser of inclusive walks"],"perOptionSteps":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "He is of NoisyVision’s — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. Each answer completes the scheme’s “He is of NoisyVision’s”.", group: {"claimMax":2,"options":["founder","president","organiser of inclusive walks"],"perOption":2,"perOptionSteps":[2,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3729,7 +3730,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is Dario Sorgato’s objective? (Par. 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Any five of eight elements)", marks: 5, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “To facilitate inclusive and accessible walking/in nature (events)so that the disabled can walk and enjoy nature without (the necessity of) a guide (1)”." },
+    { id: "r-1", kind: "point", verbatim: "To facilitate inclusive and accessible walking/in nature (events)so that the disabled can walk and enjoy nature without (the necessity of) a guide (1)", marks: 5, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also prints: “(Any five of eight elements)”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4051,7 +4052,7 @@ export const CARDS: SecCard[] = [
     questionText: "List three discounts available with this\napp.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discounts — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Ski passes/Equipment/rental” 1 mark; “At the resorts/locations” 1 mark; “Up to 40%” 1 mark. The scheme prices this half of the ask separately, under the heading “Discounts”.", group: {"claimMax":3,"options":["on daily ski passes/ (up to) 40% off ski passes","on spas,","on rental ski equipment","on accommodation","on restaurants (with traditional cuisine and much more)"],"perOption":2} },
+    { id: "r-1", kind: "anyN", verbatim: "Discounts — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Ski passes/Equipment/rental” 1 mark; “At the resorts/locations” 1 mark; “Up to 40%” 1 mark. Each answer completes the scheme’s “Discounts”.", group: {"claimMax":3,"options":["on daily ski passes/ (up to) 40% off ski passes","on spas,","on rental ski equipment","on accommodation","on restaurants (with traditional cuisine and much more)"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4195,7 +4196,7 @@ export const CARDS: SecCard[] = [
     questionText: "What do we know about the sisters\nNicole and Aurora? Give one detail\nabout each sister.\n(Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "One point for Nicole one point for Aurora — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Nicole is a designer” 1 mark; “Aurora is a chef” 1 mark; “Aurora is on social media” 1 mark; “Aurora is younger/Nicole is older” 1 mark. The scheme prices this half of the ask separately, under the heading “One point for Nicole one point for Aurora”.", group: {"claimMax":2,"perOption":3,"options":["They are (very) different (sisters)","Nicole is 29 years old","Aurora is five years younger (than Nicole)","Nicole is a fashion designer/designs wedding dresses/ Nicole is passionate about fashion design","Nicole’s brand is called Nicole Milano","Aurora is an aspiring chef/Aurora is passionate about cooking","Aurora is very active on social media","Aurora’s name on Instagram is @cooker.girl","They were born in Piedmont/in the province of Cuneo","Nicole lives in Turin","Aurora lives in Milan","They are women of their time/of the moment","They are passionate about everything (which they recount in the interview)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Nicole is a designer” 1 mark; “Aurora is a chef” 1 mark; “Aurora is on social media” 1 mark; “Aurora is younger/Nicole is older” 1 mark. The scheme prints: “One point for Nicole one point for Aurora”.", group: {"claimMax":2,"options":["They are (very) different (sisters)","Nicole is 29 years old","Aurora is five years younger (than Nicole)","Nicole is a fashion designer/designs wedding dresses/ Nicole is passionate about fashion design","Nicole’s brand is called Nicole Milano","Aurora is an aspiring chef/Aurora is passionate about cooking","Aurora is very active on social media","Aurora’s name on Instagram is @cooker.girl","They were born in Piedmont/in the province of Cuneo","Nicole lives in Turin","Aurora lives in Milan","They are women of their time/of the moment","They are passionate about everything (which they recount in the interview)"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7594,7 +7595,7 @@ export const CARDS: SecCard[] = [
     questionText: "For whom is Giulia going to buy a present?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Incorrect additional information minus 2 from off/full answer", marks: 6, contextNote: "The scheme prices this half of the ask separately, under the heading “Her best friend”. Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Her best friend", marks: 6, contextNote: "The scheme prints: “Incorrect additional information minus 2 from off/full answer”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7734,7 +7735,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where does Giada work in the mornings?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In an office in the city centre", marks: 8, contextNote: "The scheme prices this half of the ask separately, under the heading “In an estate agent’s”. Answer in English or Irish." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["In an estate agent’s","In an office in the city centre"],"perOption":8} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7769,7 +7770,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who can benefit from the bank account Giada is opening?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "People on a budget (as there are no fees) 4 marks)", marks: 6, contextNote: "The scheme prices this half of the ask separately, under the heading “Young people, newly employed/who have a new job”. Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Young people, newly employed/who have a new job", marks: 6, contextNote: "Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8787,7 +8788,7 @@ export const CARDS: SecCard[] = [
     questionText: "What type of accommodation have they booked?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Quadruple rooms in a hostel/ A hostel with kitchen facilities 4 marks)", marks: 4, contextNote: "The scheme prices this half of the ask separately, under the heading “A youth (1) hostel (3)”. Answer in English or Irish." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["A youth (1) hostel (3)","Quadruple rooms in a hostel/ A hostel with kitchen facilities"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8962,7 +8963,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention one other symptom Anna had after she fell.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "One of ` — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “One of `”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["She lost (2) her appetite (2)","(She often gets a) head (2) ache (2)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["She lost (2) her appetite (2)","(She often gets a) head (2) ache (2)"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9067,7 +9068,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the area where Sabrina lived. Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "She lived: — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “She lived:”. Answer in English or Irish.", group: {"claimMax":2,"options":["in a small town /village","in the west of Ireland","in the countryside","on a farm (with animals) / on farmland","(near) a river","(near) an old castle","not far from the city"],"perOption":3} },
+    { id: "r-1", kind: "anyN", verbatim: "She lived — the answers the scheme accepts", marks: null, contextNote: "Each answer completes the scheme’s “She lived”. Answer in English or Irish.", group: {"claimMax":2,"options":["in a small town /village","in the west of Ireland","in the countryside","on a farm (with animals) / on farmland","(near) a river","(near) an old castle","not far from the city"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9242,7 +9243,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Sabrina miss while in Ireland? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints: “(Hot weather is acceptable as an equivalent of The sun The heat but not in addition to either one)”. Answer in English or Irish.", group: {"claimMax":2,"options":["The sea ¬`","The sun","Heat","Ice-cream (gelato)"],"perOption":3} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints: “(Hot weather is acceptable as an equivalent of The sun The heat but not in addition to either one)”. Answer in English or Irish.", group: {"claimMax":2,"options":["The sea","The sun","Heat","Ice-cream (gelato)"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10371,7 +10372,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where is Piero going after the sailing trip?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The seaside 1 mark)", marks: 4, contextNote: "The scheme prices this half of the ask separately, under the heading “The mountains (for a few days)”. Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "The mountains (for a few days)", marks: 4, contextNote: "Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12072,7 +12073,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why would families and shops take\npart in this initiative?\n(Par. 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “To help the environment” 3 marks; “To work with the community” 1 mark; “To make a difference” 1 mark; “Promotion” 1 mark; “Education” 1 mark.", group: {"claimMax":2,"perOption":5,"options":["Families: To save money [3] on their shopping [2]","To reduce their waste [2] charges [2]","To carry out their civic duty","*To educate family members","Shops: To increase their customers numbers / To be seen as being more environmentally friendly","*To educate the community","*Educate can only be used once","The following answers can only be used for one category"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “To help the environment” 3 marks; “To work with the community” 1 mark; “To make a difference” 1 mark; “Promotion” 1 mark; “Education” 1 mark. The scheme prints: “*Educate can only be used once”. The scheme prints: “The following answers can only be used for one category”.", group: {"claimMax":2,"options":["Families: To save money [3] on their shopping [2]","To reduce their waste [2] charges [2]","To carry out their civic duty","*To educate family members","Shops: To increase their customers numbers / To be seen as being more environmentally friendly","*To educate the community"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12210,7 +12211,7 @@ export const CARDS: SecCard[] = [
     questionText: "The Italian for “kennels” is:\nTick the correct box\nveterinario\ncucce\nvolontari",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "`", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “Cucce”." },
+    { id: "r-1", kind: "point", verbatim: "Cucce", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13500,7 +13501,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does Gianfranco wish to live in the Le Langhe region? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["He is tired of busy life city","It’s a quieter place","He wants to rediscover (traditional) flavours","Has better quality products","He is becoming interested in viticulture","It is (in his opinion) where the best Italian vineyards are (Tradition 2 marks)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["He is tired of busy life city","It’s a quieter place","He wants to rediscover (traditional) flavours","Has better quality products","He is becoming interested in viticulture","It is (in his opinion) where the best Italian vineyards are"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",

@@ -217,7 +217,7 @@ LEAD_COUNT = re.compile(r'^(?:any\s+)?(?:one|two|three|four|five)\s+of\b\s*:?\s*
 # A condition the scheme prints after one answer: "(2 elements required)".
 REQUIRED = re.compile(r'\s*\(\s*(?:\d|one|two|three|four)\s+elements?\s+required\s*\)\s*$', re.I)
 # Characters the extraction leaves where the scheme printed a tick or a cross.
-STRAY = re.compile(r'\s*¬`?\s*$')
+STRAY = re.compile(r'\s*(?:¬`?|`)\s*$')
 # A line held aside that is neither a heading nor an answer: the examiner's
 # condition ("If only point", "(This answer can be used only with …)") or an
 # elements scale ("5 elements 6 marks").
@@ -1218,6 +1218,8 @@ def confirm_headings(part, question):
     for at, (kind, text, wrapped, bulleted) in enumerate(seq):
         printed = text
         text = STRAY.sub('', text)
+        if not text.strip():
+            continue            # a tick-box mark the extraction left as "`": nothing printed
         if pending is not None:
             # The rest of a bracket opened on an earlier line.
             pending = f'{pending} {text}'
