@@ -112,7 +112,8 @@ export async function runAtlasModelChecks(): Promise<CheckResult> {
       credit(atlas, identity);
       if (!headings.length) { miss('no-heading', card.id); continue; }
       const defs = headings.map(id => examTopicDefinition(id)).filter(Boolean);
-      if (defs.length && !defs.some(d => d!.level === card.level)) { miss('no-heading-at-level', card.id); continue; }
+      // A common-level heading (Japanese, LCVP) serves every level of the paper.
+      if (defs.length && !defs.some(d => d!.level === card.level || d!.level === 'common')) { miss('no-heading-at-level', card.id); continue; }
       // Same topic.
       if (isModelSubject(atlas)) {
         const record = askRecord(card.id);
