@@ -2300,7 +2300,10 @@ mkdirSync(OUT_DIR, { recursive: true });
 const businessRubrics = SUBJECT_ID === 'business'
   ? [...JSON.parse(readFileSync(resolve(OUT_DIR, 'rubric-authored.json'), 'utf8')).cards,
     ...JSON.parse(execFileSync('node', [resolve(ROOT, 'scripts/markbank/authoring/business_routes.mjs')],
-      { cwd: ROOT, encoding: 'utf8' }))]
+      { cwd: ROOT, encoding: 'utf8' })),
+    // The SEC's deferred sittings (business/add-<year>-<level>-deferred.py), each a paper of its own.
+    ...(existsSync(resolve(OUT_DIR, 'deferred-authored.json'))
+      ? JSON.parse(readFileSync(resolve(OUT_DIR, 'deferred-authored.json'), 'utf8')).cards : [])]
   : [];
 if (businessRubrics.length) {
   const ids = new Set();
@@ -2315,7 +2318,8 @@ if (businessRubrics.length) {
       throw new Error(`Business rubric ${card.id} needs a verified correction for its existing ID`);
     }
     if (!original && card.correction) throw new Error(`Stale Business correction ${card.id}`);
-    if (resolvePaperFileid('business', card.year, card.level, card.section) !== card.paperFileid) {
+    if (resolvePaperFileid('business', card.year, card.level, card.section,
+      card.paperFileid.endsWith('-deferred') ? 'deferred' : 'main') !== card.paperFileid) {
       throw new Error(`Business rubric ${card.id} does not resolve to its Paper Trail document`);
     }
     // Reviewed rubric cards bypass repairGlyphs, so refuse any glyph a broken
