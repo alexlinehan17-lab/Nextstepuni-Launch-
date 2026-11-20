@@ -3642,6 +3642,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2024 Higher Level — © State Examinations Commission.",
+    id: "ron-2024-hl-ii-1", topicId: "romanian-1-0", conceptId: "bine-fii-adaptabil-sau-mai-degrab",
+    section: "II", questionRef: "2024 HL Section II Q1",
+    questionText: "Este bine să fii adaptabil sau mai degrabă e mai sănătos să te împotrivești schimbării, să-ți stabilești un set de reguli după care să trăiești toată viață? Societatea te respinge atunci cînd ești un inadaptat sau îți poți găsi locul tău? Discutați această temă, în lumina textelor și exprimându-vă propria părere. (100-150 de cuvinte)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "La Partea a II‐a și la Partea III‐a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:", marks: 30, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\" The scheme reprints the last line of the task as: “Discutați această temă, în lumina textelor și exprimându‐vă propria părere. (aproximativ 100‐150 de cuvinte)”. The scheme prints, as examples, not a checklist: “Este un lucru cert că nu putem trăi fără adaptare. Sunt fire infinite și nenumărate care ne leagă de tot ce este în jurul nostru (oameni, locuri, istorie...) și adaptarea la un mod de viață este, la bază, și o formă de a ne afirma apartenența la un loc/comunitate/popor.”; “Să te adaptezi poate fi și o formă de exprimare a atașamentului față de ceva din afara ta (din nou, poate fi vorba de persoane anume, locuri, culturi etc.).”; “În același timp, fiecare dintre noi trebuie să se cunoască și să se înțeleagă cât mai bine, pentru a nu trăi situații de dezechilibru, de criză interioară, când înfruntă mediul exterior.”; “Stabilirea propriilor repere și construirea propriilor principii ne fac să ne putem adapta fără a ajunge să facem compromisuri sau să sacrificăm propriul eu.”; “De asemenea, nu toate schimbările din jurul nostru, adoptate la nivel de societate, sunt benefice sau morale, din punctul nostru de vedere. Propria conștiință, sănătos construită, ne poate ghida, atunci când nu agreăm mersul lucrurilor din jurul nostru. În anumite aspecte ale vieții, putem fi marginalizați de societate, dar conștiința noastră ne poate ajuta să evaluăm riscurile acestei marginalizări asupra propriei persoane.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într‐un mod clar – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Coerența răspunsurilor – candidatul folosește textul într‐un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Eficiența limbajului – candidatul demonstrează că stăpânește limba suficient de bine pentru a‐și exprima clar și cursiv ideile și opiniile – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PARTEA A II-A",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2024 Higher Level — © State Examinations Commission.",
+    id: "ron-2024-hl-iii-1", topicId: "romanian-1-1", conceptId: "supravie-uiesc-speciile-cele-mai-puternice",
+    section: "III", questionRef: "2024 HL Section III Q1",
+    questionText: "Scrieți un eseu în care să comentați, la alegere, unul dintre citatele de mai jos (a. sau b.) (aproximativ 300 de cuvinte): Nu supraviețuiesc speciile cele mai puternice, nici cele mai inteligente, ci cele mai ușor adaptabile. (Charles Darwin)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "La Partea a II‐a și la Partea III‐a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într‐un mod clar – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Coerența răspunsurilor – candidatul folosește textul într‐un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Eficiența limbajului – candidatul demonstrează că stăpânește limba suficient de bine pentru a‐și exprima clar și cursiv ideile și opiniile – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2024 Higher Level — © State Examinations Commission.",
+    id: "ron-2024-hl-iii-2", topicId: "romanian-1-1", conceptId: "omul-mai-slab-floare-mai-tare",
+    section: "III", questionRef: "2024 HL Section III Q2",
+    questionText: "Scrieți un eseu în care să comentați, la alegere, unul dintre citatele de mai jos (a. sau b.) (aproximativ 300 de cuvinte): Omul este mai slab ca o floare și mai tare ca piatra. (citat din romanul Capătul drumului, de Liliana Corobca)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "La Partea a II‐a și la Partea III‐a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într‐un mod clar – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Coerența răspunsurilor – candidatul folosește textul într‐un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Eficiența limbajului – candidatul demonstrează că stăpânește limba suficient de bine pentru a‐și exprima clar și cursiv ideile și opiniile – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC553ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2025 Higher Level — © State Examinations Commission.",
