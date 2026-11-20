@@ -1249,6 +1249,182 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2016 Higher Level — © State Examinations Commission.",
+    id: "cs-2016-hl-i-2", topicId: "czech-0-1", conceptId: "vysvetlete-zaklade-textu-podle-rezisera-zelenky",
+    section: "I", questionRef: "2016 HL Section I Q2",
+    questionText: "Vysvětlete na základě textu, co podle režiséra Zelenky musí obsahovat správná pohádka, a co tím má na mysli.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Režisér Zelenka tvrdí, že správná česká pohádka by měla obsahovat písničku, kytičku a babičku. Písnička znamená dobrou náladu, kytička zastupuje typickou českou poetičnost a babička je symbolem moudrého ponaučení a lidové moudrosti. Pohádka musí mít srozumitelný děj, jasně definované dobro a zlo, nesmí chybět humor a láska.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Czech 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2016 Higher Level — © State Examinations Commission.",
+    id: "cs-2016-hl-i-3", topicId: "czech-0-1", conceptId: "popiste-zaklade-textu-typicky-cesky-humor",
+    section: "I", questionRef: "2016 HL Section I Q3",
+    questionText: "Popište na základě textu typický český humor, který je možné najít v pohádkách.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pohádka by neměla být vážná, humor není tzv. na sílu, není ani příliš přechytralý a intelektuální. Měl by být tak trochu naivní. Také by měl obsahovat něaký dvojsmysl, ale ne hloupý. V pohádce by některé vtipy měly mířit na děti, některé na dospělé, aby pohádka byla pro celou rodinu.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Czech 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2016 Higher Level — © State Examinations Commission.",
+    id: "cs-2016-hl-i-4", topicId: "czech-0-1", conceptId: "vysvetlete-zaklade-textu-nazor-rezisera-trosky",
+    section: "I", questionRef: "2016 HL Section I Q4",
+    questionText: "Vysvětlete na základě textu názor režiséra Trošky, že „s originalitou se v pohádkovém žánru příliš uspět nedá“.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Všechna základní témata v pohádkách už byla vyčerpána, nedá se najít prakticky žádný nový motiv. Je proto potřeba ty staré motivy originálně zpracovat, zejména vizuálně. To ale neznamená, že příběh by neměl být zajímavý. Pohádka by měla být klasická, výpravná, s krásnou princeznou, s krásnou hudbou, odehrávající se v krásném prostředí. Divák sice očekává nové pohádky, ale přesto tíhne ke klasickým motivům, které jsou nově, moderně a kvalitně zpracované. Prakticky neexistuje prostor pro experimenty.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Czech 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2016 Higher Level — © State Examinations Commission.",
+    id: "cs-2016-hl-i-5", topicId: "czech-0-1", conceptId: "vysvetlete-zaklade-textu-vlastnimi-slovy-proc",
+    section: "I", questionRef: "2016 HL Section I Q5",
+    questionText: "Vysvětlete na základě textu a vlastními slovy, proč pohádka „Tři oříšky pro Popelku“ zůstává tak populární.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pohádka je velmi oblíbená napříč generacemi, podle ní se poměřují všechny ostatní pohádky. Tři oříšky jsou pohádka pro všechny, své si tam najdou děti, rodiče i prarodiče. Pohádka se jakkoliv nepodbízí, není ušišlaná nebo přeslazená, má jednoduchý příběh, krásné hlavní hrdiny. Pohádce pomohlo i to, že se netradičně odehrává v zimě a na sněhu, což z ní udělalo celoevropskou vánoční pohádku. Popelka je v některých zemích vnímána jako revolucionářka, Popelka je originální a netradiční, hrdinka, která nečeká pasivně v koutě, ale svého prince se snaží i vybojovat sama. V pohádce také chybí jakékoliv narážky na aktuální politické nebo společenské dění, tím pohádka neztrácí svoji platnost a mohou se na ni dívat i další generace, aniž by pro ně ztratila na srozumitelnosti.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Czech 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2016 Higher Level — © State Examinations Commission.",
+    id: "cs-2016-hl-i-6", topicId: "czech-0-1", conceptId: "pohadka-proste-neni-zadne-teletubbies-odst",
+    section: "I", questionRef: "2016 HL Section I Q6",
+    questionText: "„Pohádka prostě není žádné Teletubbies.“ (odst. 9) - vyjádřete vlastní názor na toto tvrzení.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Úkolem je vlastními slovy vysvětlit, proč nelze klasickou pohádku považovat za „Teletubbies“, případně lze polemizovat, pokud někdo nevidí žádný rozdíl. Jakýkoliv názor je ale potřeba vlastními slovy zdůvodnit. Vlastní vysvětlení: vlastními slovy, bez opsání frází z textu.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Czech 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2016 Higher Level — © State Examinations Commission.",
+    id: "cs-2016-hl-ii", topicId: "czech-1-0", conceptId: "napiste-komentar-100-150-slovech-kterem",
+    section: "II", questionRef: "2016 HL Section II",
+    questionText: "Napište komentář o 100-150 slovech, ve kterém na základě textu vysvětlíte, jak musí přemýšlet režisér úspěšné pohádky.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vlastními slovy, bez opsání frází z textu.", marks: 30, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”. The scheme prints, as examples, not a checklist: “Kompilace názorů čtyř úspěšných režisérů, každý z nich má vlastní recept, co musí úspěšná pohádka obsahovat, např. musí brát v úvahu cílovou skupinu, tedy děti i rodiče, výpravnost pohádky, jestli chce natočit komickou pohádku nebo vážnou apod.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30%.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČÁST 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Czech 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2016 Higher Level — © State Examinations Commission.",
+    id: "cs-2016-hl-iii-1", topicId: "czech-1-0", conceptId: "jestlize-chcete-aby-vase-deti-byly",
+    section: "III", questionRef: "2016 HL Section III Q1",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: Jestliže chcete, aby vaše děti byly chytré, čtěte jim pohádky. (Albert Einstein)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30%.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2016 Higher Level — © State Examinations Commission.",
+    id: "cs-2016-hl-iii-2", topicId: "czech-1-0", conceptId: "svet-muze-byt-poradne-zle-misto",
+    section: "III", questionRef: "2016 HL Section III Q2",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: Svět může být pořádně zlé místo, jestliže nebudeme společně pracovat na tom, aby byl více spravedlivý, více demokratický a více udržitelný. (Fintan O’Toole: The Irish Times, 22.02.2016)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30%.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2017, level: "higher",
     paperFileid: "LC547ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2017 Higher Level — © State Examinations Commission.",
