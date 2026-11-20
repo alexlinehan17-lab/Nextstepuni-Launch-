@@ -2966,6 +2966,296 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2023 Higher Level — © State Examinations Commission.",
+    id: "fin-2023-hl-i-1-a", topicId: "finnish-0-0", conceptId: "vaivihkaa",
+    section: "I", questionRef: "2023 HL Section I Q1(a)",
+    questionText: "Selitä omin sanoin seuraavat ilmaisut: vaivihkaa",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "huomaamatta", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2023 Higher Level — © State Examinations Commission.",
+    id: "fin-2023-hl-i-1-b", topicId: "finnish-0-0", conceptId: "kiistamattomat-faktat",
+    section: "I", questionRef: "2023 HL Section I Q1(b)",
+    questionText: "Selitä omin sanoin seuraavat ilmaisut: kiistämättömät faktat",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "vastaansanomattomat tosiasiat, kumoamattomat tosiasiat", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2023 Higher Level — © State Examinations Commission.",
+    id: "fin-2023-hl-i-1-c", topicId: "finnish-0-0", conceptId: "osattomuuden-tunne-vyoryi-paalleni",
+    section: "I", questionRef: "2023 HL Section I Q1(c)",
+    questionText: "Selitä omin sanoin seuraavat ilmaisut: Osattomuuden tunne vyöryi päälleni",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "vaille jäämisen tunne otti minut valtaansa", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2023 Higher Level — © State Examinations Commission.",
+    id: "fin-2023-hl-i-1-d", topicId: "finnish-0-0", conceptId: "oman-aidinkielen-opetuksen-puitteissa",
+    section: "I", questionRef: "2023 HL Section I Q1(d)",
+    questionText: "Selitä omin sanoin seuraavat ilmaisut: Oman äidinkielen opetuksen puitteissa",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "opetuksen aikana", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" The scheme reprints this expression as: “opetuksen puitteissa”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2023 Higher Level — © State Examinations Commission.",
+    id: "fin-2023-hl-i-1-e", topicId: "finnish-0-0", conceptId: "vertaisryhma",
+    section: "I", questionRef: "2023 HL Section I Q1(e)",
+    questionText: "Selitä omin sanoin seuraavat ilmaisut: vertaisryhmä",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "samassa tilanteessa olevien ryhmä", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2023 Higher Level — © State Examinations Commission.",
+    id: "fin-2023-hl-i-2", topicId: "finnish-0-1", conceptId: "kerro-miksi-marja-alkio-nakee-englannin",
+    section: "I", questionRef: "2023 HL Section I Q2",
+    questionText: "Kerro, miksi Marja Alkio näkee englannin kielellä tapahtuvan opetuksen uhkaavan tasa-arvoista peruskoulua.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hänen mielestään painotettuun opetukseen hakeutuvat ensi sijassa hyvin koulutettujen ja hyvätuloisten vanhempien hyvin koulussa menestyvät lapset.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" Neither the paper nor the scheme prints a mark for this question. The paper prints 30 marks for the part on its head and 25 for its other questions, so this one carries the remaining 5 (30 - 25 = 5). The scheme heads Part I: “TEHTÄVÄ (30/70)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2023 Higher Level — © State Examinations Commission.",
+    id: "fin-2023-hl-i-3", topicId: "finnish-0-1", conceptId: "kerro-omin-sanoin-miksi-marja-alkio",
+    section: "I", questionRef: "2023 HL Section I Q3",
+    questionText: "Kerro omin sanoin, miksi Marja Alkio puolustaa vakiintunutta kielikylpymallia.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Siinä opetus aloitetaan vieraalla kielellä, mutta äidinkielistä opetusta lisätään vähitellen, niin että äidinkieli on pääasiallinen opetuskieli. Hänen mukaansa tällöin vaativien oppisisältöjen omaksuminen tapahtuu äidinkielellä, mikä tieteellisen näytön perusteella on paras tapa oppia.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2023 Higher Level — © State Examinations Commission.",
+    id: "fin-2023-hl-i-4", topicId: "finnish-0-1", conceptId: "kerro-omin-sanoin-mita-tarja-roinila",
+    section: "I", questionRef: "2023 HL Section I Q4",
+    questionText: "Kerro omin sanoin, mitä Tarja Roinila tarkoittaa sillä, että hän oli sisäistänyt yksikielisyysnormin.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hän ei ollut koskaan osannut kyseenalaistaa tapaansa katsoa maailmaa yksikielisyyden kautta, vaikka tekstissä käy ilmi, että hän oli kasvanut kaksikielisessä kodissa. Hän oli ollut koko ajan huolissaan toisen kielen taidostaan, mikä viittaa siihen, että hän ei kokenut saksan kielensä olleet riittävän hyvä.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2023 Higher Level — © State Examinations Commission.",
+    id: "fin-2023-hl-i-5", topicId: "finnish-0-1", conceptId: "selita-omin-sanoin-milla-tavalla-tarja",
+    section: "I", questionRef: "2023 HL Section I Q5",
+    questionText: "Selitä omin sanoin, millä tavalla Tarja Roinila kuvaa omaa äidinkieltään ja sen käyttöä.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tekstissä hän rikkoo kieltä täydellisesti osaavan ihmisen mallin ja kokee äidinkielekseen kahden kielen rinnakkaisen käytön, mikä oli mahdollista seminaarissa, missä muutkin osallistujat osasivat kahta kieltä.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2023 Higher Level — © State Examinations Commission.",
+    id: "fin-2023-hl-i-6", topicId: "finnish-0-1", conceptId: "kumman-kirjoittajan-nakemys-vastaa-paremmin-omaa",
+    section: "I", questionRef: "2023 HL Section I Q6",
+    questionText: "Kumman kirjoittajan näkemys vastaa paremmin omaa käsitystäsi äidinkielen merkityksestä? Perustele vastauksesi.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Vastauksessa edetään referoiden jommankumman kirjoittajan kantaa ja sen pohjalta muodostetaan oma näkökulma", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2023 Higher Level — © State Examinations Commission.",
+    id: "fin-2023-hl-ii-1", topicId: "finnish-1-0", conceptId: "kirjoita-noin-100-sanan-kommentti-tarja",
+    section: "II", questionRef: "2023 HL Section II Q1",
+    questionText: "Kirjoita noin 100 sanan kommentti Tarja Roinilan tekstin esittämään ajatukseen: ”Hänen [Anken] kaksikielinen tyttärensä saa koulussa kolme tuntia viikossa saksan opetusta ns. oman äidinkielen opetuksen puitteissa.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kirjoittaja voi pohtia, missä määrin kolme viikkotuntia tulee kielenkehitystä. Onko paras paikka kielenoppimiseen kotona, jossa se muodostuu tunnesuhteessa vanhempaan tai sisaruksiin. Mitä lisäarvoa kouluoppiminen voi tuoda? Kirjoittaja voi myös arvella, mitä ylimääräinen koulutyö voi tarkoittaa lapsen kaverisuhteiden ja läksyjen kannalta.", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II TEHTÄVÄ",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2023 Higher Level — © State Examinations Commission.",
+    id: "fin-2023-hl-iii-1", topicId: "finnish-1-1", conceptId: "monikielisen-identiteetin-edut-haitat",
+    section: "III", questionRef: "2023 HL Section III Q1",
+    questionText: "Kirjoita noin 300 sanan essee. Valitse aiheeksi toinen näistä. Monikielisen identiteetin edut ja haitat",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" Under the two titles the scheme prints only: “Esseen tulee olla rakenteellisesti eheä: aiheeseen johdatteleva aloituskappale, selkeät käsittelykappaleet ja kokoava päätäntä. Tehtävänanto edellyttää omakohtaista pohdintaa ja sitä voi havainnollistaa esimerkein.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2023 Higher Level — © State Examinations Commission.",
+    id: "fin-2023-hl-iii-2", topicId: "finnish-1-1", conceptId: "maailma-kaaos-kieli-ihmiselle-lopulta-ainoa",
+    section: "III", questionRef: "2023 HL Section III Q2",
+    questionText: "Kirjoita noin 300 sanan essee. Valitse aiheeksi toinen näistä. ”Maailma on kaaos, ja kieli on ihmiselle lopulta ainoa välinen jäsentää sitä.” (Maija Vilkkumaa, suomalainen rockmuusikko)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" Under the two titles the scheme prints only: “Esseen tulee olla rakenteellisesti eheä: aiheeseen johdatteleva aloituskappale, selkeät käsittelykappaleet ja kokoava päätäntä. Tehtävänanto edellyttää omakohtaista pohdintaa ja sitä voi havainnollistaa esimerkein.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC049ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2024 Higher Level — © State Examinations Commission.",

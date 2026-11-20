@@ -332,8 +332,11 @@ class Remainder:
 
     def note(self, doc):
         t, tn, rest = self._sum(doc)
+        # a part's total is printed on its head (often as a cell, "(30/100)"): say
+        # so, never quote a notation the paper does not print (Finnish 2023)
+        where = ('on its head' if isinstance(self.total, PartPrice) else f'("{tn}")')
         return (f'Neither the paper nor the scheme prints a mark for this question. The paper prints '
-                f'{t} marks for the part ("{tn}") and {rest} for its other questions, so this one '
+                f'{t} marks for the part {where} and {rest} for its other questions, so this one '
                 f'carries the remaining {t - rest} ({t} - {rest} = {t - rest}).')
 
 
