@@ -51,7 +51,9 @@ import lt_topics                                                    # noqa: E402
 # The subjects whose census walks the paper with lt_paper.LtPaper (Latvian and
 # Czech never left the old examination; paper_census.SUBJECTS 'walker': 'lt').
 LT_SUBJECTS = {'latvian', 'czech'}
-SUBJECT_NAME = {**LANGUAGE_NAME, **lt_topics.LANGUAGE}
+# Modern Greek's census walks the paper with mgr_paper.MgrPaper (groups, not parts).
+MGR_SUBJECTS = {'modern-greek'}
+SUBJECT_NAME = {**LANGUAGE_NAME, **lt_topics.LANGUAGE, 'modern-greek': 'Modern Greek'}
 from pl_listen_lib import (S, J, PL, one, menu, shown, graded,      # noqa: E402,F401
                            components, Graded, Shown, One, Menu, Sel, Join)
 from pl_listen_specs import build_rows                               # noqa: E402
@@ -91,7 +93,15 @@ KEY = re.compile(r'^(III|II|I)(\d{1,2})(\w)?$')
 ADDED_KEY = re.compile(r'^(III|II|I)(\d{1,2}[A-Z])$')
 
 
+# Modern Greek: the census's own section token, "S1Q2" (group 1, question 2),
+# "S2" (group 2, one unnumbered task), "SIIQ1" (2021's part II).
+MGR_KEY = re.compile(r'^S(I{1,3}|[123])(?:Q(\d{1,2}))?$')
+
+
 def parse_key(text):
+    m = MGR_KEY.match(text)
+    if m:
+        return (m.group(1), int(m.group(2)) if m.group(2) else None, None, None)
     m = ADDED_KEY.match(text)
     if m:
         return (m.group(1), m.group(2), None, None)
@@ -572,6 +582,8 @@ RULE_WORDS = {
     # Czech and Latvian print the rule on their own p2 (the lt walker's live
     # cards say only that the question is in the language; new cards quote it).
     'ukrainian': (r'відповід', r'українськ'),
+    # "Οι απαντήσεις να δοθούν στα νέα Ελληνικά."; 2021 "Όλες οι απαντήσεις πρέπει να γραφούν ..."
+    'modern-greek': (r'απαντήσεις', r'Ελληνικ|Νεοελληνικ'),
     'czech': (r'Všechny otázky', r'česk'),
     'latvian': (r'Visām atbildēm', r'latvisk'),
 }
@@ -612,7 +624,7 @@ LATIN_SUBJECTS = {'dutch', 'romanian', 'hungarian', 'slovakian', 'swedish', 'est
 # A sentence ends at . ! ? followed by an upper-case letter, a line end or the
 # text's end, or a bracket opening one ("... slovenščini. (Največ 100 točk)",
 # Slovenian 2024); not at "I." in "az I., II. és III. részben" (Hungarian).
-SENT_END = re.compile(r'[.!?](?=\s+[(\[]?[A-ZÀ-ÖØ-ÞĀ-Ž\u0400-\u042f]|\s*$)')
+SENT_END = re.compile(r'[.!?](?=\s+[(\[]?[A-ZÀ-ÖØ-ÞĀ-Ž\u0400-\u042f\u0386-\u03ab]|\s*$)')
 
 
 def rule_sentence(subject, doc):
@@ -811,8 +823,58 @@ class LtView:
         return next(iter(got))
 
 
+class MgrView:
+    """A Modern Greek paper walked by mgr_paper.MgrPaper (its census's walker)
+    seen through the EuPaper interface: the census keys ("1", 2) / ("2", None) /
+    ("I", 1), each ask's own printed marks as its tariff, the article's pages,
+    the group totals the paper prints, and positioned lines for PL/PC/PY."""
+    def __init__(self, year, level, subject):
+        import types
+        import mgr_paper
+        import pymupdf
+        self._P = mgr_paper.MgrPaper(year, level, subject)
+        self.year, self.level, self.subject, self.path = year, level, subject, self._P.path
+        self.lines = []
+        with pymupdf.open(self.path) as pdf:
+            for pno, page in enumerate(pdf, 1):
+                for block in page.get_text('dict')['blocks']:
+                    for line in block.get('lines', []):
+                        text = ''.join(sp['text'] for sp in line['spans'])
+                        if text.strip():
+                            x0, y0, x1, _y1 = line['bbox']
+                            self.lines.append(eu_paper.Line(pno, x0, y0, x1, text))
+        raw = self._P.asks()
+        self._asks = [types.SimpleNamespace(
+            key=a.key, section=a.section, q=a.q, letter=a.letter, roman=None, text=a.text,
+            full_text=a.text, page=a.page, tariff=(1, a.marks, a.marks) if a.marks else None,
+            margin_price='', notation=f'({a.marks})' if a.marks else '', kind=a.kind, items=a.items)
+            for a in raw]
+        self.text_pages = {}
+
+    def all_asks(self):
+        return list(self._asks)
+
+    def pages_for(self, *args):
+        return self.text_pages.get(args[-1]) or list(self._P.passage_pages)
+
+    def lead(self, *args):
+        return ''
+
+    def part_head(self, section):
+        return None
+
+    def part_total(self, section):
+        total = self._P.section_marks.get(section)
+        if total is None:
+            raise ValueError(f'modern-greek {self.year} section {section}: no printed total')
+        return total, f'section {section}'
+
+
 def documents(subject, year, level='hl', scheme=True):
-    P = LtView(year, level, subject) if subject in LT_SUBJECTS else EuPaper(year, level, subject)
+    if subject in MGR_SUBJECTS:
+        P = MgrView(year, level, subject)
+    else:
+        P = LtView(year, level, subject) if subject in LT_SUBJECTS else EuPaper(year, level, subject)
     doc = {'paper': [(l.page, fix_text(subject, year, l.text)) for l in P.lines], 'lines': P.lines, 'P': P,
            'scheme': scheme_lines(subject, year, level) if scheme else []}
     return P, doc
@@ -861,10 +923,17 @@ def cards(subject, year, specs, level='hl', scheme=True):
             question = spec.question(doc, question) if callable(spec.question) else spec.question
         question = fix_text(subject, year, question)
         lt = subject in LT_SUBJECTS
-        language = (lt_topics.answer_language if lt else answer_language)(subject, question)
+        mgr = subject in MGR_SUBJECTS
+        if mgr:
+            import mgr_all
+            import mgr_topics
+            language = mgr_topics.answer_language(P._P) or 'Modern Greek'
+        else:
+            language = (lt_topics.answer_language if lt else answer_language)(subject, question)
         note = lang_note = rule_note(subject, doc, language)
         card = {
-            'id': ((lt_all.card_id if lt else card_id)(subject, year, level, key).lower() if added
+            'id': (mgr_all.card_id(year, level, key) if mgr
+                   else (lt_all.card_id if lt else card_id)(subject, year, level, key).lower() if added
                    else f'{lt_all.ID_PREFIX[subject]}-{year}-{level}-{key[0].lower()}' if lt and key[1] is None
                    else (lt_all.card_id if lt else card_id)(subject, year, level, key)),
             'subjectId': subject,
@@ -875,14 +944,16 @@ def cards(subject, year, specs, level='hl', scheme=True):
             # and shown as Part III's is.
             # A question carded whole over its lettered expressions is filed as
             # the expressions are (second reader, 20 Nov: Q1 sat under two topics).
-            'topicId': (lt_topics.topic_for(subject, year, key[0], key[1]) if subject in LT_SUBJECTS else
+            'topicId': (mgr_topics.topic_for(ask) if mgr else
+                        lt_topics.topic_for(subject, year, key[0], key[1]) if subject in LT_SUBJECTS else
                         topic_for(subject, 'classic', essay_part(key[0], two_part),
                                   key[2] or ('*' if key in parents else None))),
             # From the ask's own printed words, not an instruction put before
             # them (2026 Q1(c)-(e) shared one; second reader, 20 Nov).
-            'conceptId': (lt_topics.concept_for if subject in LT_SUBJECTS else concept_for)(
+            'conceptId': (mgr_topics.concept_for if mgr else lt_topics.concept_for if subject in LT_SUBJECTS
+                          else concept_for)(
                 clean_question(MARKER.sub('', ask.text, count=1)) or question),
-            'questionRef': (lt_all.question_ref if lt else question_ref)(year, level, key),
+            'questionRef': (mgr_all.question_ref if mgr else lt_all.question_ref if lt else question_ref)(year, level, key),
             'questionText': question,
         }
         if isinstance(spec, NoScheme):
@@ -955,7 +1026,8 @@ def cards(subject, year, specs, level='hl', scheme=True):
                 # The spec's pages, read on the render, where the census attaches
                 # none or the wrong ones (Romanian 2010 has none).
                 P.text_pages[ask.q] = list(spec.pages)
-            src = (lt_all.source_material(P, ask, language, level, year, subject) if lt
+            src = (mgr_all._source(P._P, year, level, language) if mgr
+                   else lt_all.source_material(P, ask, language, level, year, subject) if lt
                    else source_material(P, ask, subject, language, level, year))
             if src:
                 src['presentationNote'] = ('Read the text exactly as the examination printed it, then '
