@@ -245,7 +245,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
           // Legacy 2021-2025 cards bundle linked parts; reviewed published
           // papers are atomic, so a part label may follow the question and a
           // finite route appends its label after " · ".
-          return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] Q(?:A|B)(?:\((?:i|ii|iii)\)(?:\((?:a|b)\))?)?|Composing [1-7]|Single Text [A-I](?:\((?:i|ii)\)| Q[1-4](?:\((?:a|b|c|i|ii|iii)\))?)|Comparative [A-C] Q[12](?:\((?:a|b)\)(?:\((?:i|ii)\))?)?|Unseen Poetry Q[1-3](?:\((?:a|b)\))?|Prescribed Poetry (?:Q?[1-5]|[A-F] Q[12](?:\((?:a|b|c|i|ii|iii)\))?))(?: · .+)?$/.test(ref);
+          return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] Q(?:A|B)(?:\((?:i|ii|iii)\)(?:\((?:a|b)\))?)?|Composing [1-7]|Single Text [A-I](?:\((?:i|ii)\)| Q[1-4](?:\((?:a|b|c|i|ii|iii)\))?)|Comparative [A-C] Q[12](?:\((?:a|b)\)(?:\((?:i|ii)\))?)?|Unseen Poetry Q[1-3](?:\((?:a|b)\))?|Prescribed Poetry (?:Q?[1-5]|[A-F] Q[12](?:\((?:a|b|c|i|ii|iii)\))?))(?: · .+)?(?: — Deferred sitting)?$/.test(ref);
         }
         if (subject === 'irish') {
           // Generated 2021–2025 corpus plus the reviewed components: listening
@@ -262,8 +262,11 @@ describe('Mark Bank paper-coverage ratchet', () => {
         }
         if (subject === 'music') {
           // Three booklets, each its own address: "Listening Q5 A(d)", "Listening Q5 B(i)", "Listening Q2(e)(ii)",
-          // "Composing Section A Q1", and the elective's one card over its five asks, "Elective Q1–Q4(b)".
-          return !/^\d{4} (?:HL|OL) (?:Listening Q[1-7](?: [AB])?(?:\([a-h]\))?(?:\((?:i|ii|iii|iv|v)\))?|Composing Section [AB] Q[1-6]|Elective Q[1-4](?:\([ab]\))?(?:–Q[1-4](?:\([ab]\))?)?)$/.test(ref);
+          // "Listening Q6(k)", 2017-2018's parts numbered afresh under each excerpt, "Listening Q1 Excerpt 2(i)",
+          // "Composing Section A Q1", Ordinary's "Composing Section A Q1(a)" and the one card
+          // over parts the scheme marks together, "Composing Section A Q2(a)–(b)", and the elective's one card over
+          // its five asks, "Elective Q1–Q4(b)". A deferred sitting's card ends " — Deferred sitting".
+          return !/^\d{4} (?:HL|OL) (?:Listening Q[1-7](?: [AB])?(?: Excerpt [1-9])?(?:\([a-l]\))?(?:\((?:i|ii|iii|iv|v|vi)\))?|Composing Section [AB] Q[1-6](?:\([ab]\)(?:–\([ab]\))?)?|Elective Q[1-4](?:\([ab]\))?(?:–Q[1-4](?:\([ab]\))?)?)(?: — Deferred sitting)?$/.test(ref);
         }
         if (subject === 'geography') {
           // Reviewed sittings cite the printed part: "Q2(ii)(a)", "Q5A(iii)", "Q8A(vii)";

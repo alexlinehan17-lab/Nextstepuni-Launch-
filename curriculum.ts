@@ -829,6 +829,22 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "english-11-65",
             "name": "Marge Piercy"
+          },
+          {
+            "id": "english-11-66",
+            "name": "Caitríona O'Reilly"
+          },
+          {
+            "id": "english-11-67",
+            "name": "Randolph Healy"
+          },
+          {
+            "id": "english-11-68",
+            "name": "Nikki Giovanni"
+          },
+          {
+            "id": "english-11-69",
+            "name": "Austin Clarke"
           }
         ]
       },

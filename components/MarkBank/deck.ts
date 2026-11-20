@@ -2194,9 +2194,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   ukrainian: {
     higher: () => import('./cards/ukrainian/higher'),
   },
-  // Review pack 1 prototype (treatments lane): 2025 Higher only, so Higher only.
+  // Music lane (from 19 Nov 2026): every sitting, both levels.
   music: {
     higher: () => import('./cards/music/higher'),
+    ordinary: () => import('./cards/music/ordinary'),
   },
   'modern-greek': {
     higher: () => import('./cards/modern-greek/higher'),

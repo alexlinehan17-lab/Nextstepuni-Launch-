@@ -1,11 +1,9 @@
-import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 import { CARDS } from '../components/MarkBank/cards/russian/ordinary';
+import legacy from '../scripts/markbank/authored/russian.json';
 import { languageMarks, languageScoreId, languageFlagId, languageGroupId, languageRowId } from '../components/MarkBank/languageScoring';
 import { isRubricCard, tariffReconciles } from '../types/markBank';
-// Large review JSON is read at run time, not imported, so the test typecheck stays within its heap.
-const legacy = JSON.parse(readFileSync(`${__dirname}/../scripts/markbank/authored/russian.json`, 'utf8'));
 
 const sitting=REVIEWED_CARDS.filter(c=>c.year===2025 && c.level==='ordinary');
 const get=(suffix:string)=>{

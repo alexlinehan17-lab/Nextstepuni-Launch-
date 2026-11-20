@@ -1,0 +1,25 @@
+{
+  "afterMergeOnly": true,
+  "notUploaded": true,
+  "bucket": "gs://nextstepuni-app.firebasestorage.app",
+  "contentType": "application/json",
+  "cacheControl": "public, max-age=86400",
+  "verify": "Read each resulting object back and compare exact bytes to the merged scripts sidecar. No upload performed by this worker.",
+  "objects": [
+    {
+      "local": "scripts/paper-trail/answers/2018/LC099GLPA00EV.pdf.json",
+      "remote": "papers/lc/russian/2018/answers/LC099GLPA00EV.pdf.json",
+      "hostedTwin": "public/paper-answers/2018/LC099GLPA00EV.pdf.json"
+    },
+    {
+      "local": "scripts/paper-trail/answers/2022/LC099GLPA00BV.pdf.json",
+      "remote": "papers/lc/russian/2022/answers/LC099GLPA00BV.pdf.json",
+      "hostedTwin": "public/paper-answers/2022/LC099GLPA00BV.pdf.json"
+    },
+    {
+      "local": "scripts/paper-trail/answers/2013/LC099ALPA00EV.pdf.json",
+      "remote": "papers/lc/russian/2013/answers/LC099ALPA00EV.pdf.json",
+      "hostedTwin": "public/paper-answers/2013/LC099ALPA00EV.pdf.json"
+    }
+  ]
+}

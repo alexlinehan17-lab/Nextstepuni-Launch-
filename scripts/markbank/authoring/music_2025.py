@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Music, 2025 Higher Level: the review pack 1 prototype (treatments lane).
 
-    python3 scripts/markbank/authoring/music_2025.py > scripts/markbank/authored/music.json
+    python3 scripts/markbank/authoring/music_cards.py   (writes authored/music.json with every sitting)
 
 ONE sitting, all three booklets: Listening (core) LC067ALP008EV, Composing
 LC067ALP006EV and the Listening elective LC067ALP007EV, against the one scheme
@@ -21,9 +21,10 @@ What a card is, by how the scheme gives marks:
     solution crop held back until the reveal, beside the scheme's own words;
   * a quality band (Q5 B, Composing Section A, the Listening elective): the
     scheme's printed bands on the marking grid the languages use ('french');
-  * Composing Section B (bands PLUS half a mark per correct bass note): no
-    card type takes a counted half-mark component; not carded, described in
-    the review README instead.
+  * Composing Section B (bands PLUS half a mark per correct bass note, a mark
+    per chord): the scheme's bands and, beside them, each rate line as a grid
+    line that counts items at the printed rate (FrenchCriterion.counted,
+    music_lib.harmony_criteria), approved by Alex on 18 Nov.
 Every listening card plays the SEC's own sound file. The SEC publishes the
 test as TWO files and prints nowhere which question is on which; by length,
 Questions 1-4 (55 marks) sit in file 1 (about 50 minutes) and 5-6 in file 2
@@ -41,6 +42,8 @@ import sys
 import unicodedata
 
 import fitz
+
+import music_lib
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
@@ -63,7 +66,8 @@ AUDIO = {
 
 
 def norm(text):
-    text = unicodedata.normalize('NFKC', text or '').lower()
+    # a printed ♭ reaches the text layer as the music font's "b" (music_cards.norm)
+    text = unicodedata.normalize('NFKC', (text or '').replace('♭', 'b')).lower()
     text = re.sub('[‐-―]', '-', text)
     return re.sub(r'[^a-z0-9Ā-ſ]+', '', text)
 
@@ -259,7 +263,7 @@ def listening_card(r):
     stem = ' '.join(x for x in [r.get('questionContext'), r.get('excerptLine')] if x)
     card = {
         'id': listening_id(a), 'subjectId': 'music', 'level': 'higher', 'year': YEAR,
-        'section': 'L', 'topicId': topic, 'conceptId': concept(question),
+        'section': 'L', 'topicId': topic, 'conceptId': concept(r.get('conceptText') or question),
         'questionRef': f'2025 HL Listening {a}', 'questionText': question,
         'totalMarks': r['schemeMarks'],
         'sourceMaterial': {
@@ -297,9 +301,11 @@ def listening_card(r):
 
 
 # ---------------------------------------------------------------- grids ----
-def grid_card(cid, ref, section, topic, question, marks, criterion, pages, source, stem=None, note=None):
+def grid_card(cid, ref, section, topic, question, marks, criterion, pages, source, stem=None, note=None, concept_text=None):
+    # A live card keeps its conceptId when its printed text is completed (Alex, 18 Nov): concept_text is the
+    # text the id was first made from.
     card = {'id': cid, 'kind': 'rubric', 'subjectId': 'music', 'level': 'higher', 'year': YEAR,
-            'section': section, 'topicId': topic, 'conceptId': concept(question), 'questionRef': ref,
+            'section': section, 'topicId': topic, 'conceptId': concept(concept_text or question), 'questionRef': ref,
             'questionText': question, 'totalMarks': marks, 'schemePages': pages,
             'rubric': {'system': 'french', 'taskRequirements': [], 'criteria': [criterion],
                        'markingGuideNote': scheme(note or criterion['label'])},
@@ -364,7 +370,46 @@ def composing_a(r):
               'presentationNote': 'The question and its printed opening, exactly as the composing booklet sets them.'}
     return grid_card(f'mus-2025-hl-c-a-q{q}', f'2025 HL Composing Section A Q{q}', 'A',
                      {1: 'music-1-10', 2: 'music-1-11', 3: 'music-1-12'}[q], question, 40, criterion, [page], source,
-                     stem=paper('composing', 'Answer one question only in this section.'))
+                     stem=paper('composing', 'Answer one question only in this section.'), concept_text=r.get('conceptText'))
+
+
+def composing_b(r):
+    """Composing Section B: the scheme's bands PLUS lines counted at a printed
+    rate ("0.5 mark per correct bass note ... (0.5 X 20)"), on the grid line
+    that counts items (FrenchCriterion.counted), each line as printed."""
+    q = int(r['address'][-1])
+    page = {4: 6, 5: 7, 6: 8}[q]
+    criteria = music_lib.harmony_criteria(SCHEME_PDF, page, q)
+    for k in criteria:
+        k['label'] = scheme(k['label'])
+        k['guidance'] = [scheme(g) for g in k['guidance']]
+        for b in k.get('bands', []):
+            b['label'] = scheme(b['label'])
+            b['guidance'] = [scheme(g) for g in b['guidance']]
+    # The chord-progression rules print under Question 5's table, on its page.
+    rules = []
+    if q == 5:
+        top = fitz.open(SCHEME_PDF)[page - 1].find_tables().tables[0].bbox[3]
+        rules = [scheme(x) for x in music_lib.text_blocks_below(SCHEME_PDF, page, top)]
+    # The title and each bullet are checked one by one: the page prints the
+    # (unmarked) preparatory work between the title and the bullets.
+    question = r['questionText']
+    for piece in question.split(' • '):
+        paper('composing', piece)
+    source = {'kind': 'source-text', 'label': 'COMPOSING · SECTION B', 'title': f'Section B — Question {q}',
+              'pages': r['pages'], 'attribution': f'{ATTR_PAPER}.', 'sourceLabel': 'Composing',
+              'presentationNote': 'The question, its printed opening and the chords it gives, exactly as the composing booklet sets them.'}
+    card = {'id': f'mus-2025-hl-c-b-q{q}', 'kind': 'rubric', 'subjectId': 'music', 'level': 'higher', 'year': YEAR,
+            'section': 'B', 'topicId': {4: 'music-1-14', 5: 'music-1-13', 6: 'music-1-15'}[q],
+            'conceptId': concept(r.get('conceptText') or question), 'questionRef': f'2025 HL Composing Section B Q{q}',
+            'questionText': question, 'totalMarks': 60, 'schemePages': [page],
+            'rubric': {'system': 'french', 'taskRequirements': rules, 'criteria': criteria,
+                       'markingGuideNote': scheme('SECTION B – HARMONY (60 marks)')},
+            'sourceMaterial': source,
+            'stem': paper('composing', 'Answer one question only in this section.')}
+    if sum(k['maxMarks'] for k in criteria) != 60:
+        raise SystemExit(f'Composing B Q{q}: criteria make {sum(k["maxMarks"] for k in criteria)}, not 60')
+    return card
 
 
 def q5b(r):
@@ -381,7 +426,10 @@ def q5b(r):
               'pages': [r['page']], 'regions': [{'p': r['page'], 'r': r['crop']}], 'attribution': f'{ATTR_PAPER}.',
               'sourceLabel': 'Listening', 'presentationNote': 'The choice of questions as the listening booklet prints it.'}
     return grid_card(f'mus-2025-hl-l-q5-b-{roman}', f'2025 HL Listening Q5 B({roman})', 'L', 'music-2-13', question, 10,
-                     criterion, [19], source, stem=paper('listening', 'Answer one of the following:'))
+                     criterion, [19], source,
+                     stem='\n'.join(paper('listening', x) for x in (
+                         'Irish Music. Answer A and B. Note that B contains a choice of questions.',
+                         'B Answer one of the following:')))
 
 
 def elective(rows):
@@ -404,10 +452,12 @@ def elective(rows):
 
 
 # ---------------------------------------------------------------- build ----
-def main():
+def build():
+    """(cards, census, figure manifest) for 2025 Higher; music_cards.py adds the other sittings."""
     review = json.load(open(REVIEW, encoding='utf-8'))
     numbered = [r for r in review if not r.get('unnumbered')]
     cards = []
+    section_b = []
     census = {'papers': [], 'covers': {}}
     by_paper = {'Listening': [], 'Composing': [], 'Elective': []}
     for r in numbered:
@@ -421,12 +471,16 @@ def main():
             by_paper['Composing'].append({'id': cid, 'questionRef': f"2025 HL Composing {r['address']}"})
             if m.group(1) == 'A':
                 cards.append(composing_a(r))
-            # Section B: no card type takes its half-mark counted component.
+            else:
+                section_b.append(composing_b(r))
         else:
             cid = 'mus-2025-hl-e-' + r['address'].lower().replace('(', '-').replace(')', '')
             by_paper['Elective'].append({'id': cid, 'questionRef': f"2025 HL Elective {r['address']}"})
     elective_rows = [r for r in numbered if r['paper'] == 'elective']
     cards.append(elective(elective_rows))
+    # Composing Section B, carded on the counted grid line (19 Nov): after the
+    # 46 cards that were live before it, so those are emitted exactly as they were.
+    cards.extend(section_b)
     census['covers']['mus-2025-hl-e-q1-q4'] = [a['id'] for a in by_paper['Elective']]
     for name, asks in by_paper.items():
         census['papers'].append({'year': YEAR, 'level': 'higher', 'paper': name,
@@ -434,12 +488,17 @@ def main():
     census['note'] = ('Every numbered ask the three 2025 Higher Level booklets print, read page by page '
                       '(authored/music-2025-hl-review.json). The three unnumbered "Preparatory work" tasks of '
                       'Composing Section B carry no marks and sit inside their question.')
+    print(f'{len(cards)} cards for {sum(len(a) for a in by_paper.values())} asks', file=sys.stderr)
+    return cards, census, MANIFEST
+
+
+def main():
+    cards, census, _ = build()
     json.dump(census, open(CENSUS, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     open(CENSUS, 'a').write('\n')
     json.dump(MANIFEST, open(FIG_MANIFEST, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     open(FIG_MANIFEST, 'a').write('\n')
     json.dump(cards, sys.stdout, ensure_ascii=False, indent=1)
-    print(f'{len(cards)} cards for {sum(len(a) for a in by_paper.values())} asks', file=sys.stderr)
 
 
 if __name__ == '__main__':

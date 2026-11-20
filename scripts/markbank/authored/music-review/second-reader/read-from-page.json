@@ -1,0 +1,102 @@
+{
+ "readBy": "second reader (Opus helper), 19 Nov 2026",
+ "method": "Each page rendered at 200 dpi with music_pages.py render, cropped to the recorded box (an exact crop and one with a 1% margin) and the box's text read against the recorded string, character for character. Apostrophes, the chord symbols and the superscripts were then checked in 300-600 dpi zooms. Line breaks, spacing and the \"\\n• \" bullet were ignored, as instructed. Cross-check only, and the verdicts rest on the renders: the booklets' Calibri text is drawn by glyph id with no ToUnicode, so each box's glyphs were also decoded through a Calibri glyph-id-to-character map derived from sane ToUnicode sightings in 67 non-Music corpus PDFs, with the ligature ids taken from scripts/markbank/authoring/glyph_ids.json (302 = fi, 415 = ti, 859 = ’). Every decoded string matches the render, and every apostrophe in these boxes is glyph 859 (’), never 918 (the straight ').",
+ "entries": [
+  {
+   "readingFile": "2025-ol.json",
+   "booklet": "examiner-reports/music/papers/2025-ol-008-paper.pdf",
+   "page": 8,
+   "box": [
+    0.08,
+    0.505,
+    0.92,
+    0.645
+   ],
+   "text": "Excerpt 2, played three times. The opening lyrics are printed below. Line 1 Galileo, Galileo, Galileo, Galileo, Line 2 Galileo Figaro. Magnifico. Line 3 I’m just a poor boy, nobody loves me. Line 4 He’s just a poor boy from a poor family, Line 5 Spare him his life from this monstrosity.",
+   "verdict": "matches print",
+   "differences": [],
+   "notes": "Every word, comma and full stop matches, as do the labels Line 1 to Line 5 (Line 2 and Line 5 included) and the line order. \"I’m\" and \"He’s\" are printed with the curly ’ (600 dpi zoom; glyph id 859, the right single quotation mark, not 918, the straight quote). The box holds the heading and all five lines and nothing else."
+  },
+  {
+   "readingFile": "2023-hl.json",
+   "booklet": "examiner-reports/music/papers/2023-hl-008-paper.pdf",
+   "page": 4,
+   "box": [
+    0.08,
+    0.06,
+    0.92,
+    0.25
+   ],
+   "text": "Excerpt 3, played three times. The lyrics are printed below. Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
+   "verdict": "differs",
+   "differences": [
+    "The page prints two boxed chord symbols above Line 1, inside the box, that the recorded text leaves out: \"B♭\" (a Calibri B with the flat drawn in the OpusTextStd music font) above \"Mama,\" and \"Gm\" above \"killed\"."
+   ],
+   "notes": "Apart from the chord symbols, everything matches: the heading, the labels Line 1 to Line 4, every word and punctuation mark, and the curly ’ in \"he’s\" and \"I’ve\" (glyph id 859). Typography only, not a character difference: \"gun\" in Line 2 is printed in bold (Calibri-Bold). The 2023 OL booklet prints the same four lines with no chord symbols and no bold."
+  },
+  {
+   "readingFile": "2023-hl.json",
+   "booklet": "examiner-reports/music/papers/2023-hl-008-paper.pdf",
+   "page": 18,
+   "box": [
+    0.08,
+    0.47,
+    0.92,
+    0.63
+   ],
+   "text": "Excerpt 2, played three times.\n• The lyrics are printed below. Line 1 I never thought I’d miss you Line 2 Half as much as I do. Line 3 And I never thought I’d feel this way Line 4 The way I feel about you. Line 5 As soon as I wake up, every night every day. Line 6 I know that it’s you I need to take the blues away.",
+   "verdict": "matches print",
+   "differences": [],
+   "notes": "The heading, the bulleted \"The lyrics are printed below.\", the labels Line 1 to Line 6, every word and punctuation mark (including \"every night every day.\" with no comma) and the curly ’ in \"I’d\" (twice) and \"it’s\" all match. Box only, not the text: the top edge (0.47) cuts through the heading \"Excerpt 2, played three times.\", which is printed at y 0.459-0.473, so the recorded text's first sentence sits almost wholly above the box. A top of about 0.45 would take it in."
+  },
+  {
+   "readingFile": "2023-ol.json",
+   "booklet": "examiner-reports/music/papers/2023-ol-008-paper.pdf",
+   "page": 4,
+   "box": [
+    0.08,
+    0.06,
+    0.92,
+    0.25
+   ],
+   "text": "Excerpt 3, played three times. The lyrics are printed below. Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
+   "verdict": "matches print",
+   "differences": [],
+   "notes": "The heading, the labels Line 1 to Line 4, every word and punctuation mark, and the curly ’ in \"he’s\" and \"I’ve\" all match. This booklet prints no chord symbols and no bold."
+  },
+  {
+   "readingFile": "2023-ol.json",
+   "booklet": "examiner-reports/music/papers/2023-ol-008-paper.pdf",
+   "page": 15,
+   "box": [
+    0.08,
+    0.05,
+    0.92,
+    0.45
+   ],
+   "text": "Excerpt 2, played three times.\n• The lyrics are printed below. Line 1 I never thought I’d miss you Line 2 Half as much as I do. Line 3 And I never thought I’d feel this way Line 4 The way I feel about you. Line 5 As soon as I wake up, every night every day. Line 6 I know that it’s you I need to take the blues away.",
+   "verdict": "matches print",
+   "differences": [],
+   "notes": "The heading, the bulleted \"The lyrics are printed below.\", the labels Line 1 to Line 6, every word and punctuation mark, and the curly ’ in \"I’d\" (twice) and \"it’s\" all match. Box only, not the text: the recorded lines run from y 0.067 to 0.236, but the box (0.05-0.45) also takes in (c) \"A feature of the vocal music heard in lines 1–4 is\", its three options and the (d) stem."
+  },
+  {
+   "readingFile": "2020-hl.json",
+   "booklet": "examiner-reports/music/papers/2020-hl-006-paper.pdf",
+   "page": 7,
+   "box": [
+    0.08,
+    0.1,
+    0.8,
+    0.19
+   ],
+   "text": "Use the form AA¹BB¹.",
+   "verdict": "matches print",
+   "differences": [],
+   "notes": "Confirmed again: the second bullet reads \"Use the form AA¹BB¹.\" with both 1s set superscript (6 pt glyphs on a raised baseline, zoomed at 600 dpi), and the full stop follows the second ¹. Spacing only, ignored as instructed: the page sets a 6 pt space glyph between \"AA¹\" and \"BB¹\", so it prints \"AA¹ BB¹.\". The box holds the lead-in and the first three bullets and cuts through the fourth. This agrees with the earlier confirmation in second-reader/2020-hl.json."
+  }
+ ],
+ "resolutions": [
+  "2023-hl p4: the boxed chord symbols \"B♭ Gm\" printed above Line 1 are now in the recorded line, in reading order (lane lead, 19 Nov).",
+  "2023-hl p18: box top moved to 0.45 to include the excerpt heading; 2023-ol p15: box trimmed to the recorded lines (lane lead, 19 Nov)."
+ ]
+}
