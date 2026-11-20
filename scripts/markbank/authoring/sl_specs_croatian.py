@@ -120,15 +120,10 @@ def both(*notes):
 ESSAY_2014 = _hr_says('Under Part III the scheme reprints only the instruction and the two titles, with no '
                       'answer, criteria or notes:', S(145))
 P3_2014 = PaperP(4, 'DIO (40 bodova)')
+# Ruling 14 (coordinator, 20 Nov): the live hrv-2014-hl-i-1-e becomes the whole-Q1 card (it held all five
+# glosses at Q1's printed 5); the I1 drafted here is dropped. Its spec, for the record: five shown rows
+# S(56)/L(57,58)/S(59)/L(60,61)/L(62,64) after each letter, on PaperP(3, 'e) stvaranje idola').
 SPECS[2014] = [
-    R('I1', [shown(S(56, after='a) ')), shown(L(57, 58, after='b) ')), shown(S(59, after='c) ')),
-             shown(L(60, 61, after='d) ')), shown(L(62, 64, after='e) '))],
-      whole=True, total=PaperP(3, 'e) stvaranje idola'),
-      note=('The paper prices Question 1 only as a whole, "(5 bodova)" at the end of its last line '
-            '(e)), as Q2-Q6 print theirs; the scheme answers each expression and prints no split.'),
-      question=QL(3, Run('1. Objasnite', 'pojavljuju u navedenome'), 'a) kuditi', 'b) zadužiti',
-                  'c) obrisati', 'd) mahati', 'e) stvaranje'),
-      pages=(2, 3)),
     R('II1', [shown(L(133, 143))], whole=True, total=PaperP(4, '(30 bodova)'), pages=(2, 3)),
     R('III1', [unprinted(both(ESSAY_2014, _hr_says('The scheme reprints this title as',
                                                    L(146, 147, after='tema: '))))],

@@ -184,6 +184,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2014 Higher Level — © State Examinations Commission.",
+    id: "hrv-2014-hl-ii-1", topicId: "croatian-1-0", conceptId: "napi-ite-osvrt-100-200-rije",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "Napišite osvrt od 100 do 200 riječi. Na temelju teksta i Vašega općenitoga znanja o temi teksta, koja su moguća rješenja problema kojim se autor u tekstu bavi? Navedite svoje osobne poglede i razmišljanja o tome.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Na temelju problema koje autor navodi, kao što su netočnost navoda i pristranost hrvatskih medija, kao i dogovora između političara i medija koji dovodi do nedostatka odgovarajućih zakonskih mjera, jasno je da bi donošenje odgovarajućega zakona o medijima bilo prvi korak k poboljšanju situacije. To bi mogao biti kratkoročan cilj. Međutim, dugoročan je cilj promjena mentaliteta i hrvatske publike i novinara, kao i vlasnika medija, prema profesionalnim standardima koji bi zahtijevali odgovarajuće obrazovanje za bavljenje novinarstvom, u smjeru novoga shvaćanja uloge medija u javnosti. Mediji bi trebali pružati nepristrane informacije, a to ne bi trebalo tumačiti kao zagovaranje relativizma, nego pravednoga sustava vrijednosti koji bi isticao ono što je važno i vrijedno za opće dobro. To bi moglo dovesti do postupnoga smanjenja prevladavajućega senzacionalizma i negativnih vijesti u medijima, te do stvaranja novoga medijskoga stila koji bi promicao znanje, kreativnost i kritičko mišljenje.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Odgovore napišite na hrvatskome jeziku, na temelju navdenoga teksta.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Odgovore napišite na hrvatskome jeziku, na temelju navdenoga teksta.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2014 Higher Level — © State Examinations Commission.",
+    id: "hrv-2014-hl-iii-1", topicId: "croatian-1-1", conceptId: "tema-medijsku-slobodu-izvje-tavanja-mogu",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "Napišite raspravljački esej od najmanje 300 riječi na jednu od dviju ponuđenih tema. 1. tema: Je li medijsku slobodu izvještavanja moguće pomiriti s odgovornošću?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Odgovore napišite na hrvatskome jeziku, na temelju navdenoga teksta.\" Under Part III the scheme reprints only the instruction and the two titles, with no answer, criteria or notes: “Napišite raspravljački esej od najmanje 300 riječi na jednu od dviju ponuđenih tema.” The scheme reprints this title as “Je li medijsku slobodu izvještavanja moguće je pomiriti s odgovornošću? Raspravite o tome.”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2014 Higher Level — © State Examinations Commission.",
+    id: "hrv-2014-hl-iii-2", topicId: "croatian-1-1", conceptId: "tema-iako-putujemo-irom-svijeta-kako",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "Napišite raspravljački esej od najmanje 300 riječi na jednu od dviju ponuđenih tema. 2. tema: “Iako putujemo širom svijeta kako bismo pronašli ljepotu, moramo je nositi sa sobom ili je nećemo pronaći.” R.W. Emerson",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Odgovore napišite na hrvatskome jeziku, na temelju navdenoga teksta.\" Under Part III the scheme reprints only the instruction and the two titles, with no answer, criteria or notes: “Napišite raspravljački esej od najmanje 300 riječi na jednu od dviju ponuđenih tema.”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2015, level: "higher",
     paperFileid: "LC567ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2015 Higher Level — © State Examinations Commission.",
