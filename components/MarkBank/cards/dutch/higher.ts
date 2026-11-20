@@ -4282,6 +4282,110 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2024 Higher Level — © State Examinations Commission.",
+    id: "nld-2024-hl-i-5", topicId: "dutch-0-1", conceptId: "vind-het-verdrietig-dat-kinderen-met",
+    section: "I", questionRef: "2024 HL Section I Q5",
+    questionText: "“Ik vind het verdrietig dat kinderen nu met de Instagram-werkelijkheid worden opgevoed. Kinderen jonger dan twee jaar, kinderen die nog ‘ik’ moeten leren zeggen, springen in de houding en trekken een gezichtje als papa of mama de smartphone tevoorschijn haalt. Ze spelen het gewenste typetje en kunnen zo niet ontdekken wat karakteristiek aan henzelf is, en zo hun karakter vormen.“ Uitgaande van jouw lectuur van de tekst: is het inderdaad verdrietig te noemen dat dit gebeurt? Wat zijn volgens jou goede alternatieven of vind je dat dit moet kunnen?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "de kandidaat kan verwijzen naar de rol van de ouders", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme prints: “Eigen antwoord van de kandidaat. Die moet hierbij verwijzen naar zaken die verder gaan dan een loutere herhaling van wat in de tekst wordt beweerd.” “Het antwoord kan onder andere volgende elementen bevatten:”." },
+    { id: "r-2", kind: "point", verbatim: "de kandidaat kan verwijzen naar de authenticiteit van de mens zonder filters", marks: null },
+    { id: "r-3", kind: "point", verbatim: "de kandidaat kan verwijzen naar de verschillen van de wereld op sociale media en de echte wereld", marks: null },
+    { id: "r-4", kind: "point", verbatim: "de kandidaat kan ook stellen dat sociale media nu één keer deel uitmaken van onze ‘nieuwe’ wereld en dat we moeten leren hoe daarmee om te gaan.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2024 Higher Level — © State Examinations Commission.",
+    id: "nld-2024-hl-i-6", topicId: "dutch-0-1", conceptId: "alinea-staat-een-selfie-drukt-een",
+    section: "I", questionRef: "2024 HL Section I Q6",
+    questionText: "In alinea 10 staat: ‘’ Op een selfie drukt een gezicht niet langer uit wat iemand van binnen beleeft, het is een ding op zich geworden, een soort kneedbare klei. Dat is volgens mij geen co-evolutie, maar devolutie, een teruggang in ons bewustzijn.’’ Ben je het daarmee eens of niet? Verdedig je standpunt.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "De verschillen tussen de intentie van het maken van portretten zoals Rembrandt en Van Gogh deden en de intentie van het maken van selfies", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme prints: “Eigen antwoord van de kandidaat. Van belang hier is de argumentatie in het antwoord.” “Het antwoord van de kandidaat kan onder andere verwijzingen naar volgende elementen bevatten:”." },
+    { id: "r-2", kind: "point", verbatim: "De verschillen tussen een selfie en de manier waarop anderen naar je kijken", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Het gegeven dat een bewerkte selfie geen authentieke weergave is van de werkelijkheid", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Dat een selfie bewerkt kan worden waardoor we een ander zelfbeeld krijgen", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2024 Higher Level — © State Examinations Commission.",
+    id: "nld-2024-hl-ii-1", topicId: "dutch-1-0", conceptId: "selfie-cultuur-schadelijk-voor-het-zelfbeeld",
+    section: "II", questionRef: "2024 HL Section II Q1",
+    questionText: "Is de selfie-cultuur schadelijk voor het zelfbeeld dat mensen van zichzelf hebben of niet? ‘Het technologische evenbeeld, dat uitdrukking geeft aan een ideaal ik, kan door het effect van vele herhalingen op een gegeven moment échter lijken dan het spiegelbeeld in je badkamer.‘ (alinea 11) Wat bedoelt de auteur met deze opmerking? Geef je eigen visie in 100 tot 150 woorden op deze stelling.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 30, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task and prints nothing under it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEEL 2: COMMENTAAR",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2024 Higher Level — © State Examinations Commission.",
+    id: "nld-2024-hl-iii-1", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-minimum-300-woorden",
+    section: "III", questionRef: "2024 HL Section III Q1",
+    questionText: "Schrijf een opstel (minimum 300 woorden) over één van de volgende onderwerpen: Mijn zelfbeeld wordt mede bepaald door hoe ik me voordoe op sociale media.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2024 Higher Level — © State Examinations Commission.",
+    id: "nld-2024-hl-iii-2", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-minimum-300-woorden",
+    section: "III", questionRef: "2024 HL Section III Q2",
+    questionText: "Schrijf een opstel (minimum 300 woorden) over één van de volgende onderwerpen: Taal is de uitdrukking van cultuur. Zonder goed onderhoud van de taal verschraalt het denken. (Hella S. Haasse Nederlandse schrijfster 1918-2007)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC017ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2025 Higher Level — © State Examinations Commission.",
