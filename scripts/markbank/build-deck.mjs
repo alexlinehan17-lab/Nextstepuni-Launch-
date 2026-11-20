@@ -1960,7 +1960,7 @@ for (const c of cards) {
    * show them the article. Unresolvable means the card is DROPPED. */
   const unresolvedSource = sources.map((source) => {
     if (!source.sourceLabel) return null;
-    const fileid = deferredCard(SUBJECT_ID, c) && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
+    const fileid = deferredCard(SUBJECT_ID, c) && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german' || SUBJECT_ID === 'music')
       ? deferredDoc(SUBJECT_ID, c, source.sourceLabel)
       : resolveCompanionFileid(
         corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year ?? 2025,
