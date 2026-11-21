@@ -73,6 +73,29 @@ def source_paths(review):
             ROOT / 'paper-trail-corpus' / schemes / year / fileid)
 
 
+def deferred_question_anchors(pd, review_tasks):
+    """A deferred paper's printed questions 1-9 as answer-map anchors: the page and height of its printed "N." (the first
+    on the paper, at the left margin), running to the page foot, with the scheme pages its reviewed tasks cite as the crop."""
+    import re as _re
+    marks = {}
+    for index, page in enumerate(pd):
+        height = page.rect.height
+        for block in page.get_text('dict')['blocks']:
+            for line in block.get('lines', []):
+                text = ''.join(span['text'] for span in line['spans']).strip()
+                found = _re.match(r'^(\d)\.', text)
+                if found and line['bbox'][0] < 100 and found[1] not in marks:
+                    marks[found[1]] = (index + 1, round(line['bbox'][1] / height, 4))
+    anchors = []
+    for n in map(str, range(1, 10)):
+        assert n in marks, f'printed question {n} not found'
+        pages = sorted({region['p'] for t in review_tasks if str(t['questionNumber']) == n for region in t['schemeRegions']})
+        anchors.append(dict(conf=0.5, mode='crop', n=n, pP=marks[n][0], pY=[marks[n][1], 1.0],
+                            region=[dict(p=p, r=[0, 0, 1, 1]) for p in pages]))
+    assert [a['pP'] for a in anchors] == sorted(a['pP'] for a in anchors), 'printed questions out of page order'
+    return anchors
+
+
 def flag_deferred_answers(year, fileid):
     """The Paper Trail index item of a reviewed deferred edition carries "answers": 1, as June's reviewed editions do
     (build-index.py flags June's from their sidecars; a deferred edition's reviewed map is hosted in
@@ -258,9 +281,11 @@ def build(finalize=False):
                            if d['classification'] == 'finite-pool-one-card'}
         assert pooled_keys == classified_keys, f'{path}: unclassified or orphaned finite pool'
         if is_deferred(review):
-            # A deferred edition has no audited answer map to preserve: its sidecar holds its reviewed tasks only.
+            # A deferred edition has no audited answer map to preserve. Its sidecar is built here: each printed
+            # question an anchor, as June's maps hold them (its printed number "N." on the paper, its scheme pages as
+            # the crop), and its reviewed tasks after them, rooted in those anchors.
             sidecar = dict(band=[1, len(sd)], component='', copyright='© State Examinations Commission',
-                           paperFileid=fileid, schemeFileid=fileid, v=1, q=[])
+                           paperFileid=fileid, schemeFileid=fileid, v=1, q=deferred_question_anchors(pd, review['tasks']))
         else:
             sidecar_path = ROOT / 'scripts/paper-trail/answers' / str(year) / (fileid + '.json')
             sidecar = read(sidecar_path)
@@ -318,6 +343,8 @@ def build(finalize=False):
         sidecar['maxCropPages'] = max(
             [len(t['paperPages']) for t in tasks]
             + [len(q.get('paperRegion', [])) for q in sidecar['q']]
+            # A deferred edition's printed questions run from their own page to the next one's (deferred_question_anchors).
+            + ([b['pP'] - a['pP'] + 1 for a, b in zip(sidecar['q'][:9], sidecar['q'][1:9])] if is_deferred(review) else [])
         )
         write(ROOT / 'public/paper-answers' / str(year) / (fileid + '.json'), sidecar)
         reviewed_papers.append(f'accounting|{year}|{fileid}')

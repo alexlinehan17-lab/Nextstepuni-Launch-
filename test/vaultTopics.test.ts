@@ -19,6 +19,7 @@ import {
   topicsForPaper,
   browseTopicIdsForQuestion,
   paperKeyOf,
+  logicalQuestionIdentity,
 } from '../components/PaperTrail/topics';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 
@@ -65,10 +66,9 @@ describe('Topic Vault feed primitives', () => {
 
   it('topicsForSubject count equals distinct printed siblings, not translated editions', () => {
     for (const t of sampleTopics) {
-      const printed = new Set(
-        siblingsFor(sampleSubject, t.subtopicId)
-          .map(s => `${s.level}|${s.year}|${s.paperKey}|${s.n}`),
-      );
+      // The app's own printed-question identity (logicalQuestionIdentity): translated editions are one question, and a
+      // deferred sitting's paper, numbered as June's, is a paper of its own (Accounting 2022-2023 Higher deferred).
+      const printed = new Set(siblingsFor(sampleSubject, t.subtopicId).map(logicalQuestionIdentity));
       expect(printed.size, `${t.subtopicId} count drift`).toBe(t.count);
     }
   });
@@ -83,7 +83,7 @@ describe('Topic Vault feed primitives', () => {
   it('questionsForTopics dedups by paper+question across overlapping topics', () => {
     const ids = sampleTopics.map(t => t.subtopicId);
     const out = questionsForTopics(sampleSubject, ids);
-    const keys = out.map(q => `${q.level}|${q.year}|${q.paperKey}|${q.n}`);
+    const keys = out.map(logicalQuestionIdentity);
     expect(new Set(keys).size).toBe(keys.length);
   });
 
