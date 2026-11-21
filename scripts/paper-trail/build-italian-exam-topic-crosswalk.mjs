@@ -224,7 +224,11 @@ const canonicalForSemantic = semantic => {
   if (semantic === 'higher-reading-montagne' || semantic === 'higher-reading-treno') {
     return { primary: 'italian-5-2', secondary: 'italian-2-1' };
   }
-  if (semantic === 'higher-essay-montagne' || semantic === 'higher-essay-treno') {
+  if (
+    semantic === 'higher-essay-montagne'
+    || semantic === 'higher-essay-treno'
+    || semantic === 'higher-essay-historic'
+  ) {
     return { primary: 'italian-2-1' };
   }
   if (semantic === 'higher-writing-opinion') return { primary: 'italian-6-0' };
@@ -324,13 +328,42 @@ addCustom(italianPaper(2018, 'ordinary'), {
   end: 15,
 });
 
-// The classic 2019-2025 answer maps omit the complete writing section. These
-// card boundaries were checked against each official SEC booklet.
+// Section B3, "OR Essay on prescribed text: Answer A or B", is printed on page
+// 10 of every Higher booklet 2018-2025, with one title per prescribed novel.
+// The titles below are as printed there. These novels are superseded, so the
+// essays sit in the broad Literary bucket (see CURRICULUM_CROSSWALK) with the
+// same curriculum node, italian-2-1, as the 2026 essays.
+const HISTORIC_ESSAY_TITLES = {
+  2018: ['Bianca come il latte, rossa come il sangue', 'A ciascuno il suo'],
+  2019: ['Bianca come il latte, rossa come il sangue', 'A ciascuno il suo'],
+  2020: ['Bianca come il latte, rossa come il sangue', 'A ciascuno il suo'],
+  2021: ['Bianca come il latte, rossa come il sangue', 'A ciascuno il suo'],
+  2022: ['Bianca come il latte, rossa come il sangue', 'A ciascuno il suo'],
+  2023: ['Bianca come il latte, rossa come il sangue', 'A ciascuno il suo'],
+  2024: ['Marcovaldo', 'A ciascuno il suo'],
+  2025: ['Marcovaldo', 'A ciascuno il suo'],
+};
+const addHistoricEssays = (paper, numbers) => {
+  const titles = HISTORIC_ESSAY_TITLES[paper.year];
+  numbers.forEach((n, index) => addCustom(paper, {
+    n, label: `Section B · Essay · ${titles[index]}`,
+    semantic: 'higher-essay-historic', start: 10,
+  }));
+};
+
+// 2018 lists Section C as one card, 21, so its essays follow as 22 (A) and
+// 23 (B) and no existing card number moves.
+for (const lang of ['ev', 'iv']) addHistoricEssays(italianPaper(2018, 'higher', 'single', lang), ['22', '23']);
+
+// The classic 2019-2025 answer maps omit the essay and the complete writing
+// section. These card boundaries were checked against each official SEC
+// booklet; the essays are 21 (A) and 22 (B), as 2026 numbers them.
 for (let year = 2019; year <= 2025; year++) {
   const higherMatches = [...paperMap.values()].filter(paper => (
     paper.year === year && paper.level === 'higher' && paper.lang === 'ev' && paper.paperKey === 'single'
   ));
   for (const paper of higherMatches) {
+    addHistoricEssays(paper, ['21', '22']);
     const compact = year <= 2020;
     addCustom(paper, {
       n: 'C1', label: 'Section C · Question 1 · Opinion Piece',
@@ -605,7 +638,11 @@ const fallbackTopicIds = (paper, question) => {
     return [paper.level === 'higher' ? IDS.higher.conversations : IDS.ordinary.conversations];
   }
   if (semantic === 'higher-journalistic') return [IDS.higher.journalistic];
-  if (semantic === 'higher-literary-unseen' || semantic === 'higher-prescribed-historic') {
+  if (
+    semantic === 'higher-literary-unseen'
+    || semantic === 'higher-prescribed-historic'
+    || semantic === 'higher-essay-historic'
+  ) {
     return [IDS.higher.literary];
   }
   if (semantic === 'higher-reading-montagne') return [IDS.higher.readingMontagne];

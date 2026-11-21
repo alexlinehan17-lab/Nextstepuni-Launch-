@@ -142,7 +142,10 @@ export async function runAtlasModelChecks(): Promise<CheckResult> {
   // Check 2: every Atlas question in scope has a card.
   for (const s of LC) {
     const lang: PaperLang = s.id === 'irish' ? 'iv' : 'ev';
-    const inScope = questionsForTopics(s.id, null).filter(q => q.year >= 2010 && q.year <= 2026 && q.lang === lang);
+    // Music's "Unprepared Tests" booklets (U00, 2013-2016) are the practical exam: out of the count, like Art's
+    // practical briefs (coordinator, 19 Nov).
+    const inScope = questionsForTopics(s.id, null).filter(q => q.year >= 2010 && q.year <= 2026 && q.lang === lang
+      && !(s.id === 'music' && /^LC067[AG]LPU00(?:EV|IV)\.pdf$/.test(q.fileid)));
     if (!inScope.length) continue;
     const have = credited.get(s.id) ?? new Set();
     const missing: string[] = [];

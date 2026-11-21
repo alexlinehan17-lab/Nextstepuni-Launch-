@@ -3,7 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
+import { atlasHeadings, loadAllAtlasModels } from '../components/PaperTrail/atlasModel';
 import { CURRICULUM } from '../curriculum';
 import reference from '../data/examTopics/geography.json';
 import crosswalk from '../data/examTopics/geography-curriculum-crosswalk.json';
@@ -21,6 +22,9 @@ import { resolveCurriculumSpecification } from '../curriculumRegistry';
 
 const variants = ['higher', 'ordinary', 'higher-new-course', 'ordinary-new-course'] as const;
 const referenceTopics = variants.flatMap(variant => reference.variants[variant].topics);
+
+// The single model (Alex, 18 Nov 2026): the Atlas files each part by what it asks under one heading list.
+beforeAll(() => loadAllAtlasModels());
 
 describe('Geography exam-topic registry', () => {
   const taxonomy = examTopicTaxonomyFor('geography')!;
@@ -51,7 +55,10 @@ describe('Geography exam-topic registry', () => {
     expect(taxonomy.groups).toHaveLength(10);
     expect(taxonomy.topics.map(topic => [topic.id, topic.label, topic.sourcePath]))
       .toEqual(referenceTopics.map(topic => [topic.id, topic.label, topic.sourcePath]));
-    expect(topicsForSubject('geography')).toHaveLength(96);
+    // One list: the course examined in June 2027.
+    expect(topicsForSubject('geography').map(topic => topic.subtopicId).sort())
+      .toEqual(atlasHeadings('geography')!.map(topic => topic.id).sort());
+    expect(topicsForSubject('geography')).toHaveLength(52);
   });
 
   it('reconciles all 9,907 displayed associations without importing provider content', () => {

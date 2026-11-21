@@ -166,7 +166,8 @@ class Sitting:
         return os.path.join(SCHEMES_DIR, f'{self.year}-{self.lvl}.pdf')
 
     def fileid(self, kind):
-        return f'LC067{"A" if self.level == "higher" else "G"}LP{COMPONENT[kind]}EV.pdf'
+        """The booklet the Topic Atlas files this sitting's paper under (a deferred sitting's own booklet)."""
+        return f'LC067{"A" if self.level == "higher" else "G"}LP{COMPONENT[kind]}EV{"-deferred" if self.deferred else ""}.pdf'
 
     # ------------------------------------------------------------ gates ----
     def scheme(self, text):
@@ -266,9 +267,7 @@ class Atlas:
 
     def check(self, s, a, topic):
         """The card's topic must sit under a heading its printed question is filed under."""
-        if s.deferred:
-            return  # the Atlas files deferred papers once they are tagged; checked when they are
-        key = (s.year, s.level, s.fileid(a['paper']), s.question_number(a))
+        key =(s.year, s.level, s.fileid(a['paper']), s.question_number(a))
         filed = self.tags.get(key)
         if filed is None:
             raise SystemExit(f'{s.ref(a)}: no Topic Atlas question {key}')

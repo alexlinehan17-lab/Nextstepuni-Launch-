@@ -5,7 +5,8 @@
  * Final three whole-subject StudyClix hierarchy migrations.
  */
 
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
+import { atlasHeadings, loadAllAtlasModels } from '../components/PaperTrail/atlasModel';
 import { CURRICULUM } from '../curriculum';
 import homeReference from '../data/examTopics/home-economics.json';
 import homeCrosswalk from '../data/examTopics/home-economics-s-and-s-curriculum-crosswalk.json';
@@ -44,6 +45,9 @@ const expectEveryExistingCardMapped = (
     }
   }
 };
+
+// The single model (Alex, 18 Nov 2026): the Atlas files each part by what it asks under one heading list.
+beforeAll(() => loadAllAtlasModels());
 
 describe('Home Economics exam-topic registry', () => {
   const taxonomy = examTopicTaxonomyFor('home-economics-s-and-s')!;
@@ -179,7 +183,10 @@ describe('Physical Education exam-topic registry', () => {
     expect(taxonomy.topics.map(topic => [topic.id, topic.label, topic.sourcePath]))
       .toEqual(referenceTopics.map(topic => [topic.id, topic.label, topic.sourcePath]));
     expect(referenceTopics).toHaveLength(88);
-    expect(topicsForSubject('physical-education')).toHaveLength(88);
+    // One list: the course examined in June 2027.
+    expect(topicsForSubject('physical-education').map(topic => topic.subtopicId).sort())
+      .toEqual(atlasHeadings('physical-education')!.map(topic => topic.id).sort());
+    expect(topicsForSubject('physical-education')).toHaveLength(24);
   });
 
   it('reconciles every reachable page and records both broken reference pages honestly', () => {

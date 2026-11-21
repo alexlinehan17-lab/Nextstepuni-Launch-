@@ -1,0 +1,85 @@
+{
+ "note": "One-off known misses ruled by the coordinator (each id, its reason and the lane that clears it). test/atlasModelChecks.test.ts lets the known-miss list take exactly these ids and fails when a ruled entry stops missing, so this file only shrinks: when a lane clears one, take it off here and off atlasModelKnownMisses.json.",
+ "entries": [
+  {
+   "subject": "music",
+   "kind": "question",
+   "id": "2022|higher|LC067ALP008EV-deferred.pdf|1",
+   "reason": "asks held for the SEC recordings: the deferred Listening question has no card until its recording is named (CARD-STANDARD 10g; the deferred listing is unread).",
+   "owner": "Music lane: card the 87 held deferred listening asks when the audio-hosting lane names the deferred recordings",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "question",
+   "id": "2022|higher|LC067ALP008EV-deferred.pdf|2",
+   "reason": "asks held for the SEC recordings: the deferred Listening question has no card until its recording is named (CARD-STANDARD 10g; the deferred listing is unread).",
+   "owner": "Music lane: card the 87 held deferred listening asks when the audio-hosting lane names the deferred recordings",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "question",
+   "id": "2022|higher|LC067ALP008EV-deferred.pdf|3",
+   "reason": "asks held for the SEC recordings: the deferred Listening question has no card until its recording is named (CARD-STANDARD 10g; the deferred listing is unread).",
+   "owner": "Music lane: card the 87 held deferred listening asks when the audio-hosting lane names the deferred recordings",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "question",
+   "id": "2022|higher|LC067ALP008EV-deferred.pdf|4",
+   "reason": "asks held for the SEC recordings: the deferred Listening question has no card until its recording is named (CARD-STANDARD 10g; the deferred listing is unread).",
+   "owner": "Music lane: card the 87 held deferred listening asks when the audio-hosting lane names the deferred recordings",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "question",
+   "id": "2022|higher|LC067ALP008EV-deferred.pdf|6",
+   "reason": "asks held for the SEC recordings: the deferred Listening question has no card until its recording is named (CARD-STANDARD 10g; the deferred listing is unread).",
+   "owner": "Music lane: card the 87 held deferred listening asks when the audio-hosting lane names the deferred recordings",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "question",
+   "id": "2023|higher|LC067ALP008EV-deferred.pdf|1",
+   "reason": "asks held for the SEC recordings: the deferred Listening question has no card until its recording is named (CARD-STANDARD 10g; the deferred listing is unread).",
+   "owner": "Music lane: card the 87 held deferred listening asks when the audio-hosting lane names the deferred recordings",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "question",
+   "id": "2023|higher|LC067ALP008EV-deferred.pdf|2",
+   "reason": "asks held for the SEC recordings: the deferred Listening question has no card until its recording is named (CARD-STANDARD 10g; the deferred listing is unread).",
+   "owner": "Music lane: card the 87 held deferred listening asks when the audio-hosting lane names the deferred recordings",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "question",
+   "id": "2023|higher|LC067ALP008EV-deferred.pdf|3",
+   "reason": "asks held for the SEC recordings: the deferred Listening question has no card until its recording is named (CARD-STANDARD 10g; the deferred listing is unread).",
+   "owner": "Music lane: card the 87 held deferred listening asks when the audio-hosting lane names the deferred recordings",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "question",
+   "id": "2023|higher|LC067ALP008EV-deferred.pdf|4",
+   "reason": "asks held for the SEC recordings: the deferred Listening question has no card until its recording is named (CARD-STANDARD 10g; the deferred listing is unread).",
+   "owner": "Music lane: card the 87 held deferred listening asks when the audio-hosting lane names the deferred recordings",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "question",
+   "id": "2023|higher|LC067ALP008EV-deferred.pdf|6",
+   "reason": "asks held for the SEC recordings: the deferred Listening question has no card until its recording is named (CARD-STANDARD 10g; the deferred listing is unread).",
+   "owner": "Music lane: card the 87 held deferred listening asks when the audio-hosting lane names the deferred recordings",
+   "ruling": "coordinator ruling 20 Nov"
+  }
+ ]
+}

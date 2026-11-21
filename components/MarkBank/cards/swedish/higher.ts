@@ -1955,9 +1955,17 @@ export const CARDS: SecCard[] = [
     id: "swe-2017-hl-i-6", topicId: "swedish-0-1", conceptId: "baserat-artikeln-och-dina-egna-sikter",
     section: "I", questionRef: "2017 HL Section I Q6",
     questionText: "Baserat på artikeln och dina egna åsikter, diskutera huruvida du anser att AI erbjuder mer risker än möjligheter i framtiden.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ett utmärkt svar väger fördelar mot nackdelar med relevanta exempel och drar av detta resonemang en välavvägd slutsats. Relevanta idéer för AI kan innefatta: En historisk tillbakablick där oron över snabb teknikutveckling kommit på skam. Möjligheten att frigöra tid för arbetare, vilket kan leda till mer fritid och självförverkligande. Förhöjd livskvalitet genom att vardagslivet blir enklare. Tekniska och andra lösningar inom problemområden som miljö och resursfördelning som en superintelligens kan skapa skulle gynna mänskligheten. Relevanta idéer mot AI kan innefatta: Hotet från en superintelligens vars slutgiltiga mål man inte kan förutse. Arbetslöshet och utslagning som följer på friställande av arbetskraft. En brist på mening med tillvaron och ökande vilsenhet då traditionella värden som arbete försvinner. Hotet från vapenindustrin där kapprustning kan leda till väpnad konflikt.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ett utmärkt svar väger fördelar mot nackdelar med relevanta exempel och drar av detta resonemang en välavvägd slutsats.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme opens its answer with “Svar baserat på artikeln i sin helhet och kandidatens tankar och idéer.”" },
+    { id: "r-2", kind: "point", verbatim: "En historisk tillbakablick där oron över snabb teknikutveckling kommit på skam.", marks: null, contextNote: "The scheme prints this idea and the three below it under its heading “Relevanta idéer för AI kan innefatta:”." },
+    { id: "r-3", kind: "point", verbatim: "Möjligheten att frigöra tid för arbetare, vilket kan leda till mer fritid och självförverkligande.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Förhöjd livskvalitet genom att vardagslivet blir enklare.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Tekniska och andra lösningar inom problemområden som miljö och resursfördelning som en superintelligens kan skapa skulle gynna mänskligheten.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Hotet från en superintelligens vars slutgiltiga mål man inte kan förutse.", marks: null, contextNote: "The scheme prints this idea and the three below it under its heading “Relevanta idéer mot AI kan innefatta:”." },
+    { id: "r-7", kind: "point", verbatim: "Arbetslöshet och utslagning som följer på friställande av arbetskraft.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "En brist på mening med tillvaron och ökande vilsenhet då traditionella värden som arbete försvinner.", marks: null },
+    { id: "r-9", kind: "point", verbatim: "Hotet från vapenindustrin där kapprustning kan leda till väpnad konflikt.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2468,9 +2476,10 @@ export const CARDS: SecCard[] = [
     id: "swe-2019-hl-i-3", topicId: "swedish-0-1", conceptId: "vad-sags-facebook-artikeln",
     section: "I", questionRef: "2019 HL Section I Q3",
     questionText: "Vad sägs om Facebook i artikeln?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Det rör sig om kritik av Facebook och av Facebooks användare: Många som använder sig av nätet, Facebook inkluderat, är okritiska till hur de sprider spår på nätet. Gillanden på Facebook t.ex. ger mängder av information. Det gör \"big data\" ännu större och mäktigare och samtidigt finns det en risk att informationen kommer i fel händer. Facebook kritiseras också för att bestämmer vilka vi lyssnar på. Facebook styr uppmärksamhet på nätet åt ett bestämt håll, medan andra inte uppmärksammas.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Många som använder sig av nätet, Facebook inkluderat, är okritiska till hur de sprider spår på nätet. Gillanden på Facebook t.ex. ger mängder av information. Det gör \"big data\" ännu större och mäktigare och samtidigt finns det en risk att informationen kommer i fel händer.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme leads its answer with “Det rör sig om kritik av Facebook och av Facebooks användare:”." },
+    { id: "r-2", kind: "point", verbatim: "Facebook kritiseras också för att bestämmer vilka vi lyssnar på. Facebook styr uppmärksamhet på nätet åt ett bestämt håll, medan andra inte uppmärksammas.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
