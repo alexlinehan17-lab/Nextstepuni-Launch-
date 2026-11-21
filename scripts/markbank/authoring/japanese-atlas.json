@@ -1,5 +1,5 @@
 {
-"note": "Japanese Mark Bank card -> its printed Topic Atlas question (the Atlas numbers each paper straight through with labels that change by year). Built 19 Nov 2026 by the standard-model lane, two readers over every paper (stage2/japanese/JOIN.md); null where the Atlas lists no question containing the part.",
+"note": "Japanese Mark Bank card -> its printed Topic Atlas question (the Atlas numbers each paper straight through with labels that change by year). Built 19 Nov 2026 by the standard-model lane, two readers over every paper (stage2/japanese/JOIN.md); null where the Atlas lists no question containing the part. A card on a whole section also counts toward the rows the Atlas lists inside it ('also': 2010 Higher listening source-anchor rows, 2015 Higher Section LA rows 2-3, 2025/2026 Ordinary 2B item rows; coordinator, 21 Nov). 2024 Higher Section 2A Q4 has no row of its own: it joins row 9, whose crop prints Q3 and Q4 (coordinator, 21 Nov).",
 "cards": {
 "ja-2010-hl-1aa": {
 "fileid": "LC058ALP000EV.pdf",
@@ -151,55 +151,145 @@
 },
 "ja-2010-hl-la": {
 "fileid": "LC058ALPA00EV.pdf",
-"n": "10"
+"n": "10",
+"also": [
+"1",
+"2",
+"3",
+"4"
+]
 },
 "ja-2010-hl-lb-1": {
 "fileid": "LC058ALPA00EV.pdf",
-"n": "11"
+"n": "11",
+"also": [
+"5",
+"6",
+"7",
+"8",
+"9"
+]
 },
 "ja-2010-hl-lb-2": {
 "fileid": "LC058ALPA00EV.pdf",
-"n": "11"
+"n": "11",
+"also": [
+"5",
+"6",
+"7",
+"8",
+"9"
+]
 },
 "ja-2010-hl-lb-3": {
 "fileid": "LC058ALPA00EV.pdf",
-"n": "11"
+"n": "11",
+"also": [
+"5",
+"6",
+"7",
+"8",
+"9"
+]
 },
 "ja-2010-hl-lb-4": {
 "fileid": "LC058ALPA00EV.pdf",
-"n": "11"
+"n": "11",
+"also": [
+"5",
+"6",
+"7",
+"8",
+"9"
+]
 },
 "ja-2010-hl-lb-5": {
 "fileid": "LC058ALPA00EV.pdf",
-"n": "11"
+"n": "11",
+"also": [
+"5",
+"6",
+"7",
+"8",
+"9"
+]
 },
 "ja-2010-hl-lb-6": {
 "fileid": "LC058ALPA00EV.pdf",
-"n": "11"
+"n": "11",
+"also": [
+"5",
+"6",
+"7",
+"8",
+"9"
+]
 },
 "ja-2010-hl-lb-7": {
 "fileid": "LC058ALPA00EV.pdf",
-"n": "11"
+"n": "11",
+"also": [
+"5",
+"6",
+"7",
+"8",
+"9"
+]
 },
 "ja-2010-hl-lb-8-a": {
 "fileid": "LC058ALPA00EV.pdf",
-"n": "11"
+"n": "11",
+"also": [
+"5",
+"6",
+"7",
+"8",
+"9"
+]
 },
 "ja-2010-hl-lb-8-b": {
 "fileid": "LC058ALPA00EV.pdf",
-"n": "11"
+"n": "11",
+"also": [
+"5",
+"6",
+"7",
+"8",
+"9"
+]
 },
 "ja-2010-hl-lb-8-c": {
 "fileid": "LC058ALPA00EV.pdf",
-"n": "11"
+"n": "11",
+"also": [
+"5",
+"6",
+"7",
+"8",
+"9"
+]
 },
 "ja-2010-hl-lb-9-a": {
 "fileid": "LC058ALPA00EV.pdf",
-"n": "11"
+"n": "11",
+"also": [
+"5",
+"6",
+"7",
+"8",
+"9"
+]
 },
 "ja-2010-hl-lb-9-b": {
 "fileid": "LC058ALPA00EV.pdf",
-"n": "11"
+"n": "11",
+"also": [
+"5",
+"6",
+"7",
+"8",
+"9"
+]
 },
 "ja-2010-hl-lc1-1-a": {
 "fileid": "LC058ALPA00EV.pdf",
@@ -2363,7 +2453,11 @@
 },
 "ja-2015-hl-la": {
 "fileid": "LC058ALPA00EV.pdf",
-"n": "1"
+"n": "1",
+"also": [
+"2",
+"3"
+]
 },
 "ja-2015-hl-lb-1-i": {
 "fileid": "LC058ALPA00EV.pdf",
@@ -6315,7 +6409,7 @@
 },
 "ja-2024-hl-2a-4": {
 "fileid": "LC058ALP000BV.pdf",
-"n": null
+"n": "9"
 },
 "ja-2024-hl-2b-1": {
 "fileid": "LC058ALP000BV.pdf",
@@ -7075,7 +7169,14 @@
 },
 "ja-2025-ol-2b": {
 "fileid": "LC058GLP000BV.pdf",
-"n": "10"
+"n": "10",
+"also": [
+"11",
+"12",
+"13",
+"14",
+"15"
+]
 },
 "ja-2025-ol-2c": {
 "fileid": "LC058GLP000BV.pdf",
@@ -7591,7 +7692,14 @@
 },
 "ja-2026-ol-2b": {
 "fileid": "LC058GLP000BV.pdf",
-"n": "13"
+"n": "13",
+"also": [
+"14",
+"15",
+"16",
+"17",
+"18"
+]
 },
 "ja-2026-ol-2c": {
 "fileid": "LC058GLP000BV.pdf",
