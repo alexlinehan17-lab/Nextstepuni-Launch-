@@ -93,6 +93,8 @@ const ENGLISH_DEFERRED_PAPERS: string[] = ['2025|LC002ALP100EV-deferred.pdf', '2
   '2023|LC002ALP100EV-deferred.pdf', '2023|LC002ALP200EV-deferred.pdf',
   '2022|LC002ALP100EV-deferred.pdf', '2022|LC002ALP200EV-deferred.pdf',
   '2022|LC002GLP100EV-deferred.pdf', '2022|LC002GLP200EV-deferred.pdf'];
+const MUSIC_DEFERRED_PAPERS: string[] = ['2022|LC067ALP006EV-deferred.pdf', '2022|LC067ALP008EV-deferred.pdf',
+  '2023|LC067ALP006EV-deferred.pdf', '2023|LC067ALP008EV-deferred.pdf'];
 const ADMITTED_DEFERRED = new Set([
   'economics|2022|LC034ALP000EV-deferred.pdf',
   'history|2022|LC004ALP000EV-deferred.pdf',
@@ -132,6 +134,10 @@ const ADMITTED_DEFERRED = new Set([
   // French: the written paper of each deferred sitting (2022 and 2023, both levels). The listening booklets
   // join when their listening is carded, which waits on the deferred recordings.
   ...[2022, 2023].flatMap(year => ['ALP000', 'GLP000'].map(booklet => `french|${year}|LC010${booklet}BV-deferred.pdf`)),
+  // Music: the Composing and Listening booklets of each carded Higher deferred sitting (2022; 2023 English and
+  // Irish). The Listening booklet is carded for Q5 Part B; its other questions wait on the deferred recordings.
+  ...MUSIC_DEFERRED_PAPERS.map(paper => `music|${paper}`),
+  'music|2023|LC067ALP006IV-deferred.pdf', 'music|2023|LC067ALP008IV-deferred.pdf',
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {
@@ -183,5 +189,10 @@ describe('Topic Atlas stays on the reviewed June papers', () => {
       [2022, 2023].flatMap(year => Array.from({ length: 9 }, (_, i) => `${year}|${i + 1}`)).sort(),
     );
     expect(new Set(engineeringDeferred.map(q => q.fileid))).toEqual(new Set(['LC027ALP000EV-deferred.pdf']));
+    // Music's deferred booklets surface as their own six questions each, the 2023 Irish editions collapsed into
+    // their English twins.
+    const musicDeferred = questionsForTopics('music', null).filter(q => q.fileid.endsWith('-deferred.pdf'));
+    expect(musicDeferred).toHaveLength(6 * MUSIC_DEFERRED_PAPERS.length);
+    expect(new Set(musicDeferred.map(q => `${q.year}|${q.fileid}`))).toEqual(new Set(MUSIC_DEFERRED_PAPERS));
   });
 });

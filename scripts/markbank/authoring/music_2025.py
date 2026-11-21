@@ -125,7 +125,10 @@ SCHEME_CROPS = {
 
 
 # ------------------------------------------------------------ listening ----
-TOPIC_BY_Q = {1: 'music-2-15', 2: 'music-2-16', 3: 'music-2-14', 4: 'music-2-17', 6: 'music-2-7'}
+# Q6 (Aural Skills) files as every other year's does: music-2-4, and an ask that reads notation off the printed
+# score (the missing notes at X) music-2-3. Not music-2-7, which no Topic Atlas heading carries.
+TOPIC_BY_Q = {1: 'music-2-15', 2: 'music-2-16', 3: 'music-2-14', 4: 'music-2-17', 6: 'music-2-4'}
+NOTATION_ASKS = {'Q6(d)'}
 
 
 def address_bits(address):
@@ -256,7 +259,7 @@ def listening_rows(r):
 def listening_card(r):
     a = r['address']
     q, sec, letter, roman = address_bits(a)
-    topic = TOPIC_BY_Q.get(q) or ('music-2-2' if sec == 'A' else 'music-2-13')
+    topic = 'music-2-3' if a in NOTATION_ASKS else TOPIC_BY_Q.get(q) or ('music-2-2' if sec == 'A' else 'music-2-13')
     file_no = 1 if q <= 4 else 2
     fileid, which, length = AUDIO[file_no]
     question = paper('listening', r['questionText'])
