@@ -8,7 +8,8 @@ strand that matters is the paper's own task types, and a card is filed by the
 task it was printed as:
 
     portuguese-2-0  Reading Comprehension — one text, open questions (Parte I)
-    portuguese-2-2  Commentary (~300 words, the classic paper's second part)
+    portuguese-2-1  Guided Commentary on the Text (~100 words, Parte II)
+    portuguese-2-2  Discursive Commentary on a Quotation (~300 words, Parte III)
     portuguese-2-3  Reading Comprehension — two texts (Parte A, from 2022)
     portuguese-2-4  Written Production (Parte B, from 2022)
     portuguese-2-5  Listening Comprehension Test (its own booklet, from 2022)
@@ -39,7 +40,9 @@ import re
 # invents an id the deck does not hold.
 TOPICS = {'portuguese': {'classic_vocab': 'portuguese-2-0',
                 'classic_reading': 'portuguese-2-0',
-                'classic_essay': 'portuguese-2-2',
+                # Parte II is curriculum.ts's "Guided Commentary on the Text
+                # (~100 Words, Parte II)", as the Topic Atlas files it (2011)
+                'classic_essay': 'portuguese-2-1',
                 'classic_essay2': 'portuguese-2-2',
                 'reading': 'portuguese-2-3',
                 'writing': 'portuguese-2-4',
