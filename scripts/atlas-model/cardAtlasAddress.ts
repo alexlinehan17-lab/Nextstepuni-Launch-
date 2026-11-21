@@ -201,9 +201,10 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
     case 'hungarian': case 'latvian': case 'maltese': case 'modern-greek': case 'romanian': case 'slovakian':
     case 'slovenian': case 'swedish': case 'ukrainian': {
       // The Atlas lists only Part I (Q1-Q6) for these sixteen languages: a Section II or III card restarts at Q1 and
-      // must not land on Part I's question. Unlinked until the small-languages lane adds the Part II/III rows and its
-      // section-qualified rule (coordinator, 20 Nov); listed with that reason in test/fixtures/atlasModelRuledMisses.json.
-      if (/\bSection (?:II|III)\b/.test(ref)) return { fail: 'no-atlas-question', cls: 'inferred' };
+      // must not land on Part I's question (Modern Greek prints its sections as 1, 2, 3). Unlinked until the
+      // small-languages lane adds the Part II/III rows and its section-qualified rule (coordinator, 20 Nov); listed
+      // with that reason in test/fixtures/atlasModelRuledMisses.json.
+      if (/\bSection (?:II|III|2|3)\b/.test(ref)) return { fail: 'no-atlas-question', cls: 'inferred' };
       const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
     }
     case 'polish': case 'portuguese': {
