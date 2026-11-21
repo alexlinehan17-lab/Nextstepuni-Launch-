@@ -74,11 +74,9 @@ export function illustrationDocument(subjectId: string, source: Pick<CardSourceM
   return 'question paper';
 }
 
-const PageStackIcon = () => (
-  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" aria-hidden="true">
-    <rect x="6.25" y="3.25" width="13.5" height="17.5" rx="2.25" stroke="currentColor" strokeWidth="1.5" />
-    <path d="M3.75 7.25v11.1a2.9 2.9 0 0 0 2.9 2.9H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-    <path d="M9.25 8h7.5M9.25 11.25h7.5M9.25 14.5h5" stroke="currentColor" strokeWidth="1.35" strokeLinecap="round" />
+const OpenArrowIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M5 12h14M13 18l6-6M13 6l6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
@@ -126,6 +124,14 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   // the label already names the document, it is not named twice.
   const headingNamesMaterial = labelNamesMaterial
     || (isIllustration && source.label.toLowerCase().includes(materialLabel.toLowerCase()));
+  const opensRatherThanReads = isMathematicsPage || (isAccounting && isScheme) || source.kind === 'source-table'
+    || source.kind === 'marking-scheme' || source.kind === 'exam-material';
+  const triggerVerb = opensRatherThanReads ? 'Open' : 'Read';
+  const triggerAction = isMathematicsPage ? `Open ${materialLabel}` : isAccounting && isScheme ? 'Open worked solution'
+    : source.kind === 'source-table' ? 'Open accounting data' : `${triggerVerb} ${source.label}`;
+  const triggerExtent = isLinked ? `${itemCount} poems · published reading copies`
+    : isSupplementary ? `${itemCount} poems · supplementary reading editions`
+    : `${itemCount} printed ${itemCount === 1 ? 'page' : 'pages'} · ${source.kind === 'source-scheme' ? 'official worked solution' : isScheme ? 'official marking guidance' : source.kind === 'source-table' ? 'original tables and figures' : source.kind === 'source-data' ? 'original documents and graphics' : source.kind === 'exam-material' ? 'original examination material' : isIllustration ? 'official examination imagery' : 'exact examination text'}`;
   const [open, setOpen] = useState(false);
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
   const [failed, setFailed] = useState(false);
@@ -539,20 +545,20 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
           {RECORDING_UNPUBLISHED}
         </p>
       )}
+      {/* A Kobra Item row (approved by Alex, 21 November 2026): the title, one
+          muted line and a small outlined button that carries the verb. The
+          paper's own label is stored in capitals and often in the paper's
+          language, so it is spoken in the accessible name rather than drawn. */}
       <button type="button" ref={triggerRef}
         className={`mb-source-material-trigger${inline ? ' mb-source-material-trigger-inline' : ''}`}
+        aria-label={`${triggerAction}: ${source.title}, ${triggerExtent}`}
         onClick={show}>
-        <span className="mb-source-material-icon"><PageStackIcon /></span>
         <span className="mb-source-material-copy">
-          <span>{isMathematicsPage ? `Open ${materialLabel}` : isAccounting && isScheme ? 'Open worked solution' : source.kind === 'source-table' ? 'Open accounting data' : `${source.kind === 'marking-scheme' || source.kind === 'exam-material' ? 'Open' : 'Read'} ${source.label}`}</span>
           <strong>{source.title}</strong>
-          <small>
-            {isLinked ? `${itemCount} poems · published reading copies` : isSupplementary ? `${itemCount} poems · supplementary reading editions` :
-              `${itemCount} printed ${itemCount === 1 ? 'page' : 'pages'} · ${source.kind === 'source-scheme' ? 'official worked solution' : isScheme ? 'official marking guidance' : source.kind === 'source-table' ? 'original tables and figures' : source.kind === 'source-data' ? 'original documents and graphics' : source.kind === 'exam-material' ? 'original examination material' : isIllustration ? 'official examination imagery' : 'exact examination text'}`}
-          </small>
+          <small>{triggerExtent}</small>
         </span>
         <span className="mb-source-material-open" aria-hidden="true">
-          <ArrowIcon direction="right" />
+          {triggerVerb}<OpenArrowIcon />
         </span>
       </button>
       {modal}

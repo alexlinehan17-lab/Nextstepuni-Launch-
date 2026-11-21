@@ -11,8 +11,6 @@
 .pt-pe-task-actions button[aria-pressed=true], .pt-pe-task-reveal[aria-expanded=true] { background: #ed8547; color: #24211e; }
 .pt-pe-task-reveal { width: 100%; margin-bottom: 16px; }
 .pt-pe-task button:focus-visible { outline: 3px solid #d45b10; outline-offset: 3px; }
-.pt-pe-task .mb-source-material-trigger { width: 100%; margin: 0; border: 1.5px solid #383838; border-radius: 10px; color: #24211e; background: #fff; }
+.pt-pe-task .mb-source-material-trigger { width: 100%; margin: 0; padding: 16px 0; border-bottom: 1px solid var(--mb-border); }
 .pt-pe-task .mb-pe-rubric .mb-source-material-trigger { margin-bottom: 20px; }
-.pt-pe-task .mb-source-material-trigger:hover { background: #f9eee4; }
-.pt-pe-task .mb-source-material-copy > span, .pt-pe-task .mb-source-material-icon { color: #ac450d; }
 @media(max-width: 500px) { .pt-pe-task-heading, .pt-pe-task-body { padding: 16px; } .pt-pe-task-prompt { font-size: 18px; } }

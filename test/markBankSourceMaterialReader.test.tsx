@@ -89,3 +89,34 @@ describe('Mark Bank source reader provenance', () => {
     expect(screen.queryByRole('dialog')).toBeNull();
   });
 });
+
+// The row that opens the reader is a Kobra Item (CONVENTIONS.md §10b, approved 21 November 2026).
+describe('Mark Bank source row', () => {
+  it('draws the title, the extent and the verb, and speaks the paper label instead of drawing it', () => {
+    const source: CardSourceMaterial = {
+      kind: 'source-text', label: 'TEXT I: LESEVERSTÄNDNIS', title: 'Reading text — answer in English or Irish', pages: [2, 3],
+      attribution: 'State Examinations Commission', presentationNote: 'Official examination pages.',
+    };
+    const { container } = render(<SourceMaterialReader source={source} subjectId="german" year={2024} paperFileid="LC006ALP000EV" />);
+    const row = screen.getByRole('button', { name: /^Read TEXT I: LESEVERSTÄNDNIS/ });
+    expect(row.getAttribute('aria-label'))
+      .toBe('Read TEXT I: LESEVERSTÄNDNIS: Reading text — answer in English or Irish, 2 printed pages · exact examination text');
+    expect(row.querySelector('strong')?.textContent).toBe(source.title);
+    expect(row.querySelector('small')?.textContent).toBe('2 printed pages · exact examination text');
+    expect(row.querySelector('.mb-source-material-open')?.textContent).toBe('Read');
+    // The label is stored in capitals in the paper's own language, so it is not drawn; nor is the old icon tile.
+    expect(row.textContent).not.toContain(source.label);
+    expect(container.querySelector('.mb-source-material-icon')).toBeNull();
+  });
+
+  it('says Open on the handle for a marking scheme', () => {
+    const source: CardSourceMaterial = {
+      kind: 'marking-scheme', label: 'OFFICIAL MARKING SCHEME', title: 'Question 4', pages: [12],
+      attribution: 'State Examinations Commission', presentationNote: 'Official marking scheme page.',
+    };
+    render(<SourceMaterialReader source={source} subjectId="english" year={2010} paperFileid="LC002GLP200EV" documentKind="scheme" />);
+    const row = screen.getByRole('button', { name: /^Open OFFICIAL MARKING SCHEME/ });
+    expect(row.querySelector('.mb-source-material-open')?.textContent).toBe('Open');
+    expect(row.querySelector('small')?.textContent).toBe('1 printed page · official marking guidance');
+  });
+});

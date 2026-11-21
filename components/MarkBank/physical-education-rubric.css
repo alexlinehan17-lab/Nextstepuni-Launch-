@@ -1,7 +1,7 @@
 .mb-pe-rubric { color: var(--mb-ink); font: 400 13px/1.55 var(--font-sans, 'DM Sans', sans-serif); }
 .mb-pe-rubric .mb-pe-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .mb-pe-rubric .mb-pe-heading { font: 600 19px/1.35 var(--font-serif, 'Source Serif 4', Georgia, serif); margin: 6px 0 16px; }
-.mb-pe-rubric .mb-source-material-trigger { width: 100%; margin: 0 0 20px; border: 1.5px solid var(--mb-border); border-radius: 10px; }
+.mb-pe-rubric .mb-source-material-trigger { width: 100%; margin: 0 0 20px; padding: 16px 0; border-bottom: 1px solid var(--mb-border); }
 .mb-pe-requirement { margin: 0 0 10px; color: var(--mb-muted); font-size: 12px; }
 /* Each criterion: its name and running total, then its rows (claim-rows.css). */
 .mb-pe-criterion { border-top: 1px solid var(--mb-muted-border, #bdb7af); padding: 14px 0; display: grid; gap: 7px; }
