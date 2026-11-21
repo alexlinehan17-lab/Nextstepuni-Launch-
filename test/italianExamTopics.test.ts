@@ -54,14 +54,19 @@ describe('Italian exam-topic registry', () => {
       { label: 'Higher Level', level: 'higher' },
       { label: 'Ordinary Level', level: 'ordinary' },
     ]);
+    // The captured StudyClix menus, then NextStepUni's own Higher "Literature: earlier set texts" heading (ruling,
+    // 20 Nov 2026: a question on a book no longer prescribed never sits under a heading named for another book).
     expect(taxonomy.groups.map(group => group.topicIds)).toEqual([
-      italianReference.variants.higher.topics.map(topic => topic.id),
+      [...italianReference.variants.higher.topics.map(topic => topic.id), 'italian-higher-literature-earlier-set-texts'],
       italianReference.variants.ordinary.topics.map(topic => topic.id),
     ]);
-    expect(taxonomy.topics.map(topic => topic.id)).toEqual(referenceTopics.map(topic => topic.id));
-    expect(taxonomy.topics.map(topic => topic.label)).toEqual(referenceTopics.map(topic => topic.label));
-    expect(taxonomy.topics.map(topic => topic.sourcePath)).toEqual(referenceTopics.map(topic => topic.sourcePath));
-    expect(topicsForSubject('italian')).toHaveLength(24);
+    const captured = taxonomy.topics.slice(0, 24);
+    expect(captured.map(topic => topic.id)).toEqual(referenceTopics.map(topic => topic.id));
+    expect(captured.map(topic => topic.label)).toEqual(referenceTopics.map(topic => topic.label));
+    expect(captured.map(topic => topic.sourcePath)).toEqual(referenceTopics.map(topic => topic.sourcePath));
+    expect(taxonomy.topics.slice(24).map(topic => [topic.id, topic.label, topic.level]))
+      .toEqual([['italian-higher-literature-earlier-set-texts', 'Literature: earlier set texts', 'higher']]);
+    expect(topicsForSubject('italian')).toHaveLength(25);
   });
 
   it('bridges every practice topic to official Italian curriculum nodes', () => {
@@ -70,7 +75,7 @@ describe('Italian exam-topic registry', () => {
         .find(subject => subject.id === 'italian')!
         .strands.flatMap(strand => strand.subtopics.map(topic => topic.id)),
     );
-    expect(Object.keys(curriculumCrosswalk)).toHaveLength(24);
+    expect(Object.keys(curriculumCrosswalk)).toHaveLength(25);
     for (const topic of taxonomy.topics) {
       const ids = curriculumNodeIdsForExamTopic(topic.id);
       expect(ids, topic.id).toEqual(curriculumCrosswalk[topic.id as keyof typeof curriculumCrosswalk]);
@@ -128,18 +133,18 @@ describe('Italian exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'italian');
     expect(italianCrosswalk.summary).toMatchObject({
       localPaperVariants: 98,
-      localPhysicalMappings: 997,
-      distinctStudentFacingQuestions: 730,
+      localPhysicalMappings: 1019,
+      distinctStudentFacingQuestions: 748,
       referenceMappedLocalQuestions: 388,
-      retainedLocalQuestions: 609,
+      retainedLocalQuestions: 631,
       hostedPaperAnchorMaps: 98,
       preservedBaselineVariants: 32,
       preservedBaselineCards: 456,
       newlyAddedPaperVariants: 66,
-      newlyAddedPhysicalMappings: 541,
+      newlyAddedPhysicalMappings: 563,
     });
     expect(papers).toHaveLength(98);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(997);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1019);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
 
@@ -150,7 +155,15 @@ describe('Italian exam-topic registry', () => {
     expect(topicsForPaper('italian', 2018, 'ordinary', 'ev', 'LC013GLP000EV.pdf')?.q)
       .toContainEqual({ n: 'B5', primary: 'italian-5-4' });
     expect(topicsForPaper('italian', 2025, 'higher', 'ev', 'LC013ALP000BV.pdf')?.q.map(q => q.n))
-      .toEqual([...Array.from({ length: 20 }, (_, index) => String(index + 1)), 'C1', 'C2', 'C3']);
+      .toEqual([...Array.from({ length: 22 }, (_, index) => String(index + 1)), 'C1', 'C2', 'C3']);
+    expect(topicsForPaper('italian', 2017, 'higher', 'ev', 'LC013ALP000EV.pdf')?.q.slice(-3).map(q => q.n))
+      .toEqual(['21', '22', '23']);
+    expect(topicsForPaper('italian', 2018, 'higher', 'iv', 'LC013ALP000IV.pdf')?.q.slice(-3))
+      .toEqual([
+        { n: '21', primary: 'italian-6-0', secondary: 'italian-6-1' },
+        { n: '22', primary: 'italian-2-1' },
+        { n: '23', primary: 'italian-2-1' },
+      ]);
   });
 
   it('classifies every physical card into same-level reference buckets', () => {
@@ -180,13 +193,18 @@ describe('Italian exam-topic registry', () => {
       .toEqual(['italian-higher-essay-writing-le-otto-montagne']);
     expect(examTopicIdsForQuestion('italian', 'higher', 2018, 'main', '11', 'single', 'ev'))
       .toEqual(['italian-higher-reading-comprehension-literary-unseen']);
+    // Essays on superseded prescribed novels stay in the broad Literary bucket.
+    expect(examTopicIdsForQuestion('italian', 'higher', 2025, 'main', '22', 'single', 'ev'))
+      .toEqual(['italian-higher-reading-comprehension-literary-unseen']);
+    expect(examTopicIdsForQuestion('italian', 'higher', 2018, 'main', '23', 'single', 'ev'))
+      .toEqual(['italian-higher-reading-comprehension-literary-unseen']);
     expect(examTopicIdsForQuestion('italian', 'ordinary', 2018, 'main', 'B5', 'single', 'ev'))
       .toEqual(['italian-ordinary-ads-rulessafety-instructions']);
     expect(examTopicIdsForQuestion('italian', 'ordinary', 2026, 'main', '10', 'single', 'ev'))
       .toEqual(['italian-ordinary-writing-fill-in-a-form']);
   });
 
-  it('ships a finite paper-only fallback for all 997 cards', () => {
+  it('ships a finite paper-only fallback for all 1019 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'italian');
     for (const paper of papers) {
       const mapPath = path.join(
@@ -207,10 +225,10 @@ describe('Italian exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 730 distinct cards and keeps only the unpublished Oral bucket empty', () => {
+  it('surfaces all 748 distinct cards and keeps only the unpublished Oral bucket empty', () => {
     expect(subjectAtlasStats('italian')).toMatchObject({
-      questions: 730,
-      topics: 24,
+      questions: 748,
+      topics: 25,
       yearMin: 2010,
       yearMax: 2026,
     });

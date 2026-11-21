@@ -1,0 +1,2640 @@
+{
+ "year": 2010,
+ "level": "ordinary",
+ "deferred": false,
+ "readBy": "Claude (music lane helper), 20 Nov 2026",
+ "pagesWithoutAsks": {
+  "listening": [
+   1,
+   7,
+   12,
+   13,
+   14,
+   15,
+   16
+  ],
+  "composing": [
+   1,
+   2,
+   12,
+   13,
+   14,
+   15,
+   16
+  ]
+ },
+ "notCounted": [],
+ "asks": [
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 1(i)",
+   "page": 3,
+   "pages": [
+    2,
+    3
+   ],
+   "crop": [
+    0.08,
+    0.066,
+    0.95,
+    0.138
+   ],
+   "questionText": "This excerpt is taken from the",
+   "questionContext": "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.",
+   "excerptLine": "Excerpt 1. The music played by the piano in this excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.08,
+     0.066,
+     0.95,
+     0.138
+    ],
+    "what": "The question and its three printed options (introduction, main melody, Totentanz)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-11",
+   "marks": 2,
+   "schemePage": 5,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Introduction",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The lead-in is the Q. 1 line and its two printed bullets, each written with \"\\n• \"; the first bullet wraps over two printed lines (joined with a space). LAYOUT (as 2010 Higher Q1, the same page 2): page 2 prints the lead-in and the three excerpt headings (bold throughout) with the scores of Excerpts 1 and 2; page 3 prints the parts under bold headings \"Excerpt 1.\" / \"Excerpt 2.\" / \"Excerpt 3. There is no printed music for this section.\" (this booklet prints \"section\" where the Higher prints \"excerpt\"). The excerpt line is the full page-2 heading (it carries every word of the page-3 heading); every Q1 ask's pages are [2, 3]. The work title is italic in print. The scheme heads Q1's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 5) and names no work: joined by excerpt and wording, not by letter (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of three. Scheme section A \"(i) Introduction\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 1(ii)",
+   "page": 3,
+   "pages": [
+    2,
+    3
+   ],
+   "crop": [
+    0.08,
+    0.142,
+    0.95,
+    0.214
+   ],
+   "questionText": "Identify two instruments other than the piano heard in this excerpt.",
+   "questionContext": "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.",
+   "excerptLine": "Excerpt 1. The music played by the piano in this excerpt is printed below.",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-11",
+   "marks": 4,
+   "schemePage": 5,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "Instruments other than the piano heard in this excerpt",
+     "options": [
+      "Gong",
+      "Maracas",
+      "Tambourine",
+      "Bass drum",
+      "Cymbal",
+      "Piccolo",
+      "Violin",
+      "Cello"
+     ],
+     "claim": 2,
+     "per": 2,
+     "open": false,
+     "quote": [
+      "Any TWO correct instruments"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The lead-in is the Q. 1 line and its two printed bullets, each written with \"\\n• \"; the first bullet wraps over two printed lines (joined with a space). LAYOUT (as 2010 Higher Q1, the same page 2): page 2 prints the lead-in and the three excerpt headings (bold throughout) with the scores of Excerpts 1 and 2; page 3 prints the parts under bold headings \"Excerpt 1.\" / \"Excerpt 2.\" / \"Excerpt 3. There is no printed music for this section.\" (this booklet prints \"section\" where the Higher prints \"excerpt\"). The excerpt line is the full page-2 heading (it carries every word of the page-3 heading); every Q1 ask's pages are [2, 3]. The work title is italic in print. The scheme heads Q1's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 5) and names no work: joined by excerpt and wording, not by letter (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. \"two\" is bold in print; the numbered answer slots \"1.\" / \"2.\" are not written. Scheme \"Gong/Maracas/Tambourine/Bass drum/Cymbal/Piccolo/Violin/Cello\" (over two printed lines, the wrap falling inside \"Bass / drum\") at \"2 + 2\", then \"Any TWO correct instruments\": the ask wants two, so a menu split at the slashes (lane ruling), closed (\"Any TWO correct\", no \"valid\"; lane ruling), two at 2, the rule line quoted."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 1(iii)",
+   "page": 3,
+   "pages": [
+    2,
+    3
+   ],
+   "crop": [
+    0.08,
+    0.221,
+    0.95,
+    0.29
+   ],
+   "questionText": "In this excerpt the piano mostly plays",
+   "questionContext": "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.",
+   "excerptLine": "Excerpt 1. The music played by the piano in this excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.08,
+     0.221,
+     0.95,
+     0.29
+    ],
+    "what": "The question and its three printed options (scales, block chords, broken chords)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-11",
+   "marks": 2,
+   "schemePage": 5,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Broken Chords",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The lead-in is the Q. 1 line and its two printed bullets, each written with \"\\n• \"; the first bullet wraps over two printed lines (joined with a space). LAYOUT (as 2010 Higher Q1, the same page 2): page 2 prints the lead-in and the three excerpt headings (bold throughout) with the scores of Excerpts 1 and 2; page 3 prints the parts under bold headings \"Excerpt 1.\" / \"Excerpt 2.\" / \"Excerpt 3. There is no printed music for this section.\" (this booklet prints \"section\" where the Higher prints \"excerpt\"). The excerpt line is the full page-2 heading (it carries every word of the page-3 heading); every Q1 ask's pages are [2, 3]. The work title is italic in print. The scheme heads Q1's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 5) and names no work: joined by excerpt and wording, not by letter (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of three. Scheme \"Broken Chords\" 2 (capital C as printed). Excerpt 1: 2 + 4 + 2 = 8, the scheme's section A sub-total."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 2(i)",
+   "page": 3,
+   "pages": [
+    2,
+    3
+   ],
+   "crop": [
+    0.08,
+    0.322,
+    0.95,
+    0.391
+   ],
+   "questionText": "The instrument which plays the melody at X is",
+   "questionContext": "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.",
+   "excerptLine": "Excerpt 2.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.08,
+     0.322,
+     0.95,
+     0.391
+    ],
+    "what": "The question and its three printed options (cello, violin, marimba)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-11",
+   "marks": 2,
+   "schemePage": 5,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Violin",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The lead-in is the Q. 1 line and its two printed bullets, each written with \"\\n• \"; the first bullet wraps over two printed lines (joined with a space). LAYOUT (as 2010 Higher Q1, the same page 2): page 2 prints the lead-in and the three excerpt headings (bold throughout) with the scores of Excerpts 1 and 2; page 3 prints the parts under bold headings \"Excerpt 1.\" / \"Excerpt 2.\" / \"Excerpt 3. There is no printed music for this section.\" (this booklet prints \"section\" where the Higher prints \"excerpt\"). The excerpt line is the full page-2 heading (it carries every word of the page-3 heading); every Q1 ask's pages are [2, 3]. The work title is italic in print. The scheme heads Q1's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 5) and names no work: joined by excerpt and wording, not by letter (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. \"X\" is bold in print. X brackets the opening bars of the Excerpt 2 melody printed on page 2 (treble clef, changing 6/4, 3/4 and 3/2 time signatures). JUDGEMENT CALL: a figure cannot span two pages, so the figure is the question and its three printed options (what the ask is answered from); the X bracket stays on the page-2 score, which the card's source pages carry. Scheme section B \"(i) Violin\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 2(ii)",
+   "page": 3,
+   "pages": [
+    2,
+    3
+   ],
+   "crop": [
+    0.08,
+    0.393,
+    0.95,
+    0.513
+   ],
+   "questionText": "Identify the instrumental technique illustrated below and name one instrument with which it is associated in this work.",
+   "questionContext": "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.",
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.08,
+     0.393,
+     0.95,
+     0.513
+    ],
+    "what": "The question, the illustrated technique (a note on a stave marked pizz. and +), and its two rows of printed options: Technique (col legno, harmonics, left hand pizzicato) and Instrument (cello, flute, piano)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-11",
+   "marks": 4,
+   "schemePage": 5,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Left hand pizzicato",
+     "marks": 2
+    },
+    {
+     "type": "point",
+     "text": "Cello",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The lead-in is the Q. 1 line and its two printed bullets, each written with \"\\n• \"; the first bullet wraps over two printed lines (joined with a space). LAYOUT (as 2010 Higher Q1, the same page 2): page 2 prints the lead-in and the three excerpt headings (bold throughout) with the scores of Excerpts 1 and 2; page 3 prints the parts under bold headings \"Excerpt 1.\" / \"Excerpt 2.\" / \"Excerpt 3. There is no printed music for this section.\" (this booklet prints \"section\" where the Higher prints \"excerpt\"). The excerpt line is the full page-2 heading (it carries every word of the page-3 heading); every Q1 ask's pages are [2, 3]. The work title is italic in print. The scheme heads Q1's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 5) and names no work: joined by excerpt and wording, not by letter (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. One sentence over two printed lines (joined with a space). Below it, the illustrated technique and two tick-box rows labelled \"Technique:\" and \"Instrument:\" (answer-slot labels; the options stay in the figure). JUDGEMENT CALL: the technique is read off the printed illustration and the instrument is the one it is \"associated [with] in this work\", set-work knowledge rather than the excerpt played, so needsRecording false and no excerpt line (as 2011 Ordinary Q1 Excerpt 3(iii) and Q2(v)); it is printed under Excerpt 2. SCHEME LAYOUT: section B prints \"(i) Violin 2\", then \"Left hand pizzicato 2\" on a line with no part label, then \"(ii) Cello 2\" and \"(iii) Maracas 2\" (sub-total 8). \"Left hand pizzicato\" is one of (ii)'s Technique options and none of (i)'s (cello, violin, marimba), so it belongs to (ii); the scheme's \"(ii)\" label stands one line low, beside the Instrument answer. Joined by wording (law 4): (ii) = \"Left hand pizzicato\" 2 + \"Cello\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 2(iii)",
+   "page": 3,
+   "pages": [
+    2,
+    3
+   ],
+   "crop": [
+    0.08,
+    0.515,
+    0.95,
+    0.584
+   ],
+   "questionText": "Which of these percussion instruments is heard in this excerpt?",
+   "questionContext": "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.",
+   "excerptLine": "Excerpt 2.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.08,
+     0.515,
+     0.95,
+     0.584
+    ],
+    "what": "The question and its three printed options (crotales, maracas, bass drum)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-11",
+   "marks": 2,
+   "schemePage": 5,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Maracas",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The lead-in is the Q. 1 line and its two printed bullets, each written with \"\\n• \"; the first bullet wraps over two printed lines (joined with a space). LAYOUT (as 2010 Higher Q1, the same page 2): page 2 prints the lead-in and the three excerpt headings (bold throughout) with the scores of Excerpts 1 and 2; page 3 prints the parts under bold headings \"Excerpt 1.\" / \"Excerpt 2.\" / \"Excerpt 3. There is no printed music for this section.\" (this booklet prints \"section\" where the Higher prints \"excerpt\"). The excerpt line is the full page-2 heading (it carries every word of the page-3 heading); every Q1 ask's pages are [2, 3]. The work title is italic in print. The scheme heads Q1's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 5) and names no work: joined by excerpt and wording, not by letter (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of three. Scheme \"(iii) Maracas\" 2. Excerpt 2: 2 + 4 + 2 = 8, the scheme's section B sub-total."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 3(i)",
+   "page": 3,
+   "pages": [
+    2,
+    3
+   ],
+   "crop": [
+    0.08,
+    0.619,
+    0.95,
+    0.735
+   ],
+   "questionText": "The melody heard in this excerpt is based on a\nIt is played",
+   "questionContext": "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.",
+   "excerptLine": "Excerpt 3. There is no printed music for this section.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.08,
+     0.619,
+     0.95,
+     0.735
+    ],
+    "what": "The question and its three printed options (3 note cell, 5 note cell, 7 note cell), then \"It is played\" and its three printed options (pizzicato, staccato, legato)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-11",
+   "marks": 4,
+   "schemePage": 5,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "3 note cell",
+     "marks": 2
+    },
+    {
+     "type": "point",
+     "text": "Legato",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The lead-in is the Q. 1 line and its two printed bullets, each written with \"\\n• \"; the first bullet wraps over two printed lines (joined with a space). LAYOUT (as 2010 Higher Q1, the same page 2): page 2 prints the lead-in and the three excerpt headings (bold throughout) with the scores of Excerpts 1 and 2; page 3 prints the parts under bold headings \"Excerpt 1.\" / \"Excerpt 2.\" / \"Excerpt 3. There is no printed music for this section.\" (this booklet prints \"section\" where the Higher prints \"excerpt\"). The excerpt line is the full page-2 heading (it carries every word of the page-3 heading); every Q1 ask's pages are [2, 3]. The work title is italic in print. The scheme heads Q1's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 5) and names no work: joined by excerpt and wording, not by letter (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Two tick-box lines under one label, printed apart (the options sit between): joined with \"\\n\". Scheme section C \"(i) 3 note cell\" 2 and, on the next line with no part label, \"Legato\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 3(ii)",
+   "page": 3,
+   "pages": [
+    2,
+    3
+   ],
+   "crop": [
+    0.08,
+    0.752,
+    0.95,
+    0.821
+   ],
+   "questionText": "In this excerpt the flute plays",
+   "questionContext": "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.",
+   "excerptLine": "Excerpt 3. There is no printed music for this section.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.08,
+     0.752,
+     0.95,
+     0.821
+    ],
+    "what": "The question and its three printed options (repeated notes, chord clusters, scales)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-11",
+   "marks": 2,
+   "schemePage": 5,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Scales",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The lead-in is the Q. 1 line and its two printed bullets, each written with \"\\n• \"; the first bullet wraps over two printed lines (joined with a space). LAYOUT (as 2010 Higher Q1, the same page 2): page 2 prints the lead-in and the three excerpt headings (bold throughout) with the scores of Excerpts 1 and 2; page 3 prints the parts under bold headings \"Excerpt 1.\" / \"Excerpt 2.\" / \"Excerpt 3. There is no printed music for this section.\" (this booklet prints \"section\" where the Higher prints \"excerpt\"). The excerpt line is the full page-2 heading (it carries every word of the page-3 heading); every Q1 ask's pages are [2, 3]. The work title is italic in print. The scheme heads Q1's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 5) and names no work: joined by excerpt and wording, not by letter (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of three (\"flute\" printed with an fl ligature). Scheme \"(ii) Scales\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 3(iii)",
+   "page": 3,
+   "pages": [
+    2,
+    3
+   ],
+   "crop": [
+    0.08,
+    0.826,
+    0.95,
+    0.932
+   ],
+   "questionText": "A compositional technique used in this work is subtraction. Explain.",
+   "questionContext": "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.",
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-2-11",
+   "marks": 3,
+   "schemePage": 5,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 3,
+     "steps": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "quote": [
+      "Any valid description of subtraction",
+      "(up to 3 marks)"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The lead-in is the Q. 1 line and its two printed bullets, each written with \"\\n• \"; the first bullet wraps over two printed lines (joined with a space). LAYOUT (as 2010 Higher Q1, the same page 2): page 2 prints the lead-in and the three excerpt headings (bold throughout) with the scores of Excerpts 1 and 2; page 3 prints the parts under bold headings \"Excerpt 1.\" / \"Excerpt 2.\" / \"Excerpt 3. There is no printed music for this section.\" (this booklet prints \"section\" where the Higher prints \"excerpt\"). The excerpt line is the full page-2 heading (it carries every word of the page-3 heading); every Q1 ask's pages are [2, 3]. The work title is italic in print. The scheme heads Q1's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 5) and names no work: joined by excerpt and wording, not by letter (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Set-work knowledge about the work (\"used in this work\"), not the excerpt played, so needsRecording false and no excerpt line (as 2011 Ordinary Q1 Excerpt 3(iii)); printed under Excerpt 3. One printed line, two answer lines. The scheme prints no description, only \"Any valid description of subtraction\" / \"(up to 3 marks)\" 3: a rule row, steps 0-3 on its printed \"up to\". Excerpt 3: 4 + 2 + 3 = 9; Q1 printed total (25) on page 3: 8 + 8 + 9."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(i)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.05,
+    0.41,
+    0.95,
+    0.44
+   ],
+   "questionText": "Name the movement from which this excerpt is taken",
+   "questionContext": "An excerpt from Symphonie Fantastique by Berlioz will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The full excerpt is 32 bars long. The outline score of bars 1–16 of the excerpt is printed below.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-10",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Marche au Supplice / March to the Scaffold / 4th mvt / 4",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 2 line and its three printed bullets are the lead-in, each bullet with \"\\n• \" (the \"Answer the following questions:\" bullet is printed below the score; the same lines as 2010 Higher Q2). The title is italic in print. The scheme prints no title for Q2 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. No full stop is printed; the answer blank that ends the line is not written. Scheme \"Marche au Supplice / March to the Scaffold / 4th mvt / 4\" 2: one printed line of alternatives and the ask wants one, so one point row (lane ruling); the \"th\" of \"4th\" is superscript in the scheme, plain in its text layer, written plain (as 2010 Higher Q2(i))."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(ii)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.05,
+    0.445,
+    0.95,
+    0.536
+   ],
+   "questionText": "The theme heard in bars 1–8 is based on",
+   "questionContext": "An excerpt from Symphonie Fantastique by Berlioz will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The full excerpt is 32 bars long. The outline score of bars 1–16 of the excerpt is printed below.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 4,
+    "box": [
+     0.05,
+     0.445,
+     0.95,
+     0.536
+    ],
+    "what": "The question and its four printed options in two rows (a descending arpeggio, a descending scale, an ascending arpeggio, an ascending scale)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-10",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "A descending scale",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 2 line and its three printed bullets are the lead-in, each bullet with \"\\n• \" (the \"Answer the following questions:\" bullet is printed below the score; the same lines as 2010 Higher Q2). The title is italic in print. The scheme prints no title for Q2 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of four. Scheme \"A descending scale\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(iii)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.05,
+    0.547,
+    0.95,
+    0.609
+   ],
+   "questionText": "The instrument heard for the first time at X on the score is",
+   "questionContext": "An excerpt from Symphonie Fantastique by Berlioz will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The full excerpt is 32 bars long. The outline score of bars 1–16 of the excerpt is printed below.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 4,
+    "box": [
+     0.05,
+     0.112,
+     0.95,
+     0.609
+    ],
+    "what": "The outline score of bars 1-16 (bass clef, two flats, 4/4) with X bracketed over bars 9-11, the bullet and parts (i) and (ii) below it, and the question with its three printed options (flute, bassoon, clarinet)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-10",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Bassoon",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 2 line and its three printed bullets are the lead-in, each bullet with \"\\n• \" (the \"Answer the following questions:\" bullet is printed below the score; the same lines as 2010 Higher Q2). The title is italic in print. The scheme prints no title for Q2 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of three (\"first\" printed with an fi ligature, \"flute\" with an fl). X is printed on the score above, so the figure runs from the score down to the options (as 2010 Higher Q2(ii)); it shows parts (i) and (ii) on the way, questions only. Scheme \"Bassoon\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(iv)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.05,
+    0.611,
+    0.95,
+    0.742
+   ],
+   "questionText": "In bars 17–32 of this excerpt, the theme is played on\nThe tonality of these bars is",
+   "questionContext": "An excerpt from Symphonie Fantastique by Berlioz will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The full excerpt is 32 bars long. The outline score of bars 1–16 of the excerpt is printed below.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 4,
+    "box": [
+     0.05,
+     0.611,
+     0.95,
+     0.742
+    ],
+    "what": "The question and its three printed options (violins, cellos, basses), then \"The tonality of these bars is\" and its three printed options (major, minor, modal)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-10",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Violins",
+     "marks": 1
+    },
+    {
+     "type": "point",
+     "text": "Major",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 2 line and its three printed bullets are the lead-in, each bullet with \"\\n• \" (the \"Answer the following questions:\" bullet is printed below the score; the same lines as 2010 Higher Q2). The title is italic in print. The scheme prints no title for Q2 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Two tick-box lines under one label, printed apart (the options sit between): joined with \"\\n\". Scheme \"Violins\" 1 and, on the next line with no part label, \"Major\" 1."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(v)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.05,
+    0.747,
+    0.95,
+    0.856
+   ],
+   "questionText": "Symphonie Fantastique by Berlioz is an example of programme music. Explain.",
+   "questionContext": "An excerpt from Symphonie Fantastique by Berlioz will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The full excerpt is 32 bars long. The outline score of bars 1–16 of the excerpt is printed below.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-2-10",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Any valid description of programme music",
+      "(up to 2 marks)"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 2 line and its three printed bullets are the lead-in, each bullet with \"\\n• \" (the \"Answer the following questions:\" bullet is printed below the score; the same lines as 2010 Higher Q2). The title is italic in print. The scheme prints no title for Q2 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Set-work knowledge about the whole work (it names the symphony), not the excerpt played, so needsRecording false (as 2011 Ordinary Q2(v)). The title is italic in print. The scheme prints no description, only \"Any valid description of programme music\" / \"(up to 2 marks)\" 2: a rule row, steps 0-2. Q2: 2 + 2 + 2 + 2 + 2 = 10, the printed (10)."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(i)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.05,
+    0.402,
+    0.95,
+    0.552
+   ],
+   "questionText": "This excerpt is taken from the\nThe time signature of this movement is",
+   "questionContext": "An excerpt from Piano Concerto in A Major K488 by Mozart will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of the first eight bars of the excerpt is printed below.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.05,
+     0.402,
+     0.95,
+     0.552
+    ],
+    "what": "The question and its three printed options (first movement, second movement, third movement), then \"The time signature of this movement is\" and its four printed time-signature options (2/4, 3/4, 6/8, 4/4), drawn as music-font time signatures",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Second movement",
+     "marks": 1
+    },
+    {
+     "type": "point",
+     "text": "6/8",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 3 line and its three printed bullets are the lead-in, each bullet with \"\\n• \" (the \"Answer the following questions:\" bullet is printed below the score; \"first\" printed with an fi ligature). The title \"Piano Concerto in A Major\" is italic in print, \"K488\" roman. The scheme prints no title for Q3 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Two tick-box lines under one label, printed apart (the options sit between): joined with \"\\n\". The four time signatures are printed in a music font with no text; they stay in the figure (the printed score above carries no time signature). Scheme \"(i) Second movement\" 1 and, on the next line with no part label, \"6/8\" 1 (typed as text in the scheme)."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(ii)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.05,
+    0.561,
+    0.95,
+    0.624
+   ],
+   "questionText": "Name one instrument playing the melody at the start of this excerpt.\nIn which bar is the piano heard for the first time?",
+   "questionContext": "An excerpt from Piano Concerto in A Major K488 by Mozart will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of the first eight bars of the excerpt is printed below.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.05,
+     0.112,
+     0.95,
+     0.345
+    ],
+    "what": "The printed outline score of the first eight bars (treble clef, three sharps, no time signature printed), its bars numbered 1-8",
+    "includesPrompt": false
+   },
+   "topicId": "music-2-9",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Flute (at start) OR Clarinet (bar 3)",
+     "marks": 1
+    },
+    {
+     "type": "point",
+     "text": "Bar 4",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 3 line and its three printed bullets are the lead-in, each bullet with \"\\n• \" (the \"Answer the following questions:\" bullet is printed below the score; \"first\" printed with an fi ligature). The title \"Piano Concerto in A Major\" is italic in print, \"K488\" roman. The scheme prints no title for Q3 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Two written asks under one label, each with its answer blank on its own line (the blanks are not written): joined with \"\\n\" (as 2014 Ordinary Q2(ii)). \"one\" is bold; \"first\" printed with an fi ligature. The bar question needs the printed bar numbers, so the figure is the score (question typed, includesPrompt false). Scheme \"(ii) Flute (at start) OR Clarinet (bar 3)\" 1 (alternatives on one printed line: one row) and, on the next line with no part label, \"Bar 4\" 1."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(iii)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.05,
+    0.63,
+    0.95,
+    0.698
+   ],
+   "questionText": "In bars 1–8, a feature of the accompaniment is",
+   "questionContext": "An excerpt from Piano Concerto in A Major K488 by Mozart will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of the first eight bars of the excerpt is printed below.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.05,
+     0.63,
+     0.95,
+     0.698
+    ],
+    "what": "The question and its three printed options (dotted rhythm, syncopation, triplets)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Triplets",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 3 line and its three printed bullets are the lead-in, each bullet with \"\\n• \" (the \"Answer the following questions:\" bullet is printed below the score; \"first\" printed with an fi ligature). The title \"Piano Concerto in A Major\" is italic in print, \"K488\" roman. The scheme prints no title for Q3 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of three. Scheme \"Triplets\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(iv)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.05,
+    0.699,
+    0.95,
+    0.768
+   ],
+   "questionText": "Which one of the following features is heard in the music after bar 8?",
+   "questionContext": "An excerpt from Piano Concerto in A Major K488 by Mozart will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of the first eight bars of the excerpt is printed below.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.05,
+     0.699,
+     0.95,
+     0.768
+    ],
+    "what": "The question and its three printed options (pizzicato strings, descending scales, canon)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Descending scales",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 3 line and its three printed bullets are the lead-in, each bullet with \"\\n• \" (the \"Answer the following questions:\" bullet is printed below the score; \"first\" printed with an fi ligature). The title \"Piano Concerto in A Major\" is italic in print, \"K488\" roman. The scheme prints no title for Q3 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of three; \"one\" is bold in print. Scheme \"Descending scales\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(v)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.05,
+    0.786,
+    0.95,
+    0.884
+   ],
+   "questionText": "This excerpt is taken from a Piano Concerto. Explain.",
+   "questionContext": "An excerpt from Piano Concerto in A Major K488 by Mozart will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of the first eight bars of the excerpt is printed below.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-9",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Any valid explanation of Piano Concerto",
+      "(up to 2 marks)"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 3 line and its three printed bullets are the lead-in, each bullet with \"\\n• \" (the \"Answer the following questions:\" bullet is printed below the score; \"first\" printed with an fi ligature). The title \"Piano Concerto in A Major\" is italic in print, \"K488\" roman. The scheme prints no title for Q3 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. It explains a feature of the excerpt played (\"This excerpt is taken from ...\"), so needsRecording true (as 2011 Ordinary Q1 Excerpt 2(iii)). The scheme prints no explanation, only \"Any valid explanation of Piano Concerto\" / \"(up to 2 marks)\" 2: a rule row, steps 0-2. Q3: 2 + 2 + 2 + 2 + 2 = 10, the printed (10)."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(i)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.05,
+    0.327,
+    0.95,
+    0.463
+   ],
+   "questionText": "The time signature of the music in this excerpt is\nThe instruments heard in this excerpt are",
+   "questionContext": "An excerpt from She’s Leaving Home by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics are printed below. 1. Friday morning at nine o’clock she is far away. 2. Waiting to keep the appointment she made. 3. Meeting the man from the motor trade. 4. She (What did we do that was wrong?) 5. Is having (We didn’t know it was wrong.) 6. Fun (Fun is the one thing that money can’t buy) 7. Something inside that was always denied, (Bye, bye) for so many years. 8. She’s leaving home. (Bye bye.)\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 6,
+    "box": [
+     0.05,
+     0.327,
+     0.95,
+     0.463
+    ],
+    "what": "The question and its three printed time-signature options (2/4, 3/4, 4/4), drawn as music-font time signatures, then \"The instruments heard in this excerpt are\" and its three printed options (strings and guitar, strings and harpsichord, strings and harp)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-12",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "3/4",
+     "marks": 1
+    },
+    {
+     "type": "point",
+     "text": "Strings and harp",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 4 line, its bullets and the printed lyrics (labels \"1.\" to \"8.\" as printed, each label and its words, joined with spaces; curly apostrophes as printed; line 6 ends \"buy)\" with no full stop in this booklet, where the Higher prints \"buy.)\") are the lead-in. The song title is italic in print. The scheme prints no title for Q4 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Two tick-box lines under one label, printed apart (the options sit between): joined with \"\\n\". Scheme \"(i) 3/4\" 1 (typed as text) and, on the next line with no part label, \"Strings and harp\" 1."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(ii)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.05,
+    0.481,
+    0.95,
+    0.548
+   ],
+   "questionText": "At the end of line 1, the violins and cellos play in",
+   "questionContext": "An excerpt from She’s Leaving Home by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics are printed below. 1. Friday morning at nine o’clock she is far away. 2. Waiting to keep the appointment she made. 3. Meeting the man from the motor trade. 4. She (What did we do that was wrong?) 5. Is having (We didn’t know it was wrong.) 6. Fun (Fun is the one thing that money can’t buy) 7. Something inside that was always denied, (Bye, bye) for so many years. 8. She’s leaving home. (Bye bye.)\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 6,
+    "box": [
+     0.05,
+     0.481,
+     0.95,
+     0.548
+    ],
+    "what": "The question and its three printed options (unison, contrary motion, octaves)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-12",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Contrary motion",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 4 line, its bullets and the printed lyrics (labels \"1.\" to \"8.\" as printed, each label and its words, joined with spaces; curly apostrophes as printed; line 6 ends \"buy)\" with no full stop in this booklet, where the Higher prints \"buy.)\") are the lead-in. The song title is italic in print. The scheme prints no title for Q4 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of three. Scheme \"Contrary motion\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(iii)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.05,
+    0.566,
+    0.95,
+    0.695
+   ],
+   "questionText": "The voices in lines 4–7 sing in\nBriefly explain your answer",
+   "questionContext": "An excerpt from She’s Leaving Home by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics are printed below. 1. Friday morning at nine o’clock she is far away. 2. Waiting to keep the appointment she made. 3. Meeting the man from the motor trade. 4. She (What did we do that was wrong?) 5. Is having (We didn’t know it was wrong.) 6. Fun (Fun is the one thing that money can’t buy) 7. Something inside that was always denied, (Bye, bye) for so many years. 8. She’s leaving home. (Bye bye.)\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 6,
+    "box": [
+     0.05,
+     0.566,
+     0.95,
+     0.662
+    ],
+    "what": "The question, its three printed options (harmony, unison, counterpoint) and the line \"Briefly explain your answer\"",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-12",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Counterpoint / Accept Harmony if the reason is valid",
+     "marks": 1
+    },
+    {
+     "type": "rule",
+     "marks": 1,
+     "steps": [
+      0,
+      1
+     ],
+     "quote": [
+      "Any valid reason"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 4 line, its bullets and the printed lyrics (labels \"1.\" to \"8.\" as printed, each label and its words, joined with spaces; curly apostrophes as printed; line 6 ends \"buy)\" with no full stop in this booklet, where the Higher prints \"buy.)\") are the lead-in. The song title is italic in print. The scheme prints no title for Q4 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. A tick-box line and \"Briefly explain your answer\" (fl ligature; no full stop printed) under one label, printed apart (the options sit between): joined with \"\\n\". Scheme \"Counterpoint / Accept Harmony if the reason is valid\" 1: the answer and its acceptance on one printed line, one point row (as 2015 Higher Q5 A Excerpt 1(iii)); then \"Any valid reason\" 1, no reason printed: a rule row, steps 0 and 1."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(iv)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.05,
+    0.727,
+    0.95,
+    0.795
+   ],
+   "questionText": "The cadence at the end of the excerpt is",
+   "questionContext": "An excerpt from She’s Leaving Home by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics are printed below. 1. Friday morning at nine o’clock she is far away. 2. Waiting to keep the appointment she made. 3. Meeting the man from the motor trade. 4. She (What did we do that was wrong?) 5. Is having (We didn’t know it was wrong.) 6. Fun (Fun is the one thing that money can’t buy) 7. Something inside that was always denied, (Bye, bye) for so many years. 8. She’s leaving home. (Bye bye.)\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 6,
+    "box": [
+     0.05,
+     0.727,
+     0.95,
+     0.795
+    ],
+    "what": "The question and its three printed options (perfect, plagal, imperfect)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-12",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Plagal",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 4 line, its bullets and the printed lyrics (labels \"1.\" to \"8.\" as printed, each label and its words, joined with spaces; curly apostrophes as printed; line 6 ends \"buy)\" with no full stop in this booklet, where the Higher prints \"buy.)\") are the lead-in. The song title is italic in print. The scheme prints no title for Q4 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of three. Scheme \"Plagal\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(v)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.05,
+    0.814,
+    0.95,
+    0.92
+   ],
+   "questionText": "Give an example of word painting as used in She’s Leaving Home.",
+   "questionContext": "An excerpt from She’s Leaving Home by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics are printed below. 1. Friday morning at nine o’clock she is far away. 2. Waiting to keep the appointment she made. 3. Meeting the man from the motor trade. 4. She (What did we do that was wrong?) 5. Is having (We didn’t know it was wrong.) 6. Fun (Fun is the one thing that money can’t buy) 7. Something inside that was always denied, (Bye, bye) for so many years. 8. She’s leaving home. (Bye bye.)\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-2-12",
+   "marks": 2,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Any valid example of word-painting",
+      "(up to 2 marks)"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: the Q. 4 line, its bullets and the printed lyrics (labels \"1.\" to \"8.\" as printed, each label and its words, joined with spaces; curly apostrophes as printed; line 6 ends \"buy)\" with no full stop in this booklet, where the Higher prints \"buy.)\") are the lead-in. The song title is italic in print. The scheme prints no title for Q4 (scheme page 6). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Set-work knowledge about the whole song (\"as used in She’s Leaving Home\"), not the excerpt played, so needsRecording false (as 2011 Ordinary Q4(v)). The song title is italic in print. The scheme prints no example, only \"Any valid example of word-painting\" / \"(up to 2 marks)\" 2: a rule row, steps 0-2. Q4: 2 + 2 + 2 + 2 + 2 = 10, the printed (10)."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 Excerpt 1(i)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.202,
+    0.95,
+    0.27
+   ],
+   "questionText": "The dance tune heard in this excerpt is a",
+   "questionContext": "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1.",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.05,
+     0.202,
+     0.95,
+     0.27
+    ],
+    "what": "The question and its three printed options (jig, reel, hornpipe)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 2,
+   "schemePage": 7,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Hornpipe",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The section heading \"Irish Music\" (bold, on the Q. 5 line) opens the lead-in (lane ruling), then the printed lead-in sentences (unbulleted, wrapped over two lines, joined with a space) and its bullet with \"\\n• \" (as 2011 Ordinary Q5, the same lines). The excerpt headings are printed bold as \"Excerpt 1.\" (with a full stop), \"Excerpt 2\" and \"Excerpt 3\" (none), written so. The scheme heads Q5's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 7): joined by excerpt and wording (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of three. Scheme section A \"(i) Hornpipe\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 Excerpt 1(ii)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.289,
+    0.95,
+    0.368
+   ],
+   "questionText": "A typical bar of rhythm associated with this type of dance is",
+   "questionContext": "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1.",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.05,
+     0.289,
+     0.95,
+     0.368
+    ],
+    "what": "The question and its three printed bars of rhythm in music notation, each with a box",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 2,
+   "schemePage": 7,
+   "schemeCrop": {
+    "page": 7,
+    "box": [
+     0.19,
+     0.14,
+     0.79,
+     0.274
+    ],
+    "what": "the two bars of rhythm printed on staves with \"OR\" between them, and their 2 marks"
+   },
+   "rows": [
+    {
+     "type": "ask",
+     "text": "A typical bar of rhythm associated with this type of dance is",
+     "marks": 2,
+     "printedAnswer": true
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The section heading \"Irish Music\" (bold, on the Q. 5 line) opens the lead-in (lane ruling), then the printed lead-in sentences (unbulleted, wrapped over two lines, joined with a space) and its bullet with \"\\n• \" (as 2011 Ordinary Q5, the same lines). The excerpt headings are printed bold as \"Excerpt 1.\" (with a full stop), \"Excerpt 2\" and \"Excerpt 3\" (none), written so. The scheme heads Q5's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 7): joined by excerpt and wording (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of three printed rhythms (music notation, no text). The scheme prints its answer as two pictures of a bar of rhythm on a stave, \"OR\" between them, at 2: the scheme crop shows both and the \"2\" (\"Hornpipe\" above and \"Harp\" below are outside it); the row names the ask in the paper's words (as 2011 Ordinary Q5 Excerpt 2(iii))."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 Excerpt 1(iii)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.388,
+    0.95,
+    0.416
+   ],
+   "questionText": "Name the instrument playing in this excerpt.",
+   "questionContext": "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1.",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-2",
+   "marks": 3,
+   "schemePage": 7,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Harp",
+     "marks": 3
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The section heading \"Irish Music\" (bold, on the Q. 5 line) opens the lead-in (lane ruling), then the printed lead-in sentences (unbulleted, wrapped over two lines, joined with a space) and its bullet with \"\\n• \" (as 2011 Ordinary Q5, the same lines). The excerpt headings are printed bold as \"Excerpt 1.\" (with a full stop), \"Excerpt 2\" and \"Excerpt 3\" (none), written so. The scheme heads Q5's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 7): joined by excerpt and wording (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. The answer blank that ends the line is not written. Scheme \"(iii) Harp\" 3. Excerpt 1: 2 + 2 + 3 = 7, the scheme's section A sub-total."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 Excerpt 2(i)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.525,
+    0.95,
+    0.553
+   ],
+   "questionText": "Name one instrument which plays the melody in this excerpt.",
+   "questionContext": "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-2",
+   "marks": 2,
+   "schemePage": 7,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Violin OR Uileann pipes",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The section heading \"Irish Music\" (bold, on the Q. 5 line) opens the lead-in (lane ruling), then the printed lead-in sentences (unbulleted, wrapped over two lines, joined with a space) and its bullet with \"\\n• \" (as 2011 Ordinary Q5, the same lines). The excerpt headings are printed bold as \"Excerpt 1.\" (with a full stop), \"Excerpt 2\" and \"Excerpt 3\" (none), written so. The scheme heads Q5's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 7): joined by excerpt and wording (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. \"one\" is bold in print; the answer blank that ends the line is not written. Scheme section B \"(i) Violin OR Uileann pipes\" 2: alternatives on one printed line, the ask wants one, so one point row (lane ruling); \"Uileann\" as the scheme spells it."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 Excerpt 2(ii)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.577,
+    0.95,
+    0.645
+   ],
+   "questionText": "The performance of the melody features",
+   "questionContext": "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.05,
+     0.577,
+     0.95,
+     0.645
+    ],
+    "what": "The question and its three printed options (free rhythm, ornamentation, pizzicato)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 2,
+   "schemePage": 7,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Ornamentation",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The section heading \"Irish Music\" (bold, on the Q. 5 line) opens the lead-in (lane ruling), then the printed lead-in sentences (unbulleted, wrapped over two lines, joined with a space) and its bullet with \"\\n• \" (as 2011 Ordinary Q5, the same lines). The excerpt headings are printed bold as \"Excerpt 1.\" (with a full stop), \"Excerpt 2\" and \"Excerpt 3\" (none), written so. The scheme heads Q5's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 7): joined by excerpt and wording (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of three. Scheme \"(ii) Ornamentation\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 Excerpt 2(iii)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.664,
+    0.95,
+    0.768
+   ],
+   "questionText": "Which two of the following can be heard in the accompaniment?",
+   "questionContext": "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.05,
+     0.664,
+     0.95,
+     0.768
+    ],
+    "what": "The question and its six printed options (scales, syncopation, strummed chords, a counter melody, percussion instruments, key changes)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 4,
+   "schemePage": 7,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Syncopation",
+     "marks": 2
+    },
+    {
+     "type": "point",
+     "text": "Strummed chords",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The section heading \"Irish Music\" (bold, on the Q. 5 line) opens the lead-in (lane ruling), then the printed lead-in sentences (unbulleted, wrapped over two lines, joined with a space) and its bullet with \"\\n• \" (as 2011 Ordinary Q5, the same lines). The excerpt headings are printed bold as \"Excerpt 1.\" (with a full stop), \"Excerpt 2\" and \"Excerpt 3\" (none), written so. The scheme heads Q5's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 7): joined by excerpt and wording (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick two of six; \"two\" is bold in print. Scheme \"(iii) Syncopation\" 2 and, on the next line with no part label, \"Strummed chords\" 2. Excerpt 2: 2 + 2 + 4 = 8, the scheme's section B sub-total."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 Excerpt 3(i)",
+   "page": 9,
+   "pages": [
+    9
+   ],
+   "crop": [
+    0.05,
+    0.082,
+    0.95,
+    0.151
+   ],
+   "questionText": "The music in this excerpt is played by",
+   "questionContext": "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3",
+   "needsRecording": true,
+   "figure": {
+    "page": 9,
+    "box": [
+     0.05,
+     0.082,
+     0.95,
+     0.151
+    ],
+    "what": "The question and its three printed options (an orchestra, a céili band, a traditional group)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 2,
+   "schemePage": 7,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "An orchestra",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The section heading \"Irish Music\" (bold, on the Q. 5 line) opens the lead-in (lane ruling), then the printed lead-in sentences (unbulleted, wrapped over two lines, joined with a space) and its bullet with \"\\n• \" (as 2011 Ordinary Q5, the same lines). The excerpt headings are printed bold as \"Excerpt 1.\" (with a full stop), \"Excerpt 2\" and \"Excerpt 3\" (none), written so. The scheme heads Q5's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 7): joined by excerpt and wording (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of three (\"céili\" with its fada as printed, in the figure). Scheme section C \"(i) An orchestra\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 Excerpt 3(ii)",
+   "page": 9,
+   "pages": [
+    9
+   ],
+   "crop": [
+    0.05,
+    0.169,
+    0.95,
+    0.238
+   ],
+   "questionText": "The accompaniment at the beginning features",
+   "questionContext": "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3",
+   "needsRecording": true,
+   "figure": {
+    "page": 9,
+    "box": [
+     0.05,
+     0.169,
+     0.95,
+     0.238
+    ],
+    "what": "The question and its three printed options (bodhrán, snare drum, bones and spoons)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 2,
+   "schemePage": 7,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Snare drum",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The section heading \"Irish Music\" (bold, on the Q. 5 line) opens the lead-in (lane ruling), then the printed lead-in sentences (unbulleted, wrapped over two lines, joined with a space) and its bullet with \"\\n• \" (as 2011 Ordinary Q5, the same lines). The excerpt headings are printed bold as \"Excerpt 1.\" (with a full stop), \"Excerpt 2\" and \"Excerpt 3\" (none), written so. The scheme heads Q5's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 7): joined by excerpt and wording (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Tick one of three. Scheme \"(ii) Snare drum\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 Excerpt 3(iii)",
+   "page": 9,
+   "pages": [
+    9
+   ],
+   "crop": [
+    0.05,
+    0.256,
+    0.95,
+    0.32
+   ],
+   "questionText": "Identify one traditional feature of the music heard in this excerpt.",
+   "questionContext": "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-2",
+   "marks": 3,
+   "schemePage": 7,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A traditional feature of the music in this excerpt",
+     "options": [
+      "Traditional Irish melody",
+      "Oboe imitates chanter",
+      "Repeated last note",
+      "Modal",
+      "Ornamentation added",
+      "Rhythm almost free"
+     ],
+     "claim": 1,
+     "per": 3,
+     "open": false,
+     "quote": [
+      "(Any ONE correct feature – up to 3 marks)"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The section heading \"Irish Music\" (bold, on the Q. 5 line) opens the lead-in (lane ruling), then the printed lead-in sentences (unbulleted, wrapped over two lines, joined with a space) and its bullet with \"\\n• \" (as 2011 Ordinary Q5, the same lines). The excerpt headings are printed bold as \"Excerpt 1.\" (with a full stop), \"Excerpt 2\" and \"Excerpt 3\" (none), written so. The scheme heads Q5's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 7): joined by excerpt and wording (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. \"one\" is bold in print. Scheme \"(iii)\" six features on six printed lines, then \"(Any ONE correct feature – up to 3 marks)\" at 3: a one-pick menu of the printed features, closed (\"correct\", no \"valid\"; lane ruling), the rule line quoted (as 2010 Higher Q5 A Excerpt 2(iii), the same scheme wording)."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 Excerpt 3(iv)",
+   "page": 9,
+   "pages": [
+    9
+   ],
+   "crop": [
+    0.05,
+    0.343,
+    0.95,
+    0.407
+   ],
+   "questionText": "Identify one non-traditional feature of the music heard in this excerpt.",
+   "questionContext": "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-2",
+   "marks": 3,
+   "schemePage": 7,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A non-traditional feature of the music in this excerpt",
+     "options": [
+      "Snare drum + trumpet – military aspect at start",
+      "Timpani roll",
+      "Melody on oboe",
+      "Arrangement for orchestra"
+     ],
+     "claim": 1,
+     "per": 3,
+     "open": false,
+     "quote": [
+      "(any ONE correct feature – up to 3 marks)"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The section heading \"Irish Music\" (bold, on the Q. 5 line) opens the lead-in (lane ruling), then the printed lead-in sentences (unbulleted, wrapped over two lines, joined with a space) and its bullet with \"\\n• \" (as 2011 Ordinary Q5, the same lines). The excerpt headings are printed bold as \"Excerpt 1.\" (with a full stop), \"Excerpt 2\" and \"Excerpt 3\" (none), written so. The scheme heads Q5's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 7): joined by excerpt and wording (law 4). The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. \"one\" is bold in print. Scheme \"(iv)\" four features on four printed lines (an en dash in the first, as printed), then \"(any ONE correct feature – up to 3 marks)\" (lower-case \"any\", as printed) at 3: a closed one-pick menu, the rule line quoted. Excerpt 3: 2 + 2 + 3 + 3 = 10, the scheme's section C sub-total; Q5 printed total (25) on page 9: 7 + 8 + 10."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 1(i)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.08,
+    0.299,
+    0.95,
+    0.432
+   ],
+   "questionText": "Insert the 4 missing melody notes at X played by the oboe in the introduction.",
+   "questionContext": "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1\n• The Introduction and first verse of One Day I’ll Fly Away by Will Jennings/Joe Sample will be played THREE times. The words of the verse only are printed below. 1. I make it alone 2. When love is gone 3. Still you made your mark 4. Here in my heart",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.08,
+     0.299,
+     0.95,
+     0.432
+    ],
+    "what": "The printed question and its stave: the oboe's opening (treble clef, two sharps, 4/4) and the two empty bars bracketed X, their rhythm (minim, crotchet, crotchet; semibreve) printed above the stave",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-3",
+   "marks": 4,
+   "schemePage": 8,
+   "schemeCrop": {
+    "page": 8,
+    "box": [
+     0.19,
+     0.075,
+     0.79,
+     0.166
+    ],
+    "what": "the four notes printed on a treble stave, with the rule line \"(4 X 1 mark pitch only)\" and the mark 4"
+   },
+   "rows": [
+    {
+     "type": "criterion",
+     "text": "(4 X 1 mark pitch only)",
+     "marks": 4,
+     "steps": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "printedAnswer": true
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). \"Aural Skills.\" is bold; \"THREE\" is printed in capitals; the two lead-in bullets are written with \"\\n• \". Each excerpt heading (\"Excerpt N\", bold, no full stop) stands on its own line and is followed by one printed bullet (the sentence naming the song, over two lines, joined with a space) and the numbered lyric lines, written as label and words joined with spaces (curly apostrophes as printed); the song titles are italic. The excerpt headings, bullets and lyrics are word for word those of 2010 Higher Q6. The scheme heads Q6's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 8) and names no songs. The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. \"X\" is bold in print. The scheme prints the four notes as a picture of a treble stave, then \"(4 X 1 mark pitch only)\" at 4: scheme crop of the stave, its rule line and its mark (\"(ii) Violins / Strings\" below is outside it); the rule line as the criterion on whole-mark steps 0-4. Filed music-2-3 (dictation; the Atlas files Q6 under music-2-4 and music-2-3)."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 1(ii)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.08,
+    0.434,
+    0.95,
+    0.581
+   ],
+   "questionText": "Name the instruments (other than piano) which are heard at the end of each line\nThese instruments play",
+   "questionContext": "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1\n• The Introduction and first verse of One Day I’ll Fly Away by Will Jennings/Joe Sample will be played THREE times. The words of the verse only are printed below. 1. I make it alone 2. When love is gone 3. Still you made your mark 4. Here in my heart",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.08,
+     0.434,
+     0.95,
+     0.581
+    ],
+    "what": "The question, its answer line, then \"These instruments play\" and its three printed options (scales, arpeggios, long sustained notes)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 8,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Violins / Strings",
+     "marks": 1
+    },
+    {
+     "type": "point",
+     "text": "Arpeggios",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). \"Aural Skills.\" is bold; \"THREE\" is printed in capitals; the two lead-in bullets are written with \"\\n• \". Each excerpt heading (\"Excerpt N\", bold, no full stop) stands on its own line and is followed by one printed bullet (the sentence naming the song, over two lines, joined with a space) and the numbered lyric lines, written as label and words joined with spaces (curly apostrophes as printed); the song titles are italic. The excerpt headings, bullets and lyrics are word for word those of 2010 Higher Q6. The scheme heads Q6's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 8) and names no songs. The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. A written answer and a tick-box line under one label, printed apart (the answer line sits between): joined with \"\\n\"; the first line ends with no full stop, as printed. Scheme \"(ii) Violins / Strings\" 1 (alternatives on one printed line: one row) and, on the next line with no part label, \"Arpeggios\" 1."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 1(iii)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.08,
+    0.6,
+    0.95,
+    0.665
+   ],
+   "questionText": "Identify one feature of the vocal line as heard in this excerpt.",
+   "questionContext": "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1\n• The Introduction and first verse of One Day I’ll Fly Away by Will Jennings/Joe Sample will be played THREE times. The words of the verse only are printed below. 1. I make it alone 2. When love is gone 3. Still you made your mark 4. Here in my heart",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 8,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A feature of the vocal line",
+     "options": [
+      "Female voice",
+      "Sung solo",
+      "Syncopated rhythm",
+      "Melody moves mainly by step",
+      "Repeated phrases / ABAB¹"
+     ],
+     "claim": 1,
+     "per": 2,
+     "open": true,
+     "quote": [
+      "(any ONE valid feature of the vocal line)"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). \"Aural Skills.\" is bold; \"THREE\" is printed in capitals; the two lead-in bullets are written with \"\\n• \". Each excerpt heading (\"Excerpt N\", bold, no full stop) stands on its own line and is followed by one printed bullet (the sentence naming the song, over two lines, joined with a space) and the numbered lyric lines, written as label and words joined with spaces (curly apostrophes as printed); the song titles are italic. The excerpt headings, bullets and lyrics are word for word those of 2010 Higher Q6. The scheme heads Q6's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 8) and names no songs. The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. \"one\" is plain type here. Scheme \"(iii)\" five features on five printed lines, then \"(any ONE valid feature of the vocal line)\" at 2: a one-pick menu, open (\"valid\"; lane ruling), the rule line quoted. READ FROM THE PAGE: the \"1\" of \"ABAB¹\" is printed superscript in the scheme (its text layer reads \"ABAB1\"); written with the superscript as printed (as 2010 Higher Q6 Excerpt 1(iii) \"ABAB¹\"); the checker matches it through the text layer. \"Repeated phrases / ABAB¹\" is one feature named two ways, kept as one option. Excerpt 1: 4 + 2 + 2 = 8, the scheme's section A sub-total."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 2(i)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.08,
+    0.858,
+    0.95,
+    0.942
+   ],
+   "questionText": "The rhythmic figure is played in the introduction. It is heard",
+   "questionContext": "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2\n• The introduction and first verse of It’s Not Unusual by Les Reed/Gordon Mills will be played THREE times. The words only are printed below. 1. It’s not unusual to be loved by anyone 2. It’s not unusual to have fun with anyone 3. But when I see you hanging about with anyone 4. It’s not unusual to see me cry, I wanna die.",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.08,
+     0.858,
+     0.95,
+     0.942
+    ],
+    "what": "The question with its rhythmic figure printed in notation inside the sentence (dotted crotchet, quaver, minim, each accented) and its three printed options (6 times, 7 times, 8 times)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 8,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "8 times",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). \"Aural Skills.\" is bold; \"THREE\" is printed in capitals; the two lead-in bullets are written with \"\\n• \". Each excerpt heading (\"Excerpt N\", bold, no full stop) stands on its own line and is followed by one printed bullet (the sentence naming the song, over two lines, joined with a space) and the numbered lyric lines, written as label and words joined with spaces (curly apostrophes as printed); the song titles are italic. The excerpt headings, bullets and lyrics are word for word those of 2010 Higher Q6. The scheme heads Q6's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 8) and names no songs. The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. NOTATION IN THE LINE: the booklet prints the rhythmic figure in music notation between \"figure\" and \"is\"; the typed words skip it (no words of the line are dropped) and the figure, which carries the notation and the options, stands in for the typed words (includesPrompt true). \"figure\" printed with an fi ligature. Tick one of three. Scheme section B \"(i) 8 times\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 2(ii)",
+   "page": 11,
+   "pages": [
+    10,
+    11
+   ],
+   "crop": [
+    0.08,
+    0.034,
+    0.95,
+    0.103
+   ],
+   "questionText": "The melody of lines 1 and 2 is",
+   "questionContext": "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2\n• The introduction and first verse of It’s Not Unusual by Les Reed/Gordon Mills will be played THREE times. The words only are printed below. 1. It’s not unusual to be loved by anyone 2. It’s not unusual to have fun with anyone 3. But when I see you hanging about with anyone 4. It’s not unusual to see me cry, I wanna die.",
+   "needsRecording": true,
+   "figure": {
+    "page": 11,
+    "box": [
+     0.08,
+     0.034,
+     0.95,
+     0.103
+    ],
+    "what": "The question and its three printed options (the same, similar, completely different)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 1,
+   "schemePage": 8,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Similar",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). \"Aural Skills.\" is bold; \"THREE\" is printed in capitals; the two lead-in bullets are written with \"\\n• \". Each excerpt heading (\"Excerpt N\", bold, no full stop) stands on its own line and is followed by one printed bullet (the sentence naming the song, over two lines, joined with a space) and the numbered lyric lines, written as label and words joined with spaces (curly apostrophes as printed); the song titles are italic. The excerpt headings, bullets and lyrics are word for word those of 2010 Higher Q6. The scheme heads Q6's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 8) and names no songs. The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Printed at the top of page 11; the Excerpt 2 heading, bullet and lyrics are on page 10, so pages [10, 11]. Tick one of three. Scheme \"(ii) Similar\" 1."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 2(iii)",
+   "page": 11,
+   "pages": [
+    10,
+    11
+   ],
+   "crop": [
+    0.08,
+    0.101,
+    0.95,
+    0.17
+   ],
+   "questionText": "The tonality of the music heard in this excerpt is",
+   "questionContext": "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2\n• The introduction and first verse of It’s Not Unusual by Les Reed/Gordon Mills will be played THREE times. The words only are printed below. 1. It’s not unusual to be loved by anyone 2. It’s not unusual to have fun with anyone 3. But when I see you hanging about with anyone 4. It’s not unusual to see me cry, I wanna die.",
+   "needsRecording": true,
+   "figure": {
+    "page": 11,
+    "box": [
+     0.08,
+     0.101,
+     0.95,
+     0.17
+    ],
+    "what": "The question and its three printed options (major, minor, modal)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 1,
+   "schemePage": 8,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Major",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). \"Aural Skills.\" is bold; \"THREE\" is printed in capitals; the two lead-in bullets are written with \"\\n• \". Each excerpt heading (\"Excerpt N\", bold, no full stop) stands on its own line and is followed by one printed bullet (the sentence naming the song, over two lines, joined with a space) and the numbered lyric lines, written as label and words joined with spaces (curly apostrophes as printed); the song titles are italic. The excerpt headings, bullets and lyrics are word for word those of 2010 Higher Q6. The scheme heads Q6's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 8) and names no songs. The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. Printed on page 11; the Excerpt 2 heading, bullet and lyrics are on page 10, so pages [10, 11]. Tick one of three. Scheme \"(iii) Major\" 1. Excerpt 2: 2 + 1 + 1 = 4, the scheme's section B sub-total."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 3(i)",
+   "page": 11,
+   "pages": [
+    11
+   ],
+   "crop": [
+    0.08,
+    0.377,
+    0.95,
+    0.405
+   ],
+   "questionText": "Name the instrument which plays the accompaniment in this excerpt.",
+   "questionContext": "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3\n• The first verse of Bridge Over Troubled Water by Paul Simon will be played THREE times. The words are printed below. 1. When you’re weary, feeling small 2. When tears are in your eyes, I will dry them all 3. I’m on your side, oh, when times get rough 4. And friends just can’t be found 5. Like a bridge over troubled water, I will lay me down 6. Like a bridge over troubled water, I will lay me down",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 8,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Piano",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). \"Aural Skills.\" is bold; \"THREE\" is printed in capitals; the two lead-in bullets are written with \"\\n• \". Each excerpt heading (\"Excerpt N\", bold, no full stop) stands on its own line and is followed by one printed bullet (the sentence naming the song, over two lines, joined with a space) and the numbered lyric lines, written as label and words joined with spaces (curly apostrophes as printed); the song titles are italic. The excerpt headings, bullets and lyrics are word for word those of 2010 Higher Q6. The scheme heads Q6's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 8) and names no songs. The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. The answer blank that ends the line is not written. Scheme section C \"(i) Piano\" 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 3(ii)",
+   "page": 11,
+   "pages": [
+    11
+   ],
+   "crop": [
+    0.08,
+    0.412,
+    0.95,
+    0.48
+   ],
+   "questionText": "The melody of the underlined words in line 3 moves by",
+   "questionContext": "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3\n• The first verse of Bridge Over Troubled Water by Paul Simon will be played THREE times. The words are printed below. 1. When you’re weary, feeling small 2. When tears are in your eyes, I will dry them all 3. I’m on your side, oh, when times get rough 4. And friends just can’t be found 5. Like a bridge over troubled water, I will lay me down 6. Like a bridge over troubled water, I will lay me down",
+   "needsRecording": true,
+   "figure": {
+    "page": 11,
+    "box": [
+     0.08,
+     0.252,
+     0.95,
+     0.48
+    ],
+    "what": "The printed lyrics (line 3's \"I’m on your side,\" underlined), part (i) below them, and the question with its three printed options (leap, step, combination of both leap and step)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 1,
+   "schemePage": 8,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Step",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). \"Aural Skills.\" is bold; \"THREE\" is printed in capitals; the two lead-in bullets are written with \"\\n• \". Each excerpt heading (\"Excerpt N\", bold, no full stop) stands on its own line and is followed by one printed bullet (the sentence naming the song, over two lines, joined with a space) and the numbered lyric lines, written as label and words joined with spaces (curly apostrophes as printed); the song titles are italic. The excerpt headings, bullets and lyrics are word for word those of 2010 Higher Q6. The scheme heads Q6's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 8) and names no songs. The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. The underline on \"I’m on your side,\" (lyric line 3) is printed only on the page, so the figure runs from the lyrics down to the options (part (i) shows on the way, question only). Tick one of three. Scheme \"(ii) Step\" 1."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 3(iii)",
+   "page": 11,
+   "pages": [
+    11
+   ],
+   "crop": [
+    0.08,
+    0.481,
+    0.95,
+    0.618
+   ],
+   "questionText": "The texture of the music in this verse is\nExplain",
+   "questionContext": "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3\n• The first verse of Bridge Over Troubled Water by Paul Simon will be played THREE times. The words are printed below. 1. When you’re weary, feeling small 2. When tears are in your eyes, I will dry them all 3. I’m on your side, oh, when times get rough 4. And friends just can’t be found 5. Like a bridge over troubled water, I will lay me down 6. Like a bridge over troubled water, I will lay me down",
+   "needsRecording": true,
+   "figure": {
+    "page": 11,
+    "box": [
+     0.08,
+     0.481,
+     0.95,
+     0.582
+    ],
+    "what": "The question, its three printed options (monophonic, homophonic, polyphonic) and the line \"Explain\"",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 8,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Homophonic",
+     "marks": 1
+    },
+    {
+     "type": "rule",
+     "marks": 1,
+     "steps": [
+      0,
+      1
+     ],
+     "quote": [
+      "A valid explanation"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). \"Aural Skills.\" is bold; \"THREE\" is printed in capitals; the two lead-in bullets are written with \"\\n• \". Each excerpt heading (\"Excerpt N\", bold, no full stop) stands on its own line and is followed by one printed bullet (the sentence naming the song, over two lines, joined with a space) and the numbered lyric lines, written as label and words joined with spaces (curly apostrophes as printed); the song titles are italic. The excerpt headings, bullets and lyrics are word for word those of 2010 Higher Q6. The scheme heads Q6's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 8) and names no songs. The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. A tick-box line and \"Explain\" (no full stop printed) under one label, printed apart (the options sit between): joined with \"\\n\". Scheme \"(iii) Homophonic\" 1 and, on the next line, \"A valid explanation\" 1, no explanation printed: a rule row, steps 0 and 1."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 3(iv)",
+   "page": 11,
+   "pages": [
+    11
+   ],
+   "crop": [
+    0.08,
+    0.638,
+    0.95,
+    0.872
+   ],
+   "questionText": "Identify two differences between verse 3 and verse 1.",
+   "questionContext": "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3\n• The first verse of Bridge Over Troubled Water by Paul Simon will be played THREE times. The words are printed below. 1. When you’re weary, feeling small 2. When tears are in your eyes, I will dry them all 3. I’m on your side, oh, when times get rough 4. And friends just can’t be found 5. Like a bridge over troubled water, I will lay me down 6. Like a bridge over troubled water, I will lay me down\n• Now listen to a later excerpt from the song (verse 3) which is not printed here. It will be played TWICE. Answer (iv) below.",
+   "needsRecording": true,
+   "figure": null,
+   "topicId": "music-2-4",
+   "marks": 3,
+   "schemePage": 8,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A difference between verse 3 and verse 1",
+     "options": [
+      "Opening of verse 3 is sung in harmony by two voices.",
+      "There is harmony above the tune.",
+      "The melody is slightly different.",
+      "Pitch is higher.",
+      "More instruments are added – guitar, bass, drums, strings (or synth or string machine).",
+      "Strings play long sustained notes.",
+      "The dynamics in this verse are much stronger and build throughout the verse to a ff finish.",
+      "There is a big crescendo."
+     ],
+     "claim": 2,
+     "per": 1.5,
+     "open": false,
+     "quote": [
+      "(any TWO correct differences)"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). \"Aural Skills.\" is bold; \"THREE\" is printed in capitals; the two lead-in bullets are written with \"\\n• \". Each excerpt heading (\"Excerpt N\", bold, no full stop) stands on its own line and is followed by one printed bullet (the sentence naming the song, over two lines, joined with a space) and the numbered lyric lines, written as label and words joined with spaces (curly apostrophes as printed); the song titles are italic. The excerpt headings, bullets and lyrics are word for word those of 2010 Higher Q6. The scheme heads Q6's sections \"A\", \"B\", \"C\" (one per excerpt, scheme page 8) and names no songs. The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; \"fi\" / \"fl\" stored as ligatures; checked line by line against the OCR and the renders). The scheme's listening pages (5-8) have a clean text layer too. The bullet \"Now listen to a later excerpt from the song (verse 3) which is not printed here. / It will be played TWICE. Answer (iv) below.\" is printed above (iv) only, so it closes (iv)'s excerpt line (as 2010 Higher Q6 Excerpt 3(iv)); its two printed lines join with a space. \"two\" is bold; \"1.\" / \"2.\" are answer slots. Scheme at \"1.5 + 1.5\": eight sentences under four bold group headings (\"Vocals\", \"Melody\", \"Accompaniment\", \"Other features\"), then \"(any TWO correct differences)\": a menu, two at 1.5, one option per printed sentence (the group headings are not answers; as 2010 Higher, the same sentences); closed (\"correct\", no \"valid\"; lane ruling; the Higher's \"(Any THREE valid differences)\" is open). \"ff\" is italic in the scheme. Excerpt 3: 2 + 1 + 2 + 3 = 8, the scheme's section C sub-total; Q6 printed total (20) on page 11: 8 + 4 + 8."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q1(a)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.05,
+    0.135,
+    0.95,
+    0.572
+   ],
+   "questionText": "CONTINUATION OF A GIVEN OPENING In the case of both (a) and (b), • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for each of your melodies from the list given.\n□ clarinet □ flute □ violin □ trumpet",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-10",
+   "marks": 20,
+   "schemePage": 3,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     3
+    ],
+    "markingGuideNote": "Composing - Ordinary level",
+    "stem": "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3. Note that both Q1 and Q3 contain two sections.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Each Melody",
+      "max": 20,
+      "guidance": [
+       "Deductions, if omitted or deficient:",
+       "Ending on tonic (2 marks each melody);",
+       "Expression marks, phrasing, instruments(1 mark each melody)"
+      ],
+      "bands": [
+       {
+        "label": "Good sense of shape, rhythmically consistent.",
+        "marks": "17-20",
+        "guidance": []
+       },
+       {
+        "label": "Rhythmically consistent, with a moderately good sense of shape.",
+        "marks": "14-16",
+        "guidance": []
+       },
+       {
+        "label": "Rhythm generally consistent, with some awareness of key and shape.",
+        "marks": "11-13",
+        "guidance": []
+       },
+       {
+        "label": "Some rhythmical inconsistencies. Little awareness of key and shape.",
+        "marks": "8-10",
+        "guidance": []
+       },
+       {
+        "label": "No awareness of key, shape or rhythm.",
+        "marks": "5-7",
+        "guidance": []
+       },
+       {
+        "label": "Little or no attempt",
+        "marks": "0-4",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "The composing booklet's text layer is clean Times New Roman for every question line (capitals stored as printed; \"fi\" / \"fl\" stored as ligatures; checked against the OCR and the renders). The title is printed in capitals and kept so, without the \"Q.\" number. The stem is the full printed Section A line, its second sentence included (one printed line; \"Answer\", \"in this section\", \"or\", \"Note that both\", \"and\" and \"contain two sections\" italic in print). SCHEME FORMAT (2010 Ordinary, scheme page 3): the scheme prints NO \"SECTION A – MELODY COMPOSITION (40 marks)\" heading (2011-2014 do), so the marking-guide note is the scheme page's own header line \"Composing - Ordinary level\" (as 2010 Higher's elective takes its header line). Each band is a letter (A-F, not carried) with ONE descriptor and a single range, then \"Deductions, if omitted or deficient:\" (bold italic) and its italic deduction line(s), carried as the criterion's guidance in print order (as 2011 Ordinary); the bands cover 0-max once each. \"Answer (a) and (b)\" with two separately answered melodies the scheme marks \"Each Melody\", \"20 + 20\": one ask and one card per melody (lane ruling). As 2011 Ordinary (the same layout): 2010 prints no \"Answer (a) and (b).\" under the Q1 title; it prints \"In the case of both (a) and (b),\" (\"and\" italic) and the three bullets ONCE for both parts, with only the instrument list beside each label \"(a)\" / \"(b)\". The title, that line and the shared bullets go on BOTH cards; each card then gives its own printed instrument list (\"□ ...\"), on its own line (\"\\n\") because it is printed apart from the bullets, beside the part label (\"flute\" printed with an fl ligature). (a) and (b) are printed on one page, so the crops split it at \"AND\" (italic). Q1 deductions: \"Ending on tonic (2 marks each melody);\" and \"Expression marks, phrasing, instruments(1 mark each melody)\" (no space before the bracket, as printed). Printed opening (a): Allegro, 3/4, one sharp, two bars given, then one empty stave."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q1(b)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.05,
+    0.612,
+    0.95,
+    0.912
+   ],
+   "questionText": "CONTINUATION OF A GIVEN OPENING In the case of both (a) and (b), • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for each of your melodies from the list given.\n□ trumpet □ violin □ oboe □ clarinet",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-10",
+   "marks": 20,
+   "schemePage": 3,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     3
+    ],
+    "markingGuideNote": "Composing - Ordinary level",
+    "stem": "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3. Note that both Q1 and Q3 contain two sections.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Each Melody",
+      "max": 20,
+      "guidance": [
+       "Deductions, if omitted or deficient:",
+       "Ending on tonic (2 marks each melody);",
+       "Expression marks, phrasing, instruments(1 mark each melody)"
+      ],
+      "bands": [
+       {
+        "label": "Good sense of shape, rhythmically consistent.",
+        "marks": "17-20",
+        "guidance": []
+       },
+       {
+        "label": "Rhythmically consistent, with a moderately good sense of shape.",
+        "marks": "14-16",
+        "guidance": []
+       },
+       {
+        "label": "Rhythm generally consistent, with some awareness of key and shape.",
+        "marks": "11-13",
+        "guidance": []
+       },
+       {
+        "label": "Some rhythmical inconsistencies. Little awareness of key and shape.",
+        "marks": "8-10",
+        "guidance": []
+       },
+       {
+        "label": "No awareness of key, shape or rhythm.",
+        "marks": "5-7",
+        "guidance": []
+       },
+       {
+        "label": "Little or no attempt",
+        "marks": "0-4",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "The composing booklet's text layer is clean Times New Roman for every question line (capitals stored as printed; \"fi\" / \"fl\" stored as ligatures; checked against the OCR and the renders). The title is printed in capitals and kept so, without the \"Q.\" number. The stem is the full printed Section A line, its second sentence included (one printed line; \"Answer\", \"in this section\", \"or\", \"Note that both\", \"and\" and \"contain two sections\" italic in print). SCHEME FORMAT (2010 Ordinary, scheme page 3): the scheme prints NO \"SECTION A – MELODY COMPOSITION (40 marks)\" heading (2011-2014 do), so the marking-guide note is the scheme page's own header line \"Composing - Ordinary level\" (as 2010 Higher's elective takes its header line). Each band is a letter (A-F, not carried) with ONE descriptor and a single range, then \"Deductions, if omitted or deficient:\" (bold italic) and its italic deduction line(s), carried as the criterion's guidance in print order (as 2011 Ordinary); the bands cover 0-max once each. \"Answer (a) and (b)\" with two separately answered melodies the scheme marks \"Each Melody\", \"20 + 20\": one ask and one card per melody (lane ruling). As 2011 Ordinary (the same layout): 2010 prints no \"Answer (a) and (b).\" under the Q1 title; it prints \"In the case of both (a) and (b),\" (\"and\" italic) and the three bullets ONCE for both parts, with only the instrument list beside each label \"(a)\" / \"(b)\". The title, that line and the shared bullets go on BOTH cards; each card then gives its own printed instrument list (\"□ ...\"), on its own line (\"\\n\") because it is printed apart from the bullets, beside the part label (\"flute\" printed with an fl ligature). (a) and (b) are printed on one page, so the crops split it at \"AND\" (italic). Q1 deductions: \"Ending on tonic (2 marks each melody);\" and \"Expression marks, phrasing, instruments(1 mark each melody)\" (no space before the bracket, as printed). (b)'s crop holds its label, its instrument list and its printed opening (Moderato, 4/4, one flat, two bars given); the shared title and bullets are printed above (a)."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q2",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.05,
+    0.033,
+    0.95,
+    0.95
+   ],
+   "questionText": "SETTING MUSIC TO A GIVEN TEXT Here is an extract from How Doth The Little Crocodile . . . by Lewis Carroll: How doth the little crocodile Improve his shining tail, And pour the waters of the Nile On every golden scale. • The first two lines have been set to a rhythm. Compose a rhythm to fit the remaining words. • Using this rhythm, compose a melody of eight bars, beginning as indicated and ending on the key note, that is, doh. • Add appropriate phrasing and expression marks to the melody.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-11",
+   "marks": 40,
+   "schemePage": 3,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     3
+    ],
+    "markingGuideNote": "Composing - Ordinary level",
+    "stem": "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3. Note that both Q1 and Q3 contain two sections.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Composing - Ordinary level",
+      "max": 40,
+      "guidance": [
+       "Deductions, if omitted or deficient:",
+       "Ending on tonic (4 marks); Eexpression marks, phrasing (up to 2 each),"
+      ],
+      "bands": [
+       {
+        "label": "Good sense of shape, rhythmically consistent with words.",
+        "marks": "34-40",
+        "guidance": []
+       },
+       {
+        "label": "Rhythm generally consistent with words. Moderately good sense of shape.",
+        "marks": "28-33",
+        "guidance": []
+       },
+       {
+        "label": "Rhythm fairly consistent with words. Some awareness of key and shape.",
+        "marks": "22-27",
+        "guidance": []
+       },
+       {
+        "label": "Some rhythmical inconsistencies with words. Little awareness of key and shape.",
+        "marks": "16-21",
+        "guidance": []
+       },
+       {
+        "label": "No awareness of key, shape or rhythm.",
+        "marks": "10-15",
+        "guidance": []
+       },
+       {
+        "label": "Little or no attempt",
+        "marks": "0-9",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "The composing booklet's text layer is clean Times New Roman for every question line (capitals stored as printed; \"fi\" / \"fl\" stored as ligatures; checked against the OCR and the renders). The title is printed in capitals and kept so, without the \"Q.\" number. The stem is the full printed Section A line, its second sentence included (one printed line; \"Answer\", \"in this section\", \"or\", \"Note that both\", \"and\" and \"contain two sections\" italic in print). SCHEME FORMAT (2010 Ordinary, scheme page 3): the scheme prints NO \"SECTION A – MELODY COMPOSITION (40 marks)\" heading (2011-2014 do), so the marking-guide note is the scheme page's own header line \"Composing - Ordinary level\" (as 2010 Higher's elective takes its header line). Each band is a letter (A-F, not carried) with ONE descriptor and a single range, then \"Deductions, if omitted or deficient:\" (bold italic) and its italic deduction line(s), carried as the criterion's guidance in print order (as 2011 Ordinary); the bands cover 0-max once each. As 2011 Ordinary: the booklet prints Q2 with NO \"Answer (a) and (b).\" and NO part labels: the rhythm task and the melody task are two bullets of one unlettered question, and the scheme marks Q2 on one 40-mark band table. So Q2 is ONE ask and one card, \"Section A Q2\" (no sharedCard, no labels). JUDGEMENT CALL: the scheme prints no element name on the Q2 table (Q1 and Q3 print \"Each Melody\") and no Section A heading, so the criterion is labelled with the page's header line \"Composing - Ordinary level\", the same line as the marking-guide note (as 2011 Ordinary labels it with its Section A heading). Bands B, C and D wrap over two printed lines (joined with spaces). Q2 deductions: \"Ending on tonic (4 marks); Eexpression marks, phrasing (up to 2 each),\" (one printed line; the SEC misprint \"Eexpression\" and the closing comma kept as printed). PAPER AS PRINTED: \"Here is an extract from How Doth The Little Crocodile . . . by Lewis Carroll:\" (the poem title italic, the spaced dots and closing colon as printed); the four poem lines are printed without bullets and joined with spaces; the three bullets kept with \" • \" (the second wraps over two printed lines, joined with a space; \"first\" and \"fit\" printed with fi ligatures). The booklet prints \"key note\" as two words here (Q1 and Q3 print \"keynote\"), kept. Printed rhythm: 4/4, lines 1-2 set, lines 3-4 printed as words only (the syllables \"wa - ters\", \"ev - ’ry\", \"gol - den\" spaced under the bars); printed opening: 4/4, two flats, line 1's words under the given notes, then three empty staves."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q3(a)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.05,
+    0.033,
+    0.95,
+    0.502
+   ],
+   "questionText": "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM Answer (a) and (b).\nStudy this opening of a march. • Complete the first phrase. • Compose an answering phrase, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ descant recorder □ violin □ flute □ trumpet",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-12",
+   "marks": 20,
+   "schemePage": 3,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     3
+    ],
+    "markingGuideNote": "Composing - Ordinary level",
+    "stem": "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3. Note that both Q1 and Q3 contain two sections.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Each Melody",
+      "max": 20,
+      "guidance": [
+       "Deductions, if omitted or deficient:",
+       "Ending on tonic (2 marks each melody);",
+       "Expression marks, phrasing, instruments(1 mark each melody)"
+      ],
+      "bands": [
+       {
+        "label": "Good sense of shape; rhythm & style of dance maintained.",
+        "marks": "17-20",
+        "guidance": []
+       },
+       {
+        "label": "Good attempt at maintaining rhythm & style of dance, with a moderately good sense of shape.",
+        "marks": "14-16",
+        "guidance": []
+       },
+       {
+        "label": "Rhythm & style of dance generally consistent, with some awareness of key and shape.",
+        "marks": "11-13",
+        "guidance": []
+       },
+       {
+        "label": "Some rhythmical inconsistencies. Little awareness of key and shape.",
+        "marks": "8-10",
+        "guidance": []
+       },
+       {
+        "label": "No awareness of key, shape or rhythm.",
+        "marks": "5-7",
+        "guidance": []
+       },
+       {
+        "label": "Little or no attempt",
+        "marks": "0-4",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "The composing booklet's text layer is clean Times New Roman for every question line (capitals stored as printed; \"fi\" / \"fl\" stored as ligatures; checked against the OCR and the renders). The title is printed in capitals and kept so, without the \"Q.\" number. The stem is the full printed Section A line, its second sentence included (one printed line; \"Answer\", \"in this section\", \"or\", \"Note that both\", \"and\" and \"contain two sections\" italic in print). SCHEME FORMAT (2010 Ordinary, scheme page 3): the scheme prints NO \"SECTION A – MELODY COMPOSITION (40 marks)\" heading (2011-2014 do), so the marking-guide note is the scheme page's own header line \"Composing - Ordinary level\" (as 2010 Higher's elective takes its header line). Each band is a letter (A-F, not carried) with ONE descriptor and a single range, then \"Deductions, if omitted or deficient:\" (bold italic) and its italic deduction line(s), carried as the criterion's guidance in print order (as 2011 Ordinary); the bands cover 0-max once each. \"Answer (a) and (b)\" with two separately answered melodies the scheme marks \"Each Melody\", \"20 + 20\": one ask and one card per melody (lane ruling). \"Answer (a) and (b).\" (\"and\" italic) is printed under the title and kept on both cards (lane ruling). LINE LAYOUT (as 2011 Ordinary Q3, the same wording): each part opens with an UNBULLETED line carrying its label, \"(a) Study this opening of a march.\" / \"(b) Study this opening of a minuet.\"; it is written on its own line after \"Answer (a) and (b).\" (\"\\n\"; the label is the address), and the part's four bullets follow with \" • \" (\"first\" printed with an fi ligature); the instrument list after \"from the following list:\" is written \"□ ...\" (coordinator ruling; \"flute\" printed with an fl ligature). (a) and (b) are printed on one page, so the crops split it at \"AND\" (italic). The scheme's band A prints \"Good sense of shape; rhythm & style of dance maintained.\" and bands B and C wrap over two printed lines (joined with spaces); deductions as Q1. (a) is the march: Moderato, 4/4, no key signature, two bars given, then one empty stave."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q3(b)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.05,
+    0.537,
+    0.95,
+    0.948
+   ],
+   "questionText": "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM Answer (a) and (b).\nStudy this opening of a minuet. • Complete the first phrase. • Compose an answering phrase, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ flute □ violin □ oboe",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-12",
+   "marks": 20,
+   "schemePage": 3,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     3
+    ],
+    "markingGuideNote": "Composing - Ordinary level",
+    "stem": "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3. Note that both Q1 and Q3 contain two sections.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Each Melody",
+      "max": 20,
+      "guidance": [
+       "Deductions, if omitted or deficient:",
+       "Ending on tonic (2 marks each melody);",
+       "Expression marks, phrasing, instruments(1 mark each melody)"
+      ],
+      "bands": [
+       {
+        "label": "Good sense of shape; rhythm & style of dance maintained.",
+        "marks": "17-20",
+        "guidance": []
+       },
+       {
+        "label": "Good attempt at maintaining rhythm & style of dance, with a moderately good sense of shape.",
+        "marks": "14-16",
+        "guidance": []
+       },
+       {
+        "label": "Rhythm & style of dance generally consistent, with some awareness of key and shape.",
+        "marks": "11-13",
+        "guidance": []
+       },
+       {
+        "label": "Some rhythmical inconsistencies. Little awareness of key and shape.",
+        "marks": "8-10",
+        "guidance": []
+       },
+       {
+        "label": "No awareness of key, shape or rhythm.",
+        "marks": "5-7",
+        "guidance": []
+       },
+       {
+        "label": "Little or no attempt",
+        "marks": "0-4",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "The composing booklet's text layer is clean Times New Roman for every question line (capitals stored as printed; \"fi\" / \"fl\" stored as ligatures; checked against the OCR and the renders). The title is printed in capitals and kept so, without the \"Q.\" number. The stem is the full printed Section A line, its second sentence included (one printed line; \"Answer\", \"in this section\", \"or\", \"Note that both\", \"and\" and \"contain two sections\" italic in print). SCHEME FORMAT (2010 Ordinary, scheme page 3): the scheme prints NO \"SECTION A – MELODY COMPOSITION (40 marks)\" heading (2011-2014 do), so the marking-guide note is the scheme page's own header line \"Composing - Ordinary level\" (as 2010 Higher's elective takes its header line). Each band is a letter (A-F, not carried) with ONE descriptor and a single range, then \"Deductions, if omitted or deficient:\" (bold italic) and its italic deduction line(s), carried as the criterion's guidance in print order (as 2011 Ordinary); the bands cover 0-max once each. \"Answer (a) and (b)\" with two separately answered melodies the scheme marks \"Each Melody\", \"20 + 20\": one ask and one card per melody (lane ruling). \"Answer (a) and (b).\" (\"and\" italic) is printed under the title and kept on both cards (lane ruling). LINE LAYOUT (as 2011 Ordinary Q3, the same wording): each part opens with an UNBULLETED line carrying its label, \"(a) Study this opening of a march.\" / \"(b) Study this opening of a minuet.\"; it is written on its own line after \"Answer (a) and (b).\" (\"\\n\"; the label is the address), and the part's four bullets follow with \" • \" (\"first\" printed with an fi ligature); the instrument list after \"from the following list:\" is written \"□ ...\" (coordinator ruling; \"flute\" printed with an fl ligature). (a) and (b) are printed on one page, so the crops split it at \"AND\" (italic). The scheme's band A prints \"Good sense of shape; rhythm & style of dance maintained.\" and bands B and C wrap over two printed lines (joined with spaces); deductions as Q1. (b) is the minuet: Andante, 3/4, two sharps, two bars given, then one empty stave; its bullets repeat (a)'s word for word."
+  },
+  {
+   "paper": "composing",
+   "address": "Section B Q4",
+   "page": 6,
+   "pages": [
+    6,
+    7
+   ],
+   "crop": [
+    0.05,
+    0.1,
+    0.95,
+    0.695
+   ],
+   "questionText": "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS PREPARATORY WORK • Write out the scale of D major on the stave below: • Plot the chords available in this key (I, ii, IV, V, and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Using the given rhythms, add melody and bass notes to complete the cadences and approach chords as follows: (i) At A, an IMPERFECT cadence with approach chord (I—IV—V) (ii) At B, a PLAGAL cadence with approach chord (ii—IV—I) (iii) At C, an INTERRUPTED cadence with approach chord (I—V—vi) (iv) At D, a PERFECT cadence with approach chord (IV—V—I)",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-14",
+   "marks": 60,
+   "schemePage": 4,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     4
+    ],
+    "markingGuideNote": "Composing - Ordinary level",
+    "stem": "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "grid",
+      "label": "1 mark per correct note of chord",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Grid"
+      ]
+     },
+     {
+      "id": "melody",
+      "label": "Melody",
+      "max": 24,
+      "guidance": [
+       "2 marks per correct note",
+       "Deduct .5 mark per note if given rhythm not used"
+      ]
+     },
+     {
+      "id": "bass",
+      "label": "Bass",
+      "max": 24,
+      "guidance": [
+       "2 marks per correct bass note.",
+       "Deduct .5 mark per note if given rhythm not used"
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "The composing booklet's text layer is clean Times New Roman for every question line (capitals stored as printed; \"fi\" / \"fl\" stored as ligatures; checked against the OCR and the renders). The title is printed in capitals and kept so, without the \"Q.\" number. Section B: the \"PREPARATORY WORK\" (scale and chord bank) is MARKED at Ordinary Level (\"Grid\", 1 mark per correct note of chord, 12), so its heading and bullets are part of the question text (coordinator ruling: \"PREPARATORY WORK • ...\") and its line is a counted criterion. The chord bank prints I (\"The first chord is given\") and also iii and vii already filled in and shaded, outside the five chords asked for: the 12 notes are those of ii, IV, V and vi; the pre-filled chords are part of the printed question, not separate asks (as 2011 Ordinary). \"PREPARATORY WORK\" is printed in capitals (not bold); \"or\" is italic in the chord-bank bullet, which wraps over two printed lines (joined with a space; \"first\" printed with an fi ligature). The stem keeps the printed capitals and prints no full stop after \"Q6\", kept (\"Answer\", \"in this section\" and \"or\" italic). SCHEME (2010 Ordinary, page 4): no \"SECTION B – HARMONY\" heading is printed, so the marking-guide note is the page's header line \"Composing - Ordinary level\"; NO \"OR\" between its lines, NO Section B general points and NO table of given or accepted chords, so there are no task requirements and no scheme crop (as 2011 Ordinary, the same table). \"12\" / \"2 x 12\" / \"1 x 12\" sit in the scheme's Mark column, so the labels carry the descriptor only. The chord-bank bullet prints \"(I, ii, IV, V, and vi)\" with a comma before \"and\" (Q5 and Q6 print \"(I, ii, IV, V, vi)\"), kept. JUDGEMENT CALL (as 2011 Ordinary Q4, the same scheme lines): Melody and Bass are each \"2 x 12\", 24, marked \"2 marks per correct (bass) note\" with \"Deduct .5 mark per note if given rhythm not used\". A counted line at rate 2 could not place the 1.5 a note the deduction gives, so each is a no-band criterion on 0-24, labelled with the scheme's element name and carrying its two printed lines as guidance; a total with an odd number of half-mark deductions (e.g. 23.5) still cannot be placed. Grid 12 + Melody 24 + Bass 24 = 60. Q4's (i)-(iv) name the cadences at A-D (cadence names in capitals, kept; em dashes between the chords as printed); printed without bullets and joined with spaces; one ask, one total. The crop is page 6 (title, preparatory work and chord bank); page 7 prints the cadence lines and the score. Key D major, 3/4; the given rhythm (minim, crotchet, dotted minim) is printed over each cadence, A-D lettered."
+  },
+  {
+   "paper": "composing",
+   "address": "Section B Q5",
+   "page": 8,
+   "pages": [
+    8,
+    9
+   ],
+   "crop": [
+    0.05,
+    0.033,
+    0.95,
+    0.68
+   ],
+   "questionText": "ADDING BASS NOTES AND CHORD INDICATIONS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of F major on the stave below: • Plot the chords available in this key (I, ii, IV, V, vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Add suitable bass notes and chord indications to complete the cadences at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-13",
+   "marks": 60,
+   "schemePage": 4,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     4
+    ],
+    "markingGuideNote": "Composing - Ordinary level",
+    "stem": "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "grid",
+      "label": "1 mark per correct note of chord",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Grid"
+      ]
+     },
+     {
+      "id": "chords-fit",
+      "label": "1 mark per chord that fits.",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Chords"
+      ]
+     },
+     {
+      "id": "chords-cadence",
+      "label": "1 extra mark per good cadence chord",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Chords"
+      ]
+     },
+     {
+      "id": "bass-correct",
+      "label": "1 mark per correct note for every correct chord.",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Bass"
+      ]
+     },
+     {
+      "id": "bass-cadence",
+      "label": "1 extra mark per correct note for every good cadence chord",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Bass"
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "The composing booklet's text layer is clean Times New Roman for every question line (capitals stored as printed; \"fi\" / \"fl\" stored as ligatures; checked against the OCR and the renders). The title is printed in capitals and kept so, without the \"Q.\" number. Section B: the \"PREPARATORY WORK\" (scale and chord bank) is MARKED at Ordinary Level (\"Grid\", 1 mark per correct note of chord, 12), so its heading and bullets are part of the question text (coordinator ruling: \"PREPARATORY WORK • ...\") and its line is a counted criterion. The chord bank prints I (\"The first chord is given\") and also iii and vii already filled in and shaded, outside the five chords asked for: the 12 notes are those of ii, IV, V and vi; the pre-filled chords are part of the printed question, not separate asks (as 2011 Ordinary). \"PREPARATORY WORK\" is printed in capitals (not bold); \"or\" is italic in the chord-bank bullet, which wraps over two printed lines (joined with a space; \"first\" printed with an fi ligature). The stem keeps the printed capitals and prints no full stop after \"Q6\", kept (\"Answer\", \"in this section\" and \"or\" italic). SCHEME (2010 Ordinary, page 4): no \"SECTION B – HARMONY\" heading is printed, so the marking-guide note is the page's header line \"Composing - Ordinary level\"; NO \"OR\" between its lines, NO Section B general points and NO table of given or accepted chords, so there are no task requirements and no scheme crop (as 2011 Ordinary, the same table). \"12\" / \"2 x 12\" / \"1 x 12\" sit in the scheme's Mark column, so the labels carry the descriptor only. Each \"1 x 12\" line is its own counted criterion at rate 1, 12 items, labelled with the printed line and carrying the element name as guidance (as the Grid line); the two lines of each element add to its printed sub-total 24 (the second line awards \"1 extra mark\" on top of the first, so every total the scheme can give is placed). As 2011 Ordinary, whose scheme prints the same lines. Grid 12 + Chords (12 + 12) + Bass (12 + 12) = 60. The bass cadence line wraps over two printed lines (joined with a space). \"or\" is italic in the last bullet. Key F major, 3/4 (the chord bank prints vii as B♭ G E, \"Edim\"); three chord boxes over each cadence, lettered A-D."
+  },
+  {
+   "paper": "composing",
+   "address": "Section B Q6",
+   "page": 10,
+   "pages": [
+    10,
+    11
+   ],
+   "crop": [
+    0.05,
+    0.033,
+    0.95,
+    0.682
+   ],
+   "questionText": "ADDING DESCANT NOTES AND CHORD INDICATIONS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of G major on the stave below: • Plot the chords available in this key (I, ii, IV, V, vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Complete the phrase endings by adding suitable chords and descant notes at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-15",
+   "marks": 60,
+   "schemePage": 4,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     4
+    ],
+    "markingGuideNote": "Composing - Ordinary level",
+    "stem": "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "grid",
+      "label": "1 mark per correct note of chord",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Grid"
+      ]
+     },
+     {
+      "id": "chords-fit",
+      "label": "1 mark per chord that fits.",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Chords"
+      ]
+     },
+     {
+      "id": "chords-cadence",
+      "label": "1 extra mark per good cadence chord",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Chords"
+      ]
+     },
+     {
+      "id": "descant-fit",
+      "label": "1 mark per correct note for every chord that fits",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Descant"
+      ]
+     },
+     {
+      "id": "descant-cadence",
+      "label": "1 extra mark per correct note for every good cadence chord",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Descant"
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "The composing booklet's text layer is clean Times New Roman for every question line (capitals stored as printed; \"fi\" / \"fl\" stored as ligatures; checked against the OCR and the renders). The title is printed in capitals and kept so, without the \"Q.\" number. Section B: the \"PREPARATORY WORK\" (scale and chord bank) is MARKED at Ordinary Level (\"Grid\", 1 mark per correct note of chord, 12), so its heading and bullets are part of the question text (coordinator ruling: \"PREPARATORY WORK • ...\") and its line is a counted criterion. The chord bank prints I (\"The first chord is given\") and also iii and vii already filled in and shaded, outside the five chords asked for: the 12 notes are those of ii, IV, V and vi; the pre-filled chords are part of the printed question, not separate asks (as 2011 Ordinary). \"PREPARATORY WORK\" is printed in capitals (not bold); \"or\" is italic in the chord-bank bullet, which wraps over two printed lines (joined with a space; \"first\" printed with an fi ligature). The stem keeps the printed capitals and prints no full stop after \"Q6\", kept (\"Answer\", \"in this section\" and \"or\" italic). SCHEME (2010 Ordinary, page 4): no \"SECTION B – HARMONY\" heading is printed, so the marking-guide note is the page's header line \"Composing - Ordinary level\"; NO \"OR\" between its lines, NO Section B general points and NO table of given or accepted chords, so there are no task requirements and no scheme crop (as 2011 Ordinary, the same table). \"12\" / \"2 x 12\" / \"1 x 12\" sit in the scheme's Mark column, so the labels carry the descriptor only. Each \"1 x 12\" line is its own counted criterion at rate 1, 12 items, labelled with the printed line and carrying the element name as guidance (as the Grid line); the two lines of each element add to its printed sub-total 24. As 2011 Ordinary, whose scheme prints the same lines. Grid 12 + Chords (12 + 12) + Descant (12 + 12) = 60. The descant cadence line wraps over two printed lines (joined with a space). \"or\" is italic in the last bullet. Key G major, 4/4; the score prints descant and melody on one treble stave (labelled \"Descant\" / \"Melody\") over a bass stave (\"Bass\"), three chord boxes over each phrase ending, lettered A-D."
+  }
+ ]
+}

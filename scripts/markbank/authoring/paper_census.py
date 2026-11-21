@@ -2455,7 +2455,7 @@ def census_sections(subject, year, level, files=None):
     return set(parts), texts, P.files
 
 
-def census_lang(subject, year, level):
+def census_lang(subject, year, level, sitting=None):
     """French: the written booklet and the listening booklet, read together.
 
     THE DENOMINATOR IS THE PAPER, and in this subject the paper needs help
@@ -2486,8 +2486,8 @@ def census_lang(subject, year, level):
     from fr_paper import FrPaper                              # noqa: E402
     from fr_scheme import FrScheme                            # noqa: E402
 
-    P = FrPaper(year, level, subject)
-    S = FrScheme(year, level, subject)
+    P = FrPaper(year, level, subject, sitting=sitting)
+    S = FrScheme(year, level, subject, sitting=sitting)
     # A readable text file is not proof that this parser understood its layout.
     # Older schemes use Roman sections and paired 7+1 allocations. Without
     # this guard they silently census zero reading tasks after PDF extraction.
@@ -4359,7 +4359,214 @@ def irish_manifest_files():
     return names
 
 
+# Sittings the SEC never published, for the small languages (Claude queue 5;
+# SOURCES.md item 5, checked 18 Nov 2026): no paper in the SEC's 31 Aug 2026
+# archive listing (the subject is absent from that year's exam-paper list), and
+# where checked live on 18 Nov 2026 the archive address returned 404. Nothing to
+# card: recorded so the census says "not published" and never "unread". A
+# sitting is listed only where neither paper is on disk.
+_LISTING = 'not in the SEC archive listing of 31 Aug 2026 (subject absent from that year\'s exam-paper list)'
+_LIVE404 = _LISTING + '; live check 18 Nov 2026: paper LC{code}ALP000EV.pdf = 404'
+NOT_PUBLISHED = {
+    ('danish', 2013, 'hl'): _LIVE404.format(code='038'),
+    ('danish', 2020, 'hl'): _LISTING,
+    ('danish', 2021, 'hl'): _LISTING,
+    ('danish', 2026, 'hl'): _LIVE404.format(code='038'),
+    ('estonian', 2020, 'hl'): _LISTING,
+    ('estonian', 2026, 'hl'): _LIVE404.format(code='552'),
+    ('finnish', 2017, 'hl'): (_LISTING + '; the SEC published the scheme (markingschemes/2017/LC049ALP000EV.pdf) '
+                              'but not the paper: live check 18 Nov 2026, LC049ALP000EV.pdf, LC049ALP000IV.pdf, '
+                              'LC049AP000EV.pdf = 404'),
+    ('finnish', 2020, 'hl'): _LISTING,
+    ('finnish', 2021, 'hl'): _LISTING,
+    ('finnish', 2026, 'hl'): _LIVE404.format(code='049'),
+    ('maltese', 2020, 'hl'): _LISTING,
+    ('maltese', 2021, 'hl'): _LISTING,
+    ('maltese', 2026, 'hl'): _LIVE404.format(code='557'),
+    ('slovenian', 2020, 'hl'): _LISTING,
+    ('slovenian', 2021, 'hl'): _LISTING,
+    ('slovenian', 2025, 'hl'): _LIVE404.format(code='558'),
+    ('slovenian', 2026, 'hl'): _LIVE404.format(code='558'),
+    ('modern-greek', 2020, 'hl'): _LISTING,
+    ('slovakian', 2020, 'hl'): _LISTING,
+    ('swedish', 2020, 'hl'): _LISTING,
+}
+
+
+# A printed ask the paper gives NO number, so no walker can key it: added to
+# its sitting by name, scoped to that one sitting (coordinator ruling, 20 Nov
+# 2026). Maltese 2019 prints a sixth reading question at the head of p4, priced
+# "(5 marki)", between Q1 and the paper's Q2 (its marking scheme calls it
+# Question 2 and the paper's 2-5 its 3-6); Part I reaches its printed 30 only
+# with it. Cited "Section I Q1A". The leaf's text is lifted from the paper's own
+# printed lines: (page, the line it opens with, the line it ends with), and its
+# marks from the price cell printed beside its last line.
+ADDED_ASKS = {
+    ('maltese', 2019, 'hl'): [
+        {'key': ['I', '1A', None, None], 'label': 'Section I Q1A', 'before': ['I', 2, None, None],
+         'lines': (4, 'X\u2019tgħallem dwar l-aspett fiżiku', 'tagħlima għall-ħajja minn dan?')},
+    ],
+    # Danish 2018 numbers its sixth reading question "6" with no stop (p4 y234,
+    # "6 ”De sociale medier ...”"), which the walker does not take for a
+    # question number, so the census counts Q1-Q5; the paper prices it
+    # "(maks. 5 point)" beside its last line (y267) and the scheme answers it.
+    # Keyed and cited by the number it prints: Section I Q6.
+    ('danish', 2018, 'hl'): [
+        {'key': ['I', 6, None, None], 'label': 'Section I Q6', 'before': ['II', 1, None, None],
+         'lines': (4, '\u201dDe sociale medier', 'Rasmussens synspunkt.'),
+         'price': r'\(\s*maks\.\s*(\d+)\s*point\s*\)'},
+    ],
+    # Estonian 2010 prints its two essay titles as "1)" and "2)", but the text
+    # layer welds title 2 onto title 1's line ("1) Keegi ei ole saar
+    # Mainimatajätmine ei tähenda valetamist", then "2)" alone), so the census
+    # keys only III1. Title 2 is cut from that printed line; it is an
+    # alternative of Part III (40 / 100), whose total the census already holds.
+    ('estonian', 2010, 'hl'): [
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'cut': (4, '1) Keegi ei ole saar', 'saar '), 'alternative': True},
+    ],
+    # Finnish 2022 prints essay title 1 as "1.“Suomessa kannustamisen kulttuuri
+    # ei ole hirveän vahva.”" (p4 y709) with no space after "1.", which the
+    # walker does not take for a title number, so the census keys only title 2
+    # (II2: a two-part sitting, Part II is the essay). Title 1 is the words
+    # after its printed "1."; an alternative of Part II (40/70), whose total the
+    # census already holds.
+    ('finnish', 2022, 'hl'): [
+        {'key': ['II', 1, None, None], 'label': 'Section II Q1', 'before': ['II', 2, None, None],
+         'cut': (4, '1.\u201cSuomessa kannustamisen', '1.'), 'alternative': True},
+    ],
+    # Slovenian 2022 and 2024 print their second essay title on a line of its own
+    # after "ALI" (2022 p4 y690, 2024 p4 y740), which the walker folds into
+    # title 1's part and keys no ask for: lifted as that printed line, an
+    # alternative of its part's 40, whose total the census already holds.
+    ('slovenian', 2022, 'hl'): [
+        {'key': ['II', 2, None, None], 'label': 'Section II Q2', 'before': None,
+         'line': (4, 'Kako se razvije pravo prijateljstvo'), 'alternative': True},
+    ],
+    ('slovenian', 2024, 'hl'): [
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'line': (4, '\u00bbVsak \u010dlovek je enkratna stvaritev'), 'alternative': True},
+    ],
+    # Swedish: the walker keys only the first of the two essay titles in six
+    # sittings (the second is printed after "eller"/a blank, a line or run of
+    # its own); and in 2016 it misses Question 1(b), "1b. Ersätt ..." priced
+    # "(2 poäng)" beside its instruction line (p3 y703), its expression on the
+    # next (y727). Drafter's census check, 20 Nov.
+    ('swedish', 2010, 'hl'): [
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'line': (4, 'Ingen människa är en ö'), 'alternative': True},
+    ],
+    ('swedish', 2011, 'hl'): [
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'line': (4, '\u201dDe flesta människor', 'Abraham Lincoln'), 'alternative': True},
+    ],
+    ('swedish', 2012, 'hl'): [
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'line': (4, 'I vårt moderna samhälle'), 'alternative': True},
+    ],
+    ('swedish', 2013, 'hl'): [
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'line': (4, 'Att följa sina drömmar'), 'alternative': True},
+    ],
+    ('swedish', 2015, 'hl'): [
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'line': (4, '\u201dHan är rikast'), 'alternative': True},
+    ],
+    ('swedish', 2016, 'hl'): [
+        {'key': ['I', 1, 'b', None], 'label': 'Section I Q1(b)', 'before': ['I', 2, None, None],
+         'lines': (3, '1b. Ersätt', 'Gå på magkänslan (stycke 2)'), 'price': r'\(\s*(\d+)\s*poäng\s*\)',
+         'price_beside_first': True},
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'line': (4, '\u201dVärlden kan vara', "Fintan O'Toole"), 'alternative': True},
+    ],
+}
+
+
+def _added_leaf(subject, year, level, spec):
+    """One ADDED_ASKS leaf, its text and price read off the printed paper."""
+    if subject in ('latvian', 'czech'):            # the lt walker's sittings
+        import lt_paper
+        P = lt_paper.LtPaper(year, level, subject)
+    else:
+        import eu_paper
+        P = eu_paper.EuPaper(year, level, subject)
+    if 'line' in spec:
+        # a title printed as a line of its own (page, opening), or as a run of lines (page, first
+        # line's opening, last line's opening: every line between, by position, an attribution
+        # set to the right included): as printed
+        page, opening = spec['line'][:2]
+        last = spec['line'][2] if len(spec['line']) > 2 else opening
+        on_page = sorted((l for l in P.lines if l.page == page), key=lambda l: (round(l.y), l.x))
+        first = [l for l in on_page if l.text.strip().startswith(opening)]
+        end = [l for l in on_page if l.text.strip().startswith(last)]
+        if len(first) != 1 or len(end) != 1 or end[0].y < first[0].y:
+            raise ValueError(f'{subject} {year}: {len(first)}/{len(end)} lines open {opening!r}/{last!r}')
+        run = [l for l in on_page if first[0].y - 1 <= l.y <= end[0].y + 1]
+        return {'key': spec['key'], 'label': spec['label'],
+                'text': re.sub(r'\s+', ' ', ' '.join(l.text for l in run)).strip()}, 0
+    if 'cut' in spec:
+        # a title the text layer welds onto another printed line: the words after `after`
+        page, opening, after = spec['cut']
+        hits = [l for l in P.lines if l.page == page and l.text.strip().startswith(opening)]
+        if len(hits) != 1 or after not in hits[0].text:
+            raise ValueError(f'{subject} {year}: {len(hits)} lines open {opening!r}')
+        text = re.sub(r'\s+', ' ', hits[0].text.split(after, 1)[1]).strip()
+        return {'key': spec['key'], 'label': spec['label'], 'text': text}, 0
+    page, first, last = spec['lines']
+    lines = [l for l in P.lines if l.page == page]
+    start = next(i for i, l in enumerate(lines) if l.text.strip().startswith(first))
+    end = next(i for i, l in enumerate(lines[start:], start) if l.text.strip().endswith(last))
+    body = [l for l in lines[start:end + 1] if abs(l.x - lines[start].x) < 40]
+    price = re.compile(spec.get('price', r'\(\s*(\d+)\s*marki?\s*\)'))
+    if 'price_head' in spec:
+        # an unnumbered part task priced only on its part's head ("II daļa (30 punkti)")
+        hp, hopen = spec['price_head']
+        heads = [l for l in P.lines if l.page == hp and l.text.strip().startswith(hopen)]
+        if len(heads) != 1 or not price.search(heads[0].text):
+            raise ValueError(f'{subject} {year}: {len(heads)} heads open {hopen!r}')
+        text = re.sub(r'\s+', ' ', ' '.join(l.text for l in body)).strip()
+        return ({'key': spec['key'], 'label': spec['label'], 'text': text},
+                int(price.search(heads[0].text).group(1)))
+    # the price cell beside the ask's last line, or beside its first ('price_beside_first': a
+    # sub-question priced on its instruction line, Swedish 2016 1b)
+    at = lines[start] if spec.get('price_beside_first') else lines[end]
+    cells = [l for l in lines if abs(l.y - at.y) < 2 and l is not at
+             and price.fullmatch(l.text.strip())]
+    if len(cells) != 1:
+        raise ValueError(f'{subject} {year}: {len(cells)} price cells beside the added ask')
+    marks = int(re.search(r'\d+', cells[0].text).group(0))
+    text = re.sub(r'\s+', ' ', ' '.join(l.text for l in body)).strip()
+    return {'key': spec['key'], 'label': spec['label'], 'text': text}, marks
+
+
 def census_subject(subject):
+    """The census, with the subject's never-published sittings recorded beside
+    it (only where NOT_PUBLISHED lists one, so no other subject's result moves),
+    and any ADDED_ASKS leaf put in its sitting (that subject only)."""
+    result = _census_subject(subject)
+    for (s, y, l), specs in sorted(ADDED_ASKS.items()):
+        if s != subject:
+            continue
+        paper = next(p for p in result['papers'] if p['year'] == y and p['level'] == l)
+        for spec in specs:
+            leaf, marks = _added_leaf(s, y, l, spec)
+            at = (next(i for i, x in enumerate(paper['leaves']) if x['key'] == spec['before'])
+                  if spec.get('before') else len(paper['leaves']))
+            paper['leaves'].insert(at, leaf)
+            paper['leafCount'] += 1
+            paper['marksSum'] += marks          # 0 for an alternative title: its part's total is counted
+    gone = [{'year': y, 'level': l, 'evidence': e}
+            for (s, y, l), e in sorted(NOT_PUBLISHED.items()) if s == subject]
+    if gone:
+        on_disk = {(p['year'], p['level']) for p in result['papers']}
+        clash = [(g['year'], g['level']) for g in gone if (g['year'], g['level']) in on_disk]
+        if clash:
+            raise ValueError(f'{subject}: listed as never published but a paper is on disk: {clash}')
+        result['notPublished'] = gone
+    return result
+
+
+def _census_subject(subject):
     if subject == 'accounting':
         import importlib.util
         spec = importlib.util.spec_from_file_location('accounting_coverage', os.path.join(ROOT, 'scripts', 'markbank', 'accounting', 'coverage.py'))
@@ -4885,6 +5092,8 @@ def census_subject(subject):
         papers.extend(census_spanish_deferred())
     if subject == 'german':
         papers.extend(census_german_deferred())
+    if subject == 'french':
+        papers.extend(census_french_deferred())
     if subject == 'maths':
         papers.extend(census_maths_reviewed_booklets())
     if subject == 'physics':
@@ -5172,6 +5381,40 @@ def census_german_deferred():
         paper['paper'] = 'Deferred'
         paper['marksSum'], paper['marksQuestions'] = None, 0
         papers.append(paper)
+    return papers
+
+
+# The SEC's deferred French sittings in the archive: 2022 and 2023, Higher and Ordinary, each a written
+# booklet and a listening booklet in the bilingual edition (deferredexams/<year>/LC010<A|G>LP000BV.pdf and
+# LC010<A|G>LPA00BV.pdf; scheme LC010<A|G>LP000EV in deferredmarkingschemes/). None for 2024 or 2025.
+# (2022 and 2023, both levels.) A sitting is read once its reviewed reading ledger record exists
+# (french-reading-review-deferred.json), as Business adds its own sittings one by one.
+FR_DEFERRED_SITTINGS = tuple((r['year'], r['level']) for r in json.load(open(os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), 'french-reading-review-deferred.json'), encoding='utf-8'))['papers'])
+
+
+def census_french_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Each deferred French sitting (FR_DEFERRED_SITTINGS) is a paper of its own,
+    keyed 'Deferred' as Spanish's is (census_spanish_deferred): its written and
+    listening booklets read by census_lang exactly as June's are, with
+    fr_paper.FrPaper(..., sitting='deferred') and its own scheme
+    (schemes/<year>-<level>-deferred.md), so a deferred ask never lands on a
+    June leaf with the same address. The checksum is not run on it.
+    """
+    papers = []
+    for year, level in FR_DEFERRED_SITTINGS:
+        parts, texts, _files, P, S, claimed = census_lang('french', year, level, sitting='deferred')
+        leaves = list(leaves_of(parts))
+        flags = lang_flags(P, S, claimed)
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'french'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
     return papers
 
 

@@ -17,15 +17,15 @@
     "sourceBlockedAssociations": 23,
     "matchedLocalCardLinks": 478,
     "localPaperVariants": 98,
-    "localPhysicalMappings": 997,
-    "distinctStudentFacingQuestions": 730,
+    "localPhysicalMappings": 1019,
+    "distinctStudentFacingQuestions": 748,
     "referenceMappedLocalQuestions": 388,
-    "retainedLocalQuestions": 609,
+    "retainedLocalQuestions": 631,
     "hostedPaperAnchorMaps": 98,
     "preservedBaselineVariants": 32,
     "preservedBaselineCards": 456,
     "newlyAddedPaperVariants": 66,
-    "newlyAddedPhysicalMappings": 541,
+    "newlyAddedPhysicalMappings": 563,
     "emptyReferenceTopics": [
       "italian-higher-essay-writing-il-treno-dei-bambini",
       "italian-higher-essay-writing-le-otto-montagne",
@@ -6206,6 +6206,30 @@
       "year": 2025,
       "fileid": "LC013ALP000BV.pdf",
       "paperKey": "single",
+      "n": "21",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2025,
+      "fileid": "LC013ALP000BV.pdf",
+      "paperKey": "single",
+      "n": "22",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2025,
+      "fileid": "LC013ALP000BV.pdf",
+      "paperKey": "single",
       "n": "C1",
       "topicIds": [
         "italian-higher-written-composition-opinion-piece"
@@ -6890,6 +6914,30 @@
       "year": 2024,
       "fileid": "LC013ALP000BV.pdf",
       "paperKey": "single",
+      "n": "21",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2024,
+      "fileid": "LC013ALP000BV.pdf",
+      "paperKey": "single",
+      "n": "22",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2024,
+      "fileid": "LC013ALP000BV.pdf",
+      "paperKey": "single",
       "n": "C1",
       "topicIds": [
         "italian-higher-written-composition-opinion-piece"
@@ -7555,6 +7603,30 @@
         "italian-higher-reading-comprehension-literary-unseen"
       ],
       "provenance": "retained-local-historic-literary"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC013ALP000BV.pdf",
+      "paperKey": "single",
+      "n": "21",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC013ALP000BV.pdf",
+      "paperKey": "single",
+      "n": "22",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
     },
     {
       "level": "higher",
@@ -8246,6 +8318,30 @@
       "year": 2022,
       "fileid": "LC013ALP000BV.pdf",
       "paperKey": "single",
+      "n": "21",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC013ALP000BV.pdf",
+      "paperKey": "single",
+      "n": "22",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC013ALP000BV.pdf",
+      "paperKey": "single",
       "n": "C1",
       "topicIds": [
         "italian-higher-written-composition-opinion-piece"
@@ -8911,6 +9007,30 @@
         "italian-higher-reading-comprehension-literary-unseen"
       ],
       "provenance": "retained-local-historic-literary"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2021,
+      "fileid": "LC013ALP000BV.pdf",
+      "paperKey": "single",
+      "n": "21",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2021,
+      "fileid": "LC013ALP000BV.pdf",
+      "paperKey": "single",
+      "n": "22",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
     },
     {
       "level": "higher",
@@ -9614,6 +9734,30 @@
       "year": 2020,
       "fileid": "LC013ALP000BV.pdf",
       "paperKey": "single",
+      "n": "21",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2020,
+      "fileid": "LC013ALP000BV.pdf",
+      "paperKey": "single",
+      "n": "22",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2020,
+      "fileid": "LC013ALP000BV.pdf",
+      "paperKey": "single",
       "n": "C1",
       "topicIds": [
         "italian-higher-written-composition-opinion-piece"
@@ -9907,6 +10051,30 @@
         "italian-higher-reading-comprehension-literary-unseen"
       ],
       "provenance": "retained-local-historic-literary"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2019,
+      "fileid": "LC013ALP000BV.pdf",
+      "paperKey": "single",
+      "n": "21",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2019,
+      "fileid": "LC013ALP000BV.pdf",
+      "paperKey": "single",
+      "n": "22",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
     },
     {
       "level": "higher",
@@ -10644,6 +10812,30 @@
     },
     {
       "level": "higher",
+      "lang": "ev",
+      "year": 2018,
+      "fileid": "LC013ALP000EV.pdf",
+      "paperKey": "single",
+      "n": "22",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2018,
+      "fileid": "LC013ALP000EV.pdf",
+      "paperKey": "single",
+      "n": "23",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
       "lang": "iv",
       "year": 2018,
       "fileid": "LC013ALPA00IV.pdf",
@@ -10917,6 +11109,30 @@
         "italian-higher-written-composition-formal",
         "italian-higher-written-composition-guided",
         "italian-higher-written-composition-opinion-piece"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2018,
+      "fileid": "LC013ALP000IV.pdf",
+      "paperKey": "single",
+      "n": "22",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2018,
+      "fileid": "LC013ALP000IV.pdf",
+      "paperKey": "single",
+      "n": "23",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
       ],
       "provenance": "retained-local"
     },
@@ -11443,6 +11659,30 @@
     },
     {
       "level": "higher",
+      "lang": "ev",
+      "year": 2017,
+      "fileid": "LC013ALP000EV.pdf",
+      "paperKey": "single",
+      "n": "22",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2017,
+      "fileid": "LC013ALP000EV.pdf",
+      "paperKey": "single",
+      "n": "23",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
       "lang": "iv",
       "year": 2017,
       "fileid": "LC013ALP000IV.pdf",
@@ -11692,6 +11932,30 @@
         "italian-higher-written-composition-formal",
         "italian-higher-written-composition-guided",
         "italian-higher-written-composition-opinion-piece"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2017,
+      "fileid": "LC013ALP000IV.pdf",
+      "paperKey": "single",
+      "n": "22",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2017,
+      "fileid": "LC013ALP000IV.pdf",
+      "paperKey": "single",
+      "n": "23",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
       ],
       "provenance": "retained-local"
     },

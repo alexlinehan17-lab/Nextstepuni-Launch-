@@ -122,6 +122,7 @@ import { FRENCH_WRITING_CARDS } from '../components/MarkBank/cards/french/writin
 import { FRENCH_LISTENING_CARDS } from '../components/MarkBank/cards/french/listening';
 import { FRENCH_CLOZE_CARDS } from '../components/MarkBank/cards/french/cloze';
 import { FRENCH_READING_CARDS } from '../components/MarkBank/cards/french/reading';
+import { FRENCH_DEFERRED_CARDS } from '../components/MarkBank/cards/french/deferred';
 import { CARDS as GERMAN_HIGHER } from '../components/MarkBank/cards/german/higher';
 import { CARDS as GERMAN_ORDINARY } from '../components/MarkBank/cards/german/ordinary';
 import { CARDS as SPANISH_HIGHER } from '../components/MarkBank/cards/spanish/higher';
@@ -220,6 +221,7 @@ import { CARDS as SLOVAKIAN_HIGHER } from '../components/MarkBank/cards/slovakia
 import { CARDS as SLOVENIAN_HIGHER } from '../components/MarkBank/cards/slovenian/higher';
 import { CARDS as SWEDISH_HIGHER } from '../components/MarkBank/cards/swedish/higher';
 import { CARDS as UKRAINIAN_HIGHER } from '../components/MarkBank/cards/ukrainian/higher';
+import { CARDS as MALTESE_HIGHER } from '../components/MarkBank/cards/maltese/higher';
 import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
 import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
 import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
@@ -1656,6 +1658,14 @@ const businessAdditionIds = new Set([
 // their own ids are not additions and stay in the frozen hash.
 const engineeringAdditionIds = new Set<string>((JSON.parse(readFileSync(resolve(__dirname, '..',
   'scripts/markbank/authoring/eng_residue/additions.json'), 'utf8')) as { ids: string[] }).ids);
+/* The small languages (Claude queue 5, from 2026-11-20): every card that lane
+ * adds is listed by subject and sitting in sl_additions.json (written by
+ * scripts/markbank/authoring/sl_batch.py) and held apart from its deck's frozen
+ * pre-lane identity above, never folded into it. Each sitting is pinned by
+ * count and id hash (SMALL_LANGUAGE_SITTINGS below). */
+const smallLanguageAdditions = JSON.parse(readFileSync(resolve(__dirname, '..',
+  'scripts/markbank/authoring/sl_additions.json'), 'utf8')) as Record<string, Record<string, string[]>>;
+const smallLanguageAddedIds = new Set(Object.values(smallLanguageAdditions).flatMap(bySitting => Object.values(bySitting).flat()));
 // Keep the original French count/hash frozen. Reviewed additions have their own
 // source-and-route audit in frenchWriting.test.ts; never rebaseline missing IDs.
 const frenchAdditionIds = new Set([
@@ -1663,6 +1673,8 @@ const frenchAdditionIds = new Set([
   // Reviewed corrections retain legacy IDs and remain in the frozen hash.
   ...FRENCH_READING_CARDS.filter(card => card.id.includes('-reading-')),
   ...FRENCH_CLOZE_CARDS, ...FRENCH_LISTENING_CARDS,
+  // The deferred sittings' reviewed cards (2022 and 2023): new, never a frozen identity.
+  ...FRENCH_DEFERRED_CARDS,
 ].map(card => card.id));
 /* Economics keeps its 697 pre-review IDs frozen (383 Higher + 314 Ordinary, the
  * original identity hashes above). The paper-by-paper physical review
@@ -2881,6 +2893,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
   if (name.startsWith('spanish:')) return ids.filter(id => !isSpanishAdded(id));
   if (name.startsWith('german:')) return ids.filter(id => !isGermanAdded(id));
+  if (name.split(':')[0] in smallLanguageAdditions) return ids.filter(id => !smallLanguageAddedIds.has(id));
   if (name.startsWith('polish:')) return ids.filter(id => !isPolishAdded(id));
   if (name.startsWith('portuguese:')) return ids.filter(id => !isPortugueseAdded(id));
   if (name.startsWith('lithuanian:')) return ids.filter(id => !isLithuanianAdded(id));
@@ -2950,8 +2963,8 @@ const technologyAdditions = {
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
 } as const;
 const italianAdditions = {
-  higher: [ITALIAN_HIGHER, 436, 'ad9de9b34b4501d67915b443dc5485a91988b8e781d7dd03a933ee019f630f16'],
-  ordinary: [ITALIAN_ORDINARY, 269, '3e4cc8f260417745b5f178183ea24fdf9b8bfec0d24ee1a413bbadfa1ee2351a'],
+  higher: [ITALIAN_HIGHER, 504, 'ee6281632adf4f9d97a15549ba06d413df80cf84b4f06ef778666013053ce7e7'],
+  ordinary: [ITALIAN_ORDINARY, 465, '8ed9802011754a0fe21aa3c7802709d9ac4aa0aaaafee620f309bbdf52de78c6'],
 } as const;
 const dcgAdditions = {
   higher: [DCG_HIGHER, 460, 'f3f80dccc2dbf842c64db715d43b83169290d4cb7315d9eb2087ad8b29c0a4c1'],
@@ -3085,7 +3098,10 @@ describe('Mark Bank card preservation', () => {
     // Q1 trace through the split-only scheme form); 2019 Higher added whole,
     // 68 cards for its 68 asks; 2019 Ordinary added whole, 65 cards for its
     // 71 asks (the matching task's eight items are two cards of four); 2018
-    // Higher added whole, 68 cards for its 68 asks.
+    // Higher added whole, 68 cards for its 68 asks; 2018 Ordinary added whole,
+    // 63 cards for its 69 asks; 2017 Higher added whole, 68 cards for its 68
+    // asks; 2017 Ordinary added whole, 65 cards for its 71 asks; 2016
+    // Ordinary added whole, 68 cards for its 68 asks.
     const additions = cards.map(card => card.id).filter(isItalianAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
@@ -3212,6 +3228,253 @@ describe('Mark Bank card preservation', () => {
       .toBe(true);
   });
 
+  it('pins every card the small-languages lane adds, sitting by sitting', () => {
+    // [subject, year, cards, sha256 of the sorted ids]. One row per sitting,
+    // added in the commit that cards it; a row never changes once added.
+    const SMALL_LANGUAGE_SITTINGS: Array<[string, number, number, string]> = [
+      ['dutch', 2010, 13, '3a68196d10246f17ffe2c2693bf6398820bed450dc655cb515ad450ed31ecaef'],
+      ['dutch', 2011, 13, '5a92235acf051a9e4f36c945f37769a69a8527ec10816712f3c39ae4a31b8524'],
+      ['dutch', 2012, 13, '06b2559861d2da72d2e5ecc3d4bf65fe990a5a322ce09da458c8703f026a1402'],
+      ['dutch', 2013, 13, 'a378638b30d1f6be020056854e8039fe3d14fbf407485e1eb422237e4345f987'],
+      ['dutch', 2014, 13, '408f512f6afa78afc50d6ca21526f68acc9b2acdfcfc5ca355f1a14ed472b21a'],
+      ['dutch', 2015, 13, '22c9d7a17c0c0053dd8b0efc4113235d51c5afea5d6148dea52fc2fd9108b2cb'],
+      ['dutch', 2016, 13, '86342775d756ed3aa3853e3ab8031e85a55fa350abe324a3646e648966554a34'],
+      ['dutch', 2017, 13, 'c793fc39cc9381a4dfad0c103535abafaf02c30277e55cc8dc4beeb35e17c190'],
+      ['dutch', 2018, 13, '0757dbf969812da401e67bedfb41bd5400b6395de16feffc49320a53f45613cd'],
+      ['dutch', 2019, 13, 'bdea504288d0524e7ceef6810591f728e8fc70cb9fc728095abfcf46f80affef'],
+      ['dutch', 2020, 13, 'e333d7476c467ae58f3aec8edbe6f2517500e8e56377e3c984c6bb2c4bcbe050'],
+      ['dutch', 2026, 13, '8d422d1df08c3f3ed6148b3968847c640148ab8eaa3ceba58091bb95575f1e4c'],
+      ['dutch', 2021, 3, 'db001b028c6873d58554d410a85bff20ae222a1780d2ce52bfdae777b60066c1'],
+      ['dutch', 2022, 3, '9396985d5841bd534a5648316b8abf7d545bebd735ed71c41f9d8b0bed21cc9d'],
+      ['dutch', 2023, 7, 'ae0bf4986a45a2d9c988e595e3ecedf962ff9b0b6d5f2682fad9c74f553d5be1'],
+      ['dutch', 2024, 5, 'ee49790d05585d81a93a01b480d71f872e910db7099f2f017a103974d4bdfcd2'],
+      ['dutch', 2025, 3, 'c4631a98cf05cccc437075552640f2bfbe77a3878eabc45c2a4ecbc8b60c7c56'],
+      ['romanian', 2010, 13, 'b388cedfdd59e269acfdb1a84469f59d9784ef19b1bac733ec88066561039322'],
+      ['romanian', 2011, 13, 'd8bfba521906869e46792a3ca77b504684822d0dc142ab65ac115957871e5299'],
+      ['romanian', 2012, 9, '0c957a48104e3bc625edbd087a8cdfd1f1479759433f214cb283c96a4ba34036'],
+      ['romanian', 2014, 9, '22180f3a9dd576d09b3ff2b40060bf6292444139f74fb791aa88a69e325748e2'],
+      ['romanian', 2016, 9, '86e3dc3638613ed4a4022a661ecfa5d6df98d83acdb40a056412facad4783854'],
+      ['romanian', 2013, 9, 'f00de84d0599be29ea1a4c9aa5c333037ad9c71419366e1c19304dccca1580b3'],
+      ['romanian', 2015, 9, '35d8156afacb48b2d0b1ac48e678f585d60c0478f9a1ebc59733a445de6a01e4'],
+      ['romanian', 2017, 9, '0179a8a8fdd25b4aef2252aa5bb8a1f6381b6bd310fa16678bf03ddf702559c3'],
+      ['romanian', 2018, 9, 'fdd90c79b9584893886511e60c989dc68a1f103ea70132c1ace6414d49d29e69'],
+      ['romanian', 2019, 13, '28a8dcc3fadd7530aefcbdecdf03a6ee1e4d049e89dcf9b8bd80ef9839dc3746'],
+      ['romanian', 2020, 9, '6c0fe26e2151364b80feb57a52cea48cb84234337e08de6d2337977661bd7749'],
+      ['romanian', 2026, 13, '4bbeb67251b021c1fe80c19ba03ecb3c72bbb63cbdea80b4f595411b95476a25'],
+      ['romanian', 2021, 2, '384ca0376d7ec379740b82017bbef065945a039f011e6010faeaafec012fc747'],
+      ['romanian', 2022, 2, '0a42c13cefc4f3cbd2bed0a7a0a4ca9962b67052a28a03353922ad816d88e783'],
+      ['romanian', 2023, 3, '670bc19087ba638f329e553a93cd29b51eb0bf8d78d6b1871ce0fd34740faa1f'],
+      ['romanian', 2024, 3, 'ef4d720529b9e031b1002284203c34e28d40916e0d5fbbbc02284064bd1b6a2d'],
+      ['romanian', 2025, 3, '7d5c07acaf944f948c9a19f86940a02dd414c1bb69add61e0a1480ad0e3cabab'],
+      ['maltese', 2018, 10, '92a2ec8e7c757c140730d3c23482d00f3ed8baed96a350ba56be860c02e34c5a'],
+      ['maltese', 2019, 8, '04dfe5fd23a28a583dd0d1f92a763d5d200d70d57ae73f8567e3d29d5848a3e7'],
+      ['maltese', 2022, 12, '4d04a303b1502f9e31a68ed05e8fcf0f64c4505adc6a4701275c421848e989f9'],
+      ['maltese', 2023, 6, 'bc2f7d0beaea922a15cbdc470ecf3de1b410e67bbaf16605695cbb64e9651c02'],
+      ['maltese', 2024, 8, 'c26537548d009f342ab802d90797794fc028b4d499a74a2b15893d8a47183931'],
+      ['maltese', 2025, 4, '1142c628c9dbe6d8aa2eaf9c60bd32131d8d47ee75a20128ffcb99b595f09250'],
+      ['bulgarian', 2010, 4, '928b2ab4521f122c39eae9a3b20b1a91e61fef5306faa5ed287fe37b42034fef'],
+      ['bulgarian', 2011, 8, '32d353de67a2ff47521b791ee843a8cf6b5cf7395f0e523156f5858b00f9d60e'],
+      ['bulgarian', 2012, 3, 'fecd812b31b875670fcaf10ad8df30a69d9037b29ab8da2a014ec726693708b6'],
+      ['bulgarian', 2013, 4, 'e8841e7f5948dd37bc38288d3b1c8b28c109a300ecc97fb874418d025db2ad61'],
+      ['bulgarian', 2014, 3, 'e627329d9626be175f171546ad990142229f2104a0ea6f7c99aa61fd11420acd'],
+      ['bulgarian', 2016, 3, 'e9068c626a05814366e33bf1ab695f415770b0630ffc91420faf3a89882a8e60'],
+      ['bulgarian', 2017, 3, 'aee4f7c6082388db4f481f9b1275739af9682f7497583606eeca1f4dbb7e7ef7'],
+      ['bulgarian', 2018, 3, 'f2317cf63f2ce399d96e83ffbc451d15f85c8f64b8397494be2a6a760c5e6939'],
+      ['bulgarian', 2019, 3, 'c38b6d835156f95bcc7188ff5bb740f8ae0b5ad540d095de3ba29bc4415eb448'],
+      ['bulgarian', 2020, 3, 'e3f912d521793f715edec27bdac7575b289642e5d7d01931d4fe848adf8aa35b'],
+      ['bulgarian', 2021, 5, '1eb68c9dc267206bfa7f8e56101e37f1d6a99fa1b54127ce91749db87fecbde8'],
+      ['bulgarian', 2022, 4, '433b991a07ef43009f95c2f6abf16bc7979de14953ce93f1b6a3f0e8edd96cc5'],
+      ['bulgarian', 2023, 4, '87286bb431aa05d2639e572a2b566bdb5ccfd1f1b3850b92d805f9127f1e3189'],
+      ['bulgarian', 2024, 3, 'beb8befbc95b807e73edf25d676eda54f6d1ffb646293cd185093c13a387ebb1'],
+      ['bulgarian', 2025, 7, '679c5faf23c7dd127f1138a364d6aeb19186222dd14d406eeec8f09bf9c6810a'],
+      ['bulgarian', 2026, 5, 'fe86a1edaccce3e76ec911e69086c435e3f38d02a38c3f62e0bca60f107a6e3b'],
+      ['bulgarian', 2015, 13, '1ac76298c0ba6f4f9097839fad638e3dc4580d3307641e716bb734ace63e7906'],
+      ['croatian', 2016, 3, 'b77a266fec23cfaf5aead152c6a4ad19a578bdf26a7f1a01b67c01c4523fb622'],
+      ['croatian', 2017, 4, 'f7a6292ef7e7f9397c2a98b6be3ffcdec083d1f666e9525ad993963e6e5973a2'],
+      ['croatian', 2018, 3, 'f1a69b6f5ef50dd22e3e0f6935a6c0e20a0215ae38096c2da637624d6a7bed36'],
+      ['croatian', 2019, 3, '7bdeba9ff6a1338bedd9b6a4685f66b2595a80b3d9bd41fa3df05c909d5e3d03'],
+      ['croatian', 2020, 4, '6bd6d235988c0c7bb2086e855e62aae195bffea4635885d6e418e5894ea94907'],
+      ['croatian', 2021, 2, '20de920a7663db60725c735efec9968cf95ee9cc6a23690f35c17fc7e363f109'],
+      ['croatian', 2022, 7, '1f42287f04c2eec4ef51c3c9cec80d1ff36ddf6a230f89763cab4eef39f8f9dc'],
+      ['croatian', 2023, 9, '392e4c288eaee5f088672f89133bf7715c9b74c20aa5aa469b3341b18f811798'],
+      ['croatian', 2024, 3, '6394abf732f5f9ec21814d4b12e1bf78824057740cc27504f40b8c5d8b29dcce'],
+      ['croatian', 2025, 3, 'a9e21d41069f79e6c3a5c742f743fcd4aa563cf004ef0c2a76d30463156e681c'],
+      ['croatian', 2026, 3, 'afe2d3b44ee6b2ba2420ffacf213435fa8b607195e6813191e0050610a4913e1'],
+      ['czech', 2010, 8, '88198a288dc58acc3ff42e31bc47d2dd42e596ed497267eb1ba5673d1c847529'],
+      ['czech', 2011, 8, '114c4458ed57928380b48bacbe25d683412b34cc0e811706ddb80d37bf44db4d'],
+      ['czech', 2012, 8, '9119cea467ebdd7a9655e86bfb5142d7c8ba0f638a01ea81e5f159294da81e37'],
+      ['czech', 2013, 8, '392e490b1a61d00a0f7e3acf0efe65d92ba43405dcd75383b3ecf1cb8c1125eb'],
+      ['czech', 2014, 8, '0a4baec6ef96620bb66c6d9d93c113212cb6c50bac40a4f99c4616c16c58ecac'],
+      ['czech', 2015, 9, '79756d749050e8025a2a77282a4b8c1573b2c40b9082910036cbe54801c367cf'],
+      ['czech', 2016, 8, '7de738cea7451f519dd16e807e43b349deed54e7ef61a6a38c9ad32606afa167'],
+      ['czech', 2017, 8, '05ad67c04c045c1402d1779e720c827c8689a1fa3ae63a06bdec81d274157263'],
+      ['danish', 2010, 8, 'b6f0df3ef27f819184832b7928708e47d480ce272065031a50be665be031112f'],
+      ['croatian', 2015, 4, '14f5846108a194e854fde43f418b3be587d7a38483bfc56c0bad064b0717aeaf'],
+      ['czech', 2018, 8, '95d2036c691dcb66f8f8fbc2f98b10e770471fe0f083849c4a5ed05ff52a414c'],
+      ['czech', 2019, 8, 'b733c7b5ea8723ac94980908c9a9c8c6a247dd26be0dad5109d02040fa589184'],
+      ['czech', 2020, 8, '45a2859655f21a89b18d4e123cebcc5c54440e2dfbb4201627f537c4761c6ba3'],
+      ['czech', 2021, 7, '4ac8b9fa777060a1e8dd1e2b681e1af90d01332a35c7ff47d7e10e8ab136dd9f'],
+      ['czech', 2022, 7, '3f4d1c42d3c7b9a7cb69e6bbe31b14fceacbd0fb635f6a682c5295db1fc5b4bc'],
+      ['czech', 2023, 8, '1b8232db3bd285d8503a2f7c686dc2e0b5478df8251b444ac259bb29b8103916'],
+      ['czech', 2024, 8, '56a4e99d63ac6a5dd0c3046aec7b79b7e2a830516eb8b1d3cfcc04f687f9931f'],
+      ['czech', 2025, 13, 'f77538174533cd3c1396760a0bcfcf15f52336992778b9aace6e3993f23ea633'],
+      ['czech', 2026, 8, 'cb9b5c27bd7ca76bfe2f949d4051076d735c45abf26c8a5367e4797be3481ccb'],
+      ['croatian', 2014, 3, 'f6e5c2ff697cb4c7139dc4320c9ad0237554c43403c0fad5799eded962ac1d0c'],
+      ['danish', 2011, 2, '02682a4b94d40eeb313b9187a10a6d1ccb24a320559d49ab768dfbb685cd443a'],
+      ['danish', 2012, 2, 'ad1a2d02a4dbc498b935f7da14aa6f1f6bc280d042e6f3e1c313849b06069b73'],
+      ['danish', 2014, 3, 'ffcc8cab2a0285b033a7816c8c9e9213727b920a75e9d13773a9d1b1b4becbf0'],
+      ['danish', 2015, 3, '19fd08d381cebb8dc61086fff9c2625207a7eff65064a0bfc13f745e65eda588'],
+      ['danish', 2016, 2, '1dc9249791e19f5038bb497fc2e9bce620a394f07fdf251abc8e05e55452b160'],
+      ['danish', 2017, 5, '133897b0881689ea35d33c75d1c5becb554c759f47833695b758f4e4876da163'],
+      ['ukrainian', 2025, 3, 'a12b4f8731aa40a20cf367805fd511714a16a6a5a9af125b2e1d573c61fab3c4'],
+      ['ukrainian', 2026, 3, 'ba5dbedd11ad95a80ea50a14517f6fd4cbd2d2a7b4e6e35c6eba27f844155cb1'],
+      ['hungarian', 2010, 3, '7fa091ad965ba4753f958ec39506874ac58915ec14d3fd6b36de8c1a7fe61300'],
+      ['danish', 2018, 6, '3fb422a3c0d91eda710f3b8744f1ab17bcd90f11bdf8d0c70506b2e46c540838'],
+      ['danish', 2019, 3, '79721568db70f216174eeeb6ee804301e9a3c6dd61de7190245291c0e45646c1'],
+      ['danish', 2022, 2, 'e2beee27088556185bdd8eea82db9ba90cbb0bb8e60ac68759e0bcf05ccdfed7'],
+      ['danish', 2023, 2, '7ec7da4fdd7f50b30b5b72a98fc7cb1dda7df7bab12d84ae4735d665487a5426'],
+      ['danish', 2024, 6, '87a1312bf18f2d5df87d94da3c5697b27958c6f31a651b9c1ac30db2a385ed36'],
+      ['danish', 2025, 3, '21d08eabf580a47848f3f0cca76d539b8f0008343cfb2e9d5aa39d7783c6facb'],
+      ['estonian', 2010, 4, '451765ede16a53fb2e0547bd9f7b76daaa3192cfa980eb6f1215e11978d8b043'],
+      ['estonian', 2011, 3, '2b3d8b3de979508326a9f0b9be421b50f3445fecfae508a0231420de31818287'],
+      ['estonian', 2012, 5, 'cf8816c6e01ce6d05ed443fa121bdd2d8e34434c10974f2ae4ab349fb6df9a99'],
+      ['estonian', 2013, 2, 'ecb227d3e1ae8f73680a08ea7eb70bd77c71b2b302f5dbaf76bf9115df404ca7'],
+      ['estonian', 2014, 3, '005df67de49b2014c4b361700bda13f4bc02e52ad1f4d9a973520cbd1f342183'],
+      ['estonian', 2015, 3, '595dfa2ed38be4389a2ebf3e4bf9b17e7b6e1d48898eaa3ab7436dfb52aeb4c9'],
+      ['estonian', 2016, 3, '649889cc7e472cf3a177341732315bf039eb882387bf6e1447e7b73f03c6a67b'],
+      ['estonian', 2017, 3, '40eaa740846edce294bfe2c41f31d53e40bd4318c410d55eb7e68659c5f1f3ea'],
+      ['estonian', 2018, 5, '1fd60df8e10b40715fd842d5717cb7fbe21dcc0df31b3b1f6f5f6fb0f21df220'],
+      ['estonian', 2019, 4, 'f9956be791740a7206d72ab1e94713e34d675c348c5483a1f85166dff44790a1'],
+      ['estonian', 2021, 3, '65ee6f5ea7c862d47ee4bce0eec5d4e3ffdc8edc752e4e89e221b80a10b85f60'],
+      ['estonian', 2022, 4, '06df54d43e8bd0364805117b2110f040b9c773e46d69c2689c508f2787438caf'],
+      ['estonian', 2023, 4, '9505643795e2a3a57c64ffabf9c06d5b12e1c99112f617603b86a093a1d603ff'],
+      ['estonian', 2024, 9, 'dc3483c8e5fb586739efdf24a599e26e56b31fd38c9f7a503f89e1aae80f201e'],
+      ['estonian', 2025, 10, '9c15eaa8f0b8a4a6e061f3ef7704d82590a196c67a417a22b287eff97151c8f3'],
+      ['finnish', 2010, 13, 'f640c706471316d2256408afd91e20910e151b86611b8299f56574d1631146fe'],
+      ['finnish', 2011, 3, '614719242f29ca4fccfa442ddc9a8f06e8d932ea448ce8248ae5039b7791738e'],
+      ['finnish', 2012, 3, 'a8dc612592b1f3afcefe664341d7f0a13469559d7fba0e6ccf26d4c868850fef'],
+      ['finnish', 2013, 3, '0e817bbd1e908ebe2656ccb3b687e39311cd512d63aa5f79fb8df008c0c069a5'],
+      ['finnish', 2014, 7, 'dffcd2e7473677d0e3e480c62c6ee5acec7a40fb1c1d4fb30fd3ef58bfc7d5b6'],
+      ['finnish', 2015, 5, '4236101dbfa1edd1d655038a72f62db963e2437e172a33008859980bd75baf92'],
+      ['finnish', 2016, 3, '19c2a7fdaf694737d592657ff359eb419b903673b813ba3994eb7ada98817780'],
+      ['finnish', 2018, 6, 'a71e8be2d69707c08322d3795ba61d4de97a3e834ed43f15a54ee3b9aab103a8'],
+      ['finnish', 2019, 5, 'dfdfbebdaa8418e50cccfb19fc83f42d208a0bc17939ae6dc1d0e80b5dd4dfef'],
+      ['finnish', 2022, 6, '8275f06c6a03b6f17faa008b1b4bd438d7d859c588f155cff83836f2fccbb5fe'],
+      ['finnish', 2023, 13, '35e8972394f39a8a0c8a2ea407c37c0af0d51fe075f10066bc92c3bbe672e2cc'],
+      ['finnish', 2024, 8, '0425b625f2ae73e0580f51779048b397223ad5289e949439a50fa3c2ae82544c'],
+      ['finnish', 2025, 3, '4796ebcd01cf26f292a4bab2cfcf65a2bd9d39e5a7206b0f302b788a0b03165a'],
+      ['hungarian', 2011, 4, '796ba06d2ed5e1274d48b669f15a8ac3d3591c138b2bdfc7e23e1986bf7fe136'],
+      ['hungarian', 2012, 3, '923259d2f4945a2ede43034f15b27aaa1906b72d9c539ea14f7927d5ff72875c'],
+      ['hungarian', 2013, 3, 'bf260646fa5055ff7a31a59b9b5ebee02ad75d4ff9fed0829946bb03a598d11c'],
+      ['hungarian', 2014, 3, '7592f63a089ab37f82dd7ece37da24437a4283b1f41dbe676be425b28fb7fdcf'],
+      ['hungarian', 2015, 3, 'f0af396c34a0b88181a239c3bf3a0c1362301ec435bf89ceb8d84c13cacf7553'],
+      ['hungarian', 2016, 3, '6a2290df46a30ea5177486526e02ce3dd4728371f51f59e7c3809f7c9ad24eb9'],
+      ['hungarian', 2017, 3, '8c389ac8db8ef27fd2ec8aa165e5b1cb85a058e6fffbcb349249a0f85472069d'],
+      ['hungarian', 2018, 3, 'a0e2ff9ffc1f86ea1508a8d01f1f17dc547499af629f60b9fd1ff19217877e5b'],
+      ['hungarian', 2019, 3, '2d2e144739e2759c57496bfd29617948177a01f20bda342c7ff1154004fbd393'],
+      ['hungarian', 2020, 3, '896271d7cd3ecc547909b29bb659f800c60b29a5b678aa7cfce133e0db841c4e'],
+      ['hungarian', 2021, 2, '69965980ea267d95a2f49dd44ab4e0811b5af9bb0d2d453dedf3aaff7ecac72b'],
+      ['hungarian', 2022, 2, '08e65ce2432dd72fabad889abafa801fcbd24f97cc2547ea5babf5eb5d3b3452'],
+      ['hungarian', 2023, 3, '853812aaf3e822facd97422bd871fa9f4aaba76ef17cb184bc01a519a15be644'],
+      ['hungarian', 2024, 3, '07d88275a11f326edac9c3255bcb316999188be185e8b7b10ea939ab45eaa843'],
+      ['hungarian', 2025, 4, '11ccaca66e737575b5a29705f787c190b7defb633ab85eb11f3464af15c791f0'],
+      ['hungarian', 2026, 3, '3acbb2bd22721710cfa07e784bb40623c6b43e09a3b934bd257ef3916abcb1c5'],
+      ['latvian', 2010, 8, '238a0b5ea37698e64abb9d86dc72e8de85a91beb24df500f4de4f3e17c06245f'],
+      ['latvian', 2011, 8, '30559a22af97dffe4d5f8258d24bcf1bd881f0cf9f9b9ec4da821ab83af37ed1'],
+      ['latvian', 2012, 8, '2e221c7a75f3af9824871d07674aaf4cf737fc7f05a172079223c214d4a329c1'],
+      ['latvian', 2013, 8, '7cf5918c7bd54fda63219017b2253099a86991f37360153a2738ec654b9ad08e'],
+      ['latvian', 2014, 8, '5e447137253b9b048119ff47ba50e4b84ca8833539e1c762601f3793775c5d6b'],
+      ['latvian', 2015, 8, '3cb8f54e8adb5dcb0125874844dc3e3fa458190823a25c65b93e58a06f7aed65'],
+      ['latvian', 2016, 8, '1fd3f3fa5ec32fa25d3fe49062358b03e1bdb104531293f68065ed75de90d95a'],
+      ['latvian', 2017, 8, 'ba43e595bd841078c26c98691b4ec4c1d73c06955c95a541bdf418c85b5e9ce8'],
+      ['latvian', 2018, 8, '111b060fa234584dd6a6261074e41cc42b7fa398302f7ac17dad0d682e042696'],
+      ['latvian', 2019, 8, '3c0851b78a6e254943146bf41579b856e31dcc22d8e4bb0f9b064f204cd97285'],
+      ['latvian', 2020, 9, '6f2f59da6f4065d636e903d0da330698129904848d8c79b36d5c7763cdee3c47'],
+      ['latvian', 2021, 12, '3ed173ce190803357b8f4bddeb5a09fe6c59b6681b305064e27aa2c5ac0de421'],
+      ['latvian', 2022, 7, '7cb90847c72f371ce47a5b87a7e2b0692eacee60a6ceca0783649bb597688768'],
+      ['latvian', 2023, 9, '99fd1549fef08312493a3997b7cdc5741ce1ef49ca29a6172d5e7110d1593af9'],
+      ['latvian', 2024, 9, '7b908d5d15d2a01eadc596b847527aa5adda4c1352eccd1606a87afbb397d32d'],
+      ['latvian', 2025, 13, 'eb061f23bd972b0bbd71e88837a09712f2f1f48036a476e8721a4950f146f12c'],
+      ['latvian', 2026, 8, '4f8b68667539ecd034a4695daa6e13ee252c3daaaba12359aa5bdf70067f45b2'],
+      ['modern-greek', 2010, 3, '12f6bcc07387cb051cf5d2344dd1827e4a65f42372e65a06fce3093c705aae9c'],
+      ['modern-greek', 2011, 3, '5b0addde91ba9278c435b9e086d6ba6cabc002fbe837205bf1c7aba356b97d18'],
+      ['modern-greek', 2012, 3, 'f0017d1b12c43f80741c1b57476be8162d600b9edd4aa48d4c7191cbfbc14c8f'],
+      ['modern-greek', 2013, 3, '7c702e0e66df3f580e90ba793c5390189cd7b4777d6f012c06edc28d3f911eeb'],
+      ['modern-greek', 2014, 8, '576eb477fb1714473d2339f32c915d805072c3f8bdd52e3049151ca5795323e4'],
+      ['modern-greek', 2015, 9, '3bcf23d3d4170d69cfe9b4ddff5babcf9228239aff53bcbf499a569a4d82e7b5'],
+      ['modern-greek', 2016, 9, '6624fa2010d4d0c88fa51a26dfcea4b9169929b1e41307b95f369924dfdc00ab'],
+      ['modern-greek', 2017, 3, '01a9d52af0c07238fc28fc799293edd9aa9a701d8ca62fc6c902fc9d6fb95ed8'],
+      ['modern-greek', 2018, 3, '4d9bab95b9c5ddd84708e8f5e35948d0e548125d2c6f551e93a7037a182186d1'],
+      ['modern-greek', 2019, 3, '4c0c557afcb98adebe8beea4343e6356a20ad5ca0eb5dc128a27ce1531a9d212'],
+      ['modern-greek', 2021, 2, 'ec8166cc4dd00df0c628f9fd3915ba177bbace61290ace30d79aa390428d72ca'],
+      ['modern-greek', 2022, 2, '57ddae59828392e482616d18acb7b8546e5261d12f82bd047b415d3cbfaeb0ee'],
+      ['modern-greek', 2023, 3, 'c841560506f3967f6a339f5d1081dac24e423c143a2abf4c7b717efd8f914dce'],
+      ['modern-greek', 2024, 3, 'fae556a2171ab244985819a42767e28daae1681ca4d91b28a1686ffcae47f8db'],
+      ['modern-greek', 2025, 3, 'ea22dbf075441da3f9bc47c425bf4918c9a76bb598ceb294c0c6be735a3b2723'],
+      ['modern-greek', 2026, 3, '8899772976a49ae3f4b677b5d94aa3e6917ea587cee9a4edd2fb7854d861cf90'],
+      ['slovakian', 2010, 3, '442fa52adbcf98baa7ba3933bea7922844272d4edb8b7f236ad793ac67c33205'],
+      ['slovakian', 2011, 3, '8adb0af10c7f1847c7bde614b16fbfe408afcbb29b8992373b72cb147d9f8b5e'],
+      ['slovakian', 2012, 3, '503d1b08c17916756ef66597541446171cd4dcd1d834da0c519595a20d01e093'],
+      ['slovakian', 2013, 4, 'abb4fe35a343ab6667582aa7437a202c919d57641d37bdca5af66ea0c08e96de'],
+      ['slovakian', 2014, 3, '36fb2b9de523bf0fb697e7189b38ccc5a9e9db678e59d766f0ee92253923b7de'],
+      ['slovakian', 2015, 3, '01f250053cf73ac05f6d9a577e0bf4093c7b171799790d0fa5f00f0ef05aa0bc'],
+      ['slovakian', 2016, 3, '510e28c1547d5e12d3b7a16d211c2b7962c0eb3e1c386007e09e8208b480d88e'],
+      ['slovakian', 2017, 4, '5f5d0dfda6d7034930f434c2ac930ffc4bc359478beb7d7a83204b3449036760'],
+      ['slovakian', 2018, 8, 'ef7de7e4db92111d5ab5e6f845b2589dea882bc27eadca7243a8d2c718f75532'],
+      ['slovakian', 2019, 8, '7cfce4ae38f858850914d50fec2ea7e8f858ce8fb2241ab71de21412ee42598e'],
+      ['slovakian', 2021, 2, 'df90159d49cbb633bdcfb9b3c9bd1d726cdae5282f87b9b7bb69719cf6f8b059'],
+      ['slovakian', 2022, 2, '99885279ab236ee57e136fcc23749140aa1a5b413286576542e774d22b827026'],
+      ['slovakian', 2023, 7, 'b549c57382b7b66990b18241ae3ac665769613515ee0c04bbc1d9a44d1922501'],
+      ['slovakian', 2024, 7, '5a058034b357e163f87a9e8ec1d8f747e6450a3871a87936e63b5d144b94ae43'],
+      ['slovakian', 2025, 3, '9e2396154ee0cb21c62fa128861d495d1755528a98f79be3fea24d145da4330e'],
+      ['slovakian', 2026, 3, '4536d3ef5cdb1ba4fcf17fc241f1d9c72ad2fad81fd284a06be30ca7809a6d07'],
+      ['slovenian', 2018, 4, '3850be5d7cd3b0120ef3e7c4a018a04edbeb487a227c89a5065285d3f58a85b9'],
+      ['slovenian', 2019, 13, 'bbd5c2f7033d9c23a06eebf593a805f234e406090ee2d9f37df412cbf6b697ce'],
+      ['slovenian', 2022, 12, '65398d6342fa94d31cd199bebdf5cc2d48a89a3745f8260b0e8a386fad56b4bb'],
+      ['slovenian', 2023, 4, '8bf039c0c66946e1568e8a7ecd42da9673741809726e044c2c01af7e27c478e8'],
+      ['slovenian', 2024, 4, 'b0e55764c0de4c8c11ee5d52269d15b3a01c3f94afe3435cdee1e0abf69d7b3e'],
+      ['swedish', 2010, 9, '9b360561ace66d02cf9567ec5c1d1d80cb905487ece7795e5652a2d45ca0c68c'],
+      ['swedish', 2011, 4, '2300e507514868ac6c7229cf2bfcd9a5956e600aeb2af3a7307a734568c6c132'],
+      ['swedish', 2012, 3, '900f33f2cf77caf48b5be965850bb46b95d92f77c67c44882df61330e2186e74'],
+      ['swedish', 2013, 8, 'c423e6e423e7cbdf16670838b4d719bddf9bc42d5d73478e681c8c3199440808'],
+      ['swedish', 2014, 3, '4917063c6d50cadac07ea4192afc471f1e8689ac83ec20abde3ed8f07f0ef768'],
+      ['swedish', 2015, 3, 'a87ad3de436ea2377e996160a7115c970e56d28293e9cf91610a5ff7949c6f22'],
+      ['swedish', 2016, 10, '559f67456e5c4d7db3cbe0bb413d537faef8542ecc349e6e945d5ac083cf02fe'],
+      ['swedish', 2017, 3, 'a14cf9b1e8d72bd0d474b539cd28aa465d89e9a02586e13fe6bcaf8c907fdf75'],
+      ['swedish', 2018, 8, 'e4e2e59eddf4bfb9c172fec86d398329dd7d33e5b594b1c74f0f702e88ca9890'],
+      ['swedish', 2019, 3, 'dfabebd7e282a53156b7da399a89342eaf39b3208f6cf41b128a0eadd264b5e0'],
+      ['swedish', 2021, 2, 'c2b4ec1b2b8500683ce7b7458598ee1c44d505415c5499dddc8977798f1c8486'],
+      ['swedish', 2022, 2, 'c8e35718f81e94fcd491db2d5e44ad01de8f49e48fbf5d339b735ec8e5b18b19'],
+      ['swedish', 2023, 3, '2a9353b799fd7266f9ee5cda860355c9193b58dd2d163a3648da3c4497617e1b'],
+      ['swedish', 2024, 3, 'b5625450f4b23333800613b588c811cc54066c587ef5b279e67b759d5566c6ae'],
+      ['swedish', 2025, 3, '5fa6fbf2834a20fab08938443ff644edc7aacf3f91b540f2aa6413c7ff80a857'],
+      ['swedish', 2026, 3, '2843fd18dbb15558707e742c43599f72e36659287d8e4276294b3cd24d33f96e'],
+    ];
+    const listed = Object.entries(smallLanguageAdditions)
+      .flatMap(([subject, bySitting]) => Object.keys(bySitting).map(year => `${subject} ${year}`)).sort();
+    expect(listed).toEqual(SMALL_LANGUAGE_SITTINGS.map(([subject, year]) => `${subject} ${year}`).sort());
+    // Maltese is outside `decks` (never pinned before this lane; adding it there would move the bank's
+    // frozen totals): its 29 cards live on 2026-11-20 are pinned here instead, and held apart the same way.
+    const MALTESE_FROZEN: [number, string] = [29, '2c2e7c672b90c7a3edf05caaeeb789d39b21a59c61d9036a1fb8dad24ed22477'];
+    const malteseFrozen = MALTESE_HIGHER.map(card => card.id).filter(id => !smallLanguageAddedIds.has(id));
+    expect([malteseFrozen.length, idHash(malteseFrozen)]).toEqual(MALTESE_FROZEN);
+    const deckIds = (subject: string) => new Set([
+      ...decks.filter(([name]) => name.split(':')[0] === subject).flatMap(([, cards]) => cards.map(card => card.id)),
+      ...(subject === 'maltese' ? MALTESE_HIGHER.map(card => card.id) : []),
+    ]);
+    for (const [subject, year, count, hash] of SMALL_LANGUAGE_SITTINGS) {
+      const ids = smallLanguageAdditions[subject][String(year)];
+      expect(ids, `${subject} ${year}`).toHaveLength(count);
+      expect(idHash(ids), `${subject} ${year}`).toBe(hash);
+      const live = deckIds(subject);
+      for (const id of ids) {
+        expect(live.has(id), `${id}: not in the ${subject} deck`).toBe(true);
+        expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
+        expect(id.includes(`-${year}-`), `${id}: filed under ${year}`).toBe(true);
+      }
+    }
+  });
+
   it('adds each further Portuguese sitting on top of the frozen 2021-2025 identity', () => {
     const cards = [...PORTUGUESE_HIGHER, ...PORTUGUESE_ORDINARY];
     for (const [year, counts] of Object.entries(PORTUGUESE_ADDED)) {
@@ -3335,6 +3598,16 @@ describe('Mark Bank card preservation', () => {
       ['2015 ordinary', 52, '0b3ac0058425a2a63b7bb2afc77125aac38f346b37248ee1bfe957d434ab27a2'],
       ['2014 higher', 58, '81a38a10481a0b6222b729de7aa5c3e08f814a0ec88c0224c08f0f3bb68ebba2'],
       ['2014 ordinary', 52, '42596fd6679cade7d6c3eeb3c5ca314790d4929140d4cc0e537e1cf6acf46ac3'],
+      ['2013 higher', 55, '0cb69426999770514fc2f3da657f8344089c338130ec556d0f9fecbe71f79778'],
+      ['2013 ordinary', 51, '339d41160ba1ae084c13bdca8937fb6029fbb660b6569f6af6eb6cc5ea8b0716'],
+      ['2011 higher', 56, '5726ceeb3a351cd26b81b5fcab2ade266b549a313af8fbae44b6c2312125fcb8'],
+      ['2011 ordinary', 53, 'f4031d66c14bb6f27cc05d69c215c21c072bd55e0699c6f11cef8325c888dd77'],
+      ['2010 higher', 52, '32c134a41995cdd3d2e4f114d168ca032398b9727160acc1a75061ada4e043b7'],
+      ['2010 ordinary', 52, '38d03c3c3eab8c66b8a23e9225cff58b2ef69df208a8a7c12f470d8cad0b31ad'],
+      ['2012 higher', 55, '0a0e4c44992f3397cfaa06b522616b04181327d1366cddea39ff5b0023bbd3f2'],
+      ['2012 ordinary', 53, '90cc73fbdf587827dbbc894324f3ee9a0d8d2e7ae8f0c1fd90114344c1e8d96d'],
+      ['2023 higher deferred', 11, '75d010f65ce07730f15d1759058a02eb92a891561773b13f27c6bc05773712ee'],
+      ['2022 higher deferred', 11, '48007df9138409a6b4d6ab6cbc9eec98328e49abea766734aba54aef0d1cc5ea'],
     ];
     const lane = new Map<string, string[]>();
     for (const card of [...MUSIC_HIGHER, ...MUSIC_ORDINARY]) {
@@ -3462,7 +3735,9 @@ describe('Mark Bank card preservation', () => {
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
         : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length
         : name === 'latin:higher' || name === 'ancient-greek:ordinary' ? cards.filter(card => treatmentAdditionIds.has(card.id)).length
-        : name.startsWith('italian:') ? cards.filter(card => isItalianAdded(card.id)).length : 0;
+        : name.startsWith('italian:') ? cards.filter(card => isItalianAdded(card.id)).length
+        // The small languages (Claude queue 5): sl_additions.json, on top of each frozen deck.
+        : name.split(':')[0] in smallLanguageAdditions ? cards.filter(card => smallLanguageAddedIds.has(card.id)).length : 0;
     const italianAddedCount = [...ITALIAN_HIGHER, ...ITALIAN_ORDINARY].filter(card => isItalianAdded(card.id)).length;
     const technologyAddedCount = [...TECHNOLOGY_HIGHER, ...TECHNOLOGY_ORDINARY]
       .filter(card => isTechnologyAdded(card.id)).length;
@@ -3505,7 +3780,9 @@ describe('Mark Bank card preservation', () => {
         // Italian (classics-italian lane): every card on top of the frozen 350.
         + italianAddedCount
         // Polish, Portuguese and Lithuanian additions (languages-q3 lane).
-        + polishAddedTotal + portugueseAddedTotal + lithuanianAddedTotal);
+        + polishAddedTotal + portugueseAddedTotal + lithuanianAddedTotal
+        // The small languages (Claude queue 5), Maltese's aside: its deck is not in `decks`.
+        + [...smallLanguageAddedIds].filter(id => !id.startsWith('mlt-')).length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

@@ -5,7 +5,8 @@
  * Final three whole-subject StudyClix hierarchy migrations.
  */
 
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
+import { atlasHeadings, loadAllAtlasModels } from '../components/PaperTrail/atlasModel';
 import { CURRICULUM } from '../curriculum';
 import homeReference from '../data/examTopics/home-economics.json';
 import homeCrosswalk from '../data/examTopics/home-economics-s-and-s-curriculum-crosswalk.json';
@@ -44,6 +45,9 @@ const expectEveryExistingCardMapped = (
     }
   }
 };
+
+// The single model (Alex, 18 Nov 2026): the Atlas files each part by what it asks under one heading list.
+beforeAll(() => loadAllAtlasModels());
 
 describe('Home Economics exam-topic registry', () => {
   const taxonomy = examTopicTaxonomyFor('home-economics-s-and-s')!;
@@ -111,8 +115,12 @@ describe('Mathematics exam-topic registry', () => {
       ['mathematics-ordinary', 'Ordinary Level', 'ordinary'],
       ['mathematics-foundation', 'Foundation Level', 'foundation'],
     ]);
-    expect(taxonomy.topics.map(topic => [topic.id, topic.label, topic.sourcePath]))
+    // The 55 captured topics, then NextStepUni's own Higher "Number Systems" heading (19 Nov 2026 ruling: as
+    // Ordinary's and the syllabus's 3.1; the single model files the irrational proofs, surds and plain arithmetic there).
+    expect(taxonomy.topics.slice(0, 55).map(topic => [topic.id, topic.label, topic.sourcePath]))
       .toEqual(referenceTopics.map(topic => [topic.id, topic.label, topic.sourcePath]));
+    expect(taxonomy.topics.slice(55).map(topic => [topic.id, topic.label, topic.level, topic.referenceUnavailable]))
+      .toEqual([['mathematics-higher-number-systems', 'Number Systems', 'higher', true]]);
     expect(mathsReference.totals).toEqual({
       reported: 2946,
       state: 1768,
@@ -121,7 +129,7 @@ describe('Mathematics exam-topic registry', () => {
       sourceLabelConflicts: 0,
     });
     expect(referenceTopics).toHaveLength(55);
-    expect(topicsForSubject('mathematics')).toHaveLength(55);
+    expect(topicsForSubject('mathematics')).toHaveLength(56);
   });
 
   it('bridges every shelf to Mathematics curriculum and preserves every card', () => {
@@ -129,7 +137,7 @@ describe('Mathematics exam-topic registry', () => {
       CURRICULUM.find(subject => subject.id === 'mathematics')!
         .strands.flatMap(strand => strand.subtopics.map(topic => topic.id)),
     );
-    expect(Object.keys(mathsCrosswalk)).toHaveLength(55);
+    expect(Object.keys(mathsCrosswalk)).toHaveLength(56);
     for (const topic of taxonomy.topics) {
       const ids = curriculumNodeIdsForExamTopic(topic.id);
       expect(ids).toEqual(mathsCrosswalk[topic.id as keyof typeof mathsCrosswalk]);
@@ -175,7 +183,10 @@ describe('Physical Education exam-topic registry', () => {
     expect(taxonomy.topics.map(topic => [topic.id, topic.label, topic.sourcePath]))
       .toEqual(referenceTopics.map(topic => [topic.id, topic.label, topic.sourcePath]));
     expect(referenceTopics).toHaveLength(88);
-    expect(topicsForSubject('physical-education')).toHaveLength(88);
+    // One list: the course examined in June 2027.
+    expect(topicsForSubject('physical-education').map(topic => topic.subtopicId).sort())
+      .toEqual(atlasHeadings('physical-education')!.map(topic => topic.id).sort());
+    expect(topicsForSubject('physical-education')).toHaveLength(24);
   });
 
   it('reconciles every reachable page and records both broken reference pages honestly', () => {

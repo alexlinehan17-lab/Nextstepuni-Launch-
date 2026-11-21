@@ -849,8 +849,12 @@ function spanishGridFault(c, scheme, schemeCells = '', schemeRanges = '') {
     if (halfTop) {
       const ladder = [...Array(Math.floor(k.maxMarks) + 1).keys(), k.maxMarks];
       if (allowed.length !== ladder.length || allowed.some((m, i) => m !== ladder[i])) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
-      const marks = (k.bands ?? []).flatMap(b => b.marks).sort((a, b) => a - b);
-      if (marks.length !== ladder.length || marks.some((m, i) => m !== ladder[i])) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
+      // A quality line the scheme prints with its marks only (2011/2013 HL "Quality of bass line ... 9.5") has
+      // no bands; where bands are printed they cover the ladder once, as on every other criterion.
+      if (k.bands) {
+        const marks = k.bands.flatMap(b => b.marks).sort((a, b) => a - b);
+        if (marks.length !== ladder.length || marks.some((m, i) => m !== ladder[i])) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
+      }
       continue;
     }
     if (allowed.length !== k.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
@@ -980,6 +984,7 @@ const DEFERRED_ID = {
   physics: /^phys-\d{4}-(?:hl|ol)-deferred-/,
   'home-economics': /^he-\d{4}-(?:hl|ol)-deferred-/,
   maths: /^maths-\d{4}-(?:hl|ol|fl)-deferred-/,
+  music: /^mus-\d{4}-(?:hl|ol)-deferred-/,
 };
 const deferredCard = (subjectId, card) =>
   Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));
@@ -1075,7 +1080,18 @@ function schemeFor(subjectId, card, { cells = false, ranges = false } = {}) {
  * Calibri: the 2022 Higher Polish listening booklet prints "grows in 20\u1D52C" (rendered:
  * a degree sign), and its text layer carries the character itself, not a
  * subset's stand-in. Added alone; at the time no other deck input held it. */
-const REAL = /[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D52\u1D62-\u1D6A\u1F00-\u1FFF]/;
+/* U+1EB7 LATIN SMALL LETTER A WITH BREVE AND DOT BELOW is what the Romanian
+ * papers of 2012-2020 actually print in their bold instruction lines: the SEC
+ * typed "Toate r\u1EB7spunsurile trebuie scrise \u00een limba rom\u00e2n\u0103" (rendered at
+ * 300 dpi: an a with a breve and a dot below; 2013's text layer reads the same
+ * glyph, id 1211, as U+04BB and is repaired from that id). The answer-language
+ * note quotes that rule as printed. Added alone; no other deck input holds it. */
+/* U+01C3 LATIN LETTER RETROFLEX CLICK is what the Croatian 2023 paper and scheme
+ * print after the second essay title ("... zvijezda\u01C3"; rendered: an exclamation
+ * mark). Calibri draws it as glyph 1766, its own glyph for U+01C3, not the "!"
+ * glyph (842): the SEC's document holds the character itself, and both text
+ * layers read it so. Added alone; no other deck input holds it. */
+const REAL = /[\u0100-\u017F\u01C3\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D52\u1D62-\u1D6A\u1EB7\u1F00-\u1FFF]/;
 /* Greek Extended (U+1F00-U+1FFF) is genuinely Greek, for the same reason
  * U+0370-U+03FF already is: POLYTONIC Greek is the alphabet the Ancient Greek
  * paper and its scheme are printed in, and every accented vowel in it lives
@@ -1118,8 +1134,14 @@ function repairText(text) {
   }
   if (!BROKEN.test(out)) return out;
   BROKEN.lastIndex = 0;
-  return [...out].map(ch => GLYPHS[ch] ?? ch).join('');
+  // A deck written in Cyrillic keeps its own letters: glyphmap.json maps "Ф"
+  // to the Greek "Φ" for decks whose fonts set a physics phi as U+0424, which
+  // turned Bulgarian "Фейсбук" into "Φейсбук" (small-languages review, 20 Nov).
+  const own = CYRILLIC_DECKS.has(SUBJECT_ID) ? /[\u0400-\u04FF]/ : null;
+  return [...out].map(ch => (own && own.test(ch) ? ch : (GLYPHS[ch] ?? ch))).join('');
 }
+/** Decks whose language is written in Cyrillic: a Cyrillic letter in them is real. */
+const CYRILLIC_DECKS = new Set(['bulgarian', 'ukrainian', 'russian']);
 
 /* Every string on the card, not a list of the fields that were mangled the
  * last time someone looked. Naming them missed contextNote, which is where the
@@ -1878,8 +1900,9 @@ for (const c of cards) {
     repairGlyphs(c);
     const mangled = mangledText(c);
     if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+    // A Music deferred sitting is its two booklets, as June's are ("Deferred · Listening", "Deferred · Composing").
     const fileid = deferredCard(SUBJECT_ID, c)
-      ? deferredDoc(SUBJECT_ID, c, 'Exam Paper')
+      ? deferredDoc(SUBJECT_ID, c, SUBJECT_ID === 'music' ? MUSIC_BOOKLET[c.section] : 'Exam Paper')
       : SUBJECT_ID === 'music'
       ? resolveCompanionFileid('music', c.year, c.level, MUSIC_BOOKLET[c.section])
       : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
@@ -2027,7 +2050,7 @@ for (const c of cards) {
    * show them the article. Unresolvable means the card is DROPPED. */
   const unresolvedSource = sources.map((source) => {
     if (!source.sourceLabel) return null;
-    const fileid = deferredCard(SUBJECT_ID, c) && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
+    const fileid = deferredCard(SUBJECT_ID, c) && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german' || SUBJECT_ID === 'music')
       ? deferredDoc(SUBJECT_ID, c, source.sourceLabel)
       : resolveCompanionFileid(
         corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year ?? 2025,
@@ -2300,6 +2323,8 @@ for (const c of cards) {
     ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
     : deferredEntry && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
     ? deferredDoc(SUBJECT_ID, c, listening ? 'Aural Paper' : 'Exam Paper')
+    : deferredEntry && SUBJECT_ID === 'music'
+    ? deferredDoc(SUBJECT_ID, c, MUSIC_BOOKLET[c.section])
     : deferredEntry
     ? (SUBJECT_ID === 'dcg' || SUBJECT_ID === 'biology'
       ? resolvePaperFileid(SUBJECT_ID, year, level, paperSection, 'deferred')
@@ -2420,7 +2445,7 @@ const reRubricCards = SUBJECT_ID === 'religious-education' && existsSync(resolve
 // over the generated cards of each level module.
 const reviewedOverlaySubject = ['applied-maths', 'russian', 'japanese'].includes(SUBJECT_ID);
 const moduleImports = reviewedOverlaySubject ? "import { withReviewedCards } from './reviewed';"
-  : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\n"
+  : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\nimport { deferredCardsForLevel } from './deferred';\n"
     : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n"
       : reRubricCards.length ? "import { rubricCardsForLevel } from './rubric';\n" : '';
 // Cards carrying exam-year curriculum nodes (Agricultural Science's reviewed
@@ -2463,7 +2488,7 @@ ${historyEssayMarking[level].map(json => `  ${json.replace(/\n/g, '\n  ')},`).jo
 ` : ''}
 export const CARDS: SecCard[] = ${reviewedOverlaySubject ? 'withReviewedCards(' : ''}[
 ${cards.join('\n')}
-${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : reRubricCards.length ? `  ...rubricCardsForLevel(${q(level)}),\n` : ''}]${reviewedOverlaySubject ? `, '${level}')` : ''};
+${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n  ...deferredCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : reRubricCards.length ? `  ...rubricCardsForLevel(${q(level)}),\n` : ''}]${reviewedOverlaySubject ? `, '${level}')` : ''};
 `;
 
 /* A level gets a module when the subject HAS that level, never as a matter of
@@ -2486,7 +2511,8 @@ for (const level of LEVELS) {
   const reviewedAliases = SUBJECT_ID === 'japanese'
     ? JSON.parse(readFileSync(resolve(OUT_DIR, 'aliases.json'), 'utf8')) : {};
   const additionsCount = SUBJECT_ID === 'french'
-    ? ['writing.json', 'reading.json', 'cloze.json', 'listening.json'].flatMap(name => JSON.parse(readFileSync(resolve(OUT_DIR, name), 'utf8'))).filter(card => card.level === level).length
+    ? ['writing.json', 'reading.json', 'cloze.json', 'listening.json', 'deferred-writing.json', 'deferred-reading.json', 'deferred-cloze.json']
+      .flatMap(name => JSON.parse(readFileSync(resolve(OUT_DIR, name), 'utf8'))).filter(card => card.level === level).length
     : 0;
   sizes[level] = reviewedOverlaySubject ? new Set([...originalIds.filter(id => !Object.hasOwn(reviewedAliases, id)), ...reviewedIds]).size : levelCards.length + additionsCount + levelRubrics;
   process.stderr.write(`  ${level}: ${sizes[level]} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);

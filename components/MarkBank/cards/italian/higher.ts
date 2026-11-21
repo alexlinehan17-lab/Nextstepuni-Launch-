@@ -272,7 +272,7 @@ export const CARDS: SecCard[] = [
     questionText: "Nella seconda sezione, elencate due elementi che descrivono l’ufficio di Guido.\n(i)\n(ii)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "C’è un pc — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prices this half of the ask separately, under the heading “C’è un pc”.", group: {"claimMax":2,"perOption":3,"options":["Non è molto grande/è una stanzetta","Ha un’unica finestra","C’è una libreria a vista","C’è un tavolo","C’è un pacco spedito (da Sergio Casagrande via posta ordinaria) con una proposta di libro"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian.", group: {"claimMax":2,"options":["Non è molto grande/è una stanzetta","Ha un’unica finestra","C’è una libreria a vista","C’è un tavolo","C’è un pc","C’è un pacco spedito (da Sergio Casagrande via posta ordinaria) con una proposta di libro"],"perOption":3,"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -295,7 +295,7 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa sappiamo di Ilaria?\n(i)\n(ii)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "È un’insegnante — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prices this half of the ask separately, under the heading “È un’insegnante”.", group: {"claimMax":2,"perOption":3,"options":["È la moglie di Guido","Il giovedì ha il giorno libero a scuola","Ha raggiunto già da un po’ la casa dei genitori","Ogni giovedì mattina parla al telefono con Guido","Si accorda con Guido sull’ora di pranzo"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian.", group: {"claimMax":2,"options":["È la moglie di Guido","Il giovedì ha il giorno libero a scuola","È un’insegnante","Ha raggiunto già da un po’ la casa dei genitori","Ogni giovedì mattina parla al telefono con Guido","Si accorda con Guido sull’ora di pranzo"],"perOption":3,"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -410,7 +410,8 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at the passage, what do we learn\nabout Guido (two points) and his jobs\n(two points)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Five points are required — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Guido is married to Ilaria/to a teacher” 1 mark. The scheme prices this half of the ask separately, under the heading “Five points are required”.", group: {"claimMax":4,"perOption":5,"options":["When he goes to work, he parks his car behind the Gemina building because nobody parks there/ he found a parking spot quite far away/ so he has to walk quite a bit to reach the building/ so he is quite annoyed about that","Every morning he takes a quick look at the post laid out on the table","Guido is annoyed to see the name (a certain Sergio Casagrande) who sent him a parcel in the post probably a proposal for a book","He has an established routine when he goes into the office he opens his mail, while starting his PC he rings his wife on Thursday morning he decides to have a quick sandwich for lunch that day","During a phone conversation with his wife/Ilaria he paused for a while and then he mentioned a pair of boots that it was about time to throw away","During a phone conversation with his wife he paused for a while (because) he wanted to tell her about the parcel/but he did not say anything in the end."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Guido — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Guido is married to Ilaria/to a teacher” 1 mark. The scheme prints these answers under the heading “Guido”; the paper asks for 2 points on it. The scheme prints: “Five points are required”.", group: {"claimMax":2,"options":["When he goes to work, he parks his car behind the Gemina building because nobody parks there/ he found a parking spot quite far away/ so he has to walk quite a bit to reach the building/ so he is quite annoyed about that","Every morning he takes a quick look at the post laid out on the table","Guido is annoyed to see the name (a certain Sergio Casagrande) who sent him a parcel in the post probably a proposal for a book","He has an established routine when he goes into the office he opens his mail, while starting his PC he rings his wife on Thursday morning he decides to have a quick sandwich for lunch that day","During a phone conversation with his wife/Ilaria he paused for a while and then he mentioned a pair of boots that it was about time to throw away","During a phone conversation with his wife he paused for a while (because) he wanted to tell her about the parcel/but he did not say anything in the end."],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Guido’s job — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Guido’s job”; the paper asks for 2 points on it.", group: {"claimMax":2,"options":["He is an editor He works for the publishing house Gemina/He works in their headquarters building (apartment)/he has his own office He works alongside the other employees Roberto and Lucia, and the boss Gianluca Fabris He works there on Tuesdays and Thursdays He has an established routine when he goes into the office (parking, mail, etc.) He does not fully understand what an editor is He has had some success in his job in the last 3 years His job is both increasingly rewarding (financially) but time consuming -more demanding He never thought that a bad book could improve (with a favourable review)/He never assumed the argument of a book could be of interest to the reading public.","He is a teacher/teaches only two days a week/part-time/for the past 30 years because of his extensive experience as a teacher, he does not need to spend a lot of time preparing lessons He hates staff meetings, because in his opinion they are self-awareness sessions Teaching for him is not a demanding job at all, (almost a doddle!), apart from the tediousness of staff meetings although he works part- time he has to partake in the staff meetings after school hours he works from home."],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -617,7 +618,8 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage, what do we learn\nabout Leo (three points)? How does Leo’s\nopinion about school change by the end of\nthe novel (one point)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The candidate must refer both to the passage and to the novel as a whole. — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “The candidate must refer both to the passage and to the novel as a whole.”.", group: {"claimMax":4,"perOption":5,"options":["He is not afraid of anything as he thinks must have been a lion in his previous life/ he is the reincarnation of a lion/ his name is Leo/ therefore he has a mane (his hair looks like a mane)/ he feels the strength of a lion in his blood/ he is a roaring lion/ he believes that he has never re-embodied/ he would like to be the reincarnation of a lion or a tiger or a scorpion","He attends the 3rd year of Liceo Classico/la prima Liceo because his parents wanted him to/ like his parents did/ he thinks that Liceo is a constant (night and day) source of nuisance/ he does not see the point of attending such a school/ he thinks that the teachers are a protected species which he hopes will be extinct soon/he thinks that teachers don’t have a “real” life outside school","When we was younger/attending scuola media he was studying just half an hour then he was playing soccer everywhere possible (field/corridor in the house/car park near the house)/ or playing with the play station","He never studied much although the Liceo required a lot of studying because he did not believe in it/ no teacher ever convinced him that studying was rewarding","He is 16 he does not have specific dreams/he does not have a dream yet just what he dreams at night (but he forgets about them)","He’s mad about soccer he plays soccer in anything that resembles a pitch, (in the corridor in his house, in the carpark under his house) or at worst on the PS.","By the end of the novel, Leo’s opinion of school, studying and teachers, has changed dramatically, mainly due to his relationship with il Sognatore, who makes him see that going to school and studying can be fulfilling and rewarding/ he also starts seeing teachers in a more positive light","Leo actually studies with Silvia for his philosophy and history test, il Sognatore asks him some difficult questions that are not in the book he gets a 9/10 for the first time in his life","He is disappointed with a 7 in his Italian exam and not an 8 that he should have gotten but he did not use the subjunctive tense correctly; even after the test he tells himself he needs to learn the subjunctive because he wants to become a writer and in order to do that you need to be able to use it."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Leo — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Leo”; the paper asks for 3 points on it. The scheme prints: “The candidate must refer both to the passage and to the novel as a whole.”.", group: {"claimMax":3,"options":["He is not afraid of anything as he thinks must have been a lion in his previous life/ he is the reincarnation of a lion/ his name is Leo/ therefore he has a mane (his hair looks like a mane)/ he feels the strength of a lion in his blood/ he is a roaring lion/ he believes that he has never re-embodied/ he would like to be the reincarnation of a lion or a tiger or a scorpion","He attends the 3rd year of Liceo Classico/la prima Liceo because his parents wanted him to/ like his parents did/ he thinks that Liceo is a constant (night and day) source of nuisance/ he does not see the point of attending such a school/ he thinks that the teachers are a protected species which he hopes will be extinct soon/he thinks that teachers don’t have a “real” life outside school","When we was younger/attending scuola media he was studying just half an hour then he was playing soccer everywhere possible (field/corridor in the house/car park near the house)/ or playing with the play station","He never studied much although the Liceo required a lot of studying because he did not believe in it/ no teacher ever convinced him that studying was rewarding","He is 16 he does not have specific dreams/he does not have a dream yet just what he dreams at night (but he forgets about them)","He’s mad about soccer he plays soccer in anything that resembles a pitch, (in the corridor in his house, in the carpark under his house) or at worst on the PS."],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Changes by the end of the novel — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Changes by the end of the novel”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["By the end of the novel, Leo’s opinion of school, studying and teachers, has changed dramatically, mainly due to his relationship with il Sognatore, who makes him see that going to school and studying can be fulfilling and rewarding/ he also starts seeing teachers in a more positive light","Leo actually studies with Silvia for his philosophy and history test, il Sognatore asks him some difficult questions that are not in the book he gets a 9/10 for the first time in his life","He is disappointed with a 7 in his Italian exam and not an 8 that he should have gotten but he did not use the subjunctive tense correctly; even after the test he tells himself he needs to learn the subjunctive because he wants to become a writer and in order to do that you need to be able to use it."],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -825,7 +827,8 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage, mention what\nProfessor Laurana finds out about Roscio\n(three points). How do these findings\ndevelop in the rest of the novel (one\npoint)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Candidate must refer both to the passage and to the text as a whole — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “Candidate must refer both to the passage and to the text as a whole”.", group: {"claimMax":4,"perOption":5,"options":["Roscio had gone to see the Onorevole (both Laurana and Roscio knew him from school) a couple of weeks before his death/Prof. Laurana went without mentioning his trip to anybody","Roscio had gone to see the Onorevole to ask him if he was willing to report a very powerful person (un notabile) of his town (area)/let him think that he was of his town (area) who was involved in a serious crime","Laurana realises that Roscio had disappeared for a couple of days/lied to him when he had told him that he had gone to Palermo to visit his father","According to the Onorevole Roscio had documentary proof implicating the above mentioned notabile","Roscio had not given any hints about the notabile to the Onorevole because it was a delicate and personal matter","The Onorevole had not seen Roscio after that visit, but felt that Roscio was taking time into reporting the notabile because the documents had something to do with blackmail of some sort","Roscio had not mentioned the person’s name to the Onorevole.","Prof. Laurana finds out that Roscio had documentary information on a powerful individual who controlled things in the town and he realises that the double murder was a ruse to sidetrack the real issues","With this vital information, the existence of a notabile “che aveva in mano tutta la provincia, che faceva e disfaceva, che rubava, corrompeva, intrallazzava...”, Laurana can now follow a definite line of inquiry, which leads in the right direction/(but) ultimately to his death","In fact, he subsequently and naïvely/oblivious of the consequences reveals his new found information to Luisa Roscio and Rosello, who make sure he is silenced forever."]} },
+    { id: "r-1", kind: "anyN", verbatim: "What Laurana finds out about Roscio — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “What Laurana finds out about Roscio”; the paper asks for 3 points on it. The scheme prints: “Candidate must refer both to the passage and to the text as a whole”.", group: {"claimMax":3,"options":["Roscio had gone to see the Onorevole (both Laurana and Roscio knew him from school) a couple of weeks before his death/Prof. Laurana went without mentioning his trip to anybody","Roscio had gone to see the Onorevole to ask him if he was willing to report a very powerful person (un notabile) of his town (area)/let him think that he was of his town (area) who was involved in a serious crime","Laurana realises that Roscio had disappeared for a couple of days/lied to him when he had told him that he had gone to Palermo to visit his father","According to the Onorevole Roscio had documentary proof implicating the above mentioned notabile","Roscio had not given any hints about the notabile to the Onorevole because it was a delicate and personal matter","The Onorevole had not seen Roscio after that visit, but felt that Roscio was taking time into reporting the notabile because the documents had something to do with blackmail of some sort","Roscio had not mentioned the person’s name to the Onorevole."],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Development/Implications for his investigation — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Development/Implications for his investigation”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["Prof. Laurana finds out that Roscio had documentary information on a powerful individual who controlled things in the town and he realises that the double murder was a ruse to sidetrack the real issues","With this vital information, the existence of a notabile “che aveva in mano tutta la provincia, che faceva e disfaceva, che rubava, corrompeva, intrallazzava...”, Laurana can now follow a definite line of inquiry, which leads in the right direction/(but) ultimately to his death","In fact, he subsequently and naïvely/oblivious of the consequences reveals his new found information to Luisa Roscio and Rosello, who make sure he is silenced forever."],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -964,7 +967,7 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa sappiamo di Alberto Mattei?\n(i)\n(iii)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Uniti) — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prices this half of the ask separately, under the heading “Uniti)”.", group: {"claimMax":3,"perOption":2,"options":["È il fondatore del progetto nomadidigitali.it.","Da giovane ha una grande passione il mare/la sua passione era il mare","Da giovane ha una grande passione per l’esplorazione/aveva la passione per l’esplorazione","Da giovane gira il mondo","Da giovane lavora come/era istruttore subacqueo","Può chiamare tanti posti casa (ma non è completamente soddisfatto)","In Messico conosce una giornalista freelance","Viene a conoscenza del movimento dei nomadi digitali (che sta prendendo piede negli Stati","(Rientra in Italia) con l’idea di portare avanti l’idea dei nomadi digitali/diffondere in Italia il movimento dei nomadi digitali","È un esperto in comunicazione online","È consulente freelance per lo sviluppo di progetti web."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian.", group: {"claimMax":3,"options":["È il fondatore del progetto nomadidigitali.it.","Da giovane ha una grande passione il mare/la sua passione era il mare","Da giovane ha una grande passione per l’esplorazione/aveva la passione per l’esplorazione","Da giovane gira il mondo","Da giovane lavora come/era istruttore subacqueo","Può chiamare tanti posti casa (ma non è completamente soddisfatto)","In Messico conosce una giornalista freelance","Viene a conoscenza del movimento dei nomadi digitali (che sta prendendo piede negli Stati Uniti)","(Rientra in Italia) con l’idea di portare avanti l’idea dei nomadi digitali/diffondere in Italia il movimento dei nomadi digitali","È un esperto in comunicazione online","È consulente freelance per lo sviluppo di progetti web."],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1219,7 +1222,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at the passage as a whole, what\ndo we learn about Camilla?\nGive four detailed points.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Camilla was smaller/she weighed 1,250kg as her sister had taken more room in her mom’s womb; her sister was the mad one/ — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She is the polar opposite to her sister” 1 mark; “She is innocent/naïve” 1 mark; “She has a simplistic view of the world” 1 mark. The scheme prices this half of the ask separately, under the heading “Camilla was smaller/she weighed 1,250kg as her sister had taken more room in her mom’s womb; her sister was the mad one/”.", group: {"claimMax":4,"perOption":5,"options":["She is 9 years old; she lives with her family she believes that is not difficult to be happy you just need a family and a house; she went to Alice’s house to play with her","She has a cosy/welcoming/small house with many people living in it; she does not have a playroom but she has to share her bedroom with her sister","When she is sick of playing with her sister her mom makes them a snack; she thinks that February’s snacks are the nicest because it’s Carnevale and her mom was making castagnole and fiocchetti for them they were adding sugar and alchermes","She believes that it would be better to be an only child so you can get your own bedroom you can get a new rucksack every year you get new clothes/you don’t have to wear the clothes from your older brothers and sisters","Camilla feels safe at home/she thinks that home is the place where you are safe home is where family stay, sleep and eat together home is where the children play/have an afternoon snack/do their homework home is the place that is always there waiting for you/home is where you go back to when you have been away home is somewhere that has to exist/cannot but exist","She has a twin sister/a sister called Sara when they were just born they weren’t very pretty they did not weigh a lot as they had to share the same space in her mom’s womb;"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She is the polar opposite to her sister” 1 mark; “She is innocent/naïve” 1 mark; “She has a simplistic view of the world” 1 mark.", group: {"claimMax":4,"options":["She is 9 years old; she lives with her family she believes that is not difficult to be happy you just need a family and a house; she went to Alice’s house to play with her","She has a cosy/welcoming/small house with many people living in it; she does not have a playroom but she has to share her bedroom with her sister","When she is sick of playing with her sister her mom makes them a snack; she thinks that February’s snacks are the nicest because it’s Carnevale and her mom was making castagnole and fiocchetti for them they were adding sugar and alchermes","She believes that it would be better to be an only child so you can get your own bedroom you can get a new rucksack every year you get new clothes/you don’t have to wear the clothes from your older brothers and sisters","Camilla feels safe at home/she thinks that home is the place where you are safe home is where family stay, sleep and eat together home is where the children play/have an afternoon snack/do their homework home is the place that is always there waiting for you/home is where you go back to when you have been away home is somewhere that has to exist/cannot but exist","She has a twin sister/a sister called Sara when they were just born they weren’t very pretty they did not weigh a lot as they had to share the same space in her mom’s womb; Camilla was smaller/she weighed 1,250kg as her sister had taken more room in her mom’s womb; her sister was the mad one/she wanted to do things the other way round; Camilla was calmer; Camilla was waiting for her turn without making too much fuss."],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1426,7 +1429,8 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at the passage, mention what Leo\nmust do to identify his dream (three points)\nand why having a dream is important in the\ncontext of the novel (one point).",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The candidate must refer both to the passage and to the novel as a whole — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “The candidate must refer both to the passage and to the novel as a whole”.", group: {"claimMax":4,"perOption":5,"options":["To identify his dream he must look for it by asking the right questions He must read/ look around/take an interest in things.","He must look for his dream by giving it everything he has got He must question all the things that he is attracted to/passionate about","He must find out why he is attracted to or passionate about something the only way to find out about his dream is to dedicate some time and effort he must start from what he already knows","Here, the Sognatore, is giving Leo the sort of “guidelines” which will accompany him throughout the novel and which he will often refer to (directly or indirectly) in the process of becoming a more mature individual.","These guidelines the Sognatore is giving also have an inspirational effect/call to action element to overcome Leo’s insecurities.","Having a dream is in and of itself extremely significant and the tenacious and passionate pursuit of that dream is of immeasurable importance: his teenage angst is alleviated a little as he has a sense of purpose; he is inspired to improve his life.","Il Sognatore reinforces his message at every opportunity, also warning Leo that sacrifices need to be made because of it and setbacks are to be expected.","It is in overcoming/conquering difficulties that we transform our dreams into reality; we grow stronger/use courage and achieve great things.","This concept is promoted by il Sognatore and is readily accepted by Leo, slowly but surely he becomes focused on his dream “Beatrice”; the pursuit of his dream leads Leo through the painful loss of Beatrice/ and the discovery of true love with Silvia."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Points from the passage — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Points from the passage”; the paper asks for 3 points on it. The scheme prints: “The candidate must refer both to the passage and to the novel as a whole”.", group: {"claimMax":3,"options":["To identify his dream he must look for it by asking the right questions He must read/ look around/take an interest in things.","He must look for his dream by giving it everything he has got He must question all the things that he is attracted to/passionate about","He must find out why he is attracted to or passionate about something the only way to find out about his dream is to dedicate some time and effort he must start from what he already knows"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Importance in the context of the novel — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Importance in the context of the novel”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["Here, the Sognatore, is giving Leo the sort of “guidelines” which will accompany him throughout the novel and which he will often refer to (directly or indirectly) in the process of becoming a more mature individual.","These guidelines the Sognatore is giving also have an inspirational effect/call to action element to overcome Leo’s insecurities.","Having a dream is in and of itself extremely significant and the tenacious and passionate pursuit of that dream is of immeasurable importance: his teenage angst is alleviated a little as he has a sense of purpose; he is inspired to improve his life.","Il Sognatore reinforces his message at every opportunity, also warning Leo that sacrifices need to be made because of it and setbacks are to be expected.","It is in overcoming/conquering difficulties that we transform our dreams into reality; we grow stronger/use courage and achieve great things.","This concept is promoted by il Sognatore and is readily accepted by Leo, slowly but surely he becomes focused on his dream “Beatrice”; the pursuit of his dream leads Leo through the painful loss of Beatrice/ and the discovery of true love with Silvia."],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1637,7 +1641,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage and the novel as a\nwhole, what do we learn about Roscio?\nGive four detailed points.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Candidate must refer both to the passage and to the text as a whole — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “Candidate must refer both to the passage and to the text as a whole”.", group: {"claimMax":4,"perOption":5,"options":["Until the night before the killing Roscio was on speaking terms with Rosello his wife’s cousin","Even though he and Rosello were related, their relationship was not that friendly. They weren’t showing a very close friendship or a very close family bond His relationship with Rosello did not seem to have changed recently","He was a private person and not very talkative even with Manno, his hunting partner, he kept his privacy and his distance","He was a little more talkative with Laurana, his old school friend, when they were on their own","Because of his private nature it was difficult to read his mind and obviously difficult to arrive at a conclusion that he was planning something against Rosello","Roscio maintained with everyone, even with the pharmacist who was his constant hunting companion, a detachment that might seem like coldness/indifference.","His conversation was limited to replies the more numerous the group the more he withdrew into a bemused/remote silence","Only with an old companion like Laurana, he would talk more easily. Presumably, he behaved in the same way (he would talk easily) with the pharmacist during the long days they spent hunting","His relationship with his wife’s cousin seemed changed in those last days, although it would have been difficult to detect change in Roscio’s laconic manner.","We are told that Roscio had caught his wife (whom he loved very much) and her cousin","We are also told that Roscio had mentioned to arciprete Rosello, that he was in possession of some incriminating evidence against Rosello and he was going to hand over this evidence to a friend of his, a communist politician, unless he did as he was told. This evidence would send Rosello to jail","Roscio had obtained the incriminating evidence by “stealing it” from Rosello’s office when he was there on his own","He later went to meet the aforementioned politician asking him to help him send a “very important person” (Rosello), to jail, and had promised him to give him the incriminating evidence. He had not been seen by the politician after that","We are also told that arciprete Rosello had informed his nephew of the threat by Roscio which leads to the conclusion that Rosello had decided to kill him then."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the headings “Points from the passage”, “Points from the novel”; the paper does not say how many points it wants under each. The scheme prints: “Candidate must refer both to the passage and to the text as a whole”.", group: {"claimMax":4,"options":["Points from the passage — Until the night before the killing Roscio was on speaking terms with Rosello his wife’s cousin","Points from the passage — Even though he and Rosello were related, their relationship was not that friendly. They weren’t showing a very close friendship or a very close family bond His relationship with Rosello did not seem to have changed recently","Points from the passage — He was a private person and not very talkative even with Manno, his hunting partner, he kept his privacy and his distance","Points from the passage — He was a little more talkative with Laurana, his old school friend, when they were on their own","Points from the passage — Because of his private nature it was difficult to read his mind and obviously difficult to arrive at a conclusion that he was planning something against Rosello","Points from the passage — Roscio maintained with everyone, even with the pharmacist who was his constant hunting companion, a detachment that might seem like coldness/indifference.","Points from the passage — His conversation was limited to replies the more numerous the group the more he withdrew into a bemused/remote silence","Points from the passage — Only with an old companion like Laurana, he would talk more easily. Presumably, he behaved in the same way (he would talk easily) with the pharmacist during the long days they spent hunting","Points from the passage — His relationship with his wife’s cousin seemed changed in those last days, although it would have been difficult to detect change in Roscio’s laconic manner.","Points from the novel — We are told that Roscio had caught his wife (whom he loved very much) and her cousin Rosello in flagrante delicto, and had decided to do something about it, which entailed first of all a visit to arciprete Rosello demanding that his nephew (Rosello) leave the town for good","Points from the novel — We are also told that Roscio had mentioned to arciprete Rosello, that he was in possession of some incriminating evidence against Rosello and he was going to hand over this evidence to a friend of his, a communist politician, unless he did as he was told. This evidence would send Rosello to jail","Points from the novel — Roscio had obtained the incriminating evidence by “stealing it” from Rosello’s office when he was there on his own","Points from the novel — He later went to meet the aforementioned politician asking him to help him send a “very important person” (Rosello), to jail, and had promised him to give him the incriminating evidence. He had not been seen by the politician after that","Points from the novel — We are also told that arciprete Rosello had informed his nephew of the threat by Roscio which leads to the conclusion that Rosello had decided to kill him then."],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1775,7 +1779,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spiegate come l’influencer crea i suoi contenuti.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "(Crea il contenuto) scattando foto", marks: 1, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Pubblica contenuti) scegliendo il materiale migliore tra immagini, video, articoli, consigli o semplici informazioni” 2 marks; “Prepara attentamente una strategia” 1 mark; “Prepara un piano di pubblicazione 1m scegliendo le miglior tematiche tramite articoli e foto” 1 mark; “Minimum list of 4 without verb only (for both” 2 marks." },
+    { id: "r-1-1", kind: "point", verbatim: "(Crea il contenuto) scattando foto", marks: 1, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Pubblica contenuti) scegliendo il materiale migliore tra immagini, video, articoli, consigli o semplici informazioni” 2 marks; “Prepara attentamente una strategia” 1 mark; “Prepara un piano di pubblicazione” 1 mark; “scegliendo le miglior tematiche tramite articoli e foto” 1 mark; “Minimum list of 4 without verb only (for both” 2 marks." },
     { id: "r-1-2", kind: "point", verbatim: "realizzando video", marks: 1 },
     { id: "r-1-3", kind: "point", verbatim: "scrivendo post", marks: 1 },
     { id: "r-1-4", kind: "point", verbatim: "scrivendo/preparando articoli", marks: 1 },
@@ -1824,7 +1828,9 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at the article, outline how one\nbecomes a successful influencer in terms of\na starting point (one point), things that\nneed to be done (two points), and mistakes\nto be avoided (one point).",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Starting point / Things to be done — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “share online 1m get as many followers as possible 1m make/create videos/photos/material 1m create a page online” 1 mark; “Don’t try to do something without a plan 4m risk of not being credible 1m and not having followers” 1 mark. The scheme prices this half of the ask separately, under the heading “Starting point / Things to be done”.", group: {"claimMax":4,"perOption":5,"options":["You need to be passionate about something and become an expert on it by an in-depth study of the subject.","Participate in/be part of/join thematic groups/subject groups and link with other influencers in the same sector","Open a personal blog, update it daily, promote/publicise it appropriately.","Source/create the best material/content relevant to the topic","Share/publish/post videos/photos/posts/articles online* at the appropriate time","Always take part in/never miss a chance to go to events and meetings related to the subject of interest","Build an online reputation/gain credibility thanks to competence/expertise in a subject","Prepare a strategy/plan and analyse/monitor results from comments, sharing, views, clicks","Interact with/involve/encourage participation of the public/users/followers through chats/posts/online** and attract new users","Publish promotional material/ads for companies/brands for earnings/ payment"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Starting point — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Starting point”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["You need to be passionate about something and become an expert on it by an in-depth study of the subject."],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Things to be done — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “share online” 1 mark; “get as many followers as possible” 1 mark; “make/create videos/photos/material” 1 mark; “create a page online” 1 mark. The scheme prints these answers under the heading “Things to be done”; the paper asks for 2 points on it.", group: {"claimMax":2,"options":["Participate in/be part of/join thematic groups/subject groups and link with other influencers in the same sector","Open a personal blog, update it daily, promote/publicise it appropriately.","Source/create the best material/content relevant to the topic","Share/publish/post videos/photos/posts/articles online* at the appropriate time","Always take part in/never miss a chance to go to events and meetings related to the subject of interest","Build an online reputation/gain credibility thanks to competence/expertise in a subject","Prepare a strategy/plan and analyse/monitor results from comments, sharing, views, clicks","Interact with/involve/encourage participation of the public/users/followers through chats/posts/online** and attract new users","Publish promotional material/ads for companies/brands for earnings/ payment"],"perOption":5} },
+    { id: "r-3", kind: "anyN", verbatim: "Mistakes to be avoided — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “Don’t try to do something without a plan” 4 marks; “risk of not being credible” 1 mark; “and not having followers” 1 mark. The scheme prints these answers under the heading “Mistakes to be avoided”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["It cannot be an improvised activity (4) always be prepared (1)"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1847,7 +1853,7 @@ export const CARDS: SecCard[] = [
     questionText: "Riferendovi alla prima sezione, spiegate con le vostre parole cosa impariamo su Emma.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Mangia spuntini/snacks velocemente / Abita a Milano — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prices this half of the ask separately, under the heading “Mangia spuntini/snacks velocemente / Abita a Milano”.", group: {"claimMax":4,"perOption":2,"options":["Abita da sola","Non cucina mai","Abita in una (casa/un appartamento) semplice/spartano/anonima","È una persona anonima","Non fa la spesa molto spesso","Compra prodotti in offerta","Il suo frigo è quasi vuoto","È studentessa all’università di Milano/Studia all’università/ studia a Milano/ è studente all’università","Non ha molti amici/pensava di essersi fatta tanta amici","È introversa / non è estroversa/non è espansiva"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian.", group: {"claimMax":4,"options":["Abita da sola","Non cucina mai","Abita in una (casa/un appartamento) semplice/spartano/anonima","È una persona anonima","Non fa la spesa molto spesso","Compra prodotti in offerta","Il suo frigo è quasi vuoto","Mangia spuntini/snacks velocemente","È studentessa all’università di Milano/Studia all’università/ studia a Milano/ è studente all’università","Abita a Milano","Non ha molti amici/pensava di essersi fatta tanta amici","È introversa / non è estroversa/non è espansiva"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1893,7 +1899,7 @@ export const CARDS: SecCard[] = [
     questionText: "Perché le bambine guardano Emma con gli occhi sgranati, probabilmente?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "con i boccoli/riccioli — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prices this half of the ask separately, under the heading “con i boccoli/riccioli”.", group: {"claimMax":2,"perOption":3,"options":["Per i suoi capelli biondi","per come si trucca/il trucco/rossetto rosso, eylener e molto blush colour"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian.", group: {"claimMax":2,"options":["Per i suoi capelli biondi","con i boccoli/riccioli","per come si trucca/il trucco/rossetto rosso, eylener e molto blush colour"],"perOption":3,"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2008,7 +2014,9 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage, what do we learn\nabout Emma’s life in Milan? Outline\npossible reasons why she could be\ndissatisfied (two points), her general\nconcerns (one point), and her reaction to\nthe phone call (one point).",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Four points are required — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “hope to make money (aveva bisogno di soldi) 3m she did not make a lot of friends 3m she has no friends” 2 marks; “• At first she is surprised (3m) because it’s late and it’s a young girl who makes the call (” 2 marks; “• She seems to feel the situation is somewhat eery/uneasy/anxious (3m) because the call is strange. (” 2 marks; “• She panics/ she feels confused (3m) because she thinks it’s a prank/joke (” 2 marks; “• she feels unsafe (3m) she goes under the covers/she locks the door (” 2 marks; “• she feels indecisive (3m) because she does not know what to do (” 2 marks. The scheme prices this half of the ask separately, under the heading “Four points are required”.", group: {"claimMax":4,"perOption":5,"options":["She thought she would have made a lot of friends but she did not","It’s hard to make friends because many fellow students don’t live in Milan","Her connections and relationship are little more than shallow and casual","Her room is anonymous like her","She has financial problems"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Reasons to be dissatisfied — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “hope to make money (aveva bisogno di soldi” 3 marks; “she did not make a lot of friends” 3 marks; “she has no friends” 2 marks. The scheme prints these answers under the heading “Reasons to be dissatisfied”; the paper asks for 2 points on it. The scheme prints: “Four points are required”.", group: {"claimMax":2,"options":["She thought she would have made a lot of friends but she did not","It’s hard to make friends because many fellow students don’t live in Milan","Her connections and relationship are little more than shallow and casual","Her room is anonymous like her","She has financial problems"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Concern — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Concern”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["She has financial problems/because money is scarce","She has to watch what she buys and eats","Milan is not what she expected in terms of making friends"],"perOption":5} },
+    { id: "r-3", kind: "anyN", verbatim: "Reaction to phone call — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Reaction to phone call”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["At first she is surprised (3m) because it’s late and it’s a young girl who makes the call (2m)","She seems to feel the situation is somewhat eery/uneasy/anxious (3m) because the call is strange. (2m)","She panics/ she feels confused (3m) because she thinks it’s a prank/joke (2m)","she feels unsafe (3m) she goes under the covers/she locks the door (2m)","she feels indecisive (3m) because she does not know what to do (2m)"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2124,7 +2132,7 @@ export const CARDS: SecCard[] = [
     questionText: "Perché Leo non sa se vuole continuare con il suo sogno?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "(Perché ogni volta che ci si mette) succede qualcosa di male /ha paura che potrebbe andare male", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Succede qualcosa 3m che andrà male” 1 mark.", permittedMarks: [0,1,5] },
+    { id: "r-1", kind: "criterion", verbatim: "(Perché ogni volta che ci si mette) succede qualcosa di male /ha paura che potrebbe andare male", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Succede qualcosa” 3 marks; “che andrà male” 1 mark.", permittedMarks: [0,1,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2216,7 +2224,8 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage, how does Leo view\nil Sognatore (three points)? Why is this\npassage important in the context of the\nnovel as a whole (one point)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The candidate must refer both to the passage and to the novel as a whole. — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “The candidate must refer both to the passage and to the novel as a whole.”. The scheme lists 2 further accepted answer(s) than this card shows, in the order it prints them.", group: {"claimMax":4,"perOption":5,"options":["He is very impressed by the fact that he (a teacher) goes to see him (at the hospital, a sign of humanity, generosity, and real concern for his student).","He finds him funny he is good company Leo likes him.","He thinks he is “a normal person”, i.e., not stuck up, because he tells things like a normal person would/he treats him like an equal/adult/not a student/he tells him about life/he has a life","He realises that they are not so different. He is a normal person who has a normal life.","He is not afraid of being made fun of, as shown by the fact that he laughs when Leo calls him il Sognatore","He has respect for the Sognatore i.e., when he tells the joke he laughs not to hurt his feelings.","He trusts his/he confides him as he tells his deepest thoughts - story of Beatrice","He cries in front of him it shows he trusts him.","He encourages him to pursue his dream.","He is somebody you look up to/listen to, and he manages to do this without being nasty/ he respects him/he admires him.","The ultimate compliment is when he states at the end of the passage that he would like to be like him/he aspires to be like him","He is cool/ he is not sfigato/he finds him cool he wants to be like him.","This passage shows that Leo now sees Il Sognatore in a very positive light and goes as far as admitting that he would like to be like him. It goes without saying that il Sognatore has now become a reference point and a role model for his pupil. This is important in the context of the rest of the novel","When Leo is faced with Beatrice’s disease and subsequent death, it is to the Sognatore that he will turn for answers having established him to have all the qualities listed above. Il Sognatore is also the person who encouraged Leo to find his dream to be a writer","He encouraged him to be more confident, strong, to improve his life.","Development of bond from the beginning now he sees the opposite from the beginning of the novel where he was just a sfigato/looser."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Leo’s view of il Sognatore — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Leo’s view of il Sognatore”; the paper asks for 3 points on it. The scheme prints: “The candidate must refer both to the passage and to the novel as a whole.”.", group: {"claimMax":3,"options":["He is very impressed by the fact that he (a teacher) goes to see him (at the hospital, a sign of humanity, generosity, and real concern for his student).","He finds him funny he is good company Leo likes him.","He thinks he is “a normal person”, i.e., not stuck up, because he tells things like a normal person would/he treats him like an equal/adult/not a student/he tells him about life/he has a life","He realises that they are not so different. He is a normal person who has a normal life.","He is not afraid of being made fun of, as shown by the fact that he laughs when Leo calls him il Sognatore","He has respect for the Sognatore i.e., when he tells the joke he laughs not to hurt his feelings.","He trusts his/he confides him as he tells his deepest thoughts - story of Beatrice","He cries in front of him it shows he trusts him.","He encourages him to pursue his dream.","He is somebody you look up to/listen to, and he manages to do this without being nasty/ he respects him/he admires him.","The ultimate compliment is when he states at the end of the passage that he would like to be like him/he aspires to be like him","He is cool/ he is not sfigato/he finds him cool he wants to be like him."],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Importance in the context of novel — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Importance in the context of novel”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["This passage shows that Leo now sees Il Sognatore in a very positive light and goes as far as admitting that he would like to be like him. It goes without saying that il Sognatore has now become a reference point and a role model for his pupil. This is important in the context of the rest of the novel","When Leo is faced with Beatrice’s disease and subsequent death, it is to the Sognatore that he will turn for answers having established him to have all the qualities listed above. Il Sognatore is also the person who encouraged Leo to find his dream to be a writer","He encouraged him to be more confident, strong, to improve his life.","Development of bond from the beginning now he sees the opposite from the beginning of the novel where he was just a sfigato/looser.","he has become more a father figure/ a big brother - development of bond- he realised how strong it is.","he actual taught him something/he wants to make him proud /he is a teacher/ mentor / for life lesson."],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2423,7 +2432,8 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage, what do we learn\nabout the letter sent to Manno, the\npharmacist (three points)? What have we\nlearned about the same letter by the end\nof the novel (one point)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Candidate must refer both to the passage and to the text as a whole — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Cut out from newspaper/ Osservatore romano (any reference” 1 mark. The scheme prices this half of the ask separately, under the heading “Candidate must refer both to the passage and to the text as a whole”.", group: {"claimMax":4,"perOption":5,"options":["The letter sent to Manno is an anonymous letter/we do not know who wrote it contains a death threat","Manno believes it was sent to him to keep him away/to stop him from shooting (hunting).","Don Luigi believes that it could have been sent by other hunters because they are capable of that and more.","Don Luigi even suspects/think that Manno could have sent the letter to himself","All those present agree that the letter should be seen as a practical joke/the letter is joke","The pharmacist showed the letter to the Maresciallo.","By the end of the novel, we have learned that the letter was a smoke screen to divert the attention from the real target Roscio, who was to be eliminated because he had discovered dangerous evidence that could harm Rosello. The latter had devised the letter so at to cover up his elimination as collateral damage in the hunting expedition of Manno and Roscio, rather than the intended target. Rosello sent it to divert attention away from being exposed for corruption as Roscio had evidence that could harm/against him. (who + why)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "What we learn about the letter from the passage. — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “What we learn about the letter from the passage.”; the paper asks for 3 points on it. The scheme prints: “Candidate must refer both to the passage and to the text as a whole”.", group: {"claimMax":3,"options":["The letter sent to Manno is an anonymous letter/we do not know who wrote it contains a death threat","Manno believes it was sent to him to keep him away/to stop him from shooting (hunting).","Don Luigi believes that it could have been sent by other hunters because they are capable of that and more.","Don Luigi even suspects/think that Manno could have sent the letter to himself","All those present agree that the letter should be seen as a practical joke/the letter is joke","The pharmacist showed the letter to the Maresciallo."],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "What we know about the letter at the end of the novel — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “Cut out from newspaper/ Osservatore romano (any reference” 1 mark. The scheme prints these answers under the heading “What we know about the letter at the end of the novel”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["By the end of the novel, we have learned that the letter was a smoke screen to divert the attention from the real target Roscio, who was to be eliminated because he had discovered dangerous evidence that could harm Rosello. The latter had devised the letter so at to cover up his elimination as collateral damage in the hunting expedition of Manno and Roscio, rather than the intended target. Rosello sent it to divert attention away from being exposed for corruption as Roscio had evidence that could harm/against him. (who + why)"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2633,7 +2643,7 @@ export const CARDS: SecCard[] = [
     questionText: "Ag féachaint duit ar an sliocht ina iomláine,\nLooking at the article as a whole, what do\ncad a fhoghlaimímid faoin bhfeachtas\nwe learn about the 30x30 Italia campaign?\n30x30 Italia? Bíodh ceithre phointe\nGive four detailed points.\nmhionsonraithe agat.\n•\n•\n•\n•",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The 30x30 campaign / An Italian campaign, founded by Worldrise, Onlus, the association who has been working for the safe — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It inspired projects or environmentalist like Sweep Island and Mariasole Bianco in their work project” 2 marks. The scheme prices this half of the ask separately, under the heading “The 30x30 campaign / An Italian campaign, founded by Worldrise, Onlus, the association who has been working for the safe”.", group: {"claimMax":4,"perOption":5,"options":["It was launched in 2020 within a wider international project for the safeguard of the sea","It wants to increase functionality and productivity protecting our life on the planet.","National initiative that contributes to a planetary commitment with the institutions of AMP","To protect at least 30% of Italian seas by 2030 by setting up Protected Marine Areas","To increase the protection of the Mediterranean Sea and its biodiversity","To achieve its aims, the campaign focuses on awareness, action and research.","So far 50 associations and safeguarding movements on all national territory adhered to the campaign."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The 30x30 campaign — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It inspired projects or environmentalist like Sweep Island and Mariasole Bianco in their work project” 2 marks. The scheme prints these answers under the heading “The 30x30 campaign”.", group: {"claimMax":4,"options":["An Italian campaign, founded by Worldrise, Onlus, the association who has been working for the safety of the sea for the past 10 years.","It was launched in 2020 within a wider international project for the safeguard of the sea","It wants to increase functionality and productivity protecting our life on the planet.","National initiative that contributes to a planetary commitment with the institutions of AMP","To protect at least 30% of Italian seas by 2030 by setting up Protected Marine Areas","To increase the protection of the Mediterranean Sea and its biodiversity","To achieve its aims, the campaign focuses on awareness, action and research.","So far 50 associations and safeguarding movements on all national territory adhered to the campaign."],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2656,7 +2666,7 @@ export const CARDS: SecCard[] = [
     questionText: "Riferendovi alla prima sezione, spiegate con le vostre parole quale problema incontra\nKreshnik quando arriva nella nuova scuola.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "Non sapeva dov’era la sua aula (quindi ha chiesto informazioni a due persone)", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Si era trovato nel cortile (non nell’aula” 3 marks; “L’aula era dalla parte opposta” 3 marks; “Era andato troppo avanti” 3 marks; “Era andato in portineria a chiedere dove si trovava l’aula della quarta 2m non sa dove andare” 3 marks." },
+    { id: "r-1-1", kind: "point", verbatim: "Non sapeva dov’era la sua aula (quindi ha chiesto informazioni a due persone)", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Si era trovato nel cortile (non nell’aula” 3 marks; “L’aula era dalla parte opposta” 3 marks; “Era andato troppo avanti” 3 marks; “Era andato in portineria a chiedere dove si trovava l’aula della quarta” 2 marks; “non sa dove andare” 3 marks." },
     { id: "r-1-2", kind: "point", verbatim: "si è perso (in entrambi i casi)", marks: 1 },
     ],
     sourceMaterial: {
@@ -2727,7 +2737,7 @@ export const CARDS: SecCard[] = [
     questionText: "Perché Kreshnik non dice il suo nome a Fabio?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Perché il professore lo aveva detto / il professore aveva detto Kreshnik / Visto che il professore non appena entrato aveva guardato il registro e aveva detto K./ Perché il professore appena K. entra dice il suo nome", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Non c’era bisogno di dirgli il nome visto che il professore non appena era entrato 4m si era limitato a dargli la mano” 1 mark.", permittedMarks: [0,1,5] },
+    { id: "r-1", kind: "criterion", verbatim: "Perché il professore lo aveva detto / il professore aveva detto Kreshnik / Visto che il professore non appena entrato aveva guardato il registro e aveva detto K./ Perché il professore appena K. entra dice il suo nome", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Non c’era bisogno di dirgli il nome visto che il professore non appena era entrato” 4 marks; “si era limitato a dargli la mano” 1 mark.", permittedMarks: [0,1,4,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2797,7 +2807,7 @@ export const CARDS: SecCard[] = [
     questionText: "Riferendovi alla quarta sezione, perché Kreshnik capisce che deve accettare l’invito di\nAndrea?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Il fatto che si era messo ad aspettarlo 4m che K doveva seguirlo” 1 mark; “Noialtri siamo qua fuori” 1 mark.", group: {"claimMax":1,"perOption":5,"options":["Il fatto che si era messo ad aspettarlo significa che K doveva seguirlo (5)","Andrea aveva detto muovi il culo (5)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Il fatto che si era messo ad aspettarlo” 4 marks; “che K doveva seguirlo” 1 mark; “Noialtri siamo qua fuori” 1 mark.", group: {"claimMax":1,"options":["Il fatto che si era messo ad aspettarlo significa che K doveva seguirlo (5)","Andrea aveva detto muovi il culo (5)"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2843,8 +2853,8 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage, what do we learn\nabout Kreshnik (three detailed points) and\nwhat efforts did Andrea make to include\nKresnik in his group of friends (one point)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Kreshnik — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “Kreshnik”.", group: {"claimMax":3,"perOption":5,"options":["He’s a foreign student and he’s been in a number of different schools","Having been to a number of new schools, he knows what to avoid and what to expect","He’s nervous about starting in the new school, and quite hesitant/cautious; when he enters the empty classroom her remains still and seems dazed","He thinks the cool girl Giulia is out of his league","He feels welcome in the new school, as soon as he arrives. The staff are helpful: the janitor takes him to his classroom when he can’t find it (the classroom), while the porter finds out for him why the classroom is empty","He’s attending a new school and it is his first day in a new school/Kreshnik was in 4B/quarta b","Some measure of confidence - not afraid to ask for directions","Possibly shy - doesn’t repeat his name to Fabio + nods at the teacher in agreement instead of speaking","He always has to teach people how to pronounce his name","He is thoughtful - adapts his name to make it easier to pronounce","He has moved to Belluno","He speaks Italian very well","He found a new group of friends easily enough, with the help of Andrea","He admires the way Giulia makes clothes her own","He thinks that Giulia is out of his league","He found the class better than he imagined"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Andrea efforts — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Andrea efforts”.", group: {"claimMax":1,"perOption":5,"options":["Andrea doesn’t ask him the usual questions about his origins, therefore he doesn’t make him feel like a foreigner/immigrant: he’s just a new student","At break time, ANDREA makes K join his group of friends, with whom K starts to hang out, which means he has friends from day one","He invites Kreshnik to join him with the others outside during the break - effort to be welcoming","He waits for Kreshnik to join him and his friends, this shows an effort to include him with the others","He asks Kreshnik how to pronounce his name properly, probably in an attempt to have his name correct before introducing him to the other classmates"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Kreshnik — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Kreshnik”.", group: {"claimMax":3,"options":["He’s a foreign student and he’s been in a number of different schools","Having been to a number of new schools, he knows what to avoid and what to expect","He’s nervous about starting in the new school, and quite hesitant/cautious; when he enters the empty classroom her remains still and seems dazed","He thinks the cool girl Giulia is out of his league","He feels welcome in the new school, as soon as he arrives. The staff are helpful: the janitor takes him to his classroom when he can’t find it (the classroom), while the porter finds out for him why the classroom is empty","He’s attending a new school and it is his first day in a new school/Kreshnik was in 4B/quarta b","Some measure of confidence - not afraid to ask for directions","Possibly shy - doesn’t repeat his name to Fabio + nods at the teacher in agreement instead of speaking","He always has to teach people how to pronounce his name","He is thoughtful - adapts his name to make it easier to pronounce","He has moved to Belluno","He speaks Italian very well","He found a new group of friends easily enough, with the help of Andrea","He admires the way Giulia makes clothes her own","He thinks that Giulia is out of his league","He found the class better than he imagined"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Andrea efforts — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Andrea efforts”.", group: {"claimMax":1,"options":["Andrea doesn’t ask him the usual questions about his origins, therefore he doesn’t make him feel like a foreigner/immigrant: he’s just a new student","At break time, ANDREA makes K join his group of friends, with whom K starts to hang out, which means he has friends from day one","He invites Kreshnik to join him with the others outside during the break - effort to be welcoming","He waits for Kreshnik to join him and his friends, this shows an effort to include him with the others","He asks Kreshnik how to pronounce his name properly, probably in an attempt to have his name correct before introducing him to the other classmates"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2891,7 +2901,7 @@ export const CARDS: SecCard[] = [
     questionText: "Descrivete con le vostre parole la pianta (due elementi)\n(i)\n(ii)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Soffriva — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prices this half of the ask separately, under the heading “Soffriva”.", group: {"claimMax":2,"perOption":3,"options":["(Era) una piante verde","(Era) una pianta che si tiene in casa/da casa/da appartamento","(Aveva) un fusto dritto","Il fusto (era) esile","Il fusto (era) nudo","Il fusto sembrava un bastone","Le foglie (erano) larghe","Le foglie (erano) lucide","Le foglie ingiallivano","Le foglie cadevano","I gambi (erano) lunghi","Era così a forma di pianta, con foglie così a forma di foglia, che non sembrava vera","La pianta aveva un ciuffetto in cima","La pianta assomigliava a una palma/sembrava una palma","era una pianta normale come tutte le piante"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian.", group: {"claimMax":2,"options":["(Era) una piante verde","(Era) una pianta che si tiene in casa/da casa/da appartamento","(Aveva) un fusto dritto","Il fusto (era) esile","Il fusto (era) nudo","Il fusto sembrava un bastone","Le foglie (erano) larghe","Le foglie (erano) lucide","Le foglie ingiallivano","Le foglie cadevano","I gambi (erano) lunghi","Era così a forma di pianta, con foglie così a forma di foglia, che non sembrava vera","La pianta aveva un ciuffetto in cima","La pianta assomigliava a una palma/sembrava una palma","Soffriva","era una pianta normale come tutte le piante"],"perOption":3,"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3007,7 +3017,7 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa pareva fare la pianta a sentir l'acqua che le scorreva per le foglie?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "OR — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prices this half of the ask separately, under the heading “OR”.", group: {"claimMax":1,"perOption":5,"options":["pareva espandersi per offrire più superficie possibile alle gocce","(della gioia) pareva colorarsi del suo verde più brillante"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian.", group: {"claimMax":1,"options":["pareva espandersi per offrire più superficie possibile alle gocce","(della gioia) pareva colorarsi del suo verde più brillante"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3030,7 +3040,7 @@ export const CARDS: SecCard[] = [
     questionText: "Dite con le vostre parole perché Marcovaldo tornava al coperto.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "Perché con la pioggia si ricordava/gli ricordava/gli faceva venire in mente", marks: 2, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “per i reumatismi/perché era malato 3m per la pioggia” 1 mark." },
+    { id: "r-1-1", kind: "point", verbatim: "Perché con la pioggia si ricordava/gli ricordava/gli faceva venire in mente", marks: 2, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “per i reumatismi/perché era malato” 3 marks; “per la pioggia” 1 mark." },
     { id: "r-1-2", kind: "point", verbatim: "di soffrire di reumatismi / reumatismi/ essere malato", marks: 3 },
     ],
     sourceMaterial: {
@@ -3054,7 +3064,8 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage, how does\nMarcovaldo see the plant (three detailed\npoints)? Why is this passage important in\nthe context of the novel as a whole (one\npoint)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The candidate must refer both to the passage and to the novel as a whole. — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “The candidate must refer both to the passage and to the novel as a whole.”.", group: {"claimMax":4,"perOption":5,"options":["Marcovaldo thinks that the plant is suffering because it was indoors and it lacked light, air and dew","Marcovaldo thinks that the plant shows signs of suffering because the stem stretched and the leaves fell","Marcovaldo thinks that the plant is suffering because its leaves were staked, like the face of a sick child","Marcovaldo considers the plant as a member of the family, a brother in misfortune","Marcovaldo always thinks about the plant every hour of the day and night because he wants to help the plant","Marcovaldo hopes it rains so to bring the plant outdoor","Marcovaldo thinks that the plant, feeling the water (flowing) through its leaves, expands","Marcovaldo thinks that under the rain the plant becomes greener","The plant is as one that looked so much like other plants its leaves were so leaf like that almost seemed fake 5m","This passage shows one of the strong themes of the novel. Marcovaldo is a very sensitive person and able to notice details of the suffering Nature surrounding him in the town.","This passage is important in the context of the novel because it shows the attitude of Marcovaldo to compare elements of Nature to his own existence and suffering.","This passage is important in the context of the novel because it deals with one of Marcovaldo's central themes: Nature counterfeited and compromised by artificial life.","This passage is important in the context of the novel because it shows Marcovaldo's desire to help Nature."]} },
+    { id: "r-1", kind: "anyN", verbatim: "What Marcovaldo thinks about the plant — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “What Marcovaldo thinks about the plant”; the paper asks for 3 points on it. The scheme prints: “The candidate must refer both to the passage and to the novel as a whole.”.", group: {"claimMax":3,"options":["Marcovaldo thinks that the plant is suffering because it was indoors and it lacked light, air and dew","Marcovaldo thinks that the plant shows signs of suffering because the stem stretched and the leaves fell","Marcovaldo thinks that the plant is suffering because its leaves were staked, like the face of a sick child","Marcovaldo considers the plant as a member of the family, a brother in misfortune","Marcovaldo always thinks about the plant every hour of the day and night because he wants to help the plant","Marcovaldo hopes it rains so to bring the plant outdoor","Marcovaldo thinks that the plant, feeling the water (flowing) through its leaves, expands","Marcovaldo thinks that under the rain the plant becomes greener","The plant is as one that looked so much like other plants its leaves were so leaf like that almost seemed fake 5m"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Importance in the context of novel — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Importance in the context of novel (not mention plant but other themes related to nature)”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["This passage shows one of the strong themes of the novel. Marcovaldo is a very sensitive person and able to notice details of the suffering Nature surrounding him in the town.","This passage is important in the context of the novel because it shows the attitude of Marcovaldo to compare elements of Nature to his own existence and suffering.","This passage is important in the context of the novel because it deals with one of Marcovaldo's central themes: Nature counterfeited and compromised by artificial life.","This passage is important in the context of the novel because it shows Marcovaldo's desire to help Nature."],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3077,7 +3088,7 @@ export const CARDS: SecCard[] = [
     questionText: "Come appariva il dottor Roscio nella foto?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “guitto 1m (sembrava) fantasma 1m truccato” 1 mark.", group: {"claimMax":2,"perOption":3,"options":["Sembrava un guitto (3m) truccato per una parte da fantasma (3m)","Aveva una piega amara nella bocca (3) uno sguardo stanco e implorante (3)","(Il ritratto di Roscio) (era) ingrandito a proporzioni naturali (3) lugubremente ritoccato e alluttato (nel vestito e cavatta)(3)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prints each answer in two halves at 3 marks each. It also pays part marks for a shorter answer: “guitto” 1 mark; “(sembrava) fantasma” 1 mark; “truccato” 1 mark.", group: {"claimMax":2,"options":["Sembrava un guitto","truccato per una parte da fantasma","Aveva una piega amara nella bocca","uno sguardo stanco e implorante","(Il ritratto di Roscio) (era) ingrandito a proporzioni naturali","lugubremente ritoccato e alluttato (nel vestito e cavatta)"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3238,7 +3249,7 @@ export const CARDS: SecCard[] = [
     questionText: "Ag féachaint duit ar an sliocht agus ar an\nLooking at this passage and at the novel as\núrscéal ina iomláine, cad fhoghlaimímid\na whole, what do we learn about Luisa\nfaoi Luisa Roscio? Bíodh ceithre phointe\nRoscio? Give four detailed points.\nmhionsonraithe agat.\n•\n•\n•\n•",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Candidate must refer both to the passage and to the text as a whole — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “Candidate must refer both to the passage and to the text as a whole”.", group: {"claimMax":4,"perOption":5,"options":["Luisa is a very beautiful woman. She is very rich. She wears black because she is Roscio’s widow /She dresses the house in black because she is the widow of Roscio. She has a child.","Luisa is the niece of Archpriest Rosello. She is the cousin of Avvocato Rosello. She has been living with her cousin in the archpriest's house since she was a child.","She is very emotional/she is grieving 2 examples from passage Luisa didn't approve of her husband hunting","Luisa is her cousin Avvocato Rosello's lover. With his complicity she kills her husband,","Luisa was a college mate of Manno’s widow, To cover up herself and her cousin crimes,","After a year of mourning, she will marry her cousin, Avvocato Rosello, to reunify their patrimony. She won’t pay for her crime","Luisa shows to have a formal, hypocritical respect for the Church and religion, She is disrespectful to her father-in-law because he is honest and free from hypocrisy","Luisa in this passage and in the whole novel proves to be good at playing the role of the desperate wife, especially with Laurana, that is investigating the case. She makes him fall in love with her","She pretend to mourn she adhere to the customs/norms of grieving/ death by grieving both with clothing and decorating the house in lutto","Luisa takes the bus Laurana regularly takes home after work to meet and talk to him. She falsely confess to Laurana that she has the evidences Avvocato Rosello is her husband's killer she falsely states having the intention to report everything to the investigators","Luisa invites Laurana on a date, she doesn't show up at the date with him. It's a trap into which Luisa makes Laurana fall in order to eliminate him","She manipulates Laurana by using her looks and personality into thinking about she knew nothing about her husband"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints: “Candidate must refer both to the passage and to the text as a whole”.", group: {"claimMax":4,"options":["Luisa is a very beautiful woman. She is very rich. She wears black because she is Roscio’s widow /She dresses the house in black because she is the widow of Roscio. She has a child.","Luisa is the niece of Archpriest Rosello. She is the cousin of Avvocato Rosello. She has been living with her cousin in the archpriest's house since she was a child.","She is very emotional/she is grieving 2 examples from passage Luisa didn't approve of her husband hunting","Luisa is her cousin Avvocato Rosello's lover. With his complicity she kills her husband, Roscio, because he had discovered she was cheating on him with Avvocato Rosello.","Luisa was a college mate of Manno’s widow, To cover up herself and her cousin crimes, Luisa makes allusions to the fact that the widow Manno is not a beautiful woman and her husband, farmacista Manno, was killed for having an affair with another woman","After a year of mourning, she will marry her cousin, Avvocato Rosello, to reunify their patrimony. She won’t pay for her crime","Luisa shows to have a formal, hypocritical respect for the Church and religion, She is disrespectful to her father-in-law because he is honest and free from hypocrisy","Luisa in this passage and in the whole novel proves to be good at playing the role of the desperate wife, especially with Laurana, that is investigating the case. She makes him fall in love with her","She pretend to mourn she adhere to the customs/norms of grieving/ death by grieving both with clothing and decorating the house in lutto","Luisa takes the bus Laurana regularly takes home after work to meet and talk to him. She falsely confess to Laurana that she has the evidences Avvocato Rosello is her husband's killer she falsely states having the intention to report everything to the investigators","Luisa invites Laurana on a date, she doesn't show up at the date with him. It's a trap into which Luisa makes Laurana fall in order to eliminate him","She manipulates Laurana by using her looks and personality into thinking about she knew nothing about her husband"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3422,7 +3433,8 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at the article as a whole, what do\nwe learn about Serendippo and Etta Polico.\nGive four detailed points.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Serendippo / Serendippo is an Association that for 15 years has “seen things from the other side” and has a completely d — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She is the president” 1 mark. The scheme prices this half of the ask separately, under the heading “Serendippo / Serendippo is an Association that for 15 years has “seen things from the other side” and has a completely d”.", group: {"claimMax":4,"perOption":5,"options":["Polico is the president / head of the association","She is not against the removal of graffiti (in general)","She just thinks that the administration should have called a meeting before acting (on the removal)","She thinks they should have called a meeting with those who have been involved in street art for years"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Serendippo — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Serendippo”, 15 of the 20 marks.", group: {"claimMax":3,"options":["Serendippo is an Association that for 15 years has “seen things from the other side” and has a completely different position on murals","Serendippo, already 15 years ago, began to catalogue the writings that appeared on the walls of Bologna","Archived 12 thousand images, taken by Professor Maria Paola Landini, divided by genre","The goal is a dedicated exhibition, open to the public, to make as many people as possible understand, that writing on walls, graffiti, contributes to the construction of the city's identity","Serendippo made an appeal: Do not erase graffiti they tell the story of the city"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Etta Polico — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “She is the president” 1 mark. The scheme prints “Etta Polico: Any two of 5 marks (3+2)”.", group: {"claimMax":2,"options":["Polico is the president / head of the association","She is not against the removal of graffiti (in general)","She just thinks that the administration should have called a meeting before acting (on the removal)","She thinks they should have called a meeting with those who have been involved in street art for years"],"perOption":3,"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3537,7 +3549,7 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa sappiamo del nipotino Mario?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "È autonomo — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prices this half of the ask separately, under the heading “È autonomo”.", group: {"claimMax":3,"perOption":1,"options":["Ha 4 anni","Il nonno deve stare con lui 4 giorni","È abituato a non disturbare","L’ultima volta voleva stare in braccio","L’ultima volta che ha visto il nonno era due anni fa / l’ultima volta che l’ha visto era due anni fa","È il nipote del narratore","Sua mamma si chiama Betta","Il papà si chiama Saverio","Abita a Napoli"],"perOptionSteps":[1,1,3]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian.", group: {"claimMax":3,"options":["Ha 4 anni","È autonomo","Il nonno deve stare con lui 4 giorni","È abituato a non disturbare","L’ultima volta voleva stare in braccio","L’ultima volta che ha visto il nonno era due anni fa / l’ultima volta che l’ha visto era due anni fa","È il nipote del narratore","Sua mamma si chiama Betta","Il papà si chiama Saverio","Abita a Napoli"],"perOption":1,"perOptionSteps":[1,1,3]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3606,7 +3618,8 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at the passage as a whole, what\ndo we learn about the grandfather (three\ndetailed points), and Betta (one detailed\npoint)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Four points are required — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Betta has a helper called Sally who cooks, cleans etc.” 2 marks. The scheme prices this half of the ask separately, under the heading “Four points are required”. The scheme lists 4 further accepted answer(s) than this card shows, in the order it prints them.", group: {"claimMax":4,"perOption":5,"options":["He has been living in Milan for a couple of decades","Moving to Naples, to the old house that he had inherited from his parents and where his daughter had lived since before she got married, did not excite him","He was over seventy and long a widower, unaccustomed to living with others","He was only comfortable in his own bed and in his bathroom, he was unaccustomed to living with others","A few weeks before he had undergone a small operation; he was tired, especially in the morning, he was trying to build back up his strength / recover","At the start he is reluctant to be a grandfather and mind Mario, he does not want to be disturbed from his illustration work","He has an urgent job to finish, and he has not even started","He is an illustrator he has to illustrate a work from Henry James, he does not want to be disturbed","With little enthusiasm he wanted to try to be a good grandfather and have a good time with Mario","He wanted to go back to Milan, he was annoyed and weak / unhealthy during the trip","He has a daughter called Betta, a son in Law called Saverio and a grandson called Mario","He has not seen Mario in 2 years, or his daughter. He does not know the age of Mario","He agrees to look after his grandson, is going a week in advance he wants to improve being a father and grandfather","She is the daughter of the narrator, married to Saverio and has a son / called Mario.","She is involved with Maths; she is going to a Mathematician Conference with Saverio, she is going to be away from 20 to 23 November.","She rang her father nervously to ask for his help, to mind Mario."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Grandfather — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Grandfather”; the paper asks for 3 points on it. The scheme prints: “Four points are required”.", group: {"claimMax":3,"options":["He has been living in Milan for a couple of decades","Moving to Naples, to the old house that he had inherited from his parents and where his daughter had lived since before she got married, did not excite him","He was over seventy and long a widower, unaccustomed to living with others","He was only comfortable in his own bed and in his bathroom, he was unaccustomed to living with others","A few weeks before he had undergone a small operation; he was tired, especially in the morning, he was trying to build back up his strength / recover","At the start he is reluctant to be a grandfather and mind Mario, he does not want to be disturbed from his illustration work","He has an urgent job to finish, and he has not even started","He is an illustrator he has to illustrate a work from Henry James, he does not want to be disturbed","With little enthusiasm he wanted to try to be a good grandfather and have a good time with Mario","He wanted to go back to Milan, he was annoyed and weak / unhealthy during the trip","He has a daughter called Betta, a son in Law called Saverio and a grandson called Mario","He has not seen Mario in 2 years, or his daughter. He does not know the age of Mario","He agrees to look after his grandson, is going a week in advance he wants to improve being a father and grandfather"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Betta — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “Betta has a helper called Sally who cooks, cleans etc.” 2 marks. The scheme prints these answers under the heading “Betta”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["She is the daughter of the narrator, married to Saverio and has a son / called Mario. She lives in Naples","She is involved with Maths; she is going to a Mathematician Conference with Saverio, she is going to be away from 20 to 23 November.","She rang her father nervously to ask for his help, to mind Mario.","To her father's question if she was keen on this conference, she says it is work and she has to do an introductory report.","She reprimands her father thinking he is defective both as a father and grandfather.","She sounded unhappy, she only rang her father 2 or 3 times during his hospital recovery, she seemed not interested – maybe to punish her father.","She lives in a house, in Naples, that the narrator inherited from his parents since before she was married"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3791,7 +3804,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage and the novel as a\nwhole, what do we learn about Marcovaldo's\nrelationship with cats and animals in general?\nGive four detailed points.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The candidate must refer both to the passage and to the novel as a whole — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “The candidate must refer both to the passage and to the novel as a whole”.", group: {"claimMax":4,"perOption":5,"options":["There used to be no difference before between a city of people and a city of animals- cats. Roads and streets for people were roads and street for animals.","During work he used to follow cats, they were always welcome during his lunch breaks, the cat was a guide for new explorations.","He befriended a cat who possibly lived nearby in a rich house and like Marcovaldo had the habit of an after-lunch walk.","With his new friend Marcovaldo started to look at the city differently, through the eyes of a cat.","He met many cats during his walks; even though the city seemed empty of cats there were a lot of them “behind the scenes”.","He hates the city and feels bad for cats who have to live in a dangerous and inhospitable place that can easily kill them in many ways.","The cat kingdom had ceremonies and rules that he could not discover.","Marcovaldo loves nature and appreciates animals as part of nature.","Marcovaldo empathises with animals imprisoned in caged environments, this is how he feels living in the city.","In 'Il piccione comunale', 'dov'è più azzurro il fiume', 'Il coniglio velenoso'","In 'La cura delle vespe' Marcovaldo sees an opportunity to use the insects as means of financial improvement, ends up badly.","In 'Un viaggio con le mucche' Animals seen as a job/money maker. Marcovaldo is envious of his son, Michelino, when the boy spends the summer in the countryside amongst the cows."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Points from the novel”; the paper does not say how many points it wants under each. The scheme prints: “The candidate must refer both to the passage and to the novel as a whole”.", group: {"claimMax":4,"options":["There used to be no difference before between a city of people and a city of animals- cats. Roads and streets for people were roads and street for animals.","During work he used to follow cats, they were always welcome during his lunch breaks, the cat was a guide for new explorations.","He befriended a cat who possibly lived nearby in a rich house and like Marcovaldo had the habit of an after-lunch walk.","With his new friend Marcovaldo started to look at the city differently, through the eyes of a cat.","He met many cats during his walks; even though the city seemed empty of cats there were a lot of them “behind the scenes”.","He hates the city and feels bad for cats who have to live in a dangerous and inhospitable place that can easily kill them in many ways.","The cat kingdom had ceremonies and rules that he could not discover.","Points from the novel — Marcovaldo loves nature and appreciates animals as part of nature.","Points from the novel — Marcovaldo empathises with animals imprisoned in caged environments, this is how he feels living in the city.","Points from the novel — In 'Il piccione comunale', 'dov'è più azzurro il fiume', 'Il coniglio velenoso' Marcovaldo sees animals/fish only as food sources to provide for his family, always ends in misadventure.","Points from the novel — In 'La cura delle vespe' Marcovaldo sees an opportunity to use the insects as means of financial improvement, ends up badly.","Points from the novel — In 'Un viaggio con le mucche' Animals seen as a job/money maker. Marcovaldo is envious of his son, Michelino, when the boy spends the summer in the countryside amongst the cows."],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3976,7 +3989,7 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa sappiamo del vecchio professore Roscio?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Suocero della vedova / Non aveva fede — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prices this half of the ask separately, under the heading “Suocero della vedova / Non aveva fede”.", group: {"claimMax":2,"perOption":3,"options":["Padre di Roscio","Anche a lui suo figlio pareva diverso negli ultimi tempi","(Per la vedova) era un uomo senza fede","Era intellettualmente spietato","Aveva fede dopo averci ripensato","(Per Rosello) era un vecchio tremendo","È un ateo di quelli ferrigni (che non crollano nemmeno in punto di morte)","(Laurana) dice che ha suoi sghiribizzi","È lucido","È spietato"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian.", group: {"claimMax":2,"options":["Padre di Roscio","Suocero della vedova","Anche a lui suo figlio pareva diverso negli ultimi tempi","(Per la vedova) era un uomo senza fede","Era intellettualmente spietato","Aveva fede dopo averci ripensato","(Per Rosello) era un vecchio tremendo","Non aveva fede","È un ateo di quelli ferrigni (che non crollano nemmeno in punto di morte)","(Laurana) dice che ha suoi sghiribizzi","È lucido","È spietato"],"perOption":3,"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3999,7 +4012,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage and the novel as a\nwhole, what do we learn about Avvocato\nRosello? Give four detailed points.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The candidate must refer both to the passage and to the novel as a whole — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Rosello is in love with Luisa” 1 mark. The scheme prices this half of the ask separately, under the heading “The candidate must refer both to the passage and to the novel as a whole”.", group: {"claimMax":4,"perOption":5,"options":["Rosello and Roscio's widow Luisa are cousins, he said he was going to call her and go to her house, to get information about Roscio.","Rosello was shocked about Laurana's news, he listens while repeating “but look!” and kept saying he didn't know anything about Roscio and the incriminating documents.","He began to rack his brains over it, asking questions and trying to remember any sign that could connect Roscio's words to that incredible story.","He is convincing - he makes Laurana believe that he would have put a stop to Roscio's plan if he had known, in an effort to protect one of his family.","He speaks disparagingly about old Professor Roscio, calls him an atheist.","He was trying to make sure Roscio did not tell Laurana anything about him or the party nor the family not to show he was involved in something.","We learn that Rosello is member of a party and then through the novel we find that the party is corrupted, and he asked Laurana if Roscio had named anyone.","Rosello has been having an affair with Roscio’s wife Luisa; they collude to have her husband killed, so that they can marry and reunite the family property and fortunes.","Rosello is ruthless - he and Luisa ultimately collude to plan Laurana's death when she decides that Laurana does indeed pose a threat to her future.","Master manipulator - he pretends to be aghast about Laurana's news regarding","Rosello is clever - when he phones Luisa to ask if they can visit her, he knowingly exploits Laurana's infatuation with her to great effect.","He serves on the board of directors of an important company, as a legal consultant, a corporation president and as the Christian Democratic rep. on the provincial council.","Rosello is presented as the typical example of the corrupt politician. A man of respectable reputation and prominent position, who is heavily embroiled in the murky world of corruption; blackmail, bribes, favours, stealing and worse.","The real character of Rosello is exposed by the rector, who gives us a vivid and damning description of the lawyer, as well as an analysis of how corrupt the system is, and the fact that he is resigned to the reality of Mafia culture as a part of life."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Rosello is in love with Luisa” 1 mark. The scheme prints these answers under the heading “Points from the novel, here a few examples”; the paper does not say how many points it wants under each. The scheme prints: “The candidate must refer both to the passage and to the novel as a whole”.", group: {"claimMax":4,"options":["Rosello and Roscio's widow Luisa are cousins, he said he was going to call her and go to her house, to get information about Roscio.","Rosello was shocked about Laurana's news, he listens while repeating “but look!” and kept saying he didn't know anything about Roscio and the incriminating documents.","He began to rack his brains over it, asking questions and trying to remember any sign that could connect Roscio's words to that incredible story.","He is convincing - he makes Laurana believe that he would have put a stop to Roscio's plan if he had known, in an effort to protect one of his family.","He speaks disparagingly about old Professor Roscio, calls him an atheist.","He was trying to make sure Roscio did not tell Laurana anything about him or the party nor the family not to show he was involved in something.","We learn that Rosello is member of a party and then through the novel we find that the party is corrupted, and he asked Laurana if Roscio had named anyone.","Points from the novel, here a few examples — Rosello has been having an affair with Roscio’s wife Luisa; they collude to have her husband killed, so that they can marry and reunite the family property and fortunes.","Points from the novel, here a few examples — Rosello is ruthless - he and Luisa ultimately collude to plan Laurana's death when she decides that Laurana does indeed pose a threat to her future.","Points from the novel, here a few examples — Master manipulator - he pretends to be aghast about Laurana's news regarding Roscio, but we learn from the novel that he was in fact one of the instigators of the murders.","Points from the novel, here a few examples — Rosello is clever - when he phones Luisa to ask if they can visit her, he knowingly exploits Laurana's infatuation with her to great effect.","Points from the novel, here a few examples — He serves on the board of directors of an important company, as a legal consultant, a corporation president and as the Christian Democratic rep. on the provincial council.","Points from the novel, here a few examples — Rosello is presented as the typical example of the corrupt politician. A man of respectable reputation and prominent position, who is heavily embroiled in the murky world of corruption; blackmail, bribes, favours, stealing and worse.","Points from the novel, here a few examples — The real character of Rosello is exposed by the rector, who gives us a vivid and damning description of the lawyer, as well as an analysis of how corrupt the system is, and the fact that he is resigned to the reality of Mafia culture as a part of life."],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4206,7 +4219,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at the article as a whole, what do\nwe learn about Book in Progress AI? Give\nfour detailed points.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "But the project itself is free. Rivoltella is struck by the lack of advertising / SECTION B Literary Passage (60 marks)  — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “But the project itself is free. Rivoltella is struck by the lack of advertising / SECTION B Literary Passage (60 marks) ”.", group: {"claimMax":4,"perOption":5,"options":["It represents the (revolutionary) evolution of a consolidated Italian educational project which has transformed the traditional teaching approach","This is a new project/it is free that, along with the work done on the first Book in Progress, looks to the future","The project was further developed from Book in Progress which was created in 2009 and allows teacher to share material","The project originates from the Ettore Majorana Institute of Higher Education in Brindisi, and with this new system/software, the AI usage model is reversed: it's not the student who asks questions, it's the application itself that adapts to the student's learning styles. Salvatore Giuliano is the founder of the project","The software used by Book in Progress is based on a database created by the teachers themselves; there are no issues with sources, privacy, prejudices, or preconceptions, unlike common chatbots","The program promotes educational success/avoids early school leavers/school drop out/school refusal/stop coming to school and addresses students' needs but never replaces the teacher","Content is presented differently depending on the student. If a student prefers a visual style, they will receive multimedia content/if they prefer text, textual materials will be available","This way, personalized learning paths are created, with concept maps and audio-visual materials. Teachers can also see the overall progress of the class and adjust their teaching schedule accordingly","With Book in Progress AI, not only will students receive tailored training, but teachers will also have useful tools to understand how to best help them.","This Book in Progress AI was created for teachers, thanks to/by teachers. And so artificial intelligence can enter the classroom. As long as we know how to use it.","(Book in Progress AI) needs to be implemented/recommended by teachers and to be implemented you only need a server that cost very little per student/inexpensive."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":4,"options":["It represents the (revolutionary) evolution of a consolidated Italian educational project which has transformed the traditional teaching approach","This is a new project/it is free that, along with the work done on the first Book in Progress, looks to the future","The project was further developed from Book in Progress which was created in 2009 and allows teacher to share material","The project originates from the Ettore Majorana Institute of Higher Education in Brindisi, and with this new system/software, the AI usage model is reversed: it's not the student who asks questions, it's the application itself that adapts to the student's learning styles. Salvatore Giuliano is the founder of the project","The software used by Book in Progress is based on a database created by the teachers themselves; there are no issues with sources, privacy, prejudices, or preconceptions, unlike common chatbots","The program promotes educational success/avoids early school leavers/school drop out/school refusal/stop coming to school and addresses students' needs but never replaces the teacher","Content is presented differently depending on the student. If a student prefers a visual style, they will receive multimedia content/if they prefer text, textual materials will be available","This way, personalized learning paths are created, with concept maps and audio-visual materials. Teachers can also see the overall progress of the class and adjust their teaching schedule accordingly","With Book in Progress AI, not only will students receive tailored training, but teachers will also have useful tools to understand how to best help them.","This Book in Progress AI was created for teachers, thanks to/by teachers. And so artificial intelligence can enter the classroom. As long as we know how to use it.","(Book in Progress AI) needs to be implemented/recommended by teachers and to be implemented you only need a server that cost very little per student/inexpensive. But the project itself is free. Rivoltella is struck by the lack of advertising"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4367,7 +4380,8 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at the passage as a whole, what\ndo we learn about the narrator (three\ndetailed points) and her parents (one\ndetailed point)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Narrator: / Parents: — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “• The narrator struggles to reveal/explain to her parents her true self” 3 marks; “• The narrator didn’t produce any real art” 3 marks. The scheme prices this half of the ask separately, under the heading “Narrator: / Parents:”. The scheme lists 4 further accepted answer(s) than this card shows, in the order it prints them.", group: {"claimMax":4,"perOption":5,"options":["She lives in her brother's shadow. (Plus example)","She could have skipped a grade but she wanted to fit in.","She stole two paintings and pretended they were hers.","The fact that her brother had earned the title of “genio” allowed her to live a much more peaceful life","She was in a position where she didn't have to prove anything to anyone. For her brother, things weren't so simple","When her mother introduced them to new people she would say, \"Here, these are my gems.\"","After listing the incredible things her brother was capable of doing, Verika liked to draw, the mother would say","The narrator stole two paintings and pretended they were hers to impress her parents and she convinced herself she had merit","She locked herself (after lunch) into the room and (pretended) to be creative/in a mad creative fury and came out with the fake painting hours later","The narrator thinks that the parents have a preference for the first brother because he is better at things/ The narrator may feel her parents prefer her brother + an example","When the narrator tries to be honest with her mother about the paintings but she doesn’t take her seriously (she is suspicious and pities her daughter)","They compared both children and appreciated their son’s genius as opposed to their daughter.","The mother used to introduce her brother listing all incredible things he achieved but when it was the narrator’s turn she just said, “Verika likes to draw”","The mother had decided that Verika wasn't bad at drawing. Her parents believe that she was a great artist","When the mother introduced her children as her jewels/gems to new people she would say they were jewels but not all jewels were the same","The father bought her a mini art kit; she faked her artistic greatness by producing the two paintings she had stolen, which her parents hung in the hallway"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Narrator — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “The narrator struggles to reveal/explain to her parents her true self” 3 marks; “The narrator didn’t produce any real art” 3 marks. The scheme prints these answers under the heading “Narrator”; the paper asks for 3 points on it.", group: {"claimMax":3,"options":["She lives in her brother's shadow. (Plus example)","She could have skipped a grade but she wanted to fit in.","She stole two paintings and pretended they were hers.","The fact that her brother had earned the title of “genio” allowed her to live a much more peaceful life","She was in a position where she didn't have to prove anything to anyone. For her brother, things weren't so simple","When her mother introduced them to new people she would say, \"Here, these are my gems.\"","After listing the incredible things her brother was capable of doing, Verika liked to draw, the mother would say","The narrator stole two paintings and pretended they were hers to impress her parents and she convinced herself she had merit","She locked herself (after lunch) into the room and (pretended) to be creative/in a mad creative fury and came out with the fake painting hours later","The narrator thinks that the parents have a preference for the first brother because he is better at things/ The narrator may feel her parents prefer her brother + an example","When the narrator tries to be honest with her mother about the paintings but she doesn’t take her seriously (she is suspicious and pities her daughter)"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Parents — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Parents”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["They compared both children and appreciated their son’s genius as opposed to their daughter.","The mother used to introduce her brother listing all incredible things he achieved but when it was the narrator’s turn she just said, “Verika likes to draw”","The mother had decided that Verika wasn't bad at drawing. Her parents believe that she was a great artist","When the mother introduced her children as her jewels/gems to new people she would say they were jewels but not all jewels were the same","The father bought her a mini art kit; she faked her artistic greatness by producing the two paintings she had stolen, which her parents hung in the hallway","The narrator kept receiving compliments for her stolen art despite not having done them, but she started to feel like she actually had","She does not want to tell her mother the truth/Her mother would possibly not believe her","When guests came over the parents would give a guided tour of the paintings and people would compliment them","The mother pats her daughter on the head when she sees her distressed near the paintings and asks if she wants her to buy her a canvas"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4413,7 +4427,7 @@ export const CARDS: SecCard[] = [
     questionText: "Che cosa aveva capito a un certo punto?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A chi assomigliava — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Che lui era diverso da suo padre suo zio e cugini” 2 marks. The scheme prices this half of the ask separately, under the heading “A chi assomigliava”.", group: {"claimMax":1,"perOption":5,"options":["da dove gli veniva il richiamo della montagna","che era simile a sua madre"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Che lui era diverso da suo padre suo zio e cugini” 2 marks.", group: {"claimMax":1,"options":["A chi assomigliava","da dove gli veniva il richiamo della montagna","che era simile a sua madre"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4577,7 +4591,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English\nLooking at the passage and the novel as a\nwhole, what do we learn about Bruno’s\nmother and Pietro’s father? Give four\ndetailed points.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The candidate must refer both to the passage and to the novel as a whole — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “The candidate must refer both to the passage and to the novel as a whole”. The scheme lists 1 further accepted answer(s) than this card shows, in the order it prints them.", group: {"claimMax":4,"perOption":5,"options":["Bruno's mother was a quiet woman who barely spoke. Bruno says that because his mother didn’t speak much, people considered her to be half crazy","Pietro had barely ever spoken to her; even now, when she would give him tomatoes, potatoes and Toma cheese to bring up the mountain when he was passing through the village of Grana, they exchanged few words","Bruno says that because she lives in the woods with the chickens, people take her for a witch. Pietro admits that this is true, that she had always seemed strange to Pietro and the people of Grana","Bruno realised he and his mother were just like each other; she heeded the call of the mountain. “Siamo uguali, io e lei.” They understood each other without words","She did not live the life she would have liked to; Bruno thinks that if she had been a man she would have lived the life she wanted","She wasn’t the type to get married, and Bruno believes that her only bit of luck was getting away from his father","She was a little stooped and thinner than before but she was still the same person he remembered as a boy","Silent, hardworking woman devoted to her small farm. She tends to her garden, poultry, goats, and bees","She was happy in her own place, other people passed by her like the seasons","She is stoic, traditional and avoids conversation. She embodies rural resilience and the weight of tradition","He was a man who filled the room, overbearing and tiring","He acted as though no one else mattered but him, like he was the only one who existed","He expected everyone’s life to revolve around his","Pietro understood that things had not been perfect in his parents’ relationship","Pietro wondered if his mother had been relieved when his father wasn’t around","His name is Giovanni Guasti. He was an orphan of the war and grew up in the Dolomites mountains near Pietro’s mother. learns the story of his parents"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the headings “Bruno’s Mother”, “Pietro’s father”; the paper does not say how many points it wants under each. The scheme prints: “The candidate must refer both to the passage and to the novel as a whole”. The scheme prints: “Any suitable points from the novel. For example:”. Under each heading the scheme prints its points under “Passage” and “Novel”.", group: {"claimMax":4,"options":["Bruno’s Mother — Bruno's mother was a quiet woman who barely spoke. Bruno says that because his mother didn’t speak much, people considered her to be half crazy","Bruno’s Mother — Pietro had barely ever spoken to her; even now, when she would give him tomatoes, potatoes and Toma cheese to bring up the mountain when he was passing through the village of Grana, they exchanged few words","Bruno’s Mother — Bruno says that because she lives in the woods with the chickens, people take her for a witch. Pietro admits that this is true, that she had always seemed strange to Pietro and the people of Grana","Bruno’s Mother — Bruno realised he and his mother were just like each other; she heeded the call of the mountain. “Siamo uguali, io e lei.” They understood each other without words","Bruno’s Mother — She did not live the life she would have liked to; Bruno thinks that if she had been a man she would have lived the life she wanted","Bruno’s Mother — She wasn’t the type to get married, and Bruno believes that her only bit of luck was getting away from his father","Bruno’s Mother — She was a little stooped and thinner than before but she was still the same person he remembered as a boy","Bruno’s Mother — Silent, hardworking woman devoted to her small farm. She tends to her garden, poultry, goats, and bees","Bruno’s Mother — She was happy in her own place, other people passed by her like the seasons","Bruno’s Mother — She is stoic, traditional and avoids conversation. She embodies rural resilience and the weight of tradition","Pietro’s father — He was a man who filled the room, overbearing and tiring","Pietro’s father — He acted as though no one else mattered but him, like he was the only one who existed","Pietro’s father — He expected everyone’s life to revolve around his","Pietro’s father — Pietro understood that things had not been perfect in his parents’ relationship","Pietro’s father — Pietro wondered if his mother had been relieved when his father wasn’t around","Pietro’s father — His name is Giovanni Guasti. He was an orphan of the war and grew up in the Dolomites mountains near Pietro’s mother. learns the story of his parents","Pietro’s father — His marriage to Pietro’s mother wasn’t accepted by her family so they moved to Milan, where he works in chemistry"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4681,7 +4695,8 @@ export const CARDS: SecCard[] = [
     questionText: "Con le vostre parole, perché devono cucire il numero sul cappotto?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Così che quando tornano, non consegnano figli a famiglia sbagliate e non li ritrovano più", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prices this half of the ask separately, under the heading “Per riconoscerli”." },
+    { id: "r-1-1", kind: "point", verbatim: "Per riconoscerli", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "Così che quando tornano, non consegnano figli a famiglia sbagliate e non li ritrovano più", marks: 1 },
     ],
   } as SecCard,
   {
@@ -4707,7 +4722,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage and the novel as a\nwhole, what do we learn about the\nnarrator’s mother? Give four detailed\npoints.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The candidate must refer both to the passage and to the novel as a whole — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “The candidate must refer both to the passage and to the novel as a whole”.", group: {"claimMax":4,"perOption":5,"options":["She does not speak much but she remembers everything/she does not forget anything","She is a caring mother. She wakes him up one morning, gets nicely dressed, she combs her hair, prepares his clothes and tells him to go otherwise they will be too late","She walks in front of him and they are in a hurry and do not want to be late","She hits him in the head when he plays in the puddles","She takes him to the Albergo dei Poveri and tells him that it was to send them to the north but beforehand, they have to go there to be checked.","She tells him that they have to get heavy clothes because it is winter in the north","She wants the best for her child so she sends him to the north/to a better life","She has a tendency towards violence, physical and verbal","Beautiful and proud woman - she was poor but said she wasn’t a thief","Antonietta she speaks very harshly to him, compliments are not her strong point"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the headings “Mother from passage”, “Mother from novel”; the paper does not say how many points it wants under each. The scheme prints: “The candidate must refer both to the passage and to the novel as a whole”. The scheme prints: “Any suitable points from the novel. For example:”.", group: {"claimMax":4,"options":["Mother from passage — She does not speak much but she remembers everything/she does not forget anything","Mother from passage — She is a caring mother. She wakes him up one morning, gets nicely dressed, she combs her hair, prepares his clothes and tells him to go otherwise they will be too late","Mother from passage — She walks in front of him and they are in a hurry and do not want to be late","Mother from passage — She hits him in the head when he plays in the puddles","Mother from passage — She takes him to the Albergo dei Poveri and tells him that it was to send them to the north but beforehand, they have to go there to be checked.","Mother from passage — She tells him that they have to get heavy clothes because it is winter in the north","Mother from passage — She wants the best for her child so she sends him to the north/to a better life","Mother from novel — Antonietta is one of the most complex and emotionally charged figures in the novel. Through her, Ardone explores maternal deprivation, pride, poverty, and the generational damage of war.","Mother from novel — She has a tendency towards violence, physical and verbal","Mother from novel — Beautiful and proud woman - she was poor but said she wasn’t a thief","Mother from novel — Antonietta she speaks very harshly to him, compliments are not her strong point They do not engage in meaningful conversation"],"perOption":5} },
     ],
   } as SecCard,
   {
@@ -4736,7 +4751,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-la-1", topicId: "italian-3-1", conceptId: "advertisement-about-seaside-holiday-destinations",
     section: "L", questionRef: "2026 HL Section LA Q1",
@@ -4772,7 +4787,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-la-2", topicId: "italian-3-1", conceptId: "temperatures-above-season-average",
     section: "L", questionRef: "2026 HL Section LA Q2",
@@ -4808,7 +4823,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-la-3", topicId: "italian-3-1", conceptId: "news-item-about-public-reading-children",
     section: "L", questionRef: "2026 HL Section LA Q3",
@@ -4844,7 +4859,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-la-4", topicId: "italian-3-1", conceptId: "registration-fee-payable-bank-transfer",
     section: "L", questionRef: "2026 HL Section LA Q4",
@@ -4880,7 +4895,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-la-5", topicId: "italian-3-1", conceptId: "idea-came-stefano-while-waiting-train",
     section: "L", questionRef: "2026 HL Section LA Q5",
@@ -4916,7 +4931,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-la-6", topicId: "italian-3-1", conceptId: "comites-members-volunteers",
     section: "L", questionRef: "2026 HL Section LA Q6",
@@ -4952,7 +4967,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-la-7", topicId: "italian-3-1", conceptId: "concert-free",
     section: "L", questionRef: "2026 HL Section LA Q7",
@@ -4988,7 +5003,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-la-8", topicId: "italian-3-1", conceptId: "ingredients-pizza-mentioned-mozzarella-pineapple",
     section: "L", questionRef: "2026 HL Section LA Q8",
@@ -5024,7 +5039,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb1-1", topicId: "italian-3-0", conceptId: "laura-concerned-about",
     section: "L", questionRef: "2026 HL Section LB1 Q1",
@@ -5032,7 +5047,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is Laura concerned about? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["It’s the first time (I do it)","Living together (is not easy)","(Facing) other people’s habits","Language barriers"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “She is nervous that she is hosting a foreign student 2m”; “It is not easy 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["It’s the first time (I do it)","Living together (is not easy)","(Facing) other people’s habits","Language barriers"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5059,7 +5074,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb1-2", topicId: "italian-3-0", conceptId: "activities-does-laura-suggest-doing-with",
     section: "L", questionRef: "2026 HL Section LB1 Q2",
@@ -5094,7 +5109,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb1-3", topicId: "italian-3-0", conceptId: "did-marco-help-his-exchange-student",
     section: "L", questionRef: "2026 HL Section LB1 Q3",
@@ -5102,7 +5117,7 @@ export const CARDS: SecCard[] = [
     questionText: "How did Marco help his exchange student feel at ease?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["He showed him the nicest places in town","He helped him understand how public transport works (to be independent)","He invited his friends at home to watch a film together (on Friday nights)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “A movie night with friends 2m”; “Help understand buses 2m”; “Watch a film 1m”; “He helped him to be more independent 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["He showed him the nicest places in town","He helped him understand how public transport works (to be independent)","He invited his friends at home to watch a film together (on Friday nights)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5129,7 +5144,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb1-4", topicId: "italian-3-0", conceptId: "does-marco-say-about-sweden",
     section: "L", questionRef: "2026 HL Section LB1 Q4",
@@ -5137,7 +5152,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Marco say about Sweden?",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "He liked this Scandinavian country (especially) the cities with the canals which reminded him of Venice.", marks: null, contextNote: "The scheme gives marks for this answer by how many of its elements are given: 1 to 2 elements = 2 marks; 3 elements 3 marks; 4 elements 4 marks; 5 elements 6 marks. Answer in English or Irish." },
+    { id: "r-1", kind: "criterion", verbatim: "He liked this Scandinavian country (especially) the cities with the canals which reminded him of Venice.", marks: null, contextNote: "The scheme gives marks for this answer by how many of its elements are given: 1 to 2 elements = 2 marks; 3 elements 3 marks; 4 elements 4 marks; 5 elements 6 marks. The scheme also prints, for shorter answers: “He was there last summer 2m”; “he was there to meet his friend 2m”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5164,7 +5179,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb2-1", topicId: "italian-3-0", conceptId: "long-did-monica-spend-istituto-italiano",
     section: "L", questionRef: "2026 HL Section LB2 Q1",
@@ -5199,7 +5214,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb2-2", topicId: "italian-3-0", conceptId: "were-monica-tasks",
     section: "L", questionRef: "2026 HL Section LB2 Q2",
@@ -5207,7 +5222,7 @@ export const CARDS: SecCard[] = [
     questionText: "What were Monica’s tasks? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Administration work","Replying to emails","Organising the timetable (for the language course)","Booking flights/accommodation for the guests attending the events"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “Managing guest attending the event 1m”; “booking flights/accommodation 1m”; “email 1m”; “timetable 1m”; “guest 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Administration work","Replying to emails","Organising the timetable (for the language course)","Booking flights/accommodation for the guests attending the events"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5234,7 +5249,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb2-3", topicId: "italian-3-0", conceptId: "did-teachers-say-about-students-full",
     section: "L", questionRef: "2026 HL Section LB2 Q3",
@@ -5272,7 +5287,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb2-4", topicId: "italian-3-0", conceptId: "happened-after-monica-app-won-digital",
     section: "L", questionRef: "2026 HL Section LB2 Q4",
@@ -5309,7 +5324,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb3-1", topicId: "italian-3-0", conceptId: "did-paolo-playing-volleyball",
     section: "L", questionRef: "2026 HL Section LB3 Q1",
@@ -5317,7 +5332,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why did Paolo give up playing volleyball? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "He chose football — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “He chose football”. Answer in English or Irish.", group: {"claimMax":1,"perOption":2,"options":["He wasn’t very good at it","He didn’t have much time to do two sports","He wasn’t as good at volleyball as he was at football"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “Because of his studies 1m”. Answer in English or Irish.", group: {"claimMax":1,"options":["He wasn’t very good at it","He didn’t have much time to do two sports","He chose football","He wasn’t as good at volleyball as he was at football"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5344,7 +5359,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb3-2", topicId: "italian-3-0", conceptId: "did-paolo-until-age-twenty",
     section: "L", questionRef: "2026 HL Section LB3 Q2",
@@ -5352,7 +5367,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Paolo do up until the age of twenty‐two?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "He was a semi-professional", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "He was a semi-professional", marks: 2, contextNote: "The scheme also prints, for shorter answers: “He was a soccer player for fun 2m”; “He was a professional soccer player 2m”; “Worked in the airport 1m”; “He trained all the time 1m”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "soccer player", marks: 2 },
     ],
     sourceMaterial: {
@@ -5380,7 +5395,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb3-3", topicId: "italian-3-0", conceptId: "did-paolo-miss-about-not-doing",
     section: "L", questionRef: "2026 HL Section LB3 Q3",
@@ -5388,7 +5403,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Paolo miss about not doing sport? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":2,"options":["The benefits of exercise (on health)","The friendship of his team mates"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “Physical activity 1m”; “Friends 1m”; “Team 1m”; “Good for your health 1m”. Answer in English or Irish.", group: {"claimMax":1,"perOption":2,"options":["The benefits of exercise (on health)","The friendship of his team mates"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5415,7 +5430,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb3-4", topicId: "italian-3-0", conceptId: "did-paolo-choose-study-sports-psychology",
     section: "L", questionRef: "2026 HL Section LB3 Q4",
@@ -5450,7 +5465,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb3-5", topicId: "italian-3-0", conceptId: "did-paolo-during-his-holidays",
     section: "L", questionRef: "2026 HL Section LB3 Q5",
@@ -5458,7 +5473,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Paolo do during his holidays?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "He had to study", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "He had to study", marks: 2, contextNote: "The scheme also prints, for shorter answers: “Study for exams 2m”; “He never rested 1m”; “Exam 1m”. The scheme also prints, for full marks: “Study for exams and sit exams 4m”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "sit exams", marks: 2 },
     ],
     sourceMaterial: {
@@ -5486,7 +5501,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb3-6", topicId: "italian-3-0", conceptId: "main-challenges-young-professional-sportspeople-face",
     section: "L", questionRef: "2026 HL Section LB3 Q6",
@@ -5522,7 +5537,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb3-7", topicId: "italian-3-0", conceptId: "about-paolo-job",
     section: "L", questionRef: "2026 HL Section LB3 Q7",
@@ -5530,7 +5545,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about Paolo’s job.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish. The scheme prints this line as \"7. Any two of: 4 (2+2) marks\", an SEC misprint; it is read as \"7. Any two of: 4 marks (2+2)\", which the printed total of its section confirms.", group: {"claimMax":2,"perOption":2,"options":["He travels a lot/Travels around Italy","They call him from everywhere in Italy","He participates in workshops/conferences","He goes to primary and secondary schools","He helps young people to understand the benefits of sport","He helps teachers to understand the benefit of sport"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “He travels a lot all over Italy 3m”; “He travels 1m”; “He goes to schools 1m”. Answer in English or Irish. The scheme prints this line as \"7. Any two of: 4 (2+2) marks\", an SEC misprint; it is read as \"7. Any two of: 4 marks (2+2)\", which the printed total of its section confirms.", group: {"claimMax":2,"perOption":2,"options":["He travels a lot/Travels around Italy","They call him from everywhere in Italy","He participates in workshops/conferences","He goes to primary and secondary schools","He helps young people to understand the benefits of sport","He helps teachers to understand the benefit of sport"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5557,7 +5572,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Higher Level — © State Examinations Commission.",
     id: "it-2026-hl-lb3-8", topicId: "italian-3-0", conceptId: "does-paolo-need-his-friend-help",
     section: "L", questionRef: "2026 HL Section LB3 Q8",
@@ -5565,7 +5580,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does Paolo need his friend’s help to create a podcast?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "He has no experience (in the field)", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "He has no experience (in the field)", marks: 4, contextNote: "The scheme also prints, for shorter answers: “He hasn’t much experience 3m”; “His friend is a journalist 1m”; “His friend the journalist has experience 1m”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6576,7 +6591,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-la-1", topicId: "italian-3-1", conceptId: "advertisement-about-holiday-accommodation",
     section: "L", questionRef: "2025 HL Section LA Q1",
@@ -6612,7 +6627,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-la-2", topicId: "italian-3-1", conceptId: "enrico-plant-nursery-his-apartment-building",
     section: "L", questionRef: "2025 HL Section LA Q2",
@@ -6648,7 +6663,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-la-3", topicId: "italian-3-1", conceptId: "advertisement-about-historical-train-routes",
     section: "L", questionRef: "2025 HL Section LA Q3",
@@ -6684,7 +6699,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-la-4", topicId: "italian-3-1", conceptId: "forecast-warm-winds-carrying-sand",
     section: "L", questionRef: "2025 HL Section LA Q4",
@@ -6720,7 +6735,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-la-5", topicId: "italian-3-1", conceptId: "advertisement-about-home-appliances",
     section: "L", questionRef: "2025 HL Section LA Q5",
@@ -6756,7 +6771,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-la-6", topicId: "italian-3-1", conceptId: "festival-promotes-sustainable-development",
     section: "L", questionRef: "2025 HL Section LA Q6",
@@ -6792,7 +6807,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-la-7", topicId: "italian-3-1", conceptId: "news-item-about-longevity-among-certain",
     section: "L", questionRef: "2025 HL Section LA Q7",
@@ -6828,7 +6843,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-la-8", topicId: "italian-3-1", conceptId: "nova-gorica-gorizia-2025-european-capitals",
     section: "L", questionRef: "2025 HL Section LA Q8",
@@ -6864,7 +6879,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb1-1", topicId: "italian-3-0", conceptId: "does-paola-like-about-maths-competition",
     section: "L", questionRef: "2025 HL Section LB1 Q1",
@@ -6872,7 +6887,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Paola like about the maths competition? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["(She likes it because) it is more stimulating / challenging than (doing maths) in class","You work (1) in teams / squads (1) / teamwork (2)","You meet new friends / make friends (2)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “More stimulating than maths in class 2m”; “More stimulating than in class / school 2m”; “More stimulating 1m”; “More stimulating than school 1m”; “you meet friends 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["(She likes it because) it is more stimulating / challenging than (doing maths) in class","You work (1) in teams / squads (1) / teamwork (2)","You meet new friends / make friends (2)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6899,7 +6914,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb1-2", topicId: "italian-3-0", conceptId: "category-did-paola-make-final",
     section: "L", questionRef: "2025 HL Section LB1 Q2",
@@ -6934,7 +6949,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb1-3", topicId: "italian-3-0", conceptId: "four-about-final",
     section: "L", questionRef: "2025 HL Section LB1 Q3",
@@ -6969,7 +6984,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb1-4", topicId: "italian-3-0", conceptId: "provided-organisation-those-who-get-through",
     section: "L", questionRef: "2025 HL Section LB1 Q4",
@@ -6977,7 +6992,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is provided by the organisation for those who get through to the international competition?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Travel / Trip / Food / Accommodation (2)", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Travel / Trip / Food / Accommodation (2)", marks: 2, contextNote: "The scheme also prints, for shorter answers: “Gift card of 50 euros for a bookshop 1m”; “100 euros for a bookshop 1m”; “100 euros for books 1m”; “Coupon to spend in a bookshop 1m”; “Gift card 100 euros for library 1m”. Answer in English or Irish." },
     { id: "r-2", kind: "point", verbatim: "€100 voucher for a bookshop/books (4)", marks: 4 },
     ],
     sourceMaterial: {
@@ -7005,7 +7020,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb2-1", topicId: "italian-3-0", conceptId: "samuele-going-ireland-this-summer-full",
     section: "L", questionRef: "2025 HL Section LB2 Q1",
@@ -7013,7 +7028,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is Samuele going to Ireland this summer? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["To escape from the hot weather (in Rome) (4m)","Temperatures in Ireland hardly ever go beyond 20 degrees (4m)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “Because there it’s cooler / because it is cooler in Ireland 2m”; “It will only be 20 degrees 2m”; “It's not as hot in Ireland 2m”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["To escape from the hot weather (in Rome) (4m)","Temperatures in Ireland hardly ever go beyond 20 degrees (4m)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7040,7 +7055,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb2-2", topicId: "italian-3-0", conceptId: "does-samuele-prefer-wexford-dublin",
     section: "L", questionRef: "2025 HL Section LB2 Q2",
@@ -7075,7 +7090,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb2-3", topicId: "italian-3-0", conceptId: "does-samuele-say-about-mornings",
     section: "L", questionRef: "2025 HL Section LB2 Q3",
@@ -7083,7 +7098,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Samuele say about the mornings?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "Four hours of classes", marks: 3, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "Four hours of classes", marks: 3, contextNote: "The scheme also prints, for shorter answers: “Four classes 2m”; “Four hours 2m”; “Classes 1m”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "of grammar", marks: 1 },
     { id: "r-1-3", kind: "point", verbatim: "conversation", marks: 1 },
     { id: "r-1-4", kind: "point", verbatim: "(creative) writing", marks: 1 },
@@ -7113,7 +7128,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb2-4", topicId: "italian-3-0", conceptId: "does-samuele-say-about-will-practise",
     section: "L", questionRef: "2025 HL Section LB2 Q4",
@@ -7148,7 +7163,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb3-1", topicId: "italian-3-0", conceptId: "about-citt-pedala",
     section: "L", questionRef: "2025 HL Section LB3 Q1",
@@ -7156,7 +7171,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about Città Pedala.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["It is an initiative for bike lovers / passionate about bikes","It’s for those who want to cycle along the seaside promenade","It’s for those who want to enjoy the sea view without traffic","It’s a five km (cycle)","It’s a cycle from the old town to the beach"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “It’s a five km to the beach 3m”; “Next to the sea / seaside promenade 1m”; “Promote / enjoy cycling without traffic 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["It is an initiative for bike lovers / passionate about bikes","It’s for those who want to cycle along the seaside promenade","It’s for those who want to enjoy the sea view without traffic","It’s a five km (cycle)","It’s a cycle from the old town to the beach"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7183,7 +7198,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb3-2", topicId: "italian-3-0", conceptId: "months-will-event-take-place",
     section: "L", questionRef: "2025 HL Section LB3 Q2",
@@ -7191,7 +7206,7 @@ export const CARDS: SecCard[] = [
     questionText: "In which months will the event take place?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "May, June and July", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "May, June and July", marks: 2, contextNote: "The scheme also prints, for shorter answers: “If one month is missing 1m”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7218,7 +7233,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb3-3", topicId: "italian-3-0", conceptId: "who-can-participate-event-full",
     section: "L", questionRef: "2025 HL Section LB3 Q3",
@@ -7226,7 +7241,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who can participate in the event? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Anyone who has a bike","Adults, young people, children","There are no age limits"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “adults, young people, children: two of the three details 1m”; “anyone who can ride a bike 1m”; “there are no limits 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Anyone who has a bike","Adults, young people, children","There are no age limits"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7253,7 +7268,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb3-4", topicId: "italian-3-0", conceptId: "who-can-partake-event-free-full",
     section: "L", questionRef: "2025 HL Section LB3 Q4",
@@ -7261,7 +7276,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who can partake in the event for free? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Under 15", marks: 3, contextNote: "Under 15 and (3) over 60 (3) years of age Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Under 15", marks: 3, contextNote: "Under 15 and (3) over 60 (3) years of age The scheme also prints, for shorter answers: “Under/15 2m”; “Over/60 2m”. Answer in English or Irish." },
     { id: "r-2", kind: "point", verbatim: "over 60", marks: 3 },
     ],
     sourceMaterial: {
@@ -7289,7 +7304,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb3-5", topicId: "italian-3-0", conceptId: "this-event-held-weekend-full",
     section: "L", questionRef: "2025 HL Section LB3 Q5",
@@ -7324,7 +7339,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb3-6", topicId: "italian-3-0", conceptId: "about-event-organisers",
     section: "L", questionRef: "2025 HL Section LB3 Q6",
@@ -7332,7 +7347,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about the event organisers.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["They are four friends","who have known each other since (primary) school","They travelled (together) by bike (1) to different parts of Italy / Europe / Turkey (1)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “Travelled together in Italy 1m”; “Travelled by bike (together) 1m”; “There are 4 of them 1m”; “Friends 1m”; “On a trip 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["They are four friends","who have known each other since (primary) school","They travelled (together) by bike (1) to different parts of Italy / Europe / Turkey (1)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7359,7 +7374,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb3-7", topicId: "italian-3-0", conceptId: "services-does-association-offer",
     section: "L", questionRef: "2025 HL Section LB3 Q7",
@@ -7394,7 +7409,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Higher Level — © State Examinations Commission.",
     id: "it-2025-hl-lb3-8", topicId: "italian-3-0", conceptId: "languages-mentioned",
     section: "L", questionRef: "2025 HL Section LB3 Q8",
@@ -7402,7 +7417,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which languages are mentioned?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "English, French, Spanish, German", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "English, French, Spanish, German", marks: 2, contextNote: "The scheme also prints, for shorter answers: “Any two languages 1m”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8392,7 +8407,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-la-1", topicId: "italian-3-1", conceptId: "celebration-mentioned-birthday-party",
     section: "L", questionRef: "2024 HL Section LA Q1",
@@ -8428,7 +8443,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-la-2", topicId: "italian-3-1", conceptId: "italian-food-influenced-different-cultures",
     section: "L", questionRef: "2024 HL Section LA Q2",
@@ -8464,7 +8479,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-la-3", topicId: "italian-3-1", conceptId: "giro-italia-departs-from-different-location",
     section: "L", questionRef: "2024 HL Section LA Q3",
@@ -8500,7 +8515,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-la-4", topicId: "italian-3-1", conceptId: "will-rain-northwest-italy-monday",
     section: "L", questionRef: "2024 HL Section LA Q4",
@@ -8536,7 +8551,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-la-5", topicId: "italian-3-1", conceptId: "initiative-promotes-energy-saving",
     section: "L", questionRef: "2024 HL Section LA Q5",
@@ -8572,7 +8587,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-la-6", topicId: "italian-3-1", conceptId: "award-best-beach",
     section: "L", questionRef: "2024 HL Section LA Q6",
@@ -8608,7 +8623,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-la-7", topicId: "italian-3-1", conceptId: "band-stato-sociale-announced-fairer-concert",
     section: "L", questionRef: "2024 HL Section LA Q7",
@@ -8644,7 +8659,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-la-8", topicId: "italian-3-1", conceptId: "special-offer-allows-change-reservation-within",
     section: "L", questionRef: "2024 HL Section LA Q8",
@@ -8680,7 +8695,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb1-1", topicId: "italian-3-0", conceptId: "this-month-special-offer-full",
     section: "L", questionRef: "2024 HL Section LB1 Q1",
@@ -8715,7 +8730,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb1-2", topicId: "italian-3-0", conceptId: "did-giulia-not-hear-her-phone",
     section: "L", questionRef: "2024 HL Section LB1 Q2",
@@ -8723,7 +8738,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why did Giulia not hear her phone?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(The phone had little battery) the volume was low", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "(The phone had little battery) the volume was low", marks: 2, contextNote: "The scheme also prints, for shorter answers: “The phone was in her backpack/bag/ etc 1m”. Answer in English or Irish." },
     { id: "r-2", kind: "point", verbatim: "The phone was in an (internal) pocket of the bag", marks: 2 },
     ],
     sourceMaterial: {
@@ -8751,7 +8766,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb1-3", topicId: "italian-3-0", conceptId: "wrong-with-giulia-full",
     section: "L", questionRef: "2024 HL Section LB1 Q3",
@@ -8788,7 +8803,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb1-4", topicId: "italian-3-0", conceptId: "did-giulia-realise-when-she-arrived",
     section: "L", questionRef: "2024 HL Section LB1 Q4",
@@ -8824,7 +8839,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb2-1", topicId: "italian-3-0", conceptId: "about-giada-new-job",
     section: "L", questionRef: "2024 HL Section LB2 Q1",
@@ -8832,7 +8847,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one detail about Giada’s new job.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":3,"options":["She works for an estate agents/agency","She is not always working/ sitting in front of the computer/at the desk","She usually works from the office in town in the morning","In the afternoon she meets clients who want to see the houses for sale"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “Works in the office is in the city centre 1m”; “She meets clients in the afternoon 1m”. Answer in English or Irish.", group: {"claimMax":1,"perOption":3,"options":["She works for an estate agents/agency","She is not always working/ sitting in front of the computer/at the desk","She usually works from the office in town in the morning","In the afternoon she meets clients who want to see the houses for sale"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8859,7 +8874,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb2-2", topicId: "italian-3-0", conceptId: "advantages-new-bank-account",
     section: "L", questionRef: "2024 HL Section LB2 Q2",
@@ -8867,7 +8882,7 @@ export const CARDS: SecCard[] = [
     questionText: "What are the advantages of the new bank account? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["It is perfect for young people who have just found work","There are no expenses/ fees/taxes/bills","You can get a card that allows a discount in (some)cinemas, theatres, restaurants"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “they give you a card that allows you discount for the cinema 1m”; “Good/excellent/perfect/advantageous/ useful/ etc for young people 1m”; “You get a discount card 1m”; “Discounts in cinema 1m”; “Discount in theatre 1m”; “Discount in restaurant 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["It is perfect for young people who have just found work","There are no expenses/ fees/taxes/bills","You can get a card that allows a discount in (some)cinemas, theatres, restaurants"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8894,7 +8909,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb2-3", topicId: "italian-3-0", conceptId: "about-giada-work-contract",
     section: "L", questionRef: "2024 HL Section LB2 Q3",
@@ -8929,7 +8944,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb2-4", topicId: "italian-3-0", conceptId: "does-giada-plan-year-time-full",
     section: "L", questionRef: "2024 HL Section LB2 Q4",
@@ -8964,7 +8979,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb3-1", topicId: "italian-3-0", conceptId: "does-riccardo-say-about-his-music",
     section: "L", questionRef: "2024 HL Section LB3 Q1",
@@ -8972,7 +8987,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Riccardo say about his music background? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["He started playing late","He started when he was 18","He started playing the guitar and violin during the summer of his (final state) exams","He continued during college."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “He started playing the guitar/ violin / 1m”; “He started playing the guitar/violin during the summer 1m”; “He started playing during his summer exams 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["He started playing late","He started when he was 18","He started playing the guitar and violin during the summer of his (final state) exams","He continued during college."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8999,7 +9014,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb3-2", topicId: "italian-3-0", conceptId: "job-did-riccardo-past",
     section: "L", questionRef: "2024 HL Section LB3 Q2",
@@ -9037,7 +9052,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb3-3", topicId: "italian-3-0", conceptId: "when-does-riccardo-tour",
     section: "L", questionRef: "2024 HL Section LB3 Q3",
@@ -9072,7 +9087,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb3-4", topicId: "italian-3-0", conceptId: "did-riccardo-friend-ring-him",
     section: "L", questionRef: "2024 HL Section LB3 Q4",
@@ -9110,7 +9125,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb3-5", topicId: "italian-3-0", conceptId: "riccardo-songs-about",
     section: "L", questionRef: "2024 HL Section LB3 Q5",
@@ -9145,7 +9160,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb3-6", topicId: "italian-3-0", conceptId: "does-riccardo-like-when-ireland",
     section: "L", questionRef: "2024 HL Section LB3 Q6",
@@ -9180,7 +9195,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb3-7", topicId: "italian-3-0", conceptId: "does-riccardo-say-about-music",
     section: "L", questionRef: "2024 HL Section LB3 Q7",
@@ -9188,7 +9203,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Riccardo say about music? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Builds bridges — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Builds bridges”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["It is an international language","Allows you to travel","Brings people together/ allows people to meet","Brings joy/happiness/ peace/serenity (1) in difficult/hard times (1)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"options":["It is an international language","Allows you to travel","Brings people together/ allows people to meet","Builds bridges","Brings joy/happiness/ peace/serenity (1) in difficult/hard times (1)"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9215,7 +9230,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Higher Level — © State Examinations Commission.",
     id: "it-2024-hl-lb3-8", topicId: "italian-3-0", conceptId: "riccardo-looking-forward-visiting-west-ireland",
     section: "L", questionRef: "2024 HL Section LB3 Q8",
@@ -9223,7 +9238,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is Riccardo looking forward to visiting the West of Ireland?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "He has never been in smaller towns", marks: 3, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "He has never been in smaller towns", marks: 3, contextNote: "The scheme also prints, for shorter answers: “He has never been 1m”; “He wants to discover ireland 1m”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "He wants to discover Ireland outside Dublin", marks: 3 },
     ],
     sourceMaterial: {
@@ -10187,7 +10202,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-la-1", topicId: "italian-3-1", conceptId: "advertisement-about-pastry-shop",
     section: "L", questionRef: "2023 HL Section LA Q1",
@@ -10223,7 +10238,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-la-2", topicId: "italian-3-1", conceptId: "film-about-impact-mass-tourism-venice",
     section: "L", questionRef: "2023 HL Section LA Q2",
@@ -10259,7 +10274,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-la-3", topicId: "italian-3-1", conceptId: "new-primary-school-course-about-good",
     section: "L", questionRef: "2023 HL Section LA Q3",
@@ -10295,7 +10310,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-la-4", topicId: "italian-3-1", conceptId: "botanic-garden-announcing-its-special-summer",
     section: "L", questionRef: "2023 HL Section LA Q4",
@@ -10331,7 +10346,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-la-5", topicId: "italian-3-1", conceptId: "job-advertisement-lifeguard",
     section: "L", questionRef: "2023 HL Section LA Q5",
@@ -10367,7 +10382,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-la-6", topicId: "italian-3-1", conceptId: "month-july-there-will-drought-very",
     section: "L", questionRef: "2023 HL Section LA Q6",
@@ -10403,7 +10418,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-la-7", topicId: "italian-3-1", conceptId: "passengers-can-collect-voucher-hot-meal",
     section: "L", questionRef: "2023 HL Section LA Q7",
@@ -10439,7 +10454,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-la-8", topicId: "italian-3-1", conceptId: "news-item-about-recycled-materials",
     section: "L", questionRef: "2023 HL Section LA Q8",
@@ -10475,16 +10490,15 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb1-1", topicId: "italian-3-0", conceptId: "maria-looking-forward-full",
     section: "L", questionRef: "2023 HL Section LB1 Q1",
     stem: "Dialogue 1. Conversation between Marco and Maria. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
     questionText: "What is Maria looking forward to? Give full details.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Holidays/Enjoy time of/summer", marks: null, contextNote: "The scheme gives marks for this answer by how many of its elements are given: (Practicing) water sport/sport + water element. Answer in English or Irish." },
-    { id: "r-2", kind: "criterion", verbatim: "(Going to the) seaside/beach", marks: null },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “She was/had to go in hospital 1m”; “Tore/broke ligament 1m”. The scheme prints the same two shorter answers under Dialogue 2 Question 1 as well. Answer in English or Irish.", group: {"claimMax":2,"options":["Holidays/Enjoy time of/summer","(Going to the) seaside/beach","(Practicing) water sport/sport + water element"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10511,7 +10525,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb1-2", topicId: "italian-3-0", conceptId: "activities-can-cinque-terre",
     section: "L", questionRef: "2023 HL Section LB1 Q2",
@@ -10519,7 +10533,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention three activities you can do in Le Cinque Terre.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Swimming — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Swimming”. Answer in English or Irish.", group: {"claimMax":3,"perOption":2,"options":["Sunbathing","Boat tours/ rides (sailing?) (boat+sea element/trip at sea)","Hiking/ walking (along the marked paths)","Photography/taking photos (taking photos of the wonderful landscape)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":3,"options":["Sunbathing","Swimming","Boat tours/ rides (sailing?) (boat+sea element/trip at sea)","Hiking/ walking (along the marked paths)","Photography/taking photos (taking photos of the wonderful landscape)"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10546,7 +10560,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb1-3", topicId: "italian-3-0", conceptId: "about-hostel",
     section: "L", questionRef: "2023 HL Section LB1 Q3",
@@ -10554,7 +10568,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about the hostel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Youth","It’s in Monterosso","It’s overlooks the sea/beside the beach","Previously it was the old/antique/it was a(primary) school (of the village)","Small","(Very) nice/ cute/lovely (no beautiful)","2 rooms for four people (each) / 2 quadruple rooms","It has a kitchen (1m) to prepare meals (1m)/ you can make food/dinner"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “Two rooms 1m”; “Kitchen 1m”; “Prepare meals 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Youth","It’s in Monterosso","It’s overlooks the sea/beside the beach","Previously it was the old/antique/it was a(primary) school (of the village)","Small","(Very) nice/ cute/lovely (no beautiful)","2 rooms for four people (each) / 2 quadruple rooms","It has a kitchen (1m) to prepare meals (1m)/ you can make food/dinner"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10581,16 +10595,15 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb1-4", topicId: "italian-3-0", conceptId: "does-maria-say-about-travelling-car",
     section: "L", questionRef: "2023 HL Section LB1 Q4",
     stem: "Dialogue 1. Conversation between Marco and Maria. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
     questionText: "What does Maria say about travelling by car? Give full details.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "She doesn’t have a car/no car", marks: null, contextNote: "The scheme gives marks for this answer by how many of its elements are given: • She injured (1m)/hurt her leg (1m) (looking for both elements). Answer in English or Irish." },
-    { id: "r-2", kind: "criterion", verbatim: "She would not + relaxed/calm /quiet /relaxing (the message has to be conveyed)", marks: null },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “A nightmare 1m”. Answer in English or Irish.", group: {"claimMax":2,"options":["She doesn’t have a car/no car","It’s a nightmare/awful/horrendous/don’t like travelling by the car in the summer (both element)","She would not + relaxed/calm /quiet /relaxing (the message has to be conveyed)"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10617,7 +10630,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb2-1", topicId: "italian-3-0", conceptId: "happened-anna-full",
     section: "L", questionRef: "2023 HL Section LB2 Q1",
@@ -10625,7 +10638,7 @@ export const CARDS: SecCard[] = [
     questionText: "What happened to Anna? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "She slipped/fell", marks: 1, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "She slipped/fell", marks: 1, contextNote: "The scheme also prints, for shorter answers: “She was/had to go in hospital 1m”; “Tore/broke ligament 1m”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "on the ice", marks: 1 },
     { id: "r-2-1", kind: "point", verbatim: "She injured", marks: 1 },
     { id: "r-2-2", kind: "point", verbatim: "hurt her leg (looking for both elements)", marks: 1 },
@@ -10657,7 +10670,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb2-2", topicId: "italian-3-0", conceptId: "who-worried-about-anna",
     section: "L", questionRef: "2023 HL Section LB2 Q2",
@@ -10692,7 +10705,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb2-3", topicId: "italian-3-0", conceptId: "does-anna-find-difficult",
     section: "L", questionRef: "2023 HL Section LB2 Q3",
@@ -10700,7 +10713,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Anna find difficult?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Running fast/quick", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Running fast/quick", marks: 2, contextNote: "The scheme also prints, for shorter answers: “Running/run 1m”; “Headaches 1m”; “loss of appetite 1m”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10727,7 +10740,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb2-4", topicId: "italian-3-0", conceptId: "anna-hopeful-that-she-will-able",
     section: "L", questionRef: "2023 HL Section LB2 Q4",
@@ -10762,7 +10775,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb3-1", topicId: "italian-3-0", conceptId: "did-sabrina-ireland",
     section: "L", questionRef: "2023 HL Section LB3 Q1",
@@ -10770,7 +10783,9 @@ export const CARDS: SecCard[] = [
     questionText: "What did Sabrina do in Ireland?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a tourist office (2m)", marks: 4, contextNote: "The scheme prices this half of the ask separately, under the heading “A/One-month’s (1m) work (experience)/stage (1m) in”. Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "A/One-month’s", marks: 1, contextNote: "Answer in English or Irish." },
+    { id: "r-1-2", kind: "point", verbatim: "work (experience)/stage in", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "a tourist office (2m)", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10797,7 +10812,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb3-2", topicId: "italian-3-0", conceptId: "did-sabrina-save-this-trip-full",
     section: "L", questionRef: "2023 HL Section LB3 Q2",
@@ -10834,7 +10849,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb3-3", topicId: "italian-3-0", conceptId: "describe-area-where-sabrina-lived-four",
     section: "L", questionRef: "2023 HL Section LB3 Q3",
@@ -10842,7 +10857,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the area where Sabrina lived. Give four details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Give four details — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Give four details”. Answer in English or Irish.", group: {"claimMax":4,"perOption":1,"options":["It’s a village/small town","In the west of Ireland","In the countryside","a farm with animals","(It was near) a river","(It was near) an (old) castle","It was not far from the city/beside the town"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints: “Give four details”. Answer in English or Irish.", group: {"claimMax":4,"options":["It’s a village/small town","In the west of Ireland","In the countryside","a farm with animals","(It was near) a river","(It was near) an (old) castle","It was not far from the city/beside the town"],"perOption":1} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10869,7 +10884,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb3-4", topicId: "italian-3-0", conceptId: "four-nationalities-mentioned",
     section: "L", questionRef: "2023 HL Section LB3 Q4",
@@ -10904,7 +10919,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb3-5", topicId: "italian-3-0", conceptId: "does-sabrina-say-about-lunch-breaks",
     section: "L", questionRef: "2023 HL Section LB3 Q5",
@@ -10939,7 +10954,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb3-6", topicId: "italian-3-0", conceptId: "did-sabrina-her-free-time-full",
     section: "L", questionRef: "2023 HL Section LB3 Q6",
@@ -10947,7 +10962,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Sabrina do in her free time? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "She learnt/ to play/playing/ camogie/one of the national sports", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "She learnt/ to play/playing/ camogie/one of the national sports", marks: 2, contextNote: "The scheme also prints, under “If only point”, for shorter answers: “She played 1m”; “Camogie/ national sport 1m”. Answer in English or Irish." },
     { id: "r-2", kind: "point", verbatim: "She took part in a choir", marks: 1 },
     { id: "r-3", kind: "point", verbatim: "She went to Irish dances/balls (lesson)", marks: 1 },
     ],
@@ -10976,7 +10991,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb3-7", topicId: "italian-3-0", conceptId: "does-sabrina-say-about-fruit-vegetables",
     section: "L", questionRef: "2023 HL Section LB3 Q7",
@@ -10984,7 +10999,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Sabrina say about fruit and vegetables in Ireland. Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Potatoes/strawberries are superior/unbeatable/excellent, • there is not much variety/choice/types/not as much as in Italy, • and (a lot) is imported/exported (from abroad)", marks: 6, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Potatoes/strawberries are superior/unbeatable/excellent, • there is not much variety/choice/types/not as much as in Italy, • and (a lot) is imported/exported (from abroad)", marks: 6, contextNote: "The scheme also prints, for shorter answers: “Food is good 1m”; “quality is excellent 1m”; “strawberries/potatoes are mentioned 1m”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11011,7 +11026,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Higher Level — © State Examinations Commission.",
     id: "it-2023-hl-lb3-8", topicId: "italian-3-0", conceptId: "will-sabrina-july-full",
     section: "L", questionRef: "2023 HL Section LB3 Q8",
@@ -11969,15 +11984,10 @@ export const CARDS: SecCard[] = [
     id: "it-2022-hl-a-5", topicId: "italian-5-0", conceptId: "answer-following-question-english-looking-article",
     section: "A", questionRef: "2022 HL Section A Q5",
     questionText: "Answer the following question in English.\nLooking at the article as a whole, outline\nthree reasons why nomadi digitali make\nthis life choice and one advantage Claudia\nhad in choosing this life.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Travel the world how and when suits you/to travel and move around when people feel like the need for it, and be able to discover wonderful places/tropical paradises living your life the way you want/working from home- doing remote working and /not taking holidays", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints \"Three of (5+5+5+5)\" and the split (5+5+5+5), which do not agree for 20 marks and does not say what one answer is worth: judge your answer against the total. It also accepts, for less: She is a success story 1m; She helps people 1m; She has travelled the world 1m." },
-    { id: "r-2", kind: "criterion", verbatim: "To be more flexible and have the chance to work everywhere people want/wherever you choose, to have the chance to adapt their job to their ideal lifestyle", marks: null },
-    { id: "r-3", kind: "criterion", verbatim: "Promote a social/economic positive effect on the community where one lives/works", marks: null },
-    { id: "r-4", kind: "criterion", verbatim: "Promote quality of life and allow companies to access/recruit the best candidates wherever they are located.", marks: null },
-    { id: "r-5", kind: "criterion", verbatim: "Work in a place that allows people to be in touch with nature where people can be in the open air for their break/after work as it’s very good for people’s wellbeing/this will reflect positively on people’s energy/clear thinking", marks: null },
-    { id: "r-6", kind: "criterion", verbatim: "They are interested in working for a long period of time in very nice holiday places/destinations", marks: null },
-    { id: "r-7", kind: "criterion", verbatim: "She has made/gained out of the ordinary experiences, precious and important life lessons, the chance to have her two children grow in different cultures and environments her two children are citizens of the world/ free from any prejudice", marks: null },
+    { id: "r-1", kind: "anyN", verbatim: "Why — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Why”; the paper asks for 3 points on it.", group: {"claimMax":3,"options":["Travel the world how and when suits you/to travel and move around when people feel like the need for it, and be able to discover wonderful places/tropical paradises living your life the way you want/working from home- doing remote working and /not taking holidays","To be more flexible and have the chance to work everywhere people want/wherever you choose, to have the chance to adapt their job to their ideal lifestyle","Promote a social/economic positive effect on the community where one lives/works","Promote quality of life and allow companies to access/recruit the best candidates wherever they are located.","Work in a place that allows people to be in touch with nature where people can be in the open air for their break/after work as it’s very good for people’s wellbeing/this will reflect positively on people’s energy/clear thinking","They are interested in working for a long period of time in very nice holiday places/destinations"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Claudia — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “She is a success story” 1 mark; “She helps people” 1 mark; “She has travelled the world” 1 mark. The scheme prints these answers under the heading “Claudia”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["She has made/gained out of the ordinary experiences, precious and important life lessons, the chance to have her two children grow in different cultures and environments her two children are citizens of the world/ free from any prejudice"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11993,7 +12003,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-la-1", topicId: "italian-3-1", conceptId: "most-recent-nobel-prize-won-italian",
     section: "L", questionRef: "2022 HL Section LA Q1",
@@ -12029,7 +12039,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-la-2", topicId: "italian-3-1", conceptId: "announcement-asks-passengers-platform",
     section: "L", questionRef: "2022 HL Section LA Q2",
@@ -12065,7 +12075,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-la-3", topicId: "italian-3-1", conceptId: "festival-entry-free",
     section: "L", questionRef: "2022 HL Section LA Q3",
@@ -12101,7 +12111,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-la-4", topicId: "italian-3-1", conceptId: "there-will-heavy-rain-north-italy",
     section: "L", questionRef: "2022 HL Section LA Q4",
@@ -12137,7 +12147,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-la-5", topicId: "italian-3-1", conceptId: "beauty-industry-increasingly-promoting-gender-neutral",
     section: "L", questionRef: "2022 HL Section LA Q5",
@@ -12173,7 +12183,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-la-6", topicId: "italian-3-1", conceptId: "city-milan-won-prize-its-efforts",
     section: "L", questionRef: "2022 HL Section LA Q6",
@@ -12209,7 +12219,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-la-7", topicId: "italian-3-1", conceptId: "news-item-about-electric-scooters",
     section: "L", questionRef: "2022 HL Section LA Q7",
@@ -12245,7 +12255,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-la-8", topicId: "italian-3-1", conceptId: "new-trend-public-workplaces-about-pets",
     section: "L", questionRef: "2022 HL Section LA Q8",
@@ -12281,7 +12291,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb1-1", topicId: "italian-3-0", conceptId: "where-lorenzo-going",
     section: "L", questionRef: "2022 HL Section LB1 Q1",
@@ -12316,7 +12326,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb1-2", topicId: "italian-3-0", conceptId: "will-elderly-people-help-university-students",
     section: "L", questionRef: "2022 HL Section LB1 Q2",
@@ -12352,7 +12362,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb1-3", topicId: "italian-3-0", conceptId: "four-household-chores",
     section: "L", questionRef: "2022 HL Section LB1 Q3",
@@ -12387,7 +12397,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb1-4", topicId: "italian-3-0", conceptId: "other-activities-included-project",
     section: "L", questionRef: "2022 HL Section LB1 Q4",
@@ -12422,7 +12432,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb2-1", topicId: "italian-3-0", conceptId: "does-agata-feel-tired-full",
     section: "L", questionRef: "2022 HL Section LB2 Q1",
@@ -12457,7 +12467,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb2-2", topicId: "italian-3-0", conceptId: "whom-will-agata-organise-art-workshop",
     section: "L", questionRef: "2022 HL Section LB2 Q2",
@@ -12494,7 +12504,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb2-3", topicId: "italian-3-0", conceptId: "items-agata-will-use-her-art",
     section: "L", questionRef: "2022 HL Section LB2 Q3",
@@ -12529,7 +12539,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb2-4", topicId: "italian-3-0", conceptId: "would-agata-like-open-art-school",
     section: "L", questionRef: "2022 HL Section LB2 Q4",
@@ -12564,7 +12574,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb3-1", topicId: "italian-3-0", conceptId: "about-piero-bellis",
     section: "L", questionRef: "2022 HL Section LB3 Q1",
@@ -12599,7 +12609,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb3-2", topicId: "italian-3-0", conceptId: "does-piero-say-about-his-experience",
     section: "L", questionRef: "2022 HL Section LB3 Q2",
@@ -12634,7 +12644,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb3-3", topicId: "italian-3-0", conceptId: "where-does-piero-stop-during-his",
     section: "L", questionRef: "2022 HL Section LB3 Q3",
@@ -12670,7 +12680,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb3-4", topicId: "italian-3-0", conceptId: "people-ask-piero",
     section: "L", questionRef: "2022 HL Section LB3 Q4",
@@ -12705,7 +12715,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb3-5", topicId: "italian-3-0", conceptId: "dangers-being-sea",
     section: "L", questionRef: "2022 HL Section LB3 Q5",
@@ -12740,7 +12750,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb3-6", topicId: "italian-3-0", conceptId: "four-foods-that-piero-has-during",
     section: "L", questionRef: "2022 HL Section LB3 Q6",
@@ -12775,7 +12785,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb3-7", topicId: "italian-3-0", conceptId: "about-piero-plans-future",
     section: "L", questionRef: "2022 HL Section LB3 Q7",
@@ -12810,7 +12820,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Higher Level — © State Examinations Commission.",
     id: "it-2022-hl-lb3-8", topicId: "italian-3-0", conceptId: "piero-going-after-his-sailing-trip",
     section: "L", questionRef: "2022 HL Section LB3 Q8",
@@ -13768,19 +13778,10 @@ export const CARDS: SecCard[] = [
     id: "it-2021-hl-a-5", topicId: "italian-5-0", conceptId: "answer-following-question-english-looking-article",
     section: "A", questionRef: "2021 HL Section A Q5",
     questionText: "Answer the following question in English.\nLooking at the article, outline two\nadvantages of PC4U and two points about\nJacopo’s hopes for this initiative.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "With an easy click students/families/young people who look for a tablet/PC can be easily put in touch with people/companies that wish to donate them", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints \"Two of\" and the split (5+5+5+5), which do not agree for 20 marks and does not say what one answer is worth: judge your answer against the total. It also accepts, for less: Many families have received their new computer and it has really helped them 2m; Jacopo’s hopes Nonem; • He is hoping that with this initiative they can give a push-boost/to speed up the process of digitalisation because Italy is behind Nonem; • He is hoping to see this initiative expand and spread in other parts of Italy other than Milan Nonem; • He is hoping to get more volunteers on board and couriers for the deliveries Nonem; • Whoever does not have a PC/tablet to donate can help the cause by giving a donation that will be used to pay the maintenance cost/to buy new parts to fix the computers. Nonem; This initiative hopes to reduce the gap between people who have a lot and people who do not have enough/have little 3m." },
-    { id: "r-2", kind: "criterion", verbatim: "Students/Families who need a tablet/PC can get it for free, after it has been reconditioned/recycled", marks: null },
-    { id: "r-3", kind: "criterion", verbatim: "Students/Families who cannot afford to buy a tablet/PC can get it for free, after it has been reconditioned/recycled", marks: null },
-    { id: "r-4", kind: "criterion", verbatim: "The four founders take full charge of the requests, collect the device from the donor and they deliver it to who needs it/the beneficiary", marks: null },
-    { id: "r-5", kind: "criterion", verbatim: "To help students/people/families who can’t afford to buy a computer and who could not attend online classes otherwise/who couldn’t participate in digital learning", marks: null },
-    { id: "r-6", kind: "criterion", verbatim: "It helps students by giving them technological support which aids their study", marks: null },
-    { id: "r-7", kind: "criterion", verbatim: "Families who do not have enough devices for all the family members and they all need to be connected/online", marks: null },
-    { id: "r-8", kind: "criterion", verbatim: "The digital natives have created a platform/website that is very close to young people (speaks their language) and it is very different from the other similar initiatives", marks: null },
-    { id: "r-9", kind: "criterion", verbatim: "This initiative hopes to give a push-boost/to speed up the process of digitalisation because Italy is behind", marks: null },
-    { id: "r-10", kind: "criterion", verbatim: "This initiative hopes to reduce the gap between people who have a lot and people who do not have enough/have little", marks: null },
-    { id: "r-11", kind: "criterion", verbatim: "This initiative hopes to overcome the issue that digital learning might arise as students will need more and more technological devices as schools will become more and more digitalized", marks: null },
+    { id: "r-1", kind: "anyN", verbatim: "Advantage — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Many families have received their new computer and it has really helped them” 2 marks. The scheme prints these answers under the heading “Advantage”; the paper asks for 2 points on it.", group: {"claimMax":2,"options":["With an easy click students/families/young people who look for a tablet/PC can be easily put in touch with people/companies that wish to donate them","Students/Families who need a tablet/PC can get it for free, after it has been reconditioned/recycled","Students/Families who cannot afford to buy a tablet/PC can get it for free, after it has been reconditioned/recycled","The four founders take full charge of the requests, collect the device from the donor and they deliver it to who needs it/the beneficiary","To help students/people/families who can’t afford to buy a computer and who could not attend online classes otherwise/who couldn’t participate in digital learning","It helps students by giving them technological support which aids their study","Families who do not have enough devices for all the family members and they all need to be connected/online","The digital natives have created a platform/website that is very close to young people (speaks their language) and it is very different from the other similar initiatives","This initiative hopes to give a push-boost/to speed up the process of digitalisation because Italy is behind","This initiative hopes to reduce the gap between people who have a lot and people who do not have enough/have little","This initiative hopes to overcome the issue that digital learning might arise as students will need more and more technological devices as schools will become more and more digitalized"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Jacopo’s hopes — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “This initiative hopes to reduce the gap between people who have a lot and people who do not have enough/have little” 3 marks. The scheme prints these answers under the heading “Jacopo’s hopes”; the paper asks for 2 points on it.", group: {"claimMax":2,"options":["He is hoping that with this initiative they can give a push-boost/to speed up the process of digitalisation because Italy is behind","He is hoping to see this initiative expand and spread in other parts of Italy other than Milan","He is hoping to get more volunteers on board and couriers for the deliveries","Whoever does not have a PC/tablet to donate can help the cause by giving a donation that will be used to pay the maintenance cost/to buy new parts to fix the computers."],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13796,7 +13797,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-la-1", topicId: "italian-3-1", conceptId: "celebrated-24th-may-european-day-parks",
     section: "L", questionRef: "2021 HL Section LA Q1",
@@ -13832,7 +13833,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-la-2", topicId: "italian-3-1", conceptId: "new-google-map-function-includes-wheelchair",
     section: "L", questionRef: "2021 HL Section LA Q2",
@@ -13868,7 +13869,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-la-3", topicId: "italian-3-1", conceptId: "weather-like-north-italy-heavy-rain",
     section: "L", questionRef: "2021 HL Section LA Q3",
@@ -13904,7 +13905,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-la-4", topicId: "italian-3-1", conceptId: "announcement-advises-sunbathing-with-care",
     section: "L", questionRef: "2021 HL Section LA Q4",
@@ -13940,7 +13941,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-la-5", topicId: "italian-3-1", conceptId: "advertisement-about-new-office-locations",
     section: "L", questionRef: "2021 HL Section LA Q5",
@@ -13976,7 +13977,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-la-6", topicId: "italian-3-1", conceptId: "news-item-about-traffic",
     section: "L", questionRef: "2021 HL Section LA Q6",
@@ -14012,7 +14013,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-la-7", topicId: "italian-3-1", conceptId: "initiative-aims-support-dolphin-research-centre",
     section: "L", questionRef: "2021 HL Section LA Q7",
@@ -14048,7 +14049,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-la-8", topicId: "italian-3-1", conceptId: "main-character-new-series-detective",
     section: "L", questionRef: "2021 HL Section LA Q8",
@@ -14084,7 +14085,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb1-1", topicId: "italian-3-0", conceptId: "nicoletta-unable-trip",
     section: "L", questionRef: "2021 HL Section LB1 Q1",
@@ -14119,7 +14120,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb1-2", topicId: "italian-3-0", conceptId: "describe-michele-brother-bike-full",
     section: "L", questionRef: "2021 HL Section LB1 Q2",
@@ -14127,7 +14128,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe Michele’s brother’s bike. Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "It works (1) well", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "It works (1) well", marks: 4, contextNote: "The scheme also prints, for shorter answers: “It is (a bit) slow (1)”; “It is (too) big (1)”; “It is red (1)”; “It is black (1)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14154,7 +14155,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb1-3", topicId: "italian-3-0", conceptId: "food-does-michele-suggest-bring-picnic",
     section: "L", questionRef: "2021 HL Section LB1 Q3",
@@ -14189,7 +14190,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb2-1", topicId: "italian-3-0", conceptId: "davide-going-calabria-full",
     section: "L", questionRef: "2021 HL Section LB2 Q1",
@@ -14224,7 +14225,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb2-2", topicId: "italian-3-0", conceptId: "when-did-sara-realise-her-identity",
     section: "L", questionRef: "2021 HL Section LB2 Q2",
@@ -14260,7 +14261,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb2-3", topicId: "italian-3-0", conceptId: "places-that-sara-rang-look-missing",
     section: "L", questionRef: "2021 HL Section LB2 Q3",
@@ -14295,7 +14296,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb2-4", topicId: "italian-3-0", conceptId: "where-identity-card-found-full",
     section: "L", questionRef: "2021 HL Section LB2 Q4",
@@ -14330,7 +14331,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb3-1", topicId: "italian-3-0", conceptId: "laura-doing-italy",
     section: "L", questionRef: "2021 HL Section LB3 Q1",
@@ -14365,7 +14366,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb3-2", topicId: "italian-3-0", conceptId: "things-laura-liked-about-italy-when",
     section: "L", questionRef: "2021 HL Section LB3 Q2",
@@ -14400,7 +14401,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb3-3", topicId: "italian-3-0", conceptId: "does-laura-say-about-summers-italy",
     section: "L", questionRef: "2021 HL Section LB3 Q3",
@@ -14435,7 +14436,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb3-4", topicId: "italian-3-0", conceptId: "does-she-like-about-italian-people",
     section: "L", questionRef: "2021 HL Section LB3 Q4",
@@ -14470,7 +14471,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb3-5", topicId: "italian-3-0", conceptId: "does-laura-say-about-her-irish",
     section: "L", questionRef: "2021 HL Section LB3 Q5",
@@ -14478,7 +14479,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Laura say about her Irish friends? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["They emigrated (1) to Canada/New Zealand/China (1)","She does not have many friends (1) left in Ireland/to go out with (1)","She has a friend (1) in many cities/around the world (1)","There is always someone to host her (1) abroad (1)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “She misses them (2)”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["They emigrated (1) to Canada/New Zealand/China (1)","She does not have many friends (1) left in Ireland/to go out with (1)","She has a friend (1) in many cities/around the world (1)","There is always someone to host her (1) abroad (1)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14505,7 +14506,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb3-6", topicId: "italian-3-0", conceptId: "does-she-say-about-friday-evenings",
     section: "L", questionRef: "2021 HL Section LB3 Q6",
@@ -14542,7 +14543,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb3-7", topicId: "italian-3-0", conceptId: "would-laura-like",
     section: "L", questionRef: "2021 HL Section LB3 Q7",
@@ -14579,7 +14580,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb3-8", topicId: "italian-3-0", conceptId: "does-she-say-about-italian-islands",
     section: "L", questionRef: "2021 HL Section LB3 Q8",
@@ -15476,7 +15477,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Higher Level — © State Examinations Commission.",
     id: "it-2021-hl-lb1-4", topicId: "italian-3-0", conceptId: "activities-planning-during-excursion",
     section: "L", questionRef: "2021 HL Section LB1 Q4",
@@ -15789,7 +15790,7 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa dice Eleonora di suo padre?\n(i)\n(ii)\n(iii)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "È premuroso — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Le concedeva un privilegio impagabile” 1 mark. The scheme prices this half of the ask separately, under the heading “È premuroso”.", group: {"claimMax":3,"perOption":2,"options":["È semplice","È ragionevole","È affettuoso","Le concedeva un’adolescenza libera dai sensi di colpa"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Le concedeva un privilegio impagabile” 1 mark.", group: {"claimMax":3,"options":["È semplice","È ragionevole","È affettuoso","È premuroso","Le concedeva un’adolescenza libera dai sensi di colpa"],"perOption":2} },
     ],
   } as SecCard,
   {
@@ -15815,7 +15816,8 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at the passage as a whole, what\ndo we learn about Eleonora (three points)\nand her relationship with her father (one\npoint)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Five points are required: — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She is nostalgic about the times she watched Walt Disney movies with her family” 2 marks; “She listens to Nirvana” 1 mark; “They have a good relationship” 2 marks; “She liked the freedom she was granted” 2 marks. The scheme prices this half of the ask separately, under the heading “Five points are required:”.", group: {"claimMax":4,"perOption":5,"options":["Eleonora in the middle of the night (barefoot)/ was woken up and asked her parents what had happened","Eleonora did not hear/ missed her brother fighting with his parents because she sleeps with her headphones on/ she listens to the music at night","Eleonora likes to sleep with her earphones on and listening to music, to Nirvana’s songs","Eleonora was 4 years older than her brother Stefano was, she is 17 years old","Eleonora likes the idea of growing up, she had started school early/ she would have finished her secondary school in less than a year and then study Architecture (at University)","She liked the fact that her parents still loved each other; she liked the pain of feeling left out from their parents close relationship one day she would love to have a one-of-a-kind relationship","She used to like her brother when he was young and he used to slip into her bed because he was scared of a bad dream and she was helping him to get dressed/ comb his hair/ give him instructions","She hated her brother now, although she would still love him if he would behave as a normal person/ showed her his love as he used to","She hated her brother now because he did not behave as a normal person and he was not showing his affection/ he was not as affectionate as he was before","Lately she likes her mother less because her hips got bigger after her (second) pregnancy","Lately she likes her mother less because her wrinkles made her look older (than 47 years old)","Lately she likes her mother less because of her red hair dye (she was using) to cover her white hair"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Eleonora — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She is nostalgic about the times she watched Walt Disney movies with her family” 2 marks; “She listens to Nirvana” 1 mark. The scheme prints these answers under the heading “Eleonora”; the paper asks for 3 points on it. The scheme prints: “Five points are required:”.", group: {"claimMax":3,"options":["Eleonora in the middle of the night (barefoot)/ was woken up and asked her parents what had happened","Eleonora did not hear/ missed her brother fighting with his parents because she sleeps with her headphones on/ she listens to the music at night","Eleonora likes to sleep with her earphones on and listening to music, to Nirvana’s songs","Eleonora was 4 years older than her brother Stefano was, she is 17 years old","Eleonora likes the idea of growing up, she had started school early/ she would have finished her secondary school in less than a year and then study Architecture (at University)","She liked the fact that her parents still loved each other; she liked the pain of feeling left out from their parents close relationship one day she would love to have a one-of-a-kind relationship","She used to like her brother when he was young and he used to slip into her bed because he was scared of a bad dream and she was helping him to get dressed/ comb his hair/ give him instructions","She hated her brother now, although she would still love him if he would behave as a normal person/ showed her his love as he used to","She hated her brother now because he did not behave as a normal person and he was not showing his affection/ he was not as affectionate as he was before","Lately she likes her mother less because her hips got bigger after her (second) pregnancy","Lately she likes her mother less because her wrinkles made her look older (than 47 years old)","Lately she likes her mother less because of her red hair dye (she was using) to cover her white hair"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Relationship with her father — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “They have a good relationship” 2 marks; “She liked the freedom she was granted” 2 marks. The scheme prints these answers under the heading “Relationship with her father”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["She never turned against her father, although she was at a difficult age, she loved her father","She regrets/ misses the fact that she is not able to fall asleep on her dad, as she used when she was young, while watching Walt Disney videos on tape","She regrets/ misses the fact that her father used to pick her up to put her to bed","Her father had given her a lot of freedom that she didn’t take it as blackmail/ she didn’t take it as an obligation to behave well","Her father wants her to fully live her life, he didn’t want her to live a life full of regrets/ where she was going to give up her ambitions-wishes (even if his wife and he didn’t agree with her choices)","Her father in her opinion was not a complicated man, very loving (affectionate) full of care reasonable/ and was granting her a priceless privilege: her guilt free adolescence"],"perOption":5} },
     ],
   } as SecCard,
   {
@@ -16017,7 +16019,8 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage mention what is\ndistinctive about Leo’s summer (three\npoints)? Why is this passage important\nin the context of the novel as a whole\n(one point)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The candidate must refer both to the passage and to the novel as a whole — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Leo is mourning the death of Beatrice and coming to terms with it” 3 marks; “Leo is also slowly coming to terms with his love for Silvia” 2 marks; “Important for the relationship with his parents” 2 marks; “This passage comes immediately after Beatrice’s funeral” 2 marks. The scheme prices this half of the ask separately, under the heading “The candidate must refer both to the passage and to the novel as a whole”.", group: {"claimMax":4,"perOption":5,"options":["It was a summer that was marked by the silence and not by the shouts of happiness","He did not keep in touch with any of his friends","He spent nearly three months in the mountains, (in the hotel where they always used to go), this summer was the first time he really wanted to go there","He really needed silence, to walk alone and not to find new friends","He did not find a new girlfriend in order to boast about her to his friend Niko","He needed his parents and/ He needed to be with his parents with their comforting and reassuring presence","He needed to read (read again) Beatrice’s diary through which he could perceive a “picture of happiness”","He needed to find/ see what really matters and on a mountain it is easier to see it/ because, on a mountain stars are more clearly defined","In the context of the “clarity” which the mountains provide him with, he sees Silvia for the precious person she is","He starts to see Silvia in a different light, which will open his eyes to her love for him, which he had previously ignored","He seeks silence and solitude in order to assess what is really important in life in general and in his life in particular/ hence his distancing himself from things that don’t count","He needed the solitude and the silence of the mountain to reflect on all the important things that had happened in his life","It was a summer where Leo wanted to get away from his everyday life and be alone","Here we have Leo in a reflective mood trying to absorb the meaning of all that has happened","He understands the importance of the love and support, which come from his parents","He also understands Beatrice’s contribution to his newfound wisdom"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Points from the passage — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Points from the passage”; the paper asks for 3 points on it. The scheme prints: “The candidate must refer both to the passage and to the novel as a whole”.", group: {"claimMax":3,"options":["It was a summer that was marked by the silence and not by the shouts of happiness","He did not keep in touch with any of his friends","He spent nearly three months in the mountains, (in the hotel where they always used to go), this summer was the first time he really wanted to go there","He really needed silence, to walk alone and not to find new friends","He did not find a new girlfriend in order to boast about her to his friend Niko","He needed his parents and/ He needed to be with his parents with their comforting and reassuring presence","He needed to read (read again) Beatrice’s diary through which he could perceive a “picture of happiness”","He needed to find/ see what really matters and on a mountain it is easier to see it/ because, on a mountain stars are more clearly defined","In the context of the “clarity” which the mountains provide him with, he sees Silvia for the precious person she is","He starts to see Silvia in a different light, which will open his eyes to her love for him, which he had previously ignored","He seeks silence and solitude in order to assess what is really important in life in general and in his life in particular/ hence his distancing himself from things that don’t count","He needed the solitude and the silence of the mountain to reflect on all the important things that had happened in his life","It was a summer where Leo wanted to get away from his everyday life and be alone"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Importance in the context of the novel — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “Leo is mourning the death of Beatrice and coming to terms with it” 3 marks; “Leo is also slowly coming to terms with his love for Silvia” 2 marks; “Important for the relationship with his parents” 2 marks; “This passage comes immediately after Beatrice’s funeral” 2 marks. The scheme prints these answers under the heading “Importance in the context of the novel”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["Here we have Leo in a reflective mood trying to absorb the meaning of all that has happened","He understands the importance of the love and support, which come from his parents","He also understands Beatrice’s contribution to his newfound wisdom"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16088,7 +16091,7 @@ export const CARDS: SecCard[] = [
     questionText: "Di cosa parlano l’Arciprete Rosello e il Professore Laurana?\n(i) (ii)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "L’atroce delitto — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prices this half of the ask separately, under the heading “L’atroce delitto”.", group: {"claimMax":2,"perOption":3,"options":["L’indole docile e generosa del dottor Roscio (buonanima)","Il dolore inconsolabile della vedova"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian.", group: {"claimMax":2,"options":["L’atroce delitto","L’indole docile e generosa del dottor Roscio (buonanima)","Il dolore inconsolabile della vedova"],"perOption":3,"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16230,7 +16233,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage and the novel as a\nwhole, what do we learn about Arciprete\nRosello?\nGive four points.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Candidate must refer both to the passage and to the text as a whole — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He is one of only two religious people in the locality to receive the Osservatore Romano newspaper” 2 marks; “He feels that Rosello did not deserve to die” 2 marks; “He has his own views about the homicide” 2 marks. The scheme prices this half of the ask separately, under the heading “Candidate must refer both to the passage and to the text as a whole”.", group: {"claimMax":4,"perOption":5,"options":["He was the uncle of Dottor Roscio’s wife -Luisa Roscio- and he was very fond of her","He lived in a big house (which was) part of the undivided Rosello family property","He had lived in that house for many years and (whereas) before all the extended Rosello clan lived there","He had lived in that house it now housed himself, Avvocato Rosello and two sisters-in-law","He was the undisputed head of the Rosello family","He tries to convince Laurana that Manno is the reason for the murders and not Roscio","He tries to convince Laurana that Manno is the reason for the murders in order to divert his attention as to what really happened |His attempt to convince Laurana of Manno’s guilt, is aimed at neutralising his “investigation”","According to Arciprete Rosello, Manno was murdered because he had an affair (affairs), and this was something that the father/ brother/ boyfriend of the woman in question could not tolerate","According to Arciprete Rosello Manno’s killing was a clear vendetta because he was warned first and then executed","According to Arciprete Rosello, Manno did not want to report the anonymous letter because"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He is one of only two religious people in the locality to receive the Osservatore Romano newspaper” 2 marks; “He feels that Rosello did not deserve to die” 2 marks; “He has his own views about the homicide” 2 marks. The scheme prints these answers under the headings “Points from the passage”, “Points from the novel”; the paper does not say how many points it wants under each. The scheme prints: “Candidate must refer both to the passage and to the text as a whole”.", group: {"claimMax":4,"options":["Points from the passage — He was the uncle of Dottor Roscio’s wife -Luisa Roscio- and he was very fond of her","Points from the passage — He lived in a big house (which was) part of the undivided Rosello family property","Points from the passage — He had lived in that house for many years and (whereas) before all the extended Rosello clan lived there","Points from the passage — He had lived in that house it now housed himself, Avvocato Rosello and two sisters-in-law","Points from the passage — He was the undisputed head of the Rosello family","Points from the passage — He tries to convince Laurana that Manno is the reason for the murders and not Roscio","Points from the passage — He tries to convince Laurana that Manno is the reason for the murders in order to divert his attention as to what really happened |His attempt to convince Laurana of Manno’s guilt, is aimed at neutralising his “investigation”","Points from the passage — According to Arciprete Rosello, Manno was murdered because he had an affair (affairs), and this was something that the father/ brother/ boyfriend of the woman in question could not tolerate","Points from the passage — According to Arciprete Rosello Manno’s killing was a clear vendetta because he was warned first and then executed","Points from the passage — According to Arciprete Rosello, Manno did not want to report the anonymous letter because Manno would be afraid that something unpleasant about his life would arise","Points from the novel — We are told that he is the undisputed leader of the Rosello household thus hinting at his influence over what is really going on in the town","Points from the novel — Initially he had opposed the juvenile relationship between Luisa and Rosello","Points from the novel — Initially he had opposed the relationship between Luisa and Rosello because he felt it was indecent/ obscene","Points from the novel — He later gave the approval/ blessing to the Luisa + Rosello’s marriage because now it was an act of charity towards Luisa","Points from the novel — He later gave the approval/ blessing to the Luisa + Rosello’s marriage, we realise how important it is for him to keep the family (and the property) together. We can therefore see that the marriage of Luisa Roscio and avvocato Rosello his yet unmarried nephew and the only male left to carry the Rosello name is the ideal “solution to the problem”","Points from the novel — He is one of the two people getting the Osservatore romano delivered, the other person is the Priest of Sant’Anna"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16251,12 +16254,10 @@ export const CARDS: SecCard[] = [
     id: "it-2020-hl-a-5", topicId: "italian-5-0", conceptId: "freagair-cheist-seo-leanas-ngaeilge-answer",
     section: "A", questionRef: "2020 HL Section A Q5",
     questionText: "Freagair an cheist seo a leanas i nGaeilge. 5. Answer the following question in English.\nAg féachaint duit ar an sliocht ina iomláine,\nLooking at the passage as a whole, outline\ntabhair breac-chuntas ar thorthaí an taighde\nthe findings of the survey carried out by the\na rinne na scoláirí (dhá phointe).\nstudents (two points). What are the\nCad iad na réitigh a a mholtar ar an gceist\nproposed solutions to the issue in the\nsa scoil (dhá phointe)?\nschool (two points)?\n• Torthaí/Findings\n• Torthaí/Findings\n• Réitigh/Solutions\n• Réitigh/Solutions",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Every day students/ school staff use/ buy a lot of water bottles and they leave them half – empty/ forget them/ the water bottles are scattered everywhere in the classrooms at the end of the school day", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints \"Two of\" and the split (5+5+5+5), which do not agree for 20 marks and does not say what one answer is worth: judge your answer against the total. It also accepts, for less: Students waste money buying water bottles 2m; Even during winter, people buy a lot of water 2m; Two of Solutions Nonem; • (In order) to reduce the quantity of plastic in school, students can purchase/ they sell a personalised/ with the school logo/ spending less than 10E a reusable water bottle Nonem; • To Install/ There will be other drinking fountains/water stations in the school Nonem; • To Install/ There will be hot drinks vending machines with the “no paper cups” option Nonem; • To Install/ There will be hot drinks vending machines where people can use their own cups Nonem; • To Install/ There will be hot drinks vending machines with the option of eco – friendly stirrers Nonem; Decrease the spreading/ the amount of plastic in school 1m; They tried to find practical solutions 1m." },
-    { id: "r-2", kind: "criterion", verbatim: "More than half of the students/ staff buys from 1 to 3 water bottles a week", marks: null },
-    { id: "r-3", kind: "criterion", verbatim: "Students spend 50E per year to buy water bottles", marks: null },
-    { id: "r-4", kind: "criterion", verbatim: "The environmental impact determined by the students and school staff’s bad habits/choices is significant", marks: null },
+    { id: "r-1", kind: "anyN", verbatim: "Findings — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Students waste money buying water bottles” 2 marks; “Even during winter, people buy a lot of water” 2 marks. The scheme prints these answers under the heading “Findings”; the paper asks for 2 points on it.", group: {"claimMax":2,"options":["Every day students/ school staff use/ buy a lot of water bottles and they leave them half – empty/ forget them/ the water bottles are scattered everywhere in the classrooms at the end of the school day","More than half of the students/ staff buys from 1 to 3 water bottles a week","Students spend 50E per year to buy water bottles","The environmental impact determined by the students and school staff’s bad habits/choices is significant"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Solutions — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “Decrease the spreading/ the amount of plastic in school” 1 mark; “They tried to find practical solutions” 1 mark. The scheme prints these answers under the heading “Solutions”; the paper asks for 2 points on it.", group: {"claimMax":2,"options":["(In order) to reduce the quantity of plastic in school, students can purchase/ they sell a personalised/ with the school logo/ spending less than 10E a reusable water bottle","To Install/ There will be other drinking fountains/water stations in the school","To Install/ There will be hot drinks vending machines with the “no paper cups” option","To Install/ There will be hot drinks vending machines where people can use their own cups","To Install/ There will be hot drinks vending machines with the option of eco – friendly stirrers"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16272,7 +16273,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-la-1", topicId: "italian-3-1", conceptId: "icy-winds-coming-from-russia",
     section: "L", questionRef: "2020 HL Section LA Q1",
@@ -16308,7 +16309,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-la-2", topicId: "italian-3-1", conceptId: "initiative-promotes-walking-barefoot-forest",
     section: "L", questionRef: "2020 HL Section LA Q2",
@@ -16344,7 +16345,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-la-3", topicId: "italian-3-1", conceptId: "italy-will-join-campaign-promote-mediterranean",
     section: "L", questionRef: "2020 HL Section LA Q3",
@@ -16380,7 +16381,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-la-4", topicId: "italian-3-1", conceptId: "advertisement-about-summer-cultural-events",
     section: "L", questionRef: "2020 HL Section LA Q4",
@@ -16416,7 +16417,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-la-5", topicId: "italian-3-1", conceptId: "news-about-maths-performance-children",
     section: "L", questionRef: "2020 HL Section LA Q5",
@@ -16452,7 +16453,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-la-6", topicId: "italian-3-1", conceptId: "lucca-comics-festival-there-will-videogames",
     section: "L", questionRef: "2020 HL Section LA Q6",
@@ -16488,7 +16489,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-la-7", topicId: "italian-3-1", conceptId: "social-media-increasingly-used-fundraise-birthday",
     section: "L", questionRef: "2020 HL Section LA Q7",
@@ -16524,7 +16525,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-la-8", topicId: "italian-3-1", conceptId: "study-reveals-that-elderly-people-can",
     section: "L", questionRef: "2020 HL Section LA Q8",
@@ -16560,7 +16561,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb1-1", topicId: "italian-3-0", conceptId: "who-rosa-going-pick-airport-full",
     section: "L", questionRef: "2020 HL Section LB1 Q1",
@@ -16596,7 +16597,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb1-2", topicId: "italian-3-0", conceptId: "did-students-learn-while-doing-this",
     section: "L", questionRef: "2020 HL Section LB1 Q2",
@@ -16631,7 +16632,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb1-3", topicId: "italian-3-0", conceptId: "did-rosa-learn-about-ireland",
     section: "L", questionRef: "2020 HL Section LB1 Q3",
@@ -16666,7 +16667,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb1-4", topicId: "italian-3-0", conceptId: "will-students-travel-ireland-april",
     section: "L", questionRef: "2020 HL Section LB1 Q4",
@@ -16704,7 +16705,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb2-1", topicId: "italian-3-0", conceptId: "about-laguna-sud-film-festival",
     section: "L", questionRef: "2020 HL Section LB2 Q1",
@@ -16712,7 +16713,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about the Laguna Sud film festival.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Segre founded it — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Segre founded it”. Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["It is an independent film festival","It takes place every year (1m) at the end (1m) of August (1m)","It takes place before (1m) the Venice International Film Festival/ Show (2m)","It is getting (1m) more and more (1m) popular (1m)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"options":["It is an independent film festival","Segre founded it","It takes place every year (1m) at the end (1m) of August (1m)","It takes place before (1m) the Venice International Film Festival/ Show (2m)","It is getting (1m) more and more (1m) popular (1m)"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16739,7 +16740,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb2-2", topicId: "italian-3-0", conceptId: "who-did-director-interview-four",
     section: "L", questionRef: "2020 HL Section LB2 Q2",
@@ -16774,7 +16775,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb2-3", topicId: "italian-3-0", conceptId: "film-about-full",
     section: "L", questionRef: "2020 HL Section LB2 Q3",
@@ -16811,7 +16812,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb2-4", topicId: "italian-3-0", conceptId: "where-will-luca-grazia-see-film",
     section: "L", questionRef: "2020 HL Section LB2 Q4",
@@ -16848,7 +16849,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb3-1", topicId: "italian-3-0", conceptId: "amici-cultura-members",
     section: "L", questionRef: "2020 HL Section LB3 Q1",
@@ -16885,7 +16886,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb3-2", topicId: "italian-3-0", conceptId: "places-can-visit",
     section: "L", questionRef: "2020 HL Section LB3 Q2",
@@ -16920,7 +16921,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb3-3", topicId: "italian-3-0", conceptId: "volunteers-offer-service",
     section: "L", questionRef: "2020 HL Section LB3 Q3",
@@ -16928,7 +16929,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why do volunteers offer their service?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "To gain work experience", marks: 3, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "To gain work experience", marks: 3, contextNote: "The scheme also prints, for shorter answers: “Because they can speak English/ Russian/ Japanese 1m”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16955,7 +16956,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb3-4", topicId: "italian-3-0", conceptId: "tourists-tips-cover",
     section: "L", questionRef: "2020 HL Section LB3 Q4",
@@ -16963,7 +16964,7 @@ export const CARDS: SecCard[] = [
     questionText: "What do tourists’ tips cover? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["Petrol","Public transport","Lunch","Website"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “Transport 2m”; “Food 2m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["Petrol","Public transport","Lunch","Website"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16990,7 +16991,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb3-5", topicId: "italian-3-0", conceptId: "can-taste-during-food-tours",
     section: "L", questionRef: "2020 HL Section LB3 Q5",
@@ -17025,7 +17026,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb3-6", topicId: "italian-3-0", conceptId: "other-tasks-volunteers-carry-out",
     section: "L", questionRef: "2020 HL Section LB3 Q6",
@@ -17060,7 +17061,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb3-7", topicId: "italian-3-0", conceptId: "list-events-mentioned",
     section: "L", questionRef: "2020 HL Section LB3 Q7",
@@ -17095,7 +17096,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2020, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2020 Higher Level — © State Examinations Commission.",
     id: "it-2020-hl-lb3-8", topicId: "italian-3-0", conceptId: "who-will-create-new-app",
     section: "L", questionRef: "2020 HL Section LB3 Q8",
@@ -18117,7 +18118,9 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at the article as a whole, mention\nwhy some people choose to have a pen pal\n(one point). What are Giorgia’s views (two\npoints) and Serena’s views (one point) on\nhaving a pen pal?",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Why — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Because you never feel alone” 2 marks; “Because you get to meet people from all over the world” 2 marks; “Because you get to discover new traditions/cultures/ habits” 2 marks; “Because you get support and comfort when you are in difficulty” 2 marks; “Because you get the impression you visit places all over the world” 2 marks; “Because you get to improve your English” 2 marks. The scheme lists 3 further lesser answer(s) for this ask. The scheme prices this half of the ask separately, under the heading “Why”.", group: {"claimMax":1,"perOption":20,"options":["Because they are not tempted/intrigued by the convenience of an email /because they are not intrigued/tempted by the quick messaging service of WhatsApp or other chats","Because nothing compares to the feeling/the beauty of receiving/sending a letter by post.","They prefer to write letters rather than using social media because it is more authentic/honest/genuine / They prefer to write letters rather than using social media to preserve the feeling of friendship from the frenzy of modern life.","It’s an opportunity to keep a deep relationship and create new ones."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Why — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Because you never feel alone” 2 marks; “Because you get to meet people from all over the world” 2 marks; “Because you get to discover new traditions/cultures/ habits” 2 marks; “Because you get support and comfort when you are in difficulty” 2 marks; “Because you get the impression you visit places all over the world” 2 marks; “Because you get to improve your English” 2 marks; “Because some people are attracted to traditional means of communication” 2 marks. The scheme prints these answers under the heading “Why”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["Because they are not tempted/intrigued by the convenience of an email /because they are not intrigued/tempted by the quick messaging service of WhatsApp or other chats","Because nothing compares to the feeling/the beauty of receiving/sending a letter by post.","They prefer to write letters rather than using social media because it is more authentic/honest/genuine / They prefer to write letters rather than using social media to preserve the feeling of friendship from the frenzy of modern life.","It’s an opportunity to keep a deep relationship and create new ones."],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Giorgia — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Giorgia”; the paper asks for 2 points on it.", group: {"claimMax":2,"options":["Having a pen pal is like having/going to a psychologist.","Talking about yourself/your emotions/your feelings helps you to understand your life better/ helps you to look at your own life with another perspective/with different eyes /in a more analytical way.","Writing to a person away from you helps you to learn to be patient (above all nowadays in a world where we expect everything instantly)."],"perOption":5} },
+    { id: "r-3", kind: "anyN", verbatim: "Serena — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “Her pen pal was there for her when she went through difficult moments/when she decided to drop university/had problems with her boyfriend of the time” 3 marks; “Having a pen pal is very important” 2 marks. The scheme prints these answers under the heading “Serena”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["A pen pal understands you, doesn’t judge you makes you more objective/sees your problem from the outside/is less involved than you/ helps you to understand better what you are going through."],"perOption":5} },
     ],
   } as SecCard,
   {
@@ -18318,7 +18321,9 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at the passage as a whole, what\ndo we learn about the narrator’s father\n(two points), his mother (one point) and\ntheir wedding (one point)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Four points are required: — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He loved the Dolomites/hiking/the Mountains” 1 mark; “He was controlling” 1 mark; “He was short tempered” 1 mark; “It was a small wedding” 1 mark. The scheme prices this half of the ask separately, under the heading “Four points are required:”.", group: {"claimMax":4,"perOption":5,"options":["He was not inclined to meditate; he was very stubborn and arrogant.","He was (overly) competitive; he was climbing the mountains/He had his own way of hiking without sparing himself.","He didn’t allow anyone to stop/to complain about cold/hunger/tiredness but you could sing a song in the (heavy) rain/in the thick fog.","He never waited for anybody even when he was younger/because he was focused on going ahead.","When he was on top of the mountain he was taken/overcome by a feeling of disappointment and wanted to go back to Veneto/his home.","He left Veneto/Moved to Milan when he was 30, his dad died at war","He wasn’t very calm/ he is impatient but living in a city he would need to be calmer."]} },
+    { id: "r-1", kind: "anyN", verbatim: "the narrator’s father — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He loved the Dolomites/hiking/the Mountains” 1 mark; “He was controlling” 1 mark; “He was short tempered” 1 mark. The paper asks for 2 points on the narrator’s father; the scheme prints these answers for it, before its first heading. The scheme prints: “Four points are required:”.", group: {"claimMax":2,"options":["He was not inclined to meditate; he was very stubborn and arrogant.","He was (overly) competitive; he was climbing the mountains/He had his own way of hiking without sparing himself.","He didn’t allow anyone to stop/to complain about cold/hunger/tiredness but you could sing a song in the (heavy) rain/in the thick fog.","He never waited for anybody even when he was younger/because he was focused on going ahead.","When he was on top of the mountain he was taken/overcome by a feeling of disappointment and wanted to go back to Veneto/his home.","He left Veneto/Moved to Milan when he was 30, his dad died at war","He wasn’t very calm/ he is impatient but living in a city he would need to be calmer."],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Mother — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Mother”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["She had met her husband when they were young/she had captured his attention by showing him she was good at climbing.","She had later become more interested in looking at nature/ she liked sitting on the field/put her feet in a stream/recognise the name of flowers/plants rather than running.","When she was on top of a mountain she liked to look at the far away peaks/ and think about her mountains/think when she was young/think about who was with her /she was (getting) nostalgic.","She left Veneto in her 30s where she was born/she moved to Milan in October 1972 when she was 30/ pregnant.","She loved the mountains/The Dolomites and she mentioned them often when she was talking to her husband."],"perOption":5} },
+    { id: "r-3", kind: "anyN", verbatim: "Wedding — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “It was a small wedding” 1 mark. The scheme prints these answers under the heading “Wedding”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["The priest who brought his parents to the mountains/for the first time/when they were young/ married them in the Tre Cime di Lavaredo/in the mountains/where they fell in love /outside a (little) church/in autumn/ on (a Saturday) in October/ in 1972.","His mother’s family opposed to their marriage for unknown reasons to the narrator; just four friends attended the ceremony."],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18454,7 +18459,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage and the novel as a\nwhole, what do we learn about Leo’s father?\nGive four points.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The candidate must refer both to the passage and to the novel as a whole — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “The candidate must refer both to the passage and to the novel as a whole”. The scheme lists 3 further accepted answer(s) than this card shows, in the order it prints them.", group: {"claimMax":1,"perOption":20,"options":["Like Leo, he skipped school and went to the see to try a car instead","If he had gone to school that day, he wouldn’t be the man he is today/ he would be a different person","He got the answers he was looking for when he didn’t go to school","The day he didn’t go to school, for the first time he looked for what he wanted on his own (without being told what to look for)","The day he didn’t go to school, for the first time he didn’t mind being punished/he was ready to accept the punishment/accept the consequences of his actions.","He understands perfectly how Leo is feeling.","He shocked Leo when he told him how he met his mother.","He doesn’t want to know why Leo didn’t go to school that day but he says to him that he trusts him.","He is now saying the words that Leo needs to hear, he has never talked to him like that","He knows now that Leo really cares for something and he is willing to repeat his school year","He could teach Leo one or two tricks to prevent silly mistakes/being caught","For the first time they are having a man to man talk/they have a better relationship now","He grants Leo permission to go and visit Beatrice while grounded/He is very understanding to grant Leo permission to visit Beatrice","He will talk and convince his mom about Leo’s only exception to go and visit Beatrice.","He teaches Leo that he has to face up to his responsibilities and accept being punished for missing school/and accept the consequences of his actions.","He is always tired/late coming home from work, doesn’t listen to him/doesn’t take him seriously (3m)+ example (2m)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the headings “Points from the passage”, “Points from the novel”; the paper does not say how many points it wants under each. The scheme prints: “The candidate must refer both to the passage and to the novel as a whole”.", group: {"claimMax":4,"options":["Points from the passage — Like Leo, he skipped school and went to the see to try a car instead","Points from the passage — If he had gone to school that day, he wouldn’t be the man he is today/ he would be a different person","Points from the passage — He got the answers he was looking for when he didn’t go to school","Points from the passage — The day he didn’t go to school, for the first time he looked for what he wanted on his own (without being told what to look for)","Points from the passage — The day he didn’t go to school, for the first time he didn’t mind being punished/he was ready to accept the punishment/accept the consequences of his actions.","Points from the passage — He understands perfectly how Leo is feeling.","Points from the passage — He shocked Leo when he told him how he met his mother.","Points from the passage — He doesn’t want to know why Leo didn’t go to school that day but he says to him that he trusts him.","Points from the passage — He is now saying the words that Leo needs to hear, he has never talked to him like that","Points from the passage — He knows now that Leo really cares for something and he is willing to repeat his school year","Points from the passage — He could teach Leo one or two tricks to prevent silly mistakes/being caught","Points from the passage — For the first time they are having a man to man talk/they have a better relationship now","Points from the passage — He grants Leo permission to go and visit Beatrice while grounded/He is very understanding to grant Leo permission to visit Beatrice","Points from the passage — He will talk and convince his mom about Leo’s only exception to go and visit Beatrice.","Points from the passage — He teaches Leo that he has to face up to his responsibilities and accept being punished for missing school/and accept the consequences of his actions.","Points from the novel — He is always tired/late coming home from work, doesn’t listen to him/doesn’t take him seriously (3m)+ example (2m)","Points from the novel — They don’t get on very well (3m)+ example (2m)","Points from the novel — Proud of him/He is very supportive of Leo’s wishes (3m)+ example (2m)","Points from the novel — His father opens up to Leo (3m)+ example (2m)"],"perOption":5} },
     ],
   } as SecCard,
   {
@@ -18493,7 +18498,7 @@ export const CARDS: SecCard[] = [
     questionText: "Trovate una frase che ci fa capire che il Prof. Laurana inizia a pensare che Manno\nnascondesse qualcosa alla moglie.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Che gli pareva dicesse della reticenza del farmacista a rivelare il segreto anche alla moglie, e quando già era sulla partenza 4m gli pareva dicesse della reticenza del farmacista” 3 marks.", group: {"claimMax":1,"perOption":5,"options":["Che gli pareva dicesse della reticenza del farmacista a rivelare il segreto anche alla moglie","No, non mi aveva detto niente"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Che gli pareva dicesse della reticenza del farmacista a rivelare il segreto anche alla moglie, e quando già era sulla partenza” 4 marks; “gli pareva dicesse della reticenza del farmacista” 3 marks.", group: {"claimMax":1,"options":["Che gli pareva dicesse della reticenza del farmacista a rivelare il segreto anche alla moglie","No, non mi aveva detto niente"],"perOption":5} },
     ],
   } as SecCard,
   {
@@ -18571,13 +18576,13 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage and the novel as a\nwhole, what do we learn about Manno’s\nwidow? Give four points.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Candidate must refer both to the passage and to the text as a whole — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She does not think much of the Rosellos” 2 marks; “Minor character that is symbolic of the hypocrisy of Sicilian society because she accepts situations that she does not believe in” 2 marks; “She is symbolic of the hypocrisy of Sicilian society” 1 mark. The scheme prices this half of the ask separately, under the heading “Candidate must refer both to the passage and to the text as a whole”.", group: {"claimMax":1,"perOption":20,"options":["She thought that maybe her husband was going hunting in the Cannatello area on the day he and Dr Roscio had been killed.","She wasn’t aware that her husband had received anonymous letter","She feels very embarrassed by the allegations against her husband/ she is mortified because of the insinuations/the gossip about her husband,","Her husband had never given her any reason to believe that he was unfaithful.","She is convinced that her maid was forced to say that Mr & Mrs Manno were arguing over the young girl (who supposedly was having an affair with her husband)","She resents that the Roscios, and the Rosellos and even the Arciprete/people are speculating on the killing of her husband and Roscio/ she resents that they are saying that Roscio died because of her husband immoral behaviour/ that the Rosellos are trying to steer the narrative their way.","She hints at the fact that she, like all the town people, knows what goes on around her.","She implies that she knows who is responsible for the double murder and why.","She suddenly stops talking as she doesn’t want to reveal other facts about the killing/the culprit.","She feels sorry for Roscio and his unlucky fate to be within the Rosello’s family","She expresses her honest opinion of Prof. Laurana who won’t be able to see what she and the rest of the town can see."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She does not think much of the Rosellos” 2 marks; “Minor character that is symbolic of the hypocrisy of Sicilian society because she accepts situations that she does not believe in” 2 marks; “She is symbolic of the hypocrisy of Sicilian society” 1 mark. The scheme prints these answers under the headings “From the passage”, “From the novel”; the paper does not say how many points it wants under each. The scheme prints: “Candidate must refer both to the passage and to the text as a whole”.", group: {"claimMax":4,"options":["From the passage — She thought that maybe her husband was going hunting in the Cannatello area on the day he and Dr Roscio had been killed.","From the passage — She wasn’t aware that her husband had received anonymous letter","From the passage — She feels very embarrassed by the allegations against her husband/ she is mortified because of the insinuations/the gossip about her husband,","From the passage — Her husband had never given her any reason to believe that he was unfaithful.","From the passage — She is convinced that her maid was forced to say that Mr & Mrs Manno were arguing over the young girl (who supposedly was having an affair with her husband)","From the passage — She resents that the Roscios, and the Rosellos and even the Arciprete/people are speculating on the killing of her husband and Roscio/ she resents that they are saying that Roscio died because of her husband immoral behaviour/ that the Rosellos are trying to steer the narrative their way.","From the passage — She hints at the fact that she, like all the town people, knows what goes on around her.","From the passage — She implies that she knows who is responsible for the double murder and why.","From the passage — She suddenly stops talking as she doesn’t want to reveal other facts about the killing/the culprit.","From the passage — She feels sorry for Roscio and his unlucky fate to be within the Rosello’s family","From the passage — She expresses her honest opinion of Prof. Laurana who won’t be able to see what she and the rest of the town can see.","From the novel — She belongs to a very prestigious family; (3m) she was the descendant of the very famous Mercuzio Spanò (2m), Doctor of Law/Undersecretary of the postal service.","From the novel — She is tormented at night by the suspicions that her husband might have been unfaithful to her","From the novel — Doubts her husband about his loyalty/integrity she was talking to all the pictures portraying her beloved husband.","From the novel — Her family never forgave her for marrying Manno, they did everything they could to stop her","From the novel — She went to school with Luisa Roscio and she hints at the fact that Luisa Roscio was not a “nice” person/ petty schoolgirl malice."],"perOption":5} },
     ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-la-1", topicId: "italian-3-1", conceptId: "often-will-flights-between-cork-naples",
     section: "L", questionRef: "2019 HL Section LA Q1",
@@ -18613,7 +18618,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-la-2", topicId: "italian-3-1", conceptId: "hostel-turin-won-award-best-price",
     section: "L", questionRef: "2019 HL Section LA Q2",
@@ -18649,7 +18654,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-la-3", topicId: "italian-3-1", conceptId: "advertisement-about-new-cycling-route",
     section: "L", questionRef: "2019 HL Section LA Q3",
@@ -18685,7 +18690,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-la-4", topicId: "italian-3-1", conceptId: "will-opening-shortly-shopping-centre",
     section: "L", questionRef: "2019 HL Section LA Q4",
@@ -18721,7 +18726,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-la-5", topicId: "italian-3-1", conceptId: "this-advertisement-invites-set-alert-ticket",
     section: "L", questionRef: "2019 HL Section LA Q5",
@@ -18757,7 +18762,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-la-6", topicId: "italian-3-1", conceptId: "new-app-allows-store-all-shops",
     section: "L", questionRef: "2019 HL Section LA Q6",
@@ -18793,7 +18798,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-la-7", topicId: "italian-3-1", conceptId: "will-weather-like-north-will-stormy",
     section: "L", questionRef: "2019 HL Section LA Q7",
@@ -18829,7 +18834,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-la-8", topicId: "italian-3-1", conceptId: "initiative-promoting-eating-more-fruit-vegetables",
     section: "L", questionRef: "2019 HL Section LA Q8",
@@ -18865,7 +18870,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb1-1", topicId: "italian-3-0", conceptId: "about-daniele-students",
     section: "L", questionRef: "2019 HL Section LB1 Q1",
@@ -18873,7 +18878,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give three details about Daniele’s students.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "They are young — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “They are young”. Answer in English or Irish.", group: {"claimMax":3,"perOption":2,"options":["They come from Africa/ India/They are foreign students","They are learning Italian","They are (really) determined (to learn the language)"],"perOptionSteps":[2,1,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":3,"options":["They are young","They come from Africa/ India/They are foreign students","They are learning Italian","They are (really) determined (to learn the language)"],"perOption":2,"perOptionSteps":[2,1,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18900,7 +18905,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb1-2", topicId: "italian-3-0", conceptId: "did-daniele-first-month-his-volunteer",
     section: "L", questionRef: "2019 HL Section LB1 Q2",
@@ -18938,7 +18943,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb1-3", topicId: "italian-3-0", conceptId: "does-daniele-say-about-language-lessons",
     section: "L", questionRef: "2019 HL Section LB1 Q3",
@@ -18946,7 +18951,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Daniele say about the language lessons? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["The groups are small","They do a lot of conversation","They use images to teach words","They are different from classes at school/not like school lessons"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “They do group work/they are put in groups 1m”; “The classes are fun 1m”; “There is a nice atmosphere1m”; “They always have a break/they have break time for tea, coffee and dessert 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["The groups are small","They do a lot of conversation","They use images to teach words","They are different from classes at school/not like school lessons"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18973,7 +18978,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb1-4", topicId: "italian-3-0", conceptId: "does-daniele-describe-his-teacher-full",
     section: "L", questionRef: "2019 HL Section LB1 Q4",
@@ -19008,7 +19013,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb2-1", topicId: "italian-3-0", conceptId: "does-sara-plan-after-her-leaving",
     section: "L", questionRef: "2019 HL Section LB2 Q1",
@@ -19016,7 +19021,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Sara plan to do after her Leaving Certificate exams?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["She is taking (2m) a year off/gap year (2m) (to understand what she wants to do in life)","She is going/she wants/she is starting (2m) to work (2m)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “A pause before University/ a break from studying 1m”; “She is not going to University (straight away) 1m”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["She is taking (2m) a year off/gap year (2m) (to understand what she wants to do in life)","She is going/she wants/she is starting (2m) to work (2m)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19043,7 +19048,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb2-2", topicId: "italian-3-0", conceptId: "where-campsite-located",
     section: "L", questionRef: "2019 HL Section LB2 Q2",
@@ -19078,7 +19083,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb2-3", topicId: "italian-3-0", conceptId: "advantage-seasonal-work-according-sara",
     section: "L", questionRef: "2019 HL Section LB2 Q3",
@@ -19086,7 +19091,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the advantage of seasonal work, according to Sara?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "She will have a month", marks: 1, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "She will have a month", marks: 1, contextNote: "The scheme also prints, for shorter answers: “She doesn’t have to work for a month and a half 2m”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "a half", marks: 1 },
     { id: "r-1-3", kind: "point", verbatim: "of holidays/off (without interruption)", marks: 2 },
     ],
@@ -19115,7 +19120,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb2-4", topicId: "italian-3-0", conceptId: "does-sara-prefer-travelling-train-full",
     section: "L", questionRef: "2019 HL Section LB2 Q4",
@@ -19150,7 +19155,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb3-1", topicId: "italian-3-0", conceptId: "job-did-gianfranco-train",
     section: "L", questionRef: "2019 HL Section LB3 Q1",
@@ -19158,7 +19163,7 @@ export const CARDS: SecCard[] = [
     questionText: "What job did Gianfranco train for?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hotel management", marks: 3, contextNote: "The scheme prices this half of the ask separately, under the heading “One of Chef/cook”. Answer in English or Irish." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["Chef/cook","Hotel management"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19185,7 +19190,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb3-2", topicId: "italian-3-0", conceptId: "where-did-gianfranco-work-waiter",
     section: "L", questionRef: "2019 HL Section LB3 Q2",
@@ -19220,7 +19225,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb3-3", topicId: "italian-3-0", conceptId: "nationalities-particular-visit-lakes-areas",
     section: "L", questionRef: "2019 HL Section LB3 Q3",
@@ -19228,7 +19233,7 @@ export const CARDS: SecCard[] = [
     questionText: "What nationalities, in particular, visit the lakes areas?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "German — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “German”. Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Swiss","Dutch","English"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints “(2+1+1+1)”: 2, 1, 1, 1 marks for the first, second and further answers given, in any order. Answer in English or Irish.", group: {"claimMax":4,"options":["German","Swiss","Dutch","English"],"perOption":2,"perOptionSteps":[2,1,1,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19255,7 +19260,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb3-4", topicId: "italian-3-0", conceptId: "with-whom-did-gianfranco-spend-many",
     section: "L", questionRef: "2019 HL Section LB3 Q4",
@@ -19291,7 +19296,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb3-5", topicId: "italian-3-0", conceptId: "challenges-gianfranco-job",
     section: "L", questionRef: "2019 HL Section LB3 Q5",
@@ -19326,7 +19331,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb3-6", topicId: "italian-3-0", conceptId: "gianfranco-profession-growing-popularity",
     section: "L", questionRef: "2019 HL Section LB3 Q6",
@@ -19334,7 +19339,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is Gianfranco’s profession growing in popularity?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":2,"options":["Cooking/being a chef is trendy/in fashion","Thanks to programmes like Masterchef/ shows of his profession like Masterchef"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “Because of Masterchef/because of TV shows 1m”. Answer in English or Irish.", group: {"claimMax":1,"perOption":2,"options":["Cooking/being a chef is trendy/in fashion","Thanks to programmes like Masterchef/ shows of his profession like Masterchef"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19361,7 +19366,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb3-7", topicId: "italian-3-0", conceptId: "gianfranco-plan-beginning-new-year",
     section: "L", questionRef: "2019 HL Section LB3 Q7",
@@ -19396,7 +19401,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "higher",
-    paperFileid: "LC013ALP000BV",
+    paperFileid: "LC013ALPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Higher Level — © State Examinations Commission.",
     id: "it-2019-hl-lb3-8", topicId: "italian-3-0", conceptId: "gianfranco-moving-langhe-region",
     section: "L", questionRef: "2019 HL Section LB3 Q8",
@@ -20310,7 +20315,7 @@ export const CARDS: SecCard[] = [
     questionText: "In cosa consiste l’iniziativa di Bari?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "La gente si allena/fa sport /gli sportivi professionisti o amatoriali/gli amanti dello sport fanno allenamento negli spazi pubblici/ nei parchi/ nelle spiagge/ nelle strade/ all’aperto che sono stati/e trasformati/e in palestre a cielo aperto/che vengono usati come palestre a cielo aperto", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Gli sportivi autogestiscono gli spazi pubblici tenendoli puliti” 3 marks; “Gli sportivi usano i social media per accordarsi sugli allenamenti” 3 marks; “L’iniziativa promuove lo sport” 3 marks; “A Bari gli sportivi per passione o per professione occupano luoghi pubblici salvandoli dal degrado e dal vandalismo” 3 marks; “Gli sportivi per passione o per professione che occupano questi luoghi salvandoli dal degrado e dal vandalismo” 2 marks; “Segnalano subito al Comune ma si attivano in autonomia sistemando ciò che si è rotto” 1 mark. The scheme lists 1 further lesser answer(s) for this ask.", permittedMarks: [0,1,2,3,5] },
+    { id: "r-1", kind: "criterion", verbatim: "La gente si allena/fa sport /gli sportivi professionisti o amatoriali/gli amanti dello sport fanno allenamento negli spazi pubblici/ nei parchi/ nelle spiagge/ nelle strade/ all’aperto che sono stati/e trasformati/e in palestre a cielo aperto/che vengono usati come palestre a cielo aperto", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Gli sportivi autogestiscono gli spazi pubblici tenendoli puliti” 3 marks; “Gli sportivi usano i social media per accordarsi sugli allenamenti” 3 marks; “L’iniziativa promuove lo sport” 3 marks; “A Bari gli sportivi per passione o per professione occupano luoghi pubblici salvandoli dal degrado e dal vandalismo” 3 marks; “Gli sportivi per passione o per professione che occupano questi luoghi salvandoli dal degrado e dal vandalismo” 2 marks; “Segnalano subito al Comune ma si attivano in autonomia sistemando ciò che si è rotto” 1 mark; “Il progetto consiste in organizzare eventi sportivi” 1 mark.", permittedMarks: [0,1,2,3,5] },
     ],
   } as SecCard,
   {
@@ -20467,7 +20472,7 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa dice di suo padre il narratore?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "fantastico/ Era il campione mondiale del racconto fantastico", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Non era un narratore qualsiasi” 2 marks. The scheme prices this half of the ask separately, under the heading “Era bravissimo a raccontare/inventare storie/era un narratore”.", permittedMarks: [0,2,5] },
+    { id: "r-1", kind: "criterion", verbatim: "Era bravissimo a raccontare/inventare storie/era un narratore fantastico/ Era il campione mondiale del racconto fantastico", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Non era un narratore qualsiasi” 2 marks.", permittedMarks: [0,2,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -20606,7 +20611,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at the passage as a whole, why do\nwe get the impression that Susanna is\nliving a life that is different from the one\nshe wanted? Give four points.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Four points are required: — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She was a snob” 2 marks; “She had studied /went to a convent school/boarding” 2 marks; “And yet she was smiling, she wasn’t sad” 2 marks. The scheme prices this half of the ask separately, under the heading “Four points are required:”.", group: {"claimMax":4,"perOption":5,"options":["Her personality was a result/ a mixture of her (strict) upbringing, old fashioned family values and the attraction of a different life.","She wants an unconventional life/ she longed for a different life with no pre- rearranged rules.","She wants a life that is not pre-set and wants to live as if there is no future.","She loves travelling but in reality she doesn’t travel that much.","She had a degree in medicine, but she never worked as a doctor.","She was unable/ unwilling to break the (delicate) balance/the pre-set ideas enforced by her (patriarchal) family/her role as a mother.","She never wanted to upset the balance of family life by following what she really wanted to do.","She was unable/ unwilling to break the (delicate) balance which existed between her two families, (her former and her current one).","She was a good cook but she did not like it to be mentioned outside the house/ she didn’t want to give the picture of her as a good housewife/ of an ordinary person.","The narrator (has always) maintained that she would have wanted to do something totally different with her life, maybe be a writer or an actress.","She was absorbed in/ she spent hours upon hours reading /in the shade of the (carob) tree /to her this isolation was her real holiday."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She was a snob” 2 marks; “She had studied /went to a convent school/boarding” 2 marks; “And yet she was smiling, she wasn’t sad” 2 marks. The scheme prints: “Four points are required:”.", group: {"claimMax":4,"options":["Her personality was a result/ a mixture of her (strict) upbringing, old fashioned family values and the attraction of a different life.","She wants an unconventional life/ she longed for a different life with no pre- rearranged rules.","She wants a life that is not pre-set and wants to live as if there is no future.","She loves travelling but in reality she doesn’t travel that much.","She had a degree in medicine, but she never worked as a doctor.","She was unable/ unwilling to break the (delicate) balance/the pre-set ideas enforced by her (patriarchal) family/her role as a mother.","She never wanted to upset the balance of family life by following what she really wanted to do.","She was unable/ unwilling to break the (delicate) balance which existed between her two families, (her former and her current one).","She was a good cook but she did not like it to be mentioned outside the house/ she didn’t want to give the picture of her as a good housewife/ of an ordinary person.","The narrator (has always) maintained that she would have wanted to do something totally different with her life, maybe be a writer or an actress.","She was absorbed in/ she spent hours upon hours reading /in the shade of the (carob) tree /to her this isolation was her real holiday."],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -20734,7 +20739,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at this passage and the novel as a\nwhole what do we learn about Silvia?\nGive four points.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The candidate must refer both to the passage and to the novel as a whole — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “The candidate must refer both to the passage and to the novel as a whole”.", group: {"claimMax":1,"perOption":20,"options":["Silvia is with Leo on his scooter/batcinquantino as he is giving her a lift home she keeps asking him to slow down.","Silvia has a dream she wants to become an artist, but her parents don’t encourage her","She is very good at painting it’s her favourite hobby, she duplicates paintings.","She gave Leo a painting, (it’s a portrait of a young lady with a white parasol); it’s a very special painting for Leo as she managed to trick/fool the colour white in it.","Her parents are not very supportive of her dream as they say that it’s just a hobby / it’s very difficult to be a successful artist / just very few people manage to be successful/ you can be broke if you don’t do well for yourself.","When Silvia talks about her passion for painting her eyes have a special light.","When Silvia will see that special light (in Leo’s eyes) she will let him know that he has found his dream.","She is Leo’s best friend; they spend hours talking on the phone; (like all real friends),","She helps him to study/catch up with homework when he was in hospital.","She helps and supports him when he is panicking / he’s down she makes Leo’s fear of white go away.","She has always been secretly in love with him, she gives Leo Beatrice’s phone number but she gave him the wrong number /she is jealous of her.","Silvia is the solution to all Leo’s love’s problems; in spite of the fact that she is completely in love with him; she helps him to write his love letter to Beatrice, as he can’t write it himself as he broke his arm in the accident.","Silvia manages to find the address of the new hospital where Beatrice was admitted and gives it to him.","Silvia is the life-line that allows Leo not to be adrift and the sailing boat that allows him to go through the strains of the sea."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the headings “Points from the passage”, “Points from the novel”; the paper does not say how many points it wants under each. The scheme prints: “The candidate must refer both to the passage and to the novel as a whole”.", group: {"claimMax":4,"options":["Points from the passage — Silvia is with Leo on his scooter/batcinquantino as he is giving her a lift home she keeps asking him to slow down.","Points from the passage — Silvia has a dream she wants to become an artist, but her parents don’t encourage her","Points from the passage — She is very good at painting it’s her favourite hobby, she duplicates paintings.","Points from the passage — She gave Leo a painting, (it’s a portrait of a young lady with a white parasol); it’s a very special painting for Leo as she managed to trick/fool the colour white in it.","Points from the passage — Her parents are not very supportive of her dream as they say that it’s just a hobby / it’s very difficult to be a successful artist / just very few people manage to be successful/ you can be broke if you don’t do well for yourself.","Points from the passage — When Silvia talks about her passion for painting her eyes have a special light.","Points from the passage — When Silvia will see that special light (in Leo’s eyes) she will let him know that he has found his dream.","Points from the novel — She is Leo’s best friend; they spend hours talking on the phone; (like all real friends), Silvia is always there to watch over him.","Points from the novel — She helps him to study/catch up with homework when he was in hospital.","Points from the novel — She helps and supports him when he is panicking / he’s down she makes Leo’s fear of white go away.","Points from the novel — She has always been secretly in love with him, she gives Leo Beatrice’s phone number but she gave him the wrong number /she is jealous of her.","Points from the novel — Silvia is the solution to all Leo’s love’s problems; in spite of the fact that she is completely in love with him; she helps him to write his love letter to Beatrice, as he can’t write it himself as he broke his arm in the accident.","Points from the novel — Silvia manages to find the address of the new hospital where Beatrice was admitted and gives it to him.","Points from the novel — Silvia is the life-line that allows Leo not to be adrift and the sailing boat that allows him to go through the strains of the sea."],"perOption":5} },
     ],
   } as SecCard,
   {
@@ -20857,7 +20862,7 @@ export const CARDS: SecCard[] = [
     questionText: "Freagair an cheist seo a leanas i nGaeilge.\n5 Answer the following question in English.\nDe réir an tsleachta seo, cad é an míniú\nAccording to this passage, what is the\na thugtar ar mharú Manno agus Roscio?\nexplanation for Manno and Roscio’s killing?\nÓn eolas atá agat ar an úrscéal ina iomláine,\nDoes this explanation hold true from your\nan bhfuil bun fírinne leis an míniú seo?\nknowledge of the novel as a whole?\nManno:\n•\n•\nRoscio:\n•\n•",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Candidate must refer both to the passage and to the text as a whole From the passage — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “Candidate must refer both to the passage and to the text as a whole From the passage”.", group: {"claimMax":4,"perOption":5,"options":["- Manno: He must be guilty of something otherwise he wouldn’t have been killed/ Manno must have been killed in retribution for some offense he incurred in the past. He was the one who was at fault and the target of the assassination which we know from the anonymous threatening letter he received.","- Roscio: He is an innocent victim who was at the wrong place at the wrong time.","Manno: We discover that he was the innocent victim who was at the wrong place at the wrong time.","Roscio: He was the real target of the killer and he was eliminated because he was a threat to Rosello."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the headings “From the passage”, “From the novel”; the paper does not say how many points it wants under each. The scheme prints: “Candidate must refer both to the passage and to the text as a whole”.", group: {"claimMax":4,"options":["From the passage — Manno: He must be guilty of something otherwise he wouldn’t have been killed/ Manno must have been killed in retribution for some offense he incurred in the past. He was the one who was at fault and the target of the assassination which we know from the anonymous threatening letter he received.","From the passage — Roscio: He is an innocent victim who was at the wrong place at the wrong time.","From the novel — Manno: We discover that he was the innocent victim who was at the wrong place at the wrong time.","From the novel — Roscio: He was the real target of the killer and he was eliminated because he was a threat to Rosello."],"perOption":5} },
     ],
   } as SecCard,
   {
@@ -20868,25 +20873,17 @@ export const CARDS: SecCard[] = [
     id: "it-2018-hl-a-5", topicId: "italian-5-0", conceptId: "answer-following-question-english-looking-article",
     section: "A", questionRef: "2018 HL Section A Q5",
     questionText: "Answer the following question in English.\nLooking at the article as a whole, mention\ntwo benefits of this initiative and how\nsportspeople (one point) and families (one\npoint) can contribute to improving it.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "This initiative saves public spaces from deterioration/negligence/damages(that could be caused by acts of)vandalism/perpetrated by those who damage public property", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints \"Any two of\" and the split (5+5+5+5), which do not agree for 20 marks and does not say what one answer is worth: judge your answer against the total. It also accepts, for less: It brings together people of any age / it brings young people together 3m; This initiative brings people from different areas/nationalities together 3m; It’s a way of socialising for young people who would be involved in bad and illegal activities instead 3m; It is a lot nicer to train outside than to use an indoor track 3m; People can arrange to exercise together through the web/ Facebook 3m; This initiative makes the parks/the public areas more welcoming /looked after 2m; Sportspeople Nonem; • They keep (are responsible for) the areas clean and tidy/ they self-manage the areas if something is broken they let the City Hall know about it / they report to the City Hall they try to fix what is broken/ they deal with the small maintenance. Nonem; They are really getting behind the initiative by being active on the Facebook group 3m; They are using this outdoor gym saving them from deterioration and vandalism 2m; Spreading the word about the initiative/inviting people 1m; Families Nonem; • They can point out/ inform the authorities about an open space /park/ area in their neighbourhood suitable for a playground /outdoor gym. Nonem; • They can point out/ inform the authorities/ city hall of a sport that could be implemented /played in an open space /park/ area in their neighbourhood. Nonem." },
-    { id: "r-2", kind: "criterion", verbatim: "This initiative saves public spaces from deterioration/negligence/damages/vandalism as they are used for sport", marks: null },
-    { id: "r-3", kind: "criterion", verbatim: "This initiative improves the urban quality of life using public areas/open spaces that would otherwise be left to decline/would deteriorate", marks: null },
-    { id: "r-4", kind: "criterion", verbatim: "Gives people the chance to train/exercise safely using public spaces/parks/open spaces", marks: null },
-    { id: "r-5", kind: "criterion", verbatim: "Encourages people/promotes to adapt a healthier life style, to exercise/play sport/do any physical activity, to help your wellbeing by diminishing the risk of various disease/of getting sick", marks: null },
-    { id: "r-6", kind: "criterion", verbatim: "People have the chance to keep fit at zero cost", marks: null },
-    { id: "r-7", kind: "criterion", verbatim: "People can exercise in the open air all year round/ in the fine weather all the time", marks: null },
-    { id: "r-8", kind: "criterion", verbatim: "People can socialise in a clean /nice area while exercising/playing sport/training", marks: null },
-    { id: "r-9", kind: "criterion", verbatim: "People exercise/ engage in physical activity in public spaces that are safe/well looked after", marks: null },
-    { id: "r-10", kind: "criterion", verbatim: "It values all areas of the city transforming them into good meeting points; especially the suburbs where the quality of life can be poor", marks: null },
-    { id: "r-11", kind: "criterion", verbatim: "They are planning new playgrounds/sportsground in all areas and neighbourhoods/in the suburbs where the quality of life can be poor", marks: null },
+    { id: "r-1", kind: "anyN", verbatim: "Benefit — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It brings together people of any age / it brings young people together” 3 marks; “This initiative brings people from different areas/nationalities together” 3 marks; “It’s a way of socialising for young people who would be involved in bad and illegal activities instead” 3 marks; “It is a lot nicer to train outside than to use an indoor track” 3 marks; “People can arrange to exercise together through the web/ Facebook” 3 marks; “This initiative makes the parks/the public areas more welcoming /looked after” 2 marks. The scheme prints these answers under the heading “Benefit”; the paper asks for 2 points on it.", group: {"claimMax":2,"options":["This initiative saves public spaces from deterioration/negligence/damages(that could be caused by acts of)vandalism/perpetrated by those who damage public property","This initiative saves public spaces from deterioration/negligence/damages/vandalism as they are used for sport","This initiative improves the urban quality of life using public areas/open spaces that would otherwise be left to decline/would deteriorate","Gives people the chance to train/exercise safely using public spaces/parks/open spaces","Encourages people/promotes to adapt a healthier life style, to exercise/play sport/do any physical activity, to help your wellbeing by diminishing the risk of various disease/of getting sick","People have the chance to keep fit at zero cost","People can exercise in the open air all year round/ in the fine weather all the time","People can socialise in a clean /nice area while exercising/playing sport/training","People exercise/ engage in physical activity in public spaces that are safe/well looked after","It values all areas of the city transforming them into good meeting points; especially the suburbs where the quality of life can be poor","They are planning new playgrounds/sportsground in all areas and neighbourhoods/in the suburbs where the quality of life can be poor"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Sportspeople — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “They are really getting behind the initiative by being active on the Facebook group” 3 marks; “They are using this outdoor gym saving them from deterioration and vandalism” 2 marks; “Spreading the word about the initiative/inviting people” 1 mark. The scheme prints these answers under the heading “Sportspeople”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["They keep (are responsible for) the areas clean and tidy/ they self-manage the areas if something is broken they let the City Hall know about it / they report to the City Hall they try to fix what is broken/ they deal with the small maintenance."],"perOption":5} },
+    { id: "r-3", kind: "anyN", verbatim: "Families — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Families”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["They can point out/ inform the authorities about an open space /park/ area in their neighbourhood suitable for a playground /outdoor gym.","They can point out/ inform the authorities/ city hall of a sport that could be implemented /played in an open space /park/ area in their neighbourhood."],"perOption":5} },
     ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-la-1", topicId: "italian-3-1", conceptId: "will-cloudy-north",
     section: "L", questionRef: "2018 HL Section LA Q1",
@@ -20922,7 +20919,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-la-2", topicId: "italian-3-1", conceptId: "initiative-promotes-helping-people-difficulty",
     section: "L", questionRef: "2018 HL Section LA Q2",
@@ -20958,7 +20955,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-la-3", topicId: "italian-3-1", conceptId: "advertisement-about-books-teenagers",
     section: "L", questionRef: "2018 HL Section LA Q3",
@@ -20994,7 +20991,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-la-4", topicId: "italian-3-1", conceptId: "news-item-about-earthquake",
     section: "L", questionRef: "2018 HL Section LA Q4",
@@ -21030,7 +21027,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-la-5", topicId: "italian-3-1", conceptId: "villeggiando-promotes-use-historical-buildings-cultural",
     section: "L", questionRef: "2018 HL Section LA Q5",
@@ -21066,7 +21063,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-la-6", topicId: "italian-3-1", conceptId: "shuttle-bus-will-run-between-city",
     section: "L", questionRef: "2018 HL Section LA Q6",
@@ -21102,7 +21099,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-la-7", topicId: "italian-3-1", conceptId: "volunteers-will-involved-clean-operation-public",
     section: "L", questionRef: "2018 HL Section LA Q7",
@@ -21138,7 +21135,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-la-8", topicId: "italian-3-1", conceptId: "following-will-take-place-afternoon-street",
     section: "L", questionRef: "2018 HL Section LA Q8",
@@ -21174,7 +21171,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb1-1", topicId: "italian-3-0", conceptId: "will-chiara-only-able-holidays-five",
     section: "L", questionRef: "2018 HL Section LB1 Q1",
@@ -21209,7 +21206,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb1-2", topicId: "italian-3-0", conceptId: "piero-spending-his-holidays-volunteering-farm",
     section: "L", questionRef: "2018 HL Section LB1 Q2",
@@ -21217,7 +21214,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is Piero spending his holidays volunteering on a farm? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["He is tired (1m) of city life /of traffic/ noise/ no contact with (2+2) nature (1m)","He wants to stay/to be (1m) in a quiet place/tranquil/tranquillity (1m)","He wants to be physically active (1m) in the open air (1m)","He wants to learn (1m) more about animals/produce (1m)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “Mountain and seaside are packed (in the summer) 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["He is tired (1m) of city life /of traffic/ noise/ no contact with (2+2) nature (1m)","He wants to stay/to be (1m) in a quiet place/tranquil/tranquillity (1m)","He wants to be physically active (1m) in the open air (1m)","He wants to learn (1m) more about animals/produce (1m)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21244,7 +21241,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb1-3", topicId: "italian-3-0", conceptId: "challenges-does-piero-about-this-experience",
     section: "L", questionRef: "2018 HL Section LB1 Q3",
@@ -21279,7 +21276,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb1-4", topicId: "italian-3-0", conceptId: "does-piero-say-about-public-transport",
     section: "L", questionRef: "2018 HL Section LB1 Q4",
@@ -21314,7 +21311,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb2-1", topicId: "italian-3-0", conceptId: "does-laura-saturday-mornings",
     section: "L", questionRef: "2018 HL Section LB2 Q1",
@@ -21349,7 +21346,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb2-2", topicId: "italian-3-0", conceptId: "does-laura-prefer-study-english-spanish",
     section: "L", questionRef: "2018 HL Section LB2 Q2",
@@ -21357,7 +21354,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does Laura prefer to study English and Spanish? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Because the grammar (1m) is easier (1m)","She is more motivated (1m) to learn them (1m)","Because languages are essential (1m) to get a job (1m)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “Because they are easier (to learn) (2m)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Because the grammar (1m) is easier (1m)","She is more motivated (1m) to learn them (1m)","Because languages are essential (1m) to get a job (1m)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21384,7 +21381,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb2-3", topicId: "italian-3-0", conceptId: "tasks-that-laura-expected-while-work",
     section: "L", questionRef: "2018 HL Section LB2 Q3",
@@ -21392,7 +21389,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name two tasks that Laura is expected to do while on work experience.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Gives information (1m) on places of interest (1m) (2+2)","She books (1m) city guided tours (1m)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “400 hours work experience 1m”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Gives information (1m) on places of interest (1m) (2+2)","She books (1m) city guided tours (1m)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21419,7 +21416,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb2-4", topicId: "italian-3-0", conceptId: "does-laura-suggest-doing-saturday-afternoon",
     section: "L", questionRef: "2018 HL Section LB2 Q4",
@@ -21454,7 +21451,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb3-1", topicId: "italian-3-0", conceptId: "about-sergio",
     section: "L", questionRef: "2018 HL Section LB3 Q1",
@@ -21489,7 +21486,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb3-2", topicId: "italian-3-0", conceptId: "challenges-did-sergio-encounter-when-first",
     section: "L", questionRef: "2018 HL Section LB3 Q2",
@@ -21524,7 +21521,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb3-3", topicId: "italian-3-0", conceptId: "advice-does-sergio-young-journalists",
     section: "L", questionRef: "2018 HL Section LB3 Q3",
@@ -21559,7 +21556,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb3-4", topicId: "italian-3-0", conceptId: "sergio-book-about",
     section: "L", questionRef: "2018 HL Section LB3 Q4",
@@ -21594,7 +21591,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb3-5", topicId: "italian-3-0", conceptId: "according-sergio-positive-aspects-his-job",
     section: "L", questionRef: "2018 HL Section LB3 Q5",
@@ -21602,7 +21599,7 @@ export const CARDS: SecCard[] = [
     questionText: "According to Sergio, what are the positive aspects of his job?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "It’s (very) flexible (2m) — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “It’s (very) flexible (2m)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["He can work (1) from home (1m)","He loves (1m) working with social media (1m)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"options":["It’s (very) flexible (2m)","He can work (1) from home (1m)","He loves (1m) working with social media (1m)","He never feels alone","It’s a sociable job"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -21629,7 +21626,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb3-6", topicId: "italian-3-0", conceptId: "topics-sergio-videos-deal-with",
     section: "L", questionRef: "2018 HL Section LB3 Q6",
@@ -21664,7 +21661,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb3-7", topicId: "italian-3-0", conceptId: "does-sergio-his-free-time",
     section: "L", questionRef: "2018 HL Section LB3 Q7",
@@ -21699,7 +21696,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
-    paperFileid: "LC013ALP000EV",
+    paperFileid: "LC013ALPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Higher Level — © State Examinations Commission.",
     id: "it-2018-hl-lb3-8", topicId: "italian-3-0", conceptId: "with-whom-long-will-sergio-holidays",
     section: "L", questionRef: "2018 HL Section LB3 Q8",
@@ -22603,6 +22600,1957 @@ export const CARDS: SecCard[] = [
                 10
           ],
           "attribution": "SEC Italian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-a-1-a", topicId: "italian-5-0", conceptId: "chi-diritto-bonus-cultura-funziona-chi",
+    section: "A", questionRef: "2017 HL Section A Q1(a)",
+    questionText: "Chi ha diritto al bonus cultura e come funziona?\nChi\nCome funziona",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "Chi — I diciottenni /chi ha compiuto 18 anni", marks: 2, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prints the last piece as “e utilizzarlo entro la fine del” over “2017 (2)”." },
+    { id: "r-1-2", kind: "point", verbatim: "Chi — nel 2016", marks: 2 },
+    { id: "r-1-3", kind: "point", verbatim: "Come funziona — registrarsi entro il 31 gennaio 2017", marks: 2 },
+    { id: "r-1-4", kind: "point", verbatim: "Come funziona — e utilizzarlo entro la fine del", marks: 2 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-a-1-b", topicId: "italian-5-0", conceptId: "requisiti-devono-avere-figli-degli-immigrati",
+    section: "A", questionRef: "2017 HL Section A Q1(b)",
+    questionText: "Quali sono i requisiti che devono avere i figli degli immigrati? Menzionatene due.\nSeconda sezione",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Siano in possesso di permesso” 2 marks.", group: {"claimMax":1,"perOption":8,"options":["Devono essere residenti in Italia (4+4)","Devono avere il permesso di soggiorno","Devono avere il permesso di soggiorno valido/non scaduto"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-a-2-a", topicId: "italian-5-0", conceptId: "benefici-bonus-cultura",
+    section: "A", questionRef: "2017 HL Section A Q2(a)",
+    questionText: "Quali sono i benefici del bonus cultura?\n•\n•",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian.", group: {"claimMax":2,"perOption":2,"options":["Si possono comprare biglietti per rappresentazioni teatrali/rappresentazioni cinematografiche/ per visitare musei/mostre/ «spettacoli dal vivo» /comprare libri e i testi scolastici ≈≈≈≈≈≈ any two elements","Si può spendere anche online"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-a-2-b", topicId: "italian-5-0", conceptId: "trovate-espressione-significa-ghanntanais-time-scarcity",
+    section: "A", questionRef: "2017 HL Section A Q2(b)",
+    questionText: "Trovate l’espressione che significa “am an ghanntanais / time of scarcity”.\nTerza sezione",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Periodo di magra", marks: 3, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Elargiti in un periodo di magra” 2 marks.", permittedMarks: [0,2,3] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-a-3-a", topicId: "italian-5-0", conceptId: "trovate-verbo-futuro-anteriore",
+    section: "A", questionRef: "2017 HL Section A Q3(a)",
+    questionText: "Trovate il verbo al futuro anteriore.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Avrà creato", marks: 2, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Dopo che avrà creato” 1 mark.", permittedMarks: [0,1,2] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-a-3-b", topicId: "italian-5-0", conceptId: "spiegate-pensiero-tommaso-nannicini-quarta",
+    section: "A", questionRef: "2017 HL Section A Q3(b)",
+    questionText: "Spiegate con le vostre parole, il pensiero di Tommaso Nannicini.\nQuarta sezione",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Any minimal answer” 1 mark.", group: {"claimMax":2,"perOption":3,"options":["È essenziale ampliare la propria conoscenza/ arricchire la propria cultura/ investire sulla propria persona","Saranno i giovani a decidere come usare i fondi / su come investire sulla loro cultura","Non sarà più lo stato a decidere su come investire sulla cultura dei giovani"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-a-4-a", topicId: "italian-5-0", conceptId: "dice-angelica-riguardo-ragazzi-italia-fuori",
+    section: "A", questionRef: "2017 HL Section A Q4(a)",
+    questionText: "Cosa dice Angelica riguardo ai ragazzi in Italia e fuori dall’Italia?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "In Italia nessuno pensa mai ai giovani", marks: 2, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "nel resto del mondo c’è più attenzione nei loro confronti", marks: 2 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-a-4-b", topicId: "italian-5-0", conceptId: "spiegate-amiche-angelica-potrebbero-usare-bonus",
+    section: "A", questionRef: "2017 HL Section A Q4(b)",
+    questionText: "Spiegate con le vostre parole, come le amiche di Angelica potrebbero usare il bonus e perché.\nCome\nPerché",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "Potrebbero usare il bonus per recarsi a teatro", marks: 2, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Perché è caro” 2 marks." },
+    { id: "r-1-2", kind: "point", verbatim: "e assistere ai balletti", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "Perché i biglietti sono cari", marks: 2 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-a-5", topicId: "italian-5-0", conceptId: "answer-following-question-english-looking-passage",
+    section: "A", questionRef: "2017 HL Section A Q5",
+    questionText: "Answer the following question in English.\nLooking at the passage as a whole,\nmention one advantage and one\ndisadvantage of the bonus cultura. What is\nRiccardo’s view of this initiative?\nGive two points.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Advantage — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Young people can go to cultural events they previously had no money for / It allows young people who may not have previously been able to, to expand their culture” 3 marks; “You get to spend (500€) (+1 example” 3 marks; “The Italian government is doing something for young people” 3 marks; “It encourages expanding one’s own knowledge/interest in their culture” 3 marks; “It’s important for their personal development” 3 marks; “The bonus is valid for one year” 1 mark; “You can spend it online” 1 mark; “You get to spend 500€” 1 mark. The scheme prints these answers under the heading “Advantage”; the paper asks for 1 point on it. The scheme prints “(2 elements required)” after the answer beginning “You can spend (500€) on cultural”.", group: {"claimMax":1,"options":["You can spend (500€) on cultural events on tickets to go to the cinema/ theatre/ museums/ exhibitions/ to buy books and school books/ go to a live show","Cultural purchases: tickets to go to the cinema/ theatre/ museums/ buy books and school books/ go to a live show can be made online","The state doesn’t decide how the money is spent – the choice is made by the students","It allows young people of 18 to spend public money on cultural events helping them learn and to appreciate new things"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Disadvantage — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “It is not as easy as obtaining your parents’ pocket money” 3 marks; “It is difficult to get your SPID /your digital identity” 3 marks; “Not everyone is interested in art/cultural events” 1 mark; “People who don’t necessarily need it can receive it” 1 mark. The scheme prints these answers under the heading “Disadvantage”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["People have problems in accessing the website where vouchers can be downloaded to get free goods.","It is difficult to get your SPID /your digital identity that you will need to avail of the initiative /bonus.","Not all people would be good (at buying on line) or be computer literate/computer savvy."],"perOption":5} },
+    { id: "r-3", kind: "anyN", verbatim: "Riccardo’s view — the answers the scheme accepts", marks: null, contextNote: "The scheme also pays part marks for a shorter answer: “Some young people would not need the money at all/some people could achieve a lot with 500€ /the bonus would make a big difference in some people’s life.” 3 marks; “He thinks that this way of doing things is wrong” 1 mark. The scheme begins each of these answers with “Riccardo:”; the paper asks for 2 points on Riccardo’s view.", group: {"claimMax":2,"options":["Riccardo: he is not very interested in art, museums, or any cultural activity in general.","Riccardo: he could use the money to go to the cinema /theatre with his friends.","Riccardo: he believes that the bonus should be allocated according to the family yearly income (3m) (+one explanation) some young people would not need the money at all/others could achieve a lot with 500€ /it would make a big difference in their life.","Riccardo: He thinks that the system implemented is not fair as the bonus should be allocated according to the family yearly income.","Riccardo: Some young people would not need the money at all, while some others could achieve a lot with 500€; because the bonus would make a big difference in some people’s life/ because the bonus could give some people the chance to do things that were inaccessible before."],"perOption":5} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b1-1-a", topicId: "italian-5-1", conceptId: "qual-vero-motivo-telefonata-rino",
+    section: "B", questionRef: "2017 HL Section B1 Q1(a)",
+    questionText: "Qual è il vero motivo della telefonata di Rino?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Sua madre era scomparsa/non si trovava più/cercava sua madre", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Cerca aiuto” 1 mark; “Informare la narratrice della scomparsa di sua madre” 3 marks.", permittedMarks: [0,1,3,4] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b1-1-b", topicId: "italian-5-1", conceptId: "era-convinto-rino",
+    section: "B", questionRef: "2017 HL Section B1 Q1(b)",
+    questionText: "Di cosa era convinto Rino?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Pensava che la madre fosse in giro per Napoli (come al solito)", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Che sua madre era a Napoli” 3 marks.", permittedMarks: [0,3,4] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b1-2-a", topicId: "italian-5-1", conceptId: "rino-dato-allarmato-situazione",
+    section: "B", questionRef: "2017 HL Section B1 Q2(a)",
+    questionText: "Cosa fa Rino dato che è allarmato per la situazione?\n•\n•\n•",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Ha fatto una telefonata alla protagonista” 2 marks.", group: {"claimMax":1,"perOption":9,"options":["Aveva chiesto a tutti (3+3+3)","Aveva fatto il giro degli ospedali","Si era rivolto alla polizia"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b1-2-b", topicId: "italian-5-1", conceptId: "pensa-narratrice-rino",
+    section: "B", questionRef: "2017 HL Section B1 Q2(b)",
+    questionText: "Cosa pensa la narratrice di Rino?\n•\n•",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian.", group: {"claimMax":2,"perOption":3,"options":["Era senza cervello","Non era un buon figlio","Aveva a cuore solo se stesso","Non aveva fatto le ricerche con cura"],"perOptionSteps":[3,2]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b1-3-a", topicId: "italian-5-1", conceptId: "perch-sembra-impossibile-madre-rino-trovi",
+    section: "B", questionRef: "2017 HL Section B1 Q3(a)",
+    questionText: "Perché sembra impossibile che la madre di Rino si trovi a Torino?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Perché non è mai uscita da Napoli (in vita sua)", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b1-3-b", topicId: "italian-5-1", conceptId: "consigli-narratrice-rino",
+    section: "B", questionRef: "2017 HL Section B1 Q3(b)",
+    questionText: "Quali consigli dà la narratrice a Rino?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “smettere cercando/ non la cercare/ non cercare più nemmeno me” 2 marks (“2m partial answer”).", group: {"claimMax":2,"options":["Non cercare sua madre","imparare a vivere da solo","non cercare la narratrice","comportarsi come vorrebbe sua madre"],"perOption":3} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b1-4-a", topicId: "italian-5-1", conceptId: "potrebbe-pensare-raffaella-cerullo-narratrice-chiamasse",
+    section: "B", questionRef: "2017 HL Section B1 Q4(a)",
+    questionText: "Cosa potrebbe pensare Raffaella Cerullo se la narratrice la chiamasse col suo vero nome?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Penserebbe che la loro amicizia fosse finita", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b1-4-b", topicId: "italian-5-1", conceptId: "qual-vera-intenzione-raffaella-cerullo",
+    section: "B", questionRef: "2017 HL Section B1 Q4(b)",
+    questionText: "Qual è la vera intenzione di Raffaella Cerullo?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Si vuole volatilizzare/ vuole sparire/ non vuole lasciare nessuna traccia/ vuole disperdere ogni sua cellula/ non si sarebbe più dovuto trovare niente di lei.", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b1-5", topicId: "italian-5-1", conceptId: "answer-following-question-english-looking-passage",
+    section: "B", questionRef: "2017 HL Section B1 Q5",
+    questionText: "Answer the following question in English.\nLooking at the passage as a whole, outline the\nfacts that show that Rino does not have a\ngood relationship with his mother.\nGive three points.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints for shorter answers: “He has not been very thorough in his search for his missing mother 5m (*7m full answer) or 4m (*6m full answer)”; “His mother left him without telling him where she was going 3m (*7m full answer) or 2m (*6m full answer)”; “He speaks in a negative tone about her 3m (7m full answer) or 2m (*6m full ( answer)”. The scheme prints: “Three points are required:”.", group: {"claimMax":3,"options":["He starts getting worried about his mother after she has been missing for two weeks; he thought she was somewhere in Naples.","He is aware that his mother is getting worse lately/she has been behaving erratically: but he went to the police/hospitals/checked with everybody only after she had been missing for two weeks.","He is not a very thoughtful son as he is thinking about himself/he’s been very selfish/ he has never worked in his life/ he has just been busy wasting money and doing illegal/suspicious things.","He shows that he really doesn’t know his mother very well because he is looking for her in Turin but his mother has never left Naples in her life / he is not aware of his mother’s desire to disappear without a trace.","He shows that he doesn’t really know his mother because she wouldn’t want to be searched for."],"perOption":7,"perOptionSteps":[7,7,6]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2a-1-a", topicId: "italian-5-2", conceptId: "perch-salvatore-dice-grande-avrebbe-smesso",
+    section: "B", questionRef: "2017 HL Section B2A Q1(a)",
+    questionText: "Perché Salvatore dice che da grande avrebbe smesso di suonare?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Perché odia la musica", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Perché i suoi genitori lo obbligano a suonare” 2 marks.", permittedMarks: [0,2,5] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2a-1-b", topicId: "italian-5-2", conceptId: "fanno-salvatore-michele-quando-insieme",
+    section: "B", questionRef: "2017 HL Section B2A Q1(b)",
+    questionText: "Cosa fanno Salvatore e Michele quando sono insieme?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “2m 2m” 1 mark; “Subbuteo” 3 marks; “Ti va di fare una partita” 1 mark.", group: {"claimMax":1,"perOption":5,"options":["Fanno tornei di Subbuteo/ giocano a Subbuteo","Passano pomeriggi a dare schicchere ai giocatori"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2a-2-a", topicId: "italian-5-2", conceptId: "salvatore-dopo-antonia-chiama-cena",
+    section: "B", questionRef: "2017 HL Section B2A Q2(a)",
+    questionText: "Cosa fa Salvatore dopo che Antonia lo chiama per la cena?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Rimette gli eserciti/ i soldatini nelle scatole (delle scarpe)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Rimetterli nelle scatole” 1 mark.", permittedMarks: [0,1,5] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2a-2-b", topicId: "italian-5-2", conceptId: "perch-michele-crede-pap-salvatore-sia",
+    section: "B", questionRef: "2017 HL Section B2A Q2(b)",
+    questionText: "Perché Michele crede che il papà di Salvatore sia molto ricco?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Perché gli aveva regalato 8 scatolette di calcio/ 8 squadre di calcio", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Perché gli aveva regalato 8 scatolette” 3 marks; “Perché aveva speso tanti soldi in regali per Salvatore” 3 marks; “Perche gli ha comprato il Subbuteo” 3 marks; “Perché aveva speso tutti quei soldi per Salvatore” 2 marks; “Perché spende tutti quei soldi” 1 mark.", permittedMarks: [0,1,2,3,5] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2a-3-a", topicId: "italian-5-2", conceptId: "perch-michele-vuole-squadra-tutta-sua",
+    section: "B", questionRef: "2017 HL Section B2A Q3(a)",
+    questionText: "Perché Michele vuole una squadra tutta sua?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Perché avrebbe giocato meglio/ Perché non avrebbe perso così tanto/avrebbe battuto Salvatore", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2a-3-b", topicId: "italian-5-2", conceptId: "dice-michele-suo-padre",
+    section: "B", questionRef: "2017 HL Section B2A Q3(b)",
+    questionText: "Cosa dice Michele di suo padre?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Non gli frevaga niente di lui/ non gli voleva bene/ gli aveva regalato una barca di Venezia (che non poteva toccare)", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2a-4-a", topicId: "italian-5-2", conceptId: "chiede-michele-salvatore",
+    section: "B", questionRef: "2017 HL Section B2A Q4(a)",
+    questionText: "Cosa chiede Michele a Salvatore?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Che gli regali una squadra/ di regalargli una squadra", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Dice di regalare una a Michele/ me ne regali una” 1 mark.", permittedMarks: [0,1,5] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2a-4-b", topicId: "italian-5-2", conceptId: "pensa-michele-risposta-salvatore",
+    section: "B", questionRef: "2017 HL Section B2A Q4(b)",
+    questionText: "Cosa pensa Michele della risposta di Salvatore?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Crede che Salvatore sia tirchio” 2 marks; “Crede che se avesse avuto qualcosa da cambiare, forse gli avrebbe dato una squadra” 2 marks; “Se avessi avuto qualcosa da scambiare forse una me la dava” 1 mark.", group: {"claimMax":2,"perOption":3,"options":["Non crede che il papà di Salvatore avrebbe controllato le squadre","Crede che gli stia dicendo una bugia","Crede che in verità Salvatore non voglia dargli una squadra perché è tirchio"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2b-1-a", topicId: "italian-5-2", conceptId: "accorge-beccacce-marcovaldo",
+    section: "B", questionRef: "2017 HL Section B2B Q1(a)",
+    questionText: "Come si accorge delle beccacce Marcovaldo?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Perché cammina col naso per aria.", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2b-1-b", topicId: "italian-5-2", conceptId: "perch-vigile-prende-nome-indirizzo-marcovaldo",
+    section: "B", questionRef: "2017 HL Section B2B Q1(b)",
+    questionText: "Perché il vigile prende nome e indirizzo di Marcovaldo?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "Perché il vigile gli fa la multa", marks: 2, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "perché passa il semaforo con il rosso", marks: 2 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2b-2-a", topicId: "italian-5-2", conceptId: "sappiamo-viligelmo",
+    section: "B", questionRef: "2017 HL Section B2B Q2(a)",
+    questionText: "Che cosa sappiamo di Viligelmo?\n•\n•\n•",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian.", group: {"claimMax":3,"perOption":3,"options":["È il caporeparto","È un vecchio/cacciatore esperto","Sarebbe andato a caccia sabato","È contento di sapere delle beccacce – gli brillano gli occhi quando sente delle beccacce","Pensa che Marcovaldo sia una testavuota","Sgrida Marcovaldo per essersi beccato una multa/per essere stato multato"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2b-2-b", topicId: "italian-5-2", conceptId: "spera-fare-marcovaldo-domenica",
+    section: "B", questionRef: "2017 HL Section B2B Q2(b)",
+    questionText: "Cosa spera di fare Marcovaldo la domenica?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Mangiare beccaccia arrosto", marks: 3, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Mangerò beccaccia arrosto” 2 marks.", permittedMarks: [0,2,3] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2b-3-a", topicId: "italian-5-2", conceptId: "sta-succedere-filippetto",
+    section: "B", questionRef: "2017 HL Section B2B Q3(a)",
+    questionText: "Cosa sta per succedere a Filippetto?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "Mentre gioca", marks: 1, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “È rimasto appiccicato” 2 marks." },
+    { id: "r-1-2", kind: "point", verbatim: "è quasi rimasto appiccicato", marks: 4 },
+    { id: "r-1-3", kind: "point", verbatim: "sul terrazzo", marks: 1 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2b-3-b", topicId: "italian-5-2", conceptId: "passano-sabato-notte-marcovaldo-domitilla",
+    section: "B", questionRef: "2017 HL Section B2B Q3(b)",
+    questionText: "Come passano il sabato notte Marcovaldo e Domitilla?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "I due sognano", marks: 1, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Sognavano di qualcosa da mangiare” 2 marks." },
+    { id: "r-1-2", kind: "point", verbatim: "di catturare beccacce", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "anatre", marks: 1 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2b-4-a", topicId: "italian-5-2", conceptId: "perch-marcovaldo-turbato-quando-vede-cameriera",
+    section: "B", questionRef: "2017 HL Section B2B Q4(a)",
+    questionText: "Perché Marcovaldo è turbato quando vede la cameriera della signora?\n•\n•",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian.", group: {"claimMax":1,"perOption":6,"options":["Perché era indietro di 6 mesi con l’affitto (3+3)","Perché ha paura di essere sfrattato/ temeva lo sfratto"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2b-4-b", topicId: "italian-5-2", conceptId: "qual-legame-tra-marcovaldo-biancheria-rovinata",
+    section: "B", questionRef: "2017 HL Section B2B Q4(b)",
+    questionText: "Qual è il legame tra Marcovaldo e la biancheria rovinata sul terrazzo?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Marcovaldo ha messo il vischio / la pania /sostanza appiccicosa/collante dappertutto / sul terrazzo e la biancheria vi è rimasta appiccicata.", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Marcovaldo ha messo la colla dappertutto / sul terrazzo e la biancheria vi è rimasta appiccicata.” 4 marks.", permittedMarks: [0,4,5] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2b-5", topicId: "italian-5-2", conceptId: "answer-following-question-english-basing-answers",
+    section: "B", questionRef: "2017 HL Section B2B Q5",
+    questionText: "Answer the following question in English.\nBasing your answers on this passage and the\nnovel as a whole, explain how Marcovaldo’s\nideas always turn into misadventure. Give\nfour points.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the headings “From the passage”, “From the novel”; the paper does not say how many points it wants under each.", group: {"claimMax":4,"options":["From the passage — Marcovaldo sees beccacce in the sky and ends up being fined","From the passage — He plans to get beccacce on the terrace of his apartment, so with his children devises a plan to catch them but he manages to catch a pigeon instead.","From the passage — Because of the birdlime (above mentioned plan to get the beccacce) Filippetto nearly gets stuck.","From the passage — Because of his plan to catch the beccacce (birdlime all over the terrace, the wheat etc.) the laundry gets destroyed.","From the passage — He’s in trouble with the law because of his plan to catch beccacce; the traffic warden, who previously fined him, was investigating the illegal hunting of pigeons and he is in Marcovaldo’s landlady’s living room enquiring about suspicious activity in that building.","From the novel — Any story that mentions his efforts and misadventures + example and consequences."],"perOption":5} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-b2a-5", topicId: "italian-5-2", conceptId: "answer-following-question-english-learn-about",
+    section: "B", questionRef: "2017 HL Section B2A Q5",
+    questionText: "Answer the following question in English.\nWhat do we learn about Salvatore from\nthis passage and the novel as a whole?\nGive four points.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Points from the novel”; the paper does not say how many points it wants under each. The scheme prints: “3 pts from passage + 1 pt from novel; 1 pt from passage + 3 pts from novel*; 2 pts from passage + 2 pts from novel*”. The scheme prints: “*Reference to the fact that Salvatore betrayed Michele ➔ Salvatore aveva venduto il Michele e il suo segreto per una lezione di guida must be made when 2 pts are taken from the novel”.", group: {"claimMax":4,"options":["Salvatore is the same age as Michele, but he looks older, he is taller, he was always well dressed/ presented and he spoke in a calm way.","He plays the piano and a piano teacher from Lucignano goes to his house to teach him, his parents forced him to play but he despised it and he used to say that he would give up when he was older.","Salvatore and Michele used to play Subbuteo/ (to do) organise/partake in Subbuteo tournaments during the winter and spent entire afternoons playing at it. He used to play also when he was on his own.","Salvatore gets very precious and every expensive presents from his well-off father who is a lawyer, that’s why he had 12 Subbuteo teams","Even though he had lots of Subbuteo teams Salvatore does not want to give any to Michele as his father would not be happy with that/because he’s mean","Points from the novel — Salvatore is Michele’s best friend but he betrays him ➔ Secret+driving lesson must be mentioned to get full marks","Points from the novel — He redeems himself at the end of the novel when he tells Michele where they have moved Filippo.","Points from the novel — He was much brighter than Teschio and could have been the leader of the gang but he was not interested in that."],"perOption":5} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-la-1", topicId: "italian-3-1", conceptId: "take-campania-express-train-can-easily",
+    section: "L", questionRef: "2017 HL Section LA Q1",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "If you take the Campania Express train, you can easily access\n(a) The beaches around Amalfi\n(b) Mount Vesuvius\n(c) Famous archaeological sites\n(d) A theme park outside Rome",
+    questionChoices: ["The beaches around Amalfi","Mount Vesuvius","Famous archaeological sites","A theme park outside Rome"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Famous archaeological sites", marks: 2, contextNote: "The scheme sets the right option in bold: (c)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-la-2", topicId: "italian-3-1", conceptId: "farm-holiday-offer-includes-free-activities",
+    section: "L", questionRef: "2017 HL Section LA Q2",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The farm holiday offer includes\n(a) Free activities\n(b) A discount on double rooms\n(c) A free dinner\n(d) Pet therapy",
+    questionChoices: ["Free activities","A discount on double rooms","A free dinner","Pet therapy"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Free activities", marks: 2, contextNote: "The scheme sets the right option in bold: (a)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 2",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-la-3", topicId: "italian-3-1", conceptId: "weather-forecast-centre-italy-unsettled",
+    section: "L", questionRef: "2017 HL Section LA Q3",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The weather forecast for the centre of Italy is\n(a) Overcast\n(b) Unsettled\n(c) Some sunny spells\n(d) Rain and low temperatures",
+    questionChoices: ["Overcast","Unsettled","Some sunny spells","Rain and low temperatures"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Unsettled", marks: 2, contextNote: "The scheme sets the right option in bold: (b)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 3",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-la-4", topicId: "italian-3-1", conceptId: "new-app-allows-access-free-car",
+    section: "L", questionRef: "2017 HL Section LA Q4",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The new app allows you to access\n(a) Reduced cinema and concert tickets\n(b) Excellent restaurant offers\n(c) Free car sharing\n(d) Reduced bicycle rental",
+    questionChoices: ["Reduced cinema and concert tickets","Excellent restaurant offers","Free car sharing","Reduced bicycle rental"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Free car sharing", marks: 2, contextNote: "The scheme sets the right option in bold: (c)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 4",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-la-5", topicId: "italian-3-1", conceptId: "win-free-cinema-tickets-must-like",
+    section: "L", questionRef: "2017 HL Section LA Q5",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "To win 2 free cinema tickets you must\n(a) Like and share the film Facebook page\n(b) Post a comment on the film Facebook page\n(c) Post a photo on the film Facebook page\n(d) Invite 12 friends to like the film Facebook page",
+    questionChoices: ["Like and share the film Facebook page","Post a comment on the film Facebook page","Post a photo on the film Facebook page","Invite 12 friends to like the film Facebook page"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Like and share the film Facebook page", marks: 2, contextNote: "The scheme sets the right option in bold: (a)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 5",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-la-6", topicId: "italian-3-1", conceptId: "government-initiative-small-villages-aims-improve",
+    section: "L", questionRef: "2017 HL Section LA Q6",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The government initiative in small villages aims to improve\n(a) Internet access\n(b) Library and cinema access\n(c) Satellite TV\n(d) Music libraries",
+    questionChoices: ["Internet access","Library and cinema access","Satellite TV","Music libraries"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Library and cinema access", marks: 2, contextNote: "The scheme sets the right option in bold: (b)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 6",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-la-7", topicId: "italian-3-1", conceptId: "news-item-about-strikes",
+    section: "L", questionRef: "2017 HL Section LA Q7",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The news item is about\n(a) School closures\n(b) A traffic diversion\n(c) A traffic accident\n(d) Strikes",
+    questionChoices: ["School closures","A traffic diversion","A traffic accident","Strikes"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Strikes", marks: 2, contextNote: "The scheme sets the right option in bold: (d)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 7",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-la-8", topicId: "italian-3-1", conceptId: "free-unused-common-spaces-city-now",
+    section: "L", questionRef: "2017 HL Section LA Q8",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "Free unused common spaces in the city are now being used as\n(a) Dog parks\n(b) Vegetable gardens\n(c) Playgrounds\n(d) Car parks",
+    questionChoices: ["Dog parks","Vegetable gardens","Playgrounds","Car parks"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Vegetable gardens", marks: 2, contextNote: "The scheme sets the right option in bold: (b)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 8",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb1-1", topicId: "italian-3-0", conceptId: "did-giovanni-find-difficult-hear-phone",
+    section: "L", questionRef: "2017 HL Section LB1 Q1",
+    stem: "Dialogue 1. Conversation between Anna and Giovanni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Why did Giovanni find it difficult to hear the phone ringing? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["He was in the garden (1m) sunbathing (1m)","He forgot his phone (1m) in the kitchen (1m)","He was listening to music (1m) with earphones (1m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb1-2", topicId: "italian-3-0", conceptId: "have-marisa-friends-planned-her-birthday",
+    section: "L", questionRef: "2017 HL Section LB1 Q2",
+    stem: "Dialogue 1. Conversation between Anna and Giovanni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What have Marisa’s friends planned for her birthday party? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["They have booked a table (1m) in the new/Japanese restaurant (1m)","They are going to try/eat/get – for sushi/that serves sushi","They are going dancing (to celebrate) (1m) to Marisa’s favourite club (1m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb1-3", topicId: "italian-3-0", conceptId: "suggestion-does-giovanni-make",
+    section: "L", questionRef: "2017 HL Section LB1 Q3",
+    stem: "Dialogue 1. Conversation between Anna and Giovanni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What suggestion does Giovanni make?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Order (1m) food (1m)","Support (1m) the national team (1m)","After the match (1m) go out to celebrate/to the party/partying (1m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb1-4", topicId: "italian-3-0", conceptId: "does-anna-prefer-original-plan-full",
+    section: "L", questionRef: "2017 HL Section LB1 Q4",
+    stem: "Dialogue 1. Conversation between Anna and Giovanni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Why does Anna prefer the original plan? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “Marisa wanted to try out the new restaurant 1m”; “She doesn’t like watching football 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["She gets bored (1m) watching matches on TV (1m)","She doesn’t like soccer","She ends up falling asleep (1m) during the match (1m)","Marisa will not be happy"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb2-1", topicId: "italian-3-0", conceptId: "four-marta-work-duties",
+    section: "L", questionRef: "2017 HL Section LB2 Q1",
+    stem: "Dialogue 2. Conversation between Riccardo and Marta. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Name four of Marta’s work duties.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":4,"perOption":1,"options":["She looked after a 7 and a 10 year old/She looked after (two) kids","She accompanied the kids to school","She did some chores","She collected the kids from school","She took the children to (after school) activities","She took the children to the park (to play with friends)","She helped the kids with homework"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb2-2", topicId: "italian-3-0", conceptId: "did-marta-her-day-off-full",
+    section: "L", questionRef: "2017 HL Section LB2 Q2",
+    stem: "Dialogue 2. Conversation between Riccardo and Marta. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What did Marta do on her day off? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["She went (1m) to the city centre (with other au pairs) (1m)","She went (1m) to the cinema (1m)","She went (1m) to second hand shops (1m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb2-3", topicId: "italian-3-0", conceptId: "happened-marta-airport-full",
+    section: "L", questionRef: "2017 HL Section LB2 Q3",
+    stem: "Dialogue 2. Conversation between Riccardo and Marta. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What happened to Marta at the airport? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["She could not find her (designer) suitcases (1m) and there was a long queue at the lost and found office (1m)","Her phone ran out of battery (1m) thus she couldn’t contact her (host) family (1m)","No one was waiting for her outside (because she was late)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb2-4", topicId: "italian-3-0", conceptId: "did-irish-couple-help-marta-full",
+    section: "L", questionRef: "2017 HL Section LB2 Q4",
+    stem: "Dialogue 2. Conversation between Riccardo and Marta. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "How did the Irish couple help Marta? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They lent her their phone", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-2", kind: "point", verbatim: "They gave her a lift home", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb3-1", topicId: "italian-3-0", conceptId: "did-daniela-realise-while-studying-abroad",
+    section: "L", questionRef: "2017 HL Section LB3 Q1",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What did Daniela realise while studying abroad? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "She did not know Italy very well", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-2", kind: "point", verbatim: "She wanted to explore Italy by foot and get to meet the people", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb3-2", topicId: "italian-3-0", conceptId: "did-she-decide-walk-across-italy",
+    section: "L", questionRef: "2017 HL Section LB3 Q2",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Why did she decide to walk across Italy? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Pace of life is too fast","She wanted to meet people (1m) and stop to talk to them (1m)","(Walking is a great way) to observe details","(Walking is a great way) to reflect"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb3-3", topicId: "italian-3-0", conceptId: "did-people-think-daniela-full",
+    section: "L", questionRef: "2017 HL Section LB3 Q3",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What did people think of Daniela? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "She was brave", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-2", kind: "point", verbatim: "She was (a little) crazy", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "She was an inspiration", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb3-4", topicId: "italian-3-0", conceptId: "did-daniela-friends-acquaintances-help-her",
+    section: "L", questionRef: "2017 HL Section LB3 Q4",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "How did Daniela’s friends and acquaintances help her during her journey?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They helped her to find free accommodation", marks: 2, contextNote: "The scheme also prints, for shorter answers: “They gave her a place to stay for free 1m”. Answer in English or Irish." },
+    { id: "r-2-1", kind: "point", verbatim: "They offered her food in exchange", marks: 1 },
+    { id: "r-2-2", kind: "point", verbatim: "for listening to her recount her adventures", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb3-5", topicId: "italian-3-0", conceptId: "equipment-did-she-bring-with-her",
+    section: "L", questionRef: "2017 HL Section LB3 Q5",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What equipment did she bring with her? Give four details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":4,"perOption":1,"options":["Rucksack/backpack (2) T-shirts","A pair of trousers","A sweater/hoodie","(Comfortable) shoes","Flip flops/slippers","A water bottle","A cap/hat","A rain coat/rain jacket","A map of Italy"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 5",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb3-6", topicId: "italian-3-0", conceptId: "parts-italy-did-daniela-like-most",
+    section: "L", questionRef: "2017 HL Section LB3 Q6",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What two parts of Italy did Daniela like the most? (b) Why?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a) — The Centre", marks: 1, contextNote: "Answer in English or Irish." },
+    { id: "r-2", kind: "point", verbatim: "(a) — the South", marks: 1 },
+    { id: "r-3", kind: "criterion", verbatim: "(b) — People are (very) welcoming, chatty and (very) helpful", marks: 2, contextNote: "The scheme also pays part marks for a shorter answer: “2 elements” 1 mark.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 6",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb3-7", topicId: "italian-3-0", conceptId: "difficulties-did-she-encounter-during-her",
+    section: "L", questionRef: "2017 HL Section LB3 Q7",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What difficulties did she encounter during her journey? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints “Any two of 4 marks(2+2)”. Answer in English or Irish.", group: {"claimMax":2,"options":["Roads are narrow (1m) there are often no footpaths on roads (1m)","Cars are speeding","Sometimes (1m) she could not get accommodation (1m)","She had to sleep on the beach or in a campsite"],"perOption":2} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 7",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-lb3-8", topicId: "italian-3-0", conceptId: "daniela-projects-future",
+    section: "L", questionRef: "2017 HL Section LB3 Q8",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What are Daniela’s projects for the future?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints this ask’s “4 marks (2+2)” on the line above its number. The scheme also pays part marks for a shorter answer: “She will write a book” 1 mark. Answer in English or Irish.", group: {"claimMax":2,"options":["She is going back to Dublin (to her fiancé) (1m) for six months (1m)","She will publish her book","She will travel to Europe (1m) by bike (1m)","She will write another/second book"],"perOption":2} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 8",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2017 Higher Level, pp.23-27 — © State Examinations Commission.",
+    id: "it-2017-hl-c-1-a", topicId: "italian-6-0", conceptId: "1-written-composition-linked-to-reading-comprehe",
+    section: "C", questionRef: "2017 HL Section C Q1",
+    questionText: "1. Written composition linked to reading comprehension (journalistic passage).\n(25 marks)\nL’articolo parla di un bonus cultura da dare a tutti i ragazzi che hanno compiuto 18 anni. Pensi che sia un’iniziativa interessante? C’è un’iniziativa simile in Irlanda che serve a promuovere la cultura?\nSe avessi questo bonus, come lo spenderesti e perché?",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "1. Composition linked to journalistic passage 25 marks",
+                "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [
+                            "Content and communication 15 marks Language 10 marks",
+                            "Use the descriptors in Appendix 2",
+                            "An introduction and conclusion are required",
+                            "• Introduzione",
+                            "• Pensi sia interessante",
+                            "• Iniziativa simile in Irlanda",
+                            "• Come spenderesti e perché",
+                            "• Conclusione",
+                            "2. Guided composition 25 marks",
+                            "Content and communication 15 marks"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 – 5",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Lacks coherence",
+                                        "Very confused argumentation",
+                                        "Communicative task not fulfilled",
+                                        "All irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "6 – 7",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Little coherence",
+                                        "Unclear argumentation",
+                                        "Communicative task barely fulfilled",
+                                        "Poor use of vocabulary",
+                                        "Mostly irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "8 – 10",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Reasonable level of coherence",
+                                        "Argumentation not always clear",
+                                        "Elements of communicative task not always fulfilled",
+                                        "Lack of vocabulary interferes at times with ability to complete task",
+                                        "A good deal of irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "11 – 12",
+                                  "marks": [11,12],
+                                  "guidance": [
+                                        "Reasonable level of coherence",
+                                        "Fairly clear argumentation",
+                                        "Most elements of communicative task fulfilled",
+                                        "Reasonable range of vocabulary",
+                                        "Little irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "13 – 15",
+                                  "marks": [13,14,15],
+                                  "guidance": [
+                                        "Good level of coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Good range of vocabulary",
+                                        "Appropriate use of idiomatic expressions",
+                                        "No irrelevant material"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [
+                            "Use the descriptors in Appendix 2"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 - 3",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very limited range of vocabulary, most verbs incorrect and many spelling mistakes."
+                                  ]
+                            },
+                            {
+                                  "label": "4 - 6",
+                                  "marks": [4,5,6],
+                                  "guidance": [
+                                        "Adequate vocabulary, some incorrect verbs and agreements, and many spelling mistakes."
+                                  ]
+                            },
+                            {
+                                  "label": "7 -10",
+                                  "marks": [7,8,9,10],
+                                  "guidance": [
+                                        "Idiomatic Italian, good vocabulary, good grammatical accuracy and few spelling mistakes."
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 5,
+                            "permittedMarks": [0,1,2,3,4,5],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+                      }
+                }
+          ],
+          "markingGuideNote": "Use the descriptors in Appendix 2"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Italian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2017 Higher Level, pp.23-27 — © State Examinations Commission.",
+    id: "it-2017-hl-c-2", topicId: "italian-6-1", conceptId: "2-guided-composition-25-marks-using-the-ideas-li",
+    section: "C", questionRef: "2017 HL Section C Q2",
+    questionText: "2. Guided Composition.\n(25 marks)\nUsing the ideas listed below, describe how something important was lost and found again.\nmettere annunci dappertutto – chiedere vicini casa – genitori tornare giorno dopo – cane a casa di un amico/un’amica.",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "2. Guided composition 25 marks",
+                "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [
+                            "Candidates must not produce something learnt off by heart or off the point. It is not",
+                            "necessary to use all the words or phrases given.",
+                            "12 marks for points covered and well expanded",
+                            "3 marks to be assigned for overall coherence."
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 – 5",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Lacks coherence",
+                                        "Very confused argumentation",
+                                        "Communicative task not fulfilled",
+                                        "All irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "6 – 7",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Little coherence",
+                                        "Unclear argumentation",
+                                        "Communicative task barely fulfilled",
+                                        "Poor use of vocabulary",
+                                        "Mostly irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "8 – 10",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Reasonable level of coherence",
+                                        "Argumentation not always clear",
+                                        "Elements of communicative task not always fulfilled",
+                                        "Lack of vocabulary interferes at times with ability to complete task",
+                                        "A good deal of irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "11 – 12",
+                                  "marks": [11,12],
+                                  "guidance": [
+                                        "Reasonable level of coherence",
+                                        "Fairly clear argumentation",
+                                        "Most elements of communicative task fulfilled",
+                                        "Reasonable range of vocabulary",
+                                        "Little irrelevant material"
+                                  ]
+                            },
+                            {
+                                  "label": "13 – 15",
+                                  "marks": [13,14,15],
+                                  "guidance": [
+                                        "Good level of coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Good range of vocabulary",
+                                        "Appropriate use of idiomatic expressions",
+                                        "No irrelevant material"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [
+                            "Use the descriptors in Appendix 2"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 - 3",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Very limited range of vocabulary, most verbs incorrect and many spelling mistakes."
+                                  ]
+                            },
+                            {
+                                  "label": "4 - 6",
+                                  "marks": [4,5,6],
+                                  "guidance": [
+                                        "Adequate vocabulary, some incorrect verbs and agreements, and many spelling mistakes."
+                                  ]
+                            },
+                            {
+                                  "label": "7 -10",
+                                  "marks": [7,8,9,10],
+                                  "guidance": [
+                                        "Idiomatic Italian, good vocabulary, good grammatical accuracy and few spelling mistakes."
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 5,
+                            "permittedMarks": [0,1,2,3,4,5],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+                      }
+                }
+          ],
+          "markingGuideNote": "Use the descriptors in Appendix 2"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Italian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-c-3-a", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-a",
+    section: "C", questionRef: "2017 HL Section C Q3(a)",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b).\n(50 marks)\n(a)\nDurante l’estate volete fare un po’ di volontariato in Italia e avete trovato questo annuncio su internet.\nScrivete per dare la vostra disponibilità, indicate il periodo da voi scelto, il tipo di attività che preferite svolgere e la vostra esperienza nel settore. Inoltre, riferendovi ai requisiti richiesti dall’organizzazione indicate almeno tre motivi per cui sareste degli ottimi volontari.\nCampi di Volontariato per ragazzi dai 16 ai 19 anni Se desiderate rendervi utili, potete unirvi ad altri adolescenti della vostra età e partecipare ai nostri Campi di Volontariato per un periodo che va da una a quattro settimane dal 10 luglio al 30 settembre 2017.\nRequisiti indispensabili: intraprendenza e spirito organizzativo.\nI percorsi per i volontari: i giovani aspiranti volontari potranno scegliere tra diversi percorsi: sport, arte e cultura, agricoltura, archeologia, costruzioni, giornalismo, insegnamento, volontariato con gli animali e volontariato ambientale.\nScrivete all’Ufficio Selezione del Personale, Via San Filippo nº 4, 80122 Napoli oppure a info@progettiperglialtri.it",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 50,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Correct register and appropriate greeting and ending are required for full marks", marks: null, contextNote: "The scheme heads this task \"3. Formal Writing 50 marks\" and prices \"Content and communication 25 marks\" and \"Language 15 marks\", 40 of the 50 marks; it prints no line for the other 10, so judge your letter against the total. It also prints: \"In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7.\"" },
+    { id: "r-2", kind: "criterion", verbatim: "(Date and address are required for letter)", marks: null },
+    { id: "r-3", kind: "criterion", verbatim: "Candidates are expected to make relevant points", marks: null },
+    { id: "r-4", kind: "criterion", verbatim: "Each point should be expanded and developed.", marks: null },
+    { id: "r-5", kind: "criterion", verbatim: "Content and communication 25 marks", marks: null },
+    { id: "r-6", kind: "criterion", verbatim: "Language 15 marks", marks: null },
+    { id: "r-7", kind: "criterion", verbatim: "Introduzione", marks: null },
+    { id: "r-8", kind: "criterion", verbatim: "Periodo", marks: null },
+    { id: "r-9", kind: "criterion", verbatim: "Requisiti", marks: null },
+    { id: "r-10", kind: "criterion", verbatim: "Tipo di attività", marks: null },
+    { id: "r-11", kind: "criterion", verbatim: "Esperienza", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Italian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Higher Level — © State Examinations Commission.",
+    id: "it-2017-hl-c-3-b", topicId: "italian-6-2", conceptId: "3-formal-writing-choose-either-a-or-b-50-marks-b",
+    section: "C", questionRef: "2017 HL Section C Q3(b)",
+    questionText: "3. Formal Writing.\nChoose either (a) or (b).\n(50 marks)\n(b)\nAvevate intenzione di andare a passare un periodo di vacanza presso una famiglia ospitante in Italia, ma prima di partire avete avuto un problema che vi impedisce di farlo. Scrivete alla famiglia Rossi e spiegate nei dettagli cosa è successo, perché vi è impossibile partire e le conseguenze che questo problema comporta per voi.\nInoltre, informatevi sulla possibilità di rimandare la partenza, indicando il periodo che preferite e la durata della vostra permanenza.\nScrivete a:\nFamiglia Rossi, Via Roma nº 57, 16032 Camogli (GE) oppure a rossifam@libero.it",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 50,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Correct register and appropriate greeting and ending are required for full marks", marks: null, contextNote: "The scheme heads this task \"3. Formal Writing 50 marks\" and prices \"Content and communication 25 marks\" and \"Language 15 marks\", 40 of the 50 marks; it prints no line for the other 10, so judge your letter against the total. It also prints: \"In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7.\"" },
+    { id: "r-2", kind: "criterion", verbatim: "(Date and address are required for letter)", marks: null },
+    { id: "r-3", kind: "criterion", verbatim: "Candidates are expected to make relevant points", marks: null },
+    { id: "r-4", kind: "criterion", verbatim: "Each point should be expanded and developed.", marks: null },
+    { id: "r-5", kind: "criterion", verbatim: "Content and communication 25 marks", marks: null },
+    { id: "r-6", kind: "criterion", verbatim: "Language 15 marks", marks: null },
+    { id: "r-7", kind: "criterion", verbatim: "Introduzione", marks: null },
+    { id: "r-8", kind: "criterion", verbatim: "Problema", marks: null },
+    { id: "r-9", kind: "criterion", verbatim: "Impossibilità", marks: null },
+    { id: "r-10", kind: "criterion", verbatim: "Conseguenze", marks: null },
+    { id: "r-11", kind: "criterion", verbatim: "Rimandare", marks: null },
+    { id: "r-12", kind: "criterion", verbatim: "Nuova data", marks: null },
+    { id: "r-13", kind: "criterion", verbatim: "Permanenza", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Italian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2017 Higher Level, p.25 — © State Examinations Commission.",
+    id: "it-2017-hl-b3a-1", topicId: "italian-5-2", conceptId: "michele-displays-strong-protective-qualities-of-",
+    section: "B", questionRef: "2017 HL Section B3A Q1",
+    questionText: "Michele displays strong protective qualities. Of whom is he protective and how does he show this side of his personality. Accurate references to the novel are expected in support of the points you make. At least three points to be made.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "B 3 Essay on prescribed text",
+                "Use the descriptors in Appendix 1"
+          ],
+          "criteria": [
+                {
+                      "id": "essay",
+                      "label": "Essay",
+                      "maxMarks": 60,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],
+                      "guidance": [
+                            "(51 - 60 marks)",
+                            "Answers the question fully",
+                            "Demonstrates excellent knowledge of the text as a whole",
+                            "Accurate and pertinent quotes/references to the text in support of all points made",
+                            "No irrelevant material or repetition of points",
+                            "(42 - 50 marks)",
+                            "All points covered",
+                            "Demonstrates very good knowledge of the text as a whole",
+                            "Makes ample and accurate references to the text",
+                            "Some irrelevant material and some small repetition of points",
+                            "(33 - 41 marks)",
+                            "Answer not always fully developed or clear",
+                            "Demonstrates adequate knowledge of the text as a whole",
+                            "Makes some references to the text, but they may be slightly vague or inaccurate",
+                            "Substantial irrelevant material and repetition of points",
+                            "________________________________ (24 - 32 marks)",
+                            "Argumentation unclear",
+                            "Some or little knowledge of the text as a whole",
+                            "Below average answer of the question",
+                            "Makes little reference to the text",
+                            "A lot of irrelevant material and repetition of points",
+                            "__________________________________ (6 - 23 marks)",
+                            "Shows almost no knowledge of text",
+                            "No attempt at question asked",
+                            "No reference to the text",
+                            "All irrelevant material"
+                      ]
+                }
+          ],
+          "markingGuideNote": "Use the descriptors in Appendix 1"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2017 Higher Level, p.25 — © State Examinations Commission.",
+    id: "it-2017-hl-b3a-2", topicId: "italian-5-2", conceptId: "in-io-non-ho-paura-as-the-story-progresses-miche",
+    section: "B", questionRef: "2017 HL Section B3A Q2",
+    questionText: "In Io non ho paura, as the story progresses Michele loses his innocence and becomes more aware of the sinister side of mankind. Mention three episodes where this is evident. Accurate references to the novel are expected in support of the points you make.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "B 3 Essay on prescribed text",
+                "Use the descriptors in Appendix 1"
+          ],
+          "criteria": [
+                {
+                      "id": "essay",
+                      "label": "Essay",
+                      "maxMarks": 60,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],
+                      "guidance": [
+                            "(51 - 60 marks)",
+                            "Answers the question fully",
+                            "Demonstrates excellent knowledge of the text as a whole",
+                            "Accurate and pertinent quotes/references to the text in support of all points made",
+                            "No irrelevant material or repetition of points",
+                            "(42 - 50 marks)",
+                            "All points covered",
+                            "Demonstrates very good knowledge of the text as a whole",
+                            "Makes ample and accurate references to the text",
+                            "Some irrelevant material and some small repetition of points",
+                            "(33 - 41 marks)",
+                            "Answer not always fully developed or clear",
+                            "Demonstrates adequate knowledge of the text as a whole",
+                            "Makes some references to the text, but they may be slightly vague or inaccurate",
+                            "Substantial irrelevant material and repetition of points",
+                            "________________________________ (24 - 32 marks)",
+                            "Argumentation unclear",
+                            "Some or little knowledge of the text as a whole",
+                            "Below average answer of the question",
+                            "Makes little reference to the text",
+                            "A lot of irrelevant material and repetition of points",
+                            "__________________________________ (6 - 23 marks)",
+                            "Shows almost no knowledge of text",
+                            "No attempt at question asked",
+                            "No reference to the text",
+                            "All irrelevant material"
+                      ]
+                }
+          ],
+          "markingGuideNote": "Use the descriptors in Appendix 1"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2017 Higher Level, p.25 — © State Examinations Commission.",
+    id: "it-2017-hl-b3b-1", topicId: "italian-5-2", conceptId: "nature-plays-tricks-on-marcovaldo-and-his-family",
+    section: "B", questionRef: "2017 HL Section B3B Q1",
+    questionText: "Nature plays tricks on Marcovaldo and his family. Choose the three stories that best illustrate this statement in your opinion. Accurate references and examples from the text are expected in support of the points you make.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "B 3 Essay on prescribed text",
+                "Use the descriptors in Appendix 1"
+          ],
+          "criteria": [
+                {
+                      "id": "essay",
+                      "label": "Essay",
+                      "maxMarks": 60,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],
+                      "guidance": [
+                            "(51 - 60 marks)",
+                            "Answers the question fully",
+                            "Demonstrates excellent knowledge of the text as a whole",
+                            "Accurate and pertinent quotes/references to the text in support of all points made",
+                            "No irrelevant material or repetition of points",
+                            "(42 - 50 marks)",
+                            "All points covered",
+                            "Demonstrates very good knowledge of the text as a whole",
+                            "Makes ample and accurate references to the text",
+                            "Some irrelevant material and some small repetition of points",
+                            "(33 - 41 marks)",
+                            "Answer not always fully developed or clear",
+                            "Demonstrates adequate knowledge of the text as a whole",
+                            "Makes some references to the text, but they may be slightly vague or inaccurate",
+                            "Substantial irrelevant material and repetition of points",
+                            "________________________________ (24 - 32 marks)",
+                            "Argumentation unclear",
+                            "Some or little knowledge of the text as a whole",
+                            "Below average answer of the question",
+                            "Makes little reference to the text",
+                            "A lot of irrelevant material and repetition of points",
+                            "__________________________________ (6 - 23 marks)",
+                            "Shows almost no knowledge of text",
+                            "No attempt at question asked",
+                            "No reference to the text",
+                            "All irrelevant material"
+                      ]
+                }
+          ],
+          "markingGuideNote": "Use the descriptors in Appendix 1"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC013ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2017 Higher Level, p.25 — © State Examinations Commission.",
+    id: "it-2017-hl-b3b-2", topicId: "italian-5-2", conceptId: "which-three-stories-best-illustrate-marcovaldo-s",
+    section: "B", questionRef: "2017 HL Section B3B Q2",
+    questionText: "Which three stories best illustrate Marcovaldo’s concern for pollution? Accurate references to the stories chosen are expected in support of the points you make.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "B 3 Essay on prescribed text",
+                "Use the descriptors in Appendix 1"
+          ],
+          "criteria": [
+                {
+                      "id": "essay",
+                      "label": "Essay",
+                      "maxMarks": 60,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],
+                      "guidance": [
+                            "(51 - 60 marks)",
+                            "Answers the question fully",
+                            "Demonstrates excellent knowledge of the text as a whole",
+                            "Accurate and pertinent quotes/references to the text in support of all points made",
+                            "No irrelevant material or repetition of points",
+                            "(42 - 50 marks)",
+                            "All points covered",
+                            "Demonstrates very good knowledge of the text as a whole",
+                            "Makes ample and accurate references to the text",
+                            "Some irrelevant material and some small repetition of points",
+                            "(33 - 41 marks)",
+                            "Answer not always fully developed or clear",
+                            "Demonstrates adequate knowledge of the text as a whole",
+                            "Makes some references to the text, but they may be slightly vague or inaccurate",
+                            "Substantial irrelevant material and repetition of points",
+                            "________________________________ (24 - 32 marks)",
+                            "Argumentation unclear",
+                            "Some or little knowledge of the text as a whole",
+                            "Below average answer of the question",
+                            "Makes little reference to the text",
+                            "A lot of irrelevant material and repetition of points",
+                            "__________________________________ (6 - 23 marks)",
+                            "Shows almost no knowledge of text",
+                            "No attempt at question asked",
+                            "No reference to the text",
+                            "All irrelevant material"
+                      ]
+                }
+          ],
+          "markingGuideNote": "Use the descriptors in Appendix 1"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "The task as the examination paper prints it."
     },
   } as SecCard,

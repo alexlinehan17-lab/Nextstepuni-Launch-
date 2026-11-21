@@ -41,17 +41,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázd meg, mit jelent a „felpumpál” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található szó saját szavaiddal kifejezve: a „felpumpál” szó azt jelenti, hogy megnövel, megemel.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található szó saját szavaiddal kifejezve: a „felpumpál” szó azt jelenti, hogy megnövel, megemel.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -64,17 +65,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázd meg, mit jelent a „megcsappan” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaiddal kifejezve: a „megcsappan” szó azt jelenti, hogy visszaesik.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaiddal kifejezve: a „megcsappan” szó azt jelenti, hogy visszaesik.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -87,17 +89,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázd meg, mit jelent a „prognosztizál” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaiddal kifejezve: a „prognosztizál” szó azt jelenti, hogy előrejelez, megjósol.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaiddal kifejezve: a „prognosztizál” szó azt jelenti, hogy előrejelez, megjósol.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -110,17 +113,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázd meg, mit jelent a „renomé” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található szó saját szavaiddal kifejezve: a „renomé” szó tekintélyt, jó hírnevet jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található szó saját szavaiddal kifejezve: a „renomé” szó tekintélyt, jó hírnevet jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -133,17 +137,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázd meg, mit jelent a „bojkottmozgalom” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található szó saját szavaiddal kifejezve: a „bojkottmozgalom” szó azt jelenti, hogy többek által összehangolt tartózkodó magatartás, amely valakit kirekeszt, amelynek célja az erre a személyre való nyomásgyakorlás.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található szó saját szavaiddal kifejezve: a „bojkottmozgalom” szó azt jelenti, hogy többek által összehangolt tartózkodó magatartás, amely valakit kirekeszt, amelynek célja az erre a személyre való nyomásgyakorlás.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -156,17 +161,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért volt nagyszámú óra- és ékszerhirdetés 1930-ban?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: Azért volt nagyszámú az óra- és ékszerhirdetés 1930-ban, mert a luxustermékek gyártói rá se hederítettek a válságra, hiszen nem csökkentek az akkoriban magasan pozícionált termékek reklámjai.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: Azért volt nagyszámú az óra- és ékszerhirdetés 1930-ban, mert a luxustermékek gyártói rá se hederítettek a válságra, hiszen nem csökkentek az akkoriban magasan pozícionált termékek reklámjai.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -179,17 +185,18 @@ export const CARDS: SecCard[] = [
     questionText: "„Le lehet győzni a válságot! Tegyük az ablakba a reklámot!” A szöveg szerint miért mondhatjuk azt, hogy ez a szlogen David Ogilvy szellemében született?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Azért mondhatjuk, hogy ez a szlogen David Ogilvy szellemében született, mert Ogilvy szerint válságok idején kell felpumpálni a reklámköltséget, s ez a hirdető épp azt teszi, hiszen a jelenlegi válság idején hirdet. Mert azoknak a cégeknek a forgalma jelentősen növekedett, amelyek nem csökkentették reklámköltségeiket a válság idején.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Azért mondhatjuk, hogy ez a szlogen David Ogilvy szellemében született, mert Ogilvy szerint válságok idején kell felpumpálni a reklámköltséget, s ez a hirdető épp azt teszi, hiszen a jelenlegi válság idején hirdet. Mert azoknak a cégeknek a forgalma jelentősen növekedett, amelyek nem csökkentették reklámköltségeiket a válság idején.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -202,17 +209,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért rökönyödtek meg a nézők a Malév reklámon 1977-ben?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 6. bekezdésben: Azért rökönyödtek meg a nézők a ’77-es Malév-reklámon, mert közvetlenül előtte a hírekben éppen a légitársaság lezuhant gépének a tragédiájáról beszéltek.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 6. bekezdésben: Azért rökönyödtek meg a nézők a ’77-es Malév-reklámon, mert közvetlenül előtte a hírekben éppen a légitársaság lezuhant gépének a tragédiájáról beszéltek.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -225,17 +233,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hogyan manipulálják a hirdetők a fogyasztókat a szöveg szerint?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg alapján adott válasz: A fogyasztók manipulációjára többféle hirdetői módszer is létezik: a) A fogyasztók szeme előtt kell maradni, így biztosítva a márka folytonos jelenlétét.; b) Takarékoskodó reklám, amikor a hirdetés a drága portékák kiváltására/helyettesítésére vagy a termék tartósságára próbálja felhívni a figyelmet.; c) A magát önkorlátozónak feltüntető reklám, ami (látszólag) csökkentett fogyasztásra ösztönöz.; d) A vállalat jótevőként állítja be magát, így próbálva helyreállítani megtépázott renoméját.; e) A reklámozó látszólag átáll a vevő oldalára, és azt mondja: megértem, hogy neked nehéz, drágább az élet, és ezért nem csinálok úgy, hogy juszt is el akarok neked adni.; f) Naprakész reklámmal, amikor a hirdető az aznapi hírekhez gyártatja a reklámot.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg alapján adott válasz: A fogyasztók manipulációjára többféle hirdetői módszer is létezik: a) A fogyasztók szeme előtt kell maradni, így biztosítva a márka folytonos jelenlétét.; b) Takarékoskodó reklám, amikor a hirdetés a drága portékák kiváltására/helyettesítésére vagy a termék tartósságára próbálja felhívni a figyelmet.; c) A magát önkorlátozónak feltüntető reklám, ami (látszólag) csökkentett fogyasztásra ösztönöz.; d) A vállalat jótevőként állítja be magát, így próbálva helyreállítani megtépázott renoméját.; e) A reklámozó látszólag átáll a vevő oldalára, és azt mondja: megértem, hogy neked nehéz, drágább az élet, és ezért nem csinálok úgy, hogy juszt is el akarok neked adni.; f) Naprakész reklámmal, amikor a hirdető az aznapi hírekhez gyártatja a reklámot.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -248,18 +257,69 @@ export const CARDS: SecCard[] = [
     questionText: "Miért gondolja azt a szerző, hogy a magukat önkorlátozónak feltüntető reklámok hatékonyak válság idején? Egyetértesz-e vele ebben?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Saját szavakkal kifejtett vélemény: Mert a fogyasztók úgy gondolják, hogy ha kisebb fogyasztásra serkentik őket a gyártók, akkor a fogyasztók érdekeit tartják szem előtt, hiszen ha kevesebbet fogyasztanak, az kevesebbe is kerül, s így a fogyasztók spórolnak. A gyártóknak ezáltal könnyebb elérniük azt, hogy a fogyasztók bizalommal legyenek irántuk és a termékük iránt, s így hitelesnek tűnnek majd a fogyasztók szemében, és nagyobb eséllyel vásárolják majd a terméküket. Igen, egyetértek, mert… / Nem, nem értek egyet, mert… (egyéni megoldások).", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Saját szavakkal kifejtett vélemény: Mert a fogyasztók úgy gondolják, hogy ha kisebb fogyasztásra serkentik őket a gyártók, akkor a fogyasztók érdekeit tartják szem előtt, hiszen ha kevesebbet fogyasztanak, az kevesebbe is kerül, s így a fogyasztók spórolnak. A gyártóknak ezáltal könnyebb elérniük azt, hogy a fogyasztók bizalommal legyenek irántuk és a termékük iránt, s így hitelesnek tűnnek majd a fogyasztók szemében, és nagyobb eséllyel vásárolják majd a terméküket. Igen, egyetértek, mert… / Nem, nem értek egyet, mert… (egyéni megoldások).", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2010 Higher Level — © State Examinations Commission.",
+    id: "hun-2010-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-szoveg-alapjan-kommentald-alabbi-mondatot",
+    section: "II", questionRef: "2010 HL Section II Q1",
+    questionText: "A szöveg alapján kommentáld az alábbi mondatot körülbelül 100 szóban: Pénzt kell költeni ahhoz, hogy pénzt keressünk.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Körülbelül 100 szóban tisztán, érthetően kifejtett saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “Be kell fektetnünk azért, hogy a termékünket megismerhesse a közönség: médiajelenlét, kellő számú és minőségű megjelenés”; “Válság idején különösen fontos, hogy a fogyasztók információkat kapjanak termékeinkről, hiszen eleve kevesebbet költhetnek”; “Meg kell nyernünk a fogyasztók bizalmát, hogy minket, és ne a vetélytársat válasszák”; “Az érdeklődést fenn kell tartani a termékünk iránt”; “A terméket jó színben kell feltüntetni”; “A célcsoportot adekvát módon kell megszólítani”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2010 Higher Level — © State Examinations Commission.",
+    id: "hun-2010-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-reklamok-hiszunk-nekik-vagy",
+    section: "III", questionRef: "2010 HL Section III Q1",
+    questionText: "A két téma közül válassz ki egyet, és írj egy körülbelül 300 szavas esszét! Reklámok: hiszünk nekik?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2010 Higher Level — © State Examinations Commission.",
+    id: "hun-2010-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-senki-sem-kulonallo-sziget",
+    section: "III", questionRef: "2010 HL Section III Q2",
+    questionText: "A két téma közül válassz ki egyet, és írj egy körülbelül 300 szavas esszét! „Senki sem különálló sziget” (J. Donne, fordította: Sőtér István)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -271,17 +331,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázd meg, mit jelent a „szabotálás” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található szó saját szavaiddal kifejezve: a „szabotálás” szó azt jelenti, hogy szándékosan akadályoz valakit egy cél elérésében.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található szó saját szavaiddal kifejezve: a „szabotálás” szó azt jelenti, hogy szándékosan akadályoz valakit egy cél elérésében.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -294,17 +355,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázd meg, mit jelent a „deklaráció” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található szó saját szavaiddal kifejezve: a „deklaráció” szó kinyilatkoztatást, nyilatkozatot, kijelentést jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található szó saját szavaiddal kifejezve: a „deklaráció” szó kinyilatkoztatást, nyilatkozatot, kijelentést jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -317,17 +379,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázd meg, mit jelent az „eufória” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található szó saját szavaiddal kifejezve: az „eufória” szó fokozott jókedvet, mámort, kábulatot jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található szó saját szavaiddal kifejezve: az „eufória” szó fokozott jókedvet, mámort, kábulatot jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -340,17 +403,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázd meg, mit jelent a „meddő vita” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található szó saját szavaiddal kifejezve: a „meddő vita” kifejezés hatástalan, eredménytelen, terméketlen megbeszélést jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található szó saját szavaiddal kifejezve: a „meddő vita” kifejezés hatástalan, eredménytelen, terméketlen megbeszélést jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -363,17 +427,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hogyan jelenik meg Németországban a labdarúgás iránti lelkesedés a hétköznapokban?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Németország négyévente fekete-piros-sárga nemzeti színekbe öltözik. Az autókon e célra készült műanyag tartókon nemzeti zászlók lengenek, az erkélyeket fellobogózzák. A kocsiknak már a visszapillantó tükreit is nemzeti színekkel vonják be.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Németország négyévente fekete-piros-sárga nemzeti színekbe öltözik. Az autókon e célra készült műanyag tartókon nemzeti zászlók lengenek, az erkélyeket fellobogózzák. A kocsiknak már a visszapillantó tükreit is nemzeti színekkel vonják be.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -386,17 +451,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért tud egyaránt lelkesedni a bennszülött és a bevándorolt német focirajongó is a német válogatottért?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 3. bekezdésben: Mert a német válogatott 23 fős vb-keretében 11 játékosnak vannak külföldi gyökerei. És mert egyetlen idegenlégiós sincs közöttük, valamennyien a Bundesliga meccsein lépnek pályára hétről hétre, hazai közönség előtt.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 3. bekezdésben: Mert a német válogatott 23 fős vb-keretében 11 játékosnak vannak külföldi gyökerei. És mert egyetlen idegenlégiós sincs közöttük, valamennyien a Bundesliga meccsein lépnek pályára hétről hétre, hazai közönség előtt.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -407,19 +473,21 @@ export const CARDS: SecCard[] = [
     id: "hun-2011-hl-i-4", topicId: "hungarian-0-1", conceptId: "adj-meg-okot-miert-orultek-torokok",
     section: "I", questionRef: "2011 HL Section I Q4",
     questionText: "Adj meg 2 okot, miért örültek a törökök a német válogatottnak?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: 1) A törököknek azért sem esik nehezükre, hogy azonosuljanak választott második hazájuk csapatával, mert a török nemzeti válogatott nincs ott Dél- Afrikában a világbajnokságon.; 2) És különösen örültek akkor, amikor a továbbjutást jelentő gólt éppen Mesut Özil, török szülőktől származó, de már Németországban született játékmester lőtte.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A törököknek azért sem esik nehezükre, hogy azonosuljanak választott második hazájuk csapatával, mert a török nemzeti válogatott nincs ott Dél-Afrikában a világbajnokságon.", marks: null, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme heads its answer “Válasz a 2. bekezdésben:” and numbers the two reasons 1) and 2)." },
+    { id: "r-2", kind: "point", verbatim: "És különösen örültek akkor, amikor a továbbjutást jelentő gólt éppen Mesut Özil, török szülőktől származó, de már Németországban született játékmester lőtte.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -432,17 +500,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért szolgál példaként a német nemzeti tizenegy az olasz focicsapat számára?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 6. bekezdése alapján adott válasz: Az olasz foci korábban minden réteget egybeforrasztott, mára bundaügyektől hangos, megjelent a széthúzás, ráadásul az olasz társadalom általános elöregedésének problémáját az olasz válogatott is tükrözte. Az olasz identitás alappillérének számító labdarúgás akkor újulhat csak meg, ha az öreg sztárok helyét átvehetik a saját nevelésű fiatalok, akik toszkánok éppúgy lehetnek, mint szicíliaiak vagy bevándorlók gyermekei. Ezért mondhatjuk azt, hogy a sokszínű német nemzeti tizenegy lehet a példa az olasz focicsapat számára, mert abban a csapatban mindaz megvan, ami hiányzik a jelenlegi olasz válogatottból.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 6. bekezdése alapján adott válasz: Az olasz foci korábban minden réteget egybeforrasztott, mára bundaügyektől hangos, megjelent a széthúzás, ráadásul az olasz társadalom általános elöregedésének problémáját az olasz válogatott is tükrözte. Az olasz identitás alappillérének számító labdarúgás akkor újulhat csak meg, ha az öreg sztárok helyét átvehetik a saját nevelésű fiatalok, akik toszkánok éppúgy lehetnek, mint szicíliaiak vagy bevándorlók gyermekei. Ezért mondhatjuk azt, hogy a sokszínű német nemzeti tizenegy lehet a példa az olasz focicsapat számára, mert abban a csapatban mindaz megvan, ami hiányzik a jelenlegi olasz válogatottból.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -455,18 +524,93 @@ export const CARDS: SecCard[] = [
     questionText: "Mi az a meddő vita, amelyre Rozes politikai elemző reflektált?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 4. és 5. bekezdése alapján adott válasz: Rozes politikai elemző arra a meddő vitára reflektált, amely politikusok és neves tudósok közt zajlott arról, hogy mi volt az oka a korábban a multikulturális nemzeti egységet és a sikeres integrációt jelképező válogatott siralmas/gyászos világbajnoki szereplésének, amelyért mind a politikusok, mind a tudósok elhárították maguktól a felelősséget, bár mindkét fél elismeri, hogy a rossz világbajnoki szereplés társadalmi válságtünet. A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 4. és 5. bekezdése alapján adott válasz: Rozes politikai elemző arra a meddő vitára reflektált, amely politikusok és neves tudósok közt zajlott arról, hogy mi volt az oka a korábban a multikulturális nemzeti egységet és a sikeres integrációt jelképező válogatott siralmas/gyászos világbajnoki szereplésének, amelyért mind a politikusok, mind a tudósok elhárították maguktól a felelősséget, bár mindkét fél elismeri, hogy a rossz világbajnoki szereplés társadalmi válságtünet.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2011 Higher Level — © State Examinations Commission.",
+    id: "hun-2011-hl-i-1-a", topicId: "hungarian-0-0", conceptId: "magyarazd-meg-mit-jelent-moralis-szo",
+    section: "I", questionRef: "2011 HL Section I Q1(a)",
+    questionText: "Magyarázd meg, mit jelent a „morális” szó!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található szó saját szavaiddal kifejezve: a „morális” szó azt jelenti, hogy erkölcsös, erkölcsi. Azon normák alapján élő, amelyeket társadalmi szinten helyesnek tartunk.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2011 Higher Level — © State Examinations Commission.",
+    id: "hun-2011-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-szoveg-alapjan-kommentald-alabbiakat-minimum",
+    section: "II", questionRef: "2011 HL Section II Q1",
+    questionText: "A szöveg alapján kommentáld az alábbiakat minimum 100 szóban: Kommentáld, hogyan jelenik meg a szövegben a nációk együttélése, és fejtsd ki róla a saját véleményedet!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100 szóban tisztán, érthetően kifejtett saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “a) Németország a pozitív példa:”; “Még a német kancellár is otthagyta a fontos világgazdasági tanácskozást, hogy megnézze hazája meccsét, ez a fajta lelkesedés a társadalom minden rétegében ott van a hétköznapokban is”; “A multikulturalitást és a sikeres integrációt jelképezi: minden réteget egybeforraszt; még a bevándorlók lakta kerületekben is legalább annyi látható a nemzeti összetartozás jelképeiből, mint az „igazi német” negyedekben; a győztes meccs utáni ünnepléseken nemcsak a németek, hanem bevándorlók is ugyanúgy részt vesznek”; “A sokféleség elfogadása a kulcs: a 23 fős német vb-keretben 11 játékosnak vannak külföldi gyökerei, ezért a vegyes összetételű csapatért egyaránt tud lelkesedni a bennszülött és a bevándorolt német focirajongó is”; “Nincs köztük egyetlen idegenlégiós sem, valamennyien a Bundesliga meccsein lépnek pályára hétről hétre, hazai közönség előtt”; “Az identitás egyik alappillére lehet a futball: saját nevelésű fiatalok, akik németek éppúgy lehetnek, mint bevándorlók”; “b) Franciaország a negatív példa:”; “Az utcai bandák morális szintjére süllyedt a korábban a multikulturális nemzeti egységet jelképező válogatott”; “A fehér elit és a bevándorlók alkotta „osztályon kívüliek” között óriási a szakadék”; “Játékuk társadalmi válságtünet is: arra a társadalmi bajra mutat rá, hogy a nációk együttélése kölcsönös faji gyűlölködésbe, többoldalú rasszizmusba csapott át”; “A világbajnokságon a francia válogatott játékának a szabotálásában is tetten érhető volt a csillagászati összegeket kereső észak-afrikai származású játékosok lázadása”; “c) Saját szavakkal kifejtett vélemény”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2011 Higher Level — © State Examinations Commission.",
+    id: "hun-2011-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-diverzitas-segiti-sikert-vagy",
+    section: "III", questionRef: "2011 HL Section III Q1",
+    questionText: "A két téma közül válassz ki egyet, és írj egy minimum 300 szavas esszét! A diverzitás elősegíti-e a sikert?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2011 Higher Level — © State Examinations Commission.",
+    id: "hun-2011-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-legtobben-annyira-boldogok-amennyire",
+    section: "III", questionRef: "2011 HL Section III Q2",
+    questionText: "A két téma közül válassz ki egyet, és írj egy minimum 300 szavas esszét! „A legtöbben annyira boldogok, amennyire elszánták magukat.” (Abraham Lincoln, az Amerikai Egyesült Államok 16. elnöke, 1809–1865)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -478,17 +622,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „mártír” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaival kifejezve: a „mártír” szó vértanút, sok áldozatot hozó, önfeláldozó embert jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaival kifejezve: a „mártír” szó vértanút, sok áldozatot hozó, önfeláldozó embert jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -501,17 +646,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „summa” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaival kifejezve: a „summa” szó összeget, rövid tartalmat vagy foglalatot jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaival kifejezve: a „summa” szó összeget, rövid tartalmat vagy foglalatot jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -524,17 +670,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „sereghajtó” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található szó saját szavaival kifejezve: a „sereghajtó” szó utolsót jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található szó saját szavaival kifejezve: a „sereghajtó” szó utolsót jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -547,17 +694,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „mérvadó” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található szó saját szavaival kifejezve: a „mérvadó” szó azt jelenti, hogy meghatározó.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található szó saját szavaival kifejezve: a „mérvadó” szó azt jelenti, hogy meghatározó.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -570,17 +718,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „bliccel” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található szó saját szavaival kifejezve: a „bliccel” szó azt jelenti, hogy valaki a kötelezettséget elmulasztja, kivonja magát a fizetés alól, lóg.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található szó saját szavaival kifejezve: a „bliccel” szó azt jelenti, hogy valaki a kötelezettséget elmulasztja, kivonja magát a fizetés alól, lóg.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -593,17 +742,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért szégyenkezhetnek a fővárosiak a Budapest két pontján felállított ásványvíz-automaták használata miatt?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Azért szégyenkezhetnek a fővárosiak a Budapest két pontján felállított ásványvíz-automaták használata miatt, mert az első héten az automatákból elfogyott víznek még a feléért sem fizettek.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Azért szégyenkezhetnek a fővárosiak a Budapest két pontján felállított ásványvíz-automaták használata miatt, mert az első héten az automatákból elfogyott víznek még a feléért sem fizettek.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -616,17 +766,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hogyan versenyeztetett újvilági metropolisokat „a legőszintébb város” címért egy jeges teát gyártó cég?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 3. bekezdésben: Úgy versenyeztetett újvilági metropolisokat „a legőszintébb város” címért egy jeges teát gyártó cég, hogy felügyelet nélküli standokat állítottak fel több városban, a járókelők lelkiismeretére bízva, hogy bedobják-e a perselybe az elvitt hűsítők egydolláros ellenértékét.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 3. bekezdésben: Úgy versenyeztetett újvilági metropolisokat „a legőszintébb város” címért egy jeges teát gyártó cég, hogy felügyelet nélküli standokat állítottak fel több városban, a járókelők lelkiismeretére bízva, hogy bedobják-e a perselybe az elvitt hűsítők egydolláros ellenértékét.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -639,17 +790,18 @@ export const CARDS: SecCard[] = [
     questionText: "A cikk alapján magyarázza meg, miért van/lehetséges az, hogy „az emberek döntő többsége nem potyázik efféle helyzetekben”?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 5. bekezdésben: Azért van/lehetséges az, hogy „az emberek döntő többsége nem potyázik efféle helyzetekben”, mert ősi evolúciós reflex, hogy ha az ember kap valamit, szükségesnek érzi azt viszonozni: a megelőlegezett bizalmat a legtöbben azzal hálálják meg, hogy nem játsszák el.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 5. bekezdésben: Azért van/lehetséges az, hogy „az emberek döntő többsége nem potyázik efféle helyzetekben”, mert ősi evolúciós reflex, hogy ha az ember kap valamit, szükségesnek érzi azt viszonozni: a megelőlegezett bizalmat a legtöbben azzal hálálják meg, hogy nem játsszák el.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -662,17 +814,18 @@ export const CARDS: SecCard[] = [
     questionText: "A cikk alapján magyarázza meg, hogy bizonyos emberek miért élnek vissza bizonyos helyzetekkel, és más helyzetekkel miért nem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 3., 4. és 5. bekezdése alapján adott válasz: Azért fordulhat elő, hogy bizonyos emberek visszaélnek bizonyos helyzetekkel, mert nem érzik úgy, hogy azért a szolgáltatásért fizetniük kellene, úgy érzik, nekik az automatikusan jár. Például a menedzserek irodáinál elhelyezett ládikákban általában kevesebb pénzt talál, mint az alacsonyabb beosztásúakéi mellett. Vagy egy adott társadalomban az utazók jelentős része alapvető szolgáltatásnak érzi a tömegközlekedést, ezért csal lelkiismeret- furdalás nélkül. Míg a becsületkasszákkal többnyire azok sem élnek vissza, akik rendszeresen bliccelnek a villamoson. Utóbbi hátterében inkább az áll, hogy ha az ember kap valamit, szükségesnek érzi azt viszonozni: a megelőlegezett bizalmat a legtöbben azzal hálálják meg, hogy nem játsszák el. Kevésbé érvényesül ez az ösztönös viszonosság, ha be nem tartásáért büntetés jár. Ez különösen igaz, ha nem két egyenrangú fél között zajlik kommunikáció: az egyik érdekelt fél az államhatalom vagy más arctalan szervezet. Valamint az emberek akkor nem élnek vissza bizonyos helyzetekkel, ha jótékonykodással kombinált helyzetről van szó, bár az adakozókedvben annak is része lehet, ha tudják, hogy látják őket, például a jeges teás jótékonysági akciónál néhány kamera révén a világhálón élőben lehetett követni, kik oldalognak el fizetés nélkül. Bizonyos emberek hajlamosak akkor is potyázni, amikor nem endeghetnek meg maguknak bizonyos szolgáltatásokat, például kevésbé szívesen nyúlnak a zsebükbe karácsony vagy hálaadás napja tájékán.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 3., 4. és 5. bekezdése alapján adott válasz: Azért fordulhat elő, hogy bizonyos emberek visszaélnek bizonyos helyzetekkel, mert nem érzik úgy, hogy azért a szolgáltatásért fizetniük kellene, úgy érzik, nekik az automatikusan jár. Például a menedzserek irodáinál elhelyezett ládikákban általában kevesebb pénzt talál, mint az alacsonyabb beosztásúakéi mellett. Vagy egy adott társadalomban az utazók jelentős része alapvető szolgáltatásnak érzi a tömegközlekedést, ezért csal lelkiismeret-furdalás nélkül. Míg a becsületkasszákkal többnyire azok sem élnek vissza, akik rendszeresen bliccelnek a villamoson. Utóbbi hátterében inkább az áll, hogy ha az ember kap valamit, szükségesnek érzi azt viszonozni: a megelőlegezett bizalmat a legtöbben azzal hálálják meg, hogy nem játsszák el. Kevésbé érvényesül ez az ösztönös viszonosság, ha be nem tartásáért büntetés jár. Ez különösen igaz, ha nem két egyenrangú fél között zajlik kommunikáció: az egyik érdekelt fél az államhatalom vagy más arctalan szervezet. Valamint az emberek akkor nem élnek vissza bizonyos helyzetekkel, ha jótékonykodással kombinált helyzetről van szó, bár az adakozókedvben annak is része lehet, ha tudják, hogy látják őket, például a jeges teás jótékonysági akciónál néhány kamera révén a világhálón élőben lehetett követni, kik oldalognak el fizetés nélkül. Bizonyos emberek hajlamosak akkor is potyázni, amikor nem endeghetnek meg maguknak bizonyos szolgáltatásokat, például kevésbé szívesen nyúlnak a zsebükbe karácsony vagy hálaadás napja tájékán.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -685,18 +838,69 @@ export const CARDS: SecCard[] = [
     questionText: "A szerző azt állítja, hogy az „önkéntes kasszák” hatással lehetnek a társadalom átnevelésére. Fejtse ki ezt az álláspontot, és azt is hogy, egyetért-e ezzel vagy sem?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 6. bekezdése alapján adott válasz: A szerző szerint nincs feltétlen összefüggés az „önkéntes kasszák” és a becsület között, mégis van olyan helyzet, hogy egy egész társadalom átnevelését remélik ezektől. Például tavalyelőtt Indonéziában több ezer pénztár (és pénztáros) nélküli kávézót nyitottak az ügyészi hivatal szorgalmazására. Az akció nagyobb kampány része volt, mellyel a világ országait a társadalmat átható korrupció alapján rangsoroló lajstromon meglehetősen rosszul teljesítő távol-keleti ország gazdaságának erkölcsösebbé tételét célozták. Egyéni álláspont kifejtése: Igen, egyetértek, mert… / vagy Nem, nem értek egyet, mert… A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30% 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 6. bekezdése alapján adott válasz: A szerző szerint nincs feltétlen összefüggés az „önkéntes kasszák” és a becsület között, mégis van olyan helyzet, hogy egy egész társadalom átnevelését remélik ezektől. Például tavalyelőtt Indonéziában több ezer pénztár (és pénztáros) nélküli kávézót nyitottak az ügyészi hivatal szorgalmazására. Az akció nagyobb kampány része volt, mellyel a világ országait a társadalmat átható korrupció alapján rangsoroló lajstromon meglehetősen rosszul teljesítő távol-keleti ország gazdaságának erkölcsösebbé tételét célozták. Egyéni álláspont kifejtése: Igen, egyetértek, mert… / vagy Nem, nem értek egyet, mert…", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2012 Higher Level — © State Examinations Commission.",
+    id: "hun-2012-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-szoveg-alapjan-kommentalja-alabbiakat-minimum",
+    section: "II", questionRef: "2012 HL Section II Q1",
+    questionText: "A szöveg alapján kommentálja az alábbiakat minimum 100 szóban: „ [A] viszonosság elvét egyformán követi a világ összes népe.” Kommentálja ezt a megállapítást 100 szóban!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100 szóban tisztán, érthetően kifejtett saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “Míg a szabálykövetési hajlamban köztudomásúan vannak eltérések az egyes nemzetek között, a viszonosság elvét egyformán követi a világ összes népe: nemcsak az Egyesült Államokban, hanem a dunántúli falvakban is gyakori, hogy a gazdák a portájuk előtt felügyelet nélküli asztalkákra helyezik a terményeiket, melyeknek ellenértékét kitett befőttesüvegekbe várják”; “A magyarok egyébként korábban jó eredménnyel vizsgáztak a viszonosság terén: az 1956-os forradalom idején két napig maradtak érintetlenek azok a Budapest utcáin álló lőszeres ládák, melyekben az elesettek családtagjainak megsegítésére gyűjtöttek”; “Tavaly nyáron újvilági metropolisok versenyeztek „a legőszintébb város” címért: ehhez felügyelet nélküli standokat állítottak fel több városban, a küzdelmet az italok árának több mint 93%-át kicsengető bostoniak nyerték, de a sereghajtó Chicagóban is a palackok több mint háromnegyedéért fizettek”; “Paul „Bagel man” Feldman vállalkozását a becsületkasszákra alapozza: öt éve úgy fuvarozza péksüteményeit nagyobb irodaházakba, hogy az önkiszolgáló standok mellé állított perselyeket csak a következő árufeltöltéskor üríti. Értékesítési mutatóiból kitűnik, hogy csak minden tizedik süteményét viszik el fizetés nélkül, így a vesztesége kevesebb, mint amennyi költsége egy munkatárs alkalmazásával lenne”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2012 Higher Level — © State Examinations Commission.",
+    id: "hun-2012-hl-iii-1", topicId: "hungarian-1-1", conceptId: "jobb-tisztessegben-szegenyen-elni-mint-tisztessegtelenul",
+    section: "III", questionRef: "2012 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Jobb tisztességben szegényen élni, mint tisztességtelenül, de gazdagon?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2012 Higher Level — © State Examinations Commission.",
+    id: "hun-2012-hl-iii-2", topicId: "hungarian-1-1", conceptId: "modern-tarsadalmunkban-minden-itt-most-koncentral",
+    section: "III", questionRef: "2012 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Modern társadalmunkban minden az „itt és most”-ra koncentrál.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -708,17 +912,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „absztinens” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaival kifejezve: az „absztinens” önmegtartóztatót, az addiktív dolgoktól tartózkodó személyt jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaival kifejezve: az „absztinens” önmegtartóztatót, az addiktív dolgoktól tartózkodó személyt jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -731,17 +936,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „kérkedik” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található szó saját szavaival kifejezve: a „kérkedik” szó azt jelenti, hogy valaki valamivel feltűnő módon dicsekszik, büszkélkedik.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található szó saját szavaival kifejezve: a „kérkedik” szó azt jelenti, hogy valaki valamivel feltűnő módon dicsekszik, büszkélkedik.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -754,17 +960,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „képben van” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival kifejezve: a „képben van” kifejezés azt jelenti, hogy pontosan érti a helyzetet, tájékozott valamiről.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival kifejezve: a „képben van” kifejezés azt jelenti, hogy pontosan érti a helyzetet, tájékozott valamiről.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -777,17 +984,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „sarkall” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található szó saját szavaival kifejezve: a „sarkall” szó azt jelenti, hogy ösztönöz, rávesz, buzdít.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található szó saját szavaival kifejezve: a „sarkall” szó azt jelenti, hogy ösztönöz, rávesz, buzdít.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -800,17 +1008,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „berzenkedés” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található szó saját szavaival kifejezve: a „berzenkedés” szó azt jelenti, hogy vonakodik, idegenkedik valamitől vagy ingerülten méltatlankodik.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található szó saját szavaival kifejezve: a „berzenkedés” szó azt jelenti, hogy vonakodik, idegenkedik valamitől vagy ingerülten méltatlankodik.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -823,17 +1032,18 @@ export const CARDS: SecCard[] = [
     questionText: "Napi átlag mennyit tévéznek a televíziók aktuális műsorai mellett internetes tartalmakat is elérhetővé tevő tévés technológia felhasználói?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 8. bekezdésben: A televíziók aktuális műsorai mellett internetes tartalmakat is elérhetővé tevő tévés technológia felhasználói kevesebbet és tudatosabban tévéznek, napi átlag 40 percet néznek hagyományos, további 40 percig általuk letöltött műsort.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 8. bekezdésben: A televíziók aktuális műsorai mellett internetes tartalmakat is elérhetővé tevő tévés technológia felhasználói kevesebbet és tudatosabban tévéznek, napi átlag 40 percet néznek hagyományos, további 40 percig általuk letöltött műsort.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -846,17 +1056,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért kérik a legtöbb egyházi és alternatív iskolában a hétköznapi tévézés nélkülözését a gyerekek szüleitől?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 6. bekezdésben: Azért kérik a legtöbb egyházi és alternatív iskolában a gyerekek szüleitől a hétköznapi tévézés nélkülözését, részint hogy ne vegye el az időt mástól, részint arra hivatkozva, hogy dekoncentrálttá teszi a nebulókat.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 6. bekezdésben: Azért kérik a legtöbb egyházi és alternatív iskolában a gyerekek szüleitől a hétköznapi tévézés nélkülözését, részint hogy ne vegye el az időt mástól, részint arra hivatkozva, hogy dekoncentrálttá teszi a nebulókat.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -869,17 +1080,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért állítja azt a cikk, hogy „az egyre ritkábban tévézők, illetve a totálisan tv-absztinensek döntő többsége nem anyagi megfontolás miatt tartóztatja meg magát az efféle élvezetektől”?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ellentétben a korábbi évtizedekkel – ma már nem elsősorban pénzkérdés, hanem tudatos választás, hogy egy lakásban akad-e tévé, vagy nem. Erre utal, hogy a készülékkel ellátott háztartások aránya közel ugyanakkorra a legalsó, illetve a legfelső jövedelmi csoportba tartozók esetében.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: Azért állítja a cikk, hogy az egyre ritkábban tévézők és a totálisan tv-absztinensek döntő többsége nem anyagi megfontolás miatt tartóztatja meg magát a tévénézés élvezetétől, mert – ellentétben a korábbi évtizedekkel – ma már nem elsősorban pénzkérdés, hanem tudatos választás, hogy egy lakásban akad-e tévé, vagy nem. Erre utal, hogy a készülékkel ellátott háztartások aránya közel ugyanakkorra a legalsó, illetve a legfelső jövedelmi csoportba tartozók esetében.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -892,17 +1104,18 @@ export const CARDS: SecCard[] = [
     questionText: "A cikk alapján magyarázza meg, miért lehet megtévesztő, hogy a fiatalok körében ma már szinte divat azzal kérkedni, hogy „én nem nézek tévét”!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 3. bekezdése alapján adott válasz: Azért lehet megtévesztő a fiatalok körében azzal kérkedni, hogy „én nem nézek tévét”, mert ez sokszor csak a rugalmas elszakadást jelenti a hagyományos tévézéstől: a letöltött filmek, dvd-k segítségével, a tévécsatornák honlapján elérhető rögzített adások megtekintésével ugyanis sokan még tévé nélkül is „képben” vannak, azaz tájékozottak.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 3. bekezdése alapján adott válasz: Azért lehet megtévesztő a fiatalok körében azzal kérkedni, hogy „én nem nézek tévét”, mert ez sokszor csak a rugalmas elszakadást jelenti a hagyományos tévézéstől: a letöltött filmek, dvd-k segítségével, a tévécsatornák honlapján elérhető rögzített adások megtekintésével ugyanis sokan még tévé nélkül is „képben” vannak, azaz tájékozottak.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -915,18 +1128,69 @@ export const CARDS: SecCard[] = [
     questionText: "A szerző azt állítja, „[s]okakat az interaktivitás hiánya tántorít el a tévézéstől”. Fejtse ki ezt az álláspontot, és azt is, egyetért-e vele, vagy sem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 3. és 7. bekezdése alapján adott válasz: Azért állítja a szerző, hogy sokakat az interaktivitás hiánya tántorít el a tévézéstől, mert a fiatalok (18–29 év) körében az internet mostanra az elsődleges, napi szinten használt médiaeszközzé vált. Felnőtt egy generáció, amely számára már idegen az a szereposztás, hogy csupán passzív fogyasztó lehet. Valamint ma már nem kell híradókat nézni ahhoz, hogy valaki vizuálisan is tájékozott legyen. Az internetes hírcsatornákon már „mozgó tudósítások” is megtalálhatók. Egyéni álláspont kifejtése: Igen, egyetértek, mert… / vagy Nem, nem értek egyet, mert… A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30% 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 3. és 7. bekezdése alapján adott válasz: Azért állítja a szerző, hogy sokakat az interaktivitás hiánya tántorít el a tévézéstől, mert a fiatalok (18–29 év) körében az internet mostanra az elsődleges, napi szinten használt médiaeszközzé vált. Felnőtt egy generáció, amely számára már idegen az a szereposztás, hogy csupán passzív fogyasztó lehet. Valamint ma már nem kell híradókat nézni ahhoz, hogy valaki vizuálisan is tájékozott legyen. Az internetes hírcsatornákon már „mozgó tudósítások” is megtalálhatók. Egyéni álláspont kifejtése: Igen, egyetértek, mert… / vagy Nem, nem értek egyet, mert…", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2013 Higher Level — © State Examinations Commission.",
+    id: "hun-2013-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-szoveg-alapjan-kommentalja-alabbiakat-minimum",
+    section: "II", questionRef: "2013 HL Section II Q1",
+    questionText: "A szöveg alapján kommentálja az alábbiakat minimum 100 szóban: A cikk alapján magyarázza meg, milyen okai lehetnek annak, hogy „[j]elentősen veszített népszerűségéből a szórakoztatóipar korábban évtizedeken át vezető médiuma, a televízió”!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100 szóban tisztán, érthetően kifejtett saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “az egyre ritkábban tévézők, illetve a totálisan tv-absztinensek döntő többsége nem anyagi megfontolás miatt tartóztatja meg magát az efféle élvezetektől. Ellentétben ugyanis a korábbi évtizedekkel, ma már nem elsősorban pénzkérdés, hanem tudatos választás a televízió (2. bk)”; “az önálló életet kezdő fiatalok azok, akik a szülőktől elköltözve, új életmódot kialakítva már eleve nem vesznek készüléket, ez sokszor csak a rugalmas elszakadás a hagyományos tévézéstől, a tévécsatornák hírközlésben betöltött szerepe egyre csökken, már nem kell híradókat nézni ahhoz, hogy valaki vizuálisan is tájékozott legyen (3. bk)”; “zömmel értelmiségi családok elvből fosztják meg magukat a képernyő nyújtotta élvezetektől. Például azért, mert a tévézéssel töltött időt és az onnan nyerhető információkat, illetve élményt az ár-érték arányt tekintve alacsonynak ítélik (4. bk)”; “a bűnös élvezetek közé sorolják (5. bk)l”; “az oktatásügyben is tetten érhető: a tudatos tévézés, a szelektálás a legtöbb egyházi, illetve alternatív iskolában már szinte kötelező tananyag (6. bk)”; “sokakat az interaktivitás hiánya tántorít el a tévézéstől. A fiatalok körében az internet mostanra az elsődleges, napi szinten használt médiaeszközzé vált (7. bk)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2013 Higher Level — © State Examinations Commission.",
+    id: "hun-2013-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-teve-nemcsak-arukat-reklamoz",
+    section: "III", questionRef: "2013 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! „[A] tévé nemcsak árukat reklámoz, hanem világnézetet is”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2013 Higher Level — © State Examinations Commission.",
+    id: "hun-2013-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-almaid-kovetese-keseredes-utazas",
+    section: "III", questionRef: "2013 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Álmaid követése – keserédes utazás",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -938,17 +1202,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „mazsolázik” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található szó saját szavaival kifejezve: a „mazsolázik” szó azt jelenti, hogy kedvére válogat, csak a neki tetsző(ke)t választja.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található szó saját szavaival kifejezve: a „mazsolázik” szó azt jelenti, hogy kedvére válogat, csak a neki tetsző(ke)t választja.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -961,17 +1226,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „ajtót mutat” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival kifejezve: az „ajtót mutat” kifejezés azt jelenti, hogy elküld, kiutasít valakit.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival kifejezve: az „ajtót mutat” kifejezés azt jelenti, hogy elküld, kiutasít valakit.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -984,17 +1250,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „sztereotípia” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található szó saját szavaival kifejezve: a „sztereotípia” szó azt jelenti, hogy felszínesen általánosító vélemény. Negatív, pozitív vagy semleges elképzelések és előítéletek együttese.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található szó saját szavaival kifejezve: a „sztereotípia” szó azt jelenti, hogy felszínesen általánosító vélemény. Negatív, pozitív vagy semleges elképzelések és előítéletek együttese.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1007,17 +1274,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „prognosztizál” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található szó saját szavaival kifejezve: a „prognosztizál” szó (tudományos alapú) előrejelzést jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található szó saját szavaival kifejezve: a „prognosztizál” szó (tudományos alapú) előrejelzést jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1030,17 +1298,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „irritáló” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 7. bekezdésben található szó saját szavaival kifejezve: az „irritáló” szó azt jelenti, hogy ingerel, zavar, bosszant, idegesít.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 7. bekezdésben található szó saját szavaival kifejezve: az „irritáló” szó azt jelenti, hogy ingerel, zavar, bosszant, idegesít.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1053,17 +1322,18 @@ export const CARDS: SecCard[] = [
     questionText: "A múlt év végén összesen hány külföldi élt bevándorlási, letelepedési vagy tartózkodási engedéllyel Magyarországon?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 7. bekezdésben: A múlt év végén összesen 100 ezernél kevesebb külföldi élt bevándorlási, letelepedési vagy tartózkodási engedéllyel Magyarországon. (Bár ez a szám duplázódik, ha az átmeneti papírokkal – például regisztrációs igazolással – itt élőket is közéjük számítjuk.)", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 7. bekezdésben: A múlt év végén összesen 100 ezernél kevesebb külföldi élt bevándorlási, letelepedési vagy tartózkodási engedéllyel Magyarországon. (Bár ez a szám duplázódik, ha az átmeneti papírokkal – például regisztrációs igazolással – itt élőket is közéjük számítjuk.)", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1076,17 +1346,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért egyre nagyobb az ódzkodás az egyébként „keblünkre ölelt” határontúli magyarokkal szemben?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 4. bekezdésben: Nem is a kulturális különbségek, mint inkább a munkahelyféltés miatt egyre nagyobb az ódzkodás az egyébként „keblünkre ölelt” határontúli magyarokkal szemben.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 4. bekezdésben: Nem is a kulturális különbségek, mint inkább a munkahelyféltés miatt egyre nagyobb az ódzkodás az egyébként „keblünkre ölelt” határontúli magyarokkal szemben.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1099,17 +1370,18 @@ export const CARDS: SecCard[] = [
     questionText: "A cikk szerint mire nincs csodarecept, és miért lenne rá szükség?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: A cikk szerint arra nincs csodarecept, hogyan csökkentsék a másság okozta beilleszkedési zavarokat, legyen szó akár bevándorlókról, akár őshonos kisebbségekről. Azért lenne rá szükség, mert az elöregedő európai országoknak szükségük van ugyanis az új munkaerőre, ezért a kontinens országai a szópárbajok, fizikai összecsapások ellenére várják a betelepülőket.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: A cikk szerint arra nincs csodarecept, hogyan csökkentsék a másság okozta beilleszkedési zavarokat, legyen szó akár bevándorlókról, akár őshonos kisebbségekről. Azért lenne rá szükség, mert az elöregedő európai országoknak szükségük van ugyanis az új munkaerőre, ezért a kontinens országai a szópárbajok, fizikai összecsapások ellenére várják a betelepülőket.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1122,17 +1394,18 @@ export const CARDS: SecCard[] = [
     questionText: "A cikk alapján magyarázza meg, miért mondhatjuk, hogy „darázsfészekbe nyúl, aki a magyar társadalom bevándorlókkal való felfrissítésétől reméli az öregedő korfa megújulását”?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 3. bekezdése alapján adott válasz: Azért mondhatjuk, hogy darázsfészekbe nyúl, aki a magyar társadalom bevándorlókkal való felfrissítésétől reméli az öregedő korfa megújulását, mert a Cseh-Szombathy László akadémikus vezette demográfiai műhely által készített tanulmány csupán matematikai számításnak, és nem gyakorlati megoldásnak szánt ötlet, ám az mégis heves politikai elutasítottságot váltott ki.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 3. bekezdése alapján adott válasz: Azért mondhatjuk, hogy darázsfészekbe nyúl, aki a magyar társadalom bevándorlókkal való felfrissítésétől reméli az öregedő korfa megújulását, mert a Cseh-Szombathy László akadémikus vezette demográfiai műhely által készített tanulmány csupán matematikai számításnak, és nem gyakorlati megoldásnak szánt ötlet, ám az mégis heves politikai elutasítottságot váltott ki.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1143,20 +1416,74 @@ export const CARDS: SecCard[] = [
     id: "hun-2014-hl-i-6", topicId: "hungarian-0-1", conceptId: "szerz-azt-allitja-hogy-zok-akiknek",
     section: "I", questionRef: "2014 HL Section I Q6",
     questionText: "A szerző azt állítja, hogy „[a]zok, akiknek már közvetlen tapasztalataik is vannak egy-egy »idegenről«, azok szomszédként, munkatársként jóval elfogadóbbak, mint amikor a kérdésről elviekben faggatják őket”. Hozzon a cikkből legalább 2 példát ennek az állításnak az alátámasztására, illetve fejtse ki, egyetért-e a szerző állításával, vagy sem!",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 6. bekezdése alapján adott válasz: A szerző állításának – miszerint „[a]zok, akiknek már közvetlen tapasztalataik is vannak egy-egy »idegenről«, azok szomszédként, munkatársként jóval elfogadóbbak, mint amikor a kérdésről elviekben faggatják őket” – alátámasztására példák:1) A kínaiak immár „bevett népcsoporthoz” tartoznak, elfoglalták a helyüket a „munkamegosztásban”. Viszonylagos elfogadottságukat segíti, hogy nem különösebben kapcsolódnak hozzájuk a nyugalom megzavarásával kapcsolatos hírek.; 2)A természetgyógyászat kínai, vietnami művelői mellett a hagyományos orvoslásban is megszokott az ázsiai vagy afrikai származású doktorok jelenléte.; 3) A paphiánnyal küzdő plébániákon is tucatnyi ázsiai, afrikai „misszionáriussal” erősítenek, akiket a jelek szerint a konzervatív értékrendű hívek is el-, illetve befogadtak. Igen egyetértek, mert… / Nem, nem értek egyet, mert… A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A kínaiak immár „bevett népcsoporthoz” tartoznak, elfoglalták a helyüket a „munkamegosztásban”. Viszonylagos elfogadottságukat segíti, hogy nem különösebben kapcsolódnak hozzájuk a nyugalom megzavarásával kapcsolatos hírek.", marks: null, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme leads its answer with “A szöveg 6. bekezdése alapján adott válasz: A szerző állításának – miszerint „[a]zok, akiknek már közvetlen tapasztalataik is vannak egy-egy »idegenről«, azok szomszédként, munkatársként jóval elfogadóbbak, mint amikor a kérdésről elviekben faggatják őket” – alátámasztására példák:”, numbers its three examples 1) to 3), then prints the last line shown here." },
+    { id: "r-2", kind: "point", verbatim: "A természetgyógyászat kínai, vietnami művelői mellett a hagyományos orvoslásban is megszokott az ázsiai vagy afrikai származású doktorok jelenléte.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "A paphiánnyal küzdő plébániákon is tucatnyi ázsiai, afrikai „misszionáriussal” erősítenek, akiket a jelek szerint a konzervatív értékrendű hívek is el-, illetve befogadtak.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Igen egyetértek, mert… / Nem, nem értek egyet, mert…", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2014 Higher Level — © State Examinations Commission.",
+    id: "hun-2014-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-szoveg-alapjan-kommentalja-alabbiakat-minimum",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "A szöveg alapján kommentálja az alábbiakat minimum 100 szóban! A cikk alapján magyarázza meg, miért mondhatjuk, hogy a mai Magyarországon csak látszólag valósult meg Szent István intelme!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100 szóban tisztán, érthetően kifejtett saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “Azért mondhatjuk, hogy Szent István intelme csak látszólag valósult meg Magyarországon, mert ugyan a nagyvárosok központjában megtelepedtek a kínai és indiai éttermek; betérve egy-egy belvárosi romkocsmába, vagy jegyet váltva az ismertebb fürdők valamelyikébe, esetleg Hévízre kirándulva, lassanként kevesebb magyar szót hallani, mint idegent, ám a mindennapi tapasztalatok és számos felmérés is megerősíti, hogy a Szent István-i „befogadó nemzet” ideája nem létezik. Leginkább a „fontolva maradás” kifejezés igaz az országra és Budapestre, mert”; “már az elméleti számításnak szánt ötlet is heves politikai elutasítottságot váltott ki, amely felvetette, hogy ha 1,8 millió bevándorlót befogadna az ország, 50 évre megoldódnának a népesség fogyásából, elöregedéséből eredő problémák (3. bk);”; “a magyarok negyede-harmada huzamosabb ideje azon az állásponton van, hogy minden menedéket kereső előtt le kellene zárni a határokat. A nem eleve elutasítók kétharmada is mérlegelné, kit engedne be; de még a „reálpolitikus többség” is mazsolázna a letelepedni szándékozók között (4. bk);”; “amikor elviekben faggatják a magyarokat egy-egy „idegenről”, akkor jóval kevésbé elfogadók, mint azok, akiknek már közvetlen tapasztalataik is vannak (6. bk);”; “a másság elutasítása nem azt jelenti, hogy az idegent feltétlenül rossznak ítélik a magyarok, csak többnyire úgy vannak vele, hogy nem kellenek az életükbe, negatív sztereotípiák élnek bennük például idegen népcsoportok beözönlésével kapcsolatban, s ezen érzelmek felkorbácsolásában persze nem elhanyagolható az a politikai propaganda, amire elsősorban a szélsőjobb játszik rá (6. bk);”; “a legnagyobb távolságtartással kezelt „idegenek” a nem uniós országokból származó migránsok, jóllehet a külföldiek látható jelenléte ugyanakkor még közel sem érte el azt a szintet, ami a felmérések szerint irritáló lehetne (7. bk)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2014 Higher Level — © State Examinations Commission.",
+    id: "hun-2014-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-sokszin-seg-nyei-vagy",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! A sokszínűség előnyei",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2014 Higher Level — © State Examinations Commission.",
+    id: "hun-2014-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-beutazhatjuk-egesz-vilagot-hogy",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! „Beutazhatjuk az egész világot, hogy megtaláljuk a szépséget, de magunkban kell azt hordoznunk, különben sosem fogunk rálelni.” – Ralph Waldo Emerson",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1168,17 +1495,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „intelem” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található szó saját szavaival kifejezve: az „intelem” szó azt jelenti, hogy oktató, erkölcsi célzatú figyelmeztetés, fĘleg veszélytĘl, káros hatástól való óvás.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található szó saját szavaival kifejezve: az „intelem” szó azt jelenti, hogy oktató, erkölcsi célzatú figyelmeztetés, főleg veszélytől, káros hatástól való óvás.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1191,17 +1519,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „kortünet” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található szó saját szavaival kifejezve: a „kortünet” szó azt jelenti, hogy egy adott korszakra jellemzĘ jegyek.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található szó saját szavaival kifejezve: a „kortünet” szó azt jelenti, hogy egy adott korszakra jellemző jegyek.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1214,17 +1543,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „negédes” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található szó saját szavaival kifejezve: a „negédes” szó azt jelenti, hogy mesterkélt magatartás vagy modor.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található szó saját szavaival kifejezve: a „negédes” szó azt jelenti, hogy mesterkélt magatartás vagy modor.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1237,17 +1567,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „tromfolnak” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Magyarázza meg, mit jelent a „tromfol” szó! A 6. bekezdésben található szó saját szavaival kifejezve: a „tromfol” szó visszavágást jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található szó saját szavaival kifejezve: a „tromfol” szó visszavágást jelent.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1260,17 +1591,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „spontaneitás” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található szó saját szavaival kifejezve: a „spontaneitás” szó azt jelenti, hogy ösztönösség, közvetlenség.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található szó saját szavaival kifejezve: a „spontaneitás” szó azt jelenti, hogy ösztönösség, közvetlenség.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1283,17 +1615,18 @@ export const CARDS: SecCard[] = [
     questionText: "Mit választottak a 2013-as év szavának az Oxford Dictionaries kiadói?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Az Oxford Dictionaries kiadói a 2013-as év szavának a selfie-t választották.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Az Oxford Dictionaries kiadói a 2013-as év szavának a selfie-t választották.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1306,17 +1639,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért tartják sokan veszélyesnek a trendet, miszerint okostelefonnal dolgozni ma már profi fotósnak sem szégyen?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: Azért tartják sokan veszélyesnek ezt a trendet, mert egyre több képzett fotográfus válik munkanélkülivé; a világszerte számolatlanul készített képek döntĘ többsége viszont korántsem a pillanat ihletettségével, a kompozíció kimunkáltságával, eredetiségével hívja fel magára a figyelmet.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: Azért tartják sokan veszélyesnek ezt a trendet, mert egyre több képzett fotográfus válik munkanélkülivé; a világszerte számolatlanul készített képek döntő többsége viszont korántsem a pillanat ihletettségével, a kompozíció kimunkáltságával, eredetiségével hívja fel magára a figyelmet.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1329,17 +1663,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért mondhatjuk, hogy Ansel Adams amerikai fotográfus intelme aktuálisabb, mint valaha?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Azért mondhatjuk, hogy Ansel Adams amerikai fotográfus intelme aktuálisabb, mint valaha, mert a világ fulladozni látszik a fényképek áradatában – csak a Facebookra naponta 350 millió fotót töltenek fel. Mert Ansel Adams szerint „a »géppuska-módszer«, vagyis ha a fotós rengeteg negatívot készít, s abban bízik, hogy az egyik majd csak jó lesz, végzetes hatású a komoly eredményekre nézve.”", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Azért mondhatjuk, hogy Ansel Adams amerikai fotográfus intelme aktuálisabb, mint valaha, mert a világ fulladozni látszik a fényképek áradatában – csak a Facebookra naponta 350 millió fotót töltenek fel. Mert Ansel Adams szerint „a »géppuska-módszer«, vagyis ha a fotós rengeteg negatívot készít, s abban bízik, hogy az egyik majd csak jó lesz, végzetes hatású a komoly eredményekre nézve.”", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1352,17 +1687,18 @@ export const CARDS: SecCard[] = [
     questionText: "Benkő Imre fotóművész a cikkben azt állítja, „nagyon felhígult a fotóhoz való viszony”. Fejtse ki, egyetért-e ezzel az állítással vagy sem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 5. bekezdése alapján adott válasz: BenkĘ Imre szerint „nagyon felhígult a fotóhoz való viszony”, egyetértek, mert / Nem, nem értek egyet, mert…", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 5. bekezdése alapján adott válasz: Benkő Imre szerint „nagyon felhígult a fotóhoz való viszony”, egyetértek, mert / Nem, nem értek egyet, mert…", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1375,18 +1711,69 @@ export const CARDS: SecCard[] = [
     questionText: "„[P]ontosan a pillanatról, a múló percek szépségéről marad le. Nem képes magába szívni a jelent, nem beszél azokkal, akik vele együtt élik át ugyanazt az illékony mesét.” Fejtse ki erről az álláspontról a véleményét!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 3. bekezdése alapján adott válasz: A szerzĘ állításával – miszerint „pontosan a pillanatról, a múló percek szépségérĘl marad le. Nem képes magába szívni a jelent, nem beszél azokkal, akik vele együtt élik át ugyanazt az illékony mesét.”” – egyetértek, mert… / Nem, nem értek egyet, mert… A II. és III. részben elérhetĘ pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30% 2. A válasz koherenciája – A válaszadó releváns és megfelelĘ ismeretanyagot", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 3. bekezdése alapján adott válasz: A szerző állításával – miszerint „pontosan a pillanatról, a múló percek szépségéről marad le. Nem képes magába szívni a jelent, nem beszél azokkal, akik vele együtt élik át ugyanazt az illékony mesét.”” – egyetértek, mert… / Nem, nem értek egyet, mert…", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2015 Higher Level — © State Examinations Commission.",
+    id: "hun-2015-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-szoveg-alapjan-kommentalja-alabbiakat-minimum",
+    section: "II", questionRef: "2015 HL Section II Q1",
+    questionText: "A szöveg alapján kommentálja az alábbiakat minimum 100 szóban! „ [A] képek elfogyasztják a valóságot”.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100 szóban tisztán, érthetően kifejtett saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “Azért mondhatjuk, hogy „ a képek elfogyasztják a valóságot”, mert:”; “A világ fulladozni látszik a fényképek áradatában: csak a Facebookra naponta 350 millió fotót töltenek fel naponta, az elmúlt egy-két évben több mint 35 millió selfie-t tettek fel az Instagramra, (1. bk);”; “A világszerte számolatlanul készített képek döntő többsége viszont korántsem a pillanat ihletettségével, a kompozíció kimunkáltságával, eredetiségével hívja fel magára a figyelmet. Az sincs rendben, amikor „az emberek az ételüket fotózzák az étteremben ahelyett, hogy ennének; lekapják a Mona Lisát ahelyett, hogy megnéznék” (2. bk);”; “Aki ugyanis kényszeresen kattogtat, és próbálja dokumentálni a hétköznapokat vagy élete valamely jeles eseményét, pontosan a pillanatról, a múló percek szépségéről marad le. Ezek a fotók, másoknak készülnek, nem céljuk, hogy közelebb hozzák egymáshoz a szereplőket, hogy a valóságot mutassák, csupán annyi, hogy minél vonzóbbak legyenek. Nem vetnek fel kérdéseket, egyszerűek, önmagukért vannak, beszűkítenek. Aztán lehet lájkolni. (3. bk);”; “Tagadhatatlan, hogy egy fotó nem elsősorban a technikai feltételeknek köszönhetően lesz jó, hatásos, de – tromfolnak mások – a gondolatot, a koncepciót nem helyettesítheti a spontaneitás. Márpedig egyre kevesebben gondolkodnak el az exponálógomb megnyomása előtt (6. bk);”; “„A kamera maga a gyógyír és a kór, egyszerre eszköze a valóság birtokbavételének és elsorvasztásának.” (7. bk)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2015 Higher Level — © State Examinations Commission.",
+    id: "hun-2015-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-minden-amit-szepnek-latok",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! “Minden, amit szépnek látok, növeli lelkem világosságát. Erősebb, jobb, istenibb vagyok tőle.” (Gárdonyi Géza)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2015 Higher Level — © State Examinations Commission.",
+    id: "hun-2015-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-leggazdagabb-akinek-legkevesebbre-van",
+    section: "III", questionRef: "2015 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Az a leggazdagabb, akinek a legkevesebbre van szüksége. (Szókratész)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1398,17 +1785,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „struktúra” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található szó saját szavaival kifejezve: a „struktúra” szó azt jelenti, hogy valami több részből van felépítve, megszerkesztve.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található szó saját szavaival kifejezve: a „struktúra” szó azt jelenti, hogy valami több részből van felépítve, megszerkesztve.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1421,17 +1809,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „analfabéta” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található szó saját szavaival kifejezve: az „analfabéta” szó azt jelenti, hogy írástudatlan, műveletlen. Átvitt értelemben valamiben járatlan ember, aki egy adott dologhoz egyáltalán nem ért.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található szó saját szavaival kifejezve: az „analfabéta” szó azt jelenti, hogy írástudatlan, műveletlen. Átvitt értelemben valamiben járatlan ember, aki egy adott dologhoz egyáltalán nem ért.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1444,17 +1833,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „stimuláció” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található szó saját szavaival kifejezve: a „stimuláció” szó azt jelenti, hogy ösztönöz, ingerel.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található szó saját szavaival kifejezve: a „stimuláció” szó azt jelenti, hogy ösztönöz, ingerel.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1467,17 +1857,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „teória” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található szó saját szavaival kifejezve: a „teória” szó elméletet jelent, ismert tények kifejtése.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található szó saját szavaival kifejezve: a „teória” szó elméletet jelent, ismert tények kifejtése.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1490,17 +1881,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „ördögi kör” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival kifejezve: az „ördögi kör” kifejezés azt jelenti, hogy olyan ok-okozati események kölcsönös sorozata, amelyben két vagy több elem fokozza és súlyosbíthatja egymást, ami feltartóztathatatlanul egy romló helyzetet eredményez.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival kifejezve: az „ördögi kör” kifejezés azt jelenti, hogy olyan ok-okozati események kölcsönös sorozata, amelyben két vagy több elem fokozza és súlyosbíthatja egymást, ami feltartóztathatatlanul egy romló helyzetet eredményez.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1513,17 +1905,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hányan élnek egyedül Németországban egy idősek körében végzett kutatás szerint?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Egy idősek körében végzett kutatás szerint Németországban több mint 16 millióan élnek egyedül.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Egy idősek körében végzett kutatás szerint Németországban több mint 16 millióan élnek egyedül.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1536,17 +1929,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, melyek a magány terjedésének okai!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 3. bekezdésben: A magány terjedésének okai között a nagy családok szétesését, a társadalmi struktúrák meglazulását és az egyéni boldogulás nehézkességét említik. Valamint azért, mert félnek a túl közeli kapcsolatoktól.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 3. bekezdésben: A magány terjedésének okai között a nagy családok szétesését, a társadalmi struktúrák meglazulását és az egyéni boldogulás nehézkességét említik. Valamint azért, mert félnek a túl közeli kapcsolatoktól.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1559,17 +1953,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért nehéz bárkit is a magányból kiszabadítani?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 4. bekezdésben: Azért nehéz bárkit is a magányból kiszabadítani, mert a bezárkózás, a másokkal szembeni bizalmatlanság a kapcsolatok építése ellen hat, így a magány ördögi körré válik, amelybe bárki belekerülhet, és a segítség a legtöbbször csak kívülről jöhet.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 4. bekezdésben: Azért nehéz bárkit is a magányból kiszabadítani, mert a bezárkózás, a másokkal szembeni bizalmatlanság a kapcsolatok építése ellen hat, így a magány ördögi körré válik, amelybe bárki belekerülhet, és a segítség a legtöbbször csak kívülről jöhet.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1582,17 +1977,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért tetszik paradoxonnak Winnicott angol pszichoanalitikus 1958-as elmélete?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 4. bekezdése alapján adott válasz: Azért tetszik paradoxonnak Winnicott angol pszichoanalitikus 1958-as elmélete, mert ha valaki egyedül van, automatikusan azt gondoljuk róla, hogy magányos is. És jelen esetben nem erről van szó, hanem arról, hogy valaki úgy tud egyedül maradni, hogy közben nem érzi magányosnak magát, azaz egyedül van, de az nem zavarja.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 4. bekezdése alapján adott válasz: Azért tetszik paradoxonnak Winnicott angol pszichoanalitikus 1958-as elmélete, mert ha valaki egyedül van, automatikusan azt gondoljuk róla, hogy magányos is. És jelen esetben nem erről van szó, hanem arról, hogy valaki úgy tud egyedül maradni, hogy közben nem érzi magányosnak magát, azaz egyedül van, de az nem zavarja.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1605,18 +2001,69 @@ export const CARDS: SecCard[] = [
     questionText: "A szövegre utalva magyarázza meg, mi a különbség az egyedüllét és a magány közt!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 2. és 5. bekezdése alapján adott válasz: A magányos ember nem csupán egyedül van, hanem nyomasztónak érzi a többi ember hiányát (hol a kapcsolatok számát, hol azok intenzitását kevesli). Mert sokszor azok is magányosnak érzik magukat, akik nincsenek egyedül; ez a társas magány. Sőt úgy tűnik, hogy a magukat magányosnak érzők nagyobb százaléka társkapcsolatban él. A „magányosnak érzem magam” belső élményvilága mindenkinél összefüggésben van az önmagához fűződő viszonnyal is. Ha ugyanis valakinek „pozitív érzelmi viszonya van önmagához”, ha egyedül van is, nem érzi magányosnak magát, mert önmagával tölti az időt. Az egyedül lévő ember nem magányos, mert szálak sokasága fűzi őt az emberi létezéshez, sőt van, aki keresi az egyedüllétet, mert az úgymond segít a feltöltődésben, önmaguk megismerésében. A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30% 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 2. és 5. bekezdése alapján adott válasz: A magányos ember nem csupán egyedül van, hanem nyomasztónak érzi a többi ember hiányát (hol a kapcsolatok számát, hol azok intenzitását kevesli). Mert sokszor azok is magányosnak érzik magukat, akik nincsenek egyedül; ez a társas magány. Sőt úgy tűnik, hogy a magukat magányosnak érzők nagyobb százaléka társkapcsolatban él. A „magányosnak érzem magam” belső élményvilága mindenkinél összefüggésben van az önmagához fűződő viszonnyal is. Ha ugyanis valakinek „pozitív érzelmi viszonya van önmagához”, ha egyedül van is, nem érzi magányosnak magát, mert önmagával tölti az időt. Az egyedül lévő ember nem magányos, mert szálak sokasága fűzi őt az emberi létezéshez, sőt van, aki keresi az egyedüllétet, mert az úgymond segít a feltöltődésben, önmaguk megismerésében.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2016 Higher Level — © State Examinations Commission.",
+    id: "hun-2016-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-szoveg-alapjan-kommentalja-tarsadalmi-szemelyes",
+    section: "II", questionRef: "2016 HL Section II Q1",
+    questionText: "A szöveg alapján kommentálja a társadalmi és személyes helyzeteket figyelembe véve, hogy a szerző mire utal az alábbi mondatával (min. 100, max. 150 szóban) „Az egyik legnagyobb problémát a magány elleni küzdelemben mégis az jelenti, hogy nincs igazi ellenszere.”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100, maximum 150 szóban tisztán, érthetően kifejtett saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “A szerző arra utal az alábbi mondatával, hogy:”; “egyre több az egyedül élő ember, és bár ez nem mindenki számára jelent lelki terhet, sokak számára magányosságot hoz, kifejlődik a stressz, amiből depresszió alakulhat ki (1. bk);”; “minden harmadik 40 és 85 év közötti embert nyomaszt a magány, 3–7%-uk pedig kifejezetten szenved tőle (1. bk);”; “a magányt is az egészségügyi rizikófaktorok közé sorolják, hatását az elhízás, a dohányzás és a levegőszennyezettség veszélyeihez hasonlítják, a kutatások mind arra utalnak, hogy az elszigeteltség egyértelműen megrövidítheti az életet. (1. bk);”; “A magányos ember nem csupán egyedül van, hanem nyomasztónak érzi a többi ember hiányát (hol a kapcsolatok számát, hol azok intenzitását kevesli). Mert sokszor azok is magányosnak érzik magukat, akik nincsenek egyedül; ez a társas magány. A „magányosnak érzem magam” belső élményvilága mindenkinél összefüggésben van az önmagához fűződő viszonnyal is. (2. bk);”; “De sokan azért tudnak nehezen kontaktust teremteni vagy elérni azt az intimitást, mert félnek a túl közeli kapcsolatoktól. Pl. a magyar felnőtt lakosság mintegy ötven százaléka nem képes biztonságosan kötődni, vagyis a kapcsolataiban a reálisnál erősebben szorong, netán kifejezetten kerüli azokat. A magány érzését tompító stimulációk keresése más függőségekhez is vezethet. (3. bk);”; “A bezárkózás, a másokkal szembeni bizalmatlanság a kapcsolatok építése ellen hat, így a magány ördögi körré válik, amelybe bárki belekerülhet, és ahonnan nehéz bárkit is kiszabadítani (4. bk)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2016 Higher Level — © State Examinations Commission.",
+    id: "hun-2016-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-egyszer-megtalaltad-boldogsagot-onmagadban",
+    section: "III", questionRef: "2016 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! “[H]a egyszer megtaláltad a boldogságot önmagadban, akkor elveszni mégsem vész el soha.” (Anne Frank)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2016 Higher Level — © State Examinations Commission.",
+    id: "hun-2016-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-vilag-eleg-rossz-hely",
+    section: "III", questionRef: "2016 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! A világ elég rossz hely lehet, ha nem dolgozunk közösen azon, hogy egyenlőbbé, demokratikusabbá és fenntarthatóbbá tegyük. Fintan O’Toole, The Irish Times, 2016. február. 22.02.2016.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1628,17 +2075,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „implicit” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaival kifejezve: az „implicit” szó azt jelenti, hogy rejtett, közvetett.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaival kifejezve: az „implicit” szó azt jelenti, hogy rejtett, közvetett.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1651,17 +2099,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „preferált” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaival kifejezve: a „preferált” szó azt jelenti, hogy valami vagy valaki előnyben részesített.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaival kifejezve: a „preferált” szó azt jelenti, hogy valami vagy valaki előnyben részesített.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1674,17 +2123,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „irreleváns” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaival kifejezve: az „irreleváns” szó azt jelenti, hogy lényegtelen, nem a tárgyhoz tartozó.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaival kifejezve: az „irreleváns” szó azt jelenti, hogy lényegtelen, nem a tárgyhoz tartozó.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1697,17 +2147,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „sztenderdizált” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaival kifejezve: a „sztenderdizált” szó azt jelenti, hogy szabványos, megszokott.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó saját szavaival kifejezve: a „sztenderdizált” szó azt jelenti, hogy szabványos, megszokott.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1720,17 +2171,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „megkaparint” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található szó saját szavaival kifejezve: a „megkaparint” szó azt jelenti, hogy valamit megszerez, valamihez hozzájut, negatív felhangot is tartalmazva.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található szó saját szavaival kifejezve: a „megkaparint” szó azt jelenti, hogy valamit megszerez, valamihez hozzájut, negatív felhangot is tartalmazva.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1743,17 +2195,18 @@ export const CARDS: SecCard[] = [
     questionText: "Mi volt az ipari forradalom egyik legnagyobb vívmánya?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Az ipari forradalom egyik legnagyobb vívmánya a tömeggyártás volt, amikor a gépek képessé váltak több ezer, azonos minőségű termék legyártására.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Az ipari forradalom egyik legnagyobb vívmánya a tömeggyártás volt, amikor a gépek képessé váltak több ezer, azonos minőségű termék legyártására.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1766,17 +2219,18 @@ export const CARDS: SecCard[] = [
     questionText: "Mi a végfelhasználók szemszögéből a szolgáltatás felé irányuló implicit elvárás?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: A végfelhasználók szemszögéből a szolgáltatás felé irányuló implicit elvárás egyrészt az, hogy a felhasználó minél hamarabb megtalálja a preferált tartalmakat, elrejtve előle a számára irreleváns lehetőségeket, másrészt változatos, friss és érdekes listákat mutasson.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: A végfelhasználók szemszögéből a szolgáltatás felé irányuló implicit elvárás egyrészt az, hogy a felhasználó minél hamarabb megtalálja a preferált tartalmakat, elrejtve előle a számára irreleváns lehetőségeket, másrészt változatos, friss és érdekes listákat mutasson.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1789,17 +2243,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért nyílnak meg új lehetőségek az arcfelismerő programokat a sok százmillió térfigyelő kamerával összekötve?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 4. és az 5. bekezdésben: Mert a tökéletesedő arcfelismerő programokat a sok százmillió térfigyelő kamerával összekötve a személyre szabás lehetőségei végtelenné válnak: bármerre járunk, arcunk felismerése után, valamint a Facebook- aktivitásunk és Google-kereséseink alapján a hirdetőoszlopokon nekünk szóló tartalom jelenhet meg; illetve a dolgok internetjének (IoT) világában az is elképzelhető, hogy olyan személyre szabott akciós hirdetéseket látunk majd, amelyek az élettartama végéhez közeledő otthoni készülékünk helyett újat javasolnak.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 4. és az 5. bekezdésben: Mert a tökéletesedő arcfelismerő programokat a sok százmillió térfigyelő kamerával összekötve a személyre szabás lehetőségei végtelenné válnak: bármerre járunk, arcunk felismerése után, valamint a Facebook-aktivitásunk és Google-kereséseink alapján a hirdetőoszlopokon nekünk szóló tartalom jelenhet meg; illetve a dolgok internetjének (IoT) világában az is elképzelhető, hogy olyan személyre szabott akciós hirdetéseket látunk majd, amelyek az élettartama végéhez közeledő otthoni készülékünk helyett újat javasolnak.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1812,17 +2267,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért érdekes az, hogy az Apple-ről már több éve hallani, hogy be akar törni az önvezető autók piacára?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 6. bekezdése alapján adott válasz: Ez azért nagyon érdekes, mert az Apple-nél mindig ökoszisztémákban gondolkodnak, azaz a cég az összes általa értékesített eszköz és szoftver használatából gyűjtött adatokat felhasználhatja majd, és mivel az autó jól ismeri a benne ülőket, bármerre is járunk, az autó kommunikálhat a környezetével, és ezt a rólunk meglévő adataival összevetve képes lehet a leginkább releváns tartalmakat megjeleníteni. Így értékes perceket vagy akár órákat kaparinthatnak meg a technológiai cégek az emberek idejéből.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 6. bekezdése alapján adott válasz: Ez azért nagyon érdekes, mert az Apple-nél mindig ökoszisztémákban gondolkodnak, azaz a cég az összes általa értékesített eszköz és szoftver használatából gyűjtött adatokat felhasználhatja majd, és mivel az autó jól ismeri a benne ülőket, bármerre is járunk, az autó kommunikálhat a környezetével, és ezt a rólunk meglévő adataival összevetve képes lehet a leginkább releváns tartalmakat megjeleníteni. Így értékes perceket vagy akár órákat kaparinthatnak meg a technológiai cégek az emberek idejéből.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1835,18 +2291,69 @@ export const CARDS: SecCard[] = [
     questionText: "A szerző azt állítja, hogy „[m]ár manapság is, de a jövőben különösen felelősen kell eljárni, amikor egy-egy technológiai cég az adatmegosztással kapcsolatos szerződési feltételek elfogadását kéri”. A szövegre utalva fejtse ki ezt az álláspontot, és azt is, egyetért-e vele, vagy sem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 2., 3., 4. és 7. bekezdése alapján adott válasz: A cikk szerint azért kell felelősen eljárni, amikor egy-egy technológiai cég az adatmegosztással kapcsolatos szerződési feltételek elfogadását kéri, mert a lehetőségeknek csak az emberek adatmegosztási hajlandósága szabhat határt. A Google-kereséseinken alapulnak a különböző honlapokon megjelenő szalaghirdetések, és ezen manapság már kevesen lepődnek meg. A Facebookon folytatott tevékenységünk alapján legalább 80 százalékos valószínűséggel már most meg tudják mondani, melyik etnikai csoportba tartozunk. Igen, egyetértek ezzel a kijelentéssel, mert… vagy Nem, nem értek egyet vele, mert… A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30% 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 2., 3., 4. és 7. bekezdése alapján adott válasz: A cikk szerint azért kell felelősen eljárni, amikor egy-egy technológiai cég az adatmegosztással kapcsolatos szerződési feltételek elfogadását kéri, mert a lehetőségeknek csak az emberek adatmegosztási hajlandósága szabhat határt. A Google-kereséseinken alapulnak a különböző honlapokon megjelenő szalaghirdetések, és ezen manapság már kevesen lepődnek meg. A Facebookon folytatott tevékenységünk alapján legalább 80 százalékos valószínűséggel már most meg tudják mondani, melyik etnikai csoportba tartozunk. Igen, egyetértek ezzel a kijelentéssel, mert… vagy Nem, nem értek egyet vele, mert…", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2017 Higher Level — © State Examinations Commission.",
+    id: "hun-2017-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-min-100-max-150-szoban",
+    section: "II", questionRef: "2017 HL Section II Q1",
+    questionText: "Kommentár (min. 100, max. 150 szóban) Kommentálja a szöveg alapján, miért állítja azt a szerző, hogy „[m]anapság viszont az emberek nem egyforma, hanem személyre szabott dolgokra vágynak, így a XXI. század a perszonalizációról is szól”!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100, maximum 150 szóban tisztán, érthetően kifejtett saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “A szerző azért állítja, hogy a XXI. század a perszonalizációról is szól, mert:”; “az emberek nem egyforma, hanem személyre szabott dolgokra vágynak (1. bk);”; “A szolgáltatók személyre szabott ajánlásokat nyújtanak a felhasználónak, ezzel elősegítve a megfelelő tartalmak megtalálását. A felhasználói élmény növelésével emiatt érdekesebbnek találja az elérhető tartalmakat, és valószínűbben fog visszatérni, vagy többet fogyasztani. (2. bk);”; “Ami például a különböző honlapokon lévő szalaghirdetésekben látható, az mind a korábbi internetes keresések eredménye. (2. bk);”; “A Universal Pictures a Facebookkal közösen elkészítette egy film négy különböző, előzetesét: egy általánosat és három „rasszspecifikusat”. A három speciális előzetes valamelyikét a Facebook azoknak mutatta, akik a közösségi oldalon folytatott tevékenységük alapján legalább 80 százalékos valószínűséggel az adott etnikai csoportba tartoztak. A film kasszasiker lett, és állítják a speciális „rasszspecifikus reklámnak” köszönhetik a rekordösszeget hozó nyitási hetet. (3. bk);”; “A tökéletesedő arcfelismerő programokat a sok százmillió térfigyelő kamerával összekötve új lehetőségek nyílnak meg: arcunk felismerése után a nevünkön szólít, és nekünk szóló tartalmat jeleníthet meg, amely azzal kecsegtet, hogy a számunkra legjobb megoldást nyújtja, például ha költözni szeretnénk, vagy amikor az otthoni televíziónk érzékeli, hogy élettartama a végéhez közeledik. (4. bk);”; “A legtöbb szakértő a kiterjesztett vagy a virtuális valóságot tartja ideálisnak a perszonalizáció eléréséhez. (5. bk);”; “A perszonalizált tartalom autóban való megjelenése: az autó jól ismeri a benne ülőket, kommunikálhat a környezetével, és ezt a rólunk meglévő adataival összevetve képes lehet a leginkább releváns tartalmakat megjeleníteni. (6. bk);”; “A lehetőségeknek csak az emberek adatmegosztási hajlandósága szabhat határt. (7. bk)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2017 Higher Level — © State Examinations Commission.",
+    id: "hun-2017-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-egy-ponton-majd-kell",
+    section: "III", questionRef: "2017 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! „Egy ponton majd el kell döntened, hogy ki akarsz lenni. Ne engedd senkinek, hogy helyetted tegye meg!” (Holdfény, 2016)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2017 Higher Level — © State Examinations Commission.",
+    id: "hun-2017-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-velemenyem-olyan-mint-tied",
+    section: "III", questionRef: "2017 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! „A véleményem olyan jó, mint a tiéd, és minden véleményt egyformán kell értékelni.” Fejtse ki ezt az álláspontot a modern világ kontextusában, különös tekintettel a közösségi média használatára!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1858,17 +2365,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „közkinccsé tesz” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található kifejezés saját szavaival megfogalmazva: a „közkinccsé tesz” azt jelenti, hogy népszerűsít, propagál, terjeszt.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található kifejezés saját szavaival megfogalmazva: a „közkinccsé tesz” azt jelenti, hogy népszerűsít, propagál, terjeszt.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1881,17 +2389,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a valaminek a „bibliája” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található kifejezés saját szavaival megfogalmazva: a „valaminek a bibliája” kifejezés azt jelenti, hogy valaminek az alapkönyve.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található kifejezés saját szavaival megfogalmazva: a „valaminek a bibliája” kifejezés azt jelenti, hogy valaminek az alapkönyve.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1904,17 +2413,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „credója” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található szó saját szavaival megfogalmazva: a „credója” szó azt jelenti, hogy hitvallás.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található szó saját szavaival megfogalmazva: a „credója” szó azt jelenti, hogy hitvallás.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1927,17 +2437,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „sors fintora” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival megfogalmazva: a „sors fintora” kifejezés azt jelenti, hogy a sors iróniája, amikor az élet ironikus helyzeteket produkál.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival megfogalmazva: a „sors fintora” kifejezés azt jelenti, hogy a sors iróniája, amikor az élet ironikus helyzeteket produkál.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1950,17 +2461,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „futószalagon gyártja” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Magyarázza meg, mit jelent a „futószalagon gyárt” kifejezés! A 7. bekezdésben található kifejezés saját szavaival megfogalmazva: a „futószalagon gyárt” kifejezés azt jelenti, hogy sokat állítanak elő valamiből, nagy számban termelik.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 7. bekezdésben található kifejezés saját szavaival megfogalmazva: a „futószalagon gyárt” kifejezés azt jelenti, hogy sokat állítanak elő valamiből, nagy számban termelik.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1973,17 +2485,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hány nyelvre fordították le Ludwig Erhard Jólétet mindenkinek című könyvét?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: Ludwig Erhard Jólétet mindenkinek című könyvét 14 nyelvre fordították le.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: Ludwig Erhard Jólétet mindenkinek című könyvét 14 nyelvre fordították le.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -1996,17 +2509,18 @@ export const CARDS: SecCard[] = [
     questionText: "Milyen esetben mondhatja el magáról egy ország, hogy megfelel a valódi szociális piacgazdaság elveinek?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 8. bekezdésben: Az ország csak akkor mondhatja el magáról, hogy megfelel a valódi szociális piacgazdaság elveinek, ha a jelenleginél jóval nagyobb energiát fordít az esélyegyenlőség megteremtésére, újragondolja oktatási és képzési rendszerét. Ezzel garantálja polgárainak a szociális piacgazdaság alapkövét, a szabadságot.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 8. bekezdésben: Az ország csak akkor mondhatja el magáról, hogy megfelel a valódi szociális piacgazdaság elveinek, ha a jelenleginél jóval nagyobb energiát fordít az esélyegyenlőség megteremtésére, újragondolja oktatási és képzési rendszerét. Ezzel garantálja polgárainak a szociális piacgazdaság alapkövét, a szabadságot.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2019,17 +2533,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért gondolta úgy Erhard, hogy a verseny a legeredményesebb eszköz a társadalmi jólét megteremtésére?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 3. bekezdésben: Azért gondolta, hogy a verseny a legeredményesebb eszköz a társadalmi jólét megteremtésére, mert szerinte „[m]inden gazdaság végső célja az, hogy az embereket kiszabadítsa az anyagi szűkölködésből, azaz a fogyasztásnak kell olyan tartós nyomást gyakorolnia a gazdaságra, amely a termelés állandó bővítését, a kereslethez való minél jobb igazodását kikényszeríti. A fő szerepet azonban a gazdasági szabadságot megtapasztaló-megélő emberek tenni akarása, sikerre, nyereségre vagy egyszerűen csak több fizetésre törekvése, egyszóval a verseny kibontakozása játszotta.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 3. bekezdésben: Azért gondolta, hogy a verseny a legeredményesebb eszköz a társadalmi jólét megteremtésére, mert szerinte „[m]inden gazdaság végső célja az, hogy az embereket kiszabadítsa az anyagi szűkölködésből, azaz a fogyasztásnak kell olyan tartós nyomást gyakorolnia a gazdaságra, amely a termelés állandó bővítését, a kereslethez való minél jobb igazodását kikényszeríti. A fő szerepet azonban a gazdasági szabadságot megtapasztaló-megélő emberek tenni akarása, sikerre, nyereségre vagy egyszerűen csak több fizetésre törekvése, egyszóval a verseny kibontakozása játszotta.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2042,17 +2557,18 @@ export const CARDS: SecCard[] = [
     questionText: "A szöveg alapján magyarázza meg, miért állítja azt a szerző, hogy csak abszolút értelemben hozta el mindenki számára a jólétet a szociális piacgazdaság?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 5. és 7. bekezdése alapján adott válasz: Azért állítja azt a szerző, hogy csak abszolút értelemben hozta el mindenki számára a jólétet a szociális piacgazdaság, mert ha általánosságban nézzük, mi történt, akkor azt tapasztaljuk, hogy ma az átlag német munkás vagy alkalmazott helyzete jobb, mint az erhardi időkben: a fizetés több, a lakás nagyobb, az autó gyorsabb. Érdemes azonban azt is megnézni, hogy ez mennyiben az emberek egyéni teljesítményének gyümölcse, vagyis mennyire tudtak élni a szociális piacgazdaság biztosította szabadsággal, az ideális esetben mindenki számára egyenlő feltételekkel. És az sem mindegy, hogy az a bizonyos jólét mindenki számára növekedett, vagy csak egyeseknek jut jobb lét. Ugyanis ma egy munkavállaló jövedelme, jóléte csak felerészben függ attól, hogy ő maga milyen szorgalmas, mennyi tanulási, továbbképzési szándék van benne. A másik felét születéstől hozza magával: ez attól függ, milyen családban nőtt fel, milyenek voltak szüleinek a jövedelmi viszonyai, iskolai végzettsége.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 5. és 7. bekezdése alapján adott válasz: Azért állítja azt a szerző, hogy csak abszolút értelemben hozta el mindenki számára a jólétet a szociális piacgazdaság, mert ha általánosságban nézzük, mi történt, akkor azt tapasztaljuk, hogy ma az átlag német munkás vagy alkalmazott helyzete jobb, mint az erhardi időkben: a fizetés több, a lakás nagyobb, az autó gyorsabb. Érdemes azonban azt is megnézni, hogy ez mennyiben az emberek egyéni teljesítményének gyümölcse, vagyis mennyire tudtak élni a szociális piacgazdaság biztosította szabadsággal, az ideális esetben mindenki számára egyenlő feltételekkel. És az sem mindegy, hogy az a bizonyos jólét mindenki számára növekedett, vagy csak egyeseknek jut jobb lét. Ugyanis ma egy munkavállaló jövedelme, jóléte csak felerészben függ attól, hogy ő maga milyen szorgalmas, mennyi tanulási, továbbképzési szándék van benne. A másik felét születéstől hozza magával: ez attól függ, milyen családban nőtt fel, milyenek voltak szüleinek a jövedelmi viszonyai, iskolai végzettsége.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2065,18 +2581,69 @@ export const CARDS: SecCard[] = [
     questionText: "A szöveg alapján magyarázza meg, miért állítja Marcel Fratzscher közgazdászprofesszor, hogy a szociális piacgazdaság ideálja megbukott!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 6., 7. és 8. bekezdése alapján adott válasz: A cikk szerint azért állítja Marcel Fratzscher közgazdászprofesszor, hogy a szociális piacgazdaság ideálja ebből a szempontból megbukott, mert a mai Németország nem biztosít egyenlő feltételeket a gazdasági élet szereplőinek, az emberek nem azonos feltételekkel vesznek részt a gazdasági versenyben. Sokak szerint ez nem túl nagy baj, hiszen az állam az újraelosztás keretében az e különbségekből fakadó hátrányok legalább egy részét kiegyenlíti, ám Fratzscher szerint ez egyrészt önmagában is helytelen, másrészt súlyosan ellenkezik a szociális piacgazdaság legfontosabb elvi alapjával. Annak jegyében az egyenlő indulófeltételek megteremtése lenne az állam feladata. Ám ezt az állam csak fele részben teljesíti. Így az egyenlőtlenség nemcsak újratermelődik, hanem ezen a mechanizmuson keresztül növekszik is, ami végső soron a demokráciát veszélyezteti. Az ország csak akkor mondhatja el magáról, hogy megfelel a valódi szociális piacgazdaság elveinek, ha a jelenleginél jóval nagyobb energiát fordít az esélyegyenlőség megteremtésére. Ezzel garantálja polgárainak a szociális piacgazdaság alapkövét, a szabadságot. A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30% 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 6., 7. és 8. bekezdése alapján adott válasz: A cikk szerint azért állítja Marcel Fratzscher közgazdászprofesszor, hogy a szociális piacgazdaság ideálja ebből a szempontból megbukott, mert a mai Németország nem biztosít egyenlő feltételeket a gazdasági élet szereplőinek, az emberek nem azonos feltételekkel vesznek részt a gazdasági versenyben. Sokak szerint ez nem túl nagy baj, hiszen az állam az újraelosztás keretében az e különbségekből fakadó hátrányok legalább egy részét kiegyenlíti, ám Fratzscher szerint ez egyrészt önmagában is helytelen, másrészt súlyosan ellenkezik a szociális piacgazdaság legfontosabb elvi alapjával. Annak jegyében az egyenlő indulófeltételek megteremtése lenne az állam feladata. Ám ezt az állam csak fele részben teljesíti. Így az egyenlőtlenség nemcsak újratermelődik, hanem ezen a mechanizmuson keresztül növekszik is, ami végső soron a demokráciát veszélyezteti. Az ország csak akkor mondhatja el magáról, hogy megfelel a valódi szociális piacgazdaság elveinek, ha a jelenleginél jóval nagyobb energiát fordít az esélyegyenlőség megteremtésére. Ezzel garantálja polgárainak a szociális piacgazdaság alapkövét, a szabadságot.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2018 Higher Level — © State Examinations Commission.",
+    id: "hun-2018-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-min-100-max-150-szoban",
+    section: "II", questionRef: "2018 HL Section II Q1",
+    questionText: "Kommentár (min. 100, max. 150 szóban) Kommentálja a szöveg alapján min. 100 szóban, hogy miért mondhatjuk, hogy nem minden úgy valósult meg, ahogy azt Ludwig Erhard, a nyugatnémet gazdasági csoda atyja elképzelte 60 éve megjelent, mindenkinek jólétet ígérő téziseiben!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100, maximum 150 szóban tisztán, érthetően kifejtett saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “Azért nem minden úgy valósult meg, ahogy azt Ludwig Erhard, a nyugatnémet gazdasági csoda atyja elképzelte 60 éve megjelent, mindenkinek jólétet ígérő téziseiben, mert:”; “e szerint a gazdaság felhajtóereje az egyéni vállalkozás teljes szabadsága, a jobb teljesítményre és tisztes nyereségre ösztönző verseny, az állam pedig jogrendjével, a gazdasági környezet szabályozásával ügyel a verseny tisztaságára, és arra, hogy aki önhibáján kívül végképp lemarad, az se kerüljön a társadalmon kívülre (1. bk);”; “úgy gondolta, hogy a verseny a legeredményesebb eszköz a társadalmi jólét megteremtésére. „Minden gazdaság végső célja az, hogy az embereket kiszabadítsa az anyagi szűkölködésből” – foglalta össze credóját a könyvében. Ez sikerült is. Nyugat-Németország hatalmas léptekkel számolta fel a háborús károkat, majd indította be iparát, kereskedelmét. (3. bk);”; “A fő szerepet azonban a verseny kibontakozása játszotta (3. bk);”; “A szociális piacgazdaság elhozta-e mára mindenki számára a jólétet? Érdemes azt is megnézni, hogy ez mennyiben az emberek egyéni teljesítményének gyümölcse, vagyis mennyire tudtak élni a szociális piacgazdaság biztosította szabadsággal, az ideális esetben mindenki számára egyenlő feltételekkel. És az sem mindegy, hogy az a bizonyos jólét mindenki számára növekedett, vagy csak egyeseknek jut jobb lét. (5. bk);”; “Marcel Fratzscher közgazdászprofesszor úgy vélte, a szociális piacgazdaság ideálja ebből a szempontból megbukott, a mai Németország nem biztosít egyenlő feltételeket a gazdasági élet szereplőinek, az emberek nem azonos feltételekkel vesznek részt a gazdasági versenyben, az egyenlő indulófeltételek megteremtése lenne az állam feladata. (6. bk);”; “ma egy munkavállaló jövedelme, jóléte csak felerészben függ attól, hogy ő maga milyen szorgalmas, a másik felét születéstől hozza magával (7. bk);”; “Az egyenlőtlenség nemcsak újratermelődik, hanem ezen a mechanizmuson keresztül növekszik is. Az ország csak akkor mondhatja el magáról, hogy megfelel a valódi szociális piacgazdaság elveinek, ha a jelenleginél jóval nagyobb energiát fordít az esélyegyenlőség megteremtésére, újragondolja oktatási és képzési rendszerét (8. bk)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2018 Higher Level — © State Examinations Commission.",
+    id: "hun-2018-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-orszag-csak-akkor-mondhatja",
+    section: "III", questionRef: "2018 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! „Az ország csak akkor mondhatja el magáról, hogy megfelel a valódi szociális piacgazdaság elveinek, ha a jelenleginél jóval nagyobb energiát fordít az esélyegyenlőség megteremtésére”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2018 Higher Level — © State Examinations Commission.",
+    id: "hun-2018-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-ruha-teszi-embert-mennyiben",
+    section: "III", questionRef: "2018 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! A ruha teszi az embert? Mennyiben igaz az, hogy teljesen pontos értékítéletet tudunk alkotni az emberekről a ruházatuk alapján? Az érveket és ellenérveket is figyelembe véve fejtse ki véleményét egy min. 300 szavas esszében!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2088,17 +2655,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „prognózis” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés saját szavaival megfogalmazva: a „prognózis” azt jelenti, hogy tudományos adatok alapján elvégzett előzetes számítás.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés saját szavaival megfogalmazva: a „prognózis” azt jelenti, hogy tudományos adatok alapján elvégzett előzetes számítás.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2111,17 +2679,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „gyökeret ver” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival megfogalmazva: a „gyökeret ver” kifejezés azt jelenti, hogy valahol meghonosodik, akklimatizálódik.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival megfogalmazva: a „gyökeret ver” kifejezés azt jelenti, hogy valahol meghonosodik, akklimatizálódik.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2134,17 +2703,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „dinamika” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található kifejezés saját szavaival megfogalmazva: a „dinamika” szó azt jelenti, hogy az adott dolog, folyamat belső erejéből fakadó, változást elérő folyamat.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található kifejezés saját szavaival megfogalmazva: a „dinamika” szó azt jelenti, hogy az adott dolog, folyamat belső erejéből fakadó, változást elérő folyamat.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2157,17 +2727,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „integráció” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található kifejezés saját szavaival megfogalmazva: az „integráció” kifejezés azt jelenti, hogy egységesülés, beilleszkedés.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található kifejezés saját szavaival megfogalmazva: az „integráció” kifejezés azt jelenti, hogy egységesülés, beilleszkedés.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2180,17 +2751,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „incidens” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 7. bekezdésben található kifejezés saját szavaival megfogalmazva: az „incidens” kifejezés azt jelenti, hogy váratlan, többnyire kellemetlen, esemény.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 7. bekezdésben található kifejezés saját szavaival megfogalmazva: az „incidens” kifejezés azt jelenti, hogy váratlan, többnyire kellemetlen, esemény.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2203,17 +2775,18 @@ export const CARDS: SecCard[] = [
     questionText: "Milyen demográfiai tényre hívják fel a figyelmet Magyarországon?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: Magyarországon arra a demográfiai tényre hívják fel a figyelmet, hogy néhány évtized múlva egészen másképp fog kinézni a magyar társadalom szerkezete.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: Magyarországon arra a demográfiai tényre hívják fel a figyelmet, hogy néhány évtized múlva egészen másképp fog kinézni a magyar társadalom szerkezete.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2224,19 +2797,22 @@ export const CARDS: SecCard[] = [
     id: "hun-2019-hl-i-3", topicId: "hungarian-0-1", conceptId: "miert-okozott-kulonosen-jelent-demografiai-hianyt",
     section: "I", questionRef: "2019 HL Section I Q3",
     questionText: "Miért okozott különösen jelentős demográfiai hiányt az emigrációs hullám?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Miért okozott jelentős demográfiai hiányt az emigrációs hullám? Válasz a 4. bekezdésben: Azért okozott jelentős demográfiai hiányt az emigrációs hullám, mert a távozottak egyharmada magasan kvalifikált munkaerő, vagyis velük a hazai átlagnál sokkal képzettebb népességet veszített az ország, b, jelentős részük fiatal, miközben a régebben emigráltak közül sokan éppen a nyugdíjas korukra térnek vissza hazájukba. A legutóbbi adatok szerint a határokon kívül élő állampolgárok aránya a legmagasabbak közt van az európai országok körében. c, A külföldre távozottak visszacsábítására tett próbálkozások csak szórványos eredménnyel jártak, mert a legtöbben már gyökeret vertek a választott országban, a gyermekeik is ott születtek.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "a távozottak egyharmada magasan kvalifikált munkaerő, vagyis velük a hazai átlagnál sokkal képzettebb népességet veszített az ország", marks: null, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme leads its answer with “Válasz a 4. bekezdésben: Azért okozott jelentős demográfiai hiányt az emigrációs hullám, mert” and labels the second and third reasons “b,” and “c,”." },
+    { id: "r-2", kind: "point", verbatim: "jelentős részük fiatal, miközben a régebben emigráltak közül sokan éppen a nyugdíjas korukra térnek vissza hazájukba. A legutóbbi adatok szerint a határokon kívül élő állampolgárok aránya a legmagasabbak közt van az európai országok körében.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "A külföldre távozottak visszacsábítására tett próbálkozások csak szórványos eredménnyel jártak, mert a legtöbben már gyökeret vertek a választott országban, a gyermekeik is ott születtek.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2249,17 +2825,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért lehet a külföldiek jelenléte pozitív hatással az ország demográfiai mutatóira?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 5. bekezdésben: Azért lehet a külföldiek jelenléte pozitív hatással az ország demográfiai mutatóira, mert: a, Körükben több a gyerek. b, Ha pedig a külföldiek által fizetett társadalombiztosítási hozzájárulást összevetjük a rájuk fordított szociális kiadásokkal, az egyenleg szintén pozitív, amivel a nemzeti nyugdíjalapba is besegítenek. c, A gazdasági növekedés dinamikájának fenntartásához is szükség van a képzett fiatalok ezen országokba csábítására.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 5. bekezdésben: Azért lehet a külföldiek jelenléte pozitív hatással az ország demográfiai mutatóira, mert: a, Körükben több a gyerek. b, Ha pedig a külföldiek által fizetett társadalombiztosítási hozzájárulást összevetjük a rájuk fordított szociális kiadásokkal, az egyenleg szintén pozitív, amivel a nemzeti nyugdíjalapba is besegítenek. c, A gazdasági növekedés dinamikájának fenntartásához is szükség van a képzett fiatalok ezen országokba csábítására.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2272,17 +2849,18 @@ export const CARDS: SecCard[] = [
     questionText: "A szerző azt állítja, hogy „[s]zociológusok szerint inkább a megelőzésre kell erőfeszítést tenni”. A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért-e ezzel vagy sem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 2., 3. és 4. bekezdése alapján adott válasz: Az az állítás, hogy „[s]zociológusok szerint inkább a megelőzésre kell erőfeszítést tenni”, azt jelenti, hogy kvalifikált, jól fizetett munkahelyek teremtésével tudják elejét venni a fiatalok távozásának, ezzel leszorítják a fiatalok körében magas munkanélküliséget, megakadályozzák a fiatal és jól képzett munkaerő kivándorlását, és azt, hogy más országban telepedjenek le, ahonnan valószínűleg nem térnek vissza hazájukba. Igen, egyetértek vele, mert … vagy Nem, nem értek egyet vele, mert …Egyéni válasz.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 2., 3. és 4. bekezdése alapján adott válasz: Az az állítás, hogy „[s]zociológusok szerint inkább a megelőzésre kell erőfeszítést tenni”, azt jelenti, hogy kvalifikált, jól fizetett munkahelyek teremtésével tudják elejét venni a fiatalok távozásának, ezzel leszorítják a fiatalok körében magas munkanélküliséget, megakadályozzák a fiatal és jól képzett munkaerő kivándorlását, és azt, hogy más országban telepedjenek le, ahonnan valószínűleg nem térnek vissza hazájukba. Igen, egyetértek vele, mert … vagy Nem, nem értek egyet vele, mert …Egyéni válasz.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2295,18 +2873,69 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg a szöveg alapján, miért központi kérdés Magyarország jövőjének szempontjából a demográfiai egyensúly!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 1., 3. és 5. bekezdése alapján adott válasz: Azért központi kérdés Magyarország jövőjének szempontjából a demográfiai egyensúly, mert a születésszám növekedése nem tudja pótolni a demográfiai hiányt, egyre elöregedettebb a népesség, mind kevesebb a fiatal is. A jelenlegi tízmilliós lakosság jelentősen zsugorodik, olyan nagyarányú idős népességgel, ami hatalmas kihívás a társadalom fenntarthatósága szempontjából. Egyre több munkaképes korú felnőtt tervezi, hogy külföldön vállal munkát, és elhagyja az országot a közeljövőben. Különösen a fiatalok körében magas és a korábbiakhoz képest egyre növekvő ez az arány. A külföldre távozottak visszacsábítására tett próbálkozások csak szórványos eredménnyel jártak. A migrációs egyenleg is negatív, vagyis többen hagyják el az országot, mint ahány külföldi ott letelepedik. A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30% 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 1., 3. és 5. bekezdése alapján adott válasz: Azért központi kérdés Magyarország jövőjének szempontjából a demográfiai egyensúly, mert a születésszám növekedése nem tudja pótolni a demográfiai hiányt, egyre elöregedettebb a népesség, mind kevesebb a fiatal is. A jelenlegi tízmilliós lakosság jelentősen zsugorodik, olyan nagyarányú idős népességgel, ami hatalmas kihívás a társadalom fenntarthatósága szempontjából. Egyre több munkaképes korú felnőtt tervezi, hogy külföldön vállal munkát, és elhagyja az országot a közeljövőben. Különösen a fiatalok körében magas és a korábbiakhoz képest egyre növekvő ez az arány. A külföldre távozottak visszacsábítására tett próbálkozások csak szórványos eredménnyel jártak. A migrációs egyenleg is negatív, vagyis többen hagyják el az országot, mint ahány külföldi ott letelepedik.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2019 Higher Level — © State Examinations Commission.",
+    id: "hun-2019-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-min-100-max-150-szoban",
+    section: "II", questionRef: "2019 HL Section II Q1",
+    questionText: "Kommentár (min. 100, max. 150 szóban) Kommentálja a szöveg alapján a 7. bekezdés alábbi mondatát minimum 100, maximum 150 szóban! Talán Magyarországnak is sikerül elérnie ezt a pozitív eredményt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100, maximum 150 szóban tisztán, érthetően kifejtett, szövegen alapuló saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “Talán igen:”; “a bevándorlókat idevonzó intézkedéseket vezet be (1. bk);”; “ha bevándorlók települnének az országba, a jelenlegi népességszám fennmaradna (2. bk);”; “ha a bevándorlók száma növekedne: A külföldiek jelenléte pozitív hatással van az ország demográfiai mutatóira. Körükben több a gyerek. A külföldiek által fizetett társadalombiztosítási hozzájárulással a nemzeti nyugdíjalapba is besegítenek. (5. bk);”; “Magyarországnak követnie kellene a portugál társadalom példáját, ami elsősorban szolidaritásból nyitott a menekültek befogadására: segítik a beilleszkedést, hogy az oda érkezett családok önállókká és integráltakká váljanak. A problémáknak felvilágosító, szolidaritási kampányokkal is igyekeznek elejét venni. (6. és 7. bk);”; “Talán nem, ha Magyarország nem találja meg a fent felsorolt megoldásokat.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2019 Higher Level — © State Examinations Commission.",
+    id: "hun-2019-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-valsag-embersegunk-szakitoprobaja-vagy",
+    section: "III", questionRef: "2019 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! A válság az emberségünk szakítópróbája – vagy engedünk a gyanakvásunknak és a félelmeinknek és falakat húzunk fel, vagy a másik emberben saját magunkat látjuk viszont. (Barack Obama)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2019 Higher Level — © State Examinations Commission.",
+    id: "hun-2019-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-egy-halasztast-igenybe-venni",
+    section: "III", questionRef: "2019 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Egy év halasztást igénybe venni a középiskola befejezése után – hasznos vagy csak időpocsékolás? Esszéjében vizsgálja meg a kérdést mindkét oldalról!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2318,17 +2947,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázd meg, mit jelent a „debütál” ige!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található ige a saját szavaiddal kifejezve: A debütál ige azt jelenti, hogy nyilvánosság elé kerül, először jelenik meg.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található ige a saját szavaiddal kifejezve: A debütál ige azt jelenti, hogy nyilvánosság elé kerül, először jelenik meg.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2341,17 +2971,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázd meg, mit jelent a „csigázták tovább az érdeklődést” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés a saját szavaiddal kifejezve: A csigázták tovább az érdeklődést kifejezés azt jelenti, hogy tovább fokozták az izgalmakat.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés a saját szavaiddal kifejezve: A csigázták tovább az érdeklődést kifejezés azt jelenti, hogy tovább fokozták az izgalmakat.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2361,20 +2992,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2020 Higher Level — © State Examinations Commission.",
     id: "hun-2020-hl-i-1-c", topicId: "hungarian-0-0", conceptId: "magyarazd-meg-mit-jelent-debutal-ige",
     section: "I", questionRef: "2020 HL Section I Q1(c)",
-    questionText: "Magyarázd meg, mit jelent a „debütál” ige! Magyarázd meg, mit jelent a „pallérozódott” ige!",
+    questionText: "Magyarázd meg, mit jelent a „pallérozódott” ige!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található ige a saját szavaiddal kifejezve: A pallérozódott ige azt jelenti, hogy nevelődött.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található ige a saját szavaiddal kifejezve: A pallérozódott ige azt jelenti, hogy nevelődött.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2384,20 +3016,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2020 Higher Level — © State Examinations Commission.",
     id: "hun-2020-hl-i-1-d", topicId: "hungarian-0-0", conceptId: "magyarazd-meg-mit-jelent-debutal-ige",
     section: "I", questionRef: "2020 HL Section I Q1(d)",
-    questionText: "Magyarázd meg, mit jelent a „debütál” ige! Magyarázd meg, mit jelent a „szenzációhajhász” szó!",
+    questionText: "Magyarázd meg, mit jelent a „szenzációhajhász” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó a saját szavaiddal kifejezve: A szenzációhajhász szó azt jelenti, hogy valaki minél érdekesebbé, izgalmasabbá teszi a híreket.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó a saját szavaiddal kifejezve: A szenzációhajhász szó azt jelenti, hogy valaki minél érdekesebbé, izgalmasabbá teszi a híreket.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2410,17 +3043,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázd meg, mit jelent a „szálka volt a kormányok szemében” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található kifejezés a saját szavaiddal kifejezve: A szálka volt a kormányok szemében azt jelenti, hogy a napilap mindig a kormányok útjában volt.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található kifejezés a saját szavaiddal kifejezve: A szálka volt a kormányok szemében azt jelenti, hogy a napilap mindig a kormányok útjában volt.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2433,17 +3067,18 @@ export const CARDS: SecCard[] = [
     questionText: "Mihez bizonyult kevésnek a politikai szándék és akarat?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 5. bekezdésben: A politikai szándék és akarat ahhoz bizonyult kevésnek, hogy Az Estre hasonlító kormánypárti bulvárlap elődje sikerét akár csak megközelítse.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 5. bekezdésben: A politikai szándék és akarat ahhoz bizonyult kevésnek, hogy Az Estre hasonlító kormánypárti bulvárlap elődje sikerét akár csak megközelítse.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2456,17 +3091,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért volt szükség belügyminiszteri rendeletre?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: A rendeletre azért volt szükség, hogy megtiltsa, hogy a lap árán és nevén kívül bármi mást kikiabáljanak az újságból, hogy a szenzációhajhász címeket ne színezhessék tovább.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: A rendeletre azért volt szükség, hogy megtiltsa, hogy a lap árán és nevén kívül bármi mást kikiabáljanak az újságból, hogy a szenzációhajhász címeket ne színezhessék tovább.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2479,17 +3115,18 @@ export const CARDS: SecCard[] = [
     questionText: "Mikben volt újító, első Az Est?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 2. és 3. bekezdésben: Abban, hogy a riporterek a gépírókisasszonyoknak telefonon át közvetlenül gépbe diktálhatták tudósításaikat, valamint abban is, hogy címoldalán hozta a bécsi és pesti börze híreit, teljes oldalnyi sportrovatot és rendszeres időjárás-jelentést közölt.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 2. és 3. bekezdésben: Abban, hogy a riporterek a gépírókisasszonyoknak telefonon át közvetlenül gépbe diktálhatták tudósításaikat, valamint abban is, hogy címoldalán hozta a bécsi és pesti börze híreit, teljes oldalnyi sportrovatot és rendszeres időjárás-jelentést közölt.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2502,17 +3139,18 @@ export const CARDS: SecCard[] = [
     questionText: "Milyen tényezők járultak hozzá Az Est gyors sikeréhez?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 1., 2., 3. és 4. bekezdése alapján saját szavakkal kifejtett vélemény. Intenzív plakát- és röplapáradat előzte meg a bevezetését, jól szervezett volt a lapterjesztés, a rikkancsok még az eleve szenzációhajhász címeket is tovább színezték, kellően friss és „szenzációs” volt maga a hír, a riporterek a gépírókisasszonyoknak telefonon át közvetlenül gépbe diktálhatták tudósításaikat, az újságírószakma és az irodalmi élet elitjét foglalkoztatták, mértékadónak számító közgazdasági rovata mellett elsőként jelentkezett teljes oldalnyi sportrovattal és rendszeres időjárás-jelentéssel, önálló irodalmi rovata is volt a bulvárlapnak, valamint a szépirodalom színe-javának írásait is olvashatták.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 1., 2., 3. és 4. bekezdése alapján saját szavakkal kifejtett vélemény. Intenzív plakát- és röplapáradat előzte meg a bevezetését, jól szervezett volt a lapterjesztés, a rikkancsok még az eleve szenzációhajhász címeket is tovább színezték, kellően friss és „szenzációs” volt maga a hír, a riporterek a gépírókisasszonyoknak telefonon át közvetlenül gépbe diktálhatták tudósításaikat, az újságírószakma és az irodalmi élet elitjét foglalkoztatták, mértékadónak számító közgazdasági rovata mellett elsőként jelentkezett teljes oldalnyi sportrovattal és rendszeres időjárás-jelentéssel, önálló irodalmi rovata is volt a bulvárlapnak, valamint a szépirodalom színe-javának írásait is olvashatták.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -2525,18 +3163,69 @@ export const CARDS: SecCard[] = [
     questionText: "Mik voltak a napilap összeomlásának okai?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 5. bekezdése alapján saját szavakkal kifejtett vélemény. A lap többnyire szálka volt a kormányok szemében. A lapnak az évek során többször is megvonták a kolportázshoz, vagyis az utcai terjesztéshez való jogát, vagy munkatársain keresztül próbálták kikezdeni az újságot. A mindinkább szélsőjobboldalra tolódó hatalom 1939 szeptemberében hallgattatta el Az Estet. A részvénytársaság elhúzódó pénzügyi perét ürügyül használva az adóhatóság a szerkesztőségi helyiségeket íróasztalostul, írógépestül puccsszerűen kiüríttette. A lapnak mindössze arra maradt lehetősége, hogy önnön megszűntét még nyomtatásban tudassa az utolsó számában. A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30% 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 5. bekezdése alapján saját szavakkal kifejtett vélemény. A lap többnyire szálka volt a kormányok szemében. A lapnak az évek során többször is megvonták a kolportázshoz, vagyis az utcai terjesztéshez való jogát, vagy munkatársain keresztül próbálták kikezdeni az újságot. A mindinkább szélsőjobboldalra tolódó hatalom 1939 szeptemberében hallgattatta el Az Estet. A részvénytársaság elhúzódó pénzügyi perét ürügyül használva az adóhatóság a szerkesztőségi helyiségeket íróasztalostul, írógépestül puccsszerűen kiüríttette. A lapnak mindössze arra maradt lehetősége, hogy önnön megszűntét még nyomtatásban tudassa az utolsó számában.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2020 Higher Level — © State Examinations Commission.",
+    id: "hun-2020-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-fejtsd-allaspontodat-min-100-szoban",
+    section: "II", questionRef: "2020 HL Section II Q1",
+    questionText: "Fejtsd ki álláspontodat min. 100 szóban a 2. bekezdésben található alábbi mondattal kapcsolatban! „Azonban mit sem ért volna a bulvár nagy találmánya, hogy minden cikknek hangzatos címet ad, ha nem kellően friss és »szenzációs« maga a hír.”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100, maximum 150 szóban tisztán, érthetően kifejtett, szövegen alapuló saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme reprints the task as: “Fejtsd ki véleményedet minimum 100 szóban az alábbi témáról!”. The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “A jobb üzletmenet érdekében a rikkancsok még az eleve szenzációhajhász címeket is tovább színezték (§ 2)”; “Az Est újítása volt az, hogy a riporterek a gépírókisasszonyoknak telefonon át közvetlenül gépbe diktálhatták tudósításaikat (§ 2)”; “Repülőgépre ültette és európai városokba küldte válogatott tudósítóit, hogy az újdonságszámba menő repülés élményével is színesítsék helyszíni riportjaikat (§ 2)”; “Mint az egyik legjobban fizető lap, Az Est a kezdetektől fogva az újságírószakma és az irodalmi élet elitjét foglalkoztatta (§ 2)”; “Gyors és megbízható hírszolgálatának köszönhetően az 1910-es évek közepétől Az Est híreit rendszeresen átvették a külföldi lapok is (§ 3)”; “Az Estből és a többi bulvárnak mondott lapból nyomon követhetőek a 20. század első felének legfontosabb eseményei (§ 4)”; “Az önálló irodalmi rovatot is jegyző bulvárlap valósággal dúskált az irodalmi csemegékben is (§ 4)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2020 Higher Level — © State Examinations Commission.",
+    id: "hun-2020-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-konfliktus-maganelethez-valo-jog",
+    section: "III", questionRef: "2020 HL Section III Q1",
+    questionText: "A két téma közül válassz ki egyet, és írj egy min. 300 szavas esszét! Mi a konfliktus a magánélethez való jog és a sajtószabadság között?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2020 Higher Level — © State Examinations Commission.",
+    id: "hun-2020-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-figyelembe-veve-hogyan-hasznaljak",
+    section: "III", questionRef: "2020 HL Section III Q2",
+    questionText: "A két téma közül válassz ki egyet, és írj egy min. 300 szavas esszét! Figyelembe véve, hogyan használják a sztárok a bulvársajtót és hogyan használja a bulvársajtó a sztárokat, mit mond ez számunkra a mai társadalomról?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2548,7 +3237,7 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „népszerűségnek örvend” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található kifejezés saját szavaival megfogalmazva: a „népszerűségnek örvend” azt jelenti, hogy sokak számára ismert, közkedvelt.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található kifejezés saját szavaival megfogalmazva: a „népszerűségnek örvend” azt jelenti, hogy sokak számára ismert, közkedvelt.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2559,7 +3248,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Hungarian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2572,7 +3261,7 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „túlturistásodott” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Magyarázza meg, mit jelent az „túlturistásodott (overtourism)” kifejezés! A 3. és7. bekezdésben található kifejezés saját szavaival megfogalmazva: a „túlturistásodott” kifejezés azt jelenti, hogy torlódások és túlzsúfoltság alakul ki a túlzott turistaáradat miatt, ami konfliktust okoz(hat) a helyieknek, de akár a település infrastruktúrájában is.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. és7. bekezdésben található kifejezés saját szavaival megfogalmazva: a „túlturistásodott” kifejezés azt jelenti, hogy torlódások és túlzsúfoltság alakul ki a túlzott turistaáradat miatt, ami konfliktust okoz(hat) a helyieknek, de akár a település infrastruktúrájában is.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2583,7 +3272,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Hungarian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2596,7 +3285,7 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „egy tűt sem lehet leejteni” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival megfogalmazva: az „egy tűt sem lehet leejteni” kifejezés azt jelenti, hogy nagyon sokan vannak, óriási a tömeg.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival megfogalmazva: az „egy tűt sem lehet leejteni” kifejezés azt jelenti, hogy nagyon sokan vannak, óriási a tömeg.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2607,7 +3296,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Hungarian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2620,7 +3309,7 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „megsínyli” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található kifejezés saját szavaival megfogalmazva: a „megsínyli” kifejezés azt jelenti, hogy valaminek a kárát látja, megszenvedi.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található kifejezés saját szavaival megfogalmazva: a „megsínyli” kifejezés azt jelenti, hogy valaminek a kárát látja, megszenvedi.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2631,7 +3320,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Hungarian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2644,7 +3333,7 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „jelenség” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 8. bekezdésben található kifejezés saját szavaival megfogalmazva: a „jelenség” kifejezés azt jelenti, hogy megfigyelhető tény vagy esemény, a fizikai világban észlelhető változások, vagy abból levont következtetések.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 8. bekezdésben található kifejezés saját szavaival megfogalmazva: a „jelenség” kifejezés azt jelenti, hogy megfigyelhető tény vagy esemény, a fizikai világban észlelhető változások, vagy abból levont következtetések.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2655,7 +3344,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Hungarian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2668,7 +3357,7 @@ export const CARDS: SecCard[] = [
     questionText: "Hány hajó közlekedik a Duna belvárosi szakaszán esténként átlagosan?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hány hajó közlekedik esténként a Duna belvárosi szakaszán átlagosan? Válasz a 4. bekezdésben: A Duna belvárosi szakaszán esténként átlagosan 70 hajó közlekedik.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 4. bekezdésben: A Duna belvárosi szakaszán esténként átlagosan 70 hajó közlekedik.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2679,7 +3368,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Hungarian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2692,7 +3381,7 @@ export const CARDS: SecCard[] = [
     questionText: "Milyen okok rejlenek az idegenforgalmi robbanás mögött?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Az idegenforgalmi robbanás mögött rejlő okok között ott van a fapados légitársaságok térnyerése, az internetes jegy‐ és hotelfoglalás pofonegyszerűsége, az olcsó szállás, a közösségi médiát elöntő fotók és videók akaratlan vírusmarketingje, az értékelések özöne.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Az idegenforgalmi robbanás mögött rejlő okok között ott van a fapados légitársaságok térnyerése, az internetes jegy‐ és hotelfoglalás pofonegyszerűsége, az olcsó szállás, a közösségi médiát elöntő fotók és videók akaratlan vírusmarketingje, az értékelések özöne.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2703,7 +3392,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Hungarian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2716,7 +3405,7 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, miért a nagyobb vízi járművek okozzák a legtöbb problémát Budapesten! Milyen megoldásokat javasolnak ezen problémákra? Vajon ezek jó megoldások ezen problémákra?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 4. bekezdésben: Azért nem igazán életszerű, és csak populista szövegnek hatásos, hogy kitiltsák a nagyobb vízi járműveket Budapestről, mert kitiltás esetén a város jelentős bevételtől esne el. A folyami turistahajózás egyre nagyobb biznisz, azaz „a lehető legkisebb befektetéssel a lehető legnagyobb profit” elve érvényesül. Azonban a legtöbb bajt a szállodahajók zsúfoltsága okozza Budapesten, mert a Duna belvárosi szakaszán esténként átlagosan 70 hajó közlekedik, a kisebb jachtoktól a drabális méretű szállodahajókig. És a hatalmas luxushajóknak olyan az orrkiképzése, amelyik már egy kisebb ütközéssel is könnyen megbillent egy másik járművet, amelynek utána semmi esélye nincs, s csak idő kérdése, mikor következik be emiatt súlyos tragédia.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 4. bekezdésben: Azért nem igazán életszerű, és csak populista szövegnek hatásos, hogy kitiltsák a nagyobb vízi járműveket Budapestről, mert kitiltás esetén a város jelentős bevételtől esne el. A folyami turistahajózás egyre nagyobb biznisz, azaz „a lehető legkisebb befektetéssel a lehető legnagyobb profit” elve érvényesül. Azonban a legtöbb bajt a szállodahajók zsúfoltsága okozza Budapesten, mert a Duna belvárosi szakaszán esténként átlagosan 70 hajó közlekedik, a kisebb jachtoktól a drabális méretű szállodahajókig. És a hatalmas luxushajóknak olyan az orrkiképzése, amelyik már egy kisebb ütközéssel is könnyen megbillent egy másik járművet, amelynek utána semmi esélye nincs, s csak idő kérdése, mikor következik be emiatt súlyos tragédia.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2727,7 +3416,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Hungarian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2740,7 +3429,7 @@ export const CARDS: SecCard[] = [
     questionText: "A szerző azt állítja, hogy az „overtourismra sajátos módon reagált a Fodor’s amerikai útikönyvkiadó”. A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért-e ezzel vagy sem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 8. bekezdése, illetve egésze alapján adott válasz: Az az állítás, hogy az „overtourismra sajátos módon reagált a Fodor’s amerikai útikönyvkiadó”, azt jelenti, hogy a Fodor’s 2016 óta állít össze listát azokról a helyekről, amelyeket jobb, ha elkerülnek a tömegiszonyban szenvedők. Ez azért sajátos, mert eddig az útikönyvkiadók a népszerű helyeket javasolták, és nem azok elkerülését, azonban az elmélyültebb turistáskodást helyettesítő, gyors élményt bizonyító szelfizést jelenséggé emelő overtourism népszerűsége óta jelentősen megváltozott a helyzet, különösen a felkapott városokban és üdülőhelyeken, ahol a városlátogatók miatt lassan egy tűt sem lehet leejteni. Igen, egyetértek vele, mert … vagy Nem, nem értek egyet vele, mert …Egyéni válasz.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 8. bekezdése, illetve egésze alapján adott válasz: Az az állítás, hogy az „overtourismra sajátos módon reagált a Fodor’s amerikai útikönyvkiadó”, azt jelenti, hogy a Fodor’s 2016 óta állít össze listát azokról a helyekről, amelyeket jobb, ha elkerülnek a tömegiszonyban szenvedők. Ez azért sajátos, mert eddig az útikönyvkiadók a népszerű helyeket javasolták, és nem azok elkerülését, azonban az elmélyültebb turistáskodást helyettesítő, gyors élményt bizonyító szelfizést jelenséggé emelő overtourism népszerűsége óta jelentősen megváltozott a helyzet, különösen a felkapott városokban és üdülőhelyeken, ahol a városlátogatók miatt lassan egy tűt sem lehet leejteni. Igen, egyetértek vele, mert … vagy Nem, nem értek egyet vele, mert …Egyéni válasz.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2751,7 +3440,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Hungarian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2764,7 +3453,7 @@ export const CARDS: SecCard[] = [
     questionText: "A szerző azt állítja, hogy „az overtourism kínja annyira fájdalmassá vált”. A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért-e ezzel vagy sem! !",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szerző azt állítja, hogy „az overtourism kínja annyira fájdalmassá vált”. A szövegre utalva fejtse ki ezt az álláspontot, és azt is, egyetért‐e vele vagy sem! A szöveg 1. és 6. bekezdése alapján adott válasz: Az az állítás, hogy „ az overtourism kínja annyira fájdalmassá vált”, azt jelenti, hogy konkrét intézkedéseket próbálnak foganatosítani. Ilyen a szezon elhúzása, alternatív célpontok kínálása, a legsűrűbb időszakban megemelt árak kiszorító hatása, a szálláskínálat szabályozása, a szívesen látottak számának vagy a látványosságokhoz való hozzáférés korlátozása, a kirívó viselkedés büntetése. Igen, egyetértek vele, mert … vagy Nem, nem értek egyet vele, mert …Egyéni válasz.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 1. és 6. bekezdése alapján adott válasz: Az az állítás, hogy „ az overtourism kínja annyira fájdalmassá vált”, azt jelenti, hogy konkrét intézkedéseket próbálnak foganatosítani. Ilyen a szezon elhúzása, alternatív célpontok kínálása, a legsűrűbb időszakban megemelt árak kiszorító hatása, a szálláskínálat szabályozása, a szívesen látottak számának vagy a látványosságokhoz való hozzáférés korlátozása, a kirívó viselkedés büntetése. Igen, egyetértek vele, mert … vagy Nem, nem értek egyet vele, mert …Egyéni válasz.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2775,8 +3464,34 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Hungarian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2021 Higher Level — © State Examinations Commission.",
+    id: "hun-2021-hl-ii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-egy-hosszu-tobbre-tanit",
+    section: "II", questionRef: "2021 HL Section II Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! „Egy hosszú út többre tanít magadról, mint százévnyi önvizsgálat.” - Patrick James Rothfuss: A bölcs ember félelme",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\" Under Part II the scheme prints only “Tisztán, érthetően és világosan megírt esszé.” and, under each title, “Egyéni válasz minimum 300 szóban.” It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2021 Higher Level — © State Examinations Commission.",
+    id: "hun-2021-hl-ii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-nem-talalhatsz-egyszer-csak",
+    section: "II", questionRef: "2021 HL Section II Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Nem találhatsz ki egyszerűen csak azért saját tényeket, mert nem tetszik, amit hallasz. - Greta Thunberg",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\" Under Part II the scheme prints only “Tisztán, érthetően és világosan megírt esszé.” and, under each title, “Egyéni válasz minimum 300 szóban.” It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2788,17 +3503,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „összecsődíteni” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés saját szavaival megfogalmazva: az „összecsődíteni” azt jelenti, hogy sokan összegyűlnek.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés saját szavaival megfogalmazva: az „összecsődíteni” azt jelenti, hogy sokan összegyűlnek.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2811,17 +3527,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „kinyílik a világ” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés saját szavaival megfogalmazva: a „kinyílik a világ” azt jelenti, hogy lehetőségei adódnak, megváltozik az élete pozitív értelemben.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés saját szavaival megfogalmazva: a „kinyílik a világ” azt jelenti, hogy lehetőségei adódnak, megváltozik az élete pozitív értelemben.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2834,17 +3551,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „trauma” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található kifejezés saját szavaival megfogalmazva: a „trauma” kifejezés azt jelenti, hogy olyan behatás, ami súlyos lelki károsodást okoz.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található kifejezés saját szavaival megfogalmazva: a „trauma” kifejezés azt jelenti, hogy olyan behatás, ami súlyos lelki károsodást okoz.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2857,17 +3575,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „mérföldkő” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival megfogalmazva: a „mérföldkő” azt jelenti, hogy jelentős esemény, általában fejlődési pillanat egy dolog történetében, amikor a korábbiakhoz képest nagyobb haladást, lényeges változást értek el.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival megfogalmazva: a „mérföldkő” azt jelenti, hogy jelentős esemény, általában fejlődési pillanat egy dolog történetében, amikor a korábbiakhoz képest nagyobb haladást, lényeges változást értek el.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2880,17 +3599,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „kompenzál” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival megfogalmazva: a „kompenzál” azt jelenti, hogy ellensúlyoz egy káros hatást, erőt.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival megfogalmazva: a „kompenzál” azt jelenti, hogy ellensúlyoz egy káros hatást, erőt.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2903,17 +3623,18 @@ export const CARDS: SecCard[] = [
     questionText: "Mikor lett kész Juhász Márton első albuma?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Juhász Márton első albuma a 2020‐as tavaszi karantén alatt lett kész.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 1. bekezdésben: Juhász Márton első albuma a 2020‐as tavaszi karantén alatt lett kész.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2926,17 +3647,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hogyan vághatja ketté a járvány és az ezzel együtt járó korlátozások a fiatal, Z‐nek nevezett generációt?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 4. bekezdésben: Mivel a koronanemzedék nem egységes, a járvány és az ezzel együtt járó korlátozások kettévághatják a fiatal, Z‐nek nevezett generációt. E szerint „formálódik egy Qlíma és egy Quarantén csoport”. Az előbbinek a tagjai a jól képzett, gazdasági, társadalmi és kulturális, különösen it‐tőkével ellátott fiatalok közül kerülnek ki. A Quarantén csoportba tartozók nem tudják olyan könnyen kompenzálni a járvány hatásait. Arra lehet számítani, hogy közülük kerülnek ki majd a munkanélküliek, vagy ők lesznek azok, akik átképzésre szorulnak. A munkaerőpiaci helyzet pedig tovább mélyítheti a szakadékot a válságnak ellenállóbb és a kiszolgáltatottabb csoportok között.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 4. bekezdésben: Mivel a koronanemzedék nem egységes, a járvány és az ezzel együtt járó korlátozások kettévághatják a fiatal, Z‐nek nevezett generációt. E szerint „formálódik egy Qlíma és egy Quarantén csoport”. Az előbbinek a tagjai a jól képzett, gazdasági, társadalmi és kulturális, különösen it‐tőkével ellátott fiatalok közül kerülnek ki. A Quarantén csoportba tartozók nem tudják olyan könnyen kompenzálni a járvány hatásait. Arra lehet számítani, hogy közülük kerülnek ki majd a munkanélküliek, vagy ők lesznek azok, akik átképzésre szorulnak. A munkaerőpiaci helyzet pedig tovább mélyítheti a szakadékot a válságnak ellenállóbb és a kiszolgáltatottabb csoportok között.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2949,17 +3671,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért mondhatjuk, hogy ez a világjárvány lényegében egy háborús pszichózis jellegű hatást okoz?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 3. bekezdésben: Azért mondhatjuk, hogy ez a világjárvány lényegében egy háborús pszichózis jellegű hatás, mert az emberek amit most megtanulnak, az az elképesztően nagy bizonytalanság, mivel nem csak a jövőt, a holnapot sem látják. Sokan nemcsak a négy fal közé, de saját kis világukba is bezárkóztak. Sokkal kevésbé nyitottak most az újdonságokra az emberek. Megjelenhet a biztonságra való törekvés, és sokkal fontosabbá válik a család, a biztonság és a konzervatív értékek iránti vágy”.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 3. bekezdésben: Azért mondhatjuk, hogy ez a világjárvány lényegében egy háborús pszichózis jellegű hatás, mert az emberek amit most megtanulnak, az az elképesztően nagy bizonytalanság, mivel nem csak a jövőt, a holnapot sem látják. Sokan nemcsak a négy fal közé, de saját kis világukba is bezárkóztak. Sokkal kevésbé nyitottak most az újdonságokra az emberek. Megjelenhet a biztonságra való törekvés, és sokkal fontosabbá válik a család, a biztonság és a konzervatív értékek iránti vágy”.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2972,17 +3695,18 @@ export const CARDS: SecCard[] = [
     questionText: "A szerző azt állítja, hogy a járvány egy egész generáció fiatalságát rövidítette meg, alapvető élményektől, lehetőségektől fosztva meg őket. A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért‐e ezzel vagy sem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 2. bekezdése, illetve egésze alapján adott válasz: Az az állítás, hogy a járvány egy egész generáció fiatalságát rövidítette meg, alapvető élményektől, lehetőségektől fosztva meg őket azt jelenti, hogy a vakcina hiába érkezett meg, a tinédzserkor végén, a húszas évek elején, még nagyon hosszú volt az a három‐négy hónap, mire az átoltottság lehetővé tette, hogy a fiatalok visszatérjenek megszokott életükhöz. A járványhelyzet miatt így ez az életszakasz megrövidült, ezért másként élik meg az ifjúságukat, mint az őket megelőző nemzedékek, nem olyan felhőtlenül, nem olyan hedonistán, mert a külső körülmények nem tették/teszik ezt lehetővé. Igen, egyetértek, mert… vagy Nem, nem értek egyet, mert … Egyéni válasz.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 2. bekezdése, illetve egésze alapján adott válasz: Az az állítás, hogy a járvány egy egész generáció fiatalságát rövidítette meg, alapvető élményektől, lehetőségektől fosztva meg őket azt jelenti, hogy a vakcina hiába érkezett meg, a tinédzserkor végén, a húszas évek elején, még nagyon hosszú volt az a három‐négy hónap, mire az átoltottság lehetővé tette, hogy a fiatalok visszatérjenek megszokott életükhöz. A járványhelyzet miatt így ez az életszakasz megrövidült, ezért másként élik meg az ifjúságukat, mint az őket megelőző nemzedékek, nem olyan felhőtlenül, nem olyan hedonistán, mert a külső körülmények nem tették/teszik ezt lehetővé. Igen, egyetértek, mert… vagy Nem, nem értek egyet, mert … Egyéni válasz.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
   } as SecCard,
   {
@@ -2995,18 +3719,51 @@ export const CARDS: SecCard[] = [
     questionText: "A szerző azt állítja, hogy a közhely beigazolódott, hogy a válság új lehetőségeket teremt. A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért‐e ezzel vagy sem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 5. bekezdése alapján adott válasz: Az az állítás, hogy a közhely beigazolódott, hogy a válság új lehetőségeket teremt, azt jelenti, hogy ha valaki megfelelő tudással és infrastruktúrával rendelkezett, és képes volt elhagyni a komfortzónáját, kihasználhatta az adódó lehetőségeket. Ebben pedig a fiataloknak helyenként még előnyük is volt az idősebb vállalkozókkal szemben. Sokat segített az alkalmazkodóképességük, a rugalmasságuk, és hogy már korábban is sokkal otthonosabban mozogtak a digitalizáció terén. A feladatok és a munkamenet egy jó részét hirtelen át kellett tenni az online világba, korábban nem használt programokat kellett elsajátítani. Sok fiatal cégvezető alkalmazkodott a versenytársaknál gyorsabban a távmunka kényszeréhez. Igen, egyetértek vele, mert … vagy Nem, nem értek egyet vele, mert … Egyéni válasz. A II. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. 3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. 4. Nyelvhelyesség – Nyelvi és helyesírási szabályok.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 5. bekezdése alapján adott válasz: Az az állítás, hogy a közhely beigazolódott, hogy a válság új lehetőségeket teremt, azt jelenti, hogy ha valaki megfelelő tudással és infrastruktúrával rendelkezett, és képes volt elhagyni a komfortzónáját, kihasználhatta az adódó lehetőségeket. Ebben pedig a fiataloknak helyenként még előnyük is volt az idősebb vállalkozókkal szemben. Sokat segített az alkalmazkodóképességük, a rugalmasságuk, és hogy már korábban is sokkal otthonosabban mozogtak a digitalizáció terén. A feladatok és a munkamenet egy jó részét hirtelen át kellett tenni az online világba, korábban nem használt programokat kellett elsajátítani. Sok fiatal cégvezető alkalmazkodott a versenytársaknál gyorsabban a távmunka kényszeréhez. Igen, egyetértek vele, mert … vagy Nem, nem értek egyet vele, mert … Egyéni válasz.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2022 Higher Level — © State Examinations Commission.",
+    id: "hun-2022-hl-ii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-elet-attol-izgalmas-dolgokat",
+    section: "II", questionRef: "2022 HL Section II Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Az élet attól izgalmas, ha új dolgokat teremtünk. Ha folyton a biztonság után kutatunk, az elsorvasztja életerőnket. (Andrew Matthews)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk.", marks: null, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\" Under “A II. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:” the scheme prints the four criteria with no marks or percentages beside them, so they are shown and the part is scored on its printed total. Under Part II itself it reprints the instruction and the two titles and prints nothing else." },
+    { id: "r-2", kind: "point", verbatim: "2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "4. Nyelvhelyesség – Nyelvi és helyesírási szabályok.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2022 Higher Level — © State Examinations Commission.",
+    id: "hun-2022-hl-ii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg",
+    section: "II", questionRef: "2022 HL Section II Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Hogyan jön létre az igazi barátság?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk.", marks: null, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\" Under “A II. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:” the scheme prints the four criteria with no marks or percentages beside them, so they are shown and the part is scored on its printed total. Under Part II itself it reprints the instruction and the two titles and prints nothing else." },
+    { id: "r-2", kind: "point", verbatim: "2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "4. Nyelvhelyesség – Nyelvi és helyesírási szabályok.", marks: null },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3018,17 +3775,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „szétszálaz” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés saját szavaival megfogalmazva: a „szétszálaz” azt jelenti, hogy szétválogat, külön részekre bont vagy oszt valamit.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés saját szavaival megfogalmazva: a „szétszálaz” azt jelenti, hogy szétválogat, külön részekre bont vagy oszt valamit.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3041,17 +3799,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „nagyot fusson” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található kifejezés saját szavaival megfogalmazva: a „nagyot fusson” kifejezés azt jelenti, hogy nagy sikere legyen.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található kifejezés saját szavaival megfogalmazva: a „nagyot fusson” kifejezés azt jelenti, hogy nagy sikere legyen.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3064,17 +3823,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „autonóm” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival megfogalmazva: az „autonóm” szó azt jelenti, hogy önálló, független.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival megfogalmazva: az „autonóm” szó azt jelenti, hogy önálló, független.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3087,17 +3847,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „tabu” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található kifejezés saját szavaival megfogalmazva: a „tabu” kifejezés azt jelenti, hogy tiltott, érinthetetlen dolog. Valami, amiről nem illik beszélni.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található kifejezés saját szavaival megfogalmazva: a „tabu” kifejezés azt jelenti, hogy tiltott, érinthetetlen dolog. Valami, amiről nem illik beszélni.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3110,17 +3871,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „debütálás” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található kifejezés saját szavaival megfogalmazva: a „debütálás” kifejezés azt jelenti, hogy a nyilvánosság előtt bemutatkozik.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 6. bekezdésben található kifejezés saját szavaival megfogalmazva: a „debütálás” kifejezés azt jelenti, hogy a nyilvánosság előtt bemutatkozik.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3133,17 +3895,18 @@ export const CARDS: SecCard[] = [
     questionText: "A felmérések szerint kik vannak az olvasók között többségben?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 4. bekezdésben: A felmérések általában azt mutatják, hogy az olvasók között többségben vannak a nők.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 4. bekezdésben: A felmérések általában azt mutatják, hogy az olvasók között többségben vannak a nők.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3156,17 +3919,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért mondhatjuk, hogy a mai kamaszoknál sokkal erőteljesebben fejeződik ki a rajongás?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 3. bekezdésben: Azért mondhatjuk, hogy a mai kamaszoknál sokkal erőteljesebben fejeződik ki a rajongás, mert naprakészek kedvenc könyveik és szerzőik külföldi megjelenéseit illetően, mert a neten szorosan követik azokat: jóval gyakrabban vesznek elő angol nyelvű köteteket, megkeresik a művet vagy a folytatását is angolul, valamint abban a tekintetben is, hogy tudják az új kötetről, hogy az mikor fog megjelenni.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 3. bekezdésben: Azért mondhatjuk, hogy a mai kamaszoknál sokkal erőteljesebben fejeződik ki a rajongás, mert naprakészek kedvenc könyveik és szerzőik külföldi megjelenéseit illetően, mert a neten szorosan követik azokat: jóval gyakrabban vesznek elő angol nyelvű köteteket, megkeresik a művet vagy a folytatását is angolul, valamint abban a tekintetben is, hogy tudják az új kötetről, hogy az mikor fog megjelenni.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3179,17 +3943,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért nyer(hetet)t teret Magyarországon is a problémaorientált ifjúsági irodalom napjainkban?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 5. bekezdésben: Napjainkra az érzékenyítő, problémaorientált ifjúsági irodalom Magyarországon is teret nyert, mert a fiataloknak szóló fantasykben, krimikben vagy lányregényekben a kibeszélendő problémák is helyet kapnak, beszélnek bennük a tabukról, hogy ha a gyerek életében valami frusztráló dolog történik, tudjon hova fordulni válaszokért, támogatásért, mert problémák sajnos minden gyerek életében vannak. Egy nehéz esemény után segíteni tud a probléma feldolgozásában a megfelelő, a témát bátran bemutató mű. Ugyanígy tud segíteni egy megfelelő könyv a lelki terhet jelentő kirekesztettség esetében is: megmutatja, hogy nem vagyunk egyedül”. És egyre népszerűbbek az önsegítő könyvek is.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 5. bekezdésben: Napjainkra az érzékenyítő, problémaorientált ifjúsági irodalom Magyarországon is teret nyert, mert a fiataloknak szóló fantasykben, krimikben vagy lányregényekben a kibeszélendő problémák is helyet kapnak, beszélnek bennük a tabukról, hogy ha a gyerek életében valami frusztráló dolog történik, tudjon hova fordulni válaszokért, támogatásért, mert problémák sajnos minden gyerek életében vannak. Egy nehéz esemény után segíteni tud a probléma feldolgozásában a megfelelő, a témát bátran bemutató mű. Ugyanígy tud segíteni egy megfelelő könyv a lelki terhet jelentő kirekesztettség esetében is: megmutatja, hogy nem vagyunk egyedül”. És egyre népszerűbbek az önsegítő könyvek is.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3202,17 +3967,18 @@ export const CARDS: SecCard[] = [
     questionText: "A cikk szerzője azt állítja, hogy olvasnak ők (a Z generáció) csak talán máshogy. A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért-e ezzel vagy sem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 2. bekezdése alapján adott válasz: A cikk szerzője azt állítja, hogy a Z generáció olvas, csak máshogy, mert a TikTok‐kultúra, a Netflix, az Insta‐sztorik, a folyamatos online jelenlét megváltoztathatják az olvasási szokásaikat, például úgy, hogy talán jobban értékelik a rövidebb olvasmányokat. Illetve évtizedek óta tapasztalható, hogy az ifjúsági irodalmi szövegeket „átírta” a mozgókép. Többek között már J. K. Rowling is „filmszerűen” fogalmazta meg a Harry Potter könyvsorozatát. „Az utóbbi évtizedekben pedig láthatóan teljesen máshogy írnak az ifjúsági szerzők: szituációkban gondolkodnak, jeleneteznek, szinte filmes dramaturgiával dolgoznak. Innen már csak kis lépés, hogy a szövegek még rövidebbek, még eseménydúsabbak legyenek”. A digitális tartalmak jelentősen befolyásolják a kamasz olvasók választásait, vagyis például egy számítógépes játékból készült Netflix‐széria könyves adaptációjának jó esélye van arra, hogy nagyot fusson a fiatalok körében. Az Éhezők viadala, az Alkonyat‐saga esetében például egymást erősítették a könyvek és a belőlük készült filmes adaptációk. Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ....", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 2. bekezdése alapján adott válasz: A cikk szerzője azt állítja, hogy a Z generáció olvas, csak máshogy, mert a TikTok‐kultúra, a Netflix, az Insta‐sztorik, a folyamatos online jelenlét megváltoztathatják az olvasási szokásaikat, például úgy, hogy talán jobban értékelik a rövidebb olvasmányokat. Illetve évtizedek óta tapasztalható, hogy az ifjúsági irodalmi szövegeket „átírta” a mozgókép. Többek között már J. K. Rowling is „filmszerűen” fogalmazta meg a Harry Potter könyvsorozatát. „Az utóbbi évtizedekben pedig láthatóan teljesen máshogy írnak az ifjúsági szerzők: szituációkban gondolkodnak, jeleneteznek, szinte filmes dramaturgiával dolgoznak. Innen már csak kis lépés, hogy a szövegek még rövidebbek, még eseménydúsabbak legyenek”. A digitális tartalmak jelentősen befolyásolják a kamasz olvasók választásait, vagyis például egy számítógépes játékból készült Netflix‐széria könyves adaptációjának jó esélye van arra, hogy nagyot fusson a fiatalok körében. Az Éhezők viadala, az Alkonyat‐saga esetében például egymást erősítették a könyvek és a belőlük készült filmes adaptációk. Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ....", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3223,20 +3989,74 @@ export const CARDS: SecCard[] = [
     id: "hun-2023-hl-i-6", topicId: "hungarian-0-1", conceptId: "doka-peter-azt-allitja-hogy-harry",
     section: "I", questionRef: "2023 HL Section I Q6",
     questionText: "Dóka Péter azt állítja, hogy a Harry Potter nemcsak remek könyvsorozat, hanem a modern gyerekirodalom kezdőpontja is, új korszak nyitánya. A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért-e ezzel vagy sem!",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 7. bekezdése alapján adott válasz: Dóka Péter azért állítja, hogy a Harry Potter nemcsak remek könyvsorozat, hanem a modern gyerekirodalom kezdőpontja is, új korszak nyitánya, mert korszakhatárt jelölt: A, J. K. Rowling is „filmszerűen” fogalmazta meg a Harry Potter könyvsorozatát. B, Még mindig a varázslóiskola berkeiben játszódó könyvsorozat a jelenlegi ifjúsági irodalom viszonyítási pontja. A Harry Potter‐könyvek egy teljes generáció számára bizonyultak „kapudrognak” az olvasáshoz. C, A Harry Potterrel kezdődött az, hogy a fiatalokban is megnőtt a vágy a romantika iránt, így feléledt ez a korstílus. Megjelent a gótikus regény (lásd: Alkonyat), megjelentek az alternatív történelmi regények, a varázslós történetek. És, mint a romantikában általában, ismét nagyon nagy szerepük lett a történetekben az egyéniségeknek, akik képesek megváltoztatni a világot. Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ... A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30% 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "J. K. Rowling is „filmszerűen” fogalmazta meg a Harry Potter könyvsorozatát.", marks: null, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme leads its answer with “A szöveg 7. bekezdése alapján adott válasz: Dóka Péter azért állítja, hogy a Harry Potter nemcsak remek könyvsorozat, hanem a modern gyerekirodalom kezdőpontja is, új korszak nyitánya, mert korszakhatárt jelölt:”, letters its three points A, B and C, then prints the last line shown here." },
+    { id: "r-2", kind: "point", verbatim: "Még mindig a varázslóiskola berkeiben játszódó könyvsorozat a jelenlegi ifjúsági irodalom viszonyítási pontja. A Harry Potter‐könyvek egy teljes generáció számára bizonyultak „kapudrognak” az olvasáshoz.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "A Harry Potterrel kezdődött az, hogy a fiatalokban is megnőtt a vágy a romantika iránt, így feléledt ez a korstílus. Megjelent a gótikus regény (lásd: Alkonyat), megjelentek az alternatív történelmi regények, a varázslós történetek. És, mint a romantikában általában, ismét nagyon nagy szerepük lett a történetekben az egyéniségeknek, akik képesek megváltoztatni a világot.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ...", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2023 Higher Level — © State Examinations Commission.",
+    id: "hun-2023-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-min-100-max-150-szoban",
+    section: "II", questionRef: "2023 HL Section II Q1",
+    questionText: "Kommentár (min. 100, max. 150 szóban) Kommentálja a szöveg alapján a 2. bekezdés alábbi mondatát minimum 100, maximum 150 szóban! „Az általunk megkérdezett könyves szakemberek egyike sem fél attól, hogy elveszítené olvasói közül a Z generációt (a 2000 és 2010 között születetteket)”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100, maximum 150 szóban tisztán, érthetően kifejtett, szövegen alapuló saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “az egyes gyermek‐ és ifjúsági irodalmi kötetekből egyre többet nyomnak, a gyerekkönyvpiac dinamikusan fejlődő üzletág (1. bk);”; “olvasnak ők, csak máshogy: jobban értékelik a rövidebb olvasmányokat, ha a szövegek még rövidebbek, még eseménydúsabbak, a digitális tartalmak jelentősen befolyásolják a kamasz olvasók választásait (azaz ha egy számítógépes játékból készül Netflix‐sorozat vagy könyves adaptáció) (2. bk);”; “jóval gyakrabban vesznek elő angol nyelvű köteteket: ha megtetszik nekik valami a magyar fordításban, akkor gyakran megkeresik azt vagy a folytatást is angolul (3. bk);”; “találhatnak példaképeket vagy tabukra és kibeszélendő problémákra válaszokat a könyvekben, van hova fordulniuk válaszokért, támogatásért, ismét nagy szerepük lett a történetekben az egyéniségeknek, akik képesek megváltoztatni a világot (4., 5. és 7. bk);”; “a mai kor annyira technicizált, hogy a fiatalokban is megnőtt a vágy a romantika iránt, azaz népszerű olvasmányok az alternatív történelmi regények, a varázslós történetek vagy a gótikus regény (7. bk)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2023 Higher Level — © State Examinations Commission.",
+    id: "hun-2023-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-olvasas-kozben-lehetsz-aki",
+    section: "III", questionRef: "2023 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! „Olvasás közben az lehetsz, aki csak akarsz.” (Amy Harmon)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2023 Higher Level — © State Examinations Commission.",
+    id: "hun-2023-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-legtobb-technikai-vivmany-azert",
+    section: "III", questionRef: "2023 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! „A legtöbb technikai vívmány azért jött létre, hogy a mi életünk jobb legyen. Csakhogy a technikai vívmányok túlnőnek rajtunk, ők kezdenek használni minket.” (Alföldi Róbert)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3248,17 +4068,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „dohogás” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés saját szavaival megfogalmazva: a „dohogás” azt jelenti, hogy indulatait visszafogva mérgelődik; elégedetlenségét többé‐kevésbé magába fojtva, morogva fejezi ki.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés saját szavaival megfogalmazva: a „dohogás” azt jelenti, hogy indulatait visszafogva mérgelődik; elégedetlenségét többé‐kevésbé magába fojtva, morogva fejezi ki.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3271,17 +4092,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „küzd a kegyeiért” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival megfogalmazva: a „küzd a kegyeiért” kifejezés azt jelenti, hogy versenyzik valamiért vagy megpróbálja megnyerni azt.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival megfogalmazva: a „küzd a kegyeiért” kifejezés azt jelenti, hogy versenyzik valamiért vagy megpróbálja megnyerni azt.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3294,17 +4116,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „hitet tesz” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival megfogalmazva: a „hitet tesz” szó azt jelenti, hogy állásfoglalásával, magatartásával, tetteivel megmutatja, hogy meggyőződéssel kiáll valami mellett.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival megfogalmazva: a „hitet tesz” szó azt jelenti, hogy állásfoglalásával, magatartásával, tetteivel megmutatja, hogy meggyőződéssel kiáll valami mellett.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3317,17 +4140,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „ráteszi a kezét” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival megfogalmazva: a „ráteszi a kezét” kifejezés azt jelenti, hogy meg akarja szerezni magának.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival megfogalmazva: a „ráteszi a kezét” kifejezés azt jelenti, hogy meg akarja szerezni magának.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3340,17 +4164,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „ráncfelvarrás” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található kifejezés saját szavaival megfogalmazva: a „ráncfelvarrás” kifejezés azt jelenti, hogy arculatfrissités, modernizálás.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található kifejezés saját szavaival megfogalmazva: a „ráncfelvarrás” kifejezés azt jelenti, hogy arculatfrissités, modernizálás.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3363,17 +4188,18 @@ export const CARDS: SecCard[] = [
     questionText: "Melyik a legszimpatikusabb kezdeményezés a tömegek számára Budapesten?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz az 5. bekezdésben: A tömegek számára talán legszimpatikusabb kezdeményezés a Mol és a BKK közös kerékpárkölcsönző projektje, a budapesti Bubi.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz az 5. bekezdésben: A tömegek számára talán legszimpatikusabb kezdeményezés a Mol és a BKK közös kerékpárkölcsönző projektje, a budapesti Bubi.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3386,17 +4212,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért mondhatjuk, hogy a megosztás javítja a szegényebb rétegek életkörülményeit, és környezetvédelmi szempontból is jobb megoldás?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: Azért mondhatjuk, hogy a megosztás javítja a szegényebb rétegek életkörülményeit, mert mobilitási lehetőséget teremt számukra, amit tőke híján egyébként nem tudnának igénybe venni: például egy olcsó szoba vidéken nekik is lehetővé teszi az évi egyszeri nyaralást. És környezetvédelmi szempontból is jobb megoldás, mert az autó sokszor fölösleges egy olyan család számára, amely nagyvárosi környezetben lakik, ahol jó a tömegközlekedés, és a családnak csak évente néhányszor van szüksége saját autóra.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: Azért mondhatjuk, hogy a megosztás javítja a szegényebb rétegek életkörülményeit, mert mobilitási lehetőséget teremt számukra, amit tőke híján egyébként nem tudnának igénybe venni: például egy olcsó szoba vidéken nekik is lehetővé teszi az évi egyszeri nyaralást. És környezetvédelmi szempontból is jobb megoldás, mert az autó sokszor fölösleges egy olyan család számára, amely nagyvárosi környezetben lakik, ahol jó a tömegközlekedés, és a családnak csak évente néhányszor van szüksége saját autóra.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3409,17 +4236,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért az Uber váltotta ki a legélesebb társadalmi vitát Magyarországon?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 6. bekezdésben: Azért az Uber váltotta ki a legélesebb társadalmi vitát Magyarországon, mert a feszültségek az Uber gyors terjedésével párhuzamosan nőttek. Míg a cég a saját véleménye szerint forradalmasítja a személyszállítást, azzal, hogy a szolgáltatásuk legfontosabb célja olyan technológiai megoldás kifejlesztése, amely igény esetén összeköti egymással a sofőröket és az utasokat, addig az ellenzők szerint viszont egy törvényileg szabályozott iparágat tarol le, gyakorlatilag jogellenesen. Mert a taxisok működésének feltételeit a jogaikat és kötelezettségeiket megszabó törvény jelöli ki, addig az Uber sofőrjeinek csak a vállalat és a közlekedés szabályait kell betartaniuk. Végül a taxistársadalom erős hazai befolyásának volt köszönhető, hogy a kormány egyik napról a másikra betiltotta a szolgáltatást.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 6. bekezdésben: Azért az Uber váltotta ki a legélesebb társadalmi vitát Magyarországon, mert a feszültségek az Uber gyors terjedésével párhuzamosan nőttek. Míg a cég a saját véleménye szerint forradalmasítja a személyszállítást, azzal, hogy a szolgáltatásuk legfontosabb célja olyan technológiai megoldás kifejlesztése, amely igény esetén összeköti egymással a sofőröket és az utasokat, addig az ellenzők szerint viszont egy törvényileg szabályozott iparágat tarol le, gyakorlatilag jogellenesen. Mert a taxisok működésének feltételeit a jogaikat és kötelezettségeiket megszabó törvény jelöli ki, addig az Uber sofőrjeinek csak a vállalat és a közlekedés szabályait kell betartaniuk. Végül a taxistársadalom erős hazai befolyásának volt köszönhető, hogy a kormány egyik napról a másikra betiltotta a szolgáltatást.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3432,17 +4260,18 @@ export const CARDS: SecCard[] = [
     questionText: "A cikk szerzője azt állítja, hogy „a tulajdonnélküliség valójában még inkább erősíti a modern ember függőségét”. A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért-e ezzel vagy sem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 1. bekezdése alapján adott válasz: A cikk szerzője azt állítja, hogy a tulajdonnélküliség valójában még inkább erősíti a modern ember függőségét, mert akinek se háza, se kocsija, de még egy rollere sincs, a megosztáson alapuló szolgáltatások pedig a vállalatok korlátlan profitéhségének újabb kiszolgálói. Ráadásul a modell az adóelkerülés gyanúját is felveti, mert míg a lakását szabályos bérleti szerződéssel kiadó embernek jövedelemadót kell fizetnie a bevétele után, addig az Airbnb‐n keresztül szerzett jövedelemre az adóhatóság sokáig oda se figyelt, így óriási adómentes nyereségre tudott szert tenni az, aki a hőskorban egyszerre több lakást adott ki a platformon keresztül. Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ....", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 1. bekezdése alapján adott válasz: A cikk szerzője azt állítja, hogy a tulajdonnélküliség valójában még inkább erősíti a modern ember függőségét, mert akinek se háza, se kocsija, de még egy rollere sincs, a megosztáson alapuló szolgáltatások pedig a vállalatok korlátlan profitéhségének újabb kiszolgálói. Ráadásul a modell az adóelkerülés gyanúját is felveti, mert míg a lakását szabályos bérleti szerződéssel kiadó embernek jövedelemadót kell fizetnie a bevétele után, addig az Airbnb‐n keresztül szerzett jövedelemre az adóhatóság sokáig oda se figyelt, így óriási adómentes nyereségre tudott szert tenni az, aki a hőskorban egyszerre több lakást adott ki a platformon keresztül. Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ....", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3453,20 +4282,73 @@ export const CARDS: SecCard[] = [
     id: "hun-2024-hl-i-6", topicId: "hungarian-0-1", conceptId: "cikk-szerz-azt-allitja-hogy-inel",
     section: "I", questionRef: "2024 HL Section I Q6",
     questionText: "A cikk szerzője azt állítja, hogy „(m)inél inkább ráteszik a kezüket a nagyvállalatok ezekre az alternatív gazdasági megoldásokra, annál jobban felhígul a fogalom eredeti tartalma.” A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért-e ezzel vagy sem!",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 3. és 4. bekezdése alapján adott válasz: A cikk szerzője azt állítja, hogy minél inkább ráteszik a kezüket a nagyvállalatok ezekre az alternatív gazdasági megoldásokra, annál jobban felhígul a fogalom eredeti tartalma, mert A) Budapesten is egyre nagyobb teret nyernek az autómegosztók. Immár három vállalat is küzd a sofőrök kegyeiért. Kérdés, hogy abban az esetben, ha a hagyományos gazdaság egyazon vállalata biztosítja a járművet és az applikációt is, az mennyiben tekinthető a megosztáson alapuló gazdaság részének, és mennyiben egy olyan autókölcsönzőnek, amelynek szétszórtan találhatók az átvételi pontjai. B) Az autómegosztás mellett ékes példáját szolgáltatja a rollerkölcsönzés is: az elektromos roller máris vonzó alternatívává vált, mihelyst tömegével jelent meg a nagyvárosokban. A rollerek példáján át jól szemléltethető a megosztáson alapuló gazdaság elégtelen törvényi háttere is. Ahogyan a globális techóriások, úgy ennek a piacnak a szereplői is egy olyan rést töltenek be, aminek a szabályozása még még mindig elégtelen, noha a probléma már a napnál is világosabb. A törvényhozás azonban csak maszatol, és próbálja valamilyen közlekedési eszközként definiálni az elektromos rollereket, miközben arról mélyen hallgat, lehet‐e profitszerzés céljából teleszemetelni a településeket, mindenféle rendezettség nélkül, mert a rollert a felhasználó ott hagyja, ahol éppen jólesik neki.. Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ... A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30% 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Budapesten is egyre nagyobb teret nyernek az autómegosztók. Immár három vállalat is küzd a sofőrök kegyeiért. Kérdés, hogy abban az esetben, ha a hagyományos gazdaság egyazon vállalata biztosítja a járművet és az applikációt is, az mennyiben tekinthető a megosztáson alapuló gazdaság részének, és mennyiben egy olyan autókölcsönzőnek, amelynek szétszórtan találhatók az átvételi pontjai.", marks: null, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme leads its answer with “A szöveg 3. és 4. bekezdése alapján adott válasz: A cikk szerzője azt állítja, hogy minél inkább ráteszik a kezüket a nagyvállalatok ezekre az alternatív gazdasági megoldásokra, annál jobban felhígul a fogalom eredeti tartalma, mert”, letters its two points A) and B), then prints the last line shown here." },
+    { id: "r-2", kind: "point", verbatim: "Az autómegosztás mellett ékes példáját szolgáltatja a rollerkölcsönzés is: az elektromos roller máris vonzó alternatívává vált, mihelyst tömegével jelent meg a nagyvárosokban. A rollerek példáján át jól szemléltethető a megosztáson alapuló gazdaság elégtelen törvényi háttere is. Ahogyan a globális techóriások, úgy ennek a piacnak a szereplői is egy olyan rést töltenek be, aminek a szabályozása még még mindig elégtelen, noha a probléma már a napnál is világosabb. A törvényhozás azonban csak maszatol, és próbálja valamilyen közlekedési eszközként definiálni az elektromos rollereket, miközben arról mélyen hallgat, lehet‐e profitszerzés céljából teleszemetelni a településeket, mindenféle rendezettség nélkül, mert a rollert a felhasználó ott hagyja, ahol éppen jólesik neki..", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ...", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2024 Higher Level — © State Examinations Commission.",
+    id: "hun-2024-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-min-100-max-150-szoban",
+    section: "II", questionRef: "2024 HL Section II Q1",
+    questionText: "Kommentár (min. 100, max. 150 szóban) Kommentálja a szöveg alapján az 1. bekezdés alábbi mondatát minimum 100, maximum 150 szóban! „A megosztáson alapuló gazdaság mindeközben egyre több társadalmi vitát gerjeszt”.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100, maximum 150 szóban tisztán, érthetően kifejtett, szövegen alapuló saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “tulajdonnélküliség valójában még inkább erősíti a modern ember függőségét, akinek se háza, se kocsija, de még egy rollere sincs, a megosztáson alapuló szolgáltatások pedig a vállalatok korlátlan profitéhségének újabb kiszolgálói (1. bk);”; “a megosztás javítja a szegényebb rétegek életkörülményeit, hiszen olyan mobilitási lehetőséget teremt számukra, amit tőke híján egyébként nem tudnának igénybe venni, másrészt nem lehet figyelmen kívül hagyni a környezetvédelmi szempontokat sem, (2. bk);”; “városi környezetben egy megosztott autó akár 7–10 saját használatút is kiválthat, így csökkentve a szükséges parkolóhelyek számát (3. bk);”; “minél inkább ráteszik a kezüket a nagyvállalatok ezekre az alternatív gazdasági megoldásokra, annál jobban felhígul a fogalom eredeti tartalma: az autómegosztás mellett ennek ékes példáját szolgáltatja a rollerkölcsönzés is (4. bk);”; “a megosztáson alapuló gazdaság elégtelen törvényi háttere: ennek a piacnak a szereplői is egy olyan rést töltenek be, aminek a szabályozása még még mindig elégtelen (4. bk);”; “a tömegek számára talán legszimpatikusabb kezdeményezés a Mol és a BKK közös kerékpárkölcsönző projektje, a budapesti Bubi (5. bk)”; “egy törvényileg szabályozott iparágat tarol le, gyakorlatilag jogellenesen, ráadásul a modell az adóelkerülés gyanúját is felveti: pl Airbnb és az Uber (1. és 6. bk)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2024 Higher Level — © State Examinations Commission.",
+    id: "hun-2024-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-megosztasi-gazdasag-osszekapcsolodik-fenntarthatosaggal",
+    section: "III", questionRef: "2024 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! A megosztási gazdaság összekapcsolódik a fenntarthatósággal, és gazdasági lehetőségnek, fenntarthatóbb fogyasztási formának tekintik.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2024 Higher Level — © State Examinations Commission.",
+    id: "hun-2024-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-kozosseg-egyen-elete-volt",
+    section: "III", questionRef: "2024 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! „A közösség az egyén élete előtt is volt, utána is lesz, segíti őt a megélhetésében, a bajában.” (Csányi Vilmos)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3478,17 +4360,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „kritérium” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés saját szavaival megfogalmazva: a „kritérium” azt jelenti, hogy ismertető jegy, tulajdonság, amely valamely tárgyat, fogalmat minden mástól megkülönböztet, biztosan felismerhetővé tesz.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés saját szavaival megfogalmazva: a „kritérium” azt jelenti, hogy ismertető jegy, tulajdonság, amely valamely tárgyat, fogalmat minden mástól megkülönböztet, biztosan felismerhetővé tesz.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3501,17 +4384,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „tendencia” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található kifejezés saját szavaival megfogalmazva: a „tendencia” kifejezés azt jelenti, hogy valamely tevékenység, történés, működés, cselekvés iránya, érvényesülésének módja, ill. vmire irányuló törekvés.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található kifejezés saját szavaival megfogalmazva: a „tendencia” kifejezés azt jelenti, hogy valamely tevékenység, történés, működés, cselekvés iránya, érvényesülésének módja, ill. vmire irányuló törekvés.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3524,17 +4408,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „elcsépelt” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival megfogalmazva: az „elcsépelt” kifejezés azt jelenti, hogy a gyakori emlegetés, használat folytán érdekességét, újdonságát elvesztette; megunttá vált; elkopott.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival megfogalmazva: az „elcsépelt” kifejezés azt jelenti, hogy a gyakori emlegetés, használat folytán érdekességét, újdonságát elvesztette; megunttá vált; elkopott.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3547,17 +4432,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „kiveri a biztosítékot” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival megfogalmazva: a „kiveri a biztosítékot” kifejezés azt jelenti, hogy mindenkit kiakaszt, felidegesíti a környezetét.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival megfogalmazva: a „kiveri a biztosítékot” kifejezés azt jelenti, hogy mindenkit kiakaszt, felidegesíti a környezetét.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3570,17 +4456,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „örödként gondol valamire” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Magyarázza meg, mit jelent az „ördögként gondol valamire” kifejezés! Az 5. bekezdésben található kifejezés saját szavaival megfogalmazva: az „ördögként gondol valamire” kifejezés azt jelenti, hogy rossznak, gonosznak, megvetendőnek hiszi.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található kifejezés saját szavaival megfogalmazva: az „ördögként gondol valamire” kifejezés azt jelenti, hogy rossznak, gonosznak, megvetendőnek hiszi.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The paper's question prints “örödként”; its reading text and the scheme print “ördögként”. The scheme notes above Question 1: “Mivel az 1. feladat e) kérdésének többféle értelmezése is lehetséges, ezért erre a válaszra minden jelölt kapott 1 pontot” In plain words: (e) can be read more than one way, so every candidate was given its 1 mark." },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3593,17 +4480,18 @@ export const CARDS: SecCard[] = [
     questionText: "A diplomások 41%-a mit érez a barátságot gátló vagy kizáró oknak?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 3. bekezdésben: A diplomások körében már 41% érzi ugyanis a politikai ellentéteket a barátságot gátló vagy kizáró oknak.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 3. bekezdésben: A diplomások körében már 41% érzi ugyanis a politikai ellentéteket a barátságot gátló vagy kizáró oknak.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3614,19 +4502,24 @@ export const CARDS: SecCard[] = [
     id: "hun-2025-hl-i-4", topicId: "hungarian-0-1", conceptId: "miutan-embernek-csaladja-lett-nem-igazan",
     section: "I", questionRef: "2025 HL Section I Q4",
     questionText: "Miután az embernek családja lett, nem igazán van szüksége barátokra. Kommentálja ezt az állítást a szövegre való hivatkozással, és fejtse ki saját álláspontját!",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Például: A 2. bekezdésben a szöveg azt állítja, hogy mára megváltozott a tendencia, miszerint ha egyszer van családod, akkor nincs igazán szükséged barátokra. A rendszerváltás utáni évtizedben szinte mindenki azt válaszolta, hogy családjával beszéli meg problémáit, de mára ez is a barátok javára fordult. Ez persze úgy is értelmezhető, hogy sokan nem tudják megosztani problémáikat közeli családtagjaikkal, például házastársukkal, ami nem jó hír. Egyetértek az állítással: A család mindig közelebb lesz, mint a barátok, és egész életen át veled lesz, míg a barátok jöhetnek-mehetnek. vagy Nem értek egyet az állítással: Kiválaszthatod a barátaidat, akiknek gyakran több közös vonásuk lesz veled, mint a családtagjaiddal. Könnyebb lehet olyan kérdéseket megvitatni, mint például a személyes problémákat egy közeli baráttal, nem pedig a családdal.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben a szöveg azt állítja, hogy mára megváltozott a tendencia, miszerint ha egyszer van családod, akkor nincs igazán szükséged barátokra. A rendszerváltás utáni évtizedben szinte mindenki azt válaszolta, hogy családjával beszéli meg problémáit, de mára ez is a barátok javára fordult.", marks: null, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme heads its answer “Például:”: what it gives is an example, not a required list." },
+    { id: "r-2", kind: "point", verbatim: "Ez persze úgy is értelmezhető, hogy sokan nem tudják megosztani problémáikat közeli családtagjaikkal, például házastársukkal, ami nem jó hír.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "A család mindig közelebb lesz, mint a barátok, és egész életen át veled lesz, míg a barátok jöhetnek-mehetnek.", marks: null, contextNote: "The scheme prints this point under its heading “Egyetértek az állítással:”." },
+    { id: "r-4", kind: "point", verbatim: "Kiválaszthatod a barátaidat, akiknek gyakran több közös vonásuk lesz veled, mint a családtagjaiddal.", marks: null, contextNote: "The scheme prints “vagy”, then this point and the one below it under its heading “Nem értek egyet az állítással:”." },
+    { id: "r-5", kind: "point", verbatim: "Könnyebb lehet olyan kérdéseket megvitatni, mint például a személyes problémákat egy közeli baráttal, nem pedig a családdal.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3639,17 +4532,18 @@ export const CARDS: SecCard[] = [
     questionText: "A cikk szerzője azt állítja, hogy „a barátok rólunk szólnak”. A szöveg alapján magyarázza meg ezt az állítást, és fejtse ki véleményét, miért ért egyet vagy miért nem ért egyet ezzel!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Például a szöveg 3. bekezdésében: A cikk szerzője azt állítja, hogy „a barátok rólunk szólnak”, mert a rokonokkal szemben a barátok választott személyek az életünkben, akik lényegében arra vannak, hogy a személyiségünkhöz passzoló élményeket meg tudjuk tapasztalni, illetve érzelmi támogatást nyújtsanak szükség esetén. A tartós barátság titka pedig a rendszeres találkozás és az, hogy kövessük a másik életét, képben legyünk, s így érdemben tudjuk támogatni a másikat abban az esetben, ha egy krízis jelenne meg az életében. Egyetértek ezzel, mert: A barátok gyakran olyan emberek közül kerülnek ki, akikkel együtt dolgozunk, együtt sportolunk, kórusban énekelünk stb.: míg a családok az idő múlásával hajlamosak szétválni vagy Nem értek egyet ezzel, mert: Legjobb barátainkat az iskola, majd az oktatás vagy a munka során ismerjük meg.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Például a szöveg 3. bekezdésében: A cikk szerzője azt állítja, hogy „a barátok rólunk szólnak”, mert a rokonokkal szemben a barátok választott személyek az életünkben, akik lényegében arra vannak, hogy a személyiségünkhöz passzoló élményeket meg tudjuk tapasztalni, illetve érzelmi támogatást nyújtsanak szükség esetén. A tartós barátság titka pedig a rendszeres találkozás és az, hogy kövessük a másik életét, képben legyünk, s így érdemben tudjuk támogatni a másikat abban az esetben, ha egy krízis jelenne meg az életében. Egyetértek ezzel, mert: A barátok gyakran olyan emberek közül kerülnek ki, akikkel együtt dolgozunk, együtt sportolunk, kórusban énekelünk stb.: míg a családok az idő múlásával hajlamosak szétválni vagy Nem értek egyet ezzel, mert: Legjobb barátainkat az iskola, majd az oktatás vagy a munka során ismerjük meg.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3662,18 +4556,102 @@ export const CARDS: SecCard[] = [
     questionText: "A jó minőségű kapcsolatok az önbecsülésnek, önértékelésnek is nagyon fontos forrásai. Fejtse ki ezt az állítást!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A cikk szerzője azt írja, hogy a „jó minőségű kapcsolatok az önbecsülésnek, önértékelésnek is nagyon fontos forrásai”, mert nagyon sok pszichés előnnyel jár, ha vannak barátaink, például kevésbé leszünk hajlamosak a depresszióra, és a mindennapi stresszel is könnyebben küzdünk meg. Biztonságosabbnak és erősebbnek érezheted magad, mivel nem vagy egyedül, és támogatva érzed magad. Ez nagyobb személyes biztonságot és önbizalmat ad, és magasabb önbecsülést is, ami megvéd a negatív kritikától. Stb.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A cikk szerzője azt írja, hogy a „jó minőségű kapcsolatok az önbecsülésnek, önértékelésnek is nagyon fontos forrásai”, mert nagyon sok pszichés előnnyel jár, ha vannak barátaink, például kevésbé leszünk hajlamosak a depresszióra, és a mindennapi stresszel is könnyebben küzdünk meg. Biztonságosabbnak és erősebbnek érezheted magad, mivel nem vagy egyedül, és támogatva érzed magad. Ez nagyobb személyes biztonságot és önbizalmat ad, és magasabb önbecsülést is, ami megvéd a negatív kritikától. Stb.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2025 Higher Level — © State Examinations Commission.",
+    id: "hun-2025-hl-i-3", topicId: "hungarian-0-1", conceptId: "szoveg-szerint-mik-lehetnek-baratsag-kialakulasanak",
+    section: "I", questionRef: "2025 HL Section I Q3",
+    questionText: "A szöveg szerint mik lehetnek a barátság kialakulásának akadályai?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "az emberek eltérő személyiségtípusa, valamint a szóba jöhető felek barátai, párja iránt érzett ellenszenv;", marks: null, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme opens its answer with: “Válasz a 3. bekezdésben: A barátság kialakulásának akadálya lehet”." },
+    { id: "r-2", kind: "point", verbatim: "az eltérő szociális, jövedelmi helyzet;", marks: null },
+    { id: "r-3", kind: "point", verbatim: "a politikai nézetkülönbség;", marks: null },
+    { id: "r-4", kind: "point", verbatim: "a munkahelyi alá-fölé rendeltségi viszonyok vagy az eltérő kulturális háttér", marks: null },
+    { id: "r-5", kind: "point", verbatim: "ha egy dolog kiveri a biztosítékot, nem fog működni a barátság.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2025 Higher Level — © State Examinations Commission.",
+    id: "hun-2025-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-min-100-max-150-szoban",
+    section: "II", questionRef: "2025 HL Section II Q1",
+    questionText: "Kommentár (min. 100, max. 150 szóban) „A tartós barátság titka a rendszeres találkozás, és az, hogy kövessük a másik életét” Kommentálja ezt az állítást minimum 100, maximum 150 szóban a szöveg és a saját álláspontja alapján!",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a jól működő barátságot megalapozó hasonlóságok közül a legfontosabb az azonos vagy közel azonos értékrend (3. bk);", marks: null, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints no criteria for this part. It prints “A minimum 100, maximum 150 szóban tisztán, érthetően kifejtett, szövegen alapuló saját vélemény.” and, under its heading “Lehetséges irányok:”, the points shown, as examples, not a checklist; the part is scored on its printed total." },
+    { id: "r-2", kind: "point", verbatim: "a személyiségünkhöz passzoló élményeket meg tudjuk tapasztalni, illetve érzelmi támogatást nyújtsanak szükség esetén (3. bk);", marks: null },
+    { id: "r-3", kind: "point", verbatim: "képben legyünk, s így érdemben tudjuk támogatni a másikat abban az esetben, ha egy krízis jelenne meg az életében, (3. bk);", marks: null },
+    { id: "r-4", kind: "point", verbatim: "a rendszeres személyes találkozások táplálják a barátságok tartósságát", marks: null },
+    { id: "r-5", kind: "point", verbatim: "a virtuális kapcsolattartás is jó áthidaló megoldás lehet, ha egyik félnek sincs elég ideje vagy módja a személyes találkozásra, de fontos számukra ez a kapcsolat (5. bk);", marks: null },
+    { id: "r-6", kind: "point", verbatim: "a régi barátságok megmentéséért nagyobb energiákat mozgósítanak az emberek, mert nagy veszteség egy több évtizedes barátságot elengedni, hiszen ezzel kárba vész az a sok energia, amit a kapcsolatba fektettünk is (6. bk);", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2025 Higher Level — © State Examinations Commission.",
+    id: "hun-2025-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-fontos-emberek-eletemben-kik",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Fontos emberek az életemben: kik azok és miért azok.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" Under Part III the scheme prints only “Tisztán, érthetően és világosan megírt esszé.” and, under each title, “Egyéni válasz minimum 300 szóban.” It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2025 Higher Level — © State Examinations Commission.",
+    id: "hun-2025-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-batorsag-kell-ahhoz-hogy",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Bátorság kell ahhoz, hogy kapcsolatba kerüljünk egy másik emberrel. (Csóka Judit)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" Under Part III the scheme prints only “Tisztán, érthetően és világosan megírt esszé.” and, under each title, “Egyéni válasz minimum 300 szóban.” It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3685,17 +4663,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „tűzzel-vassal” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés saját szavaival megfogalmazva: a „tűzzel-vassal” azt jelenti, hogy erőszakosan, nagyon elszántan, bármilyen lehetséges eszközt felhasználva.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található kifejezés saját szavaival megfogalmazva: a „tűzzel-vassal” azt jelenti, hogy erőszakosan, nagyon elszántan, bármilyen lehetséges eszközt felhasználva.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3708,17 +4687,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „meggyűlt a baja” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található kifejezés saját szavaival megfogalmazva: a „meggyűlt a baja” azt jelenti, hogy sok nehézséget, kellemetlenséget okoz neki valaki, valami.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található kifejezés saját szavaival megfogalmazva: a „meggyűlt a baja” azt jelenti, hogy sok nehézséget, kellemetlenséget okoz neki valaki, valami.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3731,17 +4711,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „bábáskodás” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival megfogalmazva: a „bábáskodás” azt jelenti, hogy valaminek a létrehozását segíti, másokkal együtt hathatósan közreműködik.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. bekezdésben található kifejezés saját szavaival megfogalmazva: a „bábáskodás” azt jelenti, hogy valaminek a létrehozását segíti, másokkal együtt hathatósan közreműködik.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3754,17 +4735,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „lemorzsolódás” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival megfogalmazva: a „lemorzsolódás” azt jelenti, hogy csoport vagy közösség létszáma a távozásokkal fokozatosan egyre kevesebb.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található kifejezés saját szavaival megfogalmazva: a „lemorzsolódás” azt jelenti, hogy csoport vagy közösség létszáma a távozásokkal fokozatosan egyre kevesebb.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3777,17 +4759,18 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „versenyelőny” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A 7. bekezdésben található kifejezés saját szavaival megfogalmazva: a „versenyelőny” a vállalkozások különféle előnyeit jelenti más cégekkel és versenytársaikkal szemben.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 7. bekezdésben található kifejezés saját szavaival megfogalmazva: a „versenyelőny” a vállalkozások különféle előnyeit jelenti más cégekkel és versenytársaikkal szemben.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3800,17 +4783,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hány országban működik ma a Vinted vállalat?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: A Vinted vállalat ma viszont már a fejlett világ 17 országában működik.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 2. bekezdésben: A Vinted vállalat ma viszont már a fejlett világ 17 országában működik.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3823,17 +4807,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért mondhatjuk, hogy az elmúlt évek változatos válsághullámai újabb és újabb lendületet adtak a megosztáson alapuló gazdaságnak?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 3. és 4. bekezdésben: Azért mondhatjuk, hogy az elmúlt évek változatos válsághullámai újabb és újabb lendületet adtak a megosztáson alapuló gazdaságnak, mert A) a Vinted olyan réteget mobilizált, amely eddig nem volt jelen ebben az ágazatban. A száguldó infláció és az ezzel párhuzamosan elértéktelenedő bérek is ösztönzik az efféle spórolást például a ruhavásárláson. B) az ország egyik legmódosabb településrészén, a II. kerületi Pesthidegkúton például olyan energiaközösséget szerveznek az önkormányzat bábáskodásával, amelybe a jellemzően családi házas övezet lakói a saját napelemeik által előállított energiával lépnek be. A megtermelt megújuló energiát az önkormányzat kész felvásárolni, és a bölcsődék, óvodák vagy éppen az energiafaló uszoda ellátására fordítani. C) átsegítettek agrárgazdákat is a termelői közösségek, amelyek ugyancsak a megosztáson alapuló gazdasági modell elterjedésével alakultak és alakulnak ki.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 3. és 4. bekezdésben: Azért mondhatjuk, hogy az elmúlt évek változatos válsághullámai újabb és újabb lendületet adtak a megosztáson alapuló gazdaságnak, mert A) a Vinted olyan réteget mobilizált, amely eddig nem volt jelen ebben az ágazatban. A száguldó infláció és az ezzel párhuzamosan elértéktelenedő bérek is ösztönzik az efféle spórolást például a ruhavásárláson. B) az ország egyik legmódosabb településrészén, a II. kerületi Pesthidegkúton például olyan energiaközösséget szerveznek az önkormányzat bábáskodásával, amelybe a jellemzően családi házas övezet lakói a saját napelemeik által előállított energiával lépnek be. A megtermelt megújuló energiát az önkormányzat kész felvásárolni, és a bölcsődék, óvodák vagy éppen az energiafaló uszoda ellátására fordítani. C) átsegítettek agrárgazdákat is a termelői közösségek, amelyek ugyancsak a megosztáson alapuló gazdasági modell elterjedésével alakultak és alakulnak ki.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3846,17 +4831,18 @@ export const CARDS: SecCard[] = [
     questionText: "Miért mondhatjuk, hogy különös hozadéka a modellnek a közösségépítés?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Válasz a 6. bekezdésben: Azért mondhatjuk, hogy különös hozadéka a modellnek a közösségéíptés, mert ahhoz ugyanis, hogy működjön a megosztás, bizalomra van szükség. Nem véletlen, hogy az Airbnb lakáskiadási platformnak lényegi pontja a visszajelzés, és az Uber-sofőrök értékelése is meghatározó abban, hogy az applikáción bejelentkező autósok közül melyiket választja a fogyasztó. A közösségi média is elengedhetetlen: a termelői közösségek, a vásárlókat tömörítő szatyorközösségek a világhálón tartják a kapcsolatot, szervezik a rendelést, a fuvarokat.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 6. bekezdésben: Azért mondhatjuk, hogy különös hozadéka a modellnek a közösségéíptés, mert ahhoz ugyanis, hogy működjön a megosztás, bizalomra van szükség. Nem véletlen, hogy az Airbnb lakáskiadási platformnak lényegi pontja a visszajelzés, és az Uber-sofőrök értékelése is meghatározó abban, hogy az applikáción bejelentkező autósok közül melyiket választja a fogyasztó. A közösségi média is elengedhetetlen: a termelői közösségek, a vásárlókat tömörítő szatyorközösségek a világhálón tartják a kapcsolatot, szervezik a rendelést, a fuvarokat.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3869,17 +4855,18 @@ export const CARDS: SecCard[] = [
     questionText: "A cikk szerzője azt állítja, hogy „ha egy autótulajdonos úgy dönt, hogy a munkaideje után még vezet este az Uber sofőrjeként, akkor ő összességében jót tett a közösségnek”. A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért-e ezzel vagy sem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 7. bekezdése alapján adott válasz: A cikk szerzője azt állítja, hogy „ha egy autótulajdonos úgy dönt, hogy a munkaideje után még vezet este az Uber sofőrjeként, akkor ő összességében jót tett a közösségnek”, mert mindez össztársadalmi szinten és egyénenként is költségmegtakarítással jár. Hiszen a felnőtt tudatos fogyasztó el tudja dönteni, hogy Uberrel vagy taxival akar-e menni, és ez a fogyasztók számára egyértelmű előnyökkel jár, mert támogatja a fenntartható fejlődést, növeli a hatékonyságot. Igen, egyetértek vele, mert..., Nem, nem értek egyet vele, mert..., Részben egyetértek vele, mert ...", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 7. bekezdése alapján adott válasz: A cikk szerzője azt állítja, hogy „ha egy autótulajdonos úgy dönt, hogy a munkaideje után még vezet este az Uber sofőrjeként, akkor ő összességében jót tett a közösségnek”, mert mindez össztársadalmi szinten és egyénenként is költségmegtakarítással jár. Hiszen a felnőtt tudatos fogyasztó el tudja dönteni, hogy Uberrel vagy taxival akar-e menni, és ez a fogyasztók számára egyértelmű előnyökkel jár, mert támogatja a fenntartható fejlődést, növeli a hatékonyságot. Igen, egyetértek vele, mert..., Nem, nem értek egyet vele, mert..., Részben egyetértek vele, mert ...", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
   } as SecCard,
   {
@@ -3892,17 +4879,73 @@ export const CARDS: SecCard[] = [
     questionText: "A cikk szerzője azt állítja, hogy „a túlszabályozás nem jelent előnyt Európa számára, sőt inkább versenyhátrányt okoz”. A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért-e ezzel vagy sem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 1. és 7. bekezdése alapján adott válasz: A cikk szerzője azt állítja, hogy „a túlszabályozás nem jelent előnyt Európa számára, sőt inkább versenyhátrányt okoz, mert a szabályozott piac szereplőinek nagyobb az érdekérvényesítő képességük, mint a közösségi gazdaság résztvevőinek. Igyekeznek egyre több helyen tűzzel-vassal irtani a piacok régebbi szereplői a közösségi gazdasági megoldásokat, ragaszkodnak a jól bevált formulákhoz, és ugyanazokat a szabályokat rákényszeríteni a közösségi megosztáson alapuló gazdasági modellre, mint ami a hagyományos gazdaságban megszokott. Igen, egyetértek vele, mert..., Nem, nem értek egyet vele, mert..., Részben egyetértek vele, mert ..", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 1. és 7. bekezdése alapján adott válasz: A cikk szerzője azt állítja, hogy „a túlszabályozás nem jelent előnyt Európa számára, sőt inkább versenyhátrányt okoz, mert a szabályozott piac szereplőinek nagyobb az érdekérvényesítő képességük, mint a közösségi gazdaság résztvevőinek. Igyekeznek egyre több helyen tűzzel-vassal irtani a piacok régebbi szereplői a közösségi gazdasági megoldásokat, ragaszkodnak a jól bevált formulákhoz, és ugyanazokat a szabályokat rákényszeríteni a közösségi megosztáson alapuló gazdasági modellre, mint ami a hagyományos gazdaságban megszokott. Igen, egyetértek vele, mert..., Nem, nem értek egyet vele, mert..., Részben egyetértek vele, mert ..", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on its own first page: \"Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2026 Higher Level — © State Examinations Commission.",
+    id: "hun-2026-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-min-100-max-150-szoban",
+    section: "II", questionRef: "2026 HL Section II Q1",
+    questionText: "Kommentár (min. 100, max. 150 szóban) Kommentálja ezt a kijelentést a szöveg alapján minimum 100, maximum 150 szóban! Változóban van az emberek viszonya a tulajdonhoz, és egyre többen vevők a közösségi élményre.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "hiába igyekeznek egyre több helyen tűzzel-vassal irtani a piacok régebbi szereplői, a közösségi gazdaság ellenállhatatlanul terjeszkedik (1. bk);", marks: null, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints no criteria for this part. It prints “A minimum 100, maximum 150 szóban tisztán, érthetően kifejtett, szövegen alapuló saját vélemény.” and, under its heading “Lehetséges irányok:”, the points shown, as examples, not a checklist; the part is scored on its printed total." },
+    { id: "r-2", kind: "point", verbatim: "a fiatalok néhány heti hordás után egymás között adják-veszik akár a drágább, márkás ruhákat is. Ez az üzleti modell a körkörös és a megosztáson alapuló gazdaság határmezsgyéje, amely jellemzően környezetkímélő, valamilyen digitális csatornán zajlik, mozgatórugója a közösségi élmény és a bizalom (2. bk);", marks: null },
+    { id: "r-3", kind: "point", verbatim: "a II. kerületi Pesthidegkúton például olyan energiaközösséget szerveznek az önkormányzat bábáskodásával, amelybe a jellemzően családi házas övezet lakói a saját napelemeik által előállított energiával lépnek be. A megtermelt megújuló energiát az önkormányzat kész felvásárolni, és a bölcsődék, óvodák vagy éppen az energiafaló uszoda ellátására fordítani. (3. bk);", marks: null },
+    { id: "r-4", kind: "point", verbatim: "az energiaválságon segítettek át agrárgazdákat a termelői közösségek is, a szerződés szerint a tagok havi fix összeget fizetnek a termelőnek, amiért a 40-50-féle gyümölcsből és zöldségből egyenlő arányban részesülnek, attól függően, hogy éppen mi terem. 2-3 hetente szállítják – jellemzően Budapestre – a csomagokat (4. bk);", marks: null },
+    { id: "r-5", kind: "point", verbatim: "elég csak a zenemegosztásra gondolni: ezer cd birtoklása helyett ma már elég egyetlen streamingszolgáltatásra előfizetni; egy önvezető autó esetében akkor és oda megy a jármű, amikor és ahova a fogyasztó kéri. Mindez össztársadalmi szinten és egyénenként is költségmegtakarítással jár (5. bk);", marks: null },
+    { id: "r-6", kind: "point", verbatim: "különös hozadéka a modellnek a közösségépítés. Ahhoz ugyanis, hogy működjön a megosztás, bizalomra van szükség, lényegi pont a visszajelzés, pl: Airbnb, Uber (6. bk)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2026 Higher Level — © State Examinations Commission.",
+    id: "hun-2026-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-kozossegi-gazdasagon-alapulo-szolgaltatasok",
+    section: "III", questionRef: "2026 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! A közösségi gazdaságon alapuló szolgáltatások köré valós közösségek szerveződhetnek, mely ellensúlyozza azt a folyamatot, hogy a digitális technológia fejlődésével egyre inkább a virtuális térben éljük társasági életünket.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" Under Part III the scheme prints only, under each title, “Egyéni válasz minimum 300 szóban.” and “Tisztán, érthetően és világosan megírt esszé.” It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2026 Higher Level — © State Examinations Commission.",
+    id: "hun-2026-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-jelenlegi-kulturaban-viszont-egyen",
+    section: "III", questionRef: "2026 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! „A jelenlegi kultúrában viszont az egyén a minden. Az a fontos, hogy te túléld, te maradj fiatal, ha őszülsz, festesd a hajad, sőt, ültess be hajszálakat gyérülő homlokodba. A közösség másodlagos.” (Csányi Vilmos)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" Under Part III the scheme prints only, under each title, “Egyéni válasz minimum 300 szóban.” and “Tisztán, érthetően és világosan megírt esszé.” It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
 ];

@@ -36,7 +36,7 @@ sys.path.insert(0, HERE)
 import pymupdf                                                   # noqa: E402
 from fr_paper import _rows                                       # noqa: E402
 import it_paper as IP                                            # noqa: E402
-from it_scheme import ItScheme, schemes_dir                      # noqa: E402
+from it_scheme import ItScheme, confirm_headings, schemes_dir    # noqa: E402
 from it_rows import split_priced                                 # noqa: E402
 
 AUDIO = os.path.join(ROOT, 'data', 'italianAudio.json')
@@ -277,6 +277,11 @@ def scheme_dialogues(year, level):
 
 
 ELEMENTS = re.compile(r'\belements?\b', re.I)
+# A ladder line COUNTS its elements: "1 to 2 elements = 2 marks", "3 elements
+# 3 marks". An answer that only names one ("sport + water element", "(both
+# element)", "(looking for both elements)") is an answer, not a ladder.
+LADDER_ELEMENTS = re.compile(r'\b\d\s*(?:to\s*\d\s*)?elements?\b', re.I)
+ASK_HEAD = re.compile(r'^\s*\d{1,2}\.\s|^\s*(?:Dialogue|Dialogo)\s*\d', re.I)
 BULLET = re.compile(r'^[•●▪■]\s*')
 
 
@@ -329,20 +334,21 @@ def _ladder_rows(S, ask):
     total (`questionTotal`, CARD-STANDARD section 2).
     """
     part = ask.parts[0]
-    if not any(ELEMENTS.search(t) for t, _v in part.rungs) and \
-            not any(ELEMENTS.search(a) for a in part.answers):
+    if not any(LADDER_ELEMENTS.search(t) for t, _v in part.rungs) and \
+            not any(LADDER_ELEMENTS.search(a) for a in part.answers):
         return None
-    answers = [a for a in part.answers if not ELEMENTS.search(a)]
-    ladder = [_flat(l) for l in S.lines if ELEMENTS.search(l)
-              and re.search(r'\d\s*(?:to\s*\d\s*)?elements?', l)]
-    # the ladder lines that belong to THIS ask: the first run after its answers
+    answers = [a for a in part.answers if not LADDER_ELEMENTS.search(a)]
+    # the ladder lines that belong to THIS ask: the first run after its
+    # answers, never past the next ask's head
     start = next((i for i, l in enumerate(S.lines) if answers
                   and _flat(BULLET.sub('', l.strip())).startswith(_flat(answers[-1])[:40])),
                  None)
     run = []
     if start is not None:
         for l in S.lines[start + 1:start + 12]:
-            if ELEMENTS.search(l):
+            if ASK_HEAD.match(l):
+                break
+            if LADDER_ELEMENTS.search(l):
                 run.append(_flat(l))
             elif run:
                 break
@@ -360,6 +366,143 @@ def _sentences(text):
     text = ' '.join(text.split())
     end = text.rfind('.')
     return text[:end + 1] if end > 0 else ''
+
+
+# Listening asks whose split prices separate answers in the order they are
+# given, not the printed pieces of one answer (review, 20 Nov).
+ORDER_FREE = {(2019, 'hl', 3, 3)}
+
+
+def _line_starts(S):
+    """Where each printed line starts in _scheme_text(S) (None for a blank line)."""
+    starts, at, first = [], 0, True
+    for line in S.lines:
+        piece = _flat(line)
+        if not piece:
+            starts.append(None)
+            continue
+        at += 0 if first else 1
+        starts.append(at)
+        at += len(piece)
+        first = False
+    return starts
+
+
+# The examiner's condition printed on the lines under a shorter answer: "This
+# answer cannot be awarded marks if Sunbathing/Swimming was also given" (2023
+# Ordinary Dialogue 1 Q2), its sentence running on in lower case.
+CONDITION = re.compile(r'^\(?\s*This\s+answer\b', re.I)
+# A short line printed OVER a run of shorter answers that governs them: "If
+# only point" over "She played 1m" (2023 Higher Dialogue 3 Q6). Not every line
+# opening "If": "If he misses his family" is an answer, and "If Individual
+# point only:" heads the answers themselves.
+LEAD = re.compile(r'^if\s+only\b', re.I)
+
+
+def _printed_lesser(S, ask):
+    """Every shorter answer the scheme prices for this ask, quoted as printed.
+
+    The reader keeps a shorter answer as (text, marks) with its brackets and
+    mark taken off; the quote is the scheme's own span for it, brackets, mark
+    and any asterisk included ("(They were messing/playing 3 marks)*", "The
+    classes are fun 1m", "He never feels alone (2m)", "There is a nice
+    atmosphere1m"), and a bracket the scheme leaves open stays open ("The
+    seaside 1 mark)"). A list bullet is not quoted. Returns (quote, text,
+    marks, lead, conditions) in printed order: the "If ..." line printed over
+    it, and the examiner's conditions printed under it.
+
+    A rung with a price INSIDE it ("May (1m) (before going away) worked") is
+    two printed lines read as one, not a shorter answer; it is left out.
+    """
+    flat = _scheme_text(S)
+    starts = _line_starts(S)
+    lines = [(k, _flat(l)) for k, l in enumerate(S.lines) if starts[k] is not None]
+
+    def line_at(offset):
+        return max(n for n, (k, _l) in enumerate(lines) if starts[k] <= offset)
+
+    out = []
+    for part in ask.parts or []:
+        for text, marks in part.rungs:
+            if not text or marks is None or ELEMENTS.search(text):
+                continue
+            if re.search(r'\(\s*\d+\s*m?\s*\)|\b\d+\s*m\b', text):
+                PRINTED_LESSER_SKIPPED.append(('price inside', text, marks))
+                continue
+            words = r'\s*'.join(re.escape(w) for w in BULLET.sub('', text).split())
+            # "(text 2 marks)", "text 1m", "text (2m)", "text (1)", "(… (at it)) 3 marks)"
+            unit = r'(?:\s*(?:m\b|marks?\b))'
+            hit = re.search(r'\(?\s*' + words + r'\s*\)*\s*(?:\(\s*' + str(marks) + unit + r'?\s*\)|'
+                            + str(marks) + unit + r'\s*\)?)\s*\*?', flat)
+            if hit is None:
+                PRINTED_LESSER_MISSING.append((text, marks))
+                continue
+            span = hit.group(0).strip()
+            if span in [q for _at, q, *_rest in out]:
+                continue
+            begin = hit.start() + len(hit.group(0)) - len(hit.group(0).lstrip())
+            first, last = line_at(begin), line_at(begin + len(span) - 1)
+            lead = lines[first - 1][1] if first and LEAD.match(lines[first - 1][1]) \
+                and len(lines[first - 1][1].split()) <= 5 else None
+            conditions = []
+            for _k, line in lines[last + 1:last + 8]:
+                if CONDITION.match(line):
+                    conditions.append(line)
+                elif conditions and line[:1].islower():
+                    conditions[-1] += ' ' + line
+                else:
+                    break
+            out.append((begin, span, BULLET.sub('', text), marks, lead, conditions))
+    return [rest for _at, *rest in sorted(out)]
+
+
+def _lesser_notes(S, ask, rows):
+    """The note sentences quoting the shorter answers this card does not yet show.
+
+    Left out: a shorter answer the card already offers as a row or an option,
+    or already quotes in a note. One worth the whole ask is not a shorter
+    answer, and is quoted as printed for full marks. The line printed over the
+    shorter answers ("If only point") and the conditions printed under one
+    ("This answer cannot be awarded marks if ...") are quoted with them, as
+    the reader quotes a starred condition.
+    """
+    shown = {_flat(t).lower() for r in rows
+             for t in [r.get('verbatim') or ''] + list((r.get('group') or {}).get('options') or [])}
+    noted = ' '.join(_flat(r.get('contextNote') or '') for r in rows)
+    fresh = [p for p in _printed_lesser(S, ask)
+             if _flat(p[1]).lower() not in shown and _flat(p[0]) not in noted and f'“{_flat(p[1])}”' not in noted]
+    lesser = [p for p in fresh if p[2] < ask.total]
+    full = [p for p in fresh if p[2] >= ask.total]
+    for q, _t, _m, lead, conditions in lesser + full:
+        for piece in [q] + ([lead] if lead else []) + conditions:
+            assert _flat(piece) in _scheme_text(S), piece
+    lead = lesser[0][3] if lesser else None
+    note = ''
+    if lesser:
+        note += (f' The scheme also prints, under “{lead}”, for shorter answers: ' if lead
+                 else ' The scheme also prints, for shorter answers: ')
+        note += '; '.join(f'“{q}”' for q, *_rest in lesser) + '.'
+    if full:
+        note += ' The scheme also prints, for full marks: ' + '; '.join(f'“{q}”' for q, *_rest in full) + '.'
+    for _q, t, _m, _lead, conditions in lesser + full:
+        conditions = [c for c in conditions if _flat(c) not in noted]
+        if conditions:
+            note += (f' The scheme adds to the shorter answer “{t}”: '
+                     + '; '.join(f'“{c}”' for c in conditions) + '.')
+    return note
+
+
+# A slip in the scheme, quoted as printed and said in plain words (CARD-STANDARD
+# 10f): the note goes in the card's first row.
+SCHEME_SLIPS = {
+    # The two shorter answers under Dialogue 1 Q1 ("She was/had to go in
+    # hospital 1m", "Tore/broke ligament 1m") are the ones Dialogue 2 Q1 prints
+    # for Anna's injury, word for word.
+    (2023, 'hl', 1, 1): 'The scheme prints the same two shorter answers under Dialogue 2 Question 1 as well.',
+}
+
+PRINTED_LESSER_SKIPPED = []
+PRINTED_LESSER_MISSING = []
 
 
 def cards(year, level, refuse, row_for, concept_for):
@@ -453,7 +596,16 @@ def cards(year, level, refuse, row_for, concept_for):
                        'prices, so the booklet reader lost one', f'{year} {lvl} Section LB{d} Q{n}',
                        f'paper {len(asks)}, scheme {len(priced)}')
             continue
-        if len(asks) != len(priced) and not all(
+        # Paired by printed order only where the booklet and the scheme number
+        # the asks alike. 2017 Higher Dialogue 3 prints Q6 as one ask with an
+        # (a) and a (b), which the scheme prices as 6(a) and 6(b), and prints
+        # Q8's tariff above its number: the counts still agreed, so every ask
+        # from 6 on was paired with the answers to the one before it.
+        renumbered = [n for n, a in zip(sorted(asks), priced) if a.item != n] \
+            if len(asks) == len(priced) else []
+        if renumbered:
+            missing = renumbered
+        if (len(asks) != len(priced) or renumbered) and not all(
                 (year, level, d, n) in OVERRIDES and 'total' in OVERRIDES[(year, level, d, n)]
                 for n in missing):
             for n in sorted(asks):
@@ -465,12 +617,13 @@ def cards(year, level, refuse, row_for, concept_for):
         # Equal counts pair in printed order; where the reader lost a scheme
         # ask its number is supplied by an OVERRIDES entry (with its printed
         # total) and every other ask pairs on its own printed number.
-        pairs = (list(zip(sorted(asks), priced)) if len(asks) == len(priced)
+        pairs = (list(zip(sorted(asks), priced)) if len(asks) == len(priced) and not renumbered
                  else [(n, by_item.get(n)) for n in sorted(asks)])
         for n, ask in pairs:
             ref = f'{year} {lvl} Section LB{d} Q{n}'
             text = ' '.join(' '.join(asks[n]['text']).split())
-            if ask is None:
+            if ask is None or 'total' in (OVERRIDES.get((year, level, d, n)) or {}):
+                # An override's printed total wins over a misread ask.
                 o = OVERRIDES[(year, level, d, n)]
                 ask = type('Lost', (), {'total': o['total'], 'fault': None, 'parts': [],
                                         'item': n})()
@@ -479,6 +632,8 @@ def cards(year, level, refuse, row_for, concept_for):
                        f'{year} {lvl} scheme, Dialogue {d} ask {ask.item}')
                 continue
             override = OVERRIDES.get((year, level, d, n))
+            for part in ask.parts or []:
+                confirm_headings(part, text)
             if ask.parts:
                 _repair_bullets(S, ask)
             ladder = None if (override or not ask.parts) else _ladder_rows(S, ask)
@@ -488,9 +643,27 @@ def cards(year, level, refuse, row_for, concept_for):
             part0 = ask.parts[0] if ask.parts else None
             components = (part0 is not None and len(ask.parts) == 1 and not part0.directive and part0.split
                           and len(part0.split) == len(part0.answers) > 1
-                          and sum(part0.split) == ask.total)
+                          and sum(part0.split) == ask.total
+                          # Not answers that print their own full price: "A
+                          # youth (1) hostel (3)" and "Quadruple rooms … 4
+                          # marks)" are two answers, not two pieces of one.
+                          and not all(sum(int(m) for m in re.findall(r'\((\d{1,2})\s*m?\)', a)) == ask.total
+                                      or re.search(r'\b%d\s*marks?\b' % ask.total, a)
+                                      for a in part0.answers[:1]))
             if override:
                 rows = _override_rows(S, override, ref)
+            elif components and all(len(a.split()) <= 2 for a in part0.answers) \
+                    and (year, level, d, n) in ORDER_FREE:
+                # Separate one-word answers, not pieces of one: "German 5 marks"
+                # over "Swiss (2+1+1+1)", "Dutch", "English". The first share
+                # goes to the first answer given, in any order.
+                rows = [{'id': 'r-1', 'kind': 'anyN', 'verbatim': 'The answers the scheme accepts in full',
+                         'marks': None,
+                         'group': {'claimMax': len(part0.split), 'perOption': part0.split[0],
+                                   'perOptionSteps': list(part0.split), 'options': list(part0.answers)},
+                         'contextNote': (f'The scheme prints “({"+".join(map(str, part0.split))})”: '
+                                         f'{", ".join(map(str, part0.split))} marks for the first, second '
+                                         f'and further answers given, in any order.')}]
             elif components:
                 # "7 marks (1+1+2+3)" over four bullets: ONE answer the scheme
                 # cuts into four printed components, each worth its term.
@@ -500,16 +673,20 @@ def cards(year, level, refuse, row_for, concept_for):
                 rows, tariff = ladder, {'kind': 'questionTotal'}
             for k, part in enumerate([] if (override or ladder or components)
                                      else ask.parts, start=1):
-                row = row_for(part, k, ask)
+                row = row_for(part, k, ask, text)
                 if isinstance(row, str):
                     bad = row
                     break
-                row.pop('_trimmed', None)
-                rows.append(row)
+                for r in (row if isinstance(row, list) else [row]):
+                    r.pop('_trimmed', None)
+                    rows.append(r)
             if bad:
                 refuse(bad, ref, f'{year} {lvl} scheme, Dialogue {d} ask {ask.item}: '
                                  f'{ask.parts[0].notation!r}')
                 continue
+            rows[0]['contextNote'] = (rows[0].get('contextNote', '') + _lesser_notes(S, ask, rows)
+                                      + (' ' + SCHEME_SLIPS[(year, level, d, n)]
+                                         if (year, level, d, n) in SCHEME_SLIPS else '')).strip()
             rows[0]['contextNote'] = (rows[0].get('contextNote', '') +
                                       ' Answer in English or Irish.').strip()
             out.append({
@@ -605,6 +782,40 @@ OVERRIDES = {
         'note': ['of her/ Grazia’s neighbourhood/', 'area (1m) (1+1+1)'],
         'contextNote': ('The scheme prints the third piece as “of her/ Grazia’s neighbourhood/” and, '
                         'after its tariff, “area (1m) (1+1+1)”.')},
+    # "4. National (1m) library (2m) ," / "(modern) art (1m) gallery(2m)," /
+    # "university 9 marks (3+3+3)": three places at 3, the first two priced
+    # in pieces (1+2).
+    (2018, 'ol', 3, 4): {
+        'points': [('National', 1), ('library', 2), ('(modern) art', 1), ('gallery', 2), ('university', 3)],
+        'note': ['National (1m) library (2m)', '(modern) art (1m) gallery(2m)', 'university 9 marks (3+3+3)'],
+        'contextNote': ('The scheme prints three places, 3 marks each: “National (1m) library (2m)”, '
+                        '“(modern) art (1m) gallery(2m)” and “university 9 marks (3+3+3)”.')},
+    # 2017 Higher Dialogue 3: the booklet prints Q6 as one ask, "(a) What two
+    # parts of Italy did Daniela like the most? (b) Why?", which the scheme
+    # prices as 6(a) "2 marks(1+1)" and 6(b) "2 marks"; and it prints Q8's
+    # "4 marks (2+2)" on the line above "8.". Each ask is read here from its
+    # own printed lines.
+    (2017, 'hl', 3, 6): {
+        'total': 4,
+        'rows': [{'kind': 'point', 'verbatim': '(a) — The Centre', 'marks': 1},
+                 {'kind': 'point', 'verbatim': '(a) — the South', 'marks': 1},
+                 {'kind': 'criterion', 'verbatim': '(b) — People are (very) welcoming, chatty and (very) helpful',
+                  'marks': 2, 'permittedMarks': [0, 1, 2],
+                  'contextNote': 'The scheme also pays part marks for a shorter answer: “2 elements” 1 mark.'}]},
+    (2017, 'hl', 3, 7): {
+        'total': 4, 'claimMax': 2, 'perOption': 2,
+        'options': ['Roads are narrow (1m) there are often no footpaths on roads (1m)', 'Cars are speeding',
+                    'Sometimes (1m) she could not get accommodation (1m)',
+                    'She had to sleep on the beach or in a campsite'],
+        'note': ['7. Any two of 4 marks(2+2)'], 'contextNote': 'The scheme prints “Any two of 4 marks(2+2)”.'},
+    (2017, 'hl', 3, 8): {
+        'total': 4, 'claimMax': 2, 'perOption': 2,
+        'options': ['She is going back to Dublin (to her fiancé) (1m) for six months (1m)',
+                    'She will publish her book', 'She will travel to Europe (1m) by bike (1m)',
+                    'She will write another/second book'],
+        'note': ['4 marks (2+2)', 'She will write a book 1m'],
+        'contextNote': ('The scheme prints this ask’s “4 marks (2+2)” on the line above its number. '
+                        'The scheme also pays part marks for a shorter answer: “She will write a book” 1 mark.')},
     (2026, 'ol', 2, 4): {
         'claimMax': 4, 'perOption': 2,
         'options': ['A (prizewinning) app', 'to practice/learn', 'their verbs',
@@ -617,7 +828,7 @@ def _override_rows(S, o, ref):
     text = _scheme_text(S)
     if 'rows' in o:
         for row in o['rows']:
-            for piece in [row.get('verbatim')] + (row.get('group') or {}).get('options', []):
+            for piece in [(row.get('verbatim') or '').split(' — ')[-1]] + (row.get('group') or {}).get('options', []):
                 if piece and piece != 'The answers the scheme accepts in full':
                     assert _flat(piece) in text, f'{ref}: {piece!r} is not in the scheme'
         return [dict(r, id=f'r-{k}') for k, r in enumerate(o['rows'], start=1)]

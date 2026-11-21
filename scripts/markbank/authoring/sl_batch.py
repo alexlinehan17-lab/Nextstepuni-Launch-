@@ -1,0 +1,200 @@
+#!/usr/bin/env python3
+"""Card one classic sitting of a small language into its authored file.
+
+    python3 scripts/markbank/authoring/sl_batch.py review dutch 2010
+    python3 scripts/markbank/authoring/sl_batch.py write dutch 2010
+
+The small-languages lane's merge step (20 Nov 2026). A sitting's new cards come
+from its reviewed specs (sl_specs_<subject>.py, built by sl_lib); every card
+already in scripts/markbank/authored/<subject>.json is kept BYTE FOR BYTE (the
+generator no longer reproduces every live card, so the file is never
+regenerated). New cards are inserted after the last card of an earlier or the
+same year. An exclusions entry whose ask a new card now answers is removed in
+the same write, so the ledger never claims a carded ask is excluded.
+"""
+import collections
+import importlib
+import json
+import os
+import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
+sys.path.insert(0, HERE)
+
+import sl_lib                                                       # noqa: E402
+
+
+def authored_path(subject):
+    return os.path.join(ROOT, 'scripts', 'markbank', 'authored', f'{subject}.json')
+
+
+def exclusions_path(subject):
+    return os.path.join(HERE, 'exclusions', f'{subject}.json')
+
+
+def sitting_cards(subject, year, level='hl', skip_lane=False):
+    mod = importlib.import_module(f'sl_specs_{subject.replace("-", "_")}')
+    spec_list = mod.specs(year)
+    if not spec_list:
+        raise KeyError(f'no specs for {subject} {year}')
+    scheme = not all(isinstance(s, sl_lib.NoScheme) for s in spec_list)
+    new = sl_lib.cards(subject, year, spec_list, level, scheme=scheme)
+    with open(authored_path(subject), encoding='utf-8') as fh:
+        authored = json.load(fh)
+    have = {c['id'] for c in authored}
+    if skip_lane:
+        # `add`: a sitting the lane already wrote gains a card (a census leaf
+        # added later, e.g. Maltese 2019 Q1A); its written cards are left alone.
+        lane = set()
+        if os.path.exists(ADDITIONS):
+            with open(ADDITIONS, encoding='utf-8') as fh:
+                lane = set(json.load(fh).get(subject, {}).get(str(year), []))
+        new = [c for c in new if c['id'] not in lane]
+    ids = [c['id'] for c in new]
+    dup = [i for i, n in collections.Counter(ids).items() if n > 1]
+    if dup:
+        raise ValueError(f'{subject} {year}: duplicate new ids {dup}')
+    clash = [i for i in ids if i in have]
+    if clash:
+        raise ValueError(f'{subject} {year}: new ids already live {clash}')
+    return authored, new
+
+
+ADDITIONS = os.path.join(HERE, 'sl_additions.json')
+
+
+def record_additions(subject, year, ids):
+    """Every card this lane adds, by subject and sitting: what
+    test/markBankCardPreservation.test.ts holds apart from each deck's frozen
+    pre-lane identity (and pins, sitting by sitting, by count and id hash)."""
+    data = {}
+    if os.path.exists(ADDITIONS):
+        with open(ADDITIONS, encoding='utf-8') as fh:
+            data = json.load(fh)
+    sitting = data.setdefault(subject, {}).setdefault(str(year), [])
+    sitting.extend(i for i in ids if i not in sitting)
+    sitting.sort()
+    data = {k: dict(sorted(v.items())) for k, v in sorted(data.items())}
+    with open(ADDITIONS, 'w', encoding='utf-8') as fh:
+        json.dump(data, fh, ensure_ascii=False, indent=1)
+        fh.write('\n')
+
+
+def write(subject, year, level='hl', skip_lane=False):
+    authored, new = sitting_cards(subject, year, level, skip_lane)
+    at = 0
+    for i, c in enumerate(authored):
+        if c['year'] <= year:
+            at = i + 1
+    out = authored[:at] + new + authored[at:]
+    with open(authored_path(subject), 'w', encoding='utf-8') as fh:
+        json.dump(out, fh, ensure_ascii=False, indent=1)
+        fh.write('\n')
+    record_additions(subject, year, [c['id'] for c in new])
+    refs = {c['questionRef'] for c in new}
+    path = exclusions_path(subject)
+    dropped = 0
+    if os.path.exists(path):
+        with open(path, encoding='utf-8') as fh:
+            excl = json.load(fh)
+        # a whole-question card ("Section I Q1") also answers the parts its
+        # question prints ("Section I Q1(a)" ...)
+        # an exclusion is answered by a card at its ref, by a whole-question card over its letter, or (the
+        # reverse) by letter cards under a whole-question exclusion (Latvian 2021 Q1, carded per letter)
+        kept = [e for e in excl if e.get('ref') not in refs
+                and not any(str(e.get('ref', '')).startswith(r + '(') for r in refs)
+                and not any(r.startswith(str(e.get('ref', '')) + '(') for r in refs)]
+        dropped = len(excl) - len(kept)
+        with open(path, 'w', encoding='utf-8') as fh:
+            json.dump(kept, fh, ensure_ascii=False, indent=1)
+            fh.write('\n')
+    print(f'{subject} {year}: {len(new)} card(s) added ({len(authored)} -> {len(out)}); '
+          f'{dropped} exclusion(s) answered')
+
+
+def review(subject, year, level='hl'):
+    _authored, new = sitting_cards(subject, year, level)
+    for c in new:
+        print(f"{c['id']}  [{c['tariffModel']['kind']} {c['totalMarks']}]  {c['questionRef']}")
+        print(f"    Q: {c['questionText']}")
+        for r in c['rows']:
+            mk = r.get('marks')
+            print(f"    - {r['kind']} {mk}: {r['verbatim']}")
+            for p in r.get('parts') or []:
+                print(f"        * {p['marks']}: {p['verbatim']}")
+            if r.get('group'):
+                g = r['group']
+                print(f"        any {g['claimMax']} x {g['perOption']}: {g['options']}")
+            if r.get('contextNote'):
+                print(f"        note: {r['contextNote']}")
+        if c.get('sourceMaterial'):
+            print(f"    source pages {c['sourceMaterial']['pages']}")
+    print(f'{len(new)} card(s)')
+
+
+def check(subject):
+    """Every sitting this lane has written, rebuilt from its specs and compared
+    with the authored file card by card: a change to the runtime or a spec that
+    would move a committed card fails here."""
+    with open(ADDITIONS, encoding='utf-8') as fh:
+        added = json.load(fh).get(subject, {})
+    with open(authored_path(subject), encoding='utf-8') as fh:
+        have = {c['id']: c for c in json.load(fh)}
+    mod = importlib.import_module(f'sl_specs_{subject.replace("-", "_")}')
+    bad = 0
+    for year, ids in sorted(added.items()):
+        spec_list = mod.specs(int(year))
+        scheme = not all(isinstance(s, sl_lib.NoScheme) for s in spec_list)
+        built = {c['id']: c for c in sl_lib.cards(subject, int(year), spec_list, 'hl', scheme=scheme)}
+        for i in ids:
+            if i not in built or json.dumps(built[i], sort_keys=True) != json.dumps(have.get(i), sort_keys=True):
+                bad += 1
+                print(f'DIFFERS {i}')
+        extra = sorted(set(built) - set(ids))
+        if extra:
+            bad += len(extra)
+            print(f'{subject} {year}: specs build cards not written {extra}')
+    print(f'{subject}: {sum(len(v) for v in added.values())} lane cards checked, {bad} differ')
+    return 1 if bad else 0
+
+
+def refresh(subject):
+    """Rebuild every card this lane has written (never a live card: only ids in
+    sl_additions.json) from its specs, in place, under the same ids. For a
+    correction found by a second reader after a sitting was committed."""
+    with open(ADDITIONS, encoding='utf-8') as fh:
+        added = json.load(fh).get(subject, {})
+    with open(authored_path(subject), encoding='utf-8') as fh:
+        authored = json.load(fh)
+    mod = importlib.import_module(f'sl_specs_{subject.replace("-", "_")}')
+    rebuilt = {}
+    for year, ids in sorted(added.items()):
+        spec_list = mod.specs(int(year))
+        scheme = not all(isinstance(s, sl_lib.NoScheme) for s in spec_list)
+        built = {c['id']: c for c in sl_lib.cards(subject, int(year), spec_list, 'hl', scheme=scheme)}
+        if set(built) != set(ids):
+            raise ValueError(f'{subject} {year}: specs build {sorted(set(built) ^ set(ids))} apart from the written ids')
+        rebuilt.update(built)
+    changed = 0
+    for i, c in enumerate(authored):
+        if c['id'] in rebuilt:
+            if json.dumps(c, sort_keys=True) != json.dumps(rebuilt[c['id']], sort_keys=True):
+                changed += 1
+            authored[i] = rebuilt[c['id']]
+    with open(authored_path(subject), 'w', encoding='utf-8') as fh:
+        json.dump(authored, fh, ensure_ascii=False, indent=1)
+        fh.write('\n')
+    print(f'{subject}: {len(rebuilt)} lane cards rebuilt, {changed} changed')
+
+
+if __name__ == '__main__':
+    cmd, subject = sys.argv[1], sys.argv[2]
+    if cmd == 'check':
+        sys.exit(check(subject))
+    if cmd == 'refresh':
+        sys.exit(refresh(subject))
+    year = int(sys.argv[3])
+    if cmd == 'add':
+        sys.exit(write(subject, year, skip_lane=True))
+    {'review': review, 'write': write}[cmd](subject, year)

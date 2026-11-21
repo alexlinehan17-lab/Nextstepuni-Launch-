@@ -77,8 +77,8 @@
   "ordinary": 3088
  },
  "french": {
-  "higher": 883,
-  "ordinary": 1237
+  "higher": 942,
+  "ordinary": 1344
  },
  "applied-maths": {
   "higher": 716,
@@ -93,8 +93,8 @@
   "ordinary": 926
  },
  "italian": {
-  "higher": 608,
-  "ordinary": 447
+  "higher": 676,
+  "ordinary": 643
  },
  "russian": {
   "higher": 704,
@@ -125,61 +125,61 @@
   "ordinary": 294
  },
  "romanian": {
-  "higher": 50
+  "higher": 187
  },
  "dutch": {
-  "higher": 42
+  "higher": 219
  },
  "lithuanian": {
   "higher": 319,
   "ordinary": 334
  },
  "latvian": {
-  "higher": 20
+  "higher": 167
  },
  "czech": {
-  "higher": 15
+  "higher": 155
  },
  "ancient-greek": {
   "higher": 369,
   "ordinary": 35
  },
  "modern-greek": {
-  "higher": 79
+  "higher": 142
  },
  "hungarian": {
-  "higher": 168
+  "higher": 219
  },
  "bulgarian": {
-  "higher": 141
+  "higher": 219
  },
  "slovakian": {
-  "higher": 140
+  "higher": 206
  },
  "swedish": {
-  "higher": 121
+  "higher": 191
  },
  "estonian": {
-  "higher": 107
+  "higher": 172
  },
  "finnish": {
-  "higher": 90
+  "higher": 168
  },
  "croatian": {
-  "higher": 100
+  "higher": 151
  },
  "danish": {
-  "higher": 79
+  "higher": 126
  },
  "slovenian": {
-  "higher": 23
+  "higher": 60
  },
  "mandarin-chinese": {
   "higher": 114,
   "ordinary": 87
  },
  "ukrainian": {
-  "higher": 20
+  "higher": 26
  },
  "dcg": {
   "higher": 767,
@@ -190,7 +190,7 @@
   "ordinary": 390
  },
  "maltese": {
-  "higher": 29
+  "higher": 77
  },
  "politics-and-society": {
   "higher": 263,
@@ -201,7 +201,7 @@
   "ordinary": 644
  },
  "music": {
-  "higher": 664,
-  "ordinary": 595
+  "higher": 904,
+  "ordinary": 804
  }
 }

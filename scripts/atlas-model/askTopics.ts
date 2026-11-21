@@ -11,6 +11,7 @@
  */
 import { SUBJECTS, loadCards, levelsFor } from '../../components/MarkBank/deck';
 import { topicsForPaper } from '../../components/PaperTrail/topics';
+import { physicalEducationTask } from '../../components/PaperTrail/physicalEducationTasks';
 import { examTopicDefinition } from '../../data/examTopics/registry';
 import { CURRICULUM } from '../../curriculum';
 import type { PaperLang, PaperLevel } from '../../types/paperTrail';
@@ -51,7 +52,13 @@ export const FILED_SUBJECTS: string[] = Object.values(FILINGS).map(f => f.subjec
 /** Subjects the app reads (data/atlasModel/headings.json lists exactly these). Subjects join a few per pull request;
  *  physics, home-economics, maths, japanese, russian and lcvp join after the Codex release lands. */
 export const MODEL_SUBJECTS: readonly string[] = ['biology', 'chemistry', 'agricultural-science',
-  'business', 'accounting', 'economics', 'politics-and-society', 'religious-education', 'history'];
+  'business', 'accounting', 'economics', 'politics-and-society', 'religious-education', 'history',
+  'maths', 'physics', 'lcvp', 'russian', 'home-economics', 'japanese',
+  'geography', 'construction-studies', 'engineering', 'dcg', 'technology', 'computer-science', 'applied-maths',
+  'physical-education', 'art', 'classical-studies', 'music',
+  'english', 'irish', 'french', 'german', 'spanish', 'italian', 'latin', 'ancient-greek', 'arabic', 'bulgarian',
+  'croatian', 'czech', 'danish', 'dutch', 'estonian', 'finnish', 'hungarian', 'latvian', 'lithuanian', 'maltese',
+  'mandarin-chinese', 'modern-greek', 'polish', 'portuguese', 'romanian', 'slovakian', 'slovenian', 'swedish', 'ukrainian'];
 export const filingFor = (subject: string): SubjectFiling | null => Object.values(FILINGS).find(f => f.subject === subject) ?? null;
 
 const curriculumLabel = new Map(CURRICULUM.flatMap(c => c.strands.flatMap(s => s.subtopics.map(t => [t.id, t.name] as const))));
@@ -92,7 +99,18 @@ export async function deriveAskTopics(subjectId: string): Promise<AskDerivation>
     const at = filed[0].map(id => index.get(id)!).sort((a, b) => a - b);
     const a = atlasAddress(card, home, ctx);
     let placed = false;
-    if (!('fail' in a)) {
+    if (!('fail' in a) && a.peTask) {
+      // Physical Education: the Atlas question is the reviewed task row (as the checks place it).
+      const atlas = a.atlas ?? home;
+      const task = physicalEducationTask({ subjectId: atlas, level: card.level as PaperLevel, year: card.year, lang: 'ev', fileid: a.fileid, n: String(a.cands[0]) });
+      if (task) {
+        const key = `${atlas}|${card.year}|${card.level}|${task.fileid}|${task.n}`;
+        const entry = byQuestion.get(key) ?? [atlas, card.year, card.level, task.fileid, task.n, []];
+        entry[5].push([card.id, at]);
+        byQuestion.set(key, entry);
+        placed = true;
+      }
+    } else if (!('fail' in a)) {
       const atlas = a.atlas ?? home;
       for (const lang of ['ev', 'iv'] as PaperLang[]) {
         const paper = topicsForPaper(atlas, card.year, card.level as PaperLevel, lang, a.fileid);

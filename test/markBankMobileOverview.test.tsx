@@ -1,18 +1,20 @@
 import React from 'react';
 import { afterEach, beforeEach, expect, test, vi } from 'vitest';
-import { cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
 import MarkBank from '../components/MarkBank/MarkBank';
 
 vi.mock('../hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => true }));
 beforeEach(() => { localStorage.clear(); Element.prototype.scrollIntoView = vi.fn(); });
 afterEach(() => { cleanup(); localStorage.clear(); });
 
-test('the mobile library uses the student cohort while keeping original paper topics labelled', async () => {
+test('the mobile library uses the student cohort and one heading list', async () => {
   render(<MarkBank examDate="2027-06-02" studentSubjects={[{ subjectName: 'Latin', level: 'higher' }]} />);
   expect(screen.getByText(/Your syllabus:.*Latin/)).toBeInTheDocument();
   const index = screen.getByRole('navigation', { name: 'Subject units' });
-  await waitFor(() => expect(within(index).getAllByText('Original paper topics').length).toBeGreaterThan(0), { timeout: 10000 });
-  expect(within(index).getByRole('button', { name: /Latin Language/ })).toBeInTheDocument();
+  expect(await within(index).findByRole('button', { name: /Latin Language/ }, { timeout: 10000 })).toBeInTheDocument();
+  // Latin is in the single model: older papers' questions are filed under the one heading list, so the index has no
+  // separate 'Original paper topics' units (Alex, 18 Nov: no second old-course list).
+  expect(within(index).queryAllByText('Original paper topics')).toHaveLength(0);
 });
 
 test('the subject index keeps topic practice available without a dismissible overview', async () => {
@@ -21,8 +23,9 @@ test('the subject index keeps topic practice available without a dismissible ove
   expect(start).toBeEnabled();
   expect(screen.getByRole('navigation', { name: 'Subject units' })).toBeInTheDocument();
   expect(screen.queryByRole('button', { name: 'Dismiss practice overview' })).not.toBeInTheDocument();
-  fireEvent.change(screen.getByRole('textbox', { name: 'Search topics' }), { target: { value: 'Rock Cycle' } });
-  fireEvent.click(screen.getByRole('button', { name: /The Rock Cycle.*questions/ }));
+  // Geography is in the single model: the index lists the Atlas heading the rock cycle is filed under.
+  fireEvent.change(screen.getByRole('textbox', { name: 'Search topics' }), { target: { value: 'Rocks' } });
+  fireEvent.click(await screen.findByRole('button', { name: /Rocks, Weathering & Mass Movement.*questions/ }));
   fireEvent.click(screen.getByRole('button', { name: /^Start 6 questions$/ }));
   expect(await screen.findByRole('button', { name: 'Expand to full screen' })).toBeInTheDocument();
   expect(screen.getByRole('textbox', { name: 'Your answer' })).toBeInTheDocument();
