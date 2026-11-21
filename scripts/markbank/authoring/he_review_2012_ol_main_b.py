@@ -20,7 +20,7 @@ def build():
  preparation=guide(8,'Preparation:','Cooking:');cooking=guide(8,'Cooking:','(d)')
  add(1,'c','0-3',12,[criterion('preparation','preparing',1,[0,4],preparation),criterion('cooking','cooking',1,[0,4],cooking),criterion('other','one other',1,[0,4],'One additional distinct method from EITHER heading; the source requires one reference to each plus one other. Preparation: '+preparation+' Cooking: '+cooking)],'One preparation4 + one cooking4 + one other4')
  labels=['list of ingredients','weight','nutritional information','best before date','country of origin.'];body=guide(8,'5 items @ 4 marks')+' '+s[9].split('2.',1)[0]
- bodies=named(body,['• '+v for v in labels]);add(1,'d','1-2',20,[criterion(f'item-{i}',label,1,[0,4],v[2:]) for i,(label,v) in enumerate(zip(labels,bodies),1)],'5 required items × 4')
+ bodies=named(body,['• '+v for v in labels]);add(1,'d','0-11',20,[criterion(f'item-{i}',label,1,[0,4],v[2:]) for i,(label,v) in enumerate(zip(labels,bodies),1)],'5 required items × 4')
  full=prompt(2,'a');sources_prompt=full.split(' and state',1)[0];reasons_prompt='state'+full.split(' and state',1)[1]
  judged(2,'a','0-9',3,4,'sources',guide(9,'Sources:','2 reasons @ 4 marks'),suffix='-sources',custom=sources_prompt)
  judged(2,'a','0-9',2,4,'reasons',guide(9,'Reasons:','(b)'),suffix='-reasons',custom=reasons_prompt)
