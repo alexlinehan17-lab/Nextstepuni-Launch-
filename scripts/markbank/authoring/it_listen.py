@@ -277,6 +277,11 @@ def scheme_dialogues(year, level):
 
 
 ELEMENTS = re.compile(r'\belements?\b', re.I)
+# A ladder line COUNTS its elements: "1 to 2 elements = 2 marks", "3 elements
+# 3 marks". An answer that only names one ("sport + water element", "(both
+# element)", "(looking for both elements)") is an answer, not a ladder.
+LADDER_ELEMENTS = re.compile(r'\b\d\s*(?:to\s*\d\s*)?elements?\b', re.I)
+ASK_HEAD = re.compile(r'^\s*\d{1,2}\.\s|^\s*(?:Dialogue|Dialogo)\s*\d', re.I)
 BULLET = re.compile(r'^[•●▪■]\s*')
 
 
@@ -329,20 +334,21 @@ def _ladder_rows(S, ask):
     total (`questionTotal`, CARD-STANDARD section 2).
     """
     part = ask.parts[0]
-    if not any(ELEMENTS.search(t) for t, _v in part.rungs) and \
-            not any(ELEMENTS.search(a) for a in part.answers):
+    if not any(LADDER_ELEMENTS.search(t) for t, _v in part.rungs) and \
+            not any(LADDER_ELEMENTS.search(a) for a in part.answers):
         return None
-    answers = [a for a in part.answers if not ELEMENTS.search(a)]
-    ladder = [_flat(l) for l in S.lines if ELEMENTS.search(l)
-              and re.search(r'\d\s*(?:to\s*\d\s*)?elements?', l)]
-    # the ladder lines that belong to THIS ask: the first run after its answers
+    answers = [a for a in part.answers if not LADDER_ELEMENTS.search(a)]
+    # the ladder lines that belong to THIS ask: the first run after its
+    # answers, never past the next ask's head
     start = next((i for i, l in enumerate(S.lines) if answers
                   and _flat(BULLET.sub('', l.strip())).startswith(_flat(answers[-1])[:40])),
                  None)
     run = []
     if start is not None:
         for l in S.lines[start + 1:start + 12]:
-            if ELEMENTS.search(l):
+            if ASK_HEAD.match(l):
+                break
+            if LADDER_ELEMENTS.search(l):
                 run.append(_flat(l))
             elif run:
                 break
@@ -367,20 +373,54 @@ def _sentences(text):
 ORDER_FREE = {(2019, 'hl', 3, 3)}
 
 
+def _line_starts(S):
+    """Where each printed line starts in _scheme_text(S) (None for a blank line)."""
+    starts, at, first = [], 0, True
+    for line in S.lines:
+        piece = _flat(line)
+        if not piece:
+            starts.append(None)
+            continue
+        at += 0 if first else 1
+        starts.append(at)
+        at += len(piece)
+        first = False
+    return starts
+
+
+# The examiner's condition printed on the lines under a shorter answer: "This
+# answer cannot be awarded marks if Sunbathing/Swimming was also given" (2023
+# Ordinary Dialogue 1 Q2), its sentence running on in lower case.
+CONDITION = re.compile(r'^\(?\s*This\s+answer\b', re.I)
+# A short line printed OVER a run of shorter answers that governs them: "If
+# only point" over "She played 1m" (2023 Higher Dialogue 3 Q6). Not every line
+# opening "If": "If he misses his family" is an answer, and "If Individual
+# point only:" heads the answers themselves.
+LEAD = re.compile(r'^if\s+only\b', re.I)
+
+
 def _printed_lesser(S, ask):
     """Every shorter answer the scheme prices for this ask, quoted as printed.
 
     The reader keeps a shorter answer as (text, marks) with its brackets and
     mark taken off; the quote is the scheme's own span for it, brackets, mark
     and any asterisk included ("(They were messing/playing 3 marks)*", "The
-    classes are fun 1m", "He never feels alone (2m)"), and a bracket the
-    scheme leaves open stays open ("The seaside 1 mark)"). A list bullet is
-    not quoted. Returns (quote, text, marks) in printed order.
+    classes are fun 1m", "He never feels alone (2m)", "There is a nice
+    atmosphere1m"), and a bracket the scheme leaves open stays open ("The
+    seaside 1 mark)"). A list bullet is not quoted. Returns (quote, text,
+    marks, lead, conditions) in printed order: the "If ..." line printed over
+    it, and the examiner's conditions printed under it.
 
     A rung with a price INSIDE it ("May (1m) (before going away) worked") is
     two printed lines read as one, not a shorter answer; it is left out.
     """
     flat = _scheme_text(S)
+    starts = _line_starts(S)
+    lines = [(k, _flat(l)) for k, l in enumerate(S.lines) if starts[k] is not None]
+
+    def line_at(offset):
+        return max(n for n, (k, _l) in enumerate(lines) if starts[k] <= offset)
+
     out = []
     for part in ask.parts or []:
         for text, marks in part.rungs:
@@ -398,9 +438,22 @@ def _printed_lesser(S, ask):
                 PRINTED_LESSER_MISSING.append((text, marks))
                 continue
             span = hit.group(0).strip()
-            if span not in [q for _at, q, _t, _m in out]:
-                out.append((hit.start(), span, BULLET.sub('', text), marks))
-    return [(q, t, m) for _at, q, t, m in sorted(out)]
+            if span in [q for _at, q, *_rest in out]:
+                continue
+            begin = hit.start() + len(hit.group(0)) - len(hit.group(0).lstrip())
+            first, last = line_at(begin), line_at(begin + len(span) - 1)
+            lead = lines[first - 1][1] if first and LEAD.match(lines[first - 1][1]) \
+                and len(lines[first - 1][1].split()) <= 5 else None
+            conditions = []
+            for _k, line in lines[last + 1:last + 8]:
+                if CONDITION.match(line):
+                    conditions.append(line)
+                elif conditions and line[:1].islower():
+                    conditions[-1] += ' ' + line
+                else:
+                    break
+            out.append((begin, span, BULLET.sub('', text), marks, lead, conditions))
+    return [rest for _at, *rest in sorted(out)]
 
 
 def _lesser_notes(S, ask, rows):
@@ -408,22 +461,45 @@ def _lesser_notes(S, ask, rows):
 
     Left out: a shorter answer the card already offers as a row or an option,
     or already quotes in a note. One worth the whole ask is not a shorter
-    answer, and is quoted as printed for full marks.
+    answer, and is quoted as printed for full marks. The line printed over the
+    shorter answers ("If only point") and the conditions printed under one
+    ("This answer cannot be awarded marks if ...") are quoted with them, as
+    the reader quotes a starred condition.
     """
     shown = {_flat(t).lower() for r in rows
              for t in [r.get('verbatim') or ''] + list((r.get('group') or {}).get('options') or [])}
     noted = ' '.join(_flat(r.get('contextNote') or '') for r in rows)
-    fresh = [(q, t, m) for q, t, m in _printed_lesser(S, ask)
-             if _flat(t).lower() not in shown and _flat(q) not in noted and f'“{_flat(t)}”' not in noted]
-    lesser = [q for q, _t, m in fresh if m < ask.total]
-    full = [q for q, _t, m in fresh if m >= ask.total]
-    for q in lesser + full:
-        assert _flat(q) in _scheme_text(S), q
-    return ((' The scheme also prints, for shorter answers: ' + '; '.join(f'“{q}”' for q in lesser) + '.'
-             if lesser else '')
-            + (' The scheme also prints, for full marks: ' + '; '.join(f'“{q}”' for q in full) + '.'
-               if full else ''))
+    fresh = [p for p in _printed_lesser(S, ask)
+             if _flat(p[1]).lower() not in shown and _flat(p[0]) not in noted and f'“{_flat(p[1])}”' not in noted]
+    lesser = [p for p in fresh if p[2] < ask.total]
+    full = [p for p in fresh if p[2] >= ask.total]
+    for q, _t, _m, lead, conditions in lesser + full:
+        for piece in [q] + ([lead] if lead else []) + conditions:
+            assert _flat(piece) in _scheme_text(S), piece
+    lead = lesser[0][3] if lesser else None
+    note = ''
+    if lesser:
+        note += (f' The scheme also prints, under “{lead}”, for shorter answers: ' if lead
+                 else ' The scheme also prints, for shorter answers: ')
+        note += '; '.join(f'“{q}”' for q, *_rest in lesser) + '.'
+    if full:
+        note += ' The scheme also prints, for full marks: ' + '; '.join(f'“{q}”' for q, *_rest in full) + '.'
+    for _q, t, _m, _lead, conditions in lesser + full:
+        conditions = [c for c in conditions if _flat(c) not in noted]
+        if conditions:
+            note += (f' The scheme adds to the shorter answer “{t}”: '
+                     + '; '.join(f'“{c}”' for c in conditions) + '.')
+    return note
 
+
+# A slip in the scheme, quoted as printed and said in plain words (CARD-STANDARD
+# 10f): the note goes in the card's first row.
+SCHEME_SLIPS = {
+    # The two shorter answers under Dialogue 1 Q1 ("She was/had to go in
+    # hospital 1m", "Tore/broke ligament 1m") are the ones Dialogue 2 Q1 prints
+    # for Anna's injury, word for word.
+    (2023, 'hl', 1, 1): 'The scheme prints the same two shorter answers under Dialogue 2 Question 1 as well.',
+}
 
 PRINTED_LESSER_SKIPPED = []
 PRINTED_LESSER_MISSING = []
@@ -608,7 +684,9 @@ def cards(year, level, refuse, row_for, concept_for):
                 refuse(bad, ref, f'{year} {lvl} scheme, Dialogue {d} ask {ask.item}: '
                                  f'{ask.parts[0].notation!r}')
                 continue
-            rows[0]['contextNote'] = (rows[0].get('contextNote', '') + _lesser_notes(S, ask, rows)).strip()
+            rows[0]['contextNote'] = (rows[0].get('contextNote', '') + _lesser_notes(S, ask, rows)
+                                      + (' ' + SCHEME_SLIPS[(year, level, d, n)]
+                                         if (year, level, d, n) in SCHEME_SLIPS else '')).strip()
             rows[0]['contextNote'] = (rows[0].get('contextNote', '') +
                                       ' Answer in English or Irish.').strip()
             out.append({

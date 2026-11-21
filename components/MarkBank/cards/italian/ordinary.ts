@@ -8753,7 +8753,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention two activities you can do in Le Cinque Terre.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Going to the beach 2 marks”; “(Trips/ excursions to the mountains) 2 marks”; “(Spend time with friends 1 marks)”. Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["Sunbathing","Swimming","Boat trips","Hiking/ walking","Photography/Sightseeing"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Going to the beach 2 marks”; “(Trips/ excursions to the mountains) 2 marks”; “(Spend time with friends 1 marks)”. The scheme adds to the shorter answer “Going to the beach”: “This answer cannot be awarded marks if Sunbathing/Swimming was also given”. The scheme adds to the shorter answer “Trips/ excursions to the mountains”: “This answer cannot be awarded marks if Hiking/Walking was also given.”; “This answer cannot be awarded marks if Photography/Sightseeing was also given.”. The scheme adds to the shorter answer “Spend time with friends”: “This answer Spend time with friends is acceptable if it is the only answer awarded marks”. Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["Sunbathing","Swimming","Boat trips","Hiking/ walking","Photography/Sightseeing"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16437,7 +16437,7 @@ export const CARDS: SecCard[] = [
     questionText: "State four of the terms and conditions of the\nvoucher.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":4,"perOption":1,"options":["Use within six months of purchase.","One coupon per person.","Complete six hours of driving lessons (to sit test)","Pay for medical check-up","Pay associated costs of driving test","Pay for the driving lessons that are not included in the offer","Booking by phone"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also prints: “The answer “You must use the coupon during January/ February /March /April will only be acceptable as an answer in Question 3 if not used as an answer in Question 4.”.", group: {"claimMax":4,"perOption":1,"options":["Use within six months of purchase.","One coupon per person.","Complete six hours of driving lessons (to sit test)","Pay for medical check-up","Pay associated costs of driving test","Pay for the driving lessons that are not included in the offer","Booking by phone","You must use the coupon during January/ February /March /April"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

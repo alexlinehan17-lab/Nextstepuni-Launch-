@@ -316,8 +316,32 @@ OPTION_TO_NOTE = {
 }
 
 
+# An answer the scheme prints only inside the examiner's note under the ask,
+# with the condition on it: the answer becomes an option and the note quotes
+# the sentence as printed. 2017 Ordinary B2 Q3 prints "The answer “You must use
+# the coupon during January/ February /March /April will only be acceptable as
+# an" / "answer in Question 3 if not used as an answer in Question 4."
+NOTE_TO_OPTION = {
+    'it-2017-ol-b2-3': (
+        'You must use the coupon during January/ February /March /April',
+        'The scheme also prints: “The answer “You must use the coupon during January/ February /March /April '
+        'will only be acceptable as an answer in Question 3 if not used as an answer in Question 4.”.',
+        ['The answer “You must use the coupon during January/ February /March /April will only be acceptable as an',
+         'answer in Question 3 if not used as an answer in Question 4.']),
+}
+
+
 def _note_fixes(cards, year, level):
     import re as _re
+    for cid, (option, sentence, pieces) in NOTE_TO_OPTION.items():
+        card = next((c for c in cards if c['id'] == cid), None)
+        if card is None:
+            continue
+        it_writing.Scheme(year, level).check(*pieces)
+        options = card['rows'][0]['group']['options']
+        assert option not in options, (cid, options)
+        options.append(option)
+        card['rows'][0]['contextNote'] = (card['rows'][0].get('contextNote', '') + ' ' + sentence).strip()
     for cid, (option, old, new, pieces) in OPTION_TO_NOTE.items():
         card = next((c for c in cards if c['id'] == cid), None)
         if card is None:

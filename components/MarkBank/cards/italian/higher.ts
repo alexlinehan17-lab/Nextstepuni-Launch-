@@ -10496,10 +10496,9 @@ export const CARDS: SecCard[] = [
     section: "L", questionRef: "2023 HL Section LB1 Q1",
     stem: "Dialogue 1. Conversation between Marco and Maria. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
     questionText: "What is Maria looking forward to? Give full details.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Holidays/Enjoy time of/summer", marks: null, contextNote: "The scheme gives marks for this answer by how many of its elements are given: (Practicing) water sport/sport + water element. The scheme also prints, for shorter answers: “She was/had to go in hospital 1m”; “Tore/broke ligament 1m”. Answer in English or Irish." },
-    { id: "r-2", kind: "criterion", verbatim: "(Going to the) seaside/beach", marks: null },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “She was/had to go in hospital 1m”; “Tore/broke ligament 1m”. The scheme prints the same two shorter answers under Dialogue 2 Question 1 as well. Answer in English or Irish.", group: {"claimMax":2,"options":["Holidays/Enjoy time of/summer","(Going to the) seaside/beach","(Practicing) water sport/sport + water element"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10602,10 +10601,9 @@ export const CARDS: SecCard[] = [
     section: "L", questionRef: "2023 HL Section LB1 Q4",
     stem: "Dialogue 1. Conversation between Marco and Maria. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
     questionText: "What does Maria say about travelling by car? Give full details.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "She doesn’t have a car/no car", marks: null, contextNote: "The scheme gives marks for this answer by how many of its elements are given: • She injured (1m)/hurt her leg (1m) (looking for both elements). The scheme also prints, for shorter answers: “A nightmare 1m”. Answer in English or Irish." },
-    { id: "r-2", kind: "criterion", verbatim: "She would not + relaxed/calm /quiet /relaxing (the message has to be conveyed)", marks: null },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “A nightmare 1m”. Answer in English or Irish.", group: {"claimMax":2,"options":["She doesn’t have a car/no car","It’s a nightmare/awful/horrendous/don’t like travelling by the car in the summer (both element)","She would not + relaxed/calm /quiet /relaxing (the message has to be conveyed)"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10964,7 +10962,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Sabrina do in her free time? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "She learnt/ to play/playing/ camogie/one of the national sports", marks: 2, contextNote: "The scheme also prints, for shorter answers: “She played 1m”; “Camogie/ national sport 1m”. Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "She learnt/ to play/playing/ camogie/one of the national sports", marks: 2, contextNote: "The scheme also prints, under “If only point”, for shorter answers: “She played 1m”; “Camogie/ national sport 1m”. Answer in English or Irish." },
     { id: "r-2", kind: "point", verbatim: "She took part in a choir", marks: 1 },
     { id: "r-3", kind: "point", verbatim: "She went to Irish dances/balls (lesson)", marks: 1 },
     ],
@@ -18953,7 +18951,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Daniele say about the language lessons? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “They do group work/they are put in groups 1m”; “The classes are fun 1m”; “They always have a break/they have break time for tea, coffee and dessert 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["The groups are small","They do a lot of conversation","They use images to teach words","They are different from classes at school/not like school lessons"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “They do group work/they are put in groups 1m”; “The classes are fun 1m”; “There is a nice atmosphere1m”; “They always have a break/they have break time for tea, coffee and dessert 1m”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["The groups are small","They do a lot of conversation","They use images to teach words","They are different from classes at school/not like school lessons"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

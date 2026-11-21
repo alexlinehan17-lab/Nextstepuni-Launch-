@@ -33006,22 +33006,25 @@
   "questionRef": "2023 HL Section LB1 Q1",
   "questionText": "What is Maria looking forward to? Give full details.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
-    "kind": "criterion",
-    "verbatim": "Holidays/Enjoy time of/summer",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
     "marks": null,
-    "contextNote": "The scheme gives marks for this answer by how many of its elements are given: (Practicing) water sport/sport + water element. The scheme also prints, for shorter answers: “She was/had to go in hospital 1m”; “Tore/broke ligament 1m”. Answer in English or Irish."
-   },
-   {
-    "id": "r-2",
-    "kind": "criterion",
-    "verbatim": "(Going to the) seaside/beach",
-    "marks": null
+    "contextNote": "The scheme also prints, for shorter answers: “She was/had to go in hospital 1m”; “Tore/broke ligament 1m”. The scheme prints the same two shorter answers under Dialogue 2 Question 1 as well. Answer in English or Irish.",
+    "group": {
+     "claimMax": 2,
+     "options": [
+      "Holidays/Enjoy time of/summer",
+      "(Going to the) seaside/beach",
+      "(Practicing) water sport/sport + water element"
+     ],
+     "perOption": 2
+    }
    }
   ],
   "notes": "The scheme prints the tariff as '4 marks (2+2)'; the listening booklet prints this ask on page 4.",
@@ -33178,22 +33181,25 @@
   "questionRef": "2023 HL Section LB1 Q4",
   "questionText": "What does Maria say about travelling by car? Give full details.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
-    "kind": "criterion",
-    "verbatim": "She doesn’t have a car/no car",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
     "marks": null,
-    "contextNote": "The scheme gives marks for this answer by how many of its elements are given: • She injured (1m)/hurt her leg (1m) (looking for both elements). The scheme also prints, for shorter answers: “A nightmare 1m”. Answer in English or Irish."
-   },
-   {
-    "id": "r-2",
-    "kind": "criterion",
-    "verbatim": "She would not + relaxed/calm /quiet /relaxing (the message has to be conveyed)",
-    "marks": null
+    "contextNote": "The scheme also prints, for shorter answers: “A nightmare 1m”. Answer in English or Irish.",
+    "group": {
+     "claimMax": 2,
+     "options": [
+      "She doesn’t have a car/no car",
+      "It’s a nightmare/awful/horrendous/don’t like travelling by the car in the summer (both element)",
+      "She would not + relaxed/calm /quiet /relaxing (the message has to be conveyed)"
+     ],
+     "perOption": 2
+    }
    }
   ],
   "notes": "The scheme prints the tariff as '4 marks (2+2)'; the listening booklet prints this ask on page 4.",
@@ -33775,7 +33781,7 @@
     "kind": "point",
     "verbatim": "She learnt/ to play/playing/ camogie/one of the national sports",
     "marks": 2,
-    "contextNote": "The scheme also prints, for shorter answers: “She played 1m”; “Camogie/ national sport 1m”. Answer in English or Irish."
+    "contextNote": "The scheme also prints, under “If only point”, for shorter answers: “She played 1m”; “Camogie/ national sport 1m”. Answer in English or Irish."
    },
    {
     "id": "r-2",
@@ -36020,7 +36026,7 @@
       "Photography/Sightseeing"
      ]
     },
-    "contextNote": "The scheme also prints, for shorter answers: “(Going to the beach 2 marks”; “(Trips/ excursions to the mountains) 2 marks”; “(Spend time with friends 1 marks)”. Answer in English or Irish."
+    "contextNote": "The scheme also prints, for shorter answers: “(Going to the beach 2 marks”; “(Trips/ excursions to the mountains) 2 marks”; “(Spend time with friends 1 marks)”. The scheme adds to the shorter answer “Going to the beach”: “This answer cannot be awarded marks if Sunbathing/Swimming was also given”. The scheme adds to the shorter answer “Trips/ excursions to the mountains”: “This answer cannot be awarded marks if Hiking/Walking was also given.”; “This answer cannot be awarded marks if Photography/Sightseeing was also given.”. The scheme adds to the shorter answer “Spend time with friends”: “This answer Spend time with friends is acceptable if it is the only answer awarded marks”. Answer in English or Irish."
    }
   ],
   "notes": "The scheme prints the tariff as '6 marks (3+3)'; the listening booklet prints this ask on page 4.",
@@ -53053,7 +53059,7 @@
       "They are different from classes at school/not like school lessons"
      ]
     },
-    "contextNote": "The scheme also prints, for shorter answers: “They do group work/they are put in groups 1m”; “The classes are fun 1m”; “They always have a break/they have break time for tea, coffee and dessert 1m”. Answer in English or Irish."
+    "contextNote": "The scheme also prints, for shorter answers: “They do group work/they are put in groups 1m”; “The classes are fun 1m”; “There is a nice atmosphere1m”; “They always have a break/they have break time for tea, coffee and dessert 1m”. Answer in English or Irish."
    }
   ],
   "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 4.",
@@ -71225,10 +71231,11 @@
       "Pay for medical check-up",
       "Pay associated costs of driving test",
       "Pay for the driving lessons that are not included in the offer",
-      "Booking by phone"
+      "Booking by phone",
+      "You must use the coupon during January/ February /March /April"
      ]
     },
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also prints: “The answer “You must use the coupon during January/ February /March /April will only be acceptable as an answer in Question 3 if not used as an answer in Question 4.”."
    }
   ],
   "notes": "The scheme prints the tariff as '4 marks (1+1+1+1)'; the paper prints this ask on page 9 of the question booklet.",

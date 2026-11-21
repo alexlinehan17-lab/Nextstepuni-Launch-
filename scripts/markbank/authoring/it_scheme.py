@@ -154,7 +154,9 @@ LADDER = re.compile(r'^[≈~]{2,}\s*')
 PAREN_RUNG = re.compile(r'^\(.*\b\d{1,2}\s*marks?\b\.?\s*\)?\s*$', re.I)
 # The mark printed at the end of a line, WITH an optional closing bracket: what
 # _rung strips off a lesser answer to read its value.
-TRAILING_MARK = re.compile(r'\b(\d{1,2})\s*(?:m|marks?)\.?\s*\)?\s*$', re.I)
+# The SEC sometimes sets the mark against the last word with no space: 2019
+# Higher Dialogue 1 Q3 prints "There is a nice atmosphere1m".
+TRAILING_MARK = re.compile(r'(?<!\d)(\d{1,2})\s*(?:m|marks?)\.?\s*\)?\s*$', re.I)
 # Every mark printed inside brackets, with or without its "m": "(3m)", "(2)".
 # Where an answer carries SEVERAL of these it is one answer split into halves;
 # where it carries exactly one, at its end, it is a lesser answer worth that.
