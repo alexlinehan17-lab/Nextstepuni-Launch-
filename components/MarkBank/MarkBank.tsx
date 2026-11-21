@@ -85,6 +85,8 @@ export interface MarkBankProps {
   studio?: boolean;
   /** Opens Listening Studio from Mark Bank's board. */
   onOpenListeningStudio?: () => void;
+  /** Leaves Listening Studio for the Launchpad (the Studio fills the screen). */
+  onLeaveStudio?: () => void;
   /** Injected for tests. */
   now?: () => number;
 }
@@ -143,7 +145,7 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
   return null;
 }
 
-const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, studio = false, onOpenListeningStudio, now = () => Date.now() }) => {
+const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, studio = false, onOpenListeningStudio, onLeaveStudio, now = () => Date.now() }) => {
   const canSelectSubject = useSubjectAccess();
   /* Read synchronously on mount. A Chemistry Ordinary student must never watch
      the tool open on Biology Higher and correct it — that is two clicks every
@@ -179,6 +181,15 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, stu
     () => SUBJECTS.filter(s => isListeningSubject(s.id) && canSelectSubject(s.title) && levelsFor(s.id).some(l => deckSize(s.id, l) > 0)),
     [canSelectSubject],
   );
+  // The student's own subjects that have listenings: the Studio's tabs.
+  const myStudioSubjectIds = useMemo(() => {
+    const ids = new Set<string>();
+    for (const profileSubject of studentSubjects ?? []) {
+      const choice = canSelectSubject(profileSubject.subjectName) ? profileDeckChoice([profileSubject]) : null;
+      if (choice && isListeningSubject(choice.subjectId)) ids.add(choice.subjectId);
+    }
+    return [...ids];
+  }, [studentSubjects, canSelectSubject]);
   const firstStudioSubject = studioSubjects[0];
   const fallbackChoice = studio && firstStudioSubject
     ? { subjectId: firstStudioSubject.id, level: levelsFor(firstStudioSubject.id).find(l => deckSize(firstStudioSubject.id, l) > 0) ?? ('higher' as Level) }
@@ -470,11 +481,11 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, stu
   }
 
   if (studio) return <ListeningStudio
-    subjectId={subjectId} subjectLabel={subject.title} level={level}
-    subjects={studioSubjects.map(s => ({ id: s.id, title: s.title }))}
+    uid={uid} subjectId={subjectId} subjectLabel={subject.title} level={level}
+    subjects={studioSubjects.map(s => ({ id: s.id, title: s.title }))} mySubjectIds={myStudioSubjectIds}
     chooseSubject={chooseSubject} chooseLevel={chooseLevel}
     cards={cards} memories={memories} loading={cardsLoading} error={cardsError}
-    onRetry={() => setCardsAttempt(value => value + 1)} onGrade={handleGrade}
+    onRetry={() => setCardsAttempt(value => value + 1)} onGrade={handleGrade} onLeave={onLeaveStudio}
   />;
 
   return <MarkBankLibrary key={deckId} examDate={examDate} subjectId={subjectId} level={level} cards={reviewCards} state={deck} now={now}
