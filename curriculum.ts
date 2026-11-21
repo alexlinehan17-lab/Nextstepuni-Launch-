@@ -12717,6 +12717,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "czech-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "czech-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12792,7 +12796,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "dutch-1-1",
-            "name": "Essay on a set quotation (Part III, from 2023)"
+            "name": "Essay on a set quotation (Part III)"
           }
         ]
       }
@@ -12941,6 +12945,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "latvian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "latvian-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12975,6 +12983,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "maltese-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "maltese-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -13009,6 +13021,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "modern-greek-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "modern-greek-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -13046,7 +13062,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "romanian-1-1",
-            "name": "Essay on a set quotation (Part III, from 2023)"
+            "name": "Essay on a set quotation (Part III)"
           }
         ]
       }
@@ -13195,6 +13211,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "ukrainian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "ukrainian-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }

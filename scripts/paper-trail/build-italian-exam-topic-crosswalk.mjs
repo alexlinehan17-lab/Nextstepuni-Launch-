@@ -41,6 +41,22 @@ const topicIndex = new Map(referenceTopics.map((topic, index) => [topic.id, inde
 
 if (referenceTopics.length !== 24) throw new Error(`Expected 24 Italian topics, found ${referenceTopics.length}`);
 
+// NextStepUni's own Higher heading after the 24 captured topics (coordinator ruling, 20 Nov), like Spanish's Historic
+// Texts extension: the single Mark Bank / Topic Atlas model files every part on a prescribed book that is no longer set
+// here (scripts/atlas-model/filings/italian.json), so no part sits under a heading named for a current book. It is a
+// runtime heading only: the captured hierarchy, its counts and the question tags below never use it.
+const EARLIER_SET_TEXTS_TOPIC = {
+  id: 'italian-higher-literature-earlier-set-texts',
+  level: 'higher',
+  label: 'Literature: earlier set texts',
+  sourcePath: '/nextstepuni/italian/higher/literature-earlier-set-texts',
+  mockQuestionCount: 0,
+  providerSampleQuestionCount: 0,
+  reportedQuestionCount: 0,
+};
+const runtimeTopics = [...referenceTopics, EARLIER_SET_TEXTS_TOPIC];
+const runtimeTopicIndex = new Map(runtimeTopics.map((topic, index) => [topic.id, index]));
+
 const IDS = {
   higher: {
     conversations: 'italian-higher-aural-conversations',
@@ -94,6 +110,7 @@ const CURRICULUM_CROSSWALK = {
   [IDS.higher.formal]: ['italian-6-2'],
   [IDS.higher.guided]: ['italian-6-1'],
   [IDS.higher.opinion]: ['italian-6-0'],
+  [EARLIER_SET_TEXTS_TOPIC.id]: ['italian-2-1'],
   [IDS.ordinary.competitions]: ['italian-5-4'],
   [IDS.ordinary.general]: ['italian-5-4'],
   [IDS.ordinary.jobs]: ['italian-5-4'],
@@ -329,11 +346,14 @@ addCustom(italianPaper(2018, 'ordinary'), {
 });
 
 // Section B3, "OR Essay on prescribed text: Answer A or B", is printed on page
-// 10 of every Higher booklet 2018-2025, with one title per prescribed novel.
+// 10 of every Higher booklet 2017-2025, with one title per prescribed novel.
 // The titles below are as printed there. These novels are superseded, so the
 // essays sit in the broad Literary bucket (see CURRICULUM_CROSSWALK) with the
 // same curriculum node, italian-2-1, as the 2026 essays.
 const HISTORIC_ESSAY_TITLES = {
+  // 2017's heading prints "lo non ho paura" (a lower-case l); the question
+  // under it on the same page, and page 6, print the title "Io non ho paura".
+  2017: ['Io non ho paura', 'Marcovaldo'],
   2018: ['Bianca come il latte, rossa come il sangue', 'A ciascuno il suo'],
   2019: ['Bianca come il latte, rossa come il sangue', 'A ciascuno il suo'],
   2020: ['Bianca come il latte, rossa come il sangue', 'A ciascuno il suo'],
@@ -351,9 +371,11 @@ const addHistoricEssays = (paper, numbers) => {
   }));
 };
 
-// 2018 lists Section C as one card, 21, so its essays follow as 22 (A) and
-// 23 (B) and no existing card number moves.
-for (const lang of ['ev', 'iv']) addHistoricEssays(italianPaper(2018, 'higher', 'single', lang), ['22', '23']);
+// 2017 and 2018 list Section C as one card, 21, so their essays follow as 22
+// (A) and 23 (B) and no existing card number moves.
+for (const year of [2017, 2018]) {
+  for (const lang of ['ev', 'iv']) addHistoricEssays(italianPaper(year, 'higher', 'single', lang), ['22', '23']);
+}
 
 // The classic 2019-2025 answer maps omit the essay and the complete writing
 // section. These card boundaries were checked against each official SEC
@@ -834,9 +856,10 @@ const runtime = {
   groups: Object.entries(reference.variants).map(([level, variant]) => [
     level === 'higher' ? 'h' : 'o',
     variant.label,
-    variant.topics.map(topic => topicIndex.get(topic.id)),
+    [...variant.topics, ...(level === 'higher' ? [EARLIER_SET_TEXTS_TOPIC] : [])]
+      .map(topic => runtimeTopicIndex.get(topic.id)),
   ]),
-  topics: referenceTopics.map(topic => [
+  topics: runtimeTopics.map(topic => [
     topic.id,
     topic.label,
     topic.sourcePath,

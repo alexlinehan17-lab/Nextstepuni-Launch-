@@ -12,6 +12,7 @@
  */
 import spanishAtlas from '../markbank/authoring/spanish-atlas.json';
 import japaneseAtlas from '../markbank/authoring/japanese-atlas.json';
+import italianAtlas from '../markbank/authoring/italian-atlas.json';
 import physicalEducationTasks from '../../data/paperTrail/physicalEducationTasks.json';
 import accountingAuthored from '../../components/MarkBank/cards/accounting/authored.json';
 import agsciRuntime from '../../data/examTopics/agricultural-science-question-runtime.json';
@@ -44,6 +45,7 @@ const economicsReviews = import.meta.glob('../markbank/authoring/reviews/economi
 
 const spanish = (spanishAtlas as { cards: Record<string, { fileid: string; n: string }> }).cards;
 const japanese = (japaneseAtlas as { cards: Record<string, { fileid: string; n: string | null }> }).cards;
+const italian = (italianAtlas as { cards: Record<string, { fileid: string; n: string | null }> }).cards;
 const peByCard = new Map((physicalEducationTasks as Array<{ cardId: string; fileid: string; n: string }>).map(t => [t.cardId, t]));
 const accByCard = new Map(((accountingAuthored as { cards: Json[] }).cards).map(c => [String(c.id), c]));
 const agsciByCard = new Map(((agsciRuntime as { markBankCards: Json[] }).markBankCards).map(r => [String(r.cardId), r]));
@@ -123,7 +125,14 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
       return { fileid: pdf(r.atlas.fileid), cands: [r.atlas.n], cls: 'join', extraPlacements: r.atlasPlacements ?? [] };
     }
     case 'french': {
-      const t = frenchByCard.get(c.id); if (!t) return { fail: 'no-join-entry', cls: 'join' };
+      const t = frenchByCard.get(c.id);
+      if (!t) {
+        // A whole-question card the reviewed-task join does not list (Ordinary Section B Q1(a), the letter gap-fill,
+        // 2021 and 2023-2025): the Atlas lists the question itself as B1A, over its gap rows.
+        const m = /\bSection ([AB]) Q(\d+)\(([a-z])\)$/.exec(ref);
+        if (!m) return { fail: 'no-join-entry', cls: 'join' };
+        return { fileid: fid, cands: [`${m[1]}${m[2]}${m[3].toUpperCase()}`], cls: 'inferred' };
+      }
       return { fileid: pdf(t.fileid), cands: [String(t.n)], cls: 'join', extraCredit: t.parent && t.parent !== t.n ? [String(t.parent)] : [] };
     }
     case 'irish': {
@@ -190,9 +199,42 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
       const e = japanese[c.id];
       return e?.n ? { fileid: e.fileid, cands: [e.n], cls: 'join' } : { fail: e ? 'no-atlas-question' : 'no-join-entry', cls: 'join' };
     }
-    case 'italian':
-      // The Atlas numbers these papers straight through; card citations restart in each section. No join yet.
-      return { fail: 'no-address-rule', cls: 'none' };
+    case 'italian': {
+      // The Atlas numbers each Italian paper straight through by section: a committed join, like Japanese.
+      const e = italian[c.id];
+      return e?.n ? { fileid: e.fileid, cands: [e.n], cls: 'join' } : { fail: e ? 'no-atlas-question' : 'no-join-entry', cls: 'join' };
+    }
+    case 'bulgarian': case 'croatian': case 'czech': case 'danish': case 'dutch': case 'estonian': case 'finnish':
+    case 'hungarian': case 'latvian': case 'maltese': case 'modern-greek': case 'romanian': case 'slovakian':
+    case 'slovenian': case 'swedish': case 'ukrainian': {
+      // The Atlas lists only Part I (Q1-Q6) for these sixteen languages: a Section II or III card restarts at Q1 and
+      // must not land on Part I's question (Modern Greek prints its sections as 1, 2, 3). Unlinked until the
+      // small-languages lane adds the Part II/III rows and its section-qualified rule (coordinator, 20 Nov); listed
+      // with that reason in test/fixtures/atlasModelRuledMisses.json.
+      if (/\bSection (?:II|III|2|3)\b/.test(ref)) return { fail: 'no-atlas-question', cls: 'inferred' };
+      const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
+    }
+    case 'polish': case 'portuguese': {
+      // A listening card cites "Section L<A-E> Q<n>" and carries the listening booklet's file id (…LPA00…, build-deck's
+      // resolver, queue 3); the Atlas lists that booklet one row per part, A to E. The card's own Q<n> numbers the
+      // question inside its part, so it never addresses the booklet's rows.
+      const l = /\bSection L([A-E])\b/.exec(ref);
+      if (l) return { fileid: fid, cands: [String('ABCDE'.indexOf(l[1]) + 1)], cls: 'inferred' };
+      // The old Portuguese paper (2010-2021): Section I's questions are Atlas 1-6, then Section II (the commentary) is
+      // Atlas 7 and Section III (the discursive essay) Atlas 8; their own Q<n> restarts at 1 (coordinator, 20 Nov).
+      const later = c.subjectId === 'portuguese' && c.year <= 2021 ? /\bSection (II|III)\b/.exec(ref) : null;
+      if (later) return { fileid: fid, cands: [later[1] === 'II' ? '7' : '8'], cls: 'inferred' };
+      // The Polish paper to 2021: the Atlas lists it by part. 2010-2020: Część I, II, III (two Część III rows in some
+      // years, one per essay title); 2021: Section I's six questions, then Część II as row 7. A card's own Q<n> restarts
+      // in every section, so it addresses its part's row, never Section I's question or part of the same number.
+      const part = c.subjectId === 'polish' && c.year <= 2021 ? /\bSection (I{1,3})\b/.exec(ref)?.[1] : undefined;
+      if (part && c.year === 2021 && part !== 'I') return { fileid: fid, cands: ['7'], cls: 'inferred' };
+      if (part && c.year <= 2020) {
+        const cands = part === 'I' ? ['1'] : part === 'II' ? ['2'] : qnum(ref) === '2' ? ['4', '3'] : ['3'];
+        return { fileid: fid, cands, cls: 'inferred' };
+      }
+      const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
+    }
     default: {
       void atlas;
       const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
