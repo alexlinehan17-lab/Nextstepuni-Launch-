@@ -168,6 +168,16 @@ READING_OPTIONS = {
         'claimMax': 2, 'perOption': 2,
         'options': ['Stimolando', 'catturando', 'monitorando', 'osservando', 'apportando'],
         'note': 'Two of 4 marks: Stimolando/catturando/monitorando/osservando/apportando (2 marks each)'},
+    # 2015 Higher B1 2(a) "trovate sei parole che si riferiscono alla casa":
+    # "Six of 6 marks (1+1+1+1+1+1)" over seven words on one line, set apart
+    # by dashes, any six of the seven.
+    (2015, 'hl', 'B1', 2, 'a'): {
+        'claimMax': 6, 'perOption': 1,
+        'options': ['Piano (di sopra)', 'salotto', 'stanza', 'tappezzerie', 'tavolino', 'caminetto', 'mensola'],
+        'check': ['Six of 6 marks (1+1+1+1+1+1)',
+                  'Piano (di sopra) – salotto- stanza- tappezzerie- tavolino- caminetto- mensola'],
+        'contextNote': ('The scheme prints “Six of 6 marks (1+1+1+1+1+1)” over “Piano (di sopra) – salotto- '
+                        'stanza- tappezzerie- tavolino- caminetto- mensola”, any six of the seven.')},
     # 2016 Higher B2B 1(b) "Trovate quattro parole che si riferiscono al mondo
     # della natura": "4 marks (1+1+1+1)" over six words on one line, and a
     # seventh on the next that earns nothing.
@@ -217,6 +227,49 @@ def options_card(P, S, year, level, section, item, letter, cards):
 # Cards whose rows the reader cannot settle, set here from the printed lines
 # (each piece asserted in the scheme): the review of 20 Nov.
 READING_ROWS = {
+    # 2015 Higher A Q5 "Any four of 20 marks (5+5+5+5)": the scheme prints its
+    # points under two headings, "Librerie da spiaggia" and (after a page
+    # break) "Libri in soccorso", and the paper heads two of its four answer
+    # lines with each. The paper prints the headings on the answer lines, not
+    # in the question, so the reader could not confirm them, and welded the
+    # second onto the answer above it.
+    (2015, 'hl', 'A', 5, None): {
+        'tariff': 'fixed',
+        'rows': [{'id': 'r-1', 'kind': 'anyN', 'marks': None,
+                  'verbatim': 'Librerie da spiaggia — the answers the scheme accepts',
+                  'group': {'claimMax': 2, 'perOption': 5, 'options': [
+                      'This project was founded in 2013 in an experimental manner',
+                      'It became more and more widespread, 20 at the beginning, 50 last year and they expect to '
+                      'be 100 in 2015',
+                      'The project started in Campania but will now be in Ravenna, Tuscany and Sicily in the area '
+                      'of Siracusa',
+                      'The project is run by volunteers and the “librerie” are self-managed',
+                      'This project is expected to run for 10 years',
+                      'This project will include book launches, meetings with the writers',
+                      'The network of the librerie da spiaggia will be advertised on the Legambiente Blu Guide',
+                      'Tourist won’t need to pack books in their case as they’ll be able to find books in the '
+                      '“librerie da spiaggia”/ Tourists can borrow books anonymously and for free, they can read '
+                      'those books while they are at the beach and they can bring them back when they are '
+                      'leaving']},
+                  'contextNote': ('The scheme prints these answers under the heading “Librerie da spiaggia”, and '
+                                  'the paper heads two of its four answer lines with it. The scheme also pays '
+                                  'part marks for a shorter answer: “The service is free of charge” 2 marks.')},
+                 {'id': 'r-2', 'kind': 'anyN', 'marks': None,
+                  'verbatim': 'Libri in soccorso — the answers the scheme accepts',
+                  'group': {'claimMax': 2, 'perOption': 5, 'options': [
+                      'Pupils of primary schools and middle school have donated books to the cardiology ward and '
+                      'the paediatrics ward/hospital',
+                      'At the moment there are 21 libri in soccorso but they are hoping that this project can get '
+                      'bigger and bigger',
+                      'This project makes the patients’ stay in the hospital more pleasant',
+                      'With this project students regained confidence in the institutions']},
+                  'contextNote': ('The scheme prints these answers under the heading “Libri in soccorso”, and the '
+                                  'paper heads two of its four answer lines with it. The scheme also pays part '
+                                  'marks for a shorter answer: “It’s a project Pasquale C cares a lot for” 3 '
+                                  'marks; “Hospitals are getting involved” 3 marks.')}],
+        'check': ['5. Any four of 20 marks (5+5+5+5)', 'Librerie da spiaggia', 'Libri in soccorso',
+                  'The service is free of charge 2 marks', 'It’s a project Pasquale C cares a lot for 3marks',
+                  'Hospitals are getting involved 3 marks']},
     # 2025 Ordinary A2 Q5 "5 marks (5x1) (Any five of eight elements)" over
     # one printed sentence: the scheme does not list the eight elements, so
     # the five marks are judged against the sentence.
@@ -342,6 +395,11 @@ NOTE_TO_OPTION = {
 
 def _note_fixes(cards, year, level):
     import re as _re
+    for (y, lvl, _section, _item, _letter), o in REMAINDER_ASKS.items():
+        card = next((c for c in cards if c['id'] == o['card']), None) if (y, lvl) == (year, level) else None
+        if card is None:
+            continue
+        card['rows'][0]['contextNote'] = (card['rows'][0].get('contextNote', '') + ' ' + o['note']).strip()
     for cid, (option, sentence, pieces) in NOTE_TO_OPTION.items():
         card = next((c for c in cards if c['id'] == cid), None)
         if card is None:
@@ -431,6 +489,53 @@ def _split_parts(S, year, level):
             for a in asks:
                 if a.fault and a.fault.startswith(f'section {section} prices its items'):
                     a.fault = None
+
+
+# An ask the scheme prints with no tariff of its own, in a section whose other
+# asks print theirs: it takes the section's printed total less theirs
+# (CARD-STANDARD 10i, clarification 20 Nov). 2015 Higher A 3(a) prints "3 (a)"
+# alone, then "I bambini ... dei libri 3 marks" over "È un progetto che
+# prevede ... cardiologia 2 marks" (its 5 marks, 60 less the 55 the other asks
+# print, in two pieces), then three more lines at 2 marks each. The scheme does
+# not say which piece those three stand for, so they are quoted, not offered.
+REMAINDER_ASKS = {
+    (2015, 'hl', 'A', 3, 'a'): {
+        'card': 'it-2015-hl-a-3-a',
+        'note': ('The scheme prints no tariff for 3(a): its 5 marks are what Section A prints (60) less what '
+                 'its other questions print (55). The scheme also prints, each at 2 marks: “Un progetto al '
+                 'quale Pasquale Colella è molto legato 2 marks”; “Un progetto che coinvolge gli ospedali 2 '
+                 'marks”; “Hanno donato dei libri/I ragazzi - le persone hanno donato i libri 2marks”.'),
+        'check': ['Un progetto al quale Pasquale Colella è molto legato 2 marks',
+                  'Un progetto che coinvolge gli ospedali 2 marks',
+                  'Hanno donato dei libri/I ragazzi - le persone hanno donato i libri 2marks']},
+}
+
+
+def _remainder_asks(S, year, level):
+    import copy
+    for (y, lvl, section, item, letter), o in REMAINDER_ASKS.items():
+        if (y, lvl) != (year, level):
+            continue
+        ask = next(a for a in S.asks if (a.section, a.item, a.letter) == (section, item, letter))
+        p = ask.parts[0]
+        others = sum(a.total for a in S.asks if a.section == section and a is not ask)
+        remainder = S.section_totals[section] - others
+        text, marks = p.rungs[0]
+        assert len(ask.parts) == 1 and p.total + marks == remainder, (section, item, p.total, p.rungs, remainder)
+        it_writing.Scheme(year, level).check(*o['check'])
+        q = copy.copy(p)
+        q.total, q.split, q.claim, q.directive = marks, None, None, None
+        q.stated, q.answers, q.rungs, q.notation = text, [text], [], f'{marks} marks'
+        q.seq = q.lead = q.groups = None
+        q.notes = []
+        p.rungs, p.rung_after = [], []
+        ask.parts = [p, q]
+        ask.total = remainder
+        asks = [a for a in S.asks if a.section == section]
+        assert sum(a.total for a in asks) == S.section_totals.get(section), section
+        for a in asks:
+            if a.fault and a.fault.startswith(f'section {section} prices its items'):
+                a.fault = None
 
 
 # The card each SEC misprint repaired in it_scheme.MISPRINTS touches: the card
@@ -576,6 +681,7 @@ def sitting(year, level):
     S = ItScheme(year, level)
     _unweld(S, year, level)
     _split_parts(S, year, level)
+    _remainder_asks(S, year, level)
     cards, refused = [], []
 
     def refuse(reason, ref, evidence=''):

@@ -124,6 +124,15 @@ DIALOGUE = re.compile(r'^Dialog(?:ue|o)\s+(\d)\b\s*(.*)$', re.I)
 NUM_MARK = re.compile(r'^(\d{1,2})\s*\.\s*(?:\(\s*([a-h])\s*\)\s*)?(.*)$', re.S)
 LETTER_MARK = re.compile(r'^\(\s*([a-h])\s*\)\s*(.*)$', re.S)
 MATCH_MARK = re.compile(r'^([a-h])\s*\)\s*(.*)$', re.S)
+# A shorter answer the scheme labels as one: "(partial answer 3 marks)".
+PARTIAL = re.compile(r'^(?:[•●▪■]\s*)?(.*\S)\s*\(\s*partial\s+answer\s+(\d{1,2})\s*marks?\s*\)\s*$', re.I)
+# A tariff on a line of its own: 2015 Higher B1 prints "6 marks (3+3)" under
+# the passage's title, above "1. (a)", as the first ask's tariff.
+BARE_TARIFF = re.compile(r'^\d{1,3}\s*marks?\s*(?:\(\s*[\d\s+xX×]+\s*\))?\s*$', re.I)
+# The same marker with no stop after the number, which 2015 Higher prints:
+# "3 (a)", "2 (a) Six of 6 marks", "1(a) 8 marks", "4 (a) Che non era
+# cambiato niente". Only a number followed directly by a bracketed letter.
+NUM_LETTER_MARK = re.compile(r'^(\d{1,2})\s*\(\s*([a-h])\s*\)\s*(.*)$', re.S)
 
 # The tariff, wherever in the block it is first printed. The split may be a sum
 # ("(3+3+3)"), a product ("(8x2 marks)") or absent.
@@ -133,15 +142,16 @@ TARIFF = re.compile(
 # How many answers the scheme says it wants. It says so in words, never in
 # digits, and always before the tariff: "Any two of", "Three of:", "One of",
 # "Any three actions of the following", "Any one of the following two".
-COUNT_WORD = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}
+# Up to eight: 2015 Higher B1 2(a) prints "Six of 6 marks (1+1+1+1+1+1)".
+COUNT_WORD = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7, 'eight': 8}
 # A directive printed WITH the split beside it: "Three of (5+5+5+5)".
 DIRECTIVE_SPLIT = re.compile(
-    r'^(?:any\s+)?(one|two|three|four|five)\s+of\s*:?\s*'
+    r'^(?:any\s+)?(one|two|three|four|five|six|seven|eight)\s+of\s*:?\s*'
     r'\(\s*(\d{1,2}(?:\s*\+\s*\d{1,2})+)\s*\)\s*$', re.I)
 DIRECTIVE_PREFIX = re.compile(
-    r'^(?:any\s+)?(one|two|three|four|five)\s+of\s*:\s*', re.I)
+    r'^(?:any\s+)?(one|two|three|four|five|six|seven|eight)\s+of\s*:\s*', re.I)
 DIRECTIVE = re.compile(
-    r'^(?:any\s+)?(one|two|three|four|five)\b[a-z\s’\']*\bof\b'
+    r'^(?:any\s+)?(one|two|three|four|five|six|seven|eight)\b[a-z\s’\']*\bof\b'
     r'(?:\s+the\s+(?:following|folloiwing)(?:\s+two)?)?\s*:?\s*$', re.I)
 
 # The row of tildes Higher prints between the full answer and the shorter forms
@@ -215,10 +225,10 @@ INSTRUCTION = re.compile(r'\b(?:points?|elements?)\s+(?:is|are)\s+required\b'
                          r'|^maximum\s+of\s+\d+\s+marks?\b', re.I)
 # The paper's instruction echoed on the scheme's head line: "Give four
 # details", "One point for Nicole one point for Aurora", "Details: Two of:".
-ECHO = re.compile(r'^give\s+(?:one|two|three|four|five)\b|\bpoints?\s+for\b'
-                  r'|\b(?:one|two|three|four|five)\s+of\s*[.:]?\s*$', re.I)
+ECHO = re.compile(r'^give\s+(?:one|two|three|four|five|six|seven|eight)\b|\bpoints?\s+for\b'
+                  r'|\b(?:one|two|three|four|five|six|seven|eight)\s+of\s*[.:]?\s*$', re.I)
 # A count printed before the first answer on the head line: "One of Chef/cook".
-LEAD_COUNT = re.compile(r'^(?:any\s+)?(?:one|two|three|four|five)\s+of\b\s*:?\s*', re.I)
+LEAD_COUNT = re.compile(r'^(?:any\s+)?(?:one|two|three|four|five|six|seven|eight)\s+of\b\s*:?\s*', re.I)
 # A condition the scheme prints after one answer: "(2 elements required)".
 REQUIRED = re.compile(r'\s*\(\s*(?:\d|one|two|three|four)\s+elements?\s+required\s*\)\s*$', re.I)
 # Characters the extraction leaves where the scheme printed a tick or a cross.
@@ -231,7 +241,7 @@ ASIDE = re.compile(r'^\(.*\)\.?$|^if\b|^\d+\s+(?:to\s+\d+\s+)?elements?\b', re.I
 # videos 1 mark)", "Temperature 3 mark)".
 # A heading that prices its own points: 2025 Higher A Q5 prints "Etta Polico:
 # Any two of 5 marks (3+2)" inside its twenty marks.
-PRICED_HEAD = re.compile(r'^([^:]{2,40}):\s*(?:any\s+)?(one|two|three|four|five)\s+of\s*:?\s*'
+PRICED_HEAD = re.compile(r'^([^:]{2,40}):\s*(?:any\s+)?(one|two|three|four|five|six|seven|eight)\s+of\s*:?\s*'
                          r'(\d{1,2})\s*marks?\s*\(\s*(\d{1,2}(?:\s*\+\s*\d{1,2})+)\s*\)\s*$', re.I)
 CLOSED_RUNG = re.compile(r'^\(?(.*?\S)\s*(\d{1,2})\s*marks?\s*\)\s*$', re.I)
 NOTE = re.compile(
@@ -584,7 +594,7 @@ class ItScheme:
             s = self.lines[i].strip()
             if not s or PAGE.match(s):
                 continue
-            m = NUM_MARK.match(s)
+            m = NUM_MARK.match(s) or NUM_LETTER_MARK.match(s)
             if m:
                 item = int(m.group(1))
                 heads.append((i, item, m.group(2), m.group(3)))
@@ -618,6 +628,13 @@ class ItScheme:
             blocks.append([i, item, letter,
                            ([rest] if rest.strip() else [])
                            + [l.strip() for l in self.lines[i + 1:stop]]])
+        if heads and not TARIFF.search(heads[0][3] or ''):
+            # The first ask's tariff printed ABOVE its marker, on a line of its
+            # own after the passage's title (2015 Higher B1).
+            above = [self.lines[k].strip() for k in range(start, heads[0][0])
+                     if BARE_TARIFF.match(self.lines[k].strip())]
+            if len(above) == 1:
+                blocks[0][3] = above + blocks[0][3]
         blocks = _transplant(blocks)
         for i, item, letter, lines in blocks:
             ask = self._parse(token, unit, item, letter, i, lines, section_split)
@@ -764,6 +781,15 @@ class ItScheme:
             if (m2 and parts[-1].stated and m2.end() >= len(t.rstrip())
                     and int(m2.group(1)) >= (parts[-1].split or [parts[-1].total])[0]):
                 parts.append(_open_part(t[:m2.start()].strip(), m2))
+                continue
+            pm = PARTIAL.match(t)
+            if pm:
+                # "• Andrea believed that he didn't look like his brother at
+                # all (partial answer 3 marks)" (2015 Higher B1 Q5) is a
+                # shorter answer, bullet or no bullet.
+                parts[-1].rungs.append((' '.join(pm.group(1).split()), int(pm.group(2))))
+                parts[-1].rung_after = (parts[-1].rung_after or []) + [
+                    parts[-1].answers[-1] if parts[-1].answers else None]
                 continue
             # The bullet is KEPT here and stripped in _settle, which needs it:
             # an unbulleted line inside a bulleted list is a heading, not an
@@ -1208,7 +1234,7 @@ def confirm_headings(part, question):
     # text as a whole From the passage 20 marks"), or an instruction only.
     if part.lead and not part.stem and not re.search(r'[^\W\d_]', part.lead):
         part.lead = None        # "6. (a) . 2 marks": nothing printed but the stop
-    if part.lead and not part.stem and re.match(r'^(?:one|two|three|four|five)\s+required\b', part.lead, re.I):
+    if part.lead and not part.stem and re.match(r'^(?:one|two|three|four|five|six|seven|eight)\s+required\b', part.lead, re.I):
         part.lead = None        # "4. Two required 4 marks (3+1)": the count, read from the split
     lead_restored = False
     if part.lead and not part.stem:
