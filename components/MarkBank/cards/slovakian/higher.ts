@@ -41,8 +41,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: vnímať svet ako gombičku (odsek 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "cítiť sa tak, že všetko môžeme, všetko je ľahké a zvládnuteľné", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "cítiť sa tak, že všetko môžeme, všetko je ľahké a zvládnuteľné", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -54,8 +65,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: hltanie kníh (odsek 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "neprestajne čítať veľa kníh s veľkým záujmom", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "neprestajne čítať veľa kníh s veľkým záujmom", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -67,8 +89,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: kutica (odsek 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "malá podkrovná izbička, kde nie je dostatočné pohodlie", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "malá podkrovná izbička, kde nie je dostatočné pohodlie", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -80,8 +113,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: zažral som sa (odsek 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "robiť niečo s veľkou vášňou", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "robiť niečo s veľkou vášňou", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -93,8 +137,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: s ťažkým srdcom (odsek 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "urobiť niečo veľmi nerád napriek svojej vôli", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "urobiť niečo veľmi nerád napriek svojej vôli", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -106,8 +161,19 @@ export const CARDS: SecCard[] = [
     questionText: "Prečo použil rozprávač v texte výraz „našťastie“? (odsek 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ako dospelý je teraz rád, že sa z neho nestal zlodej, že toto detské dobrodružstvo zostalo len úsmevnou epizódou v jeho živote a že sa teraz živí poctivo ako spisovateľ.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ako dospelý je teraz rád, že sa z neho nestal zlodej, že toto detské dobrodružstvo zostalo len úsmevnou epizódou v jeho živote a že sa teraz živí poctivo ako spisovateľ.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -119,8 +185,19 @@ export const CARDS: SecCard[] = [
     questionText: "„Keď má človek desať rokov, vidí všetko nejako ináč.“ Vysvetlite podľa textu, prečo to autor tvrdí. (odsek 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pohľad desaťročného chlapca na okolitý svet je ešte naivný, všetko ho zaujíma, láka, bez toho, aby si uvedomoval možné riziká. Chce skúsiť všetko, živí v sebe dobrodružstvo a nepozná hranice. Ani ich nechce spoznať, veď svet je preňho ako gombička.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Pohľad desaťročného chlapca na okolitý svet je ešte naivný, všetko ho zaujíma, láka, bez toho, aby si uvedomoval možné riziká. Chce skúsiť všetko, živí v sebe dobrodružstvo a nepozná hranice. Ani ich nechce spoznať, veď svet je preňho ako gombička.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -132,8 +209,19 @@ export const CARDS: SecCard[] = [
     questionText: "„Človeka však vždy nepoháňa len dobro.“ Podľa vás je hnacou silou pre autora textu dobro alebo aj niečo iné? (odseky 3 – 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Chce napodobniť svoje vzory - stať sa maliarom, neskôr sa mu zapáčil život bohatých ľudí. Vie, že život v chudobe nie je príjemný, preto nechce byť chudobný. S kamarátom chce ukradnúť obrazy zo školy aj keď vie, že je to zločin. Pri krádeži mu ide viac o zážitok z dobrodružstva ako o obrazy. Je zvedavý, túži po veľkých zážitkoch, poháňa ho túžba po dobrodružstve, sláve, bohatstve a príjemnom luxusnom živote aj za cenu krádeže.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Chce napodobniť svoje vzory - stať sa maliarom, neskôr sa mu zapáčil život bohatých ľudí. Vie, že život v chudobe nie je príjemný, preto nechce byť chudobný. S kamarátom chce ukradnúť obrazy zo školy aj keď vie, že je to zločin. Pri krádeži mu ide viac o zážitok z dobrodružstva ako o obrazy. Je zvedavý, túži po veľkých zážitkoch, poháňa ho túžba po dobrodružstve, sláve, bohatstve a príjemnom luxusnom živote aj za cenu krádeže.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -145,8 +233,19 @@ export const CARDS: SecCard[] = [
     questionText: "„Avšak čoskoro sa realita konfrontovala s mojím snom.“ Ako sa podľa textu odohrala táto konfrontácia v autorovom príbehu?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Chlapci sa pri krádeži obrazov cítili ako v sne, mohli si všetko beztrestne dovoliť. Do reality ich vrátila banálna vec, obrazy sa nedali ukradnúť, lebo sa nezmestili cez okno na záchode. Pekný sen o zbohatnutí sa rozplynul. Autor túžil po niečom, čo nemohol dosiahnuť. Uvedomil si, že nie všetko sa vyvíja podľa jeho predstáv, že nemôže mať vždy všetko, po čom túži. Živí sa umením, ale zostal chudobný.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Chlapci sa pri krádeži obrazov cítili ako v sne, mohli si všetko beztrestne dovoliť. Do reality ich vrátila banálna vec, obrazy sa nedali ukradnúť, lebo sa nezmestili cez okno na záchode. Pekný sen o zbohatnutí sa rozplynul. Autor túžil po niečom, čo nemohol dosiahnuť. Uvedomil si, že nie všetko sa vyvíja podľa jeho predstáv, že nemôže mať vždy všetko, po čom túži. Živí sa umením, ale zostal chudobný.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -156,9 +255,76 @@ export const CARDS: SecCard[] = [
     id: "slk-2010-hl-i-6", topicId: "slovakian-0-1", conceptId: "dopi-odstavec-ktorom-ponuknete-vysvetlenie-pre",
     section: "I", questionRef: "2010 HL Section I Q6",
     questionText: "Dopíšte odstavec, v ktorom ponúknete vysvetlenie, prečo autor pripojil na záver: „Keď je na Slovensku Deň učiteľov, spomeniem si pri tejto príležitosti na svojho nezabudnuteľného učiteľa výtvarnej výchovy Štefana Osuského.“",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Bol pre nás vzorom, vedel krásne maľovať On nám ako prvý ukázal perspektívu na obrazoch Učil nás chápať a milovať výtvarné umenie Bol trpezlivý na hodinách, mal dobrý vzťah k žiakom Vyzdobil chodby školy reprodukciami slávnych obrazov Vodil svojich žiakov na návštevy galérií Naučil nás, že úlohou umenia je robiť človeka lepším Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 % 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Bol pre nás vzorom, vedel krásne maľovať", marks: null, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-2", kind: "point", verbatim: "On nám ako prvý ukázal perspektívu na obrazoch", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Učil nás chápať a milovať výtvarné umenie", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Bol trpezlivý na hodinách, mal dobrý vzťah k žiakom", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Vyzdobil chodby školy reprodukciami slávnych obrazov", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Vodil svojich žiakov na návštevy galérií", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Naučil nás, že úlohou umenia je robiť človeka lepším", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2010 Higher Level — © State Examinations Commission.",
+    id: "slk-2010-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-najmenej-100-slov-temu",
+    section: "II", questionRef: "2010 HL Section II Q1",
+    questionText: "Napíšte komentár (najmenej 100 slov) na tému: Takýto druh zločinu mi pripadal dôstojný muža Komentujte, prečo prišiel autor k takémuto záveru.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Komentár obsahujúci najmenej 100 slov, ktorý jasne preukáže porozumenie textu v podstatných bodoch.", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”. The scheme prints, as examples, not a checklist: “autor obdivuje umelcov, ale nemá dosť talentu, aby sa stal maliarom”; “obdivuje falšovateľov, lebo rozširujú umenie a dobre si tým zarábajú”; “vedú švihácky život”; “falšovanie a krádež umeleckých predmetov nepovažuje za taký vážny zločin ako vraždu, nie je v tom násilie”; “navyše zostáva v umeleckej brandži”; “páči sa mu zločin, v ktorom sa spája láska k umeniu, bohatstvo a dobrodružstvo”; “imponuje mu najmä odvahu a inteligenciu falšovateľa”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2010 Higher Level — © State Examinations Commission.",
+    id: "slk-2010-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-alebo-nie-pri-livy-ivot",
+    section: "III", questionRef: "2010 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Čím je alebo nie je príťažlivý život slávnych ľudí",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2010 Higher Level — © State Examinations Commission.",
+    id: "slk-2010-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-nikto-nie-ostrovom-samym-pre",
+    section: "III", questionRef: "2010 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: „Nikto nie je ostrovom samým pre seba“ (John Donne)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
     ],
   } as SecCard,
   {
@@ -171,8 +337,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: rastú ako huby po daždi (odsek 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "rýchlo sa rozmnožujú", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "rýchlo sa rozmnožujú", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -184,8 +361,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: zabíjať čas (odsek 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "nezmyselne tráviť dlhé hodiny", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "nezmyselne tráviť dlhé hodiny", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -197,8 +385,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: čierna stavba (odsek 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "objekt postavený bez oficiálneho povolenia", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "objekt postavený bez oficiálneho povolenia", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -210,8 +409,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: diskutabilné (odsek 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "rozporuplné, nejednoznačné", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "rozporuplné, nejednoznačné", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -223,8 +433,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: ísť ruka v ruke s niečím (odsek 8)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "keď niečo s niečím súvisí a nevieme si to predstaviť jedno bez druhého", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "keď niečo s niečím súvisí a nevieme si to predstaviť jedno bez druhého", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -236,8 +457,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami, čo znamená výraz „sila peňazí nepozná hraníc“. (odsek 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Autor hovorí o moci peňazí, ktoré môžu takmer všetko, všetko za ne sa dá kúpiť, získať alebo dosiahnuť. Tento výraz vystihuje podstatu korupcie.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Autor hovorí o moci peňazí, ktoré môžu takmer všetko, všetko za ne sa dá kúpiť, získať alebo dosiahnuť. Tento výraz vystihuje podstatu korupcie.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -249,8 +481,19 @@ export const CARDS: SecCard[] = [
     questionText: "Ako neefektívna doprava vytvára finančné straty? (odsek 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Cestovaním v preplnených uliciach a hľadaním miest na parkovanie manažéri zbytočne strácajú čas, ktorý by mohli využiť efektívne, napríklad na získavanie ďalších kontraktov, a tým prichádzajú o zisky.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Cestovaním v preplnených uliciach a hľadaním miest na parkovanie manažéri zbytočne strácajú čas, ktorý by mohli využiť efektívne, napríklad na získavanie ďalších kontraktov, a tým prichádzajú o zisky.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -262,8 +505,19 @@ export const CARDS: SecCard[] = [
     questionText: "Aké dôsledky má nekoncepčný urbanizmus podľa článku? (odsek 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nekontrolovaná výstavba spôsobuje veľkú zmenu miest i celej krajiny: vyrubujú sa stromy, búrajú sa mnohé cenné historické budovy, necitlivo sa zasahuje aj do chránených prírodných oblastí. To spôsobuje mnohé environmentálne, kultúrne a historické škody.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Nekontrolovaná výstavba spôsobuje veľkú zmenu miest i celej krajiny: vyrubujú sa stromy, búrajú sa mnohé cenné historické budovy, necitlivo sa zasahuje aj do chránených prírodných oblastí. To spôsobuje mnohé environmentálne, kultúrne a historické škody.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -275,8 +529,19 @@ export const CARDS: SecCard[] = [
     questionText: "Ako mestá na Slovensku strácajú svoju tvár?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Stavebný boom negatívne poznačil tvár mnohých miest: zmenšuje sa plocha zelene, pribúdajú nevhodné stavby, ktoré narúšajú architektúru mesta, pretože investori chcú využiť každé miesto.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Stavebný boom negatívne poznačil tvár mnohých miest: zmenšuje sa plocha zelene, pribúdajú nevhodné stavby, ktoré narúšajú architektúru mesta, pretože investori chcú využiť každé miesto.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -288,7 +553,68 @@ export const CARDS: SecCard[] = [
     questionText: "Komentujte výraz o národnej hrdosti, ktorá „sa však nemá prejavovať zapaľovaním vatier, ale...“ (odsek 8)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Národná hrdosť má byť založená na konkrétnych reálnych hodnotách a nie na uctievaní falošných ideí a predstáv. Ľudia môžu byť hrdí napríklad na hospodársky rozvoj svojej krajiny, na úspechy v športe, na etické, kultúrne hodnoty. Tieto hodnoty by sa mali odraziť aj v ich správaní. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Národná hrdosť má byť založená na konkrétnych reálnych hodnotách a nie na uctievaní falošných ideí a predstáv. Ľudia môžu byť hrdí napríklad na hospodársky rozvoj svojej krajiny, na úspechy v športe, na etické, kultúrne hodnoty. Tieto hodnoty by sa mali odraziť aj v ich správaní.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2011 Higher Level — © State Examinations Commission.",
+    id: "slk-2011-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-najmenej-100-slov-temu",
+    section: "II", questionRef: "2011 HL Section II Q1",
+    questionText: "Napíšte komentár (najmenej 100 slov) na tému: Dá sa porušovaním pravidiel dosiahnuť nejaký pozitívny cieľ? Aké môžu byť dôsledky?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Komentár obsahujúci najmenej 100 slov, ktorý jasne preukáže porozumenie textu v podstatných bodoch.", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”. The scheme prints, as examples, not a checklist: “obchádzanie pravidiel, korupcia a arogancia prinášajú morálne a etické škody”; “nedodržiavanie predpisov pri výstavbe negatívne ovplyvní vzhľad miest”; “v mestách bude menej zelene”; “v nepekných mestách ľudia nebudú šťastní”; “paradoxne ignorovaním pravidiel pri výstavbe sa urýchli budovanie nových objektov”; “model agresívneho správania, ktoré má úspech, môže ovplyvniť celú populáciu”; “porušovanie zákonov sa má trestať a nie tolerovať”; “v budúcnosti bude veľmi ťažké naprávať chyby spôsobené takouto nekoncepčnou výstavbou”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2011 Higher Level — © State Examinations Commission.",
+    id: "slk-2011-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-aka-mala-respektive-nemala-krajina",
+    section: "III", questionRef: "2011 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Aká by mala byť, respektíve nemala byť krajina, kde by som prežil spokojný život?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2011 Higher Level — © State Examinations Commission.",
+    id: "slk-2011-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-udia-inou-taki-astni-aki",
+    section: "III", questionRef: "2011 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: „Ľudia sú väčšinou takí šťastní, akí šťasní sa rozhodnú byť.“ Abraham Lincoln (16. prezident USA, 1809 – 1865)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
     ],
   } as SecCard,
   {
@@ -301,8 +627,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: vizionár (odsek 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ten, kto predpovedá, ako bude vyzerať budúcnosť, jasnovidec", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "ten, kto predpovedá, ako bude vyzerať budúcnosť, jasnovidec", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -314,8 +651,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: amatér (odsek 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ten, kto niečo robí len zo záľuby, nie z povolania, opak profesionála", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "ten, kto niečo robí len zo záľuby, nie z povolania, opak profesionála", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -327,8 +675,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: krátkodobý módny výstrelok (odsek 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "výstredná a momentálne obľúbená vec, ale o krátky čas sa na ňu zabudne", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "výstredná a momentálne obľúbená vec, ale o krátky čas sa na ňu zabudne", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -340,8 +699,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: rojko (odsek 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "človek, ktorý o niečom sníva, fantasta", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "človek, ktorý o niečom sníva, fantasta", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -353,8 +723,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: technologický prelom (odsek 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "dôležitý objav alebo vynález, ktorý posunul dopredu poznanie ľudstva, zvrat", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "dôležitý objav alebo vynález, ktorý posunul dopredu poznanie ľudstva, zvrat", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -366,8 +747,19 @@ export const CARDS: SecCard[] = [
     questionText: "Ktoré dve vízie v texte sú podľa vás najzábavnejšie a prečo?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Sú to pesimistické predpovede spred niekoľkých desaťročí, napr. o krátkej existencii áut alebo o nemožnosti rýchlej cesty vlakom kvôli zaduseniu sa cestujúcich – autori týchto predpovedí neodhadli technologický pokrok a použili argumenty, ktoré sa ukázali ako zábavné až detinské. Dnes si už bez týchto dopravných prostriedkov nevieme predstaviť náš život.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Sú to pesimistické predpovede spred niekoľkých desaťročí, napr. o krátkej existencii áut alebo o nemožnosti rýchlej cesty vlakom kvôli zaduseniu sa cestujúcich – autori týchto predpovedí neodhadli technologický pokrok a použili argumenty, ktoré sa ukázali ako zábavné až detinské. Dnes si už bez týchto dopravných prostriedkov nevieme predstaviť náš život.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -379,8 +771,19 @@ export const CARDS: SecCard[] = [
     questionText: "Prečo autor tvrdí, že najoptimistickejšie vízie sú podivné?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Príliš optimistické predpovede z minulosti o našej dobe sa súčasníkom môžu tiež zdať smiešne a čudné – napríklad predpoveď o úplne bezpečných autách, ktoré sa samy vyhnú nebezpečenstvu a ktoré by už mali bežne existovať. V súčasnosti také niečo ešte nepoznáme, dnes vieme, že táto predpoveď bola prehnaná a patrí skôr do sci-fi filmu. Realita je iná.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Príliš optimistické predpovede z minulosti o našej dobe sa súčasníkom môžu tiež zdať smiešne a čudné – napríklad predpoveď o úplne bezpečných autách, ktoré sa samy vyhnú nebezpečenstvu a ktoré by už mali bežne existovať. V súčasnosti také niečo ešte nepoznáme, dnes vieme, že táto predpoveď bola prehnaná a patrí skôr do sci-fi filmu. Realita je iná.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -392,8 +795,19 @@ export const CARDS: SecCard[] = [
     questionText: "Hoci minulosť, prítomnosť a budúcnosť sú rozdielne, existuje medzi nimi akási podobnosť. Napíšte podľa textu, o akú podobnosť ide.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Podobnosť môžeme nájsť v pohľade rôznych generácií na spoločenský a technologický vývoj. Ľudia túžia objavovať nepoznané a tieto svoje očakávania predpovedať, niekedy sa mýlia, pretože ich sny sú príliš ambiciózne, nerealizovateľné, alebo príliš pesimistické, veda a technika zvládli viac, ako si to ľudia dokázali predstaviť. Všetky generácie však svojimi víziami posúvajú dopredu horizont poznania ľudstva.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Podobnosť môžeme nájsť v pohľade rôznych generácií na spoločenský a technologický vývoj. Ľudia túžia objavovať nepoznané a tieto svoje očakávania predpovedať, niekedy sa mýlia, pretože ich sny sú príliš ambiciózne, nerealizovateľné, alebo príliš pesimistické, veda a technika zvládli viac, ako si to ľudia dokázali predstaviť. Všetky generácie však svojimi víziami posúvajú dopredu horizont poznania ľudstva.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -405,8 +819,19 @@ export const CARDS: SecCard[] = [
     questionText: "Autor naznačuje, že nedostatočný pokrok odovzdávaný z jednej generácie na druhú nie je nevyhnutne chybou vizionárov, ide skôr o chybu nasledujúcich generácií. Diskutujte o tomto pohľade autora v kontexte textu.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Podľa autora určité očakávania ľudí smerom do budúcnosti boli opodstatnené a bolo to celkom logické. Napríklad v 60. rokoch 20. storočia, keď človek vstúpil na Mesiac, sa zdalo, že ak vývoj pôjde naďalej takýmto tempom, naozaj o 20 - 30 rokov budú reálne ľudia cestovať do vesmíru na dovolenku. Zdá sa, akoby sa vývoj spomalil. Mnohé vízie sa ukázali príliš náročné na realizáciu či už z pohľadu financií alebo pokroku technológií. Vývoj nejde vždy rovnakým tempom, sú veľké skoky a potom dlhé obdobia, ktoré vyzerajú ako stagnácia. Ak sa má naplniť predpoveď o dovolenkových letoch do vesmíru, dôležitým predpokladom je objavenie nového zdroja energie, ak sa to podarí, vývoj môže prudko akcelerovať. Schopnosť generácií ľudí realizovať vízie závisí aj od ekonomických podmienok vo svete, mnohé regionálne konflikty a nepokoje znižujú šancu koncentrovať všetky prostriedky na vedeckotechnický pokrok.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Podľa autora určité očakávania ľudí smerom do budúcnosti boli opodstatnené a bolo to celkom logické. Napríklad v 60. rokoch 20. storočia, keď človek vstúpil na Mesiac, sa zdalo, že ak vývoj pôjde naďalej takýmto tempom, naozaj o 20 - 30 rokov budú reálne ľudia cestovať do vesmíru na dovolenku. Zdá sa, akoby sa vývoj spomalil. Mnohé vízie sa ukázali príliš náročné na realizáciu či už z pohľadu financií alebo pokroku technológií. Vývoj nejde vždy rovnakým tempom, sú veľké skoky a potom dlhé obdobia, ktoré vyzerajú ako stagnácia. Ak sa má naplniť predpoveď o dovolenkových letoch do vesmíru, dôležitým predpokladom je objavenie nového zdroja energie, ak sa to podarí, vývoj môže prudko akcelerovať. Schopnosť generácií ľudí realizovať vízie závisí aj od ekonomických podmienok vo svete, mnohé regionálne konflikty a nepokoje znižujú šancu koncentrovať všetky prostriedky na vedeckotechnický pokrok.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -418,7 +843,68 @@ export const CARDS: SecCard[] = [
     questionText: "Prečo autor povedal: „ešte nie je koniec sveta a tie lepšie časy nás len čakajú“? Komentujte a uveďte aj váš vlastný pohľad na túto otázku.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vízie podľa autora vznikajú aj preto, aby ľuďom ukazovali cestu do budúcnosti, aby ich potešili a podporovali ich snívanie. Totiž len také vízie, ktoré sa súčasníkom zdajú úplne nepravdepodobné, posúvajú ľudstvo dopredu. Ak by sme si nekládli vyššie ciele, ak by človek nebol neustále konfrontovaný s novými a náročnejšími výzvami, tak by sa jeho pokrok mohol zastaviť. Je to ako v športe, ak nemáte pred sebou stále náročnejšie méty a ciele, začnete stagnovať a váš progres sa zastaví. Nové, často aj nepravdepodobné a nereálne vízie teda otvárajú ľuďom ďalšie horizonty a podporujú v nich nádej na lepšiu budúcnosť. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 % 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Vízie podľa autora vznikajú aj preto, aby ľuďom ukazovali cestu do budúcnosti, aby ich potešili a podporovali ich snívanie. Totiž len také vízie, ktoré sa súčasníkom zdajú úplne nepravdepodobné, posúvajú ľudstvo dopredu. Ak by sme si nekládli vyššie ciele, ak by človek nebol neustále konfrontovaný s novými a náročnejšími výzvami, tak by sa jeho pokrok mohol zastaviť. Je to ako v športe, ak nemáte pred sebou stále náročnejšie méty a ciele, začnete stagnovať a váš progres sa zastaví. Nové, často aj nepravdepodobné a nereálne vízie teda otvárajú ľuďom ďalšie horizonty a podporujú v nich nádej na lepšiu budúcnosť.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2012 Higher Level — © State Examinations Commission.",
+    id: "slk-2012-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-tychto-viet-najmenej-100",
+    section: "II", questionRef: "2012 HL Section II Q1",
+    questionText: "Napíšte komentár týchto viet (najmenej 100 slov): Predstavme si novodobého Nostradama spomínaného autorom v texte, ktorý hovorí: „Vidím obrovskú nástenku, kde stámilióny ľudí budú písať, čo mali na raňajky“ alebo „budú existovať dotykové zariadenia, ktoré budú ľudia hladkať v baroch, len aby sa, preboha, nemuseli rozprávať s kamarátmi.“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Komentár obsahujúci najmenej 100 slov, ktorý jasne preukáže porozumenie textu v podstatných bodoch.", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”. The scheme prints, as examples, not a checklist: “je to obraz našej doby – sociálne siete ako facebook, twitter a iné sú populárne a vytvárajú niekedy iba virtuálne vzťahy”; “ak nie si na sociálnej sieti, nie si nikde”; “cez sociálne siete ľudia medzi sebou komunikujú ľahšie ako v skutočnosti”; “v dnešnom globalizovanom svete je to praktická forma komunikácie”; “na svoje nástenky zverejňujú o sebe rôzne informácie – dôležité, ale aj úplne banálne a nepodstatné, ako napríklad to, čo mali na raňajky”; “zo zmysluplnej komunikácie sa často stáva táranie”; “ľudia majú niekoľko stoviek priateľov v zozname, ale koľko z nich je skutočných priateľov v živote”; “sociálne siete nemôžu nahradiť skutočné vzťahy”; “táto forma umožňuje komunikovať naraz s viacerými ľuďmi”; “dotykové zariadenia sú napríklad mobily, smartphony, tablety”; “na jednej strane je pohodlné telefonovať si s priateľmi kdekoľvek, kedykoľvek”; “ísť za nimi si vyžaduje čas, ale priamy kontakt je základom budovania vzťahu”; “treba nájsť rozumný kompromis”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2012 Higher Level — © State Examinations Commission.",
+    id: "slk-2012-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-udstvo-zavisi-viac-ako-mysli",
+    section: "III", questionRef: "2012 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Ľudstvo závisí viac ako si myslí od svojich snov",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2012 Higher Level — © State Examinations Commission.",
+    id: "slk-2012-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-modernej-spolo-nosti-etko-zamerane",
+    section: "III", questionRef: "2012 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: V našej modernej spoločnosti je všetko zamerané na tu a teraz",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
     ],
   } as SecCard,
   {
@@ -431,8 +917,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: naložiť na plecia (odsek 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "klásť niekomu niečo na plecia – poveriť niekoho nejakou úlohou, mať požiadavky", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "poveriť niekoho nejakou úlohou, mať požiadavky", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -444,8 +941,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: fičia len na jednom jablku (odsek 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "jedia veľmi málo, často len jedno jablko denne", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "jedia veľmi málo, často len jedno jablko denne", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -457,8 +965,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: mučia sa v posilňovni (odsek 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "dobrovoľne podstupujú ťažký fyzický tréning", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "dobrovoľne podstupujú ťažký fyzický tréning", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -470,8 +989,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: kráčať v šľapajach (odsek 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "kráčajú v šľapajach – napodobňujú, nasledujú niekoho d) biť na poplach – upozorniť na vážnosť situácie", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "napodobňujú, nasledujú niekoho", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -483,8 +1013,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite podľa textu, ako vychovávajú ctižiadostiví rodičia svoje deti a vyjadrite na to svoj názor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ctižiadostiví rodičia zaťažujú svoje deti až príliš, vyžadujú od nich, aby boli najlepší a ak to deti nesplnia, sú rodičia sklamaní. Výsledkom takejto výchovy sú príliš ambiciózne deti, ktoré sa často správajú arogantne. Myslím si, že takýto postoj rodičov môže vážne ovplyvniť výchovu detí, ktoré sa môžu stať bezohľadnými a sebeckými ľuďmi.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ctižiadostiví rodičia zaťažujú svoje deti až príliš, vyžadujú od nich, aby boli najlepší a ak to deti nesplnia, sú rodičia sklamaní. Výsledkom takejto výchovy sú príliš ambiciózne deti, ktoré sa často správajú arogantne. Myslím si, že takýto postoj rodičov môže vážne ovplyvniť výchovu detí, ktoré sa môžu stať bezohľadnými a sebeckými ľuďmi.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -496,8 +1037,19 @@ export const CARDS: SecCard[] = [
     questionText: "Porovnajte klady a zápory perfekcionizmu.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kladnou stránkou perfekcionizmu je dôslednosť, precízna a dobre odvodená práca, vyvarovanie sa chýb a tiež starostlivosť o vlastný výzor. Medzi negatíva patrí neustály stres, workoholizmus, pocit nezastupiteľnosti a prehnaná ctižiadostivosť. Ďalej to môže byť aj posadnutosť vlastným telom a z toho vyplývajúce psychické poruchy ako bulímia a anorexia.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kladnou stránkou perfekcionizmu je dôslednosť, precízna a dobre odvodená práca, vyvarovanie sa chýb a tiež starostlivosť o vlastný výzor. Medzi negatíva patrí neustály stres, workoholizmus, pocit nezastupiteľnosti a prehnaná ctižiadostivosť. Ďalej to môže byť aj posadnutosť vlastným telom a z toho vyplývajúce psychické poruchy ako bulímia a anorexia.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -509,8 +1061,19 @@ export const CARDS: SecCard[] = [
     questionText: "Objasnite, ako môže byť podľa autora túžba po fyzickej kráse nebezpečná pre človeka.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Obe pohlavia túžia po dokonalom tele a táto túžba sa môže zmeniť na posadnutosť, keď človek urobí naozaj všetko, aby dosiahol « ideál krásy ». K tomu patrí preháňanie fyzického cvičenia, nesprávne stravovanie až hladovanie, a tak dochádza aj k psychickým poruchám. Takýto « postihnutý » človek sa vyčleňuje zo spoločnosti a z rodiny, stráca priateľov a záujmy.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Obe pohlavia túžia po dokonalom tele a táto túžba sa môže zmeniť na posadnutosť, keď človek urobí naozaj všetko, aby dosiahol « ideál krásy ». K tomu patrí preháňanie fyzického cvičenia, nesprávne stravovanie až hladovanie, a tak dochádza aj k psychickým poruchám. Takýto « postihnutý » človek sa vyčleňuje zo spoločnosti a z rodiny, stráca priateľov a záujmy.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -522,8 +1085,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite myšlienku autora z textu: „Tento pocit však v skutočnosti bytostne chýba a nie je ničím materiálnym nahraditeľný, dá sa len postupne dobudovať vnútornou prácou a autentickými vzťahmi. “",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vzťahy založené na materiálnej odmene a komerčnosti prinášajú emočné problémy najmä dospievajúcej generácii. Jej sebavedomie je často závislé od vonkajších faktorov. Takíto jedinci sú labilní a ľahko ovplyvniteľní rozličnými komerčnými tlakmi. Hodnoty hľadajú v produktoch, ktoré im sľubujú pocit vnútornej slobody a pokoja. Takéto hodnoty sa však nedajú kúpiť alebo ľahko získat, vyžadujú si ich vnútorné prežitie, vytvorenie vlastných hodnôt a plnohodnotných vzťahov medzi ľuďmi.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Vzťahy založené na materiálnej odmene a komerčnosti prinášajú emočné problémy najmä dospievajúcej generácii. Jej sebavedomie je často závislé od vonkajších faktorov. Takíto jedinci sú labilní a ľahko ovplyvniteľní rozličnými komerčnými tlakmi. Hodnoty hľadajú v produktoch, ktoré im sľubujú pocit vnútornej slobody a pokoja. Takéto hodnoty sa však nedajú kúpiť alebo ľahko získat, vyžadujú si ich vnútorné prežitie, vytvorenie vlastných hodnôt a plnohodnotných vzťahov medzi ľuďmi.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -535,7 +1109,92 @@ export const CARDS: SecCard[] = [
     questionText: "Diskutujte o myšlienke z textu: „Hodiny strávené vo fitku, či na bežeckej dráhe, nie sú už dávno slobodnou voľbou cvičenca, ale povinnosťou, ktorú si voči sebe musí splniť.“",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Človek sa môže slobodne zapojiť do rozličných aktivít, aby si upevnil svoje sebavedomie, aby dobre vyzeral, aby sa cítil zdravý. To sa nedá spochybniť, rovnako ani masový charakter cvičení vo fitnescentrách. Robia to milióny ľudí vo svete a nie je na tom nič zlé. Ak sa však táto aktivita vymyká zdravej miere, ak ju človek hnaný vlastnou dokonalosťou preháňa, ide o chorobné prejavy jedinca, ktorý nemá vlastné hodnoty a naháňa sa za chimérou dokonalej krásy. Ak sa mu pohyb a cvičenie stanú dennou potrebou, bez ktorej už nemôže reálne existovať, stáva sa závislý. Častokrát si túto povinnosť musí splniť bez ohľadu na okolie. Ide to na úkor rodiny, priateľov a často aj jeho vlastného zdravia, lebo túžba po dokonalom tele privedie ľudí aj k užívaniu nedovolených podporných prostriedkov – drog. A to je cesta k strate vlastnej osobnosti a hodnôt. Z pôvodne slobodného rozhodnutia stať sa lepším sa človek stáva závislým a neslobodným. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 % 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Človek sa môže slobodne zapojiť do rozličných aktivít, aby si upevnil svoje sebavedomie, aby dobre vyzeral, aby sa cítil zdravý. To sa nedá spochybniť, rovnako ani masový charakter cvičení vo fitnescentrách. Robia to milióny ľudí vo svete a nie je na tom nič zlé. Ak sa však táto aktivita vymyká zdravej miere, ak ju človek hnaný vlastnou dokonalosťou preháňa, ide o chorobné prejavy jedinca, ktorý nemá vlastné hodnoty a naháňa sa za chimérou dokonalej krásy. Ak sa mu pohyb a cvičenie stanú dennou potrebou, bez ktorej už nemôže reálne existovať, stáva sa závislý. Častokrát si túto povinnosť musí splniť bez ohľadu na okolie. Ide to na úkor rodiny, priateľov a často aj jeho vlastného zdravia, lebo túžba po dokonalom tele privedie ľudí aj k užívaniu nedovolených podporných prostriedkov – drog. A to je cesta k strate vlastnej osobnosti a hodnôt. Z pôvodne slobodného rozhodnutia stať sa lepším sa človek stáva závislým a neslobodným.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2013 Higher Level — © State Examinations Commission.",
+    id: "slk-2013-hl-i-1-e", topicId: "slovakian-0-0", conceptId: "poplach-odsek",
+    section: "I", questionRef: "2013 HL Section I Q1(e)",
+    questionText: "Vysvetlite vlastnými slovami výrazy: biť na poplach (odsek 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "upozorniť na vážnosť situácie", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme heads Q1 “(1 x 5 bodov)” and letters this expression “d) biť na poplach”, a second d) after “d) kráčajú v šľapajach”; the paper prints it as e) and prices each expression “(5 × 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2013 Higher Level — © State Examinations Commission.",
+    id: "slk-2013-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-nasledovnej-vety-textu-najmenej",
+    section: "II", questionRef: "2013 HL Section II Q1",
+    questionText: "Napíšte komentár nasledovnej vety z textu (najmenej 100 slov): Na ľuďoch sú častokrát najkrajšie ich chyby.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Komentár obsahujúci najmenej 100 slov, ktorý jasne preukáže porozumenie textu v podstatných bodoch.", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”. The scheme reprints the task as: “Napíšte komentár (najmenej 100 slov) na tému:”. The scheme prints, as examples, not a checklist: “Na ľuďoch sú ľudské aj chyby. Tie ich odlišujú od ostatných živých bytostí a najmä od robotov, počítačov a strojov. Človek vo svojom živote musí čeliť viacerým výzvam a musí zaujať stanovisko v mnohých zložitých situáciách. Častokrát si vyberie zlú cestu, zvolí zlé riešenie a je neúspešný. Prehrá, ale život ho núti ísť ďalej a veľakrát ho to posilní. Ak chyby, ktoré človek robí, nie sú dominantné v jeho živote, a dokáže ich eliminovať, takýto človek je vlastne ľudský, podobný ostatným a preto je nám blízky a sympatický. Často sa nad chybami našich najbližších iba pousmejeme a berieme ich ako samozrejmosť. Vieme, že dedko zabúda, že babka stráca klúče a nevie nájsť v kabelke peňaženku, že mama často hľadá okuliare a otec si mýli tváre ľudí. Ale preto ich dieťa neprestane mať rado, aj keď to niekedy môže liezť na nervy. Ale veď človek bez chýb by nebol ani človekom. Treba ho prijať aký je a veriť, že sa možno raz celkom zbaví niektorých chýb. Ale aké by bolo potom ľudstvo?”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2013 Higher Level — © State Examinations Commission.",
+    id: "slk-2013-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-laska-ziskava-krasou-dokonalos-prejavuje",
+    section: "III", questionRef: "2013 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Láska sa získava krásou a dokonalosťou a prejavuje sa materiálnou odmenou?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2013 Higher Level — © State Examinations Commission.",
+    id: "slk-2013-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-putovanie-svojimi-snami-sladka-cesta",
+    section: "III", questionRef: "2013 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Putovanie za svojimi snami – sladká cesta s horkou príchuťou",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
     ],
   } as SecCard,
   {
@@ -548,8 +1207,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: vyhorení invalidi (odsek 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ľudia bez energie, neschopní ďalej pracovať", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "ľudia bez energie, neschopní ďalej pracovať", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -561,8 +1231,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: žiť v zlatej klietke (odsek 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "žiť v luxuse a byť pritom nešťastný", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "žiť v luxuse a byť pritom nešťastný", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -574,8 +1255,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: spúšťač stresu (odsek 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "záťažová situácia, ktorá spôsobí u človeka stres", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "záťažová situácia, ktorá spôsobí u človeka stres", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -587,8 +1279,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: šibeničný termín (odsek 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "veľmi krátky termín na splnenie úlohy", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "veľmi krátky termín na splnenie úlohy", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -600,8 +1303,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: resilientní ľudia (odsek 7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ľudia odolní voči stresu a schopní znášať vysoké nároky", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "ľudia odolní voči stresu a schopní znášať vysoké nároky", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -613,8 +1327,19 @@ export const CARDS: SecCard[] = [
     questionText: "Ako sa prejavuje podľa článku vyhorenie u človeka?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Niekto pracuje naplno v práci, pričom zanedbáva ostatné oblasti v živote, nemá čas na rodinu, priateľov, šport, je stále fyzicky a psychicky vyčerpaný a vystresovaný až má nakoniec vážne zdravotné problémy a nemôže ďalej pracovať. Aby sa dostal z tohto kruhu, musí sa liečiť a zmeniť životný štýl.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Niekto pracuje naplno v práci, pričom zanedbáva ostatné oblasti v živote, nemá čas na rodinu, priateľov, šport, je stále fyzicky a psychicky vyčerpaný a vystresovaný až má nakoniec vážne zdravotné problémy a nemôže ďalej pracovať. Aby sa dostal z tohto kruhu, musí sa liečiť a zmeniť životný štýl.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -626,8 +1351,19 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu vysvetlite, čo je to „moderný otrokársky systém“.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Moderný „otrokársky systém“ úzko súvisí so súčasnou hospodárskou krízou. Všetci chcú mať zamestnanie a aby si ho udržali alebo postúpili na lepšie platenú pozíciu, sú ochotní pracovať aj 15 hodín denne. Nemajú na výber. Niektoré firmy využívajú túto situáciu a nič neurobia preto, aby sa to zastavilo. Profitujú z toho. Vedia, že zamestnanci sú ochotní pracovať aj viac, ako je to zdravé.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Moderný „otrokársky systém“ úzko súvisí so súčasnou hospodárskou krízou. Všetci chcú mať zamestnanie a aby si ho udržali alebo postúpili na lepšie platenú pozíciu, sú ochotní pracovať aj 15 hodín denne. Nemajú na výber. Niektoré firmy využívajú túto situáciu a nič neurobia preto, aby sa to zastavilo. Profitujú z toho. Vedia, že zamestnanci sú ochotní pracovať aj viac, ako je to zdravé.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -639,8 +1375,19 @@ export const CARDS: SecCard[] = [
     questionText: "Rozveďte, či hrozí druhu homo sapiens1 premena na homo asapiens2.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Homo sapiens sa môže zmeniť svojím životným štýlom na homo asapiens – úspech má ten, kto stihne za čo najkratšiu dobu splniť čo najviac úloh. Tým sa to však nekončí. Potom nasledujú ďalšie úlohy a ďalšie termíny a život takéhoto človeka – homo asapiensa sa začína podobať nezmyselnému behu škrečka v koliesku. Zamestnanci si nemôžu dovoliť spomaliť tempo, lebo konkurencia ich predbehne. Žijú len pre svoju prácu, nepoznajú iné radosti života, nemajú čas. Človek rozumný sa môže stať človekom nerozumným, keď svojím správaním porušuje všetky zaužívané zásady a v snahe všetko stihnúť môže prísť o spôsob rozumnej existencie.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Homo sapiens sa môže zmeniť svojím životným štýlom na homo asapiens – úspech má ten, kto stihne za čo najkratšiu dobu splniť čo najviac úloh. Tým sa to však nekončí. Potom nasledujú ďalšie úlohy a ďalšie termíny a život takéhoto človeka – homo asapiensa sa začína podobať nezmyselnému behu škrečka v koliesku. Zamestnanci si nemôžu dovoliť spomaliť tempo, lebo konkurencia ich predbehne. Žijú len pre svoju prácu, nepoznajú iné radosti života, nemajú čas. Človek rozumný sa môže stať človekom nerozumným, keď svojím správaním porušuje všetky zaužívané zásady a v snahe všetko stihnúť môže prísť o spôsob rozumnej existencie.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -652,8 +1399,19 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu vysvetlite, prečo hovoria psychológovia o posilňovaní resiliencie? Čo pre to treba robiť.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Psychológovia sa zaoberajú syndrómom vyhorenia, učia ľudí, ako sa majú pred týmto problémom chrániť. Je isté, že chod sveta sa už nedá spomaliť, ľudia sa tomu musia prispôsobiť, musia sa naučiť žiť v rýchlom tempe a to tak, aby im to psychicky ani fyzicky neublížilo. Ak si osvoja techniku zvládania záťažovej situácie, vysoké nároky v práci ich nezlomia. V krízových situáciách človeku môžu pomôcť zdravé sociálne vzťahy a blízki ľudia. Ak kríza trvá dlho a človek nevie nájsť východisko, treba mať odvahu a vyhľadať odborníka – psychológa.Treba si stanoviť v živote priority, nie je zdravé v živote sa zamerať len na jednu vec.Každý by mal rozvíjať nejaké záľuby, z ktorých má radosť a pri ktorých nachádza duševnú rovnováhu. Mnohým pomôže viera a náboženstvo.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Psychológovia sa zaoberajú syndrómom vyhorenia, učia ľudí, ako sa majú pred týmto problémom chrániť. Je isté, že chod sveta sa už nedá spomaliť, ľudia sa tomu musia prispôsobiť, musia sa naučiť žiť v rýchlom tempe a to tak, aby im to psychicky ani fyzicky neublížilo. Ak si osvoja techniku zvládania záťažovej situácie, vysoké nároky v práci ich nezlomia. V krízových situáciách človeku môžu pomôcť zdravé sociálne vzťahy a blízki ľudia. Ak kríza trvá dlho a človek nevie nájsť východisko, treba mať odvahu a vyhľadať odborníka – psychológa.Treba si stanoviť v živote priority, nie je zdravé v živote sa zamerať len na jednu vec.Každý by mal rozvíjať nejaké záľuby, z ktorých má radosť a pri ktorých nachádza duševnú rovnováhu. Mnohým pomôže viera a náboženstvo.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -665,7 +1423,68 @@ export const CARDS: SecCard[] = [
     questionText: "Diskutujte, či je alebo nie je naivná sociálna kritika v slovách pesničky Mishe a Opaka. Vyjadrite svoj názor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Slová pesničky sa zdajú byť naivné, lebo prinášajú len kritiku nového životného štýlu, ale neponúkajú riešenie a pozerajú sa na problém len z jednej strany. Väčšina mladých ľudí by však už ani nechcela žiť inak, takéto rýchle tempo života im prináša omnoho viac vzrušenia a zážitkov ako pokojný život, ktorý by už považovali za nudný a jednotvárny. Na druhej strane v slovách pesničky je výstraha – koľko ešte človek vydrží, dokedy bude schopný posúvať svoje pracovné limity. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 % 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Slová pesničky sa zdajú byť naivné, lebo prinášajú len kritiku nového životného štýlu, ale neponúkajú riešenie a pozerajú sa na problém len z jednej strany. Väčšina mladých ľudí by však už ani nechcela žiť inak, takéto rýchle tempo života im prináša omnoho viac vzrušenia a zážitkov ako pokojný život, ktorý by už považovali za nudný a jednotvárny. Na druhej strane v slovách pesničky je výstraha – koľko ešte človek vydrží, dokedy bude schopný posúvať svoje pracovné limity.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2014 Higher Level — © State Examinations Commission.",
+    id: "slk-2014-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-najmenej-100-slov-temu",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "Napíšte komentár (najmenej 100 slov) na tému: „O čo sa to môže zrýchliť? Aký veľký harddisk zajtra budem mať? Dá sa ešte rýchlejšie žiť?“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints, as examples, not a checklist: “Už v súčasnosti vďaka moderným technológiám vieme komunikovať s celým svetom, vždy máme aktuálne informácie, cesta za lepšie platenou prácou nám nerobí problémy.”; “Tempo nášho života je omnoho rýchlejšie ako bolo tempo na začiatku 20. storočia.”; “Rýchlosť života sa naďalej zvyšuje.”; “Moderné technológie možu zväčšiť kapacitu naši „harddiscov“.”; “Ale už teraz platíme za to vysokú cenu – psychické problémy, zdravotné problémy, syndróm burn-out.”; “Takéto zrýchľovanie už teraz vedie k tomu, že zo života sa vytrácajú napríklad reálne ľudské vzťahy, ktoré sa nahrádzajú virtuálnymi.”; “Žijeme osamelo, aby sme dokázali odolať stresu a túžbe všetko mať, musíme si stanoviť priority a niečo odmietnuť - a snažiť sa pomalšie s šťastnejšie žiť.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2014 Higher Level — © State Examinations Commission.",
+    id: "slk-2014-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-praca-povinnos-poslanie-alebo",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Práca – povinnosť a poslanie",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2014 Higher Level — © State Examinations Commission.",
+    id: "slk-2014-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-precestujeme-svet-aby-sme-krasu",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: „Aj keď precestujeme svet, aby sme našli krásu, musíme ju nosiť v sebe, ináč ju nenájdeme.“ Ralph Waldo Emerson",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
     ],
   } as SecCard,
   {
@@ -678,8 +1497,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: mať kopec času (odsek 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "maĢ kopec þasu–maĢ veĐa voĐného þasu", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "mať veľa voľného času", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -691,8 +1521,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: vybrať ľudí do záchranného člna (odsek 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "vybraĢ Đudí do záchranného þlna– vybraĢ Đudí, ktorí sú pre nás dôležitejší než ostatní", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "vybrať ľudí, ktorí sú pre nás dôležitejší než ostatní", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -704,8 +1545,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: patriť do tej istej krvnej skupiny (odsek 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "patriĢ do tej istej krvnej skupiny– podobaĢ sa, rozumieĢ si s niekým", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "podobať sa, rozumieť si s niekým", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -717,8 +1569,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: spontánne stretnutie (odsek 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "spontánne stretnutie–náhodné, srdeþné, neplánované stretnutie", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "náhodné, srdečné, neplánované stretnutie", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -730,8 +1593,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: kľúčový faktor (odsek 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "kĐúþový faktor – najdôležitejší, rozhodujúci faktor", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "najdôležitejší, rozhodujúci faktor", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -743,8 +1617,19 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu vysvetlite, čím trpia dnešné priateľstvá.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Dnešné priateĐstvá trpia nedostatkom osobného kontaktu a tým, že sa snažíme maĢ kontakty s príliš veĐkým množstvom Đudí, ktorých ani dobre nepoznáme. Namiesto toho, aby sme sa sústredili len na niekoĐkých skutoþných priateĐov a þastejšie sa s nimi stretávali, strácame þas vyhĐadávaním informácií o nich, vypisovaním statusov, nadväzovaním prehnaného množstva kontaktov s Đućmi, ktorí nie sú našimi priateĐmi, len známymi. Živý kontakt a spoloþné zážitky sú v priateĐstve nenahraditeĐné.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Dnešné priateľstvá trpia nedostatkom osobného kontaktu a tým, že sa snažíme mať kontakty s príliš veľkým množstvom ľudí, ktorých ani dobre nepoznáme. Namiesto toho, aby sme sa sústredili len na niekoľkých skutočných priateľov a častejšie sa s nimi stretávali, strácame čas vyhľadávaním informácií o nich, vypisovaním statusov, nadväzovaním prehnaného množstva kontaktov s ľuďmi, ktorí nie sú našimi priateľmi, len známymi. Živý kontakt a spoločné zážitky sú v priateľstve nenahraditeľné.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -756,8 +1641,19 @@ export const CARDS: SecCard[] = [
     questionText: "Objasnite podľa textu, kedy má človek skutočného priateľa. Doplňte k tomu svoj názor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Skutoþný priateĐ je þlovek, ktorému sa môžeme zdôveriĢ so svojimi radosĢami aj so svojím trápením, príde, keć potrebujeme podporu, podporuje nás bezpodmieneþne a prijíma nás takých, akí sme. Ochotne nám pomôže bez oþakávania odmeny. A venuje nám svoj þas. Je nám dobre s ním, pretože nám rozumie a toto porozumenie je vzájomné.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Skutočný priateľ je človek, ktorému sa môžeme zdôveriť so svojimi radosťami aj so svojím trápením, príde, keď potrebujeme podporu, podporuje nás bezpodmienečne a prijíma nás takých, akí sme. Ochotne nám pomôže bez očakávania odmeny. A venuje nám svoj čas. Je nám dobre s ním, pretože nám rozumie a toto porozumenie je vzájomné.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -769,8 +1665,19 @@ export const CARDS: SecCard[] = [
     questionText: "Diskutujte o tvrdení autorky, že „niekedy si baréry na stretávanie umelo vytvárame sami”.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Bariéry vznikajú, keć s priateĐmi udržujeme kontakt len na sociálnych sieĢach, málo sa s nimi stretávame. Po þase už nie sme si istí, þi ich napríklad naša prosba o pomoc nebude obĢažovaĢ. ýakáme, že sa po dlhej prestávke oni ozvú ako prví a keć sa neozvú, sme z toho sklamaní, smutní a vysvetĐujeme si to ako koniec priateĐstva.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Bariéry vznikajú, keď s priateľmi udržujeme kontakt len na sociálnych sieťach, málo sa s nimi stretávame. Po čase už nie sme si istí, či ich napríklad naša prosba o pomoc nebude obťažovať. Čakáme, že sa po dlhej prestávke oni ozvú ako prví a keď sa neozvú, sme z toho sklamaní, smutní a vysvetľujeme si to ako koniec priateľstva.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -782,8 +1689,19 @@ export const CARDS: SecCard[] = [
     questionText: "Diskutujte o myšlienke z textu : „Mená priateľov sa budú meniť tak, ako sa meníme my sami a dynamika vzťahov.“",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ýlovek sa poþas života mení, dostáva sa do rôznych sociálnych kruhov a podĐa toho sa mení aj jeho okruh priateĐov. Nových priateĐov získavame, keć sa dostaneme do nového sociálneho prostredia, napríklad keć zmeníme školu, odsĢahujeme sa do inej krajiny, zmeníme zamestnanie, zapíšeme sa do nejakého športového klubu, zaþneme navštevovaĢ jazykovú školu. Ale to neznamená, že všade automaticky nájdeme nových priateĐov. Je to len možnosĢ.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Človek sa počas života mení, dostáva sa do rôznych sociálnych kruhov a podľa toho sa mení aj jeho okruh priateľov. Nových priateľov získavame, keď sa dostaneme do nového sociálneho prostredia, napríklad keď zmeníme školu, odsťahujeme sa do inej krajiny, zmeníme zamestnanie, zapíšeme sa do nejakého športového klubu, začneme navštevovať jazykovú školu. Ale to neznamená, že všade automaticky nájdeme nových priateľov. Je to len možnosť.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -795,7 +1713,68 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite, čo znamená vytvoriť balans medzi prímaním a dávaním.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "VytvoriĢ balans medzi prijímaním a dávaním znamená vytvoriĢ harmonický vzĢah. Žiadny vzĢah nebude plnohodnotný, keć z dvojice jeden bude viac dávaĢ ako ten druhý alebo keć jeden bude len oþakávaĢ, þo dostane od toho druhého. Po þase musí dôjsĢ k sklamaniu. ýlovek, ktorý viac berie ako dáva, ubližuje druhému. A þlovek, ktorý viac dáva ako berie, ubližuje sám sebe. Rovnováha v dávaní a prijímaní pozornosti, lásky, záujmu, starostlivosti je jednou z podmienok šĢastného vzĢahu. Poznámka: V 1. a 2. þasti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. ZrozumiteĐnosĢ odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedaĢ – 30 % 2. UcelenosĢ odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveć", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Vytvoriť balans medzi prijímaním a dávaním znamená vytvoriť harmonický vzťah. Žiadny vzťah nebude plnohodnotný, keď z dvojice jeden bude viac dávať ako ten druhý alebo keď jeden bude len očakávať, čo dostane od toho druhého. Po čase musí dôjsť k sklamaniu. Človek, ktorý viac berie ako dáva, ubližuje druhému. A človek, ktorý viac dáva ako berie, ubližuje sám sebe. Rovnováha v dávaní a prijímaní pozornosti, lásky, záujmu, starostlivosti je jednou z podmienok šťastného vzťahu.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2015 Higher Level — © State Examinations Commission.",
+    id: "slk-2015-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-najmenej-100-slov-temu",
+    section: "II", questionRef: "2015 HL Section II Q1",
+    questionText: "Napíšte komentár (najmenej 100 slov) na tému: „Ak chceme, aby ostatní prišli na našu stranu lesa, treba im otvoriť dvere.“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the scheme's heading “Napríklad:”, as examples, not a checklist: “Byť otvorený voči ostatným”; “Prekonať uzavretosť, opatrnosť, rezervovanosť”; “Dôverovať ľuďom a opätovať ich dôveru”; “Vyhľadávať možnosti aktívne budovať sociálne vzťahy”; “Nezištne dávať”; “Zbaviť sa predsudkov”; “Byť pozitívne naladený”; “Byťiniciatívny pri plánovaní spoločných aktivít s priateľmi”; “Keď sa človek cíti osamelý, neváhať zavolať napríklad dávnemu priateľovi alebo zájsť za ním”; “Pozývať priateľov na večeru, na oslavy a prijímať pozvania od nich”; “Venovať priateľom svoj čas”; “Neváhať priateľov poprosiť o pomoc”; “Vedieť odpustiť”; “Byť tolerantný a rešpektovať inakosť”; “Hľadať dobrú stránku v ľuďoch, ktorí nás obklopujú”; “Vyhľadávať spoločenské podujatia v regióne a zúčastniť sa na nich”; “Spriateliť sa s novými ľuďmi v škole/v práci”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2015 Higher Level — © State Examinations Commission.",
+    id: "slk-2015-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-magicka-sila-priate-stva",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Magická sila priateľstva",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2015 Higher Level — © State Examinations Commission.",
+    id: "slk-2015-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-lovek-ktory-uspokoji-malom-najbohat",
+    section: "III", questionRef: "2015 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: „Človek, ktorý sa uspokojí s málom, je najbohatší zo všetkých.“ (Sokrates)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
     ],
   } as SecCard,
   {
@@ -808,8 +1787,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: otrocká drina (odsek 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "nadľudská, ťažká, zle platená práca", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "nadľudská, ťažká, zle platená práca", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -821,8 +1811,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: zaplaviť trh (odsek 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "vyrábať veľmi veľa, byť najvýznamnejší výrobca na svete", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "vyrábať veľmi veľa, byť najvýznamnejší výrobca na svete", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -834,8 +1835,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: sypať si popol na hlavu (odsek 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "priznať si vinu", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "priznať si vinu", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -847,8 +1859,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: hovoriť ako cez kopirák (odsek 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "opakovať rovnaké slová a vety", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "opakovať rovnaké slová a vety", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -860,8 +1883,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: vyrábať za babku (odsek 8)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "veľmi veľmi lacno", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "veľmi veľmi lacno", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -873,8 +1907,19 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu vysvetlite, prečo sa Bangladéš nazýva textilnou továrňou sveta.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "V textilných továrňach krajiny pracujú tisíce mužov, žien i detí za nízke mzdy. Celá produkcia ide na vývoz do ázijských, ale najmä do západných krajín. Na textilnom priemysle stojí ekonomika krajiny. Vývoz odevov je totiž zásadným hýbateľom celej ekonomiky preľudnenej krajiny. Výnosy z textilného biznisu len v rokoch 2011 – 2012 predstavovali viac ako dvadsať miliárd dolárov. Šije sa tam oblečenie pre mnohé veľké módne značky.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "V textilných továrňach krajiny pracujú tisíce mužov, žien i detí za nízke mzdy. Celá produkcia ide na vývoz do ázijských, ale najmä do západných krajín. Na textilnom priemysle stojí ekonomika krajiny. Vývoz odevov je totiž zásadným hýbateľom celej ekonomiky preľudnenej krajiny. Výnosy z textilného biznisu len v rokoch 2011 – 2012 predstavovali viac ako dvadsať miliárd dolárov. Šije sa tam oblečenie pre mnohé veľké módne značky.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -886,8 +1931,19 @@ export const CARDS: SecCard[] = [
     questionText: "Objasnite podľa textu, ako ovplyvnila tragédia v Dhake život bangladéšskych krajčírov.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "O tragédii sa vysielali správy a reportáže, celý svet videl, v akých neľudských a nebezpečných podmienkach pracujú bangladéšski krajčíri. Začalo sa o tom hovoriť, hľadali sa vinníci, na sociálnych sieťach to vyvolalo veľkú diskusiu. Svetoví výrobcovia si uvedomovali vinu. Vláda prisľúbila rýchlu textilnú reformu, vznikli odbory, aj keď v praxi veľmi nefungujú. Zamestnávatelia sľúbili nápravu, zvýšenie miezd. Zamestnanci sú sebavedomejší, žiadajú lepšie podmienky.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "O tragédii sa vysielali správy a reportáže, celý svet videl, v akých neľudských a nebezpečných podmienkach pracujú bangladéšski krajčíri. Začalo sa o tom hovoriť, hľadali sa vinníci, na sociálnych sieťach to vyvolalo veľkú diskusiu. Svetoví výrobcovia si uvedomovali vinu. Vláda prisľúbila rýchlu textilnú reformu, vznikli odbory, aj keď v praxi veľmi nefungujú. Zamestnávatelia sľúbili nápravu, zvýšenie miezd. Zamestnanci sú sebavedomejší, žiadajú lepšie podmienky.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -899,8 +1955,19 @@ export const CARDS: SecCard[] = [
     questionText: "Ktoré sú podľa vás spoločné a odlišné aspekty života mladého šestnásťročného krajčíra Naleeho a života mladých ľudí na Západe?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ktoré sú podľa vás spoločné a rozdielne aspekty života mladého krajčíra Nadeela a jeho rovesníkov na Západe? Mladí ľudia v Bangladéši musia od útleho veku pracovať, aby pomohli vyžiť svojim rodinám. Je to ťažká práca a trvá aj 16 hodín denne. Nemajú čas na vzdelanie a robia preto, aby ich rodiny mohli prežiť. Ale aj oni snívajú o tom, aby si raz našli ľahšiu a lepšie platenú prácu. Chceli by sa stretnúť s mladými ľuďmi na západe. Mladí ľudia vo vyspelých krajinách majú dostatok všetkého, môžu sa vzdelávať a slobodne sa vyjadrovať a cestovať. Často si kupujú nové oblečenie a mnohokrát si ani len nevedia predstaviť podmienky, v akých pracujú ľudia v krajčírskych dielňach v Bangladéši. Často len statusmi na sociálnych sieťach dávajú najavo svoje názory, protestujú alebo niečo zdieľajú, ale žijú ďaleko od reality rozvojového sveta. Mali by viac spoznávať súčasný svet a hľadať možnosti ako ho zmeniť k lepšiemu.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mladí ľudia v Bangladéši musia od útleho veku pracovať, aby pomohli vyžiť svojim rodinám. Je to ťažká práca a trvá aj 16 hodín denne. Nemajú čas na vzdelanie a robia preto, aby ich rodiny mohli prežiť. Ale aj oni snívajú o tom, aby si raz našli ľahšiu a lepšie platenú prácu. Chceli by sa stretnúť s mladými ľuďmi na západe. Mladí ľudia vo vyspelých krajinách majú dostatok všetkého, môžu sa vzdelávať a slobodne sa vyjadrovať a cestovať. Často si kupujú nové oblečenie a mnohokrát si ani len nevedia predstaviť podmienky, v akých pracujú ľudia v krajčírskych dielňach v Bangladéši. Často len statusmi na sociálnych sieťach dávajú najavo svoje názory, protestujú alebo niečo zdieľajú, ale žijú ďaleko od reality rozvojového sveta. Mali by viac spoznávať súčasný svet a hľadať možnosti ako ho zmeniť k lepšiemu.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -912,8 +1979,19 @@ export const CARDS: SecCard[] = [
     questionText: "Diskutujte o názve článku: „Lepšie ako žobrať,“ hovoria chudobní, ktorí obliekajú svet. Vyjadrite, čo si o ňom myslíte.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Zamestnanci textilných fabrík sa dokážu materiálne postarať o seba a svoje rodiny. Krajčíri považujú svoju prácu za výhodnejšiu oproti iným ešte nebezpečnejším prácam, ako sú triedenie odpadu, práca rikšu, opravovanie lodí. Je to lepšie platená práca ako tie ostatné. Majú svoju ľudskú dôstojnosť, nemusia žobrať, čo je veľmi ponižujúce pre človeka. Ale zároveň je to veľmi smutné, že za takú ťažkú prácu dotávajú krajčíri v Bangladéši mzdu, ktorá im vystačí len na prežitie, pretože menej je už len žobranie. To je problém chudobných, zaostalých krajín – ekonomická závislosť na iných krajinách.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Zamestnanci textilných fabrík sa dokážu materiálne postarať o seba a svoje rodiny. Krajčíri považujú svoju prácu za výhodnejšiu oproti iným ešte nebezpečnejším prácam, ako sú triedenie odpadu, práca rikšu, opravovanie lodí. Je to lepšie platená práca ako tie ostatné. Majú svoju ľudskú dôstojnosť, nemusia žobrať, čo je veľmi ponižujúce pre človeka. Ale zároveň je to veľmi smutné, že za takú ťažkú prácu dotávajú krajčíri v Bangladéši mzdu, ktorá im vystačí len na prežitie, pretože menej je už len žobranie. To je problém chudobných, zaostalých krajín – ekonomická závislosť na iných krajinách.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -925,7 +2003,68 @@ export const CARDS: SecCard[] = [
     questionText: "Čo by mala podľa vás a podľa textu urobiť spoločnosť, aby sa zlepšili životné podmienky mladých ľudí v takýchto chudobných krajinách ako Bangladéš?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Zvýšením vzdelanosti. Sťahovaním za prácou. Požadovaním humánnyh pracovných podmienok, hygienických a bezpečnostných noriem. Mali by sa zaujímať o iné systémy, snažiť sa cestovať, aby videli, že sú krajiny, kde mladí ľudia študujú a pripravujú sa na život, aby sa mohli neskôr slobodne rozhodnúť, akej profesii sa budú venovať. Mali by požadovať rovnocenné postavenie všetkých ľudí v spoločnosti, zrovnoprávnenie žien. Mali by žiadať slobodné voľby, zúčastňovať sa politického života v krajine. Mali by prispieť k demokratizácii krajiny. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 % 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Zvýšením vzdelanosti. Sťahovaním za prácou. Požadovaním humánnyh pracovných podmienok, hygienických a bezpečnostných noriem. Mali by sa zaujímať o iné systémy, snažiť sa cestovať, aby videli, že sú krajiny, kde mladí ľudia študujú a pripravujú sa na život, aby sa mohli neskôr slobodne rozhodnúť, akej profesii sa budú venovať. Mali by požadovať rovnocenné postavenie všetkých ľudí v spoločnosti, zrovnoprávnenie žien. Mali by žiadať slobodné voľby, zúčastňovať sa politického života v krajine. Mali by prispieť k demokratizácii krajiny.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2016 Higher Level — © State Examinations Commission.",
+    id: "slk-2016-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-najmenej-100-slov-temu",
+    section: "II", questionRef: "2016 HL Section II Q1",
+    questionText: "Napíšte komentár (najmenej 100 slov) na tému: Západná spoločnosť oblečená do bangladéšskych šiat si po nešťastnej udalosti z roku 2013 akoby zrazu uvedomila, že svojím nákupom podporuje strašné zaobchádzanie s úbohými ázijskými robotníkmi.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the scheme's heading “Napríklad:”, as examples, not a checklist: “Západná spoločnosť je konzumná, pracujeme, aby sme sme zarábali, aby sme si mohli kúpiť, čo potrebujeme”; “Kupujeme si, keď niečo potrebujeme, a niekedy aj keď to nepotrebujeme, keď sa nám to páči a má to dobrú cenu, to znamená, že to je lacné”; “Na oblečení, ktoré si kupujeme, je často napísané made in Bangladéš, made in India, made in Vietnam, made in Kambodža, made in China, pri kúpe si ani neuvedomujeme, za akých podmienok sa naše oblečnie vyrába”; “Vďaka médiám sme už viac informovaní o životných a pracovných podmienkach ľudí v rozvojových krajinách”; “Nakupovaním lacného oblečenia šitého v ázijských krajinách podporujeme ekonomiku týchto krajín aj napriek tomu, že hlavný zisk ide veľkým západným spoločnostiam”; “Keby sa zvýšila cena práce v týchto krajinách, oblečenie by bolo drahšie, alebo veľké spoločnosti by preniesli výrobu do iných, ešte chudobnejších krajín.”; “Keby sme prestali kupovať oblečnie šité v chudobných ázijských krajinách, možno by tisíce ľudí prišlo o prácu a o existenčnú istotu”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2016 Higher Level — © State Examinations Commission.",
+    id: "slk-2016-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-ako-pre-astny-ivot-vedomim",
+    section: "III", questionRef: "2016 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Ako sa dá prežiť šťastný život s vedomím nespravodlivosti na svete.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2016 Higher Level — © State Examinations Commission.",
+    id: "slk-2016-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-svet-sta-zlym-miestom-spolo",
+    section: "III", questionRef: "2016 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Svet sa môže stať veľmi zlým miestom, ak ho spoločne nebudeme robiť spravodlivejším, demokratickejším a udržateľnejším. Fintan O´Toole: The Irish Times 22. februára 2016",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
     ],
   } as SecCard,
   {
@@ -938,8 +2077,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: búrlivé vody (odsek 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "nepokojné, rozbúrené vlny", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "nepokojné, rozbúrené vlny", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -951,8 +2101,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: myseľ sa prehŕňa (odsek 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "myšlienky blúdia", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "myšlienky blúdia", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -964,8 +2125,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: vrátiť lesk (odsek 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "obnoviť slávu", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "obnoviť slávu", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -977,8 +2149,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: zahliadnuť kútikom oka (odsek 6)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "spozorovať niečo náhodou", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "spozorovať niečo náhodou", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -990,8 +2173,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: akt rebélie (odsek 10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "čin odporu, vzbury proti niečomu", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "čin odporu, vzbury proti niečomu", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1003,8 +2197,19 @@ export const CARDS: SecCard[] = [
     questionText: "Objasnite, prečo sú napríklad „pingpongové stoly povinnou výbavou vstupnej haly takmer každého start-upu v Silicon Valley“?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Jednoduchá aktivita, ktorá nevyžaduje veľkú duševnú a intelektuálnu námahu, ponecháva dostatočne voľný priestor, aby sa vedci, ktorí pracujú v Silicon Valley, odreagovali od komplikovaných pracovných úloh. Počas hrania stolného tenisu cez prestávku v pracovný deň môžu prísť na vyriešenie mnohých zložitých problémov.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Jednoduchá aktivita, ktorá nevyžaduje veľkú duševnú a intelektuálnu námahu, ponecháva dostatočne voľný priestor, aby sa vedci, ktorí pracujú v Silicon Valley, odreagovali od komplikovaných pracovných úloh. Počas hrania stolného tenisu cez prestávku v pracovný deň môžu prísť na vyriešenie mnohých zložitých problémov.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1016,8 +2221,19 @@ export const CARDS: SecCard[] = [
     questionText: "Ako fenomén spoločnosti zameranej na výkony ovplyvňuje náš súkromný život podľa vás a podľa textu?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Naša spoločnosť je zameraná na výkony, od ľudí sa očakáva, že budú čoraz efektívnejšie pracovať. Takto sme vychovávaní od malička. Rodičia očakávajú od detí dobré známky v škole, učitelia žiadajú výborné výkony, zamestnávatelia od zamestnancov maximálne pracovné nasadenie. Ak niečo z tohto sa nám nedarí, pociťujeme to ako svoje zlyhanie a máme pocit viny. Považujeme sa za neúspešných, keď sme nesplnili očakávania nášho okolia. Môže to viesť k depresiám a iným psychickým problémom, atď.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Naša spoločnosť je zameraná na výkony, od ľudí sa očakáva, že budú čoraz efektívnejšie pracovať. Takto sme vychovávaní od malička. Rodičia očakávajú od detí dobré známky v škole, učitelia žiadajú výborné výkony, zamestnávatelia od zamestnancov maximálne pracovné nasadenie. Ak niečo z tohto sa nám nedarí, pociťujeme to ako svoje zlyhanie a máme pocit viny. Považujeme sa za neúspešných, keď sme nesplnili očakávania nášho okolia. Môže to viesť k depresiám a iným psychickým problémom, atď.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1029,8 +2245,19 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite na základe textu a podľa vás, ako funguje komunikácia medzi vedomou a nevedomou mysľou u človeka?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Objasnite na základe textu, ako funguje komunikácia medzi vedomou a nevedomou mysľou u človeka? Snívanie za bieleho dňa využívajú najviac tvoriví ľudia, ako napríklad spisovatelia, vedci, umelci. Nemôžu sa celý deň sústreďovať len na odbornú prácu. Potrebujú mať chvíle ničnerobenia, ktoré sú v texte nazvané, ako napríklad „čumenie z okna“, „snívanie“, „blúdenie myšlienok“. Po týchto chvíľach sa opäť vrátia k vymýšľaniu, tvoreniu, majú nové nápady a nájdu originálne riešenia na mnohé problémy.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Snívanie za bieleho dňa využívajú najviac tvoriví ľudia, ako napríklad spisovatelia, vedci, umelci. Nemôžu sa celý deň sústreďovať len na odbornú prácu. Potrebujú mať chvíle ničnerobenia, ktoré sú v texte nazvané, ako napríklad „čumenie z okna“, „snívanie“, „blúdenie myšlienok“. Po týchto chvíľach sa opäť vrátia k vymýšľaniu, tvoreniu, majú nové nápady a nájdu originálne riešenia na mnohé problémy.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1042,7 +2269,92 @@ export const CARDS: SecCard[] = [
     questionText: "Uvažujte o tom, čo viac ako prózu hľadá spisovateľ, keď hovorí: „Keď sa príliš sustredím na prácu, vydám zo seba prózu, ktorá je síce funkčná, ale nemá v sebe nečakaný vzhľad a krásu.“",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Cieľom tohto spisovateľa je napísať nielen obyčajnú funkčnú prózu. On chce vytvoriť kvalitný text s originálnymi výrazmi, metaforami, krásou, s hlbokými myšlienkami, ktorý povie niečo nové o pocitoch človeka, o jeho živote, o spoločnosti a o svete. Vo svojom texte chce priniesť nový pohľad na nejaké problémy, vyjadrieť niečo, čo ešte nikto nevyjadril, napísať niečo takým spôsobom, ako to doteraz ešte nebolo napísané. Chce predovšetkým zhmotniť myšlienky hlboko ukryté v neznámych zákutich jeho mysle. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 % 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Cieľom tohto spisovateľa je napísať nielen obyčajnú funkčnú prózu. On chce vytvoriť kvalitný text s originálnymi výrazmi, metaforami, krásou, s hlbokými myšlienkami, ktorý povie niečo nové o pocitoch človeka, o jeho živote, o spoločnosti a o svete. Vo svojom texte chce priniesť nový pohľad na nejaké problémy, vyjadrieť niečo, čo ešte nikto nevyjadril, napísať niečo takým spôsobom, ako to doteraz ešte nebolo napísané. Chce predovšetkým zhmotniť myšlienky hlboko ukryté v neznámych zákutich jeho mysle.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2017 Higher Level — © State Examinations Commission.",
+    id: "slk-2017-hl-i-2", topicId: "slovakian-0-1", conceptId: "zaklade-textu-vysvetlite-pova-uje-autorka",
+    section: "I", questionRef: "2017 HL Section I Q2",
+    questionText: "Na základe textu vysvetlite, čo považuje autorka článku za „snívanie za bieleho dňa“.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Snívanie za bieleho dňa je tá časť dňa, keď nerobíme zmysluplnú činnosť. Môžeme sa napríklad pozerať len tak z okna, pozorovať ulicu, krajinu, oblaky, necháme myšlienky voľne plynúť, myslíme na udalosti uplynulých dní a podobne. Vedci tvrdia, že ľudia presnívajú až 47 percent svojho dňa. Medzi snívanie patria aj také aktivity, ktoré si nevyžadujú skoro žiadne sústredenie: hádzanie šípok, prechádzka so psom alebo nenáročná športová aktivita.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme reprints this question as: “Na základe textu a vysvetlite, čo považuje autorka článku za „snívanie za bieleho dňa“.”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2017 Higher Level — © State Examinations Commission.",
+    id: "slk-2017-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-najmenej-100-slov-temu",
+    section: "II", questionRef: "2017 HL Section II Q1",
+    questionText: "Napíšte komentár (najmenej 100 slov) na tému: „Nechodíme po svete a nerozhlasujeme medzi ľuďmi: Ach, to bol skvelý deň a vrcholným zážitkom bolo, ako som sa schuti vynadíval z okna! No možno je to práve to, o čom by sme mali hovoriť.”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the scheme's heading “Napríklad:”, as examples, not a checklist: “komunikácia medzi ľudmi je často formálna (v práci, v súkromí, na FB)”; “chceme sa ukázať z tej lepšej stránky, radšej hovoríme o práci ako o ničnerobení”; “nemáme čas na úprimné rozhovory”; “pri relaxe cítime radosť a uvoľnenie, nie sme pod stresom, nemyslíme na svoje povinnosti, úlohy”; “naše myšlienky sú slobodnejšie, myslíme na to, na čo chceme a nie na to, čo musíme”; “máme nové nápady”; “neočakávané vnuknutie, riešenie nejakého problému nám prinesie uspokojenie, radosť”; “keď o tom hovoríme s inými ľuďmi, hovoríme o pozitívnych veciach a nie o svojich problémoch a o negatívnych veciach, ktoré iných môžu niekedy aj obťažovať,”; “takéto chvíle upevňujú naše sebavedomie, veríme, že sme kreatívni, schopní rieiť rôzne úlohy a problémy”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2017 Higher Level — © State Examinations Commission.",
+    id: "slk-2017-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-sme-zasnivane-tvory-nie-nam",
+    section: "III", questionRef: "2017 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Sme zasnívané tvory a nie je nám to na škodu",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2017 Higher Level — © State Examinations Commission.",
+    id: "slk-2017-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-moj-nazor-rovnako-dobry-ako",
+    section: "III", questionRef: "2017 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: „Môj názor je rovnako dobrý ako tvoj a všetky názory by mali mať rovnakú hodnotu.“ Premietni tento pohľad do kontextu súčasného sveta a najmä na používanie sociálnych sietí.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:” The scheme reprints this title as: “„Môj názor je rovnako dobrý ako tvoj a všetky názory by mali mať rovnakú hodnotu.“ Premietni tento pohľad do kontextu súčasného sveta a najmä na používanie sociálnych médií.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
     ],
   } as SecCard,
   {
@@ -1055,17 +2367,18 @@ export const CARDS: SecCard[] = [
     questionText: "Predstavte model globálnej spoločnosti vytvorený Markom Zuckerbergom, ako sa javí v texte.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ide o lepšiu a odolnejšiu spoločnosť, v ktorej si členovia rozumejú a dokážu spolu komunikovať. Facebook im má pomôcť vyjadrovať sa ku globálnym problémom a šíriť nové myšlienky. Zároveň nájde nových lídrov spoločnosti a podporí ich.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ide o lepšiu a odolnejšiu spoločnosť, v ktorej si členovia rozumejú a dokážu spolu komunikovať. Facebook im má pomôcť vyjadrovať sa ku globálnym problémom a šíriť nové myšlienky. Zároveň nájde nových lídrov spoločnosti a podporí ich.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1078,17 +2391,18 @@ export const CARDS: SecCard[] = [
     questionText: "Akými prostriedkami sa darí facebooku stať takým zosilňovačom jednoduchých správ ? Vysvetlite a dajte príklady.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Facebook je nastavený tak, že ľudia vidia predovšetkým jednoduché správy, ktoré pôsobia na emócie a ktoré potvrdzujú váš svetonázor. Facebook posudzuje správy podľa množstva páčikov („lajkov“) a šíri ich medzi ďalších používateľov. Sú to jednoduché posolstvá, ktoré saa šíria medzi priateľmi používateľov fb. Tento spôsob komunikácie využívajú mnohí populistickí politici na rozširovanie svojich názorov a svojho vplyvu. Takto sa presadili viacerí lídri v Afrike, ale aj v Európe, napríklad súčasný prezident v Českej republike.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Facebook je nastavený tak, že ľudia vidia predovšetkým jednoduché správy, ktoré pôsobia na emócie a ktoré potvrdzujú váš svetonázor. Facebook posudzuje správy podľa množstva páčikov („lajkov“) a šíri ich medzi ďalších používateľov. Sú to jednoduché posolstvá, ktoré saa šíria medzi priateľmi používateľov fb. Tento spôsob komunikácie využívajú mnohí populistickí politici na rozširovanie svojich názorov a svojho vplyvu. Takto sa presadili viacerí lídri v Afrike, ale aj v Európe, napríklad súčasný prezident v Českej republike.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1101,17 +2415,18 @@ export const CARDS: SecCard[] = [
     questionText: "Podľa autora článku je dokument M. Zuckerberga znepokojujúci. Súhlasíte s tým, alebo si myslíte, že sa mu môže podariť vytvoriť lepšiu spoločnosť? Predstavte svoje názory na túto tému.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Podľa pravidiel fb si účet môže vytvoriť ktokoľvek, kto má viac ako 13 rokov a kto má prístup na internet. Môže tam vystupovať pod iným menom. V anonymite môže uverejňovať rôzne polopravdy, lži, šíriť hoaxy, zavádzajúce informácie, nebezpečné názory. Facebook nedokáže kontrolovať takéto správanie, preto je myšlienka globálnej facebookovej spoločnosti znepokojujúca. Lepšiu spoločnosť si môžu vytvoriť ľudia demokratickými pravidlami, zákonmi, keď sa ich dodržiavanie bude verejne kontrolovať.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Podľa pravidiel fb si účet môže vytvoriť ktokoľvek, kto má viac ako 13 rokov a kto má prístup na internet. Môže tam vystupovať pod iným menom. V anonymite môže uverejňovať rôzne polopravdy, lži, šíriť hoaxy, zavádzajúce informácie, nebezpečné názory. Facebook nedokáže kontrolovať takéto správanie, preto je myšlienka globálnej facebookovej spoločnosti znepokojujúca. Lepšiu spoločnosť si môžu vytvoriť ľudia demokratickými pravidlami, zákonmi, keď sa ich dodržiavanie bude verejne kontrolovať.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1124,17 +2439,18 @@ export const CARDS: SecCard[] = [
     questionText: "Vyjadrite svoj názor na vetu z textu: „Situácia je nebezpečná, lebo s mocou formovať spoločnosť tradične súvisí aj zodpovednosť za stav spoločnosti.“",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "V demokraticej spoločnosti preberajú zodpovednosť za smerovanie spoločnosti politické strany a vlády. Ak politici urobia nejakú chybu, musia odstúpiť a ich funkciu preberá niekto iný. Na facebooku sa šíri veľké spektrum názorov: demokratické, homofóbne, extrémistické..., sú posúvané presvedčeným ľuďom a aj novým sympatizantom. Nikto ho za to nebude brať na zodpovednosť, zatiaľ nie sú na to žiadne prostriedky. Mark Zuckerberg naivne verí v to, že na facebooku sa šíria len správne názory. Alebo sa len tak tvári a nechce vidieť pravdu, aká v skutočnosti je. Aj to je nebezpečné.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "V demokraticej spoločnosti preberajú zodpovednosť za smerovanie spoločnosti politické strany a vlády. Ak politici urobia nejakú chybu, musia odstúpiť a ich funkciu preberá niekto iný. Na facebooku sa šíri veľké spektrum názorov: demokratické, homofóbne, extrémistické..., sú posúvané presvedčeným ľuďom a aj novým sympatizantom. Nikto ho za to nebude brať na zodpovednosť, zatiaľ nie sú na to žiadne prostriedky. Mark Zuckerberg naivne verí v to, že na facebooku sa šíria len správne názory. Alebo sa len tak tvári a nechce vidieť pravdu, aká v skutočnosti je. Aj to je nebezpečné.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1147,18 +2463,189 @@ export const CARDS: SecCard[] = [
     questionText: "Podľa autora žijeme „vo svete, v ktorom lož a hystéria obehnú svet skôr, než si pravda obuje topánky“. Komentujte tento citát.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Poznáme príklady hoaxov, ktoré obleteli celý svet. Migranti. Senzačné, neoverené a polopravdivé správy sa šíria rýchlo a vytvárajú falošnú predstavu sveta. Ľudí často pravda ani nezaujíma, lebo nie je atraktívna. Preto je obľúbená aj bulvárna tlač a rôzne konšpiračné médiá, ktoré fabulujú, vyvolávajú emócie, ľudia sa vystrašia, pohoršia a dezinformácie šíria ďalej ako overené informácie. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 % 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Poznáme príklady hoaxov, ktoré obleteli celý svet. Migranti. Senzačné, neoverené a polopravdivé správy sa šíria rýchlo a vytvárajú falošnú predstavu sveta. Ľudí často pravda ani nezaujíma, lebo nie je atraktívna. Preto je obľúbená aj bulvárna tlač a rôzne konšpiračné médiá, ktoré fabulujú, vyvolávajú emócie, ľudia sa vystrašia, pohoršia a dezinformácie šíria ďalej ako overené informácie.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2018 Higher Level — © State Examinations Commission.",
+    id: "slk-2018-hl-i-1-a", topicId: "slovakian-0-0", conceptId: "zmeni-tvar-spolo-nosti-odsek",
+    section: "I", questionRef: "2018 HL Section I Q1(a)",
+    questionText: "zmeniť tvár spoločnosti (2. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ovplyvniť ľudí", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2018 Higher Level — © State Examinations Commission.",
+    id: "slk-2018-hl-i-1-b", topicId: "slovakian-0-0", conceptId: "svetonazor-odsek",
+    section: "I", questionRef: "2018 HL Section I Q1(b)",
+    questionText: "svetonázor (3. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "chápanie sveta", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2018 Higher Level — © State Examinations Commission.",
+    id: "slk-2018-hl-i-1-c", topicId: "slovakian-0-0", conceptId: "asocial-odsek",
+    section: "I", questionRef: "2018 HL Section I Q1(c)",
+    questionText: "asociál (4. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "človek na okraji spoločnosti", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2018 Higher Level — © State Examinations Commission.",
+    id: "slk-2018-hl-i-1-d", topicId: "slovakian-0-0", conceptId: "obu-cely-svet-odsek",
+    section: "I", questionRef: "2018 HL Section I Q1(d)",
+    questionText: "obuť celý svet (5. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "vo veľkom vyrábať obuv", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2018 Higher Level — © State Examinations Commission.",
+    id: "slk-2018-hl-i-1-e", topicId: "slovakian-0-0", conceptId: "manifest-odsek",
+    section: "I", questionRef: "2018 HL Section I Q1(e)",
+    questionText: "manifest (6. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "programové vyhlásenie", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2018 Higher Level — © State Examinations Commission.",
+    id: "slk-2018-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-najmenej-100-slov-temu",
+    section: "II", questionRef: "2018 HL Section II Q1",
+    questionText: "Napíšte komentár (najmenej 100 slov) na tému: Facebook je spoločnosť a spoločnosť je facebook",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints, as examples, not a checklist: “Cieľom facebooku bolo pôvodne spájať ľudí, ktorí sú vzdialení a nemôžu sa fyzicky stretnúť.”; “Umožňoval rýchlo a jednoducho nadviazať spojenie medzi príbuznými, priateľmi v rôznych častiach sveta, pomocou neho sa obnovili dávne priateľstvá, prerušené vzťahy.”; “Fb sa postupne menil, rozširoval svoje pôsobenie, spájal ľudí podľa názoru, náboženstva, národnosti, vytvárili sa na ňom rozne komunity, do ktorých sa dá zapojiť a človek má tak pocit, že niekam patrí.”; “Fb je aj zdroj informácií.”; “Vďaka fb sa zvyšuje popularita človeka, lebo sa tam dajú zverejniť fotky, videá, jednoduché výroky, na ktoré môžu ostatní reagovať.”; “Kto sa chce zviditeľniť alebo niečo dosiahnuť, musí mať dobrý facebookový profil a musí byť veľmi aktívny na facebooku, musí zaujať a tým potom dokáže ovplyvniť veľké množstvo ľudí po celom svete.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2018 Higher Level — © State Examinations Commission.",
+    id: "slk-2018-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-sloboda-slova-mala-limity",
+    section: "III", questionRef: "2018 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Sloboda slova by mala mať limity?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2018 Higher Level — © State Examinations Commission.",
+    id: "slk-2018-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-aty-robia-loveka-hovori-jedno",
+    section: "III", questionRef: "2018 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Šaty robia človeka, hovorí jedno príslovie. Do akej miery je pravda, že si môžeme vytvoriť mienku o ľuďoch na základe ich oblečenia? Uvažujte o argumentoch za a proti, vyjadrite na to svoj názor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1170,17 +2657,18 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu vysvetlite, čo motivuje mladých ľudí stať sa youtubermi.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Youtubering vyplnil prázny priestor v ich živote, v ich voľnom čase. Nudili sa, našli aktivitu, ktorá bola pre nich zábavná, mohli v nej uplatniť svoju fantáziu, mohli sa podeliť o svoju skúsenosť s rovesníkmi, so svetom, v tvorení videí našli sebauplatnenie. Veľký počet sledovateľov im potvrdil, že to, čo zverejňujú, je aj pre ostatných zaujímavé a nakoniec im to prinieslo aj finančnú nezávislosť.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Youtubering vyplnil prázny priestor v ich živote, v ich voľnom čase. Nudili sa, našli aktivitu, ktorá bola pre nich zábavná, mohli v nej uplatniť svoju fantáziu, mohli sa podeliť o svoju skúsenosť s rovesníkmi, so svetom, v tvorení videí našli sebauplatnenie. Veľký počet sledovateľov im potvrdil, že to, čo zverejňujú, je aj pre ostatných zaujímavé a nakoniec im to prinieslo aj finančnú nezávislosť.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1193,17 +2681,18 @@ export const CARDS: SecCard[] = [
     questionText: "Prečo je podľa článku a podľa vás Youtube pre mladých ľudí príťažlivejší ako televízia?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mladí ľudia sa chcú predovšetkým zabávať. Na youtube si nájdu obrovské množstvo humorných videí, každodenné situácie, na ktorých vidia svojich rovesníkov robiť odvážne, bizarné veci. Inšpirujú sa nimi, dievčatá nájdu vzory, ako sa maľovať, obliekať. Chlapci sa učia podľa svojich obľúbených youtuberov dostať v počítačových hrách na vyššiu úroveň. Cez youtube majú lepší kontakt s rovesníkmi ako cez televíziu. Nie sú závislí od TV programu, hocikedy si vyhľadajú, čo ich zaujíma.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mladí ľudia sa chcú predovšetkým zabávať. Na youtube si nájdu obrovské množstvo humorných videí, každodenné situácie, na ktorých vidia svojich rovesníkov robiť odvážne, bizarné veci. Inšpirujú sa nimi, dievčatá nájdu vzory, ako sa maľovať, obliekať. Chlapci sa učia podľa svojich obľúbených youtuberov dostať v počítačových hrách na vyššiu úroveň. Cez youtube majú lepší kontakt s rovesníkmi ako cez televíziu. Nie sú závislí od TV programu, hocikedy si vyhľadajú, čo ich zaujíma.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1216,17 +2705,18 @@ export const CARDS: SecCard[] = [
     questionText: "Akým spôsobom sa podľa textu stali videá youtuberov hlbšími? Aké ďalšie pozitívne zmeny môžu priniesť takéto experimenty?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Youtuberi si uvedomujú, že majú vplyv na svojich rovesníkov. Sú pre nich vzormi. Preto svojimi videami môžu ovplyvniť veľa vecí. Ak youtuberi budú robiť napríklad aktivity na ochranu životného prostredia, podporu marginalizovaných sociálnych skupín, posilnenie občianskeho povedomia, môžu tým mobilizovať svojich sledovateľov, ktorí by boli možno ľahostajní voči týmto problémom. Takto môžu youtuberi posilniť demokratizáciu spoločnosti.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Youtuberi si uvedomujú, že majú vplyv na svojich rovesníkov. Sú pre nich vzormi. Preto svojimi videami môžu ovplyvniť veľa vecí. Ak youtuberi budú robiť napríklad aktivity na ochranu životného prostredia, podporu marginalizovaných sociálnych skupín, posilnenie občianskeho povedomia, môžu tým mobilizovať svojich sledovateľov, ktorí by boli možno ľahostajní voči týmto problémom. Takto môžu youtuberi posilniť demokratizáciu spoločnosti.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1239,17 +2729,18 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu a vášho názoru vyjadrite, ako formuje youtubering osobnosnosť youtuberov.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Z bežných, niekedy z priemerných mladých ľudí sa stávajú známe osobnosti medzi mladými, ktorí si hovoria influenseri. Majú silné sebavedomie, sú ekonomicky od rodičov nezávislí, technicky musia byť zruční, sú kreatívni, pracovití. Majú bohatú slovnú zásobu, vedia sa pútavo vyjadrovať, nehanbia sa vystupovať na verejnosti, snažia sa udržať si pozitívny imidž, čo určite pozitívne ovpyvňuje ich psychiku.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Z bežných, niekedy z priemerných mladých ľudí sa stávajú známe osobnosti medzi mladými, ktorí si hovoria influenseri. Majú silné sebavedomie, sú ekonomicky od rodičov nezávislí, technicky musia byť zruční, sú kreatívni, pracovití. Majú bohatú slovnú zásobu, vedia sa pútavo vyjadrovať, nehanbia sa vystupovať na verejnosti, snažia sa udržať si pozitívny imidž, čo určite pozitívne ovpyvňuje ich psychiku.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1262,18 +2753,189 @@ export const CARDS: SecCard[] = [
     questionText: "Uveďte dôvody, prečo by ste sa aj vy chceli, prípadne nechceli stať youtuberom.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pozitívna stránka youtuberingu: youtuberi − robia niečo, z čoho majú radosť, čo ich zabáva, − ich obľúbená aktivita im zabezpečuje dobrý zárobok, − robia niečo dobre a takým spôsobom, že je to zaujímavé pre ostatných, − majú pocit, že sú potrební, obľúbení, chcení, − ich aktivita im posilňuje sebavedomie. Negatívna stránka youtuberingu: youtuberi − strácajú súkromie, − nemajú čas na vzdelávanie sa, vzdelanie pre nich nie je podstatné, − sú stále pod tlakom, sú obeťami vlastného úspechu, stále musia tvoriť, robiť nové videá, aby nestratili sledovateľov, − zverejňovať hlúpe videá o sebe je nezmyselné zabíjanie času. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 % 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30% 3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Pozitívna stránka youtuberingu: youtuberi − robia niečo, z čoho majú radosť, čo ich zabáva, − ich obľúbená aktivita im zabezpečuje dobrý zárobok, − robia niečo dobre a takým spôsobom, že je to zaujímavé pre ostatných, − majú pocit, že sú potrební, obľúbení, chcení, − ich aktivita im posilňuje sebavedomie. Negatívna stránka youtuberingu: youtuberi − strácajú súkromie, − nemajú čas na vzdelávanie sa, vzdelanie pre nich nie je podstatné, − sú stále pod tlakom, sú obeťami vlastného úspechu, stále musia tvoriť, robiť nové videá, aby nestratili sledovateľov, − zverejňovať hlúpe videá o sebe je nezmyselné zabíjanie času.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2019 Higher Level — © State Examinations Commission.",
+    id: "slk-2019-hl-i-1-a", topicId: "slovakian-0-0", conceptId: "peniaze-ali-sypa-odsek",
+    section: "I", questionRef: "2019 HL Section I Q1(a)",
+    questionText: "peniaze sa začali sypať (1. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "zrazu začali zarábať veľa peňazí", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2019 Higher Level — © State Examinations Commission.",
+    id: "slk-2019-hl-i-1-b", topicId: "slovakian-0-0", conceptId: "krsti-knihu-odsek",
+    section: "I", questionRef: "2019 HL Section I Q1(b)",
+    questionText: "krstiť knihu (3. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "slávnosť, pri ktorej sa kniha uvádza na trh", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2019 Higher Level — © State Examinations Commission.",
+    id: "slk-2019-hl-i-1-c", topicId: "slovakian-0-0", conceptId: "smie-sumy-odsek",
+    section: "I", questionRef: "2019 HL Section I Q1(c)",
+    questionText: "smiešne sumy (4. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "málo peňazí", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2019 Higher Level — © State Examinations Commission.",
+    id: "slk-2019-hl-i-1-d", topicId: "slovakian-0-0", conceptId: "nastal-zlom-odsek",
+    section: "I", questionRef: "2019 HL Section I Q1(d)",
+    questionText: "nastal zlom (6. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "nastal čas zmeny – všetko sa zmenilo", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2019 Higher Level — © State Examinations Commission.",
+    id: "slk-2019-hl-i-1-e", topicId: "slovakian-0-0", conceptId: "pochodu-odsek",
+    section: "I", questionRef: "2019 HL Section I Q1(e)",
+    questionText: "učiť sa za pochodu (7. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "priebežne sa učiť, pracovať a zároveň sa učiť", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2019 Higher Level — © State Examinations Commission.",
+    id: "slk-2019-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-najmenej-100-slov-temu",
+    section: "II", questionRef: "2019 HL Section II Q1",
+    questionText: "Napíšte komentár (najmenej 100 slov) na tému: „Títo mladí youtuberi nevidia vo svojej záľube žiadne riziká, nemyslia vôbec na to, či raz o 10 – 15 rokov nebudú ľutovať, že zverejnením svojho súkromia na internete vlastne oň prišli.“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints, as examples, not a checklist: “Youtuberi nemyslia na budúcnosť, žijú len v prítomnosti.”; “Fakt, že sledovanie sociálnych sietí, médií, vlogov, je u mladých ľudí obľúbenou každodennou činnosťou, prináša youtuberom aj riziká: zverejňujú svoje súkromie a tým oň prichádzajú, stále musia myslieť na to, čím opäť zaujmú svojich sledovateľov, aby ich nestratili”; “Nedá sa žiť len vo virtuálnom svete, ale je možné zážitky z virtuálneho sveta využiť vo svoj prospech, aby nám pomohli zorientovať sa v tom skutočnom”; “Je všetko pravdivé, čo je n fb?”; “Užívatelia youtubu strácajú drahocenný čas, ktorý by mohli využiť na reálne zážitky, ktoré sú nenahraditeľné”; “Rodičia by mali stanoviť svojim deťom jasné pravidlá, maloletým by nemali dovoliť uverejňovať videá, mali by poučiť deti, že sa môžu stretnúť so zneužitím”; “Youtube ponúka stále nové videá, ponuka je nekonečná, človek tam denne môže stráviť hodiny a môže sa stať závislým”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2019 Higher Level — © State Examinations Commission.",
+    id: "slk-2019-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-sme-deti-digitalneho-veku-pre",
+    section: "III", questionRef: "2019 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Sme deti digitálneho veku. Je to pre nás dobré alebo zlé? Komentujte túto tému z oboch strán.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2019 Higher Level — © State Examinations Commission.",
+    id: "slk-2019-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-zobra-jeden-rok-strednej-kole",
+    section: "III", questionRef: "2019 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Zobrať si jeden voľný rok po strednej škole môže byť užitočné alebo je to len premárnený čas? Vo svojej eseji sa snažte rozvinúť obidva pohľady na túto otázku.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1285,7 +2947,7 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami: stavať si vzdušné zámky (1. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "mať nereálne očakávania, nesplniteľné sny", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "mať nereálne očakávania, nesplniteľné sny", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1296,7 +2958,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Slovakian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\""
     },
   } as SecCard,
   {
@@ -1309,7 +2971,7 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami: učiť sa za pochodu (2. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "učiť sa priebežne", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "učiť sa priebežne", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1320,7 +2982,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Slovakian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\""
     },
   } as SecCard,
   {
@@ -1333,7 +2995,7 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami: marginalizovaní ľudia (3. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ľudia na okraji spoločnosti, sociálne vylúčení", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "ľudia na okraji spoločnosti, sociálne vylúčení", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1344,7 +3006,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Slovakian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\""
     },
   } as SecCard,
   {
@@ -1357,7 +3019,7 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami: stereotyp (4. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "rutina, zaužívaný spôsob života, činnosti, ktoré sa opakujú", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "rutina, zaužívaný spôsob života, činnosti, ktoré sa opakujú", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1368,7 +3030,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Slovakian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\""
     },
   } as SecCard,
   {
@@ -1381,7 +3043,7 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami: irtuálny (4. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "virtuálny – neskutočný, zdanlivý, existujúci v počítačovej realite", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "neskutočný, zdanlivý, existujúci v počítačovej realite", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1392,7 +3054,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Slovakian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\""
     },
   } as SecCard,
   {
@@ -1405,7 +3067,7 @@ export const CARDS: SecCard[] = [
     questionText: "Ktorí štyria profesionáli spomínaní v texte pracujú so skupinou Divadlo bez domova a aké je ich povolanie?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "S hercami Divadla bez domova pracuje režisérka Anka Gruzková, sociálna pracovníčka Uršuľa Kowalyk, profesionálny herec Patrik Krebs a osvetľovač Janko.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "S hercami Divadla bez domova pracuje režisérka Anka Gruzková, sociálna pracovníčka Uršuľa Kowalyk, profesionálny herec Patrik Krebs a osvetľovač Janko.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1416,7 +3078,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Slovakian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\""
     },
   } as SecCard,
   {
@@ -1429,7 +3091,7 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu vysvetlite, aké pravidlá pre členstvo v súbore platia pre hercov.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Od členov súboru, ktorí skúšajú dvakrát týždenne, sa vyžaduje pravidelnosť, na skúšky chodia dobrovoľne po celý rok, nie je dovolené piť alkohol či užívať iné omamné látky a samozrejmosťou je slušné správanie k ostatným členom súboru. Ak sa niekto prejaví ako násilník, bude musieť súbor opustiť.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Od členov súboru, ktorí skúšajú dvakrát týždenne, sa vyžaduje pravidelnosť, na skúšky chodia dobrovoľne po celý rok, nie je dovolené piť alkohol či užívať iné omamné látky a samozrejmosťou je slušné správanie k ostatným členom súboru. Ak sa niekto prejaví ako násilník, bude musieť súbor opustiť.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1440,7 +3102,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Slovakian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\""
     },
   } as SecCard,
   {
@@ -1453,7 +3115,7 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite, v čom spočíva terapeutický rozmer divadla pre marginalizovaných ľudí.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "V divadle nachádzajú uplatnenie ľudia, ktorí žijú na okraji spoločnosti, stávajú sa takto súčasťou umeleckej komunity. Posúvajú sa v rámci svojho života, znovu sa učia základným hygienickým návykom, cítia sa byť potrební, učia sa rešpektovať jeden druhého, komunikovať, spolupracovať, vytvárajú si pracovné návyky, teší ich pocit úspechu. Niektorí sa dokonca stávajú osobnými asistentmi ľudí s telesným postihnutím. Postupne sa zbavujú pocitu beznádeje, depresívnych myšlienok a čoraz menej majú samovražedné sklony.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "V divadle nachádzajú uplatnenie ľudia, ktorí žijú na okraji spoločnosti, stávajú sa takto súčasťou umeleckej komunity. Posúvajú sa v rámci svojho života, znovu sa učia základným hygienickým návykom, cítia sa byť potrební, učia sa rešpektovať jeden druhého, komunikovať, spolupracovať, vytvárajú si pracovné návyky, teší ich pocit úspechu. Niektorí sa dokonca stávajú osobnými asistentmi ľudí s telesným postihnutím. Postupne sa zbavujú pocitu beznádeje, depresívnych myšlienok a čoraz menej majú samovražedné sklony.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1464,7 +3126,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Slovakian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\""
     },
   } as SecCard,
   {
@@ -1477,7 +3139,7 @@ export const CARDS: SecCard[] = [
     questionText: "Uvažujte, čo chce zažívať na pódiu Zuzana a čo nezažíva v skutočnosti, keď povedala: „Chcela som zažiť aj niečo iné než len to, kým som v skutočnom živote.“",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Zuzana je v skutočnom živote bezdomovkyňa. Ľudia, ktorí sa ocitli na ulici, prišli o všetko, nemajú rodinu, nemajú domov, prácu, priateľov. Hanbia sa za svoju situáciu. Väčšinou stratili aj úctu sami k sebe. Väčšina spoločnosti ich ľutuje alebo nimi opovrhuje. Práca v divadelnom súbore im prináša možnosť hrať rozličné roly a v duchu sa preniesť do celkom iného sveta a tým zažiť pocity úspešných, šťastných, milovaných ľudí. Táto zdanlivo ľahká zmena sa môže postupne preniesť aj do reálneho života.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Zuzana je v skutočnom živote bezdomovkyňa. Ľudia, ktorí sa ocitli na ulici, prišli o všetko, nemajú rodinu, nemajú domov, prácu, priateľov. Hanbia sa za svoju situáciu. Väčšinou stratili aj úctu sami k sebe. Väčšina spoločnosti ich ľutuje alebo nimi opovrhuje. Práca v divadelnom súbore im prináša možnosť hrať rozličné roly a v duchu sa preniesť do celkom iného sveta a tým zažiť pocity úspešných, šťastných, milovaných ľudí. Táto zdanlivo ľahká zmena sa môže postupne preniesť aj do reálneho života.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1488,7 +3150,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Slovakian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\""
     },
   } as SecCard,
   {
@@ -1501,7 +3163,7 @@ export const CARDS: SecCard[] = [
     questionText: "Uvažujte a argumentujte, prečo je divadelný proces dôležitý aj pre divákov.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Divadelné umenie zbližuje ľudí ‐ hercov aj divákov. Medzi najsilnejšie zážitky skupiny patrí predstavenie v ženskej väznici, o ktorom povedala Uršuľa, že to bola veľmi silná lekcia pre obidve strany. Na týchto predstaveniach zahrajú svoje životné príbehy ľudia, ktorí mlčali desiatky rokov. Diváci spoznávajú ich tragické ľudské osudy, prežívajú s nimi ťažké životné situácie, vďaka tomu sa prehlbuje ich schopnosť empatie aj záujem o hercov ‐ bezdomovcov. Už ich nevnímajú len ako skrachované existencie, ako rušivý element na uliciach alebo v podchodoch, vidia teraz, že sú to takí istí ľudia ako oni, len mali o niečo menej šťastia v živote. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom 3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene 4. Zručnosti – gramatika, pravopis", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Divadelné umenie zbližuje ľudí ‐ hercov aj divákov. Medzi najsilnejšie zážitky skupiny patrí predstavenie v ženskej väznici, o ktorom povedala Uršuľa, že to bola veľmi silná lekcia pre obidve strany. Na týchto predstaveniach zahrajú svoje životné príbehy ľudia, ktorí mlčali desiatky rokov. Diváci spoznávajú ich tragické ľudské osudy, prežívajú s nimi ťažké životné situácie, vďaka tomu sa prehlbuje ich schopnosť empatie aj záujem o hercov ‐ bezdomovcov. Už ich nevnímajú len ako skrachované existencie, ako rušivý element na uliciach alebo v podchodoch, vidia teraz, že sú to takí istí ľudia ako oni, len mali o niečo menej šťastia v živote.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1512,8 +3174,40 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Slovakian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2021 Higher Level — © State Examinations Commission.",
+    id: "slk-2021-hl-ii-1", topicId: "slovakian-1-1", conceptId: "napi-esej-najmenej-300-slov-jednu",
+    section: "II", questionRef: "2021 HL Section II Q1",
+    questionText: "Napíšte esej (najmenej 300 slov) na jednu z nasledovných tém: Dať peniaze do klobúka alebo...? Uvažuj o rôznych formách a o účinnosti pomoci – dať ľuďom peniaze a materiálnu pomoc alebo im dať prostriedky, naučiť ich niečo, aby si pomohli sami.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať", marks: null, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\" The scheme prints, with no marks or percentages beside the criteria: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:” Under the two titles it prints nothing else. It reprints the instruction as “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the lines under this title as “Uvažujte o formách a o účinnosti pomoci – dať ľuďom peniaze a materiálnu pomoc alebo im dať prostriedky, naučiť ich niečo, aby si pomohli sami.”" },
+    { id: "r-2", kind: "point", verbatim: "2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene", marks: null },
+    { id: "r-4", kind: "point", verbatim: "4. Zručnosti – gramatika, pravopis", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2021 Higher Level — © State Examinations Commission.",
+    id: "slk-2021-hl-ii-2", topicId: "slovakian-1-1", conceptId: "napi-esej-najmenej-300-slov-jednu",
+    section: "II", questionRef: "2021 HL Section II Q2",
+    questionText: "Napíšte esej (najmenej 300 slov) na jednu z nasledovných tém: Nemôžeš si jednoducho vymyslieť svoje vlastné fakty len preto, lebo sa ti jednoducho nepáči to, čo počuješ.“ - Greta Thunberg",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať", marks: null, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\" The scheme prints, with no marks or percentages beside the criteria: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:” Under the two titles it prints nothing else. It reprints the instruction as “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:”" },
+    { id: "r-2", kind: "point", verbatim: "2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene", marks: null },
+    { id: "r-4", kind: "point", verbatim: "4. Zručnosti – gramatika, pravopis", marks: null },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1525,17 +3219,18 @@ export const CARDS: SecCard[] = [
     questionText: "má to však háčik (5. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "v riešení bude nejaký problém, nejaká komplikácia", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "v riešení bude nejaký problém, nejaká komplikácia", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1548,17 +3243,18 @@ export const CARDS: SecCard[] = [
     questionText: "zapadnúť prachom (6. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "zabudlo sa na to, stratilo to na význame", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "zabudlo sa na to, stratilo to na význame", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1571,17 +3267,18 @@ export const CARDS: SecCard[] = [
     questionText: "patologické správanie (7. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "nezdravé, chorobné správanie", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "nezdravé, chorobné správanie", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1594,17 +3291,18 @@ export const CARDS: SecCard[] = [
     questionText: "impulzívny nákup (7. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "náhodné, neplánovaný nákup pod vplyvom nejakej emócie", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "náhodné, neplánovaný nákup pod vplyvom nejakej emócie", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1617,17 +3315,18 @@ export const CARDS: SecCard[] = [
     questionText: "haraburdy (8. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "bezcenné, nepotrebné veci", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "bezcenné, nepotrebné veci", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1640,17 +3339,18 @@ export const CARDS: SecCard[] = [
     questionText: "Akí klienti využívajú Andreine služby?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Jej klienti sú rozmanití. Ale predovšetkým sú to ľudia, ktorí sa rozhodli radikálne urobiť poriadok vo svojich veciach. Nedokážu sami udržiavať permanentný poriadok vo svojej domácnosti, sú to tzv. bordelári, a sú to aj podnikatelia zavalení kopami papierov z účtovníctva. Títo ľudia sú aj kvôli neustálemu neporiadku vyčerpaní. Andrea ich učí triediť a vyhadzovať nepotrebné veci.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Jej klienti sú rozmanití. Ale predovšetkým sú to ľudia, ktorí sa rozhodli radikálne urobiť poriadok vo svojich veciach. Nedokážu sami udržiavať permanentný poriadok vo svojej domácnosti, sú to tzv. bordelári, a sú to aj podnikatelia zavalení kopami papierov z účtovníctva. Títo ľudia sú aj kvôli neustálemu neporiadku vyčerpaní. Andrea ich učí triediť a vyhadzovať nepotrebné veci.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1663,17 +3363,18 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu opíšte, ako sa Erik Baláž vysporiadal s tým, že bol nadmerne obklopený vecami? Uvažujte o pozitívach a negatívach takéhoto riešenia.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mladý režisér Erik Baláž sa rozhodol pre radikálnu zmenu vo svojom živote. Aby sa zbavil zbytočností, všetky svoje veci dal do skladu a začal žiť bez jediného predmetu v nezariadenom byte. Každý deň si mohol vziať len jednu vec. O tomto jednoročnom experimente natočil dokumentárny film. Pozitívna stránky experimentu: Zbavenie sa nepotrebných vecí, zistenie pravej hodnoty vecí, zmena životného štýlu – vyčistenie priestoru okolo seba a tým aj v svojej hlave, oslobodenie sa od závislosti na nakupovaní. Negatívna stránka: Takýto experiment si vyžaduje veľmi silnú vôľu. Nie každý zvládne žiť také dlhé obdobie takto prísne asketicky. Pre podobný výsledok stačí možno napísať si zoznam potrebných vecí, napísať si pravidlá pre nakupovanie, zavolať si experta na upratovanie.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mladý režisér Erik Baláž sa rozhodol pre radikálnu zmenu vo svojom živote. Aby sa zbavil zbytočností, všetky svoje veci dal do skladu a začal žiť bez jediného predmetu v nezariadenom byte. Každý deň si mohol vziať len jednu vec. O tomto jednoročnom experimente natočil dokumentárny film. Pozitívna stránky experimentu: Zbavenie sa nepotrebných vecí, zistenie pravej hodnoty vecí, zmena životného štýlu – vyčistenie priestoru okolo seba a tým aj v svojej hlave, oslobodenie sa od závislosti na nakupovaní. Negatívna stránka: Takýto experiment si vyžaduje veľmi silnú vôľu. Nie každý zvládne žiť také dlhé obdobie takto prísne asketicky. Pre podobný výsledok stačí možno napísať si zoznam potrebných vecí, napísať si pravidlá pre nakupovanie, zavolať si experta na upratovanie.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1686,17 +3387,18 @@ export const CARDS: SecCard[] = [
     questionText: "Uvažujte, z akého pohľadu povedal popredný americký predajca oblečenia B. Earl Puckett: „Našou prácou je urobiť ženy nešťastné s tým, čo majú…“?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Cieľom každého obchodníka je dosiahnuť čo najvyšší zisk. Veta „Našou prácou je urobiť ženy nešťastné s tým, čo majú…“ znie cynicky, ale je jasné, že ju vyslovil znalec ženskej duše, a dobrý obchodník, ktorý ráta s tým, že dobrý biznis so ženským oblečením sa dá dosiahnuť len tak, že sa móda bude pravidelne meniť, oblečenie bude cenovo dostupné a reklama na novú módnu kolekciu bude pôsobivá. Ženy podľahnú túžbe byť stále moderne oblečené, a šaty vo svojom šatníku budú považovať za nemoderné, aj keď nebudú vynosené. Sledovanie najnovšej módy a chodenie po obchodoch sa stane ich pravidelnou činnosťou, zvykom..", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Cieľom každého obchodníka je dosiahnuť čo najvyšší zisk. Veta „Našou prácou je urobiť ženy nešťastné s tým, čo majú…“ znie cynicky, ale je jasné, že ju vyslovil znalec ženskej duše, a dobrý obchodník, ktorý ráta s tým, že dobrý biznis so ženským oblečením sa dá dosiahnuť len tak, že sa móda bude pravidelne meniť, oblečenie bude cenovo dostupné a reklama na novú módnu kolekciu bude pôsobivá. Ženy podľahnú túžbe byť stále moderne oblečené, a šaty vo svojom šatníku budú považovať za nemoderné, aj keď nebudú vynosené. Sledovanie najnovšej módy a chodenie po obchodoch sa stane ich pravidelnou činnosťou, zvykom..", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1709,17 +3411,18 @@ export const CARDS: SecCard[] = [
     questionText: "Diskutujte, prečo je dôležitá práca Andrey Pokornej?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "V súčasnej konzumnej spoločnosti zameranej na hromadenie vecí sa vyprofilovala profesia na pomoc ľudom, ktorí si nevedia poradiť s hromadením vecí. Andrea Pokorná je poradkyňa na poriadok, triedenie, upratovanie, vyhadzovanie nepotrebných vecí. Jej práca má dve stránky – materiálnu aj psychologickú. Mnohí ľudia popri práci nedokážu všetko zvládnuť, upratovanie a udržiavanie poriadku a hromadenie vecí je pre nich nezvládnuteľný problém. Sú z toho frustrovaní. Ich dom, životný priestor je preplnený vecami, je to zaťažujúce aj pre ich psychiku. Andrea poskytuje službu týmto ľuďom, pomáha im, je to odborník, ktorý tento problém za nich vyrieši, naučí ľudí techniky, ako nehromadiť veci okolo seba. Vedie ich k tomu, aby dokázali zmeniť svoj životný štýl. Učí ich menej nakupovať a tým aj chrániť životné prostredie a nevyhadzovať peniaze na zbytočnosti.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "V súčasnej konzumnej spoločnosti zameranej na hromadenie vecí sa vyprofilovala profesia na pomoc ľudom, ktorí si nevedia poradiť s hromadením vecí. Andrea Pokorná je poradkyňa na poriadok, triedenie, upratovanie, vyhadzovanie nepotrebných vecí. Jej práca má dve stránky – materiálnu aj psychologickú. Mnohí ľudia popri práci nedokážu všetko zvládnuť, upratovanie a udržiavanie poriadku a hromadenie vecí je pre nich nezvládnuteľný problém. Sú z toho frustrovaní. Ich dom, životný priestor je preplnený vecami, je to zaťažujúce aj pre ich psychiku. Andrea poskytuje službu týmto ľuďom, pomáha im, je to odborník, ktorý tento problém za nich vyrieši, naučí ľudí techniky, ako nehromadiť veci okolo seba. Vedie ich k tomu, aby dokázali zmeniť svoj životný štýl. Učí ich menej nakupovať a tým aj chrániť životné prostredie a nevyhadzovať peniaze na zbytočnosti.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1730,20 +3433,54 @@ export const CARDS: SecCard[] = [
     id: "slk-2022-hl-i-6", topicId: "slovakian-0-1", conceptId: "diskutujte-akej-miery-pravdive-tvrdenie-textu",
     section: "I", questionRef: "2022 HL Section I Q6",
     questionText: "Diskutujte, do akej miery je pravdivé tvrdenie z textu: „Nakupujem, teda som.“",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "„Nakupujem, teda som“ je parafrázou výroku „Myslím, teda som“. Oproti myšlienkovému a duchovnému obsahu pôvodného výroku tu ide o materiálnu podstatu. Ľudia nakupujú aj preto, že ich to teší a že si to môžu dovoliť, Uspokojí ich to. Potvrdia si tým svoj spoločenský status sami pred sebou aj pred ostatnými – pred verejnosťou. Zvýši to ich sebavedomie. Utvrdí sa v nich pocit nezávislosti, samostatnosti a vedomie, že patria k lepšie situovanej sociálnej vrstve. Z nakupovania sa stala spoločenská udalosť, nakupovať chodia celé rodiny, pretože obchodné centrá už nie sú len miestom, kde dostať všetko, ale aj miestom na posedenie, rozptýlenie, zábavu, stretnutie s priateľmi, sú tam reštaurácie, kiná, detské kútiky. Keď si človek niečo kúpil, hovorí sa aj, že si tým urobil radosť. Nakupovanie je zároveň obdarovaním seba samého. A vedomie, že človek si môže dovoliť kúpiť nejakú drahú vec alebo nejaké drahé značkové oblečenie, v človeku vzbudzuje pocit, že patrí medzi elitu. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom 3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene 4. Zručnosti – gramatika, pravopis", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "„Nakupujem, teda som“ je parafrázou výroku „Myslím, teda som“. Oproti myšlienkovému a duchovnému obsahu pôvodného výroku tu ide o materiálnu podstatu. Ľudia nakupujú aj preto, že ich to teší a že si to môžu dovoliť, Uspokojí ich to. Potvrdia si tým svoj spoločenský status sami pred sebou aj pred ostatnými – pred verejnosťou. Zvýši to ich sebavedomie. Utvrdí sa v nich pocit nezávislosti, samostatnosti a vedomie, že patria k lepšie situovanej sociálnej vrstve.", marks: null, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-2", kind: "point", verbatim: "Z nakupovania sa stala spoločenská udalosť, nakupovať chodia celé rodiny, pretože obchodné centrá už nie sú len miestom, kde dostať všetko, ale aj miestom na posedenie, rozptýlenie, zábavu, stretnutie s priateľmi, sú tam reštaurácie, kiná, detské kútiky. Keď si človek niečo kúpil, hovorí sa aj, že si tým urobil radosť. Nakupovanie je zároveň obdarovaním seba samého. A vedomie, že človek si môže dovoliť kúpiť nejakú drahú vec alebo nejaké drahé značkové oblečenie, v človeku vzbudzuje pocit, že patrí medzi elitu.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2022 Higher Level — © State Examinations Commission.",
+    id: "slk-2022-hl-ii-1", topicId: "slovakian-1-1", conceptId: "tema-dobe-dostupnych-lacnych-veci-stavaju",
+    section: "II", questionRef: "2022 HL Section II Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: V dobe dostupných a lacných vecí sa stávajú drahé a ťažko dostupné priateľské vzťahy",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať", marks: null, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints, with no marks or percentages beside the criteria: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:” Under “ČASŤ II” it reprints only the instruction and the two titles." },
+    { id: "r-2", kind: "point", verbatim: "2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene", marks: null },
+    { id: "r-4", kind: "point", verbatim: "4. Zručnosti – gramatika, pravopis", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2022 Higher Level — © State Examinations Commission.",
+    id: "slk-2022-hl-ii-2", topicId: "slovakian-1-1", conceptId: "tema-ako-vznika-prave-priate-stvo",
+    section: "II", questionRef: "2022 HL Section II Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Ako vzniká pravé priateľstvo",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať", marks: null, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints, with no marks or percentages beside the criteria: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:” Under “ČASŤ II” it reprints only the instruction and the two titles." },
+    { id: "r-2", kind: "point", verbatim: "2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene", marks: null },
+    { id: "r-4", kind: "point", verbatim: "4. Zručnosti – gramatika, pravopis", marks: null },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1753,19 +3490,20 @@ export const CARDS: SecCard[] = [
     id: "slk-2023-hl-i-1-e", topicId: "slovakian-0-0", conceptId: "vysvetlite-vlastnymi-slovami-vyrazy-motiva-kampa",
     section: "I", questionRef: "2023 HL Section I Q1(e)",
     questionText: "Vysvetlite vlastnými slovami výrazy: motivačná kampaň (8. odsek)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "naplánovaný rad akcií, ktorých cieľom je u niekoho vzbudiť záujem o niečo", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "naplánovaný rad akcií, ktorých cieľom je u niekoho vzbudiť záujem o niečo", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1778,17 +3516,18 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu vysvetlite, prečo sú to najmä mladší ľudia, ktorí sa nechcú vrátiť domov na Slovensko.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Medzi 300 tisíc Slovákmi, ktorí za posledných 20 rokov odišli žiť do zahraničia, prevažujú mladí ľudia, pretože sú slobodnejší ako dospelí. Nie sú ešte usadení, nemajú rodiny a sú plní plánov a očakávaní od života. Pripravujú sa na budúci život, túžia po zážitkoch, po nových priateľoch a po dobrodružstve. .", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Medzi 300 tisíc Slovákmi, ktorí za posledných 20 rokov odišli žiť do zahraničia, prevažujú mladí ľudia, pretože sú slobodnejší ako dospelí. Nie sú ešte usadení, nemajú rodiny a sú plní plánov a očakávaní od života. Pripravujú sa na budúci život, túžia po zážitkoch, po nových priateľoch a po dobrodružstve.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1801,17 +3540,18 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu napíšte, aké dôvody lákajú mladých Slovákov odísť do zahraničia.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Niektorí mladí Slováci sa rozhodujú študovať v zahraničí, kde majú prístup k lepšiemu vzdelaniu a možnostiam rozvoja svojich zručností a schopností a naučia sa cudzie jazyky. Silnou motiváciou sú aj lepšie pracovné príležitosti, kde môžu zarábať viac a zlepšiť si svoju životnú úroveň, hovoria, že prístup k pracovným príležitostiam je férovejší ako na Slovensku, kde človek mnohokrát potrebuje známosti.Zároveň to môže byť príležitosť na rozšírenie ich kultúrnych a jazykových znalostí, čo môže byť prínosom pre ich kariéru a osobný rozvoj. Niektorí mladí Slováci sa rozhodujú odísť do zahraničia, aby objavovali nové krajiny, mestá, kultúry. .", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Niektorí mladí Slováci sa rozhodujú študovať v zahraničí, kde majú prístup k lepšiemu vzdelaniu a možnostiam rozvoja svojich zručností a schopností a naučia sa cudzie jazyky. Silnou motiváciou sú aj lepšie pracovné príležitosti, kde môžu zarábať viac a zlepšiť si svoju životnú úroveň, hovoria, že prístup k pracovným príležitostiam je férovejší ako na Slovensku, kde človek mnohokrát potrebuje známosti.Zároveň to môže byť príležitosť na rozšírenie ich kultúrnych a jazykových znalostí, čo môže byť prínosom pre ich kariéru a osobný rozvoj. Niektorí mladí Slováci sa rozhodujú odísť do zahraničia, aby objavovali nové krajiny, mestá, kultúry.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1824,17 +3564,18 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu a podľa vás vysvetlite, aké negatívne dôsledky na Slovensko má odliv mozgov a prečo je výhodné pre štáty prijímať vzdelaných imigrantov?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Odchod mladých vzdelaných ľudí sa nazýva odliv mozgov. Štát investoval prostriedky na vzdelanie mladých ľudí, ktoré sa mu nevrátia späť. Vzdelaní ľudia sú ovplyvňujú rast ekonomiky a pozitívny politický rozvoj a ich nedostatok spomaľuje rast ekonomiky, upadá aj úroveň inštitúcií a oslabuje sa demokratické smerovanie krajiny. V niektorých odvetviach je nedostatok vzdelaného odborného manažmentui Na druhej strane tento nedostatok môže vyrovnať príchod vzdelaných imigrantov, ktorí sa zamestnajú najmä v oblastiach, kde máme nedostatok vlastných ľudí.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Odchod mladých vzdelaných ľudí sa nazýva odliv mozgov. Štát investoval prostriedky na vzdelanie mladých ľudí, ktoré sa mu nevrátia späť. Vzdelaní ľudia sú ovplyvňujú rast ekonomiky a pozitívny politický rozvoj a ich nedostatok spomaľuje rast ekonomiky, upadá aj úroveň inštitúcií a oslabuje sa demokratické smerovanie krajiny. V niektorých odvetviach je nedostatok vzdelaného odborného manažmentui Na druhej strane tento nedostatok môže vyrovnať príchod vzdelaných imigrantov, ktorí sa zamestnajú najmä v oblastiach, kde máme nedostatok vlastných ľudí.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1847,17 +3588,18 @@ export const CARDS: SecCard[] = [
     questionText: "Uvažujte nad tým, z čoho pramení povzbudivý pocit mladého slovenského vedca, ktorý sa z Írska vrátil domov.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mladý vedec pôsobil niekoľko rokov v Írsku, kam sa dostal vďaka grantu. Jedna vec je profesionálne uplatnenie, ale okrem toho je tu aj citový život. Mladý vedec má na Slovensku silné zázemie, pravdepodobne rodinu, priateľov, a to všetko mu v cudzine chýbalo. Získal výnimočné skúsenosti, ktoré sa snaží uplatniť na Slovensku, má pocit, že doma jeho práca bude mať väčší zmysel, že tu bude užitočnejší.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mladý vedec pôsobil niekoľko rokov v Írsku, kam sa dostal vďaka grantu. Jedna vec je profesionálne uplatnenie, ale okrem toho je tu aj citový život. Mladý vedec má na Slovensku silné zázemie, pravdepodobne rodinu, priateľov, a to všetko mu v cudzine chýbalo. Získal výnimočné skúsenosti, ktoré sa snaží uplatniť na Slovensku, má pocit, že doma jeho práca bude mať väčší zmysel, že tu bude užitočnejší.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1868,20 +3610,168 @@ export const CARDS: SecCard[] = [
     id: "slk-2023-hl-i-6", topicId: "slovakian-0-1", conceptId: "diskutujte-tom-znamena-pozera-slovensko-optimizmom",
     section: "I", questionRef: "2023 HL Section I Q6",
     questionText: "Diskutujte o tom, čo znamená „pozerať sa na Slovensko s optimizmom“.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pozerať sa na Slovensko s optimizmom znamená veriť v pozitívny potenciál krajiny a očakávať, že sa veci budú zlepšovať a vyvíjať sa k lepšiemu. Optimizmus sa môže zakladať na rôznych faktoroch, ako sú ekonomický rast, politická stabilita, inovácie, kultúra, kvalitné vzdelávanie a ďalšie. Ak sa niekto pozerá na Slovensko s optimizmom, môže vidieť krajinu ako miesto plné príležitostí pre rast a rozvoj, kde sú možnosti pre úspech a kde sa budú ďalej rozvíjať inovatívne a prosperujúce spoločnosti. Takýto pohľad môže pomôcť zvýšiť dôveru v Slovensko a jeho budúcnosť. . Poznámka: V 1., 2. a 3. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 % 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Pozerať sa na Slovensko s optimizmom znamená veriť v pozitívny potenciál krajiny a očakávať, že sa veci budú zlepšovať a vyvíjať sa k lepšiemu. Optimizmus sa môže zakladať na rôznych faktoroch, ako sú ekonomický rast, politická stabilita, inovácie, kultúra, kvalitné vzdelávanie a ďalšie.", marks: null, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-2", kind: "point", verbatim: "Ak sa niekto pozerá na Slovensko s optimizmom, môže vidieť krajinu ako miesto plné príležitostí pre rast a rozvoj, kde sú možnosti pre úspech a kde sa budú ďalej rozvíjať inovatívne a prosperujúce spoločnosti. Takýto pohľad môže pomôcť zvýšiť dôveru v Slovensko a jeho budúcnosť.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2023 Higher Level — © State Examinations Commission.",
+    id: "slk-2023-hl-i-1-a", topicId: "slovakian-0-0", conceptId: "svetobe-nik-odsek",
+    section: "I", questionRef: "2023 HL Section I Q1(a)",
+    questionText: "Vysvetlite vlastnými slovami výrazy: svetobežník (1. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "kto veľa chodí, cestuje po svete", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints one price for Question 1, “(5 bodov)”, under e), for the five expressions together; the scheme prices them “(5 x 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2023 Higher Level — © State Examinations Commission.",
+    id: "slk-2023-hl-i-1-b", topicId: "slovakian-0-0", conceptId: "rodinkarstvo-odsek",
+    section: "I", questionRef: "2023 HL Section I Q1(b)",
+    questionText: "Vysvetlite vlastnými slovami výrazy: rodinkárstvo (2. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "protekčné uplatňovanie príbuzenských vzťahov", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints one price for Question 1, “(5 bodov)”, under e), for the five expressions together; the scheme prices them “(5 x 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2023 Higher Level — © State Examinations Commission.",
+    id: "slk-2023-hl-i-1-c", topicId: "slovakian-0-0", conceptId: "ferovy-pristup-odsek",
+    section: "I", questionRef: "2023 HL Section I Q1(c)",
+    questionText: "Vysvetlite vlastnými slovami výrazy: férový prístup (2. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "spravodlivý, nestranný, objektívny prístup", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints one price for Question 1, “(5 bodov)”, under e), for the five expressions together; the scheme prices them “(5 x 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2023 Higher Level — © State Examinations Commission.",
+    id: "slk-2023-hl-i-1-d", topicId: "slovakian-0-0", conceptId: "emigra-vlna-odsek",
+    section: "I", questionRef: "2023 HL Section I Q1(d)",
+    questionText: "Vysvetlite vlastnými slovami výrazy: emigračná vlna (7. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "príchod veľkého množstva emigrantov v krátkom období", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints one price for Question 1, “(5 bodov)”, under e), for the five expressions together; the scheme prices them “(5 x 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2023 Higher Level — © State Examinations Commission.",
+    id: "slk-2023-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-najmenej-100-150-slov",
+    section: "II", questionRef: "2023 HL Section II Q1",
+    questionText: "Napíšte komentár (najmenej 100 - 150 slov) na tému: „Slovensko potrebuje ľudí, ktorí veria v jeho budúcnosť.“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V 1., 2. a 3. časti budú pri hodnotení brané do úvahy nasledovné kritériá:", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme reprints the task as: “Napíšte komentár najmenej 100 slov na tému:”. The scheme prints, as examples, not a checklist: “Existuje mnoho dôvodov, prečo je pre krajinu dôležité mať ľudí, ktorí veria v jej budúcnosť. Niektoré z týchto dôvodov sú:”; “Motivácia a entuziazmus: Keď ľudia veria v budúcnosť svojej krajiny, sú motivovaní a entuziastickí a majú väčšiu pravdepodobnosť, že sa budú snažiť urobiť čo najlepšie rozhodnutia a konať v záujme svojej krajiny.”; “Dôvera investorov: Keď investorom dáme najavo, že veríme v budúcnosť našej krajiny, budú mať väčšiu dôveru v jej ekonomický potenciál. To môže viesť k investíciám a hospodárskemu rastu.”; “Patriotizmus: Ak ľudia veria v budúcnosť svojej krajiny, majú väčšiu pravdepodobnosť, že ju budú milovať a cítiť sa s ňou spojení. To môže viesť k väčšej angažovanosti a zodpovednosti voči svojej krajine.”; “Inovácia a rozvoj: Keď veríme v budúcnosť našej krajiny, snažíme sa vytvoriť nové príležitosti a inovovať. To môže viesť k rozvoju nových technológií, podnikania a vytváraniu nových pracovných miest.”; “V konečnom dôsledku je pre krajinu veľmi dôležité mať ľudí, ktorí veria v jej budúcnosť, pretože to môže viesť k väčšiemu hospodárskemu rastu, angažovanosti občanov a rozvoju nových príležitostí a technológií.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2023 Higher Level — © State Examinations Commission.",
+    id: "slk-2023-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-pre-uskuto-nenie-ich-snov",
+    section: "III", questionRef: "2023 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Pre uskutočnenie našich snov je dôležité, v akej krajine žijeme?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V 1., 2. a 3. časti budú pri hodnotení brané do úvahy nasledovné kritériá:", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints its criteria for parts 1, 2 and 3 (the line heading this row). Under “ČASŤ III” it reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer and no content for this part.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2023 Higher Level — © State Examinations Commission.",
+    id: "slk-2023-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-nemo-eme-udalosti-tvori-tie",
+    section: "III", questionRef: "2023 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: „Nemôžeme udalosti tvoriť. Tie sú výsledkom tisícich faktorov, na ktoré nemáme vždy vplyv. Môžeme im však dať určitý smer.“ Milan Rastislav Štefánik",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V 1., 2. a 3. časti budú pri hodnotení brané do úvahy nasledovné kritériá:", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints its criteria for parts 1, 2 and 3 (the line heading this row). Under “ČASŤ III” it reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer and no content for this part.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1891,19 +3781,20 @@ export const CARDS: SecCard[] = [
     id: "slk-2024-hl-i-1-e", topicId: "slovakian-0-0", conceptId: "vysvetlite-vlastnymi-slovami-vyrazy-diskomfort-odsek",
     section: "I", questionRef: "2024 HL Section I Q1(e)",
     questionText: "Vysvetlite vlastnými slovami výrazy: diskomfort (6. odsek)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "situácia, keď sa človek necíti dobre psychicky alebo fyzicky, príčinou môže byť napríklad stres, choroba", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "situácia, keď sa človek necíti dobre psychicky alebo fyzicky, príčinou môže byť napríklad stres, choroba", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1916,17 +3807,18 @@ export const CARDS: SecCard[] = [
     questionText: "Vymenujte najčastejšie symptómy závislosti na mobile, ktoré sa prejavujú u mladých Slovákov.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Závislosť sa môže prejaviť nadmerným hraním počítačových hier, neschopnosťou odpútať sa od obrazovky, zanedbávaním pracovných povinností, domácich prác. Teenageri sa nevedia sústrediť, cítia sa nepríjemne, nemôžu spávať, pociťujú úzkosť, nervozitu, nemajú záujem o realitu, radšej sa hrajú na mobile, ako trávia čas s rodinou alebo priateľmi, keď nemajú pripojenie na internet, sú podráždení.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Závislosť sa môže prejaviť nadmerným hraním počítačových hier, neschopnosťou odpútať sa od obrazovky, zanedbávaním pracovných povinností, domácich prác. Teenageri sa nevedia sústrediť, cítia sa nepríjemne, nemôžu spávať, pociťujú úzkosť, nervozitu, nemajú záujem o realitu, radšej sa hrajú na mobile, ako trávia čas s rodinou alebo priateľmi, keď nemajú pripojenie na internet, sú podráždení.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1939,17 +3831,18 @@ export const CARDS: SecCard[] = [
     questionText: "Čo sa dá chápať pod pojmom onlinový svet?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Online svet, často nazývaný aj internetový svet alebo svetová sieť, je virtuálny priestor, kde sa uskutočňuje interakcia medzi ľuďmi, počítačmi a inými digitálnymi zariadeniami pomocou internetu. Tento svet zahŕňa rôzne platformy, ako sú webové stránky, sociálne siete, elektronická pošta, diskusné fóra, online obchody a ďalšie.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Online svet, často nazývaný aj internetový svet alebo svetová sieť, je virtuálny priestor, kde sa uskutočňuje interakcia medzi ľuďmi, počítačmi a inými digitálnymi zariadeniami pomocou internetu. Tento svet zahŕňa rôzne platformy, ako sú webové stránky, sociálne siete, elektronická pošta, diskusné fóra, online obchody a ďalšie.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1962,17 +3855,18 @@ export const CARDS: SecCard[] = [
     questionText: "Aká je úloha dospelého človeka v regulovaní bezpečnej situácie detí? Myslíte, že dospelmôžu byť v tom úspešní? Aké sú ich možnosti?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rodičia majú najväčšiu zodpovednosť za regulovanie používania mobilu u svojich detí. Od útleho veku musia jasne stanoviť pravidlá, napríklad malé deti do troch rokov by nemali dostať do ruky mobil, neskôr by mali vidieť aj u svojich rodičov vzor, že mobil nie je hračka, ktorú majú zapnutú celé hodiny. Keď už budú mať deti mobil, môžu im rodičia nainštalovať detskú poistku. Škola by tiež mala jasne určiť pravidlá, napríklad vypnutý mobil počas vyučovania. Ak to niekto poruší, zoberie sa mu mobil a dostane ho späť po vyučovaní.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Rodičia majú najväčšiu zodpovednosť za regulovanie používania mobilu u svojich detí. Od útleho veku musia jasne stanoviť pravidlá, napríklad malé deti do troch rokov by nemali dostať do ruky mobil, neskôr by mali vidieť aj u svojich rodičov vzor, že mobil nie je hračka, ktorú majú zapnutú celé hodiny. Keď už budú mať deti mobil, môžu im rodičia nainštalovať detskú poistku. Škola by tiež mala jasne určiť pravidlá, napríklad vypnutý mobil počas vyučovania. Ak to niekto poruší, zoberie sa mu mobil a dostane ho späť po vyučovaní.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -1985,17 +3879,18 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite, aký bol dopad príchodu smartfónov na vývoj digitálnej závislosti u mladých ľudí.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nekontrolované používanie mobilov môže viesť k závislosti, ktorú voláme nomofóbia. Mobil je vlastne malý prenosný počítač, ktorý neslúži len na telefonovanie. Deti majú v mobile rôzne hry, môžu si ich sťahovať zadarmo z internetu, na trhu sa objavujú stále nové hry a aplikácie. Vďaka pripojeniu na internet teenageri sledujú rôzne zábavné videá. Mobil nosia stále so sebou na rozdiel od stolového počítača a kedykoľvek ho môžu použiť. Aj dostupná cena internetu vedie k neobmedzenému používaniu mobilu.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Nekontrolované používanie mobilov môže viesť k závislosti, ktorú voláme nomofóbia. Mobil je vlastne malý prenosný počítač, ktorý neslúži len na telefonovanie. Deti majú v mobile rôzne hry, môžu si ich sťahovať zadarmo z internetu, na trhu sa objavujú stále nové hry a aplikácie. Vďaka pripojeniu na internet teenageri sledujú rôzne zábavné videá. Mobil nosia stále so sebou na rozdiel od stolového počítača a kedykoľvek ho môžu použiť. Aj dostupná cena internetu vedie k neobmedzenému používaniu mobilu.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2008,18 +3903,165 @@ export const CARDS: SecCard[] = [
     questionText: "Psychologička Eva Gajdošová hovorí, že závislosť kriví vnímanie, oberá človeka o schopnosť objektivity. Diskutujte v tomto zmysle o používaní mobilných telefónov.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Psychologička Eva Gajdošová upozorňuje na to, že každá závislosť kriví vnímanie, oberá človeka o schopnosť objektívne vnímať svet. Rovnako je to aj pri závislosti na mobilných telefónoch, ktorá je často spojená s nadmerným používaním sociálnych médií, ktoré môžu zvyšovať pocit neustáleho porovnávania sa s inými a vytvárať falošný obraz reality. Napríklad dievčatá sa porovnávajú s falošnými kráskami, ktoré sú upravené, vyretušované. Môže to u nich viesť k zníženému sebavedomiu, k depresiám, k anorexii. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 % 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Psychologička Eva Gajdošová upozorňuje na to, že každá závislosť kriví vnímanie, oberá človeka o schopnosť objektívne vnímať svet. Rovnako je to aj pri závislosti na mobilných telefónoch, ktorá je často spojená s nadmerným používaním sociálnych médií, ktoré môžu zvyšovať pocit neustáleho porovnávania sa s inými a vytvárať falošný obraz reality. Napríklad dievčatá sa porovnávajú s falošnými kráskami, ktoré sú upravené, vyretušované. Môže to u nich viesť k zníženému sebavedomiu, k depresiám, k anorexii.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2024 Higher Level — © State Examinations Commission.",
+    id: "slk-2024-hl-i-1-a", topicId: "slovakian-0-0", conceptId: "droga-odsek",
+    section: "I", questionRef: "2024 HL Section I Q1(a)",
+    questionText: "Vysvetlite vlastnými slovami výrazy: droga (1. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "návyková látka, ktorá je najprv príjemná, ale po čase škodlivá pre človeka", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints one price for Question 1, “(5 bodov)”, beside e), for the five expressions together; the scheme prices them “(5 × 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2024 Higher Level — © State Examinations Commission.",
+    id: "slk-2024-hl-i-1-b", topicId: "slovakian-0-0", conceptId: "monitoruje-odsek",
+    section: "I", questionRef: "2024 HL Section I Q1(b)",
+    questionText: "Vysvetlite vlastnými slovami výrazy: monitoruje (2. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "systematicky pozorovať, zbierať údaje", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints one price for Question 1, “(5 bodov)”, beside e), for the five expressions together; the scheme prices them “(5 × 1 bod)”. The scheme reprints the expression as “monitorovať”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2024 Higher Level — © State Examinations Commission.",
+    id: "slk-2024-hl-i-1-c", topicId: "slovakian-0-0", conceptId: "kyber-ikanovanie-odsek",
+    section: "I", questionRef: "2024 HL Section I Q1(c)",
+    questionText: "Vysvetlite vlastnými slovami výrazy: kyberšikanovanie (3. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "online obťažovanie, agresívne správanie, ponižovanie, urážky alebo hrozby najmä cez sociálne siete", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints one price for Question 1, “(5 bodov)”, beside e), for the five expressions together; the scheme prices them “(5 × 1 bod)”. The scheme reprints the expression as “kyberšikana”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2024 Higher Level — © State Examinations Commission.",
+    id: "slk-2024-hl-i-1-d", topicId: "slovakian-0-0", conceptId: "spankovy-dlh-odsek",
+    section: "I", questionRef: "2024 HL Section I Q1(d)",
+    questionText: "Vysvetlite vlastnými slovami výrazy: spánkový dlh (4. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "nedostatok spánku", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints one price for Question 1, “(5 bodov)”, beside e), for the five expressions together; the scheme prices them “(5 × 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2024 Higher Level — © State Examinations Commission.",
+    id: "slk-2024-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-najmenej-100-150-slov",
+    section: "II", questionRef: "2024 HL Section II Q1",
+    questionText: "Napíšte komentár (najmenej 100 - 150 slov) na tému: „Ten, kto nie je schopný mobil odložiť, nie je schopný ho ani rozumne používať.“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme reprints the task as: “Napíšte komentár (najmenej 100 slov) na tému:”. The scheme prints, as examples, not a checklist: “Obmedziť denný čas strávený na obrazovke pomocou aplikácií na správu času stráveného na obrazovke alebo pomocou zabudovaných funkcií na obmedzenie času stráveného na obrazovke.”; “Používať smartfón na produktívne aktivity, ako je profesionálna komunikácia, plánovanie trás, riadenie úloh a kalendárov.”; “Vyhnúť sa nadmernému používaniu sociálnych médií stanovením časových obmedzení na ich používanie a vyhýbaním sa súťaživému prechádzaniu obsahu.”; “Vypnúť alebo nastaviť režim ticha počas jedál alebo iných interakcií s ľuďmi okolo nás.”; “Chrániť súkromie použitím silných hesiel, aktivovaním možností ochrany osobných údajov a vyhýbaním sa zdieľaniu citlivých informácií online.”; “Praktizovať mierumilovnosť pri hrách a online zábave a vyhnúť sa nadmernému tráveniu času hraním hier alebo sledovaním videí.”; “Vypnúť alebo nastaviť režim lietania na smartfóne počas noci.”; “Byť si vedomý(á) environmentálneho dopadu smartfónov a recyklovať alebo znovu používať staré zariadenia, keď je to možné.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2024 Higher Level — © State Examinations Commission.",
+    id: "slk-2024-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-nech-internet-nie-jedinym-uto",
+    section: "III", questionRef: "2024 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Nech internet nie je jediným útočiskom pre deti.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2024 Higher Level — © State Examinations Commission.",
+    id: "slk-2024-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-inteligentny-vysava-bezpe-nostne-riziko",
+    section: "III", questionRef: "2024 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: „Aj inteligentný vysávač môže byť bezpečnostné riziko. Svet je zraniteľný a nebezpečný.“ Marek Jílek (etický hacker)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2031,17 +4073,18 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: byť zelený",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "„Byť zelený“ znamená správať sa ekologicky zodpovedne a podporovať ochranu životného prostredia, našej planéty.", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "„Byť zelený“ znamená správať sa ekologicky zodpovedne a podporovať ochranu životného prostredia, našej planéty.", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2054,17 +4097,18 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: sociálne siete",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Sú to webové stránky, ktorá umožňujú ľuďom s podobnými záujmami navzájom sa spájať vo virtuálnom svete a zdieľať informácie.", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Sú to webové stránky, ktorá umožňujú ľuďom s podobnými záujmami navzájom sa spájať vo virtuálnom svete a zdieľať informácie.", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2077,17 +4121,18 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: nákupná maniačka",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Osoba, ktorá má nadmernú túžbu po nakupovaní. Nakupuje veci, ktoré nepotrebuje, pri nakupovaní zažíva pocit uspokojenia alebo eufórie.", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Osoba, ktorá má nadmernú túžbu po nakupovaní. Nakupuje veci, ktoré nepotrebuje, pri nakupovaní zažíva pocit uspokojenia alebo eufórie.", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2100,17 +4145,18 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: hŕstka ľudí",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Malá skupina ľudí.", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Malá skupina ľudí.", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2123,17 +4169,18 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami výrazy: žijú bezobalovo",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nepoužívať plastové vrecká, fľaše a iné jednorazové obaly, nahradiť ich obalmi zo skla, papiera, látky alebo iného materiálu, ktorý sa v prírode rozloží.", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Nepoužívať plastové vrecká, fľaše a iné jednorazové obaly, nahradiť ich obalmi zo skla, papiera, látky alebo iného materiálu, ktorý sa v prírode rozloží.", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2146,17 +4193,18 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu opíšte, aká premena sa odohrala v živote Natálie Pažickej.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Natália Pažická bola voľakedy modelkou, ale po tom, čo zažila a videla na vlastné oči, sa jej zmenil hodnotový rebríček. Z osoby, ktorá sa živila tým, že inšpirovala verejnosť, aby túžili po nových modeloch šiat, sa teraz stala ekologická aktivistka. Na svojom instagramovom profile odhaľuje neférové a klamlivé praktiky módneho priemyslu. Z nákupnej maniačky sa stala greenfluenserka.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Natália Pažická bola voľakedy modelkou, ale po tom, čo zažila a videla na vlastné oči, sa jej zmenil hodnotový rebríček. Z osoby, ktorá sa živila tým, že inšpirovala verejnosť, aby túžili po nových modeloch šiat, sa teraz stala ekologická aktivistka. Na svojom instagramovom profile odhaľuje neférové a klamlivé praktiky módneho priemyslu. Z nákupnej maniačky sa stala greenfluenserka.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2169,17 +4217,18 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite, kto je greenfluencer a čomu sa venuje.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Je to človek, ktorý má vplyv na ostatných a používa tento vplyv na propagáciu ekologických a udržateľných životných praktík. Greenfluenceri zvyčajne zdieľajú tipy a odporúčania týkajúce sa ochrany životného prostredia, recyklácie, udržateľnej módy, znižovania odpadu a iných ekologických tém. Snažia sa inšpirovať a motivovať svojich nasledovníkov k zodpovednejšiemu a šetrnejšiemu životnému štýlu voči planéte. Títo jednotlivci využívajú sociálne médiá, blogy, videá a ďalšie platformy na šírenie týchto informácií.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Je to človek, ktorý má vplyv na ostatných a používa tento vplyv na propagáciu ekologických a udržateľných životných praktík. Greenfluenceri zvyčajne zdieľajú tipy a odporúčania týkajúce sa ochrany životného prostredia, recyklácie, udržateľnej módy, znižovania odpadu a iných ekologických tém. Snažia sa inšpirovať a motivovať svojich nasledovníkov k zodpovednejšiemu a šetrnejšiemu životnému štýlu voči planéte. Títo jednotlivci využívajú sociálne médiá, blogy, videá a ďalšie platformy na šírenie týchto informácií.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2192,17 +4241,18 @@ export const CARDS: SecCard[] = [
     questionText: "Uvažujte na základe textu a podľa vás, ako a prečo firmy používajú falošné reklamy.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Firmy môžu využívať klamné reklamy rôznymi spôsobmi, aby zvýšili svoj predaj, prilákali zákazníkov alebo vylepšili imidž svojej značky. Cieľom je ovplyvnili spotrebiteľov a zlepšiť svoju konkurencieschopnosť. Takéto reklamy aj zveličujú účinok výrobkov. Často v nich vidíme kozmetické výrobky, ktoré sľubujú, že okamžite vyhladia vrásky, alebo tabletky, s ktorými sa rýchlo schudne, aj keď vedecké dôkazy hovoria opak toho. Niektoré firmy využívajú v reklame zmanipulovaných „spokojných“ zákazníkov, ktorí tvrdia, že daný výrobok je skutočný zázrak. Ľudia si to objednajú a čoskoro zistia, že majú o jednu zbytočnú vec naviac.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Firmy môžu využívať klamné reklamy rôznymi spôsobmi, aby zvýšili svoj predaj, prilákali zákazníkov alebo vylepšili imidž svojej značky. Cieľom je ovplyvnili spotrebiteľov a zlepšiť svoju konkurencieschopnosť. Takéto reklamy aj zveličujú účinok výrobkov. Často v nich vidíme kozmetické výrobky, ktoré sľubujú, že okamžite vyhladia vrásky, alebo tabletky, s ktorými sa rýchlo schudne, aj keď vedecké dôkazy hovoria opak toho. Niektoré firmy využívajú v reklame zmanipulovaných „spokojných“ zákazníkov, ktorí tvrdia, že daný výrobok je skutočný zázrak. Ľudia si to objednajú a čoskoro zistia, že majú o jednu zbytočnú vec naviac.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2215,17 +4265,18 @@ export const CARDS: SecCard[] = [
     questionText: "Diskutuje o tom, prečo povedala Tatiana Heribanová: „Ak by všetci žili tak ako Európania, potrebovali by sme až 2,8-násobku našej planéty.“",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Európania vedú prevažne konzumný spôsob života. Veľa zarábajú, aby si mohli kupovať stále viac a viac, rodina má často 2 – 3 autá. Viackrát v roku chodia letecky na dovolenky, vymieňajú si nábytok za modernejší, neustále striedajú oblečenie, na všetky práce využívajú elektrické prístroje. Na takýto vysoký životný štandard Európa potrebuje stále viac a viac prírodných zdrojov a sama ich nemá dosť. Produkuje obrovské množstvo odpadu a emisií. Takto by sme potrebovali viac planét, než máme k dispozícii, aby sme ju udržali bez vyčerpania prírodných zásob.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Európania vedú prevažne konzumný spôsob života. Veľa zarábajú, aby si mohli kupovať stále viac a viac, rodina má často 2 – 3 autá. Viackrát v roku chodia letecky na dovolenky, vymieňajú si nábytok za modernejší, neustále striedajú oblečenie, na všetky práce využívajú elektrické prístroje. Na takýto vysoký životný štandard Európa potrebuje stále viac a viac prírodných zdrojov a sama ich nemá dosť. Produkuje obrovské množstvo odpadu a emisií. Takto by sme potrebovali viac planét, než máme k dispozícii, aby sme ju udržali bez vyčerpania prírodných zásob.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2238,18 +4289,79 @@ export const CARDS: SecCard[] = [
     questionText: "Diskutujte o význame vety: „Ak by mladí študenti mali medzi vyučovacími predmetmi environmentalistiku, vedelo by to formovať celú generáciu.“ Prečo áno a prečo nie.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ak by sa v školách zaviedol predmet environmentálna výchova, žiaci by sa viac dozvedeli o súčasných environmentálnych problémoch, ako je zmena klímy, znečistenie ovzdušia a vody, vyčerpávanie prírodných zdrojov a motivovalo by ich to k tomu, aby sa správali zodpovednejšie k životnému prostrediu. Naučili by sa, že ochrana životného prostredia je ich osobnou zodpovednosťou a že ako spotrebitelia alebo budúci lídri, môžu mať veľký vplyv na svet okolo seba. Tento predmet by možno prebudil ich záujem o profesie v oblasti environmentálnej vedy a ekológie. V rámci predmetu by mohli realizovať aj rôzne eko projekty. Takto vychovávaní mladí ľudia by si vedeli lepšie uvedomiť hodnotu prírody a nutnosť jej ochrany.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ak by sa v školách zaviedol predmet environmentálna výchova, žiaci by sa viac dozvedeli o súčasných environmentálnych problémoch, ako je zmena klímy, znečistenie ovzdušia a vody, vyčerpávanie prírodných zdrojov a motivovalo by ich to k tomu, aby sa správali zodpovednejšie k životnému prostrediu. Naučili by sa, že ochrana životného prostredia je ich osobnou zodpovednosťou a že ako spotrebitelia alebo budúci lídri, môžu mať veľký vplyv na svet okolo seba. Tento predmet by možno prebudil ich záujem o profesie v oblasti environmentálnej vedy a ekológie. V rámci predmetu by mohli realizovať aj rôzne eko projekty. Takto vychovávaní mladí ľudia by si vedeli lepšie uvedomiť hodnotu prírody a nutnosť jej ochrany.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2025 Higher Level — © State Examinations Commission.",
+    id: "slk-2025-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-100-150-slov-temu",
+    section: "II", questionRef: "2025 HL Section II Q1",
+    questionText: "Napíšte komentár od 100 do 150 slov na tému: „Tento svet nepotrebuje len hŕstku ľudí, ktorí žijú bezobalovo a vegánsky. Potrebujeme milióny ľudí, ktorí sa trochu snažia.“",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sú ľudia, pre ktorých je ochrana životného prostredia veľmi dôležitá a sú ochotní jesť len rastlinnú stravu, nakupujú len bio potraviny a využívajú obaly z prírodných materiálov. Takýchto ľudí je menšina v porovnaní s tými, ktorí vedú konzumný spôsob života. Ale aj títo môžu malými krokmi prispieť k zlepšeniu a ochrane životného prostredia, len to musia robiť systematicky a, vedome.", marks: null, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints this paragraph and, under “Je to napríklad:”, the points below it, with no marks and no criteria." },
+    { id: "r-2", kind: "point", verbatim: "Nejesť každý deň mäso.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Vymeniť klasické žiarovky za energeticky úsporné.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Dôsledne separovať plasty, kov, sklo, papier.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Inštalovať v záhradke kompostovače.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Častejšie nakupovať v secondhande.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Zbierať dažďovú vodu a polievať ňou kvety v byte a záhradu.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Chodiť do práce pešo, na bicykli alebo využívať covoiturage, zdieľanie áut.", marks: null },
+    { id: "r-9", kind: "point", verbatim: "Nahradiť chemické čistiace prostriedky prírodnými, ako napríklad ocot, citrón, sóda bicarbona.", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Šetriť vodou, opraviť kvapkajúce kohútiky, zlé vodovodné tesnenie.", marks: null },
+    { id: "r-11", kind: "point", verbatim: "Nakupovať u lokálnych výrobcov.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2025 Higher Level — © State Examinations Commission.",
+    id: "slk-2025-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-svet-ktorom-chceme-buducnosti-potrebuje",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "Napíšte esej (najmenej 300 slov) na jednu z dvoch nasledovných tém: Svet, v ktorom chceme žiť v budúcnosti, potrebuje správne kroky už dnes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (najmenej 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part, and no criteria anywhere in this scheme.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2025 Higher Level — © State Examinations Commission.",
+    id: "slk-2025-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-objavovanim-prirody-lovek-objavuje-sam",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "Napíšte esej (najmenej 300 slov) na jednu z dvoch nasledovných tém: „Objavovaním prírody človek objavuje sám seba.“ Belo Kapolka (spisovateľ a vysokohorský chatár)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (najmenej 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part, and no criteria anywhere in this scheme.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2261,17 +4373,18 @@ export const CARDS: SecCard[] = [
     questionText: "záplava nekvalitných publikácií (2. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "veľké množstvo tlačených textov pre verejnosť s veľmi nízkou kvalitou", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "veľké množstvo tlačených textov pre verejnosť s veľmi nízkou kvalitou", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2284,17 +4397,18 @@ export const CARDS: SecCard[] = [
     questionText: "špekulant (2. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "podvodník, ktorý chce niečo získať nečestným spôsobom", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "podvodník, ktorý chce niečo získať nečestným spôsobom", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2307,17 +4421,18 @@ export const CARDS: SecCard[] = [
     questionText: "mykológ (2. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "odborník na huby", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "odborník na huby", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2330,17 +4445,18 @@ export const CARDS: SecCard[] = [
     questionText: "polopravda (4. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "polopravdy – tvrdenia, ktoré obsahujú len čiastočne pravdivú informáciu, zvyšok je klamstvo a prekrútená informácia", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "tvrdenia, ktoré obsahujú len čiastočne pravdivú informáciu, zvyšok je klamstvo a prekrútená informácia", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2353,17 +4469,18 @@ export const CARDS: SecCard[] = [
     questionText: "nezanechať stopu na internete (5. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "nie sú o ňom žiadne osobné informácie na internetových stránkach ani záznamy o jeho aktivite a tvorbe", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "nie sú o ňom žiadne osobné informácie na internetových stránkach ani záznamy o jeho aktivite a tvorbe", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2376,17 +4493,18 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu vymenujte príklady, aké chyby sa môžu vyskytnúť v publikáciách vytvorených umelou inteligenciou.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Na obrázkoch omaľovaniek, ktoré vydala umelá inteligencia, sú tyranosaury často deformované, s nesprávnym množstvom nôh či prstov. V knihe o hubách je informácia, že hubu treba ochutnať, aby sme zistili, či je jedlá, pričom odborníci mykológovia upozorňujú, že táto metóda je nebezpečná a môžeme sa pritom otráviť.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Na obrázkoch omaľovaniek, ktoré vydala umelá inteligencia, sú tyranosaury často deformované, s nesprávnym množstvom nôh či prstov. V knihe o hubách je informácia, že hubu treba ochutnať, aby sme zistili, či je jedlá, pričom odborníci mykológovia upozorňujú, že táto metóda je nebezpečná a môžeme sa pritom otráviť.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2399,17 +4517,18 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu a podľa vás vysvetlite, prečo je dôležitá práca takých subjektov, ako je firma Originality.ai.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Firma Originality.ai. sa venuje kontrole textov, ktoré napísala umelá inteligencia a identifikovaním autorstva textov, či sú produktom ľudskej tvorby alebo výtvorom umelej inteligencie. Kontroluje podozrivé texty, plagiáty, odhaľuje vymyslené autorstvo, stále vymýšľa nové metódy, pretože umelá inteligencia sa stále zdokonaľuje, čiže odhaľovanie podvodov je nekonečný boj.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Firma Originality.ai. sa venuje kontrole textov, ktoré napísala umelá inteligencia a identifikovaním autorstva textov, či sú produktom ľudskej tvorby alebo výtvorom umelej inteligencie. Kontroluje podozrivé texty, plagiáty, odhaľuje vymyslené autorstvo, stále vymýšľa nové metódy, pretože umelá inteligencia sa stále zdokonaľuje, čiže odhaľovanie podvodov je nekonečný boj.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2422,17 +4541,18 @@ export const CARDS: SecCard[] = [
     questionText: "Uvažujte o tom, prečo a ako treba uplatniť kritické myslenie konkrétne pri kupovaní kníh.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kritické myslenie je dôležitý nástroj pri kupovaní kníh, pretože pomáha vybrať kvalitnú literatúru. Môžeme zistiť, či je autor odborník v téme, o ktorej píše, aké je jeho vzdelanie, aké knihy už publikoval. Prečítať si recenzie na knihu od ostatných odborníkov, porovnať recenzie s inými knihami. Takto sa vyhneme nákupu druhotriednych alebo zavádzajúcich materiálov.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kritické myslenie je dôležitý nástroj pri kupovaní kníh, pretože pomáha vybrať kvalitnú literatúru. Môžeme zistiť, či je autor odborník v téme, o ktorej píše, aké je jeho vzdelanie, aké knihy už publikoval. Prečítať si recenzie na knihu od ostatných odborníkov, porovnať recenzie s inými knihami. Takto sa vyhneme nákupu druhotriednych alebo zavádzajúcich materiálov.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2445,17 +4565,18 @@ export const CARDS: SecCard[] = [
     questionText: "Uvažujte, aké zásady by mal dodržiavať zodpovedný používateľ umelej inteligencie.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Zodpovedný používateľ umelej inteligencie by si mal jasne stanoviť, aký má cieľ a mal by si byť vedomý, že výsledkom svojej práce by nemal nikomu škodiť alebo niekoho diskriminovať. Mal by uviesť, že pri práci si pomáhal umelou inteligenciou a nemal by tvrdiť, že všetko urobil sám bez pomoci. Keď používa umelú inteligenciu, mal by vystupovať pod svojím vlastným a nie pod falošným menom. Mal by si byť vedomý, že ak zverejní nejaké nesprávne tvrdenia, bude niesť zodpovednosť a môže byť za to potrestaný. Ak zistí zneužitie alebo nesprávne tvrdenia vytvorené umelou inteligenciou, mal by o tom informovať správcu umelej inteligencie.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Zodpovedný používateľ umelej inteligencie by si mal jasne stanoviť, aký má cieľ a mal by si byť vedomý, že výsledkom svojej práce by nemal nikomu škodiť alebo niekoho diskriminovať. Mal by uviesť, že pri práci si pomáhal umelou inteligenciou a nemal by tvrdiť, že všetko urobil sám bez pomoci. Keď používa umelú inteligenciu, mal by vystupovať pod svojím vlastným a nie pod falošným menom. Mal by si byť vedomý, že ak zverejní nejaké nesprávne tvrdenia, bude niesť zodpovednosť a môže byť za to potrestaný. Ak zistí zneužitie alebo nesprávne tvrdenia vytvorené umelou inteligenciou, mal by o tom informovať správcu umelej inteligencie.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
   {
@@ -2468,17 +4589,73 @@ export const CARDS: SecCard[] = [
     questionText: "Diskutujte o myšlienke z textu: „Spoločensky sú veľmi nebezpečné dezinformačné texty.“",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Dezinformácie môžu byť veľmi nebezpečné pre spoločnosť. Ľudia si len málokedy overujú zdroj informácií na internete a keď dostanú nejakú kurióznu informáciu, ktorú považujú za pravdivú, šíria ju ďalej. Ovplyvňuje to názory ľudí na svetové, politické, ekologické a iné problémy. Dezinformácie menia postoj ľudí k rôznym historickým udalostiam, napríklad začnú tvrdiť, že holokaust neexistoval. A počas pandémie covidu sa šírili informácie, že očkovanie je vlastne čipovanie ľudí alebo že oslabuje imunitu. Mnohí ľudia odmietali očkovanie, čím ohrozili svoj život. Ľudia sa dajú ovplyvniť aj klamstvami, ktoré politici šíria o svojich protivníkoch, a potom volia nedemokratické politické strany. Vedie to k oslabeniu demokracie v krajine.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Dezinformácie môžu byť veľmi nebezpečné pre spoločnosť. Ľudia si len málokedy overujú zdroj informácií na internete a keď dostanú nejakú kurióznu informáciu, ktorú považujú za pravdivú, šíria ju ďalej. Ovplyvňuje to názory ľudí na svetové, politické, ekologické a iné problémy. Dezinformácie menia postoj ľudí k rôznym historickým udalostiam, napríklad začnú tvrdiť, že holokaust neexistoval. A počas pandémie covidu sa šírili informácie, že očkovanie je vlastne čipovanie ľudí alebo že oslabuje imunitu. Mnohí ľudia odmietali očkovanie, čím ohrozili svoj život. Ľudia sa dajú ovplyvniť aj klamstvami, ktoré politici šíria o svojich protivníkoch, a potom volia nedemokratické politické strany. Vedie to k oslabeniu demokracie v krajine.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on its own first page: \"Všetky odpovede musia byť napísané po slovensky.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2026 Higher Level — © State Examinations Commission.",
+    id: "slk-2026-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-100-150-slov-ktorom",
+    section: "II", questionRef: "2026 HL Section II Q1",
+    questionText: "Napíšte komentár (100 – 150 slov) v ktorom rozviniete tému: „Rastú aj riziká spojené s umelou inteligenciou.“",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Čím viac sa ľudia budú spoliehať na umelú inteligenciu, tým budú lenivejší a menej budú rozvíjať svoje schopnosti, najmä tvorivé myslenie.", marks: null, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme heads these points: “Riziká sú napríklad tieto:”. It reprints the task as: “Napíšte komentár (najmenej 100 slov) na tému:”." },
+    { id: "r-2", kind: "point", verbatim: "Cez umelú inteligenciu môžu sa zverejniť nejaké tajné informácie, ktoré súvisia s bezpečnosťou.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Pretože je umelá inteligencia pri riešení úloh omnoho rýchlejšia ako človek, mnoho ľudí môže prísť o prácu, lebo budú nahradení a aby sa mohli zamestnať, musia sa rekvalifikovať.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Pri vypracovávaní rôznych úloh pri štúdiu je možné, že žiaci a študenti budú využívať umelú inteligenciu a úlohy budú vydávať za svoje, môže to viesť ku klamstvu a podvádzaniu.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Umelá inteligencia vie napodobniť prejav a hlas človeka tak verne, že sa nedá rozoznať od originálu. Takto sa dajú vyrábať rôzne falošné vyhlásenia a šíriť dezinformácie. Je ťažké ich odhaliť.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Autonómne autá riadené umelou inteligenciou môžu byť technologicky napadnuté a potom môžu byť ovládané zvonka. Okrem toho sú veľmi drahé.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2026 Higher Level — © State Examinations Commission.",
+    id: "slk-2026-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-udska-inteligencia-fascinovana-pirovana-alebo",
+    section: "III", questionRef: "2026 HL Section III Q1",
+    questionText: "Napíšte esej (najmenej 300 slov) na jednu z dvoch nasledovných tém: Ľudská inteligencia je fascinovaná, inšpirovaná alebo ohrozená umelou inteligenciou?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints the instruction as “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part, and no criteria anywhere in this scheme.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2026 Higher Level — © State Examinations Commission.",
+    id: "slk-2026-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-ivot-znamena-pracova-nie-horolezec",
+    section: "III", questionRef: "2026 HL Section III Q2",
+    questionText: "Napíšte esej (najmenej 300 slov) na jednu z dvoch nasledovných tém: „Život znamená pracovať, nie mať. Horolezec šplhá na vrchol, aby ho dosiahol, nie aby sa ho zmocnil.“ Tomáš Janovic",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints the instruction as “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part, and no criteria anywhere in this scheme.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
 ];

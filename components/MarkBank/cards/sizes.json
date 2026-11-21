@@ -135,51 +135,51 @@
   "ordinary": 143
  },
  "latvian": {
-  "higher": 20
+  "higher": 167
  },
  "czech": {
-  "higher": 15
+  "higher": 155
  },
  "ancient-greek": {
   "higher": 369,
   "ordinary": 35
  },
  "modern-greek": {
-  "higher": 79
+  "higher": 142
  },
  "hungarian": {
-  "higher": 168
+  "higher": 219
  },
  "bulgarian": {
-  "higher": 141
+  "higher": 219
  },
  "slovakian": {
-  "higher": 140
+  "higher": 206
  },
  "swedish": {
-  "higher": 121
+  "higher": 191
  },
  "estonian": {
-  "higher": 107
+  "higher": 172
  },
  "finnish": {
-  "higher": 90
+  "higher": 168
  },
  "croatian": {
-  "higher": 100
+  "higher": 151
  },
  "danish": {
-  "higher": 79
+  "higher": 126
  },
  "slovenian": {
-  "higher": 23
+  "higher": 60
  },
  "mandarin-chinese": {
   "higher": 114,
   "ordinary": 87
  },
  "ukrainian": {
-  "higher": 20
+  "higher": 26
  },
  "dcg": {
   "higher": 767,
@@ -190,7 +190,7 @@
   "ordinary": 390
  },
  "maltese": {
-  "higher": 76
+  "higher": 77
  },
  "politics-and-society": {
   "higher": 263,

@@ -38,10 +38,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2010 Higher Level — © State Examinations Commission.",
     id: "est-2010-hl-i-1-a", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2010 HL Section I Q1(a)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: mürgikokteilid (2. ja 6. lõik) välja surema (3. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: mürgikokteilid (2. ja 6. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tooted, mis sisaldavad erinevaid säilitusaineid, värvaineid, lõhnaaineid, kantserogeenseid aineid (vähkitekitavad ained) transrasvu või kemikaalide jääke. Isegi kui nende ainete osakaal jääb lubatu piiresse, mõjuvad need meie tervisele kahjulikult, põhjustades allergiaid, rasvumist, südame- ja veresoonkonna haigusi.", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "tooted, mis sisaldavad erinevaid säilitusaineid, värvaineid, lõhnaaineid, kantserogeenseid aineid (vähkitekitavad ained) transrasvu või kemikaalide jääke. Isegi kui nende ainete osakaal jääb lubatu piiresse, mõjuvad need meie tervisele kahjulikult, põhjustades allergiaid, rasvumist, südame- ja veresoonkonna haigusi.", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -52,7 +52,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -62,10 +62,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2010 Higher Level — © State Examinations Commission.",
     id: "est-2010-hl-i-1-b", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2010 HL Section I Q1(b)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: rämps (4. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: välja surema (3. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "välja surema (3. lõik) – lõplikult kaduma, eksisteerimast lakkama, uksi sulgema, inimtühjaks jääma", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "lõplikult kaduma, eksisteerimast lakkama, uksi sulgema, inimtühjaks jääma", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -76,7 +76,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -86,10 +86,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2010 Higher Level — © State Examinations Commission.",
     id: "est-2010-hl-i-1-c", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2010 HL Section I Q1(c)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: hämamine (4. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: rämps (4. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "rämps (4. lõik) – madalakvaliteediline, väärtusetu; tühine, vilets", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "madalakvaliteediline, väärtusetu; tühine, vilets", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -100,7 +100,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -110,10 +110,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2010 Higher Level — © State Examinations Commission.",
     id: "est-2010-hl-i-1-d", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2010 HL Section I Q1(d)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: ennustamatu (9. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: hämamine (4. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "hämamine (4. lõik) – petlike lubaduste ja tõe moonutamisega eksitamine", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "petlike lubaduste ja tõe moonutamisega eksitamine", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -124,7 +124,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -134,10 +134,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2010 Higher Level — © State Examinations Commission.",
     id: "est-2010-hl-i-1-e", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2010 HL Section I Q1(e)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid:",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: ennustamatu (9. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ennustamatu (9. lõik) – pole võimalik oletada, mis juhtub; ettearvamatu Vasta teksti põhjal küsimustele, kasutades oma sõnu ja täislauseid", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "pole võimalik oletada, mis juhtub; ettearvamatu", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -148,7 +148,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -161,7 +161,7 @@ export const CARDS: SecCard[] = [
     questionText: "Miks on teadlik ja tervislik toitumine tänapäeval keeruline?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Peamiseks otsustajaks on sissetulek. Kui sissetulekud on piiratud, ostavad inimesed enamasti toitu suurtest supermarketitest, sest need on hindade poolest odavamad kui väikepoed. Tervislikumad ökotooted ja mahekaubad on keskmise tarbija jaoks liiga kallid. Väikepoed surevad välja, sest nad ei püsi konkurentsis.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Peamiseks otsustajaks on sissetulek. Kui sissetulekud on piiratud, ostavad inimesed enamasti toitu suurtest supermarketitest, sest need on hindade poolest odavamad kui väikepoed. Tervislikumad ökotooted ja mahekaubad on keskmise tarbija jaoks liiga kallid. Väikepoed surevad välja, sest nad ei püsi konkurentsis.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -172,7 +172,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -185,7 +185,7 @@ export const CARDS: SecCard[] = [
     questionText: "„Kuid meie igapäevased mürgikokteilid tuuakse poelettidelt toidulauale enamalt jaolt suure hämamise ja varjamisega.” Kuidas seda autori arvates tehakse?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Peamiseks põhjuseks on probleemid tooteinfoga. Tihti on teave toote koostise kohta kas liiga pealiskaudne või puudub üldse. Etiketid on kas liiga väikeses kirjas, tekst siltidel ostjate jaoks arusaamatu või sõnum peidetud. Ometi on kõike võimalik müüa – kampaaniaid korraldades, hinnasoodustusi tehes või toote atraktiivsele välimusele rõhudes on võimalik inimeste tähelepanu toote koostiselt eemale juhtida ja see maha müüa. Inimeste ostuteadlikkus on küllaltki madal. Vasta teksti põhjal küsimustele, kasutades oma sõnu ja täislauseid", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Peamiseks põhjuseks on probleemid tooteinfoga. Tihti on teave toote koostise kohta kas liiga pealiskaudne või puudub üldse. Etiketid on kas liiga väikeses kirjas, tekst siltidel ostjate jaoks arusaamatu või sõnum peidetud. Ometi on kõike võimalik müüa – kampaaniaid korraldades, hinnasoodustusi tehes või toote atraktiivsele välimusele rõhudes on võimalik inimeste tähelepanu toote koostiselt eemale juhtida ja see maha müüa. Inimeste ostuteadlikkus on küllaltki madal.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -196,7 +196,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -206,10 +206,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2010 Higher Level — © State Examinations Commission.",
     id: "est-2010-hl-i-5", topicId: "estonian-0-1", conceptId: "artikkel-kannab-pealkirja-kellele-transrasvad-kasulikud",
     section: "I", questionRef: "2010 HL Section I Q5",
-    questionText: "5. Artikkel kannab pealkirja „Kellele on transrasvad kasulikud?” Kellele nad kasu toovad? Arutle teksti põhjal, kas nad peaksid kellelegi kasu tooma või mitte.",
+    questionText: "Artikkel kannab pealkirja „Kellele on transrasvad kasulikud?” Kellele nad kasu toovad? Arutle teksti põhjal, kas nad peaksid kellelegi kasu tooma või mitte.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Transrasvadest jm E-ainetest saavad kindlasti enim kasu töösturid ja tootjad. Transrasvade kasutamine toidu koostises on kõige odavam viis toote valmistamiseks, kuna nii muutub toote säilivusaeg pikemaks, toote välimus atraktiivsemaks ning toodet on lihtsam transportida, samuti hoitakse ka toote hind madalana. Loomulikult on ainus eesmärk toota kasumit. Toidu kvaliteet, tarbijate tervis ja keskkonnakaitse on äri seisukohast teisejärguline. Seni, kuni inimeste teadlikkus on madal ja ostmisel lähtutakse ainult hinnast, saavad tootjad kasu edasi. Kannatajateks loomulikult tarbijad ja nende tervis (ülekaalulisus, allergiad, haigused). Inimesed peaksid pöörama rohkem tähelepanu toidu kvaliteedile ja päritolule.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Transrasvadest jm E-ainetest saavad kindlasti enim kasu töösturid ja tootjad. Transrasvade kasutamine toidu koostises on kõige odavam viis toote valmistamiseks, kuna nii muutub toote säilivusaeg pikemaks, toote välimus atraktiivsemaks ning toodet on lihtsam transportida, samuti hoitakse ka toote hind madalana. Loomulikult on ainus eesmärk toota kasumit. Toidu kvaliteet, tarbijate tervis ja keskkonnakaitse on äri seisukohast teisejärguline. Seni, kuni inimeste teadlikkus on madal ja ostmisel lähtutakse ainult hinnast, saavad tootjad kasu edasi. Kannatajateks loomulikult tarbijad ja nende tervis (ülekaalulisus, allergiad, haigused). Inimesed peaksid pöörama rohkem tähelepanu toidu kvaliteedile ja päritolule.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -220,7 +220,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -231,9 +231,11 @@ export const CARDS: SecCard[] = [
     id: "est-2010-hl-i-6", topicId: "estonian-0-1", conceptId: "euroopa-liit-suhtub-nailiselt-tosiselt-tanapaeva",
     section: "I", questionRef: "2010 HL Section I Q6",
     questionText: "„Euroopa Liit suhtub näiliselt tõsiselt tänapäeva toiduainetega seotud probleemidesse.” Selgita loetu põhjal, mida teeb Euroopa Liit nende probleemide lahendamiseks? Kas seda on sinu arvates piisavalt? Selgita, miks / miks mitte.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Loetu põhjal otsustades piirdub Euroopa Liidu (Euroopa Komisjoni) roll toiduaineid puudutavates küsimustes valdavalt seadusandliku rolliga, kusjuures väga olulistes toiduainetega seotud valdkondades nagu kliimaküsimused või biotehnoloogia mõjutavad seaduste loomist töösturid. Nad kuuluvad ekspertgruppidesse, keda kaasatakse seadusloomesse ja seetõttu saavad nad sekkuda otsustamisse. Toiduainete koostisosade väljatoomine pakenditel ei ole paljudes liikmesriikides tootjatele kohustuslik. Selleks et transrasvade pakendil näitamine ja piirnormide esitamine kõigile liikmesriikidele kohustuslikuks teha, tuleb eelnevalt teha põhjalikke uuringuid, analüüsida riske ja määratleda ühtsed piirnormid, mis on väga töömahukas, aeganõudev ja ilmselt ka kulukas protsess. Ilmselt jääb probleemi lahendamine paljuski hoopiski huvipuuduse taha, sest valitsused lähtuvad otsustamisel ennekõike töösturite huvidest. Ei ole piisav, ELi kõigil liikmesriikidel peaks olema ühtsed reeglid toiduainete tooteinfo avaldamiseks ja ühtlustatud transrasvade jm lisaainete kasutamise piirnormid. Tarbijatel on õigus teada, millest nende toit tehtud on. II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Loetu põhjal otsustades piirdub Euroopa Liidu (Euroopa Komisjoni) roll toiduaineid puudutavates küsimustes valdavalt seadusandliku rolliga, kusjuures väga olulistes toiduainetega seotud valdkondades nagu kliimaküsimused või biotehnoloogia mõjutavad seaduste loomist töösturid. Nad kuuluvad ekspertgruppidesse, keda kaasatakse seadusloomesse ja seetõttu saavad nad sekkuda otsustamisse.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
+    { id: "r-2", kind: "point", verbatim: "Toiduainete koostisosade väljatoomine pakenditel ei ole paljudes liikmesriikides tootjatele kohustuslik. Selleks et transrasvade pakendil näitamine ja piirnormide esitamine kõigile liikmesriikidele kohustuslikuks teha, tuleb eelnevalt teha põhjalikke uuringuid, analüüsida riske ja määratleda ühtsed piirnormid, mis on väga töömahukas, aeganõudev ja ilmselt ka kulukas protsess. Ilmselt jääb probleemi lahendamine paljuski hoopiski huvipuuduse taha, sest valitsused lähtuvad otsustamisel ennekõike töösturite huvidest.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Ei ole piisav, ELi kõigil liikmesriikidel peaks olema ühtsed reeglid toiduainete tooteinfo avaldamiseks ja ühtlustatud transrasvade jm lisaainete kasutamise piirnormid. Tarbijatel on õigus teada, millest nende toit tehtud on.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -244,8 +246,84 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2010 Higher Level — © State Examinations Commission.",
+    id: "est-2010-hl-i-4", topicId: "estonian-0-1", conceptId: "selgita-tekstile-toetudes-millised-ohud-ahvardavad",
+    section: "I", questionRef: "2010 HL Section I Q4",
+    questionText: "Selgita tekstile toetudes, millised ohud ähvardavad 0-km-toidu kontseptsiooni kaasajal?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Seni on kõige tervislikumaks peetud võimalikult kodu ligidal kasvanud toitu, sest see on säilitusainetevaba ja puhas. Geograafilised ja looduslikud tingimused loevad üha vähem, sest tänu säilitusainete kasutamisele on võimalik toitu toota just seal, kus see tootjate jaoks kõige odavam ning tarnida seda müügiks kuhu iganes maailmas, sest toote säilivusaeg on tänu säilitusainete olemasolule pikk.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme heads them: “Võimalikud vastused:”." },
+    { id: "r-2", kind: "point", verbatim: "Keskkonnaprobleemid – puhast ja looduslähedast toitu pole võimalik enam kasvatada, sest ümbritsev keskkond on saastatud.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Tarbimishullus ning brändikultuse levik Ameerikast ja Euroopast Aafrikasse ja Aasiasse – kogu maailmas tarbitakse massiliselt samu tooteid/brände.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2010 Higher Level — © State Examinations Commission.",
+    id: "est-2010-hl-ii-1", topicId: "estonian-1-0", conceptId: "kui-valitsused-kaitsmas-suurtoosturite-huve-siis",
+    section: "II", questionRef: "2010 HL Section II Q1",
+    questionText: "„Kui valitsused on kaitsmas suurtöösturite huve, siis tuleb vaadata, mida tarbijad oma huvide kaitseks ette võtta saavad.” (9. lõik) Kuidas saavad tarbijad oma huve kaitsta? Kirjuta umbes 100sõnaline kommentaar oma seisukoha põhjenduseks.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 100sõnaline ladus kommentaar tõestamaks teksti sisust arusaamist.", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Teadlikum ostmine: suhtumise muutumine, harjumuste muutmine, eelistuste muutmine”; “Tarbida teadlikult ja targalt: keskkonnasäästlikkus, tervislikkus, toote hinna ja kvaliteedi suhe”; “Harjumuste muutmine: kas eelistada pooltooteid (või valmis- või kiirtoitu) või küpsetada ise, kas eelistada mahepoode ja turgu või supermarketeid, kas kasvatada ise puu- ja köögivilja või osta välismaiseid, kas kodumaine toit või teadmata päritoluga importtoit, kas kvaliteet või hind; ajapuudus”; “Suhtumise muutmine – sotsiaalne surve (nt naabrid, sõbrad, koolikaaslased), trendid (nt dieettooted, rämpstoit, kaalujälgimine), tarbijate teavitamine ja reklaam – pakendid, nende märgistamine, meedia mõju ja reklaam”; “Kaitstud tarbija (tarbijate õigused, tarbijakaitse, seadused) versus teadlik tarbija (valikuvõimalused, keskkonnast hoolimine, tervislikkus, teadlikkus)”; “Aktiivsed kodanikud, kollektiivsed protestikampaaniad, keeldumine rämpstoidust”. The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. ÜLESANNE",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2010 Higher Level — © State Examinations Commission.",
+    id: "est-2010-hl-iii-1", topicId: "estonian-1-1", conceptId: "keegi-ole-saar-mainimatajatmine-tahenda-valetamist",
+    section: "III", questionRef: "2010 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Keegi ei ole saar",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2010 Higher Level — © State Examinations Commission.",
+    id: "est-2010-hl-iii-2", topicId: "estonian-1-1", conceptId: "mainimatajatmine-tahenda-valetamist",
+    section: "III", questionRef: "2010 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Mainimatajätmine ei tähenda valetamist",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -254,10 +332,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2011 Higher Level — © State Examinations Commission.",
     id: "est-2011-hl-i-1-a", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2011 HL Section I Q1(a)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: mandunud (3. lõik) vaatama alt üles (kellelegi) (6. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: mandunud (3. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "halvenenud, alla käinud", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "halvenenud, alla käinud", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -268,7 +346,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -278,10 +356,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2011 Higher Level — © State Examinations Commission.",
     id: "est-2011-hl-i-1-b", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2011 HL Section I Q1(b)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: jääme (kellelegi) alla (6. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: vaatama alt üles (kellelegi) (6. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "vaatama alt üles (kellelegi) – kedagi austama, imetlema", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "kedagi austama, imetlema", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -292,7 +370,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -302,10 +380,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2011 Higher Level — © State Examinations Commission.",
     id: "est-2011-hl-i-1-c", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2011 HL Section I Q1(c)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: tuimus (8. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: jääme (kellelegi) alla (6. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "jääme (kellelegi) alla – jääme kaotajaks", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "jääme kaotajaks", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -316,7 +394,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -326,10 +404,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2011 Higher Level — © State Examinations Commission.",
     id: "est-2011-hl-i-1-d", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2011 HL Section I Q1(d)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: pilama (10. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: tuimus (8. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tuimus – tundetus, elutus", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "tundetus, elutus", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -340,7 +418,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -350,10 +428,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2011 Higher Level — © State Examinations Commission.",
     id: "est-2011-hl-i-1-e", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2011 HL Section I Q1(e)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid:",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: pilama (10. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "pilama – narrima, pilkama Vasta teksti põhjal küsimustele, sõnastades loetu oma sõnadega", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "narrima, pilkama", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -364,7 +442,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -377,7 +455,7 @@ export const CARDS: SecCard[] = [
     questionText: "Nimeta omadusi, millega araablased ja lääne inimesed üksteist kirjeldavad.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Lääne inimesed on põhimõttevabad ja allakäinud, neil puudub usk ja nad hoolivad ainult omaenda materiaalsest heaolust. Araablasi peetakse kirjaoskamatuteks fundamentalistideks, nad on fanaatikud, kellelt võib oodata terroriakte.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Lääne inimesed on põhimõttevabad ja allakäinud, neil puudub usk ja nad hoolivad ainult omaenda materiaalsest heaolust. Araablasi peetakse kirjaoskamatuteks fundamentalistideks, nad on fanaatikud, kellelt võib oodata terroriakte.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -388,7 +466,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -401,7 +479,7 @@ export const CARDS: SecCard[] = [
     questionText: "Milliseid iseloomujooni peavad eestlased autori arvates endale kõige omasemaks?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Positiivseteks joonteks lisaks töökusele on eestlaste tagasihoidlikkus, rahumeelsus ja praktilisus (kuid mitte naiivsus). Negatiivseteks omadusteks on kadedus ja rivaalitsemine (ärapanemine, teistele koha kättenäitamine, nende paikapanemine) Vasta teksti põhjal küsimustele, kasutades oma sõnu ja täislauseid", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Positiivseteks joonteks lisaks töökusele on eestlaste tagasihoidlikkus, rahumeelsus ja praktilisus (kuid mitte naiivsus). Negatiivseteks omadusteks on kadedus ja rivaalitsemine (ärapanemine, teistele koha kättenäitamine, nende paikapanemine)", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -412,7 +490,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -425,7 +503,7 @@ export const CARDS: SecCard[] = [
     questionText: "Milliste iseloomuomaduste järgi tunneb enamik rahvaid oma naabreid? Selgita, millest on selline suhtumine tingitud.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Oma naabrites nähakse ennekõike halbu iseloomujooni. See on tingitud rahvuslikest ja kultuurilistest vastuoludest konkreetsete rahvuste vahel. Tihti on põhjused psühholoogilised: enesehinnangu säilitamiseks on meil vaja end naabritega võrrelda ning selleks peame end veenma, et oleme neist paremad ja et nemad on meist halvemad, kuid tihti ei pruugi see nii olla. Lisaks sõltub tänapäeval palju sellest, kellega end võrrelda – naabrite ring aina laieneb ning tihti on neil rohkem eeldusi meist üle olla (nt parem elatustase, rohkem majanduslikke vahendeid, inimressursse (nt rohkem andekaid), ajalooline taust jne.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Oma naabrites nähakse ennekõike halbu iseloomujooni. See on tingitud rahvuslikest ja kultuurilistest vastuoludest konkreetsete rahvuste vahel. Tihti on põhjused psühholoogilised: enesehinnangu säilitamiseks on meil vaja end naabritega võrrelda ning selleks peame end veenma, et oleme neist paremad ja et nemad on meist halvemad, kuid tihti ei pruugi see nii olla. Lisaks sõltub tänapäeval palju sellest, kellega end võrrelda – naabrite ring aina laieneb ning tihti on neil rohkem eeldusi meist üle olla (nt parem elatustase, rohkem majanduslikke vahendeid, inimressursse (nt rohkem andekaid), ajalooline taust jne.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -436,7 +514,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -449,7 +527,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selgita, mida peetakse tekstis sinu arvates silmas väljendiga „rahvuslik stereotüüp”.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Uskumus või lihtsustatud arvamus, milline üks või teine rahvas on. Alateadlik ettekujutus, milline on teine rahvus sotsiaalsest, vaimsest ja füüsilisest seisukohast. Enamasti on tegemist eksliku arvamusega.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Uskumus või lihtsustatud arvamus, milline üks või teine rahvas on. Alateadlik ettekujutus, milline on teine rahvus sotsiaalsest, vaimsest ja füüsilisest seisukohast. Enamasti on tegemist eksliku arvamusega.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -460,7 +538,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -473,7 +551,7 @@ export const CARDS: SecCard[] = [
     questionText: "„Keegi on kunagi öelnud, et inimesel on lootust niikaua, kuni ta suudab veel iseenda üle naerda.“ Miks oskus enda üle naerda on vajalik? Selgita.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Näitab, et oleme avatud ja tolerantsed teiste suhtes. Oskus näha enda puudusi ja oskus enda üle naerda näitab enesekindlust, intelligentsust ja kriitilist meelt, mis omakorda aitab meil näha oma vigu ja leida omaenda nõrgad kohad. Võimaldab meil mõista, et stereotüübid ei kirjelda inimeste igapäevast käitumist, vaid pärinevad ajaloost. II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Näitab, et oleme avatud ja tolerantsed teiste suhtes. Oskus näha enda puudusi ja oskus enda üle naerda näitab enesekindlust, intelligentsust ja kriitilist meelt, mis omakorda aitab meil näha oma vigu ja leida omaenda nõrgad kohad. Võimaldab meil mõista, et stereotüübid ei kirjelda inimeste igapäevast käitumist, vaid pärinevad ajaloost.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -484,8 +562,58 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2011 Higher Level — © State Examinations Commission.",
+    id: "est-2011-hl-ii-1", topicId: "estonian-1-0", conceptId: "stereotuupidel-nimelt-uks-halb-omadus-need",
+    section: "II", questionRef: "2011 HL Section II Q1",
+    questionText: "„Stereotüüpidel on nimelt üks halb omadus – need piiravad meid ja takistavad meil mõista nii oma kultuuri kui ka teisi kultuure ning need häirivad ka kultuuridevahelist kommunikatsiooni“ (11. lõik) Kuidas teeb eelarvamustevaba suhtumine teistesse inimestesse nende mõistmise ja nendega suhtlemise lihtsamaks? Kirjuta umbes 100sõnaline kommentaar oma seisukoha põhjenduseks.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 100sõnaline ladus kommentaar, tõestamaks teksti sisust arusaamist.", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Eelarvamustevaba suhtumine tähendab teiste aktsepteerimist sellistena nagu nad on, siirust, mõistmist, tähelepanelikkust ning inimlikkust suhtlemisel, sõbralikku ja lugupidavat lähenemist teistele ning vastastikust austust. Hinnanguvaba suhtumine teistesse ning avatus kriitikale teeb meist paremad suhtlejad ja kuulajad”; “Vabadus eelarvamustest muudab meid igapäevases suhtluses rohkem teiste inimestega arvetavaks ning suurendab empaatiat ja sallivust (kaaskodanikud, erivajadustega inimesed, erinevad vanuse-, rahvus-, rassi- ja soogrupid, erinevad sotsiaalsed, seksuaalsed ning kultuurihuvid jne)”; “Konfliktide ennetamine ja vägivallatus – eelarvamustevaba lähenemine vähendab kiusamist, vägivalda, ahistamist, diskrimineerimist”; “Positiivne suhtumine ja hea suhtlemisoskus aitab ümbritsevat paremini analüüsida, seda paremaks muuta, olla säästlikum, väärtustada oma kultuuri ja näidata üles huvi teiste kultuuride vastu”. The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. ÜLESANNE:",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2011 Higher Level — © State Examinations Commission.",
+    id: "est-2011-hl-iii-1", topicId: "estonian-1-1", conceptId: "enamik-inimesi-just-nii-onnelikud-kui",
+    section: "III", questionRef: "2011 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. „Enamik inimesi on just nii õnnelikud, kui õnnelikud nad on otsustanud olla“. (Abraham Lincoln (1809–1865), Ameerika Ühendriikide 16. president)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2011 Higher Level — © State Examinations Commission.",
+    id: "est-2011-hl-iii-2", topicId: "estonian-1-1", conceptId: "vordlemine-osa-meie-koigi-igapaevast",
+    section: "III", questionRef: "2011 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Võrdlemine on osa meie kõigi igapäevast",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -494,20 +622,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2012 Higher Level — © State Examinations Commission.",
     id: "est-2012-hl-i-1-a", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2012 HL Section I Q1(a)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: tõekspidamine ebausk",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: tõekspidamine",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "veendumus, arusaam", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "veendumus, arusaam", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -517,20 +646,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2012 Higher Level — © State Examinations Commission.",
     id: "est-2012-hl-i-1-b", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2012 HL Section I Q1(b)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: ratsionaalne",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: ebausk",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ebausk – väärusk, paganausk, ebausuga on seotud maagilised toimingud", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "väärusk, paganausk, ebausuga on seotud maagilised toimingud", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -540,20 +670,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2012 Higher Level — © State Examinations Commission.",
     id: "est-2012-hl-i-1-c", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2012 HL Section I Q1(c)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: autoriteet",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: ratsionaalne",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ratsionaalne – mõistuspärane, kainelt asjalik, tunnetele vähe ruumi jättev", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "mõistuspärane, kainelt asjalik, tunnetele vähe ruumi jättev", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -563,20 +694,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2012 Higher Level — © State Examinations Commission.",
     id: "est-2012-hl-i-1-d", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2012 HL Section I Q1(d)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: välja juurima",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: autoriteet",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "autoriteet – mõjuvõimas (vaimselt), lugupeetud, tunnustatud isik", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "mõjuvõimas (vaimselt), lugupeetud, tunnustatud isik", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -586,20 +718,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2012 Higher Level — © State Examinations Commission.",
     id: "est-2012-hl-i-1-e", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2012 HL Section I Q1(e)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid:",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: välja juurima",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "välja juurima – eemaldama, välja rookima, juurtega koos välja võtma Vasta teksti põhjal küsimusele, sõnastades loetu ümber oma sõnadega.", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "eemaldama, välja rookima, juurtega koos välja võtma", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -612,17 +745,18 @@ export const CARDS: SecCard[] = [
     questionText: "Kuidas mõjutavad paranormaalsed uskumused inimeste käitumist? (8. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tihti hakkavad inimesed ebakindlas olukorras või kriisisituatsioonis, hirmus või teadmatuses tuleviku ees otsima abi kõrgematelt jõududelt ning uskuma meist endist sõltumatutesse teguritesse. Nii leiavad tegevust näiteks ennustajad, selgeltnägijad, nõiad, astroloogid.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Tihti hakkavad inimesed ebakindlas olukorras või kriisisituatsioonis, hirmus või teadmatuses tuleviku ees otsima abi kõrgematelt jõududelt ning uskuma meist endist sõltumatutesse teguritesse. Nii leiavad tegevust näiteks ennustajad, selgeltnägijad, nõiad, astroloogid.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -635,17 +769,18 @@ export const CARDS: SecCard[] = [
     questionText: "Milliste tunnuste põhjal rühmitab autor paranormaalseid uskumusi? (2. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Autor jagab paranormaalsed uskumused religioosseteks ja traditsioonilisteks uskumusteks. Religioossete alla liigituvad uskumused, mis on omased kristlikule mõtteviisile – näiteks uskumine Taevasse ja Põrgusse. Traditsiooniliste paranormaalsete uskumuste tunnuseks on vastuolu loodusseadustega (nt selgeltnägemine, maagiline tervendamine, horoskoobid). Vasta teksti põhjal küsimusele, kasutades oma sõnu ja täislauseid.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Autor jagab paranormaalsed uskumused religioosseteks ja traditsioonilisteks uskumusteks. Religioossete alla liigituvad uskumused, mis on omased kristlikule mõtteviisile – näiteks uskumine Taevasse ja Põrgusse. Traditsiooniliste paranormaalsete uskumuste tunnuseks on vastuolu loodusseadustega (nt selgeltnägemine, maagiline tervendamine, horoskoobid).", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -656,20 +791,124 @@ export const CARDS: SecCard[] = [
     id: "est-2012-hl-i-6", topicId: "estonian-0-1", conceptId: "inimesed-soovi-uskuda-keskset-autoriteeti-vaid",
     section: "I", questionRef: "2012 HL Section I Q6",
     questionText: "„... inimesed ei soovi uskuda keskset autoriteeti, vaid eelistavad midagi lokaalsemat ning konkreetsemat ...“ (7. lõik). Selgita nelja näite varal, kuidas selline nähtus Eestis avaldub.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nõidade, pendlimeeste, tervendajate, ennustajate jm näol on tegemist konkreetsete isikutega, seetõttu saavad inimesed end nendega paremini samastada ning endale neisse uskumist paremini põhjendada. Uskumine paranormaalsetesse fenomenidesse veenab inimesi et nad on mõistuspärased ega usu millessegi ilma põhjuseta. Kõiksugu tervendajad ja imetegijad jätavad rohkem ruumi fantaasiale ja avardavad inimeste valikuvõimalusi oma probleemidele lahenduse leidmiseks. Eesti ebakindel ühiskondlik olukord, inimeste majanduslik ebavõrdsus ja teadmatus tuleviku ees muudavad eestlased igasugustele alternatiividele vastuvõtlikumaks. (• Eestlaste jahe suhtumine usku vaatamata paljudele aegade jooksul tehtud katsetele eestlasi religioonile lähemale tuua. Eestlased eelistavad uskuda paranormaalseid tegevusi ja üleloomulikke võimeid.) II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Nõidade, pendlimeeste, tervendajate, ennustajate jm näol on tegemist konkreetsete isikutega, seetõttu saavad inimesed end nendega paremini samastada ning endale neisse uskumist paremini põhjendada.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
+    { id: "r-2", kind: "point", verbatim: "Uskumine paranormaalsetesse fenomenidesse veenab inimesi et nad on mõistuspärased ega usu millessegi ilma põhjuseta.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Kõiksugu tervendajad ja imetegijad jätavad rohkem ruumi fantaasiale ja avardavad inimeste valikuvõimalusi oma probleemidele lahenduse leidmiseks.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Eesti ebakindel ühiskondlik olukord, inimeste majanduslik ebavõrdsus ja teadmatus tuleviku ees muudavad eestlased igasugustele alternatiividele vastuvõtlikumaks.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "(• Eestlaste jahe suhtumine usku vaatamata paljudele aegade jooksul tehtud katsetele eestlasi religioonile lähemale tuua. Eestlased eelistavad uskuda paranormaalseid tegevusi ja üleloomulikke võimeid.)", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2012 Higher Level — © State Examinations Commission.",
+    id: "est-2012-hl-i-4", topicId: "estonian-0-1", conceptId: "seega-ebaloogiline-jareldada-kuulumine-ateistlikku-idablokki",
+    section: "I", questionRef: "2012 HL Section I Q4",
+    questionText: "„Seega on ebaloogiline järeldada, et kuulumine ateistlikku idablokki oleks suutnud muuta uskliku meelelaadi ilmalikuks ...“ Selgita artikli 3. lõigu põhjal, miks autor nii arvab.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kommunistlik režiim püüdis usku igati maha suruda, pannes sellega aluse paranormaalsete uskumuste ulatuslikumale levikule. Siiski toimis see protsess kommunismimaades erinevalt – nt religiooni ja kristluse suhtes niigi jaheda suhtumisega riikides nagu Eesti ja Läti leidsid paranormaalsed uskumused tõesti rohkem kandepinda. Samas jäid traditsioonilised religioossed maad nagu näiteks Poola ja Rumeenia usuvastasele survele vaatamata tihedalt religiooni ning uskliku meelelaadiga seotuks. Järelikult ei saa väita, et kõik postkommunistlikud riigid on ühesugused ja et neis kõigis suhtutakse religiooni ja paranormaalsetesse uskumustesse samal moel. Riikide religioosne taust on väga erinev.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2012 Higher Level — © State Examinations Commission.",
+    id: "est-2012-hl-i-5", topicId: "estonian-0-1", conceptId: "religioossete-toekspidamiste-austamine-tootab-ebausu-suhtes",
+    section: "I", questionRef: "2012 HL Section I Q5",
+    questionText: "„Religioossete tõekspidamiste austamine töötab ebausu suhtes kahte pidi – ühelt poolt on inimesed, kes usuvad jumalat, rohkem altid uskuma ka teisi teaduslikult seletamatuid nähtusi. Teisalt aga on sügavalt usklikud ning usku praktiseerivad inimesed vähem vastuvõtlikud teistsuguste nähtuste aktsepteerimisele ...“ (4. lõik). Selgita tekstile tuginedes, kuidas autor seda väidet tõestab.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Autor tõestab oma väidet Ameerika ja Malta näite varal. Mõlemad maad on religioossed, ent suhtumine ebausku neis maades on erinev. Kuigi usk ei ole USAs enam nii rangelt praktiseeritav kui varasematel aegadel, on see endiselt tugev ja mõjukas. Ameeriklaste kultuuriline mitmekesisus ja muretu ellusuhtumine/moraal on religiooni karmust nõrgestanud ning inimeste vastuvõtuvõimet alternatiivsete uskumuste, seletamatute nähtuste ning müstitsismi suhtes suurendanud. See näitab, et usku kõikvõimalikesse paranormaalsetesse sündmustesse ja usku jumalasse on võimalik harrastada käsikäes. See teeb Ameerikast ühe ebausklikuma lääne riigi.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
+    { id: "r-2", kind: "point", verbatim: "Malta seevastu on teise äärmusena jäikade usutraditsioonidega maa, kus järgitakse väga täpselt usulisi rituaale ja ettekirjutusi. Ettekirjutatud reeglitest kõrvalekaldumine läheb usu ja kristliku moraaliga vastuollu, ning see on põhjus, miks maltalased on ebausu suhtes suhteliselt vastuvõtmatud.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2012 Higher Level — © State Examinations Commission.",
+    id: "est-2012-hl-ii-1", topicId: "estonian-1-0", conceptId: "artikkel-kannab-pealkirja-miks-usume-muinasjuttudesse",
+    section: "II", questionRef: "2012 HL Section II Q1",
+    questionText: "Artikkel kannab pealkirja „Miks me usume muinasjuttudesse?“ Kas sinu arvates selgub artiklist, miks me nendesse usume? Kirjuta umbes 100sõnaline kommentaar oma seisukoha põhjenduseks.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 100sõnaline ladus kommentaar, tõestamaks teksti sisust arusaamist.", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Eestlaste usul muinasjuttudesse on palju põhjusi. Kindlasti saab seda usku seletada näiteks infokülluse ja meedia rolliga, ajaloolise taustaga, jumalakauge maailmavaatega, rahva puuduliku koolihariduse ning vähese kultuurilise teadlikkusega kuni 19. sajandi keskpaigani, ateistliku režiimi usuvastase pärandiga, kaasaja ühiskonna ebastabiilsete majanduslike tingimuste ja ebavõrdsusega, eestlastele omase praktilisuse ja kaine mõistusega jne.”; “Lisaks saab muinasjuttudesse uskumist seletada ka näiteks üleilmastumise ja maailma avardumisega (maausu kõrval levivad kõikvõimalikud uususundid ja spirituaalsed praktikad, nt New Age, Jehoova tunnistajad, saientoloogia, energiapüramiidid, feng shui), tarbimishulluse ja popkultuuri levimisega, inimeste kaugenemisega loodusest ja lääne ühiskonna tehislikkusega (nt looduslikud ravivõimed ja -meetodid on unustusse vajumas), elukeskkonna saastumisega, tänapäevaste terviseprobleemidega (nt ebatervislikud eluviisid, valed toitumisharjumused, haigused, uimastid, alkoholism, liigne kehakaal jne), rahvusliku konservatiivsuse ning umbusklikkusega kõige vastu, mis on uus ja teistsugune, inimeste rumaluse, lihtsameelsuse, kõleda kliima või tundetute kaasinimestega jne.”. The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. ÜLESANNE:",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2012 Higher Level — © State Examinations Commission.",
+    id: "est-2012-hl-iii-1", topicId: "estonian-1-1", conceptId: "lootusel-mitu-nagu",
+    section: "III", questionRef: "2012 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Lootusel on mitu nägu",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2012 Higher Level — © State Examinations Commission.",
+    id: "est-2012-hl-iii-2", topicId: "estonian-1-1", conceptId: "meie-tanapaeva-uhiskonnas-koik-keskendunud-siia",
+    section: "III", questionRef: "2012 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Meie tänapäeva ühiskonnas on kõik keskendunud siia ja praegu",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -681,17 +920,18 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: põletav probleem",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "päevakohane, oluline, kiiret lahendust vajav probleem", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "päevakohane, oluline, kiiret lahendust vajav probleem", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -704,17 +944,18 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: inimtekkeline",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "inimese tekitatud", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "inimese tekitatud", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -727,17 +968,18 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: panema ühele kaardile",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "mündil on teine külg – asjal on teine pool, teine lähenemisnurk, teine nägemus", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "kõigega riskima, kõike kaalule panema", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -750,17 +992,18 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: mündil on teine külg",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ühele kaardile panema – kõigega riskima, kõike kaalule panema", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "asjal on teine pool, teine lähenemisnurk, teine nägemus", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -773,17 +1016,18 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: (millegi) armutu kulutamine",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "halastamatu, karm kulutamine Vasta teksti põhjal küsimusele, sõnastades loetu ümber oma sõnadega", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "halastamatu, karm kulutamine", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -796,17 +1040,18 @@ export const CARDS: SecCard[] = [
     questionText: "Kuidas seletatakse artiklis Kyōto kliimaleppe olemust?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Lepe sõlmiti 1997 Ameerika asepresident Al Gore’i algatusel. See kohustab riike, kes leppega ühinenud, vähendama kasvuhoonegaaside tekitamist või hoidma seda senisel tasemel. Lepinguga on riikidele kehtestatud saastemaksud ja kohustuslikud CO2 kvoodid.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Lepe sõlmiti 1997 Ameerika asepresident Al Gore’i algatusel. See kohustab riike, kes leppega ühinenud, vähendama kasvuhoonegaaside tekitamist või hoidma seda senisel tasemel. Lepinguga on riikidele kehtestatud saastemaksud ja kohustuslikud CO2 kvoodid.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -819,17 +1064,18 @@ export const CARDS: SecCard[] = [
     questionText: "Millised on globaalse soojenemise põhjused ja tagajärjed? (3. lõigu põhjal)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kliimasoojenemise peamiseks põhjustajaks peetakse inimest ja tema aktiivset tööstustegevust, mille tulemusel paiskub õhku suurel hulgal süsihappegaasi. Suur süsihappegaasi sisaldus atmosfääris toob kaasa selle, et maapind ei suuda vajalikul määral sooja kiirata ning hakkab soojenema. Sellele järgneb kliimakatastroof – polaaralade jääkiht hakkab sulama, kergitades ookeanide veetaset ning vesi uputab üle rannikualad ja suured maismaa piirkonnad. Prognoositakse ka paljude põllualade kõrbestumist, mis viiks maailma silmitsi näljahädaga. Vasta teksti põhjal küsimusele, kasutades oma sõnu ja täislauseid", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kliimasoojenemise peamiseks põhjustajaks peetakse inimest ja tema aktiivset tööstustegevust, mille tulemusel paiskub õhku suurel hulgal süsihappegaasi. Suur süsihappegaasi sisaldus atmosfääris toob kaasa selle, et maapind ei suuda vajalikul määral sooja kiirata ning hakkab soojenema. Sellele järgneb kliimakatastroof – polaaralade jääkiht hakkab sulama, kergitades ookeanide veetaset ning vesi uputab üle rannikualad ja suured maismaa piirkonnad. Prognoositakse ka paljude põllualade kõrbestumist, mis viiks maailma silmitsi näljahädaga.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -842,17 +1088,18 @@ export const CARDS: SecCard[] = [
     questionText: "„Teadlaste hulgas leidub ka vandenõulasteks nimetatud skeptikuid, kes julgevad kliima globaalse soojenemise teooria kahtluse alla seada.“ (6. lõik) Selgita, miks on osa teadlasi kliimaküsimuses skeptilised.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nad ei nõustu väitega, et kliima soojenemine on ainult inimtegevuse tagajärg. Nad toovad esiteks välja, et kliimasoojenemist puudutavad andmed hõlmavad liiga lühikesi vaatlusperioode ning et omavahel on segamini aetud ilmastiku muutuste ja kliimamuutuste mõisted. Veel väidavad nad, et kasvuhoonegaaside mõju on arvatust väiksem. Lõpetuseks leiavad nad, et vaatamata sellele, et maakera keskmine temperatuur on tõusnud ja süsihappegaasi tase kõrge, esineb muidki kliimat mõjutavad tegureid. Näiteks on meredel ja ookeanidel oluline roll kliima soojendajana, sest väidetavalt neeldub tervelt 70% päikesekiirgusest ookeanides.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Nad ei nõustu väitega, et kliima soojenemine on ainult inimtegevuse tagajärg. Nad toovad esiteks välja, et kliimasoojenemist puudutavad andmed hõlmavad liiga lühikesi vaatlusperioode ning et omavahel on segamini aetud ilmastiku muutuste ja kliimamuutuste mõisted. Veel väidavad nad, et kasvuhoonegaaside mõju on arvatust väiksem. Lõpetuseks leiavad nad, et vaatamata sellele, et maakera keskmine temperatuur on tõusnud ja süsihappegaasi tase kõrge, esineb muidki kliimat mõjutavad tegureid. Näiteks on meredel ja ookeanidel oluline roll kliima soojendajana, sest väidetavalt neeldub tervelt 70% päikesekiirgusest ookeanides.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -865,17 +1112,18 @@ export const CARDS: SecCard[] = [
     questionText: "Kas planeedi globaalne soojenemine on loetu põhjal otsustades tõepoolest inimtegevuse tagajärg? Esita oma arvamus.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Osaliselt kindlasti, sest inimtegevusega paisatakse atmosfääri suurel hulgal süsihappegaasi, kuid nagu tekstist selgub, moodustab see vaid tühise osa kogu atmosfääri paiskuvast süsihappegaasist. Suurem osa sellest tekib looduslike protsesside, näiteks vulkaanipurske, kõdunemise ning õhuauru tõttu. Artiklis mainitakse ühe kliima soojenemise põhjusena päikese aktiivsuse muutumist. Lisaks sellele on oluline osa Atlandil ja Arktikas põhjast lõunasse suunduvatel arktilistel antitsüklonitel, mis toovad kaasa külmad ja lumerohked talved, aga ka lõunast põhja kulgevatel soojadel õhumassidel, mis põhjustavad tavapärasest kõrgemaid temperatuure sellistes piirkondades nagu Gröönimaa ja Kanada. Peale selle selgub tekstist, et kui võrrelda tänapäeva kliimamustrit kunagiste külmade jääaegade vahel valitsenud soojemate perioodidega, võib tõdeda, et praegune olukord ei ole kasvuhoonegaaside sisalduse osas hullem kui noil soojematel aegadel.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Osaliselt kindlasti, sest inimtegevusega paisatakse atmosfääri suurel hulgal süsihappegaasi, kuid nagu tekstist selgub, moodustab see vaid tühise osa kogu atmosfääri paiskuvast süsihappegaasist. Suurem osa sellest tekib looduslike protsesside, näiteks vulkaanipurske, kõdunemise ning õhuauru tõttu. Artiklis mainitakse ühe kliima soojenemise põhjusena päikese aktiivsuse muutumist. Lisaks sellele on oluline osa Atlandil ja Arktikas põhjast lõunasse suunduvatel arktilistel antitsüklonitel, mis toovad kaasa külmad ja lumerohked talved, aga ka lõunast põhja kulgevatel soojadel õhumassidel, mis põhjustavad tavapärasest kõrgemaid temperatuure sellistes piirkondades nagu Gröönimaa ja Kanada. Peale selle selgub tekstist, et kui võrrelda tänapäeva kliimamustrit kunagiste külmade jääaegade vahel valitsenud soojemate perioodidega, võib tõdeda, et praegune olukord ei ole kasvuhoonegaaside sisalduse osas hullem kui noil soojematel aegadel.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -888,18 +1136,56 @@ export const CARDS: SecCard[] = [
     questionText: "Artikkel kannab pealkirja „Kas jääkarud ikka jäävad ellu?” Arutle selle väite üle artikli konteksti silmas pidades.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Näiteks: kliimasoojenemine põhjustab põhjapoolsete alade soojenemise ja merejää sulamise, mis paneb jääkarud silmitsi täiesti uute tingimustega – nende senine elustiil muutub, küttimisvõimalused kahanevad ja toiduvalik on piiratum. Kahtlemata avaldavad need muutused mõju karude arvukusele, kuid arvan, et kuna jääkarud on ajaloo vältel toime tulnud erinevate ilmastikutingimustega, on lootust, et nad elavad üle ka praeguse soojaperioodi ja kohandavad oma elu ja harjumused uute tingimustega. II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "kliimasoojenemine põhjustab põhjapoolsete alade soojenemise ja merejää sulamise, mis paneb jääkarud silmitsi täiesti uute tingimustega – nende senine elustiil muutub, küttimisvõimalused kahanevad ja toiduvalik on piiratum. Kahtlemata avaldavad need muutused mõju karude arvukusele, kuid arvan, et kuna jääkarud on ajaloo vältel toime tulnud erinevate ilmastikutingimustega, on lootust, et nad elavad üle ka praeguse soojaperioodi ja kohandavad oma elu ja harjumused uute tingimustega.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme heads its answer “Näiteks:”: what it gives is an example, not a required list." },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Estonian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Estonian 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2013 Higher Level — © State Examinations Commission.",
+    id: "est-2013-hl-ii-1", topicId: "estonian-1-0", conceptId: "artikli-loigus-mainitakse-filmi-pealkirjaga-ebamugav",
+    section: "II", questionRef: "2013 HL Section II Q1",
+    questionText: "Artikli 4. lõigus mainitakse filmi pealkirjaga „Ebamugav tõde“. Kuidas mõistad sina seda pealkirja? Kirjuta umbes 100sõnaline arvamus oma seisukoha põhjenduseks.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 100sõnaline ladus kommentaar, tõestamaks teksti sisust arusaamist.", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Aina sagedamad looduskatastroofid – orkaan Sandy Ameerikas, Jaapani tsunami, võimsad maavärinad Haitil, Uus-Meremaal, suured üleujutused Austraalias ja Pakistanis, paduvihmad ja kuumalained Kesk-Euroopas, taifuunid, maalihked, tulekahjud jne – inimkonna ennast ja loodust hävitava tegevuse tulemus?”; “Planeedi kohanemine üha kasvava rahvaarvuga ning toimetulek inimkonna kasvava vee-, energia-, sooja ning toiduvajaduse, isikliku sõiduauto ja muude läänelike eluhüvede rahuldamisega.”; “Üksikindiviidi säästev suhtumine – alternatiivsete energiaallikate kasutamine, elektriautode ning ühistranspordi eelistamine, energiasäästlikud majad, prügi sorteerimine, tarbimise vähendamine – kas sellest piisab, et vähendada atmosfääri reostust ja hoida keskkonda.”; “Keskkonna saastatus ja selle mõju inimese elu kvaliteedile – joogivee olukord, õhusaaste, toidu kvaliteet.”; “Millise keskkonna pärandame me järeltulevatele põlvedele? Kas kulutused kasvuhoonegaaside piiramiseks on mõttetu raiskamine? Kas kliimasoojenemisega on võimalik üldse võidelda?”. The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. ÜLESANNE:",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2013 Higher Level — © State Examinations Commission.",
+    id: "est-2013-hl-iii-1", topicId: "estonian-1-1", conceptId: "kirjuta-umbes-300-sonaline-arutlev-kirjand",
+    section: "III", questionRef: "2013 HL Section III Q1",
+    questionText: "Kirjuta umbes 300-sõnaline arutlev kirjand. Vali üks antud teemadest.\nInimene on looduse kroon\nVÕI\nOma unistuste täide viimine – kibemagus teekond",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -908,10 +1194,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2014 Higher Level — © State Examinations Commission.",
     id: "est-2014-hl-i-1-a", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2014 HL Section I Q1(a)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: aktuaalne küsimus (1. lõik) empaatiavõime (2. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: aktuaalne küsimus (1. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "päevakohane, antud hetkel tähtis teema", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "päevakohane, antud hetkel tähtis teema", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -922,7 +1208,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -932,10 +1218,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2014 Higher Level — © State Examinations Commission.",
     id: "est-2014-hl-i-1-b", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2014 HL Section I Q1(b)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: aateline mõtlemine (5. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: empaatiavõime (2. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "empaatiavõime – oskus kaasa elada, kaasa tunda, mõista", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "oskus kaasa elada, kaasa tunda, mõista", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -946,7 +1232,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -956,10 +1242,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2014 Higher Level — © State Examinations Commission.",
     id: "est-2014-hl-i-1-c", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2014 HL Section I Q1(c)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: ürgne vajadus (6. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: aateline mõtlemine (5. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "aateline mõtlemine – ülev, kõrge, ideeline mõtlemine", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "ülev, kõrge, ideeline mõtlemine", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -970,7 +1256,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -980,10 +1266,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2014 Higher Level — © State Examinations Commission.",
     id: "est-2014-hl-i-1-d", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2014 HL Section I Q1(d)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: funktsionaalselt kirjaoskamatu (7. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: ürgne vajadus (6. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ürgne vajadus – iidne, põline, igivana", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "iidne, põline, igivana", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -994,7 +1280,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1004,10 +1290,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2014 Higher Level — © State Examinations Commission.",
     id: "est-2014-hl-i-1-e", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2014 HL Section I Q1(e)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid:",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: funktsionaalselt kirjaoskamatu (7. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "funktsionaalselt kirjaoskamatu – tunneb tähti, oskab lugeda ja kirjutada, kuid ei saa aru teksti mõttest; teksti lugedes saab aru üksikutest sõnadest, kuid ei mõista kogu teksti; mõistab kõige lihtsamat teksti Vasta teksti põhjal küsimusele, sõnastades loetu ümber oma sõnadega", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "tunneb tähti, oskab lugeda ja kirjutada, kuid ei saa aru teksti mõttest; teksti lugedes saab aru üksikutest sõnadest, kuid ei mõista kogu teksti; mõistab kõige lihtsamat teksti", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1018,7 +1304,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1031,7 +1317,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mida peetakse silmas mõistega „ideede kriis” teksti 4. lõigus?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Valitseb massikultuur ja massimeelelahutus. Korduvad samad süžeed ja samad teemad, ideid ja fantaasiat uuteks väljakutseteks napib.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Valitseb massikultuur ja massimeelelahutus. Korduvad samad süžeed ja samad teemad, ideid ja fantaasiat uuteks väljakutseteks napib.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1042,7 +1328,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1055,7 +1341,7 @@ export const CARDS: SecCard[] = [
     questionText: "Artikli 2. lõigus mainitakse seost mittelugemise ja asotsiaalse käitumise vahel. Kuidas seda seost põhjendada?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Lugemine arendab inimese empaatiavõime kõrval tema sotsiaalset võimekust, mis aitab tal elus edasi jõuda ja ühiskonnaelus hakkama saada. Mittelugeval inimesel seda võimet napib, seetõttu neil suurem võimalus välja või kõrvale jääda. Vasta teksti põhjal küsimusele, kasutades oma sõnu ja täislauseid", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Lugemine arendab inimese empaatiavõime kõrval tema sotsiaalset võimekust, mis aitab tal elus edasi jõuda ja ühiskonnaelus hakkama saada. Mittelugeval inimesel seda võimet napib, seetõttu neil suurem võimalus välja või kõrvale jääda.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1066,7 +1352,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1079,7 +1365,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selgita loetu põhjal, milline mõju on mittelugevatel inimestel ühiskonna toimimisele?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kuna pole piisavalt kujutlusvõimet ja abstraktset mõtlemist, ei saada hästi aru ühiskonnas toimuvatest protsessidest ega osata sel teemal kaasa rääkida. Mida rohkem on selliseid inimesi, kes ei saa aru, ei mõtle kaasa ega osale ühiskonnaelu protsessides, seda lihtsam on neid manipuleerida. Mida suurem hulk mõjutatavaid, seda enam taandareneb ühiskond. Ühiskond vajab arenguks värskeid ideid ja mõtlemisvõimelisi kodanikke.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kuna pole piisavalt kujutlusvõimet ja abstraktset mõtlemist, ei saada hästi aru ühiskonnas toimuvatest protsessidest ega osata sel teemal kaasa rääkida. Mida rohkem on selliseid inimesi, kes ei saa aru, ei mõtle kaasa ega osale ühiskonnaelu protsessides, seda lihtsam on neid manipuleerida. Mida suurem hulk mõjutatavaid, seda enam taandareneb ühiskond. Ühiskond vajab arenguks värskeid ideid ja mõtlemisvõimelisi kodanikke.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1090,7 +1376,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1103,7 +1389,7 @@ export const CARDS: SecCard[] = [
     questionText: "„Lagunenud identiteedi ja igavlevate inimestega maailm ei ole kindlasti parim paik.” Tekstile tuginedes selgita seda autori väidet. Kas oled tema seisukohaga nõus? Miks / miks mitte?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Identiteet on väga oluline. Keel on identiteedi kandja ning rahvuste ja riikide/tsivilisatsioonide kestmajäämise alus. Inimesed teavad, kes nad on ja kust nad tulevad just lugude jutustamise kaudu. Lugemine ja jutustamine rikastavad inimese sõnavara, korrektne emakeeleoskus aitab ennast selgelt väljendada, see arendab inimese mõtlemis- ja analüüsioskust, muutes seeläbi ühiskonda paremaks. Praeguse arvutipõlvkonna vähene lugemus ja passiivsus ümbritsevate protsesside suhtes muudavad elu üksluiseks ja ebahuvitavaks; järgneb vaimne taandareng nii inimese kui ühiskonna tasemel. Seda ilmselt ei soovi meist keegi, sest igaüks tahaks elada arenevas ja hästi toimivas ühiskonnas.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Identiteet on väga oluline. Keel on identiteedi kandja ning rahvuste ja riikide/tsivilisatsioonide kestmajäämise alus. Inimesed teavad, kes nad on ja kust nad tulevad just lugude jutustamise kaudu. Lugemine ja jutustamine rikastavad inimese sõnavara, korrektne emakeeleoskus aitab ennast selgelt väljendada, see arendab inimese mõtlemis- ja analüüsioskust, muutes seeläbi ühiskonda paremaks. Praeguse arvutipõlvkonna vähene lugemus ja passiivsus ümbritsevate protsesside suhtes muudavad elu üksluiseks ja ebahuvitavaks; järgneb vaimne taandareng nii inimese kui ühiskonna tasemel. Seda ilmselt ei soovi meist keegi, sest igaüks tahaks elada arenevas ja hästi toimivas ühiskonnas.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1114,7 +1400,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1127,7 +1413,7 @@ export const CARDS: SecCard[] = [
     questionText: "„Kirjandus peaks olema üks haridussüsteemi olulisemaid aineid. Lugemise propageerimine peaks olema riikliku tähtsusega tegevus.” Arutle teksti põhjal, miks on lugemise propageerimine eluliselt tähtis just eriti noorte hulgas?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tänapäeva noored ei huvitu ei lugemisest ega kirjutamisest, inimestevaheline otsesuhtlus on minimaalne. Samuti on nad massimeelelahutuse agarad tarbijad. Võimutsevad arvutid, nutitelefonid ja tehnoloogia. Seetõttu peaks noori kooli ajal kindlasti rohkem lugema suunama, et areneks sõnavara ja jutustamisoskus, samuti kirjutamisoskus. Uuringud näitavad, et elus hakkama saamise ja tulevikus edukas olemise nimel peaks kooliajal palju ilukirjandust lugema. Lugemisest lugupidavatel inimestel on vähem võimalusi jääda sõltuvaks nt riigi abirahadest või sattuda kuritegelikule teele. II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Tänapäeva noored ei huvitu ei lugemisest ega kirjutamisest, inimestevaheline otsesuhtlus on minimaalne. Samuti on nad massimeelelahutuse agarad tarbijad. Võimutsevad arvutid, nutitelefonid ja tehnoloogia. Seetõttu peaks noori kooli ajal kindlasti rohkem lugema suunama, et areneks sõnavara ja jutustamisoskus, samuti kirjutamisoskus. Uuringud näitavad, et elus hakkama saamise ja tulevikus edukas olemise nimel peaks kooliajal palju ilukirjandust lugema. Lugemisest lugupidavatel inimestel on vähem võimalusi jääda sõltuvaks nt riigi abirahadest või sattuda kuritegelikule teele.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1138,8 +1424,58 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2014 Higher Level — © State Examinations Commission.",
+    id: "est-2014-hl-ii-1", topicId: "estonian-1-0", conceptId: "lugemise-jutustamisega-kaasneb-omakorda-sonavara-mille",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "„Lugemise ja jutustamisega kaasneb omakorda sõnavara, mille rikkus mõjutab suuresti inimese maailmataju avarust.” Kirjuta umbes 100sõnaline kommentaar selle seisukoha kohta.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 100sõnaline ladus kommentaar, tõestamaks teksti sisust arusaamist.", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Sotsiaalvõrgustikud, televisioon, arvutimängud, ajakirjandus, reklaamid väljendusoskuse rikastajate või röövijatena”; “Üleilmastumise, anglitsismide, russismide, slängi pealetung argisuhtluses”; “Ajaloo, elukeskkonna, demograafia mõju keelele”; “Minimalistlik väljendusviis ja modernne keeleoskamatus”; “Kas koomiksite ja multifilmide kangelased või eakohane lastekirjandus või igasuguse lugemise vältimine”; “Kohustuslik kirjandus lugemise populariseerijana”; “Kiire elutempo ja tööga hõivatud vanemad, vähene inimestevaheline silmast silma suhtlus”; “Mõtlemis- ja kujutlusvõime piiratus, mõtlemise, analüüsimise ja üldistamise vähene oskus, huvipuudus maailmas toimuvate sündmuste vastu”. The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. ÜLESANNE",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2014 Higher Level — © State Examinations Commission.",
+    id: "est-2014-hl-iii-1", topicId: "estonian-1-1", conceptId: "lugeja-jouab-elada-tuhat-elu-mittelugeja",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. „Lugeja jõuab elada tuhat elu, mittelugeja vaid ühe.” (George R. R. Martin)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2014 Higher Level — © State Examinations Commission.",
+    id: "est-2014-hl-iii-2", topicId: "estonian-1-1", conceptId: "isegi-kui-kaia-labi-kogu-maailm",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. „Isegi kui käia läbi kogu maailm, otsides ilusat, ei leia me seda, kui me just ei kanna seda endaga kaasas.” (Ralph Waldo Emerson)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1148,10 +1484,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2015 Higher Level — © State Examinations Commission.",
     id: "est-2015-hl-i-1-a", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2015 HL Section I Q1(a)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: hääbuv keel (1. lõik) elujõuline keel (1. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: hääbuv keel (1. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "aeglaselt häviv, väljasurev keel", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "aeglaselt häviv, väljasurev keel", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1162,7 +1498,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1172,10 +1508,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2015 Higher Level — © State Examinations Commission.",
     id: "est-2015-hl-i-1-b", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2015 HL Section I Q1(b)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: üdini (6. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: elujõuline keel (1. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "elujõuline keel – keel, mis on eluvõimeline, tugev, jõuline", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "keel, mis on eluvõimeline, tugev, jõuline", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1186,7 +1522,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1196,10 +1532,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2015 Higher Level — © State Examinations Commission.",
     id: "est-2015-hl-i-1-c", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2015 HL Section I Q1(c)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: eksistentsiaalne hirm (8. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: üdini (6. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "üdini – täiesti, läbinisti, ülimal määral", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "täiesti, läbinisti, ülimal määral", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1210,7 +1546,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1220,10 +1556,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2015 Higher Level — © State Examinations Commission.",
     id: "est-2015-hl-i-1-d", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2015 HL Section I Q1(d)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: lõiming (11. lõik)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: eksistentsiaalne hirm (8. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "eksistentsiaalne hirm – olemuslik hirm, olemasolu saatev või sellega kaasaskäiv hirm", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "olemuslik hirm, olemasolu saatev või sellega kaasaskäiv hirm", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1234,7 +1570,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1244,10 +1580,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2015 Higher Level — © State Examinations Commission.",
     id: "est-2015-hl-i-1-e", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2015 HL Section I Q1(e)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid:",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: lõiming (11. lõik)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "lõiming – liitmine, integreerimine, ühtesulatamine Vasta teksti põhjal küsimusele, sõnastades loetu ümber oma sõnadega", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "liitmine, integreerimine, ühtesulatamine", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1258,7 +1594,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1271,7 +1607,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mis on peamised põhjused, mis sunnivad meid autori arvates eesti keele elujõulisust alahindama?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Autor toob peamiste põhjustena esile madalat sündimust ja ulatuslikku väljarännet Eestist, eriti noorte naiste väljarännet.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Autor toob peamiste põhjustena esile madalat sündimust ja ulatuslikku väljarännet Eestist, eriti noorte naiste väljarännet.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1282,7 +1618,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1295,7 +1631,7 @@ export const CARDS: SecCard[] = [
     questionText: "Millistele tõenditele tuginedes lükkab autor ümber väite, et eesti keel on väike ja väljasurev keel?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Eesti keel kuulub autori väiteil oma arengutaseme poolest hoopis maailma paarisaja kõige arenenuma keele hulka, olles Eesti riigi ametlik riigikeel ning ka üks ELi ametlikest keeltest. Lisaks on meil eestikeelne haridussüsteem kõikidel kooliastmetel ja rikas omakeelne kultuurielu (kirjandus, teater, film jne). Keeletehnoloogia areneb samuti tõusvas joones. Autor väidab, et kui võtta hindamisel arvesse keele kõnelejate arv, siis selle näitaja poolest kuulub eesti keel hoopis maailma 400 suurima keele hulka. Vasta teksti põhjal küsimusele, kasutades oma sõnu ja täislauseid", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Eesti keel kuulub autori väiteil oma arengutaseme poolest hoopis maailma paarisaja kõige arenenuma keele hulka, olles Eesti riigi ametlik riigikeel ning ka üks ELi ametlikest keeltest. Lisaks on meil eestikeelne haridussüsteem kõikidel kooliastmetel ja rikas omakeelne kultuurielu (kirjandus, teater, film jne). Keeletehnoloogia areneb samuti tõusvas joones. Autor väidab, et kui võtta hindamisel arvesse keele kõnelejate arv, siis selle näitaja poolest kuulub eesti keel hoopis maailma 400 suurima keele hulka.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1306,7 +1642,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1319,7 +1655,7 @@ export const CARDS: SecCard[] = [
     questionText: "„Paraku on väike-eestilikust mõttemallist väga keeruline vabaneda”. Miks on meil autori arvates vaja sellest mõttemallist vabaneda?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vaatamata ilusale loodusele ja võimalusele palju omaette olla, on küsimus püsimajäämises. Eesti keel ja rahvus ei ole praegusel kujul jätkusuutlikud. Jätkuvalt kahanev elanikkond, inimeste massiline lahkumine nii välismaale kui linnadesse ning sellest tulenevalt olemasoleva taristu (koolid, postkontorid, päästeteenistus jm) kokkutõmbamine ja tühjaks jäänud piirkonnad on põhjuseks, miks me peaksime sellest mõttemallist vabanema. Me ei saa endale lubada mõtlemist, et on olemas õiged ja vähemõiged eestlased ega enda hulgast välja arvama inimesi ainuüksi nende päritolu, vähema keeleoskuse ja erineva kultuuritausta pärast. Poliitilised sündmused maailmas ei võimalda kahjuks meie ohutundel ja hirmul kaduda, kuid autori arvates peaksime siiski üritama olla oma suhtumises paindlikum ja mõistvam.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Vaatamata ilusale loodusele ja võimalusele palju omaette olla, on küsimus püsimajäämises. Eesti keel ja rahvus ei ole praegusel kujul jätkusuutlikud. Jätkuvalt kahanev elanikkond, inimeste massiline lahkumine nii välismaale kui linnadesse ning sellest tulenevalt olemasoleva taristu (koolid, postkontorid, päästeteenistus jm) kokkutõmbamine ja tühjaks jäänud piirkonnad on põhjuseks, miks me peaksime sellest mõttemallist vabanema. Me ei saa endale lubada mõtlemist, et on olemas õiged ja vähemõiged eestlased ega enda hulgast välja arvama inimesi ainuüksi nende päritolu, vähema keeleoskuse ja erineva kultuuritausta pärast. Poliitilised sündmused maailmas ei võimalda kahjuks meie ohutundel ja hirmul kaduda, kuid autori arvates peaksime siiski üritama olla oma suhtumises paindlikum ja mõistvam.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1330,7 +1666,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1341,9 +1677,10 @@ export const CARDS: SecCard[] = [
     id: "est-2015-hl-i-5", topicId: "estonian-0-1", conceptId: "koik-see-kokku-voimaldaks-lahendada-voi",
     section: "I", questionRef: "2015 HL Section I Q5",
     questionText: "„Kõik see kokku võimaldaks lahendada või vähemalt pehmendada mitut eestluse jaoks elulist probleemi – demograafiat, lõimingut, regionaalarengut ja julgeolekut”. Kas nõustud või mitte, et autori pakutud variandid lahendavad nimetatud probleemid? Põhjenda oma arvamust.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nt. Arvan, et jah. Väliseesti kogukondade mitmekülgne toetamine aitab sealsetel eestlastel luua või leida side Eestiga või siis seda tugevdada – parandada/süvendada oma eesti keele oskust, saada osa Eesti kultuurist ja säilitada eesti meelsust. Samuti on see oluline demograafilisest aspektist – kui kõik välismaal segaperedes sündinud eesti lapsed sooviksid end pidada eestlasteks, oleks see kahtlemata leevenduseks iibeprobleemidele. Kirjeldatud meetmed Väike-Eesti kasvatamiseks ja kodueesti elu-olu parandamiseks aitaksid kindlasti kaasa regionaalarengule. Inimeste rändamine linnadesse või lahkumine välismaale on praegu väga aktuaalne probleem – piirkonnad jäävad tühjaks, infrastruktuur kas sureb välja või koondub keskustesse. Inimeste meelitamine tagasi kodumaale ja Eesti vähemasustatud piirkondadesse pöörduma muutub aina keerulisemaks – kokku on tõmmatud nii töökohti kui ka palju eluks vajalikke teenuseid (koolid, kauplused, postkontorid, arstipunktid jne). Nt. Arvan, et nimetatud sammud palju ei aita. Väliseesti kogukondade toetamisele vaatamata ei identifitseeri juba välismaal sündinud põlvkond end eestlastena. Kuna Eestis ei ole lubatud topeltkodakondsus, valivad paljud tulevikuks tõenäoliselt Eestit mittepuudutava suuna. Nii et suurt leevendust rahvastikukasvu küsimustele loota pole. Meetmed kodueesti kasvatamiseks töötaksid osaliselt – nt kutselise armee loomine aitaks kindlasti kaasa riigi julgeolekule ja toetaks ka omal moel lõimumist, ent pole kindel, kas sõjalised missioonid ja kohalolek maailma sõjakolletes on selleks sobivaim lahendus.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Arvan, et jah. Väliseesti kogukondade mitmekülgne toetamine aitab sealsetel eestlastel luua või leida side Eestiga või siis seda tugevdada – parandada/süvendada oma eesti keele oskust, saada osa Eesti kultuurist ja säilitada eesti meelsust. Samuti on see oluline demograafilisest aspektist – kui kõik välismaal segaperedes sündinud eesti lapsed sooviksid end pidada eestlasteks, oleks see kahtlemata leevenduseks iibeprobleemidele. Kirjeldatud meetmed Väike-Eesti kasvatamiseks ja kodueesti elu-olu parandamiseks aitaksid kindlasti kaasa regionaalarengule. Inimeste rändamine linnadesse või lahkumine välismaale on praegu väga aktuaalne probleem – piirkonnad jäävad tühjaks, infrastruktuur kas sureb välja või koondub keskustesse. Inimeste meelitamine tagasi kodumaale ja Eesti vähemasustatud piirkondadesse pöörduma muutub aina keerulisemaks – kokku on tõmmatud nii töökohti kui ka palju eluks vajalikke teenuseid (koolid, kauplused, postkontorid, arstipunktid jne).", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme heads its answer “Nt.”: what it gives is an example, not a required list." },
+    { id: "r-2", kind: "point", verbatim: "Arvan, et nimetatud sammud palju ei aita. Väliseesti kogukondade toetamisele vaatamata ei identifitseeri juba välismaal sündinud põlvkond end eestlastena. Kuna Eestis ei ole lubatud topeltkodakondsus, valivad paljud tulevikuks tõenäoliselt Eestit mittepuudutava suuna. Nii et suurt leevendust rahvastikukasvu küsimustele loota pole. Meetmed kodueesti kasvatamiseks töötaksid osaliselt – nt kutselise armee loomine aitaks kindlasti kaasa riigi julgeolekule ja toetaks ka omal moel lõimumist, ent pole kindel, kas sõjalised missioonid ja kohalolek maailma sõjakolletes on selleks sobivaim lahendus.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1354,7 +1691,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1367,7 +1704,7 @@ export const CARDS: SecCard[] = [
     questionText: "„Ent Väike-Eesti kõrval on olemas ka Suur-Eesti.” Selgita teksti põhjal, mida peetakse silmas mõistega „Suur-Eesti”?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Suur-Eesti tähistab siin tekstis kõiki kas ajutiselt, pikemalt või päriselt välismaal elavaid eestlasi sõltumata nende eesti keele oskusest, nahavärvist, segapäritolust, kodakondsusest, kultuuritaustast ning eesti meelsuse olemasolust. II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Suur-Eesti tähistab siin tekstis kõiki kas ajutiselt, pikemalt või päriselt välismaal elavaid eestlasi sõltumata nende eesti keele oskusest, nahavärvist, segapäritolust, kodakondsusest, kultuuritaustast ning eesti meelsuse olemasolust.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1378,8 +1715,58 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2015 Higher Level — © State Examinations Commission.",
+    id: "est-2015-hl-ii-1", topicId: "estonian-1-0", conceptId: "juba-monekumne-aasta-parast-pruugi-eestlaskond",
+    section: "II", questionRef: "2015 HL Section II Q1",
+    questionText: "„Juba mõnekümne aasta pärast ei pruugi eestlaskond olla piisavalt arvukas, et üha kiiremini arenevas maailmas eesti keelt ja kultuuri üleval pidada.” Kommenteeri seda väidet umbes 100 sõnaga.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 100sõnaline ladus kommentaar, tõestamaks teksti sisust arusaamist.", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Iibeprobleemid – madal sündimus ja kõrge suremus, rahvastiku vananemine ja eluea pikenemine, naiste emantsipatsioon, suur lahutuste arv, inimeste toimetulek ja vaesus, paljulapselised pered ja riigi perepoliitika; ühiskonna turvalisus, inimeste väärtushinnangud ning identiteeditunne.”; “Keel identiteedi osana ja roll rahvuse püsimajäämisel: huvi õppida keelt, mida räägib vaid alla miljoni kõneleja. Emakeele- ja kirjandustundide arv koolides, grammatika õpetamise osakaal, õigekirjaoskus, SMS-põlvkond”; “Üleilmne inglise keele pealetung – internet, massimeedia, popkultuur, arvutimängud, raamatud jne. Võõrkeelte õppimise vajalikkus”; “Inimeste lahkumine välismaale ja sulandumine uude ühiskonda, järgmiste põlvkondade tahe ja võimalused emakeele oskust ja identiteeti edasi kanda”; “Meie tööturg tulevikus, sisserändavad võõrtöölised; eesti keele õppimise atraktiivsus ja sisserännanute motivatsioon rääkida eesti keelt”. The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. ÜLESANNE",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2015 Higher Level — © State Examinations Commission.",
+    id: "est-2015-hl-iii-1", topicId: "estonian-1-1", conceptId: "kas-rahvuslik-identiteet-rikastab-meie-kultuurielu",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Kas rahvuslik identiteet rikastab meie kultuurielu või muudab selle vaesemaks?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2015 Higher Level — © State Examinations Commission.",
+    id: "est-2015-hl-iii-2", topicId: "estonian-1-1", conceptId: "rikkaim-see-kes-rahul-vahesega-sokrates",
+    section: "III", questionRef: "2015 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Rikkaim on see, kes on rahul vähesega. (Sokrates)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1388,10 +1775,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2016 Higher Level — © State Examinations Commission.",
     id: "est-2016-hl-i-1-a", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2016 HL Section I Q1(a)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: meelehärmi tekitama rakendust leidma",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: meelehärmi tekitama",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tekitama meelepaha, tuska", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "tekitama meelepaha, tuska", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1402,7 +1789,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1412,10 +1799,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2016 Higher Level — © State Examinations Commission.",
     id: "est-2016-hl-i-1-b", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2016 HL Section I Q1(b)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: trotslik suhtumine",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: rakendust leidma",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "rakendust leidma – kasulik olema, hõivatud olema", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "kasulik olema, hõivatud olema", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1426,7 +1813,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1436,10 +1823,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2016 Higher Level — © State Examinations Commission.",
     id: "est-2016-hl-i-1-c", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2016 HL Section I Q1(c)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: muutuma normiks",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: trotslik suhtumine",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "trotslik suhtumine – tusane, pahur, väljakutsuv suhtumine", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "tusane, pahur, väljakutsuv suhtumine", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1450,7 +1837,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1460,10 +1847,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2016 Higher Level — © State Examinations Commission.",
     id: "est-2016-hl-i-1-d", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2016 HL Section I Q1(d)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: ärgitama",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: muutuma normiks",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "muutuma normiks – muutuma reegliks; harjumuspäraseks saama", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "muutuma reegliks; harjumuspäraseks saama", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1474,7 +1861,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1484,10 +1871,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2016 Higher Level — © State Examinations Commission.",
     id: "est-2016-hl-i-1-e", topicId: "estonian-0-0", conceptId: "seleta-oma-sonadega-lahti-jargmised-sonad",
     section: "I", questionRef: "2016 HL Section I Q1(e)",
-    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid:",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: ärgitama",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ärgitama – ergutama, motiveerima, julgustama Vasta teksti põhjal küsimusele, sõnastades loetu ümber oma sõnadega", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "ergutama, motiveerima, julgustama", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1498,7 +1885,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1511,7 +1898,7 @@ export const CARDS: SecCard[] = [
     questionText: "Millised ühiskonnas toimuvad protsessid puudutavad autori arvates kõige enam just elu alustavaid noori inimesi?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Globaalne majanduse areng, tööpuuduse suurenemine kõikjal maailmas, tihe konkurents tööturul.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Globaalne majanduse areng, tööpuuduse suurenemine kõikjal maailmas, tihe konkurents tööturul.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1522,7 +1909,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1535,7 +1922,7 @@ export const CARDS: SecCard[] = [
     questionText: "Tekstis rõhutatakse haridusest rääkides sõna „garantii”. Selgita, mida peetakse selle mõistega silmas?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Käesoleva artikli kontekstis tähendab \"garantii\" seda, et varasematel aegadel oli hea ülikooliharidus hea ja tasuva töökoha leidmise eeltingimuseks. Tänapäeval see seos tingimata ei tööta – hea ülikooliharidus ei tähenda kõrgepalgalist töökohta ega pruugi tähendada üldse mitte mingit töökohta. Pikaajaline palgatrendide võrdlus näitab, et palgad on pidevalt langenud, töötuse tase seevastu suureneb haridustasemest sõltumatult. Vasta teksti põhjal küsimusele, kasutades oma sõnu ja täislauseid", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Käesoleva artikli kontekstis tähendab \"garantii\" seda, et varasematel aegadel oli hea ülikooliharidus hea ja tasuva töökoha leidmise eeltingimuseks. Tänapäeval see seos tingimata ei tööta – hea ülikooliharidus ei tähenda kõrgepalgalist töökohta ega pruugi tähendada üldse mitte mingit töökohta. Pikaajaline palgatrendide võrdlus näitab, et palgad on pidevalt langenud, töötuse tase seevastu suureneb haridustasemest sõltumatult.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1546,7 +1933,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1559,7 +1946,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kuidas on suhtumine kõrgharidusse viimaste kümnendite jooksul muutunud?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nõukogude ajal oli ülikoolis õppimine muu hulgas võimalus vaikselt protestida valitseva riigikorra vastu. Õpingute käigus oli aega ja soovi tegeleda nn kriitilise mõtlemisega ja elada üliõpilaselu. Kitsale erialale keskendumise asemel väärtustati rohkem üldist haritust. Tänapäeva noored on üles kasvanud edukultust ja turumajandust kummardavas ühiskonnas ja seega peavad harjuma varasest noorusest saadik tiheda konkurentsiga, hea hariduse nimel peab palju pingutama. Samuti peab olema valmis vajadusel õppimise kõrvalt tööl käima, et oma õpinguid rahastada või end lihtsalt ära elatada. Selline topeltpinge võib aga lõppeda õpingute katkemisega või kannatab hariduse kvaliteet.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Nõukogude ajal oli ülikoolis õppimine muu hulgas võimalus vaikselt protestida valitseva riigikorra vastu. Õpingute käigus oli aega ja soovi tegeleda nn kriitilise mõtlemisega ja elada üliõpilaselu. Kitsale erialale keskendumise asemel väärtustati rohkem üldist haritust. Tänapäeva noored on üles kasvanud edukultust ja turumajandust kummardavas ühiskonnas ja seega peavad harjuma varasest noorusest saadik tiheda konkurentsiga, hea hariduse nimel peab palju pingutama. Samuti peab olema valmis vajadusel õppimise kõrvalt tööl käima, et oma õpinguid rahastada või end lihtsalt ära elatada. Selline topeltpinge võib aga lõppeda õpingute katkemisega või kannatab hariduse kvaliteet.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1570,7 +1957,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1583,7 +1970,7 @@ export const CARDS: SecCard[] = [
     questionText: "„Praeguse noorema põlvkonna jaoks oleksid nagu võimalused igati avardunud …”. Selgita teksti põhjal noorte avardunud võimaluste ja tegelike töölesaamise võimaluste vahelist vastuolu.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ülikooli nimest ja asukohast, omandatud diplomist ja kraadist, õpingutele pühendatud ajast ja pingutamisest, tugevast konkurentsivõimest ja kõrgest motiveeritusest hoolimata on üsna tavaline, et pakutav ametikoht ei vasta omandatud kraadile (üldjuhul tähendades madalamat ametikohta, eriti bakalaureuste jaoks). Ka ülikooli maine loeb tööandjale üha enam (st õppeasutuse staatus on oluline). Ent kahjuks väga palju sõltub hea töökoha leidmine hoopis tööleasuja sotsiaalsetest sidemetest ja tutvustest.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ülikooli nimest ja asukohast, omandatud diplomist ja kraadist, õpingutele pühendatud ajast ja pingutamisest, tugevast konkurentsivõimest ja kõrgest motiveeritusest hoolimata on üsna tavaline, et pakutav ametikoht ei vasta omandatud kraadile (üldjuhul tähendades madalamat ametikohta, eriti bakalaureuste jaoks). Ka ülikooli maine loeb tööandjale üha enam (st õppeasutuse staatus on oluline). Ent kahjuks väga palju sõltub hea töökoha leidmine hoopis tööleasuja sotsiaalsetest sidemetest ja tutvustest.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1594,7 +1981,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1607,7 +1994,7 @@ export const CARDS: SecCard[] = [
     questionText: "„Laiapõhjalisema haridusega noored suudaksid paremini Eesti väikese ja paindliku tööturu muutuvatele vajadustele reageerida.” Artiklile tuginedes arutle selle väite üle.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nt. On oluline, et maailmas, kus majanduse ja tööturu olukorda mõjutavad sellised nähtused nagu (geo)poliitiline olukord maailmas, tehnoloogia areng, demograafilised muutused (ränne ja elanikkonna vananemine), tootmise vähenemine ja selle ümberkolimine teise (odavamasse) tootmispiirkonda, oldaks kursis tööturu vajadustega ning täiendataks oma teadmisi ja oskusi vastavalt tööturu ootustele. Kuna edukaid erialasid ja uus suundi (trende on loomulikult võimalik jälgida) on küllalt raske ette ennustada, on humanitaarteaduste eriala (nt filosoofia, filoloogia, psühholoogia, sotsioloogia) oma laiapõhjalise ja silmaringi laiendava haridusega heaks alternatiiviks, mis võimaldaks tööd leida mitmes valdkonnas ning vajaduse tekkides oleks väga sobivaks lähtepositsiooniks igasugusele täiend- , ümber- või kutseõppele. II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "On oluline, et maailmas, kus majanduse ja tööturu olukorda mõjutavad sellised nähtused nagu (geo)poliitiline olukord maailmas, tehnoloogia areng, demograafilised muutused (ränne ja elanikkonna vananemine), tootmise vähenemine ja selle ümberkolimine teise (odavamasse) tootmispiirkonda, oldaks kursis tööturu vajadustega ning täiendataks oma teadmisi ja oskusi vastavalt tööturu ootustele. Kuna edukaid erialasid ja uus suundi (trende on loomulikult võimalik jälgida) on küllalt raske ette ennustada, on humanitaarteaduste eriala (nt filosoofia, filoloogia, psühholoogia, sotsioloogia) oma laiapõhjalise ja silmaringi laiendava haridusega heaks alternatiiviks, mis võimaldaks tööd leida mitmes valdkonnas ning vajaduse tekkides oleks väga sobivaks lähtepositsiooniks igasugusele täiend- , ümber- või kutseõppele.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme heads its answer “Nt.”: what it gives is an example, not a required list." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1618,8 +2005,58 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2016 Higher Level — © State Examinations Commission.",
+    id: "est-2016-hl-ii-1", topicId: "estonian-1-0", conceptId: "irooniliselt-voib-oelda-luksust-olla-stabiilselt",
+    section: "II", questionRef: "2016 HL Section II Q1",
+    questionText: "„Irooniliselt võib öelda, et luksust olla stabiilselt ekspluateeritud jagub vähestele ja ebakindluse eest ei päästa andekus, haridus ega pühendumine.” Kommenteeri seda väidet 100–150 sõnaga.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 100sõnaline ladus kommentaar, tõestamaks teksti sisust arusaamist.", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Ränne, paremate võimaluste otsimine lähemal ja kaugemal”; “Tehnoloogia kiire areng”; “Noorte ebaküpsus, töökogemuse puudumine, samas nende valmidus ennast ühiskonnale tõestada vastutus- ja otsustusvõimelise kodanikuna”; “Tööandjate umbusk, investeering noorte koolitamisse, selle mõttekus ja tasuvus”; “Esimese töökoha olulisus – praktikakohad, vabatahtlik töö, malev, projektipõhine töö, huvitöö, ettevõtlusega alustamine kogemuse kogumise nurgakividena”; “Perspektiivikad erialad, karjäärivõimalused, palgaootused”; “Õpingute kõrvalt töötamine – mõju ülikoolidiplomi väärtusele ja kõrghariduse kvaliteedile”. The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. ÜLESANNE",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2016 Higher Level — © State Examinations Commission.",
+    id: "est-2016-hl-iii-1", topicId: "estonian-1-1", conceptId: "kes-maksab-see-tellib-muusika",
+    section: "III", questionRef: "2016 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Kes maksab, see tellib muusika?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”. The scheme's head line breaks off mid-sentence (\"... ning\"); it is shown as printed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2016 Higher Level — © State Examinations Commission.",
+    id: "est-2016-hl-iii-2", topicId: "estonian-1-1", conceptId: "maailm-voib-olla-usna-ebameeldiv-paik",
+    section: "III", questionRef: "2016 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. „Maailm võib olla üsna ebameeldiv paik, kui me ei pinguta ühiselt, et muuta see võrdsemaks, demokraatlikumaks ja jätkusuutlikumaks.” Fintan O'Toole, The Irish Times, 22. veebruar 2016.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”. The scheme's head line breaks off mid-sentence (\"... ning\"); it is shown as printed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1631,7 +2068,7 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: haavatav",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "õrn, vastuvõtlik, tundlik, haigettegev", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "õrn, vastuvõtlik, tundlik, haigettegev", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1642,7 +2079,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1655,7 +2092,7 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: ahvatlus",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "meelitus, kiusatus", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "meelitus, kiusatus", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1666,7 +2103,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1679,7 +2116,7 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: kardinate tagant juhtima",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "salaja juhtima, kontrollima, varjatult niite tõmbama", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "salaja juhtima, kontrollima, varjatult niite tõmbama", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1690,7 +2127,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1703,7 +2140,7 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: eemale kallutama",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "esialgsest suunast teise suunda kalduma panema, mõjutama", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "esialgsest suunast teise suunda kalduma panema, mõjutama", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1714,7 +2151,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1727,7 +2164,7 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: käeulatuses",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "kaugus, millest midagi ulatub käega võtma, kergesti kättesaadav Vasta teksti põhjal küsimusele, sõnastades loetu ümber oma sõnadega", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "kaugus, millest midagi ulatub käega võtma, kergesti kättesaadav", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1738,7 +2175,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1751,7 +2188,7 @@ export const CARDS: SecCard[] = [
     questionText: "Millise arengu on magusa tarbimine inimkonna ajaloos läbi teinud?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Minevikus kasutasid inimesed magusainetena peamiselt mett või puuvilju. Suhkruroogu tarbiti ka, kuigi see oli ennekõike kasutatav loomatoiduna. Suhkur praegusel kujul oli veel aastatuhandeid kallis ja enamikule kättesaamatu. Suurem suhkru kasvatamine algas alles XV sajandi lõpus ning praeguseks on see laialdaselt kättesaadav ja asendamatu toitaine.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Minevikus kasutasid inimesed magusainetena peamiselt mett või puuvilju. Suhkruroogu tarbiti ka, kuigi see oli ennekõike kasutatav loomatoiduna. Suhkur praegusel kujul oli veel aastatuhandeid kallis ja enamikule kättesaamatu. Suurem suhkru kasvatamine algas alles XV sajandi lõpus ning praeguseks on see laialdaselt kättesaadav ja asendamatu toitaine.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1762,7 +2199,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1775,7 +2212,7 @@ export const CARDS: SecCard[] = [
     questionText: "Nimeta tunnuseid, mille alusel saab suhkrutarbimise autori arvates liigitada klassikaliseks sõltuvuseks?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1) Nii suhkru kui uimastite tarbimisel kujuneb välja sama käitumismudel – uimastist või suhkrust ilmajäämine tekitab hoopis suurema ihaluse selle järele ning pikem paus tarbimises põhjustab võõrutusnähte, mis sunnivad mõnutunde taastamiseks tarbima üha suuremaid koguseid. 2) Suhkru metabolism on väga sarnane alkoholi tekitatava metabolismiga, põhjustades maksa rasvumist ja muid tervisehädasid. Vasta teksti põhjal küsimusele, kasutades oma sõnu ja täislauseid", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "1) Nii suhkru kui uimastite tarbimisel kujuneb välja sama käitumismudel – uimastist või suhkrust ilmajäämine tekitab hoopis suurema ihaluse selle järele ning pikem paus tarbimises põhjustab võõrutusnähte, mis sunnivad mõnutunde taastamiseks tarbima üha suuremaid koguseid. 2) Suhkru metabolism on väga sarnane alkoholi tekitatava metabolismiga, põhjustades maksa rasvumist ja muid tervisehädasid.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1786,7 +2223,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1799,7 +2236,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kirjelda tekstile tuginedes, kuidas mõjutavad meie praegused suhkru tarbimise harjumused järgmisi põlvkondi. Mida peaks sinu arvates nende harjumustega peale hakkama?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tarbimisühiskonnas on lastel olemas lugematud võimalused suhkru tarbimiseks ja piiramatu ligipääs magusale (reklaam, turundus, meedia). Töösturid, reklaamitootjad ja müügiinimesed teevad kõik endast oleneva, et lapsi tarbima õpetada, jättes mainimata faktid suhkrutarbimise kahjuliku mõju kohta. Tulemuseks on haigete laste ühiskond, kus ülekaaluliste laste osakaal aina suureneb. Lisaks muudele tervisehädadele on sagenenud II tüübi diabeeti haigestumine juba varases lapseeas. Neid harjumusi peaks me tasahaaval püüdma muuta – näiteks suhkrut sisaldavate toodete reklaami piiramise, poodides toodete kättesaadavuse vähendamise, pakendite kujunduse ebaatraktiivsemaks muutmise ning tootjatele toidu koostise ja pakendiinfo kohta rangemate eeskirjade seadmise kaudu. Lisaks teavitustöö isiklikul, perekonna ja ühiskonna tasandil (lasteasutused, tervishoiuasutused jne).", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Tarbimisühiskonnas on lastel olemas lugematud võimalused suhkru tarbimiseks ja piiramatu ligipääs magusale (reklaam, turundus, meedia). Töösturid, reklaamitootjad ja müügiinimesed teevad kõik endast oleneva, et lapsi tarbima õpetada, jättes mainimata faktid suhkrutarbimise kahjuliku mõju kohta. Tulemuseks on haigete laste ühiskond, kus ülekaaluliste laste osakaal aina suureneb. Lisaks muudele tervisehädadele on sagenenud II tüübi diabeeti haigestumine juba varases lapseeas. Neid harjumusi peaks me tasahaaval püüdma muuta – näiteks suhkrut sisaldavate toodete reklaami piiramise, poodides toodete kättesaadavuse vähendamise, pakendite kujunduse ebaatraktiivsemaks muutmise ning tootjatele toidu koostise ja pakendiinfo kohta rangemate eeskirjade seadmise kaudu. Lisaks teavitustöö isiklikul, perekonna ja ühiskonna tasandil (lasteasutused, tervishoiuasutused jne).", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1810,7 +2247,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1823,7 +2260,7 @@ export const CARDS: SecCard[] = [
     questionText: "„Suhkru jätkuvalt hea maine taga on suhkrutööstuse osav lobitöö“. Miks see nii on?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Sellepärast, et suhkrutööstus ei soovi oma eelist magusaturul kaotada. See on kullasoon, sest meie praegune tarbimisühiskond ei kujuta magusata oma elu enam ette. Kuna üha häälekamalt võetakse sõna suhkrusõltuvusega võitlemise, tervisliku toitumise ja füüsilise aktiivsuse teemadel, peab suhkrutööstus oma senise turuosa säilitamiseks siiski rohkem vaeva nägema – nt seadusandjaid mõjutama, endale soodsaid uuringuid rahastama ja ebasoodsaid ignoreerima, sõltuvuse ja muu halva mõju tekitamist eitama, tarbijaid eksitama, jne.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Sellepärast, et suhkrutööstus ei soovi oma eelist magusaturul kaotada. See on kullasoon, sest meie praegune tarbimisühiskond ei kujuta magusata oma elu enam ette. Kuna üha häälekamalt võetakse sõna suhkrusõltuvusega võitlemise, tervisliku toitumise ja füüsilise aktiivsuse teemadel, peab suhkrutööstus oma senise turuosa säilitamiseks siiski rohkem vaeva nägema – nt seadusandjaid mõjutama, endale soodsaid uuringuid rahastama ja ebasoodsaid ignoreerima, sõltuvuse ja muu halva mõju tekitamist eitama, tarbijaid eksitama, jne.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1834,7 +2271,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1847,7 +2284,7 @@ export const CARDS: SecCard[] = [
     questionText: "Artikkel kannab pealkirja „Surmav sõltuvus, mida ühiskond ei teadvusta“. Selgita teksti põhjal, kuidas oleks ühiskonnal võimalik seda probleemi endale paremini teadvustada.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Et üha enam tõstab pead tervislik eluviis ja arusaam suhkru (liig)tarbimise kahjulikkusest, siis räägitakse rohkem ühiskonnas ka sellest, et suhkru eristaatus tuleks lõpetada ja analoogselt tubaka ja alkoholi kasutamist piiravate reeglitega peaks kehtestama piirangud ka suhkrule – nt magusa erimaks, erimärgistusega (hoiatussiltidega) magusapakendid (sh spetsiaalselt lastele mõeldud tootepakendite kujunduse muutmine), toodete kättesaadavuse piiramine või muud mõjutusviisid, mis vähendaksid ennekõike laste, aga ka täiskasvanute magusatarbimist ja tõstaksid teadlikkust terviseriskidest. Kindlasti peaks kaasnema ühiskonnas selgitustöö ülekaalulisuse ja haiguste ennetamise teemadel. II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Et üha enam tõstab pead tervislik eluviis ja arusaam suhkru (liig)tarbimise kahjulikkusest, siis räägitakse rohkem ühiskonnas ka sellest, et suhkru eristaatus tuleks lõpetada ja analoogselt tubaka ja alkoholi kasutamist piiravate reeglitega peaks kehtestama piirangud ka suhkrule – nt magusa erimaks, erimärgistusega (hoiatussiltidega) magusapakendid (sh spetsiaalselt lastele mõeldud tootepakendite kujunduse muutmine), toodete kättesaadavuse piiramine või muud mõjutusviisid, mis vähendaksid ennekõike laste, aga ka täiskasvanute magusatarbimist ja tõstaksid teadlikkust terviseriskidest. Kindlasti peaks kaasnema ühiskonnas selgitustöö ülekaalulisuse ja haiguste ennetamise teemadel.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1858,8 +2295,58 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2017 Higher Level — © State Examinations Commission.",
+    id: "est-2017-hl-ii-1", topicId: "estonian-1-0", conceptId: "see-toitaine-mida-keegi-vajanud-kuid",
+    section: "II", questionRef: "2017 HL Section II Q1",
+    questionText: "„See toitaine, mida keegi ei vajanud, kuid mida kõik ihaldasid, on kujundanud tänapäeva maailma.“ Kirjelda umbes 100-150 sõnaga seda suhkru kujundatud maailma. Tee vahet sõnadel „vajama“ ja „ihaldama“.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 100-150sõnaline ladus kommentaar, et tõestada teksti sisust arusaamist.", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Magusatarbimise füsioloogilised, emotsionaalsed ja kultuurilised tegurid, ümbritsev keskkond, sotsiaalne surve, tervishoiupoliitika, reklaami ja meedia roll.”; “Elustiil, inimeste tarbimisharjumused, vähene kehaline liikumine, koolitoit, rämpstoit, karastusjoogid, kalorite lugemine ja dieet, taskuraha.”; “Suhkur ja selle alternatiivid, maitsetugevdajad, lõhnaained ja toiduvärvid, pakendiinfo.”. The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. ÜLESANNE",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2017 Higher Level — © State Examinations Commission.",
+    id: "est-2017-hl-iii-1", topicId: "estonian-1-1", conceptId: "oleme-see-mida-soome",
+    section: "III", questionRef: "2017 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Me oleme see, mida sööme",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2017 Higher Level — © State Examinations Commission.",
+    id: "est-2017-hl-iii-2", topicId: "estonian-1-1", conceptId: "minu-arvamus-sama-hea-kui-sinu",
+    section: "III", questionRef: "2017 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. „Minu arvamus on sama hea kui sinu oma ning kõiki arvamusi tuleks võrdselt hinnata.“ Arutle selle väite üle moodsat ühiskonda, eriti sotsiaalmeedia kasutamist silmas pidades.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1871,7 +2358,11 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: 1) polariseerumine 2) kardinaalselt erinema 3) iseäranis lähevad peale 4) kulutulena levima 5) panustama",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "vastandumine", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "vastandumine", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
+    { id: "r-2", kind: "point", verbatim: "otsustavalt erinema, olema hoopis teistsugune", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "eriti/ennekõike meeldivad/sobivad inimestele, inimesed eelistavad", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "väga kiiresti laiali minema", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "oma panust andma, oma osa andma, jõupingutus millegi saavutamiseks", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1882,7 +2373,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1895,7 +2386,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kuidas on artiklis defineeritud mõistet „valeuudised“?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "kardinaalselt erinema – otsustavalt erinema, olema hoopis teistsugune", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Tegemist võib olla kas puhaste väljamõeldistega või lihtsalt algallika sõnastuse muutmise või täiendamisega. Samuti võib valeuudiseks olla kõmupealkiri, poliitiline satiir või liikvel olev legend, aga ka valikuliselt kajastatud uudis.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1906,7 +2397,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1919,7 +2410,7 @@ export const CARDS: SecCard[] = [
     questionText: "Tekstis rõhutatakse mitu korda, rääkides eriti noortest, väljendit „meediakirjaoskus“. Selgita, mida selle mõiste all silmas peetakse.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "iseäranis lähevad peale – eriti/ennekõike meeldivad/sobivad inimestele, inimesed eelistavad", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Meediakirjaoskus tähendab, et uudise tõlgendamiseks ja selle tõesuse hindamiseks on vaja teada, kuidas meedia üldiselt funktsioneerib, oskust näha protsesse ja nähtusi kõne all oleva üksiksündmuse taga, võimet need infotükid konteksti paigutada ning kogu pilti kriitiliselt analüüsida. Ühiskond on täis inimesi, noored nende hulgas, kes on küll digitaalselt väga pädevad, ent kelle analüüsioskus jätab soovida.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1930,7 +2421,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1943,7 +2434,7 @@ export const CARDS: SecCard[] = [
     questionText: "Millist rolli mängivad inimeste moodsa ajastu infotarbimisharjumused valeuudiste levikus?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "kulutulena levima – väga kiiresti laiali minema", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Moodsal ajastul tarbivad inimesed uudiste lugemiseks üha rohkem digitaalseid kanaleid ning aina vähem traditsioonilist massimeediat. Sotsiaalmeedia osatähtsus info vahendaja ja meelelahutajana on hüppeliselt kasvanud. Samuti on kasvanud inimeste pädevus ise sisu toota ning seda sotsiaalvõrgustikes jagada. Inimesed tahavad, et info jõuaks nendeni kiiresti ja koguaeg ning et see oleks esitatud võimalikult lühidalt ja illustreerivalt. Traditsiooniline massimeedia ei ahvatle enam, sest ta on liiga aeglane, liiga põhjalik ning võimalik, et ideoloogiliselt kallutatud. Tegelikult ei tajuta, et sotsiaalmeedia uudised on samamoodi ühekülgsed ja kallutatud, ning ka inimeselt inimesele jagatav sisu ei ole mitte alati kõige õiglasem ja erapooletum.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1954,8 +2445,108 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2018 Higher Level — © State Examinations Commission.",
+    id: "est-2018-hl-i-5", topicId: "estonian-0-1", conceptId: "valeuudiste-levik-traditsioonilise-meedia-uha-suurenev",
+    section: "I", questionRef: "2018 HL Section I Q5",
+    questionText: "„Valeuudiste levik ja traditsioonilise meedia üha suurenev meelelahutuslikkus, millega püütakse vastata tarbijate ootustele, võivad viidata demokraatia haavatavusele, milles ollakse vastuvõtlik manipulatsioonidele.“ Selgita artiklile tuginedes, mis põhjusel on sinu arvates mõni ühiskonna huvigrupp meedia manipuleerimisele vastuvõtlikum kui teine.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pidev infovoog on muutnud inimeste ootusi uudiste edastamise kiiruse, hulga ning sisu suhtes, samuti annab panustamine meelelahutuslikkusele rohkem klikke ning suuremat kasumit meediaväljaannetele. Seetõttu on meediaväljaanded väga huvitatud just õige sihtrühmani jõudmisest. Nii et võib öelda, et lihtsam on manipuleerida nendega, kes tarbivad uudiseid peamiselt sotsiaalmeedia vahendusel. Sotsiaalvõrgustikus on lihtne jääda kinni kitsa ringkonna mõttemaailma ja neid hinnanguid siis kas teadlikult või teadmatult ise edasi kanda. Kuna sotsiaalmeedia ja reklaamitööstus tegutsevad käsikäes, on neil väga kerge konstrueerida uudise taha oma sisu, lisada kõmu ja varustada „õige“ reklaamiga, ning saata see seejärel tarbimiseks just oma sihtrühmale tema eelistusi arvesse võttes. Lisaks on internetimeedia täis inimeste enda loodud sisu, millega on samuti võimalik inimesi vajalikus suunas mõtlema mõjutada. Inimestele üldiselt meeldib subjektiivne lähenemine, see mõjub usaldusväärsema ja autentsemana kui näiteks ajaleheartiklid või õhtused uudised. Samas mõjutab uudiste edastamise kiirus ja inforohkus oluliselt faktide õigsust, uudised on tihti poolikud, kontekstist välja rebitud või moonutatud. Inimeselt inimesele jagatava sisu osas on hea meeles pidada, et subjektiivsus ei tähenda tingimata objektiivsust.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2018 Higher Level — © State Examinations Commission.",
+    id: "est-2018-hl-i-6", topicId: "estonian-0-1", conceptId: "koigist-ponnistustest-soltumata-paistab-sedasi-voti",
+    section: "I", questionRef: "2018 HL Section I Q6",
+    questionText: "„Kõigist ponnistustest sõltumata paistab sedasi, et võti on tavaliste inimeste käes: polariseerumise ja seega ka valeuudiste vastu aitab eeskätt julgus vastu võtta kriitikat ka enda seisukohtade aadressil ning tunnustada kasvõi ühtainsat oponendi väidetest.“ Arutle artikli põhjal, kuidas peaks kriitikat taluv ja kaasvestleja arvamust austav suhtumine aitama ehtsatel uudistel esiplaanile jõuda.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Teise poole arvamuse ärakuulamine aitab aru saada, kas on üldse eriarvamusi, võib-olla ei ole põhjust väitlust alustadagi. Kui see siiski osutub möödapääsmatuks, viib tõeni argumenteeritud, viisakas ja faktipõhine vaidlus, mis keskendub lahenduse otsimisele. Vestluspartneri suhtes lugupidava hoiaku ja tasakaaluka tooni säilitamine aitab isegi siis, kui tema arvamusega pole võimalik nõustuda. Võitja pole see, kes kõvemini karjub.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme reprints the question’s last words as “kriitikat taluv ja kaasvestleja arvamust austav suhtumine peaks aitama ehtsatel uudistel esiplaanile jõuda.” (the paper: “peaks kriitikat taluv ja kaasvestleja arvamust austav suhtumine aitama ehtsatel uudistel esiplaanile jõuda.”)." },
+    { id: "r-2", kind: "point", verbatim: "Kriitikat on üldiselt raske taluda, selle tegemine nõuab julgust ja taktitunnet, ning selle vastvõtmine on õpitav. Kriitika tekitab küll enamasti konflikti, aga see omakorda viib ehk lahenduseni.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Nii ühiskondliku kui virtuaalkommunikatsiooni parendamiseks on oluline, et lahmiv ja agressiivne suhtlusstiil, enesekiitmine, teiste inimeste halvustamine ning nende ärakasutamine asenduks sisulise ärakuulamise ja faktipõhise väitlusega.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2018 Higher Level — © State Examinations Commission.",
+    id: "est-2018-hl-ii-1", topicId: "estonian-1-0", conceptId: "kas-voltsuudiseid-tingib-ajastu-milles-sisust",
+    section: "II", questionRef: "2018 HL Section II Q1",
+    questionText: "„Kas võltsuudiseid tingib ajastu, milles sisust on olulisem reaktsioon ja tõest olulisem tähelepanu?“ Milline on sinu arvamus selles küsimuses? Kommenteeri oma seisukohta umbes 100–150 sõnaga.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Nutisõltuvus, noorte ja laste digiharjumused”; “Anonüümne või avalik internet, privaatsus, ohutus, identiteet”; “Küberkuritegevus, küberkiusamine”; “Inimestevaheline suhtlus, kiire elutempo, tarbimine, positsioon ühiskonnas”; “Massikultuur, globaliseerumine, turundus, reklaam, keeleoskus”; “Igaühemeedia – klikkimine, postitamine, kommentaariumid, meelelahutus, vihakõne”. The scheme reprints the task’s last words as “Kommenteeri oma seisukohta 100–150 sõnaga.” (the paper: “Kommenteeri oma seisukohta umbes 100–150 sõnaga.”).", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II ÜLESANNE",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2018 Higher Level — © State Examinations Commission.",
+    id: "est-2018-hl-iii-1", topicId: "estonian-1-1", conceptId: "igauhel-oma-tode-ning-alati-pole",
+    section: "III", questionRef: "2018 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Igaühel on oma tõde, ning alati pole sinu tõde minu tõde",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2018 Higher Level — © State Examinations Commission.",
+    id: "est-2018-hl-iii-2", topicId: "estonian-1-1", conceptId: "riided-teevad-inimese-kas-tosi-inimeste",
+    section: "III", questionRef: "2018 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. „Riided teevad inimese“. Kas on tõsi, et inimeste üle saab otsustada riiete põhjal, mida nad kannavad? Kaalu nii poolt- kui vastuargumente ning esita oma seisukoht.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1967,7 +2558,11 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: 1) eestkõneleja 2) tervemõistuslik lähenemine 3) ärgitama kahtlemist 4) kasinus 5) viltu vaatama",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "esindaja, tutvustaja, propageerija", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "esindaja, tutvustaja, propageerija", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
+    { id: "r-2", kind: "point", verbatim: "kaine, mõistuspärane, ratsionaalne lähenemine", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "kahtlema ergutama, innustama, tagant tõukama", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "vähesus, nappus", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "põlastama, halvaks panema", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1978,7 +2573,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -1991,7 +2586,7 @@ export const CARDS: SecCard[] = [
     questionText: "Miks seostatakse nullkulu eluviisi autori arvates eeskätt naistega?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tervemõistuslik lähenemine – kaine, mõistuspärane, ratsionaalne lähenemine", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kindlasti ei ole vaid naised nullkulu põhimõtte järgijad, kuid nad on altimad oma tegevust sotsiaalmeedias esitlema. Lisaks on naised need, kes käivad paratamatult rohkem sisseoste tegemas ning see võib muuta mõtteviisi ja tekitada protesti.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2002,7 +2597,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2015,7 +2610,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kuidas kirjeldaksid sina nullkulu põhimõtet?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ärgitama kahtlemist – kahtlema ergutama, innustama, tagant tõukama", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Selle põhimõtte järgi üritatakse kõigepealt loobuda asjadest, mida ei vajata, ning vähendada tarbimist. Seejärel kasutada ostetut paremini ära, rohkem korduskasutada, ümber töödelda ja kompostida. Kõik selle nimel, et jäätmeid tekiks võimalikult vähe.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2026,7 +2621,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2039,7 +2634,7 @@ export const CARDS: SecCard[] = [
     questionText: "„Vabatahtlik kasinus on radikaalne valik, kuid eeskätt kontseptuaalsel tasandil – sel pole kuigi konkreetset välist stiili, õigupoolest ei pruugi see üldse eriti välja paista.“ Miks võib just „konkreetse välise stiili“ puudumist pidada nullkulu liikumise eripäraks?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "vähesus, nappus", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Nullkulu eesmärk on minimalism. Vähem asju tähendab lihtsamat elu. Seejuures olgu asjad praktilised ja kauakestvad, mis on valmistatud loodussõbralikest ja kvaliteetsetest materjalidest. Selliseid tooteid kestavad kauem ja neid on võimalik parandada, ümber töödelda ja uuesti kasutada, selle asemel et aina uusi juurde soetada. Vanad järeleproovitud lahendused on tagasi, hinnatakse toodete naturaalset päritolu, vastupidavat kvaliteeti ja ajatut stiili.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2050,7 +2645,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2063,7 +2658,7 @@ export const CARDS: SecCard[] = [
     questionText: "Arutle artikli põhjal, kuidas saavad tarbijad teadlikumaid valikuid tehes mõjutada teisi tarbimisahela lülisid, näiteks tootjaid, tegema loodussäästlikumaid valikuid.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "*Inimeste mõtteviis peab muutuma. Tarbijad saavad mõjutada tootjaid, sest tarbija on see, kes valib, milliseid tooteid osta ja milliseid teenuseid tarbida. *Tootja peab oma toote vastavalt tarbijate nõudmistele (ümber) kujundama ja koguseid kohandama. Mida rohkem ostetakse, seda rohkem toodetakse ning mida rohkem mittevajalikke ja ebakvaliteetseid kaupu tarbitakse, seda väiksem on tõenäosus tootmist vähendada. *Ettevõtted on sunnitud oma ärimudeli igal juhul üle vaatama ka riikliku surve tõttu, sest keskkonda puudutav seadusandlus karmistub kõikjal maailmas. Jne. II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "*Inimeste mõtteviis peab muutuma. Tarbijad saavad mõjutada tootjaid, sest tarbija on see, kes valib, milliseid tooteid osta ja milliseid teenuseid tarbida. *Tootja peab oma toote vastavalt tarbijate nõudmistele (ümber) kujundama ja koguseid kohandama. Mida rohkem ostetakse, seda rohkem toodetakse ning mida rohkem mittevajalikke ja ebakvaliteetseid kaupu tarbitakse, seda väiksem on tõenäosus tootmist vähendada. *Ettevõtted on sunnitud oma ärimudeli igal juhul üle vaatama ka riikliku surve tõttu, sest keskkonda puudutav seadusandlus karmistub kõikjal maailmas.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2074,8 +2669,85 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2019 Higher Level — © State Examinations Commission.",
+    id: "est-2019-hl-i-5", topicId: "estonian-0-1", conceptId: "artiklile-tuginedes-selgita-mis-sinu-arvates",
+    section: "I", questionRef: "2019 HL Section I Q5",
+    questionText: "Artiklile tuginedes selgita, mis sinu arvates motiveerib inimesi nullkulu eluviisiga liituma ja seda eluviisi järgima.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Protestiks ühiskonnas valitseva tarbimiskultuse ja traditsioonilise tarbimismustri vastu.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme closes the list with: “Jne.”." },
+    { id: "r-2", kind: "point", verbatim: "Kulutuste vähendamise ja säästlikuma eluviisi nimel.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Keskkonnasõbralikumate ja pikema elueaga toodete eelistamine.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Sallimatus prügistumise vastu, tervislikuma ja lihtsama eluviisi ning puhtama õhu nimel.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2019 Higher Level — © State Examinations Commission.",
+    id: "est-2019-hl-ii-1", topicId: "estonian-1-0", conceptId: "ehkki-kestlikumate-valikute-tegemise-vajadus-kahtlemata",
+    section: "II", questionRef: "2019 HL Section II Q1",
+    questionText: "„Ehkki kestlikumate valikute tegemise vajadus on kahtlemata ka laiemalt teadvustumas, kujutab zero waste sammu sellest edasi – äratundmist, et olulisem on tarbida vähem, mitte ainult paremini.“ Selgita, mille poolest on nullkuluelu samm kaugemale kui lihtsalt mõistmine, et vaja on teha kestlikumaid valikuid. Esita oma seisukoht umbes 100–150 sõnaga.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 100–150sõnaline ladus kommentaar, et tõestada teksti sisust arusaamist.", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Üksikisiku panus – mahetooted, kohalikku päritolu toit, toidu raiskamine, pakendivaba poodlemine, toodete kvaliteet ja koostis, väljamõeldud vajadused ja valikute rohkus, korduskasutus, prügi sorteerimine, jäätmete uus elu”; “Ühiskonna panus – seadusandlus, haridussüsteem, kodanikuvastutus, uus tehnoloogia, tootedisain, reklaam”; “Ökoloogiline jalajälg – transport, energia, keskkond, meelelahutus”. The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II ÜLESANNE",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2019 Higher Level — © State Examinations Commission.",
+    id: "est-2019-hl-iii-1", topicId: "estonian-1-1", conceptId: "saastatud-keskkond-saastatud-motlemise-tulemus",
+    section: "III", questionRef: "2019 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Saastatud keskkond on saastatud mõtlemise tulemus.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2019 Higher Level — © State Examinations Commission.",
+    id: "est-2019-hl-iii-2", topicId: "estonian-1-1", conceptId: "vaheaasta-parast-keskkooli-loppu-kas-kasulik",
+    section: "III", questionRef: "2019 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Vaheaasta pärast keskkooli lõppu – kas kasulik või raisatud aeg? Esita oma seisukoht umbes 300sõnalises kirjandis. Kaalu mõlema poole argumente.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2087,7 +2759,11 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: 1) tagasilöök 2) üle kivide ja kändude 3) tegema tagumikutunde 4) (midagi) seljatama 5) ligimene",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "vastulöök, lüüasaamine", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "vastulöök, lüüasaamine", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-2", kind: "point", verbatim: "hädavaevu, läbi raskuste, vaevaliselt, kuidagimoodi", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "veetma tööülesandeid täites kontoris ettenähtud töötunnid, sõltumata sellest, kas neid ülesandeid oleks võimalik täita kiiremini ja efektiivsemalt", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "hakkama saama, toime tulema, lõpetama kõik vajalikud või ette nähtud tööd", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "kaasinimene, teine inimene, lähedane inimene", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2099,7 +2775,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Estonian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2112,7 +2788,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kust pärineb praegune 40-tunnise töönädala idee?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "üle kivide ja kändude – hädavaevu, läbi raskuste, vaevaliselt, kuidagimoodi", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "See pärineb saja aasta tagusest tööstusajastust ja oli loodud kaitsma vabrikutöölisi ülekoormuse eest. Idee autor on F. Perkins.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2124,7 +2800,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Estonian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2137,7 +2813,7 @@ export const CARDS: SecCard[] = [
     questionText: "Millise seose lühema töönädala ja inimeste eluviisi vahel tõi välja Rootsi eksperiment?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tegema tagumikutunde –veetma tööülesandeid täites kontoris ettenähtud töötunnid, sõltumata sellest, kas neid ülesandeid oleks võimalik täita kiiremini ja efektiivsemalt", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Rootsi vanadekodu eksperiment näitas, et vaba aeg, mis töötajatel nüüd tööst üle jäi, suurendas nende energiat ja motivatsiooni oma füüsilise vormi eest paremini hoolt kanda. See omakorda vähendas selliseid tervisehädasid nagu kaela‐ ja seljaprobleemid ning töötajad olid sunnitud võtma vähem haiguspäevi ja puuduma harvem töölt.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2149,7 +2825,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Estonian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2162,7 +2838,7 @@ export const CARDS: SecCard[] = [
     questionText: "„[…] lühema töönädalaga töötaja tulemuslikkus on tavapärase 40-tunnise tööajaga töötaja omast kõrgem“. Kuidas see saavutatakse?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(midagi) seljatama – hakkama saama, toime tulema, lõpetama kõik vajalikud või ette nähtud tööd", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kuna töötundide vähenedes töö hulk samavõrra ei vähene, tähendab see, et tööülesannetele tuleb läheneda targemini ja neid tuleb täita tulemuslikumalt. Üheks võtmesõnaks on siin paindlikkus, mida noorenev töötajaskond tööandjalt järjest enam eeldab, näiteks võimalus valida oma tööaega ja/või töökeskkonda. Teine oluline võtmesõna on motivatsioon. Tööandja peab looma tööks sellised tingimused, et töötajad oleksid motiveeritud kulutama oma lühemat tööl veedetud aega tulemuslikult ja kvaliteetselt tööd tehes, muidu ei ole ettevõtte edukas.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2174,7 +2850,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Estonian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2187,7 +2863,7 @@ export const CARDS: SecCard[] = [
     questionText: "„Kui need kaks eeldust on täidetud, võiksime heita 40-tunnise töönädala lähemal aastakümnel ajaloo prügikasti ning nautida veidi madalama palga eest lühemat tööaega, mis võimaldab vaba aega suurendada ning elada täisväärtuslikumat, lähedastele enam tähelepanu pööravat ja rohkema kultuuriga täidetud elu.“ Artiklile tuginedes esita oma seisukoht selle kohta, kuidas võivad mõjutada lühem tööaeg ja sellest tulenev madalam palk meie eraelu kvaliteeti.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Esimene mõjutaja on kindlasti raha. Kui me töötaks vähem tunde päevas või vähem päevi nädalas, siis kahtlemata jääks rohkem aega pere, puhkamise, hobide, spordi ja kultuuri jaoks. Kui palk lühema tööaja eest jääks samaks võrreldes täisajaga töötamisega, on see ideaalne. Siis oleks tõepoolest võimalik pühendada oma tööst üle jääv aeg lähedastele, hobidele ja meelelahutusele. Ent kui tööandja vähendaks ka palka samavõrra – mis ilmselt paratamatult kaasneb, sest ka ettevõtted peavad ellu jääma – mõjutab see igal juhul inimeste võimalusi näiteks kultuuri nautida, hobidega tegeleda ja reisida. Väga ebatõenäoline on muidugi ka see, et hinnad vastavalt langeksid. Teine probleem seisneb tööharjumustes. Kuna me oleme harjunud palju töötama, töötunde lugema ja ületunnitööd tegema (nt nädalavahetusel või õhtuti), siis selleks, et leida õige tasakaal töö ja pereelu vahel, peame me õppima palju tõhusamalt tööd tegema, st suutma teha vähema aja jooksul rohkem, ilma et tekiks ületunde, ilma et kannataks kvaliteet või jääks lõpetamata tööülesandeid või ilma ise läbi põlemata. Harjumuste muutmine on aga aeganõudev. Samuti peaksid tööandjad leidma õige tasakaalu pakutavate töötingimuste ja oodatavate töötulemuste vahel, et töötajatel oleks motivatsiooni ja huvi lühema töönädala eelistamiseks. Lõpptulemusena parandaks lühem tööaeg kahtlemata inimeste elu kvaliteeti ja vähendaks oluliselt igapäevast stressi (nt liiklusummikud, inimeste heaolu, vaimne ja füüsiline tervis). II ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama 2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane 3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks 4. Õigekiri: õigekeelsus ja kirjavahemärgid", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Esimene mõjutaja on kindlasti raha. Kui me töötaks vähem tunde päevas või vähem päevi nädalas, siis kahtlemata jääks rohkem aega pere, puhkamise, hobide, spordi ja kultuuri jaoks. Kui palk lühema tööaja eest jääks samaks võrreldes täisajaga töötamisega, on see ideaalne. Siis oleks tõepoolest võimalik pühendada oma tööst üle jääv aeg lähedastele, hobidele ja meelelahutusele. Ent kui tööandja vähendaks ka palka samavõrra – mis ilmselt paratamatult kaasneb, sest ka ettevõtted peavad ellu jääma – mõjutab see igal juhul inimeste võimalusi näiteks kultuuri nautida, hobidega tegeleda ja reisida. Väga ebatõenäoline on muidugi ka see, et hinnad vastavalt langeksid. Teine probleem seisneb tööharjumustes. Kuna me oleme harjunud palju töötama, töötunde lugema ja ületunnitööd tegema (nt nädalavahetusel või õhtuti), siis selleks, et leida õige tasakaal töö ja pereelu vahel, peame me õppima palju tõhusamalt tööd tegema, st suutma teha vähema aja jooksul rohkem, ilma et tekiks ületunde, ilma et kannataks kvaliteet või jääks lõpetamata tööülesandeid või ilma ise läbi põlemata. Harjumuste muutmine on aga aeganõudev. Samuti peaksid tööandjad leidma õige tasakaalu pakutavate töötingimuste ja oodatavate töötulemuste vahel, et töötajatel oleks motivatsiooni ja huvi lühema töönädala eelistamiseks. Lõpptulemusena parandaks lühem tööaeg kahtlemata inimeste elu kvaliteeti ja vähendaks oluliselt igapäevast stressi (nt liiklusummikud, inimeste heaolu, vaimne ja füüsiline tervis).", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2199,8 +2875,67 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Estonian 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2021 Higher Level — © State Examinations Commission.",
+    id: "est-2021-hl-i-5", topicId: "estonian-0-1", conceptId: "milles-seisneb-artiklis-mainitud-eesti-probleem",
+    section: "I", questionRef: "2021 HL Section I Q5",
+    questionText: "Milles seisneb artiklis mainitud Eesti probleem? Selgita, tuginedes artiklile tervikuna, kuidas saaks sinu arvates selle probleemi lahendada.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lühem töönädal eeldab, et inimestel on inimväärne elatustase ja neil on viisakas sissetulek. Jõukamates ühiskondades on nii ettevõtete kui inimeste elujärg praeguseks tasemel, mis võimaldab neil vähem tunde töötada ja isegi vähem raha teenides nautida töövälise elu hüvesid. Eesti inimeste üldine elatustase seevastu on nii palju madalam ja üsna arvukas osa elanikkonnast on vaene, mis tähendab, et majanduslik olukord ei võimalda inimestel loobuda osast tööst ja sissetulekust lihtsalt selle nimel, et veeta rohkem aega lähedastega. Probleem loodetavasti laheneb, kui ühiskond rikastub. Kui eestlastel ei ole vaja enam nii palju pingutada igapäevase toimetuleku pärast, saavad ehk ka nemad lubada endale vähem töötamist ja väiksemat sissetulekut, aga rohkem väärtustades hoopis mittemateriaalseid hüvesid ja inimsuhteid.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-2", kind: "point", verbatim: "Artiklis mainitakse Eesti puhul ka madalamat tootlikkust, mis võib tähendada artikli kontekstis seda, et Eestis tuleks inimestel hakata tulemuslikumalt tööle ning kasutama nutikamalt töövahendeid.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Lõpuks tuleb arvestada ka sellega, et töökultuur ja tööharjumused erinevad riigiti ning pole alati võrreldavad, mistõttu peab Eesti leidma enda jaoks kõige sobivama mudeli, kuidas lühem tööaeg oma ühiskonna ja majanduse jaoks kasulikult käima saada.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Estonian 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2021 Higher Level — © State Examinations Commission.",
+    id: "est-2021-hl-ii-1", topicId: "estonian-1-1", conceptId: "tuleviku-toomaailm-ning-seal-vajaminevad-oskused",
+    section: "II", questionRef: "2021 HL Section II Q1",
+    questionText: "Kirjuta kirjand (vähemalt 300 sõna). Vali üks antud teemadest. Tuleviku töömaailm ning seal vajaminevad oskused ja omadused.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" Under Part II the scheme prints “Vähemalt 300 sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.” Under “II ülesande hindamisel arvestatakse järgmisi kriteeriume:” it prints the four criteria with no marks or percentages beside them, so they are shown and the part is scored on its printed total." },
+    { id: "r-2", kind: "point", verbatim: "2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks", marks: null },
+    { id: "r-4", kind: "point", verbatim: "4. Õigekiri: õigekeelsus ja kirjavahemärgid", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2021 Higher Level — © State Examinations Commission.",
+    id: "est-2021-hl-ii-2", topicId: "estonian-1-1", conceptId: "saa-valja-moelda-omaenda-fakte-lihtsalt",
+    section: "II", questionRef: "2021 HL Section II Q2",
+    questionText: "Kirjuta kirjand (vähemalt 300 sõna). Vali üks antud teemadest. „Me ei saa välja mõelda omaenda fakte lihtsalt sellepärast, et meile ei meeldi see, mida me kuuleme.“ - Greta Thunberg",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" Under Part II the scheme prints “Vähemalt 300 sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.” Under “II ülesande hindamisel arvestatakse järgmisi kriteeriume:” it prints the four criteria with no marks or percentages beside them, so they are shown and the part is scored on its printed total." },
+    { id: "r-2", kind: "point", verbatim: "2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks", marks: null },
+    { id: "r-4", kind: "point", verbatim: "4. Õigekiri: õigekeelsus ja kirjavahemärgid", marks: null },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2212,7 +2947,11 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: 1) õppur 2) haarama lennult 3) pidepunkt 4) jätma lünka 5) võtma pöördeid maha",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "õppija, õpilane", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "õppija, õpilane", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-2", kind: "point", verbatim: "kiiresti taipama, kiiresti aru saama", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "koht, mis pakub pidet; kokkupuutekoht, tugi, toetus, seos, ühendus", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "jätma tühiku või puuduse teadmistesse, teadmistes on midagi jäänud vahele või ununenud", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "hoogu või kiirust maha võtma, protsessi aeglustama", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2223,7 +2962,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2236,7 +2975,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kuidas defineerida ennastjuhtiva õpilase mõistet?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "lennult haarama – kiiresti taipama, kiiresti aru saama", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ennast juhtival õppuril peaks olema suurepärane enesejuhtimisoskus (iseseisvus, tahtejõud, aja planeerimine), kõrge tähelepanu‐ ja keskendumisvõime.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2247,7 +2986,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2260,7 +2999,7 @@ export const CARDS: SecCard[] = [
     questionText: "Miks ei sobi autori arvates koduõpe kõigile?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "pidepunkt – koht, mis pakub pidet; kokkupuutekoht, tugi, toetus, seos, ühendus", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Autori arvates ei sobi koduõpe paljudele, sest see eeldab iseseisvalt töötamise oskust, oskust seada eesmärke ja visadust neid eesmärke täita. Tihti vajavad aga lapsed/noored õpetaja abi ja selgitusi, aga ka klassikaaslaste toetust. Koduõpe ei sobi paljudele ka seetõttu, et see eeldab tugevat enesekontrolli, keskendumisvõimet ja püsivust. Need oskused on noorematel lastel suhteliselt piiratud.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2271,7 +3010,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2284,7 +3023,7 @@ export const CARDS: SecCard[] = [
     questionText: "Autor väidab artikli 8. lõigus, et lasteaias peaks digioskuste õpetamisel hoogu maha võtma. Selgita, miks ei ole väikesed lapsed selle rakendamiseks sobiv sihtrühm?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "jätma lünka – jätma tühiku või puuduse teadmistesse, teadmistes on midagi jäänud vahele või ununenud", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Digipöördega soovitakse, et lapsed omandaksid juba varases nooruses elus vajaminevaid IT‐oskusi, kuid vähemalt lasteaialaste puhul peaks keskenduma hoopis sellele, et õpetada neile inimestevahelist silmast‐silma suhtlemist – st oskust teisi inimesi kuulata, eri teemade üle arutleda, teiste seisukohtadega arvestama. Samuti peaks enne IT‐oskusi arendama hoopis selliseid oskusi, mis ei nõua tingimata nutivahendite omamist ja käsitlemist – näiteks joonistamist, muusikaga tegelemist, raamatute lugemist. See on vajalik selleks, et kasvaks üles põlvkond, kes tahab ja oskab kaasinimestega suhelda end suuliselt väljendades ning kes eelistaks otsest suhtlust inimeste, mitte arvutiga. Mänguasjadega mängimisest on keerulisem sõltuvusse sattuda, kui arvuti ees istumisest.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2295,8 +3034,89 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2022 Higher Level — © State Examinations Commission.",
+    id: "est-2022-hl-i-5", topicId: "estonian-0-1", conceptId: "nii-oleks-meil-justkui-olemas-koik",
+    section: "I", questionRef: "2022 HL Section I Q5",
+    questionText: "„Nii oleks meil justkui olemas kõik võimalused, et saata kõik lapsed kenasti distantsõppele. Mind aga teeb murelikuks, mis mõju see lastele avaldab.“ Selgita, miks on autor mures distantsõppe mõju pärast laste psüühikale? Kas see mure on sinu arvates õigustatud? Põhjenda oma seisukohta.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Autori arvates on inimesed loodud suhtlema teiste inimestega silmast‐silma, mitte (ainult) nutiseadmete abil. Eriti noorte jaoks on tähtsad sõbrad ja suhtlemine, ühistegevused ja huviringid või trennid. Tänu distantsõppele (sotsiaalne distantseerumine) langes aga noortele vajalik suhtlus miinimumini ja kogu nende harjumuspärane sotsiaalne elu kolis üle internetti, sh kool. See oli (on) väga paljude jaoks suur elumuutus, mis tõi (toob endiselt) paljudele kaasa probleeme sotsiaalse suhtlemisoskuse ja suhetega nii koolis (mahajäämus ja õpiraskused) kui ka kodus (peretülid, füüsiline tervis ja heaolu), samuti vaimseid üleelamisi, näiteks ärevushäired, depressioon, sõltuvus. Siis on teiste inimeste abi ja tugi väga oluline.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the task as: “Selgita, mispärast on autor mures distantsõppe mõju pärast laste psüühikale? Kas see mure on sinu arvates õigustatud?”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2022 Higher Level — © State Examinations Commission.",
+    id: "est-2022-hl-i-6", topicId: "estonian-0-1", conceptId: "kus-tehnoloogia-selle-kasutamine-ole-eesmark",
+    section: "I", questionRef: "2022 HL Section I Q6",
+    questionText: "„…. kus tehnoloogia ja selle kasutamine ei ole eesmärk omaette, vaid kus see nagu keelgi ühendab inimesi, mitte ei lahuta.“ Arutle loetule ja oma kogemusele tuginedes, kas tehnoloogia meie praeguses koolihariduses pigem ühendab või lahutab inimesi?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "digipädevus on tänapäeva kooli elementaarne osa – sobilik tehnoloogia ja õiged õpetamisvõtted võimaldab õpetada efektiivsemalt ja õppida mõtestatumalt, individuaalsem lähenemine või uued meeskonnatöö võimalused, kõrgem motivatsioon õppida, positiivne mõju enesehinnangule, algatusvõimele ja loovusele, suurem enesekindlus, lugupidamine teiste vastu ja mõistmine; õpetab vastutust ja iseseisvust – koostöökultuur õpilaste vahel, õpetaja ja õpilase, õpetaja ja lapsevanema, samuti kooli õpetajate vahel, jne.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" The scheme heads them: “Näiteks:”. It reprints the task as: “Arutle loetule ja omaenda kogemusele tuginedes”." },
+    { id: "r-2", kind: "point", verbatim: "Digivahendite ületarbimine ja ületähtsustamine koolitöös, meelelahutuse ja õppeülesannete osakaal, pidev infovoog, tehnoloogia mõju vaimsele ja füüsilisele tervisele – keskendumisraskused ja tähelepanuhäired, üksindus, enesesse kapseldumine, võõrandumine iseendast ja teistest; õpetajate, õpilaste ja lapsevanemate digipädevus, perede varanduslik ebavõrdsus, koolide võimekus digivahendeid kasutada, eelarvamused ja stereotüübid, koolikius, jne.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2022 Higher Level — © State Examinations Commission.",
+    id: "est-2022-hl-ii-1", topicId: "estonian-1-1", conceptId: "tanapaeva-isaac-newtonite-ees-seisvad-suurimad",
+    section: "II", questionRef: "2022 HL Section II Q1",
+    questionText: "Kirjuta kirjand (vähemalt 300 sõna), vali üks antud teemadest. Tänapäeva Isaac Newtonite ees seisvad suurimad väljakutsed Uued ajad, uued kangelased",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" Under Part II the scheme prints “Vähemalt 300 sõna pikkune sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.” Under “II ülesande hindamisel arvestatakse järgmisi kriteeriume:” it prints the four criteria with no marks or percentages beside them, so they are shown and the part is scored on its printed total." },
+    { id: "r-2", kind: "point", verbatim: "2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks", marks: null },
+    { id: "r-4", kind: "point", verbatim: "4. Õigekiri: õigekeelsus ja kirjavahemärgid", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2022 Higher Level — © State Examinations Commission.",
+    id: "est-2022-hl-ii-2", topicId: "estonian-1-1", conceptId: "kuidas-tekib-toeline-soprus",
+    section: "II", questionRef: "2022 HL Section II Q2",
+    questionText: "Kirjuta kirjand (vähemalt 300 sõna), vali üks antud teemadest. Kuidas tekib tõeline sõprus?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" Under Part II the scheme prints “Vähemalt 300 sõna pikkune sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.” Under “II ülesande hindamisel arvestatakse järgmisi kriteeriume:” it prints the four criteria with no marks or percentages beside them, so they are shown and the part is scored on its printed total." },
+    { id: "r-2", kind: "point", verbatim: "2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks", marks: null },
+    { id: "r-4", kind: "point", verbatim: "4. Õigekiri: õigekeelsus ja kirjavahemärgid", marks: null },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2308,7 +3128,11 @@ export const CARDS: SecCard[] = [
     questionText: "Seleta oma sõnadega lahti järgmised sõnad: 1) räämas 2) vaeslapse 3) tõhus 4) marsruut 5) hasart",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1) räämas olema – lohakil, kasimata olukorras; räpane, määrdunud", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "lohakil, kasimata olukorras; räpane, määrdunud", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-2", kind: "point", verbatim: "on jäetud tähelepanuta", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "mõjus, efektiivne, tugev, intensiivne", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "kavandatud liikumistee, tegelik liikumissuund", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "ind, õhin, hoog", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2319,7 +3143,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2332,7 +3156,7 @@ export const CARDS: SecCard[] = [
     questionText: "Milline on looduses viibimise mõju inimeste vaimsele tervisele, kui lähtuda uuringute tulemustest?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(miski on) vaeslapse osas – on jäetud tähelepanuta", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Uuringute tulemustest selgub, et looduses viibimine arendab laste ja noorte vaimseid võimeid, samuti on täheldatud, et tähelepanu‐ ja aktiivsushäirete tunnuseid esineb tulevikus vähem. Pikemas plaanis tagab looduses viibimine tugevama vaimse tervise ja parema elukvaliteedi täiskasvanueas.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2343,7 +3167,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2356,7 +3180,7 @@ export const CARDS: SecCard[] = [
     questionText: "Artiklis mainitakse, et tänapäeva noored ei tunne loodust. Kuidas saab seda puudujääki autori arvates parandada?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tõhus – mõjus, efektiivne, tugev, intensiivne", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Autori arvates on tänapäeva tehnoloogialahendustest palju abi, lihtsalt inimeste teadlikkust nende rakenduste olemasolust tuleb suurendada. Saadaval on mitu lihtsasti kasutatavat loodusäppi, mille abil saab näiteks tundma õppida ja määrata eri taimeliike või õppida eristama linde laulu järgi või tegema vahet putukatel.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2367,7 +3191,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2380,7 +3204,7 @@ export const CARDS: SecCard[] = [
     questionText: "„Mis oleks, kui kujundaksime oma kesklinnad hoopis laste ja noorte vajadusi arvestades?“ Selgita, mida on autori arvates noortel meie kaasaegses linnaruumis enim vaja.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "marsruut – kavandatud liikumistee, tegelik liikumissuund", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Praeguses autokeskses linnaruumis on noortel üsna piiratud liikumisvõimalused. Kulgedes enamasti ettemääratud marsruudil kooli, kodu ja trennide/huviringide vahel, on lastel vähe vabadust omapäi ringi liikuda ja väljas aega veeta. Kuigi äärelinnas elavatel noortel võib olla rohkem võimalusi mängida vabas õhus ja nautida loodust kui kortermajade noortel, peaks kõigil linnanoortel olema võrdelt võimalusi värskes õhus vaba aega veeta ja suhelda mujal kui siseruumides. Olemasolevatele mängu‐ ja spordiväljakutele ning noortekeskustele peaks lisa pakkuma sellised vabas õhus asuvad kokkusaamiskohad ja mängualad (nt eri liikumismängude mängimiseks, koostegutsemiseks, looduse avastamiseks, hobide ja loominguga tegelemiseks, liikide jälgimiseks) nagu linnametsatukad, loodulikud pargilapid, jalgrajad, samuti peaks linnadesse rajama palju rohkem eri tüüpi veekogusid, nt tiike, kraave ja ojasid.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2391,7 +3215,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2402,9 +3226,10 @@ export const CARDS: SecCard[] = [
     id: "est-2023-hl-i-6", topicId: "estonian-0-1", conceptId: "tanapaeva-inimene-elab-linnas-keskkonnas-mis",
     section: "I", questionRef: "2023 HL Section I Q6",
     questionText: "„Tänapäeva inimene elab linnas, keskkonnas, mis on küll turvaline ja ressursirohke, kuid kus me sellest hoolimata tunneme end sageli võõrkehana.“ Kas sinu arvates vastab see tõele? Selgita, miks sa nõustud või ei nõustu selle väitega. Esita oma arvamus loetule tuginedes.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Selgita, miks sa nõustud või ei nõustu selle väitega. Esita loetule tuginedes oma arvamus. 1) Ei nõustu selle väitega näiteks seetõttu, et linnastumine on paratamatu ja inimene on väga kohanemisvõimeline. Hoolimata sellest, et linnaelu on stressi‐ ja mürarohke ning steriilne, on see samas väga terviklik, mugav ja võimalusterohke (töökohad, transport, meelelahutus). Elukvaliteedi parandamiseks ja oma ökoloogilise jalajälje vähendamiseks saaksime siiski oma linnaeluviisi ümber kujundada – näiteks eelistada tervist mugavusele (harjutama ümber transpordi‐ ja liikumisharjumused), muuta linnakeskkonna looduslähedasemaks ja loomulikumaks (rohkem spontaanseid loodualasid ja looduspõhisem linnaruum) ning väärtustada liigirikkust (nt putukate elukohad, taimede kasvukohad). 2) Nõustun selle väitega näiteks seetõttu, et inimese loomulik elukeskkond on ajalooliselt olnud looduse keskel ja peaks võimalikult looduslähedaseks jääma ka edaspidi. Linnad laienevad ja võtavad enda alla järjest suurema maa‐ala, palju elusloodust (linnud, loomad, taimed) on sunnitud linnade eest taanduma või linnaeluga kohanema. Samas toit tuleb maalt, maal on rahu ja ruumi, vähem stressi, müra ja prügi, parem õhukvaliteet, suurem privaatsus ja rohkem eeldusi kvaliteetseks ja tervislikuks eluks. Loodus on lähedal, mis soodustab kehalist aktiivsust ja looduse rütmis elamist. II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ei nõustu selle väitega näiteks seetõttu, et linnastumine on paratamatu ja inimene on väga kohanemisvõimeline. Hoolimata sellest, et linnaelu on stressi‐ ja mürarohke ning steriilne, on see samas väga terviklik, mugav ja võimalusterohke (töökohad, transport, meelelahutus). Elukvaliteedi parandamiseks ja oma ökoloogilise jalajälje vähendamiseks saaksime siiski oma linnaeluviisi ümber kujundada – näiteks eelistada tervist mugavusele (harjutama ümber transpordi‐ ja liikumisharjumused), muuta linnakeskkonna looduslähedasemaks ja loomulikumaks (rohkem spontaanseid loodualasid ja looduspõhisem linnaruum) ning väärtustada liigirikkust (nt putukate elukohad, taimede kasvukohad).", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-2", kind: "point", verbatim: "Nõustun selle väitega näiteks seetõttu, et inimese loomulik elukeskkond on ajalooliselt olnud looduse keskel ja peaks võimalikult looduslähedaseks jääma ka edaspidi. Linnad laienevad ja võtavad enda alla järjest suurema maa‐ala, palju elusloodust (linnud, loomad, taimed) on sunnitud linnade eest taanduma või linnaeluga kohanema. Samas toit tuleb maalt, maal on rahu ja ruumi, vähem stressi, müra ja prügi, parem õhukvaliteet, suurem privaatsus ja rohkem eeldusi kvaliteetseks ja tervislikuks eluks. Loodus on lähedal, mis soodustab kehalist aktiivsust ja looduse rütmis elamist.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2415,8 +3240,82 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2023 Higher Level — © State Examinations Commission.",
+    id: "est-2023-hl-i-5", topicId: "estonian-0-1", conceptId: "enese-juhtimine-olukorra-kontrollimine-voimalus-ise",
+    section: "I", questionRef: "2023 HL Section I Q5",
+    questionText: "„Enese juhtimine, olukorra kontrollimine, võimalus ise midagi linnalooduse heaks ära teha ja sellest tulenev saavutustunne peaksid olema siinkohal võtmesõnad.“ Arutle artikli põhjal, kuidas saab sinu arvates loodus aidata kaasa enesejuhtimisele, olukorra kontrollimisele ning innustada ise midagi keskkonna heaks ära tegema.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Loodus õpetab meid oma elu juhtima ja olukordadega paremini toime tulema. Aktiivne isetegevus ja tööprotsessis osalemine aitavad olukordi kontrollida. Ükskõik, mida me loome või kujundame – olgu kooliaias töötamine, kodune rõdukast või lillepeenar, külvamine‐kasvatamine‐hooldamine‐hoolitsemine vms –, omandame me selle tegevuse käigus uusi kogemusi ja õpime midagi uut. Kui ettevõtmine õnnestub, saame positiivse eduelamuse, mis loodetavasti suurendab tahet järgmine kord midagi sarnast looduses korda saata. Isegi kui töö käigus tuleb ette takistusi ja ebaõnnestumist, saab sellestki midagi õppida. Just see, kui anda noortele vabad käed valida ise välja idee või projekt, mida looduses ellu viia, see iseseisvalt kavandada ja omade jõududega edukalt lõpetada, aitab kaasa loovusele, iseseiseva mõtlemise ja algatusvõime kujunemisele. Samuti aitavad noortel loovust arendada ja iseseisvust õpetada kõikvõimalikud spontaanselt tekkivad loodusmängud ja loovusprojektid looduses. Looduses tegutsemise kaudu saab selgeks ka koostöö tähtsus.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the task’s opening as: “Arutle teksti põhjal”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2023 Higher Level — © State Examinations Commission.",
+    id: "est-2023-hl-ii-1", topicId: "estonian-1-0", conceptId: "loodus-arvusta-sind-oli-mote-millega",
+    section: "II", questionRef: "2023 HL Section II Q1",
+    questionText: "„„Loodus ei arvusta sind“ oli mõte, millega üks Inglise noor kirjeldas linnalooduses tekkivat heaolutunnet.“ Mil moel loodus pigem toetab sind kui arvustab? Arutle artikli põhjal selle väite üle ja kirjuta umbes 100–150sõnaline arvamus oma seisukoha põhjenduseks.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Digivahendid ja tehnoloogia, tarbiv elustiil, kliimamuutused, rohealade kättesaadavus”; “Tervis ja heaolu: üksindus, stress, unehäired, kurbus, kaaluprobleemid, koolikius, (kliima)murelikkus, kehaline aktiivsus, vaimne heaolu, psühholoogia ja stressimaandus, metsateraapia”; “Uued teadmised ja oskused: looduslaagrid, õppekäigud, looduse vaatlemine‐uurimine‐analüüs, hobid, sport, elusloodus”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II ÜLESANNE",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2023 Higher Level — © State Examinations Commission.",
+    id: "est-2023-hl-iii-1", topicId: "estonian-1-1", conceptId: "ruum-umber-kujundab-motteviisi",
+    section: "III", questionRef: "2023 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Ruum me ümber kujundab me mõtteviisi.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2023 Higher Level — © State Examinations Commission.",
+    id: "est-2023-hl-iii-2", topicId: "estonian-1-1", conceptId: "ajad-teised-inimesed-endised-anton-hansen",
+    section: "III", questionRef: "2023 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. „Ajad on teised, inimesed endised.” (Anton Hansen Tammsaare)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2428,7 +3327,7 @@ export const CARDS: SecCard[] = [
     questionText: "Milliste oskuste olemasolu näitab agentsus?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "nutikas – taibukas, leidlik, terane, tark, lahtise peaga", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "See näitab inimese toimetulekuvõimet, oskust seada eesmärke ja langetada otsuseid nende eesmärkide täideviimiseks. See eeldab oskust teha valikuid, kasutades olemasolevaid oskusi ja teadmisi.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2439,7 +3338,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2452,7 +3351,7 @@ export const CARDS: SecCard[] = [
     questionText: "Autor võrdleb tehnoloogia kasutamist auto juhtimisega. Missuguse järelduse teeb ta selle võrdluse põhjal tehisaru kohta?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "äge – väga tore, vaimustust äratav, vinge, kihvt", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Tehisaru on nagu auto. Autoga sõitmiseks tuleb olla teatud vanuses, õppida juhtima autot, omandada sõidureeglid, sooritada eksamid ja õppida liikluses käituma. Samamoodi peab inimene tehisaru kasutamise jaoks vastama teatud tingimustele (nt vanus) ja omandama teatud teadmised ja hoiakud ning järgima reegleid. Tehnoloogiat nagu autotki tuleb kasutada mõistlikult.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2463,7 +3362,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2476,7 +3375,7 @@ export const CARDS: SecCard[] = [
     questionText: "Artiklist selgub, et tihti ei kasuta õpilased tehisarumudeleid kodutööde tegemisel otstarbekalt ega ei saa õppimisest pikaajalist kasu. Selgita, kuidas seda praktikat parandada?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "pärssima – (protsessi) aeglustama, takistama, tagasi hoidma", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Esiteks peab õppimiseks võtma aega ja olema keskendunud. Tervete ülesannete kopeerimisel tehisarust otse vihikusse ei ole pikaajalist väärtust, sest õppuri oma aju jääb rakenduseta. Selle asemel oleks tehisarumudelitelt hoopis mõttekas küsida end huvitava teema kohta üsna spetsiifilisi küsimusi või selgitusi, seejärel tuleks pakutud vastused oma peas läbi mõelda ja uus info oma seniste teadmistega siduda. Teiseks aitab kaasa see, kui õpilast teema huvitab ja ülesanne nõuab loomingulist lähenemist ja iseseisvust. Samuti on kasu taustteadmistest tehisaru kasutamise võimaluste kohta.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2487,7 +3386,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2500,7 +3399,7 @@ export const CARDS: SecCard[] = [
     questionText: "„Tehnoloogia on ainult nii hea, kui head on kasutaja oskused ja teadmised. Seega minu arvates peaksime digiriigina panustama lastele (ja ka täiskasvanutele) vajalike tulevikuoskuste õpetamisse.“ Arutle artikli konteksti silmas pidades selle üle, millised võiks olla tulevikus vajaminevad oskused või teadmised.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Maailm muutub aina tehnoloogiakesksemaks ja robotite, algoritmide ja tehisintellekti mõju aina kasvab. Enamik tulevikuameteid eeldab rohkem või vähem tehnoloogilist võimekust ja teadmisi – on vaja osata näiteks programmeerimist, andmetöötlust, masinõpet. Seega on oluliste tulevikus vajaminevate oskuste hulgas kindlasti arvutioskus (sh enesetäiendamine, elukestev ja ümberõpe) ning keeleoskus ja ‐õpe. Samas jäävad tõenäoliselt alles siiski erialad, mis nõuavad vähem tehnoloogiaoskust ja rohkem loovust, empaatiavõimet, meeskonnatööoskust, suhtlemisoskust, paindlikkust. II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Maailm muutub aina tehnoloogiakesksemaks ja robotite, algoritmide ja tehisintellekti mõju aina kasvab. Enamik tulevikuameteid eeldab rohkem või vähem tehnoloogilist võimekust ja teadmisi – on vaja osata näiteks programmeerimist, andmetöötlust, masinõpet. Seega on oluliste tulevikus vajaminevate oskuste hulgas kindlasti arvutioskus (sh enesetäiendamine, elukestev ja ümberõpe) ning keeleoskus ja ‐õpe. Samas jäävad tõenäoliselt alles siiski erialad, mis nõuavad vähem tehnoloogiaoskust ja rohkem loovust, empaatiavõimet, meeskonnatööoskust, suhtlemisoskust, paindlikkust.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2511,8 +3410,203 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-i-1-a", topicId: "estonian-0-0", conceptId: "digiriik",
+    section: "I", questionRef: "2024 HL Section I Q1(a)",
+    questionText: "Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis. Sõnad ja väljendid on esitatud paksus kirjas. digiriik",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "riik, mis kasutab toimimiseks palju digitaalseid lahendusi; riik, mida iseloomustab kõrge digitaliseerituse tase ning digitehnoloogia kiire areng", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-i-1-b", topicId: "estonian-0-0", conceptId: "nutikas",
+    section: "I", questionRef: "2024 HL Section I Q1(b)",
+    questionText: "Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis. Sõnad ja väljendid on esitatud paksus kirjas. nutikas",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "taibukas, leidlik, terane, tark, lahtise peaga", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-i-1-c", topicId: "estonian-0-0", conceptId: "age",
+    section: "I", questionRef: "2024 HL Section I Q1(c)",
+    questionText: "Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis. Sõnad ja väljendid on esitatud paksus kirjas. äge",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "väga tore, vaimustust äratav, vinge, kihvt", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-i-1-d", topicId: "estonian-0-0", conceptId: "parssima",
+    section: "I", questionRef: "2024 HL Section I Q1(d)",
+    questionText: "Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis. Sõnad ja väljendid on esitatud paksus kirjas. pärssima",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(protsessi) aeglustama, takistama, tagasi hoidma", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-i-1-e", topicId: "estonian-0-0", conceptId: "maailmaga-suhestuma",
+    section: "I", questionRef: "2024 HL Section I Q1(e)",
+    questionText: "Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis. Sõnad ja väljendid on esitatud paksus kirjas. maailmaga suhestuma",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "maailmaga seostuma, haakuma, suhtes olema", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-i-5", topicId: "estonian-0-1", conceptId: "agentsuse-oluline-osa-oskus-langetada-eesmargiparaseid",
+    section: "I", questionRef: "2024 HL Section I Q5",
+    questionText: "„Agentsuse oluline osa on oskus langetada eesmärgipäraseid valikuid. Et agentsust arendada, tuleks lapsel koolis harjutada rohkem valikute tegemist.“ Kuidas aitab sinu arvates valikute tegemise oskus kaasa tehnoloogia õigesti kasutamise oskusele? Esita loetu põhjal oma seisukoht.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Valikute tegemise oskus on kõigepealt oluline selleks, et lapsed oleksid võimelised otsustama ise, millal neil on vaja tehnoloogiat, nutiseadmeid või tehisaru ning et nad oskaksid neid seadmeid sihipäraselt kasutada. Koolil on tähtis roll suunanäitajana.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-2", kind: "point", verbatim: "Valikute tegemise oskus aitab meil oma elus eesmärkideni jõuda. Noorte puhul on üheks eesmärgiks tulevik ja karjäär. Võimalus valida endale sobivaid aineid ja projekte aitab meid muuta pädevamaks, loovamaks, raskuste ületamisel julgemaks, sihikindlamaks, iseseisvamaks ning arendada kriitilist mõtlemist ja kiiret analüüsivõimet. Samad oskused on vajalikud tehnoloogiamaailmas – pädevust kasutada ja arendada tehnoloogiat, läheneda projektidele loovalt ja viia ideid ellu sihipäraselt, arvestada ohte (nt küberkuritegevus, valeinfo), järgida reegleid (nt andmekaitse) või oskust valida sobivaid töömeetodeid.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-ii-1", topicId: "estonian-1-0", conceptId: "eesmark-pole-mitte-riik-kus-koik",
+    section: "II", questionRef: "2024 HL Section II Q1",
+    questionText: "„Eesmärk pole mitte riik, kus kõik kasutavad nutividinaid, vaid riik, kus inimesed on nutikad.“ Artiklile tuginedes arutle, kuidas seda eesmärki saavutada. Kirjuta umbes 100–150sõnaline arvamus oma seisukoha põhjenduseks.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “digivahendid ja tehnoloogia, innovatsioon, digiharidus, keskkond, internet, keel ja kultuur, tehisintellekt, sotsiaalmeedia, küberturvalisus, nutiseadmete kasutamise mõju inimeste tervisele ja käitumisele, digiseadmete mõistlik kasutamine ja piirangud, kodu, kooli ja riigi roll;”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II ÜLESANNE",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-iii-1", topicId: "estonian-1-1", conceptId: "tehnoloogia-areng-nagu-kahe-teraga-mook",
+    section: "III", questionRef: "2024 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Tehnoloogia areng – nagu kahe teraga mõõk",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-iii-2", topicId: "estonian-1-1", conceptId: "eesti-suurim-turvalisusrisk-harimatus-jaak-joeruut",
+    section: "III", questionRef: "2024 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. „Eesti suurim turvalisusrisk on harimatus.“ (Jaak Jõerüüt)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2524,7 +3618,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mis põhjusel inimesed autori arvates protestivad?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "murendama – vähendama, nõrgemaks muutma, kahandama", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Protestitakse maailma eri paigus, erinevates kultuuriruumides ja paljudel põhjustel. Protestitakse kollektiivselt selleks, et muuta poliitilisi, sotsiaalseid või kultuurilisi protsesse ühiskonnas. Protesti kaudu saab juhtida tähelepanu probleemidele ja selle kaudu on võimalik saavutada õiglasemaid lahendusi.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2535,7 +3629,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2548,7 +3642,7 @@ export const CARDS: SecCard[] = [
     questionText: "Millise järelduse saab inimeste tagasihoidliku protestikäitumise põhjal teha ühiskonna kohta, kui tugineda küsitluste tulemustele?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "keskne – peamine, põhiline", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Inimeste protestikäitumine näitab demokraatia küpsust ja selle kujunemise mustrit. Küsitluste tulemused näitavad, et Euroopa vanades demokraatiates (nt Skandinaaviamaad ja Ühendkuningriik), kus meeleavaldamise ja streikimise kultuur on vanem, kasutatakse seda võimalust aktiivsemalt ja laialdasemalt, sest rahvas teab, et nii on neil võimalik oma riigi poliitikat mõjutada. Euroopa ida- ja lõunaosas, st riikides, kus demokraatia on noor, protestitakse vähem ja harvem, sest inimestel ei ole suurt usku sellesse, et poliitiline süsteem nende arvamust arvesse võtab.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2559,7 +3653,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
     },
   } as SecCard,
   {
@@ -2572,7 +3666,7 @@ export const CARDS: SecCard[] = [
     questionText: "Artiklis väidetakse, et protestides osalevad tõenäolisemalt hoopis kõrgemalt haritud ja paremal elujärjel olevad inimesed. Miks on see sinu arvates nii? Artiklile tuginedes esita oma arvamus.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "nappima – puudu olema, liiga vähe olema", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-1", kind: "point", verbatim: "Suurem eneseteadlikkus ja enesekindlus, analüüsivõimelisemad, sotsiaalselt kogenumad ja poliitiliselt aktiivsemad. Sotsiaalmeedia mõju, huvid ja elustiil, avar maailmavaade, keeleoskus ja lugemus, reisimine ja rahvusvaheline suhtlus, koostöösoov. Elatustase – heaolu suurendab enesekindlust ja võimaldab paremini põhimõtete nimel võidelda.", marks: 5, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2583,7 +3677,236 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Estonian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on its own first page: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2025 Higher Level — © State Examinations Commission.",
+    id: "est-2025-hl-i-1-a", topicId: "estonian-0-0", conceptId: "innukas",
+    section: "I", questionRef: "2025 HL Section I Q1(a)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: innukas",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "midagi õhina või vaimustusega tegema, entusiastlik, aktiivne, tegus", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust (nii nagu need esinevad teksti kontekstis).”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2025 Higher Level — © State Examinations Commission.",
+    id: "est-2025-hl-i-1-b", topicId: "estonian-0-0", conceptId: "murendama",
+    section: "I", questionRef: "2025 HL Section I Q1(b)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: murendama",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "vähendama, nõrgemaks muutma, kahandama", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust (nii nagu need esinevad teksti kontekstis).”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2025 Higher Level — © State Examinations Commission.",
+    id: "est-2025-hl-i-1-c", topicId: "estonian-0-0", conceptId: "keskne",
+    section: "I", questionRef: "2025 HL Section I Q1(c)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: keskne",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "peamine, põhiline", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust (nii nagu need esinevad teksti kontekstis).”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2025 Higher Level — © State Examinations Commission.",
+    id: "est-2025-hl-i-1-d", topicId: "estonian-0-0", conceptId: "nappima",
+    section: "I", questionRef: "2025 HL Section I Q1(d)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: nappima",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "puudu olema, liiga vähe olema", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust (nii nagu need esinevad teksti kontekstis).”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2025 Higher Level — © State Examinations Commission.",
+    id: "est-2025-hl-i-1-e", topicId: "estonian-0-0", conceptId: "upitama",
+    section: "I", questionRef: "2025 HL Section I Q1(e)",
+    questionText: "Seleta oma sõnadega lahti järgmised sõnad ja väljendid: upitama",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "tõstma, üles kiitma, paremaks muutma", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust (nii nagu need esinevad teksti kontekstis).”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2025 Higher Level — © State Examinations Commission.",
+    id: "est-2025-hl-i-5", topicId: "estonian-0-1", conceptId: "miks-paugutatakse-sotsiaalmeedias-voi-vingutakse-kodus",
+    section: "I", questionRef: "2025 HL Section I Q5",
+    questionText: "„Miks paugutatakse sotsiaalmeedias või vingutakse kodus sõprade ja sugulaste ringis ega võeta midagi ette olukorra muutmiseks?“ Arutle tekstile ja isiklikule kogemusele tuginedes selle üle, miks osalevad eestlased protestides nii vähe.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Eestlased on oma loomult passiivsed ja pisut ükskõiksed, mõtlevad pigem individualistlikult kui kollektiivselt. Esiplaanil isiklik heaolu, mitte rahvuslik solidaarsus. Lühiajalised eesmärgid.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-2", kind: "point", verbatim: "Madal ametiühinguosalus.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Puudub usk, et inimeste arvamusest riigi jaoks oluliste otsuste puhul midagi sõltub ja et nende häält poliitilistes küsimustes kuulda võetakse.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Ajapuudus ja rahaline võimekus. Risk, et pingutus ei anna soovitud tulemust ning et kaasneda võivad ebamugavused.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Inimestel ei ole kogemust meele avaldamisel. Puudub usk, et asju saab parandada. Pigem loodetakse, et probleem laheneb iseenesest või siis üritatakse seda lahendada muul moel.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Puudub nägemus ja huvi, vahel ka teadmised ja analüüsioskus.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Rahva ajalooline mälu ja vanuseline lõhe.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2025 Higher Level — © State Examinations Commission.",
+    id: "est-2025-hl-i-6", topicId: "estonian-0-1", conceptId: "usk-enda-voimesse-suutlikkusse-midagi-ara",
+    section: "I", questionRef: "2025 HL Section I Q6",
+    questionText: "„Usk enda võimesse ja suutlikkusse midagi ära teha, heas mõttes maailma parandada ei teki ilmselt üleöö, vaid positiivsete eeskujude ja kogemuste pinnalt.“ Kui suurt rolli mängivad eeskujud teiste inimeste julgustamisel selles, et tegude kaudu on võimalik maailmas asju muuta? Arutle artikli konteksti silmas pidades ja omaenda kogemusele tuginedes selle küsimuse üle.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kodu- ja välismaised mõjuisikud, suunamudijad, trendiloojad, meelelahutajad, oma ala eksperdid ja arvamusliidrid, kuulsused, kool, perekond, sõbrad.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-2", kind: "point", verbatim: "Kanalid: internet ja sotsiaalmeedia, blogid, telesaated, raamatud ja trükised, reklaam, kampaaniad ja üritused, kool.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Roll: toodete, teenuste, suundumuste ja hoiakute tutvustamine, nende kohta info ja hinnangu andmine, mõju tarbimiskultuuri ja elustiili kujunemisse.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Teemad: füüsiline ja vaimne tervis, toitumine, kultuur, jätkusuutlik elustiil ja väärtushinnangud, kliimamuutused ja keskkond, globaalsed trendid jne.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Omadused: pädevus ja usaldusväärsus, asjakohasus ja uudsus, teaduspõhine lähenemine ja professionaalsus, nähtavus jne.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Tulemus: ühtekuuluvustunne, samastumine, inspireerimine, järgimine jne.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2025 Higher Level — © State Examinations Commission.",
+    id: "est-2025-hl-ii-1", topicId: "estonian-1-0", conceptId: "seega-valdav-osa-poliitikateadlasi-uhel-meelel",
+    section: "II", questionRef: "2025 HL Section II Q1",
+    questionText: "„Seega on valdav osa poliitikateadlasi ühel meelel, et protestid /---/ on sageli ainus või peamine võimalus vähemuste huvide eest seista ja nende probleemidele tähelepanu juhtida.“ Kas protestimine viib sihile? Arutle artikli põhjal selle väite üle ja kirjuta 100 kuni 150 sõna pikkune arvamus oma seisukoha põhjenduseks.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Rahumeelsed meeleavaldused ja vägivaldsed väljaastumised, kodanikuosalus, sõnavabadus, vabatahtlik töö, noorte panus, põlvkondade erinevus, vähemused, meelelahutus, majanduslik olukord, keskkond, teadus ja tehnoloogiline võimekus jne.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II ÜLESANNE",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2025 Higher Level — © State Examinations Commission.",
+    id: "est-2025-hl-iii-1", topicId: "estonian-1-1", conceptId: "aktiivsed-noored-voimalus-voi-probleem-uhiskonna",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "Kirjuta vähemalt 300 sõna pikkune kirjand. Vali üks antud teemadest. Aktiivsed noored – võimalus või probleem ühiskonna jaoks?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" Under Part III the scheme prints only “Vähemalt 300 sõna pikkune sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.” and reprints the two titles. It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2025 Higher Level — © State Examinations Commission.",
+    id: "est-2025-hl-iii-2", topicId: "estonian-1-1", conceptId: "keskkond-pole-mitte-meid-umbritsev-vaid",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "Kirjuta vähemalt 300 sõna pikkune kirjand. Vali üks antud teemadest. „Keskkond pole mitte meid ümbritsev, vaid me ise kuulume sellesse, me sisaldume selles, oleme ise selle koostisosa.“ Fred Jüssi (bioloog, loodusfotograaf ja looduse populariseerija)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" Under Part III the scheme prints only “Vähemalt 300 sõna pikkune sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.” and reprints the two titles. It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
 ];

@@ -42,17 +42,18 @@ export const CARDS: SecCard[] = [
     questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті: оздоблювати",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "надавати одягу гарного вигляду за допомогою вишивки; прикрашати; декорувати;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "надавати одягу гарного вигляду за допомогою вишивки; прикрашати; декорувати;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -65,17 +66,18 @@ export const CARDS: SecCard[] = [
     questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті: візерунок",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "малюнок із різних ліній, кольорів, тіней; мереживо; орнамент;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "малюнок із різних ліній, кольорів, тіней; мереживо; орнамент;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -88,17 +90,18 @@ export const CARDS: SecCard[] = [
     questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті: старовинний",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "той, який створили у старовину; який зберігся, залишився від давніх часів;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "той, який створили у старовину; який зберігся, залишився від давніх часів;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -111,17 +114,18 @@ export const CARDS: SecCard[] = [
     questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті: оберіг",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "талісман; захист; річ або предмет, який оберігає від нещасть;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "талісман; захист; річ або предмет, який оберігає від нещасть;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -134,17 +138,18 @@ export const CARDS: SecCard[] = [
     questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті: автентичний.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "який походить із першоджерела, відповідає оригіналові; справжній, оригінальний. (5 × 1 бал)", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "який походить із першоджерела, відповідає оригіналові; справжній, оригінальний.", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -155,19 +160,21 @@ export const CARDS: SecCard[] = [
     id: "ukr-2025-hl-i-2", topicId: "ukrainian-0-1", conceptId: "ask",
     section: "I", questionRef: "2025 HL Section I Q2",
     questionText: "Наведіть два приклади чудодійних властивостей, якими українці наділяли вишиту сорочку.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Наведіть два приклади чудодійних властивостей, якими українці наділяли вишиту сорочку. Українці приписували вишитій сорочці такі магічні властивості: Традиційно вважалося, що вишиванка була здатна допомогти з фертильністю. Наприклад, якщо заміжня не могла завагітніти, їй рекомендували позичити й деякий час поносити вишиванку іншої жінки, яка вже мала кількох дітей. Українці вважали вишиту сорочку своєрідним оберегом, який може захистити від злого ока. Зокрема, у день весілля, коли молодята були менш захищені, переходячи зі статусу парубка й дівчини в новий – чоловіка та жінки, вони одягали по дві сорочки, щоб відвернути від себе лихі сили. (5 балів)", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "Традиційно вважалося, що вишиванка була здатна допомогти з фертильністю. Наприклад, якщо заміжня не могла завагітніти, їй рекомендували позичити й деякий час поносити вишиванку іншої жінки, яка вже мала кількох дітей.", marks: null, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" It leads the answer with “Українці приписували вишитій сорочці такі магічні властивості:”." },
+    { id: "r-2", kind: "point", verbatim: "Українці вважали вишиту сорочку своєрідним оберегом, який може захистити від злого ока. Зокрема, у день весілля, коли молодята були менш захищені, переходячи зі статусу парубка й дівчини в новий – чоловіка та жінки, вони одягали по дві сорочки, щоб відвернути від себе лихі сили.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -180,17 +187,18 @@ export const CARDS: SecCard[] = [
     questionText: "З’ясуйте на основі тексту, що автор хотів сказати нам, використовуючи вислів «атлас вишиванок».",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "З’ясуйте на основі тексту, що автор хотів сказати нам, використовуючи вислів «атлас вишиванок». Наприклад: Цим висловом автор акцентує на тому, що для кожного регіону України притаманна своя унікальна вишиванка – відмінна за стилем вишивки, фасоном, кольором, технікою вишивання, орнаментом, розташуванням візерунків тощо. Наприклад, для одних областей України характерні рослинні або рослинно-квіткові орнаменти, для інших – геометричні й динамічні; в одних українських регіонах вишивка на сорочці різнобарвна й густа, тоді як в інших – переважає ніжна й тепла гама кольорів із пастельними відтінками. Водночас дослідники української вишивки нараховують понад 200 старовинних швів на основі 20 технік вишивання. Загалом розмаїття вишивки на українських вишиванках настільки багате й унікальне, що є всі підстави для укладення «своєрідного атласу вишиванок» – мапи України з відображенням на ній регіональних різноманітностей вишивки. (5 балів)", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "Цим висловом автор акцентує на тому, що для кожного регіону України притаманна своя унікальна вишиванка – відмінна за стилем вишивки, фасоном, кольором, технікою вишивання, орнаментом, розташуванням візерунків тощо. Наприклад, для одних областей України характерні рослинні або рослинно-квіткові орнаменти, для інших – геометричні й динамічні; в одних українських регіонах вишивка на сорочці різнобарвна й густа, тоді як в інших – переважає ніжна й тепла гама кольорів із пастельними відтінками. Водночас дослідники української вишивки нараховують понад 200 старовинних швів на основі 20 технік вишивання. Загалом розмаїття вишивки на українських вишиванках настільки багате й унікальне, що є всі підстави для укладення «своєрідного атласу вишиванок» – мапи України з відображенням на ній регіональних різноманітностей вишивки.", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme heads its answer “Наприклад:”: what it gives is an example, not a required list." },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -201,19 +209,23 @@ export const CARDS: SecCard[] = [
     id: "ukr-2025-hl-i-4", topicId: "ukrainian-0-1", conceptId: "ask",
     section: "I", questionRef: "2025 HL Section I Q4",
     questionText: "Поясніть, покликаючись на текст, яку персональну інформацію вишиванка могла передавати про свого власника.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Поясніть, покликаючись на текст, яку персональну інформацію вишиванка могла передавати про свого власника. Наприклад: Вишиванку часто називають кодом, який може передати чимало інформації про свого власника: Завдяки техніці вишивання, особливостям орнаменту, кольору вишиванки в давні часи можна було ідентифікувати походження людини. Оскільки кожному регіону України була притаманна своя вишивка, наші пращури так могли відрізнити «свого» від «чужого». За вишитою сорочкою можна було також визначити стать власника, позаяк для чоловічих і жіночих сорочок були характерні різні кольорові гами, розташування візерунків, якість полотна, з якого зроблена сорочка. Вишиванка могла надати інформацію про вік людини, адже, як відомо, багато вишиті сорочки мали право носити тільки дівчата та молоді жінки. Що старшою ставала жінка, то менше вишивки було на її одязі, а після 60-ти років право одягати вишиванку жінки мали тільки в найбільші свята – Різдво та Великдень. За вишиванкою можна було ідентифікувати ще й матеріальний добробут власника: у давнину чорні нитки були на вагу золота, бо природних фарбників такого кольору на той час не існувало, тож дозволити собі вишиту чорними нитками сорочку могли тільки доволі заможні українці. (5 балів)", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "Завдяки техніці вишивання, особливостям орнаменту, кольору вишиванки в давні часи можна було ідентифікувати походження людини. Оскільки кожному регіону України була притаманна своя вишивка, наші пращури так могли відрізнити «свого» від «чужого».", marks: null, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme heads its answer “Наприклад:”: what it gives is an example, not a required list. It leads the answer with “Вишиванку часто називають кодом, який може передати чимало інформації про свого власника:”." },
+    { id: "r-2", kind: "point", verbatim: "За вишитою сорочкою можна було також визначити стать власника, позаяк для чоловічих і жіночих сорочок були характерні різні кольорові гами, розташування візерунків, якість полотна, з якого зроблена сорочка.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Вишиванка могла надати інформацію про вік людини, адже, як відомо, багато вишиті сорочки мали право носити тільки дівчата та молоді жінки. Що старшою ставала жінка, то менше вишивки було на її одязі, а після 60-ти років право одягати вишиванку жінки мали тільки в найбільші свята – Різдво та Великдень.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "За вишиванкою можна було ідентифікувати ще й матеріальний добробут власника: у давнину чорні нитки були на вагу золота, бо природних фарбників такого кольору на той час не існувало, тож дозволити собі вишиту чорними нитками сорочку могли тільки доволі заможні українці.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -224,19 +236,22 @@ export const CARDS: SecCard[] = [
     id: "ukr-2025-hl-i-5", topicId: "ukrainian-0-1", conceptId: "ask",
     section: "I", questionRef: "2025 HL Section I Q5",
     questionText: "Апелюючи до тексту та власного життєвого досвіду, обґрунтуйте, яку цінність має вишита сорочка для українців.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Апелюючи до тексту і власного життєвого досвіду, обґрунтуйте, яку цінність має вишита сорочка для українців. Наприклад: Можна з упевненістю стверджувати, що вишиванка – це безцінна матеріальна й духовна спадщина національної культури, яку українці свято бережуть: Вишиванка споконвіків є невід’ємною частиною нашої самобутньої культури. Для українців вишита сорочка – це не просто національний одяг, а справжня святиня, що відображає зв’язок поколінь, родинну пам’ять, яка не переривається віками. Вишиту сорочку передають із роду в рід, бережуть як безцінну реліквію, яка приносить щасливу долю її власнику. Це своєрідний генетичний код нації, зашифрований у фантастичних і неймовірно гарних орнаментах, де кожен візерунок має важливе значення. Упродовж століть вишиванка була містичним і сакральним одягом для наших пращурів. Люди вірили, що, наділена магічними властивостями, вона слугує оберегом від біди й злого ока та здатна творити дива. Сьогодні вишита сорочка традиційно вважається символом самоідентифікації, національної гордості українського народу, а впродовж останніх років вона стала ще й атрибутом єднання і незламності. (5 балів)", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "Вишиванка споконвіків є невід’ємною частиною нашої самобутньої культури. Для українців вишита сорочка – це не просто національний одяг, а справжня святиня, що відображає зв’язок поколінь, родинну пам’ять, яка не переривається віками. Вишиту сорочку передають із роду в рід, бережуть як безцінну реліквію, яка приносить щасливу долю її власнику. Це своєрідний генетичний код нації, зашифрований у фантастичних і неймовірно гарних орнаментах, де кожен візерунок має важливе значення.", marks: null, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme heads its answer “Наприклад:”: what it gives is an example, not a required list. It leads the answer with “Можна з упевненістю стверджувати, що вишиванка – це безцінна матеріальна й духовна спадщина національної культури, яку українці свято бережуть:”." },
+    { id: "r-2", kind: "point", verbatim: "Упродовж століть вишиванка була містичним і сакральним одягом для наших пращурів. Люди вірили, що, наділена магічними властивостями, вона слугує оберегом від біди й злого ока та здатна творити дива.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Сьогодні вишита сорочка традиційно вважається символом самоідентифікації, національної гордості українського народу, а впродовж останніх років вона стала ще й атрибутом єднання і незламності.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -249,18 +264,75 @@ export const CARDS: SecCard[] = [
     questionText: "Авторка статті зазначає, що «в історії української вишитої сорочки ще багато білих плям та міфів». Покликаючись на текст і власний досвід, обговоріть, чому важливо розуміти історичну правду про вишиванку в наші дні.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Авторка статті зазначає, що «в історії української вишитої сорочки ще багато білих плям та міфів». Покликаючись на текст і власний досвід, обговоріть, чому важливо розуміти історичну правду про вишиванку в наші дні. Наприклад: Зазвичай під «білою плямою в історії» вчені розуміють недосліджене або маловивчене питання. Апелюючи до відповідного вислову, авторка, очевидно, намагається привернути увагу до проблеми недостатньої обізнаності українського суспільства з витоками й символікою свого національного одягу – вишиванки. Що глибше науковці досліджують історію української вишиванки, то більше білих плям постає в історії цього виду мистецтва. Дуже часто уявлення людей про українську вишиванку обростають народними легендами й міфами, які не мають нічого спільного з реальністю і знецінюють роль вишитої сорочки. Водночас недостатня обізнаність з історією української вишиванки часто стає причиною маніпуляцій. Тож сьогодні українцям, щоб не стати жертвами дезінформації, життєво необхідно позбутися цих прогалин у знаннях, відмовитися від здогадів та припущень, даючи дорогу фактам, щоб урешті-решт повернутися до власних культурних витоків й історичних джерел. Розуміння історичної правди про вишиванку допоможе не тільки подолати стереотипи та запобігти маніпуляціям, а й глибше зрозуміти своє минуле, зробити правильні висновки, уникнути повторення помилок, відродити і зберегти самобутню українську культурну спадщину. (5 балів)", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "Зазвичай під «білою плямою в історії» вчені розуміють недосліджене або маловивчене питання. Апелюючи до відповідного вислову, авторка, очевидно, намагається привернути увагу до проблеми недостатньої обізнаності українського суспільства з витоками й символікою свого національного одягу – вишиванки. Що глибше науковці досліджують історію української вишиванки, то більше білих плям постає в історії цього виду мистецтва. Дуже часто уявлення людей про українську вишиванку обростають народними легендами й міфами, які не мають нічого спільного з реальністю і знецінюють роль вишитої сорочки. Водночас недостатня обізнаність з історією української вишиванки часто стає причиною маніпуляцій. Тож сьогодні українцям, щоб не стати жертвами дезінформації, життєво необхідно позбутися цих прогалин у знаннях, відмовитися від здогадів та припущень, даючи дорогу фактам, щоб урешті-решт повернутися до власних культурних витоків й історичних джерел. Розуміння історичної правди про вишиванку допоможе не тільки подолати стереотипи та запобігти маніпуляціям, а й глибше зрозуміти своє минуле, зробити правильні висновки, уникнути повторення помилок, відродити і зберегти самобутню українську культурну спадщину.", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme heads its answer “Наприклад:”: what it gives is an example, not a required list." },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC570ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2025 Higher Level — © State Examinations Commission.",
+    id: "ukr-2025-hl-ii-1", topicId: "ukrainian-1-0", conceptId: "100-150",
+    section: "II", questionRef: "2025 HL Section II Q1",
+    questionText: "Напишіть коментар (100-150 слів) на тему: «Вишита сорочка вважається невід’ємним атрибутом української культури».",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Вишита сорочка – національний символ України. Вона віддавна вважається вагомою складовою неповторної української культури та її багатих традицій, важливим символом краси і здоров’я, щасливої долі й родової пам’яті, любові та святковості.", marks: null, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme heads its points: “Наприклад:”." },
+    { id: "r-2", kind: "point", verbatim: "Вишиванка не лише має естетичну цінність, але й містить у собі глибокий сакральний зміст, пов'язаний з історією, родинними зв'язками, моральними цінностями й духовними переконаннями українців.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Це своєрідний маркер етнокультурної традиції, у якому через досконалість мистецьких практик переданий віковічний досвід життя українців, особливості звичаїв, вірувань, обрядів, світогляду.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Вишивка на сорочці часто відображає регіональні особливості, соціальний статус, гендерну приналежність, вік власника.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Наші предки приписували вишиванці магічні властивості та вірили, що, вишиваючи на сорочці той чи той орнамент, вони в такий спосіб захищали себе від «злого» ока. Саме тому вишиванка була оберегом від злих сил та нещасть. Кожен візерунок на ній мав важливе значення і був частиною народної мудрості, переданої з покоління в покоління.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Сьогодні вишита сорочка не втрачає своєї актуальності. Це той чи не єдиний елемент національного одягу, який найбільш часто можна побачити в гардеробі українця: вишиванку часто одягають, святкуючи найважливіші події в житті, зокрема хрестини, весілля тощо.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "У наші дні вишита сорочка також вважається символом національної гідності та єдності українців.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ЧАСТИНА II",
+          "title": "Reading text — answer in Ukrainian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Ukrainian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC570ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2025 Higher Level — © State Examinations Commission.",
+    id: "ukr-2025-hl-iii-1", topicId: "ukrainian-1-0", conceptId: "ask",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "Напишіть есе (мінімум 300 слів) на одну із запропонованих нижче тем: «Бережи українське – носи вишиванку!» (Ліна Костенко).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme reprints the instruction and the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC570ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2025 Higher Level — © State Examinations Commission.",
+    id: "ukr-2025-hl-iii-2", topicId: "ukrainian-1-0", conceptId: "ask",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "Напишіть есе (мінімум 300 слів) на одну із запропонованих нижче тем: «Там, де є українці, там завжди є мистецтво» (Юрій Липа).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme reprints the instruction and the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -269,20 +341,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2026 Higher Level — © State Examinations Commission.",
     id: "ukr-2026-hl-i-1-a", topicId: "ukrainian-0-0", conceptId: "ask",
     section: "I", questionRef: "2026 HL Section I Q1(a)",
-    questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті: унікальність імітувати",
+    questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті: унікальність",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "неповторність; своєрідність; оригінальність; винятковість; особливість, що відрізняє когось або щось від інших;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "неповторність; своєрідність; оригінальність; винятковість; особливість, що відрізняє когось або щось від інших;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -292,20 +365,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2026 Higher Level — © State Examinations Commission.",
     id: "ukr-2026-hl-i-1-b", topicId: "ukrainian-0-0", conceptId: "ask",
     section: "I", questionRef: "2026 HL Section I Q1(b)",
-    questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті: зайвий",
+    questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті: імітувати",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "імітувати – точно наслідувати; відтворювати; повторювати; копіювати; удавати; створювати враження справжності;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "точно наслідувати; відтворювати; повторювати; копіювати; удавати; створювати враження справжності;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -315,20 +389,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2026 Higher Level — © State Examinations Commission.",
     id: "ukr-2026-hl-i-1-c", topicId: "ukrainian-0-0", conceptId: "ask",
     section: "I", questionRef: "2026 HL Section I Q1(c)",
-    questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті: передбачити",
+    questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті: зайвий",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "зайвий – такий, без якого можна обійтися; непотрібний;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "такий, без якого можна обійтися; непотрібний;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -338,20 +413,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2026 Higher Level — © State Examinations Commission.",
     id: "ukr-2026-hl-i-1-d", topicId: "ukrainian-0-0", conceptId: "ask",
     section: "I", questionRef: "2026 HL Section I Q1(d)",
-    questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті: доповнювати.",
+    questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті: передбачити",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "передбачити – припустити що-небудь заздалегідь; спрогнозувати; здогадатися; зробити правильний висновок про те, що станеться в майбутньому;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "припустити що-небудь заздалегідь; спрогнозувати; здогадатися; зробити правильний висновок про те, що станеться в майбутньому;", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -361,20 +437,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2026 Higher Level — © State Examinations Commission.",
     id: "ukr-2026-hl-i-1-e", topicId: "ukrainian-0-0", conceptId: "ask",
     section: "I", questionRef: "2026 HL Section I Q1(e)",
-    questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті:",
+    questionText: "Поясніть значення запропонованих нижче слів, яке вони мають у контексті: доповнювати.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "доповнювати – додавати щось до того, що вже існує; робити повнішим; збагачувати; покращувати. (5 × 1 бал)", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "додавати щось до того, що вже існує; робити повнішим; збагачувати; покращувати.", marks: 1, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -387,17 +464,18 @@ export const CARDS: SecCard[] = [
     questionText: "Наведіть приклад з тексту, що ілюструє, чому розпізнавання обличчя є викликом для штучного інтелекту.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Наведіть приклад з тексту, що ілюструє, чому розпізнавання обличчя є викликом для штучного інтелекту. Системи розпізнавання обличчя можуть визначати базові емоції за мімікою людини. Проте ШІ не завжди правильно інтерпретує такі мікровирази, як підняті брови, зморшки на лобі, усмішка чи «надуті губи». Наприклад, сльози можуть свідчити не лише про сум, а й про радість, якщо людина плаче від щастя. Така неоднозначність ускладнює розпізнавання емоцій, бо вимагає розуміння контексту, що досі є одним з найскладніших завдань для ШІ. (5 балів)", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "Системи розпізнавання обличчя можуть визначати базові емоції за мімікою людини. Проте ШІ не завжди правильно інтерпретує такі мікровирази, як підняті брови, зморшки на лобі, усмішка чи «надуті губи». Наприклад, сльози можуть свідчити не лише про сум, а й про радість, якщо людина плаче від щастя. Така неоднозначність ускладнює розпізнавання емоцій, бо вимагає розуміння контексту, що досі є одним з найскладніших завдань для ШІ.", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -410,17 +488,18 @@ export const CARDS: SecCard[] = [
     questionText: "Науковці вже експериментують із симуляцією емоцій. Спираючись на прочитаний текст, поясніть, навіщо вони це роблять.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Науковці вже експериментують із симуляцією емоцій. Спираючись на прочитаний текст, поясніть, навіщо вони це роблять. Наприклад: Наукові експерименти в царині симуляції емоцій спрямовані на те, щоб наблизити поведінку ШІ до людської. Наприклад, «штучні гормони» вже зараз дають нейромережам змогу реагувати на подразники не за єдиним алгоритмом, а індивідуально, подібно до того, як це робимо ми. У разі успіху подальших експериментів з біотехнологіями ШІ може навчитися не лише розуміти й імітувати емоції, а й певною мірою «відчувати» їх, що зробить нашу взаємодію з машинами більш природною та корисною. (5 балів)", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "Наукові експерименти в царині симуляції емоцій спрямовані на те, щоб наблизити поведінку ШІ до людської. Наприклад, «штучні гормони» вже зараз дають нейромережам змогу реагувати на подразники не за єдиним алгоритмом, а індивідуально, подібно до того, як це робимо ми. У разі успіху подальших експериментів з біотехнологіями ШІ може навчитися не лише розуміти й імітувати емоції, а й певною мірою «відчувати» їх, що зробить нашу взаємодію з машинами більш природною та корисною.", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme heads its answer “Наприклад:”: what it gives is an example, not a required list." },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -433,17 +512,18 @@ export const CARDS: SecCard[] = [
     questionText: "«Емоції є основою нашої людяності». Прокоментуйте це твердження, покликаючись на текст і висловлюючи власну думку.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "«Емоції є основою нашої людяності». Прокоментуйте це твердження, покликаючись на текст і висловлюючи власну думку. Кандидати можуть погодитися або не погодитися з твердженням. Наприклад: З одного боку, важко не погодитися з тим, що саме емоції роблять нас людьми. На відміну від ШІ, який лише опрацьовує інформацію, ми здатні будувати стосунки, відчувати та співпереживати. Гнів і радість, захоплення і страх, нудьга і цікавість роблять людей менш раціональними, ніж машини, але водночас дають нам змогу творити, мріяти й досліджувати світ у всій його повноті. Емоції є універсальною мовою людства. Вони допомагають нам розуміти одне одного без слів, співчувати чужому горю й ділитися радістю. Без емоцій неможливо уявити любові, милосердя й самої людяності. З іншого боку, хоча емоції є важливою складовою нашої природи, їх не варто вважати основою людяності. Почуття властиві не лише людям, а й багатьом тваринам. Ба більше, із розвитком технологій ШІ також може навчитися не лише імітувати емоції, а й певною мірою «відчувати» їх. Унікальність людства полягає не в емоційності, а в умінні контролювати власні почуття, скеровувати їх на користь суспільства, перетворюючи біль на мистецтво, цікавість – на наукові відкриття, захоплення – на турботу про інших. Саме здатність осмислювати емоції та надавати їм вищого сенсу робить нас по-справжньому людяними. (5 балів)", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "З одного боку, важко не погодитися з тим, що саме емоції роблять нас людьми. На відміну від ШІ, який лише опрацьовує інформацію, ми здатні будувати стосунки, відчувати та співпереживати. Гнів і радість, захоплення і страх, нудьга і цікавість роблять людей менш раціональними, ніж машини, але водночас дають нам змогу творити, мріяти й досліджувати світ у всій його повноті. Емоції є універсальною мовою людства. Вони допомагають нам розуміти одне одного без слів, співчувати чужому горю й ділитися радістю. Без емоцій неможливо уявити любові, милосердя й самої людяності. З іншого боку, хоча емоції є важливою складовою нашої природи, їх не варто вважати основою людяності. Почуття властиві не лише людям, а й багатьом тваринам. Ба більше, із розвитком технологій ШІ також може навчитися не лише імітувати емоції, а й певною мірою «відчувати» їх. Унікальність людства полягає не в емоційності, а в умінні контролювати власні почуття, скеровувати їх на користь суспільства, перетворюючи біль на мистецтво, цікавість – на наукові відкриття, захоплення – на турботу про інших. Саме здатність осмислювати емоції та надавати їм вищого сенсу робить нас по-справжньому людяними.", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme heads its answer “Наприклад:”: what it gives is an example, not a required list. Above it the scheme prints “Кандидати можуть погодитися або не погодитися з твердженням.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -456,17 +536,18 @@ export const CARDS: SecCard[] = [
     questionText: "Як розвиток штучного інтелекту може змінити поведінку людей? Поясніть, спираючись на текст і власний досвід.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Як розвиток штучного інтелекту може змінити поведінку людей? Поясніть, спираючись на текст і власний досвід. Наприклад: ШІ вже став незамінним інструментом, який допомагає людям здійснювати обчислення, генерувати ідеї та розв’язувати різноманітні проблеми. Подальший розвиток ШІ може суттєво зменшити потребу в живому спілкуванні. Якщо він не лише надаватиме інформацію, а й краще розумітиме та імітуватиме емоції, то стане «ідеальним співрозмовником», який завжди поруч і ніколи не втомлюється. У такому разі люди дедалі частіше звертатимуться до чат-ботів за порадою та психологічною підтримкою. Уже зараз багато підлітків довіряють ШІ більше, ніж батькам чи друзям. У майбутньому це може перерости в залежність від технологій і невміння будувати справжні стосунки з людьми, що призведе до епідемії самотності. (5 балів)", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "ШІ вже став незамінним інструментом, який допомагає людям здійснювати обчислення, генерувати ідеї та розв’язувати різноманітні проблеми. Подальший розвиток ШІ може суттєво зменшити потребу в живому спілкуванні. Якщо він не лише надаватиме інформацію, а й краще розумітиме та імітуватиме емоції, то стане «ідеальним співрозмовником», який завжди поруч і ніколи не втомлюється. У такому разі люди дедалі частіше звертатимуться до чат-ботів за порадою та психологічною підтримкою. Уже зараз багато підлітків довіряють ШІ більше, ніж батькам чи друзям. У майбутньому це може перерости в залежність від технологій і невміння будувати справжні стосунки з людьми, що призведе до епідемії самотності.", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme heads its answer “Наприклад:”: what it gives is an example, not a required list." },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
   {
@@ -479,17 +560,76 @@ export const CARDS: SecCard[] = [
     questionText: "Якщо ШІ зможе не лише симулювати емоції, а й «відчувати», він повинен мати права. Прокоментуйте це твердження, покликаючись на текст і висловлюючи власну думку.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Якщо ШІ зможе не лише симулювати емоції, а й «відчувати», він повинен мати права. Прокоментуйте це твердження, покликаючись на текст і висловлюючи власну думку. Кандидати можуть погодитися або не погодитися з твердженням. Наприклад: З одного боку, якщо в майбутньому ШІ справді набуде здатності відчувати емоції, було б справедливо переглянути його правовий статус. Подібно до того, як сучасне суспільство захищає тварин від жорстокого поводження, можуть з’явитися норми, що регулюватимуть створення, використання й деактивацію ШІ. Водночас важливо, щоб права машин не суперечили інтересам людства. З іншого боку, ШІ не спроможний відчувати на фізіологічному чи психологічному рівні. Його емоції завжди будуть запрограмованими реакціями, а не свідомим досвідом. Це робить ШІ алгоритмом, а не живою істотою, яка могла б претендувати на права. Тому набагато важливіше зосередитися на регулюванні діяльності розробників і користувачів, щоб запобігти зловживанням технологіями та захистити людей від можливих ризиків. (5 балів)", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\"" },
+    { id: "r-1", kind: "point", verbatim: "З одного боку, якщо в майбутньому ШІ справді набуде здатності відчувати емоції, було б справедливо переглянути його правовий статус. Подібно до того, як сучасне суспільство захищає тварин від жорстокого поводження, можуть з’явитися норми, що регулюватимуть створення, використання й деактивацію ШІ. Водночас важливо, щоб права машин не суперечили інтересам людства. З іншого боку, ШІ не спроможний відчувати на фізіологічному чи психологічному рівні. Його емоції завжди будуть запрограмованими реакціями, а не свідомим досвідом. Це робить ШІ алгоритмом, а не живою істотою, яка могла б претендувати на права. Тому набагато важливіше зосередитися на регулюванні діяльності розробників і користувачів, щоб запобігти зловживанням технологіями та захистити людей від можливих ризиків.", marks: 5, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme heads its answer “Наприклад:”: what it gives is an example, not a required list. Above it the scheme prints “Кандидати можуть погодитися або не погодитися з твердженням.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Ukrainian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Ukrainian 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on its own first page: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC570ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2026 Higher Level — © State Examinations Commission.",
+    id: "ukr-2026-hl-ii-1", topicId: "ukrainian-1-0", conceptId: "100-150",
+    section: "II", questionRef: "2026 HL Section II Q1",
+    questionText: "Напишіть коментар (100-150 слів) на тему: «І жодна машина не зможе замінити цієї магії людяності».",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "багатогранність і непередбачуваність людської природи;", marks: null, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme heads its points: “У відповіді можна розглянути магію людяності крізь призму деяких із запропонованих нижче аспектів:”." },
+    { id: "r-2", kind: "point", verbatim: "спонтанність та інтуїція;", marks: null },
+    { id: "r-3", kind: "point", verbatim: "схильність до співчуття і співпереживання;", marks: null },
+    { id: "r-4", kind: "point", verbatim: "роль культури, традицій та етики;", marks: null },
+    { id: "r-5", kind: "point", verbatim: "феномен людської творчості;", marks: null },
+    { id: "r-6", kind: "point", verbatim: "здатність любити й відчувати по-справжньому;", marks: null },
+    { id: "r-7", kind: "point", verbatim: "наявність життєвого досвіду та самосвідомості;", marks: null },
+    { id: "r-8", kind: "point", verbatim: "уміння імпровізувати й ухвалювати нестандартні рішення;", marks: null },
+    { id: "r-9", kind: "point", verbatim: "потреба в соціалізації.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ЧАСТИНА II",
+          "title": "Reading text — answer in Ukrainian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Ukrainian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC570ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2026 Higher Level — © State Examinations Commission.",
+    id: "ukr-2026-hl-iii-1", topicId: "ukrainian-1-0", conceptId: "ask",
+    section: "III", questionRef: "2026 HL Section III Q1",
+    questionText: "Напишіть есе (мінімум 300 слів) на одну із запропонованих нижче тем: Технології зближують нас чи віддаляють одне від одного?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme reprints the instruction and the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC570ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2026 Higher Level — © State Examinations Commission.",
+    id: "ukr-2026-hl-iii-2", topicId: "ukrainian-1-0", conceptId: "ask",
+    section: "III", questionRef: "2026 HL Section III Q2",
+    questionText: "Напишіть есе (мінімум 300 слів) на одну із запропонованих нижче тем: «Людина без вади — не людина. Кумедність поведінки, різноманітні дивацтва — це ж саме те, що й робить нас неповторними. І прекрасними» (Андрій Любка).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme reprints the instruction and the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
 ];

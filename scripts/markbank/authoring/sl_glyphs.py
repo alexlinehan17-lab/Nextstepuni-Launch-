@@ -28,6 +28,7 @@ import collections
 import glob
 import json
 import os
+import re
 import sys
 
 import pymupdf
@@ -42,7 +43,13 @@ from glyph_ids import MANGLED, load_table, family, page_glyphs  # noqa: E402
 # Romanian: lt_glyphs.ALPHABETS['romanian'] and capitals. Bulgarian: the
 # Cyrillic alphabet it prints (ѝ included).
 ROMANIAN = set('ăâîşșţțĂÂÎŞȘŢȚ')
+CZECH = set('áčďéěíňóřšťúůýžÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ')
+CROATIAN = set('čćđšžČĆĐŠŽ')
+# Greek and Coptic (U+0370-03FF) and Greek Extended (U+1F00-1FFF), as build-deck's REAL class
+GREEK = {chr(c) for c in list(range(0x370, 0x400)) + list(range(0x1F00, 0x2000))}
 BULGARIAN = set('абвгдежзийклмнопрстуфхцчшщъьюяѝАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЮЯЍ')
+HUNGARIAN = set('áéíóöőúüűÁÉÍÓÖŐÚÜŰ')
+SLOVAK = set('áäčďéíĺľňóôŕšťúýžÁÄČĎÉÍĹĽŇÓÔŔŠŤÚÝŽ')
 MIN_SIGHTINGS, MIN_SHARE = 3, 0.95
 
 
@@ -128,6 +135,46 @@ SUBJECTS = {
     # Times New Roman 630 has one clean sighting in the corpus ("ь"), short of
     # three: settled by cropping it at 400 dpi and looking (2015 scheme p4,
     # italic, "актьори").
+    # Czech 2015 (scheme): a Type0 Times New Roman draws some letters with no
+    # Unicode; rawdict reports their glyph ids, which collide with real Czech
+    # letters ("VysvČtlete" for "Vysvětlete", "ýást" for "Část"), so the .md is
+    # repaired by POSITION (positional()), never by character.
+    'czech': {'docs': {2015: ('scheme',)}, 'alphabet': CZECH, 'rendered': {}, 'suspect': set(),
+              'standin': lambda c: False, 'positional': True},
+    # Croatian 2015 (scheme): Georgia and Times New Roman Type0 fonts draw
+    # č ć đ Č Đ with no Unicode; rawdict reports their ids as þ ü ÿ ý Ĉ. By
+    # position, as Czech.
+    # Two Georgia glyphs settled by cropping at 400 dpi (p3): 264 is Đ (the bold
+    # heading "VOĐA IZ ŠKOLE"; no clean sighting), 253 is Č ("Čudio se"; two
+    # clean sightings, short of three).
+    'croatian': {'docs': {2015: ('scheme',)}, 'alphabet': CROATIAN,
+                 'rendered': {'Georgia|264': '\u0110', 'Georgia|253': '\u010c'}, 'suspect': set(),
+                 'standin': lambda c: False, 'positional': True},
+    # Modern Greek 2015 (scheme): Times New Roman and Calibri Type0 fonts with no
+    # Unicode for any Greek letter ("ǺǹĬȂȅȁȅīǿȀǼȈ" for its heading). By position.
+    # Eight Times New Roman capitals with fewer than three clean sightings, each
+    # settled by cropping its own box at 400 dpi in its word (p3-p4): 299 Γ
+    # ("ΒΑΘΜΟΛΟΓΙΚΕΣ"), 300 Θ, 498 Έ ("Ένα"), 506 Β, 513 Λ, 516 Ξ ("ΕΝΔΕΙΞΕΙΣ"),
+    # 518 Π ("Πες"), 522 Υ ("Υπάρχουν").
+    'modern-greek': {'docs': {2015: ('scheme',)}, 'alphabet': GREEK,
+                     'rendered': {'TimesNewRoman|299': '\u0393', 'TimesNewRoman|300': '\u0398',
+                                  'TimesNewRoman|498': '\u0388', 'TimesNewRoman|506': '\u0392',
+                                  'TimesNewRoman|513': '\u039b', 'TimesNewRoman|516': '\u039e',
+                                  'TimesNewRoman|518': '\u03a0', 'TimesNewRoman|522': '\u03a5'}, 'suspect': set(),
+                     'standin': lambda c: False, 'positional': True},
+    # Hungarian 2015 (scheme): a Type0 Times New Roman with no Unicode for some
+    # glyphs; rawdict reports their ids, read as Ę Ħ ĥ where the render shows
+    # ő ű Ű (second drafter, 20 Nov). By position, as Czech. The pass misaligns
+    # on the cover's "Hungarian" / "Higher Level" (lines 10-11: it moved one
+    # glyph across them): those two lines are kept as extracted (no card uses
+    # them); every other changed line is glyph-for-glyph, same length.
+    'hungarian': {'docs': {2015: ('scheme',)}, 'alphabet': HUNGARIAN, 'rendered': {}, 'suspect': set(),
+                  'standin': lambda c: False, 'positional': True},
+    # Slovakian 2015 (scheme): a Type0 Times New Roman draws Č č ď ľ Ť ť with no
+    # Unicode; rawdict reports their ids (253 as ý, colliding with the real ý),
+    # so by position, as Czech (drafter's report, 20 Nov).
+    'slovakian': {'docs': {2015: ('scheme',)}, 'alphabet': SLOVAK, 'rendered': {}, 'suspect': set(),
+                  'standin': lambda c: False, 'positional': True},
     'bulgarian': {'docs': {2015: ('scheme',)}, 'alphabet': BULGARIAN,
                   'rendered': {'TimesNewRoman|630': '\u044c'}, 'suspect': set(),
                   'standin': lambda c: False},
@@ -169,6 +216,86 @@ def full_table(subject):
     return {**base, 'gid': gid}
 
 
+def positional(subject, year, check):
+    """Repair a scheme .md glyph by glyph: each page's non-space characters are
+    aligned with the PDF's own glyph stream (rawdict order; the .md moves the
+    page number and some cells), and only a position where the PDF draws an
+    UNNAMED glyph (trace U+FFFD) is changed, to the table's reading of that
+    glyph's (family, id). A position the .md already reads as the table does
+    (the extractor's own repair) is left; one it reads otherwise is refused.
+    Run it ONCE, on the .md as extracted: on a file it has already repaired the
+    alignment no longer pairs the stand-ins and it reports them unaligned (take
+    the unrepaired file from git to re-derive)."""
+    import difflib
+    from glyph_ids import page_glyphs, page_unnamed
+    table = full_table(subject)
+    md = os.path.join(ROOT, 'examiner-reports', subject, 'schemes', f'{year}-hl.md')
+    text = open(md, encoding='utf-8').read()
+    marks = [(m.start(), int(m.group(1))) for m in re.finditer(r'^## Page (\d+)', text, re.M)]
+    bounds = {pn: (st, marks[i + 1][0] if i + 1 < len(marks) else len(text)) for i, (st, pn) in enumerate(marks)}
+    edits, unresolved, conflicts, missing, absent = {}, collections.Counter(), [], 0, 0
+    with pymupdf.open(_pdfs(subject, year)['scheme']) as doc:
+        for pn, page in enumerate(doc, 1):
+            origin, unnamed = page_glyphs(page), page_unnamed(page)
+            raw = []
+            for blk in page.get_text('rawdict')['blocks']:
+                for line in blk.get('lines', []):
+                    for sp in line['spans']:
+                        for ch in sp['chars']:
+                            if ch['c'].isspace():
+                                continue
+                            key = (round(ch['origin'][0], 2), round(ch['origin'][1], 2))
+                            want = None
+                            if key in unnamed:
+                                hit = origin.get(key)
+                                want = (table.get('cid', {}).get(f'{hit[0]}|{hit[1]}') or table['gid'].get(f'{hit[0]}|{hit[1]}')) if hit else None
+                                if want is None:
+                                    unresolved[f'{hit[0]}|{hit[1]}' if hit else '?'] += 1
+                            raw.append((ch['c'], want))
+            st, en = bounds.get(pn, (0, 0))
+            pos = [i for i in range(st, en) if not text[i].isspace()]
+            mdc = [text[i] for i in pos]
+            # the .md's own page marker line is not on the page
+            head = len(re.sub(r'\s+', '', f'## Page {pn}'))
+            pos, mdc = pos[head:], mdc[head:]
+            sm = difflib.SequenceMatcher(None, [c for c, _w in raw], mdc, autojunk=False)
+            for op, i1, i2, j1, j2 in sm.get_opcodes():
+                if op == 'equal':
+                    for k in range(i2 - i1):
+                        c, want = raw[i1 + k]
+                        if want is not None and want != c:
+                            edits[pos[j1 + k]] = want
+                elif op == 'delete':
+                    # glyphs the .md does not hold at all (Czech 2015's cover
+                    # word): nothing there to repair
+                    absent += sum(1 for _c, w in raw[i1:i2] if w is not None)
+                else:
+                    for k in range(i1, i2):
+                        c, want = raw[k]
+                        if want is None:
+                            continue
+                        j = j1 + (k - i1)
+                        if j < j2 and mdc[j] == want:
+                            continue                            # repaired already
+                        if op == 'replace' and j < j2 and i2 - i1 == j2 - j1:
+                            conflicts.append((pn, c, want, mdc[j]))
+                        else:
+                            missing += 1
+    if unresolved or conflicts or missing:
+        print(f'{md}: refused; unresolved {dict(unresolved)}; conflicts {conflicts[:6]}; unaligned {missing}')
+        return 1
+    out = list(text)
+    for i, want in edits.items():
+        out[i] = want
+    fixed = ''.join(out)
+    changes = collections.Counter(f'{text[i]}->{w}' for i, w in edits.items())
+    if not check:
+        with open(md, 'w', encoding='utf-8') as fh:
+            fh.write(fixed)
+    print(f'{md}: {len(edits)} glyphs repaired by position {dict(changes)}; {absent} unnamed glyphs not in the .md')
+    return 0
+
+
 def main():
     subject, cmd = sys.argv[1], sys.argv[2]
     cfg = SUBJECTS[subject]
@@ -180,6 +307,8 @@ def main():
             print(f'UNSETTLED {k}: {v}')
         return 0
     year = int(sys.argv[3])
+    if cmd == 'scheme' and cfg.get('positional'):
+        return positional(subject, year, '--check' in sys.argv)
     table = full_table(subject)
     pdf = _pdfs(subject, year)[cmd]
     with pymupdf.open(pdf) as doc:
