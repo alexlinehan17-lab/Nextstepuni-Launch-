@@ -1,6 +1,7 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
+import { loadAllAtlasModels } from '../components/PaperTrail/atlasModel';
 import ReviseByTopic from '../components/PaperTrail/ReviseByTopic';
 import { siblingsFor, topicsForSubject } from '../components/PaperTrail/topics';
 import { queueTopicPractice, peekTopicPractice, clearTopicPractice } from '../utils/topicLaunch';
@@ -13,6 +14,9 @@ vi.mock('../components/PaperTrail/VaultQuestionCard', () => ({
 }));
 
 beforeEach(() => { localStorage.clear(); clearTopicPractice('one'); clearTopicPractice('two'); });
+
+// Latin is in the single model: ReviseByTopic shows its topics once the filing has loaded.
+beforeAll(() => loadAllAtlasModels());
 
 describe('topic practice launch', () => {
   it('scopes the subject, topic and level suggestion to the student', () => {

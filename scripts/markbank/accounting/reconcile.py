@@ -135,7 +135,10 @@ def reconcile():
             check(updated is not None, f'{key}: deleted old question {old["n"]}')
             for field in ['n', 'pP', 'pY', 'region', 'mode', 'conf']:
                 check(updated is not None and updated.get(field) == old.get(field), f'{key} {old["n"]}: changed original {field}')
-        check(set(after_by_key) == {q['n'] for q in before['q']} | set(source_tasks), f'{key}: missing or orphan answer task')
+        # A deferred edition's map also anchors its printed questions 1-9 (build.py deferred_question_anchors), as
+        # June's audited maps do; they are the only keys it holds beside its tasks.
+        printed = {str(number) for number in range(1, 10)} if deferred else set()
+        check(set(after_by_key) == {q['n'] for q in before['q']} | printed | set(source_tasks), f'{key}: missing or orphan answer task')
         for card in rows:
             q = after_by_key.get(card['taskKey'], {})
             check(q.get('practiceTask', {}).get('marks') == card['totalMarks'], f'{card["id"]}: answer marks mismatch')

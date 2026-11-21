@@ -9,7 +9,8 @@
     "fileIdentity": "Every mapping carries the exact SEC booklet component because Music components restart question numbering under one legacy paper key.",
     "historicSetWorks": "Four retired set-work shelves per level and the Higher listening elective are explicit NextStepUni archive topics; current reference labels are never stretched across a different work.",
     "practicals": "The frozen 2013–2016 unprepared-test cards remain under the broad Practicals shelf. The reference-only 2019 section headings remain source-blocked until the matching entitled booklet is available.",
-    "anchorConfidence": "All 178 paper booklets and 978 paper mappings, plus all 775 stored scheme mappings, have been visually swept. Seventeen booklets remain honest paper-only cases pending entitled question-specific evidence.",
+    "anchorConfidence": "All 178 June paper booklets and 978 paper mappings, plus all 775 stored scheme mappings, have been visually swept. Seventeen of those booklets remain honest paper-only cases pending entitled question-specific evidence.",
+    "deferredSittings": "The six 2022 and 2023 Higher deferred booklets (36 paper mappings) are their own papers, numbered as June's: each question starts at the page that prints its heading (checked on every booklet), listening questions carry the deferred sitting's own set works, deferred factual headings join only these booklets, and all six are paper-only.",
     "existingAnswerSidecars": "Existing high-confidence answer crops remain in scripts/paper-trail/answers and are counted as independent Storage-side evidence; they are never copied into paper-only hosted anchors."
   },
   "summary": {
@@ -20,24 +21,26 @@
     "referenceOfficialAssociations": 646,
     "referenceMockAssociations": 481,
     "referenceProviderSampleAssociations": 0,
-    "matchedAssociations": 459,
-    "sourceBlockedAssociations": 187,
-    "localPaperVariants": 178,
-    "localPhysicalMappings": 978,
-    "distinctStudentFacingQuestions": 500,
-    "referenceMappedLocalQuestions": 616,
-    "retainedLocalQuestions": 362,
-    "hostedPaperAnchorMaps": 178,
+    "matchedAssociations": 480,
+    "sourceBlockedAssociations": 166,
+    "localPaperVariants": 184,
+    "localPhysicalMappings": 1014,
+    "deferredPaperVariants": 6,
+    "deferredPhysicalMappings": 36,
+    "distinctStudentFacingQuestions": 524,
+    "referenceMappedLocalQuestions": 644,
+    "retainedLocalQuestions": 370,
+    "hostedPaperAnchorMaps": 184,
     "preservedHostedAnchorMaps": 19,
-    "generatedHostedAnchorMaps": 159,
+    "generatedHostedAnchorMaps": 165,
     "existingAnswerSidecarMaps": 161,
     "existingAnswerSidecarCrops": 775,
     "completeExistingAnswerSidecarMaps": 152,
     "partialExistingAnswerSidecarMaps": 9,
     "preservedBaselineVariants": 20,
     "preservedBaselineCards": 184,
-    "newlyAddedPaperVariants": 158,
-    "newlyAddedPhysicalMappings": 794,
+    "newlyAddedPaperVariants": 164,
+    "newlyAddedPhysicalMappings": 830,
     "emptyOfficialReferenceTopics": [
       "music-higher-practicals",
       "music-ordinary-practicals"
@@ -126,8 +129,23 @@
       "sitting": "deferred",
       "component": "006",
       "n": "4",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP006EV-deferred.pdf",
+          "n": "4"
+        },
+        {
+          "level": "higher",
+          "lang": "iv",
+          "paperKey": "single",
+          "fileid": "LC067ALP006IV-deferred.pdf",
+          "n": "4"
+        }
+      ]
     },
     {
       "topicId": "music-higher-composing-melody-and-bass-from-chords",
@@ -161,8 +179,16 @@
       "sitting": "deferred",
       "component": "006",
       "n": "4",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP006EV-deferred.pdf",
+          "n": "4"
+        }
+      ]
     },
     {
       "topicId": "music-higher-composing-melody-and-bass-from-chords",
@@ -621,8 +647,23 @@
       "sitting": "deferred",
       "component": "006",
       "n": "3",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP006EV-deferred.pdf",
+          "n": "3"
+        },
+        {
+          "level": "higher",
+          "lang": "iv",
+          "paperKey": "single",
+          "fileid": "LC067ALP006IV-deferred.pdf",
+          "n": "3"
+        }
+      ]
     },
     {
       "topicId": "music-higher-composing-to-a-given-dance-rhythm-or-meter",
@@ -656,8 +697,16 @@
       "sitting": "deferred",
       "component": "006",
       "n": "3",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP006EV-deferred.pdf",
+          "n": "3"
+        }
+      ]
     },
     {
       "topicId": "music-higher-composing-to-a-given-dance-rhythm-or-meter",
@@ -1116,8 +1165,23 @@
       "sitting": "deferred",
       "component": "006",
       "n": "6",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP006EV-deferred.pdf",
+          "n": "6"
+        },
+        {
+          "level": "higher",
+          "lang": "iv",
+          "paperKey": "single",
+          "fileid": "LC067ALP006IV-deferred.pdf",
+          "n": "6"
+        }
+      ]
     },
     {
       "topicId": "music-higher-composing-adding-a-countermelodydescant-and-chords",
@@ -1151,8 +1215,16 @@
       "sitting": "deferred",
       "component": "006",
       "n": "6",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP006EV-deferred.pdf",
+          "n": "6"
+        }
+      ]
     },
     {
       "topicId": "music-higher-composing-adding-a-countermelodydescant-and-chords",
@@ -1586,8 +1658,23 @@
       "sitting": "deferred",
       "component": "006",
       "n": "5",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP006EV-deferred.pdf",
+          "n": "5"
+        },
+        {
+          "level": "higher",
+          "lang": "iv",
+          "paperKey": "single",
+          "fileid": "LC067ALP006IV-deferred.pdf",
+          "n": "5"
+        }
+      ]
     },
     {
       "topicId": "music-higher-composing-adding-bass-and-chords-to-a-tune",
@@ -1621,8 +1708,16 @@
       "sitting": "deferred",
       "component": "006",
       "n": "5",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP006EV-deferred.pdf",
+          "n": "5"
+        }
+      ]
     },
     {
       "topicId": "music-higher-composing-adding-bass-and-chords-to-a-tune",
@@ -2081,8 +2176,23 @@
       "sitting": "deferred",
       "component": "006",
       "n": "1",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP006EV-deferred.pdf",
+          "n": "1"
+        },
+        {
+          "level": "higher",
+          "lang": "iv",
+          "paperKey": "single",
+          "fileid": "LC067ALP006IV-deferred.pdf",
+          "n": "1"
+        }
+      ]
     },
     {
       "topicId": "music-higher-composing-continuation-of-a-given-opening",
@@ -2116,8 +2226,16 @@
       "sitting": "deferred",
       "component": "006",
       "n": "1",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP006EV-deferred.pdf",
+          "n": "1"
+        }
+      ]
     },
     {
       "topicId": "music-higher-composing-continuation-of-a-given-opening",
@@ -2576,8 +2694,23 @@
       "sitting": "deferred",
       "component": "006",
       "n": "2",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP006EV-deferred.pdf",
+          "n": "2"
+        },
+        {
+          "level": "higher",
+          "lang": "iv",
+          "paperKey": "single",
+          "fileid": "LC067ALP006IV-deferred.pdf",
+          "n": "2"
+        }
+      ]
     },
     {
       "topicId": "music-higher-composing-setting-music-to-a-given-text",
@@ -2611,8 +2744,16 @@
       "sitting": "deferred",
       "component": "006",
       "n": "2",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP006EV-deferred.pdf",
+          "n": "2"
+        }
+      ]
     },
     {
       "topicId": "music-higher-composing-setting-music-to-a-given-text",
@@ -3071,8 +3212,23 @@
       "sitting": "deferred",
       "component": "008",
       "n": "6",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP008EV-deferred.pdf",
+          "n": "6"
+        },
+        {
+          "level": "higher",
+          "lang": "iv",
+          "paperKey": "single",
+          "fileid": "LC067ALP008IV-deferred.pdf",
+          "n": "6"
+        }
+      ]
     },
     {
       "topicId": "music-higher-listening-aural-skills-unheard",
@@ -3106,8 +3262,16 @@
       "sitting": "deferred",
       "component": "008",
       "n": "6",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP008EV-deferred.pdf",
+          "n": "6"
+        }
+      ]
     },
     {
       "topicId": "music-higher-listening-aural-skills-unheard",
@@ -4306,8 +4470,16 @@
       "sitting": "deferred",
       "component": "008",
       "n": "1",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP008EV-deferred.pdf",
+          "n": "1"
+        }
+      ]
     },
     {
       "topicId": "music-higher-listening-berlioz",
@@ -4596,8 +4768,16 @@
       "sitting": "deferred",
       "component": "008",
       "n": "4",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP008EV-deferred.pdf",
+          "n": "4"
+        }
+      ]
     },
     {
       "topicId": "music-higher-listening-deane",
@@ -5011,8 +5191,16 @@
       "sitting": "deferred",
       "component": "008",
       "n": "5",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP008EV-deferred.pdf",
+          "n": "5"
+        }
+      ]
     },
     {
       "topicId": "music-higher-listening-irish-music",
@@ -6151,8 +6339,23 @@
       "sitting": "deferred",
       "component": "008",
       "n": "5",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP008EV-deferred.pdf",
+          "n": "5"
+        },
+        {
+          "level": "higher",
+          "lang": "iv",
+          "paperKey": "single",
+          "fileid": "LC067ALP008IV-deferred.pdf",
+          "n": "5"
+        }
+      ]
     },
     {
       "topicId": "music-higher-listening-irish-music-essay",
@@ -6186,8 +6389,16 @@
       "sitting": "deferred",
       "component": "008",
       "n": "5",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP008EV-deferred.pdf",
+          "n": "5"
+        }
+      ]
     },
     {
       "topicId": "music-higher-listening-irish-music-essay",
@@ -6596,8 +6807,16 @@
       "sitting": "deferred",
       "component": "008",
       "n": "3",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP008EV-deferred.pdf",
+          "n": "3"
+        }
+      ]
     },
     {
       "topicId": "music-higher-listening-mozart",
@@ -6916,8 +7135,16 @@
       "sitting": "deferred",
       "component": "008",
       "n": "2",
-      "resolution": "source-blocked",
-      "reason": "The deferred heading is retained, but no matching entitled deferred booklet is present in the local corpus."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "paperKey": "single",
+          "fileid": "LC067ALP008EV-deferred.pdf",
+          "n": "2"
+        }
+      ]
     },
     {
       "topicId": "music-higher-listening-the-beatles",
@@ -15688,6 +15915,344 @@
       "provenance": "reference+official-paper"
     },
     {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC067ALP006EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "1",
+      "topicIds": [
+        "music-higher-composing-continuation-of-a-given-opening"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC067ALP006EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "2",
+      "topicIds": [
+        "music-higher-composing-setting-music-to-a-given-text"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC067ALP006EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "3",
+      "topicIds": [
+        "music-higher-composing-to-a-given-dance-rhythm-or-meter"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC067ALP006EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "4",
+      "topicIds": [
+        "music-higher-composing-melody-and-bass-from-chords"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC067ALP006EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "5",
+      "topicIds": [
+        "music-higher-composing-adding-bass-and-chords-to-a-tune"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC067ALP006EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "6",
+      "topicIds": [
+        "music-higher-composing-adding-a-countermelodydescant-and-chords"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2023,
+      "fileid": "LC067ALP006IV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "1",
+      "topicIds": [
+        "music-higher-composing-continuation-of-a-given-opening"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2023,
+      "fileid": "LC067ALP006IV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "2",
+      "topicIds": [
+        "music-higher-composing-setting-music-to-a-given-text"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2023,
+      "fileid": "LC067ALP006IV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "3",
+      "topicIds": [
+        "music-higher-composing-to-a-given-dance-rhythm-or-meter"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2023,
+      "fileid": "LC067ALP006IV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "4",
+      "topicIds": [
+        "music-higher-composing-melody-and-bass-from-chords"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2023,
+      "fileid": "LC067ALP006IV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "5",
+      "topicIds": [
+        "music-higher-composing-adding-bass-and-chords-to-a-tune"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2023,
+      "fileid": "LC067ALP006IV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "6",
+      "topicIds": [
+        "music-higher-composing-adding-a-countermelodydescant-and-chords"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC067ALP008EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "1",
+      "topicIds": [
+        "music-higher-listening-freddie-mercury-archive"
+      ],
+      "provenance": "official-paper-retained"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC067ALP008EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "2",
+      "topicIds": [
+        "music-higher-listening-bach-archive"
+      ],
+      "provenance": "official-paper-retained"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC067ALP008EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "3",
+      "topicIds": [
+        "music-higher-listening-tchaikovsky-archive"
+      ],
+      "provenance": "official-paper-retained"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC067ALP008EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "4",
+      "topicIds": [
+        "music-higher-listening-gerald-barry-archive"
+      ],
+      "provenance": "official-paper-retained"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC067ALP008EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "5",
+      "topicIds": [
+        "music-higher-listening-irish-music",
+        "music-higher-listening-irish-music-essay"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC067ALP008EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "6",
+      "topicIds": [
+        "music-higher-listening-aural-skills-unheard"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2023,
+      "fileid": "LC067ALP008IV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "1",
+      "topicIds": [
+        "music-higher-listening-freddie-mercury-archive"
+      ],
+      "provenance": "official-paper-retained"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2023,
+      "fileid": "LC067ALP008IV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "2",
+      "topicIds": [
+        "music-higher-listening-bach-archive"
+      ],
+      "provenance": "official-paper-retained"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2023,
+      "fileid": "LC067ALP008IV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "3",
+      "topicIds": [
+        "music-higher-listening-tchaikovsky-archive"
+      ],
+      "provenance": "official-paper-retained"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2023,
+      "fileid": "LC067ALP008IV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "4",
+      "topicIds": [
+        "music-higher-listening-gerald-barry-archive"
+      ],
+      "provenance": "official-paper-retained"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2023,
+      "fileid": "LC067ALP008IV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "5",
+      "topicIds": [
+        "music-higher-listening-irish-music",
+        "music-higher-listening-irish-music-essay"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2023,
+      "fileid": "LC067ALP008IV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "6",
+      "topicIds": [
+        "music-higher-listening-aural-skills-unheard"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
       "level": "ordinary",
       "lang": "ev",
       "year": 2023,
@@ -16333,6 +16898,175 @@
       "fileid": "LC067ALP008IV.pdf",
       "paperKey": "single",
       "component": "008",
+      "n": "6",
+      "topicIds": [
+        "music-higher-listening-aural-skills-unheard"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC067ALP006EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "1",
+      "topicIds": [
+        "music-higher-composing-continuation-of-a-given-opening"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC067ALP006EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "2",
+      "topicIds": [
+        "music-higher-composing-setting-music-to-a-given-text"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC067ALP006EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "3",
+      "topicIds": [
+        "music-higher-composing-to-a-given-dance-rhythm-or-meter"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC067ALP006EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "4",
+      "topicIds": [
+        "music-higher-composing-melody-and-bass-from-chords"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC067ALP006EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "5",
+      "topicIds": [
+        "music-higher-composing-adding-bass-and-chords-to-a-tune"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC067ALP006EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "006",
+      "sitting": "deferred",
+      "n": "6",
+      "topicIds": [
+        "music-higher-composing-adding-a-countermelodydescant-and-chords"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC067ALP008EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "1",
+      "topicIds": [
+        "music-higher-listening-berlioz"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC067ALP008EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "2",
+      "topicIds": [
+        "music-higher-listening-the-beatles"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC067ALP008EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "3",
+      "topicIds": [
+        "music-higher-listening-mozart"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC067ALP008EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "4",
+      "topicIds": [
+        "music-higher-listening-deane"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC067ALP008EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
+      "n": "5",
+      "topicIds": [
+        "music-higher-listening-irish-music",
+        "music-higher-listening-irish-music-essay"
+      ],
+      "provenance": "reference+official-paper"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC067ALP008EV-deferred.pdf",
+      "paperKey": "single",
+      "component": "008",
+      "sitting": "deferred",
       "n": "6",
       "topicIds": [
         "music-higher-listening-aural-skills-unheard"
@@ -24384,7 +25118,7 @@
       "component": "008",
       "n": "1",
       "topicIds": [
-        "music-higher-listening-mozart"
+        "music-higher-listening-freddie-mercury-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24397,7 +25131,7 @@
       "component": "008",
       "n": "2",
       "topicIds": [
-        "music-higher-listening-berlioz"
+        "music-higher-listening-tchaikovsky-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24410,7 +25144,7 @@
       "component": "008",
       "n": "3",
       "topicIds": [
-        "music-higher-listening-deane"
+        "music-higher-listening-bach-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24423,7 +25157,7 @@
       "component": "008",
       "n": "4",
       "topicIds": [
-        "music-higher-listening-the-beatles"
+        "music-higher-listening-gerald-barry-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24463,7 +25197,7 @@
       "component": "008",
       "n": "1",
       "topicIds": [
-        "music-higher-listening-mozart"
+        "music-higher-listening-freddie-mercury-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24476,7 +25210,7 @@
       "component": "008",
       "n": "2",
       "topicIds": [
-        "music-higher-listening-berlioz"
+        "music-higher-listening-tchaikovsky-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24489,7 +25223,7 @@
       "component": "008",
       "n": "3",
       "topicIds": [
-        "music-higher-listening-deane"
+        "music-higher-listening-bach-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24502,7 +25236,7 @@
       "component": "008",
       "n": "4",
       "topicIds": [
-        "music-higher-listening-the-beatles"
+        "music-higher-listening-gerald-barry-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24698,7 +25432,7 @@
       "component": "008",
       "n": "1",
       "topicIds": [
-        "music-ordinary-listening-mozart"
+        "music-ordinary-listening-freddie-mercury-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24711,7 +25445,7 @@
       "component": "008",
       "n": "2",
       "topicIds": [
-        "music-ordinary-listening-berlioz"
+        "music-ordinary-listening-tchaikovsky-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24724,7 +25458,7 @@
       "component": "008",
       "n": "3",
       "topicIds": [
-        "music-ordinary-listening-deane"
+        "music-ordinary-listening-bach-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24737,7 +25471,7 @@
       "component": "008",
       "n": "4",
       "topicIds": [
-        "music-ordinary-listening-the-beatles"
+        "music-ordinary-listening-gerald-barry-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24776,7 +25510,7 @@
       "component": "008",
       "n": "1",
       "topicIds": [
-        "music-ordinary-listening-mozart"
+        "music-ordinary-listening-freddie-mercury-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24789,7 +25523,7 @@
       "component": "008",
       "n": "2",
       "topicIds": [
-        "music-ordinary-listening-berlioz"
+        "music-ordinary-listening-tchaikovsky-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24802,7 +25536,7 @@
       "component": "008",
       "n": "3",
       "topicIds": [
-        "music-ordinary-listening-deane"
+        "music-ordinary-listening-bach-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -24815,7 +25549,7 @@
       "component": "008",
       "n": "4",
       "topicIds": [
-        "music-ordinary-listening-the-beatles"
+        "music-ordinary-listening-gerald-barry-archive"
       ],
       "provenance": "official-paper-retained"
     },
@@ -26187,6 +26921,10 @@
     "public/paper-anchors/2023/LC067ALP007IV.pdf.json",
     "public/paper-anchors/2023/LC067ALP008EV.pdf.json",
     "public/paper-anchors/2023/LC067ALP008IV.pdf.json",
+    "public/paper-anchors/2023/LC067ALP006EV-deferred.pdf.json",
+    "public/paper-anchors/2023/LC067ALP006IV-deferred.pdf.json",
+    "public/paper-anchors/2023/LC067ALP008EV-deferred.pdf.json",
+    "public/paper-anchors/2023/LC067ALP008IV-deferred.pdf.json",
     "public/paper-anchors/2023/LC067GLP006EV.pdf.json",
     "public/paper-anchors/2023/LC067GLP006IV.pdf.json",
     "public/paper-anchors/2023/LC067GLP008EV.pdf.json",
@@ -26197,6 +26935,8 @@
     "public/paper-anchors/2022/LC067ALP007IV.pdf.json",
     "public/paper-anchors/2022/LC067ALP008EV.pdf.json",
     "public/paper-anchors/2022/LC067ALP008IV.pdf.json",
+    "public/paper-anchors/2022/LC067ALP006EV-deferred.pdf.json",
+    "public/paper-anchors/2022/LC067ALP008EV-deferred.pdf.json",
     "public/paper-anchors/2022/LC067GLP006EV.pdf.json",
     "public/paper-anchors/2022/LC067GLP006IV.pdf.json",
     "public/paper-anchors/2022/LC067GLP008EV.pdf.json",
