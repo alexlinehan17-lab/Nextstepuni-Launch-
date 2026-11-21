@@ -1,7 +1,7 @@
 {
   "complete": false,
   "note": "Progress only. Counts do not establish full-corpus completeness. Remaining edition correspondence and final zero-open/zero-orphan reconciliation must pass.",
-  "sourceEditions": 69,
+  "sourceEditions": 70,
   "reviewedEditions": 36,
   "correspondenceReviewedEditions": 34,
   "reviewedTasks": 1442,
@@ -488,6 +488,13 @@
       "fileid": "LC032ALP000EV-deferred.pdf",
       "status": "tasks-reviewed",
       "tasks": 43
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 34
     }
   ]
 }

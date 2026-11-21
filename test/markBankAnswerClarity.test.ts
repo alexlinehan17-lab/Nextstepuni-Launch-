@@ -685,8 +685,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
 
   it('Accounting: every task carries the scheme’s priced lines as rows that add up to it, or is listed in the residue with its reason', () => {
     const cards = [...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY].filter((card): card is SecRubricCard & { rubric: AccountingRubric } => card.kind === 'rubric' && card.rubric.system === 'accounting');
-    // June's 1,365 and the carded deferred sittings' tasks (2022 Higher: 43).
-    expect(cards).toHaveLength(1365 + 43);
+    // June's 1,365 and the carded deferred sittings' tasks (2022 Higher: 43; 2023 Higher: 34).
+    expect(cards).toHaveLength(1365 + 43 + 34);
     const structured = cards.filter(card => card.rubric.rows?.length);
     for (const card of structured) {
       const rows = card.rubric.rows!;
@@ -703,7 +703,12 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // 1,267 of 1,365 tasks (2026-10-28, exclusions wave): the rest keep the crop and the half-mark stepper, each with its reason in the residue file.
     // A floor, not an exact count, so a later lift never needs a re-pin; the residue is pinned by id against the file.
     expect(structured.length).toBeGreaterThanOrEqual(1267);
-    const residue = cards.filter(card => !card.rubric.rows?.length).map(card => card.id).sort();
+    // A task its deferred scheme sets out no solution for (2023 Higher: eleven, coordinator ruling 20 Nov) has nothing
+    // to claim: it says so (unprintedAnswer), and is neither rows nor residue.
+    const unprinted = cards.filter(card => card.rubric.unprintedAnswer);
+    expect(unprinted).toHaveLength(11);
+    expect(unprinted.every(card => !card.rubric.rows?.length && card.id.startsWith('acc-2023-hl-deferred-'))).toBe(true);
+    const residue = cards.filter(card => !card.rubric.rows?.length && !card.rubric.unprintedAnswer).map(card => card.id).sort();
     expect(residue).toEqual(accountingResidue.tasks.map(task => task.id).sort());
     for (const task of accountingResidue.tasks) expect(task.reason.length, task.id).toBeGreaterThan(0);
     // A part the scheme prices only through its section total is one flagged block row; pinned so it cannot grow unnoticed.
