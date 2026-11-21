@@ -57,8 +57,8 @@ def build():
  for i,(head,body) in enumerate(zip(heads,named(change,heads)),1):
   body=re.split(r'•|\(10\)|2 points @ 5 marks each',body,1)[0];body=re.sub(r'\s+or$','',body);rows.append(criterion(f'heading-{i}',head.rstrip(' –'),2,[0,5],body))
  add(3,'b',None,'3-11',30,rows,'3 required headings × 2 points × 5')
- judged(3,'c','i','3-11',3,6,'voluntary work',guide(27,'3 points @ 6 marks each','(ii)'))
- judged(3,'c','ii','3-11',3,4,'benefits',guide(27,'3 benefits @ 4 marks each'))
+ judged(3,'c','i','3-9',3,6,'voluntary work',guide(27,'3 points @ 6 marks each','(ii)'))
+ judged(3,'c','ii','3-9',3,4,'benefits',guide(27,'3 benefits @ 4 marks each'))
  assert len(cards)==19 and sum(c['totalMarks'] for c in cards)==275,(len(cards),sum(c['totalMarks'] for c in cards))
  return cards
 if __name__=='__main__':

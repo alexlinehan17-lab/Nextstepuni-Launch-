@@ -19,7 +19,7 @@ def build():
  def judged(n,letter,roman,topic,count,per,label,guidance,**extra):return add(n,letter,roman,topic,count*per,[criterion('points',label,count,[0,per],'Complete original source guidance: '+guidance)],f'{count} points × {per}',**extra)
  def stripjoin(v):return re.sub(r'\s+(?:and|or)\s*$','',v).strip()
  full=guide(15,'(1 reference to each plus 1 other)','(ii)');heads=['Suitability for family use:','Ventilation:','Ergonomics:'];rows=[criterion(f'heading-{i}',head.rstrip(':'),1,[0,5],body) for i,(head,body) in enumerate(zip(heads,named(full,heads)),1)];rows.append(criterion('other','1 other',1,[0,5],'One ADDITIONAL point from any of the THREE required headings. '+full));add(1,'a','i','3-4',20,rows,'Three required headings×5 + one other5')
- judged(1,'a','ii','3-6',3,5,'factors',guide(15,'3 factors @ 5 marks each'))
+ judged(1,'a','ii','3-5',3,5,'factors',guide(15,'3 factors @ 5 marks each'))
  judged(1,'a','iii','3-6',3,5,'ways',stripjoin(guide(16,'3 ways @ 5 marks each','1.(b)')))
  judged(1,'b','i','3-4',4,5,'factors',guide(16,'4 factors @ 5 marks each','(ii)'))
  full=stripjoin(guide(16,'Name: 4 marks, Properties: 2 @ 3 marks each'));names=['Tiles:','Vinyl:','Wooden flooring:','Safety flooring:'];variants=[]
@@ -51,9 +51,9 @@ def build():
  judged(2,'b','ii','3-7',2,3,'advantages',stripjoin(guide(19,'2 advantages @ 3 marks each','2.(c)')))
  judged(2,'c','i','3-8',3,3,'media',select(select(s[19],'2.(c)'),'3 points @ 3 marks each','(ii)'))
  judged(2,'c','ii','3-8',2,3,'contribution',guide(19,'2 contributions @ 3 marks each'))
- heads=['Paid work:','Unpaid work:','Voluntary work:'];add(3,'a','i','3-11',18,[criterion(f'type-{i}',head.rstrip(':'),1,[0,6],body) for i,(head,body) in enumerate(zip(heads,named(guide(20,'3 points @ 6 marks each','(ii)'),heads)),1)],'Three required work types×6')
- full=guide(20,'(1 advantage, 1 disadvantage, plus 2 others)','(iii)');advantages,disadvantages=named(full,['Advantages:','Disadvantages:']);add(3,'a','ii','3-11',20,[criterion('advantage','advantage',1,[0,5],advantages),criterion('disadvantage','disadvantage',1,[0,5],disadvantages),criterion('other','2 others',2,[0,5],'Two ADDITIONAL points from either required heading. '+full)],'Advantage5 + disadvantage5 + two others×5')
- c=judged(3,'a','iii','3-11',3,4,'protect young people',guide(20,'3 points @ 4 marks each'));c['rows'][0]['contextNote']='Original historical 2016 employment conditions and €6.06 minimum-wage wording retained. '+c['rows'][0]['contextNote']
+ heads=['Paid work:','Unpaid work:','Voluntary work:'];add(3,'a','i','3-9',18,[criterion(f'type-{i}',head.rstrip(':'),1,[0,6],body) for i,(head,body) in enumerate(zip(heads,named(guide(20,'3 points @ 6 marks each','(ii)'),heads)),1)],'Three required work types×6')
+ full=guide(20,'(1 advantage, 1 disadvantage, plus 2 others)','(iii)');advantages,disadvantages=named(full,['Advantages:','Disadvantages:']);add(3,'a','ii','3-9',20,[criterion('advantage','advantage',1,[0,5],advantages),criterion('disadvantage','disadvantage',1,[0,5],disadvantages),criterion('other','2 others',2,[0,5],'Two ADDITIONAL points from either required heading. '+full)],'Advantage5 + disadvantage5 + two others×5')
+ c=judged(3,'a','iii','3-9',3,4,'protect young people',guide(20,'3 points @ 4 marks each'));c['rows'][0]['contextNote']='Original historical 2016 employment conditions and €6.06 minimum-wage wording retained. '+c['rows'][0]['contextNote']
  judged(3,'b','i','3-10',3,6,'reasons',guide(21,'3 reasons @ 6 marks each','(ii)'))
  full=stripjoin(guide(21,'Name: 4 marks, Details: 2 points @ 4 marks each','3.(c)'));options=semis(full);add(3,'b','ii','3-10',12,[menu('name','Name',1,4,options,'Choose ONE adult-education initiative consistently. Complete original historical source names/brief descriptors retained.'),criterion('details','Details',2,[0,4],'Two details of the SAME initiative. The original supplies names and brief descriptors only, not complete two-point worked accounts; no additional model has been invented. '+full)],'Name4 + details2×4')
  judged(3,'c','i','3-11',1,6,'leisure',guide(21,'1 point @ 6 marks','(ii)'))
