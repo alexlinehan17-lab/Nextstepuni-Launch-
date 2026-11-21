@@ -108,11 +108,11 @@
     "refsHash": "9c52a9738a3c0ca4"
   },
   "bulgarian": {
-    "cards": 141,
-    "contentHash": "88638f4591b1979f",
+    "cards": 219,
+    "contentHash": "1e12301fc6408657",
     "coveragePct": 100.0,
-    "covered": 141,
-    "excluded": 78,
+    "covered": 219,
+    "excluded": 0,
     "leaves": 219,
     "open": 0,
     "orphans": 0,
@@ -120,7 +120,7 @@
       "count": 17,
       "hash": "4d409f9708da65de"
     },
-    "refsHash": "98027c9761a7d3b1"
+    "refsHash": "2a249147f131ae84"
   },
   "business": {
     "cards": 2163,
@@ -198,11 +198,11 @@
     "refsHash": "90d2a0c7ad8fc3fb"
   },
   "croatian": {
-    "cards": 100,
-    "contentHash": "2a79e729a0bc71d9",
+    "cards": 151,
+    "contentHash": "9bd5fde5fea1c13a",
     "coveragePct": 100.0,
-    "covered": 100,
-    "excluded": 67,
+    "covered": 167,
+    "excluded": 0,
     "leaves": 167,
     "open": 0,
     "orphans": 0,
@@ -210,14 +210,14 @@
       "count": 13,
       "hash": "1b6552f0658d264b"
     },
-    "refsHash": "949a64de37c58396"
+    "refsHash": "bab3032f2a918a2e"
   },
   "czech": {
-    "cards": 15,
-    "contentHash": "6c302051f1a4dede",
+    "cards": 155,
+    "contentHash": "bf64efaa8ccc5d86",
     "coveragePct": 100.0,
-    "covered": 75,
-    "excluded": 144,
+    "covered": 219,
+    "excluded": 0,
     "leaves": 219,
     "open": 0,
     "orphans": 0,
@@ -225,22 +225,22 @@
       "count": 17,
       "hash": "325d56e0739fd63d"
     },
-    "refsHash": "7013eb0f4ad094fa"
+    "refsHash": "223459d1ccf6fd01"
   },
   "danish": {
-    "cards": 79,
-    "contentHash": "bdee40da04ff574f",
+    "cards": 126,
+    "contentHash": "c450bea35e4cf9a2",
     "coveragePct": 100.0,
-    "covered": 79,
-    "excluded": 46,
-    "leaves": 125,
+    "covered": 126,
+    "excluded": 0,
+    "leaves": 126,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 13,
       "hash": "d51ea34693abb0f0"
     },
-    "refsHash": "b8748a474c6a2507"
+    "refsHash": "017eb07fceebaf8c"
   },
   "dcg": {
     "cards": 1284,
@@ -318,34 +318,34 @@
     "refsHash": "2b0da202e5b95214"
   },
   "estonian": {
-    "cards": 107,
-    "contentHash": "72b058dd3ac09b0d",
+    "cards": 172,
+    "contentHash": "de774c62c374676a",
     "coveragePct": 100.0,
-    "covered": 107,
-    "excluded": 64,
-    "leaves": 171,
+    "covered": 172,
+    "excluded": 0,
+    "leaves": 172,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 15,
       "hash": "be94459f5763acb6"
     },
-    "refsHash": "3d27c9b51da457f1"
+    "refsHash": "ca6f9603134fc99f"
   },
   "finnish": {
-    "cards": 90,
-    "contentHash": "da84d2baef185349",
+    "cards": 168,
+    "contentHash": "22b7db6dbbfe4f67",
     "coveragePct": 100.0,
-    "covered": 90,
-    "excluded": 77,
-    "leaves": 167,
+    "covered": 168,
+    "excluded": 0,
+    "leaves": 168,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 13,
       "hash": "f03b7ec1b6337cd6"
     },
-    "refsHash": "b09aab8adfbbe234"
+    "refsHash": "e46ff62084050dc5"
   },
   "french": {
     "cards": 2286,
@@ -423,11 +423,11 @@
     "refsHash": "06b764f923a27680"
   },
   "hungarian": {
-    "cards": 168,
-    "contentHash": "c52d6a0ce676b831",
+    "cards": 219,
+    "contentHash": "1d21e0988af0604c",
     "coveragePct": 100.0,
-    "covered": 168,
-    "excluded": 51,
+    "covered": 219,
+    "excluded": 0,
     "leaves": 219,
     "open": 0,
     "orphans": 0,
@@ -435,7 +435,7 @@
       "count": 17,
       "hash": "e3b0a73bce59703d"
     },
-    "refsHash": "65d66ad3a304022c"
+    "refsHash": "90efff6cc4a9aa20"
   },
   "irish": {
     "cards": 3231,
@@ -453,19 +453,19 @@
     "refsHash": "55377fc06aab0b52"
   },
   "italian": {
-    "cards": 1055,
-    "contentHash": "7354cfcb8bd26916",
-    "coveragePct": 49.4,
-    "covered": 1121,
+    "cards": 1319,
+    "contentHash": "e3c1f36fe721d06f",
+    "coveragePct": 61.5,
+    "covered": 1397,
     "excluded": 0,
     "leaves": 2270,
-    "open": 1149,
+    "open": 873,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "4f7a342aa9e434bd"
     },
-    "refsHash": "ae6bf80533cdda5e"
+    "refsHash": "ab21483361d3ff5b"
   },
   "japanese": {
     "cards": 1941,
@@ -498,19 +498,19 @@
     "refsHash": "1068c61a33369766"
   },
   "latvian": {
-    "cards": 20,
-    "contentHash": "43eb8b6b9bc1be46",
+    "cards": 167,
+    "contentHash": "9a7e4953f6f80062",
     "coveragePct": 100.0,
-    "covered": 68,
-    "excluded": 150,
-    "leaves": 218,
+    "covered": 219,
+    "excluded": 0,
+    "leaves": 219,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 17,
       "hash": "f66362d289720cbb"
     },
-    "refsHash": "cbfff690c93f65b8"
+    "refsHash": "08d5e39f5136dbc3"
   },
   "lcvp": {
     "cards": 518,
@@ -543,19 +543,19 @@
     "refsHash": "15602894c57e4cf0"
   },
   "maltese": {
-    "cards": 76,
-    "contentHash": "f7eb421a1516a463",
+    "cards": 77,
+    "contentHash": "7317d1820246fb7b",
     "coveragePct": 100.0,
-    "covered": 76,
+    "covered": 77,
     "excluded": 0,
-    "leaves": 76,
+    "leaves": 77,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 6,
       "hash": "33e3be70d6c6fac1"
     },
-    "refsHash": "9f1ba0db49381417"
+    "refsHash": "50136c98e350eaee"
   },
   "mandarin-chinese": {
     "cards": 201,
@@ -588,11 +588,11 @@
     "refsHash": "8e1e27da1b7b1b20"
   },
   "modern-greek": {
-    "cards": 79,
-    "contentHash": "3086b6b9da802dad",
+    "cards": 142,
+    "contentHash": "38006a7dd447e722",
     "coveragePct": 100.0,
-    "covered": 79,
-    "excluded": 63,
+    "covered": 142,
+    "excluded": 0,
     "leaves": 142,
     "open": 0,
     "orphans": 0,
@@ -600,7 +600,7 @@
       "count": 16,
       "hash": "6c618224f47c0b52"
     },
-    "refsHash": "98497719950dbd78"
+    "refsHash": "c4e15feb87677895"
   },
   "music": {
     "cards": 1708,
@@ -649,7 +649,7 @@
   },
   "polish": {
     "cards": 805,
-    "contentHash": "ab87a74dac9ca058",
+    "contentHash": "84e0dbb540a3ee24",
     "coveragePct": 100.0,
     "covered": 823,
     "excluded": 0,
@@ -679,7 +679,7 @@
   },
   "portuguese": {
     "cards": 744,
-    "contentHash": "9970d654ff30decd",
+    "contentHash": "ce36bcf5b5fb45e5",
     "coveragePct": 100.0,
     "covered": 744,
     "excluded": 0,
@@ -709,7 +709,7 @@
   },
   "romanian": {
     "cards": 187,
-    "contentHash": "f4c89c5b1efba7d5",
+    "contentHash": "d28a11174e022701",
     "coveragePct": 100.0,
     "covered": 215,
     "excluded": 0,
@@ -738,11 +738,11 @@
     "refsHash": "922dcd4bb5770390"
   },
   "slovakian": {
-    "cards": 140,
-    "contentHash": "b1158a5ae2100565",
+    "cards": 206,
+    "contentHash": "7c26fcef8fc0c008",
     "coveragePct": 100.0,
-    "covered": 140,
-    "excluded": 66,
+    "covered": 206,
+    "excluded": 0,
     "leaves": 206,
     "open": 0,
     "orphans": 0,
@@ -750,22 +750,22 @@
       "count": 16,
       "hash": "98ac9e228b1556db"
     },
-    "refsHash": "c23b4287c1b66666"
+    "refsHash": "1d94100309692bfa"
   },
   "slovenian": {
-    "cards": 23,
-    "contentHash": "d320fe895ee424e5",
+    "cards": 60,
+    "contentHash": "57e2d74e8d774ace",
     "coveragePct": 100.0,
-    "covered": 23,
-    "excluded": 39,
-    "leaves": 62,
+    "covered": 64,
+    "excluded": 0,
+    "leaves": 64,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 5,
       "hash": "e70003a7f221a331"
     },
-    "refsHash": "718ba95fb160a884"
+    "refsHash": "01ff853464b005fa"
   },
   "spanish": {
     "cards": 2268,
@@ -783,19 +783,19 @@
     "refsHash": "4b1c69d1a48c40d0"
   },
   "swedish": {
-    "cards": 121,
-    "contentHash": "a0cb45f67ea58b4d",
+    "cards": 191,
+    "contentHash": "d149d82da4867513",
     "coveragePct": 100.0,
-    "covered": 121,
-    "excluded": 63,
-    "leaves": 184,
+    "covered": 191,
+    "excluded": 0,
+    "leaves": 191,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 16,
       "hash": "3f4a29c9d6671847"
     },
-    "refsHash": "a952dfaa733dd380"
+    "refsHash": "2e2d15b783da8172"
   },
   "technology": {
     "cards": 2340,
@@ -813,11 +813,11 @@
     "refsHash": "2f5d1d43deb026bd"
   },
   "ukrainian": {
-    "cards": 20,
-    "contentHash": "1a7cf959461a3660",
+    "cards": 26,
+    "contentHash": "665bbb1ea3a19cd8",
     "coveragePct": 100.0,
-    "covered": 20,
-    "excluded": 6,
+    "covered": 26,
+    "excluded": 0,
     "leaves": 26,
     "open": 0,
     "orphans": 0,
@@ -825,6 +825,6 @@
       "count": 2,
       "hash": "8cb689ef44820e29"
     },
-    "refsHash": "ced75cb491569d9f"
+    "refsHash": "d0ba358099cf1735"
   }
 }

@@ -36,7 +36,7 @@ sys.path.insert(0, HERE)
 import pymupdf                                                   # noqa: E402
 from fr_paper import _rows                                       # noqa: E402
 import it_paper as IP                                            # noqa: E402
-from it_scheme import ItScheme, schemes_dir                      # noqa: E402
+from it_scheme import ItScheme, confirm_headings, schemes_dir    # noqa: E402
 from it_rows import split_priced                                 # noqa: E402
 
 AUDIO = os.path.join(ROOT, 'data', 'italianAudio.json')
@@ -362,6 +362,30 @@ def _sentences(text):
     return text[:end + 1] if end > 0 else ''
 
 
+# Shorter answers the heading repair moved out of these cards' options or
+# verbatims, where they had shipped as full answers. Quoted as the scheme
+# prints them until every listening card quotes its shorter answers.
+# Listening asks whose split prices separate answers in the order they are
+# given, not the printed pieces of one answer (review, 20 Nov).
+ORDER_FREE = {(2019, 'hl', 3, 3)}
+
+KEPT_LESSER = {
+    (2016, 'ol', 2, 4): ['(They were talking loudly and laughing 5 marks)', '(They were talking and laughing 4 marks)',
+                         '(They were messing/playing 3 marks)*', '(They were talking loudly 3 marks)',
+                         '(They were talking 2 marks)', '(They were laughing 2 marks)',
+                         '(They were (trying to) distract him 1 mark)'],
+    (2016, 'ol', 3, 4): ['(She (always) helps/supports him 2 marks)', '(She is kind 2 marks)', '(She is nice 1 mark)',
+                         '(Makes desserts 1 mark)'],
+    (2019, 'ol', 3, 8): ['(Tradition 2 marks)', '(City 1 mark)'],
+    (2022, 'ol', 3, 8): ['(To have a break/On holidays 2 marks)', 'The seaside 1 mark)'],
+    (2024, 'ol', 2, 2): ['(Working young people 4 marks)',
+                         '(People who would use a discount card (at the cinema/ theatre/restaurants) 4 marks)',
+                         'People on a budget (as there are no fees) 4 marks)', '(Young people 3 marks)',
+                         '(Working people 2 marks)', '(Giada herself 1 mark)', '(Children 1 mark)',
+                         '(Cinemas/theatres/restaurants 1 mark)'],
+}
+
+
 def cards(year, level, refuse, row_for, concept_for):
     """Every listening card for one sitting; refusals go to `refuse`."""
     B = Booklet(year, level)
@@ -453,7 +477,16 @@ def cards(year, level, refuse, row_for, concept_for):
                        'prices, so the booklet reader lost one', f'{year} {lvl} Section LB{d} Q{n}',
                        f'paper {len(asks)}, scheme {len(priced)}')
             continue
-        if len(asks) != len(priced) and not all(
+        # Paired by printed order only where the booklet and the scheme number
+        # the asks alike. 2017 Higher Dialogue 3 prints Q6 as one ask with an
+        # (a) and a (b), which the scheme prices as 6(a) and 6(b), and prints
+        # Q8's tariff above its number: the counts still agreed, so every ask
+        # from 6 on was paired with the answers to the one before it.
+        renumbered = [n for n, a in zip(sorted(asks), priced) if a.item != n] \
+            if len(asks) == len(priced) else []
+        if renumbered:
+            missing = renumbered
+        if (len(asks) != len(priced) or renumbered) and not all(
                 (year, level, d, n) in OVERRIDES and 'total' in OVERRIDES[(year, level, d, n)]
                 for n in missing):
             for n in sorted(asks):
@@ -465,12 +498,13 @@ def cards(year, level, refuse, row_for, concept_for):
         # Equal counts pair in printed order; where the reader lost a scheme
         # ask its number is supplied by an OVERRIDES entry (with its printed
         # total) and every other ask pairs on its own printed number.
-        pairs = (list(zip(sorted(asks), priced)) if len(asks) == len(priced)
+        pairs = (list(zip(sorted(asks), priced)) if len(asks) == len(priced) and not renumbered
                  else [(n, by_item.get(n)) for n in sorted(asks)])
         for n, ask in pairs:
             ref = f'{year} {lvl} Section LB{d} Q{n}'
             text = ' '.join(' '.join(asks[n]['text']).split())
-            if ask is None:
+            if ask is None or 'total' in (OVERRIDES.get((year, level, d, n)) or {}):
+                # An override's printed total wins over a misread ask.
                 o = OVERRIDES[(year, level, d, n)]
                 ask = type('Lost', (), {'total': o['total'], 'fault': None, 'parts': [],
                                         'item': n})()
@@ -479,6 +513,8 @@ def cards(year, level, refuse, row_for, concept_for):
                        f'{year} {lvl} scheme, Dialogue {d} ask {ask.item}')
                 continue
             override = OVERRIDES.get((year, level, d, n))
+            for part in ask.parts or []:
+                confirm_headings(part, text)
             if ask.parts:
                 _repair_bullets(S, ask)
             ladder = None if (override or not ask.parts) else _ladder_rows(S, ask)
@@ -488,9 +524,27 @@ def cards(year, level, refuse, row_for, concept_for):
             part0 = ask.parts[0] if ask.parts else None
             components = (part0 is not None and len(ask.parts) == 1 and not part0.directive and part0.split
                           and len(part0.split) == len(part0.answers) > 1
-                          and sum(part0.split) == ask.total)
+                          and sum(part0.split) == ask.total
+                          # Not answers that print their own full price: "A
+                          # youth (1) hostel (3)" and "Quadruple rooms … 4
+                          # marks)" are two answers, not two pieces of one.
+                          and not all(sum(int(m) for m in re.findall(r'\((\d{1,2})\s*m?\)', a)) == ask.total
+                                      or re.search(r'\b%d\s*marks?\b' % ask.total, a)
+                                      for a in part0.answers[:1]))
             if override:
                 rows = _override_rows(S, override, ref)
+            elif components and all(len(a.split()) <= 2 for a in part0.answers) \
+                    and (year, level, d, n) in ORDER_FREE:
+                # Separate one-word answers, not pieces of one: "German 5 marks"
+                # over "Swiss (2+1+1+1)", "Dutch", "English". The first share
+                # goes to the first answer given, in any order.
+                rows = [{'id': 'r-1', 'kind': 'anyN', 'verbatim': 'The answers the scheme accepts in full',
+                         'marks': None,
+                         'group': {'claimMax': len(part0.split), 'perOption': part0.split[0],
+                                   'perOptionSteps': list(part0.split), 'options': list(part0.answers)},
+                         'contextNote': (f'The scheme prints “({"+".join(map(str, part0.split))})”: '
+                                         f'{", ".join(map(str, part0.split))} marks for the first, second '
+                                         f'and further answers given, in any order.')}]
             elif components:
                 # "7 marks (1+1+2+3)" over four bullets: ONE answer the scheme
                 # cuts into four printed components, each worth its term.
@@ -500,16 +554,23 @@ def cards(year, level, refuse, row_for, concept_for):
                 rows, tariff = ladder, {'kind': 'questionTotal'}
             for k, part in enumerate([] if (override or ladder or components)
                                      else ask.parts, start=1):
-                row = row_for(part, k, ask)
+                row = row_for(part, k, ask, text)
                 if isinstance(row, str):
                     bad = row
                     break
-                row.pop('_trimmed', None)
-                rows.append(row)
+                for r in (row if isinstance(row, list) else [row]):
+                    r.pop('_trimmed', None)
+                    rows.append(r)
             if bad:
                 refuse(bad, ref, f'{year} {lvl} scheme, Dialogue {d} ask {ask.item}: '
                                  f'{ask.parts[0].notation!r}')
                 continue
+            kept = KEPT_LESSER.get((year, level, d, n), [])
+            for piece in kept:
+                assert _flat(piece) in _scheme_text(S), (ref, piece)
+            if kept:
+                rows[0]['contextNote'] = (rows[0].get('contextNote', '') + ' The scheme also prints, for '
+                                          'shorter answers: ' + '; '.join(f'“{piece}”' for piece in kept) + '.').strip()
             rows[0]['contextNote'] = (rows[0].get('contextNote', '') +
                                       ' Answer in English or Irish.').strip()
             out.append({
@@ -605,6 +666,40 @@ OVERRIDES = {
         'note': ['of her/ Grazia’s neighbourhood/', 'area (1m) (1+1+1)'],
         'contextNote': ('The scheme prints the third piece as “of her/ Grazia’s neighbourhood/” and, '
                         'after its tariff, “area (1m) (1+1+1)”.')},
+    # "4. National (1m) library (2m) ," / "(modern) art (1m) gallery(2m)," /
+    # "university 9 marks (3+3+3)": three places at 3, the first two priced
+    # in pieces (1+2).
+    (2018, 'ol', 3, 4): {
+        'points': [('National', 1), ('library', 2), ('(modern) art', 1), ('gallery', 2), ('university', 3)],
+        'note': ['National (1m) library (2m)', '(modern) art (1m) gallery(2m)', 'university 9 marks (3+3+3)'],
+        'contextNote': ('The scheme prints three places, 3 marks each: “National (1m) library (2m)”, '
+                        '“(modern) art (1m) gallery(2m)” and “university 9 marks (3+3+3)”.')},
+    # 2017 Higher Dialogue 3: the booklet prints Q6 as one ask, "(a) What two
+    # parts of Italy did Daniela like the most? (b) Why?", which the scheme
+    # prices as 6(a) "2 marks(1+1)" and 6(b) "2 marks"; and it prints Q8's
+    # "4 marks (2+2)" on the line above "8.". Each ask is read here from its
+    # own printed lines.
+    (2017, 'hl', 3, 6): {
+        'total': 4,
+        'rows': [{'kind': 'point', 'verbatim': '(a) — The Centre', 'marks': 1},
+                 {'kind': 'point', 'verbatim': '(a) — the South', 'marks': 1},
+                 {'kind': 'criterion', 'verbatim': '(b) — People are (very) welcoming, chatty and (very) helpful',
+                  'marks': 2, 'permittedMarks': [0, 1, 2],
+                  'contextNote': 'The scheme also pays part marks for a shorter answer: “2 elements” 1 mark.'}]},
+    (2017, 'hl', 3, 7): {
+        'total': 4, 'claimMax': 2, 'perOption': 2,
+        'options': ['Roads are narrow (1m) there are often no footpaths on roads (1m)', 'Cars are speeding',
+                    'Sometimes (1m) she could not get accommodation (1m)',
+                    'She had to sleep on the beach or in a campsite'],
+        'note': ['7. Any two of 4 marks(2+2)'], 'contextNote': 'The scheme prints “Any two of 4 marks(2+2)”.'},
+    (2017, 'hl', 3, 8): {
+        'total': 4, 'claimMax': 2, 'perOption': 2,
+        'options': ['She is going back to Dublin (to her fiancé) (1m) for six months (1m)',
+                    'She will publish her book', 'She will travel to Europe (1m) by bike (1m)',
+                    'She will write another/second book'],
+        'note': ['4 marks (2+2)', 'She will write a book 1m'],
+        'contextNote': ('The scheme prints this ask’s “4 marks (2+2)” on the line above its number. '
+                        'The scheme also pays part marks for a shorter answer: “She will write a book” 1 mark.')},
     (2026, 'ol', 2, 4): {
         'claimMax': 4, 'perOption': 2,
         'options': ['A (prizewinning) app', 'to practice/learn', 'their verbs',
@@ -617,7 +712,7 @@ def _override_rows(S, o, ref):
     text = _scheme_text(S)
     if 'rows' in o:
         for row in o['rows']:
-            for piece in [row.get('verbatim')] + (row.get('group') or {}).get('options', []):
+            for piece in [(row.get('verbatim') or '').split(' — ')[-1]] + (row.get('group') or {}).get('options', []):
                 if piece and piece != 'The answers the scheme accepts in full':
                     assert _flat(piece) in text, f'{ref}: {piece!r} is not in the scheme'
         return [dict(r, id=f'r-{k}') for k, r in enumerate(o['rows'], start=1)]

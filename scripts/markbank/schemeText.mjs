@@ -376,6 +376,9 @@ export const claimTraces = (scheme, claim, { menuOption = false } = {}) => {
  * text through. No claim ever contains a tariff cell — the authoring scripts
  * take the price off before the row is written.
  */
+/** A Latvian scheme's paragraph-reference cell (ADDED FORMS, below: 5). */
+const REFERENCE_CELL = /\(\s*\d{1,2}\s*\.\s*(?:fragments|rindkop[aā]|rind[aā])\s*\)/gi;
+
 const LANGUAGE_TARIFF = new RegExp(
   String.raw`\(?\s*\d{1,3}\s*(?:[x×*]\s*\d{1,2}\s*)?`
   + `(?:pontot|pont|точки|точка|bodova|bodov|bodu|body|bod|po[äa]ng|punkti|`
@@ -383,7 +386,7 @@ const LANGUAGE_TARIFF = new RegExp(
   + `punt|pontos|ponto|marks?|p)\\.?\\s*\\)?`, 'gi');
 
 /**
- * ADDED FORMS. Four readings admit scheme text that comparableScheme's own
+ * ADDED FORMS. Five readings admit scheme text that comparableScheme's own
  * filters hide. Each is built from the same raw text through the same pipeline
  * (page markers, footers and cells handled alike) and only ADDS a reading:
  * nothing the plain form offers is removed or rewritten, so a claim that traced
@@ -463,7 +466,21 @@ const LANGUAGE_TARIFF = new RegExp(
  *    Only more: it is appended as an alternative reading
  *    (joined.replace(SPLIT_ONLY, ' ')); the plain reading is unchanged.
  *
- * RULE FOR THE NEXT LANE: before adding a fifth form, record a lead or
+ * 5. REFERENCE CELL -- REFERENCE_CELL, inside comparableScheme (small-languages
+ *    lane; coordinator ruling 7, 20 Nov 2026).
+ *    Admits: the scheme text with a Latvian paragraph-reference cell, "(4.fragments)",
+ *    "(1.rindkopa)", "(10. rinda)", lifted out where the text layer welds it into a
+ *    gloss that wraps over lines (the cell sits in the scheme's second column).
+ *    Read by: comparableScheme, so every provenance path.
+ *    Forced by: Latvian 2014 Q1 b)-e) and 2015 Q1 c)-d), whose live rows kept the
+ *    cell mid-gloss ("tauta, kas (4.fragments) nedomā, ...") because a row is
+ *    only ever one unbroken run.
+ *    Proof (at its commit): every authored deck rebuilds byte-identical (the
+ *    lane's all-decks rebuild before and after; no card appears or drops).
+ *    Only more: it is appended as an alternative reading
+ *    (joined.replace(REFERENCE_CELL, ' ')); the plain reading is unchanged.
+ *
+ * RULE FOR THE NEXT LANE: before adding a sixth form, record a lead or
  * coordinator ruling for it, and prove at its commit that every authored deck
  * rebuilds byte-identical; any card that appears or drops is named, and the
  * work stops until that is ruled on too.
@@ -540,6 +557,7 @@ export const comparableScheme = (raw) => {
     normalise(joined.replace(INLINE_ASIDE, ' ')),
     normalise(joined.replace(SPLIT_ONLY, ' ')),
     normalise(joined.replace(LANGUAGE_TARIFF, ' ')),
+    normalise(joined.replace(REFERENCE_CELL, ' ')),
     normalise(repairGlyphs(joined)),
     normalise(sourceLines.map((l) => l.replace(MARKS_COLUMN, ''))
       .filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l)).join(' ')),

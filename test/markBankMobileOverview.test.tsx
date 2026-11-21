@@ -21,8 +21,9 @@ test('the subject index keeps topic practice available without a dismissible ove
   expect(start).toBeEnabled();
   expect(screen.getByRole('navigation', { name: 'Subject units' })).toBeInTheDocument();
   expect(screen.queryByRole('button', { name: 'Dismiss practice overview' })).not.toBeInTheDocument();
-  fireEvent.change(screen.getByRole('textbox', { name: 'Search topics' }), { target: { value: 'Rock Cycle' } });
-  fireEvent.click(screen.getByRole('button', { name: /The Rock Cycle.*questions/ }));
+  // Geography is in the single model: the index lists the Atlas heading the rock cycle is filed under.
+  fireEvent.change(screen.getByRole('textbox', { name: 'Search topics' }), { target: { value: 'Rocks' } });
+  fireEvent.click(await screen.findByRole('button', { name: /Rocks, Weathering & Mass Movement.*questions/ }));
   fireEvent.click(screen.getByRole('button', { name: /^Start 6 questions$/ }));
   expect(await screen.findByRole('button', { name: 'Expand to full screen' })).toBeInTheDocument();
   expect(screen.getByRole('textbox', { name: 'Your answer' })).toBeInTheDocument();

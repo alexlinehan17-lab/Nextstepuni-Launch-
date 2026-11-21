@@ -8,7 +8,8 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
+import { atlasHeadings, loadAllAtlasModels, modelTopicsForQuestion } from '../components/PaperTrail/atlasModel';
 import engineeringReference from '../data/examTopics/engineering.json';
 import engineeringEvidence from '../data/examTopics/engineering-local-crosswalk.json';
 import curriculumCrosswalk from '../data/examTopics/engineering-curriculum-crosswalk.json';
@@ -27,7 +28,6 @@ import { isAnswerMap } from '../components/PaperTrail/vaultResolve';
 import {
   curriculumNodeIdsForExamTopic,
   examQuestionPartReferencesForSubject,
-  examTopicIdsForQuestion,
   examTopicTaxonomyFor,
 } from '../data/examTopics/registry';
 import { resolveCurriculumSpecification } from '../curriculumRegistry';
@@ -60,6 +60,9 @@ const paperIdentity = (paper: {
   year: number;
   fileid: string;
 }) => `${paper.level}|${paper.lang}|${paper.year}|${paper.fileid}`;
+
+// The single model (Alex, 18 Nov 2026): the Atlas files each part by what it asks under one heading list.
+beforeAll(() => loadAllAtlasModels());
 
 describe('Engineering exam-topic registry', () => {
   const taxonomy = examTopicTaxonomyFor('engineering')!;
@@ -94,7 +97,10 @@ describe('Engineering exam-topic registry', () => {
       .toEqual(referenceTopics.map(topic => topic.label));
     expect(taxonomy.topics.map(topic => topic.sourcePath))
       .toEqual(referenceTopics.map(topic => topic.sourcePath));
-    expect(topicsForSubject('engineering')).toHaveLength(74);
+    // One list: the course examined in June 2027.
+    expect(topicsForSubject('engineering').map(topic => topic.subtopicId).sort())
+      .toEqual(atlasHeadings('engineering')!.map(topic => topic.id).sort());
+    expect(topicsForSubject('engineering')).toHaveLength(36);
   });
 
   it('bridges each practice bucket only to its applicable curriculum', () => {
@@ -252,12 +258,10 @@ describe('Engineering exam-topic registry', () => {
         expect(ids.every(id => topics.get(id)?.level === paper.level), (
           `${paperIdentity(paper)} Q${question.n}: ${ids.join(', ')}`
         )).toBe(true);
-        // A deferred paper's questions join on its own file id: without it
-        // the lookup is June's question of the same number.
-        expect(examTopicIdsForQuestion(
-          'engineering', paper.level, paper.year, 'main', question.n,
-          'single', paper.lang, paper.fileid.endsWith('-deferred.pdf') ? paper.fileid : undefined,
-        )).toEqual(ids);
+        // A deferred paper's questions join on their own file id (single model: the parts' own record), never
+        // June's question of the same number.
+        expect(modelTopicsForQuestion('engineering', paper.year, paper.level, paper.fileid, question.n)?.sort())
+          .toEqual([...ids].sort());
       }
     }
   });
@@ -267,18 +271,16 @@ describe('Engineering exam-topic registry', () => {
       const paper = topicsForPaper('engineering', year, 'higher', 'ev', fileid)!;
       return browseTopicIdsForQuestion(paper, paper.q.find(question => question.n === n)!);
     };
-    // The reference heads no part of 2022's deferred Q7 (polymers): its card
-    // review files it, apart from June 2022's Q7.
-    expect(topicsOf('LC027ALP000EV-deferred.pdf', 2022, '7')).toEqual([
-      'engineering-higher-polymers',
-      'engineering-higher-the-structure-of-materials',
-    ]);
+    // Single model: a deferred question takes its own parts' headings (each part filed by what it asks), apart
+    // from June's question of the same number. 2022's deferred Q7 is about polymers.
+    expect(topicsOf('LC027ALP000EV-deferred.pdf', 2022, '7')).toEqual(
+      modelTopicsForQuestion('engineering', 2022, 'higher', 'LC027ALP000EV-deferred.pdf', '7'));
+    expect(topicsOf('LC027ALP000EV-deferred.pdf', 2022, '7')).toContain('engineering-higher-polymers');
     expect(topicsOf('LC027ALP000EV.pdf', 2022, '7')).not.toEqual(topicsOf('LC027ALP000EV-deferred.pdf', 2022, '7'));
-    // Deferred 2023 Q2 (Extended Reality) carries its card review's Health and Safety.
-    expect(topicsOf('LC027ALP000EV-deferred.pdf', 2023, '2')).toEqual([
-      'engineering-higher-energy-electronics-robotics',
-      'engineering-higher-health-and-safety',
-    ]);
+    // Deferred 2023 Q2 (Extended Reality) keeps its Health and Safety part.
+    expect(topicsOf('LC027ALP000EV-deferred.pdf', 2023, '2')).toEqual(
+      modelTopicsForQuestion('engineering', 2023, 'higher', 'LC027ALP000EV-deferred.pdf', '2'));
+    expect(topicsOf('LC027ALP000EV-deferred.pdf', 2023, '2')).toContain('engineering-higher-health-and-safety');
   });
 
   it('ships finite paper crops and honest scheme boundaries for all 526 cards', () => {
@@ -318,7 +320,7 @@ describe('Engineering exam-topic registry', () => {
     // 254 June questions and the two deferred papers' 18.
     expect(subjectAtlasStats('engineering')).toMatchObject({
       questions: 272,
-      topics: 74,
+      topics: 36,
       yearMin: 2010,
       yearMax: 2026,
     });

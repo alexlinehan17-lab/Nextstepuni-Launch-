@@ -293,6 +293,16 @@ PART_NUMBER = {'I': 'I', 'II': 'II', 'III': 'III',
 
 def part_token(m):
     return PART_NUMBER[(m.group(1) or m.group(2)).upper()]
+
+
+# A part head the paper MISPRINTS, keyed by sitting and the head's (page, y),
+# with the part it heads: Latvian 2014 prints its essay head "II daļa (40
+# punkti)" (p4 y618) under the commentary's own "II daļa (30 punkti)"; the
+# scheme heads it "III daļa (40 punkti)", and every other sitting and the
+# paper's own structure make it Part III (coordinator ruling, 20 Nov 2026).
+# Only the part the walker assigns changes; the printed text is untouched
+# (the cards quote it).
+MISPRINTED_PART = {('latvian', 2014, 'hl'): {(4, 618): 'III'}}
 # The listening booklet's part tab, printed in the page margin.
 AURAL_TAB = re.compile(r'^Section\s+([A-F])\s*$', re.I)
 LETTER = re.compile(r'^\(?\s*([a-l])\s*\)\s*(.*)$', re.I)
@@ -365,6 +375,7 @@ class LtPaper:
         if self.path is None:
             raise FileNotFoundError(f'no Lithuanian paper for {year} {level}')
         self.aural_path = paper_path(year, level, 'A00', subject)
+        self._misprinted = MISPRINTED_PART.get((subject, year, level), {})
         self.lines = [l for l in read_lines(self.path, subject)
                       if not ANSWER_BOX.match(l.text)]
         self.flags = []
@@ -393,9 +404,14 @@ class LtPaper:
         """
         if any(SECTION_TAB.match(l.text) for l in self.lines):
             return 'new'
-        parts = {part_token(PART_OLD.match(l.text)) for l in self.lines
+        parts = {self._part_of(l, PART_OLD.match(l.text)) for l in self.lines
                  if PART_OLD.match(l.text)}
         return 'old2' if len(parts) == 2 else 'old3'
+
+    def _part_of(self, line, pm):
+        """The part a head line opens: its printed numeral, unless the sitting
+        misprints that head (MISPRINTED_PART)."""
+        return self._misprinted.get((line.page, round(line.y)), part_token(pm))
 
     # ------------------------------------------------------------ layout ---
     def _letter_column(self):
@@ -551,7 +567,7 @@ class LtPaper:
         for line in self.lines:
             pm = PART_OLD.match(line.text)
             if pm:
-                seen = part_token(pm)
+                seen = self._part_of(line, pm)
                 self._part_numbered.setdefault(seen, False)
                 continue
             if seen and NUMBERED.match(line.text):
@@ -570,7 +586,7 @@ class LtPaper:
             pm = PART_OLD.match(line.text)
             if pm:
                 close()
-                part, q, letter = part_token(pm), None, None
+                part, q, letter = self._part_of(line, pm), None, None
                 last_y = None
                 continue
             if part is None or q is None:
