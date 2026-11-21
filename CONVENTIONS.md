@@ -413,9 +413,16 @@ InnovationZone mounts `<MarkBank studio />`, so the deck, the student's memory o
   (what the paper numbers: Question 5, Section B, Cuid A), extract (what is heard as one piece). Parts are put in
   printed order from `questionRef`, never deck order. Keep writing `questionRef`, `audioMaterial.label`, `section` and
   `stem` as the existing cards of that subject do, or the Studio will file the card oddly.
-- **A new subject with recordings** must be added to `LISTENING_SUBJECT_IDS`, with its own rule in `place()` if the
-  general one (the card's `section`, one extract a section) does not suit its paper.
-  `test/listeningStudioModel.test.ts` fails until it is listed, and fails if any recording card is left unplaced.
+- **A new subject with recordings** must be added to `LISTENING_SUBJECT_IDS` and to `SEC_SUBJECT_CODES` (the SEC's
+  subject code in its recordings' file ids, e.g. Music is `067`), with its own rule in `place()` if the general one
+  (the card's `section`, one extract a section) does not suit its paper. `test/listeningStudioModel.test.ts` fails
+  until it is listed, fails on a wrong code, and fails if any recording card is left unplaced.
+- **Front page: the Year wall** (approved by Alex, 20 Nov 2026). The Studio fills the screen from the moment it opens.
+  The sheet holds the student's listening subjects as tabs, the level, and one tile for each paper showing how much of
+  it has been sat; "All subjects" turns the sheet into the subject screen. The ground holds the chosen paper and its
+  sections. The last section opened is kept per student on the device (`ls:left-off:<uid>`) and offered as "Where
+  you left off". The subject screen counts hosted recordings from `hostedAudio.json` by subject code, so it needs no
+  deck; totals per subject are deliberately not shown there, because they would need every deck loaded.
 - **Marking is never re-implemented.** Each part mounts the reviewer in place: `<SessionScreen embedded={{ ... }}>`
   draws only that card's scheme, with the same controls and arithmetic, and reports the result a commit would
   record. A new card kind or scheme treatment therefore needs no Studio work. The host saves one result per part and
