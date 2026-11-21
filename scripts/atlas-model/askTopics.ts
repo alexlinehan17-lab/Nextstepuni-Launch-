@@ -55,7 +55,10 @@ export const MODEL_SUBJECTS: readonly string[] = ['biology', 'chemistry', 'agric
   'business', 'accounting', 'economics', 'politics-and-society', 'religious-education', 'history',
   'maths', 'physics', 'lcvp', 'russian', 'home-economics', 'japanese',
   'geography', 'construction-studies', 'engineering', 'dcg', 'technology', 'computer-science', 'applied-maths',
-  'physical-education', 'art', 'classical-studies', 'music'];
+  'physical-education', 'art', 'classical-studies', 'music',
+  'english', 'irish', 'french', 'german', 'spanish', 'italian', 'latin', 'ancient-greek', 'arabic', 'bulgarian',
+  'croatian', 'czech', 'danish', 'dutch', 'estonian', 'finnish', 'hungarian', 'latvian', 'lithuanian', 'maltese',
+  'mandarin-chinese', 'modern-greek', 'polish', 'portuguese', 'romanian', 'slovakian', 'slovenian', 'swedish', 'ukrainian'];
 export const filingFor = (subject: string): SubjectFiling | null => Object.values(FILINGS).find(f => f.subject === subject) ?? null;
 
 const curriculumLabel = new Map(CURRICULUM.flatMap(c => c.strands.flatMap(s => s.subtopics.map(t => [t.id, t.name] as const))));

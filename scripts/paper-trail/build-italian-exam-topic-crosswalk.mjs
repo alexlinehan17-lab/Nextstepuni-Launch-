@@ -41,6 +41,22 @@ const topicIndex = new Map(referenceTopics.map((topic, index) => [topic.id, inde
 
 if (referenceTopics.length !== 24) throw new Error(`Expected 24 Italian topics, found ${referenceTopics.length}`);
 
+// NextStepUni's own Higher heading after the 24 captured topics (coordinator ruling, 20 Nov), like Spanish's Historic
+// Texts extension: the single Mark Bank / Topic Atlas model files every part on a prescribed book that is no longer set
+// here (scripts/atlas-model/filings/italian.json), so no part sits under a heading named for a current book. It is a
+// runtime heading only: the captured hierarchy, its counts and the question tags below never use it.
+const EARLIER_SET_TEXTS_TOPIC = {
+  id: 'italian-higher-literature-earlier-set-texts',
+  level: 'higher',
+  label: 'Literature: earlier set texts',
+  sourcePath: '/nextstepuni/italian/higher/literature-earlier-set-texts',
+  mockQuestionCount: 0,
+  providerSampleQuestionCount: 0,
+  reportedQuestionCount: 0,
+};
+const runtimeTopics = [...referenceTopics, EARLIER_SET_TEXTS_TOPIC];
+const runtimeTopicIndex = new Map(runtimeTopics.map((topic, index) => [topic.id, index]));
+
 const IDS = {
   higher: {
     conversations: 'italian-higher-aural-conversations',
@@ -94,6 +110,7 @@ const CURRICULUM_CROSSWALK = {
   [IDS.higher.formal]: ['italian-6-2'],
   [IDS.higher.guided]: ['italian-6-1'],
   [IDS.higher.opinion]: ['italian-6-0'],
+  [EARLIER_SET_TEXTS_TOPIC.id]: ['italian-2-1'],
   [IDS.ordinary.competitions]: ['italian-5-4'],
   [IDS.ordinary.general]: ['italian-5-4'],
   [IDS.ordinary.jobs]: ['italian-5-4'],
@@ -839,9 +856,10 @@ const runtime = {
   groups: Object.entries(reference.variants).map(([level, variant]) => [
     level === 'higher' ? 'h' : 'o',
     variant.label,
-    variant.topics.map(topic => topicIndex.get(topic.id)),
+    [...variant.topics, ...(level === 'higher' ? [EARLIER_SET_TEXTS_TOPIC] : [])]
+      .map(topic => runtimeTopicIndex.get(topic.id)),
   ]),
-  topics: referenceTopics.map(topic => [
+  topics: runtimeTopics.map(topic => [
     topic.id,
     topic.label,
     topic.sourcePath,

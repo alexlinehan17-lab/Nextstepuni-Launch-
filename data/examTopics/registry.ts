@@ -269,6 +269,8 @@ interface MusicRuntime {
     string,
     number[],
   ]>;
+  /** A deferred sitting's own booklets: [h/o, e/i, year-2000, booklet file id, printed number, topic indexes] */
+  deferredQuestionMappings?: Array<['h' | 'o', 'e' | 'i', number, string, string, number[]]>;
 }
 
 interface IrishRuntime {
@@ -4268,6 +4270,20 @@ for (const [
       'single',
       lang,
     ),
+    topicIndexes.map(topicIndex => {
+      const topicId = musicRuntime.topics[topicIndex]?.[0];
+      if (!topicId) throw new Error(`Unknown Music runtime topic index: ${topicIndex}`);
+      return topicId;
+    }),
+  );
+}
+// A deferred Music sitting's questions are keyed by their own booklet
+// ("LC067ALP008EV-deferred.pdf"), never June's, as German and Spanish key theirs:
+// the deferred listening paper sets its works in its own order.
+for (const [levelCode, langCode, yearOffset, fileid, n, topicIndexes] of musicRuntime.deferredQuestionMappings ?? []) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey(musicRuntime.subjectId, levelCode === 'h' ? 'higher' : 'ordinary', yearOffset + 2000,
+      'main', fileid, n, 'single', langCode === 'e' ? 'ev' : 'iv'),
     topicIndexes.map(topicIndex => {
       const topicId = musicRuntime.topics[topicIndex]?.[0];
       if (!topicId) throw new Error(`Unknown Music runtime topic index: ${topicIndex}`);

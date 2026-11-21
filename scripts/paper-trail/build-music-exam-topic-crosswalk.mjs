@@ -186,7 +186,9 @@ const composingCanonical = [
 const SET_WORKS = {
   2010: ['deane', 'berlioz', 'mozart', 'beatles'],
   2011: ['bach', 'barry', 'tchaikovsky', 'mercury'],
-  2012: ['mozart', 'berlioz', 'deane', 'beatles'],
+  // 2012 sets Bohemian Rhapsody, Romeo and Juliet, the Bach cantata and the Barry quartet, as each question's opening
+  // line prints (the wave file was corrected in 4b23e8fbd; this keeps the builder from writing the old group back).
+  2012: ['mercury', 'tchaikovsky', 'bach', 'barry'],
   2013: ['tchaikovsky', 'bach', 'barry', 'mercury'],
   2014: ['mozart', 'beatles', 'berlioz', 'deane'],
   2015: ['deane', 'berlioz', 'mozart', 'beatles'],
@@ -202,6 +204,26 @@ const SET_WORKS = {
   2025: ['tchaikovsky', 'barry', 'mercury', 'bach'],
   2026: ['berlioz', 'mozart', 'deane', 'beatles'],
 };
+// The SEC's deferred sittings set their own order of works, printed at the head of each listening question
+// (2022: the deferred booklet's own headings, lifted for its cards; 2023: the English and Irish text layers).
+const DEFERRED_SET_WORKS = {
+  2022: ['berlioz', 'beatles', 'mozart', 'deane'],
+  2023: ['mercury', 'bach', 'tchaikovsky', 'barry'],
+};
+// The deferred booklets the Paper Trail index carries (Higher only; 2022 has no Irish version), each its own
+// paper ("LC067ALP008EV-deferred.pdf"), numbered as June's. Page starts read off every booklet's pages.
+const DEFERRED_BOOKLETS = [[2023, 'ev'], [2023, 'iv'], [2022, 'ev']].flatMap(([year, lang]) => (
+  ['006', '008'].map(component => ({
+    year,
+    level: 'higher',
+    lang,
+    component,
+    fileid: `LC067ALP${component}${lang.toUpperCase()}-deferred.pdf`,
+    sitting: 'deferred',
+  }))
+));
+const DEFERRED_STARTS = { '006': [4, 6, 8, 12, 14, 16], '008': [3, 8, 10, 12, 14, 20] };
+const setWorksFor = paper => (paper.sitting === 'deferred' ? DEFERRED_SET_WORKS : SET_WORKS)[paper.year];
 const SET_WORK_CANONICAL = {
   mozart: 'music-2-9',
   berlioz: 'music-2-10',
@@ -215,7 +237,10 @@ const SET_WORK_CANONICAL = {
 
 const paperIdentity = paper => `${paper.year}|${paper.fileid}`;
 const baselineByIdentity = new Map(baseline.map(paper => [paperIdentity(paper), paper]));
-const papers = reconciliation.inventory.map(source => {
+const papers = [
+  ...reconciliation.inventory.map(source => ({ ...source, sitting: 'main' })),
+  ...DEFERRED_BOOKLETS,
+].map(source => {
   const component = source.component;
   const stored = baselineByIdentity.get(paperIdentity(source));
   let q;
@@ -226,8 +251,8 @@ const papers = reconciliation.inventory.map(source => {
   } else if (component === '007') {
     q = [{ n: '1', primary: 'music-2-8' }];
   } else if (component === '008') {
-    const works = SET_WORKS[source.year];
-    if (!works) throw new Error(`Missing Music set-work sequence for ${source.year}`);
+    const works = setWorksFor(source);
+    if (!works) throw new Error(`Missing Music set-work sequence for ${source.year} (${source.sitting})`);
     q = [
       ...works.map((work, index) => ({ n: String(index + 1), primary: SET_WORK_CANONICAL[work] })),
       { n: '5', primary: 'music-2-2' },
@@ -246,16 +271,21 @@ const papers = reconciliation.inventory.map(source => {
     fileid: source.fileid,
     paperKey: 'single',
     component,
+    sitting: source.sitting,
     q,
   };
 }).sort((a, b) => (
   b.year - a.year
   || a.level.localeCompare(b.level)
+  || (a.sitting === 'deferred') - (b.sitting === 'deferred')
   || a.component.localeCompare(b.component)
   || a.lang.localeCompare(b.lang)
 ));
 
-if (papers.length !== 178) throw new Error(`Expected 178 Music variants, found ${papers.length}`);
+const junePapers = papers.filter(paper => paper.sitting === 'main');
+const deferredPapers = papers.filter(paper => paper.sitting === 'deferred');
+if (junePapers.length !== 178) throw new Error(`Expected 178 June Music variants, found ${junePapers.length}`);
+if (deferredPapers.length !== 6) throw new Error(`Expected 6 deferred Music variants, found ${deferredPapers.length}`);
 
 let preservedBaselineCards = 0;
 for (const expected of baseline) {
@@ -399,8 +429,8 @@ const questionFromHeading = (heading, component) => {
     ?? null;
 };
 
-const papersForReference = (year, level, component) => papers.filter(paper => (
-  paper.year === year && paper.level === level && paper.component === component
+const papersForReference = (year, level, component, sitting) => papers.filter(paper => (
+  paper.year === year && paper.level === level && paper.component === component && paper.sitting === sitting
 ));
 const associations = [];
 const referencedTopicsByLogicalCard = new Map();
@@ -410,17 +440,18 @@ for (const topic of referenceTopics) {
     const sitting = sittingFromHeading(heading);
     const component = componentFromHeading(heading);
     const n = questionFromHeading(heading, component);
-    const candidates = sitting === 'main' && n
-      ? papersForReference(year, topic.level, component).filter(paper => paper.q.some(q => q.n === n))
+    // A deferred heading joins only the deferred sitting's own booklet, never June's question of the same number.
+    const candidates = sitting !== 'sample' && n
+      ? papersForReference(year, topic.level, component, sitting).filter(paper => paper.q.some(q => q.n === n))
       : [];
     let reason;
-    if (sitting !== 'main') reason = `The ${sitting} heading is retained, but no matching entitled ${sitting} booklet is present in the local corpus.`;
+    if (sitting !== 'main' && !candidates.length) reason = `The ${sitting} heading is retained, but no matching entitled ${sitting} booklet is present in the local corpus.`;
     else if (year < 2010) reason = 'The factual heading predates the entitled 2010–2026 local corpus.';
     else if (component === 'U00') reason = 'The 2019 practical section identity is retained without joining it to the differently structured 2013–2016 unprepared-test booklets.';
     else if (!candidates.length) reason = 'No entitled local booklet/card with this exact level, year, component and question identity is present.';
 
     if (!reason) {
-      const logicalKey = `${topic.level}|${year}|${component}|${n}`;
+      const logicalKey = `${topic.level}|${year}|${sitting}|${component}|${n}`;
       const ids = referencedTopicsByLogicalCard.get(logicalKey) ?? [];
       if (!ids.includes(topic.id)) ids.push(topic.id);
       referencedTopicsByLogicalCard.set(logicalKey, ids);
@@ -457,7 +488,7 @@ const baseTopicIdsForPaper = paper => {
   ));
   const levelIds = paper.level === 'higher' ? H : O;
   return [
-    ...SET_WORKS[paper.year].map(work => levelIds[work]),
+    ...setWorksFor(paper).map(work => levelIds[work]),
     ...(paper.level === 'higher' ? [[levelIds.irish, levelIds.irishEssay]] : [[levelIds.irish]]),
     [levelIds.aural],
   ];
@@ -468,7 +499,7 @@ const localQuestionMappings = papers.flatMap(paper => {
   return paper.q.map((question, index) => {
     const baseTopicIds = Array.isArray(base[index]) ? base[index] : [base[index]];
     const referenced = referencedTopicsByLogicalCard.get(
-      `${paper.level}|${paper.year}|${paper.component}|${question.n}`,
+      `${paper.level}|${paper.year}|${paper.sitting}|${paper.component}|${question.n}`,
     ) ?? [];
     const topicIds = [...new Set([...referenced, ...baseTopicIds])]
       .sort((a, b) => topicIndex.get(a) - topicIndex.get(b));
@@ -485,6 +516,7 @@ const localQuestionMappings = papers.flatMap(paper => {
       fileid: paper.fileid,
       paperKey: paper.paperKey,
       component: paper.component,
+      ...(paper.sitting === 'deferred' ? { sitting: 'deferred' } : {}),
       n: question.n,
       topicIds,
       provenance: referenced.length ? 'reference+official-paper' : 'official-paper-retained',
@@ -496,11 +528,15 @@ const identities = localQuestionMappings.map(mapping => `${mapping.year}|${mappi
 if (new Set(identities).size !== identities.length) {
   throw new Error('Duplicate Music file/question mapping');
 }
-if (localQuestionMappings.length !== 978) {
-  throw new Error(`Expected 978 Music physical mappings, found ${localQuestionMappings.length}`);
+const deferredQuestionMappings = localQuestionMappings.filter(mapping => mapping.sitting === 'deferred');
+if (localQuestionMappings.length - deferredQuestionMappings.length !== 978) {
+  throw new Error(`Expected 978 June Music physical mappings, found ${localQuestionMappings.length - deferredQuestionMappings.length}`);
+}
+if (deferredQuestionMappings.length !== 36) {
+  throw new Error(`Expected 36 deferred Music physical mappings, found ${deferredQuestionMappings.length}`);
 }
 
-const tagPapers = papers.map(({ component: _component, ...paper }) => paper);
+const tagPapers = papers.map(({ component: _component, sitting: _sitting, ...paper }) => paper);
 fs.writeFileSync(TAGS_PATH, `${JSON.stringify(tagPapers, null, 2)}\n`);
 
 const fullPages = (start, end = start) => Array.from(
@@ -545,7 +581,7 @@ const labelsFor = paper => {
       mozart: 'Mozart', berlioz: 'Berlioz', deane: 'Deane', beatles: 'The Beatles',
       mercury: 'Freddie Mercury', tchaikovsky: 'Tchaikovsky', barry: 'Gerald Barry', bach: 'Bach',
     };
-    return [...SET_WORKS[paper.year].map(work => display[work]), 'Irish Music', 'Aural Skills'];
+    return [...setWorksFor(paper).map(work => display[work]), 'Irish Music', 'Aural Skills'];
   }
   return paper.q.map(question => `Unprepared Test ${question.n}`);
 };
@@ -562,11 +598,13 @@ const buildHostedQuestions = paper => {
       label: `Unprepared Test ${paper.q[index].n}`,
     }));
   }
-  const starts = paper.component === '006'
-    ? composingStarts(paper.year)
-    : paper.component === '007'
-      ? [paper.year === 2026 ? 4 : 2]
-      : listeningStarts(paper.year, paper.level);
+  const starts = paper.sitting === 'deferred'
+    ? DEFERRED_STARTS[paper.component]
+    : paper.component === '006'
+      ? composingStarts(paper.year)
+      : paper.component === '007'
+        ? [paper.year === 2026 ? 4 : 2]
+        : listeningStarts(paper.year, paper.level);
   const labels = labelsFor(paper);
   return paper.q.map((question, index) => {
     const start = starts[index];
@@ -631,7 +669,7 @@ for (const paper of papers) {
 const matched = associations.filter(association => association.resolution === 'matched');
 const blocked = associations.filter(association => association.resolution === 'source-blocked');
 const logicalQuestions = new Set(localQuestionMappings.map(mapping => (
-  `${mapping.level}|${mapping.year}|${mapping.component}|${mapping.n}`
+  `${mapping.level}|${mapping.year}|${mapping.sitting ?? 'main'}|${mapping.component}|${mapping.n}`
 )));
 const summary = {
   referenceTopics: referenceTopics.length,
@@ -645,6 +683,8 @@ const summary = {
   sourceBlockedAssociations: blocked.length,
   localPaperVariants: papers.length,
   localPhysicalMappings: localQuestionMappings.length,
+  deferredPaperVariants: deferredPapers.length,
+  deferredPhysicalMappings: deferredQuestionMappings.length,
   distinctStudentFacingQuestions: logicalQuestions.size,
   referenceMappedLocalQuestions: localQuestionMappings.filter(mapping => mapping.provenance.startsWith('reference')).length,
   retainedLocalQuestions: localQuestionMappings.filter(mapping => !mapping.provenance.startsWith('reference')).length,
@@ -675,7 +715,8 @@ const output = {
     fileIdentity: 'Every mapping carries the exact SEC booklet component because Music components restart question numbering under one legacy paper key.',
     historicSetWorks: 'Four retired set-work shelves per level and the Higher listening elective are explicit NextStepUni archive topics; current reference labels are never stretched across a different work.',
     practicals: 'The frozen 2013–2016 unprepared-test cards remain under the broad Practicals shelf. The reference-only 2019 section headings remain source-blocked until the matching entitled booklet is available.',
-    anchorConfidence: 'All 178 paper booklets and 978 paper mappings, plus all 775 stored scheme mappings, have been visually swept. Seventeen booklets remain honest paper-only cases pending entitled question-specific evidence.',
+    anchorConfidence: 'All 178 June paper booklets and 978 paper mappings, plus all 775 stored scheme mappings, have been visually swept. Seventeen of those booklets remain honest paper-only cases pending entitled question-specific evidence.',
+    deferredSittings: 'The six 2022 and 2023 Higher deferred booklets (36 paper mappings) are their own papers, numbered as June\'s: each question starts at the page that prints its heading (checked on every booklet), listening questions carry the deferred sitting\'s own set works, deferred factual headings join only these booklets, and all six are paper-only.',
     existingAnswerSidecars: 'Existing high-confidence answer crops remain in scripts/paper-trail/answers and are counted as independent Storage-side evidence; they are never copied into paper-only hosted anchors.',
   },
   summary,
@@ -723,11 +764,20 @@ const runtime = {
       ? association.targets.find(target => target.lang === 'ev')?.fileid ?? association.targets[0]?.fileid ?? ''
       : '',
   ]),
-  questionMappings: localQuestionMappings.map(mapping => [
+  questionMappings: localQuestionMappings.filter(mapping => !mapping.sitting).map(mapping => [
     mapping.level === 'higher' ? 'h' : 'o',
     mapping.lang === 'ev' ? 'e' : 'i',
     mapping.year - 2000,
     componentCode(mapping.component),
+    mapping.n,
+    mapping.topicIds.map(id => topicIndex.get(id)),
+  ]),
+  // A deferred sitting's questions are keyed by their own booklet, never June's (as German and Spanish key theirs).
+  deferredQuestionMappings: deferredQuestionMappings.map(mapping => [
+    mapping.level === 'higher' ? 'h' : 'o',
+    mapping.lang === 'ev' ? 'e' : 'i',
+    mapping.year - 2000,
+    mapping.fileid,
     mapping.n,
     mapping.topicIds.map(id => topicIndex.get(id)),
   ]),
