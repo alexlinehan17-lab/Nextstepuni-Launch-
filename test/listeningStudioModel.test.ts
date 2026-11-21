@@ -17,8 +17,9 @@ import { CARDS as GERMAN_HIGHER } from '../components/MarkBank/cards/german/high
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
 import {
-  LISTENING_SUBJECT_IDS, listeningSittings, partLabel, type StudioSitting,
+  LISTENING_SUBJECT_IDS, SEC_SUBJECT_CODES, hostedRecordingCount, listeningSittings, partLabel, type StudioSitting,
 } from '../components/ListeningStudio/model';
+import HOSTED_AUDIO from '../components/MarkBank/hostedAudio.json';
 
 const sitting = (sittings: StudioSitting[], year: number, deferred = false) =>
   sittings.find(candidate => candidate.year === year && candidate.deferred === deferred) as StudioSitting;
@@ -118,8 +119,19 @@ describe('every deck', () => {
       if (JSON.stringify(placed.map(card => card.id).sort()) !== JSON.stringify(recorded)) {
         problems.push(`${deck.label}: ${recorded.length} recording cards, ${placed.length} placed`);
       }
+      // The front page counts a subject's hosted recordings by the SEC's subject code in the file id.
+      const code = (SEC_SUBJECT_CODES as Record<string, string | undefined>)[deck.subjectId];
+      for (const card of placed) {
+        if (!code || !card.audioMaterial.secFileid.startsWith(`LC${code}`)) {
+          problems.push(`${card.id}: file id ${card.audioMaterial.secFileid} does not carry the subject code LC${code}`);
+        }
+      }
       for (const paper of papers) {
         if (!paper.sections.length) problems.push(`${paper.key}: no sections`);
+        if (paper.recordings.total < 1 || paper.recordings.held > paper.recordings.total
+          || paper.playsInApp !== (paper.recordings.held === paper.recordings.total)) {
+          problems.push(`${paper.key}: recordings ${paper.recordings.held} of ${paper.recordings.total}`);
+        }
         for (const section of paper.sections) {
           if (!section.title || !section.extracts.length) problems.push(`${section.key}: empty section`);
           if (section.cards.length !== section.extracts.reduce((count, extract) => count + extract.cards.length, 0)) {
@@ -141,5 +153,10 @@ describe('every deck', () => {
     // grouping rule if the general one does not suit its paper).
     expect([...withRecordings].sort()).toEqual([...LISTENING_SUBJECT_IDS].sort());
     expect(sittings).toBeGreaterThanOrEqual(297);
+    // Every hosted recording is counted under exactly one subject.
+    const audio = (HOSTED_AUDIO as string[]).filter(path => path.startsWith('audio/'));
+    expect(LISTENING_SUBJECT_IDS.reduce((sum, id) => sum + hostedRecordingCount(id), 0)).toBe(audio.length);
+    expect(hostedRecordingCount('french')).toBeGreaterThanOrEqual(17);
+    expect(hostedRecordingCount('biology')).toBe(0);
   }, 240_000);
 });

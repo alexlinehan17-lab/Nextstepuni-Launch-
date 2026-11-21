@@ -695,7 +695,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-zinc-100 dark:bg-zinc-800', iconColor: 'text-zinc-900 dark:text-zinc-200',
             accentBarColor: 'bg-zinc-800', tagBg: 'bg-zinc-100 dark:bg-zinc-800', tagText: 'text-zinc-900 dark:text-zinc-300',
             hoverBorder: 'hover:border-zinc-400/50 dark:hover:border-zinc-500/40',
-            component: <MarkBank studio examDate={subjectProfile?.examStartDate} uid={user?.uid} studentSubjects={subjectProfile?.subjects} />,
+            component: <MarkBank studio examDate={subjectProfile?.examStartDate} uid={user?.uid} studentSubjects={subjectProfile?.subjects} onLeaveStudio={() => nav.navigateToInnovationZone()} />,
         },
         {
             id: 'paper-trail', title: 'Paper Trail', description: 'Every SEC past paper and marking scheme — three taps away.', icon: FileSearch, needsProfile: false,
