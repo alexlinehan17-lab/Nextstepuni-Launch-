@@ -133,6 +133,10 @@ BARE_TARIFF = re.compile(r'^\d{1,3}\s*marks?\s*(?:\(\s*[\d\s+xX×]+\s*\))?\s*$',
 # "3 (a)", "2 (a) Six of 6 marks", "1(a) 8 marks", "4 (a) Che non era
 # cambiato niente". Only a number followed directly by a bracketed letter.
 NUM_LETTER_MARK = re.compile(r'^(\d{1,2})\s*\(\s*([a-h])\s*\)\s*(.*)$', re.S)
+# And with no stop before a count: 2015 Ordinary prints "2 Three of 6 marks
+# (2+2+2)" and "3 Two of: 4 marks (2+2)". Only a number followed by a count.
+NUM_COUNT_MARK = re.compile(r'^(\d{1,2})()\s+((?:any\s+)?(?:one|two|three|four|five|six|seven|eight)\s+of\b.*)$',
+                            re.S | re.I)
 
 # The tariff, wherever in the block it is first printed. The split may be a sum
 # ("(3+3+3)"), a product ("(8x2 marks)") or absent.
@@ -594,10 +598,10 @@ class ItScheme:
             s = self.lines[i].strip()
             if not s or PAGE.match(s):
                 continue
-            m = NUM_MARK.match(s) or NUM_LETTER_MARK.match(s)
+            m = NUM_MARK.match(s) or NUM_LETTER_MARK.match(s) or NUM_COUNT_MARK.match(s)
             if m:
                 item = int(m.group(1))
-                heads.append((i, item, m.group(2), m.group(3)))
+                heads.append((i, item, m.group(2) or None, m.group(3)))
                 continue
             m = LETTER_MARK.match(s)
             if m and item is not None:

@@ -227,6 +227,22 @@ def options_card(P, S, year, level, section, item, letter, cards):
 # Cards whose rows the reader cannot settle, set here from the printed lines
 # (each piece asserted in the scheme): the review of 20 Nov.
 READING_ROWS = {
+    # 2015 Ordinary B4(a): the paper's table asks for the paragraph that
+    # mentions each of five items, and the scheme answers "2, 3, 1, 7, 5 8
+    # marks (2+2+2+1+1)", one number per item in the table's order. The items
+    # are printed in the table (as text the PDF's text layer does not carry):
+    # each row names its item in its note.
+    (2015, 'ol', 'B4', None, 'a'): {
+        'tariff': 'fixed',
+        'rows': [{'id': 'r-1', 'kind': 'point', 'marks': 2, 'verbatim': '2',
+                  'contextNote': ('The scheme prints “2, 3, 1, 7, 5 8 marks (2+2+2+1+1)”: the paragraph for each '
+                                  'item in the paper’s table, in its order, 2 marks each for the first three and 1 '
+                                  'mark each for the last two. This row: Swimming suits.')},
+                 {'id': 'r-2', 'kind': 'point', 'marks': 2, 'verbatim': '3', 'contextNote': 'Sunglasses.'},
+                 {'id': 'r-3', 'kind': 'point', 'marks': 2, 'verbatim': '1', 'contextNote': 'Camera.'},
+                 {'id': 'r-4', 'kind': 'point', 'marks': 1, 'verbatim': '7', 'contextNote': 'Sun cream.'},
+                 {'id': 'r-5', 'kind': 'point', 'marks': 1, 'verbatim': '5', 'contextNote': 'Hat.'}],
+        'check': ['2, 3, 1, 7, 5 8 marks (2+2+2+1+1)']},
     # 2015 Higher A Q5 "Any four of 20 marks (5+5+5+5)": the scheme prints its
     # points under two headings, "Librerie da spiaggia" and (after a page
     # break) "Libri in soccorso", and the paper heads two of its four answer
@@ -464,6 +480,9 @@ def _unweld(S, year, level):
 # arithmetic is re-run.
 SPLIT_PARTS = {
     (2018, 'ol', 'B4', 3, None): ('3rd prize A book (1m) written your favourite Writer/ of your choice (1m)', 2),
+    # 2015 Ordinary A2 1(b) "Where and when did the “greeters” movement
+    # start?": "New York 2 marks" over "1992 1 mark".
+    (2015, 'ol', 'A2', 1, 'b'): ('1992', 1),
 }
 
 
@@ -476,7 +495,7 @@ def _split_parts(S, year, level):
         p = ask.parts[0]
         assert len(ask.parts) == 1 and len(p.rungs) == 1 and p.rungs[0][1] == marks \
             and text.startswith(p.rungs[0][0]), (section, item, p.rungs)
-        it_writing.Scheme(year, level).check(f'{text} {marks} marks')
+        it_writing.Scheme(year, level).check(f'{text} {marks} mark')
         q = copy.copy(p)
         q.total, q.split, q.claim, q.directive = marks, None, None, None
         q.stated, q.answers, q.rungs, q.notation = text, [text], [], f'{marks} marks'

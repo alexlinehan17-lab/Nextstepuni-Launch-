@@ -121,7 +121,9 @@ RULED_MARKER = re.compile(r'^_{3,}\s*[a-h]\s*\)')
 # for an open square, and it is where the candidate writes rather than part of
 # the ask — the same thing a ruled line is. Left in, the glyph gate rightly
 # refused thirty-eight Ordinary cards for carrying an unreadable character.
-TICK_BOX = re.compile('[\uf063\uf0a8\u2610\u25a1]')
+# 2015 Ordinary sets the box in Wingdings-Regular as U+F06F (checked against
+# the rendered page: an empty square).
+TICK_BOX = re.compile('[\uf063\uf06f\uf0a8\u2610\u25a1]')
 # A multiple-choice option inside the aural Section A, and the Roman numerals
 # the written paper prints for its circle-the-answer asks. Neither is an ask.
 ROMAN = re.compile(r'^\(\s*(i{1,3}|iv|v)\s*\)\s*(.*)$', re.S)
