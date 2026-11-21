@@ -5362,7 +5362,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which personal qualities ensure a positive hosting experience? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["You need to have an open mind","You need to have lots of patience/Be very patient"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Patience/Patient 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["You need to have an open mind","You need to have lots of patience/Be very patient"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5507,7 +5507,7 @@ export const CARDS: SecCard[] = [
     questionText: "What were Monica’s tasks? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["Administration/Admin tasks/office work (secretarial work)","Replying to emails (Write/respond to emails)","Organising the timetables for the language courses","Booking flights for guest the guests attending the events","Booking accommodation, the guests/participants attending the events"],"perOption":4} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Booking flights/Booking accommodation 3 marks)”; “(Organise the language courses 3 marks)”; “(Organise the courses 2 marks)”; “Manage the guests/participants attending the events 2 marks)”; “(Digital tasks 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"options":["Administration/Admin tasks/office work (secretarial work)","Replying to emails (Write/respond to emails)","Organising the timetables for the language courses","Booking flights for guest the guests attending the events","Booking accommodation, the guests/participants attending the events"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5682,7 +5682,7 @@ export const CARDS: SecCard[] = [
     questionText: "When did Paolo work in the airport? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["In the evenings (shiftwork)","At the weekend/On Saturdays and Sundays"],"perOption":4} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(On Saturdays/On Sundays 3 marks)”; “When he stopped playing (semi- professionally football) 1 mark)”; “(From) when he was 22 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"options":["In the evenings (shiftwork)","At the weekend/On Saturdays and Sundays"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5717,7 +5717,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why did Paolo choose to study Sports Psychology? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["He wanted to help players/ sportspeople to improve/get better","He wanted to help players/sportspeople to overcome difficulties (they encounter)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(He wanted to help players/sportspeople 2 marks)”; “(Because of the difficulties he had 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["He wanted to help players/ sportspeople to improve/get better","He wanted to help players/sportspeople to overcome difficulties (they encounter)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5787,7 +5787,7 @@ export const CARDS: SecCard[] = [
     questionText: "What do professional sports people find difficult? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["Finding the time to train and study","Learning from difficult moments","Learning from losing (a match)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Finding the time to train/study 4 marks)”; “(Studying and training 4 marks)”; “(Training in difficult moments 4 marks)”; “(When they lose a match 4 marks)”; “(Finding time/studying/training 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["Finding the time to train and study","Learning from difficult moments","Learning from losing (a match)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5822,7 +5822,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where has Paolo been giving his talks lately?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "In primary", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "In primary", marks: 2, contextNote: "The scheme also prints, for shorter answers: “(Around Italy/Conferences/Workshops 2 marks)”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "secondary", marks: 2 },
     { id: "r-1-3", kind: "point", verbatim: "schools", marks: 4 },
     ],
@@ -6539,7 +6539,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one detail about the final.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["It was (held) in May","300 students participated in it","The participants come from all over Italy","It took place during the weekend/at the weekend","At the beginning there was a bit of tension","There were plenty of fun moments (at it)","They met students/boys/girls from everywhere in Italy (at it)","They made friends / friendships (with other boys and girls from other schools)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(It went on all week 3 marks)”; “(30 students participated in it / Students solved maths problems (at it)) 3 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["It was (held) in May","300 students participated in it","The participants come from all over Italy","It took place during the weekend/at the weekend","At the beginning there was a bit of tension","There were plenty of fun moments (at it)","They met students/boys/girls from everywhere in Italy (at it)","They made friends / friendships (with other boys and girls from other schools)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6574,7 +6574,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is provided by the organisation for those who get through to the international competition? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["(Their) Travel/Trip/Food/ Accommodation","A €100 book voucher/€100 gift card"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(€100/voucher for a bookshop/books 4 marks”; “(Their) expenses 3 marks)”; “(Money/Voucher 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["(Their) Travel/Trip/Food/ Accommodation","A €100 book voucher/€100 gift card"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6647,7 +6647,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Samuele plan to do when he is in Wexford? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Water/Aquatic (sports)","Enjoy the countryside/Enjoy nature"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Sport 3 marks)”; “(English/Classes/Study 3 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Water/Aquatic (sports)","Enjoy the countryside/Enjoy nature"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6682,7 +6682,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which sports are available in the afternoon? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Sailing","Canoeing","Horse-riding"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Boat 3 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Sailing","Canoeing","Horse-riding"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6752,7 +6752,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one detail about Città Pedala.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["It is an initiative/event for cycling enthusiasts/those who are passionate about cycling","It is a cycle along the (seafront) promenade","It is an initiative/event where you can enjoy the sea view without traffic","It is a 5km cycle","The cycle stretches from the old town centre to the beach"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(A cycling event/For cycling (enthusiasts) 4 marks)”; “(It promotes cycling without traffic/with a sea view 4 marks)”; “(It is 5 km (long) 4 marks)”; “(Beach 2 marks)”; “(It is an initiative/event without traffic/for everyone /with a sea view 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["It is an initiative/event for cycling enthusiasts/those who are passionate about cycling","It is a cycle along the (seafront) promenade","It is an initiative/event where you can enjoy the sea view without traffic","It is a 5km cycle","The cycle stretches from the old town centre to the beach"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6787,7 +6787,7 @@ export const CARDS: SecCard[] = [
     questionText: "At what time will the event start?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "At 17:30", marks: 6, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "At 17:30", marks: 6, contextNote: "The scheme also prints, for shorter answers: “(7:30 4 marks”; “(Afternoon/evening 3 marks)”; “(First Sunday in May/June/July 2 marks)”; “(Five)/Seven o’clock 2 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6822,7 +6822,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where is the meeting point? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["In the Town Square","In the city/centre (of Bari)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Near the) theatre/ (In front of the) ice-cream parlour 3 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["In the Town Square","In the city/centre (of Bari)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6857,7 +6857,7 @@ export const CARDS: SecCard[] = [
     questionText: "How much money are participants encouraged to donate?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Two euro", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Two euro", marks: 2, contextNote: "The scheme also prints, for shorter answers: “(Euro (with a number) 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6892,7 +6892,7 @@ export const CARDS: SecCard[] = [
     questionText: "When does the event take place?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "At the weekend/At weekends", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "At the weekend/At weekends", marks: 2, contextNote: "The scheme also prints, for shorter answers: “(Sunday/May/June/July/Summer 1 mark)”; “(When people are available 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6927,7 +6927,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one detail about the event organisers.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Four/Childhood friends.","They travelled (together)by bike","They organised trips all around Italy/ to Europe/to Turkey."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(They are cycling enthusiasts 3 marks)”; “(They are Italian (people) 2 marks)”; “(They are from Europe 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Four/Childhood friends.","They travelled (together)by bike","They organised trips all around Italy/ to Europe/to Turkey."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6962,7 +6962,7 @@ export const CARDS: SecCard[] = [
     questionText: "What services does the association offer? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["Bike hire","Bike repair (workshops)","It organises group travel (around Italy/ from May to October)"],"perOption":6} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Services that allow/facilitate you to get to know other groups 4 marks)”; “(Italy/Group work 4 marks)”; “(Bike (services) 2 marks)”; “(For hire 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"options":["Bike hire","Bike repair (workshops)","It organises group travel (around Italy/ from May to October)"],"perOption":6} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6997,7 +6997,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one detail about the people that they wish to hire.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Cycling enthusiasts","(People) who can speak different languages","(People) who speak English/French/Spanish/German","Enthusiastic (people)","Kind (people)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(People) from different countries 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Cycling enthusiasts","(People) who can speak different languages","(People) who speak English/French/Spanish/German","Enthusiastic (people)","Kind (people)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7595,7 +7595,7 @@ export const CARDS: SecCard[] = [
     questionText: "For whom is Giulia going to buy a present?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Her best friend", marks: 6, contextNote: "The scheme prints: “Incorrect additional information minus 2 from off/full answer”. Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Her best friend", marks: 6, contextNote: "The scheme prints: “Incorrect additional information minus 2 from off/full answer”. The scheme also prints, for shorter answers: “(Best friend +/- extra information 4 marks)”; “(Friend +/- extra information 2 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7630,7 +7630,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why did Giulia not hear her phone? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["Because the volume was low","Because it was in (an internal) pocket of her bag"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(The volume/sound 4 marks)”; “(The sound was turned off/The phone was on mute 4 marks)”; “(It was in her bag 4 marks)”; “(It was in her pocket 4 marks)”; “(It was (as good as being turned) off 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["Because the volume was low","Because it was in (an internal) pocket of her bag"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7735,7 +7735,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where does Giada work in the mornings?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["In an estate agent’s","In an office in the city centre"],"perOption":8} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Office 4 marks)”; “(City centre 4 marks)”. Answer in English or Irish.", group: {"claimMax":1,"options":["In an estate agent’s","In an office in the city centre"],"perOption":8} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7805,7 +7805,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one detail about Giada’s work contract.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["One-year/fixed term contract","She can work from home one day a week","She has four-week annual leave"],"perOption":6} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(She can work from home 4 marks)”; “(Holidays are included 4 marks)”; “(One day per week 1 mark)”; “(Four weeks 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"options":["One-year/fixed term contract","She can work from home one day a week","She has four-week annual leave"],"perOption":6} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7875,7 +7875,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which instruments does Riccardo play?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Guitar and Violin", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Guitar and Violin", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(Musical/String instruments 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7910,7 +7910,7 @@ export const CARDS: SecCard[] = [
     questionText: "What subject did Riccardo teach?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Geography", marks: 3, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Geography", marks: 3, contextNote: "The scheme also prints, for shorter answers: “(A science subject 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7945,7 +7945,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where does Riccardo usually go on tour?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Various) cities in the North of Italy", marks: 5, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "(Various) cities in the North of Italy", marks: 5, contextNote: "The scheme also prints, for shorter answers: “(In Italy 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8015,7 +8015,7 @@ export const CARDS: SecCard[] = [
     questionText: "When was Riccardo last in Dublin?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Six months ago/When he was there for a concert", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Six months ago/When he was there for a concert", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(Last year 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8050,7 +8050,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Riccardo like to do when he is in Ireland? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Listen to traditional Irish music","Listen to musicians play (live)","Collaborate with other musicians","Play with traditional Irish instruments used in Irish music"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(He plays music +/- extra information 2 marks)”; “(He listens to music- extra information 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Listen to traditional Irish music","Listen to musicians play (live)","Collaborate with other musicians","Play with traditional Irish instruments used in Irish music"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8085,7 +8085,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Riccardo say about music? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Music is an international language","Music allows you to travel","Music brings people together/allows people to meet","Music builds bridges","Music brings joy/happiness/peace/serenity (in difficult times)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Music is international 2 marks)”; “(Music can be helpful in hard times +/- extra information 2 marks)”; “(Music can be personal 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Music is an international language","Music allows you to travel","Music brings people together/allows people to meet","Music builds bridges","Music brings joy/happiness/peace/serenity (in difficult times)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8120,7 +8120,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where in Ireland is Riccardo looking forward to going? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["The west coast","Smaller towns","Outside Dublin","Somewhere he has never been before"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Dublin +/- extra information 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["The west coast","Smaller towns","Outside Dublin","Somewhere he has never been before"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8718,7 +8718,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is Marco going on holiday with?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "His group of friends", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "His group of friends", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(A group of friends 3 marks)”; “(His friend 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8753,7 +8753,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention two activities you can do in Le Cinque Terre.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["Sunbathing","Swimming","Boat trips","Hiking/ walking","Photography/Sightseeing"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Going to the beach 2 marks”; “(Trips/ excursions to the mountains) 2 marks”; “(Spend time with friends 1 marks)”. The scheme adds to the shorter answer “Going to the beach”: “This answer cannot be awarded marks if Sunbathing/Swimming was also given”. The scheme adds to the shorter answer “Trips/ excursions to the mountains”: “This answer cannot be awarded marks if Hiking/Walking was also given.”; “This answer cannot be awarded marks if Photography/Sightseeing was also given.”. The scheme adds to the shorter answer “Spend time with friends”: “This answer Spend time with friends is acceptable if it is the only answer awarded marks”. Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["Sunbathing","Swimming","Boat trips","Hiking/ walking","Photography/Sightseeing"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8788,7 +8788,7 @@ export const CARDS: SecCard[] = [
     questionText: "What type of accommodation have they booked?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["A youth (1) hostel (3)","Quadruple rooms in a hostel/ A hostel with kitchen facilities"],"perOption":4} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Quadruple rooms 1 mark)”; “(Accommodation with kitchen facilities 1 mark)”; “(A hotel 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"options":["A youth (1) hostel (3)","Quadruple rooms in a hostel/ A hostel with kitchen facilities"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8823,7 +8823,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one reason why Maria prefers travelling by train.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["It is relaxing","It is (a lot more) sustainable","(There are a lot of) student discounts"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Tranquil /calm/ comfortable/easier 2 marks)”; “(The car is a) nightmare 2 marks)”; “(Good value (for students) 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["It is relaxing","It is (a lot more) sustainable","(There are a lot of) student discounts"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8858,7 +8858,7 @@ export const CARDS: SecCard[] = [
     questionText: "For how long did Anna have to rest?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Three weeks", marks: 5, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Three weeks", marks: 5, contextNote: "The scheme also prints, for shorter answers: “(Few weeks 3 marks)”; “(A week 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8893,7 +8893,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is worried about Anna? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Her coach/trainer","Her team/ teammates","Her parents"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Friends 3 marks)”; “(One of her parents 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Her coach/trainer","Her team/ teammates","Her parents"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8928,7 +8928,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Anna say about her team?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "They are (very) strong, passionate", marks: 6, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "They are (very) strong, passionate", marks: 6, contextNote: "The scheme also prints, for shorter answers: “(She is passionate about her team 2 marks)”; “(The trainer would have really liked her to play 2 marks)”; “(Committed/Supportive 1 mark)”; “(Found it difficult without her 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8963,7 +8963,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention one other symptom Anna had after she fell.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["She lost (2) her appetite (2)","(She often gets a) head (2) ache (2)"],"perOption":4} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Stomach ache 3 marks)”. Answer in English or Irish.", group: {"claimMax":1,"options":["She lost (2) her appetite (2)","(She often gets a) head (2) ache (2)"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9033,7 +9033,7 @@ export const CARDS: SecCard[] = [
     questionText: "When did Sabrina work as a waitress?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "April and May", marks: 6, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "April and May", marks: 6, contextNote: "The scheme also prints, for shorter answers: “(Before she left 2 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9068,7 +9068,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the area where Sabrina lived. Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "She lived — the answers the scheme accepts", marks: null, contextNote: "Each answer completes the scheme’s “She lived”. Answer in English or Irish.", group: {"claimMax":2,"options":["in a small town /village","in the west of Ireland","in the countryside","on a farm (with animals) / on farmland","(near) a river","(near) an old castle","not far from the city"],"perOption":3} },
+    { id: "r-1", kind: "anyN", verbatim: "She lived — the answers the scheme accepts", marks: null, contextNote: "Each answer completes the scheme’s “She lived”. The scheme also prints, for shorter answers: “(It was fantastic/idyllic/ interesting 1 mark) (City (nearby) 1 mark) (Animals 1 mark)”. Answer in English or Irish.", group: {"claimMax":2,"options":["in a small town /village","in the west of Ireland","in the countryside","on a farm (with animals) / on farmland","(near) a river","(near) an old castle","not far from the city"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9173,7 +9173,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Sabrina do in her free time? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["She learned/played camogie/(one of the) national games.","She joined a choir","She took Irish dancing classes"],"perOption":4} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(She took Irish (cultural) classes 2 marks)”; “(Camogie 2 marks)”; “(She played) sport 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"options":["She learned/played camogie/(one of the) national games.","She joined a choir","She took Irish dancing classes"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9208,7 +9208,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention three Irish foods Sabrina liked.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":3,"perOption":2,"options":["Meat","Milk","Butter","Potatoes","Strawberries"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Fruit 1 mark)”. Answer in English or Irish.", group: {"claimMax":3,"perOption":2,"options":["Meat","Milk","Butter","Potatoes","Strawberries"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9845,7 +9845,7 @@ export const CARDS: SecCard[] = [
     questionText: "At what time will the meeting start?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "7.15", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "7.15", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(Seven o’clock 2 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9880,7 +9880,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is the project aimed at?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "University", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "University", marks: 2, contextNote: "The scheme also prints, for shorter answers: “(Young people 2 marks)”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "students", marks: 2 },
     { id: "r-1-3", kind: "point", verbatim: "the elderly", marks: 2 },
     ],
@@ -9917,7 +9917,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name two household chores mentioned.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Doing the shopping","Cooking","Washing the dishes","Vacuuming","Cleaning floors","Looking after pets"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Kitchen chores 1 mark)”; “(Animals 1 mark)”; “(Washing 1 mark)”; “(Cleaning 1 mark)”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Doing the shopping","Cooking","Washing the dishes","Vacuuming","Cleaning floors","Looking after pets"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9952,7 +9952,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name one other activity included in the project.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Accompanying the elderly [2] going to medical appointments [2]","Watching a film [2] together [2]","Reading/newspaper [2] together [2]","(Going for) walks [2] together [2]"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Spend time together 2 marks)”; “(Films/newspapers 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Accompanying the elderly [2] going to medical appointments [2]","Watching a film [2] together [2]","Reading/newspaper [2] together [2]","(Going for) walks [2] together [2]"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9987,7 +9987,7 @@ export const CARDS: SecCard[] = [
     questionText: "How is Agata feeling?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Amazingly/very happy","Very proud","Very tired","She has no energy"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Happy 3 marks)”; “(Proud/tired 3marks)”; “(She doesn’t feel too well 2 marks)”; “(She’s been busy but) she’s okay 2 marks)”; “(Energised 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Amazingly/very happy","Very proud","Very tired","She has no energy"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10022,7 +10022,7 @@ export const CARDS: SecCard[] = [
     questionText: "For what age children will Agata organise art workshops?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Under tens", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Under tens", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(Ten-year-olds 2 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10162,7 +10162,7 @@ export const CARDS: SecCard[] = [
     questionText: "When did Piero start sailing?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "As a child at (about) five years of age", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "As a child at (about) five years of age", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(As a child 3 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10197,7 +10197,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the documentary about?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Marine plastic pollution", marks: 6, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Marine plastic pollution", marks: 6, contextNote: "The scheme also prints, for shorter answers: “(Plastic pollution 4 marks)”; “(Pollution/Plastic/The sea 2 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10232,7 +10232,7 @@ export const CARDS: SecCard[] = [
     questionText: "What do people ask Piero? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["How he prepares (for his journey)","If he is scared before his journey","If he misses his family"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(His family 4 marks)”; “(His fears 4 marks)”; “(The trip 4 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["How he prepares (for his journey)","If he is scared before his journey","If he misses his family"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10267,7 +10267,7 @@ export const CARDS: SecCard[] = [
     questionText: "What are the dangers of being at sea? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["The sudden changes of weather","Storms (cause fear)","Strong/summer sun","Dehydration","Tiredness"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Weather/Sun/Temperature 4 marks)”; “(Fear 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["The sudden changes of weather","Storms (cause fear)","Strong/summer sun","Dehydration","Tiredness"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10302,7 +10302,7 @@ export const CARDS: SecCard[] = [
     questionText: "Other than fruit, mention two foods that Piero eats during his trip.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":4,"options":["(Raw) vegetables","(Canned) lentils","Beans","Cheese","Eggs","Biscuits"],"perOptionSteps":[4,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Protein 2 marks)”. Answer in English or Irish.", group: {"claimMax":2,"perOption":4,"options":["(Raw) vegetables","(Canned) lentils","Beans","Cheese","Eggs","Biscuits"],"perOptionSteps":[4,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10337,7 +10337,7 @@ export const CARDS: SecCard[] = [
     questionText: "What would Piero like to do in the future? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Continue his adventure by travelling more","Write a book on his adventures","(Continue) raising awareness about problems in the sea","Contribute to his dream of a world without pollution"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Write a book 3 marks)”; “(Travel 3 marks)”; “(Raise awareness 3 marks)”; “(Write 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Continue his adventure by travelling more","Write a book on his adventures","(Continue) raising awareness about problems in the sea","Contribute to his dream of a world without pollution"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10978,7 +10978,7 @@ export const CARDS: SecCard[] = [
     questionText: "When are Michele and his friends going on a bike trip?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "This/ (next) weekend", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "This/ (next) weekend", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(The weekend 2 marks)”; “(Next week 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11013,7 +11013,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe Michele’s brother’s bike. Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["The bike is just (a bit) slow","The bike is big","The bike is in good condition (working well)","The bike is red and black"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(It is red 1 mark)”; “(It is black 1 mark)”. Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["The bike is just (a bit) slow","The bike is big","The bike is in good condition (working well)","The bike is red and black"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11048,7 +11048,7 @@ export const CARDS: SecCard[] = [
     questionText: "What food does Michele suggest they bring for the picnic? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["Drinks","Ham Rolls/ Ham Sandwiches /Ham Panini","Rice salad","Courgette Omelette","A blanket (to sit on/lay out the food)"],"perOption":4} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Ham 2 marks)”; “(Rolls/Sandwiches/Panini/Panino 2 marks)”; “(Rice 2 marks)”; “(Salad 2 marks)”; “(Courgette/ Zucchini 2 marks)”; “(Omelette/ Frittata 2 marks)”; “(Vegetables 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"options":["Drinks","Ham Rolls/ Ham Sandwiches /Ham Panini","Rice salad","Courgette Omelette","A blanket (to sit on/lay out the food)"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11083,7 +11083,7 @@ export const CARDS: SecCard[] = [
     questionText: "What will they do in the afternoon? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Sunbathe","Go for a swim","Play volleyball"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Go to the sea/ beach/ seaside 2marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Sunbathe","Go for a swim","Play volleyball"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11118,7 +11118,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is Davide going to visit?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["His grandmother","His relatives/ family"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Sister 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["His grandmother","His relatives/ family"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11153,7 +11153,7 @@ export const CARDS: SecCard[] = [
     questionText: "What item did Sara lose?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Her identity card", marks: 5, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Her identity card", marks: 5, contextNote: "The scheme also prints, for shorter answers: “(Her card 2 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11223,7 +11223,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who found the missing item?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The waiter from the restaurant (she ate at).", marks: 5, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "The waiter from the restaurant (she ate at).", marks: 5, contextNote: "The scheme also prints, for shorter answers: “(Waiter 3 marks)”; “(Restaurant 2 marks)”; “(Waitress 1 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11258,7 +11258,7 @@ export const CARDS: SecCard[] = [
     questionText: "What subject does Laura teach?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "She teaches English", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "She teaches English", marks: 2, contextNote: "The scheme also prints, for shorter answers: “(She is a language teacher 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11364,7 +11364,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does she like about Italy?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["The warmth of the people","It is easy to make friends/People are so chatty","How the landscape varies","The fact that there are so many places/cities to discover"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(That people are nice 4 marks)”; “(The people 2 marks)”; “(The conversations that occur 2 marks)”; “(The landscape/ the variety 2 marks)”; “(The places/ cities/cities with art 2 marks)”; “(The sea(side)/The coast 2 marks)”; “(The warmth/ nice weather 1 mark)”; “(The lifestyle/culture 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["The warmth of the people","It is easy to make friends/People are so chatty","How the landscape varies","The fact that there are so many places/cities to discover"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11434,7 +11434,7 @@ export const CARDS: SecCard[] = [
     questionText: "When do Irish work colleagues meet up?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "After work", marks: 3, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "After work", marks: 3, contextNote: "The scheme also prints, for shorter answers: “(When they are not working 1 mark)”; “(At the weekend 1 mark)”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "on Friday", marks: 3 },
     ],
     sourceMaterial: {
@@ -11470,7 +11470,7 @@ export const CARDS: SecCard[] = [
     questionText: "For how long does she want to travel in Italy?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Four (months) to five months", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Four (months) to five months", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(Four to five 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11505,7 +11505,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where would Laura like to visit?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "The beaches/where they serve great fish", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "The beaches/where they serve great fish", marks: 2, contextNote: "The scheme also prints, for shorter answers: “(The beach 1 marks)”; “(An Italian island 1 mark)”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "on the Italian islands", marks: 2 },
     ],
     sourceMaterial: {
@@ -12970,7 +12970,7 @@ export const CARDS: SecCard[] = [
     questionText: "What volunteer activity is Daniele involved in?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "Teaching", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "Teaching", marks: 2, contextNote: "The scheme also prints, for shorter answers: “(Languages 1 mark)”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "Italian", marks: 2 },
     { id: "r-1-3", kind: "point", verbatim: "to young", marks: 1 },
     { id: "r-1-4", kind: "point", verbatim: "foreigners", marks: 1 },
@@ -13044,7 +13044,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is served during the break? Give full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "Tea", marks: 1, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "Tea", marks: 1, contextNote: "The scheme also prints, for shorter answers: “(Food 1 mark)”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "coffee", marks: 1 },
     { id: "r-1-3", kind: "point", verbatim: "cakes", marks: 2 },
     ],
@@ -13151,7 +13151,7 @@ export const CARDS: SecCard[] = [
     questionText: "When will Sara do an interview?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Next week", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Next week", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(Next weekend 2 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13186,7 +13186,7 @@ export const CARDS: SecCard[] = [
     questionText: "For how long will Sara be on holidays?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A month and a half", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "A month and a half", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(One month 2 marks)”; “(A few weeks/two weeks 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13221,7 +13221,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where does Sara wish to visit while on holidays?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The capital cities of Europe", marks: 6, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "The capital cities of Europe", marks: 6, contextNote: "The scheme also prints, for shorter answers: “(Capital cities 4 marks)”; “(Europe 4 marks)”; “(A European capital/city 3 marks)”; “(A capital city 2 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13256,7 +13256,7 @@ export const CARDS: SecCard[] = [
     questionText: "How old is Gianfranco?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "31 years old", marks: 3, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "31 years old", marks: 3, contextNote: "The scheme also prints, for shorter answers: “(In his 30’s 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13291,7 +13291,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was Gianfranco’s first job?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "Pizzeria", marks: 1, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "Pizzeria", marks: 1, contextNote: "The scheme also prints, for shorter answers: “(Hotel/Cruise ship 1 mark)”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "Waiter", marks: 3 },
     ],
     sourceMaterial: {
@@ -13327,7 +13327,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name two nationalities who visit the lakes areas. (ii)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "German, Swiss, Dutch, English", marks: 6, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "German, Swiss, Dutch, English", marks: 6, contextNote: "The scheme also prints, for shorter answers: “(Italian/American/Japanese 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13362,7 +13362,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which member of Gianfranco’s family is French?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Grandmother", marks: 3, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Grandmother", marks: 3, contextNote: "The scheme also prints, for shorter answers: “(Grandfather/grandparent 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13467,7 +13467,7 @@ export const CARDS: SecCard[] = [
     questionText: "When will Gianfranco open his restaurant?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Beginning of next year", marks: 6, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Beginning of next year", marks: 6, contextNote: "The scheme also prints, for shorter answers: “(Next year 4 marks)”; “(Soon 2 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14991,7 +14991,7 @@ export const CARDS: SecCard[] = [
     questionText: "For how long will Chiara go on holiday?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "Five", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "Five", marks: 2, contextNote: "The scheme also prints, for shorter answers: “(Two weeks 2 marks)”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "days", marks: 2 },
     ],
     sourceMaterial: {
@@ -15027,7 +15027,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Piero say about life in the city? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["He is tired of it","The (amount of) traffic","The (amount of) noise","The (amount of) rushing about The (lack of) nature"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(There are too many people 2 marks)”; “(The people 1 mark)”. Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["He is tired of it","The (amount of) traffic","The (amount of) noise","The (amount of) rushing about The (lack of) nature"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15097,7 +15097,7 @@ export const CARDS: SecCard[] = [
     questionText: "How will Piero travel to Sardinia?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "By train and ferry", marks: 6, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "By train and ferry", marks: 6, contextNote: "The scheme also prints, for shorter answers: “(By car 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15202,7 +15202,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where is Laura doing her work experience?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "At the tourist office", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "At the tourist office", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(A place for tourists/ a tourist facility 2 marks)”; “(In an office 2 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15274,7 +15274,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about Sergio. (ii)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["He is 35","Was born in Florence","He considers himself a story teller","He started his career as a stage actor","He is a documentary film maker","He writes books","He just finished writing a book","(His last book) will be published in September."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(He is a video reporter 2 marks)”; “(He makes videos 1 mark)”; “(He is a reporter 1 mark)”; “(He lives in Florence) 2 marks)”; “(Florence 1 mark)”. Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["He is 35","Was born in Florence","He considers himself a story teller","He started his career as a stage actor","He is a documentary film maker","He writes books","He just finished writing a book","(His last book) will be published in September."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15309,7 +15309,7 @@ export const CARDS: SecCard[] = [
     questionText: "How long has Sergio being working for Fanpage.it?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Six years", marks: 3, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Six years", marks: 3, contextNote: "The scheme also prints, for shorter answers: “(A few years 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15344,7 +15344,7 @@ export const CARDS: SecCard[] = [
     questionText: "What puts Sergio in a bad mood?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":3,"options":["Bad (1m) news (1m) in the newspapers (1m)","Fake (2m) news (1m)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Journalists (who don’t report good news) 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":3,"options":["Bad (1m) news (1m) in the newspapers (1m)","Fake (2m) news (1m)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15418,7 +15418,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the negative aspect of Sergio’s work?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "He works more than", marks: 1, contextNote: "Answer in English or Irish." },
+    { id: "r-1-1", kind: "point", verbatim: "He works more than", marks: 1, contextNote: "The scheme also prints, for shorter answers: “(He works long hours 1 mark)”. Answer in English or Irish." },
     { id: "r-1-2", kind: "point", verbatim: "a 40 hour week", marks: 2 },
     ],
     sourceMaterial: {
@@ -16437,7 +16437,7 @@ export const CARDS: SecCard[] = [
     questionText: "State four of the terms and conditions of the\nvoucher.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":4,"perOption":1,"options":["Use within six months of purchase.","One coupon per person.","Complete six hours of driving lessons (to sit test)","Pay for medical check-up Pay associated costs of driving test","Pay for the driving lessons that are not included in the offer","Booking by phone"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also prints: “The answer “You must use the coupon during January/ February /March /April will only be acceptable as an answer in Question 3 if not used as an answer in Question 4.”.", group: {"claimMax":4,"perOption":1,"options":["Use within six months of purchase.","One coupon per person.","Complete six hours of driving lessons (to sit test)","Pay for medical check-up","Pay associated costs of driving test","Pay for the driving lessons that are not included in the offer","Booking by phone","You must use the coupon during January/ February /March /April"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17062,7 +17062,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why did Giovanni find it difficult to hear the phone ringing? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["He was in the garden (3) sunbathing (1).","He did not have his phone on him (3), it was in the kitchen (1).","He was listening to music (3), with earphones (1).","Maximum of 3 marks will be awarded for inaccurate combination of points"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints: “Maximum of 3 marks will be awarded for inaccurate combination of points”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["He was in the garden (3) sunbathing (1).","He did not have his phone on him (3), it was in the kitchen (1).","He was listening to music (3), with earphones (1)."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17132,7 +17132,7 @@ export const CARDS: SecCard[] = [
     questionText: "What suggestion does Giovanni make? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["To ask them (1) over to his home (3)","To watch (1) the game together (3)","To order (1) food (3)","To cheer (1) on the national team (3)","Go out to celebrate (1) after the match (3)","Maximum of 3 marks will be awarded for inaccurate combination of points"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints: “Maximum of 3 marks will be awarded for inaccurate combination of points”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["To ask them (1) over to his home (3)","To watch (1) the game together (3)","To order (1) food (3)","To cheer (1) on the national team (3)","Go out to celebrate (1) after the match (3)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17237,7 +17237,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Marta do on her day off? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["She went to the city centre (3) with others/au pairs (1)","She went to the cinema","She browsed around the second hand shops"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Shops 1 mark)”; “(Cinema 1 mark)”; “(She went for walks with the family to the countryside 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["She went to the city centre (3) with others/au pairs (1)","She went to the cinema","She browsed around the second hand shops"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17342,7 +17342,7 @@ export const CARDS: SecCard[] = [
     questionText: "When did Daniela leave Italy to go and study abroad? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["When she was eighteen years old","After il diploma di maturità / the Leaving Cert/her final school exams"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Eighteen 3 marks)”; “(After the diploma 3 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["When she was eighteen years old","After il diploma di maturità / the Leaving Cert/her final school exams"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17518,7 +17518,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which part of Italy is Daniela from?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Piedmont /The North", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Piedmont /The North", marks: 2, contextNote: "The scheme also prints, for shorter answers: “(Variation of Piedmontese 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17553,7 +17553,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where did Daniela sleep when she could not find accommodation?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Beach", marks: 4, contextNote: "Answer in English or Irish. The scheme prints this line as \"7. Two required 6 (4+2)\", an SEC misprint; it is read as \"7. Two required 6 marks (4+2)\", which the printed total of its section confirms." },
+    { id: "r-1", kind: "point", verbatim: "Beach", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(In a sleeping bag 1 mark)”. Answer in English or Irish. The scheme prints this line as \"7. Two required 6 (4+2)\", an SEC misprint; it is read as \"7. Two required 6 marks (4+2)\", which the printed total of its section confirms." },
     { id: "r-2", kind: "point", verbatim: "Campsite/Tent", marks: 2 },
     ],
     sourceMaterial: {
@@ -18359,7 +18359,7 @@ export const CARDS: SecCard[] = [
     questionText: "List four requirements for the job.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Work in a team” 1 mark; “Work under pressure” 1 mark; “Have knowledge of English” 1 mark; “Have knowledge of Spanish” 1 mark; “Be flexible with working hours” 1 mark; “Be available to go on business trips” 1 mark.", group: {"claimMax":4,"perOption":2,"options":["Work well in a team","Be creative","Show initiative","Be precise","Carry out work quickly","Work well under pressure","Have knowledge of English and Spanish","Be very flexible with working hours","Be available to go on business trips within Italy","(Flexible /enthusiastic/motivated 1 mark) but only if it is the only answer given out of four possibilities )"],"perOptionSteps":[2,2,1,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Work in a team” 1 mark; “Work under pressure” 1 mark; “Have knowledge of English” 1 mark; “Have knowledge of Spanish” 1 mark; “Be flexible with working hours” 1 mark; “Be available to go on business trips” 1 mark; “Flexible /enthusiastic/motivated” 1 mark. The scheme adds to the shorter answer “Flexible /enthusiastic/motivated”: “but only if it is the only answer given out of four possibilities )”.", group: {"claimMax":4,"perOption":2,"options":["Work well in a team","Be creative","Show initiative","Be precise","Carry out work quickly","Work well under pressure","Have knowledge of English and Spanish","Be very flexible with working hours","Be available to go on business trips within Italy"],"perOptionSteps":[2,2,1,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19180,7 +19180,7 @@ export const CARDS: SecCard[] = [
     questionText: "What are Paolo’s plans for the summer holidays? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["He will go to the countryside to visit his grandparents.","He will travel round Europe with his parents / He will travel round Europe in a campervan"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(He will go (away) with his parents 3 marks)”; “(He will go (away) in July with his family 3 marks)”; “(He will travel round Europe 3 marks)”; “(He will go (away) on holidays 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["He will go to the countryside to visit his grandparents.","He will travel round Europe with his parents / He will travel round Europe in a campervan"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19215,7 +19215,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why did Miss Rossi return to Bologna? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["For family reasons/ she wanted to be nearer her family","Wants to find a permanent job back in her own city","She wants to plan her upcoming wedding"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Wants to find a job 3 marks)”; “(She wants to plan her wedding 3 marks)”; “(To see/visit family 2 marks)”; “(Job/wedding/family 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["For family reasons/ she wanted to be nearer her family","Wants to find a permanent job back in her own city","She wants to plan her upcoming wedding"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19250,7 +19250,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who might give Marta chemistry lessons?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Uncle who is a chemistry teacher,","Uncle who is recently retired","Uncle who has (teaching) experience"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Uncle 3 marks)”; “(Teacher 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Uncle who is a chemistry teacher,","Uncle who is recently retired","Uncle who has (teaching) experience"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19285,7 +19285,7 @@ export const CARDS: SecCard[] = [
     questionText: "How might Marta repay for the chemistry lessons? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["(Help him)clean out his car port/garage","(Help him) harvest his fruit/vegetables","Look after their cat while he is away on his holidays"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Garage 1 mark)”; “(Help him 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["(Help him)clean out his car port/garage","(Help him) harvest his fruit/vegetables","Look after their cat while he is away on his holidays"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19320,7 +19320,7 @@ export const CARDS: SecCard[] = [
     questionText: "At what time did Raffaele wake up to queue for the new tablet offer?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Five a.m.", marks: 3, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Five a.m.", marks: 3, contextNote: "The scheme also prints, for shorter answers: “(Five o’clock 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19355,7 +19355,7 @@ export const CARDS: SecCard[] = [
     questionText: "From tomorrow what will the discount on the tablet be?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Twenty percent", marks: 3, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Twenty percent", marks: 3, contextNote: "The scheme also prints, for shorter answers: “(Twenty 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19390,7 +19390,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Raffaele write on the shop Facebook page?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "That someone had stolen his wallet and that he was very disappointed", marks: 6, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "That someone had stolen his wallet and that he was very disappointed", marks: 6, contextNote: "The scheme also prints, for shorter answers: “(That someone had stolen his wallet 4 marks)”; “(That he was robbed 2 marks)”; “(He wrote about his wallet 2 marks)”; “(He was very disappointed 2 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19495,7 +19495,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did he learn from meeting the wheelchair basketball team? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Not to give up Accept your own limits","(Always) be optimistic"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Not to give up","Accept your own limits","(Always) be optimistic"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19530,7 +19530,7 @@ export const CARDS: SecCard[] = [
     questionText: "How did Michele feel when he was nominated captain?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["Felt great satisfaction","Felt little scared","Felt challenged","Felt he may have to encourage the team (through difficult moments)","Felt he may have to be diplomatic (in solving problems)"],"perOption":5} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Felt intimidated/overwhelmed 4 marks)”; “(Delighted/satisfied/very happy 3 marks)”; “(Felt he may have to solve problems 3 mark)”; “(He was happy 2 marks)”; “(He felt honoured 2 marks)”; “(He felt suited to the role 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"options":["Felt great satisfaction","Felt little scared","Felt challenged","Felt he may have to encourage the team (through difficult moments)","Felt he may have to be diplomatic (in solving problems)"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19635,7 +19635,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does he say about the weekends?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "You have to go to bed early", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "You have to go to bed early", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(You have to catch up on sleep 3 marks)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19705,7 +19705,7 @@ export const CARDS: SecCard[] = [
     questionText: "Apart from sport, what other passion does Michele have?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Animals", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Animals", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(Pets 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
