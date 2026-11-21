@@ -83,7 +83,8 @@ describe('audited hosted answer maps', () => {
     expect([englishPapers - englishDeferred, englishDeferred]).toEqual([68, 12]);
     const originalOverrides = [...HOSTED_ANSWER_OVERRIDES].filter(key => key.startsWith('art|')
       || key.startsWith('physics|') || key.startsWith('agricultural-science|') || key.startsWith('english|'));
-    expect(originalOverrides).toHaveLength(61 + englishPapers);
+    // + the 2023 Higher Agricultural Science deferred map (deferred lane).
+    expect(originalOverrides).toHaveLength(61 + englishPapers + 1);
     for (const key of originalOverrides) {
       const [subjectId, year, fileid] = key.split('|');
       expect(['agricultural-science', 'art', 'english', 'physics']).toContain(subjectId);
@@ -116,9 +117,11 @@ describe('audited hosted answer maps', () => {
     // The reviewed set covers the June sittings 2010-2026. Pre-2010 papers
     // (earlier syllabus) and the deferred sitting carry no answer maps.
     const entries = reviewedArchiveEntries('applied-mathematics');
+    // ... and each carded deferred sitting's own edition (deferred lane), hosted the same way.
+    const deferredEditions = ['applied-mathematics|2022|LC020ALP000EV-deferred.pdf', 'applied-mathematics|2023|LC020ALP000EV-deferred.pdf'];
     const expected = entries.flatMap(entry => entry.papers.map(paper =>
       `applied-mathematics|${entry.year}|${paper.doc.f}`));
-    const actual = [...HOSTED_ANSWER_OVERRIDES].filter(key => key.startsWith('applied-mathematics|'));
+    const actual = [...HOSTED_ANSWER_OVERRIDES].filter(key => key.startsWith('applied-mathematics|') && !deferredEditions.includes(key));
     expect(actual).toHaveLength(66);
     expect(actual.sort()).toEqual(expected.sort());
     for (const entry of entries) for (const paper of entry.papers) {

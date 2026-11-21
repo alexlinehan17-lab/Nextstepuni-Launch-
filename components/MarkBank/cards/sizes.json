@@ -4,15 +4,15 @@
   "ordinary": 3205
  },
  "chemistry": {
-  "higher": 1862,
-  "ordinary": 1507
+  "higher": 2083,
+  "ordinary": 1572
  },
  "physics": {
   "higher": 2189,
   "ordinary": 1870
  },
  "agricultural-science": {
-  "higher": 1207,
+  "higher": 1292,
   "ordinary": 1257
  },
  "business": {
@@ -28,7 +28,7 @@
   "ordinary": 1083
  },
  "construction-studies": {
-  "higher": 735,
+  "higher": 784,
   "ordinary": 526
  },
  "maths": {
@@ -46,8 +46,8 @@
   "foundation": 1006
  },
  "art": {
-  "higher": 902,
-  "ordinary": 854
+  "higher": 990,
+  "ordinary": 880
  },
  "geography": {
   "higher": 2495,
@@ -81,7 +81,7 @@
   "ordinary": 1344
  },
  "applied-maths": {
-  "higher": 716,
+  "higher": 811,
   "ordinary": 770
  },
  "german": {
@@ -186,7 +186,7 @@
   "ordinary": 517
  },
  "physical-education": {
-  "higher": 382,
+  "higher": 496,
   "ordinary": 390
  },
  "maltese": {
@@ -197,7 +197,7 @@
   "ordinary": 360
  },
  "accounting": {
-  "higher": 721,
+  "higher": 798,
   "ordinary": 644
  },
  "music": {

@@ -2,12 +2,18 @@
 import { describe, expect, it } from 'vitest';
 import census from '../scripts/markbank/authored/art-census.json';
 import authored from '../components/MarkBank/cards/art/authored.json';
-import { CARDS as HIGHER } from '../components/MarkBank/cards/art/higher';
-import { CARDS as ORDINARY } from '../components/MarkBank/cards/art/ordinary';
+import { CARDS as ALL_HIGHER } from '../components/MarkBank/cards/art/higher';
+import { CARDS as ALL_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { ART_STRANDS } from '../components/MarkBank/deck';
 import { tariffReconciles } from '../types/markBank';
 import { artMarks, suggestRubricGrade } from '../components/MarkBank/SessionScreen';
 
+// June's corpus; the SEC's deferred sittings (art_cards.py DEFERRED_SITTINGS) are checked on their own below.
+const isDeferred = (id: string) => /^art-\d{4}-(?:hl|ol)-deferred-/.test(id);
+const HIGHER = ALL_HIGHER.filter(card => !isDeferred(card.id));
+const ORDINARY = ALL_ORDINARY.filter(card => !isDeferred(card.id));
+const DEFERRED = [...ALL_HIGHER, ...ALL_ORDINARY].filter(card => isDeferred(card.id));
+const JUNE_CENSUS = census.papers.filter(paper => !('sitting' in paper));
 const CARDS = [...HIGHER, ...ORDINARY];
 
 describe('complete Art corpus, 2010–2026', () => {
@@ -17,10 +23,36 @@ describe('complete Art corpus, 2010–2026', () => {
     expect(CARDS).toHaveLength(1756);
     expect(new Set(CARDS.map(card => card.id)).size).toBe(1756);
 
-    const censusIds = census.papers.flatMap(paper => paper.cards.map(card => card.cardId));
+    const censusIds = JUNE_CENSUS.flatMap(paper => paper.cards.map(card => card.cardId));
     expect([...CARDS.map(card => card.id)].sort()).toEqual([...censusIds].sort());
-    expect(census.papers).toHaveLength(34);
-    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(1756);
+    expect(JUNE_CENSUS).toHaveLength(34);
+    expect(JUNE_CENSUS.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(1756);
+  });
+
+  it('cards every printed task of each carded deferred sitting on its own paper and sheet', () => {
+    const deferredCensus = census.papers.filter(paper => 'sitting' in paper && paper.sitting === 'deferred');
+    expect(deferredCensus.map(paper => [paper.year, paper.level, paper.paperFileid, paper.expectedCards]))
+      .toEqual([[2022, 'higher', 'LC014ALP000EV-deferred', 62], [2023, 'higher', 'LC014ALP000EV-deferred', 26],
+        [2023, 'ordinary', 'LC014GLP000EV-deferred', 26]]);
+    expect(DEFERRED.map(card => card.id).sort())
+      .toEqual(deferredCensus.flatMap(paper => paper.cards.map(card => card.cardId)).sort());
+    for (const card of DEFERRED) {
+      expect(card.questionRef, card.id).toMatch(/ — Deferred sitting$/);
+      expect(card.paperFileid, card.id).toBe(`LC014${card.level === 'higher' ? 'A' : 'G'}LP000EV-deferred`);
+      expect(card.schemeCitation, card.id).toContain(', deferred examination,');
+      if (/accompanying sheet/i.test(`${card.stem ?? ''} ${card.questionText}`)) {
+        // The deferred sitting's own sheet: English-only in 2022 (LC014ALP004EV-deferred), bilingual in 2023.
+        expect(card.sourceMaterial?.sourceFileid, card.id).toMatch(/^LC014[AG]LP004[EB]V-deferred$/);
+      }
+    }
+    // The 2022 Higher sheet prints nine of its twenty questions' illustrations, the 2023 Higher sheet four and
+    // the 2023 Ordinary sheet five.
+    const illustrated = (year: number, level: string) => new Set(DEFERRED
+      .filter(card => card.year === year && card.level === level && card.sourceMaterial)
+      .map(card => card.questionRef.match(/Q(\d+)/)![1]));
+    expect(illustrated(2022, 'higher')).toEqual(new Set(['1', '3', '6', '10', '11', '12', '17', '18', '20']));
+    expect(illustrated(2023, 'higher')).toEqual(new Set(['1', '3', '4', '6']));
+    expect(illustrated(2023, 'ordinary')).toEqual(new Set(['1', '2', '3', '5', '7']));
   });
 
   it('keeps the audited task census for each paper', () => {

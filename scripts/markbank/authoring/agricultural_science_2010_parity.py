@@ -15,13 +15,15 @@ def scan(year, fileid, hashes, classifications, supplementary=()):
     for kind, digest in hashes.items():
         assert hashlib.sha256((ROOT / f'paper-trail-corpus/{kind}/{year}/{fileid}').read_bytes()).hexdigest() == digest, 'Source changed; repeat visual review'
     observed, pages = [], []
-    with fitz.open(ROOT / f'paper-trail-corpus/exampapers/{year}/{fileid}') as pdf:
+    # A deferred sitting's review pins the deferred corpus (deferredexams/, deferredmarkingschemes/) instead.
+    papers = 'deferredexams' if 'deferredexams' in hashes else 'exampapers'
+    with fitz.open(ROOT / f'paper-trail-corpus/{papers}/{year}/{fileid}') as pdf:
         for index, page in enumerate(pdf):
             text = ' '.join(page.get_text().split())
             pages.append(text)
             for match in DIRECTIVE.finditer(text):
                 context = text[max(0, match.start()-90):match.end()+230]
-                key = hashlib.sha256(f'{hashes["exampapers"]}|{index+1}|{match.start()}|{context}'.encode()).hexdigest()[:16]
+                key = hashlib.sha256(f'{hashes[papers]}|{index+1}|{match.start()}|{context}'.encode()).hexdigest()[:16]
                 assert key in classifications, f'Unclassified cue {key}: {context}'
                 kind, reason = classifications[key]
                 observed.append(dict(id=key, page=index+1, cue=match.group(), context=context, classification=kind, reason=reason))

@@ -47,14 +47,47 @@ CHOICE_RULE = ('Choice is not a route (coordinator rule, 2026-10-12): a printed 
                'with one anyN group over them, never a card per item or per combination.')
 
 
-def sources(year, level):
+# The SEC's deferred sitting of a year (a paper module's SITTING = 'deferred') is an edition of its own: its paper and
+# scheme from deferredexams/ and deferredmarkingschemes/ (filed under June's id), its edition "LC029ALP000EV-deferred.pdf"
+# in Paper Trail, card IDs cons-<year>-<hl|ol>-deferred-…, questionRef "… — Deferred sitting" and its citation ", deferred
+# examination". Every function takes sitting='main' by default, so a June paper's output is unchanged.
+DEFERRED_REF = ' — Deferred sitting'
+
+
+def sitting_of(m):
+    return getattr(m, 'SITTING', 'main')
+
+
+def edition(level, sitting='main'):
+    return FILEID[level] if sitting == 'main' else FILEID[level][:-4] + '-deferred.pdf'
+
+
+def infix(sitting):
+    return '' if sitting == 'main' else '-deferred'
+
+
+def sources(year, level, sitting='main'):
+    if sitting == 'deferred':
+        return (f'paper-trail-corpus/deferredexams/{year}/{FILEID[level][:-4]}.pdf',
+                f'paper-trail-corpus/deferredmarkingschemes/{year}/{FILEID[level][:-4]}.pdf')
     return (f'paper-trail-corpus/exampapers/{year}/{FILEID[level][:-4]}.pdf', f'paper-trail-corpus/markingschemes/{year}/{FILEID[level][:-4]}.pdf')
 
 
-def names(year, level):
+def names(year, level, sitting='main'):
     """(figure prefix, card-ID prefix, Atlas prefix, attribution)"""
-    return (f'construction-studies-{year}-{CODE[level]}-', f'cons-{year}-{CODE[level].lower()}-', f'construction-studies-{level}-',
-            f'SEC Leaving Certificate Construction Studies {year} {WORD[level]} Level — © State Examinations Commission.')
+    d = infix(sitting)
+    return (f'construction-studies-{year}-{CODE[level]}{d}-', f'cons-{year}-{CODE[level].lower()}{d}-', f'construction-studies-{level}-',
+            f'SEC Leaving Certificate Construction Studies {year} {WORD[level]} Level{", deferred examination" if d else ""} — © State Examinations Commission.')
+
+
+def of_paper(cid, prefix):
+    """A card belongs to the paper whose ID prefix it carries; June's prefix ("cons-2022-hl-") never claims its deferred
+    sitting's cards ("cons-2022-hl-deferred-…")."""
+    return cid.startswith(prefix) and (prefix.endswith('-deferred-') or not cid.startswith(prefix + 'deferred-'))
+
+
+def draft_dir(year, level, sitting='main'):
+    return DRAFT_ROOT / f'construction-{year}-{level}{infix(sitting)}'
 
 
 def card_hash(c):
@@ -140,10 +173,10 @@ class Draft:
     """Write one paper's tasks. The pre-audit cards are snapshotted before integration so the draft
     regenerates byte-identically afterwards."""
 
-    def __init__(self, here, year, level, hashes, legacy_count, questions, scheme_pages, alt=None):
-        self.here, self.year, self.level = Path(here), year, level
-        self.P, self.S = sources(year, level)
-        self.FP, self.PREFIX, self.CROSS, self.ATTRIBUTION = names(year, level)
+    def __init__(self, here, year, level, hashes, legacy_count, questions, scheme_pages, alt=None, sitting='main'):
+        self.here, self.year, self.level, self.sitting = Path(here), year, level, sitting
+        self.P, self.S = sources(year, level, sitting)
+        self.FP, self.PREFIX, self.CROSS, self.ATTRIBUTION = names(year, level, sitting)
         self.hashes = {self.P: hashes[0], self.S: hashes[1]}
         for f, h in self.hashes.items():
             assert hashlib.sha256((R / f).read_bytes()).hexdigest() == h, f
@@ -151,7 +184,7 @@ class Draft:
         legacy_file = self.here / f'prior-{year}-{level}-cards.json'
         if not legacy_file.exists():
             authored = json.loads((R / 'scripts/markbank/authored/construction-studies.json').read_text())
-            legacy_file.write_text(json.dumps([c for c in authored if c['id'].startswith(self.PREFIX)], ensure_ascii=False, indent=2) + '\n')
+            legacy_file.write_text(json.dumps([c for c in authored if of_paper(c['id'], self.PREFIX)], ensure_ascii=False, indent=2) + '\n')
         self.legacy = {c['id']: c for c in json.loads(legacy_file.read_text())}
         assert len(self.legacy) == legacy_count, sorted(self.legacy)
         self.tasks, self.bindings, self.cards, self.question_figures = [], [], {}, []
@@ -193,7 +226,8 @@ class Draft:
         cid = f'{self.PREFIX}q{qkey}-{key}'
         concept = self.legacy[cid]['conceptId'] if cid in self.legacy else f"{meta['concept']}-{key}"
         card = dict(id=cid, subjectId='construction-studies', year=self.year, level=self.level, section='B',
-                    topicId=nodes[0], conceptId=concept, questionRef=f'{self.year} {CODE[self.level]} Q{qkey}{ref}',
+                    topicId=nodes[0], conceptId=concept,
+                    questionRef=f'{self.year} {CODE[self.level]} Q{qkey}{ref}' + (DEFERRED_REF if self.sitting == 'deferred' else ''),
                     stem=meta['stem'], questionText=text, tariffModel={'kind': 'fixed'},
                     totalMarks=total if total is not None else sum(x['marks'] for x in rows), rows=rows,
                     questionFigureKey=f'{self.FP}q{qkey}-original', questionFigureIncludesPrompt=True)
@@ -268,8 +302,8 @@ class Draft:
         assert len(corrections) == len(reasons)
         merged = [dict(cardId=self.PREFIX + k, aliasOf=self.PREFIX + v, preCorrectionSha256=card_hash(self.legacy[self.PREFIX + k]))
                   for k, v in consolidated.items()]
-        out = dict(schemaVersion=1, subjectId='construction-studies', year=self.year, level=self.level, lang='ev', sitting='main',
-                   paperKey='single', fileid=FILEID[self.level], component='theory',
+        out = dict(schemaVersion=1, subjectId='construction-studies', year=self.year, level=self.level, lang='ev', sitting=self.sitting,
+                   paperKey='single', fileid=edition(self.level, self.sitting), component='theory',
                    status=f"Q1–Q{len(self.questions)}{' and alternative Q10' if self.alt else ''} source-reviewed draft; integration pending.",
                    sourceHashes=self.hashes, tasks=self.tasks, bindings=self.bindings, questionFigures=self.question_figures,
                    addedIds=[t['card']['id'] for t in self.tasks if not t['correction']], corrections=corrections,
@@ -295,9 +329,9 @@ def validate(d, m, images=True, figure_dir=FIGURE_DIR, integrated=True):
     """m is the paper module: YEAR, LEVEL, HASHES, LEAF, COMPOSITE, TOTALS, TOPICS, FIGURES, SOLUTION, LEGACY,
     PAPER_PAGE, SCHEME_PAGES, LEDGER, PRIOR_COUNT and the optional CHOICES, LABELLED, GAPS, CONSOLIDATED,
     WORKED, RETIRED, TAILS, ALT, MARKED_ALIKE, CHOICE_FIGURE_PAGES."""
-    year, level = m.YEAR, m.LEVEL
-    P, S = sources(year, level)
-    FP, PREFIX, CROSS, _ = names(year, level)
+    year, level, sitting = m.YEAR, m.LEVEL, sitting_of(m)
+    P, S = sources(year, level, sitting)
+    FP, PREFIX, CROSS, _ = names(year, level, sitting)
     choices, labelled, gaps = _get(m, 'CHOICES', {}), _get(m, 'LABELLED', set()), _get(m, 'GAPS', {})
     consolidated, worked, retired = _get(m, 'CONSOLIDATED', {}), _get(m, 'WORKED', []), _get(m, 'RETIRED', [])
     tails, alt = _get(m, 'TAILS', {}), _get(m, 'ALT', False)
@@ -306,7 +340,7 @@ def validate(d, m, images=True, figure_dir=FIGURE_DIR, integrated=True):
     for f, h in hashes.items():
         assert hashlib.sha256((R / f).read_bytes()).hexdigest() == h, f
     assert (d['subjectId'], d['year'], d['level'], d['lang'], d['sitting'], d['paperKey'], d['fileid'], d['component']) == (
-        'construction-studies', year, level, 'ev', 'main', 'single', FILEID[level], 'theory')
+        'construction-studies', year, level, 'ev', sitting, 'single', edition(level, sitting), 'theory')
     cards = {t['card']['id'].removeprefix(PREFIX): t['card'] for t in d['tasks']}
     tasks = {t['card']['id'].removeprefix(PREFIX): t for t in d['tasks']}
     expected = set(m.LEAF) | set(m.COMPOSITE)
@@ -431,7 +465,7 @@ def validate(d, m, images=True, figure_dir=FIGURE_DIR, integrated=True):
     assert len({f['sha256'] for f in d['questionFigures']}) == len(m.FIGURES)
 
     # In-place corrections: same ID and concept ID, hash-linked to the pre-audit card they replace.
-    drafts = DRAFT_ROOT / f'construction-{year}-{level}'
+    drafts = draft_dir(year, level, sitting)
     legacy = {c['id']: c for c in json.loads((drafts / f'prior-{year}-{level}-cards.json').read_text())}
     assert set(legacy) == {PREFIX + k for k in m.LEGACY | set(consolidated)}
     fixes = {x['cardId']: x for x in d['corrections']}
@@ -458,7 +492,7 @@ def validate(d, m, images=True, figure_dir=FIGURE_DIR, integrated=True):
             assert prior['cards'][cid] == fixes[cid]['priorSha256'], cid
         construction_corrections.assert_prior_cards_preserved(prior['cards'], by_id)
         assert all(by_id[t['card']['id']] == t['card'] for t in d['tasks'])
-        assert sorted(c for c in by_id if c.startswith(PREFIX)) == sorted(t['card']['id'] for t in d['tasks'])
+        assert sorted(c for c in by_id if of_paper(c, PREFIX)) == sorted(t['card']['id'] for t in d['tasks'])
         gone = {w['cardId']: w for w in d.get('withdrawn', [])}
         aliases = construction_corrections.card_aliases()
         assert set(gone) == set(merged)
@@ -467,7 +501,7 @@ def validate(d, m, images=True, figure_dir=FIGURE_DIR, integrated=True):
             assert gone[cid]['priorSha256'] == x['preCorrectionSha256'] == prior['cards'][cid], cid
         for name in ['card-source-bindings.json', 'card-corrections.json']:  # no build-time override may replace reviewed content
             overrides = json.loads((R / 'scripts/markbank' / name).read_text()).get('construction-studies', {})
-            assert not [k for k in overrides if k.startswith(PREFIX)], name
+            assert not [k for k in overrides if of_paper(k, PREFIX)], name
         assert sorted((x['file'], x['cardId']) for x in d.get('retiredBuildOverrides', [])) == sorted((f'scripts/markbank/{f}', PREFIX + k) for f, k in retired)
         assert all(x['reason'].strip() and 'override' in x for x in d.get('retiredBuildOverrides', []))
     elif integrated is False:  # before integration (None skips authored checks)
@@ -487,8 +521,8 @@ def validate(d, m, images=True, figure_dir=FIGURE_DIR, integrated=True):
 # ---------------------------------------------------------------- mutation cases
 def mutation_cases(m, original):
     """The defects a paper's validator must reject, generated from the paper's own structure."""
-    _, PREFIX, CROSS, _ = names(m.YEAR, m.LEVEL)
-    FP = names(m.YEAR, m.LEVEL)[0]
+    _, PREFIX, CROSS, _ = names(m.YEAR, m.LEVEL, sitting_of(m))
+    FP = names(m.YEAR, m.LEVEL, sitting_of(m))[0]
 
     def card(d, key):
         return next(t['card'] for t in d['tasks'] if t['card']['id'] == PREFIX + key)
@@ -553,7 +587,7 @@ def mutation_cases(m, original):
     cases['solution shown before reveal'] = lambda d: card(d, sol_key).update(questionFigureKey=FP + m.SOLUTION[sol_key])
     cases['unclassified selection'] = lambda d: d['selectionLedger'].update(unclassified=1)
     cases['selection row dropped'] = lambda d: d['selectionLedger']['rows'].pop()
-    cases['uncertain source'] = lambda d: d['sourceHashes'].update({sources(m.YEAR, m.LEVEL)[0]: 'changed'})
+    cases['uncertain source'] = lambda d: d['sourceHashes'].update({sources(m.YEAR, m.LEVEL, sitting_of(m))[0]: 'changed'})
     legacy = sorted(m.LEGACY)
     if legacy:
         cases['correction loses its concept ID'] = lambda d: card(d, legacy[0]).update(conceptId='renamed-concept')
@@ -576,9 +610,10 @@ def mutation_cases(m, original):
 # ---------------------------------------------------------------- integration
 def integrate(m, here, alt_text, anchor_from_sidecar=False):
     """Not replay-safe: refuses once the reviewed file exists."""
-    year, level = m.YEAR, m.LEVEL
-    P, _ = sources(year, level)
-    FP, PREFIX, _, ATTRIBUTION = names(year, level)
+    year, level, sitting = m.YEAR, m.LEVEL, sitting_of(m)
+    P, _ = sources(year, level, sitting)
+    FP, PREFIX, _, ATTRIBUTION = names(year, level, sitting)
+    d = infix(sitting)
     here = Path(here)
     read = lambda p: json.loads(Path(p).read_text())  # noqa: E731
 
@@ -589,22 +624,22 @@ def integrate(m, here, alt_text, anchor_from_sidecar=False):
 
     draft = read(here / f'{level}-{year}-draft.json')
     report = validate(draft, m, figure_dir=here, integrated=False)
-    review_path = R / f'scripts/markbank/authored/construction-studies-{year}-{level}-reviewed.json'
-    bridge_path = R / f'scripts/markbank/atlas-reviews/construction-studies-{year}-{level}.json'
+    review_path = R / f'scripts/markbank/authored/construction-studies-{year}-{level}{d}-reviewed.json'
+    bridge_path = R / f'scripts/markbank/atlas-reviews/construction-studies-{year}-{level}{d}.json'
     authored_path = R / 'scripts/markbank/authored/construction-studies.json'
     manifest_path = R / 'components/MarkBank/figures-construction-studies.json'
     aliases_path = R / 'components/MarkBank/cardAliases.ts'
     fixture = R / 'test/fixtures/constructionReviewedPapers.json'
-    anchor_path = R / f'public/paper-anchors/{year}/{FILEID[level]}.json'
+    anchor_path = R / f'public/paper-anchors/{year}/{edition(level, sitting)}.json'
     assert not review_path.exists() and not bridge_path.exists()
-    assert (R / f"examiner-reports/construction-studies/schemes/{year}-{'hl' if level == 'higher' else 'ol'}.md").exists()
+    assert (R / f"examiner-reports/construction-studies/schemes/{year}-{'hl' if level == 'higher' else 'ol'}{d}.md").exists()
     prior = read(authored_path)
     assert len(prior) == m.PRIOR_COUNT and len({c['id'] for c in prior}) == m.PRIOR_COUNT
     tasks = draft['tasks']
     corrected = {t['card']['id']: t['card'] for t in tasks if t['correction']}
     added = [t['card'] for t in tasks if not t['correction']]
     withdrawn_ids = [x['cardId'] for x in draft.get('consolidatedLegacy', [])]
-    assert set(corrected) | set(withdrawn_ids) == {c['id'] for c in prior if c['id'].startswith(PREFIX)}
+    assert set(corrected) | set(withdrawn_ids) == {c['id'] for c in prior if of_paper(c['id'], PREFIX)}
     assert not {c['id'] for c in added} & {c['id'] for c in prior}
     assert not {c['questionRef'] for c in [*added, *corrected.values()]} & {c['questionRef'] for c in prior if c['id'] not in corrected and c['id'] not in withdrawn_ids}
     manifest = read(manifest_path)
@@ -655,7 +690,7 @@ def integrate(m, here, alt_text, anchor_from_sidecar=False):
         retired.append(dict(file=f'scripts/markbank/{name}', cardId=PREFIX + key, override=old,
                             reason='A pre-audit build-time override. The reviewed card carries its own lifted wording, scheme rows and source material, so the override is retired rather than allowed to replace reviewed content.'))
     for name in ['card-source-bindings.json', 'card-corrections.json']:
-        assert not [k for k in read(R / 'scripts/markbank' / name).get('construction-studies', {}) if k.startswith(PREFIX)], name
+        assert not [k for k in read(R / 'scripts/markbank' / name).get('construction-studies', {}) if of_paper(k, PREFIX)], name
 
     withdrawn = [dict(cardId=x['cardId'], priorSha256=prior_hashes[x['cardId']], reason=CHOICE_RULE, aliasOf=x['aliasOf'])
                  for x in draft.get('consolidatedLegacy', [])]
@@ -671,7 +706,7 @@ def integrate(m, here, alt_text, anchor_from_sidecar=False):
     extra = dict(withdrawn=withdrawn) if withdrawn else {}
     if retired:
         extra['retiredBuildOverrides'] = retired
-    status = (f"{year} {WORD[level]} main English theory Q1–Q{len(m.QUESTIONS)}{' and the alternative Q10' if getattr(m, 'ALT', False) else ''}: "
+    status = (f"{year} {WORD[level]} {'deferred' if d else 'main'} English theory Q1–Q{len(m.QUESTIONS)}{' and the alternative Q10' if getattr(m, 'ALT', False) else ''}: "
               f"{len(tasks)} source-reviewed tasks ({len(added)} added, {len(corrected)} pre-audit cards corrected in place under their original IDs"
               + (f'; {len(withdrawn)} live per-item cards withdrawn into their one choice card through progress aliases' if withdrawn else '')
               + '); whole theory paper reconciled against the original paper and scheme. Practical component and Irish edition remain separate work.')
@@ -689,15 +724,16 @@ def integrate(m, here, alt_text, anchor_from_sidecar=False):
     check = read(authored_path)
     kept_ids = [c['id'] for c in prior if c['id'] not in gone]
     assert [c['id'] for c in check[:len(kept_ids)]] == kept_ids and check[len(kept_ids):] == added
-    save(bridge_path, dict(schemaVersion=1, subjectId='construction-studies', year=year, level=level, lang='ev', sitting='main',
+    save(bridge_path, dict(schemaVersion=1, subjectId='construction-studies', year=year, level=level, lang='ev', sitting=sitting,
                            paperKey='single', reviewedAt=now, authoringReview=str(review_path.relative_to(R)), sourceHashes=draft['sourceHashes'],
                            expectedRuntimeCards=len(tasks), reason=status,
-                           questions=[dict(n=q, fileid=FILEID[level], topicIds=sorted({t for b in draft['bindings'] if b['questionNumber'] == q for t in b['atlasTopicIds']}))
+                           questions=[dict(n=q, fileid=edition(level, sitting), topicIds=sorted({t for b in draft['bindings'] if b['questionNumber'] == q for t in b['atlasTopicIds']}))
                                       for q in draft['questionsReviewed']],
                            cards=draft['bindings']))
     papers = read(fixture) if fixture.exists() else []
-    assert not [p for p in papers if (p['year'], p['level']) == (year, level)]
-    papers.append(dict(year=year, level=level, validator=f'scripts/markbank/authoring/construction_{year}_{level}.py', result=report,
+    assert not [p for p in papers if (p['year'], p['level'], p.get('sitting', 'main')) == (year, level, sitting)]
+    papers.append(dict(year=year, level=level, **({'sitting': sitting} if d else {}),
+                       validator=f"scripts/markbank/authoring/construction_{year}_{level}{d.replace('-', '_')}.py", result=report,
                        priorCount=m.PRIOR_COUNT, addedIds=[c['id'] for c in added], correctedIds=[t['card']['id'] for t in tasks if t['correction']],
                        withdrawnIds=withdrawn_ids, keptChoiceIds=sorted({w['aliasOf'] for w in withdrawn}),
                        choiceCardIds=[PREFIX + k for k in sorted(getattr(m, 'CHOICES', {}))]))
@@ -711,7 +747,8 @@ def integrate(m, here, alt_text, anchor_from_sidecar=False):
 
 def main(m):
     """Validator entry point for a paper module."""
-    print(json.dumps(validate(json.loads((R / f'scripts/markbank/authored/construction-studies-{m.YEAR}-{m.LEVEL}-reviewed.json').read_text()), m)))
+    d = infix(sitting_of(m))
+    print(json.dumps(validate(json.loads((R / f'scripts/markbank/authored/construction-studies-{m.YEAR}-{m.LEVEL}{d}-reviewed.json').read_text()), m)))
 
 
 if __name__ == '__main__':

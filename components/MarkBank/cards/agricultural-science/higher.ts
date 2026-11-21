@@ -36871,6 +36871,2364 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q1ai", topicId: "agsci-2-1", conceptId: "irish-soil-type-locations",
+    section: "A", questionRef: "2023 HL Q1(a)(i) — Deferred sitting",
+    questionText: "State a location in Ireland of the two named soil types in the table below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mainly midlands and eastern counties", marks: 3, contextNote: "Brown Earth." },
+    { id: "r-2", kind: "point", verbatim: "Leitrim, north Kerry, Clare", marks: 3, contextNote: "Gley. The scheme prints 3+3, one location for each soil type." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q1(a)(i)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q1aii", topicId: "agsci-2-1", conceptId: "limestone-soil-properties",
+    section: "A", questionRef: "2023 HL Q1(a)(ii) — Deferred sitting",
+    questionText: "Briefly describe two properties of a soil formed from limestone rock.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Free draining / prone to drought / alkaline or high pH / strong developed structure", marks: 4, contextNote: "Two properties, 2(2).", group: {"claimMax":2,"perOption":2,"options":["Free draining","prone to drought","alkaline or high pH","strong developed structure"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q1(a)(ii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q1bi", topicId: "agsci-2-1", conceptId: "soil-formation-factors",
+    section: "A", questionRef: "2023 HL Q1(b)(i) — Deferred sitting",
+    questionText: "List three factors responsible for soil formation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Parent material / climate / living organisms / topography / time", marks: 6, contextNote: "Three factors, 3(2).", group: {"claimMax":3,"perOption":2,"options":["Parent material","climate","living organisms","topography","time"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q1(b)(i)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q1bii", topicId: "agsci-2-1", conceptId: "soil-formation-factor-described",
+    section: "A", questionRef: "2023 HL Q1(b)(ii) — Deferred sitting",
+    questionText: "Describe one factor responsible for soil formation listed in part (i).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Parent rock is weathered into smaller particles / granite contains quartz which is weathered into sand particles and acidic in nature / limestone rock is alkaline in nature and increases the pH of soil formed from it / Temperature – heating and cooling of rock Water – physical and chemical weathering – freeze-thaw or hydrolysis or solution or hydration / Slope of landscape / steep slopes the soil is eroded down to valley – thin layer of soil on slopes and deep fertile soil in valley / Contribute humus when die / microorganisms help to decompose organic matter / organic matter increases soil fertility / soils that develop / Young soils (Ireland) have high levels of rock available for weathering", marks: 4, contextNote: "One factor described, 4 marks. In order the options describe parent material, climate, topography, organisms and time; the alternatives within one factor earn one award.", group: {"claimMax":1,"perOption":4,"options":["Parent rock is weathered into smaller particles / granite contains quartz which is weathered into sand particles and acidic in nature / limestone rock is alkaline in nature and increases the pH of soil formed from it","Temperature – heating and cooling of rock Water – physical and chemical weathering – freeze-thaw or hydrolysis or solution or hydration","Slope of landscape / steep slopes the soil is eroded down to valley – thin layer of soil on slopes and deep fertile soil in valley","Contribute humus when die / microorganisms help to decompose organic matter / organic matter increases soil fertility / soils that develop","Young soils (Ireland) have high levels of rock available for weathering"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q1(b)(ii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q2a", topicId: "agsci-4-1", conceptId: "milk-let-down-hormone",
+    section: "A", questionRef: "2023 HL Q2(a) — Deferred sitting",
+    stem: "Analyse the diagram of the milk let down process and answer the questions which follow.",
+    questionText: "Identify the hormone A responsible for milk let down by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Oxytocin", marks: 1, contextNote: "The scheme ticks Oxytocin." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q2(a)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q2b", topicId: "agsci-4-1", conceptId: "adrenaline-blocks-milk-let-down",
+    section: "A", questionRef: "2023 HL Q2(b) — Deferred sitting",
+    stem: "Analyse the diagram of the milk let down process and answer the questions which follow.",
+    questionText: "If a cow becomes distressed they produce the hormone adrenaline which decreases hormone A concentration. Outline the implication of hormone A being reduced for dairy cows.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Reduced milk yield", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q2(b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q2c", topicId: "agsci-4-3-3", conceptId: "milking-stress-reduction",
+    section: "A", questionRef: "2023 HL Q2(c) — Deferred sitting",
+    stem: "Analyse the diagram of the milk let down process and answer the questions which follow.",
+    questionText: "List one way a cow can become stressed at milking and outline how a farmer can reduce this level of stress in the cows.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "New operator or loud noise / have a familiar person with the new operator for a while / play a radio in parlour", marks: 6, contextNote: "Cause of stress and the matching way of reducing it, 3+3.", group: {"claimMax":2,"perOption":3,"options":["New operator or loud noise","have a familiar person with the new operator for a while / play a radio in parlour"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "noise",
+                "label": "New operator or loud noise",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "New operator or loud noise / have a familiar person with the new operator for a while / play a radio in parlour",
+                            "marks": 6,
+                            "contextNote": "Cause of stress and the matching way of reducing it, 3+3.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 3,
+                                  "options": [
+                                        "New operator or loud noise",
+                                        "have a familiar person with the new operator for a while / play a radio in parlour"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "movement",
+                "label": "a lot of strange movement in yard (e.g silage production)",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "a lot of strange movement in yard (e.g silage production) / Don’t have tractors coming in past parlour during milking",
+                            "marks": 6,
+                            "contextNote": "Cause of stress and the matching way of reducing it, 3+3.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 3,
+                                  "options": [
+                                        "a lot of strange movement in yard (e.g silage production)",
+                                        "Don’t have tractors coming in past parlour during milking"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q2(c)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q3a", topicId: "agsci-1-3", conceptId: "qualitative-botanical-survey",
+    section: "A", questionRef: "2023 HL Q3(a) — Deferred sitting",
+    stem: "Kevin is looking to expand his dairy farm and has noticed a permanent pasture field close to him for sale. He would like to identify the botanical composition of this field in order to determine if he would need to reseed the field for use in silage production. Kevin carried out the investigation using a quadrat to determine the field’s botanical composition.",
+    questionText: "State with reason if the results collected are qualitative or quantitative.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Qualitative", marks: 2, contextNote: "State." },
+    { id: "r-2", kind: "point", verbatim: "Reason: determining the type of plants present", marks: 2, contextNote: "Reason." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q3(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q3b", topicId: "agsci-1-2", conceptId: "quadrat-repeat-throws",
+    section: "A", questionRef: "2023 HL Q3(b) — Deferred sitting",
+    stem: "Kevin is looking to expand his dairy farm and has noticed a permanent pasture field close to him for sale. He would like to identify the botanical composition of this field in order to determine if he would need to reseed the field for use in silage production. Kevin carried out the investigation using a quadrat to determine the field’s botanical composition.",
+    questionText: "Describe how Kevin can ensure the results he obtained are accurate.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Quadrat was thrown a number of times (e.g.10)", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q3(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q3c", topicId: "agsci-3-2", conceptId: "pasture-weed-identification",
+    section: "A", questionRef: "2023 HL Q3(c) — Deferred sitting",
+    stem: "Kevin is looking to expand his dairy farm and has noticed a permanent pasture field close to him for sale. He would like to identify the botanical composition of this field in order to determine if he would need to reseed the field for use in silage production. Kevin carried out the investigation using a quadrat to determine the field’s botanical composition.",
+    questionText: "Identify each of the plants below Kevin found when carrying out the investigation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Dandelion", marks: 2, contextNote: "Photograph A." },
+    { id: "r-2", kind: "point", verbatim: "B = Buttercup", marks: 2, contextNote: "Photograph B." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q3(c)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q4a", topicId: "agsci-2-3", conceptId: "eutrophication",
+    section: "A", questionRef: "2023 HL Q4(a) — Deferred sitting",
+    stem: "Read the article and answer the questions which follow. Natural Capital and Other Resources Agriculture is the world’s largest user of freshwater, accounting for 70% of global freshwater use. There are large differences in water use between regions and farming systems. In more temperate regions like Ireland, the interface between agriculture and water is predominantly defined by the impact of farming on the quality of drinking and surface waters. Here, the prevention of eutrophication, caused by excess nutrient losses to water, represents one of the main challenges to sustainability. (Adapted from Teagasc-Technology-Foresight-Report 2035, 2022) [The term underlined on the paper is: eutrophication]",
+    questionText: "Explain the underlined term.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "the process by which a water becomes enriched in dissolved nutrients", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q4(a)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q4b", topicId: "agsci-2-3", conceptId: "reducing-eutrophication",
+    section: "A", questionRef: "2023 HL Q4(b) — Deferred sitting",
+    stem: "Read the article and answer the questions which follow. Natural Capital and Other Resources Agriculture is the world’s largest user of freshwater, accounting for 70% of global freshwater use. There are large differences in water use between regions and farming systems. In more temperate regions like Ireland, the interface between agriculture and water is predominantly defined by the impact of farming on the quality of drinking and surface waters. Here, the prevention of eutrophication, caused by excess nutrient losses to water, represents one of the main challenges to sustainability. (Adapted from Teagasc-Technology-Foresight-Report 2035, 2022)",
+    questionText: "State two agricultural practices which could be used to reduce eutrophication.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Spread fertiliser in suitable conditions / spread fertiliser at correct time / spread correct amount of fertilizer / use of buffer zone", marks: 4, contextNote: "Two practices, 2+2.", group: {"claimMax":2,"perOption":2,"options":["Spread fertiliser in suitable conditions","spread fertiliser at correct time","spread correct amount of fertilizer","use of buffer zone"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q4(b)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q4c", topicId: "agsci-2-3", conceptId: "implementing-eutrophication-control",
+    section: "A", questionRef: "2023 HL Q4(c) — Deferred sitting",
+    stem: "Read the article and answer the questions which follow. Natural Capital and Other Resources Agriculture is the world’s largest user of freshwater, accounting for 70% of global freshwater use. There are large differences in water use between regions and farming systems. In more temperate regions like Ireland, the interface between agriculture and water is predominantly defined by the impact of farming on the quality of drinking and surface waters. Here, the prevention of eutrophication, caused by excess nutrient losses to water, represents one of the main challenges to sustainability. (Adapted from Teagasc-Technology-Foresight-Report 2035, 2022)",
+    questionText: "Descibe how one of the practices stated in (b) above could be implemented on the farm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Slurry spreader with umbilical cord / less volitalisation / less leaching / more precise spreading / dry / sunshine / low wind / condition mower", marks: 4, contextNote: "One practice described, 4 marks. A misprint in the scheme: “less volitalisation” should read “less volatilisation”. The card keeps the printed wording.", group: {"claimMax":1,"perOption":4,"options":["Slurry spreader with umbilical cord","less volitalisation","less leaching","more precise spreading","dry","sunshine","low wind","condition mower"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q4(c)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q5a", topicId: "agsci-4-2", conceptId: "angus-hereford-identification",
+    section: "A", questionRef: "2023 HL Q5(a) — Deferred sitting",
+    stem: "The photographs show two different beef breeds found on Irish farms.",
+    questionText: "Identify the two beef breeds shown in the photographs.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Aberdeen Angus (poly)", marks: 2, contextNote: "Photograph A." },
+    { id: "r-2", kind: "point", verbatim: "B: Hereford (whitehead)", marks: 2, contextNote: "Photograph B. The scheme prints 2(2)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q5(a)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q5b", topicId: "agsci-4-2", conceptId: "beef-breed-characteristics",
+    section: "A", questionRef: "2023 HL Q5(b) — Deferred sitting",
+    stem: "The photographs show two different beef breeds found on Irish farms.",
+    questionText: "Outline two characteristics which classify animal A as a beef breed.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "early maturing / polled / easy calving / produces lean carcass", marks: 4, contextNote: "Two characteristics of animal A (Aberdeen Angus), 2(2). The paper asks only about animal A (Aberdeen Angus), but the scheme also prints a list for B (Hereford: good confirmation / well-muscled / strong legs and feet / early maturing / easy calving), where “confirmation” should read “conformation”. The card keeps the scheme’s list for A, 2(2).", group: {"claimMax":2,"perOption":2,"options":["early maturing","polled","easy calving","produces lean carcass"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q5(b)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q5c", topicId: "agsci-4-3-1", conceptId: "early-maturing-breeds-24-month-slaughter",
+    section: "A", questionRef: "2023 HL Q5(c) — Deferred sitting",
+    stem: "The photographs show two different beef breeds found on Irish farms.",
+    questionText: "To increase sustainability on farms it is advised to reduce the slaughter weight of animals to 24 months. Outline why the beef breeds shown above are suitable for slaughter at 24 months.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Early maturing breeds and finish early", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q5(c)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3","agsci-3-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q6ai", topicId: "agsci-4-3-3", additionalTopicIds: ["agsci-3-3-2"], conceptId: "biosecurity-vs-biodiversity",
+    section: "A", questionRef: "2023 HL Q6(a)(i) — Deferred sitting",
+    questionText: "Distinguish between biosecurity and biodiversity.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Biosecurity is the prevention of disease-causing agents entering or leaving any place where they can pose a risk to farm animals, other animals, humans, or the safety and quality of a food product.", marks: 2, contextNote: "Biosecurity." },
+    { id: "r-2", kind: "point", verbatim: "Biodiversity is all the different kinds of life or organisms in one area", marks: 2, contextNote: "Biodiversity. The scheme prints 2(2)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q6(a)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q6aii", topicId: "agsci-4-3-3", conceptId: "direct-indirect-disease-threats",
+    section: "A", questionRef: "2023 HL Q6(a)(ii) — Deferred sitting",
+    stem: "Disease threats to stock on a farm can be either direct or indirect.",
+    questionText: "List one direct or one indirect disease threat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Animals that have contact with each other and pass the disease to each other / incorporating new animals into herd or flock without isolation period", marks: 2, contextNote: "Direct threat. The paper asks for “one direct or one indirect” disease threat, but the scheme prints 2(2) with a pool for each column of the Direct / Indirect answer table, and Question 6(a) totals 10 only with 4 marks here. The card awards 2 for a direct threat and 2 for an indirect one.", group: {"claimMax":1,"perOption":2,"options":["Animals that have contact with each other and pass the disease to each other","incorporating new animals into herd or flock without isolation period"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Contaminated food or drinking water / air borne disease", marks: 2, contextNote: "Indirect threat. The scheme prints 2(2) for this part, with a pool for each column of the answer table.", group: {"claimMax":1,"perOption":2,"options":["Contaminated food or drinking water","air borne disease"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q6(a)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q6aiii", topicId: "agsci-4-3-3", conceptId: "reducing-disease-threats",
+    section: "A", questionRef: "2023 HL Q6(a)(iii) — Deferred sitting",
+    stem: "Disease threats to stock on a farm can be either direct or indirect. List one direct or one indirect disease threat.",
+    questionText: "Explain how farmers can reduce the disease risk from the disease threat listed in part (ii) above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Isolate purchased animals / isolate sick animals / buy feed from a reputable source / store feed in a sealed container (vermin proof) / good ventilation in animal housing", marks: 2, contextNote: "One way, matching the threat listed in part (ii).", group: {"claimMax":1,"perOption":2,"options":["Isolate purchased animals","isolate sick animals","buy feed from a reputable source","store feed in a sealed container (vermin proof)","good ventilation in animal housing"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q6(a)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q6bi", topicId: "agsci-4-3-3", conceptId: "subcutaneous-injection-sites",
+    section: "A", questionRef: "2023 HL Q6(b)(i) — Deferred sitting",
+    stem: "The picture below shows the recommended application sites for different animal treatments. Analyse the picture and answer the questions which follow.",
+    questionText: "Outline a reason why there are subcutaneous sites only.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Ease of administration / don’t affect the high price meat cuts", marks: 1, group: {"claimMax":1,"perOption":1,"options":["Ease of administration","don’t affect the high price meat cuts"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q6(b)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q6bii", topicId: "agsci-4-3-3", conceptId: "pour-on-insecticide",
+    section: "A", questionRef: "2023 HL Q6(b)(ii) — Deferred sitting",
+    stem: "The picture below shows the recommended application sites for different animal treatments. Analyse the picture and answer the questions which follow.",
+    questionText: "Identify which type of medicine is administered using a pour-on by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Insecticide", marks: 3, contextNote: "The scheme ticks Insecticide." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q6(b)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q6biii", topicId: "agsci-4-3-3", conceptId: "spot-on-ectoparasites",
+    section: "A", questionRef: "2023 HL Q6(b)(iii) — Deferred sitting",
+    stem: "The picture below shows the recommended application sites for different animal treatments. Analyse the picture and answer the questions which follow.",
+    questionText: "State one ectoparasite on animals that can be treated using a spot-on treatment.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Lice / tick", marks: 3, group: {"claimMax":1,"perOption":3,"options":["Lice","tick"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q6(b)(iii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-5","agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q6biv", topicId: "agsci-1-5", additionalTopicIds: ["agsci-4-3-3"], conceptId: "animal-treatment-safety",
+    section: "A", questionRef: "2023 HL Q6(b)(iv) — Deferred sitting",
+    stem: "The picture below shows the recommended application sites for different animal treatments. Analyse the picture and answer the questions which follow.",
+    questionText: "Outline one safety precaution taken when carrying out animal treatments.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Animals are securely contained (e.g. crush) / be careful not to stab yourself with needle / have experienced stock person / do not over or under dose animals", marks: 3, group: {"claimMax":1,"perOption":3,"options":["Animals are securely contained (e.g. crush)","be careful not to stab yourself with needle","have experienced stock person","do not over or under dose animals"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q6(b)(iv)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q7a", topicId: "agsci-3-3-3", conceptId: "hay-preservation-dehydration",
+    section: "A", questionRef: "2023 HL Q7(a) — Deferred sitting",
+    stem: "Daniel usually harvests excess grass for silage. As 2022 was an exceptional year for prolonged periods of dry weather he decided to save hay instead.",
+    questionText: "State the type of preservation used in the production of hay.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dehydration", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q7(a)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q7b", topicId: "agsci-3-3-3", conceptId: "hay-vs-baled-silage-production",
+    section: "A", questionRef: "2023 HL Q7(b) — Deferred sitting",
+    stem: "Daniel usually harvests excess grass for silage. As 2022 was an exceptional year for prolonged periods of dry weather he decided to save hay instead.",
+    questionText: "Outline two differences other than the type of preservation, in the production of hay from baled silage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Grass has reached inflorescence stage / heavily dependent on prolonged dry period / clean / easily transported / produces no effluent", marks: 6, contextNote: "Two differences, 2(3).", group: {"claimMax":2,"perOption":3,"options":["Grass has reached inflorescence stage","heavily dependent on prolonged dry period","clean","easily transported","produces no effluent"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q7(b)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-5","agsci-3-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q7c", topicId: "agsci-1-5", additionalTopicIds: ["agsci-3-3-3"], conceptId: "storing-damp-hay-risk",
+    section: "A", questionRef: "2023 HL Q7(c) — Deferred sitting",
+    stem: "Daniel usually harvests excess grass for silage. As 2022 was an exceptional year for prolonged periods of dry weather he decided to save hay instead.",
+    questionText: "Outline one safety risk when storing hay bales with a high moisture (>22%) content.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Prevent fire (overheating) / prevent mould growth (moisture) / ventilation", marks: 2, group: {"claimMax":1,"perOption":2,"options":["Prevent fire (overheating)","prevent mould growth (moisture)","ventilation"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q7(c)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-2","agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q8a", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-1-3"], conceptId: "lactation-curve-highest-yield",
+    section: "A", questionRef: "2023 HL Q8(a) — Deferred sitting",
+    stem: "John received the annual milk recording summary and example of results are shown in the graph below. Analyse the graph and answer the questions which follow.",
+    questionText: "Identify John’s highest yielding cow.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cow 4", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q8(a)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3","agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q8b", topicId: "agsci-4-3-3", additionalTopicIds: ["agsci-1-3"], conceptId: "milk-yield-decline-cause",
+    section: "A", questionRef: "2023 HL Q8(b) — Deferred sitting",
+    stem: "John received the annual milk recording summary and example of results are shown in the graph below. Analyse the graph and answer the questions which follow.",
+    questionText: "Cow number 2 had a dramatic decline in milk yield, outline one reason for this decrease.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Illness – mastitis or lameness", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q8(b)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-2","agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q8c", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-1-3"], conceptId: "predicted-lactation-yield",
+    section: "A", questionRef: "2023 HL Q8(c) — Deferred sitting",
+    stem: "John received the annual milk recording summary and example of results are shown in the graph below. Analyse the graph and answer the questions which follow.",
+    questionText: "John was planning on building a new shed and wanted to calculate his projected income for the year. Based on an average peak yield of 43 litres, calculate the predicted yield for the cows.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "43 x 220 = 9460 litres", marks: 4, contextNote: "The scheme multiplies the peak yield by 220." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q8(c)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q9ai", topicId: "agsci-4-3-3", conceptId: "johnes-disease-symptoms",
+    section: "A", questionRef: "2023 HL Q9(a)(i) — Deferred sitting",
+    stem: "Johne’s disease is a bacterial disease of cattle and other ruminants for which there is no cure. Cattle usually become infected as calves in early life by drinking contaminated milk or eating food with the bacteria.",
+    questionText: "Briefly describe the symptoms of this disease in cattle.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Weight loss / diarrhoea with normal appetite / soft swelling may occur under the jaw", marks: 6, contextNote: "Two symptoms: the first correct earns 5 marks and the second 1 (5+1).", group: {"claimMax":2,"perOption":5,"options":["Weight loss","diarrhoea with normal appetite","soft swelling may occur under the jaw"],"perOptionSteps":[5,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q9(a)(i)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q9aii", topicId: "agsci-4-3-3", conceptId: "johnes-disease-control",
+    section: "A", questionRef: "2023 HL Q9(a)(ii) — Deferred sitting",
+    stem: "Johne’s disease is a bacterial disease of cattle and other ruminants for which there is no cure. Cattle usually become infected as calves in early life by drinking contaminated milk or eating food with the bacteria.",
+    questionText: "Outline ways a farmer can control the spread of the disease on their farm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Provide mains water and keep troughs clean / fence off rivers and other water sources (especially ponds and other areas of stagnant water) / avoid grazing with other livestock that can carry Johne's disease infection", marks: 4, contextNote: "Two ways, 2(2).", group: {"claimMax":2,"perOption":2,"options":["Provide mains water and keep troughs clean","fence off rivers and other water sources (especially ponds and other areas of stagnant water)","avoid grazing with other livestock that can carry Johne's disease infection"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q9(a)(ii)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q9bi", topicId: "agsci-4-3-3", conceptId: "redwater-diagnosis",
+    section: "A", questionRef: "2023 HL Q9(b)(i) — Deferred sitting",
+    stem: "Mia was checking her cattle that were on a permanent pasture and noticed one of the animals away from the herd, reduced appetite, high temperature and frothy urine with reddish brown colour.",
+    questionText: "State the disease from which the animal is suffering.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Red water", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q9(b)(i)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q9bii", topicId: "agsci-4-3-3", conceptId: "redwater-treatment",
+    section: "A", questionRef: "2023 HL Q9(b)(ii) — Deferred sitting",
+    stem: "Mia was checking her cattle that were on a permanent pasture and noticed one of the animals away from the herd, reduced appetite, high temperature and frothy urine with reddish brown colour.",
+    questionText: "Outline how an animal with this disease could be treated.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Injection to kill parasite / blood transfusion", marks: 3, group: {"claimMax":1,"perOption":3,"options":["Injection to kill parasite","blood transfusion"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q9(b)(ii)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q9biii", topicId: "agsci-4-3-3", conceptId: "redwater-prevention",
+    section: "A", questionRef: "2023 HL Q9(b)(iii) — Deferred sitting",
+    stem: "Mia was checking her cattle that were on a permanent pasture and noticed one of the animals away from the herd, reduced appetite, high temperature and frothy urine with reddish brown colour.",
+    questionText: "List management practices which could prevent this disease.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Good grazing management / don’t put animals in long overgrown grass or scrub during spring or autumn", marks: 4, contextNote: "Two practices, 2(2).", group: {"claimMax":2,"perOption":2,"options":["Good grazing management","don’t put animals in long overgrown grass or scrub during spring or autumn"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q9(b)(iii)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q10a", topicId: "agsci-4-3-2", conceptId: "sheep-flock-data-use",
+    section: "A", questionRef: "2023 HL Q10(a) — Deferred sitting",
+    stem: "Collection of data on farms helps to improve animal performance and makes management easier. Examples of data collected on a sheep farm are shown in the diagram below.",
+    questionText: "Outline how the data collected can assist farmers in improving animal performance and making management easier.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Helps makes informed decisions about animal performance / helps make decisions on culling stock / helps make decisions on level of feeding based on number of offspring / identify most productive animals for breeding", marks: 9, contextNote: "Three ways, 3(3). The diagram shows lamb weight, lambing difficulty, ewe performance (milk and mothering ability) and scanning data.", group: {"claimMax":3,"perOption":3,"options":["Helps makes informed decisions about animal performance","helps make decisions on culling stock","helps make decisions on level of feeding based on number of offspring","identify most productive animals for breeding"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q10(a)",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q10b", topicId: "agsci-4-3-2", conceptId: "lamb-slaughter-weight",
+    section: "A", questionRef: "2023 HL Q10(b) — Deferred sitting",
+    stem: "Collection of data on farms helps to improve animal performance and makes management easier. Examples of data collected on a sheep farm are shown in the diagram below.",
+    questionText: "The farmer was weighing the lambs. Identify the desired slaughter weight by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "42", marks: 1, contextNote: "The scheme ticks 42 (kg)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q10(b)",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-2-1","agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q11a", topicId: "agsci-2-2-1", additionalTopicIds: ["agsci-1-3"], conceptId: "optimum-ph-germination",
+    section: "A", questionRef: "2023 HL Q11(a) — Deferred sitting",
+    stem: "The graph shows the effect of pH on the germination of a crop. Analyse the graph and answer the questions which follow.",
+    questionText: "Identify the optimum pH for germination of the crop.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "pH 5", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q11(a)",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-2-1","agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q11b", topicId: "agsci-2-2-1", additionalTopicIds: ["agsci-1-3"], conceptId: "low-ph-germination",
+    section: "A", questionRef: "2023 HL Q11(b) — Deferred sitting",
+    stem: "The graph shows the effect of pH on the germination of a crop. Analyse the graph and answer the questions which follow.",
+    questionText: "A farmer tested his soil pH and the results showed the pH of the soil is 4. State the implications of this result in relation to the germination of the crop on his farm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "As the pH is very low, there will be a lower germination rate of the crop or only 32% of the seeds will germinate at pH 4", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q11(b)",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-2-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q11c", topicId: "agsci-2-2-1", conceptId: "ph-influenced-soil-properties",
+    section: "A", questionRef: "2023 HL Q11(c) — Deferred sitting",
+    stem: "The graph shows the effect of pH on the germination of a crop. Analyse the graph and answer the questions which follow.",
+    questionText: "State two other soil properties that are influenced by soil pH.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Amount of nutrients and chemicals that are soluble in soil water / amount of nutrients available to plants", marks: 4, contextNote: "Two properties, 2(2).", group: {"claimMax":2,"perOption":2,"options":["Amount of nutrients and chemicals that are soluble in soil water","amount of nutrients available to plants"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q11(c)",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q12ai", topicId: "agsci-4-1", conceptId: "chewing-the-cud",
+    section: "A", questionRef: "2023 HL Q12(a)(i) — Deferred sitting",
+    stem: "Read the article and answer the questions which follow. Chewing Cud: Signs of Rumination in Cows Every farmer, stockperson and veterinarian know that animals resting and chewing the cud are healthy and making them profit. Chewing the cud is the key visible sign of ruminant livestock health and wellbeing. There are many factors that may influence the amount of time an animal spends chewing the cud, for example: Time of feeding – cows tend to eat more at dusk compared to dawn and hence ruminating more at night; feed space – if restricted, cows spending more time foraging for food; forage chop length and its correlation between fibre and starch/sugar – can account for up to a 33% of the variation in the time spent chewing. (Adapted from Agriland, 2022) [The term underlined on the paper is: Chewing the cud]",
+    questionText: "Explain the underlined term.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "When a portion of food returns from a ruminant’s stomach to the mouth, to be re-chewed.", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q12(a)(i)",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q12aii", topicId: "agsci-4-3-2", conceptId: "maximising-rumination",
+    section: "A", questionRef: "2023 HL Q12(a)(ii) — Deferred sitting",
+    stem: "Read the article and answer the questions which follow. Chewing Cud: Signs of Rumination in Cows Every farmer, stockperson and veterinarian know that animals resting and chewing the cud are healthy and making them profit. Chewing the cud is the key visible sign of ruminant livestock health and wellbeing. There are many factors that may influence the amount of time an animal spends chewing the cud, for example: Time of feeding – cows tend to eat more at dusk compared to dawn and hence ruminating more at night; feed space – if restricted, cows spending more time foraging for food; forage chop length and its correlation between fibre and starch/sugar – can account for up to a 33% of the variation in the time spent chewing. (Adapted from Agriland, 2022)",
+    questionText: "Based on the factors that may influence the amount of time an animal spends chewing the cud outlined in the article, advise a farmer how they could maximise this process on their farms.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Feed the cows at dusk (to increase rumination at night) / do not restrict access to feed / do not chop the grass too short or increase chop length", marks: 6, contextNote: "Two pieces of advice, 2(3).", group: {"claimMax":2,"perOption":3,"options":["Feed the cows at dusk (to increase rumination at night)","do not restrict access to feed","do not chop the grass too short or increase chop length"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q12(a)(ii)",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q12bi", topicId: "agsci-3-1", conceptId: "transpiration-stages",
+    section: "A", questionRef: "2023 HL Q12(b)(i) — Deferred sitting",
+    questionText: "Outline scientifically what is happening at any two stages of the transpiration process in the plant.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Roots: Water is passively transported into the roots by osmosis (and then into the xylem) / Stem: water travels up through xylem vessels in the stem / Leaves: water evaporates from leaf surfaces and leaves the plant by diffusion through the stomata.", marks: 4, contextNote: "Any two of the three printed stages (1. Roots, 2. Stems, 3. Leaves), 2(2). Alternatives within one stage earn one award.", group: {"claimMax":2,"perOption":2,"options":["Roots: Water is passively transported into the roots by osmosis (and then into the xylem)","Stem: water travels up through xylem vessels in the stem","Leaves: water evaporates from leaf surfaces and leaves the plant by diffusion through the stomata."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q12(b)(i)",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q12bii", topicId: "agsci-3-3-2", conceptId: "fungal-crop-disease-symptom-prevention",
+    section: "A", questionRef: "2023 HL Q12(b)(ii) — Deferred sitting",
+    stem: "Powdery mildew greatly affected crops in summer 2022.",
+    questionText: "Name another fungal disease of plants you have studied and briefly describe the disease under the headings which follow.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Rotting of leaves / dark brown blotches appear at edge of leaf", marks: 3, contextNote: "Symptom (Potato blight). The disease is the student’s own choice; the scheme gives potato blight and leaf spot as examples and prints 2(3) for this part.", group: {"claimMax":1,"perOption":3,"options":["Rotting of leaves","dark brown blotches appear at edge of leaf"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Plant in a windy place / plant well -spaced apart / remove any infected tubers from soil", marks: 3, contextNote: "Sustainable prevention method (Potato blight).", group: {"claimMax":1,"perOption":3,"options":["Plant in a windy place","plant well -spaced apart","remove any infected tubers from soil"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "blight",
+                "label": "Potato blight",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Rotting of leaves / dark brown blotches appear at edge of leaf",
+                            "marks": 3,
+                            "contextNote": "Symptom (Potato blight). The disease is the student’s own choice; the scheme gives potato blight and leaf spot as examples and prints 2(3) for this part.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Rotting of leaves",
+                                        "dark brown blotches appear at edge of leaf"
+                                  ]
+                            },
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Plant in a windy place / plant well -spaced apart / remove any infected tubers from soil",
+                            "marks": 3,
+                            "contextNote": "Sustainable prevention method (Potato blight).",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Plant in a windy place",
+                                        "plant well -spaced apart",
+                                        "remove any infected tubers from soil"
+                                  ]
+                            },
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "leafspot",
+                "label": "Leaf spot",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Dark green or yellow sections of leaf / eventually turn black / lesions are usually oval in shape",
+                            "marks": 3,
+                            "contextNote": "Symptom (Leaf spot). The disease is the student’s own choice; the scheme gives potato blight and leaf spot as examples and prints 2(3) for this part.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Dark green or yellow sections of leaf",
+                                        "eventually turn black",
+                                        "lesions are usually oval in shape"
+                                  ]
+                            },
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Remove heavily infested leaves from plant / remove any fallen leaves from soil / adequate space between plants / keep foliage dry",
+                            "marks": 3,
+                            "contextNote": "Sustainable prevention method (Leaf spot).",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Remove heavily infested leaves from plant",
+                                        "remove any fallen leaves from soil",
+                                        "adequate space between plants",
+                                        "keep foliage dry"
+                                  ]
+                            },
+                            "id": "r-2"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q12(b)(ii)",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q13ai", topicId: "agsci-2-3", conceptId: "p-and-k-application-rate-factors",
+    section: "B", questionRef: "2023 HL Q13(a)(i) — Deferred sitting",
+    stem: "Read the article and answer the questions which follow. National Soil Fertility Trends, 2021 The 2021 soil fertility results in Ireland indicate that soils with optimum pH, Phosphorus (P) and Potassium (K) fertility decreased by between 3% to 16%. These trends could indicate early signs of declining soil fertility levels nationally. Farmers should put plans in place to protect the productivity and long-term sustainability of their farming business. (Adapted from Teagasc, 2021)",
+    questionText: "Outline the factors which determine the application rate of P and K.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The soil type / weather condition / application rate / application techniques / characteristics of the organic and mineral fertilisers used", marks: 8, contextNote: "Two factors: the first correct earns 6 marks and the second 2 (6+2).", group: {"claimMax":2,"perOption":6,"options":["The soil type","weather condition","application rate","application techniques","characteristics of the organic and mineral fertilisers used"],"perOptionSteps":[6,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q13(a)(i)",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q13aii", topicId: "agsci-2-3", conceptId: "nutrient-management-plan-for-fertility-decline",
+    section: "B", questionRef: "2023 HL Q13(a)(ii) — Deferred sitting",
+    stem: "Read the article and answer the questions which follow. National Soil Fertility Trends, 2021 The 2021 soil fertility results in Ireland indicate that soils with optimum pH, Phosphorus (P) and Potassium (K) fertility decreased by between 3% to 16%. These trends could indicate early signs of declining soil fertility levels nationally. Farmers should put plans in place to protect the productivity and long-term sustainability of their farming business. (Adapted from Teagasc, 2021)",
+    questionText: "Describe a nutrient management plan a farmer would follow to combat the trends mentioned in the article.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Based on Up-to-date soil samples / focus on correcting pH / getting the most from slurry and manures by identifying where it is needed most / select a suitable P and K fertiliser blend to maintain farm soil fertility", marks: 8, contextNote: "Two points of the plan: the first correct earns 6 marks and the second 2 (6+2).", group: {"claimMax":2,"perOption":6,"options":["Based on Up-to-date soil samples","focus on correcting pH","getting the most from slurry and manures by identifying where it is needed most","select a suitable P and K fertiliser blend to maintain farm soil fertility"],"perOptionSteps":[6,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q13(a)(ii)",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-2-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q13bi", topicId: "agsci-2-2-1", conceptId: "cec-and-nutrient-availability",
+    section: "B", questionRef: "2023 HL Q13(b)(i) — Deferred sitting",
+    questionText: "Explain the relationship between nutrient availability in soil and cation exchange capacity in soils.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "As CEC increases, more nutrients are attached to soil particles, and fewer remain in the soil solution / since the nutrients in soil solution are available to plants, this means that while there are plenty of nutrients in the soil, the plants may not be able to take advantage of them.", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q13(b)(i)",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-2","agsci-2-2-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q13bii", topicId: "agsci-1-2", additionalTopicIds: ["agsci-2-2-1"], conceptId: "cation-exchange-capacity-investigation",
+    section: "B", questionRef: "2023 HL Q13(b)(ii) — Deferred sitting",
+    questionText: "Describe an investigation to demonstrate cation exchange capacity in a sample of soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Add (high pH) soil to filter paper in a funnel with a clean dry beaker underneath / add potassium chloride (or potassium ions) solution (drop by drop) to the soil / collect the water that filters from the soil into the beaker (leachate) / test the leachate for calcium by adding (10 drops) ammonium oxalate to the leachate / white precipitate forms, calcium is present / discard the leachate and rinse the beaker with deionised water / repeat the experiment by adding more potassium chloride to the soil and testing the leachate for calcium / repeat the experiment until the leachate does not test positive for calcium", marks: 12, contextNote: "Three points from one coherent investigation, 3(4).", group: {"claimMax":3,"perOption":4,"options":["Add (high pH) soil to filter paper in a funnel with a clean dry beaker underneath","add potassium chloride (or potassium ions) solution (drop by drop) to the soil","collect the water that filters from the soil into the beaker (leachate)","test the leachate for calcium by adding (10 drops) ammonium oxalate to the leachate","white precipitate forms, calcium is present","discard the leachate and rinse the beaker with deionised water","repeat the experiment by adding more potassium chloride to the soil and testing the leachate for calcium","repeat the experiment until the leachate does not test positive for calcium"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q13(b)(ii)",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q13ci", topicId: "agsci-1-3", conceptId: "main-ammonia-source",
+    section: "B", questionRef: "2023 HL Q13(c)(i) — Deferred sitting",
+    stem: "The chart shows the different sources of ammonia emissions from agriculture. Analyse the chart and answer the questions which follow. (Adapted from EPA, 2017)",
+    questionText: "Identify the main source of ammonia emissions from agriculture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Animal housing", marks: 6, contextNote: "Animal housing is the largest share of the chart (31.10%)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q13(c)(i)",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-1","agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q13cii", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-1-3"], conceptId: "reducing-ammonia-emissions",
+    section: "B", questionRef: "2023 HL Q13(c)(ii) — Deferred sitting",
+    stem: "The chart shows the different sources of ammonia emissions from agriculture. Analyse the chart and answer the questions which follow. (Adapted from EPA, 2017)",
+    questionText: "You have been asked to address a group of farmers on ways to reduce ammonia emissions from agriculture. Using the data in the chart, advise them on strategies to reduce ammonia emissions from agriculture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Animal housing is a high source of ammonia emissions (31.1%) so by extending the grazing season it will reduce the emissions / manure storage contributes 14.4% ammonia so by extending the grazing season there will be less manure stored so lower ammonia emissions / manure deposited at pasture contributes 12.4% ammonia so by extending the grazing season there is less manure spread so less ammonia / manure spreading contributes 30.3% so using lower emission slurry spreading or extended grazing will lower the emissions.", marks: 10, contextNote: "Strategies linked to the chart data: the first two correct earn 4 marks each and the third 2 (2(4)+2).", group: {"claimMax":3,"perOption":4,"options":["Animal housing is a high source of ammonia emissions (31.1%) so by extending the grazing season it will reduce the emissions","manure storage contributes 14.4% ammonia so by extending the grazing season there will be less manure stored so lower ammonia emissions","manure deposited at pasture contributes 12.4% ammonia so by extending the grazing season there is less manure spread so less ammonia","manure spreading contributes 30.3% so using lower emission slurry spreading or extended grazing will lower the emissions."],"perOptionSteps":[4,4,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q13(c)(ii)",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-2-2","agsci-2-2-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q13d", topicId: "agsci-2-2-2", additionalTopicIds: ["agsci-2-2-3"], conceptId: "soil-terms-explained",
+    section: "B", questionRef: "2023 HL Q13(d) — Deferred sitting",
+    questionText: "Briefly explain each of the following in relation to the soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Field capacity: is the amount of soil moisture or water content held in soil after excess water has drained away", marks: 4, contextNote: "Field capacity. A misprint in the scheme: its answer for “Microbiome” (“a reversible process in which the cations are exchanged or interchanged between the solid and liquid phases…”) is the definition of cation exchange, not of the soil microbiome. The card keeps the printed 4-mark point because no other answer is published." },
+    { id: "r-2", kind: "point", verbatim: "Poaching: loss of soils by the damaging action of feet of livestock or machinery which can negatively affect availability of productive land and soil structure", marks: 4, contextNote: "Poaching." },
+    { id: "r-3", kind: "point", verbatim: "Flocculation: process during which particles of a soil, dispersed in a solution contact and adhere each another, forming clusters, flocks, flakes, or clumps of a larger size.", marks: 4, contextNote: "Flocculation." },
+    { id: "r-4", kind: "point", verbatim: "Microbiome: is a reversible process in which the cations are exchanged or interchanged between the solid and liquid phases or between the solid and solid phases when they come in close contact", marks: 4, contextNote: "Microbiome. The scheme prints 4(4), one explanation for each term. See the source note: this printed answer describes cation exchange, not the soil microbiome." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q13(d)",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-2","agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q14ai", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-1-3"], conceptId: "fodder-requirement-calculation",
+    section: "B", questionRef: "2023 HL Q14(a)(i) — Deferred sitting",
+    stem: "Determining the fodder requirement is essential on all farms. Analyse the data in the table below and answer the questions which follow. [Table on the paper (Adapted from Teagasc, 2018), columns: Animal type; Number of stock over wintered (A); Number of months (including 4 – 6 week reserve) (B); Tonnes of pit silage required per month (C); Tonnes of silage required (A × B × C) = (D). Suckler cows 25, 5, 1.40, 175.0; 0 – 1 year old 5, 5, 0.70, 17.5; 1 – 2 year old 5, 5, 1.30, D; 2+ year old 1, 5, 1.30, 65.0; Ewes 56, 2, 0.15, 16.8; Total silage required (tonnes) E; Total bales required (tonnes E × 1.25) F.]",
+    questionText: "Calculate the fodder required D, for a 1 – 2 year old animal.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "D = 5 x 5 x 1.3 = 32.5", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q14(a)(i)",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-2","agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q14aii", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-1-3"], conceptId: "total-silage-and-bales",
+    section: "B", questionRef: "2023 HL Q14(a)(ii) — Deferred sitting",
+    stem: "Determining the fodder requirement is essential on all farms. Analyse the data in the table below and answer the questions which follow. [Table on the paper (Adapted from Teagasc, 2018), columns: Animal type; Number of stock over wintered (A); Number of months (including 4 – 6 week reserve) (B); Tonnes of pit silage required per month (C); Tonnes of silage required (A × B × C) = (D). Suckler cows 25, 5, 1.40, 175.0; 0 – 1 year old 5, 5, 0.70, 17.5; 1 – 2 year old 5, 5, 1.30, D; 2+ year old 1, 5, 1.30, 65.0; Ewes 56, 2, 0.15, 16.8; Total silage required (tonnes) E; Total bales required (tonnes E × 1.25) F.]",
+    questionText: "Calculate the total tonnes of silage E and bales required F on the farm for the 2022/23 winter period.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "E: 175 + 17.5 + 32.5 + 65 + 16.8 = 306.8 / 175 + 17.5 + 32.5 + 6.5 = 248.3", marks: 6, contextNote: "E, the total tonnes of silage. Either figure for the 2+ year olds (65 or 6.5) is accepted; see the source note. The paper’s table prints 65.0 tonnes for the 2+ year old animals; the scheme’s footnote says this should have been 6.5 and that either figure (65 or 6.5) earned the marks for E, with F marked on the candidate’s own E. A misprint in the scheme: its 6.5 route is printed as “175 + 17.5 + 32.5 + 6.5 = 248.3”, which leaves out the ewes’ 16.8 that its total of 248.3 includes.", group: {"claimMax":1,"perOption":6,"options":["E: 175 + 17.5 + 32.5 + 65 + 16.8 = 306.8","175 + 17.5 + 32.5 + 6.5 = 248.3"]} },
+    { id: "r-2", kind: "anyN", verbatim: "F: 306.8 X 1.25 = 383.5 / 248.3 X 1.25 = 310.38", marks: 6, contextNote: "F, the bales required: E × 1.25. Marks are also awarded where your own correct E is used.", group: {"claimMax":1,"perOption":6,"options":["F: 306.8 X 1.25 = 383.5","248.3 X 1.25 = 310.38"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q14(a)(ii)",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q14aiii", topicId: "agsci-4-3-2", conceptId: "fodder-miscalculation-consequences",
+    section: "B", questionRef: "2023 HL Q14(a)(iii) — Deferred sitting",
+    stem: "Determining the fodder requirement is essential on all farms. Analyse the data in the table below and answer the questions which follow. [Table on the paper (Adapted from Teagasc, 2018), columns: Animal type; Number of stock over wintered (A); Number of months (including 4 – 6 week reserve) (B); Tonnes of pit silage required per month (C); Tonnes of silage required (A × B × C) = (D). Suckler cows 25, 5, 1.40, 175.0; 0 – 1 year old 5, 5, 0.70, 17.5; 1 – 2 year old 5, 5, 1.30, D; 2+ year old 1, 5, 1.30, 65.0; Ewes 56, 2, 0.15, 16.8; Total silage required (tonnes) E; Total bales required (tonnes E × 1.25) F.]",
+    questionText: "Outline the consequence of not calculating or miscalculating the fodder requirement.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Not enough silage made = have to supplement with expensive concentrates or sell stock / too much silage = will have been expensive to make / not enough feed for livestock", marks: 6, group: {"claimMax":1,"perOption":6,"options":["Not enough silage made = have to supplement with expensive concentrates or sell stock","too much silage = will have been expensive to make","not enough feed for livestock"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q14(a)(iii)",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q14aiv", topicId: "agsci-4-3-2", conceptId: "ewe-silage-requirement",
+    section: "B", questionRef: "2023 HL Q14(a)(iv) — Deferred sitting",
+    stem: "Determining the fodder requirement is essential on all farms. Analyse the data in the table below and answer the questions which follow. [Table on the paper (Adapted from Teagasc, 2018), columns: Animal type; Number of stock over wintered (A); Number of months (including 4 – 6 week reserve) (B); Tonnes of pit silage required per month (C); Tonnes of silage required (A × B × C) = (D). Suckler cows 25, 5, 1.40, 175.0; 0 – 1 year old 5, 5, 0.70, 17.5; 1 – 2 year old 5, 5, 1.30, D; 2+ year old 1, 5, 1.30, 65.0; Ewes 56, 2, 0.15, 16.8; Total silage required (tonnes) E; Total bales required (tonnes E × 1.25) F.]",
+    questionText: "Explain why the ewes’ silage requirement is less than that of the cattle.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ewes are smaller animals and have a smaller stomach so require less silage", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q14(a)(iv)",
+          "pages": [
+                24,
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q14av", topicId: "agsci-4-3-1", conceptId: "calf-per-cow-stock-numbers",
+    section: "B", questionRef: "2023 HL Q14(a)(v) — Deferred sitting",
+    stem: "Determining the fodder requirement is essential on all farms. Analyse the data in the table below and answer the questions which follow. [Table on the paper (Adapted from Teagasc, 2018), columns: Animal type; Number of stock over wintered (A); Number of months (including 4 – 6 week reserve) (B); Tonnes of pit silage required per month (C); Tonnes of silage required (A × B × C) = (D). Suckler cows 25, 5, 1.40, 175.0; 0 – 1 year old 5, 5, 0.70, 17.5; 1 – 2 year old 5, 5, 1.30, D; 2+ year old 1, 5, 1.30, 65.0; Ewes 56, 2, 0.15, 16.8; Total silage required (tonnes) E; Total bales required (tonnes E × 1.25) F.]",
+    questionText: "There are 25 suckler cows on the farm and only 11 other animals. Based on the concept of a calf per cow per year, briefly explain a reason for the decrease in stock numbers.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Only some of the heifers born on the farm are kept as replacements / male calves are sold / calf mortality / cow fertility / calving difficulties", marks: 3, group: {"claimMax":1,"perOption":3,"options":["Only some of the heifers born on the farm are kept as replacements","male calves are sold","calf mortality","cow fertility","calving difficulties"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q14(a)(v)",
+          "pages": [
+                24,
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q14avi", topicId: "agsci-4-3-2", conceptId: "filling-a-silage-deficit",
+    section: "B", questionRef: "2023 HL Q14(a)(vi) — Deferred sitting",
+    stem: "Determining the fodder requirement is essential on all farms. Analyse the data in the table below and answer the questions which follow.",
+    questionText: "Mia has calculated the silage requirement and the amount of silage produced on her farm and realised that there was a 10% deficit in silage stock. Advise Mia on her options to fill the silage gap in the winter ahead.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Let some of the stock our earlier to graze / increase concentrate feeding / feed some beet to supplement the silage / buy some silage bales", marks: 2, contextNote: "A misprint in the scheme: “Let some of the stock our earlier to graze” should read “out earlier”. The card keeps the printed wording.", group: {"claimMax":1,"perOption":2,"options":["Let some of the stock our earlier to graze","increase concentrate feeding","feed some beet to supplement the silage","buy some silage bales"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q14(a)(vi)",
+          "pages": [
+                24,
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q14bi", topicId: "agsci-3-3-3", conceptId: "baled-silage-advantages",
+    section: "B", questionRef: "2023 HL Q14(b)(i) — Deferred sitting",
+    questionText: "Outline the advantages of making baled silage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Good quality silage (75%+ DMD) / make opportunistic silage (excess grass in paddocks) / can cut smaller areas (paddocks) / can sell if not required / easier to transport distances", marks: 6, contextNote: "Two advantages, 2(3).", group: {"claimMax":2,"perOption":3,"options":["Good quality silage (75%+ DMD)","make opportunistic silage (excess grass in paddocks)","can cut smaller areas (paddocks)","can sell if not required","easier to transport distances"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q14(b)(i)",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-1","agsci-3-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q14bii", topicId: "agsci-3-1", additionalTopicIds: ["agsci-3-3-3"], conceptId: "optimum-grass-stage-for-silage",
+    section: "B", questionRef: "2023 HL Q14(b)(ii) — Deferred sitting",
+    questionText: "Describe with the aid of a labelled diagram the stage of grass growth that is optimum for cutting for silage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Vegetative stage", marks: 3, contextNote: "The scheme describes it: flower head is enclosed in flag leaf sheath and not showing or only showing partly, beside its drawing of a leafy grass plant. It prints one award of 3 for this part and no separate diagram or label marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q14(b)(ii)",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2023-hl-deferred-scheme-grass-vegetative-stage",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2023-hl-deferred-scheme-grass-vegetative-stage.png",
+          "srcHash": "2e2bfe6d700c54cce408bf7babb566cb",
+          "alt": "Official drawing of a grass plant at the vegetative stage: leafy tillers, the flower head not yet emerged from the flag-leaf sheath.",
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred marking scheme, PDF page 19 — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-3-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q14c", topicId: "agsci-3-3-3", conceptId: "improving-baled-silage-quality",
+    section: "B", questionRef: "2023 HL Q14(c) — Deferred sitting",
+    stem: "Mia cut her 1st cut silage on the 23rd June 2022, early in the morning and baled it the same afternoon. When Mia opened the bales 4 weeks later to feed to her cows she noticed the quality was not good.",
+    questionText: "Advise Mia on how she could have improved the quality of her silage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Cut at vegetative stage (around 22nd May) / cut in afternoon when sugar is highest in the grass / all fertiliser has left the grass (6 weeks after spreading) / wilt grass for 24 hours / have grazed grass prior to closing in spring / add molasses", marks: 6, contextNote: "Two pieces of advice, 2(3).", group: {"claimMax":2,"perOption":3,"options":["Cut at vegetative stage (around 22nd May)","cut in afternoon when sugar is highest in the grass","all fertiliser has left the grass (6 weeks after spreading)","wilt grass for 24 hours","have grazed grass prior to closing in spring","add molasses"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q14(c)",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q15ai", topicId: "agsci-3-2", conceptId: "annual-vs-perennial",
+    section: "B", questionRef: "2023 HL Q15(a)(i) — Deferred sitting",
+    questionText: "Distinguish between annual and perennial lifecycles and give an example of each.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Plant that completes its lifecycle in one year", marks: 3, contextNote: "Annual." },
+    { id: "r-2", kind: "anyN", verbatim: "Plant that is persistent in all seasons of the year / plants that persist for several years", marks: 3, contextNote: "Perennial.", group: {"claimMax":1,"perOption":3,"options":["Plant that is persistent in all seasons of the year","plants that persist for several years"]} },
+    { id: "r-3", kind: "anyN", verbatim: "Barley / Wheat / Oats", marks: 3, contextNote: "Example of an annual.", group: {"claimMax":1,"perOption":3,"options":["Barley","Wheat","Oats"]} },
+    { id: "r-4", kind: "point", verbatim: "Grass", marks: 3, contextNote: "Example of a perennial. The scheme prints 2(3)+2(3)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q15(a)(i)",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q15aii", topicId: "agsci-3-3-1", conceptId: "reseeding-seed-mixture",
+    section: "B", questionRef: "2023 HL Q15(a)(ii) — Deferred sitting",
+    stem: "A farmer wanted advice on the type of grass seed mixture to put into her newly reseeded pasture.",
+    questionText: "State the seed types used and justify why each variety was included in the mixture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Perennial ryegrass – persistent growth of leafy digestible grass", marks: 4, contextNote: "Seed type with its justification." },
+    { id: "r-2", kind: "point", verbatim: "Red or white clover – N fixation or increased protein", marks: 4, contextNote: "Seed type with its justification. The scheme prints 2(4)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q15(a)(ii)",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q15aiii", topicId: "agsci-3-3-1", conceptId: "irish-climate-for-food-crops",
+    section: "B", questionRef: "2023 HL Q15(a)(iii) — Deferred sitting",
+    questionText: "Describe how the Irish climate is suited to the production of food crops.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Ireland has a temperate climate and abundant rain water which is ideal for growth of crops in soil / warm soil temperatures, large amount of rainfall and sun", marks: 8, contextNote: "Two points, 2(4).", group: {"claimMax":2,"perOption":4,"options":["Ireland has a temperate climate and abundant rain water which is ideal for growth of crops in soil","warm soil temperatures, large amount of rainfall and sun"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q15(a)(iii)",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-2","agsci-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q15b", topicId: "agsci-1-2", additionalTopicIds: ["agsci-3-1"], conceptId: "weather-and-germination-investigation",
+    section: "B", questionRef: "2023 HL Q15(b) — Deferred sitting",
+    questionText: "Describe an investigation to show the effect of weather on percentage germination of an agricultural seed.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "2 areas of land marked out / using a quadrat (or 2 seed trays) / one area was watered well and the other didn’t get water / growth of grass was measured and results recorded / area not water had lower growth rates (drought)", marks: 12, contextNote: "Three points, 3(4). The scheme’s example takes rainfall as the weather condition: \"Weather condition – e.g. rainfall (adapt depending on weather condition chosen – temperature)\". The paper asks for the effect of weather on percentage germination of an agricultural seed, but the scheme’s sample method measures and records the growth of grass in a watered and an unwatered area. A misprint in the scheme: “area not water had lower growth rates” should read “not watered”. The card keeps the scheme’s points.", group: {"claimMax":3,"perOption":4,"options":["2 areas of land marked out","using a quadrat (or 2 seed trays)","one area was watered well and the other didn’t get water","growth of grass was measured and results recorded","area not water had lower growth rates (drought)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q15(b)",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q15ci", topicId: "agsci-3-1", conceptId: "dna-technology-plant-selection",
+    section: "B", questionRef: "2023 HL Q15(c)(i) — Deferred sitting",
+    stem: "Read the article and answer the questions which follow. Measuring the value of plants with DNA Teagasc researchers are using DNA technologies to improve the efficiency of plant selection and the delivery of highly digestible varieties. Improving varieties in order to support pastoral-based production systems for milk and meat is critically important. (Adapted from Teagasc, 2022)",
+    questionText: "Explain how technology is used to improve the efficiency of plant selection.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "New technologies (e.g. gene editing or CRISPR-Cas9) are improving plant breeding at a faster rate to allow for better plants in short space / identifying plants with specific desired traits to increase production", marks: 6, group: {"claimMax":1,"perOption":6,"options":["New technologies (e.g. gene editing or CRISPR-Cas9) are improving plant breeding at a faster rate to allow for better plants in short space","identifying plants with specific desired traits to increase production"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q15(c)(i)",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q15cii", topicId: "agsci-3-3-1", conceptId: "improved-pasture-varieties",
+    section: "B", questionRef: "2023 HL Q15(c)(ii) — Deferred sitting",
+    stem: "Read the article and answer the questions which follow. Measuring the value of plants with DNA Teagasc researchers are using DNA technologies to improve the efficiency of plant selection and the delivery of highly digestible varieties. Improving varieties in order to support pastoral-based production systems for milk and meat is critically important. (Adapted from Teagasc, 2022)",
+    questionText: "Outline the importance of improving varieties in a pasture-based system.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Increase animal production / allow for extended grazing / increase nitrogen fixation / increase digestibility of pasture", marks: 4, group: {"claimMax":1,"perOption":4,"options":["Increase animal production","allow for extended grazing","increase nitrogen fixation","increase digestibility of pasture"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q15(c)(ii)",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q16ai", topicId: "agsci-1-1", conceptId: "nutrient-flow-hypothesis",
+    section: "B", questionRef: "2023 HL Q16(a)(i) — Deferred sitting",
+    stem: "Nutrient flow off fields needs to be managed. Differences in soil type and bedrock, as well as farming practices and weather can all contribute to the overall affect. A student wanted to carry out an investigation to compare how differences in two soil types will affect the nutrient flow.",
+    questionText: "State a hypothesis for this investigation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Soil which contains a high percentage of sand will have a greater nutrient flow", marks: 2, contextNote: "The scheme’s mark column for Question 16 adds to 49, not 50: (a)(i) 2, (a)(ii) 4+4, (a)(iii) 5+2+2, (a)(iv) 3(4), (a)(v) 6, (b)(i) 3+3, (b)(ii) 3+3. The scheme does not show which part is a mark short, so every card keeps the printed marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q16(a)(i)",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q16aii", topicId: "agsci-1-2", conceptId: "nutrient-flow-variables",
+    section: "B", questionRef: "2023 HL Q16(a)(ii) — Deferred sitting",
+    stem: "Nutrient flow off fields needs to be managed. Differences in soil type and bedrock, as well as farming practices and weather can all contribute to the overall affect. A student wanted to carry out an investigation to compare how differences in two soil types will affect the nutrient flow.",
+    questionText: "Identify the independent and dependent variables in this investigation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Soil type / amount of nutrients added / type of nutrients added", marks: 4, contextNote: "Independent variable.", group: {"claimMax":1,"perOption":4,"options":["Soil type","amount of nutrients added","type of nutrients added"]} },
+    { id: "r-2", kind: "anyN", verbatim: "quantity of nutrients leached / rate of nutrients leached", marks: 4, contextNote: "Dependent variable.", group: {"claimMax":1,"perOption":4,"options":["quantity of nutrients leached","rate of nutrients leached"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q16(a)(ii)",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-2","agsci-2-2-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q16aiii", topicId: "agsci-1-2", additionalTopicIds: ["agsci-2-2-2"], conceptId: "nutrient-flow-setup-diagram",
+    section: "B", questionRef: "2023 HL Q16(a)(iii) — Deferred sitting",
+    stem: "Nutrient flow off fields needs to be managed. Differences in soil type and bedrock, as well as farming practices and weather can all contribute to the overall affect. A student wanted to carry out an investigation to compare how differences in two soil types will affect the nutrient flow.",
+    questionText: "Describe using a labelled diagram the setup of the investigation.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Soil with higher sand content will have better drainage", marks: null, contextNote: "The scheme prints 5+2+2 for this part beside its drawing of the set-up: water poured onto soil in two funnels, A and B, each draining into a graduated cylinder, and this expected result. It does not say which award is which; compare the labelled diagram with the official scheme drawing." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q16(a)(iii)",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2023-hl-deferred-scheme-nutrient-flow-setup",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2023-hl-deferred-scheme-nutrient-flow-setup.png",
+          "srcHash": "7628af13f444e9d4ba9ceaf74507f351",
+          "alt": "Official set-up drawing: water poured onto soil samples A and B, each in a funnel draining into a graduated cylinder; cylinder A has collected more water than B.",
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred marking scheme, PDF page 21 — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-2","agsci-2-2-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q16aiv", topicId: "agsci-1-2", additionalTopicIds: ["agsci-2-2-2"], conceptId: "soil-texture-method",
+    section: "B", questionRef: "2023 HL Q16(a)(iv) — Deferred sitting",
+    stem: "Nutrient flow off fields needs to be managed. Differences in soil type and bedrock, as well as farming practices and weather can all contribute to the overall affect. A student wanted to carry out an investigation to compare how differences in two soil types will affect the nutrient flow.",
+    questionText: "Before carrying out any experimental work on the nutrient flow the student firstly determined the texture of the two soil samples. Name and describe a method the student could have used to determine soil texture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "hand (feel) / dry soil sample and rub between fingers and thumb and note grittiness and smoothness / wet sample and rub between fingers and thumb and note grittiness, smoothness and plasticity and note if sample is sticky / check if it is possible to roll sample into threads or ring", marks: 12, contextNote: "The named method and its description from one method, 3(4). The scheme prints 3(4) across the name and the description together and does not print a separate award for the name.", group: {"claimMax":3,"perOption":4,"options":["hand (feel)","dry soil sample and rub between fingers and thumb and note grittiness and smoothness","wet sample and rub between fingers and thumb and note grittiness, smoothness and plasticity and note if sample is sticky","check if it is possible to roll sample into threads or ring"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "hand",
+                "label": "Hand (feel)",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "hand (feel) / dry soil sample and rub between fingers and thumb and note grittiness and smoothness / wet sample and rub between fingers and thumb and note grittiness, smoothness and plasticity and note if sample is sticky / check if it is possible to roll sample into threads or ring",
+                            "marks": 12,
+                            "contextNote": "The named method and its description from one method, 3(4). The scheme prints 3(4) across the name and the description together and does not print a separate award for the name.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "hand (feel)",
+                                        "dry soil sample and rub between fingers and thumb and note grittiness and smoothness",
+                                        "wet sample and rub between fingers and thumb and note grittiness, smoothness and plasticity and note if sample is sticky",
+                                        "check if it is possible to roll sample into threads or ring"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "sediment",
+                "label": "Sedimentation",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "sedimentation / add soil sample to water in a beaker and stir / pour mixture into graduated cylinder and rinse / completely cover the soil with water / stopper or cover the cylinder and shake to mix the soil / leave to settle for a few hours or overnight / observe layers that have settled / using the graduations on the cylinder record the amount of sand, silt and clay in the soil sample",
+                            "marks": 12,
+                            "contextNote": "The named method and its description from one method, 3(4). The scheme prints 3(4) across the name and the description together and does not print a separate award for the name.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "sedimentation",
+                                        "add soil sample to water in a beaker and stir",
+                                        "pour mixture into graduated cylinder and rinse",
+                                        "completely cover the soil with water",
+                                        "stopper or cover the cylinder and shake to mix the soil",
+                                        "leave to settle for a few hours or overnight",
+                                        "observe layers that have settled",
+                                        "using the graduations on the cylinder record the amount of sand, silt and clay in the soil sample"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "sieve",
+                "label": "Sieve",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "sieve / dry soil samples / crush sample with pestle and mortar / get mass of soil sample / place sample in sieves with largest sieve on top and smallest on bottom and shake / add the contents of each sieve into pre-weighed weigh boats / using soil texture triangle classify soil sample",
+                            "marks": 12,
+                            "contextNote": "The named method and its description from one method, 3(4). The scheme prints 3(4) across the name and the description together and does not print a separate award for the name.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "sieve",
+                                        "dry soil samples",
+                                        "crush sample with pestle and mortar",
+                                        "get mass of soil sample",
+                                        "place sample in sieves with largest sieve on top and smallest on bottom and shake",
+                                        "add the contents of each sieve into pre-weighed weigh boats",
+                                        "using soil texture triangle classify soil sample"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q16(a)(iv)",
+          "pages": [
+                30,
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q16av", topicId: "agsci-1-3", conceptId: "soil-texture-method-errors",
+    section: "B", questionRef: "2023 HL Q16(a)(v) — Deferred sitting",
+    stem: "Nutrient flow off fields needs to be managed. Differences in soil type and bedrock, as well as farming practices and weather can all contribute to the overall affect. A student wanted to carry out an investigation to compare how differences in two soil types will affect the nutrient flow.",
+    questionText: "List one error that could have occurred when the student was carrying out this investigation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Soil not dry enough in sieve method / electronic balance not calibrated / not reading from meniscus on graduated cylinder in sedimentation method / not rolling into a ball in feel method", marks: 6, group: {"claimMax":1,"perOption":6,"options":["Soil not dry enough in sieve method","electronic balance not calibrated","not reading from meniscus on graduated cylinder in sedimentation method","not rolling into a ball in feel method"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q16(a)(v)",
+          "pages": [
+                30,
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-2-2","agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q16bi", topicId: "agsci-2-2-2", additionalTopicIds: ["agsci-1-3"], conceptId: "soil-triangle-classification",
+    section: "B", questionRef: "2023 HL Q16(b)(i) — Deferred sitting",
+    stem: "The student calculated the % sand, silt and clay in the two soil samples. Using their results from the table and the soil triangle determine the soil types of the two soil samples, A and B. [Table on the paper — Soil component: Soil A, Soil B. Sand 32%, 25%; Silt 48%, 33%; Clay 20%, 42%.]",
+    questionText: "State the soil types of A and B.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Loam", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "B = Clay", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q16(b)(i)",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-2-2","agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q16bii", topicId: "agsci-2-2-2", additionalTopicIds: ["agsci-1-3"], conceptId: "least-nutrient-flow-prediction",
+    section: "B", questionRef: "2023 HL Q16(b)(ii) — Deferred sitting",
+    stem: "The student calculated the % sand, silt and clay in the two soil samples. Using their results from the table and the soil triangle determine the soil types of the two soil samples, A and B. [Table on the paper — Soil component: Soil A, Soil B. Sand 32%, 25%; Silt 48%, 33%; Clay 20%, 42%.]",
+    questionText: "Predict with reason which of the soils A or B would have the least nutrient flow.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Prediction: B", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Reason: Less drainage in clay soil", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q16(b)(ii)",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q17ai", topicId: "agsci-4-1", conceptId: "young-ruminant-stomach-labels",
+    section: "B", questionRef: "2023 HL Q17(a)(i) — Deferred sitting",
+    stem: "Calf rearing is very technical to achieve the best performance from each animal at this critical stage of development.",
+    questionText: "Label the diagram of the young ruminant stomach.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Abomasum", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B = Rumen", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C = Oesophagus", marks: 2, contextNote: "The scheme prints 3(2)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q17(a)(i)",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q17aii", topicId: "agsci-4-3-2", conceptId: "milk-replacer-pros-cons",
+    section: "B", questionRef: "2023 HL Q17(a)(ii) — Deferred sitting",
+    stem: "Calf rearing is very technical to achieve the best performance from each animal at this critical stage of development.",
+    questionText: "The diagram shows the digestion of milk replacers in the calf’s digestive system. Outline the advantages and disadvantages of feeding milk replacer to calves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Consistency of product (when mixed correctly) / stored easily / can be fortified / no disease transfer (e.g. Johnes disease) / balanced product / Expensive / increase labour / storage", marks: 12, contextNote: "Advantages and disadvantages: the first five options are the scheme’s advantages and the last three its disadvantages. The scheme prints 2(5)+2(1): the first two correct points earn 5 marks each and the next two 1 each.", group: {"claimMax":4,"perOption":5,"options":["Consistency of product (when mixed correctly)","stored easily","can be fortified","no disease transfer (e.g. Johnes disease)","balanced product","Expensive","increase labour","storage"],"perOptionSteps":[5,5,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q17(a)(ii)",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q17b", topicId: "agsci-4-3-1", conceptId: "pig-circular-economy",
+    section: "B", questionRef: "2023 HL Q17(b) — Deferred sitting",
+    stem: "The diagram shows a nutrient recovery cycle (circular economy) in pig production to increase the efficient use of resources. A circular economy involves using the resources available to produce aspects of the production system.",
+    questionText: "Outline how each element of the ‘Circular Economy’ cycle links to the other elements.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Pigs produce manure which is high in nutrients (stored in tanks) which is spread on the land / provides nutrients for crops to grow / produce feed (cereals) for the pigs to feed off", marks: 12, contextNote: "Three links, 3(4). The cycle on the paper runs Pig production, Pig manure, Tillage and Grassland, Cereals, Pig feed.", group: {"claimMax":3,"perOption":4,"options":["Pigs produce manure which is high in nutrients (stored in tanks) which is spread on the land","provides nutrients for crops to grow","produce feed (cereals) for the pigs to feed off"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q17(b)",
+          "pages": [
+                34,
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-1","agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q17ci", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-1-3"], conceptId: "biggest-calf-to-beef-cost",
+    section: "B", questionRef: "2023 HL Q17(c)(i) — Deferred sitting",
+    stem: "The graph shows the comparison of the production costs for dairy calf to beef production systems in 2021 and an estimate for 2022. Analyse the graph and answer the questions which follow. (Adapted from Teagasc, 2022)",
+    questionText: "Identify the biggest cost of production.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Purchased feed", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q17(c)(i)",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-1","agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q17cii", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-1-3"], conceptId: "total-production-costs-by-year",
+    section: "B", questionRef: "2023 HL Q17(c)(ii) — Deferred sitting",
+    stem: "The graph shows the comparison of the production costs for dairy calf to beef production systems in 2021 and an estimate for 2022. Analyse the graph and answer the questions which follow. (Adapted from Teagasc, 2022)",
+    questionText: "Determine which year had the highest overall production costs.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2022 – 0.25 + 0.95 + 0.4 + 0.1 + 0.16 + 0.12 + 0.55 = 2.53 2021 – 0.25 + 0.62 + 0.16 + 0.09 + 0.13 + 0.11 + 0.5 = 1.86", marks: 4, contextNote: "Calculation (€/kg liveweight), both years." },
+    { id: "r-2", kind: "point", verbatim: "Year: 2022", marks: 4, contextNote: "Year." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q17(c)(ii)",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q17ciii", topicId: "agsci-4-3-1", conceptId: "reducing-calf-to-beef-costs",
+    section: "B", questionRef: "2023 HL Q17(c)(iii) — Deferred sitting",
+    stem: "The graph shows the comparison of the production costs for dairy calf to beef production systems in 2021 and an estimate for 2022. Analyse the graph and answer the questions which follow. (Adapted from Teagasc, 2022)",
+    questionText: "Outline ways farmers can reduce their cost of production.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Grow their won cereal (animal feed) / grow own protein source (beans) / reduce amount of purchased feed or feed whole milk rather than milk replacer / reseed paddocks to reduce fertiliser requirement", marks: 6, contextNote: "Two ways, 2(3). A misprint in the scheme: “Grow their won cereal” should read “own cereal”. The card keeps the printed wording.", group: {"claimMax":2,"perOption":3,"options":["Grow their won cereal (animal feed)","grow own protein source (beans)","reduce amount of purchased feed or feed whole milk rather than milk replacer","reseed paddocks to reduce fertiliser requirement"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q17(c)(iii)",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-4-3-1","agsci-1-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q18ai", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-1-3"], conceptId: "acres-payment-calculation",
+    section: "B", questionRef: "2023 HL Q18(a)(i) — Deferred sitting",
+    stem: "Tom purchased new permanent pasture land. To achieve maximum profit, he decided that as it needed improvement he would seek support through the Agri-Climate Rural Environment Scheme (ACRES). [Table on the paper — Action: Minimum, Maximum, Payment Rate/Year. New hedges: 10m, 750m, €5.29/m. Trees: 10, 300, €6.21/tree. Grass margin (2m) – cut after September 1st or grazed in September: 10m, 2500m, €1.00/m. Ryegrass seed set as winter bird food: 10m, 2500m, €1.37/m. 1. Grass margins needed to get to tier 1 (minimum 500m of 2m margin at €1.00/m = €500). 2. If watercourses present – replace some grass margin with riparian margins. Action on Tom’s farm — Finance received: Planted 500m new hedges, consisting of 250 trees — Calculation; Grazed 750m in September — €750; Reseeded 200m using ryegrass seed — Calculation; Total — Calculation.]",
+    questionText: "Calculate how much financial support Tom received through his ACRES application when he fulfilled the following criteria.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "€4197.50", marks: 6, contextNote: "Planted 500m new hedges, consisting of 250 trees. The scheme works 500 x 5.29 = 2645 and 250 x 6.21 = 1552.50 for €4197.50; see the source note. Two misprints in the scheme’s working: the hedges-and-trees line reads “1552.50 +2950 = €4197.50”, but its own hedge figure is 500 x 5.29 = 2645 (1552.50 + 2645 = €4197.50); and the total line reads “4502.50 + 750 + 274 = €5221.50”, where 4502.50 should be 4197.50 (4197.50 + 750 + 274 = €5221.50). The printed answers €4197.50 and €5221.50 are correct, and the card uses them." },
+    { id: "r-2", kind: "point", verbatim: "200 x 1.37 = €274", marks: 6, contextNote: "Reseeded 200m using ryegrass seed." },
+    { id: "r-3", kind: "point", verbatim: "€5221.50", marks: 6, contextNote: "Total, with the €750 printed for grazing 750m in September; see the source note." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q18(a)(i)",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q18aii", topicId: "agsci-2-3", conceptId: "riparian-margins",
+    section: "B", questionRef: "2023 HL Q18(a)(ii) — Deferred sitting",
+    stem: "Tom purchased new permanent pasture land. To achieve maximum profit, he decided that as it needed improvement he would seek support through the Agri-Climate Rural Environment Scheme (ACRES). [The table note on the paper: 2. If watercourses present – replace some grass margin with riparian margins]",
+    questionText: "Explain riparian margins and outline one function on farms.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "the land that runs alongside our rivers and streams", marks: 5, contextNote: "Explanation." },
+    { id: "r-2", kind: "anyN", verbatim: "increase biodiversity / prevent leaching of nutrients into the river", marks: 1, contextNote: "Function, 5+1.", group: {"claimMax":1,"perOption":1,"options":["increase biodiversity","prevent leaching of nutrients into the river"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q18(a)(ii)",
+          "pages": [
+                37,
+                38
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-2-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q18b", topicId: "agsci-2-2-3", conceptId: "carbon-cycle-diagram",
+    section: "B", questionRef: "2023 HL Q18(b) — Deferred sitting",
+    questionText: "Describe the Carbon cycle using a labelled diagram.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Point for correct cycle shown", marks: 4, contextNote: "Correct cycle shown, 4 marks. The scheme’s descriptor prints “(4x4)” for the three other points, but its mark column prints 3(4)+4 = 16, which Question 18 needs to total 50: 4 for the correct cycle and three further points at 4 each." },
+    { id: "r-2", kind: "anyN", verbatim: "CO2 / photosynthesis / respiration / combustion or decomposition", marks: 12, contextNote: "Three other points for showing these, 4 marks each (the scheme prints 3(4)+4). *Max 12 marks awarded if not shown on diagram.", group: {"claimMax":3,"perOption":4,"options":["CO2","photosynthesis","respiration","combustion or decomposition"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q18(b)",
+          "pages": [
+                38
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-2-1"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q18ci", topicId: "agsci-2-2-1", conceptId: "how-lime-raises-ph",
+    section: "B", questionRef: "2023 HL Q18(c)(i) — Deferred sitting",
+    stem: "Liming is a practice commonly carried out to raise the pH of soil.",
+    questionText: "Explain how applying lime to land raises the pH of the soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Adds Ca and Mg to soil / reduces the Al or Mn ions in the soil", marks: 4, group: {"claimMax":1,"perOption":4,"options":["Adds Ca and Mg to soil","reduces the Al or Mn ions in the soil"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q18(c)(i)",
+          "pages": [
+                39
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-2-2-3"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q18cii", topicId: "agsci-2-2-3", conceptId: "liming-and-earthworms",
+    section: "B", questionRef: "2023 HL Q18(c)(ii) — Deferred sitting",
+    stem: "Liming is a practice commonly carried out to raise the pH of soil.",
+    questionText: "Explain how liming affects earthworm activity in a soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Liming increases the pH of the soil which favours the earthworms / earthworms like a pH 6 – 7 / closer the soil is to neutral the higher the number of earthworms.", marks: 6, group: {"claimMax":1,"perOption":6,"options":["Liming increases the pH of the soil which favours the earthworms","earthworms like a pH 6 – 7","closer the soil is to neutral the higher the number of earthworms."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q18(c)(ii)",
+          "pages": [
+                39
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q18di", topicId: "agsci-3-3-2", conceptId: "named-crop-pest",
+    section: "B", questionRef: "2023 HL Q18(d)(i) — Deferred sitting",
+    questionText: "State one pest of a named crop you have studied.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Aphid", marks: 4, contextNote: "The crop is the student’s own choice; the scheme prints aphid as the pest." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q18(d)(i)",
+          "pages": [
+                39
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-11-20"},
+    ...examCardCurriculum("agricultural-science", 2023, ["agsci-3-3-2"]), kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "agsci-2023-hl-deferred-q18dii", topicId: "agsci-3-3-2", conceptId: "indirect-pest-control",
+    section: "B", questionRef: "2023 HL Q18(d)(ii) — Deferred sitting",
+    questionText: "Describe how pests may be controlled indirectly in crop production while conserving the environment.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Addition of ladybirds to crop / biological control / crop rotation to prevent the build-up of pests in the crop", marks: 6, group: {"claimMax":1,"perOption":6,"options":["Addition of ladybirds to crop","biological control","crop rotation to prevent the build-up of pests in the crop"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2023 Higher, deferred — Q18(d)(ii)",
+          "pages": [
+                39
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC024ALP000EV",

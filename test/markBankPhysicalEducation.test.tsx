@@ -38,8 +38,10 @@ describe('Physical Education independent paper review', () => {
     expect(new Set(live.map(card => card.id)).size).toBe(live.length);
     expect(legacy.filter(card => !live.some(entry => entry.id === card.id))).toEqual([]);
     expect(audit.status).toBe('complete');
-    expect(audit.reviewedPapers).toHaveLength(13);
-    expect(live).toHaveLength(772);
+    // June's 13 sittings (772 cards) and the deferred sittings' own editions: 2022 Higher (60) and 2023 Higher (54).
+    expect(audit.reviewedPapers).toHaveLength(13 + 2);
+    expect(live).toHaveLength(772 + 60 + 54);
+    expect(live.filter(card => card.id.includes('-deferred-'))).toHaveLength(60 + 54);
     expect(audit.retainedLegacyCardCount).toBe(221);
     for (const [level, hash] of [
       ['higher', '2b937885f9ae0c9d7c2952d43c0c2cb44275bd31414d813dee6c98d20bb8525e'],
@@ -135,10 +137,10 @@ describe('Physical Education independent paper review', () => {
   });
 
   it('covers 2022 Higher, including six-group pools, the lever choice and visible scheme amendments', () => {
-    const cards=REVIEWED_CARDS.filter(card => card.year===2022 && card.level==='higher');
+    const cards=REVIEWED_CARDS.filter(card => card.year===2022 && card.level==='higher' && !card.id.includes('-deferred-'));
     const get=(part:string)=>cards.find(card=>card.id===`pe-2022-hl-q${part}`)!;
     expect(cards).toHaveLength(61);
-    expect(audit.reviewedPapers.find(paper=>paper.year===2022 && paper.level==='higher')?.taskCount).toBe(61);
+    expect(audit.reviewedPapers.find(paper=>paper.year===2022 && paper.level==='higher' && !paper.sitting)?.taskCount).toBe(61);
     for(let n=1;n<=18;n++) {
       const tasks=cards.filter(card=>new RegExp(`^pe-2022-hl-q${n}(?:[a-z]+)?$`).test(card.id));
       expect(tasks.reduce((total,card)=>total+card.totalMarks,0),`2022 HL Q${n}`).toBe(n<13?8:n===13?50:40);
@@ -187,7 +189,7 @@ describe('Physical Education independent paper review', () => {
   });
 
   it('covers all 2023 Higher boundaries with the published allocations and source context', () => {
-    const cards=REVIEWED_CARDS.filter(card => card.year===2023 && card.level==='higher');
+    const cards=REVIEWED_CARDS.filter(card => card.year===2023 && card.level==='higher' && !card.id.includes('-deferred-'));
     const get=(part:string) => cards.find(card => card.id===`pe-2023-hl-q${part}`)!;
     expect(cards).toHaveLength(54);
     for (let n=1;n<=18;n++) {
@@ -416,14 +418,18 @@ describe('Physical Education independent paper review', () => {
       expect(task.paperPages).toEqual(card.sourceMaterial?.pages);
       expect(task.schemePages).toEqual(card.rubric.schemeMaterial.pages);
       expect(task.totalMarks).toBe(card.totalMarks);
-      expect(atlas.filter(q => q.year===task.year && q.level===task.level && q.n===task.n)).toHaveLength(1);
+      // A deferred sitting's task is numbered as June's: its question is the one on its own paper (file id).
+      expect(atlas.filter(q => q.year===task.year && q.level===task.level && q.n===task.n && q.fileid===task.fileid)).toHaveLength(1);
       for (const topic of task.examTopicIds) {
         expect(examTopicDefinition(topic)).toBeDefined();
-        expect(siblingsFor('physical-education',topic).some(q => q.year===task.year && q.level===task.level && q.n===task.n)).toBe(true);
+        expect(siblingsFor('physical-education',topic).some(q => q.year===task.year && q.level===task.level && q.n===task.n && q.fileid===task.fileid)).toBe(true);
       }
       expect(questionsForTopics('physical-education',[card.topicId]).some(q => q.year===task.year && q.level===task.level && q.n===task.n)).toBe(true);
       expect(fullPaperQuestionFor(task)).toBe(task.parentQuestion);
-      const anchorPath = `scripts/paper-trail/answers/${task.year}/${task.fileid}.json`;
+      // A deferred edition's anchors are its hosted paper-only map (public/paper-anchors/), as pe_complete.py reads them.
+      const anchorPath = task.fileid.endsWith('-deferred.pdf')
+        ? `public/paper-anchors/${task.year}/${task.fileid}.json`
+        : `scripts/paper-trail/answers/${task.year}/${task.fileid}.json`;
       if (!anchors.has(anchorPath)) {
         const map = JSON.parse(readFileSync(anchorPath, 'utf8')) as { q: Array<{ n: string }> };
         anchors.set(anchorPath, map.q.map(q => q.n));
@@ -468,7 +474,8 @@ describe('Physical Education independent paper review', () => {
     // One card per declared choice family; choose-N cards carry the printed
     // instruction and either N per-item slots or the scheme's own holistic grid.
     const choices = audit.reviewedPapers.flatMap(paper => paper.cards.filter(card => card.choice));
-    expect(choices).toHaveLength(29);
+    // June's 29 and the 2022 Higher deferred paper's three six-group pools (Q2, Q16(d), Q18(a)).
+    expect(choices).toHaveLength(29 + 3);
     expect(choices.filter(card => card.choice!.choose > 1)).toHaveLength(6);
     for (const entry of choices) {
       const card = REVIEWED_CARDS.find(card => card.id === entry.cardId)!;

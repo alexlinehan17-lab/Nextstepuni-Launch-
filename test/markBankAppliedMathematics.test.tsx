@@ -405,7 +405,7 @@ describe('Applied Mathematics independently reviewed 2023 tasks', () => {
   it('pins mark boundaries, sources and Atlas joins for both complete papers', () => {
     const expected = { higher: [5, 3, 5, 6, 4, 5, 5, 6, 5, 7], ordinary: [6, 7, 9, 4, 5, 7, 5, 5, 7, 6] };
     for (const level of ['higher', 'ordinary'] as const) {
-      const cards = REVIEWED_CARDS.filter(item => item.year === 2023 && item.level === level);
+      const cards = REVIEWED_CARDS.filter(item => !item.id.includes('-deferred-') && item.year === 2023 && item.level === level);
       expect(cards).toHaveLength(level === 'higher' ? 51 : 61);
       for (let q = 1; q <= expected[level].length; q++) {
         const tasks = cards.filter(item => item.questionRef.match(/Q(\d+)/)?.[1] === String(q));
@@ -476,7 +476,7 @@ describe('Applied Mathematics independently reviewed 2022 tasks', () => {
   it('pins mark boundaries, sources and Atlas joins for both complete papers', () => {
     const expected = { higher: [6, 5, 3, 4, 5, 6, 3, 3, 3, 6], ordinary: [6, 8, 6, 6, 5, 5, 6, 9, 5] };
     for (const level of ['higher', 'ordinary'] as const) {
-      const cards = REVIEWED_CARDS.filter(item => item.year === 2022 && item.level === level);
+      const cards = REVIEWED_CARDS.filter(item => item.year === 2022 && item.level === level && !item.id.includes('-deferred-'));
       expect(cards).toHaveLength(level === 'higher' ? 44 : 56);
       for (let q = 1; q <= expected[level].length; q++) {
         const tasks = cards.filter(item => item.questionRef.match(/Q(\d+)/)?.[1] === String(q));

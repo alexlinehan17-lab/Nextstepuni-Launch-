@@ -258,6 +258,14 @@ def build(sitting=None):
                     start = guide.index(labelled_part['heading'])
                     later = [guide.index(head) for head in heads if guide.index(head) > start]
                     guide = guide[start:min(later) if later else len(guide)]
+                    if labelled.get('intro'):
+                        # A line the scheme prints above the first heading, introducing every part's list
+                        # ("Any of:"): checked against the scheme's own lines, then set above each part's list.
+                        first = min(scheme.lines.index(line) for line in scheme.lines[ask.line:]
+                                    if line.strip() in heads)
+                        assert labelled['introReason'] and labelled['intro'] in [
+                            line.strip() for line in scheme.lines[ask.line:first]], address
+                        guide = [labelled['intro'], *guide]
                     prompt = '\n'.join([*labelled['lines'], labelled_part['paperLabel']])
                     maximum = ask.per
                 if ask.letter_to:

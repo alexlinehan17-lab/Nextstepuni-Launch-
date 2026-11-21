@@ -51,6 +51,7 @@ from agricultural_science_2014_ol import reviewed_tasks as reviewed_2014_ol, pap
 from agricultural_science_2013_hl import reviewed_tasks as reviewed_2013_hl, paper_review as higher_2013_review
 from agricultural_science_2013_ol import reviewed_tasks as reviewed_2013_ol, paper_review as ordinary_2013_review
 from agricultural_science_2012_ol import reviewed_tasks as reviewed_2012_ol, paper_review as ordinary_2012_review
+from agricultural_science_2023_hl_deferred import reviewed_tasks as reviewed_2023_hl_deferred, paper_review as higher_2023_deferred_review
 
 ROOT = Path(__file__).resolve().parents[3]
 AUTHORED = ROOT / 'scripts/markbank/authored/agricultural-science.json'
@@ -246,6 +247,12 @@ def reviewed_tasks():
     batch_dates.update({id(card): '2026-10-12' for card in higher_2024_cards + ordinary_2024_cards + higher_2023_cards + ordinary_2023_cards + higher_2022_cards + ordinary_2022_cards})
     batch_dates.update({id(card): '2026-10-13' for card in higher_2021_cards + ordinary_2021_cards})
     batch_dates.update(legacy_dates)
+    # The SEC's 2023 Higher deferred sitting (deferred lane), its own edition: every card new.
+    higher_2023_deferred_cards, higher_2023_deferred_tasks = reviewed_2023_hl_deferred()
+    cards.extend(higher_2023_deferred_cards)
+    reviews.extend(higher_2023_deferred_tasks)
+    paper_reviews.append(higher_2023_deferred_review())
+    batch_dates.update({id(card): '2026-11-20' for card in higher_2023_deferred_cards})
     for reviewed in cards:
         reviewed['qa'] = {'gates':['verbatim','tariff','figure','source-crop'],
                           'humanReviewedBy':'agent-source-reviewed','humanReviewedAt':batch_dates.get(id(reviewed),'2026-10-07')}

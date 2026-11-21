@@ -150,15 +150,17 @@ describe('Construction Studies exam-topic registry', () => {
       referenceOfficialAssociations: 1396,
       referenceMockAssociations: 940,
       referenceProviderSampleAssociations: 0,
-      matchedAssociations: 1031,
-      sourceBlockedAssociations: 365,
+      // The reference's 49 headings of the 2022 deferred paper match that paper since it was carded (deferred lane):
+      // its ten questions are matched logical cards of their own and its links are counted apart from June's.
+      matchedAssociations: 1031 + 49,
+      sourceBlockedAssociations: 365 - 49,
       sourceBlockedBreakdown: {
         beforeLocalCorpus: 225,
-        deferredSittings: 49,
+        deferredSittings: 0,
         officialSamplePapers: 91,
       },
-      matchedLogicalCards: 302,
-      matchedQuestionTopicLinks: 1019,
+      matchedLogicalCards: 302 + 10,
+      matchedQuestionTopicLinks: 1019 + 42,
       retainedLocalLogicalCards: 21,
     });
     expect(
@@ -215,12 +217,14 @@ describe('Construction Studies exam-topic registry', () => {
       newlyAddedPaperVariants: 5,
       newlyAddedPhysicalMappings: 48,
       verifiedSchemeMaps: 64,
-      verifiedPaperOnlyMaps: 4,
+      // ... and the 2022 deferred paper's own paper-only anchor map.
+      verifiedPaperOnlyMaps: 4 + 1,
       preservedBaselineVariants: 63,
       preservedBaselineCards: 598,
     });
-    expect(papers).toHaveLength(68);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(646);
+    // June's 68 editions and the 2022 Higher deferred paper ("LC029ALP000EV-deferred.pdf"), tagged off its page.
+    expect(papers).toHaveLength(68 + 1);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(646 + 10);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
     expect(papers.filter(paper => paper.year === 2026)).toHaveLength(4);
@@ -303,12 +307,13 @@ describe('Construction Studies exam-topic registry', () => {
         }
       }
     }
-    expect({ schemeMaps, paperOnlyMaps }).toEqual({ schemeMaps: 64, paperOnlyMaps: 4 });
+    expect({ schemeMaps, paperOnlyMaps }).toEqual({ schemeMaps: 64, paperOnlyMaps: 4 + 1 });
   });
 
   it('surfaces 323 written questions, preserves 505 prior cards and adds the source-reviewed 2015 tasks', () => {
     expect(subjectAtlasStats('construction-studies')).toMatchObject({
-      questions: 323,
+      // June's 323 and the 2022 Higher deferred paper's ten.
+      questions: 323 + 10,
       topics: 39,
       yearMin: 2010,
       yearMax: 2026,

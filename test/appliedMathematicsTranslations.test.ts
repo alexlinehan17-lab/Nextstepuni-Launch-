@@ -46,7 +46,9 @@ describe('reviewed Applied Mathematics Irish editions', () => {
 
   it.each(reviews.flatMap(review => review.papers.map(paper => ({ year: review.year, ...paper }))))(
     '$year $level preserves task correspondence and native Atlas source identity', paper => {
-      const cards = REVIEWED_CARDS.filter(card => card.year === paper.year && card.level === paper.level);
+      // June's tasks: the Irish editions translate June's papers, never the deferred sitting's.
+      const cards = REVIEWED_CARDS.filter(card => card.year === paper.year && card.level === paper.level
+        && !card.id.includes('-deferred-'));
       const linkedIds = paper.questions.flatMap(question => question.canonicalTaskIds);
       expect(linkedIds.length).toBe(new Set(linkedIds).size);
       expect(linkedIds.slice().sort()).toEqual(cards.map(card => card.id).sort());

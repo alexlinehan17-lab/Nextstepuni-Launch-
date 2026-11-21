@@ -25,11 +25,25 @@ import art_cards  # noqa: E402
 ROOT = AUTH.parents[2]
 AUTHORED = json.loads((ROOT / 'components/MarkBank/cards/art/authored.json').read_text())
 AUDITED = tuple(AUTHORED['auditedYears'])
+
+
+def sitting_of(card):
+    """Point art_printed's readers at the card's own sitting: June's files, or the deferred sitting's."""
+    P.SITTING = '-deferred' if card.get('sitting') == 'deferred' else ''
+    return card
 REF_LEVEL = {'higher': 'HL', 'ordinary': 'OL'}
 
 
 def page_has(path: str, page: int, text: str) -> bool:
     return P.normal(text) in P.normal(P.visible_lines(P._open(path)[page - 1]))
+
+
+def in_reading_order(path: str, text: str) -> bool:
+    """Printed in the order the page is read, top to bottom (art_cards' own word order): a text box the text layer
+    lists after the parts it sits above (the extract of 2023 Higher deferred Q2) is read where it is printed."""
+    pages = [' '.join(w[4] for w in sorted(P.visible_words(page), key=lambda w: (round(w[1]), w[0])))
+             for page in P._open(path)]
+    return P.normal(text) in P.normal(' '.join(pages))
 
 
 def on_cited_page(path: str, pages, text: str) -> bool:
@@ -42,16 +56,19 @@ class ArtSecWordingTest(unittest.TestCase):
         self.assertTrue(AUDITED)
         # Descriptors exist from 2023; the 2021-2022 schemes allocate marks
         # to components without descriptor bands.
+        # Each carded deferred sitting from 2023 has its own, keyed <year>-<level>-deferred.
         self.assertEqual(sorted(AUTHORED['descriptors']),
-                         sorted(f'{year}-{level}' for year in AUDITED if year >= 2023
-                                for level in ('higher', 'ordinary')))
+                         sorted([f'{year}-{level}' for year in AUDITED if year >= 2023
+                                 for level in ('higher', 'ordinary')]
+                                + [f'{year}-{level}-deferred' for year, level in art_cards.DEFERRED_SITTINGS
+                                   if year >= 2023]))
 
     def test_every_card_string_is_printed(self):
         failures = []
         for card in AUTHORED['cards']:
             if card['year'] not in AUDITED:
                 continue
-            year, level = card['year'], card['level']
+            year, level = sitting_of(card)['year'], card['level']
             paper, scheme = P.paper_path(year, level), P.scheme_path(year, level)
             lines = [re.sub(r'^•\s*', '', line) for line in card['questionText'].split('\n') if line.strip()]
             checks = [('question', line) for line in lines]
@@ -59,7 +76,7 @@ class ArtSecWordingTest(unittest.TestCase):
             if card.get('stem'):
                 checks.append(('stem', card['stem']))
             for kind, text in checks:
-                if not P.printed(paper, text):
+                if not (P.printed(paper, text) or in_reading_order(paper, text)):
                     failures.append((card['id'], kind, text))
             if re.search('[\ue000-\uf8ff]', json.dumps(card, ensure_ascii=False)):
                 failures.append((card['id'], 'private-use glyph', ''))
@@ -78,7 +95,8 @@ class ArtSecWordingTest(unittest.TestCase):
     def test_every_descriptor_and_note_is_printed_on_its_page(self):
         failures = []
         for key, lifted in AUTHORED['descriptors'].items():
-            year, level = key.split('-')
+            year, level, *deferred = key.split('-')
+            P.SITTING = '-deferred' if deferred else ''
             scheme = P.scheme_path(int(year), level)
             short = lifted['short']
             for text in [short['lead'], *(b for band in short['bands'].values() for b in band)]:
@@ -104,7 +122,8 @@ class ArtSecWordingTest(unittest.TestCase):
                 # One scheme table per question, on its one page.
                 self.assertIsInstance(card['schemePage'], int, card['id'])
                 continue
-            lifted = AUTHORED['descriptors'][f"{card['year']}-{card['level']}"]
+            lifted = AUTHORED['descriptors'][
+                f"{card['year']}-{card['level']}{'-deferred' if card.get('sitting') == 'deferred' else ''}"]
             if card['assessment'] == 'current-long-descriptors':
                 expected = [lifted['notes']['current-long-descriptors']['page'],
                             *(criterion['page'] for criterion in lifted['long'])]
@@ -172,11 +191,19 @@ class ArtSecWordingTest(unittest.TestCase):
             if lang == 'e' and str(number).isdigit():
                 atlas[(2000 + year, level, component, int(number))] = {
                     t for index in topic_indexes for t in topics[index][5]}
+        # A deferred question joins on its own paper's file id (runtime deferredQuestionMappings).
+        deferred_atlas = {(2000 + year, level, fileid, int(number)): {t for index in topic_indexes for t in topics[index][5]}
+                          for level, year, fileid, number, topic_indexes in runtime.get('deferredQuestionMappings', [])}
         failures = []
         for card in AUTHORED['cards']:
             if card['year'] not in AUDITED:
                 continue
             number = int(re.search(r'Q(\d+)', card['questionRef']).group(1))
+            if card.get('sitting') == 'deferred':
+                allowed = deferred_atlas.get((card['year'], card['level'][0], card['paperFileid'] + '.pdf', number)) or set()
+                if card['topicId'] not in allowed:
+                    failures.append((card['id'], card['topicId'], sorted(allowed)))
+                continue
             # No exceptions: reviewed anomalies, per-option headings and the
             # specific headings of generic-only questions are in the Atlas.
             component = re.search(r'LP(\w{3})', card['paperFileid']).group(1)
@@ -200,13 +227,39 @@ class ArtSecWordingTest(unittest.TestCase):
                 # The printed task, without the option a per-option card names
                 # ("2012 HL Q15 · task 1 · Baroque sculpture" is task 1).
                 deck_refs = {re.match(r'[^·]*?(?: · task \d+)?(?= · |$)', card['questionRef']).group(0)
-                             for card in AUTHORED['cards'] if card['year'] == year and card['level'] == level}
+                             for card in AUTHORED['cards'] if card['year'] == year and card['level'] == level
+                             and card.get('sitting') != 'deferred'}
                 self.assertEqual(deck_refs, printed_refs, (year, level))
                 reviewed = {key[2] for key in (*art_cards.PRINTED_CHOICES, *art_cards.REVIEWED_OPEN_SELECTIONS,
                                                *art_cards.REVIEWED_NON_ENUMERABLE_POOLS,
                                                *art_cards.TASK_COMBINATION_CHOICES)
                             if key[:2] == (year, level)}
                 self.assertEqual(directive_questions, reviewed, (year, level))
+
+
+    def test_independent_paper_census_matches_the_deferred_deck(self):
+        # Each carded deferred sitting against its own paper (art_paper_census on the deferred booklet).
+        art_cards.use_sitting('deferred')
+        try:
+            for year, level in art_cards.DEFERRED_SITTINGS:
+                census = art_paper_census.census(year, level, 'deferred')
+                printed_refs = {f'{year} {REF_LEVEL[level]} Q{number}'
+                                + ('' if task == 'response' else task.replace('task ', ' · task '))
+                                for number, question in census['questions'].items() for task in question['tasks']}
+                deck_refs = {re.match(r'[^·]*?(?: · task \d+)?(?= · |$)',
+                                      card['questionRef'].removesuffix(' — Deferred sitting')).group(0)
+                             for card in AUTHORED['cards'] if card['year'] == year and card['level'] == level
+                             and card.get('sitting') == 'deferred'}
+                self.assertEqual(deck_refs, printed_refs, (year, level, 'deferred'))
+                directive_questions = {int(number) for number, question in census['questions'].items()
+                                       if question['directives']}
+                reviewed = {key[2] for key in (*art_cards.PRINTED_CHOICES, *art_cards.REVIEWED_OPEN_SELECTIONS,
+                                               *art_cards.REVIEWED_NON_ENUMERABLE_POOLS,
+                                               *art_cards.TASK_COMBINATION_CHOICES)
+                            if key[:2] == (year, level)}
+                self.assertEqual(directive_questions, reviewed, (year, level, 'deferred'))
+        finally:
+            art_cards.use_sitting('main')
 
 
 if __name__ == '__main__':

@@ -32323,4 +32323,2065 @@ export const CARDS: SecCard[] = [
           "includesPrompt": true
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q1-a", topicId: "cons-1-5", conceptId: "suspended-floor-window-section-a",
+    section: "B", questionRef: "2022 HL Q1(a) — Deferred sitting",
+    stem: "A fixed frame triple-glazed wooden window is fitted in the external wall of a dwelling house, as shown. The external wall is a 450 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. The bottom of the concrete cill is located 400 mm above finished floor level. The ground floor is an insulated suspended timber floor with 25 mm tongue-and-groove hardwood flooring. The wooden joists are 200 mm × 40 mm.",
+    questionText: "To a scale of 1:5, draw a vertical section through the ground floor and window. Show the typical construction details from the bottom of the strip foundation, through the suspended timber floor and the external wall to a level 200 mm above the bottom frame of the window. Include three typical dimensions on your drawing.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 55,
+    rows: [
+    { id: "foundation-wall", kind: "criterion", verbatim: "Foundation and external wall", marks: 12, contextNote: "Best three details, 4 each (3 for drawing, 1 for annotation). Marking menu: R.C. foundation; blockwork below and above floor level; full-fill wall insulation and thermal blocks; external render and internal plaster; DPC. Typical sizes in the scheme’s model: R.C. strip foundation 1350 × 450 mm; 100 mm block leaves; 250 mm full-fill cavity with basalt-coated low-conductivity ties; 19 mm external render; 15 mm internal plaster.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "floor", kind: "criterion", verbatim: "Floor structure", marks: 20, contextNote: "Best five details, 4 each (3 for drawing, 1 for annotation). Marking menu: compacted hardcore and sand blinding; radon barrier; R.C. concrete subfloor; dwarf walls; wallplate and DPC; ventilation pipe/cover/sealed; floor joists at 400 mm centres; airtight membrane and floor insulation; airtight membrane and tape to the floor perimeter; T + G flooring; skirting. Typical sizes: 150 mm subfloor; 100 mm dwarf walls; 100 × 75 mm wallplate; 200 × 40 mm joists; 200 mm floor insulation; 25 mm T + G flooring; Ø100 mm ventilation pipe.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] },
+    { id: "window", kind: "criterion", verbatim: "Window detail", marks: 12, contextNote: "Best three details, 4 each (3 for drawing, 1 for annotation). Marking menu: concrete window cill; DPC wrapped around the cill; thermally broken window frame; window board; triple glazing; airtight tapes at the cill; vertical DPC.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "dimensions", kind: "criterion", verbatim: "Three typical dimensions", marks: 3, contextNote: "Three typical dimensions shown on the drawing, 1 each.", permittedMarks: [0,1,2,3] },
+    { id: "presentation", kind: "criterion", verbatim: "Scale 4 marks: Drafting 4 marks:", marks: 8, contextNote: "Scale 4 and drafting 4, assessed together: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8], parts: [{"id":"scale","verbatim":"Scale","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"drafting","verbatim":"Drafting","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Suspended timber floor, external wall and window section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the ventilation detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q1-original.png",
+          "srcHash": "1feb2f699fd689cc0de665e601a8b9a5",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 1: the printed question with a sketch of a triple-glazed wooden window in a rendered cavity wall above a suspended timber floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q1-section.png",
+          "srcHash": "84dcbf21451b35f9debe52dd36168e21",
+          "alt": "SEC model vertical section from the strip foundation through the suspended timber floor, cavity wall and window cill, with the detail lists for each area (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q1-b", topicId: "cons-4-3", conceptId: "suspended-floor-window-section-b",
+    section: "B", questionRef: "2022 HL Q1(b) — Deferred sitting",
+    stem: "A fixed frame triple-glazed wooden window is fitted in the external wall of a dwelling house, as shown. The external wall is a 450 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. The bottom of the concrete cill is located 400 mm above finished floor level. The ground floor is an insulated suspended timber floor with 25 mm tongue-and-groove hardwood flooring. The wooden joists are 200 mm × 40 mm.",
+    questionText: "On your drawing, show clearly the ventilation to the suspended timber floor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "ventilation", kind: "criterion", verbatim: "Design detail to provide ventilation to suspended timber floor", marks: 5, contextNote: "Show and identify the detail, as in the scheme’s model: a Ø100 mm vent pipe with a gasket through the external wall below the floor, laid to fall towards the outside.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Suspended timber floor, external wall and window section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the ventilation detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q1-original.png",
+          "srcHash": "1feb2f699fd689cc0de665e601a8b9a5",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 1: the printed question with a sketch of a triple-glazed wooden window in a rendered cavity wall above a suspended timber floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q1-ventilation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q1-ventilation.png",
+          "srcHash": "1664a07f9ca42f741a08fb3fcd89e6f4",
+          "alt": "SEC model detail of the suspended floor ventilation, labelled “(b) Ø100 mm vent pipe + gasket (Fall towards outside)”.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q1-complete", topicId: "cons-1-5", conceptId: "suspended-floor-window-section-complete",
+    section: "B", questionRef: "2022 HL Q1 — complete — Deferred sitting",
+    stem: "A fixed frame triple-glazed wooden window is fitted in the external wall of a dwelling house, as shown. The external wall is a 450 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. The bottom of the concrete cill is located 400 mm above finished floor level. The ground floor is an insulated suspended timber floor with 25 mm tongue-and-groove hardwood flooring. The wooden joists are 200 mm × 40 mm.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the ground floor and window. Show the typical construction details from the bottom of the strip foundation, through the suspended timber floor and the external wall to a level 200 mm above the bottom frame of the window. Include three typical dimensions on your drawing. (b) On your drawing, show clearly the ventilation to the suspended timber floor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-foundation-wall", kind: "criterion", verbatim: "Foundation and external wall", marks: 12, contextNote: "Best three details, 4 each (3 for drawing, 1 for annotation). Marking menu: R.C. foundation; blockwork below and above floor level; full-fill wall insulation and thermal blocks; external render and internal plaster; DPC. Typical sizes in the scheme’s model: R.C. strip foundation 1350 × 450 mm; 100 mm block leaves; 250 mm full-fill cavity with basalt-coated low-conductivity ties; 19 mm external render; 15 mm internal plaster.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-floor", kind: "criterion", verbatim: "Floor structure", marks: 20, contextNote: "Best five details, 4 each (3 for drawing, 1 for annotation). Marking menu: compacted hardcore and sand blinding; radon barrier; R.C. concrete subfloor; dwarf walls; wallplate and DPC; ventilation pipe/cover/sealed; floor joists at 400 mm centres; airtight membrane and floor insulation; airtight membrane and tape to the floor perimeter; T + G flooring; skirting. Typical sizes: 150 mm subfloor; 100 mm dwarf walls; 100 × 75 mm wallplate; 200 × 40 mm joists; 200 mm floor insulation; 25 mm T + G flooring; Ø100 mm ventilation pipe.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] },
+    { id: "a-window", kind: "criterion", verbatim: "Window detail", marks: 12, contextNote: "Best three details, 4 each (3 for drawing, 1 for annotation). Marking menu: concrete window cill; DPC wrapped around the cill; thermally broken window frame; window board; triple glazing; airtight tapes at the cill; vertical DPC.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Three typical dimensions", marks: 3, contextNote: "Three typical dimensions shown on the drawing, 1 each.", permittedMarks: [0,1,2,3] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Scale 4 marks: Drafting 4 marks:", marks: 8, contextNote: "Scale 4 and drafting 4, assessed together: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8], parts: [{"id":"scale","verbatim":"Scale","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"drafting","verbatim":"Drafting","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    { id: "b-ventilation", kind: "criterion", verbatim: "Design detail to provide ventilation to suspended timber floor", marks: 5, contextNote: "Show and identify the detail, as in the scheme’s model: a Ø100 mm vent pipe with a gasket through the external wall below the floor, laid to fall towards the outside.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-hl-deferred-q1-a","label":"a","marks":55,"rowIds":["a-foundation-wall","a-floor","a-window","a-dimensions","a-presentation"]},{"sourceCardId":"cons-2022-hl-deferred-q1-b","label":"b","marks":5,"rowIds":["b-ventilation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Suspended timber floor, external wall and window section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the ventilation detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q1-original.png",
+          "srcHash": "1feb2f699fd689cc0de665e601a8b9a5",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 1: the printed question with a sketch of a triple-glazed wooden window in a rendered cavity wall above a suspended timber floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q1-section.png",
+          "srcHash": "84dcbf21451b35f9debe52dd36168e21",
+          "alt": "SEC model vertical section from the strip foundation through the suspended timber floor, cavity wall and window cill, with the detail lists for each area (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q2-a-safety-signage", topicId: "cons-1-8", conceptId: "workers-site-safety-a-safety-signage",
+    section: "B", questionRef: "2022 HL Q2(a) — safety signage — Deferred sitting",
+    questionText: "Discuss in detail the importance of each of the following in relation to workers’ safety on a construction site: safety signage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "importance", kind: "criterion", verbatim: "Safety signage: (2 for point: 3 for discussion)", marks: 5, contextNote: "Point 2 and discussion 3. Such as: signage displayed prominently throughout the site; self-explanatory graphics; multilingual wording for workers with different native languages; warnings of falling objects, slippery surfaces, deep excavations, low objects and electrocution; colour-coded categories (green safe, red circle with a diagonal line prohibited, blue mandatory, yellow and black warning).", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"point","verbatim":"Point","marks":2,"permittedMarks":[0,1,2]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Workers’ safety on a construction site",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original question retained. All three printed items in (a) and all three printed activities in (b) and (c) are required, each separately marked. The scheme lists typical points, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-original.png",
+          "srcHash": "148b3deb2ce3af637e20025732a31334",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 2: the printed question with a sketch of four construction workers in hard hats and high-visibility vests reading a drawing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q2-a-personal-protective-equipment", topicId: "cons-1-8", conceptId: "workers-site-safety-a-personal-protective-equipment",
+    section: "B", questionRef: "2022 HL Q2(a) — personal protective equipment (PPE) — Deferred sitting",
+    questionText: "Discuss in detail the importance of each of the following in relation to workers’ safety on a construction site: personal protective equipment (PPE).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "importance", kind: "criterion", verbatim: "Personal Protective Equipment (PPE):(2 for point: 3 for discussion)", marks: 5, contextNote: "Point 2 and discussion 3. Such as: PPE is required by law on site; hard hat, boots, high-visibility clothing, gloves, safety glasses, ear protection and harness; specific PPE for specialist and dangerous tasks; ear protection against noise above 80 dB that still lets workers hear speech; dust masks with filters; harnesses with quick-release D rings; making workers visible to machine operators and drivers; PPE for every visitor.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"point","verbatim":"Point","marks":2,"permittedMarks":[0,1,2]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Workers’ safety on a construction site",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original question retained. All three printed items in (a) and all three printed activities in (b) and (c) are required, each separately marked. The scheme lists typical points, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-original.png",
+          "srcHash": "148b3deb2ce3af637e20025732a31334",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 2: the printed question with a sketch of four construction workers in hard hats and high-visibility vests reading a drawing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q2-a-awareness", topicId: "cons-1-8", conceptId: "workers-site-safety-a-awareness",
+    section: "B", questionRef: "2022 HL Q2(a) — awareness — Deferred sitting",
+    questionText: "Discuss in detail the importance of each of the following in relation to workers’ safety on a construction site: awareness.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "importance", kind: "criterion", verbatim: "Awareness: (2 for point: 3 for discussion)", marks: 5, contextNote: "Point 2 and discussion 3. Such as: every worker must pass the national safety course (Safe Pass) before starting; full awareness of the possible hazards before work begins; an unaware worker puts everyone at risk; understanding of the hazards and general alertness is perhaps the best way to prevent accidents; enforcement of safe work practices; new workers paired with an experienced worker.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"point","verbatim":"Point","marks":2,"permittedMarks":[0,1,2]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Workers’ safety on a construction site",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original question retained. All three printed items in (a) and all three printed activities in (b) and (c) are required, each separately marked. The scheme lists typical points, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-original.png",
+          "srcHash": "148b3deb2ce3af637e20025732a31334",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 2: the printed question with a sketch of four construction workers in hard hats and high-visibility vests reading a drawing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q2-a", topicId: "cons-1-8", conceptId: "workers-site-safety-a",
+    section: "B", questionRef: "2022 HL Q2(a) — Deferred sitting",
+    questionText: "Discuss in detail the importance of each of the following in relation to workers’ safety on a construction site: safety signage; personal protective equipment (PPE); awareness.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "a-safety-signage-importance", kind: "criterion", verbatim: "Safety signage: (2 for point: 3 for discussion)", marks: 5, contextNote: "Point 2 and discussion 3. Such as: signage displayed prominently throughout the site; self-explanatory graphics; multilingual wording for workers with different native languages; warnings of falling objects, slippery surfaces, deep excavations, low objects and electrocution; colour-coded categories (green safe, red circle with a diagonal line prohibited, blue mandatory, yellow and black warning).", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"point","verbatim":"Point","marks":2,"permittedMarks":[0,1,2]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "a-personal-protective-equipment-importance", kind: "criterion", verbatim: "Personal Protective Equipment (PPE):(2 for point: 3 for discussion)", marks: 5, contextNote: "Point 2 and discussion 3. Such as: PPE is required by law on site; hard hat, boots, high-visibility clothing, gloves, safety glasses, ear protection and harness; specific PPE for specialist and dangerous tasks; ear protection against noise above 80 dB that still lets workers hear speech; dust masks with filters; harnesses with quick-release D rings; making workers visible to machine operators and drivers; PPE for every visitor.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"point","verbatim":"Point","marks":2,"permittedMarks":[0,1,2]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "a-awareness-importance", kind: "criterion", verbatim: "Awareness: (2 for point: 3 for discussion)", marks: 5, contextNote: "Point 2 and discussion 3. Such as: every worker must pass the national safety course (Safe Pass) before starting; full awareness of the possible hazards before work begins; an unaware worker puts everyone at risk; understanding of the hazards and general alertness is perhaps the best way to prevent accidents; enforcement of safe work practices; new workers paired with an experienced worker.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"point","verbatim":"Point","marks":2,"permittedMarks":[0,1,2]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-hl-deferred-q2-a-safety-signage","label":"Safety signage","marks":5,"rowIds":["a-safety-signage-importance"]},{"sourceCardId":"cons-2022-hl-deferred-q2-a-personal-protective-equipment","label":"Personal Protective Equipment (PPE)","marks":5,"rowIds":["a-personal-protective-equipment-importance"]},{"sourceCardId":"cons-2022-hl-deferred-q2-a-awareness","label":"Awareness","marks":5,"rowIds":["a-awareness-importance"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Workers’ safety on a construction site",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original question retained. All three printed items in (a) and all three printed activities in (b) and (c) are required, each separately marked. The scheme lists typical points, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-original.png",
+          "srcHash": "148b3deb2ce3af637e20025732a31334",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 2: the printed question with a sketch of four construction workers in hard hats and high-visibility vests reading a drawing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q2-b-use-of-vehicles", topicId: "cons-1-8", conceptId: "workers-site-safety-b-use-of-vehicles",
+    section: "B", questionRef: "2022 HL Q2(b) — use of vehicles — Deferred sitting",
+    questionText: "Identify one possible risk to personal safety on a construction site associated with each of the following: use of vehicles.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "risk", kind: "criterion", verbatim: "Use of vehicles", marks: 3, contextNote: "One risk identified. Such as: a reversing vehicle knocking down a worker; a vehicle capsizing on uneven ground; the driver thrown from the vehicle or trapped underneath; electrocution from overhead cables; scaffolding knocked over, throwing off workers; driving into a poorly signposted excavation or collapsing its sides; burying someone while tipping a load.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Workers’ safety on a construction site",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original question retained. All three printed items in (a) and all three printed activities in (b) and (c) are required, each separately marked. The scheme lists typical points, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-original.png",
+          "srcHash": "148b3deb2ce3af637e20025732a31334",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 2: the printed question with a sketch of four construction workers in hard hats and high-visibility vests reading a drawing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q2-b-use-of-a-ladder", topicId: "cons-1-8", conceptId: "workers-site-safety-b-use-of-a-ladder",
+    section: "B", questionRef: "2022 HL Q2(b) — use of a ladder — Deferred sitting",
+    questionText: "Identify one possible risk to personal safety on a construction site associated with each of the following: use of a ladder.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "risk", kind: "criterion", verbatim: "Use of a ladder", marks: 3, contextNote: "One risk identified. Such as: falling when three points of contact are not kept while climbing; the ladder sliding on metal; electrocution when a metal ladder touches overhead cables; the ladder falling when not secured; the ladder set at the wrong angle (it should be about 74°); the ladder not extending 1 metre above the platform.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Workers’ safety on a construction site",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original question retained. All three printed items in (a) and all three printed activities in (b) and (c) are required, each separately marked. The scheme lists typical points, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-original.png",
+          "srcHash": "148b3deb2ce3af637e20025732a31334",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 2: the printed question with a sketch of four construction workers in hard hats and high-visibility vests reading a drawing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q2-b-demolition-work", topicId: "cons-1-8", conceptId: "workers-site-safety-b-demolition-work",
+    section: "B", questionRef: "2022 HL Q2(b) — demolition work — Deferred sitting",
+    questionText: "Identify one possible risk to personal safety on a construction site associated with each of the following: demolition work.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "risk", kind: "criterion", verbatim: "Demolition work", marks: 3, contextNote: "One risk identified. Such as: workers falling from structures being demolished; falling objects or materials injuring workers or a third party; walls collapsing unexpectedly; crushed limbs from falling masonry; inhaling dust from hazardous materials; machine operators trapped by collapsing walls or chimneys.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Workers’ safety on a construction site",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original question retained. All three printed items in (a) and all three printed activities in (b) and (c) are required, each separately marked. The scheme lists typical points, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-original.png",
+          "srcHash": "148b3deb2ce3af637e20025732a31334",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 2: the printed question with a sketch of four construction workers in hard hats and high-visibility vests reading a drawing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q2-c-use-of-vehicles", topicId: "cons-1-8", conceptId: "workers-site-safety-c-use-of-vehicles",
+    section: "B", questionRef: "2022 HL Q2(c) — use of vehicles — Deferred sitting",
+    questionText: "Using notes and freehand sketches, outline two safety procedures that should be observed to reduce each of the risks identified at 2(b) above. — Use of vehicles",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "procedure-1", kind: "criterion", verbatim: "Safety procedure 1 (3 for note, 3 for sketch)", marks: 6, contextNote: "Note 3 and sketch 3. Such as: drivers who have completed the required safety training; vehicles operated only by trained, competent and authorised people. A misprint in the scheme: its mark table heads part (c) “Three safety procedures”, but the paper asks for two procedures for each risk and the table itself prices two for each of the three activities (6 × 6 marks).", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "procedure-2", kind: "criterion", verbatim: "Safety procedure 2 (3 for note, 3 for sketch)", marks: 6, contextNote: "A second, different procedure: note 3 and sketch 3. Such as: signage throughout the site warning workers of machinery; seat belts worn in operation; sensors and horns that sound automatically when the vehicle is put in reverse.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Workers’ safety on a construction site",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original question retained. All three printed items in (a) and all three printed activities in (b) and (c) are required, each separately marked. The scheme lists typical points, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-original.png",
+          "srcHash": "148b3deb2ce3af637e20025732a31334",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 2: the printed question with a sketch of four construction workers in hard hats and high-visibility vests reading a drawing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-procedures",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-procedures.png",
+          "srcHash": "537d7d7bc7b59978c3df813564d92486",
+          "alt": "SEC 2022 Higher deferred marking scheme notes on two safety procedures for each of the use of vehicles, the use of ladders and demolition work, with sketches of warning signs, a ladder at 74° and safe step-ladder use.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q2-c-use-of-a-ladder", topicId: "cons-1-8", conceptId: "workers-site-safety-c-use-of-a-ladder",
+    section: "B", questionRef: "2022 HL Q2(c) — use of a ladder — Deferred sitting",
+    questionText: "Using notes and freehand sketches, outline two safety procedures that should be observed to reduce each of the risks identified at 2(b) above. — Use of a ladder",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "procedure-1", kind: "criterion", verbatim: "Safety procedure 1 (3 for note, 3 for sketch)", marks: 6, contextNote: "Note 3 and sketch 3. Such as: ladders used only by employees who have completed a ladder safety course; the ladder held or tied at both ends; a slope of 74°. A misprint in the scheme: its mark table heads part (c) “Three safety procedures”, but the paper asks for two procedures for each risk and the table itself prices two for each of the three activities (6 × 6 marks).", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "procedure-2", kind: "criterion", verbatim: "Safety procedure 2 (3 for note, 3 for sketch)", marks: 6, contextNote: "A second, different procedure: note 3 and sketch 3. Such as: the ladder extending at least 1.0 metre above the platform; multiple ladder runs where the platform is more than one storey high; a structurally sound ladder designed for the loads; no overreaching.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Workers’ safety on a construction site",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original question retained. All three printed items in (a) and all three printed activities in (b) and (c) are required, each separately marked. The scheme lists typical points, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-original.png",
+          "srcHash": "148b3deb2ce3af637e20025732a31334",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 2: the printed question with a sketch of four construction workers in hard hats and high-visibility vests reading a drawing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-procedures",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-procedures.png",
+          "srcHash": "537d7d7bc7b59978c3df813564d92486",
+          "alt": "SEC 2022 Higher deferred marking scheme notes on two safety procedures for each of the use of vehicles, the use of ladders and demolition work, with sketches of warning signs, a ladder at 74° and safe step-ladder use.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q2-c-demolition-work", topicId: "cons-1-8", conceptId: "workers-site-safety-c-demolition-work",
+    section: "B", questionRef: "2022 HL Q2(c) — demolition work — Deferred sitting",
+    questionText: "Using notes and freehand sketches, outline two safety procedures that should be observed to reduce each of the risks identified at 2(b) above. — Demolition work",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "procedure-1", kind: "criterion", verbatim: "Safety procedure 1 (3 for note, 3 for sketch)", marks: 6, contextNote: "Note 3 and sketch 3. Such as: signage around the area where demolition is taking place; warning or barrier tape marking a safe boundary around the site. A misprint in the scheme: its mark table heads part (c) “Three safety procedures”, but the paper asks for two procedures for each risk and the table itself prices two for each of the three activities (6 × 6 marks).", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "procedure-2", kind: "criterion", verbatim: "Safety procedure 2 (3 for note, 3 for sketch)", marks: 6, contextNote: "A second, different procedure: note 3 and sketch 3. Such as: all services isolated or disconnected before demolition begins; hazardous materials disposed of appropriately.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Workers’ safety on a construction site",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original question retained. All three printed items in (a) and all three printed activities in (b) and (c) are required, each separately marked. The scheme lists typical points, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-original.png",
+          "srcHash": "148b3deb2ce3af637e20025732a31334",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 2: the printed question with a sketch of four construction workers in hard hats and high-visibility vests reading a drawing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-procedures",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-procedures.png",
+          "srcHash": "537d7d7bc7b59978c3df813564d92486",
+          "alt": "SEC 2022 Higher deferred marking scheme notes on two safety procedures for each of the use of vehicles, the use of ladders and demolition work, with sketches of warning signs, a ladder at 74° and safe step-ladder use.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q2-b", topicId: "cons-1-8", conceptId: "workers-site-safety-b",
+    section: "B", questionRef: "2022 HL Q2(b) — Deferred sitting",
+    questionText: "Identify one possible risk to personal safety on a construction site associated with each of the following: use of vehicles; use of a ladder; demolition work.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "b-use-of-vehicles-risk", kind: "criterion", verbatim: "Use of vehicles", marks: 3, contextNote: "One risk identified. Such as: a reversing vehicle knocking down a worker; a vehicle capsizing on uneven ground; the driver thrown from the vehicle or trapped underneath; electrocution from overhead cables; scaffolding knocked over, throwing off workers; driving into a poorly signposted excavation or collapsing its sides; burying someone while tipping a load.", permittedMarks: [0,1,2,3] },
+    { id: "b-use-of-a-ladder-risk", kind: "criterion", verbatim: "Use of a ladder", marks: 3, contextNote: "One risk identified. Such as: falling when three points of contact are not kept while climbing; the ladder sliding on metal; electrocution when a metal ladder touches overhead cables; the ladder falling when not secured; the ladder set at the wrong angle (it should be about 74°); the ladder not extending 1 metre above the platform.", permittedMarks: [0,1,2,3] },
+    { id: "b-demolition-work-risk", kind: "criterion", verbatim: "Demolition work", marks: 3, contextNote: "One risk identified. Such as: workers falling from structures being demolished; falling objects or materials injuring workers or a third party; walls collapsing unexpectedly; crushed limbs from falling masonry; inhaling dust from hazardous materials; machine operators trapped by collapsing walls or chimneys.", permittedMarks: [0,1,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-hl-deferred-q2-b-use-of-vehicles","label":"Use of vehicles","marks":3,"rowIds":["b-use-of-vehicles-risk"]},{"sourceCardId":"cons-2022-hl-deferred-q2-b-use-of-a-ladder","label":"Use of a ladder","marks":3,"rowIds":["b-use-of-a-ladder-risk"]},{"sourceCardId":"cons-2022-hl-deferred-q2-b-demolition-work","label":"Demolition work","marks":3,"rowIds":["b-demolition-work-risk"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Workers’ safety on a construction site",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original question retained. All three printed items in (a) and all three printed activities in (b) and (c) are required, each separately marked. The scheme lists typical points, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-original.png",
+          "srcHash": "148b3deb2ce3af637e20025732a31334",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 2: the printed question with a sketch of four construction workers in hard hats and high-visibility vests reading a drawing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q2-c", topicId: "cons-1-8", conceptId: "workers-site-safety-c",
+    section: "B", questionRef: "2022 HL Q2(c) — Deferred sitting",
+    questionText: "Using notes and freehand sketches, outline two safety procedures that should be observed to reduce each of the risks identified at 2(b) above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 36,
+    rows: [
+    { id: "c-use-of-vehicles-procedure-1", kind: "criterion", verbatim: "Safety procedure 1 (3 for note, 3 for sketch)", marks: 6, contextNote: "Note 3 and sketch 3. Such as: drivers who have completed the required safety training; vehicles operated only by trained, competent and authorised people. A misprint in the scheme: its mark table heads part (c) “Three safety procedures”, but the paper asks for two procedures for each risk and the table itself prices two for each of the three activities (6 × 6 marks).", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "c-use-of-vehicles-procedure-2", kind: "criterion", verbatim: "Safety procedure 2 (3 for note, 3 for sketch)", marks: 6, contextNote: "A second, different procedure: note 3 and sketch 3. Such as: signage throughout the site warning workers of machinery; seat belts worn in operation; sensors and horns that sound automatically when the vehicle is put in reverse.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "c-use-of-a-ladder-procedure-1", kind: "criterion", verbatim: "Safety procedure 1 (3 for note, 3 for sketch)", marks: 6, contextNote: "Note 3 and sketch 3. Such as: ladders used only by employees who have completed a ladder safety course; the ladder held or tied at both ends; a slope of 74°. A misprint in the scheme: its mark table heads part (c) “Three safety procedures”, but the paper asks for two procedures for each risk and the table itself prices two for each of the three activities (6 × 6 marks).", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "c-use-of-a-ladder-procedure-2", kind: "criterion", verbatim: "Safety procedure 2 (3 for note, 3 for sketch)", marks: 6, contextNote: "A second, different procedure: note 3 and sketch 3. Such as: the ladder extending at least 1.0 metre above the platform; multiple ladder runs where the platform is more than one storey high; a structurally sound ladder designed for the loads; no overreaching.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "c-demolition-work-procedure-1", kind: "criterion", verbatim: "Safety procedure 1 (3 for note, 3 for sketch)", marks: 6, contextNote: "Note 3 and sketch 3. Such as: signage around the area where demolition is taking place; warning or barrier tape marking a safe boundary around the site. A misprint in the scheme: its mark table heads part (c) “Three safety procedures”, but the paper asks for two procedures for each risk and the table itself prices two for each of the three activities (6 × 6 marks).", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "c-demolition-work-procedure-2", kind: "criterion", verbatim: "Safety procedure 2 (3 for note, 3 for sketch)", marks: 6, contextNote: "A second, different procedure: note 3 and sketch 3. Such as: all services isolated or disconnected before demolition begins; hazardous materials disposed of appropriately.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-hl-deferred-q2-c-use-of-vehicles","label":"Use of vehicles","marks":12,"rowIds":["c-use-of-vehicles-procedure-1","c-use-of-vehicles-procedure-2"]},{"sourceCardId":"cons-2022-hl-deferred-q2-c-use-of-a-ladder","label":"Use of a ladder","marks":12,"rowIds":["c-use-of-a-ladder-procedure-1","c-use-of-a-ladder-procedure-2"]},{"sourceCardId":"cons-2022-hl-deferred-q2-c-demolition-work","label":"Demolition work","marks":12,"rowIds":["c-demolition-work-procedure-1","c-demolition-work-procedure-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Workers’ safety on a construction site",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original question retained. All three printed items in (a) and all three printed activities in (b) and (c) are required, each separately marked. The scheme lists typical points, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-original.png",
+          "srcHash": "148b3deb2ce3af637e20025732a31334",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 2: the printed question with a sketch of four construction workers in hard hats and high-visibility vests reading a drawing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-procedures",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-procedures.png",
+          "srcHash": "537d7d7bc7b59978c3df813564d92486",
+          "alt": "SEC 2022 Higher deferred marking scheme notes on two safety procedures for each of the use of vehicles, the use of ladders and demolition work, with sketches of warning signs, a ladder at 74° and safe step-ladder use.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q2-complete", topicId: "cons-1-8", conceptId: "workers-site-safety-complete",
+    section: "B", questionRef: "2022 HL Q2 — complete — Deferred sitting",
+    questionText: "(a) Discuss in detail the importance of each of the following in relation to workers’ safety on a construction site: safety signage; personal protective equipment (PPE); awareness. (b) Identify one possible risk to personal safety on a construction site associated with each of the following: use of vehicles; use of a ladder; demolition work. (c) Using notes and freehand sketches, outline two safety procedures that should be observed to reduce each of the risks identified at 2(b) above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-a-safety-signage-importance", kind: "criterion", verbatim: "Safety signage: (2 for point: 3 for discussion)", marks: 5, contextNote: "Point 2 and discussion 3. Such as: signage displayed prominently throughout the site; self-explanatory graphics; multilingual wording for workers with different native languages; warnings of falling objects, slippery surfaces, deep excavations, low objects and electrocution; colour-coded categories (green safe, red circle with a diagonal line prohibited, blue mandatory, yellow and black warning).", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"point","verbatim":"Point","marks":2,"permittedMarks":[0,1,2]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "a-a-personal-protective-equipment-importance", kind: "criterion", verbatim: "Personal Protective Equipment (PPE):(2 for point: 3 for discussion)", marks: 5, contextNote: "Point 2 and discussion 3. Such as: PPE is required by law on site; hard hat, boots, high-visibility clothing, gloves, safety glasses, ear protection and harness; specific PPE for specialist and dangerous tasks; ear protection against noise above 80 dB that still lets workers hear speech; dust masks with filters; harnesses with quick-release D rings; making workers visible to machine operators and drivers; PPE for every visitor.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"point","verbatim":"Point","marks":2,"permittedMarks":[0,1,2]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "a-a-awareness-importance", kind: "criterion", verbatim: "Awareness: (2 for point: 3 for discussion)", marks: 5, contextNote: "Point 2 and discussion 3. Such as: every worker must pass the national safety course (Safe Pass) before starting; full awareness of the possible hazards before work begins; an unaware worker puts everyone at risk; understanding of the hazards and general alertness is perhaps the best way to prevent accidents; enforcement of safe work practices; new workers paired with an experienced worker.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"point","verbatim":"Point","marks":2,"permittedMarks":[0,1,2]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "b-b-use-of-vehicles-risk", kind: "criterion", verbatim: "Use of vehicles", marks: 3, contextNote: "One risk identified. Such as: a reversing vehicle knocking down a worker; a vehicle capsizing on uneven ground; the driver thrown from the vehicle or trapped underneath; electrocution from overhead cables; scaffolding knocked over, throwing off workers; driving into a poorly signposted excavation or collapsing its sides; burying someone while tipping a load.", permittedMarks: [0,1,2,3] },
+    { id: "b-b-use-of-a-ladder-risk", kind: "criterion", verbatim: "Use of a ladder", marks: 3, contextNote: "One risk identified. Such as: falling when three points of contact are not kept while climbing; the ladder sliding on metal; electrocution when a metal ladder touches overhead cables; the ladder falling when not secured; the ladder set at the wrong angle (it should be about 74°); the ladder not extending 1 metre above the platform.", permittedMarks: [0,1,2,3] },
+    { id: "b-b-demolition-work-risk", kind: "criterion", verbatim: "Demolition work", marks: 3, contextNote: "One risk identified. Such as: workers falling from structures being demolished; falling objects or materials injuring workers or a third party; walls collapsing unexpectedly; crushed limbs from falling masonry; inhaling dust from hazardous materials; machine operators trapped by collapsing walls or chimneys.", permittedMarks: [0,1,2,3] },
+    { id: "c-use-of-vehicles-procedure-1", kind: "criterion", verbatim: "Safety procedure 1 (3 for note, 3 for sketch)", marks: 6, contextNote: "Note 3 and sketch 3. Such as: drivers who have completed the required safety training; vehicles operated only by trained, competent and authorised people. A misprint in the scheme: its mark table heads part (c) “Three safety procedures”, but the paper asks for two procedures for each risk and the table itself prices two for each of the three activities (6 × 6 marks).", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "c-use-of-vehicles-procedure-2", kind: "criterion", verbatim: "Safety procedure 2 (3 for note, 3 for sketch)", marks: 6, contextNote: "A second, different procedure: note 3 and sketch 3. Such as: signage throughout the site warning workers of machinery; seat belts worn in operation; sensors and horns that sound automatically when the vehicle is put in reverse.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "c-use-of-a-ladder-procedure-1", kind: "criterion", verbatim: "Safety procedure 1 (3 for note, 3 for sketch)", marks: 6, contextNote: "Note 3 and sketch 3. Such as: ladders used only by employees who have completed a ladder safety course; the ladder held or tied at both ends; a slope of 74°. A misprint in the scheme: its mark table heads part (c) “Three safety procedures”, but the paper asks for two procedures for each risk and the table itself prices two for each of the three activities (6 × 6 marks).", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "c-use-of-a-ladder-procedure-2", kind: "criterion", verbatim: "Safety procedure 2 (3 for note, 3 for sketch)", marks: 6, contextNote: "A second, different procedure: note 3 and sketch 3. Such as: the ladder extending at least 1.0 metre above the platform; multiple ladder runs where the platform is more than one storey high; a structurally sound ladder designed for the loads; no overreaching.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "c-demolition-work-procedure-1", kind: "criterion", verbatim: "Safety procedure 1 (3 for note, 3 for sketch)", marks: 6, contextNote: "Note 3 and sketch 3. Such as: signage around the area where demolition is taking place; warning or barrier tape marking a safe boundary around the site. A misprint in the scheme: its mark table heads part (c) “Three safety procedures”, but the paper asks for two procedures for each risk and the table itself prices two for each of the three activities (6 × 6 marks).", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "c-demolition-work-procedure-2", kind: "criterion", verbatim: "Safety procedure 2 (3 for note, 3 for sketch)", marks: 6, contextNote: "A second, different procedure: note 3 and sketch 3. Such as: all services isolated or disconnected before demolition begins; hazardous materials disposed of appropriately.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"note","verbatim":"note","marks":3,"permittedMarks":[0,1,2,3]},{"id":"sketch","verbatim":"sketch","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-hl-deferred-q2-a","label":"(a)","marks":15,"rowIds":["a-a-safety-signage-importance","a-a-personal-protective-equipment-importance","a-a-awareness-importance"]},{"sourceCardId":"cons-2022-hl-deferred-q2-b","label":"(b)","marks":9,"rowIds":["b-b-use-of-vehicles-risk","b-b-use-of-a-ladder-risk","b-b-demolition-work-risk"]},{"sourceCardId":"cons-2022-hl-deferred-q2-c-use-of-vehicles","label":"(c) use of vehicles","marks":12,"rowIds":["c-use-of-vehicles-procedure-1","c-use-of-vehicles-procedure-2"]},{"sourceCardId":"cons-2022-hl-deferred-q2-c-use-of-a-ladder","label":"(c) use of a ladder","marks":12,"rowIds":["c-use-of-a-ladder-procedure-1","c-use-of-a-ladder-procedure-2"]},{"sourceCardId":"cons-2022-hl-deferred-q2-c-demolition-work","label":"(c) demolition work","marks":12,"rowIds":["c-demolition-work-procedure-1","c-demolition-work-procedure-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Workers’ safety on a construction site",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original question retained. All three printed items in (a) and all three printed activities in (b) and (c) are required, each separately marked. The scheme lists typical points, not an exhaustive list."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-original.png",
+          "srcHash": "148b3deb2ce3af637e20025732a31334",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 2: the printed question with a sketch of four construction workers in hard hats and high-visibility vests reading a drawing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q2-procedures",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q2-procedures.png",
+          "srcHash": "537d7d7bc7b59978c3df813564d92486",
+          "alt": "SEC 2022 Higher deferred marking scheme notes on two safety procedures for each of the use of vehicles, the use of ladders and demolition work, with sketches of warning signs, a ladder at 74° and safe step-ladder use.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q3-a", topicId: "cons-1-2", conceptId: "garden-study-space-a",
+    section: "B", questionRef: "2022 HL Q3(a) — Deferred sitting",
+    stem: "The drawing shows the ground floor plan of a two-storey, semi-detached house and a portion of the rear garden. Also shown is the location of a proposed single-storey space to be built in the rear garden of the house. The internal dimensions of the proposed space are 4.5 m × 3.0 m. The space is to be used as a study and also occasionally as a family space. The front wall A-A of the house is south facing. The occupants require that the new space: maximises the use of daylight; is structurally connected to the existing house; links with the surrounding rear garden.",
+    questionText: "Using notes and freehand sketches, show a proposed external design and an internal layout for the space that will meet each of the occupants’ requirements outlined above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 36,
+    rows: [
+    { id: "external", kind: "criterion", verbatim: "External design", marks: 18, contextNote: "Notes 6 and sketches 12. The design considers the use of daylight, the structural connection and the link to the garden. Such as: large areas of high-performance glazing on the south and east elevations, with a sliding glass door and floor-to-ceiling glazing; small windows on the north and west for views of the garden; a flat zinc roof sloping from south to north over the 3.0 m span; cedar or larch cladding, or smooth render to match the house; a canopy and a timber deck or footpath linking the house to the study.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18], parts: [{"id":"notes","verbatim":"Notes","marks":6,"permittedMarks":[0,1,2,3,4,5,6]},{"id":"sketches","verbatim":"sketches","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]}] },
+    { id: "internal", kind: "criterion", verbatim: "Internal design", marks: 18, contextNote: "Notes 6 and sketches 12. Such as, as in the scheme’s model plan: the study desk in the south-west corner for daylight; a circular table for ease of movement; a single couch beside the desk for a companion; furniture against the external walls to leave open space; glazing that brings the garden into the room.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18], parts: [{"id":"notes","verbatim":"Notes","marks":6,"permittedMarks":[0,1,2,3,4,5,6]},{"id":"sketches","verbatim":"sketches","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "A garden study connected to the house",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All three printed requirements are required in both the external design and the internal layout; the scheme’s elevations and plan are examples, not required designs."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q3-original.png",
+          "srcHash": "96a87bf0fb286cb9410602e367ba80b4",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 3: the printed question with the ground-floor plan of a semi-detached house and its rear garden, the proposed study space marked and wall A-A at the front.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q3-design",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q3-design.png",
+          "srcHash": "bd7042e070bc4cdc4bbbe1f47fdfbc3c",
+          "alt": "SEC model external design and plan for the garden study: south, north, west and east elevations, a covered timber deck linking it to the house, and the furnished plan, with notes (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q3-b", topicId: "cons-1-2", conceptId: "garden-study-space-b",
+    section: "B", questionRef: "2022 HL Q3(b) — Deferred sitting",
+    stem: "The drawing shows the ground floor plan of a two-storey, semi-detached house and a portion of the rear garden. Also shown is the location of a proposed single-storey space to be built in the rear garden of the house. The internal dimensions of the proposed space are 4.5 m × 3.0 m. The space is to be used as a study and also occasionally as a family space. The front wall A-A of the house is south facing. The occupants require that the new space: maximises the use of daylight; is structurally connected to the existing house; links with the surrounding rear garden.",
+    questionText: "For each of the requirements above, discuss in detail the reasons for your proposed design choices.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "daylight", kind: "criterion", verbatim: "Maximise the use of daylight", marks: 8, contextNote: "Reasons for the choices that maximise daylight. Such as: a large south-facing glazed façade for maximum solar gain; glazing on the east, south and west for morning, afternoon and evening sun; the health benefits of natural light; less need for artificial lighting; solar shading to admit winter gains and prevent summer overheating; low cills; rooflights or sun tunnels.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "connection", kind: "criterion", verbatim: "Structural connection to existing house", marks: 8, contextNote: "Reasons for the structural connection. Such as: a roof or canopy from the house to the study gives shelter from rain; a footpath or decking gives easy access when the ground is wet; locally sourced materials reduce embodied energy; cedar or larch cladding is attractive, durable and low-maintenance; smooth render matches the house.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "garden", kind: "criterion", verbatim: "Link to surrounding garden", marks: 8, contextNote: "Reasons for the link to the garden. Such as: windows and doors opening onto the garden; fresh air and the smells of the garden; a visual connection to nature through the glazing (biophilic design); planting chosen for biodiversity and colour; the large sliding glass door.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "A garden study connected to the house",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All three printed requirements are required in both the external design and the internal layout; the scheme’s elevations and plan are examples, not required designs."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q3-original.png",
+          "srcHash": "96a87bf0fb286cb9410602e367ba80b4",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 3: the printed question with the ground-floor plan of a semi-detached house and its rear garden, the proposed study space marked and wall A-A at the front.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q3-complete", topicId: "cons-1-2", conceptId: "garden-study-space-complete",
+    section: "B", questionRef: "2022 HL Q3 — complete — Deferred sitting",
+    stem: "The drawing shows the ground floor plan of a two-storey, semi-detached house and a portion of the rear garden. Also shown is the location of a proposed single-storey space to be built in the rear garden of the house. The internal dimensions of the proposed space are 4.5 m × 3.0 m. The space is to be used as a study and also occasionally as a family space. The front wall A-A of the house is south facing. The occupants require that the new space: maximises the use of daylight; is structurally connected to the existing house; links with the surrounding rear garden.",
+    questionText: "(a) Using notes and freehand sketches, show a proposed external design and an internal layout for the space that will meet each of the occupants’ requirements outlined above. (b) For each of the requirements above, discuss in detail the reasons for your proposed design choices.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-external", kind: "criterion", verbatim: "External design", marks: 18, contextNote: "Notes 6 and sketches 12. The design considers the use of daylight, the structural connection and the link to the garden. Such as: large areas of high-performance glazing on the south and east elevations, with a sliding glass door and floor-to-ceiling glazing; small windows on the north and west for views of the garden; a flat zinc roof sloping from south to north over the 3.0 m span; cedar or larch cladding, or smooth render to match the house; a canopy and a timber deck or footpath linking the house to the study.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18], parts: [{"id":"notes","verbatim":"Notes","marks":6,"permittedMarks":[0,1,2,3,4,5,6]},{"id":"sketches","verbatim":"sketches","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]}] },
+    { id: "a-internal", kind: "criterion", verbatim: "Internal design", marks: 18, contextNote: "Notes 6 and sketches 12. Such as, as in the scheme’s model plan: the study desk in the south-west corner for daylight; a circular table for ease of movement; a single couch beside the desk for a companion; furniture against the external walls to leave open space; glazing that brings the garden into the room.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18], parts: [{"id":"notes","verbatim":"Notes","marks":6,"permittedMarks":[0,1,2,3,4,5,6]},{"id":"sketches","verbatim":"sketches","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]}] },
+    { id: "b-daylight", kind: "criterion", verbatim: "Maximise the use of daylight", marks: 8, contextNote: "Reasons for the choices that maximise daylight. Such as: a large south-facing glazed façade for maximum solar gain; glazing on the east, south and west for morning, afternoon and evening sun; the health benefits of natural light; less need for artificial lighting; solar shading to admit winter gains and prevent summer overheating; low cills; rooflights or sun tunnels.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-connection", kind: "criterion", verbatim: "Structural connection to existing house", marks: 8, contextNote: "Reasons for the structural connection. Such as: a roof or canopy from the house to the study gives shelter from rain; a footpath or decking gives easy access when the ground is wet; locally sourced materials reduce embodied energy; cedar or larch cladding is attractive, durable and low-maintenance; smooth render matches the house.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-garden", kind: "criterion", verbatim: "Link to surrounding garden", marks: 8, contextNote: "Reasons for the link to the garden. Such as: windows and doors opening onto the garden; fresh air and the smells of the garden; a visual connection to nature through the glazing (biophilic design); planting chosen for biodiversity and colour; the large sliding glass door.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-hl-deferred-q3-a","label":"a","marks":36,"rowIds":["a-external","a-internal"]},{"sourceCardId":"cons-2022-hl-deferred-q3-b","label":"b","marks":24,"rowIds":["b-daylight","b-connection","b-garden"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "A garden study connected to the house",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All three printed requirements are required in both the external design and the internal layout; the scheme’s elevations and plan are examples, not required designs."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q3-original.png",
+          "srcHash": "96a87bf0fb286cb9410602e367ba80b4",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 3: the printed question with the ground-floor plan of a semi-detached house and its rear garden, the proposed study space marked and wall A-A at the front.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q3-design",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q3-design.png",
+          "srcHash": "bd7042e070bc4cdc4bbbe1f47fdfbc3c",
+          "alt": "SEC model external design and plan for the garden study: south, north, west and east elevations, a covered timber deck linking it to the house, and the furnished plan, with notes (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q4-a", topicId: "cons-5-3", conceptId: "stove-two-zone-heating-a",
+    section: "B", questionRef: "2022 HL Q4(a) — Deferred sitting",
+    stem: "A stove, as shown, is to provide space heating and hot water for a two-storey dwelling house. The heating of each floor is to be independently controlled.",
+    questionText: "Using notes and a single-line diagram, show a typical design layout for the pipework necessary to independently heat two zones, one on each floor, and to provide hot water. Show three radiators on each floor, indicate the location of the control valves and give the typical sizes of the pipework.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 36,
+    rows: [
+    { id: "layout", kind: "criterion", verbatim: "Typical layout for the pipework necessary to provide space heating and hot water for a two-storey house", marks: 32, contextNote: "Best eight components, 4 each (3 for sketch, 1 for annotation). Marking menu: woodburning stove; radiators on the ground floor and first floor; zone control panel; zone thermostats; cylinder and coil; header/expansion tank/storage; feed to the expansion tank; cold feed from the expansion tank and overflow; expansion pipe or vessel; flow pipe to the radiators; return pipe from the radiators; control valves (radiator, isolating or drain-off valves, any two); pump.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32] },
+    { id: "sizes", kind: "criterion", verbatim: "Typical sizes of pipework – any two", marks: 4, contextNote: "Any two, 2 each. Such as: Ø15 mm cold water rising main; Ø15 mm on upstands; Ø22 mm primary flow and return to the radiators; Ø22 mm cold water feed to the cylinder; Ø28 mm hot water feed; Ø28 mm overflow pipe.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Stove: two-zone heating and hot water",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The scheme’s single-line diagram is one acceptable layout; its component list is a marking menu, not a printed choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q4-original.png",
+          "srcHash": "5f5700d754aaa57f523820f96102a1ed",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 4: the printed question with a sketch of a stove standing on a hearth under a mantel shelf.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q4-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q4-system.png",
+          "srcHash": "2e27c92c821e5608b62551319d068e80",
+          "alt": "SEC model single-line diagram of a stove heating two zones of three radiators each and a cylinder, with header tanks, zone controls and valves, and the typical pipe sizes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q4-b", topicId: "cons-5-7", conceptId: "stove-two-zone-heating-b",
+    section: "B", questionRef: "2022 HL Q4(b) — Deferred sitting",
+    stem: "A stove, as shown, is to provide space heating and hot water for a two-storey dwelling house. The heating of each floor is to be independently controlled.",
+    questionText: "Many homeowners are choosing to replace open fires with stoves. Discuss two advantages of replacing an open fire with a stove.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1 (3 for point, 3 for discussion)", marks: 6, contextNote: "Point 3 and discussion 3. Such as: an open fire is less efficient, as heat escapes up the open flue; an open flue lets cold air in and warm air out, while a stove is a sealed unit whose airtight door stops the cold air and limits heat loss; a modern stove takes its air through a vent pipe in the floor or external wall.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point","verbatim":"point","marks":3,"permittedMarks":[0,1,2,3]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2 (3 for point, 3 for discussion)", marks: 6, contextNote: "A second, different advantage. Such as: a cast-iron stove stores heat and releases it to the room; cheaper space and water heating; insulated modern stoves reduce the risk of burns to children; far less CO2 and SO2 released than from an open fireplace.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point","verbatim":"point","marks":3,"permittedMarks":[0,1,2,3]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Stove: two-zone heating and hot water",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The scheme’s single-line diagram is one acceptable layout; its component list is a marking menu, not a printed choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q4-original.png",
+          "srcHash": "5f5700d754aaa57f523820f96102a1ed",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 4: the printed question with a sketch of a stove standing on a hearth under a mantel shelf.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q4-c", topicId: "cons-5-3", conceptId: "stove-two-zone-heating-c",
+    section: "B", questionRef: "2022 HL Q4(c) — Deferred sitting",
+    stem: "A stove, as shown, is to provide space heating and hot water for a two-storey dwelling house. The heating of each floor is to be independently controlled.",
+    questionText: "Discuss two considerations that should be taken into account when selecting a stove to provide space heating and hot water for a house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "consideration-1", kind: "criterion", verbatim: "Consideration 1 (3 for point, 3 for discussion)", marks: 6, contextNote: "Point 3 and discussion 3. Such as: the output of the stove, whether it will meet the heating and hot water needs of the house; whether it will fit in the required location; its position, ideally within the house structure for efficiency.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point","verbatim":"point","marks":3,"permittedMarks":[0,1,2,3]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "consideration-2", kind: "criterion", verbatim: "Consideration 2 (3 for point, 3 for discussion)", marks: 6, contextNote: "A second, different consideration. Such as: fitting to an existing chimney or installing a new steel flue; compliance with the building regulations; an independent air supply to the stove; additional pipework.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point","verbatim":"point","marks":3,"permittedMarks":[0,1,2,3]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Stove: two-zone heating and hot water",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The scheme’s single-line diagram is one acceptable layout; its component list is a marking menu, not a printed choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q4-original.png",
+          "srcHash": "5f5700d754aaa57f523820f96102a1ed",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 4: the printed question with a sketch of a stove standing on a hearth under a mantel shelf.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q4-complete", topicId: "cons-5-3", conceptId: "stove-two-zone-heating-complete",
+    section: "B", questionRef: "2022 HL Q4 — complete — Deferred sitting",
+    stem: "A stove, as shown, is to provide space heating and hot water for a two-storey dwelling house. The heating of each floor is to be independently controlled.",
+    questionText: "(a) Using notes and a single-line diagram, show a typical design layout for the pipework necessary to independently heat two zones, one on each floor, and to provide hot water. Show three radiators on each floor, indicate the location of the control valves and give the typical sizes of the pipework. (b) Many homeowners are choosing to replace open fires with stoves. Discuss two advantages of replacing an open fire with a stove. (c) Discuss two considerations that should be taken into account when selecting a stove to provide space heating and hot water for a house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-layout", kind: "criterion", verbatim: "Typical layout for the pipework necessary to provide space heating and hot water for a two-storey house", marks: 32, contextNote: "Best eight components, 4 each (3 for sketch, 1 for annotation). Marking menu: woodburning stove; radiators on the ground floor and first floor; zone control panel; zone thermostats; cylinder and coil; header/expansion tank/storage; feed to the expansion tank; cold feed from the expansion tank and overflow; expansion pipe or vessel; flow pipe to the radiators; return pipe from the radiators; control valves (radiator, isolating or drain-off valves, any two); pump.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32] },
+    { id: "a-sizes", kind: "criterion", verbatim: "Typical sizes of pipework – any two", marks: 4, contextNote: "Any two, 2 each. Such as: Ø15 mm cold water rising main; Ø15 mm on upstands; Ø22 mm primary flow and return to the radiators; Ø22 mm cold water feed to the cylinder; Ø28 mm hot water feed; Ø28 mm overflow pipe.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-advantage-1", kind: "criterion", verbatim: "Advantage 1 (3 for point, 3 for discussion)", marks: 6, contextNote: "Point 3 and discussion 3. Such as: an open fire is less efficient, as heat escapes up the open flue; an open flue lets cold air in and warm air out, while a stove is a sealed unit whose airtight door stops the cold air and limits heat loss; a modern stove takes its air through a vent pipe in the floor or external wall.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point","verbatim":"point","marks":3,"permittedMarks":[0,1,2,3]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "b-advantage-2", kind: "criterion", verbatim: "Advantage 2 (3 for point, 3 for discussion)", marks: 6, contextNote: "A second, different advantage. Such as: a cast-iron stove stores heat and releases it to the room; cheaper space and water heating; insulated modern stoves reduce the risk of burns to children; far less CO2 and SO2 released than from an open fireplace.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point","verbatim":"point","marks":3,"permittedMarks":[0,1,2,3]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "c-consideration-1", kind: "criterion", verbatim: "Consideration 1 (3 for point, 3 for discussion)", marks: 6, contextNote: "Point 3 and discussion 3. Such as: the output of the stove, whether it will meet the heating and hot water needs of the house; whether it will fit in the required location; its position, ideally within the house structure for efficiency.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point","verbatim":"point","marks":3,"permittedMarks":[0,1,2,3]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "c-consideration-2", kind: "criterion", verbatim: "Consideration 2 (3 for point, 3 for discussion)", marks: 6, contextNote: "A second, different consideration. Such as: fitting to an existing chimney or installing a new steel flue; compliance with the building regulations; an independent air supply to the stove; additional pipework.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point","verbatim":"point","marks":3,"permittedMarks":[0,1,2,3]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-hl-deferred-q4-a","label":"a","marks":36,"rowIds":["a-layout","a-sizes"]},{"sourceCardId":"cons-2022-hl-deferred-q4-b","label":"b","marks":12,"rowIds":["b-advantage-1","b-advantage-2"]},{"sourceCardId":"cons-2022-hl-deferred-q4-c","label":"c","marks":12,"rowIds":["c-consideration-1","c-consideration-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Stove: two-zone heating and hot water",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The scheme’s single-line diagram is one acceptable layout; its component list is a marking menu, not a printed choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q4-original.png",
+          "srcHash": "5f5700d754aaa57f523820f96102a1ed",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 4: the printed question with a sketch of a stove standing on a hearth under a mantel shelf.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q4-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q4-system.png",
+          "srcHash": "2e27c92c821e5608b62551319d068e80",
+          "alt": "SEC model single-line diagram of a stove heating two zones of three radiators each and a cylinder, with header tanks, zone controls and valves, and the typical pipe sizes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q5-a", topicId: "cons-6-1", conceptId: "tiled-ground-floor-u-value-a",
+    section: "B", questionRef: "2022 HL Q5(a) — Deferred sitting",
+    stem: "A new house is to have a solid concrete ground floor with a ceramic tile finish, as shown.",
+    questionText: "Calculate the U-value of the floor, given the construction has the following sequence and data: Ceramic tile thickness 12 mm; concrete floor slab thickness 150 mm; floor insulation thickness 50 mm; radon barrier thickness 0.25 mm; sand blinding thickness 50 mm; hardcore thickness 175 mm; subsoil thickness 300 mm. Thermal data of the ground floor: resistance of internal top surface of floor (R) 0.104 m2 ⁰C/W; resistivity of ceramic tiles (r) 0.770 m ⁰C/W; conductivity of concrete floor slab (k) 1.180 W/m ⁰C; conductivity of floor insulation (k) 0.022 W/m ⁰C; conductivity of radon barrier (k) 0.250 W/m ⁰C; conductivity of sand blinding (k) 0.160 W/m ⁰C; conductivity of hardcore (k) 1.350 W/m ⁰C; conductivity of subsoil (k) 1.600 W/m ⁰C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "resistances", kind: "criterion", verbatim: "Internal surface resistance Ceramic tile Concrete floor slab Floor insulation Radon barrier Sand blinding Hardcore Subsoil", marks: 24, contextNote: "Eight resistances, 3 each, by R = T/k (or R = T × r for the tiles): internal surface 0.104 (given); ceramic tiles 0.012 × 0.770 = 0.009; concrete floor slab 0.150/1.180 = 0.127; floor insulation 0.050/0.022 = 2.273; radon barrier 0.00025/0.250 = 0.001; sand blinding 0.050/0.160 = 0.313; hardcore 0.175/1.350 = 0.130; subsoil 0.300/1.600 = 0.188. All in m²°C/W.", permittedMarks: [0,3,6,9,12,15,18,21,24] },
+    { id: "total-resistance", kind: "criterion", verbatim: "Total resistance", marks: 3, contextNote: "Total resistance Rt = 3.145 m²°C/W (the sum of all the resistances).", permittedMarks: [0,3] },
+    { id: "u-value", kind: "criterion", verbatim: "Calculation of U-value (W/m2 °C or W/m2K)", marks: 3, contextNote: "U = 1 ÷ Rt = 1 ÷ 3.145 = 0.318 W/m²°C, with units.", permittedMarks: [0,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Tiled solid ground floor: U-value, Passive House insulation and heat-loss cost",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a) and part (c) the upgraded floor from (b); the scheme’s worked answers are U = 0.318 W/m²°C, 114 mm of additional insulation and an annual cost of €25.63."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q5-original.png",
+          "srcHash": "34541cf77628a8b44c48a39446d8fed6",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 5: the printed question with a sketch of the tiled solid ground floor layers and all the construction and thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q5-u-value",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q5-u-value.png",
+          "srcHash": "9d6fc8d5b4ae52662abc93ba3193a74f",
+          "alt": "SEC worked solution for the U-value of the solid ground floor: the resistance table giving a total resistance of 3.145 and U = 0.318 W/m²°C.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q5-b", topicId: "cons-6-1", conceptId: "tiled-ground-floor-u-value-b",
+    section: "B", questionRef: "2022 HL Q5(b) — Deferred sitting",
+    stem: "A new house is to have a solid concrete ground floor with a ceramic tile finish, as shown.",
+    questionText: "It is proposed to redesign the above floor and upgrade its thermal properties to meet the Passive House standard by including additional insulation in the design of the floor. Calculate the thickness of additional insulation required to achieve a U-value of 0.12 W/m2 ⁰C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "required-resistance", kind: "criterion", verbatim: "Resistance for U- value for 0.12 W/m2 °C (using R=1/U)", marks: 3, contextNote: "Required resistance = 1 ÷ 0.12 = 8.333 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "existing-resistance", kind: "criterion", verbatim: "Resistance from calculated U-value from part (a)", marks: 3, contextNote: "Resistance of the floor from (a): R = 1 ÷ 0.318, printed in the scheme as 3.144 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "difference", kind: "criterion", verbatim: "Difference in resistances (required resistance)", marks: 3, contextNote: "Difference = 8.333 − 3.144 = 5.190 m²K/W, as the scheme prints it. A misprint in the scheme: 8.333 − 3.144 is 5.189, and 1 ÷ 0.318 rounds to 3.145 (the total resistance in (a)), not 3.144; neither slip changes the answer, 0.114 m.", permittedMarks: [0,1,2,3] },
+    { id: "formula", kind: "criterion", verbatim: "Application of formula R = T/k", marks: 3, contextNote: "5.190 = T ÷ 0.022, so T = 5.190 × 0.022 = 0.114 metres.", permittedMarks: [0,1,2,3] },
+    { id: "thickness", kind: "criterion", verbatim: "Required thickness of insulation (mm)", marks: 3, contextNote: "Additional floor insulation = 114/115 mm. Alternative calculation methods are acceptable.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Tiled solid ground floor: U-value, Passive House insulation and heat-loss cost",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a) and part (c) the upgraded floor from (b); the scheme’s worked answers are U = 0.318 W/m²°C, 114 mm of additional insulation and an annual cost of €25.63."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q5-original.png",
+          "srcHash": "34541cf77628a8b44c48a39446d8fed6",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 5: the printed question with a sketch of the tiled solid ground floor layers and all the construction and thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q5-thickness",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q5-thickness.png",
+          "srcHash": "ee26d43065f230b9be0c02493c9c15fe",
+          "alt": "SEC worked solution for the additional floor insulation: required resistance 8.333, difference 5.190, giving 0.114 m (114/115 mm).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q5-c", topicId: "cons-6-3", conceptId: "tiled-ground-floor-u-value-c",
+    section: "B", questionRef: "2022 HL Q5(c) — Deferred sitting",
+    stem: "A new house is to have a solid concrete ground floor with a ceramic tile finish, as shown.",
+    questionText: "Calculate the cost of heat loss annually through the upgraded floor at 5(b) above, using the following data: dimensions of the floor slab 10.5 metres × 7.0 metres; average internal temperature 21 ⁰C; average temperature of subsoil 6 ⁰C; heating period 8 hours daily for 37 weeks per annum; cost of oil 97 cent per litre; calorific value of oil 37350 kJ per litre; 1000 Watts 1 kJ per second.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "heat-loss", kind: "criterion", verbatim: "Heat loss formula and calculations", marks: 3, contextNote: "Heat loss = U-value × area × temperature difference = 0.12 × 73.5 × (21 − 6) = 132.3 watts (joules per second), using the upgraded U-value of 0.12 W/m²°C and a floor area of 10.5 × 7.0 = 73.5 m².", permittedMarks: [0,1,2,3] },
+    { id: "duration", kind: "criterion", verbatim: "Heating duration for one year & calculation", marks: 3, contextNote: "Heating period = 60 × 60 × 8 × 7 × 37 = 7,459,200 seconds (2,072 hours).", permittedMarks: [0,1,2,3] },
+    { id: "energy", kind: "criterion", verbatim: "K/Joules calculation for one year & calculation", marks: 3, contextNote: "Energy = 7,459,200 × 132.3 ÷ 1000 = 986,852 kJ per year.", permittedMarks: [0,1,2,3] },
+    { id: "oil", kind: "criterion", verbatim: "Litres of oil for one year: & calculation", marks: 3, contextNote: "Oil = 986,852 ÷ 37,350 = 26.422 litres per year.", permittedMarks: [0,1,2,3] },
+    { id: "cost", kind: "criterion", verbatim: "Annual cost of heat loss: & calculation", marks: 3, contextNote: "Annual cost = 26.4222 × €0.97 = €25.63. The scheme’s alternative one-line method gives the same €25.63. A misprint in the scheme: its answer line reads “Cost of heat loss annually through wall”; the question is about the upgraded floor.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Tiled solid ground floor: U-value, Passive House insulation and heat-loss cost",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a) and part (c) the upgraded floor from (b); the scheme’s worked answers are U = 0.318 W/m²°C, 114 mm of additional insulation and an annual cost of €25.63."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q5-original.png",
+          "srcHash": "34541cf77628a8b44c48a39446d8fed6",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 5: the printed question with a sketch of the tiled solid ground floor layers and all the construction and thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q5-cost",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q5-cost.png",
+          "srcHash": "f550dd6409120f40962808a6381e4232",
+          "alt": "SEC worked solution for the annual cost of heat lost through the upgraded floor: 132.3 W, 7,459,200 seconds, 986,852 kJ and 26.422 litres, giving €25.63 by two methods.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q5-complete", topicId: "cons-6-1", conceptId: "tiled-ground-floor-u-value-complete",
+    section: "B", questionRef: "2022 HL Q5 — complete — Deferred sitting",
+    stem: "A new house is to have a solid concrete ground floor with a ceramic tile finish, as shown.",
+    questionText: "(a) Calculate the U-value of the floor, given the construction has the following sequence and data: Ceramic tile thickness 12 mm; concrete floor slab thickness 150 mm; floor insulation thickness 50 mm; radon barrier thickness 0.25 mm; sand blinding thickness 50 mm; hardcore thickness 175 mm; subsoil thickness 300 mm. Thermal data of the ground floor: resistance of internal top surface of floor (R) 0.104 m2 ⁰C/W; resistivity of ceramic tiles (r) 0.770 m ⁰C/W; conductivity of concrete floor slab (k) 1.180 W/m ⁰C; conductivity of floor insulation (k) 0.022 W/m ⁰C; conductivity of radon barrier (k) 0.250 W/m ⁰C; conductivity of sand blinding (k) 0.160 W/m ⁰C; conductivity of hardcore (k) 1.350 W/m ⁰C; conductivity of subsoil (k) 1.600 W/m ⁰C. (b) It is proposed to redesign the above floor and upgrade its thermal properties to meet the Passive House standard by including additional insulation in the design of the floor. Calculate the thickness of additional insulation required to achieve a U-value of 0.12 W/m2 ⁰C. (c) Calculate the cost of heat loss annually through the upgraded floor at 5(b) above, using the following data: dimensions of the floor slab 10.5 metres × 7.0 metres; average internal temperature 21 ⁰C; average temperature of subsoil 6 ⁰C; heating period 8 hours daily for 37 weeks per annum; cost of oil 97 cent per litre; calorific value of oil 37350 kJ per litre; 1000 Watts 1 kJ per second.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-resistances", kind: "criterion", verbatim: "Internal surface resistance Ceramic tile Concrete floor slab Floor insulation Radon barrier Sand blinding Hardcore Subsoil", marks: 24, contextNote: "Eight resistances, 3 each, by R = T/k (or R = T × r for the tiles): internal surface 0.104 (given); ceramic tiles 0.012 × 0.770 = 0.009; concrete floor slab 0.150/1.180 = 0.127; floor insulation 0.050/0.022 = 2.273; radon barrier 0.00025/0.250 = 0.001; sand blinding 0.050/0.160 = 0.313; hardcore 0.175/1.350 = 0.130; subsoil 0.300/1.600 = 0.188. All in m²°C/W.", permittedMarks: [0,3,6,9,12,15,18,21,24] },
+    { id: "a-total-resistance", kind: "criterion", verbatim: "Total resistance", marks: 3, contextNote: "Total resistance Rt = 3.145 m²°C/W (the sum of all the resistances).", permittedMarks: [0,3] },
+    { id: "a-u-value", kind: "criterion", verbatim: "Calculation of U-value (W/m2 °C or W/m2K)", marks: 3, contextNote: "U = 1 ÷ Rt = 1 ÷ 3.145 = 0.318 W/m²°C, with units.", permittedMarks: [0,3] },
+    { id: "b-required-resistance", kind: "criterion", verbatim: "Resistance for U- value for 0.12 W/m2 °C (using R=1/U)", marks: 3, contextNote: "Required resistance = 1 ÷ 0.12 = 8.333 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "b-existing-resistance", kind: "criterion", verbatim: "Resistance from calculated U-value from part (a)", marks: 3, contextNote: "Resistance of the floor from (a): R = 1 ÷ 0.318, printed in the scheme as 3.144 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "b-difference", kind: "criterion", verbatim: "Difference in resistances (required resistance)", marks: 3, contextNote: "Difference = 8.333 − 3.144 = 5.190 m²K/W, as the scheme prints it. A misprint in the scheme: 8.333 − 3.144 is 5.189, and 1 ÷ 0.318 rounds to 3.145 (the total resistance in (a)), not 3.144; neither slip changes the answer, 0.114 m.", permittedMarks: [0,1,2,3] },
+    { id: "b-formula", kind: "criterion", verbatim: "Application of formula R = T/k", marks: 3, contextNote: "5.190 = T ÷ 0.022, so T = 5.190 × 0.022 = 0.114 metres.", permittedMarks: [0,1,2,3] },
+    { id: "b-thickness", kind: "criterion", verbatim: "Required thickness of insulation (mm)", marks: 3, contextNote: "Additional floor insulation = 114/115 mm. Alternative calculation methods are acceptable.", permittedMarks: [0,1,2,3] },
+    { id: "c-heat-loss", kind: "criterion", verbatim: "Heat loss formula and calculations", marks: 3, contextNote: "Heat loss = U-value × area × temperature difference = 0.12 × 73.5 × (21 − 6) = 132.3 watts (joules per second), using the upgraded U-value of 0.12 W/m²°C and a floor area of 10.5 × 7.0 = 73.5 m².", permittedMarks: [0,1,2,3] },
+    { id: "c-duration", kind: "criterion", verbatim: "Heating duration for one year & calculation", marks: 3, contextNote: "Heating period = 60 × 60 × 8 × 7 × 37 = 7,459,200 seconds (2,072 hours).", permittedMarks: [0,1,2,3] },
+    { id: "c-energy", kind: "criterion", verbatim: "K/Joules calculation for one year & calculation", marks: 3, contextNote: "Energy = 7,459,200 × 132.3 ÷ 1000 = 986,852 kJ per year.", permittedMarks: [0,1,2,3] },
+    { id: "c-oil", kind: "criterion", verbatim: "Litres of oil for one year: & calculation", marks: 3, contextNote: "Oil = 986,852 ÷ 37,350 = 26.422 litres per year.", permittedMarks: [0,1,2,3] },
+    { id: "c-cost", kind: "criterion", verbatim: "Annual cost of heat loss: & calculation", marks: 3, contextNote: "Annual cost = 26.4222 × €0.97 = €25.63. The scheme’s alternative one-line method gives the same €25.63. A misprint in the scheme: its answer line reads “Cost of heat loss annually through wall”; the question is about the upgraded floor.", permittedMarks: [0,1,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-hl-deferred-q5-a","label":"a","marks":30,"rowIds":["a-resistances","a-total-resistance","a-u-value"]},{"sourceCardId":"cons-2022-hl-deferred-q5-b","label":"b","marks":15,"rowIds":["b-required-resistance","b-existing-resistance","b-difference","b-formula","b-thickness"]},{"sourceCardId":"cons-2022-hl-deferred-q5-c","label":"c","marks":15,"rowIds":["c-heat-loss","c-duration","c-energy","c-oil","c-cost"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Tiled solid ground floor: U-value, Passive House insulation and heat-loss cost",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a) and part (c) the upgraded floor from (b); the scheme’s worked answers are U = 0.318 W/m²°C, 114 mm of additional insulation and an annual cost of €25.63."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q5-original.png",
+          "srcHash": "34541cf77628a8b44c48a39446d8fed6",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 5: the printed question with a sketch of the tiled solid ground floor layers and all the construction and thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q5-scheme.png",
+          "srcHash": "95a0ac8498b04051f999fee0bd942f6f",
+          "alt": "SEC worked solutions for Question 5: the U-value table (U = 0.318 W/m²°C), the additional insulation (114/115 mm) and the annual heat-loss cost (€25.63) (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q6-a", topicId: "cons-1-2", conceptId: "low-impact-stone-timber-house-a",
+    section: "B", questionRef: "2022 HL Q6(a) — Deferred sitting",
+    stem: "The elevation and ground floor plan of a house are shown. The house has two bedrooms and a bathroom upstairs. The external walls are of concrete block construction with a stone and timber cladding finish. The house is designed to have low environmental impact.",
+    questionText: "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "feature-1", kind: "criterion", verbatim: "Design Feature 1", marks: 10, contextNote: "Notes 5 and sketches 5. Such as: large south-facing glazed windows and doors for solar gain, cutting heating costs and dependence on fossil fuels; a single small window on the north elevation to limit heat loss.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"notes","verbatim":"Notes","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"sketches","verbatim":"sketches","marks":5,"permittedMarks":[0,1,2,3,4,5]}] },
+    { id: "feature-2", kind: "criterion", verbatim: "Design Feature 2", marks: 10, contextNote: "A second, different feature: notes 5 and sketches 5. Such as: a wood-burning stove, carbon neutral, more efficient and free of the draughts of an open fire; high thermal mass in a super-insulated external wall; timber cladding, low in embodied energy and carbon neutral.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"notes","verbatim":"notes","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"sketches","verbatim":"sketches","marks":5,"permittedMarks":[0,1,2,3,4,5]}] },
+    { id: "feature-3", kind: "criterion", verbatim: "Design Feature 3", marks: 10, contextNote: "A third, different feature: notes 5 and sketches 5. Such as: attic space used for living without extra building products; a small footprint using fewer resources and less embodied energy; single-room depth for solar gain; an open-plan kitchen, dining and living area that lets the sun’s heat pass through.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"notes","verbatim":"notes","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"sketches","verbatim":"sketches","marks":5,"permittedMarks":[0,1,2,3,4,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house with stone and timber cladding",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Part (b) chooses any two of three printed items, each keeping its own 10 marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q6-original.png",
+          "srcHash": "3d4f638883ac6f25b4c4bd9888b97afa",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 6: the printed question with the elevation and ground-floor plan of a stone and timber-clad house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q6-low-impact",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q6-low-impact.png",
+          "srcHash": "bc67529af6a9c335ee22757a0cfb726e",
+          "alt": "SEC 2022 Higher deferred marking scheme notes on low-environmental-impact features, with sketches of the south elevation, timber cladding and the ground-floor plan.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q6-b", topicId: "cons-1-2", conceptId: "low-impact-stone-timber-house-b",
+    section: "B", questionRef: "2022 HL Q6(b) — Deferred sitting",
+    stem: "The elevation and ground floor plan of a house are shown. The house has two bedrooms and a bathroom upstairs. The external walls are of concrete block construction with a stone and timber cladding finish. The house is designed to have low environmental impact.",
+    questionText: "Using notes and freehand sketches, discuss the importance of any two of the following when designing a house to have low environmental impact: flexibility of design; use of recycled materials; thermal efficiency.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "items", kind: "anyN", verbatim: "Discuss the importance of any two in the design a low E.I. house", marks: 20, contextNote: "Any two of the three, each notes 5 and sketches 5 = 10. Flexibility of design: homes adapt as occupants age without major renovation or structural change; cradle-to-grave design; the study can become a bedroom simply by removing the office furniture, near the ground-floor bathroom. Use of recycled materials: materials chosen for their potential to be recycled or upcycled later; products made from recycled materials; crushed concrete reused as hardcore; locally sourced rubble stone for boundary walls. Thermal efficiency: much lower heating and running costs over the long term, quickly repaying a higher capital cost; less harm to the planet; less demand for finite fossil fuels and fewer CO2 and SO2 emissions.", group: {"claimMax":2,"perOption":10,"options":["Flexibility of design","Use of recycled materials","Thermal efficiency"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house with stone and timber cladding",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Part (b) chooses any two of three printed items, each keeping its own 10 marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q6-original.png",
+          "srcHash": "3d4f638883ac6f25b4c4bd9888b97afa",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 6: the printed question with the elevation and ground-floor plan of a stone and timber-clad house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q6-c", topicId: "cons-1-2", conceptId: "low-impact-stone-timber-house-c",
+    section: "B", questionRef: "2022 HL Q6(c) — Deferred sitting",
+    stem: "The elevation and ground floor plan of a house are shown. The house has two bedrooms and a bathroom upstairs. The external walls are of concrete block construction with a stone and timber cladding finish. The house is designed to have low environmental impact.",
+    questionText: "Discuss two advantages of using locally sourced materials when building the house shown.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1 (2 for point, 3 for discussion)", marks: 5, contextNote: "Point 2 and discussion 3. Such as: lower embodied energy in the house; lower transport costs.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"point","verbatim":"point","marks":2,"permittedMarks":[0,1,2]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2 (2 for point, 3 for discussion)", marks: 5, contextNote: "A second, different advantage. Such as: locally sourced timber is low in embodied energy and carbon neutral; buying locally sustains the local economy; stone from the local quarry links the house with other dwellings in the area.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"point","verbatim":"point","marks":2,"permittedMarks":[0,1,2]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house with stone and timber cladding",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Part (b) chooses any two of three printed items, each keeping its own 10 marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q6-original.png",
+          "srcHash": "3d4f638883ac6f25b4c4bd9888b97afa",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 6: the printed question with the elevation and ground-floor plan of a stone and timber-clad house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q6-complete", topicId: "cons-1-2", conceptId: "low-impact-stone-timber-house-complete",
+    section: "B", questionRef: "2022 HL Q6 — complete — Deferred sitting",
+    stem: "The elevation and ground floor plan of a house are shown. The house has two bedrooms and a bathroom upstairs. The external walls are of concrete block construction with a stone and timber cladding finish. The house is designed to have low environmental impact.",
+    questionText: "(a) With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact. (b) Using notes and freehand sketches, discuss the importance of any two of the following when designing a house to have low environmental impact: flexibility of design; use of recycled materials; thermal efficiency. (c) Discuss two advantages of using locally sourced materials when building the house shown.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-feature-1", kind: "criterion", verbatim: "Design Feature 1", marks: 10, contextNote: "Notes 5 and sketches 5. Such as: large south-facing glazed windows and doors for solar gain, cutting heating costs and dependence on fossil fuels; a single small window on the north elevation to limit heat loss.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"notes","verbatim":"Notes","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"sketches","verbatim":"sketches","marks":5,"permittedMarks":[0,1,2,3,4,5]}] },
+    { id: "a-feature-2", kind: "criterion", verbatim: "Design Feature 2", marks: 10, contextNote: "A second, different feature: notes 5 and sketches 5. Such as: a wood-burning stove, carbon neutral, more efficient and free of the draughts of an open fire; high thermal mass in a super-insulated external wall; timber cladding, low in embodied energy and carbon neutral.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"notes","verbatim":"notes","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"sketches","verbatim":"sketches","marks":5,"permittedMarks":[0,1,2,3,4,5]}] },
+    { id: "a-feature-3", kind: "criterion", verbatim: "Design Feature 3", marks: 10, contextNote: "A third, different feature: notes 5 and sketches 5. Such as: attic space used for living without extra building products; a small footprint using fewer resources and less embodied energy; single-room depth for solar gain; an open-plan kitchen, dining and living area that lets the sun’s heat pass through.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"notes","verbatim":"notes","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"sketches","verbatim":"sketches","marks":5,"permittedMarks":[0,1,2,3,4,5]}] },
+    { id: "b-items", kind: "anyN", verbatim: "Discuss the importance of any two in the design a low E.I. house", marks: 20, contextNote: "Any two of the three, each notes 5 and sketches 5 = 10. Flexibility of design: homes adapt as occupants age without major renovation or structural change; cradle-to-grave design; the study can become a bedroom simply by removing the office furniture, near the ground-floor bathroom. Use of recycled materials: materials chosen for their potential to be recycled or upcycled later; products made from recycled materials; crushed concrete reused as hardcore; locally sourced rubble stone for boundary walls. Thermal efficiency: much lower heating and running costs over the long term, quickly repaying a higher capital cost; less harm to the planet; less demand for finite fossil fuels and fewer CO2 and SO2 emissions.", group: {"claimMax":2,"perOption":10,"options":["Flexibility of design","Use of recycled materials","Thermal efficiency"]} },
+    { id: "c-advantage-1", kind: "criterion", verbatim: "Advantage 1 (2 for point, 3 for discussion)", marks: 5, contextNote: "Point 2 and discussion 3. Such as: lower embodied energy in the house; lower transport costs.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"point","verbatim":"point","marks":2,"permittedMarks":[0,1,2]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "c-advantage-2", kind: "criterion", verbatim: "Advantage 2 (2 for point, 3 for discussion)", marks: 5, contextNote: "A second, different advantage. Such as: locally sourced timber is low in embodied energy and carbon neutral; buying locally sustains the local economy; stone from the local quarry links the house with other dwellings in the area.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"point","verbatim":"point","marks":2,"permittedMarks":[0,1,2]},{"id":"discussion","verbatim":"discussion","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-hl-deferred-q6-a","label":"a","marks":30,"rowIds":["a-feature-1","a-feature-2","a-feature-3"]},{"sourceCardId":"cons-2022-hl-deferred-q6-b","label":"b","marks":20,"rowIds":["b-items"]},{"sourceCardId":"cons-2022-hl-deferred-q6-c","label":"c","marks":10,"rowIds":["c-advantage-1","c-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house with stone and timber cladding",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Part (b) chooses any two of three printed items, each keeping its own 10 marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q6-original.png",
+          "srcHash": "3d4f638883ac6f25b4c4bd9888b97afa",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 6: the printed question with the elevation and ground-floor plan of a stone and timber-clad house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q6-low-impact",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q6-low-impact.png",
+          "srcHash": "bc67529af6a9c335ee22757a0cfb726e",
+          "alt": "SEC 2022 Higher deferred marking scheme notes on low-environmental-impact features, with sketches of the south elevation, timber cladding and the ground-floor plan.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q7-a", topicId: "cons-1-5", conceptId: "door-eaves-section-a",
+    section: "B", questionRef: "2022 HL Q7(a) — Deferred sitting",
+    stem: "A wooden door is fitted in the external wall of a dwelling house, as shown. The door has 15 mm vertical sheeting on both sides and is highly insulated. The doorframe is thermally broken and is 150 mm × 70 mm in cross-section. The external wall is a 450 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. The tiled roof is constructed using prefabricated trussed rafters and has a pitch of 30⁰.",
+    questionText: "To a scale of 1:5, draw a vertical section through the external wall, doorframe, door and eaves of the roof. Show the typical construction details from a level 200 mm below the head of the door, through the eaves and include three courses of tiles at eaves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 56,
+    rows: [
+    { id: "external-wall", kind: "criterion", verbatim: "External Wall", marks: 15, contextNote: "Best three details, 5 each (4 for drawing, 1 for annotation). Marking menu: internal and external plaster/render; 450 mm concrete block wall and basalt-coated wall ties; full-fill insulated cavity; stepped DPC; cavity closer; lintels; wall plate; airtightness tape at the junction of wall and ceiling. Typical sizes in the scheme’s model: 18 mm render; 100 mm block leaves; 250 mm cavity; 15 mm plaster; 100 × 75 mm wallplate.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "door", kind: "criterion", verbatim: "External Door & Frame", marks: 15, contextNote: "Best three details, 5 each (4 for drawing, 1 for annotation). Marking menu: thermally broken door frame; top rail of the door; airtightness tape from doorframe to wall; insulation; 15 mm vertical sheeting on both sides; double rebates with draught-proofing strips.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "eaves", kind: "criterion", verbatim: "Roof eaves", marks: 15, contextNote: "Best three details, 5 each (4 for drawing, 1 for annotation). Marking menu: fascia, soffit and gutter (any two); ventilation at the soffit and a ventilation path to the roof; tilting fillet; breather membrane and 40 × 40 mm battens; prefabricated roof trusses; ceiling insulation; gypsum plasterboard ceiling with a vapour/airtightness barrier.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "tiles", kind: "criterion", verbatim: "3 courses of tiles at the eaves", marks: 3, contextNote: "Three courses of tiles drawn at the eaves.", permittedMarks: [0,1,2,3] },
+    { id: "presentation", kind: "criterion", verbatim: "Scale and drafting marks (Excellent, Good, Fair)", marks: 8, contextNote: "Scale and drafting, assessed together: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "External door, wall and eaves section",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, tile-course and scale/drafting marks belong to part (a); the thermal-bridge detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q7-original.png",
+          "srcHash": "b041ddf26fc5084d82f3bfa9b2cc7360",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 7: the printed question with a sketch of a sheeted wooden door below the tiled eaves of a rendered wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q7-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q7-section.png",
+          "srcHash": "00e5d60a814ebc4c4a0d75182b6d5f79",
+          "alt": "SEC model vertical section through the door head, cavity wall and tiled eaves of a trussed roof, with the detail lists for the wall, door and eaves (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q7-b", topicId: "cons-6-2", conceptId: "door-eaves-section-b",
+    section: "B", questionRef: "2022 HL Q7(b) — Deferred sitting",
+    stem: "A wooden door is fitted in the external wall of a dwelling house, as shown. The door has 15 mm vertical sheeting on both sides and is highly insulated. The doorframe is thermally broken and is 150 mm × 70 mm in cross-section. The external wall is a 450 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. The tiled roof is constructed using prefabricated trussed rafters and has a pitch of 30⁰.",
+    questionText: "On your drawing, show the typical design detailing to prevent the formation of a thermal bridge at the head of the door.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "thermal-bridge", kind: "criterion", verbatim: "Design detailing to prevent formation of a thermal bridge @ head of door", marks: 4, contextNote: "Show and identify the detail, as in the scheme’s model: a thermally broken door frame and high-density insulation used as a cavity closer at the head of the door.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "External door, wall and eaves section",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, tile-course and scale/drafting marks belong to part (a); the thermal-bridge detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q7-original.png",
+          "srcHash": "b041ddf26fc5084d82f3bfa9b2cc7360",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 7: the printed question with a sketch of a sheeted wooden door below the tiled eaves of a rendered wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q7-thermal-bridge",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q7-thermal-bridge.png",
+          "srcHash": "a8d8ddf221a800b3b1a7c35c4f4a8ef4",
+          "alt": "SEC model detail of the door head, labelled “(b) Thermally broken door frame and high density insulation used as a cavity closer”.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q7-complete", topicId: "cons-1-5", conceptId: "door-eaves-section-complete",
+    section: "B", questionRef: "2022 HL Q7 — complete — Deferred sitting",
+    stem: "A wooden door is fitted in the external wall of a dwelling house, as shown. The door has 15 mm vertical sheeting on both sides and is highly insulated. The doorframe is thermally broken and is 150 mm × 70 mm in cross-section. The external wall is a 450 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. The tiled roof is constructed using prefabricated trussed rafters and has a pitch of 30⁰.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the external wall, doorframe, door and eaves of the roof. Show the typical construction details from a level 200 mm below the head of the door, through the eaves and include three courses of tiles at eaves. (b) On your drawing, show the typical design detailing to prevent the formation of a thermal bridge at the head of the door.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-external-wall", kind: "criterion", verbatim: "External Wall", marks: 15, contextNote: "Best three details, 5 each (4 for drawing, 1 for annotation). Marking menu: internal and external plaster/render; 450 mm concrete block wall and basalt-coated wall ties; full-fill insulated cavity; stepped DPC; cavity closer; lintels; wall plate; airtightness tape at the junction of wall and ceiling. Typical sizes in the scheme’s model: 18 mm render; 100 mm block leaves; 250 mm cavity; 15 mm plaster; 100 × 75 mm wallplate.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "a-door", kind: "criterion", verbatim: "External Door & Frame", marks: 15, contextNote: "Best three details, 5 each (4 for drawing, 1 for annotation). Marking menu: thermally broken door frame; top rail of the door; airtightness tape from doorframe to wall; insulation; 15 mm vertical sheeting on both sides; double rebates with draught-proofing strips.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "a-eaves", kind: "criterion", verbatim: "Roof eaves", marks: 15, contextNote: "Best three details, 5 each (4 for drawing, 1 for annotation). Marking menu: fascia, soffit and gutter (any two); ventilation at the soffit and a ventilation path to the roof; tilting fillet; breather membrane and 40 × 40 mm battens; prefabricated roof trusses; ceiling insulation; gypsum plasterboard ceiling with a vapour/airtightness barrier.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "a-tiles", kind: "criterion", verbatim: "3 courses of tiles at the eaves", marks: 3, contextNote: "Three courses of tiles drawn at the eaves.", permittedMarks: [0,1,2,3] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Scale and drafting marks (Excellent, Good, Fair)", marks: 8, contextNote: "Scale and drafting, assessed together: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-thermal-bridge", kind: "criterion", verbatim: "Design detailing to prevent formation of a thermal bridge @ head of door", marks: 4, contextNote: "Show and identify the detail, as in the scheme’s model: a thermally broken door frame and high-density insulation used as a cavity closer at the head of the door.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-hl-deferred-q7-a","label":"a","marks":56,"rowIds":["a-external-wall","a-door","a-eaves","a-tiles","a-presentation"]},{"sourceCardId":"cons-2022-hl-deferred-q7-b","label":"b","marks":4,"rowIds":["b-thermal-bridge"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "External door, wall and eaves section",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, tile-course and scale/drafting marks belong to part (a); the thermal-bridge detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q7-original.png",
+          "srcHash": "b041ddf26fc5084d82f3bfa9b2cc7360",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 7: the printed question with a sketch of a sheeted wooden door below the tiled eaves of a rendered wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q7-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q7-section.png",
+          "srcHash": "00e5d60a814ebc4c4a0d75182b6d5f79",
+          "alt": "SEC model vertical section through the door head, cavity wall and tiled eaves of a trussed roof, with the detail lists for the wall, door and eaves (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q8-a", topicId: "cons-3-2", conceptId: "nzeb-external-walls-a",
+    section: "B", questionRef: "2022 HL Q8(a) — Deferred sitting",
+    questionText: "Discuss, using notes and freehand sketches, three functional requirements of an external wall suitable for a new dwelling house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "requirement-1", kind: "criterion", verbatim: "Functional Requirement 1", marks: 8, contextNote: "Notes 4 and sketches 4. Such as: weather resistance, sheltering the occupants from rain, snow, wind and sun with little maintenance; structural stability, carrying the loads of the roof and upper floors, spreading them evenly over the foundation and anchoring the roof.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"notes","verbatim":"Notes","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"sketches","verbatim":"sketches","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    { id: "requirement-2", kind: "criterion", verbatim: "Functional Requirement 2", marks: 8, contextNote: "A second, different requirement: notes 4 and sketches 4. Such as: airtightness, an airtightness barrier (sand-cement plaster taped at junctions, or a membrane in a service cavity) preventing uncontrolled air flow; sustainability, durable, long-lasting materials of low embodied energy.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"notes","verbatim":"notes","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"sketches","verbatim":"sketches","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    { id: "requirement-3", kind: "criterion", verbatim: "Functional Requirement 3", marks: 8, contextNote: "A third, different requirement: notes 4 and sketches 4. Such as: thermal comfort, with maximum insulation, minimal thermal bridges and high thermal mass; sound resistance against external noise; fire resistance, resisting the spread of fire and keeping its load-bearing capacity for at least 30 minutes.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"notes","verbatim":"notes","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"sketches","verbatim":"sketches","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "External walls for a nearly Zero Energy Building",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The three walls in (b) are an open choice with no printed list; the scheme models five constructions."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q8-original.png",
+          "srcHash": "be89721acb4a2c3625ee86ed78fa2189",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 8: the printed question with a sketch of a two-storey house with a large glazed ground-floor extension.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q8-requirements",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q8-requirements.png",
+          "srcHash": "48cb524b265c01a03c10b90ad6a981ec",
+          "alt": "SEC 2022 Higher deferred marking scheme notes on the functional requirements of an external wall, with sketches of wall sections, an airtight membrane and a fire-resistance symbol.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q8-b", topicId: "cons-3-3", conceptId: "nzeb-external-walls-b",
+    section: "B", questionRef: "2022 HL Q8(b) — Deferred sitting",
+    questionText: "The owners of the house design shown, intend to construct the dwelling to meet the nearly Zero Energy Building (nZEB) standard. Using notes and freehand sketches, show the design detailing for three different external wall constructions suitable to meet the nZEB standard. Name the typical components of each wall and include the typical dimensions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "wall-1", kind: "criterion", verbatim: "External Wall Construction 1", marks: 10, contextNote: "Notes 4, sketches 4 and dimensions 2 for one wall. Such as, concrete block cavity: durable external render; robust concrete blocks; a full-fill insulated cavity that also keeps moisture from the inner leaf; sand-cement plaster on the inner leaf for airtightness.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "wall-2", kind: "criterion", verbatim: "External Wall Construction 2", marks: 10, contextNote: "Notes 4, sketches 4 and dimensions 2 for a second, different wall. Such as, timber frame with a concrete block external leaf: a ventilated cavity, not filled, against wind-driven rain; a breather membrane on the racking board on the cavity side; an airtightness membrane on the warm side of the studs. Or a single-leaf timber frame wall: full-fill insulation between the studs; a cedar or larch rainscreen on counter battens, or external insulation with acrylic render; an airtightness membrane or a service cavity.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "wall-3", kind: "criterion", verbatim: "External Wall Construction 3", marks: 10, contextNote: "Notes 4, sketches 4 and dimensions 2 for a third, different wall. Such as, a single-leaf concrete block wall (blocks on the flat) with expanded polystyrene external insulation fixed by adhesive and mechanical fixings and finished in acrylic plaster, made airtight with sand-cement plaster or a service cavity; or insulated concrete forms (ICF): EPS panels joined by polypropylene webs and filled with steel-reinforced concrete, acrylic plaster outside and insulated plasterboard inside.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "External walls for a nearly Zero Energy Building",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The three walls in (b) are an open choice with no printed list; the scheme models five constructions."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q8-original.png",
+          "srcHash": "be89721acb4a2c3625ee86ed78fa2189",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 8: the printed question with a sketch of a two-storey house with a large glazed ground-floor extension.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q8-walls",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q8-walls.png",
+          "srcHash": "d01abbfb7142f8f42320ae1dd1c3d43f",
+          "alt": "SEC model external wall sections for nZEB: concrete block cavity, timber frame with a block outer leaf, single-leaf timber frame, externally insulated block and ICF, each with notes (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q8-c", topicId: "cons-3-3", conceptId: "nzeb-external-walls-c",
+    section: "B", questionRef: "2022 HL Q8(c) — Deferred sitting",
+    questionText: "Recommend your preferred external wall construction from 8(b) above and justify your recommendation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "recommendation", kind: "criterion", verbatim: "Recommendation", marks: 2, contextNote: "The preferred wall from 8(b) named.", permittedMarks: [0,1,2] },
+    { id: "justification", kind: "criterion", verbatim: "Justification", marks: 4, contextNote: "Such as, a concrete block cavity wall: robust, long-lasting materials, a durable weatherproof outer leaf, airtight with sand-cement plaster or a service cavity membrane, and familiar to builders. Timber frame: low embodied energy, built in a factory or on site, a carbon store. Blocks with external insulation: high thermal mass. ICF: quick to build, a low U-value, very airtight, acoustic comfort.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "External walls for a nearly Zero Energy Building",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The three walls in (b) are an open choice with no printed list; the scheme models five constructions."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q8-original.png",
+          "srcHash": "be89721acb4a2c3625ee86ed78fa2189",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 8: the printed question with a sketch of a two-storey house with a large glazed ground-floor extension.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q8-complete", topicId: "cons-3-2", conceptId: "nzeb-external-walls-complete",
+    section: "B", questionRef: "2022 HL Q8 — complete — Deferred sitting",
+    questionText: "(a) Discuss, using notes and freehand sketches, three functional requirements of an external wall suitable for a new dwelling house. (b) The owners of the house design shown, intend to construct the dwelling to meet the nearly Zero Energy Building (nZEB) standard. Using notes and freehand sketches, show the design detailing for three different external wall constructions suitable to meet the nZEB standard. Name the typical components of each wall and include the typical dimensions. (c) Recommend your preferred external wall construction from 8(b) above and justify your recommendation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-requirement-1", kind: "criterion", verbatim: "Functional Requirement 1", marks: 8, contextNote: "Notes 4 and sketches 4. Such as: weather resistance, sheltering the occupants from rain, snow, wind and sun with little maintenance; structural stability, carrying the loads of the roof and upper floors, spreading them evenly over the foundation and anchoring the roof.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"notes","verbatim":"Notes","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"sketches","verbatim":"sketches","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    { id: "a-requirement-2", kind: "criterion", verbatim: "Functional Requirement 2", marks: 8, contextNote: "A second, different requirement: notes 4 and sketches 4. Such as: airtightness, an airtightness barrier (sand-cement plaster taped at junctions, or a membrane in a service cavity) preventing uncontrolled air flow; sustainability, durable, long-lasting materials of low embodied energy.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"notes","verbatim":"notes","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"sketches","verbatim":"sketches","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    { id: "a-requirement-3", kind: "criterion", verbatim: "Functional Requirement 3", marks: 8, contextNote: "A third, different requirement: notes 4 and sketches 4. Such as: thermal comfort, with maximum insulation, minimal thermal bridges and high thermal mass; sound resistance against external noise; fire resistance, resisting the spread of fire and keeping its load-bearing capacity for at least 30 minutes.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"notes","verbatim":"notes","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"sketches","verbatim":"sketches","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    { id: "b-wall-1", kind: "criterion", verbatim: "External Wall Construction 1", marks: 10, contextNote: "Notes 4, sketches 4 and dimensions 2 for one wall. Such as, concrete block cavity: durable external render; robust concrete blocks; a full-fill insulated cavity that also keeps moisture from the inner leaf; sand-cement plaster on the inner leaf for airtightness.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-wall-2", kind: "criterion", verbatim: "External Wall Construction 2", marks: 10, contextNote: "Notes 4, sketches 4 and dimensions 2 for a second, different wall. Such as, timber frame with a concrete block external leaf: a ventilated cavity, not filled, against wind-driven rain; a breather membrane on the racking board on the cavity side; an airtightness membrane on the warm side of the studs. Or a single-leaf timber frame wall: full-fill insulation between the studs; a cedar or larch rainscreen on counter battens, or external insulation with acrylic render; an airtightness membrane or a service cavity.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-wall-3", kind: "criterion", verbatim: "External Wall Construction 3", marks: 10, contextNote: "Notes 4, sketches 4 and dimensions 2 for a third, different wall. Such as, a single-leaf concrete block wall (blocks on the flat) with expanded polystyrene external insulation fixed by adhesive and mechanical fixings and finished in acrylic plaster, made airtight with sand-cement plaster or a service cavity; or insulated concrete forms (ICF): EPS panels joined by polypropylene webs and filled with steel-reinforced concrete, acrylic plaster outside and insulated plasterboard inside.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "c-recommendation", kind: "criterion", verbatim: "Recommendation", marks: 2, contextNote: "The preferred wall from 8(b) named.", permittedMarks: [0,1,2] },
+    { id: "c-justification", kind: "criterion", verbatim: "Justification", marks: 4, contextNote: "Such as, a concrete block cavity wall: robust, long-lasting materials, a durable weatherproof outer leaf, airtight with sand-cement plaster or a service cavity membrane, and familiar to builders. Timber frame: low embodied energy, built in a factory or on site, a carbon store. Blocks with external insulation: high thermal mass. ICF: quick to build, a low U-value, very airtight, acoustic comfort.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-hl-deferred-q8-a","label":"a","marks":24,"rowIds":["a-requirement-1","a-requirement-2","a-requirement-3"]},{"sourceCardId":"cons-2022-hl-deferred-q8-b","label":"b","marks":30,"rowIds":["b-wall-1","b-wall-2","b-wall-3"]},{"sourceCardId":"cons-2022-hl-deferred-q8-c","label":"c","marks":6,"rowIds":["c-recommendation","c-justification"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "External walls for a nearly Zero Energy Building",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The three walls in (b) are an open choice with no printed list; the scheme models five constructions."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q8-original.png",
+          "srcHash": "be89721acb4a2c3625ee86ed78fa2189",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 8: the printed question with a sketch of a two-storey house with a large glazed ground-floor extension.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q8-walls",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q8-walls.png",
+          "srcHash": "d01abbfb7142f8f42320ae1dd1c3d43f",
+          "alt": "SEC model external wall sections for nZEB: concrete block cavity, timber frame with a block outer leaf, single-leaf timber frame, externally insulated block and ICF, each with notes (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q9-a", topicId: "cons-3-4", conceptId: "moisture-penetration-circled-a",
+    section: "B", questionRef: "2022 HL Q9(a) — Deferred sitting",
+    stem: "Careful design detailing is required to prevent the penetration of dampness into a dwelling house. The drawing below shows an outline section through a 450 mm external concrete block wall with a full-fill insulated cavity and a slated truss roof. A rendered concrete block chimney projects through the roof and the window frame is thermally broken.",
+    questionText: "Discuss two reasons why it is important to ensure that moisture does not penetrate into a house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "reason-1", kind: "criterion", verbatim: "Reason 1 (4 for point, 4 for discussion)", marks: 8, contextNote: "Point 4 and discussion 4. Such as: health, mould growth on internal walls harming the occupants; structural stability, timber roof members rotting over time; thermal comfort, damp insulation between the joists working less well.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason 2 (4 for point, 4 for discussion)", marks: 8, contextNote: "A second, different reason. Such as: appearance, with mould, discoloured walls, bubbling paint and rusting metal; the cost of replacing wooden doors, windows or flooring that swell and warp; higher energy bills, as damp air takes more energy to heat or cool.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing moisture penetration at the circled locations",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original section drawing retained. Part (b) chooses any two of the three circled locations, each keeping its own 14 marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q9-original.png",
+          "srcHash": "84ce136c33f36be1eb466737f11b75a8",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 9: the printed question with an outline section through a cavity wall, slated truss roof and chimney, three locations circled.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q9-b", topicId: "cons-3-4", conceptId: "moisture-penetration-circled-b",
+    section: "B", questionRef: "2022 HL Q9(b) — Deferred sitting",
+    stem: "Careful design detailing is required to prevent the penetration of dampness into a dwelling house. The drawing below shows an outline section through a 450 mm external concrete block wall with a full-fill insulated cavity and a slated truss roof. A rendered concrete block chimney projects through the roof and the window frame is thermally broken.",
+    questionText: "Using notes and freehand sketches, show best practice design detailing that will prevent the penetration of moisture at any two locations circled on the drawing.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 28,
+    rows: [
+    { id: "locations", kind: "anyN", verbatim: "Preventing moisture penetration at two locations", marks: 28, contextNote: "Any two of the three circled locations, each note 4 and sketch 10 = 14. Back of chimney: a lead back gutter welted over a tilting fillet and under the breather membrane; the breather membrane or roofing felt carried under the back gutter and lapped up the chimney; a lead cover flashing overhanging the gutter. Front of chimney: the breather membrane carried under the battens and taped to the chimney; a lead front apron flashing dressed on top of the slates and covered by the lead above; the lead carried 150 mm above the lowest point where the stack leaves the roof. Head of Window: a stepped DPC so moisture does not reach the inner wall; the window frame sealed with mastic so wind-driven rain cannot reach the internal leaf.", group: {"claimMax":2,"perOption":14,"options":["Back of chimney","Front of chimney","Head of Window"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing moisture penetration at the circled locations",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original section drawing retained. Part (b) chooses any two of the three circled locations, each keeping its own 14 marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q9-original.png",
+          "srcHash": "84ce136c33f36be1eb466737f11b75a8",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 9: the printed question with an outline section through a cavity wall, slated truss roof and chimney, three locations circled.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q9-locations",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q9-locations.png",
+          "srcHash": "b31375415b29a2eb648a491593b3a7a3",
+          "alt": "SEC model details for all three circled locations: the lead back gutter and front apron flashing at the chimney, and the stepped DPC at the window head.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q9-c", topicId: "cons-3-4", conceptId: "moisture-penetration-circled-c",
+    section: "B", questionRef: "2022 HL Q9(c) — Deferred sitting",
+    stem: "Careful design detailing is required to prevent the penetration of dampness into a dwelling house. The drawing below shows an outline section through a 450 mm external concrete block wall with a full-fill insulated cavity and a slated truss roof. A rendered concrete block chimney projects through the roof and the window frame is thermally broken.",
+    questionText: "Describe, using notes and freehand sketches, two different materials that are used to prevent the penetration of moisture into the house at the locations circled.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "material-1", kind: "criterion", verbatim: "Material 1", marks: 8, contextNote: "Note 4 and sketch 4. Such as: lead, malleable, durable and resistant to corrosion, used for flashings, valleys and gutters; a damp proof course (DPC), impervious, flexible, lightweight and embossed to bond with the mortar.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"note","verbatim":"Note","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"sketch","verbatim":"sketch","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    { id: "material-2", kind: "criterion", verbatim: "Material 2", marks: 8, contextNote: "A second, different material: note 4 and sketch 4. Such as: a breather membrane or roofing felt, water-resistant but vapour-permeable, fixed under battens outside the insulation; slate (natural or fibre cement), nailed to battens through two holes and shedding water to the gutter.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"note","verbatim":"note","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"sketch","verbatim":"sketch","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing moisture penetration at the circled locations",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original section drawing retained. Part (b) chooses any two of the three circled locations, each keeping its own 14 marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q9-original.png",
+          "srcHash": "84ce136c33f36be1eb466737f11b75a8",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 9: the printed question with an outline section through a cavity wall, slated truss roof and chimney, three locations circled.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q9-materials",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q9-materials.png",
+          "srcHash": "8a3b81f460401c2c3c061b09309aaa96",
+          "alt": "SEC 2022 Higher deferred marking scheme notes on lead, DPC, breather membrane and slate, with sketches of a lead roll, a DPC roll and a slated roof on battens.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q9-complete", topicId: "cons-3-4", conceptId: "moisture-penetration-circled-complete",
+    section: "B", questionRef: "2022 HL Q9 — complete — Deferred sitting",
+    stem: "Careful design detailing is required to prevent the penetration of dampness into a dwelling house. The drawing below shows an outline section through a 450 mm external concrete block wall with a full-fill insulated cavity and a slated truss roof. A rendered concrete block chimney projects through the roof and the window frame is thermally broken.",
+    questionText: "(a) Discuss two reasons why it is important to ensure that moisture does not penetrate into a house. (b) Using notes and freehand sketches, show best practice design detailing that will prevent the penetration of moisture at any two locations circled on the drawing. (c) Describe, using notes and freehand sketches, two different materials that are used to prevent the penetration of moisture into the house at the locations circled.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-reason-1", kind: "criterion", verbatim: "Reason 1 (4 for point, 4 for discussion)", marks: 8, contextNote: "Point 4 and discussion 4. Such as: health, mould growth on internal walls harming the occupants; structural stability, timber roof members rotting over time; thermal comfort, damp insulation between the joists working less well.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    { id: "a-reason-2", kind: "criterion", verbatim: "Reason 2 (4 for point, 4 for discussion)", marks: 8, contextNote: "A second, different reason. Such as: appearance, with mould, discoloured walls, bubbling paint and rusting metal; the cost of replacing wooden doors, windows or flooring that swell and warp; higher energy bills, as damp air takes more energy to heat or cool.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    { id: "b-locations", kind: "anyN", verbatim: "Preventing moisture penetration at two locations", marks: 28, contextNote: "Any two of the three circled locations, each note 4 and sketch 10 = 14. Back of chimney: a lead back gutter welted over a tilting fillet and under the breather membrane; the breather membrane or roofing felt carried under the back gutter and lapped up the chimney; a lead cover flashing overhanging the gutter. Front of chimney: the breather membrane carried under the battens and taped to the chimney; a lead front apron flashing dressed on top of the slates and covered by the lead above; the lead carried 150 mm above the lowest point where the stack leaves the roof. Head of Window: a stepped DPC so moisture does not reach the inner wall; the window frame sealed with mastic so wind-driven rain cannot reach the internal leaf.", group: {"claimMax":2,"perOption":14,"options":["Back of chimney","Front of chimney","Head of Window"]} },
+    { id: "c-material-1", kind: "criterion", verbatim: "Material 1", marks: 8, contextNote: "Note 4 and sketch 4. Such as: lead, malleable, durable and resistant to corrosion, used for flashings, valleys and gutters; a damp proof course (DPC), impervious, flexible, lightweight and embossed to bond with the mortar.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"note","verbatim":"Note","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"sketch","verbatim":"sketch","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    { id: "c-material-2", kind: "criterion", verbatim: "Material 2", marks: 8, contextNote: "A second, different material: note 4 and sketch 4. Such as: a breather membrane or roofing felt, water-resistant but vapour-permeable, fixed under battens outside the insulation; slate (natural or fibre cement), nailed to battens through two holes and shedding water to the gutter.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"note","verbatim":"note","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"sketch","verbatim":"sketch","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-hl-deferred-q9-a","label":"a","marks":16,"rowIds":["a-reason-1","a-reason-2"]},{"sourceCardId":"cons-2022-hl-deferred-q9-b","label":"b","marks":28,"rowIds":["b-locations"]},{"sourceCardId":"cons-2022-hl-deferred-q9-c","label":"c","marks":16,"rowIds":["c-material-1","c-material-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Preventing moisture penetration at the circled locations",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original section drawing retained. Part (b) chooses any two of the three circled locations, each keeping its own 14 marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q9-original.png",
+          "srcHash": "84ce136c33f36be1eb466737f11b75a8",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 9: the printed question with an outline section through a cavity wall, slated truss roof and chimney, three locations circled.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q9-locations",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q9-locations.png",
+          "srcHash": "b31375415b29a2eb648a491593b3a7a3",
+          "alt": "SEC model details for all three circled locations: the lead back gutter and front apron flashing at the chimney, and the stepped DPC at the window head.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q10-a", topicId: "cons-6-4", conceptId: "passive-house-orientation-overheating-a",
+    section: "B", questionRef: "2022 HL Q10(a) — Deferred sitting",
+    questionText: "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: building form; continuity of insulation; windows and glazing.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "items", kind: "anyN", verbatim: "Any two in Passive House design", marks: 20, contextNote: "Any two of the three, each notes 5 and sketches 5 = 10. Building form: a simple, compact form, not oversized for its site; the smallest surface area for the volume (an A/V ratio of 0.7 or less) to cut heat loss, materials and labour; single-room depth for solar gain; T, L or U plans use more material than a rectangle. Continuity of insulation: unbroken insulation so heat cannot escape through the envelope: 200-300 mm under the whole floor slab; 50-100 mm edge insulation; cavity insulation carried below the slab; thermal blocks on the inner leaf; passive raft foundations wrapped in insulation; the eaves junction; thermally broken window and door frames. Windows and glazing: thermally broken high-performance frames with double or triple rebated, sealed sashes; window U-values of 0.8 to 0.47 W/m²K (double glazing 2.8 to 2.0); argon or krypton gas between the panes; low-e soft coats; warm edge spacers; dynamic or thermochromic glass.", group: {"claimMax":2,"perOption":10,"options":["Building form","Continuity of insulation","Windows and glazing"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design, orientation and overheating",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items, each keeping its own 10 marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q10-original.png",
+          "srcHash": "d67769e366f2971fbf4fcad29733138b",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 10: the printed question with a sketch of the preliminary design of a Passive House with a deck and rooflights.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q10-items",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q10-items.png",
+          "srcHash": "a635f8f3d24fceaa5465f8d06daaa626",
+          "alt": "SEC 2022 Higher deferred marking scheme notes and sketches for all three Question 10(a) items: building form, continuity of insulation, and windows and glazing (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q10-b", topicId: "cons-6-4", conceptId: "passive-house-orientation-overheating-b",
+    section: "B", questionRef: "2022 HL Q10(b) — Deferred sitting",
+    questionText: "The preliminary design sketch for a Passive House is shown. Using notes and freehand sketches, show the preferred orientation to ensure the optimum thermal performance of the house and also show the sun path on your sketch. Justify your choice of orientation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "orientation", kind: "criterion", verbatim: "Preferred orientation", marks: 10, contextNote: "Notes 5 and sketch 5. Such as: the large glazed façade facing south for greater solar gain and lower heating demand; the long axis of the house running east-west, or turned no more than 30° east or west of south.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"notes","verbatim":"Notes","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"sketch","verbatim":"sketch","marks":5,"permittedMarks":[0,1,2,3,4,5]}] },
+    { id: "sun-path", kind: "criterion", verbatim: "Sun path", marks: 5, contextNote: "The sun path shown on the sketch, with the summer sun higher in the sky than the winter sun.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "justification", kind: "criterion", verbatim: "Justification", marks: 5, contextNote: "Such as: maximum solar gain through the south glazing improves the thermal performance of the house and lowers its thermal energy demand.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design, orientation and overheating",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items, each keeping its own 10 marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q10-original.png",
+          "srcHash": "d67769e366f2971fbf4fcad29733138b",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 10: the printed question with a sketch of the preliminary design of a Passive House with a deck and rooflights.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q10-orientation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q10-orientation.png",
+          "srcHash": "2bc9f4ebc30b901d86ab68ba78f8ba58",
+          "alt": "SEC model sketches of the sun path over the house and its preferred orientation within 30° of south, with notes on thermal performance.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q10-c", topicId: "cons-6-4", conceptId: "passive-house-orientation-overheating-c",
+    section: "B", questionRef: "2022 HL Q10(c) — Deferred sitting",
+    questionText: "The passive house as shown in the design above may overheat during summer. Discuss two reasons why overheating may occur. Show, using notes and freehand sketches, one modification you would make to this design to reduce the possibility of overheating.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "reason-1", kind: "criterion", verbatim: "Reason 1", marks: 5, contextNote: "Such as: large areas of high-performance glazing on the south elevation trapping too much solar gain in long summer sunshine; the summer sun shining from a higher angle than in winter.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason 2", marks: 5, contextNote: "A second, different reason. Such as: inadequate natural or mechanical ventilation; too little thermal mass to store the solar gain; heat from cooking, lighting and appliances; no roof overhang or brise-soleil; no deciduous trees for summer shade.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "modification", kind: "criterion", verbatim: "Modification to reduce overheating", marks: 10, contextNote: "Notes 5 and sketches 5. Such as: a brise-soleil along the south face; extended eaves as an overhang; external roller blinds; an MHRV system with a summer bypass; dynamic glass; thermal mass such as concrete internal walls.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"notes","verbatim":"Notes","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"sketches","verbatim":"sketches","marks":5,"permittedMarks":[0,1,2,3,4,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design, orientation and overheating",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items, each keeping its own 10 marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q10-original.png",
+          "srcHash": "d67769e366f2971fbf4fcad29733138b",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 10: the printed question with a sketch of the preliminary design of a Passive House with a deck and rooflights.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q10-overheating",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q10-overheating.png",
+          "srcHash": "7e95c401ceaf52eb88872da02dad64e3",
+          "alt": "SEC 2022 Higher deferred marking scheme reasons for overheating and modifications to prevent it, with sketches of a brise-soleil and an overhang shading the glazing (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q10-complete", topicId: "cons-6-4", conceptId: "passive-house-orientation-overheating-complete",
+    section: "B", questionRef: "2022 HL Q10 — complete — Deferred sitting",
+    questionText: "(a) Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: building form; continuity of insulation; windows and glazing. (b) The preliminary design sketch for a Passive House is shown. Using notes and freehand sketches, show the preferred orientation to ensure the optimum thermal performance of the house and also show the sun path on your sketch. Justify your choice of orientation. (c) The passive house as shown in the design above may overheat during summer. Discuss two reasons why overheating may occur. Show, using notes and freehand sketches, one modification you would make to this design to reduce the possibility of overheating.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-items", kind: "anyN", verbatim: "Any two in Passive House design", marks: 20, contextNote: "Any two of the three, each notes 5 and sketches 5 = 10. Building form: a simple, compact form, not oversized for its site; the smallest surface area for the volume (an A/V ratio of 0.7 or less) to cut heat loss, materials and labour; single-room depth for solar gain; T, L or U plans use more material than a rectangle. Continuity of insulation: unbroken insulation so heat cannot escape through the envelope: 200-300 mm under the whole floor slab; 50-100 mm edge insulation; cavity insulation carried below the slab; thermal blocks on the inner leaf; passive raft foundations wrapped in insulation; the eaves junction; thermally broken window and door frames. Windows and glazing: thermally broken high-performance frames with double or triple rebated, sealed sashes; window U-values of 0.8 to 0.47 W/m²K (double glazing 2.8 to 2.0); argon or krypton gas between the panes; low-e soft coats; warm edge spacers; dynamic or thermochromic glass.", group: {"claimMax":2,"perOption":10,"options":["Building form","Continuity of insulation","Windows and glazing"]} },
+    { id: "b-orientation", kind: "criterion", verbatim: "Preferred orientation", marks: 10, contextNote: "Notes 5 and sketch 5. Such as: the large glazed façade facing south for greater solar gain and lower heating demand; the long axis of the house running east-west, or turned no more than 30° east or west of south.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"notes","verbatim":"Notes","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"sketch","verbatim":"sketch","marks":5,"permittedMarks":[0,1,2,3,4,5]}] },
+    { id: "b-sun-path", kind: "criterion", verbatim: "Sun path", marks: 5, contextNote: "The sun path shown on the sketch, with the summer sun higher in the sky than the winter sun.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-justification", kind: "criterion", verbatim: "Justification", marks: 5, contextNote: "Such as: maximum solar gain through the south glazing improves the thermal performance of the house and lowers its thermal energy demand.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-reason-1", kind: "criterion", verbatim: "Reason 1", marks: 5, contextNote: "Such as: large areas of high-performance glazing on the south elevation trapping too much solar gain in long summer sunshine; the summer sun shining from a higher angle than in winter.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-reason-2", kind: "criterion", verbatim: "Reason 2", marks: 5, contextNote: "A second, different reason. Such as: inadequate natural or mechanical ventilation; too little thermal mass to store the solar gain; heat from cooking, lighting and appliances; no roof overhang or brise-soleil; no deciduous trees for summer shade.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-modification", kind: "criterion", verbatim: "Modification to reduce overheating", marks: 10, contextNote: "Notes 5 and sketches 5. Such as: a brise-soleil along the south face; extended eaves as an overhang; external roller blinds; an MHRV system with a summer bypass; dynamic glass; thermal mass such as concrete internal walls.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"notes","verbatim":"Notes","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"sketches","verbatim":"sketches","marks":5,"permittedMarks":[0,1,2,3,4,5]}] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-hl-deferred-q10-a","label":"a","marks":20,"rowIds":["a-items"]},{"sourceCardId":"cons-2022-hl-deferred-q10-b","label":"b","marks":20,"rowIds":["b-orientation","b-sun-path","b-justification"]},{"sourceCardId":"cons-2022-hl-deferred-q10-c","label":"c","marks":20,"rowIds":["c-reason-1","c-reason-2","c-modification"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design, orientation and overheating",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed items, each keeping its own 10 marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q10-original.png",
+          "srcHash": "d67769e366f2971fbf4fcad29733138b",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred Question 10: the printed question with a sketch of the preliminary design of a Passive House with a deck and rooflights.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2022-HL-deferred-q10-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q10-scheme.png",
+          "srcHash": "45f3d7eca1bd2a8f103044ecf990b9b3",
+          "alt": "SEC marking-scheme notes and sketches for Question 10: building form, continuity of insulation, windows and glazing, orientation and sun path, and overheating (four pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q10-alt-a", topicId: "cons-1-2", conceptId: "embodied-energy-guidelines-a",
+    section: "B", questionRef: "2022 HL Q10-alt(a) — Deferred sitting",
+    stem: "“The energy used in heating, lighting and in supplying power to a dwelling needs to be reduced, but the energy required to build it also must be addressed. This is the so-called embodied energy, the energy required to dig raw materials out of the ground and transport them to a factory where they are turned into metals or plastics. This embodied energy can account for up to 50% of the total energy consumed during the life of a low-energy-use home. It can be reduced substantially by using natural materials.” Adapted from: The Green Self-Build Book – how to design and build your own eco-home – by Jon Broome. Published by: Green Books Ltd. ISBN: 978 1 903998 73 1",
+    questionText: "Discuss the above statement in detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "point-1", kind: "criterion", verbatim: "Discussion: Point 1 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: locally sourced materials cut transport and so embodied energy; imported granite and imported timber carry high embodied energy, while timber grown in Ireland is low in embodied energy and carbon neutral.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":6,"permittedMarks":[0,1,2,3,4,5,6]}] },
+    { id: "point-2", kind: "criterion", verbatim: "Discussion: Point 2 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: cement manufacture produces 900 kg of CO2 and SO2 for every 1000 kg of cement, so using less concrete, or cement made with GGBFS (40% less embodied energy), cuts embodied energy; durable native timbers such as cedar, larch and Douglas fir need little processing.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":6,"permittedMarks":[0,1,2,3,4,5,6]}] },
+    { id: "point-3", kind: "criterion", verbatim: "Discussion: Point 3 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: smaller floor areas and narrow single-room plans spanned by standard timber, with no structural steel; low-embodied-energy insulation such as recycled fibreglass, cellulose or local hemp; hempcrete; stone driveways in place of concrete. Three distinct, well-argued points are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":6,"permittedMarks":[0,1,2,3,4,5,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Embodied energy (alternative Question 10)",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q10-alt-original.png",
+          "srcHash": "589d3ab49d9dd8227242314028eb15fb",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred alternative Question 10: the printed quotation on embodied energy from The Green Self-Build Book and its two parts.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q10-alt-b", topicId: "cons-1-2", conceptId: "embodied-energy-guidelines-b",
+    section: "B", questionRef: "2022 HL Q10-alt(b) — Deferred sitting",
+    stem: "“The energy used in heating, lighting and in supplying power to a dwelling needs to be reduced, but the energy required to build it also must be addressed. This is the so-called embodied energy, the energy required to dig raw materials out of the ground and transport them to a factory where they are turned into metals or plastics. This embodied energy can account for up to 50% of the total energy consumed during the life of a low-energy-use home. It can be reduced substantially by using natural materials.” Adapted from: The Green Self-Build Book – how to design and build your own eco-home – by Jon Broome. Published by: Green Books Ltd. ISBN: 978 1 903998 73 1",
+    questionText: "Propose three best practice guidelines that would ensure all buildings are built in the most sustainable way possible to minimise their embodied energy.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "guideline-1", kind: "criterion", verbatim: "Guideline 1: (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: government agencies funding research and publishing the embodied energy of every building material; grants or tax relief for builders using natural, low-embodied-energy materials.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":6,"permittedMarks":[0,1,2,3,4,5,6]}] },
+    { id: "guideline-2", kind: "criterion", verbatim: "Guideline 2: (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: planning regulations restricting concrete boundary walls and requiring native trees and hedgerows; landowners encouraged to grow hemp so builders can choose hempcrete over concrete.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":6,"permittedMarks":[0,1,2,3,4,5,6]}] },
+    { id: "guideline-3", kind: "criterion", verbatim: "Guideline 3: (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: training building professionals to design and build with wood, cob, rammed earth and hemp-lime; homes adaptable for lifetime use under Universal Design; designers reducing concrete and steel. Three distinct guidelines are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":6,"permittedMarks":[0,1,2,3,4,5,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Embodied energy (alternative Question 10)",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q10-alt-original.png",
+          "srcHash": "589d3ab49d9dd8227242314028eb15fb",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred alternative Question 10: the printed quotation on embodied energy from The Green Self-Build Book and its two parts.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "cons-2022-hl-deferred-q10-alt-complete", topicId: "cons-1-2", conceptId: "embodied-energy-guidelines-complete",
+    section: "B", questionRef: "2022 HL Q10-alt — complete — Deferred sitting",
+    stem: "“The energy used in heating, lighting and in supplying power to a dwelling needs to be reduced, but the energy required to build it also must be addressed. This is the so-called embodied energy, the energy required to dig raw materials out of the ground and transport them to a factory where they are turned into metals or plastics. This embodied energy can account for up to 50% of the total energy consumed during the life of a low-energy-use home. It can be reduced substantially by using natural materials.” Adapted from: The Green Self-Build Book – how to design and build your own eco-home – by Jon Broome. Published by: Green Books Ltd. ISBN: 978 1 903998 73 1",
+    questionText: "(a) Discuss the above statement in detail. (b) Propose three best practice guidelines that would ensure all buildings are built in the most sustainable way possible to minimise their embodied energy.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-point-1", kind: "criterion", verbatim: "Discussion: Point 1 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: locally sourced materials cut transport and so embodied energy; imported granite and imported timber carry high embodied energy, while timber grown in Ireland is low in embodied energy and carbon neutral.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":6,"permittedMarks":[0,1,2,3,4,5,6]}] },
+    { id: "a-point-2", kind: "criterion", verbatim: "Discussion: Point 2 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: cement manufacture produces 900 kg of CO2 and SO2 for every 1000 kg of cement, so using less concrete, or cement made with GGBFS (40% less embodied energy), cuts embodied energy; durable native timbers such as cedar, larch and Douglas fir need little processing.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":6,"permittedMarks":[0,1,2,3,4,5,6]}] },
+    { id: "a-point-3", kind: "criterion", verbatim: "Discussion: Point 3 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: smaller floor areas and narrow single-room plans spanned by standard timber, with no structural steel; low-embodied-energy insulation such as recycled fibreglass, cellulose or local hemp; hempcrete; stone driveways in place of concrete. Three distinct, well-argued points are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":6,"permittedMarks":[0,1,2,3,4,5,6]}] },
+    { id: "b-guideline-1", kind: "criterion", verbatim: "Guideline 1: (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: government agencies funding research and publishing the embodied energy of every building material; grants or tax relief for builders using natural, low-embodied-energy materials.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":6,"permittedMarks":[0,1,2,3,4,5,6]}] },
+    { id: "b-guideline-2", kind: "criterion", verbatim: "Guideline 2: (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: planning regulations restricting concrete boundary walls and requiring native trees and hedgerows; landowners encouraged to grow hemp so builders can choose hempcrete over concrete.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":6,"permittedMarks":[0,1,2,3,4,5,6]}] },
+    { id: "b-guideline-3", kind: "criterion", verbatim: "Guideline 3: (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: training building professionals to design and build with wood, cob, rammed earth and hemp-lime; homes adaptable for lifetime use under Universal Design; designers reducing concrete and steel. Three distinct guidelines are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point","verbatim":"point","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"discussion","verbatim":"discussion","marks":6,"permittedMarks":[0,1,2,3,4,5,6]}] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2022-hl-deferred-q10-alt-a","label":"a","marks":30,"rowIds":["a-point-1","a-point-2","a-point-3"]},{"sourceCardId":"cons-2022-hl-deferred-q10-alt-b","label":"b","marks":30,"rowIds":["b-guideline-1","b-guideline-2","b-guideline-3"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Embodied energy (alternative Question 10)",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2022-HL-deferred-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-deferred-q10-alt-original.png",
+          "srcHash": "589d3ab49d9dd8227242314028eb15fb",
+          "alt": "Original SEC 2022 Higher Construction Studies deferred alternative Question 10: the printed quotation on embodied energy from The Green Self-Build Book and its two parts.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
 ];

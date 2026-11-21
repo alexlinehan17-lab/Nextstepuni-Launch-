@@ -20,6 +20,7 @@ import type { PaperAnswerMap } from '../types/paperTrail';
 import { vaultPdf } from '../components/PaperTrail/vaultDocs';
 import { rotatedCropRect } from '../components/PaperTrail/CropView';
 import { reviewedArchiveEntries } from '../components/PaperTrail/indexLookup';
+import { PAPER_TRAIL_INDEX } from '../paperTrailData';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import inventory from '../scripts/markbank/accounting/inventory.json';
 import progress from '../scripts/markbank/accounting/progress.json';
@@ -28,16 +29,27 @@ import reconciliation from '../scripts/markbank/accounting/reconciliation.json';
 vi.mock('../components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new Promise(() => {})) }));
 
 const current = CARDS.filter(card => card.year === 2025);
+// June's tasks. Each carded deferred sitting (accounting/build.py CARDED_DEFERRED_YEARS) is its own edition,
+// "LC032ALP000EV-deferred.pdf", numbered as June's, and is checked apart.
+const isDeferredEdition = (fileid: string) => /-deferred(?:\.pdf)?$/.test(fileid);
+const JUNE = authored.cards.filter(card => !isDeferredEdition(card.paperFileid));
 const json = (path: string) => JSON.parse(readFileSync(resolve(__dirname, '..', path), 'utf8'));
 const map = json('public/paper-answers/2025/LC032ALP000EV.pdf.json') as PaperAnswerMap;
 const original = json('scripts/paper-trail/answers/2025/LC032ALP000EV.pdf.json') as PaperAnswerMap;
 
 describe('Accounting corpus reconciliation', () => {
   it('covers the actual Paper Trail index without unreviewed or orphan editions', () => {
-    // The reviewed window: June sittings 2010-2026 (pre-2010 and deferred
-    // papers are archive-only).
+    // The reviewed window: June sittings 2010-2026 (pre-2010 papers are archive-only), and each carded deferred
+    // sitting's English paper, its own edition in the index ("LC032ALP000EV-deferred.pdf", build.py
+    // CARDED_DEFERRED_YEARS).
     const indexed = reviewedArchiveEntries('accounting').flatMap(entry => entry.papers.map(paper => `${entry.year}/${paper.doc.f}`));
-    expect(new Set(inventory.papers.map(paper => `${paper.year}/${paper.fileid}`))).toEqual(new Set(indexed));
+    const deferredIndexed = (PAPER_TRAIL_INDEX.accounting ?? []).filter(entry => entry.sitting === 'deferred' && entry.lang === 'ev')
+      .flatMap(entry => entry.papers.map(paper => `${entry.year}/${paper.doc.f}`));
+    const deferredInventory = inventory.papers.filter(paper => 'sitting' in paper && paper.sitting === 'deferred')
+      .map(paper => `${paper.year}/${paper.fileid}`);
+    expect(deferredInventory).toEqual(['2022/LC032ALP000EV-deferred.pdf', '2023/LC032ALP000EV-deferred.pdf']);
+    expect(deferredInventory.every(key => deferredIndexed.includes(key))).toBe(true);
+    expect(new Set(inventory.papers.map(paper => `${paper.year}/${paper.fileid}`))).toEqual(new Set([...indexed, ...deferredInventory]));
     expect(progress.editions.filter(edition => edition.status === 'pending')).toEqual([]);
     expect(reconciliation.sourceReconciliationPassed).toBe(true);
     expect(reconciliation.openIssues).toEqual([]);
@@ -46,7 +58,9 @@ describe('Accounting corpus reconciliation', () => {
 
   it('preserves every old Atlas question and exposes only reviewed additions', () => {
     const atlas = questionsForTopics('accounting', null);
-    const identity = (year: number, level: string, n: string) => `${year}|${level}|${n}`;
+    // A deferred sitting's task is its own question, numbered as June's: its identity carries the sitting.
+    const identity = (year: number, level: string, n: string, fileid = '') =>
+      `${year}|${level}|${n}${fileid.endsWith('-deferred.pdf') ? '|deferred' : ''}`;
     const old = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'accounting')
       .flatMap(paper => paper.q.map(q => identity(paper.year, paper.level, q.n)));
     // Existing Atlas supplementation also draws parents from the audited
@@ -56,13 +70,14 @@ describe('Accounting corpus reconciliation', () => {
       return existsSync(resolve(__dirname, '..', path))
         ? (json(path) as PaperAnswerMap).q.map(q => identity(paper.year, paper.level, q.n)) : [];
     });
-    const expected = new Set([...old, ...originalParents, ...authored.cards.map(card => identity(card.year, card.level, card.taskKey))]);
-    expect(new Set(atlas.map(q => identity(q.year, q.level, q.n)))).toEqual(expected);
+    const expected = new Set([...old, ...originalParents,
+      ...authored.cards.map(card => identity(card.year, card.level, card.taskKey, card.paperFileid))]);
+    expect(new Set(atlas.map(q => identity(q.year, q.level, q.n, q.fileid)))).toEqual(expected);
     expect(atlas).toHaveLength(expected.size);
     for (const topic of new Set(authored.cards.flatMap(card => card.examTopicIds))) {
-      const visible = new Set(questionsForTopics('accounting', [topic]).map(q => identity(q.year, q.level, q.n)));
+      const visible = new Set(questionsForTopics('accounting', [topic]).map(q => identity(q.year, q.level, q.n, q.fileid)));
       for (const card of authored.cards.filter(card => card.examTopicIds.includes(topic))) {
-        expect(visible.has(identity(card.year, card.level, card.taskKey)), `${card.id} in ${topic}`).toBe(true);
+        expect(visible.has(identity(card.year, card.level, card.taskKey, card.paperFileid)), `${card.id} in ${topic}`).toBe(true);
       }
     }
   });
@@ -119,7 +134,8 @@ describe('reviewed 2025 Higher Accounting tasks (not a full-corpus completion cl
   it('makes every task reachable in Atlas under exactly its reviewed topic', () => {
     const atlas = questionsForTopics('accounting', null);
     for (const task of authored.cards) {
-      const sibling = atlas.find(q => q.year === task.year && q.level === task.level && q.n === task.taskKey);
+      const sibling = atlas.find(q => q.year === task.year && q.level === task.level && q.n === task.taskKey
+        && q.fileid === task.paperFileid);
       expect(sibling, task.id).toBeDefined();
       expect(examTopicIdsForQuestion('accounting', task.level as 'higher' | 'ordinary', task.year, 'main',
         task.taskKey, 'single', 'ev', task.paperFileid)).toEqual(task.examTopicIds);
@@ -239,7 +255,8 @@ describe('Accounting paper-specific allocations', () => {
     [2025, 'higher', 41], [2025, 'ordinary', 40],
     [2026, 'higher', 43], [2026, 'ordinary', 39],
   ] as const)('retains every reviewed task in %s %s', (year, level, count) => {
-    const cards = [...CARDS, ...ORDINARY].filter(card => card.year === year && card.level === level);
+    const cards = [...CARDS, ...ORDINARY].filter(card => card.year === year && card.level === level
+      && !isDeferredEdition(card.paperFileid));
     expect(cards).toHaveLength(count);
     expect(cards.every(tariffReconciles)).toBe(true);
     // A printed choice is one card, so every paper sums to its published total.
@@ -250,6 +267,40 @@ describe('Accounting paper-specific allocations', () => {
       return totals;
     }, {});
     expect(byQuestion).toEqual({ 1: year < 2021 ? 120 : 240, 2: 60, 3: 60, 4: 60, 5: 100, 6: 100, 7: 100, 8: 80, 9: 80 });
+  });
+
+  it.each([[2022, 43], [2023, 34]] as const)('cards every separately priced task of the %i deferred sitting on its own edition', (year, count) => {
+    const cards = [...CARDS, ...ORDINARY].filter(card => isDeferredEdition(card.paperFileid) && card.year === year);
+    expect(cards.map(card => [card.year, card.level, card.paperFileid]).filter((v, i, a) => a.findIndex(w => w.join() === v.join()) === i))
+      .toEqual([[year, 'higher', 'LC032ALP000EV-deferred']]);
+    expect(cards).toHaveLength(count);
+    expect(cards.every(tariffReconciles)).toBe(true);
+    expect(cards.every(card => card.questionRef.endsWith(' — Deferred sitting')
+      && card.schemeCitation.includes(', deferred examination,'))).toBe(true);
+    expect(cards.reduce((sum, card) => sum + card.totalMarks, 0)).toBe(880);
+    const byQuestion = cards.reduce<Record<string, number>>((totals, card) => {
+      const n = card.questionRef.match(/Q(\d+)/)![1];
+      totals[n] = (totals[n] ?? 0) + card.totalMarks;
+      return totals;
+    }, {});
+    expect(byQuestion).toEqual({ 1: 240, 2: 60, 3: 60, 4: 60, 5: 100, 6: 100, 7: 100, 8: 80, 9: 80 });
+  });
+
+  it('says so on each 2023 deferred task its scheme sets out no solution for (coordinator ruling, 20 Nov)', () => {
+    // The 2023 deferred scheme prints no solution for Q1(B), Q2, Q3, Q4 or Q7: eleven tasks, 400 of the paper's 880
+    // marks. Each card shows UNPRINTED_ANSWER and quotes the SEC's page-2 note; it has no row to claim.
+    const omitted = CARDS.filter(card => card.rubric.system === 'accounting' && card.rubric.unprintedAnswer);
+    expect(omitted.map(card => card.id).sort()).toEqual(['acc-2023-hl-deferred-q1B(a)', 'acc-2023-hl-deferred-q1B(b)',
+      'acc-2023-hl-deferred-q2(a)', 'acc-2023-hl-deferred-q2(b)', 'acc-2023-hl-deferred-q2(c)', 'acc-2023-hl-deferred-q3',
+      'acc-2023-hl-deferred-q4(a)', 'acc-2023-hl-deferred-q4(b)', 'acc-2023-hl-deferred-q4(c)', 'acc-2023-hl-deferred-q7(a)',
+      'acc-2023-hl-deferred-q7(b)'].sort());
+    expect(omitted.reduce((sum, card) => sum + card.totalMarks, 0)).toBe(400);
+    for (const card of omitted) {
+      if (card.rubric.system !== 'accounting') throw new Error(card.id);
+      expect(card.rubric.rows).toBeUndefined();
+      expect(card.rubric.unprintedAnswer!.citation).toContain('will only have been finalised for the questions attempted by the candidates');
+      expect(card.rubric.solution.pages).toEqual([2]);
+    }
   });
 
   it('retains the repeated 2010 acid-test requirement within its only published allocation', () => {
@@ -277,7 +328,7 @@ describe('Accounting paper-specific allocations', () => {
   it('keeps the 2022 Higher choose-two concept task as one ten-mark card', () => {
     // A printed choice is one card (AGENTS.md, 2026-10-12): the printed question,
     // the scheme's single 10-mark allocation, and all four concepts it explains.
-    const family = authored.cards.filter(card => card.year === 2022 && card.level === 'higher' && card.taskKey.startsWith('6(c)'));
+    const family = JUNE.filter(card => card.year === 2022 && card.level === 'higher' && card.taskKey.startsWith('6(c)'));
     expect(family.map(card => card.id)).toEqual(['acc-2022-hl-q6(c)']);
     const [card] = family;
     expect(card.totalMarks).toBe(10);
@@ -293,7 +344,7 @@ describe('Accounting paper-specific allocations', () => {
   it('never publishes a printed choice as route siblings', () => {
     // A printed task key appears once per paper edition, and no task key or
     // focus carries a route suffix in place of the printed question.
-    const keys = authored.cards.map(card => `${card.year}|${card.level}|${card.taskKey}`);
+    const keys = authored.cards.map(card => `${card.year}|${card.level}|${card.paperFileid}|${card.taskKey}`);
     expect(keys.filter((key, index) => keys.indexOf(key) !== index)).toEqual([]);
     const reviewed = ['higher', 'ordinary'].flatMap(level => Array.from({ length: 17 }, (_, i) => 2010 + i)
       .map(year => json(`scripts/markbank/accounting/reviewed/${year}-${level}.json`)));
@@ -303,14 +354,14 @@ describe('Accounting paper-specific allocations', () => {
     expect(reviewed.some(review => review.tasks.some((task: { selectionPool?: unknown }) => task.selectionPool))).toBe(false);
     expect(choices.map(({ review, key }) => `${review.year} ${review.level} ${key}`)).toEqual(['2022 higher 6(c)']);
     for (const { review, key } of choices) {
-      const cards = authored.cards.filter(card => card.year === review.year && card.level === review.level &&
+      const cards = JUNE.filter(card => card.year === review.year && card.level === review.level &&
         (card.taskKey === key || card.taskKey.startsWith(`${key}-`)));
       expect(cards.map(card => card.taskKey)).toEqual([key]);
     }
   });
 
   it('keeps shared theory tariffs and continuous journals intact', () => {
-    const allocations = (year: number, level: string, prefix: string) => authored.cards
+    const allocations = (year: number, level: string, prefix: string) => JUNE
       .filter(card => card.year === year && card.level === level && card.taskKey.startsWith(prefix))
       .map(card => card.totalMarks);
     expect(allocations(2012, 'higher', '2(')).toEqual([40, 14, 6]);
@@ -448,7 +499,8 @@ describe('Accounting paper-specific allocations', () => {
   it('registers the ordinary deck and preserves old answer-map fields in every reviewed paper', async () => {
     expect(await loadCards('accounting', 'ordinary')).toEqual(ORDINARY);
     expect(deckSize('accounting', 'ordinary')).toBe(ORDINARY.length);
-    const papers = new Set(authored.cards.map(card => `${card.year}/${card.paperFileid}.json`));
+    // A deferred edition has no audited answer map before its review (build.py): June's only.
+    const papers = new Set(JUNE.map(card => `${card.year}/${card.paperFileid}.json`));
     for (const path of papers) {
       const before = json(`scripts/paper-trail/answers/${path}`) as PaperAnswerMap;
       const after = json(`public/paper-answers/${path}`) as PaperAnswerMap;

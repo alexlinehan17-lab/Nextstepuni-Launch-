@@ -1366,7 +1366,26 @@ const ART_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2011: { higher: 59, ordinary: 57 },
   2010: { higher: 58, ordinary: 57 },
 };
-const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED;
+/* The SEC's deferred sittings (art_cards.py DEFERRED_SITTINGS), all new cards (art-<year>-<lvl>-deferred-…), pinned
+ * per level beside the June additions and never folded into the frozen hashes. */
+const ART_DEFERRED_ADDED = { higher: 62 + 26, ordinary: 26 };
+const isArtDeferred = (id: string) => /^art-\d{4}-(?:hl|ol)-deferred-/.test(id);
+/* Accounting's deferred sittings (accounting/build.py CARDED_DEFERRED_YEARS) are new cards, acc-<year>-hl-deferred-q…,
+ * pinned per level here and never folded into the frozen 721 / 644. */
+const ACCOUNTING_DEFERRED_ADDED = { higher: 43 + 34, ordinary: 0 };
+const isAccountingDeferred = (id: string) => /^acc-\d{4}-(?:hl|ol)-deferred-q/.test(id);
+const accountingDeferredTotal = ACCOUNTING_DEFERRED_ADDED.higher + ACCOUNTING_DEFERRED_ADDED.ordinary;
+/* Applied Mathematics' deferred sittings (reviewed/applied-maths/<year>-deferred.json), am-<year>-hl-deferred-…: new
+ * cards on top of the frozen 716 / 770, pinned here. */
+const APPLIED_MATHS_DEFERRED_ADDED = { higher: 42 + 53, ordinary: 0 };
+const isAppliedMathsDeferred = (id: string) => /^am-\d{4}-(?:hl|ol)-deferred-/.test(id);
+const appliedMathsDeferredTotal = APPLIED_MATHS_DEFERRED_ADDED.higher + APPLIED_MATHS_DEFERRED_ADDED.ordinary;
+/* Physical Education's deferred sittings (pe_review_<year>_hl_deferred.py), pe-<year>-hl-deferred-…: new cards beside the
+ * pinned June additions, 2022 Higher 60 and 2023 Higher 54. */
+const PE_DEFERRED_ADDED = { higher: 60 + 54, ordinary: 0 };
+const isPeDeferred = (id: string) => /^pe-\d{4}-(?:hl|ol)-deferred-/.test(id);
+const peDeferredTotal = PE_DEFERRED_ADDED.higher + PE_DEFERRED_ADDED.ordinary;
+const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED || isArtDeferred(id);
 /* Spanish keeps its 347 2021-2025 IDs frozen (204 Higher + 143 Ordinary, the
  * identity hashes above). The languages lane (2026-11-05) cards every further
  * sitting on top, one sitting per commit, pinned here per year and level and
@@ -1583,7 +1602,7 @@ const isItalianAdded = (id: string) => /^it-(?:201\d|2020|2026)-/.test(id)
  * beside the frozen set (dcgAdditions below). */
 const isDcgAdded = (id: string) => /^dcg-201[0-8]-/.test(id) || /^dcg-\d{4}-(?:hl|ol)-deferred-/.test(id);
 const artAdded = (level: 'higher' | 'ordinary') => Object.values(ART_ADDED)
-  .reduce((sum, counts) => sum + counts[level], 0);
+  .reduce((sum, counts) => sum + counts[level], ART_DEFERRED_ADDED[level]);
 
 /* Additive, alias-aware decks: the frozen set is pinned with main's own count and
  * hash, and reviewed additions are pinned separately, so a deliberate change to
@@ -2829,6 +2848,8 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   }
   if (name === 'technology:ordinary') return ids.filter(id => !isTechnologyAdded(id));
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
+  if (name.startsWith('accounting:')) return ids.filter(id => !isAccountingDeferred(id));
+  if (name.startsWith('applied-maths:')) return ids.filter(id => !isAppliedMathsDeferred(id));
   if (name.startsWith('dcg:')) return ids.filter(id => !isDcgAdded(id));
   if (name.startsWith('italian:')) return ids.filter(id => !isItalianAdded(id));
   if (name.startsWith('home-economics:')) return [...ids.filter(id => !homeEconomicsAdditionIds.has(id)), ...homeEconomicsAliasIds.filter(id => id.includes(name.endsWith(':higher') ? '-hl-' : '-ol-'))];
@@ -3099,10 +3120,17 @@ describe('Mark Bank card preservation', () => {
     // 2026-10-12: 652 -> 551 additions (443/430 -> 382/390 cards). Each printed
     // choice is one card; the 101 per-option and per-pair route cards were
     // branch-only and are withdrawn rather than aliased.
-    const additions = cards.map(card => card.id).filter(id => !peFrozen.has(id));
+    const additions = cards.map(card => card.id).filter(id => !peFrozen.has(id) && !isPeDeferred(id));
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => peAliasIds.includes(id))).toEqual([]);
     expect(idHash(additions)).toBe(hash);
+  });
+
+  it('adds the Physical Education deferred sittings beside the pinned June additions', () => {
+    const deferred = [...PE_HIGHER, ...PE_ORDINARY].filter(card => isPeDeferred(card.id));
+    expect([deferred.filter(card => card.level === 'higher').length, deferred.filter(card => card.level === 'ordinary').length])
+      .toEqual([PE_DEFERRED_ADDED.higher, PE_DEFERRED_ADDED.ordinary]);
+    expect(deferred.every(card => card.questionRef.endsWith(' — Deferred sitting') && card.paperFileid === 'LC225ALP000EV-deferred')).toBe(true);
   });
 
   it('collapses each Art printed choice to one card and resolves every withdrawn ID', () => {
@@ -3123,11 +3151,28 @@ describe('Mark Bank card preservation', () => {
     expect(ART_ORDINARY).toHaveLength(240 - aliased('-ol-') + artAdded('ordinary'));
   });
 
+  it('adds the Applied Mathematics deferred sittings on top of the frozen decks', () => {
+    const deferred = [...APPLIED_MATHS_HIGHER, ...APPLIED_MATHS_ORDINARY].filter(card => isAppliedMathsDeferred(card.id));
+    expect([deferred.filter(card => card.level === 'higher').length, deferred.filter(card => card.level === 'ordinary').length])
+      .toEqual([APPLIED_MATHS_DEFERRED_ADDED.higher, APPLIED_MATHS_DEFERRED_ADDED.ordinary]);
+    expect(deferred.every(card => card.questionRef.endsWith(' — Deferred sitting') && card.paperFileid.endsWith('-deferred'))).toBe(true);
+  });
+
+  it('adds the Accounting deferred sittings on top of the frozen decks', () => {
+    const deferred = [...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY].filter(card => isAccountingDeferred(card.id));
+    expect([deferred.filter(card => card.level === 'higher').length, deferred.filter(card => card.level === 'ordinary').length])
+      .toEqual([ACCOUNTING_DEFERRED_ADDED.higher, ACCOUNTING_DEFERRED_ADDED.ordinary]);
+    expect(deferred.every(card => card.questionRef.endsWith(' — Deferred sitting') && card.paperFileid.endsWith('-deferred'))).toBe(true);
+  });
+
   it('adds each further Art year on top of the frozen 2021–2025 identity', () => {
     // No added id was ever aliased or frozen; each is a new card for a printed task.
     const cards = [...ART_HIGHER, ...ART_ORDINARY];
+    expect([cards.filter(card => isArtDeferred(card.id) && card.level === 'higher').length,
+      cards.filter(card => isArtDeferred(card.id) && card.level === 'ordinary').length])
+      .toEqual([ART_DEFERRED_ADDED.higher, ART_DEFERRED_ADDED.ordinary]);
     for (const [year, counts] of Object.entries(ART_ADDED)) {
-      const added = cards.filter(card => card.year === Number(year));
+      const added = cards.filter(card => card.year === Number(year) && !isArtDeferred(card.id));
       expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
       expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
       expect(added.every(card => card.id.startsWith(`art-${year}-`))).toBe(true);
@@ -3696,7 +3741,8 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(24_087 + frenchAdditionIds.size + artNet + russianAdditionIds.size);
+    ), 0)).toBe(24_087 + frenchAdditionIds.size + artNet + russianAdditionIds.size + accountingDeferredTotal
+      + appliedMathsDeferredTotal + peDeferredTotal);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
       .toBe(24_087 + frenchAdditionIds.size + businessAdditionIds.size + technologyAddedCount + dcgAddedCount
         + russianAdditionIds.size
@@ -3719,6 +3765,10 @@ describe('Mark Bank card preservation', () => {
         + italianAddedCount
         // Polish and Portuguese additions (languages-q3 lane).
         + polishAddedTotal + portugueseAddedTotal
+        // Accounting's and Applied Mathematics' carded deferred sittings (deferred lane), on top of their frozen decks.
+        + accountingDeferredTotal + appliedMathsDeferredTotal
+        // Physical Education's carded deferred sittings (deferred lane), beside its pinned June additions.
+        + peDeferredTotal
         // The small languages (Claude queue 5), Maltese's aside: its deck is not in `decks`.
         + [...smallLanguageAddedIds].filter(id => !id.startsWith('mlt-')).length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
@@ -3805,7 +3855,9 @@ describe('Mark Bank card preservation', () => {
     // Frozen pre-audit set: 438 Higher + 431 Ordinary, counted and hashed above.
     // Every source-reviewed task is an explicit addition on top; each withdrawn
     // per-item card resolves through its progress alias.
-    expect(agriAdditionIds.size).toBe(1604);
+    // 1,604 June additions and the 2023 Higher deferred sitting's 85 new cards (agsci-2023-hl-deferred-…).
+    expect([...agriAdditionIds].filter(id => !id.startsWith('agsci-2023-hl-deferred-')).length).toBe(1604);
+    expect([...agriAdditionIds].filter(id => id.startsWith('agsci-2023-hl-deferred-')).length).toBe(85);
     const live = [...AGSCI_HIGHER, ...AGSCI_ORDINARY];
     const liveIds = new Set(live.map(card => card.id));
     for (const id of agriAdditionIds) expect(liveIds.has(id), `missing reviewed addition ${id}`).toBe(true);
@@ -4292,13 +4344,20 @@ describe('Mark Bank card preservation', () => {
     const live = new Map([...CHEM_HIGHER, ...CHEM_ORDINARY].map(card => [card.id, card]));
     const count = (paper: string, status: string) => Object.values(chemistryLedger.papers[paper])
       .filter(record => record.status === status).length;
-    // Every audited sitting's additions and withdrawals, pinned.
+    // Every audited sitting's additions and withdrawals, pinned. A deferred sitting's record is its own
+    // ("2022 HL deferred"): all its cards are new (chem-<year>-<lvl>-deferred-...), none withdrawn.
     expect(Object.keys(chemistryLedger.papers).sort())
       .toEqual(['2010 HL', '2010 OL', '2011 HL', '2011 OL', '2012 HL', '2012 OL', '2013 HL',
         '2013 OL', '2014 HL', '2014 OL', '2015 HL', '2015 OL', '2016 HL', '2016 OL', '2017 HL',
         '2017 OL', '2018 HL', '2018 OL', '2019 HL', '2019 OL', '2020 HL', '2020 OL', '2021 HL',
-        '2021 OL', '2022 HL', '2022 OL', '2023 HL', '2023 OL', '2024 HL', '2024 OL', '2025 HL',
+        '2021 OL', '2022 HL', '2022 HL deferred', '2022 OL', '2022 OL deferred', '2023 HL', '2023 HL deferred', '2023 OL', '2024 HL', '2024 OL', '2025 HL',
         '2025 OL', '2026 HL', '2026 OL']);
+    expect([count('2022 HL deferred', 'added'), Object.keys(chemistryLedger.papers['2022 HL deferred']).length])
+      .toEqual([89, 89]);
+    expect([count('2022 OL deferred', 'added'), Object.keys(chemistryLedger.papers['2022 OL deferred']).length])
+      .toEqual([65, 65]);
+    expect([count('2023 HL deferred', 'added'), Object.keys(chemistryLedger.papers['2023 HL deferred']).length])
+      .toEqual([132, 132]);
     expect([count('2026 HL', 'added'), count('2026 OL', 'added'), count('2025 HL', 'added'),
       count('2025 OL', 'added'), count('2024 HL', 'added'), count('2024 OL', 'added'),
       count('2023 HL', 'added'), count('2023 OL', 'added'), count('2022 HL', 'added'),
