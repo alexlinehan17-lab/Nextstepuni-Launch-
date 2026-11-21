@@ -152,9 +152,13 @@ def source_material(P, token, language, level, year):
     }
 
 
+# A list bullet marks a printed line; it is not part of the answer quoted.
+LIST_BULLET = re.compile(r'^[•●▪■]\s*')
+
+
 def ladder_note(rungs, language):
     """The lesser answers, verbatim, with the marks the scheme prints."""
-    kept = [(t, m) for t, m in rungs if t and m is not None]
+    kept = [(LIST_BULLET.sub('', t), m) for t, m in rungs if t and m is not None]
     if not kept:
         return language_note(language)
     shown = kept[:MAX_RUNGS]
@@ -366,7 +370,7 @@ def _own_lesser(part, rows, heads):
     for row, head in list(zip(rows, heads))[1:]:
         mine = [(t, m) for (t, m), g in zip(part.rungs, groups) if g == head and t and m is not None]
         if mine:
-            quoted = '; '.join(f'“{t}” {m} {"mark" if m == 1 else "marks"}' for t, m in mine)
+            quoted = '; '.join(f'“{LIST_BULLET.sub("", t)}” {m} {"mark" if m == 1 else "marks"}' for t, m in mine)
             row['contextNote'] = (f'The scheme also pays part marks for a shorter answer: {quoted}. '
                                   + row.get('contextNote', '')).strip()
     moved = set(heads[1:])
