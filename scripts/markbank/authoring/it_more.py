@@ -168,6 +168,15 @@ READING_OPTIONS = {
         'claimMax': 2, 'perOption': 2,
         'options': ['Stimolando', 'catturando', 'monitorando', 'osservando', 'apportando'],
         'note': 'Two of 4 marks: Stimolando/catturando/monitorando/osservando/apportando (2 marks each)'},
+    # 2016 Higher B2B 1(b) "Trovate quattro parole che si riferiscono al mondo
+    # della natura": "4 marks (1+1+1+1)" over six words on one line, and a
+    # seventh on the next that earns nothing.
+    (2016, 'hl', 'B2B', 1, 'b'): {
+        'claimMax': 4, 'perOption': 1,
+        'options': ['Autunno', 'sole', 'raggio', 'foglie', 'alberi', 'rape'],
+        'check': ['Autunno- sole- raggio- foglie- alberi- rape', 'All’aperto 0m'],
+        'contextNote': ('The scheme prints “4 marks (1+1+1+1)” over “Autunno- sole- raggio- foglie- alberi- '
+                        'rape”, any four of the six, and gives no marks for “All’aperto”.')},
 }
 
 
@@ -501,6 +510,17 @@ READING_POINTS = {
         # build's comparable text drops as a marks-only line: the row is the
         # traceable cut and the printed ending is quoted here.
         'note': 'The scheme prints the last piece as “e utilizzarlo entro la fine del” over “2017 (2)”.'},
+    # 2016 Higher: "6 marks (3+3)" over "Infuriato – nervoso" and "6 marks
+    # (2+2+2)" over "Liti, pianti, debiti" are two and three answers on one
+    # line; B1 3(a) prints its second shorter answer with the mark mid-line,
+    # "Gli insegnanti erano infastiditi 1m (più che dalle sue introversioni, …)".
+    (2016, 'hl', 'B2A', 4, 'b'): {'points': [('Infuriato', 3), ('nervoso', 3)], 'lesser': []},
+    (2016, 'hl', 'B2B', 2, 'a'): {'points': [('Liti', 2), ('pianti', 2), ('debiti', 2)], 'lesser': []},
+    (2016, 'hl', 'B1', 3, 'a'): {
+        'points': [('Perché gli insegnanti dicevano che era un bambino difficile', 5)],
+        'lesser': [('Perché saltava la scuola', 2), ('Gli insegnanti erano infastiditi', 1)],
+        'note': ('The scheme prints the second shorter answer as “Gli insegnanti erano infastiditi 1m (più '
+                 'che dalle sue introversioni, dalla sua incapacità di comprenderle)”.')},
     (2017, 'hl', 'A', 4, 'b'): {
         'points': [('Potrebbero usare il bonus per recarsi a teatro', 2), ('e assistere ai balletti', 1),
                    ('Perché i biglietti sono cari', 2)],
@@ -523,7 +543,9 @@ def _reading_points(year, level, reading):
             assert it_writing.flat(point) in flat_no_split, f'{cid}: {point!r} is not in the scheme'
         assert sum(m for _t, m in o['points']) == card['totalMarks'], cid
         language = it_all.answer_language(level, card['questionText'])
-        rows = [{'id': f'r-1-{k}', 'kind': 'point', 'verbatim': t, 'marks': m}
+        # One answer is a row of its own (its shorter answers become printed
+        # steps); several are the pieces of one answer.
+        rows = [{'id': f'r-1-{k}' if len(o['points']) > 1 else 'r-1', 'kind': 'point', 'verbatim': t, 'marks': m}
                 for k, (t, m) in enumerate(o['points'], start=1)]
         rows[0]['contextNote'] = it_all.ladder_note(o['lesser'], language) + (
             f" {o['note']}" if o.get('note') else '')

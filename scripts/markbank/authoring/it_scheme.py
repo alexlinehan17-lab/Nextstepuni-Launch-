@@ -202,7 +202,7 @@ SECTION_LINE = re.compile(r'^SECTION\s+[A-C]\b[^()]*\(?\s*\d{1,3}\s*marks?\s*\)?
 # points from the novel. For example:", a starred footnote). Never a group's
 # name and never an answer: it is quoted in the row's note.
 INSTRUCTION = re.compile(r'\b(?:points?|elements?)\s+(?:is|are)\s+required\b'
-                         r'|^(?:the\s+)?candidates?\s+must\s+refer\b'
+                         r'|\b(?:the\s+)?candidates?\s+must\s+refer\b'
                          r'|^N\.?\s?B\.?\s*[=:]|^any\s+suitable\s+points\b|\bfor\s+example:?\s*$'
                          # a starred footnote, not a starred answer ("*To
                          # educate family members" is an answer; "*Educate can
@@ -285,7 +285,16 @@ WRAPS = {
     # 2017 Higher B1 the same: "4 marks" over "1. (a)".
     (2017, 'hl'): [('4 marks\n1. (a)\nSua madre era scomparsa', '1. (a) 4 marks\nSua madre era scomparsa')],
     # 2016 Higher B1 the same: "6marks (3+3)" over "1. (a)".
-    (2016, 'hl'): [('6marks (3+3)\n1. (a)\n', '1. (a) 6 marks (3+3)\n')],
+    (2016, 'hl'): [('6marks (3+3)\n1. (a)\n', '1. (a) 6 marks (3+3)\n'),
+                   # B2B 1(b): the answer list and a 0-mark answer share a line,
+                   # so the whole line read as one answer worth 0
+                   ('alberi- rape All’aperto 0m\n', 'alberi- rape\nAll’aperto 0m\n'),
+                   # B2B 1(a): a lesser answer printed with its mark welded on
+                   # ("costoso1m"), so it read as a full answer worth three
+                   ('Il treno per tornare a casa e costoso1m\n', 'Il treno per tornare a casa e costoso 1m\n'),
+                   # B1 Q5: the second half of one "Difference" point ("she …
+                   # / he …") printed on a line without its bullet
+                   ('her teachers were praising her.\nHe skipped school/', 'her teachers were praising her. He skipped school/')],
     # 2018 Ordinary B Question 4, ask 3 prices two prizes on two lines, "2nd
     # prize … 3 marks" and "3rd prize A book (1m) written your favourite" /
     # "Writer/ of your choice (1m) 2 marks"; the question's 10 marks need both.
@@ -447,7 +456,12 @@ class ItScheme:
                 continue
             if UNIT_B_HL.match(s):
                 unit = 'B'
-                marks.append((i, 'B', 'B1', self._marks_on(i)))
+                # 2015-2017 print the total on "SECTION B (60 marks)" ABOVE the
+                # passage's head; the line below it is the first ask's tariff
+                # (2016: "6marks (3+3)"), never the section's.
+                above = re.match(r'^SECTION\s+B\s*\(\s*(\d{1,3})\s*marks?\s*\)\s*$',
+                                 self.lines[i - 1].strip(), re.I) if i else None
+                marks.append((i, 'B', 'B1', int(above.group(1)) if above else self._marks_on(i)))
                 continue
             if UNIT_B2_HL.match(s):
                 unit = 'B'
@@ -1486,7 +1500,7 @@ def confirm_headings(part, question):
     for k, (_t, _m) in enumerate(part.rungs):
         where = flat_(after[k])
         part.rung_groups.append(next((g[0] for g in named for a in g[1]
-                                      if where and a.startswith(where[:30])), None))
+                                      if where and where[:30] in a), None))
     headed = [g for g in named if g[0]]
     # One heading the scheme marks, over the second run of answers only: 2025
     # Higher B2A Q5 prints its passage points under "The candidate must refer

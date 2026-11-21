@@ -2912,7 +2912,7 @@ const technologyAdditions = {
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
 } as const;
 const italianAdditions = {
-  higher: [ITALIAN_HIGHER, 504, 'ee6281632adf4f9d97a15549ba06d413df80cf84b4f06ef778666013053ce7e7'],
+  higher: [ITALIAN_HIGHER, 572, '5638de748758ae03bf4f88db280142d0501d8d416307d31808daf22a89ecba30'],
   ordinary: [ITALIAN_ORDINARY, 465, '8ed9802011754a0fe21aa3c7802709d9ac4aa0aaaafee620f309bbdf52de78c6'],
 } as const;
 const dcgAdditions = {
@@ -3050,7 +3050,8 @@ describe('Mark Bank card preservation', () => {
     // Higher added whole, 68 cards for its 68 asks; 2018 Ordinary added whole,
     // 63 cards for its 69 asks; 2017 Higher added whole, 68 cards for its 68
     // asks; 2017 Ordinary added whole, 65 cards for its 71 asks; 2016
-    // Ordinary added whole, 68 cards for its 68 asks.
+    // Ordinary added whole, 68 cards for its 68 asks; 2016 Higher added whole,
+    // 68 cards for its 68 asks.
     const additions = cards.map(card => card.id).filter(isItalianAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);

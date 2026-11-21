@@ -307,7 +307,8 @@ def _heading_counts(groups, question):
             spots.append(None)
             continue
         words = [w for w in reversed(re.findall(r"[^\W\d_]+", head.lower()))
-                 if len(w) > 2 and w not in COUNT_PRINTED and w not in SKIP_WORDS]
+                 if len(w) > 2 and w not in COUNT_PRINTED and w not in SKIP_WORDS] or [
+            w for w in re.findall(r"[^\W\d_]+", head.lower()) if len(w) > 2]   # "What" alone
         at = None
         for w in words:
             stem = w[:6] if len(w) >= 6 else w

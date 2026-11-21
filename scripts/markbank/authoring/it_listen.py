@@ -623,7 +623,9 @@ def cards(year, level, refuse, row_for, concept_for):
             ref = f'{year} {lvl} Section LB{d} Q{n}'
             text = ' '.join(' '.join(asks[n]['text']).split())
             if ask is None or 'total' in (OVERRIDES.get((year, level, d, n)) or {}):
-                # An override's printed total wins over a misread ask.
+                # An override's printed total wins over a misread ask (2016
+                # Higher prints its tariffs as "4m (2 + 2)", which the reader
+                # cannot price).
                 o = OVERRIDES[(year, level, d, n)]
                 ask = type('Lost', (), {'total': o['total'], 'fault': None, 'parts': [],
                                         'item': n})()
@@ -652,6 +654,8 @@ def cards(year, level, refuse, row_for, concept_for):
                                       for a in part0.answers[:1]))
             if override:
                 rows = _override_rows(S, override, ref)
+                if override.get('tariff'):
+                    tariff = {'kind': override['tariff']}
             elif components and all(len(a.split()) <= 2 for a in part0.answers) \
                     and (year, level, d, n) in ORDER_FREE:
                 # Separate one-word answers, not pieces of one: "German 5 marks"
@@ -816,6 +820,95 @@ OVERRIDES = {
         'note': ['4 marks (2+2)', 'She will write a book 1m'],
         'contextNote': ('The scheme prints this ask’s “4 marks (2+2)” on the line above its number. '
                         'The scheme also pays part marks for a shorter answer: “She will write a book” 1 mark.')},
+    # 2016 Higher prints every listening tariff as "4m (2 + 2)", "2m + 4m",
+    # "Any three of: 2m+2m+2m", often on the line after the ask's number, which
+    # the reader cannot price; each ask is read here from its printed lines,
+    # its total the one printed (the dialogue totals 16, 17 and 31 check).
+    (2016, 'hl', 1, 1): {
+        'total': 4, 'groups': [2, 2],
+        'points': [('Has to study to repeat', 1), ('the Chemistry exam', 1), ('Has to find a job', 1),
+                   ('(to pay ) for her grinds/private lessons', 1)],
+        'note': ['4m (2 + 2)', '(at the end of August)'],
+        'contextNote': 'The scheme prints “4m (2 + 2)”: two answers, each in two pieces; it adds “(at the end of August)” to the first.'},
+    (2016, 'hl', 1, 2): {
+        'total': 4, 'claimMax': 2, 'perOption': 2,
+        'options': ['Wanted to stay/ be nearer her family/she wants to spend time with her family',
+                    'Wants to find a (permanent) job (1m) in her city/Bologna (1m)',
+                    'Wants to start planning for her wedding'],
+        'note': ['Any two of 4m (2 + 2)', 'She is getting married 1mark'],
+        'contextNote': ('The scheme prints “Any two of 4m (2 + 2)”. The scheme also pays part marks for a '
+                        'shorter answer: “She is getting married” 1 mark.')},
+    (2016, 'hl', 1, 3): {
+        'total': 4, 'tariff': 'questionTotal',
+        'rows': [{'kind': 'criterion', 'verbatim': v, 'marks': None} for v in (
+            'He is a chemistry teacher (2m)', 'He is retired (1m)', 'He has a lot of free time (1m)',
+            'He is a (very) experienced (1m)', 'He will not charge her (1m)')],
+        'note': ['3. 4m (2 + 2)'],
+        'contextNote': ('The scheme prints “4m (2 + 2)” over these five answers, each priced as printed: '
+                        'judge your answer against the 4 marks.')},
+    (2016, 'hl', 1, 4): {
+        'total': 4, 'claimMax': 2, 'perOption': 2,
+        'options': ['Help clean the car port/garage',
+                    'Help collecting fruit and/veg (1) from his orchard/ garden (1)',
+                    'Look after their cat (1) when they are on holidays (1)'],
+        'note': ['Any two of 4m (2 + 2)'], 'contextNote': 'The scheme prints “Any two of 4m (2 + 2)”.'},
+    (2016, 'hl', 2, 1): {
+        'total': 4, 'groups': [4],
+        'points': [('To be among the first', 1), ('50 customers', 1), ('to queue', 1), ('for the tablet offer', 1)],
+        'note': ['To be at the shop before the opening time 1mark'],
+        'contextNote': 'The scheme also pays part marks for a shorter answer: “To be at the shop before the opening time” 1 mark.'},
+    (2016, 'hl', 2, 2): {
+        'total': 3,
+        'points': [('His wallet had been stolen/ he was robbed', 2), ('He hadn’t forgot his wallet', 1)]},
+    (2016, 'hl', 2, 3): {
+        'total': 6, 'groups': [2, 4],
+        'points': [('What? — He offered him the tablet', 1), ('What? — with 80% discount', 1),
+                   ('Why? — He is a good', 1), ('Why? — customer', 1),
+                   ('Why? — and it would reflect poorly', 1), ('Why? — on the shop', 1)],
+        'note': ['2m + 4m'],
+        'contextNote': 'The scheme prices this ask “2m + 4m”: “What?” 2 marks and “Why?” 4 marks.'},
+    (2016, 'hl', 2, 4): {
+        'total': 4, 'groups': [2, 1, 1],
+        'points': [('Two people/guys (in the queue)', 1), ('were talking loud and /laughing', 1),
+                   ('He was sleepy and/ tired', 1), ('He was playing (videogames) games on his mobile', 1)]},
+    (2016, 'hl', 3, 1): {
+        'total': 3, 'groups': [1, 2], 'points': [('His father', 1), ('His older', 1), ('brother', 1)]},
+    (2016, 'hl', 3, 2): {
+        'total': 2, 'claimMax': 2, 'perOption': 1,
+        'options': ['He should never give up', 'He should accept his own limits', 'He should be optimistic'],
+        'note': ['Any two of 1m + 1m'], 'contextNote': 'The scheme prints “Any two of 1m + 1m”.'},
+    (2016, 'hl', 3, 3): {
+        'total': 3, 'claimMax': 1, 'perOption': 3,
+        'options': ['Encourage the team (2) in difficult times (1)',
+                    'Being diplomatic (2) in conflict resolution (1)'],
+        'note': ['in difficult times (1)/'],
+        'contextNote': 'The scheme prints these two answers joined by “/”: either one, priced 2 + 1, earns the 3 marks.'},
+    (2016, 'hl', 3, 4): {
+        'total': 4, 'groups': [2], 'points': [('She makes cakes', 2), ('for the team', 2)]},
+    (2016, 'hl', 3, 5): {
+        'total': 6, 'claimMax': 3, 'perOption': 2,
+        'options': ['Commitment', 'Team work', 'Calm', 'Charismatic', 'Not self-centred', 'Approachable',
+                    'Not to get angry easily/ not to lose temper easily',
+                    'Not to take disappointment too seriously', 'Have fun'],
+        'note': ['Any three of: 2m+2m+2m'], 'contextNote': 'The scheme prints “Any three of: 2m+2m+2m”.'},
+    (2016, 'hl', 3, 6): {
+        'total': 4, 'groups': [2, 1, 1],
+        'points': [('Being away', 1), ('from the family, girlfriend and friends', 1), ('Following a diet', 1),
+                   ('Pay attention to hours kept (going to bed early)/Go to bed early at the weekend '
+                    '(if there is a match)', 1)]},
+    (2016, 'hl', 3, 7): {
+        'total': 4, 'points': [('Broke his leg', 4)],
+        'note': ['Broke his leg 4m', 'He didn’t play the final 2m'],
+        'contextNote': 'The scheme also pays part marks for a shorter answer: “He didn’t play the final” 2 marks.'},
+    (2016, 'hl', 3, 8): {
+        'total': 5,
+        'rows': [{'kind': 'anyN', 'verbatim': 'The answers the scheme accepts in full', 'marks': None,
+                  'group': {'claimMax': 3, 'perOption': 2, 'perOptionSteps': [2, 2, 1], 'options': [
+                      'He wants to have other professional opportunities',
+                      'He wants to study veterinary science (He is passionate about animals)',
+                      'He does not want to limit himself to sport/the life of a sportsman is unstable and competitive']},
+                  'contextNote': ('The scheme prints “5m (2+2+1)” over three answers: 2, 2 and 1 marks for '
+                                  'the first, second and third answer given.')}]},
     (2026, 'ol', 2, 4): {
         'claimMax': 4, 'perOption': 2,
         'options': ['A (prizewinning) app', 'to practice/learn', 'their verbs',
@@ -832,13 +925,21 @@ def _override_rows(S, o, ref):
                 if piece and piece != 'The answers the scheme accepts in full':
                     assert _flat(piece) in text, f'{ref}: {piece!r} is not in the scheme'
         return [dict(r, id=f'r-{k}') for k, r in enumerate(o['rows'], start=1)]
-    for piece in o.get('options', []) + o.get('note', []) + [p for p, _m in o.get('points', [])]:
+    for piece in o.get('options', []) + o.get('note', []) + [p.split(' — ')[-1] for p, _m in o.get('points', [])]:
         assert _flat(piece) in text, f'{ref}: {piece!r} is not in the scheme'
     # A composed note quotes only pieces listed (and checked) in 'note'.
     note = o.get('contextNote') or ' '.join(o.get('note', []))
     if 'points' in o:
-        rows = [{'id': f'r-{k}', 'kind': 'point', 'verbatim': p, 'marks': m}
-                for k, (p, m) in enumerate(o['points'], start=1)]
+        # 'groups' counts the printed pieces of each answer, in order: an
+        # answer the scheme cuts into priced pieces ("To be among the first (1)
+        # 50 customers (1) …") keeps them together as r-<answer>-<piece>.
+        ids = [f'r-{k}' for k in range(1, len(o['points']) + 1)]
+        if o.get('groups'):
+            assert sum(o['groups']) == len(o['points']), ref
+            ids = [f'r-{a}' if g == 1 else f'r-{a}-{k}'
+                   for a, g in enumerate(o['groups'], start=1) for k in range(1, g + 1)]
+        rows = [{'id': i, 'kind': 'point', 'verbatim': p, 'marks': m}
+                for i, (p, m) in zip(ids, o['points'])]
         if note:
             rows[0]['contextNote'] = note
         return rows
