@@ -219,6 +219,16 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
       if (later) return { fileid: fid, cands: [later[1] === 'II' ? '7' : '8'], cls: 'inferred' };
       const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
     }
+    case 'maths': {
+      // An option question prints its letter after the number ("Q9A(a)", "Q6B"); the Atlas lists the options as their
+      // own rows (9A, 9B) beside the whole question's row (9), so the card opens its option and also counts toward the
+      // whole question (coordinator, 21 Nov). Without a letter, the number alone.
+      const q = qnum(ref); if (!q) return { fail: 'unreadable-ref', cls: 'inferred' };
+      const option = /\bQ\s*(\d+)([AB])\b/.exec(ref);
+      return option
+        ? { fileid: fid, cands: [`${option[1]}${option[2]}`, q], cls: 'inferred', extraCredit: [q] }
+        : { fileid: fid, cands: [q], cls: 'inferred' };
+    }
     default: {
       void atlas;
       const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
