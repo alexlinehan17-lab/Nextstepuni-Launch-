@@ -44,7 +44,7 @@ import {
   commitReview, ensureDeck, fetchDeck, mergeDecks, readChoice, readLocal,
   writeChoice, writeLocal, type DeckState,
 } from './store';
-import { MARK_BANK_LEVEL_LABELS, isConfidenceReviewCard, type SecCard } from '../../types/markBank';
+import { MARK_BANK_LEVEL_LABELS, isConfidenceReviewCard, isUnpricedSectionCard, type SecCard } from '../../types/markBank';
 
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { ResultStatGrid } from '../ui/ProductPatterns';
@@ -317,9 +317,9 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, stu
     const after = gradeCard(before, r.grade, t, retention);
     setDeck(commitReview(uid, deckId, r.cardId, after, t));
     const card = cards.find(candidate => candidate.id === r.cardId);
-    // A confidence review has no mark total, so it is not an assessed zero:
-    // it records no accuracy at all.
-    if (uid && uid !== DEMO_STUDENT_UID && card && !isConfidenceReviewCard(card)) {
+    // A confidence review has no mark total, and a section-total card (CARD-STANDARD 10i)
+    // has no marks of its own, so neither is an assessed zero: they record no accuracy at all.
+    if (uid && uid !== DEMO_STUDENT_UID && card && !isConfidenceReviewCard(card) && !isUnpricedSectionCard(card)) {
       const ratio = r.marksAvailable > 0 ? r.marksClaimed / r.marksAvailable : 0;
       const accuracyBand = ratio >= 1 ? 'full' : ratio >= 0.7 ? 'strong' : ratio > 0 ? 'partial' : 'none';
       trackProgrammeEvent('practice_attempt_completed', {
@@ -365,10 +365,11 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, stu
   /* -------------------------------------------------------------- close ---- */
 
   if (screen.name === 'close') {
-    // Confidence reviews were never scored, so they stay out of the totals.
+    // Confidence reviews and section-total cards (CARD-STANDARD 10i) were never scored,
+    // so they stay out of the totals: a section-total card must never read as "0 available".
     const scored = screen.results.filter(result => {
       const resultCard = cards.find(card => card.id === result.cardId);
-      return !resultCard || !isConfidenceReviewCard(resultCard);
+      return !resultCard || (!isConfidenceReviewCard(resultCard) && !isUnpricedSectionCard(resultCard));
     });
     const unscoredCount = screen.results.length - scored.length;
     const reviewOnly = scored.length === 0;
