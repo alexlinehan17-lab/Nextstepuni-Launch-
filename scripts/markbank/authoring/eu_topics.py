@@ -91,11 +91,13 @@ TOPICS = {'portuguese': {'classic_vocab': 'portuguese-2-0',
  'maltese': {'classic_vocab': 'maltese-0-0',
              'classic_reading': 'maltese-0-1',
              'classic_essay': 'maltese-1-0',
-             'classic_essay2': 'maltese-1-0'},
+             # "Essay on a set title (Part III)" (#415): the essay is filed under
+             # its own Part III heading, as the other eleven languages' are.
+             'classic_essay2': 'maltese-1-1'},
  'ukrainian': {'classic_vocab': 'ukrainian-0-0',
                'classic_reading': 'ukrainian-0-1',
                'classic_essay': 'ukrainian-1-0',
-               'classic_essay2': 'ukrainian-1-0'}}
+               'classic_essay2': 'ukrainian-1-1'}}
 
 
 def topic_for(subject, era, section, letter=None):

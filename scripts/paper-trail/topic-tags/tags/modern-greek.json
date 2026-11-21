@@ -3,6 +3,52 @@
   "subjectId": "modern-greek",
   "level": "higher",
   "lang": "ev",
+  "year": 2010,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "modern-greek-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "modern-greek-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
   "year": 2011,
   "fileid": "LC019ALP000EV.pdf",
   "paperKey": "single",
@@ -30,6 +76,18 @@
    {
     "n": "6",
     "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "modern-greek-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "modern-greek-1-1"
    }
   ]
  },
@@ -64,6 +122,340 @@
    {
     "n": "6",
     "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "modern-greek-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "modern-greek-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "modern-greek-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "modern-greek-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "modern-greek-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "modern-greek-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "modern-greek-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "modern-greek-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "modern-greek-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "modern-greek-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "modern-greek-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "modern-greek-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "modern-greek-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "modern-greek-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "modern-greek-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "modern-greek-1-1"
    }
   ]
  },
@@ -98,6 +490,56 @@
    {
     "n": "6",
     "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "II2",
+    "primary": "modern-greek-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "II2",
+    "primary": "modern-greek-1-1"
    }
   ]
  },
@@ -132,6 +574,64 @@
    {
     "n": "6",
     "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "modern-greek-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "modern-greek-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "modern-greek-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "modern-greek-1-1"
    }
   ]
  },
@@ -166,6 +666,64 @@
    {
     "n": "6",
     "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "modern-greek-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "modern-greek-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2026,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "modern-greek-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "modern-greek-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "modern-greek-1-1"
    }
   ]
  }

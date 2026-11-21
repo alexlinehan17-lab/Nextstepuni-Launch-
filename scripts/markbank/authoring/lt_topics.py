@@ -52,18 +52,19 @@ TOPICS = {
         'production': 'lithuanian-2-4', 'aural': 'lithuanian-0-0',
     },
     # Latvian and Czech never left the old examination, so their taxonomy has
-    # no "new format" topic at all — two subtopics of reading and one of
-    # written production, which is exactly what their papers print.
+    # no "new format" topic at all — two subtopics of reading, one of written
+    # production (the Part II commentary) and, since #415, "Essay on a set
+    # title (Part III)" for the essay, which is exactly what their papers print.
     'latvian': {
         'open': 'latvian-0-1', 'vocab': 'latvian-0-0',
         'new_reading': 'latvian-0-1', 'commentary': 'latvian-1-0',
-        'essay': 'latvian-1-0', 'production': 'latvian-1-0',
+        'essay': 'latvian-1-1', 'production': 'latvian-1-0',
         'aural': 'latvian-0-1',
     },
     'czech': {
         'open': 'czech-0-1', 'vocab': 'czech-0-0',
         'new_reading': 'czech-0-1', 'commentary': 'czech-1-0',
-        'essay': 'czech-1-0', 'production': 'czech-1-0',
+        'essay': 'czech-1-1', 'production': 'czech-1-0',
         'aural': 'czech-0-1',
     },
 }
@@ -97,8 +98,9 @@ def topic_for(subject, year, section, q=None):
     if section == 'III':
         return ids['essay']
     # II DALIS is the commentary in the three-part paper and the essay in the
-    # two-part 2021 one, which drops the commentary altogether.
-    return ids['essay'] if year == 2021 else ids['commentary']
+    # two-part 2021 one, which drops the commentary altogether. Latvian and Czech
+    # print two parts in 2022 as well (Lithuanian was rebuilt that year, above).
+    return ids['essay'] if year in (2021, 2022) else ids['commentary']
 
 
 LANGUAGE = {'lithuanian': 'Lithuanian', 'latvian': 'Latvian',

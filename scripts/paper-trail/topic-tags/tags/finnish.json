@@ -3,6 +3,190 @@
   "subjectId": "finnish",
   "level": "higher",
   "lang": "ev",
+  "year": 2010,
+  "fileid": "LC049ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "finnish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "finnish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "finnish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "finnish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "finnish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC049ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "finnish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "finnish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "finnish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "finnish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "finnish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC049ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "finnish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "finnish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "finnish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "finnish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "finnish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC049ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "finnish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "finnish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "finnish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "finnish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "finnish",
+  "level": "higher",
+  "lang": "ev",
   "year": 2014,
   "fileid": "LC049ALP000EV.pdf",
   "paperKey": "single",
@@ -30,6 +214,64 @@
    {
     "n": "6",
     "primary": "finnish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "finnish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "finnish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "finnish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "finnish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC049ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "finnish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "finnish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "finnish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "finnish-1-1"
    }
   ]
  },
@@ -64,6 +306,18 @@
    {
     "n": "6",
     "primary": "finnish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "finnish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "finnish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "finnish-1-1"
    }
   ]
  },
@@ -98,6 +352,18 @@
    {
     "n": "6",
     "primary": "finnish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "finnish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "finnish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "finnish-1-1"
    }
   ]
  },
@@ -132,6 +398,18 @@
    {
     "n": "6",
     "primary": "finnish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "finnish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "finnish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "finnish-1-1"
    }
   ]
  },
@@ -166,6 +444,106 @@
    {
     "n": "6",
     "primary": "finnish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "finnish-1-1"
+   },
+   {
+    "n": "II2",
+    "primary": "finnish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "finnish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC049ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "finnish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "finnish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "finnish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "finnish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "finnish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC049ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "finnish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "finnish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "finnish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "finnish-1-1"
    }
   ]
  },
@@ -200,6 +578,18 @@
    {
     "n": "6",
     "primary": "finnish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "finnish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "finnish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "finnish-1-1"
    }
   ]
  }

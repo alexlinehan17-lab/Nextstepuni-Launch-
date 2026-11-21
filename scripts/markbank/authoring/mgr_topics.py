@@ -33,6 +33,9 @@ import re
 VOCABULARY = 'modern-greek-0-0'
 COMPREHENSION = 'modern-greek-0-1'
 WRITTEN_PRODUCTION = 'modern-greek-1-0'
+# "Essay on a set title (Part III)" (#415): ΟΜΑΔΑ 3η, and the set-title essay a
+# two-part sitting (2021, 2022) prints as its second part.
+ESSAY = 'modern-greek-1-1'
 
 GREEK_NAME = 'Modern Greek'
 # The rubric that states it, in the two spellings the corpus prints:
@@ -59,10 +62,14 @@ def language_note(language):
             ) if language else ''
 
 
-def topic_for(ask):
-    """The subtopic this printed ask belongs to, from the group it sits in."""
+def topic_for(ask, part=None):
+    """The subtopic this printed ask belongs to, from the group it sits in.
+
+    `part` is the part the ask is answered as (sl_lib.essay_part: a two-part
+    sitting's second part is its essay); without it, the printed group."""
     if ask.kind != 'reading':
-        return WRITTEN_PRODUCTION
+        part = part or {'3': 'III'}.get(str(ask.section), str(ask.section))
+        return ESSAY if part == 'III' else WRITTEN_PRODUCTION
     return VOCABULARY if ask.items else COMPREHENSION
 
 

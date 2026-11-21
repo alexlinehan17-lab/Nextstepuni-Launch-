@@ -302,6 +302,11 @@ export interface TopicSibling {
  *  n = 1000 + its printed number (scripts/markbank/authoring/geography_atlas_anchors.py). */
 const GEOGRAPHY_SHARED_BOOKLET = /^LC005[AG]LP000(EV|IV)\.pdf$/;
 const GEOGRAPHY_PART_ONE_OFFSET = 1000;
+const SMALL_LANGUAGE_PART_ROW = /^(II|III)(\d*)$/;
+const SMALL_LANGUAGES = new Set([
+  'bulgarian', 'croatian', 'czech', 'danish', 'dutch', 'estonian', 'finnish', 'hungarian', 'latvian', 'maltese',
+  'modern-greek', 'romanian', 'slovakian', 'slovenian', 'swedish', 'ukrainian',
+]);
 
 /** The printed address of a tagged question, for any place that names one
  *  before (or without) its anchor map's own label. `short` is the compact
@@ -316,6 +321,13 @@ export function questionLabel(
     const part = shared[1] === 'IV' ? 'Cuid a hAon' : 'Part One';
     if (short) return `${part} Q${printed}`;
     return shared[1] === 'IV' ? `${part} · Ceist ${printed}` : `${part} · Question ${printed}`;
+  }
+  // The sixteen small languages number Parts II and III by the part, since each restarts at Q1
+  // (scripts/atlas-model/cardAtlasAddress.ts): "II1" is Part II, Question 1; "II" a part of one unnumbered question.
+  const part = SMALL_LANGUAGE_PART_ROW.exec(q.n);
+  if (part && SMALL_LANGUAGES.has(q.subjectId)) {
+    if (!part[2]) return `Part ${part[1]}`;
+    return short ? `Part ${part[1]} Q${part[2]}` : `Part ${part[1]} · Question ${part[2]}`;
   }
   return short ? `Q${q.n}` : `Question ${q.n}`;
 }

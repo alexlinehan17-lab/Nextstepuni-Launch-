@@ -992,8 +992,9 @@ def cards(subject, year, specs, level='hl', scheme=True):
             # and shown as Part III's is.
             # A question carded whole over its lettered expressions is filed as
             # the expressions are (second reader, 20 Nov: Q1 sat under two topics).
-            'topicId': (mgr_topics.topic_for(ask) if mgr else
-                        lt_topics.topic_for(subject, year, key[0], key[1]) if subject in LT_SUBJECTS else
+            'topicId': (mgr_topics.topic_for(ask, essay_part(key[0], two_part)) if mgr else
+                        lt_topics.topic_for(subject, year, essay_part(key[0], two_part), key[1])
+                        if subject in LT_SUBJECTS else
                         topic_for(subject, 'classic', essay_part(key[0], two_part),
                                   key[2] or ('*' if key in parents else None))),
             # From the ask's own printed words, not an instruction put before

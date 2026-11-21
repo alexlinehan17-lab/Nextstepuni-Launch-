@@ -56,6 +56,14 @@ const econByCard = new Map<string, { n: string }>();
 for (const review of Object.values(economicsReviews)) for (const q of review.questions) for (const t of q.tasks ?? []) if (t.cardId) econByCard.set(t.cardId, { n: q.n });
 const politicsByCard = new Map((politicsTasks as Json[]).map(t => [String(t.id), t]));
 
+/** The small languages' older Atlas rows that hold a whole Part II or III, numbered on from Part I (each read on its
+ *  paper's page and answer map: Danish 2018 rows 7 and 8 are "Opgave II" and "Opgave III"; Slovenian 2018, 2023 and
+ *  2024 row 7 starts at "2. DEL"). */
+const SMALL_LANGUAGE_WHOLE_PART: Record<string, string> = {
+  'danish|2018|II': '7', 'danish|2018|III': '8',
+  'slovenian|2018|II': '7', 'slovenian|2023|II': '7', 'slovenian|2024|II': '7',
+};
+
 const pdf = (f: unknown) => `${String(f).replace(/\.pdf$/i, '')}.pdf`;
 const qnum = (ref: string) => (/\bQ\s*(\d+)/.exec(ref) ?? [])[1];
 
@@ -200,11 +208,22 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
     case 'bulgarian': case 'croatian': case 'czech': case 'danish': case 'dutch': case 'estonian': case 'finnish':
     case 'hungarian': case 'latvian': case 'maltese': case 'modern-greek': case 'romanian': case 'slovakian':
     case 'slovenian': case 'swedish': case 'ukrainian': {
-      // The Atlas lists only Part I (Q1-Q6) for these sixteen languages: a Section II or III card restarts at Q1 and
-      // must not land on Part I's question (Modern Greek prints its sections as 1, 2, 3). Unlinked until the
-      // small-languages lane adds the Part II/III rows and its section-qualified rule (coordinator, 20 Nov); listed
-      // with that reason in test/fixtures/atlasModelRuledMisses.json.
-      if (/\bSection (?:II|III|2|3)\b/.test(ref)) return { fail: 'no-atlas-question', cls: 'inferred' };
+      // Part I is Atlas 1-6. Parts II and III restart at Q1, so the Atlas numbers their rows by the part: "II1",
+      // "III2", and "II" for a part printed as one unnumbered question (Czech and Latvian Part II). Modern Greek
+      // prints its parts as 1, 2, 3. Four older papers already list a whole part as one row numbered on from Part I;
+      // its cards go there, as Portuguese's do, because renumbering an Atlas row would move saved questions and tags.
+      const part = /\bSection (II|III|2|3)\b/.exec(ref);
+      if (part) {
+        const roman = ({ '2': 'II', '3': 'III' } as Record<string, string>)[part[1]] ?? part[1];
+        const whole = SMALL_LANGUAGE_WHOLE_PART[`${c.subjectId}|${c.year}|${roman}`];
+        return { fileid: fid, cands: [whole ?? `${roman}${qnum(ref) ?? ''}`], cls: 'inferred' };
+      }
+      // Maltese 2019 prints its second Part I question with no number (the census keys it Q1A). The Atlas follows
+      // the scheme, which numbers Part I 1 to 6: Q1A is Atlas 2 and the paper's Q2-Q5 are Atlas 3-6.
+      if (c.subjectId === 'maltese' && c.year === 2019) {
+        if (/\bQ1A\b/.test(ref)) return { fileid: fid, cands: ['2'], cls: 'inferred' };
+        const k = qnum(ref); if (k && +k >= 2) return { fileid: fid, cands: [String(+k + 1)], cls: 'inferred' };
+      }
       const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
     }
     case 'polish': case 'portuguese': {

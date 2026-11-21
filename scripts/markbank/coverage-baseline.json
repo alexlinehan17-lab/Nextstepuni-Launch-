@@ -214,7 +214,7 @@
   },
   "czech": {
     "cards": 155,
-    "contentHash": "bf64efaa8ccc5d86",
+    "contentHash": "fc10271ad3f1f686",
     "coveragePct": 100.0,
     "covered": 219,
     "excluded": 0,
@@ -499,7 +499,7 @@
   },
   "latvian": {
     "cards": 167,
-    "contentHash": "9a7e4953f6f80062",
+    "contentHash": "c6428f3168e325f3",
     "coveragePct": 100.0,
     "covered": 219,
     "excluded": 0,
@@ -544,7 +544,7 @@
   },
   "maltese": {
     "cards": 77,
-    "contentHash": "7317d1820246fb7b",
+    "contentHash": "513ce667ce036375",
     "coveragePct": 100.0,
     "covered": 77,
     "excluded": 0,
@@ -589,7 +589,7 @@
   },
   "modern-greek": {
     "cards": 142,
-    "contentHash": "38006a7dd447e722",
+    "contentHash": "eca710e13b094bc4",
     "coveragePct": 100.0,
     "covered": 142,
     "excluded": 0,
@@ -814,7 +814,7 @@
   },
   "ukrainian": {
     "cards": 26,
-    "contentHash": "665bbb1ea3a19cd8",
+    "contentHash": "de19a8b02af44bf7",
     "coveragePct": 100.0,
     "covered": 26,
     "excluded": 0,
