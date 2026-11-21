@@ -380,7 +380,13 @@ def higher(year):
     out = []
     # C1: one card for the printed choice of prompts
     i1 = S.at(r'^1\.\s*Composition linked', c0)
-    g1 = S.span(r'^Content and communication 15 marks', r'^Language 10 marks', i1)
+    try:
+        g1 = S.span(r'^Content and communication 15 marks', r'^Language 10 marks', i1)
+    except AssertionError:
+        # 2014 prints "Content and communication 15 marks Language 10 marks" on
+        # one line and no "Language 10 marks" line after it: the guidance is the
+        # C1 block, up to C2's head.
+        g1 = S.span(r'^Content and communication 15 marks', r'^2\.\s*Guided composition', i1)
     t1, p1 = paper_task(year, 'hl', 1)
     letters = [l for item, l, _t, _p in IP.ItPaper(year, 'hl').writing_asks() if item == 1 and l]
     out.append(rubric_card(year, 'hl', 1, 'a', letters, [

@@ -17,15 +17,15 @@
     "sourceBlockedAssociations": 23,
     "matchedLocalCardLinks": 478,
     "localPaperVariants": 98,
-    "localPhysicalMappings": 1027,
-    "distinctStudentFacingQuestions": 752,
+    "localPhysicalMappings": 1031,
+    "distinctStudentFacingQuestions": 754,
     "referenceMappedLocalQuestions": 388,
-    "retainedLocalQuestions": 639,
+    "retainedLocalQuestions": 643,
     "hostedPaperAnchorMaps": 98,
     "preservedBaselineVariants": 32,
     "preservedBaselineCards": 456,
     "newlyAddedPaperVariants": 66,
-    "newlyAddedPhysicalMappings": 571,
+    "newlyAddedPhysicalMappings": 575,
     "emptyReferenceTopics": [
       "italian-higher-essay-writing-il-treno-dei-bambini",
       "italian-higher-essay-writing-le-otto-montagne",
@@ -14410,6 +14410,30 @@
     },
     {
       "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "fileid": "LC013ALP000EV.pdf",
+      "paperKey": "single",
+      "n": "22",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "fileid": "LC013ALP000EV.pdf",
+      "paperKey": "single",
+      "n": "23",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
       "lang": "iv",
       "year": 2014,
       "fileid": "LC013ALPA00IV.pdf",
@@ -14683,6 +14707,30 @@
         "italian-higher-written-composition-formal",
         "italian-higher-written-composition-guided",
         "italian-higher-written-composition-opinion-piece"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2014,
+      "fileid": "LC013ALP000IV.pdf",
+      "paperKey": "single",
+      "n": "22",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2014,
+      "fileid": "LC013ALP000IV.pdf",
+      "paperKey": "single",
+      "n": "23",
+      "topicIds": [
+        "italian-higher-reading-comprehension-literary-unseen"
       ],
       "provenance": "retained-local"
     },

@@ -133,18 +133,18 @@ describe('Italian exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'italian');
     expect(italianCrosswalk.summary).toMatchObject({
       localPaperVariants: 98,
-      localPhysicalMappings: 1027,
-      distinctStudentFacingQuestions: 752,
+      localPhysicalMappings: 1031,
+      distinctStudentFacingQuestions: 754,
       referenceMappedLocalQuestions: 388,
-      retainedLocalQuestions: 639,
+      retainedLocalQuestions: 643,
       hostedPaperAnchorMaps: 98,
       preservedBaselineVariants: 32,
       preservedBaselineCards: 456,
       newlyAddedPaperVariants: 66,
-      newlyAddedPhysicalMappings: 571,
+      newlyAddedPhysicalMappings: 575,
     });
     expect(papers).toHaveLength(98);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1027);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1031);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
 
@@ -156,7 +156,7 @@ describe('Italian exam-topic registry', () => {
       .toContainEqual({ n: 'B5', primary: 'italian-5-4' });
     expect(topicsForPaper('italian', 2025, 'higher', 'ev', 'LC013ALP000BV.pdf')?.q.map(q => q.n))
       .toEqual([...Array.from({ length: 22 }, (_, index) => String(index + 1)), 'C1', 'C2', 'C3']);
-    for (const year of [2015, 2016, 2017]) {
+    for (const year of [2014, 2015, 2016, 2017]) {
       expect(topicsForPaper('italian', year, 'higher', 'ev', 'LC013ALP000EV.pdf')?.q.slice(-3).map(q => q.n))
         .toEqual(['21', '22', '23']);
     }
@@ -206,7 +206,7 @@ describe('Italian exam-topic registry', () => {
       .toEqual(['italian-ordinary-writing-fill-in-a-form']);
   });
 
-  it('ships a finite paper-only fallback for all 1027 cards', () => {
+  it('ships a finite paper-only fallback for all 1031 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'italian');
     for (const paper of papers) {
       const mapPath = path.join(
@@ -227,9 +227,9 @@ describe('Italian exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 752 distinct cards and keeps only the unpublished Oral bucket empty', () => {
+  it('surfaces all 754 distinct cards and keeps only the unpublished Oral bucket empty', () => {
     expect(subjectAtlasStats('italian')).toMatchObject({
-      questions: 752,
+      questions: 754,
       topics: 25,
       yearMin: 2010,
       yearMax: 2026,

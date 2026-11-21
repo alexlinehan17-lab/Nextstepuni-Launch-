@@ -168,6 +168,21 @@ READING_OPTIONS = {
         'claimMax': 2, 'perOption': 2,
         'options': ['Stimolando', 'catturando', 'monitorando', 'osservando', 'apportando'],
         'note': 'Two of 4 marks: Stimolando/catturando/monitorando/osservando/apportando (2 marks each)'},
+    # 2014 Higher A 1(b) "Any two of:" prints its first answer's alternatives
+    # over four lines with the tariff after the first ("Avere un collegamento a
+    # Internet/ 6 marks (3+3)"): the option is that first line, and the note
+    # quotes the four, so no answer counts twice.
+    (2014, 'hl', 'A', 1, 'b'): {
+        'claimMax': 2, 'perOption': 3,
+        'options': ['Avere un collegamento a Internet',
+                    'Perché pochi click sono sufficienti a cambiare la vita degli altri',
+                    'Si invia la richiesta di adesione', 'Stiamo parlando di volontariato 2.0'],
+        'check': ['Avere un collegamento a Internet/ 6 marks (3+3)', 'puoi trovare solo su internet e i social network/',
+                  'Ci si connette al sito/', 'è sufficiente avere un computer'],
+        'contextNote': ('The scheme prints “Any two of:” and the first answer with its alternatives over four '
+                        'lines, its tariff after the first: “Avere un collegamento a Internet/ 6 marks (3+3)”, '
+                        '“puoi trovare solo su internet e i social network/”, “Ci si connette al sito/”, “è '
+                        'sufficiente avere un computer”.')},
     # 2015 Higher B1 2(a) "trovate sei parole che si riferiscono alla casa":
     # "Six of 6 marks (1+1+1+1+1+1)" over seven words on one line, set apart
     # by dashes, any six of the seven.
@@ -227,6 +242,27 @@ def options_card(P, S, year, level, section, item, letter, cards):
 # Cards whose rows the reader cannot settle, set here from the printed lines
 # (each piece asserted in the scheme): the review of 20 Nov.
 READING_ROWS = {
+    # 2014 Higher A Q5 "Four points are required 20 marks (5+5+5+5)" over "Any
+    # of the following points should be taken into consideration." and six
+    # points numbered "1)" to "6)", then "Partial answer 3 marks". The
+    # instruction and the partial-answer line are quoted, not offered; the
+    # list's numbers are its markers, as a bullet is.
+    (2014, 'hl', 'A', 5, None): {
+        'tariff': 'fixed',
+        'rows': [{'id': 'r-1', 'kind': 'anyN', 'marks': None, 'verbatim': 'The answers the scheme accepts in full',
+                  'group': {'claimMax': 4, 'perOption': 5, 'options': [
+                      'It is totally based on the Internet',
+                      'You don’t have to commit to one specific period of time/ you can do it whenever you are '
+                      'off/ available/ free',
+                      'You can check the projects on the calendar of activities on line',
+                      'You pick the activity that suits you',
+                      'You can do it by the hour',
+                      'You don’t have to commit to a specific project']},
+                  'contextNote': ('The scheme prints “Four points are required” and “Any of the following points '
+                                  'should be taken into consideration.”, and, under its six points, “Partial '
+                                  'answer 3 marks”.')}],
+        'check': ['Four points are required 20 marks (5+5+5+5)',
+                  'Any of the following points should be taken into consideration.', 'Partial answer 3 marks']},
     # 2015 Ordinary B4(a): the paper's table asks for the paragraph that
     # mentions each of five items, and the scheme answers "2, 3, 1, 7, 5 8
     # marks (2+2+2+1+1)", one number per item in the table's order. The items

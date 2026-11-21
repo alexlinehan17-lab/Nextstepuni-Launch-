@@ -91,6 +91,8 @@ UNIT_A = re.compile(r'^SECTION\s+A\s+READING\s+COMPREHENSION\b', re.I)
 # "B 1. Unseen passage" and "B 2. Prescribed novel".
 UNIT_B_HL = re.compile(r'^SECTION\s+B\s+Unseen\s+Literary\s+Passage\b'
                        r'|^B\s*1\.?\s*Unseen\s+passage\b'
+                       # 2014: "B1.Literary Passage (Unseen)"
+                       r'|^B\s*1\.?\s*Literary\s+Passage\s*\(\s*Unseen\s*\)'
                        # 2015-2017: "SECTION B (60 marks)" over "Unseen Literary
                        # Passage", or "Unseen Literary Passage <title>"
                        r'|^Unseen\s+Literary\s+Passage\b', re.I)
@@ -165,7 +167,9 @@ LADDER = re.compile(r'^[≈~]{2,}\s*')
 # The closing bracket is not reliable — the SEC prints "(He is an artist / He
 # started doing art in Turin (Torino)) 1 mark)" — so the test is the opening
 # bracket plus a trailing mark, not balance.
-PAREN_RUNG = re.compile(r'^\(.*\b\d{1,2}\s*marks?\b\.?\s*\)?\s*$', re.I)
+# Not a multiple-choice answer printed with its label: 2014 Higher "(b) (iii)
+# un atteggiamento di rispetto 3 marks" is the ask's answer and tariff.
+PAREN_RUNG = re.compile(r'^\((?!\s*(?:i{1,3}|iv|vi{0,3}|ix)\s*\)).*\b\d{1,2}\s*marks?\b\.?\s*\)?\s*$', re.I)
 # The mark printed at the end of a line, WITH an optional closing bracket: what
 # _rung strips off a lesser answer to read its value.
 # The SEC sometimes sets the mark against the last word with no space: 2019
@@ -782,8 +786,14 @@ class ItScheme:
             # the SEC's lesser answer printed without a tilde row over it, not
             # a new component. 2023 Ordinary A2 Q3(a) prints exactly that.
             m2 = TARIFF.search(t)
+            # A line that prints its own split adding up to its tariff is a
+            # priced component whatever it is worth: 2014 Higher A 3(a) prices
+            # "come: ... 4 marks" and then "perché: (i) ... (ii) ... (iii) ...
+            # 3marks (1+1+1)". A lesser answer never prints a split.
+            own_split = bool(m2 and m2.group(2) and '+' in m2.group(2)
+                             and sum(int(x) for x in re.findall(r'\d+', m2.group(2))) == int(m2.group(1)))
             if (m2 and parts[-1].stated and m2.end() >= len(t.rstrip())
-                    and int(m2.group(1)) >= (parts[-1].split or [parts[-1].total])[0]):
+                    and (own_split or int(m2.group(1)) >= (parts[-1].split or [parts[-1].total])[0])):
                 parts.append(_open_part(t[:m2.start()].strip(), m2))
                 continue
             pm = PARTIAL.match(t)
@@ -1711,7 +1721,11 @@ def _join(lines, mode='wrap'):
         # event/For cycling" / "(enthusiasts) 4 marks)".
         if out and out[-1].startswith('(') and out[-1].count('(') > out[-1].count(')'):
             joins = True
+        # Nor onto a shorter answer closed by its bracketed mark in words, "leggendo
+        # un articolo (1 mark)" over "perché: (i)era semplice … 3marks (1+1+1)"
+        # (2014 Higher A 3(a)); a priced piece's "(1m)" still joins.
         if out and (DIRECTIVE.match(out[-1]) or BARE_MARK.search(out[-1])
+                    or re.search(r'\(\s*\d{1,2}\s*marks?\s*\)\s*$', out[-1], re.I)
                     or (PAREN_RUNG.match(s) and s.startswith('(') and s.rstrip().endswith(')')
                         and not out[-1].startswith('('))):
             joins = False

@@ -590,7 +590,9 @@ def cards(year, level, refuse, row_for, concept_for):
         head = ' '.join(B.dialogues[d]['title'])
         by_item = {a.item: a for a in priced}
         missing = [n for n in sorted(asks) if n not in by_item]
-        if len(asks) < len(priced):
+        # Counted by printed number: 2014 Higher Dialogue 3 prices one booklet
+        # ask as 5(a) and 5(b), two priced asks under one number.
+        if len(asks) < len(by_item):
             for n in sorted(by_item):
                 refuse('the booklet prints fewer asks in this dialogue than the scheme '
                        'prices, so the booklet reader lost one', f'{year} {lvl} Section LB{d} Q{n}',
@@ -799,6 +801,37 @@ OVERRIDES = {
     # prices as 6(a) "2 marks(1+1)" and 6(b) "2 marks"; and it prints Q8's
     # "4 marks (2+2)" on the line above "8.". Each ask is read here from its
     # own printed lines.
+    # 2014 Higher Dialogue 3: the booklet prints Q5 as one ask, "(a) In what
+    # venues did Simone's band start playing? (b) Why were Simone's parents
+    # worried about him?", which the scheme prices as 5(a) "In small bars in
+    # the centre 4 marks (1+1+2)" over "that were frequented by young people",
+    # and 5(b) "He may have given up his studies 4 marks (2+2)" over "He
+    # wouldn't find a steady job". 5(a)'s three pieces (1+1+2) are read as
+    # "In small bars", "in the centre" and the line under them.
+    (2014, 'hl', 3, 5): {
+        'total': 8,
+        'rows': [{'kind': 'point', 'verbatim': '(a) — In small bars', 'marks': 1,
+                  'contextNote': ('The scheme prints “In small bars in the centre 4 marks (1+1+2)” over “that were '
+                                  'frequented by young people”.')},
+                 {'kind': 'point', 'verbatim': '(a) — in the centre', 'marks': 1},
+                 {'kind': 'point', 'verbatim': '(a) — that were frequented by young people', 'marks': 2},
+                 {'kind': 'point', 'verbatim': '(b) — He may have given up his studies', 'marks': 2},
+                 {'kind': 'point', 'verbatim': '(b) — He wouldn’t find a steady job', 'marks': 2}]},
+    # 2014 Higher Dialogue 3 Q7 "Two of 3 marks" prices each answer on its own,
+    # unevenly: "(2 marks)", "(1 mark) … (1mark)", "(1 mark)". The scheme does
+    # not say what one answer is worth, so the card is judged against the 3
+    # marks (CARD-STANDARD section 5), the answers its criteria and the printed
+    # lines quoted.
+    (2014, 'hl', 3, 7): {
+        'total': 3, 'tariff': 'questionTotal',
+        'rows': [{'kind': 'criterion', 'verbatim': 'He heard them at the festival of Mediterranean music',
+                  'marks': None,
+                  'contextNote': ('The scheme prints “Two of 3 marks” over three answers it prices one by one: '
+                                  '“He heard them at the festival of Mediterranean music (2 marks)”; “He promoted '
+                                  'their album/cd/them (1 mark) on his radio programme (1mark)”; “He interviewed '
+                                  'them (1 mark)”. Judge your two answers against the 3 marks.')},
+                 {'kind': 'criterion', 'verbatim': 'He promoted their album/cd/them', 'marks': None},
+                 {'kind': 'criterion', 'verbatim': 'He interviewed them', 'marks': None}]},
     (2017, 'hl', 3, 6): {
         'total': 4,
         'rows': [{'kind': 'point', 'verbatim': '(a) — The Centre', 'marks': 1},

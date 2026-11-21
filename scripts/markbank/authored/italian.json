@@ -87819,5 +87819,3641 @@
    "attribution": "SEC Italian 2015 Ordinary Level examination paper — © State Examinations Commission.",
    "presentationNote": "The task as the examination paper prints it, with the eight sentences to put in order."
   }
+ },
+ {
+  "id": "it-2014-hl-a-1-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "A",
+  "topicId": "italian-5-0",
+  "conceptId": "menzionate-due-motivi-cui-necessario-internet",
+  "questionRef": "2014 HL Section A Q1(a)",
+  "questionText": "Menzionate due motivi per cui è necessario Internet per il “volontariato 2.0”.\n\n",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Perché su Internet ci sono (elencati) i progetti a cui si può partecipare",
+      "Tramite Internet si invia la richiesta di partecipazione/adesione",
+      "Perché pochi click sono sufficienti a cambiare la vita degli altri"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Per connettersi al sito (si ha bisogno di internet” 2 marks; “Perché si può trovare solo su Internet” 2 marks."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks (3+3)'; the paper prints this ask on page 2 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-a-1-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "A",
+  "topicId": "italian-5-0",
+  "conceptId": "trovate-due-frasi-riferiscono-mondo-dell",
+  "questionRef": "2014 HL Section A Q1(b)",
+  "questionText": "Trovate le due frasi che si riferiscono al mondo dell’informatica.\n\n",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Avere un collegamento a Internet",
+      "Perché pochi click sono sufficienti a cambiare la vita degli altri",
+      "Si invia la richiesta di adesione",
+      "Stiamo parlando di volontariato 2.0"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prints “Any two of:” and the first answer with its alternatives over four lines, its tariff after the first: “Avere un collegamento a Internet/ 6 marks (3+3)”, “puoi trovare solo su internet e i social network/”, “Ci si connette al sito/”, “è sufficiente avere un computer”."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks (3+3)'; the paper prints this ask on page 3."
+ },
+ {
+  "id": "it-2014-hl-a-2-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "A",
+  "topicId": "italian-5-0",
+  "conceptId": "spiegate-vantaggi-volontariato-ore",
+  "questionRef": "2014 HL Section A Q2(a)",
+  "questionText": "Spiegate con le vostre parole quali sono i vantaggi del volontariato “a ore”.\n(i)\n(ii)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "si può fare volontariato anche solo quando si ha del tempo libero",
+      "Ti lascia libero di scegliere orari/ categorie/ e attività da svolgere",
+      "Non crea vincoli non ci sono obblighi",
+      "Non si è obbligati a farlo per un periodo specifico"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks (3+3)'; the paper prints this ask on page 3 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-a-2-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "A",
+  "topicId": "italian-5-0",
+  "conceptId": "trovate-tre-sostantivi-femminili-plurale-iii",
+  "questionRef": "2014 HL Section A Q2(b)",
+  "questionText": "Trovate tre sostantivi femminili al plurale.\n(i) (ii) (iii)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ore – categorie- mansioni- occasioni",
+    "marks": 3,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '3marks (1+1+1)'; the paper prints this ask on page 3 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-a-3-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "A",
+  "topicId": "italian-5-0",
+  "conceptId": "francesca-saputo-volontariato-perch-scelto-farlo",
+  "questionRef": "2014 HL Section A Q3(a)",
+  "questionText": "Francesca come ha saputo del volontariato e perché ha scelto di farlo?\nCome\nPerché (i) (ii) (iii)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "come: leggendo un articolo su Romaltruista",
+    "marks": 4,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “leggendo su Romaltruista/ha scoperto Romaltruista” 2 marks; “leggendo un articolo” 1 mark.",
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     4
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "perché: (i)era semplice (ii) non richiedeva impegno (iii) era molto utile",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks; 3marks (1+1+1)'; the paper prints this ask on page 3 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-a-3-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "A",
+  "topicId": "italian-5-0",
+  "conceptId": "risultato-avuto-azione-francesca",
+  "questionRef": "2014 HL Section A Q3(b)",
+  "questionText": "Quale risultato ha avuto l’azione di Francesca?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "perché partendo da lei / Francesca tutti si sono ritrovati coinvolti in questa attività/ è riuscita a fare una grandissima raccolta",
+    "marks": 4,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the paper prints this ask on page 3 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-a-4-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "A",
+  "topicId": "italian-5-0",
+  "conceptId": "spiegate-qual-attivit-volontariato-marcello",
+  "questionRef": "2014 HL Section A Q4(a)",
+  "questionText": "Spiegate con le vostre parole qual è l’attività di volontariato di Marcello.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Marcello distribuisce cibo ai senza tetto",
+    "marks": 4,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the paper prints this ask on page 3 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-a-4-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "A",
+  "topicId": "italian-5-0",
+  "conceptId": "riassumete-opinione-marcello-questa-iniziativa",
+  "questionRef": "2014 HL Section A Q4(b)",
+  "questionText": "Riassumete l’opinione di Marcello su questa iniziativa.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Marcello crede che tutte le persone abbiano un valore e aiutare gli altri/fare stare bene gli altri, ascoltarli arricchisce/rende migliore chi lo fa",
+    "marks": 4,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the paper prints this ask on page 3 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-a-5",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "A",
+  "topicId": "italian-5-0",
+  "conceptId": "answer-following-question-english-outline-makes",
+  "questionRef": "2014 HL Section A Q5",
+  "questionText": "Answer the following question in English.\nOutline what makes “Volontariato 2.0”\ndifferent from other voluntary groups,\naccording to the article as a whole.\nMention four points.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "The answers the scheme accepts in full",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "It is totally based on the Internet",
+      "You don’t have to commit to one specific period of time/ you can do it whenever you are off/ available/ free",
+      "You can check the projects on the calendar of activities on line",
+      "You pick the activity that suits you",
+      "You can do it by the hour",
+      "You don’t have to commit to a specific project"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints “Four points are required” and “Any of the following points should be taken into consideration.”, and, under its six points, “Partial answer 3 marks”."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '20 marks (5+5+5+5)'; the paper prints this ask on page 3 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b1-1-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-1",
+  "conceptId": "perch-ragazzi-sorpresi",
+  "questionRef": "2014 HL Section B1 Q1(a)",
+  "questionText": "Perché i ragazzi sono sorpresi?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Si aspettavano una donna invece entra un ragazzo giovane",
+    "marks": 6,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks(3+3)'; the paper prints this ask on page 4 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b1-1-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-1",
+  "conceptId": "perch-protagonista-dice-questo-supplente-peggiori",
+  "questionRef": "2014 HL Section B1 Q1(b)",
+  "questionText": "Perché il protagonista dice che questo supplente è uno dei ‘peggiori’?\n\n",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Perché ama quello che studia",
+      "Perché è uno che crede in quello che fa",
+      "È uno preciso"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '8 marks (4+4)'; the paper prints this ask on page 4 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b1-2-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-1",
+  "conceptId": "frase-capiamo-protagonista-molto-contento",
+  "questionRef": "2014 HL Section B1 Q2(a)",
+  "questionText": "Da quale frase capiamo che il protagonista è molto contento?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "“Mi sento un re che tocca il cielo con un dito”",
+    "marks": 4,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the paper prints this ask on page 5 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b1-2-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-1",
+  "conceptId": "trovate-sei-riferiscono-tema-scuola-iii",
+  "questionRef": "2014 HL Section B1 Q2(b)",
+  "questionText": "Trovate sei parole che si riferiscono al tema della scuola.\n(i) (ii) (iii)\n(iv) (v) (vi)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 6,
+     "perOption": 1,
+     "options": [
+      "supplente",
+      "libri",
+      "borsa",
+      "studia",
+      "professore",
+      "alunno",
+      "interrogazioni",
+      "compiti",
+      "programma",
+      "lavagna"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6marks (1+1+1+1+1+1)'; the paper prints this ask on page 5 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b1-3-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-1",
+  "conceptId": "hanno-comune-protagonista-sognatore",
+  "questionRef": "2014 HL Section B1 Q3(a)",
+  "questionText": "Cosa hanno in comune il protagonista e il Sognatore?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Anche lui quando aveva la sua età si è rotto/spaccato il braccio/ Ha una vita come la sua / “Ha una vita come la mia”",
+    "marks": 4,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Ha una vita come la mia” 3 marks.",
+    "permittedMarks": [
+     0,
+     3,
+     4
+    ]
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the paper prints this ask on page 5 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b1-3-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-1",
+  "conceptId": "frase-faccio-finta-perch-non-resti",
+  "questionRef": "2014 HL Section B1 Q3(b)",
+  "questionText": "La frase “ma io faccio finta perché non ci resti male” esprime:\nBarrate la casella giusta\nun atteggiamento di arroganza\nun atteggiamento di sarcasmo\nun atteggiamento di rispetto",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(iii) un atteggiamento di rispetto",
+    "marks": 3,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '3 marks'; the paper prints this ask on page 5 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b1-4-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-1",
+  "conceptId": "spiegate-pensiero-sognatore-sui-sogni-progetti",
+  "questionRef": "2014 HL Section B1 Q4(a)",
+  "questionText": "Spiegate con le vostre parole il pensiero del Sognatore sui sogni e i progetti.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Secondo il Sognatore i sogni diventano progetti solo quando si attraversano/ superano difficoltà . Senza difficoltà/ostacoli il sogno non si realizza, non si trasforma in progetto.",
+    "marks": 5,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '5marks'; the paper prints this ask on page 5 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b1-4-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-1",
+  "conceptId": "perch-quando-via-sognatore-ride",
+  "questionRef": "2014 HL Section B1 Q4(b)",
+  "questionText": "Perché quando va via il Sognatore ride?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Il Sognatore ride perché sa che il protagonista lo chiama “il Sognatore”",
+    "marks": 4,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Ride perché lo chiama Sognatore” 3 marks.",
+    "permittedMarks": [
+     0,
+     3,
+     4
+    ]
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4marks'; the paper prints this ask on page 5 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b1-5",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-1",
+  "conceptId": "answer-following-question-english-looking-passage",
+  "questionRef": "2014 HL Section B1 Q5",
+  "questionText": "Answer the following question in English.\nLooking at the passage as a whole, what do we\nlearn about the protagonist’s changing impression\nof the “Sognatore”? Give four examples (one in\neach paragraph).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "At the beginning he doesn’t like him (3m) because: he looks too serious/ he gives a very serious impression of himself (giacca, occhiali, borsa piena di libri) / he seems very correct /he is sure about what he does/ he believes in what he does/ the protagonist doesn’t know his name (2m)",
+      "The protagonist is very surprised and happy that the Sognatore comes to the hospital to visit him (3+2) (both emotions must be expressed to get full marks)",
+      "He sees the Sognatore is “ordinary”/ that they are not so different (3 m) because they feel at ease in each other’s company/ they talk about everyday things/ they have things in common ( scar- injuries) (2m)",
+      "He is come full circle from dislike to respect because he knows now that you don’t have to be mean in order to be an authority figure. “Chi l’ha detto che per avere autorità bisogna essere antipatici?”/He likes him, because even being called a nickname doesn’t bother him, he’s easy-going."
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints: “Four points are required”."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '20 marks (5+5+5+5)'; the paper prints this ask on page 5 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2a-1-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "perch-inizialmente-marchica-non-vuole-accettare",
+  "questionRef": "2014 HL Section B2A Q1(a)",
+  "questionText": "Perché inizialmente Marchica non vuole accettare la proposta di Pizzuco.\n\n",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Perché è appena uscito dal carcere",
+      "Perché vuole godersi la libertá",
+      "Perché non si sente/ non se la sentiva"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks (3+3)'; the paper prints this ask on page 6 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2a-1-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "perch-marchica-cede-sua-richiesta",
+  "questionRef": "2014 HL Section B2A Q1(b)",
+  "questionText": "Dite perché Marchica cede alla sua richiesta.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Perché si trova in condizioni di bisogno",
+      "Perché ha bisogno di soldi",
+      "Perché gli promette un lavoro da campiere",
+      "Perché gli propone un acconto di 300mila lire"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the paper prints this ask on page 6 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2a-2-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "abitudine-colasberna",
+  "questionRef": "2014 HL Section B2A Q2(a)",
+  "questionText": "Quale abitudine ha Colasberna?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "va a Palermo",
+    "marks": 3,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '3 marks'; the paper prints this ask on page 7 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2a-2-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "spiegate-marchica-sarebbe-arrivato-dopo-delitto",
+  "questionRef": "2014 HL Section B2A Q2(b)",
+  "questionText": "Spiegate come Marchica sarebbe arrivato a B. dopo il delitto.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pizzuco lo avrebbe prelevato/ sarebbe andato a prenderlo dalla sua casa di campagna e in macchina lo avrebbe portato a B",
+    "marks": 6,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks(3+3)'; the paper prints this ask on page 7 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2a-3-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "riassumete-marchica-prima-gennaio",
+  "questionRef": "2014 HL Section B2A Q3(a)",
+  "questionText": "Riassumete cosa fa Marchica prima del 16 gennaio.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Marchica, alcuni giorni prima del delitto, si recò a S. per familiarizzare con i luoghi in cui avrebbe dovuto agire e per potere identificare bene Colasberna.",
+    "marks": 5,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '5 marks'; the paper prints this ask on page 7 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2a-3-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "frase-intoppo-capire-barrate-casella-giusta",
+  "questionRef": "2014 HL Section B2A Q3(b)",
+  "questionText": "La frase “ci fu un intoppo” ci fa capire che\nBarrate la casella giusta\nche qualcosa era andato storto\nche tutto era andato bene\nche qualcosa stava per succedere",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) che qualcosa era andato storto",
+    "marks": 5,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '5 marks'; the paper prints this ask on page 7 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2a-4-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "reagisce-pizzuco-quando-capisce-nicolosi-riconosciuto",
+  "questionRef": "2014 HL Section B2A Q4(a)",
+  "questionText": "Come reagisce Pizzuco quando capisce che Nicolosi ha riconosciuto Marchica.\n\n\n",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Si agita",
+      "Bestemmia",
+      "Si calma"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks (2+2+2)'; the paper prints this ask on page 7 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2a-4-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "trovate-frase-cui-capiamo-nicolosi-non",
+  "questionRef": "2014 HL Section B2A Q4(b)",
+  "questionText": "Trovate una frase da cui capiamo che Nicolosi non sarebbe stato più un problema per loro.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "-Riguardo al Nicolosi non avrebbe dovuto nutrire preoccupazione alcuna",
+      "- Nicolosi era buono solo a far trovare i pupi di zucchero ai bambini",
+      "- Paolo Nicolosi era stato soppresso"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '5marks'; the paper prints this ask on page 7 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2a-5",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "answer-following-question-english-learn-about",
+  "questionRef": "2014 HL Section B2A Q5",
+  "questionText": "Answer the following question in English.\nWhat do we learn about Marchica from this\npassage and the novel as a whole?\nGive four points.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Four of the following from the passage and the novel — the answers the scheme accepts",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Marchica was contacted by Pizzuco to kill Coslasberna",
+      "He’s just out of jail and he wants to live a quiet life",
+      "He need money/a job- he needs something to keep him going",
+      "He is very professional in his approach",
+      "He understands the importance / significance of meeting Nicolosi in Via Cavour",
+      "He’s known as “Zicchinetta”* because of his card playing",
+      "He has committed a lot of crimes in the past",
+      "He was a respected hired assassin"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Four of the following from the passage and the novel”. The scheme prints: “*Reference to nickname “Zicchinetta” should be made”. The scheme also prints: “(At least one example from the novel is required)”."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '20 marks (5+5+5+5)'; the paper prints this ask on page 7 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2b-1-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "parola-scomparsa-significa-barrate-casella-giusta",
+  "questionRef": "2014 HL Section B2B Q1(a)",
+  "questionText": "La parola “scomparsa” significa:\nBarrate la casella giusta\nritrovamento\nsparizione\nincontro",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(ii) sparizione",
+    "marks": 4,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the paper prints this ask on page 8 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2b-1-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "chi-incontra-figlio-marcovaldo-quando-chi",
+  "questionRef": "2014 HL Section B2B Q1(b)",
+  "questionText": "Chi incontra il figlio di Marcovaldo e quando?\nChi\nQuando",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Quando: quando era in ferie/ quando era in vacanza/ quando era in montagna/ quando era in villeggiatura",
+    "marks": 8,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prints these answers under the heading “Chi: il collega di Marcovaldo”."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '8marks (4+4)'; the paper prints this ask on page 9 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2b-2-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "trovate-sei-appartengono-mondo-natura-iii",
+  "questionRef": "2014 HL Section B2B Q2(a)",
+  "questionText": "Trovate sei parole che appartengono al mondo della natura.\n(i) (ii) (iii)\n(iv) (v) (vi)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 6,
+     "perOption": 1,
+     "options": [
+      "Mandria",
+      "montagna",
+      "abete",
+      "foglia d' erba",
+      "prato",
+      "valle",
+      "fruscio d' acque",
+      "fronde d'aceri",
+      "castagni",
+      "ronzare di api/api",
+      "more di siepe",
+      "selciato",
+      "mucca",
+      "conchiglia",
+      "al fresco",
+      "latte",
+      "miele",
+      "mulo",
+      "bestia"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks(1+1+1+1+1+1)'; the paper prints this ask on page 9 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2b-2-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "trovate-frase-capire-madre-era-molto",
+  "questionRef": "2014 HL Section B2B Q2(b)",
+  "questionText": "Trovate la frase che ci fa capire che la madre era molto preoccupata.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Non si dava pace",
+    "marks": 4,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the paper prints this ask on page 9 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2b-3-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "perch-notte-famiglia-strada",
+  "questionRef": "2014 HL Section B2B Q3(a)",
+  "questionText": "Perché di notte la famiglia va in strada?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Era tornata la mandria / era tornato Michelino",
+    "marks": 4,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the paper prints this ask on page 9 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2b-3-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "perch-michelino-non-era-contento",
+  "questionRef": "2014 HL Section B2B Q3(b)",
+  "questionText": "Perché Michelino non era contento?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Perché era stanchissimo",
+      "Perché aveva lavorato come un mulo",
+      "Perché aveva sonno"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the paper prints this ask on page 9 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2b-4-a",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "perch-michelino-non-stava-sui-prati",
+  "questionRef": "2014 HL Section B2B Q4(a)",
+  "questionText": "Perché Michelino non stava sui prati?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "perché non aveva mai tempo perché c’era sempre qualcosa da fare"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks'; the paper prints this ask on page 9 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2b-4-b",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "spiegate-motivo-michelino-non-contento-paga",
+  "questionRef": "2014 HL Section B2B Q4(b)",
+  "questionText": "Spiegate per quale motivo Michelino non è contento della paga.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "perché lo hanno pagato poco / una miseria",
+    "marks": 6,
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “perché non aveva il contratto di lavoro” 3 marks.",
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ]
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks'; the paper prints this ask on page 9 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-b2b-5",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "answer-following-question-english-basing-answer",
+  "questionRef": "2014 HL Section B2B Q5",
+  "questionText": "Answer the following question in English.\nBasing your answer on this passage and the text\nas a whole, what do we learn about Marcovaldo\nand his family? Give four points.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Marcovaldo envies his son/ would like to be in his son’s position who is in contact with nature, while he is suffering from the heat in the city",
+      "The whole family is worried because Michelino was missing and they were all waiting for him to come back",
+      "The whole family is happy to see Michelino back, so that in the middle of the night they go outside in the street to welcome him",
+      "Marcovaldo’s wife is particularly upset and worried about Michelino being gone, she misses him terribly",
+      "Michelino is not very happy about his experience working in the farm as he didn’t get paid well",
+      "Michelino realises that being in contact with nature can be hard work and not as enjoyable as he thought/ as his father made him think",
+      "As Marcovaldo’s family is struggling financially, the fact that Michelino is temporarily gone from the household is a bit of relief for them as this means one less person to provide for From the text",
+      "Marcovaldo’s family expectations not fulfilled; nature= hard work",
+      "It’s obvious that they are struggling (ex. due rent/they sleep in the same room/the supermarket )",
+      "He’s getting his family involved in his project and adventures (ex: telling stories, gather wood etc.)"
+     ]
+    },
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '20 marks (5+5+5+5)'; the paper prints this ask on page 9 of the question booklet."
+ },
+ {
+  "id": "it-2014-hl-la-1",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "with-new-marathon-app-can-get",
+  "questionRef": "2014 HL Section LA Q1",
+  "questionText": "With the new marathon app you can get\n(a) Text alerts on marathon events\n(b) Training tips and count down to the date\n(c) Information on where to buy the best sports gear\n(d) Information on travel options to Pisa",
+  "questionChoices": [
+   "Text alerts on marathon events",
+   "Training tips and count down to the date",
+   "Information on where to buy the best sports gear",
+   "Information on travel options to Pisa"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Training tips and count down to the date",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (b)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 1",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-la-2",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "people-were-evacuated-because-fire",
+  "questionRef": "2014 HL Section LA Q2",
+  "questionText": "People were evacuated because of\n(a) An earthquake\n(b) A fire\n(c) Flooding\n(d) A gas leak",
+  "questionChoices": [
+   "An earthquake",
+   "A fire",
+   "Flooding",
+   "A gas leak"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A fire",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (b)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 2",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-la-3",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "cous-cous-festival-can-enjoy-free",
+  "questionRef": "2014 HL Section LA Q3",
+  "questionText": "At the Cous Cous festival you can\n(a) Enjoy free musical entertainment\n(b) Have free food and drink\n(c) Get travel information on North Africa\n(d) Get cookery lessons",
+  "questionChoices": [
+   "Enjoy free musical entertainment",
+   "Have free food and drink",
+   "Get travel information on North Africa",
+   "Get cookery lessons"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Enjoy free musical entertainment",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (a)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 3",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-la-4",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "according-study-open-space-office-encourages",
+  "questionRef": "2014 HL Section LA Q4",
+  "questionText": "According to the study, the open space office encourages\n(a) Harassment at work\n(b) Good work relationships\n(c) A noisy work environment\n(d) Efficiency",
+  "questionChoices": [
+   "Harassment at work",
+   "Good work relationships",
+   "A noisy work environment",
+   "Efficiency"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A noisy work environment",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (c)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 4",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-la-5",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "north-african-anticyclone-will-bring-rise",
+  "questionRef": "2014 HL Section LA Q5",
+  "questionText": "The North African anticyclone will bring\n(a) A rise in temperatures\n(b) A decrease in temperatures\n(c) Rain\n(d) Storms",
+  "questionChoices": [
+   "A rise in temperatures",
+   "A decrease in temperatures",
+   "Rain",
+   "Storms"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A rise in temperatures",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (a)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 5",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-la-6",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "cinema-wednesday-will-meet-film-director",
+  "questionRef": "2014 HL Section LA Q6",
+  "questionText": "If you go to the cinema on Wednesday you will\n(a) Receive a free copy of the magazine Celluloide\n(b) Receive a free DVD\n(c) See a documentary on Sorrento\n(d) Meet the film director",
+  "questionChoices": [
+   "Receive a free copy of the magazine Celluloide",
+   "Receive a free DVD",
+   "See a documentary on Sorrento",
+   "Meet the film director"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Meet the film director",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (d)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 6",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-la-7",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "bologna-council-awareness-campaign-about-abandoning",
+  "questionRef": "2014 HL Section LA Q7",
+  "questionText": "The Bologna Council awareness campaign is about\n(a) Bullying\n(b) Road safety\n(c) Abandoning pets\n(d) Child labour",
+  "questionChoices": [
+   "Bullying",
+   "Road safety",
+   "Abandoning pets",
+   "Child labour"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Abandoning pets",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (c)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 7",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-la-8",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-1",
+  "conceptId": "scholarship-winner-will-put-forward-project",
+  "questionRef": "2014 HL Section LA Q8",
+  "questionText": "The scholarship winner will\n(a) Put forward a project on energy saving\n(b) Write an original article on the environment\n(c) Be a talented artist\n(d) Develop a new marketing strategy",
+  "questionChoices": [
+   "Put forward a project on energy saving",
+   "Write an original article on the environment",
+   "Be a talented artist",
+   "Develop a new marketing strategy"
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Put forward a project on energy saving",
+    "marks": 2,
+    "contextNote": "The scheme sets the right option in bold: (a)."
+   }
+  ],
+  "notes": "The scheme prices Section A \"8x2\": 2 marks a question; the listening booklet prints this ask on page 2.",
+  "stem": "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Section A — Question 8",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Section A · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb1-1",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "elena-going-turin",
+  "questionRef": "2014 HL Section LB1 Q1",
+  "questionText": "Why is Elena going to Turin? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) To sign the contract for the apartment / She moves to Turin",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(ii) To start classes (on Wednesday) at the university/ She will attend University",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prints the tariff as '2 marks; 2 marks'; the listening booklet prints this ask on page 3.",
+  "stem": "Dialogue 1. Conversation between Elena and Marisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 1",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb1-2",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "does-elena-wish-live-near-hospital",
+  "questionRef": "2014 HL Section LB1 Q2",
+  "questionText": "Why does Elena wish to live near the hospital? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "She starts work early and there are no buses before 6.30",
+    "marks": 4,
+    "contextNote": "The scheme also prints, for shorter answers: “She will work in the Hospital (1 mark )”. Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks (2+2)'; the listening booklet prints this ask on page 3.",
+  "stem": "Dialogue 1. Conversation between Elena and Marisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 2",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb1-3",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "does-elena-roommate-home-every-weekend",
+  "questionRef": "2014 HL Section LB1 Q3",
+  "questionText": "Why does Elena’s roommate go home every weekend? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Her boyfriend lives in her home town.",
+    "marks": 2,
+    "contextNote": "The scheme also prints, for shorter answers: “She works (1 mark)”. Answer in English or Irish."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "She works as an (Alpine) Guide (at the weekend)",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks (2+2)'; the listening booklet prints this ask on page 3.",
+  "stem": "Dialogue 1. Conversation between Elena and Marisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 3",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb1-4",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "important-that-apartment-quiet-full",
+  "questionRef": "2014 HL Section LB1 Q4",
+  "questionText": "Why is it important that the apartment is quiet? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sometimes she will have to sleep during the day/after working the night in the hospital",
+    "marks": 4,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks (3+1)'; the listening booklet prints this ask on page 3.",
+  "stem": "Dialogue 1. Conversation between Elena and Marisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 1 — Question 4",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 1 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb2-1",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "lidia-feeling-angry-full",
+  "questionRef": "2014 HL Section LB2 Q1",
+  "questionText": "Why is Lidia feeling angry? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "She failed her driving test for the second time",
+    "marks": 4,
+    "contextNote": "The scheme also prints, for shorter answers: “She failed her test/she didn’t get her licence (2 marks)”. Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks(3+1)'; the listening booklet prints this ask on page 3.",
+  "stem": "Dialogue 2. Conversation between Lidia and Paolo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 1",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb2-2",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "does-lidia-say-about-her-theory",
+  "questionRef": "2014 HL Section LB2 Q2",
+  "questionText": "What does Lidia say about her theory test? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "She began to study for it 9 months ago",
+      "She did the test after 3 months",
+      "It was short",
+      "The questions/the test were/was not difficult/they were easy it was easy",
+      "She passed it no problem"
+     ]
+    },
+    "contextNote": "The scheme also prints, for shorter answers: “She passed it (1 mark)”. Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks (2 +2)'; the listening booklet prints this ask on page 3.",
+  "stem": "Dialogue 2. Conversation between Lidia and Paolo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 2",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb2-3",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "does-lidia-not-driving-with-her",
+  "questionRef": "2014 HL Section LB2 Q3",
+  "questionText": "Why does Lidia not go driving with her sister? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "They had an argument",
+      "She scraped/ damaged her car",
+      "Her sister’s car was stolen"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 marks (3 +3)'; the listening booklet prints this ask on page 3.",
+  "stem": "Dialogue 2. Conversation between Lidia and Paolo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 3",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb2-4",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "does-lidia-need-get-her-driving",
+  "questionRef": "2014 HL Section LB2 Q4",
+  "questionText": "Why does Lidia need to get her driving licence soon? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "At a job interview she said that she had it",
+    "marks": 2,
+    "contextNote": "The scheme also prints, for shorter answers: “She had a job interview (1 mark )”. Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '2 marks'; the listening booklet prints this ask on page 3.",
+  "stem": "Dialogue 2. Conversation between Lidia and Paolo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 2 — Question 4",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 2 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb3-1",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "about-simone-family",
+  "questionRef": "2014 HL Section LB3 Q1",
+  "questionText": "Give two details about Simone’s family.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Not very musical",
+      "His parents loved reading",
+      "They were bookworms",
+      "TV and radio (almost) always off"
+     ],
+     "perOptionSteps": [
+      3,
+      1
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks(3+1)'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 3. Interview with Simone Verdi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 1",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb3-2",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "did-change-from-playing-piano-guitar",
+  "questionRef": "2014 HL Section LB3 Q2",
+  "questionText": "Why did he change from playing the piano to the guitar?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "He began to like/ liked modern music more.",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '2 marks'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 3. Interview with Simone Verdi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 2",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb3-3",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "problems-did-band-have-when-first",
+  "questionRef": "2014 HL Section LB3 Q3",
+  "questionText": "What problems did the band have when they first started? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "They had very little money to buy music equipment",
+      "The neighbours complained because of the noise",
+      "Played in the garage"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks(2+2)'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 3. Interview with Simone Verdi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 3",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb3-4",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "happened-original-members-band",
+  "questionRef": "2014 HL Section LB3 Q4",
+  "questionText": "What happened to the original members of the band? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "No time",
+      "Went to college",
+      "Got married",
+      "Had a baby",
+      "Started a job"
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks(2+2)'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 3. Interview with Simone Verdi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 4",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb3-5",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "venues-did-simone-band-start-playing",
+  "questionRef": "2014 HL Section LB3 Q5",
+  "questionText": "In what venues did Simone’s band start playing? (b) Why were Simone’s parents worried about him?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "(a) — In small bars",
+    "marks": 1,
+    "contextNote": "The scheme prints “In small bars in the centre 4 marks (1+1+2)” over “that were frequented by young people”. Answer in English or Irish.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(a) — in the centre",
+    "marks": 1,
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(a) — that were frequented by young people",
+    "marks": 2,
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(b) — He may have given up his studies",
+    "marks": 2,
+    "id": "r-4"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(b) — He wouldn’t find a steady job",
+    "marks": 2,
+    "id": "r-5"
+   }
+  ],
+  "notes": "The scheme prints the tariff as '8 marks'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 3. Interview with Simone Verdi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 5",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb3-6",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "did-band-when-began-earn-some",
+  "questionRef": "2014 HL Section LB3 Q6",
+  "questionText": "What did the band do when they began to earn some money? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They rented a recording studio",
+    "marks": 2,
+    "contextNote": "Answer in English or Irish."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "They recorded their album",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks (2+2)'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 3. Interview with Simone Verdi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 6",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb3-7",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "linus-important-band",
+  "questionRef": "2014 HL Section LB3 Q7",
+  "questionText": "Why was the DJ Linus important for the band? Give two details.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "kind": "criterion",
+    "verbatim": "He heard them at the festival of Mediterranean music",
+    "marks": null,
+    "contextNote": "The scheme prints “Two of 3 marks” over three answers it prices one by one: “He heard them at the festival of Mediterranean music (2 marks)”; “He promoted their album/cd/them (1 mark) on his radio programme (1mark)”; “He interviewed them (1 mark)”. Judge your two answers against the 3 marks. Answer in English or Irish.",
+    "id": "r-1"
+   },
+   {
+    "kind": "criterion",
+    "verbatim": "He promoted their album/cd/them",
+    "marks": null,
+    "id": "r-2"
+   },
+   {
+    "kind": "criterion",
+    "verbatim": "He interviewed them",
+    "marks": null,
+    "id": "r-3"
+   }
+  ],
+  "notes": "The scheme prints the tariff as '3 marks'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 3. Interview with Simone Verdi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 7",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-lb3-8",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "L",
+  "topicId": "italian-3-0",
+  "conceptId": "from-where-does-simone-band-get",
+  "questionRef": "2014 HL Section LB3 Q8",
+  "questionText": "From where does Simone’s band get its inspiration?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Traditional music",
+      "Rock",
+      "Songs from the 60s"
+     ],
+     "perOptionSteps": [
+      2,
+      1
+     ]
+    },
+    "contextNote": "Answer in English or Irish."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '3 marks(2+1)'; the listening booklet prints this ask on page 4.",
+  "stem": "Dialogue 3. Interview with Simone Verdi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Dialogue 3 — Question 8",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Italian 2014 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Dialogue 3 · listening",
+   "title": "2014 Italian · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "secFileid": "LC013ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC013ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "it-2014-hl-c-1-a",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "C",
+  "topicId": "italian-6-0",
+  "conceptId": "1-written-composition-linked-to-reading-comprehe",
+  "questionRef": "2014 HL Section C Q1",
+  "questionText": "1. Written composition linked to reading comprehension (journalistic passage). (25 marks)\nCosa pensate delle attività di volontariato menzionate nell’articolo? Credete che siano delle esperienze che aiutano a maturare? Esistono simili iniziative nella vostra scuola o nella vostra comunità? Rispondete sulla base della vostra esperienza personale.",
+  "totalMarks": 25,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "1. Composition linked to journalistic passage 25 marks",
+    "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+   ],
+   "criteria": [
+    {
+     "id": "content",
+     "label": "Content and communication",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [
+      "Content and communication 15 marks Language 10 marks",
+      "Use the descriptors in Appendix 2",
+      "An introduction and conclusion are required",
+      "• Introduzione",
+      "• Sono delle esperienze che aiutano a maturare",
+      "• Simili iniziative nella vostra scuola o nella vostra comunità",
+      "• Esperienza personale",
+      "• Conclusione"
+     ]
+    },
+    {
+     "id": "language",
+     "label": "Language",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [
+      "Use the descriptors in Appendix 2"
+     ],
+     "bands": [
+      {
+       "label": "0 - 3",
+       "marks": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "guidance": [
+        "Very limited range of vocabulary, most verbs incorrect and many spelling mistakes"
+       ]
+      },
+      {
+       "label": "4 - 6",
+       "marks": [
+        4,
+        5,
+        6
+       ],
+       "guidance": [
+        "Adequate vocabulary, some incorrect verbs and agreements, and many spelling mistakes."
+       ]
+      },
+      {
+       "label": "7 -10",
+       "marks": [
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Idiomatic Italian, good vocabulary, good grammatical accuracy and few spelling mistakes."
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower",
+      "maxMarks": 5,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "bands": [],
+      "contentCriteria": [
+       "content"
+      ],
+      "contentAtMost": 7,
+      "rule": "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+     }
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 2"
+  },
+  "schemePages": [
+   18,
+   19,
+   21,
+   22
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Italian 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2014-hl-c-2",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "C",
+  "topicId": "italian-6-1",
+  "conceptId": "2-guided-composition-25-marks-using-the-ideas-li",
+  "questionRef": "2014 HL Section C Q2",
+  "questionText": "2. Guided Composition.\n(25 marks)\nUsing the ideas listed below describe how you had to deal with an unexpected situation.\nGiornata a scuola finita – comprare biglietto del lotto dal tabaccaio – ritornare a casa – parlare al telefono con amico/a per ore – guardare la tv a cena – dimenticarsi di controllare i numeri vincenti – grande sorpresa – progetti futuri con la vincita.",
+  "totalMarks": 25,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "2. Guided composition 25 marks",
+    "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+   ],
+   "criteria": [
+    {
+     "id": "content",
+     "label": "Content and communication",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [
+      "Candidates must not produce something learnt off by heart and of the point. It is not",
+      "necessary to use all the words or phrases given."
+     ]
+    },
+    {
+     "id": "language",
+     "label": "Language",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [
+      "Use the descriptors in Appendix 2"
+     ],
+     "bands": [
+      {
+       "label": "0 - 3",
+       "marks": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "guidance": [
+        "Very limited range of vocabulary, most verbs incorrect and many spelling mistakes"
+       ]
+      },
+      {
+       "label": "4 - 6",
+       "marks": [
+        4,
+        5,
+        6
+       ],
+       "guidance": [
+        "Adequate vocabulary, some incorrect verbs and agreements, and many spelling mistakes."
+       ]
+      },
+      {
+       "label": "7 -10",
+       "marks": [
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Idiomatic Italian, good vocabulary, good grammatical accuracy and few spelling mistakes."
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower",
+      "maxMarks": 5,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "bands": [],
+      "contentCriteria": [
+       "content"
+      ],
+      "contentAtMost": 7,
+      "rule": "In C1 and C2 where the marks awarded for content and communication are 7 or less, language will be marked out of 5."
+     }
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 2"
+  },
+  "schemePages": [
+   18,
+   19,
+   21,
+   22
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC Italian 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2014-hl-c-3-a",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "C",
+  "topicId": "italian-6-2",
+  "conceptId": "3-formal-writing-choose-either-a-or-b-50-marks-a",
+  "questionRef": "2014 HL Section C Q3(a)",
+  "questionText": "3. Formal Writing.\nChoose either (a) or (b).\n(50 marks)\n(a)\nAvete letto il seguente annuncio sulla “Gazzetta del lavoro” e avete deciso di fare domanda.\nAzienda leader nell'animazione turistica, ricerca animatori ai quali offre l'opportunità di lavorare nei villaggi turistici.\nSe siete in cerca di un lavoro divertente, se vi piace viaggiare e stare a contatto con la gente, se avete spirito di squadra e tanto entusiasmo non potete lasciarvi sfuggire questa occasione!\nsono: animatori di “junior club”, istruttori di nuoto, bagnini, istruttori fitness e DJ.\nCerchiamo ragazzi e ragazze da 16 anni a 25 anni, con ottime capacità comunicative e relazionali, grinta, simpatia...questi sono i requisiti principali che richiediamo.\nScrivete all’Ufficio Risorse Umane in Via 25 aprile, n.8, Rimini, oppure a info@starevent.it, indicando il lavoro per cui volete fare domanda, perché siete adatti per quel lavoro, la vostra esperienza lavorativa precedente e qualsiasi altra informazione utile.",
+  "totalMarks": 50,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "3. Formal Writing 50 marks",
+    "In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7."
+   ],
+   "criteria": [
+    {
+     "id": "format",
+     "label": "Format",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [
+      "Format 10 marks"
+     ]
+    },
+    {
+     "id": "content",
+     "label": "Content and communication",
+     "maxMarks": 25,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+     ],
+     "guidance": [
+      "• Correct register and appropriate greeting and ending are required for full marks",
+      "(Date and address are required for letter)",
+      "• Candidates are expected to make relevant points",
+      "• Each point should be expanded and developed.",
+      "(a) The following points to be covered",
+      "• Introduzione",
+      "• Lavoro scelto",
+      "• Qualità che ti rendono adatto per il lavoro",
+      "• Esperienza precedente",
+      "• Periodo di disponibilità / Conoscenza delle lingue or any other relevant piece of",
+      "information."
+     ]
+    },
+    {
+     "id": "language",
+     "label": "Language",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [
+      "Use the descriptors in Appendix 2"
+     ],
+     "bands": [
+      {
+       "label": "0 – 5",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Inappropriate/irrelevant vocabulary, most verbs incorrect, many spelling mistakes."
+       ]
+      },
+      {
+       "label": "6- 10",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Adequate vocabulary, some incorrect verbs and agreements, and some spelling mistakes."
+       ]
+      },
+      {
+       "label": "11- 15",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Correct topic related vocabulary, most verbs correct and few spelling mistakes."
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower",
+      "maxMarks": 7,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "bands": [],
+      "contentCriteria": [
+       "content"
+      ],
+      "contentAtMost": 12,
+      "rule": "In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7."
+     }
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 2"
+  },
+  "schemePages": [
+   18,
+   19,
+   21,
+   22
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC Italian 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2014-hl-c-3-b",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "C",
+  "topicId": "italian-6-2",
+  "conceptId": "3-formal-writing-choose-either-a-or-b-50-marks-b",
+  "questionRef": "2014 HL Section C Q3(b)",
+  "questionText": "3. Formal Writing.\nChoose either (a) or (b).\n(50 marks)\n(b)\nSiete appena tornati/e da un corso estivo di lingua italiana per stranieri. Scrivete una lettera alla Prof.ssa Rossi per raccontarle della vostra esperienza in Italia. Scrivete inoltre che non siete rimasti/e soddisfatti/e di come sono andate le cose durante la vostra permanenza.\nParlate di quello che non vi è piaciuto in particolare: gli alloggi, gli insegnanti e le lezioni, le escursioni e le attività per il tempo libero, ecc.\nDescrivete le conseguenze che questi problemi hanno avuto e quali sono state le vostre richieste al Direttore del corso per rimediare alla spiacevole situazione.",
+  "totalMarks": 50,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "3. Formal Writing 50 marks",
+    "In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7."
+   ],
+   "criteria": [
+    {
+     "id": "format",
+     "label": "Format",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [
+      "Format 10 marks"
+     ]
+    },
+    {
+     "id": "content",
+     "label": "Content and communication",
+     "maxMarks": 25,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+     ],
+     "guidance": [
+      "• Correct register and appropriate greeting and ending are required for full marks",
+      "(Date and address are required for letter)",
+      "• Candidates are expected to make relevant points",
+      "• Each point should be expanded and developed.",
+      "(b) The following points to be covered",
+      "• Introduzione",
+      "• Insoddisfazione generale",
+      "- alloggi",
+      "• Motivi di insoddisfazione - insegnanti e lezioni",
+      "- escursioni e atttività",
+      "- bonus extra",
+      "• Conseguenze",
+      "• Richiesta al Direttore"
+     ]
+    },
+    {
+     "id": "language",
+     "label": "Language",
+     "maxMarks": 15,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "guidance": [
+      "Use the descriptors in Appendix 2"
+     ],
+     "bands": [
+      {
+       "label": "0 – 5",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "guidance": [
+        "Inappropriate/irrelevant vocabulary, most verbs incorrect, many spelling mistakes."
+       ]
+      },
+      {
+       "label": "6- 10",
+       "marks": [
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Adequate vocabulary, some incorrect verbs and agreements, and some spelling mistakes."
+       ]
+      },
+      {
+       "label": "11- 15",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "guidance": [
+        "Correct topic related vocabulary, most verbs correct and few spelling mistakes."
+       ]
+      }
+     ],
+     "lowerScale": {
+      "label": "Lower",
+      "maxMarks": 7,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "bands": [],
+      "contentCriteria": [
+       "content"
+      ],
+      "contentAtMost": 12,
+      "rule": "In C3 where the marks awarded for content and communication are 12 or less, language will be marked out of 7."
+     }
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 2"
+  },
+  "schemePages": [
+   18,
+   19,
+   21,
+   22
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC Italian 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2014-hl-b3a-1",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "ir-onn-le-himscr-d-an-chaptaein-bellodi-in-1-cap",
+  "questionRef": "2014 HL Section B3A Q1",
+  "questionText": "Éiríonn le himscrúdú an Chaptaein Bellodi in 1. Captain Bellodi’s investigation in Il giorno Il giorno della civetta ar bhealaí ach ar bhealaí eile della civetta is both a successful and an ní éiríonn. Déan plé ar an ráiteas sin agus bíodh unsuccessful one. Discuss this statement with tagairtí agus samplaí cruinne agat ón úrscéal mar accurate references and examples from the thaca le do chuid pointí. novel in support of the points you make. (Ní mór trí phointe ar a laghad a dhéanamh.) (At least three points to be made.)",
+  "totalMarks": 60,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "B 3 Essay on prescribed text",
+    "Use the descriptors in Appendix 1"
+   ],
+   "criteria": [
+    {
+     "id": "essay",
+     "label": "Essay",
+     "maxMarks": 60,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+     ],
+     "guidance": [
+      "(51 - 60 marks)",
+      "Answers the question fully",
+      "Demonstrates very good knowledge of text as a whole",
+      "Makes accurate references to text in support of all points made",
+      "Little or no irrelevant material or repetition of points",
+      "GRADE B",
+      "(42 - 50 marks)",
+      "Most points covered",
+      "Demonstrates good knowledge of text as a whole",
+      "Makes a few references to the text",
+      "Some irrelevant material and repetition of points",
+      "GRADE C",
+      "(33 - 41 marks)",
+      "Answer not always very clear",
+      "Demonstrates some knowledge of text as a whole",
+      "Makes some references to the text, but they may be vague or inaccurate",
+      "Much irrelevant material and repetition of points",
+      "GRADE D",
+      "(24 – 32 marks)",
+      "Argumentation unclear",
+      "Some knowledge of text",
+      "Shows little or no knowledge of the text as a whole",
+      "Does not really answer the question",
+      "Makes little reference to the text",
+      "A lot of irrelevant material and repetition of points",
+      "GRADE E/F",
+      "(6 - 23 marks)",
+      "Shows almost no knowledge of text",
+      "No attempt at question asked",
+      "No reference to the text",
+      "All irrelevant material"
+     ]
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 1"
+  },
+  "schemePages": [
+   20
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Italian 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2014-hl-b3a-2",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "pl-igh-br-an-teidil-at-ar-rsc-al-sciascia-il-gio",
+  "questionRef": "2014 HL Section B3A Q2",
+  "questionText": "Pléigh brí an teidil atá ar úrscéal Sciascia Il giorno 2. How is the theme of contradiction portrayed in della civetta agus an bhaint atá aige le hábhar an the novel? Discuss the significance and úrscéil. Conas a léirítear téama na trasnaíochta san relevance of the title of Sciascia’s novel Il úrscéal? Beifear ag súil le tagairtí agus samplaí giorno della civetta. Accurate references and cruinne ón úrscéal mar thaca le do chuid pointí. examples from the novel are expected in (Ní mór trí phointe ar a laghad a dhéanamh.) support of the points you make. (At least three points to be made.)",
+  "totalMarks": 60,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "B 3 Essay on prescribed text",
+    "Use the descriptors in Appendix 1"
+   ],
+   "criteria": [
+    {
+     "id": "essay",
+     "label": "Essay",
+     "maxMarks": 60,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+     ],
+     "guidance": [
+      "(51 - 60 marks)",
+      "Answers the question fully",
+      "Demonstrates very good knowledge of text as a whole",
+      "Makes accurate references to text in support of all points made",
+      "Little or no irrelevant material or repetition of points",
+      "GRADE B",
+      "(42 - 50 marks)",
+      "Most points covered",
+      "Demonstrates good knowledge of text as a whole",
+      "Makes a few references to the text",
+      "Some irrelevant material and repetition of points",
+      "GRADE C",
+      "(33 - 41 marks)",
+      "Answer not always very clear",
+      "Demonstrates some knowledge of text as a whole",
+      "Makes some references to the text, but they may be vague or inaccurate",
+      "Much irrelevant material and repetition of points",
+      "GRADE D",
+      "(24 – 32 marks)",
+      "Argumentation unclear",
+      "Some knowledge of text",
+      "Shows little or no knowledge of the text as a whole",
+      "Does not really answer the question",
+      "Makes little reference to the text",
+      "A lot of irrelevant material and repetition of points",
+      "GRADE E/F",
+      "(6 - 23 marks)",
+      "Shows almost no knowledge of text",
+      "No attempt at question asked",
+      "No reference to the text",
+      "All irrelevant material"
+     ]
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 1"
+  },
+  "schemePages": [
+   20
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Italian 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2014-hl-b3b-1",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "n-fheiceann-marcovaldo-ach-maitheas-sa-d-lra-1-m",
+  "questionRef": "2014 HL Section B3B Q1",
+  "questionText": "Ní fheiceann Marcovaldo ach maitheas sa dúlra. 1. Marcovaldo sees only good in nature. Ach ní bhíonn aon rud mar a shíleann sé. However things aren’t always as he expects. Roghnaigh na trí scéal is fearr a léiríonn an ráiteas Choose three stories that best illustrate this sin, dar leat. Beifear ag súil le tagairtí agus samplaí statement in your opinion. Accurate references cruinne ón téacs mar thaca le do chuid pointí. and examples from the text are expected in support of the points you make.",
+  "totalMarks": 60,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "B 3 Essay on prescribed text",
+    "Use the descriptors in Appendix 1"
+   ],
+   "criteria": [
+    {
+     "id": "essay",
+     "label": "Essay",
+     "maxMarks": 60,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+     ],
+     "guidance": [
+      "(51 - 60 marks)",
+      "Answers the question fully",
+      "Demonstrates very good knowledge of text as a whole",
+      "Makes accurate references to text in support of all points made",
+      "Little or no irrelevant material or repetition of points",
+      "GRADE B",
+      "(42 - 50 marks)",
+      "Most points covered",
+      "Demonstrates good knowledge of text as a whole",
+      "Makes a few references to the text",
+      "Some irrelevant material and repetition of points",
+      "GRADE C",
+      "(33 - 41 marks)",
+      "Answer not always very clear",
+      "Demonstrates some knowledge of text as a whole",
+      "Makes some references to the text, but they may be vague or inaccurate",
+      "Much irrelevant material and repetition of points",
+      "GRADE D",
+      "(24 – 32 marks)",
+      "Argumentation unclear",
+      "Some knowledge of text",
+      "Shows little or no knowledge of the text as a whole",
+      "Does not really answer the question",
+      "Makes little reference to the text",
+      "A lot of irrelevant material and repetition of points",
+      "GRADE E/F",
+      "(6 - 23 marks)",
+      "Shows almost no knowledge of text",
+      "No attempt at question asked",
+      "No reference to the text",
+      "All irrelevant material"
+     ]
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 1"
+  },
+  "schemePages": [
+   20
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Italian 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
+ },
+ {
+  "id": "it-2014-hl-b3b-2",
+  "kind": "rubric",
+  "subjectId": "italian",
+  "level": "higher",
+  "year": 2014,
+  "section": "B",
+  "topicId": "italian-5-2",
+  "conceptId": "b-onn-marcovaldo-i-gc-na-ag-streachailt-chun-2-m",
+  "questionRef": "2014 HL Section B3B Q2",
+  "questionText": "Bíonn Marcovaldo i gcónaí ag streachailt chun 2. Marcovaldo’s life is a constant struggle to soláthar a dhéanamh dá theaghlach. An aontaíonn provide for his family. Do you agree with this tú leis an ráiteas seo? Beifear ag súil le tagairtí statement? Accurate references and examples agus samplaí cruinne ón téacs mar thaca le do from the text are expected in support of the chuid pointí. points you make. (Ní mór trí phointe ar a laghad a dhéanamh.) (At least three points to be made.) Lch 10 de 16 / Page 10 of 16",
+  "totalMarks": 60,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "B 3 Essay on prescribed text",
+    "Use the descriptors in Appendix 1"
+   ],
+   "criteria": [
+    {
+     "id": "essay",
+     "label": "Essay",
+     "maxMarks": 60,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+     ],
+     "guidance": [
+      "(51 - 60 marks)",
+      "Answers the question fully",
+      "Demonstrates very good knowledge of text as a whole",
+      "Makes accurate references to text in support of all points made",
+      "Little or no irrelevant material or repetition of points",
+      "GRADE B",
+      "(42 - 50 marks)",
+      "Most points covered",
+      "Demonstrates good knowledge of text as a whole",
+      "Makes a few references to the text",
+      "Some irrelevant material and repetition of points",
+      "GRADE C",
+      "(33 - 41 marks)",
+      "Answer not always very clear",
+      "Demonstrates some knowledge of text as a whole",
+      "Makes some references to the text, but they may be vague or inaccurate",
+      "Much irrelevant material and repetition of points",
+      "GRADE D",
+      "(24 – 32 marks)",
+      "Argumentation unclear",
+      "Some knowledge of text",
+      "Shows little or no knowledge of the text as a whole",
+      "Does not really answer the question",
+      "Makes little reference to the text",
+      "A lot of irrelevant material and repetition of points",
+      "GRADE E/F",
+      "(6 - 23 marks)",
+      "Shows almost no knowledge of text",
+      "No attempt at question asked",
+      "No reference to the text",
+      "All irrelevant material"
+     ]
+    }
+   ],
+   "markingGuideNote": "Use the descriptors in Appendix 1"
+  },
+  "schemePages": [
+   20
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION C",
+   "title": "Writing",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Italian 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task as the examination paper prints it."
+  }
  }
 ]
