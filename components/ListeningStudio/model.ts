@@ -33,7 +33,7 @@ import { hostedAudioPath } from '../MarkBank/audioStorage';
 /** Subjects with recording cards, in the order the Studio offers them. */
 export const LISTENING_SUBJECT_IDS = [
   'irish', 'french', 'german', 'spanish', 'italian', 'music',
-  'japanese', 'russian', 'polish', 'portuguese',
+  'japanese', 'russian', 'polish', 'portuguese', 'lithuanian',
 ] as const;
 
 export type ListeningCard = SecCard & { audioMaterial: CardAudioMaterial };
