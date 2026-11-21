@@ -362,28 +362,71 @@ def _sentences(text):
     return text[:end + 1] if end > 0 else ''
 
 
-# Shorter answers the heading repair moved out of these cards' options or
-# verbatims, where they had shipped as full answers. Quoted as the scheme
-# prints them until every listening card quotes its shorter answers.
 # Listening asks whose split prices separate answers in the order they are
 # given, not the printed pieces of one answer (review, 20 Nov).
 ORDER_FREE = {(2019, 'hl', 3, 3)}
 
-KEPT_LESSER = {
-    (2016, 'ol', 2, 4): ['(They were talking loudly and laughing 5 marks)', '(They were talking and laughing 4 marks)',
-                         '(They were messing/playing 3 marks)*', '(They were talking loudly 3 marks)',
-                         '(They were talking 2 marks)', '(They were laughing 2 marks)',
-                         '(They were (trying to) distract him 1 mark)'],
-    (2016, 'ol', 3, 4): ['(She (always) helps/supports him 2 marks)', '(She is kind 2 marks)', '(She is nice 1 mark)',
-                         '(Makes desserts 1 mark)'],
-    (2019, 'ol', 3, 8): ['(Tradition 2 marks)', '(City 1 mark)'],
-    (2022, 'ol', 3, 8): ['(To have a break/On holidays 2 marks)', 'The seaside 1 mark)'],
-    (2024, 'ol', 2, 2): ['(Working young people 4 marks)',
-                         '(People who would use a discount card (at the cinema/ theatre/restaurants) 4 marks)',
-                         'People on a budget (as there are no fees) 4 marks)', '(Young people 3 marks)',
-                         '(Working people 2 marks)', '(Giada herself 1 mark)', '(Children 1 mark)',
-                         '(Cinemas/theatres/restaurants 1 mark)'],
-}
+
+def _printed_lesser(S, ask):
+    """Every shorter answer the scheme prices for this ask, quoted as printed.
+
+    The reader keeps a shorter answer as (text, marks) with its brackets and
+    mark taken off; the quote is the scheme's own span for it, brackets, mark
+    and any asterisk included ("(They were messing/playing 3 marks)*", "The
+    classes are fun 1m", "He never feels alone (2m)"), and a bracket the
+    scheme leaves open stays open ("The seaside 1 mark)"). A list bullet is
+    not quoted. Returns (quote, text, marks) in printed order.
+
+    A rung with a price INSIDE it ("May (1m) (before going away) worked") is
+    two printed lines read as one, not a shorter answer; it is left out.
+    """
+    flat = _scheme_text(S)
+    out = []
+    for part in ask.parts or []:
+        for text, marks in part.rungs:
+            if not text or marks is None or ELEMENTS.search(text):
+                continue
+            if re.search(r'\(\s*\d+\s*m?\s*\)|\b\d+\s*m\b', text):
+                PRINTED_LESSER_SKIPPED.append(('price inside', text, marks))
+                continue
+            words = r'\s*'.join(re.escape(w) for w in BULLET.sub('', text).split())
+            # "(text 2 marks)", "text 1m", "text (2m)", "text (1)", "(… (at it)) 3 marks)"
+            unit = r'(?:\s*(?:m\b|marks?\b))'
+            hit = re.search(r'\(?\s*' + words + r'\s*\)*\s*(?:\(\s*' + str(marks) + unit + r'?\s*\)|'
+                            + str(marks) + unit + r'\s*\)?)\s*\*?', flat)
+            if hit is None:
+                PRINTED_LESSER_MISSING.append((text, marks))
+                continue
+            span = hit.group(0).strip()
+            if span not in [q for _at, q, _t, _m in out]:
+                out.append((hit.start(), span, BULLET.sub('', text), marks))
+    return [(q, t, m) for _at, q, t, m in sorted(out)]
+
+
+def _lesser_notes(S, ask, rows):
+    """The note sentences quoting the shorter answers this card does not yet show.
+
+    Left out: a shorter answer the card already offers as a row or an option,
+    or already quotes in a note. One worth the whole ask is not a shorter
+    answer, and is quoted as printed for full marks.
+    """
+    shown = {_flat(t).lower() for r in rows
+             for t in [r.get('verbatim') or ''] + list((r.get('group') or {}).get('options') or [])}
+    noted = ' '.join(_flat(r.get('contextNote') or '') for r in rows)
+    fresh = [(q, t, m) for q, t, m in _printed_lesser(S, ask)
+             if _flat(t).lower() not in shown and _flat(q) not in noted and f'“{_flat(t)}”' not in noted]
+    lesser = [q for q, _t, m in fresh if m < ask.total]
+    full = [q for q, _t, m in fresh if m >= ask.total]
+    for q in lesser + full:
+        assert _flat(q) in _scheme_text(S), q
+    return ((' The scheme also prints, for shorter answers: ' + '; '.join(f'“{q}”' for q in lesser) + '.'
+             if lesser else '')
+            + (' The scheme also prints, for full marks: ' + '; '.join(f'“{q}”' for q in full) + '.'
+               if full else ''))
+
+
+PRINTED_LESSER_SKIPPED = []
+PRINTED_LESSER_MISSING = []
 
 
 def cards(year, level, refuse, row_for, concept_for):
@@ -565,12 +608,7 @@ def cards(year, level, refuse, row_for, concept_for):
                 refuse(bad, ref, f'{year} {lvl} scheme, Dialogue {d} ask {ask.item}: '
                                  f'{ask.parts[0].notation!r}')
                 continue
-            kept = KEPT_LESSER.get((year, level, d, n), [])
-            for piece in kept:
-                assert _flat(piece) in _scheme_text(S), (ref, piece)
-            if kept:
-                rows[0]['contextNote'] = (rows[0].get('contextNote', '') + ' The scheme also prints, for '
-                                          'shorter answers: ' + '; '.join(f'“{piece}”' for piece in kept) + '.').strip()
+            rows[0]['contextNote'] = (rows[0].get('contextNote', '') + _lesser_notes(S, ask, rows)).strip()
             rows[0]['contextNote'] = (rows[0].get('contextNote', '') +
                                       ' Answer in English or Irish.').strip()
             out.append({

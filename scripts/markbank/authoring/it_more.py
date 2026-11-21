@@ -298,8 +298,37 @@ def _reading_rows(year, level, reading):
         card['rows'], card['tariffModel'] = rows, {'kind': o['tariff']}
 
 
+# A shorter answer printed with a condition on the line under it, which the
+# reader joined into ONE OPTION, so it read as a full answer: the option goes,
+# and the note quotes it with its condition, as the reader quotes a starred one.
+OPTION_TO_NOTE = {
+    # 2016 Ordinary B1 3(b): "(Flexible /enthusiastic/motivated 1 mark)" over
+    # "but only if it is the only answer given out of four possibilities )".
+    'it-2016-ol-b1-3-b': (
+        '(Flexible /enthusiastic/motivated 1 mark) but only if it is the only answer given out of four '
+        'possibilities )',
+        '“Be available to go on business trips” 1 mark.',
+        '“Be available to go on business trips” 1 mark; “Flexible /enthusiastic/motivated” 1 mark. The scheme '
+        'adds to the shorter answer “Flexible /enthusiastic/motivated”: “but only if it is the only answer given '
+        'out of four possibilities )”.',
+        ['(Flexible /enthusiastic/motivated 1 mark)', 'but only if it is the only answer given out of four '
+         'possibilities )']),
+}
+
+
 def _note_fixes(cards, year, level):
     import re as _re
+    for cid, (option, old, new, pieces) in OPTION_TO_NOTE.items():
+        card = next((c for c in cards if c['id'] == cid), None)
+        if card is None:
+            continue
+        it_writing.Scheme(year, level).check(*pieces)
+        options = card['rows'][0]['group']['options']
+        assert option in options, (cid, options)
+        options.remove(option)
+        note = card['rows'][0].get('contextNote', '')
+        assert note.count(old) == 1, (cid, note)
+        card['rows'][0]['contextNote'] = note.replace(old, new)
     for cid, (pattern, printed, pieces) in NOTE_FIXES.items():
         card = next((c for c in cards if c['id'] == cid), None)
         if card is None:

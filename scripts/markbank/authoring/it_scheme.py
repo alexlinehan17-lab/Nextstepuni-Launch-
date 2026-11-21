@@ -207,7 +207,10 @@ INSTRUCTION = re.compile(r'\b(?:points?|elements?)\s+(?:is|are)\s+required\b'
                          # only be used once" is the footnote it points to)
                          r'|^\*\s*\(|^\*.*\b(?:only|if|must|marks?|allocated|reference)\b'
                          r'|\bcan\s+only\s+be\s+used\b'
-                         r'|^incorrect\b.*\bminus\s+\d', re.I)
+                         r'|^incorrect\b.*\bminus\s+\d'
+                         # "Maximum of 3 marks will be awarded for inaccurate
+                         # combination of points" (2017 Ordinary Dialogue 1)
+                         r'|^maximum\s+of\s+\d+\s+marks?\b', re.I)
 # The paper's instruction echoed on the scheme's head line: "Give four
 # details", "One point for Nicole one point for Aurora", "Details: Two of:".
 ECHO = re.compile(r'^give\s+(?:one|two|three|four|five)\b|\bpoints?\s+for\b'
@@ -236,7 +239,10 @@ NOTE = re.compile(
     r'|All\s+candidates\s+awarded\b|These?\s+last\s+two\s+lesser\b'
     r'|This\s+lesser\s+answer\b|Where\s+(?:a|the|marks)\b|Marks\s+awarded\b'
     r'|For\s+good\s+points\b|Use\s+the\s+descriptors\b|Evidence\s+is\s+needed\b'
-    r'|The\s+candidates?\s+must\b|Accept\b|Allow\b'
+    # "Accept" only in an examiner's words: "Accept your own limits" is one of
+    # 2016 Ordinary Dialogue 3 Q2's answers.
+    r'|The\s+candidates?\s+must\b|Allow\b'
+    r'|Accept\s+(?:any|all|also|either|both|other|similar|reasonable|answers?|the\s+following)\b'
     # "The answer 'She provides (online) books and resources' can only be
     # awarded marks once, either in part (a) or in part (b)" is an examiner's
     # instruction, and it shipped as a claimable four-mark answer.
@@ -1582,10 +1588,12 @@ con col su sul sulla sui per tra fra e ed o che chi cui non si ci ne
 come dove quando ma se sono ha hanno era erano essere fare
 puo puoi possono deve devono
 the of to and or for with is are was were that this these those their his her
-its from on at by as be been has have had not but if so into about out up
+its from on at by as be been has have had not but if so into about out
 can could may might must will would should do does did
 throughout during until than towards within without
 """.split())
+# NOT "up": an answer can end on it, and 2016 Ordinary Dialogue 3 Q2 prints
+# "Not to give up" over "Accept your own limits" as two of its answers.
 # NOT the comma. The SEC ends an option with one — 2024 Ordinary answers "give
 # three details" with "Like Ivy, she painted/drew from an early age," and four
 # more lines just like it — and treating a trailing comma as a wrap welded all
