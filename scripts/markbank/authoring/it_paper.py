@@ -700,7 +700,44 @@ class ItPaper:
             prev = best.get(key)
             if prev is None or len(text) > len(prev):
                 best[key] = text
+        if any(re.search(r'\s[12]\s*\.\s', t) for t in best.values()):
+            # 2014 sets the Irish and English columns so close that a row reads
+            # across both ("Éiríonn le himscrúdú ... in 1. Captain Bellodi's
+            # investigation in Il giorno Il giorno della civetta ar bhealaí").
+            # Read the English column alone: the words right of its own "1."
+            # and "2." markers, line by line, each title under the "A." or "B."
+            # printed above it, the page's folio left out.
+            best = self._essay_english_column(page)
         return [(k[0], k[1], best[k], page) for k in sorted(best)]
+
+    def _essay_english_column(self, page):
+        with pymupdf.open(self.path) as doc:
+            pg = doc[page - 1]
+            words, width = pg.get_text('words'), pg.rect.width
+        # The English column's own markers, and its edge just left of the
+        # leftmost of them (2012 sets them at x 313-316).
+        marks = [w for w in words if re.fullmatch(r'[12]\.', w[4]) and w[0] > width / 3]
+        left = min(w[0] for w in marks) - 2
+        heads = sorted((w[1], w[4][0]) for w in words if re.fullmatch(r'[AB]\.', w[4]))
+        lines = {}
+        for w in words:
+            if w[0] >= left:
+                lines.setdefault(round(w[1]), []).append(w)
+        best, cur = {}, None
+        for y in sorted(lines):
+            row = [w[4] for w in sorted(lines[y], key=lambda w: w[0])]
+            text = ' '.join(row)
+            if (FURNITURE.match(_clean(text)) or re.search(r'\bPage\s+\d+\s+of\s+\d+', text)
+                    or re.fullmatch(r'\d{1,2}\s+of\s+\d{1,2}', text)):
+                continue
+            if re.fullmatch(r'[12]\.', row[0]):
+                route = next((r for hy, r in reversed(heads) if hy < y), None)
+                cur = (route, int(row[0][0]))
+                best[cur] = ' '.join(row[1:])
+                continue
+            if cur is not None and not any(abs(hy - y) < 3 for hy, _r in heads):
+                best[cur] = f'{best[cur]} {text}'
+        return {k: ' '.join(v.split()) for k, v in best.items() if k[0]}
 
     def writing_asks(self):
         """[(item, letter, text, page)] for Section C.
