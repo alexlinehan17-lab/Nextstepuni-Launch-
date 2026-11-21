@@ -25,8 +25,9 @@ const level = params.get('level') ?? 'higher';
 const root = document.getElementById('root');
 if (root) {
   createRoot(root).render(
-    <div className="product-shell" style={{ maxWidth: 1140, margin: '0 auto', padding: '24px 20px' }}>
-      <MarkBank studio uid={DEMO_STUDENT_UID} studentSubjects={[{ subjectName: subject, level }]} />
-    </div>,
+    <MarkBank
+      studio uid={DEMO_STUDENT_UID}
+      studentSubjects={[{ subjectName: subject, level }, { subjectName: 'Irish', level: 'higher' }, { subjectName: 'French', level: 'higher' }]}
+    />,
   );
 }
