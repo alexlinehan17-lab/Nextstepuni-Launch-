@@ -172,11 +172,16 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
       // Sections B and C share one booklet and both restart at Q1; the Atlas lists n 1-5 once, so a Section C card
       // has no Atlas question of its own.
       // Since the 19 Nov release some papers list Section C after Section B's five questions (2024: C Q1 is n 6).
+      // The 2010-2019 paper (one booklet, LC098[AG]LP000EV) is listed straight through: Section A 1-12, Section B
+      // 13-17, Section C 18-20. Where the card's own booklet lists row 13, Section B Qk is 12+k and Section C Qk 17+k;
+      // the 2020-2026 Section B and C booklet (…039…) lists no row 13 and keeps the rule above (coordinator, 21 Nov).
+      const k = qnum(ref); if (!k) return { fail: 'unreadable-ref', cls: 'inferred' };
+      const n = Number(k);
+      if (c.section === 'B') return { fileid: fid, cands: [{ ifHas: '13', n: String(12 + n) }, k], cls: 'inferred' };
       if (c.section === 'C') {
-        const k = qnum(ref);
-        return k ? { fileid: fid, cands: [{ ifHas: String(5 + Number(k)), n: String(5 + Number(k)) }], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
+        return { fileid: fid, cands: [{ ifHas: '13', n: String(17 + n) }, { ifHas: String(5 + n), n: String(5 + n) }], cls: 'inferred' };
       }
-      const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
+      return { fileid: fid, cands: [k], cls: 'inferred' };
     }
     case 'religious-education': {
       const printed = ctx.reSections.get(`${c.year}|${c.level}|${c.paperFileid}`);
