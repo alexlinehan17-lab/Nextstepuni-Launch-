@@ -45,9 +45,40 @@ from eu_paper import EuPaper, cfg                                    # noqa: E40
 from eu_all import card_id, question_ref, source_material           # noqa: E402
 from eu_topics import (topic_for, concept_for, answer_language,      # noqa: E402
                        language_note, ONE_LANGUAGE, LANGUAGE_NAME)
+import lt_all                                                       # noqa: E402
+import lt_topics                                                    # noqa: E402
+
+# The subjects whose census walks the paper with lt_paper.LtPaper (Latvian and
+# Czech never left the old examination; paper_census.SUBJECTS 'walker': 'lt').
+LT_SUBJECTS = {'latvian', 'czech'}
+# Modern Greek's census walks the paper with mgr_paper.MgrPaper (groups, not parts).
+MGR_SUBJECTS = {'modern-greek'}
+SUBJECT_NAME = {**LANGUAGE_NAME, **lt_topics.LANGUAGE, 'modern-greek': 'Modern Greek'}
+import eu_topics as _eu_topics                                      # noqa: E402
+TARGET_WORDS_KNOWN = set(_eu_topics.TARGET_WORDS)
 from pl_listen_lib import (S, J, PL, one, menu, shown, graded,      # noqa: E402,F401
                            components, Graded, Shown, One, Menu, Sel, Join)
 from pl_listen_specs import build_rows                               # noqa: E402
+import pl_listen_specs as _pls                                      # noqa: E402
+
+_one_line_percent = _pls.percent_of
+
+
+def _percent_of(doc, n):
+    """pl_listen_lib.percent_of, also reading a percentage the SEC wrapped:
+    "... – 30" ending one scheme line and "%." opening the next (Czech 2015
+    criterion 3). Only that shape; anything else still refuses."""
+    try:
+        return _one_line_percent(doc, n)
+    except ValueError:
+        line, prev = doc['scheme'][n - 1], doc['scheme'][n - 2] if n > 1 else ''
+        m = re.search(r'(\d{1,3})\s*$', prev)
+        if re.match(r'\s*%', line) and m:
+            return int(m.group(1))
+        raise
+
+
+_pls.percent_of = _percent_of   # the graded-row builder this lane uses (sl_lib only)
 
 UNPRINTED_ANSWER = 'The scheme prints no answer for this part.'
 NO_SCHEME_PUBLISHED = 'The SEC published no marking scheme for this paper.'
@@ -59,7 +90,27 @@ LANE = 'small-languages lane, 20 Nov 2026'
 KEY = re.compile(r'^(III|II|I)(\d{1,2})(\w)?$')
 
 
+# A question the paper prints with NO number, keyed by the census's ADDED_ASKS
+# ("I1A": Maltese 2019's unnumbered question between Q1 and Q2).
+ADDED_KEY = re.compile(r'^(III|II|I)(\d{1,2}[A-Z])$')
+
+
+# Modern Greek: the census's own section token, "S1Q2" (group 1, question 2),
+# "S2" (group 2, one unnumbered task), "SIIQ1" (2021's part II).
+MGR_KEY = re.compile(r'^S(I{1,3}|[123])(?:Q(\d{1,2}))?$')
+
+
 def parse_key(text):
+    m = MGR_KEY.match(text)
+    if m:
+        return (m.group(1), int(m.group(2)) if m.group(2) else None, None, None)
+    m = ADDED_KEY.match(text)
+    if m:
+        return (m.group(1), m.group(2), None, None)
+    if text in ('I', 'II', 'III'):
+        # a part that prints one task and no number (Czech "Část 2": the
+        # commentary), cited "Section II" as the census keys it
+        return (text, None, None, None)
     m = KEY.match(text)
     if not m:
         raise ValueError(f'not a classic key: {text!r}')
@@ -73,7 +124,10 @@ def scheme_lines(subject, year, level='hl'):
 
 
 # ----------------------------------------------------------------- prices ---
-MARK_WORD = eu_paper.MARK_WORD
+# eu_paper's mark words, with the Czech and Latvian forms the lt papers print
+# ("[5 bodů]", "(5 punktu)", "1 punkts") and Ukrainian ("(5 балів)", "(5 × 1 бал)"), each before its shorter stem so the
+# alternation does not stop at "bod" / "punkt" (Czech drafter, 20 Nov).
+MARK_WORD = r'bodů|punktu|punkts|балів|бали|бал|' + eu_paper.MARK_WORD
 # The papers' price words plus the bare "p" some sittings print ("(1 p)",
 # "(5 p)", Dutch 2017), which the census's own tariff reader does not take.
 PRICE_WORD = MARK_WORD + r'|p\.?'
@@ -153,6 +207,9 @@ class PartPrice:
     (30 punten)", "ČASŤ III (40/100)" (eu_paper._part_head_tariff)."""
     def read(self, doc):
         ask, P = doc['ask'], doc['P']
+        if hasattr(P, 'part_total'):
+            total, head = P.part_total(ask.section)
+            return 1, total, f'{head} ({total})'
         part_pat = re.compile(cfg(P.subject, 'classic_part'), re.I)
         part_map = cfg(P.subject, 'classic_part_map') or {}
         got = set()
@@ -275,8 +332,11 @@ class Remainder:
 
     def note(self, doc):
         t, tn, rest = self._sum(doc)
+        # a part's total is printed on its head (often as a cell, "(30/100)"): say
+        # so, never quote a notation the paper does not print (Finnish 2023)
+        where = ('on its head' if isinstance(self.total, PartPrice) else f'("{tn}")')
         return (f'Neither the paper nor the scheme prints a mark for this question. The paper prints '
-                f'{t} marks for the part ("{tn}") and {rest} for its other questions, so this one '
+                f'{t} marks for the part {where} and {rest} for its other questions, so this one '
                 f'carries the remaining {t - rest} ({t} - {rest} = {t - rest}).')
 
 
@@ -288,13 +348,41 @@ class R:
     """One card: the paper's address, its rows, the price it must add up to,
     and the notes. `whole` = `questionTotal` (rows shown, not claimed)."""
     def __init__(self, key, rows, total=None, whole=False, note=None, rownote=None,
-                 question=None, source=True, stem=None, pages=None):
+                 question=None, source=True, stem=None, pages=None, concept=None, unpriced=None):
         self.key, self.rows, self.total, self.whole = key, rows, total, whole
+        # CARD-STANDARD 10i: an Unpriced(label, total) where the paper prints
+        # marks only for the section the ask sits in.
+        self.unpriced = unpriced
         self.note, self.rownote, self.question = note, rownote, question
         self.source, self.stem = source, stem
         # The question paper's pages that print the reading text, where the
         # census's own reading of them is wrong (checked on the render).
         self.pages = pages
+        # concept='question': the conceptId from the card's own (printed) question,
+        # where the census text it is usually built from is misaligned (Danish
+        # 2024 reads each Q1 expression one letter late).
+        self.concept = concept
+
+
+class Unpriced:
+    """CARD-STANDARD 10i: neither the paper nor the scheme prints marks for
+    this ask, only for the section it sits in. `label` selects the section's
+    name as the paper prints it (PL/PC on the paper's line, or a callable on
+    the document); `total` is the section's printed total (default PARTP()).
+    The card shows the scheme's answer rows with no marks, carries no total
+    of its own (0) and names the section and its total (`unpricedSection`);
+    the session prints "The paper gives N marks for <label> as a whole, not
+    for each question." Never split the section total into per-ask marks."""
+    def __init__(self, label, total=None):
+        self.label, self.total = label, total
+
+    def read(self, doc):
+        label = self.label.text(doc) if hasattr(self.label, 'text') else self.label(doc)
+        _c, total, notation = (self.total or PARTP()).read(doc)
+        label = label.strip()
+        if not label:
+            raise ValueError('10i: the section label lifts empty')
+        return label, total, notation
 
 
 class NoScheme:
@@ -511,15 +599,27 @@ RULE_WORDS = {
     # отговори ... бъл гарски език.", rendered p2 at 300 dpi): matched, and
     # quoted as printed.
     'bulgarian': (r'В ?сич ?ки отговори', r'бъл ?гарск'),
-    'croatian': (r'Svi odgovori', r'hrvatsk'),
+    # Croatian 2016 breaks "Svi" / "odgovori moraju biti na hrvatskome jeziku." over two
+    # lines; 2014 words it "Odgovore napišite na hrvatskome jeziku, ...".
+    'croatian': (r'Svi odgovori|Svi$|Odgovore napišite', r'hrvatsk'),
     'danish': (r'Alle (?:svar|spørgsmål|opgaver)', r'dansk'),
-    'estonian': (r'K[õo]ikidele', r'eesti'),
+    'estonian': (r'K[õo]ikidele|Ülesannetele tuleb', r'eesti'),
     'finnish': (r'Vastaa', r'suome'),
-    'hungarian': (r'[Vv]álaszoljon', r'magyar'),
+    # Hungarian: "Válaszolj ..." (2010, 2011, 2020), "... válaszoljon ..." and "Minden
+    # válaszát magyarul írja le!" (2021, 2022).
+    'hungarian': (r'[Vv]álaszolj(?:on)?\b|Minden válaszát', r'magyar'),
     'slovakian': (r'[Oo]dpove', r'slovensk'),
-    'slovenian': (r'[Oo]dgovor', r'slovensk'),
+    'slovenian': (r'[Oo]dgovor', r'sloven(?:sk|šč)'),
     'swedish': (r'Alla? svar', r'svensk'),
     'maltese': (r'[Ww]ieġeb|[Tt]weġibiet', r'[Mm]alti'),
+    # Czech and Latvian print the rule on their own p2 (the lt walker's live
+    # cards say only that the question is in the language; new cards quote it).
+    'ukrainian': (r'відповід', r'українськ'),
+    # "Οι απαντήσεις να δοθούν στα νέα Ελληνικά."; 2021 "Όλες οι απαντήσεις πρέπει να γραφούν ..."
+    # (2016 prints "... στα νέα ελληνικά." in lower case)
+    'modern-greek': (r'απαντήσεις', r'[Εε]λληνικ|[Νν]εοελληνικ'),
+    'czech': (r'Všechny otázky', r'česk'),
+    'latvian': (r'Visām atbildēm', r'latvisk'),
 }
 RULE_LINES = 3      # the rule's sentence ends within this many printed lines
 
@@ -552,12 +652,13 @@ def fix_text(subject, year, text):
         text = text.replace(bad, good)
     return text
 LATIN_SUBJECTS = {'dutch', 'romanian', 'hungarian', 'slovakian', 'swedish', 'estonian', 'finnish',
-                  'croatian', 'danish', 'slovenian', 'maltese'}
+                  'croatian', 'danish', 'slovenian', 'maltese', 'czech', 'latvian'}
 
 
 # A sentence ends at . ! ? followed by an upper-case letter, a line end or the
-# text's end; not at "I." in "az I., II. és III. részben" (Hungarian).
-SENT_END = re.compile(r'[.!?](?=\s+[A-ZÀ-ÖØ-ÞĀ-Ž\u0400-\u042f]|\s*$)')
+# text's end, or a bracket opening one ("... slovenščini. (Največ 100 točk)",
+# Slovenian 2024); not at "I." in "az I., II. és III. részben" (Hungarian).
+SENT_END = re.compile(r'[.!?](?=\s+[(\[]?[A-ZÀ-ÖØ-ÞĀ-Ž\u0400-\u042f\u0386-\u03ab]|\s*$)')
 
 
 def rule_sentence(subject, doc):
@@ -570,35 +671,38 @@ def rule_sentence(subject, doc):
     for page in sorted({p for p, _t in doc['paper']}):
         lines = [re.sub(r'\s+', ' ', t).strip() for p, t in doc['paper'] if p == page]
         for i, line in enumerate(lines):
-            m = answer.search(line)
-            if not m:
-                continue
-            # the sentence's start: after the last sentence end before the
-            # answer word, on this line or the one above it
-            prev = lines[i - 1] if i else ''
-            combined = f'{prev} {line}' if prev else line
-            at = (len(prev) + 1 if prev else 0) + m.start()
-            ends = [e.end() for e in SENT_END.finditer(combined[:at])]
-            start = ends[-1] if ends else (len(prev) + 1 if prev else 0)
-            # Cut, never re-joined: the printed spacing stands ("It‐tweġibiet",
-            # where the answer word opens inside a hyphenated word; Maltese 2022).
-            text = combined[start:].strip()
-            lead = combined[start:at].strip()
-            for nxt in lines[i + 1:i + RULE_LINES]:
+            # every answer word on the line: the rule may follow another use of
+            # it ("... odpovedajte na otázky ... častiach. Odpovede napíšte po
+            # slovensky ...", Slovakian)
+            for m in answer.finditer(line):
+                # the sentence's start: after the last sentence end before the
+                # answer word, on this line or the one above it
+                prev = lines[i - 1] if i else ''
+                combined = f'{prev} {line}' if prev else line
+                at = (len(prev) + 1 if prev else 0) + m.start()
+                ends = [e.end() for e in SENT_END.finditer(combined[:at])]
+                start = ends[-1] if ends else (len(prev) + 1 if prev else 0)
+                # Cut, never re-joined: the printed spacing stands ("It‐tweġibiet",
+                # where the answer word opens inside a hyphenated word; Maltese 2022).
+                text = combined[start:].strip()
+                lead = combined[start:at].strip()
+                for nxt in lines[i + 1:i + RULE_LINES]:
+                    stop = SENT_END.search(text, len(lead))
+                    if stop:
+                        break
+                    # ... unless the next line runs on in lower case, or opens with a part's
+                    # Roman numeral ("az I., II. és" / "III. részben", Hungarian)
+                    if lang.search(text) and not re.match(r'[a-zà-öø-ÿā-ž\u0430-\u044f]|(?:I{1,3}|IV)\.\s', nxt):
+                        break
+                    text = f'{text} {nxt}'
                 stop = SENT_END.search(text, len(lead))
-                if stop:
-                    break
-                if lang.search(text) and not re.match(r'[a-zà-öø-ÿā-ž\u0430-\u044f]', nxt):
-                    break
-                text = f'{text} {nxt}'
-            stop = SENT_END.search(text, len(lead))
-            sent = text[:stop.end()] if stop else text
-            if lang.search(sent):
-                for bad, good in RULE_FIXES.get((subject, doc['P'].year), {}).items():
-                    sent = sent.replace(bad, good)
-                if subject in LATIN_SUBJECTS and re.search('[\u0400-\u04ff\ufffd]', sent):
-                    raise ValueError(f'{subject} {doc["P"].year}: rule text carries an unrepaired glyph: {sent!r}')
-                return page, sent
+                sent = text[:stop.end()] if stop else text
+                if lang.search(sent):
+                    for bad, good in RULE_FIXES.get((subject, doc['P'].year), {}).items():
+                        sent = sent.replace(bad, good)
+                    if subject in LATIN_SUBJECTS and re.search('[\u0400-\u04ff\ufffd]', sent):
+                        raise ValueError(f'{subject} {doc["P"].year}: rule text carries an unrepaired glyph: {sent!r}')
+                    return page, sent
     return None
 
 
@@ -618,8 +722,10 @@ def printed_page(path, pdf_page):
         for b in page.get_text('dict')['blocks']:
             for ln in b.get('lines', []):
                 t = ''.join(sp['text'] for sp in ln['spans']).strip()
-                if re.fullmatch(r'\d{1,2}', t) and (ln['bbox'][1] < 100 or ln['bbox'][1] > h - 100):
-                    nums.add(int(t))
+                # a bare number, or a footer "Page 2 of 4" (Modern Greek 2011; second reader, 20 Nov)
+                m = re.fullmatch(r'(\d{1,2})|Page\s+(\d{1,2})\s+of\s+\d{1,2}', t, re.I)
+                if m and (ln['bbox'][1] < 100 or ln['bbox'][1] > h - 100):
+                    nums.add(int(m.group(1) or m.group(2)))
         cands.append(nums)
     votes = collections.Counter(n - (i + 1) for i, nums in enumerate(cands) for n in nums)
     if not votes:
@@ -634,24 +740,39 @@ def rule_note(subject, doc, language):
     with the page number the booklet prints (coordinator, 20 Nov: wording and
     page as printed). eu_topics.language_note quotes one sitting's sentence for
     every sitting and says it is printed "on its own first page", the cover."""
-    if subject not in ONE_LANGUAGE:
+    if subject not in ONE_LANGUAGE and subject not in RULE_WORDS:
         return language_note(subject, language)
     found = rule_sentence(subject, doc)
+    if found is None and subject in LT_SUBJECTS:
+        # Latvian 2024 and 2025 print no answer-language rule at all ("Atbildiet
+        # uz jautājumiem!" only): the lt walker's own note, which claims none.
+        return lt_topics.language_note(subject, SUBJECT_NAME[subject], doc['P'].year)
     if found is None:
         raise ValueError(f'{subject}: the paper prints no answer-language rule')
     page = printed_page(doc['P'].path, found[0])
     where = f'on page {page}' if page else 'above its questions'
-    return (f'The examination requires every answer in {LANGUAGE_NAME[subject].upper()}. '
+    return (f'The examination requires every answer in {SUBJECT_NAME[subject].upper()}. '
             f'The paper prints the rule {where}: "{found[1]}"')
 
 
 def part_head(P, section):
     """The part's own printed head ("Deel 2: commentaar")."""
+    if hasattr(P, 'part_head'):
+        return P.part_head(section)
     part_pat = re.compile(cfg(P.subject, 'classic_part'), re.I)
     part_map = cfg(P.subject, 'classic_part_map') or {}
+    tail = cfg(P.subject, 'classic_part_tail')
     heads = []
     for line in P.lines:
         pm = part_pat.match(line.text) or part_pat.match(re.sub(r'\s+', '', line.text))
+        if not pm and tail and re.fullmatch(r'(?:I{1,3}|[123])\s*\.?', line.text.strip()):
+            # The numeral set as a cell of its own, "II." + "dio [30 bodova]"
+            # (Croatian 2015-2020): eu_paper's classic_part_tail joins them, as
+            # the census does.
+            nxt = sorted((l for l in P.lines if l.page == line.page and abs(l.y - line.y) < 2 and l.x > line.x),
+                         key=lambda l: l.x)
+            if nxt and re.match(tail, nxt[0].text.strip(), re.I):
+                pm = part_pat.match(f'{line.text.strip()} {nxt[0].text.strip()}')
         if pm:
             token = next(g for g in pm.groups() if g).lower()
             if (part_map.get(token) or eu_paper._part_token(token)) == section:
@@ -659,13 +780,20 @@ def part_head(P, section):
                 # line, "Deel 2:" + "Commentaar" (Dutch 2023), price cells aside.
                 cells = [l.text for l in P.lines if l.page == line.page and abs(l.y - line.y) < 2
                          and l.x > line.x and not TARIFF_EDGE.fullmatch(l.text.strip())
-                         and not TARIFF_WORDED.fullmatch(' ' + l.text.strip())]
+                         and not TARIFF_WORDED.fullmatch(' ' + l.text.strip())
+                         # an unbracketed total, "30 marka" (Maltese 2019 p2)
+                         and not re.fullmatch(r'\d{1,3}\s*(?:' + MARK_WORD + r')', l.text.strip(), re.I)]
                 heads.append(' '.join([line.text] + cells))
     return heads[-1] if heads else None
 
 
+# Modern Greek's census keys its groups by number ("ΟΜΑΔΑ 1η"): the parts they are.
+MGR_PART = {'1': 'I', '2': 'II', '3': 'III'}
+
+
 def essay_part(section, two_part):
     """The part an ask is answered as: a two-part sitting's Part II is its essay."""
+    section = MGR_PART.get(section, section)
     return 'III' if two_part and section == 'II' else section
 
 
@@ -675,11 +803,137 @@ def default_price(key):
     return PP() if key[0] == 'I' else PARTP()
 
 
+class LtView:
+    """A Latvian or Czech paper walked by lt_paper.LtPaper, the walker their
+    census uses, seen through the EuPaper interface the card builder reads:
+    the census's own keys, Part I's reading pages and leads by question
+    number, and each part's head and printed share ("Část 1 [30 bodů]",
+    "I daļa (30 punkti)"). lt asks print no per-ask tariff the walker reads:
+    prices come from PaperP/PY/SP in the specs."""
+    def __init__(self, year, level, subject):
+        import lt_paper
+        self._P = lt_paper.LtPaper(year, level, subject)
+        self.year, self.level, self.subject, self.path = year, level, subject, self._P.path
+        self.lines = self._P.lines
+        self.text_pages = {}
+        self._asks = [self._wrap(a) for a in self._P._asks]
+
+    @staticmethod
+    def _wrap(a):
+        import types
+        return types.SimpleNamespace(key=a.key, section=a.section, q=a.q, letter=a.letter, roman=a.roman,
+                                     text=a.text, full_text=a.full_text, page=a.page,
+                                     tariff=None, margin_price='', notation='')
+
+    def all_asks(self):
+        return [self._wrap(a) for a in self._P.all_asks()]
+
+    def pages_for(self, *args):                 # (q) or lt_all's (section, q)
+        q = args[-1]
+        return self.text_pages.get(q) or self._P.pages_for('I', q)
+
+    def lead(self, *args):
+        return self._P.lead('I', args[-1])
+
+    def _heads(self, section):
+        import lt_paper
+        out = []
+        for line in self.lines:
+            m = lt_paper.PART_OLD.match(line.text.strip())
+            if m and lt_paper.part_token(m) == section:
+                cells = [l.text for l in self.lines if l.page == line.page and abs(l.y - line.y) < 2 and l.x > line.x]
+                out.append(' '.join([line.text] + cells))
+        return out
+
+    def part_head(self, section):
+        heads = self._heads(section)
+        if not heads:
+            return None
+        # the head's words, its printed share left off ("Část 1" of "Část 1 [30 bodů]")
+        return re.sub(r'\s*[\(\[]\s*\d{2,3}[^\)\]]*[\)\]]\s*$', '', heads[-1]).strip()
+
+    def part_total(self, section):
+        import lt_paper
+        got = set()
+        for head in self._heads(section):
+            m = lt_paper.LtPaper.PART_SHARE.search(head)
+            if m:
+                got.add((int(m.group(1)), head))
+        if len({t for t, _h in got}) != 1:
+            raise ValueError(f'{self.subject} {self.year} part {section}: heads print {sorted(got)}')
+        return next(iter(got))
+
+
+class MgrView:
+    """A Modern Greek paper walked by mgr_paper.MgrPaper (its census's walker)
+    seen through the EuPaper interface: the census keys ("1", 2) / ("2", None) /
+    ("I", 1), each ask's own printed marks as its tariff, the article's pages,
+    the group totals the paper prints, and positioned lines for PL/PC/PY."""
+    def __init__(self, year, level, subject):
+        import types
+        import mgr_paper
+        import pymupdf
+        self._P = mgr_paper.MgrPaper(year, level, subject)
+        self.year, self.level, self.subject, self.path = year, level, subject, self._P.path
+        self.lines = []
+        with pymupdf.open(self.path) as pdf:
+            for pno, page in enumerate(pdf, 1):
+                for block in page.get_text('dict')['blocks']:
+                    for line in block.get('lines', []):
+                        text = ''.join(sp['text'] for sp in line['spans'])
+                        if text.strip():
+                            x0, y0, x1, _y1 = line['bbox']
+                            self.lines.append(eu_paper.Line(pno, x0, y0, x1, text))
+        raw = self._P.asks()
+        self._asks = [types.SimpleNamespace(
+            key=a.key, section=a.section, q=a.q, letter=a.letter, roman=None, text=a.text,
+            full_text=a.text, page=a.page, tariff=(1, a.marks, a.marks) if a.marks else None,
+            margin_price='', notation=f'({a.marks})' if a.marks else '', kind=a.kind, items=a.items)
+            for a in raw]
+        self.text_pages = {}
+
+    def all_asks(self):
+        return list(self._asks)
+
+    def pages_for(self, *args):
+        return self.text_pages.get(args[-1]) or list(self._P.passage_pages)
+
+    def lead(self, *args):
+        return ''
+
+    def part_head(self, section):
+        return None
+
+    def part_total(self, section):
+        total = self._P.section_marks.get(section)
+        if total is None:
+            raise ValueError(f'modern-greek {self.year} section {section}: no printed total')
+        return total, f'section {section}'
+
+
 def documents(subject, year, level='hl', scheme=True):
-    P = EuPaper(year, level, subject)
+    if subject in MGR_SUBJECTS:
+        P = MgrView(year, level, subject)
+    else:
+        P = LtView(year, level, subject) if subject in LT_SUBJECTS else EuPaper(year, level, subject)
     doc = {'paper': [(l.page, fix_text(subject, year, l.text)) for l in P.lines], 'lines': P.lines, 'P': P,
            'scheme': scheme_lines(subject, year, level) if scheme else []}
     return P, doc
+
+
+def _added_ask(subject, year, level, key, P):
+    """An ask the paper prints with no number (paper_census.ADDED_ASKS), as
+    the census lifts it, shaped like a walker's ask for the card builder."""
+    import types
+    import paper_census
+    for spec in paper_census.ADDED_ASKS.get((subject, year, level), []):
+        if tuple(spec['key']) == key:
+            leaf, _marks = paper_census._added_leaf(subject, year, level, spec)
+            return types.SimpleNamespace(key=key, section=key[0], q=key[1], letter=None, roman=None,
+                                         page=(spec.get('lines') or spec.get('cut') or spec.get('line'))[0], text=leaf['text'],
+                                         full_text=leaf['text'],
+                                         tariff=None, margin_price='', notation='')
+    return None
 
 
 def cards(subject, year, specs, level='hl', scheme=True):
@@ -690,12 +944,15 @@ def cards(subject, year, specs, level='hl', scheme=True):
     # 2 "questionTotal"; Latvian and Czech Q1 are the precedent).
     parents = {a.key: a for a in P._asks if a.letter is None and a.roman is None
                and any(b.section == a.section and b.q == a.q and b.letter for b in P._asks)}
-    two_part = not any(k[0] == 'III' for k in asks)
+    two_part = not any(MGR_PART.get(k[0], k[0]) == 'III' for k in asks)
     out, seen = [], set()
     for spec in specs:
         key = parse_key(spec.key)
         if key not in asks and key in parents:
             asks[key] = parents[key]
+        added = key not in asks and _added_ask(subject, year, level, key, P)
+        if added:
+            asks[key] = added
         if key not in asks:
             raise ValueError(f'{subject} {year} {spec.key}: the census prints no such ask')
         if key in seen:
@@ -707,10 +964,26 @@ def cards(subject, year, specs, level='hl', scheme=True):
         if spec.question:
             question = spec.question(doc, question) if callable(spec.question) else spec.question
         question = fix_text(subject, year, question)
-        language = answer_language(subject, question)
+        lt = subject in LT_SUBJECTS
+        mgr = subject in MGR_SUBJECTS
+        if mgr:
+            import mgr_all
+            import mgr_topics
+            language = mgr_topics.answer_language(P._P) or 'Modern Greek'
+        else:
+            language = (lt_topics.answer_language(subject, question) if lt else
+                        # a subject whose paper prints a one-language rule that eu_topics has no
+                        # word list for (Ukrainian: "... дайте відповіді українською мовою ...")
+                        SUBJECT_NAME[subject] if subject in RULE_WORDS and subject not in ONE_LANGUAGE
+                        and subject not in TARGET_WORDS_KNOWN else answer_language(subject, question))
         note = lang_note = rule_note(subject, doc, language)
         card = {
-            'id': card_id(subject, year, level, key),
+            'id': (mgr_all.card_id(year, level, key) if mgr
+                   # an lt part printed as one unnumbered task is keyed bare, census-added or not
+                   # (Latvian 2014's commentary, added: lv-2014-hl-ii)
+                   else f'{lt_all.ID_PREFIX[subject]}-{year}-{level}-{key[0].lower()}' if lt and key[1] is None
+                   else (lt_all.card_id if lt else card_id)(subject, year, level, key).lower() if added
+                   else (lt_all.card_id if lt else card_id)(subject, year, level, key)),
             'subjectId': subject,
             'level': LEVEL_WORD[level],
             'year': year,
@@ -719,23 +992,33 @@ def cards(subject, year, specs, level='hl', scheme=True):
             # and shown as Part III's is.
             # A question carded whole over its lettered expressions is filed as
             # the expressions are (second reader, 20 Nov: Q1 sat under two topics).
-            'topicId': topic_for(subject, 'classic', essay_part(key[0], two_part),
-                                 key[2] or ('*' if key in parents else None)),
+            'topicId': (mgr_topics.topic_for(ask) if mgr else
+                        lt_topics.topic_for(subject, year, key[0], key[1]) if subject in LT_SUBJECTS else
+                        topic_for(subject, 'classic', essay_part(key[0], two_part),
+                                  key[2] or ('*' if key in parents else None))),
             # From the ask's own printed words, not an instruction put before
             # them (2026 Q1(c)-(e) shared one; second reader, 20 Nov).
-            'conceptId': concept_for(clean_question(MARKER.sub('', ask.text, count=1)) or question),
-            'questionRef': question_ref(year, level, key),
+            'conceptId': (mgr_topics.concept_for if mgr else lt_topics.concept_for if subject in LT_SUBJECTS
+                          else concept_for)(
+                question if getattr(spec, 'concept', None) == 'question'
+                else clean_question(MARKER.sub('', ask.text, count=1)) or question),
+            'questionRef': (mgr_all.question_ref if mgr else lt_all.question_ref if lt else question_ref)(year, level, key),
             'questionText': question,
         }
         if isinstance(spec, NoScheme):
-            _c, total, notation = (spec.total or default_price(key)).read(doc)
+            price = spec.total or default_price(key)
+            _c, total, notation = price.read(doc)
+            # a part's total is printed on its head, not beside the ask: say so, never quote a
+            # notation the paper does not print ("Opgave II (30)"; second reader, 20 Nov)
+            priced = (f'prints this part\'s total, {total} marks, on its head' if isinstance(price, PartPrice)
+                      else f'prices it "{notation}"')
             card.update({
                 'tariffModel': {'kind': 'questionTotal'}, 'totalMarks': total,
                 'rows': [{'id': 'r-1', 'kind': 'criterion', 'verbatim': NO_SCHEME_PUBLISHED,
                           'marks': None, 'contextNote': note}],
                 'noScheme': True,
                 'notes': (f'Read on the rendered paper ({LANE}); the paper prints this ask on PDF page '
-                          f'{ask.page} of the question paper and prices it "{notation}". The SEC '
+                          f'{ask.page} of the question paper and {priced}. The SEC '
                           f'published no marking scheme for this sitting (SOURCES.md: not in the 31 Aug '
                           f'2026 archive listing; live check 18 Nov 2026 = 404).'),
             })
@@ -768,6 +1051,13 @@ def cards(subject, year, specs, level='hl', scheme=True):
                 rows = [{'id': 'r-1', 'kind': 'criterion', 'verbatim': UNPRINTED_ANSWER,
                          'marks': total, 'permittedMarks': list(range(total + 1)),
                          'unprinted': True, **({'contextNote': ctx} if ctx else {})}]
+            elif getattr(spec, 'unpriced', None):
+                rows, total = build_rows(doc, spec, note)
+                if total != 0 or any(r['kind'] != 'point' for r in rows):
+                    raise ValueError(f'{subject} {year} {spec.key}: a 10i card shows the scheme\'s answer '
+                                     'as point rows with no marks (shown)')
+                label, sec_total, _n = spec.unpriced.read(doc)
+                card['unpricedSection'] = {'label': label, 'totalMarks': sec_total}
             else:
                 rows, total = build_rows(doc, spec, note)
                 price = spec.total or default_price(key)
@@ -779,12 +1069,16 @@ def cards(subject, year, specs, level='hl', scheme=True):
                 elif pc * pp != total:
                     raise ValueError(f'{subject} {year} {spec.key}: rows add to {total}, '
                                      f'the paper prints {pn!r}')
+            sec = card.get('unpricedSection')
             card.update({
-                'tariffModel': {'kind': 'questionTotal' if spec.whole else 'fixed'},
+                'tariffModel': {'kind': 'questionTotal' if spec.whole or sec else 'fixed'},
                 'totalMarks': total,
                 'rows': rows,
                 'notes': (f'Read on the rendered scheme and paper ({LANE}); the paper prints this ask '
                           f'on PDF page {ask.page} of the question paper.'
+                          + (f' Neither the paper nor the scheme prints marks for it: the paper prints '
+                             f'{sec["totalMarks"]} marks for "{sec["label"]}" as a whole (CARD-STANDARD 10i).'
+                             if sec else '')
                           + (f' {spec.note}' if spec.note else '')),
             })
         if spec.stem if hasattr(spec, 'stem') else None:
@@ -792,18 +1086,23 @@ def cards(subject, year, specs, level='hl', scheme=True):
         # The reading text travels with Parts I and II, and with an essay title
         # that cites a paragraph of it (source='text'; Romanian 2010 III "(p.6)").
         if getattr(spec, 'source', True) and (essay_part(key[0], two_part) in ('I', 'II')
-                                              or spec.source == 'text'):
+                                              or getattr(spec, 'source', True) == 'text'):
             if getattr(spec, 'pages', None):
                 # The spec's pages, read on the render, where the census attaches
                 # none or the wrong ones (Romanian 2010 has none).
                 P.text_pages[ask.q] = list(spec.pages)
-            src = source_material(P, ask, subject, language, level, year)
+            src = (mgr_all._source(P._P, year, level, language) if mgr
+                   else lt_all.source_material(P, ask, language, level, year, subject) if lt
+                   else source_material(P, ask, subject, language, level, year))
             if src:
                 src['presentationNote'] = ('Read the text exactly as the examination printed it, then '
                                            'answer. ' + lang_note)
                 if getattr(spec, 'pages', None):
                     src['pages'] = list(spec.pages)
-                if key[0] != 'I':
+                if key[0] != 'I' or (added and not isinstance(key[1], int)):
+                    # Part II's own head; and the part head for an unnumbered
+                    # question, which has no "Question N" of its own (Maltese
+                    # 2019 Q1A; Danish 2018 Q6 prints its number, so keeps it).
                     head = part_head(P, key[0])
                     if head:
                         src['label'] = clean_question(head).upper()[:60]

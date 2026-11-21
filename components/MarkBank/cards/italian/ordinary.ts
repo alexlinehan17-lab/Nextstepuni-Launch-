@@ -227,8 +227,8 @@ export const CARDS: SecCard[] = [
     questionText: "Who are the founders of MammaPack?\nGive two details about them.\n(Par. 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Founders: Romolo Ganzerli and Flavio Nappi", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They started the business for cultural reasons” 2 marks; “They started the business out of economic necessity” 2 marks; “Romolo emigrated to Ginevra in 2008” 2 marks; “Flavio emigrated to Parigi in 2010” 2 marks; “Romolo emigrated in 2008” 1 mark; “Flavio emigrated in 2010” 1 mark. The scheme lists 1 further lesser answer(s) for this ask.", permittedMarks: [0,1,2,4] },
-    { id: "r-2", kind: "anyN", verbatim: "Details: Two of: — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Details: Two of:”.", group: {"claimMax":2,"perOption":3,"options":["They are Italian","They are young","They are Neapolitan","Romolo emigrated to Geneva in 2008","Flavio emigrated to Paris in 2010","They started the business for cultural reasons and economic necessity"]} },
+    { id: "r-1", kind: "criterion", verbatim: "Founders: Romolo Ganzerli and Flavio Nappi", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They started the business for cultural reasons” 2 marks; “They started the business out of economic necessity” 2 marks; “Romolo emigrated to Ginevra in 2008” 2 marks; “Flavio emigrated to Parigi in 2010” 2 marks; “Romolo emigrated in 2008” 1 mark; “Flavio emigrated in 2010” 1 mark; “They are (Italian) emigrants” 1 mark.", permittedMarks: [0,1,2,4] },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints: “Details: Two of:”.", group: {"claimMax":2,"options":["They are Italian","They are young","They are Neapolitan","Romolo emigrated to Geneva in 2008","Flavio emigrated to Paris in 2010","They started the business for cultural reasons and economic necessity"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -436,7 +436,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is this advertisement aimed at?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A guitarist — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “A musician” 1 mark; “A young person” 1 mark. The scheme prices this half of the ask separately, under the heading “A guitarist”.", group: {"claimMax":2,"perOption":2,"options":["Someone with two years [1] (musical) experience in a band [1]","Someone who loves Italian/ international [1] rock music [1]","Someone who would like to join a rock [1] band [1]","Someone who is free to go on tour [1] throughout","Sardinia/ in the summer season [1]."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “A musician” 1 mark; “A young person” 1 mark.", group: {"claimMax":2,"options":["A guitarist","Someone with two years [1] (musical) experience in a band [1]","Someone who loves Italian/ international [1] rock music [1]","Someone who would like to join a rock [1] band [1]","Someone who is free to go on tour [1] throughout Sardinia/ in the summer season [1]."],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -482,7 +482,7 @@ export const CARDS: SecCard[] = [
     questionText: "In the fourth advertisement, give two details\nabout the service Elio is offering.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “The service is offered both online and in your own home” 2 marks; “He also facilitates (small) groups” 1 mark.", group: {"claimMax":2,"perOption":3,"options":["He will help you get fit [3]","He will help you get healthy [3]","He is offering his services as an experienced [1] personal trainer [2]","He devises personalised [1] eating plans [2]","He devises personalised [1] training sessions [2]","He offers fitness classes [2] to people in their own home [1]","He offers fitness classes [2] to people on-line [1]","He offers fitness classes [2] to people for €35 (an hour) [1]","(The omission of the word fitness before classes/lessons will be acceptable and will be awarded 2 marks, if the other answer given states the service is for fitness/personal training)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “The service is offered both online and in your own home” 2 marks; “He also facilitates (small) groups” 1 mark. The scheme also prints: “(The omission of the word fitness before classes/lessons will be acceptable and will be awarded 2 marks, if the other answer given states the service is for fitness/personal training)”.", group: {"claimMax":2,"options":["He will help you get fit [3]","He will help you get healthy [3]","He is offering his services as an experienced [1] personal trainer [2]","He devises personalised [1] eating plans [2]","He devises personalised [1] training sessions [2]","He offers fitness classes [2] to people in their own home [1]","He offers fitness classes [2] to people on-line [1]","He offers fitness classes [2] to people for €35 (an hour) [1]"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -551,7 +551,7 @@ export const CARDS: SecCard[] = [
     questionText: "List three advantages of Turismo Lento.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "It reduces stress — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Environment/ Nature/ healthy eating/ stress/ new friends/ money/ local/ economy” 1 mark; “It is a good experience” 1 mark; “It has many positive features” 1 mark. The scheme prices this half of the ask separately, under the heading “It reduces stress”.", group: {"claimMax":3,"perOption":2,"options":["It keeps you in contact with the nature","It encourages healthy eating","It allows more time to make new friends","It is saves you money","It gets you out of the house/ car","It is not costly","It helps the local economy","It is good for the environment"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Environment/ Nature/ healthy eating/ stress/ new friends/ money/ local/ economy” 1 mark; “It is a good experience” 1 mark; “It has many positive features” 1 mark.", group: {"claimMax":3,"options":["It keeps you in contact with the nature","It encourages healthy eating","It reduces stress","It allows more time to make new friends","It is saves you money","It gets you out of the house/ car","It is not costly","It helps the local economy","It is good for the environment"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -787,7 +787,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is the competition aimed at?\nGive one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Students” 1 mark.", group: {"claimMax":1,"perOption":2,"options":["Those who are passionate about music","Those who are passionate about dance","Those who are experts in social media","Students aged between 15-17 years old","(When the answer ‘Students aged between 15-17 years old/Students’ is awarded the marks in this question, it cannot be awarded additional marks in question 3)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Students” 1 mark. The scheme also prints: “(When the answer ‘Students aged between 15-17 years old/Students’ is awarded the marks in this question, it cannot be awarded additional marks in question 3)”.", group: {"claimMax":1,"options":["Those who are passionate about music","Those who are passionate about dance","Those who are experts in social media","Students aged between 15-17 years old"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -902,7 +902,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give three details about Emanuele and\nArjola?\n(Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They are Italian” 2 marks; “They love running/jumping” 2 marks; “Disability” 1 mark; “They wear blue” 1 mark.", group: {"claimMax":3,"perOption":3,"options":["They are a couple/a sports duo","They are athletes.","They are members of the Italian (Paralympic) Athletics Team","They participated in the Olympic Games/in Rio de Janeiro.","(They went to the Paralympic","Games/Rio de Janeiro 1 mark)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They are Italian” 2 marks; “They love running/jumping” 2 marks; “Disability” 1 mark; “They wear blue” 1 mark; “They went to the Paralympic Games/Rio de Janeiro” 1 mark.", group: {"claimMax":3,"options":["They are a couple/a sports duo","They are athletes.","They are members of the Italian (Paralympic) Athletics Team","They participated in the Olympic Games/in Rio de Janeiro."],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1367,7 +1367,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about the shoemaker\njob in the fourth advertisement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Must be creative — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “In Rome” 1 mark; “Experience required” 1 mark. The scheme prices this half of the ask separately, under the heading “Must be creative”.", group: {"claimMax":2,"perOption":2,"options":["Jobs are for newly opened premises in Rome","Manual skills in working with leather","Manual skills in the use of all the tools of the trade","Must be able to repair used shoes","Must be able to create new shoes as requested by customers","Further information is available by phoning the number provided"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “In Rome” 1 mark; “Experience required” 1 mark.", group: {"claimMax":2,"options":["Jobs are for newly opened premises in Rome","Candidates must have Minimum 10 years’ experience","Manual skills in working with leather","Manual skills in the use of all the tools of the trade","Must be able to repair used shoes","Must be able to create new shoes as requested by customers","Must be creative","Further information is available by phoning the number provided"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1390,7 +1390,7 @@ export const CARDS: SecCard[] = [
     questionText: "List three facilities on board the\nMinicrociera?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Sun deck — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Loudspeakers” 1 mark; “TV/Video” 1 mark. The scheme prices this half of the ask separately, under the heading “Sun deck”.", group: {"claimMax":3,"perOption":2,"options":["Lounge area/armchairs/tables","Kitchen/restaurant","TV/video room","Reps available to look after passenger needs during the crossing","(Multilanguage) loudspeaker system for information"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Loudspeakers” 1 mark; “TV/Video” 1 mark.", group: {"claimMax":3,"options":["Lounge area/armchairs/tables","Kitchen/restaurant","TV/video room","Sun deck","Reps available to look after passenger needs during the crossing","(Multilanguage) loudspeaker system for information"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1821,7 +1821,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Zerocalcare say about his\nblog? Give two details.\n(Par. 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "It is humorous/funny — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It is important (to him” 3 marks; “It mentions his book(s” 1 mark. The scheme prices this half of the ask separately, under the heading “It is humorous/funny”.", group: {"claimMax":2,"perOption":4,"options":["His blog is his most important project/work","He started it in 2011","It is made up of his comic strips (which include details about current affairs/ his travels/Covid)","It is called ww.zerocalcare.it","It was the first of its kind in Italy."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It is important (to him” 3 marks; “It mentions his book(s” 1 mark.", group: {"claimMax":2,"options":["His blog is his most important project/work","He started it in 2011","It is humorous/funny","It is made up of his comic strips (which include details about current affairs/ his travels/Covid)","It is called ww.zerocalcare.it","It was the first of its kind in Italy."],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1982,7 +1982,7 @@ export const CARDS: SecCard[] = [
     questionText: "What details are given on the tag of\neach item?\nGive three details.\n(Par. 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any small issues/defects — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “Any small issues/defects”.", group: {"claimMax":3,"perOption":3,"options":["The item’s condition (description),","The measurements/size of the item","The cost of the item in little stars/virtual currency","The cost of the item in euros."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":3,"options":["The item’s condition (description),","The measurements/size of the item","Any small issues/defects","The cost of the item in little stars/virtual currency","The cost of the item in euros."],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2172,7 +2172,8 @@ export const CARDS: SecCard[] = [
     questionText: "In the fourth advertisement, who are\nSofia and Filippo hoping to employ?\nGive two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "One of People (who are) / One of Who will — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “18-year-olds” 1 mark. The scheme prices this half of the ask separately, under the heading “One of People (who are) / One of Who will”.", group: {"claimMax":2,"perOption":2,"options":["energetic","interested","willing","keen","over 18s","work on the farm","in the mountains","in agriculture","with animals","with nature","in a quiet place"]} },
+    { id: "r-1", kind: "anyN", verbatim: "People (who are) — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “18-year-olds” 1 mark. The scheme prints these answers under the heading “People (who are)”: one of them earns 2 marks.", group: {"claimMax":1,"options":["energetic","interested","willing","keen","over 18s"],"perOption":2} },
+    { id: "r-2", kind: "anyN", verbatim: "Who will — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Who will”: one of them earns 2 marks.", group: {"claimMax":1,"options":["work on the farm","in the mountains","in agriculture","with animals","with nature","in a quiet place"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2312,7 +2313,7 @@ export const CARDS: SecCard[] = [
     questionText: "How do we know that Kikky is\nfocused on environmental\nsustainability? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It is 100% committed to it” 1 mark; “They recycle” 1 mark.", group: {"claimMax":1,"perOption":2,"options":["No object used is made of plastic","They use compostable bamboo for all the eating utensils","Drinks come in glass bottles or cans","They also use the waste products to work towards having net zero (impact on the environment) (compostable/bamboo materials/used 1 mark)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “compostable/bamboo materials/used” 1 mark; “It is 100% committed to it” 1 mark; “They recycle” 1 mark.", group: {"claimMax":1,"options":["No object used is made of plastic","They use compostable bamboo for all the eating utensils","Drinks come in glass bottles or cans","They also use the waste products to work towards having net zero (impact on the environment)"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2548,7 +2549,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention three categories of people\nwho get free entry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Scholars / Companions (carers) — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “Scholars / Companions (carers)”.", group: {"claimMax":3,"perOption":2,"options":["Journalists","(Citizens of Milan up to) 18 years of age","Students","Teachers","Those accompanying students","People with a disability","Those who visit the museum (after 2pm) on the first and third Tuesday of the month"],"perOptionSteps":[2,1,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":3,"options":["Journalists","Scholars","(Citizens of Milan up to) 18 years of age","Students","Teachers","Those accompanying students","People with a disability","Companions (carers)","Those who visit the museum (after 2pm) on the first and third Tuesday of the month"],"perOption":2,"perOptionSteps":[2,1,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2755,7 +2756,7 @@ export const CARDS: SecCard[] = [
     questionText: "List three requirements in order to\nbe included in the list of accessible\nbeaches.\n(Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "That the beaches have — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Access pathway/Umbrellas/ Parking/Wheelchairs” 1 mark; “Disability/Wheelchair accessibility” 2 marks; “Helpful services” 1 mark. The scheme prices this half of the ask separately, under the heading “That the beaches have”.", group: {"claimMax":3,"perOption":3,"options":["boardwalks on the sand","accessible toilet facilities","accessible changing rooms","disability parking","designated (sun) umbrellas/ beach wheelchairs"]} },
+    { id: "r-1", kind: "anyN", verbatim: "That the beaches have — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Access pathway/Umbrellas/ Parking/Wheelchairs” 1 mark; “Disability/Wheelchair accessibility” 2 marks; “Helpful services” 1 mark. Each answer completes the scheme’s “That the beaches have”.", group: {"claimMax":3,"options":["boardwalks on the sand","accessible toilet facilities","accessible changing rooms","disability parking","designated (sun) umbrellas/ beach wheelchairs"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2778,7 +2779,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the carrozzine per disabili\nda spiaggia. Give one detail. (Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Submersible wheelchairs — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They are wheelchairs” 3 marks; “They are big/colourful” 2 marks. The scheme prices this half of the ask separately, under the heading “Submersible wheelchairs”.", group: {"claimMax":1,"perOption":5,"options":["The carrozzine per disabili are (Specialised) beach wheelchairs,","Larger than (conventional) wheelchairs","Often very colourful wheelchairs","Wheelchairs that have very big (inflatable) wheels","Wheelchairs that move freely/roll easily on the sand"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They are wheelchairs” 3 marks; “They are big/colourful” 2 marks. Each answer completes the scheme’s “The carrozzine per disabili are”.", group: {"claimMax":1,"options":["(Specialised) beach wheelchairs,","Larger than (conventional) wheelchairs","Often very colourful wheelchairs","Wheelchairs that have very big (inflatable) wheels","Submersible wheelchairs","Wheelchairs that move freely/roll easily on the sand"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3077,7 +3078,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is the competition aimed at?\nGive full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "It is aimed at students who are studying Fashion, who are in their last year of secondary school/who are in further education — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Students who are studying/like fashion” 3 marks; “Secondary schools/students” 1 mark. The scheme prices this half of the ask separately, under the heading “It is aimed at students who are studying Fashion, who are in their last year of secondary school/who are in further education”.", group: {"claimMax":1,"perOption":4,"options":["(Students in their last year of secondary","School/who are in further education 3marks)"]} },
+    { id: "r-1", kind: "criterion", verbatim: "It is aimed at students who are studying Fashion, who are in their last year of secondary school/who are in further education", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Students in their last year of secondary School/who are in further education” 3 marks; “Students who are studying/like fashion” 3 marks; “Secondary schools/students” 1 mark.", permittedMarks: [0,1,3,4] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3100,7 +3101,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name one prize the winner will receive.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A 500-euro voucher — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “€500” 1 mark. The scheme prices this half of the ask separately, under the heading “A 500-euro voucher”.", group: {"claimMax":1,"perOption":2,"options":["A fashion scholarship /grant (to study in one of their affiliated schools)","An internship","A two-week fashion workshop"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “€500” 1 mark.", group: {"claimMax":1,"options":["A 500-euro voucher","A fashion scholarship /grant (to study in one of their affiliated schools)","An internship","A two-week fashion workshop"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3405,7 +3406,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give four details about Greg Goya.\n(Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "He studied law — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He is an artist / He started doing art in Turin (Torino” 1 mark; “His city/Turin (Torino) inspires him/ is very romantic” 1 mark; “He studied/did a course in (law) at university” 1 mark. The scheme prices this half of the ask separately, under the heading “He studied law”.", group: {"claimMax":4,"perOption":2,"options":["He is a street artist","He is from Turin (Torino)/He was born in Turin (Torino)","He is 26 years old,","He started doing (street) art four years ago","His parents are solicitors"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He is an artist / He started doing art in Turin (Torino” 1 mark; “His city/Turin (Torino) inspires him/ is very romantic” 1 mark; “He studied/did a course in (law) at university” 1 mark.", group: {"claimMax":4,"options":["He is a street artist","He is from Turin (Torino)/He was born in Turin (Torino)","He is 26 years old,","He studied law","He started doing (street) art four years ago","His parents are solicitors"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3497,7 +3498,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is his main audience? (Par. 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "20 to 30 years old/Young people — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “20/30-year-olds” 1 mark. The scheme prices this half of the ask separately, under the heading “20 to 30 years old/Young people”.", group: {"claimMax":1,"perOption":2,"options":["(People in love/ General","Public/Adolescents 1 mark)"]} },
+    { id: "r-1", kind: "criterion", verbatim: "20 to 30 years old/Young people", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “20/30-year-olds” 1 mark; “People in love/ General Public/Adolescents” 1 mark.", permittedMarks: [0,1,2] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3589,7 +3590,7 @@ export const CARDS: SecCard[] = [
     questionText: "What can the participants do during\nthe event Occhio al Giallo.\nGive one detail.\n(Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "They can / Temperature 3 mark) — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Enjoy nature/the fresh air” 3 marks. The scheme prices this half of the ask separately, under the heading “They can / Temperature 3 mark)”.", group: {"claimMax":1,"perOption":4,"options":["spend time together","spend time walking","breathe in the forest (wood) scent/smells","recognise (and identify) flowers/leaves","hug a tree","heel the heat/temperature of the bark (wood)","be blown away by the wind","be in the sun/ Be warmed by the sun"]} },
+    { id: "r-1", kind: "anyN", verbatim: "They can — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Enjoy nature/the fresh air” 3 marks; “Temperature” 3 marks. Each answer completes the scheme’s “They can”.", group: {"claimMax":1,"options":["spend time together","spend time walking","breathe in the forest (wood) scent/smells","recognise (and identify) flowers/leaves","hug a tree","heel the heat/temperature of the bark (wood)","be blown away by the wind","be in the sun/ Be warmed by the sun"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3637,7 +3638,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention two details about\nNoisyVision’s mission.\n(Par. 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Their mission is to — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Help boost senses” 2 marks; “To be accessible/inclusive” 1 mark; “To raise awareness about Disabilities/ Nature” 1 mark. The scheme prices this half of the ask separately, under the heading “Their mission is to”.", group: {"claimMax":2,"perOption":3,"options":["create experiences that are open","create experiences that are accessible to all.","organise excursions","organise walks (pilgrimages)","organise itineraries","create enjoyable/fun moments (great experiences)","create moments of personal growth","create moments for collective growth.","live in places of excellence for our senses"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Their mission is to — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Help boost senses” 2 marks; “To be accessible/inclusive” 1 mark; “To raise awareness about Disabilities/ Nature” 1 mark. Each answer completes the scheme’s “Their mission is to”.", group: {"claimMax":2,"options":["create experiences that are open","create experiences that are accessible to all.","organise excursions","organise walks (pilgrimages)","organise itineraries","create enjoyable/fun moments (great experiences)","create moments of personal growth","create moments for collective growth.","live amongst nature","live in places of excellence for our senses"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3660,7 +3661,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is Dario Sorgato?\n(Par. 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "He is of NoisyVision’s — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “He is of NoisyVision’s”.", group: {"claimMax":2,"perOption":2,"options":["founder","president","organiser of inclusive walks"],"perOptionSteps":[2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "He is of NoisyVision’s — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. Each answer completes the scheme’s “He is of NoisyVision’s”.", group: {"claimMax":2,"options":["founder","president","organiser of inclusive walks"],"perOption":2,"perOptionSteps":[2,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3727,9 +3728,9 @@ export const CARDS: SecCard[] = [
     id: "it-2025-ol-a2-5", topicId: "italian-5-3", conceptId: "dario-sorgato-objective",
     section: "A", questionRef: "2025 OL Section A2 Q5",
     questionText: "What is Dario Sorgato’s objective? (Par. 5)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Any five of eight elements)", marks: 5, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “To facilitate inclusive and accessible walking/in nature (events)so that the disabled can walk and enjoy nature without (the necessity of) a guide (1)”." },
+    { id: "r-1", kind: "criterion", verbatim: "To facilitate inclusive and accessible walking/in nature (events)so that the disabled can walk and enjoy nature without (the necessity of) a guide", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints “5 marks (5x1)” and “(Any five of eight elements)”: one mark for each element of this answer you give, up to five. It does not list the eight elements: judge your answer against the 5 marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3982,7 +3983,7 @@ export const CARDS: SecCard[] = [
     questionText: "What are you permitted to do with the\nDovesciare app?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "You can see / You can / (Get information/discounts/much / More 1 mark) — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Create a group with people” 1 mark; “Participate in group skiing” 1 mark. The scheme prices this half of the ask separately, under the heading “You can see / You can / (Get information/discounts/much / More 1 mark)”.", group: {"claimMax":3,"perOption":2,"options":["the position/location of","everyone in your group","on the (ski) map","find anyone who is lost/not lose your friends"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Create a group with people” 1 mark; “Participate in group skiing” 1 mark; “Get information/discounts/much More” 1 mark. The scheme prints these answers under the headings “You can see”, “You can”.", group: {"claimMax":3,"options":["You can see — the position/location of","You can see — everyone in your group","You can see — on the (ski) map","You can see — in real time","You can — find anyone who is lost/not lose your friends"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4051,7 +4052,7 @@ export const CARDS: SecCard[] = [
     questionText: "List three discounts available with this\napp.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discounts — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Ski passes/Equipment/rental” 1 mark; “At the resorts/locations” 1 mark; “Up to 40%” 1 mark. The scheme prices this half of the ask separately, under the heading “Discounts”.", group: {"claimMax":3,"perOption":2,"options":["on daily ski passes/ (up to) 40% off ski passes","on spas,","on rental ski equipment","on restaurants (with traditional cuisine and much more)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Discounts — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Ski passes/Equipment/rental” 1 mark; “At the resorts/locations” 1 mark; “Up to 40%” 1 mark. Each answer completes the scheme’s “Discounts”.", group: {"claimMax":3,"options":["on daily ski passes/ (up to) 40% off ski passes","on spas,","on rental ski equipment","on accommodation","on restaurants (with traditional cuisine and much more)"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4195,7 +4196,7 @@ export const CARDS: SecCard[] = [
     questionText: "What do we know about the sisters\nNicole and Aurora? Give one detail\nabout each sister.\n(Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "One point for Nicole one point for Aurora — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Nicole is a designer” 1 mark; “Aurora is a chef” 1 mark; “Aurora is on social media” 1 mark; “Aurora is younger/Nicole is older” 1 mark. The scheme prices this half of the ask separately, under the heading “One point for Nicole one point for Aurora”.", group: {"claimMax":2,"perOption":3,"options":["They are (very) different (sisters)","Nicole is 29 years old","Aurora is five years younger (than Nicole)","Nicole is a fashion designer/designs wedding dresses/ Nicole is passionate about fashion design","Nicole’s brand is called Nicole Milano","Aurora is an aspiring chef/Aurora is passionate about cooking","Aurora is very active on social media","Aurora’s name on Instagram is @cooker.girl","They were born in Piedmont/in the province of Cuneo","Nicole lives in Turin","Aurora lives in Milan","They are women of their time/of the moment","They are passionate about everything (which they recount in the interview)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Nicole is a designer” 1 mark; “Aurora is a chef” 1 mark; “Aurora is on social media” 1 mark; “Aurora is younger/Nicole is older” 1 mark. The scheme prints: “One point for Nicole one point for Aurora”.", group: {"claimMax":2,"options":["They are (very) different (sisters)","Nicole is 29 years old","Aurora is five years younger (than Nicole)","Nicole is a fashion designer/designs wedding dresses/ Nicole is passionate about fashion design","Nicole’s brand is called Nicole Milano","Aurora is an aspiring chef/Aurora is passionate about cooking","Aurora is very active on social media","Aurora’s name on Instagram is @cooker.girl","They were born in Piedmont/in the province of Cuneo","Nicole lives in Turin","Aurora lives in Milan","They are women of their time/of the moment","They are passionate about everything (which they recount in the interview)"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4287,7 +4288,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Nicole say about her\nInstagram activity? Give two details.\n(Par. 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "She makes/reels/videos 1 mark) / (This answer can be used only with she’s not an influencer/she is designer) — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “She makes/reels/videos 1 mark) / (This answer can be used only with she’s not an influencer/she is designer)”.", group: {"claimMax":2,"perOption":4,"options":["She uses it to (simply) give tips/advice","She’s not (acting as) an influencer/She is a designer","She doesn’t spend too much time (less than 30","minutes) creating the stories","She now makes simple reels (compared to the more elaborate ones she started with)"],"perOptionSteps":[4,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She makes/reels/videos” 1 mark. The scheme also prints: “(This answer can be used only with she’s not an influencer/she is designer)”.", group: {"claimMax":2,"options":["She uses it to (simply) give tips/advice","She’s not (acting as) an influencer/She is a designer","She doesn’t spend too much time (less than 30 minutes) creating the stories","She now makes simple reels (compared to the more elaborate ones she started with)"],"perOption":4,"perOptionSteps":[4,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4752,7 +4753,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about Chocohotel’s\nefforts in the area of sustainability.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The creams/soaps are natural (products) 1 mark) — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Equo & Eco/Eco Suite” 1 mark; “They recycle/They are eco-friendly” 1 mark. The scheme prices this half of the ask separately, under the heading “The creams/soaps are natural (products) 1 mark)”.", group: {"claimMax":2,"perOption":2,"options":["They created a special (sustainable) room (called the Equo & Eco Suite)","They used furniture/beds/wardrobes/chairs/desks made out of recycled objects","They provided environmentally friendly products","They combine the love of chocolate with respect for the earth","and for the products sourced locally"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Equo & Eco/Eco Suite” 1 mark; “They recycle/They are eco-friendly” 1 mark; “The creams/soaps are natural (products)” 1 mark.", group: {"claimMax":2,"options":["They created a special (sustainable) room (called the Equo & Eco Suite)","They used furniture/beds/wardrobes/chairs/desks made out of recycled objects","They provided environmentally friendly products","They combine the love of chocolate with respect for the earth","and for the products sourced locally"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4939,7 +4940,7 @@ export const CARDS: SecCard[] = [
     questionText: "What information is given about\nthe films? Give three details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Various genres (comedy/dramatic/historical) — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Ten of them/They are Italian” 1 mark; “The films are comedies/ dramatic/historical” 1 mark. The scheme prices this half of the ask separately, under the heading “Various genres (comedy/dramatic/historical)”.", group: {"claimMax":3,"perOption":2,"options":["About 10 Italian (films)","(Some) films are accompanied by a (short) introductory presentation","There is input from special guests"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Ten of them/They are Italian” 1 mark; “The films are comedies/ dramatic/historical” 1 mark.", group: {"claimMax":3,"options":["About 10 Italian (films)","Various genres (comedy/dramatic/historical)","(Some) films are accompanied by a (short) introductory presentation","There is input from special guests"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4962,7 +4963,7 @@ export const CARDS: SecCard[] = [
     questionText: "What practical information is given\nabout buying tickets?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Standard tickets cost €10 and concession tickets cost €9 2 marks — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Standard tickets €10/Concession tickets cost €9” 1 mark; “Tickets can be purchased in the cinema foyer” 1 mark; “Visit their website” 1 mark. The scheme prices this half of the ask separately, under the heading “Standard tickets cost €10 and concession tickets cost €9 2 marks”.", group: {"claimMax":1,"perOption":2,"options":["Tickets can be purchased in the entrance/foyer of the cinema, in person,","Online booking is advised (via their website)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Standard tickets €10/Concession tickets cost €9” 1 mark; “Tickets can be purchased in the cinema foyer” 1 mark; “Visit their website” 1 mark.", group: {"claimMax":1,"options":["Tickets can be purchased in the entrance/foyer of the cinema, in person,","Online booking is advised (via their website)","Standard tickets cost €10 and concession tickets cost €9"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5506,7 +5507,7 @@ export const CARDS: SecCard[] = [
     questionText: "What were Monica’s tasks? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Manage the guests/participants attending the events 2 marks) — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Manage the guests/participants attending the events 2 marks)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Administration/Admin tasks/office work (secretarial work)","Replying to emails (Write/respond to emails)","Organising the timetables for the language courses","Booking flights for guest the guests attending the events","Booking accommodation, the guests/participants attending the events"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["Administration/Admin tasks/office work (secretarial work)","Replying to emails (Write/respond to emails)","Organising the timetables for the language courses","Booking flights for guest the guests attending the events","Booking accommodation, the guests/participants attending the events"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5681,7 +5682,7 @@ export const CARDS: SecCard[] = [
     questionText: "When did Paolo work in the airport? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "When he stopped playing (semi- professionally football) 1 mark) — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “When he stopped playing (semi- professionally football) 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["In the evenings (shiftwork)","At the weekend/On Saturdays and Sundays"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["In the evenings (shiftwork)","At the weekend/On Saturdays and Sundays"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6961,7 +6962,7 @@ export const CARDS: SecCard[] = [
     questionText: "What services does the association offer? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Bike repair (workshops) — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Bike repair (workshops)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["Bike hire","It organises group travel (around Italy/ from May to October)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["Bike hire","Bike repair (workshops)","It organises group travel (around Italy/ from May to October)"],"perOption":6} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7594,7 +7595,7 @@ export const CARDS: SecCard[] = [
     questionText: "For whom is Giulia going to buy a present?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Incorrect additional information minus 2 from off/full answer", marks: 6, contextNote: "The scheme prices this half of the ask separately, under the heading “Her best friend”. Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Her best friend", marks: 6, contextNote: "The scheme prints: “Incorrect additional information minus 2 from off/full answer”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7734,7 +7735,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where does Giada work in the mornings?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In an office in the city centre", marks: 8, contextNote: "The scheme prices this half of the ask separately, under the heading “In an estate agent’s”. Answer in English or Irish." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["In an estate agent’s","In an office in the city centre"],"perOption":8} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7769,7 +7770,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who can benefit from the bank account Giada is opening?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "People on a budget (as there are no fees) 4 marks)", marks: 6, contextNote: "The scheme prices this half of the ask separately, under the heading “Young people, newly employed/who have a new job”. Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Young people, newly employed/who have a new job", marks: 6, contextNote: "The scheme also prints, for shorter answers: “(Working young people 4 marks)”; “(People who would use a discount card (at the cinema/ theatre/restaurants) 4 marks)”; “People on a budget (as there are no fees) 4 marks)”; “(Young people 3 marks)”; “(Working people 2 marks)”; “(Giada herself 1 mark)”; “(Children 1 mark)”; “(Cinemas/theatres/restaurants 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7804,7 +7805,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one detail about Giada’s work contract.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "One-year/fixed term contract — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “One-year/fixed term contract”. Answer in English or Irish.", group: {"claimMax":1,"perOption":6,"options":["She can work from home one day a week","She has four-week annual leave"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["One-year/fixed term contract","She can work from home one day a week","She has four-week annual leave"],"perOption":6} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8787,7 +8788,7 @@ export const CARDS: SecCard[] = [
     questionText: "What type of accommodation have they booked?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Quadruple rooms in a hostel/ A hostel with kitchen facilities 4 marks)", marks: 4, contextNote: "The scheme prices this half of the ask separately, under the heading “A youth (1) hostel (3)”. Answer in English or Irish." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["A youth (1) hostel (3)","Quadruple rooms in a hostel/ A hostel with kitchen facilities"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8962,7 +8963,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention one other symptom Anna had after she fell.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "One of ` — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “One of `”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["She lost (2) her appetite (2)","(She often gets a) head (2) ache (2)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["She lost (2) her appetite (2)","(She often gets a) head (2) ache (2)"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9067,7 +9068,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the area where Sabrina lived. Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "in the countryside — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “in the countryside”. Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["She lived:","in a small town /village","in the west of Ireland","on a farm (with animals) / on farmland","(near) a river","(near) an old castle","not far from the city"]} },
+    { id: "r-1", kind: "anyN", verbatim: "She lived — the answers the scheme accepts", marks: null, contextNote: "Each answer completes the scheme’s “She lived”. Answer in English or Irish.", group: {"claimMax":2,"options":["in a small town /village","in the west of Ireland","in the countryside","on a farm (with animals) / on farmland","(near) a river","(near) an old castle","not far from the city"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9172,7 +9173,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Sabrina do in her free time? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["She learned/played camogie/(one of the) national games.","She joined a choir","She took Irish dancing classes","(She took","Irish (cultural) classes 2 marks)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["She learned/played camogie/(one of the) national games.","She joined a choir","She took Irish dancing classes"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9242,7 +9243,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Sabrina miss while in Ireland? Give two details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Ice-cream (gelato) — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Ice-cream (gelato)”. Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["The sea ¬`","The sun","Heat","(Hot weather is acceptable as an equivalent of The sun","The heat but not in addition to either one)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints: “(Hot weather is acceptable as an equivalent of The sun The heat but not in addition to either one)”. Answer in English or Irish.", group: {"claimMax":2,"options":["The sea","The sun","Heat","Ice-cream (gelato)"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10371,7 +10372,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where is Piero going after the sailing trip?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The seaside 1 mark)", marks: 4, contextNote: "The scheme prices this half of the ask separately, under the heading “The mountains (for a few days)”. Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "The mountains (for a few days)", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(To have a break/On holidays 2 marks)”; “The seaside 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11047,7 +11048,7 @@ export const CARDS: SecCard[] = [
     questionText: "What food does Michele suggest they bring for the picnic? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Courgette Omelette — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Courgette Omelette”. Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Drinks","Ham Rolls/ Ham Sandwiches /Ham Panini","Rice salad","A blanket (to sit on/lay out the food)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["Drinks","Ham Rolls/ Ham Sandwiches /Ham Panini","Rice salad","Courgette Omelette","A blanket (to sit on/lay out the food)"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11187,7 +11188,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name one place Sara rang.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The Police (station) — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “The Police (station)”. Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Shop(s)","The transport company / The bus (she was on)","The Lost Property office"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["Shop(s)","The Police (station)","The transport company / The bus (she was on)","The Lost Property office"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12072,7 +12073,8 @@ export const CARDS: SecCard[] = [
     questionText: "Why would families and shops take\npart in this initiative?\n(Par. 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “To help the environment” 3 marks; “To work with the community” 1 mark; “To make a difference” 1 mark; “Promotion” 1 mark; “Education” 1 mark.", group: {"claimMax":2,"perOption":5,"options":["Families: To save money [3] on their shopping [2]","To reduce their waste [2] charges [2]","To carry out their civic duty","*To educate family members","Shops: To increase their customers numbers / To be seen as being more environmentally friendly","*To educate the community","*Educate can only be used once","The following answers can only be used for one category"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Families — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under “Families:”, and “*Educate can only be used once”. It also pays part marks for a shorter answer: “To help the environment” 3 marks; “To work with the community” 1 mark; “To make a difference” 1 mark; “Promotion” 1 mark; “Education” 1 mark. The scheme prints: “The following answers can only be used for one category”.", group: {"claimMax":1,"options":["To save money [3] on their shopping [2]","To reduce their waste [2] charges [2]","To carry out their civic duty","*To educate family members"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Shops — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under “Shops:”.", group: {"claimMax":1,"options":["To increase their customers numbers / To be seen as being more environmentally friendly","*To educate the community"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12210,7 +12212,7 @@ export const CARDS: SecCard[] = [
     questionText: "The Italian for “kennels” is:\nTick the correct box\nveterinario\ncucce\nvolontari",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "`", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “Cucce”." },
+    { id: "r-1", kind: "point", verbatim: "Cucce", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12233,7 +12235,7 @@ export const CARDS: SecCard[] = [
     questionText: "In the fourth advertisement, give four details\nabout Mirco’s professional experience.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He has ten years experience” 1 mark; “He gives lessons” 1 mark; “He works at small/private events” 1 mark.", group: {"claimMax":4,"perOption":2,"options":["He has worked in restaurants (for ten years)","He has worked in a hotel (on the Costa","Azzurra for the last three years)","He can work as a (personal) chef","He can provide private dining experiences","He can cater for birthdays/small events","He can give cookery lessons (to small groups)"],"perOptionSteps":[2,2,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He has ten years experience” 1 mark; “He gives lessons” 1 mark; “He works at small/private events” 1 mark.", group: {"claimMax":4,"options":["He has worked in restaurants (for ten years)","He has worked in a hotel (on the Costa Azzurra for the last three years)","He can work as a (personal) chef","He can provide private dining experiences","He can cater for birthdays/small events","He can give cookery lessons (to small groups)"],"perOption":2,"perOptionSteps":[2,2,2,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12396,7 +12398,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give three details about the apartment\nin the first notice.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "It is bright — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “It is bright”.", group: {"claimMax":3,"perOption":1,"options":["It is a first floor apartment","It is in the city centre/close to amenities and facilities","It is fifteen minutes away from the beach/Mondello","It has a (small) kitchen","It has a (spacious) bathroom","It has one bedroom","It has a (small) dining area","It has wi-fi"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":3,"options":["It is a first floor apartment","It is bright","It is in the city centre/close to amenities and facilities","It is fifteen minutes away from the beach/Mondello","It has a (small) kitchen","It has a (spacious) bathroom","It has one bedroom","It has a (small) dining area","It has wi-fi"],"perOption":1} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13500,7 +13502,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does Gianfranco wish to live in the Le Langhe region? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["He is tired of busy life city","It’s a quieter place","He wants to rediscover (traditional) flavours","Has better quality products","He is becoming interested in viticulture","It is (in his opinion) where the best Italian vineyards are (Tradition 2 marks)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Tradition 2 marks)”; “(City 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"options":["He is tired of busy life city","It’s a quieter place","He wants to rediscover (traditional) flavours","Has better quality products","He is becoming interested in viticulture","It is (in his opinion) where the best Italian vineyards are"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13869,6 +13871,6187 @@ export const CARDS: SecCard[] = [
                 19
           ],
           "attribution": "SEC Italian 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it, with the eight sentences to put in order."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-a1-1", topicId: "italian-5-3", conceptId: "five-about-ermal-introduction",
+    section: "A", questionRef: "2018 OL Section A1 Q1",
+    questionText: "Give five details about Ermal.\n(Introduction & Par. 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He has a brother / a sister” 1 mark.", group: {"claimMax":5,"options":["He is a successful (1m) musician/artist (1m)","He came first (1m) at Sanremo / Festival","He is very refined","He likes good (1m) food (1m)","He has an incredible story","He has a very common (1m) Albanian name (1m) (meaning “mountain wind”)","He left Albania with his Family / brother, sister and mother","He left Albania more than twenty years ago","He never had a good relationship (1m) with his father (1m)","He was born (1m) (and grew up initially) in Fier /Albania (1m)","(He) returned five years ago (1m) to Albania (1m)","He (still) loves the place"],"perOption":2} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-a1-2", topicId: "italian-5-3", conceptId: "learn-about-his-mother",
+    section: "A", questionRef: "2018 OL Section A1 Q2",
+    questionText: "What do we learn about his mother?\nGive two details.\n(Par. 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints this line as \"2 Any two of: 4 marks (2+2)\", an SEC misprint; it is read as \"2. Any two of: 4 marks (2+2)\", which the printed total of its section confirms.", group: {"claimMax":2,"perOption":2,"options":["She is a violinist","She used to bring him (1m) to her concerts (1m)","She passed on to him (1m) her love of music (1m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-a1-3", topicId: "italian-5-3", conceptId: "about-ermal-school-life",
+    section: "A", questionRef: "2018 OL Section A1 Q3",
+    questionText: "Give two details about Ermal’s school life.\n(Par. 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He was keen” 2 marks; “He went to a Liceo Scientifico” 1 mark.", group: {"claimMax":2,"perOption":4,"options":["He was a keen student /dutiful / dedicated","He got top marks/he was stubborn (2m) / determined (2m)","(Once in Italy) he was educated in Bari","He studied foreign (1m) languages / literature (1m) at university (2m)","He has just one exam (2m) left to complete (2m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-a1-4", topicId: "italian-5-3", conceptId: "performing-concerts-pays-very-well-tick",
+    section: "A", questionRef: "2018 OL Section A1 Q4",
+    questionText: "Performing in concerts pays very well.\n(Par. 4)\nTick the correct box\nTrue\nFalse",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-a1-5", topicId: "italian-5-3", conceptId: "list-things-says-about-his-song",
+    section: "A", questionRef: "2018 OL Section A1 Q5",
+    questionText: "List three things he says about his song\nwriting.\n(Par. 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":3,"perOption":4,"options":["He wrote his first song (2m) when he was twelve years old (2m)","His first song (2m) was written about a crush he had on a girl (2m)","In a month (2m) he writes a number of songs / 5 – 12 songs (2m)","There are periods / times (2m) when he does not write (2m)","He has to write down his ideas (2m) so he does not forget them (2m)","“His first song” can only be awarded marks once"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-a1-6", topicId: "italian-5-3", conceptId: "does-say-about-his-private-life",
+    section: "A", questionRef: "2018 OL Section A1 Q6",
+    questionText: "What does he say about his private life?\n(Par. 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He does not like to talk about it” 1 mark.", group: {"claimMax":1,"perOption":3,"options":["He does not like to talk about it in the newspapers","He refers to it in his songs"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-a2-1-a", topicId: "italian-5-3", conceptId: "main-hobbies-italians",
+    section: "A", questionRef: "2018 OL Section A2 Q1(a)",
+    questionText: "Mention the three main hobbies of\nItalians.\n(Par. 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Cooking” 1 mark. The scheme prints “(3+3+2)”: 3, 3, 2 marks for the first, second and further answers given, in any order.", group: {"claimMax":3,"options":["Rest","Dance","Food"],"perOption":3,"perOptionSteps":[3,3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-a2-1-b", topicId: "italian-5-3", conceptId: "over-many-months-survey-based",
+    section: "A", questionRef: "2018 OL Section A2 Q1(b)",
+    questionText: "Over how many months is the survey\nbased?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Eight", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-a2-2-a", topicId: "italian-5-3", conceptId: "reason-people-from-milan-choose-yoga",
+    section: "A", questionRef: "2018 OL Section A2 Q2(a)",
+    questionText: "Give one reason why people from\nMilan choose Yoga and Pilates. (Par. 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Beneficial” 3 marks.", group: {"claimMax":1,"perOption":8,"options":["Their intense (4m) work schedule (4m)","The stressful (4m) lifestyle (4m)","When away from work (4m) they want to relax (4m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-a2-2-b", topicId: "italian-5-3", conceptId: "italian-housecleaning-tick-correct-box-imbiancatura",
+    section: "A", questionRef: "2018 OL Section A2 Q2(b)",
+    questionText: "The Italian for “housecleaning” is:\nTick in the correct box\nimbiancatura\npulizia domestica\nservizi di trasloco",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pulizia domestica", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-a2-2-c", topicId: "italian-5-3", conceptId: "people-choose-buy-online-reasons",
+    section: "A", questionRef: "2018 OL Section A2 Q2(c)",
+    questionText: "Why do people choose to buy online?\nGive the two reasons.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “For economic reasons” 2 marks.", group: {"claimMax":2,"perOption":4,"options":["It saves (2m) money (2m)/ Economical (4m)","It saves (2m) time (2m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-a2-3", topicId: "italian-5-3", conceptId: "centre-south-italy-people-more-interested",
+    section: "A", questionRef: "2018 OL Section A2 Q3",
+    questionText: "In the Centre and the South of Italy, people\nare more interested in physical activities.\n(Par. 3)\nTick the correct box\nTrue\nFalse",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-a2-4", topicId: "italian-5-3", conceptId: "trend-emilia-romagna-region",
+    section: "A", questionRef: "2018 OL Section A2 Q4",
+    questionText: "What is the trend in the Emilia‐Romagna\nregion?\n(Par. 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "In the Emilia-Romagna region the trend is towards buying a reduced price / (groupon) voucher / (money off) coupon", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "for an English", marks: 2 },
+    { id: "r-1-3", kind: "point", verbatim: "(language) course", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b1-1-a", topicId: "italian-5-4", conceptId: "first-advertisement-work-being-offered-tick",
+    section: "B", questionRef: "2018 OL Section B1 Q1(a)",
+    questionText: "In the first advertisement, the work\nbeing offered is:\nTick in the correct box\nlegal secretary\ndental secretary\nmedical secretary",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dental secretary", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b1-1-b", topicId: "italian-5-4", conceptId: "list-requirements-job",
+    section: "B", questionRef: "2018 OL Section B1 Q1(b)",
+    questionText: "List three requirements for the job.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":3,"perOption":1,"options":["Great organisation skills","Be flexible","Be thorough","Enthusiastic","Committed","Very good IT skills"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b1-2", topicId: "italian-5-4", conceptId: "four-about-ideal-candidate-second-advertisement",
+    section: "B", questionRef: "2018 OL Section B1 Q2",
+    questionText: "Give four details about the ideal\ncandidate in the second advertisement.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints: “*(1 mark for each language up to a maximum of 2 marks)”.", group: {"claimMax":4,"options":["The ideal candidate will have (At least) three years’ (1m) experience (1m) as a tour guide (1m)","A (deep) knowledge (1m) of the city of Florence (1m) and its surrounding areas (1m)","A (deep) knowledge (1m) of the Florentine (1m) artistic heritage (1m)","A fluency in (1m) in French / English / Spanish (2m)*","Available to work (1m) at week-ends (1m) and during public holidays/ festive days (1m)","A willingness to do seasonal / temporary (2m) work (1m)"],"perOption":3} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b1-3-a", topicId: "italian-5-4", conceptId: "job-mentioned-third-advertisement",
+    section: "B", questionRef: "2018 OL Section B1 Q3(a)",
+    questionText: "Name one job mentioned in the third\nadvertisement.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":1,"perOption":3,"options":["Painter","Electrician","Factory operator","Bricklayer","Driver","Manual labourer","Carpenter","Cleaner","Loader","Porter/Janitor"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b1-3-b", topicId: "italian-5-4", conceptId: "when-can-salvatore-start-work",
+    section: "B", questionRef: "2018 OL Section B1 Q3(b)",
+    questionText: "When can Salvatore start work?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Immediately", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b1-4", topicId: "italian-5-4", conceptId: "about-working-hours-job-fourth-advertisement",
+    section: "B", questionRef: "2018 OL Section B1 Q4",
+    questionText: "Give two details about the working hours\nfor the job in the fourth advertisement.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Part-time hours” 1 mark. The scheme prints: “*If marks have not been allocated for either answer above”.", group: {"claimMax":2,"options":["(Shifts) of six hours a day","Four days a week"],"perOption":1} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b2-1", topicId: "italian-5-4", conceptId: "italian-word-free-tick-correct-box",
+    section: "B", questionRef: "2018 OL Section B2 Q1",
+    questionText: "The Italian word for “free” is:\nTick in the correct box\ngratuita\npassaggio\ncondivisione",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Gratuita", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B2",
+          "title": "Publicity piece 2 — answer in English or Irish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b2-2", topicId: "italian-5-4", conceptId: "list-things-need-use-this-service",
+    section: "B", questionRef: "2018 OL Section B2 Q2",
+    questionText: "List three things you need to do to use\nthis service.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":3,"perOption":2,"options":["Visit their website / download the (Bla Bla Car) app (1m) on your mobile phone (1m)","Fill in (1m) the details (from/to/dates) of your trip (1m)","Book a seat (1m) in a car (1m)","Contact the driver (1m) to finalize details (1m)","Show up / (be) on-time (1m) at the arranged meeting point (1m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B2",
+          "title": "Publicity piece 2 — answer in English or Irish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b2-3", topicId: "italian-5-4", conceptId: "advantages-this-service",
+    section: "B", questionRef: "2018 OL Section B2 Q3",
+    questionText: "Mention two advantages of this service.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":2,"perOption":2,"options":["The facilitation of (drivers) (1m) to take passengers / gives lifts (to others) (1m)","(By sharing) you can save (1m) money (1m) (on the costs of travel with others)","(By sharing) you can show respect (1m) to the environment (1m)","(By sharing) you reduce (1m) your co2 emissions (1m)","(By sharing) you help reduce (1m) traffic (1m)","(By sharing) meet (1m) new people (1m)","(By sharing) you travel (1m) on time (1m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B2",
+          "title": "Publicity piece 2 — answer in English or Irish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b2-4", topicId: "italian-5-4", conceptId: "four-countries-apart-from-italy-where",
+    section: "B", questionRef: "2018 OL Section B2 Q4",
+    questionText: "Name four countries, apart from Italy,\nwhere you can avail of this service.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":4,"perOption":1,"options":["Latvia","France","Belgium","Spain","Portugal","United Kingdom","Netherlands","Germany","Poland"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B2",
+          "title": "Publicity piece 2 — answer in English or Irish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b3-1", topicId: "italian-5-4", conceptId: "list-places-where-can-buy-cartafreccia",
+    section: "B", questionRef: "2018 OL Section B3 Q1",
+    questionText: "List two places in A where you can buy\nthe CartaFRECCIA Young card.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":2,"perOption":1,"options":["Ticket office","Travel agencies","Ticket machines","Calling the Call Centre"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b3-2", topicId: "italian-5-4", conceptId: "when-offer-available",
+    section: "B", questionRef: "2018 OL Section B3 Q2",
+    questionText: "When is the offer in B available?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "From the 21st March", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "to the 21st of May", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b3-3", topicId: "italian-5-4", conceptId: "might-bring-old-bike-running-shoes",
+    section: "B", questionRef: "2018 OL Section B3 Q3",
+    questionText: "Why might you bring your old bike or\nrunning shoes to the shop in C?\nGive two reasons.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":2,"perOption":2,"options":["To get a discount (1m) on a new pair of Runners / bicycle (1m)","To do some good / to recycle (2m)","To help (1m) the less fortunate (1m) / To make a donation / so they can be sent to Ghana (1m) as goodwill (1m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b3-4", topicId: "italian-5-4", conceptId: "food-items-mentioned",
+    section: "B", questionRef: "2018 OL Section B3 Q4",
+    questionText: "Name three food items mentioned in D.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":3,"perOption":1,"options":["Salads","Snacks","(Whole wheat) bread","(Hand-made) Biscuits","Flour","Fruit juices","Eggs","(Ready-made) sauces","Pesto"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b3-5", topicId: "italian-5-4", conceptId: "festive-day-does-offer-refer",
+    section: "B", questionRef: "2018 OL Section B3 Q5",
+    questionText: "To which festive day does the offer in E\nrefer?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "New Year’s", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b3-6", topicId: "italian-5-4", conceptId: "activity-young-person-can-summer-camp",
+    section: "B", questionRef: "2018 OL Section B3 Q6",
+    questionText: "Mention one activity a young person\ncan do in the summer camp in F.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Sport” 1 mark.", group: {"claimMax":1,"perOption":2,"options":["Soccer","Swimming","Basketball","Foosball/ Table football","Rowing"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b4-1", topicId: "italian-5-4", conceptId: "premio-letteratura-ragazzi-offers-chance-tick",
+    section: "B", questionRef: "2018 OL Section B4 Q1",
+    questionText: "The Premio letteratura ragazzi offers you\nthe chance to:\nTick in the correct box\nmeet famous writers\nread a story written by teenagers\npublish a story written by you",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Publish a story written by you", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B4",
+          "title": "Publicity piece 4 — answer in English or Irish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b4-2", topicId: "italian-5-4", conceptId: "list-points-mentioned-rules",
+    section: "B", questionRef: "2018 OL Section B4 Q2",
+    questionText: "List two points mentioned in the rules.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":2,"perOption":1,"options":["Each participant can send in up to two stories","Work submitted must not have been previously published","Entries will not be returned","Entry fee of €10","Closing date for entries is the 30th of July"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B4",
+          "title": "Publicity piece 4 — answer in English or Irish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b4-3", topicId: "italian-5-4", conceptId: "will-second-third-prize-winners-receive",
+    section: "B", questionRef: "2018 OL Section B4 Q3",
+    questionText: "What will the second and third prize\nwinners receive?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "2nd prize A gift-card", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "to download", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "music", marks: 1 },
+    { id: "r-2-1", kind: "point", verbatim: "3rd prize A book", marks: 1 },
+    { id: "r-2-2", kind: "point", verbatim: "written your favourite Writer/ of your choice", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B4",
+          "title": "Publicity piece 4 — answer in English or Irish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b4-4", topicId: "italian-5-4", conceptId: "list-way-can-enter-competition",
+    section: "B", questionRef: "2018 OL Section B4 Q4",
+    questionText: "List one way you can enter the competition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":1,"perOption":1,"options":["By post","By hand","Online"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B4",
+          "title": "Publicity piece 4 — answer in English or Irish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b5-a-match", topicId: "italian-6-5", conceptId: "match-printed-points-to-topics",
+    section: "B", questionRef: "2018 OL Section B5 Q(a)–(d)",
+    questionText: "Match the Internet Safety advice on the opposite page with the statements below by placing the correct number in the space provided.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a) Do not share your password. — 3 Do not share your password", marks: 2, contextNote: "Each topic is matched to the number of the printed point it refers to, on the page this card opens. The examination prints 8 topics; this card takes 4 of them. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-2", kind: "point", verbatim: "(b) Do not trust people you have met online. — 1 Do not trust people you have met online", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "(c) Do not send pictures of yourself. — 4 Do not send pictures of yourself", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "(d) Never reveal personal details. — 2 Never reveal your personal details", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B5",
+          "title": "Publicity piece 5 — answer in English or Irish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-b5-e-match", topicId: "italian-6-5", conceptId: "match-printed-points-to-topics",
+    section: "B", questionRef: "2018 OL Section B5 Q(e)–(h)",
+    questionText: "Match the Internet Safety advice on the opposite page with the statements below by placing the correct number in the space provided.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(e) Do not open any suspicious attachments. — 6 Do not open any suspicious attachments", marks: 2, contextNote: "Each topic is matched to the number of the printed point it refers to, on the page this card opens. The examination prints 8 topics; this card takes 4 of them. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-2", kind: "point", verbatim: "(f) Do not use the internet to lie, ridicule or deceive other people. — 8 Do not use internet to lie, ridicule or deceive other people", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "(g) If you see something upsetting online, talk to your parents or to your teachers. — 7 If you see something upsetting online, talk to you parents or to your teachers", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "(h) Do not meet up with people you don’t know. — 5 Do not meet up with people you don’t know", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B5",
+          "title": "Publicity piece 5 — answer in English or Irish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-la-1", topicId: "italian-3-1", conceptId: "weather-will-improve",
+    section: "L", questionRef: "2018 OL Section LA Q1",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The weather will improve\n(a) in the early morning\n(b) in the late morning\n(c) in the late afternoon\n(d) at night",
+    questionChoices: ["in the early morning","in the late morning","in the late afternoon","at night"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. (b)", marks: 3, contextNote: "The scheme accepts option (b) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-la-2", topicId: "italian-3-1", conceptId: "restaurant-will-open",
+    section: "L", questionRef: "2018 OL Section LA Q2",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The restaurant will open at\n(a) 12.00\n(b) 12.30\n(c) 14.30\n(d) 15.30",
+    questionChoices: ["12.00","12.30","14.30","15.30"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2. (b)", marks: 3, contextNote: "The scheme accepts option (b) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 2",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-la-3", topicId: "italian-3-1", conceptId: "invited-libreria-corso",
+    section: "L", questionRef: "2018 OL Section LA Q3",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "You are invited to Libreria del Corso on\n(a) Saturday morning\n(b) Saturday afternoon\n(c) Sunday afternoon\n(d) Sunday evening",
+    questionChoices: ["Saturday morning","Saturday afternoon","Sunday afternoon","Sunday evening"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "3. (a)", marks: 3, contextNote: "The scheme accepts option (a) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 3",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-la-4", topicId: "italian-3-1", conceptId: "earthquake",
+    section: "L", questionRef: "2018 OL Section LA Q4",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The earthquake was\n(a) mild causing no damage\n(b) mild causing a lot of damage\n(c) severe causing a lot of damage\n(d) severe but causing no personal injuries",
+    questionChoices: ["mild causing no damage","mild causing a lot of damage","severe causing a lot of damage","severe but causing no personal injuries"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "4. (a)", marks: 3, contextNote: "The scheme accepts option (a) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 4",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-la-5", topicId: "italian-3-1", conceptId: "villeggiando-initiative-will-take-place",
+    section: "L", questionRef: "2018 OL Section LA Q5",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The Villeggiando initiative will take place\n(a) in churches\n(b) on boats\n(c) in castles and gardens\n(d) in factories",
+    questionChoices: ["in churches","on boats","in castles and gardens","in factories"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "5. (c)", marks: 3, contextNote: "The scheme accepts option (c) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 5",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-la-6", topicId: "italian-3-1", conceptId: "shuttle-bus-service-will-start-from",
+    section: "L", questionRef: "2018 OL Section LA Q6",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The shuttle bus service will start from the\n(a) 1st June\n(b) 8th June\n(c) 30th June\n(d) 1st July",
+    questionChoices: ["1st June","8th June","30th June","1st July"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "6. (a)", marks: 3, contextNote: "The scheme accepts option (a) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 6",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-la-7", topicId: "italian-3-1", conceptId: "this-initiative-takes-place-during",
+    section: "L", questionRef: "2018 OL Section LA Q7",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "This initiative takes place during\n(a) the last weekend of September every year\n(b) the last weekend of every month\n(c) the first weekend of September every year\n(d) the first weekend of every month",
+    questionChoices: ["the last weekend of September every year","the last weekend of every month","the first weekend of September every year","the first weekend of every month"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "7. (a)", marks: 3, contextNote: "The scheme accepts option (a) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 7",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-la-8", topicId: "italian-3-1", conceptId: "music-performances-festival-will-take-place",
+    section: "L", questionRef: "2018 OL Section LA Q8",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "Music performances at the festival will take place\n(a) at the weekend\n(b) in the morning\n(c) in the afternoon\n(d) in the evening",
+    questionChoices: ["at the weekend","in the morning","in the afternoon","in the evening"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "8. (d)", marks: 3, contextNote: "The scheme accepts option (d) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 8",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb1-1", topicId: "italian-3-0", conceptId: "long-will-chiara-holiday",
+    section: "L", questionRef: "2018 OL Section LB1 Q1",
+    stem: "Dialogue 1. Conversation between Piero and Chiara. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "For how long will Chiara go on holiday?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "Five", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1-2", kind: "point", verbatim: "days", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb1-2", topicId: "italian-3-0", conceptId: "does-piero-say-about-life-city",
+    section: "L", questionRef: "2018 OL Section LB1 Q2",
+    stem: "Dialogue 1. Conversation between Piero and Chiara. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What does Piero say about life in the city? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["He is tired of it","The (amount of) traffic","The (amount of) noise","The (amount of) rushing about The (lack of) nature"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb1-3", topicId: "italian-3-0", conceptId: "challenges-does-piero-about-volunteering-farm",
+    section: "L", questionRef: "2018 OL Section LB1 Q3",
+    stem: "Dialogue 1. Conversation between Piero and Chiara. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What challenges does Piero mention about volunteering on a farm? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Get up (2m) early (2m) / early mornings (4m)","The work (2m) is tough (2m)","You work (2m) in the sun (2m) / it is hot when you work (4m)","You may not get on well / must get along (2m) with others /(other) volunteers (2m)","A lot of places (2m) are difficult to reach / are isolated (2m)."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb1-4", topicId: "italian-3-0", conceptId: "will-piero-travel-sardinia",
+    section: "L", questionRef: "2018 OL Section LB1 Q4",
+    stem: "Dialogue 1. Conversation between Piero and Chiara. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "How will Piero travel to Sardinia?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By train and ferry", marks: 6, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb2-1", topicId: "italian-3-0", conceptId: "laura-happier-new-school",
+    section: "L", questionRef: "2018 OL Section LB2 Q1",
+    stem: "Dialogue 2. Conversation between Laura and Marco. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Why is Laura happier in the new school?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":4,"options":["Because she has no school now on Saturdays","She can work (2m) in a shop (2m) improve (2m) her language skills (2m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb2-2", topicId: "italian-3-0", conceptId: "does-laura-prefer-study-english-spanish",
+    section: "L", questionRef: "2018 OL Section LB2 Q2",
+    stem: "Dialogue 2. Conversation between Laura and Marco. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Why does Laura prefer to study English and Spanish? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["Easier (to learn)","The grammar (2m) is easier (2m)","She is more motivated (2m) to learn them (2m)","Because modern languages are essential (2m) in employment (2m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb2-3", topicId: "italian-3-0", conceptId: "where-laura-doing-her-work-experience",
+    section: "L", questionRef: "2018 OL Section LB2 Q3",
+    stem: "Dialogue 2. Conversation between Laura and Marco. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Where is Laura doing her work experience?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "At the tourist office", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb2-4", topicId: "italian-3-0", conceptId: "where-laura-marco-going-meet",
+    section: "L", questionRef: "2018 OL Section LB2 Q4",
+    stem: "Dialogue 2. Conversation between Laura and Marco. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Where are Laura and Marco going to meet up?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "At the square /in town", marks: 2, contextNote: "Answer in English or Irish." },
+    { id: "r-1-2", kind: "point", verbatim: "in front", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "of the cake shop / café", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb3-1", topicId: "italian-3-0", conceptId: "about-sergio",
+    section: "L", questionRef: "2018 OL Section LB3 Q1",
+    stem: "Dialogue 3. Interview with Sergio Rossi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Give two details about Sergio. (ii)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["He is 35","Was born in Florence","He considers himself a story teller","He started his career as a stage actor","He is a documentary film maker","He writes books","He just finished writing a book","(His last book) will be published in September."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb3-2", topicId: "italian-3-0", conceptId: "long-has-sergio-being-working-fanpage",
+    section: "L", questionRef: "2018 OL Section LB3 Q2",
+    stem: "Dialogue 3. Interview with Sergio Rossi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "How long has Sergio being working for Fanpage.it?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Six years", marks: 3, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb3-3", topicId: "italian-3-0", conceptId: "puts-sergio-bad-mood",
+    section: "L", questionRef: "2018 OL Section LB3 Q3",
+    stem: "Dialogue 3. Interview with Sergio Rossi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What puts Sergio in a bad mood?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":3,"options":["Bad (1m) news (1m) in the newspapers (1m)","Fake (2m) news (1m)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb3-4", topicId: "italian-3-0", conceptId: "where-sergio-going-public-readings",
+    section: "L", questionRef: "2018 OL Section LB3 Q4",
+    stem: "Dialogue 3. Interview with Sergio Rossi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Where is Sergio going to give public readings?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "National", marks: 1, contextNote: "The scheme prints three places, 3 marks each: “National (1m) library (2m)”, “(modern) art (1m) gallery(2m)” and “university 9 marks (3+3+3)”. Answer in English or Irish." },
+    { id: "r-2", kind: "point", verbatim: "library", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "(modern) art", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "gallery", marks: 2 },
+    { id: "r-5", kind: "point", verbatim: "university", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb3-5", topicId: "italian-3-0", conceptId: "negative-aspect-sergio-work",
+    section: "L", questionRef: "2018 OL Section LB3 Q5",
+    stem: "Dialogue 3. Interview with Sergio Rossi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What is the negative aspect of Sergio’s work?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "He works more than", marks: 1, contextNote: "Answer in English or Irish." },
+    { id: "r-1-2", kind: "point", verbatim: "a 40 hour week", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 5",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb3-6", topicId: "italian-3-0", conceptId: "topics-sergio-videos-deal-with",
+    section: "L", questionRef: "2018 OL Section LB3 Q6",
+    stem: "Dialogue 3. Interview with Sergio Rossi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Name two topics which Sergio’s videos deal with. (ii)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":3,"options":["Immigration","Homophobia","The fight against racism","Discrimination","The defence of civil rights","Tolerance of others"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 6",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb3-7", topicId: "italian-3-0", conceptId: "does-sergio-his-free-time",
+    section: "L", questionRef: "2018 OL Section LB3 Q7",
+    stem: "Dialogue 3. Interview with Sergio Rossi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What does Sergio do in his free time? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Travelling","Sport/swimming","Spending time with his friends / family"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 7",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-lb3-8", topicId: "italian-3-0", conceptId: "with-whom-will-sergio-holidays",
+    section: "L", questionRef: "2018 OL Section LB3 Q8",
+    stem: "Dialogue 3. Interview with Sergio Rossi. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "With whom will Sergio go on holidays?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "His family", marks: 2, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 8",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2018 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2018 Ordinary Level, pp.16-18 — © State Examinations Commission.",
+    id: "it-2018-ol-c-1-a", topicId: "italian-6-3", conceptId: "1-informal-writing-30-marks-choose-a-informal-le",
+    section: "C", questionRef: "2018 OL Section C Q1(a)",
+    questionText: "1. Informal Writing (30 marks)\nChoose (a) Informal Letter or\n(b) Dialogue",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 1 30 marks",
+                "(a) E-mail/Letter",
+                "Where marks for content and communication are 7 or less, award no marks for language"
+          ],
+          "criteria": [
+                {
+                      "id": "format",
+                      "label": "Beginning, opening greeting, closing formula, ending 7 marks (2+2+2+1)",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Beginning, opening greeting, closing formula, ending 7 marks (2+2+2+1)"
+                      ]
+                },
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 16,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+                      "guidance": [
+                            "Content and communication: 16 marks",
+                            "The following points to be covered",
+                            "• Subjects 4 marks",
+                            "• Teachers 3 marks",
+                            "• Timetable 3 marks",
+                            "• Extra-curricular activities",
+                            "(singing, trad. music, drama) 6 marks (3+3)"
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Language: 7 marks"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 - 2",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Most verbs incorrect, few correct agreements, many spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "3 - 5",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Few verbs wrong, some correct agreements not too many mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "6 - 7",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Few mistakes, many correct agreements, very good accuracy"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 0,
+                            "permittedMarks": [0],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+                      }
+                }
+          ],
+          "markingGuideNote": "Question 1 30 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2018 Ordinary Level, pp.16-18 — © State Examinations Commission.",
+    id: "it-2018-ol-c-1-b", topicId: "italian-6-3", conceptId: "1-informal-writing-30-marks-choose-a-informal-le",
+    section: "C", questionRef: "2018 OL Section C Q1(b)",
+    questionText: "1. Informal Writing (30 marks)\nChoose (a) Informal Letter or\n(b) Dialogue",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 1 30 marks",
+                "(b) Dialogue 30 marks",
+                "Where marks for content and communication are 7 or less, award no marks for language"
+          ],
+          "criteria": [
+                {
+                      "id": "format",
+                      "label": "Dialogue format, beginning, closing formula, ending 7 marks (2+2+2+1)",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Dialogue format, beginning, closing formula, ending 7 marks (2+2+2+1)"
+                      ]
+                },
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 16,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+                      "guidance": [
+                            "Content and communication: 16 marks",
+                            "The following four points to be covered",
+                            "• With whom you went and for how long 5 marks (3+2)",
+                            "• When you went back to Ireland and how 5 marks (3+2)",
+                            "• Places you visited 3 marks",
+                            "• What did you like the most 3 marks"
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language and conversational expressions",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Language and conversational expressions 7 marks (2+2+2+1)"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 – 2",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Most verbs incorrect, few correct agreements, many spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "3 - 5",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Few verbs wrong, some correct agreements not too many mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "6 -7",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Few mistakes, many correct agreements, very good accuracy"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 0,
+                            "permittedMarks": [0],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+                      }
+                }
+          ],
+          "markingGuideNote": "Question 1 30 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2018 Ordinary Level, pp.16-18 — © State Examinations Commission.",
+    id: "it-2018-ol-c-2", topicId: "italian-6-4", conceptId: "fill-in-the-form-below-in-italian",
+    section: "C", questionRef: "2018 OL Section C Q2",
+    questionText: "Fill in the form below in Italian.",
+    totalMarks: 22,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 2 FORM-FILLING 22 marks",
+                "Candidates will be penalised for incorrect verbs, incorrect agreements and spelling mistakes"
+          ],
+          "criteria": [
+                {
+                      "id": "field-nome",
+                      "label": "Nome",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Nome 1 mark"
+                      ]
+                },
+                {
+                      "id": "field-cognome",
+                      "label": "Cognome",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Cognome 1 mark"
+                      ]
+                },
+                {
+                      "id": "field-et",
+                      "label": "Età",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Età 2 marks"
+                      ]
+                },
+                {
+                      "id": "field-luogo-di-nascita",
+                      "label": "Luogo di nascita",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Luogo di nascita 2 marks"
+                      ]
+                },
+                {
+                      "id": "field-indirizzo-di-posta-elettronica",
+                      "label": "Indirizzo di posta elettronica",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Indirizzo di posta elettronica 1 mark"
+                      ]
+                },
+                {
+                      "id": "field-periodo-stagione",
+                      "label": "Periodo/stagione",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Periodo/stagione 1 mark"
+                      ]
+                },
+                {
+                      "id": "field-numero-di-settimane",
+                      "label": "Numero di settimane",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Numero di settimane 1 mark"
+                      ]
+                },
+                {
+                      "id": "field-preferisci-una-famiglia-con-o-senza-animali-domestici",
+                      "label": "Preferisci una famiglia con o senza animali domestici?",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Preferisci una famiglia con o senza animali domestici? 1 mark"
+                      ]
+                },
+                {
+                      "id": "field-perch",
+                      "label": "Perché?",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Perché? 2 marks"
+                      ]
+                },
+                {
+                      "id": "field-perch-vuoi-fare-uno-scambio",
+                      "label": "Perché vuoi fare uno scambio?",
+                      "maxMarks": 6,
+                      "permittedMarks": [0,1,2,3,4,5,6],
+                      "guidance": [
+                            "Perché vuoi fare uno scambio? 6 marks (2+2+2)"
+                      ]
+                },
+                {
+                      "id": "field-cosa-vorresti-fare-quando-sarai-in-italia",
+                      "label": "Cosa vorresti fare quando sarai in Italia?",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Cosa vorresti fare quando sarai in Italia? 4 marks (2+2)"
+                      ]
+                }
+          ],
+          "markingGuideNote": "Question 2 FORM-FILLING 22 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2018 Ordinary Level — © State Examinations Commission.",
+    id: "it-2018-ol-c-3", topicId: "italian-6-5", conceptId: "giulia-s-weekend-giulia-s-tweets-got-mixed-up-wr",
+    section: "C", questionRef: "2018 OL Section C Q3",
+    questionText: "Giulia’s weekend\nGiulia’s tweets got mixed up.\nWrite them in the correct order.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints the order line by line; each line in its place is one mark.", group: {"claimMax":8,"perOption":1,"options":["1. Finalmente il giorno del concerto è arrivato.","2. Sono le 7 del mattino e sono già sveglia da un po’.","3. Doccia, colazione veloce e mi preparo.","4. Sono già le 10 appuntamento con Lea alle 11.","5. Pranzo in centro. Ci prepariamo per il concerto.","6. Siamo sul taxi, destinazione concerto.","7. Il concerto è a ppena iniziato, l’atmosfera è magica.","8. Concerto finito, si ritorna a casa."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Italian 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it, with the eight sentences to put in order."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-a1-1", topicId: "italian-5-3", conceptId: "four-about-leonardo",
+    section: "A", questionRef: "2017 OL Section A1 Q1",
+    questionText: "Give four details about Leonardo.\n(Par. 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He is from Puglia” 1 mark.", group: {"claimMax":4,"perOption":3,"options":["He is a young (1) fashion (1) designer/stylist (1)","He is passionate (1) about fashion (1) since his youth (1)","He graduated (1) in Science/technology/fashion (1) in Bari/in 2012 (1)","He moved to Urbino (1) to do a masters (1) in Fashion/design (1)","He is an optimist","He is very thorough","He is precise","He never stops dreaming (despite difficulties)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-a1-2", topicId: "italian-5-3", conceptId: "who-had-strong-influence-his-career",
+    section: "A", questionRef: "2017 OL Section A1 Q2",
+    questionText: "Who had a strong influence on his career?\n(Par. 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "His mother", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Other maternal relation” 1 mark.", permittedMarks: [0,1,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-a1-3", topicId: "italian-5-3", conceptId: "thing-says-about-internet",
+    section: "A", questionRef: "2017 OL Section A1 Q3",
+    questionText: "State one thing he says about the internet.\n(Par. 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It is essential” 2 marks.", group: {"claimMax":1,"perOption":3,"options":["It gets his name out there","It shows people what he can do.","It shows people how he can do it.","It allows for free expression","It is accessible (to everyone/everywhere)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-a1-4", topicId: "italian-5-3", conceptId: "things-necessary-succeed",
+    section: "A", questionRef: "2017 OL Section A1 Q4",
+    questionText: "Mention three things necessary to succeed.\n(Par. 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Not to be disheartened” 2 marks; “Take it seriously” 2 marks.", group: {"claimMax":3,"perOption":3,"options":["Be talented","Importance of (1) study (2)","Pick courses and/or a Masters (2) where you can really learn (1)","Importance (1) of humility (2)","To be always (1) ready to learn (2)","Never (1) be disheartened (2)","Always (1) keep going (2)","Make a lot (1) of sacrifices (2)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-a1-5", topicId: "italian-5-3", conceptId: "list-four-things-likes-his-spare",
+    section: "A", questionRef: "2017 OL Section A1 Q5",
+    questionText: "List four things he likes to do in his spare time.\n(Par. 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":4,"perOption":2,"options":["Listen (1) to the music (1)","Browse around (1) the shops/Go shopping (1)","Upload on Instagram (1) the photographs that he took (1)","To be on the lookout for (1) new input/inspiration (1)","Travel (1) in Italy/abroad (1)","Discover his roots / new places (1) in Puglia (1)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-a1-6", topicId: "italian-5-3", conceptId: "his-plans-future-thing",
+    section: "A", questionRef: "2017 OL Section A1 Q6",
+    questionText: "What are his plans for the future?\nName one thing.\n(Par. 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “To let the future look after itself” 1 mark; “To work” 1 mark; “Milan” 1 mark.", group: {"claimMax":1,"perOption":3,"options":["He would like to move (2) to Rome (1)","He would like to go to Milan/ try again (2) to make some (business) contacts (1)","He wants to go the (Milan fabric) trade fair (2) in February (1)","He wants to work on his personal collection"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-a2-1-a", topicId: "italian-5-3", conceptId: "can-avail-cinema-discount",
+    section: "A", questionRef: "2017 OL Section A2 Q1(a)",
+    questionText: "How can you avail of the cinema discount?\n(Par. 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "By going there by bicycle", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Bicycle” 1 mark.", permittedMarks: [0,1,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-a2-1-b", topicId: "italian-5-3", conceptId: "advantages-this-initiative",
+    section: "A", questionRef: "2017 OL Section A2 Q1(b)",
+    questionText: "Mention two advantages of this initiative.\n(Par. 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “You save money” 2 marks; “The environment” 2 marks; “Parking” 2 marks; “You do some good” 2 marks; “It helps stress levels” 2 marks.", group: {"claimMax":2,"perOption":4,"options":["You pay €6 instead of €8","You help the environment","You will not get stressed as you do not need to look for parking"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-a2-2-a", topicId: "italian-5-3", conceptId: "about-this-promotion",
+    section: "A", questionRef: "2017 OL Section A2 Q2(a)",
+    questionText: "Give two details about this promotion.\n(Par. 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Mondays” 1 mark; “Fridays” 1 mark; “Afternoons” 1 mark; “Evenings” 1 mark; “For a year” 1 mark; “On in the Odeon Cinema /other places e.g. Rome/Europe” 1 mark; “It saves you money” 1 mark.", group: {"claimMax":2,"options":["It runs from Monday to Friday","It is for the afternoon and evening screenings","It is valid all year round","It is valid in cinemas (2) of the old / historical (1) city centre/centre (1)"],"perOption":4} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-a2-2-b", topicId: "italian-5-3", conceptId: "comune-bologna-offers-financial-incentive-when",
+    section: "A", questionRef: "2017 OL Section A2 Q2(b)",
+    questionText: "The Comune di Bologna offers a financial\nincentive when people drive to the cinema.\n(Par. 2)\nTick the correct box\nTrue\nFalse",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-a2-3-a", topicId: "italian-5-3", conceptId: "italian-cyclists-tick-correct-box-concreti",
+    section: "A", questionRef: "2017 OL Section A2 Q3(a)",
+    questionText: "The Italian for “cyclists” is:\n(Par. 3)\nTick the correct box\nconcreti\ncrediamo\nciclisti",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ciclisti", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-a2-3-b", topicId: "italian-5-3", conceptId: "does-giulio-kerschbaumer-hope-achieve-with",
+    section: "A", questionRef: "2017 OL Section A2 Q3(b)",
+    questionText: "What does Giulio Kerschbaumer hope to\nachieve with this initiative?\n(Par. 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “More bicycles” 2 marks; “To improve quality of life” 2 marks.", group: {"claimMax":2,"perOption":3,"options":["To improve (1) air quality (2)","To reward cyclists (1) who choose a sustainable/ Environmentally friendly life (2)","To get more people (1) cycling (2)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-a2-4-a", topicId: "italian-5-3", conceptId: "does-figure-refer",
+    section: "A", questionRef: "2017 OL Section A2 Q4(a)",
+    questionText: "What does the 42% figure refer to?\n(Par. 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "The (percentage) increase", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “2011” 1 mark. The scheme prints the last piece as “since 2011 (2) (until today)”." },
+    { id: "r-1-2", kind: "point", verbatim: "in cyclists", marks: 2 },
+    { id: "r-1-3", kind: "point", verbatim: "since 2011", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-a2-4-b", topicId: "italian-5-3", conceptId: "about-people-taking-part-this-initiative",
+    section: "A", questionRef: "2017 OL Section A2 Q4(b)",
+    questionText: "Give two details about the people taking\npart in this initiative.\n(Par. 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Men” 2 marks; “Women” 2 marks.", group: {"claimMax":2,"perOption":4,"options":["All ages","Men and women","They go on their own","They go with family","They go with friends","They go with their school","They are diverse (This answer cannot be used along with another answer)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b1-1-a", topicId: "italian-5-4", conceptId: "about-family-first-advertisement",
+    section: "B", questionRef: "2017 OL Section B1 Q1(a)",
+    questionText: "Give two details about the family in the\nfirst advertisement.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":2,"options":["They are Milanese","They have two children /they have an six/eight year old child","They are looking for a home help/childminder"],"perOption":1} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b1-1-b", topicId: "italian-5-4", conceptId: "duties-mentioned",
+    section: "B", questionRef: "2017 OL Section B1 Q1(b)",
+    questionText: "Name three of the duties mentioned.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":3,"perOption":1,"options":["Cleaning","Ironing","Making meals","Dropping/collection from school","Help with homework","Babysitting"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b1-1-c", topicId: "italian-5-4", conceptId: "rooms-mentioned",
+    section: "B", questionRef: "2017 OL Section B1 Q1(c)",
+    questionText: "Name two rooms mentioned.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":2,"perOption":2,"options":["Bedroom","Kitchen","Bathroom","Garden"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b1-2", topicId: "italian-5-4", conceptId: "person-second-advertisement-looking-work",
+    section: "B", questionRef: "2017 OL Section B1 Q2",
+    questionText: "Why is the person in the second advertisement\nlooking for work?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "He needs to pay", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "for his studies", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b1-3", topicId: "italian-5-4", conceptId: "about-course-third-advertisement",
+    section: "B", questionRef: "2017 OL Section B1 Q3",
+    questionText: "Give two details about the course in the third\nadvertisement.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Italian course” 1 mark; “Taught by teachers of Italian” 1 mark.", group: {"claimMax":2,"perOption":2,"options":["For foreign employees (in a company)","Three mornings a week","Starts February"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b1-4-a", topicId: "italian-5-4", conceptId: "fourth-advertisement-looking-tick-correct-box",
+    section: "B", questionRef: "2017 OL Section B1 Q4(a)",
+    questionText: "In the fourth advertisement, they are\nlooking for:\nTick the correct box\na chef\na carer\na waiter",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Waiter", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b1-4-b", topicId: "italian-5-4", conceptId: "when-will-job-start",
+    section: "B", questionRef: "2017 OL Section B1 Q4(b)",
+    questionText: "When will the job start?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Immediately", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b2-1", topicId: "italian-5-4", conceptId: "things-included-price-course",
+    section: "B", questionRef: "2017 OL Section B2 Q1",
+    questionText: "Mention two things included in the price\nof the course.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Driving lessons” 1 mark; “Classes” 1 mark; “Pink document” 1 mark; “Book” 1 mark; “CD” 1 mark.", group: {"claimMax":2,"options":["The enrolment to the school","Three driving lessons","25 theory classes","Teaching resources/Theory book/Quiz book/ Quiz CD/CD with quizzes","Theory exam fees","Theory exam","Provisional licence"],"perOption":2} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B2",
+          "title": "Publicity piece 2 — answer in English or Irish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b2-2", topicId: "italian-5-4", conceptId: "languages-course-could-provided",
+    section: "B", questionRef: "2017 OL Section B2 Q2",
+    questionText: "Name three of the languages in which the\ncourse could be provided.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":3,"perOption":2,"options":["English","German","French","Spanish","Chinese"],"perOptionSteps":[2,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B2",
+          "title": "Publicity piece 2 — answer in English or Irish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b2-3", topicId: "italian-5-4", conceptId: "four-terms-conditions-voucher",
+    section: "B", questionRef: "2017 OL Section B2 Q3",
+    questionText: "State four of the terms and conditions of the\nvoucher.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":4,"perOption":1,"options":["Use within six months of purchase.","One coupon per person.","Complete six hours of driving lessons (to sit test)","Pay for medical check-up Pay associated costs of driving test","Pay for the driving lessons that are not included in the offer","Booking by phone"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B2",
+          "title": "Publicity piece 2 — answer in English or Irish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b2-4", topicId: "italian-5-4", conceptId: "when-voucher-valid",
+    section: "B", questionRef: "2017 OL Section B2 Q4",
+    questionText: "When is the voucher valid?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "January", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “For six months after purchase/In the next 6 months” 1 mark. The scheme also prints: “(The answers “For six months after purchase” or “In the next six months” will only be acceptable as an answer in Question 4. if not used already as an answer in Question 3)”." },
+    { id: "r-1-2", kind: "point", verbatim: "February", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "March", marks: 1 },
+    { id: "r-1-4", kind: "point", verbatim: "April", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B2",
+          "title": "Publicity piece 2 — answer in English or Irish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b3-1", topicId: "italian-5-4", conceptId: "workaway-scheme-includes-travel-expenses-tick",
+    section: "B", questionRef: "2017 OL Section B3 Q1",
+    questionText: "The WorkAway scheme includes travel\nexpenses:\nTick the correct box\nTrue\nFalse",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b3-2", topicId: "italian-5-4", conceptId: "families-organisations-have-when-looking-volunteers",
+    section: "B", questionRef: "2017 OL Section B3 Q2",
+    questionText: "What do families or organisations have to\ndo when they are looking for volunteers?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "Go to the WorkAway database", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Database” 1 mark. The scheme also prints: “(Go on the internet /website=database)”." },
+    { id: "r-1-2", kind: "point", verbatim: "place an advertisement", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b3-3", topicId: "italian-5-4", conceptId: "italian-board-lodging-tick-correct-box",
+    section: "B", questionRef: "2017 OL Section B3 Q3",
+    questionText: "The Italian for “board and lodging” is:\nTick in the correct box\nuna macchina o altri benefit\nvitto e alloggio\norganizzazione ospitante",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Vitto e alloggio", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b3-4", topicId: "italian-5-4", conceptId: "much-will-couple-have-pay-biannual",
+    section: "B", questionRef: "2017 OL Section B3 Q4",
+    questionText: "How much will a couple have to pay for\nthe biannual subscription?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "30 Euro", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b3-5", topicId: "italian-5-4", conceptId: "usual-work-schedule-volunteers",
+    section: "B", questionRef: "2017 OL Section B3 Q5",
+    questionText: "What is the usual work schedule of the\nvolunteers?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "Five hours", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "a day", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "Monday", marks: 1 },
+    { id: "r-1-4", kind: "point", verbatim: "to Friday", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b3-6", topicId: "italian-5-4", conceptId: "four-jobs-that-volunteers-can",
+    section: "B", questionRef: "2017 OL Section B3 Q6",
+    questionText: "Mention four jobs that the volunteers can\ndo.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Kitchen” 1 mark.", group: {"claimMax":4,"perOption":2,"options":["Painting the house","Gardening","Cooking","Office work","Teaching a language","Web Design","Photocopying"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b4-a-match", topicId: "italian-6-5", conceptId: "match-printed-points-to-topics",
+    section: "B", questionRef: "2017 OL Section B4 Q(a)–(d)",
+    questionText: "Which of the points in the previous page refer to the following topics? Indicate your answer by writing the correct number in the space provided.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a) Limit fizzy and iced drinks — 7", marks: 2, contextNote: "Each topic is matched to the number of the printed point it refers to, on the page this card opens. The examination prints 8 topics; this card takes 4 of them. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-2", kind: "point", verbatim: "(b) Be responsible when using air conditioning — 4", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "(c) Wear high factor sun cream — 2", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "(d) Avoid staying out during the hottest hours of the day — 1", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B4",
+          "title": "Publicity piece 4 — answer in English or Irish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b4-e-match", topicId: "italian-6-5", conceptId: "match-printed-points-to-topics",
+    section: "B", questionRef: "2017 OL Section B4 Q(e)–(h)",
+    questionText: "Which of the points in the previous page refer to the following topics? Indicate your answer by writing the correct number in the space provided.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(e) Look after the children and the elderly — 8", marks: 2, contextNote: "Each topic is matched to the number of the printed point it refers to, on the page this card opens. The examination prints 8 topics; this card takes 4 of them. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-2", kind: "point", verbatim: "(f) Take a shower — 5", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "(g) Avoid exercising or doing any manual work during the hottest hours of the day — 6", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "(h) Wear light clothes — 3", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B4",
+          "title": "Publicity piece 4 — answer in English or Irish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b5-1", topicId: "italian-5-4", conceptId: "premio-internazionale-bonacci-competition-offers-chance",
+    section: "B", questionRef: "2017 OL Section B5 Q1",
+    questionText: "The Premio Internazionale Bonacci\ncompetition offers you the chance to:\nTick the correct box\ntalk about languages\ndemonstrate what you know about Italy\nshow how creative you are",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Demonstrate what you know about Italy", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Marks award for alternative answer” 1 mark.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B5",
+          "title": "Publicity piece 5 — answer in English or Irish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b5-2", topicId: "italian-5-4", conceptId: "things-need-enter-competition",
+    section: "B", questionRef: "2017 OL Section B5 Q2",
+    questionText: "Mention two things you need to do to enter\nthe competition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":2,"perOption":2,"options":["(Register) as a single participant (1) or as a group (1)","Pick one of the three themes","Make a video/ mini – documentary/an interview/a song/a play (in Italian) (1) – (no longer than) three minutes (1)","Send in your contribution","Attend an Italian as a foreign language class"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B5",
+          "title": "Publicity piece 5 — answer in English or Irish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b5-3", topicId: "italian-5-4", conceptId: "prize",
+    section: "B", questionRef: "2017 OL Section B5 Q3",
+    questionText: "What is the prize?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "A set of books", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “€200 plus a set of books” 1 mark." },
+    { id: "r-1-2", kind: "point", verbatim: "(worth) €200", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B5",
+          "title": "Publicity piece 5 — answer in English or Irish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-b5-4", topicId: "italian-5-4", conceptId: "will-winners-notified",
+    section: "B", questionRef: "2017 OL Section B5 Q4",
+    questionText: "How will the winners be notified?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Via email", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B5",
+          "title": "Publicity piece 5 — answer in English or Irish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-la-1", topicId: "italian-3-1", conceptId: "campania-express-train-will-have",
+    section: "L", questionRef: "2017 OL Section LA Q1",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The Campania Express train will have\n(a) 154 seats\n(b) 104 seats\n(c) 144 seats\n(d) 140 seats",
+    questionChoices: ["154 seats","104 seats","144 seats","140 seats"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. (c)", marks: 3, contextNote: "The scheme accepts option (c) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-la-2", topicId: "italian-3-1", conceptId: "must-register-offer",
+    section: "L", questionRef: "2017 OL Section LA Q2",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "You must register for the offer\n(a) This weekend\n(b) Next year\n(c) In the month of November\n(d) In the month of December",
+    questionChoices: ["This weekend","Next year","In the month of November","In the month of December"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2. (a)", marks: 3, contextNote: "The scheme accepts option (a) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 2",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-la-3", topicId: "italian-3-1", conceptId: "temperature-north",
+    section: "L", questionRef: "2017 OL Section LA Q3",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The temperature in the North\n(a) Will rise significantly\n(b) Will remain cool\n(c) Will drop to 18°C\n(d) Will stabilise",
+    questionChoices: ["Will rise significantly","Will remain cool","Will drop to 18°C","Will stabilise"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "3. (c)", marks: 3, contextNote: "The scheme accepts option (c) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 3",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-la-4", topicId: "italian-3-1", conceptId: "download-new-app-can-avail",
+    section: "L", questionRef: "2017 OL Section LA Q4",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "If you download the new app you can avail of\n(a) Free dining\n(b) Free concert tickets\n(c) Free parking\n(d) Free car sharing",
+    questionChoices: ["Free dining","Free concert tickets","Free parking","Free car sharing"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "4. (d)", marks: 3, contextNote: "The scheme accepts option (d) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 4",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-la-5", topicId: "italian-3-1", conceptId: "film-will-cinemas-from",
+    section: "L", questionRef: "2017 OL Section LA Q5",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The film will be in cinemas from\n(a) 12th June\n(b) 24th June\n(c) 2nd July\n(d) 12th July",
+    questionChoices: ["12th June","24th June","2nd July","12th July"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "5. (b)", marks: 3, contextNote: "The scheme accepts option (b) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 5",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-la-6", topicId: "italian-3-1", conceptId: "where-newspapers-cinema-rank-source-entertainment",
+    section: "L", questionRef: "2017 OL Section LA Q6",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "Where do newspapers and cinema rank as a source of entertainment, according to the survey?\n(a) First\n(b) Second\n(c) Third\n(d) Last",
+    questionChoices: ["First","Second","Third","Last"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "6. (d)", marks: 3, contextNote: "The scheme accepts option (d) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 6",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-la-7", topicId: "italian-3-1", conceptId: "series-strikes-involves",
+    section: "L", questionRef: "2017 OL Section LA Q7",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The series of strikes involves\n(a) The transport sector and nurses\n(b) The transport sector and teachers\n(c) The transport sector and police\n(d) The transport sector and factory workers",
+    questionChoices: ["The transport sector and nurses","The transport sector and teachers","The transport sector and police","The transport sector and factory workers"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "7. (a)", marks: 3, contextNote: "The scheme accepts option (a) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 7",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-la-8", topicId: "italian-3-1", conceptId: "news-item-about",
+    section: "L", questionRef: "2017 OL Section LA Q8",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The news item is about\n(a) New healthy eating habits\n(b) Garden therapy\n(c) Aromatherapy\n(d) Art therapy",
+    questionChoices: ["New healthy eating habits","Garden therapy","Aromatherapy","Art therapy"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "8. (b)", marks: 3, contextNote: "The scheme accepts option (b) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 8",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb1-1", topicId: "italian-3-0", conceptId: "did-giovanni-find-difficult-hear-phone",
+    section: "L", questionRef: "2017 OL Section LB1 Q1",
+    stem: "Dialogue 1. Conversation between Anna and Giovanni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Why did Giovanni find it difficult to hear the phone ringing? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["He was in the garden (3) sunbathing (1).","He did not have his phone on him (3), it was in the kitchen (1).","He was listening to music (3), with earphones (1).","Maximum of 3 marks will be awarded for inaccurate combination of points"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb1-2", topicId: "italian-3-0", conceptId: "has-giovanni-planned-friday-night-full",
+    section: "L", questionRef: "2017 OL Section LB1 Q2",
+    stem: "Dialogue 1. Conversation between Anna and Giovanni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What has Giovanni planned to do on Friday night? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He wants to stay at home as the game is on television and he wants to watch it as Italy are playing", marks: 8, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb1-3", topicId: "italian-3-0", conceptId: "suggestion-does-giovanni-make",
+    section: "L", questionRef: "2017 OL Section LB1 Q3",
+    stem: "Dialogue 1. Conversation between Anna and Giovanni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What suggestion does Giovanni make? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["To ask them (1) over to his home (3)","To watch (1) the game together (3)","To order (1) food (3)","To cheer (1) on the national team (3)","Go out to celebrate (1) after the match (3)","Maximum of 3 marks will be awarded for inaccurate combination of points"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb1-4", topicId: "italian-3-0", conceptId: "when-will-anna-ring-marisa",
+    section: "L", questionRef: "2017 OL Section LB1 Q4",
+    stem: "Dialogue 1. Conversation between Anna and Giovanni. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "When will Anna ring Marisa?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tomorrow afternoon", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb2-1", topicId: "italian-3-0", conceptId: "marta-work-duties",
+    section: "L", questionRef: "2017 OL Section LB2 Q1",
+    stem: "Dialogue 2. Conversation between Riccardo and Marta. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Name two of Marta’s work duties.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints: “Two of.”. Answer in English or Irish.", group: {"claimMax":2,"options":["She looked after (1) two children (3)","He accompanied them (1) to school (3)","She did some domestic chores (4)","She collected (1) them from school (3)","She took them (1) (after school) activities (3)","She took them (1) to the park/to play with friends (3)","She helped (1) them with homework (3)"],"perOption":4} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb2-2", topicId: "italian-3-0", conceptId: "did-marta-her-day-off",
+    section: "L", questionRef: "2017 OL Section LB2 Q2",
+    stem: "Dialogue 2. Conversation between Riccardo and Marta. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What did Marta do on her day off? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["She went to the city centre (3) with others/au pairs (1)","She went to the cinema","She browsed around the second hand shops"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb2-3", topicId: "italian-3-0", conceptId: "she-unable-contact-her-host-family",
+    section: "L", questionRef: "2017 OL Section LB2 Q3",
+    stem: "Dialogue 2. Conversation between Riccardo and Marta. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Why was she unable to contact her host family?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mobile phone ran out of battery", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb2-4", topicId: "italian-3-0", conceptId: "much-money-did-airline-offer-marta",
+    section: "L", questionRef: "2017 OL Section LB2 Q4",
+    stem: "Dialogue 2. Conversation between Riccardo and Marta. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "How much money did the airline offer Marta?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "80 euro", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb3-1", topicId: "italian-3-0", conceptId: "when-did-daniela-leave-italy-study",
+    section: "L", questionRef: "2017 OL Section LB3 Q1",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "When did Daniela leave Italy to go and study abroad? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["When she was eighteen years old","After il diploma di maturità / the Leaving Cert/her final school exams"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb3-2", topicId: "italian-3-0", conceptId: "did-daniela-travel-around-italy",
+    section: "L", questionRef: "2017 OL Section LB3 Q2",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "How did Daniela travel around Italy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "On foot", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb3-3", topicId: "italian-3-0", conceptId: "did-people-think-daniela",
+    section: "L", questionRef: "2017 OL Section LB3 Q3",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What did people think of Daniela? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["She was brave","She was (a little) crazy","She was inspirational"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb3-4", topicId: "italian-3-0", conceptId: "who-helped-daniela-with-accommodation-food",
+    section: "L", questionRef: "2017 OL Section LB3 Q4",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Who helped Daniela with accommodation and food during her journey?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "People/friends/acquaintances", marks: 3, contextNote: "Answer in English or Irish. The scheme prints this line as \"4. Two required 4 mharc (3+1)\", an SEC misprint; it is read as \"4. Two required 4 marks (3+1)\", which the printed total of its section confirms." },
+    { id: "r-2", kind: "point", verbatim: "Social media", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb3-5", topicId: "italian-3-0", conceptId: "list-items-daniela-brought-with-her",
+    section: "L", questionRef: "2017 OL Section LB3 Q5",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "List two items Daniela brought with her.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":4,"options":["Rucksack/Bag","(Two) T-shirts","(A pair of) trousers","A sweater","(Comfortable walking) shoes","Flip flops/slippers","A (water) bottle","A cap / hat","A (rain) coat","A map (of Italy)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 5",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb3-6", topicId: "italian-3-0", conceptId: "part-italy-daniela-from",
+    section: "L", questionRef: "2017 OL Section LB3 Q6",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Which part of Italy is Daniela from?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Piedmont /The North", marks: 2, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 6",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb3-7", topicId: "italian-3-0", conceptId: "where-did-daniela-sleep-when-she",
+    section: "L", questionRef: "2017 OL Section LB3 Q7",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Where did Daniela sleep when she could not find accommodation?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Beach", marks: 4, contextNote: "Answer in English or Irish. The scheme prints this line as \"7. Two required 6 (4+2)\", an SEC misprint; it is read as \"7. Two required 6 marks (4+2)\", which the printed total of its section confirms." },
+    { id: "r-2", kind: "point", verbatim: "Campsite/Tent", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 7",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-lb3-8", topicId: "italian-3-0", conceptId: "long-will-daniela-stay-dublin",
+    section: "L", questionRef: "2017 OL Section LB3 Q8",
+    stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "How long will Daniela stay in Dublin?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Six months", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 8",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2017 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2017 Ordinary Level, pp.18-21 — © State Examinations Commission.",
+    id: "it-2017-ol-c-1-a", topicId: "italian-6-3", conceptId: "1-informal-writing-30-marks-choose-a-informal-le",
+    section: "C", questionRef: "2017 OL Section C Q1(a)",
+    questionText: "1. Informal Writing (30 marks)\nChoose (a) Informal Letter or\n(b) Dialogue",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 1 30 marks",
+                "(a) E-mail/Letter",
+                "Where marks for content and communication are 7 or less, award no marks for language"
+          ],
+          "criteria": [
+                {
+                      "id": "format",
+                      "label": "Beginning, opening greeting, closing formula, ending 7 marks (2+2+2+1)",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Beginning, opening greeting, closing formula, ending 7 marks (2+2+2+1)"
+                      ]
+                },
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 16,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+                      "guidance": [
+                            "Content and communication: 16 marks",
+                            "The following points to be covered",
+                            "Write to Italian friend about your birthday celebrations",
+                            "• What you are going to do with family/",
+                            "How you are going to celebrate with your friends 10 marks (4+3+3)",
+                            "• Which presents are you hoping to get and why 6 marks (3+3)"
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Language: 7 marks"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 - 2",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Most verbs incorrect, few correct agreements, many spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "3 - 5",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Few verbs wrong, some correct agreements not too many mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "6 - 7",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Few mistakes, many correct agreements, very good accuracy"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 0,
+                            "permittedMarks": [0],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+                      }
+                }
+          ],
+          "markingGuideNote": "Question 1 30 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2017 Ordinary Level, pp.18-21 — © State Examinations Commission.",
+    id: "it-2017-ol-c-1-b", topicId: "italian-6-3", conceptId: "1-informal-writing-30-marks-choose-a-informal-le",
+    section: "C", questionRef: "2017 OL Section C Q1(b)",
+    questionText: "1. Informal Writing (30 marks)\nChoose (a) Informal Letter or\n(b) Dialogue",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 1 30 marks",
+                "(b) Dialogue 30 marks",
+                "Where marks for content and communication are 7 or less, award no marks for language"
+          ],
+          "criteria": [
+                {
+                      "id": "format",
+                      "label": "Dialogue format, beginning, closing formula, ending 7 marks (2+2+2+1)",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Dialogue format, beginning, closing formula, ending 7 marks (2+2+2+1)"
+                      ]
+                },
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 16,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+                      "guidance": [
+                            "Content and communication: 16 marks",
+                            "The following points to be covered",
+                            "• With whom you are going 3 marks",
+                            "• How long you are going for 3 marks",
+                            "• Things to do in Siena 10 marks (4+3+3)"
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language and conversational expressions",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Language and conversational expressions 7 marks"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 – 2",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Most verbs incorrect, few correct agreements, many spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "3 - 5",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Few verbs wrong, some correct agreements, not too many mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "6 -7",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Few mistakes, many correct agreements, very good accuracy"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 0,
+                            "permittedMarks": [0],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+                      }
+                }
+          ],
+          "markingGuideNote": "Question 1 30 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2017 Ordinary Level, pp.18-21 — © State Examinations Commission.",
+    id: "it-2017-ol-c-2", topicId: "italian-6-4", conceptId: "a-magazine-is-doing-a-survey-on-young-people-and",
+    section: "C", questionRef: "2017 OL Section C Q2",
+    questionText: "A magazine is doing a survey on young people and healthy living.\nWithout using your own name and address fill in the form below in Italian.",
+    totalMarks: 22,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 2 FORM-FILLING 22 marks",
+                "Candidates will be penalised for incorrect verbs, incorrect agreements and spelling mistakes"
+          ],
+          "criteria": [
+                {
+                      "id": "field-nome",
+                      "label": "Nome",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Nome 1 mark"
+                      ]
+                },
+                {
+                      "id": "field-cognome",
+                      "label": "Cognome",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Cognome 1 mark"
+                      ]
+                },
+                {
+                      "id": "field-et",
+                      "label": "Età",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Età 2 marks"
+                      ]
+                },
+                {
+                      "id": "field-nazionalit",
+                      "label": "Nazionalità",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Nazionalità 2 mark"
+                      ]
+                },
+                {
+                      "id": "field-indirizzo-di-posta-elettronica",
+                      "label": "Indirizzo di posta elettronica",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Indirizzo di posta elettronica 1 mark"
+                      ]
+                },
+                {
+                      "id": "field-cosa-mangi-la-mattina-a-colazione",
+                      "label": "Cosa mangi la mattina a colazione?",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Cosa mangi la mattina a colazione? 2 marks"
+                      ]
+                },
+                {
+                      "id": "field-cosa-mangi-durante-la-pausa-a-scuola",
+                      "label": "Cosa mangi durante la pausa a scuola?",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Cosa mangi durante la pausa a scuola? 2 marks"
+                      ]
+                },
+                {
+                      "id": "field-quali-sono-le-tue-bevande-preferite",
+                      "label": "Quali sono le tue bevande preferite?",
+                      "maxMarks": 3,
+                      "permittedMarks": [0,1,2,3],
+                      "guidance": [
+                            "Quali sono le tue bevande preferite? 3 marks (2+1)"
+                      ]
+                },
+                {
+                      "id": "field-quante-volte-al-mese-mangi-nei-fast-food",
+                      "label": "Quante volte al mese mangi nei fast - food?",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Quante volte al mese mangi nei fast - food? 2 marks"
+                      ]
+                },
+                {
+                      "id": "field-quali-sono-i-tuoi-sport-preferiti",
+                      "label": "Quali sono i tuoi sport preferiti?",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Quali sono i tuoi sport preferiti? 4 marks (2+2)"
+                      ]
+                },
+                {
+                      "id": "field-perch-importante-fare-sport",
+                      "label": "Perché è importante fare sport?",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Perché è importante fare sport? 2 marks"
+                      ]
+                }
+          ],
+          "markingGuideNote": "Question 2 FORM-FILLING 22 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2017 Ordinary Level — © State Examinations Commission.",
+    id: "it-2017-ol-c-3", topicId: "italian-6-5", conceptId: "italian-habits-this-is-an-extract-from-a-passage",
+    section: "C", questionRef: "2017 OL Section C Q3",
+    questionText: "Italian habits\nThis is an extract from a passage describing the habits of the Italian people.\nWrite the sequence of events in the correct order.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints the order line by line; each line in its place is one mark.", group: {"claimMax":8,"perOption":1,"options":["La giornata di molti italiani inizia facendo colazione al bar.","Alle 8 di mattina escono di casa e vanno nel loro bar di fiducia.","Arrivano al bar alle 8 :10 e fanno la fila alla cassa per pagare e prendere lo scontrino.","Dopo aver preso lo scontrino vanno al bancone.","Danno lo scontrino al barista e ordinano un espresso o un cappuccino e un cornetto.","Bevono il caffè o il cappuccino e mangiano il cornetto in piedi.","Finito di bere il caffè salutano l’amico barista e vanno a lavoro.","Dopo un paio di ore di lavoro è tempo di fare una pausa con un altro caffè!"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Italian 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it, with the eight sentences to put in order."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-a1-1", topicId: "italian-5-3", conceptId: "about-aldo-mencaraglia",
+    section: "A", questionRef: "2016 OL Section A1 Q1",
+    questionText: "Give three details about Aldo Mencaraglia.\n(Par. 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He studied” 1 mark; “He worked” 1 mark.", group: {"claimMax":3,"options":["He is Italian","He is the founder of a blog (italiansinfuga.com)","He advises people who are thinking of working abroad.","He is forty years old","He left Italy when he was nineteen years old","He studied in Great Britain/China/Taiwan","He worked in Great Britain/China/Taiwan","He lives in Australia"],"perOption":3,"perOptionSteps":[3,3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-a1-2-a", topicId: "italian-5-3", conceptId: "did-leave-italy-1994",
+    section: "A", questionRef: "2016 OL Section A1 Q2(a)",
+    questionText: "Why did he leave Italy in 1994? (Par. 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "He wanted to attend University", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He decided to study in England” 2 marks; “To study” 1 mark.", permittedMarks: [0,1,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-a1-2-b", topicId: "italian-5-3", conceptId: "did-aldo-overcome-problems-initially-had",
+    section: "A", questionRef: "2016 OL Section A1 Q2(b)",
+    questionText: "How did Aldo overcome the problems he\ninitially had in finding a job?\n(Par. 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "With the help of lots of his friends", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Friends” 1 mark.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-a1-2-c", topicId: "italian-5-3", conceptId: "reasons-chose-australia-his-next-home",
+    section: "A", questionRef: "2016 OL Section A1 Q2(c)",
+    questionText: "Give three reasons why he chose\nAustralia as his next home.\n(Par. 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “The weather” 1 mark.", group: {"claimMax":3,"perOption":3,"options":["The weather is better there","They speak English there","His mother is Australian","He has relatives there"],"perOptionSteps":[3,3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-a1-3", topicId: "italian-5-3", conceptId: "reason-suggests-london-ideal-place-italians",
+    section: "A", questionRef: "2016 OL Section A1 Q3",
+    questionText: "Give one reason why he suggests London\nas an ideal place for Italians.\n(Par. 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It is easy to travel to” 2 marks.", group: {"claimMax":1,"perOption":4,"options":["It is near Italy/ only two hours away (from Italy) by plane","You do not require a Visa to go there"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-a1-4", topicId: "italian-5-3", conceptId: "four-professions-that-demand-according-aldo",
+    section: "A", questionRef: "2016 OL Section A1 Q4",
+    questionText: "Name four professions that are in demand\naccording to Aldo.\n(Par. 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":4,"perOption":2,"options":["Engineers","Telecommunication experts","IT Consultants","Manual workers (builders, mechanics, carpenters,)","Seasonal workers (fruit and vegetable pickers)","Teachers","Veterinarians","Dentists","Business Consultants"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-a1-5", topicId: "italian-5-3", conceptId: "according-aldo-should-before-emigrating-new",
+    section: "A", questionRef: "2016 OL Section A1 Q5",
+    questionText: "According to Aldo, what should one do\nbefore emigrating to a new country? (Par. 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Get informed /learn about the country” 2 marks; “Language/ history/ customs/ traditions/ weather/ food” 2 marks.", group: {"claimMax":1,"perOption":6,"options":["Learn the language","Become familiar with their history/ customs/ traditions.","Be ready to adapt to their weather/ food."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A1",
+          "title": "Reading comprehension 1 — answer in English or Irish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-a2-1-a", topicId: "italian-5-3", conceptId: "social-swapp-trend-started-new-york",
+    section: "A", questionRef: "2016 OL Section A2 Q1(a)",
+    questionText: "The “Social SwAPP” trend started in\nNew York and London five years ago.\n(Par. 1)\nTick the correct box\nTrue\nFalse",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-a2-1-b", topicId: "italian-5-3", conceptId: "social-swapp",
+    section: "A", questionRef: "2016 OL Section A2 Q1(b)",
+    questionText: "What is “Social SwAPP”?\nGive one detail.\n(Par. 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It is exchanging unwanted items/items for free” 2 marks; “A shopping app” 2 marks; “(A type of) shop” 1 mark.", group: {"claimMax":1,"perOption":4,"options":["A Swap shop (App)","A place for exchanging unwanted items","Free shopping service"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-a2-2-a", topicId: "italian-5-3", conceptId: "list-five-items-can-find-social",
+    section: "A", questionRef: "2016 OL Section A2 Q2(a)",
+    questionText: "List five items you can find in a “Social\nSwAPP” shop.\n(Par. 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Jewellery” 1 mark.", group: {"claimMax":5,"perOption":2,"options":["Clothes/dresses","Bags","Games/toys","Giftwear","Necklaces","Shoes","Dvds","Books","Rucksacks","Bicycles"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-a2-2-b", topicId: "italian-5-3", conceptId: "would-use-social-swapp-shop",
+    section: "A", questionRef: "2016 OL Section A2 Q2(b)",
+    questionText: "Why would you use a “Social SwAPP”\nshop?\n(Par. 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “To give away unwanted items” 2 marks; “To get items” 2 marks.", group: {"claimMax":1,"perOption":4,"options":["To give new life to old items","To swap unwanted items","To get items in great condition"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-a2-3", topicId: "italian-5-3", conceptId: "can-avail-this-service-city-pescara",
+    section: "A", questionRef: "2016 OL Section A2 Q3",
+    questionText: "How can you avail of this service in the\ncity of Pescara?\n(Par. 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "By going in person to the shop and by using their app", marks: 5, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Via your smartphone or tablet” 1 mark.", permittedMarks: [0,1,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-a2-4", topicId: "italian-5-3", conceptId: "four-advantages-this-initiative-according-alfonso",
+    section: "A", questionRef: "2016 OL Section A2 Q4",
+    questionText: "Name four advantages of this initiative\naccording to D’Alfonso.\n(Par. 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It is a good service” 1 mark.", group: {"claimMax":4,"perOption":4,"options":["You get rid of unwanted items","You get something you need","You help the environment","You recycle","You save on raw materials","You save energy","You save money","You reduce waste","You avoid making unnecessary purchases","You come home with “new” things/ free things","You have fun/It is enjoyable","You make new friends"],"perOptionSteps":[4,4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION A2",
+          "title": "Reading comprehension 2 — answer in English or Irish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b1-1-a", topicId: "italian-5-4", conceptId: "about-ideal-candidate-job-first-advertisement",
+    section: "B", questionRef: "2016 OL Section B1 Q1(a)",
+    questionText: "Give three details about the ideal\ncandidate for the job in the first\nadvertisement.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Have English” 1 mark; “Be polite” 1 mark.", group: {"claimMax":3,"perOption":2,"options":["Good with customers","Able to handle demanding customers","Available for shift work","Fit and healthy","Have excellent English","Own a Passport","Have good eyesight","Be at least 1.6 metres in height"],"perOptionSteps":[2,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b1-1-b", topicId: "italian-5-4", conceptId: "apply-position-there-minimum-height-requirement",
+    section: "B", questionRef: "2016 OL Section B1 Q1(b)",
+    questionText: "To apply for the position, there is a\nminimum height requirement.\nTick the correct box\nTrue\nFalse",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b1-2", topicId: "italian-5-4", conceptId: "age-limit-second-advertisement",
+    section: "B", questionRef: "2016 OL Section B1 Q2",
+    questionText: "What is the age limit in the second\nadvertisement?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "35 years old", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b1-3-a", topicId: "italian-5-4", conceptId: "profession-mentioned-third-advertisement",
+    section: "B", questionRef: "2016 OL Section B1 Q3(a)",
+    questionText: "What is the profession mentioned in the\nthird advertisement?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Architect", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b1-3-b", topicId: "italian-5-4", conceptId: "list-four-requirements-job",
+    section: "B", questionRef: "2016 OL Section B1 Q3(b)",
+    questionText: "List four requirements for the job.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Work in a team” 1 mark; “Work under pressure” 1 mark; “Have knowledge of English” 1 mark; “Have knowledge of Spanish” 1 mark; “Be flexible with working hours” 1 mark; “Be available to go on business trips” 1 mark.", group: {"claimMax":4,"perOption":2,"options":["Work well in a team","Be creative","Show initiative","Be precise","Carry out work quickly","Work well under pressure","Have knowledge of English and Spanish","Be very flexible with working hours","Be available to go on business trips within Italy","(Flexible /enthusiastic/motivated 1 mark) but only if it is the only answer given out of four possibilities )"],"perOptionSteps":[2,2,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b1-4", topicId: "italian-5-4", conceptId: "about-working-hours-job-fourth-advertisement",
+    section: "B", questionRef: "2016 OL Section B1 Q4",
+    questionText: "Give two details about the working hours\nfor the job in the fourth advertisement.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "You work four hours a day", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They are of a part-time nature” 1 mark (“* only if not mentioned above”).", permittedMarks: [0,1,2] },
+    { id: "r-2", kind: "point", verbatim: "You work three days a week", marks: 2, contextNote: "The shorter answer “They are of a part-time nature” counts once, on the first detail." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B1",
+          "title": "Publicity piece 1 — answer in English or Irish",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b2-1", topicId: "italian-5-4", conceptId: "would-take-part-sve-initiative-four",
+    section: "B", questionRef: "2016 OL Section B2 Q1",
+    questionText: "Why would you take part in the SVE\ninitiative? Give four details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “(It is a) Non-profit organisation” 1 mark; “It is in Europe” 1 mark; “To work in Europe” 1 mark.", group: {"claimMax":4,"perOption":2,"options":["To work for a non-profit organisation/to specialise in a new sector","To do voluntary work (in Europe)","Because it will not cost you anything financially","To learn a new language (while working)","To work in a team","To improve your ability to adapt","(To improve your) problem solving","To learn new skills","To travel","To change your life","To learn new skills"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B2",
+          "title": "Publicity piece 2 — answer in English or Irish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b2-2", topicId: "italian-5-4", conceptId: "italian-interview-tick-correct-box-appuntamento",
+    section: "B", questionRef: "2016 OL Section B2 Q2",
+    questionText: "In A, the Italian for “interview” is:\nTick the correct box\nappuntamento\ncolloquio\noperatore",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Colloquio", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B2",
+          "title": "Publicity piece 2 — answer in English or Irish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b2-3", topicId: "italian-5-4", conceptId: "can-check-projects-available",
+    section: "B", questionRef: "2016 OL Section B2 Q3",
+    questionText: "In B, how can you check which projects\nare available?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Visit their website", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B2",
+          "title": "Publicity piece 2 — answer in English or Irish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b2-4", topicId: "italian-5-4", conceptId: "need-send-letter-reference-apply-initiative",
+    section: "B", questionRef: "2016 OL Section B2 Q4",
+    questionText: "In C, you need to send your CV and a\nletter of reference to apply for the\ninitiative.\nTick the correct box\nTrue\nFalse",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B2",
+          "title": "Publicity piece 2 — answer in English or Irish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b2-5", topicId: "italian-5-4", conceptId: "full-successful-candidates",
+    section: "B", questionRef: "2016 OL Section B2 Q5",
+    questionText: "In D, give full details of the successful\ncandidates.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “18 to 25 of age and 26 to 30 of age” 2 marks; “18 to 25 of age” 1 mark; “26 to 30 of age” 1 mark.", group: {"claimMax":2,"options":["Five candidates will be between 18 to 25 of age","Seven candidates will be between 26 to 30 of age"],"perOption":2} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B2",
+          "title": "Publicity piece 2 — answer in English or Irish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b2-6", topicId: "italian-5-4", conceptId: "thing-successful-candidate-needs-before-leaving",
+    section: "B", questionRef: "2016 OL Section B2 Q6",
+    questionText: "In E, mention one thing the successful\ncandidate needs to do before leaving.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Get yourself ready for travel/ to leave” 1 mark; “Agree on the departure date” 1 mark; “Agree on the return date” 1 mark; “Agree on a date” 1 mark; “Prepare for the trip” 1 mark.", group: {"claimMax":1,"perOption":2,"options":["Agree on the date of departure and return","Sign the necessary forms","Pack their suitcase"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B2",
+          "title": "Publicity piece 2 — answer in English or Irish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b3-1", topicId: "italian-5-4", conceptId: "special-offer-full",
+    section: "B", questionRef: "2016 OL Section B3 Q1",
+    questionText: "In A, what is the special offer? Give full\ndetails.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1-1", kind: "point", verbatim: "30% off", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "on all books (in the collection),", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "until the 13th of November", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b3-2", topicId: "italian-5-4", conceptId: "things-can-find-out-where-closest",
+    section: "B", questionRef: "2016 OL Section B3 Q2",
+    questionText: "In B, name two things one can do to find out\nwhere the closest shop is located.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":2,"perOption":1,"options":["Call the number","Send a text to the number","Visit their Facebook page"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b3-3", topicId: "italian-5-4", conceptId: "food-items-apart-from-pasta",
+    section: "B", questionRef: "2016 OL Section B3 Q3",
+    questionText: "In C, name three food items apart from pasta.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":3,"perOption":2,"options":["Rice","Biscuits","Cheese","Cereals","Fruit juice/fruit","Tomatoes"],"perOptionSteps":[2,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b3-4", topicId: "italian-5-4", conceptId: "might-bring-unused-face-cream-pharmacy",
+    section: "B", questionRef: "2016 OL Section B3 Q4",
+    questionText: "In D, why might you bring unused face\ncream to the pharmacy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They will give you a four euro back as discount and a free sample of perfume", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b3-5", topicId: "italian-5-4", conceptId: "when-does-holiday-offer-finish",
+    section: "B", questionRef: "2016 OL Section B3 Q5",
+    questionText: "In E, when does the holiday offer finish?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "On the 31st of March", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b3-6-a", topicId: "italian-5-4", conceptId: "room-house-mentioned",
+    section: "B", questionRef: "2016 OL Section B3 Q6(a)",
+    questionText: "In F, which room in the house is mentioned?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The bedroom", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b3-6-b", topicId: "italian-5-4", conceptId: "get-pair-pillows-when-buy-duvet",
+    section: "B", questionRef: "2016 OL Section B3 Q6(b)",
+    questionText: "You get a pair of pillows when you buy\na duvet for a double bed.\nTick the correct box\nTrue\nFalse",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B3",
+          "title": "Publicity piece 3 — answer in English or Irish",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b4-1", topicId: "italian-5-4", conceptId: "would-use-spediresicuro-service-four-reasons",
+    section: "B", questionRef: "2016 OL Section B4 Q1",
+    questionText: "Why would you use the SpedireSicuro\nservice? Mention four reasons.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":4,"options":["It is simple","It is quick","It is easy","It is safe","You can send a parcel from home/from the office","You can do it on-line (from home or office)/saves time or energy (compared to going to post office etc)","You can send to anywhere in Europe","It is convenient","They guarantee fast delivery times (within a few days)/ fast"],"perOption":2,"perOptionSteps":[2,1,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B4",
+          "title": "Publicity piece 4 — answer in English or Irish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b4-2", topicId: "italian-5-4", conceptId: "money-must-paid-collection-parcel-tick",
+    section: "B", questionRef: "2016 OL Section B4 Q2",
+    questionText: "Money must be paid on collection of the\nparcel.\nTick the correct box\nTrue\nFalse",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B4",
+          "title": "Publicity piece 4 — answer in English or Irish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b4-3", topicId: "italian-5-4", conceptId: "according-point-should-with-label-receive",
+    section: "B", questionRef: "2016 OL Section B4 Q3",
+    questionText: "According to point 3, what should you\ndo with the label you receive by email?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Print it out and attach it to the parcel", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B4",
+          "title": "Publicity piece 4 — answer in English or Irish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b4-4", topicId: "italian-5-4", conceptId: "italian-parcels-tick-correct-box-corriere",
+    section: "B", questionRef: "2016 OL Section B4 Q4",
+    questionText: "The Italian for “parcels” is:\nTick the correct box\ncorriere\ndestinatario\npacchi",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pacchi", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B4",
+          "title": "Publicity piece 4 — answer in English or Irish",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b5-1", topicId: "italian-5-4", conceptId: "cinemadays-initiative-about",
+    section: "B", questionRef: "2016 OL Section B5 Q1",
+    questionText: "What is the #CinemaDays initiative about?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "From the 12th to the 15th of October Cinema tickets cost €3/ticket prices reduced", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Getting people interested in the cinema” 1 mark.", permittedMarks: [0,1,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B5",
+          "title": "Publicity piece 5 — answer in English or Irish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b5-2", topicId: "italian-5-4", conceptId: "annual-cinema-pass-can-won-tick",
+    section: "B", questionRef: "2016 OL Section B5 Q2",
+    questionText: "An annual cinema pass can be won.\nTick the correct box\nTrue\nFalse",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B5",
+          "title": "Publicity piece 5 — answer in English or Irish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b5-3", topicId: "italian-5-4", conceptId: "things-need-enter-competition",
+    section: "B", questionRef: "2016 OL Section B5 Q3",
+    questionText: "Mention two things you need to do to enter\nthe competition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":2,"perOption":2,"options":["Hold on to the cinema ticket","Fill in the form (with the details requested)","Send it all back"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B5",
+          "title": "Publicity piece 5 — answer in English or Irish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-b5-4", topicId: "italian-5-4", conceptId: "special-offer-mentioned-subscribe-website-www",
+    section: "B", questionRef: "2016 OL Section B5 Q4",
+    questionText: "What special offer is mentioned if you\nsubscribe to the website www.cinemadays.it?\nGive full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "You receive a promotional code, for a €5 discount, on a book or cd, on-line on ibs.it", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B5",
+          "title": "Publicity piece 5 — answer in English or Irish",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-la-1", topicId: "italian-3-1", conceptId: "mare-libri-festival-managed",
+    section: "L", questionRef: "2016 OL Section LA Q1",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "Mare di Libri festival is managed by\n(a) University students\n(b) Secondary school students\n(c) Primary school students\n(d) New writers",
+    questionChoices: ["University students","Secondary school students","Primary school students","New writers"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. (b)", marks: 3, contextNote: "The scheme accepts option (b) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-la-2", topicId: "italian-3-1", conceptId: "post-strike-will-start",
+    section: "L", questionRef: "2016 OL Section LA Q2",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The post strike will start\n(a) Today\n(b) Tomorrow morning\n(c) Next week\n(d) Next month",
+    questionChoices: ["Today","Tomorrow morning","Next week","Next month"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2. (a)", marks: 3, contextNote: "The scheme accepts option (a) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 2",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-la-3", topicId: "italian-3-1", conceptId: "there-possibility-rain",
+    section: "L", questionRef: "2016 OL Section LA Q3",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "There is a possibility of rain in\n(a) The North of Italy\n(b) The Centre of Italy\n(c) The Alps\n(d) Sardinia",
+    questionChoices: ["The North of Italy","The Centre of Italy","The Alps","Sardinia"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "3. (a)", marks: 3, contextNote: "The scheme accepts option (a) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 3",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-la-4", topicId: "italian-3-1", conceptId: "according-survey-italians-will",
+    section: "L", questionRef: "2016 OL Section LA Q4",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "According to the survey 14% of Italians will\n(a) Spend their holidays in Italy\n(b) Have a short holiday\n(c) Go on holiday in June\n(d) Spend more money on their holidays",
+    questionChoices: ["Spend their holidays in Italy","Have a short holiday","Go on holiday in June","Spend more money on their holidays"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "4. (c)", marks: 3, contextNote: "The scheme accepts option (c) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 4",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-la-5", topicId: "italian-3-1", conceptId: "motorway-will-closed-due",
+    section: "L", questionRef: "2016 OL Section LA Q5",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The motorway will be closed due to\n(a) Road works\n(b) An accident\n(c) A fire\n(d) Floods",
+    questionChoices: ["Road works","An accident","A fire","Floods"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "5. (a)", marks: 3, contextNote: "The scheme accepts option (a) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 5",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-la-6", topicId: "italian-3-1", conceptId: "host-festival-performer-will-receive",
+    section: "L", questionRef: "2016 OL Section LA Q6",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "If you host a festival performer you will receive\n(a) Discounts on food and drinks\n(b) Free entrance to shows\n(c) Discounts on transport to the festival\n(d) Free books",
+    questionChoices: ["Discounts on food and drinks","Free entrance to shows","Discounts on transport to the festival","Free books"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "6. (b)", marks: 3, contextNote: "The scheme accepts option (b) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 6",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-la-7", topicId: "italian-3-1", conceptId: "new-train-will-travel-speed",
+    section: "L", questionRef: "2016 OL Section LA Q7",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The new train will travel at a speed of\n(a) 200 km per hour\n(b) 400 km per hour\n(c) 800 km per hour\n(d) 315 km per hour",
+    questionChoices: ["200 km per hour","400 km per hour","800 km per hour","315 km per hour"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "7. (b)", marks: 3, contextNote: "The scheme accepts option (b) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 7",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-la-8", topicId: "italian-3-1", conceptId: "event-advertised-involves",
+    section: "L", questionRef: "2016 OL Section LA Q8",
+    stem: "In this section you will hear eight statements or news items in Italian. Each of these will be heard twice. After the first hearing there will be a short pause.",
+    questionText: "The event advertised involves\n(a) Libraries\n(b) Theatres\n(c) Restaurants\n(d) Schools",
+    questionChoices: ["Libraries","Theatres","Restaurants","Schools"],
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "8. (d)", marks: 3, contextNote: "The scheme accepts option (d) only." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Section A — Question 8",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb1-1", topicId: "italian-3-0", conceptId: "paolo-plans-summer-holidays",
+    section: "L", questionRef: "2016 OL Section LB1 Q1",
+    stem: "Dialogue 1. Conversation between Marta and Paolo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What are Paolo’s plans for the summer holidays? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["He will go to the countryside to visit his grandparents.","He will travel round Europe with his parents / He will travel round Europe in a campervan"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb1-2", topicId: "italian-3-0", conceptId: "did-miss-rossi-return-bologna",
+    section: "L", questionRef: "2016 OL Section LB1 Q2",
+    stem: "Dialogue 1. Conversation between Marta and Paolo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Why did Miss Rossi return to Bologna? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["For family reasons/ she wanted to be nearer her family","Wants to find a permanent job back in her own city","She wants to plan her upcoming wedding"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb1-3", topicId: "italian-3-0", conceptId: "who-might-marta-chemistry-lessons",
+    section: "L", questionRef: "2016 OL Section LB1 Q3",
+    stem: "Dialogue 1. Conversation between Marta and Paolo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Who might give Marta chemistry lessons?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Uncle who is a chemistry teacher,","Uncle who is recently retired","Uncle who has (teaching) experience"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb1-4", topicId: "italian-3-0", conceptId: "might-marta-repay-chemistry-lessons",
+    section: "L", questionRef: "2016 OL Section LB1 Q4",
+    stem: "Dialogue 1. Conversation between Marta and Paolo. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "How might Marta repay for the chemistry lessons? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":4,"options":["(Help him)clean out his car port/garage","(Help him) harvest his fruit/vegetables","Look after their cat while he is away on his holidays"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 1 — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 1 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb2-1", topicId: "italian-3-0", conceptId: "time-did-raffaele-wake-queue-new",
+    section: "L", questionRef: "2016 OL Section LB2 Q1",
+    stem: "Dialogue 2. Conversation between Raffaele and Luisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "At what time did Raffaele wake up to queue for the new tablet offer?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Five a.m.", marks: 3, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb2-2", topicId: "italian-3-0", conceptId: "from-tomorrow-will-discount-tablet",
+    section: "L", questionRef: "2016 OL Section LB2 Q2",
+    stem: "Dialogue 2. Conversation between Raffaele and Luisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "From tomorrow what will the discount on the tablet be?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Twenty percent", marks: 3, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb2-3", topicId: "italian-3-0", conceptId: "did-raffaele-shop-facebook-page",
+    section: "L", questionRef: "2016 OL Section LB2 Q3",
+    stem: "Dialogue 2. Conversation between Raffaele and Luisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What did Raffaele write on the shop Facebook page?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "That someone had stolen his wallet and that he was very disappointed", marks: 6, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb2-4", topicId: "italian-3-0", conceptId: "were-people-queue-behind-raffaele-doing",
+    section: "L", questionRef: "2016 OL Section LB2 Q4",
+    stem: "Dialogue 2. Conversation between Raffaele and Luisa. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What were the two people in the queue behind Raffaele doing?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They were talking loudly and laughing in order to distract him", marks: 6, contextNote: "The scheme also prints, for shorter answers: “(They were talking loudly and laughing 5 marks)”; “(They were talking and laughing 4 marks)”; “(They were messing/playing 3 marks)*”; “(They were talking loudly 3 marks)”; “(They were talking 2 marks)”; “(They were laughing 2 marks)”; “(They were (trying to) distract him 1 mark)”. Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 2 — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 2 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb3-1", topicId: "italian-3-0", conceptId: "who-basketball-coach-michele-family",
+    section: "L", questionRef: "2016 OL Section LB3 Q1",
+    stem: "Dialogue 3. Interview with Michele Salvini. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Who was the basketball coach in Michele’s family?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "His father", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb3-2", topicId: "italian-3-0", conceptId: "did-learn-from-meeting-wheelchair-basketball",
+    section: "L", questionRef: "2016 OL Section LB3 Q2",
+    stem: "Dialogue 3. Interview with Michele Salvini. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What did he learn from meeting the wheelchair basketball team? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Not to give up Accept your own limits","(Always) be optimistic"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb3-3", topicId: "italian-3-0", conceptId: "did-michele-feel-when-nominated-captain",
+    section: "L", questionRef: "2016 OL Section LB3 Q3",
+    stem: "Dialogue 3. Interview with Michele Salvini. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "How did Michele feel when he was nominated captain?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["Felt great satisfaction","Felt little scared","Felt challenged","Felt he may have to encourage the team (through difficult moments)","Felt he may have to be diplomatic (in solving problems)"],"perOption":5} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb3-4", topicId: "italian-3-0", conceptId: "does-michele-say-about-his-mother",
+    section: "L", questionRef: "2016 OL Section LB3 Q4",
+    stem: "Dialogue 3. Interview with Michele Salvini. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What does Michele say about his mother?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(She (always) helps/supports him 2 marks)”; “(She is kind 2 marks)”; “(She is nice 1 mark)”; “(Makes desserts 1 mark)”. Answer in English or Irish.", group: {"claimMax":2,"options":["She is patient","She is generous","She always gives him lifts/ takes him to matches","She makes desserts for the team","His team mates all love her"],"perOption":4,"perOptionSteps":[4,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb3-5", topicId: "italian-3-0", conceptId: "qualities-good-captain",
+    section: "L", questionRef: "2016 OL Section LB3 Q5",
+    stem: "Dialogue 3. Interview with Michele Salvini. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What are the qualities of a good captain? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"perOption":4,"options":["To be committed to the role","To be a team player","To be calm","To be charismatic","Not to be self-centred","To be available/generous with your time","Not to get angry easily","Not to take disappointment too seriously","To have a great desire to have fun"],"perOptionSteps":[4,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 5",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb3-6", topicId: "italian-3-0", conceptId: "does-say-about-weekends",
+    section: "L", questionRef: "2016 OL Section LB3 Q6",
+    stem: "Dialogue 3. Interview with Michele Salvini. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What does he say about the weekends?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "You have to go to bed early", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 6",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb3-7", topicId: "italian-3-0", conceptId: "part-body-did-player-break",
+    section: "L", questionRef: "2016 OL Section LB3 Q7",
+    stem: "Dialogue 3. Interview with Michele Salvini. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "What part of the body did the player break?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "His leg", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 7",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-lb3-8", topicId: "italian-3-0", conceptId: "apart-from-sport-other-passion-does",
+    section: "L", questionRef: "2016 OL Section LB3 Q8",
+    stem: "Dialogue 3. Interview with Michele Salvini. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses, and finally right through again. The answers should be written in English in the spaces provided.",
+    questionText: "Apart from sport, what other passion does Michele have?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Animals", marks: 4, contextNote: "Answer in English or Irish." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Dialogue 3 — Question 8",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC013GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Dialogue 3 · listening",
+          "title": "2016 Italian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "secFileid": "LC013ZLP017EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC013ZLP017EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Section A and Dialogues 1–3, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2016 Ordinary Level, pp.18-19 — © State Examinations Commission.",
+    id: "it-2016-ol-c-1-a", topicId: "italian-6-3", conceptId: "1-informal-writing-30-marks-choose-a-informal-le",
+    section: "C", questionRef: "2016 OL Section C Q1(a)",
+    questionText: "1. Informal Writing (30 marks)\nChoose (a) Informal Letter or\n(b) Dialogue",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 1 30 marks",
+                "(a) E-mail/Letter",
+                "Where marks for content and communication are 7 or less, award no marks for language"
+          ],
+          "criteria": [
+                {
+                      "id": "format",
+                      "label": "Beginning, opening greeting, closing formula, ending 7 marks (2+2+2+1)",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Beginning, opening greeting, closing formula, ending 7 marks (2+2+2+1)"
+                      ]
+                },
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 16,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+                      "guidance": [
+                            "Content and communication: 16 marks",
+                            "The following points to be covered",
+                            "How your exams went 4 marks",
+                            "What are your plans for the summer 6 marks (3+3)",
+                            "Plans for next year 6 marks (3+3)"
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Language: 7 marks"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 - 2",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Most verbs incorrect, few correct agreements, many spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "3 - 5",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Few verbs wrong, some correct agreements not too many mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "6 - 7",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Few mistakes, many correct agreements, very good accuracy"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 0,
+                            "permittedMarks": [0],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+                      }
+                }
+          ],
+          "markingGuideNote": "Question 1 30 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2016 Ordinary Level, pp.18-19 — © State Examinations Commission.",
+    id: "it-2016-ol-c-1-b", topicId: "italian-6-3", conceptId: "1-informal-writing-30-marks-choose-a-informal-le",
+    section: "C", questionRef: "2016 OL Section C Q1(b)",
+    questionText: "1. Informal Writing (30 marks)\nChoose (a) Informal Letter or\n(b) Dialogue",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 1 30 marks",
+                "(b) Dialogue 30 marks",
+                "Where marks for content and communication are 7 or less, award no marks for language"
+          ],
+          "criteria": [
+                {
+                      "id": "format",
+                      "label": "Dialogue format, beginning, closing formula, ending 7 marks (2+2+2+1)",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Dialogue format, beginning, closing formula, ending 7 marks (2+2+2+1)"
+                      ]
+                },
+                {
+                      "id": "content",
+                      "label": "Content and communication",
+                      "maxMarks": 16,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+                      "guidance": [
+                            "Content and communication: 16 marks",
+                            "The following points to be covered",
+                            "If he/she is free to spend the day with you 3 marks",
+                            "Where you can buy the ticket and how much it is 5 marks (3+2)",
+                            "What you want to do for the day 8 marks (3+3+2)"
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language and conversational expressions",
+                      "maxMarks": 7,
+                      "permittedMarks": [0,1,2,3,4,5,6,7],
+                      "guidance": [
+                            "Language and conversational expressions 7 marks (2+2+2+1)"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "0 – 2",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Most verbs incorrect, few correct agreements, many spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "3 - 5",
+                                  "marks": [3,4,5],
+                                  "guidance": [
+                                        "Few verbs wrong, some correct agreements not too many mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "6 -7",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Few mistakes, many correct agreements, very good accuracy"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 0,
+                            "permittedMarks": [0],
+                            "bands": [],
+                            "contentCriteria": [
+                                  "content"
+                            ],
+                            "contentAtMost": 7,
+                            "rule": "Where marks for content and communication are 7 or less, award no marks for language"
+                      }
+                }
+          ],
+          "markingGuideNote": "Question 1 30 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Italian 2016 Ordinary Level, pp.18-19 — © State Examinations Commission.",
+    id: "it-2016-ol-c-2", topicId: "italian-6-4", conceptId: "you-are-looking-for-a-summer-job-in-italy-so-you",
+    section: "C", questionRef: "2016 OL Section C Q2",
+    questionText: "You are looking for a summer job in Italy, so you enrol with a recruitment agency.\nWithout using your own name or address fill in the form below in Italian.",
+    totalMarks: 22,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 2 FORM-FILLING 22 marks",
+                "Candidates will be penalised for incorrect verbs, incorrect agreements and spelling mistakes"
+          ],
+          "criteria": [
+                {
+                      "id": "field-nome",
+                      "label": "Nome",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Nome 1 mark"
+                      ]
+                },
+                {
+                      "id": "field-cognome",
+                      "label": "Cognome",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Cognome 1 mark"
+                      ]
+                },
+                {
+                      "id": "field-nazionalit",
+                      "label": "Nazionalità",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Nazionalità 2 mark"
+                      ]
+                },
+                {
+                      "id": "field-data-di-nascita",
+                      "label": "Data di nascita",
+                      "maxMarks": 2,
+                      "permittedMarks": [0,1,2],
+                      "guidance": [
+                            "Data di nascita 2 marks"
+                      ]
+                },
+                {
+                      "id": "field-indirizzo-di-posta-elettronica",
+                      "label": "Indirizzo di posta elettronica",
+                      "maxMarks": 1,
+                      "permittedMarks": [0,1],
+                      "guidance": [
+                            "Indirizzo di posta elettronica 1 mark"
+                      ]
+                },
+                {
+                      "id": "field-perch-vuoi-lavorare-in-italia",
+                      "label": "Perché vuoi lavorare in Italia?",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Perché vuoi lavorare in Italia? 4 marks (2+2)"
+                      ]
+                },
+                {
+                      "id": "field-quali-sono-i-tuoi-passatempi",
+                      "label": "Quali sono i tuoi passatempi.",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Quali sono i tuoi passatempi. 4 marks (2+1+1)"
+                      ]
+                },
+                {
+                      "id": "field-quali-lingue-straniere-parli",
+                      "label": "Quali lingue straniere parli?",
+                      "maxMarks": 3,
+                      "permittedMarks": [0,1,2,3],
+                      "guidance": [
+                            "Quali lingue straniere parli? 3 marks (2+1)"
+                      ]
+                },
+                {
+                      "id": "field-quali-sono-le-tue-esperienze-lavorative-precedenti",
+                      "label": "Quali sono le tue esperienze lavorative precedenti?",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Quali sono le tue esperienze lavorative precedenti? 4 marks (2+2)"
+                      ]
+                }
+          ],
+          "markingGuideNote": "Question 2 FORM-FILLING 22 marks"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task as the examination paper prints it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC013GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2016 Ordinary Level — © State Examinations Commission.",
+    id: "it-2016-ol-c-3", topicId: "italian-6-5", conceptId: "daily-routine-this-is-an-extract-from-alessia-s-",
+    section: "C", questionRef: "2016 OL Section C Q3",
+    questionText: "Daily routine\nThis is an extract from Alessia’s diary, she wrote about her daily routine.\nWrite the sequence of events in the correct order.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints the order line by line; each line in its place is one mark. The scheme adds: \"(IF THE LAST PIECE OF THE SEQUENCE IS IN THE EIGHT SPOT AWARD THE MARK)\".", group: {"claimMax":8,"perOption":1,"options":["1. Mi alzo alle 7:30, mi faccio la doccia e faccio colazione.","2. Alle 8:00 cominciano le lezioni a scuola.","3. Alle 10:30 c’è la ricreazione e faccio uno spuntino che mi porto da casa.","4. Finita la ricreazione, riprendono le lezoni che finiscono alle 13:30.","5. Torno a casa e pranzo con la mia famiglia.","6. Nel primo pomeriggio faccio i compiti.","7. Dopo aver fatto i compiti, ogni lunedì e mercoledì vado a scuola di musica.","8. Di sera apparecchio la tavola e ceno con la mia famiglia."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION C",
+          "title": "Writing",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Italian 2016 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "The task as the examination paper prints it, with the eight sentences to put in order."
     },
   } as SecCard,

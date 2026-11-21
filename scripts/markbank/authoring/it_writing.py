@@ -602,9 +602,11 @@ def ordinary(year):
             rows.append(cur)
         elif cur and not re.match(r'^\(?\d+x\d', l):
             cur[1] = f'{cur[1]} {l}'
+    numbered = bool(rows)
     if not rows:
         # 2017 and earlier print the eight lines unnumbered, one to a line,
-        # under the head: the order is the order printed.
+        # under the head: the order is the order printed, and the options
+        # carry no number the scheme did not print.
         body = [l for l in q3[1:] if l.strip() and not re.match(r'^(?:\d+|## Page \d+|\(?\d+x\d.*)$', l.strip())]
         rows = [[k + 1, l.strip()] for k, l in enumerate(body)]
     assert [r[0] for r in rows] == list(range(1, 9)), (year, [r[0] for r in rows])
@@ -642,7 +644,7 @@ def ordinary(year):
         'rows': [{'id': 'r-1', 'kind': 'anyN',
                   'verbatim': 'The answers the scheme accepts in full', 'marks': None,
                   'group': {'claimMax': 8, 'perOption': 1,
-                            'options': [f'{n}. {flat(t)}' for n, t in rows]}}],
+                            'options': [f'{n}. {flat(t)}' if numbered else flat(t) for n, t in rows]}}],
         'notes': f'The scheme prices the sequence "{q3[0]}": one mark for each line in its place.',
         'sourceMaterial': dict(source(year, 'ol', p3), presentationNote=(
             'The task as the examination paper prints it, with the eight sentences '
