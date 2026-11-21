@@ -133,18 +133,18 @@ describe('Italian exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'italian');
     expect(italianCrosswalk.summary).toMatchObject({
       localPaperVariants: 98,
-      localPhysicalMappings: 997,
-      distinctStudentFacingQuestions: 730,
+      localPhysicalMappings: 1015,
+      distinctStudentFacingQuestions: 746,
       referenceMappedLocalQuestions: 388,
-      retainedLocalQuestions: 609,
+      retainedLocalQuestions: 627,
       hostedPaperAnchorMaps: 98,
       preservedBaselineVariants: 32,
       preservedBaselineCards: 456,
       newlyAddedPaperVariants: 66,
-      newlyAddedPhysicalMappings: 541,
+      newlyAddedPhysicalMappings: 559,
     });
     expect(papers).toHaveLength(98);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(997);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1015);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
 
@@ -155,7 +155,13 @@ describe('Italian exam-topic registry', () => {
     expect(topicsForPaper('italian', 2018, 'ordinary', 'ev', 'LC013GLP000EV.pdf')?.q)
       .toContainEqual({ n: 'B5', primary: 'italian-5-4' });
     expect(topicsForPaper('italian', 2025, 'higher', 'ev', 'LC013ALP000BV.pdf')?.q.map(q => q.n))
-      .toEqual([...Array.from({ length: 20 }, (_, index) => String(index + 1)), 'C1', 'C2', 'C3']);
+      .toEqual([...Array.from({ length: 22 }, (_, index) => String(index + 1)), 'C1', 'C2', 'C3']);
+    expect(topicsForPaper('italian', 2018, 'higher', 'iv', 'LC013ALP000IV.pdf')?.q.slice(-3))
+      .toEqual([
+        { n: '21', primary: 'italian-6-0', secondary: 'italian-6-1' },
+        { n: '22', primary: 'italian-2-1' },
+        { n: '23', primary: 'italian-2-1' },
+      ]);
   });
 
   it('classifies every physical card into same-level reference buckets', () => {
@@ -185,13 +191,18 @@ describe('Italian exam-topic registry', () => {
       .toEqual(['italian-higher-essay-writing-le-otto-montagne']);
     expect(examTopicIdsForQuestion('italian', 'higher', 2018, 'main', '11', 'single', 'ev'))
       .toEqual(['italian-higher-reading-comprehension-literary-unseen']);
+    // Essays on superseded prescribed novels stay in the broad Literary bucket.
+    expect(examTopicIdsForQuestion('italian', 'higher', 2025, 'main', '22', 'single', 'ev'))
+      .toEqual(['italian-higher-reading-comprehension-literary-unseen']);
+    expect(examTopicIdsForQuestion('italian', 'higher', 2018, 'main', '23', 'single', 'ev'))
+      .toEqual(['italian-higher-reading-comprehension-literary-unseen']);
     expect(examTopicIdsForQuestion('italian', 'ordinary', 2018, 'main', 'B5', 'single', 'ev'))
       .toEqual(['italian-ordinary-ads-rulessafety-instructions']);
     expect(examTopicIdsForQuestion('italian', 'ordinary', 2026, 'main', '10', 'single', 'ev'))
       .toEqual(['italian-ordinary-writing-fill-in-a-form']);
   });
 
-  it('ships a finite paper-only fallback for all 997 cards', () => {
+  it('ships a finite paper-only fallback for all 1015 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'italian');
     for (const paper of papers) {
       const mapPath = path.join(
@@ -212,9 +223,9 @@ describe('Italian exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 730 distinct cards and keeps only the unpublished Oral bucket empty', () => {
+  it('surfaces all 746 distinct cards and keeps only the unpublished Oral bucket empty', () => {
     expect(subjectAtlasStats('italian')).toMatchObject({
-      questions: 730,
+      questions: 746,
       topics: 25,
       yearMin: 2010,
       yearMax: 2026,
