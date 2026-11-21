@@ -1,0 +1,4723 @@
+{
+ "boundaryReview": "85 base tasks, one card each, agreeing task for task (marks included) with the independent census. Item-choice pools are single cards: Q12(b)(i) any two of three stages. Answer pairs with matching marks are mutually exclusive variants on one card (Q2(c), Q12(b)(ii), Q16(a)(iv)); the Q16(a)(iii) set-up drawing keeps manual question-total marking. Question 16's published marks total 49, not the printed 50 (source note).",
+ "selections": {
+  "d000baa53e778d39": [
+   "exam-selection",
+   "Section A: ten of twelve independent questions. Every question and both sides of each internal choice are retained."
+  ],
+  "eddd4d5770b757cb": [
+   "exam-selection",
+   "Section B: four of six independent questions. Every question is retained."
+  ],
+  "14df22566a9fcc91": [
+   "exam-selection",
+   "Repeated Section A instruction: ten independent 10-mark questions, all retained."
+  ],
+  "d77aa53bddd7f7d9": [
+   "independent-task-selection",
+   "Q1 either (a) or (b): both independently marked alternatives are retained at their own addresses."
+  ],
+  "b126484d439ff39f": [
+   "not-a-selection",
+   "Prose in the Q4 stem (\"one of the main challenges to sustainability\"); no response choice."
+  ],
+  "2e011041643f7a49": [
+   "open",
+   "Q4(c): one of the practices the student stated in (b); the student's own answer, not a printed pool."
+  ],
+  "17c03e5b27551426": [
+   "independent-task-selection",
+   "Q6 either (a) or (b): both alternatives are retained."
+  ],
+  "16009388a1709214": [
+   "not-a-selection",
+   "Q6(a)(ii): \"one direct or one indirect\" disease threat sits over a two-column Direct | Indirect answer table, and the scheme prices 2(2) with answers in each column: one card with both rows, as the scheme marks it (its source note says so)."
+  ],
+  "a4309f3385e77324": [
+   "independent-task-selection",
+   "Q9 either (a) or (b): both alternatives are retained."
+  ],
+  "9d864ea775747d50": [
+   "not-a-selection",
+   "Prose in the Q9(b) stem (\"noticed one of the animals away from the herd\"); no response choice."
+  ],
+  "c05011bbe502ec01": [
+   "independent-task-selection",
+   "Q12 either (a) or (b): both alternatives are retained."
+  ],
+  "596eef41a24869b5": [
+   "closed",
+   "Q12(b)(i): explain any two of three printed stages (roots, stems, leaves), 2(2). ONE card: a single anyN row lists every stage with the scheme's wording and marks."
+  ],
+  "09ef8743aabc9b76": [
+   "exam-selection",
+   "Section B heading: four of six independent 50-mark questions, all retained."
+  ],
+  "e11fe55992c8c28a": [
+   "independent-task-selection",
+   "Q13: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
+  ],
+  "d429c5ccd03018a0": [
+   "independent-task-selection",
+   "Q18: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
+  ]
+ },
+ "supplementary": [],
+ "sourceNotes": {
+  "q4c": "A misprint in the scheme: “less volitalisation” should read “less volatilisation”. The card keeps the printed wording.",
+  "q5b": "The paper asks only about animal A (Aberdeen Angus), but the scheme also prints a list for B (Hereford: good confirmation / well-muscled / strong legs and feet / early maturing / easy calving), where “confirmation” should read “conformation”. The card keeps the scheme’s list for A, 2(2).",
+  "q6aii": "The paper asks for “one direct or one indirect” disease threat, but the scheme prints 2(2) with a pool for each column of the Direct / Indirect answer table, and Question 6(a) totals 10 only with 4 marks here. The card awards 2 for a direct threat and 2 for an indirect one.",
+  "q13d": "A misprint in the scheme: its answer for “Microbiome” (“a reversible process in which the cations are exchanged or interchanged between the solid and liquid phases…”) is the definition of cation exchange, not of the soil microbiome. The card keeps the printed 4-mark point because no other answer is published.",
+  "q14aii": "The paper’s table prints 65.0 tonnes for the 2+ year old animals; the scheme’s footnote says this should have been 6.5 and that either figure (65 or 6.5) earned the marks for E, with F marked on the candidate’s own E. A misprint in the scheme: its 6.5 route is printed as “175 + 17.5 + 32.5 + 6.5 = 248.3”, which leaves out the ewes’ 16.8 that its total of 248.3 includes.",
+  "q14avi": "A misprint in the scheme: “Let some of the stock our earlier to graze” should read “out earlier”. The card keeps the printed wording.",
+  "q15b": "The paper asks for the effect of weather on percentage germination of an agricultural seed, but the scheme’s sample method measures and records the growth of grass in a watered and an unwatered area. A misprint in the scheme: “area not water had lower growth rates” should read “not watered”. The card keeps the scheme’s points.",
+  "q16ai": "The scheme’s mark column for Question 16 adds to 49, not 50: (a)(i) 2, (a)(ii) 4+4, (a)(iii) 5+2+2, (a)(iv) 3(4), (a)(v) 6, (b)(i) 3+3, (b)(ii) 3+3. The scheme does not show which part is a mark short, so every card keeps the printed marks.",
+  "q17ciii": "A misprint in the scheme: “Grow their won cereal” should read “own cereal”. The card keeps the printed wording.",
+  "q18ai": "Two misprints in the scheme’s working: the hedges-and-trees line reads “1552.50 +2950 = €4197.50”, but its own hedge figure is 500 x 5.29 = 2645 (1552.50 + 2645 = €4197.50); and the total line reads “4502.50 + 750 + 274 = €5221.50”, where 4502.50 should be 4197.50 (4197.50 + 750 + 274 = €5221.50). The printed answers €4197.50 and €5221.50 are correct, and the card uses them.",
+  "q18b": "The scheme’s descriptor prints “(4x4)” for the three other points, but its mark column prints 3(4)+4 = 16, which Question 18 needs to total 50: 4 for the correct cycle and three further points at 4 each."
+ },
+ "cards": [
+  {
+   "key": "q1ai",
+   "ref": "Q1(a)(i)",
+   "topic": "2-1",
+   "extra": [],
+   "concept": "irish-soil-type-locations",
+   "stem": null,
+   "question": "State a location in Ireland of the two named soil types in the table below.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Mainly midlands and eastern counties",
+     "marks": 3,
+     "note": "Brown Earth."
+    },
+    {
+     "type": "point",
+     "text": "Leitrim, north Kerry, Clare",
+     "marks": 3,
+     "note": "Gley. The scheme prints 3+3, one location for each soil type."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     3,
+     0.155,
+     0.31
+    ]
+   ],
+   "scheme": [
+    [
+     11,
+     0.156,
+     0.288
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-soil-science"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q1aii",
+   "ref": "Q1(a)(ii)",
+   "topic": "2-1",
+   "extra": [],
+   "concept": "limestone-soil-properties",
+   "stem": null,
+   "question": "Briefly describe two properties of a soil formed from limestone rock.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Free draining",
+      "prone to drought",
+      "alkaline or high pH",
+      "strong developed structure"
+     ],
+     "marks": [
+      2,
+      2
+     ],
+     "note": "Two properties, 2(2)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     3,
+     0.31,
+     0.338
+    ]
+   ],
+   "scheme": [
+    [
+     11,
+     0.288,
+     0.37
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-soil-science"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q1bi",
+   "ref": "Q1(b)(i)",
+   "topic": "2-1",
+   "extra": [],
+   "concept": "soil-formation-factors",
+   "stem": null,
+   "question": "List three factors responsible for soil formation.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Parent material",
+      "climate",
+      "living organisms",
+      "topography",
+      "time"
+     ],
+     "marks": [
+      2,
+      2,
+      2
+     ],
+     "note": "Three factors, 3(2)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     3,
+     0.562,
+     0.59
+    ]
+   ],
+   "scheme": [
+    [
+     11,
+     0.386,
+     0.452
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-soil-science"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q1bii",
+   "ref": "Q1(b)(ii)",
+   "topic": "2-1",
+   "extra": [],
+   "concept": "soil-formation-factor-described",
+   "stem": null,
+   "question": "Describe one factor responsible for soil formation listed in part (i).",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Parent rock is weathered into smaller particles / granite contains quartz which is weathered into sand particles and acidic in nature / limestone rock is alkaline in nature and increases the pH of soil formed from it",
+      "Temperature – heating and cooling of rock Water – physical and chemical weathering – freeze-thaw or hydrolysis or solution or hydration",
+      "Slope of landscape / steep slopes the soil is eroded down to valley – thin layer of soil on slopes and deep fertile soil in valley",
+      "Contribute humus when die / microorganisms help to decompose organic matter / organic matter increases soil fertility / soils that develop",
+      "Young soils (Ireland) have high levels of rock available for weathering"
+     ],
+     "marks": [
+      4
+     ],
+     "note": "One factor described, 4 marks. In order the options describe parent material, climate, topography, organisms and time; the alternatives within one factor earn one award."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     3,
+     0.69,
+     0.713
+    ]
+   ],
+   "scheme": [
+    [
+     11,
+     0.452,
+     0.869
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-soil-science"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q2a",
+   "ref": "Q2(a)",
+   "topic": "4-1",
+   "extra": [],
+   "concept": "milk-let-down-hormone",
+   "stem": "Analyse the diagram of the milk let down process and answer the questions which follow.",
+   "question": "Identify the hormone A responsible for milk let down by placing a tick (✓) in the correct box.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Oxytocin",
+     "marks": 1,
+     "note": "The scheme ticks Oxytocin."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     4,
+     0.065,
+     0.472
+    ]
+   ],
+   "scheme": [
+    [
+     12,
+     0.086,
+     0.206
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-dairy-cattle",
+    "agricultural-science-higher-animal-physiology-reproductive-systems"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-dairy-cattle"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q2b",
+   "ref": "Q2(b)",
+   "topic": "4-1",
+   "extra": [],
+   "concept": "adrenaline-blocks-milk-let-down",
+   "stem": "Analyse the diagram of the milk let down process and answer the questions which follow.",
+   "question": "If a cow becomes distressed they produce the hormone adrenaline which decreases hormone A concentration. Outline the implication of hormone A being reduced for dairy cows.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Reduced milk yield",
+     "marks": 3
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     4,
+     0.065,
+     0.37
+    ],
+    [
+     4,
+     0.472,
+     0.532
+    ]
+   ],
+   "scheme": [
+    [
+     12,
+     0.206,
+     0.254
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-dairy-cattle",
+    "agricultural-science-higher-animal-physiology-reproductive-systems"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-dairy-cattle"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q2c",
+   "ref": "Q2(c)",
+   "topic": "4-3-3",
+   "extra": [],
+   "concept": "milking-stress-reduction",
+   "stem": "Analyse the diagram of the milk let down process and answer the questions which follow.",
+   "question": "List one way a cow can become stressed at milking and outline how a farmer can reduce this level of stress in the cows.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "New operator or loud noise",
+      "have a familiar person with the new operator for a while / play a radio in parlour"
+     ],
+     "marks": [
+      3,
+      3
+     ],
+     "note": "Cause of stress and the matching way of reducing it, 3+3."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     4,
+     0.065,
+     0.37
+    ],
+    [
+     4,
+     0.63,
+     0.672
+    ]
+   ],
+   "scheme": [
+    [
+     12,
+     0.254,
+     0.43
+    ]
+   ],
+   "selection": null,
+   "variants": [
+    {
+     "id": "noise",
+     "label": "New operator or loud noise",
+     "rows": [
+      {
+       "type": "menu",
+       "texts": [
+        "New operator or loud noise",
+        "have a familiar person with the new operator for a while / play a radio in parlour"
+       ],
+       "marks": [
+        3,
+        3
+       ],
+       "note": "Cause of stress and the matching way of reducing it, 3+3."
+      }
+     ]
+    },
+    {
+     "id": "movement",
+     "label": "a lot of strange movement in yard (e.g silage production)",
+     "rows": [
+      {
+       "type": "menu",
+       "texts": [
+        "a lot of strange movement in yard (e.g silage production)",
+        "Don’t have tractors coming in past parlour during milking"
+       ],
+       "marks": [
+        3,
+        3
+       ],
+       "note": "Cause of stress and the matching way of reducing it, 3+3."
+      }
+     ]
+    }
+   ],
+   "examTopicIds": [
+    "agricultural-science-higher-dairy-cattle"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-dairy-cattle"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q3a",
+   "ref": "Q3(a)",
+   "topic": "1-3",
+   "extra": [],
+   "concept": "qualitative-botanical-survey",
+   "stem": "Kevin is looking to expand his dairy farm and has noticed a permanent pasture field close to him for sale. He would like to identify the botanical composition of this field in order to determine if he would need to reseed the field for use in silage production. Kevin carried out the investigation using a quadrat to determine the field’s botanical composition.",
+   "question": "State with reason if the results collected are qualitative or quantitative.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Qualitative",
+     "marks": 2,
+     "note": "State."
+    },
+    {
+     "type": "point",
+     "text": "Reason: determining the type of plants present",
+     "marks": 2,
+     "note": "Reason."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     5,
+     0.065,
+     0.256
+    ]
+   ],
+   "scheme": [
+    [
+     12,
+     0.43,
+     0.511
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-grassland",
+    "agricultural-science-higher-scientific-practices-experiments-investigations"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-scientific-practices-experiments-investigations"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q3b",
+   "ref": "Q3(b)",
+   "topic": "1-2",
+   "extra": [],
+   "concept": "quadrat-repeat-throws",
+   "stem": "Kevin is looking to expand his dairy farm and has noticed a permanent pasture field close to him for sale. He would like to identify the botanical composition of this field in order to determine if he would need to reseed the field for use in silage production. Kevin carried out the investigation using a quadrat to determine the field’s botanical composition.",
+   "question": "Describe how Kevin can ensure the results he obtained are accurate.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Quadrat was thrown a number of times (e.g.10)",
+     "marks": 2
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     5,
+     0.065,
+     0.232
+    ],
+    [
+     5,
+     0.357,
+     0.38
+    ]
+   ],
+   "scheme": [
+    [
+     12,
+     0.511,
+     0.559
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-grassland",
+    "agricultural-science-higher-scientific-practices-experiments-investigations"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-scientific-practices-experiments-investigations"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q3c",
+   "ref": "Q3(c)",
+   "topic": "3-2",
+   "extra": [],
+   "concept": "pasture-weed-identification",
+   "stem": "Kevin is looking to expand his dairy farm and has noticed a permanent pasture field close to him for sale. He would like to identify the botanical composition of this field in order to determine if he would need to reseed the field for use in silage production. Kevin carried out the investigation using a quadrat to determine the field’s botanical composition.",
+   "question": "Identify each of the plants below Kevin found when carrying out the investigation.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "A = Dandelion",
+     "marks": 2,
+     "note": "Photograph A."
+    },
+    {
+     "type": "point",
+     "text": "B = Buttercup",
+     "marks": 2,
+     "note": "Photograph B."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     5,
+     0.065,
+     0.232
+    ],
+    [
+     5,
+     0.481,
+     0.675
+    ]
+   ],
+   "scheme": [
+    [
+     12,
+     0.559,
+     0.641
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-grassland",
+    "agricultural-science-higher-classification-of-animals-plants"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-classification-of-animals-plants"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q4a",
+   "ref": "Q4(a)",
+   "topic": "2-3",
+   "extra": [],
+   "concept": "eutrophication",
+   "stem": "Read the article and answer the questions which follow. Natural Capital and Other Resources Agriculture is the world’s largest user of freshwater, accounting for 70% of global freshwater use. There are large differences in water use between regions and farming systems. In more temperate regions like Ireland, the interface between agriculture and water is predominantly defined by the impact of farming on the quality of drinking and surface waters. Here, the prevention of eutrophication, caused by excess nutrient losses to water, represents one of the main challenges to sustainability. (Adapted from Teagasc-Technology-Foresight-Report 2035, 2022) [The term underlined on the paper is: eutrophication]",
+   "question": "Explain the underlined term.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "the process by which a water becomes enriched in dissolved nutrients",
+     "marks": 2
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     6,
+     0.065,
+     0.364
+    ]
+   ],
+   "scheme": [
+    [
+     12,
+     0.641,
+     0.709
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q4b",
+   "ref": "Q4(b)",
+   "topic": "2-3",
+   "extra": [],
+   "concept": "reducing-eutrophication",
+   "stem": "Read the article and answer the questions which follow. Natural Capital and Other Resources Agriculture is the world’s largest user of freshwater, accounting for 70% of global freshwater use. There are large differences in water use between regions and farming systems. In more temperate regions like Ireland, the interface between agriculture and water is predominantly defined by the impact of farming on the quality of drinking and surface waters. Here, the prevention of eutrophication, caused by excess nutrient losses to water, represents one of the main challenges to sustainability. (Adapted from Teagasc-Technology-Foresight-Report 2035, 2022)",
+   "question": "State two agricultural practices which could be used to reduce eutrophication.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Spread fertiliser in suitable conditions",
+      "spread fertiliser at correct time",
+      "spread correct amount of fertilizer",
+      "use of buffer zone"
+     ],
+     "marks": [
+      2,
+      2
+     ],
+     "note": "Two practices, 2+2."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     6,
+     0.065,
+     0.343
+    ],
+    [
+     6,
+     0.47,
+     0.493
+    ]
+   ],
+   "scheme": [
+    [
+     12,
+     0.709,
+     0.808
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q4c",
+   "ref": "Q4(c)",
+   "topic": "2-3",
+   "extra": [],
+   "concept": "implementing-eutrophication-control",
+   "stem": "Read the article and answer the questions which follow. Natural Capital and Other Resources Agriculture is the world’s largest user of freshwater, accounting for 70% of global freshwater use. There are large differences in water use between regions and farming systems. In more temperate regions like Ireland, the interface between agriculture and water is predominantly defined by the impact of farming on the quality of drinking and surface waters. Here, the prevention of eutrophication, caused by excess nutrient losses to water, represents one of the main challenges to sustainability. (Adapted from Teagasc-Technology-Foresight-Report 2035, 2022)",
+   "question": "Descibe how one of the practices stated in (b) above could be implemented on the farm.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Slurry spreader with umbilical cord",
+      "less volitalisation",
+      "less leaching",
+      "more precise spreading",
+      "dry",
+      "sunshine",
+      "low wind",
+      "condition mower"
+     ],
+     "marks": [
+      4
+     ],
+     "note": "One practice described, 4 marks."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     6,
+     0.065,
+     0.343
+    ],
+    [
+     6,
+     0.625,
+     0.648
+    ]
+   ],
+   "scheme": [
+    [
+     12,
+     0.808,
+     0.9
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q5a",
+   "ref": "Q5(a)",
+   "topic": "4-2",
+   "extra": [],
+   "concept": "angus-hereford-identification",
+   "stem": "The photographs show two different beef breeds found on Irish farms.",
+   "question": "Identify the two beef breeds shown in the photographs.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "A: Aberdeen Angus (poly)",
+     "marks": 2,
+     "note": "Photograph A."
+    },
+    {
+     "type": "point",
+     "text": "B: Hereford (whitehead)",
+     "marks": 2,
+     "note": "Photograph B. The scheme prints 2(2)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     7,
+     0.065,
+     0.348
+    ]
+   ],
+   "scheme": [
+    [
+     13,
+     0.086,
+     0.151
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-beef-cattle",
+    "agricultural-science-higher-classification-of-animals-plants"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-beef-cattle"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q5b",
+   "ref": "Q5(b)",
+   "topic": "4-2",
+   "extra": [],
+   "concept": "beef-breed-characteristics",
+   "stem": "The photographs show two different beef breeds found on Irish farms.",
+   "question": "Outline two characteristics which classify animal A as a beef breed.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "early maturing",
+      "polled",
+      "easy calving",
+      "produces lean carcass"
+     ],
+     "marks": [
+      2,
+      2
+     ],
+     "note": "Two characteristics of animal A (Aberdeen Angus), 2(2)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     7,
+     0.065,
+     0.31
+    ],
+    [
+     7,
+     0.418,
+     0.442
+    ]
+   ],
+   "scheme": [
+    [
+     13,
+     0.151,
+     0.251
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-beef-cattle"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-beef-cattle"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q5c",
+   "ref": "Q5(c)",
+   "topic": "4-3-1",
+   "extra": [],
+   "concept": "early-maturing-breeds-24-month-slaughter",
+   "stem": "The photographs show two different beef breeds found on Irish farms.",
+   "question": "To increase sustainability on farms it is advised to reduce the slaughter weight of animals to 24 months. Outline why the beef breeds shown above are suitable for slaughter at 24 months.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Early maturing breeds and finish early",
+     "marks": 2
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     7,
+     0.065,
+     0.31
+    ],
+    [
+     7,
+     0.573,
+     0.631
+    ]
+   ],
+   "scheme": [
+    [
+     13,
+     0.251,
+     0.316
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-beef-cattle"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-beef-cattle"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q6ai",
+   "ref": "Q6(a)(i)",
+   "topic": "4-3-3",
+   "extra": [
+    "3-3-2"
+   ],
+   "concept": "biosecurity-vs-biodiversity",
+   "stem": null,
+   "question": "Distinguish between biosecurity and biodiversity.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Biosecurity is the prevention of disease-causing agents entering or leaving any place where they can pose a risk to farm animals, other animals, humans, or the safety and quality of a food product.",
+     "marks": 2,
+     "note": "Biosecurity."
+    },
+    {
+     "type": "point",
+     "text": "Biodiversity is all the different kinds of life or organisms in one area",
+     "marks": 2,
+     "note": "Biodiversity. The scheme prints 2(2)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     8,
+     0.065,
+     0.145
+    ]
+   ],
+   "scheme": [
+    [
+     13,
+     0.316,
+     0.511
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-animal-diseases",
+    "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-diseases",
+     "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q6aii",
+   "ref": "Q6(a)(ii)",
+   "topic": "4-3-3",
+   "extra": [],
+   "concept": "direct-indirect-disease-threats",
+   "stem": "Disease threats to stock on a farm can be either direct or indirect.",
+   "question": "List one direct or one indirect disease threat.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Animals that have contact with each other and pass the disease to each other",
+      "incorporating new animals into herd or flock without isolation period"
+     ],
+     "marks": [
+      2
+     ],
+     "note": "Direct threat."
+    },
+    {
+     "type": "menu",
+     "texts": [
+      "Contaminated food or drinking water",
+      "air borne disease"
+     ],
+     "marks": [
+      2
+     ],
+     "note": "Indirect threat. The scheme prints 2(2) for this part, with a pool for each column of the answer table."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     8,
+     0.37,
+     0.443
+    ]
+   ],
+   "scheme": [
+    [
+     13,
+     0.511,
+     0.636
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-animal-diseases"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-diseases"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q6aiii",
+   "ref": "Q6(a)(iii)",
+   "topic": "4-3-3",
+   "extra": [],
+   "concept": "reducing-disease-threats",
+   "stem": "Disease threats to stock on a farm can be either direct or indirect. List one direct or one indirect disease threat.",
+   "question": "Explain how farmers can reduce the disease risk from the disease threat listed in part (ii) above.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Isolate purchased animals",
+      "isolate sick animals",
+      "buy feed from a reputable source",
+      "store feed in a sealed container (vermin proof)",
+      "good ventilation in animal housing"
+     ],
+     "marks": [
+      2
+     ],
+     "note": "One way, matching the threat listed in part (ii)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     8,
+     0.37,
+     0.411
+    ],
+    [
+     8,
+     0.554,
+     0.594
+    ]
+   ],
+   "scheme": [
+    [
+     13,
+     0.636,
+     0.735
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-animal-diseases"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-diseases"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q6bi",
+   "ref": "Q6(b)(i)",
+   "topic": "4-3-3",
+   "extra": [],
+   "concept": "subcutaneous-injection-sites",
+   "stem": "The picture below shows the recommended application sites for different animal treatments. Analyse the picture and answer the questions which follow.",
+   "question": "Outline a reason why there are subcutaneous sites only.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Ease of administration",
+      "don’t affect the high price meat cuts"
+     ],
+     "marks": [
+      1
+     ]
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     9,
+     0.09,
+     0.442
+    ]
+   ],
+   "scheme": [
+    [
+     14,
+     0.103,
+     0.169
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-animal-diseases"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-diseases"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q6bii",
+   "ref": "Q6(b)(ii)",
+   "topic": "4-3-3",
+   "extra": [],
+   "concept": "pour-on-insecticide",
+   "stem": "The picture below shows the recommended application sites for different animal treatments. Analyse the picture and answer the questions which follow.",
+   "question": "Identify which type of medicine is administered using a pour-on by placing a tick (✓) in the correct box.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Insecticide",
+     "marks": 3,
+     "note": "The scheme ticks Insecticide."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     9,
+     0.09,
+     0.415
+    ],
+    [
+     9,
+     0.541,
+     0.685
+    ]
+   ],
+   "scheme": [
+    [
+     14,
+     0.169,
+     0.27
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-animal-diseases"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-diseases"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q6biii",
+   "ref": "Q6(b)(iii)",
+   "topic": "4-3-3",
+   "extra": [],
+   "concept": "spot-on-ectoparasites",
+   "stem": "The picture below shows the recommended application sites for different animal treatments. Analyse the picture and answer the questions which follow.",
+   "question": "State one ectoparasite on animals that can be treated using a spot-on treatment.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Lice",
+      "tick"
+     ],
+     "marks": [
+      3
+     ]
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     9,
+     0.09,
+     0.415
+    ],
+    [
+     9,
+     0.691,
+     0.715
+    ]
+   ],
+   "scheme": [
+    [
+     14,
+     0.27,
+     0.335
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-animal-diseases"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-diseases"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q6biv",
+   "ref": "Q6(b)(iv)",
+   "topic": "1-5",
+   "extra": [
+    "4-3-3"
+   ],
+   "concept": "animal-treatment-safety",
+   "stem": "The picture below shows the recommended application sites for different animal treatments. Analyse the picture and answer the questions which follow.",
+   "question": "Outline one safety precaution taken when carrying out animal treatments.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Animals are securely contained (e.g. crush)",
+      "be careful not to stab yourself with needle",
+      "have experienced stock person",
+      "do not over or under dose animals"
+     ],
+     "marks": [
+      3
+     ]
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     9,
+     0.09,
+     0.415
+    ],
+    [
+     9,
+     0.755,
+     0.778
+    ]
+   ],
+   "scheme": [
+    [
+     14,
+     0.335,
+     0.434
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-animal-diseases"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-diseases"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q7a",
+   "ref": "Q7(a)",
+   "topic": "3-3-3",
+   "extra": [],
+   "concept": "hay-preservation-dehydration",
+   "stem": "Daniel usually harvests excess grass for silage. As 2022 was an exceptional year for prolonged periods of dry weather he decided to save hay instead.",
+   "question": "State the type of preservation used in the production of hay.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Dehydration",
+     "marks": 2
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     10,
+     0.065,
+     0.293
+    ]
+   ],
+   "scheme": [
+    [
+     14,
+     0.434,
+     0.482
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-grassland"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-grassland"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q7b",
+   "ref": "Q7(b)",
+   "topic": "3-3-3",
+   "extra": [],
+   "concept": "hay-vs-baled-silage-production",
+   "stem": "Daniel usually harvests excess grass for silage. As 2022 was an exceptional year for prolonged periods of dry weather he decided to save hay instead.",
+   "question": "Outline two differences other than the type of preservation, in the production of hay from baled silage.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Grass has reached inflorescence stage",
+      "heavily dependent on prolonged dry period",
+      "clean",
+      "easily transported",
+      "produces no effluent"
+     ],
+     "marks": [
+      3,
+      3
+     ],
+     "note": "Two differences, 2(3)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     10,
+     0.065,
+     0.13
+    ],
+    [
+     10,
+     0.3,
+     0.342
+    ]
+   ],
+   "scheme": [
+    [
+     14,
+     0.482,
+     0.581
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-grassland"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-grassland"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q7c",
+   "ref": "Q7(c)",
+   "topic": "1-5",
+   "extra": [
+    "3-3-3"
+   ],
+   "concept": "storing-damp-hay-risk",
+   "stem": "Daniel usually harvests excess grass for silage. As 2022 was an exceptional year for prolonged periods of dry weather he decided to save hay instead.",
+   "question": "Outline one safety risk when storing hay bales with a high moisture (>22%) content.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Prevent fire (overheating)",
+      "prevent mould growth (moisture)",
+      "ventilation"
+     ],
+     "marks": [
+      2
+     ]
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     10,
+     0.065,
+     0.13
+    ],
+    [
+     10,
+     0.533,
+     0.558
+    ]
+   ],
+   "scheme": [
+    [
+     14,
+     0.581,
+     0.662
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-grassland"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-grassland"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q8a",
+   "ref": "Q8(a)",
+   "topic": "4-3-2",
+   "extra": [
+    "1-3"
+   ],
+   "concept": "lactation-curve-highest-yield",
+   "stem": "John received the annual milk recording summary and example of results are shown in the graph below. Analyse the graph and answer the questions which follow.",
+   "question": "Identify John’s highest yielding cow.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Cow 4",
+     "marks": 3
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     11,
+     0.065,
+     0.49
+    ]
+   ],
+   "scheme": [
+    [
+     14,
+     0.662,
+     0.71
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-dairy-cattle"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-dairy-cattle"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q8b",
+   "ref": "Q8(b)",
+   "topic": "4-3-3",
+   "extra": [
+    "1-3"
+   ],
+   "concept": "milk-yield-decline-cause",
+   "stem": "John received the annual milk recording summary and example of results are shown in the graph below. Analyse the graph and answer the questions which follow.",
+   "question": "Cow number 2 had a dramatic decline in milk yield, outline one reason for this decrease.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Illness – mastitis or lameness",
+     "marks": 3
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     11,
+     0.065,
+     0.462
+    ],
+    [
+     11,
+     0.53,
+     0.554
+    ]
+   ],
+   "scheme": [
+    [
+     14,
+     0.71,
+     0.775
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-dairy-cattle",
+    "agricultural-science-higher-animal-diseases"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-dairy-cattle"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q8c",
+   "ref": "Q8(c)",
+   "topic": "4-3-2",
+   "extra": [
+    "1-3"
+   ],
+   "concept": "predicted-lactation-yield",
+   "stem": "John received the annual milk recording summary and example of results are shown in the graph below. Analyse the graph and answer the questions which follow.",
+   "question": "John was planning on building a new shed and wanted to calculate his projected income for the year. Based on an average peak yield of 43 litres, calculate the predicted yield for the cows.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "43 x 220 = 9460 litres",
+     "marks": 4,
+     "note": "The scheme multiplies the peak yield by 220."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     11,
+     0.065,
+     0.462
+    ],
+    [
+     11,
+     0.655,
+     0.695
+    ]
+   ],
+   "scheme": [
+    [
+     14,
+     0.775,
+     0.855
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-dairy-cattle"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-dairy-cattle"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q9ai",
+   "ref": "Q9(a)(i)",
+   "topic": "4-3-3",
+   "extra": [],
+   "concept": "johnes-disease-symptoms",
+   "stem": "Johne’s disease is a bacterial disease of cattle and other ruminants for which there is no cure. Cattle usually become infected as calves in early life by drinking contaminated milk or eating food with the bacteria.",
+   "question": "Briefly describe the symptoms of this disease in cattle.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Weight loss",
+      "diarrhoea with normal appetite",
+      "soft swelling may occur under the jaw"
+     ],
+     "marks": [
+      5,
+      1
+     ],
+     "note": "Two symptoms: the first correct earns 5 marks and the second 1 (5+1)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     12,
+     0.065,
+     0.236
+    ]
+   ],
+   "scheme": [
+    [
+     15,
+     0.086,
+     0.167
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-animal-diseases"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-diseases"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q9aii",
+   "ref": "Q9(a)(ii)",
+   "topic": "4-3-3",
+   "extra": [],
+   "concept": "johnes-disease-control",
+   "stem": "Johne’s disease is a bacterial disease of cattle and other ruminants for which there is no cure. Cattle usually become infected as calves in early life by drinking contaminated milk or eating food with the bacteria.",
+   "question": "Outline ways a farmer can control the spread of the disease on their farm.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Provide mains water and keep troughs clean",
+      "fence off rivers and other water sources (especially ponds and other areas of stagnant water)",
+      "avoid grazing with other livestock that can carry Johne's disease infection"
+     ],
+     "marks": [
+      2,
+      2
+     ],
+     "note": "Two ways, 2(2)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     12,
+     0.09,
+     0.212
+    ],
+    [
+     12,
+     0.488,
+     0.511
+    ]
+   ],
+   "scheme": [
+    [
+     15,
+     0.167,
+     0.283
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-animal-diseases"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-diseases"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q9bi",
+   "ref": "Q9(b)(i)",
+   "topic": "4-3-3",
+   "extra": [],
+   "concept": "redwater-diagnosis",
+   "stem": "Mia was checking her cattle that were on a permanent pasture and noticed one of the animals away from the herd, reduced appetite, high temperature and frothy urine with reddish brown colour.",
+   "question": "State the disease from which the animal is suffering.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Red water",
+     "marks": 3
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     13,
+     0.09,
+     0.293
+    ]
+   ],
+   "scheme": [
+    [
+     15,
+     0.301,
+     0.35
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-animal-diseases"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-diseases"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q9bii",
+   "ref": "Q9(b)(ii)",
+   "topic": "4-3-3",
+   "extra": [],
+   "concept": "redwater-treatment",
+   "stem": "Mia was checking her cattle that were on a permanent pasture and noticed one of the animals away from the herd, reduced appetite, high temperature and frothy urine with reddish brown colour.",
+   "question": "Outline how an animal with this disease could be treated.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Injection to kill parasite",
+      "blood transfusion"
+     ],
+     "marks": [
+      3
+     ]
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     13,
+     0.09,
+     0.268
+    ],
+    [
+     13,
+     0.333,
+     0.356
+    ]
+   ],
+   "scheme": [
+    [
+     15,
+     0.35,
+     0.398
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-animal-diseases"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-diseases"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q9biii",
+   "ref": "Q9(b)(iii)",
+   "topic": "4-3-3",
+   "extra": [],
+   "concept": "redwater-prevention",
+   "stem": "Mia was checking her cattle that were on a permanent pasture and noticed one of the animals away from the herd, reduced appetite, high temperature and frothy urine with reddish brown colour.",
+   "question": "List management practices which could prevent this disease.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Good grazing management",
+      "don’t put animals in long overgrown grass or scrub during spring or autumn"
+     ],
+     "marks": [
+      2,
+      2
+     ],
+     "note": "Two practices, 2(2)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     13,
+     0.09,
+     0.268
+    ],
+    [
+     13,
+     0.488,
+     0.511
+    ]
+   ],
+   "scheme": [
+    [
+     15,
+     0.398,
+     0.463
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-animal-diseases"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-diseases"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q10a",
+   "ref": "Q10(a)",
+   "topic": "4-3-2",
+   "extra": [],
+   "concept": "sheep-flock-data-use",
+   "stem": "Collection of data on farms helps to improve animal performance and makes management easier. Examples of data collected on a sheep farm are shown in the diagram below.",
+   "question": "Outline how the data collected can assist farmers in improving animal performance and making management easier.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Helps makes informed decisions about animal performance",
+      "helps make decisions on culling stock",
+      "helps make decisions on level of feeding based on number of offspring",
+      "identify most productive animals for breeding"
+     ],
+     "marks": [
+      3,
+      3,
+      3
+     ],
+     "note": "Three ways, 3(3). The diagram shows lamb weight, lambing difficulty, ewe performance (milk and mothering ability) and scanning data."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     14,
+     0.065,
+     0.318
+    ]
+   ],
+   "scheme": [
+    [
+     15,
+     0.463,
+     0.597
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-sheep"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-sheep"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q10b",
+   "ref": "Q10(b)",
+   "topic": "4-3-2",
+   "extra": [],
+   "concept": "lamb-slaughter-weight",
+   "stem": "Collection of data on farms helps to improve animal performance and makes management easier. Examples of data collected on a sheep farm are shown in the diagram below.",
+   "question": "The farmer was weighing the lambs. Identify the desired slaughter weight by placing a tick (✓) in the correct box.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "42",
+     "marks": 1,
+     "note": "The scheme ticks 42 (kg)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     14,
+     0.065,
+     0.27
+    ],
+    [
+     14,
+     0.722,
+     0.87
+    ]
+   ],
+   "scheme": [
+    [
+     15,
+     0.597,
+     0.717
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-sheep"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-sheep"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q11a",
+   "ref": "Q11(a)",
+   "topic": "2-2-1",
+   "extra": [
+    "1-3"
+   ],
+   "concept": "optimum-ph-germination",
+   "stem": "The graph shows the effect of pH on the germination of a crop. Analyse the graph and answer the questions which follow.",
+   "question": "Identify the optimum pH for germination of the crop.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "pH 5",
+     "marks": 3
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     15,
+     0.065,
+     0.419
+    ]
+   ],
+   "scheme": [
+    [
+     16,
+     0.086,
+     0.134
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science",
+    "agricultural-science-higher-crop-production"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-soil-science"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q11b",
+   "ref": "Q11(b)",
+   "topic": "2-2-1",
+   "extra": [
+    "1-3"
+   ],
+   "concept": "low-ph-germination",
+   "stem": "The graph shows the effect of pH on the germination of a crop. Analyse the graph and answer the questions which follow.",
+   "question": "A farmer tested his soil pH and the results showed the pH of the soil is 4. State the implications of this result in relation to the germination of the crop on his farm.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "As the pH is very low, there will be a lower germination rate of the crop or only 32% of the seeds will germinate at pH 4",
+     "marks": 3
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     15,
+     0.065,
+     0.392
+    ],
+    [
+     15,
+     0.459,
+     0.5
+    ]
+   ],
+   "scheme": [
+    [
+     16,
+     0.134,
+     0.249
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science",
+    "agricultural-science-higher-crop-production"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-soil-science"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q11c",
+   "ref": "Q11(c)",
+   "topic": "2-2-1",
+   "extra": [],
+   "concept": "ph-influenced-soil-properties",
+   "stem": "The graph shows the effect of pH on the germination of a crop. Analyse the graph and answer the questions which follow.",
+   "question": "State two other soil properties that are influenced by soil pH.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Amount of nutrients and chemicals that are soluble in soil water",
+      "amount of nutrients available to plants"
+     ],
+     "marks": [
+      2,
+      2
+     ],
+     "note": "Two properties, 2(2)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     15,
+     0.065,
+     0.392
+    ],
+    [
+     15,
+     0.631,
+     0.654
+    ]
+   ],
+   "scheme": [
+    [
+     16,
+     0.249,
+     0.307
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-soil-science"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q12ai",
+   "ref": "Q12(a)(i)",
+   "topic": "4-1",
+   "extra": [],
+   "concept": "chewing-the-cud",
+   "stem": "Read the article and answer the questions which follow. Chewing Cud: Signs of Rumination in Cows Every farmer, stockperson and veterinarian know that animals resting and chewing the cud are healthy and making them profit. Chewing the cud is the key visible sign of ruminant livestock health and wellbeing. There are many factors that may influence the amount of time an animal spends chewing the cud, for example: Time of feeding – cows tend to eat more at dusk compared to dawn and hence ruminating more at night; feed space – if restricted, cows spending more time foraging for food; forage chop length and its correlation between fibre and starch/sugar – can account for up to a 33% of the variation in the time spent chewing. (Adapted from Agriland, 2022) [The term underlined on the paper is: Chewing the cud]",
+   "question": "Explain the underlined term.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "When a portion of food returns from a ruminant’s stomach to the mouth, to be re-chewed.",
+     "marks": 4
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     16,
+     0.065,
+     0.386
+    ]
+   ],
+   "scheme": [
+    [
+     16,
+     0.307,
+     0.385
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-dairy-cattle",
+    "agricultural-science-higher-animal-physiology-digestive-system"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-physiology-digestive-system"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q12aii",
+   "ref": "Q12(a)(ii)",
+   "topic": "4-3-2",
+   "extra": [],
+   "concept": "maximising-rumination",
+   "stem": "Read the article and answer the questions which follow. Chewing Cud: Signs of Rumination in Cows Every farmer, stockperson and veterinarian know that animals resting and chewing the cud are healthy and making them profit. Chewing the cud is the key visible sign of ruminant livestock health and wellbeing. There are many factors that may influence the amount of time an animal spends chewing the cud, for example: Time of feeding – cows tend to eat more at dusk compared to dawn and hence ruminating more at night; feed space – if restricted, cows spending more time foraging for food; forage chop length and its correlation between fibre and starch/sugar – can account for up to a 33% of the variation in the time spent chewing. (Adapted from Agriland, 2022)",
+   "question": "Based on the factors that may influence the amount of time an animal spends chewing the cud outlined in the article, advise a farmer how they could maximise this process on their farms.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Feed the cows at dusk (to increase rumination at night)",
+      "do not restrict access to feed",
+      "do not chop the grass too short or increase chop length"
+     ],
+     "marks": [
+      3,
+      3
+     ],
+     "note": "Two pieces of advice, 2(3)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     16,
+     0.09,
+     0.368
+    ],
+    [
+     16,
+     0.487,
+     0.545
+    ]
+   ],
+   "scheme": [
+    [
+     16,
+     0.385,
+     0.5
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-dairy-cattle",
+    "agricultural-science-higher-animal-physiology-digestive-system"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-physiology-digestive-system"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q12bi",
+   "ref": "Q12(b)(i)",
+   "topic": "3-1",
+   "extra": [],
+   "concept": "transpiration-stages",
+   "stem": null,
+   "question": "Outline scientifically what is happening at any two stages of the transpiration process in the plant.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Roots: Water is passively transported into the roots by osmosis (and then into the xylem)",
+      "Stem: water travels up through xylem vessels in the stem",
+      "Leaves: water evaporates from leaf surfaces and leaves the plant by diffusion through the stomata."
+     ],
+     "marks": [
+      2,
+      2
+     ],
+     "note": "Any two of the three printed stages (1. Roots, 2. Stems, 3. Leaves), 2(2). Alternatives within one stage earn one award."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     17,
+     0.09,
+     0.43
+    ]
+   ],
+   "scheme": [
+    [
+     16,
+     0.518,
+     0.652
+    ]
+   ],
+   "selection": {
+    "kind": "closed",
+    "choose": 2,
+    "options": [
+     "roots",
+     "stems",
+     "leaves"
+    ],
+    "pooled": true
+   },
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-plant-physiology"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-plant-physiology"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q12bii",
+   "ref": "Q12(b)(ii)",
+   "topic": "3-3-2",
+   "extra": [],
+   "concept": "fungal-crop-disease-symptom-prevention",
+   "stem": "Powdery mildew greatly affected crops in summer 2022.",
+   "question": "Name another fungal disease of plants you have studied and briefly describe the disease under the headings which follow.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Rotting of leaves",
+      "dark brown blotches appear at edge of leaf"
+     ],
+     "marks": [
+      3
+     ],
+     "note": "Symptom (Potato blight). The disease is the student’s own choice; the scheme gives potato blight and leaf spot as examples and prints 2(3) for this part."
+    },
+    {
+     "type": "menu",
+     "texts": [
+      "Plant in a windy place",
+      "plant well -spaced apart",
+      "remove any infected tubers from soil"
+     ],
+     "marks": [
+      3
+     ],
+     "note": "Sustainable prevention method (Potato blight)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     17,
+     0.432,
+     0.49
+    ]
+   ],
+   "scheme": [
+    [
+     16,
+     0.652,
+     0.913
+    ]
+   ],
+   "selection": null,
+   "variants": [
+    {
+     "id": "blight",
+     "label": "Potato blight",
+     "rows": [
+      {
+       "type": "menu",
+       "texts": [
+        "Rotting of leaves",
+        "dark brown blotches appear at edge of leaf"
+       ],
+       "marks": [
+        3
+       ],
+       "note": "Symptom (Potato blight). The disease is the student’s own choice; the scheme gives potato blight and leaf spot as examples and prints 2(3) for this part."
+      },
+      {
+       "type": "menu",
+       "texts": [
+        "Plant in a windy place",
+        "plant well -spaced apart",
+        "remove any infected tubers from soil"
+       ],
+       "marks": [
+        3
+       ],
+       "note": "Sustainable prevention method (Potato blight)."
+      }
+     ]
+    },
+    {
+     "id": "leafspot",
+     "label": "Leaf spot",
+     "rows": [
+      {
+       "type": "menu",
+       "texts": [
+        "Dark green or yellow sections of leaf",
+        "eventually turn black",
+        "lesions are usually oval in shape"
+       ],
+       "marks": [
+        3
+       ],
+       "note": "Symptom (Leaf spot). The disease is the student’s own choice; the scheme gives potato blight and leaf spot as examples and prints 2(3) for this part."
+      },
+      {
+       "type": "menu",
+       "texts": [
+        "Remove heavily infested leaves from plant",
+        "remove any fallen leaves from soil",
+        "adequate space between plants",
+        "keep foliage dry"
+       ],
+       "marks": [
+        3
+       ],
+       "note": "Sustainable prevention method (Leaf spot)."
+      }
+     ]
+    }
+   ],
+   "examTopicIds": [
+    "agricultural-science-higher-crop-production"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-crop-production"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q13ai",
+   "ref": "Q13(a)(i)",
+   "topic": "2-3",
+   "extra": [],
+   "concept": "p-and-k-application-rate-factors",
+   "stem": "Read the article and answer the questions which follow. National Soil Fertility Trends, 2021 The 2021 soil fertility results in Ireland indicate that soils with optimum pH, Phosphorus (P) and Potassium (K) fertility decreased by between 3% to 16%. These trends could indicate early signs of declining soil fertility levels nationally. Farmers should put plans in place to protect the productivity and long-term sustainability of their farming business. (Adapted from Teagasc, 2021)",
+   "question": "Outline the factors which determine the application rate of P and K.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "The soil type",
+      "weather condition",
+      "application rate",
+      "application techniques",
+      "characteristics of the organic and mineral fertilisers used"
+     ],
+     "marks": [
+      6,
+      2
+     ],
+     "note": "Two factors: the first correct earns 6 marks and the second 2 (6+2)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     20,
+     0.155,
+     0.386
+    ]
+   ],
+   "scheme": [
+    [
+     17,
+     0.156,
+     0.239
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science",
+    "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q13aii",
+   "ref": "Q13(a)(ii)",
+   "topic": "2-3",
+   "extra": [],
+   "concept": "nutrient-management-plan-for-fertility-decline",
+   "stem": "Read the article and answer the questions which follow. National Soil Fertility Trends, 2021 The 2021 soil fertility results in Ireland indicate that soils with optimum pH, Phosphorus (P) and Potassium (K) fertility decreased by between 3% to 16%. These trends could indicate early signs of declining soil fertility levels nationally. Farmers should put plans in place to protect the productivity and long-term sustainability of their farming business. (Adapted from Teagasc, 2021)",
+   "question": "Describe a nutrient management plan a farmer would follow to combat the trends mentioned in the article.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Based on Up-to-date soil samples",
+      "focus on correcting pH",
+      "getting the most from slurry and manures by identifying where it is needed most",
+      "select a suitable P and K fertiliser blend to maintain farm soil fertility"
+     ],
+     "marks": [
+      6,
+      2
+     ],
+     "note": "Two points of the plan: the first correct earns 6 marks and the second 2 (6+2)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     20,
+     0.18,
+     0.357
+    ],
+    [
+     20,
+     0.507,
+     0.547
+    ]
+   ],
+   "scheme": [
+    [
+     17,
+     0.239,
+     0.355
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science",
+    "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q13bi",
+   "ref": "Q13(b)(i)",
+   "topic": "2-2-1",
+   "extra": [],
+   "concept": "cec-and-nutrient-availability",
+   "stem": null,
+   "question": "Explain the relationship between nutrient availability in soil and cation exchange capacity in soils.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "As CEC increases, more nutrients are attached to soil particles, and fewer remain in the soil solution / since the nutrients in soil solution are available to plants, this means that while there are plenty of nutrients in the soil, the plants may not be able to take advantage of them.",
+     "marks": 6
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     21,
+     0.065,
+     0.106
+    ]
+   ],
+   "scheme": [
+    [
+     17,
+     0.355,
+     0.489
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-soil-science"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q13bii",
+   "ref": "Q13(b)(ii)",
+   "topic": "1-2",
+   "extra": [
+    "2-2-1"
+   ],
+   "concept": "cation-exchange-capacity-investigation",
+   "stem": null,
+   "question": "Describe an investigation to demonstrate cation exchange capacity in a sample of soil.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Add (high pH) soil to filter paper in a funnel with a clean dry beaker underneath",
+      "add potassium chloride (or potassium ions) solution (drop by drop) to the soil",
+      "collect the water that filters from the soil into the beaker (leachate)",
+      "test the leachate for calcium by adding (10 drops) ammonium oxalate to the leachate",
+      "white precipitate forms, calcium is present",
+      "discard the leachate and rinse the beaker with deionised water",
+      "repeat the experiment by adding more potassium chloride to the soil and testing the leachate for calcium",
+      "repeat the experiment until the leachate does not test positive for calcium"
+     ],
+     "marks": [
+      4,
+      4,
+      4
+     ],
+     "note": "Three points from one coherent investigation, 3(4)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     21,
+     0.298,
+     0.321
+    ]
+   ],
+   "scheme": [
+    [
+     17,
+     0.489,
+     0.709
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science",
+    "agricultural-science-higher-scientific-practices-experiments-investigations"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-scientific-practices-experiments-investigations",
+     "agricultural-science-higher-soil-science"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q13ci",
+   "ref": "Q13(c)(i)",
+   "topic": "1-3",
+   "extra": [],
+   "concept": "main-ammonia-source",
+   "stem": "The chart shows the different sources of ammonia emissions from agriculture. Analyse the chart and answer the questions which follow. (Adapted from EPA, 2017)",
+   "question": "Identify the main source of ammonia emissions from agriculture.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Animal housing",
+     "marks": 6,
+     "note": "Animal housing is the largest share of the chart (31.10%)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     22,
+     0.065,
+     0.409
+    ]
+   ],
+   "scheme": [
+    [
+     17,
+     0.709,
+     0.758
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q13cii",
+   "ref": "Q13(c)(ii)",
+   "topic": "4-3-1",
+   "extra": [
+    "1-3"
+   ],
+   "concept": "reducing-ammonia-emissions",
+   "stem": "The chart shows the different sources of ammonia emissions from agriculture. Analyse the chart and answer the questions which follow. (Adapted from EPA, 2017)",
+   "question": "You have been asked to address a group of farmers on ways to reduce ammonia emissions from agriculture. Using the data in the chart, advise them on strategies to reduce ammonia emissions from agriculture.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Animal housing is a high source of ammonia emissions (31.1%) so by extending the grazing season it will reduce the emissions",
+      "manure storage contributes 14.4% ammonia so by extending the grazing season there will be less manure stored so lower ammonia emissions",
+      "manure deposited at pasture contributes 12.4% ammonia so by extending the grazing season there is less manure spread so less ammonia",
+      "manure spreading contributes 30.3% so using lower emission slurry spreading or extended grazing will lower the emissions."
+     ],
+     "marks": [
+      4,
+      4,
+      2
+     ],
+     "note": "Strategies linked to the chart data: the first two correct earn 4 marks each and the third 2 (2(4)+2)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     22,
+     0.065,
+     0.388
+    ],
+    [
+     22,
+     0.449,
+     0.524
+    ]
+   ],
+   "scheme": [
+    [
+     17,
+     0.758,
+     0.899
+    ],
+    [
+     18,
+     0.086,
+     0.198
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q13d",
+   "ref": "Q13(d)",
+   "topic": "2-2-2",
+   "extra": [
+    "2-2-3"
+   ],
+   "concept": "soil-terms-explained",
+   "stem": null,
+   "question": "Briefly explain each of the following in relation to the soil.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Field capacity: is the amount of soil moisture or water content held in soil after excess water has drained away",
+     "marks": 4,
+     "note": "Field capacity."
+    },
+    {
+     "type": "point",
+     "text": "Poaching: loss of soils by the damaging action of feet of livestock or machinery which can negatively affect availability of productive land and soil structure",
+     "marks": 4,
+     "note": "Poaching."
+    },
+    {
+     "type": "point",
+     "text": "Flocculation: process during which particles of a soil, dispersed in a solution contact and adhere each another, forming clusters, flocks, flakes, or clumps of a larger size.",
+     "marks": 4,
+     "note": "Flocculation."
+    },
+    {
+     "type": "point",
+     "text": "Microbiome: is a reversible process in which the cations are exchanged or interchanged between the solid and liquid phases or between the solid and solid phases when they come in close contact",
+     "marks": 4,
+     "note": "Microbiome. The scheme prints 4(4), one explanation for each term. See the source note: this printed answer describes cation exchange, not the soil microbiome."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     23,
+     0.09,
+     0.545
+    ]
+   ],
+   "scheme": [
+    [
+     18,
+     0.216,
+     0.477
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-soil-science"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q14ai",
+   "ref": "Q14(a)(i)",
+   "topic": "4-3-2",
+   "extra": [
+    "1-3"
+   ],
+   "concept": "fodder-requirement-calculation",
+   "stem": "Determining the fodder requirement is essential on all farms. Analyse the data in the table below and answer the questions which follow. [Table on the paper (Adapted from Teagasc, 2018), columns: Animal type; Number of stock over wintered (A); Number of months (including 4 – 6 week reserve) (B); Tonnes of pit silage required per month (C); Tonnes of silage required (A × B × C) = (D). Suckler cows 25, 5, 1.40, 175.0; 0 – 1 year old 5, 5, 0.70, 17.5; 1 – 2 year old 5, 5, 1.30, D; 2+ year old 1, 5, 1.30, 65.0; Ewes 56, 2, 0.15, 16.8; Total silage required (tonnes) E; Total bales required (tonnes E × 1.25) F.]",
+   "question": "Calculate the fodder required D, for a 1 – 2 year old animal.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "D = 5 x 5 x 1.3 = 32.5",
+     "marks": 6
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     24,
+     0.065,
+     0.451
+    ]
+   ],
+   "scheme": [
+    [
+     18,
+     0.477,
+     0.525
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-beef-cattle",
+    "agricultural-science-higher-grassland"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-grassland"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q14aii",
+   "ref": "Q14(a)(ii)",
+   "topic": "4-3-2",
+   "extra": [
+    "1-3"
+   ],
+   "concept": "total-silage-and-bales",
+   "stem": "Determining the fodder requirement is essential on all farms. Analyse the data in the table below and answer the questions which follow. [Table on the paper (Adapted from Teagasc, 2018), columns: Animal type; Number of stock over wintered (A); Number of months (including 4 – 6 week reserve) (B); Tonnes of pit silage required per month (C); Tonnes of silage required (A × B × C) = (D). Suckler cows 25, 5, 1.40, 175.0; 0 – 1 year old 5, 5, 0.70, 17.5; 1 – 2 year old 5, 5, 1.30, D; 2+ year old 1, 5, 1.30, 65.0; Ewes 56, 2, 0.15, 16.8; Total silage required (tonnes) E; Total bales required (tonnes E × 1.25) F.]",
+   "question": "Calculate the total tonnes of silage E and bales required F on the farm for the 2022/23 winter period.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "E: 175 + 17.5 + 32.5 + 65 + 16.8 = 306.8",
+      "175 + 17.5 + 32.5 + 6.5 = 248.3"
+     ],
+     "marks": [
+      6
+     ],
+     "note": "E, the total tonnes of silage. Either figure for the 2+ year olds (65 or 6.5) is accepted; see the source note."
+    },
+    {
+     "type": "menu",
+     "texts": [
+      "F: 306.8 X 1.25 = 383.5",
+      "248.3 X 1.25 = 310.38"
+     ],
+     "marks": [
+      6
+     ],
+     "note": "F, the bales required: E × 1.25. Marks are also awarded where your own correct E is used."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     24,
+     0.065,
+     0.428
+    ],
+    [
+     24,
+     0.563,
+     0.603
+    ]
+   ],
+   "scheme": [
+    [
+     18,
+     0.525,
+     0.638
+    ],
+    [
+     18,
+     0.835,
+     0.918
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-beef-cattle",
+    "agricultural-science-higher-grassland"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-grassland"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q14aiii",
+   "ref": "Q14(a)(iii)",
+   "topic": "4-3-2",
+   "extra": [],
+   "concept": "fodder-miscalculation-consequences",
+   "stem": "Determining the fodder requirement is essential on all farms. Analyse the data in the table below and answer the questions which follow. [Table on the paper (Adapted from Teagasc, 2018), columns: Animal type; Number of stock over wintered (A); Number of months (including 4 – 6 week reserve) (B); Tonnes of pit silage required per month (C); Tonnes of silage required (A × B × C) = (D). Suckler cows 25, 5, 1.40, 175.0; 0 – 1 year old 5, 5, 0.70, 17.5; 1 – 2 year old 5, 5, 1.30, D; 2+ year old 1, 5, 1.30, 65.0; Ewes 56, 2, 0.15, 16.8; Total silage required (tonnes) E; Total bales required (tonnes E × 1.25) F.]",
+   "question": "Outline the consequence of not calculating or miscalculating the fodder requirement.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Not enough silage made = have to supplement with expensive concentrates or sell stock",
+      "too much silage = will have been expensive to make",
+      "not enough feed for livestock"
+     ],
+     "marks": [
+      6
+     ]
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     24,
+     0.065,
+     0.428
+    ],
+    [
+     24,
+     0.708,
+     0.731
+    ]
+   ],
+   "scheme": [
+    [
+     18,
+     0.638,
+     0.747
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-beef-cattle",
+    "agricultural-science-higher-grassland"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-grassland"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q14aiv",
+   "ref": "Q14(a)(iv)",
+   "topic": "4-3-2",
+   "extra": [],
+   "concept": "ewe-silage-requirement",
+   "stem": "Determining the fodder requirement is essential on all farms. Analyse the data in the table below and answer the questions which follow. [Table on the paper (Adapted from Teagasc, 2018), columns: Animal type; Number of stock over wintered (A); Number of months (including 4 – 6 week reserve) (B); Tonnes of pit silage required per month (C); Tonnes of silage required (A × B × C) = (D). Suckler cows 25, 5, 1.40, 175.0; 0 – 1 year old 5, 5, 0.70, 17.5; 1 – 2 year old 5, 5, 1.30, D; 2+ year old 1, 5, 1.30, 65.0; Ewes 56, 2, 0.15, 16.8; Total silage required (tonnes) E; Total bales required (tonnes E × 1.25) F.]",
+   "question": "Explain why the ewes’ silage requirement is less than that of the cattle.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Ewes are smaller animals and have a smaller stomach so require less silage",
+     "marks": 6
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     24,
+     0.065,
+     0.428
+    ],
+    [
+     25,
+     0.065,
+     0.088
+    ]
+   ],
+   "scheme": [
+    [
+     18,
+     0.747,
+     0.822
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-sheep",
+    "agricultural-science-higher-beef-cattle"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-sheep"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q14av",
+   "ref": "Q14(a)(v)",
+   "topic": "4-3-1",
+   "extra": [],
+   "concept": "calf-per-cow-stock-numbers",
+   "stem": "Determining the fodder requirement is essential on all farms. Analyse the data in the table below and answer the questions which follow. [Table on the paper (Adapted from Teagasc, 2018), columns: Animal type; Number of stock over wintered (A); Number of months (including 4 – 6 week reserve) (B); Tonnes of pit silage required per month (C); Tonnes of silage required (A × B × C) = (D). Suckler cows 25, 5, 1.40, 175.0; 0 – 1 year old 5, 5, 0.70, 17.5; 1 – 2 year old 5, 5, 1.30, D; 2+ year old 1, 5, 1.30, 65.0; Ewes 56, 2, 0.15, 16.8; Total silage required (tonnes) E; Total bales required (tonnes E × 1.25) F.]",
+   "question": "There are 25 suckler cows on the farm and only 11 other animals. Based on the concept of a calf per cow per year, briefly explain a reason for the decrease in stock numbers.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Only some of the heifers born on the farm are kept as replacements",
+      "male calves are sold",
+      "calf mortality",
+      "cow fertility",
+      "calving difficulties"
+     ],
+     "marks": [
+      3
+     ]
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     24,
+     0.065,
+     0.428
+    ],
+    [
+     25,
+     0.216,
+     0.257
+    ]
+   ],
+   "scheme": [
+    [
+     19,
+     0.086,
+     0.2
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-beef-cattle"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-beef-cattle"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q14avi",
+   "ref": "Q14(a)(vi)",
+   "topic": "4-3-2",
+   "extra": [],
+   "concept": "filling-a-silage-deficit",
+   "stem": "Determining the fodder requirement is essential on all farms. Analyse the data in the table below and answer the questions which follow.",
+   "question": "Mia has calculated the silage requirement and the amount of silage produced on her farm and realised that there was a 10% deficit in silage stock. Advise Mia on her options to fill the silage gap in the winter ahead.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Let some of the stock our earlier to graze",
+      "increase concentrate feeding",
+      "feed some beet to supplement the silage",
+      "buy some silage bales"
+     ],
+     "marks": [
+      2
+     ]
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     24,
+     0.065,
+     0.13
+    ],
+    [
+     25,
+     0.385,
+     0.443
+    ]
+   ],
+   "scheme": [
+    [
+     19,
+     0.2,
+     0.347
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-beef-cattle",
+    "agricultural-science-higher-grassland"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-grassland"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q14bi",
+   "ref": "Q14(b)(i)",
+   "topic": "3-3-3",
+   "extra": [],
+   "concept": "baled-silage-advantages",
+   "stem": null,
+   "question": "Outline the advantages of making baled silage.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Good quality silage (75%+ DMD)",
+      "make opportunistic silage (excess grass in paddocks)",
+      "can cut smaller areas (paddocks)",
+      "can sell if not required",
+      "easier to transport distances"
+     ],
+     "marks": [
+      3,
+      3
+     ],
+     "note": "Two advantages, 2(3)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     25,
+     0.635,
+     0.658
+    ]
+   ],
+   "scheme": [
+    [
+     19,
+     0.347,
+     0.448
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-grassland"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-grassland"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q14bii",
+   "ref": "Q14(b)(ii)",
+   "topic": "3-1",
+   "extra": [
+    "3-3-3"
+   ],
+   "concept": "optimum-grass-stage-for-silage",
+   "stem": null,
+   "question": "Describe with the aid of a labelled diagram the stage of grass growth that is optimum for cutting for silage.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Vegetative stage",
+     "marks": 3,
+     "note": "The scheme describes it: flower head is enclosed in flag leaf sheath and not showing or only showing partly, beside its drawing of a leafy grass plant. It prints one award of 3 for this part and no separate diagram or label marks."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     26,
+     0.065,
+     0.106
+    ]
+   ],
+   "scheme": [
+    [
+     19,
+     0.448,
+     0.58
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-grassland"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-grassland"
+    ],
+    "r2"
+   ],
+   "figure": "agsci-2023-hl-deferred-scheme-grass-vegetative-stage"
+  },
+  {
+   "key": "q14c",
+   "ref": "Q14(c)",
+   "topic": "3-3-3",
+   "extra": [],
+   "concept": "improving-baled-silage-quality",
+   "stem": "Mia cut her 1st cut silage on the 23rd June 2022, early in the morning and baled it the same afternoon. When Mia opened the bales 4 weeks later to feed to her cows she noticed the quality was not good.",
+   "question": "Advise Mia on how she could have improved the quality of her silage.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Cut at vegetative stage (around 22nd May)",
+      "cut in afternoon when sugar is highest in the grass",
+      "all fertiliser has left the grass (6 weeks after spreading)",
+      "wilt grass for 24 hours",
+      "have grazed grass prior to closing in spring",
+      "add molasses"
+     ],
+     "marks": [
+      3,
+      3
+     ],
+     "note": "Two pieces of advice, 2(3)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     26,
+     0.466,
+     0.599
+    ]
+   ],
+   "scheme": [
+    [
+     19,
+     0.58,
+     0.728
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-grassland"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-grassland"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q15ai",
+   "ref": "Q15(a)(i)",
+   "topic": "3-2",
+   "extra": [],
+   "concept": "annual-vs-perennial",
+   "stem": null,
+   "question": "Distinguish between annual and perennial lifecycles and give an example of each.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Plant that completes its lifecycle in one year",
+     "marks": 3,
+     "note": "Annual."
+    },
+    {
+     "type": "menu",
+     "texts": [
+      "Plant that is persistent in all seasons of the year",
+      "plants that persist for several years"
+     ],
+     "marks": [
+      3
+     ],
+     "note": "Perennial."
+    },
+    {
+     "type": "menu",
+     "texts": [
+      "Barley",
+      "Wheat",
+      "Oats"
+     ],
+     "marks": [
+      3
+     ],
+     "note": "Example of an annual."
+    },
+    {
+     "type": "point",
+     "text": "Grass",
+     "marks": 3,
+     "note": "Example of a perennial. The scheme prints 2(3)+2(3)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     27,
+     0.065,
+     0.293
+    ]
+   ],
+   "scheme": [
+    [
+     20,
+     0.086,
+     0.238
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-crop-production",
+    "agricultural-science-higher-classification-of-animals-plants"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-classification-of-animals-plants"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q15aii",
+   "ref": "Q15(a)(ii)",
+   "topic": "3-3-1",
+   "extra": [],
+   "concept": "reseeding-seed-mixture",
+   "stem": "A farmer wanted advice on the type of grass seed mixture to put into her newly reseeded pasture.",
+   "question": "State the seed types used and justify why each variety was included in the mixture.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Perennial ryegrass – persistent growth of leafy digestible grass",
+     "marks": 4,
+     "note": "Seed type with its justification."
+    },
+    {
+     "type": "point",
+     "text": "Red or white clover – N fixation or increased protein",
+     "marks": 4,
+     "note": "Seed type with its justification. The scheme prints 2(4)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     27,
+     0.298,
+     0.385
+    ]
+   ],
+   "scheme": [
+    [
+     20,
+     0.238,
+     0.337
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-grassland"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-grassland"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q15aiii",
+   "ref": "Q15(a)(iii)",
+   "topic": "3-3-1",
+   "extra": [],
+   "concept": "irish-climate-for-food-crops",
+   "stem": null,
+   "question": "Describe how the Irish climate is suited to the production of food crops.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Ireland has a temperate climate and abundant rain water which is ideal for growth of crops in soil",
+      "warm soil temperatures, large amount of rainfall and sun"
+     ],
+     "marks": [
+      4,
+      4
+     ],
+     "note": "Two points, 2(4)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     28,
+     0.065,
+     0.088
+    ]
+   ],
+   "scheme": [
+    [
+     20,
+     0.337,
+     0.428
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-crop-production"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-crop-production"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q15b",
+   "ref": "Q15(b)",
+   "topic": "1-2",
+   "extra": [
+    "3-1"
+   ],
+   "concept": "weather-and-germination-investigation",
+   "stem": null,
+   "question": "Describe an investigation to show the effect of weather on percentage germination of an agricultural seed.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "2 areas of land marked out",
+      "using a quadrat (or 2 seed trays)",
+      "one area was watered well and the other didn’t get water",
+      "growth of grass was measured and results recorded",
+      "area not water had lower growth rates (drought)"
+     ],
+     "marks": [
+      4,
+      4,
+      4
+     ],
+     "note": "Three points, 3(4). The scheme’s example takes rainfall as the weather condition: \"Weather condition – e.g. rainfall (adapt depending on weather condition chosen – temperature)\"."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     28,
+     0.28,
+     0.321
+    ]
+   ],
+   "scheme": [
+    [
+     20,
+     0.428,
+     0.572
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-crop-production",
+    "agricultural-science-higher-scientific-practices-experiments-investigations"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-scientific-practices-experiments-investigations"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q15ci",
+   "ref": "Q15(c)(i)",
+   "topic": "3-1",
+   "extra": [],
+   "concept": "dna-technology-plant-selection",
+   "stem": "Read the article and answer the questions which follow. Measuring the value of plants with DNA Teagasc researchers are using DNA technologies to improve the efficiency of plant selection and the delivery of highly digestible varieties. Improving varieties in order to support pastoral-based production systems for milk and meat is critically important. (Adapted from Teagasc, 2022)",
+   "question": "Explain how technology is used to improve the efficiency of plant selection.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "New technologies (e.g. gene editing or CRISPR-Cas9) are improving plant breeding at a faster rate to allow for better plants in short space",
+      "identifying plants with specific desired traits to increase production"
+     ],
+     "marks": [
+      6
+     ]
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     29,
+     0.065,
+     0.26
+    ]
+   ],
+   "scheme": [
+    [
+     20,
+     0.572,
+     0.689
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-genetics",
+    "agricultural-science-higher-innovation-and-biotechnology-in-agriculture"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-innovation-and-biotechnology-in-agriculture"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q15cii",
+   "ref": "Q15(c)(ii)",
+   "topic": "3-3-1",
+   "extra": [],
+   "concept": "improved-pasture-varieties",
+   "stem": "Read the article and answer the questions which follow. Measuring the value of plants with DNA Teagasc researchers are using DNA technologies to improve the efficiency of plant selection and the delivery of highly digestible varieties. Improving varieties in order to support pastoral-based production systems for milk and meat is critically important. (Adapted from Teagasc, 2022)",
+   "question": "Outline the importance of improving varieties in a pasture-based system.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Increase animal production",
+      "allow for extended grazing",
+      "increase nitrogen fixation",
+      "increase digestibility of pasture"
+     ],
+     "marks": [
+      4
+     ]
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     29,
+     0.065,
+     0.236
+    ],
+    [
+     29,
+     0.392,
+     0.415
+    ]
+   ],
+   "scheme": [
+    [
+     20,
+     0.689,
+     0.77
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-grassland",
+    "agricultural-science-higher-genetics"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-grassland"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q16ai",
+   "ref": "Q16(a)(i)",
+   "topic": "1-1",
+   "extra": [],
+   "concept": "nutrient-flow-hypothesis",
+   "stem": "Nutrient flow off fields needs to be managed. Differences in soil type and bedrock, as well as farming practices and weather can all contribute to the overall affect. A student wanted to carry out an investigation to compare how differences in two soil types will affect the nutrient flow.",
+   "question": "State a hypothesis for this investigation.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Soil which contains a high percentage of sand will have a greater nutrient flow",
+     "marks": 2
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     30,
+     0.065,
+     0.26
+    ]
+   ],
+   "scheme": [
+    [
+     21,
+     0.086,
+     0.148
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science",
+    "agricultural-science-higher-scientific-practices-experiments-investigations"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-scientific-practices-experiments-investigations"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q16aii",
+   "ref": "Q16(a)(ii)",
+   "topic": "1-2",
+   "extra": [],
+   "concept": "nutrient-flow-variables",
+   "stem": "Nutrient flow off fields needs to be managed. Differences in soil type and bedrock, as well as farming practices and weather can all contribute to the overall affect. A student wanted to carry out an investigation to compare how differences in two soil types will affect the nutrient flow.",
+   "question": "Identify the independent and dependent variables in this investigation.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Soil type",
+      "amount of nutrients added",
+      "type of nutrients added"
+     ],
+     "marks": [
+      4
+     ],
+     "note": "Independent variable."
+    },
+    {
+     "type": "menu",
+     "texts": [
+      "quantity of nutrients leached",
+      "rate of nutrients leached"
+     ],
+     "marks": [
+      4
+     ],
+     "note": "Dependent variable."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     30,
+     0.065,
+     0.242
+    ],
+    [
+     30,
+     0.33,
+     0.472
+    ]
+   ],
+   "scheme": [
+    [
+     21,
+     0.148,
+     0.244
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science",
+    "agricultural-science-higher-scientific-practices-experiments-investigations"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-scientific-practices-experiments-investigations"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q16aiii",
+   "ref": "Q16(a)(iii)",
+   "topic": "1-2",
+   "extra": [
+    "2-2-2"
+   ],
+   "concept": "nutrient-flow-setup-diagram",
+   "stem": "Nutrient flow off fields needs to be managed. Differences in soil type and bedrock, as well as farming practices and weather can all contribute to the overall affect. A student wanted to carry out an investigation to compare how differences in two soil types will affect the nutrient flow.",
+   "question": "Describe using a labelled diagram the setup of the investigation.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Soil with higher sand content will have better drainage",
+     "marks": 0,
+     "note": "The scheme prints 5+2+2 for this part beside its drawing of the set-up: water poured onto soil in two funnels, A and B, each draining into a graduated cylinder, and this expected result. It does not say which award is which; compare the labelled diagram with the official scheme drawing.",
+     "criterion": true
+    }
+   ],
+   "manualTotal": 9,
+   "paper": [
+    [
+     30,
+     0.065,
+     0.242
+    ],
+    [
+     30,
+     0.485,
+     0.51
+    ]
+   ],
+   "scheme": [
+    [
+     21,
+     0.244,
+     0.506
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science",
+    "agricultural-science-higher-scientific-practices-experiments-investigations"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-scientific-practices-experiments-investigations",
+     "agricultural-science-higher-soil-science"
+    ],
+    "r2"
+   ],
+   "figure": "agsci-2023-hl-deferred-scheme-nutrient-flow-setup"
+  },
+  {
+   "key": "q16aiv",
+   "ref": "Q16(a)(iv)",
+   "topic": "1-2",
+   "extra": [
+    "2-2-2"
+   ],
+   "concept": "soil-texture-method",
+   "stem": "Nutrient flow off fields needs to be managed. Differences in soil type and bedrock, as well as farming practices and weather can all contribute to the overall affect. A student wanted to carry out an investigation to compare how differences in two soil types will affect the nutrient flow.",
+   "question": "Before carrying out any experimental work on the nutrient flow the student firstly determined the texture of the two soil samples. Name and describe a method the student could have used to determine soil texture.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "hand (feel)",
+      "dry soil sample and rub between fingers and thumb and note grittiness and smoothness",
+      "wet sample and rub between fingers and thumb and note grittiness, smoothness and plasticity and note if sample is sticky",
+      "check if it is possible to roll sample into threads or ring"
+     ],
+     "marks": [
+      4,
+      4,
+      4
+     ],
+     "note": "The named method and its description from one method, 3(4). The scheme prints 3(4) across the name and the description together and does not print a separate award for the name."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     30,
+     0.09,
+     0.242
+    ],
+    [
+     31,
+     0.063,
+     0.157
+    ]
+   ],
+   "scheme": [
+    [
+     21,
+     0.506,
+     0.89
+    ]
+   ],
+   "selection": null,
+   "variants": [
+    {
+     "id": "hand",
+     "label": "Hand (feel)",
+     "rows": [
+      {
+       "type": "menu",
+       "texts": [
+        "hand (feel)",
+        "dry soil sample and rub between fingers and thumb and note grittiness and smoothness",
+        "wet sample and rub between fingers and thumb and note grittiness, smoothness and plasticity and note if sample is sticky",
+        "check if it is possible to roll sample into threads or ring"
+       ],
+       "marks": [
+        4,
+        4,
+        4
+       ],
+       "note": "The named method and its description from one method, 3(4). The scheme prints 3(4) across the name and the description together and does not print a separate award for the name."
+      }
+     ]
+    },
+    {
+     "id": "sediment",
+     "label": "Sedimentation",
+     "rows": [
+      {
+       "type": "menu",
+       "texts": [
+        "sedimentation",
+        "add soil sample to water in a beaker and stir",
+        "pour mixture into graduated cylinder and rinse",
+        "completely cover the soil with water",
+        "stopper or cover the cylinder and shake to mix the soil",
+        "leave to settle for a few hours or overnight",
+        "observe layers that have settled",
+        "using the graduations on the cylinder record the amount of sand, silt and clay in the soil sample"
+       ],
+       "marks": [
+        4,
+        4,
+        4
+       ],
+       "note": "The named method and its description from one method, 3(4). The scheme prints 3(4) across the name and the description together and does not print a separate award for the name."
+      }
+     ]
+    },
+    {
+     "id": "sieve",
+     "label": "Sieve",
+     "rows": [
+      {
+       "type": "menu",
+       "texts": [
+        "sieve",
+        "dry soil samples",
+        "crush sample with pestle and mortar",
+        "get mass of soil sample",
+        "place sample in sieves with largest sieve on top and smallest on bottom and shake",
+        "add the contents of each sieve into pre-weighed weigh boats",
+        "using soil texture triangle classify soil sample"
+       ],
+       "marks": [
+        4,
+        4,
+        4
+       ],
+       "note": "The named method and its description from one method, 3(4). The scheme prints 3(4) across the name and the description together and does not print a separate award for the name."
+      }
+     ]
+    }
+   ],
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science",
+    "agricultural-science-higher-scientific-practices-experiments-investigations"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-scientific-practices-experiments-investigations",
+     "agricultural-science-higher-soil-science"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q16av",
+   "ref": "Q16(a)(v)",
+   "topic": "1-3",
+   "extra": [],
+   "concept": "soil-texture-method-errors",
+   "stem": "Nutrient flow off fields needs to be managed. Differences in soil type and bedrock, as well as farming practices and weather can all contribute to the overall affect. A student wanted to carry out an investigation to compare how differences in two soil types will affect the nutrient flow.",
+   "question": "List one error that could have occurred when the student was carrying out this investigation.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Soil not dry enough in sieve method",
+      "electronic balance not calibrated",
+      "not reading from meniscus on graduated cylinder in sedimentation method",
+      "not rolling into a ball in feel method"
+     ],
+     "marks": [
+      6
+     ]
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     30,
+     0.09,
+     0.242
+    ],
+    [
+     31,
+     0.745,
+     0.771
+    ]
+   ],
+   "scheme": [
+    [
+     22,
+     0.086,
+     0.184
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science",
+    "agricultural-science-higher-scientific-practices-experiments-investigations"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-scientific-practices-experiments-investigations"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q16bi",
+   "ref": "Q16(b)(i)",
+   "topic": "2-2-2",
+   "extra": [
+    "1-3"
+   ],
+   "concept": "soil-triangle-classification",
+   "stem": "The student calculated the % sand, silt and clay in the two soil samples. Using their results from the table and the soil triangle determine the soil types of the two soil samples, A and B. [Table on the paper — Soil component: Soil A, Soil B. Sand 32%, 25%; Silt 48%, 33%; Clay 20%, 42%.]",
+   "question": "State the soil types of A and B.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "A = Loam",
+     "marks": 3
+    },
+    {
+     "type": "point",
+     "text": "B = Clay",
+     "marks": 3
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     32,
+     0.065,
+     0.722
+    ]
+   ],
+   "scheme": [
+    [
+     22,
+     0.184,
+     0.25
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-soil-science"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q16bii",
+   "ref": "Q16(b)(ii)",
+   "topic": "2-2-2",
+   "extra": [
+    "1-3"
+   ],
+   "concept": "least-nutrient-flow-prediction",
+   "stem": "The student calculated the % sand, silt and clay in the two soil samples. Using their results from the table and the soil triangle determine the soil types of the two soil samples, A and B. [Table on the paper — Soil component: Soil A, Soil B. Sand 32%, 25%; Silt 48%, 33%; Clay 20%, 42%.]",
+   "question": "Predict with reason which of the soils A or B would have the least nutrient flow.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Prediction: B",
+     "marks": 3
+    },
+    {
+     "type": "point",
+     "text": "Reason: Less drainage in clay soil",
+     "marks": 3
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     32,
+     0.065,
+     0.226
+    ],
+    [
+     32,
+     0.72,
+     0.744
+    ]
+   ],
+   "scheme": [
+    [
+     22,
+     0.25,
+     0.332
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-soil-science"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q17ai",
+   "ref": "Q17(a)(i)",
+   "topic": "4-1",
+   "extra": [],
+   "concept": "young-ruminant-stomach-labels",
+   "stem": "Calf rearing is very technical to achieve the best performance from each animal at this critical stage of development.",
+   "question": "Label the diagram of the young ruminant stomach.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "A = Abomasum",
+     "marks": 2
+    },
+    {
+     "type": "point",
+     "text": "B = Rumen",
+     "marks": 2
+    },
+    {
+     "type": "point",
+     "text": "C = Oesophagus",
+     "marks": 2,
+     "note": "The scheme prints 3(2)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     33,
+     0.065,
+     0.315
+    ]
+   ],
+   "scheme": [
+    [
+     22,
+     0.332,
+     0.415
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-dairy-cattle",
+    "agricultural-science-higher-animal-physiology-digestive-system"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-animal-physiology-digestive-system"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q17aii",
+   "ref": "Q17(a)(ii)",
+   "topic": "4-3-2",
+   "extra": [],
+   "concept": "milk-replacer-pros-cons",
+   "stem": "Calf rearing is very technical to achieve the best performance from each animal at this critical stage of development.",
+   "question": "The diagram shows the digestion of milk replacers in the calf’s digestive system. Outline the advantages and disadvantages of feeding milk replacer to calves.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Consistency of product (when mixed correctly)",
+      "stored easily",
+      "can be fortified",
+      "no disease transfer (e.g. Johnes disease)",
+      "balanced product",
+      "Expensive",
+      "increase labour",
+      "storage"
+     ],
+     "marks": [
+      5,
+      5,
+      1,
+      1
+     ],
+     "note": "Advantages and disadvantages: the first five options are the scheme’s advantages and the last three its disadvantages. The scheme prints 2(5)+2(1): the first two correct points earn 5 marks each and the next two 1 each."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     33,
+     0.09,
+     0.13
+    ],
+    [
+     33,
+     0.321,
+     0.685
+    ]
+   ],
+   "scheme": [
+    [
+     22,
+     0.415,
+     0.557
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-dairy-cattle"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-dairy-cattle"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q17b",
+   "ref": "Q17(b)",
+   "topic": "4-3-1",
+   "extra": [],
+   "concept": "pig-circular-economy",
+   "stem": "The diagram shows a nutrient recovery cycle (circular economy) in pig production to increase the efficient use of resources. A circular economy involves using the resources available to produce aspects of the production system.",
+   "question": "Outline how each element of the ‘Circular Economy’ cycle links to the other elements.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Pigs produce manure which is high in nutrients (stored in tanks) which is spread on the land",
+      "provides nutrients for crops to grow",
+      "produce feed (cereals) for the pigs to feed off"
+     ],
+     "marks": [
+      4,
+      4,
+      4
+     ],
+     "note": "Three links, 3(4). The cycle on the paper runs Pig production, Pig manure, Tillage and Grassland, Cereals, Pig feed."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     34,
+     0.065,
+     0.755
+    ],
+    [
+     35,
+     0.065,
+     0.088
+    ]
+   ],
+   "scheme": [
+    [
+     22,
+     0.557,
+     0.655
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-pigs",
+    "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-pigs"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q17ci",
+   "ref": "Q17(c)(i)",
+   "topic": "4-3-1",
+   "extra": [
+    "1-3"
+   ],
+   "concept": "biggest-calf-to-beef-cost",
+   "stem": "The graph shows the comparison of the production costs for dairy calf to beef production systems in 2021 and an estimate for 2022. Analyse the graph and answer the questions which follow. (Adapted from Teagasc, 2022)",
+   "question": "Identify the biggest cost of production.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Purchased feed",
+     "marks": 6
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     36,
+     0.065,
+     0.486
+    ]
+   ],
+   "scheme": [
+    [
+     22,
+     0.655,
+     0.704
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-beef-cattle",
+    "agricultural-science-higher-dairy-cattle"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-beef-cattle"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q17cii",
+   "ref": "Q17(c)(ii)",
+   "topic": "4-3-1",
+   "extra": [
+    "1-3"
+   ],
+   "concept": "total-production-costs-by-year",
+   "stem": "The graph shows the comparison of the production costs for dairy calf to beef production systems in 2021 and an estimate for 2022. Analyse the graph and answer the questions which follow. (Adapted from Teagasc, 2022)",
+   "question": "Determine which year had the highest overall production costs.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "2022 – 0.25 + 0.95 + 0.4 + 0.1 + 0.16 + 0.12 + 0.55 = 2.53 2021 – 0.25 + 0.62 + 0.16 + 0.09 + 0.13 + 0.11 + 0.5 = 1.86",
+     "marks": 4,
+     "note": "Calculation (€/kg liveweight), both years."
+    },
+    {
+     "type": "point",
+     "text": "Year: 2022",
+     "marks": 4,
+     "note": "Year."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     36,
+     0.065,
+     0.468
+    ],
+    [
+     36,
+     0.52,
+     0.543
+    ]
+   ],
+   "scheme": [
+    [
+     22,
+     0.704,
+     0.804
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-beef-cattle",
+    "agricultural-science-higher-dairy-cattle"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-beef-cattle"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q17ciii",
+   "ref": "Q17(c)(iii)",
+   "topic": "4-3-1",
+   "extra": [],
+   "concept": "reducing-calf-to-beef-costs",
+   "stem": "The graph shows the comparison of the production costs for dairy calf to beef production systems in 2021 and an estimate for 2022. Analyse the graph and answer the questions which follow. (Adapted from Teagasc, 2022)",
+   "question": "Outline ways farmers can reduce their cost of production.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Grow their won cereal (animal feed)",
+      "grow own protein source (beans)",
+      "reduce amount of purchased feed or feed whole milk rather than milk replacer",
+      "reseed paddocks to reduce fertiliser requirement"
+     ],
+     "marks": [
+      3,
+      3
+     ],
+     "note": "Two ways, 2(3)."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     36,
+     0.065,
+     0.468
+    ],
+    [
+     36,
+     0.696,
+     0.719
+    ]
+   ],
+   "scheme": [
+    [
+     22,
+     0.804,
+     0.898
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-beef-cattle",
+    "agricultural-science-higher-dairy-cattle"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-beef-cattle"
+    ],
+    "r3"
+   ]
+  },
+  {
+   "key": "q18ai",
+   "ref": "Q18(a)(i)",
+   "topic": "4-3-1",
+   "extra": [
+    "1-3"
+   ],
+   "concept": "acres-payment-calculation",
+   "stem": "Tom purchased new permanent pasture land. To achieve maximum profit, he decided that as it needed improvement he would seek support through the Agri-Climate Rural Environment Scheme (ACRES). [Table on the paper — Action: Minimum, Maximum, Payment Rate/Year. New hedges: 10m, 750m, €5.29/m. Trees: 10, 300, €6.21/tree. Grass margin (2m) – cut after September 1st or grazed in September: 10m, 2500m, €1.00/m. Ryegrass seed set as winter bird food: 10m, 2500m, €1.37/m. 1. Grass margins needed to get to tier 1 (minimum 500m of 2m margin at €1.00/m = €500). 2. If watercourses present – replace some grass margin with riparian margins. Action on Tom’s farm — Finance received: Planted 500m new hedges, consisting of 250 trees — Calculation; Grazed 750m in September — €750; Reseeded 200m using ryegrass seed — Calculation; Total — Calculation.]",
+   "question": "Calculate how much financial support Tom received through his ACRES application when he fulfilled the following criteria.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "€4197.50",
+     "marks": 6,
+     "note": "Planted 500m new hedges, consisting of 250 trees. The scheme works 500 x 5.29 = 2645 and 250 x 6.21 = 1552.50 for €4197.50; see the source note."
+    },
+    {
+     "type": "point",
+     "text": "200 x 1.37 = €274",
+     "marks": 6,
+     "note": "Reseeded 200m using ryegrass seed."
+    },
+    {
+     "type": "point",
+     "text": "€5221.50",
+     "marks": 6,
+     "note": "Total, with the €750 printed for grazing 750m in September; see the source note."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     37,
+     0.065,
+     0.82
+    ]
+   ],
+   "scheme": [
+    [
+     23,
+     0.086,
+     0.413
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q18aii",
+   "ref": "Q18(a)(ii)",
+   "topic": "2-3",
+   "extra": [],
+   "concept": "riparian-margins",
+   "stem": "Tom purchased new permanent pasture land. To achieve maximum profit, he decided that as it needed improvement he would seek support through the Agri-Climate Rural Environment Scheme (ACRES). [The table note on the paper: 2. If watercourses present – replace some grass margin with riparian margins]",
+   "question": "Explain riparian margins and outline one function on farms.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "the land that runs alongside our rivers and streams",
+     "marks": 5,
+     "note": "Explanation."
+    },
+    {
+     "type": "menu",
+     "texts": [
+      "increase biodiversity",
+      "prevent leaching of nutrients into the river"
+     ],
+     "marks": [
+      1
+     ],
+     "note": "Function, 5+1."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     37,
+     0.09,
+     0.432
+    ],
+    [
+     38,
+     0.065,
+     0.088
+    ]
+   ],
+   "scheme": [
+    [
+     23,
+     0.413,
+     0.504
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q18b",
+   "ref": "Q18(b)",
+   "topic": "2-2-3",
+   "extra": [],
+   "concept": "carbon-cycle-diagram",
+   "stem": null,
+   "question": "Describe the Carbon cycle using a labelled diagram.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Point for correct cycle shown",
+     "marks": 4,
+     "note": "Correct cycle shown, 4 marks."
+    },
+    {
+     "type": "menu",
+     "texts": [
+      "CO2",
+      "photosynthesis",
+      "respiration",
+      "combustion or decomposition"
+     ],
+     "marks": [
+      4,
+      4,
+      4
+     ],
+     "note": "Three other points for showing these, 4 marks each (the scheme prints 3(4)+4). *Max 12 marks awarded if not shown on diagram."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     38,
+     0.248,
+     0.322
+    ]
+   ],
+   "scheme": [
+    [
+     23,
+     0.504,
+     0.62
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q18ci",
+   "ref": "Q18(c)(i)",
+   "topic": "2-2-1",
+   "extra": [],
+   "concept": "how-lime-raises-ph",
+   "stem": "Liming is a practice commonly carried out to raise the pH of soil.",
+   "question": "Explain how applying lime to land raises the pH of the soil.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Adds Ca and Mg to soil",
+      "reduces the Al or Mn ions in the soil"
+     ],
+     "marks": [
+      4
+     ]
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     39,
+     0.065,
+     0.113
+    ]
+   ],
+   "scheme": [
+    [
+     23,
+     0.62,
+     0.668
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-soil-science"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q18cii",
+   "ref": "Q18(c)(ii)",
+   "topic": "2-2-3",
+   "extra": [],
+   "concept": "liming-and-earthworms",
+   "stem": "Liming is a practice commonly carried out to raise the pH of soil.",
+   "question": "Explain how liming affects earthworm activity in a soil.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Liming increases the pH of the soil which favours the earthworms",
+      "earthworms like a pH 6 – 7",
+      "closer the soil is to neutral the higher the number of earthworms."
+     ],
+     "marks": [
+      6
+     ]
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     39,
+     0.065,
+     0.088
+    ],
+    [
+     39,
+     0.275,
+     0.298
+    ]
+   ],
+   "scheme": [
+    [
+     23,
+     0.668,
+     0.751
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-soil-science"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-soil-science"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q18di",
+   "ref": "Q18(d)(i)",
+   "topic": "3-3-2",
+   "extra": [],
+   "concept": "named-crop-pest",
+   "stem": null,
+   "question": "State one pest of a named crop you have studied.",
+   "rows": [
+    {
+     "type": "point",
+     "text": "Aphid",
+     "marks": 4,
+     "note": "The crop is the student’s own choice; the scheme prints aphid as the pest."
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     39,
+     0.421,
+     0.518
+    ]
+   ],
+   "scheme": [
+    [
+     23,
+     0.768,
+     0.816
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-crop-production"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-crop-production"
+    ],
+    "r2"
+   ]
+  },
+  {
+   "key": "q18dii",
+   "ref": "Q18(d)(ii)",
+   "topic": "3-3-2",
+   "extra": [],
+   "concept": "indirect-pest-control",
+   "stem": null,
+   "question": "Describe how pests may be controlled indirectly in crop production while conserving the environment.",
+   "rows": [
+    {
+     "type": "menu",
+     "texts": [
+      "Addition of ladybirds to crop",
+      "biological control",
+      "crop rotation to prevent the build-up of pests in the crop"
+     ],
+     "marks": [
+      6
+     ]
+    }
+   ],
+   "manualTotal": null,
+   "paper": [
+    [
+     39,
+     0.526,
+     0.567
+    ]
+   ],
+   "scheme": [
+    [
+     23,
+     0.816,
+     0.898
+    ]
+   ],
+   "selection": null,
+   "variants": null,
+   "examTopicIds": [
+    "agricultural-science-higher-crop-production"
+   ],
+   "filing": [
+    [
+     "agricultural-science-higher-crop-production"
+    ],
+    "r2"
+   ]
+  }
+ ]
+}

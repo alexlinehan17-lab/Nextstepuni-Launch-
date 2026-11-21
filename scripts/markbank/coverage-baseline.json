@@ -1,33 +1,33 @@
 {
   "accounting": {
-    "cards": 1365,
-    "contentHash": "73aeb259f03084cb",
+    "cards": 1442,
+    "contentHash": "d70537129a79e4be",
     "coveragePct": 100.0,
-    "covered": 1365,
+    "covered": 1442,
     "excluded": 0,
-    "leaves": 1365,
+    "leaves": 1442,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 68,
-      "hash": "88fb291dee0789bc"
+      "count": 70,
+      "hash": "f9c1ecaba88ac4bb"
     },
-    "refsHash": "8606f8982dc6e154"
+    "refsHash": "0c04e43bb9cfd03e"
   },
   "agricultural-science": {
-    "cards": 2464,
-    "contentHash": "a56c69312551bb35",
+    "cards": 2549,
+    "contentHash": "66a41fdf30ffe221",
     "coveragePct": 100.0,
-    "covered": 2842,
+    "covered": 2927,
     "excluded": 0,
-    "leaves": 2842,
+    "leaves": 2927,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 34,
-      "hash": "cc3b10d8b4ed8ab5"
+      "count": 35,
+      "hash": "335f5f45b325d2ff"
     },
-    "refsHash": "e0d39c458d72982a"
+    "refsHash": "fa2d8993a6e34b69"
   },
   "ancient-greek": {
     "cards": 404,
@@ -45,22 +45,22 @@
     "refsHash": "d07829765aae8bf1"
   },
   "applied-maths": {
-    "cards": 1486,
-    "contentHash": "f015af7cba454cda",
+    "cards": 1581,
+    "contentHash": "d3c7ff2a4968e275",
     "coveragePct": 100.0,
-    "covered": 1486,
+    "covered": 1581,
     "excluded": 0,
-    "leaves": 1486,
-    "nativeSchemes": 65,
+    "leaves": 1581,
+    "nativeSchemes": 67,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 66,
-      "hash": "445d863125e8baac"
+      "count": 68,
+      "hash": "81f3d2910d664a53"
     },
-    "refsHash": "32b700ecc5e47388",
-    "sourceEditions": 66,
-    "sourceTaskLinks": 2972
+    "refsHash": "f4b6a5384ad5a542",
+    "sourceEditions": 68,
+    "sourceTaskLinks": 3067
   },
   "arabic": {
     "cards": 250,
@@ -78,19 +78,19 @@
     "refsHash": "7a1ca0dfb9d8a129"
   },
   "art": {
-    "cards": 1756,
-    "contentHash": "836c645d0f080984",
+    "cards": 1870,
+    "contentHash": "b30e7ba88394ccf3",
     "coveragePct": 100.0,
-    "covered": 1756,
+    "covered": 1870,
     "excluded": 0,
-    "leaves": 1756,
+    "leaves": 1870,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 50,
       "hash": "fc024eb5d16de25b"
     },
-    "refsHash": "4fef6e53e28af5ba"
+    "refsHash": "b007105ce9224395"
   },
   "biology": {
     "cards": 6597,
@@ -138,19 +138,19 @@
     "refsHash": "fe3ddea26ba3fb3e"
   },
   "chemistry": {
-    "cards": 3369,
-    "contentHash": "1373456627274212",
+    "cards": 3655,
+    "contentHash": "4568d7443ae4904f",
     "coveragePct": 100.0,
-    "covered": 3496,
+    "covered": 3800,
     "excluded": 0,
-    "leaves": 3496,
+    "leaves": 3800,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 34,
-      "hash": "a5df30dd2d14a50b"
+      "count": 37,
+      "hash": "710ad36fcd6a648b"
     },
-    "refsHash": "69f459852daa8c02"
+    "refsHash": "d5b9f16a1e1b4af7"
   },
   "classical-studies": {
     "cards": 516,
@@ -183,19 +183,19 @@
     "refsHash": "6dcc84c8a1d24027"
   },
   "construction-studies": {
-    "cards": 1261,
-    "contentHash": "c95372f8985a6f0a",
+    "cards": 1310,
+    "contentHash": "6fa9158d5820fad3",
     "coveragePct": 100.0,
-    "covered": 845,
+    "covered": 874,
     "excluded": 0,
-    "leaves": 845,
+    "leaves": 874,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 63,
       "hash": "7a382fe186c759ea"
     },
-    "refsHash": "7ac2f5d4293ded21"
+    "refsHash": "90d2a0c7ad8fc3fb"
   },
   "croatian": {
     "cards": 151,
@@ -349,7 +349,7 @@
   },
   "french": {
     "cards": 2286,
-    "contentHash": "a35d4dadbeb7c3bb",
+    "contentHash": "b97f0df69723b1e5",
     "coveragePct": 95.9,
     "covered": 2012,
     "excluded": 0,
@@ -618,19 +618,19 @@
     "refsHash": "b7b0eca0a10423ac"
   },
   "physical-education": {
-    "cards": 772,
-    "contentHash": "751f4b855c8fbccc",
+    "cards": 886,
+    "contentHash": "c61c0316e4d0ab86",
     "coveragePct": 100.0,
-    "covered": 741,
+    "covered": 855,
     "excluded": 0,
-    "leaves": 741,
+    "leaves": 855,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 13,
-      "hash": "0dbddd431bb256fe"
+      "count": 15,
+      "hash": "296ce30111fc798f"
     },
-    "refsHash": "95be090e951fe8e2"
+    "refsHash": "bb3949ece4f585e6"
   },
   "physics": {
     "cards": 4059,

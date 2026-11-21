@@ -137,7 +137,9 @@ def shipped_cards(subject):
     """
     if subject == 'accounting':
         cards = json.load(open(os.path.join(DECKS, subject, 'authored.json'), encoding='utf-8'))['cards']
-        return [(c['id'], f"{c['year']} {'HL' if c['level'] == 'higher' else 'OL'} Q{c['taskKey']}") for c in cards]
+        # As factory.ts writes it: a deferred sitting's task says so (" — Deferred sitting").
+        return [(c['id'], f"{c['year']} {'HL' if c['level'] == 'higher' else 'OL'} Q{c['taskKey']}"
+                 + (' — Deferred sitting' if c.get('sitting') == 'deferred' else '')) for c in cards]
     if subject == 'physical-education':
         # Same manifest as the runtime level modules; old identities are also
         # pinned independently by the generator and preservation regression.
@@ -323,8 +325,9 @@ def reconcile_manifest(subject, census):
         wanted = expected.get(cid)
         # A deferred Irish card says so twice, as Economics', Engineering's and History's do: its id
         # ("irish-2023-hl-deferred-…") and its citation ("… — Deferred sitting"). The two must agree.
-        # English's deferred cards say so the same two ways ("english-2025-hl-deferred-p1-…").
-        if subject in ('irish', 'english') and \
+        # English's deferred cards say so the same two ways ("english-2025-hl-deferred-p1-…"), and Art's
+        # ("art-2022-hl-deferred-q1-task1").
+        if subject in ('irish', 'english', 'art') and \
                 bool(re.match(rf'^{subject}-\d{{4}}-(?:hl|ol)-deferred-', cid)) != (' — Deferred sitting' in ref):
             orphans.append({'id': cid, 'ref': ref, 'why': 'deferred id and "— Deferred sitting" citation disagree'})
             continue
@@ -767,10 +770,12 @@ def reconcile_subject(subject, census=None):
             if hist_deferred:
                 ref['paper'] = 'Deferred'
         if subject in ('economics', 'engineering', 'dcg', 'spanish', 'german', 'biology', 'physics', 'home-economics',
-                       'business', 'french'):
+                       'business', 'french', 'chemistry', 'agricultural-science', 'construction-studies',
+                       'physical-education'):
             # A deferred sitting is its own census paper, 'Deferred', and its
             # card says so twice: the id ("econ-2022-hl-deferred-...",
-            # "eng-2022-hl-deferred-...", "dcg-2022-hl-deferred-...", "bio-2022-hl-deferred-...") and the
+            # "eng-2022-hl-deferred-...", "dcg-2022-hl-deferred-...", "bio-2022-hl-deferred-...",
+            # "chem-2022-hl-deferred-...") and the
             # citation ("... — Deferred sitting"). The two must agree. The
             # same rule as Physics and Home Economics on codex/home-economics-
             # continuation-20261101.
@@ -783,7 +788,11 @@ def reconcile_subject(subject, census=None):
                                       'physics': r'^phys-\d{4}-(?:hl|ol)-deferred-',
                                       'home-economics': r'^he-\d{4}-(?:hl|ol)-deferred-',
                                       'business': r'^bus-\d{4}-(?:hl|ol)-deferred-',
-                                      'french': r'^fr-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
+                                      'french': r'^fr-\d{4}-(?:hl|ol)-deferred-',
+                                      'chemistry': r'^chem-\d{4}-(?:hl|ol)-deferred-',
+                                      'agricultural-science': r'^agsci-\d{4}-(?:hl|ol)-deferred-',
+                                      'construction-studies': r'^cons-\d{4}-(?:hl|ol)-deferred-',
+                                      'physical-education': r'^pe-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
             if deferred != (' — Deferred sitting' in refstr):
                 unparsed.append({'id': cid, 'ref': refstr})
                 continue

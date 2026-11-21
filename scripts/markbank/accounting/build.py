@@ -47,6 +47,71 @@ def read(path):
     return json.loads(path.read_text())
 
 
+# The SEC's deferred sittings (2022, 2023 Higher): a reviewed manifest marked "sitting": "deferred" reads the
+# deferred paper and scheme (deferredexams/, deferredmarkingschemes/, filed under June's id) and ships as its own
+# edition, "LC032ALP000EV-deferred.pdf", as Paper Trail indexes it: card ids acc-<year>-hl-deferred-q<task>, its own
+# answer sidecar and scheme text, its own Atlas rows. It has no earlier sidecar to preserve.
+# The deferred sittings carded so far, each entered into the inventory (and so into reconcile.py's corpus) when its
+# reviewed manifest lands: one commit per sitting.
+CARDED_DEFERRED_YEARS = (2022, 2023)
+
+
+def is_deferred(review):
+    return review.get('sitting') == 'deferred'
+
+
+def edition_fileid(review):
+    return review['fileid'].replace('.pdf', '-deferred.pdf') if is_deferred(review) else review['fileid']
+
+
+def source_paths(review):
+    """The review's paper and scheme in the corpus."""
+    papers, schemes = (('deferredexams', 'deferredmarkingschemes') if is_deferred(review)
+                       else ('exampapers', 'markingschemes'))
+    year, fileid = str(review['year']), review['fileid']
+    return (ROOT / 'paper-trail-corpus' / papers / year / fileid,
+            ROOT / 'paper-trail-corpus' / schemes / year / fileid)
+
+
+def deferred_question_anchors(pd, review_tasks):
+    """A deferred paper's printed questions 1-9 as answer-map anchors: the page and height of its printed "N." (the first
+    on the paper, at the left margin), running to the page foot, with the scheme pages its reviewed tasks cite as the crop."""
+    import re as _re
+    marks = {}
+    for index, page in enumerate(pd):
+        height = page.rect.height
+        for block in page.get_text('dict')['blocks']:
+            for line in block.get('lines', []):
+                text = ''.join(span['text'] for span in line['spans']).strip()
+                found = _re.match(r'^(\d)\.', text)
+                if found and line['bbox'][0] < 100 and found[1] not in marks:
+                    marks[found[1]] = (index + 1, round(line['bbox'][1] / height, 4))
+    anchors = []
+    for n in map(str, range(1, 10)):
+        assert n in marks, f'printed question {n} not found'
+        pages = sorted({region['p'] for t in review_tasks if str(t['questionNumber']) == n for region in t['schemeRegions']})
+        anchors.append(dict(conf=0.5, mode='crop', n=n, pP=marks[n][0], pY=[marks[n][1], 1.0],
+                            region=[dict(p=p, r=[0, 0, 1, 1]) for p in pages]))
+    assert [a['pP'] for a in anchors] == sorted(a['pP'] for a in anchors), 'printed questions out of page order'
+    return anchors
+
+
+def flag_deferred_answers(year, fileid):
+    """The Paper Trail index item of a reviewed deferred edition carries "answers": 1, as June's reviewed editions do
+    (build-index.py flags June's from their sidecars; a deferred edition's reviewed map is hosted in
+    public/paper-answers and listed through accounting-task-runtime.json's reviewedPapers). Idempotent."""
+    path = ROOT / 'paperTrailData.ts'
+    index = path.read_text()
+    item = re.compile(r'(\{"year": %d, "level": "higher", "lang": "ev", "sitting": "deferred", "papers": \[\{"label": '
+                      r'"Deferred · Exam Paper", "doc": \{"f": "%s", "b": \d+\}, "sitting": "deferred", "scheme": '
+                      r'\{"f": "%s", "b": \d+\})(, "answers": 1)?(\}\]\})' % (year, re.escape(fileid), re.escape(fileid)))
+    hits = item.findall(index)
+    assert len(hits) == 1, f'{year} {fileid}: {len(hits)} deferred index items'
+    flagged = item.sub(r'\1, "answers": 1\3', index)
+    if flagged != index:
+        path.write_text(flagged)
+
+
 def write(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n')
@@ -76,6 +141,19 @@ def inventory():
                             schemeSha256=sha(scheme) if scheme.exists() else None,
                             sidecarQuestions=[q['n'] for q in read(sidecar)['q']] if sidecar.exists() else [],
                             reviewStatus='pending'))
+    # The deferred sittings' English papers, each its own edition ("LC032ALP000EV-deferred.pdf"); their Irish editions
+    # are outside the reviewed scope, as every subject's deferred Irish papers are.
+    for paper in sorted((ROOT / 'paper-trail-corpus/deferredexams').glob('*/LC032*EV.pdf')):
+        year = int(paper.parent.name)
+        if year not in CARDED_DEFERRED_YEARS:
+            continue
+        scheme = ROOT / 'paper-trail-corpus/deferredmarkingschemes' / str(year) / paper.name
+        records.append(dict(year=year, fileid=paper.name.replace('.pdf', '-deferred.pdf'), sitting='deferred',
+                            level='higher' if paper.name[5] == 'A' else 'ordinary', lang='ev',
+                            paperPages=len(fitz.open(paper)), paperSha256=sha(paper),
+                            schemePages=len(fitz.open(scheme)) if scheme.exists() else None,
+                            schemeSha256=sha(scheme) if scheme.exists() else None,
+                            sidecarQuestions=[], reviewStatus='pending'))
     write(HERE / 'inventory.json', dict(subjectId='accounting', complete=False, papers=records))
     print(f'Inventoried {len(records)} paper editions. This is NOT a completeness audit.')
 
@@ -186,9 +264,9 @@ def build(finalize=False):
     cards, mapping_rows, reviewed_papers = [], [], []
     for path in sorted((HERE / 'reviewed').glob('*.json')):
         review = read(path)
-        year, level, fileid = review['year'], review['level'], review['fileid']
-        paper = ROOT / 'paper-trail-corpus/exampapers' / str(year) / fileid
-        scheme = ROOT / 'paper-trail-corpus/markingschemes' / str(year) / fileid
+        year, level = review['year'], review['level']
+        fileid = edition_fileid(review)
+        paper, scheme = source_paths(review)
         assert sha(paper) == review['paperSha256'], f'{path}: paper changed'
         assert sha(scheme) == review['schemeSha256'], f'{path}: scheme changed'
         pd, sd = fitz.open(paper), fitz.open(scheme)
@@ -202,8 +280,15 @@ def build(finalize=False):
         classified_keys = {d['taskKey'] for d in review['selectionReview']
                            if d['classification'] == 'finite-pool-one-card'}
         assert pooled_keys == classified_keys, f'{path}: unclassified or orphaned finite pool'
-        sidecar_path = ROOT / 'scripts/paper-trail/answers' / str(year) / (fileid + '.json')
-        sidecar = read(sidecar_path)
+        if is_deferred(review):
+            # A deferred edition has no audited answer map to preserve. Its sidecar is built here: each printed
+            # question an anchor, as June's maps hold them (its printed number "N." on the paper, its scheme pages as
+            # the crop), and its reviewed tasks after them, rooted in those anchors.
+            sidecar = dict(band=[1, len(sd)], component='', copyright='© State Examinations Commission',
+                           paperFileid=fileid, schemeFileid=fileid, v=1, q=deferred_question_anchors(pd, review['tasks']))
+        else:
+            sidecar_path = ROOT / 'scripts/paper-trail/answers' / str(year) / (fileid + '.json')
+            sidecar = read(sidecar_path)
         # Preserve original identities and anchors. Corrections are additive.
         for q in sidecar['q']:
             correction = review.get('legacyCorrections', {}).get(q['n'])
@@ -227,7 +312,8 @@ def build(finalize=False):
             pages = task['paperPages']
             assert pages == sorted(set(pages)) and all(1 <= p <= len(pd) for p in pages)
             assert task['boundaryReason'] and task['allocationEvidence']
-            ident = f'acc-{year}-{"hl" if level == "higher" else "ol"}-q{task["key"]}'
+            ident = (f'acc-{year}-{"hl" if level == "higher" else "ol"}-{"deferred-" if is_deferred(review) else ""}'
+                     f'q{task["key"]}')
             prompt = '\n'.join(fragment['text'] for fragment in task['promptFragments'])
             card = dict(id=ident, year=year, level=level, paperFileid=fileid,
                         questionNumber=task['questionNumber'], taskKey=task['key'],
@@ -235,7 +321,11 @@ def build(finalize=False):
                         topicId=task['topicId'], examTopicIds=task['examTopicIds'],
                         paperPages=pages, schemeRegions=solution_regions,
                         taskFocus=task.get('focus'), allocationNote=task['allocationEvidence'],
-                        reviewedAt=review['reviewedAt'])
+                        reviewedAt=review['reviewedAt'],
+                        **({'sitting': 'deferred'} if is_deferred(review) else {}),
+                        # A task the deferred scheme sets out no solution for (its page-2 note: finalised only for the
+                        # questions candidates attempted): the card says so (factory.ts unprintedAnswer), never a row.
+                        **({'schemeOmitsTask': True} if task.get('schemeOmitsTask') else {}))
             cards.append(card)
             mapping_rows.append(dict(level=level, year=year, fileid=fileid,
                                      n=task['key'], topicIds=task['examTopicIds']))
@@ -253,11 +343,16 @@ def build(finalize=False):
         sidecar['maxCropPages'] = max(
             [len(t['paperPages']) for t in tasks]
             + [len(q.get('paperRegion', [])) for q in sidecar['q']]
+            # A deferred edition's printed questions run from their own page to the next one's (deferred_question_anchors).
+            + ([b['pP'] - a['pP'] + 1 for a, b in zip(sidecar['q'][:9], sidecar['q'][1:9])] if is_deferred(review) else [])
         )
         write(ROOT / 'public/paper-answers' / str(year) / (fileid + '.json'), sidecar)
         reviewed_papers.append(f'accounting|{year}|{fileid}')
+        if is_deferred(review):
+            flag_deferred_answers(year, fileid)
         # Local provenance text for the existing whole-deck guards.
-        scheme_md = ROOT / 'examiner-reports/accounting/schemes' / f'{year}-{"hl" if level == "higher" else "ol"}.md'
+        scheme_md = (ROOT / 'examiner-reports/accounting/schemes'
+                     / f'{year}-{"hl" if level == "higher" else "ol"}{"-deferred" if is_deferred(review) else ""}.md')
         scheme_md.parent.mkdir(parents=True, exist_ok=True)
         scheme_md.write_text('\n'.join(f'\n## PDF page {p.number+1}\n'+p.get_text() for p in sd))
     assert len({c['id'] for c in cards}) == len(cards)

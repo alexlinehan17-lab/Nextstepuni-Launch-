@@ -134,6 +134,24 @@ const ADMITTED_DEFERRED = new Set([
   // French: the written paper of each deferred sitting (2022 and 2023, both levels). The listening booklets
   // join when their listening is carded, which waits on the deferred recordings.
   ...[2022, 2023].flatMap(year => ['ALP000', 'GLP000'].map(booklet => `french|${year}|LC010${booklet}BV-deferred.pdf`)),
+  // Chemistry: the paper of each carded deferred sitting (2022 Higher, 2022 Ordinary, 2023 Higher; one booklet).
+  'chemistry|2022|LC022ALP000EV-deferred.pdf', 'chemistry|2022|LC022GLP000EV-deferred.pdf',
+  'chemistry|2023|LC022ALP000EV-deferred.pdf',
+  // Art: the written paper of each carded deferred sitting (2022 Higher, 2023 Higher and Ordinary).
+  'art|2022|LC014ALP000EV-deferred.pdf', 'art|2023|LC014ALP000EV-deferred.pdf', 'art|2023|LC014GLP000EV-deferred.pdf',
+  // Accounting: the English paper of each carded deferred sitting (2022 Higher).
+  'accounting|2022|LC032ALP000EV-deferred.pdf',
+  'accounting|2023|LC032ALP000EV-deferred.pdf',
+  // Agricultural Science: the paper of its one deferred sitting (2023 Higher).
+  'agricultural-science|2023|LC024ALP000EV-deferred.pdf',
+  // Applied Mathematics: the paper of each carded deferred sitting (2022 and 2023 Higher).
+  'applied-mathematics|2022|LC020ALP000EV-deferred.pdf',
+  'applied-mathematics|2023|LC020ALP000EV-deferred.pdf',
+  // Construction Studies: the paper of its one deferred sitting (2022 Higher).
+  'construction-studies|2022|LC029ALP000EV-deferred.pdf',
+  // Physical Education: the papers of its two deferred sittings (2022 and 2023 Higher).
+  'physical-education|2022|LC225ALP000EV-deferred.pdf',
+  'physical-education|2023|LC225ALP000EV-deferred.pdf',
   // Music: the Composing and Listening booklets of each carded Higher deferred sitting (2022; 2023 English and
   // Irish). The Listening booklet is carded for Q5 Part B; its other questions wait on the deferred recordings.
   ...MUSIC_DEFERRED_PAPERS.map(paper => `music|${paper}`),

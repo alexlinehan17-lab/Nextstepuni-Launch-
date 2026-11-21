@@ -240,7 +240,8 @@ describe('Mark Bank paper-coverage ratchet', () => {
     const bad = deckCards(subject)
       .filter(({ id, ref }) => {
         if (subject === 'japanese' && isJapaneseUnnumberedRef(id, ref)) return false;
-        if (subject === 'accounting') return !/^\d{4} (?:HL|OL) Q[1-9][A-Z]?(?:\([a-z0-9]+\))*(?:-[a-z0-9()-]+)?$/.test(ref);
+        // A deferred sitting's task (accounting/build.py) cites the same grammar and says so: "… — Deferred sitting".
+        if (subject === 'accounting') return !/^\d{4} (?:HL|OL) Q[1-9][A-Z]?(?:\([a-z0-9]+\))*(?:-[a-z0-9()-]+)?(?: — Deferred sitting)?$/.test(ref);
         if (subject === 'english') {
           // Legacy 2021-2025 cards bundle linked parts; reviewed published
           // papers are atomic, so a part label may follow the question and a

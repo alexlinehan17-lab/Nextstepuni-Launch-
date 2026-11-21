@@ -34,7 +34,10 @@ RESIDUE='scripts/markbank/authored/applied-maths-steps-residue.json'
 BR=re.compile(r'^\((\d{1,2})\)$'); BARE=re.compile(r'^(\d{1,2})$')
 docs={}
 def doc(year,fid):
-    if (year,fid) not in docs: docs[(year,fid)]=fitz.open(f'paper-trail-corpus/markingschemes/{year}/{fid}')
+    # A deferred sitting's edition ("LC020ALP000EV-deferred.pdf") reads the deferred scheme, filed under June's id.
+    path=(f"paper-trail-corpus/deferredmarkingschemes/{year}/{fid.replace('-deferred.pdf','.pdf')}" if fid.endswith('-deferred.pdf')
+          else f'paper-trail-corpus/markingschemes/{year}/{fid}')
+    if (year,fid) not in docs: docs[(year,fid)]=fitz.open(path)
     return docs[(year,fid)]
 def marks_in(card):
     """The marks printed in and just under the card's solution region, in reading order. "5,5" or "5, 5" on one line

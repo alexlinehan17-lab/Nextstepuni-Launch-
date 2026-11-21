@@ -44,12 +44,18 @@ def normal(text: str) -> str:
     return ' '.join(text.split())
 
 
+# The sitting the readers open: '' for June's papers and schemes; '-deferred' for the SEC's deferred sitting, its
+# paper and scheme linked beside June's as <year>-<lvl>-deferred-paper.pdf and schemes/<year>-<lvl>-deferred.pdf
+# (art_cards.use_sitting sets it).
+SITTING = ''
+
+
 def scheme_path(year: int, level: str) -> str:
-    return os.path.join(SCHEME_ROOT, f'{year}-{LEVEL_SHORT[level]}.pdf')
+    return os.path.join(SCHEME_ROOT, f'{year}-{LEVEL_SHORT[level]}{SITTING}.pdf')
 
 
 def paper_path(year: int, level: str) -> str:
-    return os.path.join(PAPER_ROOT, f'{year}-{LEVEL_SHORT[level]}-paper.pdf')
+    return os.path.join(PAPER_ROOT, f'{year}-{LEVEL_SHORT[level]}{SITTING}-paper.pdf')
 
 
 @lru_cache(maxsize=None)

@@ -28,12 +28,17 @@ import pe_review_2025_hl as review2025hl
 import pe_review_2025_ol as review2025ol
 import pe_review_2026_hl as review2026hl
 import pe_review_2026_ol as review2026ol
+import pe_review_2022_hl_deferred as review2022hld
+import pe_review_2023_hl_deferred as review2023hld
 
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / 'components/MarkBank/cards/physical-education/reviewed.json'
 AUDIT = ROOT / 'scripts/markbank/authored/physical-education-reviewed-audit.json'
 ATLAS = ROOT / 'data/paperTrail/physicalEducationTasks.json'
-REVIEWS = [(2020, 'hl', review2020), (2021, 'hl', review2021hl), (2021, 'ol', review2021ol), (2022, 'hl', review2022hl), (2022, 'ol', review2022ol), (2023, 'hl', review2023hl), (2023, 'ol', review2023ol), (2024, 'hl', review2024hl), (2024, 'ol', review2024ol), (2025, 'hl', review2025hl), (2025, 'ol', review2025ol), (2026, 'hl', review2026hl), (2026, 'ol', review2026ol)]
+REVIEWS = [(2020, 'hl', review2020), (2021, 'hl', review2021hl), (2021, 'ol', review2021ol), (2022, 'hl', review2022hl), (2022, 'ol', review2022ol), (2023, 'hl', review2023hl), (2023, 'ol', review2023ol), (2024, 'hl', review2024hl), (2024, 'ol', review2024ol), (2025, 'hl', review2025hl), (2025, 'ol', review2025ol), (2026, 'hl', review2026hl), (2026, 'ol', review2026ol),
+           # The SEC's deferred sittings (each review module sets SITTING = 'deferred'): an edition of their own,
+           # "LC225ALP000EV-deferred.pdf", after June's; nothing below changes for a June sitting.
+           (2022, 'hl', review2022hld), (2023, 'hl', review2023hld)]
 
 
 def ref(part):
@@ -66,7 +71,8 @@ def build():
         'node', '--input-type=module', '-e',
         'import {paperIndex} from "./scripts/markbank/paperIndex.mjs"; console.log(JSON.stringify(paperIndex["physical-education"]))',
     ], cwd=ROOT))
-    # Reviewed window only: June sittings (the deferred sitting reuses year and level).
+    # Reviewed window only: June sittings, and the deferred sittings that have a review module.
+    deferred_entries = [e for e in entries if e.get('sitting') == 'deferred' and e['lang'] == 'ev']
     entries = [e for e in entries if not e.get('sitting') and e['year'] >= 2010]
     cards, papers, atlas = [], [], []
     crosswalk = json.loads((ROOT / 'data/examTopics/physical-education-curriculum-crosswalk.json').read_text())
@@ -74,12 +80,16 @@ def build():
     previous = {card['id']:card for card in legacy}
     for year, short, review in REVIEWS:
         level = 'higher' if short == 'hl' else 'ordinary'
-        entry, = [e for e in entries if e['year'] == year and e['level'] == level and e['lang'] == 'ev']
+        deferred = getattr(review, 'SITTING', 'main') == 'deferred'
+        d = '-deferred' if deferred else ''
+        entry, = [e for e in (deferred_entries if deferred else entries) if e['year'] == year and e['level'] == level and e['lang'] == 'ev']
         item, = entry['papers']
         fileid, schemeid = item['doc']['f'], item['scheme']['f']
-        paper_path = ROOT / f'examiner-reports/physical-education/papers/{year}-{short}-paper.pdf'
-        scheme_path = ROOT / f'examiner-reports/physical-education/schemes/{year}-{short}.pdf'
-        anchor_map = json.loads((ROOT / f'scripts/paper-trail/answers/{year}/{fileid}.json').read_text())
+        paper_path = ROOT / f'examiner-reports/physical-education/papers/{year}-{short}{d}-paper.pdf'
+        scheme_path = ROOT / f'examiner-reports/physical-education/schemes/{year}-{short}{d}.pdf'
+        # A deferred edition's anchors are its hosted paper-only map (public/paper-anchors/).
+        anchor_map = json.loads((ROOT / (f'public/paper-anchors/{year}/{fileid}.json' if deferred
+                                         else f'scripts/paper-trail/answers/{year}/{fileid}.json')).read_text())
         parent_anchors = {q['n'] for q in anchor_map['q']}
         totals = collections.Counter()
         paper_cards = []
@@ -145,11 +155,11 @@ def build():
                     else:
                         # The scheme's own structure: a holistic grid, or fixed role slots.
                         assert choice.get('holistic') or len(criteria) > choice['choose'], (year,short,part)
-            ident = getattr(review,'CARD_ID_OVERRIDES',{}).get(part,f'pe-{year}-{short}-q{part}')
-            question_ref = f'{year} {short.upper()} {part_ref}'
+            ident = getattr(review,'CARD_ID_OVERRIDES',{}).get(part,f'pe-{year}-{short}{d}-q{part}')
+            question_ref = f'{year} {short.upper()} {part_ref}' + (' — Deferred sitting' if deferred else '')
             question_text = prompt
             source = dict(kind='exam-material', label=f'{part_ref} · original paper',
-                          title=f'{year} Physical Education · {short.upper()} · {part_ref}',
+                          title=f'{year} Physical Education · {short.upper()}{" deferred" if deferred else ""} · {part_ref}',
                           pages=paper_pages, attribution=f'© State Examinations Commission. Third-party sources are acknowledged on paper page {review.ACKNOWLEDGEMENT_PAGE}.',
                           presentationNote='The original examination pages, including all printed text, figures and tables.')
             scheme = dict(kind='marking-scheme', label=f'{part_ref} · published marking guide',
@@ -166,9 +176,9 @@ def build():
                         section='A' if number<review.CASE_STUDY_QUESTION else 'B' if number==review.CASE_STUDY_QUESTION else 'C',
                         questionRef=question_ref, questionText=question_text, totalMarks=total,
                         sourceMaterial=source, stem=review.CONTEXT.get(part,''),
-                        schemeCitation=f'SEC Physical Education {year} {short.upper()}, {part_ref}, PDF pages '+', '.join(map(str,scheme_pages))+' — © State Examinations Commission.',
+                        schemeCitation=f'SEC Physical Education {year} {short.upper()}{", deferred examination" if deferred else ""}, {part_ref}, PDF pages '+', '.join(map(str,scheme_pages))+' — © State Examinations Commission.',
                         specVersion='physical-education:outgoing',
-                        qa=dict(gates=['visual-paper-sweep','visual-scheme-allocation','printed-choice-review','source-pages','canonical-topic'],humanReviewedBy='agent-visual-review',humanReviewedAt='2026-10-07'),
+                        qa=dict(gates=['visual-paper-sweep','visual-scheme-allocation','printed-choice-review','source-pages','canonical-topic'],humanReviewedBy='agent-visual-review',humanReviewedAt='2026-11-20' if deferred else '2026-10-07'),
                         rubric=dict(system='physical-education',taskRequirements=requirements,criteria=criteria,
                                     schemeMaterial=scheme,
                                     markingGuideNote='Apply the allocation to the complete response. The SEC’s suggestions and examples are not exhaustive; other valid answers may earn credit.'))
@@ -203,16 +213,17 @@ def build():
                                     paperPages=paper_pages,schemePages=scheme_pages,
                                     choice=dict(choose=choice['choose'],pool=choice['pool'],instruction=choice.get('instruction')) if choice else None))
         assert dict(totals) == review.EXPECTED_QUESTION_TOTALS, (totals,review.EXPECTED_QUESTION_TOTALS)
-        previous_ids = {c['id'] for c in legacy if c['year']==year and c['level']==level}
+        previous_ids = {c['id'] for c in legacy if c['year']==year and c['level']==level} if not deferred else set()
         generated_ids = {c['cardId'] for c in paper_cards}
         assert previous_ids <= generated_ids, previous_ids-generated_ids
-        papers.append(dict(year=year,level=level,lang='ev',paperFileid=fileid,schemeFileid=schemeid,
+        papers.append(dict(year=year,level=level,lang='ev',**({'sitting':'deferred'} if deferred else {}),paperFileid=fileid,schemeFileid=schemeid,
                            paperSha256=digest(paper_path),schemeSha256=digest(scheme_path),
                            reviewedPaperPages=list(range(1,review.PAPER_PAGE_COUNT+1)),reviewedSchemePages=list(range(1,review.SCHEME_PAGE_COUNT+1)),
                            taskCount=len(review.TASKS),cardCount=len(paper_cards),questionTotals=dict(totals),
                            retainedLegacyIds=sorted(previous_ids),idCorrections=getattr(review,'ID_CORRECTIONS',[]),selectionScan=selection_scan,poolScan=pool_scan,selectionReview=review.SELECTION_REVIEW,cards=paper_cards))
     corpus = {(e['year'], e['level']) for e in entries if e['lang'] == 'ev'}
-    assert {(p['year'], p['level']) for p in papers} == corpus, 'unreviewed corpus sitting'
+    assert {(p['year'], p['level']) for p in papers if not p.get('sitting')} == corpus, 'unreviewed corpus sitting'
+    assert {(p['year'], p['level']) for p in papers if p.get('sitting')} <= {(e['year'], e['level']) for e in deferred_entries}
     assert set(previous) <= {c['id'] for c in cards}, 'lost legacy identity'
     assert len(cards) == len({c['id'] for c in cards})
     for c in cards:

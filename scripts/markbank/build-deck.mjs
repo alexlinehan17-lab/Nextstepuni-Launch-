@@ -981,7 +981,11 @@ const DEFERRED_ID = {
   physics: /^phys-\d{4}-(?:hl|ol)-deferred-/,
   'home-economics': /^he-\d{4}-(?:hl|ol)-deferred-/,
   maths: /^maths-\d{4}-(?:hl|ol|fl)-deferred-/,
+  chemistry: /^chem-\d{4}-(?:hl|ol)-deferred-/,
+  art: /^art-\d{4}-(?:hl|ol)-deferred-/,
   music: /^mus-\d{4}-(?:hl|ol)-deferred-/,
+  'agricultural-science': /^agsci-\d{4}-(?:hl|ol)-deferred-/,
+  'construction-studies': /^cons-\d{4}-(?:hl|ol)-deferred-/,
 };
 const deferredCard = (subjectId, card) =>
   Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));

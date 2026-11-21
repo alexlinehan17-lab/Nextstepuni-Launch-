@@ -35,9 +35,16 @@ const WRITTEN_COMPONENTS = new Set(['000', '013']);
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const reference = readJson(REFERENCE_PATH);
 const curriculumCrosswalk = readJson(CURRICULUM_CROSSWALK_PATH);
-const sourcePapers = readJson(TAGS_PATH);
+// A carded deferred sitting's paper ("LC014ALP000EV-deferred.pdf") and its cards ("sitting": "deferred") are its own
+// questions: written by art_deferred.py, mapped below by file id (deferredQuestionMappings), never June's.
+const isDeferredPaper = paper => paper.fileid.endsWith('-deferred.pdf');
+const allSourcePapers = readJson(TAGS_PATH);
+const sourcePapers = allSourcePapers.filter(paper => !isDeferredPaper(paper));
+const deferredSourcePapers = allSourcePapers.filter(isDeferredPaper);
 const preservationBaseline = readJson(BASELINE_PATH);
-const authored = readJson(AUTHORED_PATH);
+const authoredAll = readJson(AUTHORED_PATH);
+const authored = { ...authoredAll, cards: authoredAll.cards.filter(card => card.sitting !== 'deferred') };
+const deferredCards = authoredAll.cards.filter(card => card.sitting === 'deferred');
 
 const allTopics = LEVELS.flatMap(level => reference.variants[level].topics);
 const topicIndex = new Map(allTopics.map((topic, index) => [topic.id, index]));
@@ -189,12 +196,18 @@ const EnglishWrittenPaper = (level, year) => {
   return candidates[0] ?? null;
 };
 
-const blockedReason = parsed => {
+const blockedReason = (parsed, level) => {
   if (parsed.year < 2010) {
     return 'The entitled local SEC Art corpus currently begins at 2010. This factual heading is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied.';
   }
   if (parsed.sitting === 'sample') {
     return 'The entitled Paper Trail corpus does not currently carry this sample booklet as a selectable paper. The factual heading is retained pending independent verification from an official source; no StudyClix-hosted question image or PDF is copied.';
+  }
+  if (parsed.sitting === 'deferred'
+    && deferredSourcePapers.some(paper => paper.year === parsed.year && paper.level === level)) {
+    // The deferred booklet is carded (art_deferred.py): its questions are mapped from their cards' reviewed topics by
+    // file id (deferredQuestionMappings below), never from these headings.
+    return 'The deferred-sitting booklet is carded as its own paper; its questions are mapped from their cards\' reviewed topics (deferredQuestionMappings), not from this heading. The factual heading is retained as a reference; no StudyClix-hosted question image or PDF is copied.';
   }
   if (parsed.sitting === 'deferred') {
     return 'The entitled Paper Trail corpus does not currently carry this deferred-sitting booklet. The factual heading is retained pending independent verification from an official source; no StudyClix-hosted question image or PDF is copied.';
@@ -458,7 +471,7 @@ for (const level of LEVELS) {
   for (const topic of reference.variants[level].topics) {
     for (const heading of topic.officialQuestionHeadings) {
       const parsed = parseHeading(heading);
-      const explicitBlock = blockedReason(parsed);
+      const explicitBlock = blockedReason(parsed, level);
       const paper = explicitBlock ? null : EnglishWrittenPaper(level, parsed.year);
       const localQuestion = paper?.q.find(question => question.n === parsed.questionNumber);
       if (explicitBlock || !paper || !localQuestion) {
@@ -995,6 +1008,28 @@ const evidence = {
   reviewedOptionTopics: reviewedOptionTopics.map(({ key, ...item }) => item),
   reviewedSpecificTopics,
 };
+// Each deferred question: the exam topics of its level whose curriculum nodes take the topics its cards are filed
+// under (art_cards.py, reviewed), keyed by the deferred paper's own file id.
+const deferredQuestionMappings = [];
+for (const paper of deferredSourcePapers) {
+  for (const question of paper.q) {
+    const nodes = new Set(deferredCards
+      .filter(card => card.year === paper.year && card.level === paper.level
+        && `${card.paperFileid}.pdf` === paper.fileid
+        && card.questionRef.match(/\bQ(\d+)/)?.[1] === question.n)
+      .map(card => card.topicId));
+    const indexes = allTopics
+      .map((topic, index) => ({ topic, index }))
+      .filter(({ topic }) => topicLevel.get(topic.id) === paper.level
+        && curriculumCrosswalk[topic.id].some(node => nodes.has(node)))
+      .map(({ index }) => index);
+    if (!nodes.size || !indexes.length) {
+      throw new Error(`${paper.year} ${paper.level} deferred Q${question.n}: no exam topic for its cards' topics`);
+    }
+    deferredQuestionMappings.push([paper.level === 'higher' ? 'h' : 'o', paper.year - 2000, paper.fileid,
+      question.n, indexes]);
+  }
+}
 const runtime = {
   v: 1,
   subjectId: SUBJECT_ID,
@@ -1004,12 +1039,13 @@ const runtime = {
   topics: runtimeTopics,
   partReferences,
   questionMappings,
+  ...(deferredQuestionMappings.length ? { deferredQuestionMappings } : {}),
   summary,
 };
 
 // Keep the established one-space generated formatting so the source diff is
 // limited to the sixteen genuinely new paper variants.
-fs.writeFileSync(TAGS_PATH, `${JSON.stringify(localPapers, null, 1)}\n`);
+fs.writeFileSync(TAGS_PATH, `${JSON.stringify([...localPapers, ...deferredSourcePapers], null, 1)}\n`);
 fs.writeFileSync(OUTPUT_PATH, `${JSON.stringify(evidence, null, 2)}\n`);
 fs.writeFileSync(RUNTIME_PATH, `${JSON.stringify(runtime)}\n`);
 console.log(JSON.stringify(summary, null, 2));

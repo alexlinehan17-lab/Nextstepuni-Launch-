@@ -41,7 +41,9 @@ def reconcile():
         tag = 'HL' if paper['level']=='higher' else 'OL'
         prefix = f'{paper["year"]} {tag} '
         expected = {ref:task['marksPerResponse'] for task in paper['baseTasks'] for ref in task['routes']}
-        actual = {ref for _,ref in shipped if ref.startswith(prefix)}
+        # A deferred sitting's cards ("… — Deferred sitting") belong to its own census paper, never June's.
+        deferred = paper.get('sitting') == 'deferred'
+        actual = {ref for _,ref in shipped if ref.startswith(prefix) and ref.endswith(' — Deferred sitting') == deferred}
         if paper['lang']=='iv':
             shipped_by_id = dict(shipped)
             actual = {shipped_by_id.get(join['cardId'],'unknown:'+join['cardId'])
@@ -87,7 +89,8 @@ def reconcile():
                 translated_checked += 1
         papers.append({'year':paper['year'],'level':paper['level'],'lang':paper['lang'],'expectedRoutes':len(expected),
                        'shippedRoutes':len(actual),'missing':sorted(expected.keys()-actual),
-                       'unmatched':sorted(actual-expected.keys())})
+                       'unmatched':sorted(actual-expected.keys()),
+                       **({'sitting':'deferred'} if deferred else {})})
     pending = [p for p in census['editionStatus'] if p['independentCensus']=='open']
     return {'status':'in-progress' if issues or pending else 'complete',
             'shippedCardCount':len(shipped),'reviewedRoutesChecked':checked,'independentlyReviewedTranslatedRoutes':translated_checked,

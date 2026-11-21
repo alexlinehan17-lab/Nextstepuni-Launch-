@@ -23,15 +23,15 @@
     "referenceOfficialAssociations": 1396,
     "referenceMockAssociations": 940,
     "referenceProviderSampleAssociations": 0,
-    "matchedAssociations": 1031,
-    "sourceBlockedAssociations": 365,
+    "matchedAssociations": 1080,
+    "sourceBlockedAssociations": 316,
     "sourceBlockedBreakdown": {
       "beforeLocalCorpus": 225,
-      "deferredSittings": 49,
+      "deferredSittings": 0,
       "officialSamplePapers": 91
     },
-    "matchedLogicalCards": 302,
-    "matchedQuestionTopicLinks": 1019,
+    "matchedLogicalCards": 312,
+    "matchedQuestionTopicLinks": 1061,
     "retainedLocalLogicalCards": 21,
     "localPaperVariants": 68,
     "localPhysicalMappings": 646,
@@ -39,7 +39,7 @@
     "newlyAddedPaperVariants": 5,
     "newlyAddedPhysicalMappings": 48,
     "verifiedSchemeMaps": 64,
-    "verifiedPaperOnlyMaps": 4,
+    "verifiedPaperOnlyMaps": 5,
     "preservedBaselineVariants": 63,
     "preservedBaselineCards": 598,
     "emptyReferenceTopics": [
@@ -603,8 +603,15 @@
       "tail": "",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "construction-studies-higher-condensation-air-tightness",
@@ -618,8 +625,15 @@
       "tail": " - Part B",
       "n": "7",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "7"
+      }
     },
     {
       "topicId": "construction-studies-higher-condensation-air-tightness",
@@ -1169,8 +1183,15 @@
       "tail": " - Part A",
       "n": "7",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "7"
+      }
     },
     {
       "topicId": "construction-studies-higher-doors",
@@ -1464,8 +1485,15 @@
       "tail": " - Part B",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "construction-studies-higher-fireplaces-fire-prevention",
@@ -1531,8 +1559,15 @@
       "tail": " - Part B",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "construction-studies-higher-floors",
@@ -1870,8 +1905,15 @@
       "tail": " - Part A",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "construction-studies-higher-heat-u-value-calculations",
@@ -2275,8 +2317,15 @@
       "tail": " - Part B, C",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "construction-studies-higher-heat-loss-insulation",
@@ -2569,8 +2618,15 @@
       "tail": " - Part C",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "construction-studies-higher-hot-water-space-heating",
@@ -2959,8 +3015,15 @@
       "tail": " - Option 1",
       "n": "10",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "10"
+      }
     },
     {
       "topicId": "construction-studies-higher-passive-design",
@@ -3459,8 +3522,15 @@
       "tail": "",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "construction-studies-higher-planning-sustainability-environment",
@@ -3474,8 +3544,15 @@
       "tail": " - Option 2",
       "n": "10",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "10"
+      }
     },
     {
       "topicId": "construction-studies-higher-planning-sustainability-environment",
@@ -4246,8 +4323,15 @@
       "tail": " - Part A",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "construction-studies-higher-question-1-drawing-questions",
@@ -4607,8 +4691,15 @@
       "tail": "",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "construction-studies-higher-roofs",
@@ -4938,8 +5029,15 @@
       "tail": "",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "construction-studies-higher-services-water-gas-electricity",
@@ -5100,8 +5198,15 @@
       "tail": "",
       "n": "2",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "2"
+      }
     },
     {
       "topicId": "construction-studies-higher-site-safety",
@@ -5608,8 +5713,15 @@
       "tail": "",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "construction-studies-higher-sustainability-the-environment",
@@ -5969,8 +6081,15 @@
       "tail": "",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "construction-studies-higher-walls",
@@ -6242,8 +6361,15 @@
       "tail": " - Part A",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "construction-studies-higher-windows-light",
@@ -6500,8 +6626,15 @@
       "tail": " - Part B",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "construction-studies-higher-wood-rot-ventilation",
@@ -11026,8 +11159,15 @@
       "tail": "",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-design-principles-of-a-domestic-dwelling-for-the-built-environment",
@@ -11984,8 +12124,15 @@
       "tail": "",
       "n": "2",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "2"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-personal-safety-and-safety-on-a-construction-site",
@@ -13144,8 +13291,15 @@
       "tail": "",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-construction-principles-for-a-domestic-dwelling",
@@ -13159,8 +13313,15 @@
       "tail": " - Part A",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-construction-principles-for-a-domestic-dwelling",
@@ -13174,8 +13335,15 @@
       "tail": " - Part B",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-construction-principles-for-a-domestic-dwelling",
@@ -13189,8 +13357,15 @@
       "tail": " - Part B",
       "n": "7",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "7"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-construction-principles-for-a-domestic-dwelling",
@@ -14803,8 +14978,15 @@
       "tail": "",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-design-for-health-wellness-and-comfort",
@@ -15112,8 +15294,15 @@
       "tail": "",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-ecological-building-design",
@@ -15127,8 +15316,15 @@
       "tail": "",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-ecological-building-design",
@@ -15142,8 +15338,15 @@
       "tail": " - Option 1",
       "n": "10",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "10"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-ecological-building-design",
@@ -15157,8 +15360,15 @@
       "tail": " - Option 2",
       "n": "10",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "10"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-ecological-building-design",
@@ -16571,8 +16781,15 @@
       "tail": "",
       "n": "3",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "3"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-passive-design",
@@ -16586,8 +16803,15 @@
       "tail": "",
       "n": "6",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "6"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-passive-design",
@@ -16601,8 +16825,15 @@
       "tail": " - Option 1",
       "n": "10",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "10"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-passive-design",
@@ -17388,8 +17619,15 @@
       "tail": "",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-substructure",
@@ -17403,8 +17641,15 @@
       "tail": "",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-substructure",
@@ -18112,8 +18357,15 @@
       "tail": "",
       "n": "8",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "8"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-superstructure",
@@ -18127,8 +18379,15 @@
       "tail": "",
       "n": "9",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "9"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-superstructure",
@@ -18142,8 +18401,15 @@
       "tail": " - Part A",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-superstructure",
@@ -18157,8 +18423,15 @@
       "tail": " - Part B",
       "n": "1",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "1"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-superstructure",
@@ -18172,8 +18445,15 @@
       "tail": " - Part A",
       "n": "7",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "7"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-superstructure",
@@ -18187,8 +18467,15 @@
       "tail": " - Option 1",
       "n": "10",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "10"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-superstructure",
@@ -20273,8 +20560,15 @@
       "tail": "",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-energy-sources-and-space-heating-systems-in-domestic-houses",
@@ -20288,8 +20582,15 @@
       "tail": " - Part B",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-energy-sources-and-space-heating-systems-in-domestic-houses",
@@ -20303,8 +20604,15 @@
       "tail": " - Part C",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-energy-sources-and-space-heating-systems-in-domestic-houses",
@@ -20847,8 +21155,15 @@
       "tail": " - Part B",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-heat-energy-and-scientific-calculations-in-dwellings",
@@ -20862,8 +21177,15 @@
       "tail": " - Part A",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-heat-energy-and-scientific-calculations-in-dwellings",
@@ -20877,8 +21199,15 @@
       "tail": " - Part B, C",
       "n": "5",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "5"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-heat-energy-and-scientific-calculations-in-dwellings",
@@ -21952,8 +22281,15 @@
       "tail": "",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-water-supply-in-a-domestic-dwelling",
@@ -21967,8 +22303,15 @@
       "tail": " - Part C",
       "n": "4",
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "reason": "The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC029ALP000EV-deferred.pdf",
+        "questionNumber": "4"
+      }
     },
     {
       "topicId": "construction-studies-higher-new-course-water-supply-in-a-domestic-dwelling",

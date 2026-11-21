@@ -8,6 +8,8 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import atlas from '../data/examTopics/agricultural-science-question-runtime.json';
 import { examTopicIdsForQuestion } from '../data/examTopics/registry';
+// The SEC's deferred sitting (agricultural_science_2023_hl_deferred.py) is its own edition: its cards say so.
+const isDeferredRef = (ref: string) => ref.endsWith(' — Deferred sitting');
 import { siblingsFor } from '../components/PaperTrail/topics';
 import { preferredAnswersUrl } from '../components/PaperTrail/vaultResolve';
 import { paperRegionFor } from '../components/PaperTrail/paperRegion';
@@ -30,7 +32,8 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
       const actual = paper.lang === 'iv'
         ? atlas.translatedMarkBankCards.filter(join => join.year === paper.year && join.fileid === paper.paperFileid)
             .map(join => ({ questionRef:get(join.cardId).questionRef, totalMarks:join.marksPerRoute }))
-        : cards.filter(card => card.year === paper.year && card.level === paper.level);
+        : cards.filter(card => card.year === paper.year && card.level === paper.level
+          && isDeferredRef(card.questionRef) === ('sitting' in paper && paper.sitting === 'deferred'));
       const expected = paper.baseTasks.flatMap(task => task.routes.map(ref => ({ ref, marks:task.marksPerResponse })));
       expect(actual.map(card => card.questionRef).sort()).toEqual(expected.map(task => task.ref).sort());
       for (const task of expected) {
@@ -40,11 +43,12 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
     expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(33);
-    expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(2);
+    // June's two, and the 2023 Higher deferred scheme's Q16 (its published marks total 49).
+    expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(3);
   });
 
   it('keeps the three-of-four udder labels on one card at the published three-mark tariff', () => {
-    expect(cards.filter(c => c.questionRef.startsWith('2023 HL Q18(a)(i)'))).toHaveLength(1);
+    expect(cards.filter(c => c.questionRef.startsWith('2023 HL Q18(a)(i)') && !isDeferredRef(c.questionRef))).toHaveLength(1);
     const card = get('agsci-2023-hl-q18ai');
     expect(card.totalMarks).toBe(3);
     expect(card.sourceMaterial?.pages).toEqual([37]);
@@ -391,7 +395,8 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(38);
+    // June's 38 and the 2023 Higher deferred sitting's.
+    expect(review.paperReviews).toHaveLength(39);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -694,9 +699,9 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('reconciles all 81 original 2023 Higher cards and adds the three missing parts', () => {
-    const year = higher.filter(card => card.year === 2023);
+    const year = higher.filter(card => card.year === 2023 && !isDeferredRef(card.questionRef));
     expect(year).toHaveLength(85);
-    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2023 HL'));
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2023 HL') && !isDeferredRef(task.questionRef));
     expect(tasks).toHaveLength(85);
     const states = tasks.map(task => (task as { originalCard?: string }).originalCard);
     expect(states.filter(state => state === 'unchanged')).toHaveLength(57);
@@ -739,9 +744,24 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
       expect(get(id).stem, id).not.toMatch(/\b0 Control|7000 Cumulaitve|50 Current farm/);
       expect(get(id).figure?.src, id).toBeTruthy();
     }
-    const units = census.questionMarkChecks.filter(check => check.year === 2023 && check.level === 'higher');
+    const units = census.questionMarkChecks.filter(check => check.year === 2023 && check.level === 'higher' && !('sitting' in check));
     expect(units).toHaveLength(18);
     for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
+  });
+
+  it('cards every task of the 2023 Higher deferred sitting on its own edition, agreeing with its census', () => {
+    const deferred = higher.filter(card => card.year === 2023 && isDeferredRef(card.questionRef));
+    expect(deferred).toHaveLength(85);
+    expect(deferred.every(card => card.id.startsWith('agsci-2023-hl-deferred-'))).toBe(true);
+    // Its own question checks: every question at its printed total but Q16, whose published marks total 49.
+    const units = census.questionMarkChecks.filter(check => check.year === 2023 && check.level === 'higher' && 'sitting' in check);
+    expect(units).toHaveLength(18);
+    for (const check of units) {
+      expect(check.candidateTotalsFromScheme, check.question)
+        .toEqual([check.question === 'Q16' ? 49 : Number(check.question.slice(1)) <= 12 ? 10 : 50]);
+    }
+    expect(atlas.markBankCards.filter(join => deferred.some(card => card.id === join.cardId))
+      .every(join => join.fileid === 'LC024ALP000EV-deferred.pdf')).toBe(true);
   });
 
   it('reconciles all 76 original 2023 Ordinary cards and adds the five missing parts', () => {
@@ -1400,7 +1420,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     const taskFor = (id: string) => review.tasks.find(task => task.cardIds.includes(id))!;
     for (const task of review.tasks.filter(task => task.selection.kind === 'closed')) {
       expect(task.cardIds, task.questionRef).toHaveLength(1);
-      expect(task.questionRef, task.questionRef).not.toContain(' — ');
+      expect(task.questionRef.replace(/ — Deferred sitting$/, ''), task.questionRef).not.toContain(' — ');
       expect((task.selection as { pooled?: boolean }).pooled, task.questionRef).toBe(true);
       // Any sibling at the same address must be a separately marked required
       // part (for example a definition beside the disease choice), never an
@@ -1470,7 +1490,8 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(2464);
+    // June's 2,464 and the 2023 Higher deferred sitting's 85.
+    expect(atlas.markBankCards).toHaveLength(2464 + 85);
     // Indexed once: the join list grows by a paper's worth of cards at a time, and a
     // per-card scan of every task, sibling list and answer map made this test quadratic.
     const taskFor = new Map<string, (typeof review.tasks)[number]>();

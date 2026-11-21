@@ -181,7 +181,14 @@ describe('Chemistry exam-topic registry', () => {
   });
 
   it('exposes every official Chemistry edition through 2026', () => {
-    const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'chemistry');
+    // June's 68 editions; a carded deferred sitting's paper follows them (chemistry_deferred.py) and is pinned below.
+    const all = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'chemistry');
+    const papers = all.filter(paper => !paper.fileid.endsWith('-deferred.pdf'));
+    expect(all.filter(paper => paper.fileid.endsWith('-deferred.pdf'))
+      .map(paper => `${paper.year}|${paper.level}|${paper.fileid}|${paper.q.map(question => question.n).join(',')}`).sort())
+      .toEqual(['2022|higher|LC022ALP000EV-deferred.pdf|1,2,3,4,5,6,7,8,9,10,11',
+        '2022|ordinary|LC022GLP000EV-deferred.pdf|1,2,3,4,5,6,7,8,9,10,11',
+        '2023|higher|LC022ALP000EV-deferred.pdf|1,2,3,4,5,6,7,8,9,10,11']);
     expect(chemistryEvidence.summary).toMatchObject({
       localPaperVariants: 68,
       localPhysicalCards: 748,
@@ -270,7 +277,8 @@ describe('Chemistry exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'chemistry');
     let schemeMaps = 0;
     const paperOnlyVariants: Array<{ year: number; fileid: string }> = [];
-    for (const paper of papers) {
+    for (const paper of papers.filter(item => !item.fileid.endsWith('-deferred.pdf'))) {
+      // (A deferred paper is paper-only: it has no answer map of its own.)
       const answerPath = path.join(
         ROOT,
         'scripts',
@@ -303,9 +311,9 @@ describe('Chemistry exam-topic registry', () => {
     ))).toBe(false);
   });
 
-  it('surfaces all 374 entitled questions through the single model\'s 34 headings', () => {
+  it('surfaces all 374 entitled June questions and 33 deferred ones through the single model\'s 34 headings', () => {
     expect(subjectAtlasStats('chemistry')).toMatchObject({
-      questions: 374,
+      questions: 374 + 11 + 11 + 11,
       topics: 34,
       yearMin: 2010,
       yearMax: 2026,

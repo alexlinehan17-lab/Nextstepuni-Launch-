@@ -1,7 +1,7 @@
 {
   "status": "in-progress",
-  "shippedCardCount": 2464,
-  "reviewedRoutesChecked": 2464,
+  "shippedCardCount": 2549,
+  "reviewedRoutesChecked": 2549,
   "independentlyReviewedTranslatedRoutes": 81,
   "reviewedBatchIssues": [],
   "papers": [
@@ -319,6 +319,16 @@
       "shippedRoutes": 81,
       "missing": [],
       "unmatched": []
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 85,
+      "shippedRoutes": 85,
+      "missing": [],
+      "unmatched": [],
+      "sitting": "deferred"
     }
   ],
   "independentCensusEditionsOpen": [

@@ -208,7 +208,7 @@ const comparable = (text: string) => comparableScheme(text);
 // A card from the SEC's deferred sitting ("econ-2022-hl-deferred-...",
 // "eng-2022-hl-deferred-...", "hist-2023-hl-deferred-lm-...",
 // "dcg-2022-hl-deferred-...", "phys-2022-hl-deferred-...",
-// "he-2023-hl-deferred-...", "maths-2025-hl-deferred-p1-...", "mus-2023-hl-deferred-...") traces to that
+// "he-2023-hl-deferred-...", "maths-2025-hl-deferred-p1-...", "chem-2022-hl-deferred-...", "mus-2023-hl-deferred-...") traces to that
 // sitting's own scheme ("2022-hl-deferred.md"), as build-deck reads it.
 const deferredCard = (card: { id?: string; subjectId: string }) =>
   (card.subjectId === 'economics' && /^econ-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
@@ -225,7 +225,14 @@ const deferredCard = (card: { id?: string; subjectId: string }) =>
   || (card.subjectId === 'home-economics' && /^he-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'maths' && /^maths-\d{4}-(?:hl|ol|fl)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'business' && /^bus-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
-  || (card.subjectId === 'music' && /^mus-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
+  || (card.subjectId === 'chemistry' && /^chem-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'art' && /^art-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'music' && /^mus-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'accounting' && /^acc-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'agricultural-science' && /^agsci-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'applied-maths' && /^am-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'construction-studies' && /^cons-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'physical-education' && /^pe-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
 // Codex's reviewed subjects bind each card to its exact reviewed booklet.
 const REVIEWED_SOURCE_SUBJECTS = new Set(['maths', 'physics', 'home-economics']);
 

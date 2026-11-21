@@ -1163,6 +1163,101 @@ POOLS_2023_HIGHER = {
     'Q18(a)(i)': (3, ['A', 'B', 'C', 'D']),
 }
 
+# 2023 Higher DEFERRED sitting (deferredexams/2023/LC024ALP000EV.pdf, deferredmarkingschemes/2023/LC024ALP000EV.pdf),
+# transcribed independently of its cards (agricultural_science_2023_hl_deferred.py), each cue copied from its scheme
+# page: Section A Q1-Q12 at 10 marks, Section B Q13-Q18 at 50.
+HIGHER_2023_DEFERRED = '''
+Q1(a)(i)|6|3|11|Mainly midlands and eastern counties
+Q1(a)(ii)|4|3|11|Free draining / prone to drought
+Q1(b)(i)|6|3|11|Parent material / climate / living organisms
+Q1(b)(ii)|4|3|11|Parent rock is weathered into smaller particles
+Q2(a)|1|4|12|responsible for milk let down by placing a tick
+Q2(b)|3|4|12|Reduced milk yield
+Q2(c)|6|4|12|have a familiar person with the new operator
+Q3(a)|4|5|12|Reason: determining the type of plants present
+Q3(b)|2|5|12|Quadrat was thrown a number of times
+Q3(c)|4|5|12|A = Dandelion
+Q4(a)|2|6|12|the process by which a water becomes enriched in dissolved nutrients
+Q4(b)|4|6|12|Spread fertiliser in suitable conditions
+Q4(c)|4|6|12|Slurry spreader with umbilical cord
+Q5(a)|4|7|13|A: Aberdeen Angus (poly)
+Q5(b)|4|7|13|early maturing / polled / easy calving / produces lean carcass
+Q5(c)|2|7|13|Early maturing breeds and finish early
+Q6(a)(i)|4|8|13|Biodiversity is all the different kinds of life
+Q6(a)(ii)|4|8|13|Indirect = Contaminated food or drinking water
+Q6(a)(iii)|2|8|13|Isolate purchased animals / isolate sick animals
+Q6(b)(i)|1|9|14|Ease of administration
+Q6(b)(ii)|3|9|14|pour-on by placing a tick
+Q6(b)(iii)|3|9|14|Lice / tick
+Q6(b)(iv)|3|9|14|Animals are securely contained
+Q7(a)|2|10|14|Dehydration
+Q7(b)|6|10|14|Grass has reached inflorescence stage
+Q7(c)|2|10|14|Prevent fire (overheating)
+Q8(a)|3|11|14|Cow 4
+Q8(b)|3|11|14|Illness – mastitis or lameness
+Q8(c)|4|11|14|43 x 220 = 9460 litres
+Q9(a)(i)|6|12|15|Weight loss / diarrhoea with normal appetite
+Q9(a)(ii)|4|12|15|Provide mains water and keep troughs clean
+Q9(b)(i)|3|13|15|Red water
+Q9(b)(ii)|3|13|15|Injection to kill parasite / blood transfusion
+Q9(b)(iii)|4|13|15|Good grazing management
+Q10(a)|9|14|15|Helps makes informed decisions about animal performance
+Q10(b)|1|14|15|slaughter weight by placing a tick
+Q11(a)|3|15|16|pH 5
+Q11(b)|3|15|16|only 32% of the seeds will germinate
+Q11(c)|4|15|16|amount of nutrients available to plants
+Q12(a)(i)|4|16|16|When a portion of food returns from a ruminant’s stomach
+Q12(a)(ii)|6|16|16|Feed the cows at dusk
+Q12(b)(i)|4|17|16|water travels up through xylem vessels in the stem
+Q12(b)(ii)|6|17|16|Remove heavily infested leaves
+Q13(a)(i)|8|20|17|The soil type / weather condition
+Q13(a)(ii)|8|20|17|Based on Up-to-date soil samples
+Q13(b)(i)|6|21|17|As CEC increases, more nutrients are attached to soil particles
+Q13(b)(ii)|12|21|17|test the leachate for calcium by adding
+Q13(c)(i)|6|22|17|Animal housing
+Q13(c)(ii)|10|22|17|so by extending the grazing season it will reduce the emissions
+Q13(d)|16|23|18|Poaching: loss of soils by the damaging action
+Q14(a)(i)|6|24|18|D = 5 x 5 x 1.3 = 32.5
+Q14(a)(ii)|12|24|18|306.8 X 1.25 = 383.5
+Q14(a)(iii)|6|24|18|Not enough silage made
+Q14(a)(iv)|6|25|18|Ewes are smaller animals
+Q14(a)(v)|3|25|19|Only some of the heifers born on the farm are kept
+Q14(a)(vi)|2|25|19|increase concentrate feeding
+Q14(b)(i)|6|25|19|make opportunistic silage
+Q14(b)(ii)|3|26|19|flower head is enclosed in flag leaf
+Q14(c)|6|26|19|cut in afternoon when sugar is highest
+Q15(a)(i)|12|27|20|Plant that completes its lifecycle in one year
+Q15(a)(ii)|8|27|20|Perennial ryegrass – persistent growth
+Q15(a)(iii)|8|28|20|Ireland has a temperate climate
+Q15(b)|12|28|20|2 areas of land marked out
+Q15(c)(i)|6|29|20|gene editing or CRISPR-Cas9
+Q15(c)(ii)|4|29|20|Increase animal production / allow for extended grazing
+Q16(a)(i)|2|30|21|Soil which contains a high percentage of sand
+Q16(a)(ii)|8|30|21|Dependent: quantity of nutrients leached
+Q16(a)(iii)|9|30|21|Soil with higher sand content will have better drainage
+Q16(a)(iv)|12|31|21|Name: sedimentation / hand (feel) / sieve
+Q16(a)(v)|6|31|22|electronic balance not calibrated
+Q16(b)(i)|6|32|22|A = Loam
+Q16(b)(ii)|6|32|22|Reason: Less drainage in clay soil
+Q17(a)(i)|6|33|22|A = Abomasum
+Q17(a)(ii)|12|33|22|Expensive / increase labour
+Q17(b)|12|35|22|Pigs produce manure which is high in nutrients
+Q17(c)(i)|6|36|22|Purchased feed
+Q17(c)(ii)|8|36|22|Year: 2022
+Q17(c)(iii)|6|36|22|grow own protein source (beans)
+Q18(a)(i)|18|37|23|200 x 1.37 = €274
+Q18(a)(ii)|6|38|23|the land that runs alongside our rivers and streams
+Q18(b)|16|38|23|Point for correct cycle shown (4)
+Q18(c)(i)|4|39|23|Adds Ca and Mg to soil
+Q18(c)(ii)|6|39|23|earthworms like a pH 6 – 7
+Q18(d)(i)|4|39|23|Aphid
+Q18(d)(ii)|6|39|23|Addition of ladybirds to crop
+'''
+
+POOLS_2023_HIGHER_DEFERRED = {
+    'Q12(b)(i)': (2, ['Roots', 'Stems', 'Leaves']),
+}
+
 # 2023 Ordinary: Section A Q1-Q12 at 10 marks, Section B Q13-Q18 at 50.
 ORDINARY_2023 = '''
 Q1(a)|6|3|12|B: Graduated cylinder
@@ -2933,6 +3028,48 @@ SOURCES = [
 ]
 
 
+# The SEC's deferred sittings, each its own edition ("LC024ALP000EV-deferred.pdf") read from the deferred corpus:
+# (year, level, letter, census block, pools, paper sha256, scheme sha256).
+DEFERRED_SOURCES = [
+    (2023, 'higher', 'A', HIGHER_2023_DEFERRED, POOLS_2023_HIGHER_DEFERRED,
+     '8affbd652ab012698a944549855b0f8d209af7e5a12a2b6010bc95d46b1af768',
+     '19b2cc3ef9c1bd460f2ecf1688395cae7a319f3d3da61dca197e4b1d8643f67e'),
+]
+
+
+def deferred_source_tasks():
+    papers = []
+    for year, level, letter, table, pools, paper_hash, scheme_hash in DEFERRED_SOURCES:
+        fileid = f'LC024{letter}LP000EV.pdf'
+        pages = {}
+        for kind, digest in [('deferredexams', paper_hash), ('deferredmarkingschemes', scheme_hash)]:
+            path = ROOT / f'paper-trail-corpus/{kind}/{year}/{fileid}'
+            assert hashlib.sha256(path.read_bytes()).hexdigest() == digest, f'Source changed: {path}'
+            with fitz.open(path) as pdf:
+                pages[kind] = [' '.join(page.get_text().split()) for page in pdf]
+        tasks = []
+        tag = 'HL' if level == 'higher' else 'OL'
+        for line in table.strip().splitlines():
+            ref, marks, paper_page, scheme_page, cue = line.split('|')
+            paper_page, scheme_page = int(paper_page), int(scheme_page)
+            assert cue in pages['deferredmarkingschemes'][scheme_page - 1], f'Stale source cue: {level} deferred {ref}: {cue}'
+            selection = {'kind': 'none'}
+            if ref in pools:
+                choose, choices = pools[ref]
+                selection = {'kind': 'closed', 'choose': choose, 'options': choices, 'pooled': True}
+            address = f'{year} {tag} {ref} — Deferred sitting'
+            tasks.append({'ref': address, 'marksPerResponse': int(marks), 'paperPage': paper_page,
+                          'schemePage': scheme_page,
+                          'sourceCue': {'kind': 'deferredmarkingschemes', 'page': scheme_page, 'text': cue},
+                          'selection': selection, 'routes': [address]})
+        assert len(tasks) == {(2023, 'higher'): 85}[(year, level)]
+        papers.append({'year': year, 'level': level, 'lang': 'ev', 'sitting': 'deferred',
+                       'paperFileid': fileid.replace('.pdf', '-deferred.pdf'),
+                       'sourceHashes': {'deferredexams': paper_hash, 'deferredmarkingschemes': scheme_hash},
+                       'status': 'boundary-reviewed', 'baseTasks': tasks})
+    return papers
+
+
 def source_tasks():
     papers = []
     editions = [(*source,'ev') for source in SOURCES] + [(2011,'ordinary','G',ORDINARY_2011_IRISH,
@@ -2975,7 +3112,7 @@ def source_tasks():
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
-    return papers
+    return papers + deferred_source_tasks()
 
 
 def build():
@@ -3034,6 +3171,9 @@ MODERN_LAYOUTS = {
                         'marks':lambda n: 10 if n<=12 else 50},
     (2023,'higher'): {'either':{'Q1','Q7','Q9','Q10'}, 'bothWithEither':{'Q13','Q16'},
                       'marks':lambda n: 10 if n<=12 else 50},
+    (2023,'higher','deferred'): {'either':{'Q1','Q6','Q9','Q12'}, 'bothWithEither':{'Q13','Q18'},
+                      'marks':lambda n: 10 if n<=12 else 50,
+                      'exceptions':{'Q16':(49,'The deferred scheme\'s published allocations for Q16 total 49, not the printed 50: (a) 2 + (4+4) + (5+2+2) + 3(4) + 6 = 37, (b) (3+3) + (3+3) = 12. Preserve the scheme and disclose the difference.')}},
     (2024,'ordinary'): {'either':{'Q2','Q6','Q9','Q11'}, 'bothWithEither':{'Q15','Q18'},
                         'marks':lambda n: 10 if n<=12 else 50},
     (2024,'higher'): {'either':{'Q2','Q3','Q6','Q9'}, 'bothWithEither':{'Q13','Q14'},
@@ -3081,10 +3221,14 @@ def question_mark_checks(papers):
             address = task['ref'].split(' ',2)[2]
             question = re.match(r'Q\d+(?: Option (?:One|Two))?',address).group()
             groups.setdefault(question,[]).append(task)
-        modern = MODERN_LAYOUTS.get((paper['year'],paper['level']))
+        modern = MODERN_LAYOUTS.get((paper['year'],paper['level'],'deferred') if paper.get('sitting')=='deferred'
+                                    else (paper['year'],paper['level']))
         for question,tasks in groups.items():
             if modern:
-                checks.append(modern_question_check(paper,question,tasks,modern))
+                check = modern_question_check(paper,question,tasks,modern)
+                if paper.get('sitting'):
+                    check['sitting'] = paper['sitting']
+                checks.append(check)
                 continue
             units = {}
             choose = None

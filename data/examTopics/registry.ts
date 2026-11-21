@@ -367,6 +367,8 @@ interface ArtRuntime {
   partReferences: Array<[number, number, 'm' | 'd' | 's', string, string, string]>;
   /** [h/o, e/i, year-2000, component code, printed number, topic indexes] */
   questionMappings: Array<['h' | 'o', 'e' | 'i', number, string, string, number[]]>;
+  /** The SEC's deferred sittings, carded: [h/o, year-2000, booklet file id, question number, topic indexes]. */
+  deferredQuestionMappings?: Array<['h' | 'o', number, string, string, number[]]>;
 }
 
 interface ComputerScienceRuntime {
@@ -454,12 +456,11 @@ interface ConstructionStudiesRuntime {
   partReferences: Array<[number, number, number, string, number, string]>;
   /** [h/o, year-2000, stable card number, topic indexes] */
   questionMappings: Array<['h' | 'o', number, string, number[]]>;
-}
-
-interface EngineeringRuntime extends ConstructionStudiesRuntime {
   /** The SEC's deferred sittings: [h/o, year-2000, paper file id, printed question number, topic indexes]. */
   deferredQuestionMappings?: Array<['h' | 'o', number, string, string, number[]]>;
 }
+
+type EngineeringRuntime = ConstructionStudiesRuntime;
 
 interface TechnologyRuntime {
   v: 1;
@@ -3853,6 +3854,19 @@ for (const [
     }),
   );
 }
+// A deferred sitting's paper ("LC014ALP000EV-deferred.pdf") is numbered as June's: its questions join on the
+// paper, never on June's question of the same number (Engineering's do the same).
+for (const [levelCode, yearOffset, fileid, n, topicIndexes] of artRuntime.deferredQuestionMappings ?? []) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey(artRuntime.subjectId, levelCode === 'h' ? 'higher' : 'ordinary', yearOffset + 2000, 'main',
+      fileid, n, 'single', 'ev'),
+    topicIndexes.map(topicIndex => {
+      const topicId = artRuntime.topics[topicIndex]?.[0];
+      if (!topicId) throw new Error(`Unknown Art runtime topic index: ${topicIndex}`);
+      return topicId;
+    }),
+  );
+}
 
 // Computer Science exposes all 208 English student-facing questions and their
 // Irish-language twins. Exact factual joins take precedence; five valid local
@@ -3986,6 +4000,24 @@ for (const [levelCode, yearOffset, n, topicIndexes] of (
       levelCode === 'h' ? 'higher' : 'ordinary',
       yearOffset + 2000,
       'main',
+      n,
+      'single',
+    ),
+    topicIndexes.map(topicIndex => constructionStudiesTopicIdentity(topicIndex).id),
+  );
+}
+// A deferred sitting's paper ("LC029ALP000EV-deferred.pdf") is numbered as June's: its questions join on the paper,
+// never on June's question of the same number (Engineering's and Art's do the same).
+for (const [levelCode, yearOffset, fileid, n, topicIndexes] of (
+  constructionStudiesRuntime.deferredQuestionMappings ?? []
+)) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey(
+      constructionStudiesRuntime.subjectId,
+      levelCode === 'h' ? 'higher' : 'ordinary',
+      yearOffset + 2000,
+      'main',
+      fileid,
       n,
       'single',
     ),

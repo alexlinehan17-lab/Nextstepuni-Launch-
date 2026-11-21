@@ -61,6 +61,8 @@ PAPER_ROOT = os.path.join(ROOT, 'examiner-reports', 'art', 'papers')
 SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'art', 'schemes')
 OUT = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'art', 'authored.json')
 CENSUS_OUT = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'art-census.json')
+# The deck-size manifest the picker reads (components/MarkBank/deck.ts deckSize): Art's entry is its cards per level.
+SIZES = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'sizes.json')
 
 YEARS = tuple(range(2010, 2027))
 
@@ -1574,12 +1576,146 @@ def comparable(value: str) -> str:
     return re.sub(r'[^\w]+', ' ', value, flags=re.UNICODE).strip()
 
 
+# ── The SEC's deferred sittings ──────────────────────────────────────────────────
+# deferredexams/<year>/LC014<A|G>LP000EV.pdf with its illustration sheet and scheme, linked beside June's as
+# <year>-<lvl>-deferred-paper.pdf, -deferred-illustrations.pdf and schemes/<year>-<lvl>-deferred.pdf. Each is read
+# by June's own readers (use_sitting): the per-paper tables below replace June's while it is read, and its cards
+# are June's shape with ids art-<year>-<lvl>-deferred-..., citations "... — Deferred sitting" and booklet
+# ...-deferred (deferred_cards).
+DEFERRED_SITTINGS: tuple[tuple[int, str], ...] = ((2022, 'higher'), (2023, 'higher'), (2023, 'ordinary'))
+DEFERRED_ILLUSTRATION_SUFFIX = {(2022, 'higher'): 'EV'}
+DEFERRED_TABLES: dict[str, dict[Any, Any]] = {
+    'EXPECTED_QUESTIONS_BY_YEAR_LEVEL': {(2022, 'higher'): 20, (2023, 'higher'): 19, (2023, 'ordinary'): 19},
+    'EXPECTED_CARDS_BY_YEAR_LEVEL': {(2022, 'higher'): 62, (2023, 'higher'): 26, (2023, 'ordinary'): 26},
+    # 2023 Higher Q7: the answer areas' labels for the parts the printed question already names.
+    'ANSWER_BOX_LABELS': {
+        (2023, 'higher', 7): ('Name of film, television programme or video game:', 'Colour and mood:',
+                              'Visual aspect:', 'Reasons:'),
+        # 2023 Ordinary: the answer areas' labels for the headings and parts the printed questions already name.
+        (2023, 'ordinary', 1): ('Imagery:', 'Lettering:', 'Colour:'),
+        (2023, 'ordinary', 3): ('Subject matter, form, materials:',),
+        (2023, 'ordinary', 5): ('Space or interior:', 'Reasons:', 'Form:', 'Use of materials:'),
+        (2023, 'ordinary', 7): ('Shape, colour:',),
+    },
+    'PRINTED_CHOICES': {
+        (2022, 'higher', 4): (
+            ('parliament-house', 'Parliament House, Dublin'),
+            ('russborough-house', 'Russborough House, Co. Wicklow'),
+            ('four-courts', 'The Four Courts, Dublin'),
+        ),
+        (2022, 'higher', 7): (
+            ('walter-osborne', 'Walter Osborne (1859-1903)'),
+            ('jack-b-yeats', 'Jack B. Yeats (1871-1957)'),
+            ('mary-swanzy', 'Mary Swanzy (1882-1978)'),
+            ('sean-keating', 'Seán Keating (1889-1977)'),
+            ('louis-le-brocquy', 'Louis le Brocquy (1916-2012)'),
+            ('robert-ballagh', 'Robert Ballagh (b.1943)'),
+            ('kathy-prendergast', 'Kathy Prendergast (b.1958)'),
+        ),
+        (2022, 'higher', 14): (
+            ('giotto-di-bondone', 'Giotto di Bondone (c.1267-1337)'),
+            ('jan-van-eyck', 'Jan van Eyck (c.1390-1441)'),
+            ('jacques-louis-david', 'Jacques-Louis David (1748-1825)'),
+            ('edvard-munch', 'Edvard Munch (1863-1944)'),
+            ('salvador-dali', 'Salvador Dalí (1904-1989)'),
+        ),
+        (2022, 'higher', 15): (
+            ('international-gothic', 'International Gothic'),
+            ('romanticism', 'Romanticism'),
+            ('cubism', 'Cubism'),
+            ('de-stijl', 'De Stijl'),
+        ),
+    },
+    # As June files the same artists and movements (OPTION_TOPICS above): one card per option for a choose-one list
+    # whose options sit under different headings.
+    'OPTION_TOPICS': {
+        (2022, 'higher', 14): {
+            'giotto-di-bondone': 'art-4-1', 'jan-van-eyck': 'art-4-1', 'jacques-louis-david': 'art-4-6',
+            'edvard-munch': 'art-4-4', 'salvador-dali': 'art-4-4',
+        },
+        (2022, 'higher', 15): {
+            'international-gothic': 'art-4-0', 'romanticism': 'art-4-6', 'cubism': 'art-4-4', 'de-stijl': 'art-4-4',
+        },
+    },
+    'TASK_COMBINATION_CHOICES': {},
+    'REVIEWED_NON_ENUMERABLE_POOLS': {},
+    'REVIEWED_OPEN_SELECTIONS': {
+        (2023, 'higher', 4): (
+            '"Why would an artist choose to make and exhibit a temporary artwork rather than a permanent artwork?": '
+            'the artist\'s choice the question asks about, not one the student makes; one card.'),
+    },
+    # The deferred sheet (LC014ALP004EV), read page by page: page 1 prints Questions 17, 18, 20, 1, 3 and 6,
+    # page 2 Questions 10, 11 and 12 -- the nine whose asks refer to their illustration.
+    'ILLUSTRATION_PAGES': {
+        (2022, 'higher'): {1: 1, 3: 1, 6: 1, 17: 1, 18: 1, 20: 1, 10: 2, 11: 2, 12: 2},
+        # The 2023 Higher sheet (LC014ALP004BV): page 1 prints Questions 1 and 6, page 2 Questions 3 and 4.
+        (2023, 'higher'): {1: 1, 6: 1, 3: 2, 4: 2},
+        # The 2023 Ordinary sheet (LC014GLP004BV): page 1 prints Questions 1 and 7, page 2 Questions 2, 3 and 5.
+        (2023, 'ordinary'): {1: 1, 7: 1, 2: 2, 3: 2, 5: 2},
+    },
+    # 2023 Higher Section A, each as June files the same kind of question and each among the headings the factual
+    # reference gives that deferred question: Berkery's painting (Processes and Media), the Zurich Portrait Prize and
+    # commissions (Theory and Thinking), the mural Flidhais (Social Commentary, as June's murals are), the Eirigh
+    # pavilion (Art and the Environment, as June's pavilion is), the curator and an exhibition theme (Theory and
+    # Thinking, as June's gallery questions are), the Ballymaloe poster and colour in film (Processes and Media).
+    'CURRENT_SHORT_TOPICS': {
+        (2023, 'higher', number): topic for number, topic in enumerate(
+            ('art-6-1', 'art-6-0', 'art-6-2', 'art-6-3', 'art-6-0', 'art-6-1', 'art-6-1'), start=1)
+    } | {
+        # 2023 Ordinary Section A, each as June files the same kind of question (the factual reference lists no
+        # 2023 Ordinary deferred heading): the An Post poster, the sea-inspired ceramic bowl's form, decoration and
+        # function (as June 2023 Ordinary Q6's hats), the Puca sculpture and a portrait (Processes and Media, as
+        # June's sculptures and portraits), the light sculpture's form and materials (Processes and Media), buying
+        # from local design and craft communities (Theory and Thinking, as June's craft questions), and the Vitra
+        # Haus interior (Art and the Environment, as June 2023 Higher Q7's interior architecture).
+        (2023, 'ordinary', number): topic for number, topic in enumerate(
+            ('art-6-1', 'art-6-1', 'art-6-1', 'art-6-1', 'art-6-1', 'art-6-0', 'art-6-3'), start=1)
+    },
+    'LEGACY_QUESTION_TOPICS': {},
+    # Reviewed where the keyword reading misfiles the question, each as June files the same kind of question:
+    # Q4's Georgian buildings (Parliament House, Russborough House, the Four Courts) under the Georgian Period; Q7's
+    # Irish painters (Osborne to Prendergast) under Irish Art and Modernism, as June 2022 Higher Q7's are; Q19's
+    # shopfront under Artists: Processes and Media, as 6 of June's 10 shopfront and signage cards are.
+    'LEGACY_TOPIC_OVERRIDES': {
+        (2022, 'higher', 4): 'art-5-3', (2022, 'higher', 7): 'art-5-4', (2022, 'higher', 19): 'art-6-1',
+    },
+    'REVIEWED_COMPONENT_RUNS': {},
+}
+_JUNE_TABLES: dict[str, Any] = {}
+
+
+def use_sitting(sitting: str) -> None:
+    """Point the readers and the per-paper tables at June's sitting ('main') or the deferred one."""
+    module = sys.modules[__name__]
+    if not _JUNE_TABLES:
+        _JUNE_TABLES.update({name: getattr(module, name) for name in DEFERRED_TABLES})
+    tables = DEFERRED_TABLES if sitting == 'deferred' else _JUNE_TABLES
+    for name, table in tables.items():
+        setattr(module, name, table)
+    art_printed.SITTING = '-deferred' if sitting == 'deferred' else ''
+
+
+def deferred_cards(cards: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """A deferred sitting's cards: June's shape, saying twice that they are the deferred sitting's."""
+    out = []
+    for card in cards:
+        prefix = f"art-{card['year']}-{LEVEL_SHORT[card['level']]}-"
+        assert card['id'].startswith(prefix) and card['paperFileid'].endswith('-deferred'), card['id']
+        card = dict(card)
+        card['id'] = prefix + 'deferred-' + card['id'][len(prefix):]
+        card['conceptId'] = card['conceptId'] + '-deferred'
+        card['questionRef'] = card['questionRef'] + ' — Deferred sitting'
+        card['sitting'] = 'deferred'
+        out.append(card)
+    return out
+
+
 def paper_path(year: int, level: str) -> str:
-    return os.path.join(PAPER_ROOT, f'{year}-{LEVEL_SHORT[level]}-paper.pdf')
+    return os.path.join(PAPER_ROOT, f'{year}-{LEVEL_SHORT[level]}{art_printed.SITTING}-paper.pdf')
 
 
 def scheme_path(year: int, level: str) -> str:
-    return os.path.join(SCHEME_ROOT, f'{year}-{LEVEL_SHORT[level]}.pdf')
+    return os.path.join(SCHEME_ROOT, f'{year}-{LEVEL_SHORT[level]}{art_printed.SITTING}.pdf')
 
 
 def expected_numbers(year: int, level: str) -> list[int]:
@@ -1600,13 +1736,16 @@ def illustration_component(year: int) -> str:
 
 
 def paper_fileid(year: int, level: str) -> str:
-    return f"LC014{'A' if level == 'higher' else 'G'}LP{written_component(year)}EV"
+    return f"LC014{'A' if level == 'higher' else 'G'}LP{written_component(year)}EV{art_printed.SITTING}"
 
 
 def illustration_fileid(year: int, level: str) -> str:
     # The 2021+ sheets are bilingual (BV); earlier ones are English editions.
     suffix = 'BV' if year >= 2021 else 'EV'
-    return f"LC014{'A' if level == 'higher' else 'G'}LP{illustration_component(year)}{suffix}"
+    if art_printed.SITTING and (year, level) in DEFERRED_ILLUSTRATION_SUFFIX:
+        # The 2022 Higher deferred sheet is an English edition (LC014ALP004EV), unlike June's bilingual one.
+        suffix = DEFERRED_ILLUSTRATION_SUFFIX[(year, level)]
+    return f"LC014{'A' if level == 'higher' else 'G'}LP{illustration_component(year)}{suffix}{art_printed.SITTING}"
 
 
 def is_furniture(line: str, year: int) -> bool:
@@ -1636,6 +1775,9 @@ def is_furniture(line: str, year: int) -> bool:
         # closing instruction: layout, not a word of the question.
         r'^\.$',
     )
+    if art_printed.SITTING and re.search(r'^Leaving Certificate Examination(?:\s+\d{1,2})?$', value, re.I):
+        # The deferred papers' running footer prints no year ("Leaving Certificate Examination 2", the page).
+        return True
     return any(re.search(pattern, value, re.I) for pattern in patterns)
 
 
@@ -1698,6 +1840,10 @@ def clean_prompt(value: str, sentence_lines: bool = False) -> str:
     # Tick-box options printed on their own line ("Yes [ ]  No [ ]") keep it,
     # so they do not run into the sentences either side (2023 OL Q5(b)).
     value = re.sub(r'(?m)^[ \t]*Yes[ \t]+No[ \t]*$', '\n@@BOXES@@\n', value)
+    # Any other options line printed under "Use a tick (✓) to indicate your answer." keeps its own line too, as
+    # printed ("Yes: No:", "Form and decoration Function Both" in 2023 Ordinary deferred Q1(b) and Q2(b)).
+    value = re.sub(r'(?m)(to indicate your answer\.)[ \t]*\n(?:[ \t]*\n)*[ \t]*(?!@@BOXES@@)([^\n]+?)[ \t]*$',
+                   lambda m: m.group(1) + '\n@@TICKS@@' + ' '.join(m.group(2).split()) + '@@END@@', value)
     # A choose-one directive whose options print one per line with no bullet
     # marker (2012 OL Q11 "Choose one of the following works and answer (a)
     # and (b)", 2010 OL Q11 the same with a colon, then the titled works):
@@ -1729,6 +1875,7 @@ def clean_prompt(value: str, sentence_lines: bool = False) -> str:
     value = value.replace('@@PART@@', '\n')
     value = value.replace('@@AND@@', '\nand')
     value = re.sub(r'\s*@@BOXES@@\s*', '\nYes No\n', value)
+    value = re.sub(r'\s*@@TICKS@@(.*?)@@END@@\s*', lambda m: '\n' + m.group(1) + '\n', value)
     value = re.sub(r'\s*@@LINE@@\s*', '\n', value)
     value = re.sub(r'\s+([?.!,;:])', r'\1', value)
     value = re.sub(r'[ \t]+\n', '\n', value)
@@ -1859,6 +2006,28 @@ def legacy_scheme(year: int, level: str) -> dict[int, dict[str, Any]]:
                         'rowNotes': [],
                     }
                     criteria.append(current)
+                if (current is not None and guidance and re.fullmatch(r'\d+(?:\s+\d+)+', marks_text)
+                        and art_printed.SITTING):
+                    # The 2022 Higher deferred scheme sets a component's numbered rows in one cell ("1. Discussion
+                    # of statement 2. Discussion of illustration ...", marks "5 5"): each numbered item is a row.
+                    terms = [int(value) for value in marks_text.split()]
+                    # The items are numbered 1, 2, ... in order; a number inside an item ("artefact 1.") is not one.
+                    cuts, at = [], 0
+                    for k in range(1, len(terms) + 1):
+                        hit = re.compile(rf'(?:^|\s){k}\.\s').search(guidance, at)
+                        if not hit:
+                            break
+                        cuts.append(hit.start())
+                        at = hit.end()
+                    items = [guidance[a:b].strip() for a, b in zip(cuts, cuts[1:] + [len(guidance)])]
+                    if len(items) != len(terms):
+                        raise AssertionError(f'{year} {level} Q{number}: {len(items)} items for marks {marks_text!r}')
+                    for item, marks in zip(items, terms):
+                        current['maxMarks'] += marks
+                        current['guidance'].append(item)
+                        current['rowMarks'].append(marks)
+                        current['rowNotes'].append(note)
+                    continue
                 if current is None or not guidance or not re.fullmatch(r'\d+', marks_text):
                     continue
                 marks = int(marks_text)
@@ -2002,8 +2171,16 @@ def parse_short_table(table: Any, page: Any) -> list[dict[str, Any]]:
         if len(boxes) != 1:
             raise AssertionError(f'Art scheme row is not one cell: {cells!r}')
         guidance = art_printed.cell_text(page, boxes[0])
-        band_header = nonempty_cells(rows[index + 1]) if index + 1 < len(rows) else []
-        band_ranges = nonempty_cells(rows[index + 2]) if index + 2 < len(rows) else []
+        # The band header is the next row; a table reader can repeat the row's own last line as a row of its own
+        # before it ("Give reasons for your answer." under 2023 Ordinary deferred Q5(b), already in the cell's text):
+        # such a row, which the cell's text holds, is passed over.
+        header_at = index + 1
+        while (header_at < len(rows) and header_at <= index + 2
+               and not any(re.search(r'\d+\s*Marks?', cell, re.I) for cell in nonempty_cells(rows[header_at]))
+               and all(compact(cell) in compact(guidance) for cell in nonempty_cells(rows[header_at]))):
+            header_at += 1
+        band_header = nonempty_cells(rows[header_at]) if header_at < len(rows) else []
+        band_ranges = nonempty_cells(rows[header_at + 1]) if header_at + 1 < len(rows) else []
         marks_cell = next((cell for cell in band_header if re.search(r'\d+\s*Marks?', cell, re.I)), None)
         if marks_cell is None or len(band_ranges) < 3:
             raise AssertionError(f'incomplete Art short-answer descriptor table: {rows!r}')
@@ -2477,7 +2654,9 @@ def printed_requirements(question_text: str, assessment: str, stem: str | None =
         body = line[2:] if line.startswith('• ') else None
         return (choosing and body is not None and any(body.startswith(label) for label in options)
                 and not (chosen and body.startswith(chosen)))
-    lines = [line for line in lines if line.strip() != 'Yes No' and not is_other_option(line)]
+    # The options line under "Use a tick (✓) to indicate your answer." is where the tick goes, as "Yes No" is.
+    ticks = {after for before, after in zip(lines, lines[1:]) if before.rstrip().endswith('to indicate your answer.')}
+    lines = [line for line in lines if line.strip() != 'Yes No' and line not in ticks and not is_other_option(line)]
     out = asks + [re.sub(r'^•\s*', '', line).strip() for line in lines]
     if not out or any(not line for line in out):
         raise AssertionError(f'no printed requirement lines in {question_text!r}')
@@ -2489,7 +2668,7 @@ _PRINTED_SCHEMES: dict[tuple[int, str], dict[str, Any]] = {}
 
 def printed_scheme(year: int, level: str) -> dict[str, Any]:
     """An audited year's descriptors and marking notes, lifted from its scheme."""
-    key = (year, level)
+    key = (year, level, art_printed.SITTING)
     if key not in _PRINTED_SCHEMES:
         _PRINTED_SCHEMES[key] = {
             'short': art_printed.short_descriptors(year, level),
@@ -2715,41 +2894,68 @@ def build() -> tuple[dict[str, Any], dict[str, Any]]:
                              'lift their wording before carding them')
     cards: list[dict[str, Any]] = []
     papers: list[dict[str, Any]] = []
+
+    def build_paper(year: int, level: str, sitting: str) -> None:
+        questions = extract_questions(year, level)
+        audit_closed_choice_directives(year, level, questions)
+        schemes = (legacy_scheme_by_words(year, level) if (year, level) in WORD_LAYOUT_SCHEMES
+                   else legacy_scheme(year, level) if year <= 2022
+                   else current_short_scheme(year, level))
+        built: list[dict[str, Any]] = []
+        for number in expected_numbers(year, level):
+            outer = make_outer_card(
+                year, level, number, questions[number], schemes.get(number))
+            built += [(number, card) for card in expand_outer_card(outer)]
+        if sitting == 'deferred':
+            built = list(zip([number for number, _ in built], deferred_cards([card for _, card in built])))
+        paper_cards: list[dict[str, Any]] = []
+        for number, card in built:
+            cards.append(card)
+            paper_cards.append({
+                'number': number,
+                'cardId': card['id'],
+                'questionRef': card['questionRef'],
+                'section': card['section'],
+                'paperPage': card['paperPage'],
+                'totalMarks': card['totalMarks'],
+                'hasIllustration': 'sourceMaterial' in card,
+            })
+        expected = EXPECTED_CARDS_BY_YEAR_LEVEL[(year, level)]
+        if len(paper_cards) != expected:
+            raise AssertionError(f'{year} {level}{art_printed.SITTING}: built {len(paper_cards)}, expected {expected}')
+        papers.append({
+            'year': year,
+            'level': level,
+            **({'sitting': 'deferred'} if sitting == 'deferred' else {}),
+            'paperFileid': paper_fileid(year, level),
+            'expectedCards': expected,
+            'cards': paper_cards,
+        })
+
     for year in YEARS:
         for level in LEVELS:
-            questions = extract_questions(year, level)
-            audit_closed_choice_directives(year, level, questions)
-            schemes = (legacy_scheme_by_words(year, level) if (year, level) in WORD_LAYOUT_SCHEMES
-                       else legacy_scheme(year, level) if year <= 2022
-                       else current_short_scheme(year, level))
-            paper_cards: list[dict[str, Any]] = []
-            for number in expected_numbers(year, level):
-                outer = make_outer_card(
-                    year, level, number, questions[number], schemes.get(number))
-                for card in expand_outer_card(outer):
-                    cards.append(card)
-                    paper_cards.append({
-                        'number': number,
-                        'cardId': card['id'],
-                        'questionRef': card['questionRef'],
-                        'section': card['section'],
-                        'paperPage': card['paperPage'],
-                        'totalMarks': card['totalMarks'],
-                        'hasIllustration': 'sourceMaterial' in card,
-                    })
-            expected = EXPECTED_CARDS_BY_YEAR_LEVEL[(year, level)]
-            if len(paper_cards) != expected:
-                raise AssertionError(f'{year} {level}: built {len(paper_cards)}, expected {expected}')
-            papers.append({
-                'year': year,
-                'level': level,
-                'paperFileid': paper_fileid(year, level),
-                'expectedCards': expected,
-                'cards': paper_cards,
-            })
+            build_paper(year, level, 'main')
+    june_cards = len(cards)
+    descriptors = {
+        f'{year}-{level}': printed_scheme(year, level)
+        for year in AUDITED_YEARS if year >= 2023 for level in LEVELS
+    }
+    for year, level in DEFERRED_SITTINGS:
+        use_sitting('deferred')
+        try:
+            build_paper(year, level, 'deferred')
+            if year >= 2023:
+                descriptors[f'{year}-{level}-deferred'] = printed_scheme(year, level)
+        finally:
+            use_sitting('main')
+    deferred_count = len(cards) - june_cards
 
-    total = sum(EXPECTED_CARDS_BY_YEAR_LEVEL.values())
-    higher = sum(n for (_, level), n in EXPECTED_CARDS_BY_YEAR_LEVEL.items() if level == 'higher')
+    total = sum(EXPECTED_CARDS_BY_YEAR_LEVEL.values()) + deferred_count
+    higher = sum(n for (_, level), n in EXPECTED_CARDS_BY_YEAR_LEVEL.items() if level == 'higher') + sum(
+        DEFERRED_TABLES['EXPECTED_CARDS_BY_YEAR_LEVEL'][(year, level)] for year, level in DEFERRED_SITTINGS
+        if level == 'higher')
+    if deferred_count != sum(DEFERRED_TABLES['EXPECTED_CARDS_BY_YEAR_LEVEL'][key] for key in DEFERRED_SITTINGS):
+        raise AssertionError('Art deferred card count does not match its sittings')
     if len(cards) != total or len({card['id'] for card in cards}) != total:
         raise AssertionError(f'Art corpus must contain exactly {total} unique cards')
     if sum(card['level'] == 'higher' for card in cards) != higher:
@@ -2762,10 +2968,7 @@ def build() -> tuple[dict[str, Any], dict[str, Any]]:
         'auditedYears': list(AUDITED_YEARS),
         # Lifted from each audited year's scheme by art_printed.py; the cards
         # of that year and level show these and nothing written by us.
-        'descriptors': {
-            f'{year}-{level}': printed_scheme(year, level)
-            for year in AUDITED_YEARS if year >= 2023 for level in LEVELS
-        },
+        'descriptors': descriptors,
         'cards': cards,
     }
     census = {
@@ -2790,11 +2993,15 @@ def main() -> int:
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
     runtime, census = build()
+    with open(SIZES, encoding='utf-8') as handle:
+        sizes = json.load(handle)
+    sizes['art'] = {level: sum(card['level'] == level for card in runtime['cards']) for level in LEVELS}
     outputs = ((OUT, runtime), (CENSUS_OUT, census))
+    texts = [(path, encoded(value)) for path, value in outputs] + [(SIZES, json.dumps(sizes, indent=1) + '\n')]
     if args.check:
         stale = []
-        for path, value in outputs:
-            if not os.path.exists(path) or open(path, encoding='utf-8').read() != encoded(value):
+        for path, text in texts:
+            if not os.path.exists(path) or open(path, encoding='utf-8').read() != text:
                 stale.append(os.path.relpath(path, ROOT))
         if stale:
             print('Art generated files are stale: ' + ', '.join(stale), file=sys.stderr)
@@ -2803,10 +3010,10 @@ def main() -> int:
               f"{len(census['papers'])}-paper task census.")
         return 0
 
-    for path, value in outputs:
+    for path, text in texts:
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, 'w', encoding='utf-8') as handle:
-            handle.write(encoded(value))
+            handle.write(text)
     higher = sum(card['level'] == 'higher' for card in runtime['cards'])
     print(f"Art: authored {runtime['cardCount']} cards ({higher} Higher, {runtime['cardCount'] - higher} Ordinary).")
     return 0

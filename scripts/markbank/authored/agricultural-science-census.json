@@ -44601,6 +44601,1472 @@
           ]
         }
       ]
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "sitting": "deferred",
+      "paperFileid": "LC024ALP000EV-deferred.pdf",
+      "sourceHashes": {
+        "deferredexams": "8affbd652ab012698a944549855b0f8d209af7e5a12a2b6010bc95d46b1af768",
+        "deferredmarkingschemes": "19b2cc3ef9c1bd460f2ecf1688395cae7a319f3d3da61dca197e4b1d8643f67e"
+      },
+      "status": "boundary-reviewed",
+      "baseTasks": [
+        {
+          "ref": "2023 HL Q1(a)(i) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 3,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 11,
+            "text": "Mainly midlands and eastern counties"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q1(a)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q1(a)(ii) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 3,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 11,
+            "text": "Free draining / prone to drought"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q1(a)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q1(b)(i) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 3,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 11,
+            "text": "Parent material / climate / living organisms"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q1(b)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q1(b)(ii) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 3,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 11,
+            "text": "Parent rock is weathered into smaller particles"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q1(b)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q2(a) — Deferred sitting",
+          "marksPerResponse": 1,
+          "paperPage": 4,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 12,
+            "text": "responsible for milk let down by placing a tick"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q2(a) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q2(b) — Deferred sitting",
+          "marksPerResponse": 3,
+          "paperPage": 4,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 12,
+            "text": "Reduced milk yield"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q2(b) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q2(c) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 4,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 12,
+            "text": "have a familiar person with the new operator"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q2(c) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q3(a) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 5,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 12,
+            "text": "Reason: determining the type of plants present"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q3(a) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q3(b) — Deferred sitting",
+          "marksPerResponse": 2,
+          "paperPage": 5,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 12,
+            "text": "Quadrat was thrown a number of times"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q3(b) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q3(c) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 5,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 12,
+            "text": "A = Dandelion"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q3(c) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q4(a) — Deferred sitting",
+          "marksPerResponse": 2,
+          "paperPage": 6,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 12,
+            "text": "the process by which a water becomes enriched in dissolved nutrients"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q4(a) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q4(b) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 6,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 12,
+            "text": "Spread fertiliser in suitable conditions"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q4(b) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q4(c) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 6,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 12,
+            "text": "Slurry spreader with umbilical cord"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q4(c) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q5(a) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 7,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 13,
+            "text": "A: Aberdeen Angus (poly)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q5(a) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q5(b) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 7,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 13,
+            "text": "early maturing / polled / easy calving / produces lean carcass"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q5(b) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q5(c) — Deferred sitting",
+          "marksPerResponse": 2,
+          "paperPage": 7,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 13,
+            "text": "Early maturing breeds and finish early"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q5(c) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q6(a)(i) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 8,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 13,
+            "text": "Biodiversity is all the different kinds of life"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q6(a)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q6(a)(ii) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 8,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 13,
+            "text": "Indirect = Contaminated food or drinking water"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q6(a)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q6(a)(iii) — Deferred sitting",
+          "marksPerResponse": 2,
+          "paperPage": 8,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 13,
+            "text": "Isolate purchased animals / isolate sick animals"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q6(a)(iii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q6(b)(i) — Deferred sitting",
+          "marksPerResponse": 1,
+          "paperPage": 9,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 14,
+            "text": "Ease of administration"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q6(b)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q6(b)(ii) — Deferred sitting",
+          "marksPerResponse": 3,
+          "paperPage": 9,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 14,
+            "text": "pour-on by placing a tick"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q6(b)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q6(b)(iii) — Deferred sitting",
+          "marksPerResponse": 3,
+          "paperPage": 9,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 14,
+            "text": "Lice / tick"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q6(b)(iii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q6(b)(iv) — Deferred sitting",
+          "marksPerResponse": 3,
+          "paperPage": 9,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 14,
+            "text": "Animals are securely contained"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q6(b)(iv) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q7(a) — Deferred sitting",
+          "marksPerResponse": 2,
+          "paperPage": 10,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 14,
+            "text": "Dehydration"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q7(a) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q7(b) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 10,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 14,
+            "text": "Grass has reached inflorescence stage"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q7(b) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q7(c) — Deferred sitting",
+          "marksPerResponse": 2,
+          "paperPage": 10,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 14,
+            "text": "Prevent fire (overheating)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q7(c) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q8(a) — Deferred sitting",
+          "marksPerResponse": 3,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 14,
+            "text": "Cow 4"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q8(a) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q8(b) — Deferred sitting",
+          "marksPerResponse": 3,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 14,
+            "text": "Illness – mastitis or lameness"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q8(b) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q8(c) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 14,
+            "text": "43 x 220 = 9460 litres"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q8(c) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q9(a)(i) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 12,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 15,
+            "text": "Weight loss / diarrhoea with normal appetite"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q9(a)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q9(a)(ii) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 12,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 15,
+            "text": "Provide mains water and keep troughs clean"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q9(a)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q9(b)(i) — Deferred sitting",
+          "marksPerResponse": 3,
+          "paperPage": 13,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 15,
+            "text": "Red water"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q9(b)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q9(b)(ii) — Deferred sitting",
+          "marksPerResponse": 3,
+          "paperPage": 13,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 15,
+            "text": "Injection to kill parasite / blood transfusion"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q9(b)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q9(b)(iii) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 13,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 15,
+            "text": "Good grazing management"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q9(b)(iii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q10(a) — Deferred sitting",
+          "marksPerResponse": 9,
+          "paperPage": 14,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 15,
+            "text": "Helps makes informed decisions about animal performance"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q10(a) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q10(b) — Deferred sitting",
+          "marksPerResponse": 1,
+          "paperPage": 14,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 15,
+            "text": "slaughter weight by placing a tick"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q10(b) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q11(a) — Deferred sitting",
+          "marksPerResponse": 3,
+          "paperPage": 15,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 16,
+            "text": "pH 5"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q11(a) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q11(b) — Deferred sitting",
+          "marksPerResponse": 3,
+          "paperPage": 15,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 16,
+            "text": "only 32% of the seeds will germinate"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q11(b) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q11(c) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 15,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 16,
+            "text": "amount of nutrients available to plants"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q11(c) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q12(a)(i) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 16,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 16,
+            "text": "When a portion of food returns from a ruminant’s stomach"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q12(a)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q12(a)(ii) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 16,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 16,
+            "text": "Feed the cows at dusk"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q12(a)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q12(b)(i) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 17,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 16,
+            "text": "water travels up through xylem vessels in the stem"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 2,
+            "options": [
+              "Roots",
+              "Stems",
+              "Leaves"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2023 HL Q12(b)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q12(b)(ii) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 17,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 16,
+            "text": "Remove heavily infested leaves"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q12(b)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q13(a)(i) — Deferred sitting",
+          "marksPerResponse": 8,
+          "paperPage": 20,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 17,
+            "text": "The soil type / weather condition"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q13(a)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q13(a)(ii) — Deferred sitting",
+          "marksPerResponse": 8,
+          "paperPage": 20,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 17,
+            "text": "Based on Up-to-date soil samples"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q13(a)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q13(b)(i) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 21,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 17,
+            "text": "As CEC increases, more nutrients are attached to soil particles"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q13(b)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q13(b)(ii) — Deferred sitting",
+          "marksPerResponse": 12,
+          "paperPage": 21,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 17,
+            "text": "test the leachate for calcium by adding"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q13(b)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q13(c)(i) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 22,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 17,
+            "text": "Animal housing"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q13(c)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q13(c)(ii) — Deferred sitting",
+          "marksPerResponse": 10,
+          "paperPage": 22,
+          "schemePage": 17,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 17,
+            "text": "so by extending the grazing season it will reduce the emissions"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q13(c)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q13(d) — Deferred sitting",
+          "marksPerResponse": 16,
+          "paperPage": 23,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 18,
+            "text": "Poaching: loss of soils by the damaging action"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q13(d) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q14(a)(i) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 24,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 18,
+            "text": "D = 5 x 5 x 1.3 = 32.5"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q14(a)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q14(a)(ii) — Deferred sitting",
+          "marksPerResponse": 12,
+          "paperPage": 24,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 18,
+            "text": "306.8 X 1.25 = 383.5"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q14(a)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q14(a)(iii) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 24,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 18,
+            "text": "Not enough silage made"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q14(a)(iii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q14(a)(iv) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 25,
+          "schemePage": 18,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 18,
+            "text": "Ewes are smaller animals"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q14(a)(iv) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q14(a)(v) — Deferred sitting",
+          "marksPerResponse": 3,
+          "paperPage": 25,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 19,
+            "text": "Only some of the heifers born on the farm are kept"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q14(a)(v) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q14(a)(vi) — Deferred sitting",
+          "marksPerResponse": 2,
+          "paperPage": 25,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 19,
+            "text": "increase concentrate feeding"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q14(a)(vi) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q14(b)(i) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 25,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 19,
+            "text": "make opportunistic silage"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q14(b)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q14(b)(ii) — Deferred sitting",
+          "marksPerResponse": 3,
+          "paperPage": 26,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 19,
+            "text": "flower head is enclosed in flag leaf"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q14(b)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q14(c) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 26,
+          "schemePage": 19,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 19,
+            "text": "cut in afternoon when sugar is highest"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q14(c) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q15(a)(i) — Deferred sitting",
+          "marksPerResponse": 12,
+          "paperPage": 27,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 20,
+            "text": "Plant that completes its lifecycle in one year"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q15(a)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q15(a)(ii) — Deferred sitting",
+          "marksPerResponse": 8,
+          "paperPage": 27,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 20,
+            "text": "Perennial ryegrass – persistent growth"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q15(a)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q15(a)(iii) — Deferred sitting",
+          "marksPerResponse": 8,
+          "paperPage": 28,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 20,
+            "text": "Ireland has a temperate climate"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q15(a)(iii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q15(b) — Deferred sitting",
+          "marksPerResponse": 12,
+          "paperPage": 28,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 20,
+            "text": "2 areas of land marked out"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q15(b) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q15(c)(i) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 29,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 20,
+            "text": "gene editing or CRISPR-Cas9"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q15(c)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q15(c)(ii) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 29,
+          "schemePage": 20,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 20,
+            "text": "Increase animal production / allow for extended grazing"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q15(c)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q16(a)(i) — Deferred sitting",
+          "marksPerResponse": 2,
+          "paperPage": 30,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 21,
+            "text": "Soil which contains a high percentage of sand"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q16(a)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q16(a)(ii) — Deferred sitting",
+          "marksPerResponse": 8,
+          "paperPage": 30,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 21,
+            "text": "Dependent: quantity of nutrients leached"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q16(a)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q16(a)(iii) — Deferred sitting",
+          "marksPerResponse": 9,
+          "paperPage": 30,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 21,
+            "text": "Soil with higher sand content will have better drainage"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q16(a)(iii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q16(a)(iv) — Deferred sitting",
+          "marksPerResponse": 12,
+          "paperPage": 31,
+          "schemePage": 21,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 21,
+            "text": "Name: sedimentation / hand (feel) / sieve"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q16(a)(iv) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q16(a)(v) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 31,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 22,
+            "text": "electronic balance not calibrated"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q16(a)(v) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q16(b)(i) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 32,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 22,
+            "text": "A = Loam"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q16(b)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q16(b)(ii) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 32,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 22,
+            "text": "Reason: Less drainage in clay soil"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q16(b)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q17(a)(i) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 33,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 22,
+            "text": "A = Abomasum"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q17(a)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q17(a)(ii) — Deferred sitting",
+          "marksPerResponse": 12,
+          "paperPage": 33,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 22,
+            "text": "Expensive / increase labour"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q17(a)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q17(b) — Deferred sitting",
+          "marksPerResponse": 12,
+          "paperPage": 35,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 22,
+            "text": "Pigs produce manure which is high in nutrients"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q17(b) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q17(c)(i) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 36,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 22,
+            "text": "Purchased feed"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q17(c)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q17(c)(ii) — Deferred sitting",
+          "marksPerResponse": 8,
+          "paperPage": 36,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 22,
+            "text": "Year: 2022"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q17(c)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q17(c)(iii) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 36,
+          "schemePage": 22,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 22,
+            "text": "grow own protein source (beans)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q17(c)(iii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q18(a)(i) — Deferred sitting",
+          "marksPerResponse": 18,
+          "paperPage": 37,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 23,
+            "text": "200 x 1.37 = €274"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q18(a)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q18(a)(ii) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 38,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 23,
+            "text": "the land that runs alongside our rivers and streams"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q18(a)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q18(b) — Deferred sitting",
+          "marksPerResponse": 16,
+          "paperPage": 38,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 23,
+            "text": "Point for correct cycle shown (4)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q18(b) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q18(c)(i) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 39,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 23,
+            "text": "Adds Ca and Mg to soil"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q18(c)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q18(c)(ii) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 39,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 23,
+            "text": "earthworms like a pH 6 – 7"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q18(c)(ii) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q18(d)(i) — Deferred sitting",
+          "marksPerResponse": 4,
+          "paperPage": 39,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 23,
+            "text": "Aphid"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q18(d)(i) — Deferred sitting"
+          ]
+        },
+        {
+          "ref": "2023 HL Q18(d)(ii) — Deferred sitting",
+          "marksPerResponse": 6,
+          "paperPage": 39,
+          "schemePage": 23,
+          "sourceCue": {
+            "kind": "deferredmarkingschemes",
+            "page": 23,
+            "text": "Addition of ladybirds to crop"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2023 HL Q18(d)(ii) — Deferred sitting"
+          ]
+        }
+      ]
     }
   ],
   "boundaryRules": [
@@ -52906,6 +54372,326 @@
       ],
       "printedQuestionMarks": 60,
       "sourceException": null
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q1",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q2",
+      "units": {
+        "(a)": 1,
+        "(b)": 3,
+        "(c)": 6
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q3",
+      "units": {
+        "(a)": 4,
+        "(b)": 2,
+        "(c)": 4
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q4",
+      "units": {
+        "(a)": 2,
+        "(b)": 4,
+        "(c)": 4
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q5",
+      "units": {
+        "(a)": 4,
+        "(b)": 4,
+        "(c)": 2
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q6",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q7",
+      "units": {
+        "(a)": 2,
+        "(b)": 6,
+        "(c)": 2
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q8",
+      "units": {
+        "(a)": 3,
+        "(b)": 3,
+        "(c)": 4
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q9",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q10",
+      "units": {
+        "(a)": 9,
+        "(b)": 1
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q11",
+      "units": {
+        "(a)": 3,
+        "(b)": 3,
+        "(c)": 4
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q12",
+      "units": {
+        "(a)": 10,
+        "(b)": 10
+      },
+      "rule": "either (a) or (b)",
+      "candidateTotalsFromScheme": [
+        10
+      ],
+      "printedQuestionMarks": 10,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q13",
+      "units": {
+        "(a)": 16,
+        "(b)": 18,
+        "(c)": 16,
+        "(d)": 16
+      },
+      "rule": "both (a) and (b) with either (c) or (d)",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q14",
+      "units": {
+        "(a)": 35,
+        "(b)": 9,
+        "(c)": 6
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q15",
+      "units": {
+        "(a)": 28,
+        "(b)": 12,
+        "(c)": 10
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q16",
+      "units": {
+        "(a)": 37,
+        "(b)": 12
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        49
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": "The deferred scheme's published allocations for Q16 total 49, not the printed 50: (a) 2 + (4+4) + (5+2+2) + 3(4) + 6 = 37, (b) (3+3) + (3+3) = 12. Preserve the scheme and disclose the difference.",
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q17",
+      "units": {
+        "(a)": 18,
+        "(b)": 12,
+        "(c)": 20
+      },
+      "rule": "all parts",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null,
+      "sitting": "deferred"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q18",
+      "units": {
+        "(a)": 24,
+        "(b)": 16,
+        "(c)": 10,
+        "(d)": 10
+      },
+      "rule": "both (a) and (b) with either (c) or (d)",
+      "candidateTotalsFromScheme": [
+        50
+      ],
+      "printedQuestionMarks": 50,
+      "sourceException": null,
+      "sitting": "deferred"
     }
   ]
 }

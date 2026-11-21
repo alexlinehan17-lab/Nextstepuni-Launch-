@@ -3527,5 +3527,62 @@
     "secondary": "construction-studies-0-13"
    }
   ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC029ALP000EV-deferred.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-18",
+    "secondary": "construction-studies-0-15"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-17"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
  }
 ]

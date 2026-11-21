@@ -42,7 +42,11 @@ const reviewed2026 = JSON.parse(fs.readFileSync(REVIEWED_2026_PATH, 'utf8'));
 const reviewedOmissions = JSON.parse(
   fs.readFileSync(REVIEWED_OMISSIONS_PATH, 'utf8'),
 );
-const localPapers = JSON.parse(fs.readFileSync(TAGS_PATH, 'utf8'));
+// The June sittings. A carded deferred sitting's paper ("LC022ALP000EV-deferred.pdf", after June's in the tags)
+// is the single model's: its questions are filed part by part (scripts/atlas-model/filings/chemistry.json), and
+// its tags and anchors are written and checked by chemistry_deferred.py. Its factual headings stay as below.
+const localPapers = JSON.parse(fs.readFileSync(TAGS_PATH, 'utf8'))
+  .filter(paper => !paper.fileid.endsWith('-deferred.pdf'));
 const preservationBaseline = JSON.parse(fs.readFileSync(BASELINE_PATH, 'utf8'));
 
 const VARIANTS = [

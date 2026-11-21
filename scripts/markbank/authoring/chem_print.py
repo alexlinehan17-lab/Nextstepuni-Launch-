@@ -1194,7 +1194,13 @@ def learn_repairs(texts):
 # every one of them in the Chemistry corpus comes from those two fonts.
 # 0xB5 (proportional) is SymbolMT's ∝ in the 2019 Ordinary scheme's Q4(b),
 # "p ∝ 1/V / V ∝ 1/p" (PDF page 8), which the shared map reads as nothing.
-SYMBOL_FONT = {'\uf0de': '⇒', '\uf0b4': '×', '\uf0b5': '∝'}
+# The 2022 Higher deferred scheme sets three more in SymbolMT, read by the same encoding (0x61 alpha, 0x62
+# beta, 0xBA equivalence) and each cropped out of the page and looked at: "alpha (α)" and "beta (β)" (PDF
+# page 13) and "(CH≡CH)" (page 16), which the shared map reads as nothing; the 2023 Higher deferred scheme
+# prints the "≡" once. No June Chemistry paper or scheme holds any of the three. (Its gamma, SymbolMT 0x67,
+# reaches this reader as the shared map's Wingdings 3 arrow: DEFERRED_SCHEME_REPAIRS.)
+SYMBOL_FONT = {'\uf0de': '⇒', '\uf0b4': '×', '\uf0b5': '∝',
+               '\uf061': 'α', '\uf062': 'β', '\uf0ba': '≡'}
 
 
 def display(t):
@@ -1223,15 +1229,86 @@ OLD_OL_HEADS.add((2011, 'hl'))
 PAPER_ALT_LETTERS[(2011, 'hl')] = {('11', 'c')}
 
 
+# A deferred scheme's misprints, and glyphs the shared map misreads, that stop the reader reading what it
+# means, each (printed, meant) and found on exactly one line: 2022 HL Q1(b) heads its menu "ANY 0NE:" with
+# a zero for the O.
+DEFERRED_SCHEME_REPAIRS = {
+    # Q5(b)(i) prints "gamma (γ)" twice in SymbolMT (PDF page 13, x 175, y 318 and 332; 0x67, cropped and looked
+    # at), which the shared glyph map reads as Wingdings 3's 0x67, "→".
+    (2022, 'hl'): (('ANY 0NE:', 'ANY ONE:'), ('gamma (→) is more', 'gamma (γ) is more'),
+                   ('gamma (→) travels', 'gamma (γ) travels')),
+    # Q11(a)(iii) prints "(Hδ+)" and "(Clδ–)" with the delta in SymbolMT (PDF page 25, x 170, y 233 and 247; 0x64,
+    # cropped and looked at), its sign set as a script after the bracket: no shared map reads the glyph (and June's
+    # 2017 Higher scheme holds the same glyph, so it is repaired here, for this scheme, not in SYMBOL_FONT).
+    (2023, 'hl'): (('(H\uf064)+', '(Hδ+)'), ('(Cl\uf064)–', '(Clδ–)')),
+}
+# A negative charge the deferred 2022 Higher documents print as a small raised "–" set beside its formula, which the
+# text layer reads as a line of its own a few points higher ("MnO₄" then "– + 5Fe²⁺"): it was joined as a spaced dash,
+# "MnO₄ – + 5Fe²⁺". Each is named by its page and place and looked at in a crop: the paper's equation in Q1(e) (page 2)
+# and the scheme's "MnO₄⁻" in Q1(b) and Q1(e)(i) (page 6) and "MnO₄⁻", "Cr₂O₇⁻" in Q10(a) (page 20). The minus joins
+# the formula it is printed against, as "⁻"; whatever the raised run prints after it stays where it is.
+DEFERRED_RAISED_MINUS = {
+    (2022, 'hl'): {'paper': ((2, 184.1, 456.5),),
+                   'scheme': ((6, 506.4, 144.3), (6, 322.8, 447.4), (20, 530.4, 194.6), (20, 523.5, 210.0))},
+}
+
+
+def attach_raised_minus(lines, places):
+    """The lines with each named raised minus joined to the formula before it (DEFERRED_RAISED_MINUS)."""
+    lines = list(lines)
+    for page, x0, y0 in places:
+        hits = [i for i, l in enumerate(lines)
+                if l.page == page and abs(l.x0 - x0) < 1 and abs(l.y0 - y0) < 1 and l.text.startswith('–')]
+        assert len(hits) == 1, (page, x0, y0, hits)
+        line, before = lines[hits[0]], lines[hits[0] - 1]
+        assert before.page == page and abs(before.y0 - y0) < 4 and before.x0 < x0, (page, x0, y0, before.text)
+        rest = line.text[1:].strip()
+        if not rest or rest[0] in ',.;)':
+            before.text += '⁻' + rest
+            del lines[hits[0]]
+        else:
+            before.text += '⁻'
+            line.text = rest
+    return lines
+
+
+DEFERRED_FOOTER = re.compile(r'^(?=.)(ATAL Chemistry 20\d\d)?\s*(Leaving Certificate Deferred Examination \(M\d+C\))?$')
+# A deferred scheme's part markers printed wrong, each named by its page and place: (page, x0, y0, printed, meant).
+DEFERRED_SCHEME_MARKERS = {
+    # 2022 OL: Q3(e) prints its second roman as "(i)" (PDF page 7, x 142, y 430), over (ii)'s answer "14000 p.p.m.";
+    # Q8 prints "(e)" twice, the second (page 12, x 57, y 290) over (f)'s answer "A / ethene / C₂H₄ poly(ethene)",
+    # the paper's "Which one of these compounds polymerises to give a widely used plastic?".
+    (2022, 'ol'): ((7, 142, 430, '(i)', '(ii)'), (12, 57, 290, '(e)', '(f)')),
+}
+
+
 class Printed:
     """One sitting in the printed layout: its paper and its scheme, split into parts."""
 
-    def __init__(self, year, lvl, figures=False):
+    def __init__(self, year, lvl, figures=False, sitting=None):
         self.year, self.lvl = year, lvl
-        self.paper_path = os.path.join(PAPERS, f'{year}-{lvl}-paper.pdf')
-        self.scheme_path = os.path.join(SCHEMES, f'{year}-{lvl}.pdf')
+        # The SEC's deferred sitting (2022 and 2023 Higher): its own paper and scheme, linked beside
+        # June's as <year>-<lvl>-deferred-paper.pdf and schemes/<year>-<lvl>-deferred.pdf (the archive
+        # files both under June's id). None of the sitting-keyed repairs below names it.
+        self.sitting = sitting
+        self.stem = f'{year}-{lvl}-deferred' if sitting == 'deferred' else f'{year}-{lvl}'
+        # chem_print_figures.CROPS keys a deferred sitting's crops (year, '<lvl>-deferred').
+        self.crop_key = (year, f'{lvl}-deferred') if sitting == 'deferred' else (year, lvl)
+        self.paper_path = os.path.join(PAPERS, f'{self.stem}-paper.pdf')
+        self.scheme_path = os.path.join(SCHEMES, f'{self.stem}.pdf')
+        if sitting == 'deferred':
+            deferred_key = (year, lvl)
+            year = lvl = None   # no June repair keyed (year, lvl) may touch a deferred document
         # (2013 OL: a head set in one run with its words, split_heads.)
         self.paper_lines = split_heads(read_lines(self.paper_path), year, lvl)
+        if sitting == 'deferred':
+            # The deferred papers' running footer reads "Leaving Certificate Examination" with no year (each page,
+            # x 57, y 782), which FOOTER ("... 2022") does not read: it was welded onto the asks either side of a
+            # page break ("... the mass of the unused reactant. Leaving Certificate Examination").
+            self.paper_lines = [l for l in self.paper_lines
+                                if not (l.y0 > 765 and l.text == 'Leaving Certificate Examination')]
+            self.paper_lines = attach_raised_minus(
+                self.paper_lines, DEFERRED_RAISED_MINUS.get(deferred_key, {}).get('paper', ()))
         if (year, lvl) == (2012, 'hl'):
             # 2012 HL paper page 5 sets the state symbol "(l)" of the product Q6(a)(iii) draws in
             # full (2,2,4-trimethylpentane) as a run of its own after the structure's last "H"
@@ -1246,6 +1323,23 @@ class Printed:
         if figures:
             self.paper_lines = self._outside_figures(self.paper_lines)
         self.scheme_lines = read_lines(self.scheme_path)
+        if sitting == 'deferred':
+            # A deferred scheme's own misprints, each repaired where it stands (DEFERRED_SCHEME_REPAIRS).
+            for printed, meant in DEFERRED_SCHEME_REPAIRS.get(deferred_key, ()):
+                hits = [l for l in self.scheme_lines if printed in l.text]
+                assert len(hits) == 1, (deferred_key, printed, [l.text for l in hits])
+                hits[0].text = hits[0].text.replace(printed, meant)
+            # The 2023 Higher deferred scheme's running footer, "ATAL Chemistry 2023" over "Leaving Certificate
+            # Deferred Examination (M34C)" (every answer page, x 57, y 782 and 796), sometimes read as one run, which
+            # FOOTER does not read: it was filed as answer text.
+            self.scheme_lines = [l for l in self.scheme_lines if not (l.y0 > 765 and DEFERRED_FOOTER.match(l.text))]
+            self.scheme_lines = attach_raised_minus(
+                self.scheme_lines, DEFERRED_RAISED_MINUS.get(deferred_key, {}).get('scheme', ()))
+            for page, x0, y0, printed, meant in DEFERRED_SCHEME_MARKERS.get(deferred_key, ()):
+                hits = [l for l in self.scheme_lines
+                        if l.page == page and abs(l.x0 - x0) < 1.5 and abs(l.y0 - y0) < 1.5]
+                assert len(hits) == 1 and hits[0].text == printed, (deferred_key, page, x0, y0, hits)
+                hits[0].text = meant
         if (year, lvl) == (2019, 'hl'):
             # 2019 HL scheme PDF page 29: a "(c)" at the letters' margin (x 49.6,
             # y 339.4) lies under the white fill of Q11(b)(ii)'s third working box;
@@ -1423,7 +1517,7 @@ class Printed:
             self.scheme_lines = cue_lines(self.scheme_lines)
         self.sseg, _ = segments(self.scheme_lines, answers=True, alt_letters=alt_letters,
                                 cue=self.cue)
-        self.scheme_md = open(os.path.join(SCHEMES, f'{year}-{lvl}.md')).read()
+        self.scheme_md = open(os.path.join(SCHEMES, f'{self.stem}.md')).read()
         # The gate folds the SEC's ligature glyphs before it compares ("soŌ"
         # is "soft"); so does this guide to it.
         lig = ligatures()
@@ -1441,7 +1535,7 @@ class Printed:
         out of the asks and lead-ins. A part marker or a mark inside a crop
         means the rectangle is wrong, and stops the run."""
         from chem_print_figures import CROPS
-        boxes = [(page, rect) for _n, src, page, rect in CROPS.get((self.year, self.lvl), [])
+        boxes = [(page, rect) for _n, src, page, rect in CROPS.get(self.crop_key, [])
                  if src in ('paper', 'paper-image', 'labels')]
         kept, emptied = [], set()
         for l in lines:
@@ -1467,7 +1561,7 @@ class Printed:
         are the picture's. A mark cell or a part marker inside means the
         rectangle is wrong, and stops the run."""
         from chem_print_figures import CROPS
-        boxes = [(page, rect) for _n, src, page, rect in CROPS.get((self.year, self.lvl), [])
+        boxes = [(page, rect) for _n, src, page, rect in CROPS.get(self.crop_key, [])
                  if src in ('scheme-art', 'scheme-labels')]
         if not boxes:
             return lines
@@ -1642,7 +1736,7 @@ class Printed:
                   " const md = m.comparableScheme(fs.readFileSync(process.argv[2], 'utf8'));"
                   " console.log(m.claimMatches(md, process.argv[3]) ? 'yes' : 'no');")
             url = 'file://' + os.path.join(ROOT, 'scripts', 'markbank', 'schemeText.mjs')
-            md = os.path.join(SCHEMES, f'{self.year}-{self.lvl}.md')
+            md = os.path.join(SCHEMES, f'{self.stem}.md')
             out = subprocess.run(['node', '--input-type=module', '-e', js, url, md, claim],
                                  capture_output=True, text=True, check=True).stdout.strip()
             cache[claim] = out == 'yes'
@@ -1701,7 +1795,7 @@ class Cards:
         self.P = P
         self.cards, self.open = [], []
         self.level = 'higher' if P.lvl == 'hl' else 'ordinary'
-        self.prefix = f'chem-{P.year}-{P.lvl}-'
+        self.prefix = f'chem-{P.year}-{P.lvl}-' + ('deferred-' if getattr(P, 'sitting', None) == 'deferred' else '')
         self._card = make_card('chemistry')
         self._fixes_used = set()
         # Carry a lead-in printed after one letter into the next letter's
@@ -2050,6 +2144,8 @@ class Cards:
         # ("2025 HL Q10(c)(i) — steps 1–5"): the build keeps one card per
         # citation, and the reconciler reads only what precedes the " — ".
         ref = self.ref(keys) + (f' — {ref_suffix}' if ref_suffix else '')
+        if getattr(self.P, 'sitting', None) == 'deferred':
+            ref += ' — Deferred sitting'   # a deferred card says so twice: its id and its citation
         c = self._card(full, self.P.year, self.level, topic,
                        concept, ref, qtext or self.qtext(keys, deep=deep),
                        notation or '', total, rows, notes, stem=stem,

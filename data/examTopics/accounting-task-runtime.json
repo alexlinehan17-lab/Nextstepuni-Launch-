@@ -24,8 +24,10 @@
     "accounting|2020|LC032GLP000EV.pdf",
     "accounting|2021|LC032ALP000EV.pdf",
     "accounting|2021|LC032GLP000EV.pdf",
+    "accounting|2022|LC032ALP000EV-deferred.pdf",
     "accounting|2022|LC032ALP000EV.pdf",
     "accounting|2022|LC032GLP000EV.pdf",
+    "accounting|2023|LC032ALP000EV-deferred.pdf",
     "accounting|2023|LC032ALP000EV.pdf",
     "accounting|2023|LC032GLP000EV.pdf",
     "accounting|2024|LC032ALP000EV.pdf",
@@ -8708,6 +8710,393 @@
     {
       "level": "higher",
       "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "1A(a)",
+      "topicIds": [
+        "accounting-higher-final-accounts-company"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "1A(b)",
+      "topicIds": [
+        "accounting-higher-final-accounts-company"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "1B(a)-manufacturing",
+      "topicIds": [
+        "accounting-higher-final-accounts-manufacturing"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "1B(a)-trading-profit",
+      "topicIds": [
+        "accounting-higher-final-accounts-manufacturing"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "1B(b)",
+      "topicIds": [
+        "accounting-higher-final-accounts-manufacturing"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "2(a)",
+      "topicIds": [
+        "accounting-higher-depreciation-of-fixed-assets"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "2(b)",
+      "topicIds": [
+        "accounting-higher-depreciation-of-fixed-assets"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "2(c)",
+      "topicIds": [
+        "accounting-higher-depreciation-of-fixed-assets"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "2(d)(i)",
+      "topicIds": [
+        "accounting-higher-depreciation-of-fixed-assets"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "2(d)(ii)",
+      "topicIds": [
+        "accounting-higher-depreciation-of-fixed-assets"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "3(a)",
+      "topicIds": [
+        "accounting-higher-control-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "3(b)",
+      "topicIds": [
+        "accounting-higher-control-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "3(c)",
+      "topicIds": [
+        "accounting-higher-control-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "4(a)-profit-loss",
+      "topicIds": [
+        "accounting-higher-published-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "4(a)-notes",
+      "topicIds": [
+        "accounting-higher-published-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "4(b)",
+      "topicIds": [
+        "accounting-higher-published-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "5(a)(i)",
+      "topicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "5(a)(ii)",
+      "topicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "5(a)(iii)",
+      "topicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "5(a)(iv)",
+      "topicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "5(a)(v)",
+      "topicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "5(b)",
+      "topicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "5(c)",
+      "topicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "6(a)",
+      "topicIds": [
+        "accounting-higher-club-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "6(b)",
+      "topicIds": [
+        "accounting-higher-club-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "6(c)",
+      "topicIds": [
+        "accounting-higher-club-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "6(d)",
+      "topicIds": [
+        "accounting-higher-club-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "7(a)",
+      "topicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "7(b)",
+      "topicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "7(c)",
+      "topicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "7(d)",
+      "topicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "7(e)",
+      "topicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(a)(i)-break-even",
+      "topicIds": [
+        "accounting-higher-costing-marginal"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(a)(i)-margin-of-safety",
+      "topicIds": [
+        "accounting-higher-costing-marginal"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(a)(ii)",
+      "topicIds": [
+        "accounting-higher-costing-marginal"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(a)(iii)",
+      "topicIds": [
+        "accounting-higher-costing-marginal"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(a)(iv)",
+      "topicIds": [
+        "accounting-higher-costing-marginal"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(b)(i)",
+      "topicIds": [
+        "accounting-higher-budgeting-flexible"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(b)(ii)",
+      "topicIds": [
+        "accounting-higher-budgeting-flexible"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(b)(iii)",
+      "topicIds": [
+        "accounting-higher-budgeting-flexible"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "9(a)",
+      "topicIds": [
+        "accounting-higher-budgeting-cash"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "9(b)",
+      "topicIds": [
+        "accounting-higher-budgeting-cash"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "9(c)",
+      "topicIds": [
+        "accounting-higher-budgeting-cash"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2022,
       "fileid": "LC032ALP000EV.pdf",
       "n": "1A(a)",
       "topicIds": [
@@ -9405,6 +9794,312 @@
       "n": "9(c)",
       "topicIds": [
         "accounting-ordinary-budgeting-cash"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "1A(a)",
+      "topicIds": [
+        "accounting-higher-final-accounts-sole-trader"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "1A(b)",
+      "topicIds": [
+        "accounting-higher-final-accounts-sole-trader"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "1B(a)",
+      "topicIds": [
+        "accounting-higher-final-accounts-manufacturing"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "1B(b)",
+      "topicIds": [
+        "accounting-higher-final-accounts-manufacturing"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "2(a)",
+      "topicIds": [
+        "accounting-higher-service-firms"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "2(b)",
+      "topicIds": [
+        "accounting-higher-service-firms"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "2(c)",
+      "topicIds": [
+        "accounting-higher-service-firms"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "3",
+      "topicIds": [
+        "accounting-higher-tabular-statements"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "4(a)",
+      "topicIds": [
+        "accounting-higher-control-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "4(b)",
+      "topicIds": [
+        "accounting-higher-control-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "4(c)",
+      "topicIds": [
+        "accounting-higher-control-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "5(a)(i)",
+      "topicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "5(a)(ii)",
+      "topicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "5(a)(iii)",
+      "topicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "5(a)(iv)",
+      "topicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "5(a)(v)",
+      "topicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "5(b)",
+      "topicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "5(c)",
+      "topicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "6(a)",
+      "topicIds": [
+        "accounting-higher-published-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "6(b)",
+      "topicIds": [
+        "accounting-higher-published-accounts"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "7(a)",
+      "topicIds": [
+        "accounting-higher-cash-flow-statements"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "7(b)",
+      "topicIds": [
+        "accounting-higher-cash-flow-statements"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(a)(i)-break-even",
+      "topicIds": [
+        "accounting-higher-costing-marginal"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(a)(i)-margin-of-safety",
+      "topicIds": [
+        "accounting-higher-costing-marginal"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(a)(ii)",
+      "topicIds": [
+        "accounting-higher-costing-marginal"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(a)(iii)",
+      "topicIds": [
+        "accounting-higher-costing-marginal"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(a)(iv)",
+      "topicIds": [
+        "accounting-higher-costing-marginal"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(a)(v)",
+      "topicIds": [
+        "accounting-higher-costing-marginal"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(b)(i)",
+      "topicIds": [
+        "accounting-higher-costing-job-product-stock-valuation-oh-apportionment"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(b)(ii)",
+      "topicIds": [
+        "accounting-higher-costing-job-product-stock-valuation-oh-apportionment"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "8(b)(iii)",
+      "topicIds": [
+        "accounting-higher-costing-job-product-stock-valuation-oh-apportionment"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "9(a)",
+      "topicIds": [
+        "accounting-higher-budgeting-cash"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "9(b)",
+      "topicIds": [
+        "accounting-higher-budgeting-cash"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "n": "9(c)",
+      "topicIds": [
+        "accounting-higher-budgeting-cash"
       ]
     },
     {

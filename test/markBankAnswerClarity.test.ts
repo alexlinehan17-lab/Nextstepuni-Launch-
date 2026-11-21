@@ -403,11 +403,12 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       }
       expect([...sums].sort((a, b) => a - b), `${card.id}/${criterion.label}: reachable marks`).toEqual([...criterion.permittedMarks].sort((a, b) => a - b));
     }
-    expect(criteria).toHaveLength(1269);
+    // June's 1,269 and the two deferred sittings' 197 (2022 and 2023 Higher, pe_review_<year>_hl_deferred.py).
+    expect(criteria).toHaveLength(1269 + 197);
     // 1230 before the residue shapes were read: "one mark per …" counted rows and rows per listed name, labels priced
     // without a colon, an extra "+1" as a step, ordinal responses as one counted row, and a ladder outranking a
     // printed breakdown that is not the criterion.
-    expect(structured).toHaveLength(1269);
+    expect(structured).toHaveLength(1269 + 197);
     expect(criteria.filter(({ criterion }) => !criterion.allocation).map(({ card, criterion }) => `${card.id}/${criterion.id}`)).toEqual([]);
     // "Accurate description: 4; some accuracy: 2." and "3 × 2 marks. Load: javelin…" still as prose, in those criteria only.
     const PE_PRICED = /:\s*\d+(?:\s*[–-]\s*\d+)?\s*[;.]|\b\d+\s*(?:×|x)\s*\d+\s*marks?|\b\d+\s*\+\s*\d+\s*marks?|\b\d+\s*marks?\b/i;
@@ -420,7 +421,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     const cards = [...ART_HIGHER, ...ART_ORDINARY].filter((card): card is SecRubricCard & { rubric: ArtRubric } => card.rubric.system === 'art');
     const criteria = cards.flatMap(card => card.rubric.criteria.map(criterion => ({ card, criterion })));
     const legacy = criteria.filter(({ criterion }) => criterion.rowMarks?.length);
-    expect(legacy).toHaveLength(2574);
+    // June's 2,574 and the carded deferred sittings' (2022 Higher: 118), each cut from its own printed table.
+    const isDeferred = (id: string) => /^art-\d{4}-(?:hl|ol)-deferred-/.test(id);
+    expect([legacy.filter(({ card }) => !isDeferred(card.id)).length, legacy.filter(({ card }) => isDeferred(card.id)).length])
+      .toEqual([2574, 118]);
     // 2023+ descriptor criteria keep their bands; only a printed table becomes rows.
     for (const { card, criterion } of criteria.filter(({ criterion }) => !criterion.rowMarks?.length)) {
       expect(criterion.allocation, card.id).toBeUndefined();
@@ -430,19 +434,22 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     let rows = 0;
     let cut = 0;
     const kept: string[] = [];
+    // The carded deferred sittings' rows, counted apart from June's.
+    const deferred = { rows: 0, cut: 0, kept: [] as string[] };
     for (const { card, criterion } of legacy) {
       const allocation = criterion.allocation!;
       const where = `${card.id}/${criterion.id}`;
       // The rows are the printed rows at the printed marks, and add up to the component.
       expect(allocation.rows.map(row => row.marks), where).toEqual(criterion.rowMarks);
       expect(allocation.rows.reduce((sum, row) => sum + row.marks, 0), where).toBe(criterion.maxMarks);
+      const tally = isDeferred(card.id) ? deferred : null;
       allocation.rows.forEach((row, index) => {
-        rows += 1;
+        if (tally) tally.rows += 1; else rows += 1;
         const note = criterion.rowNotes?.[index] ?? '';
         const corpus = normalise(`${criterion.guidance[index]} ${note}`);
         expect(normalise(row.text), `${where}/${row.id}: row text`).toBe(normalise(criterion.guidance[index]));
         if (row.parts) {
-          cut += 1;
+          if (tally) tally.cut += 1; else cut += 1;
           expect(row.parts.length, `${where}/${row.id}: a split has at least two parts`).toBeGreaterThan(1);
           expect(row.parts.reduce((sum, part) => sum + part.marks, 0), `${where}/${row.id}: parts add up`).toBe(row.marks);
           for (const part of row.parts) {
@@ -450,13 +457,15 @@ describe('answer clarity: priced answers are rows, not prose', () => {
             expect(corpus.includes(normalise(part.text)), `${where}/${row.id}/${part.id}: "${part.text}" is not lifted`).toBe(true);
           }
         } else if (row.note) {
-          kept.push(`${where}/${row.id}`);
+          (tally ? tally.kept : kept).push(`${where}/${row.id}`);
         }
         // A note is the cell's own words, one rule per sentence.
         for (const piece of row.note?.split('. ') ?? []) expect(corpus.includes(normalise(piece)), `${where}/${row.id}: note "${piece}" is not lifted`).toBe(true);
       });
     }
     expect([rows, cut]).toEqual([2616, 414]);
+    // 2022 Higher: 152 printed rows, 3 cut at the prices the cell prints, no note left under a whole row.
+    expect([deferred.rows, deferred.cut, deferred.kept.sort()]).toEqual([152, 3, []]);
     // Notes cells the parser leaves as a note under a whole row: a rule on the
     // row ("Max 3 for partially correct name"), a cap ("3 points for 30 marks
     // and 2 detailed points for 26 marks maximum"), a count without a noun
@@ -676,7 +685,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
 
   it('Accounting: every task carries the scheme’s priced lines as rows that add up to it, or is listed in the residue with its reason', () => {
     const cards = [...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY].filter((card): card is SecRubricCard & { rubric: AccountingRubric } => card.kind === 'rubric' && card.rubric.system === 'accounting');
-    expect(cards).toHaveLength(1365);
+    // June's 1,365 and the carded deferred sittings' tasks (2022 Higher: 43; 2023 Higher: 34).
+    expect(cards).toHaveLength(1365 + 43 + 34);
     const structured = cards.filter(card => card.rubric.rows?.length);
     for (const card of structured) {
       const rows = card.rubric.rows!;
@@ -693,16 +703,25 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // 1,267 of 1,365 tasks (2026-10-28, exclusions wave): the rest keep the crop and the half-mark stepper, each with its reason in the residue file.
     // A floor, not an exact count, so a later lift never needs a re-pin; the residue is pinned by id against the file.
     expect(structured.length).toBeGreaterThanOrEqual(1267);
-    const residue = cards.filter(card => !card.rubric.rows?.length).map(card => card.id).sort();
+    // A task its deferred scheme sets out no solution for (2023 Higher: eleven, coordinator ruling 20 Nov) has nothing
+    // to claim: it says so (unprintedAnswer), and is neither rows nor residue.
+    const unprinted = cards.filter(card => card.rubric.unprintedAnswer);
+    expect(unprinted).toHaveLength(11);
+    expect(unprinted.every(card => !card.rubric.rows?.length && card.id.startsWith('acc-2023-hl-deferred-'))).toBe(true);
+    const residue = cards.filter(card => !card.rubric.rows?.length && !card.rubric.unprintedAnswer).map(card => card.id).sort();
     expect(residue).toEqual(accountingResidue.tasks.map(task => task.id).sort());
     for (const task of accountingResidue.tasks) expect(task.reason.length, task.id).toBeGreaterThan(0);
     // A part the scheme prices only through its section total is one flagged block row; pinned so it cannot grow unnoticed.
-    expect(structured.filter(card => card.rubric.rows!.some(row => row.inferred)).map(card => card.id).sort()).toEqual(["acc-2010-hl-q9(c)", "acc-2010-ol-q5(a)(i)", "acc-2010-ol-q5(b)(iv)", "acc-2011-hl-q2(c)", "acc-2011-hl-q4(b)", "acc-2011-hl-q5(c)", "acc-2011-ol-q4(c)", "acc-2011-ol-q5(d)", "acc-2011-ol-q8(a)(i)", "acc-2011-ol-q8(b)", "acc-2012-hl-q4(d)", "acc-2012-hl-q4(e)", "acc-2012-hl-q5(b)", "acc-2012-ol-q4(d)", "acc-2012-ol-q5(c)", "acc-2012-ol-q5(d)", "acc-2013-hl-q7(c)", "acc-2013-ol-q5(c)", "acc-2013-ol-q5(d)", "acc-2014-hl-q6(e)", "acc-2014-hl-q7(e)", "acc-2014-ol-q6(e)", "acc-2014-ol-q9(c)", "acc-2015-hl-q4(d)", "acc-2015-hl-q4(e)", "acc-2015-ol-q5(a)", "acc-2015-ol-q5(d)", "acc-2015-ol-q9(f)", "acc-2016-hl-q3(c)", "acc-2016-hl-q5(c)", "acc-2016-hl-q6(e)", "acc-2016-hl-q7(b)", "acc-2016-ol-q5(d)", "acc-2017-hl-q2(b)", "acc-2017-hl-q3(b)", "acc-2017-hl-q5(c)", "acc-2017-hl-q6(e)", "acc-2017-hl-q9(e)", "acc-2017-ol-q5(d)", "acc-2017-ol-q7(e)", "acc-2017-ol-q9(f)", "acc-2018-hl-q2(d)", "acc-2018-hl-q3(b)", "acc-2018-hl-q4(c)", "acc-2018-hl-q5(c)", "acc-2018-hl-q6(b)", "acc-2018-hl-q7(e)", "acc-2018-hl-q8(b)(iv)", "acc-2018-hl-q9(c)", "acc-2018-ol-q5(c)", "acc-2018-ol-q5(d)", "acc-2018-ol-q8(g)", "acc-2018-ol-q9(c)", "acc-2019-hl-q3(b)", "acc-2019-hl-q5(c)", "acc-2019-hl-q6(d)", "acc-2019-hl-q8(e)", "acc-2019-hl-q9(e)", "acc-2019-ol-q9(f)", "acc-2020-hl-q2(b)", "acc-2020-hl-q4(e)", "acc-2020-hl-q6(e)", "acc-2021-hl-q5(c)", "acc-2021-hl-q7(b)", "acc-2022-hl-q3(c)", "acc-2022-ol-q5(a)(ii)", "acc-2023-hl-q5(c)", "acc-2023-hl-q7(e)", "acc-2023-ol-q5(a)(ii)", "acc-2023-ol-q5(b)(iii)", "acc-2024-hl-q4(d)", "acc-2024-hl-q5(c)", "acc-2024-hl-q7(e)", "acc-2024-hl-q9(e)", "acc-2024-ol-q5(a)(i)", "acc-2024-ol-q5(a)(iv)", "acc-2024-ol-q5(c)", "acc-2024-ol-q6(b)", "acc-2024-ol-q8(g)", "acc-2026-hl-q4(c)", "acc-2026-hl-q8(b)(ii)"]);
+    // June's, then each carded deferred sitting's (2022 Higher: three theory parts priced by their section total).
+    expect(structured.filter(card => card.rubric.rows!.some(row => row.inferred) && card.id.includes('-deferred-')).map(card => card.id).sort())
+      .toEqual(['acc-2022-hl-deferred-q3(c)', 'acc-2022-hl-deferred-q4(b)', 'acc-2022-hl-deferred-q6(d)']);
+    expect(structured.filter(card => card.rubric.rows!.some(row => row.inferred) && !card.id.includes('-deferred-')).map(card => card.id).sort()).toEqual(["acc-2010-hl-q9(c)", "acc-2010-ol-q5(a)(i)", "acc-2010-ol-q5(b)(iv)", "acc-2011-hl-q2(c)", "acc-2011-hl-q4(b)", "acc-2011-hl-q5(c)", "acc-2011-ol-q4(c)", "acc-2011-ol-q5(d)", "acc-2011-ol-q8(a)(i)", "acc-2011-ol-q8(b)", "acc-2012-hl-q4(d)", "acc-2012-hl-q4(e)", "acc-2012-hl-q5(b)", "acc-2012-ol-q4(d)", "acc-2012-ol-q5(c)", "acc-2012-ol-q5(d)", "acc-2013-hl-q7(c)", "acc-2013-ol-q5(c)", "acc-2013-ol-q5(d)", "acc-2014-hl-q6(e)", "acc-2014-hl-q7(e)", "acc-2014-ol-q6(e)", "acc-2014-ol-q9(c)", "acc-2015-hl-q4(d)", "acc-2015-hl-q4(e)", "acc-2015-ol-q5(a)", "acc-2015-ol-q5(d)", "acc-2015-ol-q9(f)", "acc-2016-hl-q3(c)", "acc-2016-hl-q5(c)", "acc-2016-hl-q6(e)", "acc-2016-hl-q7(b)", "acc-2016-ol-q5(d)", "acc-2017-hl-q2(b)", "acc-2017-hl-q3(b)", "acc-2017-hl-q5(c)", "acc-2017-hl-q6(e)", "acc-2017-hl-q9(e)", "acc-2017-ol-q5(d)", "acc-2017-ol-q7(e)", "acc-2017-ol-q9(f)", "acc-2018-hl-q2(d)", "acc-2018-hl-q3(b)", "acc-2018-hl-q4(c)", "acc-2018-hl-q5(c)", "acc-2018-hl-q6(b)", "acc-2018-hl-q7(e)", "acc-2018-hl-q8(b)(iv)", "acc-2018-hl-q9(c)", "acc-2018-ol-q5(c)", "acc-2018-ol-q5(d)", "acc-2018-ol-q8(g)", "acc-2018-ol-q9(c)", "acc-2019-hl-q3(b)", "acc-2019-hl-q5(c)", "acc-2019-hl-q6(d)", "acc-2019-hl-q8(e)", "acc-2019-hl-q9(e)", "acc-2019-ol-q9(f)", "acc-2020-hl-q2(b)", "acc-2020-hl-q4(e)", "acc-2020-hl-q6(e)", "acc-2021-hl-q5(c)", "acc-2021-hl-q7(b)", "acc-2022-hl-q3(c)", "acc-2022-ol-q5(a)(ii)", "acc-2023-hl-q5(c)", "acc-2023-hl-q7(e)", "acc-2023-ol-q5(a)(ii)", "acc-2023-ol-q5(b)(iii)", "acc-2024-hl-q4(d)", "acc-2024-hl-q5(c)", "acc-2024-hl-q7(e)", "acc-2024-hl-q9(e)", "acc-2024-ol-q5(a)(i)", "acc-2024-ol-q5(a)(iv)", "acc-2024-ol-q5(c)", "acc-2024-ol-q6(b)", "acc-2024-ol-q8(g)", "acc-2026-hl-q4(c)", "acc-2026-hl-q8(b)(ii)"]);
   });
 
   it('Applied Maths: every published step shows the lines it prices as a crop of the scheme page, or the card is in the residue with its reason', () => {
     const cards = APPLIED_MATHS_REVIEWED.filter((card): card is SecRubricCard & { rubric: AppliedMathematicsRubric } => card.kind === 'rubric' && card.rubric.system === 'applied-mathematics');
-    expect(cards).toHaveLength(1486);
+    // June's 1,486 and the carded deferred sittings' tasks (2022 Higher: 42; 2023 Higher: 53).
+    expect(cards).toHaveLength(1486 + 42 + 53);
     const residue = new Set(appliedMathsResidue.cards.map(card => card.id));
     let cut = 0, scaleOnly = 0;
     for (const card of cards) {
@@ -736,7 +755,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // 1,434 cut and 52 priced by a scale over the whole solution (2026-10-28, exclusions wave): every card with published steps is cut.
     // A floor, not an exact count, so a later lift never needs a re-pin; the residue is pinned by id (none).
     expect(cut).toBeGreaterThanOrEqual(1434);
-    expect(scaleOnly).toBe(52);
+    // June's 52 and the 2023 Higher deferred sitting's four (Q2(a)(ii), Q6(b) and Q9(iii) scales, the Q9(ii) deduction rule).
+    expect(scaleOnly).toBe(52 + 4);
     expect([...residue].sort()).toEqual([]);
     for (const card of appliedMathsResidue.cards) expect(card.reason.length, card.id).toBeGreaterThan(0);
   });
@@ -760,7 +780,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // "Location 3 and reason 2", "The distribution board drawn (4) and annotated (1)", "Correct tabulation 2, wood 3, …").
     // Every part is the scheme's own words (construction_paper.validate); a note that paraphrases the scheme's table
     // keeps only the words it prints, and a row whose head word the scheme does not print stays unsplit.
-    expect(withParts).toHaveLength(1284);
+    // June's 1,284 and the 2022 Higher deferred sitting's 81 (construction_rows.py over its review).
+    expect(withParts).toHaveLength(1284 + 81);
     for (const { card, row } of withParts) {
       expect(rowPartsReconcile(row), `${card.id}/${row.id}`).toBe(true);
       // Every part is a word the row or its note prints, and the row's own text, marks and steps are untouched.

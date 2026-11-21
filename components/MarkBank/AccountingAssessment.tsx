@@ -1,6 +1,6 @@
 /** @license SPDX-License-Identifier: Apache-2.0 */
 import React from 'react';
-import type { AccountingRubric, SecRubricCard } from '../../types/markBank';
+import { UNPRINTED_ANSWER, type AccountingRubric, type SecRubricCard } from '../../types/markBank';
 import SourceMaterialReader from './SourceMaterialReader';
 import { ClaimRow } from './ClaimRows';
 
@@ -32,6 +32,21 @@ const AccountingAssessment: React.FC<{
 }> = ({ card, score, onScore, scores = {}, onClaim }) => {
   const selected = accountingMark(card.totalMarks, score);
   const rows = card.rubric.rows;
+  if (card.rubric.unprintedAnswer) {
+    // A task the deferred scheme sets out no solution for: the fixed line, then the SEC's note it rests on, and
+    // nothing to claim. Even neutral border, no accent (as English's unprintedAnswer).
+    return (
+      <section aria-label="Accounting assessment">
+        <div style={{ margin: '0 0 16px', padding: '11px 12px', borderRadius: 11, border: '1px solid var(--mb-border)' }}>
+          <p style={{ margin: 0, fontWeight: 600, fontSize: 13 }}>{UNPRINTED_ANSWER}</p>
+          <p style={{ margin: '4px 0 0', color: 'var(--mb-muted)', fontSize: 12 }}>{card.rubric.unprintedAnswer.citation}</p>
+        </div>
+        <p style={{ color: 'var(--mb-muted)', margin: '0 0 8px', fontSize: 13 }}>{card.rubric.allocationNote}</p>
+        <SourceMaterialReader source={card.rubric.solution} subjectId={card.subjectId}
+          year={card.year} paperFileid={card.paperFileid!} />
+      </section>
+    );
+  }
   if (rows?.length && onClaim) {
     const claimed = accountingMarks(card, scores);
     return (

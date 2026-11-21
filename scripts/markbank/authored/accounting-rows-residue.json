@@ -106,6 +106,46 @@
    "reason": "The job-cost and overhead-absorption tables share this page. Retain department labels, distinguish actual/absorbed figures, and preserve the separate four-mark explanation. Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
   },
   {
+   "id": "acc-2022-hl-deferred-q7(a)",
+   "reason": "figures sit in a grid the geometry cannot label"
+  },
+  {
+   "id": "acc-2022-hl-deferred-q7(e)",
+   "reason": "marks 94 vs totals 100 over the question; resolved 3/5 scale 1"
+  },
+  {
+   "id": "acc-2022-hl-deferred-q8(a)(i)-break-even",
+   "reason": "marks 87 vs totals 80 over the question; resolved 0/8 scale 1"
+  },
+  {
+   "id": "acc-2022-hl-deferred-q8(a)(i)-margin-of-safety",
+   "reason": "marks 87 vs totals 80 over the question; resolved 0/8 scale 1"
+  },
+  {
+   "id": "acc-2022-hl-deferred-q8(a)(ii)",
+   "reason": "marks 87 vs totals 80 over the question; resolved 0/8 scale 1"
+  },
+  {
+   "id": "acc-2022-hl-deferred-q8(a)(iii)",
+   "reason": "marks 87 vs totals 80 over the question; resolved 0/8 scale 1"
+  },
+  {
+   "id": "acc-2022-hl-deferred-q8(a)(iv)",
+   "reason": "marks 87 vs totals 80 over the question; resolved 0/8 scale 1"
+  },
+  {
+   "id": "acc-2022-hl-deferred-q8(b)(i)",
+   "reason": "marks 87 vs totals 80 over the question; resolved 0/8 scale 1"
+  },
+  {
+   "id": "acc-2022-hl-deferred-q8(b)(ii)",
+   "reason": "marks 87 vs totals 80 over the question; resolved 0/8 scale 1"
+  },
+  {
+   "id": "acc-2022-hl-deferred-q8(b)(iii)",
+   "reason": "marks 87 vs totals 80 over the question; resolved 0/8 scale 1"
+  },
+  {
    "id": "acc-2022-hl-q6(b)",
    "reason": "The incomplete-records profit-and-loss account totals 50. Resolve the missing three-mark amount against its row and preserve the related workings. Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
   },
@@ -136,6 +176,18 @@
   {
    "id": "acc-2022-ol-q9(a)",
    "reason": "The cash budget has five months plus a total column with bare numeric prices. Bind marks to row and month, including final-column totals. Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
+  },
+  {
+   "id": "acc-2023-hl-deferred-q6(a)",
+   "reason": "marks 97 vs totals 100 over the question; resolved 1/2 scale 1"
+  },
+  {
+   "id": "acc-2023-hl-deferred-q9(b)",
+   "reason": "marks 72 vs totals 80 over the question; resolved 1/3 scale 1"
+  },
+  {
+   "id": "acc-2023-hl-deferred-q9(c)",
+   "reason": "marks 72 vs totals 80 over the question; resolved 1/3 scale 1"
   },
   {
    "id": "acc-2023-hl-q8(b)(i)",

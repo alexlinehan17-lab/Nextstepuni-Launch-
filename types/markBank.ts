@@ -1375,6 +1375,12 @@ export interface AccountingRubric {
    * the crop and the half-mark stepper.
    */
   rows?: AccountingRow[];
+  /**
+   * Set only on a task its deferred scheme sets out no solution for (the SEC's page-2 note: a deferred scheme "will
+   * only have been finalised for the questions attempted by the candidates"). The card shows UNPRINTED_ANSWER, then
+   * this citation of that note, and nothing to claim; its solution crop is the note's page.
+   */
+  unprintedAnswer?: { citation: string };
 }
 
 /** One priced line of an Accounting solution: "Purchases W2 1,126,000" for 9 marks. */

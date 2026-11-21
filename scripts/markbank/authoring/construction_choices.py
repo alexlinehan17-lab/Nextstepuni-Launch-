@@ -37,7 +37,7 @@ def options_for(card, row):
     m=ANY.match(' '.join(row['verbatim'].split())); n=int(m.group(1)); per=row['marks']//n
     if per*n!=row['marks']: return None, f'{n} × {per} is not {row["marks"]}'
     year=card['year']; level=card['level']; qn=int(re.search(r'-q(\d+)', card['id']).group(1))
-    P,S=cp.sources(year,level); doc=fitz.open(S)
+    P,S=cp.sources(year,level,'deferred' if '-deferred-' in card['id'] else 'main'); doc=fitz.open(S)  # a deferred card reads its own scheme
     best=None
     for p in range(1, doc.page_count+1):
         page=doc[p-1]; W=page.rect.width; texts=lines_of(page)

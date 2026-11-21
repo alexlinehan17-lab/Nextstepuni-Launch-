@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "status": "complete",
-  "reviewedTaskCount": 772,
-  "cardCount": 772,
+  "reviewedTaskCount": 886,
+  "cardCount": 886,
   "retainedLegacyCardCount": 221,
   "corpusPaperCount": 13,
   "reviewedPapers": [
@@ -15260,6 +15260,2158 @@
           ],
           "schemePages": [
             22
+          ],
+          "choice": null
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "sitting": "deferred",
+      "paperFileid": "LC225ALP000EV-deferred.pdf",
+      "schemeFileid": "LC225ALP000EV-deferred.pdf",
+      "paperSha256": "8cf0fd223482717cf59d16a9958be23228961f33c3140ddf2948c1230efa3ca4",
+      "schemeSha256": "5463eff63165c17024b1d55ac92fa1ed1cefb750a47dfa0374dbfc169c748700",
+      "reviewedPaperPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "reviewedSchemePages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "taskCount": 60,
+      "cardCount": 60,
+      "questionTotals": {
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8,
+        "11": 8,
+        "12": 8,
+        "13": 50,
+        "14": 40,
+        "15": 40,
+        "16": 40,
+        "17": 40,
+        "18": 40
+      },
+      "retainedLegacyIds": [],
+      "idCorrections": [],
+      "selectionScan": [
+        [
+          2,
+          "any five"
+        ],
+        [
+          2,
+          "any two"
+        ],
+        [
+          2,
+          "or"
+        ],
+        [
+          3,
+          "any five"
+        ],
+        [
+          4,
+          "one of"
+        ],
+        [
+          5,
+          "or"
+        ],
+        [
+          5,
+          "or"
+        ],
+        [
+          6,
+          "one of"
+        ],
+        [
+          15,
+          "one of"
+        ],
+        [
+          16,
+          "one of"
+        ],
+        [
+          16,
+          "one of"
+        ],
+        [
+          17,
+          "or"
+        ],
+        [
+          22,
+          "any two"
+        ],
+        [
+          24,
+          "or"
+        ],
+        [
+          31,
+          "or"
+        ],
+        [
+          37,
+          "one of"
+        ],
+        [
+          39,
+          "and/or"
+        ],
+        [
+          48,
+          "or"
+        ],
+        [
+          48,
+          "or"
+        ]
+      ],
+      "poolScan": [
+        [
+          2,
+          "five of"
+        ],
+        [
+          2,
+          "two of"
+        ],
+        [
+          4,
+          "one of"
+        ],
+        [
+          6,
+          "one of"
+        ],
+        [
+          15,
+          "one of"
+        ],
+        [
+          16,
+          "one of"
+        ],
+        [
+          16,
+          "one of"
+        ],
+        [
+          32,
+          "three of"
+        ],
+        [
+          37,
+          "one of"
+        ],
+        [
+          41,
+          "two of"
+        ]
+      ],
+      "selectionReview": [
+        {
+          "parts": [
+            "instructions",
+            "section-a",
+            "section-c"
+          ],
+          "decision": "exam-level-selection",
+          "reason": "Any five of Q1–12 and any two of Q14–18 are examination selection rules. All twelve short questions, the case study and all five long questions are included with each separately marked part."
+        },
+        {
+          "parts": [
+            "2",
+            "16d",
+            "18a"
+          ],
+          "decision": "one-card",
+          "options": [
+            [
+              "women",
+              "Women"
+            ],
+            [
+              "older-adults",
+              "Older adults"
+            ],
+            [
+              "physical-disability",
+              "People with physical disabilities"
+            ],
+            [
+              "intellectual-disability",
+              "People with intellectual disabilities"
+            ],
+            [
+              "ethnic-groups",
+              "Different ethnic groups"
+            ],
+            [
+              "socio-economic-groups",
+              "Different socio-economic groups"
+            ]
+          ],
+          "reason": "Each task prints a closed six-group pool; the scheme marks the chosen group with one grid. One card per task. Q16(d) and Q18(a) print “one the following groups” without “of”, so neither raw scan sees them."
+        },
+        {
+          "parts": [
+            "4b",
+            "13aii",
+            "16cii",
+            "18dii"
+          ],
+          "decision": "candidate-response",
+          "reason": "These refer to the candidate’s own preceding answers: one of the two tests from 4(a), the two factors from 13(a)(i), three of the four skills listed in 16(c)(i), two of the three methods from 18(d)(i). There is no fixed printed pool."
+        },
+        {
+          "parts": [
+            "4a",
+            "12a",
+            "12b",
+            "13ai",
+            "14ci",
+            "15diii",
+            "16ci",
+            "17bi",
+            "17ci",
+            "18c",
+            "18di",
+            "18diii"
+          ],
+          "decision": "open-knowledge-response",
+          "reason": "The paper supplies no closed answer list for fitness tests, feedback types, psychological factors, ways to deal with conflict, principles, interpersonal skills, anti-doping rules, banned substances, training methods or energy systems. Lists in the scheme are answers, not printed question options."
+        },
+        {
+          "parts": [
+            "13bi",
+            "14cii",
+            "18b"
+          ],
+          "decision": "flexible-wording",
+          "reason": "“Structure, strategy or compositional element”, “coaches or club officials’ behaviour” (the scheme reads coaches and/or club officials) and “aesthetic and/or artistic criteria” are flexible terms marked by one grid, not alternative tasks."
+        },
+        {
+          "parts": [
+            "1",
+            "3",
+            "5a",
+            "14a",
+            "15a",
+            "17ai",
+            "18b",
+            "18diii"
+          ],
+          "decision": "required-headings",
+          "reason": "Both performance and both health fitness components, both injuries with their first aid, both laws, all four lever parts, both concepts, both terms with examples, both pictured activities and all three energy-system rows are required; keep them together at each numbered part’s tariff."
+        },
+        {
+          "parts": [
+            "3",
+            "4b",
+            "5b",
+            "6",
+            "8b",
+            "9a",
+            "12b",
+            "13aii",
+            "13bi",
+            "13bii",
+            "14cii",
+            "14d",
+            "15b",
+            "16b",
+            "17d",
+            "18dii"
+          ],
+          "decision": "open-activity",
+          "reason": "Physical activities, clubs, roles, target groups, athletes and sports are unrestricted choices, subject to the printed exclusions carried into each prompt. Q16(b)’s “a golfer, or another athlete of your choice” is one such open choice."
+        },
+        {
+          "parts": [
+            "paper-page-2",
+            "paper-page-5",
+            "paper-page-15",
+            "paper-page-16",
+            "paper-page-37",
+            "copyright"
+          ],
+          "decision": "incidental-or",
+          "reason": "Blue or black pen, contact or overuse or misuse, “one of the greatest athletes”, “one of the game’s most natural finishers”, “one of his best qualities”, “one of their athletes failed a drug test” and copyright language do not create alternate examination tasks."
+        }
+      ],
+      "cards": [
+        {
+          "cardId": "pe-2022-hl-deferred-q1",
+          "part": "1",
+          "topicId": "physical-education-0-8",
+          "totalMarks": 8,
+          "paperPages": [
+            3
+          ],
+          "schemePages": [
+            4
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q2",
+          "part": "2",
+          "topicId": "physical-education-1-12",
+          "totalMarks": 8,
+          "paperPages": [
+            4
+          ],
+          "schemePages": [
+            4
+          ],
+          "choice": {
+            "choose": 1,
+            "pool": [
+              "Women",
+              "Older adults",
+              "People with physical disabilities",
+              "People with intellectual disabilities",
+              "Different ethnic groups",
+              "Different socio-economic groups"
+            ],
+            "instruction": null
+          }
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q3",
+          "part": "3",
+          "topicId": "physical-education-0-16",
+          "totalMarks": 8,
+          "paperPages": [
+            5
+          ],
+          "schemePages": [
+            5
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q4a",
+          "part": "4a",
+          "topicId": "physical-education-0-9",
+          "totalMarks": 4,
+          "paperPages": [
+            6
+          ],
+          "schemePages": [
+            5
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q4b",
+          "part": "4b",
+          "topicId": "physical-education-0-9",
+          "totalMarks": 4,
+          "paperPages": [
+            6
+          ],
+          "schemePages": [
+            5
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q5a",
+          "part": "5a",
+          "topicId": "physical-education-0-2",
+          "totalMarks": 4,
+          "paperPages": [
+            7
+          ],
+          "schemePages": [
+            6
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q5b",
+          "part": "5b",
+          "topicId": "physical-education-0-2",
+          "totalMarks": 4,
+          "paperPages": [
+            7
+          ],
+          "schemePages": [
+            6
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q6",
+          "part": "6",
+          "topicId": "physical-education-1-15",
+          "totalMarks": 8,
+          "paperPages": [
+            8
+          ],
+          "schemePages": [
+            6
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q7a",
+          "part": "7a",
+          "topicId": "physical-education-1-0",
+          "totalMarks": 2,
+          "paperPages": [
+            9
+          ],
+          "schemePages": [
+            7
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q7b",
+          "part": "7b",
+          "topicId": "physical-education-1-1",
+          "totalMarks": 6,
+          "paperPages": [
+            9
+          ],
+          "schemePages": [
+            7
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q8a",
+          "part": "8a",
+          "topicId": "physical-education-1-24",
+          "totalMarks": 2,
+          "paperPages": [
+            10
+          ],
+          "schemePages": [
+            7
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q8b",
+          "part": "8b",
+          "topicId": "physical-education-1-24",
+          "totalMarks": 6,
+          "paperPages": [
+            10
+          ],
+          "schemePages": [
+            7
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q9a",
+          "part": "9a",
+          "topicId": "physical-education-1-6",
+          "totalMarks": 4,
+          "paperPages": [
+            11
+          ],
+          "schemePages": [
+            8
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q9b",
+          "part": "9b",
+          "topicId": "physical-education-1-6",
+          "totalMarks": 4,
+          "paperPages": [
+            11
+          ],
+          "schemePages": [
+            8
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q10a",
+          "part": "10a",
+          "topicId": "physical-education-0-12",
+          "totalMarks": 4,
+          "paperPages": [
+            12
+          ],
+          "schemePages": [
+            9
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q10b",
+          "part": "10b",
+          "topicId": "physical-education-1-10",
+          "totalMarks": 4,
+          "paperPages": [
+            12
+          ],
+          "schemePages": [
+            9
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q11",
+          "part": "11",
+          "topicId": "physical-education-1-25",
+          "totalMarks": 8,
+          "paperPages": [
+            13
+          ],
+          "schemePages": [
+            9
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q12a",
+          "part": "12a",
+          "topicId": "physical-education-0-3",
+          "totalMarks": 4,
+          "paperPages": [
+            14
+          ],
+          "schemePages": [
+            10
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q12b",
+          "part": "12b",
+          "topicId": "physical-education-0-3",
+          "totalMarks": 4,
+          "paperPages": [
+            14
+          ],
+          "schemePages": [
+            10
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q13ai",
+          "part": "13ai",
+          "topicId": "physical-education-0-11",
+          "totalMarks": 2,
+          "paperPages": [
+            15,
+            16,
+            17
+          ],
+          "schemePages": [
+            11
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q13aii",
+          "part": "13aii",
+          "topicId": "physical-education-0-11",
+          "totalMarks": 4,
+          "paperPages": [
+            15,
+            16,
+            17
+          ],
+          "schemePages": [
+            11
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q13bi",
+          "part": "13bi",
+          "topicId": "physical-education-0-14",
+          "totalMarks": 4,
+          "paperPages": [
+            15,
+            16,
+            17
+          ],
+          "schemePages": [
+            11
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q13bii",
+          "part": "13bii",
+          "topicId": "physical-education-0-15",
+          "totalMarks": 6,
+          "paperPages": [
+            15,
+            16,
+            18
+          ],
+          "schemePages": [
+            11
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q13biii",
+          "part": "13biii",
+          "topicId": "physical-education-0-10",
+          "totalMarks": 4,
+          "paperPages": [
+            15,
+            16,
+            18
+          ],
+          "schemePages": [
+            12
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q13c",
+          "part": "13c",
+          "topicId": "physical-education-1-26",
+          "totalMarks": 8,
+          "paperPages": [
+            15,
+            16,
+            19
+          ],
+          "schemePages": [
+            12
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q13d",
+          "part": "13d",
+          "topicId": "physical-education-1-24",
+          "totalMarks": 10,
+          "paperPages": [
+            15,
+            16,
+            20
+          ],
+          "schemePages": [
+            12
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q13e",
+          "part": "13e",
+          "topicId": "physical-education-0-1",
+          "totalMarks": 12,
+          "paperPages": [
+            15,
+            16,
+            21
+          ],
+          "schemePages": [
+            13
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q14a",
+          "part": "14a",
+          "topicId": "physical-education-0-2",
+          "totalMarks": 4,
+          "paperPages": [
+            22
+          ],
+          "schemePages": [
+            14
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q14bi",
+          "part": "14bi",
+          "topicId": "physical-education-0-16",
+          "totalMarks": 4,
+          "paperPages": [
+            22
+          ],
+          "schemePages": [
+            14
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q14bii",
+          "part": "14bii",
+          "topicId": "physical-education-0-16",
+          "totalMarks": 6,
+          "paperPages": [
+            23
+          ],
+          "schemePages": [
+            14
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q14ci",
+          "part": "14ci",
+          "topicId": "physical-education-0-19",
+          "totalMarks": 4,
+          "paperPages": [
+            24
+          ],
+          "schemePages": [
+            15
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q14cii",
+          "part": "14cii",
+          "topicId": "physical-education-1-7",
+          "totalMarks": 10,
+          "paperPages": [
+            24
+          ],
+          "schemePages": [
+            15
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q14d",
+          "part": "14d",
+          "topicId": "physical-education-1-6",
+          "totalMarks": 12,
+          "paperPages": [
+            25
+          ],
+          "schemePages": [
+            15
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q15a",
+          "part": "15a",
+          "topicId": "physical-education-1-0",
+          "totalMarks": 4,
+          "paperPages": [
+            26
+          ],
+          "schemePages": [
+            16
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q15b",
+          "part": "15b",
+          "topicId": "physical-education-1-3",
+          "totalMarks": 6,
+          "paperPages": [
+            26
+          ],
+          "schemePages": [
+            16
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q15ci",
+          "part": "15ci",
+          "topicId": "physical-education-1-3",
+          "totalMarks": 4,
+          "paperPages": [
+            27
+          ],
+          "schemePages": [
+            16
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q15cii",
+          "part": "15cii",
+          "topicId": "physical-education-1-3",
+          "totalMarks": 8,
+          "paperPages": [
+            27
+          ],
+          "schemePages": [
+            16
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q15di",
+          "part": "15di",
+          "topicId": "physical-education-0-1",
+          "totalMarks": 2,
+          "paperPages": [
+            28
+          ],
+          "schemePages": [
+            17
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q15dii",
+          "part": "15dii",
+          "topicId": "physical-education-0-3",
+          "totalMarks": 6,
+          "paperPages": [
+            28
+          ],
+          "schemePages": [
+            17
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q15diii",
+          "part": "15diii",
+          "topicId": "physical-education-0-3",
+          "totalMarks": 10,
+          "paperPages": [
+            28,
+            29
+          ],
+          "schemePages": [
+            17
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q16ai",
+          "part": "16ai",
+          "topicId": "physical-education-0-11",
+          "totalMarks": 2,
+          "paperPages": [
+            30
+          ],
+          "schemePages": [
+            18
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q16aii",
+          "part": "16aii",
+          "topicId": "physical-education-0-11",
+          "totalMarks": 6,
+          "paperPages": [
+            30
+          ],
+          "schemePages": [
+            18
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q16b",
+          "part": "16b",
+          "topicId": "physical-education-0-12",
+          "totalMarks": 8,
+          "paperPages": [
+            31
+          ],
+          "schemePages": [
+            18
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q16ci",
+          "part": "16ci",
+          "topicId": "physical-education-0-18",
+          "totalMarks": 4,
+          "paperPages": [
+            32
+          ],
+          "schemePages": [
+            19
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q16cii",
+          "part": "16cii",
+          "topicId": "physical-education-0-18",
+          "totalMarks": 8,
+          "paperPages": [
+            32
+          ],
+          "schemePages": [
+            19
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q16d",
+          "part": "16d",
+          "topicId": "physical-education-1-18",
+          "totalMarks": 12,
+          "paperPages": [
+            33
+          ],
+          "schemePages": [
+            19
+          ],
+          "choice": {
+            "choose": 1,
+            "pool": [
+              "Women",
+              "Older adults",
+              "People with physical disabilities",
+              "People with intellectual disabilities",
+              "Different ethnic groups",
+              "Different socio-economic groups"
+            ],
+            "instruction": null
+          }
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q17ai",
+          "part": "17ai",
+          "topicId": "physical-education-1-24",
+          "totalMarks": 6,
+          "paperPages": [
+            34
+          ],
+          "schemePages": [
+            20
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q17aii",
+          "part": "17aii",
+          "topicId": "physical-education-1-24",
+          "totalMarks": 4,
+          "paperPages": [
+            34
+          ],
+          "schemePages": [
+            20
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q17bi",
+          "part": "17bi",
+          "topicId": "physical-education-1-9",
+          "totalMarks": 4,
+          "paperPages": [
+            35
+          ],
+          "schemePages": [
+            20
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q17bii",
+          "part": "17bii",
+          "topicId": "physical-education-1-9",
+          "totalMarks": 6,
+          "paperPages": [
+            35
+          ],
+          "schemePages": [
+            20
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q17ci",
+          "part": "17ci",
+          "topicId": "physical-education-1-8",
+          "totalMarks": 4,
+          "paperPages": [
+            36
+          ],
+          "schemePages": [
+            21
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q17cii",
+          "part": "17cii",
+          "topicId": "physical-education-1-8",
+          "totalMarks": 2,
+          "paperPages": [
+            36
+          ],
+          "schemePages": [
+            21
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q17ciii",
+          "part": "17ciii",
+          "topicId": "physical-education-1-9",
+          "totalMarks": 4,
+          "paperPages": [
+            36
+          ],
+          "schemePages": [
+            21
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q17d",
+          "part": "17d",
+          "topicId": "physical-education-1-8",
+          "totalMarks": 10,
+          "paperPages": [
+            37
+          ],
+          "schemePages": [
+            21
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q18a",
+          "part": "18a",
+          "topicId": "physical-education-1-14",
+          "totalMarks": 4,
+          "paperPages": [
+            38
+          ],
+          "schemePages": [
+            22
+          ],
+          "choice": {
+            "choose": 1,
+            "pool": [
+              "Women",
+              "Older adults",
+              "People with physical disabilities",
+              "People with intellectual disabilities",
+              "Different ethnic groups",
+              "Different socio-economic groups"
+            ],
+            "instruction": null
+          }
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q18b",
+          "part": "18b",
+          "topicId": "physical-education-0-23",
+          "totalMarks": 6,
+          "paperPages": [
+            39
+          ],
+          "schemePages": [
+            22
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q18c",
+          "part": "18c",
+          "topicId": "physical-education-0-10",
+          "totalMarks": 9,
+          "paperPages": [
+            40
+          ],
+          "schemePages": [
+            22
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q18di",
+          "part": "18di",
+          "topicId": "physical-education-0-10",
+          "totalMarks": 6,
+          "paperPages": [
+            41
+          ],
+          "schemePages": [
+            23
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q18dii",
+          "part": "18dii",
+          "topicId": "physical-education-0-10",
+          "totalMarks": 6,
+          "paperPages": [
+            41
+          ],
+          "schemePages": [
+            23
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2022-hl-deferred-q18diii",
+          "part": "18diii",
+          "topicId": "physical-education-0-12",
+          "totalMarks": 9,
+          "paperPages": [
+            42
+          ],
+          "schemePages": [
+            23
+          ],
+          "choice": null
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "sitting": "deferred",
+      "paperFileid": "LC225ALP000EV-deferred.pdf",
+      "schemeFileid": "LC225ALP000EV-deferred.pdf",
+      "paperSha256": "2b43559c694869e9baaee470e7f70453158538e20f9dbddf04980ab462ebdd99",
+      "schemeSha256": "b22766b7e886f6fa9f3775369f8adb35e62227d207cfa5a6e1b185473af49b06",
+      "reviewedPaperPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "reviewedSchemePages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "taskCount": 54,
+      "cardCount": 54,
+      "questionTotals": {
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8,
+        "11": 8,
+        "12": 8,
+        "13": 50,
+        "14": 40,
+        "15": 40,
+        "16": 40,
+        "17": 40,
+        "18": 40
+      },
+      "retainedLegacyIds": [],
+      "idCorrections": [],
+      "selectionScan": [
+        [
+          2,
+          "any 10"
+        ],
+        [
+          2,
+          "any three"
+        ],
+        [
+          2,
+          "or"
+        ],
+        [
+          3,
+          "any 10"
+        ],
+        [
+          6,
+          "or"
+        ],
+        [
+          7,
+          "or"
+        ],
+        [
+          15,
+          "or"
+        ],
+        [
+          18,
+          "or"
+        ],
+        [
+          21,
+          "or"
+        ],
+        [
+          23,
+          "any three"
+        ],
+        [
+          44,
+          "or"
+        ],
+        [
+          44,
+          "or"
+        ]
+      ],
+      "poolScan": [
+        [
+          2,
+          "10 of"
+        ],
+        [
+          2,
+          "three of"
+        ],
+        [
+          33,
+          "two of"
+        ],
+        [
+          34,
+          "two of"
+        ]
+      ],
+      "selectionReview": [
+        {
+          "pages": [
+            2,
+            3,
+            23
+          ],
+          "kind": "exam-attempt-rule",
+          "reason": "Any 10 of the 12 Section A questions and any three of the five Section C questions are examination attempt rules. Every question and every separately priced part is represented; no compound exam-attempt cards."
+        },
+        {
+          "pages": [
+            2,
+            15,
+            44
+          ],
+          "kind": "context-or-boilerplate",
+          "reason": "Blue or black pen, “men’s or women’s” in the case-study text (the record attendance for any Euro fixture), and copyright wording are not task routes."
+        },
+        {
+          "pages": [
+            6,
+            18,
+            21
+          ],
+          "kind": "open-choice-or-own-response",
+          "reason": "A marathon runner or another endurance athlete, a role model or another significant person, and soccer or another physical activity are open candidate choices, not finite printed pools."
+        },
+        {
+          "pages": [
+            7
+          ],
+          "kind": "answer-selection",
+          "reason": "Health related or performance related is the response to 5(b), not an alternative question route."
+        },
+        {
+          "pages": [
+            2
+          ],
+          "kind": "exam-attempt-rule",
+          "reason": "“10 of” and “three of” on page 2 are the same Section A and Section C attempt rules."
+        },
+        {
+          "pages": [
+            5,
+            33,
+            34
+          ],
+          "kind": "own-response-selection",
+          "reason": "3(b) takes three of the candidate’s own four methods from 3(a); 16(c)(ii) takes two of the candidate’s own methods from 16(c)(i); 16(d)(ii) takes two of the candidate’s own types of feedback from 16(d)(i). No printed pool; no alternative-route expansion."
+        },
+        {
+          "pages": [
+            27,
+            39,
+            40
+          ],
+          "kind": "required-headings",
+          "reason": "All three concepts in 15(a), every row and column of the 18(b) table, and both of Newton’s 1st and 2nd laws in 18(c) are compulsory response components."
+        }
+      ],
+      "cards": [
+        {
+          "cardId": "pe-2023-hl-deferred-q1a",
+          "part": "1a",
+          "topicId": "physical-education-1-6",
+          "totalMarks": 2,
+          "paperPages": [
+            3
+          ],
+          "schemePages": [
+            4
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q1b",
+          "part": "1b",
+          "topicId": "physical-education-1-6",
+          "totalMarks": 6,
+          "paperPages": [
+            3
+          ],
+          "schemePages": [
+            4
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q2a",
+          "part": "2a",
+          "topicId": "physical-education-0-19",
+          "totalMarks": 2,
+          "paperPages": [
+            4
+          ],
+          "schemePages": [
+            4
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q2b",
+          "part": "2b",
+          "topicId": "physical-education-0-19",
+          "totalMarks": 6,
+          "paperPages": [
+            4
+          ],
+          "schemePages": [
+            4
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q3a",
+          "part": "3a",
+          "topicId": "physical-education-1-2",
+          "totalMarks": 2,
+          "paperPages": [
+            5
+          ],
+          "schemePages": [
+            5
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q3b",
+          "part": "3b",
+          "topicId": "physical-education-1-2",
+          "totalMarks": 6,
+          "paperPages": [
+            5
+          ],
+          "schemePages": [
+            5
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q4",
+          "part": "4",
+          "topicId": "physical-education-0-12",
+          "totalMarks": 8,
+          "paperPages": [
+            6
+          ],
+          "schemePages": [
+            6
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q5a",
+          "part": "5a",
+          "topicId": "physical-education-0-9",
+          "totalMarks": 2,
+          "paperPages": [
+            7
+          ],
+          "schemePages": [
+            7
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q5b",
+          "part": "5b",
+          "topicId": "physical-education-0-7",
+          "totalMarks": 2,
+          "paperPages": [
+            7
+          ],
+          "schemePages": [
+            7
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q5c",
+          "part": "5c",
+          "topicId": "physical-education-0-7",
+          "totalMarks": 2,
+          "paperPages": [
+            7
+          ],
+          "schemePages": [
+            7
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q5d",
+          "part": "5d",
+          "topicId": "physical-education-0-9",
+          "totalMarks": 2,
+          "paperPages": [
+            7
+          ],
+          "schemePages": [
+            7
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q6a",
+          "part": "6a",
+          "topicId": "physical-education-0-2",
+          "totalMarks": 2,
+          "paperPages": [
+            8
+          ],
+          "schemePages": [
+            8
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q6b",
+          "part": "6b",
+          "topicId": "physical-education-0-2",
+          "totalMarks": 2,
+          "paperPages": [
+            8
+          ],
+          "schemePages": [
+            8
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q6ci",
+          "part": "6ci",
+          "topicId": "physical-education-0-2",
+          "totalMarks": 1,
+          "paperPages": [
+            8
+          ],
+          "schemePages": [
+            8
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q6cii",
+          "part": "6cii",
+          "topicId": "physical-education-0-2",
+          "totalMarks": 3,
+          "paperPages": [
+            8
+          ],
+          "schemePages": [
+            8
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q7",
+          "part": "7",
+          "topicId": "physical-education-1-22",
+          "totalMarks": 8,
+          "paperPages": [
+            9
+          ],
+          "schemePages": [
+            8
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q8a",
+          "part": "8a",
+          "topicId": "physical-education-1-25",
+          "totalMarks": 2,
+          "paperPages": [
+            10
+          ],
+          "schemePages": [
+            9
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q8b",
+          "part": "8b",
+          "topicId": "physical-education-1-25",
+          "totalMarks": 6,
+          "paperPages": [
+            10
+          ],
+          "schemePages": [
+            9
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q9",
+          "part": "9",
+          "topicId": "physical-education-0-23",
+          "totalMarks": 8,
+          "paperPages": [
+            11
+          ],
+          "schemePages": [
+            9
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q10",
+          "part": "10",
+          "topicId": "physical-education-1-24",
+          "totalMarks": 8,
+          "paperPages": [
+            12
+          ],
+          "schemePages": [
+            10
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q11",
+          "part": "11",
+          "topicId": "physical-education-0-10",
+          "totalMarks": 8,
+          "paperPages": [
+            13
+          ],
+          "schemePages": [
+            10
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q12",
+          "part": "12",
+          "topicId": "physical-education-1-6",
+          "totalMarks": 8,
+          "paperPages": [
+            14
+          ],
+          "schemePages": [
+            11
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q13ai",
+          "part": "13ai",
+          "topicId": "physical-education-1-24",
+          "totalMarks": 2,
+          "paperPages": [
+            15,
+            16,
+            17
+          ],
+          "schemePages": [
+            12
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q13aii",
+          "part": "13aii",
+          "topicId": "physical-education-1-24",
+          "totalMarks": 6,
+          "paperPages": [
+            15,
+            16,
+            17
+          ],
+          "schemePages": [
+            12
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q13bi",
+          "part": "13bi",
+          "topicId": "physical-education-1-3",
+          "totalMarks": 6,
+          "paperPages": [
+            15,
+            16,
+            18
+          ],
+          "schemePages": [
+            13
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q13bii",
+          "part": "13bii",
+          "topicId": "physical-education-1-3",
+          "totalMarks": 6,
+          "paperPages": [
+            15,
+            16,
+            18,
+            19
+          ],
+          "schemePages": [
+            13
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q13c",
+          "part": "13c",
+          "topicId": "physical-education-1-22",
+          "totalMarks": 8,
+          "paperPages": [
+            15,
+            16,
+            20
+          ],
+          "schemePages": [
+            13
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q13d",
+          "part": "13d",
+          "topicId": "physical-education-1-22",
+          "totalMarks": 10,
+          "paperPages": [
+            15,
+            16,
+            21
+          ],
+          "schemePages": [
+            14
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q13e",
+          "part": "13e",
+          "topicId": "physical-education-1-21",
+          "totalMarks": 12,
+          "paperPages": [
+            15,
+            16,
+            22
+          ],
+          "schemePages": [
+            15
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q14ai",
+          "part": "14ai",
+          "topicId": "physical-education-1-9",
+          "totalMarks": 6,
+          "paperPages": [
+            23
+          ],
+          "schemePages": [
+            16
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q14aii",
+          "part": "14aii",
+          "topicId": "physical-education-1-8",
+          "totalMarks": 6,
+          "paperPages": [
+            23
+          ],
+          "schemePages": [
+            16
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q14b",
+          "part": "14b",
+          "topicId": "physical-education-1-10",
+          "totalMarks": 8,
+          "paperPages": [
+            24
+          ],
+          "schemePages": [
+            16
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q14c",
+          "part": "14c",
+          "topicId": "physical-education-0-10",
+          "totalMarks": 8,
+          "paperPages": [
+            25
+          ],
+          "schemePages": [
+            17
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q14d",
+          "part": "14d",
+          "topicId": "physical-education-0-10",
+          "totalMarks": 12,
+          "paperPages": [
+            26
+          ],
+          "schemePages": [
+            17
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q15a",
+          "part": "15a",
+          "topicId": "physical-education-1-2",
+          "totalMarks": 6,
+          "paperPages": [
+            27
+          ],
+          "schemePages": [
+            18
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q15b",
+          "part": "15b",
+          "topicId": "physical-education-1-25",
+          "totalMarks": 10,
+          "paperPages": [
+            28
+          ],
+          "schemePages": [
+            18
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q15c",
+          "part": "15c",
+          "topicId": "physical-education-1-24",
+          "totalMarks": 12,
+          "paperPages": [
+            29
+          ],
+          "schemePages": [
+            19
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q15d",
+          "part": "15d",
+          "topicId": "physical-education-1-25",
+          "totalMarks": 12,
+          "paperPages": [
+            30
+          ],
+          "schemePages": [
+            19
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q16a",
+          "part": "16a",
+          "topicId": "physical-education-0-11",
+          "totalMarks": 8,
+          "paperPages": [
+            31
+          ],
+          "schemePages": [
+            20
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q16b",
+          "part": "16b",
+          "topicId": "physical-education-0-18",
+          "totalMarks": 8,
+          "paperPages": [
+            32
+          ],
+          "schemePages": [
+            20
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q16ci",
+          "part": "16ci",
+          "topicId": "physical-education-0-22",
+          "totalMarks": 4,
+          "paperPages": [
+            33
+          ],
+          "schemePages": [
+            20
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q16cii",
+          "part": "16cii",
+          "topicId": "physical-education-0-22",
+          "totalMarks": 8,
+          "paperPages": [
+            33
+          ],
+          "schemePages": [
+            20
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q16di",
+          "part": "16di",
+          "topicId": "physical-education-0-3",
+          "totalMarks": 4,
+          "paperPages": [
+            34
+          ],
+          "schemePages": [
+            21
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q16dii",
+          "part": "16dii",
+          "topicId": "physical-education-0-3",
+          "totalMarks": 8,
+          "paperPages": [
+            34
+          ],
+          "schemePages": [
+            21
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q17ai",
+          "part": "17ai",
+          "topicId": "physical-education-0-11",
+          "totalMarks": 2,
+          "paperPages": [
+            35
+          ],
+          "schemePages": [
+            22
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q17aii",
+          "part": "17aii",
+          "topicId": "physical-education-0-11",
+          "totalMarks": 8,
+          "paperPages": [
+            35
+          ],
+          "schemePages": [
+            22
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q17b",
+          "part": "17b",
+          "topicId": "physical-education-0-12",
+          "totalMarks": 8,
+          "paperPages": [
+            36
+          ],
+          "schemePages": [
+            23
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q17c",
+          "part": "17c",
+          "topicId": "physical-education-0-12",
+          "totalMarks": 10,
+          "paperPages": [
+            37
+          ],
+          "schemePages": [
+            23
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q17d",
+          "part": "17d",
+          "topicId": "physical-education-0-12",
+          "totalMarks": 12,
+          "paperPages": [
+            38
+          ],
+          "schemePages": [
+            24
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q18a",
+          "part": "18a",
+          "topicId": "physical-education-0-7",
+          "totalMarks": 12,
+          "paperPages": [
+            39
+          ],
+          "schemePages": [
+            25
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q18b",
+          "part": "18b",
+          "topicId": "physical-education-0-9",
+          "totalMarks": 8,
+          "paperPages": [
+            39
+          ],
+          "schemePages": [
+            25
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q18ci",
+          "part": "18ci",
+          "topicId": "physical-education-0-2",
+          "totalMarks": 4,
+          "paperPages": [
+            40
+          ],
+          "schemePages": [
+            25
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q18cii",
+          "part": "18cii",
+          "topicId": "physical-education-0-2",
+          "totalMarks": 6,
+          "paperPages": [
+            40
+          ],
+          "schemePages": [
+            25
+          ],
+          "choice": null
+        },
+        {
+          "cardId": "pe-2023-hl-deferred-q18d",
+          "part": "18d",
+          "topicId": "physical-education-0-1",
+          "totalMarks": 10,
+          "paperPages": [
+            41
+          ],
+          "schemePages": [
+            26
           ],
           "choice": null
         }
