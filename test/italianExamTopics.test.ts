@@ -54,14 +54,19 @@ describe('Italian exam-topic registry', () => {
       { label: 'Higher Level', level: 'higher' },
       { label: 'Ordinary Level', level: 'ordinary' },
     ]);
+    // The captured StudyClix menus, then NextStepUni's own Higher "Literature: earlier set texts" heading (ruling,
+    // 20 Nov 2026: a question on a book no longer prescribed never sits under a heading named for another book).
     expect(taxonomy.groups.map(group => group.topicIds)).toEqual([
-      italianReference.variants.higher.topics.map(topic => topic.id),
+      [...italianReference.variants.higher.topics.map(topic => topic.id), 'italian-higher-literature-earlier-set-texts'],
       italianReference.variants.ordinary.topics.map(topic => topic.id),
     ]);
-    expect(taxonomy.topics.map(topic => topic.id)).toEqual(referenceTopics.map(topic => topic.id));
-    expect(taxonomy.topics.map(topic => topic.label)).toEqual(referenceTopics.map(topic => topic.label));
-    expect(taxonomy.topics.map(topic => topic.sourcePath)).toEqual(referenceTopics.map(topic => topic.sourcePath));
-    expect(topicsForSubject('italian')).toHaveLength(24);
+    const captured = taxonomy.topics.slice(0, 24);
+    expect(captured.map(topic => topic.id)).toEqual(referenceTopics.map(topic => topic.id));
+    expect(captured.map(topic => topic.label)).toEqual(referenceTopics.map(topic => topic.label));
+    expect(captured.map(topic => topic.sourcePath)).toEqual(referenceTopics.map(topic => topic.sourcePath));
+    expect(taxonomy.topics.slice(24).map(topic => [topic.id, topic.label, topic.level]))
+      .toEqual([['italian-higher-literature-earlier-set-texts', 'Literature: earlier set texts', 'higher']]);
+    expect(topicsForSubject('italian')).toHaveLength(25);
   });
 
   it('bridges every practice topic to official Italian curriculum nodes', () => {
@@ -70,7 +75,7 @@ describe('Italian exam-topic registry', () => {
         .find(subject => subject.id === 'italian')!
         .strands.flatMap(strand => strand.subtopics.map(topic => topic.id)),
     );
-    expect(Object.keys(curriculumCrosswalk)).toHaveLength(24);
+    expect(Object.keys(curriculumCrosswalk)).toHaveLength(25);
     for (const topic of taxonomy.topics) {
       const ids = curriculumNodeIdsForExamTopic(topic.id);
       expect(ids, topic.id).toEqual(curriculumCrosswalk[topic.id as keyof typeof curriculumCrosswalk]);
@@ -223,7 +228,7 @@ describe('Italian exam-topic registry', () => {
   it('surfaces all 748 distinct cards and keeps only the unpublished Oral bucket empty', () => {
     expect(subjectAtlasStats('italian')).toMatchObject({
       questions: 748,
-      topics: 24,
+      topics: 25,
       yearMin: 2010,
       yearMax: 2026,
     });

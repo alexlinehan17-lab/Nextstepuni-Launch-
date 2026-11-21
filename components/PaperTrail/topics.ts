@@ -56,7 +56,8 @@ export const logicalQuestionIdentity = (question: Pick<
   question.subjectId === 'mathematics'
     ? question.fileid.replace(/(?:EV|IV)(?=(?:-deferred)?\.pdf$)/i, 'BV')
     : question.subjectId === 'art' || question.subjectId === 'music' || question.subjectId === 'spanish'
-      ? question.fileid.replace(/(?:EV|IV)(?=\.pdf$)/i, 'BV')
+      // A Music deferred booklet's Irish edition collapses into its English one, as June's do, and stays apart from June's.
+      ? question.fileid.replace(question.subjectId === 'music' ? /(?:EV|IV)(?=(?:-deferred)?\.pdf$)/i : /(?:EV|IV)(?=\.pdf$)/i, 'BV')
       : isDeferredFileid(question.fileid) ? 'deferred' : '',
   question.n,
 ].join('|');
