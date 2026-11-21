@@ -30,6 +30,10 @@
    {
     "n": "6",
     "primary": "portuguese-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "portuguese-2-1"
    }
   ]
  },
@@ -64,6 +68,98 @@
    {
     "n": "6",
     "primary": "portuguese-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "portuguese-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "portuguese-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC018ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "portuguese-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "portuguese-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC018ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "portuguese-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "portuguese-2-2"
    }
   ]
  },
@@ -98,6 +194,14 @@
    {
     "n": "6",
     "primary": "portuguese-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "portuguese-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "portuguese-2-2"
    }
   ]
  },
@@ -132,6 +236,14 @@
    {
     "n": "6",
     "primary": "portuguese-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "portuguese-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "portuguese-2-2"
    }
   ]
  },
@@ -166,6 +278,56 @@
    {
     "n": "6",
     "primary": "portuguese-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "portuguese-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "portuguese-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC018ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "portuguese-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "portuguese-2-2"
    }
   ]
  },
@@ -200,6 +362,14 @@
    {
     "n": "6",
     "primary": "portuguese-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "portuguese-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "portuguese-2-2"
    }
   ]
  },
@@ -276,6 +446,14 @@
    {
     "n": "6",
     "primary": "portuguese-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "portuguese-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "portuguese-2-2"
    }
   ]
  },
@@ -734,6 +912,126 @@
   "level": "ordinary",
   "lang": "ev",
   "year": 2023,
+  "fileid": "LC018GLPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-5"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-5"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-5"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC018ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-3"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-3"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-4"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC018ALPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-5"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-5"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-5"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC018GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-3"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-3"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-3"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
   "fileid": "LC018GLPA00EV.pdf",
   "paperKey": "aural",
   "q": [
