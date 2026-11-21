@@ -1003,16 +1003,22 @@
   "questionRef": "2011 HL Section I Q4",
   "questionText": "Adj meg 2 okot, miért örültek a törökök a német válogatottnak?",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Válasz a 2. bekezdésben: 1) A törököknek azért sem esik nehezükre, hogy azonosuljanak választott második hazájuk csapatával, mert a török nemzeti válogatott nincs ott Dél-Afrikában a világbajnokságon.; 2) És különösen örültek akkor, amikor a továbbjutást jelentő gólt éppen Mesut Özil, török szülőktől származó, de már Németországban született játékmester lőtte.",
-    "marks": 5,
-    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    "verbatim": "A törököknek azért sem esik nehezükre, hogy azonosuljanak választott második hazájuk csapatával, mert a török nemzeti válogatott nincs ott Dél-Afrikában a világbajnokságon.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme heads its answer “Válasz a 2. bekezdésben:” and numbers the two reasons 1) and 2)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "És különösen örültek akkor, amikor a továbbjutást jelentő gólt éppen Mesut Özil, török szülőktől származó, de már Németországban született játékmester lőtte.",
+    "marks": null
    }
   ],
   "notes": "The paper prints the tariff as '(5 pont)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
@@ -3442,16 +3448,34 @@
   "questionRef": "2014 HL Section I Q6",
   "questionText": "A szerző azt állítja, hogy „[a]zok, akiknek már közvetlen tapasztalataik is vannak egy-egy »idegenről«, azok szomszédként, munkatársként jóval elfogadóbbak, mint amikor a kérdésről elviekben faggatják őket”. Hozzon a cikkből legalább 2 példát ennek az állításnak az alátámasztására, illetve fejtse ki, egyetért-e a szerző állításával, vagy sem!",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "A szöveg 6. bekezdése alapján adott válasz: A szerző állításának – miszerint „[a]zok, akiknek már közvetlen tapasztalataik is vannak egy-egy »idegenről«, azok szomszédként, munkatársként jóval elfogadóbbak, mint amikor a kérdésről elviekben faggatják őket” – alátámasztására példák:1) A kínaiak immár „bevett népcsoporthoz” tartoznak, elfoglalták a helyüket a „munkamegosztásban”. Viszonylagos elfogadottságukat segíti, hogy nem különösebben kapcsolódnak hozzájuk a nyugalom megzavarásával kapcsolatos hírek.; 2)A természetgyógyászat kínai, vietnami művelői mellett a hagyományos orvoslásban is megszokott az ázsiai vagy afrikai származású doktorok jelenléte.; 3) A paphiánnyal küzdő plébániákon is tucatnyi ázsiai, afrikai „misszionáriussal” erősítenek, akiket a jelek szerint a konzervatív értékrendű hívek is el-, illetve befogadtak. Igen egyetértek, mert… / Nem, nem értek egyet, mert…",
-    "marks": 5,
-    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    "verbatim": "A kínaiak immár „bevett népcsoporthoz” tartoznak, elfoglalták a helyüket a „munkamegosztásban”. Viszonylagos elfogadottságukat segíti, hogy nem különösebben kapcsolódnak hozzájuk a nyugalom megzavarásával kapcsolatos hírek.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme leads its answer with “A szöveg 6. bekezdése alapján adott válasz: A szerző állításának – miszerint „[a]zok, akiknek már közvetlen tapasztalataik is vannak egy-egy »idegenről«, azok szomszédként, munkatársként jóval elfogadóbbak, mint amikor a kérdésről elviekben faggatják őket” – alátámasztására példák:”, numbers its three examples 1) to 3), then prints the last line shown here."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A természetgyógyászat kínai, vietnami művelői mellett a hagyományos orvoslásban is megszokott az ázsiai vagy afrikai származású doktorok jelenléte.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A paphiánnyal küzdő plébániákon is tucatnyi ázsiai, afrikai „misszionáriussal” erősítenek, akiket a jelek szerint a konzervatív értékrendű hívek is el-, illetve befogadtak.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Igen egyetértek, mert… / Nem, nem értek egyet, mert…",
+    "marks": null
    }
   ],
   "notes": "The paper prints the tariff as '(5 pont)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
@@ -7219,16 +7243,28 @@
   "questionRef": "2019 HL Section I Q3",
   "questionText": "Miért okozott különösen jelentős demográfiai hiányt az emigrációs hullám?",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Válasz a 4. bekezdésben: Azért okozott jelentős demográfiai hiányt az emigrációs hullám, mert a távozottak egyharmada magasan kvalifikált munkaerő, vagyis velük a hazai átlagnál sokkal képzettebb népességet veszített az ország, b, jelentős részük fiatal, miközben a régebben emigráltak közül sokan éppen a nyugdíjas korukra térnek vissza hazájukba. A legutóbbi adatok szerint a határokon kívül élő állampolgárok aránya a legmagasabbak közt van az európai országok körében. c, A külföldre távozottak visszacsábítására tett próbálkozások csak szórványos eredménnyel jártak, mert a legtöbben már gyökeret vertek a választott országban, a gyermekeik is ott születtek.",
-    "marks": 5,
-    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    "verbatim": "a távozottak egyharmada magasan kvalifikált munkaerő, vagyis velük a hazai átlagnál sokkal képzettebb népességet veszített az ország",
+    "marks": null,
+    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme leads its answer with “Válasz a 4. bekezdésben: Azért okozott jelentős demográfiai hiányt az emigrációs hullám, mert” and labels the second and third reasons “b,” and “c,”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "jelentős részük fiatal, miközben a régebben emigráltak közül sokan éppen a nyugdíjas korukra térnek vissza hazájukba. A legutóbbi adatok szerint a határokon kívül élő állampolgárok aránya a legmagasabbak közt van az európai országok körében.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A külföldre távozottak visszacsábítására tett próbálkozások csak szórványos eredménnyel jártak, mert a legtöbben már gyökeret vertek a választott országban, a gyermekeik is ott születtek.",
+    "marks": null
    }
   ],
   "notes": "The paper prints the tariff as '(5 pont)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
@@ -9825,16 +9861,34 @@
   "questionRef": "2023 HL Section I Q6",
   "questionText": "Dóka Péter azt állítja, hogy a Harry Potter nemcsak remek könyvsorozat, hanem a modern gyerekirodalom kezdőpontja is, új korszak nyitánya. A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért-e ezzel vagy sem!",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "A szöveg 7. bekezdése alapján adott válasz: Dóka Péter azért állítja, hogy a Harry Potter nemcsak remek könyvsorozat, hanem a modern gyerekirodalom kezdőpontja is, új korszak nyitánya, mert korszakhatárt jelölt: A, J. K. Rowling is „filmszerűen” fogalmazta meg a Harry Potter könyvsorozatát. B, Még mindig a varázslóiskola berkeiben játszódó könyvsorozat a jelenlegi ifjúsági irodalom viszonyítási pontja. A Harry Potter‐könyvek egy teljes generáció számára bizonyultak „kapudrognak” az olvasáshoz. C, A Harry Potterrel kezdődött az, hogy a fiatalokban is megnőtt a vágy a romantika iránt, így feléledt ez a korstílus. Megjelent a gótikus regény (lásd: Alkonyat), megjelentek az alternatív történelmi regények, a varázslós történetek. És, mint a romantikában általában, ismét nagyon nagy szerepük lett a történetekben az egyéniségeknek, akik képesek megváltoztatni a világot. Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ...",
-    "marks": 5,
-    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    "verbatim": "J. K. Rowling is „filmszerűen” fogalmazta meg a Harry Potter könyvsorozatát.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme leads its answer with “A szöveg 7. bekezdése alapján adott válasz: Dóka Péter azért állítja, hogy a Harry Potter nemcsak remek könyvsorozat, hanem a modern gyerekirodalom kezdőpontja is, új korszak nyitánya, mert korszakhatárt jelölt:”, letters its three points A, B and C, then prints the last line shown here."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Még mindig a varázslóiskola berkeiben játszódó könyvsorozat a jelenlegi ifjúsági irodalom viszonyítási pontja. A Harry Potter‐könyvek egy teljes generáció számára bizonyultak „kapudrognak” az olvasáshoz.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A Harry Potterrel kezdődött az, hogy a fiatalokban is megnőtt a vágy a romantika iránt, így feléledt ez a korstílus. Megjelent a gótikus regény (lásd: Alkonyat), megjelentek az alternatív történelmi regények, a varázslós történetek. És, mint a romantikában általában, ismét nagyon nagy szerepük lett a történetekben az egyéniségeknek, akik képesek megváltoztatni a világot.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ...",
+    "marks": null
    }
   ],
   "notes": "The paper prints the tariff as '(5 pont)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
@@ -10602,16 +10656,28 @@
   "questionRef": "2024 HL Section I Q6",
   "questionText": "A cikk szerzője azt állítja, hogy „(m)inél inkább ráteszik a kezüket a nagyvállalatok ezekre az alternatív gazdasági megoldásokra, annál jobban felhígul a fogalom eredeti tartalma.” A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért-e ezzel vagy sem!",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "A szöveg 3. és 4. bekezdése alapján adott válasz: A cikk szerzője azt állítja, hogy minél inkább ráteszik a kezüket a nagyvállalatok ezekre az alternatív gazdasági megoldásokra, annál jobban felhígul a fogalom eredeti tartalma, mert A) Budapesten is egyre nagyobb teret nyernek az autómegosztók. Immár három vállalat is küzd a sofőrök kegyeiért. Kérdés, hogy abban az esetben, ha a hagyományos gazdaság egyazon vállalata biztosítja a járművet és az applikációt is, az mennyiben tekinthető a megosztáson alapuló gazdaság részének, és mennyiben egy olyan autókölcsönzőnek, amelynek szétszórtan találhatók az átvételi pontjai. B) Az autómegosztás mellett ékes példáját szolgáltatja a rollerkölcsönzés is: az elektromos roller máris vonzó alternatívává vált, mihelyst tömegével jelent meg a nagyvárosokban. A rollerek példáján át jól szemléltethető a megosztáson alapuló gazdaság elégtelen törvényi háttere is. Ahogyan a globális techóriások, úgy ennek a piacnak a szereplői is egy olyan rést töltenek be, aminek a szabályozása még még mindig elégtelen, noha a probléma már a napnál is világosabb. A törvényhozás azonban csak maszatol, és próbálja valamilyen közlekedési eszközként definiálni az elektromos rollereket, miközben arról mélyen hallgat, lehet‐e profitszerzés céljából teleszemetelni a településeket, mindenféle rendezettség nélkül, mert a rollert a felhasználó ott hagyja, ahol éppen jólesik neki.. Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ...",
-    "marks": 5,
-    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    "verbatim": "Budapesten is egyre nagyobb teret nyernek az autómegosztók. Immár három vállalat is küzd a sofőrök kegyeiért. Kérdés, hogy abban az esetben, ha a hagyományos gazdaság egyazon vállalata biztosítja a járművet és az applikációt is, az mennyiben tekinthető a megosztáson alapuló gazdaság részének, és mennyiben egy olyan autókölcsönzőnek, amelynek szétszórtan találhatók az átvételi pontjai.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme leads its answer with “A szöveg 3. és 4. bekezdése alapján adott válasz: A cikk szerzője azt állítja, hogy minél inkább ráteszik a kezüket a nagyvállalatok ezekre az alternatív gazdasági megoldásokra, annál jobban felhígul a fogalom eredeti tartalma, mert”, letters its two points A) and B), then prints the last line shown here."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Az autómegosztás mellett ékes példáját szolgáltatja a rollerkölcsönzés is: az elektromos roller máris vonzó alternatívává vált, mihelyst tömegével jelent meg a nagyvárosokban. A rollerek példáján át jól szemléltethető a megosztáson alapuló gazdaság elégtelen törvényi háttere is. Ahogyan a globális techóriások, úgy ennek a piacnak a szereplői is egy olyan rést töltenek be, aminek a szabályozása még még mindig elégtelen, noha a probléma már a napnál is világosabb. A törvényhozás azonban csak maszatol, és próbálja valamilyen közlekedési eszközként definiálni az elektromos rollereket, miközben arról mélyen hallgat, lehet‐e profitszerzés céljából teleszemetelni a településeket, mindenféle rendezettség nélkül, mert a rollert a felhasználó ott hagyja, ahol éppen jólesik neki..",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ...",
+    "marks": null
    }
   ],
   "notes": "The paper prints the tariff as '(5 pont)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
@@ -11271,16 +11337,42 @@
   "questionRef": "2025 HL Section I Q4",
   "questionText": "Miután az embernek családja lett, nem igazán van szüksége barátokra. Kommentálja ezt az állítást a szövegre való hivatkozással, és fejtse ki saját álláspontját!",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "A 2. bekezdésben a szöveg azt állítja, hogy mára megváltozott a tendencia, miszerint ha egyszer van családod, akkor nincs igazán szükséged barátokra. A rendszerváltás utáni évtizedben szinte mindenki azt válaszolta, hogy családjával beszéli meg problémáit, de mára ez is a barátok javára fordult. Ez persze úgy is értelmezhető, hogy sokan nem tudják megosztani problémáikat közeli családtagjaikkal, például házastársukkal, ami nem jó hír. Egyetértek az állítással: A család mindig közelebb lesz, mint a barátok, és egész életen át veled lesz, míg a barátok jöhetnek-mehetnek. vagy Nem értek egyet az állítással: Kiválaszthatod a barátaidat, akiknek gyakran több közös vonásuk lesz veled, mint a családtagjaiddal. Könnyebb lehet olyan kérdéseket megvitatni, mint például a személyes problémákat egy közeli baráttal, nem pedig a családdal.",
-    "marks": 5,
+    "verbatim": "A 2. bekezdésben a szöveg azt állítja, hogy mára megváltozott a tendencia, miszerint ha egyszer van családod, akkor nincs igazán szükséged barátokra. A rendszerváltás utáni évtizedben szinte mindenki azt válaszolta, hogy családjával beszéli meg problémáit, de mára ez is a barátok javára fordult.",
+    "marks": null,
     "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme heads its answer “Például:”: what it gives is an example, not a required list."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Ez persze úgy is értelmezhető, hogy sokan nem tudják megosztani problémáikat közeli családtagjaikkal, például házastársukkal, ami nem jó hír.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A család mindig közelebb lesz, mint a barátok, és egész életen át veled lesz, míg a barátok jöhetnek-mehetnek.",
+    "marks": null,
+    "contextNote": "The scheme prints this point under its heading “Egyetértek az állítással:”."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Kiválaszthatod a barátaidat, akiknek gyakran több közös vonásuk lesz veled, mint a családtagjaiddal.",
+    "marks": null,
+    "contextNote": "The scheme prints “vagy”, then this point and the one below it under its heading “Nem értek egyet az állítással:”."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Könnyebb lehet olyan kérdéseket megvitatni, mint például a személyes problémákat egy közeli baráttal, nem pedig a családdal.",
+    "marks": null
    }
   ],
   "notes": "The paper prints the tariff as '(5 pont)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
