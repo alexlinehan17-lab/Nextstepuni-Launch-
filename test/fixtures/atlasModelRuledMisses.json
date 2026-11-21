@@ -1,0 +1,181 @@
+{
+ "note": "One-off known misses ruled by the coordinator (each id, its reason and the lane that clears it). test/atlasModelChecks.test.ts lets the known-miss list take exactly these ids and fails when a ruled entry stops missing, so this file only shrinks: when a lane clears one, take it off here and off atlasModelKnownMisses.json.",
+ "entries": [
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2022-hl-deferred-c-a-q1",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2022-hl-deferred-c-a-q2",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2022-hl-deferred-c-a-q3",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2022-hl-deferred-c-b-q4",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2022-hl-deferred-c-b-q5",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2022-hl-deferred-c-b-q6",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2022-hl-deferred-l-q5-b-i",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2022-hl-deferred-l-q5-b-ii",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2022-hl-deferred-l-q5-b-iii",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2022-hl-deferred-l-q5-b-iv",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2022-hl-deferred-l-q5-b-v",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2023-hl-deferred-c-a-q1",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2023-hl-deferred-c-a-q2",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2023-hl-deferred-c-a-q3",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2023-hl-deferred-c-b-q4",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2023-hl-deferred-c-b-q5",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2023-hl-deferred-c-b-q6",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2023-hl-deferred-l-q5-b-i",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2023-hl-deferred-l-q5-b-ii",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2023-hl-deferred-l-q5-b-iii",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2023-hl-deferred-l-q5-b-iv",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  },
+  {
+   "subject": "music",
+   "kind": "card",
+   "id": "mus-2023-hl-deferred-l-q5-b-v",
+   "reason": "The Atlas lists no 2022 or 2023 deferred Music papers (the card cites LC067ALP006EV-deferred or LC067ALP008EV-deferred).",
+   "owner": "Music lane: add the 2022 and 2023 deferred Music papers to the Atlas",
+   "ruling": "coordinator ruling 20 Nov"
+  }
+ ]
+}
