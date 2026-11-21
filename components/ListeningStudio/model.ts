@@ -29,12 +29,30 @@
 import type { CardAudioMaterial, MarkBankLevel, SecCard } from '../../types/markBank';
 import { MARK_BANK_LEVEL_LABELS } from '../../types/markBank';
 import { hostedAudioPath } from '../MarkBank/audioStorage';
+import HOSTED_AUDIO from '../MarkBank/hostedAudio.json';
 
 /** Subjects with recording cards, in the order the Studio offers them. */
 export const LISTENING_SUBJECT_IDS = [
   'irish', 'french', 'german', 'spanish', 'italian', 'music',
   'japanese', 'russian', 'polish', 'portuguese',
 ] as const;
+
+/**
+ * The SEC's own subject code, as it appears in every recording's file id
+ * (LC067ZLP046EV.mp3 is Music). It lets the front page say how many of a
+ * subject's recordings the app holds without loading that subject's decks.
+ * test/listeningStudioModel.test.ts checks each code against every card.
+ */
+export const SEC_SUBJECT_CODES: Record<(typeof LISTENING_SUBJECT_IDS)[number], string> = {
+  irish: '001', french: '010', german: '011', spanish: '012', italian: '013',
+  music: '067', japanese: '058', russian: '099', polish: '548', portuguese: '018',
+};
+
+/** How many of a subject's recordings have a copy the app can play. */
+export const hostedRecordingCount = (subjectId: string): number => {
+  const code = (SEC_SUBJECT_CODES as Record<string, string | undefined>)[subjectId];
+  return code ? (HOSTED_AUDIO as string[]).filter(path => path.startsWith('audio/') && path.includes(`/LC${code}`)).length : 0;
+};
 
 export type ListeningCard = SecCard & { audioMaterial: CardAudioMaterial };
 export const isListeningCard = (card: SecCard): card is ListeningCard => Boolean(card.audioMaterial);
@@ -69,6 +87,8 @@ export interface StudioSitting {
   /** "2025 Higher", "2023 Ordinary · deferred sitting". */
   title: string;
   sections: StudioSection[];
+  /** The sitting's recordings, and how many of them have a copy the app can play. */
+  recordings: { held: number; total: number };
   /** Every recording of the sitting has a copy the app can play. */
   playsInApp: boolean;
 }
@@ -328,6 +348,8 @@ export function listeningSittings(cards: SecCard[]): StudioSitting[] {
         };
       });
 
+    const urls = [...new Set(placed.map(item => item.card.audioMaterial.canonicalUrl))];
+    const held = urls.filter(url => hostedAudioPath(url) !== null || !/^https?:\/\/(www\.)?examinations\.ie\//i.test(url)).length;
     return {
       key,
       subjectId: first.subjectId,
@@ -336,10 +358,8 @@ export function listeningSittings(cards: SecCard[]): StudioSitting[] {
       deferred,
       title: `${first.year} ${MARK_BANK_LEVEL_LABELS[first.level]}${deferred ? ' · deferred sitting' : ''}`,
       sections,
-      playsInApp: placed.every(item => {
-        const url = item.card.audioMaterial.canonicalUrl;
-        return hostedAudioPath(url) !== null || !/^https?:\/\/(www\.)?examinations\.ie\//i.test(url);
-      }),
+      recordings: { held, total: urls.length },
+      playsInApp: held === urls.length,
     };
   }).sort((a, b) => b.year - a.year || Number(a.deferred) - Number(b.deferred));
 }
