@@ -52,7 +52,7 @@
 
 .mb-maths-worked { margin-bottom: 24px; }
 /* The source button sits between sections here, rather than at a card's edge. */
-.mb-maths-scale > .mb-source-material-trigger { margin-bottom: 18px; }
+.mb-maths-scale > .mb-source-material-trigger { margin-bottom: 18px; border-bottom: 1px solid var(--mb-border); }
 .mb-maths-worked figure { margin: 12px 0 0; }
 .mb-maths-worked figure img { display: block; width: 100%; height: auto; background: white; }
 .mb-maths-worked figcaption { margin-top: 8px; color: var(--mb-muted); font: 400 10.5px/1.4 'DM Sans', sans-serif; }

@@ -67,6 +67,11 @@
 
 ## Design language
 
+- From 21 November 2026, new and restyled interface uses the Kobra aesthetic, on Alex's instruction: "from now on we
+  use kobra.systems aesthetic - Not the old AI style". Build from the Kobra components Alex owns and from the look of
+  Listening Studio: DM Sans in sentence case, charcoal and warm white, 1px edges, outlined buttons with a filled
+  inverse for selected and primary states, hairline-divided rows, orange on one meaningful thing. Do not add an orange
+  uppercase eyebrow, a serif title, an icon tile or a tinted band to new interface. See CONVENTIONS.md §3 and §10b.
 - Do not use the generic "AI callout" composition: a softly tinted rounded
   rectangle, decorative coloured side rail, stock icon and heading/body copy.
   It reads as generated filler and is not part of the NextStepUni brand.

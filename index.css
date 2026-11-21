@@ -1226,104 +1226,89 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   background: var(--mb-paper) !important;
 }
 
-/* The question-side doorway into a passage. It is part of the printed-paper
-   card, not another floating card inside it, so it closes the sheet edge to
-   edge and uses one quiet rule as its boundary. */
+/* The question-side doorway into a passage: a Kobra Item row, approved by Alex
+   on 21 November 2026. A title, one muted line and a small outlined button that
+   carries the verb. No icon tile, tinted band, uppercase label, serif or orange.
+   At a card's foot it is part of the printed-paper card, not another floating
+   card inside it, so it closes the sheet edge to edge under one quiet rule.
+   Focus is the shared Quiet white policy (design/quiet-focus.css). */
 .mb-source-material-trigger {
   width: calc(100% + 36px);
   margin: 17px -18px -18px;
-  padding: 13px 16px;
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  gap: 12px;
+  padding: 15px 18px;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 18px;
   text-align: left;
   color: var(--mb-ink);
-  background: var(--mb-soft);
+  background: transparent;
   border: 0;
   border-top: 1px solid var(--mb-border);
   cursor: pointer;
-  transition: background-color 160ms ease;
-}
-
-.mb-source-material-trigger:hover,
-.mb-source-material-trigger:focus-visible {
-  background: #FDEEDF;
 }
 
 /* Scheme links sit between rubric paragraphs, so they cannot use the
-   question-card footer's negative bottom margin. */
+   question-card footer's negative bottom margin: there the row runs the width
+   of its column, ruled above and below. */
 .mb-source-material-trigger-inline {
   width: 100%;
   margin: 17px 0 14px;
+  padding: 16px 0;
   border-bottom: 1px solid var(--mb-border);
-}
-
-.dark .mb-source-material-trigger:hover,
-.dark .mb-source-material-trigger:focus-visible {
-  background: #38281F;
-}
-
-.mb-source-material-trigger:focus-visible {
-  outline: 3px solid rgba(242, 107, 31, .28);
-  outline-offset: -3px;
-}
-
-.mb-source-material-icon {
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  color: #B64B12;
-  background: var(--mb-paper);
-  border: 1px solid rgba(242, 107, 31, .38);
-  border-radius: 11px;
 }
 
 .mb-source-material-copy {
   min-width: 0;
   display: flex;
   flex-direction: column;
-}
-
-.mb-source-material-copy > span {
-  color: #9A3D0B;
-  font: 700 9.5px/1.4 'DM Sans', system-ui, sans-serif;
-  letter-spacing: .11em;
-  text-transform: uppercase;
-}
-
-.dark .mb-source-material-copy > span,
-.dark .mb-source-material-icon,
-.dark .mb-source-reader-heading > span,
-.dark .mb-source-reader-provenance a {
-  color: #FFAE7A;
+  gap: 3px;
 }
 
 .mb-source-material-copy strong {
-  margin-top: 1px;
   overflow: hidden;
   color: var(--mb-ink);
-  font: 650 14px/1.35 'Source Serif 4', Georgia, serif;
+  font: 600 17px/1.3 'DM Sans', system-ui, sans-serif;
+  letter-spacing: -.012em;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .mb-source-material-copy small {
-  margin-top: 2px;
   color: var(--mb-muted);
-  font: 500 10.5px/1.35 'DM Sans', system-ui, sans-serif;
+  font: 400 14px/1.4 'DM Sans', system-ui, sans-serif;
 }
 
+/* The verb, drawn as the Listening Studio's outlined button. The whole row is
+   the control; this is its visible handle. */
 .mb-source-material-open {
-  width: 29px;
-  height: 29px;
-  display: grid;
-  place-items: center;
-  color: var(--mb-ink-2);
-  background: var(--mb-paper);
+  flex: none;
+  min-height: 40px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--mb-ink);
   border: 1px solid var(--mb-border);
-  border-radius: 50%;
+  border-radius: 10px;
+  font: 600 14px/1 'DM Sans', system-ui, sans-serif;
+  white-space: nowrap;
+  transition: border-color 120ms ease;
+}
+
+.mb-source-material-open svg {
+  width: 15px;
+  height: 15px;
+  flex: none;
+}
+
+.mb-source-material-trigger:hover .mb-source-material-open {
+  border-color: var(--mb-ink);
+}
+
+.dark .mb-source-reader-heading > span,
+.dark .mb-source-reader-provenance a {
+  color: #FFAE7A;
 }
 
 /* Immersive source reader. The overlay is intentionally solid-dim rather than
@@ -1755,10 +1740,19 @@ html:not(.dark) [class*="text-[#A0978D]"] {
 
 @media (max-width: 640px) {
   .mb-source-material-trigger {
-    padding: 12px 14px;
+    padding: 13px 18px;
+    gap: 14px;
+  }
+
+  .mb-source-material-trigger-inline {
+    padding: 14px 0;
   }
 
   .mb-source-material-copy strong {
+    font-size: 16px;
+  }
+
+  .mb-source-material-copy small {
     font-size: 13.5px;
   }
 

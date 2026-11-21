@@ -126,6 +126,15 @@ Cross-register primitives: `components/immersiveDeck/HybridCard.tsx` `PrimaryBut
 The IZ content tools are a de-facto **4th idiom**: the chunky `cardShell` neobrutalist look (§2), not any of the three
 module registers and not `ModuleLayout`.
 
+**Kobra is the direction for new and restyled interface (Alex, 21 Nov 2026):** "from now on we use kobra.systems
+aesthetic - Not the old AI style". The components come from the kobra.systems registry, which Alex owns
+(`components/approved-ui-theme.css`, `approved-ui-runtime.css`, `kobra-navigation-runtime.css`). The live exemplar is
+Listening Studio (§10a): DM Sans throughout in sentence case, charcoal and warm white, 1px edges, outlined buttons with
+a filled inverse for the selected or primary state, hairline-divided rows, and orange on one meaningful thing only. The
+registers above describe screens that exist; they are not a licence to build new UI in the older callout style (orange
+uppercase eyebrow, serif title, icon tile, tinted band). He said this while reviewing the printed-page row (§10b), so
+ask before restyling a whole existing register on the strength of it.
+
 ---
 
 ## 4. Question-display patterns — Command-Word Reflex + Catch-Up Lane
@@ -428,6 +437,23 @@ InnovationZone mounts `<MarkBank studio />`, so the deck, the student's memory o
   approved exception to "no dark backgrounds in tool surfaces" (§5) for this one full-screen sitting. The sheet takes
   Mark Bank's `--mb-*` tokens, so it follows light and dark and an embedded scheme sits on it without a seam.
 - **Dev harness:** `/listening-studio-dev.html` (`?subject=French&level=higher&theme=dark`).
+
+---
+
+## 10b. The printed-page row — a Kobra Item (approved by Alex, 21 Nov 2026)
+
+The trigger that opens a card's printed page (`SourceMaterialReader`, classes `.mb-source-material-*` in `index.css`)
+appears on Mark Bank cards, inside marking schemes, in Listening Studio and in Paper Trail. It is one row everywhere:
+the source's `title` in DM Sans 600, one muted line (`2 printed pages · exact examination text`), and a small outlined
+button that carries the verb (`Read` or `Open`). No icon tile, tinted band, uppercase label, serif or orange.
+
+- **The label is spoken, not drawn.** `source.label` is stored in capitals and is often the paper's own heading in its
+  own language (`TEXT I: LESEVERSTÄNDNIS`), so it cannot be recast into sentence case. It leads the button's
+  `aria-label` (`Read TEXT 1: <title>, <extent>`), which is also how the tests find the row, and it heads the reader
+  once opened. Keep `title` distinct between a card's sources: no card's sources share one today.
+- **Two placements.** By default the row closes a card edge to edge under one rule (it assumes the card's 18px
+  padding). With `inline`, or where a panel sets its own width, it runs the column's width, ruled above and below.
+- **Focus** is the shared Quiet white policy (`design/quiet-focus.css`); the row sets none of its own.
 
 ---
 

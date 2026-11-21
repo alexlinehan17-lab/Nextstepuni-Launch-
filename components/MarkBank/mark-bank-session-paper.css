@@ -14,7 +14,8 @@
 @media(max-width:700px){.nsu-kobra .mb-live-session-dialog{max-width:calc(100vw - 16px);height:94dvh;max-height:94dvh;border-radius:16px}.mb-paper-session-heading{padding:22px 20px 18px;gap:14px;flex-wrap:wrap}.mb-paper-session-heading [data-slot=dialog-title]{font-size:28px}.mb-paper-session-heading>div:last-child{margin-left:auto}.mb-paper-session .mb-session-workspace{padding:24px 20px!important;grid-template-columns:1fr;gap:24px!important}.mb-paper-session .mb-scheme-pane{padding-left:0;border-left:0;border-top:1px solid var(--border);padding-top:24px}.mb-paper-draft textarea{height:160px}}
 
 .mb-applied-scheme { color: var(--mb-ink); font: 400 13px/1.55 'DM Sans', sans-serif; }
-.mb-applied-scheme .mb-source-material-trigger { width: 100%; margin: 16px 0; padding: 12px; border: 1.5px solid var(--mb-ink); border-radius: 10px; }
+/* The source row runs the width of the scheme, ruled above and below (index.css). */
+.mb-applied-scheme .mb-source-material-trigger { width: 100%; margin: 16px 0; padding: 16px 0; border-bottom: 1px solid var(--mb-border); }
 .mb-applied-scheme > p { margin: 12px 0; }
 .mb-applied-scheme fieldset { margin: 20px 0; padding: 14px; border: 1.5px solid var(--mb-ink); border-radius: 10px; }
 .mb-applied-scheme legend { padding: 0 5px; font-weight: 700; }
