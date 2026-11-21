@@ -30,6 +30,18 @@
    {
     "n": "6",
     "primary": "croatian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "croatian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "croatian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "croatian-1-1"
    }
   ]
  },
@@ -64,6 +76,18 @@
    {
     "n": "6",
     "primary": "croatian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "croatian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "croatian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "croatian-1-1"
    }
   ]
  },
@@ -98,6 +122,18 @@
    {
     "n": "6",
     "primary": "croatian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "croatian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "croatian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "croatian-1-1"
    }
   ]
  },
@@ -132,6 +168,18 @@
    {
     "n": "6",
     "primary": "croatian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "croatian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "croatian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "croatian-1-1"
    }
   ]
  },
@@ -166,6 +214,18 @@
    {
     "n": "6",
     "primary": "croatian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "croatian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "croatian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "croatian-1-1"
    }
   ]
  },
@@ -200,6 +260,18 @@
    {
     "n": "6",
     "primary": "croatian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "croatian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "croatian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "croatian-1-1"
    }
   ]
  },
@@ -234,6 +306,18 @@
    {
     "n": "6",
     "primary": "croatian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "croatian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "croatian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "croatian-1-1"
    }
   ]
  },
@@ -268,6 +352,14 @@
    {
     "n": "6",
     "primary": "croatian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "croatian-1-1"
+   },
+   {
+    "n": "II2",
+    "primary": "croatian-1-1"
    }
   ]
  },
@@ -302,6 +394,14 @@
    {
     "n": "6",
     "primary": "croatian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "croatian-1-1"
+   },
+   {
+    "n": "II2",
+    "primary": "croatian-1-1"
    }
   ]
  },
@@ -336,6 +436,18 @@
    {
     "n": "6",
     "primary": "croatian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "croatian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "croatian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "croatian-1-1"
    }
   ]
  },
@@ -370,6 +482,18 @@
    {
     "n": "6",
     "primary": "croatian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "croatian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "croatian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "croatian-1-1"
    }
   ]
  },
@@ -404,6 +528,64 @@
    {
     "n": "6",
     "primary": "croatian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "croatian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "croatian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "croatian-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "croatian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2026,
+  "fileid": "LC567ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "croatian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "croatian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "croatian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "croatian-1-1"
    }
   ]
  }

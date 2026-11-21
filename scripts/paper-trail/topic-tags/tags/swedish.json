@@ -3,6 +3,98 @@
   "subjectId": "swedish",
   "level": "higher",
   "lang": "ev",
+  "year": 2010,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "swedish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "swedish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
   "year": 2012,
   "fileid": "LC039ALP000EV.pdf",
   "paperKey": "single",
@@ -30,6 +122,64 @@
    {
     "n": "6",
     "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "swedish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "swedish-1-1"
    }
   ]
  },
@@ -64,6 +214,110 @@
    {
     "n": "6",
     "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "swedish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "swedish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "swedish-1-1"
    }
   ]
  },
@@ -98,6 +352,64 @@
    {
     "n": "6",
     "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "swedish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "swedish-1-1"
    }
   ]
  },
@@ -132,6 +444,18 @@
    {
     "n": "6",
     "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "swedish-1-1"
    }
   ]
  },
@@ -166,6 +490,56 @@
    {
     "n": "6",
     "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "II2",
+    "primary": "swedish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "II2",
+    "primary": "swedish-1-1"
    }
   ]
  },
@@ -200,6 +574,18 @@
    {
     "n": "6",
     "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "swedish-1-1"
    }
   ]
  },
@@ -234,6 +620,18 @@
    {
     "n": "6",
     "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "swedish-1-1"
    }
   ]
  },
@@ -268,6 +666,64 @@
    {
     "n": "6",
     "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "swedish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2026,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "swedish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "swedish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "swedish-1-1"
    }
   ]
  }

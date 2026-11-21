@@ -30,6 +30,18 @@
    {
     "n": "6",
     "primary": "maltese-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "maltese-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "maltese-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "maltese-1-1"
    }
   ]
  },
@@ -64,6 +76,60 @@
    {
     "n": "6",
     "primary": "maltese-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "maltese-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "maltese-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "maltese-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "maltese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC557ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "maltese-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "maltese-1-1"
+   },
+   {
+    "n": "II2",
+    "primary": "maltese-1-1"
    }
   ]
  },
@@ -98,6 +164,18 @@
    {
     "n": "6",
     "primary": "maltese-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "maltese-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "maltese-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "maltese-1-1"
    }
   ]
  },
@@ -132,6 +210,18 @@
    {
     "n": "6",
     "primary": "maltese-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "maltese-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "maltese-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "maltese-1-1"
    }
   ]
  },
@@ -166,6 +256,18 @@
    {
     "n": "6",
     "primary": "maltese-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "maltese-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "maltese-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "maltese-1-1"
    }
   ]
  }

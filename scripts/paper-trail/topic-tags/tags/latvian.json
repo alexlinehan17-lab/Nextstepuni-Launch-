@@ -3,6 +3,328 @@
   "subjectId": "latvian",
   "level": "higher",
   "lang": "ev",
+  "year": 2010,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
   "year": 2017,
   "fileid": "LC549ALP000EV.pdf",
   "paperKey": "single",
@@ -30,6 +352,64 @@
    {
     "n": "6",
     "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
    }
   ]
  },
@@ -64,6 +444,64 @@
    {
     "n": "6",
     "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
    }
   ]
  },
@@ -98,6 +536,14 @@
    {
     "n": "6",
     "primary": "latvian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "II2",
+    "primary": "latvian-1-1"
    }
   ]
  },
@@ -132,6 +578,60 @@
    {
     "n": "6",
     "primary": "latvian-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "II2",
+    "primary": "latvian-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
    }
   ]
  },
@@ -166,6 +666,110 @@
    {
     "n": "6",
     "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2026,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "II",
+    "primary": "latvian-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "latvian-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "latvian-1-1"
    }
   ]
  }

@@ -3,6 +3,90 @@
   "subjectId": "danish",
   "level": "higher",
   "lang": "ev",
+  "year": 2010,
+  "fileid": "LC038ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "danish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "danish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "danish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC038ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "danish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "danish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "danish",
+  "level": "higher",
+  "lang": "ev",
   "year": 2012,
   "fileid": "LC038ALP000EV.pdf",
   "paperKey": "single",
@@ -30,6 +114,14 @@
    {
     "n": "6",
     "primary": "danish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "danish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "danish-1-1"
    }
   ]
  },
@@ -64,6 +156,18 @@
    {
     "n": "6",
     "primary": "danish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "danish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "danish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "danish-1-1"
    }
   ]
  },
@@ -98,6 +202,14 @@
    {
     "n": "6",
     "primary": "danish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "danish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "danish-1-1"
    }
   ]
  },
@@ -132,6 +244,14 @@
    {
     "n": "6",
     "primary": "danish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "danish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "danish-1-1"
    }
   ]
  },
@@ -166,6 +286,14 @@
    {
     "n": "6",
     "primary": "danish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "danish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "danish-1-1"
    }
   ]
  },
@@ -242,6 +370,56 @@
    {
     "n": "6",
     "primary": "danish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "danish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "danish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "danish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "danish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC038ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "danish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "danish-1-1"
    }
   ]
  },
@@ -276,6 +454,14 @@
    {
     "n": "6",
     "primary": "danish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "danish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "danish-1-1"
    }
   ]
  },
@@ -310,6 +496,14 @@
    {
     "n": "6",
     "primary": "danish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "danish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "danish-1-1"
    }
   ]
  },
@@ -344,6 +538,18 @@
    {
     "n": "6",
     "primary": "danish-0-1"
+   },
+   {
+    "n": "II1",
+    "primary": "danish-1-0"
+   },
+   {
+    "n": "III1",
+    "primary": "danish-1-1"
+   },
+   {
+    "n": "III2",
+    "primary": "danish-1-1"
    }
   ]
  }
