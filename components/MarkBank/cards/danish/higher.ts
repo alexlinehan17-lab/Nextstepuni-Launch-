@@ -33,6 +33,195 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-i-1", topicId: "danish-0-1", conceptId: "forklar-betydningen-ordet-aftensmad-som-det",
+    section: "I", questionRef: "2010 HL Section I Q1",
+    questionText: "Forklar betydningen af ordet ”aftensmad” som det bruges i teksten (1. afsnit)\nForklar betydningen af ordet ”høflighed” som det bruges i teksten (2. afsnit)\nForklar betydningen af ordet ”videresælge” som det bruges i teksten (5. afsnit)\nForklar betydningen af ordet ”omskiftelig” som det bruges i teksten (6. afsnit)\nForklar betydningen af ordet ”grundigt” som det bruges i teksten (7. afsnit)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-i-2", topicId: "danish-0-1", conceptId: "beskriv-funktioner-som-facebook-har-lge",
+    section: "I", questionRef: "2010 HL Section I Q2",
+    questionText: "Beskriv de to funktioner, som Facebook har ifølge teksten",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-i-3", topicId: "danish-0-1", conceptId: "hvad-det-der-fra-din-sning",
+    section: "I", questionRef: "2010 HL Section I Q3",
+    questionText: "Hvad er det, der ud fra din læsning af teksten gør Facebook så spændende for så mange mennesker?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-i-4", topicId: "danish-0-1", conceptId: "rede-den-magt-som-facebook-har",
+    section: "I", questionRef: "2010 HL Section I Q4",
+    questionText: "Gør rede for den magt, som Facebook har over folk samt de problemer, denne magt iflg. Anette Høyrup udgør .",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-i-5", topicId: "danish-0-1", conceptId: "facebook-blevet-med-skepsis-bekymring-ikke",
+    section: "I", questionRef: "2010 HL Section I Q5",
+    questionText: "”Facebook er blevet mødt med skepsis og bekymring, ikke mindst for at nære narcissismen og for at dyrke de overfladiske bekendtskaber, illustreret ved, at man på Facebook betegner alle sine kontakter som \"venner\"”. Tag stilling til dette udsagn ud fra teksten som helhed.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-i-6", topicId: "danish-0-1", conceptId: "hvilken-ligner-metaforen-med-naboen-den",
+    section: "I", questionRef: "2010 HL Section I Q6",
+    questionText: "På hvilken måde ligner metaforen med naboen og den fremmede i afsnit 1 og 2 interaktionen på Facebook?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-ii-1", topicId: "danish-1-0", conceptId: "hvad-sker-der-med-mennesker-lever",
+    section: "II", questionRef: "2010 HL Section II Q1",
+    questionText: "\"Hvad sker der med os mennesker, når vi lever en så omskiftelig tilværelse, hvor vi hele tiden kan udskifte vores netværk? Vi når aldrig at forpligte os på noget, men skifter løbende identitet, alt efter hvilket netværk der nu passer bedst til vores ambitioner. Man kan godt frygte, at vi i det lange løb mister en stor del af den værdi, der ligger i de nære og langvarige forhold med alt, hvad de indebærer af godt og ondt.” Giv med dine egne ord din mening til kende i en kommentar til dette synspunkt med cirka 100 ord.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Danish 2010 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "dan-2010-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2010 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét (1) af disse to emner: - Gør brugen af internettet os klogere eller dummere? eller - Mennesket er ingen ø",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle opgaverne skal besvares med danske ord\"" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2011, level: "higher",
     paperFileid: "LC038ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2011 Higher Level — © State Examinations Commission.",
@@ -41,8 +230,23 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar ordet ”bunden” som det bruges i teksten (1. afsnit) Forklar ordet ” tredje” som det bruges i teksten (1. afsnit) Forklar ordet ”behov” som det bruges i teksten (4. afsnit) Forklar ordet ”måling” som det bruges i teksten (5. afsnit) Forklar ordet ”tilfreds” som det bruges i teksten (8. afsnit)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nederst på listen Nummer tre/3 Noget som man ikke kan undvære Undersøgelse, studie Være glad for det, man har", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Nederst på listen", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\"" },
+    { id: "r-2", kind: "point", verbatim: "Nummer tre/3", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "Noget som man ikke kan undvære", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "Undersøgelse, studie", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "Være glad for det, man har", marks: 1 },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -54,8 +258,19 @@ export const CARDS: SecCard[] = [
     questionText: "Hvorved adskiller danskerne sig ifølge teksten fra folk i lande som Indien, Pakistan og Zimbabwe",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Danskerne er de lykkeligste, de andre de ulykkeligste i verden.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Danskerne er de lykkeligste, de andre de ulykkeligste i verden.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -67,8 +282,19 @@ export const CARDS: SecCard[] = [
     questionText: "Hvad er forskellen på opfattelsen af lykke før og nu?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Summen af lykke er konstant, men selve målestokken for lykke har forandret sig. Før betød materiel lykke mere end i dag, hvor spirituel/sjælelig lykke opfattes som vigtigere.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Summen af lykke er konstant, men selve målestokken for lykke har forandret sig. Før betød materiel lykke mere end i dag, hvor spirituel/sjælelig lykke opfattes som vigtigere.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -80,8 +306,19 @@ export const CARDS: SecCard[] = [
     questionText: "Hvordan forklarer Bjørnskov utilfredsheden blandt menneskerne i bunden af undersøgelsen?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mistillid, minderne fra fortiden (menneskerne i de tidligere sovjetlande bærer stadig på minderne fra 50 års frygt og familietragedier), sammenligning med andre.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mistillid, minderne fra fortiden (menneskerne i de tidligere sovjetlande bærer stadig på minderne fra 50 års frygt og familietragedier), sammenligning med andre.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -93,8 +330,19 @@ export const CARDS: SecCard[] = [
     questionText: "”…tage initiativ, invitere, risikere, investere. Både i privatlivet og i arbejdslivet”, siger Bjørnskov. Hvad mener Christian Bjørnskov efter din mening med dette?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Svaret forventes at gå i retning af: Lykken kommer ikke af sig selv, man må være deltager i livet for at kunne få noget tilbage fra det. Ordene ”risikere” og ”investere” i forbindelse med mennesker peger på, at der også være tale om skuffelser - ikke en sikker gevinst.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Svaret forventes at gå i retning af: Lykken kommer ikke af sig selv, man må være deltager i livet for at kunne få noget tilbage fra det. Ordene ”risikere” og ”investere” i forbindelse med mennesker peger på, at der også være tale om skuffelser - ikke en sikker gevinst.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -106,7 +354,55 @@ export const CARDS: SecCard[] = [
     questionText: "Hvad er ifølge teksten opskriften på lykke?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Svaret forventes at opsamle de vigtigste pointer i teksten om lykke ud fra danskernes opfattelse af den: At være dansk, at have tillid, at udvikle sig selv sammen med andre, at kunne være tilfreds med det, man har, samt et vist mål af utilfredshed.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Svaret forventes at opsamle de vigtigste pointer i teksten om lykke ud fra danskernes opfattelse af den: At være dansk, at have tillid, at udvikle sig selv sammen med andre, at kunne være tilfreds med det, man har, samt et vist mål af utilfredshed.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2011 Higher Level — © State Examinations Commission.",
+    id: "dan-2011-hl-ii-1", topicId: "danish-1-0", conceptId: "overlykkelige-risikerer-blive-passive-mangle-empati",
+    section: "II", questionRef: "2011 HL Section II Q1",
+    questionText: "”Er vi overlykkelige, risikerer vi at blive passive og mangle empati og fremdrift. Den engelske 1700-tals moralfilosof og økonom Adam Smith har sagt, at det faktum, at vi aldrig når vores mål, er et menneskeligt vilkår og årsag til, at vi udvikler os og er nysgerrige. Den lille utilfredshed giver os kræfter og overskud.” Kommenter dette synspunkt med minimum 100 ord.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Svaret forventes at indfange det dialektiske ved lykken i citatet: at et vist mål af ulykke er produktivt og nødvendigt for vores udvikling. Samtidig ville opnåelse af fuldkommen lykke ifølge citatet ikke være godt.", marks: 30, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\" The scheme prints: “Note: I del 2 og del 3 vil de følgende elementer blive anvendt som vurderingskriterier.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Målstyring – eksaminanden viser forståelse af spørgsmålet og af en måde at besvare det på – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Sammenhæng – eksaminanden inddrager relevante og passende emner på en struktureret og meningsfuld måde – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sprogligt herredømme – eksaminanden demonstrerer sprogligt herredømme competent nok til at kommunikere ideer klart og flydende – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Sprogregler – grammatiske regler, staveregler, tegnsætning – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2011 Higher Level — © State Examinations Commission.",
+    id: "dan-2011-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2011 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner:\nForholdet mellem åndelig og materiel lykkeopfattelse\n\"De fleste mennesker er omtrent så lykkelige, som de beslutter sig for at være.\" (Abraham Lincoln 16. præsident i USA - 1809-1865)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Svaret forventes at forholde sig eksplicit til begreberne materiel og åndelig/sjælelig lykke. Man kan forestille sig en historisk vinkel på emnet, siden en sådan er nævnt i teksten. Under alle omstændigheder en personlig stillingtagen til emnet.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\" The scheme prints: “Note: I del 2 og del 3 vil de følgende elementer blive anvendt som vurderingskriterier.”. The scheme prints this paragraph under “Opgave III” and names neither title.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Målstyring – eksaminanden viser forståelse af spørgsmålet og af en måde at besvare det på – 30 %","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Sammenhæng – eksaminanden inddrager relevante og passende emner på en struktureret og meningsfuld måde – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sprogligt herredømme – eksaminanden demonstrerer sprogligt herredømme competent nok til at kommunikere ideer klart og flydende – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Sprogregler – grammatiske regler, staveregler, tegnsætning – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
     ],
   } as SecCard,
   {
@@ -116,20 +412,25 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2012 Higher Level — © State Examinations Commission.",
     id: "dan-2012-hl-i-1", topicId: "danish-0-1", conceptId: "forklar-betydningen-ordene-veldrejede-ydre-som",
     section: "I", questionRef: "2012 HL Section I Q1",
-    questionText: "Forklar betydningen af ordene ”veldrejede ydre” som de bruges i teksten (1. afsnit) Forklar betydningen af ordene ”sparke døre ind” som de bruges i teksten (1. afsnit) Forklar betydningen af ordet ”undersøgelse” som det bruges i teksten ( 2. afsnit) Forklar betydningen af ordet ”bedømme” som det bruges i teksten (3. afsnit) Forklar betydningen af ordet ”forarge” som det bruges i teksten (4. afsnit)",
+    questionText: "Forklar betydningen af ordene ”veldrejede ydre” som de bruges i teksten (1. afsnit)\nForklar betydningen af ordene ”sparke døre ind” som de bruges i teksten (1. afsnit)\nForklar betydningen af ordet ”undersøgelse” som det bruges i teksten ( 2. afsnit)\nForklar betydningen af ordet ”bedømme” som det bruges i teksten (3. afsnit)\nForklar betydningen af ordet ”forarge” som det bruges i teksten (4. afsnit)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “godt udseende”, ”smuk”) Enhver rimelig forklaring (e.g. “at få succes\") Enhver rimelig forklaring (e.g. “udforskning”) Enhver rimelig forklaring (e.g. “vurdere”) Enhver rimelig forklaring (e.g. “vække vrede”, ”modvilje”)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “godt udseende”, ”smuk”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-2", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “at få succes\")", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “udforskning”)", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “vurdere”)", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “vække vrede”, ”modvilje”)", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -142,17 +443,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hvad viser konklusionerne fra forskningsprojektet i Arizona?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Redegørelse for hovedindholdet af afsnit 3. Konklusionerne viser, at slankhedsidealet breder sig til lande, der før idealiserede tykke kroppe, og at man nu ser ned på fede mennesker.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Redegørelse for hovedindholdet af afsnit 3. Konklusionerne viser, at slankhedsidealet breder sig til lande, der før idealiserede tykke kroppe, og at man nu ser ned på fede mennesker.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -165,17 +467,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hvilke fordele er der iflg. tidsskriftet The Economist ved at være smuk, og hvilke ulemper er der ifølge Peter Aalbæk Jensen ved det?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Skønhed har ikke kun fordele. Både fordele: bedre karrieremuligheder og løn, ulemper: alder, dvs. skønheden er kortvarig, manglende forståelse af de sociale regler.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Skønhed har ikke kun fordele. Både fordele: bedre karrieremuligheder og løn, ulemper: alder, dvs. skønheden er kortvarig, manglende forståelse af de sociale regler.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -188,17 +491,18 @@ export const CARDS: SecCard[] = [
     questionText: "”Kønne mennesker har altid haft lettere ved at sparke døre ind. Det er der vist ikke noget nyt ved, men det nye i dag er, at man kan tale mere åbent om det?” Kommenter dette synspunkt på baggrund af teksten som helhed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Personlig stillingtagen, baseret på at påstanden er enten sand eller falsk.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Personlig stillingtagen, baseret på at påstanden er enten sand eller falsk.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -211,17 +515,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hvordan opfatter du Peter Aalbæk Jensen afsluttende bemærkning? ”Nu er vi over 55 år og lige kønne alle sammen, og der er ikke nogen af de andre, som har klaret sig så godt som mig.”",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Bemærkningen udtrykker skadefryd over for de personer, der tidligere så ned på forfatteren på grund af hans udseende, og den beviser, at påstanden om grimme menneskers fortrin er sand.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Bemærkningen udtrykker skadefryd over for de personer, der tidligere så ned på forfatteren på grund af hans udseende, og den beviser, at påstanden om grimme menneskers fortrin er sand.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -234,18 +539,56 @@ export const CARDS: SecCard[] = [
     questionText: "”BeautifulPeople.com (…) er i dag et globalt mødested for unge mennesker med et mere end gennemsnitligt kønt ydre.” Kommenter aktiviteterne, der foregår på dette mødested.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Personlig udlægning baseret på en rimelig argumentation. Der er både mulighed for at se positive og negative tendenser i aktiviteterne, f.eks at webstedet er lukket for visse mennesker og muligvis diskriminerer dem, som ikke lever op til skønhedsidealet, eller på den anden side giver mennesker en mulighed for at skabe sig en karriere.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Personlig udlægning baseret på en rimelig argumentation. Der er både mulighed for at se positive og negative tendenser i aktiviteterne, f.eks at webstedet er lukket for visse mennesker og muligvis diskriminerer dem, som ikke lever op til skønhedsidealet, eller på den anden side giver mennesker en mulighed for at skabe sig en karriere.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2012 Higher Level — © State Examinations Commission.",
+    id: "dan-2012-hl-ii-1", topicId: "danish-1-0", conceptId: "mennesker-bare-bedre-ans-tte-grimme",
+    section: "II", questionRef: "2012 HL Section II Q1",
+    questionText: "”Pæne mennesker er bare bedre at ansætte, og grimme mennesker kan skade forretningen. Det er også fakta, at pæne mennesker får mere i løn end grimme. Det er et skridt i den rigtige retning.” Diskuter dette synspunkt med ca. 100 ord.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Kommentar på ca. 100 ord som viser klar forståelse af tekstens vigtigste pointer.", marks: 30, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under the scheme's heading “Diskussionen kan f.eks. drejes i følgende retninger:”, as examples, not a checklist: “Udviklingen er harmløs og uundgåelig. Grimme mennesker skal nok ikke præsentere firmaet udadtil, men kan udmærket finde sig en plads i samfundet og skabe sig en karriere”; “Udskillelse af grimme mennesker kan føre til decideret diskrimination og had.”. The scheme prints: “Note: I del 2 og del 3 vil de følgende elementer blive anvendt som vurderingskriterier.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Målstyring – eksaminanden viser forståelse af spørgsmålet og af en måde at besvare det på – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Sammenhæng – eksaminanden inddrager relevante og passende emner på en struktureret og meningsfuld måde – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sprogligt herredømme – eksaminanden demonstrerer sprogligt herredømme competent nok til at kommunikere ideer klart og flydende – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Sprogregler – grammatiske regler, staveregler, tegnsætning – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2012 Higher Level — © State Examinations Commission.",
+    id: "dan-2012-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2012 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner:\nDybde og overflade i menneskelige relationer\nI vores moderne verden bliver der altid fokuseret på her og nu",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Et velskrevet eassay på ca. 300 ord, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under the scheme's heading “For eksempel:”, as examples, not a checklist: “Menneskelige relationer bygger på meget andet end udseendet for de fleste. Dybde og modenhed vokser frem i tillid og direkte kontakt mellem mennesker og ikke i nogen klub på internettet.”. The scheme prints: “Note: I del 2 og del 3 vil de følgende elementer blive anvendt som vurderingskriterier.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Målstyring – eksaminanden viser forståelse af spørgsmålet og af en måde at besvare det på – 30 %","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Sammenhæng – eksaminanden inddrager relevante og passende emner på en struktureret og meningsfuld måde – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sprogligt herredømme – eksaminanden demonstrerer sprogligt herredømme competent nok til at kommunikere ideer klart og flydende – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Sprogregler – grammatiske regler, staveregler, tegnsætning – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -254,20 +597,25 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2014 Higher Level — © State Examinations Commission.",
     id: "dan-2014-hl-i-1", topicId: "danish-0-1", conceptId: "forklar-betydningen-ordet-lkehus-som-det",
     section: "I", questionRef: "2014 HL Section I Q1",
-    questionText: "Forklar betydningen af ordet ”bjælkehus” som det bruges i teksten Forklar betydningen af ordet ”værdier” som de bruges i teksten Forklar betydningen af ordene ”et stort og vildt spring ud over kanten” som de bruges i teksten Forklar betydningen af ordet ”nøjsomhed” som det bruges i teksten Forklar betydningen af ordene ” tæskede mig selv” som de bruges i teksten",
+    questionText: "Forklar betydningen af ordet ”bjælkehus” som det bruges i teksten\nForklar betydningen af ordet ”værdier” som de bruges i teksten\nForklar betydningen af ordene ”et stort og vildt spring ud over kanten” som de bruges i teksten\nForklar betydningen af ordet ”nøjsomhed” som det bruges i teksten\nForklar betydningen af ordene ” tæskede mig selv” som de bruges i teksten",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “hus lavet af træ, træstammer”) Enhver rimelig forklaring (e.g. “holdninger som man lever efter\") Enhver rimelig forklaring (e.g. “at forlade det trygge liv, tage chancer”) Enhver rimelig forklaring (e.g. “at leve for få midler”) Enhver rimelig forklaring (e.g. “at kritisere/bebrejde sig selv”)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “hus lavet af træ, træstammer”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-2", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “holdninger som man lever efter\")", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “at forlade det trygge liv, tage chancer”)", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “at leve for få midler”)", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “at kritisere/bebrejde sig selv”)", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -280,17 +628,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hvor flyttede familien hen, da den forlod Danmark? Beskriv familiens liv, som det er nu.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Søgning af information i teksten: Familien flyttede ud i den svenske vildmark. Den lever simpelt og tilbagetrukket, men alligevel med en hel del af det normale livs bekvemmeligheder. Eksempler: De henter vand i en brønd, men de har også computere med internet, som kører på strøm fra et solcelleanlæg.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Søgning af information i teksten: Familien flyttede ud i den svenske vildmark. Den lever simpelt og tilbagetrukket, men alligevel med en hel del af det normale livs bekvemmeligheder. Eksempler: De henter vand i en brønd, men de har også computere med internet, som kører på strøm fra et solcelleanlæg.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -303,17 +652,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hvorfor forlod familien Danmark?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Redegørelse for indholdet i første del med god forståelse af den centrale pointe: Det moderne liv var ubehageligt i en moralsk forstand. Familien følte, den levede unaturligt på afstand af det ”rigtige” liv, som de fleste mennesker i verden lever. Den ville væk fra den vanemæssige omgang med det moderne livs bekvemmeligheder, og fordi familien ikke havde det godt.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Redegørelse for indholdet i første del med god forståelse af den centrale pointe: Det moderne liv var ubehageligt i en moralsk forstand. Familien følte, den levede unaturligt på afstand af det ”rigtige” liv, som de fleste mennesker i verden lever. Den ville væk fra den vanemæssige omgang med det moderne livs bekvemmeligheder, og fordi familien ikke havde det godt.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -326,17 +676,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hvad er det særligt ved den nye tilværelse, som Andrea Hejlskov kan lide?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Redegørelse for tekstens pointer: Familiens livsværdier kredser særligt om et nært forhold til naturen, nøjsomhed, overlevelsesevne og at leve som den største del af verdens befolkning gør det.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Redegørelse for tekstens pointer: Familiens livsværdier kredser særligt om et nært forhold til naturen, nøjsomhed, overlevelsesevne og at leve som den største del af verdens befolkning gør det.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -349,17 +700,18 @@ export const CARDS: SecCard[] = [
     questionText: "”Det påvirker ens sind. Man bliver bedre til at huske at hugge brænde, til at have et forråd af mad. Men jeg skal også ærligt sige, at det stikker dybere. Hvis klimaet går helt amok, hvis de økonomiske systemer bryder sammen, så vil jeg sgu have mit på det rene. Jeg vil kunne sørge for mig, min familie og mine naboer.« Beskriv med dine egne ord de dybere tanker, som Andrea Hejlskov gør sig om fremtiden .",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Udlægning af tekstens indhold. Svaret skal indkredse de dystre udsigter, som truer verdens fremtid, og som danner baggrund for familiens alternative livsstil. Ifølge Andrea Hejlskov kan det blive et spørgsmål om overlevelse. Autenticitetsbevægelsen må ses som en reaktion på de fremtidsudsigter, som hersker blandt tilhængerne: kapitalismens kollaps, civilisationens degeneration og klimaets forandring.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Udlægning af tekstens indhold. Svaret skal indkredse de dystre udsigter, som truer verdens fremtid, og som danner baggrund for familiens alternative livsstil. Ifølge Andrea Hejlskov kan det blive et spørgsmål om overlevelse. Autenticitetsbevægelsen må ses som en reaktion på de fremtidsudsigter, som hersker blandt tilhængerne: kapitalismens kollaps, civilisationens degeneration og klimaets forandring.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -372,18 +724,69 @@ export const CARDS: SecCard[] = [
     questionText: "”Vi er helt sikkert del af ’autenticitetsbevægelsen’. Det kan godt irritere mig – for vi ville jo væk fra alt det der – trends vi bruger som små plastre på såret, trends vi følger for at give livet indhold (…) Jeg kan sagtens se, hvor latterligt det kan forekomme, hvor fake. Og hvor meget autenticitet bare bliver en ny form for forbrug, en hul livsstil, man kan købe, og som ser pænere ud.” Kommenter ud fra dette citat personens selvkritik.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Personlig kommentar baseret på en rimelig forståelse af Hejlskovs dilemma. Svaret skal demonstrere forståelse for den konflikt, Hejlskov befinder sig i. Der er både mulighed for at se positivt og negativt på hendes selvkritik. For eksempel kan man behandle Andrea Hejlskovs irritation over at blive identificeret med de trends og handlinger, som ikke retter sig mod de vigtige emner i det moderne liv, men som blot tildækker de egentlige problemer. Hun er skeptisk over for denne adfærd, men er også bekymret for, om hendes handlinger vil blive misforstået.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Personlig kommentar baseret på en rimelig forståelse af Hejlskovs dilemma. Svaret skal demonstrere forståelse for den konflikt, Hejlskov befinder sig i. Der er både mulighed for at se positivt og negativt på hendes selvkritik. For eksempel kan man behandle Andrea Hejlskovs irritation over at blive identificeret med de trends og handlinger, som ikke retter sig mod de vigtige emner i det moderne liv, men som blot tildækker de egentlige problemer. Hun er skeptisk over for denne adfærd, men er også bekymret for, om hendes handlinger vil blive misforstået.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2014 Higher Level — © State Examinations Commission.",
+    id: "dan-2014-hl-ii-1", topicId: "danish-1-0", conceptId: "unge-vores-samfund-har-lugtet-lunten",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "”De unge i vores samfund har lugtet lunten, og det er en illusion, at det moderne liv er den bedste af alle livsformer. Hvorfor tror du, ud fra din læsning af teksten som helhed, at Andrea Hejlskov når til denne konklusion? Forklar din mening i en kommentar på ca. 100 ord.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Kommentar på ca. 100 ord som viser klar forståelse af tekstens vigtigste pointer.", marks: 30, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under the scheme's heading “Diskussionen kan f.eks. drejes i følgende retninger:”, as examples, not a checklist: “Det moderne, vestlige liv er det bedste af alle, fordi det tilbyder ungdommen avancerede og varierede udviklingsmuligheder individuelt så vel som socialt. Eller i samme retning som teksten bevæger sig: Det moderne liv er uholdbart, og ungdommen er begyndt at indse, at den vestlige, kapitalistiske livsform fastholder individet i en lukket verden centreret om forbrug. I Andrea Hejlskovs tilfælde er hendes tanker om hendes børns opvækst i en verden præget af dårlige normer og værdier noget, der optager og bekymrer hende meget og får hende til at søge en ny og bedre måde at leve på.”. The scheme prints: “Note: I del 2 og del 3 vil de følgende elementer blive anvendt som vurderingskriterier.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Målstyring – eksaminanden viser forståelse af spørgsmålet og af en måde at besvare det på – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Sammenhæng – eksaminanden inddrager relevante og passende emner på en struktureret og meningsfuld måde – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sprogligt herredømme – eksaminanden demonstrerer sprogligt herredømme competent nok til at kommunikere ideer klart og flydende – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Sprogregler – grammatiske regler, staveregler, tegnsætning – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2014 Higher Level — © State Examinations Commission.",
+    id: "dan-2014-hl-iii-1", topicId: "danish-1-1", conceptId: "personlige-rdier-kompetencer-verden-under-forandring",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner: Personlige værdier og kompetencer i en verden under forandring.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Et velskrevet essay på ca. 300 ord, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under the scheme's heading “Personlige værdier og kompetencer i en verden under forandring”, as examples, not a checklist: “Menneskets forhold til det omgivende samfund har fornyet aktualitet i globaliseringens årti, hvor folk vænnes til at betragte deres egne samfundssystemer i lyset af de øvrige i verden. I teksten ligger der flere temaer, som kan perspektiveres: mindfullness, autenticitetsbevægelsen, internationalisering, globalisering, økologi, økonomisk krise/sammenbrud, menneskets forhold til naturen. Den vestlige verdens livsform som en usædvanlig, regional tilværelse bliver mere og mere bevidst for de kommende generationer, der vokser op med globaliseringen. En verden i forandring kræver fleksibilitet af mennesket.”. The scheme prints: “Note: I del 2 og del 3 vil de følgende elementer blive anvendt som vurderingskriterier.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Målstyring – eksaminanden viser forståelse af spørgsmålet og af en måde at besvare det på – 30 %","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Sammenhæng – eksaminanden inddrager relevante og passende emner på en struktureret og meningsfuld måde – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sprogligt herredømme – eksaminanden demonstrerer sprogligt herredømme competent nok til at kommunikere ideer klart og flydende – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Sprogregler – grammatiske regler, staveregler, tegnsætning – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2014 Higher Level — © State Examinations Commission.",
+    id: "dan-2014-hl-iii-2", topicId: "danish-1-1", conceptId: "selvom-rejser-over-hele-verden-finde",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner: \" Selvom vi rejser over hele verden for at finde det skønne, må vi have det med os på forhånd, eller vi finder det ikke.\" Ralph Waldo Emerson",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Et velskrevet essay på ca. 300 ord, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme prints: “Note: I del 2 og del 3 vil de følgende elementer blive anvendt som vurderingskriterier.”. The scheme reprints the second title as “\" Selvom vi rejser over hele verden for at finde det skønne, må vi have det med os på forhånd, eller vi finder det ikke.\"” and prints nothing under it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Målstyring – eksaminanden viser forståelse af spørgsmålet og af en måde at besvare det på – 30 %","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Sammenhæng – eksaminanden inddrager relevante og passende emner på en struktureret og meningsfuld måde – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sprogligt herredømme – eksaminanden demonstrerer sprogligt herredømme competent nok til at kommunikere ideer klart og flydende – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Sprogregler – grammatiske regler, staveregler, tegnsætning – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -395,17 +798,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hvad laver man i en reparationscafé? Beskriv aktiviteterne med dine egne ord.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Redegørelse for hovedindholdet af 1. afsnit. Man kommer til en rep. workshop for at få hjælp til at rep. ens egne sager, der er gået itu, f.eks. med lånt værktøj eller vejledning .", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Redegørelse for hovedindholdet af 1. afsnit. Man kommer til en rep. workshop for at få hjælp til at rep. ens egne sager, der er gået itu, f.eks. med lånt værktøj eller vejledning .", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -418,17 +822,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hvad er ifølge Jasper Steinhausen forklaringen på reparationscaféernes succes?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Iflg. Steinhausen skyldes deres succes, at forbrugerne er sure over at se, deres ting systematisk bryder sammen efter kort tids brug – planlagt forældelse. Desuden skyldes det en generelt større opmærksomhed for og hensyn til grøn omstilling og affaldsproblematikken.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Iflg. Steinhausen skyldes deres succes, at forbrugerne er sure over at se, deres ting systematisk bryder sammen efter kort tids brug – planlagt forældelse. Desuden skyldes det en generelt større opmærksomhed for og hensyn til grøn omstilling og affaldsproblematikken.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -441,17 +846,18 @@ export const CARDS: SecCard[] = [
     questionText: "”Det kommer til at slå igennem. For vi lever i en verden, hvor vi bliver et par milliarder mere til at forbruge, og derfor vil det være nødvendigt at tænke i smartere måder at drive forretning på (…) forretningen skal være cirkulær og ikke lineær.” Er du enig med Jasper Steinhausen i dette synspunkt? Begrund dit svar.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Personlig stillingtagen baseret på en rimelig argumentation. Enten, f.eks.: ”Ja, jeg er enig: reparationscafeér er en smart måde at bekæmpe smid-væk-kulturen på, fordi de bidrager til at udvikle bedre menneskelige værdier og mere bæredygtig økonomi.” Eller, f.eks., ”Nej, jeg er uenig. Det nytter ingenting at folk genbruger og reparerer deres egne ting. Så får arbejderne rundt omkring i verden bare mindre i løn, hvorefter det vil gå dem endnu dårligere end nu eller ligefrem miste deres job”, eller lignende.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Personlig stillingtagen baseret på en rimelig argumentation. Enten, f.eks.: ”Ja, jeg er enig: reparationscafeér er en smart måde at bekæmpe smid-væk-kulturen på, fordi de bidrager til at udvikle bedre menneskelige værdier og mere bæredygtig økonomi.” Eller, f.eks., ”Nej, jeg er uenig. Det nytter ingenting at folk genbruger og reparerer deres egne ting. Så får arbejderne rundt omkring i verden bare mindre i løn, hvorefter det vil gå dem endnu dårligere end nu eller ligefrem miste deres job”, eller lignende.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -464,17 +870,18 @@ export const CARDS: SecCard[] = [
     questionText: "”Producenter af elektronik begrænser muligheden for at reparere mobiltelefoner, printere og computere. For eksempel kan man ikke umiddelbart udskifte batteriet i en telefon fra Apple. Derfor er der gået sport i blandt grupper på nettet at finde en måde, så man alligevel kan reparere telefonerne - man så at sige hacker produkterne og lægger vejledningen på nettet.” Skriv en kommentar til denne kamp mellem forbrugere og producenter i smid-væk-kulturen.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Personlig udlægning baseret på en rimelig argumentation. Man kan betragte fænomenet ironisk og kalde det latterligt at tale om en kamp mellem producenter, der ønsker at skabe produkter, som kun de kan reparere, eller som slet ikke kan repareres, og forbrugere som ønsker at slå producenterne i deres eget spil; eller man kan sige, det er udtryk for smid-væk-kulturens fallit, hvor forbrugerne ikke længere er villige til at tolerere planlagt forældelse og er indstillet på bæredygtig produktion; eller man kan betragte det som en helt logisk adfærd, såvel fra producenternes som forbrugernes side, eftersom de hver især ønsker begrænset levetid henholdsvis maximal værdi for pengene.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Personlig udlægning baseret på en rimelig argumentation. Man kan betragte fænomenet ironisk og kalde det latterligt at tale om en kamp mellem producenter, der ønsker at skabe produkter, som kun de kan reparere, eller som slet ikke kan repareres, og forbrugere som ønsker at slå producenterne i deres eget spil; eller man kan sige, det er udtryk for smid-væk-kulturens fallit, hvor forbrugerne ikke længere er villige til at tolerere planlagt forældelse og er indstillet på bæredygtig produktion; eller man kan betragte det som en helt logisk adfærd, såvel fra producenternes som forbrugernes side, eftersom de hver især ønsker begrænset levetid henholdsvis maximal værdi for pengene.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -487,18 +894,85 @@ export const CARDS: SecCard[] = [
     questionText: "De kundskaber og værdier, som reparationscafeerne står for, medvirker ikke blot til en bedre økonomi, men også til et bedre menneske. Kommenter dette synspunkt ud fra din læsning af teksten som helhed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kundskaber som evnen til at klare sig selv, evnen til og viden om at reparere ens egne ting, bedre fantasi, forståelse af tingenes virkemåde og højere værdsættelse af de miljømæssige og sociale konsekvenser, respekt for naturens råmateriale, som bliver anvendt i produktionen af tingene. Alle disse kundskaber skaber bedre mennesker samt et bedre økonomisk og socialt miljø.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kundskaber som evnen til at klare sig selv, evnen til og viden om at reparere ens egne ting, bedre fantasi, forståelse af tingenes virkemåde og højere værdsættelse af de miljømæssige og sociale konsekvenser, respekt for naturens råmateriale, som bliver anvendt i produktionen af tingene. Alle disse kundskaber skaber bedre mennesker samt et bedre økonomisk og socialt miljø.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2015 Higher Level — © State Examinations Commission.",
+    id: "dan-2015-hl-i-1", topicId: "danish-0-1", conceptId: "forklar-betydningen-ordet-englebamse-som-det",
+    section: "I", questionRef: "2015 HL Section I Q1",
+    questionText: "Forklar betydningen af ordet ”englebamse” som det bruges i teksten\nForklar betydningen af ordet ”uldtrøje” som det bruges i teksten\nForklar betydningen af ordet ” genbrug” som det bruges i teksten\nForklar betydningen af ordet ” fortørnede” som det bruges i teksten\nForklar betydningen af ordet ” vendepunkt” som det bruges i teksten",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “et sovedyr som ligner en bjørn med vinger på ryggen”)", marks: 1, contextNote: "For “englebamse”: The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-2", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “beklædning til overkroppen, lavet af uld\")", marks: 1, contextNote: "For “uldtrøje”" },
+    { id: "r-3", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “at genanvende tingene eller materialerne de er lavet af”)", marks: 1, contextNote: "For “genbrug”" },
+    { id: "r-4", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “vrede, skuffede”)", marks: 1, contextNote: "For “fortørnede”" },
+    { id: "r-5", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “at bevæge sig i en anden retning end den hidtidige”)", marks: 1, contextNote: "For “vendepunkt”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2015 Higher Level — © State Examinations Commission.",
+    id: "dan-2015-hl-ii-1", topicId: "danish-1-0", conceptId: "fra-din-sning-teksten-som-helhed",
+    section: "II", questionRef: "2015 HL Section II Q1",
+    questionText: "Ud fra din læsning af teksten som helhed bedes du overveje, hvordan smid-væk-kulturen kan påvirke os mennesker i bredere forstand. Kan vores smid-væk-adfærd over for brugsgenstande også påvirke vores syn på venskaber og parforhold? I DK ender f.eks. 46% af alle vielser i skilsmisse, og på Facebook kan man ”slette” venner, hvis man ikke vil have dem mere. Er det også en art smid-væk-kultur? Skriv en kommentar om det på ca. 100 ord.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "F.eks. kan man tage det approach, at den høje skilsmisserate i DK er udtryk for smid-væk-kulturen, at vi ikke knytter nogen værdi til det at reparere et ægteskab eller et venskab, hvis det er ved at gå itu, men smider det væk og indleder noget nyt med en anden.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “Kommentar på ca. 100 ord som viser evne til at sætte temaet ind i et større perspektiv.”." },
+    { id: "r-2", kind: "point", verbatim: "Eller man kan sige, at skilsmisserate og smid-væk-kultur ikke har noget med hinanden at gøre, og at de mange skilsmisser snarere er udtryk for menneskers større selvstændighed og uafhængighed i den moderne tidsalder. At man ikke som tidligere behøver gifte sig delvis af praktiske grunde og nødvendighed, og at sunde og levedygtige venskaber og parforhold generelt bygger på ægte respekt og kærlighed.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2015 Higher Level — © State Examinations Commission.",
+    id: "dan-2015-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner:\nRigdom og velfærd er en garanti for et lykkeligt liv\n”Den er rigest, som er tilfreds med mindst” (Sokrates)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under the two titles the scheme prints only: “Et velskrevet essay på ca. 300 ord, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -507,20 +981,25 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2016 Higher Level — © State Examinations Commission.",
     id: "dan-2016-hl-i-1", topicId: "danish-0-1", conceptId: "forklar-betydningen-ordet-jhuse-som-det",
     section: "I", questionRef: "2016 HL Section I Q1",
-    questionText: "Forklar betydningen af ordet ”højhuse” som det bruges i teksten Forklar betydningen af ordene ”tilfældighed” som det bruges i teksten Forklar betydningen af ordet ”fællesskabet” som det bruges i teksten Forklar betydningen af ordet ”afgrøder” som det bruges i teksten Forklar betydningen af ordene ”hvinende dæk” som de bruges i teksten",
+    questionText: "Forklar betydningen af ordet ”højhuse” som det bruges i teksten\nForklar betydningen af ordene ”tilfældighed” som det bruges i teksten\nForklar betydningen af ordet ”fællesskabet” som det bruges i teksten\nForklar betydningen af ordet ”afgrøder” som det bruges i teksten\nForklar betydningen af ordene ”hvinende dæk” som de bruges i teksten",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “en stor bygning med lejligheder og plads til mange mennesker”) Enhver rimelig forklaring (e.g. “at noget sker uden at være planlagt på forhånd, uden bestemt hensigt\") Enhver rimelig forklaring (e.g. “at være sammen om noget, f.eks. en byhave”) Enhver rimelig forklaring (e.g. “de biologiske produkter, der dyrkes i byhaverne”) Enhver rimelig forklaring (e.g. “larmen fra bildæk, når den drejer skarpt i høj fart. Her anvendt som stilelement”)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “en stor bygning med lejligheder og plads til mange mennesker”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-2", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “at noget sker uden at være planlagt på forhånd, uden bestemt hensigt\")", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “at være sammen om noget, f.eks. en byhave”)", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “de biologiske produkter, der dyrkes i byhaverne”)", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “larmen fra bildæk, når den drejer skarpt i høj fart. Her anvendt som stilelement”)", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -533,17 +1012,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hvad foregår der i Prags Have? Beskriv aktiviteterne med dine egne ord.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Redegørelse for hovedindholdet af 1. afsnit. Mennesker mødes og dyrker grønsager samt hinandens selskab. Her skal selve aktiviteterne i byhaverne beskrives, f.eks. at dyrkningen af afgrøderne foregår i jord, som er købt, og som anlægges i højbede. Afgrøderne er f.eks. grøntsager og jordbær.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Redegørelse for hovedindholdet af 1. afsnit. Mennesker mødes og dyrker grønsager samt hinandens selskab. Her skal selve aktiviteterne i byhaverne beskrives, f.eks. at dyrkningen af afgrøderne foregår i jord, som er købt, og som anlægges i højbede. Afgrøderne er f.eks. grøntsager og jordbær.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -556,17 +1036,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hvad er ifølge Niels Petersson grundtanken med byhaven?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Iflg. NP udtrykker grundtanken med byhaverne en generel tendens i tiden, som dyrker fælleskaber, bykultur og bæredygtighed. Dvs.fænomenet byhave er en del af noget overordnet i tiden, globalt set eller i det mindste europæisk set. Det er også disse overordnede, globale værdier, som bør nævnes her.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Iflg. NP udtrykker grundtanken med byhaverne en generel tendens i tiden, som dyrker fælleskaber, bykultur og bæredygtighed. Dvs.fænomenet byhave er en del af noget overordnet i tiden, globalt set eller i det mindste europæisk set. Det er også disse overordnede, globale værdier, som bør nævnes her.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -579,17 +1060,18 @@ export const CARDS: SecCard[] = [
     questionText: "Ifølge Trine Balskilde Stoltenborg anlægges byhaverne både af lyst og af nød. Forklar hvordan.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Byhaverne er behagelige pga. den basis for fællesskab og samvær, de giver, nødvendige pga. verdens almindelige tilstand med økonomisk krise, global opvarmning, befolkningstilvækst. Iflg. TBS kan byhaverne således medvirke til at redde verden og gøre den til et bedre sted at leve. Hensynet til privatøkonomi og at spare penge for den enkelte betyder ikke ret meget i TBS’s udlægning. Det er det overordnede, hun fremhæver.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Byhaverne er behagelige pga. den basis for fællesskab og samvær, de giver, nødvendige pga. verdens almindelige tilstand med økonomisk krise, global opvarmning, befolkningstilvækst. Iflg. TBS kan byhaverne således medvirke til at redde verden og gøre den til et bedre sted at leve. Hensynet til privatøkonomi og at spare penge for den enkelte betyder ikke ret meget i TBS’s udlægning. Det er det overordnede, hun fremhæver.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -602,17 +1084,18 @@ export const CARDS: SecCard[] = [
     questionText: "Selvom aktiviteterne i byhaverne foregår på en lille skala, kan de have enorm indflydelse på såvel individet, fællesskabet, miljøet som samfundet som helhed. Diskuter dette synspunkt i lyset af teksten som helhed og giv din egen mening om emnet til kende.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ja,byhaverne er små, men mennesker mødes i dem og udvikler deres relationer og fællesskab. Dette kan brede sig til samfundet som helhed. Glæden folk oplever ved at dele den slags erfaringer udvider deres forhold til samfundslivet og deres respekt for naturen og deres del af den. Individer som bymennesket lærer at se naturen og deres ansvar over for den. Enhver lang rejse begynder med det første skridt, og fra nye begyndelser kan komme store forandringer. Byhaver kan med andre ord (iflg. Trine Balskilde Stoltenborgs udsagn danne grundlag for en mere ansvarlig og miljøbevidst personlighedstype, der er opmærksom på de store implikationer i de små handlinger.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ja,byhaverne er små, men mennesker mødes i dem og udvikler deres relationer og fællesskab. Dette kan brede sig til samfundet som helhed. Glæden folk oplever ved at dele den slags erfaringer udvider deres forhold til samfundslivet og deres respekt for naturen og deres del af den. Individer som bymennesket lærer at se naturen og deres ansvar over for den. Enhver lang rejse begynder med det første skridt, og fra nye begyndelser kan komme store forandringer. Byhaver kan med andre ord (iflg. Trine Balskilde Stoltenborgs udsagn danne grundlag for en mere ansvarlig og miljøbevidst personlighedstype, der er opmærksom på de store implikationer i de små handlinger.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -625,18 +1108,57 @@ export const CARDS: SecCard[] = [
     questionText: "Igennem hele teksten er der stort fokus på menneskelige fælleskaber i forbindelse med fænomenet byhaver. Til sidst i teksten beskrives nogle drenges fællesskab i en gammel, udtjent Ford Fiesta. Hvilke forskelle på de to slags fællesskaber, tror du forfatteren vil have læseren til at tænke over? Hvad vil tekstens forfatter vise med det? Hvorfor er det vigtigt? Begrund dit synspunkt ud fra din læsning af teksten som helhed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Den afsluttende pointe med de fire drenge i den gamle Ford bruges som kontrast til byhavekulturens opmærksomhed på det grønne, det bæredygige osv. i teksten. De forurener, larmer, er uopmærksomme på hvad der foregår lige ved siden af dem. Budskabet er, at verden rundt om byhavekulturen stadig er larmende og forurenende og muligvis vil vedblive med at være det. Her markerer artiklens forfatter en distance til de forskellige, højtidelige udsagn fra personerne i teksten. Måske er det hele bare et mikroskopisk, idealistisk og naivt modefænomen, der ingen forskel gør på det overordnede plan.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Den afsluttende pointe med de fire drenge i den gamle Ford bruges som kontrast til byhavekulturens opmærksomhed på det grønne, det bæredygige osv. i teksten. De forurener, larmer, er uopmærksomme på hvad der foregår lige ved siden af dem. Budskabet er, at verden rundt om byhavekulturen stadig er larmende og forurenende og muligvis vil vedblive med at være det. Her markerer artiklens forfatter en distance til de forskellige, højtidelige udsagn fra personerne i teksten. Måske er det hele bare et mikroskopisk, idealistisk og naivt modefænomen, der ingen forskel gør på det overordnede plan.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2016 Higher Level — © State Examinations Commission.",
+    id: "dan-2016-hl-ii-1", topicId: "danish-1-0", conceptId: "ske-det-modreaktion-til-ernes-galopperende",
+    section: "II", questionRef: "2016 HL Section II Q1",
+    questionText: "”Måske er det en modreaktion til 00’ernes galopperende individualisme og konstant accelererende forbrugsfest. Måske er det et tegn på en ny tid, hvor de grundlæggende værdier igen er til forhandling, og folk søger mod nye fællesskaber for at finde meningen med det hele. Eller måske handler det bare om at få en grønnere hverdag.” Der kan være flere årsager til byhavernes popularitet. Hvad enten det er som modefænomen eller et som et forsøg på at redde verden. Det kan ligefrem være udtryk for ønsket om ”at finde meningen med det hele”, altså en slags religion. Er du enig i dette synspunkt? Skriv en kommentar om dette emne på ca. 100 ord.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "F.eks. kan man tage det approach, at byhaverne blot er en poppet by-trend, der ikke har nogen effekt på det globale plan eller det økonomiske plan. F.eks. viser undersøgelser fra Berlin, at grønsagerne dyrket i byhavernes jord ikke lever op til EU’s grænseværdier for forurening.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “Kommentar på ca. 100 ord som viser evne til at sætte temaet ind i et større perspektiv.”." },
+    { id: "r-2", kind: "point", verbatim: "Eller man kan gå med teksten og lægge sig i forlængelse af budskabet ved at hævde, at byhaverne er den nye tids kapitalisme.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2016 Higher Level — © State Examinations Commission.",
+    id: "dan-2016-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2016 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner:\nDet gode menneske i en omskiftelig og globaliseret verden\n”Verden kan blive et temmelig dårligt sted at være, hvis vi ikke arbejder sammen på at gøre den mere lige, mere demokratisk og mere bæredygtig.” Fintan O’Toole i The Irish Times, 22. februar 2016",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under the two titles the scheme prints only: “Et velskrevet essay på ca. 300 ord, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende.”. It reprints the second title as: “Verden kan blive et temmelig dårligt sted at være, hvis vi ikke arbejder sammen på at skabe mere lighed, mere demokrati og mere bæredygtighed i den.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -648,17 +1170,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hvor flyttede familien hen, da den forlod Danmark? Beskriv familiens liv, som det er nu.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Familien er flyttet ud i skov i den svenske ødemark. Her forsøger de sig med en ny autentiske livsstil, hvor de skal klare sig uden den moderne verdens nødvendigheder, men i dag, to år senere, har de dog adgang til internettet, fordi de får el fra solceller. De laver meget fra bunden, f.eks. bygger de deres eget hus.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Familien er flyttet ud i skov i den svenske ødemark. Her forsøger de sig med en ny autentiske livsstil, hvor de skal klare sig uden den moderne verdens nødvendigheder, men i dag, to år senere, har de dog adgang til internettet, fordi de får el fra solceller. De laver meget fra bunden, f.eks. bygger de deres eget hus.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -671,17 +1194,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hvorfor forlod familien Danmark?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Årsagen til familiens livstilsændring er, at både børnene og forældrene ikke trives i det moderne samfund. Hjelskov søger væk fra den moderne tilværelses stress, karriereræs, tidsmangel og forbrugerisme, der har negative konsekvenser for familien. Hun ønsker, at de menneskelige og familiære værdier igen skal være dominerende, modsat de moderne materielle værdier.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Årsagen til familiens livstilsændring er, at både børnene og forældrene ikke trives i det moderne samfund. Hjelskov søger væk fra den moderne tilværelses stress, karriereræs, tidsmangel og forbrugerisme, der har negative konsekvenser for familien. Hun ønsker, at de menneskelige og familiære værdier igen skal være dominerende, modsat de moderne materielle værdier.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -694,18 +1218,132 @@ export const CARDS: SecCard[] = [
     questionText: "Hvad er det særligt ved den nye tilværelse, som Andrea Hejlskov kan lide?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hjelskovs valg giver hende følelsen af frihed og af at være sluppet ud af det moderne samfund i tide. Hun anerkender, at hun er en del af den nye autenticitetsbevægelse, hvor man forsøger at generobre noget af det, man har mistet kontrollen over i det moderne samfund. Det er en slags eksistentialistisk tankegang, hvor man ikke bare lade sig styre af det moderne samfunds værdier, såsom materialisme og forbrugerisme, men man skaber derimod sine egne værdier, og dermed tager man ansvar for sin egen tilværelse.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Hjelskovs valg giver hende følelsen af frihed og af at være sluppet ud af det moderne samfund i tide. Hun anerkender, at hun er en del af den nye autenticitetsbevægelse, hvor man forsøger at generobre noget af det, man har mistet kontrollen over i det moderne samfund. Det er en slags eksistentialistisk tankegang, hvor man ikke bare lade sig styre af det moderne samfunds værdier, såsom materialisme og forbrugerisme, men man skaber derimod sine egne værdier, og dermed tager man ansvar for sin egen tilværelse.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC038AP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2017 Higher Level — © State Examinations Commission.",
+    id: "dan-2017-hl-i-1", topicId: "danish-0-1", conceptId: "forklar-betydningen-ordet-lkehus-som-det",
+    section: "I", questionRef: "2017 HL Section I Q1",
+    questionText: "Forklar betydningen af ordet ”bjælkehus” som det bruges i teksten\nForklar betydningen af ordet ”værdier” som det bruges i teksten\nForklar betydningen af ordene ”et stort og vildt spring ud over kanten” som de bruges i teksten\nForklar betydningen af ordet ”nøjsomhed” som det bruges i teksten\nForklar betydningen af ordene ” tæskede mig selv” som de bruges i teksten",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”et gammeldags hus opført af træbjælker”)", marks: 1, contextNote: "For “bjælkehus”: The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-2", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Værdier er kulturelt bestemte opfattelser af, hvad der er værdifuldt og ønskværdigt. Her er der tale om miljømæssige, menneskelige og familiære værdier, modsat materielle værdier”)", marks: 1, contextNote: "For “værdier”" },
+    { id: "r-3", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”et valg, der medfører en radikal forandring i livsstil”)", marks: 1, contextNote: "For “et stort og vildt spring ud over kanten”" },
+    { id: "r-4", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”livsstil, hvor man klarer sig med eller er tilfreds med lidt”)", marks: 1, contextNote: "For “nøjsomhed”" },
+    { id: "r-5", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”at bebrejde eller kritisere sig selv”)", marks: 1, contextNote: "For “tæskede mig selv”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC038AP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2017 Higher Level — © State Examinations Commission.",
+    id: "dan-2017-hl-i-5", topicId: "danish-0-1", conceptId: "det-virker-ens-sind-man-bliver",
+    section: "I", questionRef: "2017 HL Section I Q5",
+    questionText: "”Det påvirker ens sind. Man bliver bedre til at huske at hugge brænde, til at have et forråd af mad. Men jeg skal også ærligt sige, at det stikker dybere. Hvis klimaet går helt amok, hvis de økonomiske systemer bryder sammen, så vil jeg sgu have mit på det rene. Jeg vil kunne sørge for mig, min familie og mine naboer.« Beskriv med dine egne ord de dybere tanker, som Andrea Hejlskov gør sig om fremtiden.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ligesom de amerikanske ”Preppers” forbereder familien sig på en dystopisk fremtid, hvor samfundets strukturer kollapser pga. klimaforandringer og økonomiske kriser. Hjelskov ser derfor en nødvendighed i, at familien bliver selvforsynende.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC038AP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2017 Higher Level — © State Examinations Commission.",
+    id: "dan-2017-hl-i-6", topicId: "danish-0-1", conceptId: "helt-sikkert-del-autenticitetsbev-gelsen-det",
+    section: "I", questionRef: "2017 HL Section I Q6",
+    questionText: "”Vi er helt sikkert del af ’autenticitetsbevægelsen’. Det kan godt irritere mig – for vi ville jo væk fra alt det der – trends vi bruger som små plastre på såret, trends vi følger for at give livet indhold (…) Jeg kan sagtens se, hvor latterligt det kan forekomme, hvor fake. Og hvor meget autenticitet bare bliver en ny form for forbrug, en hul livsstil, man kan købe, og som ser pænere ud.” Kommenter ud fra dette citat personens selvkritik.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Den moderne livsstil er præget af trends, som giver livet indhold. Den autentiske livsstil kan også opfattes som en trend, og således kan autenticitet også ses som et udtryk for forbrugerisme, som Hjelskov netop forsøger at tage afstand fra.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC038AP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2017 Higher Level — © State Examinations Commission.",
+    id: "dan-2017-hl-ii-1", topicId: "danish-1-0", conceptId: "unge-vores-samfund-har-lugtet-lunten",
+    section: "II", questionRef: "2017 HL Section II Q1",
+    questionText: "”De unge i vores samfund har lugtet lunten, og det er en illusion, at det moderne liv er den bedste af alle livsformer.” Hvorfor tror du, ud fra din læsning af teksten som helhed, at Andrea Hejlskov når til denne konklusion? Forklar din mening i en kommentar på ca. 100 ord.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hjelskov baserer bl.a. sin påstand på sin datters veninde, der også har et ønske om at forlade det moderne samfund, idet hun lykønsker familien, fordi det lykkes dem at slippe ud af det moderne samfund i tide. De unge mennesker lever under et enormt pres i det moderne samfund og oplever derfor ikke følelsen af frihed. Frihed i den moderne livsstil er en illusion, og derfor kan unge mennesker identificere sig med alternative og antimoderne livsstile, såsom den autentiske livsstil.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “En kommentar på ca. 100 ord, som viser evne til at forstå Hjelskovs syn på det moderne samfund.”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC038AP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2017 Higher Level — © State Examinations Commission.",
+    id: "dan-2017-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2017 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner:\nPersonlige værdier og kompetencer i en verden under forandring\n”Min holdning er lige så god som din, og alle holdninger er lige meget værd.” Diskuter dette synspunkt i en moderne verden-kontekst især med fokus på brugen af sociale medier.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under the two titles the scheme prints only: “Et velskrevet essay på ca. 300 ord, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -717,17 +1355,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hvordan skal overskriften ”Jeg melder fra.com” forstås?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Overskriften er et citat fra musiker Niels Skousen. Overskriften er et ordspil, hvor Iben Krog Rasmussen sammenfatter sit budskab om, at hun ikke længere vil anvende de sociale medier som en del af hendes privatsfære. De sociale medier skal udelukkende anvendes som et offentligt forum, der er beregnet til demokratiske debatter. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Overskriften er et citat fra musiker Niels Skousen. Overskriften er et ordspil, hvor Iben Krog Rasmussen sammenfatter sit budskab om, at hun ikke længere vil anvende de sociale medier som en del af hendes privatsfære. De sociale medier skal udelukkende anvendes som et offentligt forum, der er beregnet til demokratiske debatter.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -740,17 +1379,155 @@ export const CARDS: SecCard[] = [
     questionText: "Hvordan beskriver Iben Krog Rasmussen sig selv og sit liv?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hun beskriver sig selv som succesfuld og smuk. Hun har en lækker kæreste og bor i en luksuslejlighed i København med to veninder. Hun har førhen været en flittig bruger af de sociale medier, hvor hun gerne ville vise sit succesfulde liv. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Hun beskriver sig selv som succesfuld og smuk. Hun har en lækker kæreste og bor i en luksuslejlighed i København med to veninder. Hun har førhen været en flittig bruger af de sociale medier, hvor hun gerne ville vise sit succesfulde liv.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2018 Higher Level — © State Examinations Commission.",
+    id: "dan-2018-hl-i-1", topicId: "danish-0-1", conceptId: "forklar-betydningen-ordet-bekr-ftelse-som",
+    section: "I", questionRef: "2018 HL Section I Q1",
+    questionText: "Forklar betydningen af ordet “bekræftelse” som det bruges i teksten.\nForklar betydningen af ordene “tvære min lykke op i hovedet på alle” som de bruges i teksten.\nForklar betydningen af ordet “privatsfære” som det bruges i teksten.\nForklar betydningen af ordene “mine nærmeste” som de bruges i teksten.\nForklar betydningen af ordene “trækker stikket i ny og næ” som de bruges i teksten.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Bekræftelse er et vigtigt menneskeligt behov. Ved at blive set og anderkendt bliver behovet opfyldt. Behovet opfyldes især vha. de sociale medier, bl.a. når man får likes”).", marks: 1, contextNote: "For “bekræftelse”: The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-2", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”At tvære betyder at mase noget ud over en overflade på en hårdhændet måde. Udtrykket skal forstås metaforisk, og det har en negativ medbetydning. Når skribenten deler sin hverdag på de sociale medier, vil hun gerne vise, at hun er smuk og succesfuld, og hun ønsker tillige at gøre andre misundelige).", marks: 1, contextNote: "For “tvære min lykke op i hovedet på alle”" },
+    { id: "r-3", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Privatsfæren er den private del af et menneskes liv, som har med hjem, familie og følelsesmæssige relationer at gøre).", marks: 1, contextNote: "For “privatsfære”" },
+    { id: "r-4", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Mine nærmeste er de nærmeste venner og familie – modsat de fjerneste, som er personer, man udelukkende har kontakt til via de sociale medier).", marks: 1, contextNote: "For “mine nærmeste”" },
+    { id: "r-5", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Udtrykket skal forstås metaforisk, og det betyder, at man nu og da skal være offline på de sociale medier.”)", marks: 1, contextNote: "For “trækker stikket i ny og næ”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2018 Higher Level — © State Examinations Commission.",
+    id: "dan-2018-hl-i-4", topicId: "danish-0-1", conceptId: "jeg-dog-stadig-helt-almindeligt-menneske",
+    section: "I", questionRef: "2018 HL Section I Q4",
+    questionText: "”Jeg er dog stadig et helt almindeligt menneske, der som alle andre higer efter bekræftelse på min eksistens. Men denne bekræftelse søger jeg nu hos mine nærmeste i stedet for hos mine fjerneste.” Forklar ud fra dette citat Iben Krog Rasmussens synspunkt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Rasmussen skriver, at hun ligesom som andre mennesker er behovsstyret, og at hun derfor også søger bekræftelse hos andre mennesker. Men hun vil ikke længere søge bekræftelse hos personer på de sociale medier, som hun ikke har et personligt forhold til. Hun vil i stedet søge bekræftelsen i form af personligt nærvær hos sin nærmeste venner og familie.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2018 Higher Level — © State Examinations Commission.",
+    id: "dan-2018-hl-i-5", topicId: "danish-0-1", conceptId: "jeg-har-derfor-valgt-den-nemme",
+    section: "I", questionRef: "2018 HL Section I Q5",
+    questionText: "Jeg har derfor valgt den nemme løsning ved at koble fra med alt privat på de sociale medier. (…) Jeg mener, at vi skal bruge de sociale medier, for hvad de er: En del af det offentlige rum.” Forklar ud fra dette citat Iben Krog Rasmussens synspunkt",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Rasmussen mener, at de sociale medier udelukkende skal anvendes som en del af det offentlige rum, og at det private rum derved skal holdes udenfor. De sociale medier skal således anvendes som et offentligt forum, som er beregnet til politiske debatter, der er et vigtig led i den moderne demokratiske proces.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2018 Higher Level — © State Examinations Commission.",
+    id: "dan-2018-hl-ii-1", topicId: "danish-1-0", conceptId: "vores-tilstedev-relse-sociale-medier-stimulerer",
+    section: "II", questionRef: "2018 HL Section II Q1",
+    questionText: "”Vores tilstedeværelse på de sociale medier stimulerer vores instinktive, menneskelige behov for bekræftelse. Instagram, Snapchat og Facebook har derfor alle et fantastisk produkt, som de tjener styrtende med penge på. De sælger nemlig bekræftelse.” Diskuter Iben Krog Rasmussens synspunkt i ovenstående citat vedrørende Instagrams, Snapchats og Facebooks rolle og motiver. Forklar din mening i en kommentar på 100-150 ord.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "For det moderne individ er behovet for bekræftelse ligeså nødvendigt at få opfyldt som de fysiologiske behov, såsom tryghed, søvn og mad. De sociale medier som Instagram, Snapchat og Facebook tilbyder et rum, hvor brugerne relativt let og gratis kan få anerkendelsesoplevelser. Brugerne giver hinanden bekræftelse ved bl.a. at like hinandens statusopdateringer og billeder. Behovet for bekræftelse er umætteligt, modsat de fysiologiske behov, hvilket kan resultere i, at brugen af de sociale medier kan blive et slags afhængighedsforhold, fordi brugerne har behov for mere og mere bekræftelse. Instagram, Snapchat og Facebook udnytter brugernes evige jagt på bekræftelse til at tjene penge, bl.a. ved indtægter fra reklamer og ved videresalg af oplysningerne til en tredjepart.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\" The scheme heads it: “En kommentar på ca. 100-150 ord, som viser evne til at forstå Rasmussen syn på de sociale mediers roller og motiver.”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2018 Higher Level — © State Examinations Commission.",
+    id: "dan-2018-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2018 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner.\nUnge menneskers afhængighed af sociale medier. I hvor høj grad er unge mennesker afhængige af sociale medier? I dit essay skal du argumentere for dit synspunkt, hvor du overvejer både argumenter for og imod.\n”Klæder skaber folk”, siger et gammelt dansk ordsprog. I hvor høj grad kan man give en korrekt vurdering af en anden persons personlighed ved udelukkende at se på personens tøj? I dit essay skal du argumentere for dit synspunkt, hvor du overvejer både argumenter for og imod.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\" Under Part III the scheme prints only: “Et velskrevet essay på ca. 300 ord, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2018 Higher Level — © State Examinations Commission.",
+    id: "dan-2018-hl-i-6", topicId: "danish-0-1", conceptId: "sociale-medier-fantastisk-redskab-til-den",
+    section: "I", questionRef: "2018 HL Section I Q6",
+    questionText: "”De sociale medier er et fantastisk redskab til at have den demokratiske samtale. (…) Det er en del af vores nyhedsformidling og oplysningsgrundlag.” Forklar ud fra dette citat Iben Krog Rasmussens synspunkt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Rasmussen mener, at de sociale medier er et nødvendigt for et moderne demokrati, fordi de både fungerer som nyhedskanal, hvor man indhenter dagens nyheder og informationer, samt debatforum, hvor man kan diskutere politiske problemstillinger.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -760,20 +1537,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2019 Higher Level — © State Examinations Commission.",
     id: "dan-2019-hl-i-1-a", topicId: "danish-0-0", conceptId: "forklar-betydningen-ordene-barnet-heller-ikke",
     section: "I", questionRef: "2019 HL Section I Q1(a)",
-    questionText: "Forklar betydningen af ordene ”Barnet er heller ikke bare en del af familien, men det",
+    questionText: "Forklar betydningen af ordene ”Barnet er heller ikke bare en del af familien, men det royale medlem for bordenden” som de bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Udtrykket skal forstås metaforisk, og det betyder, at barnet behandles som en konge, hvilket betyder, at barnets behov sættes i centrum, og at det derved har magten over forældrene”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Udtrykket skal forstås metaforisk, og det betyder, at barnet behandles som en konge, hvilket betyder, at barnets behov sættes i centrum, og at det derved har magten over forældrene”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -786,17 +1564,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordene ”forældre er ikke så meget opdragere som tjenende ånder” som de bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Udtrykket skal forstås metaforisk, og det betyder, at forældrene forsøger at behage barnet frem for at opdrage det.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Udtrykket skal forstås metaforisk, og det betyder, at forældrene forsøger at behage barnet frem for at opdrage det.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -809,17 +1588,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordene ”småtalentløse tegninger belønnes med klapsalver som til et verdensmesterskab” som de bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Udtrykket skal forstås metaforisk, og det betyder, at børns mislykkede tegninger aldrig kritiseres, men derimod roses overdrevent.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Udtrykket skal forstås metaforisk, og det betyder, at børns mislykkede tegninger aldrig kritiseres, men derimod roses overdrevent.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -832,17 +1612,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordene ”At tage en fridag for at pleje sig selv” som de bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”En fridag, hvor man dyrker sine egne behov, f.eks. velvære, shopping, hobbyer og byture.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”En fridag, hvor man dyrker sine egne behov, f.eks. velvære, shopping, hobbyer og byture.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -855,17 +1636,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”moderskab” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Moderskab betyder egentlig bare det at være mor, men i teksten italesættes det ofte negativt bl.a. med ord som ”kvindeundertrykkelse” og ”sur askese” pga. idealet om den perfekte mor, hvor kvinden tilsidesætter sine egne behov.”) (maks. 5 × 1 point)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Moderskab betyder egentlig bare det at være mor, men i teksten italesættes det ofte negativt bl.a. med ord som ”kvindeundertrykkelse” og ”sur askese” pga. idealet om den perfekte mor, hvor kvinden tilsidesætter sine egne behov.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -878,17 +1660,18 @@ export const CARDS: SecCard[] = [
     questionText: "Hvad viser lykkeforskningsprojektet, som Hermansen henviser til?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Lykkeforskningsprojektet gør op med forestillingen om, at børn er nøglen til et lykkeligt liv. Undersøgelsen viser, at det, der gør os lykkelig, er vores partner, vores sociale relationer, økonomiske frihed, familie og job - ikke vores børn. Børn begrænser vores frihed. Det er ofte svært at forene vores egocentriske behov med det at være forældre, hvor barnets behov sættes i centrum. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Lykkeforskningsprojektet gør op med forestillingen om, at børn er nøglen til et lykkeligt liv. Undersøgelsen viser, at det, der gør os lykkelig, er vores partner, vores sociale relationer, økonomiske frihed, familie og job - ikke vores børn. Børn begrænser vores frihed. Det er ofte svært at forene vores egocentriske behov med det at være forældre, hvor barnets behov sættes i centrum.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -901,17 +1684,18 @@ export const CARDS: SecCard[] = [
     questionText: "”Aldrig før har vi i den grad idoliseret vores børn som i dag.” Forklar Hermansens synspunkt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Citatet kan ses som en kritik af den moderne børneopdragelse. At idolisere betyder at beundre, tilbede og forgude. Forældre behandler deres børn som idoler ved konstant at fotografere dem og ved at hylde alt, hvad de laver som værende genialt, f.eks. deres tegninger. Et idol er ufejlbarligt og kan derfor ikke kritiseres. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Citatet kan ses som en kritik af den moderne børneopdragelse. At idolisere betyder at beundre, tilbede og forgude. Forældre behandler deres børn som idoler ved konstant at fotografere dem og ved at hylde alt, hvad de laver som værende genialt, f.eks. deres tegninger. Et idol er ufejlbarligt og kan derfor ikke kritiseres.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -924,17 +1708,18 @@ export const CARDS: SecCard[] = [
     questionText: "”Moderskabet er blevet en avanceret form for kvindeundertrykkelse, siger den franske filosof Elisabeth Bandinter.” Er du enig i Bandinters synspunkt? (Hvorfor/hvorfor ikke?)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Der kan både argumenteres for og imod Bandinters synspunkt. Hun definerer moderskabet som en sur askese med endeløse pligter, hvor kvinden først genfinder lykken, når barnet flytter hjemmefra. Kvindeundertrykkelsen består i, at kvinden ikke får lov til at realisere sig selv. Man kan argumentere for det modsatte synspunkt ved at påstå, at kvinder realiserer sig selv gennem barnet og dermed føler sig fuldendte. Det er således et stort tab, når barnet flytter hjemmefra. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Der kan både argumenteres for og imod Bandinters synspunkt. Hun definerer moderskabet som en sur askese med endeløse pligter, hvor kvinden først genfinder lykken, når barnet flytter hjemmefra. Kvindeundertrykkelsen består i, at kvinden ikke får lov til at realisere sig selv. Man kan argumentere for det modsatte synspunkt ved at påstå, at kvinder realiserer sig selv gennem barnet og dermed føler sig fuldendte. Det er således et stort tab, når barnet flytter hjemmefra.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -947,17 +1732,18 @@ export const CARDS: SecCard[] = [
     questionText: "”Jeg forstår grundlæggende godt dem, der vælger ikke at få børn. De orker ikke leve op til det herskende ideal om at være Den Perfekte Mor.” Diskuter Hermansens synspunkt i citatet.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Idealet om den perfekte mor defineres som en mor, der tilsidesætter sine egne behov. Hun bruger al sin tid på børnene, bl.a. ved at lave hjemmelavet mad og ved at amme, hvilket er meget krævende. Man kan argumentere for og imod påstanden om, at dette er et herskende ideal. Man kan argumentere for, at det i dag er blevet nemmere at være mor pga. af moderne opfindelser som modermælkserstatning og færdigretter, og at man generelt har flere ressourcer til at sikre børnene en tryg barndom. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Idealet om den perfekte mor defineres som en mor, der tilsidesætter sine egne behov. Hun bruger al sin tid på børnene, bl.a. ved at lave hjemmelavet mad og ved at amme, hvilket er meget krævende. Man kan argumentere for og imod påstanden om, at dette er et herskende ideal. Man kan argumentere for, at det i dag er blevet nemmere at være mor pga. af moderne opfindelser som modermælkserstatning og færdigretter, og at man generelt har flere ressourcer til at sikre børnene en tryg barndom.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -970,18 +1756,69 @@ export const CARDS: SecCard[] = [
     questionText: "”Vi skal have redefineret vores tilgang til at få børn og ikke mindst revideret deres betydning for vores liv.” Diskuter Hermansens synspunkt i citatet.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hermansen mener, at alle bør stille sig selv spørgsmålet: hvorfor egentlig få børn? Hun vil have redefineret moderidealet, fordi det ikke længere passer til moderne kvinders livsstil. Selvrealisering behøver ikke at stå i modsætning til det at være mor. Hun kritiserer også moderne curlingforældre for ikke at ville opdrage børnene, og derved gør de det vanskeligt for dem selv at være forældre. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Hermansen mener, at alle bør stille sig selv spørgsmålet: hvorfor egentlig få børn? Hun vil have redefineret moderidealet, fordi det ikke længere passer til moderne kvinders livsstil. Selvrealisering behøver ikke at stå i modsætning til det at være mor. Hun kritiserer også moderne curlingforældre for ikke at ville opdrage børnene, og derved gør de det vanskeligt for dem selv at være forældre.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2019 Higher Level — © State Examinations Commission.",
+    id: "dan-2019-hl-ii-1", topicId: "danish-1-0", conceptId: "lykkeforsker-christian-rnskov-forudser-vil-rre",
+    section: "II", questionRef: "2019 HL Section II Q1",
+    questionText: "Lykkeforsker Christian Bjørnskov forudser ”at vi vil føde færre børn i fremtiden, fordi vi ikke længere vil være bundet af den norm, at børn er et succeskriterium for et vellykket liv.” Diskuter synspunktet i ovenstående citat i en kommentar på 100-150 ord, hvor du refererer til Bjørnskovs udsagn, og hvor du giver din egen mening til kende.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Han mener, at børn ikke længere er et succeskriterium for et vellykket liv, som det har været tidligere, hvor folk fik flere børn. Hans forskning viser, at vores partner, vores sociale relationer, økonomiske frihed, familie og job gør os lykkelige – ikke børn. Karriere, vennekreds og kærlighedsliv er således de vigtigste succeskriterier, som vi måler os selv og hinanden på. 38% af højtuddannede kvinder i Tyskland har valgt ikke at få børn. Tallet er sikkert det samme i Danmark, fordi vores kultur ligner den tyske. Synspunktet kan modargumenteres ved at referere til fordelene ved et lykkeligt familieliv.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “En kommentar på ca. 100-150 ord, som viser evne til at forstå Bjørnskovs synspunkt.”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2019 Higher Level — © State Examinations Commission.",
+    id: "dan-2019-hl-iii-1", topicId: "danish-1-1", conceptId: "det-lykkelige-familieliv-det-muligt-eller",
+    section: "III", questionRef: "2019 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner: Det lykkelige familieliv. Er det muligt, eller er det blot ønsketænkning? Du skal argumentere for dit synspunkt, hvor du overvejer argumenter for og imod.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under Part III the scheme prints only: “Et velskrevet essay på ca. 300 ord, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2019 Higher Level — © State Examinations Commission.",
+    id: "dan-2019-hl-iii-2", topicId: "danish-1-1", conceptId: "mange-unge-lger-tage-sabbat-efter",
+    section: "III", questionRef: "2019 HL Section III Q2",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner: Mange unge vælger at tage et sabbatår efter deres studentereksamen. Er det fornuftigt, eller er det spild af tid? Du skal argumentere for dit synspunkt, hvor du overvejer argumenter for og imod.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under Part III the scheme prints only: “Et velskrevet essay på ca. 300 ord, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -993,17 +1830,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”husgeråd” som det bruges i teksten. (par 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Samling af redskaber, der bruges ved madlavning”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Samling af redskaber, der bruges ved madlavning”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1016,17 +1854,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”nøjsomhed” som det bruges i teksten. (par 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Livsstil, hvor man klarer sig eller er tilfreds med lidt”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Livsstil, hvor man klarer sig eller er tilfreds med lidt”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1039,17 +1878,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”brugsværdi” som det bruges i teksten. (par 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Tingenes nytteværdi; modsat æstetisk værdi.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Tingenes nytteværdi; modsat æstetisk værdi.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1062,17 +1902,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordene ”skuer hunden på hårene” som de bruges i teksten. (par 11)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Udtrykket bruges metaforisk og skal derfor læses i overført betydning. Det betyder, at man bedømmer noget alene ud fra dets ydre.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Udtrykket bruges metaforisk og skal derfor læses i overført betydning. Det betyder, at man bedømmer noget alene ud fra dets ydre.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1085,17 +1926,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordene ”tage livtag” som de bruges i teksten. (par 12)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Udtrykket bruges metaforisk og skal derfor læses i overført betydning. Det betyder indædt eller anstrengende kamp; intenst arbejde.”) (maks. 5 × 1 point)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Udtrykket bruges metaforisk og skal derfor læses i overført betydning. Det betyder indædt eller anstrengende kamp; intenst arbejde.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1108,17 +1950,18 @@ export const CARDS: SecCard[] = [
     questionText: "Maja Lucas beskriver sin moders holdning til forbrug således: ”Man smider ikke brugbare ting ud. Man køber ikke nyt, medmindre det er nødvendigt. Man serverer ikke overdådige retter, da mad dybest set handler om at blive mæt. Man smider ikke om sig med penge. Heller ikke hvis man har dem.” Forklar moderens holdning til forbrug. Er du enig med moderen? (begrund dit svar)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Moderen er født i efterkrigstidens mangelsamfund og er opdraget til at leve nøjsomt, hvilket betyder, at hun er sparsommelig, og at hun genanvender og reparerer ting. Hendes livsstil står i stærk kontrast til moderne forbrugerisme. Dansk kultur var førhen præget af jantelov, hvor man ikke måtte prale, f.eks. ved at bruge sine penge på luksus. I det moderne forbrugersamfund er idealet ofte den omvendte livsstil, hvor man gerne viser sin rigdom frem bl.a. ved at lægge billeder af sit hjem ud på sociale medier. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Moderen er født i efterkrigstidens mangelsamfund og er opdraget til at leve nøjsomt, hvilket betyder, at hun er sparsommelig, og at hun genanvender og reparerer ting. Hendes livsstil står i stærk kontrast til moderne forbrugerisme. Dansk kultur var førhen præget af jantelov, hvor man ikke måtte prale, f.eks. ved at bruge sine penge på luksus. I det moderne forbrugersamfund er idealet ofte den omvendte livsstil, hvor man gerne viser sin rigdom frem bl.a. ved at lægge billeder af sit hjem ud på sociale medier.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1131,17 +1974,18 @@ export const CARDS: SecCard[] = [
     questionText: "”Da jeg var yngre, kunne jeg af og til skamme mig over vores hjem og ting. Over at der ingen smarthed og fornemhed var. Hun havde ikke sans for lækre og nye ting, selv om hun altid har tjent godt. Hendes fokus har altid været på tingenes brugsværdi, ikke på deres æstetik.” Forklar, hvorfor Maja Lucas skammede sig over sit barndomshjem, da hun var yngre. Vurder, om tings brugsværdi er vigtigere end deres æstetiske værdi? (begrund dit svar)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ydre værdier betød meget for Maja Lucas, da hun var barn, hvor hun så moderens nøjsomme livsstil som et udtryk for nærighed. Praktiske, nyttige og billige ting skaber ikke nødvendigvis et hyggeligt hjem, hvor man føler sig tilpas. Et flot dekoreret hjem, med f.eks. designmøbler, dekorative porcelænsvaser og flotte malerier, skal ikke nødvendigvis opfattes som noget syndigt, men det kan være med til at skabe rammerne for mere livskvalitet for ens familie. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ydre værdier betød meget for Maja Lucas, da hun var barn, hvor hun så moderens nøjsomme livsstil som et udtryk for nærighed. Praktiske, nyttige og billige ting skaber ikke nødvendigvis et hyggeligt hjem, hvor man føler sig tilpas. Et flot dekoreret hjem, med f.eks. designmøbler, dekorative porcelænsvaser og flotte malerier, skal ikke nødvendigvis opfattes som noget syndigt, men det kan være med til at skabe rammerne for mere livskvalitet for ens familie.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1154,17 +1998,18 @@ export const CARDS: SecCard[] = [
     questionText: "”I al fald dømmer vi mennesker også hinanden på vores ting og det ydre. Hvor lidt vi end vil det. Vi kan godt sætte os op på den høje hest og sige: ’Jeg er ligeglad med ting og statusobjekter!’ Men det passer ikke. Ikke helt i hvert fald.” Forklar Maja Lucas’ synspunkt. Vurder, om det er muligt at se helt bort fra ting og statusobjekter, når vi bedømmer andre mennesker. (begrund dit svar)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Maja Lucas kan ikke helt se bort fra ting og statusobjekter, når hun bedømmer andre mennesker. I et moderne forbrugersamfund er meget af vores identitet knyttet til de ting, vi ejer. Hvis man f.eks. vælger en minimalistisk livsstil, hvor man kun ejer få ting, eller hvis man altid går i genbrugstøj, vil ens identitet og image også blive defineret af ens ting. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Maja Lucas kan ikke helt se bort fra ting og statusobjekter, når hun bedømmer andre mennesker. I et moderne forbrugersamfund er meget af vores identitet knyttet til de ting, vi ejer. Hvis man f.eks. vælger en minimalistisk livsstil, hvor man kun ejer få ting, eller hvis man altid går i genbrugstøj, vil ens identitet og image også blive defineret af ens ting.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1177,18 +2022,56 @@ export const CARDS: SecCard[] = [
     questionText: "“Det er svært at gøre ligesom min mor, der nægter at udskifte sin absurd slidte håndtaske. Men vi må forsøge.” Forklar Maja Lucas’ synspunkt. Vurder, om det er nødvendigt, at vi ændrer vores værdier og livstil? (begrund dit svar)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Øget forbrug fører til øget udledning af CO2 og derved global opvarmning, som kan få store konsekvenser for menneskeheden. Maja Lucas ser et lavere forbrug som løsningen. Men løsningen kunne også være en mere bæredygtig produktion, herunder overvejende brug af vedvarende energi i forbindelse med produktion og transport af varerne. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Øget forbrug fører til øget udledning af CO2 og derved global opvarmning, som kan få store konsekvenser for menneskeheden. Maja Lucas ser et lavere forbrug som løsningen. Men løsningen kunne også være en mere bæredygtig produktion, herunder overvejende brug af vedvarende energi i forbindelse med produktion og transport af varerne.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2022 Higher Level — © State Examinations Commission.",
+    id: "dan-2022-hl-i-5", topicId: "danish-0-1", conceptId: "kvinder-noget-underlagt-masse-krav-til",
+    section: "I", questionRef: "2022 HL Section I Q5",
+    questionText: "”Kvinder er om noget underlagt en masse krav til deres fremtoning. De skal have makeup på, tjekket hår, lækkert tøj. Høje hæle frem for flade sko. Tynde kjoler frem for tykke bukser. For ikke at tale om plastikoperationer, skønhedsbehandlinger, hårfarvning.” Forklar Maja Lucas’ synspunkt. Vurder, om kvinder er underlagt flere krav end mænd vedrørende deres fremtoning. (begrund dit svar)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Maja Lucas mener, at kvinder er underlagt mange krav til deres fremtoning, hvor de stræber efter perfektion, lige fra daglig makeup til plastikoperationer, hvor man nærmest kan designe sit eget udseende, mens mænd ikke er underlagt samme krav. Førhen var det måske nok for mænd at have en høj indkomst og en god karriere for at opnå status, men i dag er kravet for karrieremændene også at udstråle succes. Mange moderne metroseksuelle mænd går i designertøj, bruger mandemakeup, farver hår, får skønhedsbehandlinger og får foretaget plastikkirurgi for at vise deres succes, og fordi de på samme måde som kvinderne stræber efter perfektion og evig ungdom.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2022 Higher Level — © State Examinations Commission.",
+    id: "dan-2022-hl-ii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "II", questionRef: "2022 HL Section II Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner, hvor du overvejer argumenter for og imod.\nHvordan ægte venskab skabes\n”At rejse er at leve” ‐ H. C. Andersen.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under the essay the scheme prints only: “Essayet skal være velskrevet, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog. Essayet skal indeholde relevante abstrakte og filosofiske refleksioner, rationel argumentation samt en fokuseret konklusion”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1200,17 +2083,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”litteraturkanon” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”samling af udvalgte litterære værker, der er obligatorisk læsning i danskundervisningen.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”samling af udvalgte litterære værker, der er obligatorisk læsning i danskundervisningen.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1223,17 +2107,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”afkodningsniveau” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Forklar betydningen af ordet ”afkodningsniveau” som det bruges i teksten. Enhver rimelig forklaring (e.g. ”evnen til at forstå af meddelelser, der foreligger i en uvant eller svært tilgængelig form.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”evnen til at forstå af meddelelser, der foreligger i en uvant eller svært tilgængelig form.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1246,17 +2131,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”rastløshed” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”tilstand, hvor man er urolig og hverken kan koncentrere sig eller slappe af.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”tilstand, hvor man er urolig og hverken kan koncentrere sig eller slappe af.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1269,17 +2155,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”dannelse” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”alment kendskab til især kulturelle områder som fx litteratur og historie, forbundet med en fremskreden åndelig udvikling opnået som resultat af god uddannelse og opdragelse.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”alment kendskab til især kulturelle områder som fx litteratur og historie, forbundet med en fremskreden åndelig udvikling opnået som resultat af god uddannelse og opdragelse.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1292,17 +2179,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”fordybelse” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”grundigt arbejde med et emne og dybere refleksion”). (maks. 5 ×1 point)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”grundigt arbejde med et emne og dybere refleksion”).", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1315,17 +2203,18 @@ export const CARDS: SecCard[] = [
     questionText: "Gundlund Jensen og Ina-Maria Nielsen mener, at ”Mange unge i gymnasiet er i tiltagende grad ikke i stand til at læse eller skrive tekster, der afviger særlig meget fra det typiske afkodningsniveau, der fylder deres fritid, hvilket truer med at gøre dem historieløse og dårligt udrustede dannelsesmæssigt.” Forklar, hvorfor mange unge mangler dannelse og kan betegnes som historieløse. Er du enig? (hvorfor/hvorfor ikke?)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Unge mangler dannelse og er historieløse, fordi de ikke læser seriøse og komplicerede tekster, herunder aviser og litteratur, der henvender sig til voksne. Mange unge får deres viden primært fra sociale medier, og dermed opnår de ikke dyberegående viden om kultur og samfundsforhold. Man kan diskutere, om det traditionelle dannelsesideal er forældet, og om der derfor skal introduceres et nyt dannelsesbegreb med mere fokus på dannelse i en digitaliseret verden. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Unge mangler dannelse og er historieløse, fordi de ikke læser seriøse og komplicerede tekster, herunder aviser og litteratur, der henvender sig til voksne. Mange unge får deres viden primært fra sociale medier, og dermed opnår de ikke dyberegående viden om kultur og samfundsforhold. Man kan diskutere, om det traditionelle dannelsesideal er forældet, og om der derfor skal introduceres et nyt dannelsesbegreb med mere fokus på dannelse i en digitaliseret verden.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1338,17 +2227,18 @@ export const CARDS: SecCard[] = [
     questionText: "Torben Weinreich mener, at ”Den verden, vi lever i, prioriterer det funktionelle. Det, vi bruger vores tid på, skal kunne bruges lige her og nu. I den sammenhæng står litteraturen svagt, fordi den har et bredere sigte og formål. Litteratur og dannelse er ikke så måleligt” Forklar Weinreichs synspunkt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "I det moderne samfund fokuseres der på det funktionelle, dvs. kompetencer som umiddelbart er samfundsnyttige, f.eks. naturvidenskabelig og matematiske evner, der kan bruges i erhvervslivet. Kulturel og litterær dannelse nedprioriteres, fordi elever og erhvervslivet ikke kan se det nyttige i viden om f.eks. litteraturhistoriske perioder, fordi denne form for viden ikke umiddelbart opfattes som målbar og brugbar, men det er personlighedsudviklende at læse litteratur, bl.a. fordi man udvikler empati for andre mennesker, og man bliver mere selvreflekterende, hvilket er meget vigtige egenskaber, som også er nyttige for erhvervslivet. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "I det moderne samfund fokuseres der på det funktionelle, dvs. kompetencer som umiddelbart er samfundsnyttige, f.eks. naturvidenskabelig og matematiske evner, der kan bruges i erhvervslivet. Kulturel og litterær dannelse nedprioriteres, fordi elever og erhvervslivet ikke kan se det nyttige i viden om f.eks. litteraturhistoriske perioder, fordi denne form for viden ikke umiddelbart opfattes som målbar og brugbar, men det er personlighedsudviklende at læse litteratur, bl.a. fordi man udvikler empati for andre mennesker, og man bliver mere selvreflekterende, hvilket er meget vigtige egenskaber, som også er nyttige for erhvervslivet.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1361,17 +2251,18 @@ export const CARDS: SecCard[] = [
     questionText: "En undersøgelse viser, at ”andelen af voksne amerikanere, der læser en eller anden form for litteratur af lyst er faldet til et rekordlavt niveau. Kun 43 procent af de voksne amerikanere har læst en roman, en novelle, et digt eller et skuespil i løbet af det seneste år.” Vurder, om denne udvikling er problematisk (begrund dit svar)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Udviklingen kan ses som et udtryk for, at amerikanere læser mindre skønlitteratur end tidligere. Udvikling kan ses som problematisk, fordi amerikanerne risikerer at forringe deres læsefærdigheder, og måske er det også et tegn på, at deres koncentrationsevne generelt set er blevet forringet, fordi læsning af skønlitteratur kræver langvarig koncentration. Udviklingen kunne skyldes, at de bruger mere tid på sociale medier, og at de ser flere tv‐programmer, serier og film, hvilket dog ikke nødvendigvis skal opfattes negativt, idet de på den måde også bruger meget tid på læsning af beskeder og opdateringer. Moderne film og tv‐serier skal ikke kun betragtes som letfordøjelig underholdning uden et dannelsesmæssigt aspekt, fordi de kræver både koncentration og fordybelse, og de har på mange måder erstattet skønlitteratur som nutidens historiefortællere. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Udviklingen kan ses som et udtryk for, at amerikanere læser mindre skønlitteratur end tidligere. Udvikling kan ses som problematisk, fordi amerikanerne risikerer at forringe deres læsefærdigheder, og måske er det også et tegn på, at deres koncentrationsevne generelt set er blevet forringet, fordi læsning af skønlitteratur kræver langvarig koncentration. Udviklingen kunne skyldes, at de bruger mere tid på sociale medier, og at de ser flere tv‐programmer, serier og film, hvilket dog ikke nødvendigvis skal opfattes negativt, idet de på den måde også bruger meget tid på læsning af beskeder og opdateringer. Moderne film og tv‐serier skal ikke kun betragtes som letfordøjelig underholdning uden et dannelsesmæssigt aspekt, fordi de kræver både koncentration og fordybelse, og de har på mange måder erstattet skønlitteratur som nutidens historiefortællere.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1384,17 +2275,18 @@ export const CARDS: SecCard[] = [
     questionText: "Birgitte Darger siger, at ”det kræver også fordybelse at læse en længere artikel eller følge argumentationen i en blog, der fylder mere end fire linjer. Vi har vænnet os til, at alt i dag bliver præsenteret i et kort format, politikerne skriver jo også flere tweets, end de skriver blogs i dag” Forklar, hvordan politikerne foretrækker at kommunikere. Diskuter de positive og negative konsekvenser af denne kommunikationsform.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Politikere foretrækker ofte et kort kommunikationsformat, bl.a. bruger de Twitter, når de kommunikerer med vælgerne, idet de såkaldte ”tweets” er en nem og praktisk måde at nå sin målgruppe i det moderne informationssamfunds overflod af informationer, hvor folk har svært ved at navigere og bevare overblikket. Problemet er dog, at budskaberne, problematikkerne og argumenterne bliver forsimplede, og der mangler ofte dokumentation. Et andet problem med Twitter er, at folk er tilbøjelige til kun at følge politikere, de er enige med, og derved risikerer de, at nyhedsstrømmen bliver for ensidig og unuanceret. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Politikere foretrækker ofte et kort kommunikationsformat, bl.a. bruger de Twitter, når de kommunikerer med vælgerne, idet de såkaldte ”tweets” er en nem og praktisk måde at nå sin målgruppe i det moderne informationssamfunds overflod af informationer, hvor folk har svært ved at navigere og bevare overblikket. Problemet er dog, at budskaberne, problematikkerne og argumenterne bliver forsimplede, og der mangler ofte dokumentation. Et andet problem med Twitter er, at folk er tilbøjelige til kun at følge politikere, de er enige med, og derved risikerer de, at nyhedsstrømmen bliver for ensidig og unuanceret.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1407,18 +2299,57 @@ export const CARDS: SecCard[] = [
     questionText: "Birgitte Darger siger, at ”Vi skal måske indføre læsestunder, hvor alle mobiler lægges væk, så der bliver rum for fordybelse. Vi er nødt til i fremtiden at tænke det ind som et vilkår.” Forklar, hvordan lærerne bliver nødt til at ændre måden, de underviser på. Vurder, om de tilpasser undervisningen til eleverne.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Darger foreslår, at der indføres læsetimer, hvor mobiltelefoner forbydes, fordi de forstyrrer eleverne. Dermed lærer eleverne at koncentrere og fordybe sig i længere og vanskeligere tekster. En anden mulighed er, at man i højere grad forsøger at integrere mobiler, internet og sociale medier i undervisningens indhold for at gøre den mere tidsvarende og relevant for eleverne. Dermed lærer eleverne også at omgås det i en arbejdssituation og lærer at anvende det som et nyttigt værktøj og ikke kun som et legetøj. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Darger foreslår, at der indføres læsetimer, hvor mobiltelefoner forbydes, fordi de forstyrrer eleverne. Dermed lærer eleverne at koncentrere og fordybe sig i længere og vanskeligere tekster. En anden mulighed er, at man i højere grad forsøger at integrere mobiler, internet og sociale medier i undervisningens indhold for at gøre den mere tidsvarende og relevant for eleverne. Dermed lærer eleverne også at omgås det i en arbejdssituation og lærer at anvende det som et nyttigt værktøj og ikke kun som et legetøj.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2023 Higher Level — © State Examinations Commission.",
+    id: "dan-2023-hl-ii-1", topicId: "danish-1-0", conceptId: "torben-weinreich-siger-det-virker-ikke",
+    section: "II", questionRef: "2023 HL Section II Q1",
+    questionText: "Torben Weinreich siger, ”det virker ikke, som om den ældre litteratur er gangbar i skole og gymnasium i dag. Eleverne modarbejder det og gider det ikke.” Diskuter synspunktet i ovenstående citat. Forklar din mening i en kommentar på 100-150 ord.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Weinreich påstår, at eleverne ikke gider at læse ældre litteratur i dag, fordi det er besværligt at læse pga. et ældre og kompliceret ordforråd. Dermed bliver de litterære klassikere ikke længere læst. De er dermed ikke længere del af vores fælles bevidsthed, og dermed mister man også forståelsen for tidligere perioders måde at kommunikere og tænke på. Mange unge er sikkert vant til at se filmatiseringer af de klassiske værker, som ofte er mere tilgængelige pga. et moderniseret sprogbrug og simplificering af fortællingernes karakterer og temaer. Omvendt bør undervisningen også tage udgangspunkt i elevernes niveau og interesse for at engagere dem, og dermed bør pensum i dansktimerne moderniseres, hvilket måske vil resultere i, at ældre litteratur ikke længere skal læses i samme omfang.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2023 Higher Level — © State Examinations Commission.",
+    id: "dan-2023-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2023 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner, hvor du overvejer argumenter for og imod.\n”Karakterer og prøver i skolen skal afskaffes”\nHans Christian Andersen: ”Livet er den eneste rigtige læremester eller skole”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "I et essay om ”Karakterer og prøver i skolen skal afskaffes” kan man reflektere over relevante temaer og problemstillinger, f.eks. om hvorvidt prøver og karakterer overhovedet er egnet som læringsinstrumenter, og om hvorvidt vi skal gøre op med præstationssamfundets karakterræs, som bl.a. er medvirkende til en stigende grad af stress og angst blandt unge.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “Et essay på ca. 300 ord om et af følgende emner: ”Karakterer og prøver i skolen skal afskaffes” og ”Livet er den eneste rigtige læremester og skole”. Essayet skal være velskrevet, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog. Essayet skal indeholde relevante abstrakte og filosofiske refleksioner, rationel argumentation samt en fokuseret konklusion.”. The paper prints the second title as “Livet er den eneste rigtige læremester eller skole”; the scheme reprints it so, but its own head and paragraph word it “Livet er den eneste rigtige læremester og skole”." },
+    { id: "r-2", kind: "point", verbatim: "I et essay om ” Livet er den eneste rigtige læremester og skole” kan man reflektere over relevante temaer og problemstillinger, f.eks. om hvorvidt skolen forbereder eleverne ordentligt til livets udfordringer, fordi den er for overbeskyttende, for teoretisk, for umoderne eller for lærerstyret m.fl.", marks: null },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1427,20 +2358,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2024 Higher Level — © State Examinations Commission.",
     id: "dan-2024-hl-i-1-d", topicId: "danish-0-0", conceptId: "forklar-betydningen-ordet-patriarkalsk-som-det",
     section: "I", questionRef: "2024 HL Section I Q1(d)",
-    questionText: "Forklar betydningen af ordet ”patriarkalsk” som det bruges i teksten.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    questionText: "Forklar betydningen af ordet ”ynglefabrikker” som det bruges i teksten.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Forklar betydningen af ordet ”ynglefabrikker” som det bruges i teksten. Enhver rimelig forklaring (e.g. ”metafor, der betegner kvinder, der føder mange børn”)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”metafor, der betegner kvinder, der føder mange børn”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1453,17 +2385,18 @@ export const CARDS: SecCard[] = [
     questionText: "Thomsen mener, at ”Vores børn taber, når vi gør drenge til undertrykkere og piger til ofre” Forklar Thomsens synspunkt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Forklar Thomsens synspunkt. (maks. 5 point) Thomsen er bekymret for børn og unge i det moderne samfund, fordi de har fået det markant psykisk dårlige på trods af øget rigdom. Problemet er, at vi fortsat italesætter drenge som undertrykker og pigerne som ofre, hvilket er med til på forhånd at definere kønnenes identitet. Denne udvikling er ifølge Thomsen problematisk, fordi drengene bliver dømt for noget, de ikke har gjort. Derved bliver det at være mand nærmest kriminaliseret, fordi manderollen fremstår som undertrykkende og forkert. Det gavner heller ikke pigerne, at de identificerer sig med offerrollen. Feminisme har for længst sejret, og der er opnået ligestilling i Danmark. Thomsen vil således gøre op med brugen af betegnelserne ”undertrykkere” og ”ofre”, der ikke længere automatisk skal forbindes med kønnene, fordi det er utidssvarende, og det kan i værste fald udløse identitetskriser hos både drengene og pigerne.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Thomsen er bekymret for børn og unge i det moderne samfund, fordi de har fået det markant psykisk dårlige på trods af øget rigdom. Problemet er, at vi fortsat italesætter drenge som undertrykker og pigerne som ofre, hvilket er med til på forhånd at definere kønnenes identitet. Denne udvikling er ifølge Thomsen problematisk, fordi drengene bliver dømt for noget, de ikke har gjort. Derved bliver det at være mand nærmest kriminaliseret, fordi manderollen fremstår som undertrykkende og forkert. Det gavner heller ikke pigerne, at de identificerer sig med offerrollen. Feminisme har for længst sejret, og der er opnået ligestilling i Danmark. Thomsen vil således gøre op med brugen af betegnelserne ”undertrykkere” og ”ofre”, der ikke længere automatisk skal forbindes med kønnene, fordi det er utidssvarende, og det kan i værste fald udløse identitetskriser hos både drengene og pigerne.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1476,17 +2409,18 @@ export const CARDS: SecCard[] = [
     questionText: "Thomsen mener, at ”Når drenge mister fodfæste og retning i livet, og piger begynder at skære i sig selv, må grunden være eksistentiel og ikke ’bare’ foranderligheden i verden omkring dem.” Forklar Thomsens synspunkt. Er du enig? (hvorfor/hvorfor ikke?)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Forklar Thomsens synspunkt. Er du enig? (hvorfor/hvorfor ikke?) (maks. 5 point) Halvdelen af drengene vurderes ikkeegnede til session pga. fysiske og psykiske problemer. Næsten halvdelen af alle 19‐årige piger har modtaget psykologhjælp, og en stor gruppe begynder med selvskadelig adfærd. En udbredt teori er, at det moderne samfund er skyld i de unges mistrivsel, fordi det er svært at følge med. Thomsen mener, at der i højere grad er tale om eksistentielle problemer. De unge oplever ofte en identitetskrise, fordi de ikke kan finde en mening med livet. Især drengene mangler retning i livet, hvilket også betegnes som ”the boy crisis”. Thomsen mener, at årsagen til denne udvikling er, at man er begyndt at kritisere og nedbryde de klassiske kønsroller, dvs. kvinden som moderen og manden som beskytteren og jægeren. Piger og drenge har derved ikke nogen faste holdepunkter, når de danner deres identitet, hvilket resulterer psykisk mistrivsel. Den øgede mistrivsel kan dog forklares som et resultat af det moderne samfunds individualisering, hvor øget brug af sociale medier og forventningspres kan resultere i stress, angst og depression hos mange unge.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Halvdelen af drengene vurderes ikkeegnede til session pga. fysiske og psykiske problemer. Næsten halvdelen af alle 19‐årige piger har modtaget psykologhjælp, og en stor gruppe begynder med selvskadelig adfærd. En udbredt teori er, at det moderne samfund er skyld i de unges mistrivsel, fordi det er svært at følge med. Thomsen mener, at der i højere grad er tale om eksistentielle problemer. De unge oplever ofte en identitetskrise, fordi de ikke kan finde en mening med livet. Især drengene mangler retning i livet, hvilket også betegnes som ”the boy crisis”. Thomsen mener, at årsagen til denne udvikling er, at man er begyndt at kritisere og nedbryde de klassiske kønsroller, dvs. kvinden som moderen og manden som beskytteren og jægeren. Piger og drenge har derved ikke nogen faste holdepunkter, når de danner deres identitet, hvilket resulterer psykisk mistrivsel. Den øgede mistrivsel kan dog forklares som et resultat af det moderne samfunds individualisering, hvor øget brug af sociale medier og forventningspres kan resultere i stress, angst og depression hos mange unge.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1499,17 +2433,18 @@ export const CARDS: SecCard[] = [
     questionText: "Thomsen mener, at ”drenge har mistet retning og formål i livet, fordi det er svært at passe ind i én af de to identiteter, drenge har tilstræbt gennem historien. Hvad er man som mand, hvis man ikke kan forsørge eller beskytte sin familie?” Diskuter de positive og negative konsekvenser ved denne udvikling.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Diskuter de positive og negative konsekvenser ved denne udvikling. (maks. 5 point) De klassiske arketyper beskytteren, der skal beskytte sin familie, og jægeren, der skal forsørge sin familie, har tidligere givet drenge og mænd en fastlagt identitet og derved et formål med livet. Familien kræver ikke længere beskyttelse i samme omfang som tidligere, idet staten nu varetager denne opgave, og i dag deler manden ofte forsørgerbyrden med sin kone. Dette kan betragtes som en positiv udvikling, fordi mænd og kvinder nu deler ansvaret og derved lærer at samarbejde og respektere hinanden, hvor de klassiske kønsroller skaber et mere opdelt samfund, hvor mænd og kvinder har deres klart definerede ansvarsområder og interessesfærer. Problemet er, at udviklingen måske er gået for stærkt, og at mange drenge derfor oplever en identitetskrise. Mange drenge er opdraget til at passe ind i den klassiske mandeidentitet, og de spejler sig i deres fædre og andre rollemodeller, bl.a. influencere på sociale medier, der konsekvent dyrker den klassiske manderolle som et ideal. Men en mands værdi bør ikke længere måles efter disse forældede kriterier, og samfundet bør tage et større ansvar med at hjælpe de unge.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "De klassiske arketyper beskytteren, der skal beskytte sin familie, og jægeren, der skal forsørge sin familie, har tidligere givet drenge og mænd en fastlagt identitet og derved et formål med livet. Familien kræver ikke længere beskyttelse i samme omfang som tidligere, idet staten nu varetager denne opgave, og i dag deler manden ofte forsørgerbyrden med sin kone. Dette kan betragtes som en positiv udvikling, fordi mænd og kvinder nu deler ansvaret og derved lærer at samarbejde og respektere hinanden, hvor de klassiske kønsroller skaber et mere opdelt samfund, hvor mænd og kvinder har deres klart definerede ansvarsområder og interessesfærer. Problemet er, at udviklingen måske er gået for stærkt, og at mange drenge derfor oplever en identitetskrise. Mange drenge er opdraget til at passe ind i den klassiske mandeidentitet, og de spejler sig i deres fædre og andre rollemodeller, bl.a. influencere på sociale medier, der konsekvent dyrker den klassiske manderolle som et ideal. Men en mands værdi bør ikke længere måles efter disse forældede kriterier, og samfundet bør tage et større ansvar med at hjælpe de unge.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1522,17 +2457,18 @@ export const CARDS: SecCard[] = [
     questionText: "Thomsen skriver, at ”Det har tidligere været nok at kunne give liv til et nyt menneske og påtage sig moderrollen for at give kvinden oplevelsen af formål, men nu er moderrollen undertrykkelse, så det er ikke nok. Langtfra. Derfor bliver det ikke bare en mulighed for pigerne at skulle springe ud i en karriere, men et krav, for ellers er man undertrykt.” Forklar Thomsens synspunkt. Er du enig? (hvorfor/hvorfor ikke?)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Forklar Thomsens synspunkt. Er du enig? (hvorfor/hvorfor ikke?) (maks. 5 point) Den traditionelle kvinderolle defineres af Thomsen som værende moderrollen, fordi kvinden primært oplever livet som meningsfuldt, når hun bliver mor. De blev hjemme for at passe børnene, mens manden arbejdede. Arbejdet udenfor hjemmet blev derfor meningsgivende for mænd. Førhen var det dermed mere enkelt at være kvinde. Thomsen mener, at man i dag ser ned på kvinder, der vælger karrieren fra til fordel for børnene. Hvis en kvinde identificerer sig med den traditionelle kvinderolle, bliver det fortolket som tegn på undertrykkelse, og derfor er moderne kvinder underlagt et krav om at gøre karriere for at bevise, at de ikke er undertrykte. Thomsen generaliserer. Motiverne bag karrierevalg er individuelt fra kvinde til kvinde. I det moderne samfund har alle også friheden til at vælge deres egen identitet og livsstil. Den traditionelle kvinderolle er også et valg som nogle kvinder bevidst vælger, og det er ikke nødvendigvis et tegn på undertrykkelse, men kan betragtes som en selvbevidst og reflekteret beslutning foretaget af et moderne individ.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Den traditionelle kvinderolle defineres af Thomsen som værende moderrollen, fordi kvinden primært oplever livet som meningsfuldt, når hun bliver mor. De blev hjemme for at passe børnene, mens manden arbejdede. Arbejdet udenfor hjemmet blev derfor meningsgivende for mænd. Førhen var det dermed mere enkelt at være kvinde. Thomsen mener, at man i dag ser ned på kvinder, der vælger karrieren fra til fordel for børnene. Hvis en kvinde identificerer sig med den traditionelle kvinderolle, bliver det fortolket som tegn på undertrykkelse, og derfor er moderne kvinder underlagt et krav om at gøre karriere for at bevise, at de ikke er undertrykte. Thomsen generaliserer. Motiverne bag karrierevalg er individuelt fra kvinde til kvinde. I det moderne samfund har alle også friheden til at vælge deres egen identitet og livsstil. Den traditionelle kvinderolle er også et valg som nogle kvinder bevidst vælger, og det er ikke nødvendigvis et tegn på undertrykkelse, men kan betragtes som en selvbevidst og reflekteret beslutning foretaget af et moderne individ.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1545,18 +2481,153 @@ export const CARDS: SecCard[] = [
     questionText: "Thomsen skriver, at ”Chancen for, at en mand tager nattearbejde, et job på boreplatform eller en uddannelse, der kan give et højtlønnet job, er højere end for kvinder.” Vurder, om denne udvikling er problematisk. (Begrund dit svar)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vurder, om denne udvikling er problematisk (begrund dit svar) (maks. 5 point) Mænd tjener gennemsnitligt mere end kvinder, fordi de ofte vælger bedre lønnet jobs end kvinder. Typiske mandejobs, f.eks. de såkaldte STEM‐fag, er bedre lønnet end typiske kvindejobs, f.eks. sygeplejeske eller pædagog. Dette skal ikke nødvendigvis betragtes som et udtryk for manglende ligestilling, fordi det handler om individets prioritering. Det handler vel lige så meget om forskellen på lønninger indenfor det private erhvervsliv og det offentlige, hvor der ofte er stor forskel, fordi lønnen ofte fastsættes efter, hvor meget værdi man skaber til virksomheden. Mange har også den opfattelse, at hvis man arbejder med mennesker, f.eks. sygeplejesker, så bærer det lønnen i sig selv. Mænd tager måske flere af de bedre betalte nattevagter end kvinder, fordi kvinder måske ikke har samme muligheder, hvis de skal passe børn. Jobs på boreplatforme kræver også, at man er væk i længere fra hjemmet, hvilket kan være svært at forene med familielivet. Udviklingen betragtes som naturlig, fordi mange kvinder prioriterer anderledes end mænd, og i mange familier har man måske aftalt indbyrdes, at det er manden der skal gøre karriere eller lave overarbejde.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mænd tjener gennemsnitligt mere end kvinder, fordi de ofte vælger bedre lønnet jobs end kvinder. Typiske mandejobs, f.eks. de såkaldte STEM‐fag, er bedre lønnet end typiske kvindejobs, f.eks. sygeplejeske eller pædagog. Dette skal ikke nødvendigvis betragtes som et udtryk for manglende ligestilling, fordi det handler om individets prioritering. Det handler vel lige så meget om forskellen på lønninger indenfor det private erhvervsliv og det offentlige, hvor der ofte er stor forskel, fordi lønnen ofte fastsættes efter, hvor meget værdi man skaber til virksomheden. Mange har også den opfattelse, at hvis man arbejder med mennesker, f.eks. sygeplejesker, så bærer det lønnen i sig selv. Mænd tager måske flere af de bedre betalte nattevagter end kvinder, fordi kvinder måske ikke har samme muligheder, hvis de skal passe børn. Jobs på boreplatforme kræver også, at man er væk i længere fra hjemmet, hvilket kan være svært at forene med familielivet. Udviklingen betragtes som naturlig, fordi mange kvinder prioriterer anderledes end mænd, og i mange familier har man måske aftalt indbyrdes, at det er manden der skal gøre karriere eller lave overarbejde.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2024 Higher Level — © State Examinations Commission.",
+    id: "dan-2024-hl-i-1-a", topicId: "danish-0-0", conceptId: "forklar-betydningen-ordet-forventningspresset-som-det",
+    section: "I", questionRef: "2024 HL Section I Q1(a)",
+    questionText: "Forklar betydningen af ordet ”forventningspresset” som det bruges i teksten.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Forventninger til fremtiden føles som et pres. Enhver rimelig forklaring (e.g. ”forventninger til fremtiden mht. karriere‐ og familieplaner, der under tiden føles som et pres.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2024 Higher Level — © State Examinations Commission.",
+    id: "dan-2024-hl-i-1-b", topicId: "danish-0-0", conceptId: "forklar-betydningen-ordet-rnepligt-som-det",
+    section: "I", questionRef: "2024 HL Section I Q1(b)",
+    questionText: "Forklar betydningen af ordet ”værnepligt” som det bruges i teksten.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”en borgers lovbestemte pligt til at gennemgå uddannelse for at deltage i sit lands militære forsvar.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2024 Higher Level — © State Examinations Commission.",
+    id: "dan-2024-hl-i-1-c", topicId: "danish-0-0", conceptId: "forklar-betydningen-ordet-arketyper-som-det",
+    section: "I", questionRef: "2024 HL Section I Q1(c)",
+    questionText: "Forklar betydningen af ordet ”arketyper” som det bruges i teksten.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”en grundlæggende psykisk struktur”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2024 Higher Level — © State Examinations Commission.",
+    id: "dan-2024-hl-i-1-e", topicId: "danish-0-0", conceptId: "forklar-betydningen-ordet-patriarkalsk-som-det",
+    section: "I", questionRef: "2024 HL Section I Q1(e)",
+    questionText: "Forklar betydningen af ordet ”patriarkalsk” som det bruges i teksten.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(e.g. ”et mandsdomineret samfund”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2024 Higher Level — © State Examinations Commission.",
+    id: "dan-2024-hl-ii-1", topicId: "danish-1-0", conceptId: "thomsen-mener-det-store-problem-man",
+    section: "II", questionRef: "2024 HL Section II Q1",
+    questionText: "Thomsen mener, at ”Det store problem er, at man taler om drengen som undertrykker og pigen som undertrykt. Men vores samfund er ikke undertrykkende og patriarkalsk.” Diskuter synspunktet i ovenstående citat. Forklar din mening i en kommentar på 100-150 ord.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Thomsen mener, at der er opnået fuld ligestilling i Danmark. Han er meget begejstret for denne udvikling, hvor kvinden har mulighed for at skabe sin egen identitet og realisere sig selv. Han oplever dog, at flere kvinder har den grundholdning, at samfundet stadig er patriarkalsk og at kvinderne derved fortsat er undertrykte. Mange kvinder oplever nemlig, at de bliver tvunget til at blive hjemme i barslen, og at de bruger mere tid på børnepasning end mændene. Disse prioriteringer ikke nødvendigvis et udtryk for kvindeundertrykkelse. Det er vel praktisk og naturligt, at kvinder bliver hjemme i barslen, og at de bruger meget tid sammen med børnene, imens de er små. Barsel og børnepasning skal vel ikke deles 50‐50 for at opnå ligestilling. I det moderne samfund må hvert forældrepar finde en individuel løsning, der passer dem bedst.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2024 Higher Level — © State Examinations Commission.",
+    id: "dan-2024-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2024 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner, hvor du overvejer argumenter for og imod.\nRitt Bjerregaard (dansk politiker): ”Penge er forudsætningen for ligestilling. Kampen er ikke slut før den dag, hvor mænd og kvinder tjener det samme.”\nJohnny Madsen (dansk musiker): ”Børn skal ikke opdrages. Hvis vi holdt fingrene væk, så ville de alligevel lære at gå og tale. Der ville ske det samme uanset hvad forældrene gør.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "I et essay om ”Penge er forudsætningen for ligestilling. Kampen er ikke slut før den dag, hvor mænd og kvinder tjener det samme.” kan man reflektere over relevante temaer og problemstillinger, f.eks. om hvorvidt finansiel ligestilling er nødvendigt for at opnå ligestilling mellem kønnene, og om hvorvidt det overhovedet er en realistisk målsætning.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “Et essay på ca. 300 ord om et af følgende emner: ”Penge er forudsætningen for ligestilling. Kampen er ikke slut før den dag, hvor mænd og kvinder tjener det samme.” og ”Børn skal ikke opdrages. Hvis vi holdt fingrene væk, så ville de alligevel lære at gå og tale. Der ville ske det samme uanset hvad forældrene gør.” Essayet skal være velskrevet, relevant i forhold til sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog. Essayet skal indeholde relevante abstrakte og filosofiske refleksioner, rationel argumentation samt en fokuseret konklusion.”." },
+    { id: "r-2", kind: "point", verbatim: "I et essay om ”Børn skal ikke opdrages. Hvis vi holdt fingrene væk, så ville de alligevel lære at gå og tale. Der ville ske det samme uanset hvad forældrene gør.” kan man reflektere over relevante temaer og problemstillinger, f.eks. om hvorvidt børn har mest gavn af en fri opdragelse eller en autoritær opdragelse, og om hvorvidt det er arv eller miljø, der påvirker mennesket mest i dets udvikling fra barn til voksen.", marks: null },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1568,17 +2639,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”søvnvaner” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”rutiner og vaner, en person har omkring deres søvn, herunder søvnbesvær.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”rutiner og vaner, en person har omkring deres søvn, herunder søvnbesvær.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1591,17 +2663,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”eksponere” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”at udsætte nogen for fare eller anden ubehagelig påvirkning.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”at udsætte nogen for fare eller anden ubehagelig påvirkning.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1614,17 +2687,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”videndeling” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”det at viden og information deles med andre ofte ved hjælp af it-systemer.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”det at viden og information deles med andre ofte ved hjælp af it-systemer.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1637,17 +2711,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”generationskløft” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”modsætningsforhold mellem den ældre og den yngre generation med hensyn til holdninger og interesser.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”modsætningsforhold mellem den ældre og den yngre generation med hensyn til holdninger og interesser.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1660,17 +2735,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”formynderisk” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”tilsidesættelse af nogens ret til at træffe selvstændige beslutninger ud fra en bedrevidende mening om hvad der er i vedkommendes interesse.”) (maks. 5 × 1 point)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”tilsidesættelse af nogens ret til at træffe selvstændige beslutninger ud fra en bedrevidende mening om hvad der er i vedkommendes interesse.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1683,17 +2759,18 @@ export const CARDS: SecCard[] = [
     questionText: "”Børn og unge har i dagens Danmark europæisk rekord i det, man kan kalde rekreativ skærmbrug med et gennemsnitligt forbrug på 35 timer ugentligt.” Hvad er de negative konsekvenser ved dette forbrug ifølge teksten?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hvad er de negative konsekvenser ved dette forbrug ifølge teksten? (maks. 5 point) Dette forbrug har både negative fysiske og psykiske konsekvenser for børn og unge, herunder stigende inaktivitet. Under 25 procent af unge mellem 11-15 år lever op til sundhedsstyrelsens anbefalinger for fysisk aktivitet, fordi de bruger tiden på sociale medier, computerspil og YouTube. Manglende fysisk-social kontakt er også en negativ konsekvens. Under 13 procent af 15-årige ses regelmæssigt fysisk efter skole. De unges søvnvaner bliver også påvirket. De sover en time mindre og er præget af dårligere søvnkvalitet med langt flere opvågninger. Dette resulterer i, at børn og unge mistrives og har svært ved at finde retning og mening i deres tilværelse.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Dette forbrug har både negative fysiske og psykiske konsekvenser for børn og unge, herunder stigende inaktivitet. Under 25 procent af unge mellem 11-15 år lever op til sundhedsstyrelsens anbefalinger for fysisk aktivitet, fordi de bruger tiden på sociale medier, computerspil og YouTube. Manglende fysisk-social kontakt er også en negativ konsekvens. Under 13 procent af 15-årige ses regelmæssigt fysisk efter skole. De unges søvnvaner bliver også påvirket. De sover en time mindre og er præget af dårligere søvnkvalitet med langt flere opvågninger. Dette resulterer i, at børn og unge mistrives og har svært ved at finde retning og mening i deres tilværelse.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1706,17 +2783,18 @@ export const CARDS: SecCard[] = [
     questionText: "”Med den digitale udvikling er menneskers tid og opmærksomhed blevet et middel til at opfylde økonomiske målsætninger.” Forklar, hvordan techindustrien tjener penge på digitaliseringen ifølge teksten, og forklar hvorfor denne udvikling er problematisk.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Forklar, hvordan techindustrien tjener penge på digitaliseringen ifølge teksten, og forklar hvorfor denne udvikling er problematisk. (maks. 5 point) Techindustrien er kommerciel. Den består af en række store aktieselskaber, der ser mennesket som et objekt, hvorfra viden bliver tappet og solgt med det eneste formål at sikre en øget økonomisk omsætning. Techindustrien forsøger derfor at fastholde brugerne længst muligt på lige præcis deres platform for at tjene så mange penge som muligt. Denne udvikling er problematisk, fordi techindustrien derved ikke tager hensyn til menneskers eksistentielle og livsvigtige behov, herunder værdier som familier, som samfund og som mennesker. Deres rolle er ikke at opdrage børnene til at blive moralske mennesker og udvikle deres sociale kompetencer. Tværtimod eksponerer de børn og unge for skadeligt indhold blot med det formål at fastholde dem på deres platform.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Techindustrien er kommerciel. Den består af en række store aktieselskaber, der ser mennesket som et objekt, hvorfra viden bliver tappet og solgt med det eneste formål at sikre en øget økonomisk omsætning. Techindustrien forsøger derfor at fastholde brugerne længst muligt på lige præcis deres platform for at tjene så mange penge som muligt. Denne udvikling er problematisk, fordi techindustrien derved ikke tager hensyn til menneskers eksistentielle og livsvigtige behov, herunder værdier som familier, som samfund og som mennesker. Deres rolle er ikke at opdrage børnene til at blive moralske mennesker og udvikle deres sociale kompetencer. Tværtimod eksponerer de børn og unge for skadeligt indhold blot med det formål at fastholde dem på deres platform.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1729,17 +2807,18 @@ export const CARDS: SecCard[] = [
     questionText: "”Vi har sågar hørt argumenter som, at forældre og fagpersoner ikke skal være bagstræberiske, og at problemerne vil forsvinde, hvis blot de voksne interesserer sig for, hvad børnene laver digitalt.” Er du enig i disse argumenter? (Hvorfor / hvorfor ikke?)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Er du enig i disse argumenter? (Hvorfor / hvorfor ikke?) (maks. 5 point) Der er en udbredt holdning om, at ungdommen er digital. Forældre og fagpersoner skal ikke være for formynderiske og sætte begrænsninger for de unges brug af digitale platforme, fordi de er en naturlig del af ungdomskulturen i dag. Det er nok bare at vise interesse for, hvad børnene laver digitalt, så vil problemerne forsvinde. Voksne, der begrænser børnenes og de unges brug af digitale platforme, betragtes som bagstræberiske, fordi de viser modstand mod udviklingen. De vil bevare forholdene, som de kender fra deres egen ungdom, hvor man havde et mindre skærmforbrug og var mere sammen fysisk. De romantiserer måske deres barndoms- og ungdomstid og ønsker måske en lignende barndom og ungdom for deres egne børn. Mange moderne forældre forstår, at ungdomskulturen er anderledes i dag, end da de selv var unge, og derfor må de respektere de nye spilleregler. Faren ved denne holdning er, at mange moderne forældre har således ikke indset, at de derved lader techindustrien få kontrol over børns og unges liv, hvilket kan ende i mistrivsel, og at de får svært ved at finde retning og mening i deres tilværelse.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Der er en udbredt holdning om, at ungdommen er digital. Forældre og fagpersoner skal ikke være for formynderiske og sætte begrænsninger for de unges brug af digitale platforme, fordi de er en naturlig del af ungdomskulturen i dag. Det er nok bare at vise interesse for, hvad børnene laver digitalt, så vil problemerne forsvinde. Voksne, der begrænser børnenes og de unges brug af digitale platforme, betragtes som bagstræberiske, fordi de viser modstand mod udviklingen. De vil bevare forholdene, som de kender fra deres egen ungdom, hvor man havde et mindre skærmforbrug og var mere sammen fysisk. De romantiserer måske deres barndoms- og ungdomstid og ønsker måske en lignende barndom og ungdom for deres egne børn. Mange moderne forældre forstår, at ungdomskulturen er anderledes i dag, end da de selv var unge, og derfor må de respektere de nye spilleregler. Faren ved denne holdning er, at mange moderne forældre har således ikke indset, at de derved lader techindustrien få kontrol over børns og unges liv, hvilket kan ende i mistrivsel, og at de får svært ved at finde retning og mening i deres tilværelse.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1752,17 +2831,18 @@ export const CARDS: SecCard[] = [
     questionText: "Tekstens forfattere har en ide om ”at skabe et trivselsfremmende miljø med plads til meningsfulde aktiviteter i tæt kontakt med de mennesker, der har betydning.” Forklar deres ide, og forklar, hvordan de ønsker, at ideen skal blive realiseret.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Forklar deres ide, og forklar, hvordan de ønsker, at ideen skal blive realiseret. (maks. 5 point) Ideen med at skabe et trivselsfremmende miljø indebærer, at man skaber en modkultur til den nuværende digitalisering, hvor børn og unge igen bruger mere tid sammen med deres forældre og venner samt at dyrke sport og hobbyer, som f.eks. boldspil og ridning, hvor de igen kommer tættere på naturen. Børn og unge har et stort behov for at være sammen med venner og familie fysisk, som giver dem mere fysisk og psykisk overskud til bl.a. at fordybe sig i skolearbejdet, og de vil opleve et mere fyldestgørende og meningsfuldt liv. Hvis denne ide skal realiseres, kræver det at forældre og politikere tager ansvar for at hjælpe børn og unge ud af de digitale platformes greb. Techindustrien skal kontrolleres og reguleres, således at børn og unge ikke længere er overladt til sig selv i en ulige kamp mod de profitjagende virksomheder.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ideen med at skabe et trivselsfremmende miljø indebærer, at man skaber en modkultur til den nuværende digitalisering, hvor børn og unge igen bruger mere tid sammen med deres forældre og venner samt at dyrke sport og hobbyer, som f.eks. boldspil og ridning, hvor de igen kommer tættere på naturen. Børn og unge har et stort behov for at være sammen med venner og familie fysisk, som giver dem mere fysisk og psykisk overskud til bl.a. at fordybe sig i skolearbejdet, og de vil opleve et mere fyldestgørende og meningsfuldt liv. Hvis denne ide skal realiseres, kræver det at forældre og politikere tager ansvar for at hjælpe børn og unge ud af de digitale platformes greb. Techindustrien skal kontrolleres og reguleres, således at børn og unge ikke længere er overladt til sig selv i en ulige kamp mod de profitjagende virksomheder.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
   {
@@ -1775,17 +2855,68 @@ export const CARDS: SecCard[] = [
     questionText: "”Vi ønsker, at politikerne skal turde at regulere en techindustri, som er ude af kontrol.” Diskuter, om det overhovedet er muligt for politikerne at regulere techindustrien. (Begrund dit svar)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Diskuter, om det overhovedet er muligt for politikerne at regulere techindustrien. (Begrund dit svar) (maks. 5 point) Det er vanskeligt at regulere techindustrien, der i dag er mere magtfulde end nogensinde før, hvilket bl.a. ses i USA, hvor der er et tydeligt samarbejde mellem statsmagten og store amerikanske techvirksomheder. Et andet problem er manglende politisk vilje, idet mange politikere enten ikke forstår problemet eller ignorerer det. Lovgivningen beskytter allerede børn og unge mod andre vanedannende og skadelige produkter såsom tobak, alkohol og gambling, og derfor bør digitale stimulanser, der manipulerer unge brugeres adfærd, underlægges samme restriktioner, f.eks. ved at forbyde det i skolerne og lave en aldersbegrænsning på 18 år. Det kan være dog være svært at håndhæve, fordi der er mange mulige smuthuller, når det handler om udenlandske digitale platforme, der ikke har deres adresse i Europa.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Det er vanskeligt at regulere techindustrien, der i dag er mere magtfulde end nogensinde før, hvilket bl.a. ses i USA, hvor der er et tydeligt samarbejde mellem statsmagten og store amerikanske techvirksomheder. Et andet problem er manglende politisk vilje, idet mange politikere enten ikke forstår problemet eller ignorerer det. Lovgivningen beskytter allerede børn og unge mod andre vanedannende og skadelige produkter såsom tobak, alkohol og gambling, og derfor bør digitale stimulanser, der manipulerer unge brugeres adfærd, underlægges samme restriktioner, f.eks. ved at forbyde det i skolerne og lave en aldersbegrænsning på 18 år. Det kan være dog være svært at håndhæve, fordi der er mange mulige smuthuller, når det handler om udenlandske digitale platforme, der ikke har deres adresse i Europa.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on its own first page: \"Alle svar skal skrives på dansk.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2025 Higher Level — © State Examinations Commission.",
+    id: "dan-2025-hl-ii-1", topicId: "danish-1-0", conceptId: "har-tilladt-digital-kultur-hvis-mest",
+    section: "II", questionRef: "2025 HL Section II Q1",
+    questionText: "”Vi har tilladt en digital kultur, hvis mest iøjefaldende konsekvens er, at børn og unge mistrives og har svært ved at finde retning og mening i deres tilværelse.” Skriv en kommentar på 100-150 ord, hvor du diskuterer synspunktet.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tekstens forfattere etablerer en årsagssammenhæng mellem forældregenerationens manglende ansvarstagen og passivet mht. techindustriens indflydelse og børn og unges mistrivsel, som kan ende i eksistentielle kriser. Vi har brug for en generel holdningsændring, hvor det ikke længere betragtes som en rettighed at være på digitale platforme uden begrænsninger og reguleringer. De voksne skal tage ansvar og beskytte børnene mod digitale stimulanser. Undersøgelser viser, at børn og unge i dag har svært ved at finde venner, og flere føler sig ensomme, fordi de mangler de nødvendige sociale kompetencer. Mobning, herunder digital mobning, er også blevet et større problem. Vi ser også en stor fremgang i psykiske diagnoser, som angst, ADHD og selvskadeligt adfærd, som måske også kan kobles til børn og unges stigende skærmbrug. Mange unge og børn bliver ofte udsat for voldsomt indhold på digitale platforme, herunder vold, som kan være psykisk skadeligt. Derudover bombarderes de af billeder af perfekte mennesker på de sociale medier, som de spejler sig i, som kan udløse eksistentielle kriser, hvis de ikke kan leve op til perfekthedsidealet. Tiktok og Youtube har afløst fjernsynet og giver de unge en endeløs strøm af korte videoer, der er tilpasset deres interesser, hvilket er med til at holde dem fanget af deres skærm.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2025 Higher Level — © State Examinations Commission.",
+    id: "dan-2025-hl-iii-1", topicId: "danish-1-1", conceptId: "brugen-mobiltelefoner-skolen-skal-forbydes-eller",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "Skriv et essay på minimum 300 ord om ét af disse to emner, hvor du overvejer argumenter for og imod. ”Brugen af mobiltelefoner i skolen skal forbydes.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "I et essay om ”Brugen af mobiltelefoner i skolen skal forbydes.” kan man reflektere over fordelene og ulemperne ved brugen af mobiltelefoner i skolen. Fordelene kunne være at stress, afhængighed og cybermobning mindskes. Elevernes fællesskab styrkes i frikvartererne, og de fokuserer mere på undervisningen. Men på de anden side er digitalisering et grundvilkår i vores samfund, og derfor skal skolen følge med resten af verdenen. Eleverne skal således lære at leve og agere i en digital verden, og mobiltelefoner skal derfor integreres mere i undervisningen for at styrke elevernes digitale kompetencer.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “Et essay på min. 300 ord om et af følgende emner: ”Brugen af mobiltelefoner i skolen skal forbydes.” og ”Lykke er når ens forventninger svarer til virkeligheden.” Essayet skal være velskrevet, relevant i forhold til sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog. Essayet skal indeholde relevante abstrakte og filosofiske refleksioner, rationel argumentation samt en fokuseret konklusion.”." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2025 Higher Level — © State Examinations Commission.",
+    id: "dan-2025-hl-iii-2", topicId: "danish-1-1", conceptId: "troels-vedal-dansk-forfatter-lykke-ens",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "Skriv et essay på minimum 300 ord om ét af disse to emner, hvor du overvejer argumenter for og imod. Troels Kløvedal (dansk forfatter): ”Lykke er når ens forventninger svarer til virkeligheden.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "I et essay om ”Lykke er når ens forventninger svarer til virkeligheden.” kan man reflektere over relevante temaer og problemstillinger, f.eks. den moderne perfekthedskulturs høje forventninger til sig selv og andre, som kan udløse eksistentielle kriser, hvis forventningerne ikke indfries. Men kan man overhovedet skrue ned for forventningerne? Skal man ikke turde drømme store drømme, hvis man vil have succes i livet?", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “Et essay på min. 300 ord om et af følgende emner: ”Brugen af mobiltelefoner i skolen skal forbydes.” og ”Lykke er når ens forventninger svarer til virkeligheden.” Essayet skal være velskrevet, relevant i forhold til sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog. Essayet skal indeholde relevante abstrakte og filosofiske refleksioner, rationel argumentation samt en fokuseret konklusion.”." },
+    ],
   } as SecCard,
 ];
