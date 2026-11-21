@@ -1,5 +1,5 @@
 {
-"note": "Italian Mark Bank card -> its printed Topic Atlas question (the Atlas numbers each paper straight through by section). Built 19-20 Nov 2026 by the standard-model lane over every paper (stage2/italian/JOIN.md); null where the Atlas lists no question for the part (listening cards keyed to the written paper; Higher essays where that year has no essay entry). Listening cards (Sections LA, LB) join the listening booklet (…LPA00…), rows 1 and 2 (coordinator ruling, 20 Nov). Higher essays: B3A -> row 21, B3B -> row 22 (2019-2025); 2018 keeps Section C at row 21, so B3A -> 22, B3B -> 23 (coordinator ruling 20 Nov; rows added by the Italian lane). 2017 Higher has no essay row, so its four essays are null (one-off list entries, owner the Italian lane).",
+"note": "Italian Mark Bank card -> its printed Topic Atlas question (the Atlas numbers each paper straight through by section). Built 19-20 Nov 2026 by the standard-model lane over every paper (stage2/italian/JOIN.md); null where the Atlas lists no question for the part (listening cards keyed to the written paper; Higher essays where that year has no essay entry). Listening cards (Sections LA, LB) join the listening booklet (…LPA00…), rows 1 and 2 (coordinator ruling, 20 Nov). Higher essays: B3A -> row 21, B3B -> row 22 (2019-2025); 2018 keeps Section C at row 21, so B3A -> 22, B3B -> 23 (coordinator ruling 20 Nov; rows added by the Italian lane). 2017 Higher, like 2018, keeps Section C at row 21, so B3A -> 22, B3B -> 23 (rows added by the Italian lane, coordinator 21 Nov).",
 "cards": {
 "it-2018-hl-a-1-a": {
 "fileid": "LC013ALP000EV.pdf",
@@ -4655,19 +4655,19 @@
 },
 "it-2017-hl-b3a-1": {
 "fileid": "LC013ALP000EV.pdf",
-"n": null
+"n": "22"
 },
 "it-2017-hl-b3a-2": {
 "fileid": "LC013ALP000EV.pdf",
-"n": null
+"n": "22"
 },
 "it-2017-hl-b3b-1": {
 "fileid": "LC013ALP000EV.pdf",
-"n": null
+"n": "23"
 },
 "it-2017-hl-b3b-2": {
 "fileid": "LC013ALP000EV.pdf",
-"n": null
+"n": "23"
 },
 "it-2017-hl-la-1": {
 "fileid": "LC013ALPA00EV.pdf",
