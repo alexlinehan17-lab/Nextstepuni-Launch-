@@ -13,6 +13,7 @@
 import spanishAtlas from '../markbank/authoring/spanish-atlas.json';
 import japaneseAtlas from '../markbank/authoring/japanese-atlas.json';
 import italianAtlas from '../markbank/authoring/italian-atlas.json';
+import irishSectionCredit from './irish-section-credit.json';
 import physicalEducationTasks from '../../data/paperTrail/physicalEducationTasks.json';
 import accountingAuthored from '../../components/MarkBank/cards/accounting/authored.json';
 import agsciRuntime from '../../data/examTopics/agricultural-science-question-runtime.json';
@@ -52,6 +53,9 @@ const agsciByCard = new Map(((agsciRuntime as { markBankCards: Json[] }).markBan
 const englishByCard = new Map([...(englishHigher as { cards: Json[] }).cards, ...(englishOrdinary as { cards: Json[] }).cards].map(c => [String(c.id), c]));
 const frenchByCard = new Map((frenchTasks as Json[]).map(t => [String(t.cardId), t]));
 const irishByCard = new Map(Object.values(irishFiles).flatMap(f => f.cards ?? []).map(c => [String(c.id), c]));
+// Irish rows a card's own row also stands for: whole sections and choices, older whole-question rows, the scheme's
+// language-accuracy rows (scripts/atlas-model/build-irish-section-credit.mjs; coordinator, 21 Nov).
+const irishCredit = (irishSectionCredit as { papers: Record<string, Record<string, string[]>> }).papers;
 const econByCard = new Map<string, { n: string }>();
 for (const review of Object.values(economicsReviews)) for (const q of review.questions) for (const t of q.tasks ?? []) if (t.cardId) econByCard.set(t.cardId, { n: q.n });
 const politicsByCard = new Map((politicsTasks as Json[]).map(t => [String(t.id), t]));
@@ -140,7 +144,8 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
       if (!a?.atlasQuestionId) return { fail: 'no-join-entry', cls: 'join' };
       const parts = a.atlasQuestionId.split('-'); const chain: string[] = [];
       for (let i = parts.length - 1; i > 0; i--) chain.push(parts.slice(0, i).join('-'));
-      return { fileid: fid, cands: [a.atlasQuestionId], cls: 'join', extraCredit: chain };
+      const covering = irishCredit[`${c.year}|${fid}`]?.[a.atlasQuestionId] ?? [];
+      return { fileid: fid, cands: [a.atlasQuestionId], cls: 'join', extraCredit: [...new Set([...chain, ...covering])] };
     }
     case 'economics': {
       const e = econByCard.get(c.id); if (e) return { fileid: fid, cands: [e.n], cls: 'join' };

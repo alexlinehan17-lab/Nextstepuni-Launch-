@@ -1,0 +1,95 @@
+#!/usr/bin/env node
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Irish: which Topic Atlas rows a card's own row also stands for (coordinator, 21 Nov 2026).
+ *
+ * The Atlas lists each Irish paper at more than one grain. Beside the rows a card answers (one task, one part)
+ * it keeps rows for whole sections or choices ("Cluastuiscint · Cuid A", "Prós · Ábhar Ainmnithe",
+ * "An Cheapadóireacht · all choices"), older whole-question rows kept beside the newer part rows (Higher Paper 2
+ * 2015-2020 rows 1-12; Foundation listening 2010-2011 "Question 1-12"), and the scheme's language-accuracy rows
+ * ("Cruinneas Teanga · Sliocht A/B", the paper prints only the instruction to take care with accuracy). None of
+ * those is a separate printed task, so a card counts toward each of them that covers its own row. The rows are
+ * matched by their printed labels, so the map follows the anchors and is regenerated with them.
+ *
+ * Reads public/paper-anchors/<year>/LC001*.pdf.json (and the answer maps' labels for the numbered Paper 2 rows);
+ * writes scripts/atlas-model/irish-section-credit.json: { "<year>|<fileid>": { "<card row>": ["<row>", ...] } }.
+ */
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const HERE = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(HERE, '../..');
+const ANCHORS = path.join(ROOT, 'public/paper-anchors');
+const ANSWERS = path.join(ROOT, 'scripts/paper-trail/answers');
+const OUT = path.join(HERE, 'irish-section-credit.json');
+
+const startsWith = re => row => re.test(row.label);
+/** [the covering row's label, which of the paper's rows it covers] */
+const RULES = [
+  // 2026 labels its listening tasks "Cuid A · Fógra a hAon · Ceist 1(a)"; earlier years "Cluastuiscint Cuid A · …".
+  [/^Cluastuiscint · Cuid ([ABC])$/, m => startsWith(new RegExp(`^(?:Cluastuiscint )?Cuid ${m[1]} ·`))],
+  [/^An Cheapadóireacht · all choices$/, () => row => /^W-/.test(row.n)],
+  [/^Ceist \d · Léamhthuiscint$/, () => startsWith(/^Léamhthuiscint\b/)],
+  [/^Ceist \d · Prós$/, () => startsWith(/^(?:Prós|Prose)\b/)],
+  [/^Ceist \d · Próstéacs Breise$/, () => startsWith(/^Próstéacs\b/)],
+  [/^Ceist \d · Filíocht$/, () => startsWith(/^(?:Filíocht|Poetry)\b/)],
+  [/^Ceist 4 · Ceist 4$/, () => row => /^X-4/.test(row.n)],
+  [/^Ceist 4 · Stair na Gaeilge$/, () => startsWith(/^Stair na Gaeilge\b/)],
+  [/^Prós · Ábhar Ainmnithe$/, () => startsWith(/^(?:Prós|Prose) 2A\b/)],
+  [/^Prós · Ábhar Roghnach$/, () => startsWith(/^(?:Prós|Prose) 2B\b/)],
+  [/^Filíocht · Ábhar Ainmnithe$/, () => startsWith(/^(?:Filíocht|Poetry) 3A\b/)],
+  [/^Filíocht · Ábhar Roghnach$/, () => startsWith(/^(?:Filíocht|Poetry) 3B\b/)],
+  [/^Cluastuiscint$/, () => startsWith(/^Cluastuiscint · /)],
+  [/^Léamhthuiscint$/, () => startsWith(/^Léamhthuiscint · /)],
+  [/^Scríbhneoireacht$/, () => startsWith(/^Scríobh\b/)],
+  [/^Cruinneas Teanga · Sliocht ([AB])$/, m => startsWith(new RegExp(`^Léamhthuiscint ${m[1]} · `))],
+  // Foundation listening 2010-2011: "Question k" beside "Cluastuiscint · Ceist k(a)", "(b)".
+  [/^Question (\d+)$/, m => startsWith(new RegExp(`^Cluastuiscint · Ceist ${m[1]}(?:\\(|$| ·)`))],
+  // Higher Paper 2 2015-2020: rows 1-12 (anchor labels E-1 to F-6) are the answer map's "Léamhthuiscint A/B · Ceist k".
+  [/^Léamhthuiscint ([AB]) · Ceist (\d+)$/, m => startsWith(new RegExp(`^Léamhthuiscint ${m[1]} · Ceist ${m[2]}(?:\\(|$| ·)`))],
+];
+
+const credit = {};
+let covering = 0;
+for (const year of fs.readdirSync(ANCHORS).filter(y => /^\d{4}$/.test(y)).sort()) {
+  for (const file of fs.readdirSync(path.join(ANCHORS, year)).filter(f => /^LC001.*IV(?:-deferred)?\.pdf\.json$/.test(f)).sort()) {
+    const fileid = file.replace(/\.json$/, '');
+    const rows = JSON.parse(fs.readFileSync(path.join(ANCHORS, year, file), 'utf8')).q.map(q => ({ n: String(q.n), label: q.label ?? '' }));
+    // The numbered Paper 2 rows carry bare codes ("E-1") in the anchors; their answer map names the question.
+    const answers = path.join(ANSWERS, year, file);
+    const answerLabel = fs.existsSync(answers)
+      ? new Map(JSON.parse(fs.readFileSync(answers, 'utf8')).q.map(q => [String(q.n), q.label ?? '']))
+      : new Map();
+    const paper = {};
+    for (const row of rows) {
+      const label = /^[A-Z]-\d+$/.test(row.label) && /^\d+$/.test(row.n) ? answerLabel.get(row.n) ?? row.label : row.label;
+      for (const [re, coversFor] of RULES) {
+        const m = re.exec(label);
+        if (!m) continue;
+        const covers = coversFor(m);
+        const children = rows.filter(r => r.n !== row.n && covers(r));
+        if (!children.length) continue;
+        covering++;
+        for (const child of children) (paper[child.n] ??= []).push(row.n);
+        break;
+      }
+    }
+    if (Object.keys(paper).length) credit[`${year}|${fileid}`] = Object.fromEntries(Object.entries(paper).sort());
+  }
+}
+const text = `${JSON.stringify({
+  note: 'Generated by scripts/atlas-model/build-irish-section-credit.mjs from the Irish paper anchors: for each paper, the rows a card on <card row> also counts toward (whole sections, choices, older whole-question rows, the scheme\'s language-accuracy rows). Regenerate when the anchors change.',
+  papers: credit,
+}, null, 1)}\n`;
+// --check (test/irishSectionCredit.test.ts): fail when the committed map no longer matches the anchors.
+if (process.argv.includes('--check')) {
+  const same = fs.existsSync(OUT) && fs.readFileSync(OUT, 'utf8') === text;
+  if (!same) { console.error('scripts/atlas-model/irish-section-credit.json is stale: run node scripts/atlas-model/build-irish-section-credit.mjs'); process.exit(1); }
+  console.log('Irish section credit: up to date.');
+} else {
+  fs.writeFileSync(OUT, text);
+  console.log(`Irish section credit: ${Object.keys(credit).length} papers, ${covering} covering rows.`);
+}
