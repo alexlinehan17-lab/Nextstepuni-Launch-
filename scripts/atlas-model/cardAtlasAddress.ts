@@ -129,7 +129,14 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
       return { fileid: pdf(r.atlas.fileid), cands: [r.atlas.n], cls: 'join', extraPlacements: r.atlasPlacements ?? [] };
     }
     case 'french': {
-      const t = frenchByCard.get(c.id); if (!t) return { fail: 'no-join-entry', cls: 'join' };
+      const t = frenchByCard.get(c.id);
+      if (!t) {
+        // A whole-question card the reviewed-task join does not list (Ordinary Section B Q1(a), the letter gap-fill,
+        // 2021 and 2023-2025): the Atlas lists the question itself as B1A, over its gap rows.
+        const m = /\bSection ([AB]) Q(\d+)\(([a-z])\)$/.exec(ref);
+        if (!m) return { fail: 'no-join-entry', cls: 'join' };
+        return { fileid: fid, cands: [`${m[1]}${m[2]}${m[3].toUpperCase()}`], cls: 'inferred' };
+      }
       return { fileid: pdf(t.fileid), cands: [String(t.n)], cls: 'join', extraCredit: t.parent && t.parent !== t.n ? [String(t.parent)] : [] };
     }
     case 'irish': {
@@ -170,11 +177,16 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
       // Sections B and C share one booklet and both restart at Q1; the Atlas lists n 1-5 once, so a Section C card
       // has no Atlas question of its own.
       // Since the 19 Nov release some papers list Section C after Section B's five questions (2024: C Q1 is n 6).
+      // The 2010-2019 paper (one booklet, LC098[AG]LP000EV) is listed straight through: Section A 1-12, Section B
+      // 13-17, Section C 18-20. Where the card's own booklet lists row 13, Section B Qk is 12+k and Section C Qk 17+k;
+      // the 2020-2026 Section B and C booklet (…039…) lists no row 13 and keeps the rule above (coordinator, 21 Nov).
+      const k = qnum(ref); if (!k) return { fail: 'unreadable-ref', cls: 'inferred' };
+      const n = Number(k);
+      if (c.section === 'B') return { fileid: fid, cands: [{ ifHas: '13', n: String(12 + n) }, k], cls: 'inferred' };
       if (c.section === 'C') {
-        const k = qnum(ref);
-        return k ? { fileid: fid, cands: [{ ifHas: String(5 + Number(k)), n: String(5 + Number(k)) }], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
+        return { fileid: fid, cands: [{ ifHas: '13', n: String(17 + n) }, { ifHas: String(5 + n), n: String(5 + n) }], cls: 'inferred' };
       }
-      const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
+      return { fileid: fid, cands: [k], cls: 'inferred' };
     }
     case 'religious-education': {
       const printed = ctx.reSections.get(`${c.year}|${c.level}|${c.paperFileid}`);
@@ -222,6 +234,15 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
       // Atlas 7 and Section III (the discursive essay) Atlas 8; their own Q<n> restarts at 1 (coordinator, 20 Nov).
       const later = c.subjectId === 'portuguese' && c.year <= 2021 ? /\bSection (II|III)\b/.exec(ref) : null;
       if (later) return { fileid: fid, cands: [later[1] === 'II' ? '7' : '8'], cls: 'inferred' };
+      // The Polish paper to 2021: the Atlas lists it by part. 2010-2020: Część I, II, III (two Część III rows in some
+      // years, one per essay title); 2021: Section I's six questions, then Część II as row 7. A card's own Q<n> restarts
+      // in every section, so it addresses its part's row, never Section I's question or part of the same number.
+      const part = c.subjectId === 'polish' && c.year <= 2021 ? /\bSection (I{1,3})\b/.exec(ref)?.[1] : undefined;
+      if (part && c.year === 2021 && part !== 'I') return { fileid: fid, cands: ['7'], cls: 'inferred' };
+      if (part && c.year <= 2020) {
+        const cands = part === 'I' ? ['1'] : part === 'II' ? ['2'] : qnum(ref) === '2' ? ['4', '3'] : ['3'];
+        return { fileid: fid, cands, cls: 'inferred' };
+      }
       const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
     }
     default: {
