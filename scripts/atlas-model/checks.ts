@@ -142,10 +142,13 @@ export async function runAtlasModelChecks(): Promise<CheckResult> {
   // Check 2: every Atlas question in scope has a card.
   for (const s of LC) {
     const lang: PaperLang = s.id === 'irish' ? 'iv' : 'ev';
-    // Music's "Unprepared Tests" booklets (U00, 2013-2016) are the practical exam: out of the count, like Art's
-    // practical briefs (coordinator, 19 Nov).
-    const inScope = questionsForTopics(s.id, null).filter(q => q.year >= 2010 && q.year <= 2026 && q.lang === lang
-      && !(s.id === 'music' && /^LC067[AG]LPU00(?:EV|IV)\.pdf$/.test(q.fileid)));
+    // Things that are not questions leave the Atlas count (PLAN-2026-11-18 M5: "Art practical briefs, heading rows"):
+    // Music's "Unprepared Tests" booklets (U00, 2013-2016) and Art's practical papers 009-011 (2011-2017: Imaginative
+    // Composition and Still Life, Design, Craftwork) are the practical exam, not written questions (coordinator, 19 and
+    // 21 Nov).
+    const practical = (q: { fileid: string }) => (s.id === 'music' && /^LC067[AG]LPU00(?:EV|IV)\.pdf$/.test(q.fileid))
+      || (s.id === 'art' && /^LC014[AG]LP0(?:09|10|11)(?:EV|IV)\.pdf$/.test(q.fileid));
+    const inScope = questionsForTopics(s.id, null).filter(q => q.year >= 2010 && q.year <= 2026 && q.lang === lang && !practical(q));
     if (!inScope.length) continue;
     const have = credited.get(s.id) ?? new Set();
     const missing: string[] = [];
