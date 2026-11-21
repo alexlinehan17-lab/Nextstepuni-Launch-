@@ -44,7 +44,7 @@ const irishFiles = import.meta.glob('../../components/MarkBank/cards/irish/*auth
 const economicsReviews = import.meta.glob('../markbank/authoring/reviews/economics-*-ev.json', { eager: true, import: 'default' }) as Record<string, { fileid: string; questions: Array<{ n: string; tasks?: Array<{ cardId?: string }> }> }>;
 
 const spanish = (spanishAtlas as { cards: Record<string, { fileid: string; n: string }> }).cards;
-const japanese = (japaneseAtlas as { cards: Record<string, { fileid: string; n: string | null }> }).cards;
+const japanese = (japaneseAtlas as { cards: Record<string, { fileid: string; n: string | null; also?: string[] }> }).cards;
 const italian = (italianAtlas as { cards: Record<string, { fileid: string; n: string | null }> }).cards;
 const peByCard = new Map((physicalEducationTasks as Array<{ cardId: string; fileid: string; n: string }>).map(t => [t.cardId, t]));
 const accByCard = new Map(((accountingAuthored as { cards: Json[] }).cards).map(c => [String(c.id), c]));
@@ -196,8 +196,10 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
     }
     case 'japanese': {
       // The Atlas numbers each Japanese paper straight through, with labels that change by year: a committed join.
+      // A card on a whole section also counts toward the rows the Atlas lists inside it ('also', coordinator 21 Nov).
       const e = japanese[c.id];
-      return e?.n ? { fileid: e.fileid, cands: [e.n], cls: 'join' } : { fail: e ? 'no-atlas-question' : 'no-join-entry', cls: 'join' };
+      if (!e?.n) return { fail: e ? 'no-atlas-question' : 'no-join-entry', cls: 'join' };
+      return { fileid: e.fileid, cands: [e.n], cls: 'join', extraCredit: e.also ?? [] };
     }
     case 'italian': {
       // The Atlas numbers each Italian paper straight through by section: a committed join, like Japanese.

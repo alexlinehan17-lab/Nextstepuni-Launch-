@@ -32,6 +32,17 @@ import type { PaperLang, PaperLevel } from '../../types/paperTrail';
 import type { SecCard } from '../../types/markBank';
 import { addressContext, atlasAddress } from './cardAtlasAddress';
 
+/**
+ * Atlas rows that are not printed questions leave check 2's count by exact id (PLAN-2026-11-18 M5: "Things that are
+ * not questions ... leave the Atlas count"; coordinator, 21 Nov). French Ordinary 2015 and 2017 keep old "Question N"
+ * page rows beside the reviewed task rows; those papers print only Section I Q1-4 and Section II options A-C, so the
+ * rows match no printed question. The rows stay on the Atlas: students' device-stored marks are keyed by them.
+ */
+const NOT_QUESTIONS = new Set([
+  ...['1', '2', '3', '4', '5', '6', '7', '8', '9'].map(n => `french|2015|ordinary|LC010GLP000EV.pdf|${n}`),
+  ...['1', '2', '3', '4', '5', '6', '7', '8'].map(n => `french|2017|ordinary|LC010GLP000EV.pdf|${n}`),
+]);
+
 export type CardMissReason = 'no-address-rule' | 'no-own-atlas-question' | 'no-join-entry' | 'unreadable-ref'
   | 'no-atlas-paper' | 'no-atlas-question' | 'no-heading' | 'no-heading-at-level' | 'no-topic-record'
   | 'no-topic-link' | 'topic-differs';
@@ -150,6 +161,7 @@ export async function runAtlasModelChecks(): Promise<CheckResult> {
     const have = credited.get(s.id) ?? new Set();
     const missing: string[] = [];
     for (const q of inScope) {
+      if (NOT_QUESTIONS.has(`${s.id}|${q.year}|${q.level}|${q.fileid}|${q.n}`)) continue;
       result.totals.atlasQuestions++;
       if (have.has(logicalQuestionIdentity(q))) result.totals.atlasQuestionsWithCard++;
       else missing.push(`${q.year}|${q.level}|${q.fileid}|${q.n}`);
