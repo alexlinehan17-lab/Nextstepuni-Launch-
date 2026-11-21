@@ -14,7 +14,8 @@ import { CONSTRUCTION_REVIEWED_HIGHER_ADDED_IDS, CONSTRUCTION_REVIEWED_ORDINARY_
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
+import { atlasHeadings, loadAllAtlasModels } from '../components/PaperTrail/atlasModel';
 import constructionReference from '../data/examTopics/construction-studies.json';
 import constructionEvidence from '../data/examTopics/construction-studies-local-crosswalk.json';
 import curriculumCrosswalk from '../data/examTopics/construction-studies-curriculum-crosswalk.json';
@@ -68,6 +69,9 @@ const paperIdentity = (paper: {
   fileid: string;
 }) => `${paper.level}|${paper.lang}|${paper.year}|${paper.fileid}`;
 
+// The single model (Alex, 18 Nov 2026): the Atlas files each part by what it asks under one heading list.
+beforeAll(() => loadAllAtlasModels());
+
 describe('Construction Studies exam-topic registry', () => {
   const taxonomy = examTopicTaxonomyFor('construction-studies')!;
 
@@ -99,7 +103,10 @@ describe('Construction Studies exam-topic registry', () => {
       .toEqual(referenceTopics.map(topic => topic.id));
     expect(taxonomy.topics.map(topic => topic.label))
       .toEqual(referenceTopics.map(topic => topic.label));
-    expect(topicsForSubject('construction-studies')).toHaveLength(103);
+    // One list: the course examined in June 2027.
+    expect(topicsForSubject('construction-studies').map(topic => topic.subtopicId).sort())
+      .toEqual(atlasHeadings('construction-studies')!.map(topic => topic.id).sort());
+    expect(topicsForSubject('construction-studies')).toHaveLength(39);
   });
 
   it('bridges each bucket only to the canonical specification for its course', () => {
@@ -302,7 +309,7 @@ describe('Construction Studies exam-topic registry', () => {
   it('surfaces 323 written questions, preserves 505 prior cards and adds the source-reviewed 2015 tasks', () => {
     expect(subjectAtlasStats('construction-studies')).toMatchObject({
       questions: 323,
-      topics: 103,
+      topics: 39,
       yearMin: 2010,
       yearMax: 2026,
     });
