@@ -424,7 +424,7 @@
   },
   "hungarian": {
     "cards": 219,
-    "contentHash": "1d21e0988af0604c",
+    "contentHash": "239bda1072e66c23",
     "coveragePct": 100.0,
     "covered": 219,
     "excluded": 0,
@@ -739,7 +739,7 @@
   },
   "slovakian": {
     "cards": 206,
-    "contentHash": "7c26fcef8fc0c008",
+    "contentHash": "6841395223d3bbc9",
     "coveragePct": 100.0,
     "covered": 206,
     "excluded": 0,
@@ -784,7 +784,7 @@
   },
   "swedish": {
     "cards": 191,
-    "contentHash": "d149d82da4867513",
+    "contentHash": "e51b890da1435dc3",
     "coveragePct": 100.0,
     "covered": 191,
     "excluded": 0,

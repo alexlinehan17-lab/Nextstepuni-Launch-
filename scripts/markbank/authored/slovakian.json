@@ -5869,16 +5869,65 @@
   "questionRef": "2019 HL Section I Q6",
   "questionText": "Uveďte dôvody, prečo by ste sa aj vy chceli, prípadne nechceli stať youtuberom.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Pozitívna stránka youtuberingu: youtuberi − robia niečo, z čoho majú radosť, čo ich zabáva, − ich obľúbená aktivita im zabezpečuje dobrý zárobok, − robia niečo dobre a takým spôsobom, že je to zaujímavé pre ostatných, − majú pocit, že sú potrební, obľúbení, chcení, − ich aktivita im posilňuje sebavedomie. Negatívna stránka youtuberingu: youtuberi − strácajú súkromie, − nemajú čas na vzdelávanie sa, vzdelanie pre nich nie je podstatné, − sú stále pod tlakom, sú obeťami vlastného úspechu, stále musia tvoriť, robiť nové videá, aby nestratili sledovateľov, − zverejňovať hlúpe videá o sebe je nezmyselné zabíjanie času.",
-    "marks": 5,
-    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    "verbatim": "robia niečo, z čoho majú radosť, čo ich zabáva,",
+    "marks": null,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints this point and the four below it under its heading “Pozitívna stránka youtuberingu: youtuberi”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ich obľúbená aktivita im zabezpečuje dobrý zárobok,",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "robia niečo dobre a takým spôsobom, že je to zaujímavé pre ostatných,",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "majú pocit, že sú potrební, obľúbení, chcení,",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "ich aktivita im posilňuje sebavedomie.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "strácajú súkromie,",
+    "marks": null,
+    "contextNote": "The scheme prints this point and the three below it under its heading “Negatívna stránka youtuberingu: youtuberi”."
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "nemajú čas na vzdelávanie sa, vzdelanie pre nich nie je podstatné,",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "sú stále pod tlakom, sú obeťami vlastného úspechu, stále musia tvoriť, robiť nové videá, aby nestratili sledovateľov,",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "zverejňovať hlúpe videá o sebe je nezmyselné zabíjanie času.",
+    "marks": null
    }
   ],
   "notes": "The paper prints the tariff as '(5 bodov)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",

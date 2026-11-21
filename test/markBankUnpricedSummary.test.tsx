@@ -20,6 +20,7 @@ import SessionScreen from '@/components/MarkBank/SessionScreen';
 import { CARDS as LCVP_CARDS } from '@/components/MarkBank/cards/lcvp/common';
 import { CARDS as HE_CARDS } from '@/components/MarkBank/cards/home-economics/higher';
 import { REVIEWED_CARDS } from '@/components/MarkBank/cards/russian/reviewed';
+import { CARDS as MGR_CARDS } from '@/components/MarkBank/cards/modern-greek/higher';
 
 // Russian 2012 Higher C1 Q2(ii): one of Codex's confidence holds still to be converted (R3/R4).
 // Home Economics and Japanese holds were converted on 19 Nov 2026 and score as question totals.
@@ -80,6 +81,24 @@ test('an unpriced source review is retained without zero-score analytics or a pe
   expect(screen.getByText('1 answer review had no calculated marks.')).toBeInTheDocument();
   expect(screen.queryByText('Every mark banked.')).not.toBeInTheDocument();
   expect(screen.queryByText('Marks banked')).not.toBeInTheDocument();
+  expect(mocks.commitReview).toHaveBeenCalledTimes(1);
+  expect(mocks.track).not.toHaveBeenCalled();
+});
+
+// Modern Greek 2014 Higher Section 1 Q3: the paper gives 30 marks for ΟΜΑΔΑ 1η as a whole (CARD-STANDARD 10i).
+const sectionTotal = MGR_CARDS.find(card => card.id === 'mgr-2014-hl-1-3')!;
+
+test('a section-total card closes as a review, never as 0 marks available', async () => {
+  expect(sectionTotal.totalMarks).toBe(0);
+  mocks.loadCards.mockResolvedValue([sectionTotal]);
+  await start('Modern Greek');
+  expect(screen.getByText('ΟΜΑΔΑ 1η: 30m in all')).toBeInTheDocument();
+  expect(screen.queryByText(/^0 ?m(arks)?\b/)).not.toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
+  expect(await screen.findByText('Your review is complete.')).toBeInTheDocument();
+  expect(screen.getByText('1 answer review had no calculated marks.')).toBeInTheDocument();
+  expect(screen.queryByText('Every mark banked.')).not.toBeInTheDocument();
+  expect(screen.queryByText('Available')).not.toBeInTheDocument();
   expect(mocks.commitReview).toHaveBeenCalledTimes(1);
   expect(mocks.track).not.toHaveBeenCalled();
 });
