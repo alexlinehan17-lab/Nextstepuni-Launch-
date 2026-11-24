@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nextstepuni design system</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="wordmark">nextstepuni<i>.</i></div>
+  <div class="top-grid">
+    <p class="eyebrow">Design system · November 2026 · for decision</p>
+    <h1>One product,<br>one design language.</h1>
+    <p class="lead">What the app looks like today, three directions it could take, the system behind the one I recommend, and concepts for every screen where a decision is needed. Tap the phones: several of them work.</p>
+  </div>
+</div></header>
+
+<nav class="toc"><div class="wrap">
+  <a href="#found">What we found</a><a href="#directions">Three directions</a><a href="#system">The system</a><a href="#concepts">Screen concepts</a><a href="#dark">Dark mode</a><a href="#audit">Audit</a><a href="#plan">Plan</a><a href="#decide">Decisions</a>
+  <div class="sw" role="group" aria-label="Mock-up theme"><button data-theme-btn="light" aria-pressed="true">Light</button><button data-theme-btn="dark" aria-pressed="false">Dark</button></div>
+</div></nav>
+
+<!-- ───────── FOUND ───────── -->
+<section class="blk" id="found"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">01 · What we found</p><h2>The app is running two design languages at once.</h2>
+  <p class="lead">Login, onboarding, the sidebar and the newer screens use the Kobra kit: hairlines, soft depth, an ink button. Most modules, older tools and pop-ups still use the earlier chunky style: 2px black borders, hard offset shadows, orange pill buttons. Every screen picked one, or mixed them. That is why it feels like different apps.</p></div>
+  <div class="stats">
+    <div class="stat"><b>2</b><span>competing visual languages in live code</span></div>
+    <div class="stat"><b>8</b><span>different recipes for a primary button</span></div>
+    <div class="stat"><b>9</b><span>styles of Back or Close; 6 screens show more than one way back</span></div>
+    <div class="stat"><b>~25</b><span>corner radii in use</span></div>
+    <div class="stat"><b>~44</b><span>near-identical dark greys; 4 different page backgrounds</span></div>
+    <div class="stat"><b>15</b><span>places where a control can sit under the Dynamic Island</span></div>
+  </div>
+  <div class="sub"><h3>The same app, four screens apart</h3>
+  <div class="row">
+    <figure class="fig" style="width:230px"><img class="shot" src="before/tour.jpg" alt="Home screen with the quick tour pop-up"><figcaption><b>Home.</b> The tour pop-up is the old language (thick border, orange pill) sitting on a page in the new one.</figcaption></figure>
+    <figure class="fig" style="width:230px"><img class="shot" src="before/future-finder-light.jpg" alt="Future Finder opening screen"><figcaption><b>Future Finder.</b> The tool names itself three times, with the telescope three times, before any content.</figcaption></figure>
+    <figure class="fig" style="width:230px"><img class="shot" src="before/progress-top.jpg" alt="My Progress screen"><figcaption><b>My Progress.</b> A third title style (heavy sans), a boxed back button on a tab screen, and two different dropdowns.</figcaption></figure>
+    <figure class="fig" style="width:230px"><img class="shot" src="before/island-intro.jpg" alt="Island mode intro card"><figcaption><b>Island Mode.</b> A desktop pop-up at phone size. On a real iPhone the close button is under the Dynamic Island.</figcaption></figure>
+  </div></div>
+  <div class="sub"><div class="callout"><b>The good news:</b> the right language already exists in the product. Login and onboarding are the standard you named, and they are built from tokens and components the rest of the app can share. This is a consolidation, not a reinvention.</div></div>
+</div></section>
+
+<!-- ───────── DIRECTIONS ───────── -->
+<section class="blk" id="directions"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">02 · Three directions</p><h2>How much Kobra, and how much character?</h2>
+  <p class="lead">The same three screens (Home, a Future Finder question, My Progress) drawn three ways. The layouts are identical on purpose, so what you are comparing is only the language. Use Light / Dark at the top to switch every phone.</p></div>
+
+  <div class="dir">
+    <div class="dirhead"><div><span class="tag">Direction 1</span><h3>Instrument</h3><p class="small">Kobra taken literally. One sans face, no serif, sentence-case labels, grey canvas with white panels, tight 8–10px corners, orange almost absent. Reads as a precise professional tool.</p></div></div>
+    <div class="phones"><div data-mock="home" data-dir="i"></div><div data-mock="ffq" data-dir="i"></div><div data-mock="prog" data-dir="i"></div><div data-mock="comps" data-dir="i" class="flat"></div></div>
+    <div class="kv"><div><b>Brand language</b>Technical and neutral. Could be a finance or developer product.</div><div><b>Colour</b>Black, white, greys. Orange only on a progress line.</div><div><b>Warmth</b>Lowest. Characters would feel out of place.</div><div><b>Risk</b>Clinical for 16–18 year olds; loses what is already distinctive about the serif and the crew.</div></div>
+  </div>
+
+  <div class="dir rec">
+    <div class="dirhead"><div><span class="tag rec">Direction 2 · Recommended</span><h3>Paper &amp; Ink</h3><p class="small">Kobra's structure with our voice. White paper, hairline cards, a mono eyebrow over a serif title, the ink button with the orange arrow, large plain numerals, and one orange signal per screen. It is the language of your login and onboarding, extended to everything.</p></div></div>
+    <div class="phones"><div data-mock="home" data-dir="p"></div><div data-mock="ffq" data-dir="p"></div><div data-mock="prog" data-dir="p"></div><div data-mock="comps" data-dir="p" class="flat"></div></div>
+    <div class="kv"><div><b>Brand language</b>Considered, calm, a little editorial. A well-made notebook with instruments in it.</div><div><b>Colour</b>Ink and paper, plus one orange used as a signal: the selected thing, the progress, the arrow.</div><div><b>Warmth</b>From the serif, warm greys, characters at intros and empty states, and full-colour moment screens.</div><div><b>Risk</b>Lowest. About half the app is already here; the rest converges on it.</div></div>
+  </div>
+
+  <div class="dir">
+    <div class="dirhead"><div><span class="tag">Direction 3</span><h3>Block</h3><p class="small">The earlier house style, systematised instead of retired. 2px ink borders, hard offset shadows, orange pill buttons, bold serif. Loud, playful, unmistakably a student product.</p></div></div>
+    <div class="phones"><div data-mock="home" data-dir="b"></div><div data-mock="ffq" data-dir="b"></div><div data-mock="prog" data-dir="b"></div><div data-mock="comps" data-dir="b" class="flat"></div></div>
+    <div class="kv"><div><b>Brand language</b>Energetic and chunky. Closer to a game or a zine than to Kobra.</div><div><b>Colour</b>Orange everywhere it can be: buttons, numerals, active tab.</div><div><b>Warmth</b>Highest energy, but every element shouts, so nothing stands out.</div><div><b>Risk</b>Moves away from Kobra, and would mean rebuilding login, onboarding and the sidebar backwards.</div></div>
+  </div>
+
+  <div class="sub"><h3>Why Paper &amp; Ink</h3>
+  <div class="prose">
+    <p><b>It is the one you already chose.</b> You said login and onboarding are the bar. Both are Paper &amp; Ink. Direction 1 would strip their serif and warmth; Direction 3 would undo them.</p>
+    <p><b>It keeps Kobra where Kobra is strongest</b> (structure, restraint, motion) without importing the part that does not suit students, which is the complete absence of colour and voice.</p>
+    <p><b>It is recognisable from a single cropped corner.</b> Mono eyebrow, serif title, hairline, ink button with an orange arrow. No other study app has that combination.</p>
+    <p><b>It is the cheapest route to consistency.</b> The tokens, the button, the back button and the app bar already exist as shared components. The work is moving every screen onto them and deleting the alternatives.</p>
+  </div></div>
+
+  <div class="sub"><h3>The same system at three sizes</h3>
+  <p class="small" style="max-width:66ch">Tokens and components never change between devices. The arrangement does: the tab bar becomes the sidebar, the bottom button moves into the content, sheets become popovers, one column becomes list and detail.</p>
+  <div class="row" style="align-items:stretch">
+    <div data-mock="mb2"></div>
+    <div style="flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:10px">
+      <div class="desk"><aside><b class="wm">nextstepuni</b><span>Home</span><span>Progress</span><span>Study</span><span>Journey</span><span class="on">Launchpad</span></aside>
+        <main><div><p class="eyebrow">Politics and Society · Higher</p><h3 style="margin-top:4px">Mark Bank</h3></div>
+        <div class="cols"><div class="c"><p class="eyebrow">Strands</p>
+          <div style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)"><b>Power and Decision-Making</b><span>118</span></div>
+          <div style="display:flex;justify-content:space-between;padding:7px 8px;margin:0 -8px;background:var(--soft);border-radius:7px"><b>Globalisation and Identity</b><span>30</span></div>
+          <div style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)"><b>Active Citizenship</b><span>64</span></div>
+          <div style="display:flex;justify-content:space-between;padding:7px 0"><b>Data-Based Questions</b><span>67</span></div></div>
+        <div class="c"><p class="eyebrow">Globalisation and Identity</p><div style="font:700 34px/1 var(--sans);letter-spacing:-.04em">30</div><span style="color:var(--ink2)">questions · 12 answered · 8 due again</span><div class="b" style="margin-top:6px">Start 10 questions <i>→</i></div></div></div></main></div>
+      <p class="figcap"><b>Phone:</b> one level per screen, tab bar, button pinned at the bottom. <b>iPad and desktop:</b> the sidebar replaces the tab bar and the list and its detail sit side by side. Same words, same components.</p>
+    </div>
+  </div></div>
+</div></section>
+
+<!-- ───────── SYSTEM ───────── -->
+<section class="blk" id="system"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">03 · The system</p><h2>The rules behind Paper &amp; Ink.</h2>
+  <p class="lead">This is now written into the repo as a reusable skill (<code>nsu-design</code>) that I load before any UI work. These are its main rules.</p></div>
+
+  <div class="sub" style="margin-top:0"><h3>What makes it ours</h3>
+  <div class="decide">
+    <div><b>Paper and ink, one orange</b>Orange is a signal, never decoration. At most one orange fill in view.</div>
+    <div><b>The ink button, orange arrow</b>One primary action per screen, and it always looks like this.</div>
+    <div><b>Mono eyebrow, serif title</b>"START WITH YOU" then "Future Finder". That pair is the identity of every page. Nothing sits above it.</div>
+    <div><b>Hairlines, not boxes</b>1px warm-grey lines carry structure. Shadows only for things that float.</div>
+    <div><b>Big honest numerals</b>Progress is a large plain number, as in onboarding.</div>
+    <div><b>Moment surfaces</b>Full-bleed orange or ink screens, kept for welcomes, milestones and session complete.</div>
+    <div><b>Characters are guests</b>Small and slightly tilted at intros, empty states and celebrations. Never between the student and the task.</div>
+    <div><b>Motion that connects</b>Things slide, draw and settle. Nothing pops or bounces.</div>
+  </div></div>
+
+  <div class="sub"><h3>Colour and the four surfaces</h3>
+  <div class="sw-row">
+    <div class="swatch"><i style="background:#fff"></i><b>canvas</b>#FFFFFF · the page</div>
+    <div class="swatch"><i style="background:#F4F4F5"></i><b>soft</b>#F4F4F5 · insets, tracks</div>
+    <div class="swatch"><i style="background:#EDEBE8"></i><b>hairline</b>#EDEBE8 · dividers</div>
+    <div class="swatch"><i style="background:#1A1A1A"></i><b>ink</b>#1A1A1A · text, primary</div>
+    <div class="swatch"><i style="background:#eb692a"></i><b>orange</b>#EB692A · the signal</div>
+    <div class="swatch"><i style="background:#FDEEDF"></i><b>orange tint</b>#FDEEDF · selected</div>
+    <div class="swatch"><i style="background:#3A8D5F"></i><b>success</b>#3A8D5F · correct only</div>
+  </div>
+  <div class="sw-row" style="margin-top:8px">
+    <div class="swatch"><i style="background:#151515"></i><b>dark canvas</b>#151515</div>
+    <div class="swatch"><i style="background:#202020"></i><b>dark paper</b>#202020 · cards, bars</div>
+    <div class="swatch"><i style="background:#282624"></i><b>dark soft</b>#282624</div>
+    <div class="swatch"><i style="background:#2B2927"></i><b>dark raised</b>#2B2927 · menus, dock</div>
+    <div class="swatch"><i style="background:#34312E"></i><b>dark hairline</b>#34312E</div>
+    <div class="swatch"><i style="background:#FAF8F4"></i><b>dark ink</b>#FAF8F4</div>
+  </div></div>
+
+  <div class="sub"><h3>Type</h3>
+  <div class="typ">
+    <div><small>Eyebrow · 11</small><span style="font:400 11px/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)">Start with you</span></div>
+    <div><small>Screen title · 28</small><span style="font:500 28px/1.15 var(--serif);letter-spacing:-.02em">Find your paper.</span></div>
+    <div><small>Section · 20</small><span style="font:500 20px/1.3 var(--serif);letter-spacing:-.015em">Pick up where you left off</span></div>
+    <div><small>Card title · 17</small><span style="font:600 17px/1.3 var(--serif);letter-spacing:-.01em">Controlling the Controllables</span></div>
+    <div><small>Body · 16</small><span>Rate activities and what matters to you. Find courses worth a closer look.</span></div>
+    <div><small>Secondary · 14</small><span style="font-size:14px;color:var(--ink2)">4 sessions of focused study this week</span></div>
+    <div><small>Numeral · 40–96</small><span style="font:700 56px/1 var(--sans);letter-spacing:-.04em">578</span></div>
+  </div>
+  <p class="cap" style="margin-top:12px">Three faces, one job each: Source Serif 4 for titles, one sans for everything you read and tap, Departure Mono only for eyebrows. Today the app also uses heavy sans titles on some screens ("My Progress", "Find your paper.") and serif on others. The serif wins.</p></div>
+
+  <div class="sub"><h3>Spacing and radius</h3>
+  <div class="row">
+    <div class="note"><div class="scale">
+      <div><i style="height:4px;width:16px"></i>4</div><div><i style="height:8px;width:16px"></i>8</div><div><i style="height:12px;width:16px"></i>12</div><div><i style="height:16px;width:16px"></i>16</div><div><i style="height:20px;width:16px"></i>20</div><div><i style="height:24px;width:16px"></i>24</div><div><i style="height:32px;width:16px"></i>32</div><div><i style="height:40px;width:16px"></i>40</div><div><i style="height:56px;width:16px"></i>56</div><div><i style="height:72px;width:16px"></i>72</div></div>
+      <p class="small">Ten spacing steps and no others. On a phone: 20 at the page edge, 16 inside a card, 12 between cards in a group, <b>32 between sections</b>. The gap between groups is always at least double the gap inside them. That one rule is what fixes the "bunched boxes" on My Progress.</p></div>
+    <div class="note"><div style="display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap">
+      <div class="cap" style="text-align:center"><i style="display:block;width:56px;height:56px;border:1.5px solid var(--ink);border-radius:8px;margin-bottom:6px"></i>8 · chips</div>
+      <div class="cap" style="text-align:center"><i style="display:block;width:56px;height:56px;border:1.5px solid var(--ink);border-radius:12px;margin-bottom:6px"></i>12 · controls</div>
+      <div class="cap" style="text-align:center"><i style="display:block;width:56px;height:56px;border:1.5px solid var(--ink);border-radius:16px;margin-bottom:6px"></i>16 · cards</div>
+      <div class="cap" style="text-align:center"><i style="display:block;width:56px;height:56px;border:1.5px solid var(--ink);border-radius:24px;margin-bottom:6px"></i>24 · sheets</div>
+      <div class="cap" style="text-align:center"><i style="display:block;width:56px;height:56px;border:1.5px solid var(--ink);border-radius:50%;margin-bottom:6px"></i>full</div></div>
+      <p class="small">Four radii and full, replacing about 25. They map onto Tailwind's existing <code>rounded-lg / xl / 2xl / 3xl</code>, so adopting them needs no new classes.</p></div>
+  </div></div>
+
+  <div class="sub"><h3>Buttons</h3>
+  <div class="tbl"><table><thead><tr><th>Level</th><th>Looks like</th><th>Use</th></tr></thead><tbody>
+    <tr><td>Primary</td><td>Ink fill, label left, orange arrow right, 48 high</td><td>The one thing the screen is for. One per screen. On phones it sits at the bottom.</td></tr>
+    <tr><td>Secondary</td><td>White, 1.5px grey outline, 48 high</td><td>The alternative.</td></tr>
+    <tr><td>Tertiary</td><td>Text only, 44 high</td><td>Skip, Not now, Previous.</td></tr>
+    <tr><td>Icon button</td><td>44 tap area, one treatment per bar</td><td>Back, Close, bar actions.</td></tr>
+    <tr><td>Chip</td><td>Pill, selected is ink-filled</td><td>Filters and quick picks.</td></tr>
+  </tbody></table></div>
+  <p class="small" style="margin-top:12px;max-width:66ch"><b>A button never gets bigger to look more important; it moves up a level.</b> That is the answer to the Practice button. And arrows mean exactly two things: a chevron on a row opens the next level, and the arrow inside a primary button advances. No decorative arrows, no arrows in three colours.</p></div>
+
+  <div class="sub"><h3>Back, Close, Cancel, Leave</h3>
+  <div class="tbl"><table><thead><tr><th>Word</th><th>Shown as</th><th>Means</th><th>Where</th></tr></thead><tbody>
+    <tr><td>Back</td><td>← icon</td><td>Up one level. Never loses work.</td><td>Top-left of the app bar. Exactly one per screen.</td></tr>
+    <tr><td>Close</td><td>✕ icon</td><td>Dismiss something that came over the screen.</td><td>Top-right of the sheet or dialog.</td></tr>
+    <tr><td>Cancel</td><td>The word</td><td>Abandon an edit with unsaved input.</td><td>Paired with Save or Done.</td></tr>
+    <tr><td>Leave</td><td>The word</td><td>Exit a session (study, review, quiz). Confirms if progress would be lost.</td><td>Replaces Back, top-left.</td></tr>
+  </tbody></table></div>
+  <p class="small" style="margin-top:12px;max-width:66ch">Removed everywhere: in-page "← All subjects" links (15 files), "Back to Journey Results" banners, the wordmark acting as a back button, and any screen showing Back and Close together.</p></div>
+
+  <div class="sub"><h3>Safe areas: three owners, no exceptions</h3>
+  <div class="row"><div data-mock="pause"></div>
+  <div class="note"><p class="small">The Admin log-out, the pause-screen sound control and the Island Mode close button all fail for the same reason: a control positioned by hand in the top corner, ignoring the iPhone's safe area. Patching each one would leave the next screen to make the same mistake.</p>
+  <p class="small">The rule instead: <b>only three components may touch the top edge</b> — the app bar, the sheet frame, and the session frame. Controls live in that frame's header row, which sits below the Dynamic Island by construction. A test will fail the build if a new screen pins anything to the top itself.</p>
+  <p class="small">This is the pause screen under that rule: Leave and Sound share one row beneath the island, and the primary action is at the bottom where a thumb reaches it.</p></div></div></div>
+
+  <div class="sub"><h3>Motion</h3>
+  <div class="prose"><p>Kobra's site and the emilkowalski skills use the same curves, so the motion rules have one source: fast, decelerating, never bouncy. Press feedback 120ms, state changes 150ms, sheets 400ms on the drawer curve, exits faster than entrances, nothing scaling from zero, and no animation at all on things done hundreds of times a day.</p>
+  <p>Named moves so the same event always looks the same: a <b>slide highlight</b> (tap Week / Month / Year on any phone here), a <b>selection dot</b> (tap an answer in Future Finder below), a <b>sheet rise</b> (tap "All subjects" on My Progress below), and an <b>attention ring</b> (tap Start on the session demo below).</p></div></div>
+</div></section>
+
+<!-- ───────── CONCEPTS ───────── -->
+<section class="blk" id="concepts"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">04 · Screen concepts</p><h2>Where you need to choose.</h2>
+  <p class="lead">All drawn in Paper &amp; Ink. Each has a recommendation; tell me if you prefer another.</p></div>
+
+  <div class="sub" style="margin-top:0"><p class="eyebrow">A · Start Session</p><h3>The button tells you what is missing, then takes you there.</h3>
+  <div class="row"><div data-mock="start"></div>
+  <div class="note"><p class="small"><b>Try it:</b> tap the button before choosing anything. Then choose a subject and tap again.</p>
+  <p class="small">Today the button is greyed out and dead, with one line of 12px grey text below the card. Here it is never dead:</p>
+  <p class="small">1. Its label always names the next missing thing: "Choose a subject to start", then "Choose how you will study", then "Choose how long".<br>2. Tapping it scrolls to that control, rings it once in orange, and shows a one-line reason beside it. On the phone it also gives a short warning tap.<br>3. When everything is chosen it becomes the ink button: "Start session →".</p>
+  <p class="small">The same pattern becomes the rule for every button in the app that is waiting on the student.</p></div></div></div>
+
+  <div class="sub"><p class="eyebrow">B · Study timer</p><h3>Four quieter timers.</h3>
+  <p class="small" style="max-width:66ch">The current one puts an orange dot, an orange bar and an orange pause button together. Each of these uses orange once, and the numbers do the work. All four are running.</p>
+  <div class="row">
+    <div class="timer-card"><div class="timer-stage"><div class="tl" style="justify-content:space-between"><span class="tsub">Accounting</span><span class="tpill"><span class="tdot"></span><span class="tnum" data-time>24:18</span></span></div></div>
+      <div><h4>1 · Readout</h4><p class="small">A small mono readout in a hairline capsule, with a slow recording light. The most Kobra of the four. Works beside the subject name and as the minimised pill.</p></div></div>
+    <div class="timer-card" style="border:1.5px solid var(--ink)"><div class="timer-stage"><span class="tsub">Accounting</span><div class="ttrack"><i data-fill style="width:54%"></i></div><div class="tl" style="justify-content:space-between"><b class="tnum" data-time style="font-size:15px">24:18</b><span class="tmut">of 45 min</span></div></div>
+      <div><span class="tag rec" style="margin-bottom:8px">Recommended</span><h4>2 · Rule</h4><p class="small">The subject, then a single 2px line that fills as you go, with the time beneath it. Shows progress and time without a widget. Uses the same progress line as the rest of the app.</p></div></div>
+    <div class="timer-card"><div class="timer-stage"><div class="tl"><svg width="30" height="30" viewBox="0 0 36 36" style="transform:rotate(-90deg)"><circle cx="18" cy="18" r="15.9" fill="none" stroke="#ffffff24" stroke-width="2.5"/><circle data-arc cx="18" cy="18" r="15.9" fill="none" stroke="#eb692a" stroke-width="2.5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="46" style="transition:stroke-dashoffset 1s linear"/></svg><span class="tsub">Accounting</span><b class="tnum" data-time style="margin-left:auto;font-size:15px">24:18</b></div></div>
+      <div><h4>3 · Ring</h4><p class="small">A thin ring that closes over the session. Compact and familiar. The most conventional option.</p></div></div>
+    <div class="timer-card"><div class="timer-stage"><span style="font:400 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;opacity:.6">Accounting · Practice</span><div class="tnum" style="font:700 60px/1 var(--sans);letter-spacing:-.04em"><span data-min>24</span><span class="caret"></span><span data-sec style="opacity:.45">18</span></div></div>
+      <div><h4>4 · Numeral</h4><p class="small">The time is the hero and the subject becomes the eyebrow. Minutes in full weight, seconds dimmed, one thin orange caret. Best for the main study room rather than beside a name.</p></div></div>
+  </div>
+  <div class="demo-strip" style="margin-top:20px"><span class="mini"><span class="tdot"></span><b>Accounting</b><span class="tnum" data-time style="color:var(--ink2)">24:18</span><button aria-label="Pause"><svg viewBox="0 0 24 24"><path d="M9 6v12M15 6v12"/></svg></button></span><span class="cap">The minimised pill in the same language: one dot, ink pause button.</span></div></div>
+
+  <div class="sub"><p class="eyebrow">C · Journey Mode bottom bar</p><h3>One bottom bar, not two.</h3>
+  <p class="small" style="max-width:66ch">Today the island's own bar floats above the app's tab bar with a different shape, border, colour and type size. Three ways to make it belong:</p>
+  <div class="phones">
+    <figure class="fig"><div data-mock="journeyA"></div><figcaption><b>1 · Floating dock.</b> A pill built from the same tokens as the tab bar, smaller and raised so it reads as secondary. Build is the ink button. Closest to today.</figcaption></figure>
+    <figure class="fig"><div data-mock="journeyB"></div><figcaption><span class="tag rec" style="margin-bottom:6px">Recommended</span><br><b>2 · Top switcher, one button.</b> Fieldbook, Stickers and Visitors are places, so they become a switcher under the title. Build is the only thing floating on the island. Nothing competes with the tab bar.</figcaption></figure>
+    <figure class="fig"><div data-mock="journeyC"></div><figcaption><b>3 · Pull-up drawer.</b> A handle that pulls the tools up over the island, like a maps app. Most native, most map space, but hides the tools one step away.</figcaption></figure>
+  </div></div>
+
+  <div class="sub"><p class="eyebrow">D · Launchpad tools and Future Finder</p><h3>One identity at the top. No black card.</h3>
+  <div class="row">
+    <figure class="fig" style="width:230px"><span class="tag now">Now</span><img class="shot" src="before/future-finder-light.jpg" alt="Current Future Finder header"><figcaption>Header, black card, then a third title, each with the telescope.</figcaption></figure>
+    <figure class="fig"><span class="tag ok">Proposed</span><div data-mock="ffq" data-opt="none"></div><figcaption><b>Tap an answer.</b> The dot grows from the tap in 180ms while the row tints. Precise, no bounce.</figcaption></figure>
+    <div class="note"><p class="small"><b>Start with you / Future Finder</b> in the app bar is the whole identity, for every Launchpad tool. The black card goes, and so does the repeated icon and "Your next chapter" title.</p>
+    <p class="small"><b>Your interests / What matters / Your possibilities</b> becomes a three-segment progress row directly under the bar, on the same 20px margin as everything else, using onboarding's segmented progress.</p>
+    <p class="small">If a tool wants a first-visit introduction, it is a bottom sheet, shown once.</p></div>
+  </div></div>
+
+  <div class="sub"><p class="eyebrow">E · Paper Trails</p><h3>Keep the character, give the screen back to the task.</h3>
+  <p class="small" style="max-width:66ch">Today the character is 155px and the first subject starts below the fold. The top bar becomes the shared app bar with one "Saved" icon button, so there is no separate Paper Trails header to design. Three ways to keep the personality:</p>
+  <div class="phones">
+    <figure class="fig" style="width:200px"><span class="tag now">Now</span><img class="shot" src="before/paper-trail-light.jpg" alt="Current Paper Trail screen"><figcaption>Black card, then a large character, then the task.</figcaption></figure>
+    <figure class="fig"><div data-mock="ptA"></div><figcaption><b>1 · In the rows.</b> Each subject keeps its own character as a small tile. Most useful: the characters help you find your subject.</figcaption></figure>
+    <figure class="fig"><div data-mock="ptB"></div><figcaption><span class="tag rec" style="margin-bottom:6px">Recommended</span><br><b>2 · Beside the title.</b> One character at 76px, tilted, sharing the title's line. Personality on arrival, five subjects visible.</figcaption></figure>
+    <figure class="fig"><div data-mock="ptC"></div><figcaption><b>3 · Peeking.</b> The character leans over the top of the list. Playful, costs almost no height, but is the hardest to keep tidy across 60 subjects.</figcaption></figure>
+  </div>
+  <p class="small" style="margin-top:16px;max-width:66ch">1 and 2 combine well: character beside the title, small tiles in the rows.</p></div>
+
+  <div class="sub"><p class="eyebrow">F · Mark Bank</p><h3>From one endless page to three short ones.</h3>
+  <p class="small" style="max-width:66ch">Today a single page holds the intro, subject and level pickers, search, notes, an index strip, every topic in the strand and a practice card. For Politics and Society that is about four screens of scrolling; Biology has over 3,000 questions behind it. The fix is structural.</p>
+  <div class="phones">
+    <figure class="fig" style="width:200px"><span class="tag now">Now</span><img class="shot" src="before/mark-bank-mid-light.jpg" alt="Current Mark Bank mid-scroll"><figcaption>Mid-scroll: topic cards, then another section begins.</figcaption></figure>
+    <figure class="fig"><div data-mock="mb1"></div><figcaption><span class="tag rec" style="margin-bottom:6px">Recommended · 1 of 3</span><br><b>Today.</b> Opens on what is due and where you left off. The common case is one tap.</figcaption></figure>
+    <figure class="fig"><div data-mock="mb2"></div><figcaption><b>Browse.</b> Search on top, then strands as one short list with counts and your progress.</figcaption></figure>
+    <figure class="fig"><div data-mock="mb3"></div><figcaption><b>A topic.</b> Its own screen: how many, how far you are, a taste, and Start pinned at the bottom.</figcaption></figure>
+  </div>
+  <div class="row" style="margin-top:28px">
+    <figure class="fig"><div data-mock="mbAcc"></div><figcaption><b>Alternative · Accordion.</b> One page, strands collapsed with counts, opening in place. Less to build, still shortens the page a lot, but long strands get long again.</figcaption></figure>
+    <figure class="fig"><div data-mock="mbSearch"></div><figcaption><b>Alternative · Search only.</b> Fast for students who know the topic name. Poor for "what should I do today", so it works as a part of the recommended design, not instead of it.</figcaption></figure>
+    <div class="note"><p class="small">Subject and level move into the app bar's subtitle ("Politics and Society · Higher"), changed from a sheet, so they stop taking a third of the first screen. Saved cards get their own tab. The explanatory notes move behind an info button.</p></div>
+  </div></div>
+
+  <div class="sub"><p class="eyebrow">G · My Progress</p><h3>The spacing rule, and a picker that works.</h3>
+  <div class="row">
+    <figure class="fig" style="width:230px"><span class="tag now">Now</span><img class="shot" src="before/progress-top.jpg" alt="Current My Progress"><figcaption>Two pickers that open and then ignore the tap on iPhone.</figcaption></figure>
+    <figure class="fig"><span class="tag ok">Proposed</span><div data-mock="progAfter"></div><figcaption><b>Tap "All subjects".</b> It opens a sheet, ticks your choice and closes.</figcaption></figure>
+    <div class="note"><p class="small"><b>Why the dropdown does nothing today:</b> the section menu closes itself whenever it loses focus. iPhones do not give a button focus when you tap it, so the menu shuts before your tap registers. That is a code bug with a known fix, and I will fix it regardless of direction.</p>
+    <p class="small"><b>Layout:</b> the five sections ("Overview 1 / 5") become a row of chips you can see and swipe, instead of a hidden menu. Sections are 32 apart, each with one label, and "The work adds up" is three numerals in a single card.</p>
+    <p class="small">Progress is a top-level tab, so it has no Back button.</p></div>
+  </div></div>
+
+  <div class="sub"><p class="eyebrow">H · Island Mode intro, Admin and Counsellor</p><h3>Designed for a phone, not shrunk onto one.</h3>
+  <div class="phones">
+    <figure class="fig" style="width:200px"><span class="tag now">Now</span><img class="shot" src="before/island-intro.jpg" alt="Current island intro card"><figcaption>A full-height card with a hard shadow; the ✕ sits in the island's zone.</figcaption></figure>
+    <figure class="fig"><div data-mock="islandSheet"></div><figcaption><b>Island Mode intro as a sheet.</b> Rises from the bottom, never reaches the Dynamic Island, closes with ✕, a swipe or the button. This becomes the pattern for every intro and pop-up on phones.</figcaption></figure>
+    <figure class="fig"><div data-mock="admin"></div><figcaption><b>Admin on a phone.</b> The shared app bar and a tab bar replace the eight-item grid. The table becomes a list of rows that open a student. Log out moves into the More menu. The Counsellor dashboard gets the same structure, which also makes its Practice, Key Dates and School access sections reachable on a phone for the first time.</figcaption></figure>
+  </div></div>
+</div></section>
+
+<!-- ───────── DARK ───────── -->
+<section class="blk" id="dark"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">05 · Dark mode</p><h2>About 44 blacks become four.</h2>
+  <p class="lead">Each feature defined its own dark colours, so neighbouring surfaces rarely match. These are the dark backgrounds currently in the code:</p></div>
+  <div class="blacks" id="blacks"></div>
+  <p class="cap" style="margin-top:10px">They are meant to be the same three or four greys. The fix is four shared surfaces (canvas, paper, soft, raised) that every feature points at, and a test that stops a fifth from being added.</p>
+  <div class="sub"><h3>Today's Plan</h3>
+  <div class="row darkpair">
+    <figure class="fig"><span class="tag now">Now</span><div data-mock="darkBefore"></div><figcaption>With nothing planned, the section paints a lighter band edge to edge. The card and tab bar below use two more greys.</figcaption></figure>
+    <figure class="fig"><span class="tag ok">Proposed</span><div data-mock="darkAfter"></div><figcaption>A section has no background of its own. Only cards do, and they all share one surface.</figcaption></figure>
+    <div class="note"><p class="small">The same class of fault appears on: the bottom tab bar, the mobile headers on Modules and Learning Paths, the settings and passport sheets, Mark Bank, Paper Trail's viewer, the study room, legal screens and the staff dashboards.</p>
+    <p class="small">Separately, about 60 components are white with no dark version. The Paper Trail audio bar and several Paper Trail cards stay bright white in dark mode; three Admin panels have no dark styling at all.</p></div>
+  </div></div>
+</div></section>
+
+<!-- ───────── AUDIT ───────── -->
+<section class="blk" id="audit"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">06 · Audit</p><h2>Every screen, against the system.</h2>
+  <p class="lead">Graded from the code on every screen and from the running app on the nine student screens I could open with the demo account. Staff dashboards and in-session screens were read in code, not seen running.</p></div>
+  <div class="tbl"><table><thead><tr><th>Screen</th><th>Grade</th><th>What is wrong</th></tr></thead><tbody>
+    <tr><td>Login</td><td><span class="g1">Good</span></td><td>The reference. No change.</td></tr>
+    <tr><td>Onboarding</td><td><span class="g1">Good</span></td><td>The reference. An unused 1,600-line older desktop version should be deleted.</td></tr>
+    <tr><td>Sidebar (iPad, desktop)</td><td><span class="g1">Good</span></td><td>Already the Kobra component.</td></tr>
+    <tr><td>Settings</td><td><span class="g1">Good</span></td><td>Safe-area aware. Its close button is a fourth ✕ shape.</td></tr>
+    <tr><td>Home</td><td><span class="g2">Minor</span></td><td>Today's Plan band in dark mode. Quick tour pop-up is in the old style. Otherwise the best student screen.</td></tr>
+    <tr><td>Modules and categories</td><td><span class="g2">Minor</span></td><td>Mobile headers render a different grey in dark mode. A Home menu item duplicates Back in the library.</td></tr>
+    <tr><td>Module reader</td><td><span class="g2">Minor</span></td><td>Opened from Journey it shows two backs, one labelled wrongly, and doubles the top inset. Around 70 module files still use the chunky card style.</td></tr>
+    <tr><td>Study setup</td><td><span class="g2">Minor</span></td><td>Start Session feedback (concept A). Otherwise close to the system.</td></tr>
+    <tr><td>Study room and timer</td><td><span class="g2">Minor</span></td><td>Timer styling (concept B). "Leave" and "Minimise" both exit.</td></tr>
+    <tr><td>Future Finder</td><td><span class="g2">Minor</span></td><td>Triple header, static selection mark, three exits in the quiz (concept D).</td></tr>
+    <tr><td>Insights, Learning Paths, Year Plans, Your Setup</td><td><span class="g2">Minor</span></td><td>Each wraps the shared header in its own shell; two have top padding that only just clears the island.</td></tr>
+    <tr><td>My Direction</td><td><span class="g2">Minor</span></td><td>Its own back button, which sits under the Dynamic Island.</td></tr>
+    <tr><td>My Progress</td><td><span class="g3">Redesign</span></td><td>Pickers do not respond on iPhone, uneven spacing, mixed card styles (concept G).</td></tr>
+    <tr><td>Study pause and breathing</td><td><span class="g3">Redesign</span></td><td>Sound control under the island; the two screens place it differently.</td></tr>
+    <tr><td>Launchpad tool shell</td><td><span class="g3">Redesign</span></td><td>Black card on first visit to every tool; 15 tools add their own text back link under the header.</td></tr>
+    <tr><td>Paper Trails</td><td><span class="g3">Redesign</span></td><td>Top bar, oversized character, mixed arrow colours; viewer side panels ignore the inset on iPad; many cards stay white in dark mode.</td></tr>
+    <tr><td>Journey / Island</td><td><span class="g3">Redesign</span></td><td>Intro card, second bottom bar, its own top bar with two ways home.</td></tr>
+    <tr><td>Pop-ups (tour, rank-up, site guide, College Compass, Future Finder results)</td><td><span class="g3">Redesign</span></td><td>Centred desktop cards on a phone; several put ✕ in the island's zone. All become sheets.</td></tr>
+    <tr><td>Toasts and offline banner</td><td><span class="g3">Redesign</span></td><td>Pinned to the very top with no inset.</td></tr>
+    <tr><td>Older tools (Comeback Engine, Catch-Up Lane, Command-Word Reflex, Examiner's Chair, Exam Reps)</td><td><span class="g3">Redesign</span></td><td>Still fully in the chunky style, with their own colours and many white-only surfaces.</td></tr>
+    <tr><td>Mark Bank</td><td><span class="g4">Rebuild</span></td><td>One page doing six jobs (concept F).</td></tr>
+    <tr><td>Counsellor dashboard</td><td><span class="g4">Rebuild</span></td><td>Three sections cannot be reached on a phone at all. Fixed three-column stats, wide tables, Log out under the island.</td></tr>
+    <tr><td>Admin dashboard</td><td><span class="g4">Rebuild</span></td><td>Log out under the island, eight-item navigation grid, three panels with no dark mode.</td></tr>
+  </tbody></table></div>
+  <p class="cap" style="margin-top:12px">Not yet walked screen by screen: the ~58 individual module interiors, Points Passport, War Room, College Compass, Coursework Studio, Listening Studio, Topic Atlas, Diagram Vault and the Irish Oral Trainer. They are covered by the pattern-level findings above, and each gets checked when its phase comes up.</p>
+</div></section>
+
+<!-- ───────── PLAN ───────── -->
+<section class="blk" id="plan"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">07 · Plan</p><h2>System first, then screens.</h2>
+  <p class="lead">Each phase leaves the app shippable. Phases 1 and 2 change almost nothing you can see, but they are what stop the next twenty fixes becoming twenty new inconsistencies.</p></div>
+  <div class="plan">
+    <div><span class="n">1</span><div><h4>Foundations</h4><p class="small">Lock the tokens and build the handful of shared parts every later phase uses.</p><ul><li>Four dark surfaces; every feature palette points at them</li><li>Spacing, radius and motion scales in the Tailwind config</li><li>One app bar, one sheet (bottom sheet on phones), one session frame, one picker</li><li>Button levels, including the "not ready" state</li><li>Build checks: nothing new pinned to the top edge, no new dark greys, no second Back</li></ul></div></div>
+    <div><span class="n">2</span><div><h4>Safe areas and navigation, everywhere</h4><p class="small">Fixes your three Dynamic Island problems and the twelve like them, in one sweep.</p><ul><li>All 15 top-edge sites moved onto the three frames</li><li>One Back per screen; text back links and banners removed; Back goes up, not forward</li><li>Black Launchpad card removed; tool identity only in the app bar</li><li>All phone pop-ups become sheets</li></ul></div></div>
+    <div><span class="n">3</span><div><h4>The screens you named</h4><ul><li>My Progress (pickers fixed, new spacing)</li><li>Start Session interaction, study timer, pause screen</li><li>Future Finder header and selection animation</li><li>Paper Trails home and top bar</li><li>Journey bar and Island Mode intro</li><li>Today's Plan in dark mode</li></ul></div></div>
+    <div><span class="n">4</span><div><h4>Mark Bank</h4><p class="small">The Today / Browse / Saved structure, with topic screens. The largest single piece of work.</p></div></div>
+    <div><span class="n">5</span><div><h4>Counsellor and Admin on phones</h4><p class="small">Shared app bar and tab bar, tables as lists, every section reachable, dark mode for the Admin panels.</p></div></div>
+    <div><span class="n">6</span><div><h4>The long tail</h4><ul><li>Dark-mode sweep: the remaining greys and the ~60 white-only components</li><li>Older tools and ~70 module files moved off the chunky style</li><li>One icon set</li><li>iPad pass: list and detail layouts</li></ul></div></div>
+  </div>
+</div></section>
+
+<!-- ───────── DECISIONS ───────── -->
+<section class="blk" id="decide" style="border-bottom:0"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">08 · Decisions</p><h2>What I need from you.</h2></div>
+  <div class="decide">
+    <div><b>1 · Direction</b>Instrument, Paper &amp; Ink, or Block.<em>Recommended: Paper &amp; Ink</em></div>
+    <div><b>2 · The modules</b>Paper &amp; Ink retires the 2px black borders and orange pill button that the module design rules currently require. Do the ~58 modules move too, or stay as they are for now?<em>Recommended: move, in phase 6</em></div>
+    <div><b>3 · One sans face</b>The app uses both DM Sans and ABC Diatype (Kobra's face, used on login).<em>Recommended: ABC Diatype everywhere</em></div>
+    <div><b>4 · Study timer</b>Readout, Rule, Ring or Numeral.<em>Recommended: Rule beside the name, Numeral in the room</em></div>
+    <div><b>5 · Journey bar</b>Dock, top switcher or drawer.<em>Recommended: top switcher</em></div>
+    <div><b>6 · Paper Trails character</b>In the rows, beside the title, or peeking.<em>Recommended: beside the title, plus small tiles in rows</em></div>
+    <div><b>7 · Mark Bank</b>Today / Browse / Saved, accordion, or search only.<em>Recommended: Today / Browse / Saved</em></div>
+    <div><b>8 · The Practice button</b>I could not find an oversized Practice button in the code. A screenshot of where you see it will let me fix the right one.</div>
+  </div>
+</div></section>
+
+<script src="js/mocks.js"></script>
+<script>
+// the dark greys actually found in the code
+const B=['#09090b','#0a0a0a','#0f0f0e','#131313','#141413','#141414','#141416','#151515','#171717','#181818','#18181b','#181b18','#191919','#1b1b1b','#1b1b1e','#1c1c1c','#1d1c1b','#1d1d1b','#1f1f23','#20201d','#20201f','#202020','#20211e','#201F1D','#212121','#222220','#232720','#242720','#242321','#242424','#252422','#252525','#262626','#27272a','#282624','#282828','#292929','#292725','#2a2927','#2a2825','#2b2927','#2b2b2b','#2d2b28','#303030'];
+document.getElementById('blacks').innerHTML=B.map(c=>`<i style="background:${c}" title="${c}"></i>`).join('');
+// the dark-mode pair is always dark
+document.querySelectorAll('.darkpair').forEach(e=>e.classList.add('darkmocks'));
+// Future Finder demo starts with nothing selected
+document.querySelectorAll('[data-opt=none] .ans').forEach(a=>a.setAttribute('aria-pressed','false'));
+</script>
+</body>
+</html>
