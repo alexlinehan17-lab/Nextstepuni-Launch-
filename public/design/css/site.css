@@ -1,8 +1,8 @@
 /* Layout idea: a long review document. Left-aligned 1120 column, phone mock-ups in wrapping rows,
    commentary beside or under them. The page itself is dressed in the recommended direction. */
-@font-face{font-family:"ABC Diatype";src:url(../fonts/abc-diatype-regular.woff2) format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"ABC Diatype";src:url(../fonts/abc-diatype-bold.woff2) format("woff2");font-weight:700;font-display:swap}
-@font-face{font-family:"Departure Mono";src:url(../fonts/departure-mono.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"ABC Diatype";src:url(/fonts/abc-diatype-regular.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"ABC Diatype";src:url(/fonts/abc-diatype-bold.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Departure Mono";src:url(/fonts/departure-mono.woff2) format("woff2");font-weight:400;font-display:swap}
 :root{
   --paper:#ffffff; --soft:#F4F4F5; --ink:#1A1A1A; --ink2:#5F5A55; --muted:#69605A; --line:#EDEBE8; --line2:#D4D4D8;
   --orange:#eb692a; --orange-text:#B84A0C; --orange-tint:#FDEEDF; --green:#3A8D5F; --green-tint:#E8F2EC; --green-ink:#1F5F3E; --red-ink:#8E2C2C; --red-tint:#FDE4E4;

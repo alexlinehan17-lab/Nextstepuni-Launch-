@@ -6,7 +6,7 @@ description: The Nextstepuni product-design system — one design language for i
 # nsu-design — the Nextstepuni design system
 
 **Status: v1, November 2026. Direction "Paper & Ink" is the recommended default and is NOT yet
-approved by the owner.** Sections marked ⚑ depend on that choice (see `docs/design/system-2026-11/`
+approved by the owner.** Sections marked ⚑ depend on that choice (see `public/design/` — live at nextstepuni.com/design — and `docs/design/system-2026-11/AUDIT.md`
 for the three directions shown to the owner). Everything unmarked holds whichever direction wins.
 When the owner decides, update this file and CLAUDE.md's "Visual Design System" section in the same change.
 

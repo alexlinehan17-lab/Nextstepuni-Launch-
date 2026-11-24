@@ -116,6 +116,8 @@ function pdfjsResources(): Plugin {
 // Only lazy chunks may be listed: bootPrecacheGuard() fails the build if
 // the app shell imports one of them.
 const PRECACHE_IGNORES = [
+  // /design is a standalone review page (public/design), not part of the app.
+  '**/design/**',
   '**/pdf.worker*.js', '**/vendor-pdfjs*.js', '**/DiagramVault*.js',
   // pdf.js decoders and fonts, fetched by the worker only when a paper
   // needs them (vite.config.ts pdfjsResources).

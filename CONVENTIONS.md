@@ -15,8 +15,9 @@ Stack: React 19 + TypeScript, Vite, Tailwind v3 (PostCSS build, **not** CDN), Fr
 
 Any UI, UX, layout, navigation, motion or dark-mode change starts with `.claude/skills/nsu-design/SKILL.md`. It is
 the single design system for iPhone, iPad and desktop: spacing, type, the four dark surfaces, radius, button levels,
-Back / Close / Cancel / Leave, sheets and pickers, safe areas, motion. The code-level audit it was written from, and
-the review page shown to the owner, are in `docs/design/system-2026-11/` (`AUDIT.md`, `index.html`).
+Back / Close / Cancel / Leave, sheets and pickers, safe areas, motion. The code-level audit it was written from
+is `docs/design/system-2026-11/AUDIT.md`; the review page shown to the owner is `public/design/` (live at `/design`,
+noindex, excluded from the service worker and precache).
 
 **Status:** the recommended direction ("Paper & Ink" — the Kobra language of login and onboarding) is **not yet
 approved**. Rules marked ⚑ in the skill depend on that decision. Until it is made, §2, §3 and §5 below and CLAUDE.md's

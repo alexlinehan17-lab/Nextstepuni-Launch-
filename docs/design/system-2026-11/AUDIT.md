@@ -1,6 +1,6 @@
 # App-wide UI/UX audit against `nsu-design` — November 2026
 
-Companion to the review page in this folder (`index.html`, published privately as an artifact) and
+Companion to the review page at `public/design/` (live at nextstepuni.com/design) and
 the skill at `.claude/skills/nsu-design/`. This file holds the code-level findings the
 implementation phases work from.
 
