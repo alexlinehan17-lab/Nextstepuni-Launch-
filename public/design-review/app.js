@@ -715,7 +715,7 @@
     var sessions = sessionsFor(st.period, st.subject, s);
     var active = s.filter(function (v) { return v > 0; }).length;
     var set = function (key, html) { all(pane, '[data-c="' + key + '"]').forEach(function (n) { n.innerHTML = html; }); };
-    set('ctx', p.label + ' · ' + st.subject.replace('&', '&amp;'));
+    set('ctx', p.label + ' · ' + st.subject.replace(/&/g, '&amp;'));
     set('unit', p.unit);
     set('time', hm(total));
     set('timenote', total
@@ -742,7 +742,7 @@
       var top = rows[0].v || 1, allTotal = sum(p.all);
       bars.innerHTML = rows.filter(function (r) { return r.v > 0; }).map(function (r) {
         var dim = st.subject !== 'All subjects' && st.subject !== r.name;
-        return '<div class="c-progress-brow' + (dim ? ' dim' : '') + '"><span class="t-h3">' + r.name.replace('&', '&amp;') +
+        return '<div class="c-progress-brow' + (dim ? ' dim' : '') + '"><span class="t-h3">' + r.name.replace(/&/g, '&amp;') +
           '</span><span class="t-read">' + plain(r.v) + '</span><div class="c-progress-track"><i style="width:' +
           Math.max(3, Math.round(100 * r.v / top)) + '%"></i></div></div>';
       }).join('');
