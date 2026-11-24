@@ -1,3 +1,6 @@
+> **Reference only — not an active skill.** Written by a parallel session in November 2026; the canonical
+> design skill is the one the other session ships. Kept for its research and rules.
+
 ---
 name: nsu-design
 description: The Nextstepuni product-design system — one design language for iPhone, iPad and desktop. Use BEFORE any UI, UX, layout, styling, navigation, motion, dark-mode or "make this look/feel better" work on the app or site, and when reviewing or auditing a screen. Defines spacing, type, colour and dark tokens, radius, cards, buttons, Back/Close/Cancel/Exit, navigation, sheets, dropdowns, states, touch targets, safe areas, icons, characters, motion, and how mobile differs from desktop.
