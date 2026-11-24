@@ -30,7 +30,8 @@ import { fileURLToPath } from 'node:url';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
 /** Directories inside each native web root that must not ship. */
-const PRUNE = ['exam-figures'];
+// `design-review` is the founder's design-system review page: a web-only document.
+const PRUNE = ['exam-figures', 'design-review'];
 
 /** Where each platform keeps its copy of dist/. Missing platforms are skipped. */
 const WEB_ROOTS = [
