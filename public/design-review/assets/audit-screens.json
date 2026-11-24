@@ -1,0 +1,2333 @@
+[
+{
+"area": "Core student loop",
+"screen": "Bottom tab bar",
+"class": 2,
+"why": "Works and clears the home indicator. Labels are tiny, the marker is the old orange, and six pages light no tab.",
+"issue": null,
+"file": "App.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Minimised study timer",
+"class": 2,
+"why": "A good idea: the session follows you round the app. On the island it sits on top of the bottom bar.",
+"issue": null,
+"file": "components/study/StudyMiniTimer.tsx"
+},
+{
+"area": "Other",
+"screen": "Offline message",
+"class": 3,
+"why": "Two different offline messages appear at once, both at the very top under the status bar and Dynamic Island.",
+"issue": null,
+"file": "components/OfflineBanner.tsx"
+},
+{
+"area": "Other",
+"screen": "Small pop-up messages (toasts)",
+"class": 3,
+"why": "They cover the tab bar, use tinted fills and small text, and the close button is too small to tap easily.",
+"issue": null,
+"file": "components/Toast.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Achievement message",
+"class": 2,
+"why": "Pops up in the top-left corner, across the status bar and Dynamic Island.",
+"issue": null,
+"file": "components/AchievementToast.tsx"
+},
+{
+"area": "Other",
+"screen": "Loading screen (Star Crew)",
+"class": 1,
+"why": "One loader everywhere: a Star Crew character, a short line and three dots. It never fakes progress.",
+"issue": null,
+"file": "components/LoadingSpinner.tsx"
+},
+{
+"area": "Sign-in and onboarding",
+"screen": "Legal agreement (“Before you begin”)",
+"class": 2,
+"why": "One clear job, clear of the status bar. Sign out and Need help are bare small text; the orange is its own.",
+"issue": null,
+"file": "components/legal/LegalAgreementGate.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Home",
+"class": 3,
+"why": "Keep the look. Three screens long; Today’s plan comes last under an empty gap and shows a lighter patch in dark mode.",
+"device": "Only the order and spacing on a phone need work",
+"issue": 15,
+"file": "components/KnowledgeTree.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "First-visit tour",
+"class": 3,
+"why": "The third step points at something phones do not have, then closes itself after a few seconds.",
+"issue": null,
+"file": "components/FirstVisitCoachMarks.tsx"
+},
+{
+"area": "Account and settings",
+"screen": "Account sheet",
+"class": 3,
+"why": "The only way to settings on a phone: a long grey list, a dead drag handle, and Log Out out of sight.",
+"issue": null,
+"file": "components/UserProfileMenu.tsx"
+},
+{
+"area": "Account and settings",
+"screen": "Notifications (“You’ve got post”)",
+"class": 3,
+"why": "A laptop panel dropped inside the account sheet: a list scrolling inside a list, very small text, a small close button.",
+"issue": null,
+"file": "components/NotificationBell.tsx"
+},
+{
+"area": "Other",
+"screen": "Site guide",
+"class": 3,
+"why": "A centred card whose top edge and close button reach up into the status bar, in colours of its own.",
+"issue": null,
+"file": "components/SiteGuide.tsx"
+},
+{
+"area": "Other",
+"screen": "Feedback sheet",
+"class": 2,
+"why": "The best-built pop-up in the app: moves for the keyboard and clears both edges. Only small text and private colours to fix.",
+"issue": null,
+"file": "components/FeedbackModal.tsx"
+},
+{
+"area": "Account and settings",
+"screen": "Settings",
+"class": 2,
+"why": "Restyled recently and clear of the status bar. The close button is slightly small.",
+"issue": null,
+"file": "components/SettingsModal.tsx"
+},
+{
+"area": "Other",
+"screen": "Search palette",
+"class": 4,
+"why": "Opens only from a keyboard shortcut, so on a phone it does not exist at all.",
+"device": "Works on a laptop keyboard",
+"issue": null,
+"file": "components/CommandPalette.tsx",
+"reach": "No button opens it on a phone"
+},
+{
+"area": "Other",
+"screen": "Keyboard shortcuts card",
+"class": 2,
+"why": "Keyboard-only content. Nothing opens it on a phone, which is right; hide it on touch screens.",
+"device": "Good on a laptop",
+"issue": null,
+"file": "components/ShortcutsOverlay.tsx",
+"reach": "Keyboard only"
+},
+{
+"area": "Core student loop",
+"screen": "Study set-up (“The Study Room”)",
+"class": 3,
+"why": "Start Session sits about two screens below the choices. When off, it does not respond and gives one small line of help.",
+"issue": 6,
+"file": "components/study/StudySessionSetup.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Edit to-dos",
+"class": 2,
+"why": "A small pop-up that works. When the list is long its top edge can reach the status bar.",
+"issue": null,
+"file": "components/study/SessionTodos.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Journey Points explainer (first visit)",
+"class": 2,
+"why": "Clear content. It is a card pinned near the top of the screen where a sheet from the bottom belongs.",
+"issue": null,
+"file": "components/PointsExplainer.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Study journal",
+"class": 2,
+"why": "The content is fine. The card starts close to the top of the screen, near the status bar.",
+"issue": null,
+"file": "components/StudyJournalModal.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Running timer",
+"class": 1,
+"why": "You like this screen. Controls clear the Dynamic Island and are big enough. Only the orange dot beside the subject is questioned.",
+"issue": 7,
+"file": "components/study/StudySessionTimer.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Leave-session sheet",
+"class": 2,
+"why": "A sheet from the bottom whose buttons sit too close to the home indicator, with a thin gap at the sides.",
+"issue": null,
+"file": "components/study/StudySessionView.mobile.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Pause screen",
+"class": 2,
+"why": "You like it. The sound button sits at the very top, under the Dynamic Island, and cannot be tapped properly.",
+"issue": 2,
+"file": "components/study/StudyBreak.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Breathing guide",
+"class": 1,
+"why": "Calm and distinctive, and its controls sit clear of the Dynamic Island.",
+"issue": null,
+"file": "components/study/StudyBreak.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Time’s up",
+"class": 2,
+"why": "Nothing keeps the page clear of the status bar, and its black is a shade of its own.",
+"issue": null,
+"file": "components/study/StudyTimeUp.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Strategy picker (“What helped you focus?”)",
+"class": 1,
+"why": "One paper card, large rows, clear of both screen edges, and a button that names what is missing.",
+"issue": null,
+"file": "components/study/StrategyPickerStep.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Debrief and study receipt",
+"class": 2,
+"why": "The receipt stays exactly as it is. On a phone it sits hidden below the form.",
+"issue": null,
+"file": "components/study/StudySessionFinish.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Topic time card",
+"class": 2,
+"why": "The card starts close to the top of the screen and its number boxes are fiddly.",
+"issue": null,
+"file": "components/study/TopicTimeCard.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Quiz invitation",
+"class": 2,
+"why": "A laptop card shrunk to fit, with a small close button and yet another card style.",
+"issue": null,
+"file": "components/study/StudyQuizInvitation.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Session saved",
+"class": 2,
+"why": "Nothing keeps the page clear of the status bar, and its black is a shade of its own.",
+"issue": null,
+"file": "components/study/StudySessionSaved.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "My Progress: Overview",
+"class": 4,
+"why": "Nearly five screens long, boxes touching each other, a section menu that does nothing when tapped, and labels too small to read.",
+"issue": 4,
+"file": "components/DashboardView.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "My Progress: Study",
+"class": 4,
+"why": "The same crowded frame, plus a chart wider than the screen and a form panel in yet another style.",
+"issue": null,
+"file": "components/DashboardView.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "My Progress: Confidence and Practice",
+"class": 3,
+"why": "Shorter, but built from the same crowded parts. Chart detail only shows with a mouse.",
+"issue": null,
+"file": "components/DashboardView.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "My Progress: Milestones (“The work adds up”)",
+"class": 3,
+"why": "The box touches the section menu above it with no gap, and the first card alone is most of a screen tall.",
+"issue": 4,
+"file": "components/dashboard/progress/ProgressMilestones.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Topic learning record",
+"class": 3,
+"why": "A long form inside a card that starts close to the top of the screen.",
+"issue": null,
+"file": "components/topics/TopicDetailCard.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Achievement gallery and badge pop-up",
+"class": 2,
+"why": "The stamps are excellent. Some of the text is too small.",
+"issue": null,
+"file": "components/AchievementGallery.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Insights",
+"class": 2,
+"why": "A proper phone layout that leads with a black card, but nothing on a phone links to it.",
+"issue": null,
+"file": "components/InsightsView.tsx",
+"reach": "No button opens it on a phone"
+},
+{
+"area": "Core student loop",
+"screen": "Study Passport",
+"class": 3,
+"why": "Rainbow stamp colours, lock icons on rows you can open, small two-column text, and a filter unlike the approved bar.",
+"issue": null,
+"file": "components/StudyPassportModal.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Rank-up screen",
+"class": 4,
+"why": "A laptop page that only wraps: the close button is under the status bar and Continue is a long scroll away.",
+"issue": null,
+"file": "components/RankUpModal.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Streak celebration",
+"class": 3,
+"why": "In dark mode the heading is near-black on near-black, and the button sits too close to the home indicator.",
+"issue": null,
+"file": "components/StreakCelebration.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Planner",
+"class": 3,
+"why": "No phone layout: the main button sits below the whole week. Only the arrangement needs to change.",
+"issue": null,
+"file": "components/launchpad/PlannerWorkbench.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "War Room",
+"class": 2,
+"why": "Built for phones. Each pop-up has two ways out.",
+"issue": null,
+"file": "components/WarRoom.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Island (Journey tab)",
+"class": 3,
+"why": "Two bottom bars stacked, small buttons in the top bar, and no back control.",
+"issue": 8,
+"file": "components/journey/JourneyView.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Island: building",
+"class": 3,
+"why": "The build drawer takes over half the screen, with very small text and buttons too small to tap easily.",
+"issue": null,
+"file": "components/journey/BuildDrawer.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Island welcome pop-up",
+"class": 4,
+"why": "Runs into the screen’s top corners. Close is under the Dynamic Island and the main button is off the bottom.",
+"issue": 3,
+"file": "components/journey/JourneyWelcome.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Island pop-ups (fieldbook, points, tile, treasure, visitor, your year)",
+"class": 3,
+"why": "One laptop pop-up reused for seven jobs: it starts close to the top of the screen and its close button is small.",
+"issue": null,
+"file": "components/journey/paper/MapControls.tsx"
+},
+{
+"area": "Core student loop",
+"screen": "Visiting a classmate’s island",
+"class": 2,
+"why": "Fine. It will follow whatever the island’s bottom bar becomes.",
+"issue": null,
+"file": "components/journey/year/ClassmateIsland.tsx"
+},
+{
+"area": "Learning modules",
+"screen": "Modules overview",
+"class": 2,
+"why": "A real phone layout. The header covers the first strip of content.",
+"issue": null,
+"file": "components/ModulesView.tsx"
+},
+{
+"area": "Learning modules",
+"screen": "Module list for one world",
+"class": 3,
+"why": "Several screens of tall, repetitive cards, and the header has no title.",
+"issue": null,
+"file": "components/AppRouter.tsx"
+},
+{
+"area": "Learning modules",
+"screen": "Module reader",
+"class": 2,
+"why": "Reads well on a phone. Back and Continue scroll away with the page.",
+"issue": null,
+"file": "components/ModuleLayout.tsx"
+},
+{
+"area": "Learning modules",
+"screen": "Reader pop-ups and notes",
+"class": 2,
+"why": "They ignore the status bar at the top and use two different close buttons.",
+"issue": null,
+"file": "components/ModuleLayout.tsx"
+},
+{
+"area": "Learning modules",
+"screen": "Module pages (54 modules)",
+"class": 3,
+"why": "Twenty coloured side stripes, text shrunk beyond reading, and three-column grids squeezed onto a phone.",
+"issue": null,
+"file": "components/*Module.tsx"
+},
+{
+"area": "Learning modules",
+"screen": "Subject modules (29)",
+"class": 2,
+"why": "Plain, even text inside the same reader.",
+"issue": null,
+"file": "components/SubjectModule.tsx"
+},
+{
+"area": "Learning modules",
+"screen": "Module complete",
+"class": 2,
+"why": "Nothing keeps it clear of the status bar, and the orange is off brand.",
+"issue": null,
+"file": "components/ModuleCompleteScreen.tsx"
+},
+{
+"area": "Learning modules",
+"screen": "Learning Paths",
+"class": 3,
+"why": "The main action is small plain text, arrows only show with a mouse, and it uses four accent colours including purple.",
+"issue": null,
+"file": "components/LearningPathsView.tsx"
+},
+{
+"area": "Learning modules",
+"screen": "Year Plans",
+"class": 3,
+"why": "A copy of Learning Paths plus a pill badge and two card styles. Your own year is not first.",
+"issue": null,
+"file": "components/YearPlansView.tsx"
+},
+{
+"area": "Learning modules",
+"screen": "“Coming soon” for Junior Cycle",
+"class": 2,
+"why": "A sparkle icon in a tinted tile, and Back drawn as a large orange button.",
+"issue": null,
+"file": "components/JCComingSoon.tsx"
+},
+{
+"area": "Account and settings",
+"screen": "Your setup",
+"class": 2,
+"why": "Holds up on a phone, but says its title three times and shows subjects as a laptop table.",
+"issue": null,
+"file": "components/setup/YourSetupView.tsx"
+},
+{
+"area": "Account and settings",
+"screen": "North Star editor",
+"class": 3,
+"why": "Save scrolls away under eighteen tiles and is off with no reason given. Two titles and tinted cards.",
+"issue": null,
+"file": "components/NorthStarEditModal.tsx"
+},
+{
+"area": "Account and settings",
+"screen": "Change subjects",
+"class": 4,
+"why": "Sixty-two subjects in one column with no search, in a card near the status bar. A stray tap outside loses the edits.",
+"issue": null,
+"file": "components/ChangeSubjectsModal.tsx"
+},
+{
+"area": "Account and settings",
+"screen": "Year transition",
+"class": 3,
+"why": "Clear, but hand-built: a sparkle icon, a small close button, and Not yet sits too close to the home indicator.",
+"issue": null,
+"file": "components/YearTransitionFlow.tsx"
+},
+{
+"area": "Other",
+"screen": "My Direction",
+"class": 3,
+"why": "The back button sits under the status bar, the dark colours are its own, and nothing in the app links to it.",
+"issue": null,
+"file": "components/MyDirection.tsx",
+"reach": "No link in the app opens it"
+},
+{
+"area": "Other",
+"screen": "References",
+"class": 2,
+"why": "Already a list-then-detail page on a phone. Needs a smaller top, no pill badges and bigger tabs.",
+"issue": null,
+"file": "components/AccreditationPage.tsx"
+},
+{
+"area": "Other",
+"screen": "Content verification log",
+"class": 3,
+"why": "Its own back button, pill badges, a coloured side stripe and small text, in light colours only.",
+"issue": null,
+"file": "components/CutContentPage.tsx",
+"reach": "Typed web address only"
+},
+{
+"area": "Other",
+"screen": "Workshop (parked tools)",
+"class": 3,
+"why": "A simple list with a small back button and a pill badge. Its title disappears in dark mode.",
+"issue": null,
+"file": "components/WipTools.tsx",
+"reach": "Typed web address only"
+},
+{
+"area": "Sign-in and onboarding",
+"screen": "Set a new password (forced)",
+"class": 3,
+"why": "Ignores the sign-in design: an old rounded orange button, a field that makes the phone zoom, and no way out.",
+"issue": null,
+"file": "components/AppRouter.tsx"
+},
+{
+"area": "Learning modules",
+"screen": "Module not found",
+"class": 2,
+"why": "A pill-shaped Go Back button, and the raw error message is shown to the student.",
+"issue": null,
+"file": "components/AppRouter.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Launchpad: tool list",
+"class": 2,
+"why": "Already a phone list with search and tabs. A sorting slip puts Coursework Studio first; arrows and row heights are its own.",
+"issue": null,
+"file": "components/InnovationZone.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Launchpad: the bar on every tool",
+"class": 3,
+"why": "The bar you like. Its small line is too tiny to read, wording varies by tool, and tools repeat the title beneath.",
+"issue": 9,
+"file": "components/InnovationZone.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Launchpad: black card on a first visit",
+"class": 3,
+"why": "Repeats the line, title and picture already shown in the bar directly above it. Remove on phones.",
+"issue": 9,
+"file": "components/launchpad/ToolMasthead.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Launchpad: no search results",
+"class": 1,
+"why": "A ruled block, one serif line and one reset link.",
+"issue": null,
+"file": "components/InnovationZone.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Launchpad: tool loading and tool crash",
+"class": 2,
+"why": "The crash screen has its own orange button and prints the raw error message.",
+"issue": null,
+"file": "components/InnovationZone.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Future Finder: introduction",
+"class": 2,
+"why": "A clean single column with a clear main button, but it shows a second title and a second copy of the icon.",
+"issue": 13,
+"file": "components/FutureFinderPaper.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Future Finder: question",
+"class": 2,
+"why": "The best screen in the tool. The orange selection mark is static, and the three-step strip sits out of line.",
+"issue": 13,
+"file": "components/FutureFinderPaper.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Future Finder: results",
+"class": 3,
+"why": "A profile then ten courses with four actions each. The compare bar sits where the tab bar is.",
+"issue": null,
+"file": "components/FutureFinderPaper.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Future Finder: course detail",
+"class": 3,
+"why": "A long scrolling pop-up in the middle of the screen. On a phone this should be its own page or a sheet.",
+"issue": null,
+"file": "components/FutureFinderPaper.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Future Finder: compare courses",
+"class": 4,
+"why": "A side-by-side table that becomes three stacked lists of fourteen rows inside a pop-up, so nothing can be compared.",
+"issue": null,
+"file": "components/FutureFinderPaper.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Future Finder: “How this works”",
+"class": 1,
+"why": "Three short ruled sections and one close control.",
+"issue": null,
+"file": "components/FutureFinderPaper.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Future Finder: start again",
+"class": 1,
+"why": "Two clear choices.",
+"issue": null,
+"file": "components/FutureFinderPaper.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Future Finder: loading and no results",
+"class": 2,
+"why": "The no-results case is a bare, unstyled line of text.",
+"issue": null,
+"file": "components/FutureFinderPaper.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper Trail: home (“Find your paper”)",
+"class": 3,
+"why": "A large character and a title come before the subject list, then three stacked ways to pick a subject.",
+"issue": null,
+"file": "components/PaperTrail/index.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper Trail: choose your paper",
+"class": 3,
+"why": "The character block takes almost half the first screen, no paper shows without scrolling, and there are eleven button styles.",
+"issue": 11,
+"file": "components/PaperTrail/PaperSelection.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper Trail: all years",
+"class": 2,
+"why": "Year tiles fit a phone. The chosen tile uses the old orange, and the back label changes meaning.",
+"issue": null,
+"file": "components/PaperTrail/PaperSelection.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper Trail: paper and scheme preview",
+"class": 3,
+"why": "A pop-up with three modes and a menu that only offers other routes to the same Open button.",
+"issue": null,
+"file": "components/PaperTrail/PaperDocuments.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper Trail: archive unavailable notice",
+"class": 1,
+"why": "A white card on an ink hairline: no tint, no icon.",
+"issue": null,
+"file": "components/PaperTrail/index.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper Trail: laptop archive",
+"class": 2,
+"why": "Subjects beside the papers. On a sideways iPad it loses its header and keeps the large character.",
+"device": "Laptop and wide iPad only",
+"issue": null,
+"file": "components/PaperTrail/index.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: top bar",
+"class": 3,
+"why": "Three rows that take a quarter of the screen: nine controls in six shapes, pushed to the right.",
+"device": "Not great on a laptop either",
+"issue": 10,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: the page itself",
+"class": 3,
+"why": "The page is shown so small that printed text cannot be read. Zoom is by buttons only, with sideways dragging.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: loading and failed",
+"class": 2,
+"why": "Honest words, but an old grey spinner and chunky orange buttons inside a new-look screen.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: Tools menu",
+"class": 2,
+"why": "New look already. On a phone it is a nearly full-width menu from the top-left that mixes switches with one-off actions.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: Topics and answers panel",
+"class": 2,
+"why": "Designed for a phone with large buttons, but it sits too close to the home indicator and other panels land on it.",
+"issue": null,
+"file": "components/PaperTrail/MobileQuestionTools.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: question workspace",
+"class": 2,
+"why": "A column beside the paper that holds the phone panel under a large heading, mostly empty.",
+"device": "iPad and laptop only",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: Topic and Mark scheme tags",
+"class": 3,
+"why": "Tiny text, an orange side stripe, and too small to tap on a touch iPad.",
+"device": "iPad and laptop only",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: command-word highlights",
+"class": 2,
+"why": "Distinctive and quiet. On a phone the thing to tap is the printed word itself, which is tiny.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: marking scheme reveal",
+"class": 3,
+"why": "The flagship moment sits in a hand-built sheet: a fake handle, small controls, and a top that can reach the Dynamic Island.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: mark yourself",
+"class": 3,
+"why": "Five small score buttons and pill labels. The buttons stay white on the dark sheet.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: same topic in other years",
+"class": 3,
+"why": "On the dark sheet the title and rows are near-black and unreadable. The forward arrow is a back arrow turned round.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: command-word decoder",
+"class": 3,
+"why": "The same hand-built sheet and unreadable dark text, plus a tinted box with an orange side stripe.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: Triage",
+"class": 3,
+"why": "The same sheet. Rating buttons are small and stay white in dark mode, with one stacked card for every question.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: Full Loop bar",
+"class": 3,
+"why": "A floating card at the bottom that covers the question panel, with three button styles and a tiny close.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: Full Loop resume card",
+"class": 3,
+"why": "The same floating card appears uninvited over the paper each time it is reopened, until dismissed.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: Full Loop summary and receipt",
+"class": 2,
+"why": "The receipt is worth keeping. Old pill buttons, a side-stripe box, and Escape closes the whole viewer.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: exam clock",
+"class": 3,
+"why": "A floating clock that lands on the question panel. Its digits are near-black on dark and its buttons are tiny.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: Attempt first (answer desk)",
+"class": 4,
+"why": "A side-by-side desk squeezed into the bottom half: the paper keeps a sliver, text is tiny, and the keyboard is ignored.",
+"issue": null,
+"file": "components/PaperTrail/AnswerDesk.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: write on the paper",
+"class": 3,
+"why": "On a phone the pen tools live in the panel you must close to write, and the tool buttons are small.",
+"device": "The right idea on an iPad",
+"issue": null,
+"file": "components/PaperTrail/AnswerInk.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: answer desk, closed",
+"class": 2,
+"why": "A bar pressed against the bottom edge with no room for the home indicator, and a very thin drag strip.",
+"issue": null,
+"file": "components/PaperTrail/answer-desk.css"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: status messages",
+"class": 1,
+"why": "Clean messages and a hairline notice, lifted clear of the home indicator.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: French recording strip",
+"class": 2,
+"why": "A white strip under the top bar that stays white in dark mode.",
+"issue": null,
+"file": "components/PaperTrail/FrenchPaperAudio.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper viewer: unsaved work warning",
+"class": 2,
+"why": "A plain browser warning box, outside the app’s design.",
+"issue": null,
+"file": "components/PaperTrail/Viewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper Trail: picture viewer (maps and photos)",
+"class": 3,
+"why": "The same job as the paper viewer with a different, older bar: bare small icons and different type.",
+"issue": null,
+"file": "components/PaperTrail/ImageViewer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper and scheme crops",
+"class": 1,
+"why": "Trims to the printed ink and redraws when the screen changes. Only its failure line needs restyling.",
+"issue": null,
+"file": "components/PaperTrail/CropView.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper Trail: saved papers",
+"class": 2,
+"why": "A clean list with large rows, but two back controls on screen at once.",
+"issue": null,
+"file": "components/PaperTrail/index.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Paper Trail: milestone celebration",
+"class": 3,
+"why": "An emoji badge, confetti, a heavy shadow and old pill buttons. Breaks the no-emoji rule.",
+"issue": null,
+"file": "components/PaperTrail/MilestoneCelebration.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Topic Atlas: Politics practice tasks",
+"class": 2,
+"why": "Plain and usable. Twenty full tasks to a page, in a control style of its own.",
+"issue": null,
+"file": "components/PaperTrail/PoliticsTopicFeed.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Topic Atlas: PE task card",
+"class": 2,
+"why": "A card that stays white in dark mode, with its own orange and slightly small buttons.",
+"issue": null,
+"file": "components/PaperTrail/PhysicalEducationTaskCard.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank: library",
+"class": 4,
+"why": "The laptop’s three columns stacked: Start comes after every topic row, with no progress, recents or way to see questions.",
+"issue": 14,
+"file": "components/MarkBank/MarkBankLibrary.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank: loading, failed and empty",
+"class": 1,
+"why": "Placeholder rows, a hairline error row with Try again, and a plain No topics found.",
+"issue": null,
+"file": "components/MarkBank/MarkBankLibrary.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank session: the frame",
+"class": 3,
+"why": "A laptop pop-up shrunk onto the phone: a tall heading and footer never fold away, leaving half the screen for the question.",
+"issue": null,
+"file": "components/MarkBank/SessionScreen.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank session: the question",
+"class": 2,
+"why": "Reads like the printed paper, the best type in the product. Small labels need raising.",
+"issue": null,
+"file": "components/MarkBank/SessionScreen.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank session: your answer and Ways In",
+"class": 2,
+"why": "Clear, but the Ways In button and the reveal button look the same.",
+"issue": null,
+"file": "components/MarkBank/SessionScreen.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank session: Ways In panel",
+"class": 2,
+"why": "Has phone rules and large buttons. Its orange-underline tabs are a fourth tab style, and much of the text is tiny.",
+"issue": null,
+"file": "components/MarkBank/WaysInPanel.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank session: choose your route",
+"class": 1,
+"why": "Uses the approved selection bar, and the button says why the reveal is waiting.",
+"issue": null,
+"file": "components/MarkBank/SessionScreen.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank session: claiming marks",
+"class": 2,
+"why": "The signature interaction, and it works in one column. Mark buttons and option rows are too small to tap comfortably.",
+"issue": null,
+"file": "components/MarkBank/SessionScreen.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank session: no scheme and review states",
+"class": 1,
+"why": "Plain statements in a neutral border, in the card’s own words. Nothing decorative.",
+"issue": null,
+"file": "components/MarkBank/SessionScreen.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank session: reveal and grade buttons",
+"class": 3,
+"why": "Every button has the same pale outline, so no main action. The footer is tall, and a different black in dark mode.",
+"issue": null,
+"file": "components/MarkBank/SessionScreen.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank session: leave session?",
+"class": 2,
+"why": "Good words and shared buttons, but the app calls the same thing practice, review and session.",
+"issue": null,
+"file": "components/MarkBank/SessionScreen.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank: session complete",
+"class": 2,
+"why": "Short and clear. A peach tile that ignores dark mode, two different buttons side by side, and two back controls.",
+"issue": null,
+"file": "components/MarkBank/MarkBank.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank session: study review and end-of-session quiz",
+"class": 2,
+"why": "The same session with a banner and Skip or Next. Close jumps to the summary without asking.",
+"issue": null,
+"file": "components/MarkBank/SessionScreen.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank: starting-point check, choose topics",
+"class": 2,
+"why": "Search, a checklist and a pinned footer suit a phone. Two controls do the same close.",
+"issue": null,
+"file": "components/MarkBank/StartingPointCheck.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank: starting-point check, your next step",
+"class": 2,
+"why": "An honest, plain result list with the same doubled close.",
+"issue": null,
+"file": "components/MarkBank/StartingPointCheck.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank marking: shared claim rows",
+"class": 2,
+"why": "One row style across subjects that stacks on a phone. Step buttons are small, and two subjects select in orange.",
+"issue": null,
+"file": "components/MarkBank/ClaimRows.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank marking: PCLM, Irish and Geography",
+"class": 2,
+"why": "Several screens long, with small guidance text and small mark buttons.",
+"issue": null,
+"file": "components/MarkBank/SessionScreen.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank marking: French-family grid",
+"class": 2,
+"why": "Large steppers were added for phones. Orange chosen faces and orange focus rings break two of your rules.",
+"issue": null,
+"file": "components/MarkBank/FrenchRubricPanel.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank marking: language rubric",
+"class": 3,
+"why": "Looks unstyled beside the others: an odd heading, greys that ignore dark mode, raw tick boxes and long paragraphs.",
+"issue": null,
+"file": "components/MarkBank/LanguageRubricPanel.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank marking: History essay",
+"class": 2,
+"why": "A thoughtful stacked ladder. Paragraph and counter buttons are small.",
+"issue": null,
+"file": "components/MarkBank/HistoryEssayPanel.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank marking: Art",
+"class": 2,
+"why": "Shared rows. The band text is small.",
+"issue": null,
+"file": "components/MarkBank/ArtRubricPanel.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank marking: Maths scale",
+"class": 2,
+"why": "Large rows suit a phone. The chosen row is a fixed grey that does not follow dark mode.",
+"issue": null,
+"file": "components/MarkBank/MathematicsScalePanel.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank marking: Applied Maths steps",
+"class": 2,
+"why": "Scheme crops for each step are right. Orange chosen credit, and two bare number boxes per step.",
+"issue": null,
+"file": "components/MarkBank/AppliedMathematicsRubricPanel.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank marking: Accounting whole task",
+"class": 2,
+"why": "Three large controls. The number box is filled orange, a third meaning for orange.",
+"issue": null,
+"file": "components/MarkBank/AccountingAssessment.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank: figure zoom",
+"class": 1,
+"why": "Built for the phone: full screen, clear of both edges, pinch and double-tap.",
+"issue": null,
+"file": "components/MarkBank/FigureZoom.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank: source material reader",
+"class": 2,
+"why": "Full screen and clear of both edges. Its controls shrink on a phone, and it adds four more oranges.",
+"issue": null,
+"file": "components/MarkBank/SourceMaterialReader.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank: Maths worked solution",
+"class": 3,
+"why": "A third picture viewer with its own look: it ignores the screen edges, is white only, and zooms to one fixed size.",
+"issue": null,
+"file": "components/MarkBank/MathematicsWorkedSolution.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank: audio and video players",
+"class": 1,
+"why": "The phone’s own players, kept on purpose so scrubbing and VoiceOver work.",
+"issue": null,
+"file": "components/MarkBank/AudioSourcePlayer.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Mark Bank: ruler (“Measure in cm”)",
+"class": 2,
+"why": "Two taps place the ends, so touch works. No magnifier under the finger, and the switch is small text.",
+"issue": null,
+"file": "components/MarkBank/PdfRuler.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Listening Studio: front page",
+"class": 2,
+"why": "Approved look with phone rules. Leave scrolls away, the paper sits under a tall wall, and dark mode loses the sheet’s edge.",
+"issue": null,
+"file": "components/ListeningStudio/index.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Listening Studio: all subjects",
+"class": 1,
+"why": "One column of large tiles, a strong charcoal chosen state, and one labelled way back.",
+"issue": null,
+"file": "components/ListeningStudio/index.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Listening Studio: answering",
+"class": 3,
+"why": "The recording, its skip buttons and Leave scroll off the top while you answer. Nothing stays pinned.",
+"issue": null,
+"file": "components/ListeningStudio/StudioSitting.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Listening Studio: marking",
+"class": 3,
+"why": "The total and Save sit above a long list of schemes, and the page does not jump back up to them.",
+"issue": null,
+"file": "components/ListeningStudio/StudioSitting.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Listening Studio: saved",
+"class": 1,
+"why": "One status line, one next step, one way back.",
+"issue": null,
+"file": "components/ListeningStudio/StudioSitting.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Listening Studio: leave this sitting?",
+"class": 2,
+"why": "Honest about lost answers. Stay and Leave look identical, and the box appears away from the button you tapped.",
+"issue": null,
+"file": "components/ListeningStudio/StudioSitting.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Listening Studio: loading and error states",
+"class": 1,
+"why": "Plain sentences, a retry button, and a link to the official recording when the app has no copy.",
+"issue": null,
+"file": "components/ListeningStudio/index.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Topic Atlas: topic map",
+"class": 3,
+"why": "One long list of every topic at both levels: 29 rows for a typical subject, 199 for English, with no level filter.",
+"issue": null,
+"file": "components/PaperTrail/ReviseByTopic.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Topic Atlas: every question on a topic",
+"class": 4,
+"why": "Every question as a full card in one endless column: usually 20 to 50 cards, sometimes over 300. The app’s longest page.",
+"issue": null,
+"file": "components/PaperTrail/ReviseByTopic.tsx"
+},
+{
+"area": "Exam tools",
+"screen": "Topic Atlas: question card",
+"class": 3,
+"why": "The real paper crop with its scheme is the signature, but the card stays white in dark mode and has small buttons.",
+"issue": null,
+"file": "components/PaperTrail/VaultQuestionCard.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Examiner’s Chair: home",
+"class": 3,
+"why": "Twenty-seven subject cards in one column, about four screens, with an emoji streak and five card styles.",
+"issue": null,
+"file": "components/ExaminersChair/index.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Examiner’s Chair: pen ink menu",
+"class": 2,
+"why": "A small menu that does not close when you tap outside it, with small buttons and small text.",
+"issue": null,
+"file": "components/ExaminersChair/index.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Examiner’s Chair: subject",
+"class": 2,
+"why": "A clean numbered list. The level switch is small, and a second, tiny back link sits under the main one.",
+"issue": null,
+"file": "components/ExaminersChair/index.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Examiner’s Chair: session intro",
+"class": 2,
+"why": "Three stacked full-width buttons in three colours. The scheme table scrolls sideways inside its card.",
+"issue": null,
+"file": "components/ExaminersChair/index.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Examiner’s Chair: mark a script",
+"class": 3,
+"why": "The whole task is tapping small tags. Confirm marks is at the very end, and two back controls mean different things.",
+"issue": null,
+"file": "components/ExaminersChair/index.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Examiner’s Chair: reveal",
+"class": 3,
+"why": "Dense small notes, red side-stripe comments, and a tilted stamp crowding the heading.",
+"issue": null,
+"file": "components/ExaminersChair/index.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Examiner’s Chair: session summary",
+"class": 3,
+"why": "Up to seven stacked blocks in six card styles, an emoji, a green side stripe, and Done far below.",
+"issue": null,
+"file": "components/ExaminersChair/index.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Examiner’s Chair: mark your own, write",
+"class": 2,
+"why": "A simple form. The answer box makes the phone zoom and the helper text is small.",
+"issue": null,
+"file": "components/ExaminersChair/index.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Examiner’s Chair: mark your own, self-mark",
+"class": 2,
+"why": "The Earned and Not earned switches are small. Otherwise clear.",
+"issue": null,
+"file": "components/ExaminersChair/index.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Examiner’s Chair: mark your own, result",
+"class": 2,
+"why": "An orange side-stripe box and two half-width buttons in different styles.",
+"issue": null,
+"file": "components/ExaminersChair/index.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Examiner’s Chair: Marker’s Codex",
+"class": 2,
+"why": "Good content. Tinted cards and small Fuzzy and Got it buttons need the shared set.",
+"issue": null,
+"file": "components/ExaminersChair/index.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Examiner’s Chair: where your eye differs",
+"class": 2,
+"why": "Up to twelve cards with red pill badges and small Re-mark tags.",
+"issue": null,
+"file": "components/ExaminersChair/index.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Examiner’s Chair: teacher view",
+"class": 3,
+"why": "A teacher screen reached from a quiet link at the bottom of a student tool, with pill badges on a data list.",
+"issue": null,
+"file": "components/ExaminersChair/index.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Command-Word Reflex: home",
+"class": 2,
+"why": "Built with phone rules. The level switch is small, and there are three ways to pick a subject.",
+"issue": null,
+"file": "components/CommandWordReflex/index.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Subject picker sheet (shared by two tools)",
+"class": 2,
+"why": "A proper sheet from the bottom with search. A small close button and no room for the home indicator.",
+"issue": null,
+"file": "components/launchpad/SubjectPicker.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Command-Word Reflex: spot the word",
+"class": 2,
+"why": "A strong game. The back link and Reveal it link are tiny, and the word highlight only shows with a mouse.",
+"issue": null,
+"file": "components/CommandWordReflex/index.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Command-Word Reflex: reveal",
+"class": 2,
+"why": "A card inside a card leaves a narrow column of text. Old orange, and the next button sits mid-page on the right.",
+"issue": null,
+"file": "components/CommandWordReflex/index.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Catch-Up Lane: home",
+"class": 2,
+"why": "Has phone rules. Ten to 35 lessons in one list, and two different pickers side by side.",
+"issue": null,
+"file": "components/CatchUpLane/index.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Catch-Up Lane: lesson",
+"class": 2,
+"why": "A good four-step card. Pale blue panels ignore dark mode, there is a sparkle icon, and Back is tiny text.",
+"issue": null,
+"file": "components/CatchUpLane/index.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Catch-Up Lane: lesson recovered",
+"class": 2,
+"why": "Fine. Two buttons in two different shapes.",
+"issue": null,
+"file": "components/CatchUpLane/index.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Catch-Up Lane: comeback steps",
+"class": 2,
+"why": "One card per step, well paced. Small name tags, a sparkle, and a blue of its own.",
+"issue": null,
+"file": "components/CatchUpLane/Comeback.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Catch-Up Lane: your first week back",
+"class": 2,
+"why": "A good day-by-day card with three button shapes and two fold-out rows.",
+"issue": null,
+"file": "components/CatchUpLane/Comeback.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Definition Drill: choose a subject",
+"class": 2,
+"why": "The tool’s title is printed a third time. The tiles are fine.",
+"issue": null,
+"file": "components/DefinitionDrill/DefinitionDrill.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Definition Drill: drill card",
+"class": 2,
+"why": "One card at a time, right for a phone. A side-stripe box, a marks pill and a text back link.",
+"issue": null,
+"file": "components/DefinitionDrill/DefinitionDrill.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Definition Drill: deck complete",
+"class": 2,
+"why": "A green tinted card with an orange pill button. A small fix.",
+"issue": null,
+"file": "components/DefinitionDrill/DefinitionDrill.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Diagram Vault: choose a subject",
+"class": 2,
+"why": "The tool’s title is printed again under the header.",
+"issue": null,
+"file": "components/DiagramVault/DiagramVault.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Diagram Vault: subject figures",
+"class": 4,
+"why": "Geography shows 338 figure cards in one column under a row of 271 filter tags, with no search, pages or zoom.",
+"issue": null,
+"file": "components/DiagramVault/DiagramVault.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Answer Architect: choose a subject",
+"class": 2,
+"why": "The tool’s title is printed again under the header.",
+"issue": null,
+"file": "components/AnswerArchitect/AnswerArchitect.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Answer Architect: answer skeletons",
+"class": 3,
+"why": "Up to 35 cards with no filter by year, level or question, each with two side-stripe boxes and boxes inside boxes.",
+"issue": null,
+"file": "components/AnswerArchitect/AnswerArchitect.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "How They Did It: stories home",
+"class": 2,
+"why": "Has a phone layout. Ten more stories stack below, and two buttons are squeezed side by side.",
+"issue": null,
+"file": "components/HowTheyDidIt/index.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "How They Did It: a person’s story",
+"class": 2,
+"why": "The best-paced flow of these tools. Three ways back on the last step, and one sparkle icon.",
+"issue": null,
+"file": "components/HowTheyDidIt/index.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "How They Did It: your playbook",
+"class": 2,
+"why": "A short list. Open card is small text with a typed arrow.",
+"issue": null,
+"file": "components/HowTheyDidIt/index.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Irish Oral Trainer: home",
+"class": 2,
+"why": "Short and clear. Pill badges and small detail text.",
+"issue": null,
+"file": "components/OralExamTrainer.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Irish Oral Trainer: practise a part",
+"class": 2,
+"why": "Fits a phone. Green record and off-colour red stop buttons, and four small readiness buttons in a row.",
+"issue": null,
+"file": "components/OralExamTrainer.tsx",
+"reach": "Hidden from the Launchpad today"
+},
+{
+"area": "Launchpad",
+"screen": "Coursework Studio: frame",
+"class": 3,
+"why": "Its own header under the tool header, doubled side margins, six tabs running off the screen, and two laptop columns stacked.",
+"issue": null,
+"file": "components/CourseworkStudio/CourseworkStudio.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Coursework Studio: first project",
+"class": 2,
+"why": "A good empty state. Three columns of steps are kept at phone width.",
+"issue": null,
+"file": "components/CourseworkStudio/CourseworkStudio.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Coursework Studio: Overview",
+"class": 2,
+"why": "A clear next move. Five different button looks in one tab.",
+"issue": null,
+"file": "components/CourseworkStudio/CourseworkStudio.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Coursework Studio: Evidence",
+"class": 2,
+"why": "Cards fold to one column. The Edit note and Archive buttons are small.",
+"issue": null,
+"file": "components/CourseworkStudio/CourseworkStudio.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Coursework Studio: Connections",
+"class": 2,
+"why": "Readable. The heading row with two buttons wraps.",
+"issue": null,
+"file": "components/CourseworkStudio/CourseworkStudio.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Coursework Studio: Plan",
+"class": 2,
+"why": "A simple checklist with small row buttons.",
+"issue": null,
+"file": "components/CourseworkStudio/CourseworkStudio.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Coursework Studio: Brief",
+"class": 2,
+"why": "Reference text. Fine once the frame is fixed.",
+"issue": null,
+"file": "components/CourseworkStudio/CourseworkStudio.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Coursework Studio: Review",
+"class": 2,
+"why": "A long form with two big answer boxes and Save at the very end.",
+"issue": null,
+"file": "components/CourseworkStudio/CourseworkStudio.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Coursework Studio: editor pop-up",
+"class": 3,
+"why": "A centred laptop pop-up holding forms of up to ten fields, with a small close button, right up to the screen edges.",
+"issue": null,
+"file": "components/CourseworkStudio/CourseworkStudio.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Coursework Studio: import confirmation",
+"class": 2,
+"why": "A small confirm with the same pop-up faults.",
+"issue": null,
+"file": "components/CourseworkStudio/CourseworkStudio.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Coursework Studio: support pop-up",
+"class": 3,
+"why": "Whole multi-step activities, a reader and a second back button packed inside one pop-up.",
+"issue": null,
+"file": "components/CourseworkStudio/CourseworkSupport.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Coursework Studio: LCA not available",
+"class": 2,
+"why": "A plain message with a link out.",
+"issue": null,
+"file": "components/CourseworkStudio/CourseworkStudio.tsx"
+},
+{
+"area": "Other",
+"screen": "Certle: daily question",
+"class": 2,
+"why": "A separate public page with phone rules and large buttons, light only. One of the two audits only skimmed it.",
+"issue": null,
+"file": "components/certle/CertlePage.tsx",
+"reach": "Public web page, not linked from the app"
+},
+{
+"area": "Other",
+"screen": "Certle: how to play, record and share",
+"class": 1,
+"why": "One shared pop-up with a large close button that scrolls inside.",
+"issue": null,
+"file": "components/certle/CertlePage.tsx",
+"reach": "Public web page, not linked from the app"
+},
+{
+"area": "Launchpad",
+"screen": "Points Passport: frame",
+"class": 3,
+"why": "A first visit stacks two black cards before any control, with three tabs plus a hidden More menu.",
+"issue": null,
+"file": "components/PointsPassport.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Points Passport: My subjects",
+"class": 2,
+"why": "Has real phone rules. A four-column row with two menus per subject is dense but works. Tiny headings.",
+"issue": null,
+"file": "components/PointsPassport.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Points Passport: What if?",
+"class": 3,
+"why": "A second tab bar inside the first. The number that reacts is above the fold; the small grade tags are below it.",
+"issue": null,
+"file": "components/CAOPointsSimulator.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Points Passport: Scenarios",
+"class": 3,
+"why": "Edit and clear are tiny, grade tags are small, and the editor opens below three stacked cards without scrolling to it.",
+"issue": null,
+"file": "components/PointsPassport.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Points Passport: Mock Tracker",
+"class": 3,
+"why": "Hidden under More. Chart labels are tiny, the form has 56 small grade tags, and white text sits on orange.",
+"issue": null,
+"file": "components/PointsPassport.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Points Passport: Best Moves",
+"class": 2,
+"why": "A simple ranked list. A pill badge and rainbow subject dots to remove.",
+"issue": null,
+"file": "components/PointsPassport.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Points Passport: remove mock result",
+"class": 2,
+"why": "A proper sheet from the bottom. A small close button and no room for the home indicator.",
+"issue": null,
+"file": "components/ui/ModalFrame.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "College Compass: main page",
+"class": 3,
+"why": "The six-stage picker is drawn below the stage it controls, and tapping it does not scroll back up.",
+"issue": null,
+"file": "components/CollegeCompass.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "College Compass: plain stages",
+"class": 2,
+"why": "Hairline lists that suit a phone. Checklist rows do not look tappable, and the lines nearly vanish in dark mode.",
+"issue": null,
+"file": "components/CollegeCompass.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "College Compass: Lock-In Day",
+"class": 2,
+"why": "One chunky card inside the panel. Fine apart from the box inside a box.",
+"issue": null,
+"file": "components/CollegeCompass.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "College Compass: The Access Window",
+"class": 3,
+"why": "Very long: about thirty things to tap in one stage, in three heavy boxes inside a box, with orange side stripes.",
+"issue": null,
+"file": "components/collegeCompass/HearMeter.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "College Compass: Money Stops",
+"class": 3,
+"why": "Old teal, a sparkle icon, a side stripe and pill badges. Light tints glare in dark mode. The interaction is worth keeping.",
+"issue": null,
+"file": "components/collegeCompass/OpenDoor.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "College Compass: target colleges",
+"class": 2,
+"why": "Thirteen tags showing codes only. The college name appears only with a mouse.",
+"issue": null,
+"file": "components/CollegeCompass.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "College Compass: dates and sources",
+"class": 2,
+"why": "A hand-built centred pop-up where the shared sheet belongs, with a chunky orange button.",
+"issue": null,
+"file": "components/CollegeCompass.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Your Possible Life: What matters",
+"class": 2,
+"why": "A good phone grid. The pinned action row sits under the tab bar, and there is a second header.",
+"issue": null,
+"file": "components/YourPossibleLife.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Your Possible Life: Three possibilities",
+"class": 3,
+"why": "Three tall cards stacked, about two screens: the laptop’s three-across layout folded, not a phone design.",
+"issue": null,
+"file": "components/YourPossibleLife.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Your Possible Life: An ordinary day",
+"class": 3,
+"why": "A huge headline shares a row with a large picture; the only way forward is at the bottom of a long page.",
+"issue": null,
+"file": "components/YourPossibleLife.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Your Possible Life: Your reaction",
+"class": 2,
+"why": "Three journal cards, clear. The action sits at the end, on the right.",
+"issue": null,
+"file": "components/YourPossibleLife.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Your Possible Life: Keep a door open",
+"class": 2,
+"why": "Two cards and a save form that work. Button and field styles are its own.",
+"issue": null,
+"file": "components/YourPossibleLife.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Comeback: What changed",
+"class": 2,
+"why": "Single column with large rows. Continue is pinned under the tab bar, and the chosen row is only a thin outline.",
+"issue": null,
+"file": "components/ComebackEngineV2.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Comeback: Honest week",
+"class": 2,
+"why": "Back is an underlined text link too small to tap, and a green tick is used to mean chosen.",
+"issue": null,
+"file": "components/ComebackEngineV2.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Comeback: Diagnosis",
+"class": 2,
+"why": "A sparkle icon on the main button, Adjust jumps back two steps, and two headings are hard to read in dark mode.",
+"issue": null,
+"file": "components/ComebackEngineV2.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Comeback: Seven-day plan",
+"class": 2,
+"why": "A clear card list with an orange side stripe and a capital-letter badge. Rebuild plan deletes the plan without asking.",
+"issue": null,
+"file": "components/ComebackEngineV2.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Subject Explorer (Junior Cycle): intro",
+"class": 2,
+"why": "Shares the Launchpad layout. Fine on a phone.",
+"issue": null,
+"file": "components/FutureFinder.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Subject Explorer: questions",
+"class": 3,
+"why": "Five word labels squeezed across one row. The chosen one is solid orange, and Back and Next are two different buttons.",
+"issue": null,
+"file": "components/FutureFinder.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Subject Explorer: results",
+"class": 2,
+"why": "A tinted Best fit card with an icon tile, pills and star bullets. Short and readable.",
+"issue": null,
+"file": "components/FutureFinder.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Old Future Finder: senior results",
+"class": 3,
+"why": "Pills everywhere, a small close button, and detail that only shows with a mouse. Retire it.",
+"issue": null,
+"file": "components/FutureFinder.tsx",
+"reach": "Opens from old links only"
+},
+{
+"area": "Launchpad",
+"screen": "Old Future Finder: compare table",
+"class": 4,
+"why": "A laptop table with wide columns that has to be dragged sideways.",
+"issue": null,
+"file": "components/FutureFinder.tsx",
+"reach": "Opens from old links only"
+},
+{
+"area": "Launchpad",
+"screen": "Launchpad: Meet the tools and Help me choose links",
+"class": 2,
+"why": "Two text links, cut a little short on phones.",
+"issue": null,
+"file": "components/LaunchpadGuidance.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Launchpad guide: Meet the tools",
+"class": 2,
+"why": "A real sheet from the bottom. A menu and previous and next arrows do the same job.",
+"issue": null,
+"file": "components/LaunchpadGuidance.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Launchpad guide: Help me choose",
+"class": 2,
+"why": "Closest to good: one question a screen and large rows. Needs room for the home indicator and the shared button.",
+"issue": null,
+"file": "components/LaunchpadGuidance.tsx"
+},
+{
+"area": "Launchpad",
+"screen": "Launchpad: How points work",
+"class": 1,
+"why": "Its own light and dark colours, a large close button, and a clean table that stacks on a phone.",
+"issue": null,
+"file": "components/PointsPanel.tsx"
+},
+{
+"area": "Account and settings",
+"screen": "Subject setup (six steps)",
+"class": 2,
+"why": "A centred card where a sheet belongs. A stray tap outside throws away six steps of entry.",
+"issue": null,
+"file": "components/SubjectOnboarding.tsx"
+},
+{
+"area": "Sign-in and onboarding",
+"screen": "Dive in (after guest setup)",
+"class": 2,
+"why": "One quiet page with one action. Its button and type differ from the onboarding it follows.",
+"issue": null,
+"file": "components/DiveIn.tsx"
+},
+{
+"area": "Sign-in and onboarding",
+"screen": "Sign-in",
+"class": 1,
+"why": "The reference. One job, one charcoal button, clear of the status bar. Two small links are under a comfortable tap size.",
+"issue": null,
+"file": "components/LoginPage.tsx"
+},
+{
+"area": "Sign-in and onboarding",
+"screen": "Create account (four steps)",
+"class": 1,
+"why": "One thing per step, with what you entered carried forward. The school search box makes the phone zoom slightly.",
+"issue": null,
+"file": "components/LoginPage.tsx"
+},
+{
+"area": "Sign-in and onboarding",
+"screen": "School access (staff sign-in)",
+"class": 2,
+"why": "The role choice is two bare dots, and there are two ways back on one screen.",
+"issue": null,
+"file": "components/LoginPage.tsx"
+},
+{
+"area": "Sign-in and onboarding",
+"screen": "Star Crew picker",
+"class": 2,
+"why": "A tall laptop pop-up on a phone. Its close button can reach the status bar, and it has three ways out.",
+"issue": null,
+"file": "components/AccountCard.tsx"
+},
+{
+"area": "Sign-in and onboarding",
+"screen": "Sign-in help (“Where do I find my join code?”)",
+"class": 1,
+"why": "Short and clear. Two close buttons for a three-line note.",
+"issue": null,
+"file": "components/LoginPage.tsx"
+},
+{
+"area": "Sign-in and onboarding",
+"screen": "Onboarding (eight screens)",
+"class": 1,
+"why": "The reference. One question per screen, and a pinned button that says what is missing.",
+"issue": null,
+"file": "components/onboarding/SetupFlow.tsx"
+},
+{
+"area": "Sign-in and onboarding",
+"screen": "Password reset and email-link pages",
+"class": 3,
+"why": "An older design: serif heading, white outlined main button, orange spinner, red errors, and no designed dark mode.",
+"issue": null,
+"file": "components/AuthActionPage.tsx"
+},
+{
+"area": "Admin dashboard",
+"screen": "Admin: header and tabs",
+"class": 4,
+"why": "A laptop header folded into a tall pinned block. Log out sits under the status bar and cannot be tapped.",
+"issue": 1,
+"file": "components/AdminDashboard.tsx"
+},
+{
+"area": "Admin dashboard",
+"screen": "Admin: Overview",
+"class": 3,
+"why": "The content suits a phone and tables already stack, but text is tiny, menus make the phone zoom, and buttons are small.",
+"issue": null,
+"file": "components/AdminDashboard.tsx"
+},
+{
+"area": "Admin dashboard",
+"screen": "Admin: Programme evidence",
+"class": 3,
+"why": "Long sentences in narrow cards, a bar chart with no labels, and a table that has to be dragged sideways.",
+"issue": null,
+"file": "components/AdminProgrammePanel.tsx"
+},
+{
+"area": "Admin dashboard",
+"screen": "Admin: Students",
+"class": 4,
+"why": "Every student is a tall card in one column, with no search, sort or pages. Delete is a small bin on each.",
+"issue": null,
+"file": "components/AdminDashboard.tsx"
+},
+{
+"area": "Admin dashboard",
+"screen": "Admin: Schools and Year groups",
+"class": 2,
+"why": "Tables already become stacked rows. Small text, and it repeats what Overview shows.",
+"issue": null,
+"file": "components/AdminDashboard.tsx"
+},
+{
+"area": "Admin dashboard",
+"screen": "Admin: First run",
+"class": 2,
+"why": "A simple list that suits a phone. Small controls.",
+"issue": null,
+"file": "components/AdminFunnelPanel.tsx"
+},
+{
+"area": "Admin dashboard",
+"screen": "Admin: Feedback inbox",
+"class": 2,
+"why": "Stacks properly and reads well. Tiny labels and a pill inside a pill.",
+"issue": null,
+"file": "components/AdminFeedbackInbox.tsx"
+},
+{
+"area": "Admin dashboard",
+"screen": "Admin: School logins",
+"class": 2,
+"why": "Works loosely. Fields make the phone zoom, buttons are small, and the show-password eye is tiny.",
+"issue": null,
+"file": "components/AdminGcAccessPanel.tsx"
+},
+{
+"area": "Admin dashboard",
+"screen": "Admin: Delete student",
+"class": 2,
+"why": "Fits. The field makes the phone zoom, and a failure shows a plain browser alert.",
+"issue": null,
+"file": "components/AdminDashboard.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: header and navigation",
+"class": 4,
+"why": "No menu at all on a phone, so three sections cannot be reached, and Log Out sits under the status bar.",
+"issue": 1,
+"file": "components/GCDashboard.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: loading placeholder",
+"class": 2,
+"why": "Fine as a placeholder, but it does not match the phone layout it stands in for.",
+"issue": null,
+"file": "components/GCDashboard.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: page header and filters",
+"class": 3,
+"why": "A plain figure is drawn exactly like the two buttons beside it. The filter bar wraps to three lines. Small buttons.",
+"issue": null,
+"file": "components/gc/GCOverview.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Early Warning Signals",
+"class": 3,
+"why": "One-line rows cut off both the student’s name and the reason. Tiny action buttons and tinted rows.",
+"issue": null,
+"file": "components/gc/GCOverview.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: headline figures",
+"class": 3,
+"why": "Three fixed columns leave a sliver of text width in each card.",
+"issue": null,
+"file": "components/gc/GCOverview.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Attention list",
+"class": 2,
+"why": "The one phone-shaped piece: full-width rows you can tap. Needs a second line and the sparkle icon removed.",
+"issue": null,
+"file": "components/gc/GCOverview.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Daily Activity chart",
+"class": 3,
+"why": "Values can only be read with a mouse. There is no scale, and nothing responds to touch.",
+"issue": null,
+"file": "components/gc/GCOverview.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Recently Active",
+"class": 2,
+"why": "Folds to one column and works. Tiny detail text.",
+"issue": null,
+"file": "components/gc/GCOverview.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Exam Calendar",
+"class": 3,
+"why": "Event names appear only with a mouse, weekday labels are tiny, and it repeats Key Dates and the countdown.",
+"issue": null,
+"file": "components/gc/GCOverview.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Progress Breakdown",
+"class": 2,
+"why": "Four bars fit a phone, with more height than four numbers need.",
+"issue": null,
+"file": "components/gc/GCOverview.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Subject-Level Gaps",
+"class": 2,
+"why": "Fixed label and value widths leave very little room for the bar itself.",
+"issue": null,
+"file": "components/gc/GCOverview.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Subject Health",
+"class": 2,
+"why": "One column on a phone and readable. Tiny capital labels.",
+"issue": null,
+"file": "components/gc/SubjectHealthPanel.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Students table",
+"class": 4,
+"why": "A nine-column table far wider than the phone. Flagging needs a mouse, and this main job comes last on the page.",
+"issue": null,
+"file": "components/gc/GCOverview.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: flag a student",
+"class": 3,
+"why": "A small pop-up attached inside a table that scrolls sideways. The button that opens it is invisible on touch.",
+"issue": null,
+"file": "components/gc/GCOverview.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Key Dates and Events",
+"class": 3,
+"why": "Delete only appears with a mouse, controls are tiny, and the main button is indigo.",
+"issue": null,
+"file": "components/gc/GCKeyEvents.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Practice grid",
+"class": 4,
+"why": "Cannot be reached on a phone, and the table is far wider than the screen, with tiny filter tags.",
+"issue": null,
+"file": "components/gc/GCHandInGrid.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Set revision",
+"class": 2,
+"why": "A simple form that would fit a phone. It shows nothing at present.",
+"issue": null,
+"file": "components/gc/GCAssignPanel.tsx",
+"reach": "Switched off today"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: School access (join code)",
+"class": 2,
+"why": "A simple single column, but it cannot be reached on a phone.",
+"issue": null,
+"file": "components/gc/StaffAccessPanel.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: student profile",
+"class": 3,
+"why": "A laptop side panel that fills the phone. Its only way out is a small X under the status bar.",
+"issue": null,
+"file": "components/gc/GCStudentDetail.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Broadcast Message",
+"class": 3,
+"why": "A centred laptop pop-up with small tags and no close button. It should be a sheet.",
+"issue": null,
+"file": "components/gc/GCOverview.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Export Data",
+"class": 2,
+"why": "Fits a phone. Old teal tints in dark mode, and the download probably does nothing inside the iPhone app.",
+"issue": null,
+"file": "components/gc/GCExportModal.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Delete Student",
+"class": 2,
+"why": "Works, but does not move for the keyboard, and a failure shows a plain browser alert.",
+"issue": null,
+"file": "components/GCDashboard.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Reset password",
+"class": 2,
+"why": "Works. The temporary password has no Copy button.",
+"issue": null,
+"file": "components/GCDashboard.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Recommend a Tool",
+"class": 3,
+"why": "Two lists in a pop-up taller than most of the screen, with no scroll of its own. Indigo.",
+"issue": null,
+"file": "components/gc/GCStudentDetail.tsx"
+},
+{
+"area": "Counsellor dashboard",
+"screen": "Counsellor: Send Encouragement",
+"class": 2,
+"why": "Fits and works. A green main button and no close control.",
+"issue": null,
+"file": "components/gc/GCStudentDetail.tsx"
+},
+{
+"area": "Account and settings",
+"screen": "Your data and Delete account",
+"class": 2,
+"why": "A sound step-by-step sheet. Buttons sit too close to the home indicator, and the fields make the phone zoom.",
+"issue": null,
+"file": "components/account/DataRightsModal.tsx"
+},
+{
+"area": "Account and settings",
+"screen": "Privacy and Terms reader",
+"class": 2,
+"why": "Designed for a phone: full screen, with a jump to any section. The close button and links are a little small.",
+"issue": null,
+"file": "components/legal/LegalModal.tsx"
+},
+{
+"area": "Other",
+"screen": "Public privacy and terms pages",
+"class": 1,
+"why": "Real web documents with their own phone rules. Light only.",
+"issue": null,
+"file": "components/legal/legalPage.ts",
+"reach": "Public web pages, not app screens"
+},
+{
+"area": "Other",
+"screen": "Public “Delete your account” page",
+"class": 2,
+"why": "A plain page in the system font on a cream background. Off brand, but web only.",
+"issue": null,
+"file": "public/delete-account.html",
+"reach": "Public web page, not an app screen"
+},
+{
+"area": "Other",
+"screen": "App error screen",
+"class": 2,
+"why": "Centred and usable, with a stock red warning tile and white text on orange. One of three unrelated error designs.",
+"issue": null,
+"file": "components/ErrorBoundary.tsx"
+},
+{
+"area": "Other",
+"screen": "Loading placeholders (shimmer)",
+"class": 1,
+"why": "One shared shimmer card, used by six tools.",
+"issue": null,
+"file": "components/ui/SystemState.tsx"
+},
+{
+"area": "Other",
+"screen": "Shared empty and error panel",
+"class": 2,
+"why": "Shared, but it carries a stock icon in a tile and its own button. The three error screens do not use it.",
+"issue": null,
+"file": "components/ui/SystemState.tsx"
+},
+{
+"area": "Other",
+"screen": "Star Crew empty state",
+"class": 1,
+"why": "A character, a small label, a title and one action. The pattern to standardise on.",
+"issue": null,
+"file": "components/CrewEmptyState.tsx"
+},
+{
+"area": "Other",
+"screen": "Shared pop-up frame",
+"class": 2,
+"why": "A good base: a bottom sheet on phones. Small close button, no room for the home indicator, and seven pop-ups skip it.",
+"issue": null,
+"file": "components/ui/ModalFrame.tsx"
+}
+]
