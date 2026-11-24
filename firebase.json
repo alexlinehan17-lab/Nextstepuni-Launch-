@@ -154,19 +154,6 @@
             "value": "no-cache"
           }
         ]
-      },
-      {
-        "source": "/design-review/**",
-        "headers": [
-          {
-            "key": "X-Robots-Tag",
-            "value": "noindex, nofollow"
-          },
-          {
-            "key": "Cache-Control",
-            "value": "no-cache"
-          }
-        ]
       }
     ]
   },
