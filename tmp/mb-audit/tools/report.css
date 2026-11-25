@@ -1,0 +1,73 @@
+@page { size: A4; margin: 14mm 13mm 15mm 13mm; }
+* { box-sizing: border-box; }
+body { font-family: "Liberation Sans", Arial, sans-serif; font-size: 9.6pt; line-height: 1.42; color: #1a1a1a; margin: 0; }
+h1, h2, h3, h4, h5 { font-family: "Liberation Serif", Georgia, serif; color: #1a1a1a; margin: 0; }
+.cover { height: 262mm; display: flex; flex-direction: column; justify-content: center; page-break-after: always; }
+.cover .k { font: 700 9pt "Liberation Sans"; letter-spacing: .14em; text-transform: uppercase; color: #8C3A0E; }
+.cover h1 { font-size: 34pt; line-height: 1.08; margin: 6mm 0 5mm; }
+.cover p { font-size: 12pt; color: #5a5550; max-width: 150mm; }
+.cover .facts { margin-top: 12mm; display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; }
+.cover .facts div { border: 1.5pt solid #1a1a1a; border-radius: 10pt; padding: 4mm; }
+.cover .facts b { display: block; font: 700 20pt "Liberation Serif"; color: #eb692a; }
+.cover .facts span { font-size: 8.5pt; color: #5a5550; }
+h1.part { font-size: 26pt; page-break-before: always; margin-bottom: 3mm; border-bottom: 2pt solid #1a1a1a; padding-bottom: 3mm; }
+h1.part span { display: block; font: 700 8.5pt "Liberation Sans"; letter-spacing: .14em; text-transform: uppercase; color: #8C3A0E; margin-bottom: 1.5mm; }
+h2 { font-size: 15pt; margin: 6mm 0 2mm; }
+h2.grp { page-break-before: always; font-size: 18pt; }
+.lead { font-size: 10.5pt; color: #3a3530; max-width: 172mm; }
+h3 { font-size: 17pt; }
+section.subj.big { page-break-before: always; }
+section.subj.sm { border-top: 2pt solid #1a1a1a; margin-top: 7mm; padding-top: 4mm; }
+section.subj.sm h3 { break-after: avoid; }
+h1.part + .lead + section.subj.big { page-break-before: avoid; }
+.meta { color: #7a7068; font-size: 8.6pt; margin: 1mm 0 2mm; }
+.scores { display: flex; gap: 2mm; margin: 0 0 2.5mm; flex-wrap: wrap; }
+.sc { border-radius: 20pt; padding: 1mm 3mm; font-size: 8pt; border: 1pt solid #d0cdc8; }
+.sc b { font-weight: 700; margin-right: 1mm; }
+.sc.g { background: #E8F2EC; border-color: #3A8D5F; color: #1F5F3E; }
+.sc.a { background: #FDEEDF; border-color: #eb692a; color: #8C3A0E; }
+.sc.r { background: #fff; border-color: #1a1a1a; color: #1a1a1a; font-weight: 700; }
+.sc.na { color: #9e9186; }
+.sum { margin: 0 0 2mm; }
+.nums { font-size: 8.6pt; color: #5a5550; margin: 0 0 2mm; }
+.verified { background: #FDEEDF; border-left: 3pt solid #eb692a; padding: 2.5mm 3.5mm; border-radius: 0 8pt 8pt 0; color: #8C3A0E; margin: 2mm 0 3mm; }
+.verified code, code { font-family: "Liberation Mono", monospace; font-size: 8.4pt; }
+h5 { font: 700 8.2pt "Liberation Sans"; letter-spacing: .12em; text-transform: uppercase; color: #9e9186; margin: 4mm 0 2mm; }
+.ex { margin-bottom: 4mm; }
+.cap { margin: 0 0 1.5mm; font-size: 8.8pt; break-after: avoid; }
+.capline { font-size: 8pt; color: #7a7068; margin: 1mm 0 0; }
+.phrow { display: flex; gap: 3mm; align-items: flex-start; }
+figure { margin: 0; break-inside: avoid; }
+figure.ph { width: 50mm; }
+figure.ph img, figure.dk img { width: 100%; display: block; border: .6pt solid #d0cdc8; border-radius: 4pt; }
+figure.dk { width: 100%; margin-top: 2.5mm; }
+figure.dk.att { width: 120mm; }
+figcaption { font-size: 7.4pt; color: #7a7068; margin-top: .8mm; }
+.issue { border-top: 1pt solid #d0cdc8; padding-top: 3mm; margin-top: 3mm; }
+.issue h4 { font-size: 12pt; margin-bottom: 1.5mm; break-after: avoid; }
+.issue p { margin: 0 0 1.5mm; }
+.issue .fix { color: #1F5F3E; }
+.sev { font: 700 7pt "Liberation Sans"; text-transform: uppercase; letter-spacing: .08em; border-radius: 20pt; padding: .6mm 2.2mm; vertical-align: 1.5pt; margin-right: 1.5mm; border: 1pt solid #1a1a1a; }
+.sev.high { background: #1a1a1a; color: #fff; } .sev.medium { background: #FDEEDF; border-color: #eb692a; color: #8C3A0E; } .sev.low { color: #7a7068; border-color: #d0cdc8; }
+.also { font-size: 8.6pt; color: #5a5550; margin-top: 3mm; }
+ul.small { margin: 0; padding-left: 4.5mm; font-size: 8.8pt; } ul.small li { margin-bottom: 1mm; }
+table { border-collapse: collapse; width: 100%; }
+table.board { font-size: 7.6pt; } table.board th { text-align: left; font: 700 7pt "Liberation Sans"; letter-spacing: .06em; text-transform: uppercase; color: #7a7068; border-bottom: 1.2pt solid #1a1a1a; padding: 1mm 1.2mm; }
+table.board td { border-bottom: .5pt solid #e0dbd4; padding: .9mm 1.2mm; vertical-align: top; } table.board tr { break-inside: avoid; }
+td.g { color: #1F5F3E; font-weight: 700; text-align: center; } td.a { color: #8C3A0E; text-align: center; } td.r { font-weight: 700; text-align: center; background: #f0f0f0; } td.na { color: #9e9186; text-align: center; }
+td.s1 { color: #1F5F3E; font-weight: 700; white-space: nowrap; } td.s2 { color: #1a1a1a; font-weight: 700; white-space: nowrap; } td.top { color: #5a5550; }
+table.plain { font-size: 8.8pt; margin: 2mm 0 3mm; } table.plain th { text-align: left; border-bottom: 1.2pt solid #1a1a1a; padding: 1.2mm 1.5mm; font-size: 8pt; } table.plain td { border-bottom: .5pt solid #e0dbd4; padding: 1.2mm 1.5mm; vertical-align: top; } table.plain td.n { text-align: right; white-space: nowrap; font-weight: 700; }
+.find { border: 1.5pt solid #1a1a1a; border-radius: 10pt; padding: 3.5mm 4.5mm; margin: 0 0 3mm; break-inside: avoid; }
+.find h4 { font-size: 12.5pt; margin-bottom: 1mm; } .find p { margin: 0; }
+.find .n { display: inline-block; width: 7mm; height: 7mm; line-height: 7mm; text-align: center; border-radius: 50%; background: #eb692a; color: #fff; font: 700 10pt "Liberation Serif"; margin-right: 2mm; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; align-items: start; break-inside: avoid; margin: 3mm 0; }
+.two .lab { font: 700 7.6pt "Liberation Sans"; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 1.2mm; } .lab.now { color: #1a1a1a; } .lab.fixl { color: #1F5F3E; }
+.two img { width: 100%; border: .6pt solid #d0cdc8; border-radius: 4pt; display: block; }
+.phone { width: 62mm; border: 1.5pt solid #1a1a1a; border-radius: 12pt; padding: 3mm; background: #fff; }
+.phone .q { font: 400 11pt "Liberation Serif"; line-height: 1.35; } .phone .b { font-size: 8.6pt; color: #3a3530; }
+.row1 { border: 1pt solid #d0cdc8; border-radius: 7pt; padding: 1.6mm 2.2mm; margin-top: 1.4mm; font-size: 8.2pt; display: flex; justify-content: space-between; gap: 2mm; } .row1 i { font-style: normal; color: #7a7068; white-space: nowrap; }
+.note { font-size: 8.4pt; color: #7a7068; }
+.pb { page-break-before: always; }
+
+.keep { break-inside: avoid; }
+.issue h4 + p { break-before: avoid; }

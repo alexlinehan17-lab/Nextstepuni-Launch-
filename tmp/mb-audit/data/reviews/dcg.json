@@ -1,0 +1,302 @@
+{
+ "subject": "dcg",
+ "verdict": "needs-work",
+ "summary": "Every DCG card shows the question only as a picture of the whole printed question (stem, photo, drawing and all parts a-d); the asked part is never typed, never highlighted, and on a phone the instruction text inside the crop is about 5-6px, so the student cannot read what they are being asked without tapping Enlarge. Because the whole question is shown, sibling parts are visible on 11 of 12 cards, and two 3-4 mark slices of one question (2017 HL C5(a) 'LCD Mount Bracket' and 'Drawing Completion') show the entire assembly question with nothing saying what the slice covers. The scheme is tidy as a list of marked steps with totals that add up, but it is steps only ('Determine Strike line', 'Camshaft', 'Hinged Portion'): there is no image of the official drawn solution anywhere, which for a drawing subject is the thing a student most needs to check against. The contour-map attachment is the right page and shows only the map, but one of the four sampled opened as a blank page. Desktop is readable; the phone is not.",
+ "scores": {
+  "question": 2,
+  "attachments": 3,
+  "scheme": 2,
+  "phone": 2,
+  "desktop": 3
+ },
+ "issues": [
+  {
+   "title": "Asked part is never typed; whole question shown as one image",
+   "detail": "The question area is a single crop of the full printed question, section banner included ('Geologic Geometry', 'Structural Forms'). The stem and part text that exist for these cards are not printed as text. Nothing marks which part is being asked apart from the small header label (e.g. 'SECTION B Q2(D)'), so the student must find line (d) at the bottom of the picture. On card 8 the label is Q1(a) but the picture gives equal space to part (b) with its three sub-parts.",
+   "severity": "high",
+   "cards": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_evidence_image": "02_phone_answer.png",
+   "suggested_fix": "Print the stem and the asked part as real text at body size above the picture, and crop the picture to the photo/drawing (Fig.) only. If the full crop stays, highlight the asked part."
+  },
+  {
+   "title": "Sibling parts visible on almost every card",
+   "detail": "Because the whole question is the image, other parts are shown in full: card 2 (asks d) shows a, b, c; card 3 (asks d) shows a, b, c; card 4 (asks a) shows b; card 6 (asks b) shows a, c, d; cards 7 and 9 show the other two parts; card 10 (asks a) shows b, c; card 12 (asks b) shows a; card 1 (asks b) shows all of (a) and card 8 (asks a) shows all of (b); cards 5 and 11 show (b). No different questions appear, only parts of the same question.",
+   "severity": "medium",
+   "cards": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    11
+   ],
+   "best_evidence_image": "03_desktop_answer.png",
+   "suggested_fix": "Type only the stem plus the asked part; keep the shared drawing."
+  },
+  {
+   "title": "Question text inside the crop is unreadable on a phone",
+   "detail": "Scaled to a 330px card, the printed instructions are roughly 5-6px tall against 14-15px app text. The assembly sheet (cards 5, 11) with eight dimensioned parts and a parts list is illegible at phone width; dimensions on cards 3, 6, 10 and the coordinate table on card 2 are also too small. Desktop is acceptable for all but the assembly sheet, where dimensions are still small.",
+   "severity": "high",
+   "cards": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_evidence_image": "05_phone_answer.png",
+   "suggested_fix": "Typed text for the words; show the drawing alone at full card width and open it zoomable (pinch/pan) by default for dense sheets."
+  },
+  {
+   "title": "No image of the official drawn solution",
+   "detail": "After reveal the scheme is only a list of step names with marks ('Locate points Ph and Qh in plan and draw triangle 4m', 'Establish widths in plan 4m', 'Draw the cam profile 4m'). The SEC scheme for DCG is a worked drawing; none is shown on any of the 12 cards, so a student cannot see what the correct traces, strike/dip, end view or cam profile look like and cannot honestly tick the steps.",
+   "severity": "high",
+   "cards": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_evidence_image": "09_desktop_answer.png",
+   "suggested_fix": "Show a crop of the official solution drawing for this part at the top of the scheme panel (zoomable), with the marked steps beneath it."
+  },
+  {
+   "title": "Sub-slice cards do not say what they cover",
+   "detail": "2017 HL C5(a) is split into small cards ('LCD Mount Bracket' 3 marks; 'Drawing Completion' 4 marks). Each shows the entire assembly question, and the scheme is two or one bare labels ('Hinged Portion 1m', 'Vertical Face Plate portion 2m'; 'Presentation, hatching and centrelines 4m'). The student is not told that only one component of the sectional elevation is being marked here. Card 8 ('Earthworks on curved section between A and B (Level) - Cutting', 9 marks) has the same problem, and its two steps do not mention the 1 in 2 slope.",
+   "severity": "medium",
+   "cards": [
+    5,
+    8,
+    11
+   ],
+   "best_evidence_image": "05_desktop_answer.png",
+   "suggested_fix": "Add a one-line typed prompt ('This card marks only part 5, the LCD Mount Bracket, in your sectional elevation') and show that part's region of the solution; or merge the slices into one card for the whole of (a)."
+  },
+  {
+   "title": "Contour map attachment opened blank",
+   "detail": "On card 7 (2011 OL C1(b)) the 'Read contour map' reader shows an empty white page ('PDF page 3, 1 / 1'). The same attachment on cards 1, 8 and 9 shows the map correctly and nothing else. Without the map this question cannot be attempted. It may be a slow image load at capture time, but it needs checking.",
+   "severity": "high",
+   "cards": [
+    7
+   ],
+   "best_evidence_image": "07_attached_page.png",
+   "suggested_fix": "Check that the 2011 OL map page image exists and loads; show a loading state rather than a blank sheet."
+  },
+  {
+   "title": "Raw scheme shorthand and terse labels",
+   "detail": "Card 3 has 'Draw required curvature .........(any = 1)' with dot leaders and a 0/1/3 selector that is not explained; card 4 has 'Complete end view....(incl. hidden detail)'; cards 4 and 10 carry the internal-sounding note 'The scheme prices Presentation on the whole question, not on one part: claim it once, here'. Labels such as 'Camshaft', 'Strike in plan', 'Ph, Qh and Rh' assume the student has the solution drawing in front of them.",
+   "severity": "medium",
+   "cards": [
+    1,
+    3,
+    4,
+    9,
+    10,
+    12
+   ],
+   "best_evidence_image": "03_desktop_answer.png",
+   "suggested_fix": "Rewrite as plain steps ('Draw the curve: 3 marks, or 1 mark for any attempt'), remove dot leaders, and reword the Presentation note as 'Presentation marks cover the whole question; count them once.'"
+  },
+  {
+   "title": "Dead space and wasted room on phone",
+   "detail": "The pink/blue section banner and the decorative photo take the top of every crop while the instructions shrink; below the crop there is a 150-250px empty band before 'Your answer'.",
+   "severity": "low",
+   "cards": [
+    1,
+    2,
+    3,
+    7,
+    8,
+    9,
+    10,
+    12
+   ],
+   "best_evidence_image": "09_phone_answer.png",
+   "suggested_fix": "Crop out the banner and photo, and remove the spacer at phone width."
+  }
+ ],
+ "good_examples": [
+  {
+   "card": 4,
+   "why": "Compact crop where text and drawing are both readable on desktop; five marked steps add to 17.",
+   "image": "04_desktop_answer.png"
+  },
+  {
+   "card": 9,
+   "why": "Short question, correct contour map attachment showing only the map, six ordered steps adding to 17.",
+   "image": "09_desktop_answer.png"
+  },
+  {
+   "card": 1,
+   "why": "Map attachment includes the borehole inset the part needs; five 4-mark steps follow parts (i)-(iii).",
+   "image": "01_attached_page.png"
+  }
+ ],
+ "cards": [
+  {
+   "n": 1,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is C1(b); crop shows all of C1(a) (river earthworks) above it.",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Question only as an image, part (b) is the lower half and tiny on phone. Contour map attachment is correct and limited to the map. Steps add to 20 but no solution drawing; 'Ph, Qh, Rh' unexplained."
+  },
+  {
+   "n": 2,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is B2(d); crop also lists (a), (b), (c).",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Asked part is the last line of the crop. Coordinate table prints as 'A: 160 --- 0 --- 95' with dash runs (as in the paper) and is very small on phone. Steps 3+2+3+2=10, clear, no solution drawing."
+  },
+  {
+   "n": 3,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is C2(d); crop also lists (a), (b), (c).",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Dimensions unreadable on phone. Scheme row 'Draw required curvature .........(any = 1)' keeps dot leaders and an unexplained 0/1/3 selector."
+  },
+  {
+   "n": 4,
+   "question": "minor",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is A4(a); crop also shows (b) 'Draw the true shape of the end'.",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Best of the sample: compact crop, readable on desktop. 'Complete end view....(incl. hidden detail)' has stray dots; Presentation note wording is internal. No solution drawing."
+  },
+  {
+   "n": 5,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Crop shows the whole of C5 including part (b) rotation angle.",
+   "attachment": "bad",
+   "scheme": "bad",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "A 3-mark slice ('LCD Mount Bracket') shown with the entire assembly sheet; nothing says only this part is marked. Scheme is two bare labels. Sheet illegible on phone."
+  },
+  {
+   "n": 6,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is B2(b); crop also lists (a), (c), (d).",
+   "attachment": "minor",
+   "scheme": "ok",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Steps are clear and add to 10. Asked part not marked; drawing dimensions small on phone."
+  },
+  {
+   "n": 7,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is C1(b); crop also shows (a) and (c).",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Contour map reader opened as a blank white page, so the question cannot be done. Text-only crop is tiny on phone and could simply be typed. Three 2-mark steps are clear."
+  },
+  {
+   "n": 8,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is a slice of C1(a); crop gives equal space to all of C1(b).",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Long sub-slice title is the only clue to what is asked. Two steps (5+4) with no mention of slope or solution drawing. Map attachment correct."
+  },
+  {
+   "n": 9,
+   "question": "minor",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is C1(c); crop also shows (a) and (b).",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Short text question shown as an image; unreadable on phone. Map attachment correct, shows C, D, E. Six steps add to 17; terse labels, no solution drawing."
+  },
+  {
+   "n": 10,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is C3(a); crop also lists (b) and (c).",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Drawing is clear on desktop. Steps 6+12+12+5=35; two 12-mark rows are coarse all-or-nothing ticks. Presentation note wording is internal."
+  },
+  {
+   "n": 11,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Crop shows the whole of C5 including part (b).",
+   "attachment": "bad",
+   "scheme": "bad",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "4-mark 'Drawing Completion' slice: single row 'Presentation, hatching and centrelines' against the full assembly sheet; reads as an orphan fragment."
+  },
+  {
+   "n": 12,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is C4(b); crop also shows (a) displacement diagram (its motion data is needed).",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Six steps add to 14 and follow the construction order; 'Camshaft' alone is cryptic. Crop text tiny on phone, large empty area beside the cam graphic."
+  }
+ ]
+}

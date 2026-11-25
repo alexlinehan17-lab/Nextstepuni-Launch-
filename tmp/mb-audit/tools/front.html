@@ -1,0 +1,37 @@
+<div class="cover">
+  <div class="k">NextStepUni · Mark Bank · 25 November 2026</div>
+  <h1>Mark Bank audit:<br>how every subject asks, attaches and marks</h1>
+  <p>A review of how questions, their attachments and their marking schemes look across all 55 Mark Bank subjects, on desktop and on a phone. Section 1 shows the subjects that work. Section 2 shows the subjects that need work, with the evidence and the fix for each. A final part covers desktop versus phone and the order to fix things in.</p>
+  <div class="facts">
+    <div><b>78,787</b><span>cards checked by script, in all 55 subjects</span></div>
+    <div><b>517</b><span>cards opened in the real app and looked at one by one</span></div>
+    <div><b>{{N1}}</b><span>subjects that work, each with small fixes</span></div>
+    <div><b>{{N2}}</b><span>subjects that need work</span></div>
+  </div>
+</div>
+
+<h2 style="margin-top:0">The short version</h2>
+<p class="lead">No subject is completely clean, but the core idea works: where a card has a short typed question and one marking point per row with its marks, it looks good on both screens. The problems come from four places, and the first one is the one you raised.</p>
+
+<div class="find"><h4><span class="n">1</span>Cards do show other questions, and it comes from the attached page</h4>
+<p>61% of cards (48,343) attach pages from the exam paper. Almost all of them attach the <b>whole printed page</b>, not the question. Only Applied Maths and Music crop to the question. Checked against real papers, a <b>different numbered question</b> is printed on the attached page for about 68% of Construction Studies cards, 49% of Economics, 46% of Business, 37% of Accounting, 31% of Home Economics, 20% of Agricultural Science and 18% of Physical Education. These are low estimates. A student opening the page for an Economics question on credit creation sees all of the national income question first. The typed question and the marking scheme themselves were limited to the right question in almost every card; the leak is the attachment.</p></div>
+
+<div class="find"><h4><span class="n">2</span>Two subjects have attachments that do not open at all</h4>
+<p>Home Economics (1,541 cards) and Early Modern History (1,170 cards) show “That page did not load” because the app looks in the wrong storage folder. Each is a small, contained fix. Separately, every listening recording failed to play in my test set-up; I could not tell whether that is my set-up or the app, so it needs one check on the live site.</p></div>
+
+<div class="find"><h4><span class="n">3</span>Questions shown as a picture of the paper cannot be read on a phone</h4>
+<p>Every Construction Studies and DCG question, 86% of Maths, about 64% of Computer Science and Music, and 57% of Technology questions are a picture of the printed paper. On desktop that is the best-looking format in the bank. On a 390px phone the same picture is shown at a fifth to a third of its size, so the print is about 5 to 7 pixels high and the student has to tap Enlarge to read the question at all.</p></div>
+
+<div class="find"><h4><span class="n">4</span>Marking schemes lose their shape when they become text</h4>
+<p>Alternatives are joined with slashes in one tick box (920 Agricultural Science, 537 Biology, 529 Chemistry and 214 Physics cards). Tables are run into one line with pipe characters (253 of 518 LCVP cards). The same long pool of answers is repeated under every point. Notes written for whoever built the card (“Source discrepancy…”, “no models are invented”, “approved on 18 November 2026”) are printed to the student. In the essay subjects the reveal often has no answer content at all, only rows of mark buttons.</p></div>
+
+<div class="find"><h4><span class="n">5</span>Some questions point at things the card does not show</h4>
+<p>“Examine the graph above”, “fill in the grid below”, “the underlined term”, “the phrases in the box” appear on cards where the graph, grid, underline or box is missing or sits only behind the attachment button. Geography, German, Applied Maths and the cloze (fill-the-gap) questions in French, Portuguese and Economics are the main cases.</p></div>
+
+<h2>How this was done</h2>
+<p>All 78,787 cards in the 95 decks were exported from the code and checked by script: what each card attaches, how its text is formed, and how large its pictures are. For the “other questions” check, 16 subjects were compared against about 150 real exam papers downloaded from the app's own storage. Then 519 cards were chosen across all 55 subjects (12 for each larger subject, 5 to 8 for the smaller languages), mixing ordinary cards with ones the scripts flagged. Each was opened in the app's real session screen at desktop size (1280px) and phone size (390px), before and after the reveal, with its attached page; 517 loaded. Every screenshot was read card by card and scored from 1 to 5 for the question, the attachments, the scheme, the phone view and the desktop view. The serious findings were then re-checked by hand, which removed three that were only slow loading.</p>
+<p class="note">Limits: 517 cards is a sample, so a subject's score describes what the sample shows, and the counts quoted from the full bank are the firmer numbers. Audio could not be listened to. Scheme correctness was judged by whether the scheme plainly answers the question on the card, not re-marked against the SEC documents line by line.</p>
+
+<h2 class="pb">Every subject at a glance</h2>
+<p class="note">Scores are out of 5. “Works” means clear question, right scheme and nothing from another topic in the sampled cards, with only small fixes left.</p>
+{{TABLE}}

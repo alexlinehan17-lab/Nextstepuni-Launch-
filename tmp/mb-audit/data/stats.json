@@ -1,0 +1,2865 @@
+{
+ "accounting": {
+  "title": "Accounting",
+  "cards": 1365,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 100,
+  "pctSchemeImage": 100,
+  "pageshare": {
+   "withWholePageSource": 1365,
+   "cardsOnMultiQPage": 8,
+   "cardsOnMultiTopicPage": 8
+  },
+  "pdfcheck": {
+   "cardsChecked": 407,
+   "pageShowsOtherQuestion": 149,
+   "pct": 36.6,
+   "noQuestionNumberDetected": 14,
+   "avgPages": 1.33,
+   "examples": [
+    [
+     "acc-2024-hl-q2(a)-profit-loss",
+     "2024 HL Q2(a)-profit-loss",
+     [
+      6,
+      7
+     ],
+     "also shows Q1,3,4"
+    ],
+    [
+     "acc-2024-hl-q2(a)-notes",
+     "2024 HL Q2(a)-notes",
+     [
+      6,
+      7
+     ],
+     "also shows Q1,3,4"
+    ],
+    [
+     "acc-2024-hl-q2(b)",
+     "2024 HL Q2(b)",
+     [
+      6,
+      7
+     ],
+     "also shows Q1,3,4"
+    ],
+    [
+     "acc-2018-ol-q6(a)",
+     "2018 OL Q6(a)",
+     [
+      10,
+      11
+     ],
+     "also shows Q1,2,3,4,5"
+    ]
+   ]
+  },
+  "text": {
+   "n": 1365,
+   "q": {},
+   "a": {
+    "orphan_bracket": 53.0,
+    "dash_run": 2.1,
+    "embedded_marks": 0.6
+   },
+   "qlen_med": 121,
+   "qlen_p95": 281,
+   "alen_med": 332,
+   "alen_p95": 884,
+   "rows_med": 0,
+   "rows_p95": 0
+  }
+ },
+ "agricultural-science": {
+  "title": "Agricultural Science",
+  "cards": 2464,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 16,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 2464,
+   "cardsOnMultiQPage": 831,
+   "cardsOnMultiTopicPage": 829
+  },
+  "pdfcheck": {
+   "cardsChecked": 712,
+   "pageShowsOtherQuestion": 144,
+   "pct": 20.2,
+   "noQuestionNumberDetected": 187,
+   "avgPages": 1.04,
+   "examples": [
+    [
+     "agsci-2018-hl-q5a",
+     "2018 HL Q5(a)",
+     [
+      5
+     ],
+     "also shows Q4"
+    ],
+    [
+     "agsci-2018-hl-q5b",
+     "2018 HL Q5(b)",
+     [
+      5
+     ],
+     "also shows Q4"
+    ],
+    [
+     "agsci-2018-hl-q5c",
+     "2018 HL Q5(c)",
+     [
+      5
+     ],
+     "also shows Q4"
+    ],
+    [
+     "agsci-2018-hl-q7ai",
+     "2018 HL Q7(a)(i)",
+     [
+      6
+     ],
+     "also shows Q6"
+    ]
+   ]
+  },
+  "text": {
+   "n": 2464,
+   "q": {
+    "slash_sep": 0.6,
+    "dash_run": 1.1,
+    "orphan_bracket": 3.0,
+    "sibling_parts": 9.5
+   },
+   "a": {
+    "orphan_bracket": 13.4,
+    "slash_sep": 37.8,
+    "hyphen_break": 0.6,
+    "sibling_parts": 1.1
+   },
+   "qlen_med": 172,
+   "qlen_p95": 518,
+   "alen_med": 315,
+   "alen_p95": 1488,
+   "rows_med": 1,
+   "rows_p95": 4
+  }
+ },
+ "ancient-greek": {
+  "title": "Ancient Greek",
+  "cards": 404,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2024
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 35,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 143,
+   "cardsOnMultiQPage": 0,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 404,
+   "q": {
+    "sibling_parts": 0.7,
+    "embedded_marks": 7.2,
+    "orphan_bracket": 1.5
+   },
+   "a": {
+    "orphan_bracket": 2.0,
+    "caret_math": 1.7
+   },
+   "qlen_med": 180,
+   "qlen_p95": 332,
+   "alen_med": 106,
+   "alen_p95": 452,
+   "rows_med": 2,
+   "rows_p95": 4
+  }
+ },
+ "applied-maths": {
+  "title": "Applied Maths",
+  "cards": 1486,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 93,
+  "pctAudio": 0,
+  "pctRubric": 100,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 103,
+   "cardsOnMultiQPage": 0,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 1486,
+   "q": {
+    "pipe_table": 2.2
+   },
+   "a": {},
+   "qlen_med": 105,
+   "qlen_p95": 277,
+   "alen_med": 401,
+   "alen_p95": 515,
+   "rows_med": 0,
+   "rows_p95": 0
+  }
+ },
+ "arabic": {
+  "title": "Arabic",
+  "cards": 250,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2021,
+   2025
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 16,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 40,
+   "cardsOnMultiQPage": 40,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 250,
+   "q": {
+    "dot_leader": 20.8,
+    "orphan_bracket": 4.0
+   },
+   "a": {
+    "orphan_bracket": 16.0
+   },
+   "qlen_med": 100,
+   "qlen_p95": 297,
+   "alen_med": 215,
+   "alen_p95": 277,
+   "rows_med": 1,
+   "rows_p95": 1
+  }
+ },
+ "art": {
+  "title": "Art",
+  "cards": 1756,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 38,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 100,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 673,
+   "cardsOnMultiQPage": 671,
+   "cardsOnMultiTopicPage": 649
+  },
+  "pdfcheck": {
+   "cardsChecked": 198,
+   "pageShowsOtherQuestion": 0,
+   "pct": 0.0,
+   "noQuestionNumberDetected": 198,
+   "avgPages": 1.0,
+   "examples": []
+  },
+  "text": {
+   "n": 1756,
+   "q": {
+    "orphan_bracket": 69.5,
+    "newline_heavy": 2.3
+   },
+   "a": {
+    "orphan_bracket": 69.2
+   },
+   "qlen_med": 214,
+   "qlen_p95": 449,
+   "alen_med": 624,
+   "alen_p95": 4684,
+   "rows_med": 0,
+   "rows_p95": 0
+  }
+ },
+ "biology": {
+  "title": "Biology",
+  "cards": 6601,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 2,
+  "pctFigure": 32,
+  "pctAttachedPage": 0,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 1,
+  "pageshare": {
+   "withWholePageSource": 6,
+   "cardsOnMultiQPage": 0,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 6601,
+   "q": {
+    "orphan_bracket": 2.0
+   },
+   "a": {
+    "orphan_bracket": 7.3,
+    "slash_sep": 8.1
+   },
+   "qlen_med": 139,
+   "qlen_p95": 439,
+   "alen_med": 45,
+   "alen_p95": 266,
+   "rows_med": 1,
+   "rows_p95": 3
+  }
+ },
+ "bulgarian": {
+  "title": "Bulgarian",
+  "cards": 219,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 67,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 147,
+   "cardsOnMultiQPage": 145,
+   "cardsOnMultiTopicPage": 145
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 219,
+   "q": {
+    "orphan_bracket": 20.5
+   },
+   "a": {
+    "orphan_bracket": 5.5
+   },
+   "qlen_med": 80,
+   "qlen_p95": 251,
+   "alen_med": 493,
+   "alen_p95": 1522,
+   "rows_med": 1,
+   "rows_p95": 1
+  }
+ },
+ "business": {
+  "title": "Business",
+  "cards": 2163,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 100,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 2163,
+   "cardsOnMultiQPage": 960,
+   "cardsOnMultiTopicPage": 960
+  },
+  "pdfcheck": {
+   "cardsChecked": 422,
+   "pageShowsOtherQuestion": 192,
+   "pct": 45.5,
+   "noQuestionNumberDetected": 28,
+   "avgPages": 1.0,
+   "examples": [
+    [
+     "bus-2019-ol-s1-q1",
+     "2019 OL Section 1 Q1",
+     [
+      2
+     ],
+     "also shows Q3,4"
+    ],
+    [
+     "bus-2019-ol-s1-q10",
+     "2019 OL Section 1 Q10",
+     [
+      4
+     ],
+     "also shows Q8,9"
+    ],
+    [
+     "bus-2019-ol-s1-q11",
+     "2019 OL Section 1 Q11",
+     [
+      4
+     ],
+     "also shows Q8,9,10"
+    ],
+    [
+     "bus-2019-ol-s1-q12",
+     "2019 OL Section 1 Q12",
+     [
+      5
+     ],
+     "also shows Q13"
+    ]
+   ]
+  },
+  "text": {
+   "n": 2163,
+   "q": {
+    "orphan_bracket": 6.9,
+    "sibling_parts": 3.7,
+    "newline_heavy": 5.0,
+    "pipe_table": 0.7,
+    "slash_sep": 0.5,
+    "dash_run": 1.5
+   },
+   "a": {
+    "orphan_bracket": 12.9,
+    "sibling_parts": 2.5,
+    "dot_leader": 1.2,
+    "hyphen_break": 3.4,
+    "slash_sep": 0.6,
+    "double_space": 0.9
+   },
+   "qlen_med": 235,
+   "qlen_p95": 709,
+   "alen_med": 872,
+   "alen_p95": 2911,
+   "rows_med": 0,
+   "rows_p95": 0
+  }
+ },
+ "chemistry": {
+  "title": "Chemistry",
+  "cards": 3369,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 7,
+  "pctFigure": 49,
+  "pctAttachedPage": 0,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 15,
+  "pageshare": {
+   "withWholePageSource": 10,
+   "cardsOnMultiQPage": 0,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 3369,
+   "q": {
+    "sibling_parts": 5.9,
+    "orphan_bracket": 5.6
+   },
+   "a": {
+    "orphan_bracket": 6.4,
+    "slash_sep": 16.3,
+    "multi_slash": 1.7
+   },
+   "qlen_med": 252,
+   "qlen_p95": 811,
+   "alen_med": 150,
+   "alen_p95": 603,
+   "rows_med": 1,
+   "rows_p95": 4
+  }
+ },
+ "classical-studies": {
+  "title": "Classical Studies",
+  "cards": 516,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2021,
+   2025
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 48,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 249,
+   "cardsOnMultiQPage": 38,
+   "cardsOnMultiTopicPage": 34
+  },
+  "pdfcheck": {
+   "cardsChecked": 133,
+   "pageShowsOtherQuestion": 0,
+   "pct": 0.0,
+   "noQuestionNumberDetected": 83,
+   "avgPages": 1.0,
+   "examples": []
+  },
+  "text": {
+   "n": 516,
+   "q": {
+    "orphan_bracket": 4.3,
+    "dash_run": 1.2
+   },
+   "a": {
+    "orphan_bracket": 4.5
+   },
+   "qlen_med": 129,
+   "qlen_p95": 636,
+   "alen_med": 390,
+   "alen_p95": 1720,
+   "rows_med": 4,
+   "rows_p95": 13
+  }
+ },
+ "computer-science": {
+  "title": "Computer Science",
+  "cards": 582,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2020,
+   2026
+  ],
+  "pctQuestionImage": 64,
+  "pctFigure": 25,
+  "pctAttachedPage": 0,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 25,
+  "pageshare": {
+   "withWholePageSource": 0,
+   "cardsOnMultiQPage": 0,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 582,
+   "q": {
+    "sibling_parts": 0.5,
+    "orphan_bracket": 7.0,
+    "spaced_nums": 3.3,
+    "dash_run": 1.4
+   },
+   "a": {
+    "orphan_bracket": 24.9,
+    "spaced_nums": 1.5,
+    "embedded_marks": 0.9
+   },
+   "qlen_med": 405,
+   "qlen_p95": 1147,
+   "alen_med": 393,
+   "alen_p95": 1326,
+   "rows_med": 1,
+   "rows_p95": 4
+  }
+ },
+ "construction-studies": {
+  "title": "Construction Studies",
+  "cards": 1261,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 100,
+  "pctFigure": 85,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 85,
+  "pageshare": {
+   "withWholePageSource": 1261,
+   "cardsOnMultiQPage": 1261,
+   "cardsOnMultiTopicPage": 1261
+  },
+  "pdfcheck": {
+   "cardsChecked": 365,
+   "pageShowsOtherQuestion": 249,
+   "pct": 68.2,
+   "noQuestionNumberDetected": 10,
+   "avgPages": 2.0,
+   "examples": [
+    [
+     "cons-2022-hl-q2-a-entrance-access",
+     "2022 HL Q2(a) \u2014 entrance-access",
+     [
+      1,
+      2
+     ],
+     "also shows Q1"
+    ],
+    [
+     "cons-2022-hl-q2-a-internal-corridor",
+     "2022 HL Q2(a) \u2014 internal-corridor",
+     [
+      1,
+      2
+     ],
+     "also shows Q1"
+    ],
+    [
+     "cons-2022-hl-q2-b",
+     "2022 HL Q2(b)",
+     [
+      1,
+      2
+     ],
+     "also shows Q1"
+    ],
+    [
+     "cons-2022-hl-q2-c",
+     "2022 HL Q2(c)",
+     [
+      1,
+      2
+     ],
+     "also shows Q1"
+    ]
+   ]
+  },
+  "text": {
+   "n": 1261,
+   "q": {
+    "orphan_bracket": 27.3,
+    "sibling_parts": 15.3
+   },
+   "a": {
+    "embedded_marks": 1.1,
+    "hyphen_break": 0.6
+   },
+   "qlen_med": 441,
+   "qlen_p95": 913,
+   "alen_med": 662,
+   "alen_p95": 2078,
+   "rows_med": 3,
+   "rows_p95": 10
+  }
+ },
+ "croatian": {
+  "title": "Croatian",
+  "cards": 151,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2014,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 83,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 125,
+   "cardsOnMultiQPage": 125,
+   "cardsOnMultiTopicPage": 125
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 151,
+   "q": {
+    "orphan_bracket": 8.6,
+    "embedded_marks": 1.3
+   },
+   "a": {
+    "orphan_bracket": 0.7
+   },
+   "qlen_med": 136,
+   "qlen_p95": 326,
+   "alen_med": 512,
+   "alen_p95": 1782,
+   "rows_med": 1,
+   "rows_p95": 5
+  }
+ },
+ "czech": {
+  "title": "Czech",
+  "cards": 155,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 78,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 121,
+   "cardsOnMultiQPage": 121,
+   "cardsOnMultiTopicPage": 121
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 155,
+   "q": {
+    "sibling_parts": 9.7,
+    "orphan_bracket": 16.1
+   },
+   "a": {
+    "orphan_bracket": 0.6
+   },
+   "qlen_med": 124,
+   "qlen_p95": 229,
+   "alen_med": 677,
+   "alen_p95": 1267,
+   "rows_med": 1,
+   "rows_p95": 5
+  }
+ },
+ "danish": {
+  "title": "Danish",
+  "cards": 126,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2010,
+   2025
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 87,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 110,
+   "cardsOnMultiQPage": 110,
+   "cardsOnMultiTopicPage": 110
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 126,
+   "q": {
+    "orphan_bracket": 25.4
+   },
+   "a": {
+    "orphan_bracket": 0.8,
+    "hyphen_break": 0.8
+   },
+   "qlen_med": 193,
+   "qlen_p95": 443,
+   "alen_med": 457,
+   "alen_p95": 1280,
+   "rows_med": 1,
+   "rows_p95": 5
+  }
+ },
+ "dcg": {
+  "title": "Design and Communication Graphics",
+  "cards": 1284,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 100,
+  "pctFigure": 0,
+  "pctAttachedPage": 12,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 151,
+   "cardsOnMultiQPage": 0,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": {
+   "cardsChecked": 37,
+   "pageShowsOtherQuestion": 0,
+   "pct": 0.0,
+   "noQuestionNumberDetected": 37,
+   "avgPages": 1.0,
+   "examples": []
+  },
+  "text": {
+   "n": 1284,
+   "q": {
+    "dash_run": 4.1,
+    "orphan_bracket": 4.2,
+    "sibling_parts": 1.1
+   },
+   "a": {
+    "dot_leader": 9.3,
+    "orphan_bracket": 0.7
+   },
+   "qlen_med": 340,
+   "qlen_p95": 696,
+   "alen_med": 154,
+   "alen_p95": 456,
+   "rows_med": 3,
+   "rows_p95": 6
+  }
+ },
+ "dutch": {
+  "title": "Dutch",
+  "cards": 219,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 84,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 185,
+   "cardsOnMultiQPage": 185,
+   "cardsOnMultiTopicPage": 185
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 219,
+   "q": {
+    "orphan_bracket": 11.0,
+    "hyphen_break": 3.2
+   },
+   "a": {
+    "hyphen_break": 0.9,
+    "orphan_bracket": 1.8
+   },
+   "qlen_med": 147,
+   "qlen_p95": 355,
+   "alen_med": 258,
+   "alen_p95": 871,
+   "rows_med": 1,
+   "rows_p95": 3
+  }
+ },
+ "economics": {
+  "title": "Economics",
+  "cards": 2297,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 6,
+  "pctFigure": 27,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 12,
+  "pageshare": {
+   "withWholePageSource": 2297,
+   "cardsOnMultiQPage": 1108,
+   "cardsOnMultiTopicPage": 1099
+  },
+  "pdfcheck": {
+   "cardsChecked": 642,
+   "pageShowsOtherQuestion": 312,
+   "pct": 48.6,
+   "noQuestionNumberDetected": 58,
+   "avgPages": 1.17,
+   "examples": [
+    [
+     "econ-2019-hl-sa-q1-a",
+     "2019 HL Section A Q1(a)",
+     [
+      2
+     ],
+     "also shows Q2,3,4"
+    ],
+    [
+     "econ-2019-hl-sa-q1-b",
+     "2019 HL Section A Q1(b)",
+     [
+      2
+     ],
+     "also shows Q2,3,4"
+    ],
+    [
+     "econ-2019-hl-sa-q2",
+     "2019 HL Section A Q2",
+     [
+      2
+     ],
+     "also shows Q1,3,4"
+    ],
+    [
+     "econ-2019-hl-sa-q3",
+     "2019 HL Section A Q3",
+     [
+      2
+     ],
+     "also shows Q1,2,4"
+    ]
+   ]
+  },
+  "text": {
+   "n": 2297,
+   "q": {
+    "orphan_bracket": 5.4,
+    "sibling_parts": 1.0
+   },
+   "a": {
+    "orphan_bracket": 5.1,
+    "slash_sep": 3.4,
+    "hyphen_break": 2.8
+   },
+   "qlen_med": 197,
+   "qlen_p95": 389,
+   "alen_med": 622,
+   "alen_p95": 2229,
+   "rows_med": 1,
+   "rows_p95": 4
+  }
+ },
+ "engineering": {
+  "title": "Engineering",
+  "cards": 2269,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 39,
+  "pctFigure": 17,
+  "pctAttachedPage": 0,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 16,
+  "pageshare": {
+   "withWholePageSource": 0,
+   "cardsOnMultiQPage": 0,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 2269,
+   "q": {
+    "sibling_parts": 9.2
+   },
+   "a": {
+    "hyphen_break": 1.1,
+    "orphan_bracket": 4.1,
+    "sibling_parts": 0.9
+   },
+   "qlen_med": 106,
+   "qlen_p95": 241,
+   "alen_med": 275,
+   "alen_p95": 1347,
+   "rows_med": 2,
+   "rows_p95": 5
+  }
+ },
+ "english": {
+  "title": "English",
+  "cards": 3105,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 32,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 100,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 982,
+   "cardsOnMultiQPage": 626,
+   "cardsOnMultiTopicPage": 29
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 3105,
+   "q": {
+    "orphan_bracket": 13.8
+   },
+   "a": {},
+   "qlen_med": 236,
+   "qlen_p95": 473,
+   "alen_med": 683,
+   "alen_p95": 969,
+   "rows_med": 0,
+   "rows_p95": 0
+  }
+ },
+ "estonian": {
+  "title": "Estonian",
+  "cards": 172,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2010,
+   2025
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 83,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 143,
+   "cardsOnMultiQPage": 143,
+   "cardsOnMultiTopicPage": 131
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 172,
+   "q": {
+    "orphan_bracket": 23.3,
+    "hyphen_break": 0.6,
+    "dash_run": 0.6
+   },
+   "a": {
+    "hyphen_break": 5.2,
+    "orphan_bracket": 1.7
+   },
+   "qlen_med": 112,
+   "qlen_p95": 322,
+   "alen_med": 540,
+   "alen_p95": 1439,
+   "rows_med": 1,
+   "rows_p95": 4
+  }
+ },
+ "finnish": {
+  "title": "Finnish",
+  "cards": 168,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2010,
+   2025
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 85,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 142,
+   "cardsOnMultiQPage": 142,
+   "cardsOnMultiTopicPage": 142
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 168,
+   "q": {
+    "hyphen_break": 1.2,
+    "orphan_bracket": 4.8
+   },
+   "a": {
+    "hyphen_break": 3.0,
+    "orphan_bracket": 9.5
+   },
+   "qlen_med": 89,
+   "qlen_p95": 259,
+   "alen_med": 421,
+   "alen_p95": 1092,
+   "rows_med": 1,
+   "rows_p95": 4
+  }
+ },
+ "french": {
+  "title": "French",
+  "cards": 2286,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 31,
+  "pctRubric": 100,
+  "pctSchemeImage": 100,
+  "pageshare": {
+   "withWholePageSource": 2286,
+   "cardsOnMultiQPage": 1790,
+   "cardsOnMultiTopicPage": 36
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 2286,
+   "q": {
+    "orphan_bracket": 1.4,
+    "dash_run": 2.6,
+    "embedded_marks": 8.3
+   },
+   "a": {
+    "orphan_bracket": 73.9,
+    "slash_sep": 4.2,
+    "dot_leader": 1.6,
+    "sibling_parts": 0.7,
+    "embedded_marks": 8.3
+   },
+   "qlen_med": 126,
+   "qlen_p95": 314,
+   "alen_med": 1238,
+   "alen_p95": 2594,
+   "rows_med": 0,
+   "rows_p95": 0
+  }
+ },
+ "geography": {
+  "title": "Geography",
+  "cards": 4641,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 62,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 100,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 2874,
+   "cardsOnMultiQPage": 603,
+   "cardsOnMultiTopicPage": 533
+  },
+  "pdfcheck": {
+   "cardsChecked": 281,
+   "pageShowsOtherQuestion": 2,
+   "pct": 0.7,
+   "noQuestionNumberDetected": 65,
+   "avgPages": 1.0,
+   "examples": [
+    [
+     "geography-2010-ol-p1-q4",
+     "2010 OL Part 1 Q4",
+     [
+      4
+     ],
+     "also shows Q3"
+    ],
+    [
+     "geography-2010-ol-p1-q8",
+     "2010 OL Part 1 Q8",
+     [
+      6
+     ],
+     "also shows Q7"
+    ]
+   ]
+  },
+  "text": {
+   "n": 4641,
+   "q": {
+    "orphan_bracket": 71.2
+   },
+   "a": {
+    "orphan_bracket": 63.0,
+    "embedded_marks": 4.2,
+    "spaced_nums": 0.5
+   },
+   "qlen_med": 214,
+   "qlen_p95": 350,
+   "alen_med": 303,
+   "alen_p95": 1633,
+   "rows_med": 0,
+   "rows_p95": 0
+  }
+ },
+ "german": {
+  "title": "German",
+  "cards": 1776,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 44,
+  "pctRubric": 8,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 1776,
+   "cardsOnMultiQPage": 1578,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 1776,
+   "q": {
+    "orphan_bracket": 17.3,
+    "sibling_parts": 4.7,
+    "slash_sep": 1.1
+   },
+   "a": {
+    "dot_leader": 2.3,
+    "multi_slash": 19.7,
+    "orphan_bracket": 35.5,
+    "slash_sep": 2.8,
+    "embedded_marks": 12.1,
+    "hyphen_break": 0.6
+   },
+   "qlen_med": 218,
+   "qlen_p95": 536,
+   "alen_med": 385,
+   "alen_p95": 3039,
+   "rows_med": 1,
+   "rows_p95": 2
+  }
+ },
+ "history": {
+  "title": "History",
+  "cards": 4943,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 52,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 48,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 2563,
+   "cardsOnMultiQPage": 2563,
+   "cardsOnMultiTopicPage": 10
+  },
+  "pdfcheck": {
+   "cardsChecked": 152,
+   "pageShowsOtherQuestion": 52,
+   "pct": 34.2,
+   "noQuestionNumberDetected": 87,
+   "avgPages": 1.0,
+   "examples": [
+    [
+     "hist-2019-ol-lm-s2t1a-q2",
+     "2019 OL Later Modern Section 2 Topic 1 A Q2",
+     [
+      4
+     ],
+     "also shows Q1"
+    ],
+    [
+     "hist-2019-ol-lm-s2t1a-q3",
+     "2019 OL Later Modern Section 2 Topic 1 A Q3",
+     [
+      4
+     ],
+     "also shows Q1"
+    ],
+    [
+     "hist-2019-ol-lm-s2t1a-q4",
+     "2019 OL Later Modern Section 2 Topic 1 A Q4",
+     [
+      4
+     ],
+     "also shows Q1"
+    ],
+    [
+     "hist-2019-ol-lm-s2t1a-q5",
+     "2019 OL Later Modern Section 2 Topic 1 A Q5",
+     [
+      4
+     ],
+     "also shows Q1"
+    ]
+   ]
+  },
+  "text": {
+   "n": 4943,
+   "q": {
+    "hyphen_break": 1.0
+   },
+   "a": {
+    "orphan_bracket": 33.7
+   },
+   "qlen_med": 228,
+   "qlen_p95": 1076,
+   "alen_med": 734,
+   "alen_p95": 3294,
+   "rows_med": 1,
+   "rows_p95": 2
+  }
+ },
+ "home-economics": {
+  "title": "Home Economics",
+  "cards": 1953,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 13,
+  "pctFigure": 1,
+  "pctAttachedPage": 79,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 1,
+  "pageshare": {
+   "withWholePageSource": 1541,
+   "cardsOnMultiQPage": 724,
+   "cardsOnMultiTopicPage": 718
+  },
+  "pdfcheck": {
+   "cardsChecked": 346,
+   "pageShowsOtherQuestion": 107,
+   "pct": 30.9,
+   "noQuestionNumberDetected": 161,
+   "avgPages": 1.0,
+   "examples": [
+    [
+     "he-2012-hl-sa-q2",
+     "2012 HL Section A Q2",
+     [
+      2
+     ],
+     "also shows Q1"
+    ],
+    [
+     "he-2012-hl-sa-q3",
+     "2012 HL Section A Q3",
+     [
+      2
+     ],
+     "also shows Q1"
+    ],
+    [
+     "he-2012-hl-sa-q4",
+     "2012 HL Section A Q4",
+     [
+      3
+     ],
+     "also shows Q6,7"
+    ],
+    [
+     "he-2012-hl-sa-q5",
+     "2012 HL Section A Q5",
+     [
+      3
+     ],
+     "also shows Q4,6,7"
+    ]
+   ]
+  },
+  "text": {
+   "n": 1953,
+   "q": {
+    "orphan_bracket": 24.6
+   },
+   "a": {
+    "hyphen_break": 4.8,
+    "slash_sep": 0.5,
+    "orphan_bracket": 4.1
+   },
+   "qlen_med": 169,
+   "qlen_p95": 344,
+   "alen_med": 611,
+   "alen_p95": 3035,
+   "rows_med": 2,
+   "rows_p95": 4
+  }
+ },
+ "hungarian": {
+  "title": "Hungarian",
+  "cards": 219,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 84,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 185,
+   "cardsOnMultiQPage": 185,
+   "cardsOnMultiTopicPage": 185
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 219,
+   "q": {
+    "orphan_bracket": 0.9
+   },
+   "a": {
+    "dot_leader": 0.9
+   },
+   "qlen_med": 73,
+   "qlen_p95": 264,
+   "alen_med": 456,
+   "alen_p95": 1959,
+   "rows_med": 1,
+   "rows_p95": 2
+  }
+ },
+ "irish": {
+  "title": "Irish",
+  "cards": 4237,
+  "levels": [
+   "foundation",
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 98,
+  "pctAttachedCropped": 0,
+  "pctAudio": 13,
+  "pctRubric": 100,
+  "pctSchemeImage": 24,
+  "pageshare": {
+   "withWholePageSource": 4134,
+   "cardsOnMultiQPage": 0,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 4237,
+   "q": {
+    "sibling_parts": 11.7,
+    "orphan_bracket": 15.7
+   },
+   "a": {
+    "orphan_bracket": 55.1,
+    "sibling_parts": 31.8,
+    "slash_sep": 2.3,
+    "dash_run": 1.6,
+    "hyphen_break": 2.4,
+    "embedded_marks": 2.1,
+    "spaced_nums": 1.5
+   },
+   "qlen_med": 160,
+   "qlen_p95": 589,
+   "alen_med": 1718,
+   "alen_p95": 6241,
+   "rows_med": 0,
+   "rows_p95": 0
+  }
+ },
+ "italian": {
+  "title": "Italian",
+  "cards": 1319,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2016,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 92,
+  "pctAttachedCropped": 0,
+  "pctAudio": 36,
+  "pctRubric": 8,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 1211,
+   "cardsOnMultiQPage": 1113,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 1319,
+   "q": {
+    "sibling_parts": 13.9,
+    "newline_heavy": 1.3,
+    "embedded_marks": 4.5
+   },
+   "a": {
+    "orphan_bracket": 16.7,
+    "hyphen_break": 0.8,
+    "embedded_marks": 5.4,
+    "dash_run": 1.2
+   },
+   "qlen_med": 119,
+   "qlen_p95": 375,
+   "alen_med": 282,
+   "alen_p95": 1631,
+   "rows_med": 1,
+   "rows_p95": 3
+  }
+ },
+ "japanese": {
+  "title": "Japanese",
+  "cards": 1941,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 17,
+  "pctFigure": 0,
+  "pctAttachedPage": 97,
+  "pctAttachedCropped": 0,
+  "pctAudio": 45,
+  "pctRubric": 12,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 1876,
+   "cardsOnMultiQPage": 1694,
+   "cardsOnMultiTopicPage": 297
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 1941,
+   "q": {
+    "orphan_bracket": 1.3,
+    "dash_run": 4.2,
+    "double_space": 13.8,
+    "sibling_parts": 24.5,
+    "newline_heavy": 6.2,
+    "slash_sep": 0.5
+   },
+   "a": {
+    "embedded_marks": 9.2,
+    "orphan_bracket": 33.7,
+    "dash_run": 2.0,
+    "slash_sep": 1.2,
+    "dot_leader": 0.6,
+    "sibling_parts": 2.2,
+    "double_space": 4.4
+   },
+   "qlen_med": 168,
+   "qlen_p95": 452,
+   "alen_med": 50,
+   "alen_p95": 826,
+   "rows_med": 1,
+   "rows_p95": 5
+  }
+ },
+ "latin": {
+  "title": "Latin",
+  "cards": 231,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2021,
+   2025
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 45,
+  "pctAttachedCropped": 2,
+  "pctAudio": 0,
+  "pctRubric": 2,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 101,
+   "cardsOnMultiQPage": 0,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 231,
+   "q": {
+    "embedded_marks": 18.6,
+    "sibling_parts": 2.2,
+    "orphan_bracket": 9.1
+   },
+   "a": {
+    "dash_run": 4.3,
+    "orphan_bracket": 1.3,
+    "hyphen_break": 1.3
+   },
+   "qlen_med": 159,
+   "qlen_p95": 289,
+   "alen_med": 158,
+   "alen_p95": 1556,
+   "rows_med": 3,
+   "rows_p95": 13
+  }
+ },
+ "latvian": {
+  "title": "Latvian",
+  "cards": 167,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 80,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 133,
+   "cardsOnMultiQPage": 133,
+   "cardsOnMultiTopicPage": 133
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 167,
+   "q": {
+    "sibling_parts": 6.0,
+    "orphan_bracket": 14.4,
+    "hyphen_break": 0.6
+   },
+   "a": {
+    "hyphen_break": 1.2,
+    "orphan_bracket": 1.8
+   },
+   "qlen_med": 111,
+   "qlen_p95": 214,
+   "alen_med": 628,
+   "alen_p95": 1489,
+   "rows_med": 1,
+   "rows_p95": 6
+  }
+ },
+ "lcvp": {
+  "title": "Link Modules",
+  "cards": 518,
+  "levels": [
+   "common"
+  ],
+  "years": [
+   2015,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 20,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 518,
+   "cardsOnMultiQPage": 135,
+   "cardsOnMultiTopicPage": 70
+  },
+  "pdfcheck": {
+   "cardsChecked": 433,
+   "pageShowsOtherQuestion": 45,
+   "pct": 10.4,
+   "noQuestionNumberDetected": 208,
+   "avgPages": 1.03,
+   "examples": [
+    [
+     "lcvp-2019-cl-a1",
+     "2019 CL Section A Q1",
+     [
+      4
+     ],
+     "also shows Q2"
+    ],
+    [
+     "lcvp-2019-cl-a3",
+     "2019 CL Section A Q3",
+     [
+      4
+     ],
+     "also shows Q2"
+    ],
+    [
+     "lcvp-2019-cl-a4",
+     "2019 CL Section A Q4",
+     [
+      5
+     ],
+     "also shows Q5"
+    ],
+    [
+     "lcvp-2017-cl-a1",
+     "2017 CL Section A Q1",
+     [
+      3
+     ],
+     "also shows Q2,3"
+    ]
+   ]
+  },
+  "text": {
+   "n": 518,
+   "q": {
+    "sibling_parts": 0.6,
+    "orphan_bracket": 1.4
+   },
+   "a": {
+    "hyphen_break": 6.0,
+    "pipe_table": 49.6,
+    "slash_sep": 3.7
+   },
+   "qlen_med": 156,
+   "qlen_p95": 3162,
+   "alen_med": 829,
+   "alen_p95": 1779,
+   "rows_med": 1,
+   "rows_p95": 3
+  }
+ },
+ "lithuanian": {
+  "title": "Lithuanian",
+  "cards": 306,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 306,
+   "cardsOnMultiQPage": 7,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 306,
+   "q": {},
+   "a": {
+    "orphan_bracket": 2.0,
+    "slash_sep": 1.0
+   },
+   "qlen_med": 84,
+   "qlen_p95": 158,
+   "alen_med": 199,
+   "alen_p95": 548,
+   "rows_med": 1,
+   "rows_p95": 1
+  }
+ },
+ "maltese": {
+  "title": "Maltese",
+  "cards": 77,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2018,
+   2025
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 84,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 65,
+   "cardsOnMultiQPage": 65,
+   "cardsOnMultiTopicPage": 65
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 77,
+   "q": {
+    "orphan_bracket": 6.5,
+    "hyphen_break": 2.6
+   },
+   "a": {
+    "hyphen_break": 2.6,
+    "orphan_bracket": 1.3
+   },
+   "qlen_med": 94,
+   "qlen_p95": 308,
+   "alen_med": 385,
+   "alen_p95": 815,
+   "rows_med": 1,
+   "rows_p95": 5
+  }
+ },
+ "mandarin-chinese": {
+  "title": "Mandarin Chinese",
+  "cards": 201,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2022,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 201,
+   "cardsOnMultiQPage": 0,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 201,
+   "q": {
+    "sibling_parts": 3.0
+   },
+   "a": {
+    "orphan_bracket": 7.0,
+    "slash_sep": 1.0
+   },
+   "qlen_med": 69,
+   "qlen_p95": 183,
+   "alen_med": 24,
+   "alen_p95": 201,
+   "rows_med": 1,
+   "rows_p95": 4
+  }
+ },
+ "maths": {
+  "title": "Mathematics",
+  "cards": 5188,
+  "levels": [
+   "foundation",
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 86,
+  "pctFigure": 76,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 76,
+  "pageshare": {
+   "withWholePageSource": 5188,
+   "cardsOnMultiQPage": 600,
+   "cardsOnMultiTopicPage": 516
+  },
+  "pdfcheck": {
+   "cardsChecked": 389,
+   "pageShowsOtherQuestion": 26,
+   "pct": 6.7,
+   "noQuestionNumberDetected": 174,
+   "avgPages": 1.13,
+   "examples": [
+    [
+     "maths-2015-hl-p1-q1-a",
+     "2015 HL Paper 1 Q1(a)",
+     [
+      3
+     ],
+     "also shows Q2,3"
+    ],
+    [
+     "maths-2015-hl-p1-q1-b",
+     "2015 HL Paper 1 Q1(b)",
+     [
+      3
+     ],
+     "also shows Q2,3"
+    ],
+    [
+     "maths-2015-hl-p1-q1-c",
+     "2015 HL Paper 1 Q1(c)",
+     [
+      3
+     ],
+     "also shows Q2,3"
+    ],
+    [
+     "maths-2016-ol-p2-q5-a",
+     "2016 OL Paper 2 Q5(a)",
+     [
+      7
+     ],
+     "also shows Q1,2,3,4"
+    ]
+   ]
+  },
+  "text": {
+   "n": 5188,
+   "q": {
+    "spaced_nums": 2.9,
+    "orphan_bracket": 8.0,
+    "pipe_table": 9.8,
+    "sibling_parts": 1.3,
+    "caret_math": 3.2,
+    "flat_fraction": 0.9
+   },
+   "a": {
+    "orphan_bracket": 3.5,
+    "pipe_table": 2.3,
+    "flat_fraction": 0.8,
+    "caret_math": 1.3,
+    "embedded_marks": 0.8
+   },
+   "qlen_med": 241,
+   "qlen_p95": 651,
+   "alen_med": 388,
+   "alen_p95": 1869,
+   "rows_med": 2,
+   "rows_p95": 8
+  }
+ },
+ "modern-greek": {
+  "title": "Modern Greek",
+  "cards": 142,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 77,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 110,
+   "cardsOnMultiQPage": 110,
+   "cardsOnMultiTopicPage": 110
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 142,
+   "q": {
+    "orphan_bracket": 0.7,
+    "dot_leader": 0.7
+   },
+   "a": {
+    "dot_leader": 1.4
+   },
+   "qlen_med": 157,
+   "qlen_p95": 340,
+   "alen_med": 653,
+   "alen_p95": 1574,
+   "rows_med": 1,
+   "rows_p95": 5
+  }
+ },
+ "music": {
+  "title": "Music",
+  "cards": 1708,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 63,
+  "pctFigure": 8,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 92,
+  "pctAudio": 78,
+  "pctRubric": 20,
+  "pctSchemeImage": 8,
+  "pageshare": {
+   "withWholePageSource": 137,
+   "cardsOnMultiQPage": 0,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 1708,
+   "q": {
+    "repl_char": 6.0,
+    "dash_run": 1.1,
+    "sibling_parts": 1.7,
+    "orphan_bracket": 0.8
+   },
+   "a": {
+    "orphan_bracket": 5.1,
+    "embedded_marks": 13.7,
+    "sibling_parts": 0.8,
+    "slash_sep": 1.1
+   },
+   "qlen_med": 314,
+   "qlen_p95": 677,
+   "alen_med": 144,
+   "alen_p95": 1425,
+   "rows_med": 1,
+   "rows_p95": 2
+  }
+ },
+ "physical-education": {
+  "title": "Physical Education",
+  "cards": 772,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2020,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 100,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 772,
+   "cardsOnMultiQPage": 105,
+   "cardsOnMultiTopicPage": 105
+  },
+  "pdfcheck": {
+   "cardsChecked": 602,
+   "pageShowsOtherQuestion": 108,
+   "pct": 17.9,
+   "noQuestionNumberDetected": 214,
+   "avgPages": 1.3,
+   "examples": [
+    [
+     "pe-2021-ol-q1a",
+     "2021 OL Q1(a)",
+     [
+      3
+     ],
+     "also shows Q2"
+    ],
+    [
+     "pe-2021-ol-q1b",
+     "2021 OL Q1(b)",
+     [
+      3
+     ],
+     "also shows Q2"
+    ],
+    [
+     "pe-2021-ol-q2",
+     "2021 OL Q2",
+     [
+      3
+     ],
+     "also shows Q1"
+    ],
+    [
+     "pe-2021-ol-q3",
+     "2021 OL Q3(a)",
+     [
+      4
+     ],
+     "also shows Q4"
+    ]
+   ]
+  },
+  "text": {
+   "n": 772,
+   "q": {
+    "newline_heavy": 0.6,
+    "orphan_bracket": 0.8,
+    "embedded_marks": 1.0,
+    "dash_run": 1.0
+   },
+   "a": {},
+   "qlen_med": 138,
+   "qlen_p95": 329,
+   "alen_med": 464,
+   "alen_p95": 956,
+   "rows_med": 0,
+   "rows_p95": 0
+  }
+ },
+ "physics": {
+  "title": "Physics",
+  "cards": 4059,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 6,
+  "pctFigure": 41,
+  "pctAttachedPage": 1,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 10,
+  "pageshare": {
+   "withWholePageSource": 51,
+   "cardsOnMultiQPage": 4,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": {
+   "cardsChecked": 51,
+   "pageShowsOtherQuestion": 28,
+   "pct": 54.9,
+   "noQuestionNumberDetected": 10,
+   "avgPages": 1.0,
+   "examples": [
+    [
+     "phys-2022-ol-q1-ii",
+     "2022 OL Q1(ii)",
+     [
+      2
+     ],
+     "also shows Q2"
+    ],
+    [
+     "phys-2021-ol-q3-iii",
+     "2021 OL Q3(iii)",
+     [
+      3
+     ],
+     "also shows Q2"
+    ],
+    [
+     "phys-2021-ol-q3-iv",
+     "2021 OL Q3(iv)",
+     [
+      3
+     ],
+     "also shows Q2"
+    ],
+    [
+     "phys-2021-ol-q2-vi",
+     "2021 OL Q2(vi)",
+     [
+      3
+     ],
+     "also shows Q3"
+    ]
+   ]
+  },
+  "text": {
+   "n": 4059,
+   "q": {
+    "orphan_bracket": 1.0,
+    "spaced_nums": 0.8,
+    "multi_slash": 0.7
+   },
+   "a": {
+    "orphan_bracket": 24.1,
+    "flat_fraction": 0.9,
+    "slash_sep": 5.3,
+    "multi_slash": 8.9
+   },
+   "qlen_med": 207,
+   "qlen_p95": 735,
+   "alen_med": 98,
+   "alen_p95": 360,
+   "rows_med": 1,
+   "rows_p95": 4
+  }
+ },
+ "polish": {
+  "title": "Polish",
+  "cards": 805,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 32,
+  "pctRubric": 9,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 805,
+   "cardsOnMultiQPage": 412,
+   "cardsOnMultiTopicPage": 152
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 805,
+   "q": {
+    "sibling_parts": 0.6,
+    "orphan_bracket": 4.5,
+    "dash_run": 2.5
+   },
+   "a": {
+    "orphan_bracket": 9.7
+   },
+   "qlen_med": 158,
+   "qlen_p95": 345,
+   "alen_med": 287,
+   "alen_p95": 2370,
+   "rows_med": 1,
+   "rows_p95": 3
+  }
+ },
+ "politics-and-society": {
+  "title": "Politics and Society",
+  "cards": 623,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2018,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 100,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 623,
+   "cardsOnMultiQPage": 217,
+   "cardsOnMultiTopicPage": 217
+  },
+  "pdfcheck": {
+   "cardsChecked": 348,
+   "pageShowsOtherQuestion": 30,
+   "pct": 8.6,
+   "noQuestionNumberDetected": 235,
+   "avgPages": 1.62,
+   "examples": [
+    [
+     "politics-2026-hl-q1-m",
+     "2026 HL Q1(m)",
+     [
+      7
+     ],
+     "also shows Q12"
+    ],
+    [
+     "politics-2026-hl-q1-n",
+     "2026 HL Q1(n)",
+     [
+      7
+     ],
+     "also shows Q12"
+    ],
+    [
+     "politics-2026-hl-q1-o",
+     "2026 HL Q1(o)",
+     [
+      7
+     ],
+     "also shows Q12"
+    ],
+    [
+     "politics-2026-hl-q2-a",
+     "2026 HL Q2(a)",
+     [
+      8,
+      9,
+      10
+     ],
+     "also shows Q1"
+    ]
+   ]
+  },
+  "text": {
+   "n": 623,
+   "q": {
+    "orphan_bracket": 3.4,
+    "newline_heavy": 2.9
+   },
+   "a": {
+    "newline_heavy": 71.9,
+    "orphan_bracket": 1.8,
+    "hyphen_break": 0.6
+   },
+   "qlen_med": 110,
+   "qlen_p95": 517,
+   "alen_med": 801,
+   "alen_p95": 6312,
+   "rows_med": 0,
+   "rows_p95": 0
+  }
+ },
+ "portuguese": {
+  "title": "Portuguese",
+  "cards": 744,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 97,
+  "pctAttachedCropped": 0,
+  "pctAudio": 40,
+  "pctRubric": 10,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 723,
+   "cardsOnMultiQPage": 420,
+   "cardsOnMultiTopicPage": 121
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 744,
+   "q": {
+    "orphan_bracket": 1.7,
+    "sibling_parts": 6.3,
+    "dash_run": 1.5
+   },
+   "a": {
+    "hyphen_break": 0.8,
+    "orphan_bracket": 1.9
+   },
+   "qlen_med": 169,
+   "qlen_p95": 338,
+   "alen_med": 306,
+   "alen_p95": 1906,
+   "rows_med": 1,
+   "rows_p95": 3
+  }
+ },
+ "religious-education": {
+  "title": "Religious Education",
+  "cards": 786,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 0,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 100,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 0,
+   "cardsOnMultiQPage": 0,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 786,
+   "q": {
+    "orphan_bracket": 16.7
+   },
+   "a": {
+    "hyphen_break": 2.7,
+    "orphan_bracket": 1.3
+   },
+   "qlen_med": 150,
+   "qlen_p95": 271,
+   "alen_med": 2139,
+   "alen_p95": 3113,
+   "rows_med": 0,
+   "rows_p95": 0
+  }
+ },
+ "romanian": {
+  "title": "Romanian",
+  "cards": 187,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 82,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 154,
+   "cardsOnMultiQPage": 154,
+   "cardsOnMultiTopicPage": 154
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 187,
+   "q": {
+    "orphan_bracket": 0.5
+   },
+   "a": {
+    "dot_leader": 1.1
+   },
+   "qlen_med": 171,
+   "qlen_p95": 318,
+   "alen_med": 940,
+   "alen_p95": 1724,
+   "rows_med": 1,
+   "rows_p95": 5
+  }
+ },
+ "russian": {
+  "title": "Russian",
+  "cards": 1485,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 46,
+  "pctRubric": 97,
+  "pctSchemeImage": 100,
+  "pageshare": {
+   "withWholePageSource": 1485,
+   "cardsOnMultiQPage": 1276,
+   "cardsOnMultiTopicPage": 951
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 1485,
+   "q": {
+    "double_space": 1.4,
+    "newline_heavy": 3.4,
+    "embedded_marks": 3.0,
+    "dot_leader": 0.7
+   },
+   "a": {
+    "hyphen_break": 3.9,
+    "orphan_bracket": 18.7,
+    "slash_sep": 2.0,
+    "embedded_marks": 22.8,
+    "multi_slash": 1.2
+   },
+   "qlen_med": 67,
+   "qlen_p95": 612,
+   "alen_med": 751,
+   "alen_p95": 4757,
+   "rows_med": 0,
+   "rows_p95": 0
+  }
+ },
+ "slovakian": {
+  "title": "Slovakian",
+  "cards": 206,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 84,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 174,
+   "cardsOnMultiQPage": 174,
+   "cardsOnMultiTopicPage": 174
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 206,
+   "q": {
+    "orphan_bracket": 1.5
+   },
+   "a": {
+    "orphan_bracket": 1.0
+   },
+   "qlen_med": 82,
+   "qlen_p95": 212,
+   "alen_med": 526,
+   "alen_p95": 1329,
+   "rows_med": 1,
+   "rows_p95": 1
+  }
+ },
+ "slovenian": {
+  "title": "Slovenian",
+  "cards": 60,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2018,
+   2024
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 83,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 50,
+   "cardsOnMultiQPage": 50,
+   "cardsOnMultiTopicPage": 50
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 60,
+   "q": {
+    "embedded_marks": 1.7,
+    "orphan_bracket": 1.7
+   },
+   "a": {
+    "orphan_bracket": 1.7
+   },
+   "qlen_med": 111,
+   "qlen_p95": 302,
+   "alen_med": 388,
+   "alen_p95": 1255,
+   "rows_med": 1,
+   "rows_p95": 5
+  }
+ },
+ "spanish": {
+  "title": "Spanish",
+  "cards": 2268,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 100,
+  "pctAttachedCropped": 0,
+  "pctAudio": 38,
+  "pctRubric": 6,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 2268,
+   "cardsOnMultiQPage": 1338,
+   "cardsOnMultiTopicPage": 873
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 2268,
+   "q": {
+    "orphan_bracket": 12.3,
+    "embedded_marks": 9.2
+   },
+   "a": {
+    "orphan_bracket": 21.4,
+    "embedded_marks": 0.6,
+    "sibling_parts": 1.4
+   },
+   "qlen_med": 163,
+   "qlen_p95": 374,
+   "alen_med": 252,
+   "alen_p95": 1081,
+   "rows_med": 1,
+   "rows_p95": 2
+  }
+ },
+ "swedish": {
+  "title": "Swedish",
+  "cards": 191,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 83,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 159,
+   "cardsOnMultiQPage": 159,
+   "cardsOnMultiTopicPage": 159
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 191,
+   "q": {
+    "orphan_bracket": 8.9,
+    "hyphen_break": 0.5
+   },
+   "a": {
+    "orphan_bracket": 2.1,
+    "hyphen_break": 2.1
+   },
+   "qlen_med": 97,
+   "qlen_p95": 232,
+   "alen_med": 432,
+   "alen_p95": 1287,
+   "rows_med": 1,
+   "rows_p95": 4
+  }
+ },
+ "technology": {
+  "title": "Technology",
+  "cards": 2340,
+  "levels": [
+   "higher",
+   "ordinary"
+  ],
+  "years": [
+   2010,
+   2026
+  ],
+  "pctQuestionImage": 57,
+  "pctFigure": 17,
+  "pctAttachedPage": 0,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 17,
+  "pageshare": {
+   "withWholePageSource": 0,
+   "cardsOnMultiQPage": 0,
+   "cardsOnMultiTopicPage": 0
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 2340,
+   "q": {
+    "orphan_bracket": 15.1,
+    "sibling_parts": 3.0
+   },
+   "a": {
+    "orphan_bracket": 2.3,
+    "hyphen_break": 2.2
+   },
+   "qlen_med": 208,
+   "qlen_p95": 434,
+   "alen_med": 142,
+   "alen_p95": 488,
+   "rows_med": 1,
+   "rows_p95": 4
+  }
+ },
+ "ukrainian": {
+  "title": "Ukrainian",
+  "cards": 26,
+  "levels": [
+   "higher"
+  ],
+  "years": [
+   2025,
+   2026
+  ],
+  "pctQuestionImage": 0,
+  "pctFigure": 0,
+  "pctAttachedPage": 85,
+  "pctAttachedCropped": 0,
+  "pctAudio": 0,
+  "pctRubric": 0,
+  "pctSchemeImage": 0,
+  "pageshare": {
+   "withWholePageSource": 22,
+   "cardsOnMultiQPage": 22,
+   "cardsOnMultiTopicPage": 22
+  },
+  "pdfcheck": null,
+  "text": {
+   "n": 26,
+   "q": {
+    "orphan_bracket": 3.8
+   },
+   "a": {},
+   "qlen_med": 102,
+   "qlen_p95": 216,
+   "alen_med": 321,
+   "alen_p95": 1542,
+   "rows_med": 1,
+   "rows_p95": 7
+  }
+ }
+}

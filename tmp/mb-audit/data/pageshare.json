@@ -1,0 +1,3425 @@
+{
+ "accounting": {
+  "cards": 1365,
+  "withWholePageSource": 1365,
+  "pages": 417,
+  "pagesMultiQuestion": 1,
+  "pagesMultiTopic": 1,
+  "cardsOnMultiQPage": 8,
+  "cardsOnMultiTopicPage": 8,
+  "examples": [
+   [
+    2010,
+    "higher",
+    4,
+    [
+     [
+      "2010 HL Q3(a)",
+      "accounting-2-5"
+     ],
+     [
+      "2010 HL Q3(b)",
+      "accounting-2-5"
+     ],
+     [
+      "2010 HL Q3(c)",
+      "accounting-2-5"
+     ],
+     [
+      "2010 HL Q3(d)(i)",
+      "accounting-2-5"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "agricultural-science": {
+  "cards": 2464,
+  "withWholePageSource": 2464,
+  "pages": 574,
+  "pagesMultiQuestion": 76,
+  "pagesMultiTopic": 75,
+  "cardsOnMultiQPage": 831,
+  "cardsOnMultiTopicPage": 829,
+  "examples": [
+   [
+    2021,
+    "ordinary",
+    9,
+    [
+     [
+      "2021 OL Q6(a)\u2013(e)",
+      "agsci-4-3-2"
+     ],
+     [
+      "2021 OL Q7(a)",
+      "agsci-1-3"
+     ],
+     [
+      "2021 OL Q7(b)",
+      "agsci-4-3-1"
+     ],
+     [
+      "2021 OL Q7(c)",
+      "agsci-1-3"
+     ]
+    ]
+   ],
+   [
+    2024,
+    "ordinary",
+    6,
+    [
+     [
+      "2024 OL Q3",
+      "agsci-2-1"
+     ],
+     [
+      "2024 OL Q4",
+      "agsci-4-3-3"
+     ]
+    ]
+   ],
+   [
+    2025,
+    "ordinary",
+    5,
+    [
+     [
+      "2025 OL Q2",
+      "agsci-4-3-3"
+     ],
+     [
+      "2025 OL Q3",
+      "agsci-3-3-3"
+     ]
+    ]
+   ]
+  ],
+  "figs": 397,
+  "figMissing": 0,
+  "figMedW": 900,
+  "figP90W": 1483,
+  "figWide>1200": 86,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 3,
+  "figCards": 394
+ },
+ "ancient-greek": {
+  "cards": 404,
+  "withWholePageSource": 143,
+  "pages": 55,
+  "pagesMultiQuestion": 0,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 0,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "applied-maths": {
+  "cards": 1486,
+  "withWholePageSource": 103,
+  "pages": 68,
+  "pagesMultiQuestion": 0,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 0,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "arabic": {
+  "cards": 250,
+  "withWholePageSource": 40,
+  "pages": 30,
+  "pagesMultiQuestion": 30,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 40,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "art": {
+  "cards": 1756,
+  "withWholePageSource": 673,
+  "pages": 72,
+  "pagesMultiQuestion": 71,
+  "pagesMultiTopic": 66,
+  "cardsOnMultiQPage": 671,
+  "cardsOnMultiTopicPage": 649,
+  "examples": [
+   [
+    2010,
+    "higher",
+    1,
+    [
+     [
+      "2010 HL Q1 \u00b7 task 1",
+      "art-5-0"
+     ],
+     [
+      "2010 HL Q1 \u00b7 task 2",
+      "art-5-0"
+     ],
+     [
+      "2010 HL Q4 \u00b7 task 1",
+      "art-5-1"
+     ],
+     [
+      "2010 HL Q4 \u00b7 task 2",
+      "art-5-1"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    4,
+    [
+     [
+      "2010 HL Q14 \u00b7 task 1",
+      "art-4-4"
+     ],
+     [
+      "2010 HL Q14 \u00b7 task 2",
+      "art-4-4"
+     ],
+     [
+      "2010 HL Q16",
+      "art-6-2"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "higher",
+    1,
+    [
+     [
+      "2011 HL Q1 \u00b7 task 1",
+      "art-5-0"
+     ],
+     [
+      "2011 HL Q1 \u00b7 task 2",
+      "art-5-0"
+     ],
+     [
+      "2011 HL Q13 \u00b7 task 1",
+      "art-4-4"
+     ],
+     [
+      "2011 HL Q13 \u00b7 task 2",
+      "art-4-4"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "biology": {
+  "cards": 6601,
+  "withWholePageSource": 6,
+  "pages": 5,
+  "pagesMultiQuestion": 0,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 0,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 2283,
+  "figMissing": 0,
+  "figMedW": 735,
+  "figP90W": 1308,
+  "figWide>1200": 436,
+  "figTall": 87,
+  "includesPrompt": 0,
+  "qFigCards": 148,
+  "figCards": 2135
+ },
+ "bulgarian": {
+  "cards": 219,
+  "withWholePageSource": 147,
+  "pages": 34,
+  "pagesMultiQuestion": 30,
+  "pagesMultiTopic": 30,
+  "cardsOnMultiQPage": 145,
+  "cardsOnMultiTopicPage": 145,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section I Q6",
+      "bulgarian-0-1"
+     ],
+     [
+      "2010 HL Section II Q1",
+      "bulgarian-1-0"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section I Q6",
+      "bulgarian-0-1"
+     ],
+     [
+      "2010 HL Section II Q1",
+      "bulgarian-1-0"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "higher",
+    2,
+    [
+     [
+      "2011 HL Section I Q1(\u0430)",
+      "bulgarian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(\u0431)",
+      "bulgarian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(\u0432)",
+      "bulgarian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(\u0433)",
+      "bulgarian-0-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "business": {
+  "cards": 2163,
+  "withWholePageSource": 2163,
+  "pages": 446,
+  "pagesMultiQuestion": 215,
+  "pagesMultiTopic": 215,
+  "cardsOnMultiQPage": 960,
+  "cardsOnMultiTopicPage": 960,
+  "examples": [
+   [
+    2010,
+    "ordinary",
+    2,
+    [
+     [
+      "2010 OL Section 1 Q1",
+      "business-2-13"
+     ],
+     [
+      "2010 OL Section 1 Q2",
+      "business-3-19"
+     ],
+     [
+      "2010 OL Section 1 Q3",
+      "business-5-13"
+     ],
+     [
+      "2010 OL Section 1 Q4",
+      "business-6-14"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "ordinary",
+    4,
+    [
+     [
+      "2010 OL Section 1 Q10",
+      "business-5-14"
+     ],
+     [
+      "2010 OL Section 1 Q11",
+      "business-2-13"
+     ],
+     [
+      "2010 OL Section 1 Q12",
+      "business-5-15"
+     ],
+     [
+      "2010 OL Section 1 Q8",
+      "business-4-15"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "ordinary",
+    5,
+    [
+     [
+      "2010 OL Section 1 Q13",
+      "business-4-17"
+     ],
+     [
+      "2010 OL Section 1 Q14",
+      "business-2-11"
+     ],
+     [
+      "2010 OL Section 1 Q15",
+      "business-4-15"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "chemistry": {
+  "cards": 3369,
+  "withWholePageSource": 10,
+  "pages": 10,
+  "pagesMultiQuestion": 0,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 0,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 1886,
+  "figMissing": 0,
+  "figMedW": 801,
+  "figP90W": 1028,
+  "figWide>1200": 23,
+  "figTall": 110,
+  "includesPrompt": 0,
+  "qFigCards": 239,
+  "figCards": 1647
+ },
+ "classical-studies": {
+  "cards": 516,
+  "withWholePageSource": 249,
+  "pages": 86,
+  "pagesMultiQuestion": 7,
+  "pagesMultiTopic": 6,
+  "cardsOnMultiQPage": 38,
+  "cardsOnMultiTopicPage": 34,
+  "examples": [
+   [
+    2024,
+    "higher",
+    2,
+    [
+     [
+      "2024 HL Q2(a)",
+      "classical-studies-3-2"
+     ],
+     [
+      "2024 HL Q2(b)",
+      "classical-studies-3-2"
+     ],
+     [
+      "2024 HL Q3(a)",
+      "classical-studies-3-1"
+     ],
+     [
+      "2024 HL Q3(b)",
+      "classical-studies-3-1"
+     ]
+    ]
+   ],
+   [
+    2024,
+    "higher",
+    4,
+    [
+     [
+      "2024 HL Q5(a)",
+      "classical-studies-1-0"
+     ],
+     [
+      "2024 HL Q5(b)",
+      "classical-studies-1-0"
+     ],
+     [
+      "2024 HL Q5(c)",
+      "classical-studies-1-2"
+     ],
+     [
+      "2024 HL Q6(a)",
+      "classical-studies-1-0"
+     ]
+    ]
+   ],
+   [
+    2023,
+    "ordinary",
+    2,
+    [
+     [
+      "2023 OL Q2(a)",
+      "classical-studies-3-0"
+     ],
+     [
+      "2023 OL Q2(b)",
+      "classical-studies-3-0"
+     ],
+     [
+      "2023 OL Q2(c)",
+      "classical-studies-3-0"
+     ],
+     [
+      "2023 OL Q2(d)",
+      "classical-studies-3-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "computer-science": {
+  "cards": 582,
+  "withWholePageSource": 0,
+  "pages": 0,
+  "pagesMultiQuestion": 0,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 0,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 518,
+  "figMissing": 0,
+  "figMedW": 1163,
+  "figP90W": 1248,
+  "figWide>1200": 216,
+  "figTall": 2,
+  "includesPrompt": 0,
+  "qFigCards": 373,
+  "figCards": 145
+ },
+ "construction-studies": {
+  "cards": 1261,
+  "withWholePageSource": 1261,
+  "pages": 164,
+  "pagesMultiQuestion": 145,
+  "pagesMultiTopic": 144,
+  "cardsOnMultiQPage": 1261,
+  "cardsOnMultiTopicPage": 1261,
+  "examples": [
+   [
+    2016,
+    "higher",
+    1,
+    [
+     [
+      "2016 HL Q1 \u2014 complete",
+      "cons-1-5"
+     ],
+     [
+      "2016 HL Q1(a)",
+      "cons-1-5"
+     ],
+     [
+      "2016 HL Q1(b)",
+      "cons-3-10"
+     ],
+     [
+      "2016 HL Q10 \u2014 complete",
+      "cons-6-2"
+     ]
+    ]
+   ],
+   [
+    2016,
+    "higher",
+    2,
+    [
+     [
+      "2016 HL Q1 \u2014 complete",
+      "cons-1-5"
+     ],
+     [
+      "2016 HL Q1(a)",
+      "cons-1-5"
+     ],
+     [
+      "2016 HL Q1(b)",
+      "cons-3-10"
+     ],
+     [
+      "2016 HL Q2 \u2014 complete",
+      "cons-1-8"
+     ]
+    ]
+   ],
+   [
+    2016,
+    "higher",
+    3,
+    [
+     [
+      "2016 HL Q4 \u2014 complete",
+      "cons-1-3"
+     ],
+     [
+      "2016 HL Q4(a)",
+      "cons-1-3"
+     ],
+     [
+      "2016 HL Q4(b)",
+      "cons-1-3"
+     ],
+     [
+      "2016 HL Q4(c)",
+      "cons-1-2"
+     ]
+    ]
+   ]
+  ],
+  "figs": 2336,
+  "figMissing": 0,
+  "figMedW": 1070,
+  "figP90W": 1110,
+  "figWide>1200": 0,
+  "figTall": 187,
+  "includesPrompt": 1261,
+  "qFigCards": 1261,
+  "figCards": 1075
+ },
+ "croatian": {
+  "cards": 151,
+  "withWholePageSource": 125,
+  "pages": 27,
+  "pagesMultiQuestion": 27,
+  "pagesMultiTopic": 27,
+  "cardsOnMultiQPage": 125,
+  "cardsOnMultiTopicPage": 125,
+  "examples": [
+   [
+    2014,
+    "higher",
+    2,
+    [
+     [
+      "2014 HL Section I Q1",
+      "croatian-0-0"
+     ],
+     [
+      "2014 HL Section I Q2",
+      "croatian-0-1"
+     ],
+     [
+      "2014 HL Section I Q3",
+      "croatian-0-1"
+     ],
+     [
+      "2014 HL Section I Q4",
+      "croatian-0-1"
+     ]
+    ]
+   ],
+   [
+    2014,
+    "higher",
+    3,
+    [
+     [
+      "2014 HL Section I Q1",
+      "croatian-0-0"
+     ],
+     [
+      "2014 HL Section I Q2",
+      "croatian-0-1"
+     ],
+     [
+      "2014 HL Section I Q3",
+      "croatian-0-1"
+     ],
+     [
+      "2014 HL Section I Q4",
+      "croatian-0-1"
+     ]
+    ]
+   ],
+   [
+    2015,
+    "higher",
+    2,
+    [
+     [
+      "2015 HL Section I Q1",
+      "croatian-0-0"
+     ],
+     [
+      "2015 HL Section I Q2",
+      "croatian-0-1"
+     ],
+     [
+      "2015 HL Section I Q3",
+      "croatian-0-1"
+     ],
+     [
+      "2015 HL Section I Q4",
+      "croatian-0-1"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "czech": {
+  "cards": 155,
+  "withWholePageSource": 121,
+  "pages": 35,
+  "pagesMultiQuestion": 35,
+  "pagesMultiTopic": 35,
+  "cardsOnMultiQPage": 121,
+  "cardsOnMultiTopicPage": 121,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section I Q1",
+      "czech-0-0"
+     ],
+     [
+      "2010 HL Section I Q2",
+      "czech-0-1"
+     ],
+     [
+      "2010 HL Section I Q3",
+      "czech-0-1"
+     ],
+     [
+      "2010 HL Section I Q4",
+      "czech-0-1"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section I Q1",
+      "czech-0-0"
+     ],
+     [
+      "2010 HL Section I Q2",
+      "czech-0-1"
+     ],
+     [
+      "2010 HL Section I Q3",
+      "czech-0-1"
+     ],
+     [
+      "2010 HL Section I Q4",
+      "czech-0-1"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "higher",
+    2,
+    [
+     [
+      "2011 HL Section I Q1",
+      "czech-0-0"
+     ],
+     [
+      "2011 HL Section I Q2",
+      "czech-0-1"
+     ],
+     [
+      "2011 HL Section I Q3",
+      "czech-0-1"
+     ],
+     [
+      "2011 HL Section I Q4",
+      "czech-0-1"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "danish": {
+  "cards": 126,
+  "withWholePageSource": 110,
+  "pages": 26,
+  "pagesMultiQuestion": 26,
+  "pagesMultiTopic": 26,
+  "cardsOnMultiQPage": 110,
+  "cardsOnMultiTopicPage": 110,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section I Q1",
+      "danish-0-1"
+     ],
+     [
+      "2010 HL Section I Q2",
+      "danish-0-1"
+     ],
+     [
+      "2010 HL Section I Q3",
+      "danish-0-1"
+     ],
+     [
+      "2010 HL Section I Q4",
+      "danish-0-1"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section I Q1",
+      "danish-0-1"
+     ],
+     [
+      "2010 HL Section I Q2",
+      "danish-0-1"
+     ],
+     [
+      "2010 HL Section I Q3",
+      "danish-0-1"
+     ],
+     [
+      "2010 HL Section I Q4",
+      "danish-0-1"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "higher",
+    2,
+    [
+     [
+      "2011 HL Section I Q1",
+      "danish-0-1"
+     ],
+     [
+      "2011 HL Section I Q2",
+      "danish-0-1"
+     ],
+     [
+      "2011 HL Section I Q3",
+      "danish-0-1"
+     ],
+     [
+      "2011 HL Section I Q4",
+      "danish-0-1"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "dcg": {
+  "cards": 1284,
+  "withWholePageSource": 151,
+  "pages": 35,
+  "pagesMultiQuestion": 0,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 0,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 1284,
+  "figMissing": 0,
+  "figMedW": 828,
+  "figP90W": 885,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 1284,
+  "figCards": 0
+ },
+ "dutch": {
+  "cards": 219,
+  "withWholePageSource": 185,
+  "pages": 34,
+  "pagesMultiQuestion": 34,
+  "pagesMultiTopic": 34,
+  "cardsOnMultiQPage": 185,
+  "cardsOnMultiTopicPage": 185,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section I Q1(a)",
+      "dutch-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(b)",
+      "dutch-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(c)",
+      "dutch-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(d)",
+      "dutch-0-0"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section I Q1(a)",
+      "dutch-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(b)",
+      "dutch-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(c)",
+      "dutch-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(d)",
+      "dutch-0-0"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "higher",
+    2,
+    [
+     [
+      "2011 HL Section I Q1(a)",
+      "dutch-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(b)",
+      "dutch-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(c)",
+      "dutch-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(d)",
+      "dutch-0-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "economics": {
+  "cards": 2297,
+  "withWholePageSource": 2297,
+  "pages": 561,
+  "pagesMultiQuestion": 138,
+  "pagesMultiTopic": 134,
+  "cardsOnMultiQPage": 1108,
+  "cardsOnMultiTopicPage": 1099,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section A Q1",
+      "economics-1-0"
+     ],
+     [
+      "2010 HL Section A Q2",
+      "economics-3-1"
+     ],
+     [
+      "2010 HL Section A Q3",
+      "economics-1-4"
+     ],
+     [
+      "2010 HL Section A Q4",
+      "economics-2-0"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section A Q6",
+      "economics-3-0"
+     ],
+     [
+      "2010 HL Section A Q7",
+      "economics-3-2"
+     ],
+     [
+      "2010 HL Section A Q8",
+      "economics-2-1"
+     ],
+     [
+      "2010 HL Section A Q9",
+      "economics-1-3"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    4,
+    [
+     [
+      "2010 HL Section B Q1(a)(i)",
+      "economics-1-0"
+     ],
+     [
+      "2010 HL Section B Q1(a)(ii)",
+      "economics-1-0"
+     ],
+     [
+      "2010 HL Section B Q1(a)(iii)",
+      "economics-1-0"
+     ],
+     [
+      "2010 HL Section B Q1(b)(i)",
+      "economics-1-4"
+     ]
+    ]
+   ]
+  ],
+  "figs": 766,
+  "figMissing": 0,
+  "figMedW": 1600,
+  "figP90W": 2000,
+  "figWide>1200": 563,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 144,
+  "figCards": 622
+ },
+ "engineering": {
+  "cards": 2269,
+  "withWholePageSource": 0,
+  "pages": 0,
+  "pagesMultiQuestion": 0,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 0,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 1281,
+  "figMissing": 0,
+  "figMedW": 737,
+  "figP90W": 1348,
+  "figWide>1200": 271,
+  "figTall": 43,
+  "includesPrompt": 0,
+  "qFigCards": 893,
+  "figCards": 388
+ },
+ "english": {
+  "cards": 3105,
+  "withWholePageSource": 982,
+  "pages": 370,
+  "pagesMultiQuestion": 144,
+  "pagesMultiTopic": 12,
+  "cardsOnMultiQPage": 626,
+  "cardsOnMultiTopicPage": 29,
+  "examples": [
+   [
+    2021,
+    "ordinary",
+    4,
+    [
+     [
+      "2021 OL Paper 1 Composing 5",
+      "english-9-1"
+     ],
+     [
+      "2021 OL Paper 1 Text 2 QA(i)",
+      "english-10-0"
+     ],
+     [
+      "2021 OL Paper 1 Text 2 QA(ii)",
+      "english-10-0"
+     ],
+     [
+      "2021 OL Paper 1 Text 2 QA(iii)(a)",
+      "english-10-0"
+     ]
+    ]
+   ],
+   [
+    2021,
+    "ordinary",
+    5,
+    [
+     [
+      "2021 OL Paper 1 Composing 5",
+      "english-9-1"
+     ],
+     [
+      "2021 OL Paper 1 Text 2 QA(i)",
+      "english-10-0"
+     ],
+     [
+      "2021 OL Paper 1 Text 2 QA(ii)",
+      "english-10-0"
+     ],
+     [
+      "2021 OL Paper 1 Text 2 QA(iii)(a)",
+      "english-10-0"
+     ]
+    ]
+   ],
+   [
+    2020,
+    "ordinary",
+    6,
+    [
+     [
+      "2020 OL Paper 1 Composing 3",
+      "english-9-1"
+     ],
+     [
+      "2020 OL Paper 1 Text 3 QA(i)",
+      "english-10-0"
+     ],
+     [
+      "2020 OL Paper 1 Text 3 QA(ii)",
+      "english-10-0"
+     ],
+     [
+      "2020 OL Paper 1 Text 3 QA(iii)(a)",
+      "english-10-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "estonian": {
+  "cards": 172,
+  "withWholePageSource": 143,
+  "pages": 31,
+  "pagesMultiQuestion": 31,
+  "pagesMultiTopic": 26,
+  "cardsOnMultiQPage": 143,
+  "cardsOnMultiTopicPage": 131,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section I Q1(a)",
+      "estonian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(b)",
+      "estonian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(c)",
+      "estonian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(d)",
+      "estonian-0-0"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section I Q1(a)",
+      "estonian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(b)",
+      "estonian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(c)",
+      "estonian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(d)",
+      "estonian-0-0"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "higher",
+    2,
+    [
+     [
+      "2011 HL Section I Q1(a)",
+      "estonian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(b)",
+      "estonian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(c)",
+      "estonian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(d)",
+      "estonian-0-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "finnish": {
+  "cards": 168,
+  "withWholePageSource": 142,
+  "pages": 28,
+  "pagesMultiQuestion": 28,
+  "pagesMultiTopic": 28,
+  "cardsOnMultiQPage": 142,
+  "cardsOnMultiTopicPage": 142,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section I Q1(a)",
+      "finnish-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(b)",
+      "finnish-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(c)",
+      "finnish-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(d)",
+      "finnish-0-0"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section I Q1(a)",
+      "finnish-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(b)",
+      "finnish-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(c)",
+      "finnish-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(d)",
+      "finnish-0-0"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "higher",
+    2,
+    [
+     [
+      "2011 HL Section I Q1(a)",
+      "finnish-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(b)",
+      "finnish-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(c)",
+      "finnish-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(d)",
+      "finnish-0-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "french": {
+  "cards": 2286,
+  "withWholePageSource": 2286,
+  "pages": 542,
+  "pagesMultiQuestion": 414,
+  "pagesMultiTopic": 14,
+  "cardsOnMultiQPage": 1790,
+  "cardsOnMultiTopicPage": 36,
+  "examples": [
+   [
+    2021,
+    "higher",
+    11,
+    [
+     [
+      "2021 HL Section B Q2",
+      "french-6-0"
+     ],
+     [
+      "2021 HL Section B Q3",
+      "french-7-0"
+     ],
+     [
+      "2021 HL Section B Q4",
+      "french-6-3"
+     ]
+    ]
+   ],
+   [
+    2021,
+    "higher",
+    12,
+    [
+     [
+      "2021 HL Section B Q5",
+      "french-7-2"
+     ],
+     [
+      "2021 HL Section B Q6",
+      "french-7-1"
+     ]
+    ]
+   ],
+   [
+    2022,
+    "higher",
+    11,
+    [
+     [
+      "2022 HL Section B Q2",
+      "french-6-0"
+     ],
+     [
+      "2022 HL Section B Q3",
+      "french-6-3"
+     ],
+     [
+      "2022 HL Section B Q4",
+      "french-7-1"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "geography": {
+  "cards": 4641,
+  "withWholePageSource": 2874,
+  "pages": 739,
+  "pagesMultiQuestion": 87,
+  "pagesMultiTopic": 73,
+  "cardsOnMultiQPage": 603,
+  "cardsOnMultiTopicPage": 533,
+  "examples": [
+   [
+    2010,
+    "higher",
+    1,
+    [
+     [
+      "2010 HL Part 1 Q2(i)",
+      "geography-2-6"
+     ],
+     [
+      "2010 HL Part 1 Q2(ii)",
+      "geography-2-6"
+     ],
+     [
+      "2010 HL Part 1 Q2(iii)",
+      "geography-2-6"
+     ],
+     [
+      "2010 HL Part 1 Q2(iv)",
+      "geography-2-6"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    1,
+    [
+     [
+      "2010 HL Part 1 Q4(i)",
+      "geography-2-8"
+     ],
+     [
+      "2010 HL Part 1 Q4(ii)",
+      "geography-2-8"
+     ],
+     [
+      "2010 HL Part 1 Q4(iii)",
+      "geography-2-8"
+     ],
+     [
+      "2010 HL Part 2 Q12C",
+      "geography-4-3"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    7,
+    [
+     [
+      "2010 HL Part 1 Q7",
+      "geography-4-4"
+     ],
+     [
+      "2010 HL Part 1 Q8",
+      "geography-2-8"
+     ]
+    ]
+   ]
+  ],
+  "figs": 5,
+  "figMissing": 0,
+  "figMedW": 818,
+  "figP90W": 901,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 1,
+  "figCards": 4
+ },
+ "german": {
+  "cards": 1776,
+  "withWholePageSource": 1776,
+  "pages": 777,
+  "pagesMultiQuestion": 570,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 1578,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 1,
+  "figMissing": 0,
+  "figMedW": 1234,
+  "figP90W": 1234,
+  "figWide>1200": 1,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 1
+ },
+ "history": {
+  "cards": 4943,
+  "withWholePageSource": 2563,
+  "pages": 466,
+  "pagesMultiQuestion": 466,
+  "pagesMultiTopic": 1,
+  "cardsOnMultiQPage": 2563,
+  "cardsOnMultiTopicPage": 10,
+  "examples": [
+   [
+    2013,
+    "ordinary",
+    15,
+    [
+     [
+      "2013 OL Later Modern Section 3 Topic 2 A Q1",
+      "hist-lm-eur-2"
+     ],
+     [
+      "2013 OL Later Modern Section 3 Topic 2 A Q2",
+      "hist-lm-eur-2"
+     ],
+     [
+      "2013 OL Later Modern Section 3 Topic 2 A Q3",
+      "hist-lm-eur-2"
+     ],
+     [
+      "2013 OL Later Modern Section 3 Topic 2 A Q4",
+      "hist-lm-eur-2"
+     ]
+    ]
+   ]
+  ],
+  "figs": 20,
+  "figMissing": 0,
+  "figMedW": 1129,
+  "figP90W": 1416,
+  "figWide>1200": 5,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 20,
+  "figCards": 0
+ },
+ "home-economics": {
+  "cards": 1953,
+  "withWholePageSource": 1541,
+  "pages": 308,
+  "pagesMultiQuestion": 169,
+  "pagesMultiTopic": 166,
+  "cardsOnMultiQPage": 724,
+  "cardsOnMultiTopicPage": 718,
+  "examples": [
+   [
+    2025,
+    "ordinary",
+    3,
+    [
+     [
+      "2025 OL Section A Q1",
+      "home-economics-0-1"
+     ],
+     [
+      "2025 OL Section A Q2",
+      "home-economics-0-5"
+     ],
+     [
+      "2025 OL Section A Q2 \u2014 source",
+      "home-economics-0-5"
+     ],
+     [
+      "2025 OL Section A Q3",
+      "home-economics-0-9"
+     ]
+    ]
+   ],
+   [
+    2025,
+    "ordinary",
+    4,
+    [
+     [
+      "2025 OL Section A Q4",
+      "home-economics-0-6"
+     ],
+     [
+      "2025 OL Section A Q5",
+      "home-economics-0-9"
+     ],
+     [
+      "2025 OL Section A Q6",
+      "home-economics-0-10"
+     ]
+    ]
+   ],
+   [
+    2025,
+    "ordinary",
+    5,
+    [
+     [
+      "2025 OL Section A Q7",
+      "home-economics-0-9"
+     ],
+     [
+      "2025 OL Section A Q8",
+      "home-economics-1-2"
+     ],
+     [
+      "2025 OL Section A Q9",
+      "home-economics-0-10"
+     ]
+    ]
+   ]
+  ],
+  "figs": 271,
+  "figMissing": 0,
+  "figMedW": 1051,
+  "figP90W": 1376,
+  "figWide>1200": 96,
+  "figTall": 6,
+  "includesPrompt": 104,
+  "qFigCards": 247,
+  "figCards": 24
+ },
+ "hungarian": {
+  "cards": 219,
+  "withWholePageSource": 185,
+  "pages": 34,
+  "pagesMultiQuestion": 34,
+  "pagesMultiTopic": 34,
+  "cardsOnMultiQPage": 185,
+  "cardsOnMultiTopicPage": 185,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section I Q1(a)",
+      "hungarian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(b)",
+      "hungarian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(c)",
+      "hungarian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(d)",
+      "hungarian-0-0"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section I Q1(a)",
+      "hungarian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(b)",
+      "hungarian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(c)",
+      "hungarian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(d)",
+      "hungarian-0-0"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "higher",
+    2,
+    [
+     [
+      "2011 HL Section I Q1(a)",
+      "hungarian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(b)",
+      "hungarian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(c)",
+      "hungarian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(d)",
+      "hungarian-0-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "irish": {
+  "cards": 4237,
+  "withWholePageSource": 4134,
+  "pages": 841,
+  "pagesMultiQuestion": 0,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 0,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "italian": {
+  "cards": 1319,
+  "withWholePageSource": 1211,
+  "pages": 262,
+  "pagesMultiQuestion": 193,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 1113,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "japanese": {
+  "cards": 1941,
+  "withWholePageSource": 1876,
+  "pages": 407,
+  "pagesMultiQuestion": 268,
+  "pagesMultiTopic": 44,
+  "cardsOnMultiQPage": 1694,
+  "cardsOnMultiTopicPage": 297,
+  "examples": [
+   [
+    2010,
+    "ordinary",
+    6,
+    [
+     [
+      "2010 OL Section 3A Q1",
+      "japanese-5-0"
+     ],
+     [
+      "2010 OL Section 3A Q2",
+      "japanese-5-0"
+     ],
+     [
+      "2010 OL Section 3B",
+      "japanese-5-5"
+     ],
+     [
+      "2010 OL Section 3C",
+      "japanese-5-5"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "ordinary",
+    4,
+    [
+     [
+      "2011 OL Section 2A",
+      "japanese-5-1"
+     ],
+     [
+      "2011 OL Section 2B",
+      "japanese-5-1"
+     ],
+     [
+      "2011 OL Section 2C",
+      "japanese-5-4"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "ordinary",
+    8,
+    [
+     [
+      "2011 OL Section 3A Q1",
+      "japanese-5-0"
+     ],
+     [
+      "2011 OL Section 3A Q2(i)",
+      "japanese-5-0"
+     ],
+     [
+      "2011 OL Section 3A Q2(ii)",
+      "japanese-5-0"
+     ],
+     [
+      "2011 OL Section 3A Q3(i)",
+      "japanese-5-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 328,
+  "figMissing": 0,
+  "figMedW": 1072,
+  "figP90W": 1102,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 326,
+  "qFigCards": 328,
+  "figCards": 0
+ },
+ "latin": {
+  "cards": 231,
+  "withWholePageSource": 101,
+  "pages": 25,
+  "pagesMultiQuestion": 0,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 0,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "latvian": {
+  "cards": 167,
+  "withWholePageSource": 133,
+  "pages": 36,
+  "pagesMultiQuestion": 36,
+  "pagesMultiTopic": 36,
+  "cardsOnMultiQPage": 133,
+  "cardsOnMultiTopicPage": 133,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section I Q1",
+      "latvian-0-0"
+     ],
+     [
+      "2010 HL Section I Q2",
+      "latvian-0-1"
+     ],
+     [
+      "2010 HL Section I Q3",
+      "latvian-0-1"
+     ],
+     [
+      "2010 HL Section I Q4",
+      "latvian-0-1"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section I Q1",
+      "latvian-0-0"
+     ],
+     [
+      "2010 HL Section I Q2",
+      "latvian-0-1"
+     ],
+     [
+      "2010 HL Section I Q3",
+      "latvian-0-1"
+     ],
+     [
+      "2010 HL Section I Q4",
+      "latvian-0-1"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "higher",
+    2,
+    [
+     [
+      "2011 HL Section I Q1",
+      "latvian-0-0"
+     ],
+     [
+      "2011 HL Section I Q2",
+      "latvian-0-1"
+     ],
+     [
+      "2011 HL Section I Q3",
+      "latvian-0-1"
+     ],
+     [
+      "2011 HL Section I Q4",
+      "latvian-0-1"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "lcvp": {
+  "cards": 518,
+  "withWholePageSource": 518,
+  "pages": 302,
+  "pagesMultiQuestion": 39,
+  "pagesMultiTopic": 16,
+  "cardsOnMultiQPage": 135,
+  "cardsOnMultiTopicPage": 70,
+  "examples": [
+   [
+    2019,
+    "common",
+    9,
+    [
+     [
+      "2019 CL Section B Q1",
+      "lcvp-link-modules-1-2"
+     ],
+     [
+      "2019 CL Section B Q2(i)",
+      "lcvp-link-modules-1-2"
+     ],
+     [
+      "2019 CL Section B Q2(ii)",
+      "lcvp-link-modules-1-2"
+     ],
+     [
+      "2019 CL Section B Q2(iii)",
+      "lcvp-link-modules-1-2"
+     ]
+    ]
+   ],
+   [
+    2020,
+    "common",
+    4,
+    [
+     [
+      "2020 CL Section A Q1",
+      "lcvp-link-modules-1-2"
+     ],
+     [
+      "2020 CL Section A Q2",
+      "lcvp-link-modules-1-0"
+     ],
+     [
+      "2020 CL Section A Q3",
+      "lcvp-link-modules-1-0"
+     ]
+    ]
+   ],
+   [
+    2022,
+    "common",
+    4,
+    [
+     [
+      "2022 CL Section A Q1",
+      "lcvp-link-modules-1-0"
+     ],
+     [
+      "2022 CL Section A Q2",
+      "lcvp-link-modules-0-0"
+     ],
+     [
+      "2022 CL Section A Q3",
+      "lcvp-link-modules-1-1"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "lithuanian": {
+  "cards": 306,
+  "withWholePageSource": 306,
+  "pages": 67,
+  "pagesMultiQuestion": 2,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 7,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "maltese": {
+  "cards": 77,
+  "withWholePageSource": 65,
+  "pages": 15,
+  "pagesMultiQuestion": 15,
+  "pagesMultiTopic": 15,
+  "cardsOnMultiQPage": 65,
+  "cardsOnMultiTopicPage": 65,
+  "examples": [
+   [
+    2018,
+    "higher",
+    2,
+    [
+     [
+      "2018 HL Section I Q1(a)",
+      "maltese-0-0"
+     ],
+     [
+      "2018 HL Section I Q1(b)",
+      "maltese-0-0"
+     ],
+     [
+      "2018 HL Section I Q1(d)",
+      "maltese-0-0"
+     ],
+     [
+      "2018 HL Section I Q1(e)",
+      "maltese-0-0"
+     ]
+    ]
+   ],
+   [
+    2018,
+    "higher",
+    3,
+    [
+     [
+      "2018 HL Section I Q1(a)",
+      "maltese-0-0"
+     ],
+     [
+      "2018 HL Section I Q1(b)",
+      "maltese-0-0"
+     ],
+     [
+      "2018 HL Section I Q1(d)",
+      "maltese-0-0"
+     ],
+     [
+      "2018 HL Section I Q1(e)",
+      "maltese-0-0"
+     ]
+    ]
+   ],
+   [
+    2019,
+    "higher",
+    2,
+    [
+     [
+      "2019 HL Section I Q1(a)",
+      "maltese-0-0"
+     ],
+     [
+      "2019 HL Section I Q1(b)",
+      "maltese-0-0"
+     ],
+     [
+      "2019 HL Section I Q1(d)",
+      "maltese-0-0"
+     ],
+     [
+      "2019 HL Section I Q1(e)",
+      "maltese-0-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "mandarin-chinese": {
+  "cards": 201,
+  "withWholePageSource": 201,
+  "pages": 42,
+  "pagesMultiQuestion": 0,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 0,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "maths": {
+  "cards": 5188,
+  "withWholePageSource": 5188,
+  "pages": 2331,
+  "pagesMultiQuestion": 55,
+  "pagesMultiTopic": 48,
+  "cardsOnMultiQPage": 600,
+  "cardsOnMultiTopicPage": 516,
+  "examples": [
+   [
+    2012,
+    "ordinary",
+    2,
+    [
+     [
+      "2012 OL Paper 1 Q1(a)",
+      "maths-3-1"
+     ],
+     [
+      "2012 OL Paper 1 Q1(b)(i)",
+      "maths-3-3"
+     ],
+     [
+      "2012 OL Paper 1 Q1(b)(ii)",
+      "maths-3-3"
+     ],
+     [
+      "2012 OL Paper 1 Q1(c)(i)",
+      "maths-3-3"
+     ]
+    ]
+   ],
+   [
+    2012,
+    "ordinary",
+    3,
+    [
+     [
+      "2012 OL Paper 1 Q3(a)",
+      "maths-4-2"
+     ],
+     [
+      "2012 OL Paper 1 Q3(b)(i)",
+      "maths-4-2"
+     ],
+     [
+      "2012 OL Paper 1 Q3(b)(ii)",
+      "maths-4-2"
+     ],
+     [
+      "2012 OL Paper 1 Q3(c)(i)",
+      "maths-4-1"
+     ]
+    ]
+   ],
+   [
+    2012,
+    "ordinary",
+    4,
+    [
+     [
+      "2012 OL Paper 1 Q5(a)",
+      "maths-3-1"
+     ],
+     [
+      "2012 OL Paper 1 Q5(b)(i)",
+      "maths-3-1"
+     ],
+     [
+      "2012 OL Paper 1 Q5(b)(ii)",
+      "maths-3-1"
+     ],
+     [
+      "2012 OL Paper 1 Q5(c)(i)",
+      "maths-3-1"
+     ]
+    ]
+   ]
+  ],
+  "figs": 8393,
+  "figMissing": 0,
+  "figMedW": 1323,
+  "figP90W": 1445,
+  "figWide>1200": 6344,
+  "figTall": 144,
+  "includesPrompt": 0,
+  "qFigCards": 4454,
+  "figCards": 3939
+ },
+ "modern-greek": {
+  "cards": 142,
+  "withWholePageSource": 110,
+  "pages": 32,
+  "pagesMultiQuestion": 32,
+  "pagesMultiTopic": 32,
+  "cardsOnMultiQPage": 110,
+  "cardsOnMultiTopicPage": 110,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section 1 Q1",
+      "modern-greek-0-0"
+     ],
+     [
+      "2010 HL Section 1 Q2",
+      "modern-greek-0-1"
+     ],
+     [
+      "2010 HL Section 1 Q3",
+      "modern-greek-0-1"
+     ],
+     [
+      "2010 HL Section 1 Q4",
+      "modern-greek-0-1"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section 1 Q1",
+      "modern-greek-0-0"
+     ],
+     [
+      "2010 HL Section 1 Q2",
+      "modern-greek-0-1"
+     ],
+     [
+      "2010 HL Section 1 Q3",
+      "modern-greek-0-1"
+     ],
+     [
+      "2010 HL Section 1 Q4",
+      "modern-greek-0-1"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "higher",
+    2,
+    [
+     [
+      "2011 HL Section 1 Q1",
+      "modern-greek-0-0"
+     ],
+     [
+      "2011 HL Section 1 Q2",
+      "modern-greek-0-1"
+     ],
+     [
+      "2011 HL Section 1 Q3",
+      "modern-greek-0-1"
+     ],
+     [
+      "2011 HL Section 1 Q4",
+      "modern-greek-0-1"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "music": {
+  "cards": 1708,
+  "withWholePageSource": 137,
+  "pages": 223,
+  "pagesMultiQuestion": 0,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 0,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 1210,
+  "figMissing": 0,
+  "figMedW": 1382,
+  "figP90W": 1489,
+  "figWide>1200": 922,
+  "figTall": 0,
+  "includesPrompt": 919,
+  "qFigCards": 1073,
+  "figCards": 137
+ },
+ "physical-education": {
+  "cards": 772,
+  "withWholePageSource": 772,
+  "pages": 431,
+  "pagesMultiQuestion": 31,
+  "pagesMultiTopic": 31,
+  "cardsOnMultiQPage": 105,
+  "cardsOnMultiTopicPage": 105,
+  "examples": [
+   [
+    2020,
+    "higher",
+    3,
+    [
+     [
+      "2020 HL Q1",
+      "physical-education-0-2"
+     ],
+     [
+      "2020 HL Q2",
+      "physical-education-0-12"
+     ]
+    ]
+   ],
+   [
+    2020,
+    "higher",
+    7,
+    [
+     [
+      "2020 HL Q6",
+      "physical-education-1-1"
+     ],
+     [
+      "2020 HL Q7",
+      "physical-education-0-11"
+     ]
+    ]
+   ],
+   [
+    2021,
+    "higher",
+    3,
+    [
+     [
+      "2021 HL Q1",
+      "physical-education-1-1"
+     ],
+     [
+      "2021 HL Q2",
+      "physical-education-0-3"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "physics": {
+  "cards": 4059,
+  "withWholePageSource": 51,
+  "pages": 24,
+  "pagesMultiQuestion": 1,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 4,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 1937,
+  "figMissing": 0,
+  "figMedW": 1101,
+  "figP90W": 1540,
+  "figWide>1200": 866,
+  "figTall": 45,
+  "includesPrompt": 0,
+  "qFigCards": 254,
+  "figCards": 1683
+ },
+ "polish": {
+  "cards": 805,
+  "withWholePageSource": 805,
+  "pages": 175,
+  "pagesMultiQuestion": 76,
+  "pagesMultiTopic": 25,
+  "cardsOnMultiQPage": 412,
+  "cardsOnMultiTopicPage": 152,
+  "examples": [
+   [
+    2021,
+    "higher",
+    2,
+    [
+     [
+      "2021 HL Section I Q1(a)",
+      "polish-3-0"
+     ],
+     [
+      "2021 HL Section I Q1(b)",
+      "polish-3-0"
+     ],
+     [
+      "2021 HL Section I Q1(c)",
+      "polish-3-0"
+     ],
+     [
+      "2021 HL Section I Q1(d)",
+      "polish-3-0"
+     ]
+    ]
+   ],
+   [
+    2021,
+    "higher",
+    3,
+    [
+     [
+      "2021 HL Section I Q1(a)",
+      "polish-3-0"
+     ],
+     [
+      "2021 HL Section I Q1(b)",
+      "polish-3-0"
+     ],
+     [
+      "2021 HL Section I Q1(c)",
+      "polish-3-0"
+     ],
+     [
+      "2021 HL Section I Q1(d)",
+      "polish-3-0"
+     ]
+    ]
+   ],
+   [
+    2021,
+    "higher",
+    4,
+    [
+     [
+      "2021 HL Section I Q1(a)",
+      "polish-3-0"
+     ],
+     [
+      "2021 HL Section I Q1(b)",
+      "polish-3-0"
+     ],
+     [
+      "2021 HL Section I Q1(c)",
+      "polish-3-0"
+     ],
+     [
+      "2021 HL Section I Q1(d)",
+      "polish-3-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "politics-and-society": {
+  "cards": 623,
+  "withWholePageSource": 623,
+  "pages": 226,
+  "pagesMultiQuestion": 56,
+  "pagesMultiTopic": 56,
+  "cardsOnMultiQPage": 217,
+  "cardsOnMultiTopicPage": 217,
+  "examples": [
+   [
+    2018,
+    "higher",
+    12,
+    [
+     [
+      "2018 HL Q3",
+      "politics-and-society-0-12"
+     ],
+     [
+      "2018 HL Q4(a)",
+      "politics-and-society-0-6"
+     ],
+     [
+      "2018 HL Q4(b)",
+      "politics-and-society-2-5"
+     ]
+    ]
+   ],
+   [
+    2018,
+    "higher",
+    13,
+    [
+     [
+      "2018 HL Q5(a)",
+      "politics-and-society-3-3"
+     ],
+     [
+      "2018 HL Q5(b)",
+      "politics-and-society-3-1"
+     ],
+     [
+      "2018 HL Q6",
+      "politics-and-society-3-4"
+     ]
+    ]
+   ],
+   [
+    2019,
+    "higher",
+    12,
+    [
+     [
+      "2019 HL Q3(a)",
+      "politics-and-society-0-5"
+     ],
+     [
+      "2019 HL Q3(b)",
+      "politics-and-society-1-2"
+     ],
+     [
+      "2019 HL Q4",
+      "politics-and-society-3-7"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "portuguese": {
+  "cards": 744,
+  "withWholePageSource": 723,
+  "pages": 170,
+  "pagesMultiQuestion": 83,
+  "pagesMultiTopic": 24,
+  "cardsOnMultiQPage": 420,
+  "cardsOnMultiTopicPage": 121,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section I Q1(a)",
+      "portuguese-2-0"
+     ],
+     [
+      "2010 HL Section I Q1(b)",
+      "portuguese-2-0"
+     ],
+     [
+      "2010 HL Section I Q1(c)",
+      "portuguese-2-0"
+     ],
+     [
+      "2010 HL Section I Q1(d)",
+      "portuguese-2-0"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section I Q1(a)",
+      "portuguese-2-0"
+     ],
+     [
+      "2010 HL Section I Q1(b)",
+      "portuguese-2-0"
+     ],
+     [
+      "2010 HL Section I Q1(c)",
+      "portuguese-2-0"
+     ],
+     [
+      "2010 HL Section I Q1(d)",
+      "portuguese-2-0"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "higher",
+    2,
+    [
+     [
+      "2011 HL Section I Q1(a)",
+      "portuguese-2-0"
+     ],
+     [
+      "2011 HL Section I Q1(b)",
+      "portuguese-2-0"
+     ],
+     [
+      "2011 HL Section I Q1(c)",
+      "portuguese-2-0"
+     ],
+     [
+      "2011 HL Section I Q1(d)",
+      "portuguese-2-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "religious-education": {
+  "cards": 786,
+  "withWholePageSource": 0,
+  "pages": 0,
+  "pagesMultiQuestion": 0,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 0,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "romanian": {
+  "cards": 187,
+  "withWholePageSource": 154,
+  "pages": 34,
+  "pagesMultiQuestion": 34,
+  "pagesMultiTopic": 34,
+  "cardsOnMultiQPage": 154,
+  "cardsOnMultiTopicPage": 154,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section I Q1(a)",
+      "romanian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(b)",
+      "romanian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(c)",
+      "romanian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(d)",
+      "romanian-0-0"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section I Q1(a)",
+      "romanian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(b)",
+      "romanian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(c)",
+      "romanian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(d)",
+      "romanian-0-0"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "higher",
+    2,
+    [
+     [
+      "2011 HL Section I Q1(a)",
+      "romanian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(b)",
+      "romanian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(c)",
+      "romanian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(d)",
+      "romanian-0-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "russian": {
+  "cards": 1485,
+  "withWholePageSource": 1485,
+  "pages": 591,
+  "pagesMultiQuestion": 365,
+  "pagesMultiTopic": 249,
+  "cardsOnMultiQPage": 1276,
+  "cardsOnMultiTopicPage": 951,
+  "examples": [
+   [
+    2021,
+    "higher",
+    2,
+    [
+     [
+      "2021 HL Section C1 Q1(i)",
+      "russian-3-0"
+     ],
+     [
+      "2021 HL Section C1 Q1(ii)",
+      "russian-3-0"
+     ],
+     [
+      "2021 HL Section C1 Q2(i)",
+      "russian-3-0"
+     ],
+     [
+      "2021 HL Section C1 Q2(ii)",
+      "russian-3-0"
+     ]
+    ]
+   ],
+   [
+    2021,
+    "higher",
+    3,
+    [
+     [
+      "2021 HL Section C1 Q1(i)",
+      "russian-3-0"
+     ],
+     [
+      "2021 HL Section C1 Q1(ii)",
+      "russian-3-0"
+     ],
+     [
+      "2021 HL Section C1 Q2(i)",
+      "russian-3-0"
+     ],
+     [
+      "2021 HL Section C1 Q2(ii)",
+      "russian-3-0"
+     ]
+    ]
+   ],
+   [
+    2021,
+    "higher",
+    4,
+    [
+     [
+      "2021 HL Section C1 Q1(i)",
+      "russian-3-0"
+     ],
+     [
+      "2021 HL Section C1 Q1(ii)",
+      "russian-3-0"
+     ],
+     [
+      "2021 HL Section C1 Q2(i)",
+      "russian-3-0"
+     ],
+     [
+      "2021 HL Section C1 Q2(ii)",
+      "russian-3-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "slovakian": {
+  "cards": 206,
+  "withWholePageSource": 174,
+  "pages": 32,
+  "pagesMultiQuestion": 32,
+  "pagesMultiTopic": 32,
+  "cardsOnMultiQPage": 174,
+  "cardsOnMultiTopicPage": 174,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section I Q1(a)",
+      "slovakian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(b)",
+      "slovakian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(c)",
+      "slovakian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(d)",
+      "slovakian-0-0"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section I Q1(a)",
+      "slovakian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(b)",
+      "slovakian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(c)",
+      "slovakian-0-0"
+     ],
+     [
+      "2010 HL Section I Q1(d)",
+      "slovakian-0-0"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "higher",
+    2,
+    [
+     [
+      "2011 HL Section I Q1(a)",
+      "slovakian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(b)",
+      "slovakian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(c)",
+      "slovakian-0-0"
+     ],
+     [
+      "2011 HL Section I Q1(d)",
+      "slovakian-0-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "slovenian": {
+  "cards": 60,
+  "withWholePageSource": 50,
+  "pages": 10,
+  "pagesMultiQuestion": 10,
+  "pagesMultiTopic": 10,
+  "cardsOnMultiQPage": 50,
+  "cardsOnMultiTopicPage": 50,
+  "examples": [
+   [
+    2018,
+    "higher",
+    2,
+    [
+     [
+      "2018 HL Section I Q1",
+      "slovenian-0-0"
+     ],
+     [
+      "2018 HL Section I Q2",
+      "slovenian-0-1"
+     ],
+     [
+      "2018 HL Section I Q3",
+      "slovenian-0-1"
+     ],
+     [
+      "2018 HL Section I Q4",
+      "slovenian-0-1"
+     ]
+    ]
+   ],
+   [
+    2018,
+    "higher",
+    3,
+    [
+     [
+      "2018 HL Section I Q1",
+      "slovenian-0-0"
+     ],
+     [
+      "2018 HL Section I Q2",
+      "slovenian-0-1"
+     ],
+     [
+      "2018 HL Section I Q3",
+      "slovenian-0-1"
+     ],
+     [
+      "2018 HL Section I Q4",
+      "slovenian-0-1"
+     ]
+    ]
+   ],
+   [
+    2019,
+    "higher",
+    2,
+    [
+     [
+      "2019 HL Section I Q1(a)",
+      "slovenian-0-0"
+     ],
+     [
+      "2019 HL Section I Q1(b)",
+      "slovenian-0-0"
+     ],
+     [
+      "2019 HL Section I Q1(c)",
+      "slovenian-0-0"
+     ],
+     [
+      "2019 HL Section I Q1(d)",
+      "slovenian-0-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "spanish": {
+  "cards": 2268,
+  "withWholePageSource": 2268,
+  "pages": 435,
+  "pagesMultiQuestion": 154,
+  "pagesMultiTopic": 108,
+  "cardsOnMultiQPage": 1338,
+  "cardsOnMultiTopicPage": 873,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section L Q1(a)",
+      "spanish-3-0"
+     ],
+     [
+      "2010 HL Section L Q1(b)",
+      "spanish-3-0"
+     ],
+     [
+      "2010 HL Section L Q1(c)",
+      "spanish-3-0"
+     ],
+     [
+      "2010 HL Section L Q1(d)",
+      "spanish-3-0"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section L Q3(a)",
+      "spanish-3-2"
+     ],
+     [
+      "2010 HL Section L Q3(b)",
+      "spanish-3-2"
+     ],
+     [
+      "2010 HL Section L Q3(c)",
+      "spanish-3-2"
+     ],
+     [
+      "2010 HL Section L Q3(d)",
+      "spanish-3-2"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    5,
+    [
+     [
+      "2010 HL Section L Q6(a)",
+      "spanish-3-3"
+     ],
+     [
+      "2010 HL Section L Q6(b)",
+      "spanish-3-3"
+     ],
+     [
+      "2010 HL Section L Q6(c)",
+      "spanish-3-3"
+     ],
+     [
+      "2010 HL Section L Q6(d)",
+      "spanish-3-3"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "swedish": {
+  "cards": 191,
+  "withWholePageSource": 159,
+  "pages": 32,
+  "pagesMultiQuestion": 32,
+  "pagesMultiTopic": 32,
+  "cardsOnMultiQPage": 159,
+  "cardsOnMultiTopicPage": 159,
+  "examples": [
+   [
+    2010,
+    "higher",
+    2,
+    [
+     [
+      "2010 HL Section I Q1",
+      "swedish-0-1"
+     ],
+     [
+      "2010 HL Section I Q2",
+      "swedish-0-1"
+     ],
+     [
+      "2010 HL Section I Q3",
+      "swedish-0-1"
+     ],
+     [
+      "2010 HL Section I Q4",
+      "swedish-0-1"
+     ]
+    ]
+   ],
+   [
+    2010,
+    "higher",
+    3,
+    [
+     [
+      "2010 HL Section I Q1",
+      "swedish-0-1"
+     ],
+     [
+      "2010 HL Section I Q2",
+      "swedish-0-1"
+     ],
+     [
+      "2010 HL Section I Q3",
+      "swedish-0-1"
+     ],
+     [
+      "2010 HL Section I Q4",
+      "swedish-0-1"
+     ]
+    ]
+   ],
+   [
+    2011,
+    "higher",
+    2,
+    [
+     [
+      "2011 HL Section I Q1",
+      "swedish-0-1"
+     ],
+     [
+      "2011 HL Section I Q2",
+      "swedish-0-1"
+     ],
+     [
+      "2011 HL Section I Q3",
+      "swedish-0-1"
+     ],
+     [
+      "2011 HL Section I Q4",
+      "swedish-0-1"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ },
+ "technology": {
+  "cards": 2340,
+  "withWholePageSource": 0,
+  "pages": 0,
+  "pagesMultiQuestion": 0,
+  "pagesMultiTopic": 0,
+  "cardsOnMultiQPage": 0,
+  "cardsOnMultiTopicPage": 0,
+  "examples": [],
+  "figs": 1730,
+  "figMissing": 0,
+  "figMedW": 462,
+  "figP90W": 1126,
+  "figWide>1200": 142,
+  "figTall": 96,
+  "includesPrompt": 0,
+  "qFigCards": 1336,
+  "figCards": 394
+ },
+ "ukrainian": {
+  "cards": 26,
+  "withWholePageSource": 22,
+  "pages": 4,
+  "pagesMultiQuestion": 4,
+  "pagesMultiTopic": 4,
+  "cardsOnMultiQPage": 22,
+  "cardsOnMultiTopicPage": 22,
+  "examples": [
+   [
+    2025,
+    "higher",
+    2,
+    [
+     [
+      "2025 HL Section I Q1(a)",
+      "ukrainian-0-0"
+     ],
+     [
+      "2025 HL Section I Q1(b)",
+      "ukrainian-0-0"
+     ],
+     [
+      "2025 HL Section I Q1(c)",
+      "ukrainian-0-0"
+     ],
+     [
+      "2025 HL Section I Q1(d)",
+      "ukrainian-0-0"
+     ]
+    ]
+   ],
+   [
+    2025,
+    "higher",
+    3,
+    [
+     [
+      "2025 HL Section I Q1(a)",
+      "ukrainian-0-0"
+     ],
+     [
+      "2025 HL Section I Q1(b)",
+      "ukrainian-0-0"
+     ],
+     [
+      "2025 HL Section I Q1(c)",
+      "ukrainian-0-0"
+     ],
+     [
+      "2025 HL Section I Q1(d)",
+      "ukrainian-0-0"
+     ]
+    ]
+   ],
+   [
+    2026,
+    "higher",
+    2,
+    [
+     [
+      "2026 HL Section I Q1(a)",
+      "ukrainian-0-0"
+     ],
+     [
+      "2026 HL Section I Q1(b)",
+      "ukrainian-0-0"
+     ],
+     [
+      "2026 HL Section I Q1(c)",
+      "ukrainian-0-0"
+     ],
+     [
+      "2026 HL Section I Q1(d)",
+      "ukrainian-0-0"
+     ]
+    ]
+   ]
+  ],
+  "figs": 0,
+  "figMissing": 0,
+  "figMedW": 0,
+  "figP90W": 0,
+  "figWide>1200": 0,
+  "figTall": 0,
+  "includesPrompt": 0,
+  "qFigCards": 0,
+  "figCards": 0
+ }
+}
