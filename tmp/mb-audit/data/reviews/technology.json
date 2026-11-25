@@ -1,0 +1,250 @@
+{
+ "subject": "technology",
+ "verdict": "minor-issues",
+ "summary": "Technology is the cleanest of the four subjects: stems are typed in a smaller sans face, the asked part in large serif with (i)/(ii)/(iii) set as a proper list, figures are tight crops of the one drawing needed, and nothing from other questions leaks in. The faults are mostly in how the scheme is chopped up: multi-part cards list every acceptable answer as a separate tick row with no (i)/(ii) headings and no marks per part, several 'two reasons / three elements' answers are squeezed into one comma-joined row worth all the marks, and scheme shorthand ('etc.', slashes, '1.' '2.' prefixes) is left raw. Where the answer is a drawing, the tick row just repeats the question plus an internal note ('The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer') and the drawing sits in the question column. A few stems have flattened bullet lists or wording that contradicts the layout ('URL shown below' when it is above).",
+ "scores": {
+  "question": 4,
+  "attachments": 4,
+  "scheme": 3,
+  "phone": 4,
+  "desktop": 4
+ },
+ "issues": [
+  {
+   "title": "Multi-part schemes are one flat list with no part headings or marks",
+   "detail": "On cards that combine (i), (ii), (iii), the scheme is a single run of tick rows with no indication of which part each belongs to or what it is worth. Card 11 has 13 rows: 'Advantages:' and 'Disadvantages:' appear only as a prefix on the first row of each group, and the health risks and the fixes for part (ii) follow with no heading at all. Card 10 mixes the orbital sander description, sander safety, pillar drill safety and the Repak answer in four unlabelled rows (the pillar drill has safety features but no description row). Card 2's three rows map to (i), (ii), (iii) but are not labelled, and 20 marks are not split.",
+   "severity": "high",
+   "cards": [
+    2,
+    7,
+    10,
+    11
+   ],
+   "best_evidence_image": "11_desktop_answer.png",
+   "suggested_fix": "Group the rows under '(i) - x marks' / '(ii) - y marks' headings, with 'Any one of these' sub-groups for advantages, disadvantages, risks and reductions, as the Engineering cards do with 'One of these - 4 marks'."
+  },
+  {
+   "title": "Several required answers squeezed into one comma-joined row",
+   "detail": "Card 3 asks for three elements of a URL and offers one 8-mark row: 'https:// - Hypertext Transfer Protocol Secure, www. - worldwide web, rugbyworldcup.com - domain/host name, /supporters - filename'. Card 5 asks for two reasons and offers one 6-mark row joining two reasons and 'etc.'. Card 4 has 'Assembly operations- materials handling, clamping work, packaging operations, etc.' as one row. The student cannot tick what they actually got, and the dashes and commas read as a strung-together line.",
+   "severity": "medium",
+   "cards": [
+    3,
+    4,
+    5
+   ],
+   "best_evidence_image": "03_phone_answer.png",
+   "suggested_fix": "One row per element or reason ('https:// - Hypertext Transfer Protocol Secure'), under 'Any three - 8 marks'; a two-column term/meaning layout suits the URL card."
+  },
+  {
+   "title": "Drawing answers: tick row repeats the question plus an internal note",
+   "detail": "Where the scheme is a circuit or flowchart, the only tick row is the question text again ('Show how the given circuit could be modified...', 'Complete a flowchart for this sequence.') with the grey note 'The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.' The actual answer drawing is in the left column under the question, and on the phone it comes before 'Your answer' and the scheme heading, so the 10-mark flowchart has no breakdown at all.",
+   "severity": "medium",
+   "cards": [
+    6,
+    9
+   ],
+   "best_evidence_image": "09_phone_answer.png",
+   "suggested_fix": "Put the scheme drawing inside the scheme panel under 'Model answer', replace the note with tickable features (relay added; mains supply and fan motor on relay contacts / each decision and process box in order), and drop the internal wording."
+  },
+  {
+   "title": "Bullet list flattened into the stem paragraph",
+   "detail": "Card 9's alarm sequence is printed as running text with inline bullets: 'sequence: • when the engine stops, wait 2 minutes, ... ; • if the driver is not present ... ; • if a child is present ...'. Card 10 does the same in the question: 'material processing tools: • Orbital sander • Pillar drilling machine.' The sequence is the core data for the flowchart and is hard to follow on a phone.",
+   "severity": "medium",
+   "cards": [
+    9,
+    10
+   ],
+   "best_evidence_image": "09_phone_first_screen.png",
+   "suggested_fix": "Render the bullets as a real list, one step per line."
+  },
+  {
+   "title": "Raw scheme shorthand left in tick rows",
+   "detail": "Rows keep the examiner's shorthand: 'Bank Cards (credit/debit)/ golf handicap cards etc.', '1.Personal details such as PPSN can be stored.', '2. They can be protected...', 'Wrist support /Regular breaks/Varying types of work etc.', 'Reduce costs, staff training, change suppliers, advertising etc.', almost every row on card 8 ends ', etc.'. In card 1 the formula is flattened to 'Vout = (Vin × R2) / (R1 + R2 +R3) = (12 × 40) / (10 + 40 +10) = 480 / 60 = 8V' with uneven spacing and both 'x' and '×'; it also lists two alternative methods as four equal rows without saying they are alternatives.",
+   "severity": "medium",
+   "cards": [
+    1,
+    2,
+    7,
+    8,
+    11
+   ],
+   "best_evidence_image": "07_phone_answer.png",
+   "suggested_fix": "Split slash-joined alternatives into separate rows or 'e.g.' examples, strip the '1.'/'2.' numbering and trailing 'etc.', and set the potential-divider working as stacked lines ('Method 1' / 'Method 2')."
+  },
+  {
+   "title": "Wording that no longer matches the layout or is left over",
+   "detail": "Card 3 says 'Explain three elements of the URL shown below' but the URL image is above the question (there is also a stray tick mark above the image crop). Card 12's stem ends with a pasted figure caption, 'Leaos e-bike with pressed frame and integrated solar panels', with no full stop and no e-bike picture before the reveal; the frame photo only appears after the reveal, as if it were part of the answer. Card 10 mentions 'guitar B' with no guitar shown, and its Repak logo is given as much space as the data table.",
+   "severity": "low",
+   "cards": [
+    3,
+    10,
+    12
+   ],
+   "best_evidence_image": "03_desktop_answer.png",
+   "suggested_fix": "Place the figure after the sentence that refers to it (or reword to 'shown'), remove caption text from stems, and show the e-bike/frame image with the question."
+  },
+  {
+   "title": "Small data crops and dead space on phone",
+   "detail": "The Repak cost table (card 10) renders at about 5px text on a phone and the Pareto chart's rotated axis labels are low-resolution and soft even on desktop (card 2). Every card also has an empty band of 150-300px between 'Open original paper' and 'Your answer' on the phone, and 'I had something like this' under each row adds a lot of scroll on long lists (card 11).",
+   "severity": "low",
+   "cards": [
+    2,
+    10,
+    11
+   ],
+   "best_evidence_image": "10_phone_answer.png",
+   "suggested_fix": "Retype small tables as real text tables; re-crop the chart at higher resolution; remove the spacer on phone."
+  }
+ ],
+ "good_examples": [
+  {
+   "card": 8,
+   "why": "Stem, question and three plain scheme statements; reads cleanly on phone and desktop.",
+   "image": "08_desktop_answer.png"
+  },
+  {
+   "card": 1,
+   "why": "Large legible circuit, one-line question, worked calculation with the final 8 V shown.",
+   "image": "01_desktop_answer.png"
+  },
+  {
+   "card": 2,
+   "why": "Stem, chart and parts (i)-(iii) set out as a proper list; the question side is a model for multi-part cards.",
+   "image": "02_desktop_answer.png"
+  }
+ ],
+ "cards": [
+  {
+   "n": 1,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Circuit crop is clear. Scheme shows two alternative methods as four equal rows without saying so; formula flattened onto one line with slashes."
+  },
+  {
+   "n": 2,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Question side is well laid out. Chart is low-resolution with soft rotated labels. Scheme rows are not labelled (i)-(iii), 20 marks not split, 'etc.' shorthand."
+  },
+  {
+   "n": 3,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "'URL shown below' but it is above; stray mark above the image. All three-plus elements are in one comma-and-dash row worth 8 marks."
+  },
+  {
+   "n": 4,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Clean card. Scheme is one run-on row 'Assembly operations- materials handling, clamping work, packaging operations, etc.' for a one-example question."
+  },
+  {
+   "n": 5,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Clear question. 'Two reasons' answered by a single 6-mark row that joins two reasons with a comma and 'etc.'."
+  },
+  {
+   "n": 6,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Both circuits legible. The tick row only repeats the question with an internal note; the modified circuit (relay, motor, AC) sits under the question with no pointers to what was changed."
+  },
+  {
+   "n": 7,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Good question layout. Scheme rows not labelled (i)/(ii); leftover '1.' and '2.' and slash shorthand 'Bank Cards (credit/debit)/ golf handicap cards etc.'."
+  },
+  {
+   "n": 8,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Good. Three clear statements; only quibble is ', etc.' on every row."
+  },
+  {
+   "n": 9,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Alarm sequence bullets are flattened into the stem paragraph. Scheme flowchart is clear but sits in the question column; tick row is the question repeated plus an internal note, no breakdown of 10 marks."
+  },
+  {
+   "n": 10,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "minor",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Inline bullets in (i); 'guitar B' has no picture; cost table tiny on phone. Four unlabelled scheme rows mix sander description, sander safety, pillar-drill safety and the Repak answer."
+  },
+  {
+   "n": 11,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Question is clear. Scheme is 13 undifferentiated rows; 'Advantages:'/'Disadvantages:' only prefix one row each and part (ii) has no heading; very long on phone."
+  },
+  {
+   "n": 12,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "minor",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Stem ends with a pasted figure caption and no picture; the frame photo appears only after reveal. Three scheme points are clear ('does have' is the scheme's own wording)."
+  }
+ ]
+}

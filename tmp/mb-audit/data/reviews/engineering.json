@@ -1,0 +1,269 @@
+{
+ "subject": "engineering",
+ "verdict": "minor-issues",
+ "summary": "Engineering cards are far cleaner than the drawing subjects: the asked part is typed in large serif text, figures are tight crops of just the relevant drawing, and short recall questions (cutting fluids, transformer, up-cut/down-cut milling) look deliberate on both phone and desktop. The main faults are in the scheme text: internal authoring notes are printed to the student ('The paper sets two (c)s either side of an OR ... the scheme prices their romans alike ... so this card holds this part of both branches'), option rows glue a heading onto its sentence ('Compression moulding A measured amount...', 'Advantages of photovoltaic (PV) panels Electricity produced...'), and one row is cut off mid-word. Either/or questions are run together in one paragraph with a bare 'OR'. One figure (2022 Q3(b)(iii) stress-strain graph) has lost its axis values and curve labels, so the calculation cannot be done from the card, and where the scheme is a diagram it appears in the question column while the tick row just repeats the question.",
+ "scores": {
+  "question": 4,
+  "attachments": 3,
+  "scheme": 3,
+  "phone": 4,
+  "desktop": 4
+ },
+ "issues": [
+  {
+   "title": "Internal authoring notes shown to the student in the scheme",
+   "detail": "Grey notes written for whoever built the cards are printed inside the marking points: card 4 'The paper sets two (c)s either side of an OR, the lathe chuck and the CNC lathe; the scheme prices their romans alike, (i) \"Award 1 @ 5 Marks\", (ii) \"Award 2 @ 3+2 Marks\"... so this card holds this part of both branches: claim the rows for the branch you answered.' Similar notes on cards 5 and 12, and on card 9 'The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.' In card 4 the note hangs under the first answer ('4-jaw independent chuck,') as if it explained it.",
+   "severity": "high",
+   "cards": [
+    4,
+    5,
+    9,
+    12
+   ],
+   "best_evidence_image": "04_phone_answer.png",
+   "suggested_fix": "Remove these notes from student view. If guidance is needed, one plain line above the routes: 'This question offered a choice. Mark only the option you answered.'"
+  },
+  {
+   "title": "Heading glued to its sentence in scheme options",
+   "detail": "Option rows run a label straight into the body with no punctuation or break: 'Compression moulding A measured amount of thermosetting polymer...', 'Vacuum forming Vacuum forming is used...', '(i) CAD The term CAD...', '(iii) G Codes Determine the tool path', 'Crystalline solid structures Crystalline atoms are arranged in a pattern Amorphous solid structures Amorphous atoms are arranged randomly', and five rows in a row all starting 'Advantages of photovoltaic (PV) panels ...'. On the phone these become tall grey paragraphs.",
+   "severity": "medium",
+   "cards": [
+    2,
+    3,
+    5,
+    12
+   ],
+   "best_evidence_image": "12_desktop_answer.png",
+   "suggested_fix": "Render the label as a bold title on its own line (or a group heading once: 'Advantages - any one, 4 marks') and the explanation beneath it."
+  },
+  {
+   "title": "Stress-strain graph cropped without axis values or curve labels",
+   "detail": "2022 HL Q3(b)(iii) asks to calculate Young's modulus for metal A and metal B. The figure shows only two coloured curves on bare axes: no stress/strain numbers, no units, no A/B labels. The scheme answers 260 and 60 kN/mm2, which cannot be derived from what is shown.",
+   "severity": "high",
+   "cards": [
+    6
+   ],
+   "best_evidence_image": "06_desktop_answer.png",
+   "suggested_fix": "Re-crop the figure from the paper to include axis titles, scale values and the A/B labels, plus the stem line that introduces the graph."
+  },
+  {
+   "title": "Either/or questions run together with a bare 'OR'",
+   "detail": "Two alternative questions are set as one paragraph: '...holding work on a centre lathe. OR A CNC lathe used for CAD/CAM technology is shown. Describe two advantages...'. It reads as one confusing question, and both pictures (chuck and CNC lathe; vehicle and beacon) sit side by side unlabelled. The scheme side handles it well with Route A / OR / Route B.",
+   "severity": "medium",
+   "cards": [
+    4,
+    8,
+    12
+   ],
+   "best_evidence_image": "04_phone_answer.png",
+   "suggested_fix": "Mirror the scheme layout in the question: 'Option A' block, an OR divider, 'Option B' block, each with its own picture."
+  },
+  {
+   "title": "Scheme diagram shown in the question column; tick row has no answer",
+   "detail": "Where the official answer is a drawing, it appears on the left under the question after reveal, while the scheme panel on the right holds a single tick row. On card 9 that row is just the question again ('Calculate the 0.1% proof stress.') and the real answer (84 kN / C.S.A = 0.42 kN/mm2) is a small image far from it; on the phone that image text is tiny. Card 1 duplicates the answer in both places, which is fine but the placement is still odd.",
+   "severity": "medium",
+   "cards": [
+    1,
+    3,
+    9,
+    10,
+    12
+   ],
+   "best_evidence_image": "09_phone_answer.png",
+   "suggested_fix": "Place the scheme image inside the scheme panel under 'From the marking scheme', and type the result as the tick row ('0.1% proof stress = 84 kN / cross-sectional area = 0.42 kN/mm2')."
+  },
+  {
+   "title": "Truncated and incomplete scheme rows",
+   "detail": "Card 5 row (iv) ends mid-word: '...distances parallel to the centre line are given Z co-ordinat'. Card 4 first row ends with a dangling comma ('4-jaw independent chuck,'). Card 3 option (i) only says a cooling curve is formed when an alloy cools; it does not state the difference between alloy and pure-metal curves that the question asks for (that is only in the diagram), and its options are not labelled (i)/(ii)/(iii) to match the question.",
+   "severity": "medium",
+   "cards": [
+    3,
+    4,
+    5
+   ],
+   "best_evidence_image": "05_desktop_answer.png",
+   "suggested_fix": "Complete the cut-off text, strip trailing punctuation, and label the options with the question's (i)/(ii)/(iii) wording."
+  },
+  {
+   "title": "Leftover wording that depends on missing context",
+   "detail": "Card 1 keeps 'Using the graph paper supplied:' in the middle of the question though the plotting part is another card; card 2 says 'shown above' (fine, figure is above); card 12 says 'shown opposite'; card 9's crop carries the '(b)' label of the parent part; card 8's figure includes chip C, which this part does not ask about.",
+   "severity": "low",
+   "cards": [
+    1,
+    8,
+    9,
+    12
+   ],
+   "best_evidence_image": "01_desktop_answer.png",
+   "suggested_fix": "Trim instruction fragments that belong to sibling parts and crop figures to the items the part names."
+  },
+  {
+   "title": "Empty band on phone below short questions",
+   "detail": "On the phone a blank area of 200-300px sits between 'Open original paper' and 'Your answer' on short cards.",
+   "severity": "low",
+   "cards": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11
+   ],
+   "best_evidence_image": "07_phone_answer.png",
+   "suggested_fix": "Drop the fixed minimum height of the question block at phone width."
+  }
+ ],
+ "good_examples": [
+  {
+   "card": 11,
+   "why": "One-line question, six short tickable functions; clean on phone.",
+   "image": "11_phone_answer.png"
+  },
+  {
+   "card": 10,
+   "why": "Typed question, official up-cut/down-cut diagram and two clear explanatory rows.",
+   "image": "10_desktop_answer.png"
+  },
+  {
+   "card": 7,
+   "why": "Plain question with four readable scheme statements, no shorthand.",
+   "image": "07_desktop_answer.png"
+  }
+ ],
+ "cards": [
+  {
+   "n": 1,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "ok",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Table crop is right but its numbers are about 5px on phone. 'Using the graph paper supplied:' is a stranded fragment. Scheme diagram sits in the question column; answer 'AB / BC = 30 / 19' is clear."
+  },
+  {
+   "n": 2,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Figure A/B/C is tight and correct. Scheme rows glue the process name to the description ('Compression moulding A measured amount...'); typo 'molud'; long grey paragraphs on phone."
+  },
+  {
+   "n": 3,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Question lists (i)-(iii) cleanly. Scheme options are unlabelled, option (i) does not actually state the difference, option (ii) is four phrases run together; scheme diagram shown under the question."
+  },
+  {
+   "n": 4,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Two alternative questions joined by a bare 'OR'. An internal note about 'the scheme prices their romans alike... Award 1 @ 5 Marks' is printed under the first answer; dangling comma on '4-jaw independent chuck,'."
+  },
+  {
+   "n": 5,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Clear question. Rows start '(i) CAD The term CAD...' with no separator; row (iv) is cut off at 'Z co-ordinat'; internal note about 'two (c)s either side of an OR' shown."
+  },
+  {
+   "n": 6,
+   "question": "bad",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Graph has no axis values, units or A/B labels, so Young's modulus cannot be calculated from the card. Scheme itself is two clear results."
+  },
+  {
+   "n": 7,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Good: plain question, four readable scheme statements."
+  },
+  {
+   "n": 8,
+   "question": "minor",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Figure also shows chip C, which belongs to another part.",
+   "attachment": "minor",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "'OR' runs the two alternatives together; Route A / Route B scheme is clear though rows are long on phone."
+  },
+  {
+   "n": 9,
+   "question": "minor",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Crop carries the '(b)' stem label and table shared with the sibling parts (needed data).",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Tick row just repeats the question plus an internal note; the real answer is a small image under the question. Table values tiny on phone."
+  },
+  {
+   "n": 10,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Good card. Scheme diagram is the model answer but sits in the question column; minor typo 'cuter' is from the scheme."
+  },
+  {
+   "n": 11,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Best in sample: six short points, nothing extra."
+  },
+  {
+   "n": 12,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Bare 'OR' in the question; 'shown opposite'. Internal note under Route A; Route B repeats 'Advantages of photovoltaic (PV) panels' at the start of five rows; long scroll on phone."
+  }
+ ]
+}

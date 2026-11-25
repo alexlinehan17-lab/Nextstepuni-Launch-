@@ -1,0 +1,258 @@
+{
+ "subject": "physical-education",
+ "verdict": "minor-issues",
+ "summary": "PE questions are mostly short, clearly typed and easy to read on both phone and desktop, and the scheme panel is tidy. Two things let it down. The attached 'original paper' is the whole exam page, which usually opens on a different question (Q5 before Q6, Q9 before Q10, Q6 before Q7) with this card's question at or below the bottom edge. And the scheme rows mostly state the marking standard ('Clear and accurate discussion', 'Appropriate supplement named', 'Very good / good / fair') rather than any answer; the actual content sits behind a separate 'published marking guide' button. Tick-box and fill-the-blank questions are flattened into prose, the worst being a cloze passage shown as a 25-line paragraph on the phone to ask for one blank.",
+ "scores": {
+  "question": 4,
+  "attachments": 2,
+  "scheme": 3,
+  "phone": 3,
+  "desktop": 4
+ },
+ "issues": [
+  {
+   "title": "Attached page opens on other questions",
+   "detail": "The 'original paper' attachment is the uncropped exam page. Card 1 and 5 (Q6) open on Question 5 in full with Q6 starting near the bottom edge and option (iii) cut off; card 4 (Q10) opens on Q9(a) and Q9(b) with only the Q10 heading visible; card 12 (Q7(b)) opens on Q6(a)/(b) and only Q7(a) is visible, Q7(b) not at all; card 2 opens on Q15(b); card 7 also shows Q18(b)(i); card 9 shows Q18(b)(i)-(ii) above (iii).",
+   "severity": "high",
+   "cards": [
+    1,
+    2,
+    4,
+    5,
+    7,
+    9,
+    12
+   ],
+   "best_evidence_image": "12_attached_page.png",
+   "suggested_fix": "Crop the page to this question's region (the manifest shows cropped_to_region false on every card), or at least scroll the reader to the question. For plain text questions with no figure, drop the attachment."
+  },
+  {
+   "title": "Scheme rows give the standard, not the answer",
+   "detail": "Rows read 'Clear and accurate discussion 4m 5m 6m / somewhat clear and accurate 1m 2m 3m', 'Very good / good / fair / poor', 'Appropriate supplement named / correct role described', 'Three correct responses / two / one'. Card 7 lists the five fitness components as headings but each row is the same sentence 'Accurate definition of the correctly named health-related fitness component', so no definition is shown. The student has to open a second 'published marking guide' page to see any content.",
+   "severity": "high",
+   "cards": [
+    2,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_evidence_image": "07_desktop_answer.png",
+   "suggested_fix": "Put the scheme's indicative answers (definitions, example supplements and roles, example NGB actions) directly in the panel above the mark bands, as card 12 and card 4 already do."
+  },
+  {
+   "title": "Cloze passage dumped as a wall of text for one blank",
+   "detail": "Card 3 asks only for blank 4 (2 marks) but prints the instructions, the word box as a semicolon list and the entire eight-blank passage as one paragraph, about 25 lines on the phone, before the real instruction 'Complete blank 4'. The word box table and the struck-out given words are lost.",
+   "severity": "medium",
+   "cards": [
+    3
+   ],
+   "best_evidence_image": "03_phone_answer.png",
+   "suggested_fix": "Show the word box as chips, and only the sentence containing blank 4 (with the blank highlighted); or make the whole cloze one card."
+  },
+  {
+   "title": "Tick-box options run into the sentence",
+   "detail": "Card 1's three options are inline: 'periodisation: (i) It is interval training for 6 months. (ii) It is the division... (iii) It is performance analysis...'.",
+   "severity": "low",
+   "cards": [
+    1
+   ],
+   "best_evidence_image": "01_phone_answer.png",
+   "suggested_fix": "List (i), (ii), (iii) on separate lines."
+  },
+  {
+   "title": "Editorial stems that are not exam text, and unnecessary case-study attachment",
+   "detail": "Card 8's stem reads 'The Allianz example is included as context; the question permits any named business' and cards 6 and 11 say 'Read the complete ... case study on original pages 10-11'. These are the app's notes, not the paper's wording, and are styled like exam text. Card 11's question (ways an NGB can promote activity) does not need the two-page Nicola Tuthill case study it attaches.",
+   "severity": "low",
+   "cards": [
+    6,
+    8,
+    11
+   ],
+   "best_evidence_image": "11_desktop_answer.png",
+   "suggested_fix": "Label app notes distinctly (e.g. a grey 'Context' tag) and attach the case study only where the question draws on it."
+  },
+  {
+   "title": "Phone: blank band and clipped scheme",
+   "detail": "Every phone card has 200-300px of empty space between the attachment bar and 'YOUR ANSWER'. On card 12 the phone capture shows the scheme heading cut through mid-line ('Claim what you had, as the scheme') followed by a blank panel, with no scheme row visible above the grade buttons. The scheme attachment title is also truncated on phone ('2020 HL Q15(c)(i) · markin…').",
+   "severity": "medium",
+   "cards": [
+    12,
+    1,
+    2,
+    5,
+    7,
+    8
+   ],
+   "best_evidence_image": "12_phone_answer.png",
+   "suggested_fix": "Remove the fixed panel height on phone; check the short-card layout where the scheme is clipped; let the attachment title wrap."
+  },
+  {
+   "title": "Inconsistent row wording",
+   "detail": "Band labels mix capitalised and lower-case fragments ('Very good / good / fair', 'Three correct responses / two / one', 'vaguely accurate') and the heading 'Claim what you had, as the scheme prices it' is odd English for a student.",
+   "severity": "low",
+   "cards": [
+    2,
+    4,
+    5,
+    10,
+    11
+   ],
+   "best_evidence_image": "10_desktop_answer.png",
+   "suggested_fix": "Write each band as a full phrase ('Two correct responses') and use a plain heading such as 'Mark your answer against the scheme'."
+  }
+ ],
+ "good_examples": [
+  {
+   "card": 12,
+   "why": "One-line question and a scheme row that states the actual definition for 2 marks.",
+   "image": "12_desktop_answer.png"
+  },
+  {
+   "card": 4,
+   "why": "Matching table rewritten as a clean numbered list, and the scheme gives the three correct matches and the 8/6/3 scale.",
+   "image": "04_desktop_answer.png"
+  },
+  {
+   "card": 1,
+   "why": "Scheme shows the single correct statement plainly.",
+   "image": "01_desktop_answer.png"
+  }
+ ],
+ "cards": [
+  {
+   "n": 1,
+   "question": "minor",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached page shows Question 5 in full above Q6(a); option (iii) of this question is cut off at the bottom.",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Options (i)-(iii) run inline. Scheme gives the correct statement clearly."
+  },
+  {
+   "n": 2,
+   "question": "ok",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page opens on Q15(b) (chocolate milk) above the (c) stem; (c)(i) itself is below the fold.",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Stem and bullet list well set. Scheme is only Very good/good/fair with mark buttons."
+  },
+  {
+   "n": 3,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card text and attached page show all eight blanks of the cloze, not just blank 4.",
+   "attachment": "ok",
+   "scheme": "ok",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Whole passage and word box flattened into one paragraph; 25 lines on phone for a one-word answer. Attached page shows the real layout well. Scheme 'female' is clear."
+  },
+  {
+   "n": 4,
+   "question": "ok",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached page shows Q9(a) and Q9(b) in full; only the heading and method names of Q10 are visible.",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Good rewrite of a matching table. Scheme states the three matches and the scale; lower-case 'two'/'one' rows look unfinished."
+  },
+  {
+   "n": 5,
+   "question": "ok",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached page shows Question 5 and Q6(a); Q6(b) itself is not visible on the first screen.",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Clear question. Scheme gives the standard plus 'For example, plyometrics', which is just enough."
+  },
+  {
+   "n": 6,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Case study attachment is right and legible (3 pages). Stem is an app instruction, not exam text. Scheme has no content on what body image is."
+  },
+  {
+   "n": 7,
+   "question": "ok",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page also shows Q18(b)(i) below the answer box.",
+   "attachment": "minor",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Scheme names the five components but repeats one generic sentence five times and gives no definitions."
+  },
+  {
+   "n": 8,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Stem is an editorial note. Attached page (Allianz figure and text) is fine as context. Scheme is two bands with no content."
+  },
+  {
+   "n": 9,
+   "question": "ok",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page shows Q18(b)(i) and (ii) above part (iii).",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Clear 2+2+2+2 structure, but no example supplements or roles."
+  },
+  {
+   "n": 10,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Attached page is just this question and blank answer lines, so adds nothing. Scheme is four quality bands; the note about the missing 4-mark band is helpful."
+  },
+  {
+   "n": 11,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Attaches a two-page case study the question does not need. Scheme gives the 8/6/3 scale but no example ways."
+  },
+  {
+   "n": 12,
+   "question": "ok",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached page shows Q6(a) and (b) with their table, then Q7(a); Q7(b) is not visible.",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Desktop is the model card. Phone capture clips the scheme heading and shows no scheme row."
+  }
+ ]
+}

@@ -1,0 +1,275 @@
+{
+ "subject": "art",
+ "verdict": "needs-work",
+ "summary": "Art questions are typeset cleanly: option lists keep their bullets, part labels sit in a tidy gutter, and nothing is mangled. The weak side is the scheme. Every card is a self-marking grid that only restates the question ('Discussion of the development of your chosen art style', 'Name of chosen work') with rows of 1m-15m buttons, or the generic Low/Moderate/High descriptor text that is identical on every 4-mark card, so the student never learns what a good answer to THIS question contains. Attached illustration sheets are the whole SEC sheet with six or seven other questions' artworks on it, shown as a shrunken landscape page, so the one image needed is small. On the phone there is a large empty band between the question and the answer box on every card, and scheme rows are labelled 'Part B / Part D / Part E' in a way that does not match the part the card asks.",
+ "scores": {
+  "question": 4,
+  "attachments": 2,
+  "scheme": 2,
+  "phone": 3,
+  "desktop": 4
+ },
+ "issues": [
+  {
+   "title": "Scheme only restates the question",
+   "detail": "The revealed scheme is a set of mark buttons beside a line that repeats the task ('Discussion of the development of your chosen art style or movement' 1m-10m; 'Name of chosen work' 1m-5m; a single 0-20 slider on card 5). There is no indicative content, so a student cannot tell what earns 4 marks versus 9. The practice note even says the scheme publishes no bands. It answers 'how many marks' but not 'what is the answer'.",
+   "severity": "high",
+   "cards": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12
+   ],
+   "best_evidence_image": "09_desktop_answer.png",
+   "suggested_fix": "Show the SEC allocation as a short plain table (component, marks) rather than button grids, and add whatever indicative content the scheme or examiner report gives for the option the card is about (e.g. Cubism); if none exists, say so in one line instead of presenting a grid as 'the scheme'."
+  },
+  {
+   "title": "Generic descriptor wall on 4-mark questions",
+   "detail": "The 4-mark cards show the same 21 bullets of Low/Moderate/High descriptor text ('Limited understanding of the requirements of the question...'). It is identical on both cards and says nothing about brand collaboration or festival artworks. On the phone it runs to about two full screens of small grey text for a 4-mark answer. The '0' button is shown filled black before the student has chosen anything, which reads as a pre-selected score.",
+   "severity": "high",
+   "cards": [
+    4,
+    10
+   ],
+   "best_evidence_image": "04_phone_answer.png",
+   "suggested_fix": "Collapse the descriptors to one line per band (Low 0-1 limited, Moderate 2-3 good, High 4 thorough) with the full text behind a 'show full descriptors' toggle, and do not pre-highlight 0."
+  },
+  {
+   "title": "Illustration sheet shows every other question's artwork",
+   "detail": "The attachment opens the full SEC illustration sheet, not the image for this question. Card 3 (Q21 stamp) also shows the images for Q3, Q5, Q6, Q18 and Q19; card 6 (Berry Dress, Q6) shows Q2, Q3, Q5, Q18, Q19, Q20; card 8 (Wilton Diptych, Q9) shows Q8, Q10, Q11, Q12; card 12 (Book of Durrow, Q3) shows Q2, Q5, Q6, Q17, Q18, Q19. These are other questions' illustrations, not their question text, but the student has to hunt for a box numbered in a tiny corner label.",
+   "severity": "medium",
+   "cards": [
+    3,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "best_evidence_image": "06_attached_page.png",
+   "suggested_fix": "Crop the sheet to the single numbered panel for this question (with its caption) and show that crop inline under the question; keep the full sheet behind the 'open original' link."
+  },
+  {
+   "title": "Needed artwork is small inside a landscape sheet",
+   "detail": "Because the whole A3 landscape sheet is fitted to the reader width, the one relevant image occupies roughly a sixth of it. Berry Dress on card 6 and the Book of Durrow page on card 12 are about 150px wide even on the 1100px reader; on a 390px phone they would be thumbnail-sized and the captions unreadable without zooming. The card also has no inline preview, only a button.",
+   "severity": "medium",
+   "cards": [
+    6,
+    12,
+    3,
+    8
+   ],
+   "best_evidence_image": "12_attached_page.png",
+   "suggested_fix": "Use a per-question crop at full width; on phone show it inline above the answer box."
+  },
+  {
+   "title": "Scheme row labels do not match the card's part",
+   "detail": "Rows are headed 'Part A', 'Part B', 'Part C', 'Part D', 'Part E' taken from the scheme's own lettering. A card that asks part (b) shows 'Part B, Part C, Part D' (card 3) and a 'task 2' card starts at 'Part D' (card 12), which reads as though parts are missing or belong to another question.",
+   "severity": "medium",
+   "cards": [
+    3,
+    5,
+    8,
+    12
+   ],
+   "best_evidence_image": "03_desktop_answer.png",
+   "suggested_fix": "Drop the letter headings and title each row by what it marks ('Design', 'Reasons', 'Sketches')."
+  },
+  {
+   "title": "Sketch marks from the other task counted in this card",
+   "detail": "Card 12 asks only the second task (another Irish manuscript) but its 'Sketches' block includes 'given illustration 2m', which is the sketch mark for the Book of Durrow task that this card does not ask. The 20-mark total therefore mixes two tasks.",
+   "severity": "medium",
+   "cards": [
+    12
+   ],
+   "best_evidence_image": "12_desktop_answer.png",
+   "suggested_fix": "Give this card 15 + 3 marks for its own task, or present Q3 as one 50-mark card."
+  },
+  {
+   "title": "Choice-list cards are confusing about which option is asked",
+   "detail": "Cards titled for one option ('Paul Gauguin', 'Cubism', 'Romanticism') still show the full list of options, and the task check has a tick-box that just says 'Cubism.' or 'Paul Gauguin (1848-1903)' with no verb. Card 1 and 2 have a tick-box 'Select one of the following:' with the list missing. Card 5 says 'the work you have chosen' without showing part (a) where the choice was made.",
+   "severity": "low",
+   "cards": [
+    1,
+    2,
+    5,
+    7,
+    9,
+    11
+   ],
+   "best_evidence_image": "07_desktop_answer.png",
+   "suggested_fix": "Highlight the chosen option in the list ('This card: Cubism') and word the task check as 'I discussed Cubism'; on (b) parts show part (a) as a short grey context line."
+  },
+  {
+   "title": "Dead space on phone and odd underline",
+   "detail": "On every phone card there is 200-300px of blank white between the question (or attachment button) and 'YOUR ANSWER'. The orange underline marks an arbitrary run of words and stops mid-phrase ('Describe and discuss the work of your chosen artist / designer, making detailed reference' then stops before 'to two named works').",
+   "severity": "low",
+   "cards": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12
+   ],
+   "best_evidence_image": "05_phone_answer.png",
+   "suggested_fix": "Remove the fixed minimum height on the question panel on phone; underline the command words only or the whole instruction sentence."
+  }
+ ],
+ "good_examples": [
+  {
+   "card": 2,
+   "why": "Long option list and instruction are perfectly typeset and the 10/15/15/10 allocation is at least laid out in clear named blocks.",
+   "image": "02_desktop_answer.png"
+  },
+  {
+   "card": 8,
+   "why": "Stem, part label, question and attachment button are clear and compact; the right sheet is attached.",
+   "image": "08_desktop_answer.png"
+  }
+ ],
+ "cards": [
+  {
+   "n": 1,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Clean bullet list. Scheme is four blocks of mark buttons (name 5 / discussion 10) with no content; task-check row 'Select one of the following:' has lost its list. Blank band on phone."
+  },
+  {
+   "n": 2,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Same shape as card 1; clear allocation, no indicative content. Long scroll of button grids on phone."
+  },
+  {
+   "n": 3,
+   "question": "ok",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached sheet also shows the illustrations for Q3, Q5, Q6, Q18 and Q19 (images only, no question text).",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Question fine. Scheme rows headed 'Part B/C/D' on a part (b) card are confusing. The stamp panel is only a quarter of the sheet."
+  },
+  {
+   "n": 4,
+   "question": "ok",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached sheet also shows the Q2 (Wolfwalkers) and Q4 (The Bridge) illustrations.",
+   "attachment": "minor",
+   "scheme": "bad",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Scheme is 21 generic descriptor bullets with nothing about brand collaboration; two screens of small grey text on phone for 4 marks; '0' looks pre-selected."
+  },
+  {
+   "n": 5,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "'The work you have chosen' with no part (a) shown; only the header says Le Corbusier. Scheme is one 0-20 slider beside a restatement of the question."
+  },
+  {
+   "n": 6,
+   "question": "ok",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached sheet also shows illustrations for Q2, Q3, Q5, Q18, Q19 and Q20.",
+   "attachment": "bad",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Berry Dress is a small panel in the bottom corner of the full sheet. Scheme splits 15/15 by named aspects, clear but no content."
+  },
+  {
+   "n": 7,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Card is the Gauguin variant yet lists all five artists; tick-box reads just 'Paul Gauguin (1848-1903)'. Scheme is 'Name of chosen work' with 1m-5m buttons, which tells the student nothing."
+  },
+  {
+   "n": 8,
+   "question": "ok",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached sheet also shows illustrations for Q8, Q10, Q11 and Q12.",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Clear stem and question; Wilton Diptych is a reasonable size but one of five panels. Scheme 15 + 5 sketches, labelled 'Part B / Part C'."
+  },
+  {
+   "n": 9,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Cubism card shows all four styles; tick-box 'Cubism.' Scheme is a 1m-10m button row beside 'Discussion of the development of your chosen style of art' and nothing else."
+  },
+  {
+   "n": 10,
+   "question": "ok",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached sheet also shows the Q7 Mini Cooper illustrations (Car A and Car B).",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Same generic descriptor wall as card 4, word for word. Capot image itself is large and legible."
+  },
+  {
+   "n": 11,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Same as card 9: all options listed, bare 'Romanticism' tick-box, scheme is a single 10-mark button row."
+  },
+  {
+   "n": 12,
+   "question": "minor",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "The stem prints the full wording of task 1 (the Book of Durrow statement) above this card's task 2; the attached sheet also shows illustrations for Q2, Q5, Q6, Q17, Q18 and Q19.",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Scheme starts at 'Part D' and its sketch marks include 'given illustration 2m', which belongs to task 1. The attached Book of Durrow image is not needed for this task."
+  }
+ ]
+}

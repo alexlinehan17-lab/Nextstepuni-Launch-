@@ -1,0 +1,286 @@
+{
+ "subject": "music",
+ "verdict": "needs-work",
+ "summary": "Music is uneven. Listening cards show the question only as a small crop of the paper, which is sharp on desktop but shrinks to roughly 5-6px text on a phone, and several lose the stem that says which work or excerpt is playing. Composing cards have the opposite fault: bullets, poem lines and cadence lists are flattened into one run-on paragraph, though the attached paper page is good. Schemes for one-word listening answers are slash-joined strings ('Marche au Supplice / March to the Scaffold / 4th mvt / 4'), and one composing card has no scheme at all, just 41 number buttons. The 'attached page' on listening cards is the same one-line crop again and never the score or text the stem refers to; the audio player reports 'could not be loaded' on every card but one.",
+ "scores": {
+  "question": 2,
+  "attachments": 2,
+  "scheme": 3,
+  "phone": 2,
+  "desktop": 3
+ },
+ "issues": [
+  {
+   "title": "Question is a picture that is unreadable on a phone",
+   "detail": "On listening cards the question exists only as a crop of the exam paper with no typed text. At 390px the crop is scaled to the column and the wording comes out around 5-6px high: 'Name one instrument which plays the melody in this excerpt' on card 1 is a faint hairline, and the tick-box options on cards 4 and 5 (soprano/alto/tenor/bass; free rhythm/ornamentation/pizzicato) cannot be read without tapping Enlarge. Body text elsewhere on the card is about 15px.",
+   "severity": "high",
+   "cards": [
+    1,
+    4,
+    5,
+    8,
+    10,
+    11,
+    12
+   ],
+   "best_evidence_image": "01_phone_answer.png",
+   "suggested_fix": "Always print the question as typed text (with tick-box options as a list) and keep the crop only where notation or a table is needed; where a crop is needed, render it at full column width with a minimum text height."
+  },
+  {
+   "title": "Composing questions flattened into run-on text",
+   "detail": "Headings, bullets, poem lines and numbered cadences are joined into one paragraph with stray bullet dots and box characters: 'Continuation of a given opening • Continue the given opening... list: □ clarinet □ violin □ oboe □ French horn' (card 2); the four lines of verse run together (cards 3, 9); 'COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS PREPARATORY WORK • Write out...(i) At A...(ii) At B...' is a 15-line wall on phone (card 6). On card 3 the heading and poem are filed under '(a)'.",
+   "severity": "high",
+   "cards": [
+    2,
+    3,
+    6,
+    9
+   ],
+   "best_evidence_image": "06_phone_answer.png",
+   "suggested_fix": "Keep the line breaks: heading on its own line, verse as four lines, bullets as a list, cadences (i)-(iv) as a list, instrument choices as a list. Or show the paper crop inline as these cards already have a clean one."
+  },
+  {
+   "title": "Attached page repeats the question and omits what the stem promises",
+   "detail": "On listening cards the 'Read Listening' attachment opens a mostly blank page containing the same one-line question already on the card. Meanwhile the material the stem refers to is not there: card 7 says 'the outline score of bars 1-16 is printed below' and no score appears anywhere; card 4's stem (hidden) refers to a printed text and translation; card 8's attachment says 'on the score above' with no score.",
+   "severity": "high",
+   "cards": [
+    1,
+    4,
+    5,
+    7,
+    8,
+    10,
+    11,
+    12
+   ],
+   "best_evidence_image": "07_attached_page.png",
+   "suggested_fix": "Attach the actual score/text the question depends on, or drop the attachment button when it adds nothing."
+  },
+  {
+   "title": "Listening stem missing",
+   "detail": "Cards 1, 4, 5, 8, 10 and 11 do not print the stem at all, so the card never says which piece or excerpt it is about beyond the grey header line (e.g. card 4 asks 'From which movement is this excerpt taken?' without naming the Bach cantata; card 11 has no audio block either).",
+   "severity": "medium",
+   "cards": [
+    1,
+    4,
+    5,
+    8,
+    10,
+    11
+   ],
+   "best_evidence_image": "04_desktop_answer.png",
+   "suggested_fix": "Show a one-line context above the question: work, excerpt number, times played."
+  },
+  {
+   "title": "Slash-joined scheme answers",
+   "detail": "Alternative answers are printed as one slash-separated string: 'fiddle / (button/piano) accordion / box / melodeon / flute / tin whistle' with a separate note 'The scheme reads: \"(any one)\"'; 'Marche au Supplice / March to the Scaffold / 4th mvt / 4'; '3rd movement / Tenor Recitative / 1st Recitative'. It is not obvious these are alternatives rather than a list to be given in full.",
+   "severity": "medium",
+   "cards": [
+    1,
+    4,
+    7
+   ],
+   "best_evidence_image": "01_desktop_answer.png",
+   "suggested_fix": "Head the row 'Any one of:' and list the alternatives as chips or bullets."
+  },
+  {
+   "title": "No scheme, just 41 number buttons",
+   "detail": "Card 9 (deferred sitting) says 'The scheme prints no answer for this part', quotes a disclaimer about deferred examinations, and then shows buttons 0 to 40. There is nothing to mark against.",
+   "severity": "high",
+   "cards": [
+    9
+   ],
+   "best_evidence_image": "09_phone_answer.png",
+   "suggested_fix": "Show the standard Section A melody band descriptors used on card 2, or remove the card."
+  },
+  {
+   "title": "Awkward wording and repeats in composing schemes",
+   "detail": "The grid title appears three times ('SECTION A – MELODY COMPOSITION (40 marks)', then '...(40 marks) mark', then again under the placement). Band descriptor lines have no bullets and repeat near-identical text six times. On card 6 the first block is headed with the rule ('1 mark per correct note of chord') and sub-headed 'Grid', the wrong way round, and the correct chord notes are not given.",
+   "severity": "low",
+   "cards": [
+    2,
+    3,
+    6
+   ],
+   "best_evidence_image": "02_desktop_answer.png",
+   "suggested_fix": "One title; a compact table of band, marks, one-line descriptor; label blocks 'Chord grid /12', 'Melody /24', 'Bass /24'."
+  },
+  {
+   "title": "Layout order and audio",
+   "detail": "On cards 7 and 12 the question sentence is pushed below the audio player and the attachment bar and sits flush against the grey bar with no gap, so it looks like a caption. Every card except 12 shows a dead player ('0:00 / 0:00 - The embedded recording could not be loaded').",
+   "severity": "medium",
+   "cards": [
+    7,
+    12,
+    1,
+    4,
+    5,
+    8,
+    10
+   ],
+   "best_evidence_image": "07_phone_answer.png",
+   "suggested_fix": "Order: context, question, audio, attachment. Hide the player and show only the SEC link when the file fails to load."
+  },
+  {
+   "title": "Other parts visible in the question crop",
+   "detail": "Card 8 asks part (ii) but its crop also shows part (i) and the tempo tick-boxes. The scheme's notation answer is placed in the question column under the audio player rather than in the scheme column.",
+   "severity": "low",
+   "cards": [
+    8
+   ],
+   "best_evidence_image": "08_desktop_answer.png",
+   "suggested_fix": "Crop to the score plus part (ii) only, and move the answer notation into the scheme panel."
+  }
+ ],
+ "good_examples": [
+  {
+   "card": 12,
+   "why": "True/false table and the official ticked scheme crop are both sharp and limited to this part; working audio.",
+   "image": "12_desktop_answer.png"
+  },
+  {
+   "card": 10,
+   "why": "Three-instrument answer is split into three clear rows with accepted alternatives.",
+   "image": "10_desktop_answer.png"
+  },
+  {
+   "card": 3,
+   "why": "Attached page shows the poem and given rhythm exactly as printed and at a readable size.",
+   "image": "03_attached_page.png"
+  }
+ ],
+ "cards": [
+  {
+   "n": 1,
+   "question": "bad",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Question exists only as a crop that is an unreadable hairline on phone; stem missing; audio failed. Scheme is a slash string plus 'The scheme reads: (any one)'. Attachment repeats the same line."
+  },
+  {
+   "n": 2,
+   "question": "bad",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Bullets and tick-box list flattened to '• ... □ clarinet □ violin'. First attached page shows the text and a blank roughwork box; the given opening is on page 2. Band descriptors readable but long and title repeated."
+  },
+  {
+   "n": 3,
+   "question": "bad",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "ok",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Poem lines run together and the heading is filed under (a). Attached page is excellent. Scheme bands are concise and clear."
+  },
+  {
+   "n": 4,
+   "question": "bad",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Crop text and soprano/alto/tenor/bass boxes illegible on phone; stem naming the Bach cantata missing; printed text/translation not attached. Scheme first row is slash-joined alternatives."
+  },
+  {
+   "n": 5,
+   "question": "bad",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "minor",
+   "scheme": "ok",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Three tick options unreadable on phone; no stem. Scheme 'Ornamentation 2m' is perfectly clear. Attachment duplicates the crop."
+  },
+  {
+   "n": 6,
+   "question": "bad",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Whole question is one capitalised run-on paragraph. Attached page with chord grid is clear. Scheme has sliders for grid/melody/bass but mislabelled header and no correct chords."
+  },
+  {
+   "n": 7,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "bad",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Stem promises an outline score 'printed below' that is nowhere on the card; attachment is one line of text. Question sits flush under the grey bar. Scheme is a slash string."
+  },
+  {
+   "n": 8,
+   "question": "minor",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Question crop also shows part (i) (section of the movement) and the tempo tick-boxes.",
+   "attachment": "minor",
+   "scheme": "ok",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Score crop is right and sharp on desktop, small on phone. Answer notation shown as a scheme crop but in the question column; attachment says 'score above' with no score."
+  },
+  {
+   "n": 9,
+   "question": "bad",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Verse flattened into prose. Scheme says it prints no answer and offers buttons 0-40. Attached page is clean."
+  },
+  {
+   "n": 10,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "minor",
+   "scheme": "ok",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Question crop too small on phone, fine on desktop. Scheme rows 1/2/3 with accepted alternatives are clear."
+  },
+  {
+   "n": 11,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Crop tiny on phone; no stem or audio. Scheme is a quoted semicolon list with 'Partially correct answer = 1m/2m' left as shorthand."
+  },
+  {
+   "n": 12,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "ok",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Best card. Table then audio then the instruction sentence is an odd order; scheme rows put 'False' first and the statement second as 'The scheme reads'. Table text small on phone."
+  }
+ ]
+}

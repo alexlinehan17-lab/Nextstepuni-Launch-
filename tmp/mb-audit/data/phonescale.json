@@ -1,0 +1,552 @@
+{
+ "accounting": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 1969,
+  "phoneLenMax": 2077
+ },
+ "agricultural-science": {
+  "qImgs": 3,
+  "qScaleMed": 0.22,
+  "qScaleMin": 0.21,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2211,
+  "phoneLenMax": 4312
+ },
+ "ancient-greek": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 1894,
+  "phoneLenMax": 2523
+ },
+ "applied-maths": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2251,
+  "phoneLenMax": 2779
+ },
+ "arabic": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 1749,
+  "phoneLenMax": 1912
+ },
+ "art": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2686,
+  "phoneLenMax": 3550
+ },
+ "biology": {
+  "qImgs": 5,
+  "qScaleMed": 0.31,
+  "qScaleMin": 0.22,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 1961,
+  "phoneLenMax": 2896
+ },
+ "bulgarian": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2198,
+  "phoneLenMax": 3438
+ },
+ "business": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2978,
+  "phoneLenMax": 3919
+ },
+ "chemistry": {
+  "qImgs": 7,
+  "qScaleMed": 0.34,
+  "qScaleMin": 0.14,
+  "aImgs": 3,
+  "aScaleMed": 0.33,
+  "aScaleMin": 0.32,
+  "phoneLenMed": 1972,
+  "phoneLenMax": 2516
+ },
+ "classical-studies": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2004,
+  "phoneLenMax": 2556
+ },
+ "computer-science": {
+  "qImgs": 7,
+  "qScaleMed": 0.29,
+  "qScaleMin": 0.27,
+  "aImgs": 5,
+  "aScaleMed": 0.32,
+  "aScaleMin": 0.27,
+  "phoneLenMed": 2433,
+  "phoneLenMax": 2868
+ },
+ "construction-studies": {
+  "qImgs": 12,
+  "qScaleMed": 0.31,
+  "qScaleMin": 0.3,
+  "aImgs": 9,
+  "aScaleMed": 0.31,
+  "aScaleMin": 0.3,
+  "phoneLenMed": 3040,
+  "phoneLenMax": 4504
+ },
+ "croatian": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2226,
+  "phoneLenMax": 3763
+ },
+ "czech": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2072,
+  "phoneLenMax": 2415
+ },
+ "danish": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2470,
+  "phoneLenMax": 2481
+ },
+ "dcg": {
+  "qImgs": 12,
+  "qScaleMed": 0.41,
+  "qScaleMin": 0.38,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2255,
+  "phoneLenMax": 2492
+ },
+ "dutch": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2088,
+  "phoneLenMax": 2318
+ },
+ "economics": {
+  "qImgs": 4,
+  "qScaleMed": 0.2,
+  "qScaleMin": 0.17,
+  "aImgs": 2,
+  "aScaleMed": 0.25,
+  "aScaleMin": 0.2,
+  "phoneLenMed": 2480,
+  "phoneLenMax": 2823
+ },
+ "engineering": {
+  "qImgs": 7,
+  "qScaleMed": 0.36,
+  "qScaleMin": 0.23,
+  "aImgs": 5,
+  "aScaleMed": 0.27,
+  "aScaleMin": 0.26,
+  "phoneLenMed": 2358,
+  "phoneLenMax": 3831
+ },
+ "english": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2778,
+  "phoneLenMax": 3025
+ },
+ "estonian": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2221,
+  "phoneLenMax": 2466
+ },
+ "finnish": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2084,
+  "phoneLenMax": 2390
+ },
+ "french": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2857,
+  "phoneLenMax": 4167
+ },
+ "geography": {
+  "qImgs": 2,
+  "qScaleMed": 0.41,
+  "qScaleMin": 0.37,
+  "aImgs": 1,
+  "aScaleMed": 0.37,
+  "aScaleMin": 0.37,
+  "phoneLenMed": 2376,
+  "phoneLenMax": 2997
+ },
+ "german": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 1,
+  "aScaleMed": 0.27,
+  "aScaleMin": 0.27,
+  "phoneLenMed": 2683,
+  "phoneLenMax": 5419
+ },
+ "history": {
+  "qImgs": 2,
+  "qScaleMed": 0.37,
+  "qScaleMin": 0.24,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2440,
+  "phoneLenMax": 4233
+ },
+ "home-economics": {
+  "qImgs": 6,
+  "qScaleMed": 0.33,
+  "qScaleMin": 0.25,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2484,
+  "phoneLenMax": 8569
+ },
+ "hungarian": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2226,
+  "phoneLenMax": 2555
+ },
+ "irish": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 3460,
+  "phoneLenMax": 5627
+ },
+ "italian": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2202,
+  "phoneLenMax": 4016
+ },
+ "japanese": {
+  "qImgs": 5,
+  "qScaleMed": 0.31,
+  "qScaleMin": 0.3,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2842,
+  "phoneLenMax": 8569
+ },
+ "latin": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 1793,
+  "phoneLenMax": 2805
+ },
+ "latvian": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2158,
+  "phoneLenMax": 2437
+ },
+ "lcvp": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2505,
+  "phoneLenMax": 4034
+ },
+ "lithuanian": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 1936,
+  "phoneLenMax": 2142
+ },
+ "maltese": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2096,
+  "phoneLenMax": 2140
+ },
+ "mandarin-chinese": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 1720,
+  "phoneLenMax": 2010
+ },
+ "maths": {
+  "qImgs": 10,
+  "qScaleMed": 0.26,
+  "qScaleMin": 0.25,
+  "aImgs": 7,
+  "aScaleMed": 0.21,
+  "aScaleMin": 0.21,
+  "phoneLenMed": 2347,
+  "phoneLenMax": 3079
+ },
+ "modern-greek": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2074,
+  "phoneLenMax": 2160
+ },
+ "music": {
+  "qImgs": 7,
+  "qScaleMed": 0.22,
+  "qScaleMin": 0.22,
+  "aImgs": 2,
+  "aScaleMed": 0.42,
+  "aScaleMin": 0.25,
+  "phoneLenMed": 2388,
+  "phoneLenMax": 3155
+ },
+ "physical-education": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2268,
+  "phoneLenMax": 2482
+ },
+ "physics": {
+  "qImgs": 6,
+  "qScaleMed": 0.58,
+  "qScaleMin": 0.25,
+  "aImgs": 3,
+  "aScaleMed": 0.22,
+  "aScaleMin": 0.22,
+  "phoneLenMed": 2183,
+  "phoneLenMax": 2923
+ },
+ "polish": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2318,
+  "phoneLenMax": 4142
+ },
+ "politics-and-society": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2459,
+  "phoneLenMax": 6554
+ },
+ "portuguese": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2260,
+  "phoneLenMax": 3377
+ },
+ "religious-education": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 3406,
+  "phoneLenMax": 5351
+ },
+ "romanian": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2356,
+  "phoneLenMax": 3038
+ },
+ "russian": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2553,
+  "phoneLenMax": 8217
+ },
+ "slovakian": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2151,
+  "phoneLenMax": 2520
+ },
+ "slovenian": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2372,
+  "phoneLenMax": 2579
+ },
+ "spanish": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2046,
+  "phoneLenMax": 4407
+ },
+ "swedish": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2176,
+  "phoneLenMax": 2242
+ },
+ "technology": {
+  "qImgs": 8,
+  "qScaleMed": 0.67,
+  "qScaleMin": 0.23,
+  "aImgs": 4,
+  "aScaleMed": 0.69,
+  "aScaleMin": 0.33,
+  "phoneLenMed": 2281,
+  "phoneLenMax": 3182
+ },
+ "ukrainian": {
+  "qImgs": 0,
+  "qScaleMed": null,
+  "qScaleMin": null,
+  "aImgs": 0,
+  "aScaleMed": null,
+  "aScaleMin": null,
+  "phoneLenMed": 2589,
+  "phoneLenMax": 2982
+ }
+}
