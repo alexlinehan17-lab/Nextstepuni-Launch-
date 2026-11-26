@@ -90,10 +90,12 @@ const WORKSPACE_TOOLS = new Set(['mark-bank', 'planner', 'topic-atlas', 'paper-t
  *  under the student's name, such as Settings or Year Plans, shades no row). */
 export function sidebarItemFor(screen: ScreenRef): SidebarItemId | null {
   switch (screen.viewState) {
-    case 'tree': return 'home';
+    // Learning Paths opens from its card on Home, so Home is marked (r5-learning-paths).
+    case 'tree': case 'learning-paths': return 'home';
     case 'modules': case 'category': case 'module': return 'modules';
     case 'study-session': return 'study';
-    case 'dashboard': case 'insights': return 'progress';
+    // Insights opens from the menu under the student's name on a laptop: no row (r5-insights).
+    case 'dashboard': return 'progress';
     case 'my-journey': return 'island';
     case 'innovation-zone':
       return screen.activeTool && WORKSPACE_TOOLS.has(screen.activeTool) ? screen.activeTool as SidebarItemId : 'launchpad';

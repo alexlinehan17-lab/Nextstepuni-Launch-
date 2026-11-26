@@ -1,11 +1,15 @@
 import React from 'react';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
 import type { StreakData } from '../hooks/useStreak';
 import type { StrategyMasteryMap } from '../types';
 import { useInsights, type Insight } from '../hooks/useInsights';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import PageHeader from './ui/PageHeader';
+import { TopBar } from './ui/Bars';
+import { Button, TextButton } from './ui/Button';
+import { PaperSheet } from './ui/List';
+import { useScreenLeave } from './navigation/useScreenLeave';
 import StarGuide from './ui/StarGuide';
+import './insights.css';
 
 export type InsightAction = 'study' | 'planner' | 'progress';
 interface InsightsViewProps {
@@ -22,32 +26,52 @@ function nextAction(insight: Insight): { action: InsightAction; label: string } 
   return { action: 'progress', label: 'See your study record' };
 }
 
+/** Insights (r5-insights, agreed "for now" 26 Nov 2026): the frame's bar with
+ *  one Back; the first insight is the screen's one sheet with the one charcoal
+ *  button; the others lie on the page between thin rules, each next step in
+ *  ink words with an arrow. Each device keeps its own opening words. */
 export default function InsightsView({ uid, streak, strategyMastery, onBack, onAction }: InsightsViewProps) {
   const mobileAppDesign = useMobileAppDesign();
+  const leave = useScreenLeave(onBack);
   const { insights, isLoaded } = useInsights(uid, streak, strategyMastery);
-  return <main className={`${mobileAppDesign ? 'mobile-editorial insights-mobile ' : ''}min-h-screen bg-white px-5 pb-36 pt-16 text-zinc-900 dark:bg-surface-canvas dark:text-white md:pt-24`}>
-    <div className="mx-auto max-w-2xl">
-      {mobileAppDesign ? <><PageHeader onBack={onBack} title="Your Insights" eyebrow="What your record says" compact className="-mx-5" /><p className="insights-intro">A pattern. A possibility. A next step.</p></> : <>
-      <button onClick={onBack} className="mb-7 inline-flex min-h-11 items-center gap-2 rounded-lg pr-4 text-base font-semibold"><ArrowLeft size={20} aria-hidden="true" /> Home</button>
-      <header className="mb-8 flex items-center justify-between gap-4">
-        <div><p className="text-xs font-bold uppercase tracking-[0.16em] text-accentDark dark:text-accent-text">Your next step</p><h1 className="mt-2 font-serif text-4xl font-bold tracking-tight">Your Insights</h1><p className="mt-3 text-base leading-relaxed text-zinc-600 dark:text-zinc-300">What your study record is telling you.</p></div>
-        <StarGuide size={72} className="shrink-0" />
-      </header></>}
-      {!isLoaded ? <p role="status" className="border-t border-zinc-200 py-8 dark:border-zinc-700">Reading your study record…</p> : insights.length === 0 ? <section className="rounded-2xl border border-zinc-300 p-6 dark:border-zinc-700">
-        <h2 className="font-serif text-2xl font-semibold">Start with one session.</h2>
-        <p className="mt-3 text-base leading-relaxed text-zinc-600 dark:text-zinc-300">As you record study sessions and reflections, this page will show patterns in your timing, subjects and confidence.</p>
-        <button onClick={() => onAction('study')} className="mt-6 flex min-h-12 w-full items-center justify-between gap-3 rounded-xl bg-accent px-4 py-3 font-bold text-[#1A1A1A]">Plan a study session <ArrowRight size={20} aria-hidden="true" /></button>
-      </section> : <div>
+  return <main className="ins-page min-h-screen">
+    {mobileAppDesign
+      ? <div className="ins-bar"><PageHeader onBack={onBack} title="Your Insights" eyebrow="What your record says" compact /></div>
+      : <div className="ins-bar"><div className="ins-width"><TopBar ruled leave={leave} /></div></div>}
+    <div className="ins-width ins-body">
+      {mobileAppDesign ? <p className="t-sub ins-intro">A pattern. A possibility. A next step.</p> : (
+        <header className="ins-open">
+          <div className="ins-open-words">
+            <p className="t-label ins-label">Your next step</p>
+            <h1 className="t-title">Your Insights</h1>
+            <p className="t-sub">What your study record is telling you.</p>
+          </div>
+          <StarGuide size={80} className="ins-guide" />
+        </header>
+      )}
+      {!isLoaded ? <p role="status" className="ins-status">Reading your study record…</p> : insights.length === 0 ? <section className="ins-empty" aria-labelledby="ins-empty-title">
+        <h2 id="ins-empty-title" className="t-heading">Start with one session.</h2>
+        <p className="t-sub">As you record study sessions and reflections, this page will show patterns in your timing, subjects and confidence.</p>
+        <Button kind="main" block={mobileAppDesign} arrow="forward" className="ins-go" onClick={() => onAction('study')}>Plan a study session</Button>
+      </section> : <div className="ins-list">
         {insights.map((insight, index) => {
           const next = nextAction(insight);
-          return <article key={insight.id} className={index === 0 ? 'mb-7 rounded-2xl bg-[#1A1A1A] p-6 text-white' : 'border-t border-zinc-300 py-6 dark:border-zinc-700'}>
-            <p className={`mb-3 text-xs font-bold uppercase tracking-widest ${index === 0 ? 'text-accent' : 'text-zinc-600 dark:text-zinc-400'}`}>{CATEGORY_LABELS[insight.category]}</p>
-            <h2 className={`font-serif font-semibold leading-tight ${index === 0 ? 'text-3xl' : 'text-2xl'}`}>{insight.title}</h2>
-            <p className={`mt-3 text-base leading-relaxed ${index === 0 ? 'text-zinc-200' : 'text-zinc-600 dark:text-zinc-300'}`}>{insight.description}</p>
-            <button onClick={() => onAction(next.action)} className={`mt-4 flex min-h-11 items-center gap-3 text-left text-base font-semibold underline underline-offset-4 ${index === 0 ? 'text-white' : 'text-accentDark dark:text-accent-text'}`}>{next.label}<ArrowRight size={18} aria-hidden="true" className="shrink-0" /></button>
+          if (index === 0) {
+            return <PaperSheet key={insight.id} className="ins-lead" label={insight.title}>
+              <p className="t-label ins-live">{CATEGORY_LABELS[insight.category]}</p>
+              <h2 className="t-title">{insight.title}</h2>
+              <p className="t-sub">{insight.description}</p>
+              <Button kind="main" block={mobileAppDesign} arrow="forward" className="ins-go" onClick={() => onAction(next.action)}>{next.label}</Button>
+            </PaperSheet>;
+          }
+          return <article key={insight.id} className="ins-item">
+            <p className="t-label ins-label">{CATEGORY_LABELS[insight.category]}</p>
+            <h2 className="t-heading">{insight.title}</h2>
+            <p className="t-sub">{insight.description}</p>
+            <TextButton arrow="forward" onClick={() => onAction(next.action)}>{next.label}</TextButton>
           </article>;
         })}
-        <p className="border-t border-zinc-300 pt-5 text-sm leading-relaxed text-zinc-500 dark:border-zinc-700 dark:text-zinc-400">Based on what you’ve recorded in NextStepUni. Study outside the app won’t appear here.</p>
+        <p className="t-meta ins-source">Based on what you’ve recorded in NextStepUni. Study outside the app won’t appear here.</p>
       </div>}
     </div>
   </main>;

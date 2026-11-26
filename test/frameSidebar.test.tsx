@@ -64,7 +64,7 @@ describe('sidebar B', () => {
 
   it.each([
     ['tree', null, 'Home'], ['modules', null, 'Modules'], ['category', null, 'Modules'], ['study-session', null, 'Study session'],
-    ['dashboard', null, 'My Progress'], ['insights', null, 'My Progress'], ['my-journey', null, 'My Island'],
+    ['dashboard', null, 'My Progress'], ['insights', null, null], ['learning-paths', null, 'Home'], ['my-direction', null, null], ['my-journey', null, 'My Island'],
     ['innovation-zone', null, 'Launchpad'], ['innovation-zone', 'war-room', 'Launchpad'], ['innovation-zone', 'future-finder-revamped', 'Launchpad'],
     ['innovation-zone', 'mark-bank', 'Mark Bank'], ['innovation-zone', 'planner', 'Planner'], ['innovation-zone', 'topic-atlas', 'Topic Atlas'],
     ['innovation-zone', 'paper-trail', 'Paper Trail'], ['settings', null, null], ['year-plans', null, null], ['your-setup', null, null],

@@ -1,0 +1,45 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * My Direction (r5-my-direction, agreed 26 Nov 2026): the compass, the quote
+ * and the vision drawings at full size, on the white page between thin rules,
+ * in the one typeface; the two next moves are boxes you press. On a laptop the
+ * column is centred beside the sidebar, the quote large, the three ideas and
+ * the two moves side by side.
+ */
+.md-page { background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
+.md-width { width: 100%; max-width: 1040px; margin: 0 auto; }
+.md-bar { position: sticky; top: 0; z-index: var(--z-sticky); background: var(--surface-canvas); }
+.md-body { display: flex; flex-direction: column; padding: 0 var(--space-6) calc(var(--space-12) + var(--edge-bottom)); }
+.md-label { margin: 0; color: var(--ink-muted); }
+.md-page :is(h2, h3) { margin: 0; color: var(--ink-primary); font-weight: 400; }
+.md-page .t-sub { margin: 0; }
+.md-north { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: var(--space-5) 0 var(--space-8); text-align: center; }
+.md-compass { width: 96px; height: 92px; object-fit: contain; margin-bottom: 14px; }
+.md-quote { max-width: 780px; font-size: 29px; line-height: 33px; letter-spacing: -.04em; }
+.md-edit { margin-top: 10px; }
+.md-sec { display: flex; flex-direction: column; gap: var(--space-2); padding: 28px 0 var(--space-6); border-top: 1px solid var(--hairline); }
+.md-sec > .t-title { margin-top: var(--space-1); }
+.md-ideas { display: flex; flex-direction: column; margin-top: var(--space-2); }
+.md-idea { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 28px 0; text-align: center; }
+.md-idea + .md-idea { border-top: 1px solid var(--hairline); }
+.md-idea > img { width: 132px; height: 120px; object-fit: contain; }
+.md-state { min-width: 180px; justify-content: space-between; font-weight: 400; }
+.md-doors { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-1); }
+.md-door { display: flex; align-items: center; gap: 14px; min-height: 76px; padding: 14px var(--space-4); border-radius: var(--r-ctl); }
+.md-door-icon { flex: none; color: var(--ink-primary); }
+.md-door-words { display: flex; flex: 1; min-width: 0; flex-direction: column; }
+.md-door-chev { flex: none; color: var(--ink-muted); }
+@media (min-width: 768px) {
+  .md-bar { padding: 0 var(--space-12); }
+  .md-bar .ui-bar { border-bottom: 1px solid var(--hairline); }
+  .md-body { padding: var(--space-2) var(--space-12) var(--space-12); }
+  .md-north { padding: var(--space-2) 0 var(--space-12); }
+  .md-compass { width: 112px; height: 106px; }
+  .md-quote { font-size: 60px; line-height: 62px; letter-spacing: -.045em; }
+  .md-ideas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-8); }
+  .md-idea { padding: var(--space-5) 0 var(--space-2); }
+  .md-idea + .md-idea { border-top: 0; }
+  .md-doors { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+}

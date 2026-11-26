@@ -118,7 +118,7 @@ describe('YourSetupView', () => {
     fireEvent.click(screen.getByRole('button', { name: /Edit North Star/ }));
     fireEvent.click(screen.getByRole('button', { name: /Change subjects/ }));
     fireEvent.click(screen.getByRole('button', { name: /Open Planner/ }));
-    fireEvent.click(screen.getByRole('tab', { name: 'Dark' }));
+    fireEvent.click(screen.getByRole('radio', { name: 'Dark' }));
 
     expect(h.onOpenSettings).toHaveBeenCalledOnce();
     expect(h.onEditNorthStar).toHaveBeenCalledOnce();
