@@ -22,6 +22,7 @@ import SetupSelect from "./SetupSelect";
 import SetupSoundToggle from "./SetupSoundToggle";
 import { SelectionMark } from "../ui/Choice";
 import { useFlowDark } from "./useFlowDark";
+import { sentenceCase } from "../../utils/sentenceCase";
 
 export default function DesktopSetup(props: OnboardingProps) {
   const {
@@ -187,7 +188,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                             ? NORTH_STAR_CATEGORY_BLOBS[category.id].iconPath
                             : "/icons/onboarding/north-star.png"
                         }
-                        label={category?.label ?? "Find your direction"}
+                        label={sentenceCase(category?.label ?? "Find your direction")}
                         reduced={reduced}
                       />
                     </>
@@ -463,7 +464,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                             >
                               {String(index + 1).padStart(2, "0")}
                             </span>
-                            <span>{item.label}</span>
+                            <span>{sentenceCase(item.label)}</span>
                             <SelectionMark on={draft.category === item.id} />
                           </button>
                         ))}

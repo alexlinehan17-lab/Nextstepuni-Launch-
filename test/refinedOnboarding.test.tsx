@@ -74,21 +74,21 @@ describe('approved onboarding interactions', () => {
     mount({ ...initialDraft(), step: 'north', year: '6th' });
     expect(screen.getByRole('img', { name: 'Find your direction illustration' })).toHaveAttribute('src', '/icons/onboarding/north-star.png');
     expect(screen.getByRole('button', { name: 'Continue' })).toBeDisabled();
-    const learning = screen.getByRole('button', { name: 'Keep Learning' });
+    const learning = screen.getByRole('button', { name: 'Keep learning' });
     learning.focus();
     fireEvent.click(learning);
     expect(learning).toHaveFocus();
     expect(learning).toHaveAttribute('aria-pressed', 'true');
     expect(within(learning).queryByRole('img')).not.toBeInTheDocument();
     expect(screen.getByRole('img', { name: 'Keep Learning illustration' })).toHaveAttribute('src', '/icons/north-star/learning.png');
-    fireEvent.click(screen.getByRole('button', { name: 'My Own Path' }));
+    fireEvent.click(screen.getByRole('button', { name: 'My own path' }));
     expect(screen.queryByRole('img', { name: 'Keep Learning illustration' })).not.toBeInTheDocument();
     expect(screen.getByRole('img', { name: 'My Own Path illustration' })).toHaveAttribute('src', '/icons/north-star/my-own-path.png');
     fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
     expect(screen.getByLabelText('Explore ideas')).toHaveValue('independence');
     expect(screen.getByRole('button', { name: 'My First Real Paycheck' })).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: 'Back' }));
-    expect(screen.getByRole('button', { name: 'My Own Path' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('button', { name: 'My own path' })).toHaveAttribute('aria-pressed', 'true');
     expect(screen.getByRole('img', { name: 'My Own Path illustration' })).toBeInTheDocument();
   });
   it('keeps navigation outside the scrolling choices on every onboarding step', () => {

@@ -16,7 +16,11 @@
 .md-page :is(h2, h3) { margin: 0; color: var(--ink-primary); font-weight: 400; }
 .md-page .t-sub { margin: 0; }
 .md-north { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: var(--space-5) 0 var(--space-8); text-align: center; }
-.md-compass { width: 96px; height: 92px; object-fit: contain; margin-bottom: 14px; }
+/* The board's compass (r5-my-direction) is a tight crop drawn 96 x 92 (laptop 112 x 106),
+   so the drawing itself stands about 88px tall (laptop 102px). The app's file
+   has room round the drawing (its ink spans 449-1340 x 35-883 of 1536 x 1024),
+   so the image is sized and nudged until the drawing matches. */
+.md-compass { width: 168px; height: 112px; object-fit: contain; margin-bottom: -2px; transform: translateX(-14px); }
 .md-quote { max-width: 780px; font-size: 29px; line-height: 33px; letter-spacing: -.04em; }
 .md-edit { margin-top: 10px; }
 .md-sec { display: flex; flex-direction: column; gap: var(--space-2); padding: 28px 0 var(--space-6); border-top: 1px solid var(--hairline); }
@@ -35,8 +39,8 @@
   .md-bar { padding: 0 var(--space-12); }
   .md-bar .ui-bar { border-bottom: 1px solid var(--hairline); }
   .md-body { padding: var(--space-2) var(--space-12) var(--space-12); }
-  .md-north { padding: var(--space-2) 0 var(--space-12); }
-  .md-compass { width: 112px; height: 106px; }
+  .md-north { padding: var(--space-8) 0 var(--space-12); }
+  .md-compass { width: 198px; height: 132px; margin-bottom: -6px; transform: translateX(-16px); }
   .md-quote { font-size: 60px; line-height: 62px; letter-spacing: -.045em; }
   .md-ideas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-8); }
   .md-idea { padding: var(--space-5) 0 var(--space-2); }

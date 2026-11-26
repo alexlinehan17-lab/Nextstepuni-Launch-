@@ -4,6 +4,7 @@ import SubjectAvatar from "../SubjectAvatar";
 import { ArrowLeft, ArrowRight, X } from "lucide-react";
 import { SelectionMark } from "../ui/Choice";
 import { useFlowDark } from "./useFlowDark";
+import { sentenceCase } from "../../utils/sentenceCase";
 import { DAYS_OF_WEEK, LEVEL_LABELS, SUBJECT_GROUP_LABELS, subjectMatchesQuery } from "../subjectData";
 import { VISION_CARD_ART } from "../../northStarData";
 import { NORTH_STAR_CATEGORY_BLOBS } from "../NorthStarCategoryIcon";
@@ -216,7 +217,7 @@ export default function SetupFlow(props: OnboardingProps) {
                     }
                   />
                   <span className="setup-art-label">
-                    {category?.label ?? "Find your direction"}
+                    {sentenceCase(category?.label ?? "Find your direction")}
                   </span>
                 </div>
                 <p className="setup-description">
@@ -241,7 +242,7 @@ export default function SetupFlow(props: OnboardingProps) {
                       <span className="setup-choice-number" aria-hidden="true">
                         {String(index + 1).padStart(2, "0")}
                       </span>
-                      <span>{item.label}</span>
+                      <span>{sentenceCase(item.label)}</span>
                       <SelectionMark on={draft.category === item.id} />
                     </button>
                   ))}
