@@ -41,9 +41,6 @@
   "components/AffirmingValuesModule.tsx": {
    "button": 4
   },
-  "components/AgencyArchitectureModule.tsx": {
-   "button": 2
-  },
   "components/AgencyProtocolModule.tsx": {
    "button": 2
   },
@@ -178,9 +175,6 @@
   },
   "components/GameDayModule.tsx": {
    "button": 7
-  },
-  "components/GrowthMindsetModule.tsx": {
-   "button": 9
   },
   "components/HopeProtocolModule.tsx": {
    "button": 5

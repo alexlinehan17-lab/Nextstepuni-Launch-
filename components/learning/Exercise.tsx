@@ -24,7 +24,7 @@
  * two tilted sheets behind it; on a laptop the step is already on a sheet, so the
  * exercise lies flat on it under a hairline (no sheet on a sheet).
  */
-import { createContext, useContext, useId, useLayoutEffect, useRef, useState, type KeyboardEvent, type ReactNode } from 'react';
+import { createContext, useContext, useId, useLayoutEffect, useRef, useState, type CSSProperties, type InputHTMLAttributes, type KeyboardEvent, type ReactNode } from 'react';
 import { RotateCcw } from 'lucide-react';
 import { AnswerTick } from '../ui/Choice';
 import { PressBox } from '../ui/List';
@@ -70,12 +70,15 @@ export interface ExerciseSheetProps {
   className?: string;
   /** Hooks a module's own styling or a test kept on the old wrapper (`data-wide`). */
   name?: string;
+  /** The title's id, when something inside (a field with no label of its own) is named by it. */
+  id?: string;
 }
 
 /** The one lifted sheet an exercise sits on: its label, its title, the line that says
  *  what to do, then the exercise. */
-export function ExerciseSheet({ label, title, sub, children, level = 4, className = '', name }: ExerciseSheetProps) {
-  const titleId = useId();
+export function ExerciseSheet({ label, title, sub, children, level = 4, className = '', name, id }: ExerciseSheetProps) {
+  const ownId = useId();
+  const titleId = id ?? ownId;
   return (
     <section className={`ui-part ex-sheet ${className}`.trim()} aria-labelledby={title ? titleId : undefined} data-exercise={name}>
       <div className="ex-sheet-face">
@@ -88,8 +91,9 @@ export function ExerciseSheet({ label, title, sub, children, level = 4, classNam
 
 /** A second exercise on the same sheet (a step with two exercises shares one sheet),
  *  under a hairline, with its own title. */
-export function ExercisePart({ label, title, sub, children, level = 4, className = '' }: Omit<ExerciseSheetProps, 'name'>) {
-  const titleId = useId();
+export function ExercisePart({ label, title, sub, children, level = 4, className = '', id }: Omit<ExerciseSheetProps, 'name'>) {
+  const ownId = useId();
+  const titleId = id ?? ownId;
   return (
     <div className={`ex-part ${className}`.trim()}>
       <ExerciseHead label={label} title={title} sub={sub} titleId={titleId} level={level} />
@@ -231,5 +235,23 @@ export function RevealCard({ revealed, onPress, before, after, keepBefore = true
       </span>
       {toggles ? <RotateCcw className="ex-reveal-turn" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" /> : null}
     </PressBox>
+  );
+}
+
+/** One slider for the whole app (board c-read-choices, "the sliders"): a hairline track, an ink fill to
+ *  the value, a white handle with an ink edge, 44 tall to the finger. A plain range input underneath, so
+ *  the keyboard, the screen reader and the module's own onChange work as before. No gradient: the fill is
+ *  its own line. */
+export function ExerciseRange({ className = '', style, ...props }: Omit<InputHTMLAttributes<HTMLInputElement>, 'type'>) {
+  const min = Number(props.min ?? 0);
+  const max = Number(props.max ?? 100);
+  const value = Number(props.value ?? props.defaultValue ?? min);
+  const p = max > min ? Math.min(1, Math.max(0, (value - min) / (max - min))) : 0;
+  return (
+    <span className={`ex-range ${className}`.trim()} style={{ ...style, '--p': p } as CSSProperties}>
+      <i className="ex-range-track" aria-hidden="true" />
+      <i className="ex-range-fill" aria-hidden="true" />
+      <input {...props} type="range" className="ex-range-input" />
+    </span>
   );
 }

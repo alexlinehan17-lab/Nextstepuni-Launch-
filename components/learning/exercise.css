@@ -32,11 +32,57 @@
 .ex-sheet .ui-choice-label { font-size: 16px; line-height: 23px; letter-spacing: 0; }
 .ex-sheet .ui-choice--tile { padding: 14px; }
 
+/* the first exercise on a sheet that holds two starts at the top, with no rule above it */
+.ex-sheet-face > .ex-part:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+/* a question's own words above its answers */
+.ex-group .ui-choices-legend { color: var(--ink-primary); font-size: 15px; line-height: 21px; }
+
+/* ── One slider: a hairline track, an ink fill, a white handle with an ink edge ───────────────────────── */
+.ex-sliders { display: flex; flex-direction: column; gap: 6px; }
+.ex-slider { display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-3) 0 var(--space-1); border-top: 1px solid var(--hairline); }
+.ex-slider:first-child { padding-top: var(--space-1); border-top: 0; }
+.ex-slider-name { margin: 0; color: var(--ink-primary); font-size: 16px; line-height: 21px; letter-spacing: -0.015em; }
+.ex-slider-ends { display: flex; justify-content: space-between; gap: var(--space-4); color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+.ex-slider-ends > span { display: flex; max-width: 48%; flex-direction: column; text-align: left; }
+.ex-slider-ends > span:last-child { text-align: right; }
+.ex-slider-ends small { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.ex-range { position: relative; display: block; height: 44px; margin: -8px 2px; --p: 0.5; }
+.ex-range-track, .ex-range-fill { position: absolute; left: 0; top: 20px; height: 4px; border-radius: 2px; pointer-events: none; }
+.ex-range-track { right: 0; background: var(--hairline); }
+.ex-range-fill { width: calc((100% - 28px) * var(--p) + 14px); background: var(--ink-primary); }
+.nsu-module-reader .ex-range input.ex-range-input, .ex-range input.ex-range-input { position: absolute; top: 0; left: 0; width: 100%; height: 44px; min-height: 0; margin: 0; padding: 0; border: 0; background: transparent; accent-color: var(--ink-primary); cursor: pointer; -webkit-appearance: none; appearance: none; }
+.ex-range-input::-webkit-slider-runnable-track { height: 44px; background: transparent; border: 0; }
+.ex-range-input::-moz-range-track { height: 44px; background: transparent; border: 0; }
+.ex-range-input::-webkit-slider-thumb { width: 28px; height: 28px; margin-top: 8px; border: 1.5px solid var(--outline-strong); border-radius: 50%; background: var(--surface-paper); box-shadow: var(--lift-ctl); -webkit-appearance: none; appearance: none; }
+.ex-range-input::-moz-range-thumb { width: 28px; height: 28px; box-sizing: border-box; border: 1.5px solid var(--outline-strong); border-radius: 50%; background: var(--surface-paper); box-shadow: var(--lift-ctl); }
+/* keyboard focus rings the handle, not the 44px band round the track (the app's focus layer would draw a box) */
+@layer nsu-focus {
+  :root:not([data-focus-review]) .ex-range input.ex-range-input:focus-visible { outline: none !important; }
+}
+.ex-range-input:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 2px var(--surface-paper), 0 0 0 4px var(--nsu-focus-edge); }
+.ex-range-input:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 2px var(--surface-paper), 0 0 0 4px var(--nsu-focus-edge); }
+/* what the student's answer comes to, said in words under a hairline */
+.ex-result { display: flex; flex-direction: column; gap: 6px; padding-top: 14px; border-top: 1px solid var(--hairline); text-align: left; }
+.ex-result-name { margin: 0; color: var(--ink-primary); font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; }
+
+/* ── Named ideas as numbered lines on the page (board c-read-flow, step 2): no box round words you read ── */
+.ex-nums { display: flex; flex-direction: column; margin: 26px 0 0; padding: 0; border-top: 1px solid var(--hairline); list-style: none; }
+.ex-nums > li { display: flex; align-items: flex-start; gap: var(--space-4); margin: 0; padding: 14px 0; border-bottom: 1px solid var(--hairline); }
+.ex-num { flex: none; width: 20px; color: var(--ink-primary); font: 400 29px/30px var(--font-ui); letter-spacing: -0.04em; }
+.ex-num-copy { display: flex; min-width: 0; flex-direction: column; gap: 3px; padding-top: 2px; }
+.ex-num-title { margin: 0; color: var(--ink-primary); font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.ex-num-sub { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.rd-reader .mr-prose > .ex-nums { margin-top: 26px; }
+/* a word you tap for its meaning sits in the line like any word (the reader's buttons are 36 tall otherwise) */
+.nsu-module-reader :is(.ex-num-sub, .ex-sub, .ex-slider-ends) .mr-term { min-height: 0; line-height: inherit; vertical-align: baseline; }
+
 /* ── The answer line: ink words, a green tick ─────────────────────────────────────────────────────────── */
 .ex-line { display: flex; align-items: flex-start; gap: var(--space-2); margin: 0; color: var(--ink-primary); font-size: 15px; line-height: 21px; text-align: left; animation: ui-rise var(--t-ui) var(--ease-out) both; }
 .ex-line .ex-line-tick { width: 18px; height: 18px; margin-top: 1.5px; }
 .ex-line-words b, .ex-line-words strong { font-weight: 700; }
 
+/* ── A card you press to turn it over: stacked 8 apart ── */
+.ex-cards { display: flex; flex-direction: column; gap: var(--space-2); }
 /* ── A card you press to turn it over ─────────────────────────────────────────────────────────────────── */
 .ui-press.ex-reveal { display: flex; align-items: center; gap: var(--space-3); min-height: 56px; padding: 13px 14px 13px 16px; border-radius: var(--r-ctl); }
 .ex-reveal-body { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: var(--space-1); }
@@ -48,6 +94,46 @@
 .ex-reveal-state--done .ui-tick { margin-top: 0; }
 .ex-reveal-turn { flex: none; color: var(--ink-muted); transition: transform var(--t-move) var(--ease-move); }
 .ex-reveal--on .ex-reveal-turn { transform: rotate(180deg); }
+
+/* ── Inside an exercise: a module's own furniture, in the system's look ────────────────────────────── */
+/* several questions on one sheet, each with its answers */
+.ex-questions { display: flex; flex-direction: column; gap: var(--space-6); }
+/* a drawing on the sheet under its label, with its count under a hairline (no box of its own) */
+.ex-figure { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); padding: var(--space-2) 0 0; }
+.ex-figure-art { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.ex-figure-count { align-self: stretch; margin: 0; padding-top: var(--space-3); border-top: 1px solid var(--hairline); color: var(--ink-muted); font-size: 13px; line-height: 18px; text-align: center; }
+/* the exercise's own actions: white buttons with a line and text buttons (the footer's Continue is the one charcoal) */
+.ex-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-3) var(--space-5); }
+/* words you start from: under their label, set large, not in a box */
+.ex-thought { display: flex; flex-direction: column; gap: var(--space-2); }
+.ex-thought-words { margin: 0; color: var(--ink-primary); font-size: 20px; line-height: 27px; letter-spacing: -0.02em; }
+/* a step between two things (a thought and its rewrite): a hairline, its words as a small label, an ink chevron */
+.ex-connector { display: flex; flex-direction: column; align-items: center; gap: 6px; color: var(--ink-muted); }
+.ex-connector > i { display: block; width: 1px; height: 16px; background: var(--outline-soft); }
+.ex-connector > .ex-label { color: var(--ink-primary); }
+/* a count of what is done, in the readout */
+.ex-count { margin: 0; color: var(--ink-muted); }
+.ex-stack { display: flex; flex-direction: column; gap: var(--space-3); }
+/* a card that turns over: its own small label above its words, a quieter line under them */
+.ex-reveal-before > .ex-label, .ex-reveal-tickrow > .ex-label { display: block; margin-bottom: 6px; }
+.ex-reveal-words { display: block; }
+.ex-reveal-tickrow { display: flex; align-items: flex-start; }
+.ex-reveal-check { order: 2; margin-left: auto; color: var(--success-hex); font-size: 15px; line-height: 14px; }
+.ex-reveal-note { display: block; margin-top: var(--space-1); color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+
+/* ── A student's story (ModuleShared PersonalStory): on the page under a hairline, not in a box; its label is small
+   capitals, not a bordered pill; the quote mark is ink, not orange ── */
+.ms-story { position: relative; padding-top: 18px; border-top: 1px solid var(--hairline); color: var(--ink-primary); text-align: left; }
+.rd-reader .mr-prose > .ms-story { margin-top: 34px; }
+.ms-story-mark { position: absolute; top: 46px; right: 0; color: var(--ink-primary); opacity: 0.06; font: 400 72px/1 var(--font-ui); pointer-events: none; }
+.ms-story-head { position: relative; display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3); }
+.ms-story-icon { flex: none; color: var(--ink-muted); }
+.ms-story-who { display: flex; flex: 1; min-width: 0; flex-wrap: wrap; align-items: baseline; gap: 2px var(--space-2); margin: 0; }
+.ms-story-name { color: var(--ink-primary); font-size: 15px; line-height: 21px; }
+.ms-story-role, .ms-story-label { color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; text-transform: uppercase; }
+.ms-story-label { flex: none; }
+.ms-story-text { position: relative; color: var(--ink-primary); font-size: 16px; line-height: 26px; }
+.ms-story-text > * + * { margin-top: var(--space-3); }
 
 /* ── Inside a module: the reader's older sheets style every button and field there; the parts keep their look ─ */
 .nsu-module-reader .ui-part.ui-choice { min-height: 56px; }

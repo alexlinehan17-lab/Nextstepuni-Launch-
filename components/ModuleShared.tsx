@@ -17,6 +17,7 @@ import { BrandBook } from './learning/BrandBook';
 import { Popover,PopoverContent,PopoverTrigger } from './learning/DefinitionPopover';
 import { Artwork,Eyebrow } from './learning/shared';
 import { ReaderStepContext } from './learning/readerContext';
+import './learning/exercise.css';
 
 /* ═══════════════════════════════════════════════════════
    Highlight — inline discovery tooltip
@@ -179,38 +180,32 @@ export const PersonalStory = ({ children, name, role, junior }: PersonalStoryPro
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: '-40px' }}
     transition={{ duration: 0.5, ease: [0.25, 1, 0.5, 1] }}
-    className="my-14"
+    className="ms-story"
   >
-    <div className="relative rounded-2xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)] px-8 py-7 md:px-10 md:py-9">
-      <div aria-hidden="true" className="absolute top-4 right-6 pointer-events-none" style={{ fontSize: 72, lineHeight: 1, fontFamily: 'Georgia, serif', color: 'rgba(0,0,0,0.04)' }}>
-        &rdquo;
-      </div>
-      <div className="relative">
-        <div className="flex items-center gap-3 mb-5">
-          <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: 'var(--module-surface)' }}>
-            <Quote size={14} style={{ color: 'var(--accent-hex)' }} />
-          </div>
-          <div className="min-w-0">
-            <span className="text-sm font-bold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{shownName}</span>
-            {shownRole && (
-              <span className="text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] dark:text-[var(--module-muted)] ml-2">{shownRole}</span>
-            )}
-          </div>
-          {/* Honesty label: student voices are illustrative composites drawn from
-              common student experiences, not quotes from identifiable named
-              students. Rendered app-wide so no PersonalStory implies a real,
-              traceable individual. See docs/module-content-audit-2026-07-21.md. */}
-          <span
-            className="ml-auto shrink-0 text-[9px] font-semibold uppercase tracking-wider text-[var(--module-muted)] dark:text-[var(--module-muted)] border border-[var(--module-line)] dark:border-[var(--module-line)] rounded-full px-2 py-0.5"
-            title={isFounderStory ? 'A first-person note from the NextStepUni founder.' : 'An illustrative example based on common student experiences — not a quote from a specific named student.'}
-          >
-            {isFounderStory ? 'Founder’s note' : 'Illustrative'}
-          </span>
-        </div>
-        <div className="text-[15px] leading-[1.8] text-[var(--module-ink)] dark:text-[var(--module-muted)] italic font-serif">
-          {shownChildren}
-        </div>
-      </div>
+    <div aria-hidden="true" className="ms-story-mark">
+      &rdquo;
+    </div>
+    <div className="ms-story-head">
+      <Quote size={16} strokeWidth={2} className="ms-story-icon" aria-hidden="true" />
+      <p className="ms-story-who">
+        <span className="ms-story-name">{shownName}</span>
+        {shownRole && (
+          <span className="ms-story-role">{shownRole}</span>
+        )}
+      </p>
+      {/* Honesty label: student voices are illustrative composites drawn from
+          common student experiences, not quotes from identifiable named
+          students. Rendered app-wide so no PersonalStory implies a real,
+          traceable individual. See docs/module-content-audit-2026-07-21.md. */}
+      <span
+        className="ms-story-label"
+        title={isFounderStory ? 'A first-person note from the NextStepUni founder.' : 'An illustrative example based on common student experiences — not a quote from a specific named student.'}
+      >
+        {isFounderStory ? 'Founder’s note' : 'Illustrative'}
+      </span>
+    </div>
+    <div className="ms-story-text">
+      {shownChildren}
     </div>
   </MotionDiv>
   );

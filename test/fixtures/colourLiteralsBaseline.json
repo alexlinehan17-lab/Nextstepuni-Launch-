@@ -15,9 +15,6 @@
   "components/AdminDashboard.tsx": {
    "tailwind [#…]": 5
   },
-  "components/AgencyArchitectureModule.tsx": {
-   "rgb(": 2
-  },
   "components/AnswerArchitect/AnswerArchitect.tsx": {
    "hex": 12,
    "tailwind [#…]": 4
@@ -250,9 +247,6 @@
   },
   "components/MasteringTheSciencesModule.tsx": {
    "hex": 28
-  },
-  "components/ModuleShared.tsx": {
-   "rgb(": 1
   },
   "components/MountainLandscape.tsx": {
    "hex": 9
