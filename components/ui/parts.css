@@ -1,0 +1,687 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * The shared parts: one of each (buttons, choices, menu, sheet, confirm,
+ * toast, bars, field, rows, the sheet of paper, the pressable box, states).
+ *
+ * Ported from the approved kit (nextstepuni-design skill, assets/system.css,
+ * scope .scr.dc, direction A "the sign-in standard", the white page of 25 Nov
+ * 2026), onto the app's tokens (index.css) and the frame primitives
+ * (components/ui/frame.css). No typed colours, motion or shadows of its own:
+ * every value is a token. A box you press reads `--lift-ctl`, which is an empty
+ * shadow since the owner chose "a line only" (26 Nov 2026); the choice lives in
+ * that one line of index.css.
+ *
+ * Class prefix `ui-`. Hover looks live only inside the hover media query
+ * (design/postcss-hover-only.js would add it anyway). Under reduced motion
+ * nothing travels, scales or draws; fades and colour changes stay
+ * (motion.md, section 5).
+ */
+
+/* The one typeface, from the same files sign-in uses (no new font files).
+   Declared exactly as the laptop sidebar declares it, so the two agree. */
+@font-face { font-family: 'ABC Diatype'; src: url('/fonts/abc-diatype-regular.woff2') format('woff2'); font-style: normal; font-weight: 400 600; font-display: swap; }
+@font-face { font-family: 'ABC Diatype'; src: url('/fonts/abc-diatype-bold.woff2') format('woff2'); font-style: normal; font-weight: 700 900; font-display: swap; }
+/* The readout mono for counts and values (also declared by the Kobra runtime). */
+@font-face { font-family: 'Departure Mono'; src: url('/fonts/departure-mono.woff2') format('woff2'); font-weight: 100 900; font-display: swap; }
+
+/* Every part: the typeface, no tap flash, no text selection on a control. */
+.ui-part { font-family: var(--font-ui); -webkit-font-smoothing: antialiased; }
+:is(.ui-btn, .ui-link, .ui-icon-btn, .ui-choice, .ui-switch, .ui-seg-item, .ui-menu-btn, .ui-menu-item, .ui-row, .ui-press, .ui-need, .ui-tab) {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  cursor: pointer;
+  font-family: var(--font-ui);
+}
+.ui-icon { display: block; flex: none; }
+/* The readout: the mono, for things that are counted ("6 / 8", "2 of 4 chosen"). */
+.ui-readout { font-family: 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-size: 13px; font-weight: 400; line-height: 16px; letter-spacing: 0.02em; font-variant-numeric: tabular-nums; }
+
+/* ── 1. Buttons: three kinds, three heights, one shape ───────────────────── */
+
+.ui-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 44px;
+  padding: 0 var(--space-4);
+  border: 1px solid var(--outline-soft);
+  border-radius: var(--r-ctl);
+  background: var(--surface-paper);
+  color: var(--ink-primary);
+  box-shadow: var(--lift-ctl);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.005em;
+  white-space: nowrap;
+  transition: transform var(--t-press) var(--ease-out), background-color var(--t-ui) var(--ease-out);
+}
+.ui-btn:active { transform: scale(0.98); background: var(--surface-soft); }
+.ui-btn--main { background: var(--action); color: var(--action-ink); border-color: var(--action); box-shadow: none; }
+.ui-btn--main:active { background: var(--action-press); }
+.ui-btn--lg { height: 52px; padding: 0 18px; font-size: 16px; }
+.ui-btn--sm { height: 36px; padding: 0 var(--space-3); font-size: 14px; border-radius: var(--r-sm); }
+.ui-btn--block { display: flex; width: 100%; }
+.ui-btn--split { justify-content: space-between; }
+/* Truly unavailable (locked, not for this plan): a well, a quiet label, no lift. */
+.ui-btn--unavailable,
+.ui-btn--unavailable:active { background: var(--surface-soft); color: var(--ink-muted); border-color: var(--hairline); box-shadow: none; transform: none; cursor: default; }
+@media (hover: hover) and (pointer: fine) {
+  .ui-btn:not(.ui-btn--main, .ui-btn--unavailable):hover { background: var(--surface-soft); }
+  .ui-btn--main:hover { background: var(--action-press); }
+}
+
+/* The text button: no box. Ink; quiet in ink-2; danger in red text. */
+.ui-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink-primary);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+.ui-link--quiet { color: var(--ink-secondary); }
+.ui-link--danger { color: var(--danger-tint-ink); }
+.ui-link .ui-icon { transition: transform var(--t-ui) var(--ease-out); }
+.ui-link:active .ui-icon { transform: translateX(2px); }
+@media (hover: hover) and (pointer: fine) {
+  .ui-link:hover { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+}
+
+/* The icon button: a bare glyph in a 44 x 44 target. */
+.ui-icon-btn {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex: none;
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-ctl);
+  background: none;
+  color: var(--ink-primary);
+  transition: transform var(--t-press) var(--ease-out), background-color var(--t-press) var(--ease-out);
+}
+.ui-icon-btn:active { transform: scale(0.98); background: var(--surface-soft); }
+@media (hover: hover) and (pointer: fine) {
+  .ui-icon-btn:hover { background: var(--surface-soft); }
+}
+
+/* A main action that cannot go yet: the sentence above it names what is
+   missing, and pressing either takes the student there (components.md, "States"). */
+.ui-needs { display: flex; flex-direction: column; gap: var(--space-2); }
+.ui-needs--block { width: 100%; }
+.ui-needs:not(.ui-needs--block) { align-items: flex-start; }
+.ui-need {
+  position: relative;
+  display: block;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink-secondary);
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+}
+/* The missing step, outlined for a moment after the student is taken to it. */
+[data-ui-nudge] { outline: 2px solid var(--nsu-focus-edge); outline-offset: 4px; }
+/* Its 44px press area grows upwards from the button's top edge, so it never
+   lies over the button below it. */
+.ui-need.frame-hit::after { top: auto; bottom: calc(-1 * var(--space-2)); transform: translateX(-50%); }
+.ui-unavailable { display: flex; flex-direction: column; gap: var(--space-2); }
+.ui-unavailable-why { margin: 0; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+
+/* ── 2. Choosing ─────────────────────────────────────────────────────────── */
+
+/* A choice: an outlined tile before it is touched; chosen keeps its white face
+   and gains an ink outline (border plus a 1px inner line, so nothing moves:
+   drawn as one 2px line over the border box, so the corners stay concentric).
+   The inner line is drawn on ::before, not as a box-shadow, so the keyboard
+   focus edge (design/quiet-focus.css removes box-shadows) cannot erase it. */
+.ui-choice {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: 56px;
+  padding: var(--space-3) 14px;
+  border: 1px solid var(--outline-soft);
+  border-radius: var(--r-sm);
+  background: var(--surface-paper);
+  color: var(--ink-primary);
+  box-shadow: var(--lift-ctl);
+  text-align: left;
+  transition: border-color var(--t-ui) var(--ease-out), transform var(--t-press) var(--ease-out);
+}
+.ui-choice::before {
+  content: '';
+  position: absolute;
+  inset: -1px; /* over the border, so the two lines share one corner radius */
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 2px var(--ink-primary);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--t-press) var(--ease-out);
+}
+.ui-choice:active { transform: scale(0.98); }
+.ui-choice[aria-checked='true'] { border-color: var(--ink-primary); }
+.ui-choice[aria-checked='true']::before { opacity: 1; transition-duration: var(--t-ui); }
+.ui-choice-body { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 2px; }
+.ui-choice-label { font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.ui-choice-meta { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.ui-choice-art { width: 40px; height: 40px; flex: none; object-fit: contain; }
+/* The grid tile: two columns on a phone at most, at least 88px tall. */
+.ui-choice--tile { flex-direction: column; align-items: flex-start; gap: 6px; min-height: 88px; padding: 14px; }
+.ui-choice--tile > .ui-mark { position: absolute; top: 14px; right: 14px; }
+.ui-choice--tile .ui-choice-body { padding-right: 30px; }
+.ui-choices-group { display: flex; flex-direction: column; gap: var(--space-3); }
+.ui-choices { display: flex; flex-direction: column; gap: var(--space-2); }
+.ui-choices--tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); }
+.ui-choices-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); }
+.ui-choices-legend { margin: 0; color: var(--ink-primary); font-size: 13px; line-height: 18px; }
+.ui-choices-count { color: var(--ink-primary); }
+
+/* The selection mark: the ring fills ink and its tick draws (motion.md, "The
+   selection mark"). Pick-several is the same mark with a rounded square. */
+.ui-mark {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  flex: none;
+  margin-left: auto;
+  border: 1.5px solid var(--outline-soft);
+  border-radius: 50%;
+  background: transparent;
+  transition: background-color var(--t-press) var(--ease-out), border-color var(--t-press) var(--ease-out);
+}
+.ui-mark--square { border-radius: 6px; }
+.ui-mark svg { width: 12px; height: 12px; fill: none; stroke: var(--action-ink); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.ui-mark path { stroke-dasharray: 22; stroke-dashoffset: 22; transition: none; }
+.ui-mark--on { background: var(--ink-primary); border-color: var(--ink-primary); transition-duration: var(--t-ui); }
+.ui-mark--on path { stroke-dashoffset: 0; transition: stroke-dashoffset var(--t-draw) var(--ease-out) var(--t-draw-wait); }
+
+/* The switch: for a setting that applies at once. Track line, ink when on. */
+.ui-switch {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  flex: none;
+  padding: 0;
+  border: 0;
+  border-radius: 15px;
+  background: var(--outline-soft);
+  transition: background-color var(--t-ui) var(--ease-out);
+}
+.ui-switch-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--action-ink);
+  pointer-events: none;
+  transition: transform var(--t-ui) var(--ease-out);
+}
+.dark .ui-switch:not([aria-checked='true']) .ui-switch-knob { background: var(--ink-primary); }
+.ui-switch[aria-checked='true'] { background: var(--ink-primary); }
+.ui-switch[aria-checked='true'] .ui-switch-knob { transform: translateX(20px); }
+.ui-switch-row { display: flex; align-items: center; gap: var(--space-3); }
+
+/* The selection bar: two to four short choices; the white pill slides. */
+.ui-seg {
+  position: relative;
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-ctl);
+  background: var(--surface-soft);
+}
+.ui-seg-pill {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  width: calc((100% - 6px - (var(--seg-n) - 1) * 2px) / var(--seg-n));
+  border: 1px solid var(--outline-strong);
+  border-radius: var(--r-sm);
+  background: var(--surface-paper);
+  pointer-events: none;
+  transform: translateX(calc(var(--seg-i, 0) * (100% + 2px)));
+  transition: transform var(--t-move) var(--ease-move);
+}
+.ui-seg-item {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 0;
+  min-width: 0;
+  height: 36px;
+  padding: 0 var(--space-2);
+  border: 0;
+  border-radius: var(--r-sm);
+  background: none;
+  color: var(--ink-secondary);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  transition: color var(--t-ui) var(--ease-out);
+}
+.ui-seg-item[aria-checked='true'] { color: var(--ink-primary); font-weight: 700; }
+.ui-seg--md .ui-seg-item { height: 44px; font-size: 15px; }
+
+/* ── 3. The menu button and its menu ─────────────────────────────────────── */
+
+.ui-menu-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  height: 44px;
+  padding: 0 var(--space-3) 0 14px;
+  border: 1px solid var(--outline-soft);
+  border-radius: var(--r-sm);
+  background: var(--surface-paper);
+  color: var(--ink-primary);
+  box-shadow: var(--lift-ctl);
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: transform var(--t-press) var(--ease-out), background-color var(--t-press) var(--ease-out);
+}
+.ui-menu-btn > .ui-icon { color: var(--ink-muted); }
+.ui-menu-btn-text { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.ui-menu-btn-count { font-weight: inherit; }
+.ui-menu-btn--block { display: flex; width: 100%; justify-content: space-between; }
+.ui-menu-btn:active { transform: scale(0.98); background: var(--surface-soft); }
+.ui-menu-layer { z-index: var(--z-dialog); outline: none; }
+.ui-menu {
+  min-width: max(220px, var(--anchor-width, 0px));
+  max-width: var(--available-width, 100vw);
+  max-height: var(--available-height, 100dvh);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 6px;
+  border: 1px solid var(--outline-soft);
+  border-radius: var(--r-box);
+  background: var(--surface-raised);
+  color: var(--ink-primary);
+  box-shadow: var(--float);
+  font-family: var(--font-ui);
+  outline: none;
+  transform-origin: var(--transform-origin, top left);
+  transition: opacity var(--t-ui) var(--ease-out), transform var(--t-ui) var(--ease-out);
+}
+.ui-menu[data-starting-style],
+.ui-menu[data-ending-style] { opacity: 0; transform: scale(0.96); }
+.ui-menu[data-ending-style] { transition-duration: calc(var(--t-ui) * 0.8); }
+.ui-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: 44px;
+  padding: 0 var(--space-3);
+  border-radius: var(--r-sm);
+  font-size: 16px;
+  outline: none;
+}
+.ui-menu-item[data-highlighted] { background: var(--surface-soft); }
+.ui-menu-item[aria-checked='true'] { font-weight: 700; }
+.ui-menu-item .ui-icon { visibility: hidden; }
+.ui-menu-item[aria-checked='true'] .ui-icon { visibility: visible; }
+
+/* ── 4. Things that come up over the screen ──────────────────────────────── */
+
+/* The sheet: a bottom sheet below 640px, a centred dialog from 640px (the frame
+   does the inset maths: frame-sheet-backdrop / frame-sheet). */
+.ui-layer { z-index: var(--z-dialog); display: flex; flex-direction: column; justify-content: flex-end; }
+.ui-scrim {
+  position: absolute;
+  inset: 0;
+  background: var(--scrim);
+  opacity: 0;
+  transition: opacity var(--t-sheet) var(--ease-out);
+}
+.ui-layer[data-state='open'] > .ui-scrim { opacity: 1; }
+.ui-layer[data-state='leaving'] > .ui-scrim { transition-duration: var(--t-sheet-out); }
+.ui-sheet {
+  --frame-pad-bottom: var(--space-4);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: var(--space-2);
+  border-radius: var(--r-card) var(--r-card) 0 0;
+  background: var(--surface-raised);
+  color: var(--ink-primary);
+  box-shadow: var(--float);
+  outline: none;
+  transform: translateY(100%);
+  transition: transform var(--t-sheet) var(--ease-sheet);
+}
+.ui-layer[data-state='open'] > .ui-sheet { transform: translateY(var(--sheet-drag, 0px)); }
+.ui-layer[data-state='leaving'] > .ui-sheet { transition-duration: var(--t-sheet-out); }
+.ui-layer[data-dragging] > .ui-sheet { transition: none; }
+.ui-sheet-grab { display: block; width: 36px; height: 5px; margin: 0 auto var(--space-1); border-radius: 3px; background: var(--outline-soft); }
+.ui-sheet-drag { touch-action: none; }
+.ui-sheet-head {
+  display: grid;
+  grid-template-columns: minmax(44px, 1fr) auto minmax(44px, 1fr);
+  align-items: center;
+  min-height: 52px;
+  padding: 0 var(--space-2);
+}
+.ui-sheet-head > :first-child { justify-self: start; }
+.ui-sheet-head > :last-child { justify-self: end; }
+.ui-sheet-title { margin: 0; padding: 0 var(--space-1); font-size: 21px; font-weight: 400; line-height: 26px; letter-spacing: -0.03em; text-align: center; }
+.ui-sheet-title--small { font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.ui-sheet-text { min-height: 44px; padding: 0 var(--space-3); border: 0; background: none; color: var(--ink-primary); font-size: 17px; }
+.ui-sheet-text--strong { font-weight: 700; }
+.ui-sheet-body {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-1) var(--space-6) 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.ui-sheet-foot { display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-4) var(--space-6) 0; }
+@media (min-width: 640px) {
+  .ui-layer { justify-content: center; align-items: center; }
+  .ui-sheet { width: min(100%, 520px); border-radius: var(--r-card); transform: translateY(0) scale(0.97); opacity: 0; transition: opacity var(--t-move) var(--ease-out), transform var(--t-move) var(--ease-out); }
+  .ui-layer[data-state='open'] > .ui-sheet { opacity: 1; transform: none; }
+  .ui-sheet-grab { display: none; }
+}
+
+/* The confirm: the one centred pop-up on a phone. One sentence saying what
+   happens, the safe choice as the main button, the destructive one in red. */
+.ui-confirm-layer { z-index: var(--z-dialog); display: flex; align-items: center; justify-content: center; --frame-gap: var(--space-8); }
+.ui-confirm-layer[data-state='open'] > .ui-scrim { opacity: 1; }
+.ui-confirm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  width: min(100%, 360px);
+  overflow-y: auto;
+  padding: var(--space-6) var(--space-5) var(--space-2);
+  border: 1px solid var(--outline-soft);
+  border-radius: var(--r-card);
+  background: var(--surface-raised);
+  color: var(--ink-primary);
+  box-shadow: var(--float);
+  outline: none;
+  opacity: 0;
+  transform: scale(0.97);
+  transition: opacity var(--t-move) var(--ease-out), transform var(--t-move) var(--ease-out);
+}
+.ui-confirm-layer[data-state='open'] > .ui-confirm { opacity: 1; transform: none; }
+.ui-confirm-title { margin: 0; font-size: 21px; font-weight: 400; line-height: 26px; letter-spacing: -0.03em; }
+.ui-confirm-text { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.ui-confirm .ui-btn { margin-top: var(--space-2); }
+.ui-confirm .ui-link { align-self: center; }
+
+/* The toast: one line, charcoal, above the tab bar, one at a time. Placed by
+   the frame (frame-float-bottom clears the tab bar and the home indicator). */
+.ui-toast {
+  --frame-float-gap: var(--space-4);
+  z-index: var(--z-toast);
+  left: calc(var(--space-6) + var(--safe-left));
+  right: calc(var(--space-6) + var(--safe-right));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  max-width: 448px;
+  margin: 0 auto;
+  padding: var(--space-3) 14px;
+  border-radius: var(--r-ctl);
+  background: var(--action);
+  color: var(--action-ink);
+  box-shadow: var(--float);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  line-height: 21px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity var(--t-ui) var(--ease-out), transform var(--t-ui) var(--ease-out);
+}
+.ui-toast[data-state='open'] { opacity: 1; transform: none; }
+.ui-toast[data-state='leaving'] { opacity: 0; transform: none; transition-duration: var(--t-draw); }
+.ui-toast-text { min-width: 0; }
+.ui-toast .ui-link { min-height: 21px; color: inherit; }
+
+/* ── 5. Bars ─────────────────────────────────────────────────────────────── */
+
+/* The top bar: the one leave control top-left, the name in the middle with an
+   optional small line over it, one action or the tool's drawing at the right. */
+.ui-bar { position: sticky; top: 0; z-index: var(--z-sticky); background: var(--surface-canvas); color: var(--ink-primary); }
+.ui-bar--ruled { border-bottom: 1px solid var(--hairline); }
+.ui-bar-row { position: relative; display: flex; align-items: center; justify-content: space-between; height: 44px; padding: 0 var(--space-2); }
+.ui-bar--tool .ui-bar-row { height: 52px; }
+.ui-bar-slot { position: relative; z-index: 1; display: flex; align-items: center; min-width: 44px; }
+.ui-bar-slot--end { justify-content: flex-end; }
+.ui-bar-mid {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 64px;
+  right: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+.ui-bar-title { max-width: 100%; margin: 0; overflow: hidden; text-overflow: ellipsis; font-size: 17px; font-weight: 400; line-height: 21px; letter-spacing: -0.02em; }
+.ui-bar--tool .ui-bar-title { font-size: 19px; line-height: 23px; }
+.ui-bar-over { color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.08em; }
+.ui-bar-label { padding: 0 var(--space-4); color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.ui-bar-art { display: block; width: 36px; height: 36px; margin-right: 6px; object-fit: contain; }
+
+/* The tab bar: five places, outline icons over a 10.5px label; the current one
+   is ink with a 2px ink marker above it. */
+.ui-tabbar {
+  position: sticky;
+  bottom: 0;
+  z-index: var(--z-tabbar);
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  border-top: 1px solid var(--hairline);
+  background: var(--surface-paper);
+}
+.ui-tab {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink-muted);
+  font-size: 10.5px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.ui-tab[aria-current='page'] { color: var(--ink-primary); font-weight: 700; }
+.ui-tab[aria-current='page']::before { content: ''; position: absolute; top: -1px; left: 50%; width: 22px; height: 2px; margin-left: -11px; background: var(--ink-primary); }
+
+/* The pinned footer: the one main action of a task screen, the sentence that
+   names what is missing directly above it, an optional quiet line below. */
+.ui-foot {
+  --frame-pad-bottom: var(--space-3);
+  position: sticky;
+  bottom: 0;
+  z-index: var(--z-sticky);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding-top: 10px;
+  padding-left: var(--space-6);
+  padding-right: var(--space-6);
+  background: var(--surface-canvas);
+}
+.ui-foot--ruled { border-top: 1px solid var(--hairline); }
+.ui-foot-note { margin: 0; color: var(--ink-muted); font-size: 13px; line-height: 18px; text-align: center; }
+
+/* ── 6. Field, rows, the sheet of paper, the pressable box ───────────────── */
+
+.ui-field { display: flex; flex-direction: column; gap: var(--space-2); }
+.ui-field-label { color: var(--ink-primary); font-size: 13px; line-height: 18px; }
+.ui-field-wrap { position: relative; display: block; }
+.ui-field-input {
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid var(--outline-soft);
+  border-radius: var(--r-sm);
+  background: var(--surface-paper);
+  color: var(--ink-primary);
+  box-shadow: var(--lift-ctl);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.ui-field-input::placeholder { color: var(--ink-muted); opacity: 1; }
+.ui-field--search .ui-field-input { height: 44px; padding-left: 44px; }
+.ui-field-glyph { position: absolute; top: 50%; left: 15px; color: var(--ink-muted); pointer-events: none; transform: translateY(-50%); }
+.ui-field-help { margin: 0; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.ui-field-error { margin: 0; color: var(--ink-primary); font-size: 13px; line-height: 18px; }
+
+/* Rows: ruled on the page; boxed only when the group as a whole is a control. */
+.ui-list { display: flex; flex-direction: column; margin: 0; padding: 0; border-top: 1px solid var(--hairline); list-style: none; }
+.ui-list--boxed { overflow: hidden; border: 1px solid var(--outline-soft); border-radius: var(--r-box); background: var(--surface-paper); box-shadow: var(--lift-ctl); }
+.ui-row-item { display: block; margin: 0; padding: 0; }
+.ui-list--boxed > li > .ui-row { padding-left: var(--space-4); padding-right: var(--space-4); }
+.ui-list--boxed > li:last-child > .ui-row { border-bottom: 0; }
+.ui-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: 56px;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px solid var(--hairline);
+  background: none;
+  color: var(--ink-primary);
+  text-align: left;
+  text-decoration: none;
+  transition: background-color var(--t-press) var(--ease-out);
+}
+:is(button, a).ui-row:active { background: var(--surface-soft); }
+@media (hover: hover) and (pointer: fine) {
+  :is(button, a).ui-row:hover { background: var(--surface-soft); }
+}
+.ui-row-art { width: 40px; height: 40px; flex: none; object-fit: contain; }
+.ui-row-body { display: flex; flex: 1; min-width: 0; flex-direction: column; }
+.ui-row-title { font-size: 16px; line-height: 21px; letter-spacing: -0.015em; }
+.ui-row-meta { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.ui-row-over { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.ui-row-value { flex: none; color: var(--ink-primary); white-space: nowrap; }
+.ui-row-chev { color: var(--ink-muted); }
+
+/* The sheet of paper: the one raised sheet, with two tilted sheets behind it.
+   The face is its own layer so a wrapper's background can never hide the two
+   sheets underneath (they live inside this part's own stacking context). */
+.ui-paper { position: relative; isolation: isolate; }
+.ui-paper::before,
+.ui-paper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border: 1px solid var(--outline-soft);
+  border-radius: var(--r-card);
+  background: var(--surface-paper);
+  transform: rotate(-1.3deg);
+}
+.ui-paper::after { transform: rotate(1.3deg); }
+.ui-paper-face {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-5);
+  border: 1px solid var(--outline-soft);
+  border-radius: var(--r-card);
+  background: var(--surface-paper);
+  box-shadow: var(--lift);
+}
+
+/* The pressable box: level 1, a line (and --lift-ctl, empty since 26 Nov 2026). */
+.ui-press {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: var(--space-4);
+  border: 1px solid var(--outline-soft);
+  border-radius: var(--r-box);
+  background: var(--surface-paper);
+  color: var(--ink-primary);
+  box-shadow: var(--lift-ctl);
+  text-align: left;
+  text-decoration: none;
+  transition: transform var(--t-press) var(--ease-out), background-color var(--t-press) var(--ease-out);
+}
+.ui-press:active { transform: scale(0.98); background: var(--surface-soft); }
+
+/* ── 7. States ───────────────────────────────────────────────────────────── */
+
+.ui-empty { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); padding: var(--space-8) var(--space-6); text-align: center; }
+.ui-empty-art { display: block; object-fit: contain; }
+.ui-empty-title { margin: 0; font-size: 21px; font-weight: 400; line-height: 26px; letter-spacing: -0.03em; }
+.ui-empty-line { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+
+.ui-skel { border-top: 1px solid var(--hairline); }
+.ui-skel-row { display: flex; flex-direction: column; justify-content: center; gap: 9px; min-height: 56px; padding: 10px 0; border-bottom: 1px solid var(--hairline); }
+.ui-skel-bar { display: block; height: 12px; border-radius: var(--r-xs); background: var(--hairline); }
+.ui-skel-bar--sub { height: 9px; }
+
+.ui-error { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-3); }
+.ui-error-text { margin: 0; color: var(--ink-primary); font-size: 16px; line-height: 24px; }
+
+/* ── Reduced motion: fades and colour stay; travel, scale and drawing go ──── */
+@media (prefers-reduced-motion: reduce) {
+  .ui-btn:active, .ui-icon-btn:active, .ui-choice:active, .ui-menu-btn:active, .ui-press:active { transform: none; }
+  .ui-link:active .ui-icon { transform: none; }
+  .ui-mark--on path { transition: none; }
+  .ui-switch-knob { transition: none; }
+  .ui-seg-pill { transition: none; }
+  .ui-menu[data-starting-style], .ui-menu[data-ending-style] { transform: none; }
+  /* A sheet fades in place; while a finger drags it, it still follows. */
+  .ui-sheet { transform: none; opacity: 0; transition: opacity var(--t-ui) var(--ease-out); }
+  .ui-layer[data-state='open'] > .ui-sheet { opacity: 1; transform: translateY(var(--sheet-drag, 0px)); }
+  .ui-confirm { transform: none; }
+  .ui-toast { transform: none; }
+}

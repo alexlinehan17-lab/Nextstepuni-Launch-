@@ -1,0 +1,895 @@
+{
+ "about": "Ratchet for test/sharedParts.guard.test.ts: how many hand-made buttons, pop-ups and dropdowns each file has outside the shared parts (components/ui/). Counts may only go down.",
+ "files": {
+  "App.tsx": {
+   "button": 1,
+   "pop-up": 1
+  },
+  "components/AcademicJourneyGame.tsx": {
+   "button": 4
+  },
+  "components/AccountCard.tsx": {
+   "button": 7,
+   "pop-up": 1
+  },
+  "components/AccreditationPage.tsx": {
+   "button": 5
+  },
+  "components/AchievementGallery.tsx": {
+   "button": 2
+  },
+  "components/AchievementToast.tsx": {
+   "button": 1
+  },
+  "components/AdminDashboard.tsx": {
+   "button": 9,
+   "dropdown": 2,
+   "pop-up": 1
+  },
+  "components/AdminFeedbackInbox.tsx": {
+   "button": 3,
+   "dropdown": 1
+  },
+  "components/AdminFunnelPanel.tsx": {
+   "button": 2
+  },
+  "components/AdminGcAccessPanel.tsx": {
+   "button": 7
+  },
+  "components/AdminProgrammePanel.tsx": {
+   "button": 3
+  },
+  "components/AffirmingValuesModule.tsx": {
+   "button": 4
+  },
+  "components/AgencyArchitectureModule.tsx": {
+   "button": 2
+  },
+  "components/AgencyProtocolModule.tsx": {
+   "button": 2
+  },
+  "components/AnswerArchitect/AnswerArchitect.tsx": {
+   "button": 2
+  },
+  "components/AnswerEngineeringModule.tsx": {
+   "button": 11
+  },
+  "components/AppRouter.tsx": {
+   "button": 5
+  },
+  "components/AppliedSciencesModule.tsx": {
+   "button": 1
+  },
+  "components/AuthActionCard.tsx": {
+   "button": 2
+  },
+  "components/CAOPointsSimulator.tsx": {
+   "button": 7
+  },
+  "components/CareerPaths.tsx": {
+   "button": 13
+  },
+  "components/CatastrophicThinkingModule.tsx": {
+   "button": 7
+  },
+  "components/CatchUpLane/Comeback.tsx": {
+   "button": 16
+  },
+  "components/CatchUpLane/index.tsx": {
+   "button": 8
+  },
+  "components/CognitiveEnduranceModule.tsx": {
+   "button": 1
+  },
+  "components/CollegeCompass.tsx": {
+   "button": 12,
+   "pop-up": 1
+  },
+  "components/ComebackEngine.tsx": {
+   "button": 13
+  },
+  "components/ComebackEngineV2.tsx": {
+   "button": 8
+  },
+  "components/CommandPalette.tsx": {
+   "button": 1,
+   "pop-up": 1
+  },
+  "components/CommandWordReflex/index.tsx": {
+   "button": 4
+  },
+  "components/ControllableVariablesModule.tsx": {
+   "button": 7
+  },
+  "components/CourseworkCompanion/CourseworkCompanion.tsx": {
+   "button": 2
+  },
+  "components/CourseworkStudio/CourseworkStudio.tsx": {
+   "button": 6,
+   "dropdown": 6
+  },
+  "components/CourseworkStudio/CourseworkSupport.tsx": {
+   "button": 9,
+   "dropdown": 1
+  },
+  "components/CrewEmptyState.tsx": {
+   "button": 1
+  },
+  "components/CutContentPage.tsx": {
+   "button": 3
+  },
+  "components/DashboardView.tsx": {
+   "button": 3
+  },
+  "components/DefinitionDrill/DefinitionDrill.tsx": {
+   "button": 5
+  },
+  "components/DiagramVault/DiagramVault.tsx": {
+   "button": 3
+  },
+  "components/DigitalDistractionModule.tsx": {
+   "button": 2
+  },
+  "components/EffectiveStruggleAndGrowthModule.tsx": {
+   "button": 7
+  },
+  "components/ElaborativeInterrogationModule.tsx": {
+   "button": 4
+  },
+  "components/EmotionalIntelligenceModule.tsx": {
+   "button": 6
+  },
+  "components/ErrorBoundary.tsx": {
+   "button": 2
+  },
+  "components/ExamCrisisManagementModule.tsx": {
+   "button": 3
+  },
+  "components/ExamHallStrategiesModule.tsx": {
+   "button": 9
+  },
+  "components/ExamReps/SubjectPicker.tsx": {
+   "button": 4
+  },
+  "components/ExamReps/index.tsx": {
+   "button": 10
+  },
+  "components/ExaminersChair/index.tsx": {
+   "button": 43
+  },
+  "components/FeedbackModal.tsx": {
+   "button": 2
+  },
+  "components/FirstVisitCoachMarks.tsx": {
+   "button": 3,
+   "pop-up": 1
+  },
+  "components/FutureFinder.tsx": {
+   "button": 24,
+   "dropdown": 1,
+   "pop-up": 1
+  },
+  "components/FutureFinderPaper.tsx": {
+   "button": 1
+  },
+  "components/FutureFinderResults.tsx": {
+   "button": 14,
+   "dropdown": 1,
+   "pop-up": 1
+  },
+  "components/GCDashboard.tsx": {
+   "button": 11,
+   "pop-up": 1
+  },
+  "components/GameDayModule.tsx": {
+   "button": 7
+  },
+  "components/GrowthMindsetModule.tsx": {
+   "button": 9
+  },
+  "components/HomeNextStep.tsx": {
+   "button": 6
+  },
+  "components/HopeProtocolModule.tsx": {
+   "button": 5
+  },
+  "components/HowTheyDidIt/index.tsx": {
+   "button": 10
+  },
+  "components/IllusionOfCompetenceModule.tsx": {
+   "button": 1
+  },
+  "components/InnovationZone.tsx": {
+   "button": 3
+  },
+  "components/InsightsView.tsx": {
+   "button": 3
+  },
+  "components/JCComingSoon.tsx": {
+   "button": 1
+  },
+  "components/JourneyPointsGuide.tsx": {
+   "button": 1
+  },
+  "components/LanguageMasteryModule.tsx": {
+   "button": 2
+  },
+  "components/LaunchpadGuidance.tsx": {
+   "button": 17,
+   "dropdown": 1,
+   "pop-up": 2
+  },
+  "components/LearningMathModule.tsx": {
+   "button": 13
+  },
+  "components/LearningPathsView.tsx": {
+   "button": 3
+  },
+  "components/LeavingCertStrategyModule.tsx": {
+   "button": 5
+  },
+  "components/Library.tsx": {
+   "button": 12
+  },
+  "components/LinkingStudyFutureGoalsModule.tsx": {
+   "button": 2
+  },
+  "components/ListeningStudio/StudioSitting.tsx": {
+   "button": 15,
+   "pop-up": 3
+  },
+  "components/ListeningStudio/index.tsx": {
+   "button": 11,
+   "pop-up": 2
+  },
+  "components/LoadingSpinner.tsx": {
+   "pop-up": 1
+  },
+  "components/LoginPage.tsx": {
+   "button": 31,
+   "pop-up": 1
+  },
+  "components/MarkBank/AccountingAssessment.tsx": {
+   "button": 2
+  },
+  "components/MarkBank/AppliedMathematicsRubricPanel.tsx": {
+   "button": 1
+  },
+  "components/MarkBank/ArtRubricPanel.tsx": {
+   "button": 1
+  },
+  "components/MarkBank/BusinessRubricPanel.tsx": {
+   "button": 1
+  },
+  "components/MarkBank/ClaimRows.tsx": {
+   "button": 3
+  },
+  "components/MarkBank/FigureZoom.tsx": {
+   "button": 5,
+   "pop-up": 2
+  },
+  "components/MarkBank/FrenchRubricPanel.tsx": {
+   "button": 4
+  },
+  "components/MarkBank/GeographyAllocationPanel.tsx": {
+   "button": 2
+  },
+  "components/MarkBank/GeographyChoicePanel.tsx": {
+   "button": 1
+  },
+  "components/MarkBank/HistoryEssayPanel.tsx": {
+   "button": 5
+  },
+  "components/MarkBank/LanguageRubricPanel.tsx": {
+   "button": 1
+  },
+  "components/MarkBank/MarkBank.tsx": {
+   "button": 1
+  },
+  "components/MarkBank/MarkBankLibrary.tsx": {
+   "button": 3
+  },
+  "components/MarkBank/MathematicsWorkedSolution.tsx": {
+   "button": 3,
+   "pop-up": 1
+  },
+  "components/MarkBank/PdfRuler.tsx": {
+   "button": 1
+  },
+  "components/MarkBank/ReligiousEducationRubricPanel.tsx": {
+   "button": 1
+  },
+  "components/MarkBank/RouteHeading.tsx": {
+   "button": 1
+  },
+  "components/MarkBank/SessionScreen.tsx": {
+   "button": 17,
+   "pop-up": 2
+  },
+  "components/MarkBank/SourceMaterialReader.tsx": {
+   "button": 9,
+   "pop-up": 3
+  },
+  "components/MarkBank/TranslationPanel.tsx": {
+   "button": 4
+  },
+  "components/MarkBank/WaysInPanel.tsx": {
+   "button": 10
+  },
+  "components/MarkingSchemeDecoderModule.tsx": {
+   "button": 8
+  },
+  "components/MasteringActiveRecallModule.tsx": {
+   "button": 1
+  },
+  "components/MasteringBusinessModule.tsx": {
+   "button": 4
+  },
+  "components/MasteringEnglishModule.tsx": {
+   "button": 3
+  },
+  "components/MasteringInterleavingModule.tsx": {
+   "button": 9
+  },
+  "components/MasteringSpacedRepetitionModule.tsx": {
+   "button": 3,
+   "dropdown": 1
+  },
+  "components/MasteringTheCreativesModule.tsx": {
+   "button": 2
+  },
+  "components/MasteringTheHumanitiesModule.tsx": {
+   "button": 2
+  },
+  "components/MasteringTheSciencesModule.tsx": {
+   "button": 5
+  },
+  "components/MentalModellingModule.tsx": {
+   "button": 4
+  },
+  "components/ModuleCompleteScreen.tsx": {
+   "button": 3,
+   "pop-up": 2
+  },
+  "components/ModuleLayout.tsx": {
+   "button": 5
+  },
+  "components/ModuleShared.tsx": {
+   "button": 2
+  },
+  "components/ModuleShowcase.tsx": {
+   "button": 7
+  },
+  "components/ModulesView.tsx": {
+   "button": 4
+  },
+  "components/MyDirection.tsx": {
+   "button": 4,
+   "dropdown": 1
+  },
+  "components/NeuroplasticityProtocolModule.tsx": {
+   "button": 7
+  },
+  "components/NorthStarOnboarding.tsx": {
+   "button": 4
+  },
+  "components/NotificationBell.tsx": {
+   "button": 5
+  },
+  "components/Onboarding.desktop.tsx": {
+   "button": 20
+  },
+  "components/OralExamTrainer.tsx": {
+   "button": 7
+  },
+  "components/PaperTrail/AiMarkingPanel.tsx": {
+   "button": 1
+  },
+  "components/PaperTrail/AnswerDesk.tsx": {
+   "dropdown": 1
+  },
+  "components/PaperTrail/AssignedStrip.tsx": {
+   "button": 1
+  },
+  "components/PaperTrail/CountdownCard.tsx": {
+   "button": 4
+  },
+  "components/PaperTrail/FirstRunCoach.tsx": {
+   "button": 1
+  },
+  "components/PaperTrail/Flashcards.tsx": {
+   "button": 10
+  },
+  "components/PaperTrail/FocusSession.tsx": {
+   "button": 5
+  },
+  "components/PaperTrail/GuardianConsent.tsx": {
+   "button": 2
+  },
+  "components/PaperTrail/ImageViewer.tsx": {
+   "button": 4,
+   "pop-up": 2
+  },
+  "components/PaperTrail/MilestoneCelebration.tsx": {
+   "button": 2,
+   "pop-up": 1
+  },
+  "components/PaperTrail/MobileQuestionTools.tsx": {
+   "button": 3,
+   "dropdown": 1
+  },
+  "components/PaperTrail/MockExamBuilder.tsx": {
+   "button": 14
+  },
+  "components/PaperTrail/PaperDocuments.tsx": {
+   "button": 1
+  },
+  "components/PaperTrail/PaperSelection.tsx": {
+   "button": 5
+  },
+  "components/PaperTrail/PhysicalEducationTaskCard.tsx": {
+   "button": 4
+  },
+  "components/PaperTrail/PoliticsTopicFeed.tsx": {
+   "button": 2,
+   "dropdown": 1
+  },
+  "components/PaperTrail/ProgressDashboard.tsx": {
+   "button": 6
+  },
+  "components/PaperTrail/ReviewSession.tsx": {
+   "button": 15
+  },
+  "components/PaperTrail/ReviseByTopic.tsx": {
+   "button": 13,
+   "dropdown": 1
+  },
+  "components/PaperTrail/VaultQuestionCard.tsx": {
+   "button": 8
+  },
+  "components/PaperTrail/Viewer.tsx": {
+   "button": 38,
+   "pop-up": 10
+  },
+  "components/PaperTrail/WeaknessMap.tsx": {
+   "button": 2
+  },
+  "components/PaperTrail/WpmCalibrator.tsx": {
+   "button": 5,
+   "pop-up": 1
+  },
+  "components/PaperTrail/index.tsx": {
+   "button": 12
+  },
+  "components/PointsExplainer.tsx": {
+   "button": 1,
+   "pop-up": 2
+  },
+  "components/PointsOptimizationModule.tsx": {
+   "button": 10,
+   "dropdown": 5
+  },
+  "components/PointsPassport.tsx": {
+   "button": 17
+  },
+  "components/ProcrastinationModule.tsx": {
+   "button": 3
+  },
+  "components/RankUpModal.tsx": {
+   "button": 3,
+   "pop-up": 1
+  },
+  "components/ReflectionModal.tsx": {
+   "button": 3,
+   "pop-up": 2
+  },
+  "components/ReframingProgressModule.tsx": {
+   "button": 4
+  },
+  "components/ResetPasswordPage.tsx": {
+   "button": 3
+  },
+  "components/ResumeCard.desktop.tsx": {
+   "button": 1
+  },
+  "components/ResumeCard.tsx": {
+   "button": 3
+  },
+  "components/ReverseEngineeringModule.tsx": {
+   "button": 1
+  },
+  "components/SelfEfficacyModule.tsx": {
+   "button": 3
+  },
+  "components/SettingsModal.tsx": {
+   "button": 2
+  },
+  "components/SiteGuide.tsx": {
+   "button": 6,
+   "pop-up": 1
+  },
+  "components/StrategicAdvantageModule.tsx": {
+   "button": 3,
+   "dropdown": 1
+  },
+  "components/StreakCelebration.tsx": {
+   "button": 1
+  },
+  "components/StudentHomeContent.tsx": {
+   "button": 3,
+   "dropdown": 1
+  },
+  "components/StudyDebrief.tsx": {
+   "button": 10
+  },
+  "components/StudyJournalModal.tsx": {
+   "button": 2
+  },
+  "components/StudyPassportModal.tsx": {
+   "button": 4,
+   "pop-up": 2
+  },
+  "components/SubjectOnboarding.tsx": {
+   "button": 1
+  },
+  "components/TheAutodidactsEngineModule.tsx": {
+   "button": 6
+  },
+  "components/TheCognitiveArchitectureModule.tsx": {
+   "button": 8
+  },
+  "components/TheCognitiveLoadModule.tsx": {
+   "button": 4
+  },
+  "components/TheContextEffectModule.tsx": {
+   "button": 9
+  },
+  "components/TheGrammarOfGritModule.tsx": {
+   "button": 6
+  },
+  "components/TheImplementationProtocolModule.tsx": {
+   "button": 2
+  },
+  "components/TheLearningRadarModule.tsx": {
+   "button": 14
+  },
+  "components/TheMyelinManualModule.tsx": {
+   "button": 2
+  },
+  "components/ThePowerOfYetModule.tsx": {
+   "button": 1
+  },
+  "components/ThePraiseProtocolModule.tsx": {
+   "button": 11
+  },
+  "components/TheScienceOfMakingMistakesModule.tsx": {
+   "button": 10
+  },
+  "components/TheTeachingEffectModule.tsx": {
+   "button": 3
+  },
+  "components/Toast.tsx": {
+   "button": 1
+  },
+  "components/ToolErrorBoundary.tsx": {
+   "button": 1
+  },
+  "components/TrainingHub.tsx": {
+   "button": 5
+  },
+  "components/TrainingPulse.tsx": {
+   "button": 1
+  },
+  "components/UserProfileMenu.tsx": {
+   "button": 21,
+   "pop-up": 1
+  },
+  "components/WaysIn/WaysInHub.tsx": {
+   "button": 2
+  },
+  "components/WaysIn/WaysInWorkspace.tsx": {
+   "button": 18,
+   "pop-up": 2
+  },
+  "components/WelcomeCharacter.tsx": {
+   "button": 1
+  },
+  "components/WipTools.tsx": {
+   "button": 2
+  },
+  "components/YearPlansView.tsx": {
+   "button": 3
+  },
+  "components/YearTransitionFlow.tsx": {
+   "button": 8,
+   "pop-up": 1
+  },
+  "components/YourPossibleLife.tsx": {
+   "button": 6,
+   "dropdown": 1
+  },
+  "components/account/DataRightsModal.tsx": {
+   "button": 10,
+   "pop-up": 1
+  },
+  "components/activities/CornellNoteSimulator.tsx": {
+   "button": 2
+  },
+  "components/activities/KanbanBoard.tsx": {
+   "dropdown": 1
+  },
+  "components/certle/CertlePage.tsx": {
+   "button": 8,
+   "pop-up": 1
+  },
+  "components/certle/ShareResult.tsx": {
+   "button": 3
+  },
+  "components/collegeCompass/DareGate.tsx": {
+   "button": 2
+  },
+  "components/collegeCompass/HearMeter.tsx": {
+   "button": 2
+  },
+  "components/collegeCompass/MoneySorter.tsx": {
+   "button": 1
+  },
+  "components/collegeCompass/OpenDoor.tsx": {
+   "button": 1
+  },
+  "components/comeback/FluencyTrap.tsx": {
+   "button": 3
+  },
+  "components/dashboard/DashboardCharts.tsx": {
+   "button": 3
+  },
+  "components/dashboard/DashboardInsights.tsx": {
+   "button": 2
+  },
+  "components/dashboard/FieldNotes.tsx": {
+   "button": 1
+  },
+  "components/dashboard/ProgressSectionPicker.tsx": {
+   "button": 2,
+   "dropdown": 2
+  },
+  "components/dashboard/TermReviewCard.tsx": {
+   "button": 1
+  },
+  "components/dashboard/progress/ProgressMilestones.tsx": {
+   "button": 2,
+   "pop-up": 1
+  },
+  "components/dashboard/progress/ProgressRefinements.tsx": {
+   "button": 2
+  },
+  "components/dashboard/progress/ProgressSummary.tsx": {
+   "button": 3
+  },
+  "components/gc/GCAssignPanel.tsx": {
+   "button": 2,
+   "dropdown": 1
+  },
+  "components/gc/GCExportModal.tsx": {
+   "button": 4,
+   "dropdown": 1,
+   "pop-up": 1
+  },
+  "components/gc/GCHandInGrid.tsx": {
+   "button": 4
+  },
+  "components/gc/GCKeyEvents.tsx": {
+   "button": 7,
+   "dropdown": 2
+  },
+  "components/gc/GCOverview.tsx": {
+   "button": 23,
+   "dropdown": 1,
+   "pop-up": 1
+  },
+  "components/gc/GCStudentDetail.tsx": {
+   "button": 13
+  },
+  "components/gc/StaffAccessPanel.tsx": {
+   "button": 4,
+   "pop-up": 1
+  },
+  "components/immersiveDeck/HybridCard.tsx": {
+   "button": 4
+  },
+  "components/journey/BuildDrawer.tsx": {
+   "button": 1
+  },
+  "components/journey/GiftButton.tsx": {
+   "button": 3
+  },
+  "components/journey/IslandShopDrawer.tsx": {
+   "button": 4
+  },
+  "components/journey/JourneyPathCard.tsx": {
+   "button": 1
+  },
+  "components/journey/JourneyProgressPill.tsx": {
+   "button": 1
+  },
+  "components/journey/JourneyView.tsx": {
+   "button": 18
+  },
+  "components/journey/JourneyWelcome.tsx": {
+   "button": 3,
+   "pop-up": 2
+  },
+  "components/journey/KudosButton.tsx": {
+   "button": 3
+  },
+  "components/journey/MilestoneRewardModal.tsx": {
+   "button": 1
+  },
+  "components/journey/PeerIslandsList.tsx": {
+   "button": 2
+  },
+  "components/journey/PurchaseCelebrationModal.tsx": {
+   "button": 1
+  },
+  "components/journey/paper/MapControls.tsx": {
+   "button": 17,
+   "pop-up": 1
+  },
+  "components/journey/visitors/VisitorPanel.tsx": {
+   "button": 12
+  },
+  "components/journey/visitors/VisitorsBook.tsx": {
+   "button": 2
+  },
+  "components/journey/year/ClassmateIsland.tsx": {
+   "button": 2
+  },
+  "components/journey/year/YearIslandsBook.tsx": {
+   "button": 4
+  },
+  "components/launchpad/LaunchpadSelect.tsx": {
+   "dropdown": 1
+  },
+  "components/launchpad/LaunchpadToolCard.tsx": {
+   "button": 1
+  },
+  "components/launchpad/PlannerExplanation.tsx": {
+   "button": 1,
+   "dropdown": 1
+  },
+  "components/launchpad/PlannerWorkbench.tsx": {
+   "button": 4,
+   "dropdown": 1
+  },
+  "components/launchpad/SubjectPicker.tsx": {
+   "button": 1,
+   "dropdown": 1
+  },
+  "components/launchpad/ToolMasthead.tsx": {
+   "button": 1
+  },
+  "components/learning/BrandedFeatures.tsx": {
+   "button": 1
+  },
+  "components/learning/DefinitionPopover.tsx": {
+   "button": 1,
+   "pop-up": 1
+  },
+  "components/learning/PrivateDraftControls.tsx": {
+   "button": 2
+  },
+  "components/learning/ReaderNotes.tsx": {
+   "button": 1
+  },
+  "components/learning/ResponseSaveStatus.tsx": {
+   "button": 1
+  },
+  "components/learning/WideFeatures.tsx": {
+   "button": 2
+  },
+  "components/legal/LegalAgreementGate.tsx": {
+   "button": 5,
+   "pop-up": 2
+  },
+  "components/legal/LegalModal.tsx": {
+   "button": 2,
+   "pop-up": 2
+  },
+  "components/navigation/NextStepUniSidebar.tsx": {
+   "button": 3
+  },
+  "components/onboarding/DesktopSetup.tsx": {
+   "button": 19,
+   "dropdown": 2,
+   "pop-up": 1
+  },
+  "components/onboarding/GradeOptions.tsx": {
+   "button": 5
+  },
+  "components/onboarding/SetupFlow.tsx": {
+   "button": 19,
+   "dropdown": 2,
+   "pop-up": 1
+  },
+  "components/onboarding/SetupSoundToggle.tsx": {
+   "button": 1
+  },
+  "components/shared/SubjectProfileCards.tsx": {
+   "button": 3
+  },
+  "components/shared/SubjectTilePicker.tsx": {
+   "button": 1
+  },
+  "components/sign-in-directions/SignInDirections.tsx": {
+   "button": 21
+  },
+  "components/study/StudyBreak.tsx": {
+   "button": 5,
+   "dropdown": 1,
+   "pop-up": 1
+  },
+  "components/study/StudyFocusChoice.tsx": {
+   "button": 1
+  },
+  "components/study/StudyMiniTimer.tsx": {
+   "button": 4,
+   "pop-up": 1
+  },
+  "components/study/StudyNotifyOffer.tsx": {
+   "button": 3
+  },
+  "components/study/StudyQuizInvitation.tsx": {
+   "button": 3,
+   "pop-up": 2
+  },
+  "components/study/StudySessionCompletion.tsx": {
+   "button": 1
+  },
+  "components/study/StudySessionFinish.tsx": {
+   "button": 2
+  },
+  "components/study/StudySessionTimer.tsx": {
+   "button": 6
+  },
+  "components/study/StudySessionView.mobile.tsx": {
+   "button": 3,
+   "pop-up": 1
+  },
+  "components/study/StudySessionView.tsx": {
+   "button": 3,
+   "pop-up": 1
+  },
+  "components/study/StudySoundToggle.tsx": {
+   "button": 1
+  },
+  "components/study/StudySubjectPicker.tsx": {
+   "button": 1
+  },
+  "components/study/StudyTopicPicker.tsx": {
+   "button": 1
+  },
+  "components/topics/TopicDetailCard.tsx": {
+   "button": 3,
+   "dropdown": 1
+  },
+  "components/topics/TopicHistoryPanel.tsx": {
+   "dropdown": 2
+  },
+  "components/war-room/CoveragePanel.tsx": {
+   "button": 9
+  },
+  "components/war-room/TrajectoryPanel.tsx": {
+   "button": 8,
+   "dropdown": 3
+  },
+  "hooks/useModal.ts": {
+   "pop-up": 1
+  },
+  "starguy-lab.tsx": {
+   "button": 2
+  },
+  "study-quiz-dev.tsx": {
+   "button": 1
+  }
+ }
+}

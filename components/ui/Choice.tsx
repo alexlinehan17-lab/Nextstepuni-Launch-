@@ -1,0 +1,233 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Choosing (components.md, "Choices and the selection mark" and "Selection
+ * bar"; motion.md, "The selection mark"; the kit's .choice / .pick / .switch /
+ * .seg).
+ *
+ *   <ChoiceGroup legend="How much would you enjoy doing this?" value={v} onChange={setV}
+ *     options={[{ value: 'love', label: "I'd love it" }, ...]} />
+ *   <ChoiceGroup kind="several" tiles legend="Your subjects" value={picked} onChange={setPicked}
+ *     options={[{ value: 'bio', label: 'Biology', meta: 'Add', metaChosen: 'Added' }, ...]} />
+ *   <Switch checked={on} onChange={setOn} label="Offer me questions when I finish" />
+ *   <SelectionBar label="Show" value={v} onChange={setV} options={[{ value: 'paper', label: 'Paper' }, ...]} />
+ *
+ * Chosen is an ink outline and a ring that fills ink while its tick draws.
+ * Pick-one is a round ring, pick-several a rounded square with a count. A
+ * switch is ink when on. The selection bar is for two to four one-word
+ * choices; its white pill slides. Under reduced motion the tick simply
+ * appears and nothing slides.
+ *
+ * Migration: HorizontalTabs (pill) keeps today's look for its 13 sites (a
+ * spring with a little bounce, a 4px tray); each moves onto SelectionBar
+ * screen by screen. ChoiceControl is unreachable today and can be deleted when
+ * the first screen moves.
+ */
+import React, { useId, useRef, type KeyboardEvent, type ReactNode } from 'react';
+import ThemeArtwork from '../ThemeArtwork';
+import './parts.css';
+
+/** The selection mark: a 22px ring (or rounded square) that fills ink and
+ *  draws a white tick. */
+export function SelectionMark({ on, shape = 'round' }: { on: boolean; shape?: 'round' | 'square' }) {
+  return (
+    <span className={`ui-mark${shape === 'square' ? ' ui-mark--square' : ''}${on ? ' ui-mark--on' : ''}`} aria-hidden="true" data-mark={on ? 'on' : 'off'}>
+      <svg viewBox="0 0 12 12" focusable="false"><path d="M2.5 6.2l2.4 2.4 4.6-5" /></svg>
+    </span>
+  );
+}
+
+export interface ChoiceOption<V extends string = string> {
+  value: V;
+  label: ReactNode;
+  /** A second line under the label. */
+  meta?: ReactNode;
+  /** The second line once chosen: say the state in words ("Add" becomes "Added"). */
+  metaChosen?: ReactNode;
+  /** A subject's Star Crew character, bare, 40px at the left. */
+  art?: string;
+}
+
+export interface ChoiceTileProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'role'> {
+  chosen: boolean;
+  kind?: 'one' | 'several';
+  tile?: boolean;
+  label: ReactNode;
+  meta?: ReactNode;
+  art?: string;
+}
+
+/** One choice: an outlined tile before it is touched; chosen, an ink outline. */
+export const ChoiceTile = React.forwardRef<HTMLButtonElement, ChoiceTileProps>(function ChoiceTile(
+  { chosen, kind = 'one', tile = false, label, meta, art, className = '', type = 'button', ...props },
+  ref,
+) {
+  return (
+    <button
+      {...props}
+      ref={ref}
+      type={type}
+      role={kind === 'one' ? 'radio' : 'checkbox'}
+      aria-checked={chosen}
+      className={`ui-part ui-choice${tile ? ' ui-choice--tile' : ''} ${className}`.trim()}
+    >
+      {art ? <ThemeArtwork className="ui-choice-art" src={art} transparentBackground alt="" /> : null}
+      <span className="ui-choice-body">
+        <span className="ui-choice-label">{label}</span>
+        {meta ? <span className="ui-choice-meta">{meta}</span> : null}
+      </span>
+      <SelectionMark on={chosen} shape={kind === 'one' ? 'round' : 'square'} />
+    </button>
+  );
+});
+
+/** Arrow keys move through a row of radios; the one they land on is chosen. */
+function useRovingRadios(count: number, current: number, choose: (index: number) => void) {
+  const refs = useRef<(HTMLButtonElement | null)[]>([]);
+  const onKeyDown = (event: KeyboardEvent, index: number) => {
+    const step = event.key === 'ArrowRight' || event.key === 'ArrowDown' ? 1
+      : event.key === 'ArrowLeft' || event.key === 'ArrowUp' ? -1 : 0;
+    let next = step ? (index + step + count) % count : index;
+    if (event.key === 'Home') next = 0;
+    if (event.key === 'End') next = count - 1;
+    if (next === index && !step) return;
+    event.preventDefault();
+    choose(next);
+    refs.current[next]?.focus();
+  };
+  const tabIndexOf = (index: number) => (index === (current >= 0 ? current : 0) ? 0 : -1);
+  return { refs, onKeyDown, tabIndexOf };
+}
+
+type OneProps<V extends string> = { kind?: 'one'; value: V | null; onChange: (value: V) => void };
+type SeveralProps<V extends string> = { kind: 'several'; value: V[]; onChange: (value: V[]) => void };
+export type ChoiceGroupProps<V extends string> = (OneProps<V> | SeveralProps<V>) & {
+  legend: ReactNode;
+  options: ChoiceOption<V>[];
+  /** Two columns of tiles at least 88px tall, instead of a column of rows. */
+  tiles?: boolean;
+  className?: string;
+};
+
+/** A question and its answers. Pick-one is a radio group with arrow keys;
+ *  pick-several shows "2 of 4 chosen". */
+export function ChoiceGroup<V extends string>(props: ChoiceGroupProps<V>) {
+  const { legend, options, tiles = false, className = '' } = props;
+  const legendId = useId();
+  const several = props.kind === 'several';
+  const isChosen = (value: V) => (several ? (props.value as V[]).includes(value) : props.value === value);
+  const current = several ? -1 : options.findIndex(option => option.value === props.value);
+  const chooseOne = (index: number) => { if (!several) (props.onChange as (v: V) => void)(options[index].value); };
+  const roving = useRovingRadios(options.length, current, chooseOne);
+  const toggle = (value: V) => {
+    if (several) {
+      const list = props.value as V[];
+      (props.onChange as (v: V[]) => void)(list.includes(value) ? list.filter(v => v !== value) : [...list, value]);
+    } else (props.onChange as (v: V) => void)(value);
+  };
+  const count = several ? (props.value as V[]).length : 0;
+  return (
+    <div className={`ui-part ui-choices-group ${className}`.trim()}>
+      <div className="ui-choices-head">
+        <p id={legendId} className="ui-choices-legend">{legend}</p>
+        {several ? <span className="ui-choices-count ui-readout" aria-live="polite">{`${count} of ${options.length} chosen`}</span> : null}
+      </div>
+      <div role={several ? 'group' : 'radiogroup'} aria-labelledby={legendId} className={tiles ? 'ui-choices ui-choices--tiles' : 'ui-choices'}>
+        {options.map((option, index) => {
+          const chosen = isChosen(option.value);
+          return (
+            <ChoiceTile
+              key={option.value}
+              ref={several ? undefined : element => { roving.refs.current[index] = element; }}
+              kind={several ? 'several' : 'one'}
+              tile={tiles}
+              chosen={chosen}
+              label={option.label}
+              meta={chosen && option.metaChosen ? option.metaChosen : option.meta}
+              art={option.art}
+              tabIndex={several ? undefined : roving.tabIndexOf(index)}
+              onKeyDown={several ? undefined : event => roving.onKeyDown(event, index)}
+              onClick={() => toggle(option.value)}
+            />
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+export interface SwitchProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'onChange' | 'role'> {
+  checked: boolean;
+  onChange: (checked: boolean) => void;
+  /** The setting's name, if no visible label points at the switch (aria-labelledby). */
+  label?: string;
+}
+
+/** For a setting that applies at once. Track line; ink when on. 44 tall to the finger. */
+export const Switch = React.forwardRef<HTMLButtonElement, SwitchProps>(function Switch(
+  { checked, onChange, label, className = '', type = 'button', onClick, ...props },
+  ref,
+) {
+  return (
+    <button
+      {...props}
+      ref={ref}
+      type={type}
+      role="switch"
+      aria-checked={checked}
+      aria-label={label ?? props['aria-label']}
+      className={`ui-part ui-switch frame-hit ${className}`.trim()}
+      onClick={event => { onClick?.(event); if (!event.defaultPrevented) onChange(!checked); }}
+    >
+      <span className="ui-switch-knob" />
+    </button>
+  );
+});
+
+export interface SelectionBarProps<V extends string> {
+  /** What the bar chooses, for screen readers ("Show", "Questions"). */
+  label: string;
+  /** Two to four one-word choices. */
+  options: { value: V; label: ReactNode }[];
+  /** The current choice; a value not in `options` ("") means none chosen yet. */
+  value: V | '';
+  onChange: (value: V) => void;
+  /** sm 36 (inside boxes) or md 44 (section level). */
+  size?: 'sm' | 'md';
+  className?: string;
+}
+
+/** The selection bar: a tray with a white pill on the current choice. The pill
+ *  slides (260ms, the move curve); what it controls changes at once. */
+export function SelectionBar<V extends string>({ label, options, value, onChange, size = 'sm', className = '' }: SelectionBarProps<V>) {
+  // Nothing chosen yet: no pill, and the first choice takes the keyboard.
+  const current = options.findIndex(option => option.value === value);
+  const roving = useRovingRadios(options.length, current, index => onChange(options[index].value));
+  return (
+    <div
+      role="radiogroup"
+      aria-label={label}
+      className={`ui-part ui-seg${size === 'md' ? ' ui-seg--md' : ''} ${className}`.trim()}
+      style={{ '--seg-n': options.length, '--seg-i': Math.max(0, current) } as React.CSSProperties}
+      data-count={options.length}
+    >
+      {current >= 0 ? <i className="ui-seg-pill" aria-hidden="true" /> : null}
+      {options.map((option, index) => (
+        <button
+          key={option.value}
+          ref={element => { roving.refs.current[index] = element; }}
+          type="button"
+          role="radio"
+          aria-checked={index === current}
+          tabIndex={roving.tabIndexOf(index)}
+          className="ui-seg-item frame-hit"
+          onKeyDown={event => roving.onKeyDown(event, index)}
+          onClick={() => onChange(option.value)}
+        >
+          {option.label}
+        </button>
+      ))}
+    </div>
+  );
+}
