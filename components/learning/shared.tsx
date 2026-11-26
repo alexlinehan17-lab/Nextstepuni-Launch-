@@ -5,8 +5,8 @@ import { Button } from '../approved-ui-runtime';
 import ThemeArtwork from '../ThemeArtwork';
 import './learning.css';
 
-export function Artwork({ src, size = 120, className = '' }: { src: string; size?: number; className?: string }) {
-  return <ThemeArtwork src={src} alt="" width={size} height={size} className={`rs-art ${className}`} />;
+export function Artwork({ src, size = 120, className = '', transparentBackground = false }: { src: string; size?: number; className?: string; transparentBackground?: boolean }) {
+  return <ThemeArtwork src={src} alt="" width={size} height={size} className={`rs-art ${className}`} transparentBackground={transparentBackground} />;
 }
 export function Eyebrow({ children }: { children: ReactNode }) {
   return <p className="rs-eyebrow">{children}</p>;

@@ -1,0 +1,183 @@
+/* Reading a module (area 5 of the design build; boards c-read-flow, c-read-choices, c-read-write, c-read-desk).
+   Loaded after the reader's older sheets, so the frame and the shared pieces take the agreed look. On a phone
+   the page itself is the paper and each step is its own screen; on a laptop today's bones stay (the step in a
+   box, the steps and progress down the left). One typeface, charcoal for the one way forward, an ink outline
+   for what is chosen, green only for a tick, orange only in the drawings and the one live word. */
+
+/* ── The reader: the white page, the one typeface, no serif, no italic for emphasis ─────────────────── */
+.rd-reader.nsu-module-reader {
+  --rs-serif: var(--font-ui);
+  --nsu-serif: var(--font-ui);
+  /* feedback words are ink, never dark green (Alex, 26 Nov 2026); green stays for the tick */
+  --module-success-text: var(--ink-primary);
+  --module-base-success-text: var(--ink-primary);
+  --module-danger-text: var(--ink-secondary);
+  --module-base-danger-text: var(--ink-secondary);
+  padding-top: 0;
+  padding-bottom: 0; /* the pinned footer owns the bottom inset */
+  background: var(--surface-canvas);
+  color: var(--ink-primary);
+  font-family: var(--font-ui);
+}
+.rd-reader :is(.font-serif, [style*="Source Serif"], [style*="Georgia"], h1, h2, h3, h4, h5, blockquote) { font-family: var(--font-ui) !important; }
+.rd-reader :is(.italic, em, i, [style*="italic"]) { font-style: normal !important; }
+.rd-live { color: var(--accent-text); }
+.rd-next { color: var(--ink-primary); }
+
+/* Text under 11px inside a module's own pieces is lifted to the smallest style (11px). */
+.rd-reader :is(.text-\[7px\], .text-\[8px\], .text-\[9px\], .text-\[10px\], .text-\[10\.5px\]),
+.rd-reader :is([style*="font-size: 7px"], [style*="font-size: 8px"], [style*="font-size: 9px"], [style*="font-size: 10px"]) { font-size: 11px !important; }
+
+/* A coloured stripe down one side of a box goes: the box keeps its even line. */
+.rd-reader :is([style*="border-left: 2px"], [style*="border-left: 3px"], [style*="border-left: 4px"], [style*="border-left: 5px"], .border-l-2, .border-l-4, .border-l-\[3px\], .border-l-\[4px\]) { border-left-width: 0 !important; }
+
+/* ── The phone's frame: one bar, the step on the page, one Continue at the foot ─────────────────────── */
+.rd-main { display: flex; min-height: 100dvh; flex-direction: column; background: var(--surface-canvas); }
+.rd-main > main { flex: 1 0 auto; padding-bottom: var(--space-6); }
+.rd-bar .ui-bar-mid.ui-bar-mid--control { left: 52px; right: 100px; flex-direction: row; }
+.rd-tools { display: flex; align-items: center; }
+.rd-tools .ib-book, .rd-tools svg { flex: none; }
+.rd-track { display: flex; flex: 1; align-self: center; gap: 4px; width: 100%; height: 4px; min-width: 0; margin: 0 6px; --p: 0%; }
+.rd-track > i { position: relative; flex: 1; height: 4px; overflow: hidden; border-radius: 2px; background: var(--hairline); }
+.rd-track > i.is-on { background: var(--ink-primary); }
+.rd-track > i.is-cur::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: var(--p); min-width: 4px; border-radius: inherit; background: var(--ink-primary); }
+
+/* the step's opening: its number, its headline, its Thinker, bare */
+.rd-reader .mr-page-content.rd-page { padding: 0; }
+.rd-reader .mr-lesson-heading { display: flex; align-items: flex-end; gap: var(--space-2); margin: 0 var(--space-6); padding: 18px 0 18px; border-bottom: 1px solid var(--hairline); }
+.rd-reader .mr-lesson-heading > div { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 10px; padding-bottom: var(--space-1); }
+.rd-reader .mr-lesson-heading .rs-eyebrow { margin: 0; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; text-transform: uppercase; }
+.rd-reader .mr-lesson-heading h1 { max-width: none; margin: 0; color: var(--ink-primary); font: 400 35px/39px var(--font-ui); letter-spacing: -0.045em; text-wrap: balance; }
+.rd-reader .mr-lesson-heading .rs-art { width: 112px; height: 112px; margin: 0 -10px -2px 0; background: none; border: 0; box-shadow: none; }
+
+/* the words on the white page itself: 17 on 28, the full width */
+.rd-reader .mr-prose { padding: 22px var(--space-6) 0; color: var(--ink-primary); font-family: var(--font-ui); letter-spacing: 0; }
+.rd-reader .mr-prose > p { margin-left: 0; margin-right: 0; margin-bottom: 0; max-width: none; }
+.rd-reader .mr-prose > * + * { margin-top: 18px; }
+.rd-reader .mr-prose :is(b, strong) { font-weight: 700; }
+.rd-reader .mr-prose em { font-weight: 700; }
+.rd-reader .mr-term { border-bottom: 0; text-decoration: underline dotted var(--ink-muted); text-decoration-thickness: 1.5px; text-underline-offset: 5px; }
+.rd-reader .mr-small-beginning h3 { font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; }
+.rd-reader .rd-save { margin: var(--space-6) var(--space-6) 0; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.rd-reader .rd-save .mr-draft-status { margin: 0; color: inherit; font-size: inherit; }
+.rd-reader .mr-page-signoff.rd-signoff { display: flex; align-items: baseline; justify-content: space-between; margin: 34px var(--space-6) var(--space-2); padding-top: var(--space-3); border-top: 1px solid var(--hairline); color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+
+/* the exercise is the page's one lifted sheet (the shared exercise wrapper; a module's own boxes stay inside) */
+.rd-reader--phone .wr-skin { position: relative; isolation: isolate; margin: 34px 0 0; }
+.rd-reader--phone .wr-skin::before, .rd-reader--phone .wr-skin::after { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: -1; border: 1px solid var(--outline-soft); border-radius: var(--r-card); background: var(--surface-paper); transform: rotate(-0.8deg); }
+.rd-reader--phone .wr-skin::after { transform: rotate(0.8deg); }
+.rd-reader .wr-skin > div:first-child, .rd-reader .wr-exercise { padding: 22px 20px 20px !important; border: 1px solid var(--outline-soft) !important; border-radius: var(--r-card) !important; background: var(--surface-paper) !important; box-shadow: var(--lift); }
+.rd-reader .wr-skin h4, .rd-reader .wr-exercise h3 { margin-bottom: var(--space-2) !important; font: 400 21px/26px var(--font-ui) !important; letter-spacing: -0.03em !important; text-align: left !important; }
+.rd-reader .wr-skin > div:first-child > :is(h4, p).text-center { text-align: left; }
+
+/* choosing an answer: white boxes with a line; chosen is an ink outline, never a mint, coral or orange fill */
+.rd-reader [data-wide-button=true] { min-height: 56px !important; padding: 13px 14px 13px 16px !important; border: 1px solid var(--outline-soft) !important; border-radius: var(--r-ctl) !important; background: var(--surface-paper) !important; color: var(--ink-primary) !important; font-weight: 400 !important; font-size: 16px !important; line-height: 23px !important; text-align: left; box-shadow: none !important; }
+.rd-reader [data-wide-button=true][data-selected=true],
+.rd-reader [data-wide-button=true][data-selected=true][data-tone=mint],
+.rd-reader [data-wide-button=true][data-selected=true][data-tone=coral] { border-color: var(--outline-strong) !important; background: var(--surface-paper) !important; box-shadow: inset 0 0 0 1px var(--outline-strong) !important; color: var(--ink-primary) !important; }
+.rd-reader [data-wide-button=true][data-selected=true] * { color: var(--ink-primary) !important; }
+@media (hover: hover) and (pointer: fine) { .rd-reader [data-wide-button=true]:hover { border-color: var(--outline-strong) !important; } }
+/* a box's small label pinned over its words ("Tap to reframe", 9px, over the thought) sits under them, in words you can read */
+.rd-reader [data-wide-button=true]:has(> p.absolute) { flex-direction: column; align-items: flex-start; justify-content: center; gap: var(--space-1); }
+.rd-reader [data-wide-button=true]:has(> p.absolute) > :is(p, div) { text-align: left; }
+.rd-reader [data-wide-button=true] > p.absolute { position: static; color: var(--ink-muted) !important; font-size: 13px !important; line-height: 18px; letter-spacing: 0; text-transform: none; }
+
+/* ── The title page: the module's cover is the screen's one sheet ───────────────────────────────────── */
+.rd-covertop { padding: 14px var(--space-6) 0; }
+.rd-coversheet .ui-paper-face { padding: 22px 22px 20px; }
+.rd-cover-in { display: flex; flex-direction: column; gap: var(--space-2); }
+.rd-cover-in > p { margin: 0; }
+.rd-cover-art { margin: -4px 0 6px -4px; }
+.rd-cover-title { margin: 2px 0; outline: none; }
+.rd-cover-rule { margin: 10px 0 6px; }
+.rd-cover-label { color: var(--ink-muted); }
+.rd-facts { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: var(--space-1); }
+.rd-facts > span { display: inline-flex; align-items: center; gap: 5px; }
+.rd-facts .ui-icon { color: var(--ink-muted); }
+.rd-sec { margin-top: var(--space-8); padding: 0 var(--space-6); }
+.rd-steps .ui-row { gap: 14px; }
+.rd-steps .ui-row-icon { color: inherit; }
+
+/* ── Contents, Notes, text size: sheets from the bottom ─────────────────────────────────────────────── */
+.rd-sheet .ui-sheet-body { gap: var(--space-4); }
+.rd-nb { display: flex; align-items: center; gap: 14px; }
+.rd-nb-copy { display: flex; min-width: 0; flex-direction: column; gap: var(--space-1); }
+.rd-nb-copy > p { margin: 0; }
+.rd-nb-label { color: var(--ink-muted); }
+.rd-sheet .mr-reading-progress { margin: 0; color: var(--ink-primary); }
+.rd-sheet .mr-progress-caption { font-size: 15px; line-height: 21px; }
+.rd-sheet .mr-progress-caption strong { font-weight: 400; color: var(--ink-primary); }
+.rd-sheet .mr-progress-caption > span { color: var(--ink-primary); }
+.rd-sheet .mr-progress-caption small { color: var(--ink-muted); font-size: 13px; }
+.rd-sheet .mr-pencil-track { stroke: var(--hairline); stroke-width: 2; }
+.rd-sheet .mr-pencil-ink { stroke: var(--ink-primary); stroke-width: 2; }
+.rd-sheet .mr-pencil-tip { stroke: var(--nsu-orange); stroke-width: 2.6; }
+.rd-sheet .mr-progress-list { padding-left: 0; }
+.rd-sheet .mr-progress-list li { min-height: 0; padding: 0; }
+.rd-sheet .mr-progress-list button.ui-row { min-height: 56px; padding: 10px 0; border: 0; border-bottom: 1px solid var(--hairline); border-radius: 0; background: none; box-shadow: none; align-items: center; gap: 14px; }
+.rd-sheet .mr-progress-list button.ui-row > span:last-child { display: inline; }
+.rd-sheet .mr-progress-list .cm-mark { margin-top: 0; }
+.rd-sheet .rd-steps.ui-list { border-top: 1px solid var(--hairline); }
+.rd-sheet .rd-steps .ui-row-item:last-child .ui-row { border-bottom: 0; }
+.rd-sheet .rd-more.ui-list { border-top: 1px solid var(--hairline); }
+.rd-sheet .rd-more .ui-row { min-height: 52px; }
+.rd-sheet .rd-more .ui-row-item:last-child .ui-row { border-bottom: 0; }
+
+/* notes: saved as you type */
+.rd-fset { display: flex; flex-direction: column; gap: var(--space-2); }
+.rd-flabel { color: var(--ink-primary); font-size: 13px; line-height: 18px; }
+.rd-area { display: block; width: 100%; min-height: 104px; padding: 12px 14px; border: 1px solid var(--outline-soft); border-radius: var(--r-sm); background: var(--surface-paper); color: var(--ink-primary); font: 400 17px/26px var(--font-ui); resize: vertical; }
+.rd-area--sm { min-height: 76px; }
+.rd-area:focus { border-color: var(--outline-strong); outline: none; box-shadow: inset 0 0 0 1px var(--outline-strong); }
+.rd-area::placeholder { color: var(--ink-muted); }
+.rd-fbtn { align-self: flex-start; }
+.rd-kept-label { margin: 0; color: var(--ink-muted); }
+.rd-kept { display: flex; flex-direction: column; margin: 0; padding: 0; border-top: 1px solid var(--hairline); list-style: none; }
+.rd-kept > li { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px solid var(--hairline); }
+.rd-kept-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 2px; }
+.rd-kept-text { color: var(--ink-primary); }
+.rd-status .mr-draft-status { margin: 0; color: var(--ink-primary); font-size: 13px; line-height: 18px; }
+.rd-notes-foot { margin: 0; }
+.rd-dl { align-self: flex-start; }
+
+/* text size and spacing */
+.rd-comfort { display: flex; flex-direction: column; gap: var(--space-3); }
+.rd-comfort-row { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); min-height: 44px; border-bottom: 1px solid var(--hairline); }
+.rd-comfort-size { display: inline-flex; align-items: center; gap: var(--space-2); }
+.rd-comfort-pct { min-width: 44px; text-align: center; }
+
+/* ── Finishing a module: Starguy steps in once, the ticks draw in ───────────────────────────────────── */
+.rd-finish { z-index: var(--z-celebration); display: flex; flex-direction: column; overflow-y: auto; background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
+.rd-finish-page { flex: 1 0 auto; width: min(100%, 560px); margin: 0 auto; padding: 0 var(--space-6) var(--space-6); }
+.rd-finish-head { display: flex; flex-direction: column; gap: 10px; padding-top: var(--space-2); }
+.rd-finish-head p { margin: 0; }
+.rd-finish-row { display: flex; align-items: flex-end; gap: var(--space-1); }
+.rd-finish-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 10px; padding-bottom: 6px; }
+.rd-finish-label { color: var(--ink-muted); }
+.rd-finish-crew { width: 106px; height: 122px; flex: none; margin-right: -6px; object-fit: contain; }
+.rd-finish-sec { margin-top: var(--space-8); }
+.rd-finish-sec:first-of-type { margin-top: 18px; }
+.rd-receipt .ui-paper-face { display: flex; flex-direction: column; padding: 18px 20px 16px; }
+.rd-receipt-head { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: var(--space-2); }
+.rd-receipt-head .t-label { margin: 0; color: var(--ink-muted); }
+.rd-receipt-list { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; }
+.rd-receipt-list > li { display: flex; align-items: center; gap: var(--space-3); min-height: 30px; font-size: 15px; line-height: 20px; }
+.rd-receipt-list .mw-readout { width: 20px; }
+.rd-receipt-foot { display: flex; align-items: flex-start; gap: var(--space-2); margin: 10px 0 0; padding-top: var(--space-3); border-top: 1px solid var(--hairline); color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+.rd-receipt-foot .ui-icon { flex: none; color: var(--ink-secondary); }
+.rd-dtick { display: grid; place-items: center; width: 22px; height: 22px; flex: none; border-radius: 50%; background: var(--success-hex); color: var(--surface-paper); }
+.rd-dtick svg { width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.rd-finish-extra { margin: var(--space-3) 0 0; }
+.rd-finish-review { margin-top: var(--space-4); }
+.rd-finish .ui-foot { width: 100%; }
+.rd-finish--play .rd-finish-crew { animation: rd-settle 620ms var(--ease-out) both; }
+.rd-finish--play .rd-dtick { animation: rd-pop var(--t-ui) var(--ease-out) both; animation-delay: calc(260ms + var(--i) * 110ms); }
+.rd-finish--play .rd-dtick path { stroke-dasharray: 22; stroke-dashoffset: 22; animation: rd-draw 180ms var(--ease-out) forwards; animation-delay: calc(320ms + var(--i) * 110ms); }
+@keyframes rd-settle { from { transform: translateY(10px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes rd-pop { from { opacity: 0; transform: scale(0.97); } to { opacity: 1; transform: none; } }
+@keyframes rd-draw { to { stroke-dashoffset: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .rd-finish--play .rd-finish-crew, .rd-finish--play .rd-dtick, .rd-finish--play .rd-dtick path { animation: none; }
+  .rd-finish--play .rd-dtick path { stroke-dashoffset: 0; }
+}

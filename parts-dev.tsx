@@ -245,6 +245,7 @@ function OverSection() {
           <Button onClick={() => setOpen('bare')}>Bare sheet (the quick tour)</Button>
           <Button onClick={() => setOpen('plain')}>Plain sheet (Finish for now)</Button>
           <Button onClick={() => setOpen('card')}>Sheet with its own headline (a tile's card)</Button>
+          <Button onClick={() => setOpen('notes')}>Sheet with its title at the left and a status (a module's Notes)</Button>
           <Button onClick={() => setOpen('confirm')}>Confirm</Button>
           <Button onClick={() => showMessage('Saved to your plan', { action: { label: 'Undo', onPress: () => {} } })}>Toast</Button>
         </Line>
@@ -283,6 +284,9 @@ function OverSection() {
         <p className="t-label text-ink-muted">Part of your world</p>
         <h3 className="t-title text-ink-primary">The branch library</h3>
         <p className="t-sub">hideTitle: the body opens with its own headline, so the head shows only Close; the title stays the sheet's name for screen readers.</p>
+      </Sheet>
+      <Sheet open={open === 'notes'} titleAlign="start" titleSize="small" status="Saved" title="Notes" onClose={close}>
+        <p className="t-sub">titleAlign start: the title sits at the left beside Close. status: a quiet word at the right of the head that says how things stand; notes save as you type, so there is no Done.</p>
       </Sheet>
       <Confirm open={open === 'confirm'} sentence="Delete your account?"
         detail="Everything you have studied, planned and saved is erased and cannot be brought back."
@@ -332,7 +336,7 @@ function BarsSection() {
         <div ref={answerRef}><ChoiceGroup legend="Fixing something that has stopped working" value={need ? null : 'like'} onChange={() => setNeed(false)}
           options={[{ value: 'love', label: "I'd love it" }, { value: 'like', label: "I'd like it" }]} /></div>
         <div className="border border-dashed border-outline-soft">
-          <PinnedFooter ruled note="Your answers stay as you go back">
+          <PinnedFooter ruled lead={<>Next: <span className="text-ink-primary">Your New OS</span></>} note="Your answers stay as you go back">
             <Button kind="main" size="lg" block arrow="forward" missing={need ? { sentence: 'Choose an answer to go on.', goTo: answerRef } : undefined} onClick={() => setNeed(true)}>
               {need ? 'Choose an answer' : 'Continue'}
             </Button>

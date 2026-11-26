@@ -455,6 +455,10 @@
 .ui-sheet .ui-sheet-head--plain > .ui-sheet-title { justify-self: start; padding: 0; text-align: left; }
 .ui-sheet-text { min-height: 44px; padding: 0 var(--space-3); border: 0; background: none; color: var(--ink-primary); font-size: 17px; }
 .ui-sheet-text--strong { font-weight: 700; }
+/* A quiet word at the right of the head ("Saved"), and a head whose title sits at the left beside Close. */
+.ui-sheet-status { padding: 0 var(--space-3); color: var(--ink-muted); font-size: 15px; line-height: 21px; white-space: nowrap; }
+.ui-sheet-head--start { grid-template-columns: 44px minmax(0, 1fr) auto; column-gap: var(--space-1); }
+.ui-sheet-head--start > .ui-sheet-title { justify-self: start; text-align: left; }
 .ui-sheet-body {
   display: flex;
   flex: 1 1 auto;
@@ -666,6 +670,7 @@
 }
 .ui-foot--ruled { border-top: 1px solid var(--hairline); }
 .ui-foot-note { margin: 0; color: var(--ink-muted); font-size: 13px; line-height: 18px; text-align: center; }
+.ui-foot-lead { margin: 0; color: var(--ink-muted); font-size: 15px; line-height: 21px; }
 
 /* ── 6. Field, rows, the sheet of paper, the pressable box ───────────────── */
 

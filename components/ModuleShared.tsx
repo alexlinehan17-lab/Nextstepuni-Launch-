@@ -7,7 +7,7 @@ import { moduleFill,moduleText } from './learning/brandTokens';
 
 import { motion } from 'framer-motion';
 import { ArrowRight,Quote } from 'lucide-react';
-import React,{ useState } from 'react';
+import React,{ useContext,useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigation } from '../contexts/NavigationContext';
 import { COLORS } from '../design/tokens';
@@ -16,6 +16,7 @@ import { MotionDiv } from './Motion';
 import { BrandBook } from './learning/BrandBook';
 import { Popover,PopoverContent,PopoverTrigger } from './learning/DefinitionPopover';
 import { Artwork,Eyebrow } from './learning/shared';
+import { ReaderStepContext } from './learning/readerContext';
 
 /* ═══════════════════════════════════════════════════════
    Highlight — inline discovery tooltip
@@ -43,12 +44,20 @@ interface ReadingSectionProps {
   theme: ModuleTheme;
 }
 
-export const ReadingSection = ({ title, eyebrow, children }: ReadingSectionProps) => (
+export const ReadingSection = ({ title, eyebrow, children }: ReadingSectionProps) => {
+  // In the reader the label says where the step sits ("Step 4 of 5 · Retraining", the step's own
+  // name after its number); the Thinker stands bare, with no tile behind him (area 5).
+  const step = useContext(ReaderStepContext);
+  const own = eyebrow?.includes(' // ') ? eyebrow.split(' // ').slice(1).join(' // ') : /^step\s*\d+$/i.test(eyebrow?.trim() ?? '') ? '' : eyebrow;
+  const name = step?.name || own;
+  const label = step ? <>Step <span className="rd-live">{step.index + 1} of {step.total}</span>{name ? ` · ${name}` : null}</> : eyebrow;
+  return (
   <section className="mr-lesson">
-    <header className="mr-lesson-heading"><div><Eyebrow>{eyebrow}</Eyebrow><h1 tabIndex={-1}>{title}</h1></div><Artwork src="/assets/star-crew/companions/thinker.png" size={124} /></header>
+    <header className="mr-lesson-heading"><div><Eyebrow>{label}</Eyebrow><h1 tabIndex={-1}>{title}</h1></div><Artwork src="/assets/star-crew/companions/thinker.png" size={124} transparentBackground /></header>
     <div className="mr-prose" style={{ fontSize: 'calc(17px * var(--reading-scale, 1))', lineHeight: 'var(--reading-lh, 1.85)' }}>{children}</div>
   </section>
-);
+  );
+};
 
 /* ═══════════════════════════════════════════════════════
    MicroCommitment — a small beginning in the learning notebook

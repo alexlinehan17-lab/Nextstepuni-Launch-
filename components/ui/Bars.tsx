@@ -172,15 +172,18 @@ export interface PinnedFooterProps {
   children: ReactNode;
   /** An optional quiet line under it. */
   note?: ReactNode;
+  /** An optional line over it that says where it goes ("Next: Your New OS", reading a module). */
+  lead?: ReactNode;
   /** A hairline above it, when content scrolls under it. */
   ruled?: boolean;
   className?: string;
 }
 
 /** The pinned footer of a task screen. A screen has a tab bar or this, not both. */
-export function PinnedFooter({ children, note, ruled = false, className = '' }: PinnedFooterProps) {
+export function PinnedFooter({ children, note, lead, ruled = false, className = '' }: PinnedFooterProps) {
   return (
     <div className={`ui-part ui-foot frame-foot${ruled ? ' ui-foot--ruled' : ''} ${className}`.trim()}>
+      {lead ? <p className="ui-foot-lead">{lead}</p> : null}
       {children}
       {note ? <p className="ui-foot-note">{note}</p> : null}
     </div>

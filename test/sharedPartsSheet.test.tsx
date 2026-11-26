@@ -148,3 +148,11 @@ test('one message at a time: a new one replaces the one showing, and each goes a
   act(() => { vi.advanceTimersByTime(200); });   // it has faded and gone
   expect(document.querySelector('.ui-toast')).toBeNull();
 });
+
+test('a sheet can carry its title at the left and a quiet status word at the right (a module’s Notes)', () => {
+  render(<Sheet open titleAlign="start" titleSize="small" status="Saved" title="Notes" onClose={() => {}}><p>Body</p></Sheet>);
+  const head = document.querySelector('.ui-sheet-head');
+  expect(head).toHaveClass('ui-sheet-head--start');
+  expect(screen.getByText('Saved')).toHaveClass('ui-sheet-status');
+  expect(screen.getByRole('dialog', { name: 'Notes' })).toBeInTheDocument();
+});

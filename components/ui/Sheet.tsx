@@ -99,10 +99,15 @@ export interface SheetProps {
    *  Keep studying, Discard): the handle and the title at the left, no Close.
    *  Escape, the dimmed page and a swipe down still call onClose. */
   plain?: boolean;
+  /** A quiet word at the right of the head that says how things stand ("Saved" on a module's
+   *  Notes, which save as you type). Not a button; ignored when there is a `save`. */
+  status?: ReactNode;
+  /** start: the title sits at the left beside Close (a module's Contents and Notes). */
+  titleAlign?: 'center' | 'start';
   className?: string;
 }
 
-export function Sheet({ open, onClose, title, titleSize = 'heading', hideTitle = false, save, footer, children, closeLabel = 'Close', art, meta, bare = false, dim = true, plain = false, className = '' }: SheetProps) {
+export function Sheet({ open, onClose, title, titleSize = 'heading', hideTitle = false, save, footer, children, closeLabel = 'Close', art, meta, bare = false, dim = true, plain = false, status, titleAlign = 'center', className = '' }: SheetProps) {
   const lead = art !== undefined || meta !== undefined;
   const phase = usePresence(open, SHEET_LEAVE_MS);
   const panel = useRef<HTMLDivElement>(null);
@@ -158,7 +163,7 @@ export function Sheet({ open, onClose, title, titleSize = 'heading', hideTitle =
                 </span>
               </div>
             ) : (
-            <div className="ui-sheet-head frame-dialog-head">
+            <div className={`ui-sheet-head frame-dialog-head${titleAlign === 'start' ? ' ui-sheet-head--start' : ''}`}>
               {save
                 ? <button type="button" className="ui-sheet-text" onClick={onClose}>Cancel</button>
                 : <button type="button" className="ui-icon-btn" aria-label={closeLabel} onClick={onClose}>
@@ -167,7 +172,7 @@ export function Sheet({ open, onClose, title, titleSize = 'heading', hideTitle =
               <h2 id={titleId} className={`ui-sheet-title${titleSize === 'small' ? ' ui-sheet-title--small' : ''}${hideTitle ? ' sr-only' : ''}`}>{title}</h2>
               {save
                 ? <button type="button" className="ui-sheet-text ui-sheet-text--strong" onClick={save.onPress}>{save.label}</button>
-                : <span aria-hidden="true" />}
+                : status ? <span className="ui-sheet-status">{status}</span> : <span aria-hidden="true" />}
             </div>
             )}
           </div>}

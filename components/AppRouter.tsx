@@ -46,7 +46,8 @@ import { moduleComponents, InnovationZone } from '../moduleRegistry';
 import { ALL_COURSES, categoryTitles } from '../courseData';
 import { ModulePositionProvider, resolveModulePosition } from '../contexts/ModulePositionContext';
 import { moduleAvailability } from '../utils/courseVisibility';
-import { markWorldReturn } from './learning/intents';
+import { markWorldReturn, requestModuleResume } from './learning/intents';
+import { ModuleFinishContext } from './learning/readerContext';
 import { type ModuleProgress, type UserProgress, type UserSettings, type NorthStar, type StudyReflection, type TopicMasteryV2, type UnifiedMockResult } from '../types';
 import { type StreakData } from '../hooks/useStreak';
 import { type FocusRecommendation } from '../hooks/useTodaysFocus';
@@ -332,6 +333,9 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     const availability = moduleAvailability(ALL_COURSES.find(course => course.id === moduleId), user?.curriculumLevel, studentProfile);
     if (availability === 'unavailable') return;
     if (availability === 'coming-soon') { nav.navigateToJCComingSoon(moduleId); return; }
+    // Home's continue card picks up where the student left off: straight to their step, not the
+    // module's title page (area 5, board c-read-flow: "Continue on Home still goes straight to your step").
+    if (viewState === 'tree') requestModuleResume(moduleId);
     nav.navigateToModule(moduleId, viewState, currentCategory);
   };
 
@@ -339,6 +343,22 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   // go Home. A page's Back is the app's one Back (navigation.md): the screen
   // you came from, else its parent (utils/places.ts parentOf: the module world
   // or Modules for a module, Journey results when it came from there).
+  // The finishing screen's "Up next in <world>": the next module in the module's world still to read.
+  const moduleFinish = (moduleId: string) => {
+    const category = studentCourses.find(course => course.id === moduleId)?.category;
+    if (!category) return null;
+    const world = studentCourses.filter(course => course.category === category);
+    const isDone = (course: CourseData) => (userProgress[course.id]?.unlockedSection ?? 0) >= course.sectionsCount;
+    const at = world.findIndex(course => course.id === moduleId);
+    const next = [...world.slice(at + 1), ...world.slice(0, Math.max(0, at))].find(course => !isDone(course));
+    return {
+      category,
+      done: world.filter(isDone).length,
+      total: world.length,
+      next: next ? { course: next, number: world.indexOf(next) + 1 } : null,
+      openModule: handleSelectModule,
+    };
+  };
   const handleBackToTree = () => { nav.navigateToTree(); };
   const handleBack = () => { nav.goBack(); };
   const handleBackToCategory = handleBack;
@@ -859,13 +879,15 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
                 when there is none), so the orange "Back to Journey Results"
                 bar that repeated it is gone (navigation.md: one leave control). */}
             <ModulePositionProvider value={modulePosition}>
-              <div>
-                <ModuleComponent
-                  onBack={handleBackToCategory}
-                  progress={userProgress[currentModuleId] || { unlockedSection: 0 }}
-                  onProgressUpdate={(p) => handleProgressUpdate(currentModuleId, p)}
-                />
-              </div>
+              <ModuleFinishContext.Provider value={moduleFinish(currentModuleId)}>
+                <div>
+                  <ModuleComponent
+                    onBack={handleBackToCategory}
+                    progress={userProgress[currentModuleId] || { unlockedSection: 0 }}
+                    onProgressUpdate={(p) => handleProgressUpdate(currentModuleId, p)}
+                  />
+                </div>
+              </ModuleFinishContext.Provider>
             </ModulePositionProvider>
           </Suspense>
         </ModuleErrorBoundary>

@@ -22,6 +22,7 @@ import type { UserProgress } from '../types';
 import { WorldIconBlob, type WorldId } from './WorldIconBlob';
 import { WORLD_TONES } from './worldPalette';
 import { sectionsFor } from './learning/data';
+import './module-cards.css';
 
 export interface ModuleWorld {
   id: CategoryType;

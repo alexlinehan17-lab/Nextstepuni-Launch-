@@ -53,6 +53,13 @@ try {
     const tour = frame.getByRole('dialog', { name: 'Quick tour', exact: true });
     if (await tour.isVisible()) await tour.getByRole('button', { name: 'Skip', exact: true }).click();
   }
+  // A module on a phone opens on its title page (area 5); Continue reading (or Start reading) goes into the step.
+  async function openModule(query, width, theme) {
+    await open(query, width, theme, '.mr-paper, .rd-main');
+    const cover = frame.getByRole('button', { name: /^(Continue|Start) reading$/ });
+    if (await cover.count()) await cover.click();
+    await frame.locator('.mr-lesson-heading h1').first().waitFor();
+  }
   async function capture(name, width, theme, locator) {
     const geometry = await frame.evaluate(() => ({ viewport: window.innerWidth, scroll: document.documentElement.scrollWidth }));
     assert.ok(geometry.scroll <= geometry.viewport + 1, `${name}/${width}/${theme}: no document overflow`);
@@ -97,16 +104,17 @@ try {
     await frame.locator('.module-search-results').waitFor();
     assert.ok(await frame.locator('.module-search-results').innerText(), 'Module search returns actual matching lessons');
     await capture('module-search', width, theme);
-    await open('view=module&mod=implementation-protocol', width, theme, '.mr-paper');
+    await openModule('view=module&mod=implementation-protocol', width, theme);
     await frame.getByRole('button', { name: 'Notes', exact: true }).click();
-    const notebook = frame.getByRole('dialog', { name: 'Your learning notebook', exact: true });
+    // Notes is a sheet that saves as you type: no Done, Close only closes it (area 5).
+    const notebook = frame.getByRole('dialog', { name: 'Notes', exact: true });
     const text = `Release check ${theme} ${width}: choose one small step.`;
     await notebook.getByRole('textbox', { name: 'Your notes', exact: true }).fill(text);
     await capture('module-notebook', width, theme, notebook);
-    await notebook.getByRole('button', { name: 'Done', exact: true }).click();
+    await notebook.getByRole('button', { name: 'Close', exact: true }).click();
     await frame.getByRole('button', { name: 'Notes', exact: true }).click();
     assert.equal(await notebook.getByRole('textbox', { name: 'Your notes', exact: true }).inputValue(), text, 'Closing the card preserves the draft');
-    await notebook.getByRole('button', { name: 'Done', exact: true }).click();
+    await notebook.getByRole('button', { name: 'Close', exact: true }).click();
     await capture('module-reader', width, theme);
     const next = frame.getByRole('button', { name: 'Continue to the next section', exact: true });
     if (await next.count()) {
@@ -118,7 +126,7 @@ try {
   }
 
   async function selectSection(title) {
-    const mobile = frame.getByRole('button', { name: 'Open module sections', exact: true });
+    const mobile = frame.getByRole('button', { name: 'Contents', exact: true });
     let scope = frame.locator('#module-sidebar-content');
     if (await mobile.isVisible()) {
       await mobile.click();
@@ -131,13 +139,13 @@ try {
     await frame.locator('.mr-lesson-heading h1').filter({ hasText: title }).waitFor();
   }
   for (const theme of ['dark', 'light']) for (const width of [800, 390, 320]) {
-    await open('view=module&mod=procrastination-protocol', width, theme, '.mr-paper');
+    await openModule('view=module&mod=procrastination-protocol', width, theme);
     await selectSection('Scaffolding Your Focus');
     const thinkers = frame.locator('.mr-lesson img[src*="star-crew/companions/thinker.png"]');
     assert.equal(await thinkers.count(), 2, 'Focus header and small beginning use the regular thinker');
     await capture('review-focus-thinker', width, theme);
 
-    await open('view=module&mod=effective-struggle-protocol', width, theme, '.mr-paper');
+    await openModule('view=module&mod=effective-struggle-protocol', width, theme);
     await selectSection('The Fallacy of Ease');
     await frame.getByRole('button', { name: 'Reveal the results', exact: true }).click();
     assert.deepEqual(await frame.locator('.wr-retention-bars output').allTextContents(), ['40%', '61%']);
@@ -146,7 +154,7 @@ try {
     assert.ok(Math.abs(bars[0].top-bars[1].top)<1, 'Recall tracks share a baseline');
     await capture('review-recall-evidence', width, theme);
 
-    await open('view=module&mod=exam-hall-strategies-protocol', width, theme, '.mr-paper');
+    await openModule('view=module&mod=exam-hall-strategies-protocol', width, theme);
     await selectSection('Reading Time Triage');
     await frame.getByRole('button', { name:'Start Triage',exact:true }).click();
     assert.equal(await frame.locator('[data-triage-progress]').count(),8);
@@ -157,7 +165,7 @@ try {
     assert.ok(choices.filter(c => c.selected === 'true').every(c => c.marker === '2px'), 'Selected triage dots have a contrasting outline');
     await capture('review-triage-selected', width, theme);
 
-    await open('view=module&mod=exam-crisis-management-protocol', width, theme, '.mr-paper');
+    await openModule('view=module&mod=exam-crisis-management-protocol', width, theme);
     await selectSection('Why You');
     const type = await frame.locator('.wr-chart').evaluate(svg => ({width:svg.getBoundingClientRect().width,label:parseFloat(getComputedStyle(svg.querySelector('text')).fontSize)}));
     assert.ok(Math.abs(type.label*type.width/640-(type.width<400?10:11))<.1,'Chart labels remain 10–11 rendered pixels');

@@ -100,3 +100,8 @@ test('a box you press that opens a list in place says whether it is open', () =>
   render(<PressBox expanded={false} onPress={() => {}}>9 modules finished</PressBox>);
   expect(screen.getByRole('button', { name: '9 modules finished' })).toHaveAttribute('aria-expanded', 'false');
 });
+
+test('the pinned footer can say where its action goes, over it', () => {
+  render(<PinnedFooter lead="Next: Your New OS"><Button kind="main">Continue</Button></PinnedFooter>);
+  expect(screen.getByText('Next: Your New OS')).toHaveClass('ui-foot-lead');
+});
