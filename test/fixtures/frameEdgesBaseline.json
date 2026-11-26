@@ -13,7 +13,7 @@
   "components/AccreditationPage.tsx": {
    "100vh": 1,
    "h-screen": 1,
-   "var(--sa*)": 2
+   "var(--sa*)": 1
   },
   "components/AdminDashboard.tsx": {
    "fixed": 1,
@@ -21,9 +21,7 @@
   },
   "components/AppRouter.tsx": {
    "100vh": 1,
-   "fixed": 1,
-   "h-screen": 4,
-   "var(--sa*)": 2
+   "h-screen": 4
   },
   "components/AuthActionCard.tsx": {
    "h-screen": 1
@@ -41,7 +39,7 @@
   },
   "components/DashboardView.tsx": {
    "h-screen": 1,
-   "var(--sa*)": 2
+   "var(--sa*)": 1
   },
   "components/DiveIn.tsx": {
    "fixed": 1,
@@ -76,9 +74,7 @@
    "inset-0": 1
   },
   "components/InnovationZone.tsx": {
-   "fixed": 1,
-   "h-screen": 1,
-   "var(--sa*)": 4
+   "h-screen": 1
   },
   "components/InsightsView.tsx": {
    "h-screen": 1
@@ -96,8 +92,7 @@
    "inset-0": 1
   },
   "components/LearningPathsView.tsx": {
-   "h-screen": 1,
-   "var(--sa*)": 1
+   "h-screen": 1
   },
   "components/Library.tsx": {
    "100vh": 1,
@@ -132,7 +127,7 @@
   "components/ModulesView.tsx": {
    "h-screen": 2,
    "inset-0": 2,
-   "var(--sa*)": 3
+   "var(--sa*)": 1
   },
   "components/MyDirection.tsx": {
    "h-screen": 1
@@ -164,7 +159,7 @@
    "var(--sa*)": 1
   },
   "components/PaperTrail/archive.css": {
-   "var(--sa*)": 3
+   "var(--sa*)": 1
   },
   "components/PaperTrail/milestones.ts": {
    "100vh": 1
@@ -198,11 +193,6 @@
   "components/TrainingHub.tsx": {
    "h-screen": 1,
    "inset-0": 2
-  },
-  "components/UserProfileMenu.tsx": {
-   "fixed": 2,
-   "inset-0": 1,
-   "var(--sa*)": 1
   },
   "components/WaysIn/waysIn.css": {
    "fixed": 1,
@@ -338,9 +328,6 @@
    "env(safe-area-": 4,
    "fixed": 3
   },
-  "components/mobile-editorial.css": {
-   "var(--sa*)": 3
-  },
   "components/navigation/sidebar.css": {
    "fixed": 2,
    "var(--sa*)": 2
@@ -349,12 +336,8 @@
    "env(safe-area-": 2,
    "fixed": 1
   },
-  "components/settings-modal.css": {
-   "var(--sa*)": 4
-  },
   "components/setup/YourSetupView.tsx": {
-   "h-screen": 1,
-   "var(--sa*)": 1
+   "h-screen": 1
   },
   "components/setup/your-setup.css": {
    "var(--sa*)": 1

@@ -2,7 +2,6 @@
  "about": "Ratchet for test/sharedParts.guard.test.ts: how many hand-made buttons, pop-ups and dropdowns each file has outside the shared parts (components/ui/). Counts may only go down.",
  "files": {
   "App.tsx": {
-   "button": 1,
    "pop-up": 1
   },
   "components/AcademicJourneyGame.tsx": {
@@ -55,7 +54,7 @@
    "button": 11
   },
   "components/AppRouter.tsx": {
-   "button": 5
+   "button": 4
   },
   "components/AppliedSciencesModule.tsx": {
    "button": 1
@@ -407,7 +406,7 @@
    "button": 2
   },
   "components/PaperTrail/ImageViewer.tsx": {
-   "button": 4,
+   "button": 3,
    "pop-up": 2
   },
   "components/PaperTrail/MilestoneCelebration.tsx": {
@@ -425,7 +424,7 @@
    "button": 1
   },
   "components/PaperTrail/PaperSelection.tsx": {
-   "button": 5
+   "button": 4
   },
   "components/PaperTrail/PhysicalEducationTaskCard.tsx": {
    "button": 4
@@ -459,7 +458,7 @@
    "pop-up": 1
   },
   "components/PaperTrail/index.tsx": {
-   "button": 12
+   "button": 11
   },
   "components/PointsExplainer.tsx": {
    "button": 1,
@@ -581,8 +580,7 @@
    "button": 1
   },
   "components/UserProfileMenu.tsx": {
-   "button": 21,
-   "pop-up": 1
+   "button": 8
   },
   "components/WaysIn/WaysInHub.tsx": {
    "button": 2

@@ -122,8 +122,9 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
     <KobraScope className="ks-page">
       <div className="ks-shell">
         <nav className="ks-navigation" aria-label="Study navigation">
+          {/* Study is one of the five places: the shared BackButton draws
+              nothing here, so no separator after it either (area 0). */}
           <BackButton onClick={onBack} label="Back to home" />
-          <span aria-hidden="true">/</span>
           <span>The Study Room</span>
           <div className="ks-nav-actions">
             <Button variant="ghost" onClick={onReflections}>
