@@ -231,6 +231,13 @@ html {
 /* Hover looks only on devices that can hover: Tailwind's hover: variants via
    future.hoverOnlyWhenSupported (tailwind.config.ts), hand-written :hover rules
    via design/postcss-hover-only.js (postcss.config.js). */
+/* So nothing a person needs may depend on hover. A control a laptop shows only
+   while its row is hovered (a row's delete, a flag) takes .frame-reveal, with
+   .group on the row: it is always there on touch, and on a laptop it shows on
+   hover or when the keyboard is inside the row. No opacity utilities beside it. */
+@media (hover: hover) and (pointer: fine) {
+  .group:not(:hover, :focus-within) .frame-reveal { opacity: 0; }
+}
 
 /* ── 9. The page does not scroll behind an open sheet or dialog ─────────── */
 

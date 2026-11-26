@@ -437,7 +437,7 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext
                           </span>
                           <button
                             onClick={() => handleDelete(event.id)}
-                            className="opacity-0 group-hover:opacity-100 p-1 rounded hover:bg-red-50 dark:hover:bg-red-900/20 text-zinc-300 hover:text-red-500 transition-all"
+                            className="frame-reveal p-1 rounded hover:bg-red-50 dark:hover:bg-red-900/20 text-zinc-300 hover:text-red-500 transition-all"
                           >
                             <Trash2 size={12} />
                           </button>
@@ -470,7 +470,7 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext
                         </div>
                         <button
                           onClick={() => handleDelete(event.id)}
-                          className="opacity-0 group-hover:opacity-100 p-1 rounded hover:bg-red-50 dark:hover:bg-red-900/20 text-zinc-300 hover:text-red-500 transition-all"
+                          className="frame-reveal p-1 rounded hover:bg-red-50 dark:hover:bg-red-900/20 text-zinc-300 hover:text-red-500 transition-all"
                         >
                           <Trash2 size={12} />
                         </button>

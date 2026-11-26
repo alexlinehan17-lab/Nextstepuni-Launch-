@@ -1321,7 +1321,8 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               return (
                 <div
                   key={i}
-                  className={`aspect-square flex flex-col items-center justify-center text-[11px] font-medium relative group ${
+                  tabIndex={dayEvents.length > 0 ? -1 : undefined}
+                  className={`aspect-square flex flex-col items-center justify-center text-[11px] font-medium relative group outline-none ${
                     !isToday && !isLC ? 'text-zinc-600 dark:text-zinc-400' : 'text-white rounded-lg'
                   } ${dayEvents.length > 0 ? 'cursor-pointer' : ''}`}
                   style={isToday ? { backgroundColor: ACCENT } : isLC ? { backgroundColor: '#DC2626' } : undefined}
@@ -1334,7 +1335,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                           <div key={j} className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} />
                         ))}
                       </div>
-                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:block z-50">
+                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:block group-focus:block z-50">
                         <div className="bg-zinc-800 text-white text-[10px] font-medium rounded-lg px-2.5 py-1.5 whitespace-nowrap shadow-lg border border-zinc-700">
                           {dayEvents.map((ev, j) => (
                             <div key={j} className="flex items-center gap-1.5">
@@ -1666,7 +1667,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                           className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all ${
                             rowFlagged
                               ? ''
-                              : 'opacity-0 group-hover:opacity-100 text-zinc-300 dark:text-zinc-600 hover:text-zinc-500 dark:hover:text-zinc-400'
+                              : 'frame-reveal text-zinc-300 dark:text-zinc-600 hover:text-zinc-500 dark:hover:text-zinc-400'
                           }`}
                           aria-label={rowFlagged ? `Edit flag for ${row.student.user.name}` : `Flag ${row.student.user.name}`}
                           title={rowFlagged ? 'Edit flag' : 'Flag student'}
