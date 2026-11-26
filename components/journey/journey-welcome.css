@@ -1,7 +1,7 @@
 .journey-welcome-help{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;background:#fff;color:#23251f;border:1px solid #c8cdc2;border-radius:999px;padding:8px 12px;font:600 12px 'DM Sans',sans-serif}
 .journey-welcome-help>span:first-child{display:grid;place-items:center;width:19px;height:19px;border:1px solid currentColor;border-radius:50%;font-size:12px}
-.journey-welcome-overlay{position:fixed;inset:0;z-index:210;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(25,29,23,.55);backdrop-filter:blur(5px);font-family:'DM Sans',sans-serif}
-.journey-welcome{width:min(940px,100%);max-height:calc(100dvh - 48px);overflow:auto;overscroll-behavior:contain;background:#fff;color:#23251f;border:1.5px solid #23251f;border-radius:22px;box-shadow:7px 7px 0 #23251f;outline:none;isolation:isolate}
+.journey-welcome-overlay{--frame-gap:24px;z-index:210;display:flex;align-items:center;justify-content:center;background:rgba(25,29,23,.55);backdrop-filter:blur(5px);font-family:'DM Sans',sans-serif}
+.journey-welcome{width:min(940px,100%);overflow:auto;overscroll-behavior:contain;background:#fff;color:#23251f;border:1.5px solid #23251f;border-radius:22px;box-shadow:7px 7px 0 #23251f;outline:none;isolation:isolate}
 .journey-welcome-header{display:flex;justify-content:space-between;align-items:center;padding:22px 32px;border-bottom:1px solid #d8dbd2}
 .journey-welcome-brand{font-size:25px;font-weight:850;letter-spacing:-1.2px}
 .journey-welcome-header button{width:36px;height:36px;display:grid;place-items:center;border:1px solid #c8cdc2;border-radius:50%;background:#fff;color:#23251f}
@@ -28,8 +28,8 @@
 @media(max-width:700px){
  .journey-welcome-help{width:34px;height:34px;padding:0;justify-content:center}
  .journey-welcome-help>span:last-child{display:none}
- .journey-welcome-overlay{padding:12px}
- .journey-welcome{max-height:calc(100dvh - 24px);border-radius:18px;box-shadow:4px 4px 0 #23251f}
+ .journey-welcome-overlay{--frame-gap:12px}
+ .journey-welcome{border-radius:18px;box-shadow:4px 4px 0 #23251f}
  .journey-welcome-header{padding:16px 20px}
  .journey-welcome-brand{font-size:22px}
  .journey-welcome-body{grid-template-columns:1fr}

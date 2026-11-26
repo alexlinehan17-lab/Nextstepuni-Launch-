@@ -84,7 +84,8 @@ export default function StudyBreak({ subject, elapsedSeconds, onResume, onLeave,
 
   return <section className="study-break-experience">
     <div ref={rest} className="study-break" inert={open} aria-hidden={open}>
-      {sound && <div className="study-break-tools"><StudySoundToggle muted={sound.muted} /></div>}
+      {/* Pinned inside the takeover's safe box (components/ui/frame.css), so it sits below the island. */}
+      {sound && <div className="frame-safe-box"><div className="study-break-tools"><StudySoundToggle muted={sound.muted} /></div></div>}
       <p className="study-crew-eyebrow" data-study-arrive>A little room to breathe</p>
       <div className="study-break-art" data-study-arrive><StudySnoozer artworkRef={restMascot} /></div>
       <h1 id="study-break-title" data-study-arrive>Even stars take a moment.</h1>

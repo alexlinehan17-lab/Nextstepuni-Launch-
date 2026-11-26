@@ -654,7 +654,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
   return (
     <div className="admin-workspace">
       <a href="#admin-main" className="admin-skip-link">Skip to dashboard content</a>
-      <header className="admin-masthead">
+      <header className="admin-masthead frame-bar">
         <div className="admin-masthead-inner">
           <div className="admin-brand">
             <span>nextstepuni</span>
