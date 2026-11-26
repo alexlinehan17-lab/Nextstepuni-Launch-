@@ -56,11 +56,25 @@ export interface ChoiceTileProps extends Omit<React.ButtonHTMLAttributes<HTMLBut
   label: ReactNode;
   meta?: ReactNode;
   art?: string;
+  /** The answer line under a chosen answer (a module's own words for it). The words are
+   *  ink, never green; `ok` puts the green tick beside them (Alex, 26 Nov 2026: "can be
+   *  black. Don't like the dark green text"); `plain` is a quieter line with no tick. */
+  note?: ReactNode;
+  noteTone?: 'ok' | 'plain';
+}
+
+/** The green tick that sits beside an answer line: the only green on an answer. */
+export function AnswerTick({ className = '' }: { className?: string }) {
+  return (
+    <svg className={`ui-tick ${className}`.trim()} viewBox="0 0 12 12" aria-hidden="true" focusable="false">
+      <path d="M2.5 6.2l2.4 2.4 4.6-5" />
+    </svg>
+  );
 }
 
 /** One choice: an outlined tile before it is touched; chosen, an ink outline. */
 export const ChoiceTile = React.forwardRef<HTMLButtonElement, ChoiceTileProps>(function ChoiceTile(
-  { chosen, kind = 'one', tile = false, label, meta, art, className = '', type = 'button', ...props },
+  { chosen, kind = 'one', tile = false, label, meta, art, note, noteTone = 'ok', className = '', type = 'button', ...props },
   ref,
 ) {
   return (
@@ -78,6 +92,7 @@ export const ChoiceTile = React.forwardRef<HTMLButtonElement, ChoiceTileProps>(f
         {/* The space keeps the accessible name two words apart ("Practice Work
             through questions"); a flex column does not draw it. */}
         {meta ? <>{' '}<span className="ui-choice-meta">{meta}</span></> : null}
+        {note ? <>{' '}<span className={`ui-choice-note${noteTone === 'ok' ? ' ui-choice-note--ok' : ''}`}>{noteTone === 'ok' ? <AnswerTick /> : null}<span>{note}</span></span></> : null}
       </span>
       <SelectionMark on={chosen} shape={kind === 'one' ? 'round' : 'square'} />
     </button>

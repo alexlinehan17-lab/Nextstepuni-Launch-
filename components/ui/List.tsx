@@ -134,12 +134,14 @@ export interface PressBoxProps {
   label?: string;
   /** The box opens a list in place under itself (a world's finished modules): aria-expanded. */
   expanded?: boolean;
+  /** The box turns something over in place (a module's "Tap to reframe" card): aria-pressed. */
+  pressed?: boolean;
   className?: string;
 }
 
 /** A box you press (level 1): a line; it looks pressed when pressed. */
-export function PressBox({ children, onPress, href, label, expanded, className = '' }: PressBoxProps) {
+export function PressBox({ children, onPress, href, label, expanded, pressed, className = '' }: PressBoxProps) {
   const classes = `ui-part ui-press ${className}`.trim();
   if (href) return <a className={classes} href={href} aria-label={label}>{children}</a>;
-  return <button type="button" className={classes} onClick={onPress} aria-label={label} aria-expanded={expanded}>{children}</button>;
+  return <button type="button" className={classes} onClick={onPress} aria-label={label} aria-expanded={expanded} aria-pressed={pressed}>{children}</button>;
 }

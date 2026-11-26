@@ -190,6 +190,12 @@
 .ui-choice-body { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 2px; }
 .ui-choice-label { font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
 .ui-choice-meta { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+/* The answer line under a chosen answer: ink words, the green tick beside them (never a
+   green sentence, never a mint or coral fill); `plain` is quieter and has no tick. */
+.ui-choice-note { display: flex; align-items: flex-start; gap: 5px; margin-top: 2px; color: var(--ink-secondary); font-size: 13px; line-height: 18px; letter-spacing: 0; animation: ui-rise var(--t-ui) var(--ease-out) both; }
+.ui-choice-note--ok { color: var(--ink-primary); }
+.ui-tick { display: block; flex: none; width: 15px; height: 15px; margin-top: 1.5px; fill: none; stroke: var(--success-hex); stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
+@keyframes ui-rise { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
 .ui-choice-art { width: 40px; height: 40px; flex: none; object-fit: contain; }
 /* The grid tile: two columns on a phone at most, at least 88px tall. */
 .ui-choice--tile { flex-direction: column; align-items: flex-start; gap: 6px; min-height: 88px; padding: 14px; }
@@ -695,6 +701,7 @@
 }
 .ui-field-input::placeholder { color: var(--ink-muted); opacity: 1; }
 .ui-field--search .ui-field-input { height: 44px; padding-left: 44px; }
+.ui-field-input--area { display: block; height: auto; min-height: 104px; padding: 12px 14px; font-size: 17px; line-height: 26px; resize: vertical; }
 .ui-field-glyph { position: absolute; top: 50%; left: 15px; color: var(--ink-muted); pointer-events: none; transform: translateY(-50%); }
 .ui-field-help { margin: 0; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
 .ui-field-error { margin: 0; color: var(--ink-primary); font-size: 13px; line-height: 18px; }
@@ -806,6 +813,7 @@ span.ui-row-art > * { display: block; width: 100%; height: 100%; }
   .ui-btn:active, .ui-icon-btn:active, .ui-choice:active, .ui-menu-btn:active, .ui-press:active, .ui-checkrow:active { transform: none; }
   .ui-link:active .ui-icon { transform: none; }
   .ui-mark--on path { transition: none; }
+  .ui-choice-note { animation: none; }
   .ui-switch-knob { transition: none; }
   .ui-seg-pill { transition: none; }
   .ui-word::after { transition: none; }

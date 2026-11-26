@@ -33,6 +33,9 @@ import { PinnedFooter, TabBar, TopBar } from './components/ui/Bars';
 import { Field, SearchField } from './components/ui/Field';
 import { CheckRow, List, PaperSheet, PressBox, Row } from './components/ui/List';
 import { EmptyState, ErrorState, LoadingShape } from './components/ui/States';
+import { ChoiceTile } from './components/ui/Choice';
+import { AreaField } from './components/ui/Field';
+import { AnswerGroup, AnswerLine, ExercisePart, ExerciseSheet, RevealCard } from './components/learning/Exercise';
 
 const params = new URLSearchParams(window.location.search);
 if (params.get('theme') === 'dark') document.documentElement.classList.add('dark');
@@ -404,6 +407,60 @@ function FieldsSection() {
   );
 }
 
+/** Area 5b: the pieces an exercise in a module is made of (boards c-read-flow, c-read-choices, c-read-write). */
+const REASONS = [
+  { text: "I didn't use the right study method.", control: true },
+  { text: "I'm just naturally bad at this subject.", control: false },
+  { text: 'The test was unfairly hard.', control: false },
+  { text: "I didn't put in enough focused effort.", control: true },
+];
+function ExerciseSection() {
+  const [choice, setChoice] = useState<Record<string, boolean>>({ [REASONS[0].text]: true, [REASONS[2].text]: true });
+  const [pair, setPair] = useState<number | null>(1);
+  const [turned, setTurned] = useState<number[]>([1]);
+  const [text, setText] = useState("I'm not a maths person yet.");
+  const flip = (i: number) => setTurned(t => (t.includes(i) ? t.filter(x => x !== i) : [...t, i]));
+  return (
+    <Section id="part-exercise" title="An exercise in a module">
+      <Spec label="The sheet, answers you choose" caption="The page's one lifted sheet. A chosen answer has an ink outline and its tick draws; under it, the module's own words on an ink line, with a green tick where the answer is right. The count is read from the answers. Arrow keys move within the group.">
+        <ExerciseSheet title="Control Panel" sub="Scenario: You fail a test. Which of these reasons are actually within your control?">
+          <AnswerGroup kind="several" count>
+            {REASONS.map(r => (
+              <ChoiceTile key={r.text} kind="several" chosen={!!choice[r.text]} label={r.text}
+                note={choice[r.text] ? (r.control ? '(CONTROLLABLE)' : '(UNCONTROLLABLE)') : undefined} noteTone={r.control ? 'ok' : 'plain'}
+                onClick={() => setChoice(c => ({ ...c, [r.text]: !c[r.text] }))} />
+            ))}
+          </AnswerGroup>
+          <ExercisePart label="Pick one" title="When I fail at something...">
+            <AnswerGroup kind="one" columns={2}>
+              {["A) I feel like I'm a failure.", 'B) I feel like I need to try a new strategy.'].map((t, i) => (
+                <ChoiceTile key={t} tile chosen={pair === i} label={t} onClick={() => setPair(i)} />
+              ))}
+            </AnswerGroup>
+          </ExercisePart>
+        </ExerciseSheet>
+      </Spec>
+      <Spec label="An answer you write" caption="The field takes the quiet ink edge while it is in use. The line under it is ink, with a green tick.">
+        <ExerciseSheet label="Growth Mindset Activity" title={'The "Yet" Reframe Challenge'} sub={'Upgrade this fixed thought into a growth mindset statement using the power of "yet".'}>
+          <AreaField label="Your Reframe" value={text} onChange={e => setText(e.target.value)} placeholder="Rewrite this using the word 'yet'..." data-force="focus" />
+          {text.toLowerCase().includes('yet') ? <AnswerLine><b>Reframe complete.</b> You've opened up the possibility of future growth.</AnswerLine> : null}
+        </ExerciseSheet>
+      </Spec>
+      <Spec label="A card you press to turn it over" caption="A white box with a line. Turned, the old words are struck through above the new ones, in ink, with a green tick: no orange or green panel.">
+        <div className="flex flex-col gap-2">
+          {[["I failed the test because I am stupid.", 'I failed the test because my study strategy for this topic was ineffective.'], ["I'm just naturally bad at Maths.", "I haven't found an effective way to learn Maths yet."]].map(([a, b], i) => (
+            <RevealCard key={a} revealed={turned.includes(i)} onPress={() => flip(i)} before={`"${a}"`} after={`"${b}"`} hint="Tap to reframe" done="Reframed" />
+          ))}
+        </div>
+      </Spec>
+      <Spec label="Lines that answer" caption="Ink words. The tick beside them is the only green; a note has no tick.">
+        <AnswerLine>You just turned a verdict into data.</AnswerLine>
+        <AnswerLine tone="note">Result: You're leaning towards Growth, with some Fixed-Mindset code still running.</AnswerLine>
+      </Spec>
+    </Section>
+  );
+}
+
 function StatesSection() {
   const [failed, setFailed] = useState(true);
   return (
@@ -438,6 +495,7 @@ function PartsSheet() {
       <OverSection />
       <BarsSection />
       <FieldsSection />
+      <ExerciseSection />
       <StatesSection />
       <MessageHost />
     </main>

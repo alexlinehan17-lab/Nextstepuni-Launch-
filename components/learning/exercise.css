@@ -1,0 +1,61 @@
+/* The pieces an exercise in a module is made of (area 5b; boards c-read-flow, c-read-choices, c-read-write, agreed
+   26 Nov 2026; components/learning/Exercise.tsx). The one lifted sheet, a question's answers, the answer line, the
+   written answer, the card you press to turn it over. Tokens only. Every answer line is ink with a green tick beside
+   it; green is never a sentence; no mint, coral, peach or orange fill on an answer. */
+
+/* ── The sheet: the page's one lifted sheet is the thing you do ─────────────────────────────────────────── */
+.ex-sheet { position: relative; isolation: isolate; margin: 34px 0 0; text-align: left; }
+.ex-sheet::before,
+.ex-sheet::after { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0; border: 1px solid var(--outline-soft); border-radius: var(--r-card); background: var(--surface-paper); transform: rotate(-0.8deg); }
+.ex-sheet::after { transform: rotate(0.8deg); }
+.ex-sheet-face { position: relative; z-index: 1; display: flex; flex-direction: column; gap: var(--space-3); padding: 22px 20px 20px; border: 1px solid var(--outline-soft); border-radius: var(--r-card); background: var(--surface-paper); box-shadow: var(--lift); color: var(--ink-primary); font-family: var(--font-ui); font-size: 16px; line-height: 24px; letter-spacing: 0; }
+.ex-sheet-face > * { margin: 0; }
+.ex-head { display: flex; flex-direction: column; gap: 6px; margin-bottom: var(--space-1); }
+.ex-label { margin: 0; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; text-transform: uppercase; }
+.ex-title { margin: 0; color: var(--ink-primary); font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; text-align: left; text-wrap: balance; }
+.ex-sub { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; text-align: left; }
+/* a second exercise on the same sheet, under a hairline */
+.ex-part { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-3); padding-top: 20px; border-top: 1px solid var(--hairline); }
+/* in the reader the sheet follows the words on the page; on a laptop the step is already on the screen's one sheet,
+   so the exercise lies flat on it under a hairline (no sheet on a sheet) */
+.rd-reader .mr-prose > .ex-sheet { margin-top: 34px; }
+.rd-reader--desk .ex-sheet::before,
+.rd-reader--desk .ex-sheet::after { display: none; }
+.rd-reader--desk .ex-sheet-face { padding: 24px 0 0; border: 0; border-top: 1px solid var(--hairline); border-radius: 0; background: none; box-shadow: none; }
+.rd-reader--desk .mr-prose > .ex-sheet { margin-top: 36px; }
+
+/* ── A question's answers ─────────────────────────────────────────────────────────────────────────────── */
+.ex-group { display: flex; flex-direction: column; gap: var(--space-3); }
+.ex-group-head { margin-top: var(--space-1); }
+.ex-group-head .ui-choices-count { color: var(--ink-muted); }
+.ex-sheet .ui-choice { padding: 13px 14px 13px 16px; }
+.ex-sheet .ui-choice-label { font-size: 16px; line-height: 23px; letter-spacing: 0; }
+.ex-sheet .ui-choice--tile { padding: 14px; }
+
+/* ── The answer line: ink words, a green tick ─────────────────────────────────────────────────────────── */
+.ex-line { display: flex; align-items: flex-start; gap: var(--space-2); margin: 0; color: var(--ink-primary); font-size: 15px; line-height: 21px; text-align: left; animation: ui-rise var(--t-ui) var(--ease-out) both; }
+.ex-line .ex-line-tick { width: 18px; height: 18px; margin-top: 1.5px; }
+.ex-line-words b, .ex-line-words strong { font-weight: 700; }
+
+/* ── A card you press to turn it over ─────────────────────────────────────────────────────────────────── */
+.ui-press.ex-reveal { display: flex; align-items: center; gap: var(--space-3); min-height: 56px; padding: 13px 14px 13px 16px; border-radius: var(--r-ctl); }
+.ex-reveal-body { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: var(--space-1); }
+.ex-reveal-before, .ex-reveal-after { display: block; color: var(--ink-primary); font-size: 16px; line-height: 23px; }
+.ex-reveal--on .ex-reveal-before { color: var(--ink-muted); font-size: 13px; line-height: 18px; text-decoration: line-through; text-decoration-color: var(--ink-muted); }
+.ex-reveal-after { animation: ui-rise var(--t-ui) var(--ease-out) both; }
+.ex-reveal-state { display: flex; align-items: center; gap: 5px; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.ex-reveal-state--done { color: var(--ink-primary); }
+.ex-reveal-state--done .ui-tick { margin-top: 0; }
+.ex-reveal-turn { flex: none; color: var(--ink-muted); transition: transform var(--t-move) var(--ease-move); }
+.ex-reveal--on .ex-reveal-turn { transform: rotate(180deg); }
+
+/* ── Inside a module: the reader's older sheets style every button and field there; the parts keep their look ─ */
+.nsu-module-reader .ui-part.ui-choice { min-height: 56px; }
+.nsu-module-reader .ui-part:is(.ui-press, .ui-link) { min-height: 44px; }
+.nsu-module-reader .ui-part.ui-field .ui-field-input:is(textarea, input) { min-height: 48px; border: 1px solid var(--outline-soft) !important; border-radius: var(--r-sm); background: var(--surface-paper) !important; color: var(--ink-primary) !important; font-family: var(--font-ui); }
+.nsu-module-reader .ui-part.ui-field .ui-field-input.ui-field-input--area:is(textarea) { min-height: 104px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ex-line, .ex-reveal-after { animation: none; }
+  .ex-reveal-turn { transition: none; }
+}
