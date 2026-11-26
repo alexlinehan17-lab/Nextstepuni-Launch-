@@ -940,6 +940,7 @@ const App: React.FC = () => {
           onLogout={handleLogout} onOpenSettings={() => setSettingsOpen(true)}
           onOpenPassport={() => setPassportOpen(true)} onOpenSiteGuide={() => setSiteGuideOpen(true)}
           onOpenFeedback={() => setFeedbackOpen(true)} onUnreadCountChange={setUnreadNotificationCount}
+          onOpenDirection={() => (northStar ? nav.navigateToDirection() : setNorthStarEditOpen(true))}
           completedCount={completedCount} totalCount={studentCourses.length} unreadCount={unreadNotificationCount}>
           <AppRouter {...routerProps} />
         </NextStepUniSidebar>

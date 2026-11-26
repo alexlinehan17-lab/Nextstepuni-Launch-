@@ -72,3 +72,31 @@ export function parentOf(screen: ScreenRef): ScreenRef | null {
       return { viewState: 'tree' };
   }
 }
+
+/** The laptop sidebar, "sidebar B" (agreed 25 Nov 2026): the five places,
+ *  then Workspace. Ten rows; everything else lives under the student's name,
+ *  on Home or in the Launchpad. */
+export type SidebarItemId =
+  | 'home' | 'modules' | 'study' | 'progress' | 'island'
+  | 'launchpad' | 'mark-bank' | 'planner' | 'topic-atlas' | 'paper-trail';
+
+export const SIDEBAR_PLACES: readonly SidebarItemId[] = ['home', 'modules', 'study', 'progress', 'island'];
+export const SIDEBAR_WORKSPACE: readonly SidebarItemId[] = ['launchpad', 'mark-bank', 'planner', 'topic-atlas', 'paper-trail'];
+
+/** The four Workspace tools with their own row; every other tool is the Launchpad's. */
+const WORKSPACE_TOOLS = new Set(['mark-bank', 'planner', 'topic-atlas', 'paper-trail']);
+
+/** The sidebar row shaded for a screen, or none (a page opened from the menu
+ *  under the student's name, such as Settings or Year Plans, shades no row). */
+export function sidebarItemFor(screen: ScreenRef): SidebarItemId | null {
+  switch (screen.viewState) {
+    case 'tree': return 'home';
+    case 'modules': case 'category': case 'module': return 'modules';
+    case 'study-session': return 'study';
+    case 'dashboard': case 'insights': return 'progress';
+    case 'my-journey': return 'island';
+    case 'innovation-zone':
+      return screen.activeTool && WORKSPACE_TOOLS.has(screen.activeTool) ? screen.activeTool as SidebarItemId : 'launchpad';
+    default: return null;
+  }
+}

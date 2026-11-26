@@ -20,7 +20,7 @@ const props: React.ComponentProps<typeof NextStepUniSidebar> = {
   user: { uid: 'tablet-navigation-test', name: 'Sample Student', avatar: '' },
   settings: { language: 'en', avatar: '', darkMode: false, cardStyle: 'default', defaultWorkMinutes: 25, showDashboard: false },
   updateSetting: vi.fn(), onLogout: vi.fn(), onOpenSettings: vi.fn(), onOpenPassport: vi.fn(),
-  onOpenSiteGuide: vi.fn(), onOpenFeedback: vi.fn(), onUnreadCountChange: vi.fn(),
+  onOpenSiteGuide: vi.fn(), onOpenFeedback: vi.fn(), onOpenDirection: vi.fn(), onUnreadCountChange: vi.fn(),
   completedCount: 0, totalCount: 10, unreadCount: 0,
   children: <input aria-label="Unfinished work" defaultValue="Keep my answer" />,
 };

@@ -3,14 +3,15 @@ import { LayoutGroup, motion, useReducedMotion } from 'framer-motion';
 import {
   SidebarProvider, Sidebar, SidebarHeader, SidebarContent, SidebarFooter,
   SidebarInset, SidebarTrigger, SidebarGroup, SidebarGroupLabel, SidebarGroupContent,
-  SidebarMenu, SidebarMenuItem, SidebarMenuButton, SidebarMenuBadge, SidebarSeparator,
+  SidebarMenu, SidebarMenuItem, SidebarMenuButton,
   DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuGroup,
   DropdownMenuLabel, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuSub,
   DropdownMenuSubTrigger, DropdownMenuSubContent, DropdownMenuRadioGroup, DropdownMenuRadioItem,
-  TooltipProvider, Kbd, useIsMobile, SoundEffects, SidebarResize,
+  TooltipProvider, useIsMobile, SoundEffects, SidebarResize,
 } from '../kobra-navigation-runtime';
 import { NavigationIcon, type NavigationIconName } from './NavigationIcon';
 import { useNavigation } from '../../contexts/NavigationContext';
+import { sidebarItemFor, type SidebarItemId } from '../../utils/places';
 import type { SessionUser } from '../../utils/authUtils';
 import type { UserSettings } from '../../types';
 import Avatar from '../Avatar';
@@ -30,13 +31,15 @@ interface Props {
   onOpenPassport: () => void;
   onOpenSiteGuide: () => void;
   onOpenFeedback: () => void;
+  /** My Direction, or setting a North Star first when there is none. */
+  onOpenDirection: () => void;
   onUnreadCountChange: (count: number) => void;
   completedCount: number;
   totalCount: number;
   unreadCount: number;
 }
 
-type Item = { label: string; icon: NavigationIconName; active?: boolean; go: () => void; badge?: string; coach?: string };
+type Item = { id: SidebarItemId; label: string; icon: NavigationIconName; go: () => void; coach?: string };
 const afterMenuCloses = (go: () => void) => window.setTimeout(go, 0);
 const DEFAULT_WIDTH = 264;
 const MIN_WIDTH = 192;
@@ -79,32 +82,27 @@ export default function NextStepUniSidebar(props: Props) {
   const accountTrigger = useRef<HTMLButtonElement>(null);
   const updatesTrigger = useRef<HTMLButtonElement>(null);
   const reduced = useReducedMotion();
-  const { viewState, activeTool } = nav.state;
   const email = auth.currentUser?.uid === props.user.uid ? auth.currentUser.email : null;
-  const tool = (id: string) => viewState === 'innovation-zone' && activeTool === id;
+  // Sidebar B (agreed 25 Nov 2026): the five places, then Workspace. Ten rows,
+  // and nothing scrolls on a 1280 x 800 laptop. What left the list lives under
+  // the student's name (Year Plans, Study Passport, Your setup, Insights, My
+  // Direction, Account), on Home (Learning paths) or in the Launchpad (War
+  // Room, Future Finder); References stays in Help.
+  const current = sidebarItemFor(nav.state);
   const groups: { title?: string; items: Item[] }[] = [
     { items: [
-      { label: 'Home', icon: 'home', active: viewState === 'tree', go: nav.navigateToTree },
-      { label: 'Modules', icon: 'modules', active: ['modules', 'category'].includes(viewState), go: nav.navigateToModules, coach: 'modules' },
-      { label: 'Study session', icon: 'timer', active: viewState === 'study-session', go: nav.navigateToStudySession, coach: 'study' },
+      { id: 'home', label: 'Home', icon: 'home', go: nav.navigateToTree },
+      { id: 'modules', label: 'Modules', icon: 'modules', go: nav.navigateToModules, coach: 'modules' },
+      { id: 'study', label: 'Study session', icon: 'timer', go: nav.navigateToStudySession, coach: 'study' },
+      { id: 'progress', label: 'My Progress', icon: 'progress', go: () => nav.navigateToDashboard() },
+      { id: 'island', label: 'My Island', icon: 'island', go: nav.navigateToJourney },
     ] },
     { title: 'Workspace', items: [
-      { label: 'Launchpad', icon: 'compass', active: viewState === 'innovation-zone' && !['planner', 'mark-bank', 'topic-atlas', 'paper-trail', 'war-room', 'syllabus-xray', 'future-finder', 'future-finder-revamped'].includes(activeTool ?? ''), go: () => nav.navigateToInnovationZone(), coach: 'launchpad' },
-      { label: 'Mark Bank', icon: 'marks', active: tool('mark-bank'), go: () => nav.navigateToInnovationZone('mark-bank') },
-      { label: 'Planner', icon: 'planner', active: tool('planner'), go: () => nav.navigateToInnovationZone('planner') },
-      { label: 'Topic Atlas', icon: 'atlas', active: tool('topic-atlas'), go: () => nav.navigateToInnovationZone('topic-atlas') },
-      { label: 'Paper Trail', icon: 'papers', active: tool('paper-trail'), go: () => nav.navigateToInnovationZone('paper-trail') },
-    ] },
-    { title: 'Your journey', items: [
-      { label: 'Your setup', icon: 'setup', active: viewState === 'your-setup', go: nav.navigateToYourSetup },
-      { label: 'Learning paths', icon: 'paths', active: viewState === 'learning-paths', go: nav.navigateToLearningPaths },
-      { label: 'My Progress', icon: 'progress', active: ['dashboard', 'insights'].includes(viewState), go: () => nav.navigateToDashboard() },
-      { label: 'My Island', icon: 'island', active: viewState === 'my-journey', go: nav.navigateToJourney },
-      { label: 'War Room', icon: 'target', active: tool('war-room') || tool('syllabus-xray'), go: () => nav.navigateToInnovationZone('war-room') },
-      { label: 'Future Finder', icon: 'directions', active: tool('future-finder-revamped') || tool('future-finder'), go: () => nav.navigateToInnovationZone('future-finder-revamped') },
-      { label: 'Study Passport', icon: 'passport', go: props.onOpenPassport, badge: `${props.completedCount}/${props.totalCount}` },
-      { label: 'Year Plans', icon: 'yearplans', active: viewState === 'year-plans', go: nav.navigateToYearPlans },
-      { label: 'References', icon: 'references', active: viewState === 'accreditation', go: nav.navigateToAccreditation },
+      { id: 'launchpad', label: 'Launchpad', icon: 'compass', go: () => nav.navigateToInnovationZone(), coach: 'launchpad' },
+      { id: 'mark-bank', label: 'Mark Bank', icon: 'marks', go: () => nav.navigateToInnovationZone('mark-bank') },
+      { id: 'planner', label: 'Planner', icon: 'planner', go: () => nav.navigateToInnovationZone('planner') },
+      { id: 'topic-atlas', label: 'Topic Atlas', icon: 'atlas', go: () => nav.navigateToInnovationZone('topic-atlas') },
+      { id: 'paper-trail', label: 'Paper Trail', icon: 'papers', go: () => nav.navigateToInnovationZone('paper-trail') },
     ] },
   ];
 
@@ -127,7 +125,7 @@ export default function NextStepUniSidebar(props: Props) {
       <Sidebar variant="inset" collapsible="icon" className="nsu-nav-container">
         <SidebarHeader className="nsu-nav-header">
           <div className="nsu-nav-brand-row">
-            <button type="button" className="nsu-nav-wordmark" data-sound="select" onClick={nav.navigateToTree} aria-label="NextStepUni home">nextstepuni</button>
+            <button type="button" className="nsu-nav-wordmark" data-sound="select" onClick={nav.navigateToTree} aria-label="NextStepUni home">nextstepuni<span className="nsu-nav-wordmark-stop" aria-hidden="true">.</span></button>
             <SidebarTrigger className="nsu-nav-collapse" data-sound={open ? 'close' : 'open'} aria-label={open ? 'Collapse sidebar' : 'Expand sidebar'} aria-expanded={open} />
           </div>
         </SidebarHeader>
@@ -135,22 +133,20 @@ export default function NextStepUniSidebar(props: Props) {
           <SidebarContent ref={content} className="nsu-nav-content" onPointerOver={highlight} onPointerLeave={() => setHover(null)} onScroll={() => setHover(null)}>
             {hover && <motion.span aria-hidden="true" className="nsu-nav-hover" initial={false} animate={{ x: hover.x, y: hover.y, width: hover.width, height: hover.height }} transition={{ duration: reduced ? 0 : .15, ease: [.16, 1, .3, 1] }} />}
             <nav aria-label="Main navigation">
-              {groups.map((group, index) => <Fragment key={group.title ?? 'main'}>
-                {index > 0 && <SidebarSeparator className="nsu-nav-divider" />}
-                <SidebarGroup className="nsu-nav-group">
-                  {group.title && <SidebarGroupLabel className="nsu-nav-group-label">{group.title}</SidebarGroupLabel>}
-                  <SidebarGroupContent><SidebarMenu>
-                    {group.items.map(item => <SidebarMenuItem key={item.label} className="nsu-nav-item">
-                      {item.active && <motion.span layoutId="active-line" className="nsu-nav-active-line" transition={reduced ? { duration: 0 } : { type: 'spring', duration: .35, bounce: 0 }} aria-hidden="true" />}
-                      <SidebarMenuButton isActive={item.active} className="nsu-nav-button" data-sound="select" aria-label={item.label} aria-current={item.active ? 'page' : undefined} tooltip={open ? undefined : item.label} data-coach={item.coach} onClick={item.go} render={<motion.button whileTap={reduced ? undefined : 'pressed'} />}>
-                        <motion.span variants={{ pressed: { scale: .9 } }} transition={{ type: 'spring', duration: .3, bounce: .25 }} className="nsu-nav-symbol"><NavigationIcon name={item.icon} active={item.active} /></motion.span>
+              {groups.map(group => <SidebarGroup key={group.title ?? 'places'} className="nsu-nav-group">
+                {group.title && <SidebarGroupLabel className="nsu-nav-group-label">{group.title}</SidebarGroupLabel>}
+                <SidebarGroupContent><SidebarMenu>
+                  {group.items.map(item => {
+                    const active = item.id === current;
+                    return <SidebarMenuItem key={item.id} className="nsu-nav-item">
+                      <SidebarMenuButton isActive={active} className="nsu-nav-button" data-sound="select" aria-label={item.label} aria-current={active ? 'page' : undefined} tooltip={open ? undefined : item.label} data-coach={item.coach} onClick={item.go} render={<motion.button whileTap={reduced ? undefined : 'pressed'} />}>
+                        <motion.span variants={{ pressed: { scale: .96 } }} transition={{ duration: .12, ease: [.23, 1, .32, 1] }} className="nsu-nav-symbol"><NavigationIcon name={item.icon} active={active} /></motion.span>
                         <span className="nsu-nav-label">{item.label}</span>
                       </SidebarMenuButton>
-                      {item.badge && <SidebarMenuBadge className="nsu-nav-badge">{item.badge}</SidebarMenuBadge>}
-                    </SidebarMenuItem>)}
-                  </SidebarMenu></SidebarGroupContent>
-                </SidebarGroup>
-              </Fragment>)}
+                    </SidebarMenuItem>;
+                  })}
+                </SidebarMenu></SidebarGroupContent>
+              </SidebarGroup>)}
             </nav>
           </SidebarContent>
         </LayoutGroup>
@@ -167,20 +163,30 @@ export default function NextStepUniSidebar(props: Props) {
             <DropdownMenuTrigger ref={accountTrigger} className="nsu-nav-account" aria-label="Open account menu" data-coach="help">
               <Avatar seed={props.settings.avatar || props.user.avatar} alt="" className="nsu-nav-avatar" />
               <span className="nsu-nav-account-copy"><span>{props.user.name}</span><small>{props.user.isAdmin ? 'Admin' : 'Student'}</small></span>
-              <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="nsu-nav-account-chevron"><path d="m6 8 4-4 4 4M6 12l4 4 4-4" /></svg>
+              <NavigationIcon name="updown" size={16} className="nsu-nav-account-chevron" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent side="top" align="start" sideOffset={8} className="nsu-nav-account-menu">
+            {/* The menu under the student's name opens beside it, so the list
+                above stays in view. It holds what the phone keeps in its
+                account sheet: Year Plans, Study Passport, Your setup, and
+                Insights and My Direction beside them (Alex's default, 26 Nov
+                2026), then Account (Settings), shortcuts, language, theme, help
+                and Log out. Notifications is the Updates row above. */}
+            <DropdownMenuContent side="right" align="end" sideOffset={22} className="nsu-nav-account-menu">
               <DropdownMenuGroup>
                 <DropdownMenuLabel className="nsu-nav-identity"><Avatar seed={props.settings.avatar || props.user.avatar} alt="" className="nsu-nav-menu-avatar" /><span><strong>{props.user.name}</strong><small>{email || 'Your NextStepUni account'}</small></span></DropdownMenuLabel>
               </DropdownMenuGroup>
               <DropdownMenuSeparator />
               <DropdownMenuGroup>
-                <DropdownMenuItem onClick={() => afterMenuCloses(props.onOpenSettings)}><NavigationIcon name="account" />Account</DropdownMenuItem>
-                <DropdownMenuItem data-notification-toggle onClick={() => afterMenuCloses(toggleNotificationPanel)}><NavigationIcon name="bell" />Notifications{props.unreadCount > 0 && <span className="nsu-nav-notification-count">{props.unreadCount > 99 ? '99+' : props.unreadCount}</span>}</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => afterMenuCloses(openShortcutsOverlay)}><NavigationIcon name="keyboard" />Keyboard shortcuts<span className="nsu-nav-shortcut"><Kbd>⌘</Kbd><Kbd>/</Kbd></span></DropdownMenuItem>
+                <DropdownMenuItem onClick={() => afterMenuCloses(nav.navigateToYearPlans)}><NavigationIcon name="yearplans" />Year Plans</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => afterMenuCloses(props.onOpenPassport)}><NavigationIcon name="passport" />Study Passport<span className="nsu-nav-menu-end nsu-nav-readout">{props.completedCount} / {props.totalCount}</span></DropdownMenuItem>
+                <DropdownMenuItem onClick={() => afterMenuCloses(nav.navigateToYourSetup)}><NavigationIcon name="setup" />Your setup</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => afterMenuCloses(nav.navigateToInsights)}><NavigationIcon name="insights" />Insights</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => afterMenuCloses(props.onOpenDirection)}><NavigationIcon name="direction" />My Direction</DropdownMenuItem>
               </DropdownMenuGroup>
               <DropdownMenuSeparator />
               <DropdownMenuGroup>
+                <DropdownMenuItem onClick={() => afterMenuCloses(props.onOpenSettings)}><NavigationIcon name="account" />Account</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => afterMenuCloses(openShortcutsOverlay)}><NavigationIcon name="keyboard" />Keyboard shortcuts<span className="nsu-nav-menu-end nsu-nav-readout">⌘ /</span></DropdownMenuItem>
                 <DropdownMenuSub>
                   <DropdownMenuSubTrigger><NavigationIcon name="language" />Language</DropdownMenuSubTrigger>
                   <DropdownMenuSubContent className="nsu-nav-submenu"><DropdownMenuRadioGroup value={props.settings.language} onValueChange={() => props.updateSetting('language', 'en')}><DropdownMenuRadioItem value="en" data-sound="select">English</DropdownMenuRadioItem></DropdownMenuRadioGroup></DropdownMenuSubContent>

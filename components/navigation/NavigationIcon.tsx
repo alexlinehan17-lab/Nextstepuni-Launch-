@@ -1,63 +1,50 @@
 import type { SVGProps } from 'react';
 import {
-  IconHome2, IconHome2Filled, IconBook2, IconBookFilled, IconRoute2,
-  IconStopwatch, IconCalendarWeek, IconCalendarWeekFilled, IconCalendarMonth,
-  IconCalendarMonthFilled, IconStack2, IconStack2Filled, IconChartBar,
-  IconMountain, IconMountainFilled, IconCompass, IconCompassFilled,
-  IconRubberStamp, IconBookmark, IconBookmarkFilled, IconCoins,
-  IconUser, IconBell, IconKeyboard, IconLanguage, IconMoon,
-  IconLifebuoy, IconMessageCircle, IconLogout,
-  IconMap2, IconFiles, IconFilesFilled, IconTarget, IconDirections, IconDirectionsFilled,
-  IconAdjustmentsHorizontal, IconAdjustmentsHorizontalFilled,
-} from '@tabler/icons-react';
+  House, BookOpen, Route, Timer, Calendar, CalendarRange, Layers, Map as MapIcon, FileText,
+  Target, Signpost, ChartNoAxesColumn, Mountain, Compass, Stamp, BookMarked, SlidersHorizontal,
+  Coins, User, Bell, Keyboard, Languages, Moon, CircleHelp, MessageSquare, LogOut, Lightbulb, Star,
+  PanelLeft, ChevronsUpDown,
+} from 'lucide-react';
 
-// Use the same professionally drawn, 24-unit family as the purchased Kobra
-// controls. Keep their original geometry and optical spacing at navigation size.
+// Sidebar B (agreed 25 Nov 2026) uses the app's one icon set: lucide outline
+// glyphs, 20px at 1.75px. The current place is not a filled icon: it is ink
+// on a shaded row (navigation.md; components.md, "Icons").
 const outlineIcons = {
-  home: IconHome2,
-  modules: IconBook2,
-  paths: IconRoute2,
-  timer: IconStopwatch,
-  planner: IconCalendarWeek,
-  yearplans: IconCalendarMonth,
-  marks: IconStack2,
-  atlas: IconMap2,
-  papers: IconFiles,
-  target: IconTarget,
-  directions: IconDirections,
-  progress: IconChartBar,
-  island: IconMountain,
-  compass: IconCompass,
-  passport: IconRubberStamp,
-  references: IconBookmark,
-  setup: IconAdjustmentsHorizontal,
-  points: IconCoins,
-  account: IconUser,
-  bell: IconBell,
-  keyboard: IconKeyboard,
-  language: IconLanguage,
-  theme: IconMoon,
-  help: IconLifebuoy,
-  feedback: IconMessageCircle,
-  logout: IconLogout,
+  home: House,
+  modules: BookOpen,
+  paths: Route,
+  timer: Timer,
+  planner: Calendar,
+  yearplans: CalendarRange,
+  marks: Layers,
+  atlas: MapIcon,
+  papers: FileText,
+  target: Target,
+  directions: Signpost,
+  progress: ChartNoAxesColumn,
+  island: Mountain,
+  compass: Compass,
+  passport: Stamp,
+  references: BookMarked,
+  setup: SlidersHorizontal,
+  points: Coins,
+  account: User,
+  bell: Bell,
+  keyboard: Keyboard,
+  language: Languages,
+  theme: Moon,
+  help: CircleHelp,
+  feedback: MessageSquare,
+  logout: LogOut,
+  insights: Lightbulb,
+  direction: Star,
+  panel: PanelLeft,
+  updown: ChevronsUpDown,
 } as const;
 
 export type NavigationIconName = keyof typeof outlineIcons;
-const filledIcons: Partial<typeof outlineIcons> = {
-  home: IconHome2Filled,
-  modules: IconBookFilled,
-  planner: IconCalendarWeekFilled,
-  yearplans: IconCalendarMonthFilled,
-  marks: IconStack2Filled,
-  papers: IconFilesFilled,
-  directions: IconDirectionsFilled,
-  island: IconMountainFilled,
-  compass: IconCompassFilled,
-  references: IconBookmarkFilled,
-  setup: IconAdjustmentsHorizontalFilled,
-};
 
-export function NavigationIcon({ name, active = false, ...props }: SVGProps<SVGSVGElement> & { name: NavigationIconName; active?: boolean }) {
-  const Icon = active ? filledIcons[name] ?? outlineIcons[name] : outlineIcons[name];
-  return <Icon size={20} stroke={1.8} aria-hidden="true" data-navigation-icon={name} data-active={active || undefined} {...props} />;
+export function NavigationIcon({ name, active = false, size = 20, ...props }: Omit<SVGProps<SVGSVGElement>, 'ref'> & { name: NavigationIconName; active?: boolean; size?: number }) {
+  const Icon = outlineIcons[name];
+  return <Icon width={size} height={size} strokeWidth={1.75} aria-hidden="true" focusable="false" data-navigation-icon={name} data-active={active || undefined} {...props} />;
 }
