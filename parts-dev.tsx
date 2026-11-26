@@ -233,6 +233,7 @@ function OverSection() {
           <Button onClick={() => setOpen('who')}>Sheet about someone</Button>
         </Line>
         <Line>
+          <Button onClick={() => setOpen('bare')}>Bare sheet (the quick tour)</Button>
           <Button onClick={() => setOpen('confirm')}>Confirm</Button>
           <Button onClick={() => showMessage('Saved to your plan', { action: { label: 'Undo', onPress: () => {} } })}>Toast</Button>
         </Line>
@@ -255,6 +256,12 @@ function OverSection() {
         <SelectionBar label="Sessions this week" size="md" value={goal} onChange={setGoal}
           options={[{ value: '6', label: '6' }, { value: '8', label: '8' }, { value: '10', label: '10' }, { value: '12', label: '12' }]} />
         <p className="t-meta">You have done 6 so far. Your goal was 8.</p>
+      </Sheet>
+      <Sheet open={open === 'bare'} bare title="Quick tour" onClose={close}
+        footer={<div className="ui-pair"><Button size="lg" onClick={close}>Skip</Button><Button kind="main" size="lg" block arrow="forward" onClick={close}>Next</Button></div>}>
+        <p className="t-label text-ink-muted">Quick tour · 1 of 3</p>
+        <h3 className="t-heading text-ink-primary">Your lessons live here</h3>
+        <p className="t-sub">A bare sheet carries its own words and its own way out: no handle, no header. On a laptop the same words sit in a popover (.ui-pop) beside what they point at.</p>
       </Sheet>
       <Confirm open={open === 'confirm'} sentence="Delete your account?"
         detail="Everything you have studied, planned and saved is erased and cannot be brought back."
@@ -308,11 +315,12 @@ function FieldsSection() {
         <Field label="School code" defaultValue="GLEN20" autoCapitalize="characters" error="That code is not one we know. Check it with your teacher and type it again." />
       </Spec>
       <Spec label="Search"><SearchField label="Search topics" placeholder="Search topics" /></Spec>
-      <Spec label="Rows" caption="At least 56 tall, kept apart by a hairline. A row that opens something ends in a chevron; one that shows something ends in its value; a row with a switch has no chevron.">
+      <Spec label="Rows" caption="At least 56 tall, kept apart by a hairline. A row that opens something ends in a chevron; one that shows something ends in its value; a row with a switch has no chevron. The art may be a drawn element (a subject's character), and a row may carry its own accessible name.">
         <List>
           <Row art={CREW.accounting} title="Accounting" meta={<>Practice · 45 min · <span className="text-accent-text">Up next</span></>} onPress={() => {}} />
           <Row title="Sessions this week" value="6 / 8" />
           <Row title="Offer me questions when I finish" trailing={<Switch checked={on} onChange={setOn} label="Offer me questions when I finish" />} />
+          <Row art={<img src={CREW.irish} alt="" />} title="Irish" meta="Practice · 45 min" label="Study Irish: Practice, 45 minutes" onPress={() => {}} />
         </List>
       </Spec>
       <Spec label="Rows with an icon" caption="The account sheet's rows: a bare 20px glyph in ink-2 at the left. A destructive row is red words with no arrow.">

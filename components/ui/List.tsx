@@ -38,8 +38,14 @@ export interface RowProps {
   over?: ReactNode;
   /** A second line in meta. */
   meta?: ReactNode;
-  /** A subject's character, bare, 40px at the left. */
-  art?: string;
+  /** A subject's character, bare, 40px at the left: its source, or a drawn
+   *  element that already picks its own artwork (SubjectAvatar). */
+  art?: string | ReactNode;
+  /** The row's accessible name, when its visible words do not say what
+   *  pressing it does ("Study Irish: Revision, 25 minutes"). */
+  label?: string;
+  /** A first-visit tour stop on this row (data-coach). */
+  coach?: string;
   /** A value or readout at the trailing edge (a row that shows something). */
   value?: ReactNode;
   /** A switch or other control at the trailing edge (no chevron). */
@@ -55,12 +61,13 @@ export interface RowProps {
   className?: string;
 }
 
-export function Row({ title, over, meta, art, icon, tone, value, trailing, onPress, href, className = '' }: RowProps) {
+export function Row({ title, over, meta, art, label, coach, icon, tone, value, trailing, onPress, href, className = '' }: RowProps) {
   const pressable = Boolean(onPress || href);
   const content = (
     <>
       {icon ? <span className="ui-row-icon" aria-hidden="true">{icon}</span> : null}
-      {art ? <ThemeArtwork className="ui-row-art" src={art} transparentBackground alt="" /> : null}
+      {typeof art === 'string' ? <ThemeArtwork className="ui-row-art" src={art} transparentBackground alt="" />
+        : art ? <span className="ui-row-art" aria-hidden="true">{art}</span> : null}
       <span className="ui-row-body">
         {over ? <span className="ui-row-over">{over}</span> : null}
         <span className="ui-row-title">{title}</span>
@@ -74,8 +81,8 @@ export function Row({ title, over, meta, art, icon, tone, value, trailing, onPre
   const classes = `ui-part ui-row${tone === 'danger' ? ' ui-row--danger' : ''} ${className}`.trim();
   return (
     <li className="ui-row-item">
-      {href ? <a className={classes} href={href}>{content}</a>
-        : onPress ? <button type="button" className={classes} onClick={onPress}>{content}</button>
+      {href ? <a className={classes} href={href} aria-label={label} data-coach={coach}>{content}</a>
+        : onPress ? <button type="button" className={classes} onClick={onPress} aria-label={label} data-coach={coach}>{content}</button>
           : <div className={classes}>{content}</div>}
     </li>
   );

@@ -252,7 +252,10 @@ html {
    marks <body>; a mounted dialog or sheet primitive locks by being there. The
    page then neither scrolls nor rubber-bands behind it, whoever else writes
    overflow (the Kobra dialog does). */
-body[data-scroll-lock] { overflow: hidden; }
+/* clip, not hidden: a clipped body is not a scroll container, so a sticky bar
+   inside it (Home's top bar) stays at the top while a sheet is open. Browsers
+   without clip keep hidden. */
+body[data-scroll-lock] { overflow: hidden; overflow: clip; }
 html:has(body[data-scroll-lock], body .frame-dialog, body .frame-sheet-backdrop) {
   overflow: hidden;
   overscroll-behavior: none;

@@ -163,13 +163,12 @@ const MobileKnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _
   const todayCompletions = [...(timetableCompletions?.[todayKey] || []),...(dated.saved?.plan.tasks.filter(t=>t.date===todayKey&&t.status==='completed').map(t=>t.id)??[])];
 
   return (
-    <div className="mobile-home-shell product-shell dashboard-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] overflow-x-hidden relative selection:bg-[rgba(var(--accent),0.2)]">
+    <div className="mobile-home-shell product-shell dashboard-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] overflow-x-clip relative selection:bg-[rgba(var(--accent),0.2)]">
 
 
       {/* The account drawer stays in its existing shell. */}
       <div className="flex-1 bg-[var(--surface-canvas)]">
-        <StudentHomeContent onOpenFeedback={onOpenFeedback} uid={uid} userName={userName} userAvatarSeed={userAvatarSeed} onOpenMobileProfile={onOpenMobileProfile} hasUnreadNotifications={hasUnreadNotifications} allCourses={allCourses} categoryTitles={categoryTitles} userProgress={userProgress} studySessions={studySessions} pointsBalance={pointsBalance} onSelectModule={onSelectModule} onGoToStudy={onGoToStudy} onGoToModules={onGoToModules} onGoToDashboard={onGoToDashboard} onGoToLearningPaths={onGoToLearningPaths} onGoToDirection={onGoToDirection} onGoToJourney={onGoToJourney} onGoToInnovationZone={onGoToInnovationZone} onOpenTool={onOpenTool} />
-        <div className="mx-auto max-w-4xl px-5 pb-24"><HomeNextStep ready={planReady} error={planError} onPlannedStudy={onPlannedStudy} blocks={todayBlocks} completions={todayCompletions} hasProfile={Boolean(studentProfile?.subjects.length)} gamification={gamificationState} onStudy={onGoToStudy} onPlan={onOpenTool ? () => onOpenTool('planner') : undefined} onProgress={onGoToDashboard} /></div>
+        <StudentHomeContent layout="phone" onOpenFeedback={onOpenFeedback} plan={<HomeNextStep part="today" ready={planReady} error={planError} onPlannedStudy={onPlannedStudy} blocks={todayBlocks} completions={todayCompletions} hasProfile={Boolean(studentProfile?.subjects.length)} onStudy={onGoToStudy} onPlan={onOpenTool ? () => onOpenTool('planner') : undefined} onProgress={onGoToDashboard} />} goal={<HomeNextStep part="goal" blocks={todayBlocks} completions={todayCompletions} hasProfile={Boolean(studentProfile?.subjects.length)} gamification={gamificationState} onProgress={onGoToDashboard} />} uid={uid} userName={userName} userAvatarSeed={userAvatarSeed} onOpenMobileProfile={onOpenMobileProfile} hasUnreadNotifications={hasUnreadNotifications} allCourses={allCourses} categoryTitles={categoryTitles} userProgress={userProgress} studySessions={studySessions} pointsBalance={pointsBalance} onSelectModule={onSelectModule} onGoToStudy={onGoToStudy} onGoToModules={onGoToModules} onGoToDashboard={onGoToDashboard} onGoToLearningPaths={onGoToLearningPaths} onGoToDirection={onGoToDirection} onGoToJourney={onGoToJourney} onGoToInnovationZone={onGoToInnovationZone} onOpenTool={onOpenTool} />
       </div>
 
       {/* One-time first-visit coach marks — end by pointing at the "?". */}

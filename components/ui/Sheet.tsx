@@ -85,15 +85,23 @@ export interface SheetProps {
    *  Close, and the title at the left with this small line under it. */
   art?: ReactNode;
   meta?: ReactNode;
+  /** A sheet that carries its own words and its own way out (the first-visit
+   *  quick tour: Skip and Next): no handle, no header, no swipe. `title` is
+   *  then its accessible name only. Escape still calls onClose. */
+  bare?: boolean;
+  /** false: the caller dims the page itself (the quick tour leaves a hole
+   *  round what it points at), so the sheet paints no scrim of its own. */
+  dim?: boolean;
   className?: string;
 }
 
-export function Sheet({ open, onClose, title, titleSize = 'heading', save, footer, children, closeLabel = 'Close', art, meta, className = '' }: SheetProps) {
+export function Sheet({ open, onClose, title, titleSize = 'heading', save, footer, children, closeLabel = 'Close', art, meta, bare = false, dim = true, className = '' }: SheetProps) {
   const lead = art !== undefined || meta !== undefined;
   const phase = usePresence(open, SHEET_LEAVE_MS);
   const panel = useRef<HTMLDivElement>(null);
   const titleId = useId();
-  useModal(open && phase !== 'closed', onClose, panel);
+  // A bare sheet starts with its words, not its first button (the tour's Skip).
+  useModal(open && phase !== 'closed', onClose, panel, { initialFocus: bare ? 'dialog' : 'first' });
   const [drag, setDrag] = useState<{ y0: number; t0: number; dy: number } | null>(null);
   if (phase === 'closed') return null;
 
@@ -122,9 +130,10 @@ export function Sheet({ open, onClose, title, titleSize = 'heading', save, foote
         data-dragging={drag ? '' : undefined}
         style={drag ? ({ '--sheet-drag': `${drag.dy}px` } as CSSProperties) : undefined}
       >
-        <div className="ui-scrim" aria-hidden="true" onClick={onClose} />
-        <div ref={panel} role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1} className={`ui-sheet frame-sheet ${className}`.trim()}>
-          <div className="ui-sheet-drag" {...dragHandlers}>
+        {dim ? <div className="ui-scrim" aria-hidden="true" onClick={onClose} /> : null}
+        <div ref={panel} role="dialog" aria-modal="true" aria-labelledby={bare ? undefined : titleId} aria-label={bare && typeof title === 'string' ? title : undefined}
+          tabIndex={-1} className={`ui-sheet frame-sheet${bare ? ' ui-sheet--bare' : ''} ${className}`.trim()}>
+          {bare ? null : <div className="ui-sheet-drag" {...dragHandlers}>
             <span className="ui-sheet-grab" aria-hidden="true" />
             {lead ? (
               <div className="ui-sheet-head ui-sheet-head--lead frame-dialog-head">
@@ -150,7 +159,7 @@ export function Sheet({ open, onClose, title, titleSize = 'heading', save, foote
                 : <span aria-hidden="true" />}
             </div>
             )}
-          </div>
+          </div>}
           <div className="ui-sheet-body">{children}</div>
           {footer ? <div className="ui-sheet-foot">{footer}</div> : null}
         </div>

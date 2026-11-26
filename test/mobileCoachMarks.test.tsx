@@ -24,27 +24,30 @@ const renderTour = (onFinish = vi.fn()) => render(<>
   <FirstVisitCoachMarks uid="mobile-coach-test" onFinish={onFinish} onOpenGuide={vi.fn()} />
 </>);
 
-test('mobile tour finds visible help and keeps the caption bounded with touch-sized controls', () => {
+test('mobile tour finds visible help; its words come up in a sheet from the bottom with Skip and a charcoal Next the same size', () => {
   const onFinish = vi.fn();
   renderTour(onFinish);
-  fireEvent.click(screen.getByRole('button', { name: 'Next →' }));
-  fireEvent.click(screen.getByRole('button', { name: 'Next →' }));
-  const heading = screen.getByRole('heading', { name: 'Help is always here' });
-  expect(heading.parentElement).toHaveClass('overflow-y-auto');
-  expect(heading.parentElement?.style.maxHeight).toMatch(/^calc\(100dvh/);
-  expect(screen.getByRole('button', { name: 'Skip' })).toHaveClass('min-h-11', 'min-w-11');
-  expect(screen.getByRole('button', { name: 'Take the full tour' })).toHaveClass('min-h-11');
+  // The agreed look (r5-home, 26 Nov 2026): a bare sheet from the bottom, built on the frame's sheet primitive.
+  const sheet = screen.getByRole('dialog', { name: 'Quick tour' });
+  expect(sheet).toHaveClass('ui-sheet', 'ui-sheet--bare', 'frame-sheet');
+  expect(screen.getByRole('button', { name: 'Skip' })).toHaveClass('ui-btn--lg');
+  expect(screen.getByRole('button', { name: 'Next' })).toHaveClass('ui-btn--lg', 'ui-btn--main');
+  fireEvent.click(screen.getByRole('button', { name: 'Next' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Next' }));
+  expect(screen.getByRole('heading', { name: 'Help is always here' })).toBeInTheDocument();
+  expect(screen.getByRole('button', { name: 'Take the full tour' })).toHaveClass('ui-btn--lg');
   fireEvent.click(screen.getByRole('button', { name: 'Done' }));
   expect(onFinish).toHaveBeenCalledOnce();
 });
 
-test('desktop points to help in the shared account menu and retains its caption styling', () => {
+test('desktop points to help in the shared account menu, in a card beside it', () => {
   device.mobile = false;
   renderTour();
-  fireEvent.click(screen.getByRole('button', { name: 'Next →' }));
-  fireEvent.click(screen.getByRole('button', { name: 'Next →' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Next' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Next' }));
   const heading = screen.getByRole('heading', { name: 'Help is always here' });
   expect(screen.getByText(/Open your account menu, then Help/)).toBeInTheDocument();
-  expect(heading.parentElement).not.toHaveClass('overflow-y-auto');
-  expect(screen.getByRole('button', { name: 'Skip' })).not.toHaveClass('min-h-11');
+  expect(heading.closest('.ui-pop')).not.toBeNull();
+  expect(heading.closest('.ui-sheet')).toBeNull();
+  expect(screen.getByRole('button', { name: 'Skip' })).not.toHaveClass('ui-btn--lg');
 });

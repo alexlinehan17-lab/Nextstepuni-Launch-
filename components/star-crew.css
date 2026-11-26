@@ -7,3 +7,5 @@
 .dark .star-crew-avatar { background: var(--surface-paper); border-color: var(--outline-soft); }
 .dark .star-crew-initials { color: var(--ink-primary); }
 .dark :is(.account-entry, .setup-flow, .landing-page) .star-crew-avatar:not(.crew-illustration) { background: #fff; border-color: #d4d8cc; }
+/* A bare character (a row's subject, onboarding's subjects): no circle, no patch, either theme. */
+.star-crew-avatar.subject-avatar--bare, .dark .star-crew-avatar.subject-avatar--bare, .dark :is(.account-entry, .setup-flow, .landing-page) .star-crew-avatar.subject-avatar--bare { border: 0; border-radius: 0; background: transparent; }

@@ -1,0 +1,18 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * The first-visit quick tour (r5-home, agreed 26 Nov 2026): the page dimmed,
+ * the part a step is about lit and ringed in ink (no orange ring), the words in
+ * the one typeface.
+ */
+.coach-dim { position: absolute; inset: 0; background: var(--scrim); }
+.coach-spot { position: absolute; border-radius: var(--r-ctl); box-shadow: 0 0 0 200vmax var(--scrim); pointer-events: none; }
+.coach-spot::after { content: ''; position: absolute; inset: -3px; border: 2px solid var(--outline-strong); border-radius: calc(var(--r-ctl) + 3px); }
+.coach-spot--phone { border-radius: var(--r-card); }
+.coach-spot--phone::after { border-radius: calc(var(--r-card) + 3px); }
+.coach-words { display: flex; flex-direction: column; gap: var(--space-2); color: var(--ink-primary); }
+.coach-words :is(h3, p) { margin: 0; }
+.coach-count { color: var(--ink-muted); }
+.coach-card { position: absolute; }
+.coach-actions { display: flex; flex-direction: column; gap: var(--space-2); }
