@@ -72,14 +72,14 @@ const GCAssignPanel: React.FC<{ school: string; gcName?: string }> = ({ school, 
       <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-1">Set revision</h2>
       <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Assign a task to every student in your school. They’ll see it and tick it off.</p>
 
-      <div className="rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-4 mb-5">
+      <div className="rounded-xl border border-zinc-200 dark:border-hairline bg-white dark:bg-surface-paper p-4 mb-5">
         <input value={title} onChange={e => setTitle(e.target.value)} placeholder="e.g. Drill Calculus questions from 2019–2023"
-          className="w-full mb-3 px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm outline-none focus:border-zinc-400" />
+          className="w-full mb-3 px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-surface-paper text-sm outline-none focus:border-zinc-400" />
         <div className="flex flex-wrap items-center gap-2">
-          <select value={kind} onChange={e => setKind(e.target.value as AssignmentKind)} className="px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm">
+          <select value={kind} onChange={e => setKind(e.target.value as AssignmentKind)} className="px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-surface-paper text-sm">
             {KINDS.map(x => <option key={x.k} value={x.k}>{x.label}</option>)}
           </select>
-          <input type="date" value={dueIso} onChange={e => setDueIso(e.target.value)} className="px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm" />
+          <input type="date" value={dueIso} onChange={e => setDueIso(e.target.value)} className="px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-surface-paper text-sm" />
           <button onClick={add} disabled={!title.trim()} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium disabled:opacity-40">
             <Plus size={15} /> Assign
           </button>
@@ -89,7 +89,7 @@ const GCAssignPanel: React.FC<{ school: string; gcName?: string }> = ({ school, 
       {items.length > 0 && (
         <div className="space-y-1.5">
           {items.map(a => (
-            <div key={a.id} className="flex items-center gap-3 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 px-3.5 py-2.5">
+            <div key={a.id} className="flex items-center gap-3 rounded-lg border border-zinc-200 dark:border-hairline bg-white dark:bg-surface-paper px-3.5 py-2.5">
               <span className="flex-1 min-w-0">
                 <span className="block text-sm font-medium text-zinc-800 dark:text-zinc-100 truncate">{a.title}</span>
                 <span className="block text-[11.5px] text-zinc-400">{KINDS.find(k => k.k === a.kind)?.label}{a.dueIso ? ` · due ${a.dueIso}` : ''}</span>

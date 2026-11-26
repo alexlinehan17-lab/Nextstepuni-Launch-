@@ -40,7 +40,7 @@ const JourneyProgressPill: React.FC<JourneyProgressPillProps> = ({ tileCount, de
               <span className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#756F69] dark:text-[#D6CEC4]">{stageName}</span>
               <span className="font-mono text-[9px] text-[#A0978D]">{Math.round(stageProgress * 100)}%</span>
             </div>
-            <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-[#E5DED5] dark:bg-[#403D39]"><div className="h-full rounded-full bg-[#F26B1F]" style={{ width: `${stageProgress * 100}%` }} /></div>
+            <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-[#E5DED5] dark:bg-[#403D39]"><div className="h-full rounded-full bg-accent" style={{ width: `${stageProgress * 100}%` }} /></div>
           </div>
           <div className="h-7 w-px bg-[#D8D1C8] dark:bg-[#57524C]" />
           <span className="shrink-0 text-sm font-bold text-[var(--accent-hex)]">{pointsBalance} JP</span>

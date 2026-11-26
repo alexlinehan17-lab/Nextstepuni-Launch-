@@ -1,5 +1,6 @@
 import { BrandedLocationScore } from './learning/WideFeatures';
 import { moduleFill,moduleText } from './learning/brandTokens';
+import { accentRgba } from '../design/tokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -253,7 +254,7 @@ const ContextCueExplorer = () => {
                 <p className="font-serif font-semibold mb-2" style={{ fontSize: 14, color: "var(--module-ink)" }}>Your Study Room — {selectedCount} cues</p>
                 <div className="flex flex-wrap gap-1.5">
                   {STUDY_CUES.filter((c) => selectedCues.has(c.id)).map((c) => (
-                    <span key={c.id} className="inline-flex items-center gap-1.5" style={{ backgroundColor: "var(--module-surface)", border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 10px', fontSize: 12, fontWeight: 500, color: "var(--module-danger-text)" }}>
+                    <span key={c.id} className="inline-flex items-center gap-1.5" style={{ backgroundColor: "var(--module-surface)", border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '4px 10px', fontSize: 12, fontWeight: 500, color: "var(--module-danger-text)" }}>
                       <span style={{ color: "var(--module-danger-text)" }}>{CUE_ICONS[c.id]}</span> {c.label}
                     </span>
                   ))}
@@ -264,7 +265,7 @@ const ContextCueExplorer = () => {
                 <p className="font-serif font-semibold mb-2" style={{ fontSize: 14, color: "var(--module-ink)" }}>The Exam Hall — {survivingCount} cue{survivingCount !== 1 ? 's' : ''} remain</p>
                 <div className="flex flex-wrap gap-1.5">
                   {STUDY_CUES.filter((c) => selectedCues.has(c.id) && c.survivesExam).map((c) => (
-                    <span key={c.id} className="inline-flex items-center gap-1.5" style={{ backgroundColor: "var(--module-surface)", border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 10px', fontSize: 12, fontWeight: 500, color: "var(--module-danger-text)" }}>
+                    <span key={c.id} className="inline-flex items-center gap-1.5" style={{ backgroundColor: "var(--module-surface)", border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '4px 10px', fontSize: 12, fontWeight: 500, color: "var(--module-danger-text)" }}>
                       <span style={{ color: "var(--module-danger-text)" }}>{CUE_ICONS[c.id]}</span> {c.label}
                     </span>
                   ))}
@@ -361,7 +362,7 @@ const NoiseLevelCurve = () => {
   return (
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
       <div className="text-center mb-6">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Research Evidence</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Research Evidence</span>
         <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>The Noise-Performance Curve</h4>
         <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>How noise level affects how well your brain performs.</p>
       </div>
@@ -385,19 +386,19 @@ const NoiseLevelCurve = () => {
               <line x1={padL} y1={padT} x2={padL} y2={toY(0)} stroke="var(--module-muted)" strokeWidth="1.5" />
 
               {/* Sweet spot zone */}
-              <rect x={toX(0.22)} y={padT} width={toX(0.62) - toX(0.22)} height={chartH} fill="rgba(242,107,31,0.06)" rx="4" />
-              <rect x={toX(0.22)} y={padT} width={toX(0.62) - toX(0.22)} height={chartH} fill="none" stroke="rgba(242,107,31,0.15)" strokeWidth="1" strokeDasharray="4 3" rx="4" />
+              <rect x={toX(0.22)} y={padT} width={toX(0.62) - toX(0.22)} height={chartH} fill={accentRgba(0.06)} rx="4" />
+              <rect x={toX(0.22)} y={padT} width={toX(0.62) - toX(0.22)} height={chartH} fill="none" stroke={accentRgba(0.15)} strokeWidth="1" strokeDasharray="4 3" rx="4" />
 
               {/* Zone labels */}
               <text x={toX(0.08)} y={toY(0.05)} fontSize="10" fill="var(--module-muted)" textAnchor="middle" fontWeight="600">Too quiet</text>
               <text x={toX(0.88)} y={toY(0.05)} fontSize="10" fill="var(--module-muted)" textAnchor="middle" fontWeight="600">Too loud</text>
 
               {/* Sweet spot label — positioned above chart to avoid overlap */}
-              <rect x={toX(0.42) - 32} y={padT - 20} width="64" height="16" rx="8" fill="white" stroke="rgba(242,107,31,0.2)" strokeWidth="1" />
+              <rect x={toX(0.42) - 32} y={padT - 20} width="64" height="16" rx="8" fill="white" stroke={accentRgba(0.2)} strokeWidth="1" />
               <text x={toX(0.42)} y={padT - 9} fontSize="9" fill="var(--module-danger)" textAnchor="middle" fontWeight="700">Sweet spot</text>
 
               {/* Area fill */}
-              <motion.path d={buildArea(curvePoints)} fill="rgba(242,107,31,0.08)" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} />
+              <motion.path d={buildArea(curvePoints)} fill={accentRgba(0.08)} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} />
 
               {/* Curve line */}
               <motion.path d={buildCurve(curvePoints)} fill="none" stroke="var(--module-danger-text)" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.5, ease: 'easeOut' }} />
@@ -406,7 +407,7 @@ const NoiseLevelCurve = () => {
               <motion.circle cx={toX(focusedPeakX)} cy={toY(focusedPeakY)} r="6" fill="var(--module-danger)" stroke="white" strokeWidth="2.5" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.0 }} />
               <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}>
                 <line x1={toX(focusedPeakX)} y1={toY(focusedPeakY) - 8} x2={toX(focusedPeakX) - 30} y2={toY(focusedPeakY) - 35} stroke="var(--module-muted)" strokeWidth="1" />
-                <rect x={toX(focusedPeakX) - 72} y={toY(focusedPeakY) - 47} width="84" height="18" rx="9" fill="white" stroke="rgba(242,107,31,0.2)" strokeWidth="1" />
+                <rect x={toX(focusedPeakX) - 72} y={toY(focusedPeakY) - 47} width="84" height="18" rx="9" fill="white" stroke={accentRgba(0.2)} strokeWidth="1" />
                 <text x={toX(focusedPeakX) - 30} y={toY(focusedPeakY) - 34} fontSize="9" fill="var(--module-danger)" textAnchor="middle" fontWeight="600">Focused tasks</text>
               </motion.g>
 
@@ -414,7 +415,7 @@ const NoiseLevelCurve = () => {
               <motion.circle cx={toX(creativePeakX)} cy={toY(creativePeakY)} r="6" fill="var(--module-danger)" stroke="white" strokeWidth="2.5" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.3 }} />
               <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }}>
                 <line x1={toX(creativePeakX)} y1={toY(creativePeakY) - 8} x2={toX(creativePeakX) + 30} y2={toY(creativePeakY) - 35} stroke="var(--module-muted)" strokeWidth="1" />
-                <rect x={toX(creativePeakX) - 12} y={toY(creativePeakY) - 47} width="84" height="18" rx="9" fill="white" stroke="rgba(242,107,31,0.2)" strokeWidth="1" />
+                <rect x={toX(creativePeakX) - 12} y={toY(creativePeakY) - 47} width="84" height="18" rx="9" fill="white" stroke={accentRgba(0.2)} strokeWidth="1" />
                 <text x={toX(creativePeakX) + 30} y={toY(creativePeakY) - 34} fontSize="9" fill="var(--module-danger)" textAnchor="middle" fontWeight="600">Creative tasks</text>
               </motion.g>
 

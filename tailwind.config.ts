@@ -35,25 +35,46 @@ const config: Config = {
           950: '#131313',
         },
         // ─── Primary brand accent (orange) ──────────────────────────────
-        // One orange across the app: the Kobra theme's --nsu-orange
-        // (components/approved-ui-theme.css), also published as --nsu-orange
-        // on :root in index.css. Source of truth for inline-style consumers
-        // (SVG fills, dynamic hex strings) is design/tokens.ts. `accent` is
-        // the brand colour for CTAs and selected states; it does NOT carry
-        // "good/correct/complete" semantics — use `success` for those.
-        accent: '#eb692a',
-        accentDark: '#B54D14',
+        // One orange across the app: --nsu-orange on :root in index.css
+        // (the token home), read here through its rgb triplet so opacity
+        // modifiers (bg-accent/20) still work. TypeScript reads COLORS.accent
+        // in design/tokens.ts. It does NOT carry "good/correct/complete"
+        // semantics — use `success` for those.
+        accent: 'rgba(var(--nsu-orange-rgb), <alpha-value>)',
+        accentDark: 'rgba(var(--accent-dark), <alpha-value>)',
         accentTint: '#FDEEDF',
         accentDarkText: '#8C3A0E',
         // ─── Success / positive semantic (green) ────────────────────────
-        success: '#3A8D5F',
+        success: 'rgba(var(--success), <alpha-value>)',
         successTint: '#E8F2EC',
         successDarkText: '#1F5F3E',
+        // ─── The one set of values (index.css :root / .dark) ────────────
+        // The page, a box, a well, a floating layer; three inks; three
+        // lines; the main action. Each changes with the theme by itself, so
+        // a token class needs no dark: partner.
+        'surface-canvas': 'var(--surface-canvas)',
+        'surface-paper': 'var(--surface-paper)',
+        'surface-soft': 'var(--surface-soft)',
+        'surface-raised': 'var(--surface-raised)',
+        'ink-primary': 'var(--ink-primary)',
+        'ink-secondary': 'var(--ink-secondary)',
+        'ink-muted': 'var(--ink-muted)',
+        hairline: 'var(--hairline)',
+        'outline-soft': 'var(--outline-soft)',
+        'outline-strong': 'var(--outline-strong)',
+        'action-fill': 'var(--action)',
+        'action-ink': 'var(--action-ink)',
+        'accent-text': 'var(--accent-text)',
         brand: {
           cream: '#FFFFFF', // Legacy alias; app surfaces are white.
           sage: '#6B8F71',
           amber: '#C4873B',
         },
+      },
+      boxShadow: {
+        'lift-ctl': 'var(--lift-ctl)',
+        lift: 'var(--lift)',
+        float: 'var(--float)',
       },
       fontFamily: {
         serif: ['"Source Serif 4"', 'serif'],

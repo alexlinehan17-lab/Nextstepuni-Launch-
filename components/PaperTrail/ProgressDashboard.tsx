@@ -18,9 +18,10 @@ import { downloadReport } from './progressReport';
 import GuardianConsent from './GuardianConsent';
 import { siblingsFor, topicLabel, type TopicSibling } from './topics';
 import { type GapKind } from './attemptStore';
+import { COLORS } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const SUCCESS = '#3A8D5F';
 
 const GAP_LABEL: Record<GapKind, string> = {
@@ -62,7 +63,7 @@ interface Props {
 }
 
 const Stat: React.FC<{ icon: React.ReactNode; value: string; label: string }> = ({ icon, value, label }) => (
-  <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-3">
+  <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3 py-3">
     <span className="flex items-center gap-1.5 mb-1" style={{ color: '#9e9186' }}>{icon}</span>
     <span className="block text-[22px] font-bold leading-none tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{value}</span>
     <span className="block text-[11px] mt-1" style={{ color: '#7a7068' }}>{label}</span>
@@ -106,7 +107,7 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
         <button
           onClick={() => downloadReport({ stats: p, subjectName: subjectLabel, topicName: topicLabel, dateIso: new Date(now).toISOString().slice(0, 10) })}
           className="inline-flex items-center gap-1.5 mb-5 rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
-          style={{ borderColor: 'rgba(242,107,31,0.35)', color: ACCENT }}
+          style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.35)', color: ACCENT }}
         >
           <Download size={14} /> Export report
         </button>
@@ -115,7 +116,7 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
       {nothingYet ? (
         /* Honest empty state — say what will appear here, then one primary CTA
            into the obvious first action (open a paper beside its scheme). */
-        <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-5 py-6 text-center">
+        <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-5 py-6 text-center">
           <span
             className="inline-flex w-11 h-11 rounded-xl items-center justify-center mb-3"
             style={{ backgroundColor: '#FDEEDF' }}
@@ -133,7 +134,7 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
           <button
             onClick={onStart ?? onBack}
             className="inline-flex items-center gap-1.5 rounded-full px-7 text-[14px] font-semibold text-white transition-transform active:translate-y-0.5"
-            style={{ backgroundColor: ACCENT, boxShadow: '0 4px 0 #B54D14', borderBottom: '3px solid #B54D14', paddingTop: 12, paddingBottom: 12 }}
+            style={{ backgroundColor: ACCENT, boxShadow: '0 4px 0 var(--accent-dark-hex)', borderBottom: '3px solid var(--accent-dark-hex)', paddingTop: 12, paddingBottom: 12 }}
           >
             Open a paper <ArrowRight size={15} aria-hidden />
           </button>
@@ -165,7 +166,7 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
               <button
                 onClick={() => onRoute('chair')}
                 className="w-full text-left text-[12.5px] -mt-2 mb-6 rounded-xl px-3.5 py-2.5 border-2 transition-transform active:translate-y-0.5"
-                style={{ borderColor: 'rgba(242,107,31,0.35)', color: '#8C3A0E', backgroundColor: '#FDEEDF' }}
+                style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.35)', color: COLORS.accentDarkText, backgroundColor: '#FDEEDF' }}
               >
                 A self-mark is only as good as the eye behind it. Train yours against real SEC marking keys in
                 <b> The Examiner’s Chair</b> — three sessions earn your marker’s licence. <ArrowRight size={13} className="inline -mt-0.5" />
@@ -202,7 +203,7 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
                   <button
                     key={`${t.subjectId}-${t.subtopicId}`}
                     onClick={() => drill(t.subjectId, t.subtopicId)}
-                    className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2 text-left transition-transform active:translate-y-0.5 hover:border-[#F26B1F]"
+                    className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3 py-2 text-left transition-transform active:translate-y-0.5 hover:border-accent"
                   >
                     <span className="shrink-0 w-11 text-[14px] font-bold tabular-nums" style={{ color: t.avg < 50 ? ACCENT : INK, fontFamily: "'Source Serif 4', serif" }}>{t.avg}%</span>
                     <span className="flex-1 min-w-0">
@@ -232,7 +233,7 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
                     const share = Math.round((loss / lossTotal) * 100);
                     const r = GAP_ROUTE[g];
                     return (
-                      <div key={g} className="rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2.5">
+                      <div key={g} className="rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3 py-2.5">
                         <div className="flex items-center gap-3">
                           <span className="w-28 shrink-0 text-[12.5px] font-semibold truncate" style={{ color: INK }}>{GAP_LABEL[g]}</span>
                           <span className="flex-1 h-2.5 rounded-full overflow-hidden" style={{ backgroundColor: '#e0dbd4' }}>
@@ -257,7 +258,7 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
               </div>
               {topGap && (
                 <p className="mt-3 text-[11.5px]" style={{ color: '#5a5550' }}>
-                  Biggest leak: <b style={{ color: '#8C3A0E' }}>{GAP_LABEL[topGap[0]]}</b>. {GAP_NUDGE[topGap[0]]}
+                  Biggest leak: <b style={{ color: COLORS.accentDarkText }}>{GAP_LABEL[topGap[0]]}</b>. {GAP_NUDGE[topGap[0]]}
                 </p>
               )}
             </section>

@@ -13,13 +13,13 @@
 .desk-flow .grade-overview .desk-introduction{font-size:14px;line-height:1.6;margin-bottom:22px}
 .grade-points-bars{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:292px;margin-top:28px}
 .grade-points-bars>div{display:flex;flex-direction:column;align-items:center;gap:9px}
-.grade-points-rail{height:225px;width:100%;max-width:100px;position:relative;background:#f1f0ed;border-radius:5px;overflow:hidden}
+.grade-points-rail{height:225px;width:100%;max-width:100px;position:relative;background:#f5f5f5;border-radius:5px;overflow:hidden}
 .grade-points-rail>div{position:absolute;bottom:0;left:0;width:100%;background:#1a1a1a;transition:height .32s cubic-bezier(.22,1,.36,1);border-radius:5px}
-.grade-points-rail>[data-target=true]{background:#f26b1f}
+.grade-points-rail>[data-target=true]{background:var(--nsu-orange)}
 .grade-points-bars strong{font-size:34px;line-height:1.1;letter-spacing:-.04em;font-weight:750;font-variant-numeric:tabular-nums}
 .grade-points-bars>div>span{font-size:11px;color:#68625c}
 .grade-points-caption{font-size:11px;line-height:1.6;color:#847c74;margin:18px 0 8px;max-width:29ch}
-.grade-points-gain{display:flex;gap:8px;align-items:center;font-size:12px;color:#ad4513;margin:0}
+.grade-points-gain{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--accent-text);margin:0}
 .grade-completion{margin:25px 0 10px;max-width:280px}
 .grade-completion>span{font-size:11px;color:#6d6761}
 .grade-completion>div{margin-top:10px;height:2px;background:#e7e4e0}
@@ -40,7 +40,7 @@
 .grade-workspace select:disabled{opacity:.4;cursor:default}
 .grade-workspace .grade-level select,.grade-workspace .grade-level>span{font-size:12px}
 .grade-workspace-sheet .grade-pair{display:contents}
-.grade-workspace .grade-value-target select{border-bottom:2px solid #f26b1f}
+.grade-workspace .grade-value-target select{border-bottom:2px solid var(--nsu-orange)}
 .grade-workspace .grade-value-current select{border-bottom:2px solid #1a1a1a}
 .grade-workspace-footer{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:14px}
 .grade-workspace-footer button{font-size:12px;color:#1a1a1a;background:none;border:0;text-decoration:underline;text-underline-offset:4px;min-height:40px;padding:5px 0}
@@ -57,14 +57,14 @@
 .grade-button-choices>.grade-later{font-size:10px;color:#857c72}
 .grade-button-choices>button:hover{border-color:#1a1a1a}
 .grade-button-current button[aria-pressed=true]{background:#1a1a1a;border-color:#1a1a1a;color:#fff}
-.grade-button-target button[aria-pressed=true]{background:#f26b1f;border-color:#f26b1f;color:#1a1a1a}
+.grade-button-target button[aria-pressed=true]{background:var(--nsu-orange);border-color:var(--nsu-orange);color:#1a1a1a}
 .grade-workspace-sliders .grade-pair{display:grid;grid-template-columns:1fr 1fr;gap:38px}
 .grade-slider label{display:block}
 .grade-slider label>span{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:#827a71;min-height:26px;margin-bottom:6px}
 .grade-slider strong{font-size:20px;font-weight:650;color:#1a1a1a}
-.grade-slider-target strong{color:#ad4513}
+.grade-slider-target strong{color:var(--accent-text)}
 .grade-slider input{display:block;width:100%;height:28px;appearance:none;-webkit-appearance:none;background:transparent;margin:0;cursor:ew-resize;--slider-color:#1a1a1a}
-.grade-slider-target input{--slider-color:#f26b1f}
+.grade-slider-target input{--slider-color:var(--nsu-orange)}
 .grade-slider input::-webkit-slider-runnable-track{height:5px;background:linear-gradient(to right,var(--slider-color) var(--grade-position),#e9e6e1 var(--grade-position));border-radius:6px}
 .grade-slider input::-moz-range-track{height:5px;background:linear-gradient(to right,var(--slider-color) var(--grade-position),#e9e6e1 var(--grade-position));border-radius:6px}
 .grade-slider input::-webkit-slider-thumb{appearance:none;width:18px;height:18px;background:#fff;border:2px solid var(--slider-color);border-radius:50%;margin-top:-6.5px}

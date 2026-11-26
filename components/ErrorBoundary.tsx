@@ -36,7 +36,7 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }, Error
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen bg-white dark:bg-zinc-950 flex items-center justify-center p-6">
+        <div className="min-h-screen bg-white dark:bg-surface-canvas flex items-center justify-center p-6">
           <div className="max-w-sm w-full text-center space-y-6">
             <div className="w-16 h-16 rounded-2xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center mx-auto">
               <AlertTriangle className="w-8 h-8 text-red-500 dark:text-red-400" />
@@ -54,7 +54,7 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }, Error
             <div className="space-y-3">
               <button
                 onClick={this.handleReload}
-                className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[var(--accent-hex,#F26B1F)] text-white text-sm font-bold shadow-lg hover:shadow-xl active:scale-[0.98] transition-all"
+                className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-accent text-white text-sm font-bold shadow-lg hover:shadow-xl active:scale-[0.98] transition-all"
               >
                 <RefreshCw size={16} />
                 Reload

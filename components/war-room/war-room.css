@@ -1,4 +1,4 @@
-.war-room-workspace{--wr-paper:var(--surface-paper);--wr-ink:var(--ink-primary);--wr-muted:var(--ink-secondary);--wr-rule:var(--outline-soft);--wr-edge:var(--outline-strong);--wr-soft:var(--surface-soft);--wr-orange:#f26b1f;container-type:inline-size;container-name:warroom;color:var(--wr-ink);padding-bottom:48px;line-height:1.5}
+.war-room-workspace{--wr-paper:var(--surface-paper);--wr-ink:var(--ink-primary);--wr-muted:var(--ink-secondary);--wr-rule:var(--outline-soft);--wr-edge:var(--outline-strong);--wr-soft:var(--surface-soft);--wr-orange:var(--nsu-orange);container-type:inline-size;container-name:warroom;color:var(--wr-ink);padding-bottom:48px;line-height:1.5}
 /* The component scope owns controls, while the Launchpad owns the canvas. */
 .nsu-kobra.war-room-workspace,.dark .nsu-kobra.war-room-workspace{
   background:transparent;
@@ -41,7 +41,7 @@
 .wr-session-art{width:180px!important;height:180px!important;flex:none;border:0!important;background:transparent!important;border-radius:0!important;margin-right:15px;overflow:visible!important}
 .war-room-workspace .wr-orange{margin-top:24px;background:var(--wr-orange);color:#191919;border:0;border-radius:9px;min-height:46px;padding:12px 22px;font-size:14px;box-shadow:none}
 .war-room-workspace .wr-orange:before{background:var(--wr-orange);border:0;border-radius:9px}
-.war-room-workspace .wr-orange:hover:before{background:#e85c12}
+.war-room-workspace .wr-orange:hover:before{background:var(--nsu-orange)}
 .war-room-workspace .wr-reason-toggle{display:block;padding:0;font-size:12px;margin-top:16px;color:var(--wr-muted);min-height:32px}
 .wr-session-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:24px}
 .war-room-workspace .wr-session-actions .wr-orange,.war-room-workspace .wr-session-actions .wr-reason-toggle{margin-top:0;max-width:100%}

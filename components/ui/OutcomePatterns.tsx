@@ -51,7 +51,7 @@ export const OutcomeShell: React.FC<{
             <button
               type="button"
               onClick={primaryAction.onClick}
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border-[1.5px] border-[var(--outline-strong)] bg-[#F26B1F] px-5 text-sm font-semibold text-white shadow-[3px_3px_0_var(--outline-strong)] transition-transform hover:-translate-y-0.5"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border-[1.5px] border-[var(--outline-strong)] bg-accent px-5 text-sm font-semibold text-white shadow-[3px_3px_0_var(--outline-strong)] transition-transform hover:-translate-y-0.5"
             >
               {primaryAction.label}<ArrowRight size={16} aria-hidden="true" />
             </button>

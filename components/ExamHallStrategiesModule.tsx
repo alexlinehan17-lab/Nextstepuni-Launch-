@@ -235,7 +235,7 @@ const MPMCalculator = () => {
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
              <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 22, color: "var(--module-ink)" }}>Minutes-Per-Mark Calculator</h4>
              </div>
              <div className="grid grid-cols-3 gap-4">
@@ -509,15 +509,15 @@ const DumpSheetBuilder = () => {
     if (phase === 'ready') {
         return (
             <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 22, color: "var(--module-ink)" }}>Dump Sheet Drill</h4>
                 <p className="text-sm mt-1 mb-6 max-w-lg mx-auto" style={{ color: "var(--module-muted)" }}>Practice the brain dump that should be your first action in every exam.</p>
                 <div className="flex items-center justify-center gap-3 mb-6 flex-wrap">
-                    <span style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: moduleText(COLORS.accentDarkText) }}>30s to memorise</span>
+                    <span style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: moduleText(COLORS.accentDarkText) }}>30s to memorise</span>
                     <span style={{ color: "var(--module-muted)" }}>→</span>
-                    <span style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: moduleText(COLORS.accentDarkText) }}>60s to recall</span>
+                    <span style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: moduleText(COLORS.accentDarkText) }}>60s to recall</span>
                     <span style={{ color: "var(--module-muted)" }}>→</span>
-                    <span style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: moduleText(COLORS.accentDarkText) }}>See your score</span>
+                    <span style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: moduleText(COLORS.accentDarkText) }}>See your score</span>
                 </div>
                 <motion.button onClick={startDrill} whileTap={{ y: 3 }} className="text-[var(--module-ink)] font-semibold" style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 100, padding: '13px 28px', fontSize: 15, borderBottom: `3px solid ${COLORS.accentDark}`, boxShadow: 'none' }} data-wide-button="true">Start Drill</motion.button>
             </div>
@@ -529,7 +529,7 @@ const DumpSheetBuilder = () => {
         const low = isTimerLow(memoriseTime, 30);
         return (
             <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-4" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-4" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
                 <div className="flex items-center justify-between mb-2">
                     <h4 className="font-serif font-semibold" style={{ fontSize: 22, color: "var(--module-ink)" }}>Memorise These Facts</h4>
                     <span style={{ backgroundColor: moduleFill(low ? "var(--module-surface)" : COLORS.successTint), border: `1.5px solid ${low ? "var(--module-line)" : 'rgba(58,141,95,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>

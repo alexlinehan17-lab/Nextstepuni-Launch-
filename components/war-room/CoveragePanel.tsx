@@ -1,6 +1,7 @@
 import type { StudySessionRecord } from '../../utils/strategyRegistry';
 import type { TopicHistoryActions } from '../topics/TopicDetailCard';
 import { getStudyTopicOptions } from '../../services/studyTopicHistory';
+import { COLORS } from '../../design/tokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -418,7 +419,7 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
           <EditorialCard className="relative overflow-hidden" style={{ minHeight: 224 }}>
             <div
               className="absolute -right-14 -top-20 h-48 w-48 rounded-full opacity-50"
-              style={{ background: 'radial-gradient(circle, color-mix(in srgb, #F26B1F 14%, transparent), transparent 68%)' }}
+              style={{ background: 'radial-gradient(circle, color-mix(in srgb, var(--nsu-orange) 14%, transparent), transparent 68%)' }}
               aria-hidden="true"
             />
             <div className="relative">
@@ -541,7 +542,7 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
                   key={component.id}
                   style={{
                     width: `${component.weighting}%`,
-                    background: index % 2 === 0 ? '#F26B1F' : 'color-mix(in srgb, #F26B1F 38%, var(--surface-soft))',
+                    background: index % 2 === 0 ? COLORS.accent : 'color-mix(in srgb, var(--nsu-orange) 38%, var(--surface-soft))',
                   }}
                 />
               ))}

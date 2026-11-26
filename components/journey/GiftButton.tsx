@@ -65,7 +65,7 @@ const GiftButton: React.FC<GiftButtonProps> = ({
         disabled={!canSend}
         className={`p-2.5 rounded-xl backdrop-blur-sm border transition-colors ${
           canSend
-            ? 'bg-white/90 dark:bg-zinc-900/90 border-zinc-200 dark:border-zinc-800 hover:bg-white dark:hover:bg-zinc-800'
+            ? 'bg-white/90 dark:bg-zinc-900/90 border-zinc-200 dark:border-hairline hover:bg-white dark:hover:bg-surface-soft'
             : 'bg-white/50 dark:bg-zinc-900/50 border-zinc-200/50 dark:border-zinc-800/50 opacity-50'
         }`}
         title={canSend ? 'Send a gift' : 'Already sent a gift today'}
@@ -87,7 +87,7 @@ const GiftButton: React.FC<GiftButtonProps> = ({
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 100, opacity: 0 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-              className="bg-white dark:bg-zinc-900 rounded-t-2xl md:rounded-2xl p-5 w-full max-w-md shadow-2xl max-h-[70vh] flex flex-col"
+              className="bg-white dark:bg-surface-paper rounded-t-2xl md:rounded-2xl p-5 w-full max-w-md shadow-2xl max-h-[70vh] flex flex-col"
               onClick={(e: React.MouseEvent) => e.stopPropagation()}
             >
               {sent ? (
@@ -107,7 +107,7 @@ const GiftButton: React.FC<GiftButtonProps> = ({
                 <>
                   <div className="flex items-center justify-between mb-1">
                     <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">Send a Gift to {targetName}</h3>
-                    <button onClick={() => setDrawerOpen(false)} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800">
+                    <button onClick={() => setDrawerOpen(false)} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft">
                       <X size={16} className="text-zinc-400" />
                     </button>
                   </div>
@@ -127,7 +127,7 @@ const GiftButton: React.FC<GiftButtonProps> = ({
                             className={`text-left p-3 rounded-xl border transition-colors ${
                               canAfford
                                 ? 'border-zinc-200 dark:border-zinc-700 hover:border-amber-300 dark:hover:border-amber-700 hover:bg-amber-50 dark:hover:bg-amber-950/20'
-                                : 'border-zinc-200 dark:border-zinc-800 opacity-40 cursor-not-allowed'
+                                : 'border-zinc-200 dark:border-hairline opacity-40 cursor-not-allowed'
                             }`}
                           >
                             <p className="text-xs font-semibold text-zinc-800 dark:text-zinc-200">{item.name}</p>

@@ -66,7 +66,7 @@ const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectMo
   return (
     <button
       onClick={go}
-      className="group mb-4 flex w-full items-center justify-between gap-5 rounded-2xl border-[1.5px] border-[#383838] bg-white px-5 py-4 text-left transition-transform hover:-translate-y-0.5 dark:border-zinc-700 dark:bg-zinc-900"
+      className="group mb-4 flex w-full items-center justify-between gap-5 rounded-2xl border-[1.5px] border-[#383838] bg-white px-5 py-4 text-left transition-transform hover:-translate-y-0.5 dark:border-zinc-700 dark:bg-surface-paper"
     >
       <div className="min-w-0 flex-1">
         <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#A8A29E] dark:text-zinc-500">
@@ -75,12 +75,12 @@ const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectMo
         <p className="mt-1 truncate font-serif text-[16px] font-bold leading-snug text-[#1A1A1A] dark:text-white">{title}</p>
         {sub && <p className="mt-0.5 text-xs text-[#78716C] dark:text-zinc-400">{sub}</p>}
         {frac !== null && (
-          <div className="mt-2.5 h-[3px] max-w-[320px] overflow-hidden rounded-full bg-[#ECE8E3] dark:bg-zinc-700">
-            <div className="h-full rounded-full" style={{ width: `${Math.round(frac * 100)}%`, backgroundColor: 'rgba(242,107,31,0.62)' }} />
+          <div className="mt-2.5 h-[3px] max-w-[320px] overflow-hidden rounded-full bg-surface-soft dark:bg-zinc-700">
+            <div className="h-full rounded-full" style={{ width: `${Math.round(frac * 100)}%`, backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.62)' }} />
           </div>
         )}
       </div>
-      <span className="flex shrink-0 items-center gap-1 text-[13px] font-bold text-[#F26B1F] transition-transform group-hover:translate-x-0.5">
+      <span className="flex shrink-0 items-center gap-1 text-[13px] font-bold text-accent transition-transform group-hover:translate-x-0.5">
         {isResume ? 'Continue' : 'Start'} <ArrowRight size={13} strokeWidth={2.4} />
       </span>
     </button>

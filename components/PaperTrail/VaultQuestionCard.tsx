@@ -30,6 +30,7 @@ import { questionLabel, type TopicSibling } from './topics';
 import { sittingLabel } from './sitting';
 import { lensFor } from '../../data/markingLens';
 import { physicalEducationTask } from './physicalEducationTasks';
+import { COLORS } from '../../design/tokens';
 const PhysicalEducationTaskCard = lazy(() => import('./PhysicalEducationTaskCard'));
 import { audioForPaper } from './paperRecording';
 import FrenchPaperAudio from './FrenchPaperAudio';
@@ -38,7 +39,7 @@ import { asksForQuestion, isModelSubject, markBankLinkForCards } from './atlasMo
 import { isUnpricedSectionCard, unpricedSectionChip, type SecCard } from '../../types/markBank';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const LVL: Record<string, string> = { higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common' };
 // A few verified booklet formats deliberately allocate more than three pages
 // to one Paper Trail card. Applied Mathematics questions can span four pages;
@@ -413,10 +414,10 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
           {lensOpen && (
             <div className="px-3 pt-3 pb-3" style={{ backgroundColor: '#FDEEDF' }}>
               <div className="flex items-start justify-between gap-3 px-1 mb-2.5">
-                <p className="text-[12.5px] italic leading-snug" style={{ color: '#8C3A0E' }}>{lens.headline}</p>
+                <p className="text-[12.5px] italic leading-snug" style={{ color: COLORS.accentDarkText }}>{lens.headline}</p>
                 <span
                   className="shrink-0 text-[11px] font-bold px-2.5 py-1 rounded-full bg-white tabular-nums"
-                  style={{ color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.35)' }}
+                  style={{ color: COLORS.accentDarkText, border: '1px solid rgba(var(--nsu-orange-rgb), 0.35)' }}
                 >
                   {lens.totalMarks} marks
                 </span>
@@ -426,16 +427,16 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
                   <div
                     key={i}
                     className="flex items-start gap-3 rounded-xl bg-white px-3 py-2.5"
-                    style={{ border: '1px solid rgba(242,107,31,0.25)' }}
+                    style={{ border: '1px solid rgba(var(--nsu-orange-rgb), 0.25)' }}
                   >
                     <span className="flex-1 min-w-0">
                       <span className="flex items-baseline gap-2 flex-wrap">
                         {p.part && (
-                          <span className="text-[10px] font-bold uppercase tracking-[0.06em]" style={{ color: '#8C3A0E' }}>{p.part}</span>
+                          <span className="text-[10px] font-bold uppercase tracking-[0.06em]" style={{ color: COLORS.accentDarkText }}>{p.part}</span>
                         )}
                         <span className="text-[12.5px] font-semibold" style={{ color: INK }}>{p.task}</span>
                       </span>
-                      <span className="block text-[11.5px] font-bold mt-0.5 tabular-nums" style={{ color: '#8C3A0E' }}>{p.notation}</span>
+                      <span className="block text-[11.5px] font-bold mt-0.5 tabular-nums" style={{ color: COLORS.accentDarkText }}>{p.notation}</span>
                       <span className="block text-[12px] mt-0.5 leading-snug" style={{ color: '#5a5550' }}>{p.decoded}</span>
                     </span>
                     <span className="shrink-0 text-right" aria-label={`${p.marks} marks`}>
@@ -446,12 +447,12 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
                 ))}
               </div>
               {lens.pitfall && (
-                <div className="mt-2 rounded-r-xl bg-white px-3 py-2.5" style={{ borderLeft: '3px solid #F26B1F' }}>
-                  <p className="text-[12px] italic leading-snug" style={{ color: '#8C3A0E' }}>Where marks are lost: {lens.pitfall.text}</p>
+                <div className="mt-2 rounded-r-xl bg-white px-3 py-2.5" style={{ borderLeft: '3px solid var(--nsu-orange)' }}>
+                  <p className="text-[12px] italic leading-snug" style={{ color: COLORS.accentDarkText }}>Where marks are lost: {lens.pitfall.text}</p>
                   <p className="text-[10px] mt-1" style={{ color: '#9e9186' }}>{lens.pitfall.cite}</p>
                 </div>
               )}
-              <p className="text-[10px] font-bold uppercase tracking-[0.12em] mt-2.5 px-1" style={{ color: '#8C3A0E' }}>
+              <p className="text-[10px] font-bold uppercase tracking-[0.12em] mt-2.5 px-1" style={{ color: COLORS.accentDarkText }}>
                 {lens.cite} — © State Examinations Commission
               </p>
             </div>

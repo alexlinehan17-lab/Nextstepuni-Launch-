@@ -109,13 +109,13 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
   const stagger = (i: number) => ({ initial: { opacity: 0, y: 16 }, animate: { opacity: 1, y: 0 }, transition: { delay: i * 0.06, duration: 0.4, ease: [0.16, 1, 0.3, 1] as number[] } });
 
   return (
-    <div className="min-h-screen theme-compat bg-white dark:bg-zinc-950">
+    <div className="min-h-screen theme-compat bg-white dark:bg-surface-canvas">
 
       {/* Back affordance — small chip above the header */}
       <div className="px-6 pt-5">
         <button
           onClick={onBack}
-          className="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-[12px] font-semibold text-[#1A1A1A] dark:text-white border-[1.5px] border-[#383838] dark:border-zinc-600 bg-white dark:bg-zinc-900 shadow-[2px_2px_0_0_#383838] hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all"
+          className="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-[12px] font-semibold text-[#1A1A1A] dark:text-white border-[1.5px] border-[#383838] dark:border-zinc-600 bg-white dark:bg-surface-paper shadow-[2px_2px_0_0_#383838] hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all"
         >
           <ArrowLeft size={14} />
           Back
@@ -147,7 +147,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
       <div className="px-6 max-w-3xl mx-auto pt-6">
         <MotionDiv
           {...stagger(0)}
-          className="rounded-2xl bg-white dark:bg-zinc-900 p-5 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]"
+          className="rounded-2xl bg-white dark:bg-surface-paper p-5 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]"
         >
           <div className="flex items-center gap-5">
             {/* Rank identity — ring wraps the icon, fill colour is the
@@ -191,7 +191,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
 
         {/* Stat record — one card, cells divided by hairlines rather than
             three competing boxes; serif tabular numerals carry the weight. */}
-        <MotionDiv {...stagger(1)} className="mt-3 rounded-xl bg-white dark:bg-zinc-900 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]">
+        <MotionDiv {...stagger(1)} className="mt-3 rounded-xl bg-white dark:bg-surface-paper border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]">
           <div className="grid grid-cols-3 py-4">
             {[
               { value: streak.currentStreak, label: 'Day Streak' },
@@ -221,7 +221,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
             ? new Date(ts[latest]).toLocaleDateString('en-IE', { day: 'numeric', month: 'short' })
             : null;
           return (
-            <MotionDiv {...stagger(1.25)} className="mt-3 flex items-center gap-3 rounded-xl bg-white px-4 py-3 dark:bg-zinc-900" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
+            <MotionDiv {...stagger(1.25)} className="mt-3 flex items-center gap-3 rounded-xl bg-white px-4 py-3 dark:bg-surface-paper" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
               <AchievementBadge achievementId={latest} size={40} />
               <div className="min-w-0 flex-1">
                 <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', color: '#9e9186', textTransform: 'uppercase' }}>Latest badge</p>
@@ -250,7 +250,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', color: '#c4c0bc' }}>Resets in {daysUntilReset}d</p>
           </div>
 
-          <div className="rounded-2xl bg-white dark:bg-zinc-900 p-5" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
+          <div className="rounded-2xl bg-white dark:bg-surface-paper p-5" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
             {/* Weekly Goal bars */}
             <div className="space-y-4">
               {weeklyGoals.map((goal, gi) => {
@@ -282,7 +282,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
               {weeklyGoals.map((goal, gi) => {
                 const met = (weeklyGoalProgress[goal.metric] ?? 0) >= goal.target;
                 return (
-                  <div key={gi} className="flex items-center justify-center w-7 h-7 rounded-lg" style={{ backgroundColor: met ? GOAL_COLORS[gi] : '#e8e4de' }}>
+                  <div key={gi} className="flex items-center justify-center w-7 h-7 rounded-lg" style={{ backgroundColor: met ? GOAL_COLORS[gi] : 'var(--surface-soft)' }}>
                     {met ? (
                       <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7L6 10L11 4" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                     ) : (
@@ -303,8 +303,8 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
             const CIcon = CHALLENGE_ICONS[ch.challenge!.icon] || Trophy;
             const pct = Math.min(100, Math.round((ch.current / ch.challenge!.target) * 100));
             return (
-              <div className="flex items-center gap-3 rounded-2xl px-5 py-4 mt-3 bg-white dark:bg-zinc-900" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(242,107,31,0.12)' }}>
+              <div className="flex items-center gap-3 rounded-2xl px-5 py-4 mt-3 bg-white dark:bg-surface-paper" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.12)' }}>
                   <CIcon size={20} style={{ color: COLORS.accent }} />
                 </div>
                 <div className="flex-1 min-w-0">
@@ -334,7 +334,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
           const masteryPct = Math.round((masteredCount / STRATEGY_REGISTRY.length) * 100);
           return (
             <MotionDiv {...stagger(3)} className="mt-4">
-              <div className="rounded-2xl bg-white dark:bg-zinc-900 overflow-hidden" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
+              <div className="rounded-2xl bg-white dark:bg-surface-paper overflow-hidden" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
                 <button onClick={() => setStrategyOpen(o => !o)} className="w-full flex items-center gap-3 px-5 py-4 cursor-pointer">
                   <div className="w-9 h-9 rounded-xl shrink-0 flex items-center justify-center" style={{ backgroundColor: 'rgba(107,92,231,0.1)' }}>
                     <Brain size={18} style={{ color: '#6C5CE7' }} />
@@ -383,7 +383,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                                     </div>
                                     <div className="flex gap-1 mt-2.5 ml-11">
                                       {[0, 1, 2, 3].map(seg => (
-                                        <div key={seg} className="flex-1 h-1.5 rounded-full" style={{ backgroundColor: seg <= tierIdx ? TIER_COLORS[tier] : '#e8e4de' }} />
+                                        <div key={seg} className="flex-1 h-1.5 rounded-full" style={{ backgroundColor: seg <= tierIdx ? TIER_COLORS[tier] : 'var(--surface-soft)' }} />
                                       ))}
                                     </div>
                                   </div>
@@ -411,7 +411,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
             : 0;
           return (
             <MotionDiv {...stagger(4)} className="mt-4">
-              <div className="rounded-2xl bg-white dark:bg-zinc-900 overflow-hidden" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
+              <div className="rounded-2xl bg-white dark:bg-surface-paper overflow-hidden" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
                 <button onClick={() => setAchievementsOpen(o => !o)} className="w-full flex items-center gap-3 px-5 py-4 cursor-pointer">
                   <div className="w-9 h-9 rounded-xl shrink-0 flex items-center justify-center" style={{ backgroundColor: 'rgba(230,126,34,0.1)' }}>
                     <Award size={18} style={{ color: '#E67E22' }} />
@@ -465,7 +465,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                 { key: 'bestWeekPoints', label: 'Best Week Points', color: '#6366f1' },
                 { key: 'bestWeekSessions', label: 'Best Week Sessions', color: '#E84393' },
               ].filter(pb => (personalBests as any)[pb.key] > 0).map(pb => (
-                <div key={pb.key} className="rounded-2xl bg-white dark:bg-zinc-900 px-4 py-4" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
+                <div key={pb.key} className="rounded-2xl bg-white dark:bg-surface-paper px-4 py-4" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
                   <div className="w-8 h-8 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: `${pb.color}14` }}>
                     <Trophy size={16} style={{ color: pb.color }} />
                   </div>
@@ -486,7 +486,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
             other surface on the page. */}
         {northStar && (
           <MotionDiv {...stagger(6)} className="mt-10">
-            <div className="rounded-2xl bg-white dark:bg-zinc-900 p-6 md:p-8 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]">
+            <div className="rounded-2xl bg-white dark:bg-surface-paper p-6 md:p-8 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]">
               <div className="flex flex-col items-center text-center">
                 {/* A single hand-drawn object over a painted blob, matching the
                     product's illustrative icon family. The orange north needle
@@ -519,7 +519,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                     year-bump CTA. */}
                 <button
                   onClick={onOpenDirection ?? onOpenJourney}
-                  className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
+                  className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl border-2 border-[#1A1A1A] bg-accent text-white font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
                 >
                   My Direction
                   <ArrowRight size={14} />

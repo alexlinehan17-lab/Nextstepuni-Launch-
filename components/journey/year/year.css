@@ -1,6 +1,6 @@
 /* Year islands: the Your year entry, list and look-only visit.
    Light mode follows the Visitors book (white, 2px ink, hard ink shadow,
-   #ff8125 for the one selected or primary thing). Dark mode uses the app's
+   var(--nsu-orange) for the one selected or primary thing). Dark mode uses the app's
    theme tokens; the painted island art keeps its authored colours. */
 
 .journey-paper .year-entry,
@@ -40,7 +40,7 @@
   height: 36px;
   border: 1.5px solid #252720;
   border-radius: 4px;
-  background: #ff8125;
+  background: var(--nsu-orange);
   color: #252720;
 }
 .journey-paper .year-entry-copy,
@@ -138,7 +138,7 @@
   padding-right: 32px;
 }
 .journey-paper .year-book-heading h2 > span {
-  color: #ff8125;
+  color: var(--nsu-orange);
 }
 .journey-paper .year-book-heading > p {
   max-width: 600px;
@@ -207,7 +207,7 @@
   transition: transform 0.15s ease;
 }
 .journey-paper .year-switch[aria-checked="true"] .year-switch-track {
-  background: #ff8125;
+  background: var(--nsu-orange);
 }
 .journey-paper .year-switch[aria-checked="true"] .year-switch-knob {
   transform: translateX(24px);
@@ -331,7 +331,7 @@
 }
 .journey-paper .year-classmate-card:hover .year-visit-cta,
 .journey-paper .year-classmate-card:focus-visible .year-visit-cta {
-  background: #ff8125;
+  background: var(--nsu-orange);
 }
 .journey-paper .year-card-placeholder {
   display: flex;
@@ -387,7 +387,7 @@
   min-height: 44px;
   margin-top: 16px;
   padding: 10px 16px;
-  background: #ff8125;
+  background: var(--nsu-orange);
   color: #252720;
   border: 2px solid #252720;
   border-radius: 5px;

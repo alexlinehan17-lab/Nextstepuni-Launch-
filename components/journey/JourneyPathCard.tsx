@@ -10,7 +10,7 @@ interface JourneyPathCardProps {
 }
 
 const JourneyPathCard: React.FC<JourneyPathCardProps> = ({ progress, onOpenBuildMode }) => (
-  <section className="mb-4 overflow-hidden rounded-[20px] border-2 border-[#343230] bg-[#FFFDF8] shadow-[0_5px_0_#343230] dark:bg-[#201F1D] dark:border-[#D8D1C8] dark:shadow-[0_5px_0_#D8D1C8]">
+  <section className="mb-4 overflow-hidden rounded-[20px] border-2 border-[#343230] bg-surface-paper shadow-[0_5px_0_#343230] dark:bg-[#201F1D] dark:border-[#D8D1C8] dark:shadow-[0_5px_0_#D8D1C8]">
     <div className="px-4 py-4 border-b border-[#E5DED5] dark:border-[#46413C]">
       <div className="flex items-start justify-between gap-4">
         <div>
@@ -24,8 +24,8 @@ const JourneyPathCard: React.FC<JourneyPathCardProps> = ({ progress, onOpenBuild
       </div>
       <div className="mt-3 flex items-center gap-2.5">
         <span className="shrink-0 text-[9px] font-bold uppercase tracking-[0.12em] text-[#A0978D]">Rank progress</span>
-        <div className="h-2 flex-1 overflow-hidden rounded-full bg-[#ECE7E0] dark:bg-[#37332F]">
-          <div className="h-full rounded-full bg-[#F26B1F] transition-[width] duration-700" style={{ width: `${Math.round(progress.progress * 100)}%` }} />
+        <div className="h-2 flex-1 overflow-hidden rounded-full bg-surface-soft dark:bg-[#37332F]">
+          <div className="h-full rounded-full bg-accent transition-[width] duration-700" style={{ width: `${Math.round(progress.progress * 100)}%` }} />
         </div>
         <span className="font-mono text-[9px] font-bold text-[#756F69] dark:text-[#B8B1A8]">{Math.round(progress.progress * 100)}%</span>
       </div>
@@ -38,7 +38,7 @@ const JourneyPathCard: React.FC<JourneyPathCardProps> = ({ progress, onOpenBuild
           {progress.foundationCompletedCount}/{progress.foundationSteps.length}
         </span>
       </div>
-      <div className="mb-4 h-1.5 overflow-hidden rounded-full bg-[#ECE7E0] dark:bg-[#37332F]">
+      <div className="mb-4 h-1.5 overflow-hidden rounded-full bg-surface-soft dark:bg-[#37332F]">
         <div
           className="h-full rounded-full bg-[#4C9A78] transition-[width] duration-700"
           style={{ width: `${(progress.foundationCompletedCount / progress.foundationSteps.length) * 100}%` }}

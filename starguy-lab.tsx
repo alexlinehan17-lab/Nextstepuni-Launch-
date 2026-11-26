@@ -21,9 +21,10 @@ import { StarguyFigure } from './components/landing/starguy/StarguyFigure';
 import { markAnswer } from './components/landing/marking/marker';
 import { MARK_SUBJECTS } from './components/landing/fx-d/examinerData';
 import './index.css';
+import { COLORS } from './design/tokens';
 
 const INK = '#1A1A1A';
-const ORANGE = '#F26B1F';
+const ORANGE = COLORS.accent;
 const ORANGE_TEXT = '#B84A0C';
 const MUTED = '#5F5A55';
 const SERIF = "'Source Serif 4', Georgia, serif";

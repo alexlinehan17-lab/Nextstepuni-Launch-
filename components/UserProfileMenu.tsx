@@ -63,7 +63,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settin
             initial={{ opacity: 0, y: -10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
-            className="absolute top-full right-0 mt-2 w-72 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-lg p-4 max-h-[80vh] overflow-y-auto"
+            className="absolute top-full right-0 mt-2 w-72 bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-xl shadow-lg p-4 max-h-[80vh] overflow-y-auto"
           >
             {/* User info */}
             <div className="flex items-center gap-3 border-b border-zinc-200/50 dark:border-white/10 pb-3 mb-3">
@@ -76,8 +76,8 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settin
 
             {/* Study Streak */}
             <div className="flex items-center gap-3 p-2 mb-1">
-              <div className="w-8 h-8 rounded-lg bg-orange-50 dark:bg-orange-500/10 flex items-center justify-center">
-                <Flame size={16} className="text-orange-500" />
+              <div className="w-8 h-8 rounded-lg bg-orange-50 dark:bg-accent/10 flex items-center justify-center">
+                <Flame size={16} className="text-accent" />
               </div>
               <div className="flex-1">
                 <p className="text-sm font-semibold text-zinc-800 dark:text-white">
@@ -235,7 +235,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
             aria-modal="true"
             aria-labelledby="mobile-profile-title"
             tabIndex={-1}
-            className="fixed bottom-0 left-0 right-0 z-[96] mx-auto bg-white dark:bg-zinc-900 rounded-t-2xl border-t border-zinc-200 dark:border-zinc-800 max-h-[85vh] overflow-y-auto md:max-w-[560px] md:border-x"
+            className="fixed bottom-0 left-0 right-0 z-[96] mx-auto bg-white dark:bg-surface-paper rounded-t-2xl border-t border-zinc-200 dark:border-hairline max-h-[85vh] overflow-y-auto md:max-w-[560px] md:border-x"
             style={{ paddingBottom: 'var(--sab, 0px)' }}
           >
             {/* Drag handle */}
@@ -245,7 +245,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
 
             <div className="px-5 pb-6">
               {/* User info */}
-              <div className="sticky top-0 z-10 -mx-5 mb-4 flex items-center justify-between border-b border-zinc-100 bg-white/95 px-5 py-3 backdrop-blur-xl dark:border-zinc-800 dark:bg-zinc-900/95">
+              <div className="sticky top-0 z-10 -mx-5 mb-4 flex items-center justify-between border-b border-zinc-100 bg-white/95 px-5 py-3 backdrop-blur-xl dark:border-hairline dark:bg-zinc-900/95">
                 <div className="flex items-center gap-3">
                   <Avatar seed={displayAvatar} alt="Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
                   <div>
@@ -253,15 +253,15 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                     <p className="text-xs text-zinc-500">Student</p>
                   </div>
                 </div>
-                <button onClick={onClose} aria-label="Close profile" className="flex h-11 w-11 items-center justify-center rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800">
+                <button onClick={onClose} aria-label="Close profile" className="flex h-11 w-11 items-center justify-center rounded-xl hover:bg-zinc-100 dark:hover:bg-surface-soft">
                   <X size={18} className="text-zinc-400" />
                 </button>
               </div>
 
               {/* Streak */}
               <div className="flex items-center gap-3 p-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 mb-3">
-                <div className="w-8 h-8 rounded-lg bg-orange-50 dark:bg-orange-500/10 flex items-center justify-center">
-                  <Flame size={16} className="text-orange-500" />
+                <div className="w-8 h-8 rounded-lg bg-orange-50 dark:bg-accent/10 flex items-center justify-center">
+                  <Flame size={16} className="text-accent" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm font-semibold text-zinc-800 dark:text-white">{streakLabel(streak.currentStreak)}</p>
@@ -338,7 +338,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                   <div className="divide-y divide-zinc-100 rounded-2xl border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-700">
                     <NotificationBell uid={user.uid} variant="menu" onUnreadCountChange={onUnreadCountChange} />
                     <button onClick={() => { onClose(); onOpenSiteGuide(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><HelpCircle size={16} className="text-[#F26B1F]" /></div>
+                      <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><HelpCircle size={16} className="text-accent" /></div>
                       <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">How the app works</span>
                     </button>
                     <button onClick={() => { onClose(); onOpenFeedback(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">

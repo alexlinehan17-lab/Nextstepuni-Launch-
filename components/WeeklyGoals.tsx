@@ -58,14 +58,14 @@ const WeeklyGoals: React.FC<WeeklyGoalsProps> = ({ goals, progress, weekStartDat
               className={`p-3.5 rounded-xl border transition-colors ${
                 isComplete
                   ? 'bg-emerald-50 dark:bg-emerald-900/10 border-emerald-200 dark:border-emerald-800/30'
-                  : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800'
+                  : 'bg-white dark:bg-surface-paper border-zinc-200 dark:border-hairline'
               }`}
             >
               <div className="flex items-center gap-3">
                 <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 ${
                   isComplete
                     ? 'bg-emerald-100 dark:bg-emerald-900/30'
-                    : 'bg-zinc-100 dark:bg-zinc-800'
+                    : 'bg-zinc-100 dark:bg-surface-soft'
                 }`}>
                   {isComplete
                     ? <CheckCircle2 size={16} className="text-emerald-500" />
@@ -89,7 +89,7 @@ const WeeklyGoals: React.FC<WeeklyGoalsProps> = ({ goals, progress, weekStartDat
                       {Math.min(current, goal.target)}/{goal.target}
                     </span>
                   </div>
-                  <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
+                  <div className="w-full h-1.5 bg-zinc-100 dark:bg-surface-soft rounded-full overflow-hidden">
                     <motion.div
                       className={`h-full rounded-full ${
                         isComplete ? 'bg-emerald-500' : 'bg-[var(--accent-hex)]'
@@ -107,7 +107,7 @@ const WeeklyGoals: React.FC<WeeklyGoalsProps> = ({ goals, progress, weekStartDat
       </div>
 
       {/* Bonus escalation */}
-      <div className="flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200/50 dark:border-zinc-800">
+      <div className="flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200/50 dark:border-hairline">
         <div className="flex items-center gap-2">
           <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
             Weekly Bonus

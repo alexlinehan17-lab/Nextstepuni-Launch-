@@ -61,7 +61,7 @@ const FluencyTrap: React.FC = () => {
               <button
                 key={n}
                 onClick={() => { setConfidence(n); setPhase('recall'); }}
-                className="flex-1 py-2.5 rounded-lg text-sm font-bold transition-colors bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700"
+                className="flex-1 py-2.5 rounded-lg text-sm font-bold transition-colors bg-zinc-100 dark:bg-surface-soft text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700"
               >
                 {n}
               </button>
@@ -87,7 +87,7 @@ const FluencyTrap: React.FC = () => {
               <button
                 key={n}
                 onClick={() => { setRecalled(n); setPhase('reveal'); }}
-                className="flex-1 py-2.5 rounded-lg text-sm font-bold transition-colors bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700"
+                className="flex-1 py-2.5 rounded-lg text-sm font-bold transition-colors bg-zinc-100 dark:bg-surface-soft text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700"
               >
                 {n}
               </button>

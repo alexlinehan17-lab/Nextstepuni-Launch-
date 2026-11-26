@@ -1,5 +1,6 @@
 import { getBlockId } from './subjectData';
 import { queueTopicStudy, queueTopicPractice } from '../utils/topicLaunch';
+import { COLORS } from '../design/tokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -125,8 +126,8 @@ class ModuleErrorBoundary extends React.Component<ModuleErrorBoundaryProps, Modu
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen bg-white dark:bg-zinc-950 flex items-center justify-center p-6">
-          <div className="max-w-md w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-8 text-center">
+        <div className="min-h-screen bg-white dark:bg-surface-canvas flex items-center justify-center p-6">
+          <div className="max-w-md w-full bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-2xl p-8 text-center">
             <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-rose-100 dark:bg-rose-500/10 flex items-center justify-center">
               <span className="text-2xl">!</span>
             </div>
@@ -789,10 +790,10 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           initial={mobileAppDesign ? { opacity: 0, y: 8 } : { opacity: 0, y: 18, scale: 0.985 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: mobileAppDesign ? 0.2 : 0.45, ease: [0.16, 1, 0.3, 1] }}
-          className="min-h-screen bg-white dark:bg-zinc-950"
+          className="min-h-screen bg-white dark:bg-surface-canvas"
         >
           {/* Header */}
-          <header data-student-page-header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-white dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: `calc(${mobileAppDesign ? 12 : 16}px + var(--sat, 0px))`, paddingBottom: mobileAppDesign ? '12px' : '24px' }}>
+          <header data-student-page-header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-white dark:bg-surface-canvas border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: `calc(${mobileAppDesign ? 12 : 16}px + var(--sat, 0px))`, paddingBottom: mobileAppDesign ? '12px' : '24px' }}>
             <div className="flex items-center gap-4">
               <BackButton label="Back to modules" onClick={handleGoToModules} showLabel={!mobileAppDesign} />
             </div>
@@ -894,8 +895,8 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     }
     // Module ID not found in registry — show fallback and navigate back
     return (
-      <div className="min-h-screen bg-white dark:bg-zinc-950 flex items-center justify-center p-6">
-        <div className="max-w-md w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-8 text-center">
+      <div className="min-h-screen bg-white dark:bg-surface-canvas flex items-center justify-center p-6">
+        <div className="max-w-md w-full bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-2xl p-8 text-center">
           <h2 className="text-lg font-bold text-zinc-800 dark:text-white mb-2">Module not found</h2>
           <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
             The module &ldquo;{currentModuleId}&rdquo; could not be found.
@@ -984,11 +985,11 @@ const ChangePasswordModal: React.FC<{ user: SessionUser; onComplete: () => Promi
     setIsLoading(false);
   };
 
-  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-700 focus:border-[#F26B1F]";
+  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all bg-white dark:bg-surface-paper border-2 border-zinc-200 dark:border-zinc-700 focus:border-accent";
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-5 bg-white dark:bg-zinc-950">
-      <div className="w-full max-w-md bg-white dark:bg-zinc-900 rounded-2xl p-8 md:p-10" style={{ border: '2px solid #1a1a1a' }}>
+    <div className="min-h-screen flex items-center justify-center p-5 bg-white dark:bg-surface-canvas">
+      <div className="w-full max-w-md bg-white dark:bg-surface-paper rounded-2xl p-8 md:p-10" style={{ border: '2px solid #1a1a1a' }}>
         <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Set a new password</h2>
         <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Your password was reset by your guidance counsellor. Please choose a new password to continue.</p>
         <div className="space-y-4">
@@ -1004,7 +1005,7 @@ const ChangePasswordModal: React.FC<{ user: SessionUser; onComplete: () => Promi
               <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{12 - newPassword.length} more character{12 - newPassword.length !== 1 ? 's' : ''} needed</p>
             )}
             {newPassword.length >= 12 && newPassword.length <= 128 && (
-              <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#F26B1F' }}><Check size={12} /> Looks good</p>
+              <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: COLORS.accent }}><Check size={12} /> Looks good</p>
             )}
           </div>
           {error && <p className="text-sm text-red-500 font-medium">{error}</p>}
@@ -1012,7 +1013,7 @@ const ChangePasswordModal: React.FC<{ user: SessionUser; onComplete: () => Promi
             onClick={handleChangePassword}
             disabled={isLoading || newPassword.length < 12 || newPassword.length > 128}
             className="w-full py-3.5 rounded-full text-white text-[15px] font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-            style={{ backgroundColor: '#F26B1F', borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
+            style={{ backgroundColor: COLORS.accent, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 4px 0 var(--accent-dark-hex)' }}
           >
             {isLoading ? 'Saving...' : 'Set Password'}
           </button>

@@ -11,6 +11,7 @@
 import React from 'react';
 import { MotionDiv } from './Motion';
 import { ArrowLeft, Hammer, Images, ListChecks, Mic, SpellCheck, Stamp } from 'lucide-react';
+import { COLORS } from '../design/tokens';
 
 const SERIF: React.CSSProperties = { fontFamily: "'Source Serif 4', serif" };
 const SANS: React.CSSProperties = { fontFamily: "'DM Sans', system-ui, sans-serif" };
@@ -32,14 +33,14 @@ interface WipToolsProps {
 }
 
 const WipTools: React.FC<WipToolsProps> = ({ onBack, onOpenTool }) => (
-  <div className="frame-page [--frame-pad-top:4rem] md:[--frame-pad-top:5rem] min-h-screen theme-compat bg-white dark:bg-zinc-950 pb-32 px-4 sm:px-6 transition-colors duration-500">
+  <div className="frame-page [--frame-pad-top:4rem] md:[--frame-pad-top:5rem] min-h-screen theme-compat bg-white dark:bg-surface-canvas pb-32 px-4 sm:px-6 transition-colors duration-500">
     <div className="max-w-3xl mx-auto">
       {/* ── Header ── */}
       <div className="flex items-center gap-4 mb-4">
         <button
           onClick={onBack}
           aria-label="Back to home"
-          className="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-[#EDEBE8] hover:bg-[#F8F4EC] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)]"
+          className="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-hairline hover:bg-surface-soft transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35"
           style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
         >
           <ArrowLeft size={18} className="text-[#1a1a1a]" />
@@ -80,7 +81,7 @@ const WipTools: React.FC<WipToolsProps> = ({ onBack, onOpenTool }) => (
                 style={{ border: '1px solid #E8E2D8', boxShadow: '0 4px 28px rgba(28,25,23,0.06), 0 1px 3px rgba(28,25,23,0.04)' }}
               >
                 <span className="shrink-0 w-11 h-11 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#FDEEDF' }}>
-                  <Icon size={20} className="text-[#F26B1F]" />
+                  <Icon size={20} className="text-accent" />
                 </span>
                 <span className="flex-1 min-w-0">
                   <span className="flex items-center gap-2">
@@ -96,7 +97,7 @@ const WipTools: React.FC<WipToolsProps> = ({ onBack, onOpenTool }) => (
                     {t.description}
                   </span>
                 </span>
-                <span className="shrink-0" style={{ color: '#F26B1F', fontSize: 18, lineHeight: 1 }}>→</span>
+                <span className="shrink-0" style={{ color: COLORS.accent, fontSize: 18, lineHeight: 1 }}>→</span>
               </button>
             </MotionDiv>
           );

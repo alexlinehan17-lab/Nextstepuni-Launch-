@@ -378,7 +378,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
             </div>
             {/* CAO Simulator insights (Connection 4: CAO Simulator → Points Passport) */}
             {caoData && caoData.whatIfScenarios && caoData.whatIfScenarios.length > 0 && (
-              <div className="rounded-xl p-4 space-y-2 bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+              <div className="rounded-xl p-4 space-y-2 bg-white dark:bg-surface-paper" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
                 <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: COLORS.accent }}>From Your Simulator</p>
                 {caoData.whatIfScenarios.slice(0, 3).map((s: any, i: number) => (
                   <div key={i} className="flex items-center justify-between text-xs">
@@ -414,7 +414,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                 <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
                   Points Trajectory
                 </p>
-                <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-4">
+                <div className="bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-xl p-4">
                   <div className="flex items-end gap-2 h-32">
                     {/* mockResults is newest-first (sorted desc by timestamp).
                         Render oldest→newest left-to-right so the timeline reads
@@ -469,7 +469,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                   Recorded Mocks
                 </p>
                 {mockResults.map((mock) => (
-                  <div key={mock.id} className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+                  <div key={mock.id} className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-surface-paper" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
                     <Calendar size={14} className="shrink-0 text-[#9A9590] dark:text-zinc-500" />
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{mock.label}</p>
@@ -479,7 +479,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                     <button
                       onClick={() => setPendingDeleteMock(mock)}
                       aria-label={`Remove ${mock.label}`}
-                      className="p-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                      className="p-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
                     >
                       <Trash2 size={14} className="text-zinc-400" />
                     </button>
@@ -509,7 +509,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
               <MotionDiv
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-5 space-y-4"
+                className="bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-xl p-5 space-y-4"
               >
                 <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">Record Mock Results</p>
 
@@ -555,7 +555,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                               className={`px-2 py-1 rounded-md text-xs font-bold transition-all ${
                                 mockGrades[sub.subjectName] === g
                                   ? 'text-white shadow-sm'
-                                  : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
+                                  : 'bg-zinc-50 dark:bg-surface-soft text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
                               }`}
                               style={mockGrades[sub.subjectName] === g ? { backgroundColor: COLORS.accent } : undefined}
                             >
@@ -599,7 +599,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
             className="space-y-5"
           >
             {/* Honesty framing: deltas compare against the student's own mocks */}
-            <div className="rounded-xl p-4 bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+            <div className="rounded-xl p-4 bg-white dark:bg-surface-paper" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
               <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">Scenario Runway</p>
               <p className="text-xs leading-relaxed mt-1 text-zinc-600 dark:text-zinc-400">
                 Sketch a Safe, Target and Stretch grade set and compare them side by side.
@@ -610,7 +610,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
             </div>
 
             {/* Baseline strip */}
-            <div className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+            <div className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-surface-paper" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
               <TrendingUp size={14} className="shrink-0 text-[#9A9590] dark:text-zinc-500" />
               <p className="flex-1 min-w-0 text-xs text-zinc-600 dark:text-zinc-400 truncate">
                 {scenarioBaseline.isMock
@@ -630,7 +630,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                 const delta = total !== null ? total - scenarioBaseline.total : null;
                 const lever = sc ? bestLeverToward(scenarioBaseline.entries, sc.grades) : null;
                 return (
-                  <div key={slot} className="rounded-xl p-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex flex-col gap-2">
+                  <div key={slot} className="rounded-xl p-4 bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline flex flex-col gap-2">
                     <div className="flex items-center gap-2">
                       <SlotIcon size={14} className="shrink-0" style={{ color: sc ? COLORS.accent : '#9A9590' }} />
                       <span className="flex-1 text-xs font-bold uppercase tracking-widest text-zinc-500 dark:text-zinc-400">{meta.label}</span>
@@ -638,14 +638,14 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                         <>
                           <button
                             onClick={() => startEditScenario(slot)}
-                            className="p-1 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                            className="p-1 rounded-md hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
                             aria-label={`Edit ${meta.label} scenario`}
                           >
                             <Pencil size={12} className="text-zinc-400" />
                           </button>
                           <button
                             onClick={() => deleteScenario(slot)}
-                            className="p-1 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                            className="p-1 rounded-md hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
                             aria-label={`Clear ${meta.label} scenario`}
                           >
                             <Trash2 size={12} className="text-zinc-400" />
@@ -664,7 +664,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                         <span
                           className="self-start text-[10px] font-bold px-2 py-0.5 rounded-full"
                           style={delta > 0
-                            ? { backgroundColor: '#FDEEDF', color: '#8C3A0E' }
+                            ? { backgroundColor: '#FDEEDF', color: COLORS.accentDarkText }
                             : { backgroundColor: '#E8F2EC', color: '#1F5F3E' }}
                         >
                           {delta > 0
@@ -707,7 +707,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
               <MotionDiv
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-5 space-y-4"
+                className="bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-xl p-5 space-y-4"
               >
                 <div className="flex items-center justify-between">
                   <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">
@@ -737,7 +737,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                               className={`px-2 py-1 rounded-md text-xs font-bold transition-all ${
                                 scenarioGrades[sub.subjectName] === g
                                   ? 'text-white shadow-sm'
-                                  : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
+                                  : 'bg-zinc-50 dark:bg-surface-soft text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
                               }`}
                               style={scenarioGrades[sub.subjectName] === g ? { backgroundColor: COLORS.accent } : undefined}
                             >
@@ -821,7 +821,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                         Estimated effort: {b.effortHint}
                       </span>
                       {b.isMathsBonus && (
-                        <span className="text-[9px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E' }}>
+                        <span className="text-[9px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: '#FDEEDF', color: COLORS.accentDarkText }}>
                           Unlocks +25 Maths Bonus!
                         </span>
                       )}
@@ -840,7 +840,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
 
             {/* Total potential gain */}
             {bargains.length > 0 && (
-              <div className="rounded-[18px] bg-white dark:bg-zinc-900 px-5 py-4 border-2" style={{ borderColor: COLORS.accent }}>
+              <div className="rounded-[18px] bg-white dark:bg-surface-paper px-5 py-4 border-2" style={{ borderColor: COLORS.accent }}>
                 <div className="flex items-end justify-between gap-4">
                   <div>
                     <p className="text-[10px] font-bold tracking-[0.18em] uppercase" style={{ color: COLORS.accent }}>
@@ -876,7 +876,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
           <button
             type="button"
             onClick={() => setPendingDeleteMock(null)}
-            className="min-h-11 rounded-xl border border-[#CFC9C2] bg-white px-4 text-sm font-semibold text-[#59534D] hover:border-[#383838] dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+            className="min-h-11 rounded-xl border border-[#CFC9C2] bg-white px-4 text-sm font-semibold text-[#59534D] hover:border-[#383838] dark:border-zinc-700 dark:bg-surface-soft dark:text-zinc-200"
           >
             Keep result
           </button>

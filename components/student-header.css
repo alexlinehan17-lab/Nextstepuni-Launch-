@@ -5,7 +5,7 @@
   --header-ink: #25271f;
   --header-muted: #6b7065;
   --header-rule: #d8dbd2;
-  --header-orange: #ff7918;
+  --header-orange: var(--nsu-orange);
   --header-paper: #fff;
   --header-track: #e6e8e1;
   color: var(--header-ink);

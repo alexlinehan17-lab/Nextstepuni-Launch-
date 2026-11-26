@@ -59,7 +59,7 @@ const ImageViewer: React.FC<{
 
   return createPortal(
     <div
-      className="fixed inset-0 z-[100] flex flex-col bg-zinc-100 dark:bg-zinc-950"
+      className="fixed inset-0 z-[100] flex flex-col bg-zinc-100 dark:bg-surface-canvas"
       role="dialog"
       aria-modal="true"
       aria-label={`${title} — image viewer`}
@@ -68,7 +68,7 @@ const ImageViewer: React.FC<{
       <div
         ref={headerRef}
         tabIndex={-1}
-        className="shrink-0 bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800 outline-none"
+        className="shrink-0 bg-white dark:bg-surface-paper border-b border-zinc-200 dark:border-hairline outline-none"
         style={{
           paddingTop: 'calc(8px + var(--sat, 0px))',
           paddingBottom: 8,

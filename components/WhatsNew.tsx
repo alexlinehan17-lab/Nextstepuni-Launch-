@@ -11,6 +11,7 @@
 import React from 'react';
 import { CHANGELOG, LATEST_CHANGELOG_ID } from '../data/changelog';
 import ModalFrame from './ui/ModalFrame';
+import { COLORS } from '../design/tokens';
 
 const KEY = 'nsu-whatsnew:';
 
@@ -48,7 +49,7 @@ const WhatsNew: React.FC<Props> = ({ open, onClose }) => {
               <ul className="flex flex-col gap-1">
                 {entry.lines.map(line => (
                   <li key={line} className="flex items-start gap-2 text-[13px] leading-relaxed" style={{ color: '#5a5550' }}>
-                    <span className="mt-[7px] w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: '#F26B1F' }} />
+                    <span className="mt-[7px] w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: COLORS.accent }} />
                     {line}
                   </li>
                 ))}

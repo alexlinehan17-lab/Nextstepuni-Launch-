@@ -98,7 +98,7 @@ function readOnboardingDraft(storage: DraftStorage, userId: string, mode: string
 const _STEP_BLOBS: Record<Step, { a: string; b: string; c: string }> = {
   1: { a: 'bg-[rgba(var(--accent),0.07)]', b: 'bg-yellow-300/[0.09]', c: 'bg-orange-200/[0.08]' },
   2: { a: 'bg-indigo-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-sky-200/[0.06]' },
-  3: { a: 'bg-[#F26B1F]/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-emerald-200/[0.06]' },
+  3: { a: 'bg-accent/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-emerald-200/[0.06]' },
   4: { a: 'bg-purple-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-amber-200/[0.06]' },
   5: { a: 'bg-blue-300/[0.08]', b: 'bg-emerald-300/[0.07]', c: 'bg-purple-200/[0.06]' },
   6: { a: 'bg-emerald-300/[0.08]', b: 'bg-amber-300/[0.07]', c: 'bg-blue-200/[0.06]' },
@@ -115,13 +115,13 @@ const GROUP_COLORS: Record<LCSubject['group'], { bg: string; border: string; tex
   stem: { bg: 'bg-emerald-50 dark:bg-emerald-900/20', border: 'border-emerald-200 dark:border-emerald-800/40', text: 'text-emerald-700 dark:text-emerald-300', selectedBg: 'bg-emerald-100 dark:bg-emerald-900/40', selectedBorder: 'border-emerald-400 dark:border-emerald-500' },
   business: { bg: 'bg-amber-50 dark:bg-amber-900/20', border: 'border-amber-200 dark:border-amber-800/40', text: 'text-amber-700 dark:text-amber-300', selectedBg: 'bg-amber-100 dark:bg-amber-900/40', selectedBorder: 'border-amber-400 dark:border-amber-500' },
   humanities: { bg: 'bg-purple-50 dark:bg-purple-900/20', border: 'border-purple-200 dark:border-purple-800/40', text: 'text-purple-700 dark:text-purple-300', selectedBg: 'bg-purple-100 dark:bg-purple-900/40', selectedBorder: 'border-purple-400 dark:border-purple-500' },
-  practical: { bg: 'bg-orange-50 dark:bg-orange-900/20', border: 'border-orange-200 dark:border-orange-800/40', text: 'text-orange-700 dark:text-orange-300', selectedBg: 'bg-orange-100 dark:bg-orange-900/40', selectedBorder: 'border-orange-400 dark:border-orange-500' },
+  practical: { bg: 'bg-orange-50 dark:bg-orange-900/20', border: 'border-orange-200 dark:border-orange-800/40', text: 'text-orange-700 dark:text-orange-300', selectedBg: 'bg-orange-100 dark:bg-orange-900/40', selectedBorder: 'border-accent dark:border-accent' },
   creative: { bg: 'bg-rose-50 dark:bg-rose-900/20', border: 'border-rose-200 dark:border-rose-800/40', text: 'text-rose-700 dark:text-rose-300', selectedBg: 'bg-rose-100 dark:bg-rose-900/40', selectedBorder: 'border-rose-400 dark:border-rose-500' },
 };
 
 // Solid hex per subject group — used for the small colour dot on each
 // subject card on Step 5 (Select Your Subjects). Practical is shifted off
-// the primary brand orange (#F26B1F) so the dot reads distinctly against
+// the primary brand orange (--nsu-orange) so the dot reads distinctly against
 // the selected-state orange background.
 const GROUP_DOT_HEX: Record<LCSubject['group'], string> = {
   languages: '#3B82F6',
@@ -150,7 +150,7 @@ function getCurrentGradePillClass(isSelected: boolean): string {
 
 function getTargetGradePillClass(isSelected: boolean): string {
   return isSelected
-    ? `${PILL_BASE} bg-[#F26B1F] text-white`
+    ? `${PILL_BASE} bg-accent text-white`
     : `${PILL_BASE} bg-white text-[#1A1A1A]`;
 }
 
@@ -681,7 +681,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
     <div className="theme-compat fixed inset-0 z-[60] flex touch-pan-y flex-col overflow-hidden overscroll-none" data-prevent-pull-to-refresh="true">
 
       {/* ─── Solid background — matches Library (module selection) screen ─── */}
-      <div className="fixed inset-0 pointer-events-none bg-white dark:bg-zinc-900" aria-hidden="true" />
+      <div className="fixed inset-0 pointer-events-none bg-white dark:bg-surface-paper" aria-hidden="true" />
 
       {/* ─── Fixed Header: Progress bar + Skip ─── */}
       <div className="shrink-0 relative z-10 px-6 pt-5 pb-3">
@@ -699,10 +699,10 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
           )}
         </div>
         <div className="max-w-md mx-auto">
-          <div className="w-full h-[10px] rounded-full overflow-hidden bg-[#ECE8E3] dark:bg-zinc-700">
+          <div className="w-full h-[10px] rounded-full overflow-hidden bg-surface-soft dark:bg-zinc-700">
             <motion.div
               className="h-full rounded-full"
-              style={{ backgroundColor: 'rgba(242,107,31,0.9)' }}
+              style={{ backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.9)' }}
               animate={{ width: `${(currentStage / totalStages) * 100}%` }}
               transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
             />
@@ -783,7 +783,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={yr}
                               onClick={() => setYearGroup(yr)}
                               className={`group flex flex-col items-center justify-center py-5 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                                selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
+                                selected ? 'bg-accent text-white' : 'bg-white text-[#1A1A1A]'
                               }`}
                             >
                               <span className="text-2xl font-bold leading-none">{yr}</span>
@@ -818,7 +818,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={yr}
                               onClick={() => setYearGroup(yr)}
                               className={`group flex flex-col items-center justify-center py-5 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                                selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
+                                selected ? 'bg-accent text-white' : 'bg-white text-[#1A1A1A]'
                               }`}
                             >
                               <span className="text-2xl font-bold leading-none">{label}</span>
@@ -846,7 +846,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={yr}
                               onClick={() => setYearGroup(yr)}
                               className={`group flex flex-col items-center justify-center py-5 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                                selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
+                                selected ? 'bg-accent text-white' : 'bg-white text-[#1A1A1A]'
                               }`}
                             >
                               <span className="text-2xl font-bold leading-none">{yr === 'LCA1' ? 'Year 1' : 'Year 2'}</span>
@@ -878,7 +878,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={String(option.id)}
                               type="button"
                               onClick={() => setEssentialsMode(option.id)}
-                              className={`rounded-2xl border-2 border-[#1A1A1A] px-4 py-4 text-left shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none ${selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'}`}
+                              className={`rounded-2xl border-2 border-[#1A1A1A] px-4 py-4 text-left shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none ${selected ? 'bg-accent text-white' : 'bg-white text-[#1A1A1A]'}`}
                             >
                               <p className="font-bold">{option.title}</p>
                               <p className={`mt-1 text-xs leading-relaxed ${selected ? 'text-white/80' : 'text-[#78716C]'}`}>{option.desc}</p>
@@ -920,7 +920,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                             // Same border-2 / 4-6px black drop-shadow / press
                             // translate as the rest of onboarding.
                             className={`flex-1 py-6 px-5 rounded-2xl border-2 border-[#1A1A1A] text-left font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                              selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
+                              selected ? 'bg-accent text-white' : 'bg-white text-[#1A1A1A]'
                             }`}
                           >
                             <p className="text-base font-bold mb-1">{opt.title}</p>
@@ -940,8 +940,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
             {step === 4 && (
               <MotionDiv key="step4" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 {isTransition && (
-                  <div className="mb-4 px-4 py-3 rounded-xl border-2 border-[#F26B1F] bg-[rgba(242,107,31,0.08)] text-center">
-                    <p className="text-xs font-bold uppercase tracking-widest text-[#F26B1F] mb-1">Stepping into senior cycle</p>
+                  <div className="mb-4 px-4 py-3 rounded-xl border-2 border-accent bg-accent/8 text-center">
+                    <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Stepping into senior cycle</p>
                     <p className="text-sm text-[#1A1A1A] dark:text-zinc-200">Last step — your new North Star for this chapter.</p>
                   </div>
                 )}
@@ -965,8 +965,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
             {step === 5 && (
               <MotionDiv key="step5" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 {isTransition && (
-                  <div className="mb-4 px-4 py-3 rounded-xl border-2 border-[#F26B1F] bg-[rgba(242,107,31,0.08)] text-center">
-                    <p className="text-xs font-bold uppercase tracking-widest text-[#F26B1F] mb-1">Stepping into senior cycle</p>
+                  <div className="mb-4 px-4 py-3 rounded-xl border-2 border-accent bg-accent/8 text-center">
+                    <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Stepping into senior cycle</p>
                     <p className="text-sm text-[#1A1A1A] dark:text-zinc-200">Let's set up your Leaving Cert profile.</p>
                   </div>
                 )}
@@ -974,7 +974,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                   question={isTransition ? 'Which Leaving Cert subjects are you taking?' : 'Which subjects are you carrying?'}
                   sub={<>
                     Tap to select {curriculumLevel === 'junior' ? 'your subjects' : 'your Leaving Cert subjects'}.{' '}
-                    <span className="font-semibold text-[#F26B1F]">{selectedSubjects.size} selected</span>
+                    <span className="font-semibold text-accent">{selectedSubjects.size} selected</span>
                   </>}
                 />
                 <div>
@@ -994,7 +994,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                                 onClick={() => toggleSubject(subj.name)}
                                 className={`group flex items-center gap-2.5 px-4 py-3 rounded-2xl border-2 border-[#1A1A1A] font-sans font-medium text-[15px] transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
                                   selected
-                                    ? 'bg-[#F26B1F] text-white'
+                                    ? 'bg-accent text-white'
                                     : 'bg-white text-[#1A1A1A]'
                                 }`}
                               >
@@ -1087,7 +1087,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                           </div>
                           {/* Target band */}
                           <div>
-                            <p className="text-[10px] font-bold uppercase tracking-wider text-[#F26B1F] mb-1.5">My target</p>
+                            <p className="text-[10px] font-bold uppercase tracking-wider text-accent mb-1.5">My target</p>
                             <div className="flex flex-wrap gap-1.5">
                               {JC_BANDS.map((b, bi) => {
                                 // Target must be at least as good as current (lower index = better)
@@ -1122,8 +1122,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
             {step === 6 && curriculumLevel !== 'junior' && !isLca && (
               <MotionDiv key="step6" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 {isTransition && (
-                  <div className="mb-4 px-4 py-3 rounded-xl border-2 border-[#F26B1F] bg-[rgba(242,107,31,0.08)] text-center">
-                    <p className="text-xs font-bold uppercase tracking-widest text-[#F26B1F] mb-1">Stepping into senior cycle</p>
+                  <div className="mb-4 px-4 py-3 rounded-xl border-2 border-accent bg-accent/8 text-center">
+                    <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Stepping into senior cycle</p>
                     <p className="text-sm text-[#1A1A1A] dark:text-zinc-200">Pick where you are now and where you're aiming for your Leaving Cert.</p>
                   </div>
                 )}
@@ -1190,7 +1190,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                           </div>
                           {/* Target grade row */}
                           <div>
-                            <p className="text-[10px] font-bold uppercase tracking-wider text-[#F26B1F] mb-1.5">My target</p>
+                            <p className="text-[10px] font-bold uppercase tracking-wider text-accent mb-1.5">My target</p>
                             <div className="flex gap-1.5">
                               {grades.map((g, gi) => {
                                 const disabled = gi > currentIdx;
@@ -1285,7 +1285,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={day}
                               type="button"
                               onClick={() => toggleRestDay(day)}
-                              className={`flex min-h-16 items-center justify-between rounded-2xl border-2 border-[#1A1A1A] px-4 py-3 font-sans shadow-[3px_3px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none ${isRest ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'}`}
+                              className={`flex min-h-16 items-center justify-between rounded-2xl border-2 border-[#1A1A1A] px-4 py-3 font-sans shadow-[3px_3px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none ${isRest ? 'bg-accent text-white' : 'bg-white text-[#1A1A1A]'}`}
                             >
                               <span className="text-xs font-bold uppercase tracking-wider">{DAY_SHORTS[day]}</span>
                               {isRest ? <CalendarOff size={17} /> : <Check size={17} />}
@@ -1330,7 +1330,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                             // Study day = cream fill. Same press animation
                             // as the year + grade pickers.
                             className={`flex flex-col items-center justify-center gap-2 py-4 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                              isRest ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
+                              isRest ? 'bg-accent text-white' : 'bg-white text-[#1A1A1A]'
                             }`}
                           >
                             <span className="text-[11px] font-bold uppercase tracking-wider">{DAY_SHORTS[day]}</span>
@@ -1432,7 +1432,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                             <div className="flex items-center gap-2">
                               <span className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400">{band.currentBand}</span>
                               <ArrowRight size={12} className="text-zinc-300 dark:text-zinc-600" />
-                              <span className="text-[11px] font-bold text-[#F26B1F] dark:text-[#F26B1F]">{band.targetBand}</span>
+                              <span className="text-[11px] font-bold text-accent dark:text-accent">{band.targetBand}</span>
                             </div>
                           )}
                         </motion.div>
@@ -1461,7 +1461,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                         <div className="flex items-center gap-2">
                           <span className="text-xs font-bold text-zinc-500 dark:text-zinc-400">{config.currentGrade}</span>
                           <ArrowRight size={12} className="text-zinc-300 dark:text-zinc-600" />
-                          <span className="text-xs font-bold text-[#F26B1F] dark:text-[#F26B1F]">{config.targetGrade}</span>
+                          <span className="text-xs font-bold text-accent dark:text-accent">{config.targetGrade}</span>
                           {gain > 0 && (
                             <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 ml-1">+{gain}pts</span>
                           )}
@@ -1491,7 +1491,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                   <button
                     type="button"
                     onClick={() => void completeOnboarding(northStarData ?? undefined)}
-                    className="flex min-w-48 items-center gap-2 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] px-8 py-3 text-sm font-semibold text-white shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-none"
+                    className="flex min-w-48 items-center gap-2 rounded-2xl border-2 border-[#1A1A1A] bg-accent px-8 py-3 text-sm font-semibold text-white shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-none"
                   >
                     <span className="flex-1 text-center">{finishLabel}</span>
                     <ArrowRight size={14} />
@@ -1610,7 +1610,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                 disabled={!canProceed()}
                 // Chunky orange CTA matching the year/subject pickers'
                 // shadow language. Disabled state drops the shadow + dims.
-                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-40 disabled:cursor-not-allowed disabled:shadow-[2px_2px_0_0_#1A1A1A] disabled:translate-x-0 disabled:translate-y-0 disabled:hover:translate-y-0"
+                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-accent text-white font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-40 disabled:cursor-not-allowed disabled:shadow-[2px_2px_0_0_#1A1A1A] disabled:translate-x-0 disabled:translate-y-0 disabled:hover:translate-y-0"
                 style={{ minWidth: 160 }}
               >
                 <span className="flex-1 text-center">{step === 1 ? 'Get Started' : 'Next'}</span>
@@ -1619,7 +1619,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
             ) : (
               <button
                 onClick={() => void completeOnboarding(northStarData ?? undefined)}
-                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A]"
+                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-accent text-white font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A]"
                 style={{ minWidth: 160 }}
               >
                 <span className="flex-1 text-center">{guest ? 'Dive in' : 'Start learning'}</span>

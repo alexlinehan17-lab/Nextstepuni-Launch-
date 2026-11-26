@@ -36,7 +36,7 @@ const CYAN_DARK_TEXT = '#0A5560';
 const INK = '#1a1a1a';
 
 const cardShell =
-  'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
+  'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
 const fade = { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0, y: -8 }, transition: { duration: 0.22 } };
 
 type Step = 0 | 1 | 2 | 3 | 4 | 5 | 'summary';
@@ -87,7 +87,7 @@ const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent,
   };
 
   // shared bits ---------------------------------------------------
-  const inputCls = 'w-full rounded-xl px-3 py-2.5 text-[14px] outline-none bg-white dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 focus:border-[#0E9AA8] text-zinc-800 dark:text-zinc-100';
+  const inputCls = 'w-full rounded-xl px-3 py-2.5 text-[14px] outline-none bg-white dark:bg-surface-soft border-2 border-zinc-200 dark:border-zinc-700 focus:border-[#0E9AA8] text-zinc-800 dark:text-zinc-100';
 
   const Back = ({ onClick, label = 'Catch-Up Lane' }: { onClick: () => void; label?: string }) => (
     <button onClick={onClick} className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-4 max-w-xl mx-auto w-full">
@@ -98,7 +98,7 @@ const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent,
   const Dots = ({ active }: { active: number }) => (
     <div className="flex items-center gap-1.5 justify-center mb-4 max-w-xl mx-auto">
       {[0, 1, 2, 3, 4, 5].map(s => (
-        <span key={s} className="h-1.5 rounded-full transition-all" style={{ width: s === active ? 20 : 6, backgroundColor: s <= active ? CYAN : '#E2E0DC' }} />
+        <span key={s} className="h-1.5 rounded-full transition-all" style={{ width: s === active ? 20 : 6, backgroundColor: s <= active ? CYAN : 'var(--surface-soft)' }} />
       ))}
     </div>
   );

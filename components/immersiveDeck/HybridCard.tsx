@@ -14,6 +14,7 @@ import React from 'react';
 import { type LucideIcon } from 'lucide-react';
 import { type ColorWorld, paperInk } from './colorWorlds';
 import { useSettingsContext } from '../../contexts/SettingsContext';
+import { COLORS } from '../../design/tokens';
 
 export const SERIF = "'Source Serif 4', serif";
 export const INK = 'var(--deck-ink)';
@@ -23,8 +24,8 @@ export const LABEL = 'var(--deck-label)';
 export const HAIRLINE = 'var(--deck-hairline)';
 export const CARD_SHADOW = 'var(--deck-shadow)';
 /** App accent (orange) for primary CTAs. */
-export const ACCENT = '#F26B1F';
-export const ACCENT_DARK = '#B54D14';
+export const ACCENT = COLORS.accent;
+export const ACCENT_DARK = COLORS.accentDark;
 
 /** Ink for a world's coloured glyphs/text on the deck paper -- flips with the theme. */
 export const usePaperInk = (): ((w: ColorWorld) => string) => {
@@ -119,7 +120,7 @@ export const OrangeBtn: React.FC<{ label: string; icon?: LucideIcon; onClick: ()
 
 /** Neutral / secondary action — white pill, muted border. */
 export const NeutralBtn: React.FC<{ label: string; icon?: LucideIcon; onClick: () => void }> = ({ label, icon: Icon, onClick }) => (
-  <button onClick={onClick} className="inline-flex items-center gap-1.5 px-5 py-3 rounded-xl text-[13.5px] font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F26B1F]" style={{ backgroundColor: 'var(--deck-paper)', border: '2px solid var(--deck-hairline)', color: MUTED }}>
+  <button onClick={onClick} className="inline-flex items-center gap-1.5 px-5 py-3 rounded-xl text-[13.5px] font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent" style={{ backgroundColor: 'var(--deck-paper)', border: '2px solid var(--deck-hairline)', color: MUTED }}>
     {Icon && <Icon size={15} />} {label}
   </button>
 );
@@ -135,7 +136,7 @@ export const Segment: React.FC<{ options: { value: string; label: string }[]; va
     {options.map((o) => {
       const active = o.value === value;
       return (
-        <button key={o.value} type="button" aria-pressed={active} onClick={() => onChange(o.value)} className="px-3.5 py-1.5 rounded-full text-[12.5px] font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F26B1F]" style={active ? { backgroundColor: wd.bg, color: '#fff' } : { color: MUTED }}>
+        <button key={o.value} type="button" aria-pressed={active} onClick={() => onChange(o.value)} className="px-3.5 py-1.5 rounded-full text-[12.5px] font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent" style={active ? { backgroundColor: wd.bg, color: '#fff' } : { color: MUTED }}>
           {o.label}
         </button>
       );

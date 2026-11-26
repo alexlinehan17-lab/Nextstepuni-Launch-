@@ -3,18 +3,18 @@
 .nsu-kobra-nav {
   --background:var(--surface-canvas); --foreground:#222; --popover:#fff; --popover-foreground:#222;
   --sidebar:var(--surface-canvas); --sidebar-foreground:#252525; --sidebar-accent:#f1f1f1; --sidebar-accent-foreground:#161616;
-  --sidebar-border:#e4e4e4; --sidebar-ring:#b84a0c; --border:#e3e3e3; --muted:#f4f4f4; --muted-foreground:#6b6b6b;
-  --accent:#f1f1f1; --accent-foreground:#1b1b1b; --ring:#b84a0c; --destructive:#b92d35; --destructive-foreground:#fff;
+  --sidebar-border:#e4e4e4; --sidebar-ring:var(--accent-text); --border:#e3e3e3; --muted:#f4f4f4; --muted-foreground:#6b6b6b;
+  --accent:#f1f1f1; --accent-foreground:#1b1b1b; --ring:var(--accent-text); --destructive:#b92d35; --destructive-foreground:#fff;
   --primary:#222; --primary-foreground:#fff; --secondary:#eee; --secondary-foreground:#222; --input:#ddd;
   --radius:.625rem; --spacing:.25rem; --font-sans:'ABC Diatype','DM Sans',sans-serif;
   font-family:var(--font-sans); color:var(--foreground); font-size:14px; line-height:1.5;
 }
 .dark .nsu-kobra-nav {
-  --background:var(--surface-canvas); --foreground:#fafafa; --popover:#202020; --popover-foreground:#fafafa;
-  --sidebar:var(--surface-canvas); --sidebar-foreground:#ededed; --sidebar-accent:#292929; --sidebar-accent-foreground:#fafafa;
-  --sidebar-border:#2d2d30; --sidebar-ring:#e98547; --border:#333; --muted:#252525; --muted-foreground:#a4a4a7;
-  --accent:#29292b; --accent-foreground:#fafafa; --ring:#e98547; --destructive:#f87171;
-  --primary:#fafafa; --primary-foreground:#171717; --secondary:#292929; --secondary-foreground:#fafafa; --input:#333;
+  --background:var(--surface-canvas); --foreground:#fafafa; --popover:var(--surface-paper); --popover-foreground:#fafafa;
+  --sidebar:var(--surface-canvas); --sidebar-foreground:#ededed; --sidebar-accent:var(--surface-soft); --sidebar-accent-foreground:#fafafa;
+  --sidebar-border:var(--hairline); --sidebar-ring:var(--accent-text); --border:var(--hairline); --muted:var(--surface-soft); --muted-foreground:#a4a4a7;
+  --accent:var(--surface-soft); --accent-foreground:#fafafa; --ring:var(--accent-text); --destructive:#f87171;
+  --primary:#fafafa; --primary-foreground:#171717; --secondary:var(--surface-soft); --secondary-foreground:#fafafa; --input:var(--outline-soft);
 }
 .student-sidebar-shell { display:flex; width:100%; min-height:100dvh; background:var(--sidebar); }
 .student-sidebar-shell [data-slot=sidebar-gap], .student-sidebar-shell [data-slot=sidebar-container] { width:var(--navigation-width); transition:width 300ms cubic-bezier(.32,.72,0,1); }
@@ -25,10 +25,9 @@
 .student-sidebar-shell[data-resizing] { cursor:col-resize; user-select:none; }
 .student-sidebar-shell[data-resizing] :is([data-slot=sidebar-gap], [data-slot=sidebar-container], [data-student-page-header]) { transition:none !important; }
 .student-sidebar-shell [data-slot=sidebar-inner] { background:var(--sidebar); padding-top:var(--sat,0px); padding-bottom:var(--sab,0px); }
-.student-sidebar-shell .student-sidebar-page { --accent:242,107,31; min-width:0; margin:8px 8px 8px 0; border:0; border-radius:16px; box-shadow:none; overflow:clip; background:var(--surface-canvas); font:16px/1.5 'DM Sans',sans-serif; }
+.student-sidebar-shell .student-sidebar-page { --accent:var(--nsu-orange-rgb); min-width:0; margin:8px 8px 8px 0; border:0; border-radius:16px; box-shadow:none; overflow:clip; background:var(--surface-canvas); font:16px/1.5 'DM Sans',sans-serif; }
 .student-sidebar-shell .student-sidebar-page > :is(.product-shell, .theme-compat, .nsu-kobra, .min-h-screen),
 .student-sidebar-shell .student-sidebar-page :is(.nsu-learning, .nsu-planner, .nsu-progress) { background:var(--surface-canvas); }
-.student-sidebar-shell .student-sidebar-page .nsu-kobra { --background:var(--surface-canvas); }
 .student-sidebar-shell .student-sidebar-page .student-home { --student-paper:var(--surface-canvas); }
 .student-sidebar-shell [data-slot=sidebar][data-state=collapsed] ~ .student-sidebar-page { margin-left:0; }
 .nsu-kobra-nav .nsu-nav-header { padding:18px 14px 17px; }
@@ -75,7 +74,7 @@
 .nsu-nav-updates:hover { filter:brightness(.94); }
 .nsu-nav-updates:focus-visible { outline:2px solid var(--sidebar-ring); outline-offset:2px; }
 .nsu-nav-updates-count { padding:3px 6px; border-radius:4px; background:#fff; color:#292925; font-size:11px; line-height:1.2; white-space:nowrap; font-variant-numeric:tabular-nums; }
-.dark .nsu-nav-updates-count { background:#292925; color:#fff; }
+.dark .nsu-nav-updates-count { background:var(--surface-soft); color:#fff; }
 .nsu-nav-notification-count { margin-left:auto; padding:0 6px; border-radius:20px; background:var(--accent); color:var(--foreground); font-size:11px; }
 .nsu-kobra-nav .nsu-nav-account-menu { width:304px; max-width:calc(100vw - 24px); font-family:var(--font-sans); }
 .nsu-kobra-nav > div:has(> [data-slot=dropdown-menu-content]),

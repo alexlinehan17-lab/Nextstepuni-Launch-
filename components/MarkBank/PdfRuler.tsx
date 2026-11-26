@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import type { PDFDocumentProxy } from 'pdfjs-dist';
+import { COLORS } from '../../design/tokens';
 
 type Point = { x: number; y: number };
 
@@ -62,9 +63,9 @@ const PdfRuler: React.FC<{
         }));
       }}>
       <svg viewBox={`0 0 ${size.width} ${size.height}`} preserveAspectRatio="none" aria-hidden="true">
-        {a && b && <line x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke="#F26B1F" strokeWidth="2" />}
+        {a && b && <line x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke={COLORS.accent} strokeWidth="2" />}
         {[a, b].filter((p): p is Point => Boolean(p)).map((p, index) => (
-          <circle key={index} cx={p.x} cy={p.y} r="4" fill="#F26B1F" stroke="#1A1A1A" strokeWidth="1" />
+          <circle key={index} cx={p.x} cy={p.y} r="4" fill={COLORS.accent} stroke="#1A1A1A" strokeWidth="1" />
         ))}
         <path d={`M${crosshair.x - 6},${crosshair.y}h12 M${crosshair.x},${crosshair.y - 6}v12`}
           fill="none" stroke="#A8430E" strokeWidth="1.5" />

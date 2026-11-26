@@ -14,8 +14,9 @@ import { Share2, Check } from 'lucide-react';
 import { MotionDiv, useReducedMotion } from '../Motion';
 import { downloadMilestoneCard, type Milestone } from './milestones';
 import { FramePortal } from '../ui/Frame';
+import { COLORS } from '../../design/tokens';
 
-const CONFETTI = ['#F26B1F', '#3A8D5F', '#33658A', '#B54D14', '#8C3A0E'];
+const CONFETTI = [COLORS.accent, '#3A8D5F', '#33658A', COLORS.accentDark, COLORS.accentDarkText];
 
 interface Props {
   milestone: Milestone;
@@ -77,7 +78,7 @@ const MilestoneCelebration: React.FC<Props> = ({ milestone, dateIso, onClose }) 
         initial={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 0.85, y: 12 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.28, ease: 'easeOut' }}
-        className="relative w-full max-w-sm rounded-2xl border-2 border-[#1a1a1a] bg-white dark:bg-zinc-900 dark:border-zinc-700 shadow-[6px_6px_0_0_#1a1a1a] dark:shadow-[6px_6px_0_0_#3f3f46] px-7 py-8 text-center"
+        className="relative w-full max-w-sm rounded-2xl border-2 border-[#1a1a1a] bg-white dark:bg-surface-paper dark:border-zinc-700 shadow-[6px_6px_0_0_#1a1a1a] dark:shadow-[6px_6px_0_0_#3f3f46] px-7 py-8 text-center"
       >
         <div className="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center text-[30px]" style={{ backgroundColor: '#FDEEDF' }}>
           {milestone.kind === 'streak' ? '🔥' : '🎯'}
@@ -89,14 +90,14 @@ const MilestoneCelebration: React.FC<Props> = ({ milestone, dateIso, onClose }) 
           <button
             onClick={() => downloadMilestoneCard(milestone, dateIso)}
             className="inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-[13px] font-semibold border-2 transition-transform active:translate-y-0.5"
-            style={{ borderColor: 'rgba(242,107,31,0.35)', color: '#F26B1F' }}
+            style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.35)', color: COLORS.accent }}
           >
             <Share2 size={14} /> Share card
           </button>
           <button
             onClick={onClose}
             className="inline-flex items-center gap-1.5 rounded-full px-5 py-2 text-[13px] font-semibold text-white transition-transform active:translate-y-0.5"
-            style={{ backgroundColor: '#F26B1F', boxShadow: '0 3px 0 #B54D14' }}
+            style={{ backgroundColor: COLORS.accent, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
           >
             <Check size={14} /> Nice
           </button>

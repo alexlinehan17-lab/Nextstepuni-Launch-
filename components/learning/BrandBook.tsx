@@ -14,7 +14,7 @@ export function BrandBook({
   const style = {
     '--ib-paper': '#fffdf7',
     '--ib-ink': '#25241f',
-    '--ib-orange': '#eb692a',
+    '--ib-orange': 'var(--nsu-orange)',
   } as CSSProperties;
   const silhouettes = {
     'open-pages': 'M5 10 Q14 6 24 12 Q34 7 43 10 L42 37 Q33 34 24 40 Q14 35 5 38 Z',

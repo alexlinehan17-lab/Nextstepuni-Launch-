@@ -4,6 +4,7 @@
  */
 
 import { type ModuleTheme } from './types';
+import { COLORS } from './design/tokens';
 
 // ─── Theme colour definitions ───────────────────────────────────────────────
 // Each colour defines a Tailwind colour name and its hex for arbitrary values.
@@ -94,36 +95,36 @@ export const orangeTheme  = createTheme(THEME_COLORS.orange);
 export const tealTheme    = createTheme(THEME_COLORS.teal);
 
 // Brand-pivot accentTheme — uses arbitrary Tailwind values keyed to the
-// brand orange #F26B1F so this theme matches the platform-wide accent.
+// brand orange --nsu-orange so this theme matches the platform-wide accent.
 // Three modules (EffectiveStruggle, IllusionOfCompetence, ReframingProgress)
 // migrated from `tealTheme` to this on the teal→orange pivot.
 // `tealTheme` is kept unchanged because `SubjectModule.tsx` consumes it as
 // the literal Tailwind 'teal' palette via its subject-theme map.
 export const accentTheme: ModuleTheme = {
   highlightBg: 'bg-[#FDEEDF]/40',
-  highlightText: 'text-[#8C3A0E]',
-  highlightDecor: 'decoration-[#F26B1F]/40',
+  highlightText: 'text-accentDarkText',
+  highlightDecor: 'decoration-accent/40',
   highlightHover: 'hover:bg-[#FDEEDF]/60',
-  tooltipAccent: 'text-[#F26B1F]/70',
-  readingIconColor: 'text-[#F26B1F]/70',
+  tooltipAccent: 'text-accent/70',
+  readingIconColor: 'text-accent/70',
   readingEyebrowBg: 'bg-[#FDEEDF]',
-  readingEyebrowText: 'text-[#8C3A0E]',
+  readingEyebrowText: 'text-accentDarkText',
   microBg: 'bg-[#FDEEDF]/50',
-  microBorder: 'border-[#F26B1F]/30',
-  microIconBg: 'bg-[#F26B1F]',
-  microIconShadow: 'shadow-[0_0_10px_rgba(242,107,31,0.2)]',
-  microTitle: 'text-[#8C3A0E]',
-  sidebarModuleText: 'text-[#F26B1F]',
-  sidebarProgressBg: 'bg-[#F26B1F]',
-  sidebarProgressShadow: 'shadow-[0_0_10px_rgba(242,107,31,0.5)]',
+  microBorder: 'border-accent/30',
+  microIconBg: 'bg-accent',
+  microIconShadow: 'shadow-[0_0_10px_rgba(var(--nsu-orange-rgb), 0.2)]',
+  microTitle: 'text-accentDarkText',
+  sidebarModuleText: 'text-accent',
+  sidebarProgressBg: 'bg-accent',
+  sidebarProgressShadow: 'shadow-[0_0_10px_rgba(var(--nsu-orange-rgb), 0.5)]',
   sidebarActiveBg: 'bg-[#FDEEDF]',
-  sidebarCompletedBg: 'bg-[#B54D14]',
-  sidebarCompletedBorder: 'border-[#B54D14]',
-  sidebarActiveBorder: 'border-[#F26B1F]',
-  sidebarActiveText: 'text-[#8C3A0E]',
-  sidebarActiveEyebrow: 'text-[#F26B1F]',
-  footerHoverBg: 'hover:bg-[#B54D14]',
-  activityRingColor: '#F26B1F',
+  sidebarCompletedBg: 'bg-accentDark',
+  sidebarCompletedBorder: 'border-accentDark',
+  sidebarActiveBorder: 'border-accent',
+  sidebarActiveText: 'text-accentDarkText',
+  sidebarActiveEyebrow: 'text-accent',
+  footerHoverBg: 'hover:bg-accentDark',
+  activityRingColor: COLORS.accent,
 };
 export const cyanTheme    = createTheme(THEME_COLORS.cyan);
 export const slateTheme   = createTheme(THEME_COLORS.slate);

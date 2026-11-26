@@ -40,7 +40,7 @@ const CommandWordDecoder = () => {
     return (
          <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
             <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Command Word Decoder</h4>
                 <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Misreading what this word is asking for is one of the most common ways students lose marks.</p>
             </div>
@@ -162,7 +162,7 @@ const ExamDayTimelineBuilder = () => {
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
             <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Preparation</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Exam Preparation</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Exam Morning Planner</h4>
                 <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Build your optimal exam morning routine. Order matters.</p>
             </div>

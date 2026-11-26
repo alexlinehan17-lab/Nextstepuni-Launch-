@@ -121,15 +121,15 @@ export const YearTransitionFlow: React.FC<YearTransitionFlowProps> = ({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 10 }}
             transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
-            className="frame-sheet bg-white dark:bg-zinc-900 rounded-t-[24px] sm:rounded-[24px] border-[1.5px] border-[#383838] shadow-[5px_5px_0_0_#383838] max-w-md w-full px-6 pt-6 [--frame-pad-bottom:1.5rem]"
+            className="frame-sheet bg-white dark:bg-surface-paper rounded-t-[24px] sm:rounded-[24px] border-[1.5px] border-[#383838] shadow-[5px_5px_0_0_#383838] max-w-md w-full px-6 pt-6 [--frame-pad-bottom:1.5rem]"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Close button */}
             <div className="flex items-start justify-between mb-4">
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-[rgba(242,107,31,0.12)]">
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-accent/12">
                 {phase === 'confirm-graduate'
-                  ? <GraduationCap size={22} className="text-[#F26B1F]" />
-                  : <Sparkles size={22} className="text-[#F26B1F]" />}
+                  ? <GraduationCap size={22} className="text-accent" />
+                  : <Sparkles size={22} className="text-accent" />}
               </div>
               <button
                 onClick={close}
@@ -154,7 +154,7 @@ export const YearTransitionFlow: React.FC<YearTransitionFlowProps> = ({
                   <button
                     onClick={handleBumpConfirm}
                     disabled={isSubmitting}
-                    className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-150"
+                    className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-accent text-white font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-150"
                   >
                     {isSubmitting ? 'Saving…' : `Yes, I'm in ${yearGroupLabel(action.next)}`}
                     {!isSubmitting && <ArrowRight size={14} />}
@@ -230,7 +230,7 @@ export const YearTransitionFlow: React.FC<YearTransitionFlowProps> = ({
                   <button
                     onClick={close}
                     disabled={isSubmitting}
-                    className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-150"
+                    className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-accent text-white font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-150"
                   >
                     Not yet
                   </button>

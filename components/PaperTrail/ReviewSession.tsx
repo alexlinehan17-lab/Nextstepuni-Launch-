@@ -33,9 +33,10 @@ import { topUpDaily } from './dailySet';
 import { ArrowRight, Check } from 'lucide-react';
 import { AnimatePresence, MotionDiv, useReducedMotion } from '../Motion';
 import { type PaperLang, type PaperLevel } from '../../types/paperTrail';
+import { COLORS, accentRgba } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const LVL: Record<string, string> = { higher: 'HL', ordinary: 'OL', foundation: 'FL', common: 'CL' };
 
 const fmtInterval = (days: number) => (days < 1 ? '<1d' : days < 30 ? `${days}d` : `${Math.round(days / 30)}mo`);
@@ -193,7 +194,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
         </p>
 
         {/* Recall strength (FSRS target retention). */}
-        <div className="rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-3 mb-4">
+        <div className="rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3.5 py-3 mb-4">
           <div className="flex items-center justify-between mb-2">
             <span className="text-[12.5px] font-semibold" style={{ color: INK }}>Recall strength</span>
             <span className="text-[11px]" style={{ color: '#9e9186' }}>how sure before a card returns</span>
@@ -204,8 +205,8 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
                 key={label}
                 aria-pressed={Math.abs(retention - r) < 0.001}
                 onClick={() => { setTargetRetention(uid, r); setRetentionState(r); }}
-                className={`flex-1 py-1.5 rounded-md text-[12px] font-semibold transition-all ${Math.abs(retention - r) < 0.001 ? 'bg-white dark:bg-zinc-800 shadow-sm' : ''}`}
-                style={{ color: Math.abs(retention - r) < 0.001 ? '#F26B1F' : '#7a7068' }}
+                className={`flex-1 py-1.5 rounded-md text-[12px] font-semibold transition-all ${Math.abs(retention - r) < 0.001 ? 'bg-white dark:bg-surface-soft shadow-sm' : ''}`}
+                style={{ color: Math.abs(retention - r) < 0.001 ? COLORS.accent : '#7a7068' }}
               >
                 {label}<span className="ml-1 text-[10px] opacity-70 tabular-nums">{Math.round(r * 100)}%</span>
               </button>
@@ -219,7 +220,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
         ) : (
           <div className="space-y-1.5">
             {deck.map(c => (
-              <div key={`${c.subjectId}-${c.year}-${c.level}-${c.lang}-${c.fileid}-${c.n}`} className="flex items-center gap-2 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 pr-2">
+              <div key={`${c.subjectId}-${c.year}-${c.level}-${c.lang}-${c.fileid}-${c.n}`} className="flex items-center gap-2 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper pr-2">
                 <button onClick={() => onOpenQuestion(asSibling(c))} className="flex-1 px-3.5 py-2.5 text-left transition-transform active:translate-y-0.5">
                   <span className="block text-[13px] font-semibold" style={{ color: INK }}>
                     {subjectLabel(c.subjectId)}{c.topicId ? ` · ${topicLabel(c.topicId)}` : ''}
@@ -255,14 +256,14 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
         {header}
-        <div className="rounded-2xl bg-white dark:bg-zinc-900 px-6 py-7" style={{ border: '1.5px solid #383838' }}>
+        <div className="rounded-2xl bg-white dark:bg-surface-paper px-6 py-7" style={{ border: '1.5px solid #383838' }}>
           <p className="text-[10px] font-bold uppercase tracking-[0.16em]" style={{ color: '#A0968D' }}>Round complete · {done} reviewed</p>
           <div className="mt-4 flex flex-wrap items-center gap-6">
             <div className="relative h-[104px] w-[104px] shrink-0">
               <svg width="104" height="104" viewBox="0 0 104 104" className="-rotate-90" aria-hidden="true">
                 <circle cx="52" cy="52" r="44" fill="none" stroke="#ECE8E3" strokeWidth="7" className="dark:stroke-zinc-700" />
                 <circle cx="52" cy="52" r="44" fill="none" strokeWidth="7" strokeLinecap="round"
-                  stroke={pct >= 1 ? '#3A8D5F' : 'rgba(242,107,31,0.62)'}
+                  stroke={pct >= 1 ? '#3A8D5F' : accentRgba(0.62)}
                   strokeDasharray={C} strokeDashoffset={C * (1 - pct)} />
               </svg>
               <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -337,7 +338,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
           <button
             onClick={seedFromWeak}
             className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[13.5px] font-semibold text-white transition-transform active:translate-y-0.5"
-            style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}
+            style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
           >
             Seed from my {weakCount} weak question{weakCount === 1 ? '' : 's'}
           </button>
@@ -346,7 +347,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
           <button
             onClick={reviewAhead}
             className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[13.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
-            style={{ borderColor: 'rgba(242,107,31,0.35)', color: ACCENT }}
+            style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.35)', color: ACCENT }}
           >
             Review ahead ({deckSize})
           </button>
@@ -354,7 +355,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
         {weakest && (
           <button
             onClick={drillWeakest}
-            className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-3 mt-4 text-left transition-transform active:translate-y-0.5 hover:border-[#F26B1F]"
+            className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3.5 py-3 mt-4 text-left transition-transform active:translate-y-0.5 hover:border-accent"
           >
             <span className="flex-1 min-w-0">
               <span className="block text-[10.5px] font-bold uppercase tracking-[0.1em]" style={{ color: '#9e9186' }}>Keep going</span>
@@ -413,7 +414,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
           animate={{ opacity: 1, y: 0 }}
           exit={reduceMotion ? { opacity: 0 } : { opacity: 0, y: -10 }}
           transition={{ duration: reduceMotion ? 0 : 0.2, ease: 'easeOut' }}
-          className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1a1a1a] dark:shadow-[4px_4px_0_0_#3f3f46] px-5 py-6 mb-5"
+          className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1a1a1a] dark:shadow-[4px_4px_0_0_#3f3f46] px-5 py-6 mb-5"
         >
           <p className="text-[10.5px] font-bold uppercase tracking-[0.12em] mb-2" style={{ color: '#9e9186' }}>
             {subjectLabel(card.subjectId)}{topic ? ` · ${topic}` : ''}

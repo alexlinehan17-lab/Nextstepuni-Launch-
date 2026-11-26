@@ -18,9 +18,10 @@ import {
   saveGuardianConsent,
   type GuardianWeekSummary,
 } from '../../data/guardianSummary';
+import { COLORS } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const validEmail = (e: string) => /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e);
 
 const GuardianConsent: React.FC<{ uid?: string; preview: GuardianWeekSummary }> = ({ uid, preview }) => {
@@ -51,7 +52,7 @@ const GuardianConsent: React.FC<{ uid?: string; preview: GuardianWeekSummary }> 
   const mail = buildGuardianEmail(preview);
 
   return (
-    <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-4 mb-6">
+    <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-4 py-4 mb-6">
       <p className="text-[14px] font-semibold mb-1 flex items-center gap-1.5" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
         <Mail size={16} style={{ color: ACCENT }} /> Weekly update for a parent or guardian
       </p>
@@ -64,12 +65,12 @@ const GuardianConsent: React.FC<{ uid?: string; preview: GuardianWeekSummary }> 
           value={email}
           onChange={e => { setEmail(e.target.value); setSaved(false); }}
           placeholder="guardian@example.com"
-          className="flex-1 min-w-[180px] px-3 py-2 rounded-lg border-2 border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-[13.5px] outline-none focus:border-[#1a1a1a]"
+          className="flex-1 min-w-[180px] px-3 py-2 rounded-lg border-2 border-zinc-200 dark:border-zinc-700 bg-white dark:bg-surface-paper text-[13.5px] outline-none focus:border-[#1a1a1a]"
         />
         <label className="flex items-center gap-1.5 text-[12.5px] font-medium" style={{ color: INK }}>
           <input type="checkbox" checked={optIn} onChange={e => { setOptIn(e.target.checked); setSaved(false); }} /> Send weekly
         </label>
-        <button onClick={save} disabled={!canSave} className="px-4 py-2 rounded-full text-[13px] font-semibold text-white disabled:opacity-40 transition-transform active:translate-y-0.5" style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}>
+        <button onClick={save} disabled={!canSave} className="px-4 py-2 rounded-full text-[13px] font-semibold text-white disabled:opacity-40 transition-transform active:translate-y-0.5" style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}>
           {saved ? <span className="inline-flex items-center gap-1"><Check size={13} /> Saved</span> : 'Save'}
         </button>
       </div>

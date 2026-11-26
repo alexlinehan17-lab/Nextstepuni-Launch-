@@ -11,13 +11,13 @@
   font-display: swap;
 }
 .auth-live {
-  --al-paper: #fff;
-  --al-canvas: #fafafa;
-  --al-ink: #171717;
-  --al-muted: #6d6d6d;
-  --al-line: #dedede;
-  --al-soft: #f5f5f5;
-  --al-focus: #b84a0c;
+  --al-paper: var(--surface-paper);
+  --al-canvas: var(--surface-canvas);
+  --al-ink: var(--ink-primary);
+  --al-muted: var(--ink-muted);
+  --al-line: var(--outline-soft);
+  --al-soft: var(--surface-soft);
+  --al-focus: var(--accent-text);
   color: var(--al-ink);
   background: var(--al-canvas);
   min-height: 100dvh;
@@ -29,13 +29,13 @@
   color-scheme: light;
 }
 .dark .auth-live {
-  --al-paper: #242424;
-  --al-canvas: #181818;
+  --al-paper: var(--surface-paper);
+  --al-canvas: var(--surface-canvas);
   --al-ink: #f5f5f5;
   --al-muted: #bbb;
-  --al-line: #505050;
-  --al-soft: #303030;
-  --al-focus: #f99a63;
+  --al-line: var(--outline-soft);
+  --al-soft: var(--surface-soft);
+  --al-focus: var(--accent-text);
   color-scheme: dark;
 }
 .auth-live * {
@@ -82,7 +82,7 @@
 }
 .auth-live-wordmark > span,
 .auth-live-identity h2 > span {
-  color: #e96f2e;
+  color: var(--nsu-orange);
 }
 .auth-live-layout {
   display: grid;
@@ -441,7 +441,7 @@
 }
 .dark .auth-live button.auth-live-primary {
   border-color: #777;
-  background: #141414;
+  background: var(--surface-canvas);
   color: #fff;
 }
 .auth-live-primary > svg {

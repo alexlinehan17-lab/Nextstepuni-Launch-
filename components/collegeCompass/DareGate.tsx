@@ -44,7 +44,7 @@ const DareGate: React.FC<DareGateProps> = ({ categoryId, onCategoryChange }) => 
     >
       <span
         className="inline-flex items-center justify-center w-5 h-5 rounded-md shrink-0"
-        style={{ backgroundColor: met ? COLORS.success : '#E7E5E2' }}
+        style={{ backgroundColor: met ? COLORS.success : 'var(--surface-soft)' }}
       >
         {met ? <Check size={13} className="text-white" /> : <span className="block w-2 h-2 rounded-full bg-zinc-400" />}
       </span>
@@ -53,7 +53,7 @@ const DareGate: React.FC<DareGateProps> = ({ categoryId, onCategoryChange }) => 
   );
 
   return (
-    <div className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5">
+    <div className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5">
       <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400 dark:text-zinc-500 mb-1">
         Self-check
       </p>
@@ -132,7 +132,7 @@ const DareGate: React.FC<DareGateProps> = ({ categoryId, onCategoryChange }) => 
             >
               <span
                 className="inline-flex items-center justify-center w-5 h-5 rounded-md shrink-0"
-                style={{ backgroundColor: on ? COLORS.accent : '#F0EEEB' }}
+                style={{ backgroundColor: on ? COLORS.accent : 'var(--surface-soft)' }}
               >
                 {on && <Check size={13} className="text-white" />}
               </span>

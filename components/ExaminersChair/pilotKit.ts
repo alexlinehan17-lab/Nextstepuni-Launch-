@@ -10,6 +10,7 @@
  * the download is a thin browser wrapper, mirroring progressReport.ts.
  */
 
+import { COLORS } from '../../design/tokens';
 export const PILOT_KIT_FILENAME = 'run-a-marking-class.html';
 
 /** Build the one-pager. Pure. */
@@ -26,10 +27,10 @@ export function buildPilotKitHtml(): string {
   h2 { font-family: Georgia, 'Source Serif 4', serif; font-size: 16px; margin: 22px 0 8px; }
   ol { padding-left: 20px; margin: 0; }
   li { margin-bottom: 8px; font-size: 14px; }
-  .step b { color: #8C3A0E; }
+  .step b { color: ${COLORS.accentDarkText}; }
   .box { border: 2px solid #1a1a1a; border-radius: 14px; padding: 14px 16px; margin: 14px 0; }
   .privacy { background: #E8F2EC; border: none; border-left: 3px solid #3A8D5F; border-radius: 0 10px 10px 0; color: #1F5F3E; font-size: 13.5px; }
-  .tip { background: #FDEEDF; border: none; border-left: 3px solid #F26B1F; border-radius: 0 10px 10px 0; color: #8C3A0E; font-size: 13.5px; font-style: italic; }
+  .tip { background: #FDEEDF; border: none; border-left: 3px solid ${COLORS.accent}; border-radius: 0 10px 10px 0; color: ${COLORS.accentDarkText}; font-size: 13.5px; font-style: italic; }
   .muted { color: #7a7068; font-size: 12px; margin-top: 24px; }
   @media print { body { margin: 0 auto; } .noprint { display: none; } }
 </style>

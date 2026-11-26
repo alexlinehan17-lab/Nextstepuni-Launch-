@@ -93,7 +93,7 @@ export const StaffAccessPanel: React.FC<{ school: string }> = ({ school }) => {
       </p>
 
       {loading ? <p className="text-sm text-zinc-400">Loading…</p> : (
-        <section className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-6">
+        <section className="rounded-2xl border border-zinc-200 dark:border-hairline bg-white dark:bg-surface-paper p-6">
           <p className="text-[11px] font-semibold uppercase tracking-widest text-zinc-400">Student join code</p>
           <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2">
             Students use this during registration. It remains active until you rotate it.

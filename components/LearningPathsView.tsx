@@ -110,7 +110,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
 
   return (
     <div className="product-shell learning-paths-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] pb-32 transition-colors duration-500">
-      <div data-student-page-header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-4 md:px-10 dark:border-zinc-800 dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
+      <div data-student-page-header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-4 md:px-10 dark:border-hairline dark:bg-surface-canvas" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
         <div className="mx-auto max-w-7xl"><PageHeader onBack={onBack} eyebrow="Guided learning" title="Learning Paths" compact /></div>
       </div>
       <div className="frame-page [--frame-pad-top:8rem] max-w-5xl mx-auto px-4 sm:px-6">
@@ -284,7 +284,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                       <button
                         onClick={() => firstIncomplete && onSelectModule(firstIncomplete)}
                         aria-label={`${completed > 0 ? 'Continue' : 'Start'} ${path.title}`}
-                        className="group inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)] rounded-md"
+                        className="group inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35 rounded-md"
                         style={{
                           ...SANS,
                           fontSize: 14,
@@ -305,7 +305,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                     <button
                       onClick={() => setExpandedPathId(isExpanded ? null : path.id)}
                       aria-label={`${isExpanded ? 'Hide' : 'View'} modules in ${path.title}`}
-                      className="inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)] rounded-md"
+                      className="inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35 rounded-md"
                       style={{
                         ...SANS,
                         fontSize: 12,
@@ -344,7 +344,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                               <li key={moduleId}>
                                 <button
                                   onClick={() => onSelectModule(moduleId)}
-                                  className="w-full flex items-center gap-3 py-2 px-2 rounded-lg hover:bg-[#F4EFE5] transition-colors text-left group"
+                                  className="w-full flex items-center gap-3 py-2 px-2 rounded-lg hover:bg-surface-soft transition-colors text-left group"
                                 >
                                   {/* Tiny status dot — accent for done, muted for pending */}
                                   <span

@@ -1,6 +1,7 @@
 import { catalogueSubject, subjectHasWrittenExam, LCA_SUBJECTS } from '../subjectData';
 import { examinationYearFromDate, resolveSubjectId } from '../../curriculumRegistry';
 import { peekTopicPractice, clearTopicPractice } from '../../utils/topicLaunch';
+import { COLORS } from '../../design/tokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -889,7 +890,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
 
       {/* The Sunday Debrief — the week in the student's own numbers (F11). */}
       {debrief && (
-        <section className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-4 mb-6">
+        <section className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-4 py-4 mb-6">
           <div className="flex items-start justify-between gap-2">
             <div>
               <p className="text-[10.5px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>The Sunday debrief</p>
@@ -912,7 +913,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
             ))}
           </ul>
           {debrief.focus && (
-            <p className="text-[12.5px] italic rounded-lg px-3 py-2" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', borderLeft: '3px solid #F26B1F' }}>
+            <p className="text-[12.5px] italic rounded-lg px-3 py-2" style={{ backgroundColor: '#FDEEDF', color: COLORS.accentDarkText, borderLeft: '3px solid var(--nsu-orange)' }}>
               {debrief.focus}
             </p>
           )}
@@ -921,7 +922,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
 
       {/* The Coach — "your next 20 minutes", composed across every tool's signals. */}
       {coachPlan.length > 0 && (
-        <section className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3.5 mb-6">
+        <section className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-4 py-3.5 mb-6">
           <div className="flex items-baseline justify-between mb-2.5">
             <h3 className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
               Your next {coachPlan.reduce((a, i) => a + i.minutes, 0)} minutes
@@ -936,11 +937,11 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
                   if (item.route === 'chair') onOpenTool?.('examiners-chair');
                   else setView({ v: item.route });
                 }}
-                className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 px-3 py-2.5 text-left transition-transform active:translate-y-0.5 hover:border-[#F26B1F]"
+                className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 px-3 py-2.5 text-left transition-transform active:translate-y-0.5 hover:border-accent"
               >
                 <span
                   className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[13px] font-bold text-white"
-                  style={{ backgroundColor: '#F26B1F', fontFamily: "'Source Serif 4', serif" }}
+                  style={{ backgroundColor: COLORS.accent, fontFamily: "'Source Serif 4', serif" }}
                 >
                   {i + 1}
                 </span>

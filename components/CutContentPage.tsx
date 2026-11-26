@@ -6,6 +6,7 @@
 import React, { useMemo, useState } from 'react';
 import { ArrowLeft, Printer, ArrowRight, FileText } from 'lucide-react';
 import { CUT_CONTENT, type CutContentEntry, type CutAction } from '../data/cutContent';
+import { COLORS } from '../design/tokens';
 
 interface CutContentPageProps {
   onBack: () => void;
@@ -21,7 +22,7 @@ const PANEL = 'var(--surface-soft)';
 const MUTED = 'var(--page-muted)';
 const LABEL = 'var(--page-label)';
 const FAINT = 'var(--ink-faint)';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const ACCENT_TINT = 'var(--accent-tint)';
 const ACCENT_DARK_TEXT = 'var(--accent-tint-ink)';
 const SUCCESS_TINT = 'var(--success-tint)';
@@ -33,7 +34,7 @@ type FilterKey = 'all' | CutAction | 'awaiting';
 // (attention — a fix was needed); removed = neutral (absence). No blue/purple.
 const ACTION_META: Record<CutAction, { label: string; tint: string; text: string; border: string }> = {
   reframed: { label: 'Reframed', tint: SUCCESS_TINT, text: SUCCESS_DARK_TEXT, border: 'rgba(58,141,95,0.3)' },
-  corrected: { label: 'Corrected', tint: ACCENT_TINT, text: ACCENT_DARK_TEXT, border: 'rgba(242,107,31,0.25)' },
+  corrected: { label: 'Corrected', tint: ACCENT_TINT, text: ACCENT_DARK_TEXT, border: 'rgba(var(--nsu-orange-rgb), 0.25)' },
   removed: { label: 'Removed', tint: 'var(--neutral-tint)', text: MUTED, border: '#d0cdc8' },
 };
 
@@ -326,7 +327,7 @@ const CutContentPage: React.FC<CutContentPageProps> = ({ onBack }) => {
                   <span
                     className="text-[10.5px] font-bold px-1.5 rounded-full"
                     style={{
-                      backgroundColor: active ? 'rgba(255,255,255,0.22)' : '#f0eeec',
+                      backgroundColor: active ? 'rgba(255,255,255,0.22)' : 'var(--surface-soft)',
                       color: active ? 'white' : FAINT,
                     }}
                   >

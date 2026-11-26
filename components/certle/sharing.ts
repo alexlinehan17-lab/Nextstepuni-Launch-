@@ -1,5 +1,6 @@
 import { bestResult, resultsFor, shareText, type Game } from "./game";
 import type { CertleQuestion } from "./data";
+import { COLORS } from '../../design/tokens';
 
 export const PUBLIC_CERTLE_URL = "https://nextstepuni.com/certle";
 export type SharePlatform = "Facebook" | "LinkedIn" | "X" | "WhatsApp";
@@ -58,7 +59,7 @@ export async function createResultImage(data: ResultShareData): Promise<File> {
   const ctx = canvas.getContext("2d");
   if (!ctx) throw new Error("Image export is unavailable.");
   const ink = "#1a1a1a",
-    orange = "#f26b1f";
+    orange = COLORS.accent;
   ctx.fillStyle = orange;
   ctx.fillRect(0, 0, 1080, 1080);
   ctx.fillStyle = "#fff";

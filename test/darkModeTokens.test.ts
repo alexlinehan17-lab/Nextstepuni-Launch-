@@ -19,11 +19,11 @@
  */
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { resolve as resolve_ } from 'node:path';
 
-const ROOT = resolve(__dirname, '..');
-const css = readFileSync(resolve(ROOT, 'index.css'), 'utf8');
-const html = readFileSync(resolve(ROOT, 'index.html'), 'utf8');
+const ROOT = resolve_(__dirname, '..');
+const css = readFileSync(resolve_(ROOT, 'index.css'), 'utf8');
+const html = readFileSync(resolve_(ROOT, 'index.html'), 'utf8');
 
 function tokensIn(selector: string): Map<string, string> {
   const re = new RegExp(String.raw`(?:^|\})\s*${selector}\s*\{([\s\S]*?)\n\}`, 'm');
@@ -35,6 +35,82 @@ function tokensIn(selector: string): Map<string, string> {
 
 const light = tokensIn(':root');
 const dark = tokensIn(String.raw`\.dark`);
+
+/** A token whose light value is `var(--other)` is an alias: it follows the set in both themes. */
+const isAlias = (name: string) => /^var\(--[a-z0-9-]+\)$/.test(light.get(name) ?? '');
+/** Follow aliases to a literal, in the given theme. */
+function resolve(name: string, theme: 'light' | 'dark'): string {
+  let value = (theme === 'dark' ? dark.get(name) : undefined) ?? light.get(name) ?? '';
+  for (let i = 0; i < 5; i += 1) {
+    const ref = value.match(/^var\((--[a-z0-9-]+)\)$/);
+    if (!ref) break;
+    value = (theme === 'dark' ? dark.get(ref[1]) : undefined) ?? light.get(ref[1]) ?? '';
+  }
+  return value;
+}
+
+/**
+ * The one set of values, exactly as the design system specifies it
+ * (nextstepuni-design skill, references/tokens.md, decided 24-25 Nov 2026).
+ * Pinned to the literal, light and dark, so a dark value cannot quietly drift
+ * into a "slightly different black" again and no part of the set can go missing.
+ */
+const THE_SET: Record<string, [light: string, dark: string]> = {
+  '--surface-canvas': ['#ffffff', '#181818'],
+  '--surface-paper': ['#ffffff', '#242424'],
+  '--surface-soft': ['#f5f5f5', '#101010'],
+  '--surface-raised': ['#ffffff', '#2c2c2c'],
+  '--ink-primary': ['#171717', '#f5f5f5'],
+  '--ink-secondary': ['#575757', '#bbbbbb'],
+  '--ink-muted': ['#6b6b6b', '#9a9a9a'],
+  '--hairline': ['#e5e5e5', '#3a3a3a'],
+  '--outline-soft': ['#d6d6d6', '#505050'],
+  '--outline-strong': ['#383838', '#f5f5f5'],
+  '--action': ['#191919', '#f5f5f5'],
+  '--action-ink': ['#ffffff', '#181818'],
+  '--nsu-orange': ['#eb692a', '#eb692a'],
+  '--accent-text': ['#b84a0c', '#f58c4e'],
+  '--success-hex': ['#3a8d5f', '#56ad7c'],
+  '--success-tint': ['#e8f2ec', '#1d3327'],
+  '--success-tint-ink': ['#1f5f3e', '#9fd9b6'],
+  '--danger-tint': ['#fde4e4', '#3a2020'],
+  '--danger-tint-ink': ['#8e2c2c', '#f0a9a9'],
+  '--lift-ctl': ['0 1px 2px rgba(23, 23, 23, 0.06)', 'none'],
+  '--lift': ['0 2px 3px rgba(0, 0, 0, 0.03), 0 13px 25px -9px rgba(0, 0, 0, 0.14)', 'none'],
+  '--float': ['0 18px 40px -18px rgba(20, 20, 18, 0.34)', '0 18px 40px -18px rgba(0, 0, 0, 0.7)'],
+};
+
+describe('the one set of values', () => {
+  for (const [token, [lightValue, darkValue]] of Object.entries(THE_SET)) {
+    it(`${token} is ${lightValue} in light and ${darkValue} in dark`, () => {
+      expect(resolve(token, 'light').toLowerCase(), `${token} (light)`).toBe(lightValue);
+      expect(resolve(token, 'dark').toLowerCase(), `${token} (dark)`).toBe(darkValue);
+    });
+  }
+
+  it('keeps focus in its own policy file, light and dark', () => {
+    const focus = readFileSync(resolve_(ROOT, 'design/quiet-focus.css'), 'utf8');
+    expect(focus).toMatch(/:root\s*\{\s*--nsu-focus-edge:\s*#383833;/);
+    expect(focus).toMatch(/\.dark\s*\{\s*--nsu-focus-edge:\s*#e4e2db;/);
+  });
+
+  it('has no cream left in the set', () => {
+    for (const name of ['--bg-card-soft', '--bg-card-cream']) {
+      expect(light.has(name), `${name} is cream and was deleted`).toBe(false);
+      expect(html, `${name} is cream and was deleted`).not.toContain(`${name}:`);
+    }
+  });
+
+  it('defines the scales once, outside the colour blocks', () => {
+    for (const step of ['--space-1: 4px', '--space-4: 16px', '--space-6: 24px', '--space-8: 32px', '--space-12: 48px',
+      '--r-sm: 9px', '--r-ctl: 12px', '--r-box: 14px', '--r-card: 20px']) {
+      expect(css, `${step} missing`).toContain(step);
+    }
+    for (const style of ['display', 'title', 'name', 'heading', 'row', 'body', 'sub', 'meta', 'label', 'readout', 'number']) {
+      expect(css, `type style .t-${style} missing`).toMatch(new RegExp(String.raw`^\.t-${style} \{`, 'm'));
+    }
+  });
+});
 
 describe('dark mode tokens', () => {
   it('parses both blocks', () => {
@@ -49,19 +125,24 @@ describe('dark mode tokens', () => {
       '--result-stat-count',
       // Ink sitting ON the accent stays dark in both themes. The accent is a
       // mid-orange either way, and dark ink clears AA on it where white does
-      // not (white on #F26B1F is only 3.04:1).
+      // not (white on #eb692a is only 3.2:1).
       '--ink-on-accent',
-      // Text variants of two fill colours: #F26B1F is 3.04:1 and #F59E0B is
-      // 2.15:1 on white, so neither is usable as an ink there. Dark needs no
-      // equivalent — on a dark ground the authored colours already pass.
-      '--accent-text',
+      // A fill colour's ink on white: #F59E0B is 2.15:1 there. On a dark
+      // ground the authored colour already passes.
       '--warning-text',
       // The one orange (Kobra's --nsu-orange, also Tailwind's accent) is the
-      // same in both themes, as it is in approved-ui-theme.css.
+      // same in both themes, as it is in approved-ui-theme.css, and so are its
+      // triplet and the darker shades that edge an orange button.
       '--nsu-orange',
+      '--nsu-orange-rgb',
+      '--accent-dark',
+      '--accent-dark-hex',
+      '--accent-dark-text',
+      '--accent-dark-text-hex',
+      '--success-dark-text',
     ]);
     const missing = [...light.keys()]
-      .filter(k => !dark.has(k) && !themeIndependent.has(k));
+      .filter(k => !dark.has(k) && !themeIndependent.has(k) && !isAlias(k));
     expect(missing, `defined for light but not for dark: ${missing.join(', ')}`).toEqual([]);
   });
 
@@ -75,42 +156,59 @@ describe('dark mode tokens', () => {
   });
 
   /**
-   * The light ink scale, retuned August 2026.
-   *
-   * Measured on #f0f0f0, the editorial canvas — the darkest light surface and so
-   * the binding one. The previous scale had muted at 4.24:1, label at 2.69:1 and
-   * faint at 2.07:1; the bottom two were never legible text. Asserted by
-   * contrast rather than pinned to literals, so the palette can be re-tuned
-   * without rewriting the test — it only has to stay readable.
+   * The ink scale clears AA on every light surface. The darkest one in the set
+   * is --surface-soft (#f5f5f5, a well or a disabled button), so it binds; the
+   * page itself is white. Asserted by contrast rather than pinned, so the
+   * palette can be re-tuned without rewriting the test.
    */
-  it('clears AA on the editorial canvas, the darkest light surface', () => {
-    const CANVAS = '#f0f0f0';
-    const srgb = (hex: string) => [1, 3, 5].map(i => {
-      const v = parseInt(hex.slice(i, i + 2), 16) / 255;
-      return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
-    });
-    const lu = (hex: string) => { const [r, g, b] = srgb(hex); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
-    const cr = (a: string, b: string) => {
-      const [l1, l2] = [lu(a), lu(b)].sort((x, y) => y - x);
-      return (l1 + 0.05) / (l2 + 0.05);
-    };
-    for (const token of ['--ink-primary', '--ink-secondary', '--ink-muted', '--ink-faint',
-                         '--page-body', '--page-muted', '--page-label',
-                         '--accent-text', '--warning-text']) {
-      const v = light.get(token);
-      expect(v, `${token} missing`).toBeDefined();
-      const r = cr(v!, CANVAS);
-      expect(r, `${token} is ${r.toFixed(2)}:1 on the ${CANVAS} canvas`).toBeGreaterThanOrEqual(4.5);
+  const srgb = (hex: string) => [1, 3, 5].map(i => {
+    const v = parseInt(hex.slice(i, i + 2), 16) / 255;
+    return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+  });
+  const lu = (hex: string) => { const [r, g, b] = srgb(hex); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
+  const cr = (a: string, b: string) => {
+    const [l1, l2] = [lu(a), lu(b)].sort((x, y) => y - x);
+    return (l1 + 0.05) / (l2 + 0.05);
+  };
+  const INKS = ['--ink-primary', '--ink-secondary', '--ink-muted', '--ink-faint',
+    '--page-body', '--page-muted', '--page-label', '--text-primary', '--text-body', '--text-muted', '--text-label'];
+
+  it('clears AA on the darkest light surface', () => {
+    const SOFT = resolve('--surface-soft', 'light');
+    for (const token of [...INKS, '--accent-text', '--warning-text']) {
+      const v = resolve(token, 'light');
+      expect(v, `${token} missing`).toMatch(/^#[0-9a-f]{6}$/i);
+      const r = cr(v, SOFT);
+      expect(r, `${token} is ${r.toFixed(2)}:1 on --surface-soft ${SOFT}`).toBeGreaterThanOrEqual(4.5);
     }
   });
 
-  it('keeps the muted steps distinguishable from each other', () => {
-    // Raising every step to exactly 4.5 collapses muted, label and faint into a
-    // single tone. Three steps is what the 4.5-7:1 band actually fits.
-    const steps = ['--page-body', '--page-muted', '--page-label']
-      .map(t => parseInt(light.get(t)!.slice(1, 3), 16));
+  it('clears AA in dark on every surface a word can sit on', () => {
+    for (const surface of ['--surface-canvas', '--surface-paper', '--surface-raised', '--surface-soft']) {
+      const ground = resolve(surface, 'dark');
+      for (const token of [...INKS, '--accent-text']) {
+        const r = cr(resolve(token, 'dark'), ground);
+        expect(r, `${token} is ${r.toFixed(2)}:1 on dark ${surface}`).toBeGreaterThanOrEqual(4.5);
+      }
+    }
+  });
+
+  it('keeps the three ink steps distinguishable from each other', () => {
+    // Raising every step to exactly 4.5 collapses them into a single tone.
+    // Three steps is what the 4.5-7:1 band actually fits.
+    const steps = ['--ink-primary', '--ink-secondary', '--ink-muted']
+      .map(t => parseInt(resolve(t, 'light').slice(1, 3), 16));
     for (let i = 1; i < steps.length; i++) {
-      expect(steps[i] - steps[i - 1], 'the muted steps have collapsed together').toBeGreaterThanOrEqual(8);
+      expect(steps[i] - steps[i - 1], 'the ink steps have collapsed together').toBeGreaterThanOrEqual(8);
+    }
+  });
+
+  it('every older name for a page, ink or line is an alias of the set', () => {
+    for (const name of ['--page-canvas', '--page-body', '--page-muted', '--page-label', '--ink-faint',
+      '--bg-page', '--bg-card', '--text-primary', '--text-body', '--text-muted', '--text-label',
+      '--border-strong', '--border-soft', '--border-faint', '--accent-hex', '--mountain-paper', '--mountain-ink']) {
+      expect(isAlias(name), `${name} should be var(--…) of the set, is ${light.get(name)}`).toBe(true);
+      expect(dark.has(name), `${name} is an alias; a dark value would fork it`).toBe(false);
     }
   });
 });
@@ -146,7 +244,7 @@ describe('screens opt into a dark treatment', () => {
   ];
   for (const file of needsCompat) {
     it(`${file} carries theme-compat`, () => {
-      expect(readFileSync(resolve(ROOT, file), 'utf8')).toContain('theme-compat');
+      expect(readFileSync(resolve_(ROOT, file), 'utf8')).toContain('theme-compat');
     });
   }
 
@@ -154,7 +252,7 @@ describe('screens opt into a dark treatment', () => {
     // LoginPage and ResetPasswordPage used `data-theme="light"` + colorScheme,
     // which set the surface but not the text, leaving near-white type on white.
     for (const file of needsCompat) {
-      const src = readFileSync(resolve(ROOT, file), 'utf8');
+      const src = readFileSync(resolve_(ROOT, file), 'utf8');
       expect(src, `${file} still forces light`).not.toContain('data-theme="light"');
       expect(src, `${file} still forces light`).not.toContain("colorScheme: 'light'");
     }
@@ -163,58 +261,15 @@ describe('screens opt into a dark treatment', () => {
 
 
 /**
- * index.html carries a SECOND token system — --bg-*, --text-*, --border-* —
- * predating the --surface/--ink set in index.css and still consumed by inline
- * style props across the modules and the training hub.
- *
- * It was missed in the first dark-mode pass precisely because the audit only
- * read index.css, and `--text-label` sat at #71717a: 3.37:1 on its own
- * --bg-card, failing AA on every stat label in the training hub. Contrast is
- * asserted here rather than assumed.
+ * index.html used to carry a SECOND token system (--bg-*, --text-*, --border-*)
+ * with its own dark values, which is how --text-label once sat at 3.37:1. It
+ * now lives in index.css as aliases of the set (asserted above); index.html
+ * must not grow its own colour tokens again.
  */
-describe('index.html token system', () => {
-  function block(selector: string): Map<string, string> {
-    const re = new RegExp(String.raw`${selector}\s*\{([\s\S]*?)\n\s*\}`, 'm');
-    const body = html.match(re)?.[1] ?? '';
-    const out = new Map<string, string>();
-    for (const m of body.matchAll(/(--[a-z0-9-]+)\s*:\s*([^;]+);/g)) out.set(m[1], m[2].trim());
-    return out;
-  }
-  const dark = block(String.raw`html\.dark`);
-
-  const srgb = (hex: string) => [1, 3, 5].map(i => {
-    const v = parseInt(hex.slice(i, i + 2), 16) / 255;
-    return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
-  });
-  const lum = (hex: string) => { const [r, g, b] = srgb(hex); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
-  const ratio = (a: string, b: string) => {
-    const [l1, l2] = [lum(a), lum(b)].sort((x, y) => y - x);
-    return (l1 + 0.05) / (l2 + 0.05);
-  };
-  const hex = (name: string) => (dark.get(name) ?? '').split(/\s/)[0];
-
-  it('parses the dark block', () => {
-    expect(dark.size).toBeGreaterThan(8);
-    expect(hex('--bg-card')).toMatch(/^#[0-9a-f]{6}$/i);
-  });
-
-  it('every text token clears AA on the card it sits on', () => {
-    const card = hex('--bg-card');
-    for (const token of ['--text-primary', '--text-body', '--text-muted', '--text-label']) {
-      const r = ratio(hex(token), card);
-      expect(r, `${token} is ${r.toFixed(2)}:1 on --bg-card`).toBeGreaterThanOrEqual(4.5);
-    }
-  });
-
-  it('keeps a visible hierarchy between the text tokens', () => {
-    const card = hex('--bg-card');
-    const steps = ['--text-primary', '--text-body', '--text-muted', '--text-label']
-      .map(t => ratio(hex(t), card));
-    // Each step should be no brighter than the one above it, or the scale has
-    // collapsed and "label" reads as loudly as "primary".
-    for (let i = 1; i < steps.length; i++) {
-      expect(steps[i], `${steps[i].toFixed(2)} vs ${steps[i - 1].toFixed(2)}`).toBeLessThanOrEqual(steps[i - 1]);
-    }
+describe('index.html carries no colour tokens', () => {
+  it('defines no --bg-*, --text-*, --border-*, --accent* or --success* of its own', () => {
+    const own = [...html.matchAll(/^\s*(--(?:bg|text|border|accent|success)[a-z0-9-]*)\s*:/gm)].map(m => m[1]);
+    expect(own, `colour tokens in index.html: ${own.join(', ')}`).toEqual([]);
   });
 });
 
@@ -222,13 +277,13 @@ describe('index.html token system', () => {
 /**
  * Ink on the brand accent.
  *
- * White on #F26B1F is 3.04:1 and cream 2.88:1 — both fail AA, and in BOTH
+ * White on the orange is 3.2:1 and cream lower — both fail AA, and in BOTH
  * themes, so this is not a dark-mode concern. --ink-on-accent is the token for
  * it and is deliberately the one value shared across themes, because the accent
  * itself does not change.
  */
 describe('ink on the accent', () => {
-  const ACCENT = '#F26B1F';
+  const ACCENT = '#eb692a';
   const srgb = (hex: string) => [1, 3, 5].map(i => {
     const v = parseInt(hex.slice(i, i + 2), 16) / 255;
     return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
@@ -255,11 +310,14 @@ describe('ink on the accent', () => {
     // bg-[var(--accent-hex)] form is how the study-session Start pill slipped
     // through the first attempt.
     for (const form of [
-      'bg-[#F26B1F]',
+      '[class~="bg-accent"]',
       'bg-[var(--accent-hex)]',
       'bg-[var(--accent-dark-hex)]',
-      'background-color: rgb(242, 107, 31)',
-      'background: rgb(242, 107, 31)',
+      'bg-[var(--nsu-orange)]',
+      'background-color: rgb(235, 105, 42)',
+      'background: rgb(235, 105, 42)',
+      'background-color: var(--nsu-orange)',
+      'background: var(--nsu-orange)',
     ]) {
       expect(css, `accent surface form not covered: ${form}`).toContain(form);
     }

@@ -96,7 +96,7 @@ const NeuroplasticityVisualizer = () => {
   return (
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
       <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
         <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>The Brain Rewiring Simulator</h4>
         <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Every time you practice, you strengthen the physical connections in your brain.</p>
       </div>
@@ -195,7 +195,7 @@ const ReframeChallenge = ({ savedText, onSave }: { savedText?: string; onSave?: 
     return(
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
             <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Growth Mindset Activity</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Growth Mindset Activity</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>The "Yet" Reframe Challenge</h4>
                 <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Upgrade this fixed thought into a growth mindset statement using the power of "yet".</p>
             </div>
@@ -209,7 +209,7 @@ const ReframeChallenge = ({ savedText, onSave }: { savedText?: string; onSave?: 
             {/* Transformation connector */}
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '16px 0' }}>
                 <div style={{ width: 2, height: 20, background: "var(--module-surface)" }} />
-                <div style={{ background: moduleFill(COLORS.accentTint), border: '1.5px solid rgba(242,107,31,0.3)', borderRadius: 20, padding: '6px 14px' }}>
+                <div style={{ background: moduleFill(COLORS.accentTint), border: '1.5px solid rgba(var(--nsu-orange-rgb), 0.3)', borderRadius: 20, padding: '6px 14px' }}>
                     <span style={{ fontSize: 12, fontWeight: 700, color: moduleText(COLORS.accentDarkText), letterSpacing: '0.05em' }}>ADD "YET"</span>
                 </div>
                 <div style={{ width: 2, height: 20, background: "var(--module-surface)" }} />
@@ -302,14 +302,14 @@ const FeedbackTranslator = () => {
   return (
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
       <div className="text-center mb-2">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Interactive Activity</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Interactive Activity</span>
         <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Feedback Translator</h4>
         <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Tap each card to translate harsh "verdict language" into constructive "data language."</p>
       </div>
 
       {/* Progress chip */}
       <div className="flex justify-center mb-8 mt-3">
-        <div className="inline-flex items-center gap-2" style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '5px 14px' }}>
+        <div className="inline-flex items-center gap-2" style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '5px 14px' }}>
           <span style={{ fontSize: 13, fontWeight: 600, color: moduleText(COLORS.accentDarkText) }}>
             {allTranslated ? `All ${feedbackPairs.length} translated ✓` : `${translatedCount} / ${feedbackPairs.length} translated`}
           </span>

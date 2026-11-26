@@ -5,6 +5,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { Capacitor } from '@capacitor/core';
+import { COLORS, accentRgba } from '../design/tokens';
 
 const TRIGGER_DISTANCE = 70;
 const MAX_PULL = 120;
@@ -161,7 +162,7 @@ const PullToRefresh: React.FC<PullToRefreshProps> = ({ children }) => {
             cy="11"
             r={ARC_RADIUS}
             fill="none"
-            stroke="rgba(242,107,31,0.12)"
+            stroke={accentRgba(0.12)}
             strokeWidth="2"
           />
           {/* Progress arc */}
@@ -170,7 +171,7 @@ const PullToRefresh: React.FC<PullToRefreshProps> = ({ children }) => {
             cy="11"
             r={ARC_RADIUS}
             fill="none"
-            stroke="#F26B1F"
+            stroke={COLORS.accent}
             strokeWidth="2"
             strokeLinecap="round"
             strokeDasharray={ARC_CIRCUMFERENCE}

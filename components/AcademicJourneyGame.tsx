@@ -19,6 +19,7 @@ import {
     applyJourneyChoice, createJourneyEvidence, getKeyTurningPoints,
     getStrongestCapability, getWeakestCapability, normaliseCapabilityImpact, normaliseEnergyImpact,
 } from './journeySimulatorData';
+import { COLORS } from '../design/tokens';
 
 export interface JourneyResult {
   endingId: string;
@@ -530,7 +531,7 @@ export const JourneyOutcomeReport: React.FC<{
                             {summary}
                         </p>
                     </div>
-                    <div className="border-l-2 border-[#F26B1F] pl-4 lg:mb-1">
+                    <div className="border-l-2 border-accent pl-4 lg:mb-1">
                         <p className="text-[10px] font-bold uppercase tracking-[.18em] text-[var(--ink-muted)]">Your clearest signal</p>
                         <p className="mt-2 font-serif text-[26px] font-semibold leading-tight text-[var(--ink-primary)]">{strongestLabel}</p>
                         <p className="mt-1 text-sm text-[var(--ink-secondary)]">The quality your choices relied on most.</p>
@@ -598,7 +599,7 @@ export const JourneyOutcomeReport: React.FC<{
                                             animate={{ width: `${Math.max(2, Math.min(100, value))}%` }}
                                             transition={{ duration: 0.7, delay: 0.06 * index, ease: editorialEase }}
                                             className="h-full rounded-full"
-                                            style={{ background: isStrongest ? '#F26B1F' : isWeakest ? 'var(--ink-primary)' : 'var(--ink-muted)' }}
+                                            style={{ background: isStrongest ? COLORS.accent : isWeakest ? 'var(--ink-primary)' : 'var(--ink-muted)' }}
                                         />
                                     </div>
                                 </div>
@@ -621,7 +622,7 @@ export const JourneyOutcomeReport: React.FC<{
                                 <p className="font-mono text-xs font-bold text-[var(--ink-primary)]">{gameState.energy}/100</p>
                             </div>
                             <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-[var(--surface-soft)]">
-                                <div className="h-full rounded-full bg-[#F26B1F]" style={{ width: `${Math.max(2, Math.min(100, gameState.energy))}%` }} />
+                                <div className="h-full rounded-full bg-accent" style={{ width: `${Math.max(2, Math.min(100, gameState.energy))}%` }} />
                             </div>
                             <p className="mt-2 text-[11px] leading-relaxed text-[var(--ink-muted)]">Energy is a changing resource, shown separately from your capabilities. Protect sleep and recovery before adding more study hours.</p>
                         </div>
@@ -634,7 +635,7 @@ export const JourneyOutcomeReport: React.FC<{
                                 type="button"
                                 onClick={() => onSelectModule?.(primaryModule.moduleId)}
                                 disabled={!onSelectModule}
-                                className="group mt-3 flex min-h-12 w-full items-center justify-between gap-4 rounded-xl bg-[#F26B1F] px-4 py-3 text-left text-sm font-bold text-white transition-transform hover:-translate-y-0.5 disabled:cursor-default disabled:hover:translate-y-0"
+                                className="group mt-3 flex min-h-12 w-full items-center justify-between gap-4 rounded-xl bg-accent px-4 py-3 text-left text-sm font-bold text-white transition-transform hover:-translate-y-0.5 disabled:cursor-default disabled:hover:translate-y-0"
                             >
                                 <span>Start with {primaryModule.moduleTitle}</span>
                                 <ArrowRight size={17} className="shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true" />

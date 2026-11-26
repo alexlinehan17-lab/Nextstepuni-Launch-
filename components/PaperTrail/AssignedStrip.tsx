@@ -18,11 +18,12 @@ import {
   markAssignmentComplete,
   type Assignment,
 } from '../../data/assignments';
+import { COLORS } from '../../design/tokens';
 
 const STATUS_STYLE = {
   done: { bg: '#E8F2EC', fg: '#1F5F3E', label: 'Done' },
   overdue: { bg: '#FBEAE8', fg: '#8E2A20', label: 'Overdue' },
-  open: { bg: '#FDEEDF', fg: '#8C3A0E', label: 'To do' },
+  open: { bg: '#FDEEDF', fg: COLORS.accentDarkText, label: 'To do' },
 } as const;
 
 interface Props {
@@ -51,7 +52,7 @@ const AssignedStrip: React.FC<Props> = ({ uid, school, completions = {} }) => {
   };
 
   return (
-    <div className="w-full rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3.5 mb-5">
+    <div className="w-full rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-4 py-3.5 mb-5">
       <p className="text-[10.5px] font-bold uppercase tracking-[0.12em] mb-2 flex items-center gap-1.5" style={{ color: '#9e9186' }}>
         <ClipboardList size={13} /> Set by your school
       </p>

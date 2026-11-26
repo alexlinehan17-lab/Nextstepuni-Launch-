@@ -25,9 +25,10 @@ import { downloadPack } from './revisionPack';
 import { loadCalibration, paceScale } from './wpmStore';
 import WpmCalibrator from './WpmCalibrator';
 import { Repeat } from 'lucide-react';
+import { COLORS } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const SUCCESS = '#3A8D5F';
 const LVL: Record<string, string> = { higher: 'HL', ordinary: 'OL', foundation: 'FL', common: 'CL' };
 const paperAbbr = (k: string) => (k === 'p1' ? 'P1' : k === 'p2' ? 'P2' : '');
@@ -148,7 +149,7 @@ const MockExamBuilder: React.FC<Props> = ({ uid, now, subjects, mineIds, subject
               if (s) setSet(s);
             }}
             className="inline-flex items-center gap-1.5 px-8 py-3 rounded-full text-[14.5px] font-semibold text-white transition-transform active:translate-y-0.5"
-            style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}
+            style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
           >
             <Play size={14} /> Start writing
           </button>
@@ -192,7 +193,7 @@ const MockExamBuilder: React.FC<Props> = ({ uid, now, subjects, mineIds, subject
 
         <div className="space-y-1.5 mb-5">
           {set.items.map((it, i) => (
-            <div key={`${it.q.year}-${it.q.level}-${it.q.lang}-${it.q.fileid}-${it.q.n}`} className="flex items-center gap-2 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 pr-2">
+            <div key={`${it.q.year}-${it.q.level}-${it.q.lang}-${it.q.fileid}-${it.q.n}`} className="flex items-center gap-2 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper pr-2">
               <button
                 onClick={() => onToggle(i)}
                 aria-pressed={it.done}
@@ -210,7 +211,7 @@ const MockExamBuilder: React.FC<Props> = ({ uid, now, subjects, mineIds, subject
                 {set.rehearsal && !it.done && (
                   <span
                     className="shrink-0 flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[10px] font-bold tabular-nums whitespace-nowrap"
-                    style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)' }}
+                    style={{ backgroundColor: '#FDEEDF', color: COLORS.accentDarkText, border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)' }}
                   >
                     <Clock3 size={9} /> ~{perQBudget}m
                   </span>
@@ -226,11 +227,11 @@ const MockExamBuilder: React.FC<Props> = ({ uid, now, subjects, mineIds, subject
             onClick={addToReview}
             disabled={added}
             className="inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-[13px] font-semibold border-2 transition-transform active:translate-y-0.5 disabled:opacity-100"
-            style={added ? { borderColor: '#3A8D5F', backgroundColor: '#E8F2EC', color: '#1F5F3E' } : { borderColor: 'rgba(242,107,31,0.35)', color: ACCENT }}
+            style={added ? { borderColor: '#3A8D5F', backgroundColor: '#E8F2EC', color: '#1F5F3E' } : { borderColor: 'rgba(var(--nsu-orange-rgb), 0.35)', color: ACCENT }}
           >
             {added ? <><Check size={14} /> Added to review</> : <><Repeat size={14} /> Add all to review</>}
           </button>
-          <button onClick={() => downloadPack(packOpts)} className="inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-[13px] font-semibold border-2 transition-transform active:translate-y-0.5" style={{ borderColor: 'rgba(242,107,31,0.35)', color: ACCENT }}>
+          <button onClick={() => downloadPack(packOpts)} className="inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-[13px] font-semibold border-2 transition-transform active:translate-y-0.5" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.35)', color: ACCENT }}>
             <Download size={14} /> Export set
           </button>
           <button onClick={finish} className="inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-[13px] font-semibold border-2 transition-transform active:translate-y-0.5" style={{ borderColor: '#d0cdc8', color: '#7a7068' }}>
@@ -372,7 +373,7 @@ const MockExamBuilder: React.FC<Props> = ({ uid, now, subjects, mineIds, subject
         onClick={build}
         disabled={maxCount === 0}
         className="w-full py-3 rounded-full text-[14.5px] font-semibold text-white disabled:opacity-40 transition-transform active:translate-y-0.5"
-        style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}
+        style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
       >
         Build set
       </button>

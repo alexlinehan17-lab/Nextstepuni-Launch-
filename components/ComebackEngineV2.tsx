@@ -229,8 +229,8 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
           <MotionDiv key="setup" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }} className="grid gap-6 lg:grid-cols-2">
             <section className={`${shell} p-6 md:p-8`}>
               <div className="mb-7 flex items-center gap-3">
-                <span className="font-mono text-[11px] font-bold text-[#F26B1F]">01</span>
-                <span className="h-px w-10 bg-[#F26B1F]" />
+                <span className="font-mono text-[11px] font-bold text-accent">01</span>
+                <span className="h-px w-10 bg-accent" />
                 <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#A39A91]">First, what changed?</p>
               </div>
               <h2 className="mt-2 font-serif text-2xl font-semibold">No judgement. Just a better starting point.</h2>
@@ -254,8 +254,8 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
           <button className="mb-4 text-sm underline" onClick={() => setStage('setup')}>Back to what changed</button>
             <section className={`${shell} p-6 md:p-8`}>
               <div className="mb-7 flex items-center gap-3">
-                <span className="font-mono text-[11px] font-bold text-[#F26B1F]">02</span>
-                <span className="h-px w-10 bg-[#F26B1F]" />
+                <span className="font-mono text-[11px] font-bold text-accent">02</span>
+                <span className="h-px w-10 bg-accent" />
                 <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#A39A91]">Choose an honest week</p>
               </div>
               <h2 className="mt-2 font-serif text-2xl font-semibold">What can you genuinely manage?</h2>
@@ -271,7 +271,7 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
                   );
                 })}
               </div>
-              {legacyAnchor && <p className="mt-5 rounded-xl bg-[#F3F0EC] px-4 py-3 text-xs leading-5 text-[#5F574F]">Your previous goal is preserved: <strong>{legacyAnchor}</strong></p>}
+              {legacyAnchor && <p className="mt-5 rounded-xl bg-surface-soft px-4 py-3 text-xs leading-5 text-[#5F574F]">Your previous goal is preserved: <strong>{legacyAnchor}</strong></p>}
               <PrimaryActionButton label="Read my recovery signals" icon={ArrowRight} onClick={() => setStage('diagnosis')} className="mt-7 w-full" />
             </section>
           </MotionDiv>
@@ -288,10 +288,10 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
               {draftPlan.signals.map((signal, index) => {
                 const tone = signalTone[signal.tone];
                 return (
-                  <div key={signal.id} className="min-h-40 bg-white p-6 dark:bg-[#202020]">
+                  <div key={signal.id} className="min-h-40 bg-white p-6 dark:bg-surface-paper">
                     <div className="mb-5 flex items-center gap-3">
-                      <span className="font-mono text-[11px] font-bold text-[#F26B1F]">{String(index + 1).padStart(2, '0')}</span>
-                      <span className="h-px w-8 bg-[#F26B1F]" />
+                      <span className="font-mono text-[11px] font-bold text-accent">{String(index + 1).padStart(2, '0')}</span>
+                      <span className="h-px w-8 bg-accent" />
                     </div>
                     <h3 className="text-sm font-bold" style={{ color: tone.ink }}>{signal.label}</h3>
                     <p className="mt-2 text-sm leading-6 text-[#6F6861] dark:text-[#C9C2BA]">{signal.detail}</p>
@@ -315,21 +315,21 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
 
         {stage === 'plan' && (
           <MotionDiv key="plan" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }} className="grid gap-6 lg:grid-cols-[300px_1fr]">
-            <aside className="h-fit overflow-hidden rounded-[24px] border-2 border-[#F26B1F] bg-white shadow-[5px_5px_0_0_#F26B1F] dark:bg-[#202020]">
+            <aside className="h-fit overflow-hidden rounded-[24px] border-2 border-accent bg-white shadow-[5px_5px_0_0_var(--nsu-orange)] dark:bg-surface-paper">
               <div className="p-6">
                 <div className="mb-6 flex items-center gap-3">
-                  <span className="font-mono text-[11px] font-bold text-[#F26B1F]">07</span>
-                  <span className="h-px w-10 bg-[#F26B1F]" />
+                  <span className="font-mono text-[11px] font-bold text-accent">07</span>
+                  <span className="h-px w-10 bg-accent" />
                   <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#A39A91]">Day plan</p>
                 </div>
                 <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#A39A91]">Seven-day target</p>
                 <p className="mt-1 font-serif text-4xl font-semibold">{completed}<span className="text-xl text-[#A39A91]">/{activePlan.actions.length}</span></p>
-                <div className="mt-4 h-2 overflow-hidden rounded-full bg-[#E7E1DA]"><div className="h-full rounded-full bg-[#F26B1F] transition-[width] duration-500" style={{ width: `${completionPercent}%` }} /></div>
+                <div className="mt-4 h-2 overflow-hidden rounded-full bg-surface-soft"><div className="h-full rounded-full bg-accent transition-[width] duration-500" style={{ width: `${completionPercent}%` }} /></div>
               </div>
-              <div className="space-y-5 border-t border-[#E7E1DA] p-6">
+              <div className="space-y-5 border-t border-hairline p-6">
                 <div><p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#A39A91]">Focus</p><p className="mt-1 text-sm font-bold">{activePlan.priorities.join(' · ')}</p></div>
                 <div><p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#A39A91]">Capacity</p><p className="mt-1 text-sm font-bold">{activePlan.capacity} blocks, maximum</p></div>
-                <p className="border-l-2 border-[#F26B1F] pl-3 text-xs leading-5 text-[#6F6861] dark:text-[#C9C2BA]">Finishing every block is useful. Missing one does not erase the others—the plan can be rebuilt without penalty.</p>
+                <p className="border-l-2 border-accent pl-3 text-xs leading-5 text-[#6F6861] dark:text-[#C9C2BA]">Finishing every block is useful. Missing one does not erase the others—the plan can be rebuilt without penalty.</p>
               </div>
             </aside>
 
@@ -342,7 +342,7 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
                       <p className="mt-1 flex items-center gap-1.5 text-xs text-[#766E67] dark:text-[#BBB3AB]"><Clock3 size={13} /> {action.durationMinutes} min</p>
                     </div>
                     <div>
-                      <div className="flex flex-wrap items-center gap-2"><h3 className={`font-serif text-xl font-semibold ${action.done ? 'line-through' : ''}`}>{action.subject}</h3><span className="rounded-md bg-[#F3F0EC] px-2 py-1 text-[9px] font-bold uppercase tracking-[0.1em] text-[#5F574F]">{action.sessionType.replace('-', ' ')}</span></div>
+                      <div className="flex flex-wrap items-center gap-2"><h3 className={`font-serif text-xl font-semibold ${action.done ? 'line-through' : ''}`}>{action.subject}</h3><span className="rounded-md bg-surface-soft px-2 py-1 text-[9px] font-bold uppercase tracking-[0.1em] text-[#5F574F]">{action.sessionType.replace('-', ' ')}</span></div>
                       {action.topic && <p className="mt-1 text-sm font-semibold text-[#A43F08]">{action.topic}</p>}
                       <p className="mt-1.5 text-xs leading-5 text-[#766E67] dark:text-[#BBB3AB]">{action.reason}</p>
                     </div>

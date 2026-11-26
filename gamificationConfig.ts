@@ -4,6 +4,7 @@
  */
 
 import { type NorthStarCategory } from './types';
+import { COLORS } from './design/tokens';
 
 // ─── Athlete Ranks ──────────────────────────────────────────────────────────
 
@@ -20,7 +21,7 @@ export interface AthleteRank {
 // student should still take ~1 week to reach Beginner, and Legend should
 // sit beyond a full-catalogue completion (~7.5k pts from sections alone).
 export const ATHLETE_RANKS: AthleteRank[] = [
-  { id: 'newcomer',   title: 'Newcomer',   minPoints: 0,     icon: 'Footprints', color: 'orange-500',  colorHex: '#F26B1F' },
+  { id: 'newcomer',   title: 'Newcomer',   minPoints: 0,     icon: 'Footprints', color: 'orange-500',  colorHex: COLORS.accent },
   { id: 'beginner',   title: 'Beginner',   minPoints: 400,   icon: 'Flame',      color: 'blue-500',    colorHex: '#4361EE' },
   { id: 'consistent', title: 'Consistent', minPoints: 1200,  icon: 'TrendingUp', color: 'emerald-500', colorHex: '#10b981' },
   { id: 'dedicated',  title: 'Dedicated',  minPoints: 2400,  icon: 'Target',     color: 'teal-500',    colorHex: '#14b8a6' },

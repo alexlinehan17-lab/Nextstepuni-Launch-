@@ -15,6 +15,7 @@ import { TrendingDown, ArrowRight, ChevronRight } from 'lucide-react';
 import { allMarks, type GapKind } from './attemptStore';
 import { siblingsFor, topicLabel, topicsForPaper, type TopicSibling } from './topics';
 import { type PaperLang, type PaperLevel } from '../../types/paperTrail';
+import { COLORS } from '../../design/tokens';
 
 const GAP_LABEL: Record<GapKind, string> = {
   content: 'Didn’t know it',
@@ -84,10 +85,10 @@ const WeaknessMap: React.FC<{
   };
 
   return (
-    <div className="mb-6 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-4">
+    <div className="mb-6 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-4">
       <div className="flex items-center justify-between gap-2 mb-3">
         <h3 className="text-[15px] font-semibold flex items-center gap-1.5" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
-          <TrendingDown size={16} style={{ color: '#F26B1F' }} /> Your practice
+          <TrendingDown size={16} style={{ color: COLORS.accent }} /> Your practice
         </h3>
         <span className="text-[11px]" style={{ color: '#7a7068' }}>
           {overall.n} self-marked · avg {overall.avg}%
@@ -104,9 +105,9 @@ const WeaknessMap: React.FC<{
               <button
                 key={`${t.subjectId}-${t.subtopicId}`}
                 onClick={() => drill(t)}
-                className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2 text-left transition-transform active:translate-y-0.5 hover:border-[#F26B1F]"
+                className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3 py-2 text-left transition-transform active:translate-y-0.5 hover:border-accent"
               >
-                <span className="shrink-0 w-11 text-[14px] font-bold tabular-nums" style={{ color: t.avg < 50 ? '#F26B1F' : '#1a1a1a', fontFamily: "'Source Serif 4', serif" }}>
+                <span className="shrink-0 w-11 text-[14px] font-bold tabular-nums" style={{ color: t.avg < 50 ? COLORS.accent : '#1a1a1a', fontFamily: "'Source Serif 4', serif" }}>
                   {t.avg}%
                 </span>
                 <span className="flex-1 min-w-0">
@@ -115,7 +116,7 @@ const WeaknessMap: React.FC<{
                     {subjectName(t.subjectId)} · {t.count} attempt{t.count === 1 ? '' : 's'}
                   </span>
                 </span>
-                <ArrowRight size={15} className="shrink-0" style={{ color: '#F26B1F' }} />
+                <ArrowRight size={15} className="shrink-0" style={{ color: COLORS.accent }} />
               </button>
             ))}
           </div>
@@ -128,7 +129,7 @@ const WeaknessMap: React.FC<{
 
       {topGap && (
         <p className="mt-3 text-[11.5px]" style={{ color: '#5a5550' }}>
-          Most common gap: <b style={{ color: '#8C3A0E' }}>{GAP_LABEL[topGap[0]]}</b> ({topGap[1]}×).
+          Most common gap: <b style={{ color: COLORS.accentDarkText }}>{GAP_LABEL[topGap[0]]}</b> ({topGap[1]}×).
           {topGap[0] === 'careless' && ' Slow down and check your working.'}
           {topGap[0] === 'process' && ' Revisit the method, not just the facts.'}
           {topGap[0] === 'content' && ' These are revision gaps — go back to the notes.'}
@@ -140,7 +141,7 @@ const WeaknessMap: React.FC<{
         <button
           onClick={onOpenDashboard}
           className="mt-3 flex items-center gap-1 text-[12.5px] font-semibold"
-          style={{ color: '#F26B1F' }}
+          style={{ color: COLORS.accent }}
         >
           See full progress <ChevronRight size={14} />
         </button>

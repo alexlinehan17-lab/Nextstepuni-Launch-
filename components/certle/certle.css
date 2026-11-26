@@ -5,7 +5,7 @@
 }
 .certle-page {
   --certle-ink: #1a1a1a;
-  --certle-orange: #f26b1f;
+  --certle-orange: var(--nsu-orange);
   background: #fff;
   color: var(--certle-ink);
   min-height: 100vh;
@@ -25,7 +25,7 @@
   cursor: default;
 }
 .certle-page :is(button, a, textarea, summary):focus-visible {
-  outline: 3px solid #b84a0c;
+  outline: 3px solid var(--accent-text);
   outline-offset: 4px;
 }
 .certle-main {
@@ -79,7 +79,7 @@
 }
 .certle-letter-0,
 .certle-letter-3 {
-  background: #f26b1f;
+  background: var(--nsu-orange);
   color: #1a1a1a;
 }
 .certle-letter-2 {
@@ -126,7 +126,7 @@
   text-transform: uppercase;
 }
 .certle-date > span {
-  color: #b84a0c;
+  color: var(--accent-text);
 }
 .certle-tools {
   display: flex;
@@ -144,7 +144,7 @@
   color: #1a1a1a;
 }
 .certle-tool-button:hover {
-  color: #b84a0c;
+  color: var(--accent-text);
 }
 .certle-play {
   display: grid;
@@ -155,7 +155,7 @@
   background: #fff;
 }
 .certle-question-sheet {
-  background: #f26b1f;
+  background: var(--nsu-orange);
   padding: 30px 32px 25px;
   display: flex;
   flex-direction: column;
@@ -310,7 +310,7 @@
   box-shadow: 0 2px 0 #e7e5e3;
 }
 .certle-squares > span.is-earned {
-  background: #f26b1f;
+  background: var(--nsu-orange);
   border-color: #1a1a1a;
   color: #1a1a1a;
   box-shadow: 0 2px 0 #1a1a1a;
@@ -428,7 +428,7 @@
   color: #1a1a1a;
 }
 .certle-primary:not(:disabled):hover {
-  background: #f26b1f;
+  background: var(--nsu-orange);
   color: #1a1a1a;
   transform: translateY(-1px);
   box-shadow: 0 3px 0 #1a1a1a;
@@ -461,7 +461,7 @@
   gap: 8px;
 }
 .certle-text-button:hover {
-  color: #b84a0c;
+  color: var(--accent-text);
 }
 .certle-finish {
   display: flex;
@@ -593,7 +593,7 @@
   align-items: end;
 }
 .certle-scheme-title .certle-eyebrow {
-  color: #b84a0c;
+  color: var(--accent-text);
 }
 .certle-scheme-title h2 {
   font:
@@ -641,7 +641,7 @@
   border-radius: 4px;
 }
 .certle-scheme .is-earned .certle-scheme-status {
-  background: #f26b1f;
+  background: var(--nsu-orange);
   border-color: #1a1a1a;
 }
 .certle-scheme li p {
@@ -690,7 +690,7 @@
   margin-right: 7px;
 }
 .certle-footer a:hover {
-  color: #b84a0c;
+  color: var(--accent-text);
 }
 .certle-load {
   min-height: 470px;
@@ -722,7 +722,7 @@
 .certle-loading-tiles i {
   width: 27px;
   height: 27px;
-  background: #f26b1f;
+  background: var(--nsu-orange);
   border: 1px solid #1a1a1a;
   border-radius: 4px;
   animation: certle-loading 1.5s infinite;
@@ -812,7 +812,7 @@
 }
 .certle-help-number {
   font: 500 24px/1 "Source Serif 4", Georgia, serif;
-  color: #b84a0c;
+  color: var(--accent-text);
 }
 .certle-help-steps strong {
   font-weight: 650;
@@ -838,7 +838,7 @@
   border-radius: 2px;
 }
 .certle-help-example > .is-earned {
-  background: #f26b1f;
+  background: var(--nsu-orange);
   border-color: #1a1a1a;
 }
 .certle-help-example > strong {
@@ -896,7 +896,7 @@
 }
 .certle-distribution-fill {
   height: 100%;
-  background: #f26b1f;
+  background: var(--nsu-orange);
   border-radius: inherit;
 }
 .certle-distribution-count {
@@ -911,7 +911,7 @@
 .certle-share-card {
   padding: 20px 24px 17px;
   background: #fff;
-  border: 7px solid #f26b1f;
+  border: 7px solid var(--nsu-orange);
   border-radius: 8px;
   text-align: center;
 }
@@ -970,7 +970,7 @@
   border-radius: 3px;
 }
 .certle-share-tiles i.earned {
-  background: #f26b1f;
+  background: var(--nsu-orange);
 }
 .certle-share-card-foot {
   display: flex;
@@ -1016,7 +1016,7 @@
     transform 0.15s;
 }
 .certle-socials a:hover > span {
-  background: #f26b1f;
+  background: var(--nsu-orange);
   transform: translateY(-2px);
 }
 .certle-share-tip {

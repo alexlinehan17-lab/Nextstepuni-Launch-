@@ -29,7 +29,7 @@ const ModuleCompleteScreen: React.FC<ModuleCompleteScreenProps> = ({
   return createPortal(
     <AnimatePresence>
       {isOpen && (
-        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: reduceMotion ? 0 : 0.2 }} className="fixed inset-0 z-[300] overflow-y-auto bg-white text-zinc-900 dark:bg-zinc-950 dark:text-white" role="dialog" aria-modal="true" aria-labelledby="module-complete-title">
+        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: reduceMotion ? 0 : 0.2 }} className="fixed inset-0 z-[300] overflow-y-auto bg-white text-zinc-900 dark:bg-surface-canvas dark:text-white" role="dialog" aria-modal="true" aria-labelledby="module-complete-title">
           <div className="module-completion">
             <img className="completion-character" src="/assets/landing/starguy-512.png" alt="" />
             <p className="student-eyebrow">One chapter further</p>

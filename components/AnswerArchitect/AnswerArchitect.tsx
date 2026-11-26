@@ -23,11 +23,12 @@ import {
   levelLabel,
   type AnswerSkeleton,
 } from '../../data/answerArchitect';
+import { COLORS } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const ACCENT_TINT = '#FDEEDF';
-const ACCENT_DARK_TEXT = '#8C3A0E';
+const ACCENT_DARK_TEXT = COLORS.accentDarkText;
 
 interface Props {
   /** The student's subject NAMES (e.g. "Biology") — used to pre-scope "mine". */
@@ -53,7 +54,7 @@ const BeatRow: React.FC<{ beat: AnswerSkeleton['beats'][number] }> = ({ beat }) 
         </h4>
         <span
           className="shrink-0 text-[11px] font-bold tabular-nums px-2 py-0.5 rounded-full"
-          style={{ backgroundColor: '#f0ede8', color: '#7a7068' }}
+          style={{ backgroundColor: 'var(--surface-soft)', color: '#7a7068' }}
         >
           {beat.marks}m
         </span>

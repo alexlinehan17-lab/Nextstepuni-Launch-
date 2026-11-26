@@ -1,0 +1,990 @@
+{
+ "about": "Ratchet for test/colourLiterals.guard.test.ts: how many typed colours each file has outside the token home (the :root and .dark blocks of index.css). Counts may only go down.",
+ "files": {
+  "App.tsx": {
+   "tailwind [#…]": 1
+  },
+  "cardStyles.ts": {
+   "zinc/neutral-9xx surface": 2
+  },
+  "components/AcademicJourneyGame.tsx": {
+   "hex": 20,
+   "rgb(": 9,
+   "tailwind [#…]": 2
+  },
+  "components/AchievementToast.tsx": {
+   "tailwind [#…]": 4
+  },
+  "components/AdminDashboard.tsx": {
+   "tailwind [#…]": 5
+  },
+  "components/AgencyArchitectureModule.tsx": {
+   "rgb(": 2
+  },
+  "components/AnswerArchitect/AnswerArchitect.tsx": {
+   "hex": 12,
+   "tailwind [#…]": 4
+  },
+  "components/AppRouter.tsx": {
+   "hex": 6
+  },
+  "components/AppliedSciencesModule.tsx": {
+   "hex": 22,
+   "zinc/neutral-9xx surface": 2
+  },
+  "components/AuthActionCard.tsx": {
+   "hex": 8,
+   "rgb(": 4
+  },
+  "components/CAOPointsSimulator.tsx": {
+   "hex": 42,
+   "rgb(": 5,
+   "tailwind [#…]": 14,
+   "zinc/neutral-9xx surface": 1
+  },
+  "components/CareerPaths.tsx": {
+   "hex": 8,
+   "tailwind [#…]": 1
+  },
+  "components/CatchUpLane/Comeback.tsx": {
+   "hex": 40,
+   "tailwind [#…]": 4
+  },
+  "components/CatchUpLane/index.tsx": {
+   "hex": 20,
+   "tailwind [#…]": 3
+  },
+  "components/CollegeCompass.tsx": {
+   "hex": 9,
+   "tailwind [#…]": 9
+  },
+  "components/ComebackEngine.tsx": {
+   "hex": 50,
+   "rgb(": 18,
+   "tailwind [#…]": 6
+  },
+  "components/ComebackEngineV2.tsx": {
+   "hex": 3,
+   "tailwind [#…]": 56
+  },
+  "components/CommandPalette.tsx": {
+   "hex": 12,
+   "rgb(": 1
+  },
+  "components/CommandWordReflex/index.tsx": {
+   "hex": 6,
+   "tailwind [#…]": 2
+  },
+  "components/CourseworkCompanion/CourseworkCompanion.tsx": {
+   "hex": 13,
+   "tailwind [#…]": 4
+  },
+  "components/CourseworkStudio/coursework-activities.css": {
+   "hex": 1
+  },
+  "components/CourseworkStudio/coursework-studio.css": {
+   "hex": 11
+  },
+  "components/CourseworkStudio/model.ts": {
+   "hex": 3
+  },
+  "components/CutContentPage.tsx": {
+   "hex": 2,
+   "rgb(": 4
+  },
+  "components/DefinitionDrill/DefinitionDrill.tsx": {
+   "hex": 17,
+   "tailwind [#…]": 3
+  },
+  "components/DiagramVault/DiagramVault.tsx": {
+   "hex": 11,
+   "tailwind [#…]": 5
+  },
+  "components/DiveIn.tsx": {
+   "hex": 2,
+   "tailwind [#…]": 10
+  },
+  "components/EmotionalIntelligenceModule.tsx": {
+   "rgb(": 2
+  },
+  "components/ExamHallStrategiesModule.tsx": {
+   "rgb(": 2
+  },
+  "components/ExamReps/SubjectPicker.tsx": {
+   "hex": 9,
+   "tailwind [#…]": 7
+  },
+  "components/ExamReps/index.tsx": {
+   "hex": 24,
+   "tailwind [#…]": 20
+  },
+  "components/ExaminersChair/desk.ts": {
+   "hex": 1
+  },
+  "components/ExaminersChair/index.tsx": {
+   "hex": 81,
+   "rgb(": 11
+  },
+  "components/ExaminersChair/pilotKit.ts": {
+   "hex": 8
+  },
+  "components/ExaminersChair/receipt.ts": {
+   "hex": 7
+  },
+  "components/FirstVisitCoachMarks.tsx": {
+   "hex": 4,
+   "rgb(": 3
+  },
+  "components/FutureFinder.tsx": {
+   "hex": 22,
+   "rgb(": 9,
+   "tailwind [#…]": 13
+  },
+  "components/FutureFinderResults.tsx": {
+   "hex": 22,
+   "rgb(": 6,
+   "tailwind [#…]": 12
+  },
+  "components/GCDashboard.tsx": {
+   "zinc/neutral-9xx surface": 1
+  },
+  "components/GrowthMindsetModule.tsx": {
+   "rgb(": 2
+  },
+  "components/HowTheyDidIt/index.tsx": {
+   "hex": 4,
+   "tailwind [#…]": 1
+  },
+  "components/IllustrationTheme.tsx": {
+   "hex": 1
+  },
+  "components/InnovationZone.tsx": {
+   "hex": 40,
+   "rgb(": 2,
+   "tailwind [#…]": 2
+  },
+  "components/InsightsView.tsx": {
+   "tailwind [#…]": 2
+  },
+  "components/JCComingSoon.tsx": {
+   "hex": 6,
+   "tailwind [#…]": 4
+  },
+  "components/LanguageMasteryModule.tsx": {
+   "hex": 15
+  },
+  "components/LaunchpadGuidance.tsx": {
+   "tailwind [#…]": 1
+  },
+  "components/LearningMathModule.tsx": {
+   "hex": 116,
+   "zinc/neutral-9xx surface": 2
+  },
+  "components/LearningPathsView.tsx": {
+   "hex": 9,
+   "rgb(": 13,
+   "tailwind [#…]": 1
+  },
+  "components/Library.tsx": {
+   "tailwind [#…]": 1,
+   "zinc/neutral-9xx surface": 3
+  },
+  "components/ListeningStudio/listening-studio.css": {
+   "hex": 9
+  },
+  "components/LoginPage.tsx": {
+   "hex": 5,
+   "tailwind [#…]": 6
+  },
+  "components/MarkBank/AccountingAssessment.tsx": {
+   "hex": 1
+  },
+  "components/MarkBank/AudioSourcePlayer.tsx": {
+   "hex": 6
+  },
+  "components/MarkBank/BusinessRubricPanel.tsx": {
+   "hex": 2
+  },
+  "components/MarkBank/MarkBank.tsx": {
+   "hex": 1
+  },
+  "components/MarkBank/PdfRuler.tsx": {
+   "hex": 2
+  },
+  "components/MarkBank/SessionScreen.tsx": {
+   "hex": 5,
+   "rgb(": 6
+  },
+  "components/MarkBank/VideoSourcePlayer.tsx": {
+   "hex": 7
+  },
+  "components/MarkBank/art-rubric.css": {
+   "hex": 1
+  },
+  "components/MarkBank/cards/computer-science/higher.ts": {
+   "hex": 2
+  },
+  "components/MarkBank/claim-rows.css": {
+   "hex": 1,
+   "rgb(": 2
+  },
+  "components/MarkBank/figure-zoom.css": {
+   "hex": 3,
+   "rgb(": 3
+  },
+  "components/MarkBank/french-rubric.css": {
+   "hex": 5
+  },
+  "components/MarkBank/geography-choice.css": {
+   "hex": 1
+  },
+  "components/MarkBank/language-rubric.css": {
+   "hex": 8
+  },
+  "components/MarkBank/mark-bank-session-paper.css": {
+   "hex": 1
+  },
+  "components/MarkBank/mathematics.css": {
+   "hex": 19,
+   "rgb(": 1
+  },
+  "components/MarkBank/physical-education-rubric.css": {
+   "hex": 2
+  },
+  "components/MasteringBusinessModule.tsx": {
+   "hex": 30
+  },
+  "components/MasteringEnglishModule.tsx": {
+   "hex": 2
+  },
+  "components/MasteringTheCreativesModule.tsx": {
+   "hex": 10
+  },
+  "components/MasteringTheHumanitiesModule.tsx": {
+   "hex": 6
+  },
+  "components/MasteringTheSciencesModule.tsx": {
+   "hex": 28
+  },
+  "components/ModuleLayout.tsx": {
+   "hex": 7
+  },
+  "components/ModuleShared.tsx": {
+   "rgb(": 1
+  },
+  "components/ModuleShowcase.tsx": {
+   "hex": 8,
+   "rgb(": 6,
+   "tailwind [#…]": 8
+  },
+  "components/ModulesView.tsx": {
+   "hex": 2,
+   "rgb(": 3,
+   "tailwind [#…]": 6
+  },
+  "components/MountainLandscape.tsx": {
+   "hex": 9
+  },
+  "components/NorthStarCategoryIcon.tsx": {
+   "hex": 10
+  },
+  "components/NorthStarOnboarding.tsx": {
+   "hex": 10,
+   "tailwind [#…]": 5
+  },
+  "components/OfflineBanner.tsx": {
+   "hex": 3
+  },
+  "components/Onboarding.desktop.tsx": {
+   "hex": 53,
+   "rgb(": 7,
+   "tailwind [#…]": 85
+  },
+  "components/OralExamTrainer.tsx": {
+   "hex": 41,
+   "tailwind [#…]": 3
+  },
+  "components/PaperTrail/AiMarkingPanel.tsx": {
+   "hex": 5,
+   "tailwind [#…]": 2
+  },
+  "components/PaperTrail/AnswerInk.tsx": {
+   "hex": 3
+  },
+  "components/PaperTrail/AssignedStrip.tsx": {
+   "hex": 8,
+   "tailwind [#…]": 2
+  },
+  "components/PaperTrail/CountdownCard.tsx": {
+   "hex": 12,
+   "tailwind [#…]": 3
+  },
+  "components/PaperTrail/FirstRunCoach.tsx": {
+   "hex": 10,
+   "tailwind [#…]": 1
+  },
+  "components/PaperTrail/Flashcards.tsx": {
+   "hex": 31,
+   "tailwind [#…]": 4
+  },
+  "components/PaperTrail/FocusSession.tsx": {
+   "hex": 15,
+   "tailwind [#…]": 1
+  },
+  "components/PaperTrail/FrenchPaperAudio.tsx": {
+   "hex": 5
+  },
+  "components/PaperTrail/GuardianConsent.tsx": {
+   "hex": 4,
+   "tailwind [#…]": 2
+  },
+  "components/PaperTrail/ImageViewer.tsx": {
+   "zinc/neutral-9xx surface": 1
+  },
+  "components/PaperTrail/MilestoneCelebration.tsx": {
+   "hex": 8,
+   "tailwind [#…]": 1
+  },
+  "components/PaperTrail/MockExamBuilder.tsx": {
+   "hex": 36,
+   "tailwind [#…]": 3
+  },
+  "components/PaperTrail/PoliticsTopicFeed.tsx": {
+   "tailwind [#…]": 5
+  },
+  "components/PaperTrail/ProgressDashboard.tsx": {
+   "hex": 22,
+   "tailwind [#…]": 4
+  },
+  "components/PaperTrail/ReviewSession.tsx": {
+   "hex": 47,
+   "tailwind [#…]": 7
+  },
+  "components/PaperTrail/ReviseByTopic.tsx": {
+   "hex": 47,
+   "tailwind [#…]": 15
+  },
+  "components/PaperTrail/StreakStrip.tsx": {
+   "hex": 10,
+   "tailwind [#…]": 1
+  },
+  "components/PaperTrail/VaultQuestionCard.tsx": {
+   "hex": 24,
+   "tailwind [#…]": 3
+  },
+  "components/PaperTrail/Viewer.tsx": {
+   "hex": 79,
+   "rgb(": 1,
+   "tailwind [#…]": 16
+  },
+  "components/PaperTrail/WeaknessMap.tsx": {
+   "hex": 10,
+   "tailwind [#…]": 2
+  },
+  "components/PaperTrail/WpmCalibrator.tsx": {
+   "hex": 11,
+   "tailwind [#…]": 2
+  },
+  "components/PaperTrail/answer-desk.css": {
+   "hex": 51
+  },
+  "components/PaperTrail/answerDeskStore.ts": {
+   "hex": 5
+  },
+  "components/PaperTrail/archive.css": {
+   "hex": 3,
+   "rgb(": 1
+  },
+  "components/PaperTrail/focusArt.ts": {
+   "hex": 3
+  },
+  "components/PaperTrail/index.tsx": {
+   "hex": 10,
+   "tailwind [#…]": 3
+  },
+  "components/PaperTrail/milestones.ts": {
+   "hex": 10
+  },
+  "components/PaperTrail/paper-kobra.css": {
+   "hex": 6
+  },
+  "components/PaperTrail/physical-education-tasks.css": {
+   "hex": 20
+  },
+  "components/PaperTrail/progressReport.ts": {
+   "hex": 8
+  },
+  "components/PaperTrail/questionTools.css": {
+   "hex": 12
+  },
+  "components/PaperTrail/receipt.ts": {
+   "hex": 6
+  },
+  "components/PaperTrail/revisionPack.ts": {
+   "hex": 8
+  },
+  "components/PaperTrail/trimRegion.ts": {
+   "hex": 1
+  },
+  "components/PointsPassport.tsx": {
+   "hex": 9,
+   "rgb(": 4,
+   "tailwind [#…]": 11
+  },
+  "components/PullToRefresh.tsx": {
+   "hex": 1,
+   "rgb(": 2
+  },
+  "components/RankUpModal.tsx": {
+   "hex": 7,
+   "rgb(": 11
+  },
+  "components/ReflectionModal.tsx": {
+   "hex": 7,
+   "tailwind [#…]": 14
+  },
+  "components/ResetPasswordPage.tsx": {
+   "hex": 8,
+   "tailwind [#…]": 2
+  },
+  "components/ResumeCard.desktop.tsx": {
+   "tailwind [#…]": 4
+  },
+  "components/SectionCard.tsx": {
+   "hex": 1,
+   "tailwind [#…]": 2
+  },
+  "components/SelfEfficacyModule.tsx": {
+   "hex": 1
+  },
+  "components/ShortcutsOverlay.tsx": {
+   "hex": 3
+  },
+  "components/StreakCelebration.tsx": {
+   "hex": 2,
+   "tailwind [#…]": 10
+  },
+  "components/StudyDebrief.tsx": {
+   "hex": 2,
+   "tailwind [#…]": 11
+  },
+  "components/StudyPassportModal.tsx": {
+   "hex": 1,
+   "tailwind [#…]": 11
+  },
+  "components/Toast.tsx": {
+   "hex": 2,
+   "tailwind [#…]": 6,
+   "zinc/neutral-9xx surface": 1
+  },
+  "components/ToolIconBlob.tsx": {
+   "hex": 32
+  },
+  "components/TrainingHub.tsx": {
+   "hex": 45,
+   "rgb(": 18,
+   "tailwind [#…]": 8
+  },
+  "components/UserProfileMenu.tsx": {
+   "zinc/neutral-9xx surface": 1
+  },
+  "components/WaysIn/waysIn.css": {
+   "hex": 42
+  },
+  "components/WhatsNew.tsx": {
+   "hex": 3
+  },
+  "components/WipTools.tsx": {
+   "hex": 4,
+   "rgb(": 5,
+   "tailwind [#…]": 1
+  },
+  "components/WorldIconBlob.tsx": {
+   "hex": 5
+  },
+  "components/YearPlansView.tsx": {
+   "hex": 18,
+   "rgb(": 14,
+   "tailwind [#…]": 2
+  },
+  "components/YearTransitionFlow.tsx": {
+   "hex": 13,
+   "tailwind [#…]": 24
+  },
+  "components/YourPossibleLife.tsx": {
+   "hex": 1
+  },
+  "components/account-controls.css": {
+   "hex": 29
+  },
+  "components/account-entry.css": {
+   "hex": 26,
+   "rgb(": 1
+  },
+  "components/account-live.css": {
+   "hex": 20
+  },
+  "components/account/DataRightsModal.tsx": {
+   "hex": 4
+  },
+  "components/achievement-stamps.css": {
+   "hex": 24
+  },
+  "components/admin/admin-dashboard.css": {
+   "hex": 22
+  },
+  "components/approved-ui-theme.css": {
+   "hex": 8
+  },
+  "components/auth-paper.css": {
+   "hex": 53,
+   "rgb(": 1
+  },
+  "components/certle/certle.css": {
+   "hex": 107,
+   "rgb(": 1
+  },
+  "components/certle/sharing.ts": {
+   "hex": 5
+  },
+  "components/collegeCompass/DareGate.tsx": {
+   "hex": 11,
+   "tailwind [#…]": 7
+  },
+  "components/collegeCompass/DocumentChecklist.tsx": {
+   "hex": 9,
+   "tailwind [#…]": 7
+  },
+  "components/collegeCompass/HearMeter.tsx": {
+   "hex": 9,
+   "tailwind [#…]": 8
+  },
+  "components/collegeCompass/MoneySorter.tsx": {
+   "hex": 3,
+   "tailwind [#…]": 7
+  },
+  "components/collegeCompass/OpenDoor.tsx": {
+   "hex": 7,
+   "tailwind [#…]": 14
+  },
+  "components/comeback/FluencyTrap.tsx": {
+   "hex": 6,
+   "tailwind [#…]": 3
+  },
+  "components/crew-experiences.css": {
+   "hex": 7
+  },
+  "components/dashboard/DashboardCharts.tsx": {
+   "hex": 2,
+   "rgb(": 2
+  },
+  "components/dashboard/StudyPassport.tsx": {
+   "hex": 2,
+   "rgb(": 3
+  },
+  "components/dashboard/TermReviewCard.tsx": {
+   "hex": 8,
+   "rgb(": 1
+  },
+  "components/dashboard/progress/ProgressRefinements.tsx": {
+   "hex": 5
+  },
+  "components/dashboard/progress/progress.css": {
+   "hex": 7
+  },
+  "components/dashboard/progress/progressData.ts": {
+   "hex": 7
+  },
+  "components/dashboard/progress/refinements.css": {
+   "hex": 2
+  },
+  "components/feedback-listening-room.css": {
+   "hex": 18
+  },
+  "components/future-finder-details.css": {
+   "hex": 3
+  },
+  "components/future-finder-paper.css": {
+   "rgb(": 2
+  },
+  "components/futureFinderRevampedAdapter.ts": {
+   "hex": 10
+  },
+  "components/gc/GCAssignPanel.tsx": {
+   "zinc/neutral-9xx surface": 1
+  },
+  "components/gc/GCExportModal.tsx": {
+   "rgb(": 2
+  },
+  "components/gc/GCHandInGrid.tsx": {
+   "hex": 11,
+   "zinc/neutral-9xx surface": 3
+  },
+  "components/gc/GCOverview.tsx": {
+   "hex": 26,
+   "rgb(": 6,
+   "tailwind [#…]": 8
+  },
+  "components/gc/GCStudentDetail.tsx": {
+   "hex": 10,
+   "rgb(": 2
+  },
+  "components/gc/StaffAccessPanel.tsx": {
+   "zinc/neutral-9xx surface": 3
+  },
+  "components/home-next-step.css": {
+   "hex": 6
+  },
+  "components/immersiveDeck/Celebration.tsx": {
+   "hex": 1
+  },
+  "components/immersiveDeck/HybridCard.tsx": {
+   "hex": 2,
+   "tailwind [#…]": 1
+  },
+  "components/immersiveDeck/SwipeDeck.tsx": {
+   "hex": 2,
+   "rgb(": 2
+  },
+  "components/immersiveDeck/colorWorlds.ts": {
+   "hex": 49,
+   "rgb(": 2
+  },
+  "components/journey-points-guide.css": {
+   "hex": 5,
+   "rgb(": 2
+  },
+  "components/journey/GiftButton.tsx": {
+   "zinc/neutral-9xx surface": 2
+  },
+  "components/journey/IslandShopDrawer.tsx": {
+   "rgb(": 2,
+   "zinc/neutral-9xx surface": 2
+  },
+  "components/journey/IsometricSprite.tsx": {
+   "hex": 2,
+   "rgb(": 6
+  },
+  "components/journey/JourneyCanvas.tsx": {
+   "hex": 15,
+   "rgb(": 2
+  },
+  "components/journey/JourneyPathCard.tsx": {
+   "hex": 2,
+   "tailwind [#…]": 39
+  },
+  "components/journey/JourneyProgressPill.tsx": {
+   "hex": 2,
+   "tailwind [#…]": 15
+  },
+  "components/journey/KudosButton.tsx": {
+   "zinc/neutral-9xx surface": 2
+  },
+  "components/journey/PeerIslandsList.tsx": {
+   "hex": 29,
+   "rgb(": 31,
+   "tailwind [#…]": 10
+  },
+  "components/journey/build/BuildGrid.tsx": {
+   "hex": 3
+  },
+  "components/journey/hex/SignDecoration.tsx": {
+   "hex": 1,
+   "rgb(": 1
+  },
+  "components/journey/hex/Water.tsx": {
+   "hex": 1
+  },
+  "components/journey/journey-welcome.css": {
+   "hex": 28,
+   "rgb(": 1
+  },
+  "components/journey/journey-workspace.css": {
+   "hex": 29
+  },
+  "components/journey/paper/EdgeTreatment.tsx": {
+   "hex": 54
+  },
+  "components/journey/paper/InkEdges.tsx": {
+   "hex": 4
+  },
+  "components/journey/paper/MapControls.tsx": {
+   "hex": 1
+  },
+  "components/journey/paper/OpenCorners.tsx": {
+   "hex": 1
+  },
+  "components/journey/paper/PaintedWorld.tsx": {
+   "hex": 8
+  },
+  "components/journey/paper/TileArt.tsx": {
+   "hex": 8
+  },
+  "components/journey/paper/paintedDirections.ts": {
+   "hex": 1
+  },
+  "components/journey/paper/paper.css": {
+   "hex": 92
+  },
+  "components/journey/scenes/CareerScene.tsx": {
+   "hex": 18
+  },
+  "components/journey/scenes/CollegeScene.tsx": {
+   "hex": 15
+  },
+  "components/journey/scenes/FamilyScene.tsx": {
+   "hex": 15
+  },
+  "components/journey/scenes/IndependenceScene.tsx": {
+   "hex": 15
+  },
+  "components/journey/scenes/OptionsScene.tsx": {
+   "hex": 7
+  },
+  "components/journey/scenes/ProveMyselfScene.tsx": {
+   "hex": 19
+  },
+  "components/journey/scenes/SharedSceneElements.tsx": {
+   "hex": 124
+  },
+  "components/journey/scenes/iso/CareerIsoScene.tsx": {
+   "hex": 2
+  },
+  "components/journey/scenes/iso/CollegeIsoScene.tsx": {
+   "hex": 2
+  },
+  "components/journey/scenes/iso/FamilyIsoScene.tsx": {
+   "hex": 2
+  },
+  "components/journey/scenes/iso/IndependenceIsoScene.tsx": {
+   "hex": 2
+  },
+  "components/journey/scenes/iso/OptionsIsoScene.tsx": {
+   "hex": 2
+  },
+  "components/journey/scenes/iso/ProveMyselfIsoScene.tsx": {
+   "hex": 2
+  },
+  "components/journey/scenes/models/useKenneyModel.ts": {
+   "hex": 1
+  },
+  "components/journey/visitors/visitors.css": {
+   "hex": 47
+  },
+  "components/journey/year/year.css": {
+   "hex": 51
+  },
+  "components/launchpad/launchpad.css": {
+   "hex": 31
+  },
+  "components/learning/BrandBook.tsx": {
+   "hex": 2
+  },
+  "components/learning/learning.css": {
+   "hex": 9
+  },
+  "components/learning/module-activities-dark.css": {
+   "hex": 93,
+   "rgb(": 104,
+   "tailwind [#…]": 1
+  },
+  "components/learning/module-brand-review.css": {
+   "hex": 87
+  },
+  "components/learning/module-reader-preview.css": {
+   "hex": 3
+  },
+  "components/learning/planner-preview.css": {
+   "hex": 1
+  },
+  "components/learning/reader.css": {
+   "hex": 6
+  },
+  "components/learning/sidebar-directions.css": {
+   "hex": 4
+  },
+  "components/legal/legal-document.css": {
+   "hex": 21,
+   "rgb(": 2
+  },
+  "components/mobile-editorial.css": {
+   "hex": 22
+  },
+  "components/module-cards.css": {
+   "hex": 9
+  },
+  "components/navigation/sidebar.css": {
+   "hex": 38
+  },
+  "components/onboarding/appearance.css": {
+   "hex": 11
+  },
+  "components/onboarding/desktop.css": {
+   "hex": 21
+  },
+  "components/onboarding/grade-options.css": {
+   "hex": 50
+  },
+  "components/onboarding/onboarding.css": {
+   "hex": 44
+  },
+  "components/onboarding/setup-select.css": {
+   "hex": 32
+  },
+  "components/sectionIcons.tsx": {
+   "hex": 2
+  },
+  "components/settings-modal.css": {
+   "hex": 14
+  },
+  "components/setup/your-setup.css": {
+   "hex": 1
+  },
+  "components/shared/SubjectTilePicker.tsx": {
+   "hex": 4,
+   "tailwind [#…]": 2
+  },
+  "components/sign-in-directions/SignInDirections.tsx": {
+   "hex": 4
+  },
+  "components/sign-in-directions/sign-in-directions.css": {
+   "hex": 133
+  },
+  "components/site-guide.css": {
+   "hex": 10
+  },
+  "components/star-crew.css": {
+   "hex": 5
+  },
+  "components/student-header.css": {
+   "hex": 5
+  },
+  "components/student-screens.css": {
+   "hex": 21
+  },
+  "components/study/StudySessionView.mobile.tsx": {
+   "tailwind [#…]": 4
+  },
+  "components/study/StudySessionView.tsx": {
+   "tailwind [#…]": 4
+  },
+  "components/study/quiz/study-quiz.css": {
+   "hex": 2
+  },
+  "components/study/study-completion.css": {
+   "hex": 13
+  },
+  "components/study/study-crew.css": {
+   "hex": 20
+  },
+  "components/study/study-kobra.css": {
+   "hex": 4
+  },
+  "components/study/study-mini-timer.css": {
+   "hex": 8
+  },
+  "components/study/study-motion.css": {
+   "hex": 25
+  },
+  "components/study/study-quiz-invitation.css": {
+   "hex": 10,
+   "rgb(": 2
+  },
+  "components/study/study-session.css": {
+   "hex": 30
+  },
+  "components/toolIcons.tsx": {
+   "hex": 7
+  },
+  "components/ui/Celebration.tsx": {
+   "hex": 2,
+   "tailwind [#…]": 8
+  },
+  "components/ui/ChoiceControl.tsx": {
+   "hex": 3,
+   "tailwind [#…]": 3
+  },
+  "components/ui/FormControls.tsx": {
+   "tailwind [#…]": 2
+  },
+  "components/ui/ModalFrame.tsx": {
+   "hex": 1,
+   "tailwind [#…]": 8,
+   "zinc/neutral-9xx surface": 1
+  },
+  "components/ui/PageHeader.tsx": {
+   "tailwind [#…]": 4
+  },
+  "components/ui/ProductPatterns.tsx": {
+   "hex": 7,
+   "rgb(": 1
+  },
+  "components/ui/SystemState.tsx": {
+   "hex": 1,
+   "tailwind [#…]": 5
+  },
+  "components/ui/controls.css": {
+   "hex": 17
+  },
+  "components/ui/signature-card.css": {
+   "hex": 8
+  },
+  "components/war-room/CoveragePanel.tsx": {
+   "hex": 2
+  },
+  "components/war-room/war-room.css": {
+   "hex": 1
+  },
+  "components/war-room/warRoomPrimitives.tsx": {
+   "hex": 4,
+   "rgb(": 3
+  },
+  "components/war-room/warRoomShared.ts": {
+   "hex": 12,
+   "rgb(": 1
+  },
+  "components/welcome-character.css": {
+   "hex": 4
+  },
+  "design/quiet-focus.css": {
+   "hex": 6
+  },
+  "gamificationConfig.ts": {
+   "hex": 7
+  },
+  "hooks/useIslandShop.ts": {
+   "hex": 2
+  },
+  "index.css": {
+   "hex": 128,
+   "rgb(": 278,
+   "tailwind [#…]": 79
+  },
+  "islandShopData.ts": {
+   "hex": 6
+  },
+  "learningPaths.ts": {
+   "hex": 4
+  },
+  "moduleThemes.ts": {
+   "hex": 18,
+   "tailwind [#…]": 5
+  },
+  "rive-lab.tsx": {
+   "hex": 8
+  },
+  "starguy-lab.tsx": {
+   "hex": 10
+  },
+  "studySessionData.ts": {
+   "hex": 41,
+   "zinc/neutral-9xx surface": 1
+  },
+  "utils/authUtils.ts": {
+   "hex": 9
+  },
+  "utils/studentStatus.ts": {
+   "hex": 12
+  }
+ }
+}

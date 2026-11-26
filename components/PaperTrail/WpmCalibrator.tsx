@@ -23,9 +23,10 @@ import {
   saveCalibration,
   type WpmCalibration,
 } from './wpmStore';
+import { COLORS } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 
 interface Props {
   uid?: string;
@@ -122,7 +123,7 @@ const WpmCalibrator: React.FC<Props> = ({ uid, onSaved, onClose }) => {
 
             {phase === 'tooQuick' && (
               <div className="rounded-r-xl px-4 py-3 mb-2" style={{ backgroundColor: '#FDEEDF', borderLeft: `3px solid ${ACCENT}` }}>
-                <p className="text-[13px] italic" style={{ color: '#8C3A0E' }}>
+                <p className="text-[13px] italic" style={{ color: COLORS.accentDarkText }}>
                   That was too quick to be a real handwriting pass — nothing was saved. Write the whole passage out, then stop the timer.
                 </p>
               </div>
@@ -140,7 +141,7 @@ const WpmCalibrator: React.FC<Props> = ({ uid, onSaved, onClose }) => {
                 <button
                   onClick={stop}
                   className="flex-1 inline-flex items-center justify-center gap-1.5 py-3 rounded-full text-[14.5px] font-semibold text-white transition-transform active:translate-y-0.5"
-                  style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}
+                  style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
                 >
                   <Square size={14} /> I’ve finished writing
                 </button>
@@ -149,7 +150,7 @@ const WpmCalibrator: React.FC<Props> = ({ uid, onSaved, onClose }) => {
               <button
                 onClick={begin}
                 className="w-full mt-3 inline-flex items-center justify-center gap-1.5 py-3 rounded-full text-[14.5px] font-semibold text-white transition-transform active:translate-y-0.5"
-                style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}
+                style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
               >
                 <Play size={14} /> Pen ready — start timing
               </button>
@@ -188,7 +189,7 @@ const WpmCalibrator: React.FC<Props> = ({ uid, onSaved, onClose }) => {
               <button
                 onClick={onClose}
                 className="flex-1 py-2 rounded-full text-[13.5px] font-semibold text-white transition-transform active:translate-y-0.5"
-                style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}
+                style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
               >
                 Done
               </button>

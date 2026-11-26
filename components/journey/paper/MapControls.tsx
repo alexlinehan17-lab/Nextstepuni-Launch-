@@ -30,6 +30,7 @@ import { legendById, stickerSrc, type LegendId } from "./collection";
 import { StickerRaster } from "./StickerArt";
 import { crewArt, crewById, type CrewId } from "../visitors/catalogue";
 import { WonderRaster, WonderTileArt } from "../visitors/VisitorArt";
+import { COLORS } from '../../../design/tokens';
 export const defaultCamera = { x: 0, y: -75, zoom: 1 };
 export type Camera = typeof defaultCamera;
 /** The pan layer is this many times the visible map in each direction (paper.css
@@ -335,7 +336,7 @@ export function IslandMap({
             <polygon
               points={points(ghost.x, ghost.y)}
               fill="none"
-              stroke="#f87628"
+              stroke={COLORS.accent}
               strokeWidth="3"
               pointerEvents="none"
               data-placement-preview={ghost.key}

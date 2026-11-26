@@ -6,7 +6,7 @@
 .account-entry input:not([type=checkbox]),.account-entry select{border-width:1px;border-radius:8px;min-height:54px;font-size:16px;background:#fafafa;color:#1a1a1a;border-color:#dedbd5}
 .account-entry label{color:#5e5b54!important;font-size:11px;letter-spacing:.07em}
 .account-entry .account-primary{background:#1a1a1a!important;color:#fff!important;border-color:#1a1a1a!important;font-weight:600;box-shadow:none!important}
-.account-entry .account-primary svg{color:#f26b1f}
+.account-entry .account-primary svg{color:var(--nsu-orange)}
 .account-entry [style*="rgb(158, 145, 134)"],.account-entry [style*="#9e9186"]{color:#69645b!important}
 .account-entry .account-welcome{display:flex;flex-direction:column;min-height:calc(100dvh - 110px);text-align:left}
 .account-entry .account-welcome h1{font:800 clamp(48px,14vw,66px)/.96 'DM Sans',sans-serif;letter-spacing:-2.3px;text-transform:uppercase;margin:0 0 12px}
@@ -22,7 +22,7 @@
 .account-entry button:focus-visible{outline:2px solid #1a1a1a;outline-offset:3px}
 .account-entry .account-back-link{min-height:44px}
 .account-entry .account-view p>button{min-height:44px;min-width:44px}
-.account-entry[data-view=welcome],.account-entry[data-view=welcome] .account-card{background:#f26b1f}
+.account-entry[data-view=welcome],.account-entry[data-view=welcome] .account-card{background:var(--nsu-orange)}
 .account-entry .account-reset-art{display:block;width:130px;height:110px;object-fit:contain;margin:16px 0}
 @media(min-width:768px){.account-entry .account-form{padding:40px}.account-entry[data-view=welcome]{background:#f4f2ed}.account-entry[data-view=welcome] .account-card{background:#fff}.account-entry .account-welcome{min-height:0}}
 @media(max-width:360px){.account-entry .account-form{padding-inline:18px}.account-entry .account-welcome-art{height:190px}}

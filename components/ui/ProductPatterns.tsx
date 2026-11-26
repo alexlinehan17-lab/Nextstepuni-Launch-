@@ -72,7 +72,7 @@ export const StatusNotice: React.FC<{
   const palette = tone === 'success'
     ? { background: '#E8F2EC', border: '#BFD8C8', title: '#1F5F3E' }
     : tone === 'warning'
-      ? { background: '#FFF8F2', border: '#383838', title: '#1A1A1A' }
+      ? { background: 'var(--surface-paper)', border: '#383838', title: '#1A1A1A' }
       : { background: 'var(--surface-paper)', border: 'var(--outline-soft)', title: 'var(--ink-primary)' };
 
   return (

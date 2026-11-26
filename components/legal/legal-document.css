@@ -30,7 +30,7 @@
   --legal-body: #53564f;
   --legal-muted: #73766e;
   --legal-line: #e1e3dc;
-  --legal-orange: #ff8128;
+  --legal-orange: var(--nsu-orange);
   --legal-link: #ad420f;
   box-sizing: border-box;
   color: var(--legal-ink);
@@ -147,7 +147,7 @@
 .legal-footer-links { display: flex; flex-wrap: wrap; gap: 22px; font-size: 13px; }
 
 .legal-agreement-screen { position: fixed; inset: 0; z-index: 290; overflow-y: auto; background: #fff; padding: 48px 24px; }
-.dark .legal-agreement-screen { background: #242720; }
+.dark .legal-agreement-screen { background: var(--surface-paper); }
 .legal-dialog.legal-agreement { max-width: 650px; max-height: none; margin: auto; padding: 20px 0; border: 0; border-radius: 0; box-shadow: none; overflow: visible; }
 .legal-agreement > .legal-label { margin-top: 54px; }
 .legal-agreement h1 { margin-top: 20px; font-size: clamp(44px, 7vw, 66px); line-height: 1.05; font-weight: 700; letter-spacing: -0.055em; }
@@ -191,11 +191,11 @@ body.legal-page { margin: 0; }
 .legal-dialog .legal-contents { top: 24px; }
 .legal-dialog .legal-contents-desktop { max-height: min(744px, calc(92dvh - 132px)); }
 .dark .legal-dialog {
-  --legal-paper: #242720;
-  --legal-ink: #f5f1e5;
+  --legal-paper: var(--surface-paper);
+  --legal-ink: var(--ink-primary);
   --legal-body: #d0d2c8;
-  --legal-muted: #a7aba0;
-  --legal-line: #464a40;
+  --legal-muted: var(--ink-muted);
+  --legal-line: var(--outline-soft);
   --legal-link: #ffab70;
 }
 .dark .legal-dialog .legal-wordmark { color: var(--legal-ink); }

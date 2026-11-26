@@ -5,7 +5,7 @@
   --ink: #242a27;
   --muted: #788079;
   --line: #e1e5df;
-  --orange: #fb761d;
+  --orange: var(--nsu-orange);
   --rust: #af582f;
   --serif: "Source Serif 4", Georgia, serif;
   font-synthesis: none;
@@ -155,10 +155,10 @@
 .journey-paper .primary-action {
   background: var(--orange);
   color: #242a25;
-  border: 1px solid #ed711d;
+  border: 1px solid var(--nsu-orange);
 }
 .journey-paper .primary-action:hover:not(:disabled) {
-  background: #ef6c15;
+  background: var(--nsu-orange);
 }
 .journey-paper .primary-action:disabled {
   background: #ecefe7;
@@ -492,7 +492,7 @@
   min-width: 0;
 }
 .journey-paper .shelf-tile[aria-pressed="true"] {
-  border-color: #f47a32;
+  border-color: var(--nsu-orange);
   background: #fff7ed;
 }
 .journey-paper .shelf-tile:hover {
@@ -1344,12 +1344,12 @@
 }
 .journey-paper .map-placement-slot:hover .slot-highlight {
   fill: #fff9e81a;
-  stroke: #f8762890;
+  stroke: rgba(var(--nsu-orange-rgb), 0.56);
 }
 .journey-paper .map-placement-slot:focus-visible .slot-highlight,
 .journey-paper .map-placement-slot.selected .slot-highlight {
-  stroke: #f87628;
-  fill: #f8762812;
+  stroke: var(--nsu-orange);
+  fill: rgba(var(--nsu-orange-rgb), 0.07);
 }
 @keyframes clear-a-little-sky {
   from {
@@ -1439,7 +1439,7 @@
   content: "";
   position: absolute;
   height: 2px;
-  background: #f87628;
+  background: var(--nsu-orange);
   bottom: -1px;
   left: 0;
   right: 0;
@@ -1638,7 +1638,7 @@
   --ink: #242a27;
   --muted: #788079;
   --line: #e1e5df;
-  --orange: #fb761d;
+  --orange: var(--nsu-orange);
   --rust: #af582f;
   --serif: "Source Serif 4", Georgia, serif;
 }
@@ -1648,7 +1648,7 @@
   --ink: #242a27;
   --muted: #788079;
   --line: #e1e5df;
-  --orange: #fb761d;
+  --orange: var(--nsu-orange);
   --rust: #af582f;
   --serif: "Source Serif 4", Georgia, serif;
 }
@@ -1794,15 +1794,15 @@
     stroke 0.15s;
 }
 .journey-paper .island-tile-edit:hover {
-  stroke: #f8762890;
+  stroke: rgba(var(--nsu-orange-rgb), 0.56);
 }
 .journey-paper .island-tile-edit:focus-visible,
 .journey-paper .island-tile-edit.selected {
-  stroke: #f87628;
+  stroke: var(--nsu-orange);
   stroke-width: 5;
 }
 .journey-paper .island-tile-edit-wash {
-  fill: #f8762840;
+  fill: rgba(var(--nsu-orange-rgb), 0.25);
 }
 .journey-paper .tile-editor .placement-title {
   align-items: center;

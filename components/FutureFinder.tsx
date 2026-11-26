@@ -466,13 +466,13 @@ function AssessmentPhase({
           <span className="text-xs font-bold" style={{ color: COLORS.accent }}>Question {currentQ + 1} of {questions.length}</span>
           <span className="text-xs text-zinc-400 dark:text-zinc-500">{question.dimension}</span>
         </div>
-        <div className="h-1.5 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+        <div className="h-1.5 bg-zinc-200 dark:bg-surface-soft rounded-full overflow-hidden">
           <div className="h-full rounded-full transition-all duration-500" style={{ width: `${progress}%`, backgroundColor: COLORS.accent }} />
         </div>
       </div>
 
       {/* Question card */}
-      <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 md:p-8 mb-6" style={{ borderRadius: '12px' }}>
+      <div className="bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6 md:p-8 mb-6" style={{ borderRadius: '12px' }}>
         <h3 className="font-serif text-xl font-semibold text-zinc-900 dark:text-white mb-1">{question.question}</h3>
         {question.subtitle && (
           <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-6">{question.subtitle}</p>
@@ -489,7 +489,7 @@ function AssessmentPhase({
       {/* Navigation */}
       <div className="flex items-center justify-between">
         <MotionButton whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={onBack}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-transparent border border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 text-sm font-semibold hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors">
+          className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-transparent border border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 text-sm font-semibold hover:bg-zinc-50 dark:hover:bg-surface-soft transition-colors">
           <ChevronLeft size={16} /> Back
         </MotionButton>
         <MotionButton whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={onNext}
@@ -497,10 +497,10 @@ function AssessmentPhase({
           className={`flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold transition-colors ${
             isValid || shouldSkipRegions
               ? 'text-white'
-              : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400 cursor-not-allowed'
+              : 'bg-zinc-200 dark:bg-surface-soft text-zinc-400 cursor-not-allowed'
           }`}
           style={isValid || shouldSkipRegions ? { backgroundColor: COLORS.accent } : undefined}
-          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { if (isValid || shouldSkipRegions) e.currentTarget.style.backgroundColor = '#B54D14'; }}
+          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { if (isValid || shouldSkipRegions) e.currentTarget.style.backgroundColor = COLORS.accentDark; }}
           onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { if (isValid || shouldSkipRegions) e.currentTarget.style.backgroundColor = COLORS.accent; }}>
           {isLast ? 'See Results' : 'Next'} <ChevronRight size={16} />
         </MotionButton>
@@ -528,7 +528,7 @@ function QuestionInput({ question, value, onChange }: { question: AssessmentQues
               className={`px-4 py-2.5 rounded-xl text-sm font-medium transition-all border ${
                 isSelected
                   ? ''
-                  : 'bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500'
+                  : 'bg-white dark:bg-surface-soft text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500'
               }`}
               style={isSelected ? { backgroundColor: COLORS.accent, color: 'white', borderColor: COLORS.accent } : undefined}
             >
@@ -551,7 +551,7 @@ function QuestionInput({ question, value, onChange }: { question: AssessmentQues
             className={`w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-all border ${
               value === opt.value
                 ? ''
-                : 'bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500'
+                : 'bg-white dark:bg-surface-soft text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500'
             }`}
             style={value === opt.value ? { backgroundColor: COLORS.accent, color: 'white', borderColor: COLORS.accent } : undefined}
           >
@@ -579,9 +579,9 @@ function QuestionInput({ question, value, onChange }: { question: AssessmentQues
               className={`flex-1 py-3 rounded-xl text-sm font-semibold transition-all border ${
                 isSelected
                   ? 'shadow-lg'
-                  : 'bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500'
+                  : 'bg-white dark:bg-surface-soft text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500'
               }`}
-              style={isSelected ? { backgroundColor: COLORS.accent, color: 'white', borderColor: COLORS.accent, boxShadow: '0 10px 15px -3px rgba(242,107,31,0.25)' } : undefined}
+              style={isSelected ? { backgroundColor: COLORS.accent, color: 'white', borderColor: COLORS.accent, boxShadow: '0 10px 15px -3px rgba(var(--nsu-orange-rgb), 0.25)' } : undefined}
             >
               {label}
             </MotionButton>
@@ -597,7 +597,7 @@ function QuestionInput({ question, value, onChange }: { question: AssessmentQues
         <button
           onClick={() => onChange(true)}
           className={`flex-1 py-3 rounded-xl text-sm font-semibold transition-all border ${
-            value === true ? '' : 'bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400'
+            value === true ? '' : 'bg-white dark:bg-surface-soft text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400'
           }`}
           style={value === true ? { backgroundColor: COLORS.accent, color: 'white', borderColor: COLORS.accent } : undefined}
         >
@@ -606,7 +606,7 @@ function QuestionInput({ question, value, onChange }: { question: AssessmentQues
         <button
           onClick={() => onChange(false)}
           className={`flex-1 py-3 rounded-xl text-sm font-semibold transition-all border ${
-            value === false ? '' : 'bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400'
+            value === false ? '' : 'bg-white dark:bg-surface-soft text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400'
           }`}
           style={value === false ? { backgroundColor: COLORS.accent, color: 'white', borderColor: COLORS.accent } : undefined}
         >
@@ -670,7 +670,7 @@ function ResultsPhase({
       {onOpenCareerPaths && (
         <button
           onClick={() => onOpenCareerPaths(results.flatMap((r) => r.course.careerPaths))}
-          className="w-full mb-6 flex items-center gap-3 rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 p-4 text-left transition-transform active:translate-y-0.5 hover:shadow-md"
+          className="w-full mb-6 flex items-center gap-3 rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper p-4 text-left transition-transform active:translate-y-0.5 hover:shadow-md"
         >
           <span className="w-11 h-11 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: '#0E7C6B' }}>
             <Briefcase size={20} className="text-white" />
@@ -689,7 +689,7 @@ function ResultsPhase({
 
       {/* Sort & Filter controls */}
       <div className="flex flex-wrap gap-2 mb-4">
-        <div className="flex items-center gap-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
+        <div className="flex items-center gap-1 bg-zinc-100 dark:bg-surface-soft rounded-lg p-0.5">
           {([['match', 'Match %'], ['points', 'Points'], ['institution', 'College']] as const).map(([key, label]) => (
             <button
               key={key}
@@ -705,7 +705,7 @@ function ResultsPhase({
         <select
           value={regionFilter}
           onChange={e => onRegionFilterChange(e.target.value)}
-          className="px-3 py-1.5 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-xs font-semibold text-zinc-700 dark:text-zinc-300 border-none focus:outline-none focus:ring-2 focus:ring-zinc-400/50"
+          className="px-3 py-1.5 rounded-lg bg-zinc-100 dark:bg-surface-soft text-xs font-semibold text-zinc-700 dark:text-zinc-300 border-none focus:outline-none focus:ring-2 focus:ring-zinc-400/50"
         >
           <option value="">All regions</option>
           {Object.entries(REGIONS).map(([key, label]) => (
@@ -716,7 +716,7 @@ function ResultsPhase({
 
       {/* Compare bar */}
       {compareCourses.length > 0 && (
-        <div className="mb-4 p-3 rounded-xl border flex items-center justify-between bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.2)' }}>
+        <div className="mb-4 p-3 rounded-xl border flex items-center justify-between bg-white dark:bg-surface-paper" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.2)' }}>
           <span className="text-xs font-semibold" style={{ color: COLORS.accent }}>
             {compareCourses.length} course{compareCourses.length > 1 ? 's' : ''} selected for comparison
           </span>
@@ -724,7 +724,7 @@ function ResultsPhase({
             onClick={onCompare}
             disabled={compareCourses.length < 2}
             className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-colors ${
-              compareCourses.length >= 2 ? 'text-white' : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400 cursor-not-allowed'
+              compareCourses.length >= 2 ? 'text-white' : 'bg-zinc-200 dark:bg-surface-soft text-zinc-400 cursor-not-allowed'
             }`}
             style={compareCourses.length >= 2 ? { backgroundColor: COLORS.accent } : undefined}
           >
@@ -779,7 +779,7 @@ function ResultCard({
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: rank * 0.04, duration: 0.3 }}
-      className="group rounded-xl border hover:shadow-md cursor-pointer overflow-hidden transition-all bg-white dark:bg-zinc-900"
+      className="group rounded-xl border hover:shadow-md cursor-pointer overflow-hidden transition-all bg-white dark:bg-surface-paper"
       style={{ borderColor: 'rgba(0,0,0,0.07)' }}
       onClick={onClick}
     >
@@ -790,7 +790,7 @@ function ResultCard({
             <div className="flex items-center gap-2 mb-1 flex-wrap">
               <span className="text-xs font-bold" style={{ color: COLORS.accent }}>#{rank}</span>
               <span className="text-xs font-mono text-zinc-400 dark:text-zinc-500">{c.code}</span>
-              <span className="px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-xs font-semibold text-zinc-500 dark:text-zinc-400">Level {c.level}</span>
+              <span className="px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-surface-soft text-xs font-semibold text-zinc-500 dark:text-zinc-400">Level {c.level}</span>
               {c.pathwayType === 'plc' && (
                 <span className="px-2 py-0.5 rounded-full text-[10px] font-bold" style={{ backgroundColor: '#EDF2EE', color: '#4A6B4F' }}>PLC</span>
               )}
@@ -848,7 +848,7 @@ function ResultCard({
           <button
             onClick={onToggleSave}
             className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-colors border ${
-              isSaved ? 'bg-transparent border-zinc-300 dark:border-zinc-600' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800'
+              isSaved ? 'bg-transparent border-zinc-300 dark:border-zinc-600' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-surface-soft'
             }`}
             style={isSaved ? { color: COLORS.accent } : undefined}
           >
@@ -858,7 +858,7 @@ function ResultCard({
           <button
             onClick={onToggleCompare}
             className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-colors border ${
-              isCompared ? 'bg-transparent border-zinc-300 dark:border-zinc-600' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800'
+              isCompared ? 'bg-transparent border-zinc-300 dark:border-zinc-600' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-surface-soft'
             }`}
             style={isCompared ? { color: COLORS.accent } : undefined}
           >
@@ -869,7 +869,7 @@ function ResultCard({
             href={getCoursePageUrl(c)}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-transparent border border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
+            className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-transparent border border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-surface-soft transition-colors"
           >
             <ArrowUpRight size={12} />
             College page
@@ -904,7 +904,7 @@ function DetailPhase({
         <ChevronLeft size={16} /> Back to results
       </button>
 
-      <div className="bg-white dark:bg-zinc-900 overflow-hidden" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: '12px' }}>
+      <div className="bg-white dark:bg-surface-paper overflow-hidden" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: '12px' }}>
         {/* Header */}
         <div className="p-6" style={{ backgroundColor: COLORS.accent }}>
           <div className="flex items-center gap-2 mb-2 flex-wrap">
@@ -942,7 +942,7 @@ function DetailPhase({
 
           {/* Your Points section */}
           {c.typicalPoints === 0 ? (
-            <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
+            <div className="p-4 rounded-xl border bg-white dark:bg-surface-paper" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.15)' }}>
               <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Entry Requirements</h4>
               <p className="text-sm text-zinc-700 dark:text-zinc-300">
                 {c.pathwayType === 'apprenticeship'
@@ -951,7 +951,7 @@ function DetailPhase({
               </p>
             </div>
           ) : autoPoints > 0 ? (
-            <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
+            <div className="p-4 rounded-xl border bg-white dark:bg-surface-paper" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.15)' }}>
               <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Your Points</h4>
               <div className="grid grid-cols-3 gap-3 text-center">
                 <div>
@@ -994,7 +994,7 @@ function DetailPhase({
             <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">Career Paths</h4>
             <div className="flex flex-wrap gap-2">
               {c.careerPaths.map(cp => (
-                <span key={cp} className="px-3 py-1.5 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-sm text-zinc-700 dark:text-zinc-300 font-medium">{cp}</span>
+                <span key={cp} className="px-3 py-1.5 rounded-lg bg-zinc-100 dark:bg-surface-soft text-sm text-zinc-700 dark:text-zinc-300 font-medium">{cp}</span>
               ))}
             </div>
           </div>
@@ -1004,13 +1004,13 @@ function DetailPhase({
             <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">Subjects That Help</h4>
             <div className="flex flex-wrap gap-2">
               {c.subjectBonus.map(sub => (
-                <span key={sub} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800" style={{ color: COLORS.accent }}>{sub}</span>
+                <span key={sub} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline" style={{ color: COLORS.accent }}>{sub}</span>
               ))}
             </div>
           </div>
 
           {/* Why this suits you — show up to 5 reasons */}
-          <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
+          <div className="p-4 rounded-xl border bg-white dark:bg-surface-paper" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.15)' }}>
             <h4 className="text-sm font-bold mb-3 flex items-center gap-2" style={{ color: COLORS.accent }}>
               <Heart size={16} style={{ color: COLORS.accent }} /> Why This Suits You
             </h4>
@@ -1025,7 +1025,7 @@ function DetailPhase({
           </div>
 
           {/* How we scored this */}
-          <div className="p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <div className="p-4 rounded-xl border border-zinc-200 dark:border-hairline">
             <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-4">How We Scored This</h4>
             <div className="space-y-3">
               <ScoreBar label="Interest match" score={result.scoreBreakdown.interestScore} />
@@ -1038,7 +1038,7 @@ function DetailPhase({
           <div className="flex flex-wrap gap-2 pt-2">
             <MotionButton whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={onToggleSave}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold transition-colors border ${
-                isSaved ? 'text-white' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800'
+                isSaved ? 'text-white' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-surface-soft'
               }`}
               style={isSaved ? { backgroundColor: COLORS.accent, borderColor: COLORS.accent } : undefined}>
               {isSaved ? <Check size={16} /> : <BookmarkPlus size={16} />}
@@ -1046,7 +1046,7 @@ function DetailPhase({
             </MotionButton>
             <MotionButton whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={onToggleCompare}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold transition-colors border ${
-                isCompared ? 'text-white' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800'
+                isCompared ? 'text-white' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-surface-soft'
               }`}
               style={isCompared ? { backgroundColor: COLORS.accent, borderColor: COLORS.accent } : undefined}>
               <SlidersHorizontal size={16} />
@@ -1056,7 +1056,7 @@ function DetailPhase({
               href={getCoursePageUrl(c)}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-transparent border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-transparent border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-surface-soft transition-colors"
             >
               <ArrowUpRight size={16} />
               Visit {c.institution} course page
@@ -1146,7 +1146,7 @@ function ComparePhase({
                       <p className="font-serif font-semibold text-zinc-900 dark:text-white text-sm">{r.course.title}</p>
                       <p className="text-xs text-zinc-400 dark:text-zinc-500 font-normal">{r.course.code}</p>
                     </div>
-                    <button onClick={() => onRemove(r.course.code)} className="p-1 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                    <button onClick={() => onRemove(r.course.code)} className="p-1 rounded-md hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors">
                       <X size={14} className="text-zinc-400" />
                     </button>
                   </div>
@@ -1156,7 +1156,7 @@ function ComparePhase({
           </thead>
           <tbody>
             {fields.map(field => (
-              <tr key={field.label} className="border-t border-zinc-100 dark:border-zinc-800">
+              <tr key={field.label} className="border-t border-zinc-100 dark:border-hairline">
                 <td className="p-3 text-xs font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider whitespace-nowrap">{field.label}</td>
                 {courses.map(r => (
                   <td key={r.course.code} className="p-3 text-zinc-700 dark:text-zinc-300">
@@ -1165,7 +1165,7 @@ function ComparePhase({
                 ))}
               </tr>
             ))}
-            <tr className="border-t border-zinc-100 dark:border-zinc-800">
+            <tr className="border-t border-zinc-100 dark:border-hairline">
               <td className="p-3 text-xs font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">Why It Fits</td>
               {courses.map(r => (
                 <td key={r.course.code} className="p-3">
@@ -1221,7 +1221,7 @@ function SubjectExplorerResults({
       {/* Top cluster — primary suggestion */}
       <div>
         <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Best fit</p>
-        <div className="rounded-2xl p-6 bg-[#FDEEDF] dark:bg-zinc-900" style={{ border: `2px solid ${COLORS.accent}` }}>
+        <div className="rounded-2xl p-6 bg-[#FDEEDF] dark:bg-surface-paper" style={{ border: `2px solid ${COLORS.accent}` }}>
           <div className="flex items-start gap-3 mb-3">
             <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: COLORS.accent }}>
               <Compass className="w-5 h-5 text-white" />
@@ -1235,7 +1235,7 @@ function SubjectExplorerResults({
           <p className="text-[10px] font-bold uppercase tracking-widest mt-4 mb-2" style={{ color: COLORS.accent }}>Subjects to consider</p>
           <div className="flex flex-wrap gap-2 mb-4">
             {top.cluster.subjects.map(s => (
-              <span key={s} className="text-xs font-semibold px-3 py-1.5 rounded-full bg-white dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200" style={{ border: `1px solid rgba(242,107,31,0.2)` }}>
+              <span key={s} className="text-xs font-semibold px-3 py-1.5 rounded-full bg-white dark:bg-surface-soft text-zinc-800 dark:text-zinc-200" style={{ border: `1px solid rgba(var(--nsu-orange-rgb), 0.2)` }}>
                 {s}
               </span>
             ))}
@@ -1255,12 +1255,12 @@ function SubjectExplorerResults({
           <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Also worth a look</p>
           <div className="space-y-3">
             {alternates.map(alt => (
-              <div key={alt.cluster.id} className="rounded-xl p-4 bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+              <div key={alt.cluster.id} className="rounded-xl p-4 bg-white dark:bg-surface-paper" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
                 <h4 className="font-serif text-base font-bold text-zinc-900 dark:text-white mb-1">{alt.cluster.label}</h4>
                 <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-2">{alt.cluster.blurb}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {alt.cluster.subjects.slice(0, 5).map(s => (
-                    <span key={s} className="text-[10px] font-semibold px-2 py-1 rounded-full bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400" style={{ border: '0.5px solid rgba(0,0,0,0.08)' }}>
+                    <span key={s} className="text-[10px] font-semibold px-2 py-1 rounded-full bg-white dark:bg-surface-soft text-zinc-600 dark:text-zinc-400" style={{ border: '0.5px solid rgba(0,0,0,0.08)' }}>
                       {s}
                     </span>
                   ))}
@@ -1285,7 +1285,7 @@ function SubjectExplorerResults({
       </div>
 
       {/* Soft career callout — low-prescription. NOT "your future career". */}
-      <div className="rounded-xl p-4 bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+      <div className="rounded-xl p-4 bg-white dark:bg-surface-paper" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
         <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Where this can lead</p>
         <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">{top.cluster.careerHint}</p>
         <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-2 italic">
@@ -1330,14 +1330,14 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.96, y: 12 }}
         transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] as number[] }}
-        className="bg-white dark:bg-zinc-900 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-xl w-full frame-dialog-card [--frame-card-max:90vh] flex flex-col overflow-hidden"
+        className="bg-white dark:bg-surface-paper rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-xl w-full frame-dialog-card [--frame-card-max:90vh] flex flex-col overflow-hidden"
         onClick={(e: React.MouseEvent) => e.stopPropagation()}
       >
         {/* Header (fixed) */}
         <div className="flex items-start justify-between p-6 pb-4 shrink-0">
           <div className="flex items-start gap-3 min-w-0">
-            <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-[rgba(242,107,31,0.12)] shrink-0">
-              <Eye size={20} className="text-[#F26B1F]" />
+            <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-accent/12 shrink-0">
+              <Eye size={20} className="text-accent" />
             </div>
             <div className="min-w-0">
               <h2 className="font-serif text-xl font-bold text-[#1A1A1A] dark:text-white">How your results are calculated</h2>
@@ -1362,7 +1362,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
               Every course gets a 0–100% score made of three parts:
             </p>
             <div className="space-y-2.5">
-              <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+              <div className="rounded-xl bg-white dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 p-3">
                 <div className="flex items-baseline justify-between mb-1">
                   <p className="text-sm font-bold text-[#1A1A1A] dark:text-white">Interest fit</p>
                   <span className="text-xs font-bold" style={{ color: COLORS.accent }}>45%</span>
@@ -1371,7 +1371,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
                   How well your interest tags and the scenarios you picked overlap with the course's own tags. Full credit at 3+ matching interests, with a bonus for matching scenarios.
                 </p>
               </div>
-              <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+              <div className="rounded-xl bg-white dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 p-3">
                 <div className="flex items-baseline justify-between mb-1">
                   <p className="text-sm font-bold text-[#1A1A1A] dark:text-white">Values alignment</p>
                   <span className="text-xs font-bold" style={{ color: COLORS.accent }}>30%</span>
@@ -1380,7 +1380,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
                   Your salary, job-security, and helping-others sliders weighted against the course's salary band and employability rating. Plus your work-style picks (analytical / hands-on / etc.) and team preference.
                 </p>
               </div>
-              <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+              <div className="rounded-xl bg-white dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 p-3">
                 <div className="flex items-baseline justify-between mb-1">
                   <p className="text-sm font-bold text-[#1A1A1A] dark:text-white">Feasibility</p>
                   <span className="text-xs font-bold" style={{ color: COLORS.accent }}>25%</span>
@@ -1395,7 +1395,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
           {/* Salary */}
           <section>
             <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Salary band</p>
-            <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+            <div className="rounded-xl bg-white dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 p-3">
               <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed mb-2">
                 Every course carries a <span className="font-bold">Low / Mid / High</span> salary band. These are <span className="font-bold">informed reference values</span>, not predictions for you personally — they reflect roughly where typical mid-career graduate earnings sit in Ireland for that pathway, based on the general patterns visible across publicly-available labour-market and graduate-outcome reporting.
               </p>
@@ -1408,7 +1408,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
           {/* Employability */}
           <section>
             <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Employability rating</p>
-            <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+            <div className="rounded-xl bg-white dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 p-3">
               <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed mb-2">
                 A <span className="font-bold">1 to 5 rating</span> per course, also informed-but-curated. Higher means the path from this course to substantive employment or further study tends to be more predictable in the Irish market.
               </p>
@@ -1422,8 +1422,8 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
           </section>
 
           {/* Disclaimer */}
-          <section className="rounded-xl p-3" style={{ backgroundColor: 'rgba(242,107,31,0.10)' }}>
-            <p className="text-xs text-[#8C3A0E] dark:text-[#FDEEDF] leading-relaxed">
+          <section className="rounded-xl p-3" style={{ backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.10)' }}>
+            <p className="text-xs text-accentDarkText dark:text-[#FDEEDF] leading-relaxed">
               <span className="font-bold">Treat the result as a guide, not a verdict.</span> The algorithm reflects fit between you and a course, not how your career will go. Use it to surface options you hadn't thought about — then go talk to people doing the job.
             </p>
           </section>
@@ -1433,7 +1433,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
         <div className="px-6 pb-6 pt-2 shrink-0 border-t border-black/[0.04] dark:border-white/[0.06]">
           <button
             onClick={onClose}
-            className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
+            className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-accent text-white font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
           >
             Got it
           </button>

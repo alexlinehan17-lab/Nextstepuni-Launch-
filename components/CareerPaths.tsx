@@ -392,7 +392,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
                             {doors.map((d) => (
                               <div key={d.key} className="relative">
                                 <span className="absolute -left-[26px] top-3.5" aria-hidden="true">
-                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F26B1F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={COLORS.accent} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                                 </span>
                                 <div className="rounded-2xl p-3.5" style={{ backgroundColor: 'var(--deck-paper)', border: `2px solid ${INK}` }}>
                                   <div className="flex items-baseline justify-between gap-2 mb-2">
@@ -443,7 +443,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
               const wd = FIELD_WORLD[c.field];
               const Icon = careerIcon(c.field, c.iconKey);
               return (
-                <div key={c.id} className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46] p-4">
+                <div key={c.id} className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46] p-4">
                   <div className="flex items-center gap-2.5 mb-1">
                     <span className="w-8 h-8 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: wd.bg }}><Icon size={16} color="#fff" /></span>
                     <div><p className="text-[14px] font-semibold leading-tight" style={{ color: INK }}>{c.title}</p><p className="text-[12px]" style={{ color: MUTED }}>{payRange(c.salary)} gross estimate</p></div>
@@ -474,7 +474,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
         </div>
       )}
       {filter === 'matches' && (
-        <div className="flex items-start gap-2 rounded-xl p-3 mb-4" style={{ backgroundColor: '#F1F0ED' }}>
+        <div className="flex items-start gap-2 rounded-xl p-3 mb-4" style={{ backgroundColor: 'var(--surface-soft)' }}>
           <Compass size={15} className="mt-0.5 shrink-0 text-zinc-500" />
           <p className="text-[12.5px] text-zinc-600">Careers your Future Finder results point toward. Swipe through, then tap any for the full picture.</p>
         </div>
@@ -485,9 +485,9 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
         <>
           <DeckStack items={deck} index={index} onAdvance={advance} onOpen={open} renderFace={(c) => <CardFace c={c} saved={state.savedIds.includes(c.id)} matched={matchedIds.has(c.id)} />} />
           <div className="flex items-center justify-center gap-3 mt-6">
-            <button onClick={() => top && advance(top, 'left')} aria-label="Skip" className="w-12 h-12 rounded-full border-2 border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 flex items-center justify-center transition-transform hover:scale-105"><X size={20} className="text-zinc-400" /></button>
+            <button onClick={() => top && advance(top, 'left')} aria-label="Skip" className="w-12 h-12 rounded-full border-2 border-zinc-200 dark:border-zinc-700 bg-white dark:bg-surface-paper flex items-center justify-center transition-transform hover:scale-105"><X size={20} className="text-zinc-400" /></button>
             <OrangeBtn label="Explore this career" icon={BookOpen} onClick={() => top && open(top)} />
-            <button onClick={() => top && advance(top, 'right')} aria-label="Save" className="w-12 h-12 rounded-full border-2 bg-white dark:bg-zinc-900 flex items-center justify-center transition-transform hover:scale-105" style={{ borderColor: topWorld.bg }}><Bookmark size={20} style={{ color: topWorld.bg }} /></button>
+            <button onClick={() => top && advance(top, 'right')} aria-label="Save" className="w-12 h-12 rounded-full border-2 bg-white dark:bg-surface-paper flex items-center justify-center transition-transform hover:scale-105" style={{ borderColor: topWorld.bg }}><Bookmark size={20} style={{ color: topWorld.bg }} /></button>
           </div>
           <p className="text-center text-[12px] mt-3 text-zinc-400">Swipe the card, or use the buttons · {deck.length - index} to go</p>
         </>

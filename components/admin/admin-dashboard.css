@@ -13,7 +13,7 @@
   --admin-control: #76736e;
   --admin-hover: #2e2e2e;
   --admin-selected: #303030;
-  --admin-accent: #ffa168;
+  --admin-accent: var(--nsu-orange);
   --admin-action: #f5f5ee;
   --admin-action-ink: #191919;
   --admin-success: #a7cfb1;
@@ -61,11 +61,11 @@
 .admin-nav button:is(:hover, [aria-current='page']) { color: var(--admin-ink); }
 .admin-nav button:not([aria-current='page']):hover .admin-nav-label { text-decoration: underline; text-decoration-color: var(--admin-control); text-decoration-thickness: 2px; text-underline-offset: 8px; }
 .admin-nav button[aria-current='page'] .admin-nav-number { color: var(--admin-accent); }
-.admin-nav:not([data-indicator-ready='true']) button[aria-current='page'] { border-bottom-color: #fa6c1b; }
+.admin-nav:not([data-indicator-ready='true']) button[aria-current='page'] { border-bottom-color: var(--nsu-orange); }
 .admin-nav[data-indicator-ready='true']::after {
   content: ''; position: absolute; pointer-events: none; height: 2px;
   left: var(--admin-nav-line-left); top: var(--admin-nav-line-top); width: var(--admin-nav-line-width);
-  background: #fa6c1b;
+  background: var(--nsu-orange);
   transition: left 220ms cubic-bezier(.2,.7,.3,1), top 220ms cubic-bezier(.2,.7,.3,1), width 220ms cubic-bezier(.2,.7,.3,1);
 }
 .admin-logout { display: flex; align-items: center; justify-content: center; gap: 7px; min-height: 40px; padding: 0 10px; border: 1px solid var(--admin-control); border-radius: 5px; font-size: 11px; color: var(--admin-body); }

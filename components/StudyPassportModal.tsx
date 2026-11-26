@@ -84,11 +84,11 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
             aria-modal="true"
             aria-labelledby="study-passport-title"
             tabIndex={-1}
-            className="relative bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-lg shadow-[5px_5px_0_0_#383838] overflow-hidden frame-sheet [--frame-card-max:92dvh] overflow-y-auto"
+            className="relative bg-white dark:bg-surface-paper border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-lg shadow-[5px_5px_0_0_#383838] overflow-hidden frame-sheet [--frame-card-max:92dvh] overflow-y-auto"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Header */}
-            <div className="frame-dialog-head flex items-center justify-between p-6 pb-4 sticky top-0 bg-white dark:bg-zinc-900 z-10 border-b border-[#DDD8D2] dark:border-zinc-700">
+            <div className="frame-dialog-head flex items-center justify-between p-6 pb-4 sticky top-0 bg-white dark:bg-surface-paper z-10 border-b border-[#DDD8D2] dark:border-zinc-700">
               <div>
                 <h2 id="study-passport-title" className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
                   Study Passport
@@ -101,7 +101,7 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
               <button
                 onClick={onClose}
                 aria-label="Close"
-                className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#CFC9C2] bg-white text-[#6F6861] transition-colors hover:border-[#383838] hover:text-[#1A1A1A] dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
+                className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#CFC9C2] bg-white text-[#6F6861] transition-colors hover:border-[#383838] hover:text-[#1A1A1A] dark:border-zinc-700 dark:bg-surface-soft dark:text-zinc-300"
               >
                 <X size={18} />
               </button>
@@ -109,7 +109,7 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
 
             {/* Progress bar */}
             <div className="px-6 pt-2 pb-4">
-              <div className="w-full h-2 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
+              <div className="w-full h-2 bg-zinc-100 dark:bg-surface-soft rounded-full overflow-hidden">
                 <MotionDiv
                   className="h-full bg-[var(--accent-hex)] rounded-full"
                   initial={{ width: 0 }}
@@ -117,7 +117,7 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
                   transition={{ duration: 1, delay: 0.3, ease: 'easeOut' }}
                 />
               </div>
-              <div className="mt-4 flex rounded-xl border border-[#DDD8D2] bg-white p-1 dark:border-zinc-700 dark:bg-zinc-800" role="group" aria-label="Filter passport stamps">
+              <div className="mt-4 flex rounded-xl border border-[#DDD8D2] bg-white p-1 dark:border-zinc-700 dark:bg-surface-soft" role="group" aria-label="Filter passport stamps">
                 {([
                   ['all', 'All'],
                   ['remaining', 'Remaining'],
@@ -159,7 +159,7 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
                       type="button"
                       onClick={() => toggleCategory(key)}
                       aria-expanded={isExpanded}
-                      className="mb-3 flex min-h-11 w-full items-center justify-between rounded-xl px-2 text-left hover:bg-white dark:hover:bg-zinc-800"
+                      className="mb-3 flex min-h-11 w-full items-center justify-between rounded-xl px-2 text-left hover:bg-white dark:hover:bg-surface-soft"
                     >
                       <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400">{categoryTitles[key]}</h3>
                       <span className="flex items-center gap-2 text-[10px] font-bold text-zinc-400 dark:text-zinc-500">
@@ -187,13 +187,13 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
                               type="button"
                               onClick={() => { onClose(); onSelectModule?.(course.id); }}
                               aria-label={`Open ${displayTitle}`}
-                              className="flex h-full w-full min-w-0 items-center gap-2.5 rounded-xl border border-[#E2DDD6] bg-white px-2.5 py-2.5 text-left transition-colors hover:border-[#383838] dark:border-zinc-700 dark:bg-zinc-800 dark:hover:border-zinc-500"
+                              className="flex h-full w-full min-w-0 items-center gap-2.5 rounded-xl border border-[#E2DDD6] bg-white px-2.5 py-2.5 text-left transition-colors hover:border-[#383838] dark:border-zinc-700 dark:bg-surface-soft dark:hover:border-zinc-500"
                             >
                             <div
                               className={`h-9 w-9 shrink-0 rounded-full flex items-center justify-center transition-all ${
                                 isComplete
                                   ? `${stampBg} text-white ring-4 ${stampRing}`
-                                  : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-300 dark:text-zinc-600'
+                                  : 'bg-zinc-100 dark:bg-surface-soft text-zinc-300 dark:text-zinc-600'
                               }`}
                               title={displayTitle}
                             >

@@ -833,7 +833,7 @@
   --nsu-surface: var(--card);
   --nsu-surface-border: var(--border);
   --rs-serif: 'Source Serif 4', Georgia, serif;
-  --rs-orange: #eb692a;
+  --rs-orange: var(--nsu-orange);
 }
 .mr-contents-dialog .mr-notebook-label {
   display: none;
@@ -852,7 +852,7 @@
 .mr-main textarea:focus-visible,
 .mr-main input:focus-visible,
 .mr-notes-dialog textarea:focus-visible {
-  outline: 2px solid var(--rs-orange, #eb692a);
+  outline: 2px solid var(--rs-orange, var(--nsu-orange));
   outline-offset: 3px;
 }
 @media (min-width: 1500px) {
@@ -1038,6 +1038,6 @@
 }
 
 .dark .mr-contents-dialog {
-  --nsu-surface: #202020;
+  --nsu-surface: var(--surface-paper);
   --nsu-surface-border: #ffffff2c;
 }

@@ -11,8 +11,9 @@ import type { UnifiedMockResult } from '../../../types';
 import { CONFIDENCE_LABELS, type ActivityBucket, type ActivityMetric, type ConfidenceObservation, type RangeBounds, type RankedValue } from '../dashboardAnalytics';
 import { Surface, Eyebrow, Empty, ProgressTabs } from './shared';
 import { confidenceChartData, subjectColour } from './progressData';
+import { COLORS } from '../../../design/tokens';
 
-const orange = '#eb692a';
+const orange = COLORS.accent;
 const dayLabel = (value: number) => new Date(value).toLocaleDateString('en-IE', { day: 'numeric', month: 'short' });
 const activityConfig = { sessions: { label: 'Sessions', color: orange }, minutes: { label: 'Minutes', color: orange } };
 function Insights({ children, label }: { children: ReactNode; label: string }) {

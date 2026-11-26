@@ -4,7 +4,7 @@
   --feedback-ink: #24271f;
   --feedback-muted: #666c61;
   --feedback-line: #d8dcd2;
-  --feedback-orange: #ff7918;
+  --feedback-orange: var(--nsu-orange);
   display: flex;
   flex-direction: column;
   width: min(1120px, 100%);

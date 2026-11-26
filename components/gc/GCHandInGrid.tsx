@@ -90,7 +90,7 @@ const GCHandInGrid: React.FC<Props> = ({ students, allCourses, school, onSelectS
       <div className="flex flex-wrap items-center gap-2 mb-4">
         <button
           onClick={() => setFilter(null)}
-          className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${filter === null ? 'bg-zinc-900 text-white border-zinc-900 dark:bg-zinc-100 dark:text-zinc-900' : 'bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700'}`}
+          className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${filter === null ? 'bg-zinc-900 text-white border-zinc-900 dark:bg-zinc-100 dark:text-zinc-900' : 'bg-white dark:bg-surface-paper text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700'}`}
         >
           All {rows.length}
         </button>
@@ -98,17 +98,17 @@ const GCHandInGrid: React.FC<Props> = ({ students, allCourses, school, onSelectS
           <button
             key={t}
             onClick={() => setFilter(filter === t ? null : t)}
-            className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${filter === t ? 'bg-zinc-900 text-white border-zinc-900 dark:bg-zinc-100 dark:text-zinc-900' : 'bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700'}`}
+            className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${filter === t ? 'bg-zinc-900 text-white border-zinc-900 dark:bg-zinc-100 dark:text-zinc-900' : 'bg-white dark:bg-surface-paper text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700'}`}
           >
             {t} {tagCount(t)}
           </button>
         ))}
       </div>
 
-      <div className="overflow-x-auto rounded-xl border border-zinc-200 dark:border-zinc-800">
-        <table className="w-full text-sm bg-white dark:bg-zinc-900 min-w-[640px]">
+      <div className="overflow-x-auto rounded-xl border border-zinc-200 dark:border-hairline">
+        <table className="w-full text-sm bg-white dark:bg-surface-paper min-w-[640px]">
           <thead>
-            <tr className="text-left text-[11px] uppercase tracking-wide text-zinc-400 border-b border-zinc-200 dark:border-zinc-800">
+            <tr className="text-left text-[11px] uppercase tracking-wide text-zinc-400 border-b border-zinc-200 dark:border-hairline">
               <th className="px-4 py-2.5 font-semibold">Student</th>
               <th className="px-3 py-2.5 font-semibold">Status</th>
               <th className="px-3 py-2.5 font-semibold">This week</th>
@@ -148,7 +148,7 @@ const GCHandInGrid: React.FC<Props> = ({ students, allCourses, school, onSelectS
                             onClick={() => { toggleTag(school, r.uid, t); setVer(v => v + 1); }}
                             aria-pressed={on}
                             title={`${on ? 'Remove' : 'Add'} ${t}`}
-                            className={`px-1.5 py-0.5 rounded text-[10px] font-semibold border transition-colors ${on ? 'bg-zinc-900 text-white border-zinc-900 dark:bg-zinc-100 dark:text-zinc-900' : 'bg-white dark:bg-zinc-900 text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:text-zinc-600'}`}
+                            className={`px-1.5 py-0.5 rounded text-[10px] font-semibold border transition-colors ${on ? 'bg-zinc-900 text-white border-zinc-900 dark:bg-zinc-100 dark:text-zinc-900' : 'bg-white dark:bg-surface-paper text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:text-zinc-600'}`}
                           >
                             {t === 'At-risk' ? 'AR' : t === 'Priority' ? 'Pri' : t}
                           </button>

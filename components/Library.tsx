@@ -126,12 +126,12 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
       </div>
 
       {/* Clean Surface */}
-      <div className="h-full w-full card-styled bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 pt-16 flex flex-col justify-between relative z-10 overflow-hidden">
+      <div className="h-full w-full card-styled bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-8 pt-16 flex flex-col justify-between relative z-10 overflow-hidden">
         <div>
           <div className="flex items-center justify-between mb-8">
             <MotionDiv
               className={`w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-500 shadow-sm
-                ${isCompleted ? 'bg-emerald-500 text-white' : isUnlocked ? 'bg-zinc-900 dark:bg-white text-white dark:text-zinc-900' : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400'}`}
+                ${isCompleted ? 'bg-emerald-500 text-white' : isUnlocked ? 'bg-zinc-900 dark:bg-white text-white dark:text-zinc-900' : 'bg-zinc-200 dark:bg-surface-soft text-zinc-400'}`}
               whileHover={isUnlocked ? { x: 5, y: -2 } : {}}
             >
               {isCompleted ? <CheckCircle2 size={28} /> : !isUnlocked ? <Lock size={24} /> : <Icon size={28} strokeWidth={1.5} />}
@@ -172,7 +172,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
 
         {!isUnlocked && (
           <div className="absolute inset-0 bg-zinc-50/80 dark:bg-zinc-950/80 flex items-center justify-center z-20">
-            <div className="bg-white dark:bg-zinc-900 px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-800 flex items-center gap-2">
+            <div className="bg-white dark:bg-surface-paper px-4 py-2 rounded-lg border border-zinc-200 dark:border-hairline flex items-center gap-2">
                <Lock size={12} className="text-zinc-400" />
                <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400">Locked</span>
             </div>
@@ -224,18 +224,18 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
   const _unlockedIndex = courses.length; // For now, all modules in a category are unlocked by default
 
   return (
-    <div className="min-h-screen transition-colors duration-500 overflow-x-hidden relative bg-white dark:bg-zinc-950">
+    <div className="min-h-screen transition-colors duration-500 overflow-x-hidden relative bg-white dark:bg-surface-canvas">
 
       {/* Sidebar — desktop only, starts below fixed header */}
       {hasSidebar && headerHeight > 0 && (
         <aside
-          className={`hidden md:flex flex-col fixed left-0 bottom-0 z-[55] bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r-[1.5px] border-[#383838] dark:border-zinc-800 overflow-y-auto transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
+          className={`hidden md:flex flex-col fixed left-0 bottom-0 z-[55] bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r-[1.5px] border-[#383838] dark:border-hairline overflow-y-auto transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
           style={{ top: `${headerHeight}px` }}
         >
           {/* Avatar row — click to toggle */}
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="flex items-center gap-3 px-3 py-3 w-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors shrink-0"
+            className="flex items-center gap-3 px-3 py-3 w-full hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors shrink-0"
           >
             <div className="w-9 h-9 rounded-full overflow-hidden shrink-0 bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center">
               {userAvatarSeed ? (
@@ -255,7 +255,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
               <button
                 key={item.label}
                 onClick={item.onClick}
-                className={`flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors ${item.active ? 'bg-zinc-100 dark:bg-zinc-800' : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'}`}
+                className={`flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors ${item.active ? 'bg-zinc-100 dark:bg-surface-soft' : 'hover:bg-zinc-100 dark:hover:bg-surface-soft'}`}
               >
                 <div className="shrink-0 flex items-center justify-center w-[18px]">
                   <item.icon size={18} strokeWidth={1.5} className="text-zinc-600 dark:text-zinc-400" />
@@ -268,12 +268,12 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
           </nav>
 
           {/* User actions */}
-          <div className="border-t border-zinc-200 dark:border-zinc-800 mx-2 pt-2 flex flex-col gap-1">
+          <div className="border-t border-zinc-200 dark:border-hairline mx-2 pt-2 flex flex-col gap-1">
             {/* Notifications */}
             <button
               data-notification-toggle
               onClick={toggleNotificationPanel}
-              className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+              className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
             >
               <div className="shrink-0 flex items-center justify-center w-[18px]">
                 <Bell size={18} strokeWidth={1.5} className="text-amber-500" />
@@ -287,7 +287,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
             {onOpenPassport && (
               <button
                 onClick={onOpenPassport}
-                className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
               >
                 <div className="shrink-0 flex items-center justify-center w-[18px]">
                   <Award size={18} strokeWidth={1.5} className="text-purple-500" />
@@ -305,10 +305,10 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
             {onChangeSubjects && (
               <button
                 onClick={onChangeSubjects}
-                className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
               >
                 <div className="shrink-0 flex items-center justify-center w-[18px]">
-                  <RefreshCw size={18} strokeWidth={1.5} className="text-[#F26B1F]" />
+                  <RefreshCw size={18} strokeWidth={1.5} className="text-accent" />
                 </div>
                 <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
                   Change Subjects
@@ -321,7 +321,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
               <div className="relative">
                 <button
                   onClick={() => { setThemePickerOpen(!themePickerOpen); setCardPickerOpen(false); }}
-                  className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                  className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
                 >
                   <div className="shrink-0 flex items-center justify-center w-[18px]">
                     {settingsCtx.settings.darkMode ? (
@@ -341,11 +341,11 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: -4, scale: 0.95 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute left-0 bottom-full mb-2 w-56 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-lg dark:shadow-2xl p-3 z-50"
+                      className="absolute left-0 bottom-full mb-2 w-56 bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-xl shadow-lg dark:shadow-2xl p-3 z-50"
                     >
                       <button
                         onClick={() => { settingsCtx.updateSetting('darkMode', !settingsCtx.settings.darkMode); }}
-                        className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 mb-2"
+                        className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft mb-2"
                       >
                         <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300">{settingsCtx.settings.darkMode ? 'Light Mode (Beta)' : 'Dark Mode (Beta)'}</span>
                         {settingsCtx.settings.darkMode ? <Sun size={14} className="text-amber-400" /> : <Moon size={14} className="text-zinc-500" />}
@@ -361,7 +361,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
               <div className="relative">
                 <button
                   onClick={() => { setCardPickerOpen(!cardPickerOpen); setThemePickerOpen(false); }}
-                  className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                  className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
                 >
                   <div className="shrink-0 flex items-center justify-center w-[18px]">
                     <Layers size={18} strokeWidth={1.5} className="text-zinc-500" />
@@ -377,7 +377,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: -4, scale: 0.95 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute left-0 bottom-full mb-2 w-56 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-lg dark:shadow-2xl p-3 z-50"
+                      className="absolute left-0 bottom-full mb-2 w-56 bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-xl shadow-lg dark:shadow-2xl p-3 z-50"
                     >
                       <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2 px-1">Card Style</p>
                       <div className="space-y-1">
@@ -388,7 +388,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
                             className={`w-full flex items-center justify-between p-2 rounded-lg transition-all ${
                               settingsCtx.settings.cardStyle === style.id
                                 ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
-                                : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                                : 'hover:bg-zinc-100 dark:hover:bg-surface-soft'
                             }`}
                           >
                             <div>
@@ -408,7 +408,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
             {onOpenSettings && (
               <button
                 onClick={onOpenSettings}
-                className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
               >
                 <div className="shrink-0 flex items-center justify-center w-[18px]">
                   <Settings size={18} strokeWidth={1.5} className="text-zinc-500" />
@@ -423,7 +423,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
             {onLogout && (
               <button
                 onClick={onLogout}
-                className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
               >
                 <div className="shrink-0 flex items-center justify-center w-[18px]">
                   <LogOut size={18} strokeWidth={1.5} className="text-rose-500" />
@@ -438,7 +438,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
           {/* Collapse toggle */}
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="flex items-center gap-3 px-2.5 py-3 mx-2 mb-3 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            className="flex items-center gap-3 px-2.5 py-3 mx-2 mb-3 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
           >
             <div className={`shrink-0 flex items-center justify-center w-[18px] transition-transform duration-300 ${sidebarOpen ? '' : 'rotate-180'}`}>
               <PanelLeft size={18} strokeWidth={1.5} className="text-zinc-400 dark:text-zinc-500" />
@@ -453,11 +453,11 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
       {/* Main content area */}
       <div className={`flex flex-col items-center pt-24 md:pt-32 pb-24 md:pb-12 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${hasSidebar ? (sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]') : ''}`}>
 
-      <header data-student-page-header ref={headerRef} className="fixed top-0 left-0 right-0 z-[60] border-b border-zinc-200/50 dark:border-white/[0.06] px-4 md:px-10 bg-white dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}>
+      <header data-student-page-header ref={headerRef} className="fixed top-0 left-0 right-0 z-[60] border-b border-zinc-200/50 dark:border-white/[0.06] px-4 md:px-10 bg-white dark:bg-surface-canvas" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}>
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4 md:gap-8">
             <BackButton onClick={onBack} label="Back to learning paths" />
-            <div className="hidden md:block h-10 w-px bg-zinc-200 dark:bg-zinc-800" />
+            <div className="hidden md:block h-10 w-px bg-zinc-200 dark:bg-surface-soft" />
             <div>
               <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">Module</p>
               <h1 className="font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">{title}</h1>

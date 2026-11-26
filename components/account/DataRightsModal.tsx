@@ -125,7 +125,7 @@ export const DataRightsModal: React.FC<DataRightsModalProps> = ({ open, onClose,
     <MotionDiv
       key="card"
       initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }}
-      className="frame-sheet bg-white dark:bg-zinc-900 w-full sm:max-w-md rounded-t-2xl sm:rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-2xl overflow-hidden"
+      className="frame-sheet bg-white dark:bg-surface-paper w-full sm:max-w-md rounded-t-2xl sm:rounded-2xl border border-zinc-200 dark:border-hairline shadow-2xl overflow-hidden"
       onClick={(e: React.MouseEvent) => e.stopPropagation()}
     >
       {body}
@@ -133,7 +133,7 @@ export const DataRightsModal: React.FC<DataRightsModalProps> = ({ open, onClose,
   );
 
   const header = (title: string, closable = true) => (
-    <div className="flex items-center justify-between px-5 py-4 border-b border-zinc-100 dark:border-zinc-800">
+    <div className="flex items-center justify-between px-5 py-4 border-b border-zinc-100 dark:border-hairline">
       <h2 className="text-base font-semibold text-zinc-900 dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>{title}</h2>
       {closable && (
         <button onClick={reset} aria-label="Close" className="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/[0.06]">
@@ -221,7 +221,7 @@ export const DataRightsModal: React.FC<DataRightsModalProps> = ({ open, onClose,
                 onChange={e => { setPassword(e.target.value); setError(''); }}
                 onKeyDown={e => { if (e.key === 'Enter' && password) handleReauth(); }}
                 placeholder="Your password"
-                className="w-full py-3 px-4 rounded-xl text-sm bg-white dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 focus:border-rose-400 outline-none text-zinc-800 dark:text-zinc-100"
+                className="w-full py-3 px-4 rounded-xl text-sm bg-white dark:bg-surface-soft border-2 border-zinc-200 dark:border-zinc-700 focus:border-rose-400 outline-none text-zinc-800 dark:text-zinc-100"
               />
             )}
             {errLine}
@@ -256,7 +256,7 @@ export const DataRightsModal: React.FC<DataRightsModalProps> = ({ open, onClose,
               type="text" value={typed} autoFocus disabled={phase === 'deleting'}
               onChange={e => { setTyped(e.target.value); setError(''); }}
               placeholder="DELETE"
-              className="w-full py-3 px-4 rounded-xl text-sm bg-white dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 focus:border-rose-400 outline-none text-zinc-800 dark:text-zinc-100 tracking-widest"
+              className="w-full py-3 px-4 rounded-xl text-sm bg-white dark:bg-surface-soft border-2 border-zinc-200 dark:border-zinc-700 focus:border-rose-400 outline-none text-zinc-800 dark:text-zinc-100 tracking-widest"
             />
             {errLine}
             <div className="flex gap-2 mt-4">

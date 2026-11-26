@@ -43,7 +43,7 @@ const AttentionDeficitCalculator = () => {
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
             <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Interactive Calculator</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Interactive Calculator</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Attention Deficit Calculator</h4>
                 <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>After an interruption it can take a while to fully refocus. This is a simplified illustration of how quickly those costs add up.</p>
             </div>
@@ -263,7 +263,7 @@ const PhasedDetoxRoadmap = () => {
                 style={phaseDone ? { backgroundColor: moduleFill(COLORS.successTint), border: `2.5px solid ${COLORS.success}`, borderRadius: 16, boxShadow: 'none' } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}
               >
                 {/* Dot on timeline */}
-                <div className={`absolute -left-[calc(2rem+10px)] md:-left-[calc(2.5rem+10px)] top-6 w-5 h-5 rounded-full border-4 border-white dark:border-zinc-800 ${phaseDone ? '' : style.accentBg}`} style={phaseDone ? { backgroundColor: moduleFill(COLORS.success) } : undefined} />
+                <div className={`absolute -left-[calc(2rem+10px)] md:-left-[calc(2.5rem+10px)] top-6 w-5 h-5 rounded-full border-4 border-white dark:border-hairline ${phaseDone ? '' : style.accentBg}`} style={phaseDone ? { backgroundColor: moduleFill(COLORS.success) } : undefined} />
 
                 {/* Phase header */}
                 <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -294,7 +294,7 @@ const PhasedDetoxRoadmap = () => {
                         >
                           {/* Custom checkbox */}
                           <MotionDiv
-                            className={`mt-0.5 flex-shrink-0 w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors ${isChecked ? `${style.checkBg} border-transparent` : `${style.checkBorder} bg-white dark:bg-zinc-900`}`}
+                            className={`mt-0.5 flex-shrink-0 w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors ${isChecked ? `${style.checkBg} border-transparent` : `${style.checkBorder} bg-white dark:bg-surface-paper`}`}
                             animate={isChecked ? { scale: [1, 1.25, 1] } : { scale: 1 }}
                             transition={{ duration: 0.25 }}
                           >

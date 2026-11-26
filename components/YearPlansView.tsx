@@ -95,7 +95,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
   };
 
   return (
-    <div className="frame-page [--frame-pad-top:4rem] md:[--frame-pad-top:5rem] min-h-screen theme-compat bg-white dark:bg-zinc-950 pb-32 px-4 sm:px-6 transition-colors duration-500">
+    <div className="frame-page [--frame-pad-top:4rem] md:[--frame-pad-top:5rem] min-h-screen theme-compat bg-white dark:bg-surface-canvas pb-32 px-4 sm:px-6 transition-colors duration-500">
       <div className="max-w-5xl mx-auto">
         <PageHeader onBack={onBack} eyebrow="Plan ahead" title="Year Plans" className="mb-4" />
         <p
@@ -127,7 +127,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                 className="overflow-hidden relative"
                 style={{
                   background: '#FFFFFF',
-                  border: isCurrent ? '2px solid #F26B1F' : '1px solid #E8E2D8',
+                  border: isCurrent ? '2px solid var(--nsu-orange)' : '1px solid #E8E2D8',
                   borderRadius: 22,
                   boxShadow: isCurrent ? '4px 4px 0 #1A1A1A' : '0 4px 28px rgba(28,25,23,0.06), 0 1px 3px rgba(28,25,23,0.04)',
                 }}
@@ -244,7 +244,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                       <button
                         onClick={() => firstIncomplete && onSelectModule(firstIncomplete)}
                         aria-label={`${completed > 0 ? 'Continue' : 'Start'} ${plan.title}`}
-                        className="group inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)] rounded-md"
+                        className="group inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35 rounded-md"
                         style={{ ...SANS, fontSize: 14, fontWeight: 500, color: '#1a1a1a' }}
                       >
                         {completed > 0 ? 'Continue' : 'Start'}
@@ -260,7 +260,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                     <button
                       onClick={() => setExpandedId(isExpanded ? null : plan.id)}
                       aria-label={`${isExpanded ? 'Hide' : 'View'} modules in ${plan.title}`}
-                      className="inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)] rounded-md"
+                      className="inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35 rounded-md"
                       style={{ ...SANS, fontSize: 12, color: 'rgba(0,0,0,0.5)' }}
                       aria-expanded={isExpanded}
                     >
@@ -295,7 +295,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                               <li key={moduleId}>
                                 <button
                                   onClick={() => onSelectModule(moduleId)}
-                                  className="w-full flex items-center gap-3 py-2 px-2 rounded-lg hover:bg-[#F4EFE5] transition-colors text-left group"
+                                  className="w-full flex items-center gap-3 py-2 px-2 rounded-lg hover:bg-surface-soft transition-colors text-left group"
                                 >
                                   <span
                                     className="shrink-0 inline-flex items-center justify-center"

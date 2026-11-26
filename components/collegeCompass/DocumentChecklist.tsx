@@ -31,7 +31,7 @@ const DocumentChecklist: React.FC<DocumentChecklistProps> = ({ hearIndicators, d
   const nothing = !pack.hear.applying && !pack.dare.applying;
 
   return (
-    <div className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5">
+    <div className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5">
       <div className="flex items-start gap-3 mb-3">
         <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl shrink-0" style={{ backgroundColor: COLORS.accentTint }}>
           <FileText size={17} style={{ color: COLORS.accent }} />

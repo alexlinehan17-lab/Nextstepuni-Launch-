@@ -74,8 +74,8 @@
   border-radius: 50%;
 }
 .setup-appearance-card[data-selected=true] .setup-appearance-name > i {
-  background: #f26b1f;
-  border-color: #f26b1f;
+  background: var(--nsu-orange);
+  border-color: var(--nsu-orange);
   color: #1a1a1a;
 }
 .setup-appearance-preview {
@@ -98,15 +98,15 @@
   border-bottom: 1px solid #88888840;
 }
 .setup-appearance-mini-nav b { font-size: 9px; letter-spacing: -.3px; }
-.setup-appearance-mini-nav > i { width: 8px; height: 8px; background: #f26b1f; border-radius: 50%; }
+.setup-appearance-mini-nav > i { width: 8px; height: 8px; background: var(--nsu-orange); border-radius: 50%; }
 .setup-appearance-mini-content { padding: 14px 12px; }
 .setup-appearance-mini-content > small { display: block; font-size: 7px; letter-spacing: .1em; opacity: .7; margin-bottom: 9px; }
 .setup-appearance-mini-content > strong { display: block; font: 500 20px/1.1 'Source Serif 4', Georgia, serif; letter-spacing: -.4px; }
 .setup-appearance-mini-subjects { display: grid; grid-template-columns: 1fr auto; gap: 9px; border-top: 1px solid #88888840; padding-top: 10px; margin-top: 16px; }
 .setup-appearance-mini-subjects span { font-size: 8px; opacity: .8; }
-.setup-appearance-mini-subjects i { width: 25px; height: 3px; background: #f26b1f; align-self: center; border-radius: 2px; }
+.setup-appearance-mini-subjects i { width: 25px; height: 3px; background: var(--nsu-orange); align-self: center; border-radius: 2px; }
 .setup-appearance-mini-subjects i:last-child { width: 17px; }
-.setup-appearance-mini-action { display: flex; align-items: center; justify-content: space-between; background: #f26b1f; color: #1a1a1a; padding: 8px; margin-top: 15px; border-radius: 5px; font-size: 8px; }
+.setup-appearance-mini-action { display: flex; align-items: center; justify-content: space-between; background: var(--nsu-orange); color: #1a1a1a; padding: 8px; margin-top: 15px; border-radius: 5px; font-size: 8px; }
 .setup-appearance .setup-appearance-help { font-size: 14px; margin-top: 16px; }
 .setup-flow[data-step=summary][data-surface=ink] { color-scheme: dark; }
 .desk-flow[data-step=summary][data-surface=paper] .desk-ready-note em { color: #c44d0f; }
