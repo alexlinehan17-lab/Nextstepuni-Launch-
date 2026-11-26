@@ -26,7 +26,7 @@ const PointsExplainer: React.FC<PointsExplainerProps> = ({ isOpen, onDismiss }) 
     <AnimatePresence>
       {isOpen && (
         <MotionDiv
-          className="jp-primer-backdrop"
+          className="jp-primer-backdrop frame-dialog"
           data-lenis-prevent
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
           transition={{ duration: reduceMotion ? 0 : 0.18 }}
@@ -34,7 +34,7 @@ const PointsExplainer: React.FC<PointsExplainerProps> = ({ isOpen, onDismiss }) 
         >
           <MotionDiv
             ref={dialogRef}
-            className="jp-guide jp-primer"
+            className="jp-guide jp-primer frame-dialog-card"
             role="dialog"
             aria-modal="true"
             aria-labelledby={titleId}

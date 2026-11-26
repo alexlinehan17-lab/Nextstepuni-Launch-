@@ -125,7 +125,7 @@ export const DataRightsModal: React.FC<DataRightsModalProps> = ({ open, onClose,
     <MotionDiv
       key="card"
       initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }}
-      className="bg-white dark:bg-zinc-900 w-full sm:max-w-md rounded-t-2xl sm:rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-2xl overflow-hidden"
+      className="frame-sheet bg-white dark:bg-zinc-900 w-full sm:max-w-md rounded-t-2xl sm:rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-2xl overflow-hidden"
       onClick={(e: React.MouseEvent) => e.stopPropagation()}
     >
       {body}
@@ -296,7 +296,7 @@ export const DataRightsModal: React.FC<DataRightsModalProps> = ({ open, onClose,
       <MotionDiv
         key="backdrop"
         initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-        className="fixed inset-0 z-[320] flex items-end sm:items-center justify-center bg-black/50 backdrop-blur-sm p-0 sm:p-4"
+        className="frame-sheet-backdrop [--frame-gap:1rem] z-[320] flex items-end sm:items-center justify-center bg-black/50 backdrop-blur-sm"
         onClick={() => { if (phase !== 'deleting' && phase !== 'deleted') reset(); }}
       >
         {panel(body)}

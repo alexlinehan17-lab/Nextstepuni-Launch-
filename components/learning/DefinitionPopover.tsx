@@ -1,6 +1,7 @@
 import { AnimatePresence,motion,useIsPresent } from 'framer-motion';
 import { createContext,useContext,useEffect,useId,useLayoutEffect,useRef,useState } from 'react';
 import { createPortal } from 'react-dom';
+import { readSafeArea } from '../ui/Frame';
 const PopContext=createContext<any>(null);
 export function Popover({children}:any){
  const[open,setOpen]=useState(false),trigger=useRef<HTMLButtonElement>(null),content=useRef<HTMLSpanElement>(null),id=useId();
@@ -15,6 +16,6 @@ function DefinitionContent({children,...props}:any){
 }
 export function PopoverContent({children,...props}:any){
  const p=useContext(PopContext),[position,setPosition]=useState({left:16,top:16,width:224});
- useLayoutEffect(()=>{if(!p.open)return;const update=()=>{const anchor=p.trigger.current?.getBoundingClientRect();if(!anchor)return;const width=Math.min(224,innerWidth-32),height=p.content.current?.getBoundingClientRect().height||120,left=Math.max(16,Math.min(anchor.left,innerWidth-width-16)),below=anchor.bottom+8,top=below+height<=innerHeight-16?below:Math.max(16,anchor.top-height-8);setPosition({left,top,width})};update();window.addEventListener('resize',update);window.addEventListener('scroll',update,true);return()=>{window.removeEventListener('resize',update);window.removeEventListener('scroll',update,true)}},[p.open,p.trigger,p.content]);
+ useLayoutEffect(()=>{if(!p.open)return;const update=()=>{const anchor=p.trigger.current?.getBoundingClientRect();if(!anchor)return;const width=Math.min(224,innerWidth-32),height=p.content.current?.getBoundingClientRect().height||120,left=Math.max(16,Math.min(anchor.left,innerWidth-width-16)),below=anchor.bottom+8,safe=readSafeArea(),top=below+height<=innerHeight-16-safe.bottom?below:Math.max(16+safe.top,anchor.top-height-8);setPosition({left,top,width})};update();window.addEventListener('resize',update);window.addEventListener('scroll',update,true);return()=>{window.removeEventListener('resize',update);window.removeEventListener('scroll',update,true)}},[p.open,p.trigger,p.content]);
  return createPortal(<AnimatePresence>{p.open&&<DefinitionContent {...props} ref={p.content} id={p.id} style={{...position,position:'fixed'}}>{children}</DefinitionContent>}</AnimatePresence>,document.body);
 }

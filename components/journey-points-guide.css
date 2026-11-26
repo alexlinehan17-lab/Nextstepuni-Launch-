@@ -10,8 +10,8 @@
   text-align: left;
 }
 .dark .jp-guide { --jp-paper: #202020; --jp-ink: #f7f5f1; --jp-muted: #b7b2ab; --jp-rule: #484540; --jp-orange: #ffab7a; }
-.jp-primer-backdrop { position: fixed; inset: 0; z-index: 300; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgb(26 26 26 / .46); }
-.jp-primer { display: flex; flex-direction: column; width: min(100%, 560px); max-height: 92dvh; border: 1px solid var(--jp-rule); border-radius: 18px; box-shadow: 0 24px 80px rgb(0 0 0 / .18); overflow: hidden; }
+.jp-primer-backdrop { --frame-gap: 24px; z-index: 300; display: flex; align-items: center; justify-content: center; background: rgb(26 26 26 / .46); }
+.jp-primer { display: flex; flex-direction: column; width: min(100%, 560px); --frame-card-max: 92dvh; border: 1px solid var(--jp-rule); border-radius: 18px; box-shadow: 0 24px 80px rgb(0 0 0 / .18); overflow: hidden; }
 .jp-guide-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 30px 30px 24px; flex-shrink: 0; }
 .jp-guide .jp-guide-eyebrow { margin: 0; font: 700 10px/1.4 'DM Sans', sans-serif; text-transform: uppercase; letter-spacing: .16em; color: var(--jp-muted); }
 .jp-guide-header .jp-guide-eyebrow { margin-bottom: 11px; color: var(--jp-orange); }
@@ -40,8 +40,8 @@
 .jp-reference .jp-guide-body { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 40px; }
 .jp-reference .jp-guide-spend { padding-top: 0; }
 @media (max-width: 600px) {
-  .jp-primer-backdrop { padding: 12px; }
-  .jp-primer { max-height: calc(100dvh - 24px); border-radius: 14px; }
+  .jp-primer-backdrop { --frame-gap: 12px; }
+  .jp-primer { --frame-card-max: 100dvh; border-radius: 14px; }
   .jp-guide-header { padding: 24px 22px 20px; gap: 8px; }
   .jp-guide-header h2 { font-size: 30px; }
   .jp-guide .jp-guide-intro { font-size: 13px; line-height: 1.5; }

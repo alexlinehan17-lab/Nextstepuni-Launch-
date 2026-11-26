@@ -1541,10 +1541,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       </nav>}
       <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} onDocumentChange={setLegalDoc} />
       {entryHelp && (
-        <div className="auth-live-overlay">
+        <div className="auth-live-overlay frame-dialog">
           <div
             ref={entryHelpRef}
-            className="auth-live-dialog"
+            className="auth-live-dialog frame-dialog-card"
             role="dialog"
             aria-modal="true"
             aria-labelledby="entry-help-title"
