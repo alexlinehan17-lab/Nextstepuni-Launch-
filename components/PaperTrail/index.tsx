@@ -22,7 +22,8 @@ import { COLORS } from '../../design/tokens';
  */
 
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { ArrowLeft, ArrowRight, Bookmark } from 'lucide-react';
+import { ArrowRight, Bookmark } from 'lucide-react';
+import { useBackStep } from '../../contexts/NavigationContext';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import ToolMasthead from '../launchpad/ToolMasthead';
 import PaperSelection, { LEVEL_LABEL, paperLabel, type YearCell } from './PaperSelection';
@@ -265,6 +266,11 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   const [level, setLevel] = useState<PaperLevel | null>(null);
   const [lang, setLang] = useState<PaperLang | null>(null);
   const [year, setYear] = useState<number | null>(null);
+  // Inside Paper Trail a subject, Saved and the study screens are steps of the
+  // archive: the top bar's one Back returns to the archive's front page before
+  // it leaves the tool (navigation.md: Back returns to the screen you came from).
+  // The viewer comes up over the subject and has its own Close.
+  useBackStep(!initialView && view.v !== 'home' && view.v !== 'viewer', () => { setView({ v: 'home' }); setYear(null); });
   const [desktopArchive, setDesktopArchive] = useState(() => typeof window !== 'undefined' && window.matchMedia('(min-width: 900px)').matches);
   useEffect(() => {const media = window.matchMedia('(min-width: 900px)');const update = () => setDesktopArchive(media.matches);media.addEventListener('change', update);return () => media.removeEventListener('change',update);}, []);
   const [scope, setScope] = useState<'mine' | 'all'>('mine');
@@ -834,7 +840,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   const recents = [...mergedRecents.values()].filter(isAvailable).sort((a, b) => b.at - a.at).slice(0, 8);
   const pins = listPins(uid).filter(isAvailable);
   const lastOpened = recents[0];
-  const homeBack = <button className="pt-text-button" onClick={() => setView({ v: 'home' })}><ArrowLeft size={20} aria-hidden /> Paper Trail</button>;
+  // Saved and Practice tools return to the archive's front page through the
+  // top bar's one Back (useBackStep above); they carry no second "← Paper Trail".
 
   if (view.v === 'saved') {
     const row = (r: PaperRef) => {
@@ -850,7 +857,6 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       </article>;
     };
     return <section className="pt-archive pt-saved">
-      <nav className="pt-toolbar" aria-label="Paper Trail">{homeBack}</nav>
       <h1 className="pt-title">Saved papers</h1>
       <p className="pt-page-intro">Your papers, ready when you are.</p>
       {pins.length ? pins.map(row) : <p className="pt-notice">Tap the bookmark beside a paper to save it here.</p>}
@@ -873,7 +879,6 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   ];
 
   if (view.v === 'practice') return <section className="pt-archive pt-practice">
-      <nav className="pt-toolbar" aria-label="Paper Trail">{homeBack}</nav>
       <h1 className="pt-title">Practice tools</h1>
       <p className="pt-page-intro">Build on every paper you practise.</p>
       <button className="pt-topic-link" onClick={() => setView({ v: 'progress' })}>Your progress <ArrowRight size={18} aria-hidden /></button>

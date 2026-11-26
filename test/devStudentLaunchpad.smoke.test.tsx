@@ -17,6 +17,8 @@ vi.mock('@/contexts/NavigationContext', () => ({
     setActiveTool: navigation.setActiveTool,
     goBack: navigation.goBack,
   }),
+  useOptionalNavigation: () => null,
+  useBackStep: () => {},
 }));
 
 vi.mock('@/hooks/useTopicMastery', () => ({

@@ -14,7 +14,8 @@
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { ArrowLeft, ExternalLink, ZoomIn, ZoomOut } from 'lucide-react';
+import { ExternalLink, X, ZoomIn, ZoomOut } from 'lucide-react';
+import { IconButton } from '../ui/Button';
 
 const ZOOM_STEPS = [0.75, 1, 1.25, 1.5, 2, 2.5];
 
@@ -77,13 +78,12 @@ const ImageViewer: React.FC<{
         }}
       >
         <div className="flex items-center gap-2 max-w-3xl mx-auto">
-          <button
+          <IconButton
             onClick={() => onCloseRef.current()}
-            aria-label="Close viewer"
-            className="p-2 -ml-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100"
-          >
-            <ArrowLeft size={19} />
-          </button>
+            label="Close viewer"
+            className="-ml-1"
+            icon={<X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />}
+          />
           <div className="flex-1 min-w-0">
             <p className="text-[14px] font-semibold truncate text-zinc-900 dark:text-white">{title}</p>
             {subtitle && <p className="text-[11px] truncate text-zinc-500">{subtitle}</p>}

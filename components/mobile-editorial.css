@@ -5,12 +5,8 @@
 .mobile-editorial h1, .mobile-editorial .lp-title, .mobile-editorial .lp-tool-card h3,
 .mobile-editorial .pt-subject-name, .mobile-editorial .dashboard-section h2,
 .mobile-editorial .insights-intro + div h2 { font-family: 'DM Sans', sans-serif; font-weight: 750; letter-spacing: -.035em; }
-.mobile-editorial .lp-navigation-header { padding-block: calc(14px + var(--sat, 0px)) 14px !important; }
 .mobile-editorial .lp-navigation-header > div { max-width: 1110px; }
 .mobile-editorial .lp-navigation-header > div > div:first-child { flex: 1; }
-.mobile-editorial .lp-navigation-header p { font: 500 8px/1.4 'DM Sans', sans-serif; letter-spacing: .16em; }
-.mobile-editorial .lp-navigation-title { font-size: 22px; line-height: 1.15; white-space: normal; }
-.mobile-editorial .lp-navigation-art { width: 43px; height: 43px; }
 .mobile-editorial.launchpad-shell > main { padding-top: 0; }
 .lp-first-introduction { position: relative; margin-bottom: 24px; }
 .lp-first-introduction .lp-masthead { padding: 26px 20px; margin: 0; }
@@ -110,12 +106,12 @@
 .mobile-editorial .lp-study-card .lp-action-row { flex-wrap: wrap; gap: 8px; margin-top: 14px; }
 .mobile-editorial .lp-study-card .lp-button { font-size: 12px; padding: 10px 12px; }
 .planner-rest-crew { width: 100px; height: 100px; }
-.mobile-editorial.paper-trail-host { padding-top: calc(96px + var(--sat, 0px)) !important; }
+.mobile-editorial.paper-trail-host { padding-top: var(--pt-shell-top) !important; }
 .mobile-editorial .pt-home { padding-top: 0; }
 .mobile-editorial .pt-home .pt-page-intro { font-size: 12px; margin: 0; }
 .mobile-editorial .pt-subject-name { font-size: 23px; }
 .mobile-editorial .pt-subject-card { min-height: 86px; }
-.insights-mobile { padding-top: calc(16px + var(--sat, 0px)); }
+.insights-mobile { padding-top: 0; }
 .insights-intro { margin: 24px 0; color: var(--ink-secondary, #666); font-size: 14px; }
 .insights-mobile article h2 { font-family: 'DM Sans', sans-serif; letter-spacing: -.04em; font-weight: 750; }
 .insights-mobile article p { font-size: 13px; }
@@ -123,8 +119,6 @@
 .insights-mobile article button { font-size: 13px; }
 .mobile-editorial :is(button, select, summary):focus-visible { outline: 2px solid var(--accent-text, var(--accent-dark-hex)); outline-offset: 3px; }
 @media (max-width: 359px) {
- .mobile-editorial .lp-navigation-title { font-size: 19px; }
- .mobile-editorial .lp-navigation-art { width: 34px; height: 34px; }
  .mobile-editorial .planner-view-tabs { width: 100%; }
  .dashboard-mobile .dashboard-stats { gap: 8px; }
  .dashboard-mobile .dashboard-stats p:first-child { font-size: 7px; }
@@ -177,11 +171,6 @@ button.editorial-back-button:active { transform: translate(1px, 1px); box-shadow
 .dashboard-mobile .font-serif { font-family: 'DM Sans', sans-serif; font-style: normal; letter-spacing: -.025em; }
 .dashboard-mobile .dashboard-stats p:nth-child(2) { font-weight: 700; line-height: 1.2; font-variant-numeric: lining-nums tabular-nums; }
 .confidence-record-summary > strong, .confidence-subject b { font-style: normal; font-variant-numeric: lining-nums tabular-nums; }
-.mobile-editorial .lp-mobile-tool-header { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; gap: 10px; align-items: center; width: 100%; }
-.mobile-editorial .lp-mobile-tool-header > div:first-of-type { min-width: 0; text-align: center; }
-.mobile-editorial .lp-mobile-tool-title p { margin-bottom: 4px; line-height: 1.5; }
-.mobile-editorial .lp-mobile-tool-title h1 { font-size: clamp(18px, 5.5vw, 22px); line-height: 1.2; overflow-wrap: anywhere; }
-.mobile-editorial .lp-mobile-tool-header .lp-navigation-art { width: 44px; height: 44px; object-fit: contain; }
 /* Small illustrated records replace the broad, multicolour allocation bars. */
 .learning-mix-ledger > div { display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 15px 0; border-top: 1px solid var(--outline-soft); }
 .learning-mix-ledger > div > :first-child { width: 52px; height: 62px; object-fit: contain; }

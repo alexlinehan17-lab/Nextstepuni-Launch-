@@ -497,11 +497,38 @@
   text-align: center;
   white-space: nowrap;
 }
-.ui-bar-title { max-width: 100%; margin: 0; overflow: hidden; text-overflow: ellipsis; font-size: 17px; font-weight: 400; line-height: 21px; letter-spacing: -0.02em; }
+/* Two classes deep, so a screen's own h1 rules (mobile-editorial's bold DM
+   Sans headings) cannot restyle the bar's name. */
+.ui-bar .ui-bar-title { max-width: 100%; margin: 0; overflow: hidden; text-overflow: ellipsis; color: var(--ink-primary); font-family: var(--font-ui); font-size: 17px; font-weight: 400; line-height: 21px; letter-spacing: -0.02em; white-space: nowrap; }
 .ui-bar--tool .ui-bar-title { font-size: 19px; line-height: 23px; }
-.ui-bar-over { color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.08em; }
+.ui-bar .ui-bar-over { color: var(--ink-muted); font-family: var(--font-ui); font-size: 11px; font-weight: 400; line-height: 14px; letter-spacing: 0.08em; }
+.ui-place-head .ui-place-name { font-family: var(--font-ui); font-weight: 400; }
 .ui-bar-label { padding: 0 var(--space-4); color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
 .ui-bar-art { display: block; width: 36px; height: 36px; margin-right: 6px; object-fit: contain; }
+.ui-bar-art > :is(svg, img) { display: block; width: 100%; height: 100%; }
+/* A page's one-line explanation under its bar (Year Plans), when it has one. */
+.ui-bar-sub { margin: 0; padding: var(--space-2) var(--space-6) 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+/* A place's opening, where its bar would be: no leave control, its small label
+   8px over its name (navigation.md: "A place opens with its small capitals
+   label ... and its opening line as a large headline"). */
+.ui-place-head { display: flex; flex-direction: column; gap: var(--space-2); background: var(--surface-canvas); color: var(--ink-primary); }
+.ui-place-label { margin: 0; color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.ui-place-row { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); min-height: 32px; }
+.ui-place-name { margin: 0; font-size: 28px; font-weight: 400; line-height: 32px; letter-spacing: -0.04em; }
+.ui-place-actions { display: flex; flex: none; align-items: center; gap: var(--space-2); }
+.ui-place-sub { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+/* On a laptop (from 768px) the bar sits at the top of the page's column: a
+   72px row; a tool's name at the left beside its Back, with no drawing in the
+   bar (Alex, 26 Nov 2026: "not sure do we really need the icon up the top
+   right"); a page's name centred. The place's label keeps its slot. */
+@media (min-width: 768px) {
+  .ui-bar-row { height: 72px; padding: 0; }
+  .ui-bar--tool .ui-bar-row { height: 72px; justify-content: flex-start; gap: var(--space-2); }
+  .ui-bar-row > .ui-bar-slot:first-child { margin-left: -10px; }
+  .ui-bar--tool .ui-bar-mid { position: static; flex: 1; align-items: flex-start; text-align: left; }
+  .ui-bar-art { display: none; }
+  .ui-bar-label { padding: 0; }
+}
 
 /* The tab bar: five places, outline icons over a 10.5px label; the current one
    is ink with a 2px ink marker above it. */

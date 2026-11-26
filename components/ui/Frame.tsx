@@ -6,6 +6,7 @@
  *
  * Layout primitives, by class name:
  *   frame-bar            a top bar: pads itself by the top inset; 44px hit areas
+ *   frame-top            a page's bar pinned to the top of the glass
  *   frame-page           a page with no bar: pads its top by the inset
  *   frame-foot           anything ending at the bottom of the glass
  *   frame-takeover       full screen, edge to edge

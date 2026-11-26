@@ -72,6 +72,8 @@ vi.mock('@/contexts/AuthContext', () => ({ useAuth: () => authState }));
 const navState = vi.hoisted(() => ({ viewState: 'tree', dashboardSection: 'overview', currentCategory: null, currentModuleId: null, cameFromJourney: false, activeTool: null }));
 vi.mock('@/contexts/NavigationContext', () => ({
   useNavigation: () => new Proxy({ state: navState }, { get: (target, key) => (key in target ? target[key as keyof typeof target] : vi.fn()) }),
+  useOptionalNavigation: () => null,
+  useBackStep: () => {},
 }));
 vi.mock('@/contexts/ProgressContext', () => ({
   useProgress: () => ({ updateDemoProgress: vi.fn(), setTimetableCompletions: vi.fn(), progressLoaded: true, progressDataUid: authState.user?.uid ?? null }),

@@ -281,11 +281,10 @@ const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack, onOpenMod
   return (
     <div className="product-shell theme-compat min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] transition-colors duration-300">
       <div
-        className="sticky inset-x-0 top-0 z-40 border-b border-[var(--outline-soft)] bg-[color:var(--surface-canvas)]/95 px-4 pb-4 backdrop-blur-xl md:px-10"
-        style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}
+        className="sticky inset-x-0 top-0 z-40 bg-[var(--surface-canvas)] md:px-10"
       >
         <div className="mx-auto max-w-7xl">
-          <PageHeader onBack={handlePageBack} eyebrow="Evidence library" title="References" backLabel={mobileDetail && window.innerWidth < 768 ? 'Back to references' : 'Back to home'} compact />
+          <PageHeader onBack={handlePageBack} eyebrow="Evidence library" title="References" backLabel={mobileDetail && window.innerWidth < 768 ? 'Back to references' : 'Back'} compact />
         </div>
       </div>
 

@@ -95,9 +95,9 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
   };
 
   return (
-    <div className="frame-page [--frame-pad-top:4rem] md:[--frame-pad-top:5rem] min-h-screen theme-compat bg-white dark:bg-surface-canvas pb-32 px-4 sm:px-6 transition-colors duration-500">
+    <div className="min-h-screen theme-compat bg-white dark:bg-surface-canvas pb-32 px-4 sm:px-6 transition-colors duration-500">
       <div className="max-w-5xl mx-auto">
-        <PageHeader onBack={onBack} eyebrow="Plan ahead" title="Year Plans" className="mb-4" />
+        <PageHeader onBack={onBack} eyebrow="Plan ahead" title="Year Plans" className="-mx-4 mb-8 sm:mx-0" />
         <p
           className="mb-12"
           style={{ ...SANS, fontSize: 14.5, lineHeight: 1.6, color: 'rgba(0,0,0,0.55)', maxWidth: '56ch' }}

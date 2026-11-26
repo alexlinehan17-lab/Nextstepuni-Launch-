@@ -94,7 +94,8 @@ describe('References page', () => {
       fireEvent.click(screen.getByRole('button', { name: 'Back to references' }));
       expect(onBack).not.toHaveBeenCalled();
 
-      fireEvent.click(screen.getByRole('button', { name: 'Back to home' }));
+      // Back returns to the screen you came from (area 0, the frame), so it is named "Back", not "Back to home".
+      fireEvent.click(screen.getByRole('button', { name: 'Back' }));
       expect(onBack).toHaveBeenCalledTimes(1);
     } finally {
       Object.defineProperty(window, 'innerWidth', { configurable: true, value: originalWidth });

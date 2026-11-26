@@ -59,12 +59,10 @@ const AcademicJourneyGame = lazy(() => import('./AcademicJourneyGame'));
 import ToolErrorBoundary from './ToolErrorBoundary';
 import PointsPanel from './PointsPanel';
 import { useNavigation } from '../contexts/NavigationContext';
-import ToolMasthead, { ToolArtwork, ToolIntroduction, ToolIntroductionContext } from './launchpad/ToolMasthead';
+import ToolMasthead, { ToolArtwork, ToolIntroductionContext } from './launchpad/ToolMasthead';
 import LaunchpadToolCard from './launchpad/LaunchpadToolCard';
-import BackButton from './ui/BackButton';
-import { InnovationZoneIcon } from './sectionIcons';
-import { ToolHeader } from './ToolHeader';
-import ToolIconBlob, { type ToolIconKey } from './ToolIconBlob';
+import { TopBar } from './ui/Bars';
+import { type ToolIconKey } from './ToolIconBlob';
 import { isActiveSeniorYear, isLcaYear } from '../utils/authUtils';
 import LaunchpadGuidance from './LaunchpadGuidance';
 import { trackFunnel } from '../utils/funnel';
@@ -152,7 +150,8 @@ const MOBILE_TOOL_EYEBROWS: Record<string, string> = {
       'points-passport': 'Your grades, made visible', 'future-finder-revamped': 'Start with you',
       'paper-trail': 'Your exam archive',
     };
-const MOBILE_TOOL_SUBTITLES: Record<string, string> = { 'mark-bank': 'Build your answer. See where the marks come from.', 'points-passport': 'Your current grades, your goal and the subjects that contribute.', 'future-finder-revamped': 'Find possibilities worth exploring.', 'paper-trail': 'Exam papers & marking schemes.', planner: 'A little structure, with room to study, revisit and rest.' };
+/** The Launchpad's own drawing in its bar on a phone: the card dealer (its board, 26 Nov 2026). */
+const LAUNCHPAD_ART = '/assets/star-crew/companions/card-dealer.png';
 
 
 interface StudyNowBlock {
@@ -202,7 +201,7 @@ const NOOP_DEMO_UPDATE: (updater: (current: ProgressDocument) => ProgressDocumen
 
 // ─── InnovationZone ──────────────────────────────────────────────────────────
 
-const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSubjectProfile, savedJourneyResult, onJourneyComplete, settings: _settings, updateSetting: _updateSetting, onCosmeticUnlocksChange, onStudyNow, dismissedGuides: _dismissedGuides, onDismissGuide: _onDismissGuide }) => {
+const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, initialSubjectProfile, savedJourneyResult, onJourneyComplete, settings: _settings, updateSetting: _updateSetting, onCosmeticUnlocksChange, onStudyNow, dismissedGuides: _dismissedGuides, onDismissGuide: _onDismissGuide }) => {
     const mobileAppDesign = useMobileAppDesign();
     const { showToast } = useToast();
     const progress = useOptionalProgress();
@@ -908,54 +907,32 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
     const toolTitle = currentTool ? MOBILE_TOOL_TITLES[currentTool.id] ?? currentTool.title : 'The Launchpad';
     const toolEyebrow = currentTool ? MOBILE_TOOL_EYEBROWS[currentTool.id] ?? TOOL_CHROME[currentTool.id]?.eyebrow ?? 'Your next move' : 'Your next move';
     const toolArtwork = (activeTool === 'syllabus-xray' ? 'war-room' : activeTool ?? 'meet-tools') as ToolIconKey;
+    // A tool's one Back: back a step inside the tool when it has one open,
+    // else to where you came from (the app's one Back), else the Launchpad.
+    const toolLeave = activeTool ? { kind: 'back' as const, onPress: nav.goBack, label: 'Back' } : undefined;
 
   return (
     <div
-      className={`${mobileAppDesign ? 'mobile-editorial ' : ''}${activeTool === 'paper-trail' ? 'paper-trail-host ' : ''}product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24`}
+      className={`${mobileAppDesign ? 'mobile-editorial ' : ''}${activeTool === 'paper-trail' ? 'paper-trail-host ' : ''}product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24 pt-[calc(53px+var(--safe-top))] md:pt-[73px]`}
       // Fixed header at top is ~80px tall (back button + eyebrow + title) + safe-area-inset-top.
       // The journey/war-room tools historically had a smaller header offset (pt-14)
       // which left content peeking out behind the bar. Use the same generous offset
       // for every tool so nothing slides under the fixed banner.
-      style={{
-        paddingTop: `calc(96px + var(--sat, 0px))`,
-      }}
     >
 
-      <header data-student-page-header
-        className={`lp-navigation-header fixed top-0 left-0 right-0 z-[60] bg-[var(--surface-paper)] md:px-10 border-b border-[var(--outline-soft)]`}
-        style={{
-          paddingTop: 'calc(16px + var(--sat, 0px))',
-          paddingBottom: '16px',
-          paddingLeft: 'calc(16px + var(--sal, 0px))',
-          paddingRight: 'calc(16px + var(--sar, 0px))',
-        }}
+      {/* The one top bar (navigation.md, "Top bar"): a tool is a page, so its
+          one Back is top left and returns to where you came from; the
+          Launchpad is a place and has none. The family over the name, centred
+          on a phone with the tool's drawing at the right; at the left beside
+          Back on a laptop, with no drawing (Alex, 26 Nov 2026). */}
+      <div data-student-page-header
+        className="lp-navigation-header frame-top z-[60] bg-[var(--surface-canvas)] pl-[var(--safe-left)] pr-[var(--safe-right)]"
       >
-        {mobileAppDesign ? <div className="lp-mobile-tool-header">
-          <BackButton label={activeTool ? 'Back to Launchpad' : 'Back to home'} onClick={activeTool ? () => nav.navigateToInnovationZone() : onBack} />
-          <div className="lp-mobile-tool-title"><p>{toolEyebrow}</p><h1 className="lp-navigation-title">{toolTitle}</h1></div>
-          <div aria-hidden="true">{activeTool ? <ToolArtwork tool={toolArtwork} className="lp-navigation-art" /> : <div className="lp-navigation-art"><InnovationZoneIcon /></div>}</div>
-        </div> : (
-        <div className="container mx-auto flex min-w-0 items-center justify-between gap-3">
-          <div className="flex min-w-0 items-center gap-3 md:gap-8">
-            <BackButton label={activeTool ? 'Back to Launchpad' : 'Back to home'} showLabel onClick={activeTool ? () => nav.navigateToInnovationZone() : onBack} />
-            <div className="hidden md:block h-10 w-px bg-[var(--outline-soft)]" />
-            <div className="min-w-0">
-              <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">{mobileAppDesign ? toolEyebrow : 'Explore'}</p>
-              {activeTool ? (
-                mobileAppDesign ? <h1 className="lp-navigation-title font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white">{toolTitle}</h1> : <p className="font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</p>
-              ) : (
-                <h1 className="lp-navigation-title font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</h1>
-              )}
-            </div>
-          </div>
-          {/* Global rank, notifications and profile controls own the top-right.
-              A second settings action here sat underneath that fixed cluster and
-              appeared as a stray button. Subject editing remains available from
-              the profile/settings flow. */}
-          <div aria-hidden="true">{mobileAppDesign && <ToolArtwork tool={toolArtwork} className="lp-navigation-art" />}</div>
+        <div className={`lp-navigation-column mx-auto w-full md:px-6 ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'}`}>
+          <TopBar tool ruled leave={toolLeave} over={toolEyebrow} title={toolTitle}
+            art={activeTool ? <ToolArtwork tool={toolArtwork} /> : LAUNCHPAD_ART} />
         </div>
-        )}
-      </header>
+      </div>
 
       {/* Tools that lay out their own work surface. `max-w-4xl` gives 848px of
           usable width, which is a reading column, not a desk: Mark Bank puts a
@@ -1072,18 +1049,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 >
-                    {mobileAppDesign && currentTool && <ToolIntroduction key={`${user?.uid}:${currentTool.id}`} uid={user?.uid} tool={toolArtwork} title={toolTitle} eyebrow={toolEyebrow} subtitle={MOBILE_TOOL_SUBTITLES[currentTool.id] ?? TOOL_CHROME[currentTool.id]?.subtitle ?? currentTool.description} />}
                     {!mobileAppDesign && currentTool && TOOL_CHROME[currentTool.id]?.showHeader && (
                         <div className="mb-6">
-                            {currentTool.id === 'journey' ? (
-                            <ToolHeader
-                                themeColor={TOOL_CHROME[currentTool.id].themeColor}
-                                eyebrow={TOOL_CHROME[currentTool.id].eyebrow}
-                                title={currentTool.title}
-                                subtitle={TOOL_CHROME[currentTool.id].subtitle}
-                                iconBlob={<ToolIconBlob toolId="journey" size={108} />}
-                            />
-                            ) : <ToolMasthead
+                            {/* The journey simulator's name is the host bar's; its old
+                                ToolHeader repeated it (one bar, navigation.md). */}
+                            {currentTool.id === 'journey' ? null : <ToolMasthead
                               tool={(currentTool.id === 'cao-simulator' ? 'points-passport' : currentTool.id === 'syllabus-xray' ? 'war-room' : currentTool.id) as ToolIconKey}
                               eyebrow={TOOL_CHROME[currentTool.id].eyebrow}
                               title={currentTool.title}

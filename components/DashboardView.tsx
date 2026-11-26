@@ -434,9 +434,9 @@ const DashboardView: React.FC<DashboardViewProps> = ({
 
   return (
     <KobraScope className="nsu-progress"><div className={`${mobileAppDesign ? 'mobile-editorial dashboard-mobile ' : ''}product-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] transition-colors duration-300`}>
-      <div className="sticky inset-x-0 top-0 z-40 border-b border-[var(--outline-soft)] bg-[color:var(--surface-canvas)]/95 px-4 pb-4 backdrop-blur-xl md:px-10" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
+      <div className="sticky inset-x-0 top-0 z-40 bg-[var(--surface-canvas)] px-6 pb-4 md:px-10">
         <div className="mx-auto max-w-7xl">
-          <PageHeader onBack={onBack} eyebrow="Student dashboard" title="My Progress" compact />
+          <PageHeader onBack={onBack} eyebrow="Student dashboard" title="My Progress" compact className="[--frame-pad-top:16px]" />
         </div>
       </div>
 

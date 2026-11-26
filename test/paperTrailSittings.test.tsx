@@ -12,6 +12,7 @@ import React from 'react';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen, within } from '@testing-library/react';
 import PaperTrail from '../components/PaperTrail';
+import { NavigationProvider, useNavigation } from '../contexts/NavigationContext';
 import type { PaperEntry } from '../types/paperTrail';
 
 interface ReaderProps {
@@ -30,6 +31,7 @@ vi.mock('../components/PaperTrail/Viewer', () => ({ default: (props: ReaderProps
 } }));
 vi.mock('../components/PaperTrail/PaperCover', () => ({ default: () => <span>Cover</span> }));
 vi.mock('../components/PaperTrail/archiveHealth', () => ({ archiveHealth: () => Promise.resolve('ok') }));
+vi.mock('../contexts/AuthContext', () => ({ useAuth: () => ({ user: { uid: 'student-1' }, authResolved: true }) }));
 vi.mock('../firebase', () => ({ db: {} }));
 vi.mock('../contexts/ProgressContext', () => ({ useProgress: () => ({ updateDemoProgress: () => {} }) }));
 vi.mock('../hooks/useFreshProgress', () => ({ useFreshProgress: () => ({ loaded: true, doc: null }) }));
@@ -66,7 +68,11 @@ vi.mock('../paperTrailData', () => {
   };
 });
 
-const start = () => render(<PaperTrail studentSubjects={['Accounting', 'Biology', 'Climate Action and Sustainable Development']} />);
+// The top bar's one Back (area 0, the frame) replaces Paper Trail's own
+// "← Paper Trail" crumb: a step inside the archive registers with the app's
+// navigation, and Back goes back through it first.
+const FrameBack = () => { const nav = useNavigation(); return <button onClick={nav.goBack}>Back</button>; };
+const start = () => render(<NavigationProvider><FrameBack /><PaperTrail studentSubjects={['Accounting', 'Biology', 'Climate Action and Sustainable Development']} /></NavigationProvider>);
 const click = (name: string | RegExp) => fireEvent.click(screen.getByRole('button', {
   name: typeof name === 'string' ? new RegExp('^' + name.replaceAll(' ', '\\s*') + '$') : name,
 }));
@@ -103,7 +109,7 @@ describe('Paper Trail sittings and syllabus eras', () => {
   it('saves and reopens a deferred paper as itself, not as the June paper', () => {
     start(); click(/^Accounting/); click('All years'); click('2023, With deferred');
     click('Save Deferred · Paper 1');
-    click('Paper Trail'); click('Saved');
+    click('Back'); click('Saved');
     click(/Accounting · Deferred · Paper 1\s*2023/);
     expect(reader.props?.paper.url).toContain(encodeURIComponent('/2023/paper/one-deferred.pdf'));
   });

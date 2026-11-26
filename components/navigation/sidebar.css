@@ -123,7 +123,7 @@
 [data-slot=sidebar][data-state=collapsed] .nsu-nav-brand-row { padding:0; }
 @media (min-width:768px) {
   .student-sidebar-shell .student-sidebar-page .sh-profile { display:none; }
-  .student-sidebar-shell .student-sidebar-page [data-student-page-header] { left:var(--navigation-width); right:0; top:0; border-radius:0; border-bottom-color:var(--hairline); background:var(--surface-canvas); transition:left 300ms cubic-bezier(.32,.72,0,1); }
+  .student-sidebar-shell .student-sidebar-page [data-student-page-header] { left:var(--navigation-width); right:0; top:0; border-radius:0; background:var(--surface-canvas); transition:left 300ms cubic-bezier(.32,.72,0,1); }
 }
 /* Launchpad is a continuous app surface, including its fixed navigation bar. */
 @media (min-width:768px) {

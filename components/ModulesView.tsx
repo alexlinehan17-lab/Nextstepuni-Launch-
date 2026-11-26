@@ -556,8 +556,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
     return (
       <div className="product-shell modules-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]">
         <header
-          data-student-page-header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-3 dark:border-hairline dark:bg-surface-canvas"
-          style={{ paddingTop: 'calc(12px + var(--sat, 0px))' }}
+          data-student-page-header className="frame-top z-40 bg-[var(--surface-canvas)]"
         >
           <div className="mx-auto max-w-7xl">
             <PageHeader onBack={onBack} eyebrow="The Programme" title="Modules" compact />
@@ -645,7 +644,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
   return (
     <div className="product-shell modules-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]">
       {/* The shared desktop sidebar owns navigation and account controls. */}
-      <header data-student-page-header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-4 md:px-10 dark:border-hairline dark:bg-surface-canvas" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
+      <header data-student-page-header className="frame-top z-40 bg-[var(--surface-canvas)] md:px-10">
         <div className="mx-auto max-w-7xl"><PageHeader onBack={onBack} eyebrow="The Programme" title="Modules" compact /></div>
       </header>
 

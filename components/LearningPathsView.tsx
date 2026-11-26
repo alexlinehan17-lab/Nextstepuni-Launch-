@@ -110,7 +110,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
 
   return (
     <div className="product-shell learning-paths-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] pb-32 transition-colors duration-500">
-      <div data-student-page-header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-4 md:px-10 dark:border-hairline dark:bg-surface-canvas" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
+      <div data-student-page-header className="frame-top z-40 bg-[var(--surface-canvas)] md:px-10">
         <div className="mx-auto max-w-7xl"><PageHeader onBack={onBack} eyebrow="Guided learning" title="Learning Paths" compact /></div>
       </div>
       <div className="frame-page [--frame-pad-top:8rem] max-w-5xl mx-auto px-4 sm:px-6">

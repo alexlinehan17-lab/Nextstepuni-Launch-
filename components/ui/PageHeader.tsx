@@ -1,6 +1,6 @@
 import React from 'react';
-import BackButton from './BackButton';
-import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
+import { TopBar } from './Bars';
+import { useScreenLeave } from '../navigation/useScreenLeave';
 
 interface PageHeaderProps {
   onBack: () => void;
@@ -13,7 +13,12 @@ interface PageHeaderProps {
   backLabel?: string;
 }
 
-/** Shared navigation frame for top-level student destinations. */
+/** The shared header of a student page, drawn as the agreed top bar
+ *  (navigation.md, "Top bar"): one Back at the top left (none on one of the
+ *  five places), the small line over the name, one action at the right. On a
+ *  place it is the place's opening instead: its small label over its name,
+ *  with no leave control. It pads itself below the status bar (frame-bar);
+ *  the wrapper decides whether it is sticky. */
 const PageHeader: React.FC<PageHeaderProps> = ({
   onBack,
   eyebrow,
@@ -21,29 +26,26 @@ const PageHeader: React.FC<PageHeaderProps> = ({
   subtitle,
   actions,
   className = '',
-  compact = false,
-  backLabel = 'Back to home',
+  backLabel = 'Back',
 }) => {
-  const mobileAppDesign = useMobileAppDesign();
+  const leave = useScreenLeave(onBack, backLabel);
+  if (!leave) {
+    return (
+      <header className={`ui-part frame-bar ui-place-head ${className}`.trim()}>
+        {eyebrow ? <p className="ui-place-label">{eyebrow}</p> : null}
+        <div className="ui-place-row">
+          <h1 className="ui-place-name">{title}</h1>
+          {actions ? <div className="ui-place-actions">{actions}</div> : null}
+        </div>
+        {subtitle ? <p className="ui-place-sub">{subtitle}</p> : null}
+      </header>
+    );
+  }
   return (
-  <header className={`flex items-start justify-between gap-4 ${className}`}>
-    <div className="flex min-w-0 items-start gap-3 sm:gap-4">
-      <BackButton onClick={onBack} label={backLabel} showLabel={!mobileAppDesign} />
-      <div className="hidden h-10 w-px shrink-0 bg-[#DDD8D2] sm:block dark:bg-zinc-700" aria-hidden="true" />
-      <div className="min-w-0 pt-0.5">
-        {eyebrow && (
-          <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#8D857E] dark:text-zinc-500">
-            {eyebrow}
-          </p>
-        )}
-        <h1 className={`truncate font-serif font-semibold leading-none tracking-[-0.025em] text-[#1A1A1A] dark:text-white ${compact ? 'text-xl sm:text-2xl' : 'text-2xl sm:text-4xl'}`}>
-          {title}
-        </h1>
-        {subtitle && <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[#706A64] dark:text-zinc-400">{subtitle}</p>}
-      </div>
-    </div>
-    {actions && <div className="flex shrink-0 items-center gap-2">{actions}</div>}
-  </header>
+    <>
+      <TopBar ruled className={className} leave={leave} over={eyebrow} title={title} action={actions} />
+      {subtitle ? <p className="ui-part ui-bar-sub">{subtitle}</p> : null}
+    </>
   );
 };
 

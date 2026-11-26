@@ -3,6 +3,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import PaperTrail from '../components/PaperTrail';
+import { NavigationProvider, useNavigation } from '../contexts/NavigationContext';
 import { listPins } from '../components/PaperTrail/recentsStore';
 import type { PaperEntry } from '../types/paperTrail';
 
@@ -32,6 +33,7 @@ vi.mock('../components/PaperTrail/PaperCover', () => ({ default: () => <span>Cov
 // The archive-outage probe would otherwise make a real network request (and a
 // live outage would add a second status region); it has its own tests.
 vi.mock('../components/PaperTrail/archiveHealth', () => ({ archiveHealth: () => Promise.resolve('ok') }));
+vi.mock('../contexts/AuthContext', () => ({ useAuth: () => ({ user: { uid: 'student-1' }, authResolved: true }) }));
 vi.mock('../firebase', () => ({ db: {} }));
 vi.mock('../contexts/ProgressContext', () => ({ useProgress: () => ({ updateDemoProgress: () => {} }) }));
 vi.mock('../hooks/useFreshProgress', () => ({ useFreshProgress: () => ({ loaded: boot.loaded, doc: null }) }));
@@ -59,7 +61,11 @@ vi.mock('../paperTrailData', () => {
   };
 });
 
-const start = () => render(<PaperTrail studentSubjects={['Mathematics', 'Biology']} studentLevels={[{ name: 'Mathematics', level: 'Higher' }]} />);
+// The top bar's one Back (area 0, the frame) replaces Paper Trail's own
+// "← Paper Trail" crumb: a step inside the archive registers with the app's
+// navigation, and Back goes back through it first.
+const FrameBack = () => { const nav = useNavigation(); return <button onClick={nav.goBack}>Back</button>; };
+const start = () => render(<NavigationProvider><FrameBack /><PaperTrail studentSubjects={['Mathematics', 'Biology']} studentLevels={[{ name: 'Mathematics', level: 'Higher' }]} /></NavigationProvider>);
 const click = (name: string | RegExp) => fireEvent.click(screen.getByRole('button', { name: typeof name === 'string' ? new RegExp('^' + name.replaceAll(' ', '\\s*') + '$') : name }));
 const paperOne = () => within(screen.getByRole('article', { name: 'Paper 1' }));
 
@@ -118,7 +124,7 @@ describe('Paper Trail archive → existing reader', () => {
     start(); click('Mathematics Higher level');
     fireEvent.click(paperOne().getByRole('button', { name: /Open marking scheme/ }));
     expect(reader.props?.initialSide).toBe('scheme');
-    click('Read paper page 4'); click('Read scheme page 7'); click('Close reader'); click('Paper Trail');
+    click('Read paper page 4'); click('Read scheme page 7'); click('Close reader'); click('Back');
     click('Continue');
     expect(reader.props?.initialSide).toBe('scheme');
     expect(reader.props?.initialPaperPage).toBe(4);
@@ -129,11 +135,11 @@ describe('Paper Trail archive → existing reader', () => {
     start(); click('Mathematics Higher level'); click('All years'); click('2018'); click('Save Paper 1');
     expect(listPins()).toHaveLength(1);
     expect(listPins()[0].key).toBe('mathematics|2018|higher|ev|one.pdf');
-    click('Paper Trail'); click('Saved'); click(/Mathematics · Paper 1\s*2018/);
+    click('Back'); click('Saved'); click(/Mathematics · Paper 1\s*2018/);
     expect(reader.props?.paper.url).toContain(encodeURIComponent('/2018/paper/one.pdf'));
     click('Close reader');
     expect(screen.getByRole('combobox', { name: 'Choose a year' })).toHaveTextContent('2018');
-    click('Paper Trail');
+    click('Back');
     expect(screen.getByRole('button', { name: 'Continue' })).toBeInTheDocument();
   });
 

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, Bookmark, ChevronDown, ArrowUpRight } from 'lucide-react';
+import { useBackStep } from '../../contexts/NavigationContext';
+import { ArrowRight, Bookmark, ChevronDown, ArrowUpRight } from 'lucide-react';
 import type { PaperEntry, PaperItem, PaperLang, PaperLevel, PaperTrailSubject } from '../../types/paperTrail';
 import { recentKey } from '../../types/paperTrail';
 import { isPinned, type PaperRef } from './recentsStore';
@@ -69,8 +70,10 @@ interface Props {
 }
 
 export default function PaperSelection(props: Props) {
-  const { uid, subject, label, level, lang, langs, year, years, entry, notice, syllabusNote, gridNote, earlierTag = 'Earlier syllabus', banner, onLevel, onLang, onYear, onOpen, onSave, onBack, onTopics } = props;
+  const { uid, subject, label, level, lang, langs, year, years, entry, notice, syllabusNote, gridNote, earlierTag = 'Earlier syllabus', banner, onLevel, onLang, onYear, onOpen, onSave, onBack: _onBack, onTopics } = props;
   const [allYears, setAllYears] = useState(false);
+  // Every year is a step of the subject: Back returns to the year list first.
+  useBackStep(allYears, () => setAllYears(false));
   const [preview, setPreview] = useState<{ entry: PaperEntry; item: PaperItem; mode: DocumentSide | 'files' } | null>(null);
   const [gap, setGap] = useState<string | null>(null);
   const heading = useRef<HTMLHeadingElement>(null);
@@ -92,11 +95,8 @@ export default function PaperSelection(props: Props) {
   const selectedCell = years.find(y => y.year === year);
 
   return <section className="pt-archive pt-selection" aria-label={`${label} exam papers`}>
-    <nav className="pt-toolbar" aria-label="Paper Trail">
-      <button className="pt-text-button" onClick={allYears ? () => setAllYears(false) : onBack}>
-        <ArrowLeft size={20} aria-hidden /> {allYears ? label : 'Paper Trail'}
-      </button>
-    </nav>
+    {/* No "← Paper Trail" here: the top bar's one Back returns to the year
+        list, then to the archive's front page (useBackStep above and in index.tsx). */}
     <header className="pt-subject-heading">
       {!allYears && <PaperSubjectArtwork label={label} />}
       <p className="pt-eyebrow">{allYears ? label : 'Your exam archive'}{subject.cycle === 'lca' ? ' · LCA' : ''}</p>

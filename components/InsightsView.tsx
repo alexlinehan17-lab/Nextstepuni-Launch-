@@ -27,7 +27,7 @@ export default function InsightsView({ uid, streak, strategyMastery, onBack, onA
   const { insights, isLoaded } = useInsights(uid, streak, strategyMastery);
   return <main className={`${mobileAppDesign ? 'mobile-editorial insights-mobile ' : ''}min-h-screen bg-white px-5 pb-36 pt-16 text-zinc-900 dark:bg-surface-canvas dark:text-white md:pt-24`}>
     <div className="mx-auto max-w-2xl">
-      {mobileAppDesign ? <><PageHeader onBack={onBack} title="Your Insights" eyebrow="What your record says" compact /><p className="insights-intro">A pattern. A possibility. A next step.</p></> : <>
+      {mobileAppDesign ? <><PageHeader onBack={onBack} title="Your Insights" eyebrow="What your record says" compact className="-mx-5" /><p className="insights-intro">A pattern. A possibility. A next step.</p></> : <>
       <button onClick={onBack} className="mb-7 inline-flex min-h-11 items-center gap-2 rounded-lg pr-4 text-base font-semibold"><ArrowLeft size={20} aria-hidden="true" /> Home</button>
       <header className="mb-8 flex items-center justify-between gap-4">
         <div><p className="text-xs font-bold uppercase tracking-[0.16em] text-accentDark dark:text-accent-text">Your next step</p><h1 className="mt-2 font-serif text-4xl font-bold tracking-tight">Your Insights</h1><p className="mt-3 text-base leading-relaxed text-zinc-600 dark:text-zinc-300">What your study record is telling you.</p></div>

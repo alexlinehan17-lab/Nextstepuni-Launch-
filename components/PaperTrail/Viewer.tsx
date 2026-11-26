@@ -48,6 +48,7 @@ import {
   ZoomOut,
 } from 'lucide-react';
 import { MotionDiv } from '../Motion';
+import { IconButton } from '../ui/Button';
 import KobraScope, {
   Alert,
   AlertDescription,
@@ -1359,15 +1360,14 @@ const Viewer: React.FC<ViewerProps> = ({
         <div ref={headerRef} tabIndex={-1} className="pvc-top">
           <div className="pvc-bar">
             <div className="pvc-left">
-            <Button
-              variant="outline"
-              size="icon"
-              className="nsu-ink-outline pvc-icon"
+            {/* The viewer comes up over Paper Trail: its one way out is Close,
+                an X at the top left, back to exactly where you were. */}
+            <IconButton
+              className="pvc-icon pvc-close"
               onClick={() => onCloseRef.current()}
-              aria-label="Close viewer"
-            >
-              <ArrowLeft aria-hidden="true" />
-            </Button>
+              label="Close viewer"
+              icon={<X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />}
+            />
             <div className="pvc-heading">
               <p className="pvc-title">{title}</p>
               {subtitle && <p className="pvc-subtitle">{subtitle}</p>}

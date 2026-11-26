@@ -3,10 +3,8 @@
 .nsu-your-setup .ys-width { max-width: 1120px; margin: 0 auto; }
 .nsu-your-setup .ys-topbar {
   position: sticky; top: 0; z-index: 40;
-  padding: 0 16px 16px;
-  border-bottom: 1px solid var(--outline-soft);
-  background: color-mix(in srgb, var(--surface-canvas) 95%, transparent);
-  backdrop-filter: blur(20px);
+  padding: 0;
+  background: var(--surface-canvas);
 }
 .nsu-your-setup .ys-main { padding: 36px 16px calc(120px + var(--sab, 0px)); }
 @media (min-width: 768px) {

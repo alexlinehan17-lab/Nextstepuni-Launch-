@@ -45,8 +45,10 @@ export interface TopBarProps {
   over?: ReactNode;
   /** A place's small capitals label at the left (the date on Home). */
   placeLabel?: ReactNode;
-  /** A Launchpad tool's own drawing, 36px at the right end: its only appearance on the screen. */
-  art?: string;
+  /** A Launchpad tool's own drawing, 36px at the right end of a phone's bar:
+   *  its only appearance there (a source, or a drawn element). A laptop bar
+   *  carries no drawing (Alex, 26 Nov 2026). */
+  art?: string | ReactNode;
   /** Or one action at the right (an IconButton or one text action). */
   action?: ReactNode;
   /** A tool's bar: 52px row, 19px name. */
@@ -56,10 +58,10 @@ export interface TopBarProps {
   className?: string;
 }
 
-export function TopBar({ leave, title, over, placeLabel, art, action, tool = false, ruled = false, className = '' }: TopBarProps) {
+export function TopBar({ leave, title, over, placeLabel, art, action, tool = false, ruled = false, className = '', ...rest }: TopBarProps & { 'data-student-page-header'?: boolean }) {
   const LeaveGlyph = leave?.kind === 'close' ? X : ChevronLeft;
   return (
-    <header className={`ui-part ui-bar frame-bar${tool ? ' ui-bar--tool' : ''}${ruled ? ' ui-bar--ruled' : ''} ${className}`.trim()}>
+    <header {...rest} className={`ui-part ui-bar frame-bar${tool ? ' ui-bar--tool' : ''}${ruled ? ' ui-bar--ruled' : ''}${art ? ' ui-bar--art' : ''} ${className}`.trim()}>
       <div className="ui-bar-row">
         <span className="ui-bar-slot">
           {leave
@@ -74,7 +76,8 @@ export function TopBar({ leave, title, over, placeLabel, art, action, tool = fal
           </span>
         ) : null}
         <span className="ui-bar-slot ui-bar-slot--end">
-          {art ? <ThemeArtwork className="ui-bar-art" src={art} transparentBackground alt="" /> : action ?? null}
+          {typeof art === 'string' ? <ThemeArtwork className="ui-bar-art" src={art} transparentBackground alt="" />
+            : art ? <span className="ui-bar-art" aria-hidden="true">{art}</span> : action ?? null}
         </span>
       </div>
     </header>

@@ -123,7 +123,7 @@ export default function YourSetupView({
   return (
     <KobraScope className="nsu-your-setup">
       <div className={`${mobileAppDesign ? 'mobile-editorial ' : ''}product-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]`}>
-        <div className="ys-topbar" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
+        <div className="ys-topbar">
           <div className="ys-width">
             <PageHeader onBack={onBack} eyebrow="Your profile" title="Your setup" compact />
           </div>

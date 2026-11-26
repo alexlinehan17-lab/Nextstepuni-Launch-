@@ -27,6 +27,8 @@
  */
 
 import React from 'react';
+import { TopBar } from './ui/Bars';
+import { useScreenLeave } from './navigation/useScreenLeave';
 
 interface ToolHeaderProps {
   /** Saturated palette colour for the tile fill. */
@@ -49,91 +51,23 @@ interface ToolHeaderProps {
   className?: string;
 }
 
+/** Drawn as the agreed tool bar (navigation.md, "Top bar"): the family as a
+ *  small line over the tool's name, the tool's own drawing at the right end
+ *  on a phone and none on a laptop, the one line under it. No tile, no serif.
+ *  `themeColor` and `icon` are kept for old callers and no longer painted. */
 export const ToolHeader: React.FC<ToolHeaderProps> = ({
-  themeColor,
   eyebrow,
   title,
   subtitle,
-  icon,
   iconImage,
   iconBlob,
   className,
 }) => {
+  const leave = useScreenLeave(undefined, 'Back');
   return (
-    <div
-      className={`tool-header flex items-start gap-4 sm:gap-7 ${className ?? ''}`}
-    >
-      {/* Tile (or blob — blob mode skips the saturated background) */}
-      {iconBlob ? (
-        <div
-          className="tool-header-art shrink-0 flex items-center justify-center"
-        >
-          {iconBlob}
-        </div>
-      ) : (
-        <div
-          className="tool-header-art shrink-0 flex items-center justify-center overflow-hidden"
-          style={{
-            borderRadius: 18,
-            background: themeColor,
-          }}
-        >
-          {iconImage ? (
-            <img
-              src={iconImage}
-              alt=""
-              style={{ width: '64%', height: '64%', objectFit: 'contain' }}
-            />
-          ) : icon ? (
-            <div style={{ width: '64%', height: '64%' }}>{icon}</div>
-          ) : null}
-        </div>
-      )}
-
-      {/* Text */}
-      <div className="flex-1 min-w-0">
-        <p
-          style={{
-            fontFamily: "'DM Sans', system-ui, sans-serif",
-            fontSize: 11,
-            fontWeight: 500,
-            letterSpacing: '0.18em',
-            textTransform: 'uppercase',
-            color: 'var(--ink-muted)',
-            margin: 0,
-          }}
-        >
-          {eyebrow}
-        </p>
-        <h1
-          className="font-serif"
-          style={{
-            fontSize: 38,
-            fontWeight: 500,
-            letterSpacing: '-1.2px',
-            lineHeight: 1.0,
-            color: 'var(--ink-primary)',
-            margin: 0,
-            marginTop: 14,
-          }}
-        >
-          {title}
-        </h1>
-        <p
-          style={{
-            fontFamily: "'DM Sans', system-ui, sans-serif",
-            fontSize: 15,
-            fontWeight: 400,
-            color: 'var(--ink-secondary)',
-            lineHeight: 1.5,
-            maxWidth: 460,
-            margin: 0,
-            marginTop: 14,
-          }}
-        >
-          {subtitle}
-        </p>
-      </div>
+    <div className={`tool-header ${className ?? ''}`}>
+      <TopBar tool ruled leave={leave} over={eyebrow} title={title} art={iconImage ?? iconBlob} />
+      {subtitle ? <p className="ui-part ui-bar-sub">{subtitle}</p> : null}
     </div>
   );
 };

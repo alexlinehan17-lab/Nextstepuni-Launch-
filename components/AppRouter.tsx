@@ -7,9 +7,9 @@ import { COLORS } from '../design/tokens';
  */
 
 import React, { Suspense, lazy, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import BackButton from './ui/BackButton';
+import { TopBar } from './ui/Bars';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Eye, EyeOff, Check } from 'lucide-react';
+import { Eye, EyeOff, Check } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
 import { type SessionUser, isLcaYear, isSchoolStaff } from '../utils/authUtils';
@@ -292,7 +292,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   const nav = useNavigation();
   const registrationHeld = useRegistrationHold();
   const { updateDemoProgress, setTimetableCompletions, progressLoaded, progressDataUid } = useProgress();
-  const { viewState, dashboardSection, currentCategory, currentModuleId, cameFromJourney } = nav.state;
+  const { viewState, dashboardSection, currentCategory, currentModuleId } = nav.state;
   const { user, userResolved, needsOnboarding, handleLoginSuccess, handleLogout } = useAuth();
 
   // Guest setup keeps its draft in sessionStorage, which the unauthenticated
@@ -333,12 +333,13 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     nav.navigateToModule(moduleId, viewState, currentCategory);
   };
 
+  // A place's own controls (the study room's Minimise, Journey's Home link)
+  // go Home. A page's Back is the app's one Back (navigation.md): the screen
+  // you came from, else its parent (utils/places.ts parentOf: the module world
+  // or Modules for a module, Journey results when it came from there).
   const handleBackToTree = () => { nav.navigateToTree(); };
-  const handleBackToCategory = () => {
-    if (cameFromJourney) nav.navigateToInnovationZone('journey');
-    else if (currentCategory) nav.navigateToCategory(currentCategory);
-    else nav.navigateToModules();
-  };
+  const handleBack = () => { nav.goBack(); };
+  const handleBackToCategory = handleBack;
   const handleGoToModules = () => { nav.navigateToModules(); };
   const handleGoToInnovationZone = () => { nav.navigateToInnovationZone(); };
   const handleGoToDashboard = () => { nav.navigateToDashboard(); };
@@ -515,7 +516,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           uid={user.uid}
           streak={streak}
           strategyMastery={strategyMastery.masteryMap}
-          onBack={handleBackToTree}
+          onBack={handleBack}
         onAction={action => {
             if (action === 'study') nav.navigateToStudySession();
             else if (action === 'planner') nav.navigateToInnovationZone('planner');
@@ -576,7 +577,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           curriculumLevel={user?.curriculumLevel}
           userProgress={userProgress}
           onSelectModule={handleSelectModule}
-          onBack={handleBackToTree}
+          onBack={handleBack}
         />
       </Suspense>
     );
@@ -585,7 +586,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'wip-tools') {
     return (
       <Suspense fallback={<LoadingSpinner variant="compact" label="Opening the Workshop" />}>
-        <WipTools onBack={handleBackToTree} onOpenTool={(toolId: string) => nav.navigateToInnovationZone(toolId)} />
+        <WipTools onBack={handleBack} onOpenTool={(toolId: string) => nav.navigateToInnovationZone(toolId)} />
       </Suspense>
     );
   }
@@ -597,7 +598,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           allCourses={studentCourses}
           userProgress={userProgress}
           onSelectModule={handleSelectModule}
-          onBack={handleBackToTree}
+          onBack={handleBack}
           isLca={isLcaYear(user?.yearGroup ?? studentProfile?.yearGroup)}
           currentYearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
         />
@@ -613,7 +614,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           northStar={northStar}
           yearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
           darkMode={settings.darkMode}
-          onBack={handleBackToTree}
+          onBack={handleBack}
           onFinishSetup={() => nav.navigateToOnboarding()}
           onEditSubjects={() => setChangeSubjectsOpen(true)}
           onSaveExamDate={handleExamDateSave}
@@ -651,7 +652,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'cut-content') {
     return (
       <Suspense fallback={<LoadingSpinner variant="compact" label="Opening the archive" />}>
-        <CutContentPage onBack={handleBackToTree} />
+        <CutContentPage onBack={handleBack} />
       </Suspense>
     );
   }
@@ -659,7 +660,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'accreditation') {
     return (
       <Suspense fallback={<LoadingSpinner variant="compact" label="Opening accreditation" />}>
-        <AccreditationPage onBack={handleBackToTree} onOpenModule={handleSelectModule} />
+        <AccreditationPage onBack={handleBack} onOpenModule={handleSelectModule} />
       </Suspense>
     );
   }
@@ -691,7 +692,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
         <MyDirection
           uid={user.uid}
           northStar={northStar}
-          onBack={handleBackToTree}
+          onBack={handleBack}
           onEditNorthStar={() => setNorthStarEditOpen(true)}
           onOpenFutureFinder={() => nav.navigateToInnovationZone('future-finder-revamped')}
           onOpenPointsPassport={() => nav.navigateToInnovationZone('points-passport')}
@@ -758,7 +759,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     return (
       <Suspense fallback={<LoadingSpinner variant="compact" calm label="Opening your modules" />}>
         <ModulesView
-          onBack={handleBackToTree}
+          onBack={handleBack}
           onSelectCategory={handleSelectCategory}
           onSelectModule={handleSelectModule}
           allCourses={studentCourses}
@@ -793,11 +794,10 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           className="min-h-screen bg-white dark:bg-surface-canvas"
         >
           {/* Header */}
-          <header data-student-page-header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-white dark:bg-surface-canvas border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: `calc(${mobileAppDesign ? 12 : 16}px + var(--sat, 0px))`, paddingBottom: mobileAppDesign ? '12px' : '24px' }}>
-            <div className="flex items-center gap-4">
-              <BackButton label="Back to modules" onClick={handleGoToModules} showLabel={!mobileAppDesign} />
-            </div>
-          </header>
+          {/* The world's bar: one Back, top left (the shared top bar). */}
+          <div data-student-page-header className="frame-top z-50 md:px-10 bg-[var(--surface-canvas)]">
+            <TopBar ruled leave={{ kind: 'back', onPress: handleBack, label: 'Back to modules' }} />
+          </div>
           {/* Showcase */}
           <div className="frame-page [--frame-pad-top:7rem] md:[--frame-pad-top:8rem] pb-24 md:pb-12 flex items-center justify-center" style={{ minHeight: 'calc(100vh - 80px)' }}>
             <Suspense fallback={<LoadingSpinner variant="compact" calm placement="panel" label={`Opening ${categoryTitles[currentCategory]}`} />}>
@@ -864,22 +864,10 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
       return (
         <ModuleErrorBoundary onBack={handleBackToCategory}>
           <Suspense fallback={<LoadingSpinner variant="compact" calm label={`Opening ${studentCourses.find(course => course.id === currentModuleId)?.title ?? "your module"}`} />}>
-            {cameFromJourney && (
-              // Keep this in normal document flow. A fixed banner competes
-              // with each module's own sticky mobile header and can obscure
-              // both its title and back control.
-              <div
-                className="journey-return-bar frame-page relative z-10 bg-[var(--accent-hex)] dark:bg-[var(--accent-hex)]"
-              >
-                <button
-                  onClick={handleBackToCategory}
-                  className="w-full flex items-center justify-center gap-2 py-2 text-white text-xs font-bold hover:bg-[var(--accent-dark-hex)] dark:hover:bg-[var(--accent-dark-hex)] transition-colors"
-                >
-                  <ArrowLeft size={14} />
-                  Back to Journey Results
-                </button>
-              </div>
-            )}
+            {/* A module opened from Journey results has one way out: the
+                module's own Back returns there (the history, or its parent
+                when there is none), so the orange "Back to Journey Results"
+                bar that repeated it is gone (navigation.md: one leave control). */}
             <ModulePositionProvider value={modulePosition}>
               <div>
                 <ModuleComponent
