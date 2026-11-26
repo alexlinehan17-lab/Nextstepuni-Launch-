@@ -1,19 +1,19 @@
 /* Minimised study timer: the ink study room in miniature (2026-10-14). */
 .study-mini {
-  --mini-paper: var(--surface-room); --mini-ink: #f6f0df; --mini-muted: #c8d0b8; --mini-rule: #e5ecd439; --mini-orange: var(--nsu-orange);
+  --mini-paper: var(--surface-room); --mini-ink: var(--room-ink); --mini-muted: var(--room-ink-2); --mini-rule: var(--room-line); --mini-orange: var(--nsu-orange);
   /* frame-float (components/ui/frame.css): placed from the derived bottom edge, which clears the tab bar. */
   right: 16px; bottom: calc(16px + var(--edge-bottom)); z-index: var(--z-float);
   display: flex; align-items: stretch; gap: 6px;
   max-width: calc(100vw - 32px); padding: 6px; overflow: hidden;
-  border: 1px solid #00000040; border-radius: 10px;
+  border: 1px solid transparent; border-radius: var(--r-box);
   background: var(--mini-paper); color: var(--mini-ink);
-  box-shadow: 0 2px 4px #00000014, 0 14px 30px -12px #00000059;
-  font-family: 'DM Sans', sans-serif;
+  box-shadow: var(--float);
+  font-family: var(--font-ui);
   animation: study-mini-in .22s ease-out;
 }
 .dark .study-mini { border-color: #ffffff2c; }
 .study-mini button { cursor: pointer; font: inherit; color: inherit; }
-.study-mini button:focus-visible { outline: 2px solid var(--mini-orange); outline-offset: 2px; }
+.study-mini button:focus-visible { outline: 2px solid var(--mini-ink); outline-offset: 2px; }
 .study-mini-open {
   display: flex; align-items: center; gap: 10px; min-width: 0; min-height: 44px;
   padding: 4px 10px 4px 8px; border: 0; border-radius: 6px; background: transparent; text-align: left;
@@ -22,22 +22,22 @@
 .study-mini-dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--mini-orange); }
 .study-mini[data-state='paused'] .study-mini-dot { background: var(--mini-muted); }
 .study-mini-label { display: flex; flex-direction: column; min-width: 0; line-height: 1.2; }
-.study-mini-label strong { overflow: hidden; max-width: 150px; font-size: 13px; font-weight: 600; white-space: nowrap; text-overflow: ellipsis; }
-.study-mini-label small { color: var(--mini-muted); font-size: 11px; letter-spacing: .04em; }
+.study-mini-label strong { overflow: hidden; max-width: 150px; font-size: 15px; font-weight: 400; line-height: 19px; letter-spacing: -.01em; white-space: nowrap; text-overflow: ellipsis; }
+.study-mini-label small { color: var(--mini-muted); font-size: 13px; line-height: 16px; }
 .study-mini[data-state='done'] .study-mini-label small { color: var(--mini-orange); }
-.study-mini-digits { margin-left: 6px; font: 600 20px/1 'DM Sans', sans-serif; font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
+.study-mini-digits { margin-left: 6px; font: 400 22px/24px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; letter-spacing: 0; }
 .study-mini[data-state='paused'] .study-mini-digits { color: var(--mini-muted); }
 .study-mini-expand { flex: none; margin-left: 2px; color: var(--mini-muted); }
 .study-mini-toggle {
   flex: none; display: grid; place-items: center; width: 44px; min-height: 44px;
-  border: 0; border-radius: 6px; background: var(--mini-orange); color: var(--mini-paper) !important;
+  border: 0; border-radius: var(--r-sm); background: var(--mini-ink); color: var(--mini-paper) !important;
 }
 .study-mini-action {
-  flex: none; min-height: 44px; padding: 0 14px; border: 1px solid var(--mini-ink); border-radius: 6px;
-  background: transparent; font-size: 13px !important; font-weight: 600 !important; font-variant-numeric: tabular-nums;
+  flex: none; min-height: 44px; padding: 0 14px; border: 1px solid var(--mini-ink); border-radius: var(--r-sm);
+  background: transparent; font-size: 15px !important; font-weight: 400 !important; font-variant-numeric: tabular-nums;
 }
-.study-mini-log { border-color: var(--mini-orange); background: var(--mini-orange); color: var(--mini-paper) !important; }
-.study-mini-progress { position: absolute; left: 0; bottom: 0; height: 2px; background: var(--mini-orange); transition: width 1s linear; }
+.study-mini-log { border-color: var(--mini-ink); background: var(--mini-ink); color: var(--mini-paper) !important; }
+.study-mini-progress { position: absolute; left: 0; bottom: 0; height: 2px; background: var(--mini-muted); opacity: .7; transition: width 1s linear; }
 @keyframes study-mini-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .study-mini { animation: none; } .study-mini-progress { transition: none; } }
 /* Phones: above the bottom tab bar. */

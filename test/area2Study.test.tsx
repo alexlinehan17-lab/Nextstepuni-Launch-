@@ -11,14 +11,18 @@ import React, { useState } from 'react';
 import { act, cleanup, fireEvent, render, screen, within } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
 import StudySessionSetup from '@/components/study/StudySessionSetup';
+import StudyBreak from '@/components/study/StudyBreak';
+import StudySessionTimer from '@/components/study/StudySessionTimer';
 import { TabBar } from '@/components/ui/Bars';
 import { House, Timer } from 'lucide-react';
+import type * as MotionModule from '@/components/Motion';
 
-const device = vi.hoisted(() => ({ phone: false }));
+const device = vi.hoisted(() => ({ phone: false, reduced: false }));
 vi.mock('@/hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => device.phone, isMobileAppDesign: () => device.phone }));
+vi.mock('@/components/Motion', async original => ({ ...await original<typeof MotionModule>(), useReducedMotion: () => device.reduced }));
 
 afterEach(cleanup);
-beforeEach(() => { device.phone = false; });
+beforeEach(() => { device.phone = false; device.reduced = false; });
 
 type Method = 'new-learning' | 'practice' | 'revision' | '';
 function Setup({ start = vi.fn(), initial = {} as { subject?: string; method?: Method; minutes?: number }, clear }: {
@@ -129,5 +133,60 @@ describe('study set-up', () => {
     expect(dots[1]).not.toHaveAttribute('data-set');
     expect(container.querySelector('svg.study-dot[data-done]')).toBeNull();
     expect(within(list).getByText('Choose how you’ll work')).toBeInTheDocument();
+  });
+});
+
+describe('the study room and the breathing guide', () => {
+  const timer = (extra: Partial<React.ComponentProps<typeof StudySessionTimer>> = {}) => (
+    <StudySessionTimer subject="Mathematics" subjectColor="#2d3436" type="Practice" totalSeconds={1500} elapsedSeconds={477}
+      paused={false} onLeave={vi.fn()} onTogglePause={vi.fn()} prompt={null} onCompletePrompt={vi.fn()} onSkipPrompt={vi.fn()} {...extra} />
+  );
+
+  test('Close at the left puts the room away while the timer runs; ending is on the pause screen', () => {
+    const minimise = vi.fn(), leave = vi.fn();
+    render(timer({ onMinimise: minimise, onLeave: leave }));
+    fireEvent.click(screen.getByRole('button', { name: 'Close the room. Your session keeps running.' }));
+    expect(minimise).toHaveBeenCalledOnce();
+    expect(leave).not.toHaveBeenCalled();
+    expect(screen.queryByRole('button', { name: 'Leave study session' })).not.toBeInTheDocument();
+    // The Rule replaces the orange strip and bar: one orange tick, the time to come inked.
+    const progress = screen.getByRole('progressbar', { name: 'Session progress' });
+    expect(progress).toHaveAttribute('aria-valuenow', '32');
+    expect(progress.querySelectorAll('.study-rule > i')).toHaveLength(51);
+    expect(progress.querySelectorAll('.study-rule > b')).toHaveLength(1);
+    expect(document.querySelector('.ss-ink-edge')).toBeNull();
+    expect(screen.getByRole('timer')).toHaveTextContent('17:03');
+  });
+
+  test('where the room cannot be put away, the same corner leaves (as today)', () => {
+    const leave = vi.fn();
+    render(timer({ onLeave: leave }));
+    fireEvent.click(screen.getByRole('button', { name: 'Leave study session' }));
+    expect(leave).toHaveBeenCalledOnce();
+  });
+
+  test.each([false, true])('the breathing guide keeps today\'s ten-second breath, and stops for reduced motion: %s', async reduced => {
+    device.reduced = reduced;
+    const effects: KeyframeAnimationOptions[] = [];
+    Object.defineProperty(Element.prototype, 'animate', { configurable: true, value: (_frames: Keyframe[], options: KeyframeAnimationOptions) => {
+      effects.push(options);
+      return { finished: Promise.resolve(), cancel: vi.fn() } as unknown as Animation;
+    } });
+    try {
+      render(<StudyBreak subject="Mathematics" elapsedSeconds={1070} onResume={vi.fn()} onLeave={vi.fn()} />);
+      expect(screen.queryByText('Your place is right here.')).not.toBeInTheDocument();
+      fireEvent.click(screen.getByRole('button', { name: 'Take a few slow breaths' }));
+      await act(async () => { await new Promise(resolve => setTimeout(resolve, 0)); });
+      const guide = screen.getByRole('dialog', { name: 'Take a moment.' });
+      expect(within(guide).queryByText('Your place is right here.')).not.toBeInTheDocument();
+      const breaths = effects.filter(options => options.iterations === Infinity);
+      if (reduced) expect(breaths).toHaveLength(0);
+      else {
+        expect(breaths).toHaveLength(2);
+        expect(breaths.every(options => options.duration === 10000)).toBe(true);
+      }
+    } finally {
+      delete (Element.prototype as { animate?: unknown }).animate;
+    }
   });
 });

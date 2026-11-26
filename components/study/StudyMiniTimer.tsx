@@ -29,7 +29,6 @@ export default function StudyMiniTimer({ onOpen, view }: { onOpen: () => void; v
   return createPortal(
     <aside className="study-mini frame-float" data-state={done ? 'done' : paused ? 'paused' : 'running'} data-view={view} aria-label="Study timer">
       <button type="button" className="study-mini-open" onClick={onOpen} aria-label={`Open the study timer: ${session.subject}, ${spoken}`}>
-        <i className="study-mini-dot" aria-hidden="true" />
         <span className="study-mini-label"><strong>{session.subject}</strong><small>{status}</small></span>
         {!done && <span className="study-mini-digits" aria-hidden="true">{formatTime(shown)}</span>}
         <Maximize2 className="study-mini-expand" size={15} aria-hidden="true" />

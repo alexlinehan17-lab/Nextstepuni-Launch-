@@ -92,10 +92,14 @@ export interface SheetProps {
   /** false: the caller dims the page itself (the quick tour leaves a hole
    *  round what it points at), so the sheet paints no scrim of its own. */
   dim?: boolean;
+  /** A sheet whose own choices are its way out (Finish for now: End and keep,
+   *  Keep studying, Discard): the handle and the title at the left, no Close.
+   *  Escape, the dimmed page and a swipe down still call onClose. */
+  plain?: boolean;
   className?: string;
 }
 
-export function Sheet({ open, onClose, title, titleSize = 'heading', save, footer, children, closeLabel = 'Close', art, meta, bare = false, dim = true, className = '' }: SheetProps) {
+export function Sheet({ open, onClose, title, titleSize = 'heading', save, footer, children, closeLabel = 'Close', art, meta, bare = false, dim = true, plain = false, className = '' }: SheetProps) {
   const lead = art !== undefined || meta !== undefined;
   const phase = usePresence(open, SHEET_LEAVE_MS);
   const panel = useRef<HTMLDivElement>(null);
@@ -135,7 +139,11 @@ export function Sheet({ open, onClose, title, titleSize = 'heading', save, foote
           tabIndex={-1} className={`ui-sheet frame-sheet${bare ? ' ui-sheet--bare' : ''} ${className}`.trim()}>
           {bare ? null : <div className="ui-sheet-drag" {...dragHandlers}>
             <span className="ui-sheet-grab" aria-hidden="true" />
-            {lead ? (
+            {plain ? (
+              <div className="ui-sheet-head ui-sheet-head--plain">
+                <h2 id={titleId} className={`ui-sheet-title${titleSize === 'small' ? ' ui-sheet-title--small' : ''}`}>{title}</h2>
+              </div>
+            ) : lead ? (
               <div className="ui-sheet-head ui-sheet-head--lead frame-dialog-head">
                 <button type="button" className="ui-icon-btn" aria-label={closeLabel} onClick={onClose}>
                   <X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />

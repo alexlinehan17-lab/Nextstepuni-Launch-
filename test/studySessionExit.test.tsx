@@ -101,7 +101,7 @@ describe.each([false, true])('study-session exit choices (mobile: %s)', mobile =
     expect(mocks.resumeSession).toHaveBeenCalledOnce();
     expect(mocks.saveSession).not.toHaveBeenCalled();
     fireEvent.click(screen.getByRole('button', { name: 'Finish for now' }));
-    expect(screen.getByRole('dialog', { name: 'End this study session?' })).toBeInTheDocument();
+    expect(screen.getByRole('dialog', { name: 'Finish for now?' })).toBeInTheDocument();
   });
 
   test('the receipt saves quick debrief metadata through the existing session handler', async () => {
@@ -121,7 +121,7 @@ describe.each([false, true])('study-session exit choices (mobile: %s)', mobile =
     renderActiveSession();
 
     fireEvent.click(screen.getByRole('button', { name: 'Leave study session' }));
-    fireEvent.click(screen.getByRole('button', { name: 'End early and debrief' }));
+    fireEvent.click(screen.getByRole('button', { name: /^End and keep 1 min/ }));
 
     expect(mocks.endSession).toHaveBeenCalledTimes(1);
     expect(mocks.cancelSession).not.toHaveBeenCalled();
@@ -144,7 +144,12 @@ describe.each([false, true])('study-session exit choices (mobile: %s)', mobile =
     fireEvent.click(screen.getByRole('button', { name: 'Leave study session' }));
 
     expect(screen.getByText(/Study for at least 5 minutes/i)).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'End early after 5 min' })).toBeDisabled();
+    // Not a silent disabled button (agreed design): it is marked unavailable,
+    // says why, and pressing it still ends nothing.
+    const endEarly = screen.getByRole('button', { name: 'End early after 5 min' });
+    expect(endEarly).toHaveAttribute('aria-disabled', 'true');
+    fireEvent.click(endEarly);
+    expect(mocks.endSession).not.toHaveBeenCalled();
     expect(screen.getByRole('button', { name: 'Discard without saving' })).toBeEnabled();
   });
 

@@ -12,6 +12,7 @@ import React, { useEffect, useState } from 'react';
 import { Bell, Check } from 'lucide-react';
 import { useSharedStudySession } from '../../contexts/StudySessionContext';
 import { useStudyNotifications } from '../../hooks/useStudyNotifications';
+import { Button, TextButton } from '../ui/Button';
 
 const CONFIRMATION_MS = 6000;
 
@@ -47,7 +48,7 @@ export default function StudyNotifyOffer() {
       <div className="ss-notify" role="status">
         <p>{notify.hint}</p>
         <div className="ss-notify-actions">
-          <button type="button" className="ss-notify-yes" onClick={() => setAnswer('done')}>OK</button>
+          <Button className="ss-notify-yes" onClick={() => setAnswer('done')}>OK</Button>
         </div>
       </div>
     );
@@ -67,10 +68,10 @@ export default function StudyNotifyOffer() {
     <div className="ss-notify" role="group" aria-labelledby="ss-notify-question">
       <p id="ss-notify-question">Switching to your notes or another app? We can tell you when your {session.plannedMinutes + session.extendedMinutes} minutes are up.</p>
       <div className="ss-notify-actions">
-        <button type="button" className="ss-notify-yes" onClick={enable} disabled={busy}>
-          <Bell size={16} aria-hidden="true" />Notify me when time’s up
-        </button>
-        <button type="button" className="ss-notify-no" onClick={() => { notify.turnOff(); setAnswer('done'); }}>Not now</button>
+        <Button className="ss-notify-yes" onClick={enable} aria-busy={busy || undefined}>
+          <Bell size={20} strokeWidth={1.75} aria-hidden="true" />Notify me when time’s up
+        </Button>
+        <TextButton tone="quiet" className="ss-notify-no" onClick={() => { notify.turnOff(); setAnswer('done'); }}>Not now</TextButton>
       </div>
     </div>
   );

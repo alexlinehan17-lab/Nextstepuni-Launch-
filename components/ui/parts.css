@@ -410,6 +410,9 @@
 .ui-sheet-who { display: flex; flex: 1; min-width: 0; flex-direction: column; }
 .ui-sheet-head--lead .ui-sheet-title { padding: 0; text-align: left; }
 .ui-sheet-meta { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+/* A plain sheet: the title at the left under the handle, no Close. */
+.ui-sheet .ui-sheet-head.ui-sheet-head--plain { display: block; min-height: 0; padding: var(--space-3) var(--space-6) var(--space-1); }
+.ui-sheet .ui-sheet-head--plain > .ui-sheet-title { justify-self: start; padding: 0; text-align: left; }
 .ui-sheet-text { min-height: 44px; padding: 0 var(--space-3); border: 0; background: none; color: var(--ink-primary); font-size: 17px; }
 .ui-sheet-text--strong { font-weight: 700; }
 .ui-sheet-body {
