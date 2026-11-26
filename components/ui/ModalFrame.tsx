@@ -76,7 +76,7 @@ const ModalFrame: React.FC<ModalFrameProps> = ({ open, onClose, title, eyebrow, 
           /* Modals render outside .product-shell, so the dark compat layer never
              reached their hard-coded light surfaces -- white panels kept
              dark-mode ink. `theme-compat` opts every ModalFrame consumer in. */
-          className={`${isListeningRoom ? 'feedback-overlay' : 'theme-compat'} fixed inset-0 z-[200] flex items-end justify-center bg-[#1A1A1A]/55 p-0 sm:items-center sm:p-4`}
+          className={`${isListeningRoom ? 'feedback-overlay fixed inset-0 p-0 sm:p-4' : 'theme-compat frame-sheet-backdrop [--frame-gap:1rem]'} z-[var(--z-dialog)] flex items-end justify-center bg-[#1A1A1A]/55 sm:items-center`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -93,7 +93,7 @@ const ModalFrame: React.FC<ModalFrameProps> = ({ open, onClose, title, eyebrow, 
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: reduceMotion ? 0 : 16, scale: reduceMotion ? 1 : 0.99 }}
             transition={reduceMotion ? { duration: 0 } : { type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
-            className={isListeningRoom ? 'feedback-listening-room' : `flex max-h-[92dvh] w-full flex-col overflow-hidden rounded-t-[24px] border-[1.5px] border-[#383838] bg-white dark:bg-zinc-900 shadow-[5px_5px_0_0_#383838] sm:rounded-[24px] dark:border-zinc-600 dark:bg-zinc-900 ${widths[width]}`}
+            className={isListeningRoom ? 'feedback-listening-room' : `frame-sheet [--frame-card-max:92dvh] flex w-full flex-col overflow-hidden rounded-t-[24px] border-[1.5px] border-[#383838] bg-white dark:bg-zinc-900 shadow-[5px_5px_0_0_#383838] sm:rounded-[24px] dark:border-zinc-600 dark:bg-zinc-900 ${widths[width]}`}
           >
             {isListeningRoom ? (
               <header className="feedback-brand-header">
@@ -104,7 +104,7 @@ const ModalFrame: React.FC<ModalFrameProps> = ({ open, onClose, title, eyebrow, 
                   <X size={19} aria-hidden="true" />
                 </button>
               </header>
-            ) : <div className="flex shrink-0 items-start justify-between gap-4 border-b border-[var(--outline-soft)] px-5 py-4 sm:px-6 sm:py-5 dark:border-zinc-700">
+            ) : <div className="frame-dialog-head flex shrink-0 items-start justify-between gap-4 border-b border-[var(--outline-soft)] px-5 py-4 sm:px-6 sm:py-5 dark:border-zinc-700">
               <div>
                 {eyebrow && <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#8D857E] dark:text-zinc-500">{eyebrow}</p>}
                 <h2 id={labelId} className="font-serif text-2xl font-semibold leading-tight text-[#1A1A1A] dark:text-white">{title}</h2>

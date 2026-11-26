@@ -1,5 +1,5 @@
-.signature-card-overlay { position: fixed; inset: 0; z-index: 200; padding: 16px; background: #1a1a1a8c; display: flex; align-items: center; justify-content: center; }
-.signature-card { --sc-paper: #fff; --sc-ink: #1a1a1a; --sc-muted: #6f6861; --sc-line: #ddd8d2; --sc-outline: #383838; --sc-accent: #f26b1f; --sc-accent-text: #b54d14; display: flex; flex-direction: column; width: 100%; max-width: 530px; max-height: calc(100dvh - 32px); border: 1.5px solid var(--sc-outline); border-radius: 24px; background: var(--sc-paper); color: var(--sc-ink); box-shadow: 5px 5px 0 var(--sc-outline); font-family: 'DM Sans', sans-serif; }
+.signature-card-overlay { --frame-gap: 16px; z-index: 200; background: #1a1a1a8c; display: flex; align-items: center; justify-content: center; }
+.signature-card { --sc-paper: #fff; --sc-ink: #1a1a1a; --sc-muted: #6f6861; --sc-line: #ddd8d2; --sc-outline: #383838; --sc-accent: #f26b1f; --sc-accent-text: #b54d14; display: flex; flex-direction: column; width: 100%; max-width: 530px; border: 1.5px solid var(--sc-outline); border-radius: 24px; background: var(--sc-paper); color: var(--sc-ink); box-shadow: 5px 5px 0 var(--sc-outline); font-family: 'DM Sans', sans-serif; }
 .dark .signature-card { --sc-paper: #191919; --sc-ink: #f4f2ef; --sc-muted: #beb9b3; --sc-line: #55514c; --sc-outline: #a7a39e; --sc-accent-text: #ffac77; }
 .signature-card--wide { max-width: 620px; }
 .signature-card:focus { outline: none; }

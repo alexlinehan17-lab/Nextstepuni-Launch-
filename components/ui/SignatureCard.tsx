@@ -30,8 +30,8 @@ export default function SignatureCard({ open, onClose, title, eyebrow, descripti
     ref.current?.focus();
     if (bodyRef.current) bodyRef.current.scrollTop = 0;
   }, [open, title]);
-  return createPortal(<AnimatePresence>{open && <MotionDiv className="theme-compat signature-card-overlay" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose}>
-    <MotionDiv ref={ref} className={`signature-card${wide ? ' signature-card--wide' : ''}`} role="dialog" aria-modal="true" aria-labelledby={`${id}-title`} aria-describedby={description ? `${id}-description` : undefined} tabIndex={-1}
+  return createPortal(<AnimatePresence>{open && <MotionDiv className="theme-compat signature-card-overlay frame-dialog" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose}>
+    <MotionDiv ref={ref} className={`signature-card frame-dialog-card${wide ? ' signature-card--wide' : ''}`} role="dialog" aria-modal="true" aria-labelledby={`${id}-title`} aria-describedby={description ? `${id}-description` : undefined} tabIndex={-1}
       initial={{ opacity: 0, scale: .98 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: .98 }} transition={{ duration: .18 }} onClick={(event: React.MouseEvent) => event.stopPropagation()}>
       <header className="sc-header">
         <div>{eyebrow && <p className="sc-eyebrow">{eyebrow}</p>}<h2 id={`${id}-title`}>{title}</h2>{description && <p id={`${id}-description`} className="sc-description">{description}</p>}
