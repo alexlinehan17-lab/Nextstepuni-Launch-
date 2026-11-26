@@ -1,0 +1,14 @@
+{
+ "home-economics": [
+  "The attached page fails to open on every Home Economics card that has one (1,541 of 1,953 cards). The app asks storage for the folder <code>home-economics</code>; the papers are filed under <code>home-economics-s-and-s</code>, so the request returns “not found” and the reader shows “That page did not load”. I reproduced this in the session screen and confirmed both addresses directly. It is a one-line folder mapping, the same kind the reader already has for Maths, DCG, Applied Maths and LCVP."
+ ],
+ "history": [
+  "The attached extract or documents fail to open on Early Modern cards (1,170 of the 2,258 Early Modern cards have one). The Early Modern papers are filed under <code>history-early-modern</code>, but the reader looks under <code>history</code> and gets “not found”. Later Modern cards open correctly."
+ ],
+ "applied-maths": [
+  "Two things a reviewer saw as missing (scheme lines stuck on “Loading”) turned out to be slow loading during capture; given 20 seconds they appear. The findings below about the question text and the scheme layout stand."
+ ],
+ "accounting": [
+  "The cut-off answers are real and come from the card data, not the screen: written scheme rows are stored cut to exactly 400 characters, so 110 cards end mid-sentence (“…creditor control accounts are used to”). 216 cards have a single scheme row with a label and no figure in it (“(a) (i) Purchases · 10 marks”). All 1,365 cards attach the official worked solution as whole scheme pages, so the answers to neighbouring questions are on show too."
+ ]
+}

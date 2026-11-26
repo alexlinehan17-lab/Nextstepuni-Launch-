@@ -138,6 +138,9 @@ const PRECACHE_IGNORES = [
   // PDF export libraries — only pulled in when a student or GC actually
   // exports something.
   '**/vendor-jspdf*.js', '**/html2canvas*.js',
+  // The Mark Bank audit review page (public/markbank-audit) is a standalone
+  // static document for the founder, not part of the app.
+  'markbank-audit/**',
 ];
 const PRECACHE_MAX_BYTES = 3 * 1024 * 1024;
 

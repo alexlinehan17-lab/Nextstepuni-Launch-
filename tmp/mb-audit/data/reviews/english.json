@@ -1,0 +1,274 @@
+{
+ "subject": "english",
+ "verdict": "needs-work",
+ "summary": "Question text is mostly clean and the layout is tidy and consistent on both phone and desktop. The big fault is the scheme: on all 12 sampled cards the reveal shows only a generic self-marking PCLM grid with boilerplate checkboxes, and every card says 'The published scheme prescribes no set content for this response', so the student never sees what the examiners were actually looking for on THIS question. Bulleted or listed sub-tasks in the question are flattened into one paragraph joined by dashes (cards 10, 12). Attached reading pages are whole exam pages; they are legible, but poem pages also show the other questions on that poem (card 7). The older-year grade grid has overlapping bands and no zero (cards 9, 11), and the orange command-word underline lands on arbitrary fragments.",
+ "scores": {
+  "question": 3,
+  "attachments": 3,
+  "scheme": 2,
+  "phone": 3,
+  "desktop": 3
+ },
+ "issues": [
+  {
+   "title": "Scheme has no question-specific content",
+   "detail": "Every card's reveal is the same generic material: 2-5 boilerplate tick-boxes ('Address every instruction in the printed task', 'Sustain a clear, purposeful response in an appropriate register'), a PCLM mark grid, and a grey box stating 'The published scheme prescribes no set content for this response'. For questions like 'Is this a disturbing poem?' or 'Do you agree family is important in Circle of Friends?' the SEC scheme normally prints indicative points; none are shown. The reveal therefore does not answer the question at all - it only lets the student guess their own mark.",
+   "severity": "high",
+   "cards": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_evidence_image": "07_desktop_answer.png",
+   "suggested_fix": "Show the scheme's indicative material for this exact question (the 'Expect candidates to...' / 'Possible points' bullets), as clean bullets or as a crop of the official scheme entry, ABOVE the PCLM grid. If the scheme truly prints nothing, say so in one line and do not label it 'Possible directions'."
+  },
+  {
+   "title": "Bulleted sub-tasks flattened into a dash-joined paragraph",
+   "detail": "Card 10 runs three required bullet tasks into the sentence: 'consider fascinating: - Describe how ... in the novel - Explain what ... the relationship - Suggest one piece of beneficial advice ...'. Card 12 does the same with the option list: 'The Spinning Heart: - I found the novel entertaining - I found the novel disturbing - I found the novel boring. Explain your response...'. The student cannot see at a glance that there are three separate tasks/options.",
+   "severity": "medium",
+   "cards": [
+    10,
+    12
+   ],
+   "best_evidence_image": "10_phone_answer.png",
+   "suggested_fix": "Render each dash item as its own bullet line, with the closing instruction ('Your response should demonstrate...') as a separate paragraph."
+  },
+  {
+   "title": "Attached poem page shows the other questions on that poem",
+   "detail": "The reader opens the whole exam page. On card 7 (Q1(b)) the page also shows Q1(a) in full and Q2 with its options beginning; poem pages for cards 5 and 9 are the same full-page type (the questions sit below the visible fold). Not harmful, but it is not limited to this card's part.",
+   "severity": "low",
+   "cards": [
+    5,
+    7,
+    9
+   ],
+   "best_evidence_image": "07_attached_page.png",
+   "suggested_fix": "Crop the attachment to the poem/text block only, ending before the numbered questions."
+  },
+  {
+   "title": "Older grade grid has overlapping bands and no zero",
+   "detail": "For the 10-mark 2014/2015 cards the grid reads A 8-9-10, B 7-8, C 5-6, D 4-5, E 2-3, F/NG 1. 8 appears in both A and B, 5 in both C and D, and there is no 0 option, so a student cannot tell which grade a mark of 8 or 5 is. The 2011 20-mark grid and the post-2017 O1-O8 grids do not have this problem.",
+   "severity": "medium",
+   "cards": [
+    9,
+    11
+   ],
+   "best_evidence_image": "09_desktop_answer.png",
+   "suggested_fix": "Use non-overlapping mark bands (and include 0), or show the official grade table as printed."
+  },
+  {
+   "title": "Confusing boilerplate inside the scheme",
+   "detail": "Card 2's checklist and grid say 'Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.' - internal wording that means nothing to a student. 'Read and use the official source material supplied with the card' is similar filler. Multi-criterion grids also behave inconsistently: on cards 6 and 10 Coherence and Language are greyed out with 'Set Purpose first - it caps this criterion', on cards 2, 8 and 12 they are not.",
+   "severity": "medium",
+   "cards": [
+    2,
+    6,
+    8,
+    10,
+    12
+   ],
+   "best_evidence_image": "02_desktop_answer.png",
+   "suggested_fix": "Drop internal phrases; write the checklist from the question's own verbs (e.g. 'Chose Ifemelu or Obinze', 'Named three objects', 'Explained what each reveals'). Apply the cap rule consistently."
+  },
+  {
+   "title": "Two-part question shown with no mark split",
+   "detail": "Card 1 shows parts (a) and (b) together as one 20-mark card but the scheme gives no split between (a) and (b), only 'Purpose and Coherence 12 / Language and Mechanics 8'. A sibling card (11) splits (iii)(a) out on its own, so treatment is inconsistent. Also 'Apollo11' is missing its space.",
+   "severity": "low",
+   "cards": [
+    1,
+    11
+   ],
+   "best_evidence_image": "01_desktop_answer.png",
+   "suggested_fix": "Show the marks per part next to (a) and (b), and treat multi-part questions the same way across years."
+  },
+  {
+   "title": "Command-word underline lands on arbitrary fragments",
+   "detail": "The orange underline covers odd stretches rather than the command: 'Suggest three words or phrases, of your own or' (card 1), 'consider fascinating:' (card 10), 'list below, choose the phrase or phrases' (card 12), 'show your class three objects that you think help' (card 2); card 8 has none. It looks accidental.",
+   "severity": "low",
+   "cards": [
+    1,
+    2,
+    8,
+    10,
+    12
+   ],
+   "best_evidence_image": "10_desktop_answer.png",
+   "suggested_fix": "Underline only the command verb(s) (Suggest, Explain, Describe, Choose) or remove the underline."
+  },
+  {
+   "title": "Dead space on both layouts",
+   "detail": "On the phone there is a blank band of roughly 200-300px between the question/attachment and 'Your answer'. On desktop the left column is empty for about 1000px while the grid runs down the right. The phone reveal is also long (2-3 screens of mark buttons) for what is a generic grid.",
+   "severity": "low",
+   "cards": [
+    1,
+    2,
+    4,
+    6,
+    8,
+    10
+   ],
+   "best_evidence_image": "04_phone_answer.png",
+   "suggested_fix": "Remove the fixed minimum height on the question panel on phone; on desktop keep the question sticky while the scheme scrolls."
+  }
+ ],
+ "good_examples": [
+  {
+   "card": 3,
+   "why": "Clean question text with a clearly labelled, legible TEXT 3 attachment and an H1-H8 grid that maps simply to 15 marks.",
+   "image": "03_desktop_answer.png"
+  },
+  {
+   "card": 5,
+   "why": "Poem title and poet shown above a short clear question; attachment button is obvious and the poem page is very legible.",
+   "image": "05_phone_answer.png"
+  },
+  {
+   "card": 4,
+   "why": "Short question, tidy O1-O8 grid with the 6/4 split stated; the cleanest of the layout.",
+   "image": "04_desktop_answer.png"
+  }
+ ],
+ "cards": [
+  {
+   "n": 1,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "Attachment is the reading text only (page 1 of 2 seen).",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "(a) and (b) laid out clearly but 'Apollo11' lost its space and no mark split per part. Scheme is the generic PCLM grid plus 'The published scheme prescribes no set content for this response' - nothing specific to this question."
+  },
+  {
+   "n": 2,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Question reads fine. Scheme checklist contains internal wording 'Selected direction: 1 of 2'; four 0-9 button grids make a long phone scroll. Scheme is the generic PCLM grid plus 'The published scheme prescribes no set content for this response' - nothing specific to this question."
+  },
+  {
+   "n": 3,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "Attachment is TEXT 3 only.",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Clear question and attachment. H1-H8 grid is tidy but there are no indicative insights for President Higgins' vision."
+  },
+  {
+   "n": 4,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Clean. Scheme is the generic PCLM grid plus 'The published scheme prescribes no set content for this response' - nothing specific to this question. Blank band under the question on phone."
+  },
+  {
+   "n": 5,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "Top of page shows poem only; questions sit lower on the same page (not visible in the capture).",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Says 'in the above poem' though the poem is behind a button, not above. Scheme is the generic PCLM grid plus 'The published scheme prescribes no set content for this response' - nothing specific to this question."
+  },
+  {
+   "n": 6,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Clean question. Coherence and Language grids greyed out ('Set Purpose first') unlike other cards. Scheme is the generic PCLM grid plus 'The published scheme prescribes no set content for this response' - nothing specific to this question."
+  },
+  {
+   "n": 7,
+   "question": "ok",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page shows Q1(a) and Q1(b) in full and the start of Q2 (a different question on the same poem).",
+   "attachment": "minor",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Good question text; attachment not limited to this part. No indicative points on whether the poem is disturbing."
+  },
+  {
+   "n": 8,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Clean question, no underline at all (inconsistent). Scheme is the generic PCLM grid plus 'The published scheme prescribes no set content for this response' - nothing specific to this question."
+  },
+  {
+   "n": 9,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "Poem only visible at top of page.",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Grade grid overlaps (8 in A and B, 5 in C and D) and has no 0. Scheme is the generic PCLM grid plus 'The published scheme prescribes no set content for this response' - nothing specific to this question."
+  },
+  {
+   "n": 10,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Three bullet tasks flattened into one paragraph joined by dashes; underline on 'consider fascinating:'. Scheme is the generic PCLM grid plus 'The published scheme prescribes no set content for this response' - nothing specific to this question."
+  },
+  {
+   "n": 11,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "Attachment is TEXT 1 'Animals' only.",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "'Based on the above text' with text behind a button; same overlapping A-F grid as card 9. Scheme is the generic PCLM grid plus 'The published scheme prescribes no set content for this response' - nothing specific to this question."
+  },
+  {
+   "n": 12,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Option list flattened: '- I found the novel entertaining - I found the novel disturbing - I found the novel boring'. Scheme is the generic PCLM grid plus 'The published scheme prescribes no set content for this response' - nothing specific to this question."
+  }
+ ]
+}

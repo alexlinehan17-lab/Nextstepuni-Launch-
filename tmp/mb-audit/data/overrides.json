@@ -1,0 +1,11 @@
+{
+ "applied-maths": {
+  "drop": [
+   "Revealed scheme shows no scheme content"
+  ],
+  "summary": "Applied Maths cards show only the last sentence of each question, under the paper's general instruction about g, so the card alone cannot be answered: 'Find the value of h', 'Find |PQ|'. The setup and diagram sit one tap away in the attached page, which is cropped to the right question but shows every sibling part. The scheme design is sound on desktop: each published step shows the official working as a picture with its marks. On a phone the same step pictures shrink to a strip a few pixels high and cannot be read. Vector arrows on i and j show as empty boxes in the typed text.",
+  "scores": {
+   "scheme": 3
+  }
+ }
+}
