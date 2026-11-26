@@ -1,6 +1,5 @@
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
-import { Button } from '../approved-ui-runtime';
+import { Button } from '../ui/Button';
 import StudyCompletionLayout from './StudyCompletionLayout';
 
 interface Props {
@@ -17,8 +16,8 @@ export default function StudySessionSaved({ subject, seconds, points, character,
     description="Your study time is on the record. Your Journey Points are ready to spend."
     subject={subject} seconds={seconds} points={points} character={character}>
     <div className="sc-saved-actions">
-      {onIsland && <Button className="sc-primary" onClick={onIsland}>Spend them on your island <ArrowUpRight size={18} aria-hidden="true" /></Button>}
-      <Button variant="outline" className="sc-secondary" onClick={onStudyAgain}>Back to the study room</Button>
+      {onIsland && <Button kind="main" size="lg" block arrow="forward" className="sc-main" onClick={onIsland}>Spend them on your island</Button>}
+      <Button size="lg" block className="sc-second" onClick={onStudyAgain}>Back to the study room</Button>
     </div>
   </StudyCompletionLayout>;
 }

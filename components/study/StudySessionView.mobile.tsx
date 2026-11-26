@@ -28,7 +28,7 @@ import { STRATEGY_REGISTRY } from '../../studySessionData';
 import { type StreakData } from '../../hooks/useStreak';
 import { MIN_STUDY_SESSION_MINUTES } from '../../hooks/useStudySession';
 import { useSharedStudySession } from '../../contexts/StudySessionContext';
-import StudyTimeUp from './StudyTimeUp';
+import StudyTimeUp, { sessionTodosFor } from './StudyTimeUp';
 import { useStudyTransitionSound } from '../../hooks/useStudyTransitionSound';
 import StudySessionCompletion from './StudySessionCompletion';
 import StrategyPickerStep from './StrategyPickerStep';
@@ -545,6 +545,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     ? <StudyTimeUp subject={session.subject} elapsedSeconds={session.elapsedSeconds}
         extendedMinutes={session.extendedMinutes ?? 0} extensionBonus={session.extensionBonus ?? 0}
         sessionPoints={sessionPoints} onKeepGoing={minutes => { session.extendSession(minutes); }}
+        todos={sessionTodos ?? sessionTodosFor(session.subject, session.sessionType, session.plannedSeconds ?? session.totalDuration)}
         onFinish={() => setFinishing(true)} /> : null;
 
   // ── ACTIVE / PAUSED PHASE ──

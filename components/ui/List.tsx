@@ -19,7 +19,7 @@
  * level-1 lift, which is empty since the owner chose "a line only" over "a line
  * with a hair of lift" (26 Nov 2026). Read-only content is not boxed.
  */
-import { type ReactNode } from 'react';
+import { type ButtonHTMLAttributes, type ReactNode } from 'react';
 import { ChevronRight } from 'lucide-react';
 import ThemeArtwork from '../ThemeArtwork';
 import './parts.css';
@@ -85,6 +85,24 @@ export function Row({ title, over, meta, art, label, coach, icon, tone, value, t
         : onPress ? <button type="button" className={classes} onClick={onPress} aria-label={label} data-coach={coach}>{content}</button>
           : <div className={classes}>{content}</div>}
     </li>
+  );
+}
+
+export interface CheckRowProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'role' | 'onChange'> {
+  checked: boolean;
+  onChange: (checked: boolean) => void;
+  /** The mark the screen draws for this row (the session's dotted ring). */
+  mark: ReactNode;
+}
+
+/** A row you tick (Time's up: "tap one you finished to fill it"): the whole row
+ *  is the checkbox, with no box round it; its mark is the screen's own. */
+export function CheckRow({ checked, onChange, mark, children, className = '', type = 'button', ...props }: CheckRowProps) {
+  return (
+    <button {...props} type={type} role="checkbox" aria-checked={checked}
+      className={`ui-part ui-checkrow ${className}`.trim()} onClick={() => onChange(!checked)}>
+      {mark}<span className="ui-checkrow-label">{children}</span>
+    </button>
   );
 }
 

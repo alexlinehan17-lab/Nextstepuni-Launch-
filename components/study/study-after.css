@@ -1,0 +1,122 @@
+/* After the session in the agreed look (c-study.html: c-study-dots; r5-b1.html:
+   r5-post-session): Time's up with the to-dos back on it, what helped you
+   focus, the debrief, Session saved. One typeface, on the page, one charcoal
+   button; feedback sentences are ink, green is for the tick only. The study
+   receipt keeps today's own rules (study-crew.css), untouched. Loaded after
+   study-completion.css and study-post-session.css. */
+
+/* ── Time's up and Session saved ── */
+.nsu-study-completion .sc-page.sc-page--phone,
+.nsu-study-completion .sc-page.sc-page--desk { display: flex; flex-direction: column; min-height: 100dvh; background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
+.nsu-study-completion .sc-page.sc-page--phone { align-items: stretch; padding: 0 var(--space-6) calc(var(--edge-bottom) + var(--space-6)); }
+.nsu-study-completion .sc-page.sc-timeup.sc-page--phone { padding-bottom: 0; }
+.sc-page--phone .sc-bar { margin: 0 calc(-1 * var(--space-6)); }
+.nsu-study-completion .sc-page .sc-layout { display: flex; flex: 1; flex-direction: column; width: 100%; max-width: none; margin: 0; padding: 0; border: 0; background: none; box-shadow: none; }
+.nsu-study-completion .sc-page .sc-heading { display: block; margin: 0; padding: 18px 0 16px; border: 0; }
+.nsu-study-completion .sc-headrow { display: flex; align-items: flex-end; gap: var(--space-3); }
+.nsu-study-completion .sc-page .sc-headrow h1 { flex: 1; min-width: 0; margin: 0; color: var(--ink-primary); font: 400 35px/39px var(--font-ui); letter-spacing: -0.045em; }
+.nsu-study-completion .sc-page .sc-headrow h1:focus { outline: none; }
+.nsu-study-completion .sc-page .sc-art { flex: none; width: 72px; height: 72px; margin: 0 -8px -4px 0; }
+.nsu-study-completion .sc-art :is(img, svg, .crew-illustration) { display: block; width: 100%; height: 100%; }
+.nsu-study-completion .sc-page .sc-description { max-width: none; margin: 10px 0 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.nsu-study-completion .sc-page .sc-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 0; padding: 0; border: 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+.nsu-study-completion .sc-page .sc-stats > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; margin: 0; padding: 14px 0; border: 0; }
+.nsu-study-completion .sc-page .sc-stats > .sc-stat-subject { grid-column: 1 / -1; gap: 2px; border-bottom: 1px solid var(--hairline); }
+.nsu-study-completion .sc-page .sc-stats > div:nth-child(3) { padding-left: var(--space-4); border-left: 1px solid var(--hairline); }
+.nsu-study-completion .sc-page .sc-stats dt { margin: 0; color: var(--ink-secondary); font-size: 13px; font-weight: 400; line-height: 18px; letter-spacing: 0; text-transform: none; }
+.nsu-study-completion .sc-page .sc-stats dd { margin: 0; color: var(--ink-primary); }
+.nsu-study-completion .sc-page .sc-stat-subject dd { font: 400 28px/32px var(--font-ui); letter-spacing: -0.04em; }
+.nsu-study-completion .sc-page .sc-figure { font: 400 40px/40px var(--font-ui); letter-spacing: -0.055em; font-variant-numeric: tabular-nums; }
+.nsu-study-completion .sc-page .sc-figure small { margin: 0; color: var(--ink-secondary); font-size: 17px; letter-spacing: -0.01em; }
+.nsu-study-completion .sc-page .sc-points small { margin-left: 0.22em; }
+
+/* the to-dos back on Time's up: they fill green */
+.sc-todos { display: flex; flex-direction: column; gap: 6px; margin-top: var(--space-6); }
+.sc-todos-head { display: flex; align-items: baseline; gap: 10px; }
+.nsu-study-completion .sc-page .sc-todos-head h2 { margin: 0; color: var(--ink-primary); font: 400 17px/22px var(--font-ui); letter-spacing: -0.015em; }
+.sc-todos-head .t-readout { color: var(--ink-muted); }
+.sc-todos-list { display: flex; flex-direction: column; }
+.sc-todo .study-dot { width: 22px; height: 22px; }
+.sc-todos > .t-meta { margin: 2px 0 0; }
+
+/* what comes next */
+.nsu-study-completion .sc-page .sc-next { display: flex; flex-direction: column; margin: 0; }
+.sc-extend { display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-6); padding: var(--space-6) 0 var(--space-6); border-top: 1px solid var(--hairline); }
+.sc-extend :is(h2, p) { margin: 0; }
+.nsu-study-completion .sc-page .sc-extend h2 { color: var(--ink-primary); font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; }
+.nsu-study-completion .sc-page .sc-extend { margin-top: var(--space-6); padding: var(--space-6) 0; border-top: 1px solid var(--hairline); }
+.nsu-study-completion .sc-page .sc-extensions { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); margin: 6px 0 2px; }
+.nsu-study-completion .sc-extensions .ui-btn { width: 100%; }
+.sc-page--phone .ui-foot.sc-finish { margin: 0 calc(-1 * var(--space-6)); }
+.sc-finish-desk { display: flex; flex-direction: column; gap: var(--space-2); width: 344px; max-width: 100%; margin-top: 22px; }
+.sc-finish-desk .sc-note { margin: 0; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.sc-saved-actions { display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-6); }
+
+/* a laptop: today's layout beside sidebar B, centred in the space */
+.nsu-study-completion .sc-page.sc-page--desk { align-items: center; padding: 52px var(--space-12) 40px; }
+.sc-page--desk .sc-layout { width: min(820px, 100%); }
+.nsu-study-completion .sc-page--desk .sc-heading { padding: 0; }
+.nsu-study-completion .sc-page--desk .sc-eyebrow { margin: 0 0 10px; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; text-transform: uppercase; }
+.nsu-study-completion .sc-page--desk .sc-headrow h1 { font-size: 60px; line-height: 62px; }
+.nsu-study-completion .sc-page--desk .sc-description { margin-top: 12px; }
+.nsu-study-completion .sc-page--desk .sc-stats { grid-template-columns: 1.2fr 1fr 1fr; margin-top: 28px; }
+.nsu-study-completion .sc-page--desk .sc-stats > div { padding: 16px 0 18px; }
+.nsu-study-completion .sc-page--desk .sc-stats > .sc-stat-subject { grid-column: auto; border-bottom: 0; }
+.nsu-study-completion .sc-page--desk .sc-stats > div + div { padding-left: var(--space-6); border-left: 1px solid var(--hairline); }
+.nsu-study-completion .sc-page--desk .sc-stat-subject dd { line-height: 40px; }
+.sc-page--desk .sc-todos { margin-top: 22px; }
+.sc-page--desk .sc-todos-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: var(--space-6); }
+.sc-page--desk .sc-extend { margin-top: var(--space-6); padding-top: 22px; }
+.nsu-study-completion .sc-page--desk .sc-extensions { grid-template-columns: repeat(3, 120px); }
+.sc-page--desk .sc-saved-actions { width: 344px; max-width: 100%; }
+
+/* ── what helped you focus, and the debrief: on the page, a task ── */
+.nsu-post-session .sps-page.sps-flow { display: flex; flex-direction: column; min-height: 100dvh; max-width: none; margin: 0; padding: 0 var(--space-6); background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
+.sps-flow .sps-bar,
+.sps-flow .ui-foot.sps-foot { margin: 0 calc(-1 * var(--space-6)); }
+.sps-flow :where(h1, h2, p, dl, dd, fieldset, legend) { margin: 0; }
+.sps-step { display: flex; flex: 1; flex-direction: column; padding: 18px 0 var(--space-8); }
+.sps-subject-line { display: flex; align-items: center; gap: var(--space-2); margin: 0 0 6px -4px; }
+.sps-subject-line .subject-avatar { width: 40px; height: 40px; }
+.sps-step > .t-sub,
+.sps-debrief-flow > .t-sub { margin-top: 10px; }
+.sps-figures { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: var(--space-6); padding: 14px 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+.sps-figures > div { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.sps-figures dt { color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.sps-figures dd { color: var(--ink-primary); font: 400 36px/38px var(--font-ui); letter-spacing: -0.055em; font-variant-numeric: tabular-nums; }
+.sps-figures dd small { margin-left: 0.2em; color: var(--ink-secondary); font-size: 15px; letter-spacing: 0; }
+.sps-group-flow { display: flex; flex-direction: column; gap: 10px; margin-top: 26px; border-radius: 16px; }
+.sps-group-flow .t-label { color: var(--ink-muted); }
+.sps-tiles, .sps-feelings { display: flex; flex-direction: column; gap: var(--space-2); }
+.sps-flow .ui-foot.sps-foot .sps-ready,
+.sps-flow .ui-foot.sps-foot .ui-need { color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.sps-flow .ui-foot.sps-foot .ui-link.sps-quiet { align-self: center; }
+.sps-flow [data-ui-nudge] { outline: 1.5px solid var(--ink-primary); outline-offset: 8px; }
+
+.sps-finish.sps-finish-flow { display: block; max-width: none; margin: 0; padding: 18px 0 var(--space-8); }
+.sps-flow .sps-form { margin-top: var(--space-6); padding-top: var(--space-6); border-top: 1px solid var(--hairline); }
+.sps-flow .sps-fieldset { display: flex; flex-direction: column; gap: var(--space-3); min-width: 0; padding: 0; border: 0; }
+.nsu-post-session .sps-flow .sps-legend { float: left; width: 100%; margin: 0 0 var(--space-3); padding: 0; color: var(--ink-primary); font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; }
+.sps-flow .sps-legend + * { clear: both; }
+.sps-flow .ui-seg.sps-modes-bar { height: auto; }
+.sps-flow .sps-modes-bar .ui-seg-item { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 2px; height: auto; min-height: 56px; padding: 8px 14px; font-size: 15px; line-height: 20px; text-align: left; }
+.sps-flow .sps-modes-bar .ui-seg-item small { color: var(--ink-muted); font-size: 13px; line-height: 16px; }
+.sps-flow .sps-modes-bar .ui-seg-item[aria-checked='true'] small { color: var(--ink-secondary); }
+.sps-flow .sps-question { margin-top: var(--space-3); }
+.sps-flow .sps-field { display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-2); }
+.sps-area { width: 100%; min-height: 104px; padding: 12px 14px; border: 1px solid var(--outline-soft); border-radius: var(--r-sm); outline: 0; background: var(--surface-paper); color: var(--ink-primary); font: inherit; font-size: 16px; line-height: 24px; resize: none; }
+.sps-area::placeholder { color: var(--ink-muted); }
+.sps-area:focus { border-color: var(--nsu-focus-edge); box-shadow: inset 0 0 0 1px var(--nsu-focus-edge); }
+.sps-flow .sps-error { margin-top: var(--space-3); color: var(--ink-primary); font-size: 15px; line-height: 21px; }
+.sps-flow .sps-note { margin-top: var(--space-3); }
+.sps-finish-flow .study-receipt { margin-top: var(--space-8); }
+
+/* a laptop: the same steps in a column, the receipt beside the debrief as today */
+@media (min-width: 768px) {
+  .sps-step { width: min(640px, 100%); margin: 0 auto; }
+  .sps-flow .ui-foot.sps-foot { padding-left: max(var(--space-6), calc(50% - 320px)); padding-right: max(var(--space-6), calc(50% - 320px)); }
+}
+@media (min-width: 960px) {
+  .sps-finish.sps-finish-flow { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: var(--space-12); align-items: start; width: min(1040px, 100%); margin: 0 auto; }
+  .sps-finish-flow .study-receipt { margin-top: 0; }
+}

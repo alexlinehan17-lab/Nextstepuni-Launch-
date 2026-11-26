@@ -446,10 +446,6 @@
   "components/PaperTrail/index.tsx": {
    "button": 11
   },
-  "components/PointsExplainer.tsx": {
-   "button": 1,
-   "pop-up": 2
-  },
   "components/PointsOptimizationModule.tsx": {
    "button": 10,
    "dropdown": 5
@@ -805,7 +801,6 @@
    "button": 21
   },
   "components/study/StudyBreak.tsx": {
-   "button": 5,
    "dropdown": 1,
    "pop-up": 1
   },
@@ -816,9 +811,6 @@
    "button": 4,
    "pop-up": 1
   },
-  "components/study/StudyNotifyOffer.tsx": {
-   "button": 3
-  },
   "components/study/StudyQuizInvitation.tsx": {
    "button": 3,
    "pop-up": 2
@@ -827,18 +819,7 @@
    "button": 1
   },
   "components/study/StudySessionFinish.tsx": {
-   "button": 2
-  },
-  "components/study/StudySessionTimer.tsx": {
-   "button": 6
-  },
-  "components/study/StudySessionView.mobile.tsx": {
-   "button": 3,
-   "pop-up": 1
-  },
-  "components/study/StudySessionView.tsx": {
-   "button": 3,
-   "pop-up": 1
+   "button": 1
   },
   "components/study/StudySoundToggle.tsx": {
    "button": 1

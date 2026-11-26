@@ -28,7 +28,7 @@
 
 /* Every part: the typeface, no tap flash, no text selection on a control. */
 .ui-part { font-family: var(--font-ui); -webkit-font-smoothing: antialiased; }
-:is(.ui-btn, .ui-link, .ui-icon-btn, .ui-choice, .ui-switch, .ui-seg-item, .ui-menu-btn, .ui-menu-item, .ui-row, .ui-press, .ui-need, .ui-tab) {
+:is(.ui-btn, .ui-link, .ui-icon-btn, .ui-choice, .ui-switch, .ui-seg-item, .ui-menu-btn, .ui-menu-item, .ui-row, .ui-press, .ui-need, .ui-tab, .ui-checkrow) {
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
   user-select: none;
@@ -655,6 +655,9 @@
 .ui-list { display: flex; flex-direction: column; margin: 0; padding: 0; border-top: 1px solid var(--hairline); list-style: none; }
 .ui-list--boxed { overflow: hidden; border: 1px solid var(--outline-soft); border-radius: var(--r-box); background: var(--surface-paper); box-shadow: var(--lift-ctl); }
 .ui-row-item { display: block; margin: 0; padding: 0; }
+/* A row you tick: the row is the checkbox, its mark the screen's own. */
+.ui-checkrow { display: flex; align-items: center; gap: var(--space-3); width: 100%; min-height: 44px; padding: 0; border: 0; border-radius: var(--r-sm); background: none; color: var(--ink-primary); font-size: 16px; line-height: 22px; text-align: left; transition: transform var(--t-press) var(--ease-out); }
+.ui-checkrow:active { transform: scale(0.99); }
 .ui-list--boxed > li > .ui-row { padding-left: var(--space-4); padding-right: var(--space-4); }
 .ui-list--boxed > li:last-child > .ui-row { border-bottom: 0; }
 .ui-row {
@@ -750,7 +753,7 @@ span.ui-row-art > * { display: block; width: 100%; height: 100%; }
 
 /* ── Reduced motion: fades and colour stay; travel, scale and drawing go ──── */
 @media (prefers-reduced-motion: reduce) {
-  .ui-btn:active, .ui-icon-btn:active, .ui-choice:active, .ui-menu-btn:active, .ui-press:active { transform: none; }
+  .ui-btn:active, .ui-icon-btn:active, .ui-choice:active, .ui-menu-btn:active, .ui-press:active, .ui-checkrow:active { transform: none; }
   .ui-link:active .ui-icon { transform: none; }
   .ui-mark--on path { transition: none; }
   .ui-switch-knob { transition: none; }

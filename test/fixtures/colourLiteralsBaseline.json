@@ -830,12 +830,6 @@
   "components/student-screens.css": {
    "hex": 17
   },
-  "components/study/StudySessionView.mobile.tsx": {
-   "tailwind [#…]": 4
-  },
-  "components/study/StudySessionView.tsx": {
-   "tailwind [#…]": 4
-  },
   "components/study/quiz/study-quiz.css": {
    "hex": 2
   },
@@ -849,7 +843,7 @@
    "hex": 4
   },
   "components/study/study-mini-timer.css": {
-   "hex": 8
+   "hex": 2
   },
   "components/study/study-motion.css": {
    "hex": 25

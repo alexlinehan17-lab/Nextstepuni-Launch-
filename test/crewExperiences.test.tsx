@@ -70,21 +70,27 @@ describe('session receipt and debrief', () => {
     render(<StudySessionFinish {...finishProps} mode="quick" onModeChange={vi.fn()} onSave={onSave} onSkip={vi.fn()} />);
     expect(screen.getByLabelText('Your study receipt')).toHaveTextContent('25 min 5 sec');
     expect(screen.getByText('Session ended early')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Save session' })).toBeDisabled();
-    fireEvent.click(screen.getByRole('button', { name: 'Good' }));
+    // Never a dead button (agreed design): until a feeling is chosen Save
+    // session says what is missing and saves nothing.
+    expect(screen.getByRole('button', { name: 'Save session' })).toHaveAttribute('data-missing');
     fireEvent.click(screen.getByRole('button', { name: 'Save session' }));
-    expect(screen.getByRole('button', { name: 'Save without a debrief' })).toBeDisabled();
+    expect(onSave).not.toHaveBeenCalled();
+    fireEvent.click(screen.getByRole('radio', { name: 'Good' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Save session' }));
+    expect(screen.getByRole('button', { name: 'Save without a debrief' })).toHaveAttribute('aria-disabled', 'true');
     expect(onSave).toHaveBeenCalledExactlyOnceWith('good');
     release();
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Save session' })).toBeEnabled());
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Save session' })).not.toHaveAttribute('aria-disabled'));
   });
   test('keeps a failed full reflection for retry and preserves its structured confidence', async () => {
     const onSave = vi.fn().mockRejectedValueOnce(new Error('offline')).mockResolvedValueOnce(undefined);
     render(<StudySessionFinish {...finishProps} mode="full" onModeChange={vi.fn()} onSave={onSave} onSkip={vi.fn()} />);
-    fireEvent.click(screen.getByRole('button', { name: 'Okay' }));
+    fireEvent.click(screen.getByRole('radio', { name: 'Okay' }));
     const note = screen.getByRole('textbox');
     fireEvent.change(note, { target: { value: 'Short' } });
-    expect(screen.getByRole('button', { name: 'Save session' })).toBeDisabled();
+    expect(screen.getByRole('button', { name: 'Save session' })).toHaveAttribute('data-missing');
+    fireEvent.click(screen.getByRole('button', { name: 'Save session' }));
+    expect(onSave).not.toHaveBeenCalled();
     fireEvent.change(note, { target: { value: 'Next time I will revisit the verbs.' } });
     fireEvent.click(screen.getByRole('button', { name: 'Save session' }));
     await screen.findByRole('alert');

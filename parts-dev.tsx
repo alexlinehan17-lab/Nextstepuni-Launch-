@@ -25,13 +25,13 @@ import './index.css';
 import { ChartNoAxesColumn, ChevronLeft, Compass, Ellipsis, House, Map, Search, Timer } from 'lucide-react';
 import IllustrationTheme from './components/IllustrationTheme';
 import { Arrow, Button, Glyph, IconButton, TextButton } from './components/ui/Button';
-import { ChoiceGroup, SelectionBar, Switch } from './components/ui/Choice';
+import { ChoiceGroup, SelectionBar, SelectionMark, Switch } from './components/ui/Choice';
 import { Menu } from './components/ui/Menu';
 import { Confirm, Sheet } from './components/ui/Sheet';
 import { MessageHost, showMessage } from './components/ui/Message';
 import { PinnedFooter, TabBar, TopBar } from './components/ui/Bars';
 import { Field, SearchField } from './components/ui/Field';
-import { List, PaperSheet, PressBox, Row } from './components/ui/List';
+import { CheckRow, List, PaperSheet, PressBox, Row } from './components/ui/List';
 import { EmptyState, ErrorState, LoadingShape } from './components/ui/States';
 
 const params = new URLSearchParams(window.location.search);
@@ -234,6 +234,7 @@ function OverSection() {
         </Line>
         <Line>
           <Button onClick={() => setOpen('bare')}>Bare sheet (the quick tour)</Button>
+          <Button onClick={() => setOpen('plain')}>Plain sheet (Finish for now)</Button>
           <Button onClick={() => setOpen('confirm')}>Confirm</Button>
           <Button onClick={() => showMessage('Saved to your plan', { action: { label: 'Undo', onPress: () => {} } })}>Toast</Button>
         </Line>
@@ -263,11 +264,20 @@ function OverSection() {
         <h3 className="t-heading text-ink-primary">Your lessons live here</h3>
         <p className="t-sub">A bare sheet carries its own words and its own way out: no handle, no header. On a laptop the same words sit in a popover (.ui-pop) beside what they point at.</p>
       </Sheet>
+      <Sheet open={open === 'plain'} plain title="Finish for now?" onClose={close}
+        footer={<><Button kind="main" size="lg" block arrow="forward" onClick={close}>End and keep 17 min</Button><Button size="lg" block onClick={close}>Keep studying</Button><TextButton tone="danger" onClick={close}>Discard without saving</TextButton></>}>
+        <p className="t-sub">A plain sheet: the handle and the title at the left, no Close; its own choices are the way out.</p>
+      </Sheet>
       <Confirm open={open === 'confirm'} sentence="Delete your account?"
         detail="Everything you have studied, planned and saved is erased and cannot be brought back."
         keepLabel="Keep my account" onKeep={close} dangerLabel="Delete account" onDanger={close} />
     </Section>
   );
+}
+
+function CheckRowDemo() {
+  const [done, setDone] = useState(false);
+  return <CheckRow checked={done} onChange={setDone} mark={<SelectionMark on={done} shape="square" />}>2024 Paper 1, Question 6</CheckRow>;
 }
 
 function BarsSection() {
@@ -283,6 +293,12 @@ function BarsSection() {
       </Spec>
       <Spec label="A Launchpad tool" caption="Its family as a small line over its name; its own drawing at the right, once.">
         <div className="border border-dashed border-outline-soft"><TopBar tool leave={{ kind: 'back', onPress: () => {} }} over="Start with you" title="Future Finder" art={FUTURE_FINDER} /></div>
+      </Spec>
+      <Spec label="A place that has become a task" caption="Study set-up once something is chosen: Cancel clears the choices and gives the place (and the tab bar, via useFrameTask) back.">
+        <div className="border border-dashed border-outline-soft"><TopBar leave={{ kind: 'cancel', onPress: () => {} }} placeLabel="The Study Room" /></div>
+      </Spec>
+      <Spec label="A row you tick" caption="CheckRow: the whole row is the checkbox, with the screen's own mark (Time's up: the session's dotted ring).">
+        <CheckRowDemo />
       </Spec>
       <Spec label="Something over the top" caption="Close, an X, top left. A hairline once content scrolls under it.">
         <div className="border border-dashed border-outline-soft"><TopBar ruled leave={{ kind: 'close', onPress: () => {} }} title="Practice" /></div>

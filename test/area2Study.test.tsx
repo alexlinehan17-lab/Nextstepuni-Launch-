@@ -14,6 +14,10 @@ import StudySessionSetup from '@/components/study/StudySessionSetup';
 import StudyBreak from '@/components/study/StudyBreak';
 import StudySessionTimer from '@/components/study/StudySessionTimer';
 import { TabBar } from '@/components/ui/Bars';
+import { CheckRow } from '@/components/ui/List';
+import { Sheet } from '@/components/ui/Sheet';
+import StudyTimeUp from '@/components/study/StudyTimeUp';
+import StrategyPickerStep from '@/components/study/StrategyPickerStep';
 import { House, Timer } from 'lucide-react';
 import type * as MotionModule from '@/components/Motion';
 
@@ -188,5 +192,45 @@ describe('the study room and the breathing guide', () => {
     } finally {
       delete (Element.prototype as { animate?: unknown }).animate;
     }
+  });
+});
+
+describe('after the session, and the parts it added', () => {
+  test('Time\'s up brings the to-dos back: the set ones fill, the student\'s own fills when tapped, nothing is saved', () => {
+    device.reduced = true;
+    const todos = [{ label: 'Mathematics', done: true }, { label: 'Work through questions', done: true }, { label: '2024 Paper 1, Question 6', done: false }];
+    render(<StudyTimeUp subject="Mathematics" elapsedSeconds={1500} extendedMinutes={0} extensionBonus={0} sessionPoints={20} onKeepGoing={vi.fn()} onFinish={vi.fn()} todos={todos} />);
+    const own = screen.getByRole('checkbox', { name: '2024 Paper 1, Question 6' });
+    expect(screen.getByRole('checkbox', { name: 'Mathematics' })).toHaveAttribute('aria-checked', 'true');
+    expect(own).toHaveAttribute('aria-checked', 'false');
+    expect(screen.getByText('2 / 3')).toBeInTheDocument();
+    fireEvent.click(own);
+    expect(own).toHaveAttribute('aria-checked', 'true');
+    expect(screen.getByText('3 / 3')).toBeInTheDocument();
+    expect(screen.getByLabelText('Session details')).toHaveTextContent('25 minutes');
+  });
+
+  test('what helped you focus: square ticks marked for assistive technology, and Continue says what it needs', () => {
+    const go = vi.fn();
+    render(<StrategyPickerStep learnedStrategyIds={[]} autoTrackedIds={[]} onContinue={go} subject="Mathematics" durationSeconds={1500} pointsEarned={20} />);
+    const recall = screen.getByRole('checkbox', { name: 'Active Recall' });
+    expect(recall).toHaveAttribute('aria-checked', 'false');
+    fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
+    expect(go).not.toHaveBeenCalled();
+    expect(screen.getByRole('button', { name: 'Select strategies to continue.' })).toBeInTheDocument();
+    fireEvent.click(recall);
+    expect(recall).toHaveAttribute('aria-checked', 'true');
+    fireEvent.click(screen.getByRole('button', { name: 'Continue with 1 strategy' }));
+    expect(go).toHaveBeenCalledWith(['mastering-active-recall-protocol']);
+  });
+
+  test('CheckRow is a checkbox row; a plain Sheet has its title and no Close', () => {
+    const change = vi.fn();
+    render(<><CheckRow checked={false} onChange={change} mark={<i />}>Tick me</CheckRow>
+      <Sheet open plain title="Finish for now?" onClose={vi.fn()}><p>Body</p></Sheet></>);
+    fireEvent.click(screen.getByRole('checkbox', { name: 'Tick me' }));
+    expect(change).toHaveBeenCalledWith(true);
+    const sheet = screen.getByRole('dialog', { name: 'Finish for now?' });
+    expect(within(sheet).queryByRole('button', { name: 'Close' })).not.toBeInTheDocument();
   });
 });
