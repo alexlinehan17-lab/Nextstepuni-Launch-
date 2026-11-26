@@ -75,7 +75,8 @@ const THE_SET: Record<string, [light: string, dark: string]> = {
   '--success-tint-ink': ['#1f5f3e', '#9fd9b6'],
   '--danger-tint': ['#fde4e4', '#3a2020'],
   '--danger-tint-ink': ['#8e2c2c', '#f0a9a9'],
-  '--lift-ctl': ['0 1px 2px rgba(23, 23, 23, 0.06)', 'none'],
+  // A box you press is a line only (26 Nov 2026); an empty shadow so shadow lists stay valid.
+  '--lift-ctl': ['0 0 #0000', '0 0 #0000'],
   '--lift': ['0 2px 3px rgba(0, 0, 0, 0.03), 0 13px 25px -9px rgba(0, 0, 0, 0.14)', 'none'],
   '--float': ['0 18px 40px -18px rgba(20, 20, 18, 0.34)', '0 18px 40px -18px rgba(0, 0, 0, 0.7)'],
 };
@@ -149,8 +150,9 @@ describe('dark mode tokens', () => {
   it('actually changes value in dark rather than repeating the light one', () => {
     const identical = [...dark.entries()]
       .filter(([k, v]) => light.has(k) && light.get(k)!.toLowerCase() === v.toLowerCase())
-      // A few are intentionally shared: the brand accent and the CTA ink stay put.
-      .filter(([k]) => !['--cta-invert-ink'].includes(k))
+      // A few are intentionally shared: the brand accent and the CTA ink stay put,
+      // and a box you press has no lift in either theme (a line only, 26 Nov 2026).
+      .filter(([k]) => !['--cta-invert-ink', '--lift-ctl'].includes(k))
       .map(([k]) => k);
     expect(identical, `same value in both themes: ${identical.join(', ')}`).toEqual([]);
   });

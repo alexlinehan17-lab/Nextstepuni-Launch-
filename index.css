@@ -32,7 +32,9 @@
   --action: #191919;
   --action-ink: #ffffff;
   /* The three lifts, and nothing else casts a shadow (tokens.md, "Shape"). */
-  --lift-ctl: 0 1px 2px rgba(23, 23, 23, 0.06);
+  /* A box you press is a line only (owner, 26 Nov 2026: "I prefer this one").
+     An empty shadow, not `none`: a shadow list that includes it stays valid. */
+  --lift-ctl: 0 0 #0000;
   --lift: 0 2px 3px rgba(0, 0, 0, 0.03), 0 13px 25px -9px rgba(0, 0, 0, 0.14);
   --float: 0 18px 40px -18px rgba(20, 20, 18, 0.34);
   /* Green: done and correct, never orange for done. */
@@ -225,7 +227,7 @@
   --outline-soft: #505050;
   --action: #f5f5f5;
   --action-ink: #181818;
-  --lift-ctl: none;
+  --lift-ctl: 0 0 #0000;
   --lift: none;
   --float: 0 18px 40px -18px rgba(0, 0, 0, 0.7);
   --success-hex: #56ad7c;
