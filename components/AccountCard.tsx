@@ -139,16 +139,17 @@ export default function AccountCard({
               )}
               <span>Sound {soundEnabled ? 'on' : 'off'}</span>
             </button>
-            <button
+            {/* For schools has one way back, beside Sign in, so no "Student sign-in" here (r5-sign-in). */}
+            {view !== 'gc' && <button
               type="button"
               className="auth-live-quiet auth-live-school-access"
               disabled={busy}
               onClick={onSchoolAccess}
             >
               <GraduationCap size={17} aria-hidden="true" />
-              {view === 'gc' ? 'Student sign-in' : 'For schools'}
+              For schools
               <ArrowUpRight size={15} aria-hidden="true" />
-            </button>
+            </button>}
           </div>
         </header>
         <div className="auth-live-layout">
