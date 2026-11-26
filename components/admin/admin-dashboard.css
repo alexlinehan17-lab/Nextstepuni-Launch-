@@ -44,9 +44,9 @@
 .admin-workspace select { cursor: pointer; }
 .admin-workspace ::selection { background: var(--admin-accent); color: var(--admin-action-ink); }
 .admin-skip-link {
-  position: fixed; top: 8px; left: 12px; z-index: 250;
+  position: fixed; top: calc(8px + var(--safe-top)); left: 12px; z-index: 250;
   padding: 12px 18px; background: var(--admin-action); color: var(--admin-action-ink);
-  transform: translateY(-180%); border-radius: 4px;
+  transform: translateY(calc(-180% - var(--safe-top))); border-radius: 4px;
 }
 .admin-skip-link:focus { transform: none; }
 .admin-masthead { position: sticky; top: 0; z-index: 40; background: var(--admin-bg); border-bottom: 1px solid var(--admin-rule); }

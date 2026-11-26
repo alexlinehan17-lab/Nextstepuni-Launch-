@@ -163,14 +163,14 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
 
       {createPortal(<AnimatePresence>
         {mode && (
-          <div className={`fixed inset-0 z-[220] flex items-end justify-center sm:items-center sm:p-5 ${mobileAppDesign ? '[&_button]:min-h-11 [&_button]:shrink-0' : ''}`} role="dialog" aria-modal="true" aria-labelledby="launchpad-guidance-title">
+          <div className={`frame-sheet-backdrop [--frame-gap:1.25rem] z-[220] flex items-end justify-center sm:items-center ${mobileAppDesign ? '[&_button]:min-h-11 [&_button]:shrink-0' : ''}`} role="dialog" aria-modal="true" aria-labelledby="launchpad-guidance-title">
             <div aria-hidden="true" onClick={close} className="absolute inset-0 bg-[#1A1A1A]/60" />
             <MotionDiv
               initial={{ opacity: 0, y: 24, scale: 0.99 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 18, scale: 0.99 }}
               transition={{ duration: 0.22 }}
-              className="relative flex max-h-[92dvh] w-full max-w-4xl flex-col overflow-hidden rounded-t-[24px] border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-canvas)] shadow-2xl sm:rounded-[24px]"
+              className="frame-sheet [--frame-card-max:92dvh] relative flex w-full max-w-4xl flex-col overflow-hidden rounded-t-[24px] border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-canvas)] shadow-2xl sm:rounded-[24px]"
             >
               <header className={`flex items-start justify-between gap-4 border-b border-[var(--outline-soft)] bg-[var(--surface-paper)] px-5 py-4 sm:px-7 ${mobileAppDesign ? 'shrink-0' : ''}`}>
                 <div>

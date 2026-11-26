@@ -71,7 +71,7 @@
 .ss-mastery-list > div { display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--ss-rule); padding: 13px 0; font-size: 12px; }
 .ss-mastery-list > div > span:last-child { color: var(--ss-muted); font-size: 11px; }
 .ss-timer-view { position: fixed; inset: 0; z-index: 100; overflow-y: auto; overscroll-behavior: contain; }
-.ss-timer-content { min-height: 100%; display: flex; flex-direction: column; max-width: 1000px; margin: 0 auto; padding: 22px 38px 28px; }
+.ss-timer-content { min-height: 100%; display: flex; flex-direction: column; max-width: 1000px; margin: 0 auto; padding: calc(22px + var(--safe-top)) 38px 28px; }
 .ss-timer-navigation { display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
 .ss-timer-navigation button { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid var(--ss-rule); border-radius: 7px; background: var(--ss-paper); color: var(--ss-ink); cursor: pointer; }
 .ss-timer-main { display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: center; min-height: 390px; padding: 38px 0; text-align: center; }
@@ -117,7 +117,7 @@
   .ss-summary-type { margin-bottom: 20px; }
   .ss-mastery { margin-top: 28px; }
   .ss-mastery-list { grid-template-columns: 1fr; }
-  .ss-timer-content { padding: 16px 22px calc(24px + env(safe-area-inset-bottom)); }
+  .ss-timer-content { padding: calc(16px + var(--safe-top)) 22px calc(24px + var(--safe-bottom)); }
   .ss-timer-main { min-height: 360px; padding: 30px 0; }
   .ss-timer-subject { font-size: 28px; }
   .ss-timer-digits { margin-top: 26px; }
@@ -128,6 +128,8 @@
 @media (prefers-reduced-motion: reduce) { .ss-mastery summary > svg { transition: none; } }
 .ss-timer-view .ss-exit-panel, .ss-completion-view .ss-completion-panel { border-width: 1px; border-color: #dedbd7; border-radius: 14px; box-shadow: none; }
 .ss-timer-view .ss-exit-panel { width: 100%; max-width: 384px; padding: 24px; border: 1px solid var(--ss-rule); background: var(--ss-paper); }
+/* As a phone sheet its end clears the home indicator (components/ui/frame.css). */
+@media (max-width: 639px) { .ss-timer-view .ss-exit-panel { padding-bottom: calc(24px + var(--safe-bottom)); } }
 .ss-exit-panel h2 { color: var(--ss-ink); }
 .ss-exit-panel > p { color: var(--ss-muted); }
 .ss-exit-panel button { min-height: 48px; padding: 10px 16px; border: 1px solid var(--ss-rule); border-radius: 7px; background: var(--ss-paper); color: var(--ss-ink); font-size: 14px; font-weight: 600; box-shadow: none; cursor: pointer; }
@@ -154,7 +156,7 @@
 .ss-appearance-choice button span {display:block;width:23px;height:23px;border:1.5px solid var(--ss-ink);border-radius:50%;background:var(--ss-paper);transition:transform .2s}
 .ss-appearance-choice button[aria-checked=true] {background:#ff862c}
 .ss-appearance-choice button[aria-checked=true] span {transform:translateX(23px)}
-.ss-timer-content.ss-room-ink,.ss-timer-content.ss-room-layers {position:relative;isolation:isolate;overflow:hidden;max-width:none;min-height:100dvh;padding:28px max(28px,calc((100vw - 1120px)/2)) 30px}
+.ss-timer-content.ss-room-ink,.ss-timer-content.ss-room-layers {position:relative;isolation:isolate;overflow:hidden;max-width:none;min-height:100dvh;padding:calc(28px + var(--safe-top)) max(28px,calc((100vw - 1120px)/2)) 30px}
 .ss-room-ink {--ss-paper:#252721;--ss-ink:#f6f0df;--ss-muted:#c8d0b8;--ss-rule:#e5ecd439;--ss-orange:#ff862c;background:var(--ss-paper);color:var(--ss-ink)}
 .ss-room-ink .ss-eyebrow {color:var(--ss-muted)}
 .ss-room-ink .ss-timer-subject {font-family:'DM Sans',sans-serif;font-size:19px;font-weight:400;letter-spacing:.025em}
@@ -183,7 +185,7 @@
 .ss-room-ink .ss-coaching {background:#2e3228;color:#f6f0df}
 .ss-room-ink .ss-coaching-actions button,.ss-room-layers .ss-coaching-actions button {border:1px solid currentColor;color:inherit;background:transparent}
 @keyframes ss-paper-drift {from{transform:translate3d(-7px,4px,0)}to{transform:translate3d(10px,-8px,0)}}
-@media(max-width:700px) {.ss-timer-content.ss-room-ink,.ss-timer-content.ss-room-layers{padding:20px 24px calc(28px + env(safe-area-inset-bottom))}.ss-room-ink .ss-timer-digits{font-size:clamp(90px,25vw,140px)}.ss-room-layers .ss-timer-digits{font-size:clamp(86px,23vw,125px)}.ss-colour-landscape i{width:235%;left:-90%;top:calc(48% + var(--band)*9% - var(--ss-session-progress)*.09)}.ss-colour-landscape i:nth-child(even){left:-40%}.ss-appearance-choice{gap:16px;padding-bottom:22px}.ss-appearance-choice label{font-size:15px}.ss-appearance-choice p{font-size:12px}}
+@media(max-width:700px) {.ss-timer-content.ss-room-ink,.ss-timer-content.ss-room-layers{padding:calc(20px + var(--safe-top)) 24px calc(28px + var(--safe-bottom))}.ss-room-ink .ss-timer-digits{font-size:clamp(90px,25vw,140px)}.ss-room-layers .ss-timer-digits{font-size:clamp(86px,23vw,125px)}.ss-colour-landscape i{width:235%;left:-90%;top:calc(48% + var(--band)*9% - var(--ss-session-progress)*.09)}.ss-colour-landscape i:nth-child(even){left:-40%}.ss-appearance-choice{gap:16px;padding-bottom:22px}.ss-appearance-choice label{font-size:15px}.ss-appearance-choice p{font-size:12px}}
 @media(prefers-reduced-motion:reduce) {.ss-colour-landscape,.ss-colour-landscape i,.ss-ink-edge i,.ss-appearance-choice button span{animation:none;transition:none}}
 .ss-room-ink .ss-coaching,.ss-room-layers .ss-coaching {padding:20px 23px;border:1px solid var(--ss-rule);border-radius:9px}
 .ss-room-coaching .ss-timer-main {min-height:320px;padding:24px 0}

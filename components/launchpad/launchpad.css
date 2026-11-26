@@ -1045,8 +1045,7 @@
 }
 /* Phones: the scheme sheet grows with its content up to nearly full height. */
 .pt-reveal-sheet {
-  max-height: calc(100vh - 44px);
-  max-height: calc(100dvh - 44px);
+  max-height: calc(100dvh - 44px - var(--safe-top));
 }
 .pt-reader-sidebar-heading {
   padding: 24px 20px;

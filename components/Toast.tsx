@@ -151,7 +151,7 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -60, opacity: 0 }}
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-            className="fixed left-1/2 top-3 z-[9999] flex w-[calc(100%-1.5rem)] max-w-lg -translate-x-1/2 items-center justify-center gap-2 rounded-xl border-[1.5px] border-[#383838] bg-[#FFF8E5] px-4 py-3 shadow-[3px_3px_0_0_#383838] dark:border-zinc-600 dark:bg-amber-950"
+            className="frame-float frame-float-top [--frame-float-gap:0.75rem] left-1/2 z-[var(--z-system)] flex w-[calc(100%-1.5rem)] max-w-lg -translate-x-1/2 items-center justify-center gap-2 rounded-xl border-[1.5px] border-[#383838] bg-[#FFF8E5] px-4 py-3 shadow-[3px_3px_0_0_#383838] dark:border-zinc-600 dark:bg-amber-950"
           >
             <WifiOff size={14} className="text-amber-500 dark:text-amber-400 shrink-0" />
             <span className="text-xs font-semibold text-amber-700 dark:text-amber-300">
@@ -162,7 +162,7 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       </AnimatePresence>
 
       {/* Toast stack */}
-      <div className="fixed bottom-[calc(1rem+var(--sab,0px))] left-1/2 z-[9998] flex w-[calc(100%-1.5rem)] max-w-md -translate-x-1/2 flex-col-reverse gap-3 pointer-events-none sm:bottom-6">
+      <div className="frame-float frame-float-bottom left-1/2 z-[var(--z-toast)] flex w-[calc(100%-1.5rem)] max-w-md -translate-x-1/2 flex-col-reverse gap-3 pointer-events-none sm:bottom-[calc(24px+var(--edge-bottom))]">
         <AnimatePresence>
           {toasts.map(toast => {
             const config = TOAST_CONFIG[toast.type];

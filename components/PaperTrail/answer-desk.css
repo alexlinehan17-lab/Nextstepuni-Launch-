@@ -10,6 +10,8 @@
   background: #fff;
   color: #222;
   min-height: 0;
+  /* The desk reaches the bottom of the glass: its end clears the home indicator. */
+  padding-bottom: var(--safe-bottom);
 }
 .dark .ad-pane {
   background: #141414;
@@ -413,9 +415,9 @@
     min-height: min(160px, 45%);
   }
   .ad-pane[data-collapsed] {
-    flex-basis: 63px;
-    max-height: 63px;
-    min-height: 63px;
+    flex-basis: calc(63px + var(--safe-bottom));
+    max-height: calc(63px + var(--safe-bottom));
+    min-height: calc(63px + var(--safe-bottom));
     overflow: hidden;
   }
   .ad-header {

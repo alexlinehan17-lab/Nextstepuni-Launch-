@@ -564,7 +564,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
         </header>
 
         <main
-          className="px-4 pt-24"
+          className="frame-page [--frame-pad-top:6rem] px-4"
           style={{ paddingBottom: 'calc(104px + var(--sab, 0px))' }}
         >
           <div className="mx-auto max-w-xl">

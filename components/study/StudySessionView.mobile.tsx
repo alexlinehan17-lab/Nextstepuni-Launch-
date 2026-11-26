@@ -593,7 +593,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         <AnimatePresence>
           {confirmQuit && (
             <MotionDiv
-              className="fixed inset-0 z-[200] flex items-end sm:items-center justify-center bg-[#1A1A1A]/55 p-0 sm:p-4"
+              className="frame-sheet-backdrop [--frame-gap:1rem] z-[var(--z-dialog)] flex items-end sm:items-center justify-center bg-[#1A1A1A]/55"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}

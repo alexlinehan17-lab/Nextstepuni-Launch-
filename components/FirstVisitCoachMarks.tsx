@@ -14,6 +14,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import { useReducedMotion } from './Motion';
 import { useModal } from '../hooks/useModal';
+import { readSafeArea } from './ui/Frame';
 
 const STEPS: { target: string; title: string; body: string }[] = [
   {
@@ -144,7 +145,8 @@ const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) =
 
   // Caption placement: under the target when there's room, else above it.
   const below = rect ? rect.bottom + 12 : 0;
-  const captionTop = rect ? (below + 170 < window.innerHeight ? below : Math.max(12, rect.top - 182)) : 0;
+  const safe = readSafeArea();
+  const captionTop = rect ? (below + 170 < window.innerHeight - safe.bottom ? below : Math.max(12 + safe.top, rect.top - 182)) : 0;
   const captionLeft = rect ? Math.min(Math.max(12, rect.left), Math.max(12, window.innerWidth - 332)) : 0;
 
   return (

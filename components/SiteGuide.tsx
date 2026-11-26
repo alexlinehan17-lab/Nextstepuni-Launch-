@@ -207,9 +207,9 @@ const SiteGuide: React.FC<Props> = ({ open, onClose, onGo }) => {
   }, [open, idx, goTo]);
   if (!open) return null;
   const card = CARDS[idx];
-  return <div className="site-guide">
+  return <div className="site-guide frame-dialog">
     <div className="guide-backdrop" onClick={onClose} aria-hidden="true" />
-    <div ref={dialog} role="dialog" aria-modal="true" aria-label="Site guide" className="guide-dialog">
+    <div ref={dialog} role="dialog" aria-modal="true" aria-label="Site guide" className="guide-dialog frame-dialog-card">
       <header className="guide-header">
         <span>A guide to your app</span>
         <button onClick={onClose} aria-label="Close the guide" className="guide-close"><X size={22} aria-hidden="true" /></button>

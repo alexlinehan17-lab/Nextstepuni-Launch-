@@ -26,7 +26,7 @@ export default function JourneyWelcome({ hasSeenWelcome, onDismissWelcome }: {
     </button>
     {createPortal(<AnimatePresence>
       {open && <motion.div
-        className="journey-welcome-overlay" data-lenis-prevent
+        className="journey-welcome-overlay frame-dialog" data-lenis-prevent
         initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
         transition={{ duration: reduceMotion ? 0 : 0.18 }}
         onClick={event => { if (event.target === event.currentTarget) close(); }}
@@ -34,12 +34,12 @@ export default function JourneyWelcome({ hasSeenWelcome, onDismissWelcome }: {
         <motion.div
           ref={dialogRef} role="dialog" aria-modal="true" tabIndex={-1}
           aria-labelledby="journey-welcome-title" aria-describedby="journey-welcome-description"
-          className="journey-welcome"
+          className="journey-welcome frame-dialog-card"
           initial={{ opacity: 0, y: reduceMotion ? 0 : 18, scale: reduceMotion ? 1 : 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0 }}
           transition={{ duration: reduceMotion ? 0 : 0.3, ease: [0.16, 1, 0.3, 1] }}
         >
-          <header className="journey-welcome-header">
+          <header className="journey-welcome-header frame-dialog-head">
             <span className="journey-welcome-brand">nextstepuni</span>
             <button type="button" aria-label="Close Journey introduction" onClick={close}><X size={20} /></button>
           </header>

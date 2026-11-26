@@ -708,20 +708,18 @@
   white-space: nowrap;
 }
 .auth-live-overlay {
-  position: fixed;
-  inset: 0;
+  /* frame-dialog (components/ui/frame.css): padding is this gap plus the insets. */
+  --frame-gap: 20px;
   z-index: 240;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #0007;
-  padding: 20px;
 }
 .auth-live-dialog {
   position: relative;
   width: 100%;
   max-width: 510px;
-  max-height: calc(100dvh - 40px);
   overflow: auto;
   border: 1px solid var(--al-line);
   border-radius: 22px;
@@ -1049,7 +1047,7 @@
 .auth-live[data-view=register] .auth-live-actions{margin-top:30px}
 
 /* The popup shares the approved featured-character layout with registration. */
-.auth-live-dialog{width:min(480px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow-y:auto;overscroll-behavior:contain}
+.auth-live-dialog{width:min(480px,calc(100vw - 32px));--frame-gap:16px;overflow-y:auto;overscroll-behavior:contain}
 .auth-live-dialog .account-crew-feature{margin-top:20px}
 .auth-live-picker-actions{display:flex;justify-content:space-between;align-items:center;gap:15px;border-top:1px solid var(--al-line);padding-top:20px;margin-top:26px}
 .auth-live-picker-actions .auth-live-quiet{font-size:12px;min-height:44px}

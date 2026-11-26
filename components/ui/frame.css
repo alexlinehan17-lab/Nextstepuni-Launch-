@@ -1,0 +1,253 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * The frame owns the edges of the glass.
+ *
+ * Nothing in a screen's own code may touch the edge of the screen. The status
+ * bar / Dynamic Island, the rounded corners and the home indicator belong to
+ * the frame, and the frame is this file: the numbers, a small set of layout
+ * primitives with the inset maths built in, one stacking order, and the touch
+ * layer. A screen, bar, dialog, sheet or floating control is built from these,
+ * so it is clear of the island and the home indicator by construction.
+ * (Design audit 24 Nov 2026, section D6; 29 live faults came from screens that
+ * each had to remember the inset.)
+ *
+ * The rules:
+ * - Always `inset + margin`, never `max(margin, inset)`, for anything tappable:
+ *   max() leaves zero clearance on exactly the phones that need it.
+ * - Backgrounds run edge to edge; content and controls stay inside.
+ * - One mechanism: env() via the four variables in index.html. No class-keyed
+ *   patches (the old native-ios.css missed the Home-Screen web app).
+ * - The guard test/frameEdges.guard.test.ts fails when a new `fixed`,
+ *   `inset-0`, `100vh`, `h-screen`, `env(safe-area-` or raw --sat/--sab/--sal/
+ *   --sar read appears outside this file and Frame.tsx.
+ *
+ * Precedence: this file is imported at the top of index.css, BEFORE Tailwind,
+ * so a utility class on the same element overrides a primitive. When you put a
+ * primitive on an element, remove the utilities it replaces (p-4, z-[200],
+ * fixed, inset-0). A component's own spacing goes in the --frame-* variables
+ * below, never in a utility that fights the primitive.
+ */
+
+/* ── 1. The numbers ─────────────────────────────────────────────────────── */
+
+/* Own spacing passed to a primitive. Not inherited, so a parent's value never
+   leaks into a nested primitive. */
+@property --frame-pad-top { syntax: '<length-percentage>'; inherits: false; initial-value: 0px; }
+@property --frame-pad-bottom { syntax: '<length-percentage>'; inherits: false; initial-value: 0px; }
+
+:root {
+  /* The safe box of the glass. The source is the four env() variables in
+     index.html (--sat, --sar, --sab, --sal); read them only through these. */
+  --safe-top: var(--sat, 0px);
+  --safe-right: var(--sar, 0px);
+  --safe-bottom: var(--sab, 0px);
+  --safe-left: var(--sal, 0px);
+  /* Height of the safe box: the most a dialog or sheet may be. */
+  --safe-h: calc(100dvh - var(--safe-top) - var(--safe-bottom));
+
+  /* The phone tab bar's row, set by the shell while the bar is mounted
+     (useFrameTabBar in Frame.tsx sets html[data-tabbar]). 0 everywhere else. */
+  --tabbar-h: 0px;
+
+  /* The edges a page's content and floating layers live between. */
+  --edge-top: var(--safe-top);
+  --edge-bottom: calc(var(--safe-bottom) + var(--tabbar-h));
+
+  /* Minimum hit area for a control in a bar or a dialog header. */
+  --frame-hit: 44px;
+
+  /* One stacking order, lowest to highest. Use these, not new numbers. */
+  --z-sticky: 40;      /* sticky headers inside a page */
+  --z-bar: 60;         /* fixed top bars (Launchpad host bar) */
+  --z-tabbar: 90;      /* the phone tab bar */
+  --z-takeover: 100;   /* full-screen takeovers: study room, paper viewer */
+  --z-float: 145;      /* floating layers: mini timer, achievement toast */
+  --z-dialog: 200;     /* dialogs, sheets and their backdrops */
+  --z-celebration: 300;/* celebrations and year-change takeovers */
+  --z-toast: 9998;     /* the toast stack */
+  --z-system: 9999;    /* offline notice */
+}
+@media (max-width: 767px) {
+  html[data-tabbar] { --tabbar-h: 64px; }
+}
+
+/* ── 2. Bars and pages ──────────────────────────────────────────────────── */
+
+/* A top bar (fixed, sticky or in flow) pads itself by the top inset, so its
+   background still runs up under the status bar and its row starts below it.
+   Its own top padding goes in --frame-pad-top. Controls inside get a 44px hit
+   area (section 6). */
+.frame-bar { padding-top: calc(var(--frame-pad-top, 0px) + var(--safe-top)); }
+
+/* A page with no bar of its own: same maths, the page's own top padding in
+   --frame-pad-top. */
+.frame-page { padding-top: calc(var(--frame-pad-top, 0px) + var(--safe-top)); }
+
+/* The bottom of anything that reaches the bottom of the glass: a pinned
+   footer, a tab bar, the end of a sheet. Its own bottom padding goes in
+   --frame-pad-bottom. */
+.frame-foot { padding-bottom: calc(var(--frame-pad-bottom, 0px) + var(--safe-bottom)); }
+
+/* ── 3. Full-screen takeovers ───────────────────────────────────────────── */
+
+/* Paints edge to edge, under the status bar and the home indicator. Put the
+   z-index on it from the scale (z-[var(--z-takeover)] or similar). */
+.frame-takeover { position: fixed; inset: 0; }
+
+/* The safe box inside a takeover: the positioning context for controls pinned
+   to its corners. A control placed "16px from the top right" inside it is 16px
+   below the island by construction. It does not take taps itself. */
+.frame-safe-box {
+  position: absolute;
+  inset: var(--safe-top) var(--safe-right) var(--safe-bottom) var(--safe-left);
+  pointer-events: none;
+}
+.frame-safe-box > * { pointer-events: auto; }
+
+/* ── 4. Dialogs ─────────────────────────────────────────────────────────── */
+
+/* The backdrop. Its padding is the inset plus a margin on every side
+   (--frame-gap, default 16px), and the card's maximum height is what is left,
+   so a card can never reach the island or the home indicator. Alignment,
+   colour and z-index stay with the component. */
+.frame-dialog {
+  position: fixed;
+  inset: 0;
+  padding:
+    calc(var(--frame-gap, 16px) + var(--safe-top))
+    calc(var(--frame-gap, 16px) + var(--safe-right))
+    calc(var(--frame-gap, 16px) + var(--safe-bottom))
+    calc(var(--frame-gap, 16px) + var(--safe-left));
+  overscroll-behavior: contain;
+}
+/* The card. A component that caps its card lower (92dvh) passes the cap in
+   --frame-card-max; the frame takes whichever is smaller. */
+.frame-dialog-card {
+  max-height: min(var(--frame-card-max, 100dvh), calc(var(--safe-h) - 2 * var(--frame-gap, 16px)));
+}
+/* A native <dialog> opened with showModal(): the browser centres it between
+   its insets, so the insets become the safe box. */
+.frame-dialog-native {
+  inset: var(--safe-top) var(--safe-right) var(--safe-bottom) var(--safe-left);
+  max-height: min(var(--frame-card-max, 100dvh), calc(var(--safe-h) - 2 * var(--frame-gap, 16px)));
+}
+/* Every Kobra dialog: the theme caps it at the whole screen minus 32px
+   (compiled from vendor sources, so it is corrected here, the way Settings
+   always did): subtract both insets and re-centre between them. A dialog
+   expanded to full screen (data-expanded) pads its own first row instead. */
+.nsu-kobra :is([data-slot=dialog-content], [data-slot=alert-dialog-content]):not(.frame-free, [data-expanded=true]) {
+  max-height: calc(var(--safe-h) - 32px);
+  margin-top: calc((var(--safe-top) - var(--safe-bottom)) / 2);
+}
+
+/* ── 5. Bottom sheets ───────────────────────────────────────────────────── */
+
+/* Below 640px a sheet rises from the bottom edge: the backdrop keeps its top
+   clear of the island and the sheet pads its end by the home indicator, with
+   its own bottom padding in --frame-pad-bottom. From 640px it is a centred
+   dialog with the dialog maths (section 4). */
+.frame-sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  overscroll-behavior: contain;
+}
+@media (max-width: 639px) {
+  .frame-sheet {
+    max-height: min(var(--frame-card-max, 100dvh), calc(100dvh - var(--safe-top) - var(--frame-gap, 16px)));
+    padding-bottom: calc(var(--frame-pad-bottom, 0px) + var(--safe-bottom));
+  }
+}
+@media (min-width: 640px) {
+  .frame-sheet-backdrop {
+    padding:
+      calc(var(--frame-gap, 16px) + var(--safe-top))
+      calc(var(--frame-gap, 16px) + var(--safe-right))
+      calc(var(--frame-gap, 16px) + var(--safe-bottom))
+      calc(var(--frame-gap, 16px) + var(--safe-left));
+  }
+  .frame-sheet {
+    max-height: min(var(--frame-card-max, 100dvh), calc(var(--safe-h) - 2 * var(--frame-gap, 16px)));
+    padding-bottom: var(--frame-pad-bottom, 0px);
+  }
+}
+
+/* ── 6. Floating layers: toasts, the mini timer, banners ────────────────── */
+
+/* Placed from the derived edges, so a floating layer is never under the
+   island, on the tab bar or in the home indicator. --frame-float-gap is the
+   distance from the edge (default 16px). Put the z-index on it from the scale. */
+.frame-float { position: fixed; }
+.frame-float-top { top: calc(var(--frame-float-gap, 16px) + var(--edge-top)); }
+.frame-float-bottom { bottom: calc(var(--frame-float-gap, 16px) + var(--edge-bottom)); }
+.frame-float-left { left: calc(var(--frame-float-gap, 16px) + var(--safe-left)); }
+.frame-float-right { right: calc(var(--frame-float-gap, 16px) + var(--safe-right)); }
+
+/* ── 7. Touch targets in bars and dialog headers ────────────────────────── */
+
+/* At least 44 x 44 to the finger without changing what is drawn: an invisible
+   layer centred on the control. Applied to every control inside a .frame-bar
+   or .frame-dialog-head, to the shared Kobra dialog's close, and to anything
+   given .frame-hit. The bar and dialog selectors have zero specificity, so a
+   control's own positioning still wins. */
+:where(.frame-bar, .frame-dialog-head) :where(button, a[href], [role=button]),
+:where(.nsu-kobra [data-slot=dialog-close]),
+.frame-hit { position: relative; }
+:where(.frame-bar, .frame-dialog-head) :where(button, a[href], [role=button])::after,
+:where(.nsu-kobra [data-slot=dialog-close])::after,
+.frame-hit::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: max(100%, var(--frame-hit));
+  height: max(100%, var(--frame-hit));
+  transform: translate(-50%, -50%);
+}
+
+/* ── 8. The touch layer, once, for the whole app ────────────────────────── */
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+/* No double-tap-to-zoom delay on anything a student taps. Zero specificity:
+   a drag handle that sets its own touch-action keeps it. */
+:where(button, a[href], summary, label, select, input, textarea,
+  [role=button], [role=tab], [role=switch], [role=menuitem], [role=option], [role=checkbox], [role=radio]) {
+  touch-action: manipulation;
+}
+/* iPhone zooms the page when a field under 16px takes focus. On touch screens
+   every text field is at least 16px. Fields drawn larger keep their size: the
+   Tailwind sizes by class, and the few stylesheets that size a field above
+   16px are listed in the second :not() (add yours there). */
+@media (pointer: coarse) {
+  :is(input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=submit], [type=reset], [type=file], [type=color], [type=image], [type=hidden]), textarea, select):not([class*='text-lg'], [class*='text-xl'], [class*='text-2xl'], [class*='text-3xl'], [class*='text-4xl'], [class*='text-5xl'], [class*='text-6xl']):not(.ls-ans, .wi-draft, .fxe-field, .fxf-field, .setup-grade-pickers select) {
+    font-size: max(16px, 1em);
+  }
+}
+/* Hover looks only on devices that can hover: Tailwind's hover: variants via
+   future.hoverOnlyWhenSupported (tailwind.config.ts), hand-written :hover rules
+   via design/postcss-hover-only.js (postcss.config.js). */
+/* So nothing a person needs may depend on hover. A control a laptop shows only
+   while its row is hovered (a row's delete, a flag) takes .frame-reveal, with
+   .group on the row: it is always there on touch, and on a laptop it shows on
+   hover or when the keyboard is inside the row. No opacity utilities beside it. */
+@media (hover: hover) and (pointer: fine) {
+  .group:not(:hover, :focus-within) .frame-reveal { opacity: 0; }
+}
+
+/* ── 9. The page does not scroll behind an open sheet or dialog ─────────── */
+
+/* One home for the scroll lock. Code that opens an overlay calls
+   lockBodyScroll() (utils/bodyScrollLock.ts; useModal does it for you), which
+   marks <body>; a mounted dialog or sheet primitive locks by being there. The
+   page then neither scrolls nor rubber-bands behind it, whoever else writes
+   overflow (the Kobra dialog does). */
+body[data-scroll-lock] { overflow: hidden; }
+html:has(body[data-scroll-lock], body .frame-dialog, body .frame-sheet-backdrop) {
+  overflow: hidden;
+  overscroll-behavior: none;
+}

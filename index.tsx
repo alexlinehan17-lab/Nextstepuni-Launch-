@@ -9,7 +9,6 @@ import ReactDOM from 'react-dom/client';
 import { Capacitor } from '@capacitor/core';
 import { StatusBar, Style } from '@capacitor/status-bar';
 import './index.css';
-import './native-ios.css';
 import { MotionConfig } from 'framer-motion';
 import App from './App';
 import IllustrationTheme from './components/IllustrationTheme';

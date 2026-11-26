@@ -23,7 +23,7 @@ export const CelebrationFrame: React.FC<CelebrationFrameProps> = ({
   <AnimatePresence>
     {isOpen && (
       <MotionDiv
-        className="fixed inset-0 z-[300] flex items-end justify-center bg-[#1A1A1A]/55 p-0 sm:items-center sm:p-6"
+        className="frame-sheet-backdrop [--frame-gap:1.5rem] z-[var(--z-celebration)] flex items-end justify-center bg-[#1A1A1A]/55 sm:items-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -38,8 +38,8 @@ export const CelebrationFrame: React.FC<CelebrationFrameProps> = ({
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 18, scale: 0.99 }}
           transition={{ type: 'spring', stiffness: 260, damping: 27, mass: 0.9 }}
-          className={`relative w-full overflow-hidden rounded-t-[26px] border-[1.5px] border-[#383838] bg-white shadow-[6px_6px_0_0_#383838] dark:border-zinc-600 dark:bg-zinc-900 sm:rounded-[26px] ${
-            scale === 'small' ? 'max-w-sm p-6' : scale === 'medium' ? 'max-w-lg p-7 sm:p-9' : 'max-w-2xl p-7 sm:p-10'
+          className={`frame-sheet relative w-full overflow-hidden rounded-t-[26px] border-[1.5px] border-[#383838] bg-white shadow-[6px_6px_0_0_#383838] dark:border-zinc-600 dark:bg-zinc-900 sm:rounded-[26px] ${
+            scale === 'small' ? 'max-w-sm px-6 pt-6 [--frame-pad-bottom:1.5rem]' : scale === 'medium' ? 'max-w-lg px-7 pt-7 [--frame-pad-bottom:1.75rem] sm:p-9' : 'max-w-2xl px-7 pt-7 [--frame-pad-bottom:1.75rem] sm:p-10'
           }`}
         >
           <div className="pointer-events-none absolute inset-x-0 top-0 h-1.5 bg-[#F26B1F]" />

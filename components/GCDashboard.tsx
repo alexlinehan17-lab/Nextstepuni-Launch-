@@ -466,7 +466,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
     <div className="min-h-screen bg-white dark:bg-zinc-950 relative overflow-x-hidden">
       {/* ─── Sidebar (exact student dashboard replica) ───────────────────── */}
       <aside
-        className={`hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r border-zinc-200 dark:border-zinc-800 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
+        className={`frame-page frame-foot hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r border-zinc-200 dark:border-zinc-800 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
       >
         {/* Avatar row — click to toggle */}
         <button
@@ -530,7 +530,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       </aside>
 
       {/* ─── Mobile Header ───────────────────────────────────────────── */}
-      <div className="md:hidden flex items-center justify-between px-4 py-3 border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
+      <div className="frame-bar [--frame-pad-top:0.75rem] md:hidden flex items-center justify-between px-4 pb-3 border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-lg overflow-hidden bg-zinc-200 dark:bg-zinc-700">
             <Avatar seed={avatarSeed} alt="Avatar" className="w-full h-full object-cover" />
@@ -623,7 +623,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="fixed top-0 right-0 z-50 h-screen w-full max-w-2xl bg-white dark:bg-zinc-900 shadow-2xl overflow-y-auto border-l border-zinc-200 dark:border-zinc-800"
+              className="frame-foot fixed top-0 right-0 z-50 h-[100dvh] w-full max-w-2xl bg-white dark:bg-zinc-900 shadow-2xl overflow-y-auto border-l border-zinc-200 dark:border-zinc-800"
             >
               {/* Keyed by uid so switching students remounts the tray. Without
                   it React reuses the instance and the previous student's local

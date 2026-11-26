@@ -100,20 +100,22 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="theme-compat fixed inset-0 z-[300] overflow-y-auto"
+          className="theme-compat frame-takeover z-[var(--z-celebration)] overflow-y-auto"
           style={{ backgroundColor: CREAM }}
         >
-          {/* Close button — top-right, neutral outline */}
+          {/* Close button — top-right of the safe box (components/ui/frame.css), neutral outline */}
+          <div className="frame-safe-box">
           <button
             onClick={onClose}
             aria-label="Close"
-            className="absolute top-6 right-6 w-9 h-9 rounded-full flex items-center justify-center transition-colors hover:bg-black/[0.04]"
+            className="frame-hit absolute top-6 right-6 w-9 h-9 rounded-full flex items-center justify-center transition-colors hover:bg-black/[0.04]"
             style={{ border: '1px solid rgba(0,0,0,0.15)', color: 'rgba(0,0,0,0.6)' }}
           >
             <X size={16} strokeWidth={2} />
           </button>
+          </div>
 
-          <div className="min-h-screen flex flex-col items-center px-6 pt-8 pb-12">
+          <div className="frame-page frame-foot [--frame-pad-top:2rem] [--frame-pad-bottom:3rem] min-h-screen flex flex-col items-center px-6">
             {/* ── Editorial two-column hero ── */}
             <MotionDiv
               initial={{ opacity: 0, y: 16 }}

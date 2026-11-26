@@ -244,13 +244,13 @@ export default function AccountCard({
       </section>
       {devButton && <div className="auth-live-footer">{devButton}</div>}
       {pickerOpen && (
-        <div className="auth-live-overlay" onClick={event => { if (event.target === event.currentTarget) setPickerOpen(false); }}>
+        <div className="auth-live-overlay frame-dialog" onClick={event => { if (event.target === event.currentTarget) setPickerOpen(false); }}>
           <div
             ref={picker}
             role="dialog"
             aria-modal="true"
             aria-labelledby="auth-crew-title"
-            className="auth-live-dialog"
+            className="auth-live-dialog frame-dialog-card"
           >
             <button
               type="button"

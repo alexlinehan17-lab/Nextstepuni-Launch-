@@ -1322,7 +1322,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[200] flex items-center justify-center bg-black/55 backdrop-blur-sm p-4"
+      className="frame-dialog [--frame-gap:1rem] z-[var(--z-dialog)] flex items-center justify-center bg-black/55 backdrop-blur-sm"
       onClick={onClose}
     >
       <MotionDiv
@@ -1330,7 +1330,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.96, y: 12 }}
         transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] as number[] }}
-        className="bg-white dark:bg-zinc-900 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-xl w-full max-h-[90vh] flex flex-col overflow-hidden"
+        className="bg-white dark:bg-zinc-900 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-xl w-full frame-dialog-card [--frame-card-max:90vh] flex flex-col overflow-hidden"
         onClick={(e: React.MouseEvent) => e.stopPropagation()}
       >
         {/* Header (fixed) */}

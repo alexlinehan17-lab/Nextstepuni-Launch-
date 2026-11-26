@@ -231,7 +231,7 @@ const FigureViewer: React.FC<{
   const size = fit ? { width: Math.round(fit.w * zoom), height: Math.round(fit.h * zoom) } : undefined;
 
   return createPortal(
-    <div className="mark-bank-theme mb-figzoom-overlay">
+    <div className="mark-bank-theme mb-figzoom-overlay frame-dialog">
       <div ref={dialogRef} className="mb-figzoom-dialog" role="dialog" aria-modal="true" aria-label={`${kicker}, enlarged`}>
         <header className="mb-figzoom-header">
           <div className="mb-figzoom-heading">

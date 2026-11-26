@@ -65,7 +65,7 @@
   outline: 2px solid var(--nsu-focus-edge, #383833); outline-offset: 2px;
 }
 .mb-maths-solution-dialog {
-  width: min(1000px, calc(100vw - 24px)); max-width: none; max-height: calc(100dvh - 24px);
+  width: min(1000px, calc(100vw - 24px)); max-width: none; --frame-gap: 12px; /* max-height: frame-dialog-native */
   padding: 0; border: 1.5px solid #383838; border-radius: 12px; background: white; color: #1a1a1a;
 }
 .mb-maths-solution-dialog::backdrop { background: rgb(26 26 26 / 65%); }

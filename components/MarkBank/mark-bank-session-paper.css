@@ -13,6 +13,16 @@
 @media(min-width:1300px){.mb-live-session-dialog[data-expanded=true] .mb-session-workspace{padding-inline:max(40px,calc((100vw - 1320px)/2))!important;gap:48px!important}.mb-live-session-dialog[data-expanded=true] .mb-paper-session-heading{padding-inline:max(40px,calc((100vw - 1320px)/2))}.mb-live-session-dialog[data-expanded=true] .mb-session-rail{padding-inline:max(24px,calc((100vw - 1350px)/2))}}
 @media(max-width:700px){.nsu-kobra .mb-live-session-dialog{max-width:calc(100vw - 16px);height:94dvh;max-height:94dvh;border-radius:16px}.mb-paper-session-heading{padding:22px 20px 18px;gap:14px;flex-wrap:wrap}.mb-paper-session-heading [data-slot=dialog-title]{font-size:28px}.mb-paper-session-heading>div:last-child{margin-left:auto}.mb-paper-session .mb-session-workspace{padding:24px 20px!important;grid-template-columns:1fr;gap:24px!important}.mb-paper-session .mb-scheme-pane{padding-left:0;border-left:0;border-top:1px solid var(--border);padding-top:24px}.mb-paper-draft textarea{height:160px}}
 
+/* Expanded to full screen, the dialog reaches the top and bottom of the glass:
+   its first row pads by the top inset, its last by the bottom inset (frame
+   variables, components/ui/frame.css). */
+.mb-live-session-dialog[data-expanded=true] .mb-paper-session-heading{padding-top:calc(28px + var(--safe-top))}
+.mb-live-session-dialog[data-expanded=true] .sq-session-banner{padding-top:calc(12px + var(--safe-top))}
+.mb-live-session-dialog[data-expanded=true] .sq-session-banner~.mb-paper-session-heading{padding-top:28px}
+.mb-live-session-dialog[data-expanded=true] .sq-question-actions{padding-bottom:calc(16px + var(--safe-bottom))}
+.mb-live-session-dialog[data-expanded=true] .sq-summary-footer{padding-bottom:calc(18px + var(--safe-bottom))}
+@media(max-width:700px){.mb-live-session-dialog[data-expanded=true] .mb-paper-session-heading{padding-top:calc(22px + var(--safe-top))}.mb-live-session-dialog[data-expanded=true] .sq-session-banner{padding-top:calc(10px + var(--safe-top))}.mb-live-session-dialog[data-expanded=true] .sq-session-banner~.mb-paper-session-heading{padding-top:22px}.mb-live-session-dialog[data-expanded=true] :is(.sq-question-actions,.sq-summary-footer){padding-bottom:calc(14px + var(--safe-bottom))}}
+
 .mb-applied-scheme { color: var(--mb-ink); font: 400 13px/1.55 'DM Sans', sans-serif; }
 .mb-applied-scheme .mb-source-material-trigger { width: 100%; margin: 16px 0; padding: 12px; border: 1.5px solid var(--mb-ink); border-radius: 10px; }
 .mb-applied-scheme > p { margin: 12px 0; }

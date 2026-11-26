@@ -23,7 +23,7 @@ const MathematicsWorkedSolution: React.FC<{ figure: CardFigure }> = ({ figure })
         <img src={src} alt={figure.alt} />
         <figcaption>{figure.attribution}</figcaption>
       </figure>
-      <dialog ref={dialog} className="mb-maths-solution-dialog" aria-label="Worked solution and credit notes"
+      <dialog ref={dialog} className="mb-maths-solution-dialog frame-dialog-native" aria-label="Worked solution and credit notes"
         onClose={() => trigger.current?.focus()}>
         <div className="mb-maths-solution-toolbar">
           <strong>Worked solution</strong>

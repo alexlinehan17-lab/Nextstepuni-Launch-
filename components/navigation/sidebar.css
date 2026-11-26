@@ -90,7 +90,7 @@
 .nsu-kobra-nav .nsu-nav-submenu { width:192px; }
 .nsu-nav-shortcut { margin-left:auto; display:flex; gap:3px; opacity:.7; }
 .nsu-post-sidebar > .nsu-post-toggle { display:none; }
-.student-sidebar-shell > .nsu-post-sidebar .nsu-post-panel { position:fixed; left:calc(var(--navigation-width) + 12px); right:auto; bottom:18px; top:auto; width:min(360px,calc(100vw - var(--navigation-width) - 32px)); z-index:120; }
+.student-sidebar-shell > .nsu-post-sidebar .nsu-post-panel { position:fixed; left:calc(var(--navigation-width) + 12px); right:auto; bottom:calc(18px + var(--safe-bottom)); top:auto; width:min(360px,calc(100vw - var(--navigation-width) - 32px)); z-index:120; }
 [data-slot=sidebar][data-state=collapsed] .nsu-nav-wordmark { flex:0; width:0; opacity:0; filter:blur(3px); pointer-events:none; }
 [data-slot=sidebar][data-state=collapsed] .nsu-nav-brand-row { justify-content:center; }
 [data-slot=sidebar][data-state=collapsed] .nsu-nav-account-copy, [data-slot=sidebar][data-state=collapsed] .nsu-nav-account-chevron { display:none; }

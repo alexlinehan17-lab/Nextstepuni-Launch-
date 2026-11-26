@@ -43,7 +43,7 @@ const OfflineBanner: React.FC = () => {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -40, opacity: 0 }}
           transition={{ duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
-          className="fixed top-0 left-0 right-0 z-[200] flex items-center justify-center gap-2 py-2 px-4 text-xs font-medium"
+          className="frame-bar [--frame-pad-top:0.5rem] fixed top-0 left-0 right-0 z-[200] flex items-center justify-center gap-2 pb-2 px-4 text-xs font-medium"
           style={{
             // COLORS.success (#3A8D5F) carries white at only 4.07:1, and the
             // offline amber at 2.84:1. Darkening the green clears it with white;
