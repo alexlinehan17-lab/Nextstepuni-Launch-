@@ -176,6 +176,20 @@
      on the redrawn onboarding: "I prefer the orange in the old one ... old orange
      is better". It is this surface's own value, not --nsu-orange. */
   --surface-onboarding: #f26b1f;
+  /* What sits on that orange, the same in both themes: ink words, ink rules,
+     and white boxes keeping the light greys (r5-onboarding, agreed 26 Nov 2026). */
+  --onboarding-ink: #171717;
+  --onboarding-rule: rgba(23, 23, 23, 0.22);
+  --onboarding-paper: #ffffff;
+  --onboarding-soft: #f5f5f5;
+  --onboarding-ink-2: #575757;
+  --onboarding-ink-3: #6b6b6b;
+  --onboarding-hairline: #e5e5e5;
+  --onboarding-line: #d6d6d6;
+  --onboarding-edge: #383838;
+  --onboarding-action: #191919;
+  --onboarding-action-ink: #ffffff;
+  --onboarding-action-press: #343434;
 }
 
 /* The named type styles (tokens.md, "Type"): one typeface, sentence case.

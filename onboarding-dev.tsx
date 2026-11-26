@@ -11,16 +11,20 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import Onboarding from './components/Onboarding';
+import IllustrationTheme from './components/IllustrationTheme';
 import './index.css';
 
 const root = document.getElementById('root');
 if (root) {
   createRoot(root).render(
+    <>
+    <IllustrationTheme />
     <Onboarding
       userId="dev-preview"
       userName="Aoife Byrne"
       onComplete={async profile => { console.log('[onboarding-dev] complete', profile); }}
       onSkip={() => console.log('[onboarding-dev] skipped')}
-    />,
+    />
+    </>,
   );
 }

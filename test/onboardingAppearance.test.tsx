@@ -49,7 +49,7 @@ describe.each([['desktop', DesktopSetup], ['mobile', SetupFlow]] as const)('%s o
     render(<Harness />);
     expect(screen.getByRole('radio', { name: 'Dark' })).toBeChecked();
     expect(screen.getByRole('radio', { name: 'Light' })).not.toBeChecked();
-    fireEvent.click(screen.getByRole('button', { name: 'Start Learning' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Start learning' }));
     await screen.findByRole('button', { name: 'Switch appearance' });
     expect(document.documentElement).toHaveClass('dark');
     expect(JSON.parse(localStorage.getItem(`nextstep-settings:${uid}`)!).darkMode).toBe(true);
@@ -71,7 +71,7 @@ describe.each([['desktop', DesktopSetup], ['mobile', SetupFlow]] as const)('%s o
     view.unmount();
     render(<Harness />);
     expect(screen.getByRole('radio', { name: 'Light' })).toBeChecked();
-    fireEvent.click(screen.getByRole('button', { name: 'Start Learning' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Start learning' }));
     await screen.findByRole('button', { name: 'Switch appearance' });
     expect(document.documentElement).not.toHaveClass('dark');
     expect(JSON.parse(localStorage.getItem(`nextstep-settings:${uid}`)!).darkMode).toBe(false);
@@ -81,7 +81,7 @@ describe.each([['desktop', DesktopSetup], ['mobile', SetupFlow]] as const)('%s o
   it('leaves the welcome screen and existing preference alone', async () => {
     localStorage.setItem(`nextstep-settings:${uid}`, JSON.stringify({ darkMode: false }));
     render(<Harness />);
-    expect(screen.getByRole('button', { name: 'Get Started' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Get started' })).toBeInTheDocument();
     expect(screen.queryByRole('group', { name: 'Choose your view.' })).not.toBeInTheDocument();
     await waitFor(() => expect(mocks.getDoc).toHaveBeenCalled());
     expect(mocks.setDoc).not.toHaveBeenCalled();

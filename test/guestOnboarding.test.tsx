@@ -180,7 +180,7 @@ describe('guest onboarding (no account)', () => {
     expect(readGuestPhase()).toBe('onboarding');
 
     // The first step works, and the draft lands in the guest namespace, not an account's localStorage.
-    fireEvent.click(screen.getByRole('button', { name: /Get Started/ }));
+    fireEvent.click(screen.getByRole('button', { name: /Get started/ }));
     expect(await screen.findByText('Where are you now?')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /6th/ }));
     await waitFor(() => expect(JSON.parse(guestStorage.getItem(GUEST_DESKTOP_DRAFT_KEY) ?? '{}')).toMatchObject({ version: 2, step: 'year', year: '6th' }));
@@ -198,7 +198,7 @@ describe('guest onboarding (no account)', () => {
 
     expect(await screen.findByText('You’re ready.')).toBeInTheDocument();
     const dive = screen.getByRole('button', { name: /Dive in/ });
-    expect(screen.queryByRole('button', { name: /Start Learning/i })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Start learning/i })).not.toBeInTheDocument();
 
     fireEvent.click(dive);
     expect(await screen.findByRole('heading', { level: 1, name: /You’re set up/ })).toBeInTheDocument();
@@ -265,7 +265,7 @@ describe('guest onboarding (no account)', () => {
     renderRouter();
     expect(await screen.findByText('Make your mark.')).toBeInTheDocument();
     expect(screen.queryByText(/Dive in/)).not.toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: /Get Started/ }));
+    fireEvent.click(screen.getByRole('button', { name: /Get started/ }));
     await waitFor(() => expect(localStorage.getItem('nextstepuni:onboarding-draft:v2:student-1:fresh')).not.toBeNull());
     expect(guestStorage.getItem('nextstepuni:onboarding-draft:v2:student-1:fresh')).toBeNull();
   });

@@ -94,7 +94,7 @@ describe.each([true, false])('LCA onboarding, mobile=%s', mobile => {
     mount({ ...saved, step: 'summary' }, complete);
     expect(screen.getByRole('button', { name: `Edit ${maths} grades` })).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: 'Edit French grades' })).not.toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: 'Start Learning' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Start learning' }));
     await waitFor(() => expect(complete).toHaveBeenCalled());
     expect(complete.mock.calls[0][0].subjects[1]).toEqual({ subjectName: maths, level: 'ordinary', currentGrade: 'O4', targetGrade: 'O2' });
   });

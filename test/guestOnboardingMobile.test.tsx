@@ -48,7 +48,7 @@ describe('mobile onboarding in guest mode', () => {
 
     expect(screen.getByRole('heading', { level: 1, name: 'You’re ready.' })).toBeInTheDocument();
     const dive = screen.getByRole('button', { name: 'Dive in' });
-    expect(screen.queryByRole('button', { name: 'Start Learning' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Start learning' })).not.toBeInTheDocument();
 
     fireEvent.click(dive);
     await waitFor(() => expect(complete).toHaveBeenCalledTimes(1));
@@ -61,19 +61,19 @@ describe('mobile onboarding in guest mode', () => {
 
   it('keeps the guest draft in the tab-scoped guest namespace, never in localStorage', () => {
     render(<Onboarding guest userId={GUEST_USER_ID} userName={GUEST_USER_NAME} onComplete={vi.fn()} onSkip={vi.fn()} />);
-    fireEvent.click(screen.getByRole('button', { name: 'Get Started' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Get started' }));
     expect(JSON.parse(guestStorage.getItem(key) ?? '{}')).toMatchObject({ version: 2, step: 'year' });
     expect(sessionStorage.getItem(`nsu:guest-setup:${key}`)).not.toBeNull();
     expect(localStorage.getItem(key)).toBeNull();
     expect(localStorage.length).toBe(0);
   });
 
-  it('a signed-in student\'s flow is untouched: "Start Learning", greeting by name, localStorage draft', () => {
+  it('a signed-in student\'s flow is untouched: "Start learning", greeting by name, localStorage draft', () => {
     endGuestSetup({ keepDraft: false });
     localStorage.setItem(draftKey('student-2', 'fresh'), JSON.stringify(reviewDraft()));
     render(<Onboarding userId="student-2" userName="Alex Murphy" onComplete={vi.fn()} onSkip={vi.fn()} />);
     expect(screen.getByRole('heading', { level: 1, name: 'You’re ready, Alex.' })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Start Learning' })).toBeEnabled();
+    expect(screen.getByRole('button', { name: 'Start learning' })).toBeEnabled();
     expect(screen.queryByRole('button', { name: 'Dive in' })).not.toBeInTheDocument();
     expect(sessionStorage.getItem(`nsu:guest-setup:${draftKey('student-2', 'fresh')}`)).toBeNull();
   });

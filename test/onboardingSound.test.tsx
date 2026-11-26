@@ -49,7 +49,7 @@ describe('onboarding interface sound', () => {
   it.each([false, true])('plays one cue per keyboard action in the %s mobile flow', async mobile => {
     audio.mobile = mobile;
     const view = mount();
-    await keyboardClick(screen.getByRole('button', { name: 'Get Started' }));
+    await keyboardClick(screen.getByRole('button', { name: 'Get started' }));
     expect(audio.play).toHaveBeenCalledTimes(1);
     expect(audio.play).toHaveBeenCalledWith('tap', expect.anything());
     view.unmount();
@@ -64,7 +64,7 @@ describe('onboarding interface sound', () => {
   it('honours the saved mute preference and shares changes through the existing setting', async () => {
     localStorage.setItem('kobra-sound-muted', '1');
     mount();
-    await keyboardClick(screen.getByRole('button', { name: 'Get Started' }));
+    await keyboardClick(screen.getByRole('button', { name: 'Get started' }));
     expect(audio.play).not.toHaveBeenCalled();
     await userEvent.click(screen.getByRole('button', { name: 'Turn interface sound on' }));
     expect(localStorage.getItem('kobra-sound-muted')).toBe('0');
@@ -74,7 +74,7 @@ describe('onboarding interface sound', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Turn interface sound off' }));
     expect(localStorage.getItem('kobra-sound-muted')).toBe('1');
     audio.play.mockClear();
-    await keyboardClick(screen.getByRole('button', { name: 'Get Started' }));
+    await keyboardClick(screen.getByRole('button', { name: 'Get started' }));
     expect(audio.play).not.toHaveBeenCalled();
   });
 
@@ -92,14 +92,14 @@ describe('onboarding interface sound', () => {
 
   it('ignores synthetic pointer activation so keyboard and Motion do not duplicate cues', () => {
     mount();
-    fireEvent.pointerDown(screen.getByRole('button', { name: 'Get Started' }), { button: 0 });
+    fireEvent.pointerDown(screen.getByRole('button', { name: 'Get started' }), { button: 0 });
     expect(audio.play).not.toHaveBeenCalled();
   });
 
   it('keeps setup available when the browser has no audio support', () => {
     vi.stubGlobal('AudioContext', undefined);
     mount();
-    expect(screen.getByRole('button', { name: 'Get Started' })).toBeEnabled();
+    expect(screen.getByRole('button', { name: 'Get started' })).toBeEnabled();
     expect(screen.queryByRole('button', { name: 'Turn interface sound off' })).not.toBeInTheDocument();
   });
 });

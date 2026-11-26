@@ -107,7 +107,7 @@ describe("live desktop onboarding", () => {
       },
     };
     mount(draft, complete);
-    fireEvent.click(screen.getByRole("button", { name: "Start Learning" }));
+    fireEvent.click(screen.getByRole("button", { name: "Start learning" }));
     await waitFor(() =>
       expect(screen.getByText(/couldn’t save your setup/)).toBeInTheDocument(),
     );
