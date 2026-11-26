@@ -240,6 +240,7 @@ function OverSection() {
         <Line>
           <Button onClick={() => setOpen('bare')}>Bare sheet (the quick tour)</Button>
           <Button onClick={() => setOpen('plain')}>Plain sheet (Finish for now)</Button>
+          <Button onClick={() => setOpen('card')}>Sheet with its own headline (a tile's card)</Button>
           <Button onClick={() => setOpen('confirm')}>Confirm</Button>
           <Button onClick={() => showMessage('Saved to your plan', { action: { label: 'Undo', onPress: () => {} } })}>Toast</Button>
         </Line>
@@ -273,6 +274,12 @@ function OverSection() {
         footer={<><Button kind="main" size="lg" block arrow="forward" onClick={close}>End and keep 17 min</Button><Button size="lg" block onClick={close}>Keep studying</Button><TextButton tone="danger" onClick={close}>Discard without saving</TextButton></>}>
         <p className="t-sub">A plain sheet: the handle and the title at the left, no Close; its own choices are the way out.</p>
       </Sheet>
+      <Sheet open={open === 'card'} hideTitle title="The branch library" onClose={close}
+        footer={<Button kind="main" size="lg" block arrow="forward" onClick={close}>Build another · 180 JP</Button>}>
+        <p className="t-label text-ink-muted">Part of your world</p>
+        <h3 className="t-title text-ink-primary">The branch library</h3>
+        <p className="t-sub">hideTitle: the body opens with its own headline, so the head shows only Close; the title stays the sheet's name for screen readers.</p>
+      </Sheet>
       <Confirm open={open === 'confirm'} sentence="Delete your account?"
         detail="Everything you have studied, planned and saved is erased and cannot be brought back."
         keepLabel="Keep my account" onKeep={close} dangerLabel="Delete account" onDanger={close} />
@@ -287,6 +294,7 @@ function CheckRowDemo() {
 
 function BarsSection() {
   const [need, setNeed] = useState(true);
+  const [island, setIsland] = useState('island');
   const answerRef = useRef<HTMLDivElement>(null);
   return (
     <Section id="part-bars" title="Bars">
@@ -301,6 +309,11 @@ function BarsSection() {
       </Spec>
       <Spec label="A place that has become a task" caption="Study set-up once something is chosen: Cancel clears the choices and gives the place (and the tab bar, via useFrameTask) back.">
         <div className="border border-dashed border-outline-soft"><TopBar leave={{ kind: 'cancel', onPress: () => {} }} placeLabel="The Study Room" /></div>
+      </Spec>
+      <Spec label="A place's bar on a laptop, with a control in the middle" caption="The island: one quiet action at the left end (lead), the selection bar midway between the bar's ends (center), the points at the right. Balanced neighbours make it read as centred.">
+        <div className="border border-dashed border-outline-soft"><TopBar lead={<TextButton tone="quiet">How it works</TextButton>}
+          center={<SelectionBar label="Journey sections" value={island} onChange={setIsland} options={[{ value: 'island', label: 'Island' }, { value: 'build', label: 'Build' }, { value: 'fieldbook', label: 'Fieldbook' }, { value: 'year', label: 'Your year' }]} />}
+          action={<Button size="sm"><span className="ui-readout">5,065 JP</span></Button>} /></div>
       </Spec>
       <Spec label="A row you tick" caption="CheckRow: the whole row is the checkbox, with the screen's own mark (Time's up: the session's dotted ring).">
         <CheckRowDemo />
