@@ -265,7 +265,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   // ─── Tray Header (sticky, compact) ──────────────────────────────────
 
   const renderTrayHeader = () => (
-    <div className="sticky top-0 z-10 bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800 px-6 py-4">
+    <div className="frame-bar [--frame-pad-top:1rem] sticky top-0 z-10 bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800 px-6 pb-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3 min-w-0">
           <Avatar
@@ -317,6 +317,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
         </div>
         <button
           onClick={onBack}
+          aria-label="Close student details"
           className="w-9 h-9 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors shrink-0"
         >
           <X size={18} className="text-zinc-500 dark:text-zinc-300" />
