@@ -1,5 +1,5 @@
 /* Desktop concept only. The shipped mobile and desktop styles are unchanged. */
-.desk-flow{top:0;--setup-orange:var(--nsu-orange)}
+.desk-flow{top:0;--setup-orange:var(--surface-onboarding)}
 .desk-flow .setup-shell{max-width:1320px;padding:30px 48px 20px}
 .desk-flow .setup-brand{font-size:25px;font-weight:800;margin-bottom:24px;letter-spacing:-1.1px}
 .desk-flow .desk-header-note{font-size:12px;font-weight:500;letter-spacing:0;margin-left:auto;margin-right:70px}

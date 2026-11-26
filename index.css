@@ -167,10 +167,15 @@
 
 /* Named surfaces: the deliberate exceptions to the four (tokens.md, "Surfaces").
    Each is one screen's own material, the same in both themes, never the ladder.
-   Onboarding's milestones use --nsu-orange through --setup-orange; the island's
-   map keeps its own paper (journey/paper/paper.css); the study receipt is paper. */
+   Onboarding's orange milestone pages keep their own orange (--surface-onboarding,
+   through --setup-orange and --setup-bg); the island's map keeps its own paper
+   (journey/paper/paper.css); the study receipt is paper. */
 :root {
   --surface-room: #252721; /* the study room: the dark olive "ink" timer room and the mini timer */
+  /* Onboarding's orange pages: today's orange, kept on purpose. Alex, 26 Nov 2026,
+     on the redrawn onboarding: "I prefer the orange in the old one ... old orange
+     is better". It is this surface's own value, not --nsu-orange. */
+  --surface-onboarding: #f26b1f;
 }
 
 /* The named type styles (tokens.md, "Type"): one typeface, sentence case.
