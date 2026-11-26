@@ -117,9 +117,6 @@
   "components/CutContentPage.tsx": {
    "button": 3
   },
-  "components/DashboardView.tsx": {
-   "button": 3
-  },
   "components/DefinitionDrill/DefinitionDrill.tsx": {
    "button": 5
   },
@@ -630,18 +627,8 @@
    "button": 2,
    "dropdown": 2
   },
-  "components/dashboard/TermReviewCard.tsx": {
-   "button": 1
-  },
   "components/dashboard/progress/ProgressMilestones.tsx": {
-   "button": 2,
-   "pop-up": 1
-  },
-  "components/dashboard/progress/ProgressRefinements.tsx": {
-   "button": 2
-  },
-  "components/dashboard/progress/ProgressSummary.tsx": {
-   "button": 3
+   "button": 1
   },
   "components/gc/GCAssignPanel.tsx": {
    "button": 2,
@@ -674,9 +661,6 @@
   "components/immersiveDeck/HybridCard.tsx": {
    "button": 4
   },
-  "components/journey/BuildDrawer.tsx": {
-   "button": 1
-  },
   "components/journey/GiftButton.tsx": {
    "button": 3
   },
@@ -688,13 +672,6 @@
   },
   "components/journey/JourneyProgressPill.tsx": {
    "button": 1
-  },
-  "components/journey/JourneyView.tsx": {
-   "button": 18
-  },
-  "components/journey/JourneyWelcome.tsx": {
-   "button": 3,
-   "pop-up": 2
   },
   "components/journey/KudosButton.tsx": {
    "button": 3
@@ -709,7 +686,7 @@
    "button": 1
   },
   "components/journey/paper/MapControls.tsx": {
-   "button": 17,
+   "button": 12,
    "pop-up": 1
   },
   "components/journey/visitors/VisitorPanel.tsx": {
@@ -833,9 +810,6 @@
   "components/topics/TopicDetailCard.tsx": {
    "button": 3,
    "dropdown": 1
-  },
-  "components/topics/TopicHistoryPanel.tsx": {
-   "dropdown": 2
   },
   "components/war-room/CoveragePanel.tsx": {
    "button": 9

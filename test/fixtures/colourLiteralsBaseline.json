@@ -563,17 +563,8 @@
    "hex": 8,
    "rgb(": 1
   },
-  "components/dashboard/progress/ProgressRefinements.tsx": {
-   "hex": 5
-  },
-  "components/dashboard/progress/progress.css": {
-   "hex": 7
-  },
   "components/dashboard/progress/progressData.ts": {
    "hex": 7
-  },
-  "components/dashboard/progress/refinements.css": {
-   "hex": 2
   },
   "components/feedback-listening-room.css": {
    "hex": 18
@@ -671,10 +662,6 @@
   },
   "components/journey/hex/Water.tsx": {
    "hex": 1
-  },
-  "components/journey/journey-welcome.css": {
-   "hex": 28,
-   "rgb(": 1
   },
   "components/journey/journey-workspace.css": {
    "hex": 29

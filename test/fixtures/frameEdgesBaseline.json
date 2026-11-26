@@ -37,10 +37,6 @@
    "h-screen": 1,
    "var(--sa*)": 1
   },
-  "components/DashboardView.tsx": {
-   "h-screen": 1,
-   "var(--sa*)": 1
-  },
   "components/DiveIn.tsx": {
    "fixed": 1,
    "inset-0": 1
