@@ -79,16 +79,16 @@
    background still runs up under the status bar and its row starts below it.
    Its own top padding goes in --frame-pad-top. Controls inside get a 44px hit
    area (section 6). */
-.frame-bar { padding-top: calc(var(--frame-pad-top) + var(--safe-top)); }
+.frame-bar { padding-top: calc(var(--frame-pad-top, 0px) + var(--safe-top)); }
 
 /* A page with no bar of its own: same maths, the page's own top padding in
    --frame-pad-top. */
-.frame-page { padding-top: calc(var(--frame-pad-top) + var(--safe-top)); }
+.frame-page { padding-top: calc(var(--frame-pad-top, 0px) + var(--safe-top)); }
 
 /* The bottom of anything that reaches the bottom of the glass: a pinned
    footer, a tab bar, the end of a sheet. Its own bottom padding goes in
    --frame-pad-bottom. */
-.frame-foot { padding-bottom: calc(var(--frame-pad-bottom) + var(--safe-bottom)); }
+.frame-foot { padding-bottom: calc(var(--frame-pad-bottom, 0px) + var(--safe-bottom)); }
 
 /* ── 3. Full-screen takeovers ───────────────────────────────────────────── */
 
@@ -156,7 +156,7 @@
 @media (max-width: 639px) {
   .frame-sheet {
     max-height: min(var(--frame-card-max, 100dvh), calc(100dvh - var(--safe-top) - var(--frame-gap, 16px)));
-    padding-bottom: calc(var(--frame-pad-bottom) + var(--safe-bottom));
+    padding-bottom: calc(var(--frame-pad-bottom, 0px) + var(--safe-bottom));
   }
 }
 @media (min-width: 640px) {
@@ -169,7 +169,7 @@
   }
   .frame-sheet {
     max-height: min(var(--frame-card-max, 100dvh), calc(var(--safe-h) - 2 * var(--frame-gap, 16px)));
-    padding-bottom: var(--frame-pad-bottom);
+    padding-bottom: var(--frame-pad-bottom, 0px);
   }
 }
 
