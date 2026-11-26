@@ -1,4 +1,5 @@
 @import "./design/quiet-focus.css";
+@import "./components/ui/frame.css";
 
 @tailwind base;
 @tailwind components;
