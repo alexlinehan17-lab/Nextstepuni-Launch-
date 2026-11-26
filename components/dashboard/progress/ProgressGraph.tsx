@@ -105,8 +105,8 @@ export function ProgressGraph({ buckets, metric, height = 168, average = false, 
     return Math.max(0, Math.min(last, Math.round((at - L) / (R - L) * (slots - 1))));
   };
   const onPointer = (event: ReactPointerEvent<SVGSVGElement>) => {
+    // A finger presses and slides; on a laptop the pointer reads it as it passes (hover adds, never gates).
     if (event.type === 'pointerdown') { try { event.currentTarget.setPointerCapture(event.pointerId); } catch { /* the slide still follows */ } }
-    else if (!event.buttons && event.pointerType === 'mouse') return;
     const slot = slotAt(event.clientX);
     if (slot !== null) setPick(slot);
   };
