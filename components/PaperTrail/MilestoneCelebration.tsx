@@ -13,6 +13,7 @@ import React, { useEffect, useRef } from 'react';
 import { Share2, Check } from 'lucide-react';
 import { MotionDiv, useReducedMotion } from '../Motion';
 import { downloadMilestoneCard, type Milestone } from './milestones';
+import { FramePortal } from '../ui/Frame';
 
 const CONFETTI = ['#F26B1F', '#3A8D5F', '#33658A', '#B54D14', '#8C3A0E'];
 
@@ -66,8 +67,10 @@ const MilestoneCelebration: React.FC<Props> = ({ milestone, dateIso, onClose }) 
     return () => cancelAnimationFrame(raf);
   }, [reduceMotion, milestone.id]);
 
+  // Portalled to <body> so the Launchpad bar and the tab bar cannot sit on top of it.
   return (
-    <div className="fixed inset-0 z-[200] flex items-center justify-center px-6" role="dialog" aria-modal="true" aria-label={`Milestone: ${milestone.title}`}>
+    <FramePortal>
+    <div className="frame-dialog [--frame-gap:1.5rem] z-[var(--z-dialog)] flex items-center justify-center" role="dialog" aria-modal="true" aria-label={`Milestone: ${milestone.title}`}>
       <div className="absolute inset-0 bg-black/40" onClick={onClose} />
       <canvas ref={canvasRef} className="pointer-events-none absolute inset-0 w-full h-full" aria-hidden />
       <MotionDiv
@@ -100,6 +103,7 @@ const MilestoneCelebration: React.FC<Props> = ({ milestone, dateIso, onClose }) 
         </div>
       </MotionDiv>
     </div>
+    </FramePortal>
   );
 };
 

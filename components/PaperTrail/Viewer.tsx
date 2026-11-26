@@ -1770,7 +1770,7 @@ const Viewer: React.FC<ViewerProps> = ({
               style={{ paddingBottom: 'var(--sab, 0px)' }}
               className={
                 isWide
-                  ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
+                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
                   : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
               }
             >
@@ -1816,7 +1816,7 @@ const Viewer: React.FC<ViewerProps> = ({
               style={{ paddingBottom: 'var(--sab, 0px)' }}
               className={
                 isWide
-                  ? 'fixed top-0 right-0 z-[111] h-full w-[min(720px,calc(100vw-48px))] flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
+                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-[min(720px,calc(100vw-48px))] flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
                   : 'pt-reveal-sheet fixed bottom-0 inset-x-0 z-[111] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
               }
             >
@@ -1938,8 +1938,8 @@ const Viewer: React.FC<ViewerProps> = ({
         };
         const receipt = composeReceipt(receiptStats);
         return (
-          <div className="fixed inset-0 z-[120] flex items-center justify-center bg-black/40 px-4" role="dialog" aria-modal="true" aria-label="Full loop summary">
-            <div className="w-full max-w-sm rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-5 py-5 text-center">
+          <div className="frame-dialog [--frame-gap:1rem] z-[120] flex items-center justify-center bg-black/40" role="dialog" aria-modal="true" aria-label="Full loop summary">
+            <div className="frame-dialog-card overflow-y-auto w-full max-w-sm rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-5 py-5 text-center">
               <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400 mb-1">The full loop · done</p>
               <p className="text-[34px] font-bold leading-none mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: avg >= 66 ? '#3A8D5F' : '#F26B1F' }}>
                 {marks.length ? `${avg}%` : '—'}
@@ -2034,7 +2034,7 @@ const Viewer: React.FC<ViewerProps> = ({
               style={{ paddingBottom: 'var(--sab, 0px)' }}
               className={
                 isWide
-                  ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
+                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
                   : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
               }
             >
@@ -2069,7 +2069,7 @@ const Viewer: React.FC<ViewerProps> = ({
               style={{ paddingBottom: 'var(--sab, 0px)' }}
               className={
                 isWide
-                  ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
+                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
                   : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
               }
             >
@@ -2104,7 +2104,7 @@ const Viewer: React.FC<ViewerProps> = ({
               style={{ paddingBottom: 'var(--sab, 0px)' }}
               className={
                 isWide
-                  ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
+                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
                   : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
               }
             >
@@ -2134,7 +2134,7 @@ const Viewer: React.FC<ViewerProps> = ({
               aria-modal="true"
               aria-label="Triage — plan your attack"
               style={{ paddingBottom: 'var(--sab, 0px)' }}
-              className={isWide ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800' : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'}
+              className={isWide ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800' : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'}
             >
               <TriageContent
                 wide={isWide}
@@ -2175,7 +2175,7 @@ const Viewer: React.FC<ViewerProps> = ({
               aria-modal="true"
               aria-label={`Examiner insights for ${examinerInsights.subjectLabel}`}
               style={{ paddingBottom: 'var(--sab, 0px)' }}
-              className={isWide ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800' : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'}
+              className={isWide ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800' : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'}
             >
               <ExaminerContent wide={isWide} data={examinerInsights} onClose={() => setExaminerOpen(false)} />
             </MotionDiv>
