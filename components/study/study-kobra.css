@@ -7,7 +7,7 @@
 .ks-shell {
   max-width: 1190px;
   margin: auto;
-  padding: 25px 32px 70px;
+  padding: calc(25px + var(--safe-top)) 32px 70px;
 }
 .ks-navigation {
   display: flex;
@@ -507,7 +507,7 @@
 }
 @media (max-width: 800px) {
   .ks-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
-  .ks-shell { padding: 16px 20px calc(100px + env(safe-area-inset-bottom)); }
+  .ks-shell { padding: calc(16px + var(--safe-top)) 20px calc(100px + var(--safe-bottom)); }
   .ks-sidebar { position: static; }
   .ks-masthead { padding-block: 22px; margin-bottom: 24px; }
   .ks-masthead h1 { font-size: 39px; }
