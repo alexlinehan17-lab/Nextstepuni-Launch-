@@ -1,7 +1,8 @@
 /* Minimised study timer: the ink study room in miniature (2026-10-14). */
 .study-mini {
   --mini-paper: #252721; --mini-ink: #f6f0df; --mini-muted: #c8d0b8; --mini-rule: #e5ecd439; --mini-orange: #ff862c;
-  position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 145;
+  /* frame-float (components/ui/frame.css): placed from the derived bottom edge, which clears the tab bar. */
+  right: 16px; bottom: calc(16px + var(--edge-bottom)); z-index: var(--z-float);
   display: flex; align-items: stretch; gap: 6px;
   max-width: calc(100vw - 32px); padding: 6px; overflow: hidden;
   border: 1px solid #00000040; border-radius: 10px;
@@ -41,7 +42,10 @@
 @media (prefers-reduced-motion: reduce) { .study-mini { animation: none; } .study-mini-progress { transition: none; } }
 /* Phones: above the bottom tab bar. */
 @media (max-width: 767px) {
-  .study-mini { right: 12px; bottom: calc(76px + var(--sab, 0px)); max-width: calc(100vw - 24px); }
+  .study-mini { right: 12px; bottom: calc(12px + var(--edge-bottom)); max-width: calc(100vw - 24px); }
+  /* The island's dock and zoom controls hold the bottom: dock at the top of the map instead,
+     under the island's own bar and its "Your year" card. */
+  .study-mini[data-view='my-journey'] { top: calc(130px + var(--edge-top)); bottom: auto; }
   .study-mini-label strong { max-width: 110px; }
 }
 /* The island keeps its zoom controls bottom-right and its tools bottom-centre:

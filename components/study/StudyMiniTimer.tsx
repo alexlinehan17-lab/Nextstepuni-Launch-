@@ -27,7 +27,7 @@ export default function StudyMiniTimer({ onOpen, view }: { onOpen: () => void; v
   const spoken = done ? status : `${formatTime(shown)} ${session.openEnded ? 'studied' : 'remaining'}${paused ? ', paused' : ''}`;
 
   return createPortal(
-    <aside className="study-mini" data-state={done ? 'done' : paused ? 'paused' : 'running'} data-view={view} aria-label="Study timer">
+    <aside className="study-mini frame-float" data-state={done ? 'done' : paused ? 'paused' : 'running'} data-view={view} aria-label="Study timer">
       <button type="button" className="study-mini-open" onClick={onOpen} aria-label={`Open the study timer: ${session.subject}, ${spoken}`}>
         <i className="study-mini-dot" aria-hidden="true" />
         <span className="study-mini-label"><strong>{session.subject}</strong><small>{status}</small></span>

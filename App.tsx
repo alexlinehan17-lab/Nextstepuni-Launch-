@@ -64,6 +64,7 @@ import { StudySessionProvider } from './contexts/StudySessionContext';
 import StudyMiniTimer from './components/study/StudyMiniTimer';
 import { onNotificationOpen } from './services/notifications';
 import './services/studyTimerDemo'; // inert unless a DEBUG native build asks (simulator checks)
+import { useFrameTabBar } from './components/ui/Frame';
 
 /* ── Mobile Bottom Navigation Bar ── */
 interface MobileBottomNavProps {
@@ -77,6 +78,7 @@ interface MobileBottomNavProps {
 
 const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, onGoToProgress, onGoToStudy, onGoToJourney, onGoToInnovationZone }) => {
   const mobileAppDesign = useMobileAppDesign();
+  useFrameTabBar();
   const tabs = [
     { id: 'tree', label: 'Home', icon: Home, action: onGoHome },
     { id: 'dashboard', label: 'Progress', icon: ChartNoAxesCombined, action: onGoToProgress },
@@ -91,8 +93,7 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
   return createPortal(
     <nav
       aria-label={mobileAppDesign ? 'Main navigation' : undefined}
-      className="editorial-bottom-nav fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-white dark:bg-zinc-900 border-t-[1.5px] border-[#383838] dark:border-zinc-700"
-      style={{ paddingBottom: 'var(--sab, 0px)' }}
+      className="editorial-bottom-nav frame-foot fixed bottom-0 left-0 right-0 z-[var(--z-tabbar)] md:hidden bg-white dark:bg-zinc-900 border-t-[1.5px] border-[#383838] dark:border-zinc-700"
     >
       <div className="mx-auto flex h-16 max-w-md items-center justify-around px-1">
         {tabs.map((tab) => {
@@ -937,7 +938,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-white dark:bg-zinc-950">
       {/* Achievements remain available while account controls live in the sidebar. */}
       {user && userProgressReady && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
-        <div className="fixed top-4 left-4 md:top-auto md:left-auto md:bottom-6 md:right-6 z-[150] pointer-events-none">
+        <div className="frame-float frame-float-top frame-float-left md:top-auto md:left-auto md:bottom-[calc(24px+var(--edge-bottom))] md:right-[calc(24px+var(--safe-right))] z-[150] pointer-events-none">
           <div className="pointer-events-auto">
             <AchievementToast
               achievement={currentToast}
