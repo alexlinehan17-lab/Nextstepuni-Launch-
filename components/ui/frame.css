@@ -19,6 +19,9 @@
  * - Backgrounds run edge to edge; content and controls stay inside.
  * - One mechanism: env() via the four variables in index.html. No class-keyed
  *   patches (the old native-ios.css missed the Home-Screen web app).
+ * - The guard test/frameEdges.guard.test.ts fails when a new `fixed`,
+ *   `inset-0`, `100vh`, `h-screen`, `env(safe-area-` or raw --sat/--sab/--sal/
+ *   --sar read appears outside this file and Frame.tsx.
  *
  * Precedence: this file is imported at the top of index.css, BEFORE Tailwind,
  * so a utility class on the same element overrides a primitive. When you put a

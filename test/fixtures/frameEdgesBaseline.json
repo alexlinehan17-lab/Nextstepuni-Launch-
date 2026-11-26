@@ -1,0 +1,399 @@
+{
+ "about": "Ratchet for test/frameEdges.guard.test.ts: how often each file touches the edge of the screen outside the frame primitives (components/ui/frame.css). Counts may only go down.",
+ "files": {
+  "App.tsx": {
+   "fixed": 1,
+   "h-screen": 1
+  },
+  "components/AcademicJourneyGame.tsx": {
+   "fixed": 1,
+   "inset-0": 3,
+   "var(--sa*)": 2
+  },
+  "components/AccreditationPage.tsx": {
+   "100vh": 1,
+   "h-screen": 1,
+   "var(--sa*)": 2
+  },
+  "components/AdminDashboard.tsx": {
+   "fixed": 1,
+   "inset-0": 1
+  },
+  "components/AppRouter.tsx": {
+   "100vh": 1,
+   "fixed": 1,
+   "h-screen": 4,
+   "var(--sa*)": 2
+  },
+  "components/AuthActionCard.tsx": {
+   "h-screen": 1
+  },
+  "components/CommandPalette.tsx": {
+   "fixed": 1,
+   "inset-0": 2
+  },
+  "components/CourseworkStudio/coursework-activities.css": {
+   "100vh": 1
+  },
+  "components/CutContentPage.tsx": {
+   "h-screen": 1,
+   "var(--sa*)": 1
+  },
+  "components/DashboardView.tsx": {
+   "h-screen": 1,
+   "var(--sa*)": 2
+  },
+  "components/DiveIn.tsx": {
+   "fixed": 1,
+   "inset-0": 1
+  },
+  "components/ElaborativeInterrogationModule.tsx": {
+   "inset-0": 2
+  },
+  "components/EmotionalIntelligenceModule.tsx": {
+   "inset-0": 3
+  },
+  "components/ErrorBoundary.tsx": {
+   "h-screen": 1
+  },
+  "components/ExamHallStrategiesModule.tsx": {
+   "inset-0": 2
+  },
+  "components/FirstVisitCoachMarks.tsx": {
+   "fixed": 1,
+   "inset-0": 2
+  },
+  "components/FutureFinderResults.tsx": {
+   "fixed": 1,
+   "inset-0": 1
+  },
+  "components/GCDashboard.tsx": {
+   "fixed": 6,
+   "h-screen": 1,
+   "inset-0": 4
+  },
+  "components/HowTheyDidIt/index.tsx": {
+   "inset-0": 1
+  },
+  "components/InnovationZone.tsx": {
+   "fixed": 1,
+   "h-screen": 1,
+   "var(--sa*)": 4
+  },
+  "components/InsightsView.tsx": {
+   "h-screen": 1
+  },
+  "components/JCComingSoon.tsx": {
+   "h-screen": 1
+  },
+  "components/KnowledgeTree.desktop.tsx": {
+   "h-screen": 1
+  },
+  "components/KnowledgeTree.tsx": {
+   "h-screen": 1
+  },
+  "components/LaunchpadGuidance.tsx": {
+   "inset-0": 1
+  },
+  "components/LearningPathsView.tsx": {
+   "h-screen": 1,
+   "var(--sa*)": 1
+  },
+  "components/Library.tsx": {
+   "100vh": 1,
+   "fixed": 2,
+   "h-screen": 1,
+   "inset-0": 1,
+   "var(--sa*)": 2
+  },
+  "components/ListeningStudio/listening-studio.css": {
+   "fixed": 1,
+   "var(--sa*)": 8
+  },
+  "components/LoadingSpinner.tsx": {
+   "fixed": 1,
+   "inset-0": 1
+  },
+  "components/MarkBank/SessionScreen.tsx": {
+   "fixed": 3,
+   "var(--sa*)": 3
+  },
+  "components/MasteringTheCreativesModule.tsx": {
+   "inset-0": 2
+  },
+  "components/ModuleCompleteScreen.tsx": {
+   "fixed": 1,
+   "inset-0": 1
+  },
+  "components/ModuleLayout.tsx": {
+   "fixed": 1,
+   "inset-0": 1
+  },
+  "components/ModulesView.tsx": {
+   "h-screen": 2,
+   "inset-0": 2,
+   "var(--sa*)": 3
+  },
+  "components/MyDirection.tsx": {
+   "h-screen": 1
+  },
+  "components/Onboarding.desktop.tsx": {
+   "fixed": 2,
+   "inset-0": 2
+  },
+  "components/PaperTrail/ImageViewer.tsx": {
+   "fixed": 1,
+   "inset-0": 1,
+   "var(--sa*)": 3
+  },
+  "components/PaperTrail/MilestoneCelebration.tsx": {
+   "inset-0": 2
+  },
+  "components/PaperTrail/ReviewSession.tsx": {
+   "fixed": 1,
+   "inset-0": 2
+  },
+  "components/PaperTrail/Viewer.tsx": {
+   "fixed": 24,
+   "inset-0": 10,
+   "var(--sa*)": 10
+  },
+  "components/PaperTrail/WpmCalibrator.tsx": {
+   "fixed": 1,
+   "inset-0": 2,
+   "var(--sa*)": 1
+  },
+  "components/PaperTrail/archive.css": {
+   "var(--sa*)": 3
+  },
+  "components/PaperTrail/milestones.ts": {
+   "100vh": 1
+  },
+  "components/PaperTrail/viewer-chrome.css": {
+   "var(--sa*)": 5
+  },
+  "components/PointsOptimizationModule.tsx": {
+   "inset-0": 3
+  },
+  "components/PullToRefresh.tsx": {
+   "env(safe-area-": 1,
+   "fixed": 1
+  },
+  "components/RankUpModal.tsx": {
+   "h-screen": 1
+  },
+  "components/ReflectionModal.tsx": {
+   "inset-0": 1
+  },
+  "components/StudyDebrief.tsx": {
+   "fixed": 2,
+   "inset-0": 3
+  },
+  "components/TheCognitiveArchitectureModule.tsx": {
+   "inset-0": 2
+  },
+  "components/TheScienceOfMakingMistakesModule.tsx": {
+   "inset-0": 2
+  },
+  "components/TrainingHub.tsx": {
+   "h-screen": 1,
+   "inset-0": 2
+  },
+  "components/UserProfileMenu.tsx": {
+   "fixed": 2,
+   "inset-0": 1,
+   "var(--sa*)": 1
+  },
+  "components/WaysIn/waysIn.css": {
+   "fixed": 1,
+   "var(--sa*)": 5
+  },
+  "components/WipTools.tsx": {
+   "h-screen": 1
+  },
+  "components/YearPlansView.tsx": {
+   "h-screen": 1
+  },
+  "components/account-entry.css": {
+   "var(--sa*)": 1
+  },
+  "components/account-live.css": {
+   "var(--sa*)": 2
+  },
+  "components/admin/admin-dashboard.css": {
+   "100vh": 1,
+   "fixed": 1
+  },
+  "components/approved-ui-runtime.css": {
+   "fixed": 3
+  },
+  "components/auth-paper.css": {
+   "var(--sa*)": 2
+  },
+  "components/certle/certle.css": {
+   "100vh": 1,
+   "fixed": 1
+  },
+  "components/collegeCompass/HearMeter.tsx": {
+   "inset-0": 1
+  },
+  "components/feedback-listening-room.css": {
+   "env(safe-area-": 3
+  },
+  "components/gc/GCExportModal.tsx": {
+   "fixed": 1,
+   "inset-0": 1
+  },
+  "components/gc/GCOverview.tsx": {
+   "fixed": 1,
+   "inset-0": 1
+  },
+  "components/gc/GCStudentDetail.tsx": {
+   "fixed": 2,
+   "inset-0": 3
+  },
+  "components/gc/StaffAccessPanel.tsx": {
+   "fixed": 1,
+   "inset-0": 1
+  },
+  "components/immersiveDeck/Celebration.tsx": {
+   "inset-0": 1
+  },
+  "components/immersiveDeck/HybridCard.tsx": {
+   "inset-0": 1
+  },
+  "components/immersiveDeck/SwipeDeck.tsx": {
+   "inset-0": 2
+  },
+  "components/journey/GiftButton.tsx": {
+   "fixed": 1,
+   "inset-0": 1
+  },
+  "components/journey/JourneyCanvas.tsx": {
+   "inset-0": 1
+  },
+  "components/journey/JourneyProgressPill.tsx": {
+   "var(--sa*)": 1
+  },
+  "components/journey/KudosButton.tsx": {
+   "fixed": 1,
+   "inset-0": 1
+  },
+  "components/journey/MilestoneRewardModal.tsx": {
+   "fixed": 2,
+   "inset-0": 2
+  },
+  "components/journey/PeerIslandsList.tsx": {
+   "fixed": 1,
+   "inset-0": 1
+  },
+  "components/journey/PurchaseCelebrationModal.tsx": {
+   "fixed": 2,
+   "inset-0": 2
+  },
+  "components/journey/paper/paper.css": {
+   "env(safe-area-": 6,
+   "var(--sa*)": 1
+  },
+  "components/kobra-navigation-runtime.css": {
+   "fixed": 1
+  },
+  "components/landing/fx-c/fx-c.css": {
+   "100vh": 1,
+   "fixed": 1
+  },
+  "components/landing/fx-char/fx-char.css": {
+   "fixed": 2
+  },
+  "components/landing/fx-j/fx-j.css": {
+   "env(safe-area-": 2,
+   "fixed": 1
+  },
+  "components/landing/glass/GlassStage.tsx": {
+   "inset-0": 1
+  },
+  "components/landing/sections/AskThePapers.tsx": {
+   "fixed": 1,
+   "inset-0": 1
+  },
+  "components/landing/starguy/Traveller.tsx": {
+   "fixed": 1
+  },
+  "components/launchpad/launchpad.css": {
+   "env(safe-area-": 1
+  },
+  "components/learning/DefinitionPopover.tsx": {
+   "fixed": 1
+  },
+  "components/learning/learning.css": {
+   "var(--sa*)": 2
+  },
+  "components/learning/module-brand-review.css": {
+   "100vh": 1
+  },
+  "components/learning/reader.css": {
+   "var(--sa*)": 1
+  },
+  "components/legal/legal-document.css": {
+   "env(safe-area-": 4,
+   "fixed": 3
+  },
+  "components/mobile-editorial.css": {
+   "var(--sa*)": 3
+  },
+  "components/navigation/sidebar.css": {
+   "fixed": 2,
+   "var(--sa*)": 2
+  },
+  "components/onboarding/onboarding.css": {
+   "env(safe-area-": 2,
+   "fixed": 1
+  },
+  "components/settings-modal.css": {
+   "var(--sa*)": 4
+  },
+  "components/setup/YourSetupView.tsx": {
+   "h-screen": 1,
+   "var(--sa*)": 1
+  },
+  "components/setup/your-setup.css": {
+   "var(--sa*)": 1
+  },
+  "components/sign-in-directions/sign-in-directions.css": {
+   "fixed": 1
+  },
+  "components/study/study-completion.css": {
+   "100vh": 1,
+   "var(--sa*)": 2
+  },
+  "components/study/study-motion.css": {
+   "fixed": 2
+  },
+  "components/study/study-post-session.css": {
+   "100vh": 1,
+   "var(--sa*)": 8
+  },
+  "components/study/study-quiz-invitation.css": {
+   "100vh": 1,
+   "fixed": 1
+  },
+  "components/study/study-session.css": {
+   "100vh": 1,
+   "env(safe-area-": 2,
+   "fixed": 1
+  },
+  "components/study/studyMotion.ts": {
+   "fixed": 1
+  },
+  "components/ui/ModalFrame.tsx": {
+   "fixed": 1,
+   "inset-0": 1
+  },
+  "components/war-room/CoveragePanel.tsx": {
+   "inset-0": 1
+  },
+  "index.css": {
+   "fixed": 1
+  }
+ }
+}
