@@ -70,7 +70,7 @@
   --z-system: 9999;    /* offline notice */
 }
 @media (max-width: 767px) {
-  html[data-tabbar] { --tabbar-h: 64px; }
+  html[data-tabbar] { --tabbar-h: 50px; }
 }
 
 /* ── 2. Bars and pages ──────────────────────────────────────────────────── */

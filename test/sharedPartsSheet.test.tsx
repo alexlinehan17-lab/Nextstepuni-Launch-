@@ -125,7 +125,7 @@ test('the toast stack clears the tab bar edge: it is placed by the frame from --
   const frame = readFileSync(join(process.cwd(), 'components/ui/frame.css'), 'utf8');
   expect(frame).toMatch(/\.frame-float-bottom\s*\{\s*bottom:\s*calc\(var\(--frame-float-gap, 16px\) \+ var\(--edge-bottom\)\);/);
   expect(frame).toMatch(/--edge-bottom:\s*calc\(var\(--safe-bottom\) \+ var\(--tabbar-h\)\);/);
-  expect(frame).toMatch(/html\[data-tabbar\]\s*\{\s*--tabbar-h:\s*64px;/);
+  expect(frame).toMatch(/html\[data-tabbar\]\s*\{\s*--tabbar-h:\s*50px;/);
   // Above every page layer, and read out politely.
   const parts = readFileSync(join(process.cwd(), 'components/ui/parts.css'), 'utf8');
   expect(parts).toMatch(/\.ui-toast\s*\{[^}]*z-index:\s*var\(--z-toast\)/);

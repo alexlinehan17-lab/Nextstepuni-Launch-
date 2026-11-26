@@ -276,7 +276,7 @@ function BarsSection() {
       <Spec label="Something over the top" caption="Close, an X, top left. A hairline once content scrolls under it.">
         <div className="border border-dashed border-outline-soft"><TopBar ruled leave={{ kind: 'close', onPress: () => {} }} title="Practice" /></div>
       </Spec>
-      <Spec label="The tab bar" caption="Five places. The current one is ink with a 2px ink marker above it.">
+      <Spec label="The tab bar" caption="Five places. The current one is ink with a 2px ink marker above it. It steps aside while the keyboard is up; a tab can carry a tour stop (coach).">
         <div className="border border-dashed border-outline-soft"><TabBar items={PLACES} current="launch" onSelect={() => {}} /></div>
       </Spec>
       <Spec label="The pinned footer" caption="The one main action of a task screen, the sentence naming what is missing directly above it.">

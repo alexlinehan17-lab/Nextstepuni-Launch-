@@ -1,8 +1,6 @@
 /* Approved mobile direction. Scoped to the reviewed surfaces; the timer and
    learning screens keep their existing typography and layout. */
-.editorial-bottom-nav { border-top: 1px solid var(--outline-soft, #ddd); }
-.editorial-bottom-nav .editorial-nav-rule { display: block; position: absolute; top: 0; left: 18%; right: 18%; height: 2px; background: var(--nsu-orange); }
-.editorial-bottom-nav button > span:last-child { font: 600 10px/1.5 'DM Sans', sans-serif; letter-spacing: 0; }
+/* The phone tab bar is the shared TabBar (components/ui/Bars.tsx); it has no rules here. */
 .mobile-editorial { font-family: 'DM Sans', sans-serif; }
 .mobile-editorial h1, .mobile-editorial .lp-title, .mobile-editorial .lp-tool-card h3,
 .mobile-editorial .pt-subject-name, .mobile-editorial .dashboard-section h2,

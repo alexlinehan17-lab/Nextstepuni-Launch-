@@ -15,13 +15,13 @@
  *     <Button kind="main" size="lg" block arrow="forward" missing={...}>Continue</Button>
  *   </PinnedFooter>
  *
- * These are parts only: the live tab bar (MobileBottomNav in App.tsx) and every
- * live header stay as they are until stage 3 moves navigation onto them.
+ * The phone's tab bar (MobileBottomNav in App.tsx) is the TabBar; the shared
+ * page headers are the TopBar (area 0, the frame).
  * Placement is the shell's: the top bar is sticky at the top of its scroll
  * area, the tab bar and the footer sticky at the bottom; a shell that fixes
  * them to the glass wraps them in its own frame layer.
  */
-import { type ReactNode } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { ChevronLeft, X, type LucideIcon } from 'lucide-react';
 import { IconButton } from './Button';
 import { useFrameTabBar } from './Frame';
@@ -85,6 +85,8 @@ export interface TabBarItem<V extends string = string> {
   id: V;
   label: string;
   icon: LucideIcon;
+  /** A first-visit tour stop on this tab (data-coach). */
+  coach?: string;
 }
 
 export interface TabBarProps<V extends string> {
@@ -92,21 +94,56 @@ export interface TabBarProps<V extends string> {
   items: TabBarItem<V>[];
   current: V | null;
   onSelect: (id: V) => void;
+  /** The bar's accessible name (default "Places"). */
+  label?: string;
   className?: string;
 }
 
+/** A text field has focus on a touch screen: the keyboard is up. */
+function isTypingTarget(element: Element | null): boolean {
+  if (!element) return false;
+  if (element instanceof HTMLTextAreaElement) return true;
+  if (element instanceof HTMLInputElement) return !/^(checkbox|radio|range|button|submit|reset|file|color|image|hidden)$/.test(element.type);
+  return element instanceof HTMLElement && element.isContentEditable;
+}
+
+/** True while the on-screen keyboard is up (a touch screen with a text field
+ *  focused). The tab bar steps aside then (navigation.md, "Tab bar"). */
+export function useTouchKeyboardOpen(): boolean {
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') return undefined;
+    const touch = window.matchMedia('(pointer: coarse)');
+    const update = () => setOpen(touch.matches && isTypingTarget(document.activeElement));
+    // Moving from one field to the next blurs, then focuses: read the result
+    // once the focus has landed, so the bar does not flicker.
+    let pending = 0;
+    const later = () => { window.clearTimeout(pending); pending = window.setTimeout(update, 0); };
+    document.addEventListener('focusin', later);
+    document.addEventListener('focusout', later);
+    return () => {
+      window.clearTimeout(pending);
+      document.removeEventListener('focusin', later);
+      document.removeEventListener('focusout', later);
+    };
+  }, []);
+  return open;
+}
+
 /** Five places, outline icons over a 10.5px label; the current one is ink with
- *  a 2px ink marker above it. It never starts anything. */
-export function TabBar<V extends string>({ items, current, onSelect, className = '' }: TabBarProps<V>) {
+ *  a 2px ink marker above it. It never starts anything, and it steps aside
+ *  while the keyboard is up. */
+export function TabBar<V extends string>({ items, current, onSelect, label = 'Places', className = '' }: TabBarProps<V>) {
   // While it is mounted the frame knows there is a tab bar, so toasts and
   // floating controls clear it (--edge-bottom).
   useFrameTabBar();
+  const typing = useTouchKeyboardOpen();
   return (
-    <nav aria-label="Places" className={`ui-part ui-tabbar frame-foot ${className}`.trim()}>
+    <nav aria-label={label} hidden={typing || undefined} className={`ui-part ui-tabbar frame-foot ${className}`.trim()}>
       {items.map(item => {
         const Icon = item.icon;
         return (
-          <button key={item.id} type="button" className="ui-tab" aria-current={item.id === current ? 'page' : undefined} onClick={() => onSelect(item.id)}>
+          <button key={item.id} type="button" className="ui-tab" data-coach={item.coach} aria-current={item.id === current ? 'page' : undefined} onClick={() => onSelect(item.id)}>
             <Icon className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />
             <span>{item.label}</span>
           </button>

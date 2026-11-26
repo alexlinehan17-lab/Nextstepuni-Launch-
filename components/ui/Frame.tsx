@@ -61,7 +61,7 @@ export function readSafeArea(): SafeArea {
 let tabBarHolders = 0;
 
 /** Called by the phone tab bar while it is mounted: the frame then knows the
- *  bar's height (--tabbar-h, 64px below 768px) and --edge-bottom clears it. */
+ *  bar's height (--tabbar-h, 50px below 768px) and --edge-bottom clears it. */
 export function useFrameTabBar() {
   useEffect(() => {
     const root = document.documentElement;
