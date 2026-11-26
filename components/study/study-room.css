@@ -66,7 +66,11 @@
   justify-content: center;
   margin: 26px 0 14px;
   color: var(--ink-primary);
-  font: 400 96px/96px var(--font-ui);
+  /* The countdown is in the pixel-style numbers of the Rule Alex chose (24 Nov
+     2026), like every timer and counter. Never set it in the one typeface:
+     "I thought we were doing the kind of pixelated text for the study timer?
+     Why are we straying from what we chose" (Alex, 26 Nov 2026). */
+  font: 400 88px/96px "Departure Mono", "Apercu Mono Pro", ui-monospace, monospace;
   letter-spacing: 0;
   font-variant-numeric: tabular-nums;
 }
@@ -83,6 +87,11 @@
 /* the Rule and the two times, along the bottom */
 .ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-timer-footer { display: flex; flex-direction: column; gap: var(--space-3); width: 100%; max-width: none; margin: 0; }
 .ss-timer-content .ss-timer-track { height: auto; overflow: visible; background: none; }
+/* The Rule keeps its own height in the track. Today's progress line sized the
+   track's child to the track and painted it, which left the Rule with no height
+   of its own: its ticks rose out of an empty box and the Put it into practice
+   card sat on them. */
+.ss-timer-content .ss-timer-track > .study-rule { height: var(--rule-hn); background: none; }
 .ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-timer-footer > div:last-child { display: flex; justify-content: space-between; margin: 0; color: var(--ink-secondary); font-family: "Departure Mono", "Apercu Mono Pro", ui-monospace, monospace; font-size: 13px; line-height: 16px; letter-spacing: 0.02em; }
 .ss-room-layers .study-rule { --rule-quiet: var(--room-light-ink-2); }
 .ss-room-layers .ss-timer-footer > div:last-child { color: var(--ink-primary); }
