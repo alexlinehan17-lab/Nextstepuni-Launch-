@@ -1,0 +1,270 @@
+{
+ "subject": "religious-education",
+ "verdict": "minor-issues",
+ "summary": "Religious Education has no attachments and the questions are plain essay prompts that read clearly on phone and desktop. The best part of the scheme is the grey 'Points of reference the scheme lists' box, which gives real indicative content that answers the question asked. The weak part is the band grid under it: on newer papers each of six bands repeats the same long dot-joined descriptor in examiner shorthand ('Evidence of MC How the religious moral code... · Relevance: ... · Use of skill(s)...: ... · Factual Accuracy: little major errors(s)'), and where the scheme marks 20 x 2 the whole grid is printed twice, so a phone card runs to about three full columns (roughly 5,000px) of small grey text and up to 41 mark buttons. Band labels are inconsistent between years (three bands all called 'Weak', 'WEAK - VERY WEAK - NO GRADE' twice, capitals on one card, '20 > 17' on some and '17 - 20' on others).",
+ "scores": {
+  "question": 4,
+  "attachments": null,
+  "scheme": 3,
+  "phone": 2,
+  "desktop": 3
+ },
+ "issues": [
+  {
+   "title": "Band descriptors are repeated walls of shorthand",
+   "detail": "Each band repeats the full criterion text with only one or two words changing, joined by middle dots: 'Evidence of MC How the religious moral code of either The Decalogue or Jesus' law of love' guides ethical decision-making: substantial evidence · Relevance: completely & clearly relevant · Use of skill(s) giving an accurate account: Excellent · Factual Accuracy: no major errors(s)'. 'MC' is never explained, 'errors(s)' and 'little major errors(s)' are garbled, and the original scheme table (criteria down the side, bands across) has been flattened so the student has to spot the differing word in each block.",
+   "severity": "high",
+   "cards": [
+    1,
+    2,
+    3,
+    6,
+    7,
+    10
+   ],
+   "best_evidence_image": "07_phone_answer.png",
+   "suggested_fix": "Show the criteria once as row labels and give each band only its distinguishing words (e.g. Evidence: substantial / very good / good / adequate / inadequate / very little), as a compact table; or show a crop of the official grid. Spell out 'MC' (major content/criterion) once."
+  },
+  {
+   "title": "Enormous scroll on phone, grid printed twice for 20 x 2",
+   "detail": "Cards with long descriptors run to two or three full phone columns. Where the scheme allows two answers (cards 2 and 7) the identical six-band grid is printed in full for 'Answer 1 of 2' and again for 'Answer 2 of 2', and the reader passes 40+ small mark buttons before reaching 'Your placement' and the grade buttons. On desktop the same cards exceed the 2,400px capture and are cut off mid-grid.",
+   "severity": "high",
+   "cards": [
+    2,
+    6,
+    7,
+    1,
+    3,
+    10
+   ],
+   "best_evidence_image": "02_phone_answer.png",
+   "suggested_fix": "Collapse the grid to band name plus range by default, with descriptors on tap; for 20 x 2 show one grid with two selectors. Replace the 0-40 button wall with band selection followed by a small stepper."
+  },
+  {
+   "title": "Inconsistent and confusing band labels",
+   "detail": "Older cards label three separate bands 'Weak' ('Weak · 7 > 5', 'Weak · 4 > 2', 'Weak · 1 > 0'); 2022 cards have two bands both called 'WEAK - VERY WEAK - NO GRADE'. Ranges are written '20 > 17' on some cards, '40 - 34' on others and ascending '17 - 20' on others. One card's descriptors are all capitals. The sub-label under 'Your answer' is '20M' or '40M' on some cards and '40 Marks' on others.",
+   "severity": "medium",
+   "cards": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_evidence_image": "10_desktop_answer.png",
+   "suggested_fix": "Normalise to one label set and one range format ('Weak 10-15', 'Very weak 4-9', 'No grade 0-3'), sentence case throughout."
+  },
+  {
+   "title": "Bands with no descriptor at all",
+   "detail": "On the 2011/2012 cards the bands are just a name and number buttons ('Excellent · 20 > 17'), so nothing tells the student what separates Good from Fair. On card 10 the top four bands have descriptors and the three 'Weak' bands have none.",
+   "severity": "medium",
+   "cards": [
+    5,
+    8,
+    11,
+    12,
+    10
+   ],
+   "best_evidence_image": "08_desktop_answer.png",
+   "suggested_fix": "Add the generic one-line descriptor per band used on the 2019/2021 cards (substantial / very good / good / adequate evidence...)."
+  },
+  {
+   "title": "Option lists run inline in the question",
+   "detail": "Bulleted choices are joined into the sentence with stray bullet dots: '...what is right and wrong: • The Decalogue • Jesus - 'Law of Love'' and '...religions: • Buddhism • Christianity • Hinduism • Islam • Judaism'.",
+   "severity": "low",
+   "cards": [
+    1,
+    6
+   ],
+   "best_evidence_image": "06_phone_answer.png",
+   "suggested_fix": "Render the options as a list under the question."
+  },
+  {
+   "title": "Examiner-only notes and small glitches",
+   "detail": "'Examiner directions' boxes carry notes meant for markers ('Consult your Advising Examiner') that mean nothing to a student. Card 6 has a typo from the source split, 'inadequat e evidence', and garbled wording 'some setting looking closely at'. Card 9 has no points-of-reference box, so the only content hint is the examiner note about the Allegory of the Cave. The intro paragraph on several cards ends in a dangling 'e.g.'.",
+   "severity": "low",
+   "cards": [
+    6,
+    9,
+    10,
+    11,
+    1,
+    2,
+    3,
+    4
+   ],
+   "best_evidence_image": "06_phone_answer.png",
+   "suggested_fix": "Rephrase marker notes for students or hide them; fix the split word; drop the trailing 'e.g.' or join it to the points box."
+  },
+  {
+   "title": "Empty band on phone and odd underline",
+   "detail": "About 150-200px of blank space sits between 'Open original paper' and 'YOUR ANSWER' on every phone card, and on desktop the left column is empty for the full height while the right column scrolls. The orange underline covers an arbitrary run of words and stops mid-phrase.",
+   "severity": "low",
+   "cards": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12
+   ],
+   "best_evidence_image": "08_phone_answer.png",
+   "suggested_fix": "Remove the fixed height; on desktop keep the question sticky while the scheme scrolls."
+  }
+ ],
+ "good_examples": [
+  {
+   "card": 12,
+   "why": "Short clear question, four concrete reference points that directly answer it, and a compact band list.",
+   "image": "12_desktop_answer.png"
+  },
+  {
+   "card": 4,
+   "why": "Points of reference cover both options and the band descriptors are short enough to read at a glance.",
+   "image": "04_desktop_answer.png"
+  },
+  {
+   "card": 9,
+   "why": "Concise seven-band grid with one-line descriptors; fits a phone in under two columns.",
+   "image": "09_desktop_answer.png"
+  }
+ ],
+ "cards": [
+  {
+   "n": 1,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Two options inline with bullet dots. Good reference points; six bands repeat a long 'Evidence of MC...' descriptor; 41 mark buttons."
+  },
+  {
+   "n": 2,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "bad",
+   "desktop": "bad",
+   "note": "Identical six-band grid printed twice (Answer 1 of 2, Answer 2 of 2); three phone columns; desktop capture cut off mid-grid. Reference points are useful."
+  },
+  {
+   "n": 3,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Clear question and relevant reference points. Descriptors repeat with garbled 'tracing: Excellent tracking'."
+  },
+  {
+   "n": 4,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Short descriptors, reference points for both options. 'MC' unexplained; ranges written ascending unlike other cards."
+  },
+  {
+   "n": 5,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Strong reference points on matter and form. Bands have no descriptors and three are all labelled 'Weak'."
+  },
+  {
+   "n": 6,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "bad",
+   "desktop": "bad",
+   "note": "Five religions inline with bullet dots. Only one thin reference point; descriptors are long and garbled ('inadequat e evidence', 'some setting looking closely'); two bands share the label 'WEAK - VERY WEAK - NO GRADE'. The 40 / 20x2 toggle is clear."
+  },
+  {
+   "n": 7,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "bad",
+   "desktop": "bad",
+   "note": "Good reference points, then the long grid twice; three phone columns and desktop cut off. Duplicate band labels as card 6."
+  },
+  {
+   "n": 8,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Clean and short. Bands are names and buttons only; three 'Weak' rows."
+  },
+  {
+   "n": 9,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Tidy grid with one-line descriptors, but no points of reference, so no indicative content beyond an examiner note."
+  },
+  {
+   "n": 10,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Piaget/Kohlberg reference points are excellent. Descriptors in block capitals for four bands, none for three 'Weak' bands; long footnote explaining why."
+  },
+  {
+   "n": 11,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Reference points for Anselm and Aquinas are clear. Bare bands; marker-only note 'Consult your Advising Examiner'."
+  },
+  {
+   "n": 12,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Best card: four concrete reasons listed, compact bands. Only fault is three 'Weak' labels."
+  }
+ ]
+}

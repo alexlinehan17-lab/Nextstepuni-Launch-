@@ -1,0 +1,258 @@
+{
+ "subject": "history",
+ "verdict": "minor-issues",
+ "summary": "History is the strongest of this group: questions are complete, the source extract is typed out above the question on Ordinary Level cards, and the Higher Level document questions show real scheme points as separate tick boxes. Main faults: three of nine attachments (all Early Modern papers: cards 1, 9, 10) open to 'That page did not load', which leaves the card 10 document question with no documents at all; Ordinary Level 'extract' attachments are the whole exam page, so they show the other four short questions and the Part B/C questions; and a few short-answer schemes are slash-joined strings or two answers run together in one tick box. Essay cards give only the generic Cumulative Mark / Overall Evaluation machinery, which is a very long scroll on a phone.",
+ "scores": {
+  "question": 4,
+  "attachments": 2,
+  "scheme": 3,
+  "phone": 3,
+  "desktop": 4
+ },
+ "issues": [
+  {
+   "title": "Attached page fails to load on Early Modern cards",
+   "detail": "The reader shows 'That page did not load. You can retry or open the original examination document.' for all three sampled Early Modern attachments (2010 OL p.10, 2015 OL p.6, 2016 HL p.3). Cards 1 and 9 survive because the extract is also typed into the card, but card 10 asks 'What evidence is there in the documents...' and the documents exist only in the attachment, so the question cannot be attempted. (If this is only a capture-time network failure it still needs checking; all Later Modern pages loaded.)",
+   "severity": "high",
+   "cards": [
+    1,
+    9,
+    10
+   ],
+   "best_evidence_image": "10_attached_page.png",
+   "suggested_fix": "Fix the Early Modern page assets; for document questions also show the documents as text in the card so a failed image is not fatal."
+  },
+  {
+   "title": "'The extract' attachment is the whole exam page with other questions",
+   "detail": "On Ordinary Level cards the attachment labelled 'The extract' opens the full paper page: the heading, the extract, all five short questions (the card asks only one), then Part B ('Write a short paragraph on one of the following: 1. Harry Truman...') and the start of Part C. On card 2 the first attached page contains no source at all - only questions - and the picture the card is about (Life magazine cover, 'Picture Y on page 15') is on the second page.",
+   "severity": "medium",
+   "cards": [
+    2,
+    4,
+    7,
+    11
+   ],
+   "best_evidence_image": "02_attached_page.png",
+   "suggested_fix": "Crop to the source only (extract, table or picture). For card 2 open directly on the picture page and drop the question page."
+  },
+  {
+   "title": "Attachment duplicates what the card already shows",
+   "detail": "Cards 4 and 9 type the full extract into the card and then offer the same extract again as an attachment; cards 7 and 11 show the table as an inline crop and again as an attached page. The second copy adds only the other questions.",
+   "severity": "low",
+   "cards": [
+    4,
+    7,
+    9,
+    11
+   ],
+   "best_evidence_image": "11_desktop_answer.png",
+   "suggested_fix": "Show the source once: inline if short, attachment button only if long."
+  },
+  {
+   "title": "Short-answer scheme strings joined with slashes / run together",
+   "detail": "Card 1's whole scheme is one tick box: 'Venetian prisms / European books / Paintings and engravings / Sundials / Clocks / Maps' with 'Any three 2M x 3' underneath - raw examiner shorthand, and one 6-mark box means 2 or 4 marks cannot be claimed. Card 2 puts two opposite answers in one box; on desktop they run together as 'Positive: Praises the \"brave crew\" of the helicopter Negative: Suggests that helicopters are \"vulnerable\"...'. Card 9 shows how it should look (any 3 of 4 separate items, 2 marks each) but with mixed capitals ('Pheasant', 'partridge').",
+   "severity": "medium",
+   "cards": [
+    1,
+    2,
+    9
+   ],
+   "best_evidence_image": "01_desktop_answer.png",
+   "suggested_fix": "Use the card 9 pattern everywhere: one tick per acceptable answer, 'Any 3, 2 marks each'. For either/or answers show two labelled options ('If you said positive...' / 'If you said negative...')."
+  },
+  {
+   "title": "Examiner-facing wording shown as student tick boxes",
+   "detail": "Card 6's first two tick boxes are instructions to examiners, not answer points: 'Candidates may argue for and/or against the view that doc B is objective. Evaluate the answer on the quality of the points made...' and 'The candidate may attempt to define ... e.g. to give a fair account of events/ to try to take all sides into consideration/ freedom from bias/ not one-sided...'. Card 10 has a box starting 'OR, These rules...' with nothing marking where the alternative argument begins. Neither card shows how the 10 marks are divided.",
+   "severity": "medium",
+   "cards": [
+    6,
+    10
+   ],
+   "best_evidence_image": "06_desktop_answer.png",
+   "suggested_fix": "Put examiner guidance in a note above the list, not as a tick box; group alternative lines of argument under 'Argument A / Argument B' headings; state how many developed points earn 10."
+  },
+  {
+   "title": "Essay cards: generic marking machinery, very long on phone",
+   "detail": "Essay cards say 'The scheme prints no model answer for this question' and then show the full Cumulative Mark / Overall Evaluation apparatus with a button for every single mark (card 8: 0m to 40m as 41 buttons). On the phone this is about 5,000px of scroll (three capture columns) with the grade buttons at the very end. Card 8's one question-specific line is raw shorthand: 'NOTE: TWO elements (Land reform + Home Rule) If only ONE, Max. CM = 50'.",
+   "severity": "medium",
+   "cards": [
+    3,
+    8,
+    12
+   ],
+   "best_evidence_image": "08_phone_answer.png",
+   "suggested_fix": "Collapse the generic definitions ('What the scheme counts as a paragraph', 'Examiner directions') behind a toggle, replace per-mark buttons with band chips, and rewrite the note in plain words ('You must cover both land reform and Home Rule; covering only one caps content marks at 50')."
+  },
+  {
+   "title": "Card 3 bundles four alternative essay titles as one question",
+   "detail": "The card shows 'Answer one of the following:' with four unrelated essay titles (Catalans, Richelieu, Wallenstein, Rubens/Bernini) under one topic and one generic scheme. A student revising one of these gets nothing specific to the title chosen.",
+   "severity": "low",
+   "cards": [
+    3
+   ],
+   "best_evidence_image": "03_desktop_answer.png",
+   "suggested_fix": "One card per essay title, or let the student pick the title before the reveal."
+  },
+  {
+   "title": "Inline table crop too small on phone",
+   "detail": "Card 7's national-identity table is rendered about 330px wide on the phone, making the figures roughly 5-6px tall - unreadable without tapping Enlarge. Card 11's table is larger and readable. Phone cards also carry a 150-300px blank band before 'Your answer'.",
+   "severity": "low",
+   "cards": [
+    7
+   ],
+   "best_evidence_image": "07_phone_answer.png",
+   "suggested_fix": "Crop tight to the table and let it fill the width, or render small tables as real HTML tables."
+  }
+ ],
+ "good_examples": [
+  {
+   "card": 5,
+   "why": "Clear question, documents open legibly with no other questions, and four real scheme points as separate tick boxes.",
+   "image": "05_desktop_answer.png"
+  },
+  {
+   "card": 9,
+   "why": "Extract typed in full, and the scheme is a clean 'Any 3 of these - 2 marks each' list.",
+   "image": "09_desktop_answer.png"
+  },
+  {
+   "card": 11,
+   "why": "Table crop is readable on phone and desktop and the one-word answer is unmistakable.",
+   "image": "11_phone_answer.png"
+  }
+ ],
+ "cards": [
+  {
+   "n": 1,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "Attached page did not load, so nothing visible.",
+   "attachment": "bad",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Extract typed in the card so question is answerable. Scheme is a slash-joined string with 'Any three 2M x 3' as one 6-mark tick box. Attachment shows 'That page did not load'."
+  },
+  {
+   "n": 2,
+   "question": "minor",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached page 1 shows Part A Q1-5 (card is Q4 only), all four Part B paragraph topics and the Part C heading; no source on that page.",
+   "attachment": "bad",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Stem says 'Picture Y on page 15' but the picture is not in the card and is the second attached page. Positive and Negative answers share one tick box and run together on desktop."
+  },
+  {
+   "n": 3,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Four alternative essay titles in one card. Scheme is the generic Core Statement method; long on phone (2 columns)."
+  },
+  {
+   "n": 4,
+   "question": "ok",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached page shows Part A Q1-5 in full (card is Q2) and Part B paragraph topics 1-3.",
+   "attachment": "minor",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Clean question with extract typed in; scheme 'Soviet Union' is unmistakable. Attachment repeats the extract and adds other questions."
+  },
+  {
+   "n": 5,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "Documents A and B only.",
+   "attachment": "ok",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Good card. Scheme points are clear and specific; no indication of how the 10 marks divide."
+  },
+  {
+   "n": 6,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "Documents A and B only.",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Real scheme points but the first two boxes are examiner instructions with slash-joined phrases; seven long boxes make a long phone scroll."
+  },
+  {
+   "n": 7,
+   "question": "ok",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page shows the table plus Q1-5 of Part A and the start of Part B.",
+   "attachment": "minor",
+   "scheme": "ok",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Inline table is tiny on phone (needs Enlarge), fine on desktop. Scheme '1989' is clear. Table shown twice (inline and attached)."
+  },
+  {
+   "n": 8,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "100-mark essay. No question-specific content beyond the shorthand note 'TWO elements ... If only ONE, Max. CM = 50'. 41 OE buttons; three phone columns of scroll."
+  },
+  {
+   "n": 9,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "Attached page did not load.",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Extract typed in; scheme is a clean any-3 list (capitalisation mixed). Attachment shows 'That page did not load'."
+  },
+  {
+   "n": 10,
+   "question": "bad",
+   "other_questions_shown": "none",
+   "other_detail": "Attached page did not load.",
+   "attachment": "bad",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Question depends on 'the documents', which exist only in the attachment, and it did not load. Scheme points are good but the 'OR, These rules...' alternative is not visually separated."
+  },
+  {
+   "n": 11,
+   "question": "ok",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page shows the table plus all five Part A questions.",
+   "attachment": "minor",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Readable table crop, clear one-word scheme ('Two'). Attachment duplicates the inline table and adds Q1, 2, 4, 5."
+  },
+  {
+   "n": 12,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Clear essay question. Scheme is the generic paragraph/OE method with 'no model answer'; a link to the official scheme pages is offered at the bottom."
+  }
+ ]
+}

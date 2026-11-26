@@ -1,0 +1,560 @@
+{
+ "accounting": {
+  "n": 1365,
+  "counts": {},
+  "examples": {}
+ },
+ "agricultural-science": {
+  "n": 2464,
+  "counts": {
+   "a_slash_list": 920,
+   "a_12plus_rows": 2,
+   "a_row_over_450": 76,
+   "q_over_900_chars": 9,
+   "q_pipe_table": 8,
+   "a_rows_repeat_same_text": 1
+  },
+  "examples": {
+   "a_slash_list": "agsci-2023-ol-q2b",
+   "a_row_over_450": "agsci-2011-ol-q4",
+   "q_over_900_chars": "agsci-2021-hl-q2ai",
+   "q_pipe_table": "agsci-2021-hl-q8b",
+   "a_rows_repeat_same_text": "agsci-2010-hl-q1a"
+  }
+ },
+ "ancient-greek": {
+  "n": 404,
+  "counts": {
+   "q_over_900_chars": 4,
+   "a_12plus_rows": 4,
+   "a_slash_list": 1
+  },
+  "examples": {
+   "q_over_900_chars": "agr-2022-ol-a-q1",
+   "a_slash_list": "agr-2024-hl-b-q3-ii-g"
+  }
+ },
+ "applied-maths": {
+  "n": 1486,
+  "counts": {},
+  "examples": {}
+ },
+ "arabic": {
+  "n": 250,
+  "counts": {},
+  "examples": {}
+ },
+ "art": {
+  "n": 1756,
+  "counts": {},
+  "examples": {}
+ },
+ "biology": {
+  "n": 6601,
+  "counts": {
+   "a_slash_list": 537,
+   "q_over_900_chars": 96,
+   "a_row_over_450": 4,
+   "a_12plus_rows": 7
+  },
+  "examples": {
+   "a_slash_list": "bio-2025-hl-q5-b",
+   "q_over_900_chars": "bio-2025-hl-q15-b-iv-1",
+   "a_row_over_450": "bio-2022-hl-q16-d-v"
+  }
+ },
+ "bulgarian": {
+  "n": 219,
+  "counts": {
+   "a_row_over_450": 52
+  },
+  "examples": {
+   "a_row_over_450": "bul-2010-hl-i-3"
+  }
+ },
+ "business": {
+  "n": 2163,
+  "counts": {
+   "q_pipe_table": 25,
+   "q_over_900_chars": 22
+  },
+  "examples": {
+   "q_pipe_table": "bus-2010-ol-s2-q3ai",
+   "q_over_900_chars": "bus-2011-ol-s2-q2a"
+  }
+ },
+ "chemistry": {
+  "n": 3369,
+  "counts": {
+   "a_slash_list": 529,
+   "q_over_900_chars": 84,
+   "a_row_over_450": 18
+  },
+  "examples": {
+   "a_slash_list": "chem-2021-ol-q3-c",
+   "q_over_900_chars": "chem-2021-ol-q3-d-ii",
+   "a_row_over_450": "chem-2020-ol-q3-e-ii"
+  }
+ },
+ "classical-studies": {
+  "n": 516,
+  "counts": {
+   "a_12plus_rows": 47,
+   "a_row_over_450": 13
+  },
+  "examples": {
+   "a_row_over_450": "clas-2021-hl-t2ia"
+  }
+ },
+ "computer-science": {
+  "n": 582,
+  "counts": {
+   "q_over_900_chars": 56,
+   "a_row_over_450": 12
+  },
+  "examples": {
+   "q_over_900_chars": "cs-2021-hl-q14-a-i",
+   "a_row_over_450": "cs-2022-hl-q10"
+  }
+ },
+ "construction-studies": {
+  "n": 1261,
+  "counts": {
+   "q_over_900_chars": 71,
+   "a_12plus_rows": 22
+  },
+  "examples": {
+   "q_over_900_chars": "cons-2016-hl-q5-b"
+  }
+ },
+ "croatian": {
+  "n": 151,
+  "counts": {
+   "a_row_over_450": 54
+  },
+  "examples": {
+   "a_row_over_450": "hrv-2014-hl-i-3"
+  }
+ },
+ "czech": {
+  "n": 155,
+  "counts": {
+   "a_row_over_450": 28
+  },
+  "examples": {
+   "a_row_over_450": "cs-2010-hl-i-6"
+  }
+ },
+ "danish": {
+  "n": 126,
+  "counts": {
+   "a_row_over_450": 33
+  },
+  "examples": {
+   "a_row_over_450": "dan-2014-hl-i-6"
+  }
+ },
+ "dcg": {
+  "n": 1284,
+  "counts": {
+   "q_over_900_chars": 2
+  },
+  "examples": {
+   "q_over_900_chars": "dcg-2013-hl-b3b"
+  }
+ },
+ "dutch": {
+  "n": 219,
+  "counts": {
+   "a_row_over_450": 5
+  },
+  "examples": {
+   "a_row_over_450": "nld-2024-hl-i-2"
+  }
+ },
+ "economics": {
+  "n": 2297,
+  "counts": {
+   "a_slash_list": 17,
+   "a_row_over_450": 61,
+   "a_multiline_row": 33
+  },
+  "examples": {
+   "a_slash_list": "econ-2012-hl-sa-q5-b",
+   "a_row_over_450": "econ-2014-hl-sb-q2-a-ii",
+   "a_multiline_row": "econ-2022-hl-sa-q4-c"
+  }
+ },
+ "engineering": {
+  "n": 2269,
+  "counts": {
+   "a_row_over_450": 149,
+   "a_slash_list": 2,
+   "a_12plus_rows": 2
+  },
+  "examples": {
+   "a_row_over_450": "eng-2010-ol-q1-i",
+   "a_slash_list": "eng-2022-ol-q6-c-iii"
+  }
+ },
+ "english": {
+  "n": 3105,
+  "counts": {},
+  "examples": {}
+ },
+ "estonian": {
+  "n": 172,
+  "counts": {
+   "a_row_over_450": 38
+  },
+  "examples": {
+   "a_row_over_450": "est-2010-hl-i-3"
+  }
+ },
+ "finnish": {
+  "n": 168,
+  "counts": {
+   "a_row_over_450": 18
+  },
+  "examples": {
+   "a_row_over_450": "fin-2010-hl-i-2"
+  }
+ },
+ "french": {
+  "n": 2286,
+  "counts": {
+   "q_over_900_chars": 3
+  },
+  "examples": {
+   "q_over_900_chars": "fr-2021-ol-b-1-a"
+  }
+ },
+ "geography": {
+  "n": 4641,
+  "counts": {},
+  "examples": {}
+ },
+ "german": {
+  "n": 1776,
+  "counts": {
+   "q_over_900_chars": 31,
+   "a_slash_list": 6
+  },
+  "examples": {
+   "q_over_900_chars": "de-2010-ol-sp-a",
+   "a_slash_list": "de-2020-ol-l1-5-ii"
+  }
+ },
+ "history": {
+  "n": 4943,
+  "counts": {
+   "a_row_over_450": 15,
+   "a_12plus_rows": 5,
+   "q_over_900_chars": 519,
+   "a_slash_list": 1
+  },
+  "examples": {
+   "a_row_over_450": "hist-2010-hl-lm-s1-q2b",
+   "q_over_900_chars": "hist-2010-ol-lm-s2t1a-q1",
+   "a_slash_list": "hist-2010-ol-em-s3t2a-q2"
+  }
+ },
+ "home-economics": {
+  "n": 1953,
+  "counts": {
+   "a_row_over_450": 6,
+   "a_12plus_rows": 2,
+   "a_pipe_table": 5,
+   "q_over_900_chars": 2
+  },
+  "examples": {
+   "a_row_over_450": "he-2013-ol-sa-q12",
+   "a_pipe_table": "he-2014-hl-sb-q1d",
+   "q_over_900_chars": "he-2015-hl-sb-q1a"
+  }
+ },
+ "hungarian": {
+  "n": 219,
+  "counts": {
+   "a_row_over_450": 39
+  },
+  "examples": {
+   "a_row_over_450": "hun-2010-hl-i-5"
+  }
+ },
+ "irish": {
+  "n": 4237,
+  "counts": {
+   "q_over_900_chars": 22
+  },
+  "examples": {
+   "q_over_900_chars": "irish-2024-ol-p2-poetry-3b-b"
+  }
+ },
+ "italian": {
+  "n": 1319,
+  "counts": {
+   "a_slash_list": 4,
+   "q_over_900_chars": 3,
+   "a_12plus_rows": 1
+  },
+  "examples": {
+   "a_slash_list": "it-2019-ol-lb1-4",
+   "q_over_900_chars": "it-2021-hl-c-3-a"
+  }
+ },
+ "japanese": {
+  "n": 1941,
+  "counts": {
+   "a_slash_list": 15,
+   "a_12plus_rows": 20,
+   "q_over_900_chars": 5,
+   "a_rows_repeat_same_text": 5
+  },
+  "examples": {
+   "a_slash_list": "ja-2010-ol-2-3-iii",
+   "q_over_900_chars": "ja-2010-ol-4",
+   "a_rows_repeat_same_text": "ja-2011-hl-lc-2-ii"
+  }
+ },
+ "latin": {
+  "n": 231,
+  "counts": {
+   "a_12plus_rows": 25,
+   "q_over_900_chars": 1,
+   "a_slash_list": 1,
+   "a_row_over_450": 5
+  },
+  "examples": {
+   "q_over_900_chars": "lat-2023-hl-b-q2-i",
+   "a_slash_list": "lat-2024-hl-b-q1-iv",
+   "a_row_over_450": "lat-2024-hl-q5-via-c"
+  }
+ },
+ "latvian": {
+  "n": 167,
+  "counts": {
+   "a_row_over_450": 29,
+   "a_12plus_rows": 1
+  },
+  "examples": {
+   "a_row_over_450": "lv-2013-hl-i-6"
+  }
+ },
+ "lcvp": {
+  "n": 518,
+  "counts": {
+   "a_pipe_table": 253,
+   "q_over_900_chars": 71,
+   "a_slash_list": 1,
+   "a_12plus_rows": 1
+  },
+  "examples": {
+   "a_pipe_table": "lcvp-2018-cl-a6",
+   "q_over_900_chars": "lcvp-2018-cl-b1",
+   "a_slash_list": "lcvp-2026-cl-c5d"
+  }
+ },
+ "lithuanian": {
+  "n": 306,
+  "counts": {
+   "a_row_over_450": 1
+  },
+  "examples": {
+   "a_row_over_450": "lt-2021-hl-i-1-e"
+  }
+ },
+ "maltese": {
+  "n": 77,
+  "counts": {
+   "a_row_over_450": 1
+  },
+  "examples": {
+   "a_row_over_450": "mlt-2023-hl-i-4"
+  }
+ },
+ "mandarin-chinese": {
+  "n": 201,
+  "counts": {
+   "a_slash_list": 2
+  },
+  "examples": {
+   "a_slash_list": "man-2022-hl-a-4-c"
+  }
+ },
+ "maths": {
+  "n": 5188,
+  "counts": {
+   "a_multiline_row": 15,
+   "a_12plus_rows": 83,
+   "q_over_900_chars": 51,
+   "q_pipe_table": 16
+  },
+  "examples": {
+   "a_multiline_row": "maths-2021-ol-p1-q3-a",
+   "q_over_900_chars": "maths-2026-ol-p1-q10-a-iv-v",
+   "q_pipe_table": "maths-2016-ol-p2-q5-a"
+  }
+ },
+ "modern-greek": {
+  "n": 142,
+  "counts": {
+   "a_row_over_450": 52,
+   "q_over_900_chars": 6
+  },
+  "examples": {
+   "a_row_over_450": "mgr-2010-hl-1-3",
+   "q_over_900_chars": "mgr-2021-hl-i-1"
+  }
+ },
+ "music": {
+  "n": 1708,
+  "counts": {
+   "a_slash_list": 13,
+   "q_over_900_chars": 15
+  },
+  "examples": {
+   "a_slash_list": "mus-2022-ol-l-q3-b",
+   "q_over_900_chars": "mus-2014-ol-l-q6-x3-iii"
+  }
+ },
+ "physical-education": {
+  "n": 772,
+  "counts": {
+   "q_over_900_chars": 8
+  },
+  "examples": {
+   "q_over_900_chars": "pe-2025-ol-q18ai"
+  }
+ },
+ "physics": {
+  "n": 4059,
+  "counts": {
+   "a_slash_list": 214,
+   "q_over_900_chars": 188
+  },
+  "examples": {
+   "a_slash_list": "phys-2021-ol-q1-iv",
+   "q_over_900_chars": "phys-2023-ol-q13-i"
+  }
+ },
+ "polish": {
+  "n": 805,
+  "counts": {
+   "a_slash_list": 1,
+   "a_12plus_rows": 1,
+   "a_row_over_450": 3
+  },
+  "examples": {
+   "a_slash_list": "pl-2022-ol-ld-2-ii",
+   "a_row_over_450": "pl-2016-hl-i-3"
+  }
+ },
+ "politics-and-society": {
+  "n": 623,
+  "counts": {
+   "q_over_900_chars": 2
+  },
+  "examples": {
+   "q_over_900_chars": "politics-2020-hl-q3-b"
+  }
+ },
+ "portuguese": {
+  "n": 744,
+  "counts": {
+   "a_row_over_450": 28,
+   "a_slash_list": 2
+  },
+  "examples": {
+   "a_row_over_450": "por-2010-hl-i-5",
+   "a_slash_list": "por-2015-hl-ii-1"
+  }
+ },
+ "religious-education": {
+  "n": 786,
+  "counts": {},
+  "examples": {}
+ },
+ "romanian": {
+  "n": 187,
+  "counts": {
+   "a_row_over_450": 42
+  },
+  "examples": {
+   "a_row_over_450": "ron-2012-hl-i-5"
+  }
+ },
+ "russian": {
+  "n": 1485,
+  "counts": {
+   "a_12plus_rows": 2,
+   "q_over_900_chars": 46,
+   "a_row_over_450": 3,
+   "a_slash_list": 1
+  },
+  "examples": {
+   "q_over_900_chars": "ru-2026-hl-gw",
+   "a_row_over_450": "ru-2010-hl-l1-1-i",
+   "a_slash_list": "ru-2018-hl-se"
+  }
+ },
+ "slovakian": {
+  "n": 206,
+  "counts": {
+   "a_row_over_450": 37
+  },
+  "examples": {
+   "a_row_over_450": "slk-2012-hl-i-5"
+  }
+ },
+ "slovenian": {
+  "n": 60,
+  "counts": {
+   "a_row_over_450": 8
+  },
+  "examples": {
+   "a_row_over_450": "slv-2018-hl-i-3"
+  }
+ },
+ "spanish": {
+  "n": 2268,
+  "counts": {
+   "q_over_900_chars": 22,
+   "a_slash_list": 3
+  },
+  "examples": {
+   "q_over_900_chars": "es-2010-hl-c-1-a",
+   "a_slash_list": "es-2017-ol-a-4-c"
+  }
+ },
+ "swedish": {
+  "n": 191,
+  "counts": {
+   "a_row_over_450": 23
+  },
+  "examples": {
+   "a_row_over_450": "swe-2010-hl-i-6"
+  }
+ },
+ "technology": {
+  "n": 2340,
+  "counts": {
+   "a_12plus_rows": 3,
+   "a_row_over_450": 2,
+   "a_slash_list": 1
+  },
+  "examples": {
+   "a_row_over_450": "tech-2013-hl-c2b",
+   "a_slash_list": "tech-2026-hl-a3"
+  }
+ },
+ "ukrainian": {
+  "n": 26,
+  "counts": {
+   "a_row_over_450": 7
+  },
+  "examples": {
+   "a_row_over_450": "ukr-2025-hl-i-3"
+  }
+ }
+}

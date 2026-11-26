@@ -1,0 +1,3588 @@
+{
+ "accounting": [
+  {
+   "subject": "accounting",
+   "level": "higher",
+   "id": "acc-2020-hl-q5(a)(i)",
+   "why": "suspect:a:slash_sep",
+   "src": "Figures, tables and instructions"
+  },
+  {
+   "subject": "accounting",
+   "level": "higher",
+   "id": "acc-2011-hl-q2(c)",
+   "why": "suspect:a:sibling_parts",
+   "src": "Figures, tables and instructions"
+  },
+  {
+   "subject": "accounting",
+   "level": "higher",
+   "id": "acc-2023-hl-q3(a)",
+   "why": "suspect:a:dash_run",
+   "src": "Figures, tables and instructions"
+  },
+  {
+   "subject": "accounting",
+   "level": "higher",
+   "id": "acc-2010-hl-q4(c)",
+   "why": "shared-page",
+   "src": "Figures, tables and instructions"
+  },
+  {
+   "subject": "accounting",
+   "level": "ordinary",
+   "id": "acc-2021-ol-q5(b)(i)",
+   "why": "shape",
+   "src": "Figures, tables and instructions"
+  },
+  {
+   "subject": "accounting",
+   "level": "ordinary",
+   "id": "acc-2016-ol-q5(a)(i)",
+   "why": "shape",
+   "src": "Figures, tables and instructions"
+  },
+  {
+   "subject": "accounting",
+   "level": "ordinary",
+   "id": "acc-2015-ol-q6(a)",
+   "why": "shape",
+   "src": "Figures, tables and instructions"
+  },
+  {
+   "subject": "accounting",
+   "level": "ordinary",
+   "id": "acc-2018-ol-q7(a)",
+   "why": "shape",
+   "src": "Figures, tables and instructions"
+  },
+  {
+   "subject": "accounting",
+   "level": "ordinary",
+   "id": "acc-2022-ol-q8(e)",
+   "why": "shape",
+   "src": "Figures, tables and instructions"
+  },
+  {
+   "subject": "accounting",
+   "level": "higher",
+   "id": "acc-2019-hl-q2(c)",
+   "why": "shape",
+   "src": "Figures, tables and instructions"
+  },
+  {
+   "subject": "accounting",
+   "level": "higher",
+   "id": "acc-2018-hl-q9(a)(ii)",
+   "why": "shape",
+   "src": "Figures, tables and instructions"
+  },
+  {
+   "subject": "accounting",
+   "level": "ordinary",
+   "id": "acc-2018-ol-q8(f)",
+   "why": "shape",
+   "src": "Figures, tables and instructions"
+  }
+ ],
+ "agricultural-science": [
+  {
+   "subject": "agricultural-science",
+   "level": "higher",
+   "id": "agsci-2021-hl-q14civ",
+   "why": "suspect:q:pipe_table",
+   "src": "Official question page"
+  },
+  {
+   "subject": "agricultural-science",
+   "level": "ordinary",
+   "id": "agsci-2013-ol-q13aii",
+   "why": "suspect:a:slash_sep",
+   "src": "Agricultural Science 2013 Ordinary \u2014 Q13(a)(ii)"
+  },
+  {
+   "subject": "agricultural-science",
+   "level": "ordinary",
+   "id": "agsci-2018-ol-q1",
+   "why": "suspect:q:sibling_parts",
+   "src": "Agricultural Science 2018 Ordinary \u2014 Q1"
+  },
+  {
+   "subject": "agricultural-science",
+   "level": "higher",
+   "id": "agsci-2025-hl-q17ci",
+   "why": "suspect:q:spaced_nums",
+   "src": "Official question page"
+  },
+  {
+   "subject": "agricultural-science",
+   "level": "higher",
+   "id": "agsci-2012-hl-q1ci",
+   "why": "shared-page",
+   "src": "Agricultural Science 2012 Higher \u2014 Q1(c)(i)"
+  },
+  {
+   "subject": "agricultural-science",
+   "level": "higher",
+   "id": "agsci-2012-hl-q5biv",
+   "why": "shared-page",
+   "src": "Agricultural Science 2012 Higher \u2014 Q5(b)(iv)"
+  },
+  {
+   "subject": "agricultural-science",
+   "level": "higher",
+   "id": "agsci-2020-hl-q5ai",
+   "why": "shape",
+   "src": "Agricultural Science 2020 Higher \u2014 Q5(a)(i)"
+  },
+  {
+   "subject": "agricultural-science",
+   "level": "ordinary",
+   "id": "agsci-2023-ol-q14biv",
+   "why": "shape",
+   "src": "Agricultural Science 2023 Ordinary \u2014 Q14(b)(iv)"
+  },
+  {
+   "subject": "agricultural-science",
+   "level": "higher",
+   "id": "agsci-2022-hl-q16cii",
+   "why": "shape",
+   "src": "Official question page"
+  },
+  {
+   "subject": "agricultural-science",
+   "level": "higher",
+   "id": "agsci-2010-hl-q4d",
+   "why": "shape",
+   "src": "Agricultural Science 2010 Higher \u2014 Q4(d)"
+  },
+  {
+   "subject": "agricultural-science",
+   "level": "higher",
+   "id": "agsci-2025-hl-q1a",
+   "why": "shape",
+   "src": "Official question page"
+  },
+  {
+   "subject": "agricultural-science",
+   "level": "ordinary",
+   "id": "agsci-2010-ol-q13a",
+   "why": "shape",
+   "src": "Agricultural Science 2010 Ordinary \u2014 Q13(a)"
+  }
+ ],
+ "ancient-greek": [
+  {
+   "subject": "ancient-greek",
+   "level": "higher",
+   "id": "agr-2022-hl-b-q3-ii-g",
+   "why": "suspect:a:pipe_table"
+  },
+  {
+   "subject": "ancient-greek",
+   "level": "higher",
+   "id": "agr-2022-hl-b-q3-ii-c",
+   "why": "shape"
+  },
+  {
+   "subject": "ancient-greek",
+   "level": "higher",
+   "id": "agr-2014-hl-b-q1-f",
+   "why": "shape",
+   "src": "The Greek passage this question is about"
+  },
+  {
+   "subject": "ancient-greek",
+   "level": "ordinary",
+   "id": "agr-2015-ol-a-q3-iv",
+   "why": "shape"
+  },
+  {
+   "subject": "ancient-greek",
+   "level": "higher",
+   "id": "agr-2023-hl-b-q3-ii-f",
+   "why": "shape"
+  },
+  {
+   "subject": "ancient-greek",
+   "level": "higher",
+   "id": "agr-2023-hl-q4-viii",
+   "why": "shape",
+   "src": "The photographs printed with this question"
+  },
+  {
+   "subject": "ancient-greek",
+   "level": "higher",
+   "id": "agr-2022-hl-q4-v",
+   "why": "shape"
+  },
+  {
+   "subject": "ancient-greek",
+   "level": "higher",
+   "id": "agr-2014-hl-b-q4-iv-a",
+   "why": "shape",
+   "src": "The photographs printed with this question"
+  }
+ ],
+ "applied-maths": [
+  {
+   "subject": "applied-maths",
+   "level": "higher",
+   "id": "am-2021-hl-3-a-i-maximum",
+   "why": "suspect:a:pipe_table",
+   "src": "Original question pages"
+  },
+  {
+   "subject": "applied-maths",
+   "level": "ordinary",
+   "id": "am-2013-ol-2-v",
+   "why": "suspect:q:pipe_table",
+   "src": "Original question pages"
+  },
+  {
+   "subject": "applied-maths",
+   "level": "higher",
+   "id": "am-2012-hl-8-b-i",
+   "why": "shape",
+   "src": "Original question pages"
+  },
+  {
+   "subject": "applied-maths",
+   "level": "ordinary",
+   "id": "am-2024-ol-7-iii",
+   "why": "shape",
+   "src": "Original question pages"
+  },
+  {
+   "subject": "applied-maths",
+   "level": "ordinary",
+   "id": "am-2019-ol-3-iii",
+   "why": "shape",
+   "src": "Original question pages"
+  },
+  {
+   "subject": "applied-maths",
+   "level": "ordinary",
+   "id": "am-2023-ol-1-a-i",
+   "why": "shape",
+   "src": "Original question pages"
+  },
+  {
+   "subject": "applied-maths",
+   "level": "higher",
+   "id": "am-2011-hl-8-b-ii-length",
+   "why": "shape",
+   "src": "Original question pages"
+  },
+  {
+   "subject": "applied-maths",
+   "level": "ordinary",
+   "id": "am-2023-ol-6-iv",
+   "why": "shape",
+   "src": "Original question pages"
+  },
+  {
+   "subject": "applied-maths",
+   "level": "ordinary",
+   "id": "am-2024-ol-7-vi",
+   "why": "shape",
+   "src": "Original question pages"
+  },
+  {
+   "subject": "applied-maths",
+   "level": "higher",
+   "id": "am-2016-hl-8-b-iii",
+   "why": "shape",
+   "src": "Original question pages"
+  },
+  {
+   "subject": "applied-maths",
+   "level": "higher",
+   "id": "am-2021-hl-1-a-i",
+   "why": "shape",
+   "src": "Original question pages"
+  },
+  {
+   "subject": "applied-maths",
+   "level": "higher",
+   "id": "am-2019-hl-7-a-magnitude",
+   "why": "shape",
+   "src": "Original question pages"
+  }
+ ],
+ "arabic": [
+  {
+   "subject": "arabic",
+   "level": "ordinary",
+   "id": "ara-2021-ol-q10-d",
+   "why": "suspect:q:dot_leader"
+  },
+  {
+   "subject": "arabic",
+   "level": "ordinary",
+   "id": "ara-2023-ol-q12-b",
+   "why": "shape"
+  },
+  {
+   "subject": "arabic",
+   "level": "higher",
+   "id": "ara-2025-hl-q4",
+   "why": "shape",
+   "src": "Part 1 reading passage \u2014 answer in Arabic"
+  },
+  {
+   "subject": "arabic",
+   "level": "higher",
+   "id": "ara-2021-hl-q14",
+   "why": "shape"
+  },
+  {
+   "subject": "arabic",
+   "level": "higher",
+   "id": "ara-2023-hl-q12-d",
+   "why": "shape"
+  }
+ ],
+ "art": [
+  {
+   "subject": "art",
+   "level": "higher",
+   "id": "art-2014-hl-q7",
+   "why": "suspect:a:slash_sep"
+  },
+  {
+   "subject": "art",
+   "level": "higher",
+   "id": "art-2019-hl-q7",
+   "why": "suspect:q:newline_heavy"
+  },
+  {
+   "subject": "art",
+   "level": "ordinary",
+   "id": "art-2022-ol-q21-b",
+   "why": "shared-page",
+   "src": "Official illustrations for Question 21"
+  },
+  {
+   "subject": "art",
+   "level": "higher",
+   "id": "art-2023-hl-q6-b",
+   "why": "shared-page",
+   "src": "Official illustrations for Question 6"
+  },
+  {
+   "subject": "art",
+   "level": "higher",
+   "id": "art-2013-hl-q14-b-le-corbusier",
+   "why": "shape"
+  },
+  {
+   "subject": "art",
+   "level": "higher",
+   "id": "art-2016-hl-q6-task1",
+   "why": "shape",
+   "src": "Official illustrations for Question 6"
+  },
+  {
+   "subject": "art",
+   "level": "higher",
+   "id": "art-2021-hl-q14-a-paul-gauguin",
+   "why": "shape"
+  },
+  {
+   "subject": "art",
+   "level": "ordinary",
+   "id": "art-2017-ol-q9-b",
+   "why": "shape",
+   "src": "Official illustrations for Question 9"
+  },
+  {
+   "subject": "art",
+   "level": "higher",
+   "id": "art-2013-hl-q15-a-cubism",
+   "why": "shape"
+  },
+  {
+   "subject": "art",
+   "level": "higher",
+   "id": "art-2025-hl-q1-b",
+   "why": "shape",
+   "src": "Official illustrations for Question 1"
+  },
+  {
+   "subject": "art",
+   "level": "higher",
+   "id": "art-2020-hl-q15-a-romanticism",
+   "why": "shape"
+  },
+  {
+   "subject": "art",
+   "level": "higher",
+   "id": "art-2020-hl-q3-task2",
+   "why": "shape",
+   "src": "Official illustrations for Question 3"
+  }
+ ],
+ "biology": [
+  {
+   "subject": "biology",
+   "level": "higher",
+   "id": "bio-2019-hl-q14-b-i",
+   "why": "suspect:a:slash_sep"
+  },
+  {
+   "subject": "biology",
+   "level": "ordinary",
+   "id": "bio-2012-ol-q1",
+   "why": "suspect:q:sibling_parts"
+  },
+  {
+   "subject": "biology",
+   "level": "higher",
+   "id": "bio-2023-hl-q15-b-i",
+   "why": "suspect:q:newline_heavy"
+  },
+  {
+   "subject": "biology",
+   "level": "ordinary",
+   "id": "bio-2023-ol-deferred-q13-b-i",
+   "why": "suspect:q:dash_run"
+  },
+  {
+   "subject": "biology",
+   "level": "higher",
+   "id": "bio-2024-hl-q11-b-iv",
+   "why": "shape"
+  },
+  {
+   "subject": "biology",
+   "level": "higher",
+   "id": "bio-2021-hl-q3-f",
+   "why": "shape"
+  },
+  {
+   "subject": "biology",
+   "level": "ordinary",
+   "id": "bio-2024-ol-q17-a-i-fig",
+   "why": "shape"
+  },
+  {
+   "subject": "biology",
+   "level": "ordinary",
+   "id": "bio-2024-ol-q14-a",
+   "why": "shape"
+  },
+  {
+   "subject": "biology",
+   "level": "ordinary",
+   "id": "bio-2020-ol-q5-d",
+   "why": "shape"
+  },
+  {
+   "subject": "biology",
+   "level": "higher",
+   "id": "bio-2025-hl-deferred-q5-a",
+   "why": "shape"
+  },
+  {
+   "subject": "biology",
+   "level": "higher",
+   "id": "bio-2023-hl-q13-c-ii",
+   "why": "shape"
+  },
+  {
+   "subject": "biology",
+   "level": "higher",
+   "id": "bio-2017-hl-q12-b-ii",
+   "why": "shape"
+  }
+ ],
+ "bulgarian": [
+  {
+   "subject": "bulgarian",
+   "level": "higher",
+   "id": "bul-2016-hl-i-1-\u0431",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Bulgarian"
+  },
+  {
+   "subject": "bulgarian",
+   "level": "higher",
+   "id": "bul-2024-hl-i-1-\u0432",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Bulgarian"
+  },
+  {
+   "subject": "bulgarian",
+   "level": "higher",
+   "id": "bul-2014-hl-iii-2",
+   "why": "shape"
+  },
+  {
+   "subject": "bulgarian",
+   "level": "higher",
+   "id": "bul-2021-hl-ii-1",
+   "why": "shape"
+  },
+  {
+   "subject": "bulgarian",
+   "level": "higher",
+   "id": "bul-2014-hl-ii-1",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Bulgarian"
+  }
+ ],
+ "business": [
+  {
+   "subject": "business",
+   "level": "ordinary",
+   "id": "bus-2010-ol-s2-q3ai",
+   "why": "suspect:q:pipe_table",
+   "src": "2010 Business \u00b7 Section 2 Question 3"
+  },
+  {
+   "subject": "business",
+   "level": "ordinary",
+   "id": "bus-2013-ol-s1-q3",
+   "why": "suspect:a:slash_sep",
+   "src": "2013 Business \u00b7 Section 1 Question 3"
+  },
+  {
+   "subject": "business",
+   "level": "higher",
+   "id": "bus-2023-hl-s3-q8c",
+   "why": "suspect:q:sibling_parts",
+   "src": "2023 Business \u00b7 Section 3 Question 8"
+  },
+  {
+   "subject": "business",
+   "level": "higher",
+   "id": "bus-2012-hl-s1-q10ii",
+   "why": "suspect:q:spaced_nums",
+   "src": "2012 Business \u00b7 Section 1 Question 10"
+  },
+  {
+   "subject": "business",
+   "level": "higher",
+   "id": "bus-2015-hl-s1-q7a",
+   "why": "shared-page",
+   "src": "2015 Business \u00b7 Section 1 Question 7"
+  },
+  {
+   "subject": "business",
+   "level": "higher",
+   "id": "bus-2022-hl-s1-q10",
+   "why": "shared-page",
+   "src": "2022 Business \u00b7 Section 1 Question 10"
+  },
+  {
+   "subject": "business",
+   "level": "higher",
+   "id": "bus-2022-hl-deferred-s3-q3b",
+   "why": "shape",
+   "src": "2022 Business deferred \u00b7 Section 3 Question 3"
+  },
+  {
+   "subject": "business",
+   "level": "ordinary",
+   "id": "bus-2022-ol-s2-q8ci",
+   "why": "shape",
+   "src": "2022 Business \u00b7 Section 2 Question 8"
+  },
+  {
+   "subject": "business",
+   "level": "ordinary",
+   "id": "bus-2022-ol-deferred-s2-q9a",
+   "why": "shape",
+   "src": "2022 Business deferred \u00b7 Section 2 Question 9"
+  },
+  {
+   "subject": "business",
+   "level": "ordinary",
+   "id": "bus-2013-ol-s2-q2c",
+   "why": "shape",
+   "src": "2013 Business \u00b7 Section 2 Question 2"
+  },
+  {
+   "subject": "business",
+   "level": "higher",
+   "id": "bus-2023-hl-s3-q4b",
+   "why": "shape",
+   "src": "2023 Business \u00b7 Section 3 Question 4"
+  },
+  {
+   "subject": "business",
+   "level": "ordinary",
+   "id": "bus-2022-ol-deferred-s2-q6bii",
+   "why": "shape",
+   "src": "2022 Business deferred \u00b7 Section 2 Question 6"
+  }
+ ],
+ "chemistry": [
+  {
+   "subject": "chemistry",
+   "level": "higher",
+   "id": "chem-2012-hl-q1-a",
+   "why": "suspect:a:slash_sep"
+  },
+  {
+   "subject": "chemistry",
+   "level": "higher",
+   "id": "chem-2026-hl-q2-b-i-iv",
+   "why": "suspect:q:sibling_parts"
+  },
+  {
+   "subject": "chemistry",
+   "level": "ordinary",
+   "id": "chem-2023-ol-q9-d",
+   "why": "suspect:q:spaced_nums"
+  },
+  {
+   "subject": "chemistry",
+   "level": "ordinary",
+   "id": "chem-2024-ol-q9-a-i",
+   "why": "suspect:a:multi_slash"
+  },
+  {
+   "subject": "chemistry",
+   "level": "ordinary",
+   "id": "chem-2023-ol-q11-b-v",
+   "why": "shape"
+  },
+  {
+   "subject": "chemistry",
+   "level": "ordinary",
+   "id": "chem-2012-ol-q1-c",
+   "why": "shape"
+  },
+  {
+   "subject": "chemistry",
+   "level": "higher",
+   "id": "chem-2016-hl-q6-e",
+   "why": "shape"
+  },
+  {
+   "subject": "chemistry",
+   "level": "higher",
+   "id": "chem-2014-hl-q7-d",
+   "why": "shape"
+  },
+  {
+   "subject": "chemistry",
+   "level": "ordinary",
+   "id": "chem-2015-ol-q11-b-kc",
+   "why": "shape"
+  },
+  {
+   "subject": "chemistry",
+   "level": "higher",
+   "id": "chem-2013-hl-q9-c-calculation",
+   "why": "shape"
+  },
+  {
+   "subject": "chemistry",
+   "level": "ordinary",
+   "id": "chem-2015-ol-q11-b",
+   "why": "shape"
+  },
+  {
+   "subject": "chemistry",
+   "level": "higher",
+   "id": "chem-2012-hl-q8-b",
+   "why": "shape"
+  }
+ ],
+ "classical-studies": [
+  {
+   "subject": "classical-studies",
+   "level": "higher",
+   "id": "clas-2022-hl-t10ivc",
+   "why": "suspect:q:dash_run",
+   "src": "Paper X \u2014 the printed images"
+  },
+  {
+   "subject": "classical-studies",
+   "level": "higher",
+   "id": "clas-2024-hl-q2b",
+   "why": "shared-page",
+   "src": "Paper X \u2014 the printed images"
+  },
+  {
+   "subject": "classical-studies",
+   "level": "ordinary",
+   "id": "clas-2024-ol-q3c",
+   "why": "shared-page",
+   "src": "Paper X \u2014 the printed images"
+  },
+  {
+   "subject": "classical-studies",
+   "level": "ordinary",
+   "id": "clas-2022-ol-t5ia",
+   "why": "shape"
+  },
+  {
+   "subject": "classical-studies",
+   "level": "higher",
+   "id": "clas-2023-hl-q10b",
+   "why": "shape",
+   "src": "The printed passage"
+  },
+  {
+   "subject": "classical-studies",
+   "level": "ordinary",
+   "id": "clas-2022-ol-t3ivb",
+   "why": "shape"
+  },
+  {
+   "subject": "classical-studies",
+   "level": "higher",
+   "id": "clas-2021-hl-t10ia",
+   "why": "shape",
+   "src": "Paper X \u2014 the printed images"
+  },
+  {
+   "subject": "classical-studies",
+   "level": "ordinary",
+   "id": "clas-2021-ol-t8iid",
+   "why": "shape",
+   "src": "Paper X \u2014 the printed images"
+  },
+  {
+   "subject": "classical-studies",
+   "level": "ordinary",
+   "id": "clas-2021-ol-t3iiib",
+   "why": "shape"
+  },
+  {
+   "subject": "classical-studies",
+   "level": "higher",
+   "id": "clas-2021-hl-t2iib",
+   "why": "shape"
+  },
+  {
+   "subject": "classical-studies",
+   "level": "ordinary",
+   "id": "clas-2025-ol-q7b",
+   "why": "shape",
+   "src": "The printed passage"
+  },
+  {
+   "subject": "classical-studies",
+   "level": "higher",
+   "id": "clas-2021-hl-t3iib",
+   "why": "shape"
+  }
+ ],
+ "computer-science": [
+  {
+   "subject": "computer-science",
+   "level": "higher",
+   "id": "cs-2022-hl-q13-a-iii",
+   "why": "suspect:a:slash_sep"
+  },
+  {
+   "subject": "computer-science",
+   "level": "higher",
+   "id": "cs-2021-hl-q2",
+   "why": "suspect:q:sibling_parts"
+  },
+  {
+   "subject": "computer-science",
+   "level": "ordinary",
+   "id": "cs-2023-ol-q16-a-ii",
+   "why": "suspect:q:spaced_nums"
+  },
+  {
+   "subject": "computer-science",
+   "level": "higher",
+   "id": "cs-2022-hl-q15-c-iii",
+   "why": "suspect:a:multi_slash"
+  },
+  {
+   "subject": "computer-science",
+   "level": "ordinary",
+   "id": "cs-2021-ol-q13-a-i",
+   "why": "shape"
+  },
+  {
+   "subject": "computer-science",
+   "level": "higher",
+   "id": "cs-2020-hl-q4-a",
+   "why": "shape"
+  },
+  {
+   "subject": "computer-science",
+   "level": "higher",
+   "id": "cs-2020-hl-q16-b-ii",
+   "why": "shape"
+  },
+  {
+   "subject": "computer-science",
+   "level": "ordinary",
+   "id": "cs-2022-ol-q13-b-i",
+   "why": "shape"
+  },
+  {
+   "subject": "computer-science",
+   "level": "ordinary",
+   "id": "cs-2025-ol-q14-b-ii",
+   "why": "shape"
+  },
+  {
+   "subject": "computer-science",
+   "level": "higher",
+   "id": "cs-2023-hl-q2",
+   "why": "shape"
+  },
+  {
+   "subject": "computer-science",
+   "level": "higher",
+   "id": "cs-2022-hl-q13-b-i",
+   "why": "shape"
+  },
+  {
+   "subject": "computer-science",
+   "level": "higher",
+   "id": "cs-2023-hl-q1",
+   "why": "shape"
+  }
+ ],
+ "construction-studies": [
+  {
+   "subject": "construction-studies",
+   "level": "higher",
+   "id": "cons-2013-hl-q4-complete",
+   "why": "suspect:q:sibling_parts",
+   "src": "Wood-burning stove and solar collector heating"
+  },
+  {
+   "subject": "construction-studies",
+   "level": "ordinary",
+   "id": "cons-2020-ol-q7-a",
+   "why": "shared-page",
+   "src": "Bathroom for a person with limited mobility"
+  },
+  {
+   "subject": "construction-studies",
+   "level": "ordinary",
+   "id": "cons-2021-ol-q6-complete",
+   "why": "shared-page",
+   "src": "PPE and deep-trench safety"
+  },
+  {
+   "subject": "construction-studies",
+   "level": "ordinary",
+   "id": "cons-2021-ol-q2-b",
+   "why": "shape",
+   "src": "Insulating a solid ground floor"
+  },
+  {
+   "subject": "construction-studies",
+   "level": "higher",
+   "id": "cons-2017-hl-q9-c",
+   "why": "shape",
+   "src": "Reinforced strip foundation and concrete quality"
+  },
+  {
+   "subject": "construction-studies",
+   "level": "higher",
+   "id": "cons-2020-hl-q3-complete",
+   "why": "shape",
+   "src": "Adapting a bungalow for limited mobility and open-plan living"
+  },
+  {
+   "subject": "construction-studies",
+   "level": "higher",
+   "id": "cons-2022-hl-q6-c",
+   "why": "shape",
+   "src": "Low-impact house designed for health and wellbeing"
+  },
+  {
+   "subject": "construction-studies",
+   "level": "higher",
+   "id": "cons-2020-hl-q3-c",
+   "why": "shape",
+   "src": "Adapting a bungalow for limited mobility and open-plan living"
+  },
+  {
+   "subject": "construction-studies",
+   "level": "higher",
+   "id": "cons-2014-hl-q10-alt-complete",
+   "why": "shape",
+   "src": "Resilient and sustainable neighbourhoods (alternative Question 10)"
+  },
+  {
+   "subject": "construction-studies",
+   "level": "higher",
+   "id": "cons-2014-hl-q3-b",
+   "why": "shape",
+   "src": "Converting a storeroom to a study"
+  },
+  {
+   "subject": "construction-studies",
+   "level": "ordinary",
+   "id": "cons-2013-ol-q2-b",
+   "why": "shape",
+   "src": "Cavity fill and internal insulation of external walls"
+  },
+  {
+   "subject": "construction-studies",
+   "level": "higher",
+   "id": "cons-2014-hl-q9-complete",
+   "why": "shape",
+   "src": "Acoustic principles and a sound-insulated bedroom"
+  }
+ ],
+ "croatian": [
+  {
+   "subject": "croatian",
+   "level": "higher",
+   "id": "hrv-2025-hl-i-1-d",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Croatian"
+  },
+  {
+   "subject": "croatian",
+   "level": "higher",
+   "id": "hrv-2025-hl-ii-1",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Croatian"
+  },
+  {
+   "subject": "croatian",
+   "level": "higher",
+   "id": "hrv-2016-hl-iii-2",
+   "why": "shape"
+  },
+  {
+   "subject": "croatian",
+   "level": "higher",
+   "id": "hrv-2015-hl-i-1",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Croatian"
+  },
+  {
+   "subject": "croatian",
+   "level": "higher",
+   "id": "hrv-2019-hl-i-6",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Croatian"
+  }
+ ],
+ "czech": [
+  {
+   "subject": "czech",
+   "level": "higher",
+   "id": "cs-2024-hl-i-1",
+   "why": "suspect:q:sibling_parts",
+   "src": "Reading text \u2014 answer in Czech"
+  },
+  {
+   "subject": "czech",
+   "level": "higher",
+   "id": "cs-2018-hl-i-5",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Czech"
+  },
+  {
+   "subject": "czech",
+   "level": "higher",
+   "id": "cs-2011-hl-i-2",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Czech"
+  },
+  {
+   "subject": "czech",
+   "level": "higher",
+   "id": "cs-2024-hl-iii-1",
+   "why": "shape"
+  },
+  {
+   "subject": "czech",
+   "level": "higher",
+   "id": "cs-2016-hl-i-1",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Czech"
+  }
+ ],
+ "danish": [
+  {
+   "subject": "danish",
+   "level": "higher",
+   "id": "dan-2011-hl-i-5",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Danish"
+  },
+  {
+   "subject": "danish",
+   "level": "higher",
+   "id": "dan-2023-hl-i-5",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Danish"
+  },
+  {
+   "subject": "danish",
+   "level": "higher",
+   "id": "dan-2011-hl-iii-1",
+   "why": "shape"
+  },
+  {
+   "subject": "danish",
+   "level": "higher",
+   "id": "dan-2015-hl-i-1",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Danish"
+  },
+  {
+   "subject": "danish",
+   "level": "higher",
+   "id": "dan-2022-hl-i-1-d",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Danish"
+  }
+ ],
+ "dcg": [
+  {
+   "subject": "dcg",
+   "level": "higher",
+   "id": "dcg-2021-hl-c1b",
+   "why": "suspect:q:sibling_parts",
+   "src": "The contour map for Question C-1, on the back page of the Section A booklet"
+  },
+  {
+   "subject": "dcg",
+   "level": "higher",
+   "id": "dcg-2025-hl-b2d",
+   "why": "suspect:q:dash_run"
+  },
+  {
+   "subject": "dcg",
+   "level": "higher",
+   "id": "dcg-2024-hl-c2d",
+   "why": "suspect:a:dot_leader"
+  },
+  {
+   "subject": "dcg",
+   "level": "ordinary",
+   "id": "dcg-2018-ol-a4a",
+   "why": "shape"
+  },
+  {
+   "subject": "dcg",
+   "level": "higher",
+   "id": "dcg-2017-hl-c5a-7",
+   "why": "shape"
+  },
+  {
+   "subject": "dcg",
+   "level": "ordinary",
+   "id": "dcg-2017-ol-b2b",
+   "why": "shape"
+  },
+  {
+   "subject": "dcg",
+   "level": "ordinary",
+   "id": "dcg-2011-ol-c1b",
+   "why": "shape",
+   "src": "The contour map for Question C-1, on the back page of the Section A booklet"
+  },
+  {
+   "subject": "dcg",
+   "level": "higher",
+   "id": "dcg-2021-hl-c1a-2",
+   "why": "shape",
+   "src": "The contour map for Question C-1, on the back page of the Section A booklet"
+  },
+  {
+   "subject": "dcg",
+   "level": "ordinary",
+   "id": "dcg-2010-ol-c1c",
+   "why": "shape",
+   "src": "The contour map for Question C-1, on the back page of the Section A booklet"
+  },
+  {
+   "subject": "dcg",
+   "level": "ordinary",
+   "id": "dcg-2025-ol-c3a",
+   "why": "shape"
+  },
+  {
+   "subject": "dcg",
+   "level": "higher",
+   "id": "dcg-2017-hl-c5a-8",
+   "why": "shape"
+  },
+  {
+   "subject": "dcg",
+   "level": "ordinary",
+   "id": "dcg-2015-ol-c4b",
+   "why": "shape"
+  }
+ ],
+ "dutch": [
+  {
+   "subject": "dutch",
+   "level": "higher",
+   "id": "nld-2016-hl-ii-1",
+   "why": "suspect:a:dot_leader",
+   "src": "Reading text \u2014 answer in Dutch"
+  },
+  {
+   "subject": "dutch",
+   "level": "higher",
+   "id": "nld-2015-hl-i-1-a",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Dutch"
+  },
+  {
+   "subject": "dutch",
+   "level": "higher",
+   "id": "nld-2026-hl-i-6",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Dutch"
+  },
+  {
+   "subject": "dutch",
+   "level": "higher",
+   "id": "nld-2023-hl-iii-1",
+   "why": "shape"
+  },
+  {
+   "subject": "dutch",
+   "level": "higher",
+   "id": "nld-2019-hl-i-6",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Dutch"
+  }
+ ],
+ "economics": [
+  {
+   "subject": "economics",
+   "level": "ordinary",
+   "id": "econ-2026-ol-q14-c-i",
+   "why": "suspect:a:pipe_table",
+   "src": "Official question page"
+  },
+  {
+   "subject": "economics",
+   "level": "ordinary",
+   "id": "econ-2014-ol-sb-q8-c-i",
+   "why": "suspect:a:slash_sep",
+   "src": "Official question page"
+  },
+  {
+   "subject": "economics",
+   "level": "ordinary",
+   "id": "econ-2023-ol-sa-q10-private",
+   "why": "suspect:a:newline_heavy",
+   "src": "English question 10"
+  },
+  {
+   "subject": "economics",
+   "level": "ordinary",
+   "id": "econ-2011-ol-sb-q2-b",
+   "why": "suspect:q:sibling_parts",
+   "src": "Official question page"
+  },
+  {
+   "subject": "economics",
+   "level": "higher",
+   "id": "econ-2020-hl-sa-q6-ii-yes",
+   "why": "shared-page",
+   "src": "Official question page"
+  },
+  {
+   "subject": "economics",
+   "level": "ordinary",
+   "id": "econ-2018-ol-sa-q9",
+   "why": "shared-page",
+   "src": "Official question page"
+  },
+  {
+   "subject": "economics",
+   "level": "ordinary",
+   "id": "econ-2017-ol-sb-q7-b-ii",
+   "why": "shape",
+   "src": "Official question page"
+  },
+  {
+   "subject": "economics",
+   "level": "ordinary",
+   "id": "econ-2026-ol-q13-a-i",
+   "why": "shape",
+   "src": "Official question page"
+  },
+  {
+   "subject": "economics",
+   "level": "higher",
+   "id": "econ-2019-hl-sb-q1-c-i",
+   "why": "shape",
+   "src": "Official question page"
+  },
+  {
+   "subject": "economics",
+   "level": "ordinary",
+   "id": "econ-2012-ol-sb-q8-b-i",
+   "why": "shape",
+   "src": "Official question page"
+  },
+  {
+   "subject": "economics",
+   "level": "ordinary",
+   "id": "econ-2019-ol-sa-q6",
+   "why": "shape",
+   "src": "Official question page"
+  },
+  {
+   "subject": "economics",
+   "level": "higher",
+   "id": "econ-2022-hl-q14-b-ii",
+   "why": "shape",
+   "src": "English question 14"
+  }
+ ],
+ "engineering": [
+  {
+   "subject": "engineering",
+   "level": "higher",
+   "id": "eng-2020-hl-q4-b-ii",
+   "why": "suspect:a:pipe_table"
+  },
+  {
+   "subject": "engineering",
+   "level": "ordinary",
+   "id": "eng-2014-ol-q5-a-ii",
+   "why": "suspect:a:slash_sep"
+  },
+  {
+   "subject": "engineering",
+   "level": "higher",
+   "id": "eng-2019-hl-q4-a",
+   "why": "suspect:q:sibling_parts"
+  },
+  {
+   "subject": "engineering",
+   "level": "ordinary",
+   "id": "eng-2017-ol-q6-c-ii",
+   "why": "suspect:a:sibling_parts"
+  },
+  {
+   "subject": "engineering",
+   "level": "ordinary",
+   "id": "eng-2011-ol-q6-c",
+   "why": "shape"
+  },
+  {
+   "subject": "engineering",
+   "level": "higher",
+   "id": "eng-2022-hl-q3-b-iii",
+   "why": "shape"
+  },
+  {
+   "subject": "engineering",
+   "level": "higher",
+   "id": "eng-2020-hl-q5-b-i",
+   "why": "shape"
+  },
+  {
+   "subject": "engineering",
+   "level": "higher",
+   "id": "eng-2025-hl-q8-c-i",
+   "why": "shape"
+  },
+  {
+   "subject": "engineering",
+   "level": "higher",
+   "id": "eng-2023-hl-q3-b-iii",
+   "why": "shape"
+  },
+  {
+   "subject": "engineering",
+   "level": "higher",
+   "id": "eng-2019-hl-q7-b-i",
+   "why": "shape"
+  },
+  {
+   "subject": "engineering",
+   "level": "higher",
+   "id": "eng-2014-hl-q7-b-ii",
+   "why": "shape"
+  },
+  {
+   "subject": "engineering",
+   "level": "higher",
+   "id": "eng-2020-hl-q8-c-ii",
+   "why": "shape"
+  }
+ ],
+ "english": [
+  {
+   "subject": "english",
+   "level": "ordinary",
+   "id": "english-2011-ol-p1-t1-a-iii",
+   "why": "suspect:q:sibling_parts",
+   "src": "Out of This World \u2014 Magnificent Desolation"
+  },
+  {
+   "subject": "english",
+   "level": "ordinary",
+   "id": "english-2018-ol-p2-single-f-q3-iii",
+   "why": "shape"
+  },
+  {
+   "subject": "english",
+   "level": "higher",
+   "id": "english-2025-hl-deferred-p1-t3-a-i",
+   "why": "shape",
+   "src": "Communities in All Their Diversity"
+  },
+  {
+   "subject": "english",
+   "level": "ordinary",
+   "id": "english-2018-ol-p2-single-e-q2",
+   "why": "shape"
+  },
+  {
+   "subject": "english",
+   "level": "ordinary",
+   "id": "english-2017-ol-p2-prescribed-a-q1-a",
+   "why": "shape",
+   "src": "The Arrival of the Bee Box"
+  },
+  {
+   "subject": "english",
+   "level": "ordinary",
+   "id": "english-2016-ol-p2-single-a-q3-i",
+   "why": "shape"
+  },
+  {
+   "subject": "english",
+   "level": "ordinary",
+   "id": "english-2020-ol-p2-prescribed-b-q1-b",
+   "why": "shape",
+   "src": "Aunt Jennifer\u2019s Tigers"
+  },
+  {
+   "subject": "english",
+   "level": "ordinary",
+   "id": "english-2017-ol-p2-single-h-q3-iii",
+   "why": "shape"
+  },
+  {
+   "subject": "english",
+   "level": "ordinary",
+   "id": "english-2014-ol-p2-prescribed-b-q1-b",
+   "why": "shape",
+   "src": "Poems for Breakfast"
+  },
+  {
+   "subject": "english",
+   "level": "ordinary",
+   "id": "english-2025-ol-p2-single-h-q3",
+   "why": "shape"
+  },
+  {
+   "subject": "english",
+   "level": "ordinary",
+   "id": "english-2015-ol-p1-t1-a-iii-a",
+   "why": "shape",
+   "src": "Animals"
+  },
+  {
+   "subject": "english",
+   "level": "ordinary",
+   "id": "english-2018-ol-p2-single-h-q3-ii",
+   "why": "shape"
+  }
+ ],
+ "estonian": [
+  {
+   "subject": "estonian",
+   "level": "higher",
+   "id": "est-2025-hl-ii-1",
+   "why": "suspect:q:dash_run",
+   "src": "Reading text \u2014 answer in Estonian"
+  },
+  {
+   "subject": "estonian",
+   "level": "higher",
+   "id": "est-2013-hl-i-5",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Estonian"
+  },
+  {
+   "subject": "estonian",
+   "level": "higher",
+   "id": "est-2012-hl-i-1-b",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Estonian"
+  },
+  {
+   "subject": "estonian",
+   "level": "higher",
+   "id": "est-2015-hl-iii-2",
+   "why": "shape"
+  },
+  {
+   "subject": "estonian",
+   "level": "higher",
+   "id": "est-2010-hl-i-4",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Estonian"
+  }
+ ],
+ "finnish": [
+  {
+   "subject": "finnish",
+   "level": "higher",
+   "id": "fin-2024-hl-i-6",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Finnish"
+  },
+  {
+   "subject": "finnish",
+   "level": "higher",
+   "id": "fin-2025-hl-i-3",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Finnish"
+  },
+  {
+   "subject": "finnish",
+   "level": "higher",
+   "id": "fin-2011-hl-iii-2",
+   "why": "shape"
+  },
+  {
+   "subject": "finnish",
+   "level": "higher",
+   "id": "fin-2019-hl-i-3",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Finnish"
+  },
+  {
+   "subject": "finnish",
+   "level": "higher",
+   "id": "fin-2010-hl-iii-2",
+   "why": "shape"
+  }
+ ],
+ "french": [
+  {
+   "subject": "french",
+   "level": "ordinary",
+   "id": "fr-2017-ol-reading-a2-q8",
+   "why": "suspect:a:slash_sep",
+   "src": "Reading Comprehension 2"
+  },
+  {
+   "subject": "french",
+   "level": "higher",
+   "id": "fr-2024-hl-writing-b3",
+   "why": "suspect:q:repl_char",
+   "src": "Printed writing task"
+  },
+  {
+   "subject": "french",
+   "level": "ordinary",
+   "id": "fr-2025-ol-writing-b2a",
+   "why": "suspect:q:newline_heavy",
+   "src": "Printed writing task"
+  },
+  {
+   "subject": "french",
+   "level": "ordinary",
+   "id": "fr-2010-ol-cloze-b1a-gap-5",
+   "why": "suspect:q:dash_run",
+   "src": "Section B \u00b7 Q1(a) \u2014 gap 5"
+  },
+  {
+   "subject": "french",
+   "level": "higher",
+   "id": "fr-2022-hl-writing-b5",
+   "why": "shared-page",
+   "src": "Original writing prompt and illustration"
+  },
+  {
+   "subject": "french",
+   "level": "higher",
+   "id": "fr-2024-hl-writing-b2",
+   "why": "shared-page",
+   "src": "Printed writing task"
+  },
+  {
+   "subject": "french",
+   "level": "higher",
+   "id": "fr-2017-hl-reading-a2-q5-i",
+   "why": "shape",
+   "src": "Reading Comprehension 2"
+  },
+  {
+   "subject": "french",
+   "level": "ordinary",
+   "id": "fr-2010-ol-listening-lc-q2",
+   "why": "shape",
+   "src": "Listening Section III \u00b7 original questions"
+  },
+  {
+   "subject": "french",
+   "level": "ordinary",
+   "id": "fr-2013-ol-listening-ld-q3",
+   "why": "shape",
+   "src": "Listening Section IV \u00b7 original questions"
+  },
+  {
+   "subject": "french",
+   "level": "ordinary",
+   "id": "fr-2021-ol-a3-7",
+   "why": "shape",
+   "src": "Reading Comprehension 3"
+  },
+  {
+   "subject": "french",
+   "level": "ordinary",
+   "id": "fr-2023-ol-b-1-a",
+   "why": "shape",
+   "src": "The printed letter \u2014 answer in French"
+  },
+  {
+   "subject": "french",
+   "level": "ordinary",
+   "id": "fr-2022-ol-writing-b3a",
+   "why": "shape",
+   "src": "Printed writing task"
+  }
+ ],
+ "geography": [
+  {
+   "subject": "geography",
+   "level": "higher",
+   "id": "geography-2010-hl-p2-q7a-iii",
+   "why": "suspect:a:slash_sep",
+   "src": "Official question page"
+  },
+  {
+   "subject": "geography",
+   "level": "higher",
+   "id": "geography-2010-hl-p2-q4a",
+   "why": "suspect:q:sibling_parts"
+  },
+  {
+   "subject": "geography",
+   "level": "higher",
+   "id": "geography-2024-hl-deferred-p2-q5b",
+   "why": "suspect:a:multi_slash"
+  },
+  {
+   "subject": "geography",
+   "level": "higher",
+   "id": "geography-2020-hl-p1-q2",
+   "why": "suspect:q:newline_heavy",
+   "src": "Official question page"
+  },
+  {
+   "subject": "geography",
+   "level": "ordinary",
+   "id": "geography-2022-ol-p1-q8",
+   "why": "shared-page",
+   "src": "Official 1:50 000 map extract"
+  },
+  {
+   "subject": "geography",
+   "level": "ordinary",
+   "id": "geography-2013-ol-p1-q3",
+   "why": "shared-page",
+   "src": "Official question page"
+  },
+  {
+   "subject": "geography",
+   "level": "ordinary",
+   "id": "geography-2011-ol-p2-q10a-ii",
+   "why": "shape",
+   "src": "Official question page"
+  },
+  {
+   "subject": "geography",
+   "level": "ordinary",
+   "id": "geography-2017-ol-p2-q1b-ii",
+   "why": "shape"
+  },
+  {
+   "subject": "geography",
+   "level": "higher",
+   "id": "geography-2011-hl-p1-q2",
+   "why": "shape",
+   "src": "Official 1:50 000 map extract"
+  },
+  {
+   "subject": "geography",
+   "level": "ordinary",
+   "id": "geography-2010-ol-p1-q4",
+   "why": "shape",
+   "src": "Official question page"
+  },
+  {
+   "subject": "geography",
+   "level": "higher",
+   "id": "geography-2018-hl-p2-q11a-iii",
+   "why": "shape",
+   "src": "Official question page"
+  },
+  {
+   "subject": "geography",
+   "level": "ordinary",
+   "id": "geography-2023-ol-p2-q7b-iii",
+   "why": "shape"
+  }
+ ],
+ "german": [
+  {
+   "subject": "german",
+   "level": "higher",
+   "id": "de-2011-hl-t1-2-a",
+   "why": "suspect:a:slash_sep",
+   "src": "TEXT I \u2014 answer in English or Irish"
+  },
+  {
+   "subject": "german",
+   "level": "ordinary",
+   "id": "de-2017-ol-l3-4",
+   "why": "suspect:q:sibling_parts",
+   "src": "Third Part \u2014 Question 4"
+  },
+  {
+   "subject": "german",
+   "level": "higher",
+   "id": "de-2018-hl-t1-1-a",
+   "why": "suspect:a:multi_slash",
+   "src": "TEXT I \u2014 answer in German"
+  },
+  {
+   "subject": "german",
+   "level": "higher",
+   "id": "de-2011-hl-l2-1",
+   "why": "suspect:q:dash_run",
+   "src": "Second Part \u2014 Question 1"
+  },
+  {
+   "subject": "german",
+   "level": "higher",
+   "id": "de-2026-hl-t1-2-c-i",
+   "why": "shape",
+   "src": "TEXT I \u2014 answer in English or Irish"
+  },
+  {
+   "subject": "german",
+   "level": "higher",
+   "id": "de-2017-hl-l1-3-i",
+   "why": "shape",
+   "src": "First Part \u2014 Question 3(i)"
+  },
+  {
+   "subject": "german",
+   "level": "higher",
+   "id": "de-2026-hl-sp-a",
+   "why": "shape",
+   "src": "Schriftliche Produktion (a) \u2014 answer in German"
+  },
+  {
+   "subject": "german",
+   "level": "ordinary",
+   "id": "de-2026-ol-sp-a-fill",
+   "why": "shape",
+   "src": "Schriftliche Produktion (a) \u2014 answer in German"
+  },
+  {
+   "subject": "german",
+   "level": "ordinary",
+   "id": "de-2026-ol-l4-2-i",
+   "why": "shape",
+   "src": "Fourth Part \u2014 Question 2(i)"
+  },
+  {
+   "subject": "german",
+   "level": "higher",
+   "id": "de-2014-hl-l2-1",
+   "why": "shape",
+   "src": "Second Part \u2014 Question 1"
+  },
+  {
+   "subject": "german",
+   "level": "ordinary",
+   "id": "de-2015-ol-t2-3",
+   "why": "shape",
+   "src": "TEXT II \u2014 answer in English or Irish"
+  },
+  {
+   "subject": "german",
+   "level": "ordinary",
+   "id": "de-2014-ol-at-b",
+   "why": "shape",
+   "src": "\u00c4u\u00dferung zum Thema (b) \u2014 answer in German"
+  }
+ ],
+ "history": [
+  {
+   "subject": "history",
+   "level": "ordinary",
+   "id": "hist-2010-ol-em-s3t2a-q2",
+   "why": "suspect:a:slash_sep",
+   "src": "The extract"
+  },
+  {
+   "subject": "history",
+   "level": "ordinary",
+   "id": "hist-2013-ol-lm-s3t6a-q4",
+   "why": "shared-page",
+   "src": "The extract"
+  },
+  {
+   "subject": "history",
+   "level": "ordinary",
+   "id": "hist-2023-ol-em-s3t3c",
+   "why": "shape"
+  },
+  {
+   "subject": "history",
+   "level": "ordinary",
+   "id": "hist-2010-ol-lm-s3t6a-q2",
+   "why": "shape",
+   "src": "The extract"
+  },
+  {
+   "subject": "history",
+   "level": "higher",
+   "id": "hist-2026-hl-lm-s1-q2b",
+   "why": "shape",
+   "src": "The documents"
+  },
+  {
+   "subject": "history",
+   "level": "higher",
+   "id": "hist-2022-hl-deferred-lm-s1-q3b",
+   "why": "shape",
+   "src": "The documents"
+  },
+  {
+   "subject": "history",
+   "level": "ordinary",
+   "id": "hist-2016-ol-lm-s2t5a-q1",
+   "why": "shape",
+   "src": "The extract"
+  },
+  {
+   "subject": "history",
+   "level": "higher",
+   "id": "hist-2010-hl-lm-s2t2-q1",
+   "why": "shape"
+  },
+  {
+   "subject": "history",
+   "level": "ordinary",
+   "id": "hist-2015-ol-em-s2t4a-q1",
+   "why": "shape",
+   "src": "The extract"
+  },
+  {
+   "subject": "history",
+   "level": "higher",
+   "id": "hist-2016-hl-em-s1-q3a",
+   "why": "shape",
+   "src": "The documents"
+  },
+  {
+   "subject": "history",
+   "level": "ordinary",
+   "id": "hist-2015-ol-lm-s2t6a-q3",
+   "why": "shape",
+   "src": "The extract"
+  },
+  {
+   "subject": "history",
+   "level": "higher",
+   "id": "hist-2026-hl-em-s1-q4",
+   "why": "shape"
+  }
+ ],
+ "home-economics": [
+  {
+   "subject": "home-economics",
+   "level": "higher",
+   "id": "he-2018-hl-sc-q1bii",
+   "why": "suspect:a:pipe_table",
+   "src": "Source and question"
+  },
+  {
+   "subject": "home-economics",
+   "level": "higher",
+   "id": "he-2024-hl-sa-q3",
+   "why": "suspect:q:pipe_table"
+  },
+  {
+   "subject": "home-economics",
+   "level": "ordinary",
+   "id": "he-2010-ol-sa-q7",
+   "why": "suspect:a:slash_sep",
+   "src": "Source and question"
+  },
+  {
+   "subject": "home-economics",
+   "level": "ordinary",
+   "id": "he-2021-ol-sc-q2ai",
+   "why": "suspect:q:sibling_parts"
+  },
+  {
+   "subject": "home-economics",
+   "level": "ordinary",
+   "id": "he-2014-ol-sa-q2",
+   "why": "shared-page",
+   "src": "Source and question"
+  },
+  {
+   "subject": "home-economics",
+   "level": "ordinary",
+   "id": "he-2025-ol-sa-q6",
+   "why": "shared-page",
+   "src": "Source and question"
+  },
+  {
+   "subject": "home-economics",
+   "level": "higher",
+   "id": "he-2020-hl-sc-q3bi",
+   "why": "shape",
+   "src": "Source and question"
+  },
+  {
+   "subject": "home-economics",
+   "level": "ordinary",
+   "id": "he-2020-ol-sc-q1aiii",
+   "why": "shape",
+   "src": "Source and question"
+  },
+  {
+   "subject": "home-economics",
+   "level": "higher",
+   "id": "he-2021-hl-sb-q2a",
+   "why": "shape"
+  },
+  {
+   "subject": "home-economics",
+   "level": "ordinary",
+   "id": "he-2026-ol-sa-q14",
+   "why": "shape",
+   "src": "Source and question"
+  },
+  {
+   "subject": "home-economics",
+   "level": "higher",
+   "id": "he-2012-hl-sc-q3aiii",
+   "why": "shape",
+   "src": "Source and question"
+  },
+  {
+   "subject": "home-economics",
+   "level": "ordinary",
+   "id": "he-2021-ol-sa-q1",
+   "why": "shape"
+  }
+ ],
+ "hungarian": [
+  {
+   "subject": "hungarian",
+   "level": "higher",
+   "id": "hun-2024-hl-i-5",
+   "why": "suspect:a:dot_leader",
+   "src": "Reading text \u2014 answer in Hungarian"
+  },
+  {
+   "subject": "hungarian",
+   "level": "higher",
+   "id": "hun-2023-hl-i-1-c",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Hungarian"
+  },
+  {
+   "subject": "hungarian",
+   "level": "higher",
+   "id": "hun-2026-hl-i-1-b",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Hungarian"
+  },
+  {
+   "subject": "hungarian",
+   "level": "higher",
+   "id": "hun-2014-hl-iii-1",
+   "why": "shape"
+  },
+  {
+   "subject": "hungarian",
+   "level": "higher",
+   "id": "hun-2023-hl-i-6",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Hungarian"
+  }
+ ],
+ "irish": [
+  {
+   "subject": "irish",
+   "level": "higher",
+   "id": "irish-2016-hl-p1-composition-c-b",
+   "why": "suspect:a:slash_sep",
+   "src": "Gaeilge Ardleibh\u00e9al 2016 \u00b7 P\u00e1ip\u00e9ar 1 \u00b7 Ceapad\u00f3ireacht C(b)"
+  },
+  {
+   "subject": "irish",
+   "level": "higher",
+   "id": "irish-2025-hl-p2-poetry-3b-b",
+   "why": "suspect:q:sibling_parts"
+  },
+  {
+   "subject": "irish",
+   "level": "ordinary",
+   "id": "irish-2011-ol-p2-prose-ainmnithe-b-i",
+   "why": "suspect:q:newline_heavy",
+   "src": "Pr\u00f3s Ainmnithe (b)(i)"
+  },
+  {
+   "subject": "irish",
+   "level": "higher",
+   "id": "irish-2011-hl-p1-reading-a-q3",
+   "why": "suspect:a:dot_leader",
+   "src": "Tamall ag m\u00faineadh na Gaeilge sa Pholainn"
+  },
+  {
+   "subject": "irish",
+   "level": "ordinary",
+   "id": "irish-2013-ol-p2-reading-a-q3",
+   "why": "shape",
+   "src": "JFK in \u00c9irinn \u2013 Caoga Bliain \u00d3 Shin"
+  },
+  {
+   "subject": "irish",
+   "level": "higher",
+   "id": "irish-2010-hl-listening-c-p3",
+   "why": "shape",
+   "src": "Gaeilge Ardleibh\u00e9al 2010 \u00b7 Triail Chluastuisceana \u00b7 Cuid C \u00b7 P\u00edosa a Tr\u00ed"
+  },
+  {
+   "subject": "irish",
+   "level": "higher",
+   "id": "irish-2024-hl-deferred-p2-prose-2a-a-caca-milis",
+   "why": "shape"
+  },
+  {
+   "subject": "irish",
+   "level": "ordinary",
+   "id": "irish-2026-ol-p2-prose-2a-a-caca-milis",
+   "why": "shape",
+   "src": "C\u00e1ca Milis"
+  },
+  {
+   "subject": "irish",
+   "level": "foundation",
+   "id": "irish-2011-fl-a-10a",
+   "why": "shape",
+   "src": "Gaeilge Bonnleibh\u00e9al 2011 \u00b7 Cluastuiscint \u00b7 Ceist 10(a)"
+  },
+  {
+   "subject": "irish",
+   "level": "higher",
+   "id": "irish-2022-hl-p2-literature-4-d",
+   "why": "shape"
+  },
+  {
+   "subject": "irish",
+   "level": "higher",
+   "id": "irish-2022-hl-p2-reading-b-q5",
+   "why": "shape",
+   "src": "Ceol Traidisi\u00fanta na h\u00c9ireann"
+  },
+  {
+   "subject": "irish",
+   "level": "higher",
+   "id": "irish-2022-hl-deferred-p1-listening-b-c2-first",
+   "why": "shape",
+   "src": "Gaeilge Ardleibh\u00e9al 2022 (Scr\u00fad\u00fa Iarchurtha) \u00b7 P\u00e1ip\u00e9ar 1 \u00b7 Cluastuiscint Cuid B \u00b7 Comhr\u00e1 a D\u00f3 \u00b7 An Ch\u00e9ad Mh\u00edr"
+  }
+ ],
+ "italian": [
+  {
+   "subject": "italian",
+   "level": "higher",
+   "id": "it-2025-hl-lb1-4",
+   "why": "suspect:a:slash_sep",
+   "src": "Dialogue 1 \u2014 Question 4"
+  },
+  {
+   "subject": "italian",
+   "level": "ordinary",
+   "id": "it-2019-ol-la-3",
+   "why": "suspect:q:sibling_parts",
+   "src": "Section A \u2014 Question 3"
+  },
+  {
+   "subject": "italian",
+   "level": "higher",
+   "id": "it-2023-hl-c-2",
+   "why": "suspect:q:newline_heavy",
+   "src": "Writing"
+  },
+  {
+   "subject": "italian",
+   "level": "ordinary",
+   "id": "it-2026-ol-lb1-1",
+   "why": "suspect:a:flat_fraction",
+   "src": "Dialogue 1 \u2014 Question 1"
+  },
+  {
+   "subject": "italian",
+   "level": "ordinary",
+   "id": "it-2018-ol-b1-3-a",
+   "why": "shape",
+   "src": "Publicity piece 1 \u2014 answer in English or Irish"
+  },
+  {
+   "subject": "italian",
+   "level": "higher",
+   "id": "it-2025-hl-lb1-3",
+   "why": "shape",
+   "src": "Dialogue 1 \u2014 Question 3"
+  },
+  {
+   "subject": "italian",
+   "level": "higher",
+   "id": "it-2022-hl-la-5",
+   "why": "shape",
+   "src": "Section A \u2014 Question 5"
+  },
+  {
+   "subject": "italian",
+   "level": "higher",
+   "id": "it-2018-hl-c-3-b",
+   "why": "shape",
+   "src": "Writing"
+  },
+  {
+   "subject": "italian",
+   "level": "higher",
+   "id": "it-2018-hl-b2a-3-a",
+   "why": "shape"
+  },
+  {
+   "subject": "italian",
+   "level": "higher",
+   "id": "it-2020-hl-a-4-a",
+   "why": "shape",
+   "src": "Journalistic passage \u2014 answer in Italian"
+  },
+  {
+   "subject": "italian",
+   "level": "higher",
+   "id": "it-2018-hl-lb3-8",
+   "why": "shape",
+   "src": "Dialogue 3 \u2014 Question 8"
+  },
+  {
+   "subject": "italian",
+   "level": "higher",
+   "id": "it-2018-hl-a-1-b",
+   "why": "shape"
+  }
+ ],
+ "japanese": [
+  {
+   "subject": "japanese",
+   "level": "higher",
+   "id": "ja-2015-hl-lb-2",
+   "why": "suspect:a:slash_sep",
+   "src": "Original examination material"
+  },
+  {
+   "subject": "japanese",
+   "level": "higher",
+   "id": "ja-2022-hl-1a-1",
+   "why": "suspect:q:sibling_parts",
+   "src": "Original examination material"
+  },
+  {
+   "subject": "japanese",
+   "level": "ordinary",
+   "id": "ja-2013-ol-4",
+   "why": "suspect:q:newline_heavy",
+   "src": "Original examination material"
+  },
+  {
+   "subject": "japanese",
+   "level": "ordinary",
+   "id": "ja-2012-ol-1-6-i",
+   "why": "suspect:q:dash_run",
+   "src": "Original examination material"
+  },
+  {
+   "subject": "japanese",
+   "level": "ordinary",
+   "id": "ja-2010-ol-3d",
+   "why": "shared-page",
+   "src": "Original examination material"
+  },
+  {
+   "subject": "japanese",
+   "level": "higher",
+   "id": "ja-2023-hl-2a-3-iii",
+   "why": "shared-page",
+   "src": "Original examination material"
+  },
+  {
+   "subject": "japanese",
+   "level": "ordinary",
+   "id": "ja-2018-ol-la-2-iii",
+   "why": "shape",
+   "src": "Original examination material"
+  },
+  {
+   "subject": "japanese",
+   "level": "ordinary",
+   "id": "ja-2010-ol-2-4-i",
+   "why": "shape",
+   "src": "Original examination material"
+  },
+  {
+   "subject": "japanese",
+   "level": "ordinary",
+   "id": "ja-2015-ol-5",
+   "why": "shape",
+   "src": "Original examination material"
+  },
+  {
+   "subject": "japanese",
+   "level": "ordinary",
+   "id": "ja-2011-ol-1-1",
+   "why": "shape",
+   "src": "Original examination material"
+  },
+  {
+   "subject": "japanese",
+   "level": "higher",
+   "id": "ja-2023-hl-2a-4",
+   "why": "shape",
+   "src": "Original examination material"
+  },
+  {
+   "subject": "japanese",
+   "level": "ordinary",
+   "id": "ja-2011-ol-3b-1",
+   "why": "shape",
+   "src": "Original examination material"
+  }
+ ],
+ "latin": [
+  {
+   "subject": "latin",
+   "level": "higher",
+   "id": "lat-2024-hl-b-q1-iv",
+   "why": "suspect:a:slash_sep",
+   "src": "The Latin passage, its summary and the printed vocabulary"
+  },
+  {
+   "subject": "latin",
+   "level": "higher",
+   "id": "lat-2021-hl-b-q1-vii",
+   "why": "shape",
+   "src": "The Latin passage, its summary and the printed vocabulary"
+  },
+  {
+   "subject": "latin",
+   "level": "higher",
+   "id": "lat-2024-hl-a-q3-iie",
+   "why": "shape"
+  },
+  {
+   "subject": "latin",
+   "level": "ordinary",
+   "id": "lat-2023-ol-a-q3-iif",
+   "why": "shape"
+  },
+  {
+   "subject": "latin",
+   "level": "higher",
+   "id": "lat-2025-hl-a-q3-iib",
+   "why": "shape"
+  }
+ ],
+ "latvian": [
+  {
+   "subject": "latvian",
+   "level": "higher",
+   "id": "lv-2010-hl-i-1",
+   "why": "suspect:q:sibling_parts",
+   "src": "Reading text \u2014 answer in Latvian"
+  },
+  {
+   "subject": "latvian",
+   "level": "higher",
+   "id": "lv-2019-hl-i-5",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Latvian"
+  },
+  {
+   "subject": "latvian",
+   "level": "higher",
+   "id": "lv-2013-hl-i-3",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Latvian"
+  },
+  {
+   "subject": "latvian",
+   "level": "higher",
+   "id": "lv-2014-hl-i-1",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Latvian"
+  },
+  {
+   "subject": "latvian",
+   "level": "higher",
+   "id": "lv-2022-hl-ii-1",
+   "why": "shape"
+  }
+ ],
+ "lcvp": [
+  {
+   "subject": "lcvp",
+   "level": "common",
+   "id": "lcvp-2020-cl-b1",
+   "why": "suspect:a:pipe_table",
+   "src": "Climate Entrepreneur \u2014 complete case study"
+  },
+  {
+   "subject": "lcvp",
+   "level": "common",
+   "id": "lcvp-2026-cl-a6",
+   "why": "suspect:a:slash_sep",
+   "src": "Original question"
+  },
+  {
+   "subject": "lcvp",
+   "level": "common",
+   "id": "lcvp-2018-cl-b1",
+   "why": "suspect:q:sibling_parts",
+   "src": "Volunteering \u2014 complete case study"
+  },
+  {
+   "subject": "lcvp",
+   "level": "common",
+   "id": "lcvp-2017-cl-c1b",
+   "why": "suspect:a:dot_leader",
+   "src": "Original question"
+  },
+  {
+   "subject": "lcvp",
+   "level": "common",
+   "id": "lcvp-2025-cl-b3ii",
+   "why": "shared-page",
+   "src": "Glenhale \u2014 complete case study"
+  },
+  {
+   "subject": "lcvp",
+   "level": "common",
+   "id": "lcvp-2020-cl-a3",
+   "why": "shared-page",
+   "src": "Original question"
+  },
+  {
+   "subject": "lcvp",
+   "level": "common",
+   "id": "lcvp-2021-cl-c6d",
+   "why": "shape",
+   "src": "Original question"
+  },
+  {
+   "subject": "lcvp",
+   "level": "common",
+   "id": "lcvp-2018-cl-a6",
+   "why": "shape",
+   "src": "Original question"
+  },
+  {
+   "subject": "lcvp",
+   "level": "common",
+   "id": "lcvp-2023-cl-c5ci",
+   "why": "shape",
+   "src": "Original question"
+  },
+  {
+   "subject": "lcvp",
+   "level": "common",
+   "id": "lcvp-2018-cl-c6b",
+   "why": "shape",
+   "src": "Original question"
+  },
+  {
+   "subject": "lcvp",
+   "level": "common",
+   "id": "lcvp-2023-cl-a6",
+   "why": "shape",
+   "src": "Original question"
+  },
+  {
+   "subject": "lcvp",
+   "level": "common",
+   "id": "lcvp-2026-cl-a2",
+   "why": "shape",
+   "src": "Original question"
+  }
+ ],
+ "lithuanian": [
+  {
+   "subject": "lithuanian",
+   "level": "higher",
+   "id": "lt-2026-hl-a-1-j",
+   "why": "suspect:a:slash_sep",
+   "src": "Reading text \u2014 answer in English or Irish"
+  },
+  {
+   "subject": "lithuanian",
+   "level": "higher",
+   "id": "lt-2026-hl-a-2-f",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Lithuanian"
+  },
+  {
+   "subject": "lithuanian",
+   "level": "ordinary",
+   "id": "lt-2022-ol-a-1-d",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Lithuanian"
+  },
+  {
+   "subject": "lithuanian",
+   "level": "ordinary",
+   "id": "lt-2025-ol-a-1-c",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Lithuanian"
+  },
+  {
+   "subject": "lithuanian",
+   "level": "higher",
+   "id": "lt-2022-hl-a-2-c",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Lithuanian"
+  },
+  {
+   "subject": "lithuanian",
+   "level": "ordinary",
+   "id": "lt-2024-ol-a-2-g",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Lithuanian"
+  },
+  {
+   "subject": "lithuanian",
+   "level": "higher",
+   "id": "lt-2024-hl-a-1-e",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Lithuanian"
+  },
+  {
+   "subject": "lithuanian",
+   "level": "higher",
+   "id": "lt-2024-hl-a-1-c",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Lithuanian"
+  }
+ ],
+ "maltese": [
+  {
+   "subject": "maltese",
+   "level": "higher",
+   "id": "mlt-2024-hl-i-5",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Maltese"
+  },
+  {
+   "subject": "maltese",
+   "level": "higher",
+   "id": "mlt-2025-hl-i-6",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Maltese"
+  },
+  {
+   "subject": "maltese",
+   "level": "higher",
+   "id": "mlt-2018-hl-iii-1",
+   "why": "shape"
+  },
+  {
+   "subject": "maltese",
+   "level": "higher",
+   "id": "mlt-2019-hl-i-4",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Maltese"
+  },
+  {
+   "subject": "maltese",
+   "level": "higher",
+   "id": "mlt-2024-hl-ii-1",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Maltese"
+  }
+ ],
+ "mandarin-chinese": [
+  {
+   "subject": "mandarin-chinese",
+   "level": "higher",
+   "id": "man-2024-hl-a-2-c",
+   "why": "suspect:a:slash_sep",
+   "src": "The material this question is about"
+  },
+  {
+   "subject": "mandarin-chinese",
+   "level": "higher",
+   "id": "man-2025-hl-a-4-c",
+   "why": "shape",
+   "src": "The material this question is about"
+  },
+  {
+   "subject": "mandarin-chinese",
+   "level": "higher",
+   "id": "man-2023-hl-a-2-c",
+   "why": "shape",
+   "src": "The material this question is about"
+  },
+  {
+   "subject": "mandarin-chinese",
+   "level": "ordinary",
+   "id": "man-2024-ol-a-1",
+   "why": "shape",
+   "src": "The material this question is about"
+  },
+  {
+   "subject": "mandarin-chinese",
+   "level": "higher",
+   "id": "man-2023-hl-a-4-b",
+   "why": "shape",
+   "src": "The material this question is about"
+  }
+ ],
+ "maths": [
+  {
+   "subject": "maths",
+   "level": "higher",
+   "id": "maths-2019-hl-p2-q9-a",
+   "why": "suspect:a:pipe_table",
+   "src": "Question, diagrams and working space"
+  },
+  {
+   "subject": "maths",
+   "level": "higher",
+   "id": "maths-2012-hl-p2-q6b",
+   "why": "suspect:q:pipe_table",
+   "src": "Question, diagrams and working space"
+  },
+  {
+   "subject": "maths",
+   "level": "ordinary",
+   "id": "maths-2015-ol-p1-q1-c",
+   "why": "suspect:q:repl_char",
+   "src": "Question, diagrams and working space"
+  },
+  {
+   "subject": "maths",
+   "level": "ordinary",
+   "id": "maths-2017-ol-p1-q1-a",
+   "why": "suspect:a:newline_heavy",
+   "src": "Question, diagrams and working space"
+  },
+  {
+   "subject": "maths",
+   "level": "ordinary",
+   "id": "maths-2012-ol-p2-q4-a",
+   "why": "shared-page",
+   "src": "Question, diagrams and working space"
+  },
+  {
+   "subject": "maths",
+   "level": "higher",
+   "id": "maths-2011-hl-p2-q8-b-ii",
+   "why": "shared-page",
+   "src": "Question, diagrams and working space"
+  },
+  {
+   "subject": "maths",
+   "level": "higher",
+   "id": "maths-2011-hl-p2-q6-a",
+   "why": "shape",
+   "src": "Question, diagrams and working space"
+  },
+  {
+   "subject": "maths",
+   "level": "ordinary",
+   "id": "maths-2013-ol-p2-q3-b",
+   "why": "shape",
+   "src": "Question, diagrams and working space"
+  },
+  {
+   "subject": "maths",
+   "level": "foundation",
+   "id": "maths-2025-fl-q10-c-iii",
+   "why": "shape",
+   "src": "Question, diagrams and working space"
+  },
+  {
+   "subject": "maths",
+   "level": "higher",
+   "id": "maths-2015-hl-p1-q9-e",
+   "why": "shape",
+   "src": "Question, diagrams and working space"
+  },
+  {
+   "subject": "maths",
+   "level": "higher",
+   "id": "maths-2020-hl-p2-q6-a",
+   "why": "shape",
+   "src": "Question, diagrams and working space"
+  },
+  {
+   "subject": "maths",
+   "level": "ordinary",
+   "id": "maths-2026-ol-p1-q6-b",
+   "why": "shape",
+   "src": "Question, diagrams and working space"
+  }
+ ],
+ "modern-greek": [
+  {
+   "subject": "modern-greek",
+   "level": "higher",
+   "id": "mgr-2017-hl-1-5",
+   "why": "suspect:a:dot_leader",
+   "src": "The article this question is about \u2014 answer in Modern Greek"
+  },
+  {
+   "subject": "modern-greek",
+   "level": "higher",
+   "id": "mgr-2022-hl-1-3",
+   "why": "shared-page",
+   "src": "The article this question is about \u2014 answer in Modern Greek"
+  },
+  {
+   "subject": "modern-greek",
+   "level": "higher",
+   "id": "mgr-2022-hl-1-4",
+   "why": "shape",
+   "src": "The article this question is about \u2014 answer in Modern Greek"
+  },
+  {
+   "subject": "modern-greek",
+   "level": "higher",
+   "id": "mgr-2024-hl-1-1",
+   "why": "shape",
+   "src": "The article this question is about \u2014 answer in Modern Greek"
+  },
+  {
+   "subject": "modern-greek",
+   "level": "higher",
+   "id": "mgr-2013-hl-3-2",
+   "why": "shape"
+  }
+ ],
+ "music": [
+  {
+   "subject": "music",
+   "level": "higher",
+   "id": "mus-2017-hl-l-q5-a-x1-iii",
+   "why": "suspect:a:slash_sep",
+   "src": "Listening \u2014 Question 5"
+  },
+  {
+   "subject": "music",
+   "level": "higher",
+   "id": "mus-2024-hl-c-a-q1",
+   "why": "suspect:q:repl_char",
+   "src": "Section A \u2014 Question 1"
+  },
+  {
+   "subject": "music",
+   "level": "ordinary",
+   "id": "mus-2013-ol-c-a-q2",
+   "why": "suspect:q:sibling_parts",
+   "src": "Section A \u2014 Question 2"
+  },
+  {
+   "subject": "music",
+   "level": "higher",
+   "id": "mus-2013-hl-l-q2-i",
+   "why": "suspect:q:newline_heavy",
+   "src": "Listening \u2014 Question 2"
+  },
+  {
+   "subject": "music",
+   "level": "ordinary",
+   "id": "mus-2010-ol-l-q5-x2-ii",
+   "why": "shape",
+   "src": "Listening \u2014 Question 5"
+  },
+  {
+   "subject": "music",
+   "level": "ordinary",
+   "id": "mus-2014-ol-c-b-q4",
+   "why": "shape",
+   "src": "Section B \u2014 Question 4"
+  },
+  {
+   "subject": "music",
+   "level": "ordinary",
+   "id": "mus-2010-ol-l-q2-i",
+   "why": "shape",
+   "src": "Listening \u2014 Question 2"
+  },
+  {
+   "subject": "music",
+   "level": "higher",
+   "id": "mus-2015-hl-l-q3-ii",
+   "why": "shape",
+   "src": "Listening \u2014 Question 3"
+  },
+  {
+   "subject": "music",
+   "level": "higher",
+   "id": "mus-2023-hl-deferred-c-a-q2",
+   "why": "shape",
+   "src": "Composing \u2014 Question 2"
+  },
+  {
+   "subject": "music",
+   "level": "higher",
+   "id": "mus-2015-hl-l-q5-a-x1-iii",
+   "why": "shape",
+   "src": "Listening \u2014 Question 5"
+  },
+  {
+   "subject": "music",
+   "level": "higher",
+   "id": "mus-2023-hl-l-q3-d",
+   "why": "shape",
+   "src": "Listening \u2014 Question 3"
+  },
+  {
+   "subject": "music",
+   "level": "ordinary",
+   "id": "mus-2026-ol-l-q1-e",
+   "why": "shape",
+   "src": "Listening \u2014 Question 1"
+  }
+ ],
+ "physical-education": [
+  {
+   "subject": "physical-education",
+   "level": "ordinary",
+   "id": "pe-2024-ol-q6a",
+   "why": "suspect:q:sibling_parts",
+   "src": "2024 Physical Education \u00b7 OL \u00b7 Q6(a)"
+  },
+  {
+   "subject": "physical-education",
+   "level": "higher",
+   "id": "pe-2020-hl-q15ci",
+   "why": "suspect:q:newline_heavy",
+   "src": "2020 Physical Education \u00b7 HL \u00b7 Q15(c)(i)"
+  },
+  {
+   "subject": "physical-education",
+   "level": "ordinary",
+   "id": "pe-2025-ol-q18ai-blank-4",
+   "why": "suspect:q:dash_run",
+   "src": "2025 Physical Education \u00b7 OL \u00b7 Q18(a)(i) \u00b7 blank 4"
+  },
+  {
+   "subject": "physical-education",
+   "level": "ordinary",
+   "id": "pe-2025-ol-q10",
+   "why": "shared-page",
+   "src": "2025 Physical Education \u00b7 OL \u00b7 Q10"
+  },
+  {
+   "subject": "physical-education",
+   "level": "ordinary",
+   "id": "pe-2024-ol-q6b",
+   "why": "shared-page",
+   "src": "2024 Physical Education \u00b7 OL \u00b7 Q6(b)"
+  },
+  {
+   "subject": "physical-education",
+   "level": "ordinary",
+   "id": "pe-2023-ol-q13bi",
+   "why": "shape",
+   "src": "2023 Physical Education \u00b7 OL \u00b7 Q13(b)(i)"
+  },
+  {
+   "subject": "physical-education",
+   "level": "higher",
+   "id": "pe-2024-hl-q18a",
+   "why": "shape",
+   "src": "2024 Physical Education \u00b7 HL \u00b7 Q18(a)"
+  },
+  {
+   "subject": "physical-education",
+   "level": "ordinary",
+   "id": "pe-2024-ol-q14bi",
+   "why": "shape",
+   "src": "2024 Physical Education \u00b7 OL \u00b7 Q14(b)(i)"
+  },
+  {
+   "subject": "physical-education",
+   "level": "ordinary",
+   "id": "pe-2022-ol-q18biii",
+   "why": "shape",
+   "src": "2022 Physical Education \u00b7 OL \u00b7 Q18(b)(iii)"
+  },
+  {
+   "subject": "physical-education",
+   "level": "higher",
+   "id": "pe-2021-hl-q16d",
+   "why": "shape",
+   "src": "2021 Physical Education \u00b7 HL \u00b7 Q16(d)"
+  },
+  {
+   "subject": "physical-education",
+   "level": "ordinary",
+   "id": "pe-2025-ol-q13dii",
+   "why": "shape",
+   "src": "2025 Physical Education \u00b7 OL \u00b7 Q13(d)(ii)"
+  },
+  {
+   "subject": "physical-education",
+   "level": "ordinary",
+   "id": "pe-2023-ol-q7b",
+   "why": "shape",
+   "src": "2023 Physical Education \u00b7 OL \u00b7 Q7(b)"
+  }
+ ],
+ "physics": [
+  {
+   "subject": "physics",
+   "level": "higher",
+   "id": "phys-2022-hl-q14a-iv",
+   "why": "suspect:a:pipe_table"
+  },
+  {
+   "subject": "physics",
+   "level": "higher",
+   "id": "phys-2023-hl-deferred-q8-vi",
+   "why": "suspect:a:slash_sep"
+  },
+  {
+   "subject": "physics",
+   "level": "higher",
+   "id": "phys-2026-hl-q4-vi-b",
+   "why": "suspect:q:sibling_parts"
+  },
+  {
+   "subject": "physics",
+   "level": "ordinary",
+   "id": "phys-2026-ol-q1-vi",
+   "why": "suspect:q:spaced_nums"
+  },
+  {
+   "subject": "physics",
+   "level": "higher",
+   "id": "phys-2026-hl-q1-iv",
+   "why": "shape"
+  },
+  {
+   "subject": "physics",
+   "level": "ordinary",
+   "id": "phys-2017-ol-q11-h",
+   "why": "shape"
+  },
+  {
+   "subject": "physics",
+   "level": "higher",
+   "id": "phys-2024-hl-q14c-ii",
+   "why": "shape"
+  },
+  {
+   "subject": "physics",
+   "level": "higher",
+   "id": "phys-2016-hl-q12-b-field-strength",
+   "why": "shape"
+  },
+  {
+   "subject": "physics",
+   "level": "higher",
+   "id": "phys-2011-hl-q8-a-iii-fundamental",
+   "why": "shape"
+  },
+  {
+   "subject": "physics",
+   "level": "higher",
+   "id": "phys-2023-hl-deferred-q14-d-iv",
+   "why": "shape"
+  },
+  {
+   "subject": "physics",
+   "level": "ordinary",
+   "id": "phys-2012-ol-q12-d-v",
+   "why": "shape"
+  },
+  {
+   "subject": "physics",
+   "level": "ordinary",
+   "id": "phys-2023-ol-q2-i",
+   "why": "shape",
+   "src": "Official question page"
+  }
+ ],
+ "polish": [
+  {
+   "subject": "polish",
+   "level": "ordinary",
+   "id": "pl-2022-ol-ld-2-ii",
+   "why": "suspect:a:slash_sep",
+   "src": "Cz\u0119\u015b\u0107 D \u2014 Question 2(ii)"
+  },
+  {
+   "subject": "polish",
+   "level": "higher",
+   "id": "pl-2026-hl-a-2-j",
+   "why": "suspect:q:sibling_parts",
+   "src": "Reading text \u2014 answer in English or Irish"
+  },
+  {
+   "subject": "polish",
+   "level": "ordinary",
+   "id": "pl-2023-ol-b-4-c",
+   "why": "suspect:q:newline_heavy",
+   "src": "Zadanie 4 (c) \u2014 answer in Polish"
+  },
+  {
+   "subject": "polish",
+   "level": "ordinary",
+   "id": "pl-2023-ol-a-3-g-v",
+   "why": "suspect:q:dash_run",
+   "src": "Reading text \u2014 answer in Polish"
+  },
+  {
+   "subject": "polish",
+   "level": "higher",
+   "id": "pl-2016-hl-i-4",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Polish"
+  },
+  {
+   "subject": "polish",
+   "level": "higher",
+   "id": "pl-2019-hl-ii-1",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Polish"
+  },
+  {
+   "subject": "polish",
+   "level": "higher",
+   "id": "pl-2023-hl-a-1-a-ii",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Polish"
+  },
+  {
+   "subject": "polish",
+   "level": "ordinary",
+   "id": "pl-2026-ol-le-6",
+   "why": "shape",
+   "src": "Cz\u0119\u015b\u0107 E \u2014 Question 6"
+  },
+  {
+   "subject": "polish",
+   "level": "higher",
+   "id": "pl-2022-hl-b-4-b",
+   "why": "shape",
+   "src": "Pytanie 4 (b) \u2014 answer in Polish"
+  },
+  {
+   "subject": "polish",
+   "level": "higher",
+   "id": "pl-2016-hl-i-6",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Polish"
+  },
+  {
+   "subject": "polish",
+   "level": "higher",
+   "id": "pl-2015-hl-i-5",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Polish"
+  },
+  {
+   "subject": "polish",
+   "level": "higher",
+   "id": "pl-2024-hl-le-1",
+   "why": "shape",
+   "src": "Cz\u0119\u015b\u0107 E \u2014 Question 1"
+  }
+ ],
+ "politics-and-society": [
+  {
+   "subject": "politics-and-society",
+   "level": "higher",
+   "id": "politics-2025-hl-q1-h",
+   "why": "suspect:a:slash_sep",
+   "src": "2025 HL Q1(h)"
+  },
+  {
+   "subject": "politics-and-society",
+   "level": "higher",
+   "id": "politics-2021-hl-q2-e",
+   "why": "suspect:a:newline_heavy",
+   "src": "2021 HL Q2(e)"
+  },
+  {
+   "subject": "politics-and-society",
+   "level": "ordinary",
+   "id": "politics-2024-ol-q7",
+   "why": "suspect:q:newline_heavy",
+   "src": "2024 OL Q7"
+  },
+  {
+   "subject": "politics-and-society",
+   "level": "ordinary",
+   "id": "politics-2018-ol-q1-b-i",
+   "why": "suspect:q:dash_run",
+   "src": "2018 OL Q1(b)(i)"
+  },
+  {
+   "subject": "politics-and-society",
+   "level": "higher",
+   "id": "politics-2020-hl-q4",
+   "why": "shared-page",
+   "src": "2020 HL Q4"
+  },
+  {
+   "subject": "politics-and-society",
+   "level": "higher",
+   "id": "politics-2026-hl-q3-a",
+   "why": "shared-page",
+   "src": "2026 HL Q3(a)"
+  },
+  {
+   "subject": "politics-and-society",
+   "level": "higher",
+   "id": "politics-2024-hl-q1-j",
+   "why": "shape",
+   "src": "2024 HL Q1(j)"
+  },
+  {
+   "subject": "politics-and-society",
+   "level": "ordinary",
+   "id": "politics-2018-ol-q1-e-i",
+   "why": "shape",
+   "src": "2018 OL Q1(e)(i)"
+  },
+  {
+   "subject": "politics-and-society",
+   "level": "ordinary",
+   "id": "politics-2024-ol-q3-e",
+   "why": "shape",
+   "src": "2024 OL Q3(e)"
+  },
+  {
+   "subject": "politics-and-society",
+   "level": "ordinary",
+   "id": "politics-2021-ol-q6",
+   "why": "shape",
+   "src": "2021 OL Q6"
+  },
+  {
+   "subject": "politics-and-society",
+   "level": "ordinary",
+   "id": "politics-2026-ol-q1-b",
+   "why": "shape",
+   "src": "2026 OL Q1(b)"
+  },
+  {
+   "subject": "politics-and-society",
+   "level": "higher",
+   "id": "politics-2025-hl-q2-b",
+   "why": "shape",
+   "src": "2025 HL Q2(b)"
+  }
+ ],
+ "portuguese": [
+  {
+   "subject": "portuguese",
+   "level": "higher",
+   "id": "por-2015-hl-ii-1",
+   "why": "suspect:a:slash_sep",
+   "src": "Reading text \u2014 answer in Portuguese"
+  },
+  {
+   "subject": "portuguese",
+   "level": "higher",
+   "id": "por-2025-hl-b-4-a",
+   "why": "suspect:q:sibling_parts",
+   "src": "Quest\u00e3o 4 (a) \u2014 answer in Portuguese"
+  },
+  {
+   "subject": "portuguese",
+   "level": "ordinary",
+   "id": "por-2025-ol-la-3",
+   "why": "suspect:q:dash_run",
+   "src": "Parte A Podcast \u2014 Question 3"
+  },
+  {
+   "subject": "portuguese",
+   "level": "higher",
+   "id": "por-2017-hl-i-4",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Portuguese"
+  },
+  {
+   "subject": "portuguese",
+   "level": "higher",
+   "id": "por-2021-hl-i-1-a",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Portuguese"
+  },
+  {
+   "subject": "portuguese",
+   "level": "higher",
+   "id": "por-2018-hl-ii-1",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Portuguese"
+  },
+  {
+   "subject": "portuguese",
+   "level": "higher",
+   "id": "por-2024-hl-lc-5",
+   "why": "shape",
+   "src": "Parte C Ag\u00eancia de Viagens \u2014 Question 5"
+  },
+  {
+   "subject": "portuguese",
+   "level": "ordinary",
+   "id": "por-2025-ol-b-4-c",
+   "why": "shape",
+   "src": "Quest\u00e3o 4 (c) \u2014 answer in Portuguese"
+  },
+  {
+   "subject": "portuguese",
+   "level": "higher",
+   "id": "por-2023-hl-a-1-e",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Portuguese"
+  },
+  {
+   "subject": "portuguese",
+   "level": "higher",
+   "id": "por-2012-hl-iii-2",
+   "why": "shape"
+  },
+  {
+   "subject": "portuguese",
+   "level": "higher",
+   "id": "por-2024-hl-le-4",
+   "why": "shape",
+   "src": "Parte E Festa Tem\u00e1tica \u2014 Question 4"
+  },
+  {
+   "subject": "portuguese",
+   "level": "ordinary",
+   "id": "por-2023-ol-la-2",
+   "why": "shape",
+   "src": "Parte A Not\u00edcia \u2014 Question 2"
+  }
+ ],
+ "religious-education": [
+  {
+   "subject": "religious-education",
+   "level": "ordinary",
+   "id": "re-2025-ol-d-a",
+   "why": "shape"
+  },
+  {
+   "subject": "religious-education",
+   "level": "ordinary",
+   "id": "re-2025-ol-i-b-ii",
+   "why": "shape"
+  },
+  {
+   "subject": "religious-education",
+   "level": "ordinary",
+   "id": "re-2023-ol-f-c",
+   "why": "shape"
+  },
+  {
+   "subject": "religious-education",
+   "level": "ordinary",
+   "id": "re-2021-ol-j-b-i",
+   "why": "shape"
+  },
+  {
+   "subject": "religious-education",
+   "level": "ordinary",
+   "id": "re-2012-ol-a-1-a",
+   "why": "shape"
+  },
+  {
+   "subject": "religious-education",
+   "level": "higher",
+   "id": "re-2022-hl-j-a-i",
+   "why": "shape"
+  },
+  {
+   "subject": "religious-education",
+   "level": "ordinary",
+   "id": "re-2022-ol-j-b-i",
+   "why": "shape"
+  },
+  {
+   "subject": "religious-education",
+   "level": "ordinary",
+   "id": "re-2012-ol-d-b",
+   "why": "shape"
+  },
+  {
+   "subject": "religious-education",
+   "level": "ordinary",
+   "id": "re-2019-ol-a-2-a",
+   "why": "shape"
+  },
+  {
+   "subject": "religious-education",
+   "level": "higher",
+   "id": "re-2016-hl-d-b",
+   "why": "shape"
+  },
+  {
+   "subject": "religious-education",
+   "level": "higher",
+   "id": "re-2012-hl-a-2-b",
+   "why": "shape"
+  },
+  {
+   "subject": "religious-education",
+   "level": "ordinary",
+   "id": "re-2011-ol-b-a",
+   "why": "shape"
+  }
+ ],
+ "romanian": [
+  {
+   "subject": "romanian",
+   "level": "higher",
+   "id": "ron-2012-hl-ii-1",
+   "why": "suspect:a:dot_leader",
+   "src": "Reading text \u2014 answer in Romanian"
+  },
+  {
+   "subject": "romanian",
+   "level": "higher",
+   "id": "ron-2022-hl-i-1-b",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Romanian"
+  },
+  {
+   "subject": "romanian",
+   "level": "higher",
+   "id": "ron-2026-hl-i-1-c",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Romanian"
+  },
+  {
+   "subject": "romanian",
+   "level": "higher",
+   "id": "ron-2015-hl-i-3",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Romanian"
+  },
+  {
+   "subject": "romanian",
+   "level": "higher",
+   "id": "ron-2014-hl-iii-1",
+   "why": "shape"
+  }
+ ],
+ "russian": [
+  {
+   "subject": "russian",
+   "level": "higher",
+   "id": "ru-2012-hl-c1-3-ii",
+   "why": "suspect:a:slash_sep",
+   "src": "2012 Higher Russian \u2014 C1"
+  },
+  {
+   "subject": "russian",
+   "level": "higher",
+   "id": "ru-2010-hl-gw",
+   "why": "suspect:q:repl_char",
+   "src": "2010 Higher Russian \u2014 GW"
+  },
+  {
+   "subject": "russian",
+   "level": "higher",
+   "id": "ru-2021-hl-gw",
+   "why": "suspect:q:sibling_parts",
+   "src": "2021 Higher Russian \u2014 GW"
+  },
+  {
+   "subject": "russian",
+   "level": "ordinary",
+   "id": "ru-2026-ol-l3-2-iii",
+   "why": "suspect:q:spaced_nums",
+   "src": "2026 Ordinary Russian \u2014 L3"
+  },
+  {
+   "subject": "russian",
+   "level": "higher",
+   "id": "ru-2023-hl-c1-4-ii",
+   "why": "shared-page",
+   "src": "2023 Higher Russian \u2014 C1"
+  },
+  {
+   "subject": "russian",
+   "level": "ordinary",
+   "id": "ru-2019-ol-ir2-1",
+   "why": "shared-page",
+   "src": "2019 Ordinary Russian \u2014 IR2"
+  },
+  {
+   "subject": "russian",
+   "level": "ordinary",
+   "id": "ru-2024-ol-cd-1-ii",
+   "why": "shape",
+   "src": "2024 Ordinary Russian \u2014 CD"
+  },
+  {
+   "subject": "russian",
+   "level": "higher",
+   "id": "ru-2020-hl-l1-4",
+   "why": "shape",
+   "src": "2020 Higher Russian \u2014 L1"
+  },
+  {
+   "subject": "russian",
+   "level": "higher",
+   "id": "ru-2026-hl-c1-1-i",
+   "why": "shape",
+   "src": "2026 Higher Russian \u2014 C1"
+  },
+  {
+   "subject": "russian",
+   "level": "ordinary",
+   "id": "ru-2016-ol-sd",
+   "why": "shape",
+   "src": "2016 Ordinary Russian \u2014 SD"
+  },
+  {
+   "subject": "russian",
+   "level": "ordinary",
+   "id": "ru-2015-ol-mm-ii",
+   "why": "shape",
+   "src": "2015 Ordinary Russian \u2014 MM"
+  },
+  {
+   "subject": "russian",
+   "level": "ordinary",
+   "id": "ru-2023-ol-sd",
+   "why": "shape",
+   "src": "2023 Ordinary Russian \u2014 SD"
+  }
+ ],
+ "slovakian": [
+  {
+   "subject": "slovakian",
+   "level": "higher",
+   "id": "slk-2026-hl-i-1-e",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Slovakian"
+  },
+  {
+   "subject": "slovakian",
+   "level": "higher",
+   "id": "slk-2024-hl-i-6",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Slovakian"
+  },
+  {
+   "subject": "slovakian",
+   "level": "higher",
+   "id": "slk-2019-hl-iii-1",
+   "why": "shape"
+  },
+  {
+   "subject": "slovakian",
+   "level": "higher",
+   "id": "slk-2019-hl-i-6",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Slovakian"
+  },
+  {
+   "subject": "slovakian",
+   "level": "higher",
+   "id": "slk-2022-hl-ii-1",
+   "why": "shape"
+  }
+ ],
+ "slovenian": [
+  {
+   "subject": "slovenian",
+   "level": "higher",
+   "id": "slv-2023-hl-i-6",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Slovenian"
+  },
+  {
+   "subject": "slovenian",
+   "level": "higher",
+   "id": "slv-2019-hl-i-1-a",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Slovenian"
+  },
+  {
+   "subject": "slovenian",
+   "level": "higher",
+   "id": "slv-2019-hl-iii-1",
+   "why": "shape"
+  },
+  {
+   "subject": "slovenian",
+   "level": "higher",
+   "id": "slv-2018-hl-i-1",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Slovenian"
+  },
+  {
+   "subject": "slovenian",
+   "level": "higher",
+   "id": "slv-2018-hl-i-6",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Slovenian"
+  }
+ ],
+ "spanish": [
+  {
+   "subject": "spanish",
+   "level": "ordinary",
+   "id": "es-2017-ol-a-5-g",
+   "why": "suspect:a:slash_sep",
+   "src": "Un festival para Europa \u2014 answer in English"
+  },
+  {
+   "subject": "spanish",
+   "level": "higher",
+   "id": "es-2022-hl-deferred-c-1-a",
+   "why": "suspect:q:sibling_parts",
+   "src": "Section C Question 1 (a) \u2014 answer in Spanish"
+  },
+  {
+   "subject": "spanish",
+   "level": "ordinary",
+   "id": "es-2016-ol-l-1-c",
+   "why": "suspect:q:spaced_nums",
+   "src": "Question 1 \u2014 EL LIBROEXPRESS"
+  },
+  {
+   "subject": "spanish",
+   "level": "higher",
+   "id": "es-2022-hl-deferred-a1a-2-b",
+   "why": "suspect:a:dot_leader",
+   "src": "Prescribed Literature: Gabriel Garc\u00eda M\u00e1rquez: Relato de un n\u00e1ufrago \u2014 answer in English"
+  },
+  {
+   "subject": "spanish",
+   "level": "higher",
+   "id": "es-2011-hl-l-3-c",
+   "why": "shared-page",
+   "src": "Question 3 \u2014 HABLANDO CON VICENTE DEL BOSQUE,"
+  },
+  {
+   "subject": "spanish",
+   "level": "ordinary",
+   "id": "es-2020-ol-l-5-b",
+   "why": "shared-page",
+   "src": "Question 5 \u2014 ENSE\u00d1ANDO INGL\u00c9S EN ESPA\u00d1A"
+  },
+  {
+   "subject": "spanish",
+   "level": "ordinary",
+   "id": "es-2014-ol-a-1-b",
+   "why": "shape",
+   "src": "EL BLOG DE JULIA \u2014 answer in Spanish"
+  },
+  {
+   "subject": "spanish",
+   "level": "higher",
+   "id": "es-2010-hl-l-6-b",
+   "why": "shape",
+   "src": "Question 6 \u2014 EL TIEMPO"
+  },
+  {
+   "subject": "spanish",
+   "level": "higher",
+   "id": "es-2010-hl-c-1-b",
+   "why": "shape",
+   "src": "Section C Question 1 (b) \u2014 answer in Spanish"
+  },
+  {
+   "subject": "spanish",
+   "level": "ordinary",
+   "id": "es-2021-ol-l-7-d",
+   "why": "shape",
+   "src": "Question 7 \u2014 EL CORTE INGL\u00c9S"
+  },
+  {
+   "subject": "spanish",
+   "level": "ordinary",
+   "id": "es-2026-ol-l-5-b",
+   "why": "shape",
+   "src": "Question 5 \u2014 UN EVENTO CULTURAL"
+  },
+  {
+   "subject": "spanish",
+   "level": "higher",
+   "id": "es-2010-hl-a1a-3",
+   "why": "shape",
+   "src": "PRESCRIBED LITERATURE: Josep Lorman: La aventura de Sa\u00edd \u2014 answer in English"
+  }
+ ],
+ "swedish": [
+  {
+   "subject": "swedish",
+   "level": "higher",
+   "id": "swe-2014-hl-ii-1",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Swedish"
+  },
+  {
+   "subject": "swedish",
+   "level": "higher",
+   "id": "swe-2012-hl-i-4",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Swedish"
+  },
+  {
+   "subject": "swedish",
+   "level": "higher",
+   "id": "swe-2013-hl-iii-1",
+   "why": "shape"
+  },
+  {
+   "subject": "swedish",
+   "level": "higher",
+   "id": "swe-2023-hl-i-4",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Swedish"
+  },
+  {
+   "subject": "swedish",
+   "level": "higher",
+   "id": "swe-2022-hl-ii-2",
+   "why": "shape"
+  }
+ ],
+ "technology": [
+  {
+   "subject": "technology",
+   "level": "higher",
+   "id": "tech-2026-hl-a3",
+   "why": "suspect:a:slash_sep"
+  },
+  {
+   "subject": "technology",
+   "level": "ordinary",
+   "id": "tech-2011-ol-c4b",
+   "why": "suspect:q:sibling_parts"
+  },
+  {
+   "subject": "technology",
+   "level": "higher",
+   "id": "tech-2019-hl-c3d-i",
+   "why": "suspect:a:multi_slash"
+  },
+  {
+   "subject": "technology",
+   "level": "ordinary",
+   "id": "tech-2024-ol-c1d-ii",
+   "why": "shape"
+  },
+  {
+   "subject": "technology",
+   "level": "ordinary",
+   "id": "tech-2024-ol-c4a-i",
+   "why": "shape"
+  },
+  {
+   "subject": "technology",
+   "level": "higher",
+   "id": "tech-2023-hl-c2b-iii",
+   "why": "shape"
+  },
+  {
+   "subject": "technology",
+   "level": "ordinary",
+   "id": "tech-2012-ol-a2",
+   "why": "shape"
+  },
+  {
+   "subject": "technology",
+   "level": "ordinary",
+   "id": "tech-2021-ol-c3b-iii",
+   "why": "shape"
+  },
+  {
+   "subject": "technology",
+   "level": "higher",
+   "id": "tech-2016-hl-c1b-i",
+   "why": "shape"
+  },
+  {
+   "subject": "technology",
+   "level": "higher",
+   "id": "tech-2010-hl-c5d",
+   "why": "shape"
+  },
+  {
+   "subject": "technology",
+   "level": "ordinary",
+   "id": "tech-2012-ol-c3d",
+   "why": "shape"
+  },
+  {
+   "subject": "technology",
+   "level": "higher",
+   "id": "tech-2024-hl-b3b-ii",
+   "why": "shape"
+  }
+ ],
+ "ukrainian": [
+  {
+   "subject": "ukrainian",
+   "level": "higher",
+   "id": "ukr-2025-hl-i-5",
+   "why": "shared-page",
+   "src": "Reading text \u2014 answer in Ukrainian"
+  },
+  {
+   "subject": "ukrainian",
+   "level": "higher",
+   "id": "ukr-2025-hl-i-6",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Ukrainian"
+  },
+  {
+   "subject": "ukrainian",
+   "level": "higher",
+   "id": "ukr-2026-hl-iii-2",
+   "why": "shape"
+  },
+  {
+   "subject": "ukrainian",
+   "level": "higher",
+   "id": "ukr-2025-hl-i-4",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Ukrainian"
+  },
+  {
+   "subject": "ukrainian",
+   "level": "higher",
+   "id": "ukr-2025-hl-ii-1",
+   "why": "shape",
+   "src": "Reading text \u2014 answer in Ukrainian"
+  }
+ ]
+}
