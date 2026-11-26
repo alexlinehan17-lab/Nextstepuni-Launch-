@@ -6,15 +6,38 @@
 @tailwind utilities;
 
 :root {
-  /* The one orange, shared with the Kobra theme (approved-ui-theme.css) and
-     Tailwind's `accent`, so non-Kobra stylesheets can use the same token. */
+  /* ── One set of values ──────────────────────────────────────────────────
+     The token home: every colour in the app comes from this block and its
+     dark half (`.dark`, below). Values are the design system's (the
+     nextstepuni-design skill, references/tokens.md, direction A, decided 24-25
+     November 2026). Tailwind exposes them (tailwind.config.ts: bg-surface-paper,
+     text-ink-muted, border-hairline, bg-accent ...) and TypeScript mirrors the
+     orange in design/tokens.ts. test/colourLiterals.guard.test.ts fails when a
+     component types a new colour instead. */
+
+  /* The one orange, shared with the Kobra theme (approved-ui-theme.css). It
+     lives in the artwork and in data; as text it is --accent-text. */
   --nsu-orange: #eb692a;
-  --surface-canvas: #ffffff;
-  --surface-paper: #FFFFFF;
-  --surface-soft: #F4F4F5; /* neutral, was warm #F6F2EC — we don't do cream */
-  --surface-raised: #FFFFFF;
+  --nsu-orange-rgb: 235, 105, 42;
+  /* Surfaces: exactly four. The page is white (25 Nov 2026); in light mode a
+     box is told from the page by its line and lift, never by its colour. */
+  --surface-canvas: #ffffff; /* the page: the only thing a screen's root paints */
+  --surface-paper: #ffffff;  /* raised: a sheet, a box you press, a bar over content */
+  --surface-soft: #f5f5f5;   /* sunken: a track, a pressed state, a disabled button, a tray */
+  --surface-raised: #ffffff; /* overlay: menus, sheets, toasts */
+  /* Lines: the ink edge (what is chosen), the control line, the hairline. */
   --outline-strong: #383838;
-  --outline-soft: #D4D4D8;
+  --outline-soft: #d6d6d6;
+  /* The main action: charcoal with white text. */
+  --action: #191919;
+  --action-ink: #ffffff;
+  /* The three lifts, and nothing else casts a shadow (tokens.md, "Shape"). */
+  --lift-ctl: 0 1px 2px rgba(23, 23, 23, 0.06);
+  --lift: 0 2px 3px rgba(0, 0, 0, 0.03), 0 13px 25px -9px rgba(0, 0, 0, 0.14);
+  --float: 0 18px 40px -18px rgba(20, 20, 18, 0.34);
+  /* Green: done and correct, never orange for done. */
+  --success-hex: #3a8d5f;
+  --success: 58, 141, 95;
   /* Light ink scale, retuned August 2026.
      Measured on the former #f0f0f0 canvas — the light canvas is now pure
      white, which only raises these dark-on-light ratios, so every figure
@@ -24,17 +47,16 @@
      Above 4.5:1 the usable band is roughly 4.5-7, which fits three steps, not
      four, so label and faint now share one tone. Compressing the scale is the
      cost of the bottom of it being readable at all. */
-  --ink-primary: #1A1A1A;
-  --ink-secondary: #5F5A55;
-  --ink-muted: #69605A;
+  /* Ink, 24 Nov 2026: sign-in's neutral greys, with ink-2 and ink-3 darkened so
+     small text clears 4.5:1 on every surface (white 17.9 / 7.0 / 5.3:1). */
+  --ink-primary: #171717;
+  --ink-secondary: #575757;
+  --ink-muted: #6b6b6b;
   --ink-on-accent: #1A1A1A;
-  /* The brand orange, darkened for use AS TEXT on a light surface. #F26B1F is
-     3.04:1 on white and 2.67:1 on the editorial canvas — it is a fill colour,
-     not an ink. --accent stays exactly as authored for fills, icons and rules;
-     only text reaches for this. */
-  --accent-text: #B84A0C;
-  /* Quiet white focus: charcoal on light surfaces, warm white in dark mode. */
-  --focus-ring: #383833;
+  /* The one orange, darkened for use AS TEXT: #eb692a is 3.2:1 on white, a
+     fill colour, not an ink. One live word or number per screen. */
+  --accent-text: #b84a0c;
+  /* Focus is owned by design/quiet-focus.css (--nsu-focus-edge, --focus-ring). */
   /* Amber reads as a status colour but #F59E0B is 2.15:1 on white — a fill, not
      an ink. Same split as the accent. */
   --warning-text: #96600A;
@@ -68,23 +90,79 @@
   --danger-tint-ink: #8E2C2C;
   --info-tint: #E8EFF5;
   --info-tint-ink: #2B4C6B;
-  --page-canvas: #ffffff;
-  --page-body: #5a5550;
-  --page-muted: #69605A;
-  --page-label: #766A5F;
-  --cta-invert-bg: #FFFFFF;
-  --cta-invert-ink: #1A1A1A;
-  --cta-invert-border: rgba(26, 26, 26, 0.55);
-  --ink-faint: #766A5F;
-  --hairline: #EDEBE8;
+  /* Older names for the page and its inks: aliases, they follow the set. */
+  --page-canvas: var(--surface-canvas);
+  --page-body: var(--ink-secondary);
+  --page-muted: var(--ink-muted);
+  --page-label: var(--ink-muted);
+  --ink-faint: var(--ink-muted);
+  --hairline: #e5e5e5;
   --accent-tint: #FDEEDF;
   --accent-tint-ink: #8C3A0E;
   --success-tint: #E8F2EC;
   --success-tint-ink: #1F5F3E;
-  --mountain-paper: #FFFFFF;
-  --mountain-ink: #1A1A1A;
+  --mountain-paper: var(--surface-paper);
+  --mountain-ink: var(--ink-primary);
   --mountain-muted: rgba(0, 0, 0, 0.55);
+  /* Moved from index.html (the "May 2026 dark-mode foundation"), so there is
+     one home. Triplets feed rgba(var(--accent), a); the rest are aliases. */
+  --accent: var(--nsu-orange-rgb);
+  --accent-hex: var(--nsu-orange);
+  --accent-dark: 181, 77, 20;
+  --accent-dark-hex: #b54d14; /* the edge under an orange button */
+  --accent-tint-hex: var(--accent-tint);
+  --accent-dark-text: 140, 58, 14;
+  --accent-dark-text-hex: #8c3a0e; /* ink on the orange tint */
+  --success-tint-hex: var(--success-tint);
+  --success-dark-text: 31, 95, 62;
+  --success-dark-text-hex: var(--success-tint-ink);
+  --bg-page: var(--surface-canvas);
+  --bg-card: var(--surface-paper);
+  --text-primary: var(--ink-primary);
+  --text-body: var(--ink-secondary);
+  --text-muted: var(--ink-muted);
+  --text-label: var(--ink-muted);
+  --border-strong: var(--outline-strong);
+  --border-soft: var(--outline-soft);
+  --border-faint: var(--hairline);
 }
+
+/* The scales: theme-independent, so they sit outside the colour blocks.
+   Defined now; screens move onto them in later stages (tokens.md). */
+:root {
+  /* Space: a 4px grid, eight steps and nothing in between. */
+  --space-1: 4px;   /* icon to its label */
+  --space-2: 8px;   /* label to its field; title to its sub-line */
+  --space-3: 12px;  /* between siblings in a section */
+  --space-4: 16px;  /* inside a box */
+  --space-5: 20px;  /* inside the raised sheet */
+  --space-6: 24px;  /* the page margin on a phone */
+  --space-8: 32px;  /* between sections */
+  --space-12: 48px; /* between major parts; laptop page margin */
+  /* Corners. */
+  --r-xs: 4px;    /* chart bars, small marks */
+  --r-sm: 9px;    /* fields, choice tiles, menu buttons, compact buttons, the selection pill */
+  --r-ctl: 12px;  /* buttons; the selection tray */
+  --r-box: 14px;  /* boxed row groups, flat cards, menus */
+  --r-card: 20px; /* the raised sheet; bottom sheets; dialogs */
+}
+
+/* The named type styles (tokens.md, "Type"): one typeface, sentence case.
+   Headlines are regular weight, never bold; readouts keep the mono. */
+.t-display { font-family: "ABC Diatype", "DM Sans", system-ui, sans-serif; font-weight: 400; font-size: 35px; line-height: 39px; letter-spacing: -0.045em; text-wrap: balance; }
+@media (min-width: 1024px) { .t-display { font-size: 60px; line-height: 62px; } }
+.t-title { font-family: "ABC Diatype", "DM Sans", system-ui, sans-serif; font-weight: 400; font-size: 29px; line-height: 33px; letter-spacing: -0.04em; text-wrap: balance; }
+.t-name { font-family: "ABC Diatype", "DM Sans", system-ui, sans-serif; font-weight: 400; font-size: 28px; line-height: 32px; letter-spacing: -0.04em; }
+.t-name-sm { font-family: "ABC Diatype", "DM Sans", system-ui, sans-serif; font-weight: 400; font-size: 20px; line-height: 24px; letter-spacing: -0.04em; }
+.t-heading { font-family: "ABC Diatype", "DM Sans", system-ui, sans-serif; font-weight: 400; font-size: 21px; line-height: 26px; letter-spacing: -0.03em; text-wrap: balance; }
+.t-row { font-family: "ABC Diatype", "DM Sans", system-ui, sans-serif; font-weight: 400; font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.t-body { font-family: "ABC Diatype", "DM Sans", system-ui, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: 0; }
+.t-sub { font-family: "ABC Diatype", "DM Sans", system-ui, sans-serif; font-weight: 400; font-size: 15px; line-height: 21px; letter-spacing: 0; color: var(--ink-secondary); }
+.t-meta { font-family: "ABC Diatype", "DM Sans", system-ui, sans-serif; font-weight: 400; font-size: 13px; line-height: 18px; letter-spacing: 0; color: var(--ink-muted); }
+.t-label { font-family: "ABC Diatype", "DM Sans", system-ui, sans-serif; font-weight: 400; font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.t-readout { font-family: "Departure Mono", "Apercu Mono Pro", ui-monospace, monospace; font-weight: 400; font-size: 13px; line-height: 16px; letter-spacing: 0.02em; font-variant-numeric: tabular-nums; }
+.t-number { font-family: "ABC Diatype", "DM Sans", system-ui, sans-serif; font-weight: 400; font-size: 40px; line-height: 40px; letter-spacing: -0.055em; font-variant-numeric: tabular-nums; }
+.t-number-xl { font-family: "ABC Diatype", "DM Sans", system-ui, sans-serif; font-weight: 400; font-size: 56px; line-height: 56px; letter-spacing: -0.055em; font-variant-numeric: tabular-nums; }
 
 .tool-header-art {
   width: 108px;
@@ -127,15 +205,27 @@
 }
 
 .dark {
-  --surface-canvas: #151515;
-  --surface-paper: #202020;
-  --surface-soft: #282624;
-  --surface-raised: #2B2927;
-  --outline-strong: #A8A29E;
-  --outline-soft: #494541;
-  --ink-primary: #FAF8F4;
-  --ink-secondary: #D6D0C9;
-  --ink-muted: #A8A29E;
+  /* The dark set: four surfaces, one step apart, each with its hairline. No
+     lift on boxes (the ladder does the work); a floating layer keeps a darker
+     shadow so a menu still separates. Alex, 24 Nov 2026: "I absolutely Agree
+     with the Ladder". */
+  --surface-canvas: #181818;
+  --surface-paper: #242424;
+  --surface-soft: #101010;
+  --surface-raised: #2c2c2c;
+  --outline-strong: #f5f5f5;
+  --outline-soft: #505050;
+  --action: #f5f5f5;
+  --action-ink: #181818;
+  --lift-ctl: none;
+  --lift: none;
+  --float: 0 18px 40px -18px rgba(0, 0, 0, 0.7);
+  --success-hex: #56ad7c;
+  --success: 86, 173, 124;
+  --accent-text: #f58c4e;
+  --ink-primary: #f5f5f5;
+  --ink-secondary: #bbbbbb;
+  --ink-muted: #9a9a9a;
   --dashboard-series-1: #FF8A4C;
   --dashboard-series-2: #72B8B0;
   --dashboard-series-3: #E3AD5B;
@@ -153,27 +243,15 @@
   /* Tints carry meaning (selected / correct), so they stay tinted rather than
      collapsing to a neutral: a desaturated dark of the same hue, with ink light
      enough to clear AA on it. */
-  --neutral-tint: #2A2825;
   --danger-tint: #3A2020;
   --danger-tint-ink: #F0A9A9;
   --info-tint: #1B2A38;
   --info-tint-ink: #A8CBE6;
-  --page-canvas: #151515;
-  --page-body: #D6D0C9;
-  --page-muted: #A8A29E;
-  --page-label: #A69E95;
-  --cta-invert-bg: #F7F3ED;
-  --cta-invert-ink: #1A1A1A;
-  --cta-invert-border: rgba(247, 243, 237, 0.55);
-  --ink-faint: #A09890;
-  --hairline: #34312E;
+  --hairline: #3a3a3a;
   --accent-tint: #3A2417;
   --accent-tint-ink: #F6B98C;
-  --focus-ring: #e4e2db;
   --success-tint: #1D3327;
   --success-tint-ink: #9FD9B6;
-  --mountain-paper: #202020;
-  --mountain-ink: #F5F2ED;
   --mountain-muted: rgba(245, 242, 237, 0.60);
 }
 

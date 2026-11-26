@@ -38,72 +38,13 @@
         }
       }
       :root {
-        /* ─── One orange: #eb692a, the Kobra theme's --nsu-orange ──────
-           Source of truth for inline-style consumers: design/tokens.ts.
-           `--accent` is the brand colour for CTAs/selected states. It
-           does NOT carry "good/correct/complete" semantics — use
-           `--success` for those. */
-        --accent: 235, 105, 42;
-        --accent-hex: #eb692a;
-        --accent-dark: 181, 77, 20;
-        --accent-dark-hex: #B54D14;
-        --accent-tint: 253, 238, 223;
-        --accent-tint-hex: #FDEEDF;
-        --accent-dark-text: 140, 58, 14;
-        --accent-dark-text-hex: #8C3A0E;
-        /* Success / positive semantic */
-        --success: 58, 141, 95;
-        --success-hex: #3A8D5F;
-        --success-tint: 232, 242, 236;
-        --success-tint-hex: #E8F2EC;
-        --success-dark-text: 31, 95, 62;
-        --success-dark-text-hex: #1F5F3E;
+        /* The colour tokens (--accent*, --success*, --bg-*, --text-*,
+           --border-*) live in index.css with the rest of the set: one home. */
         --sat: env(safe-area-inset-top);
         --sar: env(safe-area-inset-right);
         --sab: env(safe-area-inset-bottom);
         --sal: env(safe-area-inset-left);
-
-        /* ─── Surface + text tokens (May 2026 dark-mode foundation) ─────
-           These swap on `html.dark` (see block below) so any consumer
-           that references the var() name automatically adapts. New code
-           should reference these instead of hardcoding hex literals like
-           '#1a1a1a' inside inline style props. */
-        --bg-page: #ffffff;
-        --bg-card: #ffffff;
-        --bg-card-soft: #FAF7F4;
-        --bg-card-cream: #FDF8F0;
-        --text-primary: #1a1a1a;
-        --text-body: #3a3530;
-        /* Retuned with the index.css ink scale: these measured 4.24:1 and
-           2.69:1 on the #f0f0f0 editorial canvas. */
-        --text-muted: #69605A;
-        --text-label: #766A5F;
-        --border-strong: #1a1a1a;
-        --border-soft: #d0cdc8;
-        --border-faint: rgba(0, 0, 0, 0.07);
       }
-      /* Dark-mode swap. Activated when the AuthContext / settings flip
-         html's class to `dark` (see Settings → Dark Mode). All surface
-         + text variables flip together; brand accent stays the same so
-         CTAs read identically. */
-      html.dark {
-        --bg-page: #09090b;
-        --bg-card: #18181b;          /* zinc-900 */
-        --bg-card-soft: #1f1f23;
-        --bg-card-cream: #1f1f23;
-        --text-primary: #f4f4f5;     /* zinc-100 */
-        --text-body: #d4d4d8;        /* zinc-300 */
-        --text-muted: #a1a1aa;       /* zinc-400 */
-        --text-label: #909099;       /* lifted from zinc-500 #71717a, which is
-                                       only 3.37:1 on --bg-card and fails AA */
-        --border-strong: #3f3f46;    /* zinc-700 */
-        --border-soft: #27272a;      /* zinc-800 */
-        --border-faint: rgba(255, 255, 255, 0.06);
-        /* The accent-tint also needs a darker companion or callouts
-           with bg #FDEEDF look like pink confetti on a black canvas. */
-        --accent-tint-hex: rgba(242, 107, 31, 0.14);
-      }
-
       /* ─── Mass-coverage dark overrides ──────────────────────────────
          Forty-plus educational modules hardcode hex colours via inline
          style props (e.g. style={{ color: '#1a1a1a' }}) — React renders
@@ -172,13 +113,13 @@
       html.dark [style*="background-color: rgb(250, 247, 244)"],
       html.dark [style*="background:#FAF7F4"],
       html.dark [style*="background-color:#FAF7F4"] {
-        background-color: var(--bg-card-soft) !important;
+        background-color: var(--surface-soft) !important;
       }
       html.dark [style*="background: rgb(253, 248, 240)"],
       html.dark [style*="background-color: rgb(253, 248, 240)"],
       html.dark [style*="background:#FDF8F0"],
       html.dark [style*="background-color:#FDF8F0"] {
-        background-color: var(--bg-card-cream) !important;
+        background-color: var(--surface-soft) !important;
       }
       html.dark [style*="background: rgb(240, 240, 240)"],
       html.dark [style*="background-color: rgb(240, 240, 240)"] {
