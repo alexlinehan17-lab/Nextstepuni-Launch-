@@ -161,7 +161,7 @@ export default function NextStepUniSidebar(props: Props) {
           </button>
           <DropdownMenu>
             <DropdownMenuTrigger ref={accountTrigger} className="nsu-nav-account" aria-label="Open account menu" data-coach="help">
-              <Avatar seed={props.settings.avatar || props.user.avatar} alt="" className="nsu-nav-avatar" />
+              <Avatar seed={props.settings.avatar || props.user.avatar} alt="" className="nsu-nav-avatar crew-illustration" />
               <span className="nsu-nav-account-copy"><span>{props.user.name}</span><small>{props.user.isAdmin ? 'Admin' : 'Student'}</small></span>
               <NavigationIcon name="updown" size={16} className="nsu-nav-account-chevron" />
             </DropdownMenuTrigger>
@@ -173,7 +173,7 @@ export default function NextStepUniSidebar(props: Props) {
                 and Log out. Notifications is the Updates row above. */}
             <DropdownMenuContent side="right" align="end" sideOffset={22} className="nsu-nav-account-menu">
               <DropdownMenuGroup>
-                <DropdownMenuLabel className="nsu-nav-identity"><Avatar seed={props.settings.avatar || props.user.avatar} alt="" className="nsu-nav-menu-avatar" /><span><strong>{props.user.name}</strong><small>{email || 'Your NextStepUni account'}</small></span></DropdownMenuLabel>
+                <DropdownMenuLabel className="nsu-nav-identity"><Avatar seed={props.settings.avatar || props.user.avatar} alt="" className="nsu-nav-menu-avatar crew-illustration" /><span><strong>{props.user.name}</strong><small>{email || 'Your NextStepUni account'}</small></span></DropdownMenuLabel>
               </DropdownMenuGroup>
               <DropdownMenuSeparator />
               <DropdownMenuGroup>

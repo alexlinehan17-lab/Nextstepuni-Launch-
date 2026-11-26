@@ -44,6 +44,10 @@ export interface RowProps {
   value?: ReactNode;
   /** A switch or other control at the trailing edge (no chevron). */
   trailing?: ReactNode;
+  /** A bare 20px glyph at the left, in ink-2 (the account sheet's rows). */
+  icon?: ReactNode;
+  /** A destructive action (Log out): red words, no arrow. */
+  tone?: 'danger';
   /** The row opens something: it is a button with a chevron and a pressed state. */
   onPress?: () => void;
   /** Or a link. */
@@ -51,10 +55,11 @@ export interface RowProps {
   className?: string;
 }
 
-export function Row({ title, over, meta, art, value, trailing, onPress, href, className = '' }: RowProps) {
+export function Row({ title, over, meta, art, icon, tone, value, trailing, onPress, href, className = '' }: RowProps) {
   const pressable = Boolean(onPress || href);
   const content = (
     <>
+      {icon ? <span className="ui-row-icon" aria-hidden="true">{icon}</span> : null}
       {art ? <ThemeArtwork className="ui-row-art" src={art} transparentBackground alt="" /> : null}
       <span className="ui-row-body">
         {over ? <span className="ui-row-over">{over}</span> : null}
@@ -63,10 +68,10 @@ export function Row({ title, over, meta, art, value, trailing, onPress, href, cl
       </span>
       {value !== undefined && value !== null ? <span className="ui-row-value ui-readout">{value}</span> : null}
       {trailing ?? null}
-      {pressable && !trailing ? <ChevronRight className="ui-icon ui-row-chev" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" /> : null}
+      {pressable && !trailing && tone !== 'danger' ? <ChevronRight className="ui-icon ui-row-chev" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" /> : null}
     </>
   );
-  const classes = `ui-part ui-row ${className}`.trim();
+  const classes = `ui-part ui-row${tone === 'danger' ? ' ui-row--danger' : ''} ${className}`.trim();
   return (
     <li className="ui-row-item">
       {href ? <a className={classes} href={href}>{content}</a>

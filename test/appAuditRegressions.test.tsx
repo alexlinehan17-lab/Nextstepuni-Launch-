@@ -95,7 +95,8 @@ describe('app audit regressions', () => {
     const commandWords = readFileSync(resolve(ROOT, 'components/CommandWordReflex/index.tsx'), 'utf8');
     expect(router).toContain("label: 'Back to modules'");
     expect(shop).toContain("'Close Island Shop'");
-    expect(profile).toContain('aria-label="Close profile"');
+    // The account sheet is the shared Sheet now (area 0): its Close is named through closeLabel.
+    expect(profile).toContain('closeLabel="Close profile"');
     expect(catchUp).toContain('aria-label="Catch-Up level"');
     expect(catchUp).toContain('value={levelFilter}');
     // The level filter is the shared pill tab control now (role=tab / aria-selected), not hand-rolled aria-pressed buttons.

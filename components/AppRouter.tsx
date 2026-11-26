@@ -243,6 +243,8 @@ export interface AppRouterProps {
   onOpenFeedback: () => void;
   onOpenMobileProfile: () => void;
   hasUnreadNotifications: boolean;
+  /** Settings, the page (the `settings` view): built in App, where its actions live. */
+  settingsPage?: React.ReactNode;
 }
 
 /**
@@ -319,6 +321,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     unlockedThemes, setUnlockedThemes,
     setUnlockedCardStyles,
     onOpenSiteGuide, onOpenFeedback, onOpenMobileProfile, hasUnreadNotifications,
+    settingsPage,
   } = props;
 
   // Navigation handlers from context
@@ -625,6 +628,10 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
         />
       </Suspense>
     );
+  }
+
+  if (viewState === 'settings') {
+    return <>{settingsPage ?? null}</>;
   }
 
   if (viewState === 'onboarding') {

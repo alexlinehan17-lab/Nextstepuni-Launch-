@@ -230,6 +230,7 @@ function OverSection() {
         <Line>
           <Button onClick={() => setOpen('sheet')}>Bottom sheet</Button>
           <Button onClick={() => setOpen('save')}>Sheet with Save</Button>
+          <Button onClick={() => setOpen('who')}>Sheet about someone</Button>
         </Line>
         <Line>
           <Button onClick={() => setOpen('confirm')}>Confirm</Button>
@@ -245,6 +246,9 @@ function OverSection() {
             { value: 'irish', label: 'Irish', art: CREW.irish },
             { value: 'mathematics', label: 'Mathematics', art: CREW.mathematics },
           ]} />
+      </Sheet>
+      <Sheet open={open === 'who'} onClose={close} title="Demo Student" meta="Student" art={<img src={CREW.accounting} alt="" />}>
+        <List><Row icon={<Glyph icon={ChartNoAxesColumn} size={20} />} title="My Progress" onPress={close} /></List>
       </Sheet>
       <Sheet open={open === 'save'} onClose={close} title="This week's goal" titleSize="small" save={{ label: 'Save', onPress: close }}>
         <h3 className="t-title text-ink-primary">How many sessions this week?</h3>
@@ -309,6 +313,12 @@ function FieldsSection() {
           <Row art={CREW.accounting} title="Accounting" meta={<>Practice · 45 min · <span className="text-accent-text">Up next</span></>} onPress={() => {}} />
           <Row title="Sessions this week" value="6 / 8" />
           <Row title="Offer me questions when I finish" trailing={<Switch checked={on} onChange={setOn} label="Offer me questions when I finish" />} />
+        </List>
+      </Spec>
+      <Spec label="Rows with an icon" caption="The account sheet's rows: a bare 20px glyph in ink-2 at the left. A destructive row is red words with no arrow.">
+        <List>
+          <Row icon={<Glyph icon={ChartNoAxesColumn} size={20} />} title="My Progress" onPress={() => {}} />
+          <Row icon={<Glyph icon={Timer} size={20} />} title="Log out" tone="danger" onPress={() => {}} />
         </List>
       </Spec>
       <Spec label="A group of rows that is one control" caption="Boxed only when the group as a whole is a control: a line, like every box you press.">

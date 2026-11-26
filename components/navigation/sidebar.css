@@ -71,8 +71,7 @@
 .nsu-nav-account[data-pressed] { transform:scale(.98); }
 /* The student's character stands bare: no circle, no tile (Alex, 25 Nov 2026). */
 .nsu-nav-avatar, .nsu-nav-menu-avatar { width:32px; height:32px; flex-shrink:0; }
-.nsu-kobra-nav :is(.nsu-nav-avatar, .nsu-nav-menu-avatar).star-crew-avatar { border:0; border-radius:0; background:transparent; mix-blend-mode:multiply; }
-.dark .nsu-kobra-nav :is(.nsu-nav-avatar, .nsu-nav-menu-avatar).star-crew-avatar { mix-blend-mode:normal; }
+.nsu-kobra-nav :is(.nsu-nav-avatar, .nsu-nav-menu-avatar).star-crew-avatar { width:32px; height:32px; border:0; border-radius:0; background:transparent; mix-blend-mode:normal; }
 .nsu-nav-account-copy { display:flex; flex-direction:column; flex:1; min-width:0; transition:opacity 160ms,filter 160ms; }
 .nsu-nav-account-copy > span { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:14px; line-height:18px; color:var(--ink-primary); }
 .nsu-nav-account-copy small { color:var(--ink-muted); font-size:12px; line-height:16px; }

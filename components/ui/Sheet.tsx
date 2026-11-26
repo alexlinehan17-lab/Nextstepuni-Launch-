@@ -81,9 +81,15 @@ export interface SheetProps {
   children: ReactNode;
   /** Name for Close (default "Close"). */
   closeLabel?: string;
+  /** A sheet about someone (the account sheet): their character, bare, after
+   *  Close, and the title at the left with this small line under it. */
+  art?: ReactNode;
+  meta?: ReactNode;
+  className?: string;
 }
 
-export function Sheet({ open, onClose, title, titleSize = 'heading', save, footer, children, closeLabel = 'Close' }: SheetProps) {
+export function Sheet({ open, onClose, title, titleSize = 'heading', save, footer, children, closeLabel = 'Close', art, meta, className = '' }: SheetProps) {
+  const lead = art !== undefined || meta !== undefined;
   const phase = usePresence(open, SHEET_LEAVE_MS);
   const panel = useRef<HTMLDivElement>(null);
   const titleId = useId();
@@ -117,9 +123,21 @@ export function Sheet({ open, onClose, title, titleSize = 'heading', save, foote
         style={drag ? ({ '--sheet-drag': `${drag.dy}px` } as CSSProperties) : undefined}
       >
         <div className="ui-scrim" aria-hidden="true" onClick={onClose} />
-        <div ref={panel} role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1} className="ui-sheet frame-sheet">
+        <div ref={panel} role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1} className={`ui-sheet frame-sheet ${className}`.trim()}>
           <div className="ui-sheet-drag" {...dragHandlers}>
             <span className="ui-sheet-grab" aria-hidden="true" />
+            {lead ? (
+              <div className="ui-sheet-head ui-sheet-head--lead frame-dialog-head">
+                <button type="button" className="ui-icon-btn" aria-label={closeLabel} onClick={onClose}>
+                  <X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+                </button>
+                {art ? <span className="ui-sheet-art" aria-hidden="true">{art}</span> : null}
+                <span className="ui-sheet-who">
+                  <h2 id={titleId} className="ui-sheet-title ui-sheet-title--small">{title}</h2>
+                  {meta ? <span className="ui-sheet-meta">{meta}</span> : null}
+                </span>
+              </div>
+            ) : (
             <div className="ui-sheet-head frame-dialog-head">
               {save
                 ? <button type="button" className="ui-sheet-text" onClick={onClose}>Cancel</button>
@@ -131,6 +149,7 @@ export function Sheet({ open, onClose, title, titleSize = 'heading', save, foote
                 ? <button type="button" className="ui-sheet-text ui-sheet-text--strong" onClick={save.onPress}>{save.label}</button>
                 : <span aria-hidden="true" />}
             </div>
+            )}
           </div>
           <div className="ui-sheet-body">{children}</div>
           {footer ? <div className="ui-sheet-foot">{footer}</div> : null}

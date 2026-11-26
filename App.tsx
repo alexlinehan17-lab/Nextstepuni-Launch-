@@ -168,7 +168,10 @@ const App: React.FC = () => {
     }
   }, [updateDemoProgress, user?.uid]);
 
-  const [settingsOpen, setSettingsOpen] = useState(false);
+  // Settings is a page now (agreed 26 Nov 2026), with its own place in the
+  // navigation (?view=settings): opening it navigates there, and its Back
+  // returns to where the student came from.
+  const setSettingsOpen = useCallback((open: boolean) => { if (open) nav.navigateToSettings(); }, [nav]);
   const [siteGuideOpen, setSiteGuideOpen] = useState(false);
   const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [passportOpen, setPassportOpen] = useState(false);
@@ -912,6 +915,24 @@ const App: React.FC = () => {
     onOpenFeedback: () => setFeedbackOpen(true),
     onOpenMobileProfile: () => setMobileProfileOpen(true),
     hasUnreadNotifications: unreadNotificationCount > 0,
+    settingsPage: user ? (
+      <SettingsModal
+        isOpen
+        onClose={nav.goBack}
+        settings={settings}
+        updateSetting={updateSetting}
+        userName={user.name}
+        userSchool={user.school}
+        userYearGroup={user.yearGroup ?? studentProfile?.yearGroup}
+        hasStudyProfile={studentProfile !== null}
+        hasNorthStar={northStar !== null}
+        onStartProfileSetup={() => nav.navigateToOnboarding()}
+        onChangeSubjects={studentProfile ? () => setChangeSubjectsOpen(true) : undefined}
+        onResetNorthStar={() => setNorthStarEditOpen(true)}
+        onAdvanceYear={() => setYearTransitionOpen(true)}
+        onLogout={handleLogout}
+      />
+    ) : null,
   };
 
   // One study session for the whole app, so the timer keeps counting while a
@@ -1005,22 +1026,6 @@ const App: React.FC = () => {
 
       {user && userProgressReady && (
         <>
-          <SettingsModal
-            isOpen={settingsOpen}
-            onClose={() => setSettingsOpen(false)}
-            settings={settings}
-            updateSetting={updateSetting}
-            userName={user?.name}
-            userSchool={user?.school}
-            userYearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
-            hasStudyProfile={studentProfile !== null}
-            hasNorthStar={northStar !== null}
-            onStartProfileSetup={() => { setSettingsOpen(false); nav.navigateToOnboarding(); }}
-            onChangeSubjects={studentProfile ? () => { setSettingsOpen(false); setChangeSubjectsOpen(true); } : undefined}
-            onResetNorthStar={() => { setSettingsOpen(false); setNorthStarEditOpen(true); }}
-            onAdvanceYear={() => { setSettingsOpen(false); setYearTransitionOpen(true); }}
-            onLogout={handleLogout}
-          />
           <YearTransitionFlow
             isOpen={yearTransitionOpen}
             onClose={() => setYearTransitionOpen(false)}
