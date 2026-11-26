@@ -93,7 +93,10 @@ describe('app audit regressions', () => {
     const profile = readFileSync(resolve(ROOT, 'components/UserProfileMenu.tsx'), 'utf8');
     const catchUp = readFileSync(resolve(ROOT, 'components/CatchUpLane/index.tsx'), 'utf8');
     const commandWords = readFileSync(resolve(ROOT, 'components/CommandWordReflex/index.tsx'), 'utf8');
-    expect(router).toContain("label: 'Back to modules'");
+    // A world's bar moved into its own screen (area 5): its one Back is still named.
+    const world = readFileSync(resolve(ROOT, 'components/ModuleShowcase.tsx'), 'utf8');
+    expect(router).toContain('<ModuleWorldScreen');
+    expect(world).toContain("label: 'Back to Modules'");
     expect(shop).toContain("'Close Island Shop'");
     // The account sheet is the shared Sheet now (area 0): its Close is named through closeLabel.
     expect(profile).toContain('closeLabel="Close profile"');
