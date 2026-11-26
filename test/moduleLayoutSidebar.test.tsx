@@ -86,7 +86,9 @@ describe('module navigation sidebar', () => {
       </ModulePositionProvider>,
     );
 
-    expect(screen.getAllByText('Module 03')).toHaveLength(2);
+    // The laptop reader names the module once, over its title in the steps column (area 5, board c-read-desk).
+    expect(screen.getAllByText('Module 03')).toHaveLength(1);
+    expect(screen.queryByText('Module 04')).not.toBeInTheDocument();
     expect(screen.queryByText('Unit 04')).not.toBeInTheDocument();
   });
 });

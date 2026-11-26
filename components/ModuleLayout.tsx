@@ -4,7 +4,7 @@
  */
 
 import { AnimatePresence,motion,useReducedMotion } from 'framer-motion';
-import { ArrowLeft,ArrowRight,ArrowUpRight,Clock,ListOrdered,Moon,Palette,PanelLeft,Search,Sun } from 'lucide-react';
+import { ChevronLeft,Clock,ListOrdered,Moon,PanelLeft,Sun } from 'lucide-react';
 import React,{ useEffect,useLayoutEffect,useRef,useState } from 'react';
 import { useModulePosition } from '../contexts/ModulePositionContext';
 import { useNavigation } from '../contexts/NavigationContext';
@@ -17,7 +17,7 @@ import { type ModuleProgress,type ModuleTheme,type SectionDefinition } from '../
 import { readSectionIds,readingCheckpoint,resumeSection } from '../utils/moduleReadingProgress';
 import ModuleCompleteScreen from './ModuleCompleteScreen';
 import { ModuleReferencesProvider,ReferencesModal } from './ModuleReferences';
-import KobraScope,{ Button,CommandMenu,Dialog,DialogContent,DialogDescription,DialogHeader,DialogTitle,Toasts,openCommandMenu,toast } from './approved-ui-runtime';
+import KobraScope,{ CommandMenu,Toasts,openCommandMenu,toast } from './approved-ui-runtime';
 import { BrandBook } from './learning/BrandBook';
 import { CompletionMark } from './learning/CompletionMark';
 import { ReaderNotes } from './learning/ReaderNotes';
@@ -29,9 +29,7 @@ import './learning/module-brand-review.css';
 import './learning/module-discovery.css';
 import './learning/module-reader-preview.css';
 import './learning/reader.css';
-import { Eyebrow } from './learning/shared';
 import './learning/sidebar-directions.css';
-import BackButton from './ui/BackButton';
 import { ALL_COURSES } from '../courseData';
 import { useCompactLayout } from '../hooks/useCompactLayout';
 import { moduleOutcome,moduleReadingTime } from '../utils/moduleDiscovery';
@@ -40,7 +38,7 @@ import { clearModuleResumeRequest,requestedModuleResume } from './learning/inten
 import './learning/module-reader.css';
 import { MODULE_WORLDS,Readout,WorldArt,worldStyle } from './moduleWorlds';
 import { PinnedFooter,TopBar } from './ui/Bars';
-import { Button as UiButton,Glyph,IconButton } from './ui/Button';
+import { Button as UiButton,Glyph,IconButton,TextButton } from './ui/Button';
 import { Switch } from './ui/Choice';
 import { useFrameTask } from './ui/Frame';
 import { List,PaperSheet,Row } from './ui/List';
@@ -75,7 +73,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   moduleNumber,
   moduleTitle,
   moduleSubtitle,
-  moduleDescription,
+  moduleDescription: _moduleDescription,
   theme: _theme,
   sections,
   onBack,
@@ -184,14 +182,6 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     }
   };
 
-  const handlePrev = () => {
-    if (activeSection > 0) {
-      handleJumpToSection(activeSection - 1);
-    }
-  };
-
-  const completedSections = readIds.size;
-
   // Reading comfort — ReadingSection (ModuleShared) consumes these variables.
   const readingScale = settingsCtx?.settings.readingScale ?? 1;
   const readingRelaxed = settingsCtx?.settings.readingSpacing === 'relaxed';
@@ -202,57 +192,9 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     settingsCtx?.updateSetting('readingScale', next);
   };
 
-  const readingControls = settingsCtx && (
-    <div>
-      <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-1.5">Reading Comfort</p>
-      <div className="flex items-center gap-2">
-        <button
-          onClick={() => stepReadingScale(-1)}
-          disabled={readingScale <= READING_SCALES[0]}
-          aria-label="Smaller text"
-          className="w-8 h-8 rounded-lg border border-zinc-200 dark:border-zinc-700 text-xs font-bold text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-surface-soft disabled:opacity-30"
-        >
-          A−
-        </button>
-        <span className="text-xs font-semibold tabular-nums text-zinc-500 dark:text-zinc-400 min-w-[44px] text-center">
-          {Math.round(readingScale * 100)}%
-        </span>
-        <button
-          onClick={() => stepReadingScale(1)}
-          disabled={readingScale >= READING_SCALES[READING_SCALES.length - 1]}
-          aria-label="Larger text"
-          className="w-8 h-8 rounded-lg border border-zinc-200 dark:border-zinc-700 text-sm font-bold text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-surface-soft disabled:opacity-30"
-        >
-          A+
-        </button>
-        <button
-          onClick={() => settingsCtx.updateSetting('readingSpacing', readingRelaxed ? 'normal' : 'relaxed')}
-          className={`flex-1 min-h-[32px] px-1.5 py-1 leading-tight rounded-lg border text-[11px] font-semibold transition-colors ${readingRelaxed ? 'border-[var(--accent-hex)] text-[var(--accent-hex)] bg-[rgba(var(--accent),0.08)]' : 'border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-surface-soft'}`}
-        >
-          {readingRelaxed ? 'Relaxed spacing ✓' : 'Relaxed spacing'}
-        </button>
-      </div>
-    </div>
-  );
-
-  const contents = (
-    <div className="mr-contents-inner" data-sidebar="notebook">
-      <div className="mr-notebook-label"><BrandBook size={39} /><div><Eyebrow>{moduleSubtitle || `Module ${displayedModuleNumber}`}</Eyebrow><span>Your learning notebook</span></div></div>
-      <h2>{moduleTitle}</h2>
-      <ReadingProgress done={completedSections} total={sections.length} />
-      <nav className="mr-progress-list" aria-label="Module sections"><ol>
-        {sections.map((section, index) => <li key={section.id}><button type="button" aria-label={`${section.title}. ${activeSection === index ? 'You’re here' : readIds.has(section.id) ? 'Read · Revisit anytime' : 'Open section'}`} aria-current={activeSection === index ? 'step' : undefined} onClick={() => handleJumpToSection(index)}>
-          <CompletionMark number={index + 1} complete={readIds.has(section.id)} current={activeSection === index} />
-          <span><strong>{section.title}</strong><small>{activeSection === index ? 'You’re here' : readIds.has(section.id) ? 'Read · Revisit anytime' : 'Open section'}</small></span>
-        </button></li>)}
-      </ol></nav>
-      <div className="mr-contents-foot"><Button variant="ghost" onClick={() => { setMobileSectionsOpen(false); openCommandMenu(); }}><Search />Find a section<kbd>⌘ K</kbd></Button>
-        {!!references?.length && <button className="mr-source-link" onClick={() => { setMobileSectionsOpen(false); setReferencesOpen(true); }}>Sources &amp; further reading<ArrowUpRight /></button>}
-      </div>
-    </div>
-  );
-  if (phone) return (
-    <PhoneReader
+  return (
+    <ReaderView
+      desk={!phone} sidebarOpen={desktopSidebarOpen} onToggleSidebar={() => setDesktopSidebarOpen(value => !value)}
       moduleId={moduleId} moduleTitle={moduleTitle} moduleSubtitle={moduleSubtitle} displayedModuleNumber={displayedModuleNumber}
       sections={sections} activeSection={activeSection} readIds={readIds} onCover={onCover} setOnCover={setOnCover}
       onBack={onBack} onJump={handleJumpToSection} onComplete={handleCompleteSection} finishButtonText={finishButtonText}
@@ -271,48 +213,6 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     />
   );
 
-  return (
-    <KobraScope className="nsu-learning nsu-module-reader theme-compat">
-      <div className="mr-main" data-sidebar="notebook" data-contents={desktopSidebarOpen} style={{ ['--reading-scale' as string]: String(readingScale), ['--reading-lh' as string]: readingRelaxed ? '2.15' : '1.85' }}>
-        <header className="mr-topbar">
-          <div className="mr-breadcrumb"><BackButton onClick={onBack} label="Back to modules" /><span>Module {displayedModuleNumber}</span><span>{moduleTitle}</span></div>
-          <div className="mr-tools">
-            <Button className="mr-desktop-contents" variant="outline" onClick={() => setDesktopSidebarOpen(value => !value)} aria-expanded={desktopSidebarOpen} aria-controls="module-sidebar-content" aria-label={desktopSidebarOpen ? 'Collapse module navigation' : 'Expand module navigation'}><PanelLeft />Contents</Button>
-            <Button className="mr-mobile-contents" variant="outline" onClick={() => setMobileSectionsOpen(true)} aria-label="Open module sections"><PanelLeft />Contents</Button>
-            <Button variant="ghost" onClick={() => setNotesOpen(true)}><BrandBook size={23} />Notes</Button>
-            {settingsCtx && <Button variant="ghost" size="icon" aria-label="Reading comfort" onClick={() => setPickerOpen(true)}><Palette /></Button>}
-          </div>
-        </header>
-        <div className="mr-layout">
-          <aside className="mr-contents" aria-label="Module navigation" id="module-sidebar-content" inert={!desktopSidebarOpen} aria-hidden={!desktopSidebarOpen}>{contents}</aside>
-          <main className="mr-reading-area" ref={mainRef}>
-            <div className="mr-running-head"><span>{moduleDescription || moduleSubtitle}</span><span>Section {String(activeSection + 1).padStart(2, '0')} / {String(sections.length).padStart(2, '0')}</span></div>
-            <article className="mr-paper">
-              <ModuleReferencesProvider value={references ?? []}>
-                <AnimatePresence mode="wait" initial={false}><motion.div key={sections[activeSection]?.id ?? activeSection} initial={{ opacity: 0, y: reducedMotion ? 0 : 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: reducedMotion ? 0 : .22 }} className="mr-page-content">
-                  {moduleResponses.isLoaded ? children(activeSection) : <p role="status">Loading your saved drafts…</p>}
-                  <ResponseSaveStatus status={moduleResponses.saveStatus} onRetry={moduleResponses.retrySave} />
-                  <div className="mr-page-signoff"><span>A little further than before.</span><span>{String(activeSection + 1).padStart(2, '0')}</span></div>
-                </motion.div></AnimatePresence>
-              </ModuleReferencesProvider>
-              <footer className="mr-page-footer">
-                <Button variant="ghost" onClick={handlePrev} disabled={activeSection === 0}><ArrowLeft />Previous</Button>
-                <div><small>This records reading, not practice. Activities are optional.</small><span>{sections[activeSection + 1]?.title ?? 'Your last page. Yours to revisit.'}</span></div>
-                <Button variant="outline" className="nsu-ink-outline" onClick={handleCompleteSection} aria-label={activeSection === sections.length - 1 ? finishButtonText : 'Continue to the next section'}>{activeSection === sections.length - 1 ? finishButtonText : 'Continue'}<ArrowRight /></Button>
-              </footer>
-            </article>
-          </main>
-        </div>
-      </div>
-      <Dialog open={mobileSectionsOpen} onOpenChange={setMobileSectionsOpen}><DialogContent className="mr-contents-dialog"><DialogHeader><DialogTitle>Contents</DialogTitle><DialogDescription>{moduleTitle}</DialogDescription></DialogHeader>{contents}</DialogContent></Dialog>
-      <Dialog open={pickerOpen} onOpenChange={setPickerOpen}><DialogContent><DialogHeader><DialogTitle>Make yourself comfortable</DialogTitle><DialogDescription>Choose how you like to read.</DialogDescription></DialogHeader>{readingControls}{settingsCtx && <Button variant="outline" onClick={() => settingsCtx.updateSetting('darkMode', !settingsCtx.settings.darkMode)}>{settingsCtx.settings.darkMode ? <Sun /> : <Moon />}{settingsCtx.settings.darkMode ? 'Light mode' : 'Dark mode'}</Button>}</DialogContent></Dialog>
-      <Toasts position="bottom-center" />
-      {notesOpen && <ReaderNotes moduleId={moduleId} title={moduleTitle} sectionTitle={sections[activeSection]?.title ?? moduleTitle} sectionIndex={activeSection} open={notesOpen} onClose={() => setNotesOpen(false)} />}
-      <CommandMenu placeholder="Find a section…" actions={sections.map((section, index) => ({ id: section.id, label: section.title, hint: readIds.has(section.id) ? 'Read · Revisit anytime' : 'Open section', keywords: [section.eyebrow], icon: <CompletionMark number={index + 1} complete={readIds.has(section.id)} current={index === activeSection} />, action: () => handleJumpToSection(index) }))} />
-      {!!references?.length && <ReferencesModal open={referencesOpen} onClose={() => setReferencesOpen(false)} references={references} />}
-      <ModuleCompleteScreen isOpen={showCelebration} moduleTitle={moduleTitle} moduleSubtitle={moduleSubtitle} categoryColor={categoryColor || COLORS.accent} modulesCompleted={modulesCompleted} totalModules={totalModules} sectionsCount={sections.length} northStarStatement={northStarStatement} onContinue={handleCelebrationContinue} onPractice={() => { setShowCelebration(false); navigation.navigateToStudySession(); }} onReview={() => { setShowCelebration(false); setActiveSection(0); }} />
-    </KobraScope>
-  );
 };
 
 /* ── Reading a module on a phone (area 5 of the design build; board c-read-flow) ───────────────────
@@ -321,7 +221,9 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
    Continue at the foot that names the next step. Contents, Notes and the reading comfort rise from
    the bottom. A module opens on its title page; Continue reading picks up at the student's step. */
 
-interface PhoneReaderProps {
+interface ReaderViewProps {
+  /** A laptop: today's bones (the steps down the left, the step in a box), board c-read-desk. */
+  desk: boolean; sidebarOpen: boolean; onToggleSidebar: () => void;
   moduleId: string; moduleTitle: string; moduleSubtitle?: string; displayedModuleNumber: string;
   sections: SectionDefinition[]; activeSection: number; readIds: Set<string>;
   onCover: boolean; setOnCover: (value: boolean) => void;
@@ -382,12 +284,14 @@ function stepMeta(index: number, read: boolean, current: string | null) {
   return <>Step {index + 1}{current ? <> · <span className="rd-live">{current}</span></> : read ? ' · Read' : ' · Not read yet'}</>;
 }
 
-function PhoneReader(props: PhoneReaderProps) {
-  const { moduleId, moduleTitle, moduleSubtitle, displayedModuleNumber, sections, activeSection, readIds, onCover, setOnCover, onBack, onJump, onComplete, finishButtonText,
+function ReaderView(props: ReaderViewProps) {
+  const { desk, sidebarOpen, onToggleSidebar, moduleId, moduleTitle, moduleSubtitle, displayedModuleNumber, sections, activeSection, readIds, onCover: coverState, setOnCover, onBack, onJump, onComplete, finishButtonText,
     references, readingScale, readingRelaxed, mainRef, reducedMotion, contentsOpen, setContentsOpen, notesOpen, setNotesOpen, comfortOpen, setComfortOpen,
     referencesOpen, setReferencesOpen, comfort, content, saveStatus, commandMenu, complete } = props;
   const settings = useSettingsContext();
   const dark = settings?.settings.darkMode ?? false;
+  // The title page is the phone's: a laptop opens on the step, as today.
+  const onCover = coverState && !desk;
   const course = ALL_COURSES.find(item => item.id === moduleId);
   const world = MODULE_WORLDS.find(item => item.id === course?.category);
   const worldLabel = `${world ? `${world.name} · ` : ''}Module ${displayedModuleNumber}`;
@@ -395,7 +299,7 @@ function PhoneReader(props: PhoneReaderProps) {
   const read = readIds.size;
   const last = activeSection === total - 1;
   const next = sections[activeSection + 1];
-  useFrameTask(true);
+  useFrameTask(!desk);
   useLayoutEffect(() => { window.scrollTo({ top: 0 }); }, [onCover]);
 
   const bar = (
@@ -470,25 +374,27 @@ function PhoneReader(props: PhoneReaderProps) {
     </PinnedFooter>
   );
 
-  return (
-    <KobraScope className="nsu-learning nsu-module-reader theme-compat rd-reader rd-reader--phone">
-      <div className="rd-main" data-cover={onCover || undefined} style={{ ['--reading-scale' as string]: String(readingScale), ['--reading-lh' as string]: readingRelaxed ? '1.95' : '1.65' }}>
-        {bar}
-        {page}
-        {foot}
-      </div>
+  const readingVars = { ['--reading-scale' as string]: String(readingScale), ['--reading-lh' as string]: readingRelaxed ? (desk ? '1.85' : '1.95') : (desk ? '1.63' : '1.65') };
+  const notebookHead = (
+    <div className="rd-nb" style={world ? worldStyle(world, dark) : undefined}>
+      <BrandBook size={40} />
+      <div className="rd-nb-copy"><p className="t-label mw-w-ink">{worldLabel}</p><p className="t-heading rd-nb-title">{moduleTitle}</p></div>
+    </div>
+  );
+  const moreRows = (close: () => void) => (
+    <List className="rd-more">
+      {references?.length ? <Row title="Sources and further reading" meta={`${references.length} ${references.length === 1 ? 'source' : 'sources'}`} onPress={() => { close(); setReferencesOpen(true); }} /> : null}
+      {comfort ? <Row title="Text size and spacing" meta={`${Math.round(readingScale * 100)}% · ${readingRelaxed ? 'Relaxed' : 'Normal'} spacing`} onPress={() => { close(); setComfortOpen(true); }} /> : null}
+      <Row title="Find a section" onPress={() => { close(); openCommandMenu(); }} />
+    </List>
+  );
+  const layers = (
+    <>
       <Sheet open={contentsOpen} onClose={() => setContentsOpen(false)} title="Contents" titleSize="small" titleAlign="start" className="rd-sheet rd-contents">
-        <div className="rd-nb" style={world ? worldStyle(world, dark) : undefined}>
-          <BrandBook size={40} />
-          <div className="rd-nb-copy"><p className="t-label mw-w-ink">{worldLabel}</p><p className="t-heading rd-nb-title">{moduleTitle}</p></div>
-        </div>
+        {notebookHead}
         <ReadingProgress done={read} total={total} />
         <nav className="mr-progress-list" aria-label="Module sections">{stepRows(index => (index === activeSection && !onCover ? 'You’re here' : null), () => setContentsOpen(false))}</nav>
-        <List className="rd-more">
-          {references?.length ? <Row title="Sources and further reading" meta={`${references.length} ${references.length === 1 ? 'source' : 'sources'}`} onPress={() => { setContentsOpen(false); setReferencesOpen(true); }} /> : null}
-          {comfort ? <Row title="Text size and spacing" meta={`${Math.round(readingScale * 100)}% · ${readingRelaxed ? 'Relaxed' : 'Normal'} spacing`} onPress={() => { setContentsOpen(false); setComfortOpen(true); }} /> : null}
-          <Row title="Find a section" onPress={() => { setContentsOpen(false); openCommandMenu(); }} />
-        </List>
+        {moreRows(() => setContentsOpen(false))}
       </Sheet>
       {comfort ? <Sheet open={comfortOpen} onClose={() => setComfortOpen(false)} title="Text size and spacing" titleSize="small" titleAlign="start" className="rd-sheet">{comfort}</Sheet> : null}
       <Toasts position="bottom-center" />
@@ -496,6 +402,63 @@ function PhoneReader(props: PhoneReaderProps) {
       {commandMenu}
       {!!references?.length && <ReferencesModal open={referencesOpen} onClose={() => setReferencesOpen(false)} references={references} />}
       {complete}
+    </>
+  );
+
+  if (desk) return (
+    <KobraScope className="nsu-learning nsu-module-reader theme-compat rd-reader rd-reader--desk">
+      <div className="rd-desk" data-contents={sidebarOpen} style={readingVars}>
+        <header className="rd-dbar" data-student-page-header>
+          <div className="rd-dgroup rd-dbar-row">
+            <IconButton className="rd-dback" label="Back to modules" icon={<Glyph icon={ChevronLeft} />} onClick={onBack} />
+            <span className="rd-dbar-end">
+              <IconButton className="rd-dcontents" label="Contents" icon={<Glyph icon={ListOrdered} />} onClick={() => setContentsOpen(true)} />
+              <IconButton className="rd-dfold" label={sidebarOpen ? 'Collapse module navigation' : 'Expand module navigation'} aria-expanded={sidebarOpen} aria-controls="module-sidebar-content"
+                icon={<Glyph icon={PanelLeft} />} onClick={onToggleSidebar} />
+              <TextButton className="rd-dnotes" onClick={() => setNotesOpen(true)}><BrandBook size={24} />Notes</TextButton>
+            </span>
+          </div>
+        </header>
+        <div className="rd-dgroup rd-dbody">
+          <aside className="rd-dsteps" id="module-sidebar-content" aria-label="Module navigation" inert={!sidebarOpen} aria-hidden={!sidebarOpen}>
+            {notebookHead}
+            <ReadingProgress done={read} total={total} />
+            <nav className="mr-progress-list" aria-label="Module sections">{stepRows(index => (index === activeSection ? 'You’re here' : null))}</nav>
+            {moreRows(() => {})}
+          </aside>
+          <article className="rd-dsheet" ref={mainRef as React.RefObject<HTMLElement>}>
+            <div className="rd-dsheet-face">
+              <ReaderStepContext.Provider value={{ index: activeSection, total, name: sectionName(sections[activeSection]?.eyebrow) }}>
+                <ModuleReferencesProvider value={references ?? []}>
+                  <AnimatePresence mode="wait" initial={false}><motion.div key={sections[activeSection]?.id ?? activeSection} initial={{ opacity: 0, y: reducedMotion ? 0 : 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: reducedMotion ? 0 : .22 }} className="mr-page-content rd-page">
+                    {content}
+                    <div className="rd-save">{saveStatus}</div>
+                    <div className="mr-page-signoff rd-signoff"><span>A little further than before.</span><Readout className="mw-ink3">{pad2(activeSection + 1)}</Readout></div>
+                  </motion.div></AnimatePresence>
+                </ModuleReferencesProvider>
+              </ReaderStepContext.Provider>
+            </div>
+          </article>
+        </div>
+        <PinnedFooter className="rd-dfoot">
+          <div className="rd-dgroup rd-dfoot-row">
+            <p className="rd-dneed">{next ? <>Next: <span className="rd-next">{next.title}</span> · step {activeSection + 2} of {total}</> : 'Your last page. Yours to revisit.'}</p>
+            <UiButton kind="main" size="lg" arrow="forward" className="rd-dgo" onClick={onComplete} aria-label={last ? finishButtonText : 'Continue to the next section'}>{last ? finishButtonText : 'Continue'}</UiButton>
+          </div>
+        </PinnedFooter>
+      </div>
+      {layers}
+    </KobraScope>
+  );
+
+  return (
+    <KobraScope className="nsu-learning nsu-module-reader theme-compat rd-reader rd-reader--phone">
+      <div className="rd-main" data-cover={onCover || undefined} style={readingVars}>
+        {bar}
+        {page}
+        {foot}
+      </div>
+      {layers}
     </KobraScope>
   );
 }

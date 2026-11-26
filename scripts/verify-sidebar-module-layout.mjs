@@ -54,8 +54,9 @@ try {
     if (await tour.isVisible()) await tour.getByRole('button', { name: 'Skip', exact: true }).click();
   }
   // A module on a phone opens on its title page (area 5); Continue reading (or Start reading) goes into the step.
+  // On a laptop the reader opens on the step, beside sidebar B (.rd-desk); below 1100px its steps sit in Contents.
   async function openModule(query, width, theme) {
-    await open(query, width, theme, '.mr-paper, .rd-main');
+    await open(query, width, theme, '.mr-paper, .rd-main, .rd-desk');
     const cover = frame.getByRole('button', { name: /^(Continue|Start) reading$/ });
     if (await cover.count()) await cover.click();
     await frame.locator('.mr-lesson-heading h1').first().waitFor();

@@ -51,7 +51,7 @@ import { isSchoolStaff } from './utils/authUtils';
 import { useNavigation } from './contexts/NavigationContext';
 import { useProgress } from './contexts/ProgressContext';
 import { saveModuleProgress } from './services/progressRepository';
-import { shouldShowStudentChrome } from './utils/studentChrome';
+import { shouldShowStudentChrome, shouldShowStudentSidebar } from './utils/studentChrome';
 import { isRankBaselineReady, observeRankForSession, type RankUpTracker } from './utils/rankUpTransition';
 import { isProgressReadyForUser } from './utils/progressHydration';
 import { DEMO_STUDENT_UID } from './data/devStudent';
@@ -956,7 +956,7 @@ const App: React.FC = () => {
         </div>
       )}
 
-      {user && userProgressReady && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin ? (
+      {user && userProgressReady && shouldShowStudentSidebar(viewState) && !isSchoolStaff(user.role) && !user.isAdmin ? (
         <NextStepUniSidebar user={user} settings={settings} updateSetting={updateSetting}
           onLogout={handleLogout} onOpenSettings={() => setSettingsOpen(true)}
           onOpenPassport={() => setPassportOpen(true)} onOpenSiteGuide={() => setSiteGuideOpen(true)}

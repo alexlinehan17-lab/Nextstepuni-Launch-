@@ -131,4 +131,17 @@ describe('reading a module on a phone', () => {
     expect(nav.navigateToStudySession).toHaveBeenCalledOnce();
     expect(onBack).not.toHaveBeenCalled();
   });
+
+  test('on a laptop today\'s bones stay: no title page, the steps down the left, the step in its box', async () => {
+    device.phone = false;
+    render(<Reader start={partway} />);
+    expect(await screen.findByRole('heading', { name: 'Reading part 4' })).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Continue reading' })).not.toBeInTheDocument();
+    const steps = screen.getByRole('complementary', { name: 'Module navigation' });
+    expect(within(steps).getAllByRole('button', { name: /^Part \d\./ })).toHaveLength(5);
+    expect(within(steps).getByRole('progressbar', { name: 'Reading progress' })).toHaveAttribute('aria-valuenow', '3');
+    expect(screen.getByText(/step 5 of 5/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Collapse module navigation' }));
+    expect(steps).toHaveAttribute('inert');
+  });
 });

@@ -146,6 +146,74 @@
 .rd-comfort-size { display: inline-flex; align-items: center; gap: var(--space-2); }
 .rd-comfort-pct { min-width: 44px; text-align: center; }
 
+/* ── A laptop: today's bones in the system's look (board c-read-desk; Alex, 26 Nov 2026: "keep the txt in a
+   box ... keep the bones") ─ beside sidebar B, one group centred in the space: the steps and progress down the
+   left, the step on the screen's one sheet; the bar and the footer line up with the group's edges. */
+.rd-desk { display: flex; min-height: 100dvh; flex-direction: column; background: var(--surface-canvas); }
+.rd-dgroup { width: min(936px, 100% - 2 * var(--space-6)); margin: 0 auto; }
+.rd-dbar { position: sticky; top: 0; z-index: var(--z-sticky); background: var(--surface-canvas); }
+.rd-dbar-row { display: flex; align-items: center; justify-content: space-between; height: 64px; border-bottom: 1px solid var(--hairline); }
+.rd-dbar .rd-dback { margin-left: -10px; }
+.rd-dbar-end { display: flex; align-items: center; gap: var(--space-2); }
+.rd-dnotes > span { display: inline-flex; align-items: center; gap: var(--space-2); font-size: 15px; line-height: 20px; }
+.rd-dbody { display: grid; flex: 1 0 auto; grid-template-columns: 224px minmax(0, 1fr); column-gap: 40px; align-items: start; padding-top: 28px; padding-bottom: var(--space-8); }
+.rd-desk[data-contents='false'] .rd-dbody { grid-template-columns: minmax(0, 1fr); }
+.rd-desk[data-contents='false'] .rd-dsteps { display: none; }
+.rd-dsteps { position: sticky; top: 92px; display: flex; flex-direction: column; gap: 20px; max-height: calc(100dvh - 190px); overflow-y: auto; scrollbar-width: none; }
+.rd-dsteps .rd-nb { align-items: flex-start; gap: var(--space-3); }
+.rd-dsteps .rd-nb-title { font-size: 19px; line-height: 24px; }
+.rd-dsteps .mr-reading-progress { margin: 0; color: var(--ink-primary); }
+.rd-dsteps .mr-progress-caption { font-size: 15px; line-height: 21px; }
+.rd-dsteps .mr-progress-caption strong { font-weight: 400; color: var(--ink-primary); }
+.rd-dsteps .mr-progress-caption > span { color: var(--ink-primary); }
+.rd-dsteps .mr-progress-caption small { color: var(--ink-muted); font-size: 13px; }
+.rd-dsteps .mr-pencil-track { stroke: var(--hairline); stroke-width: 2; }
+.rd-dsteps .mr-pencil-ink { stroke: var(--ink-primary); stroke-width: 2; }
+.rd-dsteps .mr-pencil-tip { stroke: var(--nsu-orange); stroke-width: 2.6; }
+.rd-dsteps .mr-progress-list { padding-left: 0; }
+.rd-dsteps .mr-progress-list li { min-height: 0; padding: 0; }
+.rd-dsteps .mr-progress-list button.ui-row { min-height: 56px; padding: 8px 0; border: 0; border-bottom: 1px solid var(--hairline); border-radius: 0; background: none; box-shadow: none; align-items: center; gap: var(--space-3); }
+.rd-dsteps .mr-progress-list button.ui-row > span:last-child { display: inline; }
+.rd-dsteps .mr-progress-list .ui-row-item:last-child .ui-row { border-bottom: 0; }
+.rd-dsteps .rd-steps .ui-row-chev { display: none; }
+.rd-dsteps .rd-steps.ui-list { border-top: 1px solid var(--hairline); }
+.rd-dsteps .cm-mark { margin-top: 0; }
+.rd-dsteps .rd-more.ui-list { border-top: 1px solid var(--hairline); }
+.rd-dsteps .rd-more .ui-row { min-height: 52px; padding: 6px 0; }
+.rd-dsteps .rd-more .ui-row-title { font-size: 15px; line-height: 21px; }
+.rd-dsteps .rd-more .ui-row-item:last-child .ui-row { border-bottom: 0; }
+/* the step on the screen's one sheet: white, a line, the soft lift, two sheets behind it (tilted less: it is tall) */
+.rd-dsheet { position: relative; isolation: isolate; min-width: 0; }
+.rd-dsheet::before, .rd-dsheet::after { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: -1; border: 1px solid var(--outline-soft); border-radius: var(--r-card); background: var(--surface-paper); transform: rotate(-0.32deg); }
+.rd-dsheet::after { transform: rotate(0.32deg); }
+.rd-dsheet-face { position: relative; padding: 34px 44px 30px; border: 1px solid var(--outline-soft); border-radius: var(--r-card); background: var(--surface-paper); box-shadow: var(--lift); }
+.rd-reader--desk .mr-lesson-heading { margin: 0; padding: 0 0 22px; gap: var(--space-4); }
+.rd-reader--desk .mr-lesson-heading h1 { font-size: 44px; line-height: 48px; }
+.rd-reader--desk .mr-lesson-heading .rs-art { width: 128px; height: 128px; margin: -18px -14px -6px 0; }
+.rd-reader--desk .mr-prose { padding: 26px 0 0; font-size: calc(19px * var(--reading-scale, 1)) !important; }
+.rd-reader--desk .mr-prose > * + * { margin-top: 20px; }
+.rd-reader--desk .rd-save { margin: var(--space-6) 0 0; }
+.rd-reader--desk .mr-page-signoff.rd-signoff { margin: 36px 0 0; }
+/* on the sheet the exercise lies flat (no sheet on a sheet); its own boxes are what you press */
+.rd-reader--desk .wr-skin { margin: 36px 0 0; }
+.rd-reader--desk .wr-skin > div:first-child, .rd-reader--desk .wr-exercise { padding: 24px 0 0 !important; border: 0 !important; border-top: 1px solid var(--hairline) !important; border-radius: 0 !important; background: none !important; box-shadow: none; }
+/* the footer: pinned; its hairline spans the group, the next step's name starts at the sheet's edge, Continue ends at it */
+.rd-desk .ui-foot.rd-dfoot { padding: 0; }
+.rd-dfoot-row { display: grid; grid-template-columns: 224px minmax(0, 1fr) auto; column-gap: 40px; align-items: center; padding: 14px 0 18px; border-top: 1px solid var(--hairline); }
+.rd-desk[data-contents='false'] .rd-dfoot-row { grid-template-columns: 0 minmax(0, 1fr) auto; column-gap: 0; }
+.rd-dneed { grid-column: 2; margin: 0; color: var(--ink-muted); font-size: 15px; line-height: 21px; }
+.rd-dfoot-row .rd-dgo { grid-column: 3; min-width: 280px; justify-content: space-between; }
+/* where the window is too narrow for the steps beside the sheet, they move into Contents (as today below 980px) */
+.rd-dbar .rd-dcontents { display: none; }
+@media (max-width: 1099px) {
+  .rd-dbar .rd-dcontents { display: inline-flex; }
+  .rd-dbar .rd-dfold { display: none; }
+  .rd-dbody { grid-template-columns: minmax(0, 1fr); }
+  .rd-dsteps { display: none; }
+  .rd-dfoot-row { grid-template-columns: 0 minmax(0, 1fr) auto; column-gap: 0; }
+  .rd-dneed { padding-right: var(--space-4); }
+}
+
 /* ── Finishing a module: Starguy steps in once, the ticks draw in ───────────────────────────────────── */
 .rd-finish { z-index: var(--z-celebration); display: flex; flex-direction: column; overflow-y: auto; background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
 .rd-finish-page { flex: 1 0 auto; width: min(100%, 560px); margin: 0 auto; padding: 0 var(--space-6) var(--space-6); }
@@ -169,7 +237,7 @@
 .rd-dtick svg { width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
 .rd-finish-extra { margin: var(--space-3) 0 0; }
 .rd-finish-review { margin-top: var(--space-4); }
-.rd-finish .ui-foot { width: 100%; }
+.rd-finish .ui-foot { align-self: center; width: min(100%, 560px); }
 .rd-finish--play .rd-finish-crew { animation: rd-settle 620ms var(--ease-out) both; }
 .rd-finish--play .rd-dtick { animation: rd-pop var(--t-ui) var(--ease-out) both; animation-delay: calc(260ms + var(--i) * 110ms); }
 .rd-finish--play .rd-dtick path { stroke-dasharray: 22; stroke-dashoffset: 22; animation: rd-draw 180ms var(--ease-out) forwards; animation-delay: calc(320ms + var(--i) * 110ms); }
