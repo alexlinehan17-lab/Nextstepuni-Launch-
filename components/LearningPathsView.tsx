@@ -113,7 +113,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
       <div data-student-page-header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-4 md:px-10 dark:border-zinc-800 dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
         <div className="mx-auto max-w-7xl"><PageHeader onBack={onBack} eyebrow="Guided learning" title="Learning Paths" compact /></div>
       </div>
-      <div className="max-w-5xl mx-auto px-4 pt-32 sm:px-6">
+      <div className="frame-page [--frame-pad-top:8rem] max-w-5xl mx-auto px-4 sm:px-6">
 
         {/* ── Card grid ── */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">

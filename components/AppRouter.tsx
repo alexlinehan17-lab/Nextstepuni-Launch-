@@ -798,7 +798,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
             </div>
           </header>
           {/* Showcase */}
-          <div className="pt-28 md:pt-32 pb-24 md:pb-12 flex items-center justify-center" style={{ minHeight: 'calc(100vh - 80px)' }}>
+          <div className="frame-page [--frame-pad-top:7rem] md:[--frame-pad-top:8rem] pb-24 md:pb-12 flex items-center justify-center" style={{ minHeight: 'calc(100vh - 80px)' }}>
             <Suspense fallback={<LoadingSpinner variant="compact" calm placement="panel" label={`Opening ${categoryTitles[currentCategory]}`} />}>
               <ModuleShowcase
                 courses={categoryCourses}
@@ -868,8 +868,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
               // with each module's own sticky mobile header and can obscure
               // both its title and back control.
               <div
-                className="relative z-10 bg-[var(--accent-hex)] dark:bg-[var(--accent-hex)]"
-                style={{ paddingTop: 'var(--sat, 0px)' }}
+                className="journey-return-bar frame-page relative z-10 bg-[var(--accent-hex)] dark:bg-[var(--accent-hex)]"
               >
                 <button
                   onClick={handleBackToCategory}

@@ -1,4 +1,6 @@
-.nsu-module-reader { padding-top:calc(4px + var(--sat, 0px)); }
+.nsu-module-reader { padding-top:calc(4px + var(--safe-top)); }
+/* Under the "Back to Journey Results" bar, which already clears the island. */
+.journey-return-bar + div .nsu-module-reader { padding-top:4px; }
 .nsu-module-reader .mr-topbar { padding-right:0; }
 .nsu-module-reader .mr-running-head > span:last-child { flex-shrink:0; white-space:nowrap; }
 .nsu-module-reader .mr-lesson-heading h1 { font:500 clamp(34px,3.4vw,52px)/1.12 var(--rs-serif); letter-spacing:-1.3px; margin:0; max-width:22ch; }
