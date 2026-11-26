@@ -1,0 +1,268 @@
+{
+ "subject": "geography",
+ "verdict": "needs-work",
+ "summary": "Short-answer cards with a definite answer look clean (28 years, South east, the rock table), and the volcano card with the question diagram plus the scheme's labelled diagram is the best thing in the sample. But many cards cannot be answered from the card itself: the stem says 'the graph above', 'the map above' or 'the features below' while the graph, map or table lives only behind an attachment button, and that attachment is a whole exam page showing other parts and sometimes a different question. Several schemes contain no answer at all ('The scheme prints no answer here: any correct one earns the marks'), including the 30-mark essay and the 20-mark sketch map, which leaves only counters and mark buttons. The whole OS map is shown at a size where nothing can be read, and scheme rows carry shorthand and stray characters ('6//', '7/6 and 6/7 SRPs', 'Four answers @ 5 marks each').",
+ "scores": {
+  "question": 2,
+  "attachments": 2,
+  "scheme": 2,
+  "phone": 3,
+  "desktop": 3
+ },
+ "issues": [
+  {
+   "title": "Question refers to a figure that is not on the card",
+   "detail": "Stems say 'Examine the graph above' (cards 1, 11), 'Study the map above' (card 7), 'Match each of the features below ... in the table below' (card 6) and 'Complete the table below' (card 4), but nothing is above or below: the graph/map/table is only behind the 'Official question page' button. Card 6 is the worst case: the text never names the features or the lettered processes, so the question is meaningless without opening the page, and the page as it opens shows Question 2 first.",
+   "severity": "high",
+   "cards": [
+    1,
+    4,
+    6,
+    7,
+    11
+   ],
+   "best_evidence_image": "06_phone_answer.png",
+   "suggested_fix": "Show a tight crop of the graph/map/table inline in the question area (as cards 9 and 10 do) and keep the full page as a secondary link. For card 6 show the lettered pictures/table inline."
+  },
+  {
+   "title": "Attached page shows other parts and a different question",
+   "detail": "The attachment is the full exam page. Card 6 (Q3) opens on all of Q2 'Rocks' (both parts) with Q3 only starting at the bottom edge; card 10 (Q4) opens on all of Q3 'Regions' with Q4's diagram cut off below the fold. Cards 1, 7 and 11 show the graph/map plus the sibling parts (i), (ii) of the same question.",
+   "severity": "high",
+   "cards": [
+    1,
+    6,
+    7,
+    10,
+    11
+   ],
+   "best_evidence_image": "06_attached_page.png",
+   "suggested_fix": "Crop the attachment to this question's figure/table only; never open on a neighbouring question."
+  },
+  {
+   "title": "Scheme shows no answer, only a mark counter",
+   "detail": "Card 7 ('Name any one country in the 0-9 category') reveals 'Country named - The scheme prints no answer here: any correct one earns the marks'; card 8 gives 'Location 1 / Location 2' with the same line; card 2's sketch map is four rows of 1m-6m buttons with that line repeated; card 3 (30-mark essay) and card 12 (12 marks) are just '+/-' SRP counters. The student learns the mark split but nothing about what a correct answer looks like, and cannot self-check.",
+   "severity": "high",
+   "cards": [
+    2,
+    3,
+    7,
+    8,
+    12
+   ],
+   "best_evidence_image": "07_desktop_answer.png",
+   "suggested_fix": "Where the scheme prints sample answers or 'e.g.' lists, show them as examples. Where it truly prints none, show a crop of the official scheme entry so the student sees that is all there is, and consider offering worked example answers clearly labelled as not from the SEC."
+  },
+  {
+   "title": "Raw examiner shorthand and stray characters in scheme rows",
+   "detail": "Card 3 has a row titled 'Examination of impact · 6//' and a heading 'Examination of cause and impact (7/6 and 6/7 SRPs)', plus 'Credit 1 x SRP...' and 'Max 7 x SRP's'. Card 1 says 'Four answers @ 5 marks each' above a single 5-mark box on a 5-mark card (that line describes the whole of Q7A, not this part) and the answer is slash-joined 'Increasing / Rising / Growing / Upward'. Card 9 says 'Each question · 4 parts @ 2 marks each' on a 2-mark card and lists 'Clós, Ráth, Lios, Enclosure, Ringfort' as one tick with no 'any one'. Card 10's 'Five terms @ 2 marks each as follows' sits inside the Vent box only. Every row also carries an 'EXACT ALLOCATION · / 2' tag that reads like debug text, and each answer is repeated as box title and tick label (card 6: 'Freeze Thaw Action' / 'Freeze Thaw Action · D').",
+   "severity": "medium",
+   "cards": [
+    1,
+    3,
+    6,
+    9,
+    10
+   ],
+   "best_evidence_image": "03_desktop_answer.png",
+   "suggested_fix": "Rewrite in plain words ('Any one of: Increasing, Rising, Growing, Upward - 5 marks'; 'Cause: up to 6 points at 2 marks each'), drop whole-question allocation lines from single-part cards, remove '6//' and the EXACT ALLOCATION tags, and do not repeat the answer as its own heading."
+  },
+  {
+   "title": "Matching answers lose their meaning",
+   "detail": "Card 6's scheme lists 'Freeze Thaw Action · D, River Erosion · A, Chemical Weathering · E...' but the card never shows what features A-E are, so the letters mean nothing. Card 10's five ticks are just the five given terms ('Vent', 'Crater'...), which does not tell the student which blank each goes in; only the scheme diagram does that job.",
+   "severity": "medium",
+   "cards": [
+    6,
+    10
+   ],
+   "best_evidence_image": "06_desktop_answer.png",
+   "suggested_fix": "Show matches as pairs in a two-column table (feature -> process), and for label-the-diagram questions lead with the scheme's labelled diagram."
+  },
+  {
+   "title": "OS map unreadable at the size shown",
+   "detail": "The 'Official 1:50 000 map extract' opens as a whole-sheet image about 780px wide in the reader; place names and grid numbers are a few pixels high and cannot be read on desktop, let alone a 390px phone. Card 5 needs the student to find Long Hill and Lachtnafrankee on it. Card 9 handles this far better with an inline crop of the relevant grid squares.",
+   "severity": "medium",
+   "cards": [
+    5,
+    9
+   ],
+   "best_evidence_image": "05_attached_page.png",
+   "suggested_fix": "Give every OS map card an inline crop of the relevant squares like card 9, and open the full map at a zoomable size with pinch/drag."
+  },
+  {
+   "title": "Options and lists flattened",
+   "detail": "Card 5's tick-box options appear as two bare lines 'North east' / 'South east' with no boxes. Card 4's six terms (a 2x3 grid on the paper) run as six plain lines indistinguishable from the question text around them, and the answer table (Limestone/Shale/Sandstone) is only in the attachment. Card 12's stem starts '(i) Name one example...' then jumps to '(iii)', with (ii) missing and no explanation that (i) is context.",
+   "severity": "low",
+   "cards": [
+    4,
+    5,
+    12
+   ],
+   "best_evidence_image": "04_phone_answer.png",
+   "suggested_fix": "Render options as chips/tick boxes, the term list as a boxed word bank, and show the answer table as a real table."
+  },
+  {
+   "title": "Scheme diagram placed in the question column; phone gaps",
+   "detail": "On card 10 the scheme's labelled diagram appears after reveal under the question on the left, away from 'The Scheme' heading on the right, and in grey rather than colour; on phone both diagrams are small (labels roughly 6-7px) and need Enlarge. Most phone cards also have a 200-400px blank band before 'Your answer'.",
+   "severity": "low",
+   "cards": [
+    10,
+    1,
+    7,
+    8
+   ],
+   "best_evidence_image": "10_phone_answer.png",
+   "suggested_fix": "Put the labelled diagram at the top of the scheme panel and let diagrams fill the phone width; remove the blank band."
+  }
+ ],
+ "good_examples": [
+  {
+   "card": 10,
+   "why": "Question shown as a crop of the real diagram, and the reveal adds the scheme's labelled diagram - immediately checkable.",
+   "image": "10_desktop_answer.png"
+  },
+  {
+   "card": 9,
+   "why": "Inline map crop of the right grid squares is large and legible, and the guide explains honestly that no legend was published.",
+   "image": "09_desktop_answer.png"
+  },
+  {
+   "card": 11,
+   "why": "Simple question with one unmistakable answer (28 years); clean on phone apart from the graph being behind a button.",
+   "image": "11_phone_answer.png"
+  }
+ ],
+ "cards": [
+  {
+   "n": 1,
+   "question": "minor",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page shows Q7A graph plus parts (i), (ii) and the start of (iii).",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "'Examine the graph above' but the graph is only in the attachment. Scheme says 'Four answers @ 5 marks each' on a one-answer card; answer slash-joined."
+  },
+  {
+   "n": 2,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Question list (i)-(iii) reads well. Scheme is four rows of mark buttons each saying 'The scheme prints no answer here'; no guidance on what earns each mark; long on phone."
+  },
+  {
+   "n": 3,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "30-mark essay with no content at all - only SRP counters. Stray '6//' in a row title and '(7/6 and 6/7 SRPs)' shorthand."
+  },
+  {
+   "n": 4,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "Attached page shows only Q2(i) with its word list and table.",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Term list flattened to six plain lines; 'the table below' is not on the card. Scheme is correct and clear but six separate boxes instead of the 3-row table; (a)/(b) tags appear on only the first two boxes."
+  },
+  {
+   "n": 5,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "Attachment is the OS map only.",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Tick-box options shown as two bare lines. Scheme 'South east' is clear. Whole-sheet map is far too small to read place names."
+  },
+  {
+   "n": 6,
+   "question": "bad",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached page opens on Q2 'Rocks' parts (i) and (ii) in full; only the heading and first sentence of Q3 are visible.",
+   "attachment": "bad",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Features and lettered processes never appear on the card, so the question and the lettered answers ('Freeze Thaw Action · D') cannot be understood. Answer repeated as both box title and tick label."
+  },
+  {
+   "n": 7,
+   "question": "minor",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Page shows the map; sibling parts sit just below the visible area.",
+   "attachment": "minor",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "'Study the map above' with the map only in the attachment. Scheme gives no country at all - 'any correct one earns the marks'."
+  },
+  {
+   "n": 8,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Clean question. Scheme is 'Location 1 4m / Location 2 3m' with no example locations."
+  },
+  {
+   "n": 9,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "Attachment is the OS map only.",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Good inline map crop. Answer list has no 'any one' and sits under 'Each question · 4 parts @ 2 marks each', which describes the whole question. Full map attachment is unreadably small."
+  },
+  {
+   "n": 10,
+   "question": "ok",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached page opens on Q3 'Regions' (matching table) in full; Q4's diagram is cut off at the bottom.",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Inline crop of the diagram is right and the scheme's labelled diagram is the real answer, but it sits in the question column and the five ticks just repeat the given terms. Diagrams small on phone."
+  },
+  {
+   "n": 11,
+   "question": "minor",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Page shows the graph plus parts (i) and (ii).",
+   "attachment": "minor",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "'Examine the graph above' with graph only in attachment (graph itself is very legible). Scheme '28 (years)' is clear."
+  },
+  {
+   "n": 12,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Stem quotes part (i) then jumps to (iii). Scheme is a bare '4 SRPs x 3m' counter with no example points."
+  }
+ ]
+}

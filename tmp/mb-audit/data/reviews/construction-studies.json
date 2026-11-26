@@ -1,0 +1,290 @@
+{
+ "subject": "construction-studies",
+ "verdict": "needs-work",
+ "summary": "Every sampled card shows the question only as a picture of the whole printed question (stem plus parts a, b, c); the app never prints the text of the part actually being asked, so on a single-part card such as 'Q9(c)' or 'Q2(b)' the student has to hunt for their part inside a crop whose text is roughly half the size of the app's body text on a phone. The 'Read original question' button opens on the exam paper's cover page (page 1 of 2) in all 12 cards, so the first thing the student sees is the SEC title page, not the question. The marking scheme itself is good: clear headings, per-part mark totals that add up, and the official scheme sketch shown as an image, though that image sits in the question column, has tiny text on a phone, and the tappable labels carry examiner shorthand ('9 x 4 marks (Sketch 3 Annotation 1)', 'Note 3 and sketch 3'). Desktop looks clean and deliberate; the phone has unreadable crops and a block of dead white space before 'Your answer'.",
+ "scores": {
+  "question": 2,
+  "attachments": 2,
+  "scheme": 4,
+  "phone": 2,
+  "desktop": 4
+ },
+ "issues": [
+  {
+   "title": "Part cards show the whole question, never the asked part as text",
+   "detail": "The question area is only an image of the full printed question with every part (a), (b), (c). No typed question text appears anywhere. On cards that ask one part (2, 4, 5, 7, 8, 10, 11) nothing marks which part is being asked except the small 'Q9(C)' label in the header, and the sibling parts are fully visible. E.g. card 5 is Q9(c) (16 marks, a concrete test) but the crop leads with (a) strip foundation and (b) mixing/placing/compacting/curing.",
+   "severity": "high",
+   "cards": [
+    2,
+    4,
+    5,
+    7,
+    8,
+    10,
+    11
+   ],
+   "best_evidence_image": "05_phone_answer.png",
+   "suggested_fix": "Print the stem and the asked part as real text at app body size, and keep the picture only for the drawing/sketch the part depends on (cropped to the drawing). If the whole-question crop is kept, highlight or crop to the asked part."
+  },
+  {
+   "title": "Attached page opens on the exam cover page",
+   "detail": "On all 12 cards the 'Read original question N' reader opens at 'PDF page 1 / 2', which is the SEC cover sheet (harp logo, 'Construction Studies Theory - Higher Level (300 marks)'). The actual question is on the second page, one tap away. The attachment's title promises the question and the first screen delivers nothing useful.",
+   "severity": "high",
+   "cards": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_evidence_image": "05_attached_page.png",
+   "suggested_fix": "Drop the cover page from the attached pages (attach only the question's page), or open the reader on the question page. Since the question crop is already on the card, consider removing this duplicate attachment entirely."
+  },
+  {
+   "title": "Question crop is too small to read on a phone",
+   "detail": "The printed question is scaled to the 330px card width, so its text renders at roughly 6-7px against the app's 14-15px body text. Multi-part questions with a plan beside them (cards 6, 7, 8, 10, 12) and the dense quotation in card 9 are effectively unreadable without tapping Enlarge. On desktop the same crops are comfortably legible.",
+   "severity": "high",
+   "cards": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_evidence_image": "06_phone_answer.png",
+   "suggested_fix": "Typed question text plus a separate, larger crop of only the drawing; let the drawing fill the card width."
+  },
+  {
+   "title": "Scheme sketch sits in the question column and is tiny on a phone",
+   "detail": "After reveal, the official scheme page (model sketch plus bullet answers) appears directly under the question crop, above 'Your answer', far from 'The scheme' panel it belongs to. On the phone its bullet text is about 5-6px (cards 5, 6, 10, 12 especially); in card 6 the page is long, repeats the house plan, and covers only part (b) of a complete-question card.",
+   "severity": "medium",
+   "cards": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    10,
+    11,
+    12
+   ],
+   "best_evidence_image": "06_phone_answer.png",
+   "suggested_fix": "Move the scheme image inside the scheme panel under a 'Model answer from the scheme' label, crop it to the sketch (the bullet text is already retyped in the steppers), and show it full width."
+  },
+  {
+   "title": "Examiner shorthand in scheme labels and descriptions",
+   "detail": "Stepper titles and descriptions carry raw scheme shorthand: '9 x 4 marks (Sketch 3 Annotation 1)', 'Design consideration 1 Note 3 marks & sketch 3 marks' followed by 'Note 3 and sketch 3. Such as: ...', 'Point 4 and discussion 6.', and the run-on 'Note for design Consideration 1 Note for design Consideration 2 Note for design Consideration 3'. Readable to a teacher, not to a student.",
+   "severity": "medium",
+   "cards": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    9,
+    10,
+    12
+   ],
+   "best_evidence_image": "06_desktop_answer.png",
+   "suggested_fix": "Plain titles ('Nine labelled components', 'Design consideration 1') with the mark split shown once as a small tag ('3 for the note + 3 for the sketch'); drop the repeated 'Note 3 and sketch 3.' sentence opener."
+  },
+  {
+   "title": "Dead white space on phone before 'Your answer'",
+   "detail": "On the phone there is an empty band of roughly 150-250px between the 'Read original question' button and the 'Your answer' heading on every card, which reads as a layout bug and lengthens an already long scroll.",
+   "severity": "low",
+   "cards": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_evidence_image": "11_phone_answer.png",
+   "suggested_fix": "Remove the min-height/spacer on the question column at phone width."
+  },
+  {
+   "title": "Stray sliver and wall of text in the acoustics card",
+   "detail": "Card 12's scheme image starts with a cut-off strip of a different diagram at the top, and part (a)'s explanation is one grey paragraph joining three definitions (absorption, reflection, reverberation time) with no breaks.",
+   "severity": "low",
+   "cards": [
+    12
+   ],
+   "best_evidence_image": "12_desktop_answer.png",
+   "suggested_fix": "Re-crop the scheme image to start at '9 (b)'; put each of the three definitions under its own option."
+  }
+ ],
+ "good_examples": [
+  {
+   "card": 3,
+   "why": "Complete question where showing all parts is correct; scheme is split a/b/c with totals that add to 50 and the official PPE signs shown.",
+   "image": "03_desktop_answer.png"
+  },
+  {
+   "card": 9,
+   "why": "No drawing, clean two-block scheme (discussion 30 + guidelines 30) with a consistent point/discussion split.",
+   "image": "09_desktop_answer.png"
+  },
+  {
+   "card": 4,
+   "why": "Scheme sketch and typed marking points match the asked part exactly and are short.",
+   "image": "04_desktop_answer.png"
+  }
+ ],
+ "cards": [
+  {
+   "n": 1,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "bad",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Complete Q4 so all parts belong; question is image-only and tiny on phone. Attached reader opens on the cover page. Label '9 x 4 marks (Sketch 3 Annotation 1)' is shorthand; scheme diagram for (a) is good."
+  },
+  {
+   "n": 2,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is Q7(a); crop also shows 7(b) grab rails and 7(c) in full.",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "No typed question; asked part not marked. Scheme plan image is right for (a). Reader opens on cover page."
+  },
+  {
+   "n": 3,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Complete Q6, parts belong. Clear scheme with a/b/c totals. Crop text small on phone; reader opens on cover page."
+  },
+  {
+   "n": 4,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is Q2(b); crop also shows 2(a) and 2(c).",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Scheme crop is limited to (b) and matches. Question image-only; reader opens on cover page."
+  },
+  {
+   "n": 5,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is Q9(c); crop leads with 9(a) strip foundation and 9(b) mixing/placing/compacting/curing.",
+   "attachment": "bad",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Asked part is the last two lines of a tiny crop. Scheme reduced to two generic steppers 'Note' / 'Sketch'; the slump/cube detail lives in a long image with 5px text on phone."
+  },
+  {
+   "n": 6,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "bad",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Complete Q3. Scheme image covers only (b), is very long and repeats the plan; run-on label 'Note for design Consideration 1 Note for design Consideration 2...'. Phone scroll is three columns long."
+  },
+  {
+   "n": 7,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is Q6(c); crop also shows 6(a) and 6(b) with their bullet list.",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Scheme is short and clear (2 advantages, 2+3 each). Question text in crop is unreadable on phone beside the plan; reader opens on cover page."
+  },
+  {
+   "n": 8,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is Q3(c); crop also shows 3(a) and 3(b).",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "(c) does not need the plan at all, yet the whole question and plan are shown. Scheme is clean: Advantages 6 / Disadvantages 6."
+  },
+  {
+   "n": 9,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Whole question is a text quotation shown as an image; on phone it is about 5px and unreadable, and it could simply be typed. Scheme is clear. Reader opens on cover page."
+  },
+  {
+   "n": 10,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is Q3(b); crop also shows 3(a) and 3(c).",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Scheme image of model sketches is useful but its notes are tiny on phone. 'Note 5 and sketch 5, showing the first requirement' is shorthand."
+  },
+  {
+   "n": 11,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Card is Q2(b); crop also shows 2(a), the larger part.",
+   "attachment": "bad",
+   "scheme": "ok",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "A one-line 'list two advantages' question shown as a tiny crop of the whole question; the house sketch is not needed. Scheme simple and correct. Large empty band on phone."
+  },
+  {
+   "n": 12,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "bad",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "ok",
+   "note": "Complete Q9. Scheme image has a cut-off sliver of another diagram at the top; part (a) explanation is a wall of text. Mark totals add up (24+24+12)."
+  }
+ ]
+}

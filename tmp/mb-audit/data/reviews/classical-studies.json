@@ -1,0 +1,265 @@
+{
+ "subject": "classical-studies",
+ "verdict": "minor-issues",
+ "summary": "Classical Studies is the cleanest of this group on the scheme side: each card shows the SEC's own marking points as short, readable tick rows that plainly answer the question, and it looks tidy on phone and desktop. The faults are in the question and attachment. Several questions depend on context that is missing or broken: 'that battle' / 'this battle' is never named, one card has an underscore rule and the Paper X footer 'Do not hand this up...' pasted into the question, and one prints only part of Text A, none of Text B, and leaves 'Text A: Text B:' answer labels in the question. Paper X attachments open on the full page, so two cards land on a different question's photograph first (the 2021 one opens on the cover and Photograph A). Scheme rows carry no marks, and two cards have a single all-or-nothing row.",
+ "scores": {
+  "question": 3,
+  "attachments": 3,
+  "scheme": 4,
+  "phone": 4,
+  "desktop": 4
+ },
+ "issues": [
+  {
+   "title": "Paper footer and underscore rule pasted into the question",
+   "detail": "Card 1's question reads '...Give reasons for your answer. _____________________ Do not hand this up. This document will not be returned to the State Examinations Commission.' The underscores render as a long line and the footer is shown in the large question font and underlined in orange as if it were the instruction.",
+   "severity": "high",
+   "cards": [
+    1
+   ],
+   "best_evidence_image": "01_desktop_answer.png",
+   "suggested_fix": "Strip the rule and the Paper X footer from the question text; scan the deck for the same 'Do not hand this up' string."
+  },
+  {
+   "title": "Source text truncated and answer labels left in",
+   "detail": "Card 5's stem runs the heading and passage together ('Text A: The Odyssey Tell me, Muse...') and stops mid-sentence at 'the oxen of Hyperion the sun God'. Text B (the Aeneid) is not printed at all, though the question asks for an example from each text. The question ends with the stray answer-box labels 'Text A: Text B:'.",
+   "severity": "high",
+   "cards": [
+    5
+   ],
+   "best_evidence_image": "05_phone_answer.png",
+   "suggested_fix": "Show both texts in full as two labelled quote blocks (or rely on the attached passage and keep the stem to one line), and drop the 'Text A: Text B:' labels."
+  },
+  {
+   "title": "Question depends on a part that is not shown",
+   "detail": "'What is your opinion of the behaviour of Pompey in that battle?' and 'how did Pompey perform as a general in this battle?' never name the battle; the earlier part that names it is not shown and there is no stem. Card 1 refers to 'Wheeler' calling the painting a masterpiece without the quotation.",
+   "severity": "medium",
+   "cards": [
+    6,
+    12,
+    1
+   ],
+   "best_evidence_image": "06_desktop_answer.png",
+   "suggested_fix": "Add a one-line grey context stem from the question's opening (e.g. the battle named in part (a), Wheeler's remark)."
+  },
+  {
+   "title": "Paper X opens on another question's photograph",
+   "detail": "The attachment is the uncropped Paper X page. Card 8 (Photograph B, Korkyra relief) opens on the cover and Photograph A, the Parthenon; Photograph B is not visible. Card 3 (OL Q3, Image D) opens on Question 2's Image C, a temple reconstruction, with only the 'Question 3 / D' heading visible. Card 2 shows the right image C but Question 3's heading and image D start below it.",
+   "severity": "high",
+   "cards": [
+    8,
+    3,
+    2
+   ],
+   "best_evidence_image": "08_attached_page.png",
+   "suggested_fix": "Crop Paper X to the one photograph the question names and show it inline under the stem; keep the full booklet behind the link."
+  },
+  {
+   "title": "No inline image for image-based questions",
+   "detail": "Questions that are about a picture ('In what ways is this sculpture typical of its period?', 'Identify the features shown at aa, d, e, j and k') show no image on the card, only a button. On a phone the student must open the reader and switch back and forth; the Timgad plan's small italic letter labels will need zooming at 390px.",
+   "severity": "medium",
+   "cards": [
+    1,
+    7,
+    8
+   ],
+   "best_evidence_image": "07_phone_answer.png",
+   "suggested_fix": "Embed the cropped photograph in the card with tap-to-zoom."
+  },
+  {
+   "title": "Scheme rows carry no marks; some are not points",
+   "detail": "Tick rows have no mark values, so a 35-mark or 25-mark answer is judged by ticking sentences and then choosing Missed/Shaky/Got it. Some rows are not creditable points but narrative or marker guidance ('This caused a lot of tension in the camp', 'Either stance is fine if it is argued with evidence', 'If they do argue this, they would need to give an example...'), and the scheme's sentence has been split mid-thought ('Indications of its period include the following: the figures... are not to scale' then 'They get smaller...'). Cards 5 and 11 have one row worth all the marks ('foreshadowing, in medias res, asking questions, epithets, etc' 6m), which cannot represent partial credit or the one-example-per-text requirement.",
+   "severity": "medium",
+   "cards": [
+    1,
+    4,
+    5,
+    8,
+    10,
+    11
+   ],
+   "best_evidence_image": "05_desktop_answer.png",
+   "suggested_fix": "Show how the marks are awarded (e.g. 3 + 3, or the scheme's quality scale) and separate marker guidance into a note; split list rows into individual techniques."
+  },
+  {
+   "title": "Terse lower-case fragments and inconsistent controls",
+   "detail": "2024 cards print scheme shorthand as is: 'use of pompa to display wealth to gain patronage...', 'from historical funeral (e.g. Mark Antony at Caesar's)', 'aa, decumanus or main gates'. Those cards also add an 'I had something like this' link under each row that other cards do not have, and the heading alternates between 'Check your complete response' and 'Select the points you actually got'.",
+   "severity": "low",
+   "cards": [
+    2,
+    3,
+    7
+   ],
+   "best_evidence_image": "02_desktop_answer.png",
+   "suggested_fix": "Capitalise and complete the fragments ('A historical funeral as an example, e.g. Mark Antony at Caesar's'); format map answers as 'aa: decumanus / main gates'; use one control pattern."
+  },
+  {
+   "title": "Blank band on phone; attached page partly redundant",
+   "detail": "About 200px of empty space sits between the question and 'YOUR ANSWER' on every phone card. Card 11 prints the whole Plutarch extract in the stem and also attaches the page, which additionally shows sibling part (a).",
+   "severity": "low",
+   "cards": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    9,
+    11,
+    12
+   ],
+   "best_evidence_image": "06_phone_answer.png",
+   "suggested_fix": "Remove the fixed height; drop the attachment when the stem already contains the full extract."
+  }
+ ],
+ "good_examples": [
+  {
+   "card": 4,
+   "why": "Clear standalone question and six well-written marking points that directly answer it.",
+   "image": "04_desktop_answer.png"
+  },
+  {
+   "card": 7,
+   "why": "Label-identification question with a one-row-per-label answer key and the correct plan attached.",
+   "image": "07_desktop_answer.png"
+  },
+  {
+   "card": 10,
+   "why": "Stem gives the context, and the scheme lists nine readable points; works well on phone.",
+   "image": "10_phone_answer.png"
+  }
+ ],
+ "cards": [
+  {
+   "n": 1,
+   "question": "bad",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Underscore rule and 'Do not hand this up...' footer are part of the question and underlined. Photograph I is correct and legible. Three of nine scheme rows are marker guidance, not points."
+  },
+  {
+   "n": 2,
+   "question": "ok",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached page also shows the 'Question 3' heading and the start of image D below image C (images only).",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Right image, large and clear. Scheme rows are lower-case shorthand fragments; no marks per row."
+  },
+  {
+   "n": 3,
+   "question": "minor",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached page opens on Question 2's image C (temple reconstruction); only the heading and top edge of this question's image D are visible.",
+   "attachment": "bad",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Stem has a missing word ('is vase painting') and 'and/ or' spacing. Student has to scroll past another question's picture. Scheme fragments are readable but terse."
+  },
+  {
+   "n": 4,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Clean card. Only gap: no indication of how 35 marks are divided."
+  },
+  {
+   "n": 5,
+   "question": "bad",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page shows part (a) of Q10 above part (b).",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "minor",
+   "desktop": "minor",
+   "note": "Text A cut off mid-sentence, Text B absent, 'Text A: Text B:' left in the question. Attached passage is complete and legible. Scheme is one row for all 6 marks."
+  },
+  {
+   "n": 6,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "'That battle' is never named. Scheme points are clear; they are word-for-word the same as card 12's (different year and level), worth a check."
+  },
+  {
+   "n": 7,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "ok",
+   "scheme": "ok",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Correct plan, well sized on desktop; labels will be small on a phone and there is no inline image. Answer key rows are clear."
+  },
+  {
+   "n": 8,
+   "question": "ok",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached page opens on the Paper X cover and Photograph A (the Parthenon); Photograph B is not visible on the first screen.",
+   "attachment": "bad",
+   "scheme": "minor",
+   "phone": "minor",
+   "desktop": "ok",
+   "note": "Question is about 'this sculpture' but the first thing shown is a different photograph. Scheme points good, though one sentence is split across two rows."
+  },
+  {
+   "n": 9,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Clear stem and question. Only two scheme rows for 15 marks, the first opening with leftover 'The reasons for his assassination were, firstly'."
+  },
+  {
+   "n": 10,
+   "question": "ok",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Good card. A couple of rows are narrative rather than reasons ('This caused a lot of tension in the camp')."
+  },
+  {
+   "n": 11,
+   "question": "ok",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page shows part (a) of Q7 above part (b).",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Extract is fully printed in the stem, so the attachment is redundant. Scheme is one 14-mark row of shorthand."
+  },
+  {
+   "n": 12,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "",
+   "attachment": "none",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "'This battle' unnamed and no stem. Scheme points clear and relevant (identical text to card 6)."
+  }
+ ]
+}
