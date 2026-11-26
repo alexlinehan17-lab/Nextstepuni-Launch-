@@ -1,0 +1,277 @@
+{
+ "subject": "politics-and-society",
+ "verdict": "needs-work",
+ "summary": "The cards are tidy and the 'Points the scheme lists' box, where it appears, is the right idea. But every question keeps the exam paper's line breaks, so sentences snap mid-phrase ('and the ‘national' / 'government’ have the same...') on both phone and desktop. Every card attaches a whole exam page even when the question needs no source, and that page shows neighbouring questions; several open on a different question entirely. Most schemes are quality bands with no content ('Very good explanation 11-15m'), one card's question lost its word list, and one short-answer card never gives the answer and shows directions belonging to another part. Essay cards are six criteria of mark buttons that run to three or four phone screens-columns.",
+ "scores": {
+  "question": 3,
+  "attachments": 2,
+  "scheme": 2,
+  "phone": 2,
+  "desktop": 3
+ },
+ "issues": [
+  {
+   "title": "Hard line breaks from the PDF left inside the question",
+   "detail": "Question text breaks where the printed page wrapped, not where the screen wraps: 'What conclusion can be drawn from the fact that ‘news organisations’ and the ‘national / government’ have the same levels of trust'; '...in the EU / elections.'; '...the real-life experiences of / people living in poverty?'; 'More people watched the FIFA Women’s World Cup in 2023 / than ever before'. Card 6 has six such breaks. It looks broken on both layouts and is on almost every multi-line card.",
+   "severity": "high",
+   "cards": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    12
+   ],
+   "best_evidence_image": "06_phone_answer.png",
+   "suggested_fix": "Join soft-wrapped lines into paragraphs; keep a break only between real paragraphs, a quotation and its attribution, and bullet items."
+  },
+  {
+   "title": "Attached page shows other questions, often before this one",
+   "detail": "Every card attaches a full exam page. Card 1 (Q1(h)) opens on Q1(g) with its book cover; card 7 (Q1(j)) shows Q1(g), (h) with a climate graphic and (i) - the card's own part (j) is not even in view; card 5 (Q4) opens on Q3(a) Greta Thunberg and Q3(b); card 10 (Q6) opens on all of Q5 with its media diagram; card 4 opens on Q1(a); card 11 on Q1(a); card 8 on Q1(d); cards 3 and 6 show the next question (Q8, Q3(b)) below their own. For cards 1, 4, 5, 6, 7, 11 the question needs no source at all, so the attachment adds only other questions.",
+   "severity": "high",
+   "cards": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11
+   ],
+   "best_evidence_image": "05_attached_page.png",
+   "suggested_fix": "Remove the attachment where the question is text-only. Where a graphic or document is needed (cards 2, 8, 9, 12), crop to that document and open on it."
+  },
+  {
+   "title": "Scheme is bands with no content",
+   "detail": "Cards 2 and 9 reveal only 'Very good / Good / Fair' with rows of mark buttons - nothing about what a good conclusion or explanation would say. The five essay cards show only the generic six-criterion grid (Introduction, Knowledge, Evidence, Analysis, Evaluation, Cohesion). Compare cards 1, 7, 11, 12, which do list the scheme's points. The only route to the indicative content is the 'Read the official scheme' button at the very bottom.",
+   "severity": "high",
+   "cards": [
+    2,
+    3,
+    5,
+    6,
+    9,
+    10
+   ],
+   "best_evidence_image": "09_desktop_answer.png",
+   "suggested_fix": "Always show the scheme's indicative points first, as on card 12; where the SEC prints them only on the scheme page, show that crop inline at the top of the reveal instead of behind a button at the bottom."
+  },
+  {
+   "title": "Card 8: answer missing and wrong directions shown",
+   "detail": "The question asks for the top two non-Irish nationalities. The scheme tick box says only 'Both non-Irish nationalities must be named' - it never says Polish and UK. Underneath, 'Examiner directions' lists 'One strength and one limitation of census data / Good description / Fair description / Irrelevant description', which belongs to a different part of Q1(e). The heading 'Claim your answers and place the rest on the scheme’s bands' makes no sense for a 1-mark fact. The census graphic the answer comes from is only in the attachment, below Q1(d).",
+   "severity": "high",
+   "cards": [
+    8
+   ],
+   "best_evidence_image": "08_desktop_answer.png",
+   "suggested_fix": "Show 'Polish and UK (both needed) - 1 mark', delete the directions from the other part, and show the census graphic crop inline."
+  },
+  {
+   "title": "Card 10: word list dropped from the question",
+   "detail": "The question ends 'You may draw on the following words in your essay.' and then nothing follows - the list of words is missing. Card 3 shows the same kind of list correctly as bullets.",
+   "severity": "medium",
+   "cards": [
+    10
+   ],
+   "best_evidence_image": "10_desktop_answer.png",
+   "suggested_fix": "Restore the list as bullets, as on card 3."
+  },
+  {
+   "title": "Slash-joined points and confusing labels in the scheme",
+   "detail": "Card 1's points are strings like 'Colonisation / global trade / technological advances / dependency theory' and 'Solutions to the issue: aid / fair trade / SDGs'. Card 7 has two blocks both titled 'Complete response - Example 1' (3m and 2m) and then 'Examiner directions: Example 2 / Note: If the first point is awarded 2M or less, mark the second point out of 3M' - the second block should be Example 2 and the note is raw shorthand. Card 11's 'Points the scheme lists' (Tokenism, Authoritarianism, A lack of collaboration) are explanations, not groups, yet sit above a 'Name' box that says 'The scheme prints no answer here'. 'Complete response' is used as a title even for a 2-mark fill-in (card 4), where 1m/2m buttons are offered with no rule for 1 mark. The lowest band is labelled 'Fair' but contains 0m and is shown as a black selected block before the student has done anything.",
+   "severity": "medium",
+   "cards": [
+    1,
+    4,
+    7,
+    11
+   ],
+   "best_evidence_image": "07_desktop_answer.png",
+   "suggested_fix": "One bullet per point; label blocks 'First example (3 marks)' / 'Second example (2 marks)' with the rule in plain words; attach listed points to the part they belong to; do not pre-select the bottom band."
+  },
+  {
+   "title": "Essay reveals are enormous on the phone",
+   "detail": "The 100-mark essays (cards 5, 6) run to four capture columns (roughly 7,000px) and the 50-mark essays (3, 10) to three, made up of 25-30 near-identical band boxes with a button per mark. The self-rating buttons and the official-scheme link are at the very end. On desktop the same grid runs past 2,400px beside an empty left column.",
+   "severity": "medium",
+   "cards": [
+    3,
+    5,
+    6,
+    10
+   ],
+   "best_evidence_image": "05_phone_answer.png",
+   "suggested_fix": "Collapse each criterion to one row (title + band picker) that expands on tap, or use a compact table; keep the question sticky on desktop."
+  },
+  {
+   "title": "Blank band and odd underline",
+   "detail": "Phone cards have a 200-250px empty band between the attachment button and 'Your answer'. The orange underline covers arbitrary stretches ('The _____ Court of _____ _____ is', 'What conclusion can be drawn from the fact') rather than a command word.",
+   "severity": "low",
+   "cards": [
+    1,
+    2,
+    4,
+    7,
+    9,
+    11,
+    12
+   ],
+   "best_evidence_image": "04_phone_answer.png",
+   "suggested_fix": "Remove the fixed gap; underline only the command verb or drop the underline on fill-in/short questions."
+  }
+ ],
+ "good_examples": [
+  {
+   "card": 12,
+   "why": "Clear question, the scheme's five listed reasons shown as clean bullets above simple bands, and the attachment is the documents.",
+   "image": "12_desktop_answer.png"
+  },
+  {
+   "card": 3,
+   "why": "Question bullets are preserved as a proper list and each band has a real descriptor (though the reveal is very long).",
+   "image": "03_desktop_answer.png"
+  },
+  {
+   "card": 4,
+   "why": "Fill-in question with the completed sentence shown as the answer - short and unmistakable.",
+   "image": "04_desktop_answer.png"
+  }
+ ],
+ "cards": [
+  {
+   "n": 1,
+   "question": "ok",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page shows Q1(g) with its book-cover graphic above Q1(h).",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Clear question; attachment adds nothing but part (g). Scheme points are slash-joined strings; bottom band 'Fair' pre-selected in black."
+  },
+  {
+   "n": 2,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "First attached page is Document A (source); question pages follow.",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Line break splits '‘national / government’'. Scheme is four bands with one-phrase descriptors and no indicative content."
+  },
+  {
+   "n": 3,
+   "question": "minor",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached page shows Q7 in full and the start of Q8 ('Discuss the role of civil disobedience').",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Bullets kept, but first sentence broken mid-line. Generic six-criterion grid; three phone columns."
+  },
+  {
+   "n": 4,
+   "question": "minor",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page opens on Q1(a) (two groups under-represented in schools); (b)(i) is at the bottom edge.",
+   "attachment": "minor",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Blanks render acceptably but text has hard breaks ('on Human / Rights'). Answer sentence is clear; 'Complete response' with 1m/2m buttons has no rule for 1 mark."
+  },
+  {
+   "n": 5,
+   "question": "minor",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached page opens on Q3(a) (Greta Thunberg) and Q3(b); Q4 itself is not in view.",
+   "attachment": "bad",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Text-only question with four hard line breaks. Attachment shows only other essay questions. 100-mark grid is four phone columns."
+  },
+  {
+   "n": 6,
+   "question": "minor",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page shows Q3(a) in full and the alternative Q3(b) below it.",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Six mid-sentence line breaks make the question ragged. Generic grid, four phone columns."
+  },
+  {
+   "n": 7,
+   "question": "ok",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page shows Q1(g), (h) with climate graphic and the start of (i); part (j) is not visible.",
+   "attachment": "bad",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Clean question. Both mark blocks titled 'Example 1'; 'Example 2' appears only as a stray line under Examiner directions with a shorthand note."
+  },
+  {
+   "n": 8,
+   "question": "minor",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page opens on Q1(d) (human rights organisations); the census graphic for (e) is below it and cut off.",
+   "attachment": "minor",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Needs the census graphic, which is not inline. Scheme never states the answer and shows directions from another part ('One strength and one limitation of census data')."
+  },
+  {
+   "n": 9,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "First attached page is Document A.",
+   "attachment": "ok",
+   "scheme": "bad",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Hard breaks in the question. Scheme is three bare bands ('Very good explanation' etc.) with no content."
+  },
+  {
+   "n": 10,
+   "question": "bad",
+   "other_questions_shown": "different-question",
+   "other_detail": "Attached page opens on all of Q5 (media essay with diagram); only the heading of Q6 is visible.",
+   "attachment": "bad",
+   "scheme": "minor",
+   "phone": "bad",
+   "desktop": "minor",
+   "note": "Question says 'You may draw on the following words' and the words are missing. Generic grid, three phone columns."
+  },
+  {
+   "n": 11,
+   "question": "ok",
+   "other_questions_shown": "same-question-parts",
+   "other_detail": "Attached page shows Q1(a) above Q1(b).",
+   "attachment": "minor",
+   "scheme": "minor",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Clean question. Listed points are explanations sitting above a 'Name' box that says the scheme prints no answer."
+  },
+  {
+   "n": 12,
+   "question": "minor",
+   "other_questions_shown": "none",
+   "other_detail": "First attached page is Document A with turnout charts.",
+   "attachment": "ok",
+   "scheme": "ok",
+   "phone": "ok",
+   "desktop": "ok",
+   "note": "Best card: listed reasons as bullets then simple bands. Only fault is the break before 'elections.'"
+  }
+ ]
+}
