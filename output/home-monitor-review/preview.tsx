@@ -19,7 +19,7 @@ const settings = { language: 'en' as const, avatar: '', darkMode: true, cardStyl
 createRoot(document.getElementById('root')!).render(<><IllustrationTheme /><NavigationProvider><NextStepUniSidebar
   user={{ uid: 'home-monitor-review', name: 'Demo Student', avatar: 'Charlie', curriculumLevel: 'senior' }}
   settings={settings} updateSetting={noop} onLogout={noop} onOpenSettings={noop}
-  onOpenPassport={noop} onOpenSiteGuide={noop} onOpenFeedback={noop}
+  onOpenPassport={noop} onOpenSiteGuide={noop} onOpenFeedback={noop} onOpenDirection={noop}
   onUnreadCountChange={noop} completedCount={25} totalCount={53} unreadCount={0}
 ><KnowledgeTree
   uid="home-monitor-review" userName="Demo Student" allCourses={[course]}
