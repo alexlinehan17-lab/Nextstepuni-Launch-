@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Shared parts sheet (developers only)</title>
+    <!-- The safe-area variables index.html defines, so the frame primitives work here too. -->
+    <style>
+      :root { --sat: env(safe-area-inset-top, 0px); --sar: env(safe-area-inset-right, 0px); --sab: env(safe-area-inset-bottom, 0px); --sal: env(safe-area-inset-left, 0px); }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/parts-dev.tsx"></script>
+  </body>
+</html>
