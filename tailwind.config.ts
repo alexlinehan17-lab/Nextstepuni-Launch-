@@ -13,6 +13,10 @@ const config: Config = {
     './utils/**/*.{ts,tsx}',
   ],
   darkMode: 'class',
+  // hover: looks only on devices that can hover, so a tap on a phone never
+  // leaves one behind. Hand-written :hover rules get the same guard from
+  // design/postcss-hover-only.js (postcss.config.js).
+  future: { hoverOnlyWhenSupported: true },
   theme: {
     extend: {
       colors: {

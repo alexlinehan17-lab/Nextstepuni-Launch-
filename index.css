@@ -1926,5 +1926,5 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   inset: 0 auto auto 0;
 }
 
-/* Page scroll lock behind modals, readers and drawers (utils/bodyScrollLock.ts). */
-body[data-scroll-lock] { overflow: hidden; }
+/* Page scroll lock behind modals, readers and drawers: components/ui/frame.css,
+   section 9 (utils/bodyScrollLock.ts marks the page). */

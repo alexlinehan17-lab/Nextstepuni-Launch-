@@ -7,8 +7,8 @@
  * Nothing in a screen's own code may touch the edge of the screen. The status
  * bar / Dynamic Island, the rounded corners and the home indicator belong to
  * the frame, and the frame is this file: the numbers, a small set of layout
- * primitives with the inset maths built in, and one stacking order. A screen,
- * bar, dialog, sheet or floating control is built from these,
+ * primitives with the inset maths built in, one stacking order, and the touch
+ * layer. A screen, bar, dialog, sheet or floating control is built from these,
  * so it is clear of the island and the home indicator by construction.
  * (Design audit 24 Nov 2026, section D6; 29 live faults came from screens that
  * each had to remember the inset.)
@@ -201,4 +201,43 @@
   width: max(100%, var(--frame-hit));
   height: max(100%, var(--frame-hit));
   transform: translate(-50%, -50%);
+}
+
+/* ── 8. The touch layer, once, for the whole app ────────────────────────── */
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+/* No double-tap-to-zoom delay on anything a student taps. Zero specificity:
+   a drag handle that sets its own touch-action keeps it. */
+:where(button, a[href], summary, label, select, input, textarea,
+  [role=button], [role=tab], [role=switch], [role=menuitem], [role=option], [role=checkbox], [role=radio]) {
+  touch-action: manipulation;
+}
+/* iPhone zooms the page when a field under 16px takes focus. On touch screens
+   every text field is at least 16px. Fields drawn larger keep their size: the
+   Tailwind sizes by class, and the few stylesheets that size a field above
+   16px are listed in the second :not() (add yours there). */
+@media (pointer: coarse) {
+  :is(input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=submit], [type=reset], [type=file], [type=color], [type=image], [type=hidden]), textarea, select):not([class*='text-lg'], [class*='text-xl'], [class*='text-2xl'], [class*='text-3xl'], [class*='text-4xl'], [class*='text-5xl'], [class*='text-6xl']):not(.ls-ans, .wi-draft, .fxe-field, .fxf-field, .setup-grade-pickers select) {
+    font-size: max(16px, 1em);
+  }
+}
+/* Hover looks only on devices that can hover: Tailwind's hover: variants via
+   future.hoverOnlyWhenSupported (tailwind.config.ts), hand-written :hover rules
+   via design/postcss-hover-only.js (postcss.config.js). */
+
+/* ── 9. The page does not scroll behind an open sheet or dialog ─────────── */
+
+/* One home for the scroll lock. Code that opens an overlay calls
+   lockBodyScroll() (utils/bodyScrollLock.ts; useModal does it for you), which
+   marks <body>; a mounted dialog or sheet primitive locks by being there. The
+   page then neither scrolls nor rubber-bands behind it, whoever else writes
+   overflow (the Kobra dialog does). */
+body[data-scroll-lock] { overflow: hidden; }
+html:has(body[data-scroll-lock], body .frame-dialog, body .frame-sheet-backdrop) {
+  overflow: hidden;
+  overscroll-behavior: none;
 }
