@@ -20,8 +20,7 @@
    "inset-0": 1
   },
   "components/AppRouter.tsx": {
-   "100vh": 1,
-   "h-screen": 4
+   "h-screen": 3
   },
   "components/AuthActionCard.tsx": {
    "h-screen": 1
@@ -107,19 +106,6 @@
   },
   "components/MasteringTheCreativesModule.tsx": {
    "inset-0": 2
-  },
-  "components/ModuleCompleteScreen.tsx": {
-   "fixed": 1,
-   "inset-0": 1
-  },
-  "components/ModuleLayout.tsx": {
-   "fixed": 1,
-   "inset-0": 1
-  },
-  "components/ModulesView.tsx": {
-   "h-screen": 2,
-   "inset-0": 2,
-   "var(--sa*)": 1
   },
   "components/MyDirection.tsx": {
    "h-screen": 1

@@ -251,21 +251,8 @@
   "components/MasteringTheSciencesModule.tsx": {
    "hex": 28
   },
-  "components/ModuleLayout.tsx": {
-   "hex": 7
-  },
   "components/ModuleShared.tsx": {
    "rgb(": 1
-  },
-  "components/ModuleShowcase.tsx": {
-   "hex": 8,
-   "rgb(": 6,
-   "tailwind [#…]": 8
-  },
-  "components/ModulesView.tsx": {
-   "hex": 2,
-   "rgb(": 3,
-   "tailwind [#…]": 4
   },
   "components/MountainLandscape.tsx": {
    "hex": 9
@@ -773,9 +760,6 @@
   },
   "components/mobile-editorial.css": {
    "hex": 21
-  },
-  "components/module-cards.css": {
-   "hex": 9
   },
   "components/navigation/sidebar.css": {
    "hex": 29

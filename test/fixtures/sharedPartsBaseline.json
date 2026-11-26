@@ -334,20 +334,10 @@
    "button": 4
   },
   "components/ModuleCompleteScreen.tsx": {
-   "button": 3,
-   "pop-up": 2
-  },
-  "components/ModuleLayout.tsx": {
-   "button": 5
+   "pop-up": 1
   },
   "components/ModuleShared.tsx": {
    "button": 2
-  },
-  "components/ModuleShowcase.tsx": {
-   "button": 7
-  },
-  "components/ModulesView.tsx": {
-   "button": 4
   },
   "components/NeuroplasticityProtocolModule.tsx": {
    "button": 7
@@ -731,9 +721,6 @@
   },
   "components/learning/PrivateDraftControls.tsx": {
    "button": 2
-  },
-  "components/learning/ReaderNotes.tsx": {
-   "button": 1
   },
   "components/learning/ResponseSaveStatus.tsx": {
    "button": 1
