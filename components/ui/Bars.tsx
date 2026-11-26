@@ -23,14 +23,16 @@
  */
 import { useEffect, useState, type ReactNode } from 'react';
 import { ChevronLeft, X, type LucideIcon } from 'lucide-react';
-import { IconButton } from './Button';
-import { useFrameTabBar } from './Frame';
+import { IconButton, TextButton } from './Button';
+import { useFrameTabBar, useFrameTaskActive } from './Frame';
 import ThemeArtwork from '../ThemeArtwork';
 import './parts.css';
 
 export interface LeaveControl {
-  /** back: a page you tapped into. close: something that came up over where you were. */
-  kind: 'back' | 'close';
+  /** back: a page you tapped into. close: something that came up over where you were.
+   *  cancel: a place that has become a task (study set-up once something is
+   *  chosen): the word, which clears what was chosen and gives the place back. */
+  kind: 'back' | 'close' | 'cancel';
   onPress: () => void;
   /** Accessible name (default "Back" / "Close"). */
   label?: string;
@@ -64,7 +66,9 @@ export function TopBar({ leave, title, over, placeLabel, art, action, tool = fal
     <header {...rest} className={`ui-part ui-bar frame-bar${tool ? ' ui-bar--tool' : ''}${ruled ? ' ui-bar--ruled' : ''}${art ? ' ui-bar--art' : ''} ${className}`.trim()}>
       <div className="ui-bar-row">
         <span className="ui-bar-slot">
-          {leave
+          {leave?.kind === 'cancel'
+            ? <TextButton className="ui-bar-cancel" onClick={leave.onPress}>{leave.label ?? 'Cancel'}</TextButton>
+            : leave
             ? <IconButton label={leave.label ?? (leave.kind === 'close' ? 'Close' : 'Back')} onClick={leave.onPress}
                 icon={<LeaveGlyph className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
             : placeLabel ? <span className="ui-bar-label">{placeLabel}</span> : null}
@@ -135,14 +139,15 @@ export function useTouchKeyboardOpen(): boolean {
 
 /** Five places, outline icons over a 10.5px label; the current one is ink with
  *  a 2px ink marker above it. It never starts anything, and it steps aside
- *  while the keyboard is up. */
+ *  while the keyboard is up and while a screen is a task (useFrameTask). */
 export function TabBar<V extends string>({ items, current, onSelect, label = 'Places', className = '' }: TabBarProps<V>) {
-  // While it is mounted the frame knows there is a tab bar, so toasts and
+  const task = useFrameTaskActive();
+  // While it is shown the frame knows there is a tab bar, so toasts and
   // floating controls clear it (--edge-bottom).
-  useFrameTabBar();
+  useFrameTabBar(!task);
   const typing = useTouchKeyboardOpen();
   return (
-    <nav aria-label={label} hidden={typing || undefined} className={`ui-part ui-tabbar frame-foot ${className}`.trim()}>
+    <nav aria-label={label} hidden={typing || task || undefined} className={`ui-part ui-tabbar frame-foot ${className}`.trim()}>
       {items.map(item => {
         const Icon = item.icon;
         return (

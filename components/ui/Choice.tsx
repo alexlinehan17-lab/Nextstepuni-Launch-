@@ -75,15 +75,19 @@ export const ChoiceTile = React.forwardRef<HTMLButtonElement, ChoiceTileProps>(f
       {art ? <ThemeArtwork className="ui-choice-art" src={art} transparentBackground alt="" /> : null}
       <span className="ui-choice-body">
         <span className="ui-choice-label">{label}</span>
-        {meta ? <span className="ui-choice-meta">{meta}</span> : null}
+        {/* The space keeps the accessible name two words apart ("Practice Work
+            through questions"); a flex column does not draw it. */}
+        {meta ? <>{' '}<span className="ui-choice-meta">{meta}</span></> : null}
       </span>
       <SelectionMark on={chosen} shape={kind === 'one' ? 'round' : 'square'} />
     </button>
   );
 });
 
-/** Arrow keys move through a row of radios; the one they land on is chosen. */
-function useRovingRadios(count: number, current: number, choose: (index: number) => void) {
+/** Arrow keys move through a row of radios; the one they land on is chosen.
+ *  Exported for a screen that lays out its own radios (study set-up's subject
+ *  names and its time presets) with ChoiceTile. */
+export function useRovingRadios(count: number, current: number, choose: (index: number) => void) {
   const refs = useRef<(HTMLButtonElement | null)[]>([]);
   const onKeyDown = (event: KeyboardEvent, index: number) => {
     const step = event.key === 'ArrowRight' || event.key === 'ArrowDown' ? 1

@@ -72,9 +72,15 @@
 /* Truly unavailable (locked, not for this plan): a well, a quiet label, no lift. */
 .ui-btn--unavailable,
 .ui-btn--unavailable:active { background: var(--surface-soft); color: var(--ink-muted); border-color: var(--hairline); box-shadow: none; transform: none; cursor: default; }
+/* Waiting for a missing step (`missing`): still pressable (it takes the
+   student to the step), drawn in the well until the step is done, when it
+   turns charcoal (c-study, the pinned Start session: kit .btn[aria-disabled]). */
+.ui-btn--waiting,
+.ui-btn--main.ui-btn--waiting:active { background: var(--surface-soft); color: var(--ink-muted); border-color: var(--hairline); box-shadow: none; }
 @media (hover: hover) and (pointer: fine) {
   .ui-btn:not(.ui-btn--main, .ui-btn--unavailable):hover { background: var(--surface-soft); }
   .ui-btn--main:hover { background: var(--action-press); }
+  .ui-btn--main.ui-btn--waiting:hover { background: var(--surface-soft); }
 }
 
 /* The text button: no box. Ink; quiet in ink-2; danger in red text. */
@@ -537,6 +543,8 @@
 .ui-bar .ui-bar-over { color: var(--ink-muted); font-family: var(--font-ui); font-size: 11px; font-weight: 400; line-height: 14px; letter-spacing: 0.08em; }
 .ui-place-head .ui-place-name { font-family: var(--font-ui); font-weight: 400; }
 .ui-bar-label { padding: 0 var(--space-4); color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+/* Cancel, where a place that has become a task keeps its leave control. */
+.ui-bar .ui-bar-cancel { padding: 0 var(--space-4); font-size: 17px; line-height: 22px; }
 .ui-bar-art { display: block; width: 36px; height: 36px; margin-right: 6px; object-fit: contain; }
 .ui-bar-art > :is(svg, img) { display: block; width: 100%; height: 100%; }
 /* A page's one-line explanation under its bar (Year Plans), when it has one. */

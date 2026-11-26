@@ -1,0 +1,194 @@
+/* Study set-up in the agreed look (c-study.html: c-study-start, c-study-dots,
+   c-study-desk; r5-b1.html: r5-study-setup). Today's screen kept: the subject
+   carousel with each subject's character, the three questions, the Your session
+   box. On a phone it is the Study place until something is chosen; then the
+   pinned Start session takes the tab bar's place. On a laptop the two columns
+   stay, and Your session stays in view with Start at its foot. */
+
+.nsu-kobra.sset { background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
+.sset-page { display: flex; flex-direction: column; min-height: 100dvh; }
+.sset-page :is(h1, h2, h3, h4, p) { margin: 0; }
+.sset .t-label { color: var(--ink-muted); }
+
+/* ── the phone: one column, the bar, the place's opening ── */
+.sset--phone .sset-page { padding: 0 var(--space-6); }
+.sset--phone .sset-page:not([data-going]) { padding-bottom: calc(var(--edge-bottom) + var(--space-8)); }
+.sset--phone .sset-bar { margin: 0 calc(-1 * var(--space-6)); }
+.sset-bar-actions { display: flex; align-items: center; }
+.sset-head { display: flex; flex-direction: column; gap: 10px; padding-top: 18px; }
+
+/* each numbered question opens under a hairline, as it does today */
+.sset-sec { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-8); padding-top: var(--space-6); border-top: 1px solid var(--hairline); }
+.sset-sec > .t-title { margin-top: -4px; }
+
+/* ── the carousel: one card centred, its neighbours at the edges ── */
+.sset .sset-picker { display: flex; flex-direction: column; gap: var(--space-3); }
+.sset .ks-carousel { width: auto; margin: var(--space-1) calc(-1 * var(--space-6)) 0; }
+.sset .ks-carousel [data-slot='carousel-content'] { padding-block: 4px 8px; margin-block: -4px -8px; mask-image: none; }
+.sset .ks-carousel .ks-carousel-item { flex: 0 0 286px; }
+.sset-subj {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 100%;
+  height: 244px;
+  padding: 12px 16px 18px;
+  border: 1px solid var(--outline-soft);
+  border-radius: var(--r-card);
+  background: var(--surface-paper);
+  color: var(--ink-primary);
+  box-shadow: var(--lift-ctl);
+  font-family: var(--font-ui);
+  text-align: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: border-color var(--t-ui) var(--ease-out), box-shadow var(--t-ui) var(--ease-out), transform var(--t-press) var(--ease-out);
+}
+.sset-subj:active { transform: scale(0.99); }
+.sset-subj[aria-pressed='true'] { border-color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--ink-primary); }
+.sset-subj > .ui-mark { position: absolute; top: 14px; right: 14px; margin: 0; }
+.sset-subj .ks-subject-art { display: block; width: 140px; height: 140px; margin-bottom: var(--space-1); object-fit: contain; }
+.sset-subj > strong { font-weight: 400; font-size: 20px; line-height: 24px; letter-spacing: -0.04em; }
+.sset-subj > span:last-child { margin-top: 2px; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.sset-carnav { display: flex; align-items: center; gap: var(--space-3); }
+.sset .ui-btn.sset-arrow { width: 44px; flex: none; padding: 0; }
+.sset-carnav > p { flex: 1; min-width: 0; color: var(--ink-primary); font-size: 16px; line-height: 22px; text-align: center; }
+.sset-carnav > p.sset-carname-empty { color: var(--ink-muted); }
+/* the names under it: tapping one moves the carousel to it; its ring at the left */
+.sset-names { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
+.sset-names .ui-choice { min-height: 48px; padding: 0 10px; gap: var(--space-2); }
+.sset-names > .ui-choice:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.sset-names .ui-choice > .ui-mark { order: -1; width: 18px; height: 18px; margin-left: 0; }
+.sset-names .ui-choice > .ui-mark svg { width: 10px; height: 10px; }
+.sset-names .ui-choice-label { overflow: hidden; font-size: 15px; line-height: 20px; white-space: nowrap; text-overflow: ellipsis; }
+.sset .study-topic-picker { margin-top: var(--space-4); gap: var(--space-2); }
+.sset .study-topic-picker > label { font-weight: 400; font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.sset .study-topic-picker .ks-copy { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+
+/* ── how you work, and time: buttons of one size ── */
+.sset-step { position: relative; border-radius: 16px; }
+.sset-methods, .sset-time { display: flex; flex-direction: column; gap: var(--space-3); }
+.sset .ui-choice.sset-method { height: 64px; min-height: 64px; padding: 0 var(--space-4); }
+.sset-presets { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); }
+.sset .ui-choice.sset-preset { justify-content: center; height: 52px; min-height: 52px; padding: 0; }
+.sset .ui-choice.sset-preset > .ui-mark { display: none; }
+.sset .ui-choice.sset-preset .ui-choice-body { flex: none; align-items: center; }
+.sset .ui-choice.sset-preset .ui-choice-label { font-size: 16px; }
+.sset-custom {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  height: 52px;
+  padding: 0 var(--space-4);
+  border: 1px solid var(--outline-soft);
+  border-radius: var(--r-sm);
+  background: var(--surface-paper);
+  color: var(--ink-muted);
+  font-size: 16px;
+  cursor: text;
+}
+.sset-custom input {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: none;
+  color: var(--ink-primary);
+  font: inherit;
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.sset-custom input::-webkit-outer-spin-button,
+.sset-custom input::-webkit-inner-spin-button { margin: 0; -webkit-appearance: none; }
+.sset-custom input::placeholder { color: var(--ink-muted); }
+.sset-custom[data-selected] { border-color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--ink-primary); }
+.sset-custom:focus-within { border-color: var(--nsu-focus-edge); box-shadow: inset 0 0 0 1px var(--nsu-focus-edge); }
+.sset-help--err { color: var(--ink-primary); }
+/* pressing Start early: one ink line round the missing question, held a moment */
+.sset .sset-step[data-ui-nudge] { outline: 1.5px solid var(--ink-primary); outline-offset: 8px; }
+
+/* ── the Your session box ── */
+.sset-session { display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-8); }
+.sset-sesshead { display: flex; align-items: center; gap: var(--space-2); min-height: 88px; }
+.sset-face { display: block; flex: none; width: 104px; height: 104px; margin: -8px -4px -8px -18px; }
+.sset-face .ks-subject-art { display: block; width: 100%; height: 100%; object-fit: contain; }
+.sset-sesswords { display: flex; flex-direction: column; gap: 6px; }
+.sset .ui-paper.sset-card { margin-top: var(--space-2); }
+.sset-card .ui-paper-face { display: flex; flex-direction: column; gap: var(--space-1); }
+.sset-cardtop { display: flex; align-items: baseline; gap: var(--space-3); }
+.sset-cardtop > h3 { flex: 1; min-width: 0; }
+.sset-readout.t-readout { flex: none; color: var(--ink-primary); font-size: 22px; line-height: 24px; letter-spacing: 0; }
+.sset-readout.sset-readout--off { color: var(--ink-muted); }
+.sset .study-rule.sset-rule { margin-top: 10px; }
+.sset-todohead { display: flex; align-items: center; justify-content: space-between; margin-top: 14px; padding-top: var(--space-1); border-top: 1px solid var(--hairline); }
+.sset-todos { display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 0; list-style: none; }
+.sset-todos > li { display: flex; align-items: center; gap: var(--space-3); min-height: 34px; color: var(--ink-primary); font-size: 15px; line-height: 20px; }
+.sset-todos > li.is-open { color: var(--ink-muted); }
+.sset-saved { display: flex; align-items: center; gap: var(--space-2); color: var(--ink-primary); font-size: 13px; line-height: 18px; }
+.sset-saved .nsu-success-mark { display: inline-flex; color: var(--success-hex); }
+.sset-switch { display: flex; align-items: center; gap: 14px; min-height: 68px; margin-top: var(--space-3); padding-top: var(--space-3); border-top: 1px solid var(--hairline); }
+.sset-switch > div { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 2px; }
+.sset-switch label { cursor: pointer; font-size: 15px; line-height: 20px; letter-spacing: -0.01em; }
+/* the iOS app-blocking choice, when the device offers it: the same row */
+.sset-card .ks-appearance-choice { margin: var(--space-3) 0 0; padding: var(--space-3) 0 0; border-top: 1px solid var(--hairline); border-bottom: 0; }
+.sset-start { display: flex; flex-direction: column; gap: var(--space-2); margin-top: 14px; }
+.sset-ready { color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+.sset-foot .sset-ready,
+.sset-foot .ui-need { font-size: 15px; line-height: 21px; }
+.sset .ui-foot.sset-foot { margin: 0 calc(-1 * var(--space-6)); }
+
+/* ── today's quieter extras, kept below the box ── */
+.sset-extras { display: flex; flex-direction: column; gap: var(--space-6); margin-top: var(--space-8); }
+.sset-plan { display: flex; flex-direction: column; gap: var(--space-3); }
+.sset-mastery { border-top: 1px solid var(--hairline); }
+.sset-mastery > summary { display: flex; align-items: center; justify-content: space-between; min-height: 56px; cursor: pointer; list-style: none; }
+.sset-mastery > summary::-webkit-details-marker { display: none; }
+.sset-mastery > summary > svg { color: var(--ink-muted); transition: transform var(--t-ui) var(--ease-out); }
+.sset-mastery[open] > summary > svg { transform: rotate(180deg); }
+.sset-mastery-list > div { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); min-height: 44px; border-bottom: 1px solid var(--hairline); font-size: 15px; line-height: 21px; }
+.sset-empty { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); padding: var(--space-4) 0; }
+
+/* ── a laptop: today's two columns beside sidebar B, centred in the space ── */
+.sset--desk .sset-page { width: min(936px, calc(100% - 2 * var(--space-12))); margin: 0 auto; padding: 36px 0 56px; }
+.sset-head--desk { flex-direction: row; align-items: flex-start; justify-content: space-between; gap: var(--space-6); padding: 0 0 28px; margin-bottom: 28px; border-bottom: 1px solid var(--hairline); }
+.sset-head-words { display: flex; flex-direction: column; gap: var(--space-2); }
+.sset-head--desk .t-display { font-size: 48px; line-height: 52px; }
+.sset-acts { display: flex; gap: var(--space-1); margin-right: -10px; }
+.sset-acts .ui-link { padding: 0 10px; border-radius: var(--r-sm); color: var(--ink-secondary); }
+.sset-acts .ui-link > span { display: inline-flex; align-items: center; gap: var(--space-2); }
+.sset-acts .ui-link .ui-icon { color: var(--ink-muted); }
+.sset-acts .ui-link:active { background: var(--surface-soft); }
+.sset-count { color: var(--ink-muted); }
+.sset--desk .sset-cols { display: grid; grid-template-columns: minmax(0, 1fr) 352px; gap: var(--space-12); align-items: start; }
+.sset--desk .sset-questions { min-width: 0; }
+.sset--desk .sset-sec { margin-top: 28px; padding-top: 28px; }
+.sset--desk .sset-sec:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+.sset--desk .ks-carousel { margin: var(--space-1) 0 0; }
+.sset--desk .ks-carousel .ks-carousel-item { flex: 0 0 316px; }
+.sset--desk .sset-subj { height: 256px; }
+.sset--desk .sset-subj .ks-subject-art { width: 152px; height: 152px; }
+.sset--desk .ui-choice.sset-method { height: 56px; min-height: 56px; }
+.sset--desk .sset-method .ui-choice-body { flex-direction: row; align-items: center; justify-content: space-between; gap: var(--space-4); }
+.sset--desk .sset-method .ui-choice-meta { text-align: right; }
+.sset--desk .sset-presets { grid-template-columns: repeat(3, 1fr) 1.4fr; }
+.sset--desk .sset-custom { grid-column: auto; }
+.sset-aside { position: sticky; top: 24px; display: flex; flex-direction: column; }
+.sset-aside .sset-session { margin-top: 0; }
+.sset--desk .sset-face { width: 96px; height: 96px; margin: -8px -2px -8px -12px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .sset-subj, .sset-mastery > summary > svg { transition: none; }
+  .sset-subj:active { transform: none; }
+}
+/* on the page (below the box), the same switch row opens under the box's space */
+.sset-switch.sset-switch--page { margin-top: 0; padding-top: 0; border-top: 0; }
+.sset-extras > .ks-appearance-choice { margin: 0; padding: 0; border: 0; }

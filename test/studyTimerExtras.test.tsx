@@ -283,6 +283,6 @@ describe('Time’s up, then the island', () => {
     fireEvent.click(screen.getByRole('button', { name: /Spend them on your island/ }));
     expect(onGoToIsland).toHaveBeenCalledTimes(1);
     fireEvent.click(screen.getByRole('button', { name: 'Back to the study room' }));
-    expect(screen.getByRole('button', { name: 'Start Session' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Start session' })).toBeInTheDocument();
   });
 });

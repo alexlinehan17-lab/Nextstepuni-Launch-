@@ -1,0 +1,51 @@
+/* The Rule (StudyRule.tsx; c-study.css "the Rule"): one tick per minute, a taller
+   one every five; inked = your time, hairline = the rest, orange = now. The
+   room sets --rule-quiet and --rule-ink to its own lines. */
+.study-rule {
+  --rule-quiet: var(--outline-soft);
+  --rule-ink: var(--ink-primary);
+  position: relative;
+  display: block;
+  flex: none;
+  width: 100%;
+  height: var(--rule-hn);
+}
+.study-rule > i {
+  position: absolute;
+  bottom: 0;
+  width: 1.5px;
+  height: var(--rule-h1);
+  margin-left: -0.75px;
+  border-radius: 0.75px;
+  background: var(--rule-quiet);
+}
+.study-rule > i.study-rule-major { height: var(--rule-h5); }
+.study-rule > i.study-rule-half { height: var(--rule-h0); }
+.study-rule > i.study-rule-ink { background: var(--rule-ink); }
+.study-rule > b {
+  position: absolute;
+  bottom: 0;
+  width: 2px;
+  height: var(--rule-hn);
+  margin-left: -1px;
+  border-radius: 1px;
+  background: var(--nsu-orange);
+}
+.study-rule--card { --rule-h0: 5px; --rule-h1: 8px; --rule-h5: 14px; --rule-hn: 20px; }
+.study-rule--room { --rule-h0: 6px; --rule-h1: 11px; --rule-h5: 18px; --rule-hn: 28px; }
+
+/* The to-do dots (StudyTodoDot.tsx; c-study.css "the to-do dots"; Alex, 25 Nov
+   2026: "Dotted green bubbles ... that fill when done the session"). One dotted
+   ring per to-do: grey while the choice is still to make, green once it is set,
+   a filled green dot with a drawn tick once the session is done. */
+.study-dot { display: block; flex: none; width: 20px; height: 20px; overflow: visible; }
+.study-dot .study-dot-ring { fill: none; stroke: var(--ink-muted); stroke-width: 1.75; stroke-dasharray: 3.8 2.876; stroke-dashoffset: 1.9; transition: stroke var(--t-ui) var(--ease-out), opacity var(--t-ui) var(--ease-out); }
+.study-dot[data-set] .study-dot-ring { stroke: var(--success-hex); }
+.study-dot .study-dot-fill { fill: var(--success-hex); transform-box: fill-box; transform-origin: center; transform: scale(0); transition: transform var(--t-ui) var(--ease-out); }
+.study-dot .study-dot-tick { fill: none; stroke: var(--surface-canvas); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 12; stroke-dashoffset: 12; transition: stroke-dashoffset 180ms var(--ease-out) 120ms; }
+.study-dot[data-done] .study-dot-fill { transform: scale(1); }
+.study-dot[data-done] .study-dot-tick { stroke-dashoffset: 0; }
+.study-dot[data-done] .study-dot-ring { opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .study-dot .study-dot-ring, .study-dot .study-dot-fill, .study-dot .study-dot-tick { transition: none; }
+}

@@ -115,6 +115,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function 
     block ? 'ui-btn--block' : '',
     arrow === 'forward' && block ? 'ui-btn--split' : '',
     unavailable ? 'ui-btn--unavailable' : '',
+    missing ? 'ui-btn--waiting' : '',
     className,
   ].filter(Boolean).join(' ');
   const glyph = arrow ? <Arrow meaning={arrow} size={size === 'sm' ? 16 : 20} /> : null;

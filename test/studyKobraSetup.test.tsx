@@ -53,8 +53,8 @@ test('the approved subject and method controls start a real session with the sel
     'true',
   );
   await user.click(screen.getByRole('radio', { name: 'Revision Recall what you know' }));
-  await user.click(screen.getByRole('button', { name: '45 min' }));
-  await user.click(screen.getByRole('button', { name: 'Start Session' }));
+  await user.click(screen.getByRole('radio', { name: '45 min' }));
+  await user.click(screen.getByRole('button', { name: 'Start session' }));
   expect(start).toHaveBeenCalledWith('Irish', 'revision', 45);
 });
 
@@ -82,7 +82,7 @@ test('to-dos can be changed, removed and added; cancel discards drafts and editi
   );
   await user.click(within(dialog).getByRole('button', { name: 'Save to-dos' }));
   expect(await screen.findByText('Practise river processes')).toBeInTheDocument();
-  await user.click(screen.getByRole('button', { name: 'Start Session' }));
+  await user.click(screen.getByRole('button', { name: 'Start session' }));
   expect(start).toHaveBeenCalledWith('Geography', 'practice', 25);
 });
 

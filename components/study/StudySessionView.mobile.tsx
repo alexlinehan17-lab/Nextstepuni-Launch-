@@ -496,6 +496,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           onSubject={setSelectedSubject}
           onType={setSelectedType}
           onMinutes={minutes => { setOpenEndedChoice(false); setSelectedMinutes(minutes); }}
+          onClear={() => { setSelectedSubject(''); setSelectedType(''); setOpenEndedChoice(false); setSelectedMinutes(0); }}
           todayBlocks={computedTodayBlocks}
           onBlock={block => {
             setTopicLaunch(undefined);

@@ -21,7 +21,7 @@
  * --edge-top, --edge-bottom, and the stacking order --z-sticky ... --z-system.
  */
 
-import { useEffect, type ReactNode } from 'react';
+import { useEffect, useSyncExternalStore, type ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 
 /** Every overlay renders at the end of <body>, so no host's stacking context
@@ -61,10 +61,12 @@ export function readSafeArea(): SafeArea {
 
 let tabBarHolders = 0;
 
-/** Called by the phone tab bar while it is mounted: the frame then knows the
- *  bar's height (--tabbar-h, 50px below 768px) and --edge-bottom clears it. */
-export function useFrameTabBar() {
+/** Called by the phone tab bar while it is mounted (and shown): the frame then
+ *  knows the bar's height (--tabbar-h, 50px below 768px) and --edge-bottom
+ *  clears it. */
+export function useFrameTabBar(shown = true) {
   useEffect(() => {
+    if (!shown) return undefined;
     const root = document.documentElement;
     tabBarHolders += 1;
     root.setAttribute('data-tabbar', '');
@@ -72,5 +74,35 @@ export function useFrameTabBar() {
       tabBarHolders = Math.max(0, tabBarHolders - 1);
       if (tabBarHolders === 0) root.removeAttribute('data-tabbar');
     };
-  }, []);
+  }, [shown]);
+}
+
+/* A place that becomes a task (navigation.md, "Tab bar": the bar steps aside
+   inside a task). Study set-up is the Study place until something is chosen,
+   then its pinned Start session takes the tab bar's place; the strategy step
+   and the debrief after a session are tasks throughout. */
+let taskHolders = 0;
+const taskListeners = new Set<() => void>();
+const tellTask = () => taskListeners.forEach(listener => listener());
+const subscribeTask = (listener: () => void) => {
+  taskListeners.add(listener);
+  return () => { taskListeners.delete(listener); };
+};
+
+/** While `active`, the screen is a task: the phone tab bar steps aside. */
+export function useFrameTask(active: boolean) {
+  useEffect(() => {
+    if (!active) return undefined;
+    taskHolders += 1;
+    tellTask();
+    return () => {
+      taskHolders = Math.max(0, taskHolders - 1);
+      tellTask();
+    };
+  }, [active]);
+}
+
+/** True while some mounted screen is a task (read by the tab bar). */
+export function useFrameTaskActive(): boolean {
+  return useSyncExternalStore(subscribeTask, () => taskHolders > 0, () => false);
 }

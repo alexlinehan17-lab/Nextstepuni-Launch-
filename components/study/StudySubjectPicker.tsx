@@ -1,35 +1,40 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, type Ref } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
   type CarouselApi,
 } from '../approved-ui-runtime';
-import { Card, CardContent } from '../approved-ui-runtime';
-import { RadioGroup, RadioGroupItem } from '../approved-ui-runtime';
 import SubjectAvatar from '../SubjectAvatar';
 import ThemeArtwork from '../ThemeArtwork';
 import { getSubjectStarCrew } from '../../data/subjectStarCrew';
+import { Button, Glyph } from '../ui/Button';
+import { ChoiceTile, SelectionMark, useRovingRadios } from '../ui/Choice';
 
+/** A subject's Star Crew character, bare on the page: no tile behind it. */
 export function StudySubjectArtwork({ subject, size = 165 }: { subject: string; size?: number }) {
   const artwork = getSubjectStarCrew(subject);
   return artwork && artwork.frame.tile === undefined ? (
-    <ThemeArtwork src={artwork.src} alt="" className="ks-subject-art" width={size} height={size} />
+    <ThemeArtwork src={artwork.src} alt="" className="ks-subject-art" width={size} height={size} transparentBackground />
   ) : (
-    <SubjectAvatar subject={subject} className="ks-subject-art" />
+    <SubjectAvatar subject={subject} className="ks-subject-art" bare />
   );
 }
 
+/** The subject carousel (today's, kept), and the names under it: tapping a
+ *  name moves the carousel to it. A swipe still picks the subject it lands on. */
 export default function StudySubjectPicker({
   subjects,
   selected,
   onSelect,
+  namesRef,
 }: {
   subjects: string[];
   selected: string;
   onSelect: (subject: string) => void;
+  /** The names under the carousel: where Start session takes a student who has not chosen yet. */
+  namesRef?: Ref<HTMLDivElement>;
 }) {
   const [api, setApi] = useState<CarouselApi>();
   const [options] = useState(() => ({
@@ -56,48 +61,47 @@ export default function StudySubjectPicker({
     onSelect(subject);
     api?.scrollTo(subjects.indexOf(subject));
   };
+  const roving = useRovingRadios(subjects.length, subjects.indexOf(selected), index => choose(subjects[index]));
   return (
-    <div className="ks-subject-picker">
+    <div className="ks-subject-picker sset-picker">
       <Carousel opts={options} setApi={setApi} className="ks-carousel" aria-label="Your subjects">
         <CarouselContent>
           {subjects.map((subject) => (
             <CarouselItem key={subject} className="ks-carousel-item">
-              <Card className="ks-subject-card nsu-paper-card" data-selected={selected === subject}>
-                <CardContent>
-                  <button
-                    type="button"
-                    aria-label={`Study ${subject}`}
-                    aria-pressed={selected === subject}
-                    onClick={() => choose(subject)}
-                  >
-                    <StudySubjectArtwork subject={subject} />
-                    <strong>{subject}</strong>
-                    <span>{selected === subject ? 'Your subject' : 'Choose subject'}</span>
-                  </button>
-                </CardContent>
-              </Card>
+              <button
+                type="button"
+                className="sset-subj"
+                aria-label={`Study ${subject}`}
+                aria-pressed={selected === subject}
+                onClick={() => choose(subject)}
+              >
+                <SelectionMark on={selected === subject} />
+                <StudySubjectArtwork subject={subject} size={140} />
+                <strong>{subject}</strong>
+                <span>{selected === subject ? 'Your subject' : 'Tap to choose'}</span>
+              </button>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="ks-carousel-controls">
-          <CarouselPrevious aria-label="Previous subject" />
-          <p aria-live="polite">{selected || 'Choose your subject'}</p>
-          <CarouselNext aria-label="Next subject" />
-        </div>
       </Carousel>
-      <RadioGroup
-        value={selected}
-        onValueChange={(value) => choose(String(value))}
-        aria-label="Your subject"
-        className="ks-subject-choices"
-      >
-        {subjects.map((subject) => (
-          <label className="ks-choice" data-selected={selected === subject} key={subject}>
-            <RadioGroupItem value={subject} />
-            <span>{subject}</span>
-          </label>
+      <div className="sset-carnav">
+        <Button className="sset-arrow" aria-label="Previous subject" onClick={() => api?.scrollPrev()}><Glyph icon={ChevronLeft} size={20} /></Button>
+        <p aria-live="polite" className={selected ? undefined : 'sset-carname-empty'}>{selected || 'Choose your subject'}</p>
+        <Button className="sset-arrow" aria-label="Next subject" onClick={() => api?.scrollNext()}><Glyph icon={ChevronRight} size={20} /></Button>
+      </div>
+      <div ref={namesRef} role="radiogroup" aria-label="Your subject" className="sset-step sset-names" data-study-step="subject">
+        {subjects.map((subject, index) => (
+          <ChoiceTile
+            key={subject}
+            ref={element => { roving.refs.current[index] = element; }}
+            chosen={selected === subject}
+            label={subject}
+            tabIndex={roving.tabIndexOf(index)}
+            onKeyDown={event => roving.onKeyDown(event, index)}
+            onClick={() => choose(subject)}
+          />
         ))}
-      </RadioGroup>
+      </div>
     </div>
   );
 }

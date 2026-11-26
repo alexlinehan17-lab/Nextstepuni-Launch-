@@ -197,14 +197,23 @@ describe.each([false, true])('study setup selections (mobile: %s)', mobile => {
     expect(colourSwitch.compareDocumentPosition(subjectsHeading) & Node.DOCUMENT_POSITION_PRECEDING).toBeTruthy();
     fireEvent.click(colourSwitch);
     expect(colourSwitch).toHaveAttribute('aria-checked', 'true');
-    expect(screen.getByRole('button', { name: 'Start Session' })).toBeDisabled();
+    // Start session never goes dead (agreed design): until everything is chosen
+    // it names what is missing and starts nothing. On a phone it is not there
+    // at all until something is chosen (the tab bar holds the bottom).
+    const startWaits = () => {
+      const start = screen.queryByRole('button', { name: 'Start session' });
+      if (start) { expect(start).toHaveAttribute('data-missing'); fireEvent.click(start); }
+      expect(mocks.startSession).not.toHaveBeenCalled();
+      return start ? 'waiting' : 'absent';
+    };
+    expect(startWaits()).toBe(mobile ? 'absent' : 'waiting');
     fireEvent.click(screen.getByRole('button', { name: 'Set up Mathematics, 45 minutes' }));
-    expect(screen.getByRole('button', { name: '45 min' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('radio', { name: '45 min' })).toHaveAttribute('aria-checked', 'true');
     fireEvent.click(screen.getByRole('radio', { name: 'Practice Work through questions' }));
     fireEvent.change(screen.getByRole('spinbutton', { name: 'Custom study duration in minutes' }), { target: { value: '3' } });
-    expect(screen.getByRole('button', { name: 'Start Session' })).toBeDisabled();
+    expect(startWaits()).toBe('waiting');
     fireEvent.change(screen.getByRole('spinbutton', { name: 'Custom study duration in minutes' }), { target: { value: '35' } });
-    fireEvent.click(screen.getByRole('button', { name: 'Start Session' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Start session' }));
     expect(mocks.startSession).toHaveBeenCalledWith('Mathematics', 'practice', 35, expect.objectContaining({ subjectId: 'mathematics', topicIds: [] }), { openEnded: false });
   });
 
@@ -221,11 +230,11 @@ describe.each([false, true])('study setup selections (mobile: %s)', mobile => {
     expect(peekTopicStudy(user.uid)).toBeUndefined();
     fireEvent.click(screen.getByRole('radio', { name: 'Revision Recall what you know' }));
     fireEvent.change(screen.getByRole('spinbutton', { name: 'Custom study duration in minutes' }), { target: { value: '30' } });
-    fireEvent.click(screen.getByRole('button', { name: 'Start Session' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Start session' }));
     expect(mocks.startSession).toHaveBeenCalledWith('Accounting', 'revision', 30, selection, { openEnded: false });
     fireEvent.click(screen.getByRole('button', { name: 'Study Mathematics' }));
     expect(screen.queryByRole('button', { name: `Remove ${topic.title}` })).not.toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: 'Start Session' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Start session' }));
     expect(mocks.startSession).toHaveBeenLastCalledWith('Mathematics', 'revision', 30, expect.objectContaining({ subjectId: 'mathematics', topicIds: [] }), { openEnded: false });
   });
 
