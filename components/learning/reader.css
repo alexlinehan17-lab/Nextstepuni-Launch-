@@ -39,24 +39,19 @@
    The theme-compat boundary adapts authored paper/ink pairs inside every lesson. */
 .dark .nsu-module-reader {
   --background:var(--surface-canvas);
-  --foreground:#f3f3f3;
-  --muted:#292929;
-  --muted-foreground:#b2b2b2;
-  --border:#414141;
-  --input:#555;
-  --surface-soft:#292929;
-  --outline-soft:#484848;
-  --ink-primary:#f3f3f3;
-  --ink-secondary:#d3d3d3;
-  --ink-muted:#b2b2b2;
+  --foreground:var(--ink-primary);
+  --muted:var(--surface-soft);
+  --muted-foreground:var(--ink-muted);
+  --border:var(--outline-soft);
+  --input:#555;;;;;;
 
   --warning-text:#f1cd8e;
-  --nsu-edge:#414141;
-  --nsu-night-footer:#282828;
+  --nsu-edge:var(--outline-soft);
+  --nsu-night-footer:var(--surface-soft);
 }
 .dark .nsu-module-reader .mr-prose { color:#dedede; }
 .dark .nsu-module-reader .mr-contents-inner[data-sidebar='notebook'] .mr-progress-list button[aria-current='step'] {
-  background:#292929;
+  background:var(--surface-soft);
   border-color:#6a6a6a;
   box-shadow:none;
 }
@@ -78,10 +73,10 @@
 
 /* The notebook is portalled outside the reader; identify it by its editor. */
 .dark .signature-card:has(.sc-notes-editor) {
-  --sc-paper:#202020;
-  --sc-ink:#f3f3f3;
-  --sc-muted:#b2b2b2;
-  --sc-line:#414141;
-  --sc-outline:#484848;
+  --sc-paper:var(--surface-paper);
+  --sc-ink:var(--ink-primary);
+  --sc-muted:var(--ink-muted);
+  --sc-line:var(--outline-soft);
+  --sc-outline:var(--outline-soft);
   box-shadow:0 8px 32px #00000070;
 }

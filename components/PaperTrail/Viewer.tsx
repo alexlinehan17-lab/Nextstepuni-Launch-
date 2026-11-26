@@ -99,7 +99,7 @@ import {loadDeskQuestion,saveDeskQuestion,keepFirstAttempt,hasResponse,type InkS
 import { COLORS } from '../../design/tokens';
 
 /** The scheme panel's compact square ink buttons (option E) for its step and text-size controls. */
-const E_SQUARE = 'inline-flex items-center justify-center h-8 min-w-[32px] px-2 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 bg-white dark:bg-zinc-900 text-[#1A1A1A] dark:text-zinc-100 text-[12.5px] font-bold shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] transition-[transform,box-shadow] duration-150 hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none disabled:opacity-35 disabled:pointer-events-none';
+const E_SQUARE = 'inline-flex items-center justify-center h-8 min-w-[32px] px-2 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 bg-white dark:bg-surface-paper text-[#1A1A1A] dark:text-zinc-100 text-[12.5px] font-bold shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] transition-[transform,box-shadow] duration-150 hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none disabled:opacity-35 disabled:pointer-events-none';
 
 // Sleek glide shared with the GC dashboard student-view tray.
 const GLIDE = { duration: 0.32, ease: [0.16, 1, 0.3, 1] as const };
@@ -1349,7 +1349,7 @@ const Viewer: React.FC<ViewerProps> = ({
     <div
       ref={rootRef}
       data-lenis-prevent
-      className="fixed inset-0 z-[100] flex flex-col bg-zinc-100 dark:bg-zinc-950"
+      className="fixed inset-0 z-[100] flex flex-col bg-zinc-100 dark:bg-surface-canvas"
       role="dialog"
       aria-modal="true"
       aria-label={`${title} — document viewer`}
@@ -1535,7 +1535,7 @@ const Viewer: React.FC<ViewerProps> = ({
                 <span className="text-[9px] font-bold uppercase tracking-[0.12em] text-zinc-400">Where the marks are</span>
                 <span className="text-[9px] text-zinc-400">tap a page</span>
               </div>
-              <div className="flex gap-px h-2.5 rounded overflow-hidden bg-zinc-200 dark:bg-zinc-800">
+              <div className="flex gap-px h-2.5 rounded overflow-hidden bg-zinc-200 dark:bg-surface-soft">
                 {Array.from({ length: session.numPages }, (_, i) => {
                   const v = marksByPage.map.get(i + 1) ?? 0;
                   const intensity = v / marksByPage.max;
@@ -1771,8 +1771,8 @@ const Viewer: React.FC<ViewerProps> = ({
               style={{ paddingBottom: 'var(--sab, 0px)' }}
               className={
                 isWide
-                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
-                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
+                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-surface-paper shadow-2xl border-l border-zinc-200 dark:border-hairline'
+                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-surface-paper rounded-t-2xl shadow-2xl'
               }
             >
               <TopicContent
@@ -1817,8 +1817,8 @@ const Viewer: React.FC<ViewerProps> = ({
               style={{ paddingBottom: 'var(--sab, 0px)' }}
               className={
                 isWide
-                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-[min(720px,calc(100vw-48px))] flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
-                  : 'pt-reveal-sheet fixed bottom-0 inset-x-0 z-[111] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
+                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-[min(720px,calc(100vw-48px))] flex flex-col bg-white dark:bg-surface-paper shadow-2xl border-l border-zinc-200 dark:border-hairline'
+                  : 'pt-reveal-sheet fixed bottom-0 inset-x-0 z-[111] flex flex-col bg-white dark:bg-surface-paper rounded-t-2xl shadow-2xl'
               }
             >
               {schemeContent}
@@ -1838,7 +1838,7 @@ const Viewer: React.FC<ViewerProps> = ({
         const ss = String(secs % 60).padStart(2, '0');
         return (
           <div className="fixed bottom-4 inset-x-0 z-[105] flex justify-center px-4" style={{ paddingBottom: 'var(--sab, 0px)' }}>
-            <div className="w-full max-w-md rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-2xl px-4 py-3 flex items-center gap-3">
+            <div className="w-full max-w-md rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-2xl px-4 py-3 flex items-center gap-3">
               <div className="min-w-0 flex-1">
                 <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">
                   The full loop · {loop.idx + 1} of {loopQuestions.length}
@@ -1876,7 +1876,7 @@ const Viewer: React.FC<ViewerProps> = ({
       {/* Full Loop resume card — a saved place from a previous mid-loop exit. */}
       {!attemptFirst && resumePlace && !loop && !loopDone && !reveal && side === 'paper' && answersUrl && scheme && storageNs && (
         <div className="fixed bottom-4 inset-x-0 z-[105] flex justify-center px-4" style={{ paddingBottom: 'var(--sab, 0px)' }}>
-          <div className="w-full max-w-md rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-2xl px-4 py-3">
+          <div className="w-full max-w-md rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-2xl px-4 py-3">
             <div className="flex items-start gap-3">
               <div className="min-w-0 flex-1">
                 <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">The full loop</p>
@@ -1907,7 +1907,7 @@ const Viewer: React.FC<ViewerProps> = ({
               </button>
               <button
                 onClick={startLoop}
-                className="flex-1 rounded-full py-2 text-[13px] font-semibold border-2 bg-white dark:bg-zinc-900 transition-transform active:translate-y-0.5"
+                className="flex-1 rounded-full py-2 text-[13px] font-semibold border-2 bg-white dark:bg-surface-paper transition-transform active:translate-y-0.5"
                 style={{ borderColor: '#d0cdc8', color: '#7a7068' }}
               >
                 Start over
@@ -1940,7 +1940,7 @@ const Viewer: React.FC<ViewerProps> = ({
         const receipt = composeReceipt(receiptStats);
         return (
           <div className="frame-dialog [--frame-gap:1rem] z-[120] flex items-center justify-center bg-black/40" role="dialog" aria-modal="true" aria-label="Full loop summary">
-            <div className="frame-dialog-card overflow-y-auto w-full max-w-sm rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-5 py-5 text-center">
+            <div className="frame-dialog-card overflow-y-auto w-full max-w-sm rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-5 py-5 text-center">
               <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400 mb-1">The full loop · done</p>
               <p className="text-[34px] font-bold leading-none mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: avg >= 66 ? '#3A8D5F' : COLORS.accent }}>
                 {marks.length ? `${avg}%` : '—'}
@@ -1971,7 +1971,7 @@ const Viewer: React.FC<ViewerProps> = ({
                   onClick={() => {
                     if (downloadReceipt(receiptStats)) setReceiptSaved(true);
                   }}
-                  className="inline-flex items-center gap-1.5 rounded-full px-4 py-2.5 text-[13px] font-semibold border-2 bg-white dark:bg-zinc-900 transition-transform active:translate-y-0.5"
+                  className="inline-flex items-center gap-1.5 rounded-full px-4 py-2.5 text-[13px] font-semibold border-2 bg-white dark:bg-surface-paper transition-transform active:translate-y-0.5"
                   style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.35)', color: COLORS.accent }}
                 >
                   <Download size={14} /> {receiptSaved ? 'Saved' : 'Save image'}
@@ -2035,8 +2035,8 @@ const Viewer: React.FC<ViewerProps> = ({
               style={{ paddingBottom: 'var(--sab, 0px)' }}
               className={
                 isWide
-                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
-                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
+                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-surface-paper shadow-2xl border-l border-zinc-200 dark:border-hairline'
+                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-surface-paper rounded-t-2xl shadow-2xl'
               }
             >
               <CommandContent wide={isWide} token={commandReveal} onClose={() => setCommandReveal(null)} />
@@ -2070,8 +2070,8 @@ const Viewer: React.FC<ViewerProps> = ({
               style={{ paddingBottom: 'var(--sab, 0px)' }}
               className={
                 isWide
-                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
-                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
+                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-surface-paper shadow-2xl border-l border-zinc-200 dark:border-hairline'
+                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-surface-paper rounded-t-2xl shadow-2xl'
               }
             >
               <MarkingContent wide={isWide} grammar={grammar} onClose={() => setMarkingOpen(false)} />
@@ -2105,8 +2105,8 @@ const Viewer: React.FC<ViewerProps> = ({
               style={{ paddingBottom: 'var(--sab, 0px)' }}
               className={
                 isWide
-                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
-                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
+                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-surface-paper shadow-2xl border-l border-zinc-200 dark:border-hairline'
+                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-surface-paper rounded-t-2xl shadow-2xl'
               }
             >
               <FormulaeContent
@@ -2135,7 +2135,7 @@ const Viewer: React.FC<ViewerProps> = ({
               aria-modal="true"
               aria-label="Triage — plan your attack"
               style={{ paddingBottom: 'var(--sab, 0px)' }}
-              className={isWide ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800' : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'}
+              className={isWide ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-surface-paper shadow-2xl border-l border-zinc-200 dark:border-hairline' : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-surface-paper rounded-t-2xl shadow-2xl'}
             >
               <TriageContent
                 wide={isWide}
@@ -2176,7 +2176,7 @@ const Viewer: React.FC<ViewerProps> = ({
               aria-modal="true"
               aria-label={`Examiner insights for ${examinerInsights.subjectLabel}`}
               style={{ paddingBottom: 'var(--sab, 0px)' }}
-              className={isWide ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800' : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'}
+              className={isWide ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-surface-paper shadow-2xl border-l border-zinc-200 dark:border-hairline' : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-surface-paper rounded-t-2xl shadow-2xl'}
             >
               <ExaminerContent wide={isWide} data={examinerInsights} onClose={() => setExaminerOpen(false)} />
             </MotionDiv>
@@ -2213,7 +2213,7 @@ const FormulaeContent: React.FC<{
           <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
         </div>
       )}
-      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-hairline">
         <div className="flex-1 min-w-0">
           <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Formulae &amp; Tables</p>
           <p className="text-[11px] text-zinc-500">The SEC booklet — opens at the section you pick.</p>
@@ -2229,14 +2229,14 @@ const FormulaeContent: React.FC<{
             href={hrefFor(s.id)}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between gap-2 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-3 text-left transition-transform active:translate-y-0.5"
+            className="flex items-center justify-between gap-2 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3 py-3 text-left transition-transform active:translate-y-0.5"
           >
             <span className="text-[13px] font-semibold leading-tight" style={{ color: '#1a1a1a' }}>{s.label}</span>
             <BookOpen size={14} style={{ color: COLORS.accent }} className="shrink-0" />
           </a>
         ))}
       </div>
-      <p className="shrink-0 px-4 py-2 text-[10px] text-zinc-400 border-t border-zinc-200 dark:border-zinc-800">
+      <p className="shrink-0 px-4 py-2 text-[10px] text-zinc-400 border-t border-zinc-200 dark:border-hairline">
         Formulae and Tables © State Examinations Commission.
       </p>
     </>
@@ -2278,7 +2278,7 @@ const TriageContent: React.FC<{
           <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
         </div>
       )}
-      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-hairline">
         <div className="flex-1 min-w-0">
           <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Triage — plan your attack</p>
           <p className="text-[11px] text-zinc-500">Rate each question before you start. Do your confident ones first.</p>
@@ -2288,7 +2288,7 @@ const TriageContent: React.FC<{
         </button>
       </div>
       {rated > 0 && (
-        <div className="shrink-0 flex items-center gap-3 px-4 py-2 text-[11px] font-semibold border-b border-zinc-100 dark:border-zinc-800">
+        <div className="shrink-0 flex items-center gap-3 px-4 py-2 text-[11px] font-semibold border-b border-zinc-100 dark:border-hairline">
           <span style={{ color: '#3A8D5F' }}>{counts.g} confident</span>
           <span style={{ color: COLORS.accent }}>{counts.a} unsure</span>
           <span style={{ color: '#1a1a1a' }}>{counts.r} hard</span>
@@ -2304,7 +2304,7 @@ const TriageContent: React.FC<{
         {questions?.map(q => {
           const rt = ratings[q.n];
           return (
-            <div key={q.n} className="rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2.5">
+            <div key={q.n} className="rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3 py-2.5">
               <div className="flex items-center justify-between gap-2 mb-1.5">
                 <button onClick={() => onJump(q.n)} className="text-[13px] font-semibold text-left" style={{ color: '#1a1a1a' }}>
                   {q.label ?? `Question ${q.n}`}
@@ -2335,7 +2335,7 @@ const TriageContent: React.FC<{
         })}
       </div>
       {counts.g + counts.a + counts.r > 0 && (
-        <p className="shrink-0 px-4 py-2.5 text-[12px] border-t border-zinc-200 dark:border-zinc-800" style={{ color: '#5a5550' }}>
+        <p className="shrink-0 px-4 py-2.5 text-[12px] border-t border-zinc-200 dark:border-hairline" style={{ color: '#5a5550' }}>
           Plan: bank the <b style={{ color: '#3A8D5F' }}>{counts.g} confident</b>{minsPerMark ? '' : ''} first, then the {counts.a} unsure, and leave the {counts.r} hard for last.
         </p>
       )}
@@ -2357,7 +2357,7 @@ const ExaminerContent: React.FC<{ wide: boolean; data: ExaminerInsightSet; onClo
           <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
         </div>
       )}
-      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-hairline">
         <div className="flex-1 min-w-0">
           <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Examiner insights</p>
           <p className="text-[11px] text-zinc-500 truncate">{data.source}</p>
@@ -2368,7 +2368,7 @@ const ExaminerContent: React.FC<{ wide: boolean; data: ExaminerInsightSet; onClo
       </div>
       <div className="flex-1 overflow-auto overscroll-contain px-4 py-4 space-y-3">
         {data.insights.map((ins, i) => (
-          <div key={i} className="rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-3">
+          <div key={i} className="rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3.5 py-3">
             <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>Where marks are lost</p>
             <p className="text-[13px] leading-relaxed mb-2.5" style={{ color: '#3a3530' }}>{ins.pitfall}</p>
             <div className="rounded-lg px-3 py-2 mb-1.5" style={{ backgroundColor: '#E8F2EC', borderLeft: '3px solid #3A8D5F' }}>
@@ -2378,7 +2378,7 @@ const ExaminerContent: React.FC<{ wide: boolean; data: ExaminerInsightSet; onClo
           </div>
         ))}
       </div>
-      <p className="shrink-0 px-4 py-2 text-[10px] text-zinc-400 border-t border-zinc-200 dark:border-zinc-800">
+      <p className="shrink-0 px-4 py-2 text-[10px] text-zinc-400 border-t border-zinc-200 dark:border-hairline">
         Source: State Examinations Commission. Full report in the school’s evidence dossier.
       </p>
     </>
@@ -2410,7 +2410,7 @@ const ExamClock: React.FC<{
   const frac = Math.min(1, Math.max(0, elapsed / totalSec));
   return (
     <div
-      className="absolute left-1/2 -translate-x-1/2 bottom-[calc(76px+var(--sab,0px))] z-[65] flex items-center gap-2.5 pl-3 pr-2 py-2 rounded-2xl bg-white dark:bg-zinc-900 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]"
+      className="absolute left-1/2 -translate-x-1/2 bottom-[calc(76px+var(--sab,0px))] z-[65] flex items-center gap-2.5 pl-3 pr-2 py-2 rounded-2xl bg-white dark:bg-surface-paper border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]"
       role="timer"
       aria-live="off"
     >
@@ -2522,7 +2522,7 @@ const CommandContent: React.FC<{ wide: boolean; token: CommandToken; onClose: ()
           <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
         </div>
       )}
-      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-hairline">
         <div className="flex-1 min-w-0">
           <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
             “{entry.word}”
@@ -2580,7 +2580,7 @@ const TopicContent: React.FC<{
           <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
         </div>
       )}
-      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-hairline">
         <div className="flex-1 min-w-0">
           <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{topicLabel(subtopicId)}</p>
           <p className="text-[11px] text-zinc-500">
@@ -2600,7 +2600,7 @@ const TopicContent: React.FC<{
               onClick={() => !here && onJump(s)}
               disabled={here}
               className={`w-full flex items-center gap-3 rounded-xl border-2 px-3.5 py-2.5 text-left transition-transform ${
-                here ? 'border-accent bg-[#FDEEDF]' : 'border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 active:translate-y-0.5'
+                here ? 'border-accent bg-[#FDEEDF]' : 'border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper active:translate-y-0.5'
               }`}
             >
               <span className="shrink-0 w-11 text-[13px] font-bold tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{s.year}</span>
@@ -2618,7 +2618,7 @@ const TopicContent: React.FC<{
           );
         })}
       </div>
-      <p className="shrink-0 px-4 py-2 text-[10px] text-zinc-400 border-t border-zinc-200 dark:border-zinc-800">
+      <p className="shrink-0 px-4 py-2 text-[10px] text-zinc-400 border-t border-zinc-200 dark:border-hairline">
         Frequency reflects the years tagged so far — coverage grows as more papers are added.
       </p>
     </>
@@ -2639,7 +2639,7 @@ const MarkingContent: React.FC<{ wide: boolean; grammar: SubjectMarkingGrammar; 
           <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
         </div>
       )}
-      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-hairline">
         <div className="flex-1 min-w-0">
           <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>How it’s marked</p>
           <p className="text-[11px] text-zinc-500 truncate">{grammar.subjectLabel}</p>
@@ -2652,7 +2652,7 @@ const MarkingContent: React.FC<{ wide: boolean; grammar: SubjectMarkingGrammar; 
         <p className="text-[13.5px] leading-relaxed" style={{ color: '#3a3530' }}>{grammar.architecture}</p>
         <div className="space-y-2.5">
           {grammar.rules.map((r, i) => (
-            <div key={i} className="rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-3">
+            <div key={i} className="rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3.5 py-3">
               <p className="text-[13px] font-semibold mb-0.5" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{r.title}</p>
               <p className="text-[12.5px] leading-relaxed" style={{ color: '#5a5550' }}>{r.body}</p>
             </div>
@@ -2733,7 +2733,7 @@ const RevealContent: React.FC<{
           <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
         </div>
       )}
-      <div className="shrink-0 flex items-start gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+      <div className="shrink-0 flex items-start gap-2 px-4 py-3 border-b border-zinc-200 dark:border-hairline">
         <div className="flex-1 min-w-0">
           <p className="text-[16px] font-bold text-zinc-900 dark:text-white">{q.label ?? `Question ${q.n}`} · marking scheme</p>
           <p className="mt-0.5 text-[12px] text-zinc-500">How examiners award the marks — not a model answer.</p>
@@ -2753,7 +2753,7 @@ const RevealContent: React.FC<{
         </button>
       </div>
       {showsCrop && (
-        <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2 border-b border-zinc-100 dark:border-zinc-800">
+        <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2 border-b border-zinc-100 dark:border-hairline">
           <span className="text-[12px] text-zinc-500">Text size</span>
           <div className="flex items-center gap-1.5">
             <button type="button" onClick={() => zoomStep(-1)} disabled={zoom <= 1} aria-label="Smaller marking scheme text" className={E_SQUARE}>
@@ -2776,7 +2776,7 @@ const RevealContent: React.FC<{
         initial={reduced ? false : { opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: reduced ? 0 : 0.08, duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
-        className="flex-1 min-h-0 overflow-auto overscroll-contain p-4 bg-white dark:bg-zinc-900"
+        className="flex-1 min-h-0 overflow-auto overscroll-contain p-4 bg-white dark:bg-surface-paper"
       >
         {q.schemeNote && (
           <p className="text-[13px] leading-relaxed text-zinc-800 dark:text-zinc-200 mb-3 px-1">
@@ -2806,7 +2806,7 @@ const RevealContent: React.FC<{
         )}
       </MotionDiv>
       {selfMark && (
-        <div className="shrink-0 px-4 py-3 border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
+        <div className="shrink-0 px-4 py-3 border-t border-zinc-200 dark:border-hairline bg-white dark:bg-surface-paper">
           <div className="flex items-baseline justify-between gap-2 mb-2">
             <p className="text-[11px] font-bold uppercase tracking-[0.1em]" style={{ color: '#9e9186' }}>
               How did you do against the scheme?
@@ -2877,7 +2877,7 @@ const RevealContent: React.FC<{
           )}
         </div>
       )}
-      <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2.5 border-t border-zinc-200 dark:border-zinc-800">
+      <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2.5 border-t border-zinc-200 dark:border-hairline">
         <span className="text-[11px] text-zinc-500 truncate">{copyright ?? '© State Examinations Commission'}</span>
         <button
           onClick={() => firstPage && onFullScheme(firstPage)}
@@ -2986,7 +2986,7 @@ const Page: React.FC<{
     <div
       ref={holderRef}
       data-page={pageNumber}
-      className="relative bg-white dark:bg-zinc-900 rounded-md shadow-sm mb-2.5 overflow-hidden"
+      className="relative bg-white dark:bg-surface-paper rounded-md shadow-sm mb-2.5 overflow-hidden"
       style={{ paddingBottom: `${(aspect ?? 1.414) * 100}%` }}
       aria-label={`Page ${pageNumber}`}
     >

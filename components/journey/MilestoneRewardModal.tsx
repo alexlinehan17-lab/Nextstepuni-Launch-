@@ -36,7 +36,7 @@ const MilestoneRewardModal: React.FC<MilestoneRewardModalProps> = ({ isOpen, onC
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
             className="fixed inset-0 z-[96] flex items-center justify-center p-6 pointer-events-none"
           >
-            <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-2xl p-8 max-w-sm w-full text-center pointer-events-auto">
+            <div className="bg-white dark:bg-surface-paper rounded-2xl border border-zinc-200 dark:border-hairline shadow-2xl p-8 max-w-sm w-full text-center pointer-events-auto">
               <div className="mx-auto w-16 h-16 rounded-2xl flex items-center justify-center mb-5 bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400">
                 <Gift size={32} />
               </div>

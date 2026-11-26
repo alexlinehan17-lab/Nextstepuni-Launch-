@@ -144,13 +144,13 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                     className={`flex items-center gap-3.5 p-4 rounded-2xl border-2 text-left text-[#1A1A1A] dark:text-zinc-100 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] dark:hover:shadow-[6px_6px_0_0_#3f3f46] active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] dark:active:shadow-[0px_0px_0_0_#3f3f46] transition-all duration-150 ${
                       isSelected
                         ? 'bg-[#FDEEDF] dark:bg-accent/14 border-accent'
-                        : 'bg-white dark:bg-zinc-900 border-[#1A1A1A] dark:border-zinc-600'
+                        : 'bg-white dark:bg-surface-paper border-[#1A1A1A] dark:border-zinc-600'
                     }`}
                   >
                     {blobCfg ? (
                       <CategoryIconBlob config={blobCfg} size={64} />
                     ) : (
-                      <div className={`w-14 h-14 rounded-xl flex items-center justify-center shrink-0 ${isSelected ? colors.iconBg : 'bg-zinc-100 dark:bg-zinc-800'}`}>
+                      <div className={`w-14 h-14 rounded-xl flex items-center justify-center shrink-0 ${isSelected ? colors.iconBg : 'bg-zinc-100 dark:bg-surface-soft'}`}>
                         {Icon && <Icon size={22} className={isSelected ? colors.text : 'text-zinc-400 dark:text-zinc-500'} />}
                       </div>
                     )}
@@ -198,7 +198,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                         ? 'bg-[#FDEEDF] dark:bg-accent/14 border-accent shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]'
                         : isDisabled
                         ? 'bg-zinc-50 dark:bg-zinc-800/50 border-zinc-200 dark:border-zinc-700 text-zinc-300 dark:text-zinc-600 cursor-not-allowed'
-                        : 'bg-white dark:bg-zinc-900 border-hairline dark:border-zinc-700 hover:-translate-y-0.5 hover:shadow-[2px_2px_0_0_#1A1A1A] dark:hover:shadow-[2px_2px_0_0_#3f3f46]'
+                        : 'bg-white dark:bg-surface-paper border-hairline dark:border-zinc-700 hover:-translate-y-0.5 hover:shadow-[2px_2px_0_0_#1A1A1A] dark:hover:shadow-[2px_2px_0_0_#3f3f46]'
                     }`}
                   >
                     {visionIcon && categoryBlob ? (
@@ -207,7 +207,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                         size={56}
                       />
                     ) : (
-                      <div className={`w-9 h-9 rounded-lg flex items-center justify-center ${isSelected ? colors.iconBg : 'bg-zinc-100 dark:bg-zinc-800'}`}>
+                      <div className={`w-9 h-9 rounded-lg flex items-center justify-center ${isSelected ? colors.iconBg : 'bg-zinc-100 dark:bg-surface-soft'}`}>
                         {Icon && <Icon size={18} className={isSelected ? colors.text : 'text-zinc-400 dark:text-zinc-500'} />}
                       </div>
                     )}

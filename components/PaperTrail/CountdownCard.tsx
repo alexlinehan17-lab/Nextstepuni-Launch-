@@ -63,7 +63,7 @@ const CountdownCard: React.FC<Props> = ({ uid, now, onOpen, onboardingExamDate }
   // ── Set / edit form ──
   if (editing || !date) {
     return (
-      <div className="w-full rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3.5 mb-5">
+      <div className="w-full rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-4 py-3.5 mb-5">
         <div className="flex items-center gap-2 mb-2">
           <CalendarDays size={17} style={{ color: ACCENT }} />
           <span className="text-[14px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
@@ -82,7 +82,7 @@ const CountdownCard: React.FC<Props> = ({ uid, now, onOpen, onboardingExamDate }
             min={dayKey(now)}
             onChange={e => setDraft(e.target.value)}
             aria-label="Exam date"
-            className="flex-1 px-3 py-2 rounded-xl border-2 border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-[13.5px] outline-none focus:border-[#1a1a1a] dark:focus:border-zinc-400"
+            className="flex-1 px-3 py-2 rounded-xl border-2 border-zinc-200 dark:border-zinc-700 bg-white dark:bg-surface-paper text-[13.5px] outline-none focus:border-[#1a1a1a] dark:focus:border-zinc-400"
           />
           <button
             onClick={save}
@@ -152,7 +152,7 @@ const CountdownCard: React.FC<Props> = ({ uid, now, onOpen, onboardingExamDate }
 
   return (
     <div
-      className="w-full rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1a1a1a] dark:shadow-[4px_4px_0_0_#3f3f46] px-4 py-3.5 mb-5"
+      className="w-full rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1a1a1a] dark:shadow-[4px_4px_0_0_#3f3f46] px-4 py-3.5 mb-5"
     >
       <div className="flex items-center gap-3">
         {onOpen ? (

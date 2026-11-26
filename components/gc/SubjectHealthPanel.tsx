@@ -174,7 +174,7 @@ export const SubjectHealthPanel: React.FC<SubjectHealthPanelProps> = ({ studentD
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: CUSTOM_EASE }}
-      className="rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow overflow-hidden"
+      className="rounded-2xl bg-white dark:bg-surface-paper border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow overflow-hidden"
     >
       {/* Header */}
       <div className="flex items-center justify-between px-5 py-3.5 border-b border-zinc-100 dark:border-zinc-800/60">
@@ -192,7 +192,7 @@ export const SubjectHealthPanel: React.FC<SubjectHealthPanelProps> = ({ studentD
         {subjectHealthData.map((item) => (
           <div
             key={item.subject}
-            className="bg-white dark:bg-zinc-900 p-4"
+            className="bg-white dark:bg-surface-paper p-4"
           >
             {/* Subject name + student count */}
             <div className="flex items-center justify-between mb-3">

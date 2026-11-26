@@ -36,7 +36,7 @@ class ToolErrorBoundary extends React.Component<ToolErrorBoundaryProps, ToolErro
       return (
         <div className="flex items-center justify-center min-h-[50vh] px-6">
           <div className="text-center max-w-sm">
-            <div className="w-14 h-14 mx-auto mb-5 rounded-2xl bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center">
+            <div className="w-14 h-14 mx-auto mb-5 rounded-2xl bg-zinc-100 dark:bg-surface-soft flex items-center justify-center">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-zinc-400 dark:text-zinc-500">
                 <circle cx="12" cy="12" r="10" />
                 <line x1="12" y1="8" x2="12" y2="12" />

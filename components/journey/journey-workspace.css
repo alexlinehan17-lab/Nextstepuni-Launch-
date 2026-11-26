@@ -15,16 +15,16 @@
   --journey-visit-arrow: #75776d;
 }
 .dark .journey-paper.journey-paper {
-  --journey-paper: #151515;
-  --journey-panel: #212121;
-  --journey-ink: #f3f2ee;
-  --journey-muted: #aaa9a3;
-  --journey-line: #41413d;
+  --journey-paper: var(--surface-canvas);
+  --journey-panel: var(--surface-paper);
+  --journey-ink: var(--ink-primary);
+  --journey-muted: var(--ink-muted);
+  --journey-line: var(--outline-soft);
   --journey-selected: #eeede7;
-  --journey-on-selected: #202020;
+  --journey-on-selected: var(--surface-paper);
   --journey-focus: #e4e2db;
   --journey-visit-line: #4c4c46;
-  --journey-visit-hover: #292928;
+  --journey-visit-hover: var(--surface-soft);
   --journey-visit-hover-line: #77776f;
   --journey-visit-arrow: #85857d;
 }

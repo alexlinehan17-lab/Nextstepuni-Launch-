@@ -38,7 +38,7 @@ export const CelebrationFrame: React.FC<CelebrationFrameProps> = ({
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 18, scale: 0.99 }}
           transition={{ type: 'spring', stiffness: 260, damping: 27, mass: 0.9 }}
-          className={`frame-sheet relative w-full overflow-hidden rounded-t-[26px] border-[1.5px] border-[#383838] bg-white shadow-[6px_6px_0_0_#383838] dark:border-zinc-600 dark:bg-zinc-900 sm:rounded-[26px] ${
+          className={`frame-sheet relative w-full overflow-hidden rounded-t-[26px] border-[1.5px] border-[#383838] bg-white shadow-[6px_6px_0_0_#383838] dark:border-zinc-600 dark:bg-surface-paper sm:rounded-[26px] ${
             scale === 'small' ? 'max-w-sm px-6 pt-6 [--frame-pad-bottom:1.5rem]' : scale === 'medium' ? 'max-w-lg px-7 pt-7 [--frame-pad-bottom:1.75rem] sm:p-9' : 'max-w-2xl px-7 pt-7 [--frame-pad-bottom:1.75rem] sm:p-10'
           }`}
         >

@@ -109,10 +109,10 @@ const Flashcards: React.FC<Props> = ({ uid, now, onBack }) => {
         <h2 className="text-2xl font-semibold mb-4" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{editing ? 'Edit card' : 'New card'}</h2>
         <label className="block text-[11px] font-bold uppercase tracking-[0.1em] mb-1.5" style={{ color: '#9e9186' }}>Front — the prompt</label>
         <textarea value={front} onChange={e => setFront(e.target.value)} rows={2} placeholder="e.g. State Le Chatelier's principle"
-          className="w-full mb-4 px-3.5 py-2.5 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 text-[14px] outline-none focus:border-accent" />
+          className="w-full mb-4 px-3.5 py-2.5 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper text-[14px] outline-none focus:border-accent" />
         <label className="block text-[11px] font-bold uppercase tracking-[0.1em] mb-1.5" style={{ color: '#9e9186' }}>Back — the answer</label>
         <textarea value={back} onChange={e => setBack(e.target.value)} rows={4} placeholder="Your answer, in your own words"
-          className="w-full mb-5 px-3.5 py-2.5 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 text-[14px] outline-none focus:border-accent" />
+          className="w-full mb-5 px-3.5 py-2.5 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper text-[14px] outline-none focus:border-accent" />
         <div className="flex items-center gap-2.5">
           <button onClick={save} disabled={!front.trim() || !back.trim()}
             className="rounded-full px-6 py-2.5 text-[14px] font-semibold text-white disabled:opacity-40 transition-transform active:translate-y-0.5"
@@ -143,7 +143,7 @@ const Flashcards: React.FC<Props> = ({ uid, now, onBack }) => {
           </button>
           <span className="text-[12px] font-medium tabular-nums" style={{ color: '#9e9186' }}>{pos + 1} / {queue.length}</span>
         </div>
-        <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1a1a1a] dark:shadow-[4px_4px_0_0_#3f3f46] px-5 py-7 mb-5 min-h-[180px] flex flex-col">
+        <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1a1a1a] dark:shadow-[4px_4px_0_0_#3f3f46] px-5 py-7 mb-5 min-h-[180px] flex flex-col">
           <p className="text-[10.5px] font-bold uppercase tracking-[0.12em] mb-2" style={{ color: '#9e9186' }}>Prompt</p>
           <p className="text-[17px] font-semibold leading-snug" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{card.front}</p>
           {flipped && (
@@ -208,7 +208,7 @@ const Flashcards: React.FC<Props> = ({ uid, now, onBack }) => {
       ) : (
         <div className="space-y-1.5">
           {cards.map(c => (
-            <div key={c.id} className="flex items-center gap-2 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 pr-2">
+            <div key={c.id} className="flex items-center gap-2 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper pr-2">
               <span className="flex-1 min-w-0 px-3.5 py-2.5">
                 <span className="block text-[13.5px] font-semibold truncate" style={{ color: INK }}>{c.front}</span>
                 <span className="block text-[11.5px] truncate" style={{ color: '#7a7068' }}>{dueLabel(c.dueTs, now, c.lastTs)}</span>

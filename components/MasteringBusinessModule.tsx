@@ -29,7 +29,7 @@ const ABQLinkDrill = () => {
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">ABQ "Link" Methodology Drill</h4>
              <AnimatePresence mode="wait">
-                <motion.div key={step} initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} exit={{opacity:0, y:-10}} className="mt-6 p-6 bg-zinc-100 dark:bg-zinc-800 rounded-xl min-h-[80px] flex items-center justify-center">
+                <motion.div key={step} initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} exit={{opacity:0, y:-10}} className="mt-6 p-6 bg-zinc-100 dark:bg-surface-soft rounded-xl min-h-[80px] flex items-center justify-center">
                     <p className="font-mono text-center text-sm">{steps[step]}</p>
                 </motion.div>
              </AnimatePresence>
@@ -156,7 +156,7 @@ const ABQAnswerScaffold = () => {
       </p>
 
       {/* Case extract */}
-      <div className="mt-8 p-5 bg-zinc-50 dark:bg-zinc-900 rounded-lg" style={{ border: '1px solid #d0cdc8' }}>
+      <div className="mt-8 p-5 bg-zinc-50 dark:bg-surface-paper rounded-lg" style={{ border: '1px solid #d0cdc8' }}>
         <p className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-2">
           Case Extract
         </p>
@@ -261,7 +261,7 @@ const ABQAnswerScaffold = () => {
                       onChange={(e) => handleInputChange(e.target.value)}
                       rows={3}
                       placeholder={`Write your ${label} here...`}
-                      className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none resize-none" style={{ border: '1.5px solid #E7E5E4' }}
+                      className="w-full bg-white dark:bg-surface-soft rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none resize-none" style={{ border: '1.5px solid #E7E5E4' }}
                     />
                     {!isDone && (
                       <button

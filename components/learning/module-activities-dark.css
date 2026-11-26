@@ -34,7 +34,7 @@
   [class~="bg-neutral-50"],
   [class~="bg-neutral-100"],
   [class~="bg-neutral-200"]
-) { --module-tint-ink:#d3d3d3; background-color:#292929 !important; color:#d3d3d3 !important; }
+) { --module-tint-ink:var(--ink-secondary); background-color:var(--surface-soft) !important; color:var(--ink-secondary) !important; }
 
 .dark .nsu-module-reader .mr-paper :is(
   [style*="background: rgb(219, 234, 254)"],
@@ -73,7 +73,7 @@
   [class~="bg-teal-50"],
   [class~="bg-teal-100"],
   [class~="bg-teal-200"]
-) { --module-tint-ink:#a6dec0; background-color:#1d3327 !important; color:#a6dec0 !important; }
+) { --module-tint-ink:#a6dec0; background-color:var(--success-tint) !important; color:#a6dec0 !important; }
 
 .dark .nsu-module-reader .mr-paper :is([style*="background-color: rgb(110, 231, 183)"]) :not([style*="background"]):not([class*="bg-"]) { color:#a6dec0 !important; }
 
@@ -244,7 +244,7 @@
 .dark .nsu-module-reader .mr-paper :is([style^="color: rgb(113, 113, 122)"],[style*="; color: rgb(113, 113, 122)"]) { color:var(--ink-muted) !important; }
 .dark .nsu-module-reader .mr-paper :is([style*="background-color: rgb(244, 244, 245)"]) { background-color:var(--surface-soft) !important; }
 .dark .nsu-module-reader .mr-paper .module-reframe-card { background-color:var(--surface-soft) !important; border-color:var(--outline-soft) !important; }
-.dark .nsu-module-reader .mr-paper .module-reframe-card[data-reframed="true"] { background-color:#1d3327 !important; border-color:#3d6b50 !important; }
+.dark .nsu-module-reader .mr-paper .module-reframe-card[data-reframed="true"] { background-color:var(--success-tint) !important; border-color:#3d6b50 !important; }
 
 /* SVG labels do not inherit text colour utilities. Preserve plotted hues and
    lift only their annotations and axis ink. */
@@ -254,7 +254,7 @@
 /* Muted labels also appear on coloured feedback surfaces. */
 .dark .nsu-module-reader .mr-paper .text-zinc-400 { color:var(--ink-muted) !important; }
 .dark .nsu-module-reader .mr-paper :is(.text-successDarkText,[class~="text-[#3A8D5F]"]) { color:#a6dec0 !important; }
-.dark .nsu-module-reader .mr-paper .bg-successTint { background-color:#1d3327 !important; }
+.dark .nsu-module-reader .mr-paper .bg-successTint { background-color:var(--success-tint) !important; }
 .dark .nsu-module-reader .mr-paper .bg-success { background-color:#2f7a50 !important; color:#fff !important; }
 .dark .nsu-module-reader .mr-paper :is([style*="background-color: rgb(191, 219, 254)"]) { background-color:#1c2b40 !important; }
 .dark .nsu-module-reader .mr-paper :is([class*="bg-zinc-50/"],[class*="bg-zinc-100/"],[class*="bg-gray-50/"]) { background-color:var(--surface-soft) !important; }

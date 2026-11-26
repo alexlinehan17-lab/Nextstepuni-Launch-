@@ -87,7 +87,7 @@ const CurlyArrowDrill = () => {
                     <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Progress</span>
                     <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400">{Math.min(current + (isCorrect ? 1 : 0), scenarios.length)}/{scenarios.length}</span>
                 </div>
-                <div className="w-full h-2 bg-zinc-100 dark:bg-zinc-900 rounded-full overflow-hidden">
+                <div className="w-full h-2 bg-zinc-100 dark:bg-surface-paper rounded-full overflow-hidden">
                     <motion.div
                         className="h-full rounded-full bg-emerald-400"
                         animate={{ width: `${(Math.min(current + (isCorrect ? 1 : 0), scenarios.length) / scenarios.length) * 100}%` }}
@@ -341,10 +341,10 @@ const KeywordPrecisionTester = () => {
         <span className="px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/20 text-xs font-bold text-emerald-700 dark:text-emerald-300">
           Score: {score}/{questions.length}
         </span>
-        <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-900 text-xs font-bold text-zinc-600 dark:text-zinc-300">
+        <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-surface-paper text-xs font-bold text-zinc-600 dark:text-zinc-300">
           Streak: {streak}
         </span>
-        <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-900 text-xs font-bold text-zinc-600 dark:text-zinc-300">
+        <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-surface-paper text-xs font-bold text-zinc-600 dark:text-zinc-300">
           Best: {bestStreak}
         </span>
       </div>
@@ -357,7 +357,7 @@ const KeywordPrecisionTester = () => {
             {done ? questions.length : current}/{questions.length}
           </span>
         </div>
-        <div className="w-full h-2 bg-zinc-100 dark:bg-zinc-900 rounded-full overflow-hidden">
+        <div className="w-full h-2 bg-zinc-100 dark:bg-surface-paper rounded-full overflow-hidden">
           <motion.div
             className="h-full rounded-full bg-emerald-400"
             animate={{ width: `${((done ? questions.length : current) / questions.length) * 100}%` }}
@@ -370,7 +370,7 @@ const KeywordPrecisionTester = () => {
         <AnimatePresence mode="wait">
           <MotionDiv key={current} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
             {/* Definition card */}
-            <div className="p-5 bg-zinc-50 dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-700 mb-5">
+            <div className="p-5 bg-zinc-50 dark:bg-surface-paper rounded-xl border border-zinc-200 dark:border-zinc-700 mb-5">
               <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-2">Definition</p>
               <p className="text-base font-medium text-zinc-800 dark:text-white leading-relaxed">{q.definition}</p>
             </div>
@@ -417,7 +417,7 @@ const KeywordPrecisionTester = () => {
           <p className="text-4xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">{score}/{questions.length}</p>
           <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-300 mb-3">{resultMessage}</p>
           <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="px-3 py-1 rounded-full bg-white dark:bg-zinc-800 text-xs font-bold text-zinc-600 dark:text-zinc-300">
+            <span className="px-3 py-1 rounded-full bg-white dark:bg-surface-soft text-xs font-bold text-zinc-600 dark:text-zinc-300">
               Best Streak: {bestStreak}
             </span>
           </div>

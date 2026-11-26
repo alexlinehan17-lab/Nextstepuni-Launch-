@@ -1038,6 +1038,6 @@
 }
 
 .dark .mr-contents-dialog {
-  --nsu-surface: #202020;
+  --nsu-surface: var(--surface-paper);
   --nsu-surface-border: #ffffff2c;
 }

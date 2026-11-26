@@ -63,7 +63,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settin
             initial={{ opacity: 0, y: -10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
-            className="absolute top-full right-0 mt-2 w-72 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-lg p-4 max-h-[80vh] overflow-y-auto"
+            className="absolute top-full right-0 mt-2 w-72 bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-xl shadow-lg p-4 max-h-[80vh] overflow-y-auto"
           >
             {/* User info */}
             <div className="flex items-center gap-3 border-b border-zinc-200/50 dark:border-white/10 pb-3 mb-3">
@@ -235,7 +235,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
             aria-modal="true"
             aria-labelledby="mobile-profile-title"
             tabIndex={-1}
-            className="fixed bottom-0 left-0 right-0 z-[96] mx-auto bg-white dark:bg-zinc-900 rounded-t-2xl border-t border-zinc-200 dark:border-zinc-800 max-h-[85vh] overflow-y-auto md:max-w-[560px] md:border-x"
+            className="fixed bottom-0 left-0 right-0 z-[96] mx-auto bg-white dark:bg-surface-paper rounded-t-2xl border-t border-zinc-200 dark:border-hairline max-h-[85vh] overflow-y-auto md:max-w-[560px] md:border-x"
             style={{ paddingBottom: 'var(--sab, 0px)' }}
           >
             {/* Drag handle */}
@@ -245,7 +245,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
 
             <div className="px-5 pb-6">
               {/* User info */}
-              <div className="sticky top-0 z-10 -mx-5 mb-4 flex items-center justify-between border-b border-zinc-100 bg-white/95 px-5 py-3 backdrop-blur-xl dark:border-zinc-800 dark:bg-zinc-900/95">
+              <div className="sticky top-0 z-10 -mx-5 mb-4 flex items-center justify-between border-b border-zinc-100 bg-white/95 px-5 py-3 backdrop-blur-xl dark:border-hairline dark:bg-zinc-900/95">
                 <div className="flex items-center gap-3">
                   <Avatar seed={displayAvatar} alt="Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
                   <div>
@@ -253,7 +253,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                     <p className="text-xs text-zinc-500">Student</p>
                   </div>
                 </div>
-                <button onClick={onClose} aria-label="Close profile" className="flex h-11 w-11 items-center justify-center rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800">
+                <button onClick={onClose} aria-label="Close profile" className="flex h-11 w-11 items-center justify-center rounded-xl hover:bg-zinc-100 dark:hover:bg-surface-soft">
                   <X size={18} className="text-zinc-400" />
                 </button>
               </div>

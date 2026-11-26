@@ -136,7 +136,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
         <MotionDiv
           initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="w-full max-w-md overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-2xl dark:border-zinc-800 dark:bg-zinc-900"
+          className="w-full max-w-md overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-2xl dark:border-hairline dark:bg-surface-paper"
         >
           <div className="px-6 pt-6 pb-2">
             <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#A0968D] dark:text-zinc-500">
@@ -218,7 +218,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
                 className={`w-full text-left px-3 py-2 rounded-lg text-xs font-medium transition-all ${
                   hardestTopic === t
                     ? 'bg-accent text-white'
-                    : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
+                    : 'bg-zinc-50 dark:bg-surface-soft text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
                 }`}
               >
                 {t}
@@ -230,7 +230,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
             className={`w-full text-left px-3 py-2 rounded-lg text-xs font-medium transition-all ${
               hardestTopic === '__other__' || (hardestTopic !== '' && !syllabusTopics.includes(hardestTopic))
                 ? 'bg-accent text-white'
-                : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
+                : 'bg-zinc-50 dark:bg-surface-soft text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
             }`}
           >
             Other (type your own)
@@ -241,7 +241,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
               value={hardestTopic === '__other__' ? '' : hardestTopic}
               onChange={(e) => setHardestTopic(e.target.value || '__other__')}
               placeholder="Type a topic..."
-              className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-accent/30"
+              className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-accent/30"
               autoFocus
             />
           )}
@@ -253,7 +253,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
             value={hardestTopic}
             onChange={(e) => setHardestTopic(e.target.value)}
             placeholder={`e.g. "Organic chemistry reactions" or "Integration by parts"`}
-            className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-accent/30"
+            className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-accent/30"
             autoFocus
           />
         </>
@@ -261,7 +261,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
 
       {/* Also covered? — quick topic multi-select */}
       {syllabusTopics && syllabusTopics.length > 0 && hardestTopic && hardestTopic !== '__other__' && (
-        <div className="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800">
+        <div className="mt-4 pt-3 border-t border-zinc-100 dark:border-hairline">
           <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Also covered?</p>
           <div className="flex flex-wrap gap-1.5">
             {syllabusTopics
@@ -278,7 +278,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
                     className={`px-2.5 py-1 rounded-md text-[10px] font-medium transition-all ${
                       isSelected
                         ? 'bg-accent text-white'
-                        : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                        : 'bg-zinc-100 dark:bg-surface-soft text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
                     }`}
                   >
                     {t}
@@ -306,7 +306,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
               className={`flex items-center gap-2 px-3 py-2.5 rounded-xl text-xs font-medium transition-all text-left ${
                 strategy === opt.id
                   ? 'bg-accent text-white shadow-sm'
-                  : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
+                  : 'bg-zinc-50 dark:bg-surface-soft text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
               }`}
             >
               <Icon size={14} />
@@ -335,7 +335,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
                 className={`flex-1 py-2.5 rounded-lg text-xs font-bold transition-all ${
                   confidenceBefore === n
                     ? 'bg-zinc-700 dark:bg-zinc-300 text-white dark:text-zinc-900'
-                    : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                    : 'bg-zinc-100 dark:bg-surface-soft text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
                 }`}
               >
                 {n}
@@ -358,7 +358,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
                 className={`flex-1 py-2.5 rounded-lg text-xs font-bold transition-all ${
                   confidenceAfter === n
                     ? 'bg-accent text-white'
-                    : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                    : 'bg-zinc-100 dark:bg-surface-soft text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
                 }`}
               >
                 {n}
@@ -395,7 +395,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
         onChange={(e) => setWhatWorked(e.target.value)}
         placeholder="e.g. 'The worked examples in ch. 5 really helped' or 'Need to revisit trigonometric identities'"
         rows={3}
-        className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-accent/30 resize-none"
+        className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-accent/30 resize-none"
       />
     </MotionDiv>,
   ];
@@ -407,7 +407,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
       <MotionDiv
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-2xl w-full max-w-md overflow-hidden"
+        className="bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-2xl shadow-2xl w-full max-w-md overflow-hidden"
       >
         {/* Header */}
         <div className="px-5 pt-5 pb-3">

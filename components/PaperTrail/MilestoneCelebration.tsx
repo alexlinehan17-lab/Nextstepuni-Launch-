@@ -78,7 +78,7 @@ const MilestoneCelebration: React.FC<Props> = ({ milestone, dateIso, onClose }) 
         initial={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 0.85, y: 12 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.28, ease: 'easeOut' }}
-        className="relative w-full max-w-sm rounded-2xl border-2 border-[#1a1a1a] bg-white dark:bg-zinc-900 dark:border-zinc-700 shadow-[6px_6px_0_0_#1a1a1a] dark:shadow-[6px_6px_0_0_#3f3f46] px-7 py-8 text-center"
+        className="relative w-full max-w-sm rounded-2xl border-2 border-[#1a1a1a] bg-white dark:bg-surface-paper dark:border-zinc-700 shadow-[6px_6px_0_0_#1a1a1a] dark:shadow-[6px_6px_0_0_#3f3f46] px-7 py-8 text-center"
       >
         <div className="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center text-[30px]" style={{ backgroundColor: '#FDEEDF' }}>
           {milestone.kind === 'streak' ? '🔥' : '🎯'}

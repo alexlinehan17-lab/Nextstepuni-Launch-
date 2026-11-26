@@ -38,7 +38,7 @@ const HL_BG = COLORS.accent;        // amber-200 highlighter
 const HL_TEXT = '#1a1a1a';      // amber-800
 
 const cardShell =
-  'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
+  'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
 
 const norm = (s: string) => s.replace(/[^a-zA-Z]/g, '').toLowerCase();
 

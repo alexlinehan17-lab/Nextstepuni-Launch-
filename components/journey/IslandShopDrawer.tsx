@@ -89,7 +89,7 @@ const IslandShopDrawer: React.FC<IslandShopDrawerProps> = ({
               className={`relative min-h-11 rounded-full px-4 text-xs font-semibold transition-colors ${
                 activeCategory === cat.key
                   ? 'bg-[var(--accent-hex)] text-white'
-                  : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-300 dark:hover:bg-zinc-700'
+                  : 'bg-zinc-200 dark:bg-surface-soft text-zinc-700 dark:text-zinc-300 hover:bg-zinc-300 dark:hover:bg-zinc-700'
               }`}
             >
               {cat.label}
@@ -121,7 +121,7 @@ const IslandShopDrawer: React.FC<IslandShopDrawerProps> = ({
                     ? 'border-amber-400 dark:border-amber-500 bg-amber-50/50 dark:bg-amber-950/20 animate-pulse-subtle'
                     : status === 'claimed'
                     ? 'border-emerald-300 dark:border-emerald-800 bg-emerald-50/30 dark:bg-emerald-950/10'
-                    : 'border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 opacity-60'
+                    : 'border-zinc-200 dark:border-hairline bg-zinc-50/50 dark:bg-zinc-900/50 opacity-60'
                 }`}
               >
                 {/* Icon */}
@@ -130,7 +130,7 @@ const IslandShopDrawer: React.FC<IslandShopDrawerProps> = ({
                     ? 'bg-amber-100 dark:bg-amber-900/40 text-amber-600 dark:text-amber-400'
                     : status === 'claimed'
                     ? 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400'
-                    : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400 dark:text-zinc-600'
+                    : 'bg-zinc-200 dark:bg-surface-soft text-zinc-400 dark:text-zinc-600'
                 }`}>
                   {status === 'claimed' ? <Check size={18} /> : status === 'claimable' ? <Gift size={18} /> : <Lock size={14} />}
                 </div>
@@ -182,7 +182,7 @@ const IslandShopDrawer: React.FC<IslandShopDrawerProps> = ({
                   className={`bg-white/90 dark:bg-zinc-900/90 backdrop-blur rounded-xl border p-3 flex flex-col justify-between ${
                     item.isLocked
                       ? 'border-zinc-300 dark:border-zinc-700 opacity-60'
-                      : 'border-zinc-200 dark:border-zinc-800'
+                      : 'border-zinc-200 dark:border-hairline'
                   }`}
                 >
                   <div>
@@ -269,10 +269,10 @@ const IslandShopDrawer: React.FC<IslandShopDrawerProps> = ({
           animate={isDesktop ? { x: 0 } : { y: 0 }}
           exit={isDesktop ? { x: '100%' } : { y: '100%' }}
           transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-          className={`z-[86] bg-white dark:bg-zinc-900 shadow-2xl flex flex-col ${
+          className={`z-[86] bg-white dark:bg-surface-paper shadow-2xl flex flex-col ${
             isDesktop
-              ? 'absolute top-0 right-0 bottom-0 w-[380px] rounded-l-2xl border-l border-zinc-200 dark:border-zinc-800'
-              : 'absolute bottom-0 left-0 right-0 rounded-t-2xl border-t border-zinc-200 dark:border-zinc-800'
+              ? 'absolute top-0 right-0 bottom-0 w-[380px] rounded-l-2xl border-l border-zinc-200 dark:border-hairline'
+              : 'absolute bottom-0 left-0 right-0 rounded-t-2xl border-t border-zinc-200 dark:border-hairline'
           }`}
           style={isDesktop ? undefined : { maxHeight: '50vh' }}
         >
@@ -291,7 +291,7 @@ const IslandShopDrawer: React.FC<IslandShopDrawerProps> = ({
               <button
                 onClick={onClose}
                 aria-label={isDesktop ? 'Close Island Shop' : 'Collapse Island Shop'}
-                className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800"
+                className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft"
               >
                 {isDesktop ? (
                   <ChevronRight size={16} className="text-zinc-400" />

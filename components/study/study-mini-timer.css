@@ -1,6 +1,6 @@
 /* Minimised study timer: the ink study room in miniature (2026-10-14). */
 .study-mini {
-  --mini-paper: #252721; --mini-ink: #f6f0df; --mini-muted: #c8d0b8; --mini-rule: #e5ecd439; --mini-orange: var(--nsu-orange);
+  --mini-paper: var(--surface-room); --mini-ink: #f6f0df; --mini-muted: #c8d0b8; --mini-rule: #e5ecd439; --mini-orange: var(--nsu-orange);
   /* frame-float (components/ui/frame.css): placed from the derived bottom edge, which clears the tab bar. */
   right: 16px; bottom: calc(16px + var(--edge-bottom)); z-index: var(--z-float);
   display: flex; align-items: stretch; gap: 6px;

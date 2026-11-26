@@ -645,7 +645,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         {/* ── intro: the question + the real rules ── */}
         {stage === 'intro' && (
           <>
-            <div className="rounded-2xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-5 py-4.5 mb-3" style={{ borderColor: BORDER, padding: '18px 20px' }}>
+            <div className="rounded-2xl border bg-white dark:bg-surface-paper dark:border-zinc-700 px-5 py-4.5 mb-3" style={{ borderColor: BORDER, padding: '18px 20px' }}>
               <Small className="mb-2">The question</Small>
               {'caseText' in session && session.caseText && (
                 <p className="text-[13.5px] leading-relaxed mb-3 pb-3 border-b" style={{ color: '#3a3530', borderColor: '#eceae6' }}>
@@ -718,7 +718,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         {/* ── mark your own work: write → self-mark → honest estimate ── */}
         {stage === 'own-write' && (
           <>
-            <div className="rounded-2xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-5 py-4 mb-3" style={{ borderColor: BORDER, padding: '18px 20px' }}>
+            <div className="rounded-2xl border bg-white dark:bg-surface-paper dark:border-zinc-700 px-5 py-4 mb-3" style={{ borderColor: BORDER, padding: '18px 20px' }}>
               <Small className="mb-2">Your question</Small>
               <p className="text-[15px] leading-relaxed" style={{ fontFamily: SERIF, color: INK }}>{session.question}</p>
             </div>
@@ -839,7 +839,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             : session.scale.levels[session.scale.levels.length - 1]?.marks ?? 0;
           return (
             <>
-              <div className="rounded-2xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-5 py-5 mb-3 text-center" style={{ borderColor: BORDER }}>
+              <div className="rounded-2xl border bg-white dark:bg-surface-paper dark:border-zinc-700 px-5 py-5 mb-3 text-center" style={{ borderColor: BORDER }}>
                 <Small className="mb-2">Your honest self-estimate</Small>
                 <p className="text-[40px] font-bold leading-none" style={{ fontFamily: SERIF, color: ACCENT }}>
                   {selfMarks}<span className="text-[20px]" style={{ color: MUTED }}>/{maxMarks}</span>
@@ -1195,7 +1195,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             {(() => {
               const agreement = scores.length ? scores.reduce((a, s) => a + s.agreement, 0) / scores.length : 0;
               return (
-                <div className="rounded-2xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-5 py-5 mb-3 text-center" style={{ borderColor: BORDER }}>
+                <div className="rounded-2xl border bg-white dark:bg-surface-paper dark:border-zinc-700 px-5 py-5 mb-3 text-center" style={{ borderColor: BORDER }}>
                   <Small className="mb-1">How close was your eye to the examiner's?</Small>
                   <div className="flex justify-center my-1">
                     <Gauge value={agreement} size={136} />
@@ -1439,7 +1439,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                   </div>
                   <div className="space-y-2">
                     {g.earned.map(s => (
-                      <div key={s.takeaway.id} className="rounded-xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-4 py-3" style={{ borderColor: BORDER }}>
+                      <div key={s.takeaway.id} className="rounded-xl border bg-white dark:bg-surface-paper dark:border-zinc-700 px-4 py-3" style={{ borderColor: BORDER }}>
                         <p className="text-[14px] font-semibold" style={{ fontFamily: SERIF, color: INK }}>{s.takeaway.rule}</p>
                         <p className="text-[12px] leading-relaxed mt-0.5" style={{ color: '#5a5550' }}>{s.takeaway.detail}</p>
                         <CiteLine label={s.takeaway.cite.label} />
@@ -1493,7 +1493,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                 .filter((s): s is MarkingSession => !!s)
                 .slice(0, 3);
               return (
-                <div key={m.key} className="rounded-xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-4 py-3.5" style={{ borderColor: BORDER }}>
+                <div key={m.key} className="rounded-xl border bg-white dark:bg-surface-paper dark:border-zinc-700 px-4 py-3.5" style={{ borderColor: BORDER }}>
                   <div className="flex items-center justify-between gap-2 mb-1.5">
                     <Small>{subjLabel}</Small>
                     <span className="text-[10.5px] font-bold px-2 py-0.5 rounded-full" style={{ color: PEN, backgroundColor: PEN_SOFT }}>
@@ -1630,7 +1630,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                   ? `award the “${r.label}” mark when the examiner doesn’t`
                   : `withhold the “${r.label}” mark when the examiner gives it`;
               return (
-                <div key={r.key} className="rounded-xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-4 py-3.5" style={{ borderColor: BORDER }}>
+                <div key={r.key} className="rounded-xl border bg-white dark:bg-surface-paper dark:border-zinc-700 px-4 py-3.5" style={{ borderColor: BORDER }}>
                   <div className="flex items-center justify-between gap-2 mb-1.5">
                     <Small>{subjLabel}</Small>
                     <span className="text-[11px] font-bold px-2 py-0.5 rounded-full" style={{ color: PEN, backgroundColor: PEN_SOFT }}>
@@ -1715,7 +1715,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
               <button
                 key={s.id}
                 onClick={() => openSession(s.id)}
-                className="w-full text-left rounded-xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-4 py-3 transition-transform active:translate-y-0.5 hover:-translate-y-0.5 flex items-center gap-3"
+                className="w-full text-left rounded-xl border bg-white dark:bg-surface-paper dark:border-zinc-700 px-4 py-3 transition-transform active:translate-y-0.5 hover:-translate-y-0.5 flex items-center gap-3"
                 style={{ borderColor: result ? '#cfe2d6' : BORDER }}
               >
                 <span
@@ -1902,7 +1902,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
           </button>
         </div>
       ) : (
-      <div className="rounded-xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-4 py-3 mb-5 flex items-center justify-between gap-3" style={{ borderColor: BORDER }}>
+      <div className="rounded-xl border bg-white dark:bg-surface-paper dark:border-zinc-700 px-4 py-3 mb-5 flex items-center justify-between gap-3" style={{ borderColor: BORDER }}>
         <div className="min-w-0 flex items-center gap-3">
           {calibration !== null && (
             <div className="shrink-0 flex flex-col items-center gap-1.5">
@@ -1980,7 +1980,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             <button
               key={s.id}
               onClick={() => openSubject(s)}
-              className="text-left rounded-2xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-4 py-3.5 transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
+              className="text-left rounded-2xl border bg-white dark:bg-surface-paper dark:border-zinc-700 px-4 py-3.5 transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
               style={{ borderColor: BORDER }}
             >
               <p className="text-[16px] font-semibold" style={{ fontFamily: SERIF, color: INK }}>

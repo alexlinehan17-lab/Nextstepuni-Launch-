@@ -263,7 +263,7 @@ const PhasedDetoxRoadmap = () => {
                 style={phaseDone ? { backgroundColor: moduleFill(COLORS.successTint), border: `2.5px solid ${COLORS.success}`, borderRadius: 16, boxShadow: 'none' } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}
               >
                 {/* Dot on timeline */}
-                <div className={`absolute -left-[calc(2rem+10px)] md:-left-[calc(2.5rem+10px)] top-6 w-5 h-5 rounded-full border-4 border-white dark:border-zinc-800 ${phaseDone ? '' : style.accentBg}`} style={phaseDone ? { backgroundColor: moduleFill(COLORS.success) } : undefined} />
+                <div className={`absolute -left-[calc(2rem+10px)] md:-left-[calc(2.5rem+10px)] top-6 w-5 h-5 rounded-full border-4 border-white dark:border-hairline ${phaseDone ? '' : style.accentBg}`} style={phaseDone ? { backgroundColor: moduleFill(COLORS.success) } : undefined} />
 
                 {/* Phase header */}
                 <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -294,7 +294,7 @@ const PhasedDetoxRoadmap = () => {
                         >
                           {/* Custom checkbox */}
                           <MotionDiv
-                            className={`mt-0.5 flex-shrink-0 w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors ${isChecked ? `${style.checkBg} border-transparent` : `${style.checkBorder} bg-white dark:bg-zinc-900`}`}
+                            className={`mt-0.5 flex-shrink-0 w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors ${isChecked ? `${style.checkBg} border-transparent` : `${style.checkBorder} bg-white dark:bg-surface-paper`}`}
                             animate={isChecked ? { scale: [1, 1.25, 1] } : { scale: 1 }}
                             transition={{ duration: 0.25 }}
                           >

@@ -194,7 +194,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
         </p>
 
         {/* Recall strength (FSRS target retention). */}
-        <div className="rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-3 mb-4">
+        <div className="rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3.5 py-3 mb-4">
           <div className="flex items-center justify-between mb-2">
             <span className="text-[12.5px] font-semibold" style={{ color: INK }}>Recall strength</span>
             <span className="text-[11px]" style={{ color: '#9e9186' }}>how sure before a card returns</span>
@@ -205,7 +205,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
                 key={label}
                 aria-pressed={Math.abs(retention - r) < 0.001}
                 onClick={() => { setTargetRetention(uid, r); setRetentionState(r); }}
-                className={`flex-1 py-1.5 rounded-md text-[12px] font-semibold transition-all ${Math.abs(retention - r) < 0.001 ? 'bg-white dark:bg-zinc-800 shadow-sm' : ''}`}
+                className={`flex-1 py-1.5 rounded-md text-[12px] font-semibold transition-all ${Math.abs(retention - r) < 0.001 ? 'bg-white dark:bg-surface-soft shadow-sm' : ''}`}
                 style={{ color: Math.abs(retention - r) < 0.001 ? COLORS.accent : '#7a7068' }}
               >
                 {label}<span className="ml-1 text-[10px] opacity-70 tabular-nums">{Math.round(r * 100)}%</span>
@@ -220,7 +220,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
         ) : (
           <div className="space-y-1.5">
             {deck.map(c => (
-              <div key={`${c.subjectId}-${c.year}-${c.level}-${c.lang}-${c.fileid}-${c.n}`} className="flex items-center gap-2 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 pr-2">
+              <div key={`${c.subjectId}-${c.year}-${c.level}-${c.lang}-${c.fileid}-${c.n}`} className="flex items-center gap-2 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper pr-2">
                 <button onClick={() => onOpenQuestion(asSibling(c))} className="flex-1 px-3.5 py-2.5 text-left transition-transform active:translate-y-0.5">
                   <span className="block text-[13px] font-semibold" style={{ color: INK }}>
                     {subjectLabel(c.subjectId)}{c.topicId ? ` · ${topicLabel(c.topicId)}` : ''}
@@ -256,7 +256,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
         {header}
-        <div className="rounded-2xl bg-white dark:bg-zinc-900 px-6 py-7" style={{ border: '1.5px solid #383838' }}>
+        <div className="rounded-2xl bg-white dark:bg-surface-paper px-6 py-7" style={{ border: '1.5px solid #383838' }}>
           <p className="text-[10px] font-bold uppercase tracking-[0.16em]" style={{ color: '#A0968D' }}>Round complete · {done} reviewed</p>
           <div className="mt-4 flex flex-wrap items-center gap-6">
             <div className="relative h-[104px] w-[104px] shrink-0">
@@ -355,7 +355,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
         {weakest && (
           <button
             onClick={drillWeakest}
-            className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-3 mt-4 text-left transition-transform active:translate-y-0.5 hover:border-accent"
+            className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3.5 py-3 mt-4 text-left transition-transform active:translate-y-0.5 hover:border-accent"
           >
             <span className="flex-1 min-w-0">
               <span className="block text-[10.5px] font-bold uppercase tracking-[0.1em]" style={{ color: '#9e9186' }}>Keep going</span>
@@ -414,7 +414,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
           animate={{ opacity: 1, y: 0 }}
           exit={reduceMotion ? { opacity: 0 } : { opacity: 0, y: -10 }}
           transition={{ duration: reduceMotion ? 0 : 0.2, ease: 'easeOut' }}
-          className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1a1a1a] dark:shadow-[4px_4px_0_0_#3f3f46] px-5 py-6 mb-5"
+          className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1a1a1a] dark:shadow-[4px_4px_0_0_#3f3f46] px-5 py-6 mb-5"
         >
           <p className="text-[10.5px] font-bold uppercase tracking-[0.12em] mb-2" style={{ color: '#9e9186' }}>
             {subjectLabel(card.subjectId)}{topic ? ` · ${topic}` : ''}

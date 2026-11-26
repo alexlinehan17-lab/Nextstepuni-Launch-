@@ -25,7 +25,7 @@ function nextAction(insight: Insight): { action: InsightAction; label: string } 
 export default function InsightsView({ uid, streak, strategyMastery, onBack, onAction }: InsightsViewProps) {
   const mobileAppDesign = useMobileAppDesign();
   const { insights, isLoaded } = useInsights(uid, streak, strategyMastery);
-  return <main className={`${mobileAppDesign ? 'mobile-editorial insights-mobile ' : ''}min-h-screen bg-white px-5 pb-36 pt-16 text-zinc-900 dark:bg-zinc-950 dark:text-white md:pt-24`}>
+  return <main className={`${mobileAppDesign ? 'mobile-editorial insights-mobile ' : ''}min-h-screen bg-white px-5 pb-36 pt-16 text-zinc-900 dark:bg-surface-canvas dark:text-white md:pt-24`}>
     <div className="mx-auto max-w-2xl">
       {mobileAppDesign ? <><PageHeader onBack={onBack} title="Your Insights" eyebrow="What your record says" compact /><p className="insights-intro">A pattern. A possibility. A next step.</p></> : <>
       <button onClick={onBack} className="mb-7 inline-flex min-h-11 items-center gap-2 rounded-lg pr-4 text-base font-semibold"><ArrowLeft size={20} aria-hidden="true" /> Home</button>

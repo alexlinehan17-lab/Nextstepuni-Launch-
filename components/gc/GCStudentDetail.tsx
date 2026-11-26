@@ -266,7 +266,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   // ─── Tray Header (sticky, compact) ──────────────────────────────────
 
   const renderTrayHeader = () => (
-    <div className="frame-bar [--frame-pad-top:1rem] sticky top-0 z-10 bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800 px-6 pb-4">
+    <div className="frame-bar [--frame-pad-top:1rem] sticky top-0 z-10 bg-white dark:bg-surface-paper border-b border-zinc-200 dark:border-hairline px-6 pb-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3 min-w-0">
           <Avatar
@@ -319,7 +319,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
         <button
           onClick={onBack}
           aria-label="Close student details"
-          className="w-9 h-9 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors shrink-0"
+          className="w-9 h-9 rounded-lg bg-zinc-100 dark:bg-surface-soft flex items-center justify-center hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors shrink-0"
         >
           <X size={18} className="text-zinc-500 dark:text-zinc-300" />
         </button>
@@ -330,7 +330,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   // ─── Header banner (full mode) ────────────────────────────────────
 
   const renderHeader = () => (
-    <div className="relative rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 overflow-hidden">
+    <div className="relative rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6 overflow-hidden">
       {/* Accent top bar + gradient glow */}
       <div className="absolute top-0 left-0 right-0 h-[3px] bg-[var(--accent-hex)]" />
       <div
@@ -343,7 +343,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
         <div className="flex items-center gap-4 mb-5">
           <button
             onClick={onBack}
-            className="w-10 h-10 rounded-xl bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
+            className="w-10 h-10 rounded-xl bg-zinc-100 dark:bg-surface-soft flex items-center justify-center hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
           >
             <ArrowLeft size={18} className="text-zinc-600 dark:text-zinc-300" />
           </button>
@@ -454,7 +454,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   const renderSubjectProfile = () => {
     if (!student.subjectProfile) {
       return (
-        <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6">
+        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
           <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-2">Subject Profile</h3>
           <p className="text-sm text-zinc-400 italic">No subject profile set up yet.</p>
         </div>
@@ -466,7 +466,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     const targetPct = Math.min(100, (targetCAO / maxPoints) * 100);
 
     return (
-      <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6">
+      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
         <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">Subject Profile</h3>
 
         {/* CAO bar — senior only (JC has no points concept), and only for
@@ -481,7 +481,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
               <span>Current: {currentCAO} pts</span>
               <span>Target: {targetCAO} pts</span>
             </div>
-            <div className="relative w-full h-5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
+            <div className="relative w-full h-5 bg-zinc-100 dark:bg-surface-soft rounded-full overflow-hidden">
               <MotionDiv
                 className="absolute inset-y-0 left-0 bg-[var(--accent-hex)] rounded-full"
                 initial={{ width: 0 }}
@@ -510,7 +510,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-zinc-200 dark:border-zinc-800">
+              <tr className="border-b border-zinc-200 dark:border-hairline">
                 <th className="text-left py-2.5 px-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Subject</th>
                 <th className="text-center py-2.5 px-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Level</th>
                 <th className="text-center py-2.5 px-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Current</th>
@@ -538,7 +538,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                 const levelClass = sub.level === 'higher'
                   ? 'bg-blue-50 text-blue-700 dark:bg-blue-900/20 dark:text-blue-400'
                   : sub.level === 'ordinary'
-                  ? 'bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400'
+                  ? 'bg-zinc-100 text-zinc-600 dark:bg-surface-soft dark:text-zinc-400'
                   : 'bg-zinc-50 text-zinc-500 dark:bg-zinc-800/50 dark:text-zinc-500';
                 return (
                   <tr key={sub.subjectName} className={`border-b border-zinc-100 dark:border-zinc-800/50 ${idx % 2 === 1 ? 'bg-zinc-50/50 dark:bg-zinc-800/10' : ''}`}>
@@ -588,7 +588,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   const renderNorthStar = () => {
     if (!student.northStar) {
       return (
-        <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6">
+        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
           <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-2">North Star</h3>
           <p className="text-sm text-zinc-400 italic">Not set yet.</p>
         </div>
@@ -603,7 +603,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
       .filter(Boolean);
 
     return (
-      <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6">
+      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
         <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-3">North Star</h3>
         {catOption && (
           <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium border mb-3 ${catColors.bg} ${catColors.border} ${catColors.text}`}>
@@ -618,7 +618,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
         {visionItems.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-3">
             {visionItems.map(v => (
-              <span key={v!.id} className="px-2.5 py-1 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400">
+              <span key={v!.id} className="px-2.5 py-1 rounded-lg bg-zinc-100 dark:bg-surface-soft text-xs text-zinc-600 dark:text-zinc-400">
                 {v!.label}
               </span>
             ))}
@@ -631,7 +631,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   // ─── Module Progress (collapsible with mini progress bars) ────────
 
   const renderModuleProgress = () => (
-    <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6">
+    <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
       <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">Module Progress</h3>
       <div className="space-y-2">
         {CATEGORIES.map(cat => {
@@ -714,7 +714,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   const renderJourneyResult = () => {
     if (!student.journeyResult) {
       return (
-        <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6">
+        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
           <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-2">Journey Simulator</h3>
           <p className="text-sm text-zinc-400 italic">Not yet attempted.</p>
         </div>
@@ -724,7 +724,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     const jr = student.journeyResult;
     if (jr.scoringVersion !== JOURNEY_SCORING_VERSION) {
       return (
-        <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6">
+        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
           <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-2">Journey Simulator</h3>
           <p className="text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">This result used the retired scoring model. The student will be prompted to complete the revised simulation before a new profile is shown.</p>
         </div>
@@ -735,7 +735,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     const statKeys: CapabilityKey[] = [...CAPABILITY_KEYS];
 
     return (
-      <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6">
+      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
         <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">Journey Simulator</h3>
 
         {/* Archetype badge */}
@@ -766,14 +766,14 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                   <span className="text-sm text-zinc-700 dark:text-zinc-300">{STAT_LABELS[key]}</span>
                   <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{stats[key]}/100</span>
                 </div>
-                <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-800">
+                <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-zinc-100 dark:bg-surface-soft">
                   <div className="h-full rounded-full bg-[var(--accent-hex)]" style={{ width: `${Math.max(2, Math.min(100, stats[key]))}%` }} />
                 </div>
               </div>
             );
           })}
         </div>
-        <div className="mt-4 border-t border-zinc-200 pt-4 dark:border-zinc-800">
+        <div className="mt-4 border-t border-zinc-200 pt-4 dark:border-hairline">
           <div className="flex items-center justify-between gap-3">
             <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">Energy reserve</span>
             <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{stats.energy}/100</span>
@@ -794,10 +794,10 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     return (
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {/* Streak */}
-        <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5">
+        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
           <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-3">Streak</p>
           <div className="flex items-center gap-3 mb-3">
-            <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${streak?.currentStreak ? 'bg-orange-50 dark:bg-accent/10' : 'bg-zinc-100 dark:bg-zinc-800'}`}>
+            <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${streak?.currentStreak ? 'bg-orange-50 dark:bg-accent/10' : 'bg-zinc-100 dark:bg-surface-soft'}`}>
               <Flame size={24} className={streak?.currentStreak ? 'text-accent' : 'text-zinc-300 dark:text-zinc-600'} />
             </div>
             <span className="text-3xl font-bold text-zinc-900 dark:text-white">{streak?.currentStreak ?? 0}</span>
@@ -810,7 +810,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
         </div>
 
         {/* Points Earned */}
-        <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5">
+        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
           <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-3">Points Earned</p>
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-xl bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center">
@@ -827,7 +827,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   // ─── Engagement timeline (SVG bar chart) ────────────────────────────
 
   const renderEngagementTimeline = () => (
-    <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5">
+    <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
       <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-3">Activity (30 Days)</p>
       <svg viewBox="0 0 300 60" className="w-full h-16" preserveAspectRatio="none">
         {engagementTimeline.map((d, i) => {
@@ -877,7 +877,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     const completed = ff.completedAt ? new Date(ff.completedAt) : null;
 
     return (
-      <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5">
+      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
         <div className="flex items-center gap-2 mb-1">
           <Compass size={16} className="text-blue-500" />
           <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">{heading}</h4>
@@ -914,13 +914,13 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     const prog = compassProgress;
     const updated = prog.updatedAt ? new Date(prog.updatedAt) : null;
     return (
-      <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5">
+      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
         <div className="flex items-center gap-2 mb-3">
           <Compass size={16} className="text-teal-500" />
           <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">College Compass</h4>
           <span className="ml-auto text-xs font-bold text-zinc-500 dark:text-zinc-400">{prog.doneItems}/{prog.totalItems} done</span>
         </div>
-        <div className="h-2 rounded-full bg-zinc-100 dark:bg-zinc-800 overflow-hidden mb-1">
+        <div className="h-2 rounded-full bg-zinc-100 dark:bg-surface-soft overflow-hidden mb-1">
           <div className="h-full rounded-full bg-teal-500" style={{ width: `${prog.percentDone}%` }} />
         </div>
         <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mb-3">
@@ -972,7 +972,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     const sorted = [...student.mockResults].sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''));
 
     return (
-      <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5">
+      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
         <div className="flex items-center gap-2 mb-3">
           <BarChart3 size={16} className="text-amber-500" />
           <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">Mock Trajectory</h4>
@@ -980,7 +980,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-zinc-200 dark:border-zinc-800">
+              <tr className="border-b border-zinc-200 dark:border-hairline">
                 <th className="text-left py-2 px-2 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Subject</th>
                 <th className="text-center py-2 px-2 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Grade</th>
                 <th className="text-right py-2 px-2 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Date</th>
@@ -1019,7 +1019,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     if (entries.length === 0) return null;
 
     return (
-      <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5">
+      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
         <div className="flex items-center gap-2 mb-3">
           <Brain size={16} className="text-rose-500" />
           <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">Struggle Areas</h4>
@@ -1123,7 +1123,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl"
+              className="bg-white dark:bg-surface-paper rounded-2xl border border-zinc-200 dark:border-hairline p-6 max-w-sm w-full shadow-2xl"
               onClick={(e: React.MouseEvent) => e.stopPropagation()}
             >
               <div className="flex items-center gap-3 mb-4">
@@ -1144,7 +1144,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                   <button
                     key={tool.id}
                     onClick={() => setRecommendToolId(tool.id)}
-                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${recommendToolId === tool.id ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 font-medium' : 'hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-300'}`}
+                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${recommendToolId === tool.id ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 font-medium' : 'hover:bg-zinc-50 dark:hover:bg-surface-soft text-zinc-700 dark:text-zinc-300'}`}
                   >
                     {isJunior && tool.jcTitle ? tool.jcTitle : tool.title}
                   </button>
@@ -1158,14 +1158,14 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                     type="button"
                     aria-pressed={recommendNoteId === note.id}
                     onClick={() => setRecommendNoteId(recommendNoteId === note.id ? '' : note.id)}
-                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${recommendNoteId === note.id ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 font-medium' : 'hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-300'}`}
+                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${recommendNoteId === note.id ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 font-medium' : 'hover:bg-zinc-50 dark:hover:bg-surface-soft text-zinc-700 dark:text-zinc-300'}`}
                   >
                     {note.text}
                   </button>
                 ))}
               </div>
               <div className="flex gap-2">
-                <button onClick={() => setShowRecommendModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                <button onClick={() => setShowRecommendModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors">
                   Cancel
                 </button>
                 <button
@@ -1189,7 +1189,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl"
+              className="bg-white dark:bg-surface-paper rounded-2xl border border-zinc-200 dark:border-hairline p-6 max-w-sm w-full shadow-2xl"
               onClick={(e: React.MouseEvent) => e.stopPropagation()}
             >
               <div className="flex items-center gap-3 mb-4">
@@ -1208,14 +1208,14 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                     type="button"
                     aria-pressed={kudosMessageId === message.id}
                     onClick={() => setKudosMessageId(message.id)}
-                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${kudosMessageId === message.id ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 font-medium' : 'hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-300'}`}
+                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${kudosMessageId === message.id ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 font-medium' : 'hover:bg-zinc-50 dark:hover:bg-surface-soft text-zinc-700 dark:text-zinc-300'}`}
                   >
                     {message.text}
                   </button>
                 ))}
               </div>
               <div className="flex gap-2">
-                <button onClick={() => setShowKudosModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                <button onClick={() => setShowKudosModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors">
                   Cancel
                 </button>
                 <button

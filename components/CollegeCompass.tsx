@@ -76,7 +76,7 @@ const RestrictedCheck: React.FC = () => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const selected = RESTRICTED_COURSE_TYPES.find(r => r.id === selectedId) ?? null;
   return (
-    <div className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5">
+    <div className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5">
       <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400 dark:text-zinc-500 mb-1">Quick check</p>
       <h4 className="font-serif text-lg font-bold text-[#1A1A1A] dark:text-white mb-3">Is my course restricted?</h4>
       <div className="flex flex-wrap gap-1.5 mb-3">
@@ -127,7 +127,7 @@ const VerifyModal: React.FC<{ entryYear: number; onClose: () => void }> = ({ ent
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.96, y: 12 }}
         transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] as number[] }}
-        className="bg-white dark:bg-zinc-900 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-lg w-full frame-dialog-card [--frame-card-max:90vh] flex flex-col overflow-hidden"
+        className="bg-white dark:bg-surface-paper rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-lg w-full frame-dialog-card [--frame-card-max:90vh] flex flex-col overflow-hidden"
         onClick={(e: React.MouseEvent) => e.stopPropagation()}
       >
         <div className="flex items-start justify-between p-6 pb-4 shrink-0">

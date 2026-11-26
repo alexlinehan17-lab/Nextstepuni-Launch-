@@ -85,7 +85,7 @@ const WeaknessMap: React.FC<{
   };
 
   return (
-    <div className="mb-6 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-4">
+    <div className="mb-6 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-4">
       <div className="flex items-center justify-between gap-2 mb-3">
         <h3 className="text-[15px] font-semibold flex items-center gap-1.5" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
           <TrendingDown size={16} style={{ color: COLORS.accent }} /> Your practice
@@ -105,7 +105,7 @@ const WeaknessMap: React.FC<{
               <button
                 key={`${t.subjectId}-${t.subtopicId}`}
                 onClick={() => drill(t)}
-                className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2 text-left transition-transform active:translate-y-0.5 hover:border-accent"
+                className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3 py-2 text-left transition-transform active:translate-y-0.5 hover:border-accent"
               >
                 <span className="shrink-0 w-11 text-[14px] font-bold tabular-nums" style={{ color: t.avg < 50 ? COLORS.accent : '#1a1a1a', fontFamily: "'Source Serif 4', serif" }}>
                   {t.avg}%

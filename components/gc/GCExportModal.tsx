@@ -94,11 +94,11 @@ const GCExportModal: React.FC<GCExportModalProps> = ({ isOpen, onClose, studentD
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="bg-white dark:bg-zinc-900 rounded-2xl shadow-xl w-full max-w-lg overflow-hidden"
+            className="bg-white dark:bg-surface-paper rounded-2xl shadow-xl w-full max-w-lg overflow-hidden"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Header */}
-            <div className="flex items-center justify-between px-6 py-5 border-b border-zinc-100 dark:border-zinc-800">
+            <div className="flex items-center justify-between px-6 py-5 border-b border-zinc-100 dark:border-hairline">
               <div className="flex items-center gap-3">
                 <div
                   className="w-9 h-9 rounded-xl flex items-center justify-center dark:!bg-[rgba(77,184,164,0.1)]"
@@ -111,7 +111,7 @@ const GCExportModal: React.FC<GCExportModalProps> = ({ isOpen, onClose, studentD
               <button
                 onClick={onClose}
                 aria-label="Close"
-                className="w-8 h-8 flex items-center justify-center rounded-lg text-zinc-400 hover:text-zinc-600 hover:bg-zinc-100 dark:hover:text-zinc-300 dark:hover:bg-zinc-800 transition-colors"
+                className="w-8 h-8 flex items-center justify-center rounded-lg text-zinc-400 hover:text-zinc-600 hover:bg-zinc-100 dark:hover:text-zinc-300 dark:hover:bg-surface-soft transition-colors"
               >
                 <X size={16} />
               </button>
@@ -148,7 +148,7 @@ const GCExportModal: React.FC<GCExportModalProps> = ({ isOpen, onClose, studentD
                     <select
                       value={selectedStudentUid}
                       onChange={e => setSelectedStudentUid(e.target.value)}
-                      className="w-full appearance-none bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl px-3 py-2.5 pr-8 text-sm text-zinc-800 dark:text-white focus:outline-none focus:border-accent/50"
+                      className="w-full appearance-none bg-zinc-50 dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 rounded-xl px-3 py-2.5 pr-8 text-sm text-zinc-800 dark:text-white focus:outline-none focus:border-accent/50"
                     >
                       <option value="">Select a student...</option>
                       {sortedStudents.map(s => (
@@ -167,7 +167,7 @@ const GCExportModal: React.FC<GCExportModalProps> = ({ isOpen, onClose, studentD
             </div>
 
             {/* Footer */}
-            <div className="flex gap-3 px-6 py-4 border-t border-zinc-100 dark:border-zinc-800">
+            <div className="flex gap-3 px-6 py-4 border-t border-zinc-100 dark:border-hairline">
               <button
                 onClick={handleExportCSV}
                 disabled={!hasSelection}

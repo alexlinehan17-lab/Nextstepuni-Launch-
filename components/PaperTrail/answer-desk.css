@@ -14,7 +14,7 @@
   padding-bottom: var(--safe-bottom);
 }
 .dark .ad-pane {
-  background: #141414;
+  background: var(--surface-canvas);
   color: #f0efe9;
   border-color: #3c3c37;
 }
@@ -79,7 +79,7 @@
 }
 .dark .ad-question select {
   border-color: #56564d;
-  background: #20201d;
+  background: var(--surface-paper);
 }
 .ad-scope [data-slot="button"] {
   min-height: 38px;
@@ -178,7 +178,7 @@
   box-shadow: none;
 }
 .dark .ad-scope textarea[data-slot="textarea"] {
-  background: #1d1d1b;
+  background: var(--surface-soft);
   color: #f0efe7;
   border-color: #4b4b43;
 }
@@ -259,7 +259,7 @@
   background: #fff;
 }
 .dark .ad-kept {
-  background: #20211e;
+  background: var(--surface-paper);
   border-color: #41423a;
 }
 .ad-response-text {
@@ -431,7 +431,7 @@
     background: #fff !important;
   }
   .dark .ad-scope {
-    background: #141414 !important;
+    background: var(--surface-canvas) !important;
   }
   .ad-header h2 {
     font-size: 20px;
@@ -508,7 +508,7 @@
   outline: none;
 }
 .dark .ad-resize {
-  background: #141414;
+  background: var(--surface-canvas);
 }
 .ad-resize > span {
   width: 3px;

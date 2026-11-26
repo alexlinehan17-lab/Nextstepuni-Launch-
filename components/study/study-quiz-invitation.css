@@ -1,6 +1,6 @@
 /* The framed, two-column treatment from the My Journey introduction. */
 .sq-completion-stage { min-height:100vh; min-height:100dvh; display:grid; place-items:center; background:#fff; color:#666662; font:400 14px/1.6 'DM Sans',sans-serif; }
-.dark .sq-completion-stage { background:#222220; color:#c1c1bc; }
+.dark .sq-completion-stage { background:var(--surface-canvas); color:var(--ink-secondary); }
 .sq-completion-wait { max-width:32rem; padding:28px; text-align:center; }
 .sq-completion-wait p { margin:0 0 20px; }
 .sq-completion-wait button { min-height:46px; padding:12px 20px; border:1px solid currentColor; border-radius:8px; background:transparent; color:inherit; font:600 14px/1.4 'DM Sans',sans-serif; cursor:pointer; }
@@ -31,7 +31,7 @@
 .sqi-dialog .sqi-actions button:active { transform:translateY(1px); }
 .sqi-dialog button:focus-visible { outline:2px solid var(--sqi-ink); outline-offset:3px; }
 .sqi-reassurance { margin:18px 0 0; color:var(--sqi-muted); font:400 11px/1.6 'DM Sans',sans-serif; }
-.dark .sqi-dialog { --sqi-bg:#222220; --sqi-ink:#fff; --sqi-muted:#c1c1bc; --sqi-line:#52524d; box-shadow:7px 7px 0 #0008; }
+.dark .sqi-dialog { --sqi-bg:var(--surface-raised); --sqi-ink:#fff; --sqi-muted:var(--ink-secondary); --sqi-line:var(--outline-soft); box-shadow:7px 7px 0 #0008; }
 @media(max-width:600px) {
   .sqi-overlay { padding:14px; }
   .sqi-dialog { max-height:calc(100dvh - 28px); border-radius:18px; box-shadow:4px 4px 0 #292925; }

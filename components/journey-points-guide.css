@@ -9,7 +9,7 @@
   font-family: 'DM Sans', sans-serif;
   text-align: left;
 }
-.dark .jp-guide { --jp-paper: #202020; --jp-ink: #f7f5f1; --jp-muted: #b7b2ab; --jp-rule: #484540; --jp-orange: var(--accent-text); }
+.dark .jp-guide { --jp-paper: var(--surface-paper); --jp-ink: var(--ink-primary); --jp-muted: var(--ink-muted); --jp-rule: var(--outline-soft); --jp-orange: var(--accent-text); }
 .jp-primer-backdrop { --frame-gap: 24px; z-index: 300; display: flex; align-items: center; justify-content: center; background: rgb(26 26 26 / .46); }
 .jp-primer { display: flex; flex-direction: column; width: min(100%, 560px); --frame-card-max: 92dvh; border: 1px solid var(--jp-rule); border-radius: 18px; box-shadow: 0 24px 80px rgb(0 0 0 / .18); overflow: hidden; }
 .jp-guide-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 30px 30px 24px; flex-shrink: 0; }

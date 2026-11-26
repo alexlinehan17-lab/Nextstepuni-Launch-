@@ -309,7 +309,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 aria-label="Year"
                 className={`appearance-none cursor-pointer rounded-[10px] py-[8px] pl-3 pr-8 text-[12.5px] font-semibold outline-none transition-colors ${
                   yearFilter === 'all'
-                    ? 'bg-zinc-100 text-[#8d857c] hover:text-[#57534e] dark:bg-zinc-800 dark:text-zinc-400'
+                    ? 'bg-zinc-100 text-[#8d857c] hover:text-[#57534e] dark:bg-surface-soft dark:text-zinc-400'
                     : 'bg-white text-[#1a1a1a] shadow-[0_1px_2px_rgba(26,23,20,0.10)] ring-1 ring-[#E5E1DA] dark:bg-zinc-600 dark:text-white dark:ring-zinc-600'
                 }`}
               >
@@ -411,7 +411,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 onChange={e => setTopicQuery(e.target.value)}
                 placeholder="Search topics"
                 aria-label="Search topics"
-                className="w-48 appearance-none rounded-[10px] bg-zinc-100 py-[8px] pl-8 pr-8 text-[13px] outline-none transition-shadow placeholder:text-[#a8a29e] focus:ring-2 focus:ring-accent/28 dark:bg-zinc-800 dark:text-zinc-100"
+                className="w-48 appearance-none rounded-[10px] bg-zinc-100 py-[8px] pl-8 pr-8 text-[13px] outline-none transition-shadow placeholder:text-[#a8a29e] focus:ring-2 focus:ring-accent/28 dark:bg-surface-soft dark:text-zinc-100"
                 style={{ color: INK }}
               />
               {topicQuery && (
@@ -466,7 +466,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                     <button
                       key={t.subtopicId}
                       onClick={() => setSubtopicId(t.subtopicId)} onFocus={() => setPreviewId(t.subtopicId)}
-                      className="group w-full flex items-center gap-3.5 rounded-xl border border-[#E5E1DA] bg-white px-4 py-3 text-left transition-all duration-150 hover:-translate-y-[1px] hover:border-[#383838] dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-400"
+                      className="group w-full flex items-center gap-3.5 rounded-xl border border-[#E5E1DA] bg-white px-4 py-3 text-left transition-all duration-150 hover:-translate-y-[1px] hover:border-[#383838] dark:border-zinc-700 dark:bg-surface-paper dark:hover:border-zinc-400"
                     >
                       <span aria-hidden="true" className="w-6 shrink-0 text-right text-[13px] tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: '#b3aca3' }}>
                         {String(contentsNo.get(t.subtopicId) ?? 0).padStart(2, '0')}
@@ -580,7 +580,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                       onClick={() => setSubjectId(s.id)}
                       disabled={!canSelectSubject(s.label)}
                       aria-label={`${s.label} — ${st.questions.toLocaleString()} questions across ${topicsForSubject(s.id).length} topics, ${st.yearMin} to ${st.yearMax}`}
-                      className="group text-left rounded-2xl overflow-hidden bg-white dark:bg-zinc-900 transition-transform duration-200 hover:-translate-y-0.5"
+                      className="group text-left rounded-2xl overflow-hidden bg-white dark:bg-surface-paper transition-transform duration-200 hover:-translate-y-0.5"
                       style={{ border: '1.5px solid #383838' }}
                     >
                       <span className="block px-5 pt-3.5 pb-3" style={{ backgroundColor: tint.bg }}>

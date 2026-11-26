@@ -17,12 +17,12 @@
 }
 
 .dark .ways-in-shell {
-  --wi-ink: #f5f2ed;
-  --wi-muted: #aaa39a;
-  --wi-line: #4a4641;
-  --wi-soft: #292725;
-  --wi-paper: #1d1c1b;
-  --wi-canvas: #141413;
+  --wi-ink: var(--ink-primary);
+  --wi-muted: var(--ink-muted);
+  --wi-line: var(--outline-soft);
+  --wi-soft: var(--surface-soft);
+  --wi-paper: var(--surface-paper);
+  --wi-canvas: var(--surface-canvas);
 }
 
 .wi-topbar {

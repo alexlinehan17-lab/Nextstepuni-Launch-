@@ -169,7 +169,7 @@ const SRPBuilder = () => {
                         setInputs(next);
                       }}
                       placeholder="Type your answer..."
-                      className="flex-1 bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }}
+                      className="flex-1 bg-white dark:bg-surface-soft rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }}
                     />
                     <button onClick={() => handleCheck(i)} className="px-4 py-2 rounded-lg bg-pink-500 hover:bg-pink-600 text-white text-sm font-semibold transition-colors">Check</button>
                   </div>

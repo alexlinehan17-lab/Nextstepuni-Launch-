@@ -32,7 +32,7 @@ const PlantThumb: React.FC<{ seed: number; minutes: number }> = ({ seed, minutes
     }
   }, [seed]);
   return (
-    <div className="rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 p-1.5 text-center">
+    <div className="rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper p-1.5 text-center">
       <canvas ref={ref} className="w-full h-[72px]" aria-hidden />
       <span className="block text-[10.5px] font-semibold tabular-nums" style={{ color: '#7a7068' }}>{minutes}m</span>
     </div>

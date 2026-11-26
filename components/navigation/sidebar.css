@@ -10,11 +10,11 @@
   font-family:var(--font-sans); color:var(--foreground); font-size:14px; line-height:1.5;
 }
 .dark .nsu-kobra-nav {
-  --background:var(--surface-canvas); --foreground:#fafafa; --popover:#202020; --popover-foreground:#fafafa;
-  --sidebar:var(--surface-canvas); --sidebar-foreground:#ededed; --sidebar-accent:#292929; --sidebar-accent-foreground:#fafafa;
-  --sidebar-border:#2d2d30; --sidebar-ring:var(--accent-text); --border:#333; --muted:#252525; --muted-foreground:#a4a4a7;
-  --accent:#29292b; --accent-foreground:#fafafa; --ring:var(--accent-text); --destructive:#f87171;
-  --primary:#fafafa; --primary-foreground:#171717; --secondary:#292929; --secondary-foreground:#fafafa; --input:#333;
+  --background:var(--surface-canvas); --foreground:#fafafa; --popover:var(--surface-paper); --popover-foreground:#fafafa;
+  --sidebar:var(--surface-canvas); --sidebar-foreground:#ededed; --sidebar-accent:var(--surface-soft); --sidebar-accent-foreground:#fafafa;
+  --sidebar-border:var(--hairline); --sidebar-ring:var(--accent-text); --border:var(--hairline); --muted:var(--surface-soft); --muted-foreground:#a4a4a7;
+  --accent:var(--surface-soft); --accent-foreground:#fafafa; --ring:var(--accent-text); --destructive:#f87171;
+  --primary:#fafafa; --primary-foreground:#171717; --secondary:var(--surface-soft); --secondary-foreground:#fafafa; --input:var(--outline-soft);
 }
 .student-sidebar-shell { display:flex; width:100%; min-height:100dvh; background:var(--sidebar); }
 .student-sidebar-shell [data-slot=sidebar-gap], .student-sidebar-shell [data-slot=sidebar-container] { width:var(--navigation-width); transition:width 300ms cubic-bezier(.32,.72,0,1); }
@@ -75,7 +75,7 @@
 .nsu-nav-updates:hover { filter:brightness(.94); }
 .nsu-nav-updates:focus-visible { outline:2px solid var(--sidebar-ring); outline-offset:2px; }
 .nsu-nav-updates-count { padding:3px 6px; border-radius:4px; background:#fff; color:#292925; font-size:11px; line-height:1.2; white-space:nowrap; font-variant-numeric:tabular-nums; }
-.dark .nsu-nav-updates-count { background:#292925; color:#fff; }
+.dark .nsu-nav-updates-count { background:var(--surface-soft); color:#fff; }
 .nsu-nav-notification-count { margin-left:auto; padding:0 6px; border-radius:20px; background:var(--accent); color:var(--foreground); font-size:11px; }
 .nsu-kobra-nav .nsu-nav-account-menu { width:304px; max-width:calc(100vw - 24px); font-family:var(--font-sans); }
 .nsu-kobra-nav > div:has(> [data-slot=dropdown-menu-content]),

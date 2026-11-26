@@ -59,11 +59,11 @@ const FirstRunCoach: React.FC<Props> = ({ uid, steps }) => {
   };
 
   return (
-    <div className="relative w-full rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3.5 mb-5">
+    <div className="relative w-full rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-4 py-3.5 mb-5">
       <button
         onClick={dismiss}
         aria-label="Dismiss"
-        className="absolute top-2.5 right-2.5 w-7 h-7 rounded-lg flex items-center justify-center transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800"
+        className="absolute top-2.5 right-2.5 w-7 h-7 rounded-lg flex items-center justify-center transition-colors hover:bg-zinc-100 dark:hover:bg-surface-soft"
         style={{ color: '#9e9186' }}
       >
         <X size={15} />

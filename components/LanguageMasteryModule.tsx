@@ -28,7 +28,7 @@ const DualTrackPlanner = () => {
     return(
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Study Plan Breakdown</h4>
-             <div className="flex justify-center gap-2 p-1 bg-zinc-100 dark:bg-zinc-800 rounded-full my-6 max-w-sm mx-auto">
+             <div className="flex justify-center gap-2 p-1 bg-zinc-100 dark:bg-surface-soft rounded-full my-6 max-w-sm mx-auto">
                 <button onClick={() => setPlan('rescue')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${plan === 'rescue' ? 'bg-white shadow' : ''}`}>Rescue Plan (Pass)</button>
                 <button onClick={() => setPlan('mastery')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${plan === 'mastery' ? 'bg-white shadow' : ''}`}>Mastery Plan (H1)</button>
             </div>
@@ -36,7 +36,7 @@ const DualTrackPlanner = () => {
                 {Object.entries(currentPlan).map(([component, value]) => (
                     <div key={component}>
                         <p className="font-bold text-sm">{component}</p>
-                        <div className="w-full h-24 bg-zinc-100 dark:bg-zinc-800 rounded-lg mt-2 flex items-end">
+                        <div className="w-full h-24 bg-zinc-100 dark:bg-surface-soft rounded-lg mt-2 flex items-end">
                             <motion.div className="w-full bg-sky-400 rounded-t-lg" initial={{height:0}} animate={{height: `${value*2}%`}}/>
                         </div>
                         <p className="text-xl font-bold mt-1">{value}%</p>
@@ -93,7 +93,7 @@ const OralBlueprintSliders = () => {
                                     <span className="text-[10px] text-zinc-400 dark:text-zinc-500">= {contribution} marks</span>
                                 </div>
                             </div>
-                            <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-900 rounded-full overflow-hidden mb-2">
+                            <div className="w-full h-1.5 bg-zinc-100 dark:bg-surface-paper rounded-full overflow-hidden mb-2">
                                 <motion.div
                                     className="h-full rounded-full bg-sky-400"
                                     animate={{ width: `${value}%` }}

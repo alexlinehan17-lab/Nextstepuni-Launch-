@@ -147,6 +147,14 @@
   --r-card: 20px; /* the raised sheet; bottom sheets; dialogs */
 }
 
+/* Named surfaces: the deliberate exceptions to the four (tokens.md, "Surfaces").
+   Each is one screen's own material, the same in both themes, never the ladder.
+   Onboarding's milestones use --nsu-orange through --setup-orange; the island's
+   map keeps its own paper (journey/paper/paper.css); the study receipt is paper. */
+:root {
+  --surface-room: #252721; /* the study room: the dark olive "ink" timer room and the mini timer */
+}
+
 /* The named type styles (tokens.md, "Type"): one typeface, sentence case.
    Headlines are regular weight, never bold; readouts keep the mono. */
 .t-display { font-family: "ABC Diatype", "DM Sans", system-ui, sans-serif; font-weight: 400; font-size: 35px; line-height: 39px; letter-spacing: -0.045em; text-wrap: balance; }
@@ -454,11 +462,14 @@
   color: var(--ink-primary);
 }
 
-.dark :is(.product-shell, .theme-compat) :where(.bg-white, .bg-zinc-50, .bg-stone-50, .bg-neutral-50) {
+/* An element that names its own dark surface (dark:bg-surface-canvas …) keeps
+   it: this layer only fills in for light-only classes. It used to turn every
+   page-level dark into a card-level one (audit C3). */
+.dark :is(.product-shell, .theme-compat) :where(.bg-white, .bg-zinc-50, .bg-stone-50, .bg-neutral-50):not([class*="dark:bg-"]) {
   background-color: var(--surface-paper) !important;
 }
 
-.dark :is(.product-shell, .theme-compat) :where(.bg-zinc-100, .bg-stone-100, .bg-neutral-100, .bg-gray-100) {
+.dark :is(.product-shell, .theme-compat) :where(.bg-zinc-100, .bg-stone-100, .bg-neutral-100, .bg-gray-100):not([class*="dark:bg-"]) {
   background-color: var(--surface-soft) !important;
 }
 
@@ -1008,6 +1019,16 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   color: #F54B68 !important;
 }
 
+/* Kobra scopes take the set. Their runtime's own page and card were #0a0a0a /
+   #171717 in dark, so on phones a Kobra screen was a different black from the
+   app (audit C3, C5). The doubled class outranks the runtime's `.dark .nsu-kobra`. */
+.nsu-kobra.nsu-kobra,
+.dark .nsu-kobra.nsu-kobra {
+  --background: var(--surface-canvas);
+  --card: var(--surface-paper);
+  --popover: var(--surface-raised);
+}
+
 /* Focus geometry and colour are owned by design/quiet-focus.css. */
 
 /*
@@ -1131,7 +1152,7 @@ html:not(.dark) [class*="text-[#A0978D]"] {
 }
 
 .dark .system-shimmer {
-  background: linear-gradient(100deg, #27272A 20%, #3F3F46 42%, #27272A 64%);
+  background: linear-gradient(100deg, var(--surface-soft) 20%, #3F3F46 42%, var(--surface-soft) 64%);
   background-size: 220% 100%;
 }
 
@@ -1291,17 +1312,17 @@ html:not(.dark) [class*="text-[#A0978D]"] {
 
 .dark .mark-bank-theme {
   color-scheme: dark;
-  --mb-canvas: #141414;
-  --mb-paper: #20201F;
-  --mb-raised: #2A2927;
-  --mb-soft: #252422;
+  --mb-canvas: var(--surface-canvas);
+  --mb-paper: var(--surface-paper);
+  --mb-raised: var(--surface-soft);
+  --mb-soft: var(--surface-soft);
   --mb-plate: #19302C;
-  --mb-ink: #F7F3ED;
+  --mb-ink: var(--ink-primary);
   --mb-ink-2: #E2DCD4;
-  --mb-muted: #B9B0A7;
-  --mb-label: #A59C93;
-  --mb-border: #55514C;
-  --mb-hairline: #3B3834;
+  --mb-muted: var(--ink-muted);
+  --mb-label: var(--ink-muted);
+  --mb-border: var(--outline-soft);
+  --mb-hairline: var(--hairline);
   --mb-success: #76C295;
   --mb-success-tint: #20372A;
   --mb-success-text: #AEE1BF;
@@ -1973,13 +1994,13 @@ html:not(.dark) [class*="text-[#A0978D]"] {
 }
 
 .dark .immersive-deck-theme {
-  --deck-paper: #242321;
-  --deck-soft: #2D2B28;
-  --deck-ink: #F7F3ED;
-  --deck-body: #DDD6CD;
-  --deck-muted: #B9B0A7;
+  --deck-paper: var(--surface-paper);
+  --deck-soft: var(--surface-soft);
+  --deck-ink: var(--ink-primary);
+  --deck-body: var(--ink-secondary);
+  --deck-muted: var(--ink-muted);
   --deck-label: #AAA096;
-  --deck-hairline: #56514B;
+  --deck-hairline: var(--outline-soft);
   --deck-shadow: 4px 5px 0 0 #080808;
   --deck-accent-text: var(--accent-text);
 }

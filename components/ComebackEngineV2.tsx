@@ -288,7 +288,7 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
               {draftPlan.signals.map((signal, index) => {
                 const tone = signalTone[signal.tone];
                 return (
-                  <div key={signal.id} className="min-h-40 bg-white p-6 dark:bg-[#202020]">
+                  <div key={signal.id} className="min-h-40 bg-white p-6 dark:bg-surface-paper">
                     <div className="mb-5 flex items-center gap-3">
                       <span className="font-mono text-[11px] font-bold text-accent">{String(index + 1).padStart(2, '0')}</span>
                       <span className="h-px w-8 bg-accent" />
@@ -315,7 +315,7 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
 
         {stage === 'plan' && (
           <MotionDiv key="plan" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }} className="grid gap-6 lg:grid-cols-[300px_1fr]">
-            <aside className="h-fit overflow-hidden rounded-[24px] border-2 border-accent bg-white shadow-[5px_5px_0_0_var(--nsu-orange)] dark:bg-[#202020]">
+            <aside className="h-fit overflow-hidden rounded-[24px] border-2 border-accent bg-white shadow-[5px_5px_0_0_var(--nsu-orange)] dark:bg-surface-paper">
               <div className="p-6">
                 <div className="mb-6 flex items-center gap-3">
                   <span className="font-mono text-[11px] font-bold text-accent">07</span>

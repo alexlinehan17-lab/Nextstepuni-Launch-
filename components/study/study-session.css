@@ -2,7 +2,7 @@
   --ss-paper: #fff; --ss-ink: #1a1a1a; --ss-muted: #706a64; --ss-rule: #dedbd7; --ss-orange: var(--accent-text);
   color: var(--ss-ink); background: var(--ss-paper); font-family: 'DM Sans', sans-serif;
 }
-.dark .study-session-page, .dark .ss-timer-view { --ss-paper: #202020; --ss-ink: #f7f5f1; --ss-muted: #b7b2ab; --ss-rule: #484540; --ss-orange: var(--accent-text); }
+.dark .study-session-page, .dark .ss-timer-view { --ss-paper: var(--surface-canvas); --ss-ink: var(--ink-primary); --ss-muted: var(--ink-muted); --ss-rule: var(--outline-soft); --ss-orange: var(--accent-text); }
 .study-session-page { min-height: 100vh; padding: 20px 28px 100px; }
 .ss-shell { max-width: 1120px; margin: 0 auto; container: study-setup / inline-size; }
 .ss-navigation { display: flex; align-items: center; justify-content: flex-start; gap: 26px; margin-bottom: 24px; }
@@ -136,7 +136,7 @@
 .ss-exit-panel .ss-keep-studying { border-color: var(--ss-ink); background: var(--ss-ink); color: var(--ss-paper); }
 .ss-exit-panel .ss-end-early:disabled { opacity: .45; cursor: not-allowed; }
 .ss-exit-panel .ss-discard { border-color: transparent; color: var(--ss-muted); font-size: 13px; }
-.dark .ss-timer-view .ss-exit-panel, .dark .ss-completion-view .ss-completion-panel { border-color: #484540; }
+.dark .ss-timer-view .ss-exit-panel, .dark .ss-completion-view .ss-completion-panel { border-color: var(--outline-soft); }
 
 @container study-setup (max-width: 700px) {
   .ss-layout { display: flex; flex-direction: column; gap: 0; }
@@ -157,7 +157,7 @@
 .ss-appearance-choice button[aria-checked=true] {background:var(--nsu-orange)}
 .ss-appearance-choice button[aria-checked=true] span {transform:translateX(23px)}
 .ss-timer-content.ss-room-ink,.ss-timer-content.ss-room-layers {position:relative;isolation:isolate;overflow:hidden;max-width:none;min-height:100dvh;padding:calc(28px + var(--safe-top)) max(28px,calc((100vw - 1120px)/2)) 30px}
-.ss-room-ink {--ss-paper:#252721;--ss-ink:#f6f0df;--ss-muted:#c8d0b8;--ss-rule:#e5ecd439;--ss-orange:var(--nsu-orange);background:var(--ss-paper);color:var(--ss-ink)}
+.ss-room-ink {--ss-paper:var(--surface-room);--ss-ink:#f6f0df;--ss-muted:#c8d0b8;--ss-rule:#e5ecd439;--ss-orange:var(--nsu-orange);background:var(--ss-paper);color:var(--ss-ink)}
 .ss-room-ink .ss-eyebrow {color:var(--ss-muted)}
 .ss-room-ink .ss-timer-subject {font-family:'DM Sans',sans-serif;font-size:19px;font-weight:400;letter-spacing:.025em}
 .ss-room-ink .ss-timer-subject i,.ss-room-ink .ss-timer-track>span {background:var(--nsu-orange)}

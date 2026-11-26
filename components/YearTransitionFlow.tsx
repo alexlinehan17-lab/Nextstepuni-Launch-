@@ -121,7 +121,7 @@ export const YearTransitionFlow: React.FC<YearTransitionFlowProps> = ({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 10 }}
             transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
-            className="frame-sheet bg-white dark:bg-zinc-900 rounded-t-[24px] sm:rounded-[24px] border-[1.5px] border-[#383838] shadow-[5px_5px_0_0_#383838] max-w-md w-full px-6 pt-6 [--frame-pad-bottom:1.5rem]"
+            className="frame-sheet bg-white dark:bg-surface-paper rounded-t-[24px] sm:rounded-[24px] border-[1.5px] border-[#383838] shadow-[5px_5px_0_0_#383838] max-w-md w-full px-6 pt-6 [--frame-pad-bottom:1.5rem]"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Close button */}

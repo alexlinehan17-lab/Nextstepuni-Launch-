@@ -57,7 +57,7 @@ const KudosButton: React.FC<KudosButtonProps> = ({
         disabled={!canSend}
         className={`p-2.5 rounded-xl backdrop-blur-sm border transition-colors ${
           canSend
-            ? 'bg-white/90 dark:bg-zinc-900/90 border-zinc-200 dark:border-zinc-800 hover:bg-white dark:hover:bg-zinc-800'
+            ? 'bg-white/90 dark:bg-zinc-900/90 border-zinc-200 dark:border-hairline hover:bg-white dark:hover:bg-surface-soft'
             : 'bg-white/50 dark:bg-zinc-900/50 border-zinc-200/50 dark:border-zinc-800/50 opacity-50'
         }`}
         title={canSend ? 'Send kudos' : 'Already sent kudos today'}
@@ -80,7 +80,7 @@ const KudosButton: React.FC<KudosButtonProps> = ({
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-              className="bg-white dark:bg-zinc-900 rounded-2xl p-5 w-full max-w-sm shadow-2xl"
+              className="bg-white dark:bg-surface-paper rounded-2xl p-5 w-full max-w-sm shadow-2xl"
               onClick={(e: React.MouseEvent) => e.stopPropagation()}
             >
               {sent ? (
@@ -98,7 +98,7 @@ const KudosButton: React.FC<KudosButtonProps> = ({
                 <>
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">Send Kudos</h3>
-                    <button onClick={() => setPickerOpen(false)} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800">
+                    <button onClick={() => setPickerOpen(false)} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft">
                       <X size={16} className="text-zinc-400" />
                     </button>
                   </div>

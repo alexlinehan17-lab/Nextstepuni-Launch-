@@ -236,8 +236,8 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext
 
   if (isLoading) {
     return (
-      <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5">
-        <div className="h-4 w-32 bg-zinc-200 dark:bg-zinc-800 rounded animate-pulse mb-4" />
+      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
+        <div className="h-4 w-32 bg-zinc-200 dark:bg-surface-soft rounded animate-pulse mb-4" />
         <div className="space-y-3">
           {[1, 2, 3].map(i => (
             <div key={i} className="h-12 bg-zinc-100 dark:bg-zinc-800/50 rounded-lg animate-pulse" />
@@ -248,13 +248,13 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext
   }
 
   return (
-    <div id="gc-events" className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-hidden">
+    <div id="gc-events" className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline overflow-hidden">
       {/* Header */}
       <div className="flex items-center justify-between px-5 pt-5 pb-3">
         <div className="flex items-center gap-2">
           <Calendar size={18} className="text-zinc-400" />
           <h3 className="text-sm font-bold text-zinc-800 dark:text-zinc-200">Key Dates & Events</h3>
-          <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400">
+          <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-zinc-100 dark:bg-surface-soft text-zinc-500 dark:text-zinc-400">
             {filteredEvents.length}
           </span>
         </div>
@@ -265,7 +265,7 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext
           <select
             value={yearFilter}
             onChange={e => setYearFilter(e.target.value as 'all' | EventYearGroup)}
-            className="px-2 py-1 rounded-md text-[10px] font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 border-0"
+            className="px-2 py-1 rounded-md text-[10px] font-bold bg-zinc-100 dark:bg-surface-soft text-zinc-700 dark:text-zinc-200 border-0"
           >
             <option value="all">All years</option>
             <option value="1st">1st Year</option>
@@ -296,7 +296,7 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext
             transition={{ duration: 0.2 }}
             className="overflow-hidden"
           >
-            <div className="px-5 pb-4 space-y-3 border-b border-zinc-100 dark:border-zinc-800">
+            <div className="px-5 pb-4 space-y-3 border-b border-zinc-100 dark:border-hairline">
               {/* Preset quick-picks */}
               <div>
                 <button
@@ -318,7 +318,7 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext
                         <button
                           key={preset.title}
                           onClick={() => handlePresetClick(preset)}
-                          className="flex items-center gap-1 px-2 py-1 rounded-md bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-[10px] font-medium text-zinc-600 dark:text-zinc-400 hover:border-zinc-400 dark:hover:border-zinc-500 transition-colors"
+                          className="flex items-center gap-1 px-2 py-1 rounded-md bg-zinc-50 dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 text-[10px] font-medium text-zinc-600 dark:text-zinc-400 hover:border-zinc-400 dark:hover:border-zinc-500 transition-colors"
                         >
                           <div className={`w-1.5 h-1.5 rounded-full ${cat.dotColor}`} />
                           {preset.title}
@@ -336,13 +336,13 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext
                   value={newTitle}
                   onChange={e => setNewTitle(e.target.value)}
                   placeholder="Event name"
-                  className="px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500"
+                  className="px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-surface-soft text-sm text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500"
                 />
                 <input
                   type="date"
                   value={newDate}
                   onChange={e => setNewDate(e.target.value)}
-                  className="px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-sm text-zinc-900 dark:text-white"
+                  className="px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-surface-soft text-sm text-zinc-900 dark:text-white"
                 />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -353,7 +353,7 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext
                   <select
                     value={newYearGroup}
                     onChange={e => setNewYearGroup(e.target.value as EventYearGroup)}
-                    className="w-full py-1.5 px-2 rounded-md text-[11px] font-bold bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-200"
+                    className="w-full py-1.5 px-2 rounded-md text-[11px] font-bold bg-white dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-200"
                   >
                     <option value="all">Everyone</option>
                     <option value="1st">1st Year</option>
@@ -375,8 +375,8 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext
                         onClick={() => setNewCategory(cat.id)}
                         className={`flex-1 py-1.5 rounded-md text-[10px] font-bold border transition-all ${
                           newCategory === cat.id
-                            ? `bg-zinc-50 dark:bg-zinc-800 border-zinc-400 dark:border-zinc-500 ${cat.color}`
-                            : 'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-400 dark:text-zinc-500'
+                            ? `bg-zinc-50 dark:bg-surface-soft border-zinc-400 dark:border-zinc-500 ${cat.color}`
+                            : 'bg-white dark:bg-surface-soft border-zinc-200 dark:border-zinc-700 text-zinc-400 dark:text-zinc-500'
                         }`}
                       >
                         {cat.label}

@@ -268,7 +268,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
   const leakedBefore = state.leakCardIds.includes(card.id);
   const autoSuggestModel = hasModel && (confidence === 'unsure' || leakedBefore);
 
-  const cardShell = 'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
+  const cardShell = 'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
 
   const selSubject = CURRICULUM_SUBJECTS.find(s => s.id === sel.subjectId);
   const selTopic = selSubject?.groups.flatMap(group => group.topics).find(topic => topic.id === sel.topicId);
@@ -386,7 +386,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
             onChange={e => setAnswer(e.target.value)}
             placeholder={card.answerKind === 'steps' ? 'Show your steps — exactly what you’d write…' : 'Write what you’d actually write in the exam…'}
             rows={8}
-            className="w-full rounded-xl border-2 p-3 text-sm leading-relaxed text-[#1A1A1A] dark:text-white bg-white dark:bg-zinc-800 focus:outline-none resize-y mb-5"
+            className="w-full rounded-xl border-2 p-3 text-sm leading-relaxed text-[#1A1A1A] dark:text-white bg-white dark:bg-surface-soft focus:outline-none resize-y mb-5"
             style={{ borderColor: COLORS.border }}
           />
         )}

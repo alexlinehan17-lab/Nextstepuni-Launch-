@@ -46,7 +46,7 @@ const AchievementToast: React.FC<AchievementToastProps> = ({ achievement, onDism
             type="button"
             onClick={onDismiss}
             aria-label={`Dismiss achievement: ${achievement.title}`}
-            className="group w-full overflow-hidden rounded-2xl border border-[#DEDAD3] bg-white text-left shadow-[0_10px_30px_rgba(28,25,23,0.10)] transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-[#C8C2B9] hover:shadow-[0_14px_34px_rgba(28,25,23,0.13)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/45 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-600"
+            className="group w-full overflow-hidden rounded-2xl border border-[#DEDAD3] bg-white text-left shadow-[0_10px_30px_rgba(28,25,23,0.10)] transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-[#C8C2B9] hover:shadow-[0_14px_34px_rgba(28,25,23,0.13)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/45 dark:border-zinc-700 dark:bg-surface-paper dark:hover:border-zinc-600"
           >
             <div className="flex items-center justify-between gap-4 px-4 pt-3.5 pb-2.5">
               <span className="flex min-w-0 items-center gap-2 text-[9px] font-bold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
@@ -59,7 +59,7 @@ const AchievementToast: React.FC<AchievementToastProps> = ({ achievement, onDism
                 </span>
               )}
             </div>
-            <div className="mx-4 h-px bg-[#ECE8E2] dark:bg-zinc-800" />
+            <div className="mx-4 h-px bg-[#ECE8E2] dark:bg-surface-soft" />
             <div className="flex items-center gap-4 px-4 pt-2.5 pb-3.5">
               <AchievementBadge achievementId={achievement.id} size={52} />
               <div className="min-w-0">

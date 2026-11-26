@@ -238,7 +238,7 @@ export default function ModuleShowcase({
                 key={item.id}
                 type="button"
                 onClick={() => onSelectCourse(item.id)}
-                className="world-ink-card group w-full rounded-xl border-[1.5px] bg-white p-4 text-left transition-transform active:scale-[0.985] dark:bg-zinc-900"
+                className="world-ink-card group w-full rounded-xl border-[1.5px] bg-white p-4 text-left transition-transform active:scale-[0.985] dark:bg-surface-paper"
                 style={{ borderColor: itemInProgress ? COLORS.accent : 'var(--module-card-border, #383838)' }}
               >
                 <div className="flex items-start gap-3">

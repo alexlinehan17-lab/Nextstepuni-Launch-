@@ -38,7 +38,7 @@ export const ChoiceControl: React.FC<ChoiceControlProps> = ({
     } ${
       selected
         ? 'border-[#1A1A1A] bg-accent text-white shadow-[4px_4px_0_0_#1A1A1A] hover:-translate-y-0.5 hover:shadow-[5px_5px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-none'
-        : 'border-[#E5E1DB] bg-white text-[var(--text-body)] hover:border-[#1A1A1A] hover:bg-zinc-50 active:translate-y-px dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800'
+        : 'border-[#E5E1DB] bg-white text-[var(--text-body)] hover:border-[#1A1A1A] hover:bg-zinc-50 active:translate-y-px dark:border-zinc-700 dark:bg-surface-paper dark:hover:bg-surface-soft'
     } ${className}`}
     style={style}
     {...rest}

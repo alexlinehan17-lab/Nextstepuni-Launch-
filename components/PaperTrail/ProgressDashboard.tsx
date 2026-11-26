@@ -63,7 +63,7 @@ interface Props {
 }
 
 const Stat: React.FC<{ icon: React.ReactNode; value: string; label: string }> = ({ icon, value, label }) => (
-  <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-3">
+  <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3 py-3">
     <span className="flex items-center gap-1.5 mb-1" style={{ color: '#9e9186' }}>{icon}</span>
     <span className="block text-[22px] font-bold leading-none tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{value}</span>
     <span className="block text-[11px] mt-1" style={{ color: '#7a7068' }}>{label}</span>
@@ -116,7 +116,7 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
       {nothingYet ? (
         /* Honest empty state — say what will appear here, then one primary CTA
            into the obvious first action (open a paper beside its scheme). */
-        <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-5 py-6 text-center">
+        <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-5 py-6 text-center">
           <span
             className="inline-flex w-11 h-11 rounded-xl items-center justify-center mb-3"
             style={{ backgroundColor: '#FDEEDF' }}
@@ -203,7 +203,7 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
                   <button
                     key={`${t.subjectId}-${t.subtopicId}`}
                     onClick={() => drill(t.subjectId, t.subtopicId)}
-                    className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2 text-left transition-transform active:translate-y-0.5 hover:border-accent"
+                    className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3 py-2 text-left transition-transform active:translate-y-0.5 hover:border-accent"
                   >
                     <span className="shrink-0 w-11 text-[14px] font-bold tabular-nums" style={{ color: t.avg < 50 ? ACCENT : INK, fontFamily: "'Source Serif 4', serif" }}>{t.avg}%</span>
                     <span className="flex-1 min-w-0">
@@ -233,7 +233,7 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
                     const share = Math.round((loss / lossTotal) * 100);
                     const r = GAP_ROUTE[g];
                     return (
-                      <div key={g} className="rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2.5">
+                      <div key={g} className="rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3 py-2.5">
                         <div className="flex items-center gap-3">
                           <span className="w-28 shrink-0 text-[12.5px] font-semibold truncate" style={{ color: INK }}>{GAP_LABEL[g]}</span>
                           <span className="flex-1 h-2.5 rounded-full overflow-hidden" style={{ backgroundColor: '#e0dbd4' }}>

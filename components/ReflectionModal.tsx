@@ -181,7 +181,7 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.96, opacity: 0 }}
             transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.75 }}
-            className="relative bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-md shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] overflow-y-auto"
+            className="relative bg-white dark:bg-surface-paper border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-md shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] overflow-y-auto"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Header */}
@@ -197,7 +197,7 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
               <button
                 onClick={onCancel}
                 aria-label="Close"
-                className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#CFC9C2] bg-white text-[#6F6861] transition-colors hover:border-[#383838] hover:text-[#1A1A1A] dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
+                className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#CFC9C2] bg-white text-[#6F6861] transition-colors hover:border-[#383838] hover:text-[#1A1A1A] dark:border-zinc-700 dark:bg-surface-soft dark:text-zinc-300"
               >
                 <X size={18} />
               </button>
@@ -236,7 +236,7 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
                         className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl border-2 text-left transition-[background-color,border-color,color,box-shadow] duration-200 ${
                           isSelected
                             ? 'border-[#1A1A1A] bg-accent text-white shadow-[4px_4px_0_0_#1A1A1A]'
-                            : 'border-[#E5E1DB] bg-white text-[#1C1917] hover:border-[#1A1A1A] dark:border-zinc-700 dark:bg-zinc-800 dark:text-white'
+                            : 'border-[#E5E1DB] bg-white text-[#1C1917] hover:border-[#1A1A1A] dark:border-zinc-700 dark:bg-surface-soft dark:text-white'
                         }`}
                       >
                         <div

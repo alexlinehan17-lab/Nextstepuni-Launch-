@@ -217,7 +217,7 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
         <h2 className="text-2xl font-semibold mb-4" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>Practise speaking</h2>
 
         {/* Prompt card */}
-        <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1a1a1a] dark:shadow-[4px_4px_0_0_#3f3f46] px-5 py-5 mb-4">
+        <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1a1a1a] dark:shadow-[4px_4px_0_0_#3f3f46] px-5 py-5 mb-4">
           <p className="text-[10.5px] font-bold uppercase tracking-[0.12em] mb-2" style={{ color: '#9e9186' }}>Prompt</p>
           <p className="text-[16px] leading-relaxed" style={{ color: INK }}>{prompt.en}</p>
           {prompt.ga && <p className="text-[14px] italic mt-2" style={{ color: '#5a5550' }}>{prompt.ga}</p>}
@@ -231,7 +231,7 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
         </div>
 
         {/* Recorder */}
-        <div className="rounded-2xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-5 py-5 mb-4 text-center">
+        <div className="rounded-2xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-surface-paper px-5 py-5 mb-4 text-center">
           <p className="text-[12.5px] mb-3" style={{ color: '#7a7068' }}>Say your answer out loud, then play it back. Recordings stay on this device — never uploaded. Your latest and previous take are kept so you can hear the difference.</p>
           {!recording ? (
             <button onClick={startRecording} className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5" style={{ backgroundColor: SUCCESS, boxShadow: `0 4px 0 ${SUCCESS_DARK}` }}>
@@ -315,7 +315,7 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
             <button
               key={c.id}
               onClick={() => openComponent(c)}
-              className="w-full text-left rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[3px_3px_0_0_#1a1a1a] dark:shadow-[3px_3px_0_0_#3f3f46] px-4 py-3.5 transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
+              className="w-full text-left rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[3px_3px_0_0_#1a1a1a] dark:shadow-[3px_3px_0_0_#3f3f46] px-4 py-3.5 transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
             >
               <div className="flex items-start justify-between gap-3">
                 <span className="min-w-0">

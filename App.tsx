@@ -93,7 +93,7 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
   return createPortal(
     <nav
       aria-label={mobileAppDesign ? 'Main navigation' : undefined}
-      className="editorial-bottom-nav frame-foot fixed bottom-0 left-0 right-0 z-[var(--z-tabbar)] md:hidden bg-white dark:bg-zinc-900 border-t-[1.5px] border-[#383838] dark:border-zinc-700"
+      className="editorial-bottom-nav frame-foot fixed bottom-0 left-0 right-0 z-[var(--z-tabbar)] md:hidden bg-white dark:bg-surface-paper border-t-[1.5px] border-[#383838] dark:border-zinc-700"
     >
       <div className="mx-auto flex h-16 max-w-md items-center justify-around px-1">
         {tabs.map((tab) => {
@@ -935,7 +935,7 @@ const App: React.FC = () => {
     <SettingsContext.Provider value={{ settings, updateSetting, unlockedThemes, unlockedCardStyles }}>
     <StudySessionProvider uid={studyUid} userProgress={userProgress} allCourses={studentCourses} roomOpen={viewState === 'study-session'} identityReady={authResolved}>
     <OfflineBanner />
-    <div className="min-h-screen bg-white dark:bg-zinc-950">
+    <div className="min-h-screen bg-white dark:bg-surface-canvas">
       {/* Achievements remain available while account controls live in the sidebar. */}
       {user && userProgressReady && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
         <div className="frame-float frame-float-top frame-float-left md:top-auto md:left-auto md:bottom-[calc(24px+var(--edge-bottom))] md:right-[calc(24px+var(--safe-right))] z-[150] pointer-events-none">

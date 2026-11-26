@@ -34,7 +34,7 @@
 .guide-next { border:1.5px solid var(--guide-ink); background:var(--nsu-orange); color:#232720; box-shadow:2px 3px 0 var(--guide-ink); }
 .site-guide button:focus-visible { outline:2px solid var(--accent-dark-hex); outline-offset:4px; }
 .guide-next:hover,.guide-open-page:hover { transform:translateY(-1px); }
-.dark .site-guide { --guide-paper:#232720; --guide-ink:#f7f5ed; --guide-muted:#b9bdaf; --guide-line:#4b5146; }
+.dark .site-guide { --guide-paper:var(--surface-paper); --guide-ink:var(--ink-primary); --guide-muted:var(--ink-muted); --guide-line:var(--outline-soft); }
 .dark .guide-copy li>span:first-child { color:#ff9a52; }
 @media(max-width:767px) {
   .site-guide { --frame-gap:12px; }

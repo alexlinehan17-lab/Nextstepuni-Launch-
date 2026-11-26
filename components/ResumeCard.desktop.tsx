@@ -66,7 +66,7 @@ const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectMo
   return (
     <button
       onClick={go}
-      className="group mb-4 flex w-full items-center justify-between gap-5 rounded-2xl border-[1.5px] border-[#383838] bg-white px-5 py-4 text-left transition-transform hover:-translate-y-0.5 dark:border-zinc-700 dark:bg-zinc-900"
+      className="group mb-4 flex w-full items-center justify-between gap-5 rounded-2xl border-[1.5px] border-[#383838] bg-white px-5 py-4 text-left transition-transform hover:-translate-y-0.5 dark:border-zinc-700 dark:bg-surface-paper"
     >
       <div className="min-w-0 flex-1">
         <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#A8A29E] dark:text-zinc-500">

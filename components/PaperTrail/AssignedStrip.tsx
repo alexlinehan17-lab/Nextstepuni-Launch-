@@ -52,7 +52,7 @@ const AssignedStrip: React.FC<Props> = ({ uid, school, completions = {} }) => {
   };
 
   return (
-    <div className="w-full rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3.5 mb-5">
+    <div className="w-full rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-4 py-3.5 mb-5">
       <p className="text-[10.5px] font-bold uppercase tracking-[0.12em] mb-2 flex items-center gap-1.5" style={{ color: '#9e9186' }}>
         <ClipboardList size={13} /> Set by your school
       </p>

@@ -51,14 +51,14 @@ interface GCDashboardProps {
 // ─── Shimmer skeleton ────────────────────────────────────────────────────────
 
 const SkeletonPulse: React.FC<{ className?: string; style?: React.CSSProperties }> = ({ className = '', style }) => (
-  <div className={`rounded-xl bg-zinc-200 dark:bg-zinc-800 animate-[shine_1.5s_ease-in-out_infinite] ${className}`} style={style} />
+  <div className={`rounded-xl bg-zinc-200 dark:bg-surface-soft animate-[shine_1.5s_ease-in-out_infinite] ${className}`} style={style} />
 );
 
 const LoadingSkeleton: React.FC = () => (
   <div className="space-y-6 p-8">
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
       {Array.from({ length: 3 }).map((_, i) => (
-        <div key={i} className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5 space-y-3">
+        <div key={i} className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5 space-y-3">
           <SkeletonPulse className="h-3 w-20" />
           <SkeletonPulse className="h-12 w-24" />
           <SkeletonPulse className="h-3 w-32" />
@@ -67,7 +67,7 @@ const LoadingSkeleton: React.FC = () => (
     </div>
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
       <div className="lg:col-span-2 space-y-5">
-        <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5 space-y-4">
+        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5 space-y-4">
           <SkeletonPulse className="h-4 w-40" />
           <div className="flex items-end gap-4 h-32">
             {[60, 40, 80, 50].map((h, i) => (
@@ -77,7 +77,7 @@ const LoadingSkeleton: React.FC = () => (
         </div>
       </div>
       <div className="space-y-5">
-        <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5 space-y-3">
+        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5 space-y-3">
           <SkeletonPulse className="h-4 w-28" />
           {Array.from({ length: 4 }).map((_, i) => (
             <div key={i} className="flex items-center gap-3">
@@ -464,15 +464,15 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-zinc-950 relative overflow-x-hidden">
+    <div className="min-h-screen bg-white dark:bg-surface-canvas relative overflow-x-hidden">
       {/* ─── Sidebar (exact student dashboard replica) ───────────────────── */}
       <aside
-        className={`frame-page frame-foot hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r border-zinc-200 dark:border-zinc-800 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
+        className={`frame-page frame-foot hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r border-zinc-200 dark:border-hairline overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
       >
         {/* Avatar row — click to toggle */}
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="flex items-center gap-3 px-3 py-4 w-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+          className="flex items-center gap-3 px-3 py-4 w-full hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
         >
           <div className="w-9 h-9 rounded-lg overflow-hidden shrink-0 bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center">
             <Avatar seed={avatarSeed} alt="Avatar" className="w-full h-full object-cover" />
@@ -488,7 +488,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             <button
               key={item.id}
               onClick={() => handleNavClick(item.id)}
-              className={`flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors ${item.active ? 'bg-zinc-100 dark:bg-zinc-800' : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'}`}
+              className={`flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors ${item.active ? 'bg-zinc-100 dark:bg-surface-soft' : 'hover:bg-zinc-100 dark:hover:bg-surface-soft'}`}
             >
               <div className="shrink-0 flex items-center justify-center w-[18px]">
                 <item.icon size={18} strokeWidth={1.5} className="text-zinc-600 dark:text-zinc-400" />
@@ -501,11 +501,11 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
         </nav>
 
         {/* Bottom section */}
-        <div className="border-t border-zinc-200 dark:border-zinc-800 mx-2 pt-2 flex flex-col gap-1">
+        <div className="border-t border-zinc-200 dark:border-hairline mx-2 pt-2 flex flex-col gap-1">
           {/* Log Out */}
           <button
             onClick={onLogout}
-            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
           >
             <div className="shrink-0 flex items-center justify-center w-[18px]">
               <LogOut size={18} strokeWidth={1.5} className="text-rose-500" />
@@ -519,7 +519,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
         {/* Collapse toggle */}
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="flex items-center gap-3 px-2.5 py-3 mx-2 mb-3 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+          className="flex items-center gap-3 px-2.5 py-3 mx-2 mb-3 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
         >
           <div className={`shrink-0 flex items-center justify-center w-[18px] transition-transform duration-300 ${sidebarOpen ? '' : 'rotate-180'}`}>
             <PanelLeft size={18} strokeWidth={1.5} className="text-zinc-400 dark:text-zinc-500" />
@@ -531,7 +531,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       </aside>
 
       {/* ─── Mobile Header ───────────────────────────────────────────── */}
-      <div className="frame-bar [--frame-pad-top:0.75rem] md:hidden flex items-center justify-between px-4 pb-3 border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
+      <div className="frame-bar [--frame-pad-top:0.75rem] md:hidden flex items-center justify-between px-4 pb-3 border-b border-zinc-200 dark:border-hairline bg-white dark:bg-surface-paper">
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-lg overflow-hidden bg-zinc-200 dark:bg-zinc-700">
             <Avatar seed={avatarSeed} alt="Avatar" className="w-full h-full object-cover" />
@@ -562,7 +562,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             )}
             <button
               onClick={() => setReloadVersion(v => v + 1)}
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-medium text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-medium text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
             >
               <RefreshCw size={12} />
               Refresh
@@ -624,7 +624,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="frame-foot fixed top-0 right-0 z-50 h-[100dvh] w-full max-w-2xl bg-white dark:bg-zinc-900 shadow-2xl overflow-y-auto border-l border-zinc-200 dark:border-zinc-800"
+              className="frame-foot fixed top-0 right-0 z-50 h-[100dvh] w-full max-w-2xl bg-white dark:bg-surface-paper shadow-2xl overflow-y-auto border-l border-zinc-200 dark:border-hairline"
             >
               {/* Keyed by uid so switching students remounts the tray. Without
                   it React reuses the instance and the previous student's local
@@ -648,7 +648,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       {/* Delete confirmation modal */}
       {deleteTarget && (
         <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isDeleting && closeDeleteDialog()}>
-          <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl" onClick={e => e.stopPropagation()}>
+          <div className="bg-white dark:bg-surface-paper rounded-2xl border border-zinc-200 dark:border-hairline p-6 max-w-sm w-full shadow-2xl" onClick={e => e.stopPropagation()}>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl bg-red-100 dark:bg-red-500/10 flex items-center justify-center text-red-500">
                 <AlertTriangle size={20} />
@@ -670,13 +670,13 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
               value={deleteVerificationPassword}
               onChange={event => setDeleteVerificationPassword(event.target.value)}
               autoComplete="current-password"
-              className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 px-4 py-3 text-sm text-zinc-900 dark:text-white mb-5 outline-none focus:border-red-400"
+              className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-surface-soft px-4 py-3 text-sm text-zinc-900 dark:text-white mb-5 outline-none focus:border-red-400"
             />
             <div className="flex gap-3">
               <button
                 onClick={closeDeleteDialog}
                 disabled={isDeleting}
-                className="flex-1 px-4 py-2.5 text-sm font-medium rounded-xl border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors disabled:opacity-50"
+                className="flex-1 px-4 py-2.5 text-sm font-medium rounded-xl border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-surface-soft transition-colors disabled:opacity-50"
               >
                 Cancel
               </button>
@@ -695,7 +695,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       {/* Password reset verification modal */}
       {resetTargetUid && (
         <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isResettingPassword && closeResetDialog()}>
-          <div role="dialog" aria-modal="true" aria-labelledby="reset-student-title" className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl" onClick={event => event.stopPropagation()}>
+          <div role="dialog" aria-modal="true" aria-labelledby="reset-student-title" className="bg-white dark:bg-surface-paper rounded-2xl border border-zinc-200 dark:border-hairline p-6 max-w-sm w-full shadow-2xl" onClick={event => event.stopPropagation()}>
             <h3 id="reset-student-title" className="font-semibold text-zinc-900 dark:text-white">Reset student password?</h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 mb-4">This ends the student's other sessions and creates a temporary password that expires after 24 hours.</p>
             <label className="block text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-2" htmlFor="reset-verification-password">Re-enter your password</label>
@@ -706,7 +706,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
               onChange={event => setResetVerificationPassword(event.target.value)}
               autoFocus
               autoComplete="current-password"
-              className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 px-4 py-3 text-sm text-zinc-900 dark:text-white outline-none focus:border-accent"
+              className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-surface-soft px-4 py-3 text-sm text-zinc-900 dark:text-white outline-none focus:border-accent"
             />
             <div className="flex gap-3 mt-5">
               <button type="button" disabled={isResettingPassword} onClick={closeResetDialog} className="flex-1 px-4 py-2.5 text-sm rounded-xl border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300">Cancel</button>
@@ -721,12 +721,12 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       {/* Password reset result modal */}
       {resetResult && (
         <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => setResetResult(null)}>
-          <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl" onClick={e => e.stopPropagation()}>
+          <div className="bg-white dark:bg-surface-paper rounded-2xl border border-zinc-200 dark:border-hairline p-6 max-w-sm w-full shadow-2xl" onClick={e => e.stopPropagation()}>
             <h3 className="font-semibold text-zinc-900 dark:text-white mb-2">Password Reset</h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
               Temporary password for <span className="font-semibold text-zinc-900 dark:text-white">{resetResult.name}</span>:
             </p>
-            <div className="bg-zinc-50 dark:bg-zinc-800 rounded-xl p-4 mb-4 text-center">
+            <div className="bg-zinc-50 dark:bg-surface-soft rounded-xl p-4 mb-4 text-center">
               <code className="text-lg font-mono font-bold tracking-widest text-zinc-900 dark:text-white select-all">{resetResult.password}</code>
             </div>
             <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-6">

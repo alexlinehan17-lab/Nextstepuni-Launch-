@@ -61,7 +61,7 @@
   min-height: 0; overflow: auto; overscroll-behavior: contain; touch-action: pan-x pan-y;
   background: #E9E7E2; cursor: zoom-in; outline: none;
 }
-.dark .mb-figzoom-stage { background: #0F0F0E; }
+.dark .mb-figzoom-stage { background: var(--surface-soft); }
 .mb-figzoom-stage[data-zoomed="true"] { cursor: grab; }
 .mb-figzoom-stage[data-zoomed="true"]:active { cursor: grabbing; }
 .mb-figzoom-stage:focus-visible { box-shadow: inset 0 0 0 2px var(--mb-ink); }

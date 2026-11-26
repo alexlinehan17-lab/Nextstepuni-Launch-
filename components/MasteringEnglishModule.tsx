@@ -165,7 +165,7 @@ const ShowDontTellConverter = () => {
                   onChange={(e) => handleInputChange(e.target.value)}
                   placeholder="Rewrite the sentence using sensory details, actions, and specific imagery..."
                   rows={3}
-                  className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none resize-none" style={{ border: '1.5px solid #E7E5E4' }}
+                  className="w-full bg-white dark:bg-surface-soft rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none resize-none" style={{ border: '1.5px solid #E7E5E4' }}
                 />
                 <button
                   onClick={handleReveal}

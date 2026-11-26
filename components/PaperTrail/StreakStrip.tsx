@@ -35,7 +35,7 @@ const StreakStrip: React.FC<Props> = ({ uid, now, onOpen }) => {
       tabIndex={onOpen ? 0 : undefined}
       onClick={onOpen}
       onKeyDown={onOpen ? e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onOpen(); } } : undefined}
-      className={`w-full flex items-center gap-3 rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 mb-5${onOpen ? ' text-left cursor-pointer transition-transform active:translate-y-0.5 hover:-translate-y-0.5' : ''}`}
+      className={`w-full flex items-center gap-3 rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-4 py-3 mb-5${onOpen ? ' text-left cursor-pointer transition-transform active:translate-y-0.5 hover:-translate-y-0.5' : ''}`}
     >
       <span className="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#FDEEDF' }}>
         <Flame size={19} style={{ color: ACCENT }} />

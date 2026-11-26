@@ -106,7 +106,7 @@ const PointsCard: React.FC<{
         <span className={`${numberSize} font-apercu font-black ${numberColorClass}`} style={{ ...numberColorStyle, letterSpacing: '-0.02em' }}>{points}</span>
         <span className="text-sm font-medium" style={{ color: '#C4C0BC' }}>/625</span>
       </div>
-      <div className="w-full h-[6px] rounded-full mt-3 overflow-hidden bg-surface-soft dark:bg-zinc-800">
+      <div className="w-full h-[6px] rounded-full mt-3 overflow-hidden bg-surface-soft dark:bg-surface-soft">
         <MotionDiv
           className="h-full rounded-full"
           style={{ backgroundColor: accentColor }}
@@ -310,7 +310,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
       <div className="flex justify-end">
         <button
           onClick={onOpenSettings}
-          className="p-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800"
+          className="p-2.5 rounded-lg bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline transition-colors hover:bg-zinc-50 dark:hover:bg-surface-soft"
           title="Edit subjects"
         >
           <Settings size={16} className="text-zinc-500 dark:text-zinc-400" />
@@ -319,7 +319,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
 
       {/* B. Points Summary — Mercury style: white card, confident type, no decoration */}
       <div
-        className="rounded-2xl px-6 py-5 bg-white dark:bg-zinc-900 border border-hairline dark:border-zinc-800"
+        className="rounded-2xl px-6 py-5 bg-white dark:bg-surface-paper border border-hairline dark:border-hairline"
         style={{ boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
       >
         <div className={`grid gap-6 ${activeTab === 'what-if' ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-2'}`}>
@@ -331,7 +331,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
         </div>
         {/* Target course from Future Finder */}
         {ffPicks.length > 0 && (
-          <div className="mt-4 pt-4 flex items-center justify-between border-t border-hairline dark:border-zinc-800">
+          <div className="mt-4 pt-4 flex items-center justify-between border-t border-hairline dark:border-hairline">
             <div className="flex-1 min-w-0">
               <p className="text-[10px] font-bold uppercase tracking-widest text-[#A8A29E] dark:text-zinc-500">Your #1 pick</p>
               <p className="text-sm font-semibold truncate text-[#1A1A1A] dark:text-white">{ffPicks[0].title}</p>
@@ -350,7 +350,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
         )}
         {/* Gap indicator */}
         {targetAnalysis.total > currentAnalysis.total && !ffPicks.length && (
-          <div className="mt-4 pt-4 flex items-center justify-between border-t border-hairline dark:border-zinc-800">
+          <div className="mt-4 pt-4 flex items-center justify-between border-t border-hairline dark:border-hairline">
             <span className="text-xs font-medium text-[#78716C] dark:text-zinc-400">Gap to target</span>
             <div className="flex items-center gap-2">
               <span className="text-base font-black" style={{ color: COLORS.accent }}>+{targetAnalysis.total - currentAnalysis.total} pts</span>
@@ -449,7 +449,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: idx * 0.04 }}
-                  className={`py-3 px-1 ${idx < currentAnalysis.bestSix.length - 1 ? 'border-b border-hairline dark:border-zinc-800' : ''}`}
+                  className={`py-3 px-1 ${idx < currentAnalysis.bestSix.length - 1 ? 'border-b border-hairline dark:border-hairline' : ''}`}
                 >
                   <div className="flex items-center gap-3 mb-1.5">
                     <span className="text-[11px] font-bold w-4 text-right" style={{ color: '#C4C0BC' }}>{idx + 1}</span>
@@ -469,7 +469,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                     )}
                   </div>
                   {/* Contribution bar */}
-                  <div className="ml-[30px] h-1 rounded-full overflow-hidden bg-surface-soft dark:bg-zinc-800">
+                  <div className="ml-[30px] h-1 rounded-full overflow-hidden bg-surface-soft dark:bg-surface-soft">
                     <MotionDiv
                       className="h-full rounded-full"
                       style={{ backgroundColor: getSubjectHex(sub.subjectName), opacity: 0.6 }}
@@ -486,9 +486,9 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
             {currentAnalysis.outside.length > 0 && (
               <>
                 <div className="flex items-center gap-3 py-3 px-1">
-                  <div className="flex-1 h-px bg-zinc-200 dark:bg-zinc-800" />
+                  <div className="flex-1 h-px bg-zinc-200 dark:bg-surface-soft" />
                   <p className="text-[10px] text-zinc-300 dark:text-zinc-600 uppercase tracking-widest">Outside {bestSixLabel}</p>
-                  <div className="flex-1 h-px bg-zinc-200 dark:bg-zinc-800" />
+                  <div className="flex-1 h-px bg-zinc-200 dark:bg-surface-soft" />
                 </div>
                 {currentAnalysis.outside.map((sub, idx) => {
                   const profileSub = simSubjects.find(s => s.subjectName === sub.subjectName);
@@ -557,7 +557,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: idx * 0.03 }}
-                  className="py-4 border-b border-zinc-100 dark:border-zinc-800"
+                  className="py-4 border-b border-zinc-100 dark:border-hairline"
                 >
                   <div className="flex items-center gap-2 mb-3">
                     <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200 flex-1">{sub.subjectName}</p>
@@ -630,7 +630,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                   {biggestGains.map((gain, idx) => (
                     <div
                       key={gain.subjectName}
-                      className={`flex items-center gap-3 py-2.5 ${idx < biggestGains.length - 1 ? 'border-b border-hairline dark:border-zinc-800' : ''}`}
+                      className={`flex items-center gap-3 py-2.5 ${idx < biggestGains.length - 1 ? 'border-b border-hairline dark:border-hairline' : ''}`}
                     >
                       {idx === 0 ? (
                         <span className="text-[9px] font-bold uppercase px-1.5 py-0.5 rounded" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accent }}>Best</span>
@@ -669,7 +669,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
               const gap = Math.max(0, course.typicalPoints - whatIfAnalysis.total);
               const isReachable = gap === 0;
               return (
-                <div key={course.code} className="flex items-center gap-3 py-2.5 border-b border-zinc-100 dark:border-zinc-800 last:border-b-0">
+                <div key={course.code} className="flex items-center gap-3 py-2.5 border-b border-zinc-100 dark:border-hairline last:border-b-0">
                   <div className="flex-1 min-w-0">
                     <p className="text-xs font-medium text-zinc-800 dark:text-zinc-200 truncate">{course.title}</p>
                     <p className="text-[10px] text-zinc-400">{course.institution} — {course.typicalPoints} pts</p>

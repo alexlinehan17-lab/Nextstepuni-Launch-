@@ -32,7 +32,7 @@ interface DiveInProps {
 }
 
 const DiveIn: React.FC<DiveInProps> = ({ onCreateAccount, onBackToLanding }) => (
-  <div className="theme-compat fixed inset-0 z-[60] overflow-y-auto bg-white dark:bg-zinc-950">
+  <div className="theme-compat fixed inset-0 z-[60] overflow-y-auto bg-white dark:bg-surface-canvas">
     <main className="mx-auto flex min-h-full w-full max-w-xl flex-col justify-center px-7 py-12 sm:px-6">
       <MotionDiv
         initial={{ opacity: 0, y: 14 }}

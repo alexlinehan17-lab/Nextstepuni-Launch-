@@ -213,7 +213,7 @@ function ResultsPhase({
       {onOpenCareerPaths && (
         <button
           onClick={() => onOpenCareerPaths(results.flatMap((r) => r.course.careerPaths))}
-          className="w-full mb-6 flex items-center gap-3 rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 p-4 text-left transition-transform active:translate-y-0.5 hover:shadow-md"
+          className="w-full mb-6 flex items-center gap-3 rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper p-4 text-left transition-transform active:translate-y-0.5 hover:shadow-md"
         >
           <span className="w-11 h-11 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: '#0E7C6B' }}>
             <Briefcase size={20} className="text-white" />
@@ -254,7 +254,7 @@ function ResultsPhase({
         <select
           value={regionFilter}
           onChange={e => onRegionFilterChange(e.target.value)}
-          className="px-3 py-1.5 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-xs font-semibold text-zinc-700 dark:text-zinc-300 border-none focus:outline-none focus:ring-2 focus:ring-zinc-400/50"
+          className="px-3 py-1.5 rounded-lg bg-zinc-100 dark:bg-surface-soft text-xs font-semibold text-zinc-700 dark:text-zinc-300 border-none focus:outline-none focus:ring-2 focus:ring-zinc-400/50"
         >
           <option value="">All regions</option>
           {Object.entries(REGIONS).map(([key, label]) => (
@@ -265,7 +265,7 @@ function ResultsPhase({
 
       {/* Compare bar */}
       {compareCourses.length > 0 && (
-        <div className="mb-4 p-3 rounded-xl border flex items-center justify-between bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.2)' }}>
+        <div className="mb-4 p-3 rounded-xl border flex items-center justify-between bg-white dark:bg-surface-paper" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.2)' }}>
           <span className="text-xs font-semibold" style={{ color: COLORS.accent }}>
             {compareCourses.length} course{compareCourses.length > 1 ? 's' : ''} selected for comparison
           </span>
@@ -273,7 +273,7 @@ function ResultsPhase({
             onClick={onCompare}
             disabled={compareCourses.length < 2}
             className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-colors ${
-              compareCourses.length >= 2 ? 'text-white' : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400 cursor-not-allowed'
+              compareCourses.length >= 2 ? 'text-white' : 'bg-zinc-200 dark:bg-surface-soft text-zinc-400 cursor-not-allowed'
             }`}
             style={compareCourses.length >= 2 ? { backgroundColor: COLORS.accent } : undefined}
           >
@@ -328,7 +328,7 @@ function ResultCard({
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: rank * 0.04, duration: 0.3 }}
-      className="group rounded-xl border hover:shadow-md cursor-pointer overflow-hidden transition-all bg-white dark:bg-zinc-900"
+      className="group rounded-xl border hover:shadow-md cursor-pointer overflow-hidden transition-all bg-white dark:bg-surface-paper"
       style={{ borderColor: 'rgba(0,0,0,0.07)' }}
       onClick={onClick}
     >
@@ -339,7 +339,7 @@ function ResultCard({
             <div className="flex items-center gap-2 mb-1 flex-wrap">
               <span className="text-xs font-bold" style={{ color: COLORS.accent }}>#{rank}</span>
               <span className="text-xs font-mono text-zinc-400 dark:text-zinc-500">{c.code}</span>
-              <span className="px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-xs font-semibold text-zinc-500 dark:text-zinc-400">Level {c.level}</span>
+              <span className="px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-surface-soft text-xs font-semibold text-zinc-500 dark:text-zinc-400">Level {c.level}</span>
               {result.reach && (
                 <span className="px-2 py-0.5 rounded-full text-xs font-semibold" style={{ backgroundColor: result.reach.bg, color: result.reach.color }}>{result.reach.label}</span>
               )}
@@ -400,7 +400,7 @@ function ResultCard({
           <button
             onClick={onToggleSave}
             className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-colors border ${
-              isSaved ? 'bg-transparent border-zinc-300 dark:border-zinc-600' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800'
+              isSaved ? 'bg-transparent border-zinc-300 dark:border-zinc-600' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-surface-soft'
             }`}
             style={isSaved ? { color: COLORS.accent } : undefined}
           >
@@ -410,7 +410,7 @@ function ResultCard({
           <button
             onClick={onToggleCompare}
             className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-colors border ${
-              isCompared ? 'bg-transparent border-zinc-300 dark:border-zinc-600' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800'
+              isCompared ? 'bg-transparent border-zinc-300 dark:border-zinc-600' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-surface-soft'
             }`}
             style={isCompared ? { color: COLORS.accent } : undefined}
           >
@@ -421,7 +421,7 @@ function ResultCard({
             href={getCoursePageUrl(c)}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-transparent border border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
+            className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-transparent border border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-surface-soft transition-colors"
           >
             <ArrowUpRight size={12} />
             College page
@@ -456,7 +456,7 @@ function DetailPhase({
         <ChevronLeft size={16} /> Back to results
       </button>
 
-      <div className="bg-white dark:bg-zinc-900 overflow-hidden" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: '12px' }}>
+      <div className="bg-white dark:bg-surface-paper overflow-hidden" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: '12px' }}>
         {/* Header */}
         <div className="p-6" style={{ backgroundColor: COLORS.accent }}>
           <div className="flex items-center gap-2 mb-2 flex-wrap">
@@ -497,7 +497,7 @@ function DetailPhase({
 
           {/* Your Points section */}
           {c.typicalPoints === 0 ? (
-            <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.15)' }}>
+            <div className="p-4 rounded-xl border bg-white dark:bg-surface-paper" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.15)' }}>
               <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Entry Requirements</h4>
               <p className="text-sm text-zinc-700 dark:text-zinc-300">
                 {c.pathwayType === 'apprenticeship'
@@ -506,7 +506,7 @@ function DetailPhase({
               </p>
             </div>
           ) : autoPoints > 0 ? (
-            <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.15)' }}>
+            <div className="p-4 rounded-xl border bg-white dark:bg-surface-paper" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.15)' }}>
               <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Your Points</h4>
               <div className="grid grid-cols-3 gap-3 text-center">
                 <div>
@@ -549,7 +549,7 @@ function DetailPhase({
             <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">Career Paths</h4>
             <div className="flex flex-wrap gap-2">
               {c.careerPaths.map(cp => (
-                <span key={cp} className="px-3 py-1.5 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-sm text-zinc-700 dark:text-zinc-300 font-medium">{cp}</span>
+                <span key={cp} className="px-3 py-1.5 rounded-lg bg-zinc-100 dark:bg-surface-soft text-sm text-zinc-700 dark:text-zinc-300 font-medium">{cp}</span>
               ))}
             </div>
           </div>
@@ -559,13 +559,13 @@ function DetailPhase({
             <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">Subjects That Help</h4>
             <div className="flex flex-wrap gap-2">
               {c.subjectBonus.map(sub => (
-                <span key={sub} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700" style={{ color: COLORS.accent }}>{sub}</span>
+                <span key={sub} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-white dark:bg-surface-paper border border-zinc-200 dark:border-zinc-700" style={{ color: COLORS.accent }}>{sub}</span>
               ))}
             </div>
           </div>
 
           {/* Why this suits you — show up to 5 reasons */}
-          <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.15)' }}>
+          <div className="p-4 rounded-xl border bg-white dark:bg-surface-paper" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.15)' }}>
             <h4 className="text-sm font-bold mb-3 flex items-center gap-2" style={{ color: COLORS.accent }}>
               <Heart size={16} style={{ color: COLORS.accent }} /> Why This Suits You
             </h4>
@@ -580,7 +580,7 @@ function DetailPhase({
           </div>
 
           {/* How we scored this */}
-          <div className="p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <div className="p-4 rounded-xl border border-zinc-200 dark:border-hairline">
             <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-4">How We Scored This</h4>
             <div className="space-y-3">
               <ScoreBar label={scoreBreakdownLabels.interest} score={result.scoreBreakdown.interestScore} />
@@ -593,7 +593,7 @@ function DetailPhase({
           <div className="flex flex-wrap gap-2 pt-2">
             <MotionButton whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={onToggleSave}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold transition-colors border ${
-                isSaved ? 'text-white' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800'
+                isSaved ? 'text-white' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-surface-soft'
               }`}
               style={isSaved ? { backgroundColor: COLORS.accent, borderColor: COLORS.accent } : undefined}>
               {isSaved ? <Check size={16} /> : <BookmarkPlus size={16} />}
@@ -601,7 +601,7 @@ function DetailPhase({
             </MotionButton>
             <MotionButton whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={onToggleCompare}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold transition-colors border ${
-                isCompared ? 'text-white' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800'
+                isCompared ? 'text-white' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-surface-soft'
               }`}
               style={isCompared ? { backgroundColor: COLORS.accent, borderColor: COLORS.accent } : undefined}>
               <SlidersHorizontal size={16} />
@@ -611,7 +611,7 @@ function DetailPhase({
               href={getCoursePageUrl(c)}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-transparent border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-transparent border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-surface-soft transition-colors"
             >
               <ArrowUpRight size={16} />
               Visit {c.institution} course page
@@ -700,7 +700,7 @@ function ComparePhase({
                       <p className="font-serif font-semibold text-zinc-900 dark:text-white text-sm">{r.course.title}</p>
                       <p className="text-xs text-zinc-400 dark:text-zinc-500 font-normal">{r.course.code}</p>
                     </div>
-                    <button onClick={() => onRemove(r.course.code)} className="p-1 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                    <button onClick={() => onRemove(r.course.code)} className="p-1 rounded-md hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors">
                       <X size={14} className="text-zinc-400" />
                     </button>
                   </div>
@@ -710,7 +710,7 @@ function ComparePhase({
           </thead>
           <tbody>
             {fields.map(field => (
-              <tr key={field.label} className="border-t border-zinc-100 dark:border-zinc-800">
+              <tr key={field.label} className="border-t border-zinc-100 dark:border-hairline">
                 <td className="p-3 text-xs font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider whitespace-nowrap">{field.label}</td>
                 {courses.map(r => (
                   <td key={r.course.code} className="p-3 text-zinc-700 dark:text-zinc-300">
@@ -719,7 +719,7 @@ function ComparePhase({
                 ))}
               </tr>
             ))}
-            <tr className="border-t border-zinc-100 dark:border-zinc-800">
+            <tr className="border-t border-zinc-100 dark:border-hairline">
               <td className="p-3 text-xs font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">Why It Fits</td>
               {courses.map(r => (
                 <td key={r.course.code} className="p-3">
@@ -770,7 +770,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.96, y: 12 }}
         transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] as number[] }}
-        className="bg-white dark:bg-zinc-900 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-xl w-full max-h-[90vh] flex flex-col overflow-hidden"
+        className="bg-white dark:bg-surface-paper rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-xl w-full max-h-[90vh] flex flex-col overflow-hidden"
         onClick={(e: React.MouseEvent) => e.stopPropagation()}
       >
         {/* Header (fixed) */}
@@ -802,7 +802,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
               Every course gets a 0–100% score made of three parts:
             </p>
             <div className="space-y-2.5">
-              <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+              <div className="rounded-xl bg-white dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 p-3">
                 <div className="flex items-baseline justify-between mb-1">
                   <p className="text-sm font-bold text-[#1A1A1A] dark:text-white">Interest fit</p>
                   <span className="text-xs font-bold" style={{ color: COLORS.accent }}>45%</span>
@@ -811,7 +811,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
                   How well your interest tags and the scenarios you picked overlap with the course's own tags. Full credit at 3+ matching interests, with a bonus for matching scenarios.
                 </p>
               </div>
-              <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+              <div className="rounded-xl bg-white dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 p-3">
                 <div className="flex items-baseline justify-between mb-1">
                   <p className="text-sm font-bold text-[#1A1A1A] dark:text-white">Values alignment</p>
                   <span className="text-xs font-bold" style={{ color: COLORS.accent }}>30%</span>
@@ -820,7 +820,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
                   Your salary, job-security, and helping-others sliders weighted against the course's salary band and employability rating. Plus your work-style picks (analytical / hands-on / etc.) and team preference.
                 </p>
               </div>
-              <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+              <div className="rounded-xl bg-white dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 p-3">
                 <div className="flex items-baseline justify-between mb-1">
                   <p className="text-sm font-bold text-[#1A1A1A] dark:text-white">Feasibility</p>
                   <span className="text-xs font-bold" style={{ color: COLORS.accent }}>25%</span>
@@ -835,7 +835,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
           {/* Salary */}
           <section>
             <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Salary band</p>
-            <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+            <div className="rounded-xl bg-white dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 p-3">
               <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed mb-2">
                 Every course carries a <span className="font-bold">Low / Mid / High</span> salary band. These are <span className="font-bold">informed reference values</span>, not predictions for you personally — they reflect roughly where typical mid-career graduate earnings sit in Ireland for that pathway, based on the general patterns visible across publicly-available labour-market and graduate-outcome reporting.
               </p>
@@ -848,7 +848,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
           {/* Employability */}
           <section>
             <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Employability rating</p>
-            <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+            <div className="rounded-xl bg-white dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 p-3">
               <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed mb-2">
                 A <span className="font-bold">1 to 5 rating</span> per course, also informed-but-curated. Higher means the path from this course to substantive employment or further study tends to be more predictable in the Irish market.
               </p>

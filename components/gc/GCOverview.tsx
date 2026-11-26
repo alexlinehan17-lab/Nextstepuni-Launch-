@@ -74,7 +74,7 @@ const _BADGE_AMBER_DARK = 'dark:!bg-[rgba(196,135,59,0.15)] dark:!text-[#D4A95C]
 const _BADGE_CLAY_DARK = 'dark:!bg-accent/15 dark:!text-[#FDEEDF]';
 const TEXT_ACCENT_DARK = 'dark:!text-accent';
 const TEXT_NEUTRAL_DARK = 'dark:!text-zinc-400';
-const TRACK_BG_DARK = 'dark:!bg-zinc-800';
+const TRACK_BG_DARK = 'dark:!bg-surface-soft';
 
 // ─── Categories ─────────────────────────────────────────────────────────────
 
@@ -818,7 +818,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             <select
               value={yearGroupFilter}
               onChange={e => setYearGroupFilter(e.target.value as YearGroupFilter)}
-              className="px-2 py-1 rounded-md text-[11px] font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 border-0"
+              className="px-2 py-1 rounded-md text-[11px] font-bold bg-zinc-100 dark:bg-surface-soft text-zinc-700 dark:text-zinc-200 border-0"
             >
               <option value="all">All years</option>
               {yearOptions.map(yg => (
@@ -909,7 +909,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl"
+              className="bg-white dark:bg-surface-paper rounded-2xl border border-zinc-200 dark:border-hairline p-6 max-w-sm w-full shadow-2xl"
               onClick={(e: React.MouseEvent) => e.stopPropagation()}
             >
               <div className="flex items-center gap-3 mb-4">
@@ -953,7 +953,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                     className={`px-2.5 py-1 rounded-md text-[11px] font-bold border transition-all ${
                       broadcastYearGroups.size === 0
                         ? 'bg-accent/8 border-accent/30 text-accent'
-                        : 'bg-zinc-100 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200'
+                        : 'bg-zinc-100 dark:bg-surface-soft border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200'
                     }`}
                   >
                     All years
@@ -970,7 +970,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                             ? 'bg-accent/8 border-accent/30 text-accent'
                             : isYearActive(yg) && broadcastYearGroups.size === 0
                               ? 'bg-zinc-50 dark:bg-zinc-800/60 border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300'
-                              : 'bg-zinc-100 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-200'
+                              : 'bg-zinc-100 dark:bg-surface-soft border-zinc-200 dark:border-zinc-700 text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-200'
                         }`}
                       >
                         {yg === 'TY' ? 'TY' : `${yg} Year`} <span className="opacity-60 font-normal">· {count}</span>
@@ -990,14 +990,14 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                     type="button"
                     aria-pressed={broadcastMessageId === message.id}
                     onClick={() => setBroadcastMessageId(message.id)}
-                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${broadcastMessageId === message.id ? 'bg-[#FDEEDF] text-accentDarkText font-medium' : 'hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-300'}`}
+                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${broadcastMessageId === message.id ? 'bg-[#FDEEDF] text-accentDarkText font-medium' : 'hover:bg-zinc-50 dark:hover:bg-surface-soft text-zinc-700 dark:text-zinc-300'}`}
                   >
                     {message.text}
                   </button>
                 ))}
               </div>
               <div className="flex gap-2">
-                <button onClick={() => setShowBroadcastModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                <button onClick={() => setShowBroadcastModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors">
                   Cancel
                 </button>
                 <button
@@ -1048,7 +1048,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: CUSTOM_EASE }}
-          className="rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] overflow-hidden"
+          className="rounded-2xl bg-white dark:bg-surface-paper border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] overflow-hidden"
         >
           {/* Alert header */}
           <div className="flex items-center justify-between px-5 py-3.5 border-b border-zinc-100 dark:border-zinc-800/60">
@@ -1109,7 +1109,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                   <div className="flex items-center gap-1.5 shrink-0">
                     <button
                       onClick={() => onSelectStudent(alert.studentUid)}
-                      className="px-2.5 py-1.5 rounded-lg text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                      className="px-2.5 py-1.5 rounded-lg text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
                     >
                       <Eye size={12} className="inline mr-1" />
                       View
@@ -1117,7 +1117,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                     {onDismissAlert && (
                       <button
                         onClick={() => onDismissAlert(alert)}
-                        className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                        className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
                         title="Dismiss (will resurface if situation worsens)"
                       >
                         <X size={12} />
@@ -1295,11 +1295,11 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           </div>
           {/* Month navigation */}
           <div className="flex items-center justify-between mb-3">
-            <button onClick={handleCalPrev} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+            <button onClick={handleCalPrev} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors">
               <ChevronLeft size={16} style={{ color: NEUTRAL_GREY }} className={TEXT_NEUTRAL_DARK} />
             </button>
             <span className="text-xs font-medium text-zinc-600 dark:text-zinc-400">{MONTH_NAMES[calMonth]} {calYear}</span>
-            <button onClick={handleCalNext} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+            <button onClick={handleCalNext} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors">
               <ChevronRight size={16} style={{ color: NEUTRAL_GREY }} className={TEXT_NEUTRAL_DARK} />
             </button>
           </div>
@@ -1462,9 +1462,9 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       {/* ═══════════════════════════════════════════════════════════════════
           Student Table — DO NOT CHANGE
           ═══════════════════════════════════════════════════════════════════ */}
-      <div id="gc-students" className="rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow overflow-hidden">
+      <div id="gc-students" className="rounded-2xl bg-white dark:bg-surface-paper border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow overflow-hidden">
         {/* Table Controls */}
-        <div className="p-5 border-b border-zinc-100 dark:border-zinc-800 space-y-3">
+        <div className="p-5 border-b border-zinc-100 dark:border-hairline space-y-3">
           <div className="flex flex-col sm:flex-row gap-3">
             <div className="relative flex-1">
               <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500" />
@@ -1517,7 +1517,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                   className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
                     isActive
                       ? 'text-white'
-                      : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                      : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-surface-soft'
                   }`}
                   style={isActive ? { backgroundColor: ACCENT } : { backgroundColor: 'transparent' }}
                 >
@@ -1571,7 +1571,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-zinc-200 dark:border-zinc-800 text-left bg-zinc-50/50 dark:bg-zinc-800/20">
+              <tr className="border-b border-zinc-200 dark:border-hairline text-left bg-zinc-50/50 dark:bg-zinc-800/20">
                 {[
                   { key: 'name' as SortKey, label: 'Student' },
                   { key: 'progress' as SortKey, label: 'Progress' },
@@ -1688,7 +1688,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                               animate={{ opacity: 1, scale: 1, y: 0 }}
                               exit={{ opacity: 0, scale: 0.95, y: -4 }}
                               transition={{ duration: 0.15 }}
-                              className="absolute right-0 top-full mt-1 z-50 w-72 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-xl p-4"
+                              className="absolute right-0 top-full mt-1 z-50 w-72 bg-white dark:bg-surface-paper rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-xl p-4"
                               role="dialog"
                               aria-label={rowFlagged ? 'Edit student flag' : 'Flag student'}
                               onClick={(e: React.MouseEvent) => e.stopPropagation()}
@@ -1985,7 +1985,7 @@ function DailyActivityChart({
         {hovered && (
           <>
             <div
-              className="absolute pointer-events-none transition-all duration-75 dark:!bg-zinc-900"
+              className="absolute pointer-events-none transition-all duration-75 dark:!bg-surface-paper"
               style={{
                 left: hovered.x - 4.5,
                 top: hovered.y - 4.5,

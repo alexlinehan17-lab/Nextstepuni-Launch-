@@ -193,7 +193,7 @@ const MockExamBuilder: React.FC<Props> = ({ uid, now, subjects, mineIds, subject
 
         <div className="space-y-1.5 mb-5">
           {set.items.map((it, i) => (
-            <div key={`${it.q.year}-${it.q.level}-${it.q.lang}-${it.q.fileid}-${it.q.n}`} className="flex items-center gap-2 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 pr-2">
+            <div key={`${it.q.year}-${it.q.level}-${it.q.lang}-${it.q.fileid}-${it.q.n}`} className="flex items-center gap-2 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper pr-2">
               <button
                 onClick={() => onToggle(i)}
                 aria-pressed={it.done}
