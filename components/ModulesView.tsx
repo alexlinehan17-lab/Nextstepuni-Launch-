@@ -1,38 +1,42 @@
 import './module-cards.css';
-import { COLORS } from '../design/tokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * ModulesView — the category overview. Five worlds: Mind, Growth, Learn,
- * Decode, Exam. Hero + satellites; never an equal-weight grid.
+ * ModulesView: the five module worlds (area 5 of the design build; boards
+ * c-modules-pick on a phone, r5-modules on a laptop).
  *
- * Hero is dynamic — driven by the most active category from progress data,
- * falling back to Mind. The user can promote any satellite by tapping it.
+ * One card picks up where the student left off. Then the five worlds, each a
+ * white box you press keeping its drawing, its colour, its number and its
+ * progress: stacked on a phone, side by side on a laptop. Find a starting
+ * point and the Notebook close the page. Search sits behind the bar's search
+ * button on a phone and is a field in the bar on a laptop.
  *
- * Critical: all five cards are always rendered in a single 12-col grid,
- * each with a stable layoutId. Promotion just toggles which card holds the
- * hero (col-span-12) vs. satellite (col-span-3) class. No card ever
- * unmounts during promotion, so the hero slot is never empty.
- *
- * Visual register: cream ground, radial-focused gradients (focal point
- * varies per category to break repetition), a faint SVG noise grain, a
- * 1px white inner highlight on the top edge for ceramic quality.
+ * Motion (motion.md; the board's five moves at real speed, which Alex chose:
+ * "the real speed is much better than slow"): the doors rise into place one
+ * after another the first time the page is seen, their marks fill once and
+ * their counts run up with them; a door grows to fill the page while its
+ * drawing and name travel to their places on the world's page; Back plays it
+ * in reverse. Reduced motion turns each move into a plain fade.
  */
 
-import React, { useState } from 'react';
-import { motion, LayoutGroup } from 'framer-motion';
-import { Capacitor } from '@capacitor/core';
+import React, { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react';
+import { Search } from 'lucide-react';
 import { type CourseData } from './Library';
 import { type CategoryType } from './KnowledgeTree';
-import { MODULE_SECTIONS } from '../moduleSections';
-import { WorldIconBlob, type WorldId } from './WorldIconBlob';
-import PageHeader from './ui/PageHeader';
-import { useCompactLayout } from '../hooks/useCompactLayout';
-import { WORLD_TONES, useWorldTones, type WorldTones } from './worldPalette';
-import { ModuleDiscovery } from './learning/ModuleDiscovery';
 import type { UserProgress } from '../types';
-
+import { useCompactLayout } from '../hooks/useCompactLayout';
+import { useSettingsContext } from '../contexts/SettingsContext';
+import { useScreenLeave } from './navigation/useScreenLeave';
+import { TopBar } from './ui/Bars';
+import { Button, IconButton, Glyph, Arrow } from './ui/Button';
+import { List, Row, PaperSheet, PressBox } from './ui/List';
+import { SearchField } from './ui/Field';
+import { Menu } from './ui/Menu';
+import { FramePortal } from './ui/Frame';
+import { MODULE_WORLDS, Marks, Readout, WorldArt, isModuleDone, moduleResumePoint, worldOf, worldProgress, worldStyle, type ModuleWorld } from './moduleWorlds';
+import { ChosenRoute, ModuleSearchResults, NotebookSheet, StartingPointsSheet, useModuleDiscovery } from './learning/ModuleDiscovery';
+import { requestModuleResume, takeWorldReturn } from './learning/intents';
 
 interface ModulesViewProps {
   onBack: () => void;
@@ -41,648 +45,302 @@ interface ModulesViewProps {
   allCourses: CourseData[];
   categoryTitles: Record<CategoryType, string>;
   userProgress: UserProgress;
+  /** The world's own page, drawn into the door as it opens (and as Back closes it). Without it the
+   *  door simply opens the world. */
+  renderWorld?: (category: CategoryType) => ReactNode;
 }
 
-// ── Inline SVG icons (currentColor) ─────────────────────────────────────
+/* ── Motion: the board's timings (site/src/js/c-modules.js), real speed ─────── */
+const EASE = 'cubic-bezier(.23,1,.32,1)';       // --ease-out: arriving, pressing
+const EASE_SHEET = 'cubic-bezier(.32,.72,0,1)'; // --ease-sheet: the door opening, front-loaded
+const T = { stagger: 30, arrive: 180, markGap: 24, mark: 160, open: 360, veil: 80, inGap: 30, inDur: 220, inDelay: 60,
+  back: 300, out: 120, backFadeAt: 90, backFade: 150, fade: 200, fadeOut: 160 };
+const reducedMotion = () => typeof window !== 'undefined' && !!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+const canAnimate = (el: Element | null | undefined): el is HTMLElement => !!el && typeof (el as HTMLElement).animate === 'function';
+/** The doors arrive the first time the page is seen in a visit to the app, not every time. */
+let doorsHaveArrived = false;
 
-const IconArrowRight: React.FC<{ size?: number }> = ({ size = 16 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M5 12h14M12 5l7 7-7 7" />
-  </svg>
-);
+interface Box { x: number; y: number; w: number; h: number }
+const boxOf = (el: Element | Range, origin: Box): Box => {
+  const r = el.getBoundingClientRect();
+  return { x: r.left - origin.x, y: r.top - origin.y, w: r.width, h: r.height };
+};
+const textBox = (el: Element, origin: Box): Box => {
+  const range = document.createRange(); range.selectNodeContents(el);
+  return boxOf(range, origin);
+};
+const inset = (r: Box, area: Box, radius: number) =>
+  `inset(${r.y}px ${area.w - r.x - r.w}px ${area.h - r.y - r.h}px ${r.x}px round ${radius}px)`;
+/** The transform that lays a flyer's own box exactly over a measured box. */
+const onto = (natural: Box, to: Box, byHeight: boolean) => {
+  const s = byHeight ? to.h / natural.h : to.w / natural.w;
+  return `translate(${to.x - natural.x * s}px,${to.y - natural.y * s}px) scale(${s})`;
+};
 
-const IconChevronRight: React.FC<{ size?: number }> = ({ size = 14 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="m9 18 6-6-6-6" />
-  </svg>
-);
-
-const IconCheck: React.FC<{ size?: number }> = ({ size = 12 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M20 6 9 17l-5-5" />
-  </svg>
-);
-
-// ── Category configuration ──────────────────────────────────────────────
-
-interface CategoryConfig extends WorldTones {
-  id: CategoryType;
-  worldKey: WorldId;
-  number: string;
-  name: string;
-  worldName: string;
-  blurb: string;
-  description: string;
-  /** Soft blob colour — used for the faint card tint and the 25%-alpha border. */
-  /** Tint focal — varies per world so cards don't read as the same gradient. */
-  tintFocal: string;
+/** The marks on each door fill from the left, once, and its count runs up with them. */
+function drawProgress(door: HTMLElement, delay: number) {
+  const count = door.querySelector<HTMLElement>('[data-count]');
+  const n = Number(count?.dataset.count ?? 0);
+  const fills = door.querySelectorAll<HTMLElement>('.mw-marks i > b');
+  if (count) count.textContent = '0';
+  fills.forEach((fill, j) => {
+    const a = fill.animate([{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }], { duration: T.mark, delay: delay + j * T.markGap, easing: EASE, fill: 'backwards' });
+    if (count && j < n) a.onfinish = () => { count.textContent = String(j + 1); };
+  });
+  if (count && !fills.length) count.textContent = String(n);
+  window.setTimeout(() => { if (count) count.textContent = String(n); }, delay + fills.length * T.markGap + T.mark + 40);
 }
 
-const CATEGORIES: CategoryConfig[] = [
-  {
-    id: 'architecture-mindset',
-    worldKey: 'mind',
-    number: '01',
-    name: 'Mind',
-    worldName: 'The Architecture',
-    blurb: 'Psychological foundations',
-    description: 'Identity, beliefs, and emotional regulation — the foundation everything else stands on.',
-    ...WORLD_TONES['architecture-mindset'],
-    tintFocal: 'at 0% 0%',
-  },
-  {
-    id: 'science-growth',
-    worldKey: 'growth',
-    number: '02',
-    name: 'Growth',
-    worldName: 'The Garden',
-    blurb: 'How effort changes the brain',
-    description: 'The neuroscience of mastery — neuroplasticity, deliberate practice, the cost and reward of struggle.',
-    ...WORLD_TONES['science-growth'],
-    tintFocal: 'at 100% 100%',
-  },
-  {
-    id: 'learning-cheat-codes',
-    worldKey: 'learn',
-    number: '03',
-    name: 'Learn',
-    worldName: 'The Cheat Codes',
-    blurb: 'Techniques that compound',
-    description: 'Active recall, spaced repetition, interleaving — the practical strategies that separate high performers.',
-    ...WORLD_TONES['learning-cheat-codes'],
-    tintFocal: 'at 100% 0%',
-  },
-  {
-    id: 'subject-specific-science',
-    worldKey: 'decode',
-    number: '04',
-    name: 'Decode',
-    worldName: 'The Decoder',
-    blurb: 'Subject by subject',
-    description: 'How each exam paper actually works — marking schemes, examiner patterns, hidden curriculum.',
-    ...WORLD_TONES['subject-specific-science'],
-    tintFocal: 'at 0% 100%',
-  },
-  {
-    id: 'exam-zone',
-    worldKey: 'exam',
-    number: '05',
-    name: 'Exam',
-    worldName: 'The Arena',
-    blurb: 'Performance under pressure',
-    description: 'Pacing, nerves, recovery — the psychology and strategy of executing on the day.',
-    ...WORLD_TONES['exam-zone'],
-    tintFocal: 'at 50% 100%',
-  },
-];
+type Move = { kind: 'open' | 'back'; world: ModuleWorld } | null;
 
-const FALLBACK_HERO_ID: CategoryType = 'architecture-mindset';
-const IS_NATIVE_IOS = Capacitor.getPlatform() === 'ios';
+export const ModulesView: React.FC<ModulesViewProps> = ({ onBack, onSelectCategory, onSelectModule, allCourses, userProgress, renderWorld }) => {
+  const phone = useCompactLayout();
+  const dark = useSettingsContext()?.settings.darkMode ?? false;
+  const leave = useScreenLeave(onBack, 'Back');
+  const { available, resume, routes } = useModuleDiscovery(allCourses, userProgress);
+  const [searching, setSearching] = useState(false);
+  const [query, setQuery] = useState('');
+  const [startOpen, setStartOpen] = useState(false);
+  const [notebookOpen, setNotebookOpen] = useState(false);
+  const [routeId, setRouteId] = useState<string>('none');
+  const [move, setMove] = useState<Move>(() => {
+    const back = takeWorldReturn();
+    const world = worldOf(back);
+    return world && renderWorld ? { kind: 'back', world } : null;
+  });
+  const [layerArea, setLayerArea] = useState<CSSProperties | null>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const layerRef = useRef<HTMLDivElement>(null);
+  const searchRef = useRef<HTMLInputElement>(null);
+  const busy = useRef(false);
 
-// ── Stats / next-up helpers ─────────────────────────────────────────────
+  const worlds = MODULE_WORLDS.filter(world => allCourses.some(course => course.category === world.id));
+  const doneAll = allCourses.filter(course => isModuleDone(course, userProgress)).length;
+  const chosenRoute = routes.find(route => route.id === routeId);
 
-interface CategoryStats {
-  completed: number;
-  total: number;
-  percent: number;
-  hasAnyProgress: boolean;
-}
+  // ── Move 2 and 3: the doors arrive and their marks fill, once per visit ──
+  useLayoutEffect(() => {
+    const root = rootRef.current;
+    if (!root || move?.kind === 'back' || doorsHaveArrived) return;
+    doorsHaveArrived = true;
+    const doors = [...root.querySelectorAll<HTMLElement>('.mw-door')];
+    if (!doors.length || !canAnimate(doors[0])) return;
+    if (reducedMotion()) {
+      root.querySelector<HTMLElement>('.mw-doors')?.animate([{ opacity: 0 }, { opacity: 1 }], { duration: T.fade, easing: 'ease-out', fill: 'backwards' });
+      return;
+    }
+    doors.forEach((door, i) => {
+      door.animate([{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'none' }], { duration: T.arrive, delay: i * T.stagger, easing: EASE, fill: 'backwards' });
+      drawProgress(door, i * T.stagger + T.arrive * 0.66);
+    });
+    // Runs once, on the first paint of the page.
+  }, []);
 
-function getStats(catId: CategoryType, allCourses: CourseData[], userProgress: UserProgress): CategoryStats {
-  const courses = allCourses.filter(c => c.category === catId);
-  const total = courses.length;
-  let completed = 0;
-  let hasAnyProgress = false;
-  for (const c of courses) {
-    const p = userProgress[c.id];
-    if (!p) continue;
-    if (p.unlockedSection > 0) hasAnyProgress = true;
-    if (p.unlockedSection >= c.sectionsCount) completed += 1;
-  }
-  return {
-    completed,
-    total,
-    percent: total > 0 ? (completed / total) * 100 : 0,
-    hasAnyProgress,
+  const doorFor = (id: string) => rootRef.current?.querySelector(`[data-world="${id}"]`)?.closest<HTMLElement>('.mw-door') ?? null;
+
+  // The world's page is laid over the Modules page's own area (beside sidebar B on a laptop,
+  // above the tab bar on a phone) while a door opens or closes, and nothing else.
+  useLayoutEffect(() => {
+    if (!move || layerArea) return;
+    if (move.kind === 'back') doorFor(move.world.id)?.scrollIntoView?.({ block: 'center' });
+    const r = rootRef.current?.getBoundingClientRect();
+    const tabbar = phone ? document.querySelector('.ui-tabbar')?.getBoundingClientRect() : undefined;
+    const bottom = tabbar && tabbar.height > 0 ? tabbar.top : window.innerHeight;
+    setLayerArea({ left: r ? Math.max(0, r.left) : 0, top: 0, width: r ? r.width : window.innerWidth, height: bottom });
+  }, [move, layerArea]);
+
+  // ── Move 4 and 5: a door opens into its world; Back closes it into its door ──
+  useLayoutEffect(() => {
+    const layer = layerRef.current;
+    const root = rootRef.current;
+    if (!move || !layerArea || !layer || !root) return;
+    const door = doorFor(move.world.id);
+    const area: Box = { x: layer.getBoundingClientRect().left, y: layer.getBoundingClientRect().top, w: layer.offsetWidth, h: layer.offsetHeight };
+    const finishOpen = () => onSelectCategory(move.world.id);
+    const finishBack = () => { busy.current = false; door?.classList.remove('is-src'); setMove(null); setLayerArea(null); door?.focus({ preventScroll: true }); };
+    if (!door || !canAnimate(layer)) { if (move.kind === 'open') finishOpen(); else finishBack(); return; }
+
+    if (reducedMotion()) {
+      const a = move.kind === 'open'
+        ? layer.animate([{ opacity: 0 }, { opacity: 1 }], { duration: T.fade, easing: 'ease-out', fill: 'both' })
+        : layer.animate([{ opacity: 1 }, { opacity: 0 }], { duration: T.fadeOut, easing: 'ease-out', fill: 'forwards' });
+      a.onfinish = move.kind === 'open' ? finishOpen : finishBack;
+      return;
+    }
+
+    const doorBox = boxOf(door, area);
+    const full: Box = { x: 0, y: 0, w: area.w, h: area.h };
+    const dArt = door.querySelector('[data-world-art]');
+    const dName = door.querySelector('[data-world-name]');
+    const wArt = layer.querySelector<HTMLElement>('[data-world-art]');
+    const wName = layer.querySelector<HTMLElement>('[data-world-name]');
+    const flyers: HTMLElement[] = [];
+    const moves: Animation[] = [];
+    const duration = move.kind === 'open' ? T.open : T.back;
+    const opt: KeyframeAnimationOptions = { duration, easing: EASE_SHEET, fill: 'both' };
+    // The shared pieces (the drawing, the name) fly above both pages.
+    const fly = (from: Element, to: HTMLElement, byText: boolean) => {
+      const copy = byText ? document.createElement('span') : (from.cloneNode(true) as HTMLElement);
+      if (byText) { copy.className = 't-name mw-fly-name'; copy.textContent = from.textContent; }
+      copy.classList.add('mw-fly');
+      layer.appendChild(copy);
+      const natural = byText ? textBox(copy, area) : boxOf(copy, area);
+      const a = byText ? textBox(from, area) : boxOf(from, area);
+      const b = byText ? textBox(to, area) : boxOf(to, area);
+      const [start, end] = move.kind === 'open' ? [a, b] : [b, a];
+      to.style.visibility = 'hidden';
+      (from as HTMLElement).style.visibility = 'hidden';
+      flyers.push(copy);
+      moves.push(copy.animate([{ transform: onto(natural, start, byText) }, { transform: onto(natural, end, byText) }], opt));
+    };
+    if (dArt && wArt) fly(dArt, wArt, false);
+    if (dName && wName) fly(dName, wName, true);
+    const page = layer.querySelector<HTMLElement>('.mw-layer-page');
+    const ins = [...layer.querySelectorAll<HTMLElement>('[data-in]')];
+    if (page) {
+      const from = { clipPath: inset(doorBox, area, 14) };
+      const to = { clipPath: inset(full, area, 0) };
+      moves.push(page.animate(move.kind === 'open' ? [from, to] : [to, from], opt));
+    }
+    if (move.kind === 'open') {
+      // Inside the growing door the page turns solid at once, so it reads as the box growing, not a wash.
+      page?.animate([{ opacity: 0 }, { opacity: 1 }], { duration: T.veil, easing: 'ease-out', fill: 'backwards' });
+      ins.forEach(el => {
+        const g = Number(el.dataset.in) || 0;
+        el.animate([{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }], { duration: T.inDur, delay: T.inDelay + g * T.inGap, easing: EASE, fill: 'backwards' });
+      });
+    } else {
+      ins.forEach(el => el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: T.out, easing: EASE, fill: 'forwards' }));
+      // The page lets the door show through as it arrives, so the door is never a blank box.
+      if (page) moves.push(page.animate([{ opacity: 1 }, { opacity: 0 }], { duration: T.backFade, delay: T.backFadeAt, easing: 'ease-out', fill: 'forwards' }));
+    }
+    let cancelled = false;
+    Promise.all(moves.map(a => a.finished.catch(() => undefined))).then(() => {
+      if (cancelled) return;
+      if (move.kind === 'open') { finishOpen(); return; }
+      flyers.forEach(f => f.remove());
+      if (dArt) (dArt as HTMLElement).style.visibility = '';
+      if (dName) (dName as HTMLElement).style.visibility = '';
+      finishBack();
+    });
+    return () => { cancelled = true; };
+    // One move per change of `move`, once the layer is laid out.
+  }, [move, layerArea]);
+
+  const openWorld = (world: ModuleWorld) => {
+    if (busy.current) return;
+    if (!renderWorld) { onSelectCategory(world.id); return; }
+    busy.current = true;
+    doorFor(world.id)?.classList.add('is-src'); // it stays pressed while it opens
+    setMove({ kind: 'open', world });
   };
-}
+  const continueReading = (id: string) => { requestModuleResume(id); onSelectModule(id); };
 
-interface NextUp {
-  course: CourseData;
-  /** 1-indexed section number to start/continue at. */
-  sectionNumber: number;
-  /** Title of that specific section, falling back to "Section N". */
-  sectionTitle: string;
-  isContinue: boolean;
-}
+  useEffect(() => { if (searching) searchRef.current?.focus(); }, [searching]);
 
-function getNextUp(catId: CategoryType, allCourses: CourseData[], userProgress: UserProgress): NextUp | null {
-  const inCat = allCourses.filter(c => c.category === catId);
-  if (inCat.length === 0) return null;
-
-  const inProgress = inCat.find(c => {
-    const p = userProgress[c.id];
-    return p && p.unlockedSection > 0 && p.unlockedSection < c.sectionsCount;
-  });
-  if (inProgress) {
-    const p = userProgress[inProgress.id];
-    const sectionNumber = Math.min(p.unlockedSection + 1, inProgress.sectionsCount);
-    const sectionTitle = MODULE_SECTIONS[inProgress.id]?.[sectionNumber - 1]?.title ?? `Section ${sectionNumber}`;
-    return { course: inProgress, sectionNumber, sectionTitle, isContinue: true };
-  }
-
-  const firstIncomplete = inCat.find(c => {
-    const p = userProgress[c.id];
-    return !p || p.unlockedSection < c.sectionsCount;
-  });
-  const target = firstIncomplete ?? inCat[0];
-  const sectionTitle = MODULE_SECTIONS[target.id]?.[0]?.title ?? 'Section 1';
-  return { course: target, sectionNumber: 1, sectionTitle, isContinue: false };
-}
-
-function pickHeroId(allCourses: CourseData[], userProgress: UserProgress): CategoryType {
-  let bestId: CategoryType = FALLBACK_HERO_ID;
-  let bestScore = 0;
-  for (const cat of CATEGORIES) {
-    const courses = allCourses.filter(c => c.category === cat.id);
-    let score = 0;
-    for (const c of courses) {
-      const p = userProgress[c.id];
-      if (!p) continue;
-      if (p.unlockedSection > 0 && p.unlockedSection < c.sectionsCount) {
-        score += 100 + p.unlockedSection;
-      } else if (p.unlockedSection >= c.sectionsCount) {
-        score += 1;
-      }
-    }
-    if (score > bestScore) {
-      bestScore = score;
-      bestId = cat.id;
-    }
-  }
-  return bestId;
-}
-
-// ── Progress ring ───────────────────────────────────────────────────────
-
-const ProgressRing: React.FC<{
-  completed: number;
-  total: number;
-  mid: string;
-  deep: string;
-  size?: number;
-}> = ({ completed, total, mid, deep, size = 92 }) => {
-  const stroke = 6;
-  const r = (size - stroke) / 2;
-  const c = 2 * Math.PI * r;
-  const pct = total > 0 ? completed / total : 0;
-  const isComplete = total > 0 && completed === total;
-
-  return (
-    <div className="relative inline-flex items-center justify-center" style={{ width: size, height: size }}>
-      <svg width={size} height={size} className="-rotate-90">
-        <circle
-          cx={size / 2}
-          cy={size / 2}
-          r={r}
-          fill="none"
-          stroke={deep}
-          strokeOpacity={0.15}
-          strokeWidth={stroke}
-        />
-        <motion.circle
-          cx={size / 2}
-          cy={size / 2}
-          r={r}
-          fill="none"
-          stroke={mid}
-          strokeWidth={stroke}
-          strokeLinecap="round"
-          strokeDasharray={c}
-          initial={{ strokeDashoffset: c }}
-          animate={{ strokeDashoffset: c - c * pct }}
-          transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-        />
-      </svg>
-      <div className="absolute inset-0 flex items-center justify-center">
-        {isComplete ? (
-          <span className="inline-flex items-center justify-center w-7 h-7 rounded-full" style={{ background: mid, color: 'white' }}>
-            <IconCheck size={16} />
-          </span>
-        ) : (
-          <span className="font-serif text-[28px] font-semibold leading-none tabular-nums" style={{ color: deep }}>
-            {completed}
-          </span>
-        )}
-      </div>
-    </div>
-  );
-};
-
-// ── Card wrapper ────────────────────────────────────────────────────────
-//
-// White ink cards retain the existing hero and satellite interactions.
-
-interface CardWrapperProps {
-  config: CategoryConfig;
-  isHero: boolean;
-  children: React.ReactNode;
-  onClick: () => void;
-  ariaLabel: string;
-}
-
-const CardWrapper: React.FC<CardWrapperProps> = ({ config, isHero, children, onClick, ariaLabel }) => {
-  return (
-    <motion.div
-      layoutId={`category-card-${config.id}`}
-      layout
-      transition={{ type: 'spring', stiffness: 220, damping: 30 }}
-      className={`relative ${isHero ? 'col-span-1 md:col-span-12' : 'col-span-1 md:col-span-3'}`}
-    >
-      <motion.div
-        layout="position"
-        whileHover={isHero ? undefined : { y: -2 }}
-        className={`world-ink-card relative h-full overflow-hidden ${isHero ? 'rounded-[28px] md:rounded-[32px]' : 'rounded-2xl md:rounded-[22px]'}`}
-      >
-        <button
-          type="button"
-          onClick={onClick}
-          aria-label={ariaLabel}
-          className="absolute inset-0 z-0 cursor-pointer rounded-[inherit] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-accent"
-        />
-        <div className="pointer-events-none relative z-10 [&_a]:pointer-events-auto [&_button]:pointer-events-auto">{children}</div>
-      </motion.div>
-    </motion.div>
-  );
-};
-
-// ── Hero inner content ──────────────────────────────────────────────────
-
-interface HeroInnerProps {
-  config: CategoryConfig;
-  stats: CategoryStats;
-  nextUp: NextUp | null;
-  onContinue: (moduleId: string) => void;
-  onOpenCategory: () => void;
-}
-
-const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue, onOpenCategory }) => {
-  const world = useWorldTones();
-  const { worldKey } = config;
-  const deep = world.ink(config);
-  const mid = config.mid;                    // fills, strokes, borders
-  const midInk = world.midText(config);      // text only
-  const eyebrow = stats.hasAnyProgress ? 'Continue where you left off' : 'Start here';
-
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 p-6 md:p-9 lg:p-10">
-      {/* Left — identity */}
-      <div className="md:col-span-7 flex flex-col">
-        <div className="flex items-center gap-4 mb-3 md:mb-4">
-          <WorldIconBlob world={worldKey} size={140} />
-          <div className="flex items-center gap-3 min-w-0">
-            <span className="font-mono text-[11px] font-bold tracking-[0.25em]" style={{ color: deep }}>
-              {config.number}
-            </span>
-            <span className="h-px w-8 shrink-0" style={{ background: `${deep}40` }} />
-            <span className="font-mono text-[10px] uppercase tracking-[0.22em]" style={{ color: deep }}>
-              {config.worldName}
-            </span>
-          </div>
-        </div>
-
-        <h1
-          className="font-serif font-medium tracking-[-0.03em] leading-[0.95] text-[#1A1A1A]"
-          style={{ fontSize: 'clamp(52px, 7vw, 84px)' }}
-        >
-          {config.name}
-        </h1>
-
-        <p className="font-serif italic text-[18px] md:text-[20px] mt-3" style={{ color: midInk }}>
-          {config.blurb}
-        </p>
-
-        <p className="text-[14px] leading-relaxed mt-4 max-w-[44ch]" style={{ color: 'rgba(0,0,0,0.62)' }}>
-          {config.description}
-        </p>
-
-        <div className="mt-6 md:mt-8 flex items-center gap-5">
-          <ProgressRing
-            completed={stats.completed}
-            total={stats.total}
-            mid={mid}
-            deep={deep}
-            size={72}
-          />
-          <div className="text-[13px] leading-snug" style={{ color: deep }}>
-            <p className="font-semibold">
-              {stats.completed === 0 ? 'Not started yet' : stats.completed === stats.total ? 'World complete' : `${Math.round(stats.percent)}% complete`}
-            </p>
-            <p className="mt-0.5" style={{ color: deep }}>
-              {stats.total} module{stats.total === 1 ? '' : 's'} in this world
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Right — continue panel, separated by hairline rule in world's colour */}
-      <div className="md:col-span-5 md:pl-8 md:border-l flex flex-col" style={{ borderColor: `${mid}4D` }}>
-        {nextUp ? (
-          <>
-            <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: deep }}>
-              {eyebrow}
-            </p>
-            <h3 className="font-serif text-[24px] md:text-[28px] font-medium leading-tight tracking-tight text-[#1A1A1A] mt-3">
-              {nextUp.course.title}
-            </h3>
-            {nextUp.course.subtitle && (
-              <p className="font-serif italic text-[14px] mt-1.5" style={{ color: midInk }}>
-                {nextUp.course.subtitle}
-              </p>
-            )}
-            <p className="text-[13px] mt-4 leading-relaxed line-clamp-3" style={{ color: 'rgba(0,0,0,0.62)' }}>
-              {nextUp.course.description}
-            </p>
-
-            {/* Section preview */}
-            <div className="world-section-preview mt-5 md:mt-6 rounded-xl p-3.5" style={{ border: '1px solid var(--outline-soft)' }}>
-              <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: deep }}>
-                {nextUp.isContinue
-                  ? `Up next · Section ${nextUp.sectionNumber} of ${nextUp.course.sectionsCount}`
-                  : `Begins with · Section 1 of ${nextUp.course.sectionsCount}`}
-              </p>
-              <p className="font-serif text-[16px] md:text-[17px] font-medium mt-1.5 leading-snug" style={{ color: '#1A1A1A' }}>
-                {nextUp.sectionTitle}
-              </p>
-            </div>
-
-            <div className="mt-5 md:mt-6 flex flex-col items-start gap-3">
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onContinue(nextUp.course.id);
-                }}
-                className="world-primary-action group/cta inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-[14px] font-semibold transition-all duration-300 hover:gap-3.5"
-                style={{
-                  ...world.cta(config),
-                  boxShadow: `0 6px 16px ${world.cta(config).background}55`,
-                }}
-              >
-                {nextUp.isContinue ? 'Continue' : 'Start module'}
-                <IconArrowRight size={16} />
-              </button>
-              <button
-                onClick={(e) => { e.stopPropagation(); onOpenCategory(); }}
-                className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-[12px] font-semibold transition-colors duration-200 hover:gap-1.5"
-                style={{ color: midInk, border: `1px solid ${mid}55` }}
-              >
-                Browse all {stats.total}
-                <IconChevronRight size={12} />
-              </button>
-            </div>
-          </>
-        ) : (
-          <div className="flex-1 flex items-center">
-            <p className="text-[14px]" style={{ color: deep }}>
-              No modules available in this world yet.
-            </p>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
-
-// ── Satellite inner content ─────────────────────────────────────────────
-
-interface SatelliteInnerProps {
-  config: CategoryConfig;
-  stats: CategoryStats;
-}
-
-const SatelliteInner: React.FC<SatelliteInnerProps> = ({ config, stats }) => {
-  const world = useWorldTones();
-  const { worldKey } = config;
-  const deep = world.ink(config);
-  const mid = config.mid;                    // fills, strokes, borders
-  const midInk = world.midText(config);      // text only
-  const isComplete = stats.total > 0 && stats.completed === stats.total;
-
-  return (
-    <div className="flex flex-col h-full p-5 md:p-6">
-      <div className="flex justify-center -mb-4 -mt-10">
-        <WorldIconBlob world={worldKey} size={180} compact />
-      </div>
-
-      <span className="font-mono text-[11px] font-medium tracking-[0.15em]" style={{ color: midInk }}>
-        {config.number}
-      </span>
-
-      <h3 className="font-serif text-[28px] md:text-[36px] font-medium tracking-tight leading-[1.0] mt-1" style={{ color: '#1A1A1A' }}>
-        {config.name}
-      </h3>
-
-      <p className="text-[13px] mt-2 leading-snug" style={{ color: 'rgba(0,0,0,0.55)' }}>
-        {config.blurb}
-      </p>
-
-      <div className="mt-6 pt-4 flex items-center justify-between gap-3">
-        <span className="text-[12px] font-mono font-bold tabular-nums" style={{ color: deep }}>
-          {stats.completed}<span style={{ opacity: 0.5 }}> / {stats.total}</span>
-        </span>
-        {isComplete ? (
-          <span className="inline-flex items-center justify-center w-5 h-5 rounded-full" style={{ background: mid, color: 'white' }}>
-            <IconCheck size={11} />
-          </span>
-        ) : (
-          <span
-            className="h-1 rounded-full overflow-hidden flex-1 max-w-[80px]"
-            style={{ background: `${deep}1F` }}
-          >
-            <span
-              className="block h-full rounded-full transition-all duration-700"
-              style={{ width: `${stats.percent}%`, background: mid }}
-            />
-          </span>
-        )}
-      </div>
-    </div>
-  );
-};
-
-// ── Main view ───────────────────────────────────────────────────────────
-
-export const ModulesView: React.FC<ModulesViewProps> = ({
-  onBack,
-  onSelectCategory,
-  onSelectModule,
-  allCourses,
-  userProgress,
-}) => {
-  const world = useWorldTones();
-  const compactLayout = useCompactLayout();
-  // Synchronous initialiser — no useEffect race. Hero is set on the first
-  // render. If the auto-detected hero isn't resolvable for any reason,
-  // useState's lazy init falls back to Mind via FALLBACK_HERO_ID.
-  const [heroId, setHeroId] = useState<CategoryType>(() =>
-    pickHeroId(allCourses, userProgress),
-  );
-
-  // Hide categories with no visible courses for the current user (Phase 4
-  // JC gating). The `allCourses` prop is the already-curriculum-filtered
-  // list from App.tsx#studentCourses, so a category empty here means the
-  // user has no modules to study in it.
-  const visibleCategories = CATEGORIES.filter(cat =>
-    allCourses.some(c => c.category === cat.id),
-  );
-  const resolvedHeroId = visibleCategories.some(c => c.id === heroId)
-    ? heroId
-    : (visibleCategories[0]?.id ?? heroId);
-
-  // Order: hero first, satellites in their original order. This keeps the
-  // hero in the first row (col-span-12) and the four satellites in the
-  // second row (4 × col-span-3 = 12). Promotion just shuffles this array.
-  const ordered = [
-    visibleCategories.find(c => c.id === resolvedHeroId),
-    ...visibleCategories.filter(c => c.id !== resolvedHeroId),
-  ].filter(Boolean) as CategoryConfig[];
-
-  if (IS_NATIVE_IOS || compactLayout) {
-    const completedModules = allCourses.filter(course => {
-      const progress = userProgress[course.id];
-      return !!progress && progress.unlockedSection >= course.sectionsCount;
-    }).length;
-
+  // ── The pieces ──
+  const pick = resume ? (() => {
+    const world = worldOf(resume.category);
+    const at = moduleResumePoint(resume, userProgress);
     return (
-      <div className="product-shell modules-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]">
-        <header
-          data-student-page-header className="frame-top z-40 bg-[var(--surface-canvas)]"
-        >
-          <div className="mx-auto max-w-7xl">
-            <PageHeader onBack={onBack} eyebrow="The Programme" title="Modules" compact />
-          </div>
-        </header>
-
-        <main
-          className="frame-page [--frame-pad-top:6rem] px-4"
-          style={{ paddingBottom: 'calc(104px + var(--sab, 0px))' }}
-        >
-          <div className="mx-auto max-w-xl">
-            <ModuleDiscovery courses={allCourses} progress={userProgress} onOpen={onSelectModule} />
-            <div className="mb-5 flex items-end justify-between gap-4">
-              <div>
-                <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
-                  Choose a world
-                </p>
-                <p className="mt-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-                  Pick an area to see its modules.
-                </p>
-              </div>
-              <p className="shrink-0 font-mono text-[11px] font-semibold text-zinc-500 dark:text-zinc-400">
-                {completedModules} of {allCourses.length} complete
-              </p>
-            </div>
-
-            <div className="space-y-3">
-              {visibleCategories.map(cat => {
-                const stats = getStats(cat.id, allCourses, userProgress);
-                const isCurrent = cat.id === resolvedHeroId && stats.hasAnyProgress;
-
-                return (
-                  <button
-                    key={cat.id}
-                    type="button"
-                    onClick={() => onSelectCategory(cat.id)}
-                    aria-label={`Open ${cat.name} world`}
-                    className="world-ink-card group flex min-h-[116px] w-full items-center gap-3 rounded-[15px] border bg-white p-3 text-left transition-transform active:scale-[0.985] dark:bg-surface-paper"
-                    style={{ borderColor: isCurrent ? COLORS.accent : undefined, borderWidth: isCurrent ? 2 : 1.5 }}
-                  >
-                    <div className="flex h-24 w-[88px] shrink-0 items-center justify-center overflow-visible">
-                      <WorldIconBlob world={cat.worldKey} size={72} />
-                    </div>
-
-                    <div className="min-w-0 flex-1 py-1">
-                      <div className="flex items-center gap-2">
-                        <span className="font-mono text-[10px] font-bold tracking-[0.18em]" style={{ color: world.midText(cat) }}>
-                          {cat.number}
-                        </span>
-                        {isCurrent && (
-                          <span className="text-[10px] font-semibold uppercase tracking-[0.08em] text-[#a04412] dark:text-orange-300">
-                            Continue
-                          </span>
-                        )}
-                      </div>
-                      <h2 className="mt-0.5 font-serif text-[25px] font-medium leading-none tracking-tight text-[#1A1A1A] dark:text-white">
-                        {cat.name}
-                      </h2>
-                      <p className="mt-1.5 text-[13px] leading-snug text-zinc-600 dark:text-zinc-400">
-                        {cat.blurb}
-                      </p>
-                      <div className="mt-2.5 flex items-center gap-2">
-                        <span className="h-1.5 flex-1 overflow-hidden rounded-full" style={{ background: `${world.ink(cat)}1F` }}>
-                          <span className="block h-full rounded-full" style={{ width: `${stats.percent}%`, background: cat.mid }} />
-                        </span>
-                        <span className="text-[11px] tabular-nums" style={{ color: world.ink(cat) }}>
-                          {stats.completed}/{stats.total} complete
-                        </span>
-                      </div>
-                    </div>
-
-                    <span className="flex w-4 shrink-0 items-center justify-center" style={{ color: world.ink(cat) }}>
-                      <IconChevronRight size={16} />
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        </main>
-      </div>
+      <PaperSheet className={`mw-pick${phone ? '' : ' mw-pick--wide'}`} label="Pick up where you left off">
+        <div className="mw-pick-copy" style={world ? worldStyle(world, dark) : undefined}>
+          <p className="t-label mw-pick-label">Pick up where you left off</p>
+          <h2 className={phone ? 't-heading mw-pick-title' : 't-title mw-pick-title'}>{resume.title}</h2>
+          <p className="t-meta mw-pick-meta">{world ? <b className="mw-w-ink">{world.name}</b> : null}{world ? ' · ' : ''}Section {at.step} of {at.steps} · {at.title}</p>
+        </div>
+        <div className="mw-pick-go">
+          <Marks total={at.steps} on={at.read} className="mw-pick-marks" />
+          <Button kind="main" size="lg" block arrow="forward" onClick={() => continueReading(resume.id)}>Continue reading</Button>
+        </div>
+      </PaperSheet>
     );
-  }
+  })() : null;
+
+  const doors = (
+    <section className="mw-sec mw-worlds" aria-labelledby="mw-worlds-head">
+      <div className="mw-sec-head"><h2 id="mw-worlds-head" className="t-heading">Five worlds</h2><Readout className="mw-ink3">{doneAll} of {allCourses.length} done</Readout></div>
+      <div className={`mw-doors${phone ? '' : ' mw-doors--row'}`}>
+        {worlds.map(world => {
+          const p = worldProgress(world.id, allCourses, userProgress);
+          return (
+            <div key={world.id} className="mw-door-slot" style={worldStyle(world, dark) as CSSProperties}>
+              <PressBox className={`mw-door${phone ? '' : ' mw-door--tall'}`} label={`Open ${world.name}: ${p.done} of ${p.total} done`} onPress={() => openWorld(world)}>
+                <span className="mw-door-in" data-world={world.id}>
+                  {phone ? <WorldArt world={world} size={80} /> : <span className="mw-door-top"><WorldArt world={world} size={104} /><Arrow meaning="opens" size={20} className="mw-chev" /></span>}
+                  <span className="mw-door-copy">
+                    <span className="t-label mw-w-ink mw-door-place">{world.number} · {world.place}</span>
+                    <span className="t-name mw-door-name"><span data-world-name>{world.name}</span></span>
+                    <span className="t-meta mw-door-blurb">{world.blurb}</span>
+                    <span className="mw-prog">
+                      <Marks total={p.total} on={p.done} part={p.part} />
+                      <Readout><span data-count={p.done}>{p.done}</span> of {p.total}</Readout>
+                    </span>
+                  </span>
+                  {phone ? <Arrow meaning="opens" size={20} className="mw-chev" /> : null}
+                </span>
+              </PressBox>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+
+  const startMenu = (
+    <Menu label="Find a starting point" value={routeId} onChange={setRouteId} className="mw-start-menu" block
+      face={<span className="mw-cell"><span className="t-row">Find a starting point</span><span className="t-meta">Start from what you need help with</span></span>}
+      options={routes.map(route => ({ value: route.id, label: route.title }))} />
+  );
+
+  const ends = phone ? (
+    <section className="mw-sec">
+      <List boxed className="mw-ends">
+        <Row title="Find a starting point" meta="Start from what you need help with" onPress={() => setStartOpen(true)} />
+        <Row title="Notebook" meta="Private notes and ideas you chose to keep" onPress={() => setNotebookOpen(true)} />
+      </List>
+    </section>
+  ) : (
+    <section className="mw-sec">
+      <div className="mw-ends mw-ends--two">
+        {startMenu}
+        <List boxed className="mw-ends-cell"><Row title="Notebook" meta="Private notes and ideas you chose to keep" onPress={() => setNotebookOpen(true)} /></List>
+      </div>
+      {chosenRoute ? <ChosenRoute route={chosenRoute} onClear={() => setRouteId('none')} onOpen={onSelectModule} /> : null}
+    </section>
+  );
+
+  const searchField = (
+    <SearchField ref={searchRef} className="module-discovery-search mw-search" label="Search all your modules and sections" placeholder="Search modules and sections"
+      value={query} onChange={event => setQuery(event.target.value)} autoComplete="off" />
+  );
 
   return (
-    <div className="product-shell modules-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]">
-      {/* The shared desktop sidebar owns navigation and account controls. */}
-      <header data-student-page-header className="frame-top z-40 bg-[var(--surface-canvas)] md:px-10">
-        <div className="mx-auto max-w-7xl"><PageHeader onBack={onBack} eyebrow="The Programme" title="Modules" compact /></div>
-      </header>
-
-      {/* Main */}
-      <main className="pt-24 md:pt-28 pb-16 px-4 md:px-10">
-        <div className="max-w-7xl mx-auto">
-          <ModuleDiscovery courses={allCourses} progress={userProgress} onOpen={onSelectModule} />
-          <LayoutGroup>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-5 auto-rows-min">
-              {ordered.map(cat => {
-                const isHero = cat.id === heroId;
-                const stats = getStats(cat.id, allCourses, userProgress);
-                return (
-                  <CardWrapper
-                    key={cat.id}
-                    config={cat}
-                    isHero={isHero}
-                    onClick={() => isHero ? onSelectCategory(cat.id) : setHeroId(cat.id)}
-                    ariaLabel={isHero ? `Open ${cat.name} world` : `Preview ${cat.name} world`}
-                  >
-                    {isHero ? (
-                      <HeroInner
-                        config={cat}
-                        stats={stats}
-                        nextUp={getNextUp(cat.id, allCourses, userProgress)}
-                        onContinue={onSelectModule}
-                        onOpenCategory={() => onSelectCategory(cat.id)}
-                      />
-                    ) : (
-                      <SatelliteInner config={cat} stats={stats} />
-                    )}
-                  </CardWrapper>
-                );
-              })}
-            </div>
-          </LayoutGroup>
-        </div>
-      </main>
+    <div ref={rootRef} className={`product-shell modules-shell mw-page ${phone ? 'mw-page--phone' : 'mw-page--desk'}`}>
+      {phone ? (
+        <TopBar data-student-page-header leave={leave ?? undefined} over="The programme" title="Modules"
+          action={<IconButton label="Search modules and sections" aria-expanded={searching}
+            icon={<Glyph icon={Search} />} onClick={() => { setSearching(value => !value); if (searching) setQuery(''); }} />} />
+      ) : null}
+      <div className="mw-col">
+        {phone ? null : (
+          <TopBar data-student-page-header tool ruled leave={leave ?? undefined} over="The programme" title="Modules" action={searchField} className="mw-deskbar" />
+        )}
+        {phone && searching ? <section className="mw-sec mw-search-sec">{searchField}</section> : null}
+        {query.trim() ? <section className="mw-sec mw-results"><ModuleSearchResults courses={available} query={query} onOpen={onSelectModule} /></section> : null}
+        {pick ? <section className="mw-sec mw-top">{pick}</section> : null}
+        {doors}
+        {ends}
+      </div>
+      {phone ? <StartingPointsSheet open={startOpen} onClose={() => setStartOpen(false)} routes={routes} onOpen={onSelectModule} /> : null}
+      <NotebookSheet open={notebookOpen} onClose={() => setNotebookOpen(false)} courses={available} onOpen={onSelectModule} />
+      {move && renderWorld ? (
+        <FramePortal>
+          <div ref={layerRef} className="mw-layer frame-takeover" style={layerArea ?? { visibility: 'hidden' }} aria-hidden="true" inert>
+            {layerArea ? <div className="mw-layer-page">{renderWorld(move.world.id)}</div> : null}
+          </div>
+        </FramePortal>
+      ) : null}
     </div>
   );
 };

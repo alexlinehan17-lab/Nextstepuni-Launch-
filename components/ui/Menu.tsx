@@ -58,6 +58,9 @@ export interface MenuProps<V extends string> {
   block?: boolean;
   /** Which side of the button it prefers; it moves to the other when there is no room. */
   side?: 'bottom' | 'top';
+  /** The button shows this instead of the current value: a row that opens a menu of choices
+   *  ("Find a starting point" on Modules on a laptop). Its chevron-down stays at the trailing edge. */
+  face?: ReactNode;
   className?: string;
 }
 
@@ -78,7 +81,7 @@ export function menuCollisionPadding() {
   };
 }
 
-export function Menu<V extends string>({ label, options, value, onChange, count = false, numbered = false, detail, block = false, side = 'bottom', className = '' }: MenuProps<V>) {
+export function Menu<V extends string>({ label, options, value, onChange, count = false, numbered = false, detail, block = false, side = 'bottom', face, className = '' }: MenuProps<V>) {
   const [open, setOpen] = useState(false);
   const index = options.findIndex(option => option.value === value);
   const current = options[index];
@@ -87,8 +90,8 @@ export function Menu<V extends string>({ label, options, value, onChange, count 
     <BaseMenu.Root open={open} onOpenChange={setOpen}>
       <BaseMenu.Trigger className={`ui-part ui-menu-btn${block ? ' ui-menu-btn--block' : ''} ${className}`.trim()}>
         <span className="ui-menu-btn-text">
-          <span className="sr-only">{label}: </span>
-          {current?.short ?? current?.label}
+          {face ? null : <span className="sr-only">{label}: </span>}
+          {face ?? current?.short ?? current?.label}
           {position && !block ? <span className="ui-menu-btn-count">{` · ${position}`}</span> : null}
         </span>
         {position && block ? <span className="ui-menu-btn-count ui-menu-btn-count--end ui-readout"><span className="sr-only"> · </span>{position}</span> : null}

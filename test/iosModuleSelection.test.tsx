@@ -63,8 +63,8 @@ describe('native iOS module selection', () => {
       />,
     );
 
-    expect(screen.getByText('Choose a world')).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: 'Open Learn world' }));
+    expect(screen.getByRole('heading', { name: 'Five worlds' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /^Open Learn: 0 of 1 done$/ }));
     expect(onSelectCategory).toHaveBeenCalledWith('learning-cheat-codes');
   });
 

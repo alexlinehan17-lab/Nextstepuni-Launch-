@@ -87,7 +87,10 @@ try {
       assert.match(frame.url(), /view=modules/, 'Sidebar navigates to Modules');
     } else {
       await capture('home', width, theme);
-      await open('view=modules', width, theme, '.module-discovery-search');
+      // On a phone Modules opens on its doors and search sits behind the bar's search button (area 5).
+      await open('view=modules', width, theme, '.mw-doors');
+      await frame.getByRole('button', { name: 'Search modules and sections', exact: true }).click();
+      await frame.locator('.module-discovery-search').waitFor();
     }
     const search = frame.getByRole('searchbox', { name: 'Search all your modules and sections' });
     await search.fill('recall');

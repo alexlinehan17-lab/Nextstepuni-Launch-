@@ -16,3 +16,93 @@
 .dark .world-section-preview { background:var(--surface-soft); border-color:var(--outline-soft) !important; }
 .dark .world-section-number { background:var(--surface-soft) !important; color:var(--ink-secondary) !important; }
 .dark .world-section-row { border-color:var(--outline-soft) !important; }
+
+/* ══ Modules (area 5 of the design build; boards c-modules-pick on a phone, r5-modules on a laptop) ══
+   The page is white. One raised sheet: "Pick up where you left off". Each world is a box you press:
+   white, a line, no shadow, its drawing at a real size, its own ink for its small label. */
+.mw-page { min-height: 100%; background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
+.mw-page--phone { padding-bottom: calc(var(--edge-bottom, 0px) + var(--space-12)); }
+.mw-page--phone .mw-col { padding: 0 var(--space-6); }
+.mw-page--desk .mw-col { width: min(904px, 100% - 2 * var(--space-12)); margin: 0 auto; padding-bottom: 64px; }
+.mw-sec { margin-top: var(--space-8); }
+.mw-sec.mw-top { margin-top: var(--space-2); }
+.mw-sec.mw-search-sec { margin-top: var(--space-2); }
+.mw-sec.mw-results + .mw-sec.mw-top { margin-top: var(--space-8); }
+.mw-sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-3); }
+.mw-sec-head .t-heading { margin: 0; }
+.mw-readout { color: var(--ink-secondary); white-space: nowrap; }
+.mw-readout.mw-ink3 { color: var(--ink-muted); }
+.mw-w-ink { color: var(--w-ink); }
+b.mw-w-ink { font-weight: 400; }
+
+/* one mark per module (or per step): read is ink, partly read is grey, the rest the empty track */
+.mw-marks { display: flex; flex: 1; gap: 3px; min-width: 0; }
+.mw-marks > i { position: relative; flex: 1; height: 4px; overflow: hidden; border-radius: 2px; background: var(--hairline); }
+.mw-marks > i > b { position: absolute; inset: 0; border-radius: inherit; background: var(--ink-primary); transform-origin: 0 50%; }
+.mw-marks > i.is-part > b { background: var(--ink-muted); }
+
+/* the world's drawing on its paint, bare on the page */
+.mw-art { position: relative; display: block; flex: none; overflow: visible; }
+.mw-art > * { margin: 0 auto; }
+
+/* the one raised sheet: pick up where you left off */
+.mw-pick .ui-paper-face { display: flex; flex-direction: column; gap: 6px; }
+.mw-pick-copy { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.mw-pick-label { margin: 0; color: var(--ink-muted); }
+.mw-pick-title { margin: 0; color: var(--ink-primary); }
+.mw-pick-meta { margin: 0; }
+.mw-pick-go { display: flex; flex-direction: column; gap: var(--space-4); margin-top: 6px; }
+.mw-pick-marks { flex: none; }
+
+/* five doors */
+.mw-doors { display: flex; flex-direction: column; gap: 10px; }
+.mw-door-slot { min-width: 0; }
+.ui-press.mw-door { min-height: 108px; padding: 12px 12px 12px 14px; }
+.ui-press.mw-door.is-src { transform: scale(0.98); transition: none; }
+.mw-door-in { display: flex; align-items: center; gap: 14px; width: 100%; }
+.mw-door-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; }
+.mw-door-place { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mw-door-name { margin-top: 2px; color: var(--ink-primary); }
+.mw-door-blurb { margin-top: 0; }
+.mw-prog { display: flex; align-items: center; gap: 10px; width: 100%; margin-top: 8px; }
+.mw-chev { flex: none; color: var(--ink-muted); }
+
+/* Find a starting point and the Notebook */
+.mw-ends .ui-row { min-height: 60px; }
+
+/* the world's page while a door opens or closes (its own area, above everything on the page) */
+.mw-layer { z-index: var(--z-bar); overflow: hidden; pointer-events: none; }
+.mw-layer-page { position: absolute; inset: 0 auto auto 0; width: 100%; height: 100%; overflow: hidden; background: var(--surface-canvas); }
+.mw-fly { position: absolute; top: 0; left: 0; z-index: 2; margin: 0; transform-origin: 0 0; white-space: nowrap; pointer-events: none; will-change: transform; color: var(--ink-primary); }
+
+/* a laptop: beside sidebar B, the bar with search, one card, five worlds side by side */
+.mw-page--desk .mw-deskbar .ui-bar-slot--end { flex: none; }
+.mw-page--desk .mw-search { width: 300px; }
+.mw-page--desk .mw-sec.mw-top { margin-top: 28px; }
+.mw-pick--wide .ui-paper-face { display: grid; grid-template-columns: minmax(0, 1fr) 300px; column-gap: 40px; align-items: center; padding: 26px 28px; }
+.mw-pick--wide .mw-pick-copy { gap: var(--space-2); }
+.mw-pick--wide .mw-pick-go { margin-top: 0; gap: 14px; }
+.mw-page--desk .mw-worlds { margin-top: 34px; }
+.mw-page--desk .mw-sec-head { margin-bottom: 14px; }
+.mw-doors--row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--space-3); }
+.ui-press.mw-door--tall { height: 100%; min-height: 0; padding: 12px 14px 16px; }
+.mw-door--tall .mw-door-in { flex-direction: column; align-items: stretch; gap: 3px; }
+.mw-door-top { display: flex; align-items: flex-start; justify-content: space-between; margin: 0 -4px 8px -6px; }
+.mw-door-top .mw-chev { margin-top: 6px; }
+.mw-door--tall .mw-door-copy { gap: 3px; }
+.mw-door--tall .mw-door-place { letter-spacing: 0.06em; }
+.mw-door--tall .mw-door-blurb { min-height: 36px; }
+.mw-door--tall .mw-prog { flex-direction: column-reverse; align-items: stretch; gap: 6px; margin-top: 12px; }
+.mw-door--tall .mw-prog .mw-marks { flex: none; }
+.mw-ends--two { display: grid; grid-template-columns: 1fr 1fr; margin-top: 30px; border: 1px solid var(--outline-soft); border-radius: var(--r-box); overflow: hidden; }
+.mw-ends--two .ui-menu-btn.mw-start-menu { height: auto; min-height: 60px; padding: 12px 18px; border: 0; border-radius: 0; }
+.mw-ends--two .mw-cell { display: flex; flex-direction: column; align-items: flex-start; }
+.mw-ends--two .mw-cell .t-row { font-size: 16px; line-height: 21px; color: var(--ink-primary); }
+.mw-ends--two .ui-list--boxed.mw-ends-cell { border: 0; border-left: 1px solid var(--outline-soft); border-radius: 0; }
+.mw-ends--two .mw-ends-cell .ui-row { padding: 12px 18px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ui-press.mw-door.is-src { transform: none; }
+}
+/* on a phone the world's name in the card is ink (the board's sheet card); on a laptop it keeps its own ink */
+.mw-page--phone .mw-pick-meta b.mw-w-ink { color: var(--ink-primary); }

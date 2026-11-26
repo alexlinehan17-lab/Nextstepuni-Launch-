@@ -219,6 +219,10 @@ function MenuSection() {
         <Line><span data-demo="menu"><Menu label="Subject" value={subject} onChange={setSubject} options={SUBJECTS} /></span><span className="t-meta" data-demo="menu-value">Now: {SUBJECTS.find(s => s.value === subject)?.label}</span></Line>
         <Menu label="Subject" block value={subject} onChange={setSubject} options={SUBJECTS} />
       </Spec>
+      <Spec label="A row that opens a menu" caption="face: the button shows its own words instead of the value (Find a starting point on Modules, on a laptop). Choosing still applies at once.">
+        <Menu label="Find a starting point" block value="none" onChange={() => {}} face={<span className="ui-row-body"><span className="ui-row-title">Find a starting point</span><span className="ui-row-meta">Start from what you need help with</span></span>}
+          options={[{ value: 'remember', label: 'I forget what I study' }, { value: 'start', label: 'I keep putting it off' }]} />
+      </Spec>
     </Section>
   );
 }
