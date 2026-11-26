@@ -715,7 +715,7 @@ export function Overlay({
   }, [title,scrollKey]);
   return (
     <dialog
-      className={`journey-paper island-dialog ${className}`}
+      className={`journey-paper island-dialog frame-dialog-native ${className}`}
       ref={ref}
       aria-label={title}
       onCancel={onClose}

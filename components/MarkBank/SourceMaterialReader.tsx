@@ -319,7 +319,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   }, []);
 
   const modal = open && typeof document !== 'undefined' ? createPortal(
-    <div className="mark-bank-theme mb-source-reader-overlay">
+    <div className="mark-bank-theme mb-source-reader-overlay frame-dialog">
       <div
         className={`mb-source-reader-dialog${isAccounting ? ' mb-source-reader-accounting' : ''}${isMathematicsPage ? ' mb-source-reader-question' : ''}`}
         role="dialog"

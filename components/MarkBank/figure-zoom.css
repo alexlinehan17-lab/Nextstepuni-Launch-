@@ -16,12 +16,12 @@
 
 /* The viewer. */
 .mb-figzoom-overlay {
-  position: fixed; inset: 0; z-index: 230; display: grid; place-items: center; padding: 14px;
+  --frame-gap: 14px; /* frame-dialog */ z-index: 230; display: grid; place-items: center;
   background: rgba(18, 17, 16, .78); font-family: 'DM Sans', system-ui, sans-serif;
   animation: mb-source-reader-in 150ms ease-out both;
 }
 .mb-figzoom-dialog {
-  width: min(1240px, 100%); height: calc(100dvh - 28px);
+  width: min(1240px, 100%); height: calc(var(--safe-h) - 28px);
   display: grid; grid-template-rows: auto minmax(0, 1fr) auto; overflow: hidden;
   color: var(--mb-ink); background: var(--mb-paper);
   border: 1px solid var(--mb-border); border-radius: 18px; box-shadow: 0 28px 90px rgba(0, 0, 0, .34);
@@ -78,7 +78,7 @@
 }
 .mb-figzoom-failed { margin: 0; padding: 24px; color: var(--mb-ink-2); font: 500 13px/1.5 'DM Sans', system-ui, sans-serif; }
 .mb-figzoom-footer {
-  padding: 9px 18px calc(9px + var(--sab, 0px)); border-top: 1px solid var(--mb-border); background: var(--mb-paper);
+  padding: 9px 18px; border-top: 1px solid var(--mb-border); background: var(--mb-paper);
   color: var(--mb-muted); font: 400 11.5px/1.4 'DM Sans', system-ui, sans-serif;
 }
 .mb-figzoom-hint-touch { display: none; }
@@ -89,6 +89,7 @@
 @media (max-width: 640px) {
   .mb-figzoom-overlay { padding: 0; }
   .mb-figzoom-dialog { width: 100%; height: 100dvh; border: 0; border-radius: 0; }
-  .mb-figzoom-header { padding: calc(8px + var(--sat, 0px)) 10px 8px 14px; gap: 8px; }
+  .mb-figzoom-header { padding: calc(8px + var(--safe-top)) 10px 8px 14px; gap: 8px; }
+  .mb-figzoom-footer { padding-bottom: calc(9px + var(--safe-bottom)); }
 }
 @media (prefers-reduced-motion: reduce) { .mb-figzoom-overlay { animation: none; } }
