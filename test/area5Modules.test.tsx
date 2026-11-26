@@ -15,6 +15,7 @@ vi.mock('@/hooks/useCompactLayout', () => ({ useCompactLayout: () => device.phon
 vi.mock('@/components/WorldIconBlob', () => ({ WorldIconBlob: () => <span aria-hidden="true" /> }));
 
 import { ModulesView } from '@/components/ModulesView';
+import ModuleShowcase, { ModuleWorldScreen } from '@/components/ModuleShowcase';
 import { requestedModuleResume, clearModuleResumeRequest } from '@/components/learning/intents';
 import { ALL_COURSES } from '@/courseData';
 import type { UserProgress } from '@/types';
@@ -86,5 +87,55 @@ describe('Modules', () => {
     renderModules();
     fireEvent.click(screen.getByRole('button', { name: /Notebook/ }));
     expect(screen.getByRole('dialog', { name: 'Your notebook' })).toBeInTheDocument();
+  });
+});
+
+describe('A module world', () => {
+  const learn = senior.filter(course => course.category === 'learning-cheat-codes');
+  const worldProgress: UserProgress = Object.fromEntries([
+    ...learn.slice(0, 2).map(course => [course.id, { unlockedSection: course.sectionsCount }]),
+    [learn[2].id, { unlockedSection: 1 }],
+  ]) as UserProgress;
+
+  test('it opens on the module to read next, with one Continue that goes straight to the student\'s step', () => {
+    clearModuleResumeRequest(learn[2].id);
+    const onSelectCourse = vi.fn();
+    render(<ModuleShowcase courses={learn} categoryTitle="Learn" categoryId="learning-cheat-codes" userProgress={worldProgress} onSelectCourse={onSelectCourse} />);
+    const card = screen.getByRole('region', { name: `Up next: ${learn[2].title}` });
+    expect(within(card).getByText('Up next · Module 03')).toBeInTheDocument();
+    fireEvent.click(within(card).getByRole('button', { name: 'Continue' }));
+    expect(onSelectCourse).toHaveBeenCalledWith(learn[2].id);
+    expect(requestedModuleResume(learn[2].id)).toBe(true);
+  });
+
+  test('the rest are boxes you press, and the finished ones fold into one row that opens in place', () => {
+    const onSelectCourse = vi.fn();
+    render(<ModuleShowcase courses={learn} categoryTitle="Learn" categoryId="learning-cheat-codes" userProgress={worldProgress} onSelectCourse={onSelectCourse} />);
+    expect(screen.getByRole('heading', { name: 'Still to read' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: new RegExp(learn[3].title) }));
+    expect(onSelectCourse).toHaveBeenCalledWith(learn[3].id);
+    const fold = screen.getByRole('button', { name: /2 modules finished/ });
+    expect(fold).toHaveAttribute('aria-expanded', 'false');
+    expect(screen.queryByRole('button', { name: new RegExp(`^01 ${learn[0].title}`) })).not.toBeInTheDocument();
+    fireEvent.click(fold);
+    expect(fold).toHaveAttribute('aria-expanded', 'true');
+    fireEvent.click(screen.getByRole('button', { name: new RegExp(`^01 ${learn[0].title}`) }));
+    expect(onSelectCourse).toHaveBeenCalledWith(learn[0].id);
+  });
+
+  test('on a laptop the module to read next keeps What’s in this module and its topics', () => {
+    render(<ModuleShowcase courses={learn} categoryTitle="Learn" categoryId="learning-cheat-codes" userProgress={worldProgress} onSelectCourse={vi.fn()} />);
+    expect(screen.getByText(/^Topics · /)).toBeInTheDocument();
+    const whats = screen.getByRole('button', { name: 'What’s in this module' });
+    fireEvent.click(whats);
+    expect(screen.getByRole('list', { name: `What’s in ${learn[2].title}` })).toBeInTheDocument();
+  });
+
+  test('the world page has one Back, which leaves to where the student came from', () => {
+    const onBack = vi.fn();
+    render(<ModuleWorldScreen onBack={onBack} courses={learn} categoryTitle="Learn" categoryId="learning-cheat-codes" userProgress={worldProgress} onSelectCourse={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button', { name: 'Back to Modules' }));
+    expect(onBack).toHaveBeenCalledOnce();
+    expect(screen.getAllByRole('button', { name: /Back/ })).toHaveLength(1);
   });
 });

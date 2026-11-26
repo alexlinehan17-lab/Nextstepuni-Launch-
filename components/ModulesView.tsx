@@ -20,7 +20,7 @@ import './module-cards.css';
  * in reverse. Reduced motion turns each move into a plain fade.
  */
 
-import React, { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from 'react';
 import { Search } from 'lucide-react';
 import { type CourseData } from './Library';
 import { type CategoryType } from './KnowledgeTree';
@@ -37,6 +37,7 @@ import { FramePortal } from './ui/Frame';
 import { MODULE_WORLDS, Marks, Readout, WorldArt, isModuleDone, moduleResumePoint, worldOf, worldProgress, worldStyle, type ModuleWorld } from './moduleWorlds';
 import { ChosenRoute, ModuleSearchResults, NotebookSheet, StartingPointsSheet, useModuleDiscovery } from './learning/ModuleDiscovery';
 import { requestModuleResume, takeWorldReturn } from './learning/intents';
+import { ModuleWorldScreen } from './ModuleShowcase';
 
 interface ModulesViewProps {
   onBack: () => void;
@@ -45,9 +46,6 @@ interface ModulesViewProps {
   allCourses: CourseData[];
   categoryTitles: Record<CategoryType, string>;
   userProgress: UserProgress;
-  /** The world's own page, drawn into the door as it opens (and as Back closes it). Without it the
-   *  door simply opens the world. */
-  renderWorld?: (category: CategoryType) => ReactNode;
 }
 
 /* ── Motion: the board's timings (site/src/js/c-modules.js), real speed ─────── */
@@ -93,7 +91,7 @@ function drawProgress(door: HTMLElement, delay: number) {
 
 type Move = { kind: 'open' | 'back'; world: ModuleWorld } | null;
 
-export const ModulesView: React.FC<ModulesViewProps> = ({ onBack, onSelectCategory, onSelectModule, allCourses, userProgress, renderWorld }) => {
+export const ModulesView: React.FC<ModulesViewProps> = ({ onBack, onSelectCategory, onSelectModule, allCourses, categoryTitles, userProgress }) => {
   const phone = useCompactLayout();
   const dark = useSettingsContext()?.settings.darkMode ?? false;
   const leave = useScreenLeave(onBack, 'Back');
@@ -106,7 +104,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({ onBack, onSelectCatego
   const [move, setMove] = useState<Move>(() => {
     const back = takeWorldReturn();
     const world = worldOf(back);
-    return world && renderWorld ? { kind: 'back', world } : null;
+    return world ? { kind: 'back', world } : null;
   });
   const [layerArea, setLayerArea] = useState<CSSProperties | null>(null);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -229,7 +227,6 @@ export const ModulesView: React.FC<ModulesViewProps> = ({ onBack, onSelectCatego
 
   const openWorld = (world: ModuleWorld) => {
     if (busy.current) return;
-    if (!renderWorld) { onSelectCategory(world.id); return; }
     busy.current = true;
     doorFor(world.id)?.classList.add('is-src'); // it stays pressed while it opens
     setMove({ kind: 'open', world });
@@ -334,10 +331,15 @@ export const ModulesView: React.FC<ModulesViewProps> = ({ onBack, onSelectCatego
       </div>
       {phone ? <StartingPointsSheet open={startOpen} onClose={() => setStartOpen(false)} routes={routes} onOpen={onSelectModule} /> : null}
       <NotebookSheet open={notebookOpen} onClose={() => setNotebookOpen(false)} courses={available} onOpen={onSelectModule} />
-      {move && renderWorld ? (
+      {move ? (
         <FramePortal>
           <div ref={layerRef} className="mw-layer frame-takeover" style={layerArea ?? { visibility: 'hidden' }} aria-hidden="true" inert>
-            {layerArea ? <div className="mw-layer-page">{renderWorld(move.world.id)}</div> : null}
+            {layerArea ? (
+              <div className="mw-layer-page">
+                <ModuleWorldScreen onBack={() => {}} onSelectCourse={() => {}} categoryId={move.world.id} categoryTitle={categoryTitles?.[move.world.id] ?? move.world.name}
+                  courses={allCourses.filter(course => course.category === move.world.id)} userProgress={userProgress} />
+              </div>
+            ) : null}
           </div>
         </FramePortal>
       ) : null}

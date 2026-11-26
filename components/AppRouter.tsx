@@ -7,8 +7,6 @@ import { COLORS } from '../design/tokens';
  */
 
 import React, { Suspense, lazy, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { TopBar } from './ui/Bars';
-import { motion } from 'framer-motion';
 import { Eye, EyeOff, Check } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
@@ -29,7 +27,7 @@ import { Library } from './Library';
 // subjectContent* files (~442KB). Loading it eagerly folded all of that into
 // the entry chunk — audit 2026-06-01. Its only other consumer, SubjectModule,
 // is already lazy (moduleRegistry.ts).
-const ModuleShowcase = lazy(() => import('./ModuleShowcase'));
+const ModuleWorldScreen = lazy(() => import('./ModuleShowcase').then(m => ({ default: m.ModuleWorldScreen })));
 import AppLaunch from './AppLaunch';
 import { LegalAgreementGate } from './legal/LegalAgreementGate';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
@@ -48,6 +46,7 @@ import { moduleComponents, InnovationZone } from '../moduleRegistry';
 import { ALL_COURSES, categoryTitles } from '../courseData';
 import { ModulePositionProvider, resolveModulePosition } from '../contexts/ModulePositionContext';
 import { moduleAvailability } from '../utils/courseVisibility';
+import { markWorldReturn } from './learning/intents';
 import { type ModuleProgress, type UserProgress, type UserSettings, type NorthStar, type StudyReflection, type TopicMasteryV2, type UnifiedMockResult } from '../types';
 import { type StreakData } from '../hooks/useStreak';
 import { type FocusRecommendation } from '../hooks/useTodaysFocus';
@@ -787,37 +786,21 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     // its displayed module numbers also work for filtered JC/subject views.
     const categoryCourses = studentCourses.filter(c => c.category === currentCategory);
 
-    // Showcase view for all main categories
+    // A world's page (area 5): its own bar with one Back, then the module to read next. Back to
+    // Modules closes the world into its door (ModulesView plays the move when it mounts).
     const showcaseCategories: string[] = ['architecture-mindset', 'science-growth', 'learning-cheat-codes', 'subject-specific-science', 'exam-zone'];
     if (showcaseCategories.includes(currentCategory)) {
       return (
-        // Page transition from ModulesView's hero — fade + lift + slight
-        // scale so the carousel arrives feeling like the hero opened up,
-        // not like a hard route change. ~450ms total.
-        <motion.div
-          initial={mobileAppDesign ? { opacity: 0, y: 8 } : { opacity: 0, y: 18, scale: 0.985 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: mobileAppDesign ? 0.2 : 0.45, ease: [0.16, 1, 0.3, 1] }}
-          className="min-h-screen bg-white dark:bg-surface-canvas"
-        >
-          {/* Header */}
-          {/* The world's bar: one Back, top left (the shared top bar). */}
-          <div data-student-page-header className="frame-top z-50 md:px-10 bg-[var(--surface-canvas)]">
-            <TopBar ruled leave={{ kind: 'back', onPress: handleBack, label: 'Back to modules' }} />
-          </div>
-          {/* Showcase */}
-          <div className="frame-page [--frame-pad-top:7rem] md:[--frame-pad-top:8rem] pb-24 md:pb-12 flex items-center justify-center" style={{ minHeight: 'calc(100vh - 80px)' }}>
-            <Suspense fallback={<LoadingSpinner variant="compact" calm placement="panel" label={`Opening ${categoryTitles[currentCategory]}`} />}>
-              <ModuleShowcase
-                courses={categoryCourses}
-                categoryTitle={categoryTitles[currentCategory]}
-                categoryId={currentCategory}
-                userProgress={userProgress}
-                onSelectCourse={handleSelectModule}
-              />
-            </Suspense>
-          </div>
-        </motion.div>
+        <Suspense fallback={<LoadingSpinner variant="compact" calm placement="panel" label={`Opening ${categoryTitles[currentCategory]}`} />}>
+          <ModuleWorldScreen
+            onBack={() => { markWorldReturn(currentCategory); handleBack(); }}
+            courses={categoryCourses}
+            categoryTitle={categoryTitles[currentCategory]}
+            categoryId={currentCategory}
+            userProgress={userProgress}
+            onSelectCourse={handleSelectModule}
+          />
+        </Suspense>
       );
     }
 

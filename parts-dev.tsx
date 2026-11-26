@@ -385,6 +385,7 @@ function FieldsSection() {
           <PressBox onPress={() => {}}><span className="t-row block">Exam paper</span><span className="t-meta">PDF · 2.4 MB</span></PressBox>
           <PressBox onPress={() => {}}><span className="t-row block">Marking scheme</span><span className="t-meta">PDF · 519 KB</span></PressBox>
         </div>
+        <PressBox expanded={false} onPress={() => {}}><span className="t-row block">9 modules finished</span><span className="t-meta">expanded: it opens a list in place under itself (a world's finished modules)</span></PressBox>
       </Spec>
       <Spec label="The raised sheet (level 2)" caption="At most one per screen, for the thing the screen is about.">
         <div className="px-1 pt-2 pb-1">
