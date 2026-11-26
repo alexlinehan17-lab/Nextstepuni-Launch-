@@ -160,7 +160,6 @@
    "button": 2
   },
   "components/FirstVisitCoachMarks.tsx": {
-   "button": 3,
    "pop-up": 1
   },
   "components/FutureFinder.tsx": {
@@ -186,9 +185,6 @@
   "components/GrowthMindsetModule.tsx": {
    "button": 9
   },
-  "components/HomeNextStep.tsx": {
-   "button": 6
-  },
   "components/HopeProtocolModule.tsx": {
    "button": 5
   },
@@ -199,9 +195,6 @@
    "button": 1
   },
   "components/InnovationZone.tsx": {
-   "button": 3
-  },
-  "components/InsightsView.tsx": {
    "button": 3
   },
   "components/JCComingSoon.tsx": {
@@ -220,9 +213,6 @@
   },
   "components/LearningMathModule.tsx": {
    "button": 13
-  },
-  "components/LearningPathsView.tsx": {
-   "button": 3
   },
   "components/LeavingCertStrategyModule.tsx": {
    "button": 5
@@ -361,10 +351,6 @@
   },
   "components/ModulesView.tsx": {
    "button": 4
-  },
-  "components/MyDirection.tsx": {
-   "button": 4,
-   "dropdown": 1
   },
   "components/NeuroplasticityProtocolModule.tsx": {
    "button": 7
@@ -515,7 +501,7 @@
    "button": 1
   },
   "components/StudentHomeContent.tsx": {
-   "button": 3,
+   "button": 2,
    "dropdown": 1
   },
   "components/StudyDebrief.tsx": {
@@ -594,9 +580,6 @@
   },
   "components/WipTools.tsx": {
    "button": 2
-  },
-  "components/YearPlansView.tsx": {
-   "button": 3
   },
   "components/YearTransitionFlow.tsx": {
    "button": 8,

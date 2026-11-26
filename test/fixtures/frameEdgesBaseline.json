@@ -57,10 +57,6 @@
   "components/ExamHallStrategiesModule.tsx": {
    "inset-0": 2
   },
-  "components/FirstVisitCoachMarks.tsx": {
-   "fixed": 1,
-   "inset-0": 2
-  },
   "components/FutureFinderResults.tsx": {
    "fixed": 1,
    "inset-0": 1
@@ -281,10 +277,6 @@
    "fixed": 2,
    "inset-0": 2
   },
-  "components/journey/paper/paper.css": {
-   "env(safe-area-": 6,
-   "var(--sa*)": 1
-  },
   "components/kobra-navigation-runtime.css": {
    "fixed": 1
   },
@@ -321,9 +313,6 @@
   "components/learning/module-brand-review.css": {
    "100vh": 1
   },
-  "components/learning/reader.css": {
-   "var(--sa*)": 1
-  },
   "components/legal/legal-document.css": {
    "env(safe-area-": 4,
    "fixed": 3
@@ -333,14 +322,10 @@
    "var(--sa*)": 2
   },
   "components/onboarding/onboarding.css": {
-   "env(safe-area-": 2,
    "fixed": 1
   },
   "components/setup/YourSetupView.tsx": {
    "h-screen": 1
-  },
-  "components/setup/your-setup.css": {
-   "var(--sa*)": 1
   },
   "components/sign-in-directions/sign-in-directions.css": {
    "fixed": 1

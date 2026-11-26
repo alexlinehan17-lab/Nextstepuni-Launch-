@@ -78,7 +78,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
   };
 
   return (
-    <div className="pp-page min-h-screen">
+    <div className="theme-compat pp-page min-h-screen">
       <div className="pp-bar"><div className="pp-width"><PageHeader onBack={onBack} eyebrow="Plan ahead" title="Year Plans" /></div></div>
       <div className="pp-width pp-body">
         <p className="t-sub pp-intro">

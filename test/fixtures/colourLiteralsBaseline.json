@@ -128,10 +128,6 @@
   "components/ExaminersChair/receipt.ts": {
    "hex": 7
   },
-  "components/FirstVisitCoachMarks.tsx": {
-   "hex": 4,
-   "rgb(": 3
-  },
   "components/FutureFinder.tsx": {
    "hex": 22,
    "rgb(": 9,
@@ -160,9 +156,6 @@
    "rgb(": 2,
    "tailwind [#…]": 2
   },
-  "components/InsightsView.tsx": {
-   "tailwind [#…]": 2
-  },
   "components/JCComingSoon.tsx": {
    "hex": 6,
    "tailwind [#…]": 4
@@ -176,10 +169,6 @@
   "components/LearningMathModule.tsx": {
    "hex": 116,
    "zinc/neutral-9xx surface": 2
-  },
-  "components/LearningPathsView.tsx": {
-   "hex": 9,
-   "rgb(": 13
   },
   "components/Library.tsx": {
    "tailwind [#…]": 1,
@@ -495,11 +484,6 @@
   "components/WorldIconBlob.tsx": {
    "hex": 5
   },
-  "components/YearPlansView.tsx": {
-   "hex": 18,
-   "rgb(": 14,
-   "tailwind [#…]": 2
-  },
   "components/YearTransitionFlow.tsx": {
    "hex": 13,
    "tailwind [#…]": 24
@@ -515,7 +499,7 @@
    "rgb(": 1
   },
   "components/account-live.css": {
-   "hex": 20
+   "hex": 19
   },
   "components/account/DataRightsModal.tsx": {
    "hex": 4
@@ -812,26 +796,17 @@
   "components/onboarding/appearance.css": {
    "hex": 11
   },
-  "components/onboarding/desktop.css": {
-   "hex": 21
-  },
   "components/onboarding/grade-options.css": {
    "hex": 50
   },
-  "components/onboarding/onboarding.css": {
-   "hex": 44
-  },
   "components/onboarding/setup-select.css": {
-   "hex": 32
+   "hex": 25
   },
   "components/sectionIcons.tsx": {
    "hex": 2
   },
   "components/settings-modal.css": {
    "hex": 14
-  },
-  "components/setup/your-setup.css": {
-   "hex": 1
   },
   "components/shared/SubjectTilePicker.tsx": {
    "hex": 4,
@@ -853,7 +828,7 @@
    "hex": 5
   },
   "components/student-screens.css": {
-   "hex": 21
+   "hex": 17
   },
   "components/study/StudySessionView.mobile.tsx": {
    "tailwind [#…]": 4
