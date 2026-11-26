@@ -20,7 +20,7 @@
  * with a hair of lift" (26 Nov 2026). Read-only content is not boxed.
  */
 import { type ButtonHTMLAttributes, type ReactNode } from 'react';
-import { ChevronRight } from 'lucide-react';
+import { ArrowRight, ChevronDown, ChevronRight } from 'lucide-react';
 import ThemeArtwork from '../ThemeArtwork';
 import './parts.css';
 
@@ -56,12 +56,18 @@ export interface RowProps {
   tone?: 'danger';
   /** The row opens something: it is a button with a chevron and a pressed state. */
   onPress?: () => void;
+  /** The row moves forward to the next part of the same screen ("Next · 2 of 5, Study"):
+   *  an arrow-right in place of the chevron. */
+  forward?: boolean;
+  /** The row opens in place, under itself (a mock's subjects): aria-expanded, and a
+   *  chevron-down that turns up while it is open. */
+  expanded?: boolean;
   /** Or a link. */
   href?: string;
   className?: string;
 }
 
-export function Row({ title, over, meta, art, label, coach, icon, tone, value, trailing, onPress, href, className = '' }: RowProps) {
+export function Row({ title, over, meta, art, label, coach, icon, tone, value, trailing, onPress, href, forward = false, expanded, className = '' }: RowProps) {
   const pressable = Boolean(onPress || href);
   const content = (
     <>
@@ -75,14 +81,18 @@ export function Row({ title, over, meta, art, label, coach, icon, tone, value, t
       </span>
       {value !== undefined && value !== null ? <span className="ui-row-value ui-readout">{value}</span> : null}
       {trailing ?? null}
-      {pressable && !trailing && tone !== 'danger' ? <ChevronRight className="ui-icon ui-row-chev" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" /> : null}
+      {pressable && !trailing && tone !== 'danger'
+        ? forward ? <ArrowRight className="ui-icon ui-row-chev" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+          : expanded !== undefined ? <ChevronDown className="ui-icon ui-row-chev ui-row-chev--down" data-open={expanded || undefined} width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+            : <ChevronRight className="ui-icon ui-row-chev" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+        : null}
     </>
   );
   const classes = `ui-part ui-row${tone === 'danger' ? ' ui-row--danger' : ''} ${className}`.trim();
   return (
     <li className="ui-row-item">
       {href ? <a className={classes} href={href} aria-label={label} data-coach={coach}>{content}</a>
-        : onPress ? <button type="button" className={classes} onClick={onPress} aria-label={label} data-coach={coach}>{content}</button>
+        : onPress ? <button type="button" className={classes} onClick={onPress} aria-label={label} aria-expanded={expanded} data-coach={coach}>{content}</button>
           : <div className={classes}>{content}</div>}
     </li>
   );

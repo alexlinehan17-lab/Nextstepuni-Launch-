@@ -1,6 +1,6 @@
 import React from 'react';
 import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
-import { fireEvent, render, screen, within } from '@testing-library/react';
+import { act, fireEvent, render, screen, within } from '@testing-library/react';
 import { ALL_COURSES } from '@/courseData';
 import { createDemoStudentLoadedData } from '@/data/devStudent';
 import type { StudySessionRecord } from '@/utils/strategyRegistry';
@@ -67,79 +67,70 @@ function makeSession(id: string, subject: string, minutes: number, confidenceAft
   };
 }
 
-function chooseSubject(subject: string) {
-  fireEvent.click(screen.getByRole('button', { name: 'Filter by subject' }));
-  fireEvent.click(within(screen.getByRole('group', { name: 'Filter by subject' })).getByRole('checkbox', { name: subject }));
-  fireEvent.click(screen.getByRole('button', { name: 'Filter by subject' }));
+/** One subject at a time from the shared menu (the agreed board: "a short menu with a tick"). */
+async function chooseSubject(subject: string) {
+  fireEvent.click(screen.getByRole('button', { name: /Filter by subject/ }));
+  fireEvent.click(await screen.findByRole('menuitemradio', { name: subject }));
+  await act(async () => { await new Promise(resolve => setTimeout(resolve, 30)); });
 }
+/** A sheet leaves in 320ms; wait until it has gone before using the page under it. */
+async function closeSheet() {
+  fireEvent.click(screen.getByRole('button', { name: 'Close' }));
+  await act(async () => { await new Promise(resolve => setTimeout(resolve, 400)); });
+}
+const total = (container: HTMLElement) => container.querySelector('.pr-focus-total')?.textContent;
 
 describe('student analytics dashboard', () => {
   beforeEach(() => {
-    vi.useFakeTimers();
+    // Only the date is fixed: the shared menu and sheet run their own timers.
+    vi.useFakeTimers({ toFake: ['Date'] });
     vi.setSystemTime(new Date(2026, 7, 14, 12));
   });
 
   afterEach(() => vi.useRealTimers());
 
   test('renders recorded session, confidence and programme data without replacing Five Climbs', () => {
-    render(
-      <DashboardView
-        userProgress={{ 'mind-1': { unlockedSection: 2 } }}
-        allCourses={COURSES}
-        categoryTitles={{} as never}
-        streak={{ currentStreak: 4, longestStreak: 9, lastActiveDate: '2026-08-14' }}
-        recommendation={null}
-        onSelectModule={vi.fn()}
-        onBack={vi.fn()}
-        pointsEarned={240}
-        studySessions={[
-          makeSession('1', 'Biology', 25, 4),
-          makeSession('2', 'English', 10, 5),
-        ]}
-      />,
-    );
+    const props = {
+      userProgress: { 'mind-1': { unlockedSection: 2 } }, allCourses: COURSES, categoryTitles: {} as never,
+      streak: { currentStreak: 4, longestStreak: 9, lastActiveDate: '2026-08-14' }, recommendation: null,
+      onSelectModule: vi.fn(), onBack: vi.fn(), pointsEarned: 240,
+      studySessions: [makeSession('1', 'Biology', 25, 4), makeSession('2', 'English', 10, 5)],
+    };
+    const { container, rerender } = render(<DashboardView {...props} />);
 
-    expect(screen.getByText('35m', { selector: '.pr-focus-total' })).toBeInTheDocument();
+    expect(total(container)).toBe('35m');
     expect(screen.getByText('4.5')).toBeInTheDocument();
     expect(screen.getByTestId('five-climbs')).toBeInTheDocument();
+    // The study activity graph and the methods are the Study part's (the agreed board).
+    rerender(<DashboardView {...props} activeTab="study" />);
     expect(screen.getByRole('img', { name: 'Study activity chart showing sessions' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Active Recall' })).toBeInTheDocument();
   });
 
-  test('switches the activity measure and subject filter without changing the source data', () => {
-    render(
-      <DashboardView
-        userProgress={{}}
-        allCourses={COURSES}
-        categoryTitles={{} as never}
-        streak={{ currentStreak: 0, longestStreak: 0, lastActiveDate: '' }}
-        recommendation={null}
-        onSelectModule={vi.fn()}
-        onBack={vi.fn()}
-        pointsEarned={0}
-        studySessions={[
-          makeSession('1', 'Biology', 25, 4),
-          makeSession('2', 'English', 10, 5),
-        ]}
-      />,
-    );
+  test('switches the activity measure and subject filter without changing the source data', async () => {
+    const props = {
+      userProgress: {}, allCourses: COURSES, categoryTitles: {} as never,
+      streak: { currentStreak: 0, longestStreak: 0, lastActiveDate: '' }, recommendation: null,
+      onSelectModule: vi.fn(), onBack: vi.fn(), pointsEarned: 0,
+      studySessions: [makeSession('1', 'Biology', 25, 4), makeSession('2', 'English', 10, 5)],
+    };
+    const { container, rerender } = render(<DashboardView {...props} activeTab="study" />);
 
-    fireEvent.click(screen.getByRole('tab', { name: 'Minutes' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Show minutes' }));
     expect(screen.getByRole('img', { name: 'Study activity chart showing minutes' })).toBeInTheDocument();
 
-    chooseSubject('Biology');
-    expect(screen.getByText('25m', { selector: '.pr-focus-total' })).toBeInTheDocument();
-    chooseSubject('English');
-    expect(screen.getByText('35m', { selector: '.pr-focus-total' })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Filter by subject' })).toHaveTextContent('2 subjects selected');
-    fireEvent.click(screen.getByRole('button', { name: 'Remove Biology' }));
-    expect(screen.getByText('10m', { selector: '.pr-focus-total' })).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: 'Remove English' }));
-    expect(screen.getByText('35m', { selector: '.pr-focus-total' })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Filter by subject' })).toHaveTextContent('All subjects');
+    rerender(<DashboardView {...props} activeTab="overview" />);
+    await chooseSubject('Biology');
+    expect(total(container)).toBe('25m');
+    await chooseSubject('English');
+    expect(total(container)).toBe('10m');
+    expect(screen.getByRole('button', { name: /Filter by subject/ })).toHaveTextContent('English');
+    await chooseSubject('All subjects');
+    expect(total(container)).toBe('35m');
+    expect(screen.getByRole('button', { name: /Filter by subject/ })).toHaveTextContent('All subjects');
   });
 
-  test('reveals confidence insights for the visible filters and keeps the chart in view', () => {
+  test('reveals confidence insights for the visible filters and keeps the chart in view', async () => {
     const sessions = [2, 3, 4].map((score, index) => {
       const completed = new Date(2026, 7, 10 + (index * 2), 12).getTime();
       const record = makeSession(String(index + 1), 'Biology', 25, score);
@@ -162,25 +153,24 @@ describe('student analytics dashboard', () => {
         onBack={vi.fn()}
         pointsEarned={60}
         studySessions={sessions}
+        activeTab="confidence"
       />,
     );
 
-    expect(screen.getAllByText('Insights')).toHaveLength(3);
-    const confidenceCard = screen.getByRole('region', { name: 'Confidence over time' });
-    expect(confidenceCard).not.toBeNull();
-    const card = within(confidenceCard as HTMLElement);
+    const card = within(screen.getByRole('region', { name: 'Confidence over time' }));
     const toggle = card.getByRole('button', { name: 'Show confidence chart insights' });
-
+    expect(toggle).toHaveTextContent('Insights');
+    // The insights open in the shared sheet (a dialog from 640px).
     fireEvent.click(toggle);
-
-    expect(toggle).toHaveAttribute('aria-expanded', 'true');
-    expect(screen.getByRole('region', { name: 'Chart insights' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Biology' })).toBeInTheDocument();
-    expect(screen.getByText('Trending upward')).toBeInTheDocument();
+    const sheet = within(await screen.findByRole('dialog', { name: 'What the pattern suggests' }));
+    expect(sheet.getByRole('region', { name: 'Chart insights' })).toBeInTheDocument();
+    expect(sheet.getByRole('heading', { name: 'Biology' })).toBeInTheDocument();
+    expect(sheet.getByText('Trending upward')).toBeInTheDocument();
+    await closeSheet();
     expect(card.getByRole('img', { name: 'Confidence over time by subject' })).toBeInTheDocument();
   });
 
-  test('keeps full-mock totals comparable and scopes mock guidance to the subject filter', () => {
+  test('keeps full-mock totals comparable and scopes mock guidance to the subject filter', async () => {
     const mockResults: UnifiedMockResult[] = [
       {
         id: 'full-one', label: 'Full one', date: '2026-08-10', totalPoints: 350,
@@ -216,33 +206,33 @@ describe('student analytics dashboard', () => {
         onBack={vi.fn()}
         pointsEarned={0}
         mockResults={mockResults}
+        activeTab="practice"
       />,
     );
 
-    const mockCardElement = screen.getByRole('heading', { name: 'Mock trajectory' }).closest('article');
-    expect(mockCardElement).not.toBeNull();
-    const mockCard = within(mockCardElement as HTMLElement);
-    expect(mockCard.getByRole('img', { name: 'Mock exam total points trajectory' })).toBeInTheDocument();
-    fireEvent.click(mockCard.getByRole('tab', { name: 'The record' }));
-    expect(mockCard.getByText('Full one')).toBeInTheDocument();
-    expect(mockCard.getByText('Full two')).toBeInTheDocument();
-    expect(mockCard.queryByText('Biology paper')).not.toBeInTheDocument();
+    const mockCard = () => within(screen.getByRole('heading', { name: 'Mock trajectory' }).closest('section') as HTMLElement);
+    // The record is first on the agreed board; the line is one tap away.
+    expect(mockCard().getByText('Full one')).toBeInTheDocument();
+    expect(mockCard().getByText('Full two')).toBeInTheDocument();
+    expect(mockCard().queryByText('Biology paper')).not.toBeInTheDocument();
+    fireEvent.click(mockCard().getByRole('button', { name: 'Show the chart' }));
+    expect(mockCard().getByRole('img', { name: 'Mock exam total points trajectory' })).toBeInTheDocument();
 
-    fireEvent.click(mockCard.getByRole('button', { name: 'Show mock trajectory insights' }));
-    expect(screen.getByRole('heading', { name: 'Total points' })).toBeInTheDocument();
+    fireEvent.click(mockCard().getByRole('button', { name: 'Show mock trajectory insights' }));
+    expect(await screen.findByRole('heading', { name: 'Total points' })).toBeInTheDocument();
     expect(screen.getByText(/2 full mock sittings/)).toBeInTheDocument();
+    await closeSheet();
 
-    chooseSubject('Biology');
-    fireEvent.click(mockCard.getByRole('button', { name: 'Show mock trajectory insights' }));
-    expect(screen.getByRole('heading', { name: 'Biology results' })).toBeInTheDocument();
+    await chooseSubject('Biology');
+    fireEvent.click(mockCard().getByRole('button', { name: 'Show mock trajectory insights' }));
+    expect(await screen.findByRole('heading', { name: 'Biology results' })).toBeInTheDocument();
     expect(screen.queryByRole('heading', { name: 'Subject movement' })).not.toBeInTheDocument();
     expect(screen.getByText(/3 results/)).toBeInTheDocument();
   });
 
   test('lights up every analytics section with the localhost demo history', () => {
     const demo = createDemoStudentLoadedData(new Date(2026, 7, 14, 12));
-
-    render(
+    const view = (tab: 'overview' | 'study' | 'confidence' | 'practice') => (
       <DashboardView
         userProgress={demo.userProgress}
         allCourses={ALL_COURSES}
@@ -259,20 +249,27 @@ describe('student analytics dashboard', () => {
         topicMastery={demo.rawProgressDoc.topicMasteryV2}
         mockResults={demo.rawProgressDoc.unifiedMockResults}
         timetableCompletions={demo.timetableCompletions}
-      />,
+        activeTab={tab}
+      />
     );
+    const { rerender } = render(view('overview'));
+    expect(screen.getByRole('group', { name: 'Focus time in the selected period' })).toBeInTheDocument();
+    expect(screen.getByRole('img', { name: /^Of \d+ topics:/ })).toBeInTheDocument();
 
+    rerender(view('study'));
     expect(screen.getByRole('img', { name: 'Study activity chart showing sessions' })).toBeInTheDocument();
-    expect(screen.getByRole('img', { name: 'Confidence over time by subject' })).toBeInTheDocument();
-    expect(screen.getByRole('img', { name: 'Mock exam total points trajectory' })).toBeInTheDocument();
-    expect(screen.getByRole('navigation', { name: 'Choose a method' })).toBeInTheDocument();
-
-    fireEvent.click(screen.getByRole('tab', { name: 'Confidence' }));
-    expect(screen.getByRole('group', { name: 'Readiness levels' })).toBeInTheDocument();
-
-    fireEvent.click(screen.getByRole('tab', { name: 'Study' }));
-    expect(screen.getByRole('img', { name: /^Thirteen week study rhythm:/ })).toBeInTheDocument();
     expect(screen.getByRole('group', { name: 'Session types' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Choose a method/ })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Show the rhythm' }));
+    expect(screen.getByRole('img', { name: /^Thirteen week study rhythm:/ })).toBeInTheDocument();
+
+    rerender(view('confidence'));
+    expect(screen.getByRole('img', { name: 'Confidence over time by subject' })).toBeInTheDocument();
+
+    rerender(view('practice'));
+    expect(screen.getByRole('group', { name: 'Readiness levels' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Show the chart' }));
+    expect(screen.getByRole('img', { name: 'Mock exam total points trajectory' })).toBeInTheDocument();
   });
 
   test('keeps goals, rank, strategy milestones and achievements inside My Progress', () => {
@@ -328,7 +325,7 @@ describe('student analytics dashboard', () => {
     expect(onStartStudy).toHaveBeenCalledTimes(1);
   });
 
-  test('exposes the theme control as a switch', () => {
+  test('leaves the theme to the menu under the student\'s name: the agreed page has no toggle of its own', () => {
     render(
       <DashboardView
         userProgress={{}}
@@ -344,6 +341,6 @@ describe('student analytics dashboard', () => {
       />,
     );
 
-    expect(screen.getByRole('switch', { name: 'Switch to light mode (Beta)' })).toHaveAttribute('aria-checked', 'true');
+    expect(screen.queryByRole('switch', { name: /Switch to (light|dark) mode/ })).not.toBeInTheDocument();
   });
 });

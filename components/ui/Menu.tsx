@@ -47,8 +47,13 @@ export interface MenuProps<V extends string> {
   value: V;
   /** Called the moment an option is tapped; the menu closes itself. */
   onChange: (value: V) => void;
-  /** Show the position after the value: "Overview · 1 of 5" (moving between the parts of a screen). */
+  /** Show the position after the value: "Overview · 1 of 5" (moving between the parts of a screen).
+   *  In a full-width button the position sits at the trailing edge in the readout mono. */
   count?: boolean;
+  /** Number the options "01", "02" in the readout mono, before each name (the parts of a screen). */
+  numbered?: boolean;
+  /** A readout at the trailing edge of a full-width button, about the current value ("2 entries"). */
+  detail?: ReactNode;
   /** Full width, the chevron at the trailing edge. */
   block?: boolean;
   /** Which side of the button it prefers; it moves to the other when there is no room. */
@@ -73,18 +78,21 @@ export function menuCollisionPadding() {
   };
 }
 
-export function Menu<V extends string>({ label, options, value, onChange, count = false, block = false, side = 'bottom', className = '' }: MenuProps<V>) {
+export function Menu<V extends string>({ label, options, value, onChange, count = false, numbered = false, detail, block = false, side = 'bottom', className = '' }: MenuProps<V>) {
   const [open, setOpen] = useState(false);
   const index = options.findIndex(option => option.value === value);
   const current = options[index];
+  const position = count && index >= 0 ? `${index + 1} of ${options.length}` : null;
   return (
     <BaseMenu.Root open={open} onOpenChange={setOpen}>
       <BaseMenu.Trigger className={`ui-part ui-menu-btn${block ? ' ui-menu-btn--block' : ''} ${className}`.trim()}>
         <span className="ui-menu-btn-text">
           <span className="sr-only">{label}: </span>
           {current?.short ?? current?.label}
-          {count && index >= 0 ? <span className="ui-menu-btn-count">{` · ${index + 1} of ${options.length}`}</span> : null}
+          {position && !block ? <span className="ui-menu-btn-count">{` · ${position}`}</span> : null}
         </span>
+        {position && block ? <span className="ui-menu-btn-count ui-menu-btn-count--end ui-readout"><span className="sr-only"> · </span>{position}</span> : null}
+        {detail && !position ? <span className="ui-menu-btn-count ui-menu-btn-count--end ui-readout"><span className="sr-only"> · </span>{detail}</span> : null}
         <ChevronDown className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" focusable="false" />
       </BaseMenu.Trigger>
       <BaseMenu.Portal>
@@ -97,9 +105,12 @@ export function Menu<V extends string>({ label, options, value, onChange, count 
         >
           <BaseMenu.Popup className="ui-part ui-menu" aria-label={label}>
             <BaseMenu.RadioGroup value={value} onValueChange={next => onChange(next as V)}>
-              {options.map(option => (
+              {options.map((option, place) => (
                 <BaseMenu.RadioItem key={option.value} value={option.value} closeOnClick className="ui-menu-item">
-                  <span>{option.label}</span>
+                  <span className={numbered ? 'ui-menu-item-text' : undefined}>
+                    {numbered ? <i className="ui-menu-num ui-readout" aria-hidden="true">{String(place + 1).padStart(2, '0')}</i> : null}
+                    {numbered ? <span>{option.label}</span> : option.label}
+                  </span>
                   <Check className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
                 </BaseMenu.RadioItem>
               ))}

@@ -25,7 +25,7 @@ import './index.css';
 import { ChartNoAxesColumn, ChevronLeft, Compass, Ellipsis, House, Map, Search, Timer } from 'lucide-react';
 import IllustrationTheme from './components/IllustrationTheme';
 import { Arrow, Button, Glyph, IconButton, TextButton } from './components/ui/Button';
-import { ChoiceGroup, SelectionBar, SelectionMark, Switch } from './components/ui/Choice';
+import { ChoiceGroup, SelectionBar, SelectionMark, SelectionWords, Switch } from './components/ui/Choice';
 import { Menu } from './components/ui/Menu';
 import { Confirm, Sheet } from './components/ui/Sheet';
 import { MessageHost, showMessage } from './components/ui/Message';
@@ -172,6 +172,7 @@ function ChoosingSection() {
   const [show, setShow] = useState('paper');
   const [goal, setGoal] = useState('10');
   const [section, setSection] = useState('overview');
+  const [period, setPeriod] = useState('week');
   return (
     <Section id="part-choosing" title="Choosing">
       <Spec label="One answer" caption="An outlined tile; chosen, it keeps its white face and gains an ink outline. Its round mark fills ink and the tick draws.">
@@ -199,8 +200,12 @@ function ChoosingSection() {
         <SelectionBar label="Sessions this week" value={goal} onChange={setGoal}
           options={[{ value: '6', label: '6' }, { value: '8', label: '8' }, { value: '10', label: '10' }, { value: '12', label: '12' }]} />
       </Spec>
-      <Spec label="Moving between the parts of a screen" caption="A menu button with a count, never a bar.">
+      <Spec label="Moving between the parts of a screen" caption="A menu button with a count, never a bar. Full width, the count stands at the end in the mono and the parts are numbered.">
         <Line><Menu label="Progress section" count value={section} onChange={setSection} options={SECTIONS} /></Line>
+        <Menu label="Progress section" count numbered block value={section} onChange={setSection} options={SECTIONS} />
+      </Spec>
+      <Spec label="Choices as words" caption="Week, Month and Year; the Fieldbook's pages. The current word is ink with a short ink line under it; no tray.">
+        <SelectionWords label="Period" value={period} onChange={setPeriod} options={[{ value: 'week', label: 'Week' }, { value: 'month', label: 'Month' }, { value: 'year', label: 'Year' }]} />
       </Spec>
     </Section>
   );
@@ -323,6 +328,7 @@ function BarsSection() {
 
 function FieldsSection() {
   const [on, setOn] = useState(true);
+  const [rowOpen, setRowOpen] = useState(false);
   return (
     <Section id="part-fields" title="Field, rows, the sheet, the box">
       <Spec label="A field">
@@ -337,6 +343,12 @@ function FieldsSection() {
           <Row title="Sessions this week" value="6 / 8" />
           <Row title="Offer me questions when I finish" trailing={<Switch checked={on} onChange={setOn} label="Offer me questions when I finish" />} />
           <Row art={<img src={CREW.irish} alt="" />} title="Irish" meta="Practice · 45 min" label="Study Irish: Practice, 45 minutes" onPress={() => {}} />
+        </List>
+      </Spec>
+      <Spec label="Rows that move forward or open in place" caption="The next part of a screen ends in an arrow (it moves forward). A row that opens under itself ends in a chevron-down that turns up while it is open.">
+        <List>
+          <Row over="Next · 2 of 5" title="Study" forward onPress={() => {}} />
+          <Row title="Latest practice mock" meta="24 Nov · one sitting recorded so far" value="506 points" expanded={rowOpen} onPress={() => setRowOpen(open => !open)} />
         </List>
       </Spec>
       <Spec label="Rows with an icon" caption="The account sheet's rows: a bare 20px glyph in ink-2 at the left. A destructive row is red words with no arrow.">

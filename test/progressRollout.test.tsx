@@ -2,11 +2,12 @@ import React from 'react';
 import type * as Recharts from 'recharts';
 import type * as Motion from 'motion/react';
 import { describe, expect, it, vi } from 'vitest';
-import { fireEvent, render, screen, within } from '@testing-library/react';
+import { act, fireEvent, render, screen, within } from '@testing-library/react';
 import { buildMethodJournal, confidenceChartData, selectSubjects, subjectColour } from '../components/dashboard/progress/progressData';
-import { ProgressConfidence, ProgressSubjects } from '../components/dashboard/progress/ProgressCharts';
+import { ProgressConfidence } from '../components/dashboard/progress/ProgressCharts';
+import { SubjectBars } from '../components/dashboard/progress/ProgressParts';
+import { ProgressGraph } from '../components/dashboard/progress/ProgressGraph';
 import { MethodJournal } from '../components/dashboard/progress/MethodJournal';
-import { ProgressSummary } from '../components/dashboard/progress/ProgressSummary';
 import KobraScope from '../components/approved-ui-runtime';
 import type { StudySessionRecord } from '../utils/strategyRegistry';
 import type { DebriefEntry } from '../components/StudyDebrief';
@@ -67,7 +68,7 @@ describe('approved Progress rollout', () => {
   });
 
   it('renders every subject with continuous coloured lines and filled markers in both views', () => {
-    const { container } = render(<KobraScope sound={false}><ProgressConfidence observations={observations} bounds={bounds} subjects={subjects} universe={subjects} insights={null} /></KobraScope>);
+    const { container } = render(<KobraScope sound={false}><ProgressConfidence observations={observations} bounds={bounds} subjects={subjects} universe={subjects} /></KobraScope>);
     const assertLines = () => {
       const lines = Array.from(container.querySelectorAll('.recharts-line-curve'));
       expect(lines).toHaveLength(7);
@@ -85,66 +86,60 @@ describe('approved Progress rollout', () => {
       });
     };
     assertLines();
-    fireEvent.click(screen.getByRole('tab', { name: 'By subject' }));
+    // The shared selection bar is a radio group (Together / By subject).
+    fireEvent.click(screen.getByRole('radio', { name: 'By subject' }));
     expect(container.querySelectorAll('.pr-confidence-grid > article')).toHaveLength(7);
     assertLines();
     fireEvent.click(within(screen.getByRole('group', { name: 'Subjects to compare' })).getByRole('checkbox', { name: 'Irish' }));
     expect(container.querySelectorAll('.recharts-line-curve')).toHaveLength(6);
   });
 
-  it('keeps every subject in the Star Crew chart, including an eighth historical subject', () => {
+  it('keeps every subject, with its character, in the subject bars, including an eighth historical subject', () => {
     const values = [...subjects, 'Biology'].map((label, index) => ({ id: label, label, value: index * 10 + 10 }));
-    const { container } = render(<KobraScope sound={false}><ProgressSubjects values={values} period="September" /></KobraScope>);
-    expect(container.querySelectorAll('.pr-crew-bar')).toHaveLength(8);
-    expect(container.querySelectorAll('.pr-crew-bar .pr-subject-art')).toHaveLength(8);
-    fireEvent.click(screen.getByRole('tab', { name: 'A–Z' }));
-    expect(container.querySelector('.pr-bar-column')?.textContent).toContain('Accounting');
+    const { container, rerender } = render(<SubjectBars values={values} order="time" />);
+    expect(container.querySelectorAll('.mp-bar')).toHaveLength(8);
+    expect(container.querySelectorAll('.mp-bar .mp-bar-art')).toHaveLength(8);
+    expect(container.querySelector('.mp-bar-title')?.textContent).toBe('Biology');
+    rerender(<SubjectBars values={values} order="name" />);
+    expect(container.querySelector('.mp-bar-title')?.textContent).toContain('Accounting');
     expect(screen.getByRole('img', { name: /Biology: 80 minutes/ })).toBeInTheDocument();
   });
 
-  it('falls back to a valid method when filters remove the currently open one', () => {
+  it('falls back to a valid method when filters remove the currently open one', async () => {
     const methods = buildMethodJournal([session('1', 'Irish', '2026-09-22', ['mastering-active-recall-protocol'])], [debrief('1', 'Geography', '2026-09-23', 'flashcards')], 'week', now);
     const { rerender } = render(<KobraScope sound={false}><MethodJournal methods={methods} period="This week" /></KobraScope>);
-    fireEvent.click(screen.getByRole('button', { name: /Flashcards/ }));
+    // The methods are a menu now (the agreed board): open it and choose Flashcards.
+    fireEvent.click(screen.getByRole('button', { name: /Choose a method/ }));
+    fireEvent.click(await screen.findByRole('menuitemradio', { name: 'Flashcards' }));
+    await act(async () => { await new Promise(resolve => setTimeout(resolve, 30)); });
+    expect(screen.getByRole('button', { name: /Choose a method/ })).toHaveTextContent('Flashcards');
     rerender(<KobraScope sound={false}><MethodJournal methods={methods.filter(method => method.name === 'Active Recall')} period="This week" /></KobraScope>);
-    expect(screen.getByRole('button', { name: /Active Recall/ })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('button', { name: /Choose a method/ })).toHaveTextContent('Active Recall');
     rerender(<KobraScope sound={false}><MethodJournal methods={[]} period="This week" /></KobraScope>);
     expect(screen.getByText('No techniques tracked yet')).toBeInTheDocument();
   });
 
-  it('shows lifetime earnings and spendable balance as different values', () => {
-    render(<KobraScope sound={false}><ProgressSummary period="September" minutes={0} sessions={0} activeDays={0} confidence={null} streak={0} pointsEarned={6240} pointsAvailable={5065} buckets={[]} /></KobraScope>);
-    expect(screen.getByText('6,240')).toBeInTheDocument();
-    expect(screen.getByText('5,065 available to spend')).toBeInTheDocument();
-    expect(screen.getByText('Awaiting your first check-in')).toBeInTheDocument();
-  });
-
-  it('reads the selected focus column from filtered records and changes period without retaining stale details', () => {
+  it('reads the focus graph one day at a time from filtered records, and a new period starts unread', () => {
     const records = [session('1', 'Irish', '2026-09-22', []), session('2', 'Mathematics', '2026-09-22', [])];
-    const summary = (range: 'week' | 'month' | 'year', subject = 'all') => <KobraScope sound={false}>
-      <ProgressSummary period={range} minutes={subject === 'all' ? 50 : 25} sessions={records.length} activeDays={1} confidence={null} streak={0} pointsEarned={0} buckets={buildActivityBuckets(records, range, subject, now)} />
-    </KobraScope>;
-    const { rerender } = render(summary('week'));
-    const columns = () => within(screen.getByRole('group', { name: 'Focus time in the selected period' }));
-    expect(columns().getAllByRole('button')).toHaveLength(7);
-    const tuesday = columns().getByRole('button', { name: 'Tuesday, 22 September: 50 minutes' });
-    fireEvent.click(tuesday);
-    expect(tuesday).toHaveAttribute('aria-pressed', 'true');
-    expect(screen.getByRole('status')).toHaveTextContent('50 minutes of focused study');
+    const graph = (range: 'week' | 'month' | 'year', subject = 'all') => <ProgressGraph buckets={buildActivityBuckets(records, range, subject, now)} metric="minutes" />;
+    const { rerender } = render(graph('week'));
+    const reader = () => screen.getByLabelText(/^Focus time over the period/);
+    expect(reader()).toHaveAccessibleName(/50m in total/);
+    // Touch and slide on a phone; the arrow keys do the same from a keyboard. The week ends on Sunday 27th.
+    for (let step = 0; step < 5; step += 1) fireEvent.keyDown(reader(), { key: 'ArrowLeft' });
+    expect(screen.getByRole('status')).toHaveTextContent('Tuesday, 22 September: 50 minutes of focused study');
 
-    rerender(summary('week', 'Irish'));
-    expect(screen.getByRole('status')).toHaveTextContent('25 minutes of focused study');
-    fireEvent.focus(columns().getByRole('button', { name: 'Wednesday, 23 September: 0 minutes' }));
-    expect(screen.getByRole('status')).toHaveTextContent('Wednesday, 23 September · No study recorded');
+    rerender(graph('week', 'Irish'));
+    expect(screen.getByRole('status')).toHaveTextContent(/^$/);
+    for (let step = 0; step < 5; step += 1) fireEvent.keyDown(reader(), { key: 'ArrowLeft' });
+    expect(screen.getByRole('status')).toHaveTextContent('Tuesday, 22 September: 25 minutes of focused study');
+    fireEvent.keyDown(reader(), { key: 'ArrowRight' });
+    expect(screen.getByRole('status')).toHaveTextContent('Wednesday, 23 September: No study recorded');
 
-    rerender(summary('year'));
-    expect(columns().getAllByRole('button')).toHaveLength(12);
-    expect(columns().getByRole('button', { name: 'September 2026: 50 minutes' })).toHaveAttribute('aria-pressed', 'true');
-    expect(screen.getByRole('status')).toHaveTextContent('September 2026 · 50 minutes of focused study');
-    rerender(summary('month'));
-    expect(columns().getAllByRole('button')).toHaveLength(30);
-    expect(screen.getByRole('status')).toHaveTextContent('Wednesday, 23 September · No study recorded');
-    fireEvent.click(columns().getByRole('button', { name: 'Tuesday, 22 September: 50 minutes' }));
-    expect(screen.getByRole('status')).toHaveTextContent('Tuesday, 22 September · 50 minutes of focused study');
+    rerender(graph('year'));
+    expect(screen.getByRole('status')).toHaveTextContent(/^$/);
+    expect(reader()).toHaveAccessibleName(/read each month/);
+    rerender(graph('month'));
+    expect(reader()).toHaveAccessibleName(/read each day/);
   });
 });

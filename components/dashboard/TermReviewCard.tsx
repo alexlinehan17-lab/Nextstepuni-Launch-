@@ -10,6 +10,7 @@
 
 import React, { useMemo, useState } from 'react';
 import { Download } from 'lucide-react';
+import { Button } from '../ui/Button';
 import { type StreakData } from '../../hooks/useStreak';
 import { type StudySessionRecord } from '../../utils/strategyRegistry';
 
@@ -49,6 +50,7 @@ const TermReviewCard: React.FC<Props> = ({ sessions, streak }) => {
   }, [sessions, streak.longestStreak]);
 
   const saveImage = () => {
+    if (saving) return;
     setSaving(true);
     try {
       const scale = 2;
@@ -113,14 +115,17 @@ const TermReviewCard: React.FC<Props> = ({ sessions, streak }) => {
   };
 
   return (
-    <article className="pr-paper pm-term">
-      <div><p className="pr-eyebrow">Since {stats.startLabel}</p><h2>A term taking shape.</h2>
-        <p><strong>{stats.hours}h</strong> focused · <strong>{stats.sessions}</strong> sessions · Most studied: <strong>{stats.topSubject}</strong></p>
+    <section className="mp-sec mp-sec--ruled pm-term" aria-labelledby="pm-term-title">
+      <div className="mp-term">
+        <div className="mp-sec-head"><p className="t-label mp-label">Since {stats.startLabel}</p><h2 id="pm-term-title" className="t-heading mp-heading">A term taking shape.</h2>
+          <p className="t-sub">{stats.hours}h focused · {stats.sessions} sessions · Most studied: {stats.topSubject}</p>
+        </div>
+        <Button onClick={saveImage} aria-busy={saving || undefined}
+          unavailable={stats.sessions === 0 ? 'Your term review can be saved after your first session.' : undefined}>
+          {saving ? 'Saving…' : 'Save term review'}<Download className="ui-icon" size={16} strokeWidth={2} aria-hidden="true" />
+        </Button>
       </div>
-      <button type="button" onClick={saveImage} disabled={saving || stats.sessions === 0}>
-        {saving ? 'Saving…' : 'Save term review'}<Download size={17} />
-      </button>
-    </article>
+    </section>
   );
 };
 

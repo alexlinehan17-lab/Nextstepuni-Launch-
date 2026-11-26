@@ -202,6 +202,44 @@ export interface SelectionBarProps<V extends string> {
   className?: string;
 }
 
+export interface SelectionWordsProps<V extends string> {
+  /** What the words choose, for screen readers ("Period", "Fieldbook page"). */
+  label: string;
+  /** Two to four short words. */
+  options: { value: V; label: ReactNode }[];
+  value: V;
+  onChange: (value: V) => void;
+  className?: string;
+}
+
+/** Choices as plain words (components.md, "Selection bar": Week / Month / Year,
+ *  agreed 25 Nov 2026): the current word in ink with a short ink line under it,
+ *  the others quieter; no tray. The line draws in under the new word; what it
+ *  controls changes at once. A radio group with arrow keys, like the bar. */
+export function SelectionWords<V extends string>({ label, options, value, onChange, className = '' }: SelectionWordsProps<V>) {
+  const current = options.findIndex(option => option.value === value);
+  const roving = useRovingRadios(options.length, current, index => onChange(options[index].value));
+  return (
+    <div role="radiogroup" aria-label={label} className={`ui-part ui-words ${className}`.trim()}>
+      {options.map((option, index) => (
+        <button
+          key={option.value}
+          ref={element => { roving.refs.current[index] = element; }}
+          type="button"
+          role="radio"
+          aria-checked={index === current}
+          tabIndex={roving.tabIndexOf(index)}
+          className="ui-word"
+          onKeyDown={event => roving.onKeyDown(event, index)}
+          onClick={() => onChange(option.value)}
+        >
+          {option.label}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 /** The selection bar: a tray with a white pill on the current choice. The pill
  *  slides (260ms, the move curve); what it controls changes at once. */
 export function SelectionBar<V extends string>({ label, options, value, onChange, size = 'sm', className = '' }: SelectionBarProps<V>) {

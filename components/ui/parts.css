@@ -292,6 +292,37 @@
 }
 .ui-seg-item[aria-checked='true'] { color: var(--ink-primary); font-weight: 700; }
 .ui-seg--md .ui-seg-item { height: 44px; font-size: 15px; }
+/* Choices as words (Week / Month / Year; the Fieldbook's Stories, Visitors, Wonder tiles):
+   the current word in ink with a short ink line under it, the others quieter. No tray. */
+.ui-words { display: flex; align-items: center; }
+.ui-word {
+  position: relative;
+  height: 44px;
+  padding: 0 var(--space-2);
+  border: 0;
+  background: none;
+  color: var(--ink-secondary);
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  white-space: nowrap;
+  transition: color var(--t-ui) var(--ease-out);
+}
+.ui-word::after {
+  content: "";
+  position: absolute;
+  left: var(--space-2);
+  right: var(--space-2);
+  bottom: 6px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--ink-primary);
+  transform: scaleX(0);
+  transition: transform var(--t-ui) var(--ease-out);
+}
+.ui-word[aria-checked='true'] { color: var(--ink-primary); }
+.ui-word[aria-checked='true']::after { transform: none; }
+.ui-word:active { color: var(--ink-primary); }
 
 /* ── 3. The menu button and its menu ─────────────────────────────────────── */
 
@@ -317,7 +348,14 @@
 .ui-menu-btn-text { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 .ui-menu-btn-count { font-weight: inherit; }
 .ui-menu-btn--block { display: flex; width: 100%; justify-content: space-between; }
+/* In a full-width button the position stands at the trailing edge, in the mono ("1 of 5"). */
+.ui-menu-btn--block > .ui-menu-btn-text { flex: 1 1 auto; text-align: left; }
+.ui-menu-btn-count--end { flex: none; margin-right: 2px; color: var(--ink-muted); font-weight: 400; }
 .ui-menu-btn:active { transform: scale(0.98); background: var(--surface-soft); }
+/* Open: the button takes the ink edge and its chevron turns up, as the menu grows from it. */
+.ui-menu-btn[data-popup-open] { border-color: var(--outline-strong); }
+.ui-menu-btn > .ui-icon { transition: transform var(--t-ui) var(--ease-out); }
+.ui-menu-btn[data-popup-open] > .ui-icon { transform: rotate(180deg); }
 .ui-menu-layer { z-index: var(--z-dialog); outline: none; }
 .ui-menu {
   min-width: max(220px, var(--anchor-width, 0px));
@@ -353,6 +391,8 @@
 }
 .ui-menu-item[data-highlighted] { background: var(--surface-soft); }
 .ui-menu-item[aria-checked='true'] { font-weight: 700; }
+.ui-menu-item-text { display: flex; align-items: baseline; gap: var(--space-3); min-width: 0; }
+.ui-menu-num { flex: none; color: var(--ink-muted); font-style: normal; font-weight: 400; }
 .ui-menu-item .ui-icon { visibility: hidden; }
 .ui-menu-item[aria-checked='true'] .ui-icon { visibility: visible; }
 
@@ -688,6 +728,8 @@ span.ui-row-art > * { display: block; width: 100%; height: 100%; }
 .ui-row-over { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
 .ui-row-value { flex: none; color: var(--ink-primary); white-space: nowrap; }
 .ui-row-chev { color: var(--ink-muted); }
+.ui-row-chev--down { transition: transform var(--t-ui) var(--ease-out); }
+.ui-row-chev--down[data-open] { transform: rotate(180deg); }
 .ui-row-icon { display: flex; flex: none; color: var(--ink-secondary); }
 .ui-row-icon > svg { width: 20px; height: 20px; }
 .ui-row--danger, .ui-row--danger .ui-row-icon { color: var(--danger-tint-ink); }
@@ -758,6 +800,9 @@ span.ui-row-art > * { display: block; width: 100%; height: 100%; }
   .ui-mark--on path { transition: none; }
   .ui-switch-knob { transition: none; }
   .ui-seg-pill { transition: none; }
+  .ui-word::after { transition: none; }
+  .ui-menu-btn > .ui-icon { transition: none; }
+  .ui-row-chev--down { transition: none; }
   .ui-menu[data-starting-style], .ui-menu[data-ending-style] { transform: none; }
   /* A sheet fades in place; while a finger drags it, it still follows. */
   .ui-sheet { transform: none; opacity: 0; transition: opacity var(--t-ui) var(--ease-out); }
