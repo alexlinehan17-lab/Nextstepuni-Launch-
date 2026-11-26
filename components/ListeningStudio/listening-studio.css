@@ -15,7 +15,7 @@
   --ls-line: #5c5852;
   --ls-hair: #302e2b;
   --ls-ring: #3b3834;
-  --ls-orange: var(--nsu-orange, #eb692a);
+  --ls-orange: var(--nsu-orange, var(--nsu-orange));
   position: fixed; inset: 0; z-index: 120;
   display: grid; grid-template-columns: minmax(320px, 40%) minmax(0, 1fr);
   padding: calc(16px + var(--sat, 0px)) calc(16px + var(--sar, 0px)) calc(16px + var(--sab, 0px)) var(--sal, 0px);

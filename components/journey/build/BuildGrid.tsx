@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import type { ThreeEvent } from '@react-three/fiber';
 import type { BuildCell } from './islandBuildModel';
 import { hexToWorld } from '../hex/hexGeometry';
+import { COLORS } from '../../../design/tokens';
 
 interface BuildGridProps {
   cells: BuildCell[];
@@ -20,7 +21,7 @@ const BuildGrid: React.FC<BuildGridProps> = ({ cells, selectedCell, onSelect }) 
       {cells.map(cell => {
         const [x, z] = hexToWorld(cell.q, cell.r);
         const selected = selectedCell?.q === cell.q && selectedCell?.r === cell.r;
-        const color = selected ? '#F26B1F' : cell.recommended ? '#9ED9C5' : cell.valid ? '#FFF4E8' : '#4A4745';
+        const color = selected ? COLORS.accent : cell.recommended ? '#9ED9C5' : cell.valid ? '#FFF4E8' : '#4A4745';
         return (
           <mesh
             key={`${cell.q},${cell.r}`}

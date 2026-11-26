@@ -80,9 +80,10 @@ import {
   type ChairResumeSnapshot,
 } from './sessionResume';
 import { composeReceipt, downloadReceiptPng } from './receipt';
+import { COLORS } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const SUCCESS = '#3A8D5F';
 const MUTED = '#7a7068';
 const LABEL = '#9e9186';
@@ -268,7 +269,7 @@ const SchemeExtract: React.FC<{ session: MarkingSession }> = ({ session }) => {
         </span>
       </div>
       <div className="px-4 pt-3 pb-1" style={{ overflowX: 'auto' }}>
-        <p style={{ fontFamily: MONO, fontSize: 11.5, color: '#8C3A0E', marginBottom: 8 }}>{shorthand}</p>
+        <p style={{ fontFamily: MONO, fontSize: 11.5, color: COLORS.accentDarkText, marginBottom: 8 }}>{shorthand}</p>
         {rows.map((r, i) => (
           <div
             key={i}
@@ -667,13 +668,13 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
               <div className="rounded-xl px-4 py-3 mb-3 flex items-center justify-between gap-3" style={{ backgroundColor: '#FDEEDF', border: `2px solid ${ACCENT}` }}>
                 <div className="min-w-0">
                   <Small className="mb-0.5">Saved place</Small>
-                  <p className="text-[12.5px]" style={{ color: '#8C3A0E' }}>{describeResume(resumeSlot)}</p>
+                  <p className="text-[12.5px]" style={{ color: COLORS.accentDarkText }}>{describeResume(resumeSlot)}</p>
                 </div>
                 <div className="flex gap-2 shrink-0">
                   <button
                     onClick={resumeSaved}
                     className="rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold text-white transition-transform active:translate-y-0.5"
-                    style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 3px 0 #B54D14' }}
+                    style={{ backgroundColor: ACCENT, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
                   >
                     Resume
                   </button>
@@ -691,7 +692,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             <button
               onClick={() => { startedAtRef.current = Date.now(); setBorderlineOnly(false); setScriptIdx(0); setDecisions({}); setChosenLevel(null); setStage('mark'); }}
               className="w-full rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5"
-              style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
+              style={{ backgroundColor: ACCENT, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 4px 0 var(--accent-dark-hex)' }}
             >
               Start marking · {session.scripts.length} scripts
             </button>
@@ -707,7 +708,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             <button
               onClick={() => { setDecisions({}); setChosenLevel(null); setStage('own-write'); }}
               className="w-full mt-2.5 rounded-full py-2.5 text-[13.5px] font-semibold transition-transform active:translate-y-0.5"
-              style={{ backgroundColor: '#fff', color: ACCENT, border: '2px solid rgba(242,107,31,0.35)' }}
+              style={{ backgroundColor: '#fff', color: ACCENT, border: '2px solid rgba(var(--nsu-orange-rgb), 0.35)' }}
             >
               Or mark your own answer to this question
             </button>
@@ -737,7 +738,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
               onClick={() => setStage('own-mark')}
               disabled={ownText.trim().length === 0}
               className="w-full rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5 disabled:opacity-40"
-              style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
+              style={{ backgroundColor: ACCENT, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 4px 0 var(--accent-dark-hex)' }}
             >
               Mark it against the scheme
             </button>
@@ -781,7 +782,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                     </div>
                   );
                 })}
-                <p className="text-[12px] leading-relaxed mt-1 italic" style={{ color: '#8C3A0E' }}>{session.grid.ruleNote}</p>
+                <p className="text-[12px] leading-relaxed mt-1 italic" style={{ color: COLORS.accentDarkText }}>{session.grid.ruleNote}</p>
               </div>
             ) : (
               <div className="space-y-2">
@@ -804,7 +805,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                       </div>
                       <ul className="mt-2 space-y-1">
                         {session.scale.notes.map((n, i) => (
-                          <li key={i} className="text-[12.5px] italic leading-relaxed" style={{ color: '#8C3A0E' }}>{n}</li>
+                          <li key={i} className="text-[12.5px] italic leading-relaxed" style={{ color: COLORS.accentDarkText }}>{n}</li>
                         ))}
                       </ul>
                       {blind && (
@@ -822,7 +823,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
               onClick={() => setStage('own-result')}
               disabled={session.mode === 'scale' && chosenLevel === null}
               className="w-full mt-4 rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5 disabled:opacity-40"
-              style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
+              style={{ backgroundColor: ACCENT, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 4px 0 var(--accent-dark-hex)' }}
             >
               See my honest estimate
             </button>
@@ -850,7 +851,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
               <div className="rounded-xl px-4 py-3.5 mb-4" style={{ backgroundColor: '#FDEEDF', borderLeft: `3px solid ${ACCENT}` }}>
                 <Small className="mb-1">Hold yourself to this</Small>
                 <p className="text-[14px] font-semibold" style={{ fontFamily: SERIF, color: INK }}>{session.takeaway.rule}</p>
-                <p className="text-[12.5px] italic leading-relaxed mt-1" style={{ color: '#8C3A0E' }}>{session.takeaway.detail}</p>
+                <p className="text-[12.5px] italic leading-relaxed mt-1" style={{ color: COLORS.accentDarkText }}>{session.takeaway.detail}</p>
                 <CiteLine label={session.takeaway.cite.label} />
               </div>
               <div className="flex gap-2">
@@ -864,7 +865,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                 <button
                   onClick={() => setStage('intro')}
                   className="flex-1 rounded-full py-2.5 text-[13.5px] font-semibold text-white transition-transform active:translate-y-0.5"
-                  style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 3px 0 #B54D14' }}
+                  style={{ backgroundColor: ACCENT, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
                 >
                   Mark the sample scripts
                 </button>
@@ -929,7 +930,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                               className="text-[12px] font-semibold px-2.5 py-1.5 rounded-full border transition-transform active:translate-y-0.5"
                               style={
                                 awarded
-                                  ? { backgroundColor: '#FDEEDF', borderColor: ACCENT, color: '#8C3A0E' }
+                                  ? { backgroundColor: '#FDEEDF', borderColor: ACCENT, color: COLORS.accentDarkText }
                                   : { backgroundColor: '#fff', borderColor: BORDER, color: MUTED }
                               }
                             >
@@ -989,7 +990,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                           className="text-[12px] font-semibold px-2.5 py-1.5 rounded-full border transition-transform active:translate-y-0.5"
                           style={
                             isChoice
-                              ? { backgroundColor: '#FDEEDF', borderColor: ACCENT, color: '#8C3A0E' }
+                              ? { backgroundColor: '#FDEEDF', borderColor: ACCENT, color: COLORS.accentDarkText }
                               : { backgroundColor: '#fff', borderColor: BORDER, color: MUTED }
                           }
                         >
@@ -1006,7 +1007,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                           isKey
                             ? { backgroundColor: PEN_SOFT, borderColor: 'rgba(196,68,60,0.45)', color: INK }
                             : isChoice
-                              ? { backgroundColor: '#FDEEDF', borderColor: ACCENT, color: '#8C3A0E' }
+                              ? { backgroundColor: '#FDEEDF', borderColor: ACCENT, color: COLORS.accentDarkText }
                               : { backgroundColor: '#fff', borderColor: BORDER, color: '#b0a898' }
                         }
                       >
@@ -1098,7 +1099,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             {stage === 'reveal' && script.embodies && (
               <div className="rounded-xl px-4 py-3 mb-4" style={{ backgroundColor: '#FDEEDF', borderLeft: `3px solid ${ACCENT}` }}>
                 <Small className="mb-1">The examiners have seen this before</Small>
-                <p className="text-[13px] italic leading-relaxed" style={{ color: '#8C3A0E' }}>
+                <p className="text-[13px] italic leading-relaxed" style={{ color: COLORS.accentDarkText }}>
                   {script.embodies.behaviour}
                 </p>
                 <CiteLine label={script.embodies.cite.label} />
@@ -1125,7 +1126,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                 onClick={commitScript}
                 disabled={session.mode === 'scale' && chosenLevel === null}
                 className="w-full rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5 disabled:opacity-40"
-                style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
+                style={{ backgroundColor: ACCENT, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 4px 0 var(--accent-dark-hex)' }}
               >
                 Confirm marks
               </button>
@@ -1133,7 +1134,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
               <button
                 onClick={nextScript}
                 className="w-full inline-flex items-center justify-center gap-1.5 rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5"
-                style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
+                style={{ backgroundColor: ACCENT, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 4px 0 var(--accent-dark-hex)' }}
               >
                 {scriptIdx + 1 < scripts.length ? (
                   <>
@@ -1151,8 +1152,8 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         {stage === 'summary' && (
           <>
             {dailyMode && (
-              <div className="rounded-xl px-4 py-3 mb-3 text-center" style={{ backgroundColor: '#FDEEDF', border: `1px solid rgba(242,107,31,0.3)` }}>
-                <p className="text-[14px] font-semibold" style={{ color: '#8C3A0E' }}>
+              <div className="rounded-xl px-4 py-3 mb-3 text-center" style={{ backgroundColor: '#FDEEDF', border: `1px solid rgba(var(--nsu-orange-rgb), 0.3)` }}>
+                <p className="text-[14px] font-semibold" style={{ color: COLORS.accentDarkText }}>
                   Daily Mark done · {state.daily.streak}🔥 day streak
                   {state.daily.streak >= state.daily.best && state.daily.best > 1 ? ' — your best yet' : ''}
                 </p>
@@ -1311,7 +1312,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                     <button
                       onClick={() => void downloadReceiptPng(model, Date.now())}
                       className="inline-flex items-center gap-1.5 text-[12px] font-semibold rounded-full px-3 py-1.5 transition-transform active:translate-y-0.5"
-                      style={{ color: ACCENT, backgroundColor: '#fff', border: '2px solid rgba(242,107,31,0.3)' }}
+                      style={{ color: ACCENT, backgroundColor: '#fff', border: '2px solid rgba(var(--nsu-orange-rgb), 0.3)' }}
                     >
                       <Download size={13} /> Save image
                     </button>
@@ -1341,7 +1342,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             <button
               onClick={() => setView(dailyMode ? 'home' : 'subject')}
               className="w-full rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5"
-              style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
+              style={{ backgroundColor: ACCENT, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 4px 0 var(--accent-dark-hex)' }}
             >
               Done
             </button>
@@ -1402,14 +1403,14 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                           <button
                             onClick={() => setRecallOpen(s.takeaway.id)}
                             className="mt-2 text-[12.5px] font-semibold inline-flex items-center gap-1.5"
-                            style={{ color: '#8C3A0E' }}
+                            style={{ color: COLORS.accentDarkText }}
                           >
                             Recall the rule, then reveal <ChevronRight size={14} />
                           </button>
                         ) : (
                           <>
                             <p className="text-[14px] font-semibold mt-2" style={{ fontFamily: SERIF, color: INK }}>{s.takeaway.rule}</p>
-                            <p className="text-[12.5px] italic leading-relaxed mt-1" style={{ color: '#8C3A0E' }}>{s.takeaway.detail}</p>
+                            <p className="text-[12.5px] italic leading-relaxed mt-1" style={{ color: COLORS.accentDarkText }}>{s.takeaway.detail}</p>
                             <div className="flex gap-2 mt-3">
                               <button onClick={() => rate(s.takeaway.id, false)} className="flex-1 rounded-full py-2 text-[12.5px] font-semibold" style={{ backgroundColor: '#fff', color: MUTED, border: `2px solid ${BORDER}` }}>Fuzzy</button>
                               <button onClick={() => rate(s.takeaway.id, true)} className="flex-1 rounded-full py-2 text-[12.5px] font-semibold text-white" style={{ backgroundColor: SUCCESS }}>Got it</button>
@@ -1514,7 +1515,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                           key={s.id}
                           onClick={() => drillSession(s.id)}
                           className="text-[11.5px] font-semibold px-2.5 py-1 rounded-full border transition-transform active:translate-y-0.5"
-                          style={{ borderColor: ACCENT, color: '#8C3A0E', backgroundColor: '#FDEEDF' }}
+                          style={{ borderColor: ACCENT, color: COLORS.accentDarkText, backgroundColor: '#FDEEDF' }}
                         >
                           Re-mark: {s.title}
                         </button>
@@ -1603,7 +1604,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             <button
               onClick={() => codeInputRef.current?.focus()}
               className="w-full mt-3.5 rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5"
-              style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
+              style={{ backgroundColor: ACCENT, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 4px 0 var(--accent-dark-hex)' }}
             >
               Set up a class code
             </button>
@@ -1734,7 +1735,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                   <span className="block text-[11.5px] mt-0.5" style={{ color: MUTED }}>
                     {s.cue} · {s.scripts.length} scripts{result ? ` · ${pct(result.agreement)} match` : ''}
                     {resumeSlot?.sessionId === s.id && (
-                      <span className="font-semibold" style={{ color: '#8C3A0E' }}> · saved place</span>
+                      <span className="font-semibold" style={{ color: COLORS.accentDarkText }}> · saved place</span>
                     )}
                   </span>
                 </span>
@@ -1795,7 +1796,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                           key={id}
                           onClick={() => { setInk(id); saveInk(uid, id); }}
                           className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-full border px-2 py-1.5 text-[11.5px] font-semibold"
-                          style={ink === id ? { borderColor: ACCENT, backgroundColor: '#FDEEDF', color: '#8C3A0E' } : { borderColor: BORDER, backgroundColor: '#fff', color: MUTED }}
+                          style={ink === id ? { borderColor: ACCENT, backgroundColor: '#FDEEDF', color: COLORS.accentDarkText } : { borderColor: BORDER, backgroundColor: '#fff', color: MUTED }}
                         >
                           <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: hex }} />
                           {label}
@@ -1825,7 +1826,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             <button
               onClick={resumeSaved}
               className="flex-1 rounded-full py-2.5 text-[13.5px] font-semibold text-white transition-transform active:translate-y-0.5"
-              style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 3px 0 #B54D14' }}
+              style={{ backgroundColor: ACCENT, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
             >
               Resume
             </button>
@@ -1849,7 +1850,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                 onClick={done ? undefined : startDaily}
                 disabled={done}
                 className="flex-1 min-w-0 text-left rounded-2xl px-4 py-3.5 transition-transform active:translate-y-0.5"
-                style={{ backgroundColor: done ? '#E8F2EC' : ACCENT, borderBottom: done ? 'none' : '3px solid #B54D14', boxShadow: done ? 'none' : '0 4px 0 #B54D14' }}
+                style={{ backgroundColor: done ? '#E8F2EC' : ACCENT, borderBottom: done ? 'none' : '3px solid var(--accent-dark-hex)', boxShadow: done ? 'none' : '0 4px 0 var(--accent-dark-hex)' }}
               >
                 <div className="flex items-center justify-between gap-3">
                   <div className="min-w-0">
@@ -1895,7 +1896,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
           <button
             onClick={() => drillSession(firstSession.id)}
             className="w-full mt-3.5 rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5"
-            style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
+            style={{ backgroundColor: ACCENT, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 4px 0 var(--accent-dark-hex)' }}
           >
             Start your first marking session
           </button>
@@ -1933,7 +1934,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         <button
           onClick={() => setView('codex')}
           className="shrink-0 inline-flex items-center gap-1.5 text-[12px] font-semibold rounded-full border px-3 py-1.5"
-          style={codexDueCount > 0 ? { borderColor: ACCENT, color: '#8C3A0E', backgroundColor: '#FDEEDF' } : { borderColor: BORDER, color: MUTED, backgroundColor: '#fff' }}
+          style={codexDueCount > 0 ? { borderColor: ACCENT, color: COLORS.accentDarkText, backgroundColor: '#FDEEDF' } : { borderColor: BORDER, color: MUTED, backgroundColor: '#fff' }}
         >
           <BookMarked size={13} /> Codex · {state.codex.length}{codexDueCount > 0 ? ` · ${codexDueCount} due` : ''}
         </button>

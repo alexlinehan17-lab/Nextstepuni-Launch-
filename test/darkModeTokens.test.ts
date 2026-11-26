@@ -277,13 +277,13 @@ describe('index.html carries no colour tokens', () => {
 /**
  * Ink on the brand accent.
  *
- * White on #F26B1F is 3.04:1 and cream 2.88:1 — both fail AA, and in BOTH
+ * White on the orange is 3.2:1 and cream lower — both fail AA, and in BOTH
  * themes, so this is not a dark-mode concern. --ink-on-accent is the token for
  * it and is deliberately the one value shared across themes, because the accent
  * itself does not change.
  */
 describe('ink on the accent', () => {
-  const ACCENT = '#F26B1F';
+  const ACCENT = '#eb692a';
   const srgb = (hex: string) => [1, 3, 5].map(i => {
     const v = parseInt(hex.slice(i, i + 2), 16) / 255;
     return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
@@ -310,11 +310,14 @@ describe('ink on the accent', () => {
     // bg-[var(--accent-hex)] form is how the study-session Start pill slipped
     // through the first attempt.
     for (const form of [
-      'bg-[#F26B1F]',
+      '[class~="bg-accent"]',
       'bg-[var(--accent-hex)]',
       'bg-[var(--accent-dark-hex)]',
-      'background-color: rgb(242, 107, 31)',
-      'background: rgb(242, 107, 31)',
+      'bg-[var(--nsu-orange)]',
+      'background-color: rgb(235, 105, 42)',
+      'background: rgb(235, 105, 42)',
+      'background-color: var(--nsu-orange)',
+      'background: var(--nsu-orange)',
     ]) {
       expect(css, `accent surface form not covered: ${form}`).toContain(form);
     }

@@ -17,6 +17,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Search, ArrowRight } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
 import { type CourseData } from './Library';
+import { COLORS } from '../design/tokens';
 
 /** Launchpad tools, mirrored from InnovationZone's internal list.
  *  Keep titles in sync when a tool is added or renamed there. */
@@ -77,7 +78,7 @@ export const fuzzyScore = (query: string, text: string): number => {
 
 const KIND_CHIP: Record<EntryKind, { label: string; bg: string; color: string }> = {
   page:   { label: 'PAGE',   bg: 'var(--surface-soft)', color: '#7a7068' },
-  tool:   { label: 'TOOL',   bg: '#FDEEDF', color: '#8C3A0E' },
+  tool:   { label: 'TOOL',   bg: '#FDEEDF', color: COLORS.accentDarkText },
   module: { label: 'MODULE', bg: '#E8F2EC', color: '#1F5F3E' },
 };
 
@@ -214,7 +215,7 @@ const CommandPalette: React.FC<Props> = ({ courses }) => {
         style={{ border: '2px solid #1a1a1a', boxShadow: '0 4px 0 rgba(0,0,0,0.4)' }}
       >
         <div className="flex items-center gap-3 px-4 py-3" style={{ borderBottom: '2px solid var(--outline-soft)' }}>
-          <Search size={16} style={{ color: '#F26B1F' }} />
+          <Search size={16} style={{ color: COLORS.accent }} />
           <input
             ref={inputRef}
             value={query}
@@ -262,7 +263,7 @@ const CommandPalette: React.FC<Props> = ({ courses }) => {
                     <span className="block text-[11.5px] truncate" style={{ color: '#9e9186' }}>{r.detail}</span>
                   )}
                 </span>
-                {isActive && <ArrowRight size={14} style={{ color: '#F26B1F' }} className="shrink-0" />}
+                {isActive && <ArrowRight size={14} style={{ color: COLORS.accent }} className="shrink-0" />}
               </button>
             );
           })}

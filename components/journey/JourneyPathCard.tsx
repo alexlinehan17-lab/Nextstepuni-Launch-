@@ -25,7 +25,7 @@ const JourneyPathCard: React.FC<JourneyPathCardProps> = ({ progress, onOpenBuild
       <div className="mt-3 flex items-center gap-2.5">
         <span className="shrink-0 text-[9px] font-bold uppercase tracking-[0.12em] text-[#A0978D]">Rank progress</span>
         <div className="h-2 flex-1 overflow-hidden rounded-full bg-[#ECE7E0] dark:bg-[#37332F]">
-          <div className="h-full rounded-full bg-[#F26B1F] transition-[width] duration-700" style={{ width: `${Math.round(progress.progress * 100)}%` }} />
+          <div className="h-full rounded-full bg-accent transition-[width] duration-700" style={{ width: `${Math.round(progress.progress * 100)}%` }} />
         </div>
         <span className="font-mono text-[9px] font-bold text-[#756F69] dark:text-[#B8B1A8]">{Math.round(progress.progress * 100)}%</span>
       </div>

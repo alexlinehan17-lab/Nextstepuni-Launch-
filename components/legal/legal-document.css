@@ -30,7 +30,7 @@
   --legal-body: #53564f;
   --legal-muted: #73766e;
   --legal-line: #e1e3dc;
-  --legal-orange: #ff8128;
+  --legal-orange: var(--nsu-orange);
   --legal-link: #ad420f;
   box-sizing: border-box;
   color: var(--legal-ink);

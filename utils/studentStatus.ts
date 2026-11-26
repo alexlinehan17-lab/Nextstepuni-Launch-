@@ -215,7 +215,7 @@ export const STATUS_CONFIG: Record<StudentStatus, {
 }> = {
   'new':      { label: 'New',      bg: '#E5E7EB', text: '#4B5563', darkBgClass: 'dark:!bg-zinc-700/40',     darkTextClass: 'dark:!text-zinc-300' },
   'at-risk':  { label: 'At Risk',  bg: '#FEF3C7', text: '#92400E', darkBgClass: 'dark:!bg-amber-900/20',    darkTextClass: 'dark:!text-amber-400' },
-  'drifting':  { label: 'Drifting',  bg: '#FFF7ED', text: '#9A3412', darkBgClass: 'dark:!bg-orange-900/20',   darkTextClass: 'dark:!text-orange-400' },
+  'drifting':  { label: 'Drifting',  bg: '#FFF7ED', text: '#9A3412', darkBgClass: 'dark:!bg-orange-900/20',   darkTextClass: 'dark:!text-accent-text' },
   'thriving':  { label: 'Thriving',  bg: '#ECFDF5', text: '#065F46', darkBgClass: 'dark:!bg-emerald-900/20',  darkTextClass: 'dark:!text-emerald-400' },
   'active':   { label: 'Active',   bg: '#F0FDFA', text: '#134E4A', darkBgClass: 'dark:!bg-teal-900/20',     darkTextClass: 'dark:!text-teal-400' },
   'inactive': { label: 'Inactive', bg: '#F3F4F6', text: '#6B7280', darkBgClass: 'dark:!bg-zinc-800/40',     darkTextClass: 'dark:!text-zinc-400' },

@@ -284,7 +284,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                       <button
                         onClick={() => firstIncomplete && onSelectModule(firstIncomplete)}
                         aria-label={`${completed > 0 ? 'Continue' : 'Start'} ${path.title}`}
-                        className="group inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)] rounded-md"
+                        className="group inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35 rounded-md"
                         style={{
                           ...SANS,
                           fontSize: 14,
@@ -305,7 +305,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                     <button
                       onClick={() => setExpandedPathId(isExpanded ? null : path.id)}
                       aria-label={`${isExpanded ? 'Hide' : 'View'} modules in ${path.title}`}
-                      className="inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)] rounded-md"
+                      className="inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35 rounded-md"
                       style={{
                         ...SANS,
                         fontSize: 12,

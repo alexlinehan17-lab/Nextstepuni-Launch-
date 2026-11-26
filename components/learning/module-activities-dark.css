@@ -1,7 +1,7 @@
 /* Legacy activity surfaces, paired with their ink. Scoped to lessons only. */
 
 /* Explicit action ink wins over the legacy dark-mode text remap. */
-.dark .nsu-module-reader .mr-paper :is([class~="bg-[#F26B1F]"],[style*="background-color: rgb(242, 107, 31)"]) { color:var(--ink-on-accent) !important; }
+.dark .nsu-module-reader .mr-paper :is([class~="bg-accent"],[style*="background-color: rgb(235, 105, 42)"],[style*="background-color: var(--nsu-orange)"]) { color:var(--ink-on-accent) !important; }
 .dark .nsu-module-reader .mr-paper :is(.text-success,.dark\:text-success) { color:#a6dec0 !important; }
 
 .dark .nsu-module-reader .mr-paper :is(

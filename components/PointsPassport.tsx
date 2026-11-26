@@ -664,7 +664,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                         <span
                           className="self-start text-[10px] font-bold px-2 py-0.5 rounded-full"
                           style={delta > 0
-                            ? { backgroundColor: '#FDEEDF', color: '#8C3A0E' }
+                            ? { backgroundColor: '#FDEEDF', color: COLORS.accentDarkText }
                             : { backgroundColor: '#E8F2EC', color: '#1F5F3E' }}
                         >
                           {delta > 0
@@ -821,7 +821,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                         Estimated effort: {b.effortHint}
                       </span>
                       {b.isMathsBonus && (
-                        <span className="text-[9px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E' }}>
+                        <span className="text-[9px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: '#FDEEDF', color: COLORS.accentDarkText }}>
                           Unlocks +25 Maths Bonus!
                         </span>
                       )}

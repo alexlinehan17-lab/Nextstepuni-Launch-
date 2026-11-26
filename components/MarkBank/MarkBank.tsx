@@ -2,6 +2,7 @@ import { markBankCurriculumMenu, cardsForMenuTopic } from './curriculumMenu';
 import { consumeInitialPracticeLink } from './markBankDeepLink';
 import { loadAtlasModel } from '../PaperTrail/atlasModel';
 import { resolveSubjectId } from '../../curriculumRegistry';
+import { COLORS } from '../../design/tokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -64,7 +65,7 @@ const SERIF = "'Source Serif 4', Georgia, serif";
 const SANS = "'DM Sans', system-ui, sans-serif";
 
 /** Accent means "this is the action / do this now". Never "correct". */
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const HAIRLINE = 'var(--mb-hairline)';
 
 type Screen =

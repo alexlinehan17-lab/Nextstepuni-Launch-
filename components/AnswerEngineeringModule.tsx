@@ -515,7 +515,7 @@ const ShapeQuiz = () => {
   if (phase === 'ready') {
     return (
       <div className="my-10 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-center" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: 24 }}>
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Quiz</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Exam Skills Quiz</span>
         <h4 className="font-serif font-semibold" style={{ fontSize: 20, color: "var(--module-ink)" }}>Shape Quiz</h4>
         <p className="text-sm mt-2 mb-6 max-w-md mx-auto" style={{ color: "var(--module-muted)" }}>Can you match the mark allocation to the right answer shape?</p>
         <button onClick={startQuiz} style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">Start Quiz</button>
@@ -564,7 +564,7 @@ const ShapeQuiz = () => {
     <div className="my-10 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: 24 }}>
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)' }}>Exam Skills Quiz</span>
+          <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)' }}>Exam Skills Quiz</span>
           <h4 className="font-serif font-semibold" style={{ fontSize: 18, color: "var(--module-ink)" }}>Shape Quiz</h4>
         </div>
         <span style={{ fontSize: 13, fontWeight: 600, color: "var(--module-muted)", backgroundColor: "var(--module-surface)", border: "1px solid var(--module-line)", borderRadius: 20, padding: '3px 10px' }}>{qIndex + 1} / {shapeQuestions.length}</span>

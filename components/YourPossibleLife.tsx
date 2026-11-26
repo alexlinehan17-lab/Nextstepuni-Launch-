@@ -17,6 +17,7 @@ import {
   workplaceUpsideFor,
   type LifePriority,
 } from './possibleLifeModel';
+import { COLORS } from '../design/tokens';
 
 type Stage = 'priorities' | 'possibilities' | 'day' | 'reflection' | 'route';
 const STAGES: Stage[] = ['priorities', 'possibilities', 'day', 'reflection', 'route'];
@@ -33,7 +34,7 @@ const HAIRLINE = 'var(--deck-hairline)';
 const CREAM = 'var(--deck-soft)';
 /* ORANGE is a FILL. For text on paper use ACCENT_TEXT -- the brand orange is
    only 2.9:1 on white, so it fails as body/label text in BOTH themes. */
-const ORANGE = '#ff681f';
+const ORANGE = COLORS.accent;
 const ACCENT_TEXT = 'var(--deck-accent-text)';
 const ON_ACCENT = 'var(--ink-on-accent)';
 const SERIF = '"Source Serif 4", Georgia, serif';

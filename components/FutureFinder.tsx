@@ -500,7 +500,7 @@ function AssessmentPhase({
               : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400 cursor-not-allowed'
           }`}
           style={isValid || shouldSkipRegions ? { backgroundColor: COLORS.accent } : undefined}
-          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { if (isValid || shouldSkipRegions) e.currentTarget.style.backgroundColor = '#B54D14'; }}
+          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { if (isValid || shouldSkipRegions) e.currentTarget.style.backgroundColor = COLORS.accentDark; }}
           onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { if (isValid || shouldSkipRegions) e.currentTarget.style.backgroundColor = COLORS.accent; }}>
           {isLast ? 'See Results' : 'Next'} <ChevronRight size={16} />
         </MotionButton>
@@ -581,7 +581,7 @@ function QuestionInput({ question, value, onChange }: { question: AssessmentQues
                   ? 'shadow-lg'
                   : 'bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500'
               }`}
-              style={isSelected ? { backgroundColor: COLORS.accent, color: 'white', borderColor: COLORS.accent, boxShadow: '0 10px 15px -3px rgba(242,107,31,0.25)' } : undefined}
+              style={isSelected ? { backgroundColor: COLORS.accent, color: 'white', borderColor: COLORS.accent, boxShadow: '0 10px 15px -3px rgba(var(--nsu-orange-rgb), 0.25)' } : undefined}
             >
               {label}
             </MotionButton>
@@ -716,7 +716,7 @@ function ResultsPhase({
 
       {/* Compare bar */}
       {compareCourses.length > 0 && (
-        <div className="mb-4 p-3 rounded-xl border flex items-center justify-between bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.2)' }}>
+        <div className="mb-4 p-3 rounded-xl border flex items-center justify-between bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.2)' }}>
           <span className="text-xs font-semibold" style={{ color: COLORS.accent }}>
             {compareCourses.length} course{compareCourses.length > 1 ? 's' : ''} selected for comparison
           </span>
@@ -942,7 +942,7 @@ function DetailPhase({
 
           {/* Your Points section */}
           {c.typicalPoints === 0 ? (
-            <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
+            <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.15)' }}>
               <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Entry Requirements</h4>
               <p className="text-sm text-zinc-700 dark:text-zinc-300">
                 {c.pathwayType === 'apprenticeship'
@@ -951,7 +951,7 @@ function DetailPhase({
               </p>
             </div>
           ) : autoPoints > 0 ? (
-            <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
+            <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.15)' }}>
               <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Your Points</h4>
               <div className="grid grid-cols-3 gap-3 text-center">
                 <div>
@@ -1010,7 +1010,7 @@ function DetailPhase({
           </div>
 
           {/* Why this suits you — show up to 5 reasons */}
-          <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
+          <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.15)' }}>
             <h4 className="text-sm font-bold mb-3 flex items-center gap-2" style={{ color: COLORS.accent }}>
               <Heart size={16} style={{ color: COLORS.accent }} /> Why This Suits You
             </h4>
@@ -1235,7 +1235,7 @@ function SubjectExplorerResults({
           <p className="text-[10px] font-bold uppercase tracking-widest mt-4 mb-2" style={{ color: COLORS.accent }}>Subjects to consider</p>
           <div className="flex flex-wrap gap-2 mb-4">
             {top.cluster.subjects.map(s => (
-              <span key={s} className="text-xs font-semibold px-3 py-1.5 rounded-full bg-white dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200" style={{ border: `1px solid rgba(242,107,31,0.2)` }}>
+              <span key={s} className="text-xs font-semibold px-3 py-1.5 rounded-full bg-white dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200" style={{ border: `1px solid rgba(var(--nsu-orange-rgb), 0.2)` }}>
                 {s}
               </span>
             ))}
@@ -1336,8 +1336,8 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
         {/* Header (fixed) */}
         <div className="flex items-start justify-between p-6 pb-4 shrink-0">
           <div className="flex items-start gap-3 min-w-0">
-            <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-[rgba(242,107,31,0.12)] shrink-0">
-              <Eye size={20} className="text-[#F26B1F]" />
+            <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-accent/12 shrink-0">
+              <Eye size={20} className="text-accent" />
             </div>
             <div className="min-w-0">
               <h2 className="font-serif text-xl font-bold text-[#1A1A1A] dark:text-white">How your results are calculated</h2>
@@ -1422,8 +1422,8 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
           </section>
 
           {/* Disclaimer */}
-          <section className="rounded-xl p-3" style={{ backgroundColor: 'rgba(242,107,31,0.10)' }}>
-            <p className="text-xs text-[#8C3A0E] dark:text-[#FDEEDF] leading-relaxed">
+          <section className="rounded-xl p-3" style={{ backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.10)' }}>
+            <p className="text-xs text-accentDarkText dark:text-[#FDEEDF] leading-relaxed">
               <span className="font-bold">Treat the result as a guide, not a verdict.</span> The algorithm reflects fit between you and a course, not how your career will go. Use it to surface options you hadn't thought about — then go talk to people doing the job.
             </p>
           </section>
@@ -1433,7 +1433,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
         <div className="px-6 pb-6 pt-2 shrink-0 border-t border-black/[0.04] dark:border-white/[0.06]">
           <button
             onClick={onClose}
-            className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
+            className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-accent text-white font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
           >
             Got it
           </button>

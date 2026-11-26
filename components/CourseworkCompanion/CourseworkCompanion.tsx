@@ -22,11 +22,12 @@ import {
   componentsForSubject,
   type CourseworkComponent,
 } from '../../data/courseworkCompanion';
+import { COLORS } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const ACCENT_TINT = '#FDEEDF';
-const ACCENT_DARK_TEXT = '#8C3A0E';
+const ACCENT_DARK_TEXT = COLORS.accentDarkText;
 
 interface Props {
   /** The student's subject NAMES (e.g. "Geography") — used to pre-scope "mine". */

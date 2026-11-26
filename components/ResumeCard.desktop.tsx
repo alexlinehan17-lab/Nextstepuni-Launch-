@@ -76,11 +76,11 @@ const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectMo
         {sub && <p className="mt-0.5 text-xs text-[#78716C] dark:text-zinc-400">{sub}</p>}
         {frac !== null && (
           <div className="mt-2.5 h-[3px] max-w-[320px] overflow-hidden rounded-full bg-[#ECE8E3] dark:bg-zinc-700">
-            <div className="h-full rounded-full" style={{ width: `${Math.round(frac * 100)}%`, backgroundColor: 'rgba(242,107,31,0.62)' }} />
+            <div className="h-full rounded-full" style={{ width: `${Math.round(frac * 100)}%`, backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.62)' }} />
           </div>
         )}
       </div>
-      <span className="flex shrink-0 items-center gap-1 text-[13px] font-bold text-[#F26B1F] transition-transform group-hover:translate-x-0.5">
+      <span className="flex shrink-0 items-center gap-1 text-[13px] font-bold text-accent transition-transform group-hover:translate-x-0.5">
         {isResume ? 'Continue' : 'Start'} <ArrowRight size={13} strokeWidth={2.4} />
       </span>
     </button>

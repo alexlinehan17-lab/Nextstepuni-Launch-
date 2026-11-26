@@ -26,7 +26,7 @@ const StreakCelebration: React.FC<StreakCelebrationProps> = ({ streakCount, isOp
     <div className="text-center">
       <MilestoneBadge><Flame size={12} /> Streak milestone</MilestoneBadge>
       <div className="mx-auto mt-7 flex h-28 w-28 items-center justify-center rounded-full border-2 border-[#383838] bg-[#FFF0E7] shadow-[5px_5px_0_0_#383838]">
-        <span className="font-serif text-6xl font-semibold tracking-[-0.05em] text-[#F26B1F]">{streakCount}</span>
+        <span className="font-serif text-6xl font-semibold tracking-[-0.05em] text-accent">{streakCount}</span>
       </div>
       <h1 className="mt-6 font-serif text-3xl font-semibold text-[#1A1A1A]">days, one line of effort.</h1>
       <p className="mx-auto mt-2 max-w-sm text-sm leading-6 text-[#78716C]">{MILESTONE_MESSAGES[streakCount] ?? `${streakCount} days. Keep the momentum going.`}</p>
@@ -34,7 +34,7 @@ const StreakCelebration: React.FC<StreakCelebrationProps> = ({ streakCount, isOp
       <div className="mt-7 grid grid-cols-7 gap-1.5 rounded-2xl border border-[#D8D3CD] bg-white p-3 sm:gap-2">
         {DAY_LABELS.map((day, index) => (
           <div key={`${day}-${index}`} className="flex min-w-0 flex-col items-center gap-1.5">
-            <span className={`flex aspect-square w-full max-w-9 items-center justify-center rounded-lg border ${weekDays[index] ? 'border-[#383838] bg-[#F26B1F] text-white' : 'border-zinc-200 bg-zinc-100 text-[#AAA29A]'}`}>
+            <span className={`flex aspect-square w-full max-w-9 items-center justify-center rounded-lg border ${weekDays[index] ? 'border-[#383838] bg-accent text-white' : 'border-zinc-200 bg-zinc-100 text-[#AAA29A]'}`}>
               {weekDays[index] ? <Flame size={14} /> : null}
             </span>
             <span className={`text-[9px] font-bold ${weekDays[index] ? 'text-[#A53E0C]' : 'text-[#AAA29A]'}`}>{day}</span>
@@ -42,7 +42,7 @@ const StreakCelebration: React.FC<StreakCelebrationProps> = ({ streakCount, isOp
         ))}
       </div>
 
-      <button onClick={onDismiss} className="mt-7 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border-2 border-[#1A1A1A] bg-[#F26B1F] px-6 font-bold text-white shadow-[4px_4px_0_0_#1A1A1A] transition-transform hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none">
+      <button onClick={onDismiss} className="mt-7 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border-2 border-[#1A1A1A] bg-accent px-6 font-bold text-white shadow-[4px_4px_0_0_#1A1A1A] transition-transform hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none">
         Keep going <ArrowRight size={18} />
       </button>
     </div>

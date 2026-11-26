@@ -219,7 +219,7 @@ const DesirePathMaker = () => {
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
       {/* Section chip + title */}
       <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(242,107,31,0.2)' }}>Interactive Simulation</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)' }}>Interactive Simulation</span>
         <h4 className="font-serif text-2xl font-bold" style={{ color: "var(--module-ink)" }}>Desire Path Maker</h4>
         <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>
           Click cells to walk on them. Repeat the same path to build strong connections — or scatter your effort and watch them fade.
@@ -259,7 +259,7 @@ const DesirePathMaker = () => {
 
       {/* Stat card */}
       <div className="flex justify-center mt-4">
-        <div className="inline-flex items-center gap-3" style={{ backgroundColor: "var(--module-surface)", border: '1.5px solid rgba(242,107,31,0.25)', borderRadius: 12, padding: '10px 20px' }}>
+        <div className="inline-flex items-center gap-3" style={{ backgroundColor: "var(--module-surface)", border: '1.5px solid rgba(var(--nsu-orange-rgb), 0.25)', borderRadius: 12, padding: '10px 20px' }}>
           <span className="font-serif font-bold" style={{ fontSize: 28, color: "var(--module-danger-text)" }}>{strongPathCount(grid)}</span>
           <span className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: "var(--module-muted)", letterSpacing: '0.08em' }}>Strong paths<br/>built</span>
         </div>

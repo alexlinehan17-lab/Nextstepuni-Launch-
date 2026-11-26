@@ -3,8 +3,8 @@
 .nsu-kobra-nav {
   --background:var(--surface-canvas); --foreground:#222; --popover:#fff; --popover-foreground:#222;
   --sidebar:var(--surface-canvas); --sidebar-foreground:#252525; --sidebar-accent:#f1f1f1; --sidebar-accent-foreground:#161616;
-  --sidebar-border:#e4e4e4; --sidebar-ring:#b84a0c; --border:#e3e3e3; --muted:#f4f4f4; --muted-foreground:#6b6b6b;
-  --accent:#f1f1f1; --accent-foreground:#1b1b1b; --ring:#b84a0c; --destructive:#b92d35; --destructive-foreground:#fff;
+  --sidebar-border:#e4e4e4; --sidebar-ring:var(--accent-text); --border:#e3e3e3; --muted:#f4f4f4; --muted-foreground:#6b6b6b;
+  --accent:#f1f1f1; --accent-foreground:#1b1b1b; --ring:var(--accent-text); --destructive:#b92d35; --destructive-foreground:#fff;
   --primary:#222; --primary-foreground:#fff; --secondary:#eee; --secondary-foreground:#222; --input:#ddd;
   --radius:.625rem; --spacing:.25rem; --font-sans:'ABC Diatype','DM Sans',sans-serif;
   font-family:var(--font-sans); color:var(--foreground); font-size:14px; line-height:1.5;
@@ -12,8 +12,8 @@
 .dark .nsu-kobra-nav {
   --background:var(--surface-canvas); --foreground:#fafafa; --popover:#202020; --popover-foreground:#fafafa;
   --sidebar:var(--surface-canvas); --sidebar-foreground:#ededed; --sidebar-accent:#292929; --sidebar-accent-foreground:#fafafa;
-  --sidebar-border:#2d2d30; --sidebar-ring:#e98547; --border:#333; --muted:#252525; --muted-foreground:#a4a4a7;
-  --accent:#29292b; --accent-foreground:#fafafa; --ring:#e98547; --destructive:#f87171;
+  --sidebar-border:#2d2d30; --sidebar-ring:var(--accent-text); --border:#333; --muted:#252525; --muted-foreground:#a4a4a7;
+  --accent:#29292b; --accent-foreground:#fafafa; --ring:var(--accent-text); --destructive:#f87171;
   --primary:#fafafa; --primary-foreground:#171717; --secondary:#292929; --secondary-foreground:#fafafa; --input:#333;
 }
 .student-sidebar-shell { display:flex; width:100%; min-height:100dvh; background:var(--sidebar); }
@@ -25,7 +25,7 @@
 .student-sidebar-shell[data-resizing] { cursor:col-resize; user-select:none; }
 .student-sidebar-shell[data-resizing] :is([data-slot=sidebar-gap], [data-slot=sidebar-container], [data-student-page-header]) { transition:none !important; }
 .student-sidebar-shell [data-slot=sidebar-inner] { background:var(--sidebar); padding-top:var(--sat,0px); padding-bottom:var(--sab,0px); }
-.student-sidebar-shell .student-sidebar-page { --accent:242,107,31; min-width:0; margin:8px 8px 8px 0; border:0; border-radius:16px; box-shadow:none; overflow:clip; background:var(--surface-canvas); font:16px/1.5 'DM Sans',sans-serif; }
+.student-sidebar-shell .student-sidebar-page { --accent:var(--nsu-orange-rgb); min-width:0; margin:8px 8px 8px 0; border:0; border-radius:16px; box-shadow:none; overflow:clip; background:var(--surface-canvas); font:16px/1.5 'DM Sans',sans-serif; }
 .student-sidebar-shell .student-sidebar-page > :is(.product-shell, .theme-compat, .nsu-kobra, .min-h-screen),
 .student-sidebar-shell .student-sidebar-page :is(.nsu-learning, .nsu-planner, .nsu-progress) { background:var(--surface-canvas); }
 .student-sidebar-shell .student-sidebar-page .nsu-kobra { --background:var(--surface-canvas); }

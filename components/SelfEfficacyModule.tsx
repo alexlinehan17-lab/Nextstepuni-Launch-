@@ -14,7 +14,7 @@ Target
 } from 'lucide-react';
 import React,{ useState } from 'react';
 import { SELF_EFFICACY_REFERENCE_LIST } from '../data/references/selfEfficacy';
-import { COLORS } from '../design/tokens';
+import { COLORS, accentRgba } from '../design/tokens';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
 import { roseTheme } from '../moduleThemes';
@@ -86,7 +86,7 @@ const EfficacyRadar: React.FC = () => {
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
       {/* Section chip + title */}
       <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)' }}>Self-Assessment</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)' }}>Self-Assessment</span>
         <h4 className="font-serif text-2xl font-bold" style={{ color: "var(--module-ink)" }}>Self-Efficacy Radar</h4>
         <p className="text-sm mt-1 max-w-md mx-auto" style={{ color: "var(--module-muted)" }}>
           Rate your belief in your ability across these 6 domains (1 = no confidence, 10 = total confidence).
@@ -106,7 +106,7 @@ const EfficacyRadar: React.FC = () => {
               <polygon
                 key={scale}
                 points={hexagonPoints(maxR * scale)}
-                fill={gi % 2 === 0 ? 'rgba(242,107,31,0.04)' : 'rgba(242,107,31,0.02)'}
+                fill={gi % 2 === 0 ? accentRgba(0.04) : accentRgba(0.02)}
                 stroke="var(--module-muted)"
                 strokeWidth="1.5"
               />
@@ -123,7 +123,7 @@ const EfficacyRadar: React.FC = () => {
             {/* Data polygon — teal */}
             <MotionPolygon
               points={dataPoints}
-              fill="rgba(242,107,31,0.18)"
+              fill={accentRgba(0.18)}
               stroke={COLORS.accent}
               strokeWidth="2.5"
               strokeLinejoin="round"
@@ -259,7 +259,7 @@ const IcebergInteractive = () => {
         <div className="my-10">
             {/* Section chip + title */}
             <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)' }}>Reflection Activity</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)' }}>Reflection Activity</span>
                 <h4 className="font-serif text-2xl font-bold" style={{ color: "var(--module-ink)" }}>The Success Iceberg</h4>
                 <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Success is what people see. Process is what it takes.</p>
             </div>
@@ -281,7 +281,7 @@ const IcebergInteractive = () => {
 
                 {/* BOTTOM: Below the waterline */}
                 <div style={{ backgroundColor: "var(--module-surface)", padding: '24px 28px', minHeight: 220 }}>
-                    <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: 'var(--module-surface)', color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '3px 10px' }}>Below the waterline</span>
+                    <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: 'var(--module-surface)', color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '3px 10px' }}>Below the waterline</span>
                     <p className="font-serif font-bold text-lg" style={{ color: "var(--module-ink)" }}>The Invisible Process</p>
                     <p className="text-xs mb-4" style={{ color: "var(--module-muted)" }}>What actually made it happen — that nobody sees</p>
 
@@ -289,7 +289,7 @@ const IcebergInteractive = () => {
                     {inputs.length > 0 && (
                         <div className="flex flex-wrap gap-2 mb-4">
                             {inputs.map((input, i) => (
-                                <span key={i} className="text-[13px] font-medium" style={{ backgroundColor: 'var(--module-surface)', border: '1.5px solid rgba(242,107,31,0.25)', color: moduleText(COLORS.accentDarkText), borderRadius: 20, padding: '4px 12px' }}>{input}</span>
+                                <span key={i} className="text-[13px] font-medium" style={{ backgroundColor: 'var(--module-surface)', border: '1.5px solid rgba(var(--nsu-orange-rgb), 0.25)', color: moduleText(COLORS.accentDarkText), borderRadius: 20, padding: '4px 12px' }}>{input}</span>
                             ))}
                         </div>
                     )}
@@ -325,7 +325,7 @@ const IcebergInteractive = () => {
                                 key={s}
                                 onClick={() => addItem(s)}
                                 className="text-xs transition-opacity hover:opacity-80"
-                                style={{ backgroundColor: 'var(--module-surface)', border: '1px solid rgba(242,107,31,0.2)', color: moduleText(COLORS.accentDarkText), borderRadius: 20, padding: '4px 10px' }} data-wide-button="true"
+                                style={{ backgroundColor: 'var(--module-surface)', border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', color: moduleText(COLORS.accentDarkText), borderRadius: 20, padding: '4px 10px' }} data-wide-button="true"
                             >
                               + {s}
                             </button>

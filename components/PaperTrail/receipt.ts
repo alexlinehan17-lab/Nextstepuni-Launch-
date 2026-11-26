@@ -8,11 +8,12 @@
  *
  * composeReceipt() is a pure layout function (unit-tested in
  * test/ptReceipt.test.ts); drawReceipt() paints that layout onto a canvas with
- * the design tokens (Source Serif 4 headings, DM Sans body, accent #F26B1F,
+ * the design tokens (Source Serif 4 headings, DM Sans body, accent --nsu-orange,
  * success #3A8D5F, white card with a bold ink border) — no external libraries.
  */
 
 import { type GapKind } from './attemptStore';
+import { COLORS } from '../../design/tokens';
 
 export interface LoopReceiptStats {
   /** ISO date of the session, e.g. "2026-07-07". */
@@ -99,7 +100,7 @@ export function composeReceipt(stats: LoopReceiptStats): ReceiptLayout {
 // ─── canvas rendering (design tokens, hand-drawn) ───────────
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const SUCCESS = '#3A8D5F';
 const MUTED = '#7a7068';
 const LABEL = '#9e9186';

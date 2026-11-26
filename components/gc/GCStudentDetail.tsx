@@ -43,6 +43,7 @@ import {
   STAFF_RECOMMENDATION_NOTES,
   isKnownStaffMessage,
 } from '../../data/staffEncouragement';
+import { COLORS } from '../../design/tokens';
 
 const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -302,7 +303,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                       ? { backgroundColor: '#F4F4F2', color: '#78716C', border: '1px solid #E5E3DE' }
                       : isJunior
                         ? { backgroundColor: '#EDF2EE', color: '#4A6B4F' }
-                        : { backgroundColor: '#FDEEDF', color: '#8C3A0E' }
+                        : { backgroundColor: '#FDEEDF', color: COLORS.accentDarkText }
                   }
                   title={isGraduated ? 'Graduated student (past cohort)' : isJunior ? 'Junior Cycle student' : 'Senior Cycle student'}
                 >
@@ -381,7 +382,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                       ? { backgroundColor: '#F4F4F2', color: '#78716C', border: '1px solid #E5E3DE' }
                       : isJunior
                         ? { backgroundColor: '#EDF2EE', color: '#4A6B4F' }
-                        : { backgroundColor: '#FDEEDF', color: '#8C3A0E' }
+                        : { backgroundColor: '#FDEEDF', color: COLORS.accentDarkText }
                   }
                   title={isGraduated ? 'Graduated student (past cohort)' : isJunior ? 'Junior Cycle student' : 'Senior Cycle student'}
                 >
@@ -796,8 +797,8 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
         <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5">
           <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-3">Streak</p>
           <div className="flex items-center gap-3 mb-3">
-            <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${streak?.currentStreak ? 'bg-orange-50 dark:bg-orange-500/10' : 'bg-zinc-100 dark:bg-zinc-800'}`}>
-              <Flame size={24} className={streak?.currentStreak ? 'text-orange-500' : 'text-zinc-300 dark:text-zinc-600'} />
+            <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${streak?.currentStreak ? 'bg-orange-50 dark:bg-accent/10' : 'bg-zinc-100 dark:bg-zinc-800'}`}>
+              <Flame size={24} className={streak?.currentStreak ? 'text-accent' : 'text-zinc-300 dark:text-zinc-600'} />
             </div>
             <span className="text-3xl font-bold text-zinc-900 dark:text-white">{streak?.currentStreak ?? 0}</span>
             <span className="text-sm text-zinc-500">day{(streak?.currentStreak ?? 0) !== 1 ? 's' : ''}</span>

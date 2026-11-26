@@ -35,11 +35,11 @@
 .mb-french-count-controls input { width: 100%; margin: 0; accent-color: var(--mb-ink); }
 .mb-french-count-controls button { width: 44px; height: 44px; border: 2px solid var(--mb-ink); border-radius: 8px; background: var(--mb-paper); color: var(--mb-ink); font: 700 20px/1 'DM Sans', system-ui, sans-serif; cursor: pointer; }
 .mb-french-count-controls button:disabled { cursor: default; opacity: .4; }
-.mb-french-count-controls button:focus-visible { outline: 3px solid #f26b1f; outline-offset: 3px; }
+.mb-french-count-controls button:focus-visible { outline: 3px solid var(--nsu-orange); outline-offset: 3px; }
 .mb-french-count .mb-french-slider-ends { padding: 0 54px; }
 .mb-french-attempt { min-height: 44px; border: 2px solid var(--mb-ink); border-radius: 7px; padding: 8px 12px; font: inherit; color: var(--mb-ink); background: var(--mb-paper); cursor: pointer; width: 100%; margin: 0 0 15px; text-align: left; font-weight: 650; }
-.mb-french-attempt[aria-pressed="true"] { background: #f26b1f; color: #171717; border-color: #171717; }
-.mb-french-attempt:focus-visible, .mb-french-rules summary:focus-visible { outline: 3px solid #f26b1f; outline-offset: 3px; }
+.mb-french-attempt[aria-pressed="true"] { background: var(--nsu-orange); color: #171717; border-color: #171717; }
+.mb-french-attempt:focus-visible, .mb-french-rules summary:focus-visible { outline: 3px solid var(--nsu-orange); outline-offset: 3px; }
 
 /* The section's general rules, folded under the answers. */
 .mb-french-rules { margin: 0 0 14px; }
@@ -57,8 +57,8 @@
 .mb-french-choices legend { color: var(--mb-ink); font-size: 12px; font-weight: 650; padding: 0 0 9px; }
 .mb-french-choice { display: flex; align-items: center; gap: 12px; min-height: 44px; margin: 0 0 8px; padding: 10px 12px; border: 2px solid var(--mb-ink); border-radius: 7px; color: var(--mb-ink); background: var(--mb-paper); cursor: pointer; font-size: 15px; line-height: 1.4; }
 .mb-french-choice input { flex: 0 0 18px; width: 18px; height: 18px; margin: 0; accent-color: #171717; }
-.mb-french-choice[data-selected="true"] { color: #171717; background: #f26b1f; border-color: #171717; }
-.mb-french-choice:focus-within { outline: 3px solid #f26b1f; outline-offset: 3px; }
+.mb-french-choice[data-selected="true"] { color: #171717; background: var(--nsu-orange); border-color: #171717; }
+.mb-french-choice:focus-within { outline: 3px solid var(--nsu-orange); outline-offset: 3px; }
 /* A printed lower scale (German "Lower E"): the rule, the toggle and which scale applies. An even
  * neutral border, no coloured side rail. */
 .mb-french-lower { border: 1px solid var(--mb-border); border-radius: 10px; padding: 12px 14px; margin: 12px 0 4px; }

@@ -14,9 +14,10 @@ import { drawPlant } from './focusArt';
 import { addSession, focusStats, loadGrove, type FocusRecord } from './focusStore';
 import { startPresence, subscribePresence } from './presenceSync';
 import { recordActivity } from './streakStore';
+import { COLORS } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const DURATIONS = [15, 25, 45];
 
 const PlantThumb: React.FC<{ seed: number; minutes: number }> = ({ seed, minutes }) => {
@@ -138,7 +139,7 @@ const FocusSession: React.FC<Props> = ({ uid, onBack }) => {
           <>
             <h2 className="text-2xl font-semibold mt-4 mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1F5F3E' }}>Planted</h2>
             <p className="text-[14px] mb-6" style={{ color: '#5a5550' }}>{minutes} focused minutes added to your grove.</p>
-            <button onClick={() => setMode('setup')} className="rounded-full px-6 py-2.5 text-[14px] font-semibold text-white transition-transform active:translate-y-0.5" style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}>
+            <button onClick={() => setMode('setup')} className="rounded-full px-6 py-2.5 text-[14px] font-semibold text-white transition-transform active:translate-y-0.5" style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}>
               Done
             </button>
           </>
@@ -173,7 +174,7 @@ const FocusSession: React.FC<Props> = ({ uid, onBack }) => {
         ))}
       </div>
 
-      <button onClick={start} className="w-full py-3.5 rounded-full text-[15px] font-semibold text-white transition-transform active:translate-y-0.5 mb-7" style={{ backgroundColor: ACCENT, boxShadow: '0 4px 0 #B54D14' }}>
+      <button onClick={start} className="w-full py-3.5 rounded-full text-[15px] font-semibold text-white transition-transform active:translate-y-0.5 mb-7" style={{ backgroundColor: ACCENT, boxShadow: '0 4px 0 var(--accent-dark-hex)' }}>
         Start focusing
       </button>
 

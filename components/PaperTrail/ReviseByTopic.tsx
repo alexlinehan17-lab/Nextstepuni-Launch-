@@ -27,6 +27,7 @@ import { releaseVaultPdfs } from './vaultDocs';
 import { buildVaultLink, consumeInitialVaultLocation, initialVaultFocus } from './vaultDeepLink';
 import { examTopicTaxonomyFor } from '../../data/examTopics/registry';
 import { isModelLoaded, isModelSubject, loadAtlasModel } from './atlasModel';
+import { COLORS } from '../../design/tokens';
 
 const PoliticsTopicFeed = React.lazy(() => import('./PoliticsTopicFeed'));
 
@@ -410,7 +411,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 onChange={e => setTopicQuery(e.target.value)}
                 placeholder="Search topics"
                 aria-label="Search topics"
-                className="w-48 appearance-none rounded-[10px] bg-zinc-100 py-[8px] pl-8 pr-8 text-[13px] outline-none transition-shadow placeholder:text-[#a8a29e] focus:ring-2 focus:ring-[rgba(242,107,31,0.28)] dark:bg-zinc-800 dark:text-zinc-100"
+                className="w-48 appearance-none rounded-[10px] bg-zinc-100 py-[8px] pl-8 pr-8 text-[13px] outline-none transition-shadow placeholder:text-[#a8a29e] focus:ring-2 focus:ring-accent/28 dark:bg-zinc-800 dark:text-zinc-100"
                 style={{ color: INK }}
               />
               {topicQuery && (
@@ -459,7 +460,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
               <div className="space-y-2">
                 {ordered.map(t => {
                   const m = masteryMap.get(t.subtopicId);
-                  const masteryColor = m ? (m.mastery >= 70 ? '#3A8D5F' : '#F26B1F') : null;
+                  const masteryColor = m ? (m.mastery >= 70 ? '#3A8D5F' : COLORS.accent) : null;
                   const asked = yearSets.get(t.subtopicId) ?? new Set<number>();
                   return (
                     <button
@@ -486,7 +487,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                             key={y}
                             title={String(y)}
                             className="inline-block w-[4.5px] h-[13px] rounded-[2px] transition-colors"
-                            style={{ backgroundColor: asked.has(y) ? 'rgba(242,107,31,0.55)' : '#ece8e3' }}
+                            style={{ backgroundColor: asked.has(y) ? 'rgba(var(--nsu-orange-rgb), 0.55)' : '#ece8e3' }}
                           />
                         ))}
                       </span>

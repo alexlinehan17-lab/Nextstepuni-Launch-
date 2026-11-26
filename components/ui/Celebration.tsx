@@ -42,7 +42,7 @@ export const CelebrationFrame: React.FC<CelebrationFrameProps> = ({
             scale === 'small' ? 'max-w-sm px-6 pt-6 [--frame-pad-bottom:1.5rem]' : scale === 'medium' ? 'max-w-lg px-7 pt-7 [--frame-pad-bottom:1.75rem] sm:p-9' : 'max-w-2xl px-7 pt-7 [--frame-pad-bottom:1.75rem] sm:p-10'
           }`}
         >
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-1.5 bg-[#F26B1F]" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-1.5 bg-accent" />
           {children}
         </MotionDiv>
       </MotionDiv>

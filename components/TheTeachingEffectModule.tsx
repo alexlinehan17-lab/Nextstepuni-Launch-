@@ -229,7 +229,7 @@ const ExplainItBackChallenge = () => {
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
       {/* Section header */}
       <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Feynman Technique</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Feynman Technique</span>
         <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Explain It Back Challenge</h4>
         <p className="mt-1" style={{ fontSize: 15, color: "var(--module-muted)" }}>Explain this definition in simple terms — as if to a 12-year-old.</p>
       </div>
@@ -238,7 +238,7 @@ const ExplainItBackChallenge = () => {
       <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '20px 24px' }}>
         <div className="flex items-center justify-between mb-3">
           <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: "var(--module-surface)", color: "var(--module-muted)", border: "1px solid var(--module-line)", borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>The Definition</span>
-          <span style={{ fontSize: 11, fontWeight: 600, backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '3px 10px' }}>Biology</span>
+          <span style={{ fontSize: 11, fontWeight: 600, backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '3px 10px' }}>Biology</span>
         </div>
         <p className="font-serif" style={{ fontSize: 16, color: "var(--module-ink)", lineHeight: 1.7 }}>{ORIGINAL_CONCEPT}</p>
       </div>
@@ -248,7 +248,7 @@ const ExplainItBackChallenge = () => {
           {/* Connector */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, margin: '16px 0' }}>
             <div style={{ flex: 1, height: 1, background: "var(--module-surface)" }} />
-            <div style={{ background: moduleFill(COLORS.accentTint), border: '1.5px solid rgba(242,107,31,0.3)', borderRadius: 20, padding: '6px 14px', flexShrink: 0 }}>
+            <div style={{ background: moduleFill(COLORS.accentTint), border: '1.5px solid rgba(var(--nsu-orange-rgb), 0.3)', borderRadius: 20, padding: '6px 14px', flexShrink: 0 }}>
               <span style={{ fontSize: 12, fontWeight: 700, color: moduleText(COLORS.accentDarkText), letterSpacing: '0.05em' }}>NOW EXPLAIN IT</span>
             </div>
             <div style={{ flex: 1, height: 1, background: "var(--module-surface)" }} />

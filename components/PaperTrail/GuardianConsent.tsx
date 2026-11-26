@@ -18,9 +18,10 @@ import {
   saveGuardianConsent,
   type GuardianWeekSummary,
 } from '../../data/guardianSummary';
+import { COLORS } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const validEmail = (e: string) => /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e);
 
 const GuardianConsent: React.FC<{ uid?: string; preview: GuardianWeekSummary }> = ({ uid, preview }) => {
@@ -69,7 +70,7 @@ const GuardianConsent: React.FC<{ uid?: string; preview: GuardianWeekSummary }> 
         <label className="flex items-center gap-1.5 text-[12.5px] font-medium" style={{ color: INK }}>
           <input type="checkbox" checked={optIn} onChange={e => { setOptIn(e.target.checked); setSaved(false); }} /> Send weekly
         </label>
-        <button onClick={save} disabled={!canSave} className="px-4 py-2 rounded-full text-[13px] font-semibold text-white disabled:opacity-40 transition-transform active:translate-y-0.5" style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}>
+        <button onClick={save} disabled={!canSave} className="px-4 py-2 rounded-full text-[13px] font-semibold text-white disabled:opacity-40 transition-transform active:translate-y-0.5" style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}>
           {saved ? <span className="inline-flex items-center gap-1"><Check size={13} /> Saved</span> : 'Save'}
         </button>
       </div>

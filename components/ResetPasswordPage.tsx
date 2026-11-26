@@ -46,7 +46,7 @@ const errorAnim = {
 
 type Stage = 'verifying' | 'ready' | 'invalid' | 'submitting' | 'done';
 
-const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 placeholder-zinc-400 outline-none transition-all bg-white border-2 border-zinc-200 focus:border-[#F26B1F]";
+const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 placeholder-zinc-400 outline-none transition-all bg-white border-2 border-zinc-200 focus:border-accent";
 
 /**
  * Each new reset request cancels the previous link, so a student who tapped

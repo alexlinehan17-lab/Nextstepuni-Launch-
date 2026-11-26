@@ -3,6 +3,7 @@ import React from 'react';
 import type { AccountingRubric, SecRubricCard } from '../../types/markBank';
 import SourceMaterialReader from './SourceMaterialReader';
 import { ClaimRow } from './ClaimRows';
+import { COLORS } from '../../design/tokens';
 
 export const accountingScoreId = 'accounting:allocation' as const;
 export type AccountingScoreId = typeof accountingScoreId | `accounting:row:${string}`;
@@ -82,7 +83,7 @@ const AccountingAssessment: React.FC<{
           onClick={() => onScore(accountingMark(card.totalMarks, selected - 0.5))}>−</button>
         <input id={`accounting-score-${card.id}`} type="number" inputMode="decimal"
           min={0} max={card.totalMarks} step={0.5} value={selected}
-          style={{ ...control, width: 100, background: '#F26B1F', color: '#171717', textAlign: 'center' }}
+          style={{ ...control, width: 100, background: COLORS.accent, color: '#171717', textAlign: 'center' }}
           onChange={event => onScore(accountingMark(card.totalMarks, Number(event.currentTarget.value)))} />
         <button type="button" aria-label="Add half a mark" disabled={selected === card.totalMarks}
           style={{ ...control, cursor: selected === card.totalMarks ? 'default' : 'pointer' }}

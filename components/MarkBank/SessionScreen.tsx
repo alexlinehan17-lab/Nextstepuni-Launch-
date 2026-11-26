@@ -122,6 +122,7 @@ import { translationMarks, translationPlacementComplete, type TranslationScoreId
 import { listeningExerciseKey, listeningScoredAlone, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
 import { stemKeepsPrintedBreaks, stemWithListBreaks, stemWithPrintedBreaks } from './stemText';
+import { COLORS } from '../../design/tokens';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -136,7 +137,7 @@ const SUCCESS_TEXT = 'var(--mb-success-text)';
 const CLAIM = 'var(--mb-claim)';
 const ON_CLAIM = 'var(--mb-on-claim)';
 /** Accent means "this is the action / you are here". Never "correct". */
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 /** How far the frame layers sit off the card, and the stroke's weight. */
 const FRAME_OFFSET = 8;
 const STROKE = 2;
@@ -3121,7 +3122,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             paired with a slab reads as two unrelated marks, not a stack.
 
             The colour is a flat white-mixed tint of the accent, not full
-            #F26B1F: on this light page a full-strength band out-shouts the
+            orange: on this light page a full-strength band out-shouts the
             question text, which is the actual content. The geometry carries
             the depth; the tint keeps the frame subordinate. (A concentric
             ring at an even gap is not an alternative — it reads as a focus

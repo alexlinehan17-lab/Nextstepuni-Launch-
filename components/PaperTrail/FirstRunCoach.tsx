@@ -12,9 +12,10 @@
 
 import React, { useState } from 'react';
 import { X, Check } from 'lucide-react';
+import { COLORS } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 /* Brand green is #3A8D5F, but white text only reaches 4.07:1 on it, so the
    badge uses the deeper tone (5.22:1). */
 const SUCCESS_DEEP = '#2F7A50';

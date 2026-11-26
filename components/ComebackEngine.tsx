@@ -874,7 +874,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                     onChange={e => setAnchorText(e.target.value)}
                     placeholder="Type here..."
                     maxLength={100}
-                    className="w-full mt-1 px-3 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none focus:border-[#F26B1F] dark:focus:border-[#F26B1F] transition-colors"
+                    className="w-full mt-1 px-3 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none focus:border-accent dark:focus:border-accent transition-colors"
                   />
                 </div>
               )}
@@ -892,7 +892,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                     placeholder="e.g. 350"
                     min={0}
                     max={625}
-                    className="w-full mt-1 px-3 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none focus:border-[#F26B1F] dark:focus:border-[#F26B1F] transition-colors"
+                    className="w-full mt-1 px-3 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none focus:border-accent dark:focus:border-accent transition-colors"
                   />
                 </div>
               )}
@@ -901,7 +901,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                 onClick={handleSetAnchor}
                 disabled={selectedAnchor === 'future-finder' && !selectedFfPick}
                 className="w-full py-3 rounded-xl text-sm font-bold text-white active:scale-[0.98] transition-all disabled:opacity-40 disabled:cursor-not-allowed"
-                style={{ backgroundColor: COLORS.accent, boxShadow: '0 10px 15px -3px rgba(242,107,31,0.2)' }}
+                style={{ backgroundColor: COLORS.accent, boxShadow: '0 10px 15px -3px rgba(var(--nsu-orange-rgb), 0.2)' }}
               >
                 Show me what's possible
               </button>
@@ -1013,7 +1013,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
         <button
           onClick={() => setPhase('wins')}
           className="w-full py-3 rounded-xl text-sm font-bold text-white active:scale-[0.98] transition-all flex items-center justify-center gap-2"
-          style={{ backgroundColor: COLORS.accent, boxShadow: '0 10px 15px -3px rgba(242,107,31,0.2)' }}
+          style={{ backgroundColor: COLORS.accent, boxShadow: '0 10px 15px -3px rgba(var(--nsu-orange-rgb), 0.2)' }}
         >
           Show me the quickest wins <ChevronRight size={16} />
         </button>
@@ -1070,7 +1070,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                         style={
                           win.effort === 'low' ? { backgroundColor: '#E8F2EC', color: '#1F5F3E' }
                             : win.effort === 'medium' ? { backgroundColor: '#FDF3E7', color: '#8B5E2A' }
-                            : { backgroundColor: '#ECF5F3', color: '#B54D14' }
+                            : { backgroundColor: '#ECF5F3', color: COLORS.accentDark }
                         }
                       >
                         {win.effort === 'low' ? 'Easiest' : win.effort === 'medium' ? 'Moderate' : 'Harder'}
@@ -1112,7 +1112,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
         <button
           onClick={() => setPhase('plan')}
           className="w-full py-3 rounded-xl text-sm font-bold text-white active:scale-[0.98] transition-all flex items-center justify-center gap-2"
-          style={{ backgroundColor: COLORS.accent, boxShadow: '0 10px 15px -3px rgba(242,107,31,0.2)' }}
+          style={{ backgroundColor: COLORS.accent, boxShadow: '0 10px 15px -3px rgba(var(--nsu-orange-rgb), 0.2)' }}
         >
           Give me a plan <ChevronRight size={16} />
         </button>
@@ -1221,7 +1221,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             className="rounded-xl p-4 text-center space-y-2 border bg-white dark:bg-zinc-900"
-            style={{ borderColor: 'rgba(242,107,31,0.3)' }}
+            style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.3)' }}
           >
             <Flame className="w-8 h-8 mx-auto" style={{ color: COLORS.accent }} />
             <p className="text-sm font-bold" style={{ color: COLORS.accent }}>All missions complete. Comeback is happening.</p>
@@ -1295,7 +1295,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
             ? { backgroundColor: '#E8F2EC', borderColor: 'rgba(58,141,95,0.3)' }
             : pointsGained === 0
             ? { borderColor: 'rgba(0,0,0,0.07)' }
-            : { backgroundColor: '#ECF5F3', borderColor: 'rgba(242,107,31,0.3)' }
+            : { backgroundColor: '#ECF5F3', borderColor: 'rgba(var(--nsu-orange-rgb), 0.3)' }
           }
         >
           <div className="flex items-center justify-center gap-2">
@@ -1348,7 +1348,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
 
       {/* NorthStar motivation connector */}
       {northStar && (
-        <div className="rounded-xl p-4 space-y-2 border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.2)' }}>
+        <div className="rounded-xl p-4 space-y-2 border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.2)' }}>
           <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: COLORS.accent }}>Your Why</p>
           <p className="text-sm font-semibold italic" style={{ color: COLORS.accent }}>"{northStar.statement}"</p>
           {targetPoints !== null && gap !== null && gap > 0 && (
@@ -1420,7 +1420,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
           <button
             onClick={handleNewWeek}
             className="w-full py-2 rounded-lg text-xs font-bold transition-colors border bg-white dark:bg-zinc-900"
-            style={{ color: COLORS.accent, borderColor: 'rgba(242,107,31,0.3)' }}
+            style={{ color: COLORS.accent, borderColor: 'rgba(var(--nsu-orange-rgb), 0.3)' }}
           >
             Generate next week's missions
           </button>

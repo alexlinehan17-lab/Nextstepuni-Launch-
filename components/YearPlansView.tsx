@@ -127,7 +127,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                 className="overflow-hidden relative"
                 style={{
                   background: '#FFFFFF',
-                  border: isCurrent ? '2px solid #F26B1F' : '1px solid #E8E2D8',
+                  border: isCurrent ? '2px solid var(--nsu-orange)' : '1px solid #E8E2D8',
                   borderRadius: 22,
                   boxShadow: isCurrent ? '4px 4px 0 #1A1A1A' : '0 4px 28px rgba(28,25,23,0.06), 0 1px 3px rgba(28,25,23,0.04)',
                 }}
@@ -244,7 +244,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                       <button
                         onClick={() => firstIncomplete && onSelectModule(firstIncomplete)}
                         aria-label={`${completed > 0 ? 'Continue' : 'Start'} ${plan.title}`}
-                        className="group inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)] rounded-md"
+                        className="group inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35 rounded-md"
                         style={{ ...SANS, fontSize: 14, fontWeight: 500, color: '#1a1a1a' }}
                       >
                         {completed > 0 ? 'Continue' : 'Start'}
@@ -260,7 +260,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                     <button
                       onClick={() => setExpandedId(isExpanded ? null : plan.id)}
                       aria-label={`${isExpanded ? 'Hide' : 'View'} modules in ${plan.title}`}
-                      className="inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)] rounded-md"
+                      className="inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35 rounded-md"
                       style={{ ...SANS, fontSize: 12, color: 'rgba(0,0,0,0.5)' }}
                       aria-expanded={isExpanded}
                     >

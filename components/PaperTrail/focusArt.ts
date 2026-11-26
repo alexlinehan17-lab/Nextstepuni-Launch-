@@ -9,6 +9,7 @@
  * session always redraws the same shape in the grove.
  */
 
+import { COLORS } from '../../design/tokens';
 const prng = (seed: number): (() => number) => {
   let a = seed >>> 0 || 1;
   return () => {
@@ -66,7 +67,7 @@ export function drawPlant(ctx: CanvasRenderingContext2D, w: number, h: number, p
 
   // Bloom on completion.
   if (p >= 0.98) {
-    ctx.fillStyle = '#F26B1F';
+    ctx.fillStyle = COLORS.accent;
     ctx.beginPath();
     ctx.arc(topX, topY, w * 0.055, 0, Math.PI * 2);
     ctx.fill();

@@ -327,7 +327,7 @@ const WarRoomWorkspace: React.FC<WarRoomProps> = ({
   if (dataStillLoading) {
     return (
       <div className="flex min-h-[280px] items-center justify-center" role="status" aria-label="Loading strategy data">
-        <span className="h-7 w-7 animate-spin rounded-full border-2 border-[var(--outline-soft)] border-t-[#F26B1F]" />
+        <span className="h-7 w-7 animate-spin rounded-full border-2 border-[var(--outline-soft)] border-t-accent" />
       </div>
     );
   }

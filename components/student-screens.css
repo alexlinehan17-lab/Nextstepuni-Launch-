@@ -27,13 +27,13 @@
 .sh-home-actions {display:flex;align-items:center;gap:8px;flex-shrink:0}
 .sh-feedback {display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:44px;padding:9px 11px;border:1px solid var(--student-ink);border-radius:999px;background:var(--student-paper);color:inherit;font-size:12px;font-weight:600}
 .sh-feedback:hover {background:var(--surface-soft)}
-.sh-feedback:active {background:#ff7918;color:#24271f;transform:translateY(1px)}
+.sh-feedback:active {background:var(--nsu-orange);color:#24271f;transform:translateY(1px)}
 .sh-hero {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px;align-items:start;padding:99px 0 72px}
 .sh-greeting h1 {font-size:clamp(44px,5.5vw,84px);line-height:1.01;margin:0 0 25px}
 .sh-greeting h1 em {font-weight:500}
 .sh-greeting>p,.sh-week>p:not(.student-eyebrow) {font-size:15px;line-height:1.7;color:var(--student-muted);margin-bottom:26px}
 .student-primary,.student-secondary {display:inline-flex;align-items:center;justify-content:space-between;gap:26px;min-height:54px;border:1.5px solid var(--student-ink);border-radius:8px;padding:14px 23px;font-size:15px;font-weight:600}
-.student-primary {background:#ff7915;color:#20231e;box-shadow:3px 3px 0 var(--student-ink)}
+.student-primary {background:var(--nsu-orange);color:#20231e;box-shadow:3px 3px 0 var(--student-ink)}
 .student-secondary {background:var(--student-paper);color:inherit}
 .student-primary:hover,.student-secondary:hover {transform:translateY(-2px)}
 .student-text-action {display:flex;align-items:center;gap:14px;min-height:44px;text-align:left;font-size:14px;color:var(--student-muted)}
@@ -43,7 +43,7 @@
 .sh-week-days {display:flex;justify-content:space-between;margin:25px 0 20px}
 .sh-week-days>span {display:flex;align-items:center;flex-direction:column;gap:8px}
 .sh-week-days i {height:17px;width:17px;border:1.5px solid var(--student-rule);border-radius:50%}
-.sh-week-days i.studied {background:#f78232;border-color:#f78232}
+.sh-week-days i.studied {background:var(--nsu-orange);border-color:var(--nsu-orange)}
 .sh-week-days small {font-size:10px;color:var(--student-muted)}
 .sh-section-heading {display:flex;justify-content:space-between;align-items:baseline;gap:25px;margin-bottom:28px}
 .sh-section-heading h2 {font-size:32px;line-height:1.2}
@@ -58,7 +58,7 @@
 .sh-next>p:not(.student-eyebrow) {font-size:15px;line-height:1.7;color:var(--student-muted)}
 .sh-module-progress {margin-top:auto;padding:42px 0 27px;width:100%;font-size:13px}
 .sh-module-progress>div {height:4px;margin-top:13px;background:var(--student-rule)}
-.sh-module-progress i {display:block;height:100%;background:#ff7915}
+.sh-module-progress i {display:block;height:100%;background:var(--nsu-orange)}
 .sh-next>.student-primary {margin-top:16px}
 .sh-return-tool {margin-top:20px}
 .sh-destinations {display:grid;grid-template-columns:1fr 1fr;gap:30px}
@@ -104,7 +104,7 @@
 .module-completion .student-text-action {min-height:40px}
 .dark .module-completion {--student-ink:#484848;--student-paper:var(--surface-canvas);--student-muted:#b2b2b2;--student-rule:#414141;color:#f3f3f3}
 .dark .module-completion .student-primary {box-shadow:0 2px 6px #00000040}
-.dark .module-completion button:focus-visible {outline-color:#f58c4e}
+.dark .module-completion button:focus-visible {outline-color:var(--accent-text)}
 @media(max-width:700px) {.direction-navigation{padding:calc(20px + var(--safe-top)) 20px 20px;align-items:flex-start}.direction-navigation h1{font-size:22px}.direction-navigation>div{gap:12px}.direction-navigation .student-secondary{font-size:12px;padding:10px;min-height:44px;gap:8px}.direction-body{padding:0 22px 110px}.direction-north-star{margin:35px auto 50px}.direction-cards{grid-template-columns:1fr}.direction-next>div{grid-template-columns:1fr}.direction-vision>h2{font-size:30px}.completion-record{max-width:320px;gap:12px}.completion-record>span:last-child{width:100%}.module-completion{padding-block:32px}.completion-character{height:120px;width:120px}}
 /* The persistent account controls occupy the upper-right corner. */
 .direction-navigation {justify-content:flex-start}

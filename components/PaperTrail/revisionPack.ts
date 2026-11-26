@@ -12,6 +12,7 @@
 
 import { type TopicSibling } from './topics';
 import { sittingLabel } from './sitting';
+import { COLORS } from '../../design/tokens';
 
 const LVL: Record<string, string> = { higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common' };
 const paperAbbr = (k: string) => (k === 'p1' ? 'Paper 1' : k === 'p2' ? 'Paper 2' : '');
@@ -54,7 +55,7 @@ export function buildPackHtml(o: PackOptions): string {
   body { font-family: 'DM Sans', -apple-system, system-ui, sans-serif; color: #1a1a1a; max-width: 720px; margin: 32px auto; padding: 0 20px; }
   h1 { font-family: 'Source Serif 4', Georgia, serif; font-size: 24px; margin: 0 0 4px; }
   .sub { color: #7a7068; font-size: 13px; margin: 0 0 20px; }
-  .intro { background: #FDEEDF; border-left: 3px solid #F26B1F; border-radius: 0 8px 8px 0; padding: 12px 14px; font-size: 13.5px; color: #8C3A0E; margin-bottom: 20px; }
+  .intro { background: #FDEEDF; border-left: 3px solid ${COLORS.accent}; border-radius: 0 8px 8px 0; padding: 12px 14px; font-size: 13.5px; color: ${COLORS.accentDarkText}; margin-bottom: 20px; }
   table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
   th { text-align: left; text-transform: uppercase; font-size: 10.5px; letter-spacing: 0.08em; color: #9e9186; border-bottom: 2px solid #1a1a1a; padding: 6px 8px; }
   td { padding: 8px; border-bottom: 1px solid #e0dbd4; }

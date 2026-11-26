@@ -10,6 +10,7 @@ import {
   Brain, CheckCircle, ArrowRight, BookOpen, Target, RotateCcw,
   Lightbulb, Sparkles, BarChart3,
 } from 'lucide-react';
+import { accentRgba } from '../design/tokens';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -148,7 +149,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
                 <circle cx="58" cy="58" r="50" fill="none" stroke="#ECE8E3" strokeWidth="7" className="dark:stroke-zinc-700" />
                 <circle
                   cx="58" cy="58" r="50" fill="none" strokeWidth="7" strokeLinecap="round"
-                  stroke="rgba(242,107,31,0.62)"
+                  stroke={accentRgba(0.62)}
                   strokeDasharray={C}
                   strokeDashoffset={reduceMotion || ringIn ? C * (1 - pct) : C}
                   style={reduceMotion ? undefined : { transition: 'stroke-dashoffset 900ms cubic-bezier(0.16, 1, 0.3, 1)' }}
@@ -161,7 +162,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
             </div>
             <div className="min-w-[180px] flex-1">
               <p className="font-serif text-[19px] font-bold text-[#1A1A1A] dark:text-white">
-                Confidence {saved.confidenceBefore} <span className="text-[#F26B1F]">→</span> {saved.confidenceAfter}
+                Confidence {saved.confidenceBefore} <span className="text-accent">→</span> {saved.confidenceAfter}
               </p>
               <div className="mt-3 space-y-1.5 text-[12.5px] text-[#3A3530] dark:text-zinc-300">
                 {covered.length > 0 && (
@@ -216,7 +217,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
                 onClick={() => setHardestTopic(t)}
                 className={`w-full text-left px-3 py-2 rounded-lg text-xs font-medium transition-all ${
                   hardestTopic === t
-                    ? 'bg-[#F26B1F] text-white'
+                    ? 'bg-accent text-white'
                     : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
                 }`}
               >
@@ -228,7 +229,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
             onClick={() => setHardestTopic('__other__')}
             className={`w-full text-left px-3 py-2 rounded-lg text-xs font-medium transition-all ${
               hardestTopic === '__other__' || (hardestTopic !== '' && !syllabusTopics.includes(hardestTopic))
-                ? 'bg-[#F26B1F] text-white'
+                ? 'bg-accent text-white'
                 : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
             }`}
           >
@@ -240,7 +241,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
               value={hardestTopic === '__other__' ? '' : hardestTopic}
               onChange={(e) => setHardestTopic(e.target.value || '__other__')}
               placeholder="Type a topic..."
-              className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-[#F26B1F]/30"
+              className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-accent/30"
               autoFocus
             />
           )}
@@ -252,7 +253,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
             value={hardestTopic}
             onChange={(e) => setHardestTopic(e.target.value)}
             placeholder={`e.g. "Organic chemistry reactions" or "Integration by parts"`}
-            className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-[#F26B1F]/30"
+            className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-accent/30"
             autoFocus
           />
         </>
@@ -276,7 +277,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
                     )}
                     className={`px-2.5 py-1 rounded-md text-[10px] font-medium transition-all ${
                       isSelected
-                        ? 'bg-[#F26B1F] text-white'
+                        ? 'bg-accent text-white'
                         : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
                     }`}
                   >
@@ -304,7 +305,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
               onClick={() => setStrategy(opt.id)}
               className={`flex items-center gap-2 px-3 py-2.5 rounded-xl text-xs font-medium transition-all text-left ${
                 strategy === opt.id
-                  ? 'bg-[#F26B1F] text-white shadow-sm'
+                  ? 'bg-accent text-white shadow-sm'
                   : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
               }`}
             >
@@ -356,7 +357,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
                 onClick={() => setConfidenceAfter(n)}
                 className={`flex-1 py-2.5 rounded-lg text-xs font-bold transition-all ${
                   confidenceAfter === n
-                    ? 'bg-[#F26B1F] text-white'
+                    ? 'bg-accent text-white'
                     : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
                 }`}
               >
@@ -394,7 +395,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
         onChange={(e) => setWhatWorked(e.target.value)}
         placeholder="e.g. 'The worked examples in ch. 5 really helped' or 'Need to revisit trigonometric identities'"
         rows={3}
-        className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-[#F26B1F]/30 resize-none"
+        className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-accent/30 resize-none"
       />
     </MotionDiv>,
   ];
@@ -411,14 +412,14 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
         {/* Header */}
         <div className="px-5 pt-5 pb-3">
           <div className="flex items-center gap-2 mb-3">
-            <Brain size={18} className="text-[#F26B1F]" />
+            <Brain size={18} className="text-accent" />
             <span className="text-sm font-bold text-zinc-800 dark:text-zinc-200">Quick Debrief</span>
             <span className="text-[10px] text-zinc-400 dark:text-zinc-500 ml-auto">{step + 1} / {steps.length}</span>
           </div>
           {/* Step progress */}
           <div className="flex gap-1">
             {steps.map((_, i) => (
-              <div key={i} className={`flex-1 h-1 rounded-full transition-all ${i <= step ? 'bg-[#F26B1F]' : 'bg-zinc-200 dark:bg-zinc-700'}`} />
+              <div key={i} className={`flex-1 h-1 rounded-full transition-all ${i <= step ? 'bg-accent' : 'bg-zinc-200 dark:bg-zinc-700'}`} />
             ))}
           </div>
         </div>
@@ -450,7 +451,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
           <button
             onClick={isLastStep ? handleSave : () => setStep(step + 1)}
             disabled={step === 1 && !strategy}
-            className="px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-[#F26B1F] hover:bg-[#B54D14] shadow-sm transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5"
+            className="px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-accent hover:bg-accentDark shadow-sm transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5"
           >
             {isLastStep ? 'Save Debrief' : 'Next'}
             <ArrowRight size={14} />

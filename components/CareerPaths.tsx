@@ -392,7 +392,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
                             {doors.map((d) => (
                               <div key={d.key} className="relative">
                                 <span className="absolute -left-[26px] top-3.5" aria-hidden="true">
-                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F26B1F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={COLORS.accent} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                                 </span>
                                 <div className="rounded-2xl p-3.5" style={{ backgroundColor: 'var(--deck-paper)', border: `2px solid ${INK}` }}>
                                   <div className="flex items-baseline justify-between gap-2 mb-2">

@@ -21,11 +21,12 @@ import {
   definitionsForSubject,
   type DrillDefinition,
 } from '../../data/definitionDrill';
+import { COLORS } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const ACCENT_TINT = '#FDEEDF';
-const ACCENT_DARK_TEXT = '#8C3A0E';
+const ACCENT_DARK_TEXT = COLORS.accentDarkText;
 const SUCCESS = '#3A8D5F';
 const SUCCESS_TINT = '#E8F2EC';
 const SUCCESS_DARK_TEXT = '#1F5F3E';
@@ -107,7 +108,7 @@ const DrillDeck: React.FC<{ definitions: DrillDefinition[]; subjectLabel: string
           <button
             onClick={reset}
             className="inline-flex items-center gap-2 rounded-full px-6 py-2.5 text-white font-semibold text-[14px]"
-            style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14' }}
+            style={{ backgroundColor: ACCENT, borderBottom: '3px solid var(--accent-dark-hex)' }}
           >
             <RotateCcw size={15} /> Drill again
           </button>
@@ -148,7 +149,7 @@ const DrillDeck: React.FC<{ definitions: DrillDefinition[]; subjectLabel: string
             <button
               onClick={() => setRevealed(true)}
               className="w-full rounded-full px-6 py-3 text-white font-semibold text-[15px]"
-              style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14' }}
+              style={{ backgroundColor: ACCENT, borderBottom: '3px solid var(--accent-dark-hex)' }}
             >
               Reveal the marking wording
             </button>

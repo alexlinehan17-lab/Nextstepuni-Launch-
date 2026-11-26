@@ -137,7 +137,7 @@
 }
 
 .mb-wi-stage-switch button[aria-pressed='true'] {
-  border-bottom-color: #F26B1F;
+  border-bottom-color: var(--nsu-orange);
   color: var(--mb-ink);
 }
 
@@ -189,7 +189,7 @@
 
 .mb-wi-focus-toggle[aria-pressed='true'] {
   border-color: var(--mb-ink);
-  box-shadow: inset 0 -2px 0 #F26B1F;
+  box-shadow: inset 0 -2px 0 var(--nsu-orange);
   color: var(--mb-ink);
 }
 
@@ -223,9 +223,9 @@
   margin: 0 .04em;
   padding: 0 .08em;
   border-radius: 3px;
-  background: rgba(242, 107, 31, .2);
+  background: rgba(var(--nsu-orange-rgb), .2);
   color: inherit;
-  box-shadow: inset 0 -2px 0 #F26B1F;
+  box-shadow: inset 0 -2px 0 var(--nsu-orange);
 }
 
 .mb-wi-line-nav {
@@ -404,7 +404,7 @@
 .mb-wi-task-map li::before {
   content: '—';
   margin-right: 7px;
-  color: #F26B1F;
+  color: var(--nsu-orange);
 }
 
 .mb-wi-method-note {
@@ -725,7 +725,7 @@
 .mb-wi-kp-slots li::before {
   content: '—';
   margin-right: 7px;
-  color: #F26B1F;
+  color: var(--nsu-orange);
 }
 
 .mb-wi-kp-chips {

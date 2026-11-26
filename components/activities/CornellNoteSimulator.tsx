@@ -66,7 +66,7 @@ export default function CornellNoteSimulator() {
   const feedback = showFeedback ? getFeedback() : [];
   const allSuccess = feedback.length > 0 && feedback.every((f) => f.type === 'success');
 
-  const fieldClass = "mt-3 min-h-36 w-full resize-y rounded-lg border border-[var(--module-line)] bg-[var(--module-surface)] p-3 text-base leading-relaxed text-[var(--module-ink)] placeholder:text-[var(--module-muted)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B54D14] dark:border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)]";
+  const fieldClass = "mt-3 min-h-36 w-full resize-y rounded-lg border border-[var(--module-line)] bg-[var(--module-surface)] p-3 text-base leading-relaxed text-[var(--module-ink)] placeholder:text-[var(--module-muted)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentDark dark:border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)]";
   return <section className="my-10 font-sans text-[var(--module-ink)] dark:text-[var(--module-muted)]" aria-labelledby={`${fieldId}-title`}>
     <p className="mb-2 text-xs font-bold uppercase tracking-widest text-[var(--module-danger-text)] dark:text-[var(--module-ink)]">Try it · Put notes to work</p>
     <h4 id={`${fieldId}-title`} className="font-serif text-3xl font-semibold">Cornell Note Simulator</h4>

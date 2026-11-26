@@ -43,7 +43,7 @@ const AttentionDeficitCalculator = () => {
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
             <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Interactive Calculator</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Interactive Calculator</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Attention Deficit Calculator</h4>
                 <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>After an interruption it can take a while to fully refocus. This is a simplified illustration of how quickly those costs add up.</p>
             </div>

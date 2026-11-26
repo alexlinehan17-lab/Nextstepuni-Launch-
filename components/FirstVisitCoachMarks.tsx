@@ -15,6 +15,7 @@ import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import { useReducedMotion } from './Motion';
 import { useModal } from '../hooks/useModal';
 import { readSafeArea } from './ui/Frame';
+import { COLORS } from '../design/tokens';
 
 const STEPS: { target: string; title: string; body: string }[] = [
   {
@@ -50,7 +51,7 @@ const markSeen = (uid?: string) => {
 };
 
 const INK = 'var(--ink-primary, #1a1a1a)';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 
 interface Props {
   uid?: string;
@@ -194,7 +195,7 @@ const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) =
               <button
                 onClick={() => { markSeen(uid); onOpenGuide(); }}
                 className={`${mobileAppDesign ? 'min-h-11 ' : ''}rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold border-2 transition-transform active:translate-y-0.5`}
-                style={{ borderColor: 'rgba(242,107,31,0.35)', color: ACCENT }}
+                style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.35)', color: ACCENT }}
               >
                 Take the full tour
               </button>
@@ -202,7 +203,7 @@ const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) =
             <button
               onClick={() => (last ? finish() : setStep(v => v + 1))}
               className={`${mobileAppDesign ? 'min-h-11 ' : ''}rounded-full px-4 py-1.5 text-[12.5px] font-semibold text-white transition-transform active:translate-y-0.5`}
-              style={{ backgroundColor: ACCENT, boxShadow: '0 2px 0 #B54D14' }}
+              style={{ backgroundColor: ACCENT, boxShadow: '0 2px 0 var(--accent-dark-hex)' }}
             >
               {last ? 'Done' : 'Next →'}
             </button>

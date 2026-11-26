@@ -6,6 +6,7 @@
 import type React from 'react';
 import { type Grade, getPointsForGrade, LC_SUBJECTS } from '../subjectData';
 import { type StudentSubjectProfile } from '../subjectData';
+import { COLORS } from '../../design/tokens';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -38,7 +39,7 @@ export const INK = 'var(--ink-primary)';
 export const INK_SOFT = 'var(--ink-secondary)';
 export const INK_MUTE = 'var(--ink-muted)';
 export const INK_FAINT = 'var(--outline-soft)';
-export const ACCENT = '#F26B1F';
+export const ACCENT = COLORS.accent;
 export const ACCENT_DARK = '#A43F08';
 
 // Status palette — muted, not neon

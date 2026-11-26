@@ -32,7 +32,7 @@
 .setup-flow .setup-select-trigger [data-slot=select-value] { overflow: hidden; text-overflow: ellipsis; }
 .setup-flow .setup-select-trigger svg { width: 16px; height: 16px; color: #626262; }
 .grade-workspace .grade-value-current .setup-select-trigger { border-bottom: 2px solid #1a1a1a; }
-.grade-workspace .grade-value-target .setup-select-trigger { border-bottom: 2px solid #f26b1f; }
+.grade-workspace .grade-value-target .setup-select-trigger { border-bottom: 2px solid var(--nsu-orange); }
 .grade-workspace .grade-level .setup-select-trigger { font-size: 14px; }
 .setup-field .setup-select-trigger { min-height: 52px; font-size: 16px; }
 .nsu-kobra .setup-select-menu {

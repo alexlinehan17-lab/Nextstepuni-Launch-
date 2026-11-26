@@ -46,15 +46,15 @@ const AchievementToast: React.FC<AchievementToastProps> = ({ achievement, onDism
             type="button"
             onClick={onDismiss}
             aria-label={`Dismiss achievement: ${achievement.title}`}
-            className="group w-full overflow-hidden rounded-2xl border border-[#DEDAD3] bg-white text-left shadow-[0_10px_30px_rgba(28,25,23,0.10)] transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-[#C8C2B9] hover:shadow-[0_14px_34px_rgba(28,25,23,0.13)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F26B1F]/45 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-600"
+            className="group w-full overflow-hidden rounded-2xl border border-[#DEDAD3] bg-white text-left shadow-[0_10px_30px_rgba(28,25,23,0.10)] transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-[#C8C2B9] hover:shadow-[0_14px_34px_rgba(28,25,23,0.13)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/45 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-600"
           >
             <div className="flex items-center justify-between gap-4 px-4 pt-3.5 pb-2.5">
               <span className="flex min-w-0 items-center gap-2 text-[9px] font-bold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
-                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#F26B1F]" aria-hidden="true" />
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true" />
                 Achievement unlocked
               </span>
               {achievement.bonusPoints > 0 && (
-                <span className="shrink-0 text-[11px] font-bold tabular-nums text-[#F26B1F]">
+                <span className="shrink-0 text-[11px] font-bold tabular-nums text-accent">
                   +{achievement.bonusPoints} JP
                 </span>
               )}

@@ -2,6 +2,7 @@ import { useState, type CSSProperties } from 'react';
 import type { DashboardSection } from '../../../contexts/NavigationContext';
 import type { RankedValue, MasterySummary } from '../dashboardAnalytics';
 import { Eyebrow } from './shared';
+import { COLORS } from '../../../design/tokens';
 
 export function ProgressSections({ value, onChange, options }: {
   value: DashboardSection;
@@ -19,7 +20,7 @@ export function ProgressSections({ value, onChange, options }: {
 }
 
 const mixDetails: Record<string, { colour: string; note: string }> = {
-  'new-learning': { colour: '#eb692a', note: 'Getting started with unfamiliar material.' },
+  'new-learning': { colour: COLORS.accent, note: 'Getting started with unfamiliar material.' },
   practice: { colour: '#397f7c', note: 'Putting what you know to work.' },
   revision: { colour: '#b27d2d', note: 'Returning to material you have studied.' },
 };

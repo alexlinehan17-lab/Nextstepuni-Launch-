@@ -9,7 +9,7 @@ import type { PoliticsRubric, SecRubricCard } from '../../types/markBank';
 type PoliticsCard = SecRubricCard & { rubric: PoliticsRubric };
 const cards = [...generatedCardsForLevel('higher'), ...generatedCardsForLevel('ordinary')] as PoliticsCard[];
 const taskTopics = new Map(POLITICS_EXAM_TASKS.map(task => [task.id, politicsExamTopicIdsForTask(task)]));
-const control = 'rounded-lg border-2 border-[#383838] bg-white px-3 py-2 text-sm font-semibold text-[#1a1a1a] hover:border-[#F26B1F] focus-visible:outline-2 focus-visible:outline-[#F26B1F]';
+const control = 'rounded-lg border-2 border-[#383838] bg-white px-3 py-2 text-sm font-semibold text-[#1a1a1a] hover:border-accent focus-visible:outline-2 focus-visible:outline-accent';
 
 const Task: React.FC<{ card: PoliticsCard }> = ({ card }) => {
   const [revealed, setRevealed] = useState(false);

@@ -29,7 +29,7 @@ export default function KanbanBoard() {
           {tasks.filter(task => task.column === stage.id).map(task => <div key={task.id} className="border-t border-[var(--module-line)] pt-3 dark:border-[var(--module-line)]">
             <p className="text-base font-semibold leading-snug">{task.text}</p>
             <label className="mt-3 block text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]" htmlFor={`kanban-task-${task.id}`}>Move task</label>
-            <select id={`kanban-task-${task.id}`} aria-label={`Move ${task.text}`} value={task.column} onChange={event => moveTask(task, event.target.value as Stage)} className="mt-1 min-h-11 w-full rounded-lg border border-[var(--module-line)] bg-[var(--module-surface)] px-3 text-base text-[var(--module-ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#B54D14] dark:border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)]">
+            <select id={`kanban-task-${task.id}`} aria-label={`Move ${task.text}`} value={task.column} onChange={event => moveTask(task, event.target.value as Stage)} className="mt-1 min-h-11 w-full rounded-lg border border-[var(--module-line)] bg-[var(--module-surface)] px-3 text-base text-[var(--module-ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-accentDark dark:border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)]">
               {STAGES.map(option => <option key={option.id} value={option.id}>{option.label}</option>)}
             </select>
           </div>)}

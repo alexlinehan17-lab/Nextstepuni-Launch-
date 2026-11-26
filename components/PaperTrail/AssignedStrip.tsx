@@ -18,11 +18,12 @@ import {
   markAssignmentComplete,
   type Assignment,
 } from '../../data/assignments';
+import { COLORS } from '../../design/tokens';
 
 const STATUS_STYLE = {
   done: { bg: '#E8F2EC', fg: '#1F5F3E', label: 'Done' },
   overdue: { bg: '#FBEAE8', fg: '#8E2A20', label: 'Overdue' },
-  open: { bg: '#FDEEDF', fg: '#8C3A0E', label: 'To do' },
+  open: { bg: '#FDEEDF', fg: COLORS.accentDarkText, label: 'To do' },
 } as const;
 
 interface Props {

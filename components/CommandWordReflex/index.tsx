@@ -34,7 +34,7 @@ import { figureUrl } from '../../utils/figureUrl';
 
 const INDIGO_DARK_TEXT = 'var(--accent-text)';
 const INDIGO_TINT = 'var(--surface-soft)';
-const HL_BG = '#F26B1F';        // amber-200 highlighter
+const HL_BG = COLORS.accent;        // amber-200 highlighter
 const HL_TEXT = '#1a1a1a';      // amber-800
 
 const cardShell =
@@ -238,7 +238,7 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
                     grounded examiner guidance look like generic AI output. */}
                 <section className="mb-4 overflow-hidden rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] shadow-[3px_3px_0_0_var(--outline-strong)]">
                   <header className="px-5 py-4 border-b border-[var(--outline-soft)]">
-                    <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[#F26B1F] mb-1">
+                    <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-1">
                       Read it like an examiner
                     </p>
                     <h3 className="font-serif text-[22px] leading-tight font-semibold text-[var(--ink-primary)]">
@@ -249,8 +249,8 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
                   <div className="grid md:grid-cols-2">
                     <div className="px-5 py-5 md:border-r border-[var(--outline-soft)]">
                       <div className="flex items-center gap-3 mb-3">
-                        <span className="font-mono text-[11px] font-bold text-[#F26B1F]">01</span>
-                        <span className="h-px w-8 bg-[#F26B1F]" aria-hidden="true" />
+                        <span className="font-mono text-[11px] font-bold text-accent">01</span>
+                        <span className="h-px w-8 bg-accent" aria-hidden="true" />
                         <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">The move</p>
                       </div>
                       <p className="text-[14px] leading-relaxed text-[var(--ink-primary)]">{q.demand}</p>
@@ -258,8 +258,8 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
 
                     <div className="px-5 py-5 border-t md:border-t-0 border-[var(--outline-soft)]">
                       <div className="flex items-center gap-3 mb-3">
-                        <span className="font-mono text-[11px] font-bold text-[#F26B1F]">02</span>
-                        <span className="h-px w-8 bg-[#F26B1F]" aria-hidden="true" />
+                        <span className="font-mono text-[11px] font-bold text-accent">02</span>
+                        <span className="h-px w-8 bg-accent" aria-hidden="true" />
                         <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">Where marks go</p>
                       </div>
                       <p className="text-[14px] leading-relaxed text-[var(--ink-primary)]">{q.trap}</p>
@@ -268,7 +268,7 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
 
                   <footer className="px-5 py-3 border-t border-[var(--outline-soft)] flex flex-wrap items-center justify-between gap-2">
                     <p className="text-[11px] leading-relaxed text-[var(--ink-muted)]">{q.source}</p>
-                    <p className="font-mono text-[10px] font-bold uppercase tracking-[0.12em] text-[#F26B1F]">About {q.marks} marks in play</p>
+                    <p className="font-mono text-[10px] font-bold uppercase tracking-[0.12em] text-accent">About {q.marks} marks in play</p>
                   </footer>
                 </section>
 

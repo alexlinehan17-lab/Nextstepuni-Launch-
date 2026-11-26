@@ -132,7 +132,7 @@ const VerifyModal: React.FC<{ entryYear: number; onClose: () => void }> = ({ ent
       >
         <div className="flex items-start justify-between p-6 pb-4 shrink-0">
           <div className="flex items-start gap-3 min-w-0">
-            <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(242,107,31,0.12)' }}>
+            <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.12)' }}>
               <Eye size={20} style={{ color: COLORS.accent }} />
             </div>
             <div className="min-w-0">

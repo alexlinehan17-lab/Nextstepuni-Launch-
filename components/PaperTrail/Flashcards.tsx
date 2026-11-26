@@ -22,9 +22,10 @@ import {
   type Flashcard,
 } from './flashcardStore';
 import { type ReviewGrade } from './reviewStore';
+import { COLORS } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 
 const GRADES: { g: ReviewGrade; label: string }[] = [
   { g: 'again', label: 'Again' },
@@ -108,14 +109,14 @@ const Flashcards: React.FC<Props> = ({ uid, now, onBack }) => {
         <h2 className="text-2xl font-semibold mb-4" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{editing ? 'Edit card' : 'New card'}</h2>
         <label className="block text-[11px] font-bold uppercase tracking-[0.1em] mb-1.5" style={{ color: '#9e9186' }}>Front — the prompt</label>
         <textarea value={front} onChange={e => setFront(e.target.value)} rows={2} placeholder="e.g. State Le Chatelier's principle"
-          className="w-full mb-4 px-3.5 py-2.5 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 text-[14px] outline-none focus:border-[#F26B1F]" />
+          className="w-full mb-4 px-3.5 py-2.5 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 text-[14px] outline-none focus:border-accent" />
         <label className="block text-[11px] font-bold uppercase tracking-[0.1em] mb-1.5" style={{ color: '#9e9186' }}>Back — the answer</label>
         <textarea value={back} onChange={e => setBack(e.target.value)} rows={4} placeholder="Your answer, in your own words"
-          className="w-full mb-5 px-3.5 py-2.5 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 text-[14px] outline-none focus:border-[#F26B1F]" />
+          className="w-full mb-5 px-3.5 py-2.5 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 text-[14px] outline-none focus:border-accent" />
         <div className="flex items-center gap-2.5">
           <button onClick={save} disabled={!front.trim() || !back.trim()}
             className="rounded-full px-6 py-2.5 text-[14px] font-semibold text-white disabled:opacity-40 transition-transform active:translate-y-0.5"
-            style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}>Save card</button>
+            style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}>Save card</button>
           <button onClick={backToList} className="rounded-full px-4 py-2.5 text-[13px] font-medium" style={{ color: '#7a7068' }}>Cancel</button>
         </div>
       </div>
@@ -156,7 +157,7 @@ const Flashcards: React.FC<Props> = ({ uid, now, onBack }) => {
         {!flipped ? (
           <button onClick={() => setFlipped(true)}
             className="w-full py-3 rounded-full text-[14.5px] font-semibold text-white transition-transform active:translate-y-0.5"
-            style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}>Show answer</button>
+            style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}>Show answer</button>
         ) : (
           <>
             <p className="text-[12px] mb-2 text-center" style={{ color: '#7a7068' }}>How well did you recall it?</p>
@@ -188,7 +189,7 @@ const Flashcards: React.FC<Props> = ({ uid, now, onBack }) => {
       <div className="flex items-center gap-2.5 mb-5">
         <button onClick={() => openEditor(null)}
           className="inline-flex items-center gap-1.5 rounded-full px-4 py-2.5 text-[13.5px] font-semibold text-white transition-transform active:translate-y-0.5"
-          style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}>
+          style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}>
           <Plus size={15} /> New card
         </button>
         {stats.due > 0 && (

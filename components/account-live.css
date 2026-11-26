@@ -17,7 +17,7 @@
   --al-muted: #6d6d6d;
   --al-line: #dedede;
   --al-soft: #f5f5f5;
-  --al-focus: #b84a0c;
+  --al-focus: var(--accent-text);
   color: var(--al-ink);
   background: var(--al-canvas);
   min-height: 100dvh;
@@ -35,7 +35,7 @@
   --al-muted: #bbb;
   --al-line: #505050;
   --al-soft: #303030;
-  --al-focus: #f99a63;
+  --al-focus: var(--accent-text);
   color-scheme: dark;
 }
 .auth-live * {
@@ -82,7 +82,7 @@
 }
 .auth-live-wordmark > span,
 .auth-live-identity h2 > span {
-  color: #e96f2e;
+  color: var(--nsu-orange);
 }
 .auth-live-layout {
   display: grid;

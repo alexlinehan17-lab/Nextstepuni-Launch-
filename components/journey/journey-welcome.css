@@ -12,16 +12,16 @@
 .journey-welcome-story>p:not(.journey-welcome-eyebrow){margin:0;max-width:34ch;font-size:15px;line-height:1.7;color:#62695c}
 .journey-welcome-art{display:flex;align-items:center;gap:12px;margin:18px 0 0}
 .journey-welcome-art .crew-illustration{width:160px;height:160px;flex-shrink:0;background:#fff;mix-blend-mode:multiply}
-.journey-welcome-art>span{font:italic 20px/1.35 Georgia,serif;color:#aa430c;transform:rotate(-5deg)}
+.journey-welcome-art>span{font:italic 20px/1.35 Georgia,serif;color:var(--accent-text);transform:rotate(-5deg)}
 .journey-welcome-guide{padding:34px}
 .journey-welcome ol{list-style:none;margin:0;padding:0}
 .journey-welcome li{display:flex;gap:15px;padding:0 0 20px;margin-bottom:20px;border-bottom:1px solid #d8dbd2}
-.journey-welcome-number{font:500 12px/1.7 monospace;color:#aa430c}
+.journey-welcome-number{font:500 12px/1.7 monospace;color:var(--accent-text)}
 .journey-welcome h3{margin:0 0 7px;font:750 18px/1.25 'DM Sans',sans-serif;letter-spacing:-.035em}
 .journey-welcome li p{margin:0;color:#62695c;font-size:13px;line-height:1.7}
 .journey-welcome li strong{font-weight:650;color:#343a2e}
 .journey-welcome-note{margin:0 0 22px;font-size:13px;line-height:1.65;color:#62695c}
-.journey-welcome-start{display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%;padding:15px 18px;border:1.5px solid #23251f;border-radius:8px;background:#ff7911;color:#23251f;box-shadow:3px 3px 0 #23251f;font:750 14px 'DM Sans',sans-serif;transition:transform .16s,box-shadow .16s}
+.journey-welcome-start{display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%;padding:15px 18px;border:1.5px solid #23251f;border-radius:8px;background:var(--nsu-orange);color:#23251f;box-shadow:3px 3px 0 #23251f;font:750 14px 'DM Sans',sans-serif;transition:transform .16s,box-shadow .16s}
 .journey-welcome-start:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #23251f}
 .journey-welcome-reminder{margin:15px 0 0;color:#62695c;font-size:11px;line-height:1.6}
 .journey-welcome button:focus-visible,.journey-welcome-help:focus-visible{outline:3px solid #b94e12;outline-offset:4px}

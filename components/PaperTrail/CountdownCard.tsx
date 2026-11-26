@@ -15,9 +15,10 @@ import { getExamDate, setExamDate, daysUntil } from './examDateStore';
 import { dayKey } from './streakStore';
 import { computeProgress } from './progressStats';
 import { topicLabel } from './topics';
+import { COLORS } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const BLUE_TINT = '#E8EFF5';
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -87,7 +88,7 @@ const CountdownCard: React.FC<Props> = ({ uid, now, onOpen, onboardingExamDate }
             onClick={save}
             disabled={!draft}
             className="px-4 py-2 rounded-full text-[13px] font-semibold text-white disabled:opacity-40 transition-transform active:translate-y-0.5"
-            style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}
+            style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
           >
             Save
           </button>
@@ -124,7 +125,7 @@ const CountdownCard: React.FC<Props> = ({ uid, now, onOpen, onboardingExamDate }
         ) : (
           <>
             <span className="text-[18px] font-bold leading-none tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: ACCENT }}>{days}</span>
-            <span className="text-[8.5px] font-bold uppercase tracking-wide" style={{ color: '#8C3A0E' }}>days</span>
+            <span className="text-[8.5px] font-bold uppercase tracking-wide" style={{ color: COLORS.accentDarkText }}>days</span>
           </>
         )}
       </span>

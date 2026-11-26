@@ -59,7 +59,7 @@ const DiveIn: React.FC<DiveInProps> = ({ onCreateAccount, onBackToLanding }) => 
           <a
             href={CREATE_ACCOUNT_URL}
             onClick={onCreateAccount}
-            className="inline-flex min-h-12 items-center gap-2.5 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] px-8 py-3 font-sans text-[15px] font-semibold text-white shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-none"
+            className="inline-flex min-h-12 items-center gap-2.5 rounded-2xl border-2 border-[#1A1A1A] bg-accent px-8 py-3 font-sans text-[15px] font-semibold text-white shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-none"
           >
             Create your account
             <ArrowRight size={16} aria-hidden="true" />

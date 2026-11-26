@@ -1,4 +1,5 @@
 import './module-cards.css';
+import { COLORS } from '../design/tokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -307,7 +308,7 @@ const CardWrapper: React.FC<CardWrapperProps> = ({ config, isHero, children, onC
           type="button"
           onClick={onClick}
           aria-label={ariaLabel}
-          className="absolute inset-0 z-0 cursor-pointer rounded-[inherit] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#F26B1F]"
+          className="absolute inset-0 z-0 cursor-pointer rounded-[inherit] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-accent"
         />
         <div className="pointer-events-none relative z-10 [&_a]:pointer-events-auto [&_button]:pointer-events-auto">{children}</div>
       </motion.div>
@@ -595,7 +596,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
                     onClick={() => onSelectCategory(cat.id)}
                     aria-label={`Open ${cat.name} world`}
                     className="world-ink-card group flex min-h-[116px] w-full items-center gap-3 rounded-[15px] border bg-white p-3 text-left transition-transform active:scale-[0.985] dark:bg-zinc-900"
-                    style={{ borderColor: isCurrent ? '#F26B1F' : undefined, borderWidth: isCurrent ? 2 : 1.5 }}
+                    style={{ borderColor: isCurrent ? COLORS.accent : undefined, borderWidth: isCurrent ? 2 : 1.5 }}
                   >
                     <div className="flex h-24 w-[88px] shrink-0 items-center justify-center overflow-visible">
                       <WorldIconBlob world={cat.worldKey} size={72} />

@@ -32,7 +32,7 @@ export const StatePanel: React.FC<StatePanelProps> = ({
       role={tone === 'error' ? 'alert' : 'status'}
       className={`rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] text-center shadow-[4px_4px_0_0_var(--outline-strong)] ${compact ? 'px-5 py-6' : 'px-6 py-10 sm:px-10'} ${className}`}
     >
-      <div className={`mx-auto flex items-center justify-center rounded-xl border-[1.5px] border-[var(--outline-strong)] ${tone === 'error' ? 'bg-[#FFF0E7] dark:bg-[#3A2118] text-[#C54B18] dark:text-[#FF9A68]' : 'bg-[var(--surface-raised)] text-[#F26B1F]'} ${compact ? 'h-10 w-10' : 'h-12 w-12'}`}>
+      <div className={`mx-auto flex items-center justify-center rounded-xl border-[1.5px] border-[var(--outline-strong)] ${tone === 'error' ? 'bg-[#FFF0E7] dark:bg-[#3A2118] text-[#C54B18] dark:text-[#FF9A68]' : 'bg-[var(--surface-raised)] text-accent'} ${compact ? 'h-10 w-10' : 'h-12 w-12'}`}>
         <StateIcon size={compact ? 19 : 22} strokeWidth={1.8} />
       </div>
       <h3 className={`font-serif font-semibold text-[var(--ink-primary)] ${compact ? 'mt-3 text-lg' : 'mt-4 text-xl'}`}>{title}</h3>
@@ -41,7 +41,7 @@ export const StatePanel: React.FC<StatePanelProps> = ({
         <button
           type="button"
           onClick={onAction}
-          className="mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border-2 border-[#1A1A1A] bg-[#F26B1F] px-5 py-2.5 text-sm font-bold text-white shadow-[3px_3px_0_0_#1A1A1A] transition-transform hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F26B1F] focus-visible:ring-offset-2"
+          className="mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border-2 border-[#1A1A1A] bg-accent px-5 py-2.5 text-sm font-bold text-white shadow-[3px_3px_0_0_#1A1A1A] transition-transform hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
         >
           {tone === 'error' && <RefreshCw size={15} />}
           {actionLabel}

@@ -37,6 +37,7 @@ import { generateAlerts, type DismissedAlert, type EarlyWarningAlert } from './g
 import { useGCFlags } from '../hooks/useGCFlags';
 import { logError } from '../utils/logError';
 import { reauthenticateCurrentUser } from '../utils/reauthenticate';
+import { COLORS } from '../design/tokens';
 
 interface GCDashboardProps {
   school: string;
@@ -705,7 +706,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
               onChange={event => setResetVerificationPassword(event.target.value)}
               autoFocus
               autoComplete="current-password"
-              className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 px-4 py-3 text-sm text-zinc-900 dark:text-white outline-none focus:border-orange-500"
+              className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 px-4 py-3 text-sm text-zinc-900 dark:text-white outline-none focus:border-accent"
             />
             <div className="flex gap-3 mt-5">
               <button type="button" disabled={isResettingPassword} onClick={closeResetDialog} className="flex-1 px-4 py-2.5 text-sm rounded-xl border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300">Cancel</button>
@@ -734,7 +735,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             <button
               onClick={() => setResetResult(null)}
               className="w-full px-4 py-2.5 text-sm font-medium rounded-xl text-white transition-colors"
-              style={{ backgroundColor: '#F26B1F' }}
+              style={{ backgroundColor: COLORS.accent }}
             >
               Done
             </button>

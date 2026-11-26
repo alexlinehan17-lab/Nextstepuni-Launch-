@@ -32,9 +32,10 @@ import {
   saveTakeBlobs,
   saveTakeMeta,
 } from './oralReadiness';
+import { COLORS } from '../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const SUCCESS = '#3A8D5F';
 // Darker success for the record button's chunky drop-shadow.
 const SUCCESS_DARK = '#2C6B47';
@@ -241,7 +242,7 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
               <Square size={16} /> Stop
             </button>
           )}
-          {micError && <p className="text-[12.5px] mt-3" style={{ color: '#8C3A0E' }}>{micError}</p>}
+          {micError && <p className="text-[12.5px] mt-3" style={{ color: COLORS.accentDarkText }}>{micError}</p>}
           {audioUrl && (
             <div className="mt-4 text-left">
               <p className="text-[10.5px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>
@@ -329,7 +330,7 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
                 {due && (
                   <span
                     className="text-[10px] font-bold uppercase tracking-[0.06em] px-2 py-0.5 rounded-full"
-                    style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)' }}
+                    style={{ backgroundColor: '#FDEEDF', color: COLORS.accentDarkText, border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)' }}
                   >
                     Due for a re-record
                   </span>

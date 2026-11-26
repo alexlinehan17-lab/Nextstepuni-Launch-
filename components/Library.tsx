@@ -308,7 +308,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
                 className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
               >
                 <div className="shrink-0 flex items-center justify-center w-[18px]">
-                  <RefreshCw size={18} strokeWidth={1.5} className="text-[#F26B1F]" />
+                  <RefreshCw size={18} strokeWidth={1.5} className="text-accent" />
                 </div>
                 <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
                   Change Subjects

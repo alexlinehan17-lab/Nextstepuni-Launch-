@@ -12,6 +12,7 @@ import {
   type RankedValue,
   type RhythmDay,
 } from './dashboardAnalytics';
+import { accentRgba, COLORS } from '../../design/tokens';
 
 const CHART_HEIGHT = 244;
 
@@ -151,8 +152,8 @@ export const ActivityChart: React.FC<{
         )}
         {variant === 'line' && hasData && points.length > 1 && (
           <g aria-hidden="true" pointerEvents="none">
-            <path d={areaPath} fill="rgba(242, 107, 31, 0.13)" />
-            <path d={smoothPath} fill="none" stroke="rgba(242, 107, 31, 0.8)" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
+            <path d={areaPath} fill={accentRgba(0.13)} />
+            <path d={smoothPath} fill="none" stroke={accentRgba(0.8)} strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
           </g>
         )}
 
@@ -506,8 +507,8 @@ export const MasteryBar: React.FC<{ summary: MasterySummary; editorial?: boolean
   if (editorial) return <div className="readiness-ledger" aria-label="Topic readiness breakdown">
     {segments.map((segment, index) => <div key={segment.label}>
       <svg viewBox="0 0 26 26" width="26" height="26" aria-hidden="true">
-        <circle cx="13" cy="13" r="10" fill={index === 2 ? '#23251f' : 'none'} stroke={index === 1 ? '#e76420' : '#23251f'} strokeWidth="1.5" />
-        {index === 1 && <path d="M13 3 A10 10 0 0 1 13 23 Z" fill="#e76420" />}
+        <circle cx="13" cy="13" r="10" fill={index === 2 ? '#23251f' : 'none'} stroke={index === 1 ? COLORS.accent : '#23251f'} strokeWidth="1.5" />
+        {index === 1 && <path d="M13 3 A10 10 0 0 1 13 23 Z" fill={COLORS.accent} />}
         {index === 2 && <path d="m8 13 3 3 7-7" fill="none" stroke="white" strokeWidth="1.7" />}
       </svg>
       <strong>{segment.label}</strong><b>{segment.value}</b><small>{Math.round((segment.value / summary.total) * 100)}%</small>

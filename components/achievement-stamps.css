@@ -8,7 +8,7 @@
 .crew-achievement-toolbar .crew-link{font-size:11px;flex-shrink:0}
 .crew-achievement-tabs{display:flex;gap:20px;overflow-x:auto;border-bottom:1px solid #d9ddd1;margin-bottom:22px}
 .crew-achievement-tabs button{background:transparent;border-bottom:2px solid transparent;white-space:nowrap;font-size:12px;color:#6a7164;padding:9px 0}
-.crew-achievement-tabs button[aria-pressed=true]{color:#23251f;border-color:#f26b1f;font-weight:700}
+.crew-achievement-tabs button[aria-pressed=true]{color:#23251f;border-color:var(--nsu-orange);font-weight:700}
 .crew-achievement-tabs button:focus-visible{outline:2px solid #b34a07;outline-offset:-2px}
 .crew-stamp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .crew-stamp-card{display:flex;align-items:center;flex-direction:column;min-width:0;text-align:center;padding:17px 13px 21px;border:1px solid #d9ddd1;border-radius:3px;background:#fff}

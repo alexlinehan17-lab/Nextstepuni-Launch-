@@ -76,8 +76,8 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settin
 
             {/* Study Streak */}
             <div className="flex items-center gap-3 p-2 mb-1">
-              <div className="w-8 h-8 rounded-lg bg-orange-50 dark:bg-orange-500/10 flex items-center justify-center">
-                <Flame size={16} className="text-orange-500" />
+              <div className="w-8 h-8 rounded-lg bg-orange-50 dark:bg-accent/10 flex items-center justify-center">
+                <Flame size={16} className="text-accent" />
               </div>
               <div className="flex-1">
                 <p className="text-sm font-semibold text-zinc-800 dark:text-white">
@@ -260,8 +260,8 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
 
               {/* Streak */}
               <div className="flex items-center gap-3 p-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 mb-3">
-                <div className="w-8 h-8 rounded-lg bg-orange-50 dark:bg-orange-500/10 flex items-center justify-center">
-                  <Flame size={16} className="text-orange-500" />
+                <div className="w-8 h-8 rounded-lg bg-orange-50 dark:bg-accent/10 flex items-center justify-center">
+                  <Flame size={16} className="text-accent" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm font-semibold text-zinc-800 dark:text-white">{streakLabel(streak.currentStreak)}</p>
@@ -338,7 +338,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                   <div className="divide-y divide-zinc-100 rounded-2xl border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-700">
                     <NotificationBell uid={user.uid} variant="menu" onUnreadCountChange={onUnreadCountChange} />
                     <button onClick={() => { onClose(); onOpenSiteGuide(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><HelpCircle size={16} className="text-[#F26B1F]" /></div>
+                      <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><HelpCircle size={16} className="text-accent" /></div>
                       <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">How the app works</span>
                     </button>
                     <button onClick={() => { onClose(); onOpenFeedback(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">

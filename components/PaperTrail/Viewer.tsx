@@ -96,6 +96,7 @@ import AnswerDesk from './AnswerDesk';
 import AnswerInk, {type AnswerInkProps,type InkTool} from './AnswerInk';
 import {useAnswerBook} from './useAnswerBook';
 import {loadDeskQuestion,saveDeskQuestion,keepFirstAttempt,hasResponse,type InkStroke,type AnswerRecord} from './answerDeskStore';
+import { COLORS } from '../../design/tokens';
 
 /** The scheme panel's compact square ink buttons (option E) for its step and text-size controls. */
 const E_SQUARE = 'inline-flex items-center justify-center h-8 min-w-[32px] px-2 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 bg-white dark:bg-zinc-900 text-[#1A1A1A] dark:text-zinc-100 text-[12.5px] font-bold shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] transition-[transform,box-shadow] duration-150 hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none disabled:opacity-35 disabled:pointer-events-none';
@@ -1513,14 +1514,14 @@ const Viewer: React.FC<ViewerProps> = ({
               {wpmCal ? (
                 <>
                   <span>Minute targets personalised to your writing speed ({wpmCal.wpm} wpm)</span>
-                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: '#F26B1F' }}>
+                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: COLORS.accent }}>
                     Redo
                   </button>
                 </>
               ) : (
                 <>
                   <span>Minute targets assume a typical writing speed</span>
-                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: '#F26B1F' }}>
+                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: COLORS.accent }}>
                     Personalise in 2 min
                   </button>
                 </>
@@ -1674,7 +1675,7 @@ const Viewer: React.FC<ViewerProps> = ({
               <button
                 onClick={() => load(side)}
                 className="flex items-center gap-1.5 px-4 py-2 rounded-full text-[13px] font-semibold text-white"
-                style={{ backgroundColor: '#F26B1F', boxShadow: '0 3px 0 #B54D14' }}
+                style={{ backgroundColor: COLORS.accent, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
               >
                 <RotateCcw size={14} /> Try again
               </button>
@@ -1859,7 +1860,7 @@ const Viewer: React.FC<ViewerProps> = ({
                 <button
                   onClick={() => onReveal(q)}
                   className="shrink-0 rounded-full px-4 py-2 text-[13px] font-semibold text-white transition-transform active:translate-y-0.5"
-                  style={{ backgroundColor: '#F26B1F', boxShadow: '0 3px 0 #B54D14' }}
+                  style={{ backgroundColor: COLORS.accent, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
                 >
                   Reveal & mark
                 </button>
@@ -1900,7 +1901,7 @@ const Viewer: React.FC<ViewerProps> = ({
               <button
                 onClick={resumeLoop}
                 className="flex-1 rounded-full py-2 text-[13px] font-semibold text-white transition-transform active:translate-y-0.5"
-                style={{ backgroundColor: '#F26B1F', boxShadow: '0 3px 0 #B54D14' }}
+                style={{ backgroundColor: COLORS.accent, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
               >
                 Resume
               </button>
@@ -1941,14 +1942,14 @@ const Viewer: React.FC<ViewerProps> = ({
           <div className="frame-dialog [--frame-gap:1rem] z-[120] flex items-center justify-center bg-black/40" role="dialog" aria-modal="true" aria-label="Full loop summary">
             <div className="frame-dialog-card overflow-y-auto w-full max-w-sm rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-5 py-5 text-center">
               <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400 mb-1">The full loop · done</p>
-              <p className="text-[34px] font-bold leading-none mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: avg >= 66 ? '#3A8D5F' : '#F26B1F' }}>
+              <p className="text-[34px] font-bold leading-none mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: avg >= 66 ? '#3A8D5F' : COLORS.accent }}>
                 {marks.length ? `${avg}%` : '—'}
               </p>
               <p className="text-[13px] text-zinc-600 dark:text-zinc-300 mb-2">
                 {marks.length} of {qs.length} questions self-marked against the real scheme.
               </p>
               {topGap && (
-                <p className="text-[12.5px] italic rounded-lg px-3 py-2 mb-3 text-left" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', borderLeft: '3px solid #F26B1F' }}>
+                <p className="text-[12.5px] italic rounded-lg px-3 py-2 mb-3 text-left" style={{ backgroundColor: '#FDEEDF', color: COLORS.accentDarkText, borderLeft: '3px solid var(--nsu-orange)' }}>
                   Most marks died to {gapLabel[topGap[0]]} ({topGap[1]}×) — your dashboard's autopsy has the fix.
                 </p>
               )}
@@ -1971,14 +1972,14 @@ const Viewer: React.FC<ViewerProps> = ({
                     if (downloadReceipt(receiptStats)) setReceiptSaved(true);
                   }}
                   className="inline-flex items-center gap-1.5 rounded-full px-4 py-2.5 text-[13px] font-semibold border-2 bg-white dark:bg-zinc-900 transition-transform active:translate-y-0.5"
-                  style={{ borderColor: 'rgba(242,107,31,0.35)', color: '#F26B1F' }}
+                  style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.35)', color: COLORS.accent }}
                 >
                   <Download size={14} /> {receiptSaved ? 'Saved' : 'Save image'}
                 </button>
                 <button
                   onClick={() => setLoopDone(false)}
                   className="rounded-full px-6 py-2.5 text-[14px] font-semibold text-white transition-transform active:translate-y-0.5"
-                  style={{ backgroundColor: '#F26B1F', boxShadow: '0 3px 0 #B54D14' }}
+                  style={{ backgroundColor: COLORS.accent, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
                 >
                   Done
                 </button>
@@ -2231,7 +2232,7 @@ const FormulaeContent: React.FC<{
             className="flex items-center justify-between gap-2 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-3 text-left transition-transform active:translate-y-0.5"
           >
             <span className="text-[13px] font-semibold leading-tight" style={{ color: '#1a1a1a' }}>{s.label}</span>
-            <BookOpen size={14} style={{ color: '#F26B1F' }} className="shrink-0" />
+            <BookOpen size={14} style={{ color: COLORS.accent }} className="shrink-0" />
           </a>
         ))}
       </div>
@@ -2246,7 +2247,7 @@ const FormulaeContent: React.FC<{
 
 const TRIAGE_OPTS: { r: TriageRating; label: string; bg: string }[] = [
   { r: 'g', label: 'Confident', bg: '#3A8D5F' },
-  { r: 'a', label: 'Unsure', bg: '#F26B1F' },
+  { r: 'a', label: 'Unsure', bg: COLORS.accent },
   { r: 'r', label: 'Hard', bg: '#1a1a1a' },
 ];
 
@@ -2289,7 +2290,7 @@ const TriageContent: React.FC<{
       {rated > 0 && (
         <div className="shrink-0 flex items-center gap-3 px-4 py-2 text-[11px] font-semibold border-b border-zinc-100 dark:border-zinc-800">
           <span style={{ color: '#3A8D5F' }}>{counts.g} confident</span>
-          <span style={{ color: '#F26B1F' }}>{counts.a} unsure</span>
+          <span style={{ color: COLORS.accent }}>{counts.a} unsure</span>
           <span style={{ color: '#1a1a1a' }}>{counts.r} hard</span>
         </div>
       )}
@@ -2416,16 +2417,16 @@ const ExamClock: React.FC<{
       <div className="flex flex-col">
         <span
           className="text-[16px] font-bold tabular-nums leading-none"
-          style={{ fontFamily: "'Source Serif 4', serif", color: over ? '#F26B1F' : '#1a1a1a' }}
+          style={{ fontFamily: "'Source Serif 4', serif", color: over ? COLORS.accent : '#1a1a1a' }}
         >
           {over ? `+${fmtClock(-remaining)}` : fmtClock(remaining)}
         </span>
-        <span className="text-[9px] font-bold uppercase tracking-wide mt-0.5" style={{ color: over ? '#F26B1F' : '#9e9186' }}>
+        <span className="text-[9px] font-bold uppercase tracking-wide mt-0.5" style={{ color: over ? COLORS.accent : '#9e9186' }}>
           {over ? 'over time' : 'remaining'}
         </span>
       </div>
       <div className="w-16 h-1.5 rounded-full overflow-hidden bg-[#e0dbd4]" aria-hidden>
-        <div className="h-full rounded-full" style={{ width: `${frac * 100}%`, backgroundColor: over ? '#F26B1F' : '#3A8D5F' }} />
+        <div className="h-full rounded-full" style={{ width: `${frac * 100}%`, backgroundColor: over ? COLORS.accent : '#3A8D5F' }} />
       </div>
       <button onClick={onToggle} aria-label={running ? 'Pause timer' : 'Start timer'} className="p-1.5 rounded-lg text-zinc-600 hover:text-zinc-900 dark:text-zinc-300">
         {running ? <Pause size={16} /> : <Play size={16} />}
@@ -2538,9 +2539,9 @@ const CommandContent: React.FC<{ wide: boolean; token: CommandToken; onClose: ()
           <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>What it asks</p>
           <p className="text-[13.5px] leading-relaxed" style={{ color: '#3a3530' }}>{entry.requiredAction}</p>
         </div>
-        <div className="rounded-xl px-3.5 py-3" style={{ backgroundColor: '#FDEEDF', borderLeft: '3px solid #F26B1F' }}>
-          <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#8C3A0E' }}>How to structure it</p>
-          <p className="text-[13px] leading-relaxed" style={{ color: '#8C3A0E' }}>{entry.structuralTemplate}</p>
+        <div className="rounded-xl px-3.5 py-3" style={{ backgroundColor: '#FDEEDF', borderLeft: '3px solid var(--nsu-orange)' }}>
+          <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: COLORS.accentDarkText }}>How to structure it</p>
+          <p className="text-[13px] leading-relaxed" style={{ color: COLORS.accentDarkText }}>{entry.structuralTemplate}</p>
         </div>
         <div>
           <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>Where students lose marks</p>
@@ -2599,7 +2600,7 @@ const TopicContent: React.FC<{
               onClick={() => !here && onJump(s)}
               disabled={here}
               className={`w-full flex items-center gap-3 rounded-xl border-2 px-3.5 py-2.5 text-left transition-transform ${
-                here ? 'border-[#F26B1F] bg-[#FDEEDF]' : 'border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 active:translate-y-0.5'
+                here ? 'border-accent bg-[#FDEEDF]' : 'border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 active:translate-y-0.5'
               }`}
             >
               <span className="shrink-0 w-11 text-[13px] font-bold tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{s.year}</span>
@@ -2609,9 +2610,9 @@ const TopicContent: React.FC<{
                 {s.lang === 'iv' ? ' · Gaeilge' : ''} · Question {s.n}
               </span>
               {here ? (
-                <span className="shrink-0 text-[10px] font-bold uppercase tracking-wide" style={{ color: '#8C3A0E' }}>you’re here</span>
+                <span className="shrink-0 text-[10px] font-bold uppercase tracking-wide" style={{ color: COLORS.accentDarkText }}>you’re here</span>
               ) : (
-                <ArrowLeft size={14} className="shrink-0 rotate-180" style={{ color: '#F26B1F' }} />
+                <ArrowLeft size={14} className="shrink-0 rotate-180" style={{ color: COLORS.accent }} />
               )}
             </button>
           );
@@ -2844,7 +2845,7 @@ const RevealContent: React.FC<{
                       onClick={() => setGap(g.k)}
                       aria-pressed={active}
                       className="px-2.5 py-1 rounded-full text-[11.5px] font-medium border-2 transition-all"
-                      style={active ? { backgroundColor: '#FDEEDF', borderColor: '#F26B1F', color: '#8C3A0E' } : { backgroundColor: '#fff', borderColor: '#d0cdc8', color: '#7a7068' }}
+                      style={active ? { backgroundColor: '#FDEEDF', borderColor: COLORS.accent, color: COLORS.accentDarkText } : { backgroundColor: '#fff', borderColor: '#d0cdc8', color: '#7a7068' }}
                     >
                       {g.label}
                     </button>
@@ -2866,7 +2867,7 @@ const RevealContent: React.FC<{
                     key={s.paperKey + s.n}
                     onClick={() => onJumpSibling(s)}
                     className="px-2.5 py-1 rounded-full text-[11.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
-                    style={{ backgroundColor: '#fff', borderColor: 'rgba(242,107,31,0.35)', color: '#F26B1F' }}
+                    style={{ backgroundColor: '#fff', borderColor: 'rgba(var(--nsu-orange-rgb), 0.35)', color: COLORS.accent }}
                   >
                     {s.year} · {questionLabel(s, { short: true })} →
                   </button>
@@ -3039,7 +3040,7 @@ const Page: React.FC<{
                 style={{ top, backgroundColor: '#24211F' }}
                 aria-label={`Open the marking scheme for ${q.label ?? `Question ${q.n}`}`}
               >
-                <span className="w-1" style={{ backgroundColor: '#F26B1F' }} aria-hidden />
+                <span className="w-1" style={{ backgroundColor: COLORS.accent }} aria-hidden />
                 <span className="py-2 pl-2.5 pr-1.5">Mark scheme</span>
                 <span className="py-2 pr-2.5" style={{ color: '#F4A575' }} aria-hidden>→</span>
               </button>
@@ -3059,8 +3060,8 @@ const Page: React.FC<{
             top: `${c.pY * 100}%`,
             width: `${c.pW * 100}%`,
             height: `${c.pH * 100}%`,
-            backgroundColor: 'rgba(242,107,31,0.16)',
-            borderBottom: '2px solid #F26B1F',
+            backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.16)',
+            borderBottom: '2px solid var(--nsu-orange)',
           }}
           aria-label={`What “${c.matched}” asks you to do — command word guide`}
         />
@@ -3083,8 +3084,8 @@ const Page: React.FC<{
               top: `${(mk.pY + mk.pH / 2) * 100}%`,
               transform: 'translate(-104%, -50%)',
               backgroundColor: '#FDEEDF',
-              color: '#8C3A0E',
-              border: '1px solid rgba(242,107,31,0.35)',
+              color: COLORS.accentDarkText,
+              border: '1px solid rgba(var(--nsu-orange-rgb), 0.35)',
             }}
           >
             <Clock3 size={9} /> {label}

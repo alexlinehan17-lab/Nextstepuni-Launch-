@@ -27,7 +27,7 @@ const JCComingSoon: React.FC<JCComingSoonProps> = ({ fromCourseTitle, onBack }) 
         {/* Sparkles icon */}
         <div
           className="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
-          style={{ backgroundColor: 'rgba(242,107,31,0.1)' }}
+          style={{ backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.1)' }}
         >
           <Sparkles size={32} style={{ color: COLORS.accent }} />
         </div>
@@ -37,7 +37,7 @@ const JCComingSoon: React.FC<JCComingSoonProps> = ({ fromCourseTitle, onBack }) 
         </h1>
 
         {fromCourseTitle && (
-          <p className="text-sm font-semibold uppercase tracking-widest mb-6 text-[#F26B1F]">
+          <p className="text-sm font-semibold uppercase tracking-widest mb-6 text-accent">
             {fromCourseTitle}
           </p>
         )}
@@ -53,7 +53,7 @@ const JCComingSoon: React.FC<JCComingSoonProps> = ({ fromCourseTitle, onBack }) 
 
         <button
           onClick={onBack}
-          className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans font-semibold text-[15px] shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-[0_0_0_0_#1A1A1A] transition-all duration-150"
+          className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl border-2 border-[#1A1A1A] bg-accent text-white font-sans font-semibold text-[15px] shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-[0_0_0_0_#1A1A1A] transition-all duration-150"
         >
           <ArrowLeft size={18} />
           Back to Library

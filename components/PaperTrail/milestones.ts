@@ -11,6 +11,7 @@
 
 import { getStreak } from './streakStore';
 import { masteredCount } from './topicMastery';
+import { COLORS } from '../../design/tokens';
 
 export interface Milestone {
   id: string;
@@ -94,7 +95,7 @@ export function buildMilestoneCardHtml(m: Milestone, dateIso: string): string {
   h1 { font-family:Georgia,serif; font-size:28px; margin:8px 0 10px; color:#1a1a1a; }
   p { font-size:14.5px; line-height:1.5; color:#5a5550; margin:0 0 18px; }
   .foot { font-size:11px; color:#9e9186; border-top:1px solid #e0dbd4; padding-top:12px; }
-  .brand { font-weight:700; color:#F26B1F; }
+  .brand { font-weight:700; color:${COLORS.accent}; }
 </style></head>
 <body><div class="card">
   <div class="badge">${m.kind === 'streak' ? '🔥' : '🎯'}</div>

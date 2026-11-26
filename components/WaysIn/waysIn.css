@@ -5,7 +5,7 @@
   --wi-soft: #f1eee8;
   --wi-paper: #ffffff;
   --wi-canvas: #f8f7f3;
-  --wi-orange: #f26b1f;
+  --wi-orange: var(--nsu-orange);
   position: fixed;
   inset: 0;
   z-index: 180;
@@ -423,7 +423,7 @@
   --wi-line: var(--outline-soft, #d8d3cc);
   --wi-soft: var(--surface-soft, #f1eee8);
   --wi-paper: var(--surface-paper, #fff);
-  --wi-orange: #f26b1f;
+  --wi-orange: var(--nsu-orange);
   color: var(--ink-primary, #1c1c1a);
   font-family: 'DM Sans', system-ui, sans-serif;
 }
@@ -442,7 +442,7 @@
 .wi-hub-hero h1 { max-width: 620px; margin: 12px 0 0; font: 500 clamp(43px, 7vw, 76px)/.98 'Source Serif 4', Georgia, serif; letter-spacing: -.045em; }
 .wi-hub-hero p:not(.wi-eyebrow) { max-width: 610px; margin: 20px 0 0; color: var(--ink-secondary, #716c65); font-size: 16px; line-height: 1.65; }
 .wi-hub-mark { position: relative; width: 230px; height: 230px; margin: auto; }
-.wi-hub-mark > span { position: absolute; inset: 69px; border: 2px solid var(--outline-strong, #1c1c1a); border-radius: 46% 54% 43% 57%; background: #f26b1f; }
+.wi-hub-mark > span { position: absolute; inset: 69px; border: 2px solid var(--outline-strong, #1c1c1a); border-radius: 46% 54% 43% 57%; background: var(--nsu-orange); }
 .wi-hub-mark > i { position: absolute; width: 58px; height: 58px; border: 2px solid var(--outline-strong, #1c1c1a); background: var(--surface-raised, #fff); }
 .wi-hub-mark > i:nth-of-type(1) { left: 5px; top: 18px; border-radius: 50%; }
 .wi-hub-mark > i:nth-of-type(2) { right: 1px; top: 21px; border-radius: 14px; transform: rotate(7deg); }

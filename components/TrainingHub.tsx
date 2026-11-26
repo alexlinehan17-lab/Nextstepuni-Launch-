@@ -304,7 +304,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
             const pct = Math.min(100, Math.round((ch.current / ch.challenge!.target) * 100));
             return (
               <div className="flex items-center gap-3 rounded-2xl px-5 py-4 mt-3 bg-white dark:bg-zinc-900" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(242,107,31,0.12)' }}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.12)' }}>
                   <CIcon size={20} style={{ color: COLORS.accent }} />
                 </div>
                 <div className="flex-1 min-w-0">
@@ -519,7 +519,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                     year-bump CTA. */}
                 <button
                   onClick={onOpenDirection ?? onOpenJourney}
-                  className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
+                  className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl border-2 border-[#1A1A1A] bg-accent text-white font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
                 >
                   My Direction
                   <ArrowRight size={14} />

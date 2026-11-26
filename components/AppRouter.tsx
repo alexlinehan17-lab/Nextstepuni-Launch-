@@ -1,5 +1,6 @@
 import { getBlockId } from './subjectData';
 import { queueTopicStudy, queueTopicPractice } from '../utils/topicLaunch';
+import { COLORS } from '../design/tokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -984,7 +985,7 @@ const ChangePasswordModal: React.FC<{ user: SessionUser; onComplete: () => Promi
     setIsLoading(false);
   };
 
-  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-700 focus:border-[#F26B1F]";
+  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-700 focus:border-accent";
 
   return (
     <div className="min-h-screen flex items-center justify-center p-5 bg-white dark:bg-zinc-950">
@@ -1004,7 +1005,7 @@ const ChangePasswordModal: React.FC<{ user: SessionUser; onComplete: () => Promi
               <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{12 - newPassword.length} more character{12 - newPassword.length !== 1 ? 's' : ''} needed</p>
             )}
             {newPassword.length >= 12 && newPassword.length <= 128 && (
-              <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#F26B1F' }}><Check size={12} /> Looks good</p>
+              <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: COLORS.accent }}><Check size={12} /> Looks good</p>
             )}
           </div>
           {error && <p className="text-sm text-red-500 font-medium">{error}</p>}
@@ -1012,7 +1013,7 @@ const ChangePasswordModal: React.FC<{ user: SessionUser; onComplete: () => Promi
             onClick={handleChangePassword}
             disabled={isLoading || newPassword.length < 12 || newPassword.length > 128}
             className="w-full py-3.5 rounded-full text-white text-[15px] font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-            style={{ backgroundColor: '#F26B1F', borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
+            style={{ backgroundColor: COLORS.accent, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 4px 0 var(--accent-dark-hex)' }}
           >
             {isLoading ? 'Saving...' : 'Set Password'}
           </button>

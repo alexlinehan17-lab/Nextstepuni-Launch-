@@ -19,9 +19,10 @@ import {
   tallyMarking,
   type MarkingResult,
 } from '../../data/aiMarking';
+import { COLORS } from '../../design/tokens';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 
 const AiMarkingPanel: React.FC<{ questionRef: string }> = ({ questionRef }) => {
   const [answer, setAnswer] = useState('');
@@ -62,12 +63,12 @@ const AiMarkingPanel: React.FC<{ questionRef: string }> = ({ questionRef }) => {
         onClick={mark}
         disabled={!answer.trim() || busy}
         className="rounded-full px-5 py-2 text-[13px] font-semibold text-white disabled:opacity-40 transition-transform active:translate-y-0.5"
-        style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}
+        style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
       >
         {busy ? 'Marking…' : 'Mark my answer'}
       </button>
 
-      {error && <p className="text-[12.5px] mt-3" style={{ color: '#8C3A0E' }}>{error}</p>}
+      {error && <p className="text-[12.5px] mt-3" style={{ color: COLORS.accentDarkText }}>{error}</p>}
 
       {result && tally && (
         <div className="mt-4">

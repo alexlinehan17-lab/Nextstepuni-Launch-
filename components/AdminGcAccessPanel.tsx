@@ -262,7 +262,7 @@ const AdminGcAccessPanel: React.FC = () => {
                       value={currentPassword}
                       onChange={event => setCurrentPassword(event.target.value)}
                       autoComplete="current-password"
-                      className="mt-2 w-full rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2.5 text-sm text-[var(--admin-ink)] outline-none focus:ring-4 focus:ring-[#F26B1F]/15"
+                      className="mt-2 w-full rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2.5 text-sm text-[var(--admin-ink)] outline-none focus:ring-4 focus:ring-accent/15"
                     />
                   </div>
                 )}
@@ -278,7 +278,7 @@ const AdminGcAccessPanel: React.FC = () => {
                       onChange={event => setChosen(event.target.value)}
                       autoComplete="new-password"
                       placeholder={`At least ${MIN_SUPPLIED_PASSWORD_LENGTH} characters`}
-                      className="w-full rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2.5 pr-11 font-mono text-sm text-[var(--admin-ink)] outline-none placeholder:font-sans placeholder:text-[var(--admin-muted)] focus:ring-4 focus:ring-[#F26B1F]/15"
+                      className="w-full rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2.5 pr-11 font-mono text-sm text-[var(--admin-ink)] outline-none placeholder:font-sans placeholder:text-[var(--admin-muted)] focus:ring-4 focus:ring-accent/15"
                     />
                     <button
                       type="button"

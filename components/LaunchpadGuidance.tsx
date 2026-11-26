@@ -18,6 +18,7 @@ import {
   type RecommendationGoalId,
   type ToolRecommendation,
 } from './launchpadGuidanceData';
+import { COLORS } from '../design/tokens';
 
 export interface LaunchpadToolSummary {
   id: string;
@@ -41,7 +42,7 @@ interface LaunchpadGuidanceProps {
 
 type GuidanceMode = 'explain' | 'recommend';
 
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 
 const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
   tools,

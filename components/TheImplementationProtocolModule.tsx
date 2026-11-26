@@ -256,7 +256,7 @@ const IfThenPlanBuilder = () => {
               <p className="text-[11px] font-semibold uppercase tracking-wider mb-4" style={{ color: "var(--module-muted)", letterSpacing: '0.08em' }}>Plan {i + 1}</p>
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
-                  <span className="inline-block text-xs font-bold mb-2" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '3px 10px' }}>IF</span>
+                  <span className="inline-block text-xs font-bold mb-2" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '3px 10px' }}>IF</span>
                   <input
                     type="text"
                     value={plan.ifText}
@@ -269,7 +269,7 @@ const IfThenPlanBuilder = () => {
                   />
                 </div>
                 <div>
-                  <span className="inline-block text-xs font-bold mb-2" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '3px 10px' }}>THEN</span>
+                  <span className="inline-block text-xs font-bold mb-2" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '3px 10px' }}>THEN</span>
                   <input
                     type="text"
                     value={plan.thenText}

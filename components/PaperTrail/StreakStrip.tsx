@@ -11,8 +11,9 @@
 import React from 'react';
 import { Flame, Check, ChevronRight, Snowflake } from 'lucide-react';
 import { getStreak } from './streakStore';
+import { COLORS } from '../../design/tokens';
 
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const INK = '#1a1a1a';
 
 interface Props {

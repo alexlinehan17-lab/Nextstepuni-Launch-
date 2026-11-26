@@ -2,7 +2,7 @@
   --action-height: 48px;
   --control-min-target: 44px;
   --action-radius: 12px;
-  --action-accent: #f26b1f;
+  --action-accent: var(--nsu-orange);
   --action-on-accent: #1a1a1a;
 }
 .product-action, .product-back-button {

@@ -13,11 +13,12 @@
  */
 
 import { calibrationBand, pct } from './store';
+import { COLORS } from '../../design/tokens';
 
 // ── design tokens (mirrors index.tsx / the visual design system) ──
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
+const ACCENT = COLORS.accent;
 const SUCCESS = '#3A8D5F';
 const MUTED = '#7a7068';
 const LABEL = '#9e9186';

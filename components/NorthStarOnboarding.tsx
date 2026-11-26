@@ -143,7 +143,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                     onClick={() => setSelectedCategory(cat.id)}
                     className={`flex items-center gap-3.5 p-4 rounded-2xl border-2 text-left text-[#1A1A1A] dark:text-zinc-100 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] dark:hover:shadow-[6px_6px_0_0_#3f3f46] active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] dark:active:shadow-[0px_0px_0_0_#3f3f46] transition-all duration-150 ${
                       isSelected
-                        ? 'bg-[#FDEEDF] dark:bg-[rgba(242,107,31,0.14)] border-[#F26B1F]'
+                        ? 'bg-[#FDEEDF] dark:bg-accent/14 border-accent'
                         : 'bg-white dark:bg-zinc-900 border-[#1A1A1A] dark:border-zinc-600'
                     }`}
                   >
@@ -156,10 +156,10 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                     )}
                     <div>
                       <p className="text-sm font-bold">{cat.label}</p>
-                      <p className={`text-xs mt-0.5 ${isSelected ? 'text-[#8C3A0E] dark:text-zinc-300' : 'text-zinc-500 dark:text-zinc-400'}`}>{cat.description}</p>
+                      <p className={`text-xs mt-0.5 ${isSelected ? 'text-accentDarkText dark:text-zinc-300' : 'text-zinc-500 dark:text-zinc-400'}`}>{cat.description}</p>
                     </div>
                     {isSelected && (
-                      <div className="ml-auto shrink-0 w-6 h-6 rounded-full flex items-center justify-center bg-[#F26B1F]">
+                      <div className="ml-auto shrink-0 w-6 h-6 rounded-full flex items-center justify-center bg-accent">
                         <Check size={12} className="text-white" strokeWidth={3} />
                       </div>
                     )}
@@ -195,7 +195,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                     disabled={isDisabled}
                     className={`flex flex-col items-center gap-2 p-3.5 rounded-xl border-2 transition-all duration-150 text-[#1A1A1A] dark:text-zinc-100 ${
                       isSelected
-                        ? 'bg-[#FDEEDF] dark:bg-[rgba(242,107,31,0.14)] border-[#F26B1F] shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]'
+                        ? 'bg-[#FDEEDF] dark:bg-accent/14 border-accent shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]'
                         : isDisabled
                         ? 'bg-zinc-50 dark:bg-zinc-800/50 border-zinc-200 dark:border-zinc-700 text-zinc-300 dark:text-zinc-600 cursor-not-allowed'
                         : 'bg-white dark:bg-zinc-900 border-[#EDEBE8] dark:border-zinc-700 hover:-translate-y-0.5 hover:shadow-[2px_2px_0_0_#1A1A1A] dark:hover:shadow-[2px_2px_0_0_#3f3f46]'
@@ -213,7 +213,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                     )}
                     <span className="text-[11px] font-semibold text-center leading-tight">{card.label}</span>
                     {isSelected && (
-                      <div className="w-5 h-5 rounded-full flex items-center justify-center bg-[#F26B1F]">
+                      <div className="w-5 h-5 rounded-full flex items-center justify-center bg-accent">
                         <Check size={10} className="text-white" strokeWidth={3} />
                       </div>
                     )}

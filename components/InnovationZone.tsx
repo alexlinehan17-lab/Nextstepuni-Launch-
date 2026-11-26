@@ -1,5 +1,6 @@
 import { queueTopicStudy, queueTopicPractice } from '../utils/topicLaunch';
 import { ArrowRight } from 'lucide-react';
+import { COLORS } from '../design/tokens';
 
 /**
  * @license
@@ -107,7 +108,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   // on Grade Planner, so students see one points product rather than two.
   'cao-simulator':   { themeColor: '#B8A079', eyebrow: 'Track · Points planning',      subtitle: 'Your points, mock history, grade plans and course reach in one place.',             showHeader: false  },
   'planner':         { themeColor: '#7DA37A', eyebrow: 'Plan · Planner',              subtitle: 'A data-driven study planner powered by your subject goals.',                       showHeader: false  },
-  'war-room':        { themeColor: '#F26B1F', eyebrow: 'Make your next move', subtitle: 'A clear focus, with the evidence behind it.', showHeader: true },
+  'war-room':        { themeColor: COLORS.accent, eyebrow: 'Make your next move', subtitle: 'A clear focus, with the evidence behind it.', showHeader: true },
   // Comeback Engine owns its editorial page heading; the shared ToolHeader
   // repeated both the product name and the only h1 on the page.
   'comeback':        { themeColor: '#E08938', eyebrow: 'Plan · Comeback',             subtitle: 'Find your quickest wins and build a comeback plan.',                                showHeader: false },
@@ -118,7 +119,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'future-finder-revamped': { themeColor: '#C76489', eyebrow: 'Understand · Interests (RIASEC)', subtitle: 'Discover the courses, careers and lives that fit who you are — your interests matched to CAO courses, points kept honest.', showHeader: false },
   // Compatibility alias: old Syllabus X-Ray links now open War Room directly
   // on its cohort-safe Subject Coverage view.
-  'syllabus-xray':   { themeColor: '#F26B1F', eyebrow: 'Plan · Subject coverage',     subtitle: 'Your official topic map, confidence and debrief gaps in one trusted workspace.', showHeader: true  },
+  'syllabus-xray':   { themeColor: COLORS.accent, eyebrow: 'Plan · Subject coverage',     subtitle: 'Your official topic map, confidence and debrief gaps in one trusted workspace.', showHeader: true  },
   'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  showHeader: false  },
   'exam-reps':       { themeColor: '#5E9C7B', eyebrow: 'Technique · Practice',        subtitle: 'One real exam question at a time — marked the examiner’s way, so you see exactly where the marks were.', showHeader: true  },
   'college-compass': { themeColor: '#2A7D6F', eyebrow: 'Plan · Roadmap',              subtitle: 'Your year-by-year runway to college — every CAO, HEAR, DARE and scholarship deadline, in order.', showHeader: false },
@@ -132,10 +133,10 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'listening-studio': { themeColor: '#1A1A1A', eyebrow: 'Practice · Listening', subtitle: 'Sit a listening with the recording beside the questions, then mark each part against the real scheme.', showHeader: false },
   'paper-trail':     { themeColor: '#33658A', eyebrow: 'Understand · Exam archive',   subtitle: 'Every past paper and marking scheme, free — your subjects, your level, three taps.', showHeader: false },
   'topic-atlas':     { themeColor: '#B4530A', eyebrow: 'Understand · Topic map',      subtitle: 'Every question the SEC has ever asked, mapped by topic — with the marking scheme one tap away.', showHeader: false },
-  'diagram-vault':   { themeColor: '#F26B1F', eyebrow: 'Understand · Exam diagrams',  subtitle: 'Every diagram, graph, map and chart that has come up — cropped from the paper and decoded.', showHeader: true },
-  'answer-architect': { themeColor: '#F26B1F', eyebrow: 'Understand · Top-answer skeletons', subtitle: 'The mark-earning skeleton of a top answer — the beats a full-marks answer hits, in order, from the SEC scheme.', showHeader: true },
-  'definition-drill': { themeColor: '#F26B1F', eyebrow: 'Understand · Key definitions', subtitle: 'Drill the exact mark-earning wording the SEC scheme awards the definition marks for.', showHeader: true },
-  'coursework-companion': { themeColor: '#F26B1F', eyebrow: 'Coursework Studio', subtitle: 'Keep the evidence. Make the connection. Know your next move.', showHeader: false },
+  'diagram-vault':   { themeColor: COLORS.accent, eyebrow: 'Understand · Exam diagrams',  subtitle: 'Every diagram, graph, map and chart that has come up — cropped from the paper and decoded.', showHeader: true },
+  'answer-architect': { themeColor: COLORS.accent, eyebrow: 'Understand · Top-answer skeletons', subtitle: 'The mark-earning skeleton of a top answer — the beats a full-marks answer hits, in order, from the SEC scheme.', showHeader: true },
+  'definition-drill': { themeColor: COLORS.accent, eyebrow: 'Understand · Key definitions', subtitle: 'Drill the exact mark-earning wording the SEC scheme awards the definition marks for.', showHeader: true },
+  'coursework-companion': { themeColor: COLORS.accent, eyebrow: 'Coursework Studio', subtitle: 'Keep the evidence. Make the connection. Know your next move.', showHeader: false },
   'command-word-reflex': { themeColor: '#6366F1', eyebrow: 'Technique · Exam skills', subtitle: 'Half of exam technique is reading the question right. Spot the command word in real questions and learn what it’s really asking — and the trap that loses marks.', showHeader: false },
   'how-they-did-it':  { themeColor: '#0E7C6B', eyebrow: 'Real people. Useful moves.', subtitle: 'See the route they took, and a move you can borrow.', showHeader: true },
   // The experience has its own stage header and editorial title on every step.
@@ -598,9 +599,9 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             id: 'comeback', title: 'Comeback Engine', description: 'A realistic seven-day recovery plan built from your actual study pattern.', icon: Sunrise, needsProfile: true,
             curriculum: 'both' as const,
             tag: 'Comeback', accentHex: '#f97316', gridClass: 'md:col-span-2',
-            iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400',
-            accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
-            hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
+            iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-accent-text',
+            accentBarColor: 'bg-accent', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-accent-text',
+            hoverBorder: 'hover:border-accent/50 dark:hover:border-accent/40',
             component: subjectProfile ? <ComebackEngine uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} onOpenTool={setActiveTool} /> : null,
         },
         {
@@ -640,10 +641,10 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             // has one canonical home inside War Room.
             id: 'syllabus-xray', title: 'War Room · Subject Coverage', description: 'Your cohort-safe syllabus and confidence map.', icon: Target, needsProfile: true,
             curriculum: 'senior' as const,
-            tag: 'Strategy', accentHex: '#F26B1F', gridClass: 'md:col-span-2',
-            iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400',
-            accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
-            hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
+            tag: 'Strategy', accentHex: COLORS.accent, gridClass: 'md:col-span-2',
+            iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-accent-text',
+            accentBarColor: 'bg-accent', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-accent-text',
+            hoverBorder: 'hover:border-accent/50 dark:hover:border-accent/40',
             component: subjectProfile ? <WarRoom onStudyTopic={selection => { queueTopicStudy(user!.uid, selection); nav.navigateToStudySession(); }} onPracticeTopic={(subjectId, topicId, level) => { queueTopicPractice(user!.uid, subjectId, topicId, level); setActiveTool('topic-atlas'); }} uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} initialMode="review" initialReviewPanel="subjects" /> : null,
         },
         {
@@ -712,45 +713,45 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             curriculum: 'senior' as const,
             tag: 'Topic map', accentHex: '#B4530A', gridClass: 'md:col-span-2',
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-800 dark:text-orange-300',
-            accentBarColor: 'bg-orange-700', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-800 dark:text-orange-400',
-            hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
+            accentBarColor: 'bg-orange-700', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-800 dark:text-accent-text',
+            hoverBorder: 'hover:border-accent/50 dark:hover:border-accent/40',
             component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} isLca={isLcaYear(user?.yearGroup)} onboardingExamDate={subjectProfile?.examStartDate} onOpenTool={setActiveTool} initialView="revise" />,
         },
         {
             id: 'diagram-vault', title: 'Diagram Vault', description: 'Every diagram, graph, map and chart that has come up in the exams — decoded.', icon: Images, needsProfile: false,
             // 'both': the figure corpus spans Junior Cycle and Leaving Cert subjects.
             curriculum: 'both' as const,
-            tag: 'Exam diagrams', accentHex: '#F26B1F', gridClass: 'md:col-span-2',
+            tag: 'Exam diagrams', accentHex: COLORS.accent, gridClass: 'md:col-span-2',
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-700 dark:text-orange-300',
-            accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
-            hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
+            accentBarColor: 'bg-accent', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-accent-text',
+            hoverBorder: 'hover:border-accent/50 dark:hover:border-accent/40',
             component: <DiagramVault studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
         {
             id: 'answer-architect', title: 'Answer Architect', description: 'The mark-earning skeleton of a top answer — the beats a full-marks answer is built from, in order.', icon: ListChecks, needsProfile: false,
             curriculum: 'senior' as const,
-            tag: 'Top-answer skeletons', accentHex: '#F26B1F', gridClass: 'md:col-span-2',
+            tag: 'Top-answer skeletons', accentHex: COLORS.accent, gridClass: 'md:col-span-2',
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-700 dark:text-orange-300',
-            accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
-            hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
+            accentBarColor: 'bg-accent', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-accent-text',
+            hoverBorder: 'hover:border-accent/50 dark:hover:border-accent/40',
             component: <AnswerArchitect studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
         {
             id: 'definition-drill', title: 'Definition Drill', description: 'Drill the exact mark-earning wording the SEC scheme awards the definition marks for.', icon: SpellCheck, needsProfile: false,
             curriculum: 'senior' as const,
-            tag: 'Key definitions', accentHex: '#F26B1F', gridClass: 'md:col-span-2',
+            tag: 'Key definitions', accentHex: COLORS.accent, gridClass: 'md:col-span-2',
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-700 dark:text-orange-300',
-            accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
-            hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
+            accentBarColor: 'bg-accent', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-accent-text',
+            hoverBorder: 'hover:border-accent/50 dark:hover:border-accent/40',
             component: <DefinitionDrill studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
         {
             id: 'coursework-companion', title: 'Coursework Studio', description: 'Keep your evidence, connect your thinking and move your project forward.', icon: FolderCheck, needsProfile: false,
             curriculum: 'senior' as const,
-            tag: 'Coursework & projects', accentHex: '#F26B1F', gridClass: 'md:col-span-2',
+            tag: 'Coursework & projects', accentHex: COLORS.accent, gridClass: 'md:col-span-2',
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-700 dark:text-orange-300',
-            accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
-            hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
+            accentBarColor: 'bg-accent', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-accent-text',
+            hoverBorder: 'hover:border-accent/50 dark:hover:border-accent/40',
             component: <CourseworkStudio uid={user?.uid} studentSubjects={subjectProfile?.subjects} examDate={subjectProfile?.examStartDate} yearGroup={user?.yearGroup} isLca={isLcaYear(user?.yearGroup)} />,
         },
         {

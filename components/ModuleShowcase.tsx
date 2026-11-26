@@ -1,5 +1,6 @@
 import './module-cards.css';
 import { ModuleOutcome } from './learning/ModuleDiscovery';
+import { COLORS } from '../design/tokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -238,7 +239,7 @@ export default function ModuleShowcase({
                 type="button"
                 onClick={() => onSelectCourse(item.id)}
                 className="world-ink-card group w-full rounded-xl border-[1.5px] bg-white p-4 text-left transition-transform active:scale-[0.985] dark:bg-zinc-900"
-                style={{ borderColor: itemInProgress ? '#F26B1F' : 'var(--module-card-border, #383838)' }}
+                style={{ borderColor: itemInProgress ? COLORS.accent : 'var(--module-card-border, #383838)' }}
               >
                 <div className="flex items-start gap-3">
                   <span
