@@ -28,7 +28,6 @@
 .student-sidebar-shell .student-sidebar-page { --accent:var(--nsu-orange-rgb); min-width:0; margin:8px 8px 8px 0; border:0; border-radius:16px; box-shadow:none; overflow:clip; background:var(--surface-canvas); font:16px/1.5 'DM Sans',sans-serif; }
 .student-sidebar-shell .student-sidebar-page > :is(.product-shell, .theme-compat, .nsu-kobra, .min-h-screen),
 .student-sidebar-shell .student-sidebar-page :is(.nsu-learning, .nsu-planner, .nsu-progress) { background:var(--surface-canvas); }
-.student-sidebar-shell .student-sidebar-page .nsu-kobra { --background:var(--surface-canvas); }
 .student-sidebar-shell .student-sidebar-page .student-home { --student-paper:var(--surface-canvas); }
 .student-sidebar-shell [data-slot=sidebar][data-state=collapsed] ~ .student-sidebar-page { margin-left:0; }
 .nsu-kobra-nav .nsu-nav-header { padding:18px 14px 17px; }
