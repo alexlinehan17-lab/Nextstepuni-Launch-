@@ -1,16 +1,20 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { TextButton } from '../ui/Button';
 
-/** Resizing is local to the drawer: dragging does not rerender the island tree. */
-export default function BuildDrawer({ open, children }: { open: boolean; children: React.ReactNode }) {
+/** Resizing is local to the drawer: dragging does not rerender the island tree.
+ *  The drawer is headed by its line ("A little more of your world.") with Smaller beside it
+ *  (r5-b2.html, "Build"); its grab line resizes it. */
+export default function BuildDrawer({ open, children, title }: { open: boolean; children: React.ReactNode; title?: React.ReactNode }) {
   const root = useRef<HTMLDivElement>(null);
   const drag = useRef<{ pointer: number; y: number; height: number } | null>(null);
   const [narrow, setNarrow] = useState(() => window.matchMedia('(max-width:700px)').matches);
   const [available, setAvailable] = useState(window.innerHeight);
   const [size, setSize] = useState<number | null>(null);
   const minimum = narrow ? 260 : 176;
-  const preferred = narrow ? 370 : 310;
-  const maximum = Math.max(minimum, Math.min(preferred + 100, available - 180));
+  // On a phone it opens tall enough to show the shelf and the place button (r5-b2.html, "Build": about 450).
+  const preferred = narrow ? 450 : 310;
+  // On a phone the island keeps about 120px above the drawer (the agreed board); on a laptop 180.
+  const maximum = Math.max(minimum, Math.min(preferred + 100, available - (narrow ? 120 : 180)));
   const height = Math.max(minimum, Math.min(maximum, size ?? preferred));
   const compact = height < preferred - 40;
 
@@ -53,12 +57,15 @@ export default function BuildDrawer({ open, children }: { open: boolean; childre
             : event.key === 'Home' ? minimum : event.key === 'End' ? maximum : null;
           if (next !== null) { event.preventDefault(); resize(next); }
         }}>
-        <span className="build-drawer-grab-line" aria-hidden="true" /><span>Drag to resize</span>
+        <span className="build-drawer-grab-line" aria-hidden="true" /><span className="sr-only">Drag to resize</span>
       </div>
-      <button className="build-drawer-toggle" type="button" aria-label={compact ? 'Expand build drawer' : 'Make build drawer smaller'}
-        onClick={() => resize(compact ? preferred : minimum)}>
-        {compact ? <ChevronUp size={15} /> : <ChevronDown size={15} />} {compact ? 'Expand' : 'Smaller'}
-      </button>
+      <div className="build-drawer-head">
+        {title ? <h2 className="t-heading build-drawer-title">{title}</h2> : <span />}
+        <TextButton tone="quiet" className="build-drawer-toggle" aria-label={compact ? 'Expand build drawer' : 'Make build drawer smaller'}
+          onClick={() => resize(compact ? preferred : minimum)}>
+          {compact ? 'Expand' : 'Smaller'}
+        </TextButton>
+      </div>
     </div>
     {children}
   </div>;

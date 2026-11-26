@@ -74,6 +74,9 @@ export interface SheetProps {
   title: ReactNode;
   /** small (17px) for a sheet whose body opens with its own headline. */
   titleSize?: 'heading' | 'small';
+  /** The body opens with its own headline (a tile's card): the head shows only Close, and the
+   *  title stays the sheet's accessible name. */
+  hideTitle?: boolean;
   /** Unsaved changes: Cancel (left) throws them away, this (right) keeps them. Close is not shown. */
   save?: SheetAction;
   /** The main action, pinned at the bottom above the home indicator. */
@@ -99,7 +102,7 @@ export interface SheetProps {
   className?: string;
 }
 
-export function Sheet({ open, onClose, title, titleSize = 'heading', save, footer, children, closeLabel = 'Close', art, meta, bare = false, dim = true, plain = false, className = '' }: SheetProps) {
+export function Sheet({ open, onClose, title, titleSize = 'heading', hideTitle = false, save, footer, children, closeLabel = 'Close', art, meta, bare = false, dim = true, plain = false, className = '' }: SheetProps) {
   const lead = art !== undefined || meta !== undefined;
   const phase = usePresence(open, SHEET_LEAVE_MS);
   const panel = useRef<HTMLDivElement>(null);
@@ -161,7 +164,7 @@ export function Sheet({ open, onClose, title, titleSize = 'heading', save, foote
                 : <button type="button" className="ui-icon-btn" aria-label={closeLabel} onClick={onClose}>
                     <X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />
                   </button>}
-              <h2 id={titleId} className={`ui-sheet-title${titleSize === 'small' ? ' ui-sheet-title--small' : ''}`}>{title}</h2>
+              <h2 id={titleId} className={`ui-sheet-title${titleSize === 'small' ? ' ui-sheet-title--small' : ''}${hideTitle ? ' sr-only' : ''}`}>{title}</h2>
               {save
                 ? <button type="button" className="ui-sheet-text ui-sheet-text--strong" onClick={save.onPress}>{save.label}</button>
                 : <span aria-hidden="true" />}

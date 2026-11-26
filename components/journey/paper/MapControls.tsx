@@ -1,9 +1,10 @@
-import KobraScope, { Button, Input } from "../../approved-ui-runtime";
+import KobraScope from "../../approved-ui-runtime";
+import { Button, IconButton, TextButton } from "../../ui/Button";
+import { SearchField } from "../../ui/Field";
+import { SelectionMark } from "../../ui/Choice";
 import React, { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import {
-  ArrowUpRight,
-  Check,
-  Home,
+  LocateFixed,
   Minus,
   Move,
   Plus,
@@ -407,7 +408,7 @@ export function IslandMap({
             aria-label="Centre island"
             onClick={() => setCamera(defaultCamera)}
           >
-            <Home size={17} />
+            <LocateFixed size={18} />
           </button>
         </div>
       </div>
@@ -504,9 +505,9 @@ export function TileShelf({
       aria-label="Tile collection"
     >
       <div className="tile-library-heading">
-        <span className="eyebrow">THE TILE COLLECTION</span>
-        <Input type="search" aria-label="Search tiles" placeholder="Find a tile…"
+        <SearchField label="Search tiles" placeholder="Find a tile…"
           value={query} onChange={event => setQuery(event.target.value)} />
+        <span className="tile-count">{tileCount} {tileCount === 1 ? "tile" : "tiles"}</span>
       </div>
       <div className="category-heading">
         <nav className="tile-categories" aria-label="Tile categories">
@@ -520,7 +521,6 @@ export function TileShelf({
             </button>
           ))}
         </nav>
-        <span>{tileCount} {tileCount === 1 ? "tile" : "tiles"}</span>
       </div>
       <div className="student-tile-grid" ref={scroller}>
         {items.map((item) => {
@@ -536,6 +536,7 @@ export function TileShelf({
               aria-pressed={!chosenWonder&&chosen === t.id}
               onClick={() => onChoose(t.id)}
             >
+              <SelectionMark on={!chosenWonder && chosen === t.id} />
               <ShelfPortrait kind={t.id} />
               <strong>{t.name}</strong>
               <span className={t.price > balance ? "over-budget" : ""}>
@@ -546,7 +547,7 @@ export function TileShelf({
             </button>
           );
         })}
-        {group==="Wonder tiles"&&visibleWonders.map(id=><button className="shelf-tile" key={id} aria-label={`Choose ${crewById[id].wonder}`} aria-pressed={chosenWonder===id} onClick={()=>onChooseWonder?.(id)}><span className="shelf-portrait"><WonderTileArt id={id} className="tile-portrait"/></span><strong>{crewById[id].wonder}</strong><span>Earned · yours to place</span></button>)}
+        {group==="Wonder tiles"&&visibleWonders.map(id=><button className="shelf-tile" key={id} aria-label={`Choose ${crewById[id].wonder}`} aria-pressed={chosenWonder===id} onClick={()=>onChooseWonder?.(id)}><SelectionMark on={chosenWonder===id} /><span className="shelf-portrait"><WonderTileArt id={id} className="tile-portrait"/></span><strong>{crewById[id].wonder}</strong><span>Earned · yours to place</span></button>)}
         {tileCount === 0 && <p className="tile-search-empty">No tiles match. Try another name or category.</p>}
       </div>
     </section>
@@ -578,52 +579,42 @@ export function Placement({
       price: chosenWonder||chosen === "meadow" && world.credits > 0 ? 0 : item.price,
     },
     canPay = world.balance >= t.price;
+  const placeLabel = chosenWonder ? (world.placed.some(tile => tile.wonderId === chosenWonder) ? "Move this Wonder" : "Place this Wonder") : "Place this tile";
   return (
     <aside
       className={`placement-inspector ${full ? "full" : ""}`}
       aria-label="Your selected tile"
     >
-      <span className="eyebrow placement-step">{candidate ? "02 / READY TO PLACE" : "01 / CHOOSE A CORNER"}</span>
+      <span className="sr-only">{candidate ? "Ready to place" : "Choose a corner"}</span>
       {full && (chosenWonder?<WonderTileArt id={chosenWonder}/>:<TilePortrait kind={chosen} />)}
       <div className="placement-title">
         <h3>{t.name}</h3>
-        <span>{chosenWonder?"A visitor’s gift":`${t.price} JP`}</span>
+        <span className="placement-price">{chosenWonder?"A visitor’s gift":`${t.price} JP`}</span>
+        <Button size="sm" className="placement-undo" aria-label="Undo last change"
+          aria-disabled={busy || !world.history.length || undefined}
+          onClick={() => { if (!busy && world.history.length) onUndo(); }}>
+          <Undo2 size={16} strokeWidth={2} aria-hidden="true" /> Undo
+        </Button>
       </div>
       <p className="placement-description">{t.description}</p>
       <Button
-        className="primary-action place-action"
-        disabled={busy || !candidate || !canPay}
-        onClick={onPlace}
+        kind="main"
+        size="lg"
+        block
+        arrow="forward"
+        className="place-action"
+        aria-busy={busy || undefined}
+        unavailable={!canPay ? `Save ${t.price - world.balance} more JP to place it.` : undefined}
+        missing={canPay && !candidate ? { sentence: "Select a spot on your island", goTo: () => {} } : undefined}
+        onClick={() => { if (!busy) onPlace(); }}
       >
-        {busy
-          ? "Saving…"
-          : !canPay
-            ? `Save ${t.price - world.balance} more JP`
-            : candidate
-              ? chosenWonder?(world.placed.some(tile=>tile.wonderId===chosenWonder)?"Move this Wonder":"Place this Wonder"):"Place this tile"
-              : "Select a spot on your island"}
-        <span>
-          {candidate && canPay ? (
-            <Check size={17} />
-          ) : (
-            <ArrowUpRight size={19} />
-          )}
-        </span>
+        {busy ? "Saving…" : placeLabel}
       </Button>
-      <div className="placement-foot">
-        <span>
-          {candidate && canPay
-            ? chosenWonder?"Your gift · no Journey Points needed":`${world.balance - t.price} JP left after placing`
-            : "Tap a tile on your island to swap or remove it"}
-        </span>
-        <button
-          aria-label="Undo last change"
-          disabled={busy || !world.history.length}
-          onClick={onUndo}
-        >
-          <Undo2 size={14} /> Undo
-        </button>
-      </div>
+      <p className="placement-foot">
+        {candidate && canPay
+          ? chosenWonder?"Your gift · no Journey Points needed":`${world.balance - t.price} JP left after placing`
+          : "Tap a tile on your island to swap or remove it"}
+      </p>
     </aside>
   );
 }
@@ -661,32 +652,34 @@ export function TileEditor({
 }) {
   return (
     <aside className="placement-inspector tile-editor" aria-label={`Change ${name}`}>
-      <span className="eyebrow placement-step">EDIT SELECTED TILE</span>
+      <span className="sr-only">Edit selected tile</span>
       <div className="placement-title">
         <h3>{name}</h3>
-        <button className="tile-editor-close" aria-label="Stop changing this tile" onClick={onClose}>
-          <X size={16} />
-        </button>
+        <IconButton className="tile-editor-close" label="Stop changing this tile" onClick={onClose}
+          icon={<X className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />} />
       </div>
       <div className="tile-editor-actions">
-        <button
-          className="primary-action place-action"
-          disabled={busy || !!replaceBlock}
-          onClick={onReplace}
+        <Button
+          kind="main"
+          block
+          className="place-action"
+          aria-busy={busy || undefined}
+          aria-disabled={busy || !!replaceBlock || undefined}
+          onClick={() => { if (!busy && !replaceBlock) onReplace(); }}
         >
-          <span>{busy ? "Saving…" : `Swap for ${replaceName}`}</span>
-          <small>{replaceNote}</small>
-        </button>
-        <button
-          className="quiet-action place-action tile-remove-action"
-          disabled={busy || !!removeBlock}
-          onClick={onRemove}
+          {busy ? "Saving…" : `Swap for ${replaceName}`}{replaceNote ? <small> · {replaceNote}</small> : null}
+        </Button>
+        <Button
+          block
+          className="place-action tile-remove-action"
+          aria-disabled={busy || !!removeBlock || undefined}
+          onClick={() => { if (!busy && !removeBlock) onRemove(); }}
         >
-          <span>Remove tile</span>
-          <small>{removeNote}</small>
-        </button>
+          Remove tile<small> · {removeNote}</small>
+        </Button>
       </div>
-      <button className="tile-editor-undo" disabled={busy || !canUndo} onClick={onUndo} aria-label="Undo last change"><Undo2 size={14} /> Undo last change</button>
+      <TextButton tone="quiet" className="tile-editor-undo" aria-label="Undo last change" aria-disabled={busy || !canUndo || undefined}
+        onClick={() => { if (!busy && canUndo) onUndo(); }}><Undo2 size={16} strokeWidth={2} aria-hidden="true" /> Undo last change</TextButton>
       <p className="tile-editor-note" role={note ? "status" : undefined}>
         {note || "Choose a shelf tile to swap in, or tap an open corner to build."}
       </p>

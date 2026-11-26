@@ -53,6 +53,12 @@ export interface TopBarProps {
   art?: string | ReactNode;
   /** Or one action at the right (an IconButton or one text action). */
   action?: ReactNode;
+  /** A place on a laptop: one quiet action at the left end where a leave control would be
+   *  ("How it works" on the island). Ignored when there is a leave control or a place label. */
+  lead?: ReactNode;
+  /** A control centred in the bar instead of a title (the island's selection bar on a laptop):
+   *  midway between the bar's ends, with the lead and the action balancing it. */
+  center?: ReactNode;
   /** A tool's bar: 52px row, 19px name. */
   tool?: boolean;
   /** A hairline under the bar, once content has scrolled beneath it. */
@@ -60,7 +66,7 @@ export interface TopBarProps {
   className?: string;
 }
 
-export function TopBar({ leave, title, over, placeLabel, art, action, tool = false, ruled = false, className = '', ...rest }: TopBarProps & { 'data-student-page-header'?: boolean }) {
+export function TopBar({ leave, title, over, placeLabel, art, action, lead, center, tool = false, ruled = false, className = '', ...rest }: TopBarProps & { 'data-student-page-header'?: boolean }) {
   const LeaveGlyph = leave?.kind === 'close' ? X : ChevronLeft;
   return (
     <header {...rest} className={`ui-part ui-bar frame-bar${tool ? ' ui-bar--tool' : ''}${ruled ? ' ui-bar--ruled' : ''}${art ? ' ui-bar--art' : ''} ${className}`.trim()}>
@@ -71,14 +77,14 @@ export function TopBar({ leave, title, over, placeLabel, art, action, tool = fal
             : leave
             ? <IconButton label={leave.label ?? (leave.kind === 'close' ? 'Close' : 'Back')} onClick={leave.onPress}
                 icon={<LeaveGlyph className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
-            : placeLabel ? <span className="ui-bar-label">{placeLabel}</span> : null}
+            : placeLabel ? <span className="ui-bar-label">{placeLabel}</span> : lead ?? null}
         </span>
         {title ? (
           <span className="ui-bar-mid">
             {over ? <span className="ui-bar-over">{over}</span> : null}
             <h1 className="ui-bar-title">{title}</h1>
           </span>
-        ) : null}
+        ) : center ? <span className="ui-bar-mid ui-bar-mid--control">{center}</span> : null}
         <span className="ui-bar-slot ui-bar-slot--end">
           {typeof art === 'string' ? <ThemeArtwork className="ui-bar-art" src={art} transparentBackground alt="" />
             : art ? <span className="ui-bar-art" aria-hidden="true">{art}</span> : action ?? null}

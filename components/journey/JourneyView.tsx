@@ -1,25 +1,21 @@
-import React, { useMemo, useRef, useState } from "react";
-import {
-  ArrowLeft,
-  ArrowUpRight,
-  BookOpen,
-  Check,
-  Compass,
-  Hammer,
-  Map,
-  Users,
-  X,
-} from "lucide-react";
+import React, { useLayoutEffect, useMemo, useRef, useState } from "react";
+import { Compass, X } from "lucide-react";
 import type { NorthStar, UserProgress } from "../../types";
 import type { SessionUser } from "../../utils/authUtils";
 interface CourseInfo {
   id: string;
   sectionsCount: number;
 }
-import Avatar from "../Avatar";
 import JourneyWelcome from "./JourneyWelcome";
 import BuildDrawer from "./BuildDrawer";
-import KobraScope, { Button } from "../approved-ui-runtime";
+import KobraScope from "../approved-ui-runtime";
+import PageHeader from "../ui/PageHeader";
+import { TopBar } from "../ui/Bars";
+import { Button, IconButton, TextButton } from "../ui/Button";
+import { SelectionBar, SelectionWords } from "../ui/Choice";
+import { List, Row } from "../ui/List";
+import { Sheet } from "../ui/Sheet";
+import { useMobileAppDesign } from "../../hooks/useMobileAppDesign";
 import { usePaperIsland } from "../../hooks/usePaperIsland";
 import {
   knownLandmarks,
@@ -37,7 +33,6 @@ import {
   TileShelf,
   Placement,
   TileEditor,
-  Overlay,
   defaultCamera,
 } from "./paper/MapControls";
 import { piece } from "./paper/studioModel";
@@ -56,7 +51,7 @@ import { coastalMap, legendById, type LegendId } from "./paper/collection";
 import { StickerArt } from "./paper/StickerArt";
 import { TilePortrait } from "./paper/TileArt";
 import { centre } from "./paper/geometry";
-import { crewArt, crewById, journeyCrew, visitorHasAnchor, visitorWishFulfilled, wishText, type CrewId } from "./visitors/catalogue";
+import { crewById, journeyCrew, visitorHasAnchor, visitorWishFulfilled, wishText, type CrewId } from "./visitors/catalogue";
 import { VisitorsBook, WondersBook } from "./visitors/VisitorsBook";
 import { VisitorPanel, type VisitorPage } from "./visitors/VisitorPanel";
 import { useYearIslands } from "../../hooks/useYearIslands";
@@ -69,6 +64,10 @@ import "./paper/paper.css";
 import "./visitors/visitors.css";
 import "./year/year.css";
 import "./journey-workspace.css";
+import "./journey-frame.css";
+
+/** The four parts of the island, in its one selection bar. */
+type JourneySection = "island" | "build" | "fieldbook" | "year";
 
 interface JourneyViewProps {
   onBack: () => void;
@@ -92,6 +91,7 @@ interface JourneyNotice {
 }
 export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWelcome, onOpenSetup }: JourneyViewProps) {
   const { island, balance, busy, error, execute } = usePaperIsland(user.uid);
+  const phone = useMobileAppDesign();
   // Year islands: a classmate's island being visited, look only. Building
   // always happens on your own island, so every way into build mode (the dock,
   // the fieldbook, a visitor's wish, a Wonder) ends the visit first.
@@ -343,41 +343,67 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
         : `Start at the highlighted corner. A mythic sticker is ${route.path.length} placements away along this route.`,
     });
   };
+  // One selection bar for the four parts of the island (c-world.html "c-world-journeybar"):
+  // Build is build mode; the Fieldbook and Your year open in place under the bar; Island
+  // takes you back. Every way in that the screen already had still works.
+  const section: JourneySection = building ? "build" : panel === "fieldbook" ? "fieldbook" : panel === "year" ? "year" : "island";
+  const goTo = (next: JourneySection) => {
+    if (next === "build") { setPanel(null); if (!building) changeMode(true); return; }
+    if (building) changeMode(false);
+    if (next === "island") setClassmate(null);
+    setNotice(null);
+    setPanel(next === "island" ? null : next);
+  };
+  const sections: Array<{ value: JourneySection; label: string }> = [
+    { value: "island", label: "Island" }, { value: "build", label: "Build" }, { value: "fieldbook", label: "Fieldbook" },
+    ...(showYear ? [{ value: "year" as const, label: "Your year" }] : []),
+  ];
+  const bar = <SelectionBar<JourneySection> label="Journey sections" value={section} onChange={goTo} options={sections} className="jm-seg" />;
+  const points = (
+    <Button size="sm" className="jm-points" aria-label={`Your balance: ${balance} Journey Points`} onClick={() => setPanel("points")}>
+      <span className="ui-readout"><span data-jp-balance>{balance.toLocaleString()}</span> JP</span>
+    </Button>
+  );
+  const welcome = <JourneyWelcome hasSeenWelcome={hasSeenWelcome} onDismissWelcome={onDismissWelcome} trigger={phone ? "icon" : "text"} />;
+  const inPlace = section === "fieldbook" || section === "year";
+  const sheetPanel = panel && panel !== "fieldbook" && panel !== "year" ? panel : null;
+  const sheetTitle = sheetPanel === "points" ? "Your Journey Points"
+    : sheetPanel === "tile" ? tileById[inspected].name
+      : sheetPanel === "visitor" ? `${crewById[visitor].name} · ${crewById[visitor].role}`
+        : sheetPanel === "treasure" ? "A treasure, found"
+          : legendById[discovery].name;
+  const treasureOpened = (island?.claimedCaches ?? []).includes(treasure);
+  const discoveryKept = kept.includes(discovery as PaperDiscoveryId);
+  const sheetFooter = sheetPanel === "tile" && buildable.some((t) => t.id === inspected)
+    ? <Button kind="main" size="lg" block arrow="forward" onClick={() => { choose(inspected); changeMode(true); setPanel(null); }}>{`Build another · ${tileById[inspected].price} JP`}</Button>
+    : sheetPanel === "points"
+      ? <Button kind="main" size="lg" block arrow="forward" onClick={() => { setPanel(null); changeMode(true); }}>Find your next tile</Button>
+      : sheetPanel === "treasure"
+        ? <Button kind="main" size="lg" block aria-busy={busy || undefined} unavailable={treasureOpened ? "Treasure collected: its two meadow tiles are on your shelf." : undefined}
+            onClick={() => { if (!busy && !treasureOpened) void execute({ action: "claim", id: treasure }); }}>{treasureOpened ? "Treasure collected" : "Open the chest"}</Button>
+        : sheetPanel === "discovery"
+          ? <Button kind="main" size="lg" block aria-pressed={discoveryKept} aria-busy={busy || undefined} unavailable={discoveryKept ? "Kept in your fieldbook." : undefined}
+              onClick={() => { if (!busy && !discoveryKept) void execute({ action: "keep", id: discovery as PaperDiscoveryId }); }}>{discoveryKept ? "Kept in your fieldbook" : "Keep this story"}</Button>
+          : undefined;
+
   return (
     <KobraScope
-      className={`journey-paper island-views coast tone-pencilatlas ${building ? "is-building" : "is-viewing"}`}
+      className={`journey-paper island-views coast tone-pencilatlas jm-frame ${phone ? "jm-frame--phone" : "jm-frame--desk"} ${building ? "is-building" : "is-viewing"}${inPlace ? " is-reading" : ""}`}
     >
       <main className="student-app">
-        <header className="student-nav journey-nav-with-help">
-          <button className="student-wordmark" onClick={onBack}>
-            nextstepuni
-          </button>
-          <span className="nav-divider" />
-          <button className="launchpad-link" onClick={onBack}>
-            <ArrowLeft size={15} /> Home
-          </button>
-          <div className="nav-spacer" />
-          <JourneyWelcome hasSeenWelcome={hasSeenWelcome} onDismissWelcome={onDismissWelcome} />
-          <button
-            className="island-wallet"
-            aria-label={`Your balance: ${balance} Journey Points`}
-            onClick={() => setPanel("points")}
-          >
-            <span className="jp-coin">JP</span>
-            <strong data-jp-balance>{balance}</strong>
-            <span>Journey Points</span>
-          </button>
-          <button
-            className="student-avatar"
-            aria-label="Your character · open fieldbook"
-            onClick={() => setPanel("fieldbook")}
-          >
-            <Avatar seed={user.avatar || user.name} alt="Your character" />
-          </button>
-        </header>
+        {phone ? (
+          <div className="jm-head">
+            <PageHeader onBack={onBack} title="My Island" className="jm-place" actions={<>{welcome}{points}</>} />
+            <div className="jm-segrow">{bar}</div>
+          </div>
+        ) : (
+          <>
+            <h1 className="sr-only">My Island</h1>
+            <TopBar className="jm-deskbar" lead={welcome} center={bar} action={points} />
+          </>
+        )}
         <div className="coast-world">
           <div className="coast-map-area">
-            {building && <div className="journey-build-heading"><span className="eyebrow">YOUR ISLAND / BUILD MODE</span><strong>{editing ? 'Make room for something new.' : 'A little more of your world.'}</strong><span>{editing ? 'Swap the selected tile, or remove it.' : 'Choose a tile. Pick an open corner. Make it yours.'}</span></div>}
             {classmate ? (
               <ClassmateIsland
                 key={classmate.uid}
@@ -421,68 +447,10 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                     : "Your island could not be opened."}
                 </p>
                 {!busy && (
-                  <button
-                    className="primary-action"
-                    onClick={() => void execute({ action: "open" })}
-                  >
-                    Try again
-                  </button>
+                  <Button kind="main" onClick={() => void execute({ action: "open" })}>Try again</Button>
                 )}
               </div>
             )}
-            {!building && island && !classmate && showYear && (
-              <button
-                type="button"
-                className="year-entry"
-                aria-label={`Your year: see your classmates' islands${cohort ? ` in ${cohort}` : ""}`}
-                onClick={() => setPanel("year")}
-              >
-                <span className="year-entry-icon" aria-hidden="true"><Users size={18} /></span>
-                <span className="year-entry-copy">
-                  <small>Your year</small>
-                  <strong>{cohort || "See your classmates"}</strong>
-                </span>
-                <ArrowUpRight size={16} aria-hidden="true" />
-              </button>
-            )}
-            {!building && island && !classmate && (
-              <div className="island-dock">
-                <button
-                  aria-label="Your island"
-                  onClick={() => setCamera(defaultCamera)}
-                >
-                  <Map size={18} />
-                  <span>Your island</span>
-                </button>
-                <button onClick={() => setPanel("fieldbook")}>
-                  <BookOpen size={18} />
-                  <span>Fieldbook</span>
-                </button>
-                {kept.length < discoveries.length && <button
-                  className="sticker-finder"
-                  aria-label="Find a sticker"
-                  title="Find a sticker"
-                  onClick={() => findSticker()}
-                >
-                  <Compass size={18} /><span>Find a sticker</span>
-                </button>}
-                <button className="visitor-dock" aria-label="Wandering visitors" title="Wandering visitors" onClick={()=>{setFieldbookSection("visitors");setPanel("fieldbook");}}><img src={crewArt(visiting?.id??"luma")} alt="" width="35" height="35"/><span>Visitors</span></button>
-                <button
-                  className="primary-action"
-                  aria-label="Build your island"
-                  onClick={() => changeMode(true)}
-                >
-                  <Hammer size={17} /><span className="desktop-build-label">Build your island</span><span className="mobile-build-label">Build</span>
-                </button>
-              </div>
-            )}
-            <Button variant="outline"
-              className="coast-done quiet-action"
-              hidden={!building}
-              onClick={() => changeMode(false)}
-            >
-              Done building <Check size={15} />
-            </Button>
             {!classmate && (notice || error) && (
               <div
                 key={error || notice?.id}
@@ -495,14 +463,13 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                   <p>{error || notice?.detail}</p>
                 </div>
                 {!error && (
-                  <button aria-label="Dismiss update" onClick={() => setNotice(null)}>
-                    <X size={16} />
-                  </button>
+                  <IconButton label="Dismiss update" onClick={() => setNotice(null)}
+                    icon={<X className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />} />
                 )}
               </div>
             )}
           </div>
-          <BuildDrawer open={building}>
+          <BuildDrawer open={building} title={editing ? "Make room for something new." : "A little more of your world."}>
             <TileShelf
               chosen={chosen}
               chosenWonder={chosenWonder}
@@ -543,225 +510,137 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
               />
             )}
           </BuildDrawer>
+          {inPlace && (
+            <section className="jm-page" aria-label={section === "fieldbook" ? "Your fieldbook" : "Your year"}>
+              <div className="jm-page-col">
+                {section === "year" && (
+                  <YearIslandsBook
+                    cohort={cohort}
+                    school={yearSchool ? getSchoolName(yearSchool) : ""}
+                    status={year.status}
+                    classmates={year.classmates}
+                    visibility={year.visibility}
+                    visibilityKnown={year.visibilityKnown}
+                    visibilityError={year.visibilityError}
+                    onVisibility={year.setVisibility}
+                    onVisit={visitClassmate}
+                    onRetry={year.reload}
+                    onOpenSetup={onOpenSetup ? () => { setPanel(null); onOpenSetup(); } : undefined}
+                    sample={year.sample}
+                  />
+                )}
+                {section === "fieldbook" && (
+                  <>
+                    <SelectionWords<"stories" | "visitors" | "wonders"> label="Fieldbook sections" value={fieldbookSection} onChange={setFieldbookSection} className="jm-fb-words"
+                      options={[{ value: "stories", label: "Stories" }, { value: "visitors", label: "Visitors" }, { value: "wonders", label: "Wonder tiles" }]} />
+                    {fieldbookSection === "stories" && (
+                      <div className="fieldbook-panel jm-fb">
+                        <div className="jm-fb-head">
+                          <p className="t-label jm-label">Your field notes</p>
+                          <h2 className="t-title jm-fb-title">Things found<br /><em className="jm-live">along the way.</em></h2>
+                        </div>
+                        <p className="t-sub">
+                          Mythic stickers come into view as your island grows. Choose an
+                          undiscovered story below and we’ll point out a corner to build
+                          towards it.
+                        </p>
+                        {kept.length < discoveries.length && (
+                          <TextButton arrow="forward" className="jm-find" onClick={() => findSticker()}>Find a sticker</TextButton>
+                        )}
+                        <List className="fieldbook-discoveries" label="Stories">
+                          {discoveries.map((d) => {
+                            const visible = seen.some((s) => s.id === d.id);
+                            return (
+                              <Row
+                                key={d.id}
+                                forward
+                                icon={visible ? undefined : <Compass className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" />}
+                                art={visible ? <StickerArt id={d.id} /> : undefined}
+                                title={visible ? legendById[d.id].name : "Somewhere in the mist"}
+                                meta={visible ? kept.includes(d.id) ? "Kept in your fieldbook" : "In sight · take a closer look" : "Show me the way"}
+                                onPress={() => visible ? showDiscovery(d.id) : findSticker(d.id)}
+                              />
+                            );
+                          })}
+                        </List>
+                      </div>
+                    )}
+                    {island&&fieldbookSection==="visitors"&&<VisitorsBook island={island} onVisit={openVisitor}/>}
+                    {island&&fieldbookSection==="wonders"&&<WondersBook island={island} onWonder={id=>openVisitor(id,"wonder")}/>}
+                  </>
+                )}
+              </div>
+            </section>
+          )}
         </div>
       </main>
-      {panel && (
-        <Overlay
-          title={
-            panel === "fieldbook"
-              ? "Your fieldbook"
-              : panel === "points"
-                ? "Your Journey Points"
-                : panel === "tile"
-                ? tileById[inspected].name
-                : panel === "visitor"
-                  ? `${crewById[visitor].name} · ${crewById[visitor].role}`
-                  : panel === "year"
-                  ? "Your year"
-                  : panel === "treasure"
-                    ? "A treasure, found"
-                    : legendById[discovery].name
-          }
-          onClose={() => setPanel(null)}
-          className={panel==="visitor"?"has-visitor":panel==="year"?"has-year-book":panel==="fieldbook"&&fieldbookSection!=="stories"?"has-visitors-book":""}
-          scrollKey={panel==="visitor"?`${visitor}:${visitorPage}`:panel==="fieldbook"?fieldbookSection:panel}
-        >
-          {panel === "year" && (
-            <YearIslandsBook
-              cohort={cohort}
-              school={yearSchool ? getSchoolName(yearSchool) : ""}
-              status={year.status}
-              classmates={year.classmates}
-              visibility={year.visibility}
-              visibilityKnown={year.visibilityKnown}
-              visibilityError={year.visibilityError}
-              onVisibility={year.setVisibility}
-              onVisit={visitClassmate}
-              onRetry={year.reload}
-              onOpenSetup={onOpenSetup ? () => { setPanel(null); onOpenSetup(); } : undefined}
-              sample={year.sample}
-            />
-          )}
-          {panel === "fieldbook" && (
-            <>
-            <nav className="fieldbook-tabs" aria-label="Fieldbook sections">{([['stories','Stories'],['visitors','Visitors'],['wonders','Wonder tiles']] as const).map(([section,label])=><button key={section} aria-pressed={fieldbookSection===section} onClick={()=>setFieldbookSection(section)}>{label}</button>)}</nav>
-            {fieldbookSection==="stories"&&(
-            <div className="fieldbook-panel">
-              <span className="eyebrow">YOUR FIELD NOTES</span>
-              <h2>
-                Things found
-                <br />
-                <em>along the way.</em>
-              </h2>
-              <p>
-                Mythic stickers come into view as your island grows. Choose an
-                undiscovered story below and we’ll point out a corner to build
-                towards it.
-              </p>
-              <div className="fieldbook-discoveries">
-                {discoveries.map((d) => {
-                  const visible = seen.some((s) => s.id === d.id);
-                  return (
-                    <button
-                      key={d.id}
-                      onClick={() => visible ? showDiscovery(d.id) : findSticker(d.id)}
-                    >
-                      {visible ? (
-                        <StickerArt id={d.id} />
-                      ) : (
-                        <span className="unknown-discovery">
-                          <Compass size={29} />
-                        </span>
-                      )}
-                      <span>
-                        <strong>
-                          {visible
-                            ? legendById[d.id].name
-                            : "Somewhere in the mist"}
-                        </strong>
-                        <small>
-                          {visible
-                            ? kept.includes(d.id)
-                              ? "Kept in your fieldbook"
-                              : "In sight · take a closer look"
-                            : "Show me the way"}
-                        </small>
-                      </span>
-                      <ArrowUpRight size={18} />
-                    </button>
-                  );
-                })}
-              </div>
-            </div>)}
-            {island&&fieldbookSection==="visitors"&&<VisitorsBook island={island} onVisit={openVisitor}/>}
-            {island&&fieldbookSection==="wonders"&&<WondersBook island={island} onWonder={id=>openVisitor(id,"wonder")}/>}
-            </>
-          )}
-          {panel==="visitor"&&island&&<VisitorPanel id={visitor} page={visitorPage} island={island} busy={busy} error={error} onPage={setVisitorPage} onClose={()=>setPanel(null)} onBuildAnchor={()=>buildVisitorWish(visitor,true)} onBuildWish={()=>buildVisitorWish(visitor)} onPlaceWonder={()=>chooseWonder(visitor)}
-            onMeet={()=>void execute({action:"meetVisitor",id:visitor})}
-            onClaim={()=>{const id=visitor;void execute({action:"claimVisitor",id}).then(saved=>{if(saved&&currentVisitor.current===id&&currentPanel.current==="visitor")setVisitorPage("gift");});}}
-          />}
-          {panel === "points" && (
-            <div className="points-panel">
-              <span className="eyebrow">YOUR JOURNEY POINTS</span>
-              <h2>
-                A little study.
-                <br />
-                <em>A little more world.</em>
-              </h2>
-              <strong>
-                {balance}
-                <small> JP</small>
-              </strong>
-              <p>
-                Earn points as you study, then choose what to add to your
-                island. There’s no upkeep to pay. New ranks give you three
-                meadow tiles to place wherever you like.
-              </p>
-              <dl>
-                <div>
-                  <dt>In your pocket</dt>
-                  <dd>{balance} JP</dd>
-                </div>
-                <div>
-                  <dt>Spent on this island</dt>
-                  <dd>
-                    {world.log.reduce((sum, item) => sum + item.cost, 0)} JP
-                  </dd>
-                </div>
-                <div>
-                  <dt>Meadow tiles earned</dt>
-                  <dd>{world.credits}</dd>
-                </div>
-              </dl>
-              <button
-                className="primary-action"
-                onClick={() => {
-                  setPanel(null);
-                  changeMode(true);
-                }}
-              >
-                Find your next tile <ArrowUpRight size={18} />
-              </button>
+      <Sheet open={sheetPanel !== null} onClose={() => setPanel(null)} title={sheetTitle} titleSize="small" hideTitle={sheetPanel !== "visitor"}
+        className={`island-sheet jm-sheet${sheetPanel === "visitor" ? " has-visitor" : ""}`} footer={sheetFooter}>
+        <ScrollTop marker={`${sheetPanel}:${visitor}:${visitorPage}:${inspected}:${discovery}:${treasure}`} />
+        <div className="journey-paper jm-sheet-inner">
+        {sheetPanel==="visitor"&&island&&<VisitorPanel id={visitor} page={visitorPage} island={island} busy={busy} error={error} onPage={setVisitorPage} onClose={()=>setPanel(null)} onBuildAnchor={()=>buildVisitorWish(visitor,true)} onBuildWish={()=>buildVisitorWish(visitor)} onPlaceWonder={()=>chooseWonder(visitor)}
+          onMeet={()=>void execute({action:"meetVisitor",id:visitor})}
+          onClaim={()=>{const id=visitor;void execute({action:"claimVisitor",id}).then(saved=>{if(saved&&currentVisitor.current===id&&currentPanel.current==="visitor")setVisitorPage("gift");});}}
+        />}
+        {sheetPanel === "points" && (
+          <div className="points-panel jm-sheet-copy">
+            <p className="t-label jm-label">Your Journey Points</p>
+            <h2 className="t-title">A little study.<br />A little more world.</h2>
+            <p className="jm-big"><span>{balance.toLocaleString()}</span><small> JP</small></p>
+            <p className="t-sub">
+              Earn points as you study, then choose what to add to your
+              island. There’s no upkeep to pay. New ranks give you three
+              meadow tiles to place wherever you like.
+            </p>
+            <dl className="jm-facts">
+              <div><dt>In your pocket</dt><dd className="ui-readout">{balance} JP</dd></div>
+              <div><dt>Spent on this island</dt><dd className="ui-readout">{world.log.reduce((sum, item) => sum + item.cost, 0)} JP</dd></div>
+              <div><dt>Meadow tiles earned</dt><dd className="ui-readout">{world.credits}</dd></div>
+            </dl>
+          </div>
+        )}
+        {sheetPanel === "tile" && (
+          <div className="tile-detail-panel jm-sheet-copy">
+            <TilePortrait kind={inspected} />
+            <p className="t-label jm-label">Part of your world</p>
+            <h2 className="t-title">{tileById[inspected].name}</h2>
+            <p className="t-sub">{tileById[inspected].description}</p>
+          </div>
+        )}
+        {sheetPanel === "treasure" && (
+          <div className="tile-detail-panel jm-sheet-copy">
+            <TilePortrait kind="treasure" />
+            <p className="t-label jm-label">Off the beaten path</p>
+            <h2 className="t-title">{PAPER_LANDMARKS.find((d) => d.id === treasure)?.name}</h2>
+            <p className="t-sub">
+              Someone left a little room to grow. Open this chest to collect
+              two meadow tiles. Opening a chest keeps the path you built to
+              reach it.
+            </p>
+          </div>
+        )}
+        {sheetPanel === "discovery" && (
+          <div className="discovery-detail-panel jm-sheet-copy">
+            <div className="jm-discovery-art" style={{ backgroundImage: `url(${coastalMap})` }}>
+              <StickerArt id={discovery} />
             </div>
-          )}
-          {panel === "tile" && (
-            <div className="tile-detail-panel">
-              <TilePortrait kind={inspected} />
-              <span className="eyebrow">PART OF YOUR WORLD</span>
-              <h2>{tileById[inspected].name}</h2>
-              <p>{tileById[inspected].description}</p>
-              {buildable.some((t) => t.id === inspected) && (
-                <button
-                  className="primary-action"
-                  onClick={() => {
-                    choose(inspected);
-                    changeMode(true);
-                    setPanel(null);
-                  }}
-                >
-                  Build another · {tileById[inspected].price} JP{" "}
-                  <ArrowUpRight size={17} />
-                </button>
-              )}
-            </div>
-          )}
-          {panel === "treasure" && (
-            <div className="tile-detail-panel">
-              <TilePortrait kind="treasure" />
-              <span className="eyebrow">OFF THE BEATEN PATH</span>
-              <h2>{PAPER_LANDMARKS.find((d) => d.id === treasure)?.name}</h2>
-              <p>
-                Someone left a little room to grow. Open this chest to collect
-                two meadow tiles. Opening a chest keeps the path you built to
-                reach it.
-              </p>
-              <button
-                className="primary-action"
-                disabled={
-                  busy || (island?.claimedCaches ?? []).includes(treasure)
-                }
-                onClick={() => void execute({ action: "claim", id: treasure })}
-              >
-                {(island?.claimedCaches ?? []).includes(treasure)
-                  ? "Treasure collected"
-                  : "Open the chest"}{" "}
-                <Check size={17} />
-              </button>
-            </div>
-          )}
-          {panel === "discovery" && (
-            <div className="discovery-detail-panel">
-              <div style={{ backgroundImage: `url(${coastalMap})` }}>
-                <StickerArt id={discovery} />
-              </div>
-              <section>
-                <span className="eyebrow">A LITTLE SOMETHING, FOUND</span>
-                <h2>{legendById[discovery].name}</h2>
-                <p>{legendById[discovery].story}</p>
-                <button
-                  className="primary-action"
-                  disabled={
-                    busy || kept.includes(discovery as PaperDiscoveryId)
-                  }
-                  aria-pressed={kept.includes(discovery as PaperDiscoveryId)}
-                  onClick={() =>
-                    void execute({
-                      action: "keep",
-                      id: discovery as PaperDiscoveryId,
-                    })
-                  }
-                >
-                  {kept.includes(discovery as PaperDiscoveryId)
-                    ? "Kept in your fieldbook"
-                    : "Keep this story"}
-                  <Check size={17} />
-                </button>
-              </section>
-            </div>
-          )}
-        </Overlay>
-      )}
+            <p className="t-label jm-label">A little something, found</p>
+            <h2 className="t-title">{legendById[discovery].name}</h2>
+            <p className="t-sub">{legendById[discovery].story}</p>
+          </div>
+        )}
+        </div>
+      </Sheet>
     </KobraScope>
   );
+}
+
+/** A sheet opens at its top whenever what it shows changes (today's Overlay did the same). */
+function ScrollTop({ marker }: { marker: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  useLayoutEffect(() => {
+    const body = ref.current?.closest(".ui-sheet-body");
+    if (body) body.scrollTop = 0;
+  }, [marker]);
+  return <span ref={ref} hidden />;
 }
