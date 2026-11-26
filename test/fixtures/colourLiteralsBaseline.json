@@ -946,9 +946,6 @@
   "components/welcome-character.css": {
    "hex": 4
   },
-  "components/worldPalette.ts": {
-   "hex": 26
-  },
   "design/quiet-focus.css": {
    "hex": 6
   },

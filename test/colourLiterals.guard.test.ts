@@ -33,6 +33,7 @@ const BASELINE_FILE = join(ROOT, 'test/fixtures/colourLiteralsBaseline.json');
 const HOME_FILES = new Set([
   'design/tokens.ts', // the TypeScript mirror of the CSS tokens (COLORS, accentRgba)
   'utils/subjectColors.ts', // the ten subject colours (tokens.md, "Orange, green, red")
+  'components/worldPalette.ts', // the five module worlds, each with its own dark-mode ink (audit B6: the model)
 ]);
 /** In these stylesheets only the leading token blocks are the home; the rest is counted. */
 const HOME_BLOCKS: Record<string, RegExp> = {

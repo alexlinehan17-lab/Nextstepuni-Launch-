@@ -12,7 +12,6 @@
  */
 import React from 'react';
 import { useSettingsContext } from '../contexts/SettingsContext';
-import { COLORS } from '../design/tokens';
 
 export interface WorldTones {
   /** Pale fill behind the world's illustration. */
@@ -36,7 +35,7 @@ export interface WorldTones {
 export const WORLD_TONES: Record<string, WorldTones> = {
   'architecture-mindset':    { blob: '#B8C9E5', mid: '#5B7DB0', midInkLight: '#4D6D9F', midInkDark: '#8FA9CF', deep: '#1e3a5f', deepDark: '#C2D6EF' },
   'science-growth':          { blob: '#F5C9A8', mid: '#C4873B', midInkLight: '#90632B', midInkDark: '#D9A25F', deep: '#7c4a14', deepDark: '#F3CFA4' },
-  'learning-cheat-codes':    { blob: '#B8DDC8', mid: COLORS.accent, midInkLight: '#B8490B', midInkDark: '#F58C4E', deep: '#115e4f', deepDark: '#AFE4D3' },
+  'learning-cheat-codes':    { blob: '#B8DDC8', mid: '#eb692a', midInkLight: '#B8490B', midInkDark: '#F58C4E', deep: '#115e4f', deepDark: '#AFE4D3' },
   'subject-specific-science':{ blob: '#F0BFCE', mid: '#C76489', midInkLight: '#B6426D', midInkDark: '#DC8FAB', deep: '#8a2860', deepDark: '#F9CFE3' },
   'exam-zone':               { blob: '#F5BFB0', mid: '#D4564E', midInkLight: '#C53930', midInkDark: '#E38B84', deep: '#7f1d1d', deepDark: '#FBD2D2' },
 };
