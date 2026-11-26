@@ -98,7 +98,7 @@ const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent,
   const Dots = ({ active }: { active: number }) => (
     <div className="flex items-center gap-1.5 justify-center mb-4 max-w-xl mx-auto">
       {[0, 1, 2, 3, 4, 5].map(s => (
-        <span key={s} className="h-1.5 rounded-full transition-all" style={{ width: s === active ? 20 : 6, backgroundColor: s <= active ? CYAN : '#E2E0DC' }} />
+        <span key={s} className="h-1.5 rounded-full transition-all" style={{ width: s === active ? 20 : 6, backgroundColor: s <= active ? CYAN : 'var(--surface-soft)' }} />
       ))}
     </div>
   );

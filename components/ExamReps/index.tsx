@@ -276,7 +276,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
     <button
       type="button"
       onClick={() => setShowPicker(true)}
-      className="w-full flex items-center gap-2 mb-4 px-3 py-1.5 rounded-lg text-left transition-colors hover:bg-[#EDEBE8]"
+      className="w-full flex items-center gap-2 mb-4 px-3 py-1.5 rounded-lg text-left transition-colors hover:bg-surface-soft"
       style={{ backgroundColor: '#FFFFFF' }}
     >
       <span className="text-[11px] font-semibold text-[#7a7068] truncate flex-1">
@@ -294,7 +294,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
       <div className={cardShell}>
         {selectionChip}
         <div className="flex items-center justify-between mb-4">
-          <span className="text-[10px] font-bold uppercase tracking-[0.15em] px-2.5 py-1 rounded-full truncate min-w-0" style={{ backgroundColor: '#F0EEEB', color: '#7a7068' }}>
+          <span className="text-[10px] font-bold uppercase tracking-[0.15em] px-2.5 py-1 rounded-full truncate min-w-0" style={{ backgroundColor: 'var(--surface-soft)', color: '#7a7068' }}>
             {card.subjectLabel} · {card.questionRef}
           </span>
           <span className="text-[11px] font-semibold text-[#7a7068] dark:text-zinc-400 shrink-0 ml-2 whitespace-nowrap">
@@ -443,7 +443,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
                       type="button"
                       onClick={() => setRibbonHad(p => ({ ...p, [id]: true }))}
                       className="px-2.5 py-1.5 rounded-lg text-[11px] font-bold transition-colors flex items-center gap-1"
-                      style={had === true ? { backgroundColor: COLORS.success, color: '#FFFFFF' } : { backgroundColor: '#F0EEEB', color: '#7a7068' }}
+                      style={had === true ? { backgroundColor: COLORS.success, color: '#FFFFFF' } : { backgroundColor: 'var(--surface-soft)', color: '#7a7068' }}
                     >
                       {had === true && <Check size={11} />} I had this
                     </button>
@@ -451,7 +451,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
                       type="button"
                       onClick={() => setRibbonHad(p => ({ ...p, [id]: false }))}
                       className="px-2.5 py-1.5 rounded-lg text-[11px] font-bold transition-colors"
-                      style={had === false ? { backgroundColor: '#1A1A1A', color: '#FFFFFF' } : { backgroundColor: '#F0EEEB', color: '#7a7068' }}
+                      style={had === false ? { backgroundColor: '#1A1A1A', color: '#FFFFFF' } : { backgroundColor: 'var(--surface-soft)', color: '#7a7068' }}
                     >
                       I didn’t
                     </button>

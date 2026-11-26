@@ -118,7 +118,7 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
                       }}
                     >
                       {s.name}
-                      {!has && <span className="ml-1.5 text-[9px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded-full" style={{ backgroundColor: '#EDEBE8', color: '#9e9186' }}>soon</span>}
+                      {!has && <span className="ml-1.5 text-[9px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded-full" style={{ backgroundColor: 'var(--surface-soft)', color: '#9e9186' }}>soon</span>}
                     </button>
                   );
                 })}

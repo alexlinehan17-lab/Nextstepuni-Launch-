@@ -699,7 +699,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
           )}
         </div>
         <div className="max-w-md mx-auto">
-          <div className="w-full h-[10px] rounded-full overflow-hidden bg-[#ECE8E3] dark:bg-zinc-700">
+          <div className="w-full h-[10px] rounded-full overflow-hidden bg-surface-soft dark:bg-zinc-700">
             <motion.div
               className="h-full rounded-full"
               style={{ backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.9)' }}

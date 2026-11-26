@@ -174,7 +174,7 @@ button.editorial-back-button:active { transform: translate(1px, 1px); box-shadow
 .dashboard-section-menu > button { display: flex; align-items: center; gap: 13px; width: 100%; min-height: 44px; padding: 10px 12px; border-radius: 5px; color: #23251f; text-align: left; font: 500 15px/1.4 'DM Sans', sans-serif; }
 .dashboard-section-menu > button > small { color: #76766f; font-size: 10px; }
 .dashboard-section-menu > button > span { flex: 1; }
-.dashboard-section-menu > button[aria-selected='true'] { background: #f1f1ec; font-weight: 700; }
+.dashboard-section-menu > button[aria-selected='true'] { background: var(--surface-soft); font-weight: 700; }
 .dashboard-section-menu > button:focus-visible { outline-offset: -2px; }
 .dashboard-mobile .font-serif { font-family: 'DM Sans', sans-serif; font-style: normal; letter-spacing: -.025em; }
 .dashboard-mobile .dashboard-stats p:nth-child(2) { font-weight: 700; line-height: 1.2; font-variant-numeric: lining-nums tabular-nums; }

@@ -1,10 +1,10 @@
 .ways-in-shell {
-  --wi-ink: #1c1c1a;
-  --wi-muted: #716c65;
-  --wi-line: #d8d3cc;
-  --wi-soft: #f1eee8;
-  --wi-paper: #ffffff;
-  --wi-canvas: #f8f7f3;
+  --wi-ink: var(--ink-primary);
+  --wi-muted: var(--ink-muted);
+  --wi-line: var(--outline-soft);
+  --wi-soft: var(--surface-soft);
+  --wi-paper: var(--surface-paper);
+  --wi-canvas: var(--surface-canvas);
   --wi-orange: var(--nsu-orange);
   position: fixed;
   inset: 0;

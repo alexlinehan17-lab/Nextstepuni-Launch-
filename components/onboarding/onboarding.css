@@ -31,7 +31,7 @@
 .setup-years.setup-two{grid-template-columns:repeat(2,minmax(0,1fr))}
 .setup-choice{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:9px;min-height:56px;min-width:0;width:100%;padding:14px;border:1px solid var(--setup-line);border-radius:12px;background:#fff;color:#1a1a1a;font-size:14px;font-weight:600;text-align:left;touch-action:manipulation;transition:background .15s,color .15s}
 .setup-choice[aria-pressed=true]{background:#1a1a1a;color:#fff;border-color:#1a1a1a}
-.setup-year{min-height:80px;border-radius:6px;background:#f5f4f1;border:0}
+.setup-year{min-height:80px;border-radius:6px;background:#f5f5f5;border:0}
 .setup-year strong{font-size:27px;line-height:1;letter-spacing:-1px}
 .setup-year span{font-size:11px;font-weight:400}
 .setup-motivation{min-height:74px;border:0;gap:7px;padding:12px;font-size:13px;line-height:1.25}

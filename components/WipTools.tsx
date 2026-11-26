@@ -40,7 +40,7 @@ const WipTools: React.FC<WipToolsProps> = ({ onBack, onOpenTool }) => (
         <button
           onClick={onBack}
           aria-label="Back to home"
-          className="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-[#EDEBE8] hover:bg-[#F8F4EC] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35"
+          className="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-hairline hover:bg-surface-soft transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35"
           style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
         >
           <ArrowLeft size={18} className="text-[#1a1a1a]" />

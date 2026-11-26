@@ -300,7 +300,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                   className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider shrink-0"
                   style={
                     isGraduated
-                      ? { backgroundColor: '#F4F4F2', color: '#78716C', border: '1px solid #E5E3DE' }
+                      ? { backgroundColor: 'var(--surface-soft)', color: '#78716C', border: '1px solid var(--hairline)' }
                       : isJunior
                         ? { backgroundColor: '#EDF2EE', color: '#4A6B4F' }
                         : { backgroundColor: '#FDEEDF', color: COLORS.accentDarkText }
@@ -379,7 +379,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                   className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider shrink-0"
                   style={
                     isGraduated
-                      ? { backgroundColor: '#F4F4F2', color: '#78716C', border: '1px solid #E5E3DE' }
+                      ? { backgroundColor: 'var(--surface-soft)', color: '#78716C', border: '1px solid var(--hairline)' }
                       : isJunior
                         ? { backgroundColor: '#EDF2EE', color: '#4A6B4F' }
                         : { backgroundColor: '#FDEEDF', color: COLORS.accentDarkText }

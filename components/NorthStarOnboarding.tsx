@@ -198,7 +198,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                         ? 'bg-[#FDEEDF] dark:bg-accent/14 border-accent shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]'
                         : isDisabled
                         ? 'bg-zinc-50 dark:bg-zinc-800/50 border-zinc-200 dark:border-zinc-700 text-zinc-300 dark:text-zinc-600 cursor-not-allowed'
-                        : 'bg-white dark:bg-zinc-900 border-[#EDEBE8] dark:border-zinc-700 hover:-translate-y-0.5 hover:shadow-[2px_2px_0_0_#1A1A1A] dark:hover:shadow-[2px_2px_0_0_#3f3f46]'
+                        : 'bg-white dark:bg-zinc-900 border-hairline dark:border-zinc-700 hover:-translate-y-0.5 hover:shadow-[2px_2px_0_0_#1A1A1A] dark:hover:shadow-[2px_2px_0_0_#3f3f46]'
                     }`}
                   >
                     {visionIcon && categoryBlob ? (

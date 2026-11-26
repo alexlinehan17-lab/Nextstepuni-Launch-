@@ -151,7 +151,7 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -60, opacity: 0 }}
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-            className="frame-float frame-float-top [--frame-float-gap:0.75rem] left-1/2 z-[var(--z-system)] flex w-[calc(100%-1.5rem)] max-w-lg -translate-x-1/2 items-center justify-center gap-2 rounded-xl border-[1.5px] border-[#383838] bg-[#FFF8E5] px-4 py-3 shadow-[3px_3px_0_0_#383838] dark:border-zinc-600 dark:bg-amber-950"
+            className="frame-float frame-float-top [--frame-float-gap:0.75rem] left-1/2 z-[var(--z-system)] flex w-[calc(100%-1.5rem)] max-w-lg -translate-x-1/2 items-center justify-center gap-2 rounded-xl border-[1.5px] border-[#383838] bg-surface-paper px-4 py-3 shadow-[3px_3px_0_0_#383838] dark:border-zinc-600 dark:bg-amber-950"
           >
             <WifiOff size={14} className="text-amber-500 dark:text-amber-400 shrink-0" />
             <span className="text-xs font-semibold text-amber-700 dark:text-amber-300">

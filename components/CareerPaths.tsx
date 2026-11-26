@@ -474,7 +474,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
         </div>
       )}
       {filter === 'matches' && (
-        <div className="flex items-start gap-2 rounded-xl p-3 mb-4" style={{ backgroundColor: '#F1F0ED' }}>
+        <div className="flex items-start gap-2 rounded-xl p-3 mb-4" style={{ backgroundColor: 'var(--surface-soft)' }}>
           <Compass size={15} className="mt-0.5 shrink-0 text-zinc-500" />
           <p className="text-[12.5px] text-zinc-600">Careers your Future Finder results point toward. Swipe through, then tap any for the full picture.</p>
         </div>

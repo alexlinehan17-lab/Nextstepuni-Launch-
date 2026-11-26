@@ -56,7 +56,7 @@ const DiagramTile: React.FC<{ entry: DiagramEntry }> = ({ entry }) => {
     // Cards stay white in dark mode (design system: all cards white) — the
     // inline ink text depends on it.
     <figure className="rounded-2xl border-2 border-[#d0cdc8] bg-white overflow-hidden flex flex-col">
-      <div className="bg-[#f7f6f4] border-b border-[#e6e2dc] p-3 flex items-center justify-center">
+      <div className="bg-surface-soft border-b border-hairline p-3 flex items-center justify-center">
         <img
           src={figureUrl(entry.src)}
           alt={entry.alt}
@@ -70,7 +70,7 @@ const DiagramTile: React.FC<{ entry: DiagramEntry }> = ({ entry }) => {
             {titleFor(entry)}
           </h3>
           {meta && (
-            <span className="shrink-0 text-[10.5px] font-bold tabular-nums px-1.5 py-0.5 rounded-full" style={{ backgroundColor: '#f0ede8', color: '#7a7068' }}>
+            <span className="shrink-0 text-[10.5px] font-bold tabular-nums px-1.5 py-0.5 rounded-full" style={{ backgroundColor: 'var(--surface-soft)', color: '#7a7068' }}>
               {meta}
             </span>
           )}

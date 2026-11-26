@@ -225,7 +225,7 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
                 <span className="text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: CYAN_DARK_TEXT }}>{card.topicLabel}</span>
                 <div className="flex items-center gap-1.5">
                   {[0, 1, 2].map(s => (
-                    <span key={s} className="h-1.5 rounded-full transition-all" style={{ width: s === beatIndex ? 18 : 6, backgroundColor: s <= beatIndex ? CYAN : '#E2E0DC' }} />
+                    <span key={s} className="h-1.5 rounded-full transition-all" style={{ width: s === beatIndex ? 18 : 6, backgroundColor: s <= beatIndex ? CYAN : 'var(--surface-soft)' }} />
                   ))}
                 </div>
               </div>

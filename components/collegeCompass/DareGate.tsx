@@ -44,7 +44,7 @@ const DareGate: React.FC<DareGateProps> = ({ categoryId, onCategoryChange }) => 
     >
       <span
         className="inline-flex items-center justify-center w-5 h-5 rounded-md shrink-0"
-        style={{ backgroundColor: met ? COLORS.success : '#E7E5E2' }}
+        style={{ backgroundColor: met ? COLORS.success : 'var(--surface-soft)' }}
       >
         {met ? <Check size={13} className="text-white" /> : <span className="block w-2 h-2 rounded-full bg-zinc-400" />}
       </span>
@@ -132,7 +132,7 @@ const DareGate: React.FC<DareGateProps> = ({ categoryId, onCategoryChange }) => 
             >
               <span
                 className="inline-flex items-center justify-center w-5 h-5 rounded-md shrink-0"
-                style={{ backgroundColor: on ? COLORS.accent : '#F0EEEB' }}
+                style={{ backgroundColor: on ? COLORS.accent : 'var(--surface-soft)' }}
               >
                 {on && <Check size={13} className="text-white" />}
               </span>

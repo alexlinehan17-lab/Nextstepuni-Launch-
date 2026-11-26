@@ -1032,7 +1032,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
 
             {/* Moderation Meeting (F5): how the class before you called it — anonymous counts only. */}
             {stage === 'reveal' && classDist && Object.values(classDist).some(n => n > 0) && (
-              <div className="rounded-xl border px-4 py-3 mb-4" style={{ borderColor: BORDER, background: '#FCFBF8' }}>
+              <div className="rounded-xl border px-4 py-3 mb-4" style={{ borderColor: BORDER, background: 'var(--surface-paper)' }}>
                 <Small className="mb-1.5">The moderation meeting — how your class called it</Small>
                 {session.mode === 'scale' ? (
                   (() => {
@@ -1049,7 +1049,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                               <span className="w-40 shrink-0 truncate font-medium" style={{ color: isKey ? INK : MUTED }}>
                                 {l.label}{isKey ? ' ✓' : ''}
                               </span>
-                              <span className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#eceae6' }}>
+                              <span className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: 'var(--surface-soft)' }}>
                                 <span className="block h-full rounded-full" style={{ width: `${share}%`, backgroundColor: isKey ? SUCCESS : ACCENT }} />
                               </span>
                               <span className="w-10 shrink-0 text-right tabular-nums" style={{ color: MUTED }}>{share}%</span>
@@ -1161,7 +1161,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             )}
             {/* Daily Mark duel (F9): anonymous class histogram — you vs the class median. */}
             {dailyMode && classCode.trim() !== '' && (
-              <div className="rounded-xl border px-4 py-3 mb-3 text-center" style={{ borderColor: BORDER, background: '#FCFBF8' }}>
+              <div className="rounded-xl border px-4 py-3 mb-3 text-center" style={{ borderColor: BORDER, background: 'var(--surface-paper)' }}>
                 {duel ? (
                   <>
                     <p className="text-[14px] font-semibold" style={{ color: INK }}>
@@ -1209,7 +1209,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                         <span className="text-[11px] w-14 text-left shrink-0" style={{ color: MUTED }}>
                           Script {String.fromCharCode(65 + i)}
                         </span>
-                        <div className="flex-1 h-1.5 rounded-full" style={{ backgroundColor: '#e8e4de' }}>
+                        <div className="flex-1 h-1.5 rounded-full" style={{ backgroundColor: 'var(--surface-soft)' }}>
                           <div className="h-1.5 rounded-full" style={{ width: `${Math.round(s.agreement * 100)}%`, backgroundColor: agreementColor(s.agreement) }} />
                         </div>
                         <span className="text-[11px] w-24 text-right shrink-0" style={{ color: MUTED }}>
@@ -1434,7 +1434,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                       {g.earned.length}/{g.total} earned
                     </span>
                   </div>
-                  <div className="h-1.5 rounded-full mb-2.5" style={{ backgroundColor: '#eceae6' }}>
+                  <div className="h-1.5 rounded-full mb-2.5" style={{ backgroundColor: 'var(--surface-soft)' }}>
                     <div className="h-1.5 rounded-full" style={{ width: `${Math.round((g.earned.length / g.total) * 100)}%`, backgroundColor: g.earned.length === g.total ? SUCCESS : ACCENT }} />
                   </div>
                   <div className="space-y-2">
@@ -1560,13 +1560,13 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             className="flex-1 rounded-lg border px-3 py-2 text-[13px]"
             style={{ borderColor: BORDER, background: '#fff', color: INK }}
           />
-          <span className="inline-flex items-center px-3 rounded-lg text-[12px] font-semibold" style={{ backgroundColor: '#f2efeb', color: MUTED }}>
+          <span className="inline-flex items-center px-3 rounded-lg text-[12px] font-semibold" style={{ backgroundColor: 'var(--surface-soft)', color: MUTED }}>
             {agg.submissions} {agg.submissions === 1 ? 'submission' : 'submissions'}
           </span>
         </div>
 
         {/* Classroom pilot kit: the how-to, expandable + printable (F-pilot). */}
-        <details className="rounded-xl border px-4 py-3 mb-5" style={{ borderColor: BORDER, background: '#FCFBF8' }}>
+        <details className="rounded-xl border px-4 py-3 mb-5" style={{ borderColor: BORDER, background: 'var(--surface-paper)' }}>
           <summary className="text-[13px] font-semibold cursor-pointer" style={{ color: INK }}>
             How to run a marking class
           </summary>
@@ -1610,7 +1610,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             </button>
           </div>
         ) : top.length === 0 ? (
-          <div className="rounded-xl border px-4 py-5" style={{ borderColor: BORDER, background: '#FCFBF8' }}>
+          <div className="rounded-xl border px-4 py-5" style={{ borderColor: BORDER, background: 'var(--surface-paper)' }}>
             <p className="text-[13.5px] leading-relaxed" style={{ color: MUTED }}>
               No submissions for <span className="font-semibold" style={{ color: INK }}>{classCode.trim() || 'this code'}</span> yet.
               Set a class code, have students mark a session and tap <span className="font-semibold">Send to class</span> on their summary,
@@ -1640,7 +1640,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                   <p className="text-[14.5px] font-semibold leading-snug" style={{ fontFamily: SERIF, color: INK }}>
                     {share}% of your class {headline}
                   </p>
-                  <div className="h-1.5 rounded-full mt-2" style={{ backgroundColor: '#eceae6' }}>
+                  <div className="h-1.5 rounded-full mt-2" style={{ backgroundColor: 'var(--surface-soft)' }}>
                     <div className="h-1.5 rounded-full" style={{ width: `${share}%`, backgroundColor: PEN }} />
                   </div>
                 </div>
@@ -1698,7 +1698,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         )}
 
         {sessions.length === 0 && (
-          <div className="rounded-xl border px-4 py-4 mt-1" style={{ borderColor: BORDER, backgroundColor: '#FCFBF8' }}>
+          <div className="rounded-xl border px-4 py-4 mt-1" style={{ borderColor: BORDER, backgroundColor: 'var(--surface-paper)' }}>
             <p className="text-[13px] leading-relaxed" style={{ color: MUTED }}>
               {LEVEL_LABEL[activeLevel]}-specific sessions are being added. The marking
               principles in the {levels.filter(l => l !== activeLevel).map(l => LEVEL_LABEL[l]).join('/')} sessions —
@@ -1723,7 +1723,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                   style={
                     result
                       ? { backgroundColor: SUCCESS, color: '#fff' }
-                      : { backgroundColor: '#f2efeb', color: MUTED, fontFamily: SERIF }
+                      : { backgroundColor: 'var(--surface-soft)', color: MUTED, fontFamily: SERIF }
                   }
                 >
                   {result ? <Check size={15} /> : i + 1}
@@ -1990,7 +1990,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                 {levels.map(l => LEVEL_LABEL[l]).join(' · ')} · {s.sessions.length} sessions
               </p>
               <div className="flex items-center gap-2">
-                <div className="flex-1 h-1.5 rounded-full" style={{ backgroundColor: '#eceae6' }}>
+                <div className="flex-1 h-1.5 rounded-full" style={{ backgroundColor: 'var(--surface-soft)' }}>
                   <div
                     className="h-1.5 rounded-full"
                     style={{

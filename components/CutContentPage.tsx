@@ -327,7 +327,7 @@ const CutContentPage: React.FC<CutContentPageProps> = ({ onBack }) => {
                   <span
                     className="text-[10.5px] font-bold px-1.5 rounded-full"
                     style={{
-                      backgroundColor: active ? 'rgba(255,255,255,0.22)' : '#f0eeec',
+                      backgroundColor: active ? 'rgba(255,255,255,0.22)' : 'var(--surface-soft)',
                       color: active ? 'white' : FAINT,
                     }}
                   >

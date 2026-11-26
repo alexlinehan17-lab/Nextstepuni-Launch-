@@ -282,7 +282,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
               {weeklyGoals.map((goal, gi) => {
                 const met = (weeklyGoalProgress[goal.metric] ?? 0) >= goal.target;
                 return (
-                  <div key={gi} className="flex items-center justify-center w-7 h-7 rounded-lg" style={{ backgroundColor: met ? GOAL_COLORS[gi] : '#e8e4de' }}>
+                  <div key={gi} className="flex items-center justify-center w-7 h-7 rounded-lg" style={{ backgroundColor: met ? GOAL_COLORS[gi] : 'var(--surface-soft)' }}>
                     {met ? (
                       <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7L6 10L11 4" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                     ) : (
@@ -383,7 +383,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                                     </div>
                                     <div className="flex gap-1 mt-2.5 ml-11">
                                       {[0, 1, 2, 3].map(seg => (
-                                        <div key={seg} className="flex-1 h-1.5 rounded-full" style={{ backgroundColor: seg <= tierIdx ? TIER_COLORS[tier] : '#e8e4de' }} />
+                                        <div key={seg} className="flex-1 h-1.5 rounded-full" style={{ backgroundColor: seg <= tierIdx ? TIER_COLORS[tier] : 'var(--surface-soft)' }} />
                                       ))}
                                     </div>
                                   </div>

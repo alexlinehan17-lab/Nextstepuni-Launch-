@@ -66,7 +66,7 @@ const HearMeter: React.FC<HearMeterProps> = ({ selected, onChange }) => {
         <div className="flex items-start gap-3">
           <span
             className="mt-0.5 inline-flex items-center justify-center w-5 h-5 rounded-md shrink-0"
-            style={{ backgroundColor: incomeGateMet ? COLORS.success : '#E7E5E2' }}
+            style={{ backgroundColor: incomeGateMet ? COLORS.success : 'var(--surface-soft)' }}
           >
             {incomeGateMet ? <Check size={13} className="text-white" /> : <Lock size={11} className="text-zinc-500" />}
           </span>
@@ -97,7 +97,7 @@ const HearMeter: React.FC<HearMeterProps> = ({ selected, onChange }) => {
               <div className="flex items-start gap-3">
                 <span
                   className="mt-0.5 inline-flex items-center justify-center w-5 h-5 rounded-md shrink-0 text-[11px] font-bold"
-                  style={{ backgroundColor: on ? COLORS.accent : '#F0EEEB', color: on ? '#FFFFFF' : '#9e9186' }}
+                  style={{ backgroundColor: on ? COLORS.accent : 'var(--surface-soft)', color: on ? '#FFFFFF' : '#9e9186' }}
                 >
                   {on ? <Check size={13} /> : `+${ind.points}`}
                 </span>
@@ -118,7 +118,7 @@ const HearMeter: React.FC<HearMeterProps> = ({ selected, onChange }) => {
           {score} / {HEAR_THRESHOLDS.max}
         </span>
       </div>
-      <div className="relative h-4 rounded-full overflow-hidden" style={{ backgroundColor: '#E7E5E2' }}>
+      <div className="relative h-4 rounded-full overflow-hidden" style={{ backgroundColor: 'var(--surface-soft)' }}>
         {incomeGateMet ? (
           <div
             className="absolute inset-y-0 left-0 rounded-full transition-all duration-500 ease-out"

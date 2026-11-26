@@ -372,7 +372,7 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                         transition={{ delay: 0.2 + i * 0.03, duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
                         whileTap={isYou ? undefined : { scale: 0.98 }}
                         onClick={() => !isYou && onSelectPeer(entry.peer)}
-                        className={`flex items-center gap-3 px-4 py-3 ${isYou ? '' : 'bg-white dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800'}`}
+                        className={`flex items-center gap-3 px-4 py-3 ${isYou ? '' : 'bg-white dark:bg-zinc-900 border border-hairline dark:border-zinc-800'}`}
                         style={{
                           borderRadius: 14,
                           ...(isYou ? {

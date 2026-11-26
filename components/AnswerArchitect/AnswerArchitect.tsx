@@ -54,7 +54,7 @@ const BeatRow: React.FC<{ beat: AnswerSkeleton['beats'][number] }> = ({ beat }) 
         </h4>
         <span
           className="shrink-0 text-[11px] font-bold tabular-nums px-2 py-0.5 rounded-full"
-          style={{ backgroundColor: '#f0ede8', color: '#7a7068' }}
+          style={{ backgroundColor: 'var(--surface-soft)', color: '#7a7068' }}
         >
           {beat.marks}m
         </span>

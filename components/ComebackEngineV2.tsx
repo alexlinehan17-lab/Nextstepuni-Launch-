@@ -271,7 +271,7 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
                   );
                 })}
               </div>
-              {legacyAnchor && <p className="mt-5 rounded-xl bg-[#F3F0EC] px-4 py-3 text-xs leading-5 text-[#5F574F]">Your previous goal is preserved: <strong>{legacyAnchor}</strong></p>}
+              {legacyAnchor && <p className="mt-5 rounded-xl bg-surface-soft px-4 py-3 text-xs leading-5 text-[#5F574F]">Your previous goal is preserved: <strong>{legacyAnchor}</strong></p>}
               <PrimaryActionButton label="Read my recovery signals" icon={ArrowRight} onClick={() => setStage('diagnosis')} className="mt-7 w-full" />
             </section>
           </MotionDiv>
@@ -324,9 +324,9 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
                 </div>
                 <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#A39A91]">Seven-day target</p>
                 <p className="mt-1 font-serif text-4xl font-semibold">{completed}<span className="text-xl text-[#A39A91]">/{activePlan.actions.length}</span></p>
-                <div className="mt-4 h-2 overflow-hidden rounded-full bg-[#E7E1DA]"><div className="h-full rounded-full bg-accent transition-[width] duration-500" style={{ width: `${completionPercent}%` }} /></div>
+                <div className="mt-4 h-2 overflow-hidden rounded-full bg-surface-soft"><div className="h-full rounded-full bg-accent transition-[width] duration-500" style={{ width: `${completionPercent}%` }} /></div>
               </div>
-              <div className="space-y-5 border-t border-[#E7E1DA] p-6">
+              <div className="space-y-5 border-t border-hairline p-6">
                 <div><p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#A39A91]">Focus</p><p className="mt-1 text-sm font-bold">{activePlan.priorities.join(' · ')}</p></div>
                 <div><p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#A39A91]">Capacity</p><p className="mt-1 text-sm font-bold">{activePlan.capacity} blocks, maximum</p></div>
                 <p className="border-l-2 border-accent pl-3 text-xs leading-5 text-[#6F6861] dark:text-[#C9C2BA]">Finishing every block is useful. Missing one does not erase the others—the plan can be rebuilt without penalty.</p>
@@ -342,7 +342,7 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
                       <p className="mt-1 flex items-center gap-1.5 text-xs text-[#766E67] dark:text-[#BBB3AB]"><Clock3 size={13} /> {action.durationMinutes} min</p>
                     </div>
                     <div>
-                      <div className="flex flex-wrap items-center gap-2"><h3 className={`font-serif text-xl font-semibold ${action.done ? 'line-through' : ''}`}>{action.subject}</h3><span className="rounded-md bg-[#F3F0EC] px-2 py-1 text-[9px] font-bold uppercase tracking-[0.1em] text-[#5F574F]">{action.sessionType.replace('-', ' ')}</span></div>
+                      <div className="flex flex-wrap items-center gap-2"><h3 className={`font-serif text-xl font-semibold ${action.done ? 'line-through' : ''}`}>{action.subject}</h3><span className="rounded-md bg-surface-soft px-2 py-1 text-[9px] font-bold uppercase tracking-[0.1em] text-[#5F574F]">{action.sessionType.replace('-', ' ')}</span></div>
                       {action.topic && <p className="mt-1 text-sm font-semibold text-[#A43F08]">{action.topic}</p>}
                       <p className="mt-1.5 text-xs leading-5 text-[#766E67] dark:text-[#BBB3AB]">{action.reason}</p>
                     </div>

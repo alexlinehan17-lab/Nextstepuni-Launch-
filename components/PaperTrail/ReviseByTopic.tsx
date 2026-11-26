@@ -40,7 +40,7 @@ const CATEGORY_TINT: Record<string, { bg: string; ink: string }> = {
   'social-environmental': { bg: '#E8F2EC', ink: '#1F5F3E' },
   'practical-applied': { bg: '#ECEFF0', ink: '#46555E' },
   arts: { bg: '#F6EAED', ink: '#84495A' },
-  other: { bg: '#F0EEEB', ink: '#6B635A' },
+  other: { bg: 'var(--surface-soft)', ink: '#6B635A' },
 };
 // Curriculum sections of the index, in reading order. The tint appears only
 // as the small dot beside each section eyebrow — rows stay white and ruled.
@@ -278,7 +278,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           </p>
         )}
 
-        <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-6" style={{ borderBottom: '1px solid #e7e3de' }}>
+        <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-6" style={{ borderBottom: '1px solid var(--hairline)' }}>
           {levels.length > 1 && (
             <HorizontalTabs
               variant="pill"
@@ -388,7 +388,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         <ToolMasthead tool="topic-atlas" eyebrow="Follow the topic" title="Topic Atlas." subtitle="Past questions, connected by what they ask." />
         <div className="lp-atlas-controls"><SubjectPicker value={subjectId} options={subjects.map(s => ({value:s.id,label:s.label}))} onChange={setSubjectId} /><p className="lp-body">{stats.questions.toLocaleString()} questions · {stats.yearMin}–{stats.yearMax}</p></div>
         <div className="lp-atlas-workspace"><section>
-        <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-2" style={{ borderBottom: '1px solid #e7e3de' }}>
+        <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-2" style={{ borderBottom: '1px solid var(--hairline)' }}>
           <HorizontalTabs
             variant="pill"
             size="sm"
@@ -487,7 +487,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                             key={y}
                             title={String(y)}
                             className="inline-block w-[4.5px] h-[13px] rounded-[2px] transition-colors"
-                            style={{ backgroundColor: asked.has(y) ? 'rgba(var(--nsu-orange-rgb), 0.55)' : '#ece8e3' }}
+                            style={{ backgroundColor: asked.has(y) ? 'rgba(var(--nsu-orange-rgb), 0.55)' : 'var(--surface-soft)' }}
                           />
                         ))}
                       </span>
@@ -534,7 +534,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
       ) : (
         <>
           {/* The record, stated once — cells divided by hairlines. */}
-          <div className="grid grid-cols-3 sm:grid-cols-4 mb-6 py-3.5" style={{ borderTop: '1px solid #e7e3de', borderBottom: '1px solid #e7e3de' }}>
+          <div className="grid grid-cols-3 sm:grid-cols-4 mb-6 py-3.5" style={{ borderTop: '1px solid var(--hairline)', borderBottom: '1px solid var(--hairline)' }}>
             {[
               { v: subjects.length.toLocaleString(), l: subjects.length === 1 ? 'Subject' : 'Subjects' },
               { v: totalTopics.toLocaleString(), l: 'Topics' },

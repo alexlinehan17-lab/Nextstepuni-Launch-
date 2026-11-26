@@ -75,7 +75,7 @@ const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectMo
         <p className="mt-1 truncate font-serif text-[16px] font-bold leading-snug text-[#1A1A1A] dark:text-white">{title}</p>
         {sub && <p className="mt-0.5 text-xs text-[#78716C] dark:text-zinc-400">{sub}</p>}
         {frac !== null && (
-          <div className="mt-2.5 h-[3px] max-w-[320px] overflow-hidden rounded-full bg-[#ECE8E3] dark:bg-zinc-700">
+          <div className="mt-2.5 h-[3px] max-w-[320px] overflow-hidden rounded-full bg-surface-soft dark:bg-zinc-700">
             <div className="h-full rounded-full" style={{ width: `${Math.round(frac * 100)}%`, backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.62)' }} />
           </div>
         )}

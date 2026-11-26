@@ -1990,16 +1990,6 @@ html:not(.dark) [class*="text-[#A0978D]"] {
 }
 
 /* Approved mobile brand: white tool surfaces, separated by existing outlines. */
-.mobile-brand-tools {
-  --surface-canvas: #FFFFFF;
-  --surface-paper: #FFFFFF;
-  --surface-soft: #F4F4F4;
-}
-.dark .mobile-brand-tools {
-  --surface-canvas: #151515;
-  --surface-paper: #202020;
-  --surface-soft: #282828;
-}
 
 /* Select menus from approved-ui-runtime portal into a position:relative
    wrapper appended to <body>. Until the menu is positioned it sits at the

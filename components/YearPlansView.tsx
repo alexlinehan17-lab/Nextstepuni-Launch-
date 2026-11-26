@@ -295,7 +295,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                               <li key={moduleId}>
                                 <button
                                   onClick={() => onSelectModule(moduleId)}
-                                  className="w-full flex items-center gap-3 py-2 px-2 rounded-lg hover:bg-[#F4EFE5] transition-colors text-left group"
+                                  className="w-full flex items-center gap-3 py-2 px-2 rounded-lg hover:bg-surface-soft transition-colors text-left group"
                                 >
                                   <span
                                     className="shrink-0 inline-flex items-center justify-center"
