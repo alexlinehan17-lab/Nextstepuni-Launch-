@@ -8,15 +8,13 @@ import {
 AlertTriangle,
 BarChart3,
 Calculator,
-CheckCircle2,
-ChevronDown,
 GitBranch,Layers,
 Minus,Plus,
 Scale,
 Target,
 TrendingDown
 } from 'lucide-react';
-import React,{ useEffect,useMemo,useState } from 'react';
+import React,{ useEffect,useId,useMemo,useState } from 'react';
 import { POINTS_OPTIMIZATION_REFERENCE_LIST } from '../data/references/pointsOptimization';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useModuleResponses } from '../hooks/useModuleResponses';
@@ -26,8 +24,22 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,PersonalStory,ReadingSection,ToolJumpCard } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerGroup,AnswerLine,AnswerTick,ExerciseSheet } from './learning/Exercise';
+import { Arrow,Button,Glyph,TextButton } from './ui/Button';
+import { ChoiceTile,SelectionBar } from './ui/Choice';
 
 const theme = redTheme;
+
+/** A native select, kept as it works today (the same value, onChange and options), drawn as the system's field:
+ *  white, a 1px line, radius 9, 16px words, 48 tall, with the menu arrow. */
+const FieldSelect = ({ className = '', children, ...props }: React.SelectHTMLAttributes<HTMLSelectElement>) => (
+  <span className={`ui-part ui-field-wrap ${className}`.trim()}>
+    <select {...props} className="ui-field-input" style={{ paddingRight: 44, borderRadius: 'var(--r-sm)', fontFamily: 'var(--font-ui)' }}>
+      {children}
+    </select>
+    <span className="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none flex text-ink-muted"><Arrow meaning="menu" size={20} /></span>
+  </span>
+);
 
 // ─── DATA ────────────────────────────────────────────────────────────────────
 
@@ -65,6 +77,7 @@ const GradeWaterfall = () => {
   const defaultGrades = ['H1','H1','H1','H1','H1','H1','H1'];
   const defaultSubjects = ['Mathematics','English','Irish','Physics','Chemistry','Biology','French'];
   const [grades, setGrades] = useState<string[]>(defaultGrades);
+  const rowId = useId();
 
   const subjectPoints = grades.map((grade, i) => {
     let pts = GRADE_POINTS[grade] || 0;
@@ -84,55 +97,61 @@ const GradeWaterfall = () => {
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Grade Waterfall Calculator</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Change the grades below and watch your points total respond. Notice how steep the H1→H2 cliff is.</p>
-
-      <div className="space-y-3 mb-8">
+    <ExerciseSheet title="Grade Waterfall Calculator" sub="Change the grades below and watch your points total respond. Notice how steep the H1→H2 cliff is." name="GradeWaterfall">
+      {/* Each subject ruled like a row: its name and points, then its grade and the student's own bar (ink on a hairline track) */}
+      <div className="ex-list">
         {defaultSubjects.map((subj, idx) => {
           const pts = subjectPoints[idx];
-          const isH1 = grades[idx] === 'H1';
           const isMaths = idx === 0;
 
           return (
-            <div key={subj} className="flex items-center gap-3">
-              <span className="w-28 text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] shrink-0 truncate">{subj}{isMaths ? ' *' : ''}</span>
-              <select
-                value={grades[idx]}
-                onChange={(e) => setGrade(idx, e.target.value)}
-                className="px-3 py-2 rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)]"
-              >
-                {GRADES.map(g => <option key={g} value={g}>{g}</option>)}
-              </select>
-              <div className="flex-grow h-8 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg overflow-hidden relative">
-                <motion.div
-                  className={`h-full rounded-lg ${isH1 ? "bg-[var(--module-success)]" : grades[idx] === 'H2' ? "bg-[var(--module-surface)]" : "bg-[var(--module-danger)]"}`}
-                  animate={{ width: `${(pts / 125) * 100}%` }}
-                  transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                />
-                <span className="absolute inset-0 flex items-center justify-end pr-3 text-xs font-bold text-[var(--module-ink)] dark:text-[var(--module-muted)]">
+            <div key={subj}>
+              <div className="flex items-baseline justify-between gap-3">
+                <span id={`${rowId}-${idx}`} className="t-sub text-ink-primary">{subj}{isMaths ? ' *' : ''}</span>
+                <span className="ui-readout text-ink-primary text-right">
                   {pts} pts{isMaths && grades[idx] !== 'H7' && grades[idx] !== 'H8' ? ' (incl. +25)' : ''}
                 </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <FieldSelect
+                  className="w-24 shrink-0"
+                  aria-labelledby={`${rowId}-${idx}`}
+                  value={grades[idx]}
+                  onChange={(e) => setGrade(idx, e.target.value)}
+                >
+                  {GRADES.map(g => <option key={g} value={g}>{g}</option>)}
+                </FieldSelect>
+                <div className="flex-grow h-2 rounded-full overflow-hidden" style={{ background: 'var(--hairline)' }}>
+                  <motion.div
+                    className="h-full rounded-full"
+                    style={{ background: 'var(--ink-primary)' }}
+                    animate={{ width: `${(pts / 125) * 100}%` }}
+                    transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                  />
+                </div>
               </div>
             </div>
           );
         })}
       </div>
 
-      <div className="flex items-center justify-between p-5 rounded-xl" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", boxShadow: 'none', color: "var(--module-success-text)" }}>
-        <div>
-          <p className="text-[10px] font-semibold uppercase tracking-wider opacity-60">Best 6 Total</p>
-          <p className="text-3xl font-bold font-mono">{total}<span className="text-lg opacity-50">/{maxTotal}</span></p>
-        </div>
-        <div className="text-right">
-          <p className="text-[10px] font-semibold uppercase tracking-wider opacity-60">Points Lost</p>
-          <p className={`text-3xl font-bold font-mono ${total < maxTotal ? "text-[var(--module-danger-text)]" : "text-[var(--module-success-text)]"}`}>
-            {total < maxTotal ? `-${maxTotal - total}` : '0'}
-          </p>
+      {/* The totals: labels and numbers in ink under a hairline (no tinted panel, no colour for lost points) */}
+      <div className="ex-result">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <p className="ex-label">Best 6 Total</p>
+            <p className="t-number text-ink-primary">{total}<span className="t-sub">/{maxTotal}</span></p>
+          </div>
+          <div className="text-right">
+            <p className="ex-label">Points Lost</p>
+            <p className="t-number text-ink-primary">
+              {total < maxTotal ? `-${maxTotal - total}` : '0'}
+            </p>
+          </div>
         </div>
       </div>
-      <p className="text-[10px] text-[var(--module-muted)] mt-3 text-center">* Mathematics includes the 25-point Higher Level bonus for grades H1–H6.</p>
-    </div>
+      <p className="t-meta">* Mathematics includes the 25-point Higher Level bonus for grades H1–H6.</p>
+    </ExerciseSheet>
   );
 };
 
@@ -144,59 +163,62 @@ const MathsBonusVisualizer = () => {
 
   const mathsPts = (GRADE_POINTS[mathsGrade] || 0) + (['H1','H2','H3','H4','H5','H6'].includes(mathsGrade) ? 25 : 0);
   const otherPts = GRADE_POINTS[otherGrade] || 0;
+  const mathsId = useId();
+  const otherId = useId();
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Maths Bonus Amplifier</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Compare HL Maths (with bonus) to any other subject. See how much difference the 25-point bonus actually makes.</p>
-
+    <ExerciseSheet title="The Maths Bonus Amplifier" sub="Compare HL Maths (with bonus) to any other subject. See how much difference the 25-point bonus actually makes." name="MathsBonusVisualizer">
       <div className="grid grid-cols-2 gap-6">
-        <div className="text-center">
-          <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-3">HL Mathematics</p>
-          <select value={mathsGrade} onChange={e => setMathsGrade(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-lg font-bold text-center text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-4">
+        <div className="flex flex-col gap-3">
+          <p id={mathsId} className="ex-label">HL Mathematics</p>
+          <FieldSelect aria-labelledby={mathsId} value={mathsGrade} onChange={e => setMathsGrade(e.target.value)}>
             {GRADES.map(g => <option key={g} value={g}>{g}</option>)}
-          </select>
+          </FieldSelect>
+          {/* The points, as a number in ink with its label (no filled square) */}
           <motion.div
-            className="mx-auto w-24 h-24 rounded-2xl bg-[var(--module-success)] text-[var(--module-ink)] flex flex-col items-center justify-center"
+            className="flex flex-col"
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ duration: 0.3 }}
             key={mathsGrade}
+            style={{ transformOrigin: 'left center' }}
           >
-            <span className="text-2xl font-bold font-mono">{mathsPts}</span>
-            <span className="text-[9px] font-semibold opacity-70">POINTS</span>
+            <span className="t-number text-ink-primary">{mathsPts}</span>
+            <span className="ex-label">POINTS</span>
           </motion.div>
-          <p className="text-xs text-[var(--module-muted)] mt-3">{GRADE_POINTS[mathsGrade]}{['H1','H2','H3','H4','H5','H6'].includes(mathsGrade) ? ' + 25 bonus' : ''}</p>
+          <p className="t-meta">{GRADE_POINTS[mathsGrade]}{['H1','H2','H3','H4','H5','H6'].includes(mathsGrade) ? ' + 25 bonus' : ''}</p>
         </div>
 
-        <div className="text-center">
-          <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-3">Any Other Subject</p>
-          <select value={otherGrade} onChange={e => setOtherGrade(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-lg font-bold text-center text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-4">
+        <div className="flex flex-col gap-3">
+          <p id={otherId} className="ex-label">Any Other Subject</p>
+          <FieldSelect aria-labelledby={otherId} value={otherGrade} onChange={e => setOtherGrade(e.target.value)}>
             {GRADES.map(g => <option key={g} value={g}>{g}</option>)}
-          </select>
+          </FieldSelect>
           <motion.div
-            className="mx-auto w-24 h-24 rounded-2xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] flex flex-col items-center justify-center"
+            className="flex flex-col"
             key={otherGrade}
           >
-            <span className="text-2xl font-bold font-mono">{otherPts}</span>
-            <span className="text-[9px] font-semibold opacity-70">POINTS</span>
+            <span className="t-number text-ink-primary">{otherPts}</span>
+            <span className="ex-label">POINTS</span>
           </motion.div>
-          <p className="text-xs text-[var(--module-muted)] mt-3">{GRADE_POINTS[otherGrade]} points (no bonus)</p>
+          <p className="t-meta">{GRADE_POINTS[otherGrade]} points (no bonus)</p>
         </div>
       </div>
 
-      <div className={`mt-6 p-4 rounded-xl text-center text-sm font-medium ${mathsPts >= otherPts ? "bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:bg-[var(--module-success-soft)] dark:text-[var(--module-success-text)]" : "bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:bg-[var(--module-danger-soft)] dark:text-[var(--module-danger-text)]"}`}>
+      {/* The comparison: a line in ink (the tick when Maths comes out ahead or level) */}
+      <AnswerLine tone={mathsPts >= otherPts ? 'ok' : 'note'}>
         {mathsPts >= otherPts
           ? `A ${mathsGrade} in Maths (${mathsPts} pts) is worth ${mathsPts - otherPts > 0 ? `${mathsPts - otherPts} points MORE than` : 'the same as'} a ${otherGrade} in any other subject (${otherPts} pts).`
           : `A ${otherGrade} in another subject (${otherPts} pts) beats a ${mathsGrade} in Maths (${mathsPts} pts) by ${otherPts - mathsPts} points.`
         }
-      </div>
-    </div>
+      </AnswerLine>
+    </ExerciseSheet>
   );
 };
 
 // ─── INTERACTIVE 3: Subject H1 Rate Dashboard ──────────────────────────────
+
+/** The dashboard's title, also the name of its sort bar for screen readers. */
+const H1_DASHBOARD_TITLE = 'Subject H1 Rate Dashboard';
 
 const H1RateDashboard = () => {
   const [sortBy, setSortBy] = useState<'h1Rate' | 'objectivity' | 'name'>('h1Rate');
@@ -212,38 +234,29 @@ const H1RateDashboard = () => {
   const displayed = showAll ? sorted : sorted.slice(0, 10);
   const maxRate = Math.max(...SUBJECTS_DATA.map(s => s.h1Rate));
 
-  const getRiskColor = (rate: number) => {
-    if (rate >= 15) return "bg-[var(--module-success)]";
-    if (rate >= 10) return "bg-[var(--module-surface)]";
-    return "bg-[var(--module-danger)]";
-  };
-
+  // The yield is said in words beside each bar (no tinted tag, no colour per bar).
   const getRiskLabel = (rate: number) => {
-    if (rate >= 15) return { text: 'High Yield', color: "text-[var(--module-success-text)] bg-[var(--module-success-soft)] dark:text-[var(--module-success-text)] dark:bg-[var(--module-success-soft)]" };
-    if (rate >= 10) return { text: 'Moderate', color: "text-[var(--module-ink)] bg-[var(--module-surface)] dark:text-[var(--module-ink)] dark:bg-[var(--module-surface)]" };
-    return { text: 'Low Yield', color: "text-[var(--module-danger-text)] bg-[var(--module-danger-soft)] dark:text-[var(--module-danger-text)] dark:bg-[var(--module-danger-soft)]" };
+    if (rate >= 15) return { text: 'High Yield' };
+    if (rate >= 10) return { text: 'Moderate' };
+    return { text: 'Low Yield' };
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Subject H1 Rate Dashboard</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Indicative H1 rates (illustrative, not official SEC figures). Sort to compare which subjects tend to have higher H1 rates.</p>
-
-      <div className="flex justify-center gap-2 mb-6">
-        {[
+    <ExerciseSheet title={H1_DASHBOARD_TITLE} sub="Indicative H1 rates (illustrative, not official SEC figures). Sort to compare which subjects tend to have higher H1 rates." name="H1RateDashboard">
+      {/* The sort: the system's selection bar (one of three short words), named by the sheet's own title */}
+      <SelectionBar<string>
+        label={H1_DASHBOARD_TITLE}
+        value={sortBy}
+        onChange={(key) => setSortBy(key as any)}
+        options={[
           { key: 'h1Rate', label: 'H1 Rate' },
           { key: 'objectivity', label: 'Objectivity' },
           { key: 'name', label: 'A–Z' },
-        ].map(opt => (
-          <button key={opt.key} onClick={() => setSortBy(opt.key as any)}
-            className="px-3 py-1.5 text-xs font-semibold transition-all"
-            style={sortBy === opt.key ? { backgroundColor: "var(--module-solid)", border: "2.5px solid var(--module-line)", borderRadius: 10, boxShadow: 'none', color: "var(--module-on-fill)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 10, boxShadow: 'none', color: "var(--module-ink)" }} data-wide-button="true" data-selected={!!(sortBy === opt.key)} data-tone="orange" aria-pressed={!!(sortBy === opt.key)}>
-            {opt.label}
-          </button>
-        ))}
-      </div>
+        ].map(opt => ({ value: opt.key, label: opt.label }))}
+      />
 
-      <div className="space-y-2">
+      {/* Each subject ruled like a row: its name and yield, then its bar (ink on a hairline track) and rate */}
+      <div className="ex-list">
         {displayed.map((subj, idx) => {
           const risk = getRiskLabel(subj.h1Rate);
           return (
@@ -252,31 +265,37 @@ const H1RateDashboard = () => {
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: idx * 0.02 }}
-              className="flex items-center gap-3 py-2"
             >
-              <span className="w-32 text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] shrink-0 truncate">{subj.name}</span>
-              <div className="flex-grow h-6 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-md overflow-hidden relative">
-                <motion.div
-                  className={`h-full rounded-md ${getRiskColor(subj.h1Rate)}`}
-                  initial={{ width: 0 }}
-                  animate={{ width: `${(subj.h1Rate / maxRate) * 100}%` }}
-                  transition={{ duration: 0.5, delay: idx * 0.02 }}
-                />
-                <span className="absolute inset-0 flex items-center pl-2 text-[11px] font-bold text-[var(--module-ink)] mix-blend-difference">{subj.h1Rate}%</span>
+              <div className="flex items-baseline justify-between gap-3">
+                <span className="t-sub text-ink-primary">{subj.name}</span>
+                <span className="t-meta shrink-0">{risk.text}</span>
               </div>
-              <span className={`px-2 py-0.5 rounded text-[9px] font-semibold shrink-0 ${risk.color}`}>{risk.text}</span>
+              <div className="flex items-center gap-3">
+                <div className="flex-grow h-2 rounded-full overflow-hidden" style={{ background: 'var(--hairline)' }}>
+                  <motion.div
+                    className="h-full rounded-full"
+                    style={{ background: 'var(--ink-primary)' }}
+                    initial={{ width: 0 }}
+                    animate={{ width: `${(subj.h1Rate / maxRate) * 100}%` }}
+                    transition={{ duration: 0.5, delay: idx * 0.02 }}
+                  />
+                </div>
+                <span className="w-10 shrink-0 text-right ui-readout text-ink-primary">{subj.h1Rate}%</span>
+              </div>
             </MotionDiv>
           );
         })}
       </div>
 
       {!showAll && (
-        <button onClick={() => setShowAll(true)} className="mt-4 w-full py-2 text-xs font-semibold text-[var(--module-muted)] hover:text-[var(--module-ink)] dark:hover:text-[var(--module-muted)] flex items-center justify-center gap-1 transition-colors" data-wide-button="true">
-          Show all {SUBJECTS_DATA.length} subjects <ChevronDown size={14} />
-        </button>
+        <div className="ex-actions">
+          <TextButton tone="quiet" arrow="menu" onClick={() => setShowAll(true)}>
+            Show all {SUBJECTS_DATA.length} subjects
+          </TextButton>
+        </div>
       )}
-      <p className="text-[10px] text-[var(--module-muted)] mt-4 text-center leading-relaxed">Illustrative relative estimates of recent SEC Leaving Certificate (Higher Level) H1 rates — for ranking subjects, not official published figures. Rates vary a lot year to year (and rose sharply post-2020); check the current SEC examination statistics for exact numbers.</p>
-    </div>
+      <p className="t-meta">Illustrative relative estimates of recent SEC Leaving Certificate (Higher Level) H1 rates — for ranking subjects, not official published figures. Rates vary a lot year to year (and rose sharply post-2020); check the current SEC examination statistics for exact numbers.</p>
+    </ExerciseSheet>
   );
 };
 
@@ -287,51 +306,56 @@ const ObjectivitySpectrum = () => {
   const sorted = [...SUBJECTS_DATA].sort((a, b) => b.objectivity - a.objectivity);
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Objectivity Spectrum</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Where does each subject fall between "right/wrong" and "examiner's discretion"?</p>
-
+    <ExerciseSheet title="The Objectivity Spectrum" sub={'Where does each subject fall between "right/wrong" and "examiner\'s discretion"?'} name="ObjectivitySpectrum">
       {!revealed ? (
-        <div className="text-center py-8">
-          <p className="text-sm text-[var(--module-muted)] mb-4">Before you see the data — think about your own subjects. Which do you think have the most objective marking?</p>
-          <button onClick={() => setRevealed(true)}
-            className="px-6 py-3 text-sm font-semibold transition-all"
-            style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-ink)" }} data-wide-button="true">
-            Reveal the Spectrum
-          </button>
+        <div className="ex-stack">
+          <p className="t-sub">Before you see the data — think about your own subjects. Which do you think have the most objective marking?</p>
+          <div className="ex-actions">
+            <Button onClick={() => setRevealed(true)}>
+              Reveal the Spectrum
+            </Button>
+          </div>
         </div>
       ) : (
-        <div className="space-y-1.5">
-          <div className="flex justify-between text-[9px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-3 px-1">
-            <span>Pure Objective (Right/Wrong)</span>
-            <span>Pure Subjective (Discretion)</span>
+        <div className="ex-stack">
+          <div className="flex justify-between gap-4">
+            <span className="ex-label">Pure Objective (Right/Wrong)</span>
+            <span className="ex-label text-right">Pure Subjective (Discretion)</span>
           </div>
-          {sorted.map((subj, idx) => (
-            <MotionDiv
-              key={subj.name}
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: idx * 0.03 }}
-              className="relative h-8 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-md overflow-hidden"
-            >
-              <div className="absolute inset-0 flex items-center px-3 justify-between z-10">
-                <span className="text-[11px] font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{subj.name}</span>
-                <span className="text-[10px] font-bold text-[var(--module-muted)]">{subj.objectivity}%</span>
-              </div>
-              <motion.div
-                className="h-full bg-[var(--module-orange)] from-[var(--module-orange)] to-transparent"
-                initial={{ width: 0 }}
-                animate={{ width: `${subj.objectivity}%` }}
-                transition={{ duration: 0.6, delay: idx * 0.03 }}
-              />
-            </MotionDiv>
-          ))}
-          <div className="mt-4 p-4 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-xs text-[var(--module-ink)] dark:text-[var(--module-muted)] leading-relaxed">
-            <strong className="text-[var(--module-ink)] dark:text-[var(--module-ink)]">The pattern is clear:</strong> STEM subjects and Maths sit at the objective end — a right answer gets full marks, no question. Humanities and Arts sit at the subjective end, where different examiners might give different marks. If you want to reduce surprise on exam day, having more objective subjects in your mix helps.
+          {/* Each subject on one line: its name, its bar (ink on a hairline track) and its share */}
+          <div className="ex-list">
+            {sorted.map((subj, idx) => (
+              <MotionDiv
+                key={subj.name}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: idx * 0.03 }}
+              >
+                <div className="flex items-center gap-3">
+                  <span className="w-36 shrink-0 t-sub text-ink-primary">{subj.name}</span>
+                  <div className="flex-grow h-2 rounded-full overflow-hidden" style={{ background: 'var(--hairline)' }}>
+                    <motion.div
+                      className="h-full rounded-full"
+                      style={{ background: 'var(--ink-primary)' }}
+                      initial={{ width: 0 }}
+                      animate={{ width: `${subj.objectivity}%` }}
+                      transition={{ duration: 0.6, delay: idx * 0.03 }}
+                    />
+                  </div>
+                  <span className="w-10 shrink-0 text-right ui-readout text-ink-muted">{subj.objectivity}%</span>
+                </div>
+              </MotionDiv>
+            ))}
+          </div>
+          {/* The pattern: words you read, under a hairline (no box) */}
+          <div className="ex-block">
+            <p className="ex-block-text">
+              <strong className="text-ink-primary">The pattern is clear:</strong> STEM subjects and Maths sit at the objective end — a right answer gets full marks, no question. Humanities and Arts sit at the subjective end, where different examiners might give different marks. If you want to reduce surprise on exam day, having more objective subjects in your mix helps.
+            </p>
           </div>
         </div>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 
@@ -372,65 +396,52 @@ const SynergyMap = ({ savedSubjects, onSave }: { savedSubjects?: string[]; onSav
     return links;
   }, [selected]);
 
-  const groupColors: Record<string, string> = {
-    'maths': "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)] dark:border-[var(--module-line)]",
-    'stem': "bg-[var(--module-success-soft)] text-[var(--module-success-text)] border-[var(--module-line)] dark:bg-[var(--module-success-soft)] dark:text-[var(--module-success-text)] dark:border-[var(--module-line)]",
-    'life-science': "bg-[var(--module-success-soft)] text-[var(--module-success-text)] border-[var(--module-line)] dark:bg-[var(--module-success-soft)] dark:text-[var(--module-success-text)] dark:border-[var(--module-line)]",
-    'language': "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)] dark:border-[var(--module-line)]",
-    'business': "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)] dark:border-[var(--module-line)]",
-    'humanities': "bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] border-[var(--module-line)] dark:bg-[var(--module-danger-soft)] dark:text-[var(--module-danger-text)] dark:border-[var(--module-line)]",
-    'practical': "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)] dark:border-[var(--module-line)]",
-    'creative': "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)] dark:border-[var(--module-line)]",
-  };
-
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Subject Overlap Map</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">Select up to 7 subjects and see which share overlapping content — study one, benefit in another.</p>
-      <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">{selected.length}/7 selected</p>
+    <ExerciseSheet title="Subject Overlap Map" sub="Select up to 7 subjects and see which share overlapping content — study one, benefit in another." name="SynergyMap">
+      <p className="ex-count ui-readout" aria-live="polite">{selected.length}/7 selected</p>
 
-      <div className="flex flex-wrap justify-center gap-2 mb-6">
+      {/* Each subject is an answer you choose (up to seven): an ink outline and a tick, no colour per group */}
+      <AnswerGroup kind="several" columns={2}>
         {SUBJECTS_DATA.map(subj => {
           const isSelected = selected.includes(subj.name);
-          const group = groupColors[subj.group] || "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)]";
           return (
-            <button
+            <ChoiceTile
               key={subj.name}
+              kind="several"
+              chosen={isSelected}
               onClick={() => toggleSubject(subj.name)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium border transition-all ${
-                isSelected ? group : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-muted)] dark:text-[var(--module-muted)] border-[var(--module-line)] dark:border-[var(--module-line)] hover:border-[var(--module-line)] dark:hover:border-[var(--module-line)]"
-              }`} data-wide-button="true"
-            >
-              {subj.name}{subj.isMaths ? ' *' : ''}
-            </button>
+              label={<>{subj.name}{subj.isMaths ? ' *' : ''}</>}
+            />
           );
         })}
-      </div>
+      </AnswerGroup>
 
+      {/* What overlaps: under a hairline and its label; each pair ruled like a row with the green tick (no box) */}
       {selected.length > 0 && (
-        <div className="p-5 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
-          <div className="flex items-center justify-between mb-3">
-            <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)]">Overlapping Subjects</p>
-            <p className="text-sm font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{activeSynergies.length} found</p>
+        <div className="ex-block">
+          <div className="flex items-center justify-between gap-3">
+            <p className="ex-label">Overlapping Subjects</p>
+            <p className="ui-readout text-ink-primary">{activeSynergies.length} found</p>
           </div>
           {activeSynergies.length > 0 ? (
-            <div className="space-y-2">
+            <div className="ex-list">
               {activeSynergies.map((link, i) => (
-                <MotionDiv key={i} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.05 }}
-                  className="flex items-center gap-2 text-sm">
-                  <span className="font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{link.from}</span>
-                  <span className="text-[var(--module-muted)] dark:text-[var(--module-ink)]"></span>
-                  <span className="font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{link.to}</span>
-                  <CheckCircle2 size={14} className="text-[var(--module-success-text)] ml-auto shrink-0" />
+                <MotionDiv key={i} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.05 }}>
+                  <div className="flex items-center gap-2 t-sub text-ink-primary">
+                    <span>{link.from}</span>
+                    <span className="text-ink-muted"></span>
+                    <span>{link.to}</span>
+                    <AnswerTick className="ml-auto" />
+                  </div>
                 </MotionDiv>
               ))}
             </div>
           ) : (
-            <p className="text-xs text-[var(--module-muted)] text-center py-4">No overlap between your selected subjects yet. Try adding STEM or language pairs.</p>
+            <p className="t-sub">No overlap between your selected subjects yet. Try adding STEM or language pairs.</p>
           )}
         </div>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 
@@ -446,73 +457,75 @@ const SurplusCalculator = () => {
   const safetyMargin = surplusPoints > 0 ? Math.round((surplusPoints / requiredPoints) * 100) : 0;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Surplus Rule Calculator</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Marking schemes often accept more valid answers than the question needs. Calculate your safety margin.</p>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-        <div>
-          <label className="block text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-2">Question Worth</label>
+    <ExerciseSheet title="The Surplus Rule Calculator" sub="Marking schemes often accept more valid answers than the question needs. Calculate your safety margin." name="SurplusCalculator">
+      {/* Three steppers: each its label, a white button with a line either side of the number in ink, and its unit */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="flex flex-col gap-2">
+          <p className="ex-label">Question Worth</p>
           <div className="flex items-center gap-2">
-            <button aria-label="Decrease" onClick={() => setQuestionMarks(Math.max(5, questionMarks - 5))} className="p-2 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" data-wide-button="true"><Minus size={14} /></button>
-            <span className="text-2xl font-bold font-mono text-[var(--module-ink)] dark:text-[var(--module-ink)] w-16 text-center">{questionMarks}</span>
-            <button aria-label="Increase" onClick={() => setQuestionMarks(Math.min(100, questionMarks + 5))} className="p-2 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" data-wide-button="true"><Plus size={14} /></button>
-            <span className="text-xs text-[var(--module-muted)]">marks</span>
+            <Button size="sm" aria-label="Decrease" onClick={() => setQuestionMarks(Math.max(5, questionMarks - 5))}><Glyph icon={Minus} size={16} /></Button>
+            <span className="t-heading text-ink-primary w-12 text-center tabular-nums">{questionMarks}</span>
+            <Button size="sm" aria-label="Increase" onClick={() => setQuestionMarks(Math.min(100, questionMarks + 5))}><Glyph icon={Plus} size={16} /></Button>
+            <span className="t-meta">marks</span>
           </div>
         </div>
-        <div>
-          <label className="block text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-2">Marks per Point</label>
+        <div className="flex flex-col gap-2">
+          <p className="ex-label">Marks per Point</p>
           <div className="flex items-center gap-2">
-            <button aria-label="Decrease" onClick={() => setMarksPerPoint(Math.max(1, marksPerPoint - 1))} className="p-2 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" data-wide-button="true"><Minus size={14} /></button>
-            <span className="text-2xl font-bold font-mono text-[var(--module-ink)] dark:text-[var(--module-ink)] w-16 text-center">{marksPerPoint}</span>
-            <button aria-label="Increase" onClick={() => setMarksPerPoint(Math.min(10, marksPerPoint + 1))} className="p-2 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" data-wide-button="true"><Plus size={14} /></button>
-            <span className="text-xs text-[var(--module-muted)]">each</span>
+            <Button size="sm" aria-label="Decrease" onClick={() => setMarksPerPoint(Math.max(1, marksPerPoint - 1))}><Glyph icon={Minus} size={16} /></Button>
+            <span className="t-heading text-ink-primary w-12 text-center tabular-nums">{marksPerPoint}</span>
+            <Button size="sm" aria-label="Increase" onClick={() => setMarksPerPoint(Math.min(10, marksPerPoint + 1))}><Glyph icon={Plus} size={16} /></Button>
+            <span className="t-meta">each</span>
           </div>
         </div>
-        <div>
-          <label className="block text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-2">Points You Write</label>
+        <div className="flex flex-col gap-2">
+          <p className="ex-label">Points You Write</p>
           <div className="flex items-center gap-2">
-            <button aria-label="Decrease" onClick={() => setPointsWritten(Math.max(1, pointsWritten - 1))} className="p-2 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" data-wide-button="true"><Minus size={14} /></button>
-            <span className="text-2xl font-bold font-mono text-[var(--module-ink)] dark:text-[var(--module-ink)] w-16 text-center">{pointsWritten}</span>
-            <button aria-label="Increase" onClick={() => setPointsWritten(Math.min(20, pointsWritten + 1))} className="p-2 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" data-wide-button="true"><Plus size={14} /></button>
-            <span className="text-xs text-[var(--module-muted)]">SRPs</span>
+            <Button size="sm" aria-label="Decrease" onClick={() => setPointsWritten(Math.max(1, pointsWritten - 1))}><Glyph icon={Minus} size={16} /></Button>
+            <span className="t-heading text-ink-primary w-12 text-center tabular-nums">{pointsWritten}</span>
+            <Button size="sm" aria-label="Increase" onClick={() => setPointsWritten(Math.min(20, pointsWritten + 1))}><Glyph icon={Plus} size={16} /></Button>
+            <span className="t-meta">SRPs</span>
           </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-4">
-        <div className="p-4 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-center">
-          <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-1">Required</p>
-          <p className="text-xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{requiredPoints} SRPs</p>
-        </div>
-        <div className={`p-4 rounded-xl text-center ${surplusPoints > 0 ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)]" : "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)]"}`}>
-          <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-1">Surplus</p>
-          <p className={`text-xl font-bold ${surplusPoints > 0 ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}`}>
-            {surplusPoints > 0 ? `+${surplusPoints}` : surplusPoints}
-          </p>
-        </div>
-        <div className="p-4 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-center">
-          <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-1">Safety</p>
-          <p className="text-xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{safetyMargin}%</p>
+      {/* The three results: labels and numbers in ink under a hairline (no tinted boxes) */}
+      <div className="ex-result">
+        <div className="grid grid-cols-3 gap-4">
+          <div>
+            <p className="ex-label">Required</p>
+            <p className="t-heading text-ink-primary">{requiredPoints} SRPs</p>
+          </div>
+          <div>
+            <p className="ex-label">Surplus</p>
+            <p className="t-heading text-ink-primary">
+              {surplusPoints > 0 ? `+${surplusPoints}` : surplusPoints}
+            </p>
+          </div>
+          <div>
+            <p className="ex-label">Safety</p>
+            <p className="t-heading text-ink-primary">{safetyMargin}%</p>
+          </div>
         </div>
       </div>
 
+      {/* What the margin means: a line in ink (the tick for a strong surplus) */}
       {surplusPoints >= 2 && (
-        <p className="mt-4 text-xs text-[var(--module-success-text)] dark:text-[var(--module-success-text)] text-center font-medium">
+        <AnswerLine>
           Strong surplus. Even if {surplusPoints} of your points are rejected, you still get full marks.
-        </p>
+        </AnswerLine>
       )}
       {surplusPoints >= 0 && surplusPoints < 2 && (
-        <p className="mt-4 text-xs text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center font-medium">
+        <AnswerLine tone="note">
           Thin margin. Add {2 - surplusPoints} more points to build a safe buffer.
-        </p>
+        </AnswerLine>
       )}
       {surplusPoints < 0 && (
-        <p className="mt-4 text-xs text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] text-center font-medium">
+        <AnswerLine tone="note">
           You're writing fewer points than required. You will lose marks. Write at least {requiredPoints + 2} SRPs.
-        </p>
+        </AnswerLine>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 
@@ -578,61 +591,59 @@ const PortfolioOptimizer = ({ savedPortfolio, onSave }: { savedPortfolio?: { sub
   const availableSubjects = SUBJECTS_DATA.map(s => s.name);
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your Portfolio Optimizer</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Enter your 7 subjects and your current realistic grade expectation. Get a personalized risk report.</p>
-
-      <div className="space-y-3 mb-8">
+    <ExerciseSheet title="Your Portfolio Optimizer" sub="Enter your 7 subjects and your current realistic grade expectation. Get a personalized risk report." name="PortfolioOptimizer">
+      {/* Seven rows: the number, the subject field and the grade field (the native selects, kept as they work today) */}
+      <div className="ex-stack">
         {portfolio.map((item, idx) => (
           <div key={idx} className="flex items-center gap-3">
-            <span className="text-xs font-bold text-[var(--module-muted)] w-4 shrink-0">{idx + 1}</span>
-            <select value={item.subject} onChange={e => updateSubject(idx, e.target.value)}
-              className="flex-grow px-3 py-2 rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)]">
+            <span className="ui-readout text-ink-muted w-4 shrink-0">{idx + 1}</span>
+            <FieldSelect className="flex-grow min-w-0" value={item.subject} onChange={e => updateSubject(idx, e.target.value)}>
               <option value="">Select subject...</option>
               {availableSubjects.map(s => <option key={s} value={s}>{s}{s === 'Mathematics' ? ' (+ bonus)' : ''}</option>)}
-            </select>
-            <select value={item.confidence} onChange={e => updateConfidence(idx, e.target.value)}
-              className="w-20 px-2 py-2 rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-sm font-bold text-center text-[var(--module-ink)] dark:text-[var(--module-ink)]">
+            </FieldSelect>
+            <FieldSelect className="w-24 shrink-0" value={item.confidence} onChange={e => updateConfidence(idx, e.target.value)}>
               {GRADES.map(g => <option key={g} value={g}>{g}</option>)}
-            </select>
+            </FieldSelect>
           </div>
         ))}
       </div>
 
+      {/* The risk report: labels and numbers in ink under a hairline (no tinted panel, no colour for the gap) */}
       {analysis.filledCount >= 4 && (
-        <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="p-6 rounded-xl" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", boxShadow: 'none', color: "var(--module-success-text)" }}>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-            <div className="text-center">
-              <p className="text-[9px] font-semibold uppercase tracking-wider opacity-60">Projected Points</p>
-              <p className="text-2xl font-bold font-mono">{analysis.totalPts}<span className="text-sm opacity-40">/625</span></p>
+        <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="ex-result">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div>
+              <p className="ex-label">Projected Points</p>
+              <p className="t-heading text-ink-primary">{analysis.totalPts}<span className="t-sub">/625</span></p>
             </div>
-            <div className="text-center">
-              <p className="text-[9px] font-semibold uppercase tracking-wider opacity-60">Objectivity</p>
-              <p className="text-2xl font-bold font-mono">{analysis.avgObjectivity}%</p>
+            <div>
+              <p className="ex-label">Objectivity</p>
+              <p className="t-heading text-ink-primary">{analysis.avgObjectivity}%</p>
             </div>
-            <div className="text-center">
-              <p className="text-[9px] font-semibold uppercase tracking-wider opacity-60">H1 Confident</p>
-              <p className="text-2xl font-bold font-mono">{analysis.h1Count}/{analysis.filledCount}</p>
+            <div>
+              <p className="ex-label">H1 Confident</p>
+              <p className="t-heading text-ink-primary">{analysis.h1Count}/{analysis.filledCount}</p>
             </div>
-            <div className="text-center">
-              <p className="text-[9px] font-semibold uppercase tracking-wider opacity-60">Gap to 625</p>
-              <p className={`text-2xl font-bold font-mono ${analysis.totalPts >= 625 ? "text-[var(--module-success-text)]" : "text-[var(--module-danger-text)]"}`}>
+            <div>
+              <p className="ex-label">Gap to 625</p>
+              <p className="t-heading text-ink-primary">
                 {analysis.totalPts >= 625 ? '0' : `-${625 - analysis.totalPts}`}
               </p>
             </div>
           </div>
 
+          {/* The warning: the bare glyph in ink-3 beside the words (no box) */}
           {analysis.riskSubjects.length > 0 && (
-            <div className="flex items-start gap-2 p-3 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
-              <AlertTriangle size={16} className="shrink-0 mt-0.5 text-[var(--module-ink)]" />
-              <p className="text-xs leading-relaxed opacity-80">
+            <div className="flex items-start gap-2 mt-3">
+              <AlertTriangle size={16} className="shrink-0 mt-0.5 text-ink-muted" />
+              <p className="t-sub text-ink-primary">
                 <strong>Watch out for these:</strong> {analysis.riskSubjects.map(s => s.subject).join(', ')}. These have subjective marking — your grade could depend on which examiner reads your paper. Put extra time into learning exactly what the marking scheme rewards for these subjects.
               </p>
             </div>
           )}
         </MotionDiv>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 

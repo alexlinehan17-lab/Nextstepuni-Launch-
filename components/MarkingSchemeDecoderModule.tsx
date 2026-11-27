@@ -1,4 +1,3 @@
-import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -8,7 +7,6 @@ import { AnimatePresence,motion } from 'framer-motion';
 import { Eye,FileSearch,Key,Layers,PenTool,Shield,Target } from 'lucide-react';
 import React,{ useState } from 'react';
 import { MARKING_SCHEME_DECODER_REFERENCE_LIST } from '../data/references/markingSchemeDecoder';
-import { COLORS } from '../design/tokens';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { redTheme } from '../moduleThemes';
 import { type ModuleProgress } from '../types';
@@ -16,6 +14,9 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { ConceptCardGrid,GlossaryGrid,Highlight,MicroCommitment,PersonalStory,ReadingSection,ToolJumpCard } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerGroup,AnswerLine,AnswerTick,ExerciseLabel,ExerciseSheet } from './learning/Exercise';
+import { Button } from './ui/Button';
+import { ChoiceTile,SelectionBar } from './ui/Choice';
 
 const theme = redTheme;
 
@@ -31,10 +32,11 @@ const classifierItems = [
   { text: '"Correct to 2 decimal places — 1 mark"', correct: 'answer' as const, explanation: 'This is strictly for the precise final answer in the right format.' },
 ];
 
+// Each mark type's name (no colour per type: the name says which it is).
 const markTypeColors = {
-  attempt: { bg: "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", text: "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]", dot: "bg-[var(--module-success)]", label: 'Attempt' },
-  method: { bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", text: "text-[var(--module-ink)] dark:text-[var(--module-ink)]", dot: "bg-[var(--module-surface)]", label: 'Method' },
-  answer: { bg: "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", text: "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]", dot: "bg-[var(--module-danger)]", label: 'Answer' },
+  attempt: { label: 'Attempt' },
+  method: { label: 'Method' },
+  answer: { label: 'Answer' },
 };
 
 const MarkTypeClassifier = () => {
@@ -77,120 +79,107 @@ const MarkTypeClassifier = () => {
 
   if (phase === 'ready') {
     return (
-      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Mark Type Classifier</h4>
-        <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-2 max-w-md mx-auto">Read each marking scheme extract and classify it as one of three mark types:</p>
-        <div className="flex justify-center gap-3 mb-6">
+      <ExerciseSheet title="Mark Type Classifier" sub="Read each marking scheme extract and classify it as one of three mark types:" name="MarkTypeClassifier">
+        {/* The three types, named as plain words (no tinted tags) */}
+        <p className="flex flex-wrap gap-x-6 gap-y-1 t-row text-ink-primary">
           {(['attempt', 'method', 'answer'] as const).map(c => (
-            <span key={c} className={`px-3 py-1 rounded-full text-xs font-bold ${markTypeColors[c].bg} ${markTypeColors[c].text} border ${markTypeColors[c].border}`}>{markTypeColors[c].label}</span>
+            <span key={c}>{markTypeColors[c].label}</span>
           ))}
+        </p>
+        <div className="ex-actions">
+          <Button onClick={startDrill}>Start Classifying</Button>
         </div>
-        <button onClick={startDrill} className="px-6 py-3 bg-[var(--module-danger)] hover:bg-[var(--module-danger)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">Start Classifying</button>
-      </div>
+      </ExerciseSheet>
     );
   }
 
   if (phase === 'done') {
     return (
-      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Classification Results</h4>
-        <div className="flex justify-center my-5">
-          <div className="text-center px-5 py-3 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
-            <div className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{score}/{classifierItems.length}</div>
-            <div className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">Correct</div>
-          </div>
+      <ExerciseSheet title="Classification Results" name="MarkTypeClassifier">
+        {/* The score: the number in ink with its word under it (no box) */}
+        <div className="flex flex-col">
+          <p className="t-number text-ink-primary">{score}/{classifierItems.length}</p>
+          <p className="ex-label">Correct</p>
         </div>
-        <div className="space-y-2.5 mb-6">
+        {/* Each extract ruled like a row: its type, how you did (the green tick when right), the extract, why */}
+        <div className="ex-list">
           {classifierItems.map((q, i) => {
             const got = choices[i];
             const correct = got === q.correct;
             const c = markTypeColors[q.correct];
             return (
-              <div key={i} className={`p-3 rounded-lg border ${correct ? `${c.bg} ${c.border}` : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]"}`}>
-                <div className="flex items-start gap-2.5">
-                  <span className={`mt-1 w-2 h-2 rounded-full flex-shrink-0 ${c.dot}`} />
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className="text-xs font-bold text-[var(--module-muted)]">{c.label} marks</span>
-                      {correct ? (
-                        <span className="text-xs font-bold text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Correct</span>
-                      ) : (
-                        <span className="text-xs font-bold text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">You said {got ? markTypeColors[got as keyof typeof markTypeColors].label : 'nothing'} — should be {c.label}</span>
-                      )}
-                    </div>
-                    <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] mt-0.5 font-mono">{q.text}</p>
-                    <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1 italic">{q.explanation}</p>
-                  </div>
+              <div key={i}>
+                <div className="flex items-center gap-x-3 gap-y-1 flex-wrap">
+                  <span className="ex-label">{c.label} marks</span>
+                  {correct ? (
+                    <span className="flex items-center gap-1 t-meta text-ink-primary"><AnswerTick />Correct</span>
+                  ) : (
+                    <span className="t-meta text-ink-secondary">You said {got ? markTypeColors[got as keyof typeof markTypeColors].label : 'nothing'} — should be {c.label}</span>
+                  )}
                 </div>
+                <p className="t-body text-ink-primary">{q.text}</p>
+                <p className="t-sub">{q.explanation}</p>
               </div>
             );
           })}
         </div>
         {score < classifierItems.length && (
-          <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] text-center mb-4 italic">Understanding mark types helps you know what to write even when you are unsure of the answer.</p>
+          <AnswerLine tone="note">Understanding mark types helps you know what to write even when you are unsure of the answer.</AnswerLine>
         )}
-        <div className="text-center">
-          <button onClick={startDrill} className="px-5 py-2.5 bg-[var(--module-danger)] hover:bg-[var(--module-danger)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">Try Again</button>
+        <div className="ex-actions">
+          <Button onClick={startDrill}>Try Again</Button>
         </div>
-      </div>
+      </ExerciseSheet>
     );
   }
 
   const q = classifierItems[qIndex];
   const isCorrect = showFeedback && choices[qIndex] === q.correct;
-  const isWrong = showFeedback && choices[qIndex] !== q.correct;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <div className="flex items-center justify-between mb-4">
-        <h4 className="font-serif text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Mark Type Classifier</h4>
-        <span className="text-xs font-bold text-[var(--module-muted)]">{qIndex + 1} / {classifierItems.length}</span>
-      </div>
-      {/* Question card */}
+    <ExerciseSheet title="Mark Type Classifier" name="MarkTypeClassifier">
+      <p className="ex-count ui-readout">{qIndex + 1} / {classifierItems.length}</p>
+      {/* The extract, on the sheet (no tinted card); the feedback is a line in ink, the tick when right */}
       <AnimatePresence mode="wait">
         <motion.div key={qIndex} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }}
-          className={`p-5 rounded-xl border min-h-[100px] flex flex-col justify-center mb-5 transition-colors ${
-            isCorrect ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
-            isWrong ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
-            "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]"
-          }`}>
-          <p className="font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] text-sm font-mono">{q.text}</p>
+          className="ex-stack min-h-[100px] justify-center">
+          <p className="ex-quote">{q.text}</p>
           {showFeedback && (
-            <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} className={`text-xs mt-3 italic ${isCorrect ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}`}>
-              {isCorrect ? 'Correct! ' : `Not quite — this is "${markTypeColors[q.correct].label}" marks. `}{q.explanation}
-            </motion.p>
+            <motion.div initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }}>
+              <AnswerLine tone={isCorrect ? 'ok' : 'note'}>
+                {isCorrect ? 'Correct! ' : `Not quite — this is "${markTypeColors[q.correct].label}" marks. `}{q.explanation}
+              </AnswerLine>
+            </motion.div>
           )}
         </motion.div>
       </AnimatePresence>
-      {/* Choice buttons */}
-      <div className="grid grid-cols-3 gap-3">
+      {/* Choice buttons: one answer locks in while its feedback shows (disabled, as before); the chosen one and the
+          right one stay at full strength */}
+      <AnswerGroup kind="one" chooseOnArrow={false}>
         {(['attempt', 'method', 'answer'] as const).map(c => {
           const cm = markTypeColors[c];
           const selected = showFeedback && choices[qIndex] === c;
           const isAnswer = showFeedback && q.correct === c;
           return (
-            <button key={c} onClick={() => handleChoice(c)} disabled={showFeedback}
-              className={`p-3 rounded-xl font-bold text-sm border transition-all ${
-                isAnswer ? `${cm.bg} ${cm.text} ${cm.border} ring-2 ring-offset-1 ring-emerald-500` :
-                selected && !isAnswer ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
-                `${cm.bg} ${cm.text} ${cm.border} hover:opacity-80`
-              } ${showFeedback ? 'cursor-default' : 'cursor-pointer'}`} data-wide-button="true" data-selected={!!(selected && !isAnswer)} data-tone="coral" aria-pressed={!!(selected && !isAnswer)}>
-              <div className={`w-3 h-3 rounded-full ${cm.dot} mx-auto mb-1.5`} />
-              {cm.label}
-            </button>
+            <ChoiceTile key={c} onClick={() => handleChoice(c)} disabled={showFeedback}
+              chosen={selected}
+              style={selected || isAnswer ? { opacity: 1 } : undefined}
+              label={cm.label}
+            />
           );
         })}
-      </div>
-      {/* Progress dots */}
-      <div className="flex justify-center gap-1.5 mt-5">
+      </AnswerGroup>
+      {/* Progress: a row of step marks (done and right in the tick's green, done and wrong in ink-3, the current one
+          ringed in ink, the rest a hairline ring) */}
+      <ol className="ex-steps justify-center">
         {classifierItems.map((_, i) => (
-          <div key={i} className={`w-2 h-2 rounded-full transition-colors ${
-            i < qIndex ? (choices[i] === classifierItems[i].correct ? "bg-[var(--module-success)]" : "bg-[var(--module-danger)]") :
-            i === qIndex ? "bg-[var(--module-danger)]" : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"
-          }`} />
+          <li key={i} className="w-2 h-2 rounded-full box-border" style={
+            i < qIndex ? { background: choices[i] === classifierItems[i].correct ? 'var(--success-hex)' : 'var(--ink-muted)' } :
+            i === qIndex ? { border: '1.5px solid var(--ink-primary)' } : { border: '1px solid var(--outline-soft)' }
+          } />
         ))}
-      </div>
-    </div>
+      </ol>
+    </ExerciseSheet>
   );
 };
 
@@ -230,6 +219,9 @@ const schemeExtracts = [
   },
 ];
 
+/** The decoder's title, also the name of its extract bar for screen readers. */
+const SCHEME_DECODER_TITLE = 'Scheme Decoder';
+
 const SchemeDecoder = () => {
   const [activeExtract, setActiveExtract] = useState(0);
   const [activeAnnotation, setActiveAnnotation] = useState<number | null>(null);
@@ -238,37 +230,20 @@ const SchemeDecoder = () => {
   const _decodedCount = activeAnnotation !== null ? 1 : 0;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <div className="text-center mb-6">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
-        <h4 className="font-serif font-bold" style={{ fontSize: 22, color: "var(--module-ink)" }}>Scheme Decoder</h4>
-        <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Click the highlighted terms to decode what they really mean.</p>
-      </div>
+    <ExerciseSheet label="Exam Skills Tool" title={SCHEME_DECODER_TITLE} sub="Click the highlighted terms to decode what they really mean." name="SchemeDecoder">
+      {/* Extract tabs: the system's selection bar, named by the sheet's own title */}
+      <SelectionBar
+        label={SCHEME_DECODER_TITLE}
+        value={String(activeExtract)}
+        onChange={(v) => { const i = Number(v); setActiveExtract(i); setActiveAnnotation(null); }}
+        options={schemeExtracts.map((_, i) => ({ value: String(i), label: <>Extract {i + 1}</> }))}
+      />
 
-      {/* Extract tabs */}
-      <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
-        {schemeExtracts.map((_, i) => (
-          <button key={i} onClick={() => { setActiveExtract(i); setActiveAnnotation(null); }}
-            style={{
-              backgroundColor: moduleFill(activeExtract === i ? COLORS.accent : "var(--module-surface)"),
-              border: activeExtract === i ? `2px solid ${COLORS.accent}` : "2px solid var(--module-line)",
-              borderRadius: 20,
-              padding: '8px 18px',
-              fontSize: 13,
-              fontWeight: 600,
-              color: moduleText(activeExtract === i ? "var(--module-on-fill)" : "var(--module-muted)"),
-              whiteSpace: 'nowrap' as const,
-              cursor: 'pointer',
-            }} data-wide-button="true" data-selected={!!(activeExtract === i)} data-tone="orange" aria-pressed={!!(activeExtract === i)}>
-            Extract {i + 1}
-          </button>
-        ))}
-      </div>
-
-      {/* Extract card */}
-      <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] mb-4" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '20px 24px' }}>
-        <span className="inline-block mb-3" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: "var(--module-surface)", color: "var(--module-muted)", border: "1px solid var(--module-line)", borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Exam Question Extract</span>
-        <p style={{ fontSize: 15, color: "var(--module-ink)", lineHeight: 1.7 }}>
+      {/* The extract: words you read, under their label (no box); its terms are words you press, underlined in ink,
+          with an ink outline once pressed */}
+      <div className="ex-thought">
+        <ExerciseLabel>Exam Question Extract</ExerciseLabel>
+        <p className="ex-quote">
           {(() => {
             const sortedAnnotations = [...extract.annotations].sort((a, b) => a.start - b.start);
             const parts: React.ReactNode[] = [];
@@ -279,17 +254,24 @@ const SchemeDecoder = () => {
               }
               const isClicked = activeAnnotation === i;
               parts.push(
-                <button key={`a-${i}`} onClick={() => setActiveAnnotation(activeAnnotation === i ? null : i)}
+                <button key={`a-${i}`} type="button" onClick={() => setActiveAnnotation(activeAnnotation === i ? null : i)}
                   style={{
-                    backgroundColor: moduleFill(isClicked ? COLORS.accent : COLORS.accentTint),
-                    color: moduleText(isClicked ? "var(--module-on-fill)" : COLORS.accentDarkText),
-                    fontWeight: 700,
+                    minHeight: 0,
+                    margin: 0,
+                    padding: '0 4px',
+                    border: `1px solid ${isClicked ? 'var(--ink-primary)' : 'transparent'}`,
                     borderRadius: 4,
-                    padding: '1px 6px',
+                    background: 'none',
+                    color: 'var(--ink-primary)',
+                    font: 'inherit',
+                    fontWeight: 700,
+                    lineHeight: 'inherit',
+                    verticalAlign: 'baseline',
+                    textDecoration: isClicked ? 'none' : 'underline',
+                    textDecorationThickness: 2,
+                    textUnderlineOffset: 4,
                     cursor: 'pointer',
-                    borderBottom: isClicked ? 'none' : `2px solid ${COLORS.accent}`,
-                    transition: 'all 0.2s',
-                  }} data-wide-button="true" data-selected={!!(isClicked)} data-tone="orange" aria-pressed={!!(isClicked)}>
+                  }} aria-pressed={!!(isClicked)}>
                   {ann.term}
                 </button>
               );
@@ -303,17 +285,17 @@ const SchemeDecoder = () => {
         </p>
       </div>
 
-      {/* Decode panel */}
+      {/* Decode panel: the term and what it means, under a hairline (no tinted callout, no side stripe) */}
       <AnimatePresence mode="wait">
         {activeAnnotation !== null && (
           <motion.div key={activeAnnotation} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 8 }}
-            style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: moduleFill(COLORS.accentTint), borderRadius: '0 10px 10px 0', padding: '12px 16px', marginTop: 12 }}>
-            <p className="font-serif font-semibold" style={{ fontSize: 15, color: moduleText(COLORS.accentDarkText), marginBottom: 4 }}>{extract.annotations[activeAnnotation].term}</p>
-            <p className="italic" style={{ fontSize: 14, color: "var(--module-ink)" }}>{extract.annotations[activeAnnotation].explanation}</p>
+            className="ex-block">
+            <p className="ex-block-title">{extract.annotations[activeAnnotation].term}</p>
+            <p className="ex-block-text">{extract.annotations[activeAnnotation].explanation}</p>
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </ExerciseSheet>
   );
 };
 
@@ -345,6 +327,9 @@ const upgradeExamples = [
   },
 ];
 
+/** The upgrader's title, also the name of its subject bar for screen readers. */
+const ANSWER_UPGRADER_TITLE = 'Answer Upgrader';
+
 const AnswerUpgrader = () => {
   const [activeExample, setActiveExample] = useState(0);
   const [showAfter, setShowAfter] = useState(false);
@@ -365,7 +350,7 @@ const AnswerUpgrader = () => {
           parts.push(<span key={`t-${keyIndex}`}>{remaining.slice(0, idx)}</span>);
         }
         parts.push(
-          <span key={`k-${keyIndex}`} className="px-1 py-0.5 rounded bg-[var(--module-surface)] dark:bg-[var(--module-danger)] text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] font-bold">
+          <span key={`k-${keyIndex}`} className="font-bold text-ink-primary underline decoration-2 underline-offset-4">
             {remaining.slice(idx, idx + keyword.length)}
           </span>
         );
@@ -380,57 +365,51 @@ const AnswerUpgrader = () => {
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Answer Upgrader</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1 mb-6">See how adding the right keywords transforms marks.</p>
+    <ExerciseSheet title={ANSWER_UPGRADER_TITLE} sub="See how adding the right keywords transforms marks." name="AnswerUpgrader">
+      {/* Subject tabs: the system's selection bar, named by the sheet's own title */}
+      <SelectionBar
+        label={ANSWER_UPGRADER_TITLE}
+        value={String(activeExample)}
+        onChange={(v) => { const i = Number(v); setActiveExample(i); setShowAfter(false); setShowKeywords(false); }}
+        options={upgradeExamples.map((e, i) => ({ value: String(i), label: e.subject }))}
+      />
 
-      {/* Subject tabs */}
-      <div className="flex gap-2 mb-6 justify-center">
-        {upgradeExamples.map((e, i) => (
-          <button key={i} onClick={() => { setActiveExample(i); setShowAfter(false); setShowKeywords(false); }}
-            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${
-              activeExample === i ? "bg-[var(--module-danger)] text-[var(--module-ink)]" : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)]"
-            }`} data-wide-button="true" data-selected={!!(activeExample === i)} data-tone="coral" aria-pressed={!!(activeExample === i)}>
-            {e.subject}
-          </button>
-        ))}
+      {/* Question: under its subject label, set large (no box) */}
+      <div className="ex-thought">
+        <ExerciseLabel>{ex.subject}</ExerciseLabel>
+        <p className="ex-thought-words">{ex.question}</p>
       </div>
 
-      {/* Question */}
-      <div className="text-center mb-4">
-        <span className="text-xs font-bold uppercase tracking-wider text-[var(--module-muted)]">{ex.subject}</span>
-        <p className="font-serif text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mt-1">{ex.question}</p>
-      </div>
-
-      {/* Before / After cards */}
-      <div className="grid md:grid-cols-2 gap-4 mb-5">
+      {/* Before / After: words you read, each under a hairline and its label, with its marks bar (ink on a hairline track) */}
+      <div className="grid md:grid-cols-2 gap-4">
         {/* Before */}
-        <div className="p-5 rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
-          <div className="flex items-center justify-between mb-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[var(--module-muted)]">Before</span>
-            <span className="text-xs font-bold text-[var(--module-danger-text)]">{ex.before.marks}/{ex.maxMarks} marks</span>
+        <div className="ex-block">
+          <div className="flex items-center justify-between gap-3">
+            <span className="ex-label">Before</span>
+            <span className="ui-readout text-ink-primary">{ex.before.marks}/{ex.maxMarks} marks</span>
           </div>
-          <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] leading-relaxed italic">{ex.before.text}</p>
+          <p className="t-sub">{ex.before.text}</p>
           {/* Mark bar */}
-          <div className="mt-3 w-full h-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full overflow-hidden">
-            <div className="h-full bg-[var(--module-danger)] rounded-full transition-all duration-700" style={{ width: `${(ex.before.marks / ex.maxMarks) * 100}%` }} />
+          <div className="mt-1 w-full h-2 rounded-full overflow-hidden" style={{ background: 'var(--hairline)' }}>
+            <div className="h-full rounded-full transition-all duration-700" style={{ width: `${(ex.before.marks / ex.maxMarks) * 100}%`, background: 'var(--ink-muted)' }} />
           </div>
         </div>
 
         {/* After */}
-        <div className={`p-5 rounded-xl border transition-all duration-300 ${showAfter ? "border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-success)]" : "border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"}`}>
-          <div className="flex items-center justify-between mb-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[var(--module-muted)]">After</span>
-            {showAfter && <span className="text-xs font-bold text-[var(--module-success-text)]">{ex.after.marks}/{ex.maxMarks} marks</span>}
+        <div className="ex-block">
+          <div className="flex items-center justify-between gap-3">
+            <span className="ex-label">After</span>
+            {showAfter && <span className="ui-readout text-ink-primary">{ex.after.marks}/{ex.maxMarks} marks</span>}
           </div>
           {showAfter ? (
             <>
-              <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] leading-relaxed">
+              <p className="t-sub text-ink-primary">
                 {showKeywords ? highlightKeywords(ex.after.text, ex.keywords) : ex.after.text}
               </p>
-              <div className="mt-3 w-full h-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full overflow-hidden">
+              <div className="mt-1 w-full h-2 rounded-full overflow-hidden" style={{ background: 'var(--hairline)' }}>
                 <motion.div
-                  className="h-full bg-[var(--module-success)] rounded-full"
+                  className="h-full rounded-full"
+                  style={{ background: 'var(--ink-primary)' }}
                   initial={{ width: `${(ex.before.marks / ex.maxMarks) * 100}%` }}
                   animate={{ width: `${(ex.after.marks / ex.maxMarks) * 100}%` }}
                   transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -438,39 +417,33 @@ const AnswerUpgrader = () => {
               </div>
             </>
           ) : (
-            <div className="flex items-center justify-center h-16">
-              <button onClick={() => setShowAfter(true)}
-                className="px-5 py-2 bg-[var(--module-danger)] hover:bg-[var(--module-danger)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">
+            <div className="ex-actions justify-start">
+              <Button onClick={() => setShowAfter(true)}>
                 Show Upgraded Answer
-              </button>
+              </Button>
             </div>
           )}
         </div>
       </div>
 
-      {/* Show Keywords toggle */}
+      {/* Show Keywords toggle: a button that stays pressed while the keywords show; the keywords as plain words, ruled
+          like rows (no pills) */}
       {showAfter && (
-        <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
-          <div className="flex justify-center mb-4">
-            <button onClick={() => setShowKeywords(!showKeywords)}
-              className={`px-4 py-2 rounded-lg text-sm font-bold transition-colors ${
-                showKeywords ? "bg-[var(--module-danger)] text-[var(--module-ink)]" : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)]"
-              }`} data-wide-button="true" data-selected={!!(showKeywords)} data-tone="coral" aria-pressed={!!(showKeywords)}>
-              {showKeywords ? 'Hide Keywords' : 'Show Keywords'}
-            </button>
-          </div>
+        <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="ex-stack">
+          <ChoiceTile kind="toggle" chosen={showKeywords} onClick={() => setShowKeywords(!showKeywords)}
+            label={showKeywords ? 'Hide Keywords' : 'Show Keywords'} />
           {showKeywords && (
-            <div className="flex flex-wrap gap-2 justify-center">
+            <ul className="ex-list">
               {ex.keywords.map((kw, i) => (
-                <span key={i} className="px-2.5 py-1 rounded-full text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-danger)] text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                <li key={i} className="t-sub text-ink-primary">
                   {kw}
-                </span>
+                </li>
               ))}
-            </div>
+            </ul>
           )}
         </MotionDiv>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 
@@ -616,40 +589,41 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
               </>) : (<>
               <p>You now have the tools to read any marking scheme like an insider. Here is how to put it all into practice.</p>
               </>)}
-              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>1</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Download marking schemes</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>Go to examinations.ie and download the marking scheme for every subject you are sitting. Start with last year's papers.</p>
+              {/* The four steps as numbered lines on the page (no boxes, no coloured number squares) */}
+              <ol className="ex-nums">
+                <li>
+                  <span className="ex-num">1</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Download marking schemes</p>
+                    <p className="ex-num-sub">Go to examinations.ie and download the marking scheme for every subject you are sitting. Start with last year's papers.</p>
                   </div>
-                </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>2</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Read them alongside the exam paper</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>For each question, look at how marks are broken down. Notice the attempt marks, the method marks, and the answer marks. Notice where it says "or equivalent" and "any 3 points."</p>
+                </li>
+                <li>
+                  <span className="ex-num">2</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Read them alongside the exam paper</p>
+                    <p className="ex-num-sub">For each question, look at how marks are broken down. Notice the attempt marks, the method marks, and the answer marks. Notice where it says "or equivalent" and "any 3 points."</p>
                   </div>
-                </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>3</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Identify your mark-leaking questions</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>For each subject, find the question types where you are losing marks to technique, not knowledge. Maybe you are writing too much on short questions. Maybe you are skipping questions you could have attempted. Maybe you are not using keywords.</p>
+                </li>
+                <li>
+                  <span className="ex-num">3</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Identify your mark-leaking questions</p>
+                    <p className="ex-num-sub">For each subject, find the question types where you are losing marks to technique, not knowledge. Maybe you are writing too much on short questions. Maybe you are skipping questions you could have attempted. Maybe you are not using keywords.</p>
                   </div>
-                </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-success)" }}>4</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}>Practice with the scheme open</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-success-text)", opacity: 0.8 }}>Do past paper questions and then mark your own answers using the marking scheme. This is the fastest way to understand what examiners want.</p>
+                </li>
+                <li>
+                  <span className="ex-num">4</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Practice with the scheme open</p>
+                    <p className="ex-num-sub">Do past paper questions and then mark your own answers using the marking scheme. This is the fastest way to understand what examiners want.</p>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ol>
               <MicroCommitment theme={theme}>
                 <p>Pick your 3 most important subjects. Open each one in <strong>Paper Trail</strong> (in the Launchpad) — the real paper and its marking scheme, side by side. For each subject, find one question type where you are losing marks to technique, not knowledge. Write down what you will do differently.</p>
               </MicroCommitment>
-              <p className="mt-8 text-center font-serif text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">You now know something most students never learn: the examiner is on your side. The marking scheme is their way of telling you exactly what they want. Give it to them.</p>
+              <p className="mt-8 t-row text-ink-primary">You now know something most students never learn: the examiner is on your side. The marking scheme is their way of telling you exactly what they want. Give it to them.</p>
               <ToolJumpCard
                 toolId="paper-trail"
                 title="Open the real paper and scheme"

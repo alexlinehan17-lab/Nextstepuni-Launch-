@@ -1,4 +1,3 @@
-import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -6,9 +5,8 @@ import { moduleFill,moduleText } from './learning/brandTokens';
 
 import { AnimatePresence,motion } from 'framer-motion';
 import { BarChart2,ClipboardList,Cpu,HardHat,HeartPulse,ListFilter,PlayCircle } from 'lucide-react';
-import React,{ useEffect,useRef,useState } from 'react';
+import React,{ useEffect,useId,useRef,useState } from 'react';
 import { EXAM_HALL_STRATEGIES_REFERENCE_LIST } from '../data/references/examHallStrategies';
-import { COLORS } from '../design/tokens';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { amberTheme } from '../moduleThemes';
 import { type ModuleProgress } from '../types';
@@ -16,6 +14,10 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerGroup,AnswerLine,AnswerTick,ExerciseLabel,ExerciseSheet } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
+import { AreaField,Field } from './ui/Field';
 
 const theme = amberTheme;
 
@@ -49,7 +51,8 @@ export const TriageSimulator = () => {
         };
     }, []);
 
-    const colorMap = { green: { bg: "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", text: "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]", label: 'Do First', dot: "bg-[var(--module-success)]" }, amber: { bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", text: "text-[var(--module-ink)] dark:text-[var(--module-ink)]", label: 'Do Second', dot: "bg-[var(--module-orange)]" }, red: { bg: "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", text: "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]", label: 'Do Last', dot: "bg-[var(--module-danger)]" } };
+    // The traffic light's own dots (the same three the triage markers are drawn in); the words say the rest.
+    const colorMap = { green: { label: 'Do First', dot: "bg-[var(--module-success)]" }, amber: { label: 'Do Second', dot: "bg-[var(--module-orange)]" }, red: { label: 'Do Last', dot: "bg-[var(--module-danger)]" } };
 
     React.useEffect(() => {
         if (phase !== 'drill' || showFeedback) return;
@@ -91,58 +94,62 @@ export const TriageSimulator = () => {
 
     if (phase === 'ready') {
         return (
-            <div className="my-10 rounded-2xl p-8 md:p-12 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Triage Drill</h4>
-                <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-2 max-w-md mx-auto">Reading time has started. You have <strong className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">40 seconds</strong> to categorise 8 exam questions as:</p>
-                <div className="flex justify-center gap-3 mb-6">
+            <ExerciseSheet title="Triage Drill" sub={<>Reading time has started. You have <strong className="text-ink-primary">40 seconds</strong> to categorise 8 exam questions as:</>} name="TriageSimulator">
+                {/* The three categories: plain words, each after its traffic-light dot (no pills) */}
+                <div className="flex flex-wrap gap-x-6 gap-y-2">
                     {(['green', 'amber', 'red'] as const).map(c => (
-                        <span key={c} className={`px-3 py-1 rounded-full text-xs font-bold ${colorMap[c].bg} ${colorMap[c].text} border ${colorMap[c].border}`}>{colorMap[c].label}</span>
+                        <span key={c} className="inline-flex items-center gap-2 t-row text-ink-primary"><span aria-hidden="true" className={`w-2 h-2 rounded-full flex-shrink-0 ${colorMap[c].dot}`} />{colorMap[c].label}</span>
                     ))}
                 </div>
-                <button onClick={startDrill} className="px-6 py-3 bg-[var(--module-surface)] hover:bg-[var(--module-surface)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">Start Triage</button>
-            </div>
+                <div className="ex-actions">
+                    <Button onClick={startDrill}>Start Triage</Button>
+                </div>
+            </ExerciseSheet>
         );
     }
 
     if (phase === 'done') {
         return (
-            <div className="my-10 rounded-2xl p-6 md:p-10" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Triage Results</h4>
-                <div className="flex justify-center gap-4 my-5">
-                    <div className="text-center px-5 py-3 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
-                        <div className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{score}/{triageQuestions.length}</div>
-                        <div className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">Correct</div>
-                    </div>
-                    <div className="text-center px-5 py-3 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
-                        <div className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{Math.round(totalTime)}s</div>
-                        <div className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">Total Time</div>
-                    </div>
-                    <div className="text-center px-5 py-3 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
-                        <div className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{answerTimes.length > 0 ? (answerTimes.reduce((a,b) => a+b, 0) / answerTimes.length).toFixed(1) : '—'}s</div>
-                        <div className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">Avg / Question</div>
+            <ExerciseSheet title="Triage Results" name="TriageSimulator">
+                {/* The three numbers, on the sheet under a hairline (no boxes) */}
+                <div className="ex-result">
+                    <div className="grid grid-cols-3 gap-4">
+                        <div>
+                            <p className="ex-result-name">{score}/{triageQuestions.length}</p>
+                            <p className="t-meta">Correct</p>
+                        </div>
+                        <div>
+                            <p className="ex-result-name">{Math.round(totalTime)}s</p>
+                            <p className="t-meta">Total Time</p>
+                        </div>
+                        <div>
+                            <p className="ex-result-name">{answerTimes.length > 0 ? (answerTimes.reduce((a,b) => a+b, 0) / answerTimes.length).toFixed(1) : '—'}s</p>
+                            <p className="t-meta">Avg / Question</p>
+                        </div>
                     </div>
                 </div>
-                <div className="space-y-2.5 mb-6">
+                {/* Each question, ruled like rows: its dot is the category it should have been */}
+                <div className="ex-list">
                     {triageQuestions.map((q, i) => {
                         const got = choices[i];
                         const correct = got === q.correct;
                         const c = colorMap[q.correct];
                         return (
-                            <div key={i} className={`p-3 rounded-lg border ${correct ? `${c.bg} ${c.border}` : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]"}`}>
-                                <div className="flex items-start gap-2.5">
-                                    <span className={`mt-1 w-2 h-2 rounded-full flex-shrink-0 ${c.dot}`} />
+                            <div key={i}>
+                                <div className="flex items-start gap-3">
+                                    <span aria-hidden="true" className={`mt-2 w-2 h-2 rounded-full flex-shrink-0 ${c.dot}`} />
                                     <div className="flex-1 min-w-0">
-                                        <div className="flex items-center gap-2 flex-wrap">
-                                            <span className="text-xs font-bold text-[var(--module-muted)]">{q.subject} · {q.marks}m</span>
+                                        <div className="flex items-center gap-x-3 gap-y-1 flex-wrap t-meta">
+                                            <span>{q.subject} · {q.marks}m</span>
                                             {correct ? (
-                                                <span className="text-xs font-bold text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Correct</span>
+                                                <span className="inline-flex items-center gap-1 text-ink-primary"><AnswerTick />Correct</span>
                                             ) : (
-                                                <span className="text-xs font-bold text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">You said {got ? colorMap[got as keyof typeof colorMap].label : 'nothing'} — should be {c.label}</span>
+                                                <span className="text-ink-primary">You said {got ? colorMap[got as keyof typeof colorMap].label : 'nothing'} — should be {c.label}</span>
                                             )}
-                                            {answerTimes[i] !== undefined && <span className="text-xs text-[var(--module-muted)]">{answerTimes[i].toFixed(1)}s</span>}
+                                            {answerTimes[i] !== undefined && <span className="ui-readout">{answerTimes[i].toFixed(1)}s</span>}
                                         </div>
-                                        <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] mt-0.5">{q.text}</p>
-                                        {!correct && <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1 italic">{q.reason}</p>}
+                                        <p className="t-row text-ink-primary mt-1">{q.text}</p>
+                                        {!correct && <p className="t-sub mt-1">{q.reason}</p>}
                                     </div>
                                 </div>
                             </div>
@@ -150,12 +157,12 @@ export const TriageSimulator = () => {
                     })}
                 </div>
                 {score < triageQuestions.length && (
-                    <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] text-center mb-4 italic">The goal is speed <strong>and</strong> accuracy. In the real exam, a wrong triage means wasting time on hard questions while easy marks go uncollected.</p>
+                    <AnswerLine tone="note">The goal is speed <strong>and</strong> accuracy. In the real exam, a wrong triage means wasting time on hard questions while easy marks go uncollected.</AnswerLine>
                 )}
-                <div className="text-center">
-                    <button onClick={startDrill} className="px-5 py-2.5 bg-[var(--module-surface)] hover:bg-[var(--module-surface)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">Run Drill Again</button>
+                <div className="ex-actions">
+                    <Button onClick={startDrill}>Run Drill Again</Button>
                 </div>
-            </div>
+            </ExerciseSheet>
         );
     }
 
@@ -164,66 +171,60 @@ export const TriageSimulator = () => {
     const isWrong = showFeedback && choices[qIndex] !== q.correct;
     const timerPct = (timeLeft / 40) * 100;
 
-    return <div className="wr-skin" data-wide="TriageSimulator"><div className="my-10 rounded-2xl p-6 md:p-10" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <div className="flex items-center justify-between mb-4">
-                <h4 className="font-serif text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Triage Drill</h4>
-                <div className="flex items-center gap-3">
-                    <span className="text-xs font-bold text-[var(--module-muted)]">{qIndex + 1} / {triageQuestions.length}</span>
-                    <span className={`text-sm font-bold tabular-nums ${timeLeft <= 10 ? "text-[var(--module-danger-text)]" : "text-[var(--module-ink)] dark:text-[var(--module-muted)]"}`}>{timeLeft}s</span>
-                </div>
+    return <ExerciseSheet title="Triage Drill" name="TriageSimulator">
+            {/* Where you are and the clock, in the readout */}
+            <div className="flex items-center justify-between gap-3">
+                <span className="ex-count ui-readout">{qIndex + 1} / {triageQuestions.length}</span>
+                <span className="ui-readout" style={{ color: timeLeft <= 10 ? "var(--ink-primary)" : "var(--ink-secondary)" }}>{timeLeft}s</span>
             </div>
-            {/* Timer bar */}
-            <div className="w-full h-1.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full mb-5">
-                <motion.div className={`h-full rounded-full ${timeLeft <= 10 ? "bg-[var(--module-danger)]" : "bg-[var(--module-surface)]"}`} animate={{ width: `${timerPct}%` }} transition={{ duration: 0.3 }} />
+            {/* Timer bar: a hairline track with an ink fill */}
+            <div className="w-full h-1 rounded-sm overflow-hidden" style={{ backgroundColor: "var(--hairline)" }}>
+                <motion.div className="h-full" style={{ backgroundColor: timeLeft <= 10 ? "var(--ink-primary)" : "var(--ink-secondary)" }} animate={{ width: `${timerPct}%` }} transition={{ duration: 0.3 }} />
             </div>
-            {/* Question card */}
+            {/* The question: words you read, on the sheet under a hairline (no tinted card) */}
             <AnimatePresence mode="wait">
                 <motion.div key={qIndex} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }}
-                    className={`p-5 rounded-xl border min-h-[100px] flex flex-col justify-center mb-5 transition-colors ${
-                        isCorrect ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
-                        isWrong ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
-                        "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]"
-                    }`}>
-                    <div className="flex items-center gap-2 mb-2">
-                        <span className="text-xs font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{q.subject}</span>
-                        <span className="text-xs text-[var(--module-muted)]">·</span>
-                        <span className="text-xs font-semibold text-[var(--module-muted)]">{q.marks} marks</span>
+                    className="ex-block min-h-[100px]">
+                    <div className="flex items-center gap-2 t-meta">
+                        <span className="text-ink-primary">{q.subject}</span>
+                        <span>·</span>
+                        <span>{q.marks} marks</span>
                     </div>
-                    <p className="font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] text-sm">{q.text}</p>
+                    <p className="ex-block-title">{q.text}</p>
                     {showFeedback && (
-                        <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} className={`text-xs mt-3 italic ${isCorrect ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}`}>
-                            {isCorrect ? 'Correct! ' : `Not quite — this is "${colorMap[q.correct].label}". `}{q.reason}
-                        </motion.p>
+                        <motion.div initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }}>
+                            <AnswerLine tone={isWrong ? 'note' : 'ok'}>
+                                {isCorrect ? 'Correct! ' : `Not quite — this is "${colorMap[q.correct].label}". `}{q.reason}
+                            </AnswerLine>
+                        </motion.div>
                     )}
                 </motion.div>
             </AnimatePresence>
-            {/* Choice buttons */}
-            <div className="grid grid-cols-3 gap-3">
+            {/* Choice buttons: answers that lock once one is chosen; each keeps its traffic-light marker */}
+            <AnswerGroup kind="one" chooseOnArrow={false}>
                 {(['green', 'amber', 'red'] as const).map(c => {
                     const cm = colorMap[c];
                     const selected = showFeedback && choices[qIndex] === c;
                     const isAnswer = showFeedback && q.correct === c;
                     return (
-                        <button key={c} onClick={() => handleChoice(c)} disabled={showFeedback}
-                            className="p-3 font-bold text-sm transition-all"
-                            style={
-                                isAnswer ? { backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-success-text)" } :
-                                selected && !isAnswer ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-danger-text)" } :
-                                { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', cursor: showFeedback ? 'default' : 'pointer' }
-                            } data-wide-button="true" data-triage-choice={c} data-selected={selected || isAnswer} data-tone={isAnswer ? 'mint' : 'coral'} aria-pressed={selected}>
-                            <span data-triage-choice-marker={c} aria-hidden="true" />
-                            {cm.label}
-                        </button>
+                        <ChoiceTile key={c} onClick={() => handleChoice(c)} disabled={showFeedback}
+                            chosen={selected}
+                            data-triage-choice={c} data-selected={selected || isAnswer}
+                            label={<span className="inline-flex items-center gap-3">
+                                <span data-triage-choice-marker={c} aria-hidden="true" style={{ display: 'inline-block', margin: 0, flexShrink: 0 }} />
+                                {cm.label}
+                            </span>}
+                        />
                     );
                 })}
-            </div>
+            </AnswerGroup>
             {/* Progress dots */}
-            <div className="flex justify-center gap-1.5 mt-5">
+            <div className="flex justify-center gap-1.5">
                 {triageQuestions.map((_, i) => (
                     <span key={i} data-triage-progress={choices[i] !== null ? (choices[i] === triageQuestions[i].correct ? "correct" : "incorrect") : i === qIndex ? "current" : "pending"} role="img" aria-label={`Question ${i + 1}: ${choices[i] !== null ? (choices[i] === triageQuestions[i].correct ? "correct" : "incorrect") : i === qIndex ? "current" : "not answered"}`} />
                 ))}
             </div>
-        </div></div>;
+        </ExerciseSheet>;
 }
 
 const MPMCalculator = () => {
@@ -233,33 +234,23 @@ const MPMCalculator = () => {
     const mpm = (time - buffer) / marks;
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-             <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 22, color: "var(--module-ink)" }}>Minutes-Per-Mark Calculator</h4>
+        <ExerciseSheet label="Exam Skills Tool" title="Minutes-Per-Mark Calculator" name="MPMCalculator">
+             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <Field label="Total Time (mins)" type="number" value={time} onChange={e=>setTime(parseInt(e.target.value))} />
+                <Field label="Total Marks" type="number" value={marks} onChange={e=>setMarks(parseInt(e.target.value))} />
+                <Field label="Buffer (mins)" type="number" value={buffer} onChange={e=>setBuffer(parseInt(e.target.value))} />
              </div>
-             <div className="grid grid-cols-3 gap-4">
-                <div>
-                    <label style={{ fontSize: 14, fontWeight: 600, color: "var(--module-ink)" }}>Total Time (mins)</label>
-                    <input type="number" value={time} onChange={e=>setTime(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: "1.5px solid var(--module-line)", borderRadius: 10, padding: '12px 16px', fontSize: 16, color: "var(--module-ink)" }} onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }} onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-muted)"; }} />
-                </div>
-                <div>
-                    <label style={{ fontSize: 14, fontWeight: 600, color: "var(--module-ink)" }}>Total Marks</label>
-                    <input type="number" value={marks} onChange={e=>setMarks(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: "1.5px solid var(--module-line)", borderRadius: 10, padding: '12px 16px', fontSize: 16, color: "var(--module-ink)" }} onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }} onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-muted)"; }} />
-                </div>
-                <div>
-                    <label style={{ fontSize: 14, fontWeight: 600, color: "var(--module-ink)" }}>Buffer (mins)</label>
-                    <input type="number" value={buffer} onChange={e=>setBuffer(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: "1.5px solid var(--module-line)", borderRadius: 10, padding: '12px 16px', fontSize: 16, color: "var(--module-ink)" }} onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }} onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-muted)"; }} />
-                </div>
+             {/* What the numbers come to, said in words under a hairline (no orange panel) */}
+             <div className="ex-result">
+                <p className="t-body text-ink-primary">
+                    <span>Your MPM is </span>
+                    <span className="ui-readout" style={{ fontSize: 21, lineHeight: '26px', color: "var(--ink-primary)" }}>{mpm.toFixed(2)}</span>
+                    <span>. A 20-mark question gets </span>
+                    <span className="ui-readout" style={{ fontSize: 21, lineHeight: '26px', color: "var(--ink-primary)" }}>{(mpm*20).toFixed(1)}</span>
+                    <span> minutes.</span>
+                </p>
              </div>
-             <div className="mt-6 text-center" style={{ backgroundColor: moduleFill(COLORS.accentTint), border: `2px solid ${COLORS.accent}`, borderRadius: 14, padding: '20px 24px' }}>
-                <span style={{ fontSize: 16, color: "var(--module-ink)" }}>Your MPM is </span>
-                <span className="font-serif font-bold" style={{ fontSize: 22, color: 'var(--module-accent-text)' }}>{mpm.toFixed(2)}</span>
-                <span style={{ fontSize: 16, color: "var(--module-ink)" }}>. A 20-mark question gets </span>
-                <span className="font-serif font-bold" style={{ fontSize: 22, color: 'var(--module-accent-text)' }}>{(mpm*20).toFixed(1)}</span>
-                <span style={{ fontSize: 16, color: "var(--module-ink)" }}> minutes.</span>
-             </div>
-        </div>
+        </ExerciseSheet>
     )
 }
 
@@ -271,13 +262,13 @@ const BoxBreathingVisualizer = () => {
     const totalCycles = 3;
 
     const phases = [
-      { label: 'Breathe In', color: "text-[var(--module-ink)]" },
-      { label: 'Hold', color: "text-[var(--module-ink)]" },
-      { label: 'Breathe Out', color: "text-[var(--module-danger-text)]" },
-      { label: 'Hold', color: "text-[var(--module-ink)]" },
+      { label: 'Breathe In', color: "text-ink-primary" },
+      { label: 'Hold', color: "text-ink-primary" },
+      { label: 'Breathe Out', color: "text-ink-primary" },
+      { label: 'Hold', color: "text-ink-primary" },
     ];
 
-    const arcColors = ["var(--module-ink)", "var(--module-ink)", "var(--module-success-text)", "var(--module-ink)"];
+    const arcColors = ["var(--ink-primary)", "var(--ink-primary)", "var(--ink-primary)", "var(--ink-primary)"];
     const radius = 88;
 
     const getArcPath = (index: number) => {
@@ -328,11 +319,9 @@ const BoxBreathingVisualizer = () => {
     const done = !active && cycle === 0 && phase === 0;
 
     return (
-     <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-         <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">4-4-4-4 Box Breathing</h4>
-         <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Feeling panicked? Run this protocol. 4 seconds per phase, 3 cycles.</p>
-
-         <div className="flex justify-center mb-6">
+     <ExerciseSheet title="4-4-4-4 Box Breathing" sub="Feeling panicked? Run this protocol. 4 seconds per phase, 3 cycles." name="BoxBreathingVisualizer">
+         {/* The breathing square: the module's own drawing, in ink on the sheet */}
+         <div className="flex justify-center py-8">
            <div className="relative w-52 h-52">
              <svg viewBox="0 0 200 200" className="w-full h-full absolute inset-0">
                {[0, 1, 2, 3].map(i => (
@@ -352,10 +341,10 @@ const BoxBreathingVisualizer = () => {
                ))}
              </svg>
 
-             <div className={`absolute -top-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 0 ? "text-[var(--module-ink)] opacity-100" : "text-[var(--module-muted)] dark:text-[var(--module-ink)] opacity-60"}`}>Inhale</div>
-             <div className={`absolute top-1/2 -right-10 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 1 ? "text-[var(--module-ink)] opacity-100" : "text-[var(--module-muted)] dark:text-[var(--module-ink)] opacity-60"}`}>Hold</div>
-             <div className={`absolute -bottom-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 2 ? "text-[var(--module-danger-text)] opacity-100" : "text-[var(--module-muted)] dark:text-[var(--module-ink)] opacity-60"}`}>Exhale</div>
-             <div className={`absolute top-1/2 -left-8 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 3 ? "text-[var(--module-ink)] opacity-100" : "text-[var(--module-muted)] dark:text-[var(--module-ink)] opacity-60"}`}>Hold</div>
+             <div className={`absolute -top-6 left-1/2 -translate-x-1/2 t-label transition-opacity duration-300 ${active && phase === 0 ? "text-ink-primary opacity-100" : "text-ink-muted"}`}>Inhale</div>
+             <div className={`absolute top-1/2 -right-10 -translate-y-1/2 t-label transition-opacity duration-300 ${active && phase === 1 ? "text-ink-primary opacity-100" : "text-ink-muted"}`}>Hold</div>
+             <div className={`absolute -bottom-6 left-1/2 -translate-x-1/2 t-label transition-opacity duration-300 ${active && phase === 2 ? "text-ink-primary opacity-100" : "text-ink-muted"}`}>Exhale</div>
+             <div className={`absolute top-1/2 -left-10 -translate-y-1/2 t-label transition-opacity duration-300 ${active && phase === 3 ? "text-ink-primary opacity-100" : "text-ink-muted"}`}>Hold</div>
 
              <div className="absolute inset-0 flex items-center justify-center">
                <motion.div
@@ -363,7 +352,8 @@ const BoxBreathingVisualizer = () => {
                    scale: active ? breathScale : 1,
                  }}
                  transition={{ duration: 3.8, ease: 'easeInOut' }}
-                 className="w-28 h-28 rounded-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-2 border-[var(--module-line)] dark:border-[var(--module-line)] flex flex-col items-center justify-center"
+                 className="w-28 h-28 rounded-full flex flex-col items-center justify-center"
+                 style={{ backgroundColor: "var(--surface-paper)", border: "1.5px solid var(--outline-soft)" }}
                >
                  {active ? (
                    <>
@@ -371,14 +361,14 @@ const BoxBreathingVisualizer = () => {
                        key={`${phase}-${count}`}
                        initial={{ scale: 1.2, opacity: 0 }}
                        animate={{ scale: 1, opacity: 1 }}
-                       className="text-3xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]"
+                       className="text-3xl text-ink-primary"
                      >
                        {count}
                      </motion.p>
-                     <p className={`text-[10px] font-bold ${phases[phase].color}`}>{phases[phase].label}</p>
+                     <p className={`t-meta ${phases[phase].color}`}>{phases[phase].label}</p>
                    </>
                  ) : (
-                   <p className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)]">Ready</p>
+                   <p className="t-meta">Ready</p>
                  )}
                </motion.div>
              </div>
@@ -386,31 +376,25 @@ const BoxBreathingVisualizer = () => {
          </div>
 
          {active && (
-           <div className="flex justify-center gap-2 mb-6">
+           <div className="flex justify-center gap-2">
              {Array.from({ length: totalCycles }).map((_, i) => (
-               <div key={i} className={`w-2 h-2 rounded-full transition-colors ${i < cycle ? "bg-[var(--module-solid)]" : i === cycle ? "bg-[var(--module-surface)]" : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"}`} />
+               <div key={i} className="w-2 h-2 rounded-full transition-colors" style={i < cycle ? { backgroundColor: "var(--ink-primary)" } : i === cycle ? { border: "1.5px solid var(--ink-primary)" } : { border: "1.5px solid var(--outline-soft)" }} />
              ))}
            </div>
          )}
 
-         <div className="flex justify-center">
+         <div className="ex-actions">
            {!active ? (
-             <button
-               onClick={handleStart}
-               className="px-6 py-2.5 bg-[var(--module-solid)] text-[var(--module-ink)] font-bold text-sm rounded-xl hover:bg-[var(--module-solid)] shadow-none shadow-none transition-all" data-wide-button="true"
-             >
+             <Button onClick={handleStart}>
                {done ? 'Begin' : 'Start Again'}
-             </button>
+             </Button>
            ) : (
-             <button
-               onClick={() => setActive(false)}
-               className="px-6 py-2.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] font-bold text-sm rounded-xl hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] transition-all" data-wide-button="true"
-             >
+             <TextButton tone="quiet" onClick={() => setActive(false)}>
                Stop
-             </button>
+             </TextButton>
            )}
          </div>
-    </div>
+    </ExerciseSheet>
     );
 }
 
@@ -443,6 +427,7 @@ const DumpSheetBuilder = () => {
     const [recallText, setRecallText] = useState('');
     const [results, setResults] = useState<boolean[]>([]);
     const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+    const recallTitleId = useId();
 
     useEffect(() => {
         return () => {
@@ -508,19 +493,19 @@ const DumpSheetBuilder = () => {
 
     if (phase === 'ready') {
         return (
-            <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 22, color: "var(--module-ink)" }}>Dump Sheet Drill</h4>
-                <p className="text-sm mt-1 mb-6 max-w-lg mx-auto" style={{ color: "var(--module-muted)" }}>Practice the brain dump that should be your first action in every exam.</p>
-                <div className="flex items-center justify-center gap-3 mb-6 flex-wrap">
-                    <span style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: moduleText(COLORS.accentDarkText) }}>30s to memorise</span>
-                    <span style={{ color: "var(--module-muted)" }}>→</span>
-                    <span style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: moduleText(COLORS.accentDarkText) }}>60s to recall</span>
-                    <span style={{ color: "var(--module-muted)" }}>→</span>
-                    <span style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: moduleText(COLORS.accentDarkText) }}>See your score</span>
+            <ExerciseSheet label="Active Recall" title="Dump Sheet Drill" sub="Practice the brain dump that should be your first action in every exam." name="DumpSheetBuilder">
+                {/* The three stages as plain words with their arrows (no pills) */}
+                <p className="flex items-center gap-3 flex-wrap t-body text-ink-primary">
+                    <span>30s to memorise</span>
+                    <span className="text-ink-muted" aria-hidden="true">→</span>
+                    <span>60s to recall</span>
+                    <span className="text-ink-muted" aria-hidden="true">→</span>
+                    <span>See your score</span>
+                </p>
+                <div className="ex-actions">
+                    <Button onClick={startDrill}>Start Drill</Button>
                 </div>
-                <motion.button onClick={startDrill} whileTap={{ y: 3 }} className="text-[var(--module-ink)] font-semibold" style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 100, padding: '13px 28px', fontSize: 15, borderBottom: `3px solid ${COLORS.accentDark}`, boxShadow: 'none' }} data-wide-button="true">Start Drill</motion.button>
-            </div>
+            </ExerciseSheet>
         );
     }
 
@@ -528,27 +513,27 @@ const DumpSheetBuilder = () => {
         const pct = (memoriseTime / 30) * 100;
         const low = isTimerLow(memoriseTime, 30);
         return (
-            <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-4" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
-                <div className="flex items-center justify-between mb-2">
-                    <h4 className="font-serif font-semibold" style={{ fontSize: 22, color: "var(--module-ink)" }}>Memorise These Facts</h4>
-                    <span style={{ backgroundColor: moduleFill(low ? "var(--module-surface)" : COLORS.successTint), border: `1.5px solid ${low ? "var(--module-line)" : 'rgba(58,141,95,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
-                        <span className="font-serif font-bold" style={{ fontSize: 18, color: moduleText(low ? "var(--module-ink)" : COLORS.success) }}>{memoriseTime}</span>
-                        <span style={{ fontSize: 13, color: "var(--module-muted)", marginLeft: 2 }}>s</span>
-                    </span>
+            <ExerciseSheet label="Active Recall" title="Memorise These Facts" name="DumpSheetBuilder">
+                {/* The clock in the readout, its bar a hairline track with an ink fill */}
+                <p className="ui-readout" style={{ color: low ? "var(--ink-primary)" : "var(--ink-secondary)" }}>
+                    <span style={{ fontSize: 21, lineHeight: '26px' }}>{memoriseTime}</span>
+                    <span style={{ marginLeft: 2 }}>s</span>
+                </p>
+                <div className="overflow-hidden" style={{ height: 4, backgroundColor: "var(--hairline)", borderRadius: 2 }}>
+                    <motion.div style={{ height: '100%', backgroundColor: "var(--ink-primary)" }} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
                 </div>
-                <div style={{ height: 4, backgroundColor: "var(--module-surface)", borderRadius: 2, marginBottom: 24 }}>
-                    <motion.div style={{ height: '100%', backgroundColor: moduleFill(COLORS.accent), borderRadius: 2 }} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                {/* The facts: words you read, ruled like rows, each with its number in a neutral ring */}
+                <div className="ex-list">
                     {dumpSheetFacts.map((fact, i) => (
-                        <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="flex items-start gap-3 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '16px 18px' }}>
-                            <span className="flex items-center justify-center shrink-0" style={{ width: 28, height: 28, borderRadius: '50%', backgroundColor: moduleFill(COLORS.accent), fontSize: 13, fontWeight: 700, color: "var(--module-on-fill)" }}>{i + 1}</span>
-                            <span style={{ fontSize: 14, color: "var(--module-ink)", lineHeight: 1.5 }}>{fact.text}</span>
+                        <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
+                            <div className="flex items-start gap-3">
+                                <span className="ex-badge">{i + 1}</span>
+                                <span className="t-body text-ink-primary">{fact.text}</span>
+                            </div>
                         </MotionDiv>
                     ))}
                 </div>
-            </div>
+            </ExerciseSheet>
         );
     }
 
@@ -556,64 +541,63 @@ const DumpSheetBuilder = () => {
         const pct = (recallTime / 60) * 100;
         const low = isTimerLow(recallTime, 60);
         return (
-            <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <div className="flex items-center justify-between mb-2">
-                    <h4 className="font-serif font-semibold" style={{ fontSize: 22, color: "var(--module-ink)" }}>Write Everything You Remember</h4>
-                    <span style={{ backgroundColor: moduleFill(low ? "var(--module-surface)" : COLORS.successTint), border: `1.5px solid ${low ? "var(--module-line)" : 'rgba(58,141,95,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
-                        <span className="font-serif font-bold" style={{ fontSize: 18, color: moduleText(low ? "var(--module-ink)" : COLORS.success) }}>{recallTime}</span>
-                        <span style={{ fontSize: 13, color: "var(--module-muted)", marginLeft: 2 }}>s</span>
-                    </span>
+            <ExerciseSheet title="Write Everything You Remember" id={recallTitleId} name="DumpSheetBuilder">
+                {/* The clock in the readout, its bar a hairline track with an ink fill */}
+                <p className="ui-readout" style={{ color: low ? "var(--ink-primary)" : "var(--ink-secondary)" }}>
+                    <span style={{ fontSize: 21, lineHeight: '26px' }}>{recallTime}</span>
+                    <span style={{ marginLeft: 2 }}>s</span>
+                </p>
+                <div className="overflow-hidden" style={{ height: 4, backgroundColor: "var(--hairline)", borderRadius: 2 }}>
+                    <motion.div style={{ height: '100%', backgroundColor: "var(--ink-primary)" }} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
                 </div>
-                <div style={{ height: 4, backgroundColor: "var(--module-surface)", borderRadius: 2, marginBottom: 16 }}>
-                    <motion.div style={{ height: '100%', backgroundColor: moduleFill(COLORS.accent), borderRadius: 2 }} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
-                </div>
-                <p className="text-sm mb-4" style={{ color: "var(--module-muted)" }}>Don't worry about order or exact wording.</p>
-                <textarea
+                <p className="t-sub">Don't worry about order or exact wording.</p>
+                <AreaField
+                    aria-labelledby={recallTitleId}
                     value={recallText}
                     onChange={e => setRecallText(e.target.value)}
                     disabled={recallTime <= 0}
                     placeholder="Start typing everything you remember..."
-                    className="w-full h-48 outline-none font-serif"
-                    style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", borderRadius: 10, padding: '14px 16px', fontSize: 15, color: "var(--module-ink)", lineHeight: 1.6, resize: 'none' as const }}
-                    onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
-                    onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-muted)"; }}
+                    rows={8}
                     autoFocus
                 />
-            </div>
+            </ExerciseSheet>
         );
     }
 
     // Results phase
     const score = results.filter(Boolean).length;
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif font-bold text-center" style={{ fontSize: 22, color: "var(--module-ink)" }}>Results</h4>
-            <div className="text-center my-5">
-                <div className="inline-block" style={{ backgroundColor: moduleFill(COLORS.successTint), border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '16px 24px' }}>
-                    <span className="font-serif font-bold" style={{ fontSize: 40, color: moduleText(COLORS.success) }}>{score}</span>
-                    <span className="font-serif" style={{ fontSize: 20, color: "var(--module-muted)" }}>/{dumpSheetFacts.length} recalled</span>
-                </div>
+        <ExerciseSheet title="Results" name="DumpSheetBuilder">
+            {/* The score, in words under a hairline (no green panel) */}
+            <div className="ex-result">
+                <p>
+                    <span className="ex-result-name">{score}</span>
+                    <span className="t-sub">/{dumpSheetFacts.length} recalled</span>
+                </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6">
+            {/* Each fact, ruled like rows: the done ring with its tick where it was recalled, a neutral ring where not */}
+            <div className="ex-list">
                 {dumpSheetFacts.map((fact, i) => {
                     const recalled = results[i];
                     return (
-                        <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="flex items-start gap-3 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: recalled ? `2px solid ${COLORS.success}` : "2px solid var(--module-line)", borderRadius: 14, padding: '14px 16px' }}>
-                            <span className="flex items-center justify-center shrink-0 mt-0.5" style={{ width: 22, height: 22, borderRadius: '50%', backgroundColor: moduleFill(recalled ? COLORS.success : "var(--module-solid)"), fontSize: 12, fontWeight: 700, color: "var(--module-on-fill)" }}>
-                                {recalled ? '✓' : '✗'}
-                            </span>
-                            <span style={{ fontSize: 14, color: "var(--module-ink)", lineHeight: 1.5 }}>{fact.text}</span>
+                        <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
+                            <div className="flex items-start gap-3">
+                                <span className={recalled ? 'ex-badge ex-badge--done' : 'ex-badge'}>
+                                    {recalled ? '✓' : '✗'}
+                                </span>
+                                <span className="t-body text-ink-primary">{fact.text}</span>
+                            </div>
                         </MotionDiv>
                     );
                 })}
             </div>
-            <div style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: moduleFill(COLORS.accentTint), borderRadius: '0 10px 10px 0', padding: '12px 16px', marginBottom: 16 }}>
-                <p className="text-sm italic" style={{ color: moduleText(COLORS.accentDarkText) }}>In the real exam, your dump sheet is a safety net — facts already on the page are safe even if stress makes them harder to recall. Do this in the first 2 minutes of every paper.</p>
+            <div className="ex-block">
+                <p className="ex-block-text">In the real exam, your dump sheet is a safety net — facts already on the page are safe even if stress makes them harder to recall. Do this in the first 2 minutes of every paper.</p>
             </div>
-            <div className="text-center">
-                <button onClick={tryAgain} style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">Try Again</button>
+            <div className="ex-actions">
+                <Button onClick={tryAgain}>Try Again</Button>
             </div>
-        </div>
+        </ExerciseSheet>
     );
 };
 
@@ -628,10 +612,11 @@ const attackQuestions = [
 
 const optimalOrder = ['q3', 'q1', 'q5', 'q2', 'q6', 'q4'];
 
+// The difficulty's word, and its traffic-light dot as it was (no tinted pill behind the word).
 const difficultyConfig = {
-    green: { bg: "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)]", text: "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", dot: "bg-[var(--module-success)]", label: 'Confident' },
-    amber: { bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", text: "text-[var(--module-ink)] dark:text-[var(--module-ink)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", dot: "bg-[var(--module-surface)]", label: 'Manageable' },
-    red: { bg: "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)]", text: "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", dot: "bg-[var(--module-danger)]", label: 'Hardest' },
+    green: { dot: "bg-[var(--module-success)]", label: 'Confident' },
+    amber: { dot: "bg-[var(--module-surface)]", label: 'Manageable' },
+    red: { dot: "bg-[var(--module-danger)]", label: 'Hardest' },
 };
 
 const shuffleArray = <T,>(arr: T[]): T[] => {
@@ -686,151 +671,135 @@ const OrderOfAttackOptimizer = () => {
     const score = checked ? computeScore() : 0;
 
     return (
-        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Order of Attack</h4>
-            <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-8 text-center max-w-lg mx-auto">Sequence these 6 exam questions for maximum momentum. Click questions in the order you would attempt them.</p>
-
+        <ExerciseSheet title="Order of Attack" sub="Sequence these 6 exam questions for maximum momentum. Click questions in the order you would attempt them." name="OrderOfAttackOptimizer">
             <div className="flex flex-col md:flex-row gap-6">
-                {/* Question cards */}
-                <div className="flex-1 space-y-2.5">
-                    <p className="text-xs font-bold text-[var(--module-muted)] uppercase tracking-wider mb-2">Questions</p>
-                    {displayOrder.map(q => {
-                        const dc = difficultyConfig[q.difficulty];
-                        const selected = sequence.includes(q.id);
-                        const seqNum = selected ? sequence.indexOf(q.id) + 1 : null;
-                        return (
-                            <MotionDiv
-                                key={q.id}
-                                onClick={() => handleClickQuestion(q.id)}
-                                whileHover={!checked ? { scale: 1.01 } : {}}
-                                whileTap={!checked ? { scale: 0.98 } : {}}
-                                className={`p-4 rounded-xl border cursor-pointer transition-all ${
-                                    selected
-                                        ? "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)] opacity-50"
-                                        : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)] hover:border-[var(--module-line)] dark:hover:border-[var(--module-line)]"
-                                } ${checked ? 'cursor-default' : ''}`}
-                            >
-                                <div className="flex items-center gap-3">
-                                    {seqNum && (
-                                        <span className="w-6 h-6 rounded-full bg-[var(--module-surface)] text-[var(--module-ink)] text-xs font-bold flex items-center justify-center flex-shrink-0">{seqNum}</span>
-                                    )}
-                                    <div className="flex-1 min-w-0">
-                                        <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{q.label}</p>
-                                        <div className="flex items-center gap-2 mt-1">
-                                            <span className="text-xs font-bold text-[var(--module-muted)]">{q.marks} marks</span>
-                                            <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold ${dc.bg} ${dc.text} border ${dc.border}`}>{dc.label}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </MotionDiv>
-                        );
-                    })}
+                {/* Question cards: several are chosen, in order; each chosen one shows its place in a neutral ring */}
+                <div className="flex-1 flex flex-col gap-3 min-w-0">
+                    <ExerciseLabel>Questions</ExerciseLabel>
+                    <AnswerGroup kind="several">
+                        {displayOrder.map(q => {
+                            const dc = difficultyConfig[q.difficulty];
+                            const selected = sequence.includes(q.id);
+                            const seqNum = selected ? sequence.indexOf(q.id) + 1 : null;
+                            return (
+                                <ChoiceTile
+                                    key={q.id}
+                                    kind="several"
+                                    chosen={selected}
+                                    onClick={() => handleClickQuestion(q.id)}
+                                    label={<span className="flex items-center gap-3">
+                                        {seqNum && (
+                                            <span className="ex-badge ex-badge--on">{seqNum}</span>
+                                        )}
+                                        <span className="min-w-0">{q.label}</span>
+                                    </span>}
+                                    meta={<span className="inline-flex flex-wrap items-center gap-x-3 gap-y-1">
+                                        <span>{q.marks} marks</span>
+                                        <span className="inline-flex items-center gap-1.5"><span aria-hidden="true" className={`w-1.5 h-1.5 rounded-full ${dc.dot}`} />{dc.label}</span>
+                                    </span>}
+                                />
+                            );
+                        })}
+                    </AnswerGroup>
                 </div>
 
-                {/* Sequence list */}
-                <div className="md:w-64 flex-shrink-0">
-                    <p className="text-xs font-bold text-[var(--module-muted)] uppercase tracking-wider mb-2">Your Sequence</p>
-                    <div className="space-y-2 min-h-[120px]">
-                        <AnimatePresence>
-                            {sequence.map((id, i) => {
-                                const q = attackQuestions.find(aq => aq.id === id)!;
-                                const dc = difficultyConfig[q.difficulty];
-                                const zone = getZone(i);
-                                const inZone = checked && q.difficulty === zone;
-                                const outZone = checked && q.difficulty !== zone;
-                                return (
-                                    <MotionDiv
-                                        key={id}
-                                        initial={{ opacity: 0, x: 20 }}
-                                        animate={{ opacity: 1, x: 0 }}
-                                        exit={{ opacity: 0, x: -20 }}
-                                        className={`p-3 rounded-lg border flex items-center gap-2.5 ${
-                                            inZone ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
-                                            outZone ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
-                                            "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]"
-                                        }`}
-                                    >
-                                        <span className={`w-6 h-6 rounded-full text-white text-xs font-bold flex items-center justify-center flex-shrink-0 ${
-                                            inZone ? "bg-[var(--module-success)]" : outZone ? "bg-[var(--module-danger)]" : "bg-[var(--module-surface)]"
-                                        }`}>{i + 1}</span>
-                                        <div className="min-w-0">
-                                            <p className="text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] truncate">{q.label.split(':')[0]}</p>
-                                            <div className="flex items-center gap-1.5">
-                                                <span className={`w-1.5 h-1.5 rounded-full ${dc.dot}`} />
-                                                <span className="text-[10px] text-[var(--module-muted)]">{q.marks}m</span>
+                {/* Sequence list: the order so far, ruled like rows (no tinted rows) */}
+                <div className="md:w-64 flex-shrink-0 flex flex-col gap-3">
+                    <ExerciseLabel>Your Sequence</ExerciseLabel>
+                    <div className="min-h-[120px]">
+                        <div className="ex-list">
+                            <AnimatePresence>
+                                {sequence.map((id, i) => {
+                                    const q = attackQuestions.find(aq => aq.id === id)!;
+                                    const dc = difficultyConfig[q.difficulty];
+                                    const zone = getZone(i);
+                                    const inZone = checked && q.difficulty === zone;
+                                    const outZone = checked && q.difficulty !== zone;
+                                    return (
+                                        <MotionDiv
+                                            key={id}
+                                            initial={{ opacity: 0, x: 20 }}
+                                            animate={{ opacity: 1, x: 0 }}
+                                            exit={{ opacity: 0, x: -20 }}
+                                            data-zone={inZone ? 'in' : outZone ? 'out' : undefined}
+                                        >
+                                            <div className="flex items-center gap-3">
+                                                {/* in its zone: the done ring; out of it: the neutral ring (never a red disc) */}
+                                                <span className={inZone ? 'ex-badge ex-badge--done' : 'ex-badge'}>{i + 1}</span>
+                                                <div className="min-w-0">
+                                                    <p className="t-body text-ink-primary truncate">{q.label.split(':')[0]}</p>
+                                                    <div className="flex items-center gap-1.5 t-meta">
+                                                        <span aria-hidden="true" className={`w-1.5 h-1.5 rounded-full ${dc.dot}`} />
+                                                        <span>{q.marks}m</span>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </MotionDiv>
-                                );
-                            })}
-                        </AnimatePresence>
+                                        </MotionDiv>
+                                    );
+                                })}
+                            </AnimatePresence>
+                        </div>
                         {sequence.length === 0 && !checked && (
-                            <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] italic text-center py-6">Click questions to build your sequence...</p>
+                            <p className="t-meta text-center py-6">Click questions to build your sequence...</p>
                         )}
                     </div>
 
                     {/* Check / Try Again button */}
-                    <div className="mt-4">
+                    <div>
                         {!checked ? (
-                            <button
+                            <Button
+                                block
                                 onClick={handleCheck}
-                                disabled={sequence.length < 6}
-                                className={`w-full py-2.5 font-bold text-sm rounded-lg transition-all ${
-                                    sequence.length === 6
-                                        ? "bg-[var(--module-surface)] hover:bg-[var(--module-surface)] text-[var(--module-ink)]"
-                                        : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-muted)] dark:text-[var(--module-muted)] cursor-not-allowed"
-                                }`} data-wide-button="true" data-selected={!!(sequence.length === 6)} data-tone="orange" aria-pressed={!!(sequence.length === 6)}
+                                {...{ disabled: sequence.length < 6 }}
                             >
                                 {sequence.length === 6 ? 'Check Strategy' : `Select ${6 - sequence.length} more`}
-                            </button>
+                            </Button>
                         ) : (
-                            <button
+                            <Button
+                                block
                                 onClick={handleReset}
-                                className="w-full py-2.5 bg-[var(--module-surface)] hover:bg-[var(--module-surface)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true"
                             >
                                 Try Again
-                            </button>
+                            </Button>
                         )}
                     </div>
                 </div>
             </div>
 
-            {/* Feedback */}
+            {/* Feedback: words you read, held by hairlines (no boxes) */}
             {checked && (
-                <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="mt-8">
-                    <div className="flex items-center justify-center gap-3 mb-5">
-                        <div className="text-center px-5 py-3 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
-                            <div className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{score}/6</div>
-                            <div className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">In Optimal Zone</div>
-                        </div>
+                <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="ex-stack">
+                    <div className="ex-result">
+                        <p className="ex-result-name">{score}/6</p>
+                        <p className="t-meta">In Optimal Zone</p>
                     </div>
 
-                    <div className="p-5 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)] mb-5">
-                        <p className="text-xs font-bold text-[var(--module-muted)] uppercase tracking-wider mb-3">Optimal Order</p>
-                        <div className="space-y-1.5">
+                    <div className="ex-block">
+                        <ExerciseLabel>Optimal Order</ExerciseLabel>
+                        <div className="flex flex-col gap-2">
                             {optimalOrder.map((id, i) => {
                                 const q = attackQuestions.find(aq => aq.id === id)!;
                                 const dc = difficultyConfig[q.difficulty];
                                 return (
                                     <div key={id} className="flex items-center gap-2.5">
-                                        <span className="w-5 h-5 rounded-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] text-[10px] font-bold flex items-center justify-center flex-shrink-0">{i + 1}</span>
-                                        <span className={`w-1.5 h-1.5 rounded-full ${dc.dot}`} />
-                                        <span className="text-xs text-[var(--module-ink)] dark:text-[var(--module-muted)]">{q.label}</span>
-                                        <span className="text-[10px] text-[var(--module-muted)]">{q.marks}m</span>
+                                        <span className="ex-badge">{i + 1}</span>
+                                        <span aria-hidden="true" className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${dc.dot}`} />
+                                        <span className="t-sub text-ink-primary">{q.label}</span>
+                                        <span className="t-meta">{q.marks}m</span>
                                     </div>
                                 );
                             })}
                         </div>
                     </div>
 
-                    <div className="p-5 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                        <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] leading-relaxed">
-                            <strong className="text-[var(--module-ink)] dark:text-[var(--module-ink)]">Why this order?</strong> Greens first builds confidence and banks marks early. Your brain warms up on familiar material, creating <strong>psychological momentum</strong>. Within each colour zone, tackle the highest-mark questions first to maximise early points. Save the hardest question (Red) for last — by then you are in flow state and have already secured most of your grade.
+                    <div className="ex-block">
+                        <p className="ex-block-text text-ink-primary">
+                            <strong>Why this order?</strong> Greens first builds confidence and banks marks early. Your brain warms up on familiar material, creating <strong>psychological momentum</strong>. Within each colour zone, tackle the highest-mark questions first to maximise early points. Save the hardest question (Red) for last — by then you are in flow state and have already secured most of your grade.
                         </p>
                     </div>
                 </MotionDiv>
             )}
-        </div>
+        </ExerciseSheet>
     );
 };
 
