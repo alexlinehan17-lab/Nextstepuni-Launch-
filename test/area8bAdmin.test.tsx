@@ -200,6 +200,34 @@ describe('figures', () => {
   });
 });
 
+describe('schools in the board\'s order', () => {
+  test('largest first, ties by name, on the phone rows, the laptop tables and the Overview; the school menu stays A to Z', async () => {
+    db.users.push({ uid: 'u5', name: 'Éabha Pilot', school: SCHOOLS[2].id, yearGroup: '5th', avatar: 'star-crew:maker' });
+    db.progress.u5 = {};
+    const bySize = [SCHOOLS[0].name, ...[SCHOOLS[1].name, SCHOOLS[2].name].sort((a, b) => a.localeCompare(b))];
+    const order = () => screen.getAllByRole('button', { name: /^Open students in / }).map(b => b.getAttribute('aria-label')!.replace('Open students in ', ''))
+      .filter(name => SCHOOLS.some(school => school.name === name));
+    const view = await open();
+    fireEvent.click(within(places()).getByRole('button', { name: 'Schools' }));
+    expect(order()).toEqual(bySize);
+    expect(screen.getByText('3 schools · largest first')).toBeInTheDocument();
+    // Year groups keep their own order, 1st Year to 6th Year.
+    fireEvent.click(screen.getByRole('radio', { name: 'Year groups' }));
+    expect(screen.getAllByRole('button', { name: /^Open students in \d|^Open students in Transition/ }).map(b => b.getAttribute('aria-label'))).toEqual(['Open students in 5th Year', 'Open students in 6th Year']);
+    // The school menu: A to Z.
+    fireEvent.click(screen.getByRole('button', { name: /^School:/ }));
+    const names = (await screen.findAllByRole('menuitemradio')).map(item => item.textContent);
+    expect(names[0]).toBe('All schools');
+    expect(names.slice(1)).toEqual([...names.slice(1)].sort((a, b) => a!.localeCompare(b!)));
+    view.unmount();
+    // The laptop: Schools at a glance on the Overview, and the Schools table.
+    await open(1280);
+    expect(order()).toEqual(bySize);
+    fireEvent.click(within(screen.getByRole('complementary', { name: 'Admin dashboard' })).getByRole('button', { name: 'Schools' }));
+    expect(order()).toEqual(bySize);
+  });
+});
+
 describe('students', () => {
   test('the search narrows the list already loaded, by name, and reads nothing new', async () => {
     await open();

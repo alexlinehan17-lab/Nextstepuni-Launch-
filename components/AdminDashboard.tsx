@@ -598,7 +598,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
         label: displaySchool(school),
         stats: summariseCohort(recordsInYear.filter(record => (record.user.school || NOT_SET) === school)),
       }))
-      .filter(row => row.stats.students > 0);
+      .filter(row => row.stats.students > 0)
+      // Largest first, as both agreed boards list them; ties by name. (The school menu stays A to Z.)
+      .sort((a, b) => b.stats.students - a.stats.students || a.label.localeCompare(b.label));
   }, [enrichedData, schoolFilter, schoolOptions, yearFilter]);
 
   const yearRows = useMemo(() => {
@@ -789,7 +791,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
             </div>
           ) : (
             <div className="adm-colhead">
-              <span className="gc8-label">{cohortRows.length} {yearSide ? `year group${cohortRows.length === 1 ? '' : 's'}` : `school${cohortRows.length === 1 ? '' : 's'}`}</span>
+              <span className="gc8-label">{cohortRows.length} {yearSide ? `year group${cohortRows.length === 1 ? '' : 's'}` : `school${cohortRows.length === 1 ? '' : 's'} · largest first`}</span>
               <span className="gc8-label">Avg progress</span>
             </div>
           )}
