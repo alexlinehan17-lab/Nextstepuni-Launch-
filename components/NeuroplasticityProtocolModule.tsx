@@ -1,4 +1,3 @@
-import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -20,6 +19,9 @@ import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
+import { AnswerGroup,AnswerLine,ExerciseSheet } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = orangeTheme;
 
@@ -34,66 +36,58 @@ const JugglingStudyVisualizer = () => {
     const currentData = data[scan-1];
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Juggling Study</h4>
-             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Proof that learning physically changes the structure of your brain.</p>
-             <div className="w-full max-w-xs mx-auto h-48 flex justify-center items-end">
-                <motion.div
-                    className="w-24 rounded-t-lg"
-                    style={{ backgroundColor: "var(--module-danger)" }}
-                    initial={{height: '50%'}}
-                    animate={{height: `${currentData.value}%`}}
-                    transition={{type: 'spring', damping: 15, stiffness: 100}}
-                />
+        <ExerciseSheet title="The Juggling Study" sub="Proof that learning physically changes the structure of your brain." name="JugglingStudyVisualizer">
+             {/* The bar, on the sheet with its caption under a hairline (no box of its own) */}
+             <div className="ex-figure">
+                <div className="w-full max-w-xs mx-auto h-48 flex justify-center items-end" style={{ borderBottom: '1px solid var(--hairline)' }}>
+                    <motion.div
+                        className="w-24 rounded-t-lg"
+                        style={{ backgroundColor: 'var(--ink-primary)' }}
+                        initial={{height: '50%'}}
+                        animate={{height: `${currentData.value}%`}}
+                        transition={{type: 'spring', damping: 15, stiffness: 100}}
+                    />
+                </div>
+                <p className="ex-figure-count">{currentData.label}</p>
              </div>
-             <p className="text-center font-bold mt-2 dark:text-[var(--module-muted)]">{currentData.label}</p>
-             <div className="flex justify-center gap-2 mt-4">
+             <AnswerGroup kind="one">
                 {[1, 2, 3].map(n => (
-                  <button
+                  <ChoiceTile
                     key={n}
+                    chosen={scan === n}
                     onClick={() => setScan(n)}
-                    style={{
-                      backgroundColor: moduleFill(scan === n ? "var(--module-danger)" : "var(--module-surface)"),
-                      border: scan === n ? "2px solid var(--module-line)" : "2px solid var(--module-line)",
-                      borderRadius: 100,
-                      padding: '8px 20px',
-                      fontSize: 13,
-                      fontWeight: 600,
-                      color: moduleText(scan === n ? "var(--module-on-fill)" : "var(--module-muted)"),
-                    }} data-wide-button="true" data-selected={!!(scan === n)} data-tone="coral" aria-pressed={!!(scan === n)}
-                  >
-                    Scan {n}
-                  </button>
+                    label={<>Scan {n}</>}
+                  />
                 ))}
-             </div>
-        </div>
+             </AnswerGroup>
+        </ExerciseSheet>
     );
 };
 
 const StudyMethodGrader = () => {
     const [method, setMethod] = useState<'passive' | 'active' | null>(null);
     return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Study Method Grader</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Which study method sends a stronger signal to build your brain?</p>
-             <div className="grid grid-cols-2 gap-4">
-                <button onClick={() => setMethod('passive')} className="p-4 rounded-xl text-center font-medium transition-all" style={method === 'passive' ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-danger-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(method === 'passive')} data-tone="coral" aria-pressed={!!(method === 'passive')}><strong>Passive Re-reading:</strong> "I'll just read my notes again."</button>
-                <button onClick={() => setMethod('active')} className="p-4 rounded-xl text-center font-medium transition-all" style={method === 'active' ? { backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-success-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(method === 'active')} data-tone="mint" aria-pressed={!!(method === 'active')}><strong>Active Recall:</strong> "I'll try to explain this from memory."</button>
-             </div>
+        <ExerciseSheet title="Study Method Grader" sub="Which study method sends a stronger signal to build your brain?" name="StudyMethodGrader">
+             <AnswerGroup kind="one" columns={2}>
+                <ChoiceTile tile chosen={method === 'passive'} onClick={() => setMethod('passive')} label={<><strong>Passive Re-reading:</strong> "I'll just read my notes again."</>} />
+                <ChoiceTile tile chosen={method === 'active'} onClick={() => setMethod('active')} label={<><strong>Active Recall:</strong> "I'll try to explain this from memory."</>} />
+             </AnswerGroup>
              {method &&
-             <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6">
-                <h5 className="font-bold text-center">Brain-Building Score:</h5>
-                <div className="w-full h-8 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full mt-2 overflow-hidden">
+             <motion.div initial={{opacity:0}} animate={{opacity:1}} className="ex-stack">
+                <h5 className="ex-label">Brain-Building Score:</h5>
+                {/* The score: an ink fill on a hairline track (no green or coral bar) */}
+                <div className="w-full rounded overflow-hidden" style={{ height: 8, backgroundColor: 'var(--hairline)' }}>
                     <motion.div
-                        className={`h-full rounded-full ${method === 'active' ? "bg-[var(--module-success)]" : "bg-[var(--module-danger)]"}`}
+                        className="h-full rounded"
+                        style={{ backgroundColor: 'var(--ink-primary)' }}
                         initial={{width: '0%'}}
                         animate={{width: method === 'active' ? '95%' : '20%'}}
                         transition={{duration: 1}}
                     />
                 </div>
-                <p className="text-xs text-center mt-2 text-[var(--module-muted)] dark:text-[var(--module-muted)]">{method === 'active' ? 'Strong signal sent. Your brain is actually changing.' : 'Weak signal. Not much is changing up there.'}</p>
+                <AnswerLine tone={method === 'active' ? 'ok' : 'note'}>{method === 'active' ? 'Strong signal sent. Your brain is actually changing.' : 'Weak signal. Not much is changing up there.'}</AnswerLine>
              </motion.div>}
-        </div>
+        </ExerciseSheet>
     );
 }
 
@@ -101,12 +95,13 @@ const GRID_COLS = 12;
 const GRID_ROWS = 8;
 const TOTAL_CELLS = GRID_COLS * GRID_ROWS;
 
+// The trail darkens in ink as it is walked: untouched paper, a faint line, ink-3, then a full ink path.
 const getPathStyle = (walked: number): { bg: string; border: string } => {
-  if (walked <= 0) return { bg: "var(--module-on-fill)", border: "var(--module-line)" };
-  if (walked === 1) return { bg: "var(--module-ink)", border: "var(--module-line)" };
-  if (walked === 2) return { bg: "var(--module-success-text)", border: "var(--module-line)" };
-  if (walked >= 3) return { bg: "var(--module-danger-text)", border: "var(--module-line)" };
-  return { bg: "var(--module-on-fill)", border: "var(--module-line)" };
+  if (walked <= 0) return { bg: "var(--surface-paper)", border: "var(--hairline)" };
+  if (walked === 1) return { bg: "var(--outline-soft)", border: "var(--outline-soft)" };
+  if (walked === 2) return { bg: "var(--ink-muted)", border: "var(--ink-muted)" };
+  if (walked >= 3) return { bg: "var(--ink-primary)", border: "var(--ink-primary)" };
+  return { bg: "var(--surface-paper)", border: "var(--hairline)" };
 };
 
 const DesirePathMaker = () => {
@@ -216,23 +211,21 @@ const DesirePathMaker = () => {
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      {/* Section chip + title */}
-      <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)' }}>Interactive Simulation</span>
-        <h4 className="font-serif text-2xl font-bold" style={{ color: "var(--module-ink)" }}>Desire Path Maker</h4>
-        <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>
-          Click cells to walk on them. Repeat the same path to build strong connections — or scatter your effort and watch them fade.
-        </p>
-      </div>
-
-      {/* Grid in bordered card */}
-      <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: 20, maxWidth: 520, margin: '0 auto' }}>
+    <ExerciseSheet
+      label="Interactive Simulation"
+      title="Desire Path Maker"
+      sub="Click cells to walk on them. Repeat the same path to build strong connections — or scatter your effort and watch them fade."
+      name="DesirePathMaker"
+    >
+      {/* The grid, on the sheet with its count under a hairline (no box of its own) */}
+      <div className="ex-figure">
         <div
+          className="w-full"
           style={{
             display: 'grid',
             gridTemplateColumns: `repeat(${GRID_COLS}, 1fr)`,
             gap: '4px',
+            maxWidth: 520,
           }}
         >
           {grid.map((walked, idx) => {
@@ -242,10 +235,10 @@ const DesirePathMaker = () => {
                 key={idx}
                 onClick={() => handleCellClick(idx)}
                 style={{
-                  backgroundColor: moduleFill(cs.bg),
-                  border: `1.5px solid ${cs.border}`,
+                  backgroundColor: cs.bg,
+                  border: `1px solid ${cs.border}`,
                   aspectRatio: '1',
-                  borderRadius: 8,
+                  borderRadius: 4,
                   cursor: isAnimating ? 'default' : 'pointer',
                   transition: 'background-color 0.3s ease, border-color 0.3s ease',
                 }}
@@ -255,46 +248,40 @@ const DesirePathMaker = () => {
             );
           })}
         </div>
-      </div>
 
-      {/* Stat card */}
-      <div className="flex justify-center mt-4">
-        <div className="inline-flex items-center gap-3" style={{ backgroundColor: "var(--module-surface)", border: '1.5px solid rgba(var(--nsu-orange-rgb), 0.25)', borderRadius: 12, padding: '10px 20px' }}>
-          <span className="font-serif font-bold" style={{ fontSize: 28, color: "var(--module-danger-text)" }}>{strongPathCount(grid)}</span>
-          <span className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: "var(--module-muted)", letterSpacing: '0.08em' }}>Strong paths<br/>built</span>
+        {/* The count: a number and its label, not a box */}
+        <div className="ex-figure-count flex items-center justify-center gap-3">
+          <span className="text-ink-primary" style={{ fontSize: 29, lineHeight: '30px', letterSpacing: '-0.04em' }}>{strongPathCount(grid)}</span>
+          <span className="ex-label text-left">Strong paths<br/>built</span>
         </div>
       </div>
 
-      {/* Controls */}
-      <div className="flex flex-wrap justify-center gap-2 mt-6">
-        <button onClick={handleDaysPass} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: "var(--module-ink)" }} data-wide-button="true">
+      {/* Controls: the exercise's own white buttons; disabled while the walk plays, as before */}
+      <div className="ex-actions">
+        <Button size="sm" onClick={handleDaysPass} className="disabled:opacity-40" {...{ disabled: isAnimating }}>
           Days Pass (Decay)
-        </button>
-        <button onClick={handleCramming} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: "var(--module-muted)" }} data-wide-button="true">
-          <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: "var(--module-solid)", display: 'inline-block' }} />
+        </Button>
+        <Button size="sm" onClick={handleCramming} className="disabled:opacity-40" {...{ disabled: isAnimating }}>
           Cramming Pattern
-        </button>
-        <button onClick={handleSpacedRepetition} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: "var(--module-danger-text)" }} data-wide-button="true">
-          <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: "var(--module-danger)", display: 'inline-block' }} />
+        </Button>
+        <Button size="sm" onClick={handleSpacedRepetition} className="disabled:opacity-40" {...{ disabled: isAnimating }}>
           Spaced Repetition
-        </button>
-        <button onClick={handleReset} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: "var(--module-muted)" }} data-wide-button="true">
+        </Button>
+        <TextButton tone="quiet" onClick={handleReset} className="disabled:opacity-40" {...{ disabled: isAnimating }}>
           Reset
-        </button>
+        </TextButton>
       </div>
 
-      {/* Result message */}
+      {/* Result message: a line in ink */}
       {resultMessage && (
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-4 max-w-lg mx-auto"
-          style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
         >
-          <p className="text-sm italic" style={{ color: "var(--module-danger-text)" }}>{resultMessage}</p>
+          <AnswerLine tone="note">{resultMessage}</AnswerLine>
         </motion.div>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 

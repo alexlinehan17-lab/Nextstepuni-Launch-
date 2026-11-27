@@ -26,6 +26,8 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,PersonalStory,ReadingSection,ToolJumpCard } from './ModuleShared';
 import NorthStarCallout from './NorthStarCallout';
+import { AnswerGroup,AnswerLine,ExercisePart,ExerciseSheet } from './learning/Exercise';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = roseTheme;
 
@@ -74,99 +76,61 @@ const WhyBotherAudit = ({ savedSubjects, savedRatings, onSave }: { savedSubjects
     ];
 
     return (
-      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The "Why Bother?" Audit</h4>
-        <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Select your subjects, then rate how connected each one feels to your future goals.</p>
+      <ExerciseSheet title={'The "Why Bother?" Audit'} sub="Select your subjects, then rate how connected each one feels to your future goals." name="WhyBotherAudit">
+        {/* Subject picker: several may be chosen (up to 7), two columns */}
+        <AnswerGroup kind="several" legend="Select your subjects (up to 7)" columns={2}>
+          {subjects.map(s => (
+            <ChoiceTile
+              key={s}
+              kind="several"
+              chosen={selected.has(s)}
+              onClick={() => toggleSubject(s)}
+              label={s}
+            />
+          ))}
+        </AnswerGroup>
 
-        {/* Subject picker */}
-        <div className="mb-6">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">Select your subjects (up to 7)</p>
-          <div className="flex flex-wrap gap-2">
-            {subjects.map(s => (
-              <button
-                key={s}
-                onClick={() => toggleSubject(s)}
-                className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all`}
-                style={selected.has(s) ? { backgroundColor: "var(--module-danger)", color: "var(--module-on-fill)", border: "2.5px solid var(--module-line)", borderRadius: 10, boxShadow: 'none' } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 10, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(selected.has(s))} data-tone="coral" aria-pressed={!!(selected.has(s))}
-              >
-                {s}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Rating cards */}
+        {/* Rating: one answer per subject, under a hairline; the chosen rating carries its word */}
         {selected.size > 0 && (
-          <div className="space-y-3 mb-6">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--module-muted)] dark:text-[var(--module-muted)]">Rate each subject — how useful does it feel for your future?</p>
-            {Array.from(selected).map(s => (
-              <div
-                key={s}
-                className={`p-4 rounded-xl border transition-all ${
-                  ratings[s] !== undefined
-                    ? ratings[s] <= 2
-                      ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]"
-                      : "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]"
-                    : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]"
-                }`}
-              >
-                <div className="flex items-center justify-between mb-2.5">
-                  <p className="text-sm font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{s}</p>
-                  {ratings[s] !== undefined && (
-                    <motion.span
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      className={`text-[10px] font-bold ${ratings[s] <= 2 ? "text-[var(--module-danger-text)]" : "text-[var(--module-success-text)]"}`}
-                    >
-                      {ratings[s] <= 2 ? 'Friction Point' : 'Connected'}
-                    </motion.span>
-                  )}
-                </div>
-                <div className="flex gap-2">
+          <ExercisePart sub="Rate each subject — how useful does it feel for your future?">
+            <div className="ex-questions">
+              {Array.from(selected).map(s => (
+                <AnswerGroup key={s} kind="one" legend={s} columns={2}>
                   {ratingLabels.map(r => (
-                    <button
+                    <ChoiceTile
                       key={r.value}
+                      chosen={ratings[s] === r.value}
                       onClick={() => setRating(s, r.value)}
-                      className={`flex-1 py-1.5 text-[10px] font-bold rounded-lg border transition-all ${
-                        ratings[s] === r.value
-                          ? `${r.color} border-transparent`
-                          : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-muted)] dark:text-[var(--module-muted)] border-[var(--module-line)] dark:border-[var(--module-line)] hover:border-[var(--module-line)]"
-                      }`} data-wide-button="true"
-                    >
-                      {r.label}
-                    </button>
+                      label={r.label}
+                      note={ratings[s] === r.value ? (ratings[s] <= 2 ? 'Friction Point' : 'Connected') : undefined}
+                      noteTone={ratings[s] <= 2 ? 'plain' : 'ok'}
+                    />
                   ))}
-                </div>
-              </div>
-            ))}
-          </div>
+                </AnswerGroup>
+              ))}
+            </div>
+          </ExercisePart>
         )}
 
-        {/* Results */}
+        {/* Results: a line that answers the ratings (the tick when there is no friction point) */}
         {allRated && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="p-5 rounded-xl" style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)" }}
           >
             {frictionPoints.length > 0 ? (
-              <>
-                <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-1">
-                  You have {frictionPoints.length} friction point{frictionPoints.length > 1 ? 's' : ''}: {frictionPoints.join(', ')}
-                </p>
-                <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)]">
-                  These are the subjects where "why bother?" hits hardest. They feel pointless right now, which makes the effort feel unbearable. The rest of this module will help you change that.
-                </p>
-              </>
+              <AnswerLine tone="note">
+                <b>You have {frictionPoints.length} friction point{frictionPoints.length > 1 ? 's' : ''}: {frictionPoints.join(', ')}</b>{' '}
+                These are the subjects where "why bother?" hits hardest. They feel pointless right now, which makes the effort feel unbearable. The rest of this module will help you change that.
+              </AnswerLine>
             ) : (
-              <>
-                <p className="text-sm font-semibold text-[var(--module-success-text)] dark:text-[var(--module-success-text)] mb-1">No friction points detected.</p>
-                <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)]">You already see strong connections between your subjects and your future. This module will help you strengthen and articulate those connections even further.</p>
-              </>
+              <AnswerLine>
+                <b>No friction points detected.</b> You already see strong connections between your subjects and your future. This module will help you strengthen and articulate those connections even further.
+              </AnswerLine>
             )}
           </motion.div>
         )}
-      </div>
+      </ExerciseSheet>
     );
 };
 
@@ -181,33 +145,29 @@ const TransferableSkillsMatrix = () => {
     ];
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Transferable Skills Matrix</h4>
-            <div className="mt-6 flow-root">
-                <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                    <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-                        <table className="min-w-full divide-y divide-zinc-200">
-                            <thead>
-                                <tr>
-                                    <th className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-[var(--module-ink)]">LC Activity</th>
-                                    <th className="px-3 py-3.5 text-left text-sm font-semibold text-[var(--module-ink)]">Corporate/Life Skill</th>
-                                    <th className="px-3 py-3.5 text-left text-sm font-semibold text-[var(--module-ink)]">Career Application</th>
-                                </tr>
-                            </thead>
-                            <tbody className="divide-y divide-zinc-100">
-                                {skills.map(item => (
-                                    <tr key={item.activity} onMouseEnter={() => setActiveRow(item.activity)} onMouseLeave={() => setActiveRow(null)} className="hover:bg-[var(--module-danger-soft)] cursor-pointer">
-                                        <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium">{item.activity}</td>
-                                        <td className="whitespace-nowrap px-3 py-4 text-sm font-medium">{item.skill}</td>
-                                        <td className="whitespace-nowrap px-3 py-4 text-sm font-medium">{item.application}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+        <ExerciseSheet title="Transferable Skills Matrix" name="TransferableSkillsMatrix">
+            {/* A table you read: ruled rows on the sheet, no tint on hover (nothing here is pressed) */}
+            <div className="overflow-x-auto">
+                <table className="min-w-full border-t border-hairline">
+                    <thead>
+                        <tr className="border-b border-hairline">
+                            <th className="py-3 pr-4 text-left align-bottom t-meta font-normal">LC Activity</th>
+                            <th className="py-3 pr-4 text-left align-bottom t-meta font-normal">Corporate/Life Skill</th>
+                            <th className="py-3 text-left align-bottom t-meta font-normal">Career Application</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {skills.map(item => (
+                            <tr key={item.activity} onMouseEnter={() => setActiveRow(item.activity)} onMouseLeave={() => setActiveRow(null)} className="border-b border-hairline">
+                                <td className="align-top py-3 pr-4 text-[15px] leading-[21px] text-ink-primary">{item.activity}</td>
+                                <td className="align-top py-3 pr-4 text-[15px] leading-[21px] text-ink-primary">{item.skill}</td>
+                                <td className="align-top py-3 text-[15px] leading-[21px] text-ink-secondary">{item.application}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
             </div>
-        </div>
+        </ExerciseSheet>
     );
 };
 
@@ -329,43 +289,43 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
               </>) : (<>
               <p>You now have the tools to rebuild the connection between what you're doing today and where you want to be. This is the <strong>Purpose Protocol</strong> -- a 5-phase plan for building motivation that actually lasts.</p>
               </>)}
-              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>1</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Phase 1: The Audit</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>For each subject, ask "Why am I doing this?" If the only answer is "points," that's a friction point. Do the Utility Value Writing exercise on it.</p>
+              <ol className="ex-nums">
+                <li>
+                  <span className="ex-num">1</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Phase 1: The Audit</p>
+                    <p className="ex-num-sub">For each subject, ask "Why am I doing this?" If the only answer is "points," that's a friction point. Do the Utility Value Writing exercise on it.</p>
                   </div>
-                </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>2</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Phase 2: The Vision</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Spend 15 minutes writing a detailed picture of your "Best Possible Self" 5 years from now. Then pair that vision with your biggest real obstacle.</p>
+                </li>
+                <li>
+                  <span className="ex-num">2</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Phase 2: The Vision</p>
+                    <p className="ex-num-sub">Spend 15 minutes writing a detailed picture of your "Best Possible Self" 5 years from now. Then pair that vision with your biggest real obstacle.</p>
                   </div>
-                </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>3</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Phase 3: The Craft</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Find one assignment this week and "course craft" it -- put your own spin on it so it feels like yours.</p>
+                </li>
+                <li>
+                  <span className="ex-num">3</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Phase 3: The Craft</p>
+                    <p className="ex-num-sub">Find one assignment this week and "course craft" it -- put your own spin on it so it feels like yours.</p>
                   </div>
-                </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-success)" }}>4</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}>Phase 4: The Habit</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-success-text)", opacity: 0.8 }}>Make starting so small it's impossible to fail. One page. One question. Just begin.</p>
+                </li>
+                <li>
+                  <span className="ex-num">4</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Phase 4: The Habit</p>
+                    <p className="ex-num-sub">Make starting so small it's impossible to fail. One page. One question. Just begin.</p>
                   </div>
-                </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>5</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Phase 5: Re-Authoring</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>If you feel stuck, step back from the problem ("The stress is visiting me, it's not who I am") and think about skills you use in other areas of your life -- gaming, sports, whatever -- and how they apply to your schoolwork.</p>
+                </li>
+                <li>
+                  <span className="ex-num">5</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Phase 5: Re-Authoring</p>
+                    <p className="ex-num-sub">If you feel stuck, step back from the problem ("The stress is visiting me, it's not who I am") and think about skills you use in other areas of your life -- gaming, sports, whatever -- and how they apply to your schoolwork.</p>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ol>
               <MicroCommitment theme={theme}>
                 <p>Pick one phase. Just one. Commit to trying it for one week. You're not just studying -- you're building something that matters to you.</p>
               </MicroCommitment>

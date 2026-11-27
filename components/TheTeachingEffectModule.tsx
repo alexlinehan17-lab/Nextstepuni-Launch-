@@ -1,4 +1,3 @@
-import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -6,9 +5,8 @@ import { moduleFill,moduleText } from './learning/brandTokens';
 
 import { motion } from 'framer-motion';
 import { Brain,Flag,Lightbulb,MessageSquare,Users } from 'lucide-react';
-import React,{ useMemo,useState } from 'react';
+import React,{ useId,useMemo,useState } from 'react';
 import { TEACHING_EFFECT_REFERENCE_LIST } from '../data/references/teachingEffect';
-import { COLORS } from '../design/tokens';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { limeTheme } from '../moduleThemes';
 import { type ModuleProgress } from '../types';
@@ -16,6 +14,9 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { ConceptCardGrid,Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerLine,AnswerTick,ExerciseLabel,ExerciseSheet } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
+import { AreaField } from './ui/Field';
 
 const theme = limeTheme;
 
@@ -64,22 +65,23 @@ const TeachVsTestComparison = () => {
     return d;
   };
 
+  // Phase words are ink (never a green or red sentence); the fading ones are quieter.
   const testPhases = [
-    { label: 'Memorising facts', x1: 0, x2: 0.33, color: "var(--module-ink)" },
-    { label: 'Fading', x1: 0.33, x2: 0.66, color: "var(--module-danger-text)" },
-    { label: 'Fragmented', x1: 0.66, x2: 1, color: "var(--module-danger-text)" },
+    { label: 'Memorising facts', x1: 0, x2: 0.33, color: "var(--ink-primary)" },
+    { label: 'Fading', x1: 0.33, x2: 0.66, color: "var(--ink-muted)" },
+    { label: 'Fragmented', x1: 0.66, x2: 1, color: "var(--ink-muted)" },
   ];
   const teachPhases = [
-    { label: 'Building framework', x1: 0, x2: 0.33, color: "var(--module-success-text)" },
-    { label: 'Deepening', x1: 0.33, x2: 0.66, color: "var(--module-success-text)" },
-    { label: 'Teachable', x1: 0.66, x2: 1, color: "var(--module-success-text)" },
+    { label: 'Building framework', x1: 0, x2: 0.33, color: "var(--ink-primary)" },
+    { label: 'Deepening', x1: 0.33, x2: 0.66, color: "var(--ink-primary)" },
+    { label: 'Teachable', x1: 0.66, x2: 1, color: "var(--ink-primary)" },
   ];
 
   const Chart = ({ recall, organization, phases, areaColor, areaId, label }: {
     recall: number[]; organization: number[]; phases: { label: string; x1: number; x2: number; color: string }[];
     areaColor: string; areaId: string; label: string;
   }) => (
-    <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
+    <svg viewBox={`0 0 ${W} ${H}`} className="ex-figure-art w-full h-auto">
       <defs>
         <linearGradient id={areaId} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor={areaColor} stopOpacity="0.5" />
@@ -88,10 +90,10 @@ const TeachVsTestComparison = () => {
       </defs>
       {/* Grid lines */}
       {[0.25, 0.5, 0.75, 1.0].map(v => (
-        <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
+        <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--hairline)" strokeDasharray="3 3" />
       ))}
       {/* Baseline */}
-      <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
+      <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--outline-soft)" />
       {/* Recall area */}
       <motion.path
         d={buildArea(recall)}
@@ -110,7 +112,7 @@ const TeachVsTestComparison = () => {
       {/* Organization line (dashed) */}
       <motion.path
         d={buildLine(organization)}
-        fill="none" stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
+        fill="none" stroke="var(--ink-primary)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
         initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
         transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
       />
@@ -121,63 +123,62 @@ const TeachVsTestComparison = () => {
         />
       ))}
       {/* Y-axis labels */}
-      <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
-      <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
+      <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--ink-muted)" fontWeight="600" style={{ fontFamily: 'var(--font-ui)' }}>High</text>
+      <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--ink-muted)" fontWeight="600" style={{ fontFamily: 'var(--font-ui)' }}>Low</text>
       {/* X-axis labels */}
       {xLabels.map((m, i) => (
-        <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">{m}</text>
+        <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="9" fill="var(--ink-muted)" textAnchor="middle" fontWeight="600" style={{ fontFamily: 'var(--font-ui)' }}>{m}</text>
       ))}
       {/* Phase labels */}
       {phases.map((p, i) => (
-        <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+        <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700" style={{ fontFamily: 'var(--font-ui)' }}>{p.label}</text>
       ))}
       {/* Chart label */}
-      <text x={W / 2} y={14} fontSize="11" fill="var(--module-muted)" textAnchor="middle" fontWeight="700">{label}</text>
+      <text x={W / 2} y={14} fontSize="11" fill="var(--ink-secondary)" textAnchor="middle" fontWeight="700" style={{ fontFamily: 'var(--font-ui)' }}>{label}</text>
       {/* Legend */}
       <line x1={W - padR - 120} x2={W - padR - 104} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-      <text x={W - padR - 100} y={17} fontSize="8" fill="var(--module-surface)">Raw Recall</text>
-      <line x1={W - padR - 54} x2={W - padR - 38} y1={14} y2={14} stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="4 2" />
-      <text x={W - padR - 34} y={17} fontSize="8" fill="var(--module-surface)">Organized</text>
+      <text x={W - padR - 100} y={17} fontSize="8" fill="var(--ink-muted)" style={{ fontFamily: 'var(--font-ui)' }}>Raw Recall</text>
+      <line x1={W - padR - 54} x2={W - padR - 38} y1={14} y2={14} stroke="var(--ink-primary)" strokeWidth="1.5" strokeDasharray="4 2" />
+      <text x={W - padR - 34} y={17} fontSize="8" fill="var(--ink-muted)" style={{ fontFamily: 'var(--font-ui)' }}>Organized</text>
     </svg>
   );
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Teach vs. Test Effect</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Same material. Different expectation. Dramatically different outcomes.</p>
-
+    <ExerciseSheet title="The Teach vs. Test Effect" sub="Same material. Different expectation. Dramatically different outcomes." name="TeachVsTestComparison">
       {!revealed ? (
-        <div className="text-center">
-          <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">What happens when you study to teach versus study to pass a test? The difference is not just how much you remember, but how you organize what you know.</p>
-          <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-success)] text-[var(--module-ink)] hover:bg-[var(--module-success)] transition-colors" data-wide-button="true">
-            Reveal the Effect
-          </button>
+        <div className="ex-stack">
+          <p className="t-sub">What happens when you study to teach versus study to pass a test? The difference is not just how much you remember, but how you organize what you know.</p>
+          <div className="ex-actions">
+            <Button onClick={() => setRevealed(true)}>
+              Reveal the Effect
+            </Button>
+          </div>
         </div>
       ) : (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-          <div className="grid md:grid-cols-2 gap-4 mb-5">
-            <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] p-3">
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="flex flex-col gap-5">
+          {/* The two charts on the sheet, no tinted boxes: ink for test prep, the green line for teaching prep */}
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="ex-figure">
               <Chart recall={testRecall} organization={testOrganization} phases={testPhases}
-                areaColor="var(--module-danger-text)" areaId="test-grad" label="Preparing for a Test" />
+                areaColor="var(--ink-secondary)" areaId="test-grad" label="Preparing for a Test" />
             </div>
-            <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] p-3">
+            <div className="ex-figure">
               <Chart recall={teachRecall} organization={teachOrganization} phases={teachPhases}
-                areaColor="var(--module-success-text)" areaId="teach-grad" label="Preparing to Teach" />
+                areaColor="var(--success-hex)" areaId="teach-grad" label="Preparing to Teach" />
             </div>
           </div>
-          <div className="grid md:grid-cols-2 gap-4 text-sm">
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-              <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
-              <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">Test preppers</strong> take in facts quickly but store them as loose, disconnected pieces. Without any structure holding them together, those facts fade fast and fall apart under pressure.</p>
+          {/* What each chart says: words you read, under a hairline, side by side on a laptop */}
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="ex-block">
+              <p className="ex-block-text"><strong className="text-ink-primary">Test preppers</strong> take in facts quickly but store them as loose, disconnected pieces. Without any structure holding them together, those facts fade fast and fall apart under pressure.</p>
             </div>
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-              <span className="text-[var(--module-success-text)] text-lg mt-0.5"></span>
-              <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Teaching preppers</strong> build a mental framework from the start. Even though they take in less at first, the organised structure means the knowledge sticks around and is easy to pull up when they need it.</p>
+            <div className="ex-block">
+              <p className="ex-block-text"><strong className="text-ink-primary">Teaching preppers</strong> build a mental framework from the start. Even though they take in less at first, the organised structure means the knowledge sticks around and is easy to pull up when they need it.</p>
             </div>
           </div>
         </MotionDiv>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 
@@ -187,6 +188,7 @@ const ORIGINAL_CONCEPT = "Natural selection is the process by which organisms wi
 const ExplainItBackChallenge = () => {
   const [userText, setUserText] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const explanationLabelId = useId();
 
   const originalWords = useMemo(() => {
     const words = ORIGINAL_CONCEPT.toLowerCase().replace(/[.,;:!?'"()]/g, '').split(/\s+/);
@@ -226,151 +228,132 @@ const ExplainItBackChallenge = () => {
   const isMid = !isGood && analysis.jargonWords.length <= 5;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      {/* Section header */}
-      <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Feynman Technique</span>
-        <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Explain It Back Challenge</h4>
-        <p className="mt-1" style={{ fontSize: 15, color: "var(--module-muted)" }}>Explain this definition in simple terms — as if to a 12-year-old.</p>
-      </div>
-
-      {/* Zone 1 — Definition card */}
-      <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '20px 24px' }}>
-        <div className="flex items-center justify-between mb-3">
-          <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: "var(--module-surface)", color: "var(--module-muted)", border: "1px solid var(--module-line)", borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>The Definition</span>
-          <span style={{ fontSize: 11, fontWeight: 600, backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '3px 10px' }}>Biology</span>
+    <ExerciseSheet label="Feynman Technique" title="Explain It Back Challenge" sub="Explain this definition in simple terms — as if to a 12-year-old." name="ExplainItBackChallenge">
+      {/* Zone 1 — the definition: words you start from, under their labels, not in a box */}
+      <div className="ex-thought">
+        <div className="flex items-baseline justify-between gap-3">
+          <ExerciseLabel>The Definition</ExerciseLabel>
+          <span className="ex-label">Biology</span>
         </div>
-        <p className="font-serif" style={{ fontSize: 16, color: "var(--module-ink)", lineHeight: 1.7 }}>{ORIGINAL_CONCEPT}</p>
+        <p className="ex-quote">{ORIGINAL_CONCEPT}</p>
       </div>
 
       {!submitted ? (
         <>
           {/* Connector */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, margin: '16px 0' }}>
-            <div style={{ flex: 1, height: 1, background: "var(--module-surface)" }} />
-            <div style={{ background: moduleFill(COLORS.accentTint), border: '1.5px solid rgba(var(--nsu-orange-rgb), 0.3)', borderRadius: 20, padding: '6px 14px', flexShrink: 0 }}>
-              <span style={{ fontSize: 12, fontWeight: 700, color: moduleText(COLORS.accentDarkText), letterSpacing: '0.05em' }}>NOW EXPLAIN IT</span>
-            </div>
-            <div style={{ flex: 1, height: 1, background: "var(--module-surface)" }} />
+          <div className="ex-connector">
+            <i aria-hidden="true" />
+            <span className="ex-label">NOW EXPLAIN IT</span>
+            <i aria-hidden="true" />
           </div>
 
-          {/* Zone 2 — Response */}
-          <div style={{ backgroundColor: moduleFill(COLORS.accentTint), border: `2px solid ${COLORS.accent}`, borderRadius: 14, padding: '18px 20px' }}>
-            <div className="flex items-center justify-between mb-3">
-              <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Your Explanation</span>
-              <span style={{ fontSize: 11, color: "var(--module-muted)" }}>Aim for 2–3 sentences</span>
-            </div>
-            <textarea
-              value={userText}
-              onChange={(e) => setUserText(e.target.value)}
-              placeholder="Imagine you're explaining this to a younger sibling..."
-              className="w-full outline-none font-serif"
-              style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", borderRadius: 10, padding: '14px 16px', fontSize: 15, color: "var(--module-ink)", lineHeight: 1.6, minHeight: 120, resize: 'none' as const }}
-              onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
-              onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-muted)"; }}
-            />
+          {/* Zone 2 — Response: its label and its aim above the field */}
+          <div className="flex items-baseline justify-between gap-3">
+            <p id={explanationLabelId} className="ex-label">Your Explanation</p>
+            <span className="t-meta">Aim for 2–3 sentences</span>
+          </div>
+          <AreaField
+            aria-labelledby={explanationLabelId}
+            value={userText}
+            onChange={(e) => setUserText(e.target.value)}
+            placeholder="Imagine you're explaining this to a younger sibling..."
+            rows={4}
+          />
 
-            {/* Live stats */}
-            {userText.trim().length > 0 && (
-              <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="mt-3 grid grid-cols-3 gap-2">
-                <div className="text-center p-2 bg-[var(--module-surface)] rounded-lg" style={{ border: "1.5px solid var(--module-line)" }}>
-                  <p className="font-serif font-bold" style={{ fontSize: 18, color: "var(--module-ink)" }}>{analysis.wordCount}</p>
-                  <p style={{ fontSize: 10, color: "var(--module-muted)" }}>Words</p>
-                </div>
-                <div className="text-center p-2 bg-[var(--module-surface)] rounded-lg" style={{ border: `1.5px solid ${analysis.jargonWords.length > 5 ? "var(--module-line)" : COLORS.success}` }}>
-                  <p className="font-serif font-bold" style={{ fontSize: 18, color: moduleText(analysis.jargonWords.length > 5 ? "var(--module-muted)" : COLORS.success) }}>{analysis.jargonWords.length}</p>
-                  <p style={{ fontSize: 10, color: "var(--module-muted)" }}>Borrowed</p>
-                </div>
-                <div className="text-center p-2 bg-[var(--module-surface)] rounded-lg" style={{ border: `1.5px solid ${analysis.simplicityScore >= 60 ? COLORS.success : "var(--module-line)"}` }}>
-                  <p className="font-serif font-bold" style={{ fontSize: 18, color: moduleText(analysis.simplicityScore >= 60 ? COLORS.success : "var(--module-muted)") }}>{analysis.simplicityScore}%</p>
-                  <p style={{ fontSize: 10, color: "var(--module-muted)" }}>Simplicity</p>
-                </div>
-              </MotionDiv>
-            )}
+          {/* Live stats: three counts in a row under a hairline (the green tick where a count is good) */}
+          {userText.trim().length > 0 && (
+            <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-3 gap-2 pt-3 border-t border-hairline">
+              <div className="flex flex-col items-center gap-1 text-center">
+                <p className="m-0 t-heading text-ink-primary">{analysis.wordCount}</p>
+                <p className="m-0 t-meta">Words</p>
+              </div>
+              <div className="flex flex-col items-center gap-1 text-center">
+                <p className="m-0 t-heading text-ink-primary inline-flex items-center gap-1.5">{analysis.jargonWords.length}{analysis.jargonWords.length > 5 ? null : <AnswerTick />}</p>
+                <p className="m-0 t-meta">Borrowed</p>
+              </div>
+              <div className="flex flex-col items-center gap-1 text-center">
+                <p className="m-0 t-heading text-ink-primary inline-flex items-center gap-1.5">{analysis.simplicityScore}%{analysis.simplicityScore >= 60 ? <AnswerTick /> : null}</p>
+                <p className="m-0 t-meta">Simplicity</p>
+              </div>
+            </MotionDiv>
+          )}
 
-            {analysis.jargonWords.length > 0 && (
-              <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-3">
-                <p style={{ fontSize: 11, fontWeight: 600, color: "var(--module-muted)", marginBottom: 6 }}>Words borrowed from original:</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {analysis.jargonWords.map((w, i) => (
-                    <span key={i} style={{ fontSize: 11, fontWeight: 500, backgroundColor: "var(--module-surface)", color: "var(--module-muted)", border: "1px solid var(--module-line)", borderRadius: 20, padding: '2px 8px' }}>{w}</span>
-                  ))}
-                </div>
-              </MotionDiv>
-            )}
+          {analysis.jargonWords.length > 0 && (
+            <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col gap-2">
+              <ExerciseLabel>Words borrowed from original:</ExerciseLabel>
+              {/* the words as plain words, spaced apart (no tags) */}
+              <div className="flex flex-wrap gap-x-4 gap-y-1">
+                {analysis.jargonWords.map((w, i) => (
+                  <span key={i} className="t-sub">{w}</span>
+                ))}
+              </div>
+            </MotionDiv>
+          )}
 
-            <div className="mt-4">
-              <motion.button
-                onClick={handleSubmit}
-                disabled={userText.trim().length <= 10}
-                whileTap={{ y: 3 }}
-                className="text-[var(--module-ink)] font-semibold"
-                style={{ backgroundColor: moduleFill(userText.trim().length > 10 ? COLORS.accent : "var(--module-surface)"), borderRadius: 100, padding: '13px 32px', fontSize: 15, borderBottom: userText.trim().length > 10 ? `3px solid ${COLORS.accentDark}` : 'none', boxShadow: 'none', cursor: userText.trim().length > 10 ? 'pointer' : 'not-allowed', opacity: userText.trim().length > 10 ? 1 : 0.5 }} data-wide-button="true" data-selected={!!(userText.trim().length > 10)} data-tone="orange" aria-pressed={!!(userText.trim().length > 10)}
-              >
-                Submit Explanation
-              </motion.button>
-            </div>
+          <div className="ex-actions">
+            <Button
+              onClick={handleSubmit}
+              {...{ disabled: userText.trim().length <= 10 }}
+              aria-pressed={!!(userText.trim().length > 10)}
+            >
+              Submit Explanation
+            </Button>
           </div>
         </>
       ) : (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="mt-6">
-          {/* Side by side comparison */}
-          <div className="grid md:grid-cols-2 gap-3 mb-6">
-            <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '16px 20px' }}>
-              <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', color: "var(--module-muted)", textTransform: 'uppercase' as const }}>Original</span>
-              <p className="font-serif mt-2" style={{ fontSize: 14, color: "var(--module-ink)", lineHeight: 1.6 }}>{ORIGINAL_CONCEPT}</p>
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-5">
+          {/* Side by side comparison: two blocks of words under a hairline */}
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="ex-block">
+              <span className="ex-label">Original</span>
+              <p className="ex-block-text">{ORIGINAL_CONCEPT}</p>
             </div>
-            <div style={{ backgroundColor: moduleFill(COLORS.successTint), border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '16px 20px' }}>
-              <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', color: moduleText(COLORS.successDarkText), textTransform: 'uppercase' as const }}>Your Explanation</span>
-              <p className="font-serif mt-2" style={{ fontSize: 14, color: "var(--module-ink)", lineHeight: 1.6 }}>{userText}</p>
+            <div className="ex-block">
+              <span className="ex-label">Your Explanation</span>
+              <p className="ex-block-text text-ink-primary">{userText}</p>
             </div>
           </div>
 
           {/* Stats row */}
-          <div className="grid grid-cols-3 gap-2 mb-6">
-            <div className="text-center p-3 bg-[var(--module-surface)] rounded-xl" style={{ border: "2px solid var(--module-line)" }}>
-              <p className="font-serif font-bold" style={{ fontSize: 22, color: "var(--module-ink)" }}>{analysis.wordCount}</p>
-              <p style={{ fontSize: 10, color: "var(--module-muted)" }}>Words</p>
+          <div className="grid grid-cols-3 gap-2 pt-3 border-t border-hairline">
+            <div className="flex flex-col items-center gap-1 text-center">
+              <p className="m-0 t-heading text-ink-primary">{analysis.wordCount}</p>
+              <p className="m-0 t-meta">Words</p>
             </div>
-            <div className="text-center p-3 bg-[var(--module-surface)] rounded-xl" style={{ border: `2px solid ${analysis.jargonWords.length > 5 ? "var(--module-line)" : analysis.jargonWords.length > 2 ? "var(--module-line)" : COLORS.success}` }}>
-              <p className="font-serif font-bold" style={{ fontSize: 22, color: moduleText(analysis.jargonWords.length > 5 ? "var(--module-muted)" : analysis.jargonWords.length > 2 ? "var(--module-muted)" : COLORS.success) }}>{analysis.jargonWords.length}</p>
-              <p style={{ fontSize: 10, color: "var(--module-muted)" }}>Borrowed</p>
+            <div className="flex flex-col items-center gap-1 text-center">
+              <p className="m-0 t-heading text-ink-primary inline-flex items-center gap-1.5">{analysis.jargonWords.length}{analysis.jargonWords.length > 5 ? null : analysis.jargonWords.length > 2 ? null : <AnswerTick />}</p>
+              <p className="m-0 t-meta">Borrowed</p>
             </div>
-            <div className="text-center p-3 bg-[var(--module-surface)] rounded-xl" style={{ border: `2px solid ${analysis.simplicityScore >= 60 ? COLORS.success : "var(--module-line)"}` }}>
-              <p className="font-serif font-bold" style={{ fontSize: 22, color: moduleText(analysis.simplicityScore >= 60 ? COLORS.success : "var(--module-muted)") }}>{analysis.simplicityScore}%</p>
-              <p style={{ fontSize: 10, color: "var(--module-muted)" }}>Simplicity</p>
+            <div className="flex flex-col items-center gap-1 text-center">
+              <p className="m-0 t-heading text-ink-primary inline-flex items-center gap-1.5">{analysis.simplicityScore}%{analysis.simplicityScore >= 60 ? <AnswerTick /> : null}</p>
+              <p className="m-0 t-meta">Simplicity</p>
             </div>
           </div>
 
-          {/* Feedback */}
+          {/* Feedback: a line in ink; the typed tick stays, in the tick's green */}
           <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
             {isGood ? (
-              <div style={{ backgroundColor: moduleFill(COLORS.successTint), border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '20px 22px' }}>
-                <div className="flex items-center gap-3 mb-2">
-                  <div style={{ width: 36, height: 36, borderRadius: '50%', backgroundColor: moduleFill(COLORS.success), display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontSize: 18, color: 'white' }}>✓</div>
-                  <p className="font-serif font-semibold" style={{ fontSize: 18, color: moduleText(COLORS.successDarkText) }}>Explanation approved.</p>
-                </div>
-                <p style={{ fontSize: 14, color: moduleText(COLORS.success) }}>Nice one! You properly rebuilt that in your own words. That's exactly the kind of explaining that makes things stick long-term.</p>
-              </div>
+              <AnswerLine tone="note">
+                <span style={{ color: 'var(--success-hex)' }}>✓</span>{' '}
+                <b>Explanation approved.</b> Nice one! You properly rebuilt that in your own words. That's exactly the kind of explaining that makes things stick long-term.
+              </AnswerLine>
             ) : (
-              <div style={{ border: "1px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: 14, padding: '16px 20px' }}>
-                <p className="italic" style={{ fontSize: 14, color: "var(--module-ink)" }}>
-                  {isMid
-                    ? "Good effort, but some of your phrasing is pretty close to the original. Try pushing further — can you explain it using a totally different comparison or example?"
-                    : "This reads like you're echoing the original rather than rebuilding it. Try closing the original, and explain it as if to a younger sibling. Use everyday examples."}
-                </p>
-              </div>
+              <AnswerLine tone="note">
+                {isMid
+                  ? "Good effort, but some of your phrasing is pretty close to the original. Try pushing further — can you explain it using a totally different comparison or example?"
+                  : "This reads like you're echoing the original rather than rebuilding it. Try closing the original, and explain it as if to a younger sibling. Use everyday examples."}
+              </AnswerLine>
             )}
           </MotionDiv>
 
-          <div className="mt-6 text-center">
-            <button onClick={handleReset} className="font-medium transition-colors" style={{ fontSize: 13, color: 'var(--module-accent-text)', background: 'none', border: 'none', cursor: 'pointer' }} data-wide-button="true">
+          <div className="ex-actions">
+            <TextButton tone="quiet" onClick={handleReset}>
               Try again
-            </button>
+            </TextButton>
           </div>
         </MotionDiv>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 

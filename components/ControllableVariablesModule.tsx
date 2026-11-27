@@ -1,5 +1,3 @@
-import { moduleFill,moduleText } from './learning/brandTokens';
-
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -7,7 +5,6 @@ import { moduleFill,moduleText } from './learning/brandTokens';
 
 import { motion } from 'framer-motion';
 import {
-CheckCircle2,
 ClipboardCheck,
 Coffee,
 Cpu,Moon,
@@ -23,6 +20,9 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerGroup,AnswerLine,ExerciseLabel,ExerciseSheet } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = slateTheme;
 
@@ -87,68 +87,60 @@ const GlycemicIndexSimulator = () => {
     ];
 
     return (
-      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Glycemic Index Simulator</h4>
-        <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Toggle each breakfast to compare what happens to your blood sugar over 3 hours.</p>
-
-        {/* Buttons */}
-        <div className="flex justify-center gap-3 mb-6">
-          <button
+      <ExerciseSheet title="Glycemic Index Simulator" sub="Toggle each breakfast to compare what happens to your blood sugar over 3 hours." name="GlycemicIndexSimulator">
+        {/* The two breakfasts: either or both may be on */}
+        <AnswerGroup kind="several" columns={2}>
+          <ChoiceTile
+            kind="several"
+            tile
+            chosen={selected.has('high')}
             onClick={() => toggle('high')}
-            className={`px-4 py-2 text-xs font-bold rounded-lg border transition-all ${
-              selected.has('high')
-                ? "bg-[var(--module-danger)] text-[var(--module-ink)] border-[var(--module-line)]"
-                : "bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] border-[var(--module-line)] hover:border-[var(--module-line)]"
-            }`} data-wide-button="true" data-selected={!!(selected.has('high'))} data-tone="coral" aria-pressed={!!(selected.has('high'))}
-          >
-            Sugary Cereal (High-GI)
-          </button>
-          <button
+            label="Sugary Cereal (High-GI)"
+          />
+          <ChoiceTile
+            kind="several"
+            tile
+            chosen={selected.has('low')}
             onClick={() => toggle('low')}
-            className={`px-4 py-2 text-xs font-bold rounded-lg border transition-all ${
-              selected.has('low')
-                ? "bg-[var(--module-success)] text-[var(--module-ink)] border-success"
-                : "bg-[var(--module-success-soft)] text-[var(--module-success-text)] border-success/40 hover:border-success"
-            }`} data-wide-button="true" data-selected={!!(selected.has('low'))} data-tone="mint" aria-pressed={!!(selected.has('low'))}
-          >
-            Porridge (Low-GI)
-          </button>
-        </div>
+            label="Porridge (Low-GI)"
+          />
+        </AnswerGroup>
 
-        {/* Chart */}
-        <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] p-2">
-          <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto">
+        {/* Chart: on the sheet, not in a box of its own; ink and the green line for the steady curve */}
+        <div className="ex-figure">
+          <svg viewBox={`0 0 ${W} ${H}`} className="ex-figure-art w-full h-auto">
             {/* Focus zone band */}
             <rect
               x={padL} y={focusTop}
               width={chartW} height={focusBottom - focusTop}
-              fill="var(--module-surface)"
+              fill="var(--hairline)"
+              opacity={0.5}
             />
             <text
               x={padL + 4} y={focusTop + 11}
               className="text-[7px] font-bold"
-              fill="var(--module-success)"
-              opacity={0.6}
+              fill="var(--ink-muted)"
+              style={{ fontFamily: 'var(--font-ui)' }}
             >
               FOCUS ZONE
             </text>
 
             {/* Gridlines */}
             {levels.map(l => (
-              <line key={l.val} x1={padL} y1={toY(l.val)} x2={W - padR} y2={toY(l.val)} stroke="currentColor" className="text-[var(--module-muted)] dark:text-[var(--module-ink)]" strokeWidth="0.5" />
+              <line key={l.val} x1={padL} y1={toY(l.val)} x2={W - padR} y2={toY(l.val)} stroke="var(--hairline)" strokeWidth="0.5" />
             ))}
             {hours.map(h => (
-              <line key={h} x1={toX(h)} y1={padT} x2={toX(h)} y2={H - padB} stroke="currentColor" className="text-[var(--module-muted)] dark:text-[var(--module-ink)]" strokeWidth="0.5" />
+              <line key={h} x1={toX(h)} y1={padT} x2={toX(h)} y2={H - padB} stroke="var(--hairline)" strokeWidth="0.5" />
             ))}
 
             {/* Y-axis labels */}
             {levels.map(l => (
-              <text key={l.val} x={padL - 4} y={toY(l.val) + 3} textAnchor="end" className="text-[7px]" fill="var(--module-surface)">{l.label}</text>
+              <text key={l.val} x={padL - 4} y={toY(l.val) + 3} textAnchor="end" className="text-[7px]" fill="var(--ink-muted)" style={{ fontFamily: 'var(--font-ui)' }}>{l.label}</text>
             ))}
 
             {/* X-axis labels */}
             {hours.map(h => (
-              <text key={h} x={toX(h)} y={H - padB + 14} textAnchor="middle" className="text-[7px]" fill="var(--module-surface)">{h}h</text>
+              <text key={h} x={toX(h)} y={H - padB + 14} textAnchor="middle" className="text-[7px]" fill="var(--ink-muted)" style={{ fontFamily: 'var(--font-ui)' }}>{h}h</text>
             ))}
 
             {/* High-GI path */}
@@ -157,7 +149,7 @@ const GlycemicIndexSimulator = () => {
                 <motion.path
                   d={highPath}
                   fill="none"
-                  stroke="var(--module-danger-text)"
+                  stroke="var(--ink-primary)"
                   strokeWidth="2.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -171,8 +163,8 @@ const GlycemicIndexSimulator = () => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.8 }}
                 >
-                  <line x1={toX(1.6)} y1={toY(35)} x2={toX(1.6)} y2={toY(35) - 18} stroke="var(--module-danger-text)" strokeWidth="0.8" strokeDasharray="2 2" />
-                  <text x={toX(1.6)} y={toY(35) - 22} textAnchor="middle" className="text-[6px] font-bold" fill="var(--module-danger)">CRASH</text>
+                  <line x1={toX(1.6)} y1={toY(35)} x2={toX(1.6)} y2={toY(35) - 18} stroke="var(--ink-muted)" strokeWidth="0.8" strokeDasharray="2 2" />
+                  <text x={toX(1.6)} y={toY(35) - 22} textAnchor="middle" className="text-[6px] font-bold" fill="var(--ink-primary)" style={{ fontFamily: 'var(--font-ui)' }}>CRASH</text>
                 </motion.g>
               </>
             )}
@@ -182,7 +174,7 @@ const GlycemicIndexSimulator = () => {
               <motion.path
                 d={lowPath}
                 fill="none"
-                stroke="var(--module-success-text)"
+                stroke="var(--success-hex)"
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -194,32 +186,32 @@ const GlycemicIndexSimulator = () => {
           </svg>
         </div>
 
-        {/* Legend / insight */}
+        {/* Legend / insight: each line's swatch and its words */}
         {selected.size > 0 && (
           <motion.div
             initial={{ opacity: 0, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mt-4 flex justify-center gap-5"
+            className="flex flex-col gap-2"
           >
             {selected.has('high') && (
               <div className="flex items-center gap-2">
-                <div className="w-5 h-1 rounded-full bg-[var(--module-danger)]" />
-                <span className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)]">Spike then crash — focus lost by hour 2</span>
+                <i className="w-5 h-1 rounded-sm flex-none" style={{ backgroundColor: 'var(--ink-primary)' }} aria-hidden="true" />
+                <span className="t-meta">Spike then crash — focus lost by hour 2</span>
               </div>
             )}
             {selected.has('low') && (
               <div className="flex items-center gap-2">
-                <div className="w-5 h-1 rounded-full" style={{ backgroundColor: "var(--module-success)" }} />
-                <span className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)]">Steady release — stays in focus zone for 3 hours</span>
+                <i className="w-5 h-1 rounded-sm flex-none" style={{ backgroundColor: 'var(--success-hex)' }} aria-hidden="true" />
+                <span className="t-meta">Steady release — stays in focus zone for 3 hours</span>
               </div>
             )}
           </motion.div>
         )}
 
         {selected.size === 0 && (
-          <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-4">Select a breakfast to see its blood sugar curve.</p>
+          <p className="t-meta">Select a breakfast to see its blood sugar curve.</p>
         )}
-      </div>
+      </ExerciseSheet>
     );
 };
 
@@ -343,42 +335,25 @@ const CognitiveImpairmentClock = () => {
   const periodStr = timeParts[1] || '';
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
-        <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Cognitive Impairment Clock</h4>
-        <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Pick your wake-up time and watch how wakefulness erodes your brain power throughout the day.</p>
-      </div>
-
+    <ExerciseSheet label="Neuroscience Simulation" title="Cognitive Impairment Clock" sub="Pick your wake-up time and watch how wakefulness erodes your brain power throughout the day." name="CognitiveImpairmentClock">
       {/* Wake time selection */}
       {!playing && !finished && (
-        <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col items-center gap-5">
-          <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", textTransform: 'uppercase' as const }}>Wake-up Time</p>
-          <div className="flex flex-wrap justify-center gap-3">
+        <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="ex-stack">
+          <AnswerGroup kind="one" legend="Wake-up Time">
             {WAKE_OPTIONS.map(opt => (
-              <button
+              <ChoiceTile
                 key={opt.hour}
+                chosen={wakeHour === opt.hour}
                 onClick={() => { setWakeHour(opt.hour); setHoursAwake(0); setFinished(false); setLastMilestone(null); }}
-                style={{
-                  backgroundColor: moduleFill(wakeHour === opt.hour ? "var(--module-surface)" : "var(--module-surface)"),
-                  border: wakeHour === opt.hour ? "2px solid var(--module-line)" : "2px solid var(--module-line)",
-                  borderRadius: 20,
-                  padding: '10px 20px',
-                  fontSize: 14,
-                  fontWeight: 600,
-                  color: moduleText(wakeHour === opt.hour ? "var(--module-danger-text)" : "var(--module-ink)"),
-                  cursor: 'pointer',
-                }} data-wide-button="true" data-selected={!!(wakeHour === opt.hour)} data-tone="coral" aria-pressed={!!(wakeHour === opt.hour)}
-              >
-                {opt.label}
-              </button>
+                label={opt.label}
+              />
             ))}
-          </div>
+          </AnswerGroup>
           {wakeHour !== null && (
-            <MotionDiv initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}>
-              <button onClick={startAnimation} className="mt-2 text-[var(--module-ink)] font-semibold" style={{ backgroundColor: "var(--module-danger)", borderRadius: 100, padding: '14px 32px', fontSize: 15 }} data-wide-button="true">
+            <MotionDiv initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="ex-actions">
+              <Button onClick={startAnimation}>
                 Play Day
-              </button>
+              </Button>
             </MotionDiv>
           )}
         </MotionDiv>
@@ -386,87 +361,87 @@ const CognitiveImpairmentClock = () => {
 
       {/* Animation in progress */}
       {(playing || paused) && wakeHour !== null && (
-        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-5">
-          {/* Clock card */}
-          <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-center" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: '28px 32px', maxWidth: 380, margin: '0 auto' }}>
-            <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", textTransform: 'uppercase' as const, marginBottom: 8 }}>Current Time</p>
-            <p style={{ lineHeight: 1 }}>
-              <span className="font-serif font-semibold" style={{ fontSize: 56, color: "var(--module-ink)", letterSpacing: '-0.02em' }}>{timeStr}</span>
-              <span className="font-serif" style={{ fontSize: 24, color: "var(--module-muted)", marginLeft: 8, verticalAlign: 'middle' }}>{periodStr}</span>
+        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col gap-5">
+          {/* The clock: on the sheet under its label, the hours awake under a hairline */}
+          <div className="ex-figure">
+            <ExerciseLabel>Current Time</ExerciseLabel>
+            <p className="m-0 text-center" style={{ lineHeight: 1 }}>
+              <span style={{ fontSize: 56, color: "var(--ink-primary)", letterSpacing: '-0.02em' }}>{timeStr}</span>
+              <span style={{ fontSize: 24, color: "var(--ink-muted)", marginLeft: 8, verticalAlign: 'middle' }}>{periodStr}</span>
             </p>
-            <p className="mt-2" style={{ fontSize: 14, color: "var(--module-muted)" }}>{Math.floor(hoursAwake)} hours awake</p>
+            <p className="ex-figure-count">{Math.floor(hoursAwake)} hours awake</p>
           </div>
 
-          {/* Impairment bar */}
+          {/* Impairment bar: an ink line on a hairline track, its zones named above it */}
           <div>
-            <div className="flex justify-between mb-2 px-1">
+            <div className="flex justify-between gap-2 mb-2">
               {zoneLabels.map((lbl, li) => (
-                <span key={lbl} style={{ fontSize: 9, fontWeight: zone.zoneIdx === li ? 700 : 400, letterSpacing: '0.1em', color: moduleText(zone.zoneIdx === li ? "var(--module-ink)" : "var(--module-muted)"), textTransform: 'uppercase' as const }}>{lbl}</span>
+                <span key={lbl} className="ex-label" style={{ color: zone.zoneIdx === li ? "var(--ink-primary)" : "var(--ink-muted)" }}>{lbl}</span>
               ))}
             </div>
-            <div className="relative" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 100, height: 20, overflow: 'hidden' }}>
-              <MotionDiv style={{ height: '100%', backgroundColor: moduleFill(zone.fill), borderRadius: 100 }} initial={false} animate={{ width: `${meterPercent}%` }} transition={{ duration: 0.4, ease: 'linear' }} />
+            <div className="relative" style={{ backgroundColor: "var(--hairline)", borderRadius: 4, height: 8, overflow: 'hidden' }}>
+              <MotionDiv style={{ height: '100%', backgroundColor: "var(--ink-primary)", borderRadius: 4 }} initial={false} animate={{ width: `${meterPercent}%` }} transition={{ duration: 0.4, ease: 'linear' }} />
               {/* Tick marks */}
               {[37.5, 62.5, 87.5].map(pct => (
-                <div key={pct} className="absolute top-0 bottom-0" style={{ left: `${pct}%`, width: 2, backgroundColor: 'var(--module-surface)' }} />
+                <div key={pct} className="absolute top-0 bottom-0" style={{ left: `${pct}%`, width: 2, backgroundColor: 'var(--surface-paper)' }} />
               ))}
             </div>
           </div>
 
-          {/* Status card */}
-          <MotionDiv key={zone.label} initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} className="max-w-sm mx-auto" style={{ backgroundColor: moduleFill(zone.bg), border: `2px solid ${zone.border}`, borderRadius: 14, padding: '16px 20px', textAlign: 'center' }}>
-            <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", textTransform: 'uppercase' as const, marginBottom: 6 }}>Cognitive Status</p>
-            <p className="font-serif font-semibold" style={{ fontSize: 22, color: moduleText(zone.text) }}>{zone.label}</p>
-            <p style={{ fontSize: 13, color: "var(--module-muted)", marginTop: 4 }}>{zone.desc}</p>
+          {/* Status: its label in small capitals and its words under it, no coloured card */}
+          <MotionDiv key={zone.label} initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} className="ex-result">
+            <ExerciseLabel>Cognitive Status</ExerciseLabel>
+            <p className="ex-result-name">{zone.label}</p>
+            <p className="ex-sub">{zone.desc}</p>
           </MotionDiv>
 
           {/* Milestone flash */}
           {lastMilestone && (
-            <MotionDiv key={lastMilestone} initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'spring', stiffness: 300, damping: 20 }} style={{ backgroundColor: "var(--module-surface)", border: "1px solid var(--module-line)", borderRadius: 10, padding: '12px 16px' }}>
-              <p className="text-sm font-bold italic" style={{ color: "var(--module-ink)" }}>{lastMilestone}</p>
+            <MotionDiv key={lastMilestone} initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'spring', stiffness: 300, damping: 20 }}>
+              <AnswerLine tone="note">{lastMilestone}</AnswerLine>
             </MotionDiv>
           )}
 
           {/* Controls */}
-          <div className="flex justify-center gap-3 pt-2">
-            <button onClick={togglePause} style={{ backgroundColor: moduleFill(paused ? "var(--module-danger)" : "var(--module-surface)"), color: moduleText(paused ? "var(--module-on-fill)" : "var(--module-ink)"), border: paused ? "2px solid var(--module-line)" : "2px solid var(--module-line)", borderRadius: 20, padding: '10px 24px', fontSize: 14, fontWeight: 600 }} data-wide-button="true" data-selected={!!(paused)} data-tone="coral" aria-pressed={!!(paused)}>
+          <div className="ex-actions">
+            <Button onClick={togglePause} aria-pressed={!!(paused)}>
               {paused ? 'Resume' : 'Pause'}
-            </button>
-            <button onClick={reset} className="font-medium" style={{ fontSize: 13, color: "var(--module-muted)", background: 'none', border: 'none' }} data-wide-button="true">
+            </Button>
+            <TextButton tone="quiet" onClick={reset}>
               Reset
-            </button>
+            </TextButton>
           </div>
         </MotionDiv>
       )}
 
       {/* Finished summary */}
       {finished && wakeHour !== null && (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="space-y-5">
-          <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-center" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: '28px 32px', maxWidth: 380, margin: '0 auto' }}>
-            <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", textTransform: 'uppercase' as const, marginBottom: 8 }}>Impairment Begins At</p>
-            <p className="font-serif font-semibold" style={{ fontSize: 48, color: "var(--module-ink)", letterSpacing: '-0.02em' }}>{impairedTime}</p>
-            <p className="mt-2" style={{ fontSize: 14, color: "var(--module-muted)" }}>This is when you become cognitively impaired.</p>
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-5">
+          <div className="ex-figure">
+            <ExerciseLabel>Impairment Begins At</ExerciseLabel>
+            <p className="m-0 text-center" style={{ fontSize: 48, lineHeight: 1.1, color: "var(--ink-primary)", letterSpacing: '-0.02em' }}>{impairedTime}</p>
+            <p className="ex-figure-count">This is when you become cognitively impaired.</p>
           </div>
 
-          <div style={{ backgroundColor: "var(--module-surface)", border: "1px solid var(--module-line)", borderRadius: 10, padding: '12px 16px' }}>
-            <p className="text-sm" style={{ color: "var(--module-muted)" }}>
-              <span className="font-bold">If you wake at {formatTime(wakeHour)}</span>, your cognition starts declining by{' '}
-              <span className="font-bold">{decliningTime}</span> and you are cognitively impaired by{' '}
-              <span className="font-bold">{impairedTime}</span>.
+          <div className="ex-block">
+            <p className="ex-block-text">
+              <b>If you wake at {formatTime(wakeHour)}</b>, your cognition starts declining by{' '}
+              <b>{decliningTime}</b> and you are cognitively impaired by{' '}
+              <b>{impairedTime}</b>.
             </p>
-            <p className="text-sm font-bold mt-1" style={{ color: "var(--module-ink)" }}>
+            <p className="ex-block-title">
               Studying after {impairedTime} is like studying with the handbrake on — your brain can barely hold anything new.
             </p>
           </div>
 
-          <div className="flex justify-center">
-            <button onClick={reset} className="text-[var(--module-ink)] font-semibold" style={{ backgroundColor: "var(--module-danger)", borderRadius: 100, padding: '14px 32px', fontSize: 15 }} data-wide-button="true">
+          <div className="ex-actions">
+            <Button onClick={reset}>
               Try a Different Wake Time
-            </button>
+            </Button>
           </div>
         </MotionDiv>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 
@@ -485,22 +460,21 @@ const HighPerformanceChecklist = () => {
     ];
 
     return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">High-Performance Checklist</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">A solid study day from start to finish. Tick each one off as you go.</p>
-            <div className="space-y-3">
+        <ExerciseSheet title="High-Performance Checklist" sub="A solid study day from start to finish. Tick each one off as you go." name="HighPerformanceChecklist">
+            {/* Each block of the day is ticked off on its own: the square mark fills ink and its tick draws */}
+            <AnswerGroup kind="several">
                 {items.map(item => (
-                    <div key={item.key} onClick={() => toggle(item.key)} className="p-4 rounded-xl flex items-center gap-4 cursor-pointer transition-all" style={checks[item.key] ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }}>
-                        <span className="font-mono text-xs font-bold w-12">{item.time}</span>
-                        <div className="flex-grow">
-                            <p className="font-bold text-sm">{item.task}</p>
-                            <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)]">{item.details}</p>
-                        </div>
-                        <div className={`w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center ${checks[item.key] ? "bg-[var(--module-success)]" : "bg-[var(--module-surface)]"}`}><CheckCircle2 size={12} className="text-[var(--module-ink)]"/></div>
-                    </div>
+                    <ChoiceTile
+                        key={item.key}
+                        kind="several"
+                        chosen={!!checks[item.key]}
+                        onClick={() => toggle(item.key)}
+                        label={<><span className="ui-readout">{item.time}</span>{' '}{item.task}</>}
+                        meta={item.details}
+                    />
                 ))}
-            </div>
-        </div>
+            </AnswerGroup>
+        </ExerciseSheet>
     );
 }
 
