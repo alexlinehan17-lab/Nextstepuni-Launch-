@@ -143,9 +143,6 @@
   "components/HowTheyDidIt/index.tsx": {
    "button": 10
   },
-  "components/InnovationZone.tsx": {
-   "button": 3
-  },
   "components/JCComingSoon.tsx": {
    "button": 1
   },
@@ -153,9 +150,7 @@
    "button": 1
   },
   "components/LaunchpadGuidance.tsx": {
-   "button": 17,
-   "dropdown": 1,
-   "pop-up": 2
+   "button": 4
   },
   "components/Library.tsx": {
    "button": 12
@@ -537,9 +532,6 @@
   },
   "components/launchpad/LaunchpadSelect.tsx": {
    "dropdown": 1
-  },
-  "components/launchpad/LaunchpadToolCard.tsx": {
-   "button": 1
   },
   "components/launchpad/PlannerExplanation.tsx": {
    "button": 1,

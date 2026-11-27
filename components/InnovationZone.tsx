@@ -1,5 +1,5 @@
 import { queueTopicStudy, queueTopicPractice } from '../utils/topicLaunch';
-import { ArrowRight } from 'lucide-react';
+import { CircleHelp } from 'lucide-react';
 import { COLORS } from '../design/tokens';
 
 /**
@@ -59,10 +59,14 @@ const AcademicJourneyGame = lazy(() => import('./AcademicJourneyGame'));
 import ToolErrorBoundary from './ToolErrorBoundary';
 import PointsPanel from './PointsPanel';
 import { useNavigation } from '../contexts/NavigationContext';
-import ToolMasthead, { ToolArtwork, ToolIntroductionContext } from './launchpad/ToolMasthead';
+import { ToolArtwork, ToolIntroductionContext } from './launchpad/ToolMasthead';
 import LaunchpadToolCard from './launchpad/LaunchpadToolCard';
 import { TopBar } from './ui/Bars';
-import { Glyph, IconButton } from './ui/Button';
+import { Glyph, IconButton, TextButton } from './ui/Button';
+import { Menu } from './ui/Menu';
+import { SearchField } from './ui/Field';
+import ThemeArtwork from './ThemeArtwork';
+import './launchpad/catalogue.css';
 import { ToolBarContext, type ToolBarState } from './launchpad/toolBar';
 import { type ToolIconKey } from './ToolIconBlob';
 import { isActiveSeniorYear, isLcaYear } from '../utils/authUtils';
@@ -73,7 +77,6 @@ import { type ToolRecommendation } from './launchpadGuidanceData';
 import { useOptionalProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
 import { type ProgressDocument } from '../services/progressRepository';
-import HorizontalTabs from './ui/HorizontalTabs';
 import { matchesToolSearch, PRACTICE_TOOL_IDS } from './launchpadSearch';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import { trackProgrammeEvent, trackProgrammeExposures } from '../utils/programmeAnalytics';
@@ -146,12 +149,25 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'examiners-chair': { themeColor: '#9E4A3E', eyebrow: 'Technique · Marking literacy', subtitle: 'Sit on the other side of the desk. Mark real-style scripts against the real SEC rules, and learn to see your own answers the way the examiner will.', showHeader: true },
 };
 
-const MOBILE_TOOL_TITLES: Record<string, string> = { 'mark-bank': 'Mark Bank', planner: 'Your Planner' };
+const MOBILE_TOOL_TITLES: Record<string, string> = { 'mark-bank': 'Mark Bank' };
+/** The small line over each tool's name in the bar (board c-launch-header, "One header for every
+ *  Launchpad tool"); a tool not listed keeps its family line from TOOL_CHROME. */
 const MOBILE_TOOL_EYEBROWS: Record<string, string> = {
       'mark-bank': 'The practice library', planner: 'A little structure',
       'points-passport': 'Your grades, made visible', 'future-finder-revamped': 'Start with you',
       'paper-trail': 'Your exam archive', 'topic-atlas': 'Follow the topic',
+      'coursework-companion': 'Keep the evidence', 'listening-studio': 'Sit a real listening',
+      comeback: 'A fresh starting point', 'college-compass': 'Your runway to college',
+      'command-word-reflex': 'Read the question right',
     };
+/** The Launchpad's categories, in one menu (board c-launch-header: "All tools"). */
+const CATEGORY_OPTIONS = [
+  { value: 'all', label: 'All tools' },
+  { value: 'understand', label: 'Understand' },
+  { value: 'practice', label: 'Practice' },
+  { value: 'plan', label: 'Plan' },
+  { value: 'track', label: 'Track' },
+] as const;
 /** The Launchpad's own drawing in its bar on a phone: the card dealer (its board, 26 Nov 2026). */
 const LAUNCHPAD_ART = '/assets/star-crew/companions/card-dealer.png';
 
@@ -662,7 +678,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
             // hides it from graduated users, who still map to the 'senior'
             // curriculum level (see isActiveSeniorYear). needsProfile:false —
             // it reads only the student's year, never their subject profile.
-            id: 'college-compass', title: 'College Compass', description: 'Your runway to college — CAO, HEAR, DARE & scholarships, in order.', icon: Milestone, needsProfile: false,
+            id: 'college-compass', title: 'College Compass', description: 'Your runway to college: CAO, HEAR, DARE and scholarships, in order.', icon: Milestone, needsProfile: false,
             curriculum: 'senior' as const, seniorYearsOnly: true,
             tag: 'Roadmap', accentHex: '#2A7D6F', gridClass: 'md:col-span-3',
             iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-700 dark:text-teal-300',
@@ -681,7 +697,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
             component: <CatchUpLane uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} />,
         },
         {
-            id: 'mark-bank', title: 'Mark Bank', description: 'Flashcards from real exam questions, marked point by point \u2014 brought back before you forget.', icon: ListChecks, needsProfile: false,
+            id: 'mark-bank', title: 'Mark Bank', description: 'Flashcards from real exam questions, marked point by point, brought back before you forget.', icon: ListChecks, needsProfile: false,
             curriculum: 'senior' as const,
             tag: 'Spaced repetition', accentHex: '#123B2B', gridClass: 'md:col-span-2',
             iconBg: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-900 dark:text-emerald-300',
@@ -700,7 +716,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
             component: <MarkBank studio examDate={subjectProfile?.examStartDate} uid={user?.uid} studentSubjects={subjectProfile?.subjects} onLeaveStudio={() => nav.navigateToInnovationZone()} />,
         },
         {
-            id: 'paper-trail', title: 'Paper Trail', description: 'Every SEC past paper and marking scheme — three taps away.', icon: FileSearch, needsProfile: false,
+            id: 'paper-trail', title: 'Paper Trail', description: 'Every SEC past paper and marking scheme, three taps away.', icon: FileSearch, needsProfile: false,
             // 'both': serves Junior Cycle (new-spec) AND Leaving Cert / LCA papers (cycle-filtered picker).
             curriculum: 'both' as const,
             tag: 'Exam archive', accentHex: '#33658A', gridClass: 'md:col-span-2',
@@ -710,7 +726,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
             component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} isLca={isLcaYear(user?.yearGroup)} onboardingExamDate={subjectProfile?.examStartDate} onOpenTool={setActiveTool} />,
         },
         {
-            id: 'topic-atlas', title: 'Topic Atlas', description: 'Every question ever asked, mapped by topic \u2014 drill any topic across every year.', icon: Compass, needsProfile: false,
+            id: 'topic-atlas', title: 'Topic Atlas', description: 'Every question ever asked, mapped by topic. Drill any topic across every year.', icon: Compass, needsProfile: false,
             curriculum: 'senior' as const,
             tag: 'Topic map', accentHex: '#B4530A', gridClass: 'md:col-span-2',
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-800 dark:text-orange-300',
@@ -774,7 +790,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
             component: <ExaminersChair uid={user?.uid} />,
         },
         {
-            id: 'command-word-reflex', title: 'Command-Word Reflex', description: 'Spot the command word in real questions — and dodge the trap.', icon: Highlighter, needsProfile: false,
+            id: 'command-word-reflex', title: 'Command-Word Reflex', description: 'Spot the command word in real questions, and dodge the trap.', icon: Highlighter, needsProfile: false,
             // 'both': has Junior Cycle AND Leaving Cert content (cycle-grouped picker), so visible to JC and senior users.
             curriculum: 'both' as const,
             tag: 'Exam skills', accentHex: '#6366F1', gridClass: 'md:col-span-2',
@@ -784,7 +800,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
             component: <CommandWordReflex uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} />,
         },
         {
-            id: 'how-they-did-it', title: 'How They Did It', description: 'Real people who started where you are — and the moves they made.', icon: Users, needsProfile: false,
+            id: 'how-they-did-it', title: 'How They Did It', description: 'Real people who started where you are, and the moves they made.', icon: Users, needsProfile: false,
             curriculum: 'both' as const,
             tag: 'Real stories', accentHex: '#C8862B', gridClass: 'md:col-span-3',
             iconBg: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-700 dark:text-amber-300',
@@ -921,7 +937,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
 
   return (
     <div
-      className={`${mobileAppDesign ? 'mobile-editorial ' : ''}${activeTool === 'paper-trail' ? 'paper-trail-host ' : ''}${activeTool === 'mark-bank' ? 'mark-bank-host ' : ''}product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24 pt-[calc(53px+var(--safe-top))] md:pt-[73px]`}
+      className={`${mobileAppDesign ? 'mobile-editorial ' : ''}${activeTool ? '' : 'lp7-host '}${activeTool === 'paper-trail' ? 'paper-trail-host ' : ''}${activeTool === 'mark-bank' ? 'mark-bank-host ' : ''}product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24 pt-[calc(53px+var(--safe-top))] md:pt-[73px]`}
       // Fixed header at top is ~80px tall (back button + eyebrow + title) + safe-area-inset-top.
       // The journey/war-room tools historically had a smaller header offset (pt-14)
       // which left content peeking out behind the bar. Use the same generous offset
@@ -955,99 +971,58 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 >
+                    <div className="lp7-catalogue">
                     {/* Inline points panel — replaces the old PointsExplainer modal */}
                     <PointsPanel open={showPointsPanel} onHide={hidePointsPanel} />
 
-                    <div className="lp-catalogue-intro">
-                      {mobileAppDesign && <p className="lp-body">Find the right tool for the task.</p>}
-                      {!mobileAppDesign && <ToolMasthead mascot tool="meet-tools" eyebrow="Your next move" title="The Launchpad." subtitle="Find the right tool for the task in front of you." />}
-                      {!mobileAppDesign && subjectProfile && <button className="lp-panel lp-resume" onClick={() => handleToolClick(toolRecommendation?.toolId ?? 'planner', true)}>
-                        <span className="lp-eyebrow">{toolRecommendation ? 'Your recommendation' : 'A place to start'}</span>
-                        <strong className="lp-title">{toolRecommendation ? tools.find(t => t.id === toolRecommendation.toolId)?.title : 'Your plan for today'}</strong>
-                        <span>Open {toolRecommendation ? 'this tool' : 'Planner'} <ArrowRight size={18} /></span>
-                      </button>}
-                    </div>
-                    <LaunchpadGuidance compact
-                      tools={curriculumVisibleTools.map(tool => ({
-                        id: tool.id,
-                        title: tool.title,
-                        description: tool.description,
-                        tag: tool.tag,
-                        needsProfile: tool.needsProfile,
-                      }))}
-                      availableToolIds={recommendationAvailableToolIds}
-                      recommendation={toolRecommendation}
-                      onRecommendationChange={handleRecommendationChange}
-                      onOpenTool={handleToolClick}
-                    />
-
-                    {/* Filter pills + Points trigger — same row, opposite ends */}
-                    {<label className="lp-catalogue-search mb-4 block text-sm font-semibold"><span>Find a tool or task</span><input type="search" value={toolQuery} onChange={event => setToolQuery(event.target.value)} placeholder="Find a tool or task" className="mt-2 block min-h-12 w-full rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-4 text-base font-normal text-[var(--ink-primary)]" /></label>}
-                    <div className="lp-catalogue-filters mb-5 flex items-center justify-between gap-3">
-                        <HorizontalTabs
-                          className="min-w-0 flex-1"
-                          variant="pill"
-                          value={activeFilter}
-                          label="Launchpad categories"
-                          options={(['all', 'understand', 'practice', 'plan', 'track'] as const).map(filter => ({
-                            value: filter,
-                            label: filter === 'all' ? 'All' : filter.charAt(0).toUpperCase() + filter.slice(1),
+                    {/* The opening words; on a laptop the card dealer stands beside them at a real
+                        size, and "A place to start" is gone (Alex, 26 Nov 2026). */}
+                    <div className="lp7-intro">
+                      <div className="lp7-intro-copy">
+                        <p className="lp7-lead">{mobileAppDesign ? 'Find the right tool for the task.' : 'Find the right tool for the task in front of you.'}</p>
+                        <LaunchpadGuidance compact
+                          tools={curriculumVisibleTools.map(tool => ({
+                            id: tool.id,
+                            title: tool.title,
+                            description: tool.description,
+                            tag: tool.tag,
+                            needsProfile: tool.needsProfile,
                           }))}
-                          onChange={next => setActiveFilter(next as typeof activeFilter)}
+                          availableToolIds={recommendationAvailableToolIds}
+                          recommendation={toolRecommendation}
+                          onRecommendationChange={handleRecommendationChange}
+                          onOpenTool={handleToolClick}
                         />
-                        <div className="flex items-center gap-1 p-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] w-fit">
-                            <button
-                                onClick={togglePointsPanel}
-                                aria-label="How points work"
-                                aria-expanded={showPointsPanel}
-                                title="How points work"
-                                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all ${mobileAppDesign ? 'min-h-11' : ''} ${
-                                    showPointsPanel
-                                        ? 'bg-[var(--surface-paper)] text-[var(--ink-primary)] font-medium border border-[var(--outline-strong)]'
-                                        : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
-                                }`}
-                            >
-                                <span
-                                    className="inline-flex items-center justify-center w-4 h-4 rounded-full shrink-0 text-[11px] font-semibold"
-                                    style={{
-                                        background: showPointsPanel ? 'rgba(0,0,0,0.06)' : 'rgba(0,0,0,0.05)',
-                                        fontFamily: "'Source Serif 4', serif",
-                                        lineHeight: 1,
-                                    }}
-                                    aria-hidden="true"
-                                >
-                                    ?
-                                </span>
-                                <span className="lp-points-label">Points</span>
-                            </button>
-                        </div>
-                    </div>
-                    {<p className={`${toolQuery.trim() ? "mb-5 text-sm text-[var(--ink-secondary)]" : "sr-only"}`} role="status">{filteredTools.length} {filteredTools.length === 1 ? 'tool' : 'tools'}{toolQuery.trim() ? ' match your search' : ''}</p>}
-
-                    {/* Empty state for JC users when no tools are curriculum-visible.
-                        JC-visible tools now include Planner & Study,
-                        Comeback Engine, Subject Explorer,
-                        Command-Word Reflex, How They Did It and Exploring Options.
-                        This branch is now only reachable when the user filters by a
-                        category that contains zero JC-visible tools — so the message
-                        reflects a filter mismatch, not a roadmap gap. */}
-                    {filteredTools.length === 0 && <div className="border-y border-[var(--outline-soft)] py-8"><h2 className="font-serif text-2xl">No matching tools.</h2><p className="mt-2 text-sm leading-relaxed text-[var(--ink-secondary)]">Try another task, or see all the tools available for your year.</p><button type="button" className="mt-4 min-h-11 text-sm font-semibold underline underline-offset-4" onClick={() => { setToolQuery(''); setActiveFilter('all'); }}>Show all tools</button></div>}
-
-                    {!mobileAppDesign && filteredTools.length === 0 && curriculumLevel === 'junior' && (
-                      <div className="rounded-2xl p-10 text-center" style={{ backgroundColor: '#FFFFFF', border: '2px solid #1A1A1A' }}>
-                        <p className="font-serif text-xl font-bold mb-2 text-[#1A1A1A]">No tools in this category for Junior Cycle yet.</p>
-                        <p className="text-sm text-[#78716C] max-w-md mx-auto">
-                          Try a different category, or hit "All" to see the tools we have ready for you — including Command-Word Reflex, the Spaced Repetition Timetable and the Comeback Engine.
-                        </p>
                       </div>
-                    )}
+                      <ThemeArtwork className="lp7-dealer" src={LAUNCHPAD_ART} transparentBackground alt="" />
+                    </div>
 
-                    <div className="lp-tools-grid">
+                    {/* The search, the categories in one menu (it applies at once) and How points work. */}
+                    <div className="lp7-find">
+                      <SearchField label="Find a tool or task" placeholder="Find a tool or task" value={toolQuery} onChange={event => setToolQuery(event.target.value)} />
+                      <Menu label="Launchpad categories" className="lp7-cat" value={activeFilter} options={[...CATEGORY_OPTIONS]} onChange={next => setActiveFilter(next)} />
+                      <TextButton tone="quiet" className="lp7-points" onClick={togglePointsPanel} aria-expanded={showPointsPanel}>
+                        <Glyph icon={CircleHelp} size={20} />How points work
+                      </TextButton>
+                    </div>
+                    {<p className={toolQuery.trim() ? 'lp7-status' : 'sr-only'} role="status">{filteredTools.length} {filteredTools.length === 1 ? 'tool' : 'tools'}{toolQuery.trim() ? ' match your search' : ''}</p>}
+
+                    {/* No tool in this search or category. Junior Cycle students are told so in a
+                        second line, as on today's laptop. */}
+                    {filteredTools.length === 0 && <div className="lp7-empty">
+                      <h2 className="t-heading">No matching tools.</h2>
+                      <p className="t-sub">Try another task, or see all the tools available for your year.</p>
+                      {!mobileAppDesign && curriculumLevel === 'junior' && <p className="t-sub">No tools in this category for Junior Cycle yet. Try a different category, or hit "All" to see the tools we have ready for you — including Command-Word Reflex, the Spaced Repetition Timetable and the Comeback Engine.</p>}
+                      <TextButton onClick={() => { setToolQuery(''); setActiveFilter('all'); }}>Show all tools</TextButton>
+                    </div>}
+
+                    <ul className="lp7-tools" aria-label="Tools">
                       {[...filteredTools].sort((a,b) => { const order = ['planner','paper-trail','future-finder-revamped','mark-bank','listening-studio','war-room','your-possible-life','comeback','points-passport','college-compass','catch-up-lane','topic-atlas','command-word-reflex','how-they-did-it','future-finder','journey']; return order.indexOf(a.id) - order.indexOf(b.id); }).map(tool => {
                         const pending = tool.needsProfile && !profileLoaded;
                         const locked = tool.needsProfile && profileLoaded && !subjectProfile;
-                        return <LaunchpadToolCard key={tool.id} tool={tool.id as ToolIconKey} title={tool.title} description={tool.description} pending={Boolean(pending)} locked={Boolean(locked)} recommendation={gcRecommendations[tool.id] ? gcRecommendations[tool.id].fromName || 'your counsellor' : undefined} onClick={() => handleToolClick(tool.id, tool.needsProfile)} />;
+                        return <li key={tool.id}><LaunchpadToolCard tool={tool.id as ToolIconKey} title={tool.title} description={tool.description} pending={Boolean(pending)} locked={Boolean(locked)} recommendation={gcRecommendations[tool.id] ? gcRecommendations[tool.id].fromName || 'your counsellor' : undefined} onClick={() => handleToolClick(tool.id, tool.needsProfile)} /></li>;
                       })}
+                    </ul>
                     </div>
                 </MotionDiv>
             ) : (
@@ -1057,20 +1032,10 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 >
-                    {!mobileAppDesign && currentTool && TOOL_CHROME[currentTool.id]?.showHeader && (
-                        <div className="mb-6">
-                            {/* The journey simulator's name is the host bar's; its old
-                                ToolHeader repeated it (one bar, navigation.md). */}
-                            {currentTool.id === 'journey' ? null : <ToolMasthead
-                              tool={(currentTool.id === 'cao-simulator' ? 'points-passport' : currentTool.id === 'syllabus-xray' ? 'war-room' : currentTool.id) as ToolIconKey}
-                              eyebrow={TOOL_CHROME[currentTool.id].eyebrow}
-                              title={currentTool.title}
-                              subtitle={TOOL_CHROME[currentTool.id].subtitle}
-                            />}
-
-                        </div>
-                    )}
-                    <ToolIntroductionContext.Provider value={mobileAppDesign}>
+                    {/* No black card when a tool opens, on any device (Alex, 24 Nov 2026): the
+                        shell draws no masthead, and a tool's own ToolMasthead draws nothing
+                        (it keeps only its children). The tool's name is in the one bar. */}
+                    <ToolIntroductionContext.Provider value>
                     <ToolBarContext.Provider value={setToolBar}>
                     <InnovationDataProvider uid={user?.uid} subjectProfile={subjectProfile}>
                         <ToolErrorBoundary

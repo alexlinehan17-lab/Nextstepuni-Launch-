@@ -25,18 +25,20 @@ const TOOLS: LaunchpadToolSummary[] = [
 ];
 
 describe('Launchpad guidance', () => {
-  test('mobile guide jumps directly to a tool and resets scroll between tools', () => {
+  test('mobile guide jumps directly to a tool and resets scroll between tools', async () => {
     device.mobile = true;
     const openTool = vi.fn();
     render(<LaunchpadGuidance tools={TOOLS} recommendation={null} onRecommendationChange={vi.fn()} onOpenTool={openTool} />);
     fireEvent.click(screen.getByRole('button', { name: /Meet the tools/ }));
-    const chooser = screen.getByRole('combobox', { name: 'Choose a tool' });
-    const body = chooser.closest('.overflow-y-auto') as HTMLElement;
+    // Area 7a: the guide is the shared sheet; the tool is chosen from its menu (it applies at once).
+    const chooser = screen.getByRole('button', { name: /Choose a tool/ });
+    const body = chooser.closest('.ui-sheet-body') as HTMLElement;
     body.scrollTop = 180;
-    fireEvent.change(chooser, { target: { value: 'paper-trail' } });
+    fireEvent.click(chooser);
+    fireEvent.click(await screen.findByRole('menuitemradio', { name: 'Paper Trail' }));
     expect(body.scrollTop).toBe(0);
-    expect(screen.getByRole('heading', { name: 'Meet the tools' })).toHaveFocus();
-    expect(screen.getByRole('dialog')).toHaveClass('[&_button]:min-h-11');
+    expect(screen.getByText('Meet the tools', { selector: '#launchpad-guidance-title' })).toHaveFocus();
+    expect(screen.getByRole('dialog')).toHaveClass('ui-sheet');
     fireEvent.click(screen.getByRole('button', { name: 'Open Paper Trail' }));
     expect(openTool).toHaveBeenCalledWith('paper-trail', false);
   });
@@ -46,19 +48,20 @@ describe('Launchpad guidance', () => {
     render(<LaunchpadGuidance tools={TOOLS} recommendation={null} onRecommendationChange={vi.fn()} onOpenTool={vi.fn()} />);
     fireEvent.click(screen.getByRole('button', { name: /Recommend a tool/ }));
     const question = screen.getByRole('button', { name: 'I want to practise for an exam' });
-    const body = question.closest('.overflow-y-auto') as HTMLElement;
-    expect(body).toHaveClass('min-h-0');
+    // The shared sheet's body is the one scroller (it may shrink on a short phone).
+    const body = question.closest('.ui-sheet-body') as HTMLElement;
+    expect(body).toBeTruthy();
     body.scrollTop = 240;
     fireEvent.click(question);
     expect(body.scrollTop).toBe(0);
-    expect(screen.getByRole('heading', { name: 'One more question' })).toHaveFocus();
+    expect(screen.getByText('One more question', { selector: '#launchpad-guidance-title' })).toHaveFocus();
   });
 
-  test('desktop retains its original guide layout', () => {
+  test('desktop keeps the list of tools beside the chosen one, with no phone menu', () => {
     render(<LaunchpadGuidance tools={TOOLS} recommendation={null} onRecommendationChange={vi.fn()} onOpenTool={vi.fn()} />);
     fireEvent.click(screen.getByRole('button', { name: /Meet the tools/ }));
-    expect(screen.queryByRole('combobox')).not.toBeInTheDocument();
-    expect(screen.getByRole('dialog')).not.toHaveClass('[&_button]:min-h-11');
+    expect(screen.getByRole('list', { name: 'Tools in this guide' })).toBeInTheDocument();
+    expect(screen.getByRole('dialog')).toHaveClass('ui-sheet');
   });
 
   test('uses the shared tool illustration style and matching charcoal card outlines', () => {

@@ -673,6 +673,8 @@
   .ui-bar-row { height: 72px; padding: 0; }
   .ui-bar--tool .ui-bar-row { height: 72px; justify-content: flex-start; gap: var(--space-2); }
   .ui-bar-row > .ui-bar-slot:first-child { margin-left: -10px; }
+  /* A place's bar on a laptop (the Launchpad): no leave control, so its name starts at the column's edge. */
+  .ui-bar--tool .ui-bar-row > .ui-bar-slot:first-child:empty { display: none; }
   .ui-bar--tool .ui-bar-mid { position: static; flex: 1; align-items: flex-start; text-align: left; }
   .ui-bar-art { display: none; }
   .ui-bar-label { padding: 0; }

@@ -139,9 +139,7 @@
    "hex": 1
   },
   "components/InnovationZone.tsx": {
-   "hex": 40,
-   "rgb(": 2,
-   "tailwind [#…]": 2
+   "hex": 38
   },
   "components/JCComingSoon.tsx": {
    "hex": 6,
@@ -149,9 +147,6 @@
   },
   "components/LanguageMasteryModule.tsx": {
    "hex": 7
-  },
-  "components/LaunchpadGuidance.tsx": {
-   "tailwind [#…]": 1
   },
   "components/Library.tsx": {
    "tailwind [#…]": 1,
