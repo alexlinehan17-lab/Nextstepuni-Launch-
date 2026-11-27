@@ -116,6 +116,24 @@ test('the confirm puts focus on the safe choice; Escape and the dimmed page choo
   expect(danger).toHaveBeenCalledTimes(1);
 });
 
+test('the confirm can carry a typed check under its words; a blocked danger says so and stays pressable', async () => {
+  const danger = vi.fn();
+  render(<Confirm open sentence="Delete student account" detail="This action cannot be undone."
+    keepLabel="Cancel" onKeep={vi.fn()} dangerLabel="Delete account" onDanger={danger} dangerBlocked>
+    <label htmlFor="check">Re-enter your password</label><input id="check" type="password" />
+  </Confirm>);
+  const dialog = await screen.findByRole('alertdialog', { name: 'Delete student account' });
+  const check = dialog.querySelector('.ui-confirm-check') as Element;
+  expect(check.querySelector('input[type=password]')).not.toBeNull();
+  // The field sits between the words and the two choices.
+  expect(dialog.querySelector('.ui-confirm-text')!.compareDocumentPosition(check) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  expect(check.compareDocumentPosition(screen.getByRole('button', { name: 'Cancel' })) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  const remove = screen.getByRole('button', { name: 'Delete account' });
+  expect(remove).toHaveAttribute('aria-disabled', 'true');
+  fireEvent.click(remove);
+  expect(danger).toHaveBeenCalledTimes(1);
+});
+
 test('the toast stack clears the tab bar edge: it is placed by the frame from --edge-bottom, which includes the tab bar', () => {
   render(<MessageHost />);
   act(() => { showMessage('Saved to your plan'); });

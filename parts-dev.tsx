@@ -322,6 +322,7 @@ function OverSection() {
           <Button onClick={() => setOpen('notes')}>Sheet with its title at the left and a status (a module's Notes)</Button>
           <Button onClick={() => setOpen('steps')}>Sheet with controls in its head (a marking scheme)</Button>
           <Button onClick={() => setOpen('confirm')}>Confirm</Button>
+          <Button onClick={() => setOpen('confirm-check')}>Confirm with a typed check</Button>
           <Button onClick={() => showMessage('Saved to your plan', { action: { label: 'Undo', onPress: () => {} } })}>Toast</Button>
         </Line>
       </Spec>
@@ -370,6 +371,11 @@ function OverSection() {
       <Confirm open={open === 'confirm'} sentence="Delete your account?"
         detail="Everything you have studied, planned and saved is erased and cannot be brought back."
         keepLabel="Keep my account" onKeep={close} dangerLabel="Delete account" onDanger={close} />
+      <Confirm open={open === 'confirm-check'} sentence="Delete student account"
+        detail="Delete Aoife T. and all associated progress and profile data? This action cannot be undone."
+        keepLabel="Cancel" onKeep={close} dangerLabel="Delete account" onDanger={close} dangerBlocked>
+        <Field id="parts-confirm-check" type="password" label="Re-enter your password" autoComplete="current-password" />
+      </Confirm>
     </Section>
   );
 }

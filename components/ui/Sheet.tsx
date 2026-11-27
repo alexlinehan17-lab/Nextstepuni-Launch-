@@ -201,9 +201,15 @@ export interface ConfirmProps {
   /** The destructive choice, in red text. */
   dangerLabel: string;
   onDanger: () => void;
+  /** A typed check under the words (the Admin dashboard's "Re-enter your password", area 8b): a Field. */
+  children?: ReactNode;
+  /** The destructive choice cannot go ahead yet (the typed check is empty, or it is already
+   *  running): it says so to assistive tech (aria-disabled) and stays pressable, so onDanger
+   *  can take the person to what is missing. */
+  dangerBlocked?: boolean;
 }
 
-export function Confirm({ open, sentence, detail, keepLabel, onKeep, dangerLabel, onDanger }: ConfirmProps) {
+export function Confirm({ open, sentence, detail, keepLabel, onKeep, dangerLabel, onDanger, children, dangerBlocked = false }: ConfirmProps) {
   const phase = usePresence(open, CONFIRM_LEAVE_MS);
   const card = useRef<HTMLDivElement>(null);
   const titleId = useId();
@@ -218,8 +224,9 @@ export function Confirm({ open, sentence, detail, keepLabel, onKeep, dangerLabel
           tabIndex={-1} className="ui-confirm frame-dialog-card">
           <h2 id={titleId} className="ui-confirm-title">{sentence}</h2>
           {detail ? <p id={detailId} className="ui-confirm-text">{detail}</p> : null}
+          {children ? <div className="ui-confirm-check">{children}</div> : null}
           <Button kind="main" block onClick={onKeep}>{keepLabel}</Button>
-          <TextButton tone="danger" onClick={onDanger}>{dangerLabel}</TextButton>
+          <TextButton tone="danger" aria-disabled={dangerBlocked || undefined} onClick={onDanger}>{dangerLabel}</TextButton>
         </div>
       </div>
     </FramePortal>
