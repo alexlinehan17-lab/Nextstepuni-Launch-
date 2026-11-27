@@ -63,8 +63,8 @@ export default function StartingPointCheck({ subjectLabel, level, spec, cards, m
     ? previous.filter(id => id !== topicId)
     : previous.length >= STARTING_POINT_TOPICS ? previous : [...previous, topicId]);
   // The frame is today's (a dialog over Mark Bank), drawn with the shared parts
-  // (starting-point.css). One leave control, top left: the footer's "Back to Mark
-  // Bank" did exactly what this Close does, so it has gone (navigation.md).
+  // (starting-point.css): Close at the top left, and the footer's own "Back to Mark
+  // Bank" kept as today's way back at the end of each step.
   return <KobraScope><Dialog open onOpenChange={open => { if (!open) onClose(); }}>
     <DialogContent className="mb-live-session-dialog sq-dialog mb-starting-point" showCloseButton={false}>
       <TopBar className="mb-starting-bar" leave={{ kind: 'close', onPress: onClose, label: 'Close starting-point check' }} />
@@ -115,9 +115,12 @@ export default function StartingPointCheck({ subjectLabel, level, spec, cards, m
       <footer className="sq-summary-footer mb-starting-foot"><span>{phase === 'choose' ? `${selected.length} / ${STARTING_POINT_TOPICS} topics selected` : `${results.length} ${results.length === 1 ? 'question' : 'questions'} marked`}</span>
         {/* The shared Button has no disabled state; until a topic is chosen the
             fieldset holds it disabled, as today, and the count beside it says why. */}
-        {phase === 'choose' && <fieldset className="mb-starting-go" disabled={!preview.length}>
-          <Button kind="main" size="lg" block arrow="forward" onClick={() => { setQuestions(preview); setPhase('questions'); }}>Start check · {preview.length} {preview.length === 1 ? 'question' : 'questions'}</Button>
-        </fieldset>}
+        <div className="mb-starting-actions">
+          <Button size="lg" onClick={onClose}>Back to Mark Bank</Button>
+          {phase === 'choose' && <fieldset className="mb-starting-go" disabled={!preview.length}>
+            <Button kind="main" size="lg" block arrow="forward" onClick={() => { setQuestions(preview); setPhase('questions'); }}>Start check · {preview.length} {preview.length === 1 ? 'question' : 'questions'}</Button>
+          </fieldset>}
+        </div>
       </footer>
     </DialogContent>
   </Dialog></KobraScope>;

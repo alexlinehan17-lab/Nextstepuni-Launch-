@@ -54,6 +54,7 @@
 /* The footer: the count, then the one charcoal Start check. Until a topic is chosen the
    fieldset holds it disabled, drawn in the well. */
 .mb-starting-point .sq-summary-footer.mb-starting-foot { gap: var(--space-4); padding: var(--space-4) max(32px, calc((100% - 720px) / 2)); border-top-color: var(--hairline); color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.mb-starting-actions { display: flex; flex: 0 0 auto; gap: var(--space-2); }
 .mb-starting-go { flex: 0 0 auto; min-width: 260px; margin: 0; padding: 0; border: 0; }
 .mb-starting-go[disabled] .ui-btn { border-color: var(--hairline); background: var(--surface-soft); color: var(--ink-muted); cursor: default; transform: none; }
 @media (hover: hover) and (pointer: fine) {
@@ -64,6 +65,8 @@
   .mb-starting-point .mb-starting-bar { padding-top: max(0px, calc(var(--safe-top) - 3dvh)); }
   .mb-starting-point .sq-summary-body { padding: var(--space-2) var(--space-6) var(--space-8); }
   .mb-starting-point .sq-summary-footer.mb-starting-foot { flex-direction: column; align-items: stretch; gap: var(--space-2); padding: var(--space-3) var(--space-6) calc(var(--space-3) + max(0px, var(--safe-bottom) - 3dvh)); }
+  .mb-starting-actions { flex-direction: column-reverse; }
+  .mb-starting-actions > .ui-btn { width: 100%; }
   .mb-starting-go { width: 100%; min-width: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
