@@ -28,7 +28,6 @@ import {
   ChevronLeft,
   ChevronRight,
   Clock3,
-  Download,
   Pause,
   Play,
   Minus,
@@ -40,7 +39,7 @@ import {
 import { MotionDiv } from '../Motion';
 import { Button as UiButton, IconButton, TextButton } from '../ui/Button';
 import { TopBar } from '../ui/Bars';
-import { SelectionBar, Switch } from '../ui/Choice';
+import { ChoiceTile, SelectionBar, Switch } from '../ui/Choice';
 import { Sheet } from '../ui/Sheet';
 import { List, Row } from '../ui/List';
 import { MenuAction, MenuLabel, MenuPanel, MenuSwitch } from '../ui/Menu';
@@ -84,9 +83,6 @@ import AnswerInk, {type AnswerInkProps,type InkTool} from './AnswerInk';
 import {useAnswerBook} from './useAnswerBook';
 import {loadDeskQuestion,saveDeskQuestion,keepFirstAttempt,hasResponse,type InkStroke,type AnswerRecord} from './answerDeskStore';
 import { COLORS } from '../../design/tokens';
-
-/** The scheme panel's compact square ink buttons (option E) for its step and text-size controls. */
-const E_SQUARE = 'inline-flex items-center justify-center h-8 min-w-[32px] px-2 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 bg-white dark:bg-surface-paper text-[#1A1A1A] dark:text-zinc-100 text-[12.5px] font-bold shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] transition-[transform,box-shadow] duration-150 hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none disabled:opacity-35 disabled:pointer-events-none';
 
 // Sleek glide shared with the GC dashboard student-view tray.
 const GLIDE = { duration: 0.32, ease: [0.16, 1, 0.3, 1] as const };
@@ -1280,35 +1276,40 @@ const Viewer: React.FC<ViewerProps> = ({
     scrollToQuestion(next);
   }, [onReveal, scrollToQuestion]);
 
-  const schemeContent = reveal ? (
+  // The last question shown, so the phone sheet keeps its words while it leaves.
+  const lastRevealRef = useRef<PaperAnswerQuestion | null>(null);
+  if (reveal) lastRevealRef.current = reveal;
+  const revealPanel = (q: PaperAnswerQuestion, open = true) => (
               <RevealContent
-                q={reveal}
+                q={q}
                 wide={isWide}
+                open={open}
                 reduced={!!reducedMotion}
                 schemePdf={sessions.current.scheme.pdf}
                 schemeUrl={scheme?.url}
                 schemeErrored={sessions.current.scheme.state === 'error' || sessions.current.scheme.state === 'unsupported'}
                 copyright={answerMap?.copyright}
                 selfMark={selfMarkOn}
-                existingMark={attempt.marks?.[reveal.n]}
+                existingMark={attempt.marks?.[q.n]}
                 licence={storageNs ? markerLicence(storageNs.split('|')[0]) : null}
                 siblings={(() => {
                   if (!topics) return undefined;
-                  const tag = topics.q.find(t => t.n === reveal.n);
+                  const tag = topics.q.find(t => t.n === q.n);
                   if (!tag) return undefined;
                   return siblingsFor(topics.subjectId, tag.primary)
                     .filter(s => !(s.year === topics.year && s.level === topics.level && s.lang === topics.lang && s.fileid === topics.fileid))
                     .slice(0, 3);
                 })()}
                 onJumpSibling={s => { setReveal(null); onCrossYear?.(s); }}
-                onRecordMark={m => recordMark(reveal.n, m)}
+                onRecordMark={m => recordMark(q.n, m)}
                 onClose={() => setReveal(null)}
                 onFullScheme={jumpSchemeToPage}
                 onStep={!loop && revealIndex >= 0 ? stepReveal : undefined}
                 canPrev={revealIndex > 0}
                 canNext={revealIndex >= 0 && revealIndex < loopQuestions.length - 1}
               />
-  ) : null;
+  );
+  const schemeContent = reveal ? revealPanel(reveal) : null;
 
   // Answers map fetch status (chips appear once ready), as a runtime toast.
   useStatusToast(
@@ -1558,6 +1559,20 @@ const Viewer: React.FC<ViewerProps> = ({
         <div className="pv-pos ui-readout" aria-hidden="true">{String(session.page).padStart(2, '0')} / {String(session.numPages).padStart(2, '0')}</div>
       )}
       <span className="sr-only" role="status">Page {session.page} of {session.numPages}</span>
+      {/* Exam-mode clock: over the paper, above the page count, clear of the panels below it. */}
+      {examOn && timing && side === 'paper' && (
+        <ExamClock
+          totalMinutes={timing.totalMinutes}
+          elapsed={elapsed}
+          running={running}
+          onToggle={() => setRunning(r => !r)}
+          onReset={() => setElapsed(0)}
+          onClose={() => {
+            setExamOn(false);
+            setRunning(false);
+          }}
+        />
+      )}
       </div>
 
       {(!attemptFirst || topicsOn) && !isWide && side === 'paper' && session.state === 'ready' && answerMap && (answersOn || topicsOn) && (
@@ -1632,10 +1647,11 @@ const Viewer: React.FC<ViewerProps> = ({
         )}
       </Sheet>
 
-      {/* Per-question marking-scheme reveal — bottom sheet on phones, right tray
-          on tablet+; same sleek glide as the GC dashboard student view. */}
+      {/* Per-question marking-scheme reveal: on a phone the shared Sheet; from 768px a tray
+          at the right over the paper; from 1100px it sits beside the paper (above). */}
+      {!isWide && !attemptFirst && lastRevealRef.current && revealPanel(lastRevealRef.current, Boolean(reveal))}
       <AnimatePresence>
-        {!attemptFirst && reveal && !schemeBeside && (
+        {isWide && !attemptFirst && reveal && !schemeBeside && (
           <>
             <MotionDiv
               key="reveal-backdrop"
@@ -1644,7 +1660,7 @@ const Viewer: React.FC<ViewerProps> = ({
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
               onClick={() => setReveal(null)}
-              className="fixed inset-0 z-[110] bg-black/40"
+              className="pv-reveal-scrim fixed inset-0 z-[110]"
             />
             <MotionDiv
               key="reveal-panel"
@@ -1655,12 +1671,7 @@ const Viewer: React.FC<ViewerProps> = ({
               role="dialog"
               aria-modal="true"
               aria-label={`Marking scheme for ${reveal.label ?? `Question ${reveal.n}`}`}
-              style={{ paddingBottom: 'var(--sab, 0px)' }}
-              className={
-                isWide
-                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-[min(720px,calc(100vw-48px))] flex flex-col bg-white dark:bg-surface-paper shadow-2xl border-l border-zinc-200 dark:border-hairline'
-                  : 'pt-reveal-sheet fixed bottom-0 inset-x-0 z-[111] flex flex-col bg-white dark:bg-surface-paper rounded-t-2xl shadow-2xl'
-              }
+              className="pv-reveal-tray frame-page fixed top-0 right-0 z-[111] h-full w-[min(720px,calc(100vw-48px))] flex flex-col"
             >
               {schemeContent}
             </MotionDiv>
@@ -1668,7 +1679,8 @@ const Viewer: React.FC<ViewerProps> = ({
         )}
       </AnimatePresence>
 
-      {/* The Full Loop bar (PT-2) — sequences attempt → reveal → mark → next. */}
+      {/* The Full Loop bar (PT-2) — sequences attempt → reveal → mark → next. On a phone it is
+          pinned at the foot, under the question panel; on a laptop it floats over the paper. */}
       {loop && answerMap && !reveal && (() => {
         const q = loopQuestions[loop.idx];
         if (!q) return null;
@@ -1678,88 +1690,64 @@ const Viewer: React.FC<ViewerProps> = ({
         const mm = Math.floor(secs / 60);
         const ss = String(secs % 60).padStart(2, '0');
         return (
-          <div className="fixed bottom-4 inset-x-0 z-[105] flex justify-center px-4" style={{ paddingBottom: 'var(--sab, 0px)' }}>
-            <div className="w-full max-w-md rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-2xl px-4 py-3 flex items-center gap-3">
-              <div className="min-w-0 flex-1">
-                <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">
-                  The full loop · {loop.idx + 1} of {loopQuestions.length}
-                </p>
-                <p className="text-[14px] font-semibold truncate text-zinc-900 dark:text-white">
-                  {q.label ?? `Question ${q.n}`}
-                </p>
-              </div>
-              <span className="shrink-0 text-[12px] tabular-nums text-zinc-400">{mm}:{ss}</span>
-              {marked ? (
-                <button
-                  onClick={loopNext}
-                  className="shrink-0 rounded-full px-4 py-2 text-[13px] font-semibold text-white transition-transform active:translate-y-0.5"
-                  style={{ backgroundColor: '#3A8D5F' }}
-                >
-                  {loop.idx + 1 >= loopQuestions.length ? 'Finish' : 'Next →'}
-                </button>
-              ) : (
-                <button
-                  onClick={() => onReveal(q)}
-                  className="shrink-0 rounded-full px-4 py-2 text-[13px] font-semibold text-white transition-transform active:translate-y-0.5"
-                  style={{ backgroundColor: COLORS.accent, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
-                >
-                  Reveal & mark
-                </button>
-              )}
-              <button onClick={exitLoopSavingPlace} aria-label="End the loop — your place is saved" className="shrink-0 p-1.5 text-zinc-400">
-                <X size={16} />
-              </button>
+          <div className="pv-loop" data-place="bar">
+            <IconButton label="End the loop — your place is saved" onClick={exitLoopSavingPlace}
+              icon={<X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+            <div className="pv-loop-copy">
+              <p className="t-label pv-loop-label">
+                The full loop · <span className="ui-readout">{loop.idx + 1} of {loopQuestions.length}</span>
+              </p>
+              <p className="pv-loop-name">
+                {q.label ?? `Question ${q.n}`}
+              </p>
             </div>
+            <span className="ui-readout pv-loop-time">{mm}:{ss}</span>
+            {marked ? (
+              <UiButton kind="main" arrow={loop.idx + 1 >= loopQuestions.length ? undefined : 'forward'} onClick={loopNext}>
+                {loop.idx + 1 >= loopQuestions.length ? 'Finish' : 'Next'}
+              </UiButton>
+            ) : (
+              <UiButton kind="main" onClick={() => onReveal(q)}>
+                Reveal & mark
+              </UiButton>
+            )}
           </div>
         );
       })()}
 
       {/* Full Loop resume card — a saved place from a previous mid-loop exit. */}
       {!attemptFirst && resumePlace && !loop && !loopDone && !reveal && side === 'paper' && answersUrl && scheme && storageNs && (
-        <div className="fixed bottom-4 inset-x-0 z-[105] flex justify-center px-4" style={{ paddingBottom: 'var(--sab, 0px)' }}>
-          <div className="w-full max-w-md rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-2xl px-4 py-3">
-            <div className="flex items-start gap-3">
-              <div className="min-w-0 flex-1">
-                <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">The full loop</p>
-                <p className="text-[13.5px] font-semibold text-zinc-900 dark:text-white">
-                  You were on question {resumePlace.idx + 1} of {resumePlace.total} — pick up where you left off.
+        <div className="pv-loop pv-loop--resume" data-place="resume">
+          <div className="pv-loop-head">
+            <IconButton label="Dismiss — keep the place saved for next time" onClick={() => setResumePlace(null)}
+              icon={<X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+            <div className="pv-loop-copy">
+              <p className="t-label pv-loop-label">The full loop</p>
+              <p className="pv-loop-say">
+                You were on question {resumePlace.idx + 1} of {resumePlace.total} — pick up where you left off.
+              </p>
+              {placeSavedNote && (
+                <p className="pv-loop-saved">
+                  Your place is saved.
                 </p>
-                {placeSavedNote && (
-                  <p className="text-[11.5px] italic mt-0.5" style={{ color: '#1F5F3E' }}>
-                    Your place is saved.
-                  </p>
-                )}
-              </div>
-              <button
-                onClick={() => setResumePlace(null)}
-                aria-label="Dismiss — keep the place saved for next time"
-                className="shrink-0 p-1.5 -mr-1 text-zinc-400"
-              >
-                <X size={15} />
-              </button>
+              )}
             </div>
-            <div className="mt-2.5 flex items-center gap-2">
-              <button
-                onClick={resumeLoop}
-                className="flex-1 rounded-full py-2 text-[13px] font-semibold text-white transition-transform active:translate-y-0.5"
-                style={{ backgroundColor: COLORS.accent, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
-              >
-                Resume
-              </button>
-              <button
-                onClick={startLoop}
-                className="flex-1 rounded-full py-2 text-[13px] font-semibold border-2 bg-white dark:bg-surface-paper transition-transform active:translate-y-0.5"
-                style={{ borderColor: '#d0cdc8', color: '#7a7068' }}
-              >
-                Start over
-              </button>
-            </div>
+          </div>
+          <div className="ui-pair">
+            <UiButton kind="main" onClick={resumeLoop}>
+              Resume
+            </UiButton>
+            <UiButton onClick={startLoop}>
+              Start over
+            </UiButton>
           </div>
         </div>
       )}
 
-      {/* Full Loop summary — the session in the student's own marks. */}
-      {loopDone && answerMap && (() => {
+      {/* Full Loop summary — the session in the student's own marks, on the shared Sheet. Its
+          own choices are its way out: Save image and Done. */}
+      {(() => {
+        if (!answerMap) return null;
         const qs = loopQuestions;
         const marks = qs.map(q => attempt.marks?.[q.n]).filter((m): m is SelfMark => !!m);
         const avg = marks.length ? Math.round(marks.reduce((a, m) => a + (m.max ? (m.score / m.max) * 100 : m.score), 0) / marks.length) : 0;
@@ -1780,53 +1768,42 @@ const Viewer: React.FC<ViewerProps> = ({
         };
         const receipt = composeReceipt(receiptStats);
         return (
-          <div className="frame-dialog [--frame-gap:1rem] z-[120] flex items-center justify-center bg-black/40" role="dialog" aria-modal="true" aria-label="Full loop summary">
-            <div className="frame-dialog-card overflow-y-auto w-full max-w-sm rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-5 py-5 text-center">
-              <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400 mb-1">The full loop · done</p>
-              <p className="text-[34px] font-bold leading-none mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: avg >= 66 ? '#3A8D5F' : COLORS.accent }}>
-                {marks.length ? `${avg}%` : '—'}
-              </p>
-              <p className="text-[13px] text-zinc-600 dark:text-zinc-300 mb-2">
-                {marks.length} of {qs.length} questions self-marked against the real scheme.
-              </p>
-              {topGap && (
-                <p className="text-[12.5px] italic rounded-lg px-3 py-2 mb-3 text-left" style={{ backgroundColor: '#FDEEDF', color: COLORS.accentDarkText, borderLeft: '3px solid var(--nsu-orange)' }}>
-                  Most marks died to {gapLabel[topGap[0]]} ({topGap[1]}×) — your dashboard's autopsy has the fix.
-                </p>
-              )}
-              {/* The receipt — the session's numbers, saveable as an image. */}
-              <div className="rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 px-3.5 py-2.5 mb-3 text-left">
-                <div className="flex items-center justify-between mb-1.5">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">Receipt</span>
-                  <span className="text-[10px] text-zinc-400">{receipt.date}</span>
-                </div>
-                {receipt.rows.map(r => (
-                  <div key={r.label} className="flex items-baseline justify-between gap-3 py-0.5">
-                    <span className="text-[11.5px]" style={{ color: '#7a7068' }}>{r.label}</span>
-                    <span className="text-[12px] font-semibold text-right text-zinc-900 dark:text-white">{r.value}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="flex items-center justify-center gap-2.5">
-                <button
-                  onClick={() => {
-                    if (downloadReceipt(receiptStats)) setReceiptSaved(true);
-                  }}
-                  className="inline-flex items-center gap-1.5 rounded-full px-4 py-2.5 text-[13px] font-semibold border-2 bg-white dark:bg-surface-paper transition-transform active:translate-y-0.5"
-                  style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.35)', color: COLORS.accent }}
-                >
-                  <Download size={14} /> {receiptSaved ? 'Saved' : 'Save image'}
-                </button>
-                <button
-                  onClick={() => setLoopDone(false)}
-                  className="rounded-full px-6 py-2.5 text-[14px] font-semibold text-white transition-transform active:translate-y-0.5"
-                  style={{ backgroundColor: COLORS.accent, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
-                >
+          <Sheet open={loopDone} plain title="The full loop · done" onClose={() => setLoopDone(false)} className="pv-summary"
+            footer={
+              <div className="ui-pair">
+                <UiButton size="lg" onClick={() => { if (downloadReceipt(receiptStats)) setReceiptSaved(true); }}>
+                  {receiptSaved ? 'Saved' : 'Save image'}
+                </UiButton>
+                <UiButton kind="main" size="lg" onClick={() => setLoopDone(false)}>
                   Done
-                </button>
+                </UiButton>
               </div>
+            }>
+            <p className="pv-summary-score">
+              {marks.length ? <><span>{avg}</span><span className="pv-summary-unit">%</span></> : '—'}
+            </p>
+            <p className="t-sub">
+              {marks.length} of {qs.length} questions self-marked against the real scheme.
+            </p>
+            {topGap && (
+              <p className="pv-summary-note">
+                Most marks died to {gapLabel[topGap[0]]} ({topGap[1]}×) — your dashboard's autopsy has the fix.
+              </p>
+            )}
+            {/* The receipt — the session's numbers, saveable as an image. */}
+            <div className="pv-receipt">
+              <div className="pv-receipt-head">
+                <span className="t-label">Receipt</span>
+                <span className="ui-readout">{receipt.date}</span>
+              </div>
+              {receipt.rows.map(r => (
+                <div key={r.label} className="pv-receipt-row">
+                  <span>{r.label}</span>
+                  <span>{r.value}</span>
+                </div>
+              ))}
             </div>
-          </div>
+          </Sheet>
         );
       })()}
 
@@ -1834,21 +1811,6 @@ const Viewer: React.FC<ViewerProps> = ({
           pace footer line; result feeds straight back into the minute budgets. */}
       {calibratorOpen && (
         <WpmCalibrator uid={wpmUid} onSaved={setWpmCal} onClose={() => setCalibratorOpen(false)} />
-      )}
-
-      {/* Exam-mode clock — floating pill above the footer. */}
-      {examOn && timing && side === 'paper' && (
-        <ExamClock
-          totalMinutes={timing.totalMinutes}
-          elapsed={elapsed}
-          running={running}
-          onToggle={() => setRunning(r => !r)}
-          onReset={() => setElapsed(0)}
-          onClose={() => {
-            setExamOn(false);
-            setRunning(false);
-          }}
-        />
       )}
 
       {/* Command-word decoder, on the shared Sheet. */}
@@ -2157,35 +2119,25 @@ const ExamClock: React.FC<{
   const remaining = totalSec - elapsed;
   const over = remaining < 0;
   const frac = Math.min(1, Math.max(0, elapsed / totalSec));
+  // Floating over the paper: Close at its left, the time in the pixel mono, a thin track, pause and reset.
   return (
-    <div
-      className="absolute left-1/2 -translate-x-1/2 bottom-[calc(56px+var(--sab,0px))] z-[65] flex items-center gap-2.5 pl-3 pr-2 py-2 rounded-2xl bg-white dark:bg-surface-paper border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]"
-      role="timer"
-      aria-live="off"
-    >
-      <div className="flex flex-col">
-        <span
-          className="text-[16px] font-bold tabular-nums leading-none"
-          style={{ fontFamily: "'Source Serif 4', serif", color: over ? COLORS.accent : '#1a1a1a' }}
-        >
+    <div className="pv-clock" role="timer" aria-live="off" data-over={over || undefined}>
+      <IconButton label="Close exam mode" onClick={onClose}
+        icon={<X className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+      <div className="pv-clock-read">
+        <span className="ui-readout pv-clock-time">
           {over ? `+${fmtClock(-remaining)}` : fmtClock(remaining)}
         </span>
-        <span className="text-[9px] font-bold uppercase tracking-wide mt-0.5" style={{ color: over ? COLORS.accent : '#9e9186' }}>
+        <span className="pv-clock-label">
           {over ? 'over time' : 'remaining'}
         </span>
       </div>
-      <div className="w-16 h-1.5 rounded-full overflow-hidden bg-[#e0dbd4]" aria-hidden>
-        <div className="h-full rounded-full" style={{ width: `${frac * 100}%`, backgroundColor: over ? COLORS.accent : '#3A8D5F' }} />
-      </div>
-      <button onClick={onToggle} aria-label={running ? 'Pause timer' : 'Start timer'} className="p-1.5 rounded-lg text-zinc-600 hover:text-zinc-900 dark:text-zinc-300">
-        {running ? <Pause size={16} /> : <Play size={16} />}
-      </button>
-      <button onClick={onReset} aria-label="Reset timer" className="p-1.5 rounded-lg text-zinc-500 hover:text-zinc-800 dark:text-zinc-400">
-        <RotateCcw size={15} />
-      </button>
-      <button onClick={onClose} aria-label="Close exam mode" className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-700 dark:text-zinc-500">
-        <X size={15} />
-      </button>
+      <span className="pv-clock-track" aria-hidden><i style={{ width: `${frac * 100}%` }} /></span>
+      <IconButton label={running ? 'Pause timer' : 'Start timer'} onClick={onToggle}
+        icon={running ? <Pause className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+          : <Play className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+      <IconButton label="Reset timer" onClick={onReset}
+        icon={<RotateCcw className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
     </div>
   );
 };
@@ -2364,10 +2316,14 @@ const RevealContent: React.FC<{
   onStep?: (dir: 1 | -1) => void;
   canPrev?: boolean;
   canNext?: boolean;
-}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, selfMark, existingMark, licence, siblings, onJumpSibling, onRecordMark, onClose, onFullScheme, onStep, canPrev, canNext }) => {
+  /** On a phone the scheme is the shared Sheet; `open` lets it rise and leave. */
+  open?: boolean;
+}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, selfMark, existingMark, licence, siblings, onJumpSibling, onRecordMark, onClose, onFullScheme, onStep, canPrev, canNext, open = true }) => {
   const schemeRegion = schemeRegionFor(q);
   // Text size for the crop; it carries across questions while the panel is open.
   const [zoom, setZoom] = useState(1);
+  // The phone sheet stays mounted to leave; it opens again at the crop's own size.
+  useEffect(() => { if (open) setZoom(1); }, [open]);
   const zoomStep = (dir: 1 | -1) => setZoom(z => Math.min(2, Math.max(1, Math.round((z + dir * 0.25) * 100) / 100)));
   const showsCrop = q.mode !== 'pagejump' && !schemeErrored;
   const firstPage = schemeRegion[0]?.p;
@@ -2380,49 +2336,30 @@ const RevealContent: React.FC<{
     onRecordMark?.({ score: v, max: 100, gap: v >= 100 ? undefined : existingMark?.gap, ts: Date.now() });
   const setGap = (k: GapKind) =>
     onRecordMark?.({ score: existingMark?.score ?? 0, max: 100, gap: existingMark?.gap === k ? undefined : k, ts: Date.now() });
-  return (
+  const title = `${q.label ?? `Question ${q.n}`} · marking scheme`;
+  // Previous and next question: bar glyphs at the right of the head (Close stays at the left).
+  const steps = onStep ? (
+    <span className="pv-reveal-steps">
+      <IconButton label="Previous question’s marking scheme" aria-disabled={!canPrev || undefined} onClick={() => { if (canPrev) onStep(-1); }}
+        icon={<ChevronLeft className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+      <IconButton label="Next question’s marking scheme" aria-disabled={!canNext || undefined} onClick={() => { if (canNext) onStep(1); }}
+        icon={<ChevronRight className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+    </span>
+  ) : null;
+  const body = (
     <>
-      {!wide && (
-        <div className="shrink-0 flex justify-center pt-2 pb-0.5" aria-hidden>
-          <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
-        </div>
-      )}
-      <div className="shrink-0 flex items-start gap-2 px-4 py-3 border-b border-zinc-200 dark:border-hairline">
-        <div className="flex-1 min-w-0">
-          <p className="text-[16px] font-bold text-zinc-900 dark:text-white">{q.label ?? `Question ${q.n}`} · marking scheme</p>
-          <p className="mt-0.5 text-[12px] text-zinc-500">How examiners award the marks — not a model answer.</p>
-        </div>
-        {onStep && (
-          <div className="shrink-0 flex items-center gap-1.5 pt-0.5">
-            <button type="button" onClick={() => onStep(-1)} disabled={!canPrev} aria-label="Previous question’s marking scheme" className={E_SQUARE}>
-              <ChevronLeft size={16} aria-hidden />
-            </button>
-            <button type="button" onClick={() => onStep(1)} disabled={!canNext} aria-label="Next question’s marking scheme" className={E_SQUARE}>
-              <ChevronRight size={16} aria-hidden />
-            </button>
-          </div>
-        )}
-        <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
-          <X size={18} />
-        </button>
-      </div>
+      <p className="pv-sheet-sub pv-reveal-sub">How examiners award the marks — not a model answer.</p>
       {showsCrop && (
-        <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2 border-b border-zinc-100 dark:border-hairline">
-          <span className="text-[12px] text-zinc-500">Text size</span>
-          <div className="flex items-center gap-1.5">
-            <button type="button" onClick={() => zoomStep(-1)} disabled={zoom <= 1} aria-label="Smaller marking scheme text" className={E_SQUARE}>
-              <Minus size={14} aria-hidden />
-            </button>
-            <output aria-live="polite" className="min-w-[44px] text-center text-[12.5px] font-semibold tabular-nums text-zinc-900 dark:text-zinc-100">
-              {Math.round(zoom * 100)}%
-            </output>
-            <button type="button" onClick={() => zoomStep(1)} disabled={zoom >= 2} aria-label="Bigger marking scheme text" className={E_SQUARE}>
-              <Plus size={14} aria-hidden />
-            </button>
-            <button type="button" onClick={() => setZoom(1)} disabled={zoom === 1} className={E_SQUARE}>
-              Fit
-            </button>
-          </div>
+        <div className="pv-reveal-size">
+          <span className="t-meta">Text size</span>
+          <span className="pv-zoom" role="group" aria-label="Text size">
+            <IconButton label="Smaller marking scheme text" aria-disabled={zoom <= 1 || undefined} onClick={() => { if (zoom > 1) zoomStep(-1); }}
+              icon={<Minus className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+            <output aria-live="polite" className="ui-readout pv-zoom-value">{Math.round(zoom * 100)}%</output>
+            <IconButton label="Bigger marking scheme text" aria-disabled={zoom >= 2 || undefined} onClick={() => { if (zoom < 2) zoomStep(1); }}
+              icon={<Plus className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+          </span>
+          <UiButton size="sm" onClick={() => setZoom(1)}>Fit</UiButton>
         </div>
       )}
       {/* Content settles a beat after the panel lands (premium stagger). */}
@@ -2430,81 +2367,61 @@ const RevealContent: React.FC<{
         initial={reduced ? false : { opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: reduced ? 0 : 0.08, duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
-        className="flex-1 min-h-0 overflow-auto overscroll-contain p-4 bg-white dark:bg-surface-paper"
+        className="pv-reveal-crop"
       >
         {q.schemeNote && (
-          <p className="text-[13px] leading-relaxed text-zinc-800 dark:text-zinc-200 mb-3 px-1">
+          <p className="pv-reveal-note">
             {q.schemeNote}
           </p>
         )}
         {q.mode === 'pagejump' ? (
-          <p className="text-[13px] text-zinc-600 dark:text-zinc-300 text-center py-8 px-4">
+          <p className="pv-reveal-say">
             This question’s answer spans several scheme pages. Open the marking scheme to read it in full.
           </p>
         ) : schemeErrored ? (
-          <p className="text-[13px] text-zinc-600 dark:text-zinc-300 text-center py-8 px-4">
+          <p className="pv-reveal-say">
             Couldn’t load the marking scheme. Open it in the Scheme tab instead.
           </p>
         ) : schemePdf ? (
           <CropView pdf={schemePdf} region={schemeRegion} trim zoom={zoom} responsive maxWidth={1200} />
         ) : (
-          <div role="status" aria-live="polite" className="flex flex-col items-center justify-center gap-2 py-10 text-zinc-400">
-            <div className="w-5 h-5 rounded-full border-2 border-zinc-300 border-t-zinc-500 animate-spin" aria-hidden />
-            <span className="text-[12px]">Loading the marking scheme…</span>
+          <div role="status" aria-live="polite" className="pv-state pv-reveal-loading">
+            <Spinner />
+            <span className="t-meta">Loading the marking scheme…</span>
             {schemeUrl && (
-              <a href={schemeUrl} target="_blank" rel="noopener noreferrer" className="text-[12px] underline underline-offset-2">
-                Taking too long? Open it in your browser
+              <a href={schemeUrl} target="_blank" rel="noopener noreferrer" className="ui-part ui-link ui-link--quiet">
+                <span>Taking too long? Open it in your browser</span>
               </a>
             )}
           </div>
         )}
       </MotionDiv>
+    </>
+  );
+  const foot = (
+    <>
       {selfMark && (
-        <div className="shrink-0 px-4 py-3 border-t border-zinc-200 dark:border-hairline bg-white dark:bg-surface-paper">
-          <div className="flex items-baseline justify-between gap-2 mb-2">
-            <p className="text-[11px] font-bold uppercase tracking-[0.1em]" style={{ color: '#9e9186' }}>
-              How did you do against the scheme?
-            </p>
+        <div className="pv-selfmark">
+          <div className="pv-selfmark-head">
+            <p className="t-label">How did you do against the scheme?</p>
             {licence && (
-              <span className="shrink-0 text-[10.5px] font-semibold rounded-full px-2 py-0.5" style={{ backgroundColor: '#E8F2EC', color: '#1F5F3E' }}>
+              <span className="pv-selfmark-licence">
                 {licence.pct}%-calibrated eye · {licence.sessions} chair sessions
               </span>
             )}
           </div>
-          <div className="flex items-center gap-1.5 mb-2">
-            {SCORE_BANDS.map(b => {
-              const active = scored === b.v;
-              return (
-                <button
-                  key={b.v}
-                  onClick={() => setScore(b.v)}
-                  aria-pressed={active}
-                  className="flex-1 py-1.5 rounded-lg text-[11.5px] font-semibold border-2 transition-all"
-                  style={active ? { backgroundColor: '#3A8D5F', borderColor: '#3A8D5F', color: '#fff' } : { backgroundColor: '#fff', borderColor: '#d0cdc8', color: '#7a7068' }}
-                >
-                  {b.label}
-                </button>
-              );
-            })}
+          <div className="pv-bands" role="group" aria-label="How did you do against the scheme?">
+            {SCORE_BANDS.map(b => (
+              <ChoiceTile key={b.v} compact kind="toggle" chosen={scored === b.v} label={b.label} onClick={() => setScore(b.v)} />
+            ))}
           </div>
           {scored !== undefined && scored < 100 && (
             <>
-              <p className="text-[11px] mb-1.5" style={{ color: '#7a7068' }}>What went wrong? (helps your weakness map)</p>
-              <div className="flex flex-wrap gap-1.5">
-                {GAP_OPTS.map(g => {
-                  const active = existingMark?.gap === g.k;
-                  return (
-                    <button
-                      key={g.k}
-                      onClick={() => setGap(g.k)}
-                      aria-pressed={active}
-                      className="px-2.5 py-1 rounded-full text-[11.5px] font-medium border-2 transition-all"
-                      style={active ? { backgroundColor: '#FDEEDF', borderColor: COLORS.accent, color: COLORS.accentDarkText } : { backgroundColor: '#fff', borderColor: '#d0cdc8', color: '#7a7068' }}
-                    >
-                      {g.label}
-                    </button>
-                  );
-                })}
+              <p className="pv-selfmark-ask">What went wrong? (helps your weakness map)</p>
+              <div className="pv-gaps" role="group" aria-label="What went wrong?">
+                {GAP_OPTS.map(g => (
+                  <ChoiceTile key={g.k} compact kind="toggle" chosen={existingMark?.gap === g.k} label={g.label} onClick={() => setGap(g.k)} />
+                ))}
               </div>
             </>
           )}
@@ -2512,35 +2429,46 @@ const RevealContent: React.FC<{
               other years. Failure becomes actionable in one tap. */}
           {scored !== undefined && scored <= 50 && !!siblings?.length && onJumpSibling && (
             <>
-              <p className="text-[11px] mt-2.5 mb-1.5" style={{ color: '#7a7068' }}>
-                Next reps — the same topic came up in other years:
-              </p>
-              <div className="flex flex-wrap gap-1.5">
+              <p className="pv-selfmark-ask">Next reps — the same topic came up in other years:</p>
+              <div className="pv-reps">
                 {siblings.map(s => (
-                  <button
-                    key={s.paperKey + s.n}
-                    onClick={() => onJumpSibling(s)}
-                    className="px-2.5 py-1 rounded-full text-[11.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
-                    style={{ backgroundColor: '#fff', borderColor: 'rgba(var(--nsu-orange-rgb), 0.35)', color: COLORS.accent }}
-                  >
-                    {s.year} · {questionLabel(s, { short: true })} →
-                  </button>
+                  <UiButton key={s.paperKey + s.n} size="sm" arrow="forward" onClick={() => onJumpSibling(s)}>
+                    {s.year} · {questionLabel(s, { short: true })}
+                  </UiButton>
                 ))}
               </div>
             </>
           )}
         </div>
       )}
-      <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2.5 border-t border-zinc-200 dark:border-hairline">
-        <span className="text-[11px] text-zinc-500 truncate">{copyright ?? '© State Examinations Commission'}</span>
-        <button
-          onClick={() => firstPage && onFullScheme(firstPage)}
-          disabled={!firstPage}
-          className="shrink-0 inline-flex items-center gap-1.5 pb-px border-b-[1.5px] border-[#1A1A1A] dark:border-zinc-100 text-[13px] font-bold text-[#1A1A1A] dark:text-zinc-100 disabled:opacity-40"
-        >
-          View full scheme →
-        </button>
+      <div className="pv-reveal-end">
+        <span className="pv-reveal-copy">{copyright ?? '© State Examinations Commission'}</span>
+        <TextButton arrow="forward" aria-disabled={!firstPage || undefined} onClick={() => { if (firstPage) onFullScheme(firstPage); }}>
+          View full scheme
+        </TextButton>
       </div>
+    </>
+  );
+  // On a phone: the shared Sheet, Close at the top left, the self-mark pinned at its foot.
+  if (!wide) {
+    return (
+      <Sheet open={open} onClose={onClose} title={title} titleAlign="start" actions={steps ?? undefined}
+        footer={foot} className="pv-reveal-sheet">
+        {body}
+      </Sheet>
+    );
+  }
+  // On a tablet (the tray) and a laptop (beside the paper): the same head as a sheet's.
+  return (
+    <>
+      <div className="ui-sheet-head ui-sheet-head--start pv-reveal-head">
+        <IconButton ref={closeRef} label="Close" onClick={onClose}
+          icon={<X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+        <h2 className="ui-sheet-title">{title}</h2>
+        {steps ?? <span aria-hidden="true" />}
+      </div>
+      <div className="pv-reveal-body">{body}</div>
+      <div className="pv-reveal-foot">{foot}</div>
     </>
   );
 };
@@ -2654,50 +2582,40 @@ const Page: React.FC<{
         return (
           <React.Fragment key={`${q.pP}-${q.n}`}>
             {info && (
-              <button
+              // The topic and how often it comes up, at the question's left: a box you press.
+              <UiButton
+                size="sm"
                 onClick={() => onTopic?.(q.n)}
-                className="absolute left-0 z-10 grid grid-cols-[auto_auto] overflow-hidden rounded-r-[2px] text-left whitespace-nowrap"
+                className="pv-chip pv-chip--topic"
                 style={{
                   top,
                   // Float just above the question's first line so the label
                   // doesn't sit on top of the question text (unless it's at the
                   // very top of the page, where there's no room above).
                   transform: q.pY[0] > 0.05 ? 'translateY(-100%)' : 'none',
-                  backgroundColor: '#24211F',
-                  color: '#FFFFFF',
                 }}
                 aria-label={`${info.label} — appeared in ${info.yearsWith} of ${info.totalYears} tagged years. Drill it across years.`}
               >
-                <span
-                  className="col-span-2 px-2.5 pt-1.5 pb-0.5 text-[7px] font-bold uppercase tracking-[0.13em]"
-                  style={{ color: '#F4A575' }}
-                >
-                  Topic
-                </span>
-                <span className="pl-2.5 pr-1.5 pb-1.5 text-[10px] font-semibold leading-none">
-                  {info.label}
-                </span>
+                <span className="pv-chip-label">Topic</span>
+                <span className="pv-chip-name">{info.label}</span>
                 {info.totalYears > 0 && (
-                  <span
-                    className="self-center pr-2.5 pb-1.5 text-[8.5px] font-semibold leading-none tabular-nums"
-                    style={{ color: '#F4A575' }}
-                  >
+                  <span className="ui-readout pv-chip-count">
                     {info.yearsWith} / {info.totalYears}
                   </span>
                 )}
-              </button>
+              </UiButton>
             )}
             {showAnswerChip && (
-              <button
+              <UiButton
+                size="sm"
+                arrow="forward"
                 onClick={() => onReveal?.(q)}
-                className="absolute right-0 z-10 flex items-stretch overflow-hidden rounded-l-[2px] text-[10px] font-semibold text-white whitespace-nowrap"
-                style={{ top, backgroundColor: '#24211F' }}
+                className="pv-chip pv-chip--scheme"
+                style={{ top }}
                 aria-label={`Open the marking scheme for ${q.label ?? `Question ${q.n}`}`}
               >
-                <span className="w-1" style={{ backgroundColor: COLORS.accent }} aria-hidden />
-                <span className="py-2 pl-2.5 pr-1.5">Mark scheme</span>
-                <span className="py-2 pr-2.5" style={{ color: '#F4A575' }} aria-hidden>→</span>
-              </button>
+                Mark scheme
+              </UiButton>
             )}
           </React.Fragment>
         );

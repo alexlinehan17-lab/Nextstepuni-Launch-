@@ -91,3 +91,94 @@
 .pv-triage-q > .ui-link { align-self: flex-start; }
 .pv-triage-q .ui-seg { width: 100%; }
 .pv-here { color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+
+/* ── The marking scheme revealed (area 6c, 27 Nov 2026) ── */
+/* On a phone the shared Sheet; from 768px a tray at the right over the paper; from 1100px beside
+   it. One head everywhere: Close at the top left, the question's name, previous and next at the
+   right. Only the State Examinations Commission's crop scrolls; it is drawn exactly as before. */
+.pv-reveal-sub { margin: 0; }
+.pv-reveal-size { display: flex; flex: none; align-items: center; gap: var(--space-3); }
+.pv-reveal-size > .t-meta { margin-right: auto; color: var(--ink-secondary); }
+.pv-reveal-crop { flex: 1 1 auto; min-height: 0; overflow: auto; overscroll-behavior: contain; }
+.pv-reveal-sheet .pv-reveal-crop { margin: 0 calc(-1 * var(--space-2)); }
+.pv-reveal-note { margin: 0 0 var(--space-3); color: var(--ink-primary); font-size: 15px; line-height: 21px; }
+.pv-reveal-say { margin: 0; padding: var(--space-8) var(--space-4); color: var(--ink-secondary); font-size: 15px; line-height: 21px; text-align: center; }
+.pv-reveal-loading { padding: var(--space-8) 0; }
+.pv-reveal-steps { display: flex; }
+:is(.pv-reveal-steps, .pv-zoom) .ui-icon-btn[aria-disabled='true'] { color: var(--ink-muted); opacity: 0.45; cursor: default; }
+.pv-reveal-sheet .ui-sheet-foot { gap: var(--space-3); padding-top: var(--space-3); border-top: 1px solid var(--hairline); }
+/* The tray and the column beside the paper: the sheet's head, the crop, the self-mark at the foot. */
+.pv-reveal-scrim { background: var(--scrim); }
+.pv-reveal-tray { border-left: 1px solid var(--outline-soft); background: var(--surface-raised); color: var(--ink-primary); box-shadow: var(--float); }
+.pv-reveal-head { flex: none; padding-top: var(--space-2); padding-bottom: var(--space-2); border-bottom: 1px solid var(--hairline); }
+.pv-reveal-body { display: flex; flex: 1 1 auto; min-height: 0; flex-direction: column; gap: var(--space-3); padding: var(--space-4) var(--space-6) 0; }
+.pv-reveal-foot { display: flex; flex: none; flex-direction: column; gap: var(--space-3); padding: var(--space-3) var(--space-6) calc(var(--space-3) + var(--safe-bottom)); border-top: 1px solid var(--hairline); }
+.pt-reader-sidebar[data-scheme-open] .pv-reveal-foot { padding-bottom: var(--space-3); }
+/* Self-mark: Blank to Full and why marks were lost, chosen with the ink outline and the tick. */
+.pv-selfmark { display: flex; flex-direction: column; gap: var(--space-2); }
+.pv-selfmark-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); }
+.pv-selfmark-head > .t-label { margin: 0; color: var(--ink-muted); }
+.pv-selfmark-licence { color: var(--ink-muted); font-size: 13px; line-height: 18px; text-align: right; }
+.pv-bands { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--space-2); }
+.pv-gaps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); }
+@media (min-width: 768px) { .pv-gaps { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.pv-selfmark-ask { margin: var(--space-1) 0 0; color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+.pv-reps { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.pv-reveal-end { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.pv-reveal-copy { min-width: 0; overflow: hidden; color: var(--ink-muted); font-size: 11px; line-height: 14px; text-overflow: ellipsis; white-space: nowrap; }
+.pv-reveal-end .ui-link[aria-disabled='true'] { color: var(--ink-muted); cursor: default; }
+/* On the page, from 768px: the question's topic at its left and its marking scheme at its right,
+   boxes you press with a line, 11px and more, each 44px to the finger. */
+.pv-chip.ui-btn { position: absolute; z-index: 10; }
+.pv-chip--scheme.ui-btn { right: var(--space-2); }
+.pv-chip--topic.ui-btn { left: var(--space-2); height: auto; min-height: 44px; padding-top: 5px; padding-bottom: 5px; }
+.pv-chip--topic > span { display: grid; grid-template-columns: auto auto; column-gap: var(--space-2); align-items: baseline; text-align: left; }
+.pv-chip-label { grid-column: 1 / -1; color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.pv-chip-name { font-size: 13px; line-height: 18px; }
+.pv-chip-count { color: var(--ink-secondary); font-size: 11px; line-height: 14px; }
+
+/* ── The Full Loop and the exam clock (area 6c, 27 Nov 2026) ── */
+/* The loop's bar and its resume card: on a phone pinned at the foot, under the question panel and
+   above the home indicator; from 768px floating over the paper, as before. One charcoal action. */
+.pv-loop { display: flex; flex: none; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-6) calc(var(--space-2) + var(--safe-bottom)) var(--space-2); border-top: 1px solid var(--hairline); background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
+.pv-loop :is(p) { margin: 0; }
+.pv-loop-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 2px; }
+.pv-loop-label { color: var(--ink-muted); }
+.pv-loop-label .ui-readout { font-size: 11px; line-height: 14px; text-transform: none; }
+.pv-loop-name { overflow: hidden; font-size: 16px; line-height: 21px; text-overflow: ellipsis; white-space: nowrap; }
+.pv-loop-time { flex: none; color: var(--ink-secondary); }
+.pv-loop > .ui-btn { flex: none; }
+.pv-loop--resume { flex-direction: column; align-items: stretch; gap: var(--space-3); padding: var(--space-2) var(--space-6) calc(var(--space-3) + var(--safe-bottom)) var(--space-2); }
+.pv-loop-head { display: flex; align-items: flex-start; gap: var(--space-2); }
+.pv-loop-head .pv-loop-copy { padding-top: 4px; }
+.pv-loop-say { font-size: 15px; line-height: 21px; }
+.pv-loop-saved { color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+.pv-loop--resume > .ui-pair { padding-left: var(--space-4); }
+.pv-root:has(> .pv-loop) .pt-question-tools { padding-bottom: var(--space-3); }
+@media (min-width: 768px) {
+  .pv-loop { position: absolute; left: 50%; bottom: calc(var(--space-4) + var(--safe-bottom)); z-index: 105; width: min(448px, calc(100% - 2 * var(--space-6))); padding: var(--space-2) var(--space-3) var(--space-2) var(--space-1); border: 1px solid var(--outline-soft); border-radius: var(--r-box); background: var(--surface-raised); box-shadow: var(--float); transform: translateX(-50%); }
+  .pv-loop--resume { padding: var(--space-2) var(--space-4) var(--space-4) var(--space-1); }
+  .pv-loop--resume > .ui-pair { padding-left: var(--space-3); }
+}
+/* The summary, on the shared Sheet: the average as the number, then the receipt in ruled rows. */
+.pv-summary .ui-sheet-body { gap: var(--space-3); }
+.pv-summary-score { margin: 0; color: var(--ink-primary); font-size: 40px; line-height: 40px; letter-spacing: -0.055em; font-variant-numeric: tabular-nums; }
+.pv-summary-unit { margin-left: 2px; font-size: 21px; letter-spacing: 0; }
+.pv-summary .t-sub { margin: 0; }
+.pv-summary-note { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.pv-receipt { display: flex; flex-direction: column; margin-top: var(--space-2); }
+.pv-receipt-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); padding-bottom: var(--space-2); color: var(--ink-muted); }
+.pv-receipt-head .t-label { color: var(--ink-muted); }
+.pv-receipt-row { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); padding: 10px 0; border-top: 1px solid var(--hairline); font-size: 15px; line-height: 21px; }
+.pv-receipt-row > :first-child { color: var(--ink-secondary); }
+.pv-receipt-row > :last-child { color: var(--ink-primary); text-align: right; font-variant-numeric: tabular-nums; }
+/* The exam clock floats over the paper above the page count: Close at its left, the time in the
+   pixel mono, a thin track, pause and reset. Over time it says so in words. */
+.pv-clock { position: absolute; left: 50%; bottom: calc(56px + var(--safe-bottom)); z-index: 26; display: flex; align-items: center; gap: var(--space-1); padding: 0 var(--space-1); border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); background: var(--surface-raised); color: var(--ink-primary); box-shadow: var(--float); transform: translateX(-50%); white-space: nowrap; }
+.pv-clock-read { display: flex; flex-direction: column; padding: 0 var(--space-1); }
+.pv-clock-time { font-size: 17px; line-height: 20px; }
+.pv-clock-label { color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.pv-clock-track { display: block; width: 64px; height: 3px; overflow: hidden; border-radius: 2px; background: var(--hairline); }
+.pv-clock-track > i { display: block; height: 100%; background: var(--ink-primary); }
+.pt-reader-workspace:has(> .pt-question-tools) .pv-clock { bottom: 56px; }
+@media (min-width: 768px) { .pv-clock { bottom: 64px; } }
