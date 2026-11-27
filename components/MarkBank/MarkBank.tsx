@@ -191,6 +191,17 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, stu
     }
     return [...ids];
   }, [studentSubjects, canSelectSubject]);
+  // The subjects the student takes (Your setup, the same list study set-up reads), as Mark Bank
+  // subjects with questions: the only ones its subject button offers (Alex, 26 Nov 2026: "it should
+  // only show you your subjects, not every subject"). A student with none set is offered every subject.
+  const mySubjectIds = useMemo(() => {
+    const ids: string[] = [];
+    for (const profileSubject of studentSubjects ?? []) {
+      const choice = canSelectSubject(profileSubject.subjectName) ? profileDeckChoice([profileSubject]) : null;
+      if (choice && !ids.includes(choice.subjectId)) ids.push(choice.subjectId);
+    }
+    return ids;
+  }, [studentSubjects, canSelectSubject]);
   const firstStudioSubject = studioSubjects[0];
   const fallbackChoice = studio && firstStudioSubject
     ? { subjectId: firstStudioSubject.id, level: levelsFor(firstStudioSubject.id).find(l => deckSize(firstStudioSubject.id, l) > 0) ?? ('higher' as Level) }
@@ -496,7 +507,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, stu
 
   return <MarkBankLibrary key={deckId} examDate={examDate} subjectId={subjectId} level={level} cards={reviewCards} state={deck} now={now}
     listeningCount={listeningCount} onOpenListeningStudio={onOpenListeningStudio}
-    pages={libraryPages} onPagesChange={setLibraryPages}
+    pages={libraryPages} onPagesChange={setLibraryPages} mySubjectIds={mySubjectIds}
     chooseSubject={chooseSubject} chooseLevel={chooseLevel} canSelectSubject={canSelectSubject}
     onStartingPoint={() => setScreen({ name: 'starting-point' })}
     onStart={startSession} busy={launchingTopicId!==null} ready={loaded&&!cardsLoading&&!cardsError}

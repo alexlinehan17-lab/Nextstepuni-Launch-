@@ -135,3 +135,36 @@ describe('a strand and a topic', () => {
     expect((onStart.mock.calls[0][1] as SecCard[])[0].id).toBe(cards[2].id);
   });
 });
+
+describe('changing subject', () => {
+  // Rendered through MarkBank, as the Launchpad mounts it; jsdom is narrower than a laptop, so the button opens the sheet.
+  afterEach(() => localStorage.clear());
+
+  it('lists only the subjects the student takes, and switching subject keeps the level', async () => {
+    const { default: MarkBank } = await import('../components/MarkBank/MarkBank');
+    render(<MarkBank studentSubjects={[{ subjectName: 'Biology', level: 'higher' }, { subjectName: 'Chemistry', level: 'higher' }]} />);
+    const button = () => screen.getByRole('button', { name: /^Change subject or level: / });
+    expect(button()).toHaveTextContent('Biology');
+    fireEvent.click(button());
+    const sheet = await screen.findByRole('dialog', { name: 'Change subject or level' });
+    const subjects = within(within(sheet).getByRole('radiogroup', { name: 'Your subjects' })).getAllByRole('radio');
+    expect(subjects.map(subject => subject.textContent)).toEqual(['Biology', 'Chemistry']);
+    expect(within(sheet).getByRole('radio', { name: 'Biology' })).toHaveAttribute('aria-checked', 'true');
+    // The level first: Ordinary applies at once.
+    fireEvent.click(within(sheet).getByRole('radio', { name: 'Ordinary' }));
+    expect(await screen.findByText(/^Ordinary level/)).toBeInTheDocument();
+    fireEvent.click(button());
+    fireEvent.click(within(await screen.findByRole('dialog', { name: 'Change subject or level' })).getByRole('radio', { name: 'Chemistry' }));
+    expect(button()).toHaveTextContent('Chemistry');
+    expect(button()).toHaveTextContent('Ordinary level');
+  });
+
+  it('offers every subject to a student who has not set their subjects', async () => {
+    const { default: MarkBank } = await import('../components/MarkBank/MarkBank');
+    const { SUBJECTS } = await import('../components/MarkBank/deck');
+    render(<MarkBank studentSubjects={[]} />);
+    fireEvent.click(screen.getByRole('button', { name: /^Change subject or level: / }));
+    const sheet = await screen.findByRole('dialog', { name: 'Change subject or level' });
+    expect(within(within(sheet).getByRole('radiogroup', { name: 'Subjects' })).getAllByRole('radio')).toHaveLength(SUBJECTS.length);
+  });
+});

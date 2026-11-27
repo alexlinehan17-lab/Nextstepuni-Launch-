@@ -82,7 +82,7 @@
 .mb-sheet-subjects .ui-choice { min-height: 52px; padding: 5px 14px 5px 10px; }
 .mb-sheet-label:not(:first-child) { margin-top: var(--space-3); }
 /* ...and on a laptop, a menu under the button. */
-.ui-menu.mb-subject-menu { width: 380px; padding: 6px; }
+.ui-menu.mb-subject-menu { width: 380px; min-width: 380px; padding: 6px; }
 .mb-menu-level { display: flex; flex-direction: column; gap: var(--space-2); padding: 4px 2px 12px; margin-bottom: 4px; border-bottom: 1px solid var(--hairline); }
 .mb-menu-level > .ui-menu-label { padding: 6px 6px 0; }
 .mb-subject-menu .ui-menu-label { padding: 8px 10px 6px; }
