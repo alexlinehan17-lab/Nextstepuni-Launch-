@@ -2981,7 +2981,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         const shownTotal = studyReview ? queue.length : exerciseTotal;
         const now = studyReview ? position + 1 : Math.min(distinctDone + 1, exerciseTotal);
         return (
-          <div className="mb-p-progress" data-under={underBar || undefined}>
+          <div className="mb-p-progress">
             <h2 ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined} className="mb-p-progress-label">
               <span>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</span>{' '}
               <span className="mb-p-progress-count">· {now} / {shownTotal}</span>
