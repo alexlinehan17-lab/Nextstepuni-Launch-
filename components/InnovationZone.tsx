@@ -62,6 +62,7 @@ import { useNavigation } from '../contexts/NavigationContext';
 import { ToolArtwork, ToolIntroductionContext } from './launchpad/ToolMasthead';
 import LaunchpadToolCard from './launchpad/LaunchpadToolCard';
 import { TopBar } from './ui/Bars';
+import './launchpad/workshop-7.css';
 import { Glyph, IconButton, TextButton } from './ui/Button';
 import { Menu } from './ui/Menu';
 import { SearchField } from './ui/Field';
@@ -171,6 +172,8 @@ const CATEGORY_OPTIONS = [
   { value: 'plan', label: 'Plan' },
   { value: 'track', label: 'Track' },
 ] as const;
+/** The Workshop's tools have no drawing of their own yet: their bar carries none, rather than a broken image (area 7b). */
+const WORKSHOP_TOOLS_WITHOUT_ART = new Set(['diagram-vault', 'answer-architect', 'definition-drill', 'oral-trainer', 'examiners-chair']);
 /** The Launchpad's own drawing in its bar on a phone: the card dealer (its board, 26 Nov 2026). */
 const LAUNCHPAD_ART = '/assets/star-crew/companions/card-dealer.png';
 
@@ -962,7 +965,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
       >
         <div className={`lp-navigation-column mx-auto w-full md:px-6 ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'}`}>
           <TopBar tool ruled leave={toolLeave} over={toolBar?.over ?? toolEyebrow} title={toolBar?.title ?? toolTitle}
-            art={toolBar ? undefined : activeTool ? <ToolArtwork tool={toolArtwork} /> : LAUNCHPAD_ART} action={toolBarAction} />
+            art={toolBar ? undefined : activeTool && WORKSHOP_TOOLS_WITHOUT_ART.has(activeTool) ? undefined : activeTool ? <ToolArtwork tool={toolArtwork} /> : LAUNCHPAD_ART} action={toolBarAction} />
         </div>
       </div>
 
@@ -970,7 +973,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
           usable width, which is a reading column, not a desk: Mark Bank puts a
           question and its marking scheme side by side and needs 1092px. Tools
           listed here also own their top spacing, so `pt-16` comes off. */}
-      <main data-tool={activeTool ?? 'catalogue'} className={`${activeTool === 'journey' ? '' : 'launchpad-approved'} relative z-10 w-full flex-grow ${activeTool === 'paper-trail' || activeTool === 'mark-bank' || activeTool === 'listening-studio' ? '' : 'px-4 sm:px-6'} ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'} ${activeTool === 'paper-trail' || activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' || WIDE_TOOLS.has(activeTool ?? '') ? 'pt-0' : 'pt-6 md:pt-16'}`}>
+      <main data-tool={activeTool ?? 'catalogue'} className={`${activeTool === 'journey' ? '' : 'launchpad-approved'} ${activeTool && (WORKSHOP_TOOLS_WITHOUT_ART.has(activeTool) || activeTool === 'future-finder') ? 'ws7-tool' : ''} relative z-10 w-full flex-grow ${activeTool === 'paper-trail' || activeTool === 'mark-bank' || activeTool === 'listening-studio' ? '' : 'px-4 sm:px-6'} ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'} ${activeTool === 'paper-trail' || activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' || WIDE_TOOLS.has(activeTool ?? '') ? 'pt-0' : 'pt-6 md:pt-16'}`}>
          <AnimatePresence mode="wait">
             {!activeTool ? (
                 <MotionDiv

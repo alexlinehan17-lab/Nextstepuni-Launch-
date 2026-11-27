@@ -18,8 +18,9 @@
  * every fact sourced to the SEC/NCCA.
  */
 
+import { useBackStep } from '../contexts/NavigationContext';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { ArrowLeft, Mic, Square, RotateCcw, Check } from 'lucide-react';
+import { Mic, Square, RotateCcw, Check } from 'lucide-react';
 import { IRISH_ORAL } from '../data/oralExam/irish';
 import { type OralComponent } from '../data/oralExam/types';
 import {
@@ -199,6 +200,10 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
     activeIdRef.current = null;
   };
 
+  // The bar's one Back steps back from a part to the four parts (area 7b: no second way back in the page).
+  const backHomeRef = useRef(backHome); backHomeRef.current = backHome;
+  useBackStep(Boolean(active), () => backHomeRef.current());
+
   const now = Date.now();
 
   // ═══════════ Practice a component ═══════════
@@ -210,9 +215,6 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
     const prevMeta = meta.length >= 2 ? meta[meta.length - 2] : undefined;
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
-        <button onClick={backHome} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
-          <ArrowLeft size={15} /> Oral components
-        </button>
         <p className="text-[10.5px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>{active.nameGa} · {active.nameEn}</p>
         <h2 className="text-2xl font-semibold mb-4" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>Practise speaking</h2>
 

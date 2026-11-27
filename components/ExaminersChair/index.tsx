@@ -16,8 +16,9 @@
  * compliance/evidence/examiners-chair.md). Scoring: ./store.ts (tested).
  */
 
+import { useBackStep } from '../../contexts/NavigationContext';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, BookMarked, Check, ChevronRight, Download } from 'lucide-react';
+import { BookMarked, Check, ChevronRight, Download } from 'lucide-react';
 import {
   CHAIR_SUBJECTS,
   LEVEL_LABEL,
@@ -551,6 +552,12 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     else drillSession(snap.sessionId);
   };
 
+  // The bar's one Back steps back inside the tool (area 7b: the in-page "← Sessions" and "← Subjects"
+  // links go): from a session to its subject, from the subject, Codex, blind spots or teacher view home.
+  const exitSessionRef = useRef(exitSession); exitSessionRef.current = exitSession;
+  useBackStep(view === 'session', () => exitSessionRef.current());
+  useBackStep(view !== 'home' && view !== 'session', () => setView('home'));
+
   // ───────────────────────────── session flow ─────────────────────────────
 
   if (view === 'session' && session) {
@@ -613,9 +620,6 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
 
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
-        <button onClick={exitSession} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: MUTED }}>
-          <ArrowLeft size={15} /> Sessions
-        </button>
 
         <div className="flex items-start justify-between gap-3 mb-4">
           <div>
@@ -1372,9 +1376,6 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
 
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
-        <button onClick={() => setView('home')} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: MUTED }}>
-          <ArrowLeft size={15} /> Subjects
-        </button>
         <h2 className="text-[22px] font-semibold mb-1" style={{ fontFamily: SERIF, color: INK }}>
           Your Marker’s Codex
         </h2>
@@ -1461,9 +1462,6 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     const misses = topMisses(state, 12);
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
-        <button onClick={() => setView('home')} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: MUTED }}>
-          <ArrowLeft size={15} /> Subjects
-        </button>
         <h2 className="text-[22px] font-semibold mb-1" style={{ fontFamily: SERIF, color: INK }}>
           Where your eye differs
         </h2>
@@ -1541,9 +1539,6 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     const top = topCohortMisses(agg, 15);
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
-        <button onClick={() => setView('home')} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: MUTED }}>
-          <ArrowLeft size={15} /> Subjects
-        </button>
         <h2 className="text-[22px] font-semibold mb-1" style={{ fontFamily: SERIF, color: INK }}>
           What your class mis-marks
         </h2>
@@ -1663,9 +1658,6 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     const sessions = sessionsFor(subject, activeLevel);
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
-        <button onClick={() => setView('home')} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: MUTED }}>
-          <ArrowLeft size={15} /> Subjects
-        </button>
         {/* Save-and-exit: the quiet, non-blocking confirmation after a mid-session exit. */}
         {exitSavedNote && resumeSlot && (
           <p className="text-[12px] mb-3 inline-flex items-center gap-1.5" style={{ color: MUTED }} role="status">

@@ -102,8 +102,9 @@ describe('app audit regressions', () => {
     expect(profile).toContain('closeLabel="Close profile"');
     expect(catchUp).toContain('aria-label="Catch-Up level"');
     expect(catchUp).toContain('value={levelFilter}');
-    // The level filter is the shared pill tab control now (role=tab / aria-selected), not hand-rolled aria-pressed buttons.
-    expect(commandWords).toContain("import HorizontalTabs from '../ui/HorizontalTabs'");
+    // The level filter is the shared selection bar now (area 7b: role=radiogroup, named "Question level"), not hand-rolled aria-pressed buttons.
+    expect(commandWords).toContain("import { SelectionBar } from '../ui/Choice'");
+    expect(commandWords).toContain('label="Question level"');
     expect(commandWords).toContain('value={levelFilter}');
   });
 

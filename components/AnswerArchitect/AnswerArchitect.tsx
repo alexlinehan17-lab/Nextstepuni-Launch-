@@ -14,8 +14,9 @@
  * never a model answer or an invented mark.
  */
 
+import { useBackStep } from '../../contexts/NavigationContext';
 import React, { useMemo, useState } from 'react';
-import { ArrowLeft, ListChecks, ChevronDown, AlertTriangle } from 'lucide-react';
+import { ChevronDown, AlertTriangle } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import {
   architectSubjects,
@@ -145,14 +146,13 @@ const AnswerArchitect: React.FC<Props> = ({ studentSubjects = [] }) => {
 
   const subjectLabel = (id: string) => subjects.find(s => s.id === id)?.label ?? id;
   const skeletons = useMemo(() => (subjectId ? skeletonsForSubject(subjectId) : []), [subjectId]);
+  // The bar's one Back steps back from a subject to the subjects (area 7b: no second way back in the page).
+  useBackStep(Boolean(subjectId), () => setSubjectId(null));
 
   // ── Level 1: one subject's answer skeletons ──
   if (subjectId) {
     return (
       <div className="w-full max-w-3xl mx-auto pb-12">
-        <button onClick={() => setSubjectId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
-          <ArrowLeft size={15} /> All subjects
-        </button>
         <h2 className="text-2xl font-semibold mb-1 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel(subjectId)}</h2>
         <p className="text-[13px] mb-4 text-[#7a7068] dark:text-zinc-400">
           {skeletons.length} answer skeleton{skeletons.length === 1 ? '' : 's'} — each a real exam question, built as the ordered beats the SEC scheme awards marks for.
@@ -167,9 +167,7 @@ const AnswerArchitect: React.FC<Props> = ({ studentSubjects = [] }) => {
   // ── Level 0: subject picker (tool exit handled by the zone's ToolHeader) ──
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
-      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
-        <ListChecks size={20} style={{ color: ACCENT }} /> Answer Architect
-      </h2>
+      {/* The tool's name is in the bar (area 7b): no second title here. */}
       <p className="text-[13.5px] leading-relaxed mb-5 text-[#5a5550] dark:text-zinc-400">
         The mark-earning skeleton of a top answer. For real exam questions, see the shape of a full-marks answer and every beat it is built from — in order, with the marks the SEC scheme awards each one.
       </p>

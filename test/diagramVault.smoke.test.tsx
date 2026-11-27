@@ -26,7 +26,8 @@ describe('Diagram Vault', () => {
   test('renders the picker, then a subject’s figures with source + description toggle', () => {
     render(<DiagramVault studentSubjects={['Biology']} />);
     // Level 0 — the tool heading and the picker.
-    expect(screen.getByRole('heading', { name: /Diagram Vault/i })).toBeInTheDocument();
+    // The tool's name is in the Launchpad's bar now (area 7b): the picker opens on its own words.
+    expect(screen.getByText(/Every diagram, graph, map and chart that has come up in the exams/)).toBeInTheDocument();
     // Drill into Biology (a subject we know has figures).
     fireEvent.click(screen.getByRole('button', { name: /^Biology/ }));
     // Level 1 — a figure tile with a real image and SEC attribution.

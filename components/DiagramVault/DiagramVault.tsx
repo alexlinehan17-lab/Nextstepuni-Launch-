@@ -10,8 +10,9 @@
  * shows a real, attributable figure — never a generated or unmoored image.
  */
 
+import { useBackStep } from '../../contexts/NavigationContext';
 import React, { useMemo, useState } from 'react';
-import { ArrowLeft, Image as ImageIcon, ChevronDown } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import {
   diagramSubjects,
@@ -115,6 +116,8 @@ const DiagramVault: React.FC<Props> = ({ studentSubjects = [] }) => {
   const subjectLabel = (id: string) => subjects.find(s => s.id === id)?.label ?? id;
   const entries = useMemo(() => (subjectId ? diagramsForSubject(subjectId) : []), [subjectId]);
   const topicChips = useMemo(() => (subjectId ? topicsForSubjectDiagrams(subjectId) : []), [subjectId]);
+  // The bar's one Back steps back from a subject to the subjects (area 7b: no second way back in the page).
+  useBackStep(Boolean(subjectId), () => { setSubjectId(null); setTopicFilter('all'); });
   const shown = useMemo(
     () => (topicFilter === 'all' ? entries : entries.filter(e => e.topicLabel === topicFilter)),
     [entries, topicFilter],
@@ -124,9 +127,6 @@ const DiagramVault: React.FC<Props> = ({ studentSubjects = [] }) => {
   if (subjectId) {
     return (
       <div className="w-full max-w-3xl mx-auto pb-12">
-        <button onClick={() => { setSubjectId(null); setTopicFilter('all'); }} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
-          <ArrowLeft size={15} /> All subjects
-        </button>
         <h2 className="text-2xl font-semibold mb-1 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel(subjectId)}</h2>
         <p className="text-[13px] mb-4 text-[#7a7068] dark:text-zinc-400">
           {entries.length} exam figure{entries.length === 1 ? '' : 's'} — each cropped from a real paper, with its decoded description and exam source.
@@ -158,9 +158,7 @@ const DiagramVault: React.FC<Props> = ({ studentSubjects = [] }) => {
   // ── Level 0: subject picker (tool exit is handled by the zone's ToolHeader) ──
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
-      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
-        <ImageIcon size={20} style={{ color: ACCENT }} /> Diagram Vault
-      </h2>
+      {/* The tool's name is in the bar (area 7b): no second title here. */}
       <p className="text-[13.5px] leading-relaxed mb-5 text-[#5a5550] dark:text-zinc-400">
         Every diagram, graph, map and chart that has come up in the exams — cropped straight from the paper and decoded. The one you have to draw or read for the marks, shown to you first.
       </p>

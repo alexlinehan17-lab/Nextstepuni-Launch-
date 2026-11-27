@@ -16,8 +16,8 @@
    "tailwind [#…]": 5
   },
   "components/AnswerArchitect/AnswerArchitect.tsx": {
-   "hex": 12,
-   "tailwind [#…]": 4
+   "hex": 11,
+   "tailwind [#…]": 3
   },
   "components/AppRouter.tsx": {
    "hex": 6
@@ -68,12 +68,12 @@
    "rgb(": 4
   },
   "components/DefinitionDrill/DefinitionDrill.tsx": {
-   "hex": 17,
-   "tailwind [#…]": 3
+   "hex": 16,
+   "tailwind [#…]": 2
   },
   "components/DiagramVault/DiagramVault.tsx": {
-   "hex": 11,
-   "tailwind [#…]": 5
+   "hex": 10,
+   "tailwind [#…]": 4
   },
   "components/DiveIn.tsx": {
    "hex": 2,
@@ -180,7 +180,7 @@
    "tailwind [#…]": 85
   },
   "components/OralExamTrainer.tsx": {
-   "hex": 41,
+   "hex": 40,
    "tailwind [#…]": 3
   },
   "components/PaperTrail/AiMarkingPanel.tsx": {
@@ -337,11 +337,6 @@
   },
   "components/WhatsNew.tsx": {
    "hex": 3
-  },
-  "components/WipTools.tsx": {
-   "hex": 4,
-   "rgb(": 5,
-   "tailwind [#…]": 1
   },
   "components/WorldIconBlob.tsx": {
    "hex": 5

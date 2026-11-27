@@ -39,7 +39,7 @@
    "button": 3
   },
   "components/AnswerArchitect/AnswerArchitect.tsx": {
-   "button": 2
+   "button": 1
   },
   "components/AppRouter.tsx": {
    "button": 4
@@ -88,10 +88,10 @@
    "button": 3
   },
   "components/DefinitionDrill/DefinitionDrill.tsx": {
-   "button": 5
+   "button": 4
   },
   "components/DiagramVault/DiagramVault.tsx": {
-   "button": 3
+   "button": 2
   },
   "components/DigitalDistractionModule.tsx": {
    "button": 1
@@ -109,7 +109,7 @@
    "button": 10
   },
   "components/ExaminersChair/index.tsx": {
-   "button": 43
+   "button": 38
   },
   "components/FeedbackModal.tsx": {
    "button": 2
@@ -118,7 +118,7 @@
    "pop-up": 1
   },
   "components/FutureFinder.tsx": {
-   "button": 24,
+   "button": 22,
    "dropdown": 1,
    "pop-up": 1
   },
@@ -244,7 +244,7 @@
    "button": 20
   },
   "components/OralExamTrainer.tsx": {
-   "button": 7
+   "button": 6
   },
   "components/PaperTrail/AiMarkingPanel.tsx": {
    "button": 1
@@ -385,9 +385,6 @@
   },
   "components/WelcomeCharacter.tsx": {
    "button": 1
-  },
-  "components/WipTools.tsx": {
-   "button": 2
   },
   "components/YearTransitionFlow.tsx": {
    "button": 8,
