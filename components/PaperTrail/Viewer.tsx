@@ -1703,11 +1703,11 @@ const Viewer: React.FC<ViewerProps> = ({
             </div>
             <span className="ui-readout pv-loop-time">{mm}:{ss}</span>
             {marked ? (
-              <UiButton kind="main" arrow={loop.idx + 1 >= loopQuestions.length ? undefined : 'forward'} onClick={loopNext}>
+              <UiButton kind="main" size="lg" block arrow={loop.idx + 1 >= loopQuestions.length ? undefined : 'forward'} onClick={loopNext}>
                 {loop.idx + 1 >= loopQuestions.length ? 'Finish' : 'Next'}
               </UiButton>
             ) : (
-              <UiButton kind="main" onClick={() => onReveal(q)}>
+              <UiButton kind="main" size="lg" block onClick={() => onReveal(q)}>
                 Reveal & mark
               </UiButton>
             )}
@@ -1734,10 +1734,10 @@ const Viewer: React.FC<ViewerProps> = ({
             </div>
           </div>
           <div className="ui-pair">
-            <UiButton kind="main" onClick={resumeLoop}>
+            <UiButton kind="main" size="lg" onClick={resumeLoop}>
               Resume
             </UiButton>
-            <UiButton onClick={startLoop}>
+            <UiButton size="lg" onClick={startLoop}>
               Start over
             </UiButton>
           </div>
@@ -2452,7 +2452,7 @@ const RevealContent: React.FC<{
   // On a phone: the shared Sheet, Close at the top left, the self-mark pinned at its foot.
   if (!wide) {
     return (
-      <Sheet open={open} onClose={onClose} title={title} titleAlign="start" actions={steps ?? undefined}
+      <Sheet open={open} onClose={onClose} title={title} titleAlign="start" titleSize="small" actions={steps ?? undefined}
         footer={foot} className="pv-reveal-sheet">
         {body}
       </Sheet>

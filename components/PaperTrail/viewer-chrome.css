@@ -140,15 +140,17 @@
 /* ── The Full Loop and the exam clock (area 6c, 27 Nov 2026) ── */
 /* The loop's bar and its resume card: on a phone pinned at the foot, under the question panel and
    above the home indicator; from 768px floating over the paper, as before. One charcoal action. */
-.pv-loop { display: flex; flex: none; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-6) calc(var(--space-2) + var(--safe-bottom)) var(--space-2); border-top: 1px solid var(--hairline); background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
+/* A phone: the pinned footer of the loop, its line (X, where you are, the clock) over its one
+   full-width main action. */
+.pv-loop { display: grid; flex: none; grid-template-columns: 44px minmax(0, 1fr) auto; align-items: center; column-gap: var(--space-2); row-gap: var(--space-2); padding: var(--space-1) var(--space-6) calc(var(--space-3) + var(--safe-bottom)) var(--space-2); border-top: 1px solid var(--hairline); background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
+.pv-loop > .ui-btn { grid-column: 1 / -1; margin-left: var(--space-4); width: calc(100% - var(--space-4)); }
 .pv-loop :is(p) { margin: 0; }
 .pv-loop-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 2px; }
 .pv-loop-label { color: var(--ink-muted); }
 .pv-loop-label .ui-readout { font-size: 11px; line-height: 14px; text-transform: none; }
 .pv-loop-name { overflow: hidden; font-size: 16px; line-height: 21px; text-overflow: ellipsis; white-space: nowrap; }
 .pv-loop-time { flex: none; color: var(--ink-secondary); }
-.pv-loop > .ui-btn { flex: none; }
-.pv-loop--resume { flex-direction: column; align-items: stretch; gap: var(--space-3); padding: var(--space-2) var(--space-6) calc(var(--space-3) + var(--safe-bottom)) var(--space-2); }
+.pv-loop--resume { display: flex; flex-direction: column; align-items: stretch; gap: var(--space-3); padding: var(--space-2) var(--space-6) calc(var(--space-3) + var(--safe-bottom)) var(--space-2); }
 .pv-loop-head { display: flex; align-items: flex-start; gap: var(--space-2); }
 .pv-loop-head .pv-loop-copy { padding-top: 4px; }
 .pv-loop-say { font-size: 15px; line-height: 21px; }
@@ -156,7 +158,9 @@
 .pv-loop--resume > .ui-pair { padding-left: var(--space-4); }
 .pv-root:has(> .pv-loop) .pt-question-tools { padding-bottom: var(--space-3); }
 @media (min-width: 768px) {
-  .pv-loop { position: absolute; left: 50%; bottom: calc(var(--space-4) + var(--safe-bottom)); z-index: 105; width: min(448px, calc(100% - 2 * var(--space-6))); padding: var(--space-2) var(--space-3) var(--space-2) var(--space-1); border: 1px solid var(--outline-soft); border-radius: var(--r-box); background: var(--surface-raised); box-shadow: var(--float); transform: translateX(-50%); }
+  .pv-loop { position: absolute; left: 50%; bottom: calc(var(--space-4) + var(--safe-bottom)); z-index: 105; width: min(448px, calc(100% - 2 * var(--space-6))); grid-template-columns: 44px minmax(0, 1fr) auto auto; padding: var(--space-2) var(--space-3) var(--space-2) var(--space-1); border: 1px solid var(--outline-soft); border-radius: var(--r-box); background: var(--surface-raised); box-shadow: var(--float); transform: translateX(-50%); }
+  .pv-loop > .ui-btn { grid-column: auto; width: auto; height: 44px; margin-left: 0; font-size: 15px; }
+  .pv-loop--resume .ui-btn { height: 44px; font-size: 15px; }
   .pv-loop--resume { padding: var(--space-2) var(--space-4) var(--space-4) var(--space-1); }
   .pv-loop--resume > .ui-pair { padding-left: var(--space-3); }
 }
@@ -171,7 +175,7 @@
 .pv-receipt-head .t-label { color: var(--ink-muted); }
 .pv-receipt-row { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); padding: 10px 0; border-top: 1px solid var(--hairline); font-size: 15px; line-height: 21px; }
 .pv-receipt-row > :first-child { color: var(--ink-secondary); }
-.pv-receipt-row > :last-child { color: var(--ink-primary); text-align: right; font-variant-numeric: tabular-nums; }
+.pv-receipt-row > :last-child { color: var(--ink-primary); text-align: right; }
 /* The exam clock floats over the paper above the page count: Close at its left, the time in the
    pixel mono, a thin track, pause and reset. Over time it says so in words. */
 .pv-clock { position: absolute; left: 50%; bottom: calc(56px + var(--safe-bottom)); z-index: 26; display: flex; align-items: center; gap: var(--space-1); padding: 0 var(--space-1); border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); background: var(--surface-raised); color: var(--ink-primary); box-shadow: var(--float); transform: translateX(-50%); white-space: nowrap; }
@@ -182,3 +186,8 @@
 .pv-clock-track > i { display: block; height: 100%; background: var(--ink-primary); }
 .pt-reader-workspace:has(> .pt-question-tools) .pv-clock { bottom: 56px; }
 @media (min-width: 768px) { .pv-clock { bottom: 64px; } }
+/* While the loop's footer or its resume card shows, its button is the view's one charcoal action:
+   the question panel's Marking scheme (the same scheme, a second way to it) steps down to a
+   second button for that time. */
+.pv-root:has(> .pv-loop) :is(.pt-question-tools, .pt-reader-sidebar) .ui-btn--main { border-color: var(--outline-soft); background: var(--surface-paper); color: var(--ink-primary); }
+.pv-root:has(> .pv-loop) :is(.pt-question-tools, .pt-reader-sidebar) .ui-btn--main:active { background: var(--surface-soft); }
