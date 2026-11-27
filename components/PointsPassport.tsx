@@ -28,7 +28,7 @@ import { LoadingState } from './ui/SystemState';
 import { Confirm } from './ui/Sheet';
 import { Button, Glyph, IconButton, TextButton } from './ui/Button';
 import { Menu } from './ui/Menu';
-import { PaperSheet } from './ui/List';
+import { List, PaperSheet, Row } from './ui/List';
 import { ChoiceRuler, ChoiceTile } from './ui/Choice';
 import './points-passport-7.css';
 import { useProgress } from '../contexts/ProgressContext';
@@ -582,18 +582,13 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
             </header>
 
             {bargains.length > 0 ? (
-              <ol className="pp7-rows" aria-label="Best points bargains">
+              <List label="Best points bargains" className="pp7-moves">
                 {bargains.map((b, idx) => (
-                  <li key={b.subjectName} className="pp7-move">
-                    <span className="t-readout pp7-rank">#{idx + 1}</span>
-                    <div>
-                      <span>{b.subjectName}</span>
-                      <span className="t-meta">{b.fromGrade} → {b.toGrade} · Estimated effort: {b.effortHint}{b.isMathsBonus ? ' · Unlocks the +25 maths bonus' : ''}</span>
-                    </div>
-                    <span className="t-readout">+{b.pointsGain} points</span>
-                  </li>
+                  <Row key={b.subjectName} lead={`#${idx + 1}`} title={b.subjectName}
+                    meta={`${b.fromGrade} → ${b.toGrade} · Estimated effort: ${b.effortHint}${b.isMathsBonus ? ' · Unlocks the +25 maths bonus' : ''}`}
+                    value={`+${b.pointsGain} points`} />
                 ))}
-              </ol>
+              </List>
             ) : (
               <div className="pp7-section">
                 <p className="t-sub">You're already at your best grades in every subject. Amazing!</p>

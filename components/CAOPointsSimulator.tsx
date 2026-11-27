@@ -324,7 +324,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
           <p className="t-label pp7-label">What if</p>
           <div className="pp7-wi-row">
             <p className="pp7-total pp7-total--wi"><span>{whatIf}</span><span className="pp7-of"> / 625</span></p>
-            <div className="pp7-wi-side"><span>{delta > 0 ? '+' : ''}{delta} on your grades now</span><span className="t-meta">Gap to target {Math.max(0, target - whatIf)}</span></div>
+            <div className="pp7-wi-side">{delta !== 0 ? <span>{delta > 0 ? '+' : ''}{delta} on your grades now</span> : null}<span className="t-meta">Gap to target {Math.max(0, target - whatIf)}</span></div>
           </div>
           <div className="pp7-bar"><span style={{ width: `${Math.min(100, whatIf / 625 * 100)}%` }} /><i className="pp7-now" style={{ left: at(now) }} aria-label={`Now ${now}`} /><i style={{ left: at(target) }} aria-label={`Target ${target}`} /></div>
           <div className="pp7-wi-key t-meta"><span>Now {now}</span><span>Target {target}</span></div>
