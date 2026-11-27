@@ -45,6 +45,9 @@
 .adm-mrow { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
 .adm-mrow .ui-icon { visibility: visible; color: var(--ink-primary); }
 .adm-accountmenu .ui-menu-item--plain .ui-menu-item-title { width: 100%; }
+/* School access opens a page: its chevron at the right, as drawn (parts.css hides a menu row's icons
+   unless the row is checked, which also hides MenuAction's glyph; SWEEP, area 8b). */
+.adm-accountmenu .ui-menu-item--row .ui-menu-item-glyph { visibility: visible; }
 
 /* ── Overview ────────────────────────────────────────────────────────── */
 .adm-attn .ui-row { min-height: 60px; }
