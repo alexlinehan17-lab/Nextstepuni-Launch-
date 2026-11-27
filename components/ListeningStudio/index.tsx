@@ -84,10 +84,11 @@ const writeLeftOff = (uid: string | undefined, value: LeftOff) => {
   }
 };
 
-/** The laptop layout from 768px (boards r5-listening-studio and c-tools2-listening). Without
+/** The laptop layout from 1024px (boards r5-listening-studio and c-tools2-listening; below that the sidebar
+ *  leaves too little room for two panels). Without
  *  matchMedia (a test, an old browser) the page is the wide one, as a laptop browser would be. */
 function useBeside() {
-  const query = '(min-width: 768px)';
+  const query = '(min-width: 1024px)';
   const [beside, setBeside] = useState(() => typeof window === 'undefined' || typeof window.matchMedia !== 'function' || window.matchMedia(query).matches);
   useEffect(() => {
     if (typeof window.matchMedia !== 'function') return undefined;

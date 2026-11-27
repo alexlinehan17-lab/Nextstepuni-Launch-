@@ -41,7 +41,7 @@
   --action-press: var(--ls7-ink2);
 }
 .dark :is(.ls7-sit-top, .ls7-sleeve, .ls7-whole) { --action: var(--ink-primary); --action-ink: var(--surface-canvas); }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .ls7-paper {
     background: var(--ls7-bg);
     color: var(--ls7-ink);
@@ -63,18 +63,20 @@
 .ls7-host > main.launchpad-approved { padding-top: 0 !important; }
 
 /* ── The bar on a phone: on the charcoal, its drawing light, no hairline ── */
-@media (max-width: 767px) {
-  .ls7-host .lp-navigation-header { background: var(--ls7-bg); color: var(--ls7-ink); }
+@media (max-width: 1023px) {
+  /* Beside the sidebar (768-1023) the sidebar shell paints page headers white: this wins over it. */
+  .launchpad-shell.ls7-host .lp-navigation-header[data-student-page-header] { background: var(--ls7-bg); color: var(--ls7-ink); }
   .ls7-host .lp-navigation-header .ui-bar { --ink-primary: var(--ls7-ink); --ink-secondary: var(--ls7-ink2); --ink-muted: var(--ls7-ink2); --hairline: transparent; background: transparent; color: var(--ls7-ink); border-bottom-color: transparent; box-shadow: none; }
   .ls7-host .lp-navigation-header .ui-bar-art, .ls7-sit .ui-bar-art { filter: invert(1) hue-rotate(180deg); }
   .dark .ls7-host .lp-navigation-header .ui-bar-art, .dark .ls7-sit .ui-bar-art { filter: none; }
 }
 /* On a laptop the panel carries Back and the name: the shell's bar steps aside, the panel runs full height. */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .ls7-host .lp-navigation-header { display: none; }
   .ls7-host.launchpad-shell { padding-top: 0; padding-bottom: 0; }
 }
 
+/* The front page's two panels start at 1024px, where they have room beside the sidebar (area 7b second pass). */
 /* ── The front page ─────────────────────────────────────────────────────── */
 .ls7 { display: flex; flex-direction: column; color: var(--ink-primary); font-family: var(--font-ui); }
 .ls7 p, .ls7 h2, .ls7 h3 { margin: 0; }
@@ -86,7 +88,9 @@
 .ls7-panel-top { display: none; }
 .ls7-sleeve { order: 1; display: flex; flex-direction: column; gap: 6px; padding: var(--space-3) var(--space-6) 0; }
 .ls7-subj { color: var(--ink-secondary); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
-.ls7-big { margin-top: 2px !important; font-size: 44px; line-height: 46px; letter-spacing: -0.05em; font-variant-numeric: tabular-nums; }
+/* Proportional figures: with tabular figures the face also widens the space, and "2026 Higher" took a gap two
+   spaces wide (the board: one normal space). */
+.ls7-big { margin-top: 2px !important; font-size: 44px; line-height: 46px; letter-spacing: -0.05em; font-variant-numeric: lining-nums proportional-nums; }
 .ls7-meta { color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
 .ls7-whole { order: 2; padding: var(--space-5) var(--space-6) 28px; }
 .dark .ls7-whole { border-bottom: 1px solid var(--hairline); }
@@ -102,7 +106,7 @@
 .ls7-tab-art { display: inline-block; flex: none; width: 30px; height: 30px; margin-left: -6px; }
 .ls7-tab-art .subject-avatar { display: block; width: 30px; height: 30px; }
 /* A phone: the subject menu and the levels in one row (board c-tools2-listening). */
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .ls7-controls { flex-direction: row; align-items: center; }
   .ls7-controls .ui-menu-btn { flex: 1; min-width: 0; }
   .ls7-level-row { flex: none; }
@@ -128,7 +132,7 @@
 .ls7-srow .ui-row-title { display: inline-flex; align-items: center; }
 .ls7-sit-pill { display: inline-flex; flex: none; align-items: center; gap: 6px; height: 36px; padding: 0 var(--space-3); border: 1px solid var(--outline-soft); border-radius: var(--r-sm); color: var(--ink-primary); font-size: 14px; }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .ls7 { display: grid; grid-template-columns: 336px minmax(0, 1fr); align-items: stretch; min-height: 100dvh; background: var(--ls7-bg); }
   .dark .ls7 { background: var(--surface-canvas); }
   .ls7-paper { display: flex; flex-direction: column; min-height: 0; padding: 0 28px 28px; }
@@ -160,7 +164,9 @@
 }
 
 /* ── Sitting a section ──────────────────────────────────────────────────── */
-.ls7-sit { font-family: var(--font-ui); }
+/* The studio's ground behind the whole sitting, so the white answer sheet rises over the charcoal with its
+   rounded top corners in light as in dark (board t-fix-listening). */
+.ui-over.ls7-sit { font-family: var(--font-ui); background: var(--ls7-bg); }
 .ls7-sit-top { flex: none; display: flex; flex-direction: column; }
 .ls7-sit .ls7-bar.ui-bar { --hairline: transparent; background: transparent; color: var(--ls7-ink); border-bottom-color: transparent; }
 .ls7-player { display: flex; flex-direction: column; gap: 10px; padding: 6px var(--space-6) 20px; }
@@ -193,7 +199,7 @@
 .ls7 .ls7-out.ui-btn > span, .ls7-sit .ls7-out.ui-btn > span { display: inline; }
 .ls7-out { gap: 6px; text-decoration: none; }
 .ls7-total { display: flex; flex-direction: column; gap: var(--space-2); }
-.ls7-num { font-size: 76px; line-height: 76px; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+.ls7-num { font-size: 76px; line-height: 76px; letter-spacing: -0.04em; font-variant-numeric: lining-nums proportional-nums; }
 .ls7-num small { color: var(--ink-secondary); font-size: 34px; letter-spacing: -0.01em; }
 /* The question sheet: white, under the charcoal; it scrolls on its own. */
 .ls7-qsheet { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; border-radius: var(--r-card) var(--r-card) 0 0; background: var(--mb-paper); color: var(--mb-ink); }
@@ -269,4 +275,28 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .ls7-ring .rp, .ls7-play { transition: none; }
+}
+
+/* ── The question sheet's card in a sitting (board t-fix-listening, c-tools2-sheetrow) ──
+   Mark Bank's shared source row, drawn here as a lined box you press: a plain document drawing with no
+   tinted square, today's action line as the title in the one typeface, the document's own name and its
+   page count as the small lines under it, a chevron at the right, no grey band. */
+.ls7-qsheet .mb-source-material-trigger,
+.ls7-qsheet .mb-source-material-trigger-inline {
+  width: 100%; min-height: 64px; margin: var(--space-4) 0 var(--space-2); padding: 10px 14px;
+  grid-template-columns: auto minmax(0, 1fr) auto; gap: var(--space-3);
+  border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); background: var(--mb-paper); color: var(--mb-ink);
+}
+.ls7-qsheet .mb-source-material-trigger:active { background: var(--surface-soft); }
+.ls7-qsheet .mb-source-material-trigger:focus-visible { outline: 2px solid var(--outline-strong); outline-offset: 2px; background: var(--mb-paper); }
+.ls7-qsheet .mb-source-material-icon { width: 24px; height: 24px; border: 0; border-radius: 0; background: none; color: var(--mb-muted); }
+.ls7-qsheet .mb-source-material-copy { gap: 2px; }
+.ls7-qsheet .mb-source-material-copy > span { color: var(--mb-ink); font: 400 17px/22px var(--font-ui); letter-spacing: -0.015em; text-transform: none; }
+.ls7-qsheet .mb-source-material-copy strong { margin: 0; color: var(--mb-muted); font: 400 13px/18px var(--font-ui); white-space: normal; }
+.ls7-qsheet .mb-source-material-copy small { margin: 0; color: var(--mb-muted); font: 400 13px/18px var(--font-ui); }
+.ls7-qsheet .mb-source-material-open { width: 20px; height: 20px; border: 0; background: none; color: var(--mb-muted); }
+.dark .ls7-qsheet :is(.mb-source-material-copy > span) { color: var(--mb-ink); }
+.dark .ls7-qsheet .mb-source-material-icon { color: var(--mb-muted); }
+@media (hover: hover) and (pointer: fine) {
+  .ls7-qsheet .mb-source-material-trigger:hover { background: var(--surface-soft); }
 }

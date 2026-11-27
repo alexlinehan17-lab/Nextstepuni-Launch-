@@ -1,0 +1,45 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * The source reader's frame in the system (area 7b; the Listening sitting's board t-fix-listening opens it).
+ * Frame, type and colour only: the page drawing, the poems, matching and measuring are index.css's and
+ * untouched. Close is the one leave control, top left (navigation.md); the title is in the one typeface;
+ * the small label is ink-muted capitals, not orange; controls are 44px; the page dots are ink.
+ * Two classes deep so the base rules in index.css (and their phone overrides) give way.
+ */
+.mb-source-reader-overlay { background: var(--scrim); font-family: var(--font-ui); }
+.mb-source-reader-overlay .mb-source-reader-dialog { box-shadow: var(--float); border-color: var(--hairline); border-radius: var(--r-card); }
+.mb-source-reader-overlay .mb-source-reader-header { grid-template-columns: auto minmax(0, 1fr) auto; gap: var(--space-2); padding: var(--space-2) var(--space-4) var(--space-2) var(--space-2); border-bottom-color: var(--hairline); }
+.mb-source-reader-overlay .mb-source-reader-header-linked { grid-template-columns: auto minmax(0, 1fr); }
+.mb-source-reader-overlay .mb-source-reader-heading > span { color: var(--mb-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; }
+.mb-source-reader-overlay .mb-source-reader-heading h2 { margin-top: 2px; color: var(--mb-ink); font: 400 17px/22px var(--font-ui); letter-spacing: -0.015em; }
+.mb-source-reader-overlay .mb-source-reader-close { width: 44px; height: 44px; border: 0; border-radius: var(--r-ctl); background: transparent; color: var(--mb-ink); }
+.mb-source-reader-overlay .mb-source-reader-close svg { width: 24px; height: 24px; }
+.mb-source-reader-overlay .mb-source-reader-tools { grid-template-columns: 44px 56px 44px; border-color: var(--outline-soft); border-radius: var(--r-sm); }
+.mb-source-reader-overlay .mb-source-reader-tools button { width: 44px; height: 44px; color: var(--mb-ink); font: 400 20px/1 var(--font-ui); border-color: var(--outline-soft); }
+.mb-source-reader-overlay .mb-source-reader-tools > span { color: var(--mb-ink); font: 400 13px/16px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+.mb-source-reader-overlay .mb-source-reader-page-meta { color: var(--mb-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; }
+.mb-source-reader-overlay .mb-source-reader-footer { border-top-color: var(--hairline); }
+.mb-source-reader-overlay .mb-source-reader-provenance strong { color: var(--mb-ink-2); font: 400 13px/18px var(--font-ui); }
+.mb-source-reader-overlay .mb-source-reader-provenance span,
+.mb-source-reader-overlay .mb-source-reader-provenance.mb-source-notes-full span { color: var(--mb-muted); font: 400 13px/18px var(--font-ui); }
+.mb-source-reader-overlay .mb-source-reader-provenance a { display: inline-flex; align-items: center; min-height: 44px; margin-top: 0; color: var(--mb-ink); font: 400 13px/18px var(--font-ui); }
+.mb-source-reader-overlay .mb-source-reader-navigation > button { width: 44px; height: 44px; border: 0; border-radius: var(--r-ctl); background: transparent; color: var(--mb-ink); }
+.mb-source-reader-overlay .mb-source-reader-dots button { position: relative; background: var(--outline-soft); }
+/* The dots stay 7px to the eye and take a finger: an invisible hit area round each. */
+.mb-source-reader-overlay .mb-source-reader-dots button::after { content: ''; position: absolute; inset: -18px -3px; }
+.mb-source-reader-overlay .mb-source-reader-dots button[aria-current='page'] { background: var(--mb-ink); }
+.mb-source-reader-overlay .mb-source-reader-failed button { font-family: var(--font-ui); font-weight: 400; }
+.mb-source-reader-overlay :is(.mb-source-reader-tools button, .mb-source-reader-close, .mb-source-reader-navigation button, .mb-source-reader-provenance a, .mb-source-reader-reading-list a):focus-visible { outline: 2px solid var(--outline-strong); outline-offset: 2px; }
+.mb-source-reader-overlay :is(.mb-source-reader-close, .mb-source-reader-tools button:not(:disabled), .mb-source-reader-navigation > button:not(:disabled)):active { background: var(--surface-soft); }
+.dark .mb-source-reader-overlay :is(.mb-source-reader-heading > span, .mb-source-reader-provenance a) { color: var(--mb-muted); }
+.dark .mb-source-reader-overlay .mb-source-reader-provenance a { color: var(--mb-ink); }
+@media (max-width: 640px) {
+  .mb-source-reader-overlay .mb-source-reader-header { padding: calc(var(--space-2) + var(--safe-top)) var(--space-3) var(--space-2) var(--space-1); }
+  .mb-source-reader-overlay .mb-source-reader-heading h2 { font-size: 17px; }
+  .mb-source-reader-overlay .mb-source-reader-tools { grid-template-columns: 44px 48px 44px; }
+  .mb-source-reader-overlay .mb-source-reader-tools button { width: 44px; height: 44px; }
+  .mb-source-reader-overlay .mb-source-reader-tools > span { font-size: 11px; }
+  .mb-source-reader-overlay .mb-source-reader-close { width: 44px; height: 44px; }
+}
