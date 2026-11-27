@@ -1158,7 +1158,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             {dailyMode && (
               <div className="rounded-xl px-4 py-3 mb-3 text-center" style={{ backgroundColor: '#FDEEDF', border: `1px solid rgba(var(--nsu-orange-rgb), 0.3)` }}>
                 <p className="text-[14px] font-semibold" style={{ color: COLORS.accentDarkText }}>
-                  Daily Mark done · {state.daily.streak}🔥 day streak
+                  Daily Mark done · {state.daily.streak} day streak
                   {state.daily.streak >= state.daily.best && state.daily.best > 1 ? ' — your best yet' : ''}
                 </p>
               </div>
@@ -1855,7 +1855,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                   </div>
                   <div className="shrink-0 text-right">
                     <p className="text-[20px] font-bold leading-none" style={{ fontFamily: SERIF, color: done ? SUCCESS : '#fff' }}>
-                      {state.daily.streak}🔥
+                      {state.daily.streak}
                     </p>
                     <p className="text-[10px]" style={{ color: done ? MUTED : 'rgba(255,255,255,0.85)' }}>day streak</p>
                   </div>
