@@ -134,9 +134,6 @@
    "button": 11,
    "pop-up": 1
   },
-  "components/HowTheyDidIt/index.tsx": {
-   "button": 10
-  },
   "components/JCComingSoon.tsx": {
    "button": 1
   },

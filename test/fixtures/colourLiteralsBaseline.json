@@ -116,10 +116,6 @@
   "components/GrowthMindsetModule.tsx": {
    "rgb(": 2
   },
-  "components/HowTheyDidIt/index.tsx": {
-   "hex": 4,
-   "tailwind [#…]": 1
-  },
   "components/IllustrationTheme.tsx": {
    "hex": 1
   },

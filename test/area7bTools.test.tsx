@@ -18,6 +18,8 @@ import { buildRecoveryPlan } from '../components/comeback/recoveryPlan';
 import { DEMO_STUDENT_UID, createDevStudentProfile } from '../data/devStudent';
 import CommandWordReflex from '../components/CommandWordReflex';
 import { questionsForSubject } from '../commandWordData';
+import HowTheyDidIt from '../components/HowTheyDidIt';
+import { PEOPLE } from '../howTheyDidItData';
 
 const progressDoc: { current: Record<string, unknown> } = { current: {} };
 const updateDemoProgress = vi.fn((update: (current: Record<string, unknown>) => Record<string, unknown>) => { progressDoc.current = update(progressDoc.current); });
@@ -25,6 +27,9 @@ vi.mock('@/contexts/AuthContext', () => ({ useAuth: () => ({ user: null }) }));
 vi.mock('@/contexts/InnovationDataContext', () => ({ useInnovationData: () => ({ topicMastery: { canonicalMastery: { topics: {} } }, subjectPriorities: [] }) }));
 const recordResult = vi.fn();
 vi.mock('@/hooks/useCommandWordReflex', () => ({ useCommandWordReflex: () => ({ state: { seenIds: [], firstTryIds: [], wordsMet: [], attempts: 0, updatedAt: '' }, isLoaded: true, recordResult }) }));
+const toggleSaved = vi.fn();
+const markSeen = vi.fn();
+vi.mock('@/hooks/useHowTheyDidIt', () => ({ useHowTheyDidIt: () => ({ state: { seenIds: [], savedIds: [], updatedAt: '' }, isLoaded: true, markSeen, toggleSaved }) }));
 vi.mock('@/contexts/ProgressContext', () => ({ useOptionalProgress: () => ({ rawProgressDoc: progressDoc.current, updateDemoProgress }) }));
 
 function memoryStore(value: CourseworkWorkspace = courseworkDemo()): CourseworkStore {
@@ -160,5 +165,42 @@ describe('Command-Word Reflex (area 7b)', () => {
     fireEvent.click(await screen.findByRole('button', { name: 'Reveal it' }));
     expect(recordResult).toHaveBeenLastCalledWith(second.id, second.commandWord, false);
     expect(await screen.findByText(`The command word is “${second.commandWord}”`)).toBeInTheDocument();
+  });
+});
+
+describe('How They Did It (area 7b)', () => {
+  test('the featured story keeps its name, hook and move, saves, and Next moves on', () => {
+    toggleSaved.mockClear();
+    render(<HowTheyDidIt uid="u1" />);
+    const [first, second] = PEOPLE;
+    const story = screen.getByRole('region', { name: first.name });
+    expect(within(story).getByRole('heading', { name: first.name })).toBeInTheDocument();
+    expect(within(story).getByText(first.hook)).toBeInTheDocument();
+    expect(within(story).getByText(first.stealThisMove)).toBeInTheDocument();
+    fireEvent.click(within(story).getByRole('button', { name: 'Save this story' }));
+    expect(toggleSaved).toHaveBeenCalledWith(first.id);
+    fireEvent.click(within(story).getByRole('button', { name: 'Next story' }));
+    expect(screen.getByRole('region', { name: second.name })).toBeInTheDocument();
+    expect(screen.getAllByRole('button', { name: /Read their story/ }).length).toBeGreaterThan(1);
+  });
+
+  test('a story walks its four beats, its moves turn over, and Save this move saves', async () => {
+    toggleSaved.mockClear();
+    render(<HowTheyDidIt uid="u1" />);
+    const person = PEOPLE[0];
+    fireEvent.click(screen.getByRole('button', { name: 'Read their story' }));
+    expect(markSeen).toHaveBeenCalledWith(person.id);
+    expect(screen.getByRole('img', { name: 'Beat 1 of 4' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'See how' }));
+    expect(await screen.findByText('The hard part')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'What they did' }));
+    const move = await screen.findByRole('button', { name: new RegExp(person.moves[0].title) });
+    expect(move).toHaveAttribute('aria-pressed', 'false');
+    fireEvent.click(move);
+    expect(move).toHaveAttribute('aria-pressed', 'true');
+    expect(move).toHaveTextContent(person.moves[0].detail);
+    fireEvent.click(screen.getByRole('button', { name: 'Where they are now' }));
+    fireEvent.click(await screen.findByRole('button', { name: 'Save this move' }));
+    expect(toggleSaved).toHaveBeenCalledWith(person.id);
   });
 });

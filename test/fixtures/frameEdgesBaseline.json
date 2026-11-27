@@ -55,9 +55,6 @@
    "h-screen": 1,
    "inset-0": 4
   },
-  "components/HowTheyDidIt/index.tsx": {
-   "inset-0": 1
-  },
   "components/InnovationZone.tsx": {
    "h-screen": 1
   },
