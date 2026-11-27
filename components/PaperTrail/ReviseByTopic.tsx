@@ -352,14 +352,14 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           <MenuPanel label="Export or share" buttonLabel="Export or share this topic" className="ta-more"
             face={<Ellipsis className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />}>
             {questions.length > 0 && (
-              <MenuAction title="Export" meta="Download this topic's questions" onPress={() => downloadPack({
+              <MenuAction plain title="Export" meta="Download this topic's questions" onPress={() => downloadPack({
                 subjectLabel: subjectLabel(subjectId),
                 topicLabel: topicLabel(subtopicId),
                 questions: shown.length ? shown : questions,
                 dateIso: new Date(Date.now()).toISOString().slice(0, 10),
               })} />
             )}
-            <MenuAction title={copied ? 'Copied' : 'Share'} meta="Copy a shareable link to this topic" onPress={() => { void copyTopicLink(); }} />
+            <MenuAction plain title={copied ? 'Copied' : 'Share'} meta="Copy a shareable link to this topic" onPress={() => { void copyTopicLink(); }} />
           </MenuPanel>
         </div>
 

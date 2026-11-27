@@ -165,9 +165,6 @@
    "hex": 10,
    "tailwind [#…]": 5
   },
-  "components/OfflineBanner.tsx": {
-   "hex": 3
-  },
   "components/Onboarding.desktop.tsx": {
    "hex": 53,
    "rgb(": 7,
@@ -314,8 +311,8 @@
    "tailwind [#…]": 11
   },
   "components/Toast.tsx": {
-   "hex": 2,
-   "tailwind [#…]": 6,
+   "hex": 1,
+   "tailwind [#…]": 5,
    "zinc/neutral-9xx surface": 1
   },
   "components/ToolIconBlob.tsx": {

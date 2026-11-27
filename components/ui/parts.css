@@ -419,7 +419,6 @@
 .ui-menu-item-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; }
 .ui-menu-item-title { font-size: 16px; line-height: 21px; }
 .ui-menu-item-meta { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
-.ui-menu-item--row .ui-icon { visibility: visible; }
 .ui-menu-item-glyph { color: var(--ink-muted); }
 .ui-menu-item .ui-switch[data-on] { background: var(--ink-primary); }
 .ui-menu-item .ui-switch[data-on] .ui-switch-knob { transform: translateX(20px); }
@@ -427,6 +426,9 @@
 .ui-menu-num { flex: none; color: var(--ink-muted); font-style: normal; font-weight: 400; }
 .ui-menu-item .ui-icon { visibility: hidden; }
 .ui-menu-item[aria-checked='true'] .ui-icon { visibility: visible; }
+/* A row's own glyph (MenuAction: the chevron, or the arrow up-right) always shows; it comes after
+   the rule above that hides an unticked tick, so the order cannot hide it (area 9). */
+.ui-menu-item--row .ui-icon { visibility: visible; }
 /* Inside a menu: the selection bar (MenuSegment) and rows with a character (MenuRadioRows). */
 .ui-seg.ui-menu-seg { margin: 0 6px; }
 .ui-menu-seg .ui-seg-item { display: flex; align-items: center; justify-content: center; outline: none; cursor: default; }
@@ -612,6 +614,8 @@
 .ui-toast[data-state='open'] { opacity: 1; transform: none; }
 .ui-toast[data-state='leaving'] { opacity: 0; transform: none; transition-duration: var(--t-draw); }
 .ui-toast-text { min-width: 0; }
+/* A standing message (offline) sits under a passing one in the same place: one shows at a time. */
+.ui-toast.ui-toast--standing { z-index: calc(var(--z-toast) - 1); }
 .ui-toast .ui-link { min-height: 21px; color: inherit; }
 
 /* The ruler: short choices of one kind in one row (grades), one box divided by hairlines; the
@@ -772,6 +776,19 @@
 }
 .ui-field-input::placeholder { color: var(--ink-muted); opacity: 1; }
 .ui-field--search .ui-field-input { height: 44px; padding-left: 44px; }
+/* The browser's own clear button once something is typed (a blue x in Chrome): the system's X, in
+   ink-3, the same glyph as Close. It still clears the field, as the browser's does. */
+.ui-field--search .ui-field-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-left: var(--space-2);
+  background-color: var(--ink-muted);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.75' stroke-linecap='round'%3E%3Cpath d='M18 6 6 18M6 6l12 12'/%3E%3C/svg%3E") center / 20px 20px no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.75' stroke-linecap='round'%3E%3Cpath d='M18 6 6 18M6 6l12 12'/%3E%3C/svg%3E") center / 20px 20px no-repeat;
+  cursor: pointer;
+}
 .ui-field-input--area { display: block; height: auto; min-height: 104px; padding: 12px 14px; font-size: 17px; line-height: 26px; resize: vertical; }
 .ui-field-glyph { position: absolute; top: 50%; left: 15px; color: var(--ink-muted); pointer-events: none; transform: translateY(-50%); }
 .ui-field-help { margin: 0; color: var(--ink-muted); font-size: 13px; line-height: 18px; }

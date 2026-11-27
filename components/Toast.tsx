@@ -70,20 +70,6 @@ const TOAST_CONFIG: Record<ToastType, {
 
 export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [toasts, setToasts] = useState<Toast[]>([]);
-  const [isOffline, setIsOffline] = useState(!navigator.onLine);
-
-  // Offline detection
-  useEffect(() => {
-    const goOffline = () => setIsOffline(true);
-    const goOnline = () => setIsOffline(false);
-    window.addEventListener('offline', goOffline);
-    window.addEventListener('online', goOnline);
-    return () => {
-      window.removeEventListener('offline', goOffline);
-      window.removeEventListener('online', goOnline);
-    };
-  }, []);
-
   const showToast = useCallback((message: string, type: ToastType = 'error', duration: number = 4000) => {
     const id = Math.random().toString(36).substring(2, 10);
     setToasts(prev => {
@@ -143,23 +129,7 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     <ToastContext.Provider value={{ showToast }}>
       {children}
 
-      {/* Offline banner */}
-      <AnimatePresence>
-        {isOffline && (
-          <MotionDiv
-            initial={{ y: -60, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -60, opacity: 0 }}
-            transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-            className="frame-float frame-float-top [--frame-float-gap:0.75rem] left-1/2 z-[var(--z-system)] flex w-[calc(100%-1.5rem)] max-w-lg -translate-x-1/2 items-center justify-center gap-2 rounded-xl border-[1.5px] border-[#383838] bg-surface-paper px-4 py-3 shadow-[3px_3px_0_0_#383838] dark:border-zinc-600 dark:bg-amber-950"
-          >
-            <WifiOff size={14} className="text-amber-500 dark:text-amber-400 shrink-0" />
-            <span className="text-xs font-semibold text-amber-700 dark:text-amber-300">
-              You're offline — some features may not work
-            </span>
-          </MotionDiv>
-        )}
-      </AnimatePresence>
+      {/* Offline: one notice, the shared message (components/OfflineBanner.tsx). */}
 
       {/* Toast stack */}
       <div className="frame-float frame-float-bottom left-1/2 z-[var(--z-toast)] flex w-[calc(100%-1.5rem)] max-w-md -translate-x-1/2 flex-col-reverse gap-3 pointer-events-none sm:bottom-[calc(24px+var(--edge-bottom))]">

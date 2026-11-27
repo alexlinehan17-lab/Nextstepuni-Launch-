@@ -61,6 +61,37 @@ function subscribe(listener: () => void) {
   return () => { listeners.delete(listener); };
 }
 
+/** A message that stays while something is true (the app is offline): the same charcoal line in the
+ *  same place, placed by the frame at the bottom, so it never covers a bar or the sidebar. It is not
+ *  one of the passing messages: one that comes while it shows appears over it. `text` null hides it. */
+export function StandingMessage({ text }: { text: string | null }) {
+  const [shown, setShown] = useState<string | null>(text);
+  const [state, setState] = useState<'entering' | 'open' | 'leaving'>('entering');
+
+  useEffect(() => {
+    if (text) {
+      setShown(text);
+      setState('entering');
+      const frame = requestAnimationFrame(() => setState('open'));
+      return () => cancelAnimationFrame(frame);
+    }
+    setState('leaving');
+    const timer = window.setTimeout(() => setShown(null), LEAVE_MS);
+    return () => window.clearTimeout(timer);
+  }, [text]);
+
+  return (
+    <FramePortal>
+      <div className="sr-only" role="status" aria-live="polite">{text ?? ''}</div>
+      {shown ? (
+        <div className="ui-part ui-toast ui-toast--standing frame-float frame-float-bottom" data-state={state}>
+          <span className="ui-toast-text">{shown}</span>
+        </div>
+      ) : null}
+    </FramePortal>
+  );
+}
+
 /** Renders the message, if there is one. Mount once. */
 export function MessageHost() {
   const message = useSyncExternalStore(subscribe, () => current, () => null);

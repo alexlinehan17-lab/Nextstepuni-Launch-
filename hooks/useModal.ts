@@ -17,6 +17,25 @@ const activeModals: symbol[] = [];
 export function hasOpenModal(): boolean {
   return activeModals.length > 0;
 }
+/** Whether the student's last act was a key press. A dialog or sheet that opens by itself (the island
+ *  welcome on a first visit) or from a tap still takes focus, but quietly: the ring is for the
+ *  keyboard, so it shows again on the next key press (area 9; SWEEP, the ring on a sheet's Close). */
+let keyboardLast = false;
+const QUIET = 'data-quiet-focus';
+if (typeof window !== 'undefined') {
+  window.addEventListener('pointerdown', () => { keyboardLast = false; }, true);
+  window.addEventListener('keydown', () => {
+    keyboardLast = true;
+    document.querySelectorAll(`[${QUIET}]`).forEach(el => el.removeAttribute(QUIET));
+  }, true);
+}
+function placeFocus(target: HTMLElement) {
+  if (!keyboardLast) {
+    target.setAttribute(QUIET, '');
+    target.addEventListener('blur', () => target.removeAttribute(QUIET), { once: true });
+  }
+  target.focus();
+}
 const focusableSelector = 'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
 /** One focus owner, scroll lock and dismissal contract for every modal. */
@@ -41,7 +60,7 @@ export function useModal(isOpen: boolean, onClose: () => void, dialogRef?: RefOb
         if (!isTop()) return;
         const dialog = getDialog();
         if (dialog?.contains(document.activeElement)) return;
-        if (dialog) (latest.current.initialFocus === 'dialog' ? dialog : controls(dialog)[0] ?? dialog).focus();
+        if (dialog) placeFocus(latest.current.initialFocus === 'dialog' ? dialog : controls(dialog)[0] ?? dialog);
       });
     });
     const handleKeyDown = (event: KeyboardEvent) => {
