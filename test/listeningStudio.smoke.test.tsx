@@ -124,7 +124,7 @@ describe('Music 2025 Higher, Question 5', () => {
     expect(screen.getByText('Sean-nós').closest('button')).toBeDisabled();
   });
 
-  it('asks before leaving once there is work that would be lost', () => {
+  it('asks before leaving once there is work that would be lost', async () => {
     const { onClose } = mount();
     fireEvent.click(screen.getByRole('button', { name: 'Leave this sitting' }));
     expect(onClose).toHaveBeenCalledTimes(1);
@@ -136,7 +136,8 @@ describe('Music 2025 Higher, Question 5', () => {
     expect(second.onClose).not.toHaveBeenCalled();
     const confirm = screen.getByRole('alertdialog', { name: 'Leave this sitting?' });
     fireEvent.click(within(confirm).getByRole('button', { name: 'Stay' }));
-    expect(screen.queryByRole('alertdialog')).not.toBeInTheDocument();
+    // The confirm is the shared one now (area 7b): it leaves with its short fade.
+    await waitFor(() => expect(screen.queryByRole('alertdialog')).not.toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Leave this sitting' }));
     fireEvent.click(within(screen.getByRole('alertdialog')).getByRole('button', { name: 'Leave' }));
     expect(second.onClose).toHaveBeenCalledTimes(1);

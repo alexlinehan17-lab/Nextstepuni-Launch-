@@ -80,10 +80,6 @@
    "inset-0": 1,
    "var(--sa*)": 2
   },
-  "components/ListeningStudio/listening-studio.css": {
-   "fixed": 1,
-   "var(--sa*)": 8
-  },
   "components/LoadingSpinner.tsx": {
    "fixed": 1,
    "inset-0": 1

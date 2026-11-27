@@ -133,9 +133,6 @@
    "tailwind [#…]": 1,
    "zinc/neutral-9xx surface": 3
   },
-  "components/ListeningStudio/listening-studio.css": {
-   "hex": 9
-  },
   "components/LoginPage.tsx": {
    "hex": 5,
    "tailwind [#…]": 6

@@ -147,12 +147,10 @@
    "button": 12
   },
   "components/ListeningStudio/StudioSitting.tsx": {
-   "button": 15,
-   "pop-up": 3
+   "button": 2
   },
   "components/ListeningStudio/index.tsx": {
-   "button": 11,
-   "pop-up": 2
+   "button": 1
   },
   "components/LoadingSpinner.tsx": {
    "pop-up": 1

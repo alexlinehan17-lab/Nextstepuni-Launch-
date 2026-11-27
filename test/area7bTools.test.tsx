@@ -19,6 +19,8 @@ import { DEMO_STUDENT_UID, createDevStudentProfile } from '../data/devStudent';
 import CommandWordReflex from '../components/CommandWordReflex';
 import { questionsForSubject } from '../commandWordData';
 import HowTheyDidIt from '../components/HowTheyDidIt';
+import ListeningStudio from '../components/ListeningStudio';
+import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
 import { PEOPLE } from '../howTheyDidItData';
 
 const progressDoc: { current: Record<string, unknown> } = { current: {} };
@@ -202,5 +204,37 @@ describe('How They Did It (area 7b)', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Where they are now' }));
     fireEvent.click(await screen.findByRole('button', { name: 'Save this move' }));
     expect(toggleSaved).toHaveBeenCalledWith(person.id);
+  });
+});
+
+describe('Listening Studio on a phone (area 7b)', () => {
+  test('the paper you will sit and Sit the whole paper come first; subjects in one menu; a section sits as before', async () => {
+    const play = vi.spyOn(HTMLMediaElement.prototype, 'play').mockImplementation(() => Promise.resolve());
+    vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => {});
+    localStorage.clear();
+    const chooseSubject = vi.fn();
+    render(<ListeningStudio uid="u-7b" subjectId="music" subjectLabel="Music" level="higher"
+      subjects={[{ id: 'music', title: 'Music' }, { id: 'french', title: 'French' }]} mySubjectIds={['music']}
+      chooseSubject={chooseSubject} chooseLevel={vi.fn()} cards={MUSIC_HIGHER.filter(card => card.year === 2025)} memories={{}}
+      loading={false} error={false} onRetry={vi.fn()} onGrade={vi.fn()} onLeave={vi.fn()} />);
+    const page = screen.getByRole('region', { name: 'Listening Studio' });
+    expect(within(page).getByText('Music · the paper you will sit')).toBeInTheDocument();
+    expect(within(page).getByRole('heading', { name: /2025\s*Higher/ })).toBeInTheDocument();
+    expect(within(page).getByRole('button', { name: 'Sit the whole paper' })).toBeInTheDocument();
+    // No corner X and no Back of its own on a phone: the Launchpad's bar carries the one Back.
+    expect(within(page).queryByRole('button', { name: /Leave Listening Studio|Back/ })).toBeNull();
+    const menu = screen.getByRole('button', { name: 'Music' });
+    expect(menu).toHaveTextContent('Music');
+    fireEvent.click(menu);
+    fireEvent.click(await screen.findByRole('menuitemradio', { name: 'All 2 subjects' }));
+    expect(await screen.findByRole('heading', { name: 'Choose a subject' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /^French/ }));
+    expect(chooseSubject).toHaveBeenCalledWith('french');
+    // A section sits the same section it names, as an over-screen with its own Back.
+    fireEvent.click(within(page).getByRole('button', { name: /^Question 5/ }));
+    const sitting = await screen.findByRole('dialog', { name: 'Listening Studio: Music 2025 Higher, Question 5' });
+    expect(within(sitting).getByRole('button', { name: 'Leave this sitting' })).toBeInTheDocument();
+    const toggle = within(sitting).queryByRole('button', { name: 'Play the recording' });
+    if (toggle) { fireEvent.click(toggle); expect(play).toHaveBeenCalled(); }
   });
 });

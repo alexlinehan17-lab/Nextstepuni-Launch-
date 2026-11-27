@@ -945,7 +945,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
 
   return (
     <div
-      className={`${mobileAppDesign ? 'mobile-editorial ' : ''}${!activeTool || LP7_COLUMN_TOOLS.has(activeTool) ? 'lp7-host ' : ''}${activeTool === 'paper-trail' ? 'paper-trail-host ' : ''}${activeTool === 'mark-bank' ? 'mark-bank-host ' : ''}product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 ${activeTool && LP7_COLUMN_TOOLS.has(activeTool) ? 'overflow-x-clip' : 'overflow-x-hidden'} relative flex flex-col items-center pb-36 md:pb-24 pt-[calc(53px+var(--safe-top))] md:pt-[73px]`}
+      className={`${mobileAppDesign ? 'mobile-editorial ' : ''}${!activeTool || LP7_COLUMN_TOOLS.has(activeTool) ? 'lp7-host ' : ''}${activeTool === 'paper-trail' ? 'paper-trail-host ' : ''}${activeTool === 'mark-bank' ? 'mark-bank-host ' : ''}${activeTool === 'listening-studio' ? 'ls7-host ' : ''}product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 ${activeTool && LP7_COLUMN_TOOLS.has(activeTool) ? 'overflow-x-clip' : 'overflow-x-hidden'} relative flex flex-col items-center pb-36 md:pb-24 pt-[calc(53px+var(--safe-top))] md:pt-[73px]`}
       // Fixed header at top is ~80px tall (back button + eyebrow + title) + safe-area-inset-top.
       // The journey/war-room tools historically had a smaller header offset (pt-14)
       // which left content peeking out behind the bar. Use the same generous offset
@@ -970,7 +970,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
           usable width, which is a reading column, not a desk: Mark Bank puts a
           question and its marking scheme side by side and needs 1092px. Tools
           listed here also own their top spacing, so `pt-16` comes off. */}
-      <main data-tool={activeTool ?? 'catalogue'} className={`${activeTool === 'journey' ? '' : 'launchpad-approved'} relative z-10 w-full flex-grow ${activeTool === 'paper-trail' || activeTool === 'mark-bank' ? '' : 'px-4 sm:px-6'} ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'} ${activeTool === 'paper-trail' || activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' || WIDE_TOOLS.has(activeTool ?? '') ? 'pt-0' : 'pt-6 md:pt-16'}`}>
+      <main data-tool={activeTool ?? 'catalogue'} className={`${activeTool === 'journey' ? '' : 'launchpad-approved'} relative z-10 w-full flex-grow ${activeTool === 'paper-trail' || activeTool === 'mark-bank' || activeTool === 'listening-studio' ? '' : 'px-4 sm:px-6'} ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'} ${activeTool === 'paper-trail' || activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' || WIDE_TOOLS.has(activeTool ?? '') ? 'pt-0' : 'pt-6 md:pt-16'}`}>
          <AnimatePresence mode="wait">
             {!activeTool ? (
                 <MotionDiv

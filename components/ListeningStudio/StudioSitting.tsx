@@ -13,15 +13,18 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { createPortal } from 'react-dom';
-import { ArrowUpRight, Pause, Play, X } from 'lucide-react';
+import { ArrowUpRight, Pause, Play } from 'lucide-react';
 import SessionScreen, {
   listeningQuestionGroups, type EmbeddedAssessment, type SessionCardResult,
 } from '../MarkBank/SessionScreen';
 import FigureZoom from '../MarkBank/FigureZoom';
 import SourceMaterialReader from '../MarkBank/SourceMaterialReader';
 import { figureUrl } from '../../utils/figureUrl';
-import { useModal } from '../../hooks/useModal';
+import { OverScreen } from '../ui/OverScreen';
+import { PinnedFooter, TopBar } from '../ui/Bars';
+import { Button, TextButton } from '../ui/Button';
+import { Confirm } from '../ui/Sheet';
+import { ToolArtwork } from '../launchpad/ToolMasthead';
 import { useNativeStatusBarAppearance } from '../../hooks/useNativeStatusBarAppearance';
 import {
   isNoSchemeCard, isUnpricedSectionCard, type CardSourceMaterial, type SecCard,
@@ -130,7 +133,6 @@ const StudioSitting: React.FC<StudioSittingProps> = ({
   subjectLabel, sittingLabel, section, nextSectionTitle, onNextSection, onGrade, onClose,
 }) => {
   useNativeStatusBarAppearance('dark');
-  const dialogRef = useRef<HTMLDivElement | null>(null);
   const sheetRef = useRef<HTMLElement | null>(null);
   const [mode, setMode] = useState<'sit' | 'mark' | 'saved'>('sit');
   const [index, setIndex] = useState(0);
@@ -150,7 +152,6 @@ const StudioSitting: React.FC<StudioSittingProps> = ({
   const requestClose = useCallback(() => {
     if (unsavedWork) setConfirmLeave(true); else onClose();
   }, [unsavedWork, onClose]);
-  useModal(true, requestClose, dialogRef, { initialFocus: 'dialog' });
 
   const onAssessment = useCallback((next: EmbeddedAssessment) => {
     setAssessments(previous => {
@@ -195,121 +196,109 @@ const StudioSitting: React.FC<StudioSittingProps> = ({
   const answerLabel = (card: SecCard) =>
     partNumber(card) ? `Your answer to part ${partNumber(card)}` : `Your answer: ${card.questionText.split('\n')[0].slice(0, 80)}`;
 
-  const recording = (
-    <section className="ls-rec" aria-label="Recording">
-      <header className="ls-rec-head">
-        <div className="ls-rec-title">
-          <strong>Listening Studio</strong>
-          <span>{subjectLabel} · {sittingLabel} · {section.title}</span>
-        </div>
-        <button type="button" className="ls-btn ls-btn-icon" aria-label="Leave this sitting" onClick={requestClose}>
-          <X aria-hidden="true" />
-        </button>
-      </header>
+  const player = (
+    <section className="ls7-player" aria-label="Recording">
+      <p className="t-meta ls7-player-what">{subjectLabel} · {sittingLabel} · {section.title}</p>
 
       {/* The one recording element. It stays mounted through marking, so a
           student who goes back to their answers finds it where they left it. */}
       <audio {...audio.element} hidden />
 
       {mode === 'sit' ? (
-        <div className="ls-center">
-          {audio.playable && !audio.failed ? (
-            <>
-              <div className="ls-ring">
+        audio.playable && !audio.failed ? (
+          <>
+            <div className="ls7-deck">
+              <div className="ls7-ring">
                 <svg viewBox="0 0 168 168" aria-hidden="true">
                   <circle className="rt" cx="84" cy="84" r="76" />
                   <circle className="rp" cx="84" cy="84" r="76" strokeDasharray={RING} strokeDashoffset={RING * (1 - played)} />
                 </svg>
-                <button type="button" className="ls-play" onClick={audio.toggle}
+                <button type="button" className="ls7-play" onClick={audio.toggle}
                   aria-label={audio.playing ? 'Pause the recording' : 'Play the recording'}>
                   {audio.playing
                     ? <Pause aria-hidden="true" fill="currentColor" strokeWidth={0} />
                     : <Play aria-hidden="true" fill="currentColor" strokeWidth={0} />}
                 </button>
               </div>
-              <div className="ls-time" aria-label={`Position ${clock(audio.time)}`}>{clock(audio.time)}</div>
-              <p className="ls-now">{extract.audio.title}</p>
-              <div className="ls-seek">
-                <input
-                  type="range" min={0} max={Math.max(audio.duration, 1)} step={1} value={Math.min(audio.time, Math.max(audio.duration, 1))}
-                  onChange={event => audio.seek(Number(event.target.value))}
-                  aria-label="Position in the recording" aria-valuetext={`${clock(audio.time)} of ${clock(audio.duration)}`}
-                  style={{ '--ls-played': `${played * 100}%` } as React.CSSProperties}
-                />
-                <div className="ls-seek-ends"><span>{clock(audio.time)}</span><span>{audio.duration > 0 ? clock(audio.duration) : ''}</span></div>
+              <div className="ls7-clock">
+                <span className="ls7-time" aria-label={`Position ${clock(audio.time)}`}>{clock(audio.time)}</span>
+                <span className="t-meta">{audio.duration > 0 ? `of ${clock(audio.duration)}, the whole listening test` : 'the whole listening test'}</span>
               </div>
-              <p className="ls-now">This is the whole listening test. Move the bar to where this question starts.</p>
-            </>
-          ) : (
-            <div className="ls-norec">
-              <p className="ls-norec-t">
-                {audio.playable ? 'This recording could not be loaded.' : 'This recording is not in the app yet.'}
-              </p>
-              <p>Open it on the SEC site in a new tab, then answer here.</p>
-              <a className="ls-btn" href={extract.audio.canonicalUrl} target="_blank" rel="noreferrer">
-                Open the SEC recording <ArrowUpRight aria-hidden="true" />
-              </a>
             </div>
-          )}
-        </div>
+            <div className="ls7-seek">
+              <input
+                type="range" min={0} max={Math.max(audio.duration, 1)} step={1} value={Math.min(audio.time, Math.max(audio.duration, 1))}
+                onChange={event => audio.seek(Number(event.target.value))}
+                aria-label="Position in the recording" aria-valuetext={`${clock(audio.time)} of ${clock(audio.duration)}`}
+                style={{ '--ls-played': `${played * 100}%` } as React.CSSProperties}
+              />
+            </div>
+            <p className="t-meta ls7-wide-line">{extract.audio.title}</p>
+            <p className="t-meta ls7-wide-line">This is the whole listening test. Move the bar to where this question starts.</p>
+          </>
+        ) : (
+          <div className="ls7-norec">
+            <p className="ls7-norec-t">
+              {audio.playable ? 'This recording could not be loaded.' : 'This recording is not in the app yet.'}
+            </p>
+            <p className="t-sub">Open it on the SEC site in a new tab, then answer here.</p>
+            <a className="ui-part ui-btn ui-btn--sm frame-hit ls7-out" href={extract.audio.canonicalUrl} target="_blank" rel="noreferrer">
+              <span>Open the SEC recording</span><ArrowUpRight className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" />
+            </a>
+          </div>
+        )
       ) : (
-        <div className="ls-big">
-          <span className="ls-num" aria-label={`${claimed} of ${available} marks`}>{claimed}<small>/ {available}</small></span>
-          <p className="ls-cap">
+        <div className="ls7-total">
+          <span className="ls7-num" aria-label={`${claimed} of ${available} marks`}>{claimed}<small> / {available}</small></span>
+          <p className="t-sub">
             Your marks for {section.title}.
             {unscored > 0 && ` ${unscored} ${unscored === 1 ? 'part is' : 'parts are'} checked without marks and ${unscored === 1 ? 'is' : 'are'} not in this total.`}
           </p>
         </div>
       )}
 
-      <div className="ls-rec-foot">
-        {confirmLeave && (
-          <div className="ls-leave" role="alertdialog" aria-label="Leave this sitting?">
-            <p>Leave this sitting? Your answers here are not kept.</p>
-            <div>
-              <button type="button" className="ls-btn" onClick={() => setConfirmLeave(false)}>Stay</button>
-              <button type="button" className="ls-btn" onClick={onClose}>Leave</button>
-            </div>
-          </div>
-        )}
-        {mode === 'sit' && (
-          <>
-            {extracts.length > 1 && extracts.length <= 4 && (
-              <div className="ls-seg" role="group" aria-label="Extracts in this section">
-                {extracts.map((item, itemIndex) => (
-                  <button type="button" key={item.key} aria-pressed={itemIndex === index} onClick={() => goTo(itemIndex)}>{item.title}</button>
-                ))}
-              </div>
-            )}
-            {audio.playable && !audio.failed && (
-              <div className="ls-tools">
-                <button type="button" className="ls-btn" onClick={() => audio.skip(-10)}>Back 10s</button>
-                <button type="button" className="ls-btn" onClick={() => audio.skip(10)}>Forward 10s</button>
-              </div>
-            )}
-          </>
-        )}
-        {mode === 'mark' && (
-          <div className="ls-stack">
-            <button type="button" className="ls-btn-primary" disabled={recordable.length === 0} onClick={save}>
-              Save {claimed} of {available} to Mark Bank
-            </button>
-            <button type="button" className="ls-btn" onClick={() => setMode('sit')}>Back to my answers</button>
-          </div>
-        )}
-        {mode === 'saved' && (
-          <div className="ls-stack">
-            <p className="ls-saved" role="status">
-              Saved to Mark Bank: {savedCount} {savedCount === 1 ? 'part' : 'parts'}.
-            </p>
-            {onNextSection && nextSectionTitle && (
-              <button type="button" className="ls-btn-primary" onClick={onNextSection}>Next: {nextSectionTitle}</button>
-            )}
-            <button type="button" className="ls-btn" onClick={onClose}>Back to the Studio</button>
-          </div>
-        )}
-      </div>
+      {mode === 'sit' && extracts.length > 1 && extracts.length <= 4 && (
+        <div className="ls7-extracts" role="group" aria-label="Extracts in this section">
+          {extracts.map((item, itemIndex) => (
+            <Button size="sm" key={item.key} aria-pressed={itemIndex === index} onClick={() => goTo(itemIndex)}>{item.title}</Button>
+          ))}
+        </div>
+      )}
+      {mode === 'sit' && audio.playable && !audio.failed && (
+        <div className="ls7-skip">
+          <Button size="sm" onClick={() => audio.skip(-10)}>Back 10s</Button>
+          <Button size="sm" onClick={() => audio.skip(10)}>Forward 10s</Button>
+        </div>
+      )}
     </section>
+  );
+
+  const foot = (
+    <div className="ls7-sit-foot">
+      <PinnedFooter className="ls7-foot">
+        {mode === 'sit' && <>
+          {index < extracts.length - 1
+            ? <Button kind="main" size="lg" block arrow="forward" onClick={() => goTo(index + 1)}>Next: {extracts[index + 1].title}</Button>
+            : <Button kind="main" size="lg" block arrow="forward" onClick={startMarking}>Mark my answers</Button>}
+          {index > 0 && <TextButton tone="quiet" className="ls7-foot-back" onClick={() => goTo(index - 1)}>Back: {extracts[index - 1].title}</TextButton>}
+        </>}
+        {mode === 'mark' && <>
+          <Button kind="main" size="lg" block onClick={save} {...(recordable.length === 0 ? { 'aria-disabled': true as const, onClickCapture: (event: React.MouseEvent) => { event.preventDefault(); event.stopPropagation(); } } : {})}>
+            Save {claimed} of {available} to Mark Bank
+          </Button>
+          <TextButton tone="quiet" className="ls7-foot-back" onClick={() => setMode('sit')}>Back to my answers</TextButton>
+        </>}
+        {mode === 'saved' && <>
+          <p className="ls7-saved" role="status">
+            Saved to Mark Bank: {savedCount} {savedCount === 1 ? 'part' : 'parts'}.
+          </p>
+          {onNextSection && nextSectionTitle && (
+            <Button kind="main" size="lg" block arrow="forward" onClick={onNextSection}>Next: {nextSectionTitle}</Button>
+          )}
+          <TextButton tone="quiet" className="ls7-foot-back" onClick={onClose}>Back to the Studio</TextButton>
+        </>}
+      </PinnedFooter>
+    </div>
   );
 
   const sitting = (
@@ -361,14 +350,6 @@ const StudioSitting: React.FC<StudioSittingProps> = ({
           </div>
         );
       })}
-      <div className="ls-nav">
-        {index > 0
-          ? <button type="button" className="ls-btn" onClick={() => goTo(index - 1)}>Back: {extracts[index - 1].title}</button>
-          : <span />}
-        {index < extracts.length - 1
-          ? <button type="button" className="ls-btn-primary" onClick={() => goTo(index + 1)}>Next: {extracts[index + 1].title}</button>
-          : <button type="button" className="ls-btn-primary" onClick={startMarking}>Mark my answers</button>}
-      </div>
     </>
   );
 
@@ -413,17 +394,20 @@ const StudioSitting: React.FC<StudioSittingProps> = ({
     </>
   );
 
-  return createPortal(
-    <div
-      className="ls-root" role="dialog" aria-modal="true" tabIndex={-1} ref={dialogRef}
-      aria-label={`Listening Studio: ${subjectLabel} ${sittingLabel}, ${section.title}`}
-    >
-      {recording}
-      <section className="ls-sheet mark-bank-theme" aria-label="Questions" ref={sheetRef}>
+  return (
+    <OverScreen label={`Listening Studio: ${subjectLabel} ${sittingLabel}, ${section.title}`} onEscape={requestClose} className="ls7-sit">
+      <div className="ls7-sit-top">
+        <TopBar tool leave={{ kind: 'back', onPress: requestClose, label: 'Leave this sitting' }} over="Sit a real listening" title="Listening Studio"
+          art={<ToolArtwork tool="listening-studio" />} className="ls7-bar" />
+        {player}
+      </div>
+      <section className="ls-sheet ls7-qsheet mark-bank-theme" aria-label="Questions" ref={sheetRef}>
         <div className="ls-col">{mode === 'sit' ? sitting : marking}</div>
       </section>
-    </div>,
-    document.body,
+      {foot}
+      <Confirm open={confirmLeave} sentence="Leave this sitting?" detail="Your answers here are not kept."
+        keepLabel="Stay" onKeep={() => setConfirmLeave(false)} dangerLabel="Leave" onDanger={onClose} />
+    </OverScreen>
   );
 };
 
