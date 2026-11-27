@@ -137,3 +137,10 @@
   .cc7-stop[aria-selected='true'] .cc7-sdot::after { animation: none; }
   .cc7-mtrack i { transition: none; }
 }
+/* The embedded checks' small print in the system's sizes (11px is the floor). */
+.cc7-embedded :is([class*='text-[9px]'], [class*='text-[10px]'], [class*='text-[11px]'], [class*='text-[11.5px]'], [class*='text-xs']) { font-size: 13px !important; line-height: 18px !important; }
+.cc7-embedded [class*='uppercase'] { font-size: 11px !important; font-weight: 400 !important; letter-spacing: 0.1em !important; }
+/* Their choices are boxes you press (radius 9), not pills; their hand-typed greys follow the theme. */
+.cc7-embedded button[class*='rounded-full'] { border-radius: var(--r-sm) !important; }
+.cc7-embedded [class*='text-[#'], .cc7-embedded [class*='text-zinc-'] { color: var(--ink-secondary) !important; }
+

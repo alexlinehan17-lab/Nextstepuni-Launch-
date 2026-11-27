@@ -49,7 +49,7 @@ const OpenDoor: React.FC = () => {
         <>
           <h4 className="font-serif text-lg font-bold text-[#1A1A1A] dark:text-white mb-1">{OPEN_DOOR_COPY.closedHeading}</h4>
           <p className="text-xs leading-relaxed text-[#7a7068] dark:text-zinc-400 mb-3">{OPEN_DOOR_COPY.closedSub}</p>
-          <div className="rounded-xl p-4 mb-4" style={{ backgroundColor: '#F1F3F2' }}>
+          <div className="rounded-xl p-4 mb-4" style={{ backgroundColor: 'transparent', borderTop: '1px solid var(--hairline)', borderRadius: 0, paddingLeft: 0, paddingRight: 0 }}>
             {OPEN_DOOR_LINES.map((l, i) => (
               <div key={l.id} className={`flex items-baseline justify-between gap-3 ${i > 0 ? 'mt-2 pt-2 border-t border-black/[0.06]' : ''}`}>
                 <span className="text-[13px] font-semibold text-[#1A1A1A] dark:text-zinc-200">{l.label}</span>
@@ -73,7 +73,7 @@ const OpenDoor: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.2, duration: 0.3 }}
                 className="rounded-xl p-3"
-                style={{ backgroundColor: COLORS.successTint }}
+                style={{ backgroundColor: 'transparent', borderBottom: '1px solid var(--hairline)', borderRadius: 0, paddingLeft: 0, paddingRight: 0 }}
               >
                 <div className="flex items-baseline justify-between gap-3">
                   <span className="text-[13px] font-semibold text-[#1A1A1A]">{l.label}</span>
@@ -84,7 +84,7 @@ const OpenDoor: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-1.5 mt-1">
                   <Check size={12} style={{ color: COLORS.success }} />
-                  <span className="text-[10px] font-bold uppercase tracking-wide" style={{ color: COLORS.successDarkText }}>{l.removedBy}</span>
+                  <span className="text-[10px] font-bold uppercase tracking-wide" style={{ color: 'var(--ink-secondary)' }}>{l.removedBy}</span>
                 </div>
                 <p className="text-[11.5px] leading-snug mt-1 text-[#5a544e]">{l.detail}</p>
                 <Source label={l.source.label} url={l.source.url} />

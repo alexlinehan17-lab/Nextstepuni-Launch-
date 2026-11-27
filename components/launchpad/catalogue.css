@@ -132,3 +132,13 @@
   .lp7-guide-list { display: block; }
   .lp7-guide-step { display: none; }
 }
+
+/* How points work, opened on the Launchpad (PointsPanel's .jp-reference only; the study session's primer
+   is another area's): on the page under a hairline, not in a box; the one typeface; Close at the left. */
+.lp7-catalogue .jp-guide.jp-reference { background: transparent; font-family: var(--font-ui); border: 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); border-radius: 0; }
+.lp7-catalogue .jp-reference .jp-guide-header { flex-direction: row-reverse; justify-content: flex-end; padding-left: 0; padding-right: 0; }
+.lp7-catalogue .jp-reference .jp-guide-close { margin: -8px 0 0 -10px; }
+.lp7-catalogue .jp-reference .jp-guide-body { padding-left: 0; padding-right: 0; }
+.lp7-catalogue .jp-reference :is(.jp-guide-header h2, .jp-guide-rate dd, .jp-guide-shop-title) { font-family: var(--font-ui); font-weight: 400; }
+.lp7-catalogue .jp-reference .jp-guide-header .jp-guide-eyebrow,
+.lp7-catalogue .jp-reference .jp-guide-eyebrow { font-family: var(--font-ui); font-weight: 400; color: var(--ink-muted); }
