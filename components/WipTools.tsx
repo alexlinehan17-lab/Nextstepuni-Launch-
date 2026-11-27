@@ -33,7 +33,7 @@ interface WipToolsProps {
 /** The frame's bar with its one Back and the page's name (area 7b); the tools as the shared rows,
  *  "In progress" said in a small line rather than a pill; words and links unchanged. */
 const WipTools: React.FC<WipToolsProps> = ({ onBack, onOpenTool }) => (
-  <div className="product-shell ws7-page min-h-screen">
+  <div className="product-shell theme-compat ws7-page min-h-screen">
     <div className="ws7-page-bar"><div className="ws7-page-width"><PageHeader onBack={onBack} title="Workshop" backLabel="Back to home" /></div></div>
     <div className="ws7-page-width ws7-page-body">
       <p className="t-sub ws7-page-lead">
