@@ -110,9 +110,6 @@
    "rgb(": 6,
    "tailwind [#…]": 12
   },
-  "components/GCDashboard.tsx": {
-   "zinc/neutral-9xx surface": 1
-  },
   "components/GrowthMindsetModule.tsx": {
    "rgb(": 2
   },
@@ -433,25 +430,6 @@
   },
   "components/gc/GCAssignPanel.tsx": {
    "zinc/neutral-9xx surface": 1
-  },
-  "components/gc/GCExportModal.tsx": {
-   "rgb(": 2
-  },
-  "components/gc/GCHandInGrid.tsx": {
-   "hex": 11,
-   "zinc/neutral-9xx surface": 3
-  },
-  "components/gc/GCOverview.tsx": {
-   "hex": 26,
-   "rgb(": 6,
-   "tailwind [#…]": 8
-  },
-  "components/gc/GCStudentDetail.tsx": {
-   "hex": 10,
-   "rgb(": 2
-  },
-  "components/gc/StaffAccessPanel.tsx": {
-   "zinc/neutral-9xx surface": 3
   },
   "components/home-next-step.css": {
    "hex": 6

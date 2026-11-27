@@ -50,11 +50,6 @@
    "fixed": 1,
    "inset-0": 1
   },
-  "components/GCDashboard.tsx": {
-   "fixed": 6,
-   "h-screen": 1,
-   "inset-0": 4
-  },
   "components/InnovationZone.tsx": {
    "h-screen": 1
   },
@@ -178,22 +173,6 @@
   },
   "components/feedback-listening-room.css": {
    "env(safe-area-": 3
-  },
-  "components/gc/GCExportModal.tsx": {
-   "fixed": 1,
-   "inset-0": 1
-  },
-  "components/gc/GCOverview.tsx": {
-   "fixed": 1,
-   "inset-0": 1
-  },
-  "components/gc/GCStudentDetail.tsx": {
-   "fixed": 2,
-   "inset-0": 3
-  },
-  "components/gc/StaffAccessPanel.tsx": {
-   "fixed": 1,
-   "inset-0": 1
   },
   "components/immersiveDeck/Celebration.tsx": {
    "inset-0": 1

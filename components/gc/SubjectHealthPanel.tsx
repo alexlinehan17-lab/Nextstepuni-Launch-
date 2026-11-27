@@ -3,12 +3,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useMemo } from 'react';
-import { MotionDiv } from '../Motion';
-import { TrendingUp, TrendingDown, Minus, Users } from 'lucide-react';
+import React, { useMemo, useState } from 'react';
+import { TrendingUp, TrendingDown, Minus } from 'lucide-react';
 import { type GCStudentFullData } from './gcTypes';
-
-const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
+import SubjectAvatar from '../SubjectAvatar';
+import { TextButton } from '../ui/Button';
+import { List, Row } from '../ui/List';
+import { Sheet } from '../ui/Sheet';
+import './gc-8a.css';
 
 // ─── Grade conversion (Irish system only) ──────────────────────────────────
 
@@ -47,10 +49,14 @@ function computeTrend(current: number, previous: number, threshold: number = 5):
 
 interface SubjectHealthPanelProps {
   studentData: GCStudentFullData[];
+  /** The laptop layout (four to a row); a phone shows the first three as rows, with All. */
+  wide?: boolean;
 }
 
 interface SubjectHealth {
   subject: string;
+  /** The subject alone, for its character and its row (the display; `subject` keys the list). */
+  subjectName: string;
   studentCount: number;
   avgGradePoints: number;
   avgGradeLabel: string;
@@ -60,7 +66,8 @@ interface SubjectHealth {
   isHigherLevel: boolean;
 }
 
-export const SubjectHealthPanel: React.FC<SubjectHealthPanelProps> = ({ studentData }) => {
+export const SubjectHealthPanel: React.FC<SubjectHealthPanelProps> = ({ studentData, wide = true }) => {
+  const [allOpen, setAllOpen] = useState(false);
   const subjectHealthData = useMemo(() => {
     const now = new Date();
     const thisMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
@@ -148,6 +155,7 @@ export const SubjectHealthPanel: React.FC<SubjectHealthPanelProps> = ({ studentD
 
       results.push({
         subject: `${subject} · ${data.isHigher ? 'HL' : 'OL'}`,
+        subjectName: subject,
         studentCount: data.studentUids.size,
         avgGradePoints: currentAvg,
         avgGradeLabel: numericToGrade(currentAvg, data.isHigher),
@@ -163,68 +171,63 @@ export const SubjectHealthPanel: React.FC<SubjectHealthPanelProps> = ({ studentD
 
   if (subjectHealthData.length === 0) return null;
 
+  // Each trend drawn and said: up in green, down in ink, level as a dash.
   const TrendIcon: React.FC<{ trend: Trend | null }> = ({ trend }) => {
-    if (trend === 'improving') return <TrendingUp size={14} className="text-emerald-500" />;
-    if (trend === 'declining') return <TrendingDown size={14} className="text-rose-500" />;
-    return <Minus size={14} className="text-zinc-400" />;
+    if (trend === 'improving') return <TrendingUp className="ui-icon gc8-up" width={16} height={16} strokeWidth={2} aria-label="Up on last month" />;
+    if (trend === 'declining') return <TrendingDown className="ui-icon gc8-down" width={16} height={16} strokeWidth={2} aria-label="Down on last month" />;
+    return <Minus className="ui-icon gc8-dim" width={16} height={16} strokeWidth={2} aria-label="Level with last month" />;
   };
+  const level = (item: SubjectHealth) => (item.isHigherLevel ? 'Higher' : 'Ordinary');
+  const students = (n: number) => `${n} ${n === 1 ? 'student' : 'students'}`;
+  const phoneRow = (item: SubjectHealth) => (
+    <Row
+      key={item.subject}
+      art={<SubjectAvatar bare subject={item.subjectName} className="gc8-art" />}
+      title={`${item.subjectName} · ${level(item)}`}
+      meta={`${students(item.studentCount)} · ${item.avgConfidence !== null
+        ? `confidence ${item.avgConfidence.toFixed(1)} of 5`
+        : item.gradeTrend === 'declining' ? 'down on last month' : item.gradeTrend === 'improving' ? 'up on last month' : 'mock average'}`}
+      trailing={<span className="gc8-g">{item.avgGradeLabel}<TrendIcon trend={item.gradeTrend} /></span>}
+    />
+  );
 
   return (
-    <MotionDiv
-      initial={{ opacity: 0, y: 12 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: CUSTOM_EASE }}
-      className="rounded-2xl bg-white dark:bg-surface-paper border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow overflow-hidden"
-    >
-      {/* Header */}
-      <div className="flex items-center justify-between px-5 py-3.5 border-b border-zinc-100 dark:border-zinc-800/60">
-        <div className="flex items-center gap-2.5">
-          <TrendingUp size={16} className="text-[var(--accent-hex)]" />
-          <span className="text-sm font-semibold text-zinc-800 dark:text-white">Subject Health</span>
-        </div>
-        <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
-          {subjectHealthData.length} subjects
-        </span>
+    <section className="gc8-sec" aria-labelledby="gc8-health">
+      <div className="gc8-sechead">
+        <h2 id="gc8-health" className="gc8-h">Subject health</h2>
+        <span className="gc8-meta">{wide
+          ? `${subjectHealthData.length} subjects · average mock grade, confidence out of 5 where given, and the change on last month`
+          : `${subjectHealthData.length} subjects`}</span>
       </div>
-
-      {/* Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-zinc-100 dark:bg-zinc-800/40">
-        {subjectHealthData.map((item) => (
-          <div
-            key={item.subject}
-            className="bg-white dark:bg-surface-paper p-4"
-          >
-            {/* Subject name + student count */}
-            <div className="flex items-center justify-between mb-3">
-              <h4 className="text-sm font-semibold text-zinc-800 dark:text-white truncate">{item.subject}</h4>
-              <span className="flex items-center gap-1 text-[10px] font-medium text-zinc-400 dark:text-zinc-500 shrink-0 ml-2">
-                <Users size={10} />
-                {item.studentCount}
+      {wide ? (
+        <div className="gc8-health">
+          {subjectHealthData.map(item => (
+            <div key={item.subject} className="gc8-hc">
+              <SubjectAvatar bare subject={item.subjectName} className="gc8-art gc8-art--32" />
+              <span className="gc8-hc-copy">
+                <span className="gc8-person">{item.subjectName}</span>
+                <span className="gc8-meta">{level(item)} · {students(item.studentCount)}</span>
+              </span>
+              <span className="gc8-gcol">
+                <span className="gc8-g">{item.avgGradeLabel}<TrendIcon trend={item.gradeTrend} /></span>
+                {item.avgConfidence !== null && (
+                  <span className="gc8-meta gc8-trend">{item.avgConfidence.toFixed(1)} of 5{item.confidenceTrend ? <TrendIcon trend={item.confidenceTrend} /> : null}</span>
+                )}
               </span>
             </div>
-
-            {/* Mock grade trend */}
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Mock Avg</span>
-              <div className="flex items-center gap-1.5">
-                <span className="text-sm font-bold text-zinc-700 dark:text-zinc-200">{item.avgGradeLabel}</span>
-                <TrendIcon trend={item.gradeTrend} />
-              </div>
-            </div>
-
-            {/* Confidence trend */}
-            {item.avgConfidence !== null && (
-              <div className="flex items-center justify-between">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Confidence</span>
-                <div className="flex items-center gap-1.5">
-                  <span className="text-sm font-bold text-zinc-700 dark:text-zinc-200">{item.avgConfidence.toFixed(1)}/5</span>
-                  <TrendIcon trend={item.confidenceTrend} />
-                </div>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-    </MotionDiv>
+          ))}
+        </div>
+      ) : (
+        <>
+          <List className="gc8-list">{subjectHealthData.slice(0, 3).map(phoneRow)}</List>
+          {subjectHealthData.length > 3 && (
+            <TextButton className="gc8-more" arrow="forward" onClick={() => setAllOpen(true)}>{`All ${subjectHealthData.length} subjects`}</TextButton>
+          )}
+          <Sheet open={allOpen} title="Subject health" onClose={() => setAllOpen(false)}>
+            <List className="gc8-list">{subjectHealthData.map(phoneRow)}</List>
+          </Sheet>
+        </>
+      )}
+    </section>
   );
 };

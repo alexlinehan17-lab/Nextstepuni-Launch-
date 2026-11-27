@@ -3,12 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
-import { createPortal } from 'react-dom';
-import { AnimatePresence } from 'framer-motion';
-import { MotionDiv } from '../Motion';
-import { X, FileDown, FileText, ChevronDown } from 'lucide-react';
-import { useModal } from '../../hooks/useModal';
+import React, { useRef, useState } from 'react';
 import { type GCStudentFullData } from './gcTypes';
 import { type CourseData } from '../Library';
 import {
@@ -19,7 +14,10 @@ import {
   downloadCSV,
 } from '../../utils/exportCsv';
 import { generateReport } from '../../utils/exportPdf';
-import { COLORS } from '../../design/tokens';
+import { Button } from '../ui/Button';
+import { ChoiceTile } from '../ui/Choice';
+import { Sheet } from '../ui/Sheet';
+import { useWide } from './gcView';
 
 interface GCExportModalProps {
   isOpen: boolean;
@@ -29,10 +27,9 @@ interface GCExportModalProps {
   school: string;
 }
 
-const ACCENT = COLORS.accent;
-
 const GCExportModal: React.FC<GCExportModalProps> = ({ isOpen, onClose, studentData, allCourses, school }) => {
-  useModal(isOpen, onClose);
+  const wide = useWide();
+  const choicesRef = useRef<HTMLDivElement>(null);
   const [includeProgress, setIncludeProgress] = useState(true);
   const [includeAttendance, setIncludeAttendance] = useState(true);
   const [includeSubjectHealth, setIncludeSubjectHealth] = useState(true);
@@ -78,153 +75,52 @@ const GCExportModal: React.FC<GCExportModalProps> = ({ isOpen, onClose, studentD
 
   const hasSelection = includeProgress || includeAttendance || includeSubjectHealth || (includeIndividual && !!selectedStudent);
 
-  return createPortal(
-    <AnimatePresence>
-      {isOpen && (
-        <MotionDiv
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.2 }}
-          className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4"
-          onClick={onClose}
-        >
-          <MotionDiv
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-            className="bg-white dark:bg-surface-paper rounded-2xl shadow-xl w-full max-w-lg overflow-hidden"
-            onClick={(e: React.MouseEvent) => e.stopPropagation()}
-          >
-            {/* Header */}
-            <div className="flex items-center justify-between px-6 py-5 border-b border-zinc-100 dark:border-hairline">
-              <div className="flex items-center gap-3">
-                <div
-                  className="w-9 h-9 rounded-xl flex items-center justify-center dark:!bg-[rgba(77,184,164,0.1)]"
-                  style={{ backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.1)' }}
-                >
-                  <FileDown size={18} style={{ color: ACCENT }} className="dark:!text-accent" />
-                </div>
-                <h2 className="text-base font-semibold text-zinc-900 dark:text-white">Export Data</h2>
-              </div>
-              <button
-                onClick={onClose}
-                aria-label="Close"
-                className="w-8 h-8 flex items-center justify-center rounded-lg text-zinc-400 hover:text-zinc-600 hover:bg-zinc-100 dark:hover:text-zinc-300 dark:hover:bg-surface-soft transition-colors"
-              >
-                <X size={16} />
-              </button>
-            </div>
-
-            {/* Body */}
-            <div className="px-6 py-5 space-y-3">
-              {/* Toggle options */}
-              <ToggleOption
-                label="Student Progress Summary"
-                checked={includeProgress}
-                onChange={setIncludeProgress}
-              />
-              <ToggleOption
-                label="Attendance Patterns"
-                checked={includeAttendance}
-                onChange={setIncludeAttendance}
-              />
-              <ToggleOption
-                label="Subject Health"
-                checked={includeSubjectHealth}
-                onChange={setIncludeSubjectHealth}
-              />
-              <ToggleOption
-                label="Individual Student Detail"
-                checked={includeIndividual}
-                onChange={setIncludeIndividual}
-              />
-
-              {/* Student dropdown — appears when individual is toggled on */}
-              {includeIndividual && (
-                <div className="ml-1 mt-1">
-                  <div className="relative">
-                    <select
-                      value={selectedStudentUid}
-                      onChange={e => setSelectedStudentUid(e.target.value)}
-                      className="w-full appearance-none bg-zinc-50 dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 rounded-xl px-3 py-2.5 pr-8 text-sm text-zinc-800 dark:text-white focus:outline-none focus:border-accent/50"
-                    >
-                      <option value="">Select a student...</option>
-                      {sortedStudents.map(s => (
-                        <option key={s.user.uid} value={s.user.uid}>{s.user.name}</option>
-                      ))}
-                    </select>
-                    <ChevronDown size={14} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-zinc-400" />
-                  </div>
-                </div>
-              )}
-
-              {/* Preview count */}
-              <p className="text-xs text-zinc-400 dark:text-zinc-500 pt-1">
-                Exporting data for {studentData.length} student{studentData.length !== 1 ? 's' : ''}
-              </p>
-            </div>
-
-            {/* Footer */}
-            <div className="flex gap-3 px-6 py-4 border-t border-zinc-100 dark:border-hairline">
-              <button
-                onClick={handleExportCSV}
-                disabled={!hasSelection}
-                className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold text-white disabled:opacity-40 disabled:cursor-not-allowed transition-colors dark:!bg-accent"
-                style={{ backgroundColor: ACCENT }}
-              >
-                <FileText size={14} />
-                Export CSV
-              </button>
-              <button
-                onClick={handleExportPDF}
-                disabled={!hasSelection}
-                className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold text-white disabled:opacity-40 disabled:cursor-not-allowed transition-colors dark:!bg-accent"
-                style={{ backgroundColor: ACCENT }}
-              >
-                <FileDown size={14} />
-                Export PDF
-              </button>
-            </div>
-          </MotionDiv>
-        </MotionDiv>
-      )}
-    </AnimatePresence>,
-    document.body
-  );
-};
-
-// ─── Toggle pill component ──────────────────────────────────────────────────
-
-function ToggleOption({ label, checked, onChange }: { label: string; checked: boolean; onChange: (v: boolean) => void }) {
+  // A sheet from the bottom on a phone (a centred dialog from 640px): the four parts as choices with
+  // the ink tick, Export PDF the charcoal button and CSV beside it (board r5-counsellor-dashboard).
+  const missing = !hasSelection ? { sentence: 'Choose what to export.', goTo: choicesRef } : undefined;
   return (
-    <button
-      type="button"
-      onClick={() => onChange(!checked)}
-      className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-        checked
-          ? 'bg-accent/8 text-zinc-800 dark:bg-[rgba(77,184,164,0.1)] dark:text-white'
-          : 'bg-zinc-50 text-zinc-500 dark:bg-zinc-800/50 dark:text-zinc-400'
-      }`}
+    <Sheet
+      open={isOpen}
+      title="Export data"
+      onClose={onClose}
+      footer={
+        <div className="gc8-pair">
+          <Button size="lg" onClick={() => { if (hasSelection) handleExportCSV(); }} aria-disabled={!hasSelection || undefined}>Export CSV</Button>
+          <Button kind="main" size="lg" missing={missing} onClick={() => { void handleExportPDF(); }}>Export PDF</Button>
+        </div>
+      }
     >
-      <div
-        className={`w-5 h-5 rounded-md flex items-center justify-center flex-shrink-0 transition-colors ${
-          checked
-            ? 'dark:!bg-accent'
-            : 'bg-zinc-200 dark:bg-zinc-700'
-        }`}
-        style={checked ? { backgroundColor: ACCENT } : undefined}
-      >
-        {checked && (
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-            <path d="M2.5 6L5 8.5L9.5 3.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+      <div className="gc8-sheet-body">
+        <div className="gc8-msgs" ref={choicesRef} role="group" aria-label="What to export">
+          <ChoiceTile kind="several" chosen={includeProgress} label="Student progress summary" onClick={() => setIncludeProgress(!includeProgress)} />
+          <ChoiceTile kind="several" chosen={includeAttendance} label="Attendance patterns" onClick={() => setIncludeAttendance(!includeAttendance)} />
+          <ChoiceTile kind="several" chosen={includeSubjectHealth} label="Subject health" onClick={() => setIncludeSubjectHealth(!includeSubjectHealth)} />
+          <ChoiceTile kind="several" chosen={includeIndividual} label="Individual student detail" onClick={() => setIncludeIndividual(!includeIndividual)} />
+        </div>
+
+        {/* Student picker — appears when individual is toggled on (a form's own picker) */}
+        {includeIndividual && (
+          <label className="ui-part ui-field">
+            <span className="ui-field-label">Student</span>
+            <select className="ui-field-input" value={selectedStudentUid} onChange={e => setSelectedStudentUid(e.target.value)}>
+              <option value="">Select a student...</option>
+              {sortedStudents.map(s => (
+                <option key={s.user.uid} value={s.user.uid}>{s.user.name}</option>
+              ))}
+            </select>
+          </label>
+        )}
+
+        <p className="gc8-meta">Exporting data for {studentData.length} student{studentData.length !== 1 ? 's' : ''}</p>
+        {!wide && (
+          <div className="gc8-laptopnote">
+            <p className="gc8-label">Best on a laptop</p>
+            <p className="gc8-sub">The CSV is a spreadsheet with a column for every figure, easier to read on a bigger screen. Both still export from here.</p>
+          </div>
         )}
       </div>
-      {label}
-    </button>
+    </Sheet>
   );
-}
+};
 
 export default GCExportModal;

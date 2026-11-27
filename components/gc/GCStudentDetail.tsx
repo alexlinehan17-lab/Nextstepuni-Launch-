@@ -1,23 +1,27 @@
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
+ *
+ * One student, as their counsellor sees them (area 8a): a page of its own with Back on a phone,
+ * the side tray with Close on a laptop (the dashboard wraps it in the shared OverScreen). The
+ * student's character, name and status at the top; their warnings as notices; the figures as
+ * ruled rows; every section of today's profile below, laid on the page between hairlines; the
+ * three actions pinned at the bottom on a phone and under the student on a laptop. How things
+ * are SHOWN only: every read, write, callable and preset id is as it was.
  */
-import Avatar from '../Avatar';
-
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, type ReactNode } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ArrowLeft, Flame, Coins, ChevronDown, ChevronRight, BookOpen, AlertTriangle, X, Compass, BarChart3, Brain, Lightbulb, Heart, UserPlus, TrendingDown, TrendingUp, CheckCircle, MinusCircle, Flag, type LucideIcon } from 'lucide-react';
+import { Check, CheckCircle, MinusCircle, MoreHorizontal } from 'lucide-react';
 import { type CourseData } from '../Library';
 import { type CategoryType } from '../KnowledgeTree';
-import { getSchoolName } from '../../schoolData';
 import { getPointsForGrade, LC_SUBJECTS } from '../subjectData';
 import { ARCHETYPES, CAPABILITY_KEYS, JOURNEY_SCORING_VERSION, STAT_LABELS, type CapabilityKey } from '../journeySimulatorData';
-import { NORTH_STAR_CATEGORIES, VISION_CARDS, CATEGORY_COLORS } from '../../northStarData';
+import { NORTH_STAR_CATEGORIES, VISION_CARDS } from '../../northStarData';
 import { type GCStudentFullData, type StudentStatus } from './gcTypes';
 import { hydrateCourses } from '../futureFinderData';
 import { computeCompassProgress } from '../../collegeCompassData';
-import { type EarlyWarningAlert, type AlertSeverity } from './gcAlerts';
+import { type EarlyWarningAlert } from './gcAlerts';
 import {
   getOverallProgress,
   getCategoryProgress,
@@ -32,8 +36,9 @@ import {
   getStudentTopBandsCount,
   getStudentTargetTopBandsCount,
 } from './gcUtils';
-import { getStatusReasons, STATUS_CONFIG } from '../../utils/studentStatus';
+import { getStatusReasons } from '../../utils/studentStatus';
 import { type FlagData, type FlagPriority } from '../../hooks/useGCFlags';
+import { type SessionUser } from '../../utils/authUtils';
 import { PentagonRadar } from './PentagonRadar';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import app from '../../firebase';
@@ -43,25 +48,26 @@ import {
   STAFF_RECOMMENDATION_NOTES,
   isKnownStaffMessage,
 } from '../../data/staffEncouragement';
-import { COLORS } from '../../design/tokens';
+import SubjectAvatar from '../SubjectAvatar';
+import { TopBar, PinnedFooter } from '../ui/Bars';
+import { MenuAction, MenuPanel, MenuRadioRows } from '../ui/Menu';
+import { Sheet } from '../ui/Sheet';
+import { ChoiceTile } from '../ui/Choice';
+import { Button, TextButton } from '../ui/Button';
+import { List, Row } from '../ui/List';
+import { StudentArt, StatusWords, Fig, Pct, STATUS_WORDS, SEVERITY_WORDS } from './gcView';
 
 const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
 
 // ─── Categories ─────────────────────────────────────────────────────────────
 
-const CATEGORIES: { id: CategoryType; title: string; color: string; dotColor: string }[] = [
-  { id: 'architecture-mindset', title: 'The Architecture of your Mindset', color: 'bg-blue-500', dotColor: 'bg-blue-500' },
-  { id: 'science-growth', title: 'The Science of Growth', color: 'bg-amber-500', dotColor: 'bg-amber-500' },
-  { id: 'learning-cheat-codes', title: 'The Science of Learning Effectively', color: 'bg-teal-500', dotColor: 'bg-teal-500' },
-  { id: 'subject-specific-science', title: 'Decoding the Subjects', color: 'bg-slate-500', dotColor: 'bg-slate-500' },
-  { id: 'exam-zone', title: 'Exam Strategy and Points Maximisation', color: 'bg-red-500', dotColor: 'bg-red-500' },
+const CATEGORIES: { id: CategoryType; title: string }[] = [
+  { id: 'architecture-mindset', title: 'The Architecture of your Mindset' },
+  { id: 'science-growth', title: 'The Science of Growth' },
+  { id: 'learning-cheat-codes', title: 'The Science of Learning Effectively' },
+  { id: 'subject-specific-science', title: 'Decoding the Subjects' },
+  { id: 'exam-zone', title: 'Exam Strategy and Points Maximisation' },
 ];
-
-// ─── Section label helper ───────────────────────────────────────────────────
-
-const SectionLabel: React.FC<{ label: string }> = ({ label }) => (
-  <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-3">{label}</p>
-);
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
@@ -83,6 +89,11 @@ interface GCStudentDetailProps {
   isTrayMode?: boolean;
   alerts?: EarlyWarningAlert[];
   gcFlags?: GCFlagsAPI;
+  /** The laptop's side tray (Close, actions under the student); a phone's page when false or left out. */
+  wide?: boolean;
+  onDismissAlert?: (alert: EarlyWarningAlert) => void;
+  onResetPassword?: (studentUid: string) => void;
+  onDeleteStudent?: (user: SessionUser) => void;
 }
 
 // Recommendable IZ tools, tagged by curriculum so the recommend-tool modal
@@ -101,8 +112,22 @@ const INNOVATION_TOOLS: { id: string; title: string; jcTitle?: string; curriculu
   { id: 'first-gen-intel',  title: 'First Gen Intel',            curriculum: 'senior' },
 ];
 
-export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, isTrayMode, alerts = [], gcFlags }) => {
+/** A section's small label (the group it opens) over its heading, and a quiet figure at the right. */
+function SecHead({ title, over, end }: { title: ReactNode; over?: string; end?: ReactNode }) {
+  return (
+    <div className="gc8-sechead">
+      <div className="gc8-sechead-col">
+        {over ? <p className="gc8-label">{over}</p> : null}
+        <h3 className="gc8-h">{title}</h3>
+      </div>
+      {end ? <span className="gc8-meta">{end}</span> : null}
+    </div>
+  );
+}
+
+export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, isTrayMode, alerts = [], gcFlags, wide = false, onDismissAlert, onResetPassword, onDeleteStudent }) => {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
+  const [openStops, setOpenStops] = useState<Set<string>>(new Set());
   const [showRecommendModal, setShowRecommendModal] = useState(false);
   const [showKudosModal, setShowKudosModal] = useState(false);
   const [recommendToolId, setRecommendToolId] = useState<string | null>(null);
@@ -111,6 +136,8 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   const [recommendNoteId, setRecommendNoteId] = useState('');
   const [kudosMessageId, setKudosMessageId] = useState('');
   const [isSendingAction, setIsSendingAction] = useState(false);
+  const recommendToolsRef = useRef<HTMLDivElement>(null);
+  const kudosMessagesRef = useRef<HTMLDivElement>(null);
 
   // Score the student against the modules THEY can open, not the full
   // catalogue — a 7-subject senior who had finished everything available to
@@ -139,11 +166,6 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   // post-LC).
   const isGraduated = student.yearGroup === 'graduated';
 
-  const STATUS_ICONS: Record<StudentStatus, LucideIcon> = {
-    'new': UserPlus, 'at-risk': AlertTriangle, 'drifting': TrendingDown,
-    'thriving': TrendingUp, 'active': CheckCircle, 'inactive': MinusCircle,
-  };
-
   // ─── Status transition tracking (localStorage, GC-only) ──────────────
   const [previousStatus, setPreviousStatus] = useState<StudentStatus | null>(null);
 
@@ -168,7 +190,75 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     }
   }, [student.user.uid, status]);
 
-  // ─── Stat tiles (shared by the tray and the full page) ────────────────
+  const flagData = gcFlags?.getFlagData(student.user.uid);
+  const name = student.user.name;
+
+  // ─── The student: their year (and cycle, where the year does not say it) and flag ───
+  //
+  // Today's year/curriculum badge and flag bar, said in one small line over the name.
+  const yearLabel = (() => {
+    if (isGraduated) return 'Graduated';
+    const yg = student.yearGroup;
+    const cycle = isJunior ? 'Junior Cycle' : 'Senior Cycle';
+    if (!yg) return student.curriculumLevel ? cycle : null;
+    const year = yg === 'TY' || yg.startsWith('LCA') ? yg : `${yg} Year`;
+    const yearSaysJunior = yg === '1st' || yg === '2nd' || yg === '3rd' ? true : yg === 'TY' ? null : false;
+    return yearSaysJunior === isJunior ? year : `${cycle} · ${year}`;
+  })();
+  const flagLabel = flagData ? (flagData.priority === 'high' ? 'Flagged, high' : 'Flagged') : null;
+  const whoLabel = [yearLabel, flagLabel].filter(Boolean).join(' · ');
+  const statusMore = [
+    previousStatus ? `Was ${STATUS_WORDS[previousStatus].toLowerCase()}` : null,
+    student.streak?.lastActiveDate ? `Last active ${student.streak.lastActiveDate}` : null,
+  ].filter(Boolean);
+
+  const renderStudent = () => (
+    <div className="gc8-sd-head">
+      <div className="gc8-sd-who">
+        <StudentArt seed={student.user.avatar} size={56} />
+        <div className="gc8-sd-whocopy">
+          {whoLabel ? <p className="gc8-label">{whoLabel}</p> : null}
+          <h2 className="gc8-name">{name}</h2>
+        </div>
+      </div>
+      <p className="gc8-sub">
+        <StatusWords status={status}>{statusMore.length ? `. ${statusMore.join('. ')}.` : '.'}</StatusWords>
+      </p>
+    </div>
+  );
+
+  // ─── Notices: each early warning, and the reasons this student needs support ───
+
+  const renderNotices = () => {
+    // Needs Support (at-risk / drifting). Audit 2026-06-01: previously compared
+    // to 'needs-support', which is not in the StudentStatus union, so this
+    // tray panel never rendered.
+    const needsSupport = (status === 'at-risk' || status === 'drifting') && supportReasons.length > 0;
+    if (alerts.length === 0 && !needsSupport) return null;
+    return (
+      <div className="gc8-sd-notices">
+        {alerts.map(alert => (
+          <div key={alert.id} className="gc8-sd-notice">
+            <p className="gc8-label">Early warning · {SEVERITY_WORDS[alert.severity]}</p>
+            <p className="gc8-sub"><span className="gc8-strong">{alert.title}.</span> {alert.description}</p>
+            {onDismissAlert ? <TextButton tone="quiet" onClick={() => onDismissAlert(alert)}>Dismiss warning</TextButton> : null}
+          </div>
+        ))}
+        {needsSupport && (
+          <div className="gc8-sd-notice">
+            <p className="gc8-label">Needs support</p>
+            <ul>
+              {supportReasons.map((reason, i) => (
+                <li key={i} className="gc8-sub">{reason}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  // ─── Figures (shared by the phone and the laptop) ────────────────────
   //
   // These used to be duplicated: the full-page copy was curriculum-guarded and
   // the tray copy was not. Since GCDashboard only ever renders the TRAY, the
@@ -176,26 +266,11 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   // Target CAO 0" and an LC countdown, and every LCA student fell through to the
   // CAO path too (LCA maps to 'senior'). One renderer, so the guard can't drift
   // out of the branch that's actually on screen again.
-  const renderStatTiles = () => (
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-      {/* Progress ring */}
-      <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 flex items-center gap-3">
-        <svg width={44} height={44} viewBox="0 0 44 44">
-          <circle cx={22} cy={22} r={18} fill="none" stroke="currentColor" className="text-zinc-200 dark:text-zinc-700" strokeWidth={3} />
-          <circle
-            cx={22} cy={22} r={18} fill="none"
-            stroke="currentColor"
-            className="text-[var(--accent-hex)]"
-            strokeWidth={3}
-            strokeLinecap="round"
-            strokeDasharray={`${(overallProgress / 100) * 113.1} 113.1`}
-            transform="rotate(-90 22 22)"
-          />
-        </svg>
-        <div>
-          <p className="text-xl font-bold text-zinc-900 dark:text-white">{overallProgress.toFixed(0)}%</p>
-          <p className="text-[10px] font-medium text-zinc-500">Progress</p>
-        </div>
+  const renderFigures = () => (
+    <div className="gc8-figrows">
+      <div>
+        <span className="gc8-sub">Progress</span>
+        <Fig className="gc8-num" value={overallProgress.toFixed(0)} unit="%" />
       </div>
 
       {/* Junior Cycle: bands, not points. */}
@@ -205,17 +280,16 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
         const targetMerit = getStudentTargetTopBandsCount(student);
         return (
           <>
-            <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-              <p className="text-xl font-bold text-zinc-900 dark:text-white">{subjectsCovered || '—'}</p>
-              <p className="text-[10px] font-medium text-zinc-500">Subjects</p>
+            <div>
+              <span className="gc8-sub">Subjects</span>
+              <span className="gc8-num">{subjectsCovered || '—'}</span>
             </div>
-            <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-              <p className="text-xl font-bold text-zinc-900 dark:text-white">{subjectsCovered ? `${atMerit}/${subjectsCovered}` : '—'}</p>
-              <p className="text-[10px] font-medium text-zinc-500">At Merit+</p>
-            </div>
-            <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-              <p className="text-xl font-bold text-zinc-900 dark:text-white">{subjectsCovered ? `${targetMerit}/${subjectsCovered}` : '—'}</p>
-              <p className="text-[10px] font-medium text-zinc-500">Target Merit+</p>
+            <div>
+              <span className="gc8-figrows-col">
+                <span className="gc8-sub">At Merit+</span>
+                <span className="gc8-meta">Target Merit+ {subjectsCovered ? `${targetMerit}/${subjectsCovered}` : '—'}</span>
+              </span>
+              <span className="gc8-num">{subjectsCovered ? `${atMerit}/${subjectsCovered}` : '—'}</span>
             </div>
           </>
         );
@@ -224,23 +298,24 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           {/* hasCAOGrades, not "has a profile": an LCA profile is complete and
               valid but has no H/O grade anywhere, so the CAO total is not 0 —
               it doesn't exist. An em-dash says that; a 0 lies about it. */}
-          <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-            <p className="text-xl font-bold text-zinc-900 dark:text-white">{hasGrades ? currentCAO : '—'}</p>
-            <p className="text-[10px] font-medium text-zinc-500">Current CAO</p>
-          </div>
-          <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-            <p className="text-xl font-bold text-zinc-900 dark:text-white">{hasGrades ? targetCAO : '—'}</p>
-            <p className="text-[10px] font-medium text-zinc-500">Target CAO</p>
+          <div>
+            <span className="gc8-figrows-col">
+              <span className="gc8-sub">CAO points</span>
+              <span className="gc8-meta">
+                Target {hasGrades ? targetCAO : '—'}{hasGrades && targetCAO > currentCAO ? `, ${targetCAO - currentCAO} to go` : ''}
+              </span>
+            </span>
+            <span className="gc8-num">{hasGrades ? currentCAO : '—'}</span>
           </div>
           {isGraduated ? (
-            <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-              <p className="text-base font-semibold text-zinc-600 dark:text-zinc-300">Best of luck</p>
-              <p className="text-[10px] font-medium text-zinc-500">Past cohort</p>
+            <div>
+              <span className="gc8-sub">Past cohort</span>
+              <span className="gc8-sub">Best of luck</span>
             </div>
           ) : (
-            <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-              <p className="text-xl font-bold text-zinc-900 dark:text-white">{daysUntilLC}</p>
-              <p className="text-[10px] font-medium text-zinc-500">Days to Exam</p>
+            <div>
+              <span className="gc8-sub">Days to exam</span>
+              <span className="gc8-num">{daysUntilLC}</span>
             </div>
           )}
         </>
@@ -256,6 +331,14 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     });
   };
 
+  const toggleStop = (id: string) => {
+    setOpenStops(prev => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id); else next.add(id);
+      return next;
+    });
+  };
+
   // ─── Engagement timeline ──────────────────────────────────────────────
 
   const engagementTimeline = getEngagementTimeline(student.timetableCompletions);
@@ -263,201 +346,15 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   const totalBlocks = engagementTimeline.reduce((sum, d) => sum + d.count, 0);
   const activeDays = engagementTimeline.filter(d => d.count > 0).length;
 
-  // ─── Tray Header (sticky, compact) ──────────────────────────────────
-
-  const renderTrayHeader = () => (
-    <div className="frame-bar [--frame-pad-top:1rem] sticky top-0 z-10 bg-white dark:bg-surface-paper border-b border-zinc-200 dark:border-hairline px-6 pb-4">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3 min-w-0">
-          <Avatar
-            seed={student.user.avatar}
-            alt=""
-            className="w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-700 ring-2 ring-[rgba(var(--accent),0.2)] shrink-0"
-          />
-          <div className="min-w-0">
-            <p className="font-mono text-[9px] font-bold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-0.5">Student Profile</p>
-            <div className="flex items-center gap-2">
-              <h2 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white truncate">{student.user.name}</h2>
-              {(() => {
-                const cfg = STATUS_CONFIG[status];
-                const SIcon = STATUS_ICONS[status];
-                return (
-                  <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0 ${cfg.darkBgClass} ${cfg.darkTextClass}`} style={{ backgroundColor: cfg.bg, color: cfg.text }} aria-label={`Status: ${cfg.label}`}>
-                    <SIcon size={10} aria-hidden="true" />
-                    {cfg.label}
-                  </span>
-                );
-              })()}
-              {previousStatus && (
-                <span className="text-[10px] text-zinc-400 dark:text-zinc-500 shrink-0">
-                  {STATUS_CONFIG[previousStatus].label} &rarr;
-                </span>
-              )}
-              {/* Curriculum + year badge — mirror of the full-detail header
-                  badge above; muted treatment for graduated past-cohort. */}
-              {(student.yearGroup || student.curriculumLevel) && (
-                <span
-                  className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider shrink-0"
-                  style={
-                    isGraduated
-                      ? { backgroundColor: 'var(--surface-soft)', color: '#78716C', border: '1px solid var(--hairline)' }
-                      : isJunior
-                        ? { backgroundColor: '#EDF2EE', color: '#4A6B4F' }
-                        : { backgroundColor: '#FDEEDF', color: COLORS.accentDarkText }
-                  }
-                  title={isGraduated ? 'Graduated student (past cohort)' : isJunior ? 'Junior Cycle student' : 'Senior Cycle student'}
-                >
-                  {isGraduated ? 'Graduated' : isJunior ? 'JC' : 'Senior'}
-                  {!isGraduated && student.yearGroup && (
-                    <span className="opacity-70 normal-case">· {student.yearGroup === 'TY' ? 'TY' : `${student.yearGroup}`}</span>
-                  )}
-                </span>
-              )}
-            </div>
-          </div>
-        </div>
-        <button
-          onClick={onBack}
-          aria-label="Close student details"
-          className="w-9 h-9 rounded-lg bg-zinc-100 dark:bg-surface-soft flex items-center justify-center hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors shrink-0"
-        >
-          <X size={18} className="text-zinc-500 dark:text-zinc-300" />
-        </button>
-      </div>
-    </div>
-  );
-
-  // ─── Header banner (full mode) ────────────────────────────────────
-
-  const renderHeader = () => (
-    <div className="relative rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6 overflow-hidden">
-      {/* Accent top bar + gradient glow */}
-      <div className="absolute top-0 left-0 right-0 h-[3px] bg-[var(--accent-hex)]" />
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse at 50% 0%, rgba(var(--accent),0.06) 0%, transparent 70%)' }}
-      />
-
-      <div className="relative">
-        {/* Top row: back button + name */}
-        <div className="flex items-center gap-4 mb-5">
-          <button
-            onClick={onBack}
-            className="w-10 h-10 rounded-xl bg-zinc-100 dark:bg-surface-soft flex items-center justify-center hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
-          >
-            <ArrowLeft size={18} className="text-zinc-600 dark:text-zinc-300" />
-          </button>
-          <Avatar
-            seed={student.user.avatar}
-            alt=""
-            className="w-14 h-14 rounded-full bg-zinc-200 ring-2 ring-[rgba(var(--accent),0.2)]"
-          />
-          <div>
-            <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-0.5">Student Profile</p>
-            <div className="flex items-center gap-2.5">
-              <h2 className="font-serif text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white">{student.user.name}</h2>
-              {(() => {
-                const cfg = STATUS_CONFIG[status];
-                const SIcon = STATUS_ICONS[status];
-                return (
-                  <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium shrink-0 ${cfg.darkBgClass} ${cfg.darkTextClass}`} style={{ backgroundColor: cfg.bg, color: cfg.text }} aria-label={`Status: ${cfg.label}`}>
-                    <SIcon size={12} aria-hidden="true" />
-                    {cfg.label}
-                  </span>
-                );
-              })()}
-              {previousStatus && (
-                <span className="text-xs text-zinc-400 dark:text-zinc-500 shrink-0">
-                  {STATUS_CONFIG[previousStatus].label} &rarr;
-                </span>
-              )}
-              {/* Curriculum + year badge (Phase 6 + 8). Graduated students
-                  get a muted treatment to distinguish past-cohort from
-                  active students; the badge reads simply "Graduated". */}
-              {(student.yearGroup || student.curriculumLevel) && (
-                <span
-                  className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider shrink-0"
-                  style={
-                    isGraduated
-                      ? { backgroundColor: 'var(--surface-soft)', color: '#78716C', border: '1px solid var(--hairline)' }
-                      : isJunior
-                        ? { backgroundColor: '#EDF2EE', color: '#4A6B4F' }
-                        : { backgroundColor: '#FDEEDF', color: COLORS.accentDarkText }
-                  }
-                  title={isGraduated ? 'Graduated student (past cohort)' : isJunior ? 'Junior Cycle student' : 'Senior Cycle student'}
-                >
-                  {isGraduated ? 'Graduated' : isJunior ? 'JC' : 'Senior'}
-                  {!isGraduated && student.yearGroup && (
-                    <span className="opacity-70 normal-case">
-                      · {student.yearGroup === 'TY' ? 'TY' : `${student.yearGroup} yr`}
-                    </span>
-                  )}
-                </span>
-              )}
-            </div>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">{student.user.school ? getSchoolName(student.user.school) : ''}</p>
-          </div>
-        </div>
-
-        {/* Stat chips grid — shared renderer, curriculum-aware */}
-        {renderStatTiles()}
-
-        {/* Status explainer for at-risk / drifting */}
-        {(status === 'at-risk' || status === 'drifting') && statusReasons.length > 0 && (() => {
-          const cfg = STATUS_CONFIG[status];
-          const SIcon = STATUS_ICONS[status];
-          return (
-            <div className={`mt-4 rounded-xl p-4 ${cfg.darkBgClass}`} style={{ backgroundColor: cfg.bg }}>
-              <div className="flex items-start gap-2.5">
-                <SIcon size={16} className="mt-0.5 shrink-0" style={{ color: cfg.text }} />
-                <div>
-                  <p className="text-sm font-semibold mb-1" style={{ color: cfg.text }}>{cfg.label}</p>
-                  <ul className="space-y-1">
-                    {statusReasons.map((reason, i) => (
-                      <li key={i} className="text-xs" style={{ color: cfg.text, opacity: 0.8 }}>{reason}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          );
-        })()}
-
-        {/* Early Warning Signals for this student */}
-        {alerts.length > 0 && (
-          <div className="mt-4 space-y-2">
-            {alerts.map(alert => {
-              const colors: Record<AlertSeverity, { bg: string; border: string; text: string; dot: string }> = {
-                urgent: { bg: 'bg-rose-50 dark:bg-rose-900/10', border: 'border-rose-200 dark:border-rose-800/40', text: 'text-rose-700 dark:text-rose-400', dot: 'bg-rose-500' },
-                watch: { bg: 'bg-amber-50 dark:bg-amber-900/10', border: 'border-amber-200 dark:border-amber-800/40', text: 'text-amber-700 dark:text-amber-400', dot: 'bg-amber-500' },
-                nudge: { bg: 'bg-blue-50 dark:bg-blue-900/10', border: 'border-blue-200 dark:border-blue-800/40', text: 'text-blue-700 dark:text-blue-400', dot: 'bg-blue-500' },
-              };
-              const c = colors[alert.severity];
-              return (
-                <div key={alert.id} className={`rounded-xl ${c.bg} border ${c.border} px-4 py-3 flex items-center gap-3`}>
-                  <div className={`w-2 h-2 rounded-full ${c.dot} shrink-0`} />
-                  <div className="min-w-0">
-                    <p className={`text-xs font-semibold ${c.text}`}>{alert.title}</p>
-                    <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">{alert.description}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
-      </div>
-    </div>
-  );
-
-  // ─── Subject Profile Card ───────────────────────────────────────────
+  // ─── Subject profile ────────────────────────────────────────────────
 
   const renderSubjectProfile = () => {
     if (!student.subjectProfile) {
       return (
-        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
-          <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-2">Subject Profile</h3>
-          <p className="text-sm text-zinc-400 italic">No subject profile set up yet.</p>
-        </div>
+        <section className="gc8-sec gc8-sd-sec">
+          <SecHead over="Academic profile" title="Subject profile" />
+          <p className="gc8-sub">No subject profile set up yet.</p>
+        </section>
       );
     }
 
@@ -466,174 +363,126 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     const targetPct = Math.min(100, (targetCAO / maxPoints) * 100);
 
     return (
-      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
-        <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">Subject Profile</h3>
+      <section className="gc8-sec gc8-sd-sec">
+        <SecHead over="Academic profile" title="Subject profile" />
 
         {/* CAO bar — senior only (JC has no points concept), and only for
             students who actually have H/O grades. LCA students map to
             'senior' but are assessed on credits, so this bar used to draw a
             confident 0-of-625 for them. For JC the band-by-band breakdown in
-            the table below carries the same information without a single
+            the rows below carries the same information without a single
             "total" number to anchor to. */}
         {!isJunior && hasGrades && (
-          <div className="mb-5">
-            <div className="flex justify-between text-xs text-zinc-500 dark:text-zinc-400 mb-1">
+          <div className="gc8-sd-cao">
+            <div className="gc8-sd-ends gc8-meta">
               <span>Current: {currentCAO} pts</span>
               <span>Target: {targetCAO} pts</span>
             </div>
-            <div className="relative w-full h-5 bg-zinc-100 dark:bg-surface-soft rounded-full overflow-hidden">
-              <MotionDiv
-                className="absolute inset-y-0 left-0 bg-[var(--accent-hex)] rounded-full"
-                initial={{ width: 0 }}
-                animate={{ width: `${currentPct}%` }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
-              />
+            <span className="gc8-bar gc8-sd-caobar" aria-hidden="true">
+              <i style={{ width: `${currentPct}%` }} />
               {targetPct > currentPct && (
-                <div
-                  className="absolute inset-y-0 border-2 border-dashed border-[rgba(var(--accent),0.5)] rounded-full"
-                  style={{ left: `${currentPct}%`, width: `${targetPct - currentPct}%` }}
-                />
+                <b style={{ left: `${currentPct}%`, width: `${targetPct - currentPct}%` }} />
               )}
-            </div>
-            <div className="flex justify-between text-[10px] text-zinc-400 mt-1">
+            </span>
+            <div className="gc8-sd-ends gc8-meta">
               <span>0</span>
               <span>625</span>
             </div>
           </div>
         )}
 
-        {/* Subject table — Phase 6 makes the rightmost column curriculum-
-            aware. Senior: HL/OL · current grade · target grade · Pts Gain.
+        {/* Each subject — Phase 6 makes the last figure curriculum-aware.
+            Senior: HL/OL · current grade · target grade · Pts gain.
             Junior: Common (or HL/OL for English/Irish/Maths) · current
-            band · target band · Bands Gained. Level chip is shown for both
+            band · target band · Bands gained. The level is shown for both
             but defaults to "Common" for JC subjects without a level choice. */}
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-zinc-200 dark:border-hairline">
-                <th className="text-left py-2.5 px-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Subject</th>
-                <th className="text-center py-2.5 px-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Level</th>
-                <th className="text-center py-2.5 px-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Current</th>
-                <th className="text-center py-2.5 px-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Target</th>
-                <th className="text-center py-2.5 px-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">{isJunior ? 'Bands Gained' : 'Pts Gain'}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {student.subjectProfile.subjects.map((sub, idx) => {
-                // Senior path
-                const isMaths = LC_SUBJECTS.find(lc => lc.name === sub.subjectName)?.isMaths ?? false;
-                const currentPts = sub.currentGrade ? getPointsForGrade(sub.currentGrade, isMaths) : 0;
-                const targetPts = sub.targetGrade ? getPointsForGrade(sub.targetGrade, isMaths) : 0;
-                const gain = targetPts - currentPts;
-                // JC path
-                const jcBands = ['Distinction', 'Higher Merit', 'Merit', 'Achieved', 'Partially Achieved', 'Not Graded'];
-                const currentBandIdx = sub.currentBand ? jcBands.indexOf(sub.currentBand) : -1;
-                const targetBandIdx = sub.targetBand ? jcBands.indexOf(sub.targetBand) : -1;
-                // Bands-gained = how many bands lower the target is from current
-                // (positive = improvement, since lower index = better band)
-                const bandsGained = (currentBandIdx >= 0 && targetBandIdx >= 0)
-                  ? currentBandIdx - targetBandIdx
-                  : 0;
-                const levelLabel = sub.level === 'higher' ? 'HL' : sub.level === 'ordinary' ? 'OL' : 'Common';
-                const levelClass = sub.level === 'higher'
-                  ? 'bg-blue-50 text-blue-700 dark:bg-blue-900/20 dark:text-blue-400'
-                  : sub.level === 'ordinary'
-                  ? 'bg-zinc-100 text-zinc-600 dark:bg-surface-soft dark:text-zinc-400'
-                  : 'bg-zinc-50 text-zinc-500 dark:bg-zinc-800/50 dark:text-zinc-500';
-                return (
-                  <tr key={sub.subjectName} className={`border-b border-zinc-100 dark:border-zinc-800/50 ${idx % 2 === 1 ? 'bg-zinc-50/50 dark:bg-zinc-800/10' : ''}`}>
-                    <td className="py-2.5 px-3 text-zinc-800 dark:text-white font-medium">{sub.subjectName}</td>
-                    <td className="py-2.5 px-3 text-center">
-                      <span className={`inline-flex px-2 py-0.5 rounded-md text-[10px] font-bold uppercase ${levelClass}`}>
-                        {levelLabel}
-                      </span>
-                    </td>
-                    <td className="py-2.5 px-3 text-center text-zinc-600 dark:text-zinc-300">{isJunior ? (sub.currentBand ?? '—') : (sub.currentGrade ?? '—')}</td>
-                    <td className="py-2.5 px-3 text-center text-zinc-600 dark:text-zinc-300">{isJunior ? (sub.targetBand ?? '—') : (sub.targetGrade ?? '—')}</td>
-                    <td className="py-2.5 px-3 text-center">
-                      {isJunior ? (
-                        <span className={`inline-flex px-2 py-0.5 rounded-md text-xs font-semibold ${
-                          bandsGained > 0
-                            ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-900/20 dark:text-emerald-400'
-                            : bandsGained < 0
-                            ? 'bg-rose-50 text-rose-700 dark:bg-rose-900/20 dark:text-rose-400'
-                            : 'text-zinc-400'
-                        }`}>
-                          {bandsGained > 0 ? `+${bandsGained}` : bandsGained}
-                        </span>
-                      ) : (
-                        <span className={`inline-flex px-2 py-0.5 rounded-md text-xs font-semibold ${
-                          gain > 0
-                            ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-900/20 dark:text-emerald-400'
-                            : gain < 0
-                            ? 'bg-rose-50 text-rose-700 dark:bg-rose-900/20 dark:text-rose-400'
-                            : 'text-zinc-400'
-                        }`}>
-                          {gain > 0 ? `+${gain}` : gain === 0 ? '0' : gain}
-                        </span>
-                      )}
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+        <div className="gc8-sd-subjects">
+          {student.subjectProfile.subjects.map(sub => {
+            // Senior path
+            const isMaths = LC_SUBJECTS.find(lc => lc.name === sub.subjectName)?.isMaths ?? false;
+            const currentPts = sub.currentGrade ? getPointsForGrade(sub.currentGrade, isMaths) : 0;
+            const targetPts = sub.targetGrade ? getPointsForGrade(sub.targetGrade, isMaths) : 0;
+            const gain = targetPts - currentPts;
+            // JC path
+            const jcBands = ['Distinction', 'Higher Merit', 'Merit', 'Achieved', 'Partially Achieved', 'Not Graded'];
+            const currentBandIdx = sub.currentBand ? jcBands.indexOf(sub.currentBand) : -1;
+            const targetBandIdx = sub.targetBand ? jcBands.indexOf(sub.targetBand) : -1;
+            // Bands-gained = how many bands lower the target is from current
+            // (positive = improvement, since lower index = better band)
+            const bandsGained = (currentBandIdx >= 0 && targetBandIdx >= 0)
+              ? currentBandIdx - targetBandIdx
+              : 0;
+            const levelLabel = sub.level === 'higher' ? 'HL' : sub.level === 'ordinary' ? 'OL' : 'Common';
+            const now = isJunior ? (sub.currentBand ?? '—') : (sub.currentGrade ?? '—');
+            const target = isJunior ? (sub.targetBand ?? '—') : (sub.targetGrade ?? '—');
+            const gainWords = isJunior
+              ? `Bands gained ${bandsGained > 0 ? `+${bandsGained}` : bandsGained}`
+              : `Pts gain ${gain > 0 ? `+${gain}` : gain === 0 ? '0' : gain}`;
+            // The thin bar: how far the current grade (band) is toward the target, drawn only
+            // when both are set. The words beside it say the grades themselves.
+            const lastBand = jcBands.length - 1;
+            const share = isJunior
+              ? (currentBandIdx >= 0 && targetBandIdx >= 0 ? Math.min(1, (lastBand - currentBandIdx) / Math.max(1, lastBand - targetBandIdx)) : null)
+              : (sub.currentGrade && sub.targetGrade ? (targetPts > 0 ? Math.min(1, currentPts / targetPts) : 1) : null);
+            return (
+              <div key={sub.subjectName} className="gc8-sd-subject">
+                <SubjectAvatar bare subject={sub.subjectName} className="gc8-art gc8-art--32" />
+                <div className="gc8-sd-subject-copy">
+                  <div className="gc8-who">
+                    <span className="gc8-person">{sub.subjectName}</span>
+                    <span className="gc8-meta">{now} now · {target} target</span>
+                  </div>
+                  {share !== null && (
+                    <span className="gc8-bar gc8-bar--thin" aria-hidden="true"><i style={{ width: `${share * 100}%` }} /></span>
+                  )}
+                  <span className="gc8-meta">{levelLabel} · {gainWords}</span>
+                </div>
+              </div>
+            );
+          })}
         </div>
-      </div>
+      </section>
     );
   };
 
-  // ─── North Star Card ────────────────────────────────────────────────
+  // ─── North Star ─────────────────────────────────────────────────────
 
   const renderNorthStar = () => {
     if (!student.northStar) {
       return (
-        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
-          <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-2">North Star</h3>
-          <p className="text-sm text-zinc-400 italic">Not set yet.</p>
-        </div>
+        <section className="gc8-sec gc8-sd-sec">
+          <SecHead title="North Star" />
+          <p className="gc8-sub">Not set yet.</p>
+        </section>
       );
     }
 
     const ns = student.northStar;
     const catOption = NORTH_STAR_CATEGORIES.find(c => c.id === ns.category);
-    const catColors = CATEGORY_COLORS[ns.category];
     const visionItems = ns.visionBoard
       .map(id => VISION_CARDS.find(v => v.id === id))
       .filter(Boolean);
 
     return (
-      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
-        <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-3">North Star</h3>
-        {catOption && (
-          <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium border mb-3 ${catColors.bg} ${catColors.border} ${catColors.text}`}>
-            {catOption.label}
-          </span>
-        )}
+      <section className="gc8-sec gc8-sd-sec">
+        <SecHead title="North Star" />
+        {catOption && <p className="gc8-label">{catOption.label}</p>}
         {ns.statement && (
-          <blockquote className="border-l-2 border-[rgba(var(--accent),0.4)] pl-4 my-3 text-sm text-zinc-600 dark:text-zinc-300 italic font-serif">
-            &ldquo;{ns.statement}&rdquo;
-          </blockquote>
+          <p className="gc8-sub gc8-strong">&ldquo;{ns.statement}&rdquo;</p>
         )}
         {visionItems.length > 0 && (
-          <div className="flex flex-wrap gap-2 mt-3">
-            {visionItems.map(v => (
-              <span key={v!.id} className="px-2.5 py-1 rounded-lg bg-zinc-100 dark:bg-surface-soft text-xs text-zinc-600 dark:text-zinc-400">
-                {v!.label}
-              </span>
-            ))}
-          </div>
+          <p className="gc8-meta">{visionItems.map(v => v!.label).join(' · ')}</p>
         )}
-      </div>
+      </section>
     );
   };
 
-  // ─── Module Progress (collapsible with mini progress bars) ────────
+  // ─── Module progress (rows that open in place, thin ink bars) ────────
 
   const renderModuleProgress = () => (
-    <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
-      <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">Module Progress</h3>
-      <div className="space-y-2">
+    <section className="gc8-sec gc8-sd-sec">
+      <SecHead over="Learning progress" title="Module progress" />
+      <List>
         {CATEGORIES.map(cat => {
           // visibleCourses, not allCourses — the per-subject Decode modules
           // for subjects this student doesn't take were being listed as
@@ -647,87 +496,73 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           const isExpanded = expandedCategories.has(cat.id);
 
           return (
-            <div key={cat.id}>
-              <button
-                onClick={() => toggleCategory(cat.id)}
-                className="w-full flex items-center justify-between py-2.5 px-2 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/30 transition-colors group"
-              >
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-1">
-                    {isExpanded ? <ChevronDown size={14} className="text-zinc-400 shrink-0" /> : <ChevronRight size={14} className="text-zinc-400 shrink-0" />}
-                    <div className={`w-2 h-2 rounded-full ${cat.dotColor} shrink-0`} />
-                    <p className="text-xs font-medium text-zinc-700 dark:text-zinc-300 truncate">{cat.title}</p>
-                    <span className="text-[10px] text-zinc-400 dark:text-zinc-500 shrink-0">{completedCount}/{catCourses.length} complete</span>
-                  </div>
-                  <div className="w-full bg-zinc-200 dark:bg-zinc-700 rounded-full h-1.5 ml-5">
-                    <div className={`h-1.5 rounded-full ${cat.color} transition-all`} style={{ width: `${catProgress}%` }} />
-                  </div>
-                </div>
-                <span className="text-xs font-bold text-zinc-500 dark:text-zinc-300 ml-3 shrink-0">{catProgress.toFixed(0)}%</span>
-              </button>
-
+            <React.Fragment key={cat.id}>
+              <Row
+                title={cat.title}
+                meta={`${completedCount}/${catCourses.length} complete`}
+                progress={catProgress / 100}
+                value={<Pct value={catProgress} />}
+                expanded={isExpanded}
+                onPress={() => toggleCategory(cat.id)}
+              />
               <AnimatePresence>
                 {isExpanded && (
-                  <MotionDiv
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.25, ease: CUSTOM_EASE }}
-                    className="overflow-hidden"
-                  >
-                    <div className="ml-5 mt-1 space-y-1.5 pb-2">
-                      {catCourses.map(course => {
-                        const p = student.progress[course.id];
-                        const unlocked = p?.unlockedSection ?? 0;
-                        const total = course.sectionsCount;
-                        const pct = total > 0 ? Math.min(100, (unlocked / total) * 100) : 0;
-                        const status = pct >= 100 ? 'Complete' : pct > 0 ? 'In Progress' : 'Not Started';
-                        const statusColor = pct >= 100 ? 'text-emerald-600 dark:text-emerald-400' : pct > 0 ? 'text-blue-600 dark:text-blue-400' : 'text-zinc-400';
-
-                        return (
-                          <div key={course.id} className="flex items-center gap-3 py-2 px-3 rounded-lg bg-zinc-50 dark:bg-zinc-800/30">
-                            <BookOpen size={12} className="text-zinc-400 shrink-0" />
-                            <p className="text-xs text-zinc-700 dark:text-zinc-300 flex-1 truncate">{course.title}</p>
-                            <div className="w-16 h-1.5 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden shrink-0">
-                              <div
-                                className={`h-full rounded-full ${cat.color} transition-all`}
-                                style={{ width: `${pct}%` }}
-                              />
-                            </div>
-                            <span className={`text-[10px] font-medium ${statusColor} shrink-0 w-16 text-right`}>{status}</span>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </MotionDiv>
+                  <li key="courses" className="gc8-sd-more">
+                    <MotionDiv
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.25, ease: CUSTOM_EASE }}
+                      style={{ overflow: 'hidden' }}
+                    >
+                      <List label={cat.title}>
+                        {catCourses.map(course => {
+                          const p = student.progress[course.id];
+                          const unlocked = p?.unlockedSection ?? 0;
+                          const total = course.sectionsCount;
+                          const pct = total > 0 ? Math.min(100, (unlocked / total) * 100) : 0;
+                          const courseStatus = pct >= 100 ? 'Complete' : pct > 0 ? 'In progress' : 'Not started';
+                          return (
+                            <Row
+                              key={course.id}
+                              title={course.title}
+                              progress={pct / 100}
+                              value={<span className={pct >= 100 ? 'gc8-strong' : undefined}>{courseStatus}</span>}
+                            />
+                          );
+                        })}
+                      </List>
+                    </MotionDiv>
+                  </li>
                 )}
               </AnimatePresence>
-            </div>
+            </React.Fragment>
           );
         })}
-      </div>
-    </div>
+      </List>
+    </section>
   );
 
-  // ─── Journey Simulator Result ─────────────────────────────────────
+  // ─── Journey Simulator result ─────────────────────────────────────
 
   const renderJourneyResult = () => {
+    const over = 'Engagement & wellbeing';
     if (!student.journeyResult) {
       return (
-        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
-          <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-2">Journey Simulator</h3>
-          <p className="text-sm text-zinc-400 italic">Not yet attempted.</p>
-        </div>
+        <section className="gc8-sec gc8-sd-sec">
+          <SecHead over={over} title="Journey Simulator" />
+          <p className="gc8-sub">Not yet attempted.</p>
+        </section>
       );
     }
 
     const jr = student.journeyResult;
     if (jr.scoringVersion !== JOURNEY_SCORING_VERSION) {
       return (
-        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
-          <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-2">Journey Simulator</h3>
-          <p className="text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">This result used the retired scoring model. The student will be prompted to complete the revised simulation before a new profile is shown.</p>
-        </div>
+        <section className="gc8-sec gc8-sd-sec">
+          <SecHead over={over} title="Journey Simulator" />
+          <p className="gc8-sub">This result used the retired scoring model. The student will be prompted to complete the revised simulation before a new profile is shown.</p>
+        </section>
       );
     }
     const archetype = ARCHETYPES[jr.endingId];
@@ -735,130 +570,109 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     const statKeys: CapabilityKey[] = [...CAPABILITY_KEYS];
 
     return (
-      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-6">
-        <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">Journey Simulator</h3>
+      <section className="gc8-sec gc8-sd-sec">
+        <SecHead over={over} title="Journey Simulator" />
 
-        {/* Archetype badge */}
         {archetype && (
-          <div className="mb-4">
-            <span className={`inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-semibold ${archetype.accentColor} ${archetype.accentBg}`}>
-              {archetype.title}
-            </span>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1.5 leading-relaxed">{archetype.description}</p>
+          <div className="gc8-sd-copy">
+            <p className="gc8-person">{archetype.title}</p>
+            <p className="gc8-sub">{archetype.description}</p>
           </div>
         )}
 
-        {/* Capability chart — energy is intentionally separate. */}
-        <div className="flex justify-center my-2">
+        {/* Capability chart — energy is intentionally separate. Drawn in ink. */}
+        <div className="gc8-sd-radar">
           <PentagonRadar
             values={statKeys.map(k => stats[k])}
             labels={statKeys.map(k => STAT_LABELS[k])}
             size={isTrayMode ? 220 : 300}
+            colors={{ fill: 'var(--surface-soft)', stroke: 'var(--ink-primary)' }}
           />
         </div>
 
         {/* Capability rows */}
-        <div className="space-y-2 mt-4">
-          {statKeys.map(key => {
-            return (
-              <div key={key} className="py-1.5">
-                <div className="flex items-center justify-between gap-3">
-                  <span className="text-sm text-zinc-700 dark:text-zinc-300">{STAT_LABELS[key]}</span>
-                  <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{stats[key]}/100</span>
-                </div>
-                <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-zinc-100 dark:bg-surface-soft">
-                  <div className="h-full rounded-full bg-[var(--accent-hex)]" style={{ width: `${Math.max(2, Math.min(100, stats[key]))}%` }} />
-                </div>
-              </div>
-            );
-          })}
-        </div>
-        <div className="mt-4 border-t border-zinc-200 pt-4 dark:border-hairline">
-          <div className="flex items-center justify-between gap-3">
-            <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">Energy reserve</span>
-            <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{stats.energy}/100</span>
+        <List>
+          {statKeys.map(key => (
+            <Row key={key} title={STAT_LABELS[key]} value={`${stats[key]}/100`} progress={stats[key] / 100} />
+          ))}
+        </List>
+        <div className="gc8-sd-copy">
+          <div className="gc8-who">
+            <span className="gc8-person">Energy reserve</span>
+            <span className="gc8-readout">{stats.energy}/100</span>
           </div>
-          <p className="mt-1.5 text-[11px] leading-relaxed text-zinc-400">A changing resource, not a capability grade. All scores are reflective simulation signals, not academic attainment or forecasts.</p>
+          <p className="gc8-meta">A changing resource, not a capability grade. All scores are reflective simulation signals, not academic attainment or forecasts.</p>
         </div>
-      </div>
+      </section>
     );
   };
 
-  // ─── Engagement: Streak + Points (2-col sub-grid) ─────────────────
+  // ─── Activity (30 days), then streak and points ─────────────────────
 
-  const renderEngagementCards = () => {
+  const renderActivity = () => {
     const streak = student.streak;
     const points = student.points;
     const totalEarned = points?.totalEarned ?? 0;
+    const currentStreak = streak?.currentStreak ?? 0;
 
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {/* Streak */}
-        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
-          <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-3">Streak</p>
-          <div className="flex items-center gap-3 mb-3">
-            <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${streak?.currentStreak ? 'bg-orange-50 dark:bg-accent/10' : 'bg-zinc-100 dark:bg-surface-soft'}`}>
-              <Flame size={24} className={streak?.currentStreak ? 'text-accent' : 'text-zinc-300 dark:text-zinc-600'} />
-            </div>
-            <span className="text-3xl font-bold text-zinc-900 dark:text-white">{streak?.currentStreak ?? 0}</span>
-            <span className="text-sm text-zinc-500">day{(streak?.currentStreak ?? 0) !== 1 ? 's' : ''}</span>
-          </div>
-          <div className="space-y-1 text-xs text-zinc-500 dark:text-zinc-400">
-            <p>Longest streak: <span className="font-medium text-zinc-700 dark:text-zinc-300">{streak?.longestStreak ?? 0}</span></p>
-            <p>Last active: <span className="font-medium text-zinc-700 dark:text-zinc-300">{streak?.lastActiveDate || 'Never'}</span></p>
-          </div>
+      <section className="gc8-sec gc8-sd-sec">
+        <SecHead title="Activity (30 days)" />
+        <svg viewBox="0 0 300 60" className="gc8-sd-act" preserveAspectRatio="none">
+          {engagementTimeline.map((d, i) => {
+            const barW = 300 / 30 - 1.5;
+            const x = i * (300 / 30) + 0.75;
+            const h = d.count > 0 ? Math.max(4, (d.count / maxBlocks) * 52) : 2;
+            return (
+              <rect
+                key={d.date}
+                x={x}
+                y={60 - h}
+                width={barW}
+                height={h}
+                rx={1.5}
+                className={d.count > 0 ? 'gc8-sd-on' : undefined}
+              >
+                <title>{d.date}: {d.count} blocks</title>
+              </rect>
+            );
+          })}
+        </svg>
+        <div className="gc8-sd-ends gc8-meta">
+          <span>{engagementTimeline[0]?.date}</span>
+          <span>{engagementTimeline[engagementTimeline.length - 1]?.date}</span>
         </div>
+        <p className="gc8-totals">
+          <span><b>{totalBlocks}</b> blocks completed</span>
+          <span><b>{activeDays}</b> active days</span>
+        </p>
 
-        {/* Points Earned */}
-        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
-          <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-3">Points Earned</p>
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-xl bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center">
-              <Coins size={24} className="text-amber-500" />
-            </div>
-            <span className="text-3xl font-bold text-zinc-900 dark:text-white">{totalEarned}</span>
-            <span className="text-sm text-zinc-500">total</span>
+        <div className="gc8-figrows gc8-sd-words">
+          <div>
+            <span className="gc8-figrows-col">
+              <span className="gc8-sub">Streak</span>
+              <span className="gc8-meta">Longest streak: {streak?.longestStreak ?? 0} · Last active: {streak?.lastActiveDate || 'Never'}</span>
+            </span>
+            <Fig className="gc8-num" value={currentStreak} unit={currentStreak !== 1 ? 'days' : 'day'} />
+          </div>
+          <div>
+            <span className="gc8-sub">Points earned</span>
+            <Fig className="gc8-num" value={totalEarned} unit="total" />
           </div>
         </div>
-      </div>
+      </section>
     );
   };
 
-  // ─── Engagement timeline (SVG bar chart) ────────────────────────────
-
-  const renderEngagementTimeline = () => (
-    <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
-      <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-3">Activity (30 Days)</p>
-      <svg viewBox="0 0 300 60" className="w-full h-16" preserveAspectRatio="none">
-        {engagementTimeline.map((d, i) => {
-          const barW = 300 / 30 - 1.5;
-          const x = i * (300 / 30) + 0.75;
-          const h = d.count > 0 ? Math.max(4, (d.count / maxBlocks) * 52) : 2;
-          return (
-            <rect
-              key={d.date}
-              x={x}
-              y={60 - h}
-              width={barW}
-              height={h}
-              rx={1.5}
-              className={d.count > 0 ? 'fill-[var(--accent-hex)]' : 'fill-zinc-200 dark:fill-zinc-700'}
-            >
-              <title>{d.date}: {d.count} blocks</title>
-            </rect>
-          );
-        })}
-      </svg>
-      <div className="flex justify-between mt-2">
-        <span className="text-[10px] text-zinc-400">{engagementTimeline[0]?.date}</span>
-        <span className="text-[10px] text-zinc-400">{engagementTimeline[engagementTimeline.length - 1]?.date}</span>
-      </div>
-      <div className="flex gap-4 mt-2 text-xs text-zinc-500 dark:text-zinc-400">
-        <span><span className="font-medium text-zinc-700 dark:text-zinc-300">{totalBlocks}</span> blocks completed</span>
-        <span><span className="font-medium text-zinc-700 dark:text-zinc-300">{activeDays}</span> active days</span>
-      </div>
-    </div>
-  );
+  // ─── Insights ───────────────────────────────────────────────────────
+  //
+  // The "Insights" label sits over the first of these four that has something to show.
+  const insightsLabel: { word: string | undefined } = { word: 'Insights' };
+  const takeInsightsLabel = () => {
+    const word = insightsLabel.word;
+    insightsLabel.word = undefined;
+    return word;
+  };
 
   // ─── Insights: Career Direction (FF picks) ─────────────────────────────
 
@@ -873,32 +687,28 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     // present an arbitrary order as a ranking. Only 'ranked' is a real
     // ranking, and 'legacy' comes from the retired tool so it may be stale.
     const isRanking = ff.source === 'ranked' || ff.source === 'legacy';
-    const heading = ff.source === 'saved' ? 'Courses they saved' : 'Career Direction';
+    const heading = ff.source === 'saved' ? 'Courses they saved' : 'Career direction';
     const completed = ff.completedAt ? new Date(ff.completedAt) : null;
 
     return (
-      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
-        <div className="flex items-center gap-2 mb-1">
-          <Compass size={16} className="text-blue-500" />
-          <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">{heading}</h4>
-        </div>
-        <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mb-3">
+      <section className="gc8-sec gc8-sd-sec">
+        <SecHead over={takeInsightsLabel()} title={heading} />
+        <p className="gc8-meta">
           {ff.source === 'saved' ? 'Their own picks, in the order they saved them' : ff.source === 'ranked' ? 'Top matches from Future Finder' : 'From the earlier Future Finder — may be out of date'}
           {completed && !isNaN(completed.getTime()) ? ` · ${completed.toLocaleDateString('en-IE', { day: 'numeric', month: 'short', year: 'numeric' })}` : ''}
         </p>
-        <div className="space-y-2">
+        <List>
           {courses.map((c, i) => (
-            <div key={c.code} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800/30">
-              <span className="text-xs font-bold text-zinc-400 w-5 text-center">{isRanking ? i + 1 : '·'}</span>
-              <div className="flex-1 min-w-0">
-                <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 truncate">{c.title}</p>
-                <p className="text-[10px] text-zinc-400 dark:text-zinc-500">{c.institution} &middot; Level {c.level}</p>
-              </div>
-              <span className="text-xs font-bold text-zinc-600 dark:text-zinc-300 shrink-0">{c.typicalPoints} pts</span>
-            </div>
+            <Row
+              key={c.code}
+              lead={isRanking ? i + 1 : '·'}
+              title={c.title}
+              meta={`${c.institution} · Level ${c.level}`}
+              value={`${c.typicalPoints} pts`}
+            />
           ))}
-        </div>
-      </div>
+        </List>
+      </section>
     );
   };
 
@@ -914,54 +724,49 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     const prog = compassProgress;
     const updated = prog.updatedAt ? new Date(prog.updatedAt) : null;
     return (
-      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
-        <div className="flex items-center gap-2 mb-3">
-          <Compass size={16} className="text-teal-500" />
-          <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">College Compass</h4>
-          <span className="ml-auto text-xs font-bold text-zinc-500 dark:text-zinc-400">{prog.doneItems}/{prog.totalItems} done</span>
-        </div>
-        <div className="h-2 rounded-full bg-zinc-100 dark:bg-surface-soft overflow-hidden mb-1">
-          <div className="h-full rounded-full bg-teal-500" style={{ width: `${prog.percentDone}%` }} />
-        </div>
-        <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mb-3">
+      <section className="gc8-sec gc8-sd-sec">
+        <SecHead over={takeInsightsLabel()} title="College Compass" end={`${prog.doneItems}/${prog.totalItems} done`} />
+        <span className="gc8-bar" aria-hidden="true"><i style={{ width: `${prog.percentDone}%` }} /></span>
+        <p className="gc8-meta">
           {prog.percentDone}% complete{prog.inProgressItems ? ` · ${prog.inProgressItems} in progress` : ''}{updated ? ` · updated ${updated.toLocaleDateString('en-IE', { day: 'numeric', month: 'short' })}` : ''}
         </p>
-        <div className="space-y-1.5">
+        <List>
           {prog.stops.map(s => {
             if (s.dismissed) {
-              return (
-                <div key={s.stopId} className="flex items-center gap-2 px-3 py-2 rounded-lg bg-zinc-50 dark:bg-zinc-800/30">
-                  <span className="text-xs font-semibold text-zinc-400 dark:text-zinc-500 flex-1 truncate">{s.title}</span>
-                  <span className="text-[10px] text-zinc-400 dark:text-zinc-500 italic shrink-0">Marked not applicable</span>
-                </div>
-              );
+              return <Row key={s.stopId} className="gc8-sd-dim" title={s.title} meta="Marked not applicable" />;
             }
             const allDone = s.total > 0 && s.done === s.total;
+            const isOpen = openStops.has(s.stopId);
             return (
-              <details key={s.stopId} className="group rounded-lg bg-zinc-50 dark:bg-zinc-800/30 overflow-hidden">
-                <summary className="flex items-center gap-2 px-3 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                  <ChevronRight size={13} className="text-zinc-400 shrink-0 transition-transform group-open:rotate-90" />
-                  <span className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 flex-1 truncate">{s.title}</span>
-                  {s.inProgress > 0 && <span className="text-[9px] font-bold uppercase tracking-wide text-amber-500 shrink-0">{s.inProgress} in prog</span>}
-                  <span className={`text-xs font-bold shrink-0 ${allDone ? 'text-emerald-500' : 'text-zinc-500 dark:text-zinc-400'}`}>{s.done}/{s.total}</span>
-                </summary>
-                <div className="px-3 pb-2.5 pt-0.5 space-y-1.5">
-                  {s.items.map(it => (
-                    <div key={it.key} className="flex items-center gap-2">
-                      {it.status === 'done'
-                        ? <CheckCircle size={13} className="text-emerald-500 shrink-0" />
-                        : it.status === 'in-progress'
-                          ? <MinusCircle size={13} className="text-amber-500 shrink-0" />
-                          : <span className="w-[13px] h-[13px] rounded-full border border-zinc-300 dark:border-zinc-600 shrink-0" />}
-                      <span className={`text-[11px] ${it.status === 'done' ? 'text-zinc-400 dark:text-zinc-500 line-through' : it.status === 'in-progress' ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-600 dark:text-zinc-300'}`}>{it.label}</span>
-                    </div>
-                  ))}
-                </div>
-              </details>
+              <React.Fragment key={s.stopId}>
+                <Row
+                  title={s.title}
+                  meta={s.inProgress > 0 ? `${s.inProgress} in progress` : undefined}
+                  value={<>{allDone ? <Check className="ui-icon gc8-sd-tick" width={16} height={16} strokeWidth={2} aria-label="All done" /> : null}{s.done}/{s.total}</>}
+                  expanded={isOpen}
+                  onPress={() => toggleStop(s.stopId)}
+                />
+                {isOpen && (
+                  <li className="gc8-sd-more">
+                    <ul className="gc8-sd-items">
+                      {s.items.map(it => (
+                        <li key={it.key} data-state={it.status}>
+                          {it.status === 'done'
+                            ? <CheckCircle className="gc8-sd-ok" width={14} height={14} strokeWidth={2} aria-label="Done" />
+                            : it.status === 'in-progress'
+                              ? <MinusCircle width={14} height={14} strokeWidth={2} aria-label="In progress" />
+                              : <span className="gc8-sd-ring" aria-hidden="true" />}
+                          <span className="gc8-sd-itemtext">{it.label}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                )}
+              </React.Fragment>
             );
           })}
-        </div>
-      </div>
+        </List>
+      </section>
     );
   };
 
@@ -972,32 +777,27 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     const sorted = [...student.mockResults].sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''));
 
     return (
-      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
-        <div className="flex items-center gap-2 mb-3">
-          <BarChart3 size={16} className="text-amber-500" />
-          <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">Mock Trajectory</h4>
-        </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-zinc-200 dark:border-hairline">
-                <th className="text-left py-2 px-2 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Subject</th>
-                <th className="text-center py-2 px-2 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Grade</th>
-                <th className="text-right py-2 px-2 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Date</th>
+      <section className="gc8-sec gc8-sd-sec">
+        <SecHead over={takeInsightsLabel()} title="Mock trajectory" />
+        <table className="gc8-sd-table">
+          <thead>
+            <tr>
+              <th className="gc8-label">Subject</th>
+              <th className="gc8-label">Grade</th>
+              <th className="gc8-label">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sorted.map((m) => (
+              <tr key={m.id}>
+                <td>{m.subject}</td>
+                <td className="gc8-readout">{m.grade}</td>
+                <td className="gc8-readout">{m.date}</td>
               </tr>
-            </thead>
-            <tbody>
-              {sorted.map((m) => (
-                <tr key={m.id} className="border-b border-zinc-100 dark:border-zinc-800/50">
-                  <td className="py-2 px-2 text-xs text-zinc-700 dark:text-zinc-300">{m.subject}</td>
-                  <td className="py-2 px-2 text-center text-xs font-semibold text-zinc-800 dark:text-zinc-200">{m.grade}</td>
-                  <td className="py-2 px-2 text-right text-[10px] text-zinc-400 dark:text-zinc-500">{m.date}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
+            ))}
+          </tbody>
+        </table>
+      </section>
     );
   };
 
@@ -1019,30 +819,23 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     if (entries.length === 0) return null;
 
     return (
-      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
-        <div className="flex items-center gap-2 mb-3">
-          <Brain size={16} className="text-rose-500" />
-          <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">Struggle Areas</h4>
-        </div>
-        <div className="space-y-3">
+      <section className="gc8-sec gc8-sd-sec">
+        <SecHead over={takeInsightsLabel()} title="Struggle areas" />
+        <div className="gc8-sd-struggle">
           {entries.map(([subject, topics]) => (
             <div key={subject}>
-              <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 mb-1">{subject}</p>
-              <div className="flex flex-wrap gap-1.5">
+              <p className="gc8-person">{subject}</p>
+              <ul>
                 {topics.map(t => (
-                  <span key={t} className="px-2 py-0.5 rounded-md bg-rose-50 dark:bg-rose-900/20 border border-rose-200 dark:border-rose-800/30 text-[10px] text-rose-700 dark:text-rose-400">
-                    {t}
-                  </span>
+                  <li key={t} className="gc8-sub">{t}</li>
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>
-      </div>
+      </section>
     );
   };
-
-  // ─── Render ─────────────────────────────────────────────────────────
 
   // ─── Quick Actions (Recommend / Kudos) ───────────────────────────────
 
@@ -1094,298 +887,167 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     setKudosMessageId('');
   };
 
-  const renderQuickActions = () => (
-    <div className="flex items-center gap-2">
-      <button
-        onClick={() => setShowRecommendModal(true)}
-        className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 text-xs font-semibold hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors border border-indigo-200/60 dark:border-indigo-800/40"
-      >
-        <Lightbulb size={14} />
-        Recommend Tool
-      </button>
-      <button
-        onClick={() => setShowKudosModal(true)}
-        className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 text-xs font-semibold hover:bg-emerald-100 dark:hover:bg-emerald-900/30 transition-colors border border-emerald-200/60 dark:border-emerald-800/40"
-      >
-        <Heart size={14} />
-        Send Encouragement
-      </button>
-    </div>
+  // Change flag: today's flag bar (Flagged … Unflag), as a menu that can also set the flag.
+  const flagMenu = gcFlags ? (
+    <MenuPanel label="Change flag" face="Change flag" buttonClassName="ui-btn" side={wide ? 'bottom' : 'top'}>
+      <MenuRadioRows<FlagPriority>
+        label={flagData ? 'Edit student flag' : 'Flag student'}
+        value={(flagData?.priority ?? '') as FlagPriority}
+        onChange={priority => { void (flagData ? gcFlags.updateFlagPriority(student.user.uid, priority) : gcFlags.flagStudent(student.user.uid, priority)); }}
+        options={[{ value: 'high', label: 'Flagged, high priority' }, { value: 'normal', label: 'Flagged, normal priority' }]}
+      />
+      {flagData && <MenuAction plain title="Remove flag" onPress={() => { void gcFlags.unflagStudent(student.user.uid); }} />}
+    </MenuPanel>
+  ) : null;
+
+  const renderActions = () => (
+    <>
+      <Button kind="main" size="lg" block arrow="forward" onClick={() => setShowKudosModal(true)}>Send encouragement</Button>
+      {flagMenu ? (
+        <div className="gc8-pair">
+          <Button onClick={() => setShowRecommendModal(true)}>Recommend a tool</Button>
+          {flagMenu}
+        </div>
+      ) : (
+        <Button block onClick={() => setShowRecommendModal(true)}>Recommend a tool</Button>
+      )}
+    </>
   );
 
   const renderModals = () => (
     <>
-      {/* Recommend Tool Modal */}
-      <AnimatePresence>
-        {showRecommendModal && (
-          <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isSendingAction && setShowRecommendModal(false)}>
-            <MotionDiv
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              className="bg-white dark:bg-surface-paper rounded-2xl border border-zinc-200 dark:border-hairline p-6 max-w-sm w-full shadow-2xl"
-              onClick={(e: React.MouseEvent) => e.stopPropagation()}
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center">
-                  <Lightbulb size={20} className="text-indigo-500" />
-                </div>
-                <div>
-                  <h3 className="text-sm font-semibold text-zinc-800 dark:text-white">Recommend a Tool</h3>
-                  <p className="text-xs text-zinc-500">for {student.user.name}</p>
-                </div>
-              </div>
-              <div className="space-y-3 max-h-48 overflow-y-auto mb-3">
-                {/* Filter to tools available to this student's curriculum so
-                    a GC can't recommend a senior-only tool to a JC student. */}
-                {INNOVATION_TOOLS
-                  .filter(t => t.curriculum === 'both' || t.curriculum === (isJunior ? 'junior' : 'senior'))
-                  .map(tool => (
-                  <button
+      {/* Recommend a tool */}
+      <Sheet
+        open={showRecommendModal}
+        onClose={() => { if (!isSendingAction) setShowRecommendModal(false); }}
+        title="Recommend a tool"
+        meta={`For ${name}`}
+        footer={
+          <Button
+            kind="main"
+            size="lg"
+            block
+            missing={!recommendToolId ? { sentence: 'Choose a tool to recommend.', goTo: recommendToolsRef } : undefined}
+            onClick={() => { if (!isSendingAction) void handleSendRecommendation(); }}
+          >
+            {isSendingAction ? 'Sending...' : 'Send'}
+          </Button>
+        }
+      >
+        <div className="gc8-sheet-body">
+          <div className="gc8-sheet-group" ref={recommendToolsRef}>
+            <p className="gc8-label">Tool</p>
+            <div className="gc8-msgs" role="radiogroup" aria-label="Tool">
+              {/* Filter to tools available to this student's curriculum so
+                  a GC can't recommend a senior-only tool to a JC student. */}
+              {INNOVATION_TOOLS
+                .filter(t => t.curriculum === 'both' || t.curriculum === (isJunior ? 'junior' : 'senior'))
+                .map(tool => (
+                  <ChoiceTile
                     key={tool.id}
+                    kind="one"
+                    chosen={recommendToolId === tool.id}
+                    label={isJunior && tool.jcTitle ? tool.jcTitle : tool.title}
                     onClick={() => setRecommendToolId(tool.id)}
-                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${recommendToolId === tool.id ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 font-medium' : 'hover:bg-zinc-50 dark:hover:bg-surface-soft text-zinc-700 dark:text-zinc-300'}`}
-                  >
-                    {isJunior && tool.jcTitle ? tool.jcTitle : tool.title}
-                  </button>
+                  />
                 ))}
-              </div>
-              <p className="text-[11px] font-semibold uppercase tracking-wide text-zinc-400 mb-1.5">Add a note (optional)</p>
-              <div className="space-y-1 mb-3">
-                {STAFF_RECOMMENDATION_NOTES.map(note => (
-                  <button
-                    key={note.id}
-                    type="button"
-                    aria-pressed={recommendNoteId === note.id}
-                    onClick={() => setRecommendNoteId(recommendNoteId === note.id ? '' : note.id)}
-                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${recommendNoteId === note.id ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 font-medium' : 'hover:bg-zinc-50 dark:hover:bg-surface-soft text-zinc-700 dark:text-zinc-300'}`}
-                  >
-                    {note.text}
-                  </button>
-                ))}
-              </div>
-              <div className="flex gap-2">
-                <button onClick={() => setShowRecommendModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors">
-                  Cancel
-                </button>
-                <button
-                  onClick={handleSendRecommendation}
-                  disabled={!recommendToolId || isSendingAction}
-                  className="flex-1 py-2 rounded-xl text-sm font-medium bg-indigo-500 text-white hover:bg-indigo-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                >
-                  {isSendingAction ? 'Sending...' : 'Send'}
-                </button>
-              </div>
-            </MotionDiv>
+            </div>
           </div>
-        )}
-      </AnimatePresence>
+          <div className="gc8-sheet-group">
+            <p className="gc8-label">Add a note (optional)</p>
+            <div className="gc8-msgs" role="radiogroup" aria-label="Add a note (optional)">
+              {STAFF_RECOMMENDATION_NOTES.map(note => (
+                <ChoiceTile
+                  key={note.id}
+                  kind="one"
+                  chosen={recommendNoteId === note.id}
+                  label={note.text}
+                  onClick={() => setRecommendNoteId(recommendNoteId === note.id ? '' : note.id)}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </Sheet>
 
-      {/* Send Encouragement Modal */}
-      <AnimatePresence>
-        {showKudosModal && (
-          <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isSendingAction && setShowKudosModal(false)}>
-            <MotionDiv
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              className="bg-white dark:bg-surface-paper rounded-2xl border border-zinc-200 dark:border-hairline p-6 max-w-sm w-full shadow-2xl"
-              onClick={(e: React.MouseEvent) => e.stopPropagation()}
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center">
-                  <Heart size={20} className="text-emerald-500" />
-                </div>
-                <div>
-                  <h3 className="text-sm font-semibold text-zinc-800 dark:text-white">Send Encouragement</h3>
-                  <p className="text-xs text-zinc-500">to {student.user.name}</p>
-                </div>
-              </div>
-              <div className="space-y-1 mb-3 max-h-64 overflow-y-auto">
-                {STAFF_ENCOURAGEMENT.map(message => (
-                  <button
-                    key={message.id}
-                    type="button"
-                    aria-pressed={kudosMessageId === message.id}
-                    onClick={() => setKudosMessageId(message.id)}
-                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${kudosMessageId === message.id ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 font-medium' : 'hover:bg-zinc-50 dark:hover:bg-surface-soft text-zinc-700 dark:text-zinc-300'}`}
-                  >
-                    {message.text}
-                  </button>
-                ))}
-              </div>
-              <div className="flex gap-2">
-                <button onClick={() => setShowKudosModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors">
-                  Cancel
-                </button>
-                <button
-                  onClick={handleSendKudos}
-                  disabled={!isKnownStaffMessage(kudosMessageId) || isSendingAction}
-                  className="flex-1 py-2 rounded-xl text-sm font-medium bg-emerald-500 text-white hover:bg-emerald-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                >
-                  {isSendingAction ? 'Sending...' : 'Send'}
-                </button>
-              </div>
-            </MotionDiv>
+      {/* Send encouragement */}
+      <Sheet
+        open={showKudosModal}
+        onClose={() => { if (!isSendingAction) setShowKudosModal(false); }}
+        title="Send encouragement"
+        meta={`To ${name}`}
+        footer={
+          <Button
+            kind="main"
+            size="lg"
+            block
+            missing={!isKnownStaffMessage(kudosMessageId) ? { sentence: 'Choose a message.', goTo: kudosMessagesRef } : undefined}
+            onClick={() => { if (!isSendingAction) void handleSendKudos(); }}
+          >
+            {isSendingAction ? 'Sending...' : 'Send'}
+          </Button>
+        }
+      >
+        <div className="gc8-sheet-body">
+          <div className="gc8-sheet-group" ref={kudosMessagesRef}>
+            <p className="gc8-label">Message</p>
+            <div className="gc8-msgs" role="radiogroup" aria-label="Message">
+              {STAFF_ENCOURAGEMENT.map(message => (
+                <ChoiceTile
+                  key={message.id}
+                  kind="one"
+                  chosen={kudosMessageId === message.id}
+                  label={message.text}
+                  onClick={() => setKudosMessageId(message.id)}
+                />
+              ))}
+            </div>
           </div>
-        )}
-      </AnimatePresence>
+        </div>
+      </Sheet>
     </>
   );
 
-  const flagData = gcFlags?.getFlagData(student.user.uid);
+  // ─── Render ─────────────────────────────────────────────────────────
+  //
+  // One layout. The dashboard only ever opens the tray (isTrayMode); the old
+  // full-page branch drew the same sections in a grid, so it now draws this too.
 
-  const renderFlagBanner = () => {
-    if (!flagData) return null;
-    const isHigh = flagData.priority === 'high';
-    // Semantic banner: warning (amber) when high priority, normal (green) otherwise.
-    const bannerColor = isHigh ? '#D97706' : '#3A8D5F';
-    const bannerBg = isHigh ? 'rgba(217,119,6,0.08)' : 'rgba(58,141,95,0.08)';
-    return (
-      <div className="flex items-center gap-3 px-6 py-2.5" style={{ backgroundColor: bannerBg }} role="status" aria-label={`Student is ${isHigh ? 'high priority' : ''} flagged`}>
-        <Flag size={13} fill={bannerColor} style={{ color: bannerColor }} className="shrink-0" aria-hidden="true" />
-        <span className="text-xs font-semibold" style={{ color: bannerColor }}>
-          {isHigh ? 'High Priority' : 'Flagged'}
-        </span>
-        <span className="flex-1" />
-        <button
-          onClick={() => gcFlags?.unflagStudent(student.user.uid)}
-          className="text-xs font-medium shrink-0 px-2 py-1 rounded-md hover:bg-zinc-200/50 dark:hover:bg-zinc-700/50 transition-colors"
-          style={{ color: bannerColor }}
-          aria-label={`Remove flag from ${student.user.name}`}
-        >
-          Unflag
-        </button>
-      </div>
-    );
-  };
-
-  if (isTrayMode) {
-    return (
-      <div>
-        {renderTrayHeader()}
-        {renderFlagBanner()}
-        {renderModals()}
-        <div className="p-6 space-y-6">
-          {/* Quick Actions */}
-          {renderQuickActions()}
-
-          {/* Stat chips — same renderer as the full page, so the
-              curriculum guard can never drift out of the tray again. */}
-          {renderStatTiles()}
-
-          {/* Needs Support (at-risk / drifting — mirrors the full-mode panel).
-              Audit 2026-06-01: previously compared to 'needs-support', which is
-              not in the StudentStatus union, so this tray panel never rendered. */}
-          {(status === 'at-risk' || status === 'drifting') && supportReasons.length > 0 && (
-            <div className="rounded-xl bg-rose-50 dark:bg-rose-900/10 border border-rose-200 dark:border-rose-800/40 p-4">
-              <div className="flex items-start gap-2.5">
-                <AlertTriangle size={16} className="text-rose-500 mt-0.5 shrink-0" />
-                <div>
-                  <p className="text-sm font-semibold text-rose-700 dark:text-rose-400 mb-1">Needs Support</p>
-                  <ul className="space-y-1">
-                    {supportReasons.map((reason, i) => (
-                      <li key={i} className="text-xs text-rose-600 dark:text-rose-300/80">{reason}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Single-column stacked layout for tray */}
-          <div>
-            <SectionLabel label="Academic Profile" />
-            <div className="space-y-5">
-              {renderSubjectProfile()}
-              {renderNorthStar()}
-            </div>
-          </div>
-
-          <div>
-            <SectionLabel label="Learning Progress" />
-            {renderModuleProgress()}
-          </div>
-
-          <div>
-            <SectionLabel label="Engagement & Wellbeing" />
-            <div className="space-y-5">
-              {renderJourneyResult()}
-
-              {renderEngagementTimeline()}
-              {renderEngagementCards()}
-            </div>
-          </div>
-
-          {(student.futureFinder || student.mockResults || student.recentDebriefs || hasCompassActivity) && (
-            <div>
-              <SectionLabel label="Insights" />
-              <div className="space-y-5">
-                {renderCareerDirection()}
-                {renderCollegeCompass()}
-                {renderMockTrajectory()}
-                {renderStruggleAreas()}
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-    );
-  }
+  const moreMenu = onResetPassword || onDeleteStudent ? (
+    <MenuPanel
+      label={name}
+      buttonLabel={`More for ${name}`}
+      buttonClassName="gc8-acts"
+      className="gc8-rowmenu"
+      chevron={false}
+      face={<MoreHorizontal className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />}
+    >
+      {onResetPassword && <MenuAction plain title="Reset password" onPress={() => onResetPassword(student.user.uid)} />}
+      {onDeleteStudent && <MenuAction plain tone="danger" title="Delete account" onPress={() => onDeleteStudent(student.user)} />}
+    </MenuPanel>
+  ) : undefined;
 
   return (
-    <MotionDiv
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
-      className="space-y-8"
-    >
-      {renderHeader()}
-      {renderFlagBanner()}
+    <div className="gc8-sd">
+      <TopBar className="gc8-sd-bar" leave={{ kind: wide ? 'close' : 'back', onPress: onBack }} action={moreMenu} />
       {renderModals()}
+      <div className="gc8-sd-body">
+        {renderStudent()}
+        {wide && <div className="gc8-sd-acts">{renderActions()}</div>}
+        {renderNotices()}
+        {renderFigures()}
 
-      {/* Quick Actions */}
-      {renderQuickActions()}
-
-      {/* Academic Profile section */}
-      <div>
-        <SectionLabel label="Academic Profile" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {renderSubjectProfile()}
-          {renderNorthStar()}
-        </div>
-      </div>
-
-      {/* Learning Progress section */}
-      <div>
-        <SectionLabel label="Learning Progress" />
+        {renderSubjectProfile()}
+        {renderNorthStar()}
         {renderModuleProgress()}
+        {renderJourneyResult()}
+        {renderActivity()}
+        {renderCareerDirection()}
+        {renderCollegeCompass()}
+        {renderMockTrajectory()}
+        {renderStruggleAreas()}
       </div>
-
-      {/* Engagement & Wellbeing section */}
-      <div>
-        <SectionLabel label="Engagement & Wellbeing" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {renderJourneyResult()}
-          <div className="space-y-4">
-            {renderEngagementTimeline()}
-            {renderEngagementCards()}
-          </div>
-        </div>
-      </div>
-
-      {/* Insights section */}
-      {(student.futureFinder || student.mockResults || student.recentDebriefs || hasCompassActivity) && (
-        <div>
-          <SectionLabel label="Insights" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {renderCareerDirection()}
-            {renderCollegeCompass()}
-            {renderMockTrajectory()}
-            {renderStruggleAreas()}
-          </div>
-        </div>
-      )}
-    </MotionDiv>
+      {!wide && <PinnedFooter ruled>{renderActions()}</PinnedFooter>}
+    </div>
   );
 };

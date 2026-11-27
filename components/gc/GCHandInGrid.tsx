@@ -14,6 +14,10 @@ import { type CourseData } from '../Library';
 import { type GCStudentFullData, type StudentStatus } from './gcTypes';
 import { getOverallProgress, isActiveThisWeek, getStudentStatus, getVisibleCourses } from './gcUtils';
 import { COHORT_TAGS, getTags, toggleTag, loadCohortTags, type CohortTag } from './cohortTags';
+import { Flame, MoreHorizontal } from 'lucide-react';
+import { Button } from '../ui/Button';
+import { MenuCheckRows, MenuLabel, MenuPanel } from '../ui/Menu';
+import { useWide, StatusWords, StatusDot, STATUS_WORDS, Pct, StudentArt } from './gcView';
 
 type Rag = 'red' | 'amber' | 'green';
 const RAG_OF: Record<StudentStatus, Rag> = {
@@ -23,11 +27,6 @@ const RAG_OF: Record<StudentStatus, Rag> = {
   new: 'amber',
   thriving: 'green',
   active: 'green',
-};
-const RAG_STYLE: Record<Rag, { bg: string; fg: string; dot: string }> = {
-  red: { bg: '#FBEAE8', fg: '#8E2A20', dot: '#C0392B' },
-  amber: { bg: '#FBF1E3', fg: '#8A5A11', dot: '#C77D0A' },
-  green: { bg: '#E8F2EC', fg: '#1F5F3E', dot: '#3A8D5F' },
 };
 
 interface Props {
@@ -40,6 +39,7 @@ interface Props {
 const GCHandInGrid: React.FC<Props> = ({ students, allCourses, school, onSelectStudent }) => {
   const [filter, setFilter] = useState<CohortTag | null>(null);
   const [ver, setVer] = useState(0); // re-read tags after load / a toggle
+  const wide = useWide();
 
   // Cohort tags now live in Firestore (security review M-8). Hydrate the cache
   // once for this school, then bump `ver` so the rows re-read getTags().
@@ -67,6 +67,7 @@ const GCHandInGrid: React.FC<Props> = ({ students, allCourses, school, onSelectS
           progress: Math.round(getOverallProgress(s.progress, visible)),
           streak: s.streak?.currentStreak ?? 0,
           tags: getTags(school, s.user.uid),
+          avatar: s.user.avatar,
         };
       })
       .sort((a, b) => {
@@ -79,91 +80,112 @@ const GCHandInGrid: React.FC<Props> = ({ students, allCourses, school, onSelectS
   const tagCount = (t: CohortTag) => rows.filter(r => r.tags.includes(t)).length;
   const ragCount = (rag: Rag) => shown.filter(r => r.rag === rag).length;
 
+  const toggle = (uid: string, t: CohortTag) => { toggleTag(school, uid, t); setVer(v => v + 1); };
+  const empty = <p className="gc8-empty">No students{filter ? ` tagged ${filter}` : ''} yet.</p>;
+  const streak = (n: number) => (n > 0
+    ? <span className="gc8-streak"><Flame className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" />{n}</span>
+    : <span className="gc8-dim">{n}</span>);
+
   return (
-    <div className="p-6 max-w-5xl mx-auto w-full">
-      <h1 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-1">Practice status</h1>
-      <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">
-        At-a-glance triage — who’s engaging and who needs a nudge. {ragCount('red')} need attention, {ragCount('amber')} drifting, {ragCount('green')} on track.
-      </p>
+    <>
+      <section className="gc8-head" aria-labelledby="gc8-practice">
+        <h1 id="gc8-practice" className={wide ? 'gc8-title' : 'gc8-name'}>Practice status</h1>
+        <p className="gc8-sub">
+          At-a-glance triage: who’s engaging and who needs a nudge. {ragCount('red')} need attention, {ragCount('amber')} drifting, {ragCount('green')} on track.
+        </p>
+      </section>
 
       {/* Cohort filter */}
-      <div className="flex flex-wrap items-center gap-2 mb-4">
-        <button
-          onClick={() => setFilter(null)}
-          className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${filter === null ? 'bg-zinc-900 text-white border-zinc-900 dark:bg-zinc-100 dark:text-zinc-900' : 'bg-white dark:bg-surface-paper text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700'}`}
-        >
-          All {rows.length}
-        </button>
+      <div className="gc8-filts" role="group" aria-label="Cohort tag">
+        <Button size="sm" aria-pressed={filter === null} onClick={() => setFilter(null)}>All <span className="gc8-count">{rows.length}</span></Button>
         {COHORT_TAGS.map(t => (
-          <button
-            key={t}
-            onClick={() => setFilter(filter === t ? null : t)}
-            className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${filter === t ? 'bg-zinc-900 text-white border-zinc-900 dark:bg-zinc-100 dark:text-zinc-900' : 'bg-white dark:bg-surface-paper text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700'}`}
-          >
-            {t} {tagCount(t)}
-          </button>
+          <Button key={t} size="sm" aria-pressed={filter === t} onClick={() => setFilter(filter === t ? null : t)}>
+            {t} <span className="gc8-count">{tagCount(t)}</span>
+          </Button>
         ))}
       </div>
 
-      <div className="overflow-x-auto rounded-xl border border-zinc-200 dark:border-hairline">
-        <table className="w-full text-sm bg-white dark:bg-surface-paper min-w-[640px]">
-          <thead>
-            <tr className="text-left text-[11px] uppercase tracking-wide text-zinc-400 border-b border-zinc-200 dark:border-hairline">
-              <th className="px-4 py-2.5 font-semibold">Student</th>
-              <th className="px-3 py-2.5 font-semibold">Status</th>
-              <th className="px-3 py-2.5 font-semibold">This week</th>
-              <th className="px-3 py-2.5 font-semibold text-right">Progress</th>
-              <th className="px-3 py-2.5 font-semibold text-right">Streak</th>
-              <th className="px-3 py-2.5 font-semibold">Cohort</th>
-            </tr>
-          </thead>
-          <tbody>
-            {shown.length === 0 ? (
-              <tr><td colSpan={6} className="px-4 py-6 text-center text-zinc-400">No students{filter ? ` tagged ${filter}` : ''} yet.</td></tr>
-            ) : shown.map(r => {
-              const rs = RAG_STYLE[r.rag];
-              return (
-                <tr key={r.uid} className="border-b border-zinc-100 dark:border-zinc-800/60 last:border-0 hover:bg-zinc-50 dark:hover:bg-zinc-800/40">
-                  <td className="px-4 py-2.5">
-                    <button onClick={() => onSelectStudent(r.uid)} className="font-medium text-zinc-800 dark:text-zinc-100 hover:underline text-left">{r.name}</button>
-                  </td>
-                  <td className="px-3 py-2.5">
-                    <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-semibold" style={{ backgroundColor: rs.bg, color: rs.fg }}>
-                      <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: rs.dot }} />
-                      {r.status}
-                    </span>
-                  </td>
-                  <td className="px-3 py-2.5">
-                    <span className="text-[13px]" style={{ color: r.active ? '#3A8D5F' : '#b0a898' }}>{r.active ? 'active' : '—'}</span>
-                  </td>
-                  <td className="px-3 py-2.5 text-right tabular-nums text-zinc-700 dark:text-zinc-300">{r.progress}%</td>
-                  <td className="px-3 py-2.5 text-right tabular-nums text-zinc-700 dark:text-zinc-300">{r.streak}</td>
-                  <td className="px-3 py-2.5">
-                    <div className="flex flex-wrap gap-1">
-                      {COHORT_TAGS.map(t => {
-                        const on = r.tags.includes(t);
-                        return (
-                          <button
-                            key={t}
-                            onClick={() => { toggleTag(school, r.uid, t); setVer(v => v + 1); }}
-                            aria-pressed={on}
-                            title={`${on ? 'Remove' : 'Add'} ${t}`}
-                            className={`px-1.5 py-0.5 rounded text-[10px] font-semibold border transition-colors ${on ? 'bg-zinc-900 text-white border-zinc-900 dark:bg-zinc-100 dark:text-zinc-900' : 'bg-white dark:bg-surface-paper text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:text-zinc-600'}`}
-                          >
-                            {t === 'At-risk' ? 'AR' : t === 'Priority' ? 'Pri' : t}
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
-      <p className="text-[11px] text-zinc-400 mt-3">Cohort tags are your private annotations, stored on this device. Status is derived from each student’s recent activity and progress.</p>
-    </div>
+      {wide ? (
+        <section className="gc8-sec">
+          <div className="gc8-ptablewrap">
+            <div className="gc8-ptable" role="table" aria-label="Practice status">
+              <div className="gc8-ptr gc8-ptr--head" role="row">
+                <span role="columnheader" className="gc8-label">Student</span>
+                <span role="columnheader" className="gc8-label">Status</span>
+                <span role="columnheader" className="gc8-label">This week</span>
+                <span role="columnheader" className="gc8-label gc8-n gc8-hpct">Progress</span>
+                <span role="columnheader" className="gc8-label gc8-n">Streak</span>
+                <span role="columnheader" className="gc8-label">Cohort</span>
+              </div>
+              {shown.map(r => (
+                <div key={r.uid} className="gc8-ptr" role="row">
+                  <span role="cell">
+                    <button type="button" className="ui-part gc8-stu" onClick={() => onSelectStudent(r.uid)}>
+                      <StudentArt seed={r.avatar} size={32} /><span>{r.name}</span>
+                    </button>
+                  </span>
+                  <span role="cell"><StatusDot status={r.status} />{STATUS_WORDS[r.status]}</span>
+                  <span role="cell">{r.active ? 'Active' : <span className="gc8-dim">–</span>}</span>
+                  <span role="cell" className="gc8-n"><Pct value={r.progress} /></span>
+                  <span role="cell" className="gc8-n">{streak(r.streak)}</span>
+                  <span role="cell" className="gc8-tags">
+                    {COHORT_TAGS.map(t => {
+                      const on = r.tags.includes(t);
+                      return (
+                        <Button key={t} size="sm" className="gc8-tag" aria-pressed={on} title={`${on ? 'Remove' : 'Add'} ${t}`} onClick={() => toggle(r.uid, t)}>{t}</Button>
+                      );
+                    })}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+          {shown.length === 0 && empty}
+        </section>
+      ) : (
+        <section className="gc8-sec" aria-label="Practice status">
+          <div>
+            <div className="gc8-pr gc8-pr--head">
+              <span className="gc8-label">Student</span>
+              <span className="gc8-label gc8-n gc8-hpct">Progress</span>
+              <span className="gc8-label gc8-n">Streak</span>
+              <span />
+            </div>
+            {shown.map(r => (
+              <div key={r.uid} className="gc8-pr">
+                <button type="button" className="ui-part gc8-pwho" onClick={() => onSelectStudent(r.uid)}>
+                  <StudentArt seed={r.avatar} />
+                  <span className="gc8-pwho-copy">
+                    <span className="gc8-person">{r.name}</span>
+                    <span className="gc8-meta"><StatusWords status={r.status}>{r.tags.length ? ` · ${r.tags.join(', ')}` : ''}</StatusWords></span>
+                  </span>
+                </button>
+                <Pct value={r.progress} />
+                <span className="gc8-n">{streak(r.streak)}</span>
+                <MenuPanel
+                  label={`Cohort tags for ${r.name}`}
+                  buttonLabel={`Cohort tags for ${r.name}`}
+                  buttonClassName="gc8-acts"
+                  className="gc8-rowmenu"
+                  chevron={false}
+                  face={<MoreHorizontal className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />}
+                >
+                  <MenuLabel>Cohort tags · private to you</MenuLabel>
+                  <MenuCheckRows<CohortTag>
+                    label={`Cohort tags for ${r.name}`}
+                    options={COHORT_TAGS.map(t => ({ value: t, label: t }))}
+                    values={r.tags as readonly CohortTag[]}
+                    onToggle={t => toggle(r.uid, t)}
+                  />
+                </MenuPanel>
+              </div>
+            ))}
+          </div>
+          {shown.length === 0 && empty}
+        </section>
+      )}
+      <p className="gc8-note">Cohort tags are your private annotations, stored on this device. Status is derived from each student’s recent activity and progress.</p>
+    </>
   );
 };
 

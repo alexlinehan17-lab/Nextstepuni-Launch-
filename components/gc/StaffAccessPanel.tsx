@@ -11,12 +11,18 @@
  * is rotating that password.
  */
 
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
 import { getFunctions, httpsCallable } from 'firebase/functions';
-import { Check, Copy, KeyRound, RefreshCw, ShieldCheck } from 'lucide-react';
+import { Check, Copy, Lock, RefreshCw } from 'lucide-react';
 import app, { auth } from '../../firebase';
 import { getSchoolName } from '../../schoolData';
 import { reauthMethodFor, reauthenticateCurrentUser } from '../../utils/reauthenticate';
+import { Button } from '../ui/Button';
+import { Field } from '../ui/Field';
+import { PaperSheet } from '../ui/List';
+import { Sheet } from '../ui/Sheet';
+import { LoadingShape } from '../ui/States';
+import { useWide } from './gcView';
 
 export const StaffAccessPanel: React.FC<{ school: string }> = ({ school }) => {
   const [studentConfigured, setStudentConfigured] = useState(false);
@@ -27,6 +33,8 @@ export const StaffAccessPanel: React.FC<{ school: string }> = ({ school }) => {
   const [error, setError] = useState('');
   const [confirming, setConfirming] = useState(false);
   const [password, setPassword] = useState('');
+  const wide = useWide();
+  const passwordRef = useRef<HTMLInputElement>(null);
 
   const closeConfirm = useCallback(() => {
     setPassword('');
@@ -81,85 +89,84 @@ export const StaffAccessPanel: React.FC<{ school: string }> = ({ school }) => {
     } catch { /* The code remains visible for manual copy. */ }
   }, [studentCode]);
 
+  const needsPassword = reauthMethodFor(auth.currentUser) === 'password';
   return (
-    <div className="p-6 max-w-3xl mx-auto w-full">
-      <div className="flex items-center gap-2.5 mb-1">
-        <KeyRound size={20} className="text-zinc-500 dark:text-zinc-400" />
-        <h2 className="text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">School access</h2>
-      </div>
-      <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
-        The student join code for {getSchoolName(school)}. Teachers do not need a code — they sign in
-        with the staff-room password your school was given.
-      </p>
+    <div className="gc8-narrow">
+      <section className="gc8-head" aria-labelledby="gc8-access">
+        <h1 id="gc8-access" className={wide ? 'gc8-title' : 'gc8-name'}>School access</h1>
+        <p className="gc8-sub">
+          The student join code for {getSchoolName(school)}. Teachers do not need a code: they sign in
+          with the staff-room password your school was given.
+        </p>
+      </section>
 
-      {loading ? <p className="text-sm text-zinc-400">Loading…</p> : (
-        <section className="rounded-2xl border border-zinc-200 dark:border-hairline bg-white dark:bg-surface-paper p-6">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-zinc-400">Student join code</p>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2">
-            Students use this during registration. It remains active until you rotate it.
-          </p>
-          {studentCode ? (
-            <div className="mt-4 flex items-center gap-3 flex-wrap">
-              <code className="text-xl font-bold tracking-[0.16em] text-zinc-900 dark:text-white select-all">{studentCode}</code>
-              <button
-                type="button"
-                onClick={() => void copy()}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300"
-              >
-                {copied ? <><Check size={13} className="text-green-600" /> Copied</> : <><Copy size={13} /> Copy</>}
-              </button>
-              <p className="w-full text-xs text-amber-700 dark:text-amber-300">Copy this now. For security, it will not be shown again.</p>
-            </div>
-          ) : (
-            <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-4">
-              {studentConfigured ? 'A code is active. Generate a new one if it needs to be shared again.' : 'No code is active yet.'}
-            </p>
-          )}
-          <button
-            type="button"
-            onClick={() => { setError(''); setConfirming(true); }}
-            disabled={saving}
-            className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 disabled:opacity-50"
-          >
-            <RefreshCw size={14} /> {studentConfigured ? 'Rotate code' : 'Generate code'}
-          </button>
-        </section>
-      )}
-
-      {error && <p role="alert" className="text-sm text-red-500 mt-4">{error}</p>}
-      <p className="text-xs text-zinc-400 mt-4 leading-relaxed flex items-start gap-1.5">
-        <ShieldCheck size={13} className="mt-0.5 shrink-0" /> The code is stored as a one-way hash and shown only when generated. Rotate it to stop future joins.
-      </p>
-
-      {confirming && (
-        <div className="fixed inset-0 z-[240] flex items-center justify-center bg-black/55 p-4" onClick={() => !saving && closeConfirm()}>
-          <div role="dialog" aria-modal="true" aria-labelledby="verify-access-title" className="w-full max-w-sm rounded-2xl border border-zinc-700 bg-zinc-950 p-6 shadow-2xl" onClick={event => event.stopPropagation()}>
-            <h3 id="verify-access-title" className="text-lg font-semibold text-white">Verify this security change</h3>
-            <p className="text-sm text-zinc-400 mt-2">Re-enter your password before rotating the join code.</p>
-            {reauthMethodFor(auth.currentUser) === 'password' && (
-              <input
-                type="password"
-                value={password}
-                onChange={event => setPassword(event.target.value)}
-                placeholder="Your password"
-                autoComplete="current-password"
-                className="mt-4 w-full rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-2.5 text-sm text-white outline-none"
-              />
+      {loading ? <LoadingShape rows={2} label="Loading…" /> : (
+        <PaperSheet label="Student join code">
+          <div className="gc8-code">
+            <p className="gc8-label">Student join code</p>
+            <p className="gc8-sub">Students use this during registration. It remains active until you rotate it.</p>
+            {studentCode ? (
+              <>
+                <div className="gc8-row-x">
+                  <code className="gc8-code-value">{studentCode}</code>
+                  <Button size="sm" className="gc8-ib" onClick={() => void copy()}>
+                    {copied
+                      ? <><Check className="ui-icon gc8-up" width={16} height={16} strokeWidth={2} aria-hidden="true" />Copied</>
+                      : <><Copy className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" />Copy</>}
+                  </Button>
+                </div>
+                <p className="gc8-sub gc8-strong">Copy this now. For security, it will not be shown again.</p>
+              </>
+            ) : (
+              <p className="gc8-strong">
+                {studentConfigured ? 'A code is active. Generate a new one if it needs to be shared again.' : 'No code is active yet.'}
+              </p>
             )}
-            <div className="mt-5 flex justify-end gap-2">
-              <button type="button" onClick={closeConfirm} disabled={saving} className="px-4 py-2 rounded-lg text-sm font-medium text-zinc-300">Cancel</button>
-              <button
-                type="button"
-                onClick={() => void rotate()}
-                disabled={saving || (reauthMethodFor(auth.currentUser) === 'password' && !password)}
-                className="px-4 py-2 rounded-lg text-sm font-semibold bg-white text-zinc-900 disabled:opacity-50"
-              >
-                {saving ? 'Working…' : 'Confirm'}
-              </button>
-            </div>
+            <Button className="gc8-ib" onClick={() => { if (saving) return; setError(''); setConfirming(true); }} aria-disabled={saving || undefined}>
+              <RefreshCw className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" /> {studentConfigured ? 'Rotate code' : 'Generate code'}
+            </Button>
           </div>
-        </div>
+        </PaperSheet>
       )}
+
+      {error && <p role="alert" className="gc8-strong">{error}</p>}
+      <p className="gc8-note">
+        <Lock className="ui-icon" width={14} height={14} strokeWidth={2} aria-hidden="true" /> The code is stored as a one-way hash and shown only when generated. Rotate it to stop future joins.
+      </p>
+
+      <Sheet
+        open={confirming}
+        title="Verify this security change"
+        onClose={() => { if (!saving) closeConfirm(); }}
+        footer={
+          <Button
+            kind="main"
+            size="lg"
+            block
+            missing={needsPassword && !password ? { sentence: 'Re-enter your password before rotating the join code.', goTo: passwordRef } : undefined}
+            onClick={() => { if (!saving) void rotate(); }}
+          >
+            {saving ? 'Working…' : 'Confirm'}
+          </Button>
+        }
+      >
+        <div className="gc8-sheet-body">
+          {/* Today's line; while the password is missing the button's own line says it, so it shows once. */}
+          {!(needsPassword && !password) && <p className="gc8-sub">Re-enter your password before rotating the join code.</p>}
+          {error && <p className="gc8-strong">{error}</p>}
+          {needsPassword && (
+            <Field
+              ref={passwordRef}
+              type="password"
+              label="Your password"
+              placeholder="Your password"
+              value={password}
+              onChange={event => setPassword(event.target.value)}
+              autoComplete="current-password"
+            />
+          )}
+        </div>
+      </Sheet>
     </div>
   );
 };

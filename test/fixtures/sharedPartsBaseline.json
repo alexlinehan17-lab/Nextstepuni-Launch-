@@ -131,8 +131,7 @@
    "pop-up": 1
   },
   "components/GCDashboard.tsx": {
-   "button": 11,
-   "pop-up": 1
+   "button": 1
   },
   "components/JCComingSoon.tsx": {
    "button": 1
@@ -441,28 +440,17 @@
    "dropdown": 1
   },
   "components/gc/GCExportModal.tsx": {
-   "button": 4,
-   "dropdown": 1,
-   "pop-up": 1
+   "dropdown": 1
   },
   "components/gc/GCHandInGrid.tsx": {
-   "button": 4
+   "button": 2
   },
   "components/gc/GCKeyEvents.tsx": {
-   "button": 7,
-   "dropdown": 2
+   "button": 1,
+   "dropdown": 1
   },
   "components/gc/GCOverview.tsx": {
-   "button": 23,
-   "dropdown": 1,
-   "pop-up": 1
-  },
-  "components/gc/GCStudentDetail.tsx": {
-   "button": 13
-  },
-  "components/gc/StaffAccessPanel.tsx": {
-   "button": 4,
-   "pop-up": 1
+   "button": 4
   },
   "components/immersiveDeck/HybridCard.tsx": {
    "button": 4
