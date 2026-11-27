@@ -18,6 +18,9 @@
 .adm-hero { align-items: flex-start; }
 .adm-hero > .gc8-head { min-width: 0; }
 .adm-hero > .adm-filters { flex: none; flex-wrap: nowrap; }
+/* Beside the sidebar below 1200px the opening words take the width and the controls sit under them. */
+@media (min-width: 1024px) and (max-width: 1199px) { .adm-hero.gc8-hero { flex-direction: column; align-items: flex-start; } }
+@media (max-width: 1199px) { .adm-hero > .adm-filters { flex-wrap: wrap; } }
 .adm-titlerow { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-3); }
 .adm-titlerow .ui-icon-btn { flex: none; margin: -6px -10px 0 0; }
 .adm-one { display: block; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -46,9 +49,12 @@
 /* ── Overview ────────────────────────────────────────────────────────── */
 .adm-attn .ui-row { min-height: 60px; }
 .adm-attn .ui-row-meta { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-/* On a laptop the three things to look at first sit side by side over one hairline. */
-.adm-attn--wide { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 32px; }
-.adm-attn--wide .ui-row { min-height: 64px; }
+/* On a laptop the three things to look at first sit side by side over one hairline (from 1200px; beside
+   the sidebar below that each would wrap, so they stay one under another). */
+@media (min-width: 1200px) {
+  .adm-attn--wide { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 32px; }
+  .adm-attn--wide .ui-row { min-height: 64px; }
+}
 /* The four figures: two by two, ruled; each number over its small label, the % hanging. */
 .adm-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--hairline); }
 .adm-stats > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; padding: 14px 0 14px 16px; border-bottom: 1px solid var(--hairline); border-left: 1px solid var(--hairline); }
@@ -168,7 +174,7 @@
 /* ── School access ───────────────────────────────────────────────────── */
 .adm-notice { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); padding: var(--space-3) 0 var(--space-4); border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
 .adm-notice-text { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
-.adm-btnrow { display: flex; flex-wrap: wrap; align-items: flex-start; gap: var(--space-2); }
+.adm-btnrow { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--space-2); }
 .adm-secretrow { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
 .adm-secret { overflow-wrap: anywhere; }
 .adm-logins { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--hairline); }
@@ -189,9 +195,9 @@
 .adm-state { gap: var(--space-2); }
 .adm-progtools { display: flex; flex-direction: column; gap: var(--space-3); }
 .adm-range.ui-seg { width: 100%; }
-@media (min-width: 768px) {
+@media (min-width: 768px) { .adm-range.ui-seg { width: 360px; } }
+@media (min-width: 1024px) {
   .adm-progtools { flex-direction: row; align-items: center; justify-content: space-between; }
-  .adm-range.ui-seg { width: 360px; }
   .adm-progtools .adm-asof { gap: var(--space-4); }
 }
 .adm-progtwo { display: flex; flex-direction: column; gap: var(--space-8); }

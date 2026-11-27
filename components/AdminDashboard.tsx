@@ -635,8 +635,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
         : activeView as Place;
   const sideCurrent: AdminView = activeView === 'years' ? 'schools' : activeView === 'funnel' ? 'overview' : activeView;
 
-  const filters = (
-    <div className="adm-filters" aria-label="Dashboard filters">
+  const filterMenus = (
+    <>
       <Menu
         label="School"
         value={schoolFilter}
@@ -649,8 +649,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
         onChange={setYearFilter}
         options={[{ value: 'all', label: 'All year groups' }, ...yearOptions.map(year => ({ value: year, label: displayYear(year) }))]}
       />
-    </div>
+    </>
   );
+  const filters = <div className="adm-filters" aria-label="Dashboard filters">{filterMenus}</div>;
 
   const studentsUnavailable = loadError ? <ErrorState sentence={loadError} onRetry={refreshStudents} /> : null;
 
@@ -804,7 +805,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
             <h1 className="gc8-title">Students</h1>
             <p className="gc8-sub">{filteredData.length} student record{filteredData.length === 1 ? '' : 's'} in the current view.</p>
           </div>
-          <div className="adm-filters">
+          <div className="adm-filters" aria-label="Dashboard filters">
             <SearchField
               label="Search students"
               placeholder="Search students"
@@ -813,7 +814,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
               onChange={event => setStudentSearch(event.target.value)}
               autoComplete="off"
             />
-            {filters}
+            {filterMenus}
           </div>
         </div>
       ) : (
