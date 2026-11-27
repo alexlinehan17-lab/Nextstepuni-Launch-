@@ -3197,9 +3197,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </figure>
             )}
 
-            {paperLayout && assessmentCard.paperFileid && <a className="mb-original-paper" href={`/?view=innovation-zone&tool=paper-trail&subject=${encodeURIComponent(assessmentCard.subjectId)}&year=${assessmentCard.year}&level=${assessmentCard.level}&lang=ev&paper=${encodeURIComponent(assessmentCard.paperFileid.endsWith('.pdf')?assessmentCard.paperFileid:assessmentCard.paperFileid+'.pdf')}`} target="_blank" rel="noopener noreferrer">Open original paper<Arrow meaning="leaves" /></a>}
+            {paperLayout && assessmentCard.paperFileid && <a className="mb-original-paper" href={`/?view=innovation-zone&tool=paper-trail&subject=${encodeURIComponent(assessmentCard.subjectId)}&year=${assessmentCard.year}&level=${assessmentCard.level}&lang=ev&paper=${encodeURIComponent(assessmentCard.paperFileid.endsWith('.pdf')?assessmentCard.paperFileid:assessmentCard.paperFileid+'.pdf')}`} target="_blank" rel="noopener noreferrer">Open original paper<Arrow meaning="forward" /></a>}
             {/* The single model (atlasModel.ts): the card knows its Topic Atlas question and heading. */}
-            {paperLayout && atlasLink && <a className="mb-original-paper" data-testid="mb-atlas-link" style={{ display: 'flex', marginTop: 10 }} href={atlasLink.href} target="_blank" rel="noopener noreferrer">In the Topic Atlas: {atlasLink.heading.label} · {atlasLink.question}<Arrow meaning="leaves" /></a>}
+            {paperLayout && atlasLink && <a className="mb-original-paper" data-testid="mb-atlas-link" style={{ display: 'flex', marginTop: 10 }} href={atlasLink.href} target="_blank" rel="noopener noreferrer">In the Topic Atlas: {atlasLink.heading.label} · {atlasLink.question}<Arrow meaning="forward" /></a>}
             {/* Irish listening cards show their readers beside the recording, above. */}
             {!(audioMaterial && !printedQuestionReplacesText && assessmentCard.subjectId !== 'french') && sourceReaders}
 
