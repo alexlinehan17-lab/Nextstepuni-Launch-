@@ -68,7 +68,7 @@ describe('slash-joined alternatives as option rows', () => {
     const group = screen.getByRole('group', { name: 'Any one of these: 2 marks' });
     expect(within(group).getByText('1 freagra · 2m')).toBeInTheDocument();
     expect(within(group).getAllByRole('button').map(button => button.textContent)).toEqual(
-      ['Tráchtaire spóirt2m', 'Gaeilgeoir2m', 'Ciarraíoch2m', 'cuirfidh sé tús leis an oíche eolais2m']);
+      ['Tráchtaire spóirt2 marks', 'Gaeilgeoir2 marks', 'Ciarraíoch2 marks', 'cuirfidh sé tús leis an oíche eolais2 marks']);
     fireEvent.click(within(group).getByRole('button', { name: /Gaeilgeoir/ }));
     rerender(<IrishAllocationPanel criterionId={criterion.id} allocation={criterion.allocation!} scores={{ ...scores }} onScore={onScore} />);
     expect(within(group).getByRole('button', { name: /Ciarraíoch/ })).toBeDisabled();

@@ -40,12 +40,14 @@ import KobraScope, { Button } from '../approved-ui-runtime';
 import { TopBar } from '../ui/Bars';
 import { Arrow, Button as UiButton, Glyph, TextButton } from '../ui/Button';
 import { OverScreen } from '../ui/OverScreen';
+import { SelectionMark } from '../ui/Choice';
+import { marksLabel } from './ClaimRows';
 import './mark-bank-session-paper.css';
 import './practice-card.css';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import { emphasisSegments } from './questionEmphasis';
 import { createPortal } from 'react-dom';
-import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
+import { AnimatePresence, MotionDiv, useReducedMotion } from '../Motion';
 import {
   optionGroupMarks,
   ladderGroupMarks,
@@ -814,7 +816,7 @@ const MarkRowView: React.FC<{
       <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
           <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}`, whiteSpace: keepLines ? 'pre-line' : printedLines(row.verbatim) }}>{row.verbatim}</strong>
-          <span style={{ font: `700 10.5px/1.7 ${MONO}`, color: placed > 0 ? SUCCESS_TEXT : MUTED, whiteSpace: 'nowrap' }}>{placed}m of {row.marks}m</span>
+          <span className="mb-claim-count" data-on={placed > 0}>{placed}m of {row.marks}m</span>
         </div>
         {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}`, whiteSpace: printedLines(row.contextNote) }}>{row.contextNote}</p> : null}
         <div style={{ display: 'grid', gap: 8, marginTop: 8 }}>
@@ -822,7 +824,7 @@ const MarkRowView: React.FC<{
             const selected = partMarksClaimed(part, partClaims?.[part.id] ?? 'no');
             return (
               <div key={part.id} style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 8 }}>
-                <span style={{ minWidth: 96, color: selected > 0 ? SUCCESS_TEXT : INK_2, font: `500 13px/1.4 ${SANS}` }}>{part.verbatim}</span>
+                <span className="mb-step-part" data-on={selected > 0}>{part.verbatim}</span>
                 <div role="group" aria-label={`Marks for ${part.verbatim} · ${row.verbatim}`} style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
                   {part.permittedMarks.map(mark => (
                     <button key={mark} type="button" className="mb-step" disabled={blocked} aria-pressed={selected === mark}
@@ -942,34 +944,15 @@ const MarkRowView: React.FC<{
               <React.Fragment key={oi}>
               <button
                 type="button"
-                className="mb-anyn-option"
+                className="ui-choice mb-claim-row mb-anyn-option"
+                data-claimed={on}
+                data-marks={g.optionMarks && showMarks ? 'shown' : undefined}
                 onClick={() => onPick(id, oi)}
                 disabled={disabled}
                 aria-pressed={on}
-                style={{
-                  width: '100%', textAlign: 'left', display: 'grid',
-                  gridTemplateColumns: g.optionMarks && showMarks ? '16px 1fr auto' : '16px 1fr', gap: 8, alignItems: 'center',
-                  padding: '7px 9px', borderRadius: 9,
-                  border: `1px solid ${on ? CLAIM : MUTED_BORDER}`,
-                  background: on ? CLAIM : 'transparent',
-                  cursor: disabled ? 'not-allowed' : 'pointer',
-                  opacity: disabled ? 0.45 : 1,
-                  font: `500 12.5px/1.4 ${SANS}`, color: on ? ON_CLAIM : INK_2,
-                }}
               >
-                <span style={{
-                  width: 14, height: 14, borderRadius: 4, flex: 'none',
-                  background: on ? ON_CLAIM : 'transparent', color: CLAIM,
-                  border: on ? 'none' : `1.5px solid ${MUTED_BORDER}`,
-                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                }}>
-                  {on && (
-                    <svg width="9" height="9" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  )}
-                </span>
-                <span>
+                <SelectionMark on={on} shape="square" />
+                <span className="mb-claim-text">
                   {/* A Maths credit band lists the ALTERNATIVE ways to reach
                       that rung, one per line. Rendered as one run-on string
                       they read as a single sentence and say something the
@@ -977,25 +960,19 @@ const MarkRowView: React.FC<{
                   {option.includes('\n')
                     ? option.split('\n').map((line, li) => (
                         <span key={li} style={{ display: 'grid', gridTemplateColumns: '10px 1fr', gap: 6, marginTop: li ? 3 : 0 }}>
-                          <span aria-hidden="true" style={{ color: on ? ON_CLAIM : MUTED }}>&middot;</span>
+                          <span aria-hidden="true" className="mb-claim-alt">&middot;</span>
                           <span>{line}</span>
                         </span>
                       ))
                     : option}
                   {usedAlready && (
-                    <em style={{ display: 'block', marginTop: 2, font: `400 11px/1.4 ${SANS}`, color: MUTED, fontStyle: 'normal' }}>
+                    <em className="mb-claim-note">
                       Already claimed above — one answer earns marks once.
                     </em>
                   )}
                 </span>
                 {g.optionMarks && showMarks && (
-                  <span style={{
-                    font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
-                    fontVariantNumeric: 'tabular-nums',
-                    background: on ? ON_CLAIM : 'var(--mb-raised)', color: on ? CLAIM : INK_2,
-                  }}>
-                    {g.optionMarks[oi]}m
-                  </span>
+                  <span className="mb-claim-chip">{marksLabel(g.optionMarks[oi])}</span>
                 )}
               </button>
               {languageControl(answerLanguageClaimId(id, oi), option, !on)}
@@ -1044,48 +1021,20 @@ const MarkRowView: React.FC<{
     >
       <button
         type="button"
-        className="mb-pt"
+        className="ui-choice mb-claim-row mb-pt"
+        data-claimed={claimed}
         onClick={() => !blocked && onClaim(id, claimed ? 'no' : 'yes')}
         disabled={blocked}
         aria-pressed={claimed}
-        style={{
-          width: '100%', textAlign: 'left', display: 'grid',
-          gridTemplateColumns: '20px minmax(0, 1fr) auto', gap: 10, alignItems: 'center',
-          padding: '11px 12px', borderRadius: 12,
-          border: `1.5px solid ${claimed ? CLAIM : MUTED_BORDER}`,
-          background: claimed ? CLAIM : 'var(--mb-paper)',
-          cursor: blocked ? 'not-allowed' : 'pointer',
-          opacity: blocked ? 0.5 : 1,
-          font: `500 13.5px/1.42 ${SANS}`, color: claimed ? ON_CLAIM : INK_2,
-          transition: reduced ? 'none' : 'background 160ms, border-color 160ms',
-        }}
       >
-        <MotionSpan
-          className="mb-pt-mark"
-          animate={reduced ? {} : { scale: claimed ? 1 : 0.85 }}
-          transition={{ type: 'spring', stiffness: 420, damping: 26 }}
-          style={{
-            // A circle is a RADIO — one of many. Every marking point here is
-            // claimed independently, so the control is a checkbox: rounded
-            // square, not round.
-            width: 18, height: 18, borderRadius: 5,
-            background: claimed ? ON_CLAIM : 'transparent', color: CLAIM,
-            border: claimed ? 'none' : `1.5px solid ${MUTED_BORDER}`,
-            display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flex: 'none',
-          }}
-        >
-          {/* Drawn, not typed: a U+2713 text tick renders with emoji presentation
-              on some platforms, and this app bans emoji as UI furniture. */}
-          {claimed && (
-            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-              <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          )}
-        </MotionSpan>
+        {/* A circle is a RADIO — one of many. Every marking point here is
+            claimed independently, so the control is a checkbox: rounded
+            square, not round. The tick is drawn, never typed (no emoji). */}
+        <SelectionMark on={claimed} shape="square" />
 
-        <span className="mb-pt-text" style={{ minWidth: 0, overflowWrap: 'anywhere' }}>
+        <span className="mb-claim-text mb-pt-text">
           {wholeResponse && row.contextNote && (
-            <span style={{ display: 'block', marginBottom: 10, font: `400 12px/1.4 ${SANS}`, color: claimed ? ON_CLAIM : MUTED, whiteSpace: printedLines(row.contextNote) }}>
+            <span className="mb-claim-note" style={{ display: 'block', marginBottom: 10, whiteSpace: printedLines(row.contextNote) }}>
               {row.contextNote}
             </span>
           )}
@@ -1093,18 +1042,18 @@ const MarkRowView: React.FC<{
               Arabic answer reads and aligns the way the scheme printed it.
               Printed line breaks are kept for every subject; History's rows
               keep exactly the text and pre-line they always had. */}
-          <span dir="auto" style={{ color: claimed ? ON_CLAIM : INK_2, whiteSpace: wholeResponse || keepLines ? 'pre-line' : printedLines(shownVerbatim) }}>
+          <span dir="auto" style={{ whiteSpace: wholeResponse || keepLines ? 'pre-line' : printedLines(shownVerbatim) }}>
             {shownVerbatim}
             {/* The scheme's own alternatives, shown in full: a student who wrote
                 "heterotrophic" earned the mark and must be able to see that. */}
             {row.accepts?.length ? (
-              <span style={{ color: claimed ? ON_CLAIM : MUTED }}>
+              <span className="mb-claim-alt">
                 {' or '}{row.accepts.join(' or ')}
               </span>
             ) : null}
           </span>
           {!wholeResponse && row.contextNote && (
-            <span style={{ display: 'block', marginTop: 3, font: `400 12px/1.4 ${SANS}`, color: claimed ? ON_CLAIM : MUTED, whiteSpace: printedLines(row.contextNote) }}>
+            <span className="mb-claim-note" style={{ display: 'block', whiteSpace: printedLines(row.contextNote) }}>
               {row.contextNote}
             </span>
           )}
@@ -1116,21 +1065,14 @@ const MarkRowView: React.FC<{
              greeted the student with a column of orange before they had touched
              anything. That is both an accusation and a misuse of the token:
              orange means "this is the action", never "you got this wrong". */
-          <span className="mb-pt-marks" style={{
-            font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
-            fontVariantNumeric: 'tabular-nums',
-            background: claimed ? CLAIM : 'var(--mb-raised)',
-            color: claimed ? ON_CLAIM : MUTED,
-          }}>
-            {claimed ? `${marks}m` : `${marks}m`}
-          </span>
+          <span className="mb-claim-chip mb-pt-marks">{marksLabel(marks)}</span>
         )}
       </button>
 
       {languageControl(answerLanguageClaimId(id), row.verbatim, !claimed)}
 
       {blocked && blockedReason !== '' && (
-        <span style={{ display: 'block', marginTop: 4, marginLeft: 42, font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
+        <span className="mb-pt-aside">
           {blockedReason ?? 'This mark only counts if the point above was right.'}
         </span>
       )}
@@ -1140,17 +1082,12 @@ const MarkRowView: React.FC<{
           type="button"
           className="mb-pt-synonym"
           onClick={() => onClaim(id, 'synonym')}
-          style={{
-            marginTop: 4, marginLeft: 42, background: 'none', border: 'none', padding: 0,
-            font: `600 11.5px/1.5 ${SANS}`, color: INK_2,
-            borderBottom: `1px solid ${MUTED_BORDER}`, cursor: 'pointer',
-          }}
         >
           I had something like this
         </button>
       )}
       {claim === 'synonym' && (
-        <span style={{ display: 'block', marginTop: 4, marginLeft: 42, font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
+        <span className="mb-pt-aside">
           The examiner accepts synonyms here.
         </span>
       )}
@@ -1222,32 +1159,13 @@ const PclmRubricPanel: React.FC<{
               <button
                 key={requirement}
                 type="button"
+                className="ui-choice mb-claim-row"
+                data-claimed={checked}
                 aria-pressed={checked}
                 onClick={() => onRequirement(index)}
-                style={{
-                  display: 'grid', gridTemplateColumns: '24px 1fr', gap: 9,
-                  alignItems: 'center', width: '100%', padding: '10px 11px', textAlign: 'left',
-                  borderRadius: 10, border: `1.5px solid ${checked ? CLAIM : MUTED_BORDER}`,
-                  background: checked ? CLAIM : 'var(--mb-paper)', color: checked ? ON_CLAIM : INK_2,
-                  font: `500 12.5px/1.45 ${SANS}`, cursor: 'pointer',
-                }}
               >
-                <span aria-hidden style={{
-                  display: 'grid', placeItems: 'center', width: 20, height: 20, borderRadius: 6,
-                  border: `1.5px solid ${checked ? ON_CLAIM : MUTED_BORDER}`,
-                  background: checked ? ON_CLAIM : 'transparent', color: CLAIM,
-                  font: `800 12px/1 ${SANS}`,
-                }}>
-                  {checked ? (
-                    <span style={{
-                      width: 6, height: 10,
-                      borderRight: '2px solid currentColor',
-                      borderBottom: '2px solid currentColor',
-                      transform: 'rotate(45deg) translate(-1px, -1px)',
-                    }} />
-                  ) : null}
-                </span>
-                <span>{requirement}</span>
+                <SelectionMark on={checked} shape="square" />
+                <span className="mb-claim-text"><span>{requirement}</span></span>
               </button>
             );
           })}
@@ -1585,28 +1503,13 @@ const IrishRubricPanel: React.FC<{
               <button
                 key={requirement}
                 type="button"
+                className="ui-choice mb-claim-row"
+                data-claimed={checked}
                 aria-pressed={checked}
                 onClick={() => onRequirement(index)}
-                style={{
-                  display: 'grid', gridTemplateColumns: '24px 1fr', gap: 9,
-                  alignItems: 'center', width: '100%', padding: '10px 11px', textAlign: 'left',
-                  borderRadius: 10, border: `1.5px solid ${checked ? CLAIM : MUTED_BORDER}`,
-                  background: checked ? CLAIM : 'var(--mb-paper)',
-                  color: checked ? ON_CLAIM : INK_2,
-                  font: `500 12.5px/1.45 ${SANS}`, cursor: 'pointer',
-                }}
               >
-                <span aria-hidden style={{
-                  display: 'grid', placeItems: 'center', width: 20, height: 20, borderRadius: 6,
-                  border: `1.5px solid ${checked ? ON_CLAIM : MUTED_BORDER}`,
-                  background: checked ? ON_CLAIM : 'transparent', color: CLAIM,
-                }}>
-                  {checked ? <span style={{
-                    width: 6, height: 10, borderRight: '2px solid currentColor',
-                    borderBottom: '2px solid currentColor', transform: 'rotate(45deg) translate(-1px, -1px)',
-                  }} /> : null}
-                </span>
-                <span>{requirement}</span>
+                <SelectionMark on={checked} shape="square" />
+                <span className="mb-claim-text"><span>{requirement}</span></span>
               </button>
             );
           })}
@@ -1782,28 +1685,13 @@ const GeographyRubricPanel: React.FC<{
                 <button
                   key={`${index}-${requirement}`}
                   type="button"
+                  className="ui-choice mb-claim-row"
+                  data-claimed={checked}
                   aria-pressed={checked}
                   onClick={() => onRequirement(index)}
-                  style={{
-                    display: 'grid', gridTemplateColumns: '24px 1fr', gap: 9,
-                    alignItems: 'center', width: '100%', padding: '10px 11px', textAlign: 'left',
-                    borderRadius: 10, border: `1.5px solid ${checked ? CLAIM : MUTED_BORDER}`,
-                    background: checked ? CLAIM : 'var(--mb-paper)',
-                    color: checked ? ON_CLAIM : INK_2,
-                    font: `500 12.5px/1.45 ${SANS}`, cursor: 'pointer',
-                  }}
                 >
-                  <span aria-hidden style={{
-                    display: 'grid', placeItems: 'center', width: 20, height: 20, borderRadius: 6,
-                    border: `1.5px solid ${checked ? ON_CLAIM : MUTED_BORDER}`,
-                    background: checked ? ON_CLAIM : 'transparent', color: CLAIM,
-                  }}>
-                    {checked ? <span style={{
-                      width: 6, height: 10, borderRight: '2px solid currentColor',
-                      borderBottom: '2px solid currentColor', transform: 'rotate(45deg) translate(-1px, -1px)',
-                    }} /> : null}
-                  </span>
-                  <span>{requirement}</span>
+                  <SelectionMark on={checked} shape="square" />
+                  <span className="mb-claim-text"><span>{requirement}</span></span>
                 </button>
               );
             })}

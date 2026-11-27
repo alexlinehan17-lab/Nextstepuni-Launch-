@@ -21,7 +21,7 @@ import {
   type GeographyScoreId,
   type GeographyScores,
 } from './geographyScoring';
-import { ClaimDirections, ClaimPart, ClaimRow, marksChip } from './ClaimRows';
+import { ClaimDirections, ClaimPart, ClaimRow, marksLabel } from './ClaimRows';
 import './geography-allocation.css';
 
 interface Props {
@@ -56,7 +56,7 @@ const SrpCounter: React.FC<{
         <output aria-live="polite">{count}</output>
         <button type="button" aria-label={`One more SRP for ${label}`} disabled={!canAdd} onClick={() => onCount(Math.min(max, count + 1))}>+</button>
       </span>
-      <span className="mb-claim-chip">{marksChip(count * srp.marks)}</span>
+      <span className="mb-claim-chip">{marksLabel(count * srp.marks)}</span>
     </div>
   );
 };

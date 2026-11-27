@@ -22,7 +22,7 @@ import {
   type HistoryCoreStatementCm, type HistoryEssayRubric, type HistoryParagraphCm, type SecRubricCard,
 } from '../../types/markBank';
 import SourceMaterialReader from './SourceMaterialReader';
-import { ClaimDirections, ClaimRow, marksChip } from './ClaimRows';
+import { ClaimDirections, ClaimRow, marksChip, marksLabel } from './ClaimRows';
 import {
   bandOf,
   historyAddParagraph,
@@ -155,7 +155,7 @@ const CoreStatementMarking: React.FC<{
           <button type="button" aria-label="One more Core Statement"
             onClick={() => onScore(...historySetStatements(completed + 1))}>+</button>
         </span>
-        <span className="mb-claim-chip">{marksChip(statements.completedMarks)}</span>
+        <span className="mb-claim-chip">{marksLabel(statements.completedMarks)}</span>
       </div>
       <div className="mb-hist-ladder">
         <ClaimRow

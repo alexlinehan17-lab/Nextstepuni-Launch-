@@ -16,7 +16,7 @@
 import React, { useEffect, useState } from 'react';
 import { TRANSLATION_NO_MODEL, type SecRubricCard, type TranslationRubric, type TranslationUnit } from '../../types/markBank';
 import SourceMaterialReader from './SourceMaterialReader';
-import { marksChip } from './ClaimRows';
+import { marksChip, marksLabel } from './ClaimRows';
 import {
   partialSteps,
   translationMarks,
@@ -59,7 +59,7 @@ const UnitRow: React.FC<{
     <li className="mb-tr-unit" data-marked={mark !== null}>
       <div className="mb-tr-unit-head">
         <span className="mb-tr-unit-name">Unit {index + 1}</span>
-        <span className="mb-claim-chip">{marksChip(unit.marks)}</span>
+        <span className="mb-claim-chip">{marksLabel(unit.marks)}</span>
       </div>
       <p className="mb-tr-unit-text" lang={lang} dir="auto">{unit.text}</p>
       <div className="mb-tr-choices" role="group" aria-label={`Marks for ${name}`}>

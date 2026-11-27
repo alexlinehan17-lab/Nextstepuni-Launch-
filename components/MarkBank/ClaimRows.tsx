@@ -10,6 +10,7 @@
  * thing a student has to read to find the answer.
  */
 import React from 'react';
+import { SelectionMark } from '../ui/Choice';
 import './claim-rows.css';
 
 const Tick: React.FC = () => (
@@ -18,8 +19,16 @@ const Tick: React.FC = () => (
   </svg>
 );
 
-/** "3m", "−1m" for a deduction, "0m" for an answer the scheme prices at zero. */
+/** "3m", "−1m" for a deduction, "0m" for an answer the scheme prices at zero: the compact form,
+ *  for the places a row's own label is not (mark buttons, running totals, tariff sentences). */
 export const marksChip = (marks: number) => (marks < 0 ? `−${-marks}m` : `${marks}m`);
+
+/** A claim row's marks at its right, as the board writes them: "3 marks", "1 mark", "−1 mark" for
+ *  a deduction, "0 marks". One helper, so every subject's rows read alike. */
+export const marksLabel = (marks: number) => {
+  const size = Math.abs(marks);
+  return `${marks < 0 ? '−' : ''}${size} ${size === 1 ? 'mark' : 'marks'}`;
+};
 
 export type ClaimTone = 'full' | 'partial' | 'deduction';
 
@@ -70,7 +79,7 @@ export const ClaimRow: React.FC<{
   return (
     <button
       type="button"
-      className="mb-claim-row"
+      className="ui-choice mb-claim-row"
       data-claimed={claimed}
       data-tone={tone}
       aria-pressed={claimed}
@@ -78,13 +87,13 @@ export const ClaimRow: React.FC<{
       disabled={disabled && !claimed}
       onClick={onToggle}
     >
-      <span className="mb-claim-check" aria-hidden="true">{claimed && <Tick />}</span>
+      <SelectionMark on={claimed} shape="square" />
       <span className="mb-claim-text">
         {tag && <span className="mb-claim-tag">{tag}</span>}
         <span dir="auto">{text}</span>
         {note && <small>{note}</small>}
       </span>
-      {marks !== undefined && <span className="mb-claim-chip">{marksChip(marks)}</span>}
+      {marks !== undefined && <span className="mb-claim-chip">{marksLabel(marks)}</span>}
     </button>
   );
 };

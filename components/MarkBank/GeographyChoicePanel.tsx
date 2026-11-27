@@ -21,6 +21,8 @@
 import React from 'react';
 import type { GeographyAllocationChoice, GeographyCriterion } from '../../types/markBank';
 import HorizontalTabs from '../ui/HorizontalTabs';
+import { SelectionMark } from '../ui/Choice';
+import { marksLabel } from './ClaimRows';
 import GeographyAllocationPanel from './GeographyAllocationPanel';
 import {
   geographyChoiceScoreId,
@@ -35,12 +37,6 @@ interface Props {
   scores: GeographyScores;
   onScore: (id: GeographyScoreId, marks: number) => void;
 }
-
-const Tick: React.FC = () => (
-  <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-    <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
 
 export default function GeographyChoicePanel({ criterion, scores, onScore }: Props) {
   const { choice, directions } = criterion.allocation;
@@ -97,18 +93,18 @@ export default function GeographyChoicePanel({ criterion, scores, onScore }: Pro
             <button
               key={option.id}
               type="button"
-              className="mb-geo-choice-option"
+              className="ui-choice mb-claim-row mb-geo-choice-option"
               data-claimed={claimed}
               aria-pressed={claimed}
               aria-label={`${option.label} · ${marks}m`}
               onClick={() => onScore(choiceId, claimed ? 0 : index + 1)}
             >
-              <span className="mb-geo-choice-check" aria-hidden="true">{claimed && <Tick />}</span>
-              <span className="mb-geo-choice-text">
+              <SelectionMark on={claimed} />
+              <span className="mb-claim-text mb-geo-choice-text">
                 <span dir="auto">{option.label}</span>
                 {option.note && <small>{option.note}</small>}
               </span>
-              <span className="mb-geo-choice-chip">{marks}m</span>
+              <span className="mb-claim-chip">{marksLabel(marks)}</span>
             </button>
           );
         })}

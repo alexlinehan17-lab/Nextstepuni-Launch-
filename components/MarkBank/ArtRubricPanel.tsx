@@ -11,6 +11,7 @@
  */
 import React from 'react';
 import type { ArtAllocationRow, ArtCriterion, ArtRubric, SecRubricCard } from '../../types/markBank';
+import { SelectionMark } from '../ui/Choice';
 import { ClaimPart, ClaimRow, MarkStrip, marksChip } from './ClaimRows';
 import { artCriterionMarks, artMarks, artPlaced, artRowScoreId, artScoreId, type ArtScoreId, type ArtScores } from './artScoring';
 import './art-rubric.css';
@@ -157,9 +158,9 @@ export default function ArtRubricPanel({ card, scores, requirementChecks, onScor
           {rubric.taskRequirements.map((requirement, index) => {
             const checked = !!requirementChecks[index];
             return (
-              <button key={`${index}-${requirement}`} type="button" className="mb-art-requirement" aria-pressed={checked} onClick={() => onRequirement(index)}>
-                <span className="mb-art-tick" aria-hidden="true" />
-                <span>{requirement}</span>
+              <button key={`${index}-${requirement}`} type="button" className="ui-choice mb-claim-row mb-art-requirement" data-claimed={checked} aria-pressed={checked} onClick={() => onRequirement(index)}>
+                <SelectionMark on={checked} shape="square" />
+                <span className="mb-claim-text"><span>{requirement}</span></span>
               </button>
             );
           })}

@@ -14,8 +14,10 @@ import { loadCards } from '../components/MarkBank/deck';
 import { loadAtlasModel } from '../components/PaperTrail/atlasModel';
 import { cardsForMenuTopic, markBankCurriculumMenu } from '../components/MarkBank/curriculumMenu';
 import { resolveSessionQueue } from '../components/MarkBank/sessionPlanning';
-import type { SecCard } from '../types/markBank';
+import type { SecCard, SecPointCard } from '../types/markBank';
 import type { DeckState } from '../components/MarkBank/store';
+import { ClaimRow, marksChip, marksLabel } from '../components/MarkBank/ClaimRows';
+import SessionScreen from '../components/MarkBank/SessionScreen';
 
 afterEach(cleanup);
 const NOW = Date.UTC(2026, 10, 27, 12);
@@ -166,5 +168,43 @@ describe('changing subject', () => {
     fireEvent.click(screen.getByRole('button', { name: /^Change subject or level: / }));
     const sheet = await screen.findByRole('dialog', { name: 'Change subject or level' });
     expect(within(within(sheet).getByRole('radiogroup', { name: 'Subjects' })).getAllByRole('radio')).toHaveLength(SUBJECTS.length);
+  });
+});
+
+describe('a claimed scheme row (the board\'s claim row)', () => {
+  it('reads its marks as the board does: "3 marks", "1 mark", "−1 mark", from one helper', () => {
+    expect(marksLabel(3)).toBe('3 marks');
+    expect(marksLabel(1)).toBe('1 mark');
+    expect(marksLabel(0)).toBe('0 marks');
+    expect(marksLabel(-1)).toBe('−1 mark');
+    expect(marksChip(3)).toBe('3m');
+  });
+
+  it('a rubric row, claimed, carries the chosen state the shared choice draws: pressed, the mark on, no fill', () => {
+    const { rerender } = render(<ClaimRow text="Glucose is built up" marks={3} claimed={false} onToggle={vi.fn()} />);
+    const row = screen.getByRole('button', { name: 'Glucose is built up · 3m' });
+    expect(row).toHaveClass('ui-choice', 'mb-claim-row');
+    expect(row).toHaveAttribute('aria-pressed', 'false');
+    expect(row.querySelector('.ui-mark--square')).not.toHaveClass('ui-mark--on');
+    expect(row.querySelector('.mb-claim-chip')).toHaveTextContent(/^3 marks$/);
+    rerender(<ClaimRow text="Glucose is built up" marks={1} claimed onToggle={vi.fn()} />);
+    expect(row).toHaveAttribute('aria-pressed', 'true');
+    expect(row).toHaveAttribute('data-claimed', 'true');
+    expect(row.querySelector('.ui-mark--square')).toHaveClass('ui-mark--on');
+    expect(row.querySelector('.mb-claim-chip')).toHaveTextContent(/^1 mark$/);
+  });
+
+  it('a science row in the practice card claims the same way, and its marks read "N marks"', () => {
+    const card = biology.find((entry): entry is SecPointCard => entry.kind === 'question' && entry.rows.length === 1
+      && entry.rows[0].kind === 'point' && !entry.rows[0].permittedMarks && entry.rows[0].marks === 3)!;
+    render(<SessionScreen paperLayout cards={[card]} subjectLabel="Biology" onGrade={vi.fn()} onFinish={vi.fn()} onExit={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    const row = document.querySelector('button.mb-pt') as HTMLButtonElement;
+    expect(row).toHaveClass('ui-choice', 'mb-claim-row');
+    expect(row.querySelector('.mb-claim-chip')).toHaveTextContent(/^3 marks$/);
+    fireEvent.click(row);
+    expect(row).toHaveAttribute('aria-pressed', 'true');
+    expect(row).toHaveAttribute('data-claimed', 'true');
+    expect(row.querySelector('.ui-mark--square')).toHaveClass('ui-mark--on');
   });
 });

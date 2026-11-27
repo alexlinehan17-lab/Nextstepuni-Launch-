@@ -110,7 +110,7 @@ test.each([false, true])('a priced answer still reports its assessed accuracy wh
     rows: [{ id: 'answer', kind: 'point', verbatim: 'Synthetic complete answer', marks: 4 }] };
   mocks.loadCards.mockResolvedValue([priced]);
   await start();
-  expect(screen.getByText('4 marks')).toBeInTheDocument();
+  expect(screen.getAllByText('4 marks')[0]).toBeInTheDocument();
   expect(screen.queryByText('Confidence review')).not.toBeInTheDocument();
   if (claimed) fireEvent.click(screen.getByRole('button', { name: /Synthetic complete answer/ }));
   fireEvent.click(screen.getByRole('button', { name: 'Got it' }));

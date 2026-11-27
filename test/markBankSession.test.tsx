@@ -1158,7 +1158,7 @@ describe('claiming marks', () => {
     const c = card({ tariffModel: { kind: 'orderedSplit', notation: '2(5) + 5(2)' }, totalMarks: 20 });
     renderSession([c]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
-    expect(screen.queryByText('−2m')).not.toBeInTheDocument();
+    expect(screen.queryByText(/^−2( marks|m)$/)).not.toBeInTheDocument();
     expect(screen.getByText(/depends on how many you got/i)).toBeInTheDocument();
   });
 });
@@ -1391,7 +1391,7 @@ describe('grading', () => {
     // Shown as what the point is WORTH, not as a deduction. An unclaimed row used
     // to render "−1m" in the accent tint, so revealing a card greeted the student
     // with a column of orange minus signs before they had touched anything.
-    expect(screen.getByText('1m')).toBeInTheDocument();
+    expect(screen.getByText('1 mark')).toBeInTheDocument();
   });
 
   test('reports no total for a card whose scheme defines no per-row marks', () => {
