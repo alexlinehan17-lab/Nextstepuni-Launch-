@@ -11,25 +11,50 @@
  * (which reuses the cross-year jump).
  */
 
-import ToolMasthead from '../launchpad/ToolMasthead';
 import SubjectPicker from '../launchpad/SubjectPicker';
 import { useSubjectAccess } from '../launchpad/SubjectAccess';
 import { usePulse } from '../../hooks/usePulse';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ChevronDown as ChevronDownIcon, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
+import { ArrowLeft, ChevronRight, Ellipsis } from 'lucide-react';
 import { categoryOf, logicalQuestionIdentity, siblingsFor, strandsFor, subjectAtlasStats, taggedYearsForSubject, topicLabel, topicsForSubject, topicYearSets, type SubjectTopic, type TopicSibling } from './topics';
 import { addCard, hasCard, removeCard } from './reviewStore';
 import { masteryForSubject, type TopicMastery } from './topicMastery';
 import { downloadPack } from './revisionPack';
 import VaultQuestionCard from './VaultQuestionCard';
 import HorizontalTabs from '../ui/HorizontalTabs';
+import { Button, TextButton } from '../ui/Button';
+import { SelectionBar } from '../ui/Choice';
+import { Menu, MenuAction, MenuPanel } from '../ui/Menu';
+import { SearchField } from '../ui/Field';
+import { showMessage } from '../ui/Message';
+import { useBackStep } from '../../contexts/NavigationContext';
+import { PaperSubjectArtwork } from './PaperSubjects';
+import './atlas.css';
 import { releaseVaultPdfs } from './vaultDocs';
 import { buildVaultLink, consumeInitialVaultLocation, initialVaultFocus } from './vaultDeepLink';
 import { examTopicTaxonomyFor } from '../../data/examTopics/registry';
 import { isModelLoaded, isModelSubject, loadAtlasModel } from './atlasModel';
-import { COLORS } from '../../design/tokens';
 
 const PoliticsTopicFeed = React.lazy(() => import('./PoliticsTopicFeed'));
+
+/** The levels a subject's topic headings can be filed under, in reading order. */
+const LEVEL_KEYS = ['higher', 'ordinary', 'foundation', 'common'] as const;
+const LEVEL_WORD: Record<string, string> = { higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common' };
+
+/** A small mark per year, inked when the topic came up (the laptop's marks, now on the phone too, in ink). */
+const YearMarks: React.FC<{ years: number[]; asked: Set<number>; label: string; large?: boolean }> = ({ years, asked, label, large = false }) => (
+  <span className={`ta-marks${large ? ' ta-marks--lg' : ''}`} role="img" aria-label={label} style={{ '--ta-n': years.length } as React.CSSProperties}>
+    {years.map(y => <i key={y} className={asked.has(y) ? 'on' : undefined} />)}
+  </span>
+);
+/** The first, middle and last year under a large row of marks. */
+const YearAxis: React.FC<{ years: number[] }> = ({ years }) => (
+  <span className="ta-axis" aria-hidden="true">
+    <span className="ui-readout">{years[0]}</span>
+    {years.length > 2 && <span className="ui-readout">{years[Math.floor((years.length - 1) / 2)]}</span>}
+    <span className="ui-readout">{years[years.length - 1]}</span>
+  </span>
+);
 
 const INK = '#1a1a1a';
 const LVL: Record<string, string> = { higher: 'HL', ordinary: 'OL', foundation: 'FL', common: 'CL' };
@@ -97,6 +122,14 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const [topicQuery, setTopicQuery] = useState('');
   const [politicsView, setPoliticsView] = useState<'tasks' | 'papers'>('tasks');
   const [revVer, setRevVer] = useState(0); // bump to re-read review-deck membership
+  // The level chosen on the topic map, where the subject files its topics by level.
+  const [mapLevel, setMapLevel] = useState<string | null>(null);
+  // Which questions showed as a printed picture and which as a row into the full paper.
+  const [kinds, setKinds] = useState<Record<string, 'row' | 'printed'>>({});
+  // A topic is a step of the map: the bar's one Back returns to the map first.
+  useBackStep(Boolean(subjectId && subtopicId), () => setSubtopicId(null));
+  // A subject picker in a tool lists the student's own subjects (Alex, 26 Nov 2026), and the one open.
+  const pickerSubjects = mineIds.length ? subjects.filter(s => mineIds.includes(s.id) || s.id === subjectId) : subjects;
   // Language preference — English by default, remembered per device. The feed
   // shows one edition per question; the other stays a click away.
   const [langPref, setLangPref] = useState<'ev' | 'iv'>(() => {
@@ -147,6 +180,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     try {
       await navigator.clipboard.writeText(url);
       pulseCopied();
+      showMessage('Copied');
     } catch {
       // Clipboard blocked (insecure context / permissions) — surface the URL so
       // the student can still copy it by hand rather than failing silently.
@@ -225,17 +259,20 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
 
   if (subjectId === 'politics-and-society' && subtopicId && politicsView === 'tasks') {
     return <div className="w-full max-w-2xl mx-auto pb-12">
-      <button onClick={() => setSubtopicId(null)} className="mb-5 flex items-center gap-2 rounded-lg border-2 border-[#383838] px-3 py-2 text-sm font-semibold"><ArrowLeft size={15} /> Politics and Society</button>
-      <h2 ref={headingRef} tabIndex={-1} className="mb-3 text-2xl font-semibold outline-none" style={{ fontFamily: "'Source Serif 4', serif" }}>{topicLabel(subtopicId)}</h2>
-      <button onClick={() => setPoliticsView('papers')} className="mb-5 rounded-lg border-2 border-[#383838] px-3 py-2 text-sm font-semibold">Browse full printed questions</button>
+      <p className="t-label">Politics and Society</p>
+      <h2 ref={headingRef} tabIndex={-1} className="mb-3 t-title outline-none">{topicLabel(subtopicId)}</h2>
+      <Button className="mb-5" onClick={() => setPoliticsView('papers')}>Browse full printed questions</Button>
       <React.Suspense fallback={<p role="status">Loading practice tasks…</p>}>
         <PoliticsTopicFeed key={subtopicId} topicId={subtopicId} />
       </React.Suspense>
     </div>;
   }
 
-  // ── Level 2: the feed — one edition per question, newest first, real
-  //    paper crops with the scheme a tap below. Quiet text controls. ──
+  // ── Level 2: the topic (c-tools2-atlas "One topic", r5-topic-atlas): the
+  //    subject and level over the topic's name, its record said once with its
+  //    year marks, then its questions grouped by year, newest first. A question
+  //    that can show as a picture keeps the printed paper; one that cannot yet
+  //    is a plain row into the full paper. ──
   if (subjectId && subtopicId) {
     const years = new Set(questions.map(q => q.year));
     const referenceEntries = examTopicTaxonomyFor(subjectId)?.topics
@@ -246,128 +283,107 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     const inYear = yearFilter === 'all' ? questions : questions.filter(q => q.year === yearFilter);
     const shown = levelFilter === 'all' ? inYear : inYear.filter(q => q.level === levelFilter);
     const levelCount = (l: string) => (l === 'all' ? inYear.length : inYear.filter(q => q.level === l).length);
+    const stats = subjectAtlasStats(subjectId);
+    const shownYears = [...new Set(shown.map(q => q.year))].sort((a, b) => b - a);
+    // The level, where every question on the topic is set at one (a subject filed by level).
+    const eyebrowLevel = levels.length === 1 && LEVEL_WORD[levels[0]] ? LEVEL_WORD[levels[0]] : null;
     return (
-      <div className="w-full max-w-2xl mx-auto pb-12">
-        <button onClick={() => setSubtopicId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-5" style={{ color: '#7a7068' }}>
-          <ArrowLeft size={15} /> {subjectLabel(subjectId)}
-        </button>
-        <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.15em]" style={{ color: (CATEGORY_TINT[categoryOf(subjectId) as string] ?? CATEGORY_TINT.other).ink }}>
-          {subjectLabel(subjectId)} · {CATEGORY_LABEL[categoryOf(subjectId) as string] ?? 'Topic Atlas'}
-        </p>
-        <h2 ref={headingRef} tabIndex={-1} className="text-[26px] font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{topicLabel(subtopicId)}</h2>
-        {referenceOnly ? (
-          <p aria-live="polite" className="text-[13px] mb-5 tabular-nums" style={{ color: '#8d857c' }}>
-            {referenceEntries} reference entr{referenceEntries === 1 ? 'y' : 'ies'} · official source files pending
-          </p>
-        ) : shown.length === questions.length ? (
-          <div className="mb-5 flex items-center" aria-label={`${questions.length} questions across ${years.size} years, marking scheme beneath each`}>
-            {[
-              { v: String(questions.length), l: questions.length === 1 ? 'Question' : 'Questions' },
-              { v: String(years.size), l: years.size === 1 ? 'Year' : 'Years' },
-              { v: levels.map(l => LVL[l] ?? l).join(' · ') || 'All levels', l: 'Levels' },
-            ].map((cell, i) => (
-              <div key={cell.l} className={i > 0 ? 'border-l pl-4 sm:pl-5' : ''} style={{ borderColor: '#eeebe6', paddingRight: 18 }}>
-                <p className="text-[16px] font-semibold tabular-nums leading-tight" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{cell.v}</p>
-                <p className="mt-0.5 text-[9px] font-bold uppercase tracking-[0.14em]" style={{ color: '#9e9186' }}>{cell.l}</p>
-              </div>
-            ))}
+      <div className="ta-feed w-full pb-12">
+        <header className="ta-top ta-topic-head">
+          <div className="ta-topic-copy">
+            <p className="t-label">{subjectLabel(subjectId)} · {eyebrowLevel ?? CATEGORY_LABEL[categoryOf(subjectId) as string] ?? 'Topic Atlas'}</p>
+            <h2 ref={headingRef} tabIndex={-1} className="t-title outline-none">{topicLabel(subtopicId)}</h2>
+            {referenceOnly ? (
+              <p aria-live="polite" className="t-sub">
+                {referenceEntries} reference entr{referenceEntries === 1 ? 'y' : 'ies'} · official source files pending
+              </p>
+            ) : shown.length === questions.length ? (
+              <p className="t-sub ta-record" aria-label={`${questions.length} questions across ${years.size} years, marking scheme beneath each`}>
+                <b>{questions.length} {questions.length === 1 ? 'question' : 'questions'}</b>, asked in <b>{years.size} of the last {totalYears} years</b>
+                {levels.length > 1 ? <> · {levels.map(l => LVL[l] ?? l).join(' · ')}</> : null}
+              </p>
+            ) : (
+              <p aria-live="polite" className="t-sub">
+                {shown.length} of {questions.length} questions{yearFilter !== 'all' ? ` · ${yearFilter}` : ''}{levelFilter !== 'all' ? ` · ${LVL[levelFilter] ?? levelFilter}` : ''}
+              </p>
+            )}
           </div>
-        ) : (
-          <p aria-live="polite" className="text-[13px] mb-5 tabular-nums" style={{ color: '#8d857c' }}>
-            {shown.length} of {questions.length} questions{yearFilter !== 'all' ? ` · ${yearFilter}` : ''}{levelFilter !== 'all' ? ` · ${LVL[levelFilter] ?? levelFilter}` : ''}
-          </p>
-        )}
+          {stats.years.length > 0 && <div className="ta-head-years">
+            <YearMarks large years={stats.years} asked={years} label={`Asked in ${years.size} of the ${stats.years.length} years from ${stats.yearMin} to ${stats.yearMax}`} />
+            <YearAxis years={stats.years} />
+          </div>}
+        </header>
 
-        <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-6" style={{ borderBottom: '1px solid var(--hairline)' }}>
+        <div className="ta-filterrow">
           {levels.length > 1 && (
-            <HorizontalTabs
-              variant="pill"
-              size="sm"
-              label="Level"
-              className="shrink-0"
-              value={levelFilter}
-              onChange={l => setLevelFilter(l)}
-              options={['all', ...levels].map(l => ({ value: l, label: `${l === 'all' ? 'All levels' : LVL[l] ?? l} ${levelCount(l)}` }))}
-            />
+            <SelectionBar label="Level" size="md" className="ta-seg" value={levelFilter} onChange={l => setLevelFilter(l)}
+              options={['all', ...levels].map(l => ({ value: l, label: `${l === 'all' ? 'All levels' : LVL[l] ?? l} ${levelCount(l)}` }))} />
           )}
           {hasIrish && (
-            <HorizontalTabs
-              variant="pill"
-              size="sm"
-              label="Language"
-              className="shrink-0"
-              value={langPref}
-              onChange={pickLang}
-              options={[{ value: 'ev', label: 'English' }, { value: 'iv', label: 'Gaeilge' }]}
-            />
+            <SelectionBar label="Language" size="md" className="ta-seg" value={langPref} onChange={pickLang}
+              options={[{ value: 'ev' as const, label: 'English' }, { value: 'iv' as const, label: 'Gaeilge' }]} />
           )}
           {yearList.length > 3 && (
-            <div className="relative">
-              <select
-                value={yearFilter === 'all' ? 'all' : String(yearFilter)}
-                onChange={e => setYearFilter(e.target.value === 'all' ? 'all' : Number(e.target.value))}
-                aria-label="Year"
-                className={`appearance-none cursor-pointer rounded-[10px] py-[8px] pl-3 pr-8 text-[12.5px] font-semibold outline-none transition-colors ${
-                  yearFilter === 'all'
-                    ? 'bg-zinc-100 text-[#8d857c] hover:text-[#57534e] dark:bg-surface-soft dark:text-zinc-400'
-                    : 'bg-white text-[#1a1a1a] shadow-[0_1px_2px_rgba(26,23,20,0.10)] ring-1 ring-[#E5E1DA] dark:bg-zinc-600 dark:text-white dark:ring-zinc-600'
-                }`}
-              >
-                <option value="all">All years</option>
-                {yearList.map(y => <option key={y} value={y}>{y}</option>)}
-              </select>
-              <ChevronDownIcon size={14} aria-hidden="true" className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2" style={{ color: '#8d857c' }} />
-            </div>
+            <Menu label="Year" value={yearFilter === 'all' ? 'all' : String(yearFilter)} onChange={v => setYearFilter(v === 'all' ? 'all' : Number(v))}
+              options={[{ value: 'all', label: 'All years' }, ...yearList.map(y => ({ value: String(y), label: String(y) }))]} />
           )}
-          <span className="flex-1" />
-          {questions.length > 0 && (
-            <button
-              onClick={() => downloadPack({
+          <span className="ta-filter-gap" />
+          <MenuPanel label="Export or share" buttonLabel="Export or share this topic" className="ta-more"
+            face={<Ellipsis className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />}>
+            {questions.length > 0 && (
+              <MenuAction title="Export" meta="Download this topic's questions" onPress={() => downloadPack({
                 subjectLabel: subjectLabel(subjectId),
                 topicLabel: topicLabel(subtopicId),
                 questions: shown.length ? shown : questions,
                 dateIso: new Date(Date.now()).toISOString().slice(0, 10),
-              })}
-              className="flex items-center gap-1.5 text-[12.5px] font-medium transition-colors hover:text-[#1a1a1a]"
-              style={{ color: '#8d857c' }}
-            >
-              <Download size={13} /> Export
-            </button>
-          )}
-          <button
-            onClick={copyTopicLink}
-            aria-label="Copy a shareable link to this topic"
-            className="flex items-center gap-1.5 text-[12.5px] font-medium transition-colors hover:text-[#1a1a1a]"
-            style={copied ? { color: '#1F5F3E' } : { color: '#8d857c' }}
-          >
-            {copied ? <><CheckIcon size={13} /> Copied</> : <><Link2 size={13} /> Share</>}
-          </button>
+              })} />
+            )}
+            <MenuAction title={copied ? 'Copied' : 'Share'} meta="Copy a shareable link to this topic" onPress={() => { void copyTopicLink(); }} />
+          </MenuPanel>
         </div>
 
-        {subjectId === 'politics-and-society' && <button onClick={() => setPoliticsView('tasks')} className="mb-5 rounded-lg border-2 border-[#383838] px-3 py-2 text-sm font-semibold">Browse individual practice tasks</button>}
+        {subjectId === 'politics-and-society' && <Button className="ta-politics" onClick={() => setPoliticsView('tasks')}>Browse individual practice tasks</Button>}
 
-        <div className="space-y-5">
+        <div className="ta-years-list">
           {referenceOnly ? (
-            <p className="text-[13px] py-3 leading-relaxed" style={{ color: '#8d857c' }}>
+            <p className="t-meta ta-note">
               This reference topic is retained, but its official question material is not available in the local SEC corpus yet.
             </p>
           ) : shown.length === 0 ? (
-            <p className="text-[13px] py-3" style={{ color: '#8d857c' }}>
-              No questions match that filter. <button onClick={() => { setLevelFilter('all'); setYearFilter('all'); }} className="font-semibold underline" style={{ color: INK }}>Show all</button>
+            <p className="t-meta ta-note">
+              No questions match that filter. <TextButton onClick={() => { setLevelFilter('all'); setYearFilter('all'); }}>Show all</TextButton>
             </p>
-          ) : shown.map(q => {
-            void revVer; // recompute membership when the deck changes
-            const saved = hasCard(uid, { subjectId: q.subjectId, year: q.year, level: q.level, lang: q.lang, fileid: q.fileid, n: q.n });
+          ) : shownYears.map(y => {
+            const inThisYear = shown.filter(q => q.year === y);
+            const keys = inThisYear.map(q => `${q.year}-${q.level}-${q.lang}-${q.fileid}-${q.n}`);
+            const allRows = keys.every(k => kinds[k] === 'row');
             return (
-              <VaultQuestionCard
-                key={`${q.year}-${q.level}-${q.lang}-${q.fileid}-${q.n}`}
-                sibling={q}
-                saved={saved}
-                onToggleReview={() => toggleReview(q)}
-                onOpenInPaper={() => onOpenQuestion(q, { subjectId, subtopicId, ...(levelFilter !== 'all' ? { level: levelFilter } : {}) })}
-                topicId={subtopicId}
-                onOpenTopic={id => setSubtopicId(id)}
-              />
+              <section key={y} className="ta-year" aria-label={String(y)}>
+                <div className="ta-year-head">
+                  <p className="t-number ta-year-num">{y}</p>
+                  {allRows ? <span className="t-meta">Opens in the full paper</span> : null}
+                </div>
+                <div className="ta-year-body">
+                  {inThisYear.map((q, i) => {
+                    void revVer; // recompute membership when the deck changes
+                    const saved = hasCard(uid, { subjectId: q.subjectId, year: q.year, level: q.level, lang: q.lang, fileid: q.fileid, n: q.n });
+                    const key = keys[i];
+                    return (
+                      <VaultQuestionCard
+                        key={key}
+                        sibling={q}
+                        saved={saved}
+                        onToggleReview={() => toggleReview(q)}
+                        onOpenInPaper={() => onOpenQuestion(q, { subjectId, subtopicId, ...(levelFilter !== 'all' ? { level: levelFilter } : {}) })}
+                        topicId={subtopicId}
+                        onOpenTopic={id => setSubtopicId(id)}
+                        showLevel={levels.length > 1}
+                        onKind={kind => setKinds(current => (current[key] === kind ? current : { ...current, [key]: kind }))}
+                      />
+                    );
+                  })}
+                </div>
+              </section>
             );
           })}
         </div>
@@ -375,131 +391,121 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     );
   }
 
-  // ── Level 1: the topic map — an editorial index: curriculum units as
-  //    ruled sections, each topic a quiet row with its cross-year record. ──
+  // ── Level 1: the topic map (c-tools2-atlas, r5-topic-atlas): the tool's own
+  //    sentence as the headline; the subject (its character, no tile) and the
+  //    level side by side, search and sort under them; each topic with its
+  //    number, its count said once and a small mark per year, inked when it
+  //    came up. On a laptop the chosen topic's panel stays on the right. ──
   if (subjectId) {
     const examTaxonomy = examTopicTaxonomyFor(subjectId);
     const stats = subjectAtlasStats(subjectId);
     const yearSets = topicYearSets(subjectId);
-    const strands = strandsFor(subjectId, topics.map(t => t.subtopicId));
+    const allStrands = strandsFor(subjectId, topics.map(t => t.subtopicId));
+    // A level is chosen where the subject's topics are filed under level headings.
+    const strandLevel = (name: string) => LEVEL_KEYS.find(level => name.startsWith(LEVEL_WORD[level] + ' Level')) ?? null;
+    const levelOptions = LEVEL_KEYS.filter(level => allStrands.some(s => strandLevel(s.name) === level));
+    const activeLevel: string | null = levelOptions.length > 1 ? (levelOptions.find(level => level === mapLevel) ?? levelOptions[0]) : null;
+    const strands = activeLevel ? allStrands.filter(s => { const l = strandLevel(s.name); return !l || l === activeLevel; }) : allStrands;
     const topicById = new Map(topics.map(t => [t.subtopicId, t]));
+    const sortOptions = ([...(examTaxonomy ? ['reference'] as const : []), 'busiest', 'frequent'] as const).map(s => ({
+      value: s,
+      label: s === 'reference' ? 'A to Z' : s === 'busiest' ? 'Most asked' : 'Most recurrent',
+    }));
+    const referenceOrder = new Map(examTaxonomy?.groups.flatMap(group => group.topicIds).map((id, index) => [id, index]) ?? []);
+    const orderedByStrand = strands
+      .map(strand => {
+        const strandTopics = strand.subtopicIds
+          .map(id => topicById.get(id))
+          .filter((t): t is SubjectTopic => !!t);
+        const ordered = [...strandTopics].sort((a, b) =>
+          sort === 'reference'
+            ? (referenceOrder.get(a.subtopicId) ?? Number.MAX_SAFE_INTEGER) - (referenceOrder.get(b.subtopicId) ?? Number.MAX_SAFE_INTEGER)
+            : sort === 'busiest'
+            ? b.count - a.count || b.years - a.years || a.label.localeCompare(b.label)
+            : b.years - a.years || b.count - a.count || a.label.localeCompare(b.label));
+        return { strand, ordered };
+      })
+      .filter(entry => entry.ordered.length > 0);
+    // Contents numbering runs continuously through the whole volume.
+    const contentsNo = new Map<string, number>();
+    let running = 0;
+    for (const entry of orderedByStrand) for (const t of entry.ordered) contentsNo.set(t.subtopicId, ++running);
+    const visibleTopics = orderedByStrand.flatMap(entry => entry.ordered);
+    const selected = visibleTopics.find(t => t.subtopicId === previewId) ?? visibleTopics[0];
+    const selectedYears = selected ? yearSets.get(selected.subtopicId) ?? new Set<number>() : new Set<number>();
     return (
-      <div className="lp-atlas pb-12">
-        <ToolMasthead tool="topic-atlas" eyebrow="Follow the topic" title="Topic Atlas." subtitle="Past questions, connected by what they ask." />
-        <div className="lp-atlas-controls"><SubjectPicker value={subjectId} options={subjects.map(s => ({value:s.id,label:s.label}))} onChange={setSubjectId} /><p className="lp-body">{stats.questions.toLocaleString()} questions · {stats.yearMin}–{stats.yearMax}</p></div>
-        <div className="lp-atlas-workspace"><section>
-        <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-2" style={{ borderBottom: '1px solid var(--hairline)' }}>
-          <HorizontalTabs
-            variant="pill"
-            size="sm"
-            label="Sort topics"
-            className="shrink-0"
-            value={sort}
-            onChange={s => setSort(s)}
-            options={([...(examTaxonomy ? ['reference'] as const : []), 'busiest', 'frequent'] as const).map(s => ({
-              value: s,
-              label: s === 'reference' ? 'A–Z' : s === 'busiest' ? 'Most asked' : 'Most recurrent',
-            }))}
-          />
-          <span className="flex-1" />
+      <div className="lp-atlas ta-map pb-12">
+        <header className="ta-top">
+          <h2 ref={headingRef} tabIndex={-1} className="t-title outline-none">Every question, mapped by topic.</h2>
+          <p className="t-sub">{stats.questions.toLocaleString()} {subjectLabel(subjectId)} questions from {stats.yearMin} to {stats.yearMax}. Each small mark is a year, inked when the topic came up.</p>
+        </header>
+        <div className="ta-cols">
+        <section className="ta-list">
+        <div className="ta-controls">
+          <div className="ta-subject">
+            <SubjectPicker value={subjectId} options={pickerSubjects.map(s => ({ value: s.id, label: s.label }))} onChange={setSubjectId}
+              art={<PaperSubjectArtwork label={subjectLabel(subjectId)} className="ta-subject-art" />} />
+          </div>
+          <div className="ta-control-row">
+            {activeLevel && (
+              <SelectionBar label="Level" size="md" className="ta-seg ta-level" value={activeLevel} onChange={l => setMapLevel(l)}
+                options={levelOptions.map(l => ({ value: l, label: LEVEL_WORD[l] }))} />
+            )}
+            <Menu label="Sort topics" className="ta-sort" value={sort} onChange={s => setSort(s)} options={sortOptions} />
+          </div>
           {sortedTopics.length > 8 && (
-            <div className="relative">
-              <Search size={14} className="absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#a8a29e' }} />
-              <input
-                type="text"
-                value={topicQuery}
-                onChange={e => setTopicQuery(e.target.value)}
-                placeholder="Search topics"
-                aria-label="Search topics"
-                className="w-48 appearance-none rounded-[10px] bg-zinc-100 py-[8px] pl-8 pr-8 text-[13px] outline-none transition-shadow placeholder:text-[#a8a29e] focus:ring-2 focus:ring-accent/28 dark:bg-surface-soft dark:text-zinc-100"
-                style={{ color: INK }}
-              />
-              {topicQuery && (
-                <button onClick={() => setTopicQuery('')} aria-label="Clear search"
-                  className="absolute right-2.5 top-1/2 -translate-y-1/2" style={{ color: '#a8a29e' }}>
-                  <X size={13} />
-                </button>
-              )}
-            </div>
+            <SearchField label="Search topics" placeholder="Search topics" className="ta-search" value={topicQuery} onChange={e => setTopicQuery(e.target.value)} />
           )}
         </div>
         {topics.length === 0 ? (
-          <p className="text-[13px] py-4" style={{ color: '#8d857c' }}>
-            No topics match “{topicQuery.trim()}”. <button onClick={() => setTopicQuery('')} className="font-semibold underline" style={{ color: INK }}>Clear</button>
+          <p className="t-meta ta-note">
+            No topics match “{topicQuery.trim()}”. <TextButton onClick={() => setTopicQuery('')}>Clear</TextButton>
           </p>
-        ) : (() => {
-          // Contents numbering runs continuously through the whole volume,
-          // so the strand sections read like chapters of one book.
-          const referenceOrder = new Map(examTaxonomy?.groups.flatMap(group => group.topicIds).map((id, index) => [id, index]) ?? []);
-          const orderedByStrand = strands
-            .map(strand => {
-              const strandTopics = strand.subtopicIds
-                .map(id => topicById.get(id))
-                .filter((t): t is SubjectTopic => !!t);
-              const ordered = [...strandTopics].sort((a, b) =>
-                sort === 'reference'
-                  ? (referenceOrder.get(a.subtopicId) ?? Number.MAX_SAFE_INTEGER) - (referenceOrder.get(b.subtopicId) ?? Number.MAX_SAFE_INTEGER)
-                  : sort === 'busiest'
-                  ? b.count - a.count || b.years - a.years || a.label.localeCompare(b.label)
-                  : b.years - a.years || b.count - a.count || a.label.localeCompare(b.label));
-              return { strand, ordered };
-            })
-            .filter(entry => entry.ordered.length > 0);
-          const contentsNo = new Map<string, number>();
-          let running = 0;
-          for (const entry of orderedByStrand) for (const t of entry.ordered) contentsNo.set(t.subtopicId, ++running);
-          return orderedByStrand.map(({ strand, ordered }) => (
-            <section key={strand.id} className="mt-7">
-              <div className="flex items-center gap-3 mb-1">
-                <h3 className="shrink-0 text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: '#9e9186' }}>{strand.name}</h3>
-                <span className="flex-1 h-px" style={{ backgroundColor: '#e7e3de' }} />
-                <span className="shrink-0 text-[12px] tabular-nums" style={{ color: '#b3aca3' }}>
-                  {ordered.reduce((a, t) => a + t.count, 0).toLocaleString()} q
-                </span>
-              </div>
-              <div className="space-y-2">
-                {ordered.map(t => {
-                  const m = masteryMap.get(t.subtopicId);
-                  const masteryColor = m ? (m.mastery >= 70 ? '#3A8D5F' : COLORS.accent) : null;
-                  const asked = yearSets.get(t.subtopicId) ?? new Set<number>();
-                  return (
-                    <button
-                      key={t.subtopicId}
-                      onClick={() => setSubtopicId(t.subtopicId)} onFocus={() => setPreviewId(t.subtopicId)}
-                      className="group w-full flex items-center gap-3.5 rounded-xl border border-[#E5E1DA] bg-white px-4 py-3 text-left transition-all duration-150 hover:-translate-y-[1px] hover:border-[#383838] dark:border-zinc-700 dark:bg-surface-paper dark:hover:border-zinc-400"
-                    >
-                      <span aria-hidden="true" className="w-6 shrink-0 text-right text-[13px] tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: '#b3aca3' }}>
-                        {String(contentsNo.get(t.subtopicId) ?? 0).padStart(2, '0')}
+        ) : orderedByStrand.map(({ strand, ordered }) => (
+          <section key={strand.id} className="ta-strand" aria-label={strand.name}>
+            <div className="ta-listhead">
+              <h3 className="t-label">{strand.name}</h3>
+              <span className="ui-readout ta-muted">{ordered.reduce((a, t) => a + t.count, 0).toLocaleString()} questions<span className="ta-wide-only"> · a mark per year</span></span>
+            </div>
+            <ul className="ta-topics">
+              {ordered.map(t => {
+                const m = masteryMap.get(t.subtopicId);
+                const asked = yearSets.get(t.subtopicId) ?? new Set<number>();
+                const marks = <YearMarks years={stats.years} asked={asked} label={`Asked in ${t.years} of ${totalYears} years`} />;
+                return (
+                  <li key={t.subtopicId}>
+                    <button type="button" className="ui-part ta-topic" data-on={selected?.subtopicId === t.subtopicId || undefined}
+                      onClick={() => setSubtopicId(t.subtopicId)} onFocus={() => setPreviewId(t.subtopicId)} onMouseEnter={() => setPreviewId(t.subtopicId)}>
+                      <span className="ui-readout ta-num" aria-hidden="true">{String(contentsNo.get(t.subtopicId) ?? 0).padStart(2, '0')}</span>
+                      <span className="ta-topic-body">
+                        <span className="ta-topic-title">{t.label}</span>
+                        <span className="t-meta"><span className="ta-phone-only">{t.count} questions · </span>{t.years} of {totalYears} years{m ? ` · ${m.mastery}%` : ''}</span>
+                        <span className="ta-phone-only ta-topic-marks">{marks}</span>
                       </span>
-                      <span className="flex-1 min-w-0">
-                        <span className="block text-[15.5px] leading-snug text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{t.label}</span>
-                        <span className="block sm:hidden text-[11.5px] mt-0.5 tabular-nums" style={{ color: '#9e9186' }}>{t.count} questions · {t.years} of {totalYears} years</span>
-                      </span>
-                      {masteryMap.size > 0 && (
-                        <span className="shrink-0 w-10 text-right text-[11px] font-semibold tabular-nums" style={{ color: masteryColor ?? '#d8d3cc' }}>
-                          {m ? `${m.mastery}%` : ''}
-                        </span>
-                      )}
-                      <span className="shrink-0 w-10 text-right text-[13px] tabular-nums" style={{ color: '#8d857c' }}>{t.count}</span>
-                      <span className="shrink-0 hidden sm:flex items-center gap-[2px]" aria-label={`Asked in ${t.years} of ${totalYears} years`}>
-                        {stats.years.map(y => (
-                          <span
-                            key={y}
-                            title={String(y)}
-                            className="inline-block w-[4.5px] h-[13px] rounded-[2px] transition-colors"
-                            style={{ backgroundColor: asked.has(y) ? 'rgba(var(--nsu-orange-rgb), 0.55)' : 'var(--surface-soft)' }}
-                          />
-                        ))}
-                      </span>
+                      <span className="ta-wide-only ta-topic-marks">{marks}</span>
+                      <span className="ta-wide-only ui-readout ta-count">{t.count}</span>
+                      <ChevronRight className="ui-icon ta-phone-only ta-chev" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
                     </button>
-                  );
-                })}
-              </div>
-            </section>
-          ));
-        })()}
-        <p className="lp-body mt-5 text-xs">Frequency describes past papers, not what will appear next.</p>
-        </section><aside className="lp-panel lp-atlas-preview">{(() => {const selected = topics.find(t => t.subtopicId === previewId) ?? topics[0];return selected ? <><p className="lp-eyebrow">Selected topic</p><h2 className="lp-title">{selected.label}</h2><p className="lp-body">{selected.count} questions · {selected.years} of {totalYears} years</p><p className="lp-body mt-5">Browse the original questions and open each with its linked marking scheme.</p><button className="lp-button w-full mt-6" onClick={() => setSubtopicId(selected.subtopicId)}>Explore this topic <span aria-hidden="true">→</span></button></> : <p className="lp-body">Choose a topic from the map.</p>;})()}</aside></div>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        ))}
+        <p className="t-meta ta-foot">Frequency describes past papers, not what will appear next.</p>
+        </section>
+        <aside className="ta-panel" aria-label="Selected topic">{selected ? <>
+          <p className="t-label">Selected topic</p>
+          <h2 className="t-title">{selected.label}</h2>
+          <p className="t-sub ta-record"><b>{selected.count} questions</b>, asked in <b>{selected.years} of the last {totalYears} years</b></p>
+          {stats.years.length > 0 && <div className="ta-head-years">
+            <YearMarks large years={stats.years} asked={selectedYears} label={`Asked in ${selected.years} of the ${stats.years.length} years from ${stats.yearMin} to ${stats.yearMax}`} />
+            <YearAxis years={stats.years} />
+          </div>}
+          <p className="t-meta">Browse the original questions and open each with its linked marking scheme.</p>
+          <Button kind="main" size="lg" block arrow="forward" onClick={() => setSubtopicId(selected.subtopicId)}>Explore this topic</Button>
+        </> : <p className="t-meta">Choose a topic from the map.</p>}</aside>
+        </div>
       </div>
     );
   }

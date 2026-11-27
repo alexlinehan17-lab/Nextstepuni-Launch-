@@ -13,7 +13,9 @@
  */
 
 import React, { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
-import { BookOpenCheck, Check, ChevronDown, ExternalLink, Plus, Scale } from 'lucide-react';
+import { Check, ExternalLink, Plus } from 'lucide-react';
+import { Button, IconButton, TextButton } from '../ui/Button';
+import { List, Row } from '../ui/List';
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 import { type PaperAnswerMap, type PaperAnswerQuestion } from '../../types/paperTrail';
 import CropView from './CropView';
@@ -30,7 +32,6 @@ import { questionLabel, type TopicSibling } from './topics';
 import { sittingLabel } from './sitting';
 import { lensFor } from '../../data/markingLens';
 import { physicalEducationTask } from './physicalEducationTasks';
-import { COLORS } from '../../design/tokens';
 const PhysicalEducationTaskCard = lazy(() => import('./PhysicalEducationTaskCard'));
 import { audioForPaper } from './paperRecording';
 import FrenchPaperAudio from './FrenchPaperAudio';
@@ -39,7 +40,6 @@ import { asksForQuestion, isModelSubject, markBankLinkForCards } from './atlasMo
 import { isUnpricedSectionCard, unpricedSectionChip, type SecCard } from '../../types/markBank';
 
 const INK = '#1a1a1a';
-const ACCENT = COLORS.accent;
 const LVL: Record<string, string> = { higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common' };
 // A few verified booklet formats deliberately allocate more than three pages
 // to one Paper Trail card. Applied Mathematics questions can span four pages;
@@ -127,6 +127,11 @@ interface Props {
    *  shows only the parts of this one, with the rest a tap away. */
   topicId?: string;
   onOpenTopic?: (topicId: string) => void;
+  /** Tells the topic page whether this question showed as the printed paper or as a row into the full paper
+   *  (its year then says "Opens in the full paper"). */
+  onKind?: (kind: 'row' | 'printed') => void;
+  /** Name the level beside the question (default true); a topic set at one level says it once, above. */
+  showLevel?: boolean;
 }
 
 /** Printed order of a part from its reference: "Q14(c)(iv)2" reads (c), (iv), 2. Letters, roman numerals and
@@ -224,7 +229,7 @@ const PartsOnThisTopic: React.FC<{ sibling: TopicSibling; topicId: string; onOpe
   );
 };
 
-const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, onOpenInPaper, topicId, onOpenTopic }) => {
+const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, onOpenInPaper, topicId, onOpenTopic, onKind, showLevel = true }) => {
   // The single model: when this question's parts sit under several headings, the card leads with the parts filed
   // under this one and keeps the whole printed question one tap away.
   const splitParts = useMemo(() => {
@@ -300,76 +305,105 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
   }, [schemeOpen, schemePdf, state]);
 
   const meta = [
-    LVL[sibling.level] ?? sibling.level,
+    showLevel ? LVL[sibling.level] ?? sibling.level : null,
     sittingLabel(sibling.fileid),
     sibling.paperKey === 'p1' ? 'Paper 1' : sibling.paperKey === 'p2' ? 'Paper 2' : null,
     sibling.lang === 'iv' ? 'Gaeilge' : null,
   ].filter(Boolean) as string[];
 
   const canReveal = state.s === 'ready' && state.schemeUrl !== null && state.q.mode === 'crop';
+  const onKindRef = useRef(onKind);
+  onKindRef.current = onKind;
+  useEffect(() => {
+    if (state.s === 'ready') onKindRef.current?.('printed');
+    else if (state.s === 'fallback') onKindRef.current?.('row');
+  }, [state.s]);
   const isAccountingTask = sibling.subjectId === 'accounting' && state.s === 'ready' && Boolean(state.q.practiceTask);
 
-  return (
-    <div
-      ref={rootRef}
-      // Card stays white in dark mode (design system: all cards white) — the
-      // inline ink text depends on it.
-      className="rounded-2xl bg-white overflow-hidden"
-      style={{ border: '1.5px solid #383838' }}
-    >
-      {/* Header row */}
-      <div className="flex items-center gap-2.5 px-4 py-2.5" style={{ borderBottom: '1px solid #eeebe6' }}>
-        <span className="text-[19px] font-bold tabular-nums shrink-0" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
-          {sibling.year}
-        </span>
-        <span className="min-w-0 truncate text-[13px]" style={{ color: '#7a7068' }}>
-          {[...meta, (state.s === 'ready' && state.q.label) || questionLabel(sibling)].join(' · ')}
-        </span>
-        <span className="flex-1" />
-        <button
-          onClick={onToggleReview}
-          aria-pressed={saved}
-          aria-label={saved ? 'Remove from daily review' : 'Add to daily review'}
-          title={saved ? 'In your daily review' : 'Add to daily review'}
-          className="shrink-0 w-7 h-7 rounded-lg flex items-center justify-center transition-colors hover:bg-[#f5f4f2]"
-          style={saved ? { color: '#1F5F3E' } : { color: '#9e9186' }}
-        >
-          {saved ? <Check size={14} /> : <Plus size={14} />}
-        </button>
-        <button
-          onClick={onOpenInPaper}
-          className="shrink-0 flex items-center gap-1 text-[11.5px] font-semibold"
-          style={{ color: '#9e9186' }}
-          title="Open in the full paper"
-        >
-          Full paper <ExternalLink size={12} />
-        </button>
-      </div>
+  const name = (state.s === 'ready' && state.q.label) || questionLabel(sibling);
+  const reviewButton = (
+    <IconButton className={state.s === 'fallback' ? 'ta-ib ta-ib--plain' : 'ta-ib'} label={saved ? 'Remove from daily review' : 'Add to daily review'} aria-pressed={saved}
+      title={saved ? 'In your daily review' : 'Add to daily review'} onClick={onToggleReview}
+      icon={saved ? <Check className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+        : <Plus className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+  );
+  const parts = splitParts && topicId ? <div className="ta-paper"><PartsOnThisTopic sibling={sibling} topicId={topicId} onOpenTopic={onOpenTopic} /></div> : null;
+  // How the marks are given (the Marking Lens): today's words, on the page in ink.
+  const lensBlock = lens ? (
+    <div className="ta-lens">
+      <TextButton onClick={() => setLensOpen(v => !v)} aria-expanded={lensOpen}>How the marks are given</TextButton>
+      {lensOpen && (
+        <div className="ta-paper ta-lens-body">
+          <div className="ta-lens-head">
+            <p className="t-sub">{lens.headline}</p>
+            <span className="ui-readout">{lens.totalMarks} marks</span>
+          </div>
+          <ol className="ta-lens-parts">
+            {lens.parts.map((p, i) => (
+              <li key={i}>
+                <span className="ta-lens-copy">
+                  {p.part && <span className="t-label">{p.part}</span>}
+                  <span className="ta-lens-task">{p.task}</span>
+                  <span className="ui-readout">{p.notation}</span>
+                  <span className="t-meta">{p.decoded}</span>
+                </span>
+                <span className="ta-lens-marks" aria-label={`${p.marks} marks`}>{p.marks}<span className="t-meta"> m</span></span>
+              </li>
+            ))}
+          </ol>
+          {lens.pitfall && (
+            <div className="ta-lens-pitfall">
+              <p className="t-label">Where marks are lost</p>
+              <p className="t-sub">{lens.pitfall.text}</p>
+              <p className="t-meta">{lens.pitfall.cite}</p>
+            </div>
+          )}
+          <p className="t-label ta-lens-cite">{lens.cite} — © State Examinations Commission</p>
+        </div>
+      )}
+    </div>
+  ) : null;
 
-      {/* Body */}
-      {splitParts && topicId && <PartsOnThisTopic sibling={sibling} topicId={topicId} onOpenTopic={onOpenTopic} />}
+  // A question that cannot show as a picture yet: a plain row into the full paper.
+  if (state.s === 'fallback') {
+    return (
+      <div ref={rootRef} className="ta-card ta-card--row">
+        <div className="ta-row-line">
+          <List className="ta-qrow"><Row title={name} meta={meta.length ? meta.join(' · ') : undefined}
+            label={`${[...meta, name].join(' · ')}: open it in the full paper`} onPress={onOpenInPaper} /></List>
+          {reviewButton}
+        </div>
+        {parts}
+        {lensBlock}
+      </div>
+    );
+  }
+
+  return (
+    <div ref={rootRef} className="ta-card">
+      <div className="ta-card-head">
+        <span className="t-meta">{[...meta, name].join(' · ')}{state.s === 'ready' ? ', as printed' : ''}</span>
+        {reviewButton}
+      </div>
+      {parts}
       {splitParts && (
-        <button type="button" onClick={() => setWholeOpen(v => !v)} aria-expanded={wholeOpen}
-          className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-[13px] font-semibold"
-          style={{ color: INK, borderTop: '1px solid #eeebe6' }}>
+        <TextButton className="ta-whole" onClick={() => setWholeOpen(v => !v)} aria-expanded={wholeOpen}>
           {wholeOpen ? 'Hide the whole printed question' : 'Show the whole printed question'}
-          <ChevronDown size={14} className="transition-transform" style={wholeOpen ? { transform: 'rotate(180deg)' } : undefined} />
-        </button>
+        </TextButton>
       )}
       {visible && audioSource && <FrenchPaperAudio source={audioSource} />}
       {splitParts && !wholeOpen ? null : state.s === 'ready' ? (
-        // Stays light in dark mode too — the card itself is forced white
-        // (design system), so a zinc-950 strip here read as a black band.
-        <div className="px-3 pt-3 pb-1 bg-[#fafafa]">
+        // The printed paper, at a readable size: white in both themes.
+        <div className="ta-crop">
           {state.q.practiceTask && (
-            <div className="px-1 pb-4" style={{ color: INK }}>
+            <div className="px-1 pb-4 ta-crop-text">
               <p className="text-[13px] font-semibold whitespace-pre-line">{state.q.practiceTask.prompt}</p>
               {state.q.practiceTask.focus && <p className="text-[13px] mt-2">{state.q.practiceTask.focus}</p>}
               <p className="text-[12px] mt-2 font-semibold">{state.q.practiceTask.marks} marks · Full figures and instructions {isAccountingTask ? 'in the source reader' : 'below'}</p>
             </div>
           )}
           {state.q.audioMaterial && <AudioSourcePlayer source={state.q.audioMaterial} />}
-          {state.q.practiceInstruction && <p className="mb-3 text-sm font-semibold text-[#2a2520]">{state.q.practiceInstruction}</p>}
+          {state.q.practiceInstruction && <p className="mb-3 text-sm font-semibold ta-crop-text">{state.q.practiceInstruction}</p>}
           {isAccountingTask ? (
             <div className="mark-bank-theme pb-3">
               <SourceMaterialReader subjectId={sibling.subjectId} year={sibling.year} paperFileid={sibling.fileid}
@@ -386,136 +420,45 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
             failText="Couldn’t render this question — open the full paper."
           />}
         </div>
-      ) : state.s === 'fallback' ? (
-        <button onClick={onOpenInPaper} className="w-full text-left px-4 py-3 text-[13px]" style={{ color: '#5a5550' }}>
-          This question can’t be shown as a crop yet — <span className="font-semibold" style={{ color: ACCENT }}>open it in the full paper →</span>
-        </button>
       ) : (
-        <div className="px-4 py-6">
-          <div className="h-3 rounded-full mb-2 animate-pulse" style={{ backgroundColor: 'var(--surface-soft)', width: '82%' }} />
-          <div className="h-3 rounded-full mb-2 animate-pulse" style={{ backgroundColor: 'var(--surface-soft)', width: '64%' }} />
-          <div className="h-3 rounded-full animate-pulse" style={{ backgroundColor: 'var(--surface-soft)', width: '73%' }} />
+        <div className="ta-skeleton" aria-hidden="true">
+          <i style={{ width: '82%' }} /><i style={{ width: '64%' }} /><i style={{ width: '73%' }} />
         </div>
       )}
 
-      {/* Marking Lens — how the marks are given (scheme-grounded) */}
-      {lens && (
-        <div style={{ borderTop: '1px solid #eeebe6' }}>
-          <button
-            onClick={() => setLensOpen(v => !v)}
-            aria-expanded={lensOpen}
-            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-[13px] font-semibold transition-colors"
-            style={lensOpen ? { color: INK } : { color: ACCENT }}
-          >
-            <Scale size={15} />
-            How the marks are given
-            <ChevronDown size={14} className="transition-transform" style={lensOpen ? { transform: 'rotate(180deg)' } : undefined} />
-          </button>
-          {lensOpen && (
-            <div className="px-3 pt-3 pb-3" style={{ backgroundColor: '#FDEEDF' }}>
-              <div className="flex items-start justify-between gap-3 px-1 mb-2.5">
-                <p className="text-[12.5px] italic leading-snug" style={{ color: COLORS.accentDarkText }}>{lens.headline}</p>
-                <span
-                  className="shrink-0 text-[11px] font-bold px-2.5 py-1 rounded-full bg-white tabular-nums"
-                  style={{ color: COLORS.accentDarkText, border: '1px solid rgba(var(--nsu-orange-rgb), 0.35)' }}
-                >
-                  {lens.totalMarks} marks
-                </span>
-              </div>
-              <div className="space-y-1.5">
-                {lens.parts.map((p, i) => (
-                  <div
-                    key={i}
-                    className="flex items-start gap-3 rounded-xl bg-white px-3 py-2.5"
-                    style={{ border: '1px solid rgba(var(--nsu-orange-rgb), 0.25)' }}
-                  >
-                    <span className="flex-1 min-w-0">
-                      <span className="flex items-baseline gap-2 flex-wrap">
-                        {p.part && (
-                          <span className="text-[10px] font-bold uppercase tracking-[0.06em]" style={{ color: COLORS.accentDarkText }}>{p.part}</span>
-                        )}
-                        <span className="text-[12.5px] font-semibold" style={{ color: INK }}>{p.task}</span>
-                      </span>
-                      <span className="block text-[11.5px] font-bold mt-0.5 tabular-nums" style={{ color: COLORS.accentDarkText }}>{p.notation}</span>
-                      <span className="block text-[12px] mt-0.5 leading-snug" style={{ color: '#5a5550' }}>{p.decoded}</span>
-                    </span>
-                    <span className="shrink-0 text-right" aria-label={`${p.marks} marks`}>
-                      <span className="text-[18px] font-bold tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{p.marks}</span>
-                      <span className="text-[10px] font-semibold ml-0.5" style={{ color: '#9e9186' }}>m</span>
-                    </span>
-                  </div>
-                ))}
-              </div>
-              {lens.pitfall && (
-                <div className="mt-2 rounded-r-xl bg-white px-3 py-2.5" style={{ borderLeft: '3px solid var(--nsu-orange)' }}>
-                  <p className="text-[12px] italic leading-snug" style={{ color: COLORS.accentDarkText }}>Where marks are lost: {lens.pitfall.text}</p>
-                  <p className="text-[10px] mt-1" style={{ color: '#9e9186' }}>{lens.pitfall.cite}</p>
-                </div>
-              )}
-              <p className="text-[10px] font-bold uppercase tracking-[0.12em] mt-2.5 px-1" style={{ color: COLORS.accentDarkText }}>
-                {lens.cite} — © State Examinations Commission
-              </p>
+      {/* Marking scheme and Full paper: two equal buttons. */}
+      {state.s === 'ready' && (
+        <div className="ta-acts">
+          <Button onClick={canReveal ? () => setSchemeOpen(v => !v) : onOpenInPaper} aria-expanded={canReveal ? schemeOpen : undefined}
+            aria-label={canReveal ? (schemeOpen ? 'Hide the marking scheme' : 'Show the marking scheme') : 'Open beside its marking scheme'}>
+            Marking scheme
+          </Button>
+          <Button onClick={onOpenInPaper} title="Open in the full paper">Full paper</Button>
+        </div>
+      )}
+      {canReveal && schemeOpen && state.s === 'ready' && (
+        <div className="ta-scheme">
+          <p className="t-label">Marking scheme — © State Examinations Commission</p>
+          {state.q.schemeNote && <p className="t-sub">{state.q.schemeNote}</p>}
+          {isAccountingTask ? (
+            <div className="mark-bank-theme">
+              <SourceMaterialReader subjectId={sibling.subjectId} year={sibling.year} paperFileid={sibling.fileid}
+                source={{ kind: 'marking-scheme', label: `Question ${sibling.n}`, title: 'Worked solution and mark allocation',
+                  pages: [...new Set(schemeRegionFor(state.q).map(region => region.p))],
+                  regions: schemeRegionFor(state.q).map(region => ({ ...region, r: region.r ?? [0, 0, 1, 1] })),
+                  presentationNote: 'Original SEC marking scheme. Use the allocation for this task; page numbers refer to the PDF.',
+                  attribution: '© State Examinations Commission' }} />
             </div>
+          ) : schemePdf ? (
+            <div className="ta-crop"><CropView pdf={schemePdf} region={schemeRegionFor(state.q)} trim responsive /></div>
+          ) : schemeFailed ? (
+            <p className="t-meta">Couldn’t load the scheme — open the question in the full paper instead.</p>
+          ) : (
+            <div className="ta-skeleton" aria-hidden="true"><i style={{ width: '70%' }} /></div>
           )}
         </div>
       )}
-
-      {/* Answer toggle */}
-      {state.s === 'ready' && (
-        canReveal ? (
-          <div style={{ borderTop: '1px solid #eeebe6' }}>
-            <button
-              onClick={() => setSchemeOpen(v => !v)}
-              aria-expanded={schemeOpen}
-              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-[13px] font-semibold transition-colors"
-              style={schemeOpen ? { color: INK } : { color: ACCENT }}
-            >
-              <BookOpenCheck size={15} />
-              {schemeOpen ? 'Hide the marking scheme' : 'Show the marking scheme'}
-              <ChevronDown size={14} className="transition-transform" style={schemeOpen ? { transform: 'rotate(180deg)' } : undefined} />
-            </button>
-            {schemeOpen && (
-              <div className="px-3 pt-1 pb-2">
-                <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-2 px-1" style={{ color: '#9e9186' }}>
-                  Marking scheme — © State Examinations Commission
-                </p>
-                {state.s === 'ready' && state.q.schemeNote && (
-                  <p className="text-[13px] leading-relaxed mb-3 px-1" style={{ color: INK }}>
-                    {state.q.schemeNote}
-                  </p>
-                )}
-                {isAccountingTask ? (
-                  <div className="mark-bank-theme">
-                    <SourceMaterialReader subjectId={sibling.subjectId} year={sibling.year} paperFileid={sibling.fileid}
-                      source={{ kind: 'marking-scheme', label: `Question ${sibling.n}`, title: 'Worked solution and mark allocation',
-                        pages: [...new Set(schemeRegionFor(state.q).map(region => region.p))],
-                        regions: schemeRegionFor(state.q).map(region => ({ ...region, r: region.r ?? [0, 0, 1, 1] })),
-                        presentationNote: 'Original SEC marking scheme. Use the allocation for this task; page numbers refer to the PDF.',
-                        attribution: '© State Examinations Commission' }} />
-                  </div>
-                ) : schemePdf && state.s === 'ready' ? (
-                  <CropView pdf={schemePdf} region={schemeRegionFor(state.q)} trim responsive />
-                ) : schemeFailed ? (
-                  <p className="text-[12px] py-3 text-center" style={{ color: '#5a5550' }}>
-                    Couldn’t load the scheme — open the question in the full paper instead.
-                  </p>
-                ) : (
-                  <div className="h-3 rounded-full my-4 animate-pulse mx-1" style={{ backgroundColor: 'var(--surface-soft)', width: '70%' }} />
-                )}
-              </div>
-            )}
-          </div>
-        ) : (
-          <button
-            onClick={onOpenInPaper}
-            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-[13px] font-semibold"
-            style={{ color: ACCENT, borderTop: '2px solid var(--outline-soft)' }}
-          >
-            <BookOpenCheck size={15} /> Open beside its marking scheme
-          </button>
-        )
-      )}
-
+      {lensBlock}
     </div>
   );
 };

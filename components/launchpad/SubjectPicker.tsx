@@ -15,11 +15,14 @@ export default function SubjectPicker({
   options,
   onChange,
   label = 'Choose a subject',
+  art,
 }: {
   value: string;
   options: Option[];
   onChange: (value: string) => void;
   label?: string;
+  /** The chosen subject's character, bare, at the left of the button (Topic Atlas). */
+  art?: React.ReactNode;
 }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
@@ -47,6 +50,7 @@ export default function SubjectPicker({
           setOpen(true);
         }}
       >
+        {art ? <span className="lp-subject-art" aria-hidden="true">{art}</span> : null}
         <span>{selected?.label ?? label}</span>
         <ChevronDown size={16} className="shrink-0" />
       </button>

@@ -41,7 +41,8 @@ describe('Topic Vault — ReviseByTopic', () => {
         onBack={noop}
       />,
     );
-    expect(screen.getByText(/Topic Atlas/i)).toBeInTheDocument();
+    // The black card is gone; the tool's own sentence is the headline (area 6a).
+    expect(screen.getByRole('heading', { name: 'Every question, mapped by topic.' })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Choose a subject' })).toBeInTheDocument();
   });
 
@@ -58,7 +59,7 @@ describe('Topic Vault — ReviseByTopic', () => {
     );
     // Level 0 → 1: pick the subject tile.
     // The volume header band prints real stats: questions, topics, and a sane year span.
-    expect(screen.getByText(/[\d,]+ questions · \d{4}–\d{4}/)).toBeInTheDocument();
+    expect(screen.getByText(/[\d,]+ .+ questions from \d{4} to \d{4}\./)).toBeInTheDocument();
 
     // The first topic renders as a row; drill into its first course-specific
     // occurrence. Overlapping specifications may intentionally reuse a label.
@@ -68,7 +69,8 @@ describe('Topic Vault — ReviseByTopic', () => {
     fireEvent.click(topicBtn);
 
     // Level 2: the feed summary (unique to the feed) renders; cards fall back (no net).
-    expect(screen.getByText('Levels')).toBeInTheDocument();
+    // The record is said once, as a sentence over the year marks (area 6a; it was three figures).
+    expect(screen.getByLabelText(/\d+ questions across \d+ years, marking scheme beneath each/)).toHaveTextContent(/asked in \d+ of the last \d+ years/);
   });
 
   test('type-to-filter narrows the topic list when a subject has many topics', () => {
