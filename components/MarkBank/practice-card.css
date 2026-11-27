@@ -182,17 +182,19 @@
   }
   .mb-practice .mb-paper-session .mb-session-workspace[data-focus="true"] { grid-template-columns: minmax(0, 1fr); }
   /* The progress strip stays under the bar (board mark-bank-laptop-6), on the white page so the
-     work scrolls cleanly beneath it, and the sticky question sits the standard gap (24px) under
-     the strip's steps, never against them or the bar: the gap is the strip's own foot, so a long
-     question that scrolls under it is cut 24px clear of the steps. --mb-prog-h is the strip's
-     height: 22 + 14 + 8 + 4 + 24. */
-  .mb-practice { --mb-prog-h: 72px; }
-  .mb-p-progress { position: sticky; top: 0; z-index: 2; align-self: start; grid-column: 1 / -1; padding: 22px 0 24px; background: var(--surface-canvas); }
+     work scrolls cleanly beneath it: its white band ends 8px under the steps, so anything that
+     scrolls under it disappears at the strip's edge, in both columns. The grid's 16px row gap
+     makes the standard 24px from the steps to the question, and the sticky question keeps that
+     place. --mb-prog-h is the strip's height: 22 + 14 + 8 + 4 + 8. */
+  .mb-practice { --mb-prog-h: 56px; }
+  .mb-practice .mb-paper-session .mb-session-workspace { row-gap: var(--space-4) !important; }
+  .mb-p-progress { position: sticky; top: 0; z-index: 2; align-self: start; grid-column: 1 / -1; padding: 22px 0 8px; background: var(--surface-canvas); }
   /* Beats the old dialog sheet's static pane (mark-bank-session-paper.css, 0,3,0 !important). */
-  .mb-practice .mb-paper-session .mb-session-workspace > [data-testid="mark-bank-question-pane"] { position: sticky !important; top: var(--mb-prog-h) !important; }
+  .mb-practice .mb-paper-session .mb-session-workspace > [data-testid="mark-bank-question-pane"] { position: sticky !important; top: calc(var(--mb-prog-h) + var(--space-4)) !important; }
   .mb-practice .mb-paper-session .mb-scheme-pane { margin-top: 0 !important; }
   .mb-practice .mb-paper-draft textarea { min-height: 220px; }
   .mb-practice .mb-reveal-area, .mb-practice .mb-grade-area { padding: 0 max(var(--space-6), calc((100% - var(--mb-col)) / 2)) !important; }
+  .mb-practice .sq-question-actions { padding-inline: max(var(--space-6), calc((100% - var(--mb-col)) / 2)); }
   .mb-practice .mb-paper-session .mb-session-rail { border-top: 0 !important; }
   .mb-practice .mb-reveal-inner, .mb-practice .mb-grade-inner { padding: 18px 0 24px; border-top: 1px solid var(--hairline); }
   .mb-practice .mb-reveal-inner { display: grid; grid-template-columns: minmax(0, 1fr) 340px; align-items: center; column-gap: 32px; }

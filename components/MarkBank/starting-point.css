@@ -4,8 +4,10 @@
    field, the topics as pick-several choices (an ink outline and a drawn tick), ruled rows on the
    page, and one charcoal Start check in the footer. One typeface; tokens only. */
 
-/* The bar: its Close clears the status bar on a phone, where the dialog starts 3dvh down. */
-.mb-starting-point .mb-starting-bar { flex-shrink: 0; padding-top: max(0px, calc(var(--safe-top) - 5dvh)); background: transparent; }
+/* The bar. In the laptop dialog it sits on the dialog's face; on a phone the over-screen's bar
+   owns the top inset itself (frame-bar), as the practice card's does. */
+.mb-starting-point .mb-starting-bar { flex-shrink: 0; }
+.mb-live-session-dialog.mb-starting-point .mb-starting-bar { padding-top: max(0px, calc(var(--safe-top) - 5dvh)); background: transparent; }
 @media (min-width: 768px) {
   .mb-starting-point .mb-starting-bar .ui-bar-row { padding: 0 max(32px, calc((100% - 720px) / 2)); }
 }
@@ -18,8 +20,8 @@
 .mb-starting-head { display: flex; flex-direction: column; gap: var(--space-2); margin-bottom: var(--space-6); }
 .mb-starting-point .mb-starting-head p { margin: 0; }
 .mb-starting-point .mb-starting-head .mb-starting-kicker { color: var(--ink-muted); }
-.mb-starting-point [data-slot=dialog-title].mb-starting-title { margin: 0; color: var(--ink-primary); font: 400 29px/33px var(--font-ui); letter-spacing: -0.04em; text-wrap: balance; }
-.mb-starting-point [data-slot=dialog-description].mb-starting-lede { color: var(--ink-secondary); font: 400 15px/21px var(--font-ui); }
+.mb-starting-point .mb-starting-title { margin: 0; color: var(--ink-primary); font: 400 29px/33px var(--font-ui); letter-spacing: -0.04em; text-wrap: balance; }
+.mb-starting-point .mb-starting-lede { color: var(--ink-secondary); font: 400 15px/21px var(--font-ui); }
 
 .mb-starting-search { margin-bottom: var(--space-6); }
 
@@ -62,7 +64,7 @@
 }
 
 @media (max-width: 700px) {
-  .mb-starting-point .mb-starting-bar { padding-top: max(0px, calc(var(--safe-top) - 3dvh)); }
+  .mb-live-session-dialog.mb-starting-point .mb-starting-bar { padding-top: max(0px, calc(var(--safe-top) - 3dvh)); }
   .mb-starting-point .sq-summary-body { padding: var(--space-2) var(--space-6) var(--space-8); }
   .mb-starting-point .sq-summary-footer.mb-starting-foot { flex-direction: column; align-items: stretch; gap: var(--space-2); padding: var(--space-3) var(--space-6) calc(var(--space-3) + max(0px, var(--safe-bottom) - 3dvh)); }
   .mb-starting-actions { flex-direction: column-reverse; }
@@ -73,7 +75,13 @@
   .mb-starting-more > summary > .ui-icon { transition: none; }
 }
 
-/* The check's line under the practice bar while the questions are open. */
+/* A phone: the check is a full screen of its own (the shared OverScreen): the bar, the page
+   scrolling between, and the footer pinned clear of the home indicator. */
+.mb-starting-over .sq-summary-body { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+.mb-starting-over .sq-summary-footer.mb-starting-foot { flex: none; padding-bottom: calc(var(--space-3) + var(--safe-bottom, 0px)); background: var(--surface-canvas); }
+
+/* The check's line under the practice bar while the questions are open (unused now that the bar
+   carries it; kept for any host that still passes the banner alone). */
 .sq-session-banner.mb-starting-banner { border-bottom-color: var(--hairline); color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 
 /* "I tried this on paper", drawn by SessionScreen.tsx while the check is open. */

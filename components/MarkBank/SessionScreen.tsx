@@ -254,6 +254,9 @@ export interface SessionScreenProps {
   /** A finite post-study check using this same question and scoring surface. */
   studyReview?: {
     banner: React.ReactNode;
+    /** The practice bar's small line over the subject, in place of "Mark Bank" and of the
+     *  banner row (a starting-point check), so the screen keeps one bar. */
+    barOver?: string;
     topicTitle: (card: SecCard) => string;
     onCue: (cue: 'tap' | 'swipe' | 'skip' | 'complete') => void;
     onResponse: (cardId: string, response: SessionResponse) => void;
@@ -2885,10 +2888,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             left, Mark Bank over the subject. On a laptop, Expand folds the sidebar away and
             Contract brings it back; a phone has no Expand: the card already fills the screen. */}
         <TopBar tool ruled={!phone || underBar} className="mb-practice-bar" leave={{ kind: 'close', onPress: openExitConfirmation, label: 'Close practice' }}
-          over="Mark Bank" title={subjectLabel}
+          over={studyReview?.barOver ?? 'Mark Bank'} title={subjectLabel}
           action={phone ? undefined : <UiButton size="sm" aria-label={expanded ? 'Contract to compact view' : 'Expand to full screen'} aria-pressed={expanded}
             onClick={() => setExpanded(value => !value)}><Glyph icon={expanded ? Minimize2 : Maximize2} size={16} />{expanded ? 'Contract' : 'Expand'}</UiButton>} />
-        {studyReview?.banner}
+        {!studyReview?.barOver && studyReview?.banner}
       </> : <div style={{
         position: 'sticky', top: 0, zIndex: 3,
         background: 'var(--mb-paper)', borderBottom: `1px solid ${HAIRLINE_2}`,

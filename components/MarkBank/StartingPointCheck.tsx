@@ -1,10 +1,11 @@
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { ChevronDown } from 'lucide-react';
 import KobraScope, { Dialog, DialogContent, DialogDescription, DialogTitle } from '../approved-ui-runtime';
 import { TopBar } from '../ui/Bars';
 import { Button, Glyph } from '../ui/Button';
 import { ChoiceTile } from '../ui/Choice';
 import { SearchField } from '../ui/Field';
+import { OverScreen } from '../ui/OverScreen';
 import SessionScreen, { type SessionCardResult } from './SessionScreen';
 import { LEVEL_LABEL, type Level } from './deck';
 import type { SecCard } from '../../types/markBank';
@@ -27,6 +28,21 @@ interface Props {
   onClose: () => void;
 }
 
+/** A phone: under 768px wide. There the check is a full screen of its own (the shared
+ *  OverScreen, as the practice card is); on a laptop it stays today's dialog. */
+const usePhone = () => {
+  const query = '(max-width: 767px)';
+  const [phone, setPhone] = useState(() => typeof window !== 'undefined' && Boolean(window.matchMedia?.(query).matches));
+  useEffect(() => {
+    const media = window.matchMedia?.(query);
+    if (!media) return undefined;
+    const update = () => setPhone(media.matches);
+    media.addEventListener?.('change', update);
+    return () => media.removeEventListener?.('change', update);
+  }, []);
+  return phone;
+};
+
 export default function StartingPointCheck({ subjectLabel, level, spec, cards, memories, now, examTs, onGrade, onPractice, onClose }: Props) {
   const topics = useMemo(() => startingPointTopics(spec, level, cards), [spec, level, cards]);
   const [selected, setSelected] = useState<string[]>([]);
@@ -35,6 +51,7 @@ export default function StartingPointCheck({ subjectLabel, level, spec, cards, m
   const [questions, setQuestions] = useState<StartingPointQuestion[]>([]);
   const [results, setResults] = useState<SessionCardResult[]>([]);
   const committed = useRef(new Set<string>());
+  const phone = usePhone();
   // Re-rendering while typing must not replace the sample shown in the preview.
   const [sampleTime] = useState(now);
   const preview = useMemo(() => planStartingPoint(topics, selected, memories, sampleTime, examTs), [topics, selected, memories, sampleTime, examTs]);
@@ -51,6 +68,7 @@ export default function StartingPointCheck({ subjectLabel, level, spec, cards, m
     onFinish={complete} onExit={complete}
     studyReview={{
       banner: <div className="sq-session-banner mb-starting-banner">Starting-point check · {subjectLabel} · {LEVEL_LABEL[level]}</div>,
+      barOver: `Starting-point check · ${LEVEL_LABEL[level]}`,
       topicTitle: card => questions.find(question => question.card.id === card.id)?.title ?? subjectLabel,
       requireAttempt: true, onCue: () => {}, onResponse: () => {},
     }} />;
@@ -62,17 +80,24 @@ export default function StartingPointCheck({ subjectLabel, level, spec, cards, m
   const toggleTopic = (topicId: string) => setSelected(previous => previous.includes(topicId)
     ? previous.filter(id => id !== topicId)
     : previous.length >= STARTING_POINT_TOPICS ? previous : [...previous, topicId]);
-  // The frame is today's (a dialog over Mark Bank), drawn with the shared parts
-  // (starting-point.css): Close at the top left, and the footer's own "Back to Mark
-  // Bank" kept as today's way back at the end of each step.
-  return <KobraScope><Dialog open onOpenChange={open => { if (!open) onClose(); }}>
-    <DialogContent className="mb-live-session-dialog sq-dialog mb-starting-point" showCloseButton={false}>
+  // On a phone a full screen of its own (the shared OverScreen); on a laptop today's dialog,
+  // drawn with the shared parts (starting-point.css). One way out per step: the Close at the
+  // top left while topics are chosen; on the last step "Back to Mark Bank" is the finishing
+  // action beside it.
+  const title = phase === 'choose' ? 'Where should I start?' : 'Your next step.';
+  const lede = phase === 'choose' ? 'A small check on topics you have already covered.' : 'Based only on the questions you attempted and marked.';
+  const frame = (content: ReactNode) => phone
+    ? <OverScreen label={title} onEscape={onClose} className="mb-starting-point mb-starting-over">{content}</OverScreen>
+    : <KobraScope><Dialog open onOpenChange={open => { if (!open) onClose(); }}>
+      <DialogContent className="mb-live-session-dialog sq-dialog mb-starting-point" showCloseButton={false}>{content}</DialogContent>
+    </Dialog></KobraScope>;
+  return frame(<>
       <TopBar className="mb-starting-bar" leave={{ kind: 'close', onPress: onClose, label: 'Close starting-point check' }} />
       <div className="sq-summary-body">
         <div className="mb-starting-head">
           <p className="t-label mb-starting-kicker">{subjectLabel} / {LEVEL_LABEL[level]}</p>
-          <DialogTitle className="mb-starting-title">{phase === 'choose' ? 'Where should I start?' : 'Your next step.'}</DialogTitle>
-          <DialogDescription className="mb-starting-lede">{phase === 'choose' ? 'A small check on topics you have already covered.' : 'Based only on the questions you attempted and marked.'}</DialogDescription>
+          {phone ? <h1 className="mb-starting-title">{title}</h1> : <DialogTitle className="mb-starting-title">{title}</DialogTitle>}
+          {phone ? <p className="mb-starting-lede">{lede}</p> : <DialogDescription className="mb-starting-lede">{lede}</DialogDescription>}
         </div>
         {phase === 'choose' ? <>
           <p>Choose up to {STARTING_POINT_TOPICS} topics you have covered in class or studied yourself. Try each question without notes, then compare your answer with the official marking scheme. You can skip any question.</p>
@@ -116,12 +141,11 @@ export default function StartingPointCheck({ subjectLabel, level, spec, cards, m
         {/* The shared Button has no disabled state; until a topic is chosen the
             fieldset holds it disabled, as today, and the count beside it says why. */}
         <div className="mb-starting-actions">
-          <Button size="lg" onClick={onClose}>Back to Mark Bank</Button>
+          {phase !== 'choose' && <Button size="lg" onClick={onClose}>Back to Mark Bank</Button>}
           {phase === 'choose' && <fieldset className="mb-starting-go" disabled={!preview.length}>
             <Button kind="main" size="lg" block arrow="forward" onClick={() => { setQuestions(preview); setPhase('questions'); }}>Start check · {preview.length} {preview.length === 1 ? 'question' : 'questions'}</Button>
           </fieldset>}
         </div>
       </footer>
-    </DialogContent>
-  </Dialog></KobraScope>;
+    </>);
 }
