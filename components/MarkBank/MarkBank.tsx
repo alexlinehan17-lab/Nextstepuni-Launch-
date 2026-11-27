@@ -25,7 +25,7 @@ import { COLORS } from '../../design/tokens';
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import MarkBankLibrary from './MarkBankLibrary';
+import MarkBankLibrary, { type LibraryPage } from './MarkBankLibrary';
 import ListeningStudio from '../ListeningStudio';
 import { LISTENING_SUBJECT_IDS } from '../ListeningStudio/model';
 import StartingPointCheck from './StartingPointCheck';
@@ -219,6 +219,11 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, stu
   const deckId = `${subjectId}-${level}`;
   const [deck, setDeck] = useState<DeckState>(() => readLocal(uid, deckId));
   const [screen, setScreen] = useState<Screen>({ name: 'board' });
+  // The library's page (a strand, a topic), held here so a practice run returns
+  // the student to where they started it; a new subject or level opens on its home.
+  const [libraryPlace, setLibraryPlace] = useState<{ deckId: string; pages: LibraryPage[] }>({ deckId, pages: [{ at: 'home' }] });
+  const libraryPages = libraryPlace.deckId === deckId ? libraryPlace.pages : undefined;
+  const setLibraryPages = useCallback((pages: LibraryPage[]) => setLibraryPlace({ deckId, pages }), [deckId]);
   const [loaded, setLoaded] = useState(false);
   const [online, setOnline] = useState(() => typeof navigator === 'undefined' ? true : navigator.onLine);
 
@@ -491,6 +496,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, stu
 
   return <MarkBankLibrary key={deckId} examDate={examDate} subjectId={subjectId} level={level} cards={reviewCards} state={deck} now={now}
     listeningCount={listeningCount} onOpenListeningStudio={onOpenListeningStudio}
+    pages={libraryPages} onPagesChange={setLibraryPages}
     chooseSubject={chooseSubject} chooseLevel={chooseLevel} canSelectSubject={canSelectSubject}
     onStartingPoint={() => setScreen({ name: 'starting-point' })}
     onStart={startSession} busy={launchingTopicId!==null} ready={loaded&&!cardsLoading&&!cardsError}

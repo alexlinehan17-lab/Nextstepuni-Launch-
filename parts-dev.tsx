@@ -26,7 +26,9 @@ import { ChartNoAxesColumn, ChevronLeft, Compass, Ellipsis, House, Map, Search, 
 import IllustrationTheme from './components/IllustrationTheme';
 import { Arrow, Button, Glyph, IconButton, TextButton } from './components/ui/Button';
 import { ChoiceGroup, SelectionBar, SelectionMark, SelectionWords, Switch } from './components/ui/Choice';
-import { Menu, MenuAction, MenuLabel, MenuPanel, MenuSwitch } from './components/ui/Menu';
+import { Menu, MenuAction, MenuLabel, MenuPanel, MenuRadioRows, MenuSegment, MenuSwitch } from './components/ui/Menu';
+// The subject button's own look (Mark Bank), shown as the menu's button on the sheet.
+import './components/MarkBank/mark-bank-library.css';
 import { Confirm, Sheet } from './components/ui/Sheet';
 import { MessageHost, showMessage } from './components/ui/Message';
 import { PinnedFooter, TabBar, TopBar } from './components/ui/Bars';
@@ -229,7 +231,26 @@ function MenuSection() {
       <Spec label="A menu of a screen's tools" caption="MenuPanel (the paper viewer's Tools on a laptop): the phone's Tools sheet as a menu under its button. A switch turns a thing on and the menu stays open; a row with a chevron opens it; up-right leaves the app.">
         <Line><span data-demo="menu-panel"><MenuPanelDemo /></span></Line>
       </Spec>
+      <Spec label="A box that opens a menu of choices" caption="MenuPanel with the screen's own box as its button (Mark Bank's subject and level on a laptop): a selection bar (MenuSegment) and rows with a character (MenuRadioRows), the current one ticked. Choosing applies at once.">
+        <Line><span data-demo="menu-choices"><MenuChoicesDemo /></span></Line>
+      </Spec>
     </Section>
+  );
+}
+
+function MenuChoicesDemo() {
+  const [level, setLevel] = useState<'higher' | 'ordinary'>('higher');
+  const [subject, setSubject] = useState('biology');
+  const names: Record<string, string> = { accounting: 'Accounting', biology: 'Biology', chemistry: 'Chemistry' };
+  return (
+    <MenuPanel label="Change subject or level" buttonLabel={`Change subject or level: ${names[subject]}`} align="start" buttonClassName="mb-subject" className="mb-subject-menu"
+      face={<><span className="mb-subject-art" aria-hidden="true"><img src={CREW.accounting} alt="" /></span><span className="mb-subject-copy"><span className="t-name-sm">{names[subject]}</span><span className="t-meta">{level === 'higher' ? 'Higher' : 'Ordinary'} level</span></span></>}>
+      <MenuLabel>Paper level</MenuLabel>
+      <MenuSegment label="Paper level" value={level} onChange={value => setLevel(value === 'ordinary' ? 'ordinary' : 'higher')} options={[{ value: 'higher', label: 'Higher' }, { value: 'ordinary', label: 'Ordinary' }]} />
+      <MenuLabel>Your subjects</MenuLabel>
+      <MenuRadioRows label="Your subjects" value={subject} onChange={setSubject}
+        options={Object.entries(names).map(([value, label]) => ({ value, label, art: <img src={CREW.accounting} alt="" /> }))} />
+    </MenuPanel>
   );
 }
 
@@ -398,6 +419,14 @@ function FieldsSection() {
           <Row external href="#download" title="Download the paper" meta="Opens in your browser · PDF · 1.3 MB" />
           <Row title="Offer me questions when I finish" trailing={<Switch checked={on} onChange={setOn} label="Offer me questions when I finish" />} />
           <Row art={<img src={CREW.irish} alt="" />} title="Irish" meta="Practice · 45 min" label="Study Irish: Practice, 45 minutes" onPress={() => {}} />
+        </List>
+      </Spec>
+      <Spec label="Rows with a number, a bar and a count" caption="A topic in a list (Mark Bank): its number in the readout at the left, a 3px ink bar under the name for the share tried, the count at the right. Chosen in place, with its detail beside the list on a laptop: an ink outline and no chevron.">
+        <List>
+          <Row lead="2.1" title="Enzymes" progress={41 / 151} value="41 / 151" onPress={() => {}} />
+          <Row lead="02" title="Structures and Processes of Life" progress={104 / 2023} meta="19 topics · 104 of 2,023 tried" onPress={() => {}} />
+          <Row lead="2.2" title="Photosynthesis" progress={24 / 138} value="24 / 138" selected onPress={() => {}} />
+          <Row lead="2.2" title="Respiration" progress={9 / 129} value="9 / 129" selected={false} onPress={() => {}} />
         </List>
       </Spec>
       <Spec label="Rows that move forward or open in place" caption="The next part of a screen ends in an arrow (it moves forward). A row that opens under itself ends in a chevron-down that turns up while it is open.">

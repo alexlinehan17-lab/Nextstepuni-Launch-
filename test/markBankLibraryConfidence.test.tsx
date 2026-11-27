@@ -2,6 +2,7 @@ import { cleanup, fireEvent, render, screen, within } from '@testing-library/rea
 import { afterEach, beforeAll, expect, it, vi } from 'vitest';
 import { loadAtlasModel } from '../components/PaperTrail/atlasModel';
 import MarkBankLibrary from '../components/MarkBank/MarkBankLibrary';
+import { markBankCurriculumMenu, menuTopicIds } from '../components/MarkBank/curriculumMenu';
 import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 import type { SecCard } from '../types/markBank';
 
@@ -11,7 +12,9 @@ beforeAll(() => loadAtlasModel('russian'));
 
 function library(card: SecCard) {
   const onStart = vi.fn();
-  render(<MarkBankLibrary subjectId="russian" level="higher" cards={[card]}
+  // The questions of a topic are listed on its Browse page (Structure A, 24 Nov 2026), not under the topic list.
+  const topicId = menuTopicIds(card, markBankCurriculumMenu('russian', 'higher', undefined, [card]))[0];
+  render(<MarkBankLibrary subjectId="russian" level="higher" cards={[card]} pages={[{ at: 'home' }, { at: 'browse', topicId }]}
     state={{ v: 1, cards: {}, updatedAt: 0 }} now={() => Date.UTC(2026, 10, 12)}
     chooseSubject={vi.fn()} chooseLevel={vi.fn()} canSelectSubject={() => true}
     onStart={onStart} busy={false} ready loading={false} error={false}

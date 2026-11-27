@@ -177,15 +177,16 @@ try {
 
   // Opening a long select (Mark Bank's subjects) scrolled the whole page to the
   // bottom: the menu's first frame sat at the end of <body> while the selected
-  // option took focus (index.css, 2026-10-14).
-  await open('view=innovation-zone&tool=mark-bank', 1024, 'light', '[aria-label="Choose subject"]', true);
+  // option took focus (index.css, 2026-10-14). Since 27 Nov 2026 (area 6b) the
+  // subject and level are one button; on a laptop it opens a menu under itself.
+  await open('view=innovation-zone&tool=mark-bank', 1024, 'light', 'button.mb-subject', true);
   const pickerBefore = await frame.evaluate(() => window.scrollY);
-  await frame.getByRole('combobox', { name: 'Choose subject' }).click();
-  await frame.locator('[data-slot=select-content]').waitFor();
+  await frame.locator('button.mb-subject').click();
+  await frame.locator('[role=menu].mb-subject-menu').waitFor();
   await page.waitForTimeout(600);
   const picker = await frame.evaluate(() => {
-    const trigger = document.querySelector('[aria-label="Choose subject"]').getBoundingClientRect();
-    const menu = document.querySelector('[data-slot=select-content]').getBoundingClientRect();
+    const trigger = document.querySelector('button.mb-subject').getBoundingClientRect();
+    const menu = document.querySelector('[role=menu].mb-subject-menu').getBoundingClientRect();
     return { scrollY: window.scrollY, gap: menu.top - trigger.bottom, inView: menu.bottom <= window.innerHeight + 1 };
   });
   assert.equal(picker.scrollY, pickerBefore, 'Opening the subject picker leaves the page where it was');
@@ -203,7 +204,7 @@ try {
     assert.equal(await frame.locator('.editorial-bottom-nav').isVisible(), false, 'Only one primary navigation bar');
     await capture('tablet-home', width, 'dark');
     await navigation.getByRole('button', { name: 'Mark Bank', exact: true }).click();
-    await frame.locator('[aria-label="Choose subject"]').waitFor();
+    await frame.locator('button.mb-subject').waitFor();
     assert.equal(await navigation.isVisible(), true, 'Tablet navigation persists inside tools');
     await capture('tablet-mark-bank', width, 'dark');
   }

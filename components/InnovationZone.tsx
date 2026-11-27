@@ -14,7 +14,7 @@ import { MotionDiv } from './Motion';
 import { FileSearch,
     Compass, Target,
     CalendarDays, Calculator, GitBranch,
-    Map, Milestone, Highlighter, Users, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck, Waypoints, Headphones
+    Map, Milestone, Highlighter, Users, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck, Waypoints, Headphones, Search
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment, deleteField } from 'firebase/firestore';
 import { saveInBackground } from '../utils/firestoreWrite';
@@ -62,6 +62,8 @@ import { useNavigation } from '../contexts/NavigationContext';
 import ToolMasthead, { ToolArtwork, ToolIntroductionContext } from './launchpad/ToolMasthead';
 import LaunchpadToolCard from './launchpad/LaunchpadToolCard';
 import { TopBar } from './ui/Bars';
+import { Glyph, IconButton } from './ui/Button';
+import { ToolBarContext, type ToolBarState } from './launchpad/toolBar';
 import { type ToolIconKey } from './ToolIconBlob';
 import { isActiveSeniorYear, isLcaYear } from '../utils/authUtils';
 import LaunchpadGuidance from './LaunchpadGuidance';
@@ -144,9 +146,9 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'examiners-chair': { themeColor: '#9E4A3E', eyebrow: 'Technique · Marking literacy', subtitle: 'Sit on the other side of the desk. Mark real-style scripts against the real SEC rules, and learn to see your own answers the way the examiner will.', showHeader: true },
 };
 
-const MOBILE_TOOL_TITLES: Record<string, string> = { 'mark-bank': 'The Mark Bank', planner: 'Your Planner' };
+const MOBILE_TOOL_TITLES: Record<string, string> = { 'mark-bank': 'Mark Bank', planner: 'Your Planner' };
 const MOBILE_TOOL_EYEBROWS: Record<string, string> = {
-      'mark-bank': 'Work the real questions', planner: 'A little structure',
+      'mark-bank': 'The practice library', planner: 'A little structure',
       'points-passport': 'Your grades, made visible', 'future-finder-revamped': 'Start with you',
       'paper-trail': 'Your exam archive', 'topic-atlas': 'Follow the topic',
     };
@@ -910,10 +912,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
     // A tool's one Back: back a step inside the tool when it has one open,
     // else to where you came from (the app's one Back), else the Launchpad.
     const toolLeave = activeTool ? { kind: 'back' as const, onPress: nav.goBack, label: 'Back' } : undefined;
+    // A tool with pages of its own names the page it is on (toolBar.ts); the
+    // bar then carries its one action, or nothing, where the drawing sat.
+    const [toolBar, setToolBar] = useState<ToolBarState | null>(null);
+    const toolBarAction = toolBar?.onSearch
+      ? <IconButton label={toolBar.searchLabel ?? 'Search'} onClick={toolBar.onSearch} icon={<Glyph icon={Search} />} />
+      : undefined;
 
   return (
     <div
-      className={`${mobileAppDesign ? 'mobile-editorial ' : ''}${activeTool === 'paper-trail' ? 'paper-trail-host ' : ''}product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24 pt-[calc(53px+var(--safe-top))] md:pt-[73px]`}
+      className={`${mobileAppDesign ? 'mobile-editorial ' : ''}${activeTool === 'paper-trail' ? 'paper-trail-host ' : ''}${activeTool === 'mark-bank' ? 'mark-bank-host ' : ''}product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24 pt-[calc(53px+var(--safe-top))] md:pt-[73px]`}
       // Fixed header at top is ~80px tall (back button + eyebrow + title) + safe-area-inset-top.
       // The journey/war-room tools historically had a smaller header offset (pt-14)
       // which left content peeking out behind the bar. Use the same generous offset
@@ -929,8 +937,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
         className="lp-navigation-header frame-top z-[60] bg-[var(--surface-canvas)] pl-[var(--safe-left)] pr-[var(--safe-right)]"
       >
         <div className={`lp-navigation-column mx-auto w-full md:px-6 ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'}`}>
-          <TopBar tool ruled leave={toolLeave} over={toolEyebrow} title={toolTitle}
-            art={activeTool ? <ToolArtwork tool={toolArtwork} /> : LAUNCHPAD_ART} />
+          <TopBar tool ruled leave={toolLeave} over={toolBar?.over ?? toolEyebrow} title={toolBar?.title ?? toolTitle}
+            art={toolBar ? undefined : activeTool ? <ToolArtwork tool={toolArtwork} /> : LAUNCHPAD_ART} action={toolBarAction} />
         </div>
       </div>
 
@@ -938,7 +946,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
           usable width, which is a reading column, not a desk: Mark Bank puts a
           question and its marking scheme side by side and needs 1092px. Tools
           listed here also own their top spacing, so `pt-16` comes off. */}
-      <main data-tool={activeTool ?? 'catalogue'} className={`${activeTool === 'journey' ? '' : 'launchpad-approved'} relative z-10 w-full flex-grow ${activeTool === 'paper-trail' ? '' : 'px-4 sm:px-6'} ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'} ${activeTool === 'paper-trail' || activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' || WIDE_TOOLS.has(activeTool ?? '') ? 'pt-0' : 'pt-6 md:pt-16'}`}>
+      <main data-tool={activeTool ?? 'catalogue'} className={`${activeTool === 'journey' ? '' : 'launchpad-approved'} relative z-10 w-full flex-grow ${activeTool === 'paper-trail' || activeTool === 'mark-bank' ? '' : 'px-4 sm:px-6'} ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'} ${activeTool === 'paper-trail' || activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' || WIDE_TOOLS.has(activeTool ?? '') ? 'pt-0' : 'pt-6 md:pt-16'}`}>
          <AnimatePresence mode="wait">
             {!activeTool ? (
                 <MotionDiv
@@ -1063,6 +1071,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
                         </div>
                     )}
                     <ToolIntroductionContext.Provider value={mobileAppDesign}>
+                    <ToolBarContext.Provider value={setToolBar}>
                     <InnovationDataProvider uid={user?.uid} subjectProfile={subjectProfile}>
                         <ToolErrorBoundary
                             key={currentTool?.id}
@@ -1074,6 +1083,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
                             </Suspense>
                         </ToolErrorBoundary>
                     </InnovationDataProvider>
+                    </ToolBarContext.Provider>
                     </ToolIntroductionContext.Provider>
                 </MotionDiv>
             )}

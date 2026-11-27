@@ -27,7 +27,7 @@
  * More than about seven options, options that need explaining, or several
  * filters together: a Sheet of choice tiles instead.
  */
-import { useState, type ReactNode } from 'react';
+import React, { useState, type ReactNode } from 'react';
 import { Menu as BaseMenu } from '@base-ui/react/menu';
 import { ArrowUpRight, Check, ChevronDown, ChevronRight } from 'lucide-react';
 import { readSafeArea } from './Frame';
@@ -143,24 +143,27 @@ export interface MenuPanelProps {
   onOpenChange?: (open: boolean) => void;
   /** Which edge of the button the menu lines up with. */
   align?: 'start' | 'end';
+  /** The button is a screen's own box you press, not the small menu button (Mark Bank's subject
+   *  button on a laptop: its character, its name and level, a chevron-down): its class. */
+  buttonClassName?: string;
   children: ReactNode;
   className?: string;
 }
 
-export function MenuPanel({ label, buttonLabel, face, head, status, open, onOpenChange, align = 'end', children, className = '' }: MenuPanelProps) {
+export function MenuPanel({ label, buttonLabel, face, head, status, open, onOpenChange, align = 'end', buttonClassName, children, className = '' }: MenuPanelProps) {
   const [ownOpen, setOwnOpen] = useState(false);
   const shown = open ?? ownOpen;
   const setShown = (next: boolean) => { if (onOpenChange) onOpenChange(next); else setOwnOpen(next); };
   return (
     <BaseMenu.Root open={shown} onOpenChange={setShown}>
-      <BaseMenu.Trigger className={`ui-part ui-menu-btn ui-menu-btn--face ${className}`.trim()} aria-label={buttonLabel}>
+      <BaseMenu.Trigger className={buttonClassName ? `ui-part ${buttonClassName}` : `ui-part ui-menu-btn ui-menu-btn--face ${className}`.trim()} aria-label={buttonLabel}>
         <span className="ui-menu-btn-text">{face}</span>
         <ChevronDown className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" focusable="false" />
       </BaseMenu.Trigger>
       <BaseMenu.Portal>
         <BaseMenu.Positioner className="ui-menu-layer" side="bottom" align={align} sideOffset={6}
           collisionPadding={shown ? menuCollisionPadding() : MENU_GAP}>
-          <BaseMenu.Popup className="ui-part ui-menu ui-menu--panel" aria-label={label}>
+          <BaseMenu.Popup className={`ui-part ui-menu ui-menu--panel${buttonClassName && className ? ` ${className}` : ''}`} aria-label={label}>
             {head ? <div className="ui-menu-head"><span className="ui-menu-head-title">{head}</span>{status ? <span className="ui-menu-head-status">{status}</span> : null}</div> : null}
             {children}
           </BaseMenu.Popup>
@@ -201,4 +204,39 @@ export function MenuAction({ title, meta, onPress, href }: { title: ReactNode; m
   return href
     ? <BaseMenu.Item className="ui-menu-item ui-menu-item--row" render={<a href={href} target="_blank" rel="noopener noreferrer" />}>{content}</BaseMenu.Item>
     : <BaseMenu.Item className="ui-menu-item ui-menu-item--row" onClick={onPress}>{content}</BaseMenu.Item>;
+}
+
+/** Two to four short choices inside a menu, drawn as the selection bar (Mark Bank's paper level
+ *  at the top of its subject menu on a laptop). Choosing applies at once. */
+export function MenuSegment<V extends string>({ label, options, value, onChange }: {
+  label: string; options: { value: V; label: ReactNode }[]; value: V; onChange: (value: V) => void;
+}) {
+  const current = Math.max(0, options.findIndex(option => option.value === value));
+  return (
+    <BaseMenu.RadioGroup value={value} onValueChange={next => onChange(next as V)} aria-label={label}
+      className="ui-seg ui-seg--md ui-menu-seg" style={{ '--seg-n': options.length, '--seg-i': current } as React.CSSProperties}>
+      <i className="ui-seg-pill" aria-hidden="true" />
+      {options.map(option => (
+        <BaseMenu.RadioItem key={option.value} value={option.value} closeOnClick className="ui-seg-item">{option.label}</BaseMenu.RadioItem>
+      ))}
+    </BaseMenu.RadioGroup>
+  );
+}
+
+/** A menu's choices as rows, each with its character at the left and a tick on the current one
+ *  (Mark Bank's subjects on a laptop). Choosing applies at once and closes the menu. */
+export function MenuRadioRows<V extends string>({ label, options, value, onChange }: {
+  label: string; options: { value: V; label: ReactNode; art?: ReactNode }[]; value: V; onChange: (value: V) => void;
+}) {
+  return (
+    <BaseMenu.RadioGroup value={value} onValueChange={next => onChange(next as V)} aria-label={label} className="ui-menu-rows">
+      {options.map(option => (
+        <BaseMenu.RadioItem key={option.value} value={option.value} closeOnClick className="ui-menu-item ui-menu-item--pick">
+          {option.art ? <span className="ui-menu-item-art" aria-hidden="true">{option.art}</span> : null}
+          <span className="ui-menu-item-title">{option.label}</span>
+          <Check className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+        </BaseMenu.RadioItem>
+      ))}
+    </BaseMenu.RadioGroup>
+  );
 }

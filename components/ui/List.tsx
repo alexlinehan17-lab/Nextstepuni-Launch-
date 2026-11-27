@@ -67,24 +67,35 @@ export interface RowProps {
   /** The link leaves the app for the browser (a document to download): it opens there, and
    *  carries the arrow up-right in place of the chevron. */
   external?: boolean;
+  /** A short readout at the leading edge, in its own column (a topic's number, "2.1"). */
+  lead?: ReactNode;
+  /** A thin bar under the title: a share done, 0 to 1 (a topic's questions tried). Ink on a
+   *  hairline track, 3px (components.md, "Data": 3px for meta). */
+  progress?: number;
+  /** One row of a list chosen in place, its detail beside the list (a laptop's topics with the
+   *  chosen topic at the right): aria-pressed, an ink outline when chosen, no chevron. */
+  selected?: boolean;
   className?: string;
 }
 
-export function Row({ title, over, meta, art, label, coach, icon, tone, value, trailing, onPress, href, external = false, forward = false, expanded, className = '' }: RowProps) {
+export function Row({ title, over, meta, art, label, coach, icon, tone, value, trailing, onPress, href, external = false, forward = false, expanded, lead, progress, selected, className = '' }: RowProps) {
   const pressable = Boolean(onPress || href);
+  const share = progress === undefined ? null : Math.max(0, Math.min(1, progress));
   const content = (
     <>
+      {lead !== undefined && lead !== null ? <span className="ui-row-lead ui-readout">{lead}</span> : null}
       {icon ? <span className="ui-row-icon" aria-hidden="true">{icon}</span> : null}
       {typeof art === 'string' ? <ThemeArtwork className="ui-row-art" src={art} transparentBackground alt="" />
         : art ? <span className="ui-row-art" aria-hidden="true">{art}</span> : null}
       <span className="ui-row-body">
         {over ? <span className="ui-row-over">{over}</span> : null}
         <span className="ui-row-title">{title}</span>
+        {share !== null ? <span className="ui-row-bar" aria-hidden="true"><i style={{ width: `${share * 100}%` }} /></span> : null}
         {meta ? <span className="ui-row-meta">{meta}</span> : null}
       </span>
       {value !== undefined && value !== null ? <span className="ui-row-value ui-readout">{value}</span> : null}
       {trailing ?? null}
-      {pressable && !trailing && tone !== 'danger'
+      {pressable && !trailing && tone !== 'danger' && selected === undefined
         ? href && external ? <ArrowUpRight className="ui-icon ui-row-chev ui-row-chev--leaves" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
         : forward ? <ArrowRight className="ui-icon ui-row-chev" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />
           : expanded !== undefined ? <ChevronDown className="ui-icon ui-row-chev ui-row-chev--down" data-open={expanded || undefined} width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
@@ -92,11 +103,11 @@ export function Row({ title, over, meta, art, label, coach, icon, tone, value, t
         : null}
     </>
   );
-  const classes = `ui-part ui-row${tone === 'danger' ? ' ui-row--danger' : ''} ${className}`.trim();
+  const classes = `ui-part ui-row${tone === 'danger' ? ' ui-row--danger' : ''}${selected !== undefined ? ' ui-row--select' : ''} ${className}`.trim();
   return (
     <li className="ui-row-item">
       {href ? <a className={classes} href={href} aria-label={label} data-coach={coach} {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>{content}</a>
-        : onPress ? <button type="button" className={classes} onClick={onPress} aria-label={label} aria-expanded={expanded} data-coach={coach}>{content}</button>
+        : onPress ? <button type="button" className={classes} onClick={onPress} aria-label={label} aria-expanded={expanded} aria-pressed={selected} data-coach={coach}>{content}</button>
           : <div className={classes}>{content}</div>}
     </li>
   );

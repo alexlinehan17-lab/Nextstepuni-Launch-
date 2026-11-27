@@ -10,7 +10,8 @@ afterEach(() => { cleanup(); localStorage.clear(); });
 test('the mobile library uses the student cohort and one heading list', async () => {
   render(<MarkBank examDate="2027-06-02" studentSubjects={[{ subjectName: 'Latin', level: 'higher' }]} />);
   expect(screen.getByText(/Your syllabus:.*Latin/)).toBeInTheDocument();
-  const index = screen.getByRole('navigation', { name: 'Subject units' });
+  // The subject home lists the strands as rows (Structure A, 24 Nov 2026).
+  const index = await screen.findByRole('list', { name: 'All topics' }, { timeout: 10000 });
   expect(await within(index).findByRole('button', { name: /Latin Language/ }, { timeout: 10000 })).toBeInTheDocument();
   // Latin is in the single model: older papers' questions are filed under the one heading list, so the index has no
   // separate 'Original paper topics' units (Alex, 18 Nov: no second old-course list).
@@ -19,14 +20,16 @@ test('the mobile library uses the student cohort and one heading list', async ()
 
 test('the subject index keeps topic practice available without a dismissible overview', async () => {
   render(<MarkBank studentSubjects={[{ subjectName: 'Geography', level: 'higher' }]} />);
-  const start = await screen.findByRole('button', { name: /^Start 6 questions$/ }, {timeout: 10000});
+  // Structure A (24 Nov 2026): the subject home, then a topic's own page with Practise; search opens from the bar (or Cmd K).
+  const start = await screen.findByRole('button', { name: /^Practise \d+ questions/ }, {timeout: 10000});
   expect(start).toBeEnabled();
-  expect(screen.getByRole('navigation', { name: 'Subject units' })).toBeInTheDocument();
+  expect(screen.getByRole('list', { name: 'All topics' })).toBeInTheDocument();
   expect(screen.queryByRole('button', { name: 'Dismiss practice overview' })).not.toBeInTheDocument();
   // Geography is in the single model: the index lists the Atlas heading the rock cycle is filed under.
-  fireEvent.change(screen.getByRole('textbox', { name: 'Search topics' }), { target: { value: 'Rocks' } });
+  fireEvent.keyDown(window, { key: 'k', metaKey: true });
+  fireEvent.change(await screen.findByRole('searchbox', { name: 'Search topics' }), { target: { value: 'Rocks' } });
   fireEvent.click(await screen.findByRole('button', { name: /Rocks, Weathering & Mass Movement.*questions/ }));
-  fireEvent.click(screen.getByRole('button', { name: /^Start 6 questions$/ }));
+  fireEvent.click(screen.getByRole('button', { name: /^Practise 6 questions$/ }));
   expect(await screen.findByRole('button', { name: 'Expand to full screen' })).toBeInTheDocument();
   expect(screen.getByRole('textbox', { name: 'Your answer' })).toBeInTheDocument();
 });
