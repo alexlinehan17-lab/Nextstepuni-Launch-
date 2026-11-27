@@ -211,7 +211,12 @@ describe('Attempt-first save failures',()=>{
   render(<Viewer title="Test" paper={paper} storageNs="student|no-scheme" onClose={()=>{}}/>);
   fireEvent.click(attemptSwitch());
   fireEvent.change(screen.getByLabelText('Your attempt'),{target:{value:'Work without a scheme'}});
-  expect(screen.getByRole('button',{name:'Keep my attempt & reveal'})).toBeDisabled();
+  // Area 6c: the shared Button has no silent disabled state; it is unavailable and says why under it, and pressing it does nothing.
+  const reveal=screen.getByRole('button',{name:'Keep my attempt & reveal'});
+  expect(reveal).toHaveAttribute('aria-disabled','true');
+  expect(screen.getByText('No marking scheme is linked to this document.')).toBeInTheDocument();
+  fireEvent.click(reveal);
+  expect(screen.getByText('Scheme hidden until you choose to reveal.')).toBeInTheDocument();
   expect(readAnswer('student|no-scheme','page:1').record.draft.text).toBe('Work without a scheme');
  });
 });

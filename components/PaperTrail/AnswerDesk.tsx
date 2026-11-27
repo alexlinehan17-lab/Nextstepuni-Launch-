@@ -1,24 +1,21 @@
 import React, { useState } from "react";
 import {
-  ArrowRight,
-  Check,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
   Download,
-  Eye,
   EyeOff,
   Hand,
   Highlighter,
-  Keyboard,
-  NotebookPen,
   PenLine,
   Undo2,
   Eraser,
   Minus,
   Plus,
 } from "lucide-react";
-import KobraScope, { Button, Textarea } from "../approved-ui-runtime";
+import { Button, IconButton } from "../ui/Button";
+import { ChoiceTile } from "../ui/Choice";
+import { AreaField } from "../ui/Field";
 import CropView from "./CropView";
 import { schemeRegionFor } from "./paperRegion";
 import {
@@ -88,6 +85,10 @@ export default function AnswerDesk(p: Props) {
     a.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   };
+  const glyph = (Icon: typeof PenLine, size: 20 | 24 = 20) => (
+    <Icon className="ui-icon" width={size} height={size} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+  );
+  // Work kept from an earlier step: on the page under a small label, not in a box.
   const captured = (
     title: string,
     value: WrittenResponse,
@@ -102,13 +103,13 @@ export default function AnswerDesk(p: Props) {
             Handwriting is kept on the paper beside this answer.
           </p>
           {view && (
-            <Button
-              variant="outline"
-              aria-pressed={p.inkView === view}
+            <ChoiceTile
+              compact
+              kind="toggle"
+              chosen={p.inkView === view}
               onClick={() => p.onInkView(view)}
-            >
-              View {view === "first" ? "first" : "second"} attempt on paper
-            </Button>
+              label={`View ${view === "first" ? "first" : "second"} attempt on paper`}
+            />
           )}
         </div>
       )}
@@ -123,41 +124,37 @@ export default function AnswerDesk(p: Props) {
       data-collapsed={p.collapsed || undefined}
       aria-label="Your answer desk"
     >
-      <KobraScope className="ad-scope" sound={false}>
+      <div className="ad-scope ui-part">
         <header className="ad-header">
           <div>
             <p className="ad-eyebrow">YOUR ANSWER DESK</p>
             <h2>Your work comes first.</h2>
           </div>
           {p.collapsed && r.mode === "ink" && r.phase !== "done" && (
-            <Button
-              variant="outline"
+            <IconButton
               className="ad-mobile-tool"
-              aria-label={p.tool === "move" ? "Use pen" : "Move page"}
+              label={p.tool === "move" ? "Use pen" : "Move page"}
               onClick={() => p.onTool(p.tool === "move" ? "pen" : "move")}
-            >
-              {p.tool === "move" ? <PenLine size={17} /> : <Hand size={17} />}
-            </Button>
+              icon={p.tool === "move" ? glyph(PenLine) : glyph(Hand)}
+            />
           )}
-          <Button
-            variant="outline"
+          <IconButton
             className="ad-collapse"
-            aria-label={
+            label={
               p.collapsed ? "Expand answer desk" : "Minimise answer desk"
             }
             aria-expanded={!p.collapsed}
             onClick={p.onCollapse}
-          >
-            {p.wide ? (
+            icon={p.wide ? (
               p.collapsed ? (
-                <ChevronLeft size={17} />
+                glyph(ChevronLeft, 24)
               ) : (
-                <ChevronRight size={17} />
+                glyph(ChevronRight, 24)
               )
             ) : (
-              <ChevronDown size={17} />
+              glyph(ChevronDown, 24)
             )}
-          </Button>
+          />
         </header>
         {p.collapsed && <span className="ad-rail-label">Answer desk</span>}
         <div className="ad-content" hidden={p.collapsed}>
@@ -175,14 +172,11 @@ export default function AnswerDesk(p: Props) {
                 </option>
               ))}
             </select>
-            <Button
-              variant="outline"
-              size="icon"
-              aria-label="Download my work"
+            <IconButton
+              label="Download my work"
               onClick={download}
-            >
-              <Download size={16} />
-            </Button>
+              icon={glyph(Download)}
+            />
           </div>
           {!p.questions.length && (
             <div className="ad-unmapped">
@@ -192,7 +186,6 @@ export default function AnswerDesk(p: Props) {
               </p>
               {p.id !== `page:${p.page}` && (
                 <Button
-                  variant="outline"
                   onClick={() => p.onQuestion(`page:${p.page}`)}
                 >
                   Work on page {p.page}
@@ -210,7 +203,7 @@ export default function AnswerDesk(p: Props) {
                     : undefined
                 }
               >
-                <span>0{i + 1}</span>
+                <span className="ui-readout">0{i + 1}</span>
                 {["Attempt", "Compare", "Try again"][i]}
               </li>
             ))}
@@ -232,23 +225,22 @@ export default function AnswerDesk(p: Props) {
               <div className="ad-modes" role="group" aria-label="How to answer">
                 {(
                   [
-                    { id: "type", label: "Type", Icon: Keyboard },
-                    { id: "ink", label: "Write on paper", Icon: PenLine },
-                    { id: "copybook", label: "Copybook", Icon: NotebookPen },
+                    { id: "type", label: "Type" },
+                    { id: "ink", label: "Write on paper" },
+                    { id: "copybook", label: "Copybook" },
                   ] as const
-                ).map(({ id, label, Icon }) => (
-                  <Button
-                    variant="outline"
+                ).map(({ id, label }) => (
+                  <ChoiceTile
+                    compact
+                    kind="toggle"
                     key={id}
-                    aria-pressed={r.mode === id}
+                    chosen={r.mode === id}
                     onClick={() => {
                       write({ mode: id });
                       if (id === "ink") p.onTool("pen");
                     }}
-                  >
-                    <Icon size={15} />
-                    {label}
-                  </Button>
+                    label={label}
+                  />
                 ))}
               </div>
               {r.mode === "ink" ? (
@@ -257,28 +249,27 @@ export default function AnswerDesk(p: Props) {
                   drawing.
                 </p>
               ) : (
-                <>
-                  <label className="ad-label" htmlFor="answer-desk-text">
-                    {r.mode === "copybook"
+                <AreaField
+                  className="ad-answer"
+                  id="answer-desk-text"
+                  label={
+                    r.mode === "copybook"
                       ? "A note to find your work"
                       : r.phase === "retry"
                         ? "Your second attempt"
-                        : "Your attempt"}
-                  </label>
-                  <Textarea
-                    id="answer-desk-text"
-                    value={response.text}
-                    maxLength={50000}
-                    onChange={(e) => setText(e.target.value)}
-                    placeholder={
-                      r.mode === "copybook"
-                        ? "e.g. Blue copybook, page 18. Your actual answer can stay on paper."
-                        : r.phase === "retry"
-                          ? "Have another go, with the scheme hidden…"
-                          : "A first step, a full answer, or anything in between…"
-                    }
-                  />
-                </>
+                        : "Your attempt"
+                  }
+                  value={response.text}
+                  maxLength={50000}
+                  onChange={(e) => setText(e.target.value)}
+                  placeholder={
+                    r.mode === "copybook"
+                      ? "e.g. Blue copybook, page 18. Your actual answer can stay on paper."
+                      : r.phase === "retry"
+                        ? "Have another go, with the scheme hidden…"
+                        : "A first step, a full answer, or anything in between…"
+                  }
+                />
               )}
               {r.phase === "attempt" && (
                 <fieldset className="ad-confidence">
@@ -288,14 +279,14 @@ export default function AnswerDesk(p: Props) {
                   <div>
                     {["Finding my way", "Nearly there", "Confident"].map(
                       (value) => (
-                        <Button
-                          variant="outline"
+                        <ChoiceTile
+                          compact
+                          kind="toggle"
                           key={value}
-                          aria-pressed={r.confidence === value}
+                          chosen={r.confidence === value}
                           onClick={() => write({ confidence: value })}
-                        >
-                          {value}
-                        </Button>
+                          label={value}
+                        />
                       ),
                     )}
                   </div>
@@ -317,41 +308,35 @@ export default function AnswerDesk(p: Props) {
                   { id: "move", label: "Move page", Icon: Hand },
                 ] as const
               ).map(({ id, label, Icon }) => (
-                <Button
-                  variant="outline"
-                  size="icon"
+                <ChoiceTile
+                  compact
+                  kind="toggle"
                   key={id}
                   aria-label={label}
-                  aria-pressed={p.tool === id}
+                  chosen={p.tool === id}
                   onClick={() => p.onTool(id)}
-                >
-                  <Icon size={17} />
-                </Button>
+                  label={glyph(Icon)}
+                />
               ))}
-              <Button
-                variant="outline"
-                size="icon"
-                disabled={!p.canUndo}
-                aria-label="Undo last stroke on this page"
-                onClick={p.onUndo}
-              >
-                <Undo2 size={17} />
-              </Button>
-              <span>Page {p.page}</span>
+              <IconButton
+                aria-disabled={!p.canUndo || undefined}
+                label="Undo last stroke on this page"
+                onClick={() => { if (p.canUndo) p.onUndo(); }}
+                icon={glyph(Undo2)}
+              />
+              <span className="ui-readout">Page {p.page}</span>
             </div>
           )}
           {r.phase === "attempt" && (
             <div className="ad-next">
               <p>
-                <EyeOff size={14} />
+                <EyeOff size={16} aria-hidden="true" />
                 Scheme hidden until you choose to reveal.
               </p>
-              <Button disabled={!p.hasScheme} onClick={p.onReveal}>
-                Keep my attempt & reveal <ArrowRight size={16} />
+              <Button kind="main" block arrow="forward" onClick={p.onReveal}
+                unavailable={p.hasScheme ? undefined : "No marking scheme is linked to this document."}>
+                Keep my attempt & reveal
               </Button>
-              {!p.hasScheme && (
-                <p>No marking scheme is linked to this document.</p>
-              )}
               <small>Using a copybook? You can reveal without typing.</small>
             </div>
           )}
@@ -367,40 +352,36 @@ export default function AnswerDesk(p: Props) {
                 <section className="ad-scheme">
                   <div className="ad-scheme-top">
                     <span className="ad-eyebrow">SEC MARKING SCHEME</span>
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      aria-label="Smaller scheme"
-                      disabled={schemeZoom <= 1}
-                      onClick={() =>
-                        setSchemeZoom((z) => Math.max(1, z - 0.25))
-                      }
-                    >
-                      <Minus size={14} />
-                    </Button>
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      aria-label="Larger scheme"
-                      disabled={schemeZoom >= 2}
-                      onClick={() =>
-                        setSchemeZoom((z) => Math.min(2, z + 0.25))
-                      }
-                    >
-                      <Plus size={14} />
-                    </Button>
+                    <span className="pv-zoom" role="group" aria-label="Scheme size">
+                      <IconButton
+                        label="Smaller scheme"
+                        aria-disabled={schemeZoom <= 1 || undefined}
+                        onClick={() => {
+                          if (schemeZoom > 1) setSchemeZoom((z) => Math.max(1, z - 0.25));
+                        }}
+                        icon={glyph(Minus)}
+                      />
+                      <IconButton
+                        label="Larger scheme"
+                        aria-disabled={schemeZoom >= 2 || undefined}
+                        onClick={() => {
+                          if (schemeZoom < 2) setSchemeZoom((z) => Math.min(2, z + 0.25));
+                        }}
+                        icon={glyph(Plus)}
+                      />
+                    </span>
                   </div>
                   {p.schemeErrored ? (
                     <>
                       <p>
                         Couldn’t load the scheme. Your attempt is still here.
                       </p>
-                      <Button variant="outline" onClick={p.onRetryScheme}>
+                      <Button onClick={p.onRetryScheme}>
                         Try loading the scheme again
                       </Button>
                     </>
                   ) : question?.mode === "pagejump" ? (
-                    <Button variant="outline" onClick={p.onFullScheme}>
+                    <Button onClick={p.onFullScheme}>
                       Open the scheme at this question
                     </Button>
                   ) : p.schemePdf && question ? (
@@ -416,56 +397,54 @@ export default function AnswerDesk(p: Props) {
                   ) : (
                     <p role="status">Loading the marking scheme…</p>
                   )}
-                  <Button variant="outline" onClick={p.onHide}>
-                    <EyeOff size={14} />
+                  <Button size="sm" onClick={p.onHide}>
                     Hide scheme
                   </Button>
                 </section>
               ) : (
                 <Button
-                  variant="outline"
                   className="ad-reopen"
                   onClick={p.onReveal}
                 >
-                  <Eye size={15} />
                   Reopen the marking scheme
                 </Button>
               )}
-              <label className="ad-label" htmlFor="answer-desk-correction">
-                One thing to take into the next attempt.
-              </label>
-              <Textarea
+              <AreaField
+                className="ad-answer"
                 id="answer-desk-correction"
+                label="One thing to take into the next attempt."
                 maxLength={50000}
                 value={r.correction}
                 onChange={(e) => write({ correction: e.target.value })}
                 placeholder="What was missing, or what would you do differently?"
               />
               <Button
-                variant="outline"
                 className="ad-correct-ink"
                 onClick={() => {
                   write({ mode: "ink" });
                   p.onTool("pen");
                 }}
               >
-                Add a correction on the paper <PenLine size={15} />
+                Add a correction on the paper
               </Button>
               <div className="ad-next">
                 <p>
                   Your original stays intact. The next attempt starts fresh.
                 </p>
                 <Button
+                  kind="main"
+                  block
+                  arrow="forward"
                   onClick={() => {
                     write({ phase: "retry" });
                     p.onHide();
                   }}
                 >
-                  Try again without the scheme <ArrowRight size={16} />
+                  Try again without the scheme
                 </Button>
                 {next && (
-                  <Button variant="outline" onClick={() => p.onQuestion(next.n)}>
-                    Move to next question <ArrowRight size={16} />
+                  <Button block arrow="forward" onClick={() => p.onQuestion(next.n)}>
+                    Move to next question
                   </Button>
                 )}
               </div>
@@ -474,19 +453,21 @@ export default function AnswerDesk(p: Props) {
           {r.phase === "retry" && (
             <div className="ad-next">
               <p>
-                <EyeOff size={14} />
+                <EyeOff size={16} aria-hidden="true" />
                 Scheme and comparison hidden.
               </p>
               <Button
+                kind="main"
+                block
                 onClick={() => {
                   write({ phase: "done" });
                   p.onHide();
                 }}
               >
-                Keep both attempts <Check size={16} />
+                Keep both attempts
               </Button>
               <Button
-                variant="outline"
+                block
                 onClick={() => {
                   write({ phase: "compare" });
                   p.onReveal();
@@ -511,23 +492,26 @@ export default function AnswerDesk(p: Props) {
                 </div>
               )}
               <Button
-                variant="outline"
+                block
                 onClick={() => write({ phase: "compare" })}
               >
                 Reopen my comparison
               </Button>
               {next && (
                 <Button
+                  kind="main"
+                  block
+                  arrow="forward"
                   className="ad-next-question"
                   onClick={() => p.onQuestion(next.n)}
                 >
-                  Next question <ArrowRight size={16} />
+                  Next question
                 </Button>
               )}
             </>
           )}
         </div>
-      </KobraScope>
+      </div>
     </aside>
   );
 }
