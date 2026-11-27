@@ -278,9 +278,6 @@
    "hex": 4,
    "tailwind [#…]": 2
   },
-  "components/PaperTrail/ImageViewer.tsx": {
-   "zinc/neutral-9xx surface": 1
-  },
   "components/PaperTrail/MilestoneCelebration.tsx": {
    "hex": 8,
    "tailwind [#…]": 1
@@ -301,21 +298,19 @@
    "tailwind [#…]": 7
   },
   "components/PaperTrail/ReviseByTopic.tsx": {
-   "hex": 47,
-   "tailwind [#…]": 15
+   "hex": 25,
+   "tailwind [#…]": 1
   },
   "components/PaperTrail/StreakStrip.tsx": {
    "hex": 10,
    "tailwind [#…]": 1
   },
   "components/PaperTrail/VaultQuestionCard.tsx": {
-   "hex": 24,
-   "tailwind [#…]": 3
+   "hex": 8
   },
   "components/PaperTrail/Viewer.tsx": {
-   "hex": 79,
-   "rgb(": 1,
-   "tailwind [#…]": 16
+   "hex": 57,
+   "tailwind [#…]": 13
   },
   "components/PaperTrail/WeaknessMap.tsx": {
    "hex": 10,
@@ -332,7 +327,7 @@
    "hex": 5
   },
   "components/PaperTrail/archive.css": {
-   "hex": 3,
+   "hex": 2,
    "rgb(": 1
   },
   "components/PaperTrail/focusArt.ts": {
@@ -346,16 +341,13 @@
    "hex": 10
   },
   "components/PaperTrail/paper-kobra.css": {
-   "hex": 6
+   "hex": 5
   },
   "components/PaperTrail/physical-education-tasks.css": {
    "hex": 20
   },
   "components/PaperTrail/progressReport.ts": {
    "hex": 8
-  },
-  "components/PaperTrail/questionTools.css": {
-   "hex": 12
   },
   "components/PaperTrail/receipt.ts": {
    "hex": 6

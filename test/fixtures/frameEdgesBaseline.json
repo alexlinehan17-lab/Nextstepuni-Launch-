@@ -113,8 +113,7 @@
   },
   "components/PaperTrail/ImageViewer.tsx": {
    "fixed": 1,
-   "inset-0": 1,
-   "var(--sa*)": 3
+   "inset-0": 1
   },
   "components/PaperTrail/MilestoneCelebration.tsx": {
    "inset-0": 2
@@ -124,9 +123,9 @@
    "inset-0": 2
   },
   "components/PaperTrail/Viewer.tsx": {
-   "fixed": 24,
-   "inset-0": 10,
-   "var(--sa*)": 10
+   "fixed": 15,
+   "inset-0": 7,
+   "var(--sa*)": 7
   },
   "components/PaperTrail/WpmCalibrator.tsx": {
    "fixed": 1,
@@ -138,9 +137,6 @@
   },
   "components/PaperTrail/milestones.ts": {
    "100vh": 1
-  },
-  "components/PaperTrail/viewer-chrome.css": {
-   "var(--sa*)": 5
   },
   "components/PullToRefresh.tsx": {
    "env(safe-area-": 1,

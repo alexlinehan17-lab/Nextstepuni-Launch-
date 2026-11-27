@@ -294,7 +294,6 @@
    "button": 2
   },
   "components/PaperTrail/ImageViewer.tsx": {
-   "button": 3,
    "pop-up": 2
   },
   "components/PaperTrail/MilestoneCelebration.tsx": {
@@ -302,17 +301,10 @@
    "pop-up": 1
   },
   "components/PaperTrail/MobileQuestionTools.tsx": {
-   "button": 3,
    "dropdown": 1
   },
   "components/PaperTrail/MockExamBuilder.tsx": {
    "button": 14
-  },
-  "components/PaperTrail/PaperDocuments.tsx": {
-   "button": 1
-  },
-  "components/PaperTrail/PaperSelection.tsx": {
-   "button": 4
   },
   "components/PaperTrail/PhysicalEducationTaskCard.tsx": {
    "button": 4
@@ -328,15 +320,14 @@
    "button": 15
   },
   "components/PaperTrail/ReviseByTopic.tsx": {
-   "button": 13,
-   "dropdown": 1
+   "button": 3
   },
   "components/PaperTrail/VaultQuestionCard.tsx": {
-   "button": 8
+   "button": 1
   },
   "components/PaperTrail/Viewer.tsx": {
-   "button": 38,
-   "pop-up": 10
+   "button": 28,
+   "pop-up": 7
   },
   "components/PaperTrail/WeaknessMap.tsx": {
    "button": 2
@@ -346,7 +337,7 @@
    "pop-up": 1
   },
   "components/PaperTrail/index.tsx": {
-   "button": 11
+   "button": 6
   },
   "components/PointsOptimizationModule.tsx": {
    "dropdown": 1

@@ -29,19 +29,20 @@ beforeEach(() => {
 });
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); });
 
+// The card's first line names the level, the sitting and the question; since the agreed Topic Atlas
+// (area 6a) the year heads the year group on the topic page rather than each card.
 const header = (sibling: TopicSibling) => {
   const { container } = render(<VaultQuestionCard sibling={sibling} saved={false} onToggleReview={vi.fn()} onOpenInPaper={vi.fn()} />);
-  const row = container.querySelector('.rounded-2xl > div')!;
-  return [...row.querySelectorAll('span')].slice(0, 2).map(span => span.textContent);
+  return container.querySelector('.ta-card-head .t-meta')?.textContent;
 };
 
 describe('the deferred sitting is named', () => {
   it('the Atlas card for Engineering 2022 Higher deferred Q3 says "Deferred sitting"', () => {
-    expect(header(engineering2022('LC027ALP000EV-deferred.pdf'))).toEqual(['2022', 'Higher · Deferred sitting · Question 3']);
+    expect(header(engineering2022('LC027ALP000EV-deferred.pdf'))).toBe('Higher · Deferred sitting · Question 3');
   });
 
   it("June's Question 3 is unchanged", () => {
-    expect(header(engineering2022('LC027ALP000EV.pdf'))).toEqual(['2022', 'Higher · Question 3']);
+    expect(header(engineering2022('LC027ALP000EV.pdf'))).toBe('Higher · Question 3');
   });
 
   it('the revision pack names it too', () => {
