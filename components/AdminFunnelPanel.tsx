@@ -61,6 +61,40 @@ const RANGES = [
 
 type RangeId = (typeof RANGES)[number]['id'];
 
+/**
+ * The first-run counts over the last `days` local calendar days: one aggregation per (step × days).
+ * `in` takes at most 30 values, and 7 days is well inside that, so each step is a single count query.
+ * The First run page and the Overview's second row both read through this, so they cannot disagree.
+ */
+export async function loadFunnelCounts(days: number): Promise<Record<string, number>> {
+  const dayKeys = Array.from({ length: days }, (_, i) => localDay(i));
+  const events = collection(db, 'funnelEvents');
+  const entries = await Promise.all(FUNNEL_STEPS.map(async step => {
+    const snapshot = await getCountFromServer(query(
+      events,
+      where('day', 'in', dayKeys),
+      where('step', '==', step),
+    ));
+    return [step, snapshot.data().count] as const;
+  }));
+  return Object.fromEntries(entries);
+}
+
+/** The arithmetic read from those counts, shared by the page and the Overview's row. */
+export function funnelSummary(counts: Record<string, number>) {
+  const started = counts.register_succeeded ?? 0;
+  const completed = counts.onboarding_completed ?? 0;
+  return {
+    started,
+    completed,
+    // The number that matters on launch day: of everyone who made an account,
+    // how many actually got through setup?
+    throughRate: started > 0 ? Math.round((completed / started) * 100) : null,
+    // Made an account but never reached the subjects step.
+    stoppedBeforeSubjects: Math.max(0, started - (counts.onboarding_reached_subjects ?? 0)),
+  };
+}
+
 interface AdminFunnelPanelProps {
   /** On a phone the page is reached from Overview's second row: Back to it, and the page's Refresh
    *  in the bar (the agreed board). Without it the panel is the page's body (a laptop). */
@@ -78,19 +112,7 @@ const AdminFunnelPanel: React.FC<AdminFunnelPanelProps> = ({ onBack }) => {
     setError('');
     try {
       const days = RANGES.find(r => r.id === range)?.days ?? 1;
-      const dayKeys = Array.from({ length: days }, (_, i) => localDay(i));
-      const events = collection(db, 'funnelEvents');
-      // One count per (step × day). `in` takes at most 30 values, and 7 days is
-      // well inside that, so each step is a single aggregation query.
-      const entries = await Promise.all(FUNNEL_STEPS.map(async step => {
-        const snapshot = await getCountFromServer(query(
-          events,
-          where('day', 'in', dayKeys),
-          where('step', '==', step),
-        ));
-        return [step, snapshot.data().count] as const;
-      }));
-      setCounts(Object.fromEntries(entries));
+      setCounts(await loadFunnelCounts(days));
     } catch (loadError) {
       console.error('Error loading funnel counts:', loadError);
       setError('Funnel counts could not be loaded. Confirm the latest Firestore rules and indexes are deployed.');
@@ -102,11 +124,7 @@ const AdminFunnelPanel: React.FC<AdminFunnelPanelProps> = ({ onBack }) => {
   useEffect(() => { void load(); }, [load]);
 
   const top = counts[FUNNEL_PATH[0]] ?? 0;
-  const completed = counts.onboarding_completed ?? 0;
-  const started = counts.register_succeeded ?? 0;
-  // The number that matters on launch day: of everyone who made an account,
-  // how many actually got through setup?
-  const throughRate = started > 0 ? Math.round((completed / started) * 100) : null;
+  const { started, completed, throughRate } = funnelSummary(counts);
 
   const refresh = (
     <IconButton

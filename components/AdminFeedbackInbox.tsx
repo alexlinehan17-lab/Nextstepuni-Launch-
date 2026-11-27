@@ -49,6 +49,20 @@ interface FeedbackEntry {
 
 const PAGE_SIZE = 50;
 
+/**
+ * How many messages are New, and when the newest New one arrived: the inbox's own two reads (its New
+ * count, and its New list newest first) with a limit of 1. For the Overview's third row. Read only.
+ */
+export async function loadNewFeedback(): Promise<{ count: number; newestAt: Date | null }> {
+  const feedbackCollection = collection(db, 'anonymousFeedback');
+  const [countSnapshot, newest] = await Promise.all([
+    getCountFromServer(query(feedbackCollection, where('status', '==', 'new'))),
+    getDocs(query(feedbackCollection, where('status', '==', 'new'), orderBy('createdAt', 'desc'), limit(1))),
+  ]);
+  const createdAt = newest.docs[0]?.data().createdAt as Timestamp | undefined;
+  return { count: countSnapshot.data().count, newestAt: createdAt?.toDate ? createdAt.toDate() : null };
+}
+
 function formatDate(createdAt?: Timestamp): string {
   if (!createdAt?.toDate) return 'Just now';
   return new Intl.DateTimeFormat('en-IE', {

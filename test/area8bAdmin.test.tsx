@@ -15,23 +15,43 @@ import React from 'react';
 import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
 import { act, cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 
-type Desc = { name: string };
+type Clause = { field?: string; op?: string; value?: unknown; orderBy?: string; limit?: number };
+type Desc = { name: string; c: Clause[] };
 const db = vi.hoisted(() => ({
   users: [] as Array<Record<string, unknown>>,
   progress: {} as Record<string, Record<string, unknown>>,
   reads: [] as string[],
+  funnel: {} as Record<string, number>,
+  newFeedback: 0,
+  newestAt: null as Date | null,
+  countMode: 'ok' as 'ok' | 'fail' | 'hang',
 }));
+const writes = vi.hoisted(() => ({ updateDoc: vi.fn(async () => undefined), setDoc: vi.fn(async () => undefined), addDoc: vi.fn(async () => undefined), deleteDoc: vi.fn(async () => undefined) }));
 vi.mock('firebase/firestore', () => ({
   collection: vi.fn((_db: unknown, name: string) => ({ name })),
   doc: vi.fn((_db: unknown, name: string, id: string) => ({ name, id })),
-  query: vi.fn((col: Desc) => ({ name: col.name })),
-  where: vi.fn(), orderBy: vi.fn(), limit: vi.fn(), startAfter: vi.fn(), documentId: vi.fn(),
-  serverTimestamp: vi.fn(), updateDoc: vi.fn(async () => undefined),
-  getCountFromServer: vi.fn(async (q: Desc) => { db.reads.push(`count:${q.name}`); return { data: () => ({ count: 0 }) }; }),
+  query: vi.fn((col: { name: string }, ...c: Clause[]) => ({ name: col.name, c })),
+  where: vi.fn((field: string, op: string, value: unknown) => ({ field, op, value })),
+  orderBy: vi.fn((field: string) => ({ orderBy: field })),
+  limit: vi.fn((n: number) => ({ limit: n })),
+  startAfter: vi.fn(() => ({})), documentId: vi.fn(),
+  serverTimestamp: vi.fn(), ...writes,
+  getCountFromServer: vi.fn(async (q: Desc) => {
+    db.reads.push(`count:${q.name}`);
+    if (db.countMode === 'fail') throw new Error('no');
+    if (db.countMode === 'hang') return new Promise(() => {});
+    const step = q.c.find(clause => clause.field === 'step')?.value as string | undefined;
+    const count = q.name === 'funnelEvents' ? db.funnel[step ?? ''] ?? 0 : q.name === 'anonymousFeedback' ? db.newFeedback : 0;
+    return { data: () => ({ count }) };
+  }),
   getDocs: vi.fn(async (q: Desc) => {
     db.reads.push(`docs:${q.name}`);
     if (q.name === 'users') return { docs: db.users.map(user => ({ id: user.uid, data: () => user })) };
     if (q.name === 'progress') return { docs: Object.entries(db.progress).map(([id, data]) => ({ id, data: () => data })) };
+    if (q.name === 'anonymousFeedback' && db.newestAt) {
+      const at = db.newestAt;
+      return { docs: [{ id: 'f1', data: () => ({ status: 'new', message: 'Hi', category: 'broken', createdAt: { toDate: () => at } }) }] };
+    }
     return { docs: [] };
   }),
 }));
@@ -42,7 +62,8 @@ const reauth = vi.hoisted(() => vi.fn(async () => undefined));
 vi.mock('../utils/reauthenticate', () => ({ reauthMethodFor: () => 'password', reauthenticateCurrentUser: reauth }));
 vi.mock('../firebase', () => ({ default: {}, db: {}, auth: { currentUser: { uid: 'admin-uid', providerData: [{ providerId: 'password' }] } } }));
 
-import { AdminDashboard } from '../components/AdminDashboard';
+import { AdminDashboard, sinceWords } from '../components/AdminDashboard';
+import { query as firestoreQuery, where as firestoreWhere, limit as firestoreLimit } from 'firebase/firestore';
 import { SCHOOLS } from '../schoolData';
 import type { CourseData } from '../components/Library';
 
@@ -68,6 +89,10 @@ function seed() {
     u4: { c2: { unlockedSection: 2 } }, // 0 and 100: overall 50
   };
   db.reads = [];
+  db.funnel = {};
+  db.newFeedback = 0;
+  db.newestAt = null;
+  db.countMode = 'ok';
 }
 
 function setWidth(width: number) {
@@ -244,6 +269,71 @@ describe('delete', () => {
     expect(alert).not.toHaveBeenCalled();
     expect(screen.getByRole('button', { name: 'Delete Aoife Testwell' })).toBeInTheDocument();
     alert.mockRestore();
+  });
+});
+
+describe('Overview\'s second and third rows', () => {
+  const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
+
+  test('show today\'s first-run figure and the new feedback, from the same reads as their pages, and write nothing', async () => {
+    db.funnel = { register_succeeded: 14, onboarding_started: 14, onboarding_reached_subjects: 9, onboarding_reached_exam_date: 9, onboarding_completed: 9, first_tool_opened: 7 };
+    db.newFeedback = 3;
+    db.newestAt = new Date(Date.now() - 20 * 60000);
+    vi.mocked(firestoreQuery).mockClear();
+    await open();
+    const run = await screen.findByRole('button', { name: /9 of 14 finished onboarding today/ });
+    expect(run).toHaveTextContent('First run · 5 stopped before subjects');
+    const inbox = await screen.findByRole('button', { name: /3 new feedback messages/ });
+    expect(inbox).toHaveTextContent('Feedback · newest 20 minutes ago');
+    // Funnel: one count per step for today only; feedback: the New count and the newest New message, limit 1.
+    expect(firestoreWhere).toHaveBeenCalledWith('day', 'in', [today()]);
+    expect(firestoreWhere).toHaveBeenCalledWith('status', '==', 'new');
+    expect(firestoreLimit).toHaveBeenCalledWith(1);
+    expect(vi.mocked(firestoreQuery).mock.calls.filter(call => (call[0] as { name: string }).name === 'funnelEvents')).toHaveLength(7);
+    for (const write of Object.values(writes)) expect(write).not.toHaveBeenCalled();
+    // The row opens First run, whose own figure is the same "9 of 14".
+    fireEvent.click(run);
+    expect(await screen.findByText(/^9 of 14\. If this drops/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Back to Overview' }));
+    fireEvent.click(await screen.findByRole('button', { name: /3 new feedback messages/ }));
+    expect(screen.getByRole('heading', { level: 1, name: 'Feedback inbox' })).toBeInTheDocument();
+  });
+
+  test('one message, nobody stopped before subjects, and a message over a week old', async () => {
+    db.funnel = { register_succeeded: 4, onboarding_reached_subjects: 4, onboarding_completed: 4 };
+    db.newFeedback = 1;
+    db.newestAt = new Date(Date.now() - 9 * 86400000);
+    await open();
+    const run = await screen.findByRole('button', { name: /4 of 4 finished onboarding today/ });
+    expect(run.querySelector('.ui-row-meta')?.textContent).toBe('First run');
+    const inbox = await screen.findByRole('button', { name: /^1 new feedback message(?!s)/ });
+    expect(inbox.querySelector('.ui-row-meta')?.textContent).toMatch(/^Feedback · newest on \d{1,2} [A-Z][a-z]+$/);
+  });
+
+  test.each([
+    ['while the counts load', () => { db.countMode = 'hang'; }, true, true],
+    ['when a read fails', () => { db.countMode = 'fail'; }, true, true],
+    ['when no account was made today', () => { db.funnel = { register_succeeded: 0 }; db.newFeedback = 2; db.newestAt = new Date(); }, true, false],
+    ['when there is no new message', () => { db.funnel = { register_succeeded: 3, onboarding_completed: 1 }; db.newFeedback = 0; }, false, true],
+  ])('keep their own words %s, with no error on the Overview', async (_case, arrange, runFallsBack, inboxFallsBack) => {
+    const quiet = vi.spyOn(console, 'error').mockImplementation(() => {});
+    arrange();
+    await open();
+    await act(async () => { await Promise.resolve(); });
+    if (runFallsBack) expect(screen.getByRole('button', { name: /Are students getting in\?/ })).toHaveTextContent('First run');
+    else expect(await screen.findByRole('button', { name: /1 of 3 finished onboarding today/ })).toBeInTheDocument();
+    if (inboxFallsBack) expect(screen.getByRole('button', { name: /Feedback inbox/ })).toHaveTextContent('Anonymous student voice');
+    else expect(await screen.findByRole('button', { name: /2 new feedback messages/ })).toHaveTextContent('newest just now');
+    expect(screen.queryByRole('alert')).toBeNull();
+    quiet.mockRestore();
+  });
+
+  test('the newest message is said in words', () => {
+    const now = Date.UTC(2026, 10, 24, 12, 0);
+    expect(sinceWords(new Date(now - 30000), now)).toBe('just now');
+    expect(sinceWords(new Date(now - 60000), now)).toBe('1 minute ago');
+    expect(sinceWords(new Date(now - 3 * 3600000), now)).toBe('3 hours ago');
+    expect(sinceWords(new Date(now - 2 * 86400000), now)).toBe('2 days ago');
   });
 });
 

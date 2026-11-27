@@ -39,8 +39,8 @@ import app, { auth, db } from '../firebase';
 import { SCHOOLS, getSchoolName } from '../schoolData';
 import { type StudentSubjectProfile, type YearGroup } from './subjectData';
 import { filterCoursesForStudent } from '../utils/courseVisibility';
-import AdminFeedbackInbox from './AdminFeedbackInbox';
-import AdminFunnelPanel from './AdminFunnelPanel';
+import AdminFeedbackInbox, { loadNewFeedback } from './AdminFeedbackInbox';
+import AdminFunnelPanel, { funnelSummary, loadFunnelCounts } from './AdminFunnelPanel';
 import AdminGcAccessPanel from './AdminGcAccessPanel';
 import AdminProgrammePanel from './AdminProgrammePanel';
 import { reauthMethodFor, reauthenticateCurrentUser } from '../utils/reauthenticate';
@@ -54,6 +54,7 @@ import { Menu, MenuAction, MenuPanel, MenuRule } from './ui/Menu';
 import { SelectionBar } from './ui/Choice';
 import { ErrorState, LoadingShape } from './ui/States';
 import { MessageHost, showMessage } from './ui/Message';
+import { logError } from '../utils/logError';
 import { Fig, Pct, StudentArt, useWide } from './gc/gcView';
 
 type ModuleProgress = {
@@ -199,6 +200,19 @@ function formatShortDate(): string {
   const today = new Date();
   const part = (options: Intl.DateTimeFormatOptions) => new Intl.DateTimeFormat('en-IE', options).format(today);
   return `${part({ weekday: 'short' })} ${part({ day: 'numeric' })} ${part({ month: 'short' })}`;
+}
+
+/** How long ago, in words ("20 minutes ago", "3 hours ago", "2 days ago"; a week or more: "on 24 Nov"). The
+ *  app has no shared helper in these words (the notification bell's own says "20m ago"). */
+export function sinceWords(at: Date, now: number = Date.now()): string {
+  const minutes = Math.floor((now - at.getTime()) / 60000);
+  if (minutes < 1) return 'just now';
+  if (minutes < 60) return `${minutes} minute${minutes === 1 ? '' : 's'} ago`;
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) return `${hours} hour${hours === 1 ? '' : 's'} ago`;
+  const days = Math.floor(hours / 24);
+  if (days < 7) return `${days} day${days === 1 ? '' : 's'} ago`;
+  return `on ${new Intl.DateTimeFormat('en-IE', { day: 'numeric', month: 'short' }).format(at)}`;
 }
 
 /** One course area's share for one student (today's sum, unchanged). */
@@ -512,6 +526,24 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
     return () => { cancelled = true; };
   }, [reloadToken]);
 
+  // Overview's second and third rows: today's first-run counts (the First run page's own read and
+  // arithmetic) and the New feedback count with its newest message (the inbox's own reads, limit 1).
+  // Read only. While they load, or if a read fails, the rows keep their own words: no error is shown.
+  const [firstRun, setFirstRun] = useState<ReturnType<typeof funnelSummary> | null>(null);
+  const [newFeedback, setNewFeedback] = useState<{ count: number; newestAt: Date | null } | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    setFirstRun(null);
+    setNewFeedback(null);
+    loadFunnelCounts(1)
+      .then(counts => { if (!cancelled) setFirstRun(funnelSummary(counts)); })
+      .catch(error => logError('AdminDashboard.firstRunRow', error));
+    loadNewFeedback()
+      .then(summary => { if (!cancelled) setNewFeedback(summary); })
+      .catch(error => logError('AdminDashboard.feedbackRow', error));
+    return () => { cancelled = true; };
+  }, [reloadToken]);
+
   const enrichedData = useMemo<EnrichedStudentRecord[]>(() => studentData.map(record => {
     const resolvedYearGroup = record.user.yearGroup ?? record.subjectProfile?.yearGroup;
     const curriculumLevel = record.user.curriculumLevel
@@ -645,8 +677,20 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
         meta={isLoading || loadError ? undefined : `Students · across ${schoolRows.length} school${schoolRows.length === 1 ? '' : 's'}`}
         onPress={() => go('students')}
       />
-      <Row title="Are students getting in?" meta="First run" onPress={() => go('funnel')} />
-      <Row title="Feedback inbox" meta="Anonymous student voice" onPress={() => go('feedback')} />
+      {firstRun && firstRun.started > 0
+        ? <Row
+            title={`${firstRun.completed} of ${firstRun.started} finished onboarding today`}
+            meta={firstRun.stoppedBeforeSubjects > 0 ? `First run · ${firstRun.stoppedBeforeSubjects} stopped before subjects` : 'First run'}
+            onPress={() => go('funnel')}
+          />
+        : <Row title="Are students getting in?" meta="First run" onPress={() => go('funnel')} />}
+      {newFeedback && newFeedback.count > 0
+        ? <Row
+            title={`${newFeedback.count} new feedback message${newFeedback.count === 1 ? '' : 's'}`}
+            meta={newFeedback.newestAt ? `Feedback · newest ${sinceWords(newFeedback.newestAt)}` : 'Feedback'}
+            onPress={() => go('feedback')}
+          />
+        : <Row title="Feedback inbox" meta="Anonymous student voice" onPress={() => go('feedback')} />}
     </ul>
   );
 
