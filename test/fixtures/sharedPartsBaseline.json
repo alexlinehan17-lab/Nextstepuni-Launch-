@@ -289,22 +289,11 @@
   "components/PaperTrail/ImageViewer.tsx": {
    "pop-up": 2
   },
-  "components/PaperTrail/MilestoneCelebration.tsx": {
-   "button": 2,
-   "pop-up": 1
-  },
   "components/PaperTrail/MobileQuestionTools.tsx": {
    "dropdown": 1
   },
   "components/PaperTrail/MockExamBuilder.tsx": {
    "button": 14
-  },
-  "components/PaperTrail/PhysicalEducationTaskCard.tsx": {
-   "button": 4
-  },
-  "components/PaperTrail/PoliticsTopicFeed.tsx": {
-   "button": 2,
-   "dropdown": 1
   },
   "components/PaperTrail/ProgressDashboard.tsx": {
    "button": 6
@@ -315,12 +304,9 @@
   "components/PaperTrail/ReviseByTopic.tsx": {
    "button": 3
   },
-  "components/PaperTrail/VaultQuestionCard.tsx": {
-   "button": 1
-  },
   "components/PaperTrail/Viewer.tsx": {
-   "button": 28,
-   "pop-up": 7
+   "button": 5,
+   "pop-up": 6
   },
   "components/PaperTrail/WeaknessMap.tsx": {
    "button": 2
@@ -330,7 +316,7 @@
    "pop-up": 1
   },
   "components/PaperTrail/index.tsx": {
-   "button": 6
+   "button": 4
   },
   "components/PointsOptimizationModule.tsx": {
    "dropdown": 1

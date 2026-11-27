@@ -115,17 +115,14 @@
    "fixed": 1,
    "inset-0": 1
   },
-  "components/PaperTrail/MilestoneCelebration.tsx": {
-   "inset-0": 2
-  },
   "components/PaperTrail/ReviewSession.tsx": {
    "fixed": 1,
    "inset-0": 2
   },
   "components/PaperTrail/Viewer.tsx": {
-   "fixed": 15,
+   "fixed": 12,
    "inset-0": 7,
-   "var(--sa*)": 7
+   "var(--sa*)": 3
   },
   "components/PaperTrail/WpmCalibrator.tsx": {
    "fixed": 1,

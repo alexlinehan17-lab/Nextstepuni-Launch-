@@ -237,23 +237,13 @@
    "hex": 15,
    "tailwind [#…]": 1
   },
-  "components/PaperTrail/FrenchPaperAudio.tsx": {
-   "hex": 5
-  },
   "components/PaperTrail/GuardianConsent.tsx": {
    "hex": 4,
    "tailwind [#…]": 2
   },
-  "components/PaperTrail/MilestoneCelebration.tsx": {
-   "hex": 8,
-   "tailwind [#…]": 1
-  },
   "components/PaperTrail/MockExamBuilder.tsx": {
    "hex": 36,
    "tailwind [#…]": 3
-  },
-  "components/PaperTrail/PoliticsTopicFeed.tsx": {
-   "tailwind [#…]": 5
   },
   "components/PaperTrail/ProgressDashboard.tsx": {
    "hex": 22,
@@ -271,12 +261,9 @@
    "hex": 10,
    "tailwind [#…]": 1
   },
-  "components/PaperTrail/VaultQuestionCard.tsx": {
-   "hex": 8
-  },
   "components/PaperTrail/Viewer.tsx": {
-   "hex": 57,
-   "tailwind [#…]": 13
+   "hex": 19,
+   "tailwind [#…]": 3
   },
   "components/PaperTrail/WeaknessMap.tsx": {
    "hex": 10,
@@ -287,7 +274,7 @@
    "tailwind [#…]": 2
   },
   "components/PaperTrail/answer-desk.css": {
-   "hex": 51
+   "hex": 1
   },
   "components/PaperTrail/answerDeskStore.ts": {
    "hex": 5
@@ -308,9 +295,6 @@
   },
   "components/PaperTrail/paper-kobra.css": {
    "hex": 5
-  },
-  "components/PaperTrail/physical-education-tasks.css": {
-   "hex": 20
   },
   "components/PaperTrail/progressReport.ts": {
    "hex": 8
@@ -649,7 +633,7 @@
    "hex": 51
   },
   "components/launchpad/launchpad.css": {
-   "hex": 31
+   "hex": 29
   },
   "components/learning/BrandBook.tsx": {
    "hex": 2
