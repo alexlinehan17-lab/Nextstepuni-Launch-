@@ -8,8 +8,8 @@
  * menu signs out; the Schools / Year groups switch shows today's figures; the Students search narrows
  * the list already loaded by name and reads nothing new; one student opened shows the same figures;
  * delete still needs its password and calls the same function with the same argument; a failed delete
- * says so in the app's message, not a browser alert; the dashboard opens dark when the account has no
- * saved choice and keeps a saved one.
+ * says so in the app's message, not a browser alert; the dashboard opens dark whatever the account's
+ * settings record says, and logging out gives the page back as it was.
  */
 import React from 'react';
 import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
@@ -42,7 +42,7 @@ const reauth = vi.hoisted(() => vi.fn(async () => undefined));
 vi.mock('../utils/reauthenticate', () => ({ reauthMethodFor: () => 'password', reauthenticateCurrentUser: reauth }));
 vi.mock('../firebase', () => ({ default: {}, db: {}, auth: { currentUser: { uid: 'admin-uid', providerData: [{ providerId: 'password' }] } } }));
 
-import { AdminDashboard, adminSavedTheme } from '../components/AdminDashboard';
+import { AdminDashboard } from '../components/AdminDashboard';
 import { SCHOOLS } from '../schoolData';
 import type { CourseData } from '../components/Library';
 
@@ -248,27 +248,27 @@ describe('delete', () => {
 });
 
 describe('dark by default', () => {
-  test('with no choice saved for the account it opens dark, and gives the page back when it closes', async () => {
+  test.each([
+    ['no settings record', null],
+    ['a saved darkMode: false (useSettings writes that default; the account has no switch)', { darkMode: false }],
+    ['a saved darkMode: true', { darkMode: true }],
+  ])('opens dark with %s, holds it while open, and logging out gives the page back', async (_case, saved) => {
+    if (saved) localStorage.setItem('nextstep-settings:admin-uid', JSON.stringify(saved));
+    const before = JSON.stringify(localStorage);
     const view = await open();
-    expect(adminSavedTheme('admin-uid')).toBeUndefined();
     expect(document.documentElement.classList.contains('dark')).toBe(true);
     // The app's own settings effect may clear the class: the dashboard keeps it on while open.
     act(() => { document.documentElement.classList.remove('dark'); });
     await waitFor(() => expect(document.documentElement.classList.contains('dark')).toBe(true));
     view.unmount();
     expect(document.documentElement.classList.contains('dark')).toBe(false);
+    expect(JSON.stringify(localStorage)).toBe(before);
   });
 
-  test('a saved light choice is kept', async () => {
-    localStorage.setItem('nextstep-settings:admin-uid', JSON.stringify({ darkMode: false }));
-    await open();
-    expect(adminSavedTheme('admin-uid')).toBe(false);
-    expect(document.documentElement.classList.contains('dark')).toBe(false);
-  });
-
-  test('another account\'s setting on the same browser is not a choice for this one', () => {
-    localStorage.setItem('nextstep-settings', JSON.stringify({ darkMode: false }));
-    localStorage.setItem('nextstep-settings:student-uid', JSON.stringify({ darkMode: false }));
-    expect(adminSavedTheme('admin-uid')).toBeUndefined();
+  test('a page that was already dark stays dark after logging out', async () => {
+    document.documentElement.classList.add('dark');
+    const view = await open();
+    view.unmount();
+    expect(document.documentElement.classList.contains('dark')).toBe(true);
   });
 });

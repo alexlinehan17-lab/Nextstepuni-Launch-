@@ -215,36 +215,18 @@ function categoryProgressFor(record: EnrichedStudentRecord, category: CategoryTy
 
 // ─── Dark by default ────────────────────────────────────────────────────────
 
-const SETTINGS_KEY = 'nextstep-settings';
-
-/**
- * The Light / Dark choice saved for this account, if there is one. The app keeps each account's
- * settings in this browser under `nextstep-settings:<uid>` (hooks/useSettings.ts): a `darkMode`
- * there is a choice that account has saved. Undefined: no choice saved.
- */
-export function adminSavedTheme(uid?: string | null): boolean | undefined {
-  if (!uid || typeof localStorage === 'undefined') return undefined;
-  try {
-    const raw = localStorage.getItem(`${SETTINGS_KEY}:${uid}`);
-    if (!raw) return undefined;
-    const saved = JSON.parse(raw) as { darkMode?: unknown };
-    return typeof saved.darkMode === 'boolean' ? saved.darkMode : undefined;
-  } catch {
-    return undefined;
-  }
-}
-
 /**
  * The Admin dashboard opens in dark (Alex, 24 Nov 2026: "have it auto set to dark mode though"), on the
- * app's own four dark surfaces: its separate palette is gone. How the default is decided: with no
- * choice saved for the signed-in account, the dashboard holds the app's `dark` setting on while it is
- * open and gives the page back as it found it when it closes, so the sign-in page and a student who
- * signs in next keep their own theme. A saved choice (light or dark) is kept: the app's setting
- * applies, as on every other screen. Nothing is written.
+ * app's own four dark surfaces: its separate palette is gone. It holds the app's `dark` setting on
+ * whenever it is open, whatever the account's settings record says: the Admin account has no Light /
+ * Dark switch, and useSettings writes a default `darkMode: false` into `nextstep-settings:<uid>` whenever
+ * the account has a settings document online, so a saved false is not a choice anyone made. When it
+ * closes it gives the page back as it found it, so the sign-in page and a student who signs in next
+ * keep their own theme. Nothing is written.
  */
-export function useAdminOpensDark(uid?: string | null) {
+export function useAdminOpensDark() {
   useEffect(() => {
-    if (adminSavedTheme(uid) !== undefined || typeof document === 'undefined') return undefined;
+    if (typeof document === 'undefined') return undefined;
     const root = document.documentElement;
     const had = root.classList.contains('dark');
     root.classList.add('dark');
@@ -257,7 +239,7 @@ export function useAdminOpensDark(uid?: string | null) {
       keep?.disconnect();
       if (!had) root.classList.remove('dark');
     };
-  }, [uid]);
+  }, []);
 }
 
 // ─── Pieces ─────────────────────────────────────────────────────────────────
@@ -444,7 +426,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
   const tables = useWide(1200);
   // The feature table's five columns and four figures across need about a laptop's width.
   const roomy = useWide(1000);
-  useAdminOpensDark(auth.currentUser?.uid);
+  useAdminOpensDark();
 
   // The phone's bar gains its hairline once the page has scrolled under it (tokens.md, "Bars").
   const [scrolled, setScrolled] = useState(false);
