@@ -8,21 +8,25 @@
  * that says what to DO) → learn what it demands and the examiner-flagged trap.
  * Trains the decode-the-question skill on authentic questions.
  *
- * Aesthetics: Innovation-Zone tool vocabulary (chunky cardShell +
- * PrimaryActionButton); scholarly indigo identity with an amber "highlighter"
- * for the spotted cue word. Cool tints, no warm cream, no coloured left borders.
+ * Look (area 7b, boards c-tools2-command and r5-command-word-reflex): a real exam question
+ * with its command word leads the opening; subjects carry their characters, bare; a round is
+ * a task with Reveal it and Next question pinned; the found word fills charcoal and the
+ * examiner's two-part answer opens on the same surface. The mechanics are unchanged.
  */
 
-import ToolMasthead from '../launchpad/ToolMasthead';
 import SubjectPicker from '../launchpad/SubjectPicker';
 import LockedButton from '../ui/LockedButton';
 import React, { useMemo, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ArrowLeft, ArrowRight, Check, BookOpenCheck, LockKeyhole } from 'lucide-react';
-import { COLORS } from '../../design/tokens';
-import PrimaryActionButton from '../ui/PrimaryActionButton';
-import HorizontalTabs from '../ui/HorizontalTabs';
+import { Check, LockKeyhole } from 'lucide-react';
+import { Button } from '../ui/Button';
+import { SelectionBar } from '../ui/Choice';
+import { PinnedFooter } from '../ui/Bars';
+import { useFrameTask } from '../ui/Frame';
+import SubjectAvatar from '../SubjectAvatar';
+import { useBackStep } from '../../contexts/NavigationContext';
+import './command-word-7.css';
 import { useCommandWordReflex } from '../../hooks/useCommandWordReflex';
 import { commandSubjects, questionsForSubject } from '../../commandWordData';
 import { type CommandWordQuestion } from '../../types/commandWord';
@@ -31,14 +35,6 @@ import { useSubjectAccess } from '../launchpad/SubjectAccess';
 import { baseName, displayName } from '../shared/subjectNames';
 import { figureUrl } from '../../utils/figureUrl';
 
-
-const INDIGO_DARK_TEXT = 'var(--accent-text)';
-const INDIGO_TINT = 'var(--surface-soft)';
-const HL_BG = COLORS.accent;        // amber-200 highlighter
-const HL_TEXT = '#1a1a1a';      // amber-800
-
-const cardShell =
-  'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
 
 const norm = (s: string) => s.replace(/[^a-zA-Z]/g, '').toLowerCase();
 
@@ -54,6 +50,10 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
   const [phase, setPhase] = useState<'spot' | 'reveal'>('spot');
   const [wrong, setWrong] = useState<Set<number>>(new Set());
   const [usedReveal, setUsedReveal] = useState(false);
+  // A round is a task on a phone: Reveal it and Next question are pinned and the tab bar steps aside;
+  // the bar's one Back returns to the subjects (board c-tools2-command: one way back, in the bar).
+  useFrameTask(view === 'play');
+  useBackStep(view === 'play', () => setView('home'));
   // Higher / Ordinary filter — a command-word question comes from a specific
   // level's paper; 'common' (if any) shows at both.
   const [levelFilter, setLevelFilter] = useState<'higher' | 'ordinary'>('higher');
@@ -121,7 +121,7 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
   };
 
   if (!isLoaded) {
-    return <div className="w-full max-w-xl mx-auto py-16 text-center text-sm text-zinc-400">Loading…</div>;
+    return <div className="cr7"><p className="t-sub cr7-loading">Loading…</p></div>;
   }
 
   // ───────── HOME ─────────
@@ -141,149 +141,136 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
     const accessibleSubjects = sortedSubjects.filter(s => canSelectSubject(displayName(s.subjectLabel)));
     const selectedSubject = accessibleSubjects.find(s => s.subjectId === subjectId) ?? accessibleSubjects.find(s => mineIds.includes(s.subjectId)) ?? accessibleSubjects[0];
     const previewQuestion = selectedSubject ? questionsForSubject(selectedSubject.subjectId).filter(atLevel)[0] : undefined;
-    const preview = <div className="lp-reflex-example"><p className="lp-eyebrow">Try the idea · {previewQuestion?.subjectLabel}</p><p className="lp-reflex-stem">{previewQuestion?.stem}</p><p className="lp-body mt-4">Spot the command word. It tells you what the answer needs to do.</p></div>;
-    return <div className="pb-12">
-      <ToolMasthead tool="command-word-reflex" eyebrow="Read the question right" title="Command-Word Reflex." subtitle="Spot the word. Know what the examiner is asking." />
-      <div className="lp-reflex-entry">
-        {previewQuestion && <div className="lp-reflex-desktop">{preview}</div>}
-        <section><h2 className="lp-title">Choose your subject</h2>
-          <HorizontalTabs variant="pill" size="sm" label="Question level" value={levelFilter} onChange={next => setLevelFilter(next as typeof levelFilter)} options={[{value:'higher',label:'Higher'},{value:'ordinary',label:'Ordinary'}]} />
-          <div className="lp-reflex-subjects">{(mineIds.length ? sortedSubjects.filter(s => mineIds.includes(s.subjectId)) : sortedSubjects.slice(0,6)).map(s => <LockedButton key={s.subjectId} locked={!canSelectSubject(displayName(s.subjectLabel))} aria-pressed={selectedSubject?.subjectId === s.subjectId} onClick={() => setSubjectId(s.subjectId)}><strong>{displayName(s.subjectLabel)}</strong><small>{canSelectSubject(displayName(s.subjectLabel)) ? `${s.count} questions` : <><LockKeyhole size={12} aria-hidden="true" /> Available in the app</>}</small></LockedButton>)}</div>
-          <SubjectPicker label="All subjects" value={selectedSubject?.subjectId ?? ''} options={pickerSubjects.map(s => ({value:s.id,label:s.label,detail:s.sublabel}))} onChange={setSubjectId} />
-          <button className="lp-button w-full mt-4" disabled={!selectedSubject} onClick={() => selectedSubject && startSubject(selectedSubject.subjectId)}>Start practising <ArrowRight size={17} /></button>
-          {state.wordsMet.length > 0 && <p className="lp-body mt-4">{state.wordsMet.length} command words met · {state.firstTryIds.length}/{state.seenIds.length} spotted first try</p>}
-          {previewQuestion && <details className="lp-reflex-mobile mt-6"><summary className="text-sm font-semibold">See an example</summary>{preview}</details>}
-        </section>
-      </div>
+    const shown = mineIds.length ? sortedSubjects.filter(s => mineIds.includes(s.subjectId)) : sortedSubjects.slice(0, 6);
+    return <div className="cr7 cr7-home">
+      {previewQuestion && <section className="cr7-idea" aria-label="Try the idea">
+        <p className="t-label">Try the idea · {ideaLabel(previewQuestion)}</p>
+        {/* The example question leads (board c-tools2-command): on a phone the sentence that holds the
+            command word, on a laptop the whole question; the command word is marked in both. */}
+        <h2 className="t-title cr7-example cr7-example--short">{markCommand(commandSentence(previewQuestion), previewQuestion.commandWord)}</h2>
+        <h2 className="cr7-example cr7-example--full">{markCommand(previewQuestion.stem, previewQuestion.commandWord)}</h2>
+        <p className="t-sub">Half of exam technique is reading the question right. Spot the command word, and the trap that loses marks.</p>
+      </section>}
+      <section className="cr7-pick" aria-label="Choose your subject">
+        <div className="cr7-pick-head"><h3 className="t-heading">Choose your subject</h3><SubjectPicker link label="All subjects" value={selectedSubject?.subjectId ?? ''} options={pickerSubjects.map(s => ({value:s.id,label:s.label,detail:s.sublabel}))} onChange={setSubjectId} /></div>
+        <SelectionBar label="Question level" size="md" value={levelFilter} onChange={next => setLevelFilter(next)} options={[{value:'higher',label:'Higher'},{value:'ordinary',label:'Ordinary'}]} />
+        <div className="cr7-subjects">{shown.map(s => {
+          const locked = !canSelectSubject(displayName(s.subjectLabel));
+          return <LockedButton key={s.subjectId} className="ui-part ui-press cr7-subject" locked={locked} aria-pressed={selectedSubject?.subjectId === s.subjectId} onClick={() => setSubjectId(s.subjectId)}>
+            <span className="cr7-subject-art" aria-hidden="true"><SubjectAvatar subject={displayName(s.subjectLabel)} bare /></span>
+            <span className="cr7-subject-copy"><span className="cr7-subject-name">{displayName(s.subjectLabel)}</span><span className="t-meta">{locked ? <><LockKeyhole size={12} aria-hidden="true" /> Available in the app</> : `${s.count} questions`}</span></span>
+          </LockedButton>;
+        })}</div>
+        <Button kind="main" size="lg" block arrow="forward" className="cr7-start" {...(selectedSubject ? {} : { 'aria-disabled': true as const })} onClick={() => selectedSubject && startSubject(selectedSubject.subjectId)}>Start practising</Button>
+        {state.wordsMet.length > 0 && <p className="t-meta">{state.wordsMet.length} command words met · <span className="ui-readout">{state.firstTryIds.length} / {state.seenIds.length}</span> spotted first try</p>}
+      </section>
     </div>;
   }
 
   // ───────── PLAY ─────────
   if (view === 'play' && q) {
+    const last = qIndex + 1 >= queue.length;
     return (
-      <div className="w-full">
-        <button onClick={() => setView('home')} className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-4 max-w-xl mx-auto w-full">
-          <ArrowLeft size={15} /> {q.subjectLabel}
-        </button>
+      <div className="cr7 cr7-play" data-phase={phase}>
+        <div className="cr7-play-head">
+          <div className="cr7-ref"><span className="t-label">{q.subjectLabel} · {q.questionRef}</span><span className="ui-readout">{qIndex + 1} / {queue.length}</span></div>
+          <div className="cr7-steps" aria-hidden="true">{queue.map((item, index) => <i key={item.id} data-state={index < qIndex ? 'done' : index === qIndex ? 'now' : undefined} />)}</div>
+        </div>
 
         <AnimatePresence mode="wait">
-          <MotionDiv key={`${q.id}-${phase}`} {...fade} className={cardShell}>
-            <div className="flex items-center justify-between mb-4">
-              <span className="text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: INDIGO_DARK_TEXT }}>{q.questionRef}</span>
-              <span className="text-[11px] font-medium text-zinc-400">{qIndex + 1} / {queue.length}</span>
-            </div>
-
+          <MotionDiv key={`${q.id}-${phase}`} {...fade} className="cr7-card">
             {/* Figure for figure-attached questions — the real SEC graph/diagram
                 the cue depends on, shown above the tappable stem, with attribution. */}
             {q.figure && (
-              <figure className="mb-4 rounded-xl border-2 border-[#1A1A1A] dark:border-zinc-700 overflow-hidden bg-white">
-                <img src={figureUrl(q.figure.src)} alt={q.figure.alt} loading="lazy" className="w-full h-auto block" />
-                <figcaption className="text-[10px] px-3 py-1.5" style={{ color: INDIGO_DARK_TEXT, backgroundColor: INDIGO_TINT }}>{q.figure.source}</figcaption>
+              <figure className="cr7-figure">
+                <img src={figureUrl(q.figure.src)} alt={q.figure.alt} loading="lazy" />
+                <figcaption className="t-meta">{q.figure.source}</figcaption>
               </figure>
             )}
 
             {phase === 'spot' && (
-              <p className="text-[12px] font-semibold mb-3" style={{ color: INDIGO_DARK_TEXT }}>
-                Tap the command word — the cue telling you what to actually <span className="italic">do</span>.
-              </p>
+              <p className="t-sub">Tap the command word: the cue telling you what to actually do.</p>
             )}
 
             {/* The question stem as tappable tokens */}
-            <p className="text-[18px] leading-[1.7] mb-5" style={{ color: '#1a1a1a', fontFamily: "'Source Serif 4', serif" }}>
+            <p className="cr7-stem">
               {tokens.map((tok, i) => {
                 if (/^\s+$/.test(tok)) return <span key={i}>{tok}</span>;
                 const isCmd = cmdIndices.has(i);
                 const isWrong = wrong.has(i);
                 if (phase === 'reveal' && isCmd) {
-                  return <span key={i} className="rounded px-1 py-0.5 font-semibold" style={{ backgroundColor: HL_BG, color: HL_TEXT }}>{tok}</span>;
+                  return <span key={i} className="cr7-hit">{tok}</span>;
                 }
                 return (
                   <button
                     key={i}
                     onClick={() => onTapToken(i)}
                     disabled={phase === 'reveal'}
-                    className="rounded transition-colors"
-                    style={isWrong
-                      ? { textDecoration: 'line-through', color: '#b0a898', cursor: phase === 'reveal' ? 'default' : 'pointer' }
-                      : { color: 'inherit', cursor: phase === 'reveal' ? 'default' : 'pointer' }}
-                    onMouseEnter={(e) => { if (phase === 'spot') e.currentTarget.style.backgroundColor = INDIGO_TINT; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; }}
+                    className="cr7-word"
+                    data-wrong={isWrong || undefined}
                   >{tok}</button>
                 );
               })}
             </p>
 
-            {phase === 'spot' && (
-              <>
-                {wrong.size > 0 && (
-                  <p className="text-[12px] mb-3" style={{ color: '#9e9186' }}>That’s a topic word — look for the <span className="font-semibold">action</span> word (the verb telling you what to produce).</p>
-                )}
-                <div className="flex justify-end">
-                  <button onClick={reveal} className="text-[13px] font-medium text-zinc-400 hover:text-zinc-700 underline">Reveal it</button>
-                </div>
-              </>
+            {phase === 'spot' && wrong.size > 0 && (
+              <p className="t-sub">That’s a topic word. Look for the action word, the verb telling you what to produce.</p>
             )}
 
             {phase === 'reveal' && (
-              <>
-                <div className="flex items-center gap-1.5 mb-3">
-                  <Check size={16} strokeWidth={3} style={{ color: COLORS.success }} />
-                  <span className="text-[12px] font-semibold" style={{ color: COLORS.successDarkText }}>
-                    {usedReveal ? `The command word is “${q.commandWord}”` : wrong.size === 0 ? 'Spotted it first try' : `Got it — it’s “${q.commandWord}”`}
-                  </span>
-                </div>
-
-                {/* One editorial teaching surface. The old version used two
-                    stacked pastel callouts and a stock warning icon, which made
-                    grounded examiner guidance look like generic AI output. */}
-                <section className="mb-4 overflow-hidden rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] shadow-[3px_3px_0_0_var(--outline-strong)]">
-                  <header className="px-5 py-4 border-b border-[var(--outline-soft)]">
-                    <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-1">
-                      Read it like an examiner
-                    </p>
-                    <h3 className="font-serif text-[22px] leading-tight font-semibold text-[var(--ink-primary)]">
-                      “{q.commandWord}” is an instruction, not a label.
-                    </h3>
-                  </header>
-
-                  <div className="grid md:grid-cols-2">
-                    <div className="px-5 py-5 md:border-r border-[var(--outline-soft)]">
-                      <div className="flex items-center gap-3 mb-3">
-                        <span className="font-mono text-[11px] font-bold text-accent">01</span>
-                        <span className="h-px w-8 bg-accent" aria-hidden="true" />
-                        <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">The move</p>
-                      </div>
-                      <p className="text-[14px] leading-relaxed text-[var(--ink-primary)]">{q.demand}</p>
-                    </div>
-
-                    <div className="px-5 py-5 border-t md:border-t-0 border-[var(--outline-soft)]">
-                      <div className="flex items-center gap-3 mb-3">
-                        <span className="font-mono text-[11px] font-bold text-accent">02</span>
-                        <span className="h-px w-8 bg-accent" aria-hidden="true" />
-                        <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">Where marks go</p>
-                      </div>
-                      <p className="text-[14px] leading-relaxed text-[var(--ink-primary)]">{q.trap}</p>
-                    </div>
-                  </div>
-
-                  <footer className="px-5 py-3 border-t border-[var(--outline-soft)] flex flex-wrap items-center justify-between gap-2">
-                    <p className="text-[11px] leading-relaxed text-[var(--ink-muted)]">{q.source}</p>
-                    <p className="font-mono text-[10px] font-bold uppercase tracking-[0.12em] text-accent">About {q.marks} marks in play</p>
-                  </footer>
-                </section>
-
-                <div className="flex justify-end">
-                  <PrimaryActionButton label={qIndex + 1 < queue.length ? 'Next question' : 'Finish'} icon={qIndex + 1 < queue.length ? ArrowRight : BookOpenCheck} onClick={next} />
-                </div>
-              </>
+              <section className="cr7-reveal" aria-label="Read it like an examiner">
+                <p className="cr7-got"><Check size={16} strokeWidth={2} aria-hidden="true" /><span>
+                  {usedReveal ? `The command word is “${q.commandWord}”` : wrong.size === 0 ? 'Spotted it first try' : `Got it — it’s “${q.commandWord}”`}
+                </span></p>
+                <div className="cr7-examiner"><p className="t-label">Read it like an examiner</p><h3 className="t-heading">“{q.commandWord}” is an instruction, not a label.</h3></div>
+                <div className="cr7-part"><div className="cr7-motif"><b className="ui-readout">01</b><i aria-hidden="true" /><span className="t-label">The move</span></div><p className="t-body">{q.demand}</p></div>
+                <div className="cr7-part"><div className="cr7-motif"><b className="ui-readout">02</b><i aria-hidden="true" /><span className="t-label">Where marks go</span></div><p className="t-body">{q.trap}</p></div>
+                <p className="t-meta">{q.source}</p>
+                <p className="t-label cr7-marks">About {q.marks} marks in play</p>
+              </section>
             )}
           </MotionDiv>
         </AnimatePresence>
+
+        <div className="cr7-foot-wrap frame-float frame-float-bottom">
+          <PinnedFooter className="cr7-foot">
+            {phase === 'spot'
+              ? <Button size="lg" block onClick={reveal}>Reveal it</Button>
+              : <Button kind="main" size="lg" block arrow="forward" onClick={next}>{last ? 'Finish' : 'Next question'}</Button>}
+          </PinnedFooter>
+        </div>
       </div>
     );
   }
 
   return null;
+};
+
+/** The opening's label: "Accounting 2025, Higher" where the reference starts with a year and a level
+ *  (board c-tools2-command), the subject alone otherwise. */
+const ideaLabel = (q: CommandWordQuestion) => {
+  const sat = /^(\d{4})\s+(HL|OL)\b/.exec(q.questionRef);
+  return sat ? `${q.subjectLabel} ${sat[1]}, ${sat[2] === 'HL' ? 'Higher' : 'Ordinary'}` : q.subjectLabel;
+};
+
+/** The sentence of the stem that holds the command word ("Outline the benefits of maintaining a
+ *  debtors control account."): the phone's headline. The whole stem when it cannot be found. */
+const commandSentence = (q: CommandWordQuestion) => {
+  const at = q.stem.toLowerCase().indexOf(q.commandWord.toLowerCase());
+  if (at < 0) return q.stem;
+  const before = q.stem.slice(0, at);
+  const start = Math.max(before.lastIndexOf('. '), before.lastIndexOf('? '), before.lastIndexOf('! '), before.lastIndexOf(': '));
+  const from = start < 0 ? 0 : start + 2;
+  const rest = q.stem.slice(at);
+  const stop = rest.search(/[.?!](\s|$)/);
+  return q.stem.slice(from, stop < 0 ? undefined : at + stop + 1).trim();
+};
+
+/** The text with the command word marked (an ink underline), as the boards draw it. */
+const markCommand = (text: string, commandWord: string) => {
+  const at = text.toLowerCase().indexOf(commandWord.toLowerCase());
+  if (at < 0) return text;
+  return <>{text.slice(0, at)}<span className="cr7-cmd">{text.slice(at, at + commandWord.length)}</span>{text.slice(at + commandWord.length)}</>;
 };
 
 export default CommandWordReflex;

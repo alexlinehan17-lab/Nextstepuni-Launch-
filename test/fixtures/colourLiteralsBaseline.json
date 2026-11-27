@@ -53,10 +53,6 @@
    "hex": 12,
    "rgb(": 1
   },
-  "components/CommandWordReflex/index.tsx": {
-   "hex": 6,
-   "tailwind [#…]": 2
-  },
   "components/CourseworkCompanion/CourseworkCompanion.tsx": {
    "hex": 13,
    "tailwind [#…]": 4

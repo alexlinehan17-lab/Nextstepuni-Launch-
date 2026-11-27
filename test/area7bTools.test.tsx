@@ -16,11 +16,15 @@ import type { CourseworkStore } from '../components/CourseworkStudio/store';
 import ComebackEngineV2 from '../components/ComebackEngineV2';
 import { buildRecoveryPlan } from '../components/comeback/recoveryPlan';
 import { DEMO_STUDENT_UID, createDevStudentProfile } from '../data/devStudent';
+import CommandWordReflex from '../components/CommandWordReflex';
+import { questionsForSubject } from '../commandWordData';
 
 const progressDoc: { current: Record<string, unknown> } = { current: {} };
 const updateDemoProgress = vi.fn((update: (current: Record<string, unknown>) => Record<string, unknown>) => { progressDoc.current = update(progressDoc.current); });
 vi.mock('@/contexts/AuthContext', () => ({ useAuth: () => ({ user: null }) }));
 vi.mock('@/contexts/InnovationDataContext', () => ({ useInnovationData: () => ({ topicMastery: { canonicalMastery: { topics: {} } }, subjectPriorities: [] }) }));
+const recordResult = vi.fn();
+vi.mock('@/hooks/useCommandWordReflex', () => ({ useCommandWordReflex: () => ({ state: { seenIds: [], firstTryIds: [], wordsMet: [], attempts: 0, updatedAt: '' }, isLoaded: true, recordResult }) }));
 vi.mock('@/contexts/ProgressContext', () => ({ useOptionalProgress: () => ({ rawProgressDoc: progressDoc.current, updateDemoProgress }) }));
 
 function memoryStore(value: CourseworkWorkspace = courseworkDemo()): CourseworkStore {
@@ -127,5 +131,34 @@ describe('Comeback Engine (area 7b)', () => {
     fireEvent.click(within(await screen.findByRole('alertdialog', { name: 'Rebuild plan?' })).getByRole('button', { name: 'Rebuild plan' }));
     expect(await screen.findByRole('heading', { name: 'No judgement. Just a better starting point.' })).toBeInTheDocument();
     expect(progressDoc.current.comebackRecoveryPlan).toBeNull();
+  });
+});
+
+describe('Command-Word Reflex (area 7b)', () => {
+  test('the example question leads with its command word marked, and a round scores as before', async () => {
+    recordResult.mockClear();
+    const { container } = render(<CommandWordReflex uid="u1" studentSubjects={['Accounting']} studentCycle="leaving-cert" />);
+    const [first, second] = questionsForSubject('accounting').filter(q => q.level === 'common' || q.level === 'higher');
+    expect(screen.getByText(/^Try the idea · Accounting/)).toBeInTheDocument();
+    expect(container.querySelector('.cr7-cmd')?.textContent?.toLowerCase()).toBe(first.commandWord.toLowerCase());
+    expect(screen.getByRole('button', { name: /^Accounting/ })).toHaveAttribute('aria-pressed', 'true');
+    fireEvent.click(screen.getByRole('button', { name: 'Start practising' }));
+    expect(screen.getByText('Tap the command word: the cue telling you what to actually do.')).toBeInTheDocument();
+    // A wrong word is struck through with the hint; the command word then scores "not first try".
+    const words = [...container.querySelectorAll<HTMLButtonElement>('.cr7-word')];
+    const cmd = first.commandWord.split(/\s+/)[0].replace(/[^a-z]/gi, '').toLowerCase();
+    const wrong = words.find(word => word.textContent!.replace(/[^a-z]/gi, '').toLowerCase() !== cmd)!;
+    fireEvent.click(wrong);
+    expect(wrong).toHaveAttribute('data-wrong', 'true');
+    expect(screen.getByText(/That’s a topic word/)).toBeInTheDocument();
+    fireEvent.click(words.find(word => word.textContent!.replace(/[^a-z]/gi, '').toLowerCase() === cmd)!);
+    expect(recordResult).toHaveBeenLastCalledWith(first.id, first.commandWord, false);
+    expect(await screen.findByText('Read it like an examiner')).toBeInTheDocument();
+    expect(container.querySelector('.cr7-hit')).not.toBeNull();
+    // Next question; Reveal it scores "not first try" too, as before.
+    fireEvent.click(screen.getByRole('button', { name: 'Next question' }));
+    fireEvent.click(await screen.findByRole('button', { name: 'Reveal it' }));
+    expect(recordResult).toHaveBeenLastCalledWith(second.id, second.commandWord, false);
+    expect(await screen.findByText(`The command word is “${second.commandWord}”`)).toBeInTheDocument();
   });
 });
