@@ -231,6 +231,9 @@ function MenuSection() {
       <Spec label="A menu of a screen's tools" caption="MenuPanel (the paper viewer's Tools on a laptop): the phone's Tools sheet as a menu under its button. A switch turns a thing on and the menu stays open; a row with a chevron opens it; up-right leaves the app.">
         <Line><span data-demo="menu-panel"><MenuPanelDemo /></span></Line>
       </Spec>
+      <Spec label="A screen over where you were" caption="OverScreen (Mark Bank's practice card): a task that fills the window on a phone, its bar with Close owning the top inset; on a laptop it may start at sidebar B's edge and is then not modal. The tab bar steps aside; Escape goes to the screen; focus comes back to what opened it. Shown on the Mark Bank screens rather than here, since it takes the whole window.">
+        <p className="t-meta">See Mark Bank: a practice question.</p>
+      </Spec>
       <Spec label="A box that opens a menu of choices" caption="MenuPanel with the screen's own box as its button (Mark Bank's subject and level on a laptop): a selection bar (MenuSegment) and rows with a character (MenuRadioRows), the current one ticked. Choosing applies at once.">
         <Line><span data-demo="menu-choices"><MenuChoicesDemo /></span></Line>
       </Spec>

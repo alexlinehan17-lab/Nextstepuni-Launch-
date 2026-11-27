@@ -92,3 +92,35 @@ async function tap(element: Element) {
   fireEvent.click(element, { button: 0, detail: 1 });
   await act(async () => { await new Promise(resolve => setTimeout(resolve, 20)); });
 }
+
+describe('OverScreen: a task over where you were', () => {
+  it('is a named dialog, modal on a phone, that hands Escape to its screen and gives focus back', async () => {
+    const { OverScreen } = await import('../components/ui/OverScreen');
+    const { TopBar } = await import('../components/ui/Bars');
+    const onEscape = vi.fn();
+    const opener = document.createElement('button');
+    document.body.appendChild(opener); opener.focus();
+    const view = render(<OverScreen label="Practice: Photosynthesis" onEscape={onEscape} data-expanded="false">
+      <TopBar leave={{ kind: 'close', onPress: () => {}, label: 'Close practice' }} title="Biology" />
+    </OverScreen>);
+    const over = screen.getByRole('dialog', { name: 'Practice: Photosynthesis' });
+    expect(over).toHaveAttribute('aria-modal', 'true');
+    expect(over).toHaveAttribute('data-expanded', 'false');
+    expect(over).toHaveClass('ui-over', 'frame-takeover');
+    await act(async () => { await new Promise(resolve => setTimeout(resolve, 40)); });
+    expect(screen.getByRole('button', { name: 'Close practice' })).toHaveFocus();
+    fireEvent.keyDown(window, { key: 'Escape' });
+    expect(onEscape).toHaveBeenCalledOnce();
+    view.unmount();
+    expect(opener).toHaveFocus();
+    opener.remove();
+  });
+
+  it('beside sidebar B it starts at the sidebar\'s edge and is not modal', async () => {
+    const { OverScreen } = await import('../components/ui/OverScreen');
+    render(<OverScreen label="Practice" onEscape={() => {}} modal={false} left={264}><p>Task</p></OverScreen>);
+    const over = screen.getByRole('dialog', { name: 'Practice' });
+    expect(over).not.toHaveAttribute('aria-modal');
+    expect(over.style.left).toBe('264px');
+  });
+});

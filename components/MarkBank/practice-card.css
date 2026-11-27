@@ -1,0 +1,247 @@
+/* The practice card in the agreed look (boards c-markbank-practice and r5-mark-bank). A full screen
+   of its own: the shared bar with Close at the top left, the progress and the question as printed,
+   your answer, the scheme under your answer, and one pinned footer. On a laptop it sits beside
+   sidebar B in one 904px column (1088px expanded, over the whole window): the question at the left
+   and your answer and the scheme at the right, the question staying in view.
+
+   SessionScreen draws much of the card with inline styles, shared with the plain session tests and
+   with Listening Studio's embedded scheme; this file restyles only inside .mb-practice, so those
+   keep today's look. Where an inline style has to give way, the rule says !important. */
+
+/* .mb-practice is the shared OverScreen (components/ui/OverScreen.tsx): a flex column over the page. */
+.mb-practice > .mb-practice-scope { display: flex; flex: 1; min-height: 0; flex-direction: column; }
+.mb-practice .mb-paper-session {
+  position: relative !important; inset: auto !important; display: flex; flex: 1; min-height: 0; flex-direction: column;
+  height: 100%; overflow: hidden !important; padding: 0 !important; background: var(--surface-canvas) !important;
+  color: var(--ink-primary); font-family: var(--font-ui) !important;
+}
+.mb-practice .mb-practice-bar { position: relative; flex: none; }
+
+/* The work: one scroller between the bar and the footer. */
+.mb-practice .mb-paper-session .mb-session-workspace {
+  display: flex !important; flex: 1; min-height: 0; flex-direction: column; gap: 0 !important;
+  max-width: none !important; width: 100%; margin: 0 !important; padding: 0 var(--space-6) var(--space-8) !important;
+  overflow-y: auto; overscroll-behavior: contain;
+}
+.mb-practice [data-testid="mark-bank-question-pane"] { width: 100% !important; position: static !important; }
+
+/* The progress: the topic and the one live figure, then one step per question. */
+.mb-p-progress { display: flex; flex: none; flex-direction: column; gap: var(--space-2); padding: var(--space-2) 0 var(--space-6); }
+.mb-practice .mb-p-progress-label {
+  margin: 0; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; text-transform: uppercase; outline: none;
+}
+.mb-p-progress-count { color: var(--accent-text); white-space: nowrap; }
+.mb-p-steps { display: grid; grid-auto-columns: minmax(0, 1fr); grid-auto-flow: column; gap: 5px; }
+.mb-p-steps > i { display: block; height: 4px; border-radius: 2px; background: var(--hairline); }
+.mb-p-steps > i[data-on] { background: var(--ink-primary); }
+
+/* The question as printed: its citation, then the question on the page between two hairlines. */
+.mb-p-cite { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-3); color: var(--ink-primary); }
+.mb-p-cite > :last-child { flex: none; white-space: nowrap; }
+.mb-practice .mb-p-ink3 { color: var(--ink-muted); }
+.mb-practice .mb-question-sheet > div:not(.mb-p-cite) {
+  padding: 16px 0 18px !important; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline);
+}
+.mb-practice [data-testid="mark-bank-question-text"],
+.mb-practice [data-testid="mark-bank-question-text"] [data-question-depth] {
+  margin-top: 0 !important; color: var(--ink-primary) !important; font-family: var(--font-ui) !important;
+  font-size: 17px !important; font-weight: 400 !important; line-height: 24px !important; letter-spacing: -0.01em;
+}
+.mb-practice [data-testid="mark-bank-question-text"] { margin: 0 !important; }
+/* The command word's orange line was a mark only: the question reads exactly as printed. */
+.mb-practice [data-testid="mark-bank-question-text"] span { text-decoration: none !important; box-shadow: none !important; }
+.mb-practice .mb-question-sheet > div > p { font-family: var(--font-ui) !important; font-size: 16px !important; line-height: 24px !important; }
+.mb-practice .mb-question-sheet figcaption,
+.mb-practice .mb-question-sheet figure [style*="10.5px"] { font-size: 11px !important; }
+/* Today's three links, kept (Alex has not said whether they go), as text buttons. */
+.mb-practice .mb-original-paper {
+  display: flex !important; align-items: center; gap: var(--space-1); min-height: 44px; margin-top: var(--space-2) !important;
+  color: var(--ink-primary); font: 400 15px/21px var(--font-ui); text-decoration: none;
+}
+.mb-practice .mb-original-paper + .mb-original-paper { margin-top: 0 !important; }
+.mb-practice .mb-original-paper .ui-icon { flex: none; color: var(--ink-muted); }
+.mb-practice .mb-source-material-trigger {
+  width: 100%; margin: var(--space-2) 0 0; padding: 10px 0; grid-template-columns: auto minmax(0, 1fr) auto; gap: var(--space-3);
+  border: 0; border-top: 1px solid var(--hairline); background: none; color: var(--ink-primary);
+}
+.mb-practice .mb-source-material-trigger:focus-visible { outline: 2px solid var(--outline-strong); outline-offset: 2px; background: none; }
+.mb-practice .mb-source-material-icon { width: 24px; height: 24px; border: 0; border-radius: 0; background: none; color: var(--ink-secondary); }
+.mb-practice .mb-source-material-copy > span { color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; }
+.mb-practice .mb-source-material-copy strong { color: var(--ink-primary); font: 400 16px/21px var(--font-ui); letter-spacing: -0.015em; }
+.mb-practice .mb-source-material-copy small { color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.mb-practice .mb-source-material-open { width: 20px; height: 20px; border: 0; background: none; color: var(--ink-muted); }
+.dark .mb-practice :is(.mb-source-material-copy > span, .mb-source-material-icon) { color: var(--ink-muted); }
+@media (hover: hover) and (pointer: fine) {
+  .mb-practice .mb-source-material-trigger:hover { background: var(--surface-soft); }
+}
+/* Match the route you answered: kept, in the system's sizes. */
+.mb-practice .mb-route-chooser { border-color: var(--hairline) !important; border-radius: var(--r-box) !important; background: none !important; }
+.mb-practice .mb-route-chooser legend { color: var(--ink-muted) !important; font: 400 11px/14px var(--font-ui) !important; letter-spacing: 0.1em !important; }
+.mb-practice .mb-route-chooser p { color: var(--ink-secondary) !important; font: 400 13px/18px var(--font-ui) !important; }
+.mb-practice .mb-route-chooser button { min-height: 44px; font-size: 14px; }
+
+/* Your answer, under the question. */
+.mb-practice .mb-paper-session .mb-scheme-pane { width: 100% !important; margin-top: var(--space-8) !important; padding: 0 !important; border: 0 !important; }
+.mb-p-answer-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-3); }
+.mb-practice .mb-paper-draft label { margin: 0; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; text-transform: uppercase; }
+.mb-p-answer-head > span { color: var(--ink-muted); font: 400 13px/18px var(--font-ui); text-align: right; }
+.mb-practice .mb-paper-draft textarea {
+  display: block; width: 100%; height: auto; min-height: 128px; padding: 13px 14px; resize: vertical;
+  border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); background: var(--surface-paper); color: var(--ink-primary);
+  font: 400 16px/24px var(--font-ui);
+}
+.mb-practice .mb-paper-draft textarea::placeholder { color: var(--ink-muted); }
+.mb-practice .mb-paper-draft textarea:focus { outline: none; border-color: var(--nsu-focus-edge, var(--outline-strong)); box-shadow: inset 0 0 0 1px var(--nsu-focus-edge, var(--outline-strong)); }
+.mb-practice .mb-p-waysin { margin-top: var(--space-2); }
+
+/* The scheme, under your answer. */
+.mb-practice .mb-scheme-reveal { margin-top: var(--space-8); }
+.mb-practice .mb-scheme-sheet > .mb-scheme-reveal > fieldset { padding: 0 !important; }
+.mb-practice .mb-scheme-head { padding: 0 0 2px !important; gap: var(--space-3); }
+.mb-practice .mb-scheme-head > span { color: var(--ink-muted) !important; font: 400 11px/14px var(--font-ui) !important; letter-spacing: 0.1em !important; }
+.mb-practice .mb-select-all {
+  min-height: 44px; border-bottom: 0 !important; color: var(--ink-secondary) !important; font: 400 14px/20px var(--font-ui) !important;
+}
+.mb-practice .mb-scheme-intro { margin: 0 0 var(--space-3) !important; padding: 0 !important; border-bottom: 0 !important; }
+.mb-practice .mb-scheme-intro > p:first-child { color: var(--ink-primary) !important; font: 400 21px/26px var(--font-ui) !important; letter-spacing: -0.03em; }
+.mb-practice .mb-scheme-intro > p + p { margin-top: var(--space-2) !important; color: var(--ink-secondary) !important; font: 400 13px/18px var(--font-ui) !important; }
+.mb-practice .mb-scheme-cite { margin-top: var(--space-2) !important; color: var(--ink-muted) !important; font: 400 13px/18px var(--font-ui) !important; }
+/* The scheme's headings and notes: the one typeface, nothing under 11px. */
+.mb-practice .mb-scheme-reveal :is(h3, p, legend, small, em) { font-family: var(--font-ui) !important; }
+.mb-practice .mb-scheme-reveal :is(h3) { font-weight: 400 !important; }
+
+/* A claim row: a box you press to claim its marks (a line, the square mark at the left, the
+   scheme's words in ink, its marks in the readout); claimed, an ink outline and the mark filled. */
+.mb-practice button.mb-pt {
+  grid-template-columns: 22px minmax(0, 1fr) auto !important; gap: var(--space-3) !important; align-items: start !important;
+  padding: 13px 14px !important; border: 1px solid var(--outline-soft) !important; border-radius: var(--r-ctl) !important;
+  background: var(--surface-paper) !important; color: var(--ink-primary) !important; font: 400 15px/21px var(--font-ui) !important;
+}
+.mb-practice button.mb-pt[aria-pressed="true"] { border-color: var(--ink-primary) !important; box-shadow: inset 0 0 0 1px var(--ink-primary); }
+.mb-practice .mb-pt-mark {
+  width: 22px !important; height: 22px !important; border: 1.5px solid var(--outline-soft) !important; border-radius: 6px !important;
+  background: transparent !important; color: var(--action-ink) !important;
+}
+.mb-practice button.mb-pt[aria-pressed="true"] .mb-pt-mark { border-color: var(--ink-primary) !important; background: var(--ink-primary) !important; }
+.mb-practice .mb-pt-text span { color: var(--ink-muted) !important; font-size: 13px !important; line-height: 18px !important; }
+.mb-practice .mb-pt-text > span[dir="auto"] { color: var(--ink-primary) !important; font-size: 15px !important; line-height: 21px !important; }
+.mb-practice .mb-pt-text > span[dir="auto"] > span { color: var(--ink-muted) !important; font-size: inherit !important; line-height: inherit !important; }
+.mb-practice .mb-pt-marks {
+  padding: 2px 0 0 !important; background: none !important; color: var(--ink-secondary) !important;
+  font: 400 13px/16px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace !important; letter-spacing: 0.02em;
+}
+.mb-practice button.mb-pt[aria-pressed="true"] .mb-pt-marks { color: var(--ink-primary) !important; }
+.mb-practice .mb-pt-synonym { min-height: 32px; border-bottom: 0 !important; color: var(--ink-secondary) !important; font: 400 13px/18px var(--font-ui) !important; text-decoration: underline; text-underline-offset: 3px; }
+.mb-practice .mb-pt ~ span { font-size: 13px !important; }
+/* "Any N of these": the same box; each answer a row you tick; ticked, an ink outline. */
+.mb-practice .mb-anyn { border: 1px solid var(--outline-soft) !important; border-radius: var(--r-ctl) !important; font-family: var(--font-ui); }
+.mb-practice .mb-anyn > p, .mb-practice .mb-anyn > div > span { font-family: var(--font-ui) !important; font-size: 13px !important; }
+.mb-practice .mb-anyn-option {
+  min-height: 44px; padding: 10px 12px !important; border-radius: var(--r-sm) !important; font: 400 14px/20px var(--font-ui) !important;
+  color: var(--ink-primary) !important;
+}
+.mb-practice .mb-anyn-option[aria-pressed="true"] {
+  border-color: var(--ink-primary) !important; background: var(--surface-paper) !important; box-shadow: inset 0 0 0 1px var(--ink-primary);
+}
+.mb-practice .mb-anyn-option[aria-pressed="true"] > span:first-child { background: var(--ink-primary) !important; color: var(--action-ink) !important; }
+.mb-practice .mb-anyn-option[aria-pressed="true"] span { color: var(--ink-primary) !important; }
+.mb-practice .mb-anyn-option[aria-pressed="true"] > span:first-child, .mb-practice .mb-anyn-option[aria-pressed="true"] > span:first-child * { color: var(--action-ink) !important; }
+.mb-practice .mb-anyn-option > span:last-child:not(:nth-child(2)) { background: none !important; color: var(--ink-secondary) !important; font: 400 13px/16px 'Departure Mono', ui-monospace, monospace !important; }
+.mb-practice .mb-anyn em { font-size: 12px !important; }
+.mb-practice .mb-anyn > p { font-size: 13px !important; }
+/* Stepped marks and a row's parts: the permitted marks as small boxes; chosen, an ink outline. */
+.mb-practice .mb-step {
+  min-width: 44px; min-height: 36px; border-color: var(--outline-soft) !important; border-radius: var(--r-sm) !important;
+  background: var(--surface-paper) !important; color: var(--ink-primary) !important; font: 400 14px/1 'Departure Mono', ui-monospace, monospace !important;
+}
+.mb-practice .mb-step[aria-pressed="true"] { border-color: var(--ink-primary) !important; box-shadow: inset 0 0 0 1px var(--ink-primary); font-weight: 700 !important; }
+.mb-practice section[aria-label^="Marking criterion"] strong { font-family: var(--font-ui) !important; font-weight: 400 !important; font-size: 15px !important; }
+/* Examiner directions (kept, not on the boards): on the page under a small label and a hairline, not in a grey box. */
+.mb-practice .mb-claim-directions { padding: 12px 0 0; border: 0; border-top: 1px solid var(--hairline); border-radius: 0; background: none; }
+.mb-practice .mb-claim-directions strong { color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; }
+.mb-practice .mb-claim-directions ul { color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+/* Orange selected faces in two subject panels become the ink outline (no orange fill). */
+.mb-practice .mb-applied-credit button[aria-pressed="true"],
+.mb-practice .mb-french-attempt[aria-pressed="true"],
+.mb-practice .mb-french-choice[data-selected="true"] { background: var(--surface-paper) !important; color: var(--ink-primary) !important; border-color: var(--ink-primary) !important; box-shadow: inset 0 0 0 1px var(--ink-primary); }
+.mb-practice input[id^="accounting-score-"] { background: var(--surface-paper) !important; color: var(--ink-primary) !important; }
+
+/* The pinned footer: Reveal (the one charcoal button), then Missed it, Shaky and Got it. */
+.mb-practice .mb-paper-session .mb-session-rail {
+  position: relative !important; z-index: 2; flex: none; border-top: 1px solid var(--hairline) !important;
+  background: var(--surface-canvas) !important; box-shadow: none !important;
+}
+.mb-practice .mb-reveal-area { padding: 10px var(--space-6) calc(var(--safe-bottom, 0px) + 12px) !important; }
+.mb-practice .mb-reveal-inner { display: flex; flex-direction: column; gap: var(--space-2); max-width: none !important; }
+.mb-practice .mb-paper-session .mb-session-rail .mb-reveal-button {
+  height: 52px; padding: 0 18px !important; border: 1px solid var(--action) !important; border-radius: var(--r-ctl) !important;
+  background: var(--action) !important; color: var(--action-ink) !important; box-shadow: none !important;
+  font: 400 16px/1 var(--font-ui) !important; opacity: 1 !important;
+}
+.mb-practice .mb-paper-session .mb-session-rail .mb-reveal-button:active { background: var(--action-press) !important; transform: scale(0.98); }
+.mb-practice .mb-paper-session .mb-session-rail .mb-reveal-button:disabled {
+  border-color: var(--hairline) !important; background: var(--surface-soft) !important; color: var(--ink-muted) !important; transform: none;
+}
+.mb-p-reveal-note { margin: 0; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); text-align: center; }
+.mb-practice .mb-whisper { max-width: none !important; padding: 12px var(--space-6) 0 !important; color: var(--ink-primary) !important; font: 400 13px/18px var(--font-ui) !important; }
+.mb-practice .mb-grade-area { padding: 12px var(--space-6) calc(var(--safe-bottom, 0px) + 12px) !important; }
+.mb-practice .mb-grade-inner { max-width: none !important; }
+.mb-practice .mb-unclaimed { margin: 0 0 6px !important; padding: 0 !important; border-radius: 0 !important; background: none !important; color: var(--ink-muted) !important; font: 400 13px/18px var(--font-ui) !important; }
+.mb-practice .mb-unclaimed > div { display: block !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mb-practice .mb-unclaimed span { color: var(--ink-muted) !important; font: inherit !important; letter-spacing: 0 !important; text-transform: none !important; }
+.mb-practice .mb-unclaimed > div > span:nth-child(2), .mb-practice .mb-unclaimed > div > span:nth-child(2) * { color: var(--ink-primary) !important; }
+.mb-practice .mb-unclaimed[data-all] span { color: var(--ink-primary) !important; }
+.mb-practice #mark-bank-grade-guidance { margin: 0 0 var(--space-3) !important; color: var(--ink-primary) !important; font: 400 13px/18px var(--font-ui) !important; }
+.mb-practice #mark-bank-grade-guidance br { display: none; }
+.mb-practice #mark-bank-grade-guidance em { color: var(--ink-muted) !important; font-style: normal; }
+.mb-practice #mark-bank-grade-guidance em::before { content: ' '; }
+.mb-practice .mb-grades { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: var(--space-2) !important; }
+.mb-practice .mb-paper-session .mb-session-rail .mb-grades .mb-grade-button {
+  height: 44px; padding: 0 var(--space-2) !important; border: 1px solid var(--outline-soft) !important; border-radius: var(--r-ctl) !important;
+  background: var(--surface-paper) !important; color: var(--ink-primary) !important; box-shadow: none !important; transform: none !important;
+  font: 400 15px/1 var(--font-ui) !important;
+}
+.mb-practice .mb-paper-session .mb-session-rail .mb-grades .mb-grade-button:active { background: var(--surface-soft) !important; }
+.mb-practice .mb-paper-session .mb-session-rail .mb-grades .mb-grade-button[data-suggested="true"] { border-color: var(--ink-primary) !important; box-shadow: inset 0 0 0 1px var(--ink-primary) !important; }
+
+/* Leave practice? The one centred confirm on a phone. */
+.mb-practice .mb-exit > div { border: 1px solid var(--outline-soft) !important; border-radius: var(--r-card) !important; background: var(--surface-raised) !important; box-shadow: var(--float) !important; }
+.mb-practice .mb-exit span { color: var(--ink-muted) !important; font: 400 11px/14px var(--font-ui) !important; letter-spacing: 0.1em !important; }
+.mb-practice .mb-exit h2 { color: var(--ink-primary) !important; font: 400 21px/26px var(--font-ui) !important; letter-spacing: -0.03em; }
+.mb-practice .mb-exit p { color: var(--ink-secondary) !important; font: 400 15px/21px var(--font-ui) !important; }
+
+/* A laptop: one 904px column beside sidebar B; the question at the left stays in view while
+   your answer and the scheme scroll at the right. Expanded, 1088px over the whole window. */
+@media (min-width: 1024px) {
+  .mb-practice { --mb-col: 904px; }
+  .mb-practice[data-expanded="true"] { --mb-col: 1088px; }
+  .mb-practice .mb-practice-bar.ui-bar { border-bottom: 0; }
+  .mb-practice .mb-practice-bar .ui-bar-row { width: min(var(--mb-col), 100% - 2 * var(--space-6)); margin: 0 auto; border-bottom: 1px solid var(--hairline); }
+  .mb-practice .mb-paper-session .mb-session-workspace {
+    display: grid !important; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-content: start; align-items: start;
+    column-gap: 56px !important; padding: 0 max(var(--space-6), calc((100% - var(--mb-col)) / 2)) var(--space-8) !important;
+  }
+  .mb-practice .mb-paper-session .mb-session-workspace[data-focus="true"] { grid-template-columns: minmax(0, 1fr); }
+  .mb-p-progress { grid-column: 1 / -1; padding: 22px 0 28px; }
+  .mb-practice [data-testid="mark-bank-question-pane"] { position: sticky !important; top: 0; }
+  .mb-practice .mb-paper-session .mb-scheme-pane { margin-top: 0 !important; }
+  .mb-practice .mb-paper-draft textarea { min-height: 220px; }
+  .mb-practice .mb-reveal-area, .mb-practice .mb-grade-area { padding: 0 max(var(--space-6), calc((100% - var(--mb-col)) / 2)) !important; }
+  .mb-practice .mb-paper-session .mb-session-rail { border-top: 0 !important; }
+  .mb-practice .mb-reveal-inner, .mb-practice .mb-grade-inner { padding: 18px 0 24px; border-top: 1px solid var(--hairline); }
+  .mb-practice .mb-reveal-inner { display: grid; grid-template-columns: minmax(0, 1fr) 340px; align-items: center; column-gap: 32px; }
+  .mb-practice .mb-reveal-inner > .mb-reveal-button { grid-column: 2; grid-row: 1; }
+  .mb-practice .mb-reveal-inner > .mb-p-reveal-note { grid-column: 1; grid-row: 1; text-align: left; }
+  .mb-practice .mb-reveal-inner > .mb-starting-attempt { grid-column: 1 / -1; }
+  .mb-practice .mb-grade-inner { display: grid; grid-template-columns: minmax(0, 470px) auto; justify-content: space-between; align-items: center; column-gap: 32px; }
+  .mb-practice .mb-grade-motion { display: contents; }
+  .mb-practice .mb-unclaimed { grid-column: 1; grid-row: 1; margin-bottom: 4px !important; }
+  .mb-practice #mark-bank-grade-guidance { grid-column: 1; grid-row: 2; margin: 0 !important; }
+  .mb-practice .mb-grades { grid-column: 2; grid-row: 1 / span 2; grid-template-columns: repeat(3, 136px) !important; }
+  .mb-practice .mb-whisper { padding: 12px max(var(--space-6), calc((100% - var(--mb-col)) / 2)) 0 !important; }
+}
+
+/* Expand / Contract in the bar: the glyph beside its word. */
+.mb-practice .mb-practice-bar .ui-btn > span { display: inline-flex; align-items: center; gap: 6px; }
+/* A panel's small label over its scheme: the system's label (11px, regular), not 10px bold. */
+.mb-practice .mb-politics-rubric .mb-politics-eyebrow { color: var(--ink-muted); font-size: 11px; font-weight: 400; letter-spacing: 0.1em; }

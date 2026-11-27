@@ -35,9 +35,13 @@
 import { atlasLinkForCard } from '../PaperTrail/atlasModel';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import ActionButton from '../ui/ActionButton';
-import { LogOut, Maximize2, Minimize2, X } from 'lucide-react';
-import KobraScope, { Button, Dialog, DialogContent, DialogTitle, DialogDescription } from '../approved-ui-runtime';
+import { LogOut, Maximize2, Minimize2 } from 'lucide-react';
+import KobraScope, { Button } from '../approved-ui-runtime';
+import { TopBar } from '../ui/Bars';
+import { Arrow, Button as UiButton, Glyph, TextButton } from '../ui/Button';
+import { OverScreen } from '../ui/OverScreen';
 import './mark-bank-session-paper.css';
+import './practice-card.css';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import { emphasisSegments } from './questionEmphasis';
 import { createPortal } from 'react-dom';
@@ -821,7 +825,7 @@ const MarkRowView: React.FC<{
                 <span style={{ minWidth: 96, color: selected > 0 ? SUCCESS_TEXT : INK_2, font: `500 13px/1.4 ${SANS}` }}>{part.verbatim}</span>
                 <div role="group" aria-label={`Marks for ${part.verbatim} · ${row.verbatim}`} style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
                   {part.permittedMarks.map(mark => (
-                    <button key={mark} type="button" disabled={blocked} aria-pressed={selected === mark}
+                    <button key={mark} type="button" className="mb-step" disabled={blocked} aria-pressed={selected === mark}
                       aria-label={`Award ${mark} marks for ${part.verbatim} · ${row.verbatim}`}
                       onClick={() => onClaim(partClaimId(id, part.id), mark)}
                       style={{ minWidth: 34, padding: '7px 10px', borderRadius: 6, border: `1px solid ${selected === mark ? CLAIM : MUTED_BORDER}`,
@@ -850,7 +854,7 @@ const MarkRowView: React.FC<{
         {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}`, whiteSpace: printedLines(row.contextNote) }}>{row.contextNote}</p> : null}
         <div role="group" aria-label={`Marks for ${row.verbatim}`} style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
           {row.permittedMarks.map(mark => (
-            <button key={mark} type="button" disabled={blocked} aria-pressed={selected === mark}
+            <button key={mark} type="button" className="mb-step" disabled={blocked} aria-pressed={selected === mark}
               aria-label={`Award ${mark} marks for ${row.verbatim}`}
               onClick={() => onClaim(id, mark)}
               style={{ padding: '8px 12px', borderRadius: 6, border: `1px solid ${MUTED_BORDER}`,
@@ -886,6 +890,7 @@ const MarkRowView: React.FC<{
         initial={reduced ? false : { opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.14, ease: EASE, delay: reduced ? 0 : Math.min(index, 8) * 0.024 }}
+        className="mb-anyn"
         style={{
           marginBottom: 8, padding: '12px 13px', borderRadius: 12,
           border: `1.5px solid ${MUTED_BORDER}`,
@@ -937,6 +942,7 @@ const MarkRowView: React.FC<{
               <React.Fragment key={oi}>
               <button
                 type="button"
+                className="mb-anyn-option"
                 onClick={() => onPick(id, oi)}
                 disabled={disabled}
                 aria-pressed={on}
@@ -1038,6 +1044,7 @@ const MarkRowView: React.FC<{
     >
       <button
         type="button"
+        className="mb-pt"
         onClick={() => !blocked && onClaim(id, claimed ? 'no' : 'yes')}
         disabled={blocked}
         aria-pressed={claimed}
@@ -1054,6 +1061,7 @@ const MarkRowView: React.FC<{
         }}
       >
         <MotionSpan
+          className="mb-pt-mark"
           animate={reduced ? {} : { scale: claimed ? 1 : 0.85 }}
           transition={{ type: 'spring', stiffness: 420, damping: 26 }}
           style={{
@@ -1075,7 +1083,7 @@ const MarkRowView: React.FC<{
           )}
         </MotionSpan>
 
-        <span style={{ minWidth: 0, overflowWrap: 'anywhere' }}>
+        <span className="mb-pt-text" style={{ minWidth: 0, overflowWrap: 'anywhere' }}>
           {wholeResponse && row.contextNote && (
             <span style={{ display: 'block', marginBottom: 10, font: `400 12px/1.4 ${SANS}`, color: claimed ? ON_CLAIM : MUTED, whiteSpace: printedLines(row.contextNote) }}>
               {row.contextNote}
@@ -1108,7 +1116,7 @@ const MarkRowView: React.FC<{
              greeted the student with a column of orange before they had touched
              anything. That is both an accusation and a misuse of the token:
              orange means "this is the action", never "you got this wrong". */
-          <span style={{
+          <span className="mb-pt-marks" style={{
             font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
             fontVariantNumeric: 'tabular-nums',
             background: claimed ? CLAIM : 'var(--mb-raised)',
@@ -1130,6 +1138,7 @@ const MarkRowView: React.FC<{
       {canSynonym && !claimed && !blocked && (
         <button
           type="button"
+          className="mb-pt-synonym"
           onClick={() => onClaim(id, 'synonym')}
           style={{
             marginTop: 4, marginLeft: 42, background: 'none', border: 'none', padding: 0,
@@ -2512,6 +2521,39 @@ const useTwoPane = () => {
   return wide;
 };
 
+/** A phone: under 768px wide, where there is no sidebar to fold away and so no Expand. */
+const usePhoneWidth = () => {
+  const query = '(max-width: 767px)';
+  const [phone, setPhone] = useState(() => typeof window !== 'undefined' && Boolean(window.matchMedia?.(query).matches));
+  useEffect(() => {
+    const media = window.matchMedia?.(query);
+    if (!media) return undefined;
+    const update = () => setPhone(media.matches);
+    media.addEventListener?.('change', update);
+    return () => media.removeEventListener?.('change', update);
+  }, []);
+  return phone;
+};
+
+/** Where the page beside sidebar B begins (0 with no sidebar): the practice card sits there on
+ *  a laptop, beside the sidebar (r5-mark-bank), and follows it when it folds or is resized. */
+const useSidebarEdge = (active: boolean) => {
+  const [edge, setEdge] = useState(0);
+  useEffect(() => {
+    if (!active || typeof document === 'undefined') return undefined;
+    const measure = () => setEdge(Math.max(0, Math.round(document.querySelector('.student-sidebar-page')?.getBoundingClientRect().left ?? 0)));
+    measure();
+    let later = 0;
+    const soon = () => { measure(); window.clearTimeout(later); later = window.setTimeout(measure, 360); };
+    window.addEventListener('resize', soon);
+    const shell = document.querySelector('.student-sidebar-shell');
+    const watch = shell && typeof MutationObserver !== 'undefined' ? new MutationObserver(soon) : null;
+    if (shell && watch) watch.observe(shell, { attributes: true, subtree: false });
+    return () => { window.removeEventListener('resize', soon); watch?.disconnect(); window.clearTimeout(later); };
+  }, [active]);
+  return edge;
+};
+
 const SessionScreen: React.FC<SessionScreenProps> = ({
   cards, subjectLabel, reviewPoolTotal, reviewPoolLabel, onGrade, onExit, onFinish, paperLayout = false, studyReview, embedded,
 }) => {
@@ -2567,6 +2609,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const waysInEntryRef = useRef<HTMLButtonElement | null>(null);
   const questionPaneRef = useRef<HTMLDivElement | null>(null);
   const leaveButtonRef = useRef<HTMLButtonElement | null>(null);
+  // The practice card (paper layout): a full screen of its own with Close at the top left.
+  const practiceRef = useRef<HTMLDivElement | null>(null);
+  const practice = Boolean(paperLayout && !embedded);
+  const phone = usePhoneWidth();
+  const sideEdge = useSidebarEdge(practice);
   const keepReviewButtonRef = useRef<HTMLButtonElement | null>(null);
   const leaveSessionButtonRef = useRef<HTMLButtonElement | null>(null);
   const byId = useMemo(() => new Map(cards.map(c => [c.id, c])), [cards]);
@@ -2950,8 +2997,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   const closeExitConfirmation = useCallback(() => {
     setConfirmExit(false);
-    requestAnimationFrame(() => leaveButtonRef.current?.focus());
+    requestAnimationFrame(() => (leaveButtonRef.current ?? practiceRef.current?.querySelector<HTMLElement>('[aria-label="Close practice"]'))?.focus());
   }, []);
+
 
   if (!card || !assessmentCard) return null;
 
@@ -3011,11 +3059,17 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     }}>
       {/* Session bar. Full-bleed, so the work surface below reads as contained
           by a declared edge rather than adrift in a wide window. */}
-      {studyReview?.banner}
-      {embedded ? null : paperLayout ? <header className="mb-paper-session-heading">
-        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{confidenceReview ? 'Confidence review' : unpricedSection ? unpricedSectionLine(unpricedSection) : `${assessmentCard.totalMarks} ${marksWord(assessmentCard.totalMarks)}`} · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
-        <div><Button variant="outline" aria-label={expanded?'Contract to compact view':'Expand to full screen'} aria-pressed={expanded} onClick={()=>setExpanded(value=>!value)}>{expanded?<Minimize2 size={16}/>:<Maximize2 size={16}/>}<span>{expanded?'Contract':'Expand'}</span></Button><Button ref={leaveButtonRef} variant="ghost" size="icon" aria-label="Close practice" onClick={openExitConfirmation}><X size={18}/></Button></div>
-      </header> : <div style={{
+      {!paperLayout && studyReview?.banner}
+      {embedded ? null : paperLayout ? <>
+        {/* The practice card's one bar (c-markbank-practice, r5-mark-bank): Close at the top
+            left, Mark Bank over the subject. On a laptop, Expand folds the sidebar away and
+            Contract brings it back; a phone has no Expand: the card already fills the screen. */}
+        <TopBar tool ruled={!phone} className="mb-practice-bar" leave={{ kind: 'close', onPress: openExitConfirmation, label: 'Close practice' }}
+          over="Mark Bank" title={subjectLabel}
+          action={phone ? undefined : <UiButton size="sm" aria-label={expanded ? 'Contract to compact view' : 'Expand to full screen'} aria-pressed={expanded}
+            onClick={() => setExpanded(value => !value)}><Glyph icon={expanded ? Minimize2 : Maximize2} size={16} />{expanded ? 'Contract' : 'Expand'}</UiButton>} />
+        {studyReview?.banner}
+      </> : <div style={{
         position: 'sticky', top: 0, zIndex: 3,
         background: 'var(--mb-paper)', borderBottom: `1px solid ${HAIRLINE_2}`,
       }}>
@@ -3099,6 +3153,21 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           gap: wide ? 32 : 0, flexDirection: wide ? 'row' : 'column',
         }}
       >
+      {paperLayout && !embedded && (() => {
+        const shownTotal = studyReview ? queue.length : exerciseTotal;
+        const now = studyReview ? position + 1 : Math.min(distinctDone + 1, exerciseTotal);
+        return (
+          <div className="mb-p-progress">
+            <h2 ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined} className="mb-p-progress-label">
+              <span>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</span>{' '}
+              <span className="mb-p-progress-count">· {now} / {shownTotal}</span>
+            </h2>
+            <span className="mb-p-steps" aria-hidden="true">
+              {Array.from({ length: Math.min(shownTotal, 24) }, (_, i) => <i key={i} data-on={i < now || undefined} />)}
+            </span>
+          </div>
+        );
+      })()}
       {!embedded && <div
         ref={questionPaneRef}
         data-testid="mark-bank-question-pane"
@@ -3213,8 +3282,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             boxShadow: '0 12px 28px rgba(38, 32, 27, .055)',
           }}
         >
+          {paperLayout && <div className="mb-p-cite">
+            <span className="ui-readout">{assessmentCard.questionRef}</span>
+            <span className="ui-readout mb-p-ink3">{confidenceReview ? 'Confidence review' : unpricedSection ? unpricedSectionChip(unpricedSection) : `${assessmentCard.totalMarks} ${marksWord(assessmentCard.totalMarks)}`}</span>
+          </div>}
           <div style={{ padding: '16px 18px 18px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
+            {!paperLayout && <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
               <span style={{
                 font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.11em',
                 textTransform: 'uppercase', color: LABEL,
@@ -3230,7 +3303,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               }}>
                 {confidenceReview ? 'Confidence review' : unpricedSection ? unpricedSectionChip(unpricedSection) : `${assessmentCard.totalMarks}m`}
               </span>
-            </div>
+            </div>}
 
             {assessmentCard.kind === 'question' && assessmentCard.mathematicsScale?.practiceInstruction && (
               <p style={{ margin: '12px 0 0', font: `600 14px/1.6 ${SANS}`, color: INK }}>
@@ -3319,14 +3392,14 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </figure>
             )}
 
-            {paperLayout && assessmentCard.paperFileid && <a className="mb-original-paper" href={`/?view=innovation-zone&tool=paper-trail&subject=${encodeURIComponent(assessmentCard.subjectId)}&year=${assessmentCard.year}&level=${assessmentCard.level}&lang=ev&paper=${encodeURIComponent(assessmentCard.paperFileid.endsWith('.pdf')?assessmentCard.paperFileid:assessmentCard.paperFileid+'.pdf')}`} target="_blank" rel="noopener noreferrer">Open original paper ↗</a>}
+            {paperLayout && assessmentCard.paperFileid && <a className="mb-original-paper" href={`/?view=innovation-zone&tool=paper-trail&subject=${encodeURIComponent(assessmentCard.subjectId)}&year=${assessmentCard.year}&level=${assessmentCard.level}&lang=ev&paper=${encodeURIComponent(assessmentCard.paperFileid.endsWith('.pdf')?assessmentCard.paperFileid:assessmentCard.paperFileid+'.pdf')}`} target="_blank" rel="noopener noreferrer">Open original paper<Arrow meaning="leaves" /></a>}
             {/* The single model (atlasModel.ts): the card knows its Topic Atlas question and heading. */}
-            {paperLayout && atlasLink && <a className="mb-original-paper" data-testid="mb-atlas-link" style={{ display: 'flex', marginTop: 10 }} href={atlasLink.href} target="_blank" rel="noopener noreferrer">In the Topic Atlas: {atlasLink.heading.label} · {atlasLink.question} ↗</a>}
+            {paperLayout && atlasLink && <a className="mb-original-paper" data-testid="mb-atlas-link" style={{ display: 'flex', marginTop: 10 }} href={atlasLink.href} target="_blank" rel="noopener noreferrer">In the Topic Atlas: {atlasLink.heading.label} · {atlasLink.question}<Arrow meaning="leaves" /></a>}
             {/* Irish listening cards show their readers beside the recording, above. */}
             {!(audioMaterial && !printedQuestionReplacesText && assessmentCard.subjectId !== 'french') && sourceReaders}
 
             {answerVariants.length > 0 && (
-              <fieldset style={{
+              <fieldset className="mb-route-chooser" style={{
                 margin: '18px 0 0', padding: '14px', border: `1px solid ${HAIRLINE_2}`,
                 borderRadius: 12, background: 'var(--mb-raised)',
               }}>
@@ -3389,8 +3462,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             border: '1.5px solid #383838', boxShadow: '0 12px 28px rgba(38, 32, 27, .045)',
           }}
         >
-          {paperLayout && !waysInOpen && <div className="mb-paper-draft"><label htmlFor="mark-bank-draft">Your answer</label><textarea data-slot="textarea" id="mark-bank-draft" readOnly={revisit} value={drafts[card.id] ?? ''} onChange={event=>setDrafts(previous=>({...previous,[card.id]:event.target.value}))} placeholder="Make a start. You can also work on paper."/></div>}
-          {!revealed && !waysInOpen && (
+          {paperLayout && !waysInOpen && <div className="mb-paper-draft"><div className="mb-p-answer-head"><label htmlFor="mark-bank-draft">Your answer</label><span>You can also work on paper</span></div><textarea data-slot="textarea" id="mark-bank-draft" readOnly={revisit} value={drafts[card.id] ?? ''} onChange={event=>setDrafts(previous=>({...previous,[card.id]:event.target.value}))} placeholder="Write your answer here"/></div>}
+          {!revealed && !waysInOpen && paperLayout && (
+            <TextButton ref={waysInEntryRef} tone="quiet" className="mb-p-waysin" aria-label="Need a way into the question? Open Ways In" onClick={() => setWaysInOpen(true)}>
+              Need a way into the question?
+            </TextButton>
+          )}
+          {!revealed && !waysInOpen && !paperLayout && (
             <div className="mb-wi-entry">
               <span>Before the scheme</span>
               <h2>Need a way into the question?</h2>
@@ -3426,6 +3504,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             {revealed && (
               <MotionDiv
                 key="scheme"
+                className="mb-scheme-reveal"
                 initial={reduced ? { opacity: 0 } : { opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -3433,7 +3512,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               >
                 <fieldset disabled={revisit || Boolean(embedded?.locked)} style={{ padding: embedded ? 0 : '4px 18px 18px', margin: 0, border: 0, minWidth: 0 }}>
                   <WaysInAttemptReview work={waysInWork} card={assessmentCard} subjectLabel={subjectLabel} />
-                  <div style={{
+                  <div className="mb-scheme-head" style={{
                     display: 'flex', justifyContent: 'space-between', alignItems: 'center',
                     padding: '12px 0 9px',
                   }}>
@@ -3445,7 +3524,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     </span>}
                     {isPointCard(assessmentCard) && !wholeResponseAssessment && !mathematicsCard && cardRoutes(assessmentCard.rows).length < 2 && (
                       <button
-                        type="button" onClick={claimAll}
+                        type="button" className="mb-select-all" onClick={claimAll}
                         style={{
                           background: 'none', border: 'none', padding: 0, cursor: 'pointer',
                           font: `600 11.5px/1.5 ${SANS}`, color: INK_2,
@@ -3487,7 +3566,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       onComponentSelect={(id, marks) => setRubricScore(`mathematics:${id}`, marks)} />
                   ) : isPointCard(assessmentCard) ? (
                     <>
-                      <div hidden={Boolean(embedded) && !wholeResponseAssessment} style={{ margin: '0 0 14px', padding: '0 0 13px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
+                      <div className="mb-scheme-intro" hidden={Boolean(embedded) && !wholeResponseAssessment} style={{ margin: '0 0 14px', padding: '0 0 13px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
                         <p style={{ margin: 0, font: `600 18px/1.3 ${SERIF}`, color: INK }}>
                           {wholeResponseAssessment
                             ? 'Check your complete response.' : 'Select the points you actually got.'}
@@ -3636,7 +3715,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
                   {labelKey && <LabelKeyPanel keys={labelKey} />}
 
-                  {!embedded && <p style={{ margin: '14px 0 0', font: `400 10px/1.45 ${SANS}`, color: LABEL }}>
+                  {!embedded && <p className="mb-scheme-cite" style={{ margin: '14px 0 0', font: `400 10px/1.45 ${SANS}`, color: LABEL }}>
                     {assessmentCard.schemeCitation}
                   </p>}
                 </fieldset>
@@ -3669,7 +3748,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         {whisper && (
           <p
             key={whisper}
-            className="mb-card-in"
+            className="mb-card-in mb-whisper"
             style={{
               maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '12px 16px 0',
               font: `500 13.5px/1.45 ${SANS}`, color: SUCCESS_TEXT,
@@ -3682,8 +3761,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         {/* The action. Reveal and grade occupy the same band, so nothing shifts
             at the moment the student's attention moves to the marking points. */}
         {!revealed && (
-          <div style={{ padding: `16px 16px calc(16px + var(--sab, 0px))` }}>
-            <div style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto' }}>
+          <div className="mb-reveal-area" style={{ padding: `16px 16px calc(16px + var(--sab, 0px))` }}>
+            <div className="mb-reveal-inner" style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto' }}>
               {studyReview?.requireAttempt && <label className="mb-starting-attempt">
                 <input type="checkbox" checked={paperAttempts[card.id] ?? false}
                   onChange={event => setPaperAttempts(previous => ({ ...previous, [card.id]: event.target.checked }))} />
@@ -3691,6 +3770,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </label>}
               <button
                 type="button"
+                className="mb-reveal-button"
                 autoFocus={answerVariants.length === 0}
                 disabled={needsAttempt || (answerVariants.length > 0 && !answerVariantId)}
                 // Clear any lingering whisper so the schedule note for the card
@@ -3717,6 +3797,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   ? 'Choose your answer route first'
                   : 'Reveal the marking scheme'}
               </button>
+              {paperLayout && !studyReview && <p className="mb-p-reveal-note">Write an answer. Then open the scheme.</p>}
             </div>
           </div>
         )}
@@ -3734,14 +3815,14 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       {/* Grade bar. Solid white, never translucent — blurred glass over a
           saturated colour goes muddy and reads as generated UI. */}
       {revealed && !studyReview && (
-        <div style={{ padding: `12px 16px calc(12px + var(--sab, 0px))` }}>
-          <div style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto' }}>
+        <div className="mb-grade-area" style={{ padding: `12px 16px calc(12px + var(--sab, 0px))` }}>
+          <div className="mb-grade-inner" style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto' }}>
             {showsRowMarks(assessmentCard) && (
               /* Never "you left 6 marks behind". Same information, but the
                  student is not the subject of a failure verb — and naming the
                  points turns the tally into a revision list instead of a
                  verdict. An unclaimed point is neutral, so this band is too. */
-              <div style={{
+              <div className="mb-unclaimed" data-all={left === 0 || undefined} style={{
                 marginBottom: 10, padding: '8px 11px', borderRadius: 10,
                 background: left === 0 ? SUCCESS_TINT : 'var(--mb-raised)',
                 color: left === 0 ? SUCCESS_TEXT : INK_2,
@@ -3783,7 +3864,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
             <AnimatePresence mode="wait">
               {(
-                <MotionDiv key="grades" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.18 }}>
+                <MotionDiv key="grades" className="mb-grade-motion" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.18 }}>
                   <p id="mark-bank-grade-guidance" style={{ margin: '0 0 9px', font: `400 12px/1.45 ${SANS}`, color: INK_2 }}>
                     {isNoSchemeCard(assessmentCard) || unpricedSection
                       ? <>Nothing on this card can be scored, so there is no suggestion. Choose how it went yourself.</>
@@ -3812,7 +3893,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   {/* Capped and left-aligned under the copy that explains them.
                       Stretching three two-word labels across 1092px gives each a
                       360px hit area and makes the rail read as a toolbar. */}
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 168px))', gap: 8 }}>
+                  <div className="mb-grades" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 168px))', gap: 8 }}>
                     {(['missed', 'shaky', 'got'] as MarkBankGrade[]).map(g => {
                       const isSuggested = schemeInteracted && !placementPending && !unpricedSection && g === suggested;
                       return (
@@ -3851,6 +3932,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         <div
           role="dialog"
           aria-modal="true"
+          className="mb-exit"
           aria-labelledby="mark-bank-exit-title"
           onKeyDown={event => {
             if (event.key === 'Escape') {
@@ -3887,8 +3969,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               You have finished {distinctDone} of {exerciseTotal}. This exercise will stay ungraded and return next time.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 9 }}>
-              <ActionButton ref={keepReviewButtonRef} autoFocus onClick={closeExitConfirmation}>Keep reviewing</ActionButton>
-              <ActionButton ref={leaveSessionButtonRef} intent="secondary" onClick={onExit}>Leave review</ActionButton>
+              <UiButton ref={keepReviewButtonRef} kind="main" block autoFocus onClick={closeExitConfirmation}>Keep reviewing</UiButton>
+              <UiButton ref={leaveSessionButtonRef} block onClick={onExit}>Leave review</UiButton>
             </div>
           </div>
         </div>
@@ -3897,9 +3979,20 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   );
   // In place, inside the host's own sheet: no dialog and no portal.
   if (embedded) return surface;
-  return paperLayout ? <KobraScope><Dialog open onOpenChange={open=>{if(!open)openExitConfirmation();}}><DialogContent className="mb-live-session-dialog" data-expanded={expanded} showCloseButton={false} onKeyDownCapture={event=>{
-    if(event.key==='Escape' && expanded && !confirmExit && !waysInOpen){event.preventDefault();event.stopPropagation();setExpanded(false);}
-  }}>{surface}</DialogContent></Dialog></KobraScope> : createPortal(surface, document.body);
+  if (paperLayout) {
+    // A full screen of its own (an over-screen): over the whole window on a phone or when
+    // expanded, beside sidebar B otherwise. Escape contracts an expanded card first, then asks
+    // before leaving, as the dialog did; Escape inside Ways In closes Ways In.
+    const covers = phone || expanded || sideEdge === 0;
+    return (
+      <OverScreen ref={practiceRef} className="mb-practice" data-expanded={String(expanded)} modal={covers} left={covers ? 0 : sideEdge}
+        label={`Practice: ${studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}`}
+        onEscape={() => { if (confirmExit || waysInOpen) return; if (expanded) setExpanded(false); else openExitConfirmation(); }}>
+        <KobraScope className="mb-practice-scope">{surface}</KobraScope>
+      </OverScreen>
+    );
+  }
+  return createPortal(surface, document.body);
 };
 
 export default SessionScreen;

@@ -51,7 +51,8 @@ test.each([false, true])('all eight HE bacteria routes are assessed against the 
     expect(screen.getByText(/page 12 prints 2:1:0/)).toHaveTextContent('page 13 table headers print 2:0');
     expect(screen.getByText(/Give THREE conditions/)).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /^Award \d/ })).not.toBeInTheDocument();
-    expect(screen.getByText('20m')).toBeInTheDocument();
+    // The practice card cites the total beside the question ("20 marks"); the plain session keeps its chip.
+    expect(screen.getByText(paperLayout ? '20 marks' : '20m')).toBeInTheDocument();
     expect(screen.queryByText('Confidence review')).not.toBeInTheDocument();
     expect(screen.getByText(/Assess your complete answer against the 20-mark total/)).toBeInTheDocument();
   }
@@ -109,7 +110,7 @@ test.each([false, true])('a priced answer still reports its assessed accuracy wh
     rows: [{ id: 'answer', kind: 'point', verbatim: 'Synthetic complete answer', marks: 4 }] };
   mocks.loadCards.mockResolvedValue([priced]);
   await start();
-  expect(screen.getByText(/^4 marks · Question/)).toBeInTheDocument();
+  expect(screen.getByText('4 marks')).toBeInTheDocument();
   expect(screen.queryByText('Confidence review')).not.toBeInTheDocument();
   if (claimed) fireEvent.click(screen.getByRole('button', { name: /Synthetic complete answer/ }));
   fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
@@ -143,7 +144,8 @@ test.each([false, true])('conflicting source totals remain visible without an as
   const onGrade = vi.fn();
   render(<SessionScreen paperLayout={paperLayout} cards={[card]} subjectLabel="LCVP"
     onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()} />);
-  expect(screen.getAllByText(/Confidence review/)).toHaveLength(paperLayout ? 2 : 1);
+  // Said once beside the question, in both layouts (the practice card has no second heading line).
+  expect(screen.getAllByText(/Confidence review/)).toHaveLength(1);
   expect(screen.queryByText('8m')).not.toBeInTheDocument();
   expect(screen.queryByText(/^8 marks · Question/)).not.toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Reveal the marking scheme' }));

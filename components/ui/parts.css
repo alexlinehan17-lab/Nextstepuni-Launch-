@@ -435,6 +435,8 @@
 
 /* The sheet: a bottom sheet below 640px, a centred dialog from 640px (the frame
    does the inset maths: frame-sheet-backdrop / frame-sheet). */
+/* An over-screen (OverScreen): a task over where you were, the whole window on a phone. */
+.ui-over { z-index: var(--z-takeover); display: flex; flex-direction: column; background: var(--surface-canvas); color: var(--ink-primary); outline: none; }
 .ui-layer { z-index: var(--z-dialog); display: flex; flex-direction: column; justify-content: flex-end; }
 .ui-scrim {
   position: absolute;
