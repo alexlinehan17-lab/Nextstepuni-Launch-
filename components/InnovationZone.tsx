@@ -162,7 +162,7 @@ const MOBILE_TOOL_EYEBROWS: Record<string, string> = {
       'command-word-reflex': 'Read the question right',
     };
 /** The tools whose laptop column is the boards' 904px, bar and page alike (area 7a; the list too; area 7b's tools). */
-const LP7_COLUMN_TOOLS = new Set(['planner', 'future-finder-revamped', 'points-passport', 'college-compass', 'coursework-companion']);
+const LP7_COLUMN_TOOLS = new Set(['planner', 'future-finder-revamped', 'points-passport', 'college-compass', 'coursework-companion', 'comeback']);
 /** The Launchpad's categories, in one menu (board c-launch-header: "All tools"). */
 const CATEGORY_OPTIONS = [
   { value: 'all', label: 'All tools' },

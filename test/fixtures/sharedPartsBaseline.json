@@ -65,9 +65,6 @@
   "components/ComebackEngine.tsx": {
    "button": 13
   },
-  "components/ComebackEngineV2.tsx": {
-   "button": 8
-  },
   "components/CommandPalette.tsx": {
    "button": 1,
    "pop-up": 1

@@ -49,10 +49,6 @@
    "rgb(": 18,
    "tailwind [#…]": 6
   },
-  "components/ComebackEngineV2.tsx": {
-   "hex": 3,
-   "tailwind [#…]": 56
-  },
   "components/CommandPalette.tsx": {
    "hex": 12,
    "rgb(": 1

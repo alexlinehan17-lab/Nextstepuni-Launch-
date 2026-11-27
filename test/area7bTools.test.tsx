@@ -3,7 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * Area 7b: the Launchpad tools in the agreed look keep their working. Coursework Studio's six parts
- * open from one menu ("Overview 1 of 6", board c-tools2-coursework) and a project still saves as before.
+ * open from one menu ("Overview 1 of 6", board c-tools2-coursework) and a project still saves as before;
+ * the Comeback Engine's Continue walks its steps and the seven-day count is today's arithmetic.
  */
 import React from 'react';
 import { describe, expect, test, vi } from 'vitest';
@@ -12,6 +13,15 @@ import CourseworkStudio from '../components/CourseworkStudio/CourseworkStudio';
 import { courseworkDemo } from '../components/CourseworkStudio/demo';
 import type { CourseworkWorkspace } from '../components/CourseworkStudio/model';
 import type { CourseworkStore } from '../components/CourseworkStudio/store';
+import ComebackEngineV2 from '../components/ComebackEngineV2';
+import { buildRecoveryPlan } from '../components/comeback/recoveryPlan';
+import { DEMO_STUDENT_UID, createDevStudentProfile } from '../data/devStudent';
+
+const progressDoc: { current: Record<string, unknown> } = { current: {} };
+const updateDemoProgress = vi.fn((update: (current: Record<string, unknown>) => Record<string, unknown>) => { progressDoc.current = update(progressDoc.current); });
+vi.mock('@/contexts/AuthContext', () => ({ useAuth: () => ({ user: null }) }));
+vi.mock('@/contexts/InnovationDataContext', () => ({ useInnovationData: () => ({ topicMastery: { canonicalMastery: { topics: {} } }, subjectPriorities: [] }) }));
+vi.mock('@/contexts/ProgressContext', () => ({ useOptionalProgress: () => ({ rawProgressDoc: progressDoc.current, updateDemoProgress }) }));
 
 function memoryStore(value: CourseworkWorkspace = courseworkDemo()): CourseworkStore {
   let saved = structuredClone(value);
@@ -75,5 +85,47 @@ describe('Coursework Studio (area 7b)', () => {
     fireEvent.change(within(sheet).getByLabelText('Give it a useful name'), { target: { value: 'A note' } });
     fireEvent.change(within(sheet).getByLabelText('What did you find, do or notice?'), { target: { value: 'Something I saw.' } });
     expect(within(sheet).getByRole('button', { name: 'Save evidence' })).not.toHaveAttribute('aria-disabled');
+  });
+});
+
+describe('Comeback Engine (area 7b)', () => {
+  test('Continue walks the four steps, the count is today\'s, a block ticks, and Rebuild plan asks first', async () => {
+    progressDoc.current = {};
+    sessionStorage.clear();
+    const profile = createDevStudentProfile();
+    render(<ComebackEngineV2 uid={DEMO_STUDENT_UID} profile={profile} timetableCompletions={{}} />);
+    expect(await screen.findByRole('heading', { name: 'No judgement. Just a better starting point.' })).toBeInTheDocument();
+    expect(screen.getByText('Step 1 of 4')).toBeInTheDocument();
+    const momentum = screen.getByRole('radio', { name: /I lost momentum/ });
+    fireEvent.click(momentum);
+    expect(momentum).toHaveAttribute('aria-checked', 'true');
+    fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
+    expect(await screen.findByRole('heading', { name: 'What can you genuinely manage?' })).toBeInTheDocument();
+    expect(screen.getByText('Step 2 of 4')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('radio', { name: /Strong return/ }));
+    fireEvent.click(screen.getByRole('button', { name: 'Read my recovery signals' }));
+    expect(await screen.findByRole('heading', { name: 'Here is what the app can actually see.' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Build my seven-day plan' }));
+    expect(await screen.findByRole('heading', { name: 'A smaller plan. A little momentum.' })).toBeInTheDocument();
+
+    // Today's arithmetic: the same plan the engine builds for these answers.
+    const expected = buildRecoveryPlan({ profile, priorities: [], masteryEntries: [], timetableCompletions: {}, reason: 'motivation', capacity: 7, curriculumLevel: profile.curriculumLevel ?? 'senior', legacyAnchor: undefined });
+    const count = () => document.querySelector('.cb7-count')?.textContent;
+    expect(count()).toBe(`0 / ${expected.actions.length} blocks done`);
+    expect(screen.getAllByRole('button', { name: 'Mark complete' })).toHaveLength(expected.actions.length);
+    fireEvent.click(screen.getAllByRole('button', { name: 'Mark complete' })[0]);
+    expect(count()).toBe(`1 / ${expected.actions.length} blocks done`);
+    const saved = progressDoc.current.comebackRecoveryPlan as { actions: { done: boolean }[] };
+    expect(saved.actions.filter(action => action.done)).toHaveLength(1);
+
+    fireEvent.click(screen.getByRole('button', { name: 'Rebuild plan' }));
+    const ask = await screen.findByRole('alertdialog', { name: 'Rebuild plan?' });
+    fireEvent.click(within(ask).getByRole('button', { name: 'Keep this plan' }));
+    expect(screen.getByRole('heading', { name: 'A smaller plan. A little momentum.' })).toBeInTheDocument();
+    await waitFor(() => expect(screen.queryByRole('alertdialog')).toBeNull());
+    fireEvent.click(screen.getByRole('button', { name: 'Rebuild plan' }));
+    fireEvent.click(within(await screen.findByRole('alertdialog', { name: 'Rebuild plan?' })).getByRole('button', { name: 'Rebuild plan' }));
+    expect(await screen.findByRole('heading', { name: 'No judgement. Just a better starting point.' })).toBeInTheDocument();
+    expect(progressDoc.current.comebackRecoveryPlan).toBeNull();
   });
 });

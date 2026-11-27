@@ -1,0 +1,83 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Comeback Engine in the agreed look (area 7b; boards c-tools2-comeback, t-fix-comeback and
+ * r5-comeback-engine). Its calm voice, the 01 to 04 step marks, the five reasons and the big
+ * seven-day count stay; each step fills the screen with no box round it, Continue is pinned on a
+ * phone, and the plan loses its orange frame, orange shadow and orange side stripe.
+ */
+.cb7 { padding: 0 var(--space-2) var(--space-8); color: var(--ink-primary); font-family: var(--font-ui); }
+.cb7 p, .cb7 h2, .cb7 h3, .cb7 ol, .cb7 ul { margin: 0; }
+.cb7 ol, .cb7 ul { padding: 0; list-style: none; }
+/* Two classes deep, so mobile-editorial's bold DM Sans heading rules cannot restyle a headline. */
+.cb7 .t-title, .cb7 .t-heading, .cb7 .t-row { font-family: var(--font-ui); font-weight: 400; }
+.cb7 .t-label { color: var(--ink-muted); }
+.cb7-step { display: flex; flex-direction: column; gap: var(--space-6); }
+.cb7-main { display: flex; min-width: 0; flex-direction: column; gap: var(--space-6); }
+.cb7-top { display: flex; flex-direction: column; gap: 14px; }
+.cb7-top .t-sub { margin-top: -6px; }
+.cb7-aside { display: none; }
+/* The numbered motif: the step's number in the readout, a short rule, the step's name. */
+.cb7-motif { display: flex; align-items: center; gap: 10px; }
+.cb7-motif b { font-weight: 400; color: var(--accent-text); }
+.cb7-motif i { display: block; width: 32px; height: 1px; background: var(--ink-muted); }
+.cb7-choices { display: flex; flex-direction: column; gap: var(--space-2); }
+.cb7-choices .ui-choice { min-height: 66px; }
+.cb7 .cb7-choices .ui-choice-label { font-size: 16px; line-height: 21px; }
+.cb7-anchor .cb7-ink { color: var(--ink-primary); }
+/* Continue is pinned over the home indicator on a phone (the frame's floating layer from the
+   screen's foot, since the tab bar has stepped aside); the footer is the shared pinned footer. */
+.cb7-foot-wrap { --frame-float-gap: calc(-1 * var(--safe-bottom)); left: 0; right: 0; z-index: var(--z-sticky); }
+.cb7 .cb7-foot.ui-foot { position: static; padding-left: max(var(--space-6), var(--safe-left)); padding-right: max(var(--space-6), var(--safe-right)); background: var(--surface-canvas); }
+.cb7 .cb7-adjust.ui-link { align-self: center; }
+.cb7-step:not(.cb7-step--plan) .cb7-main { padding-bottom: 128px; }
+.cb7-signals { border-top: 1px solid var(--hairline); }
+.cb7-signals li { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: var(--space-3); padding: var(--space-4) 0; border-bottom: 1px solid var(--hairline); }
+.cb7-signal-n { padding-top: 3px; color: var(--accent-text); }
+.cb7-signal-copy { display: flex; flex-direction: column; gap: var(--space-1); }
+.cb7-focus { display: flex; flex-direction: column; gap: var(--space-1); }
+
+/* ── Your seven days ─────────────────────────────────────────────────────── */
+.cb7-plan { display: flex; flex-direction: column; gap: var(--space-8); }
+.cb7-target .ui-paper-face { display: flex; flex-direction: column; }
+.cb7-count { margin: 10px 0 14px !important; white-space: nowrap; }
+.cb7-num { font-size: 56px; line-height: 56px; letter-spacing: -0.055em; font-variant-numeric: lining-nums proportional-nums; }
+.cb7-of { color: var(--ink-muted); font-size: 24px; letter-spacing: 0; }
+.cb7-done { color: var(--ink-secondary); font-size: 15px; }
+.cb7-bar { display: block; height: 10px; overflow: hidden; border-radius: 5px; background: var(--surface-soft); }
+.cb7-bar i { display: block; height: 100%; border-radius: inherit; background: var(--ink-primary); transition: width var(--t-ui) var(--ease-out); }
+.cb7-facts { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); margin: var(--space-4) 0 var(--space-3); padding-top: 14px; border-top: 1px solid var(--hairline); }
+.cb7-facts p:first-child { margin-bottom: 2px; }
+.cb7 .cb7-facts .t-row { font-size: 16px; line-height: 21px; }
+.cb7-week { display: flex; min-width: 0; flex-direction: column; gap: var(--space-3); }
+.cb7-week-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); }
+.cb7-week-head .ui-readout { color: var(--ink-muted); }
+.cb7-blocks { border-top: 1px solid var(--hairline); }
+.cb7-block { display: grid; grid-template-columns: 40px minmax(0, 1fr) 44px; align-items: start; gap: var(--space-1) var(--space-3); padding: 14px 0; border-bottom: 1px solid var(--hairline); }
+.cb7-block-when { grid-column: 1 / -1; }
+.cb7-block-art .subject-avatar { display: block; width: 40px; height: 40px; }
+.cb7-block-copy { display: flex; min-width: 0; flex-direction: column; gap: 2px; }
+.cb7 .cb7-block-subject { font-size: 16px; line-height: 21px; }
+.cb7-block[data-done] .cb7-block-subject { color: var(--ink-muted); text-decoration: line-through; }
+.cb7 .cb7-block-go.ui-link { align-self: flex-start; font-size: 14px; }
+/* The tick you press: a box with a line; done, it fills green with a white tick (board t-fix-comeback). */
+.cb7 .cb7-tick.ui-icon-btn { border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); background: var(--surface-paper); color: var(--ink-muted); }
+.cb7 .cb7-tick.ui-icon-btn[aria-pressed='true'] { border-color: var(--success-hex); background: var(--success-hex); color: var(--surface-paper); }
+.cb7-complete { display: flex; flex-direction: column; gap: var(--space-2); padding-top: var(--space-4); }
+.cb7-complete-mark { color: var(--success-hex); }
+.cb7 .cb7-rebuild.ui-link { align-self: flex-start; margin-top: var(--space-3); }
+
+@media (min-width: 768px) {
+  .cb7 { padding: 0 0 var(--space-12); }
+  .cb7-step--aside { display: grid; grid-template-columns: minmax(0, 1fr) 260px; align-items: start; gap: 72px; }
+  .cb7-aside { display: flex; flex-direction: column; gap: 10px; padding-top: 34px; }
+  .cb7-main { gap: var(--space-5); }
+  .cb7 .cb7-title { font-size: 36px; line-height: 40px; }
+  .cb7-step:not(.cb7-step--plan) .cb7-main { padding-bottom: 0; }
+  .cb7-foot-wrap.frame-float { position: static; }
+  .cb7 .cb7-foot.ui-foot { flex-direction: row; align-items: center; gap: var(--space-5); margin: 0; padding: 0; border: 0; background: none; }
+  .cb7 .cb7-foot .ui-btn--lg { width: 300px; flex: none; }
+  .cb7 .cb7-foot .ui-foot-note { order: 3; text-align: left; }
+  .cb7-plan { display: grid; grid-template-columns: 300px minmax(0, 1fr); align-items: start; gap: var(--space-8); }
+}
