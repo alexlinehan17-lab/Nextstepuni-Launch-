@@ -20,6 +20,8 @@ import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
+import { ExercisePart,ExerciseSheet } from './learning/Exercise';
+import { Button } from './ui/Button';
 
 const theme = orangeTheme;
 
@@ -68,37 +70,35 @@ const AllostaticLoadComparison = () => {
     };
 
     const noRecPhases = [
-        { label: 'Manageable', x1: 0, x2: 0.33, color: "var(--module-ink)" },
-        { label: 'Accumulating', x1: 0.33, x2: 0.66, color: "var(--module-danger-text)" },
-        { label: 'Burnout', x1: 0.66, x2: 1, color: "var(--module-danger-text)" },
+        { label: 'Manageable', x1: 0, x2: 0.33, color: "var(--ink-secondary)" },
+        { label: 'Accumulating', x1: 0.33, x2: 0.66, color: "var(--ink-secondary)" },
+        { label: 'Burnout', x1: 0.66, x2: 1, color: "var(--ink-secondary)" },
     ];
     const recPhases = [
-        { label: 'Build + recover', x1: 0, x2: 0.33, color: "var(--module-success-text)" },
-        { label: 'Sustain', x1: 0.33, x2: 0.66, color: "var(--module-success-text)" },
-        { label: 'Peak form', x1: 0.66, x2: 1, color: "var(--module-success-text)" },
+        { label: 'Build + recover', x1: 0, x2: 0.33, color: "var(--ink-secondary)" },
+        { label: 'Sustain', x1: 0.33, x2: 0.66, color: "var(--ink-secondary)" },
+        { label: 'Peak form', x1: 0.66, x2: 1, color: "var(--ink-secondary)" },
     ];
 
-    const Chart = ({ primary, secondary, phases, areaColor, areaId, areaData, label }: {
+    // The two series are told apart by line (stress solid, performance dashed), both in ink; a flat
+    // fill under the stress line, no gradient. Text in the one typeface, 11 or more.
+    const font = { fontFamily: 'var(--font-ui)' };
+    const Chart = ({ primary, secondary, phases, areaColor, areaData, label }: {
         primary: number[]; secondary: number[]; phases: { label: string; x1: number; x2: number; color: string }[];
-        areaColor: string; areaId: string; areaData: number[]; label: string;
+        areaColor: string; areaData: number[]; label: string;
     }) => (
         <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
-            <defs>
-                <linearGradient id={areaId} x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor={areaColor} stopOpacity="0.5" />
-                    <stop offset="100%" stopColor={areaColor} stopOpacity="0.05" />
-                </linearGradient>
-            </defs>
             {/* Grid lines */}
             {[0.25, 0.5, 0.75, 1.0].map(v => (
-                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--ink-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
             ))}
             {/* Baseline */}
-            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
+            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--ink-muted)" strokeOpacity="0.3" />
             {/* Area fill */}
             <motion.path
                 d={buildArea(areaData)}
-                fill={`url(#${areaId})`}
+                fill={areaColor}
+                fillOpacity="0.08"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
@@ -113,7 +113,7 @@ const AllostaticLoadComparison = () => {
             {/* Secondary line (dashed — Performance) */}
             <motion.path
                 d={buildLine(secondary)}
-                fill="none" stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
+                fill="none" stroke="var(--ink-secondary)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
                 initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
                 transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
             />
@@ -124,63 +124,56 @@ const AllostaticLoadComparison = () => {
                 />
             ))}
             {/* Y-axis labels */}
-            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
-            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
-            {/* Month labels */}
+            <text x={padL + 2} y={toY(1.0) - 4} fontSize="11" fill="var(--ink-muted)" style={font}>High</text>
+            <text x={padL + 2} y={toY(0) - 4} fontSize="11" fill="var(--ink-muted)" style={font}>Low</text>
+            {/* Month labels (the first and last sit inside the drawing) */}
             {months.map((m, i) => (
-                <text key={m} x={toX(i / (months.length - 1))} y={toY(0) + 14} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">{m}</text>
+                <text key={m} x={toX(i / (months.length - 1))} y={toY(0) + 14} fontSize="11" fill="var(--ink-muted)" textAnchor={i === 0 ? 'start' : i === months.length - 1 ? 'end' : 'middle'} style={font}>{m}</text>
             ))}
             {/* Phase labels */}
             {phases.map((p, i) => (
-                <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+                <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 30} fontSize="11" fill={p.color} textAnchor="middle" style={font}>{p.label}</text>
             ))}
             {/* Chart label */}
-            <text x={W / 2} y={14} fontSize="11" fill="var(--module-muted)" textAnchor="middle" fontWeight="700">{label}</text>
+            <text x={padL} y={15} fontSize="12" fill="var(--ink-primary)" style={font}>{label}</text>
             {/* Legend */}
-            <line x1={W - padR - 108} x2={W - padR - 92} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-            <text x={W - padR - 88} y={17} fontSize="8" fill="var(--module-surface)">Stress Load</text>
-            <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="4 2" />
-            <text x={W - padR - 24} y={17} fontSize="8" fill="var(--module-surface)">Performance</text>
+            <line x1={W - padR - 192} x2={W - padR - 176} y1={11} y2={11} stroke={areaColor} strokeWidth="2" />
+            <text x={W - padR - 172} y={15} fontSize="11" fill="var(--ink-muted)" style={font}>Stress Load</text>
+            <line x1={W - padR - 93} x2={W - padR - 77} y1={11} y2={11} stroke="var(--ink-secondary)" strokeWidth="1.5" strokeDasharray="4 2" />
+            <text x={W - padR} y={15} fontSize="11" fill="var(--ink-muted)" textAnchor="end" style={font}>Performance</text>
         </svg>
     );
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Recovery Effect</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Same exams. Same syllabus. One student recovers strategically.</p>
-
+        <ExercisePart title="The Recovery Effect" sub="Same exams. Same syllabus. One student recovers strategically.">
             {!revealed ? (
-                <div className="text-center">
-                    <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">Two students face the same exam year. What happens when one builds in strategic recovery?</p>
-                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-orange)] text-[var(--module-ink)] hover:bg-[var(--module-orange)] transition-colors" data-wide-button="true">
-                        Reveal the Recovery Effect
-                    </button>
+                <div className="ex-stack">
+                    <p className="t-body text-ink-secondary">Two students face the same exam year. What happens when one builds in strategic recovery?</p>
+                    <div className="ex-actions">
+                        <Button onClick={() => setRevealed(true)}>
+                            Reveal the Recovery Effect
+                        </Button>
+                    </div>
                 </div>
             ) : (
-                <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-                    <div className="grid md:grid-cols-2 gap-4 mb-5">
-                        <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] p-3">
-                            <Chart primary={noRecStress} secondary={noRecPerf} phases={noRecPhases}
-                                areaColor="var(--module-danger-text)" areaId="norec-grad" areaData={noRecStress} label="No Recovery Protocol" />
-                        </div>
-                        <div className="rounded-lg border border-success/30 dark:border-success/40 bg-[var(--module-success-soft)]/50 dark:bg-[var(--module-success)]/15 p-3">
-                            <Chart primary={recStress} secondary={recPerf} phases={recPhases}
-                                areaColor="var(--module-success-text)" areaId="rec-grad" areaData={recPerf} label="Strategic Recovery" />
-                        </div>
+                <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="ex-stack">
+                    {/* The two charts, each on the sheet in ink (no coral or mint panel behind them) */}
+                    <div className="ex-figure">
+                        <Chart primary={noRecStress} secondary={noRecPerf} phases={noRecPhases}
+                            areaColor="var(--ink-primary)" areaData={noRecStress} label="No Recovery Protocol" />
                     </div>
-                    <div className="grid md:grid-cols-2 gap-4 text-sm">
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                            <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
-                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">Without recovery</strong>, stress piles up like debt with interest. By May, you're so worn out that studying becomes pointless — you're running on fumes.</p>
-                        </div>
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 border border-success/30 dark:border-success/40">
-                            <span className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)] text-lg mt-0.5"></span>
-                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Strategic recovery</strong> — proper sleep, exercise, guided relaxation — creates deliberate dips in the stress curve. You arrive at exams with energy left in the tank.</p>
-                        </div>
+                    <div className="ex-figure">
+                        <Chart primary={recStress} secondary={recPerf} phases={recPhases}
+                            areaColor="var(--ink-primary)" areaData={recPerf} label="Strategic Recovery" />
+                    </div>
+                    {/* What each one means: words you read, ruled like rows (no tinted boxes) */}
+                    <div className="ex-list">
+                        <div><p className="t-sub"><strong className="text-ink-primary">Without recovery</strong>, stress piles up like debt with interest. By May, you're so worn out that studying becomes pointless — you're running on fumes.</p></div>
+                        <div><p className="t-sub"><strong className="text-ink-primary">Strategic recovery</strong> — proper sleep, exercise, guided relaxation — creates deliberate dips in the stress curve. You arrive at exams with energy left in the tank.</p></div>
                     </div>
                 </motion.div>
             )}
-        </div>
+        </ExercisePart>
     );
 };
 
@@ -231,75 +224,60 @@ const AllostaticLoadVisualizer = () => {
         { pct: 1.0, label: 'Critical' },
     ];
 
+    // The year's load in ink: a flat fill under the curve, no gradient; the danger band a faint ink
+    // band under a dashed hairline. Text in the one typeface, 11 or more.
+    const font = { fontFamily: 'var(--font-ui)' };
+
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your Stress Build-Up Over Exam Season</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">Your brain's stress builds up over time and spikes during exam clusters.</p>
-            <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">This is why mental stamina matters — not just knowledge.</p>
+        <ExercisePart title="Your Stress Build-Up Over Exam Season" sub="Your brain's stress builds up over time and spikes during exam clusters.">
+            <p className="t-sub">This is why mental stamina matters — not just knowledge.</p>
 
-            <div className="rounded-xl p-2 mb-4" style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)" }}>
+            {/* The drawing, on the sheet (no box of its own) */}
+            <div className="ex-figure">
                 <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto">
-                    <defs>
-                        <linearGradient id="alLoadFill" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stopColor="var(--module-danger)" stopOpacity="0.18" />
-                            <stop offset="50%" stopColor="var(--module-danger)" stopOpacity="0.08" />
-                            <stop offset="100%" stopColor="var(--module-danger)" stopOpacity="0" />
-                        </linearGradient>
-                        <linearGradient id="alStroke" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stopColor="var(--module-orange)" />
-                            <stop offset="65%" stopColor="var(--module-danger)" />
-                            <stop offset="85%" stopColor="var(--module-danger)" />
-                            <stop offset="100%" stopColor="var(--module-danger)" />
-                        </linearGradient>
-                    </defs>
-
                     {/* Danger zone band */}
-                    <rect x={padL} y={padT} width={chartW} height={chartH * 0.28} fill="var(--module-danger)" opacity="0.04" />
+                    <rect x={padL} y={padT} width={chartW} height={chartH * 0.28} fill="var(--ink-primary)" opacity="0.04" />
                     <line x1={padL} y1={toY(0.72)} x2={W - padR} y2={toY(0.72)}
-                        stroke="var(--module-danger-text)" strokeWidth="0.6" strokeDasharray="4 3" opacity="0.3" />
-                    <text x={W - padR - 4} y={toY(0.72) - 4} textAnchor="end"
-                        className="text-[5px] font-bold" fill="var(--module-danger)" opacity="0.5">DANGER ZONE</text>
+                        stroke="var(--ink-muted)" strokeWidth="0.6" strokeDasharray="4 3" opacity="0.6" />
+                    <text x={padL + 4} y={toY(0.72) - 8} textAnchor="start"
+                        fontSize="11" fill="var(--ink-secondary)" style={font}>DANGER ZONE</text>
 
                     {/* Y-axis gridlines + labels */}
                     {yLevels.map(({ pct, label }) => (
                         <g key={label}>
                             <line x1={padL} y1={toY(pct)} x2={W - padR} y2={toY(pct)}
-                                stroke="var(--module-muted)" strokeWidth="0.4" opacity="0.6" />
+                                stroke="var(--hairline)" strokeWidth="0.6" />
                             <text x={padL + 4} y={toY(pct) - 4} textAnchor="start"
-                                className="text-[5.5px]" fill="var(--module-surface)">{label}</text>
+                                fontSize="11" fill="var(--ink-muted)" style={font}>{label}</text>
                         </g>
                     ))}
 
                     {/* Phase dividers + labels */}
-                    {phases.map(({ start, end, label }, i) => {
-                        const isExam = label === 'Exams';
-                        const isPreExam = label === 'Pre-Exam';
-                        const isSummer = label === 'Summer';
-                        return (
-                            <g key={label}>
-                                {i > 0 && (
-                                    <line x1={toX(start)} y1={padT} x2={toX(start)} y2={H - padB}
-                                        stroke="var(--module-muted)" strokeWidth="0.5" strokeDasharray="3 3" opacity="0.4" />
-                                )}
-                                <text x={toX((start + end) / 2)} y={H - padB + 14}
-                                    textAnchor="middle"
-                                    className="text-[7px] font-bold"
-                                    fill={isExam ? "var(--module-danger)" : isPreExam ? "var(--module-danger)" : isSummer ? "var(--module-success)" : "var(--module-surface)"}
-                                >
-                                    {label}
-                                </text>
-                            </g>
-                        );
-                    })}
+                    {phases.map(({ start, end, label }, i) => (
+                        <g key={label}>
+                            {i > 0 && (
+                                <line x1={toX(start)} y1={padT} x2={toX(start)} y2={H - padB}
+                                    stroke="var(--ink-muted)" strokeWidth="0.5" strokeDasharray="3 3" opacity="0.4" />
+                            )}
+                            <text x={toX((start + end) / 2)} y={H - padB + 14}
+                                textAnchor="middle"
+                                fontSize="11"
+                                fill="var(--ink-secondary)"
+                                style={font}
+                            >
+                                {label}
+                            </text>
+                        </g>
+                    ))}
 
                     {/* Shaded area under curve */}
-                    <path d={areaPath} fill="url(#alLoadFill)" />
+                    <path d={areaPath} fill="var(--ink-primary)" fillOpacity="0.06" />
 
                     {/* Main curve */}
                     <motion.path
                         d={curvePath}
                         fill="none"
-                        stroke="url(#alStroke)"
+                        stroke="var(--ink-primary)"
                         strokeWidth="2.5"
                         strokeLinecap="round"
                         initial={{ pathLength: 0 }}
@@ -308,22 +286,22 @@ const AllostaticLoadVisualizer = () => {
                     />
 
                     {/* Summer recovery annotation */}
-                    <circle cx={toX(0.48)} cy={toY(0.08)} r="3" fill="var(--module-success)" />
-                    <text x={toX(0.48)} y={toY(0.08) + 12} textAnchor="middle"
-                        className="text-[5px] font-semibold" fill="var(--module-success)">Recovery</text>
+                    <circle cx={toX(0.48)} cy={toY(0.08)} r="3" fill="var(--ink-primary)" />
+                    <text x={toX(0.48) + 7} y={toY(0.08) + 4} textAnchor="start"
+                        fontSize="11" fill="var(--ink-secondary)" stroke="var(--surface-paper)" strokeWidth="3" paintOrder="stroke" style={font}>Recovery</text>
 
-                    {/* Peak load annotation */}
-                    <circle cx={toX(0.97)} cy={toY(0.96)} r="3" fill="var(--module-danger)" />
-                    <text x={toX(0.97)} y={toY(0.96) - 7} textAnchor="middle"
-                        className="text-[5px] font-bold" fill="var(--module-danger)">Peak Load</text>
+                    {/* Peak load annotation (ends at the point, so it stays inside the drawing) */}
+                    <circle cx={toX(0.97)} cy={toY(0.96)} r="3" fill="var(--ink-primary)" />
+                    <text x={toX(0.97) + 8} y={toY(0.96) - 8} textAnchor="end"
+                        fontSize="11" fill="var(--ink-primary)" style={font}>Peak Load</text>
 
                 </svg>
             </div>
 
-            <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)]">
-                The exam spikes aren't the real danger — it's the <span className="font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">stress that's been building up underneath</span> that determines whether you crash or keep going.
+            <p className="t-sub">
+                The exam spikes aren't the real danger — it's the <strong className="text-ink-primary">stress that's been building up underneath</strong> that determines whether you crash or keep going.
             </p>
-        </div>
+        </ExercisePart>
     );
 };
 
@@ -417,8 +395,10 @@ const CognitiveEnduranceModule: React.FC<{ onBack: () => void; progress: ModuleP
                   <p>It's a trainable skill, not a measure of willpower. Your brain is an organ that uses around 20% of your body's energy.<Cite n={1} /> Under the constant stress of exam season, your brain builds up "wear and tear" over time — we call this <Highlight description="The total stress build-up in your body and brain from weeks of pressure. When it gets too high, your thinking gets foggy and your emotions get harder to control." theme={theme}>Stress Load</Highlight>.<Cite n={2} /> Building cognitive endurance is about training your brain to handle this build-up.</p>
                 </>
               )}
-              <AllostaticLoadVisualizer />
-              <AllostaticLoadComparison />
+              <ExerciseSheet name="AllostaticLoadVisualizer">
+                <AllostaticLoadVisualizer />
+                <AllostaticLoadComparison />
+              </ExerciseSheet>
             </ReadingSection>
           )}
            {activeSection === 1 && (

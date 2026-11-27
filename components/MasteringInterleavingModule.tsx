@@ -20,10 +20,19 @@ import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
+import { AnswerGroup,AnswerLine,AnswerTick,ExerciseSheet } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = purpleTheme;
 
 // --- INTERACTIVE COMPONENTS ---
+
+/** A red/amber/green mark's ring: a line when not chosen, an ink outline when chosen. */
+const ragRing = (chosen: boolean): React.CSSProperties => ({
+    background: 'var(--surface-paper)',
+    border: chosen ? '2px solid var(--ink-primary)' : '1px solid var(--outline-soft)',
+});
 
 const StudyPlannerInteractive = () => {
     const [planType, setPlanType] = useState<'blocked' | 'interleaved'>('blocked');
@@ -31,25 +40,26 @@ const StudyPlannerInteractive = () => {
     const interleavedSchedule = { Mon: ['Maths', 'English', 'French'], Tue: ['English', 'Biology', 'History'], Wed: ['Biology', 'Maths', 'English'] };
     const schedule = planType === 'blocked' ? blockedSchedule : interleavedSchedule;
 
-    return <div className="wr-skin" data-wide="StudyPlannerInteractive"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Weekly Schedule Architect</h4>
-            <div className="flex justify-center gap-2 p-1 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full my-6 max-w-sm mx-auto">
-                <button onClick={() => setPlanType('blocked')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${planType === 'blocked' ? "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] shadow-none" : ''}`} data-wide-button="true" data-selected={!!(planType === 'blocked')} data-tone="orange" aria-pressed={!!(planType === 'blocked')}>Blocked Schedule</button>
-                <button onClick={() => setPlanType('interleaved')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${planType === 'interleaved' ? "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] shadow-none" : ''}`} data-wide-button="true" data-selected={!!(planType === 'interleaved')} data-tone="orange" aria-pressed={!!(planType === 'interleaved')}>Interleaved Schedule</button>
-            </div>
-            <div className="grid grid-cols-3 gap-2 text-center text-xs">
+    return <ExerciseSheet title="Weekly Schedule Architect" name="StudyPlannerInteractive">
+            {/* The two schedules: a pair of answers side by side, chosen = an ink outline (the group is named by the title) */}
+            <AnswerGroup kind="one" columns={2}>
+                <ChoiceTile tile chosen={planType === 'blocked'} onClick={() => setPlanType('blocked')} label="Blocked Schedule" />
+                <ChoiceTile tile chosen={planType === 'interleaved'} onClick={() => setPlanType('interleaved')} label="Interleaved Schedule" />
+            </AnswerGroup>
+            {/* The week: each day's subjects ruled like rows on the sheet (no box round each one) */}
+            <div className="grid grid-cols-3 gap-3">
                 {Object.entries(schedule).map(([day, subjects]) => (
-                    <div key={day}>
-                        <p className="font-bold mb-2">{day}</p>
-                        <div className="space-y-1">
+                    <div key={day} className="flex flex-col gap-2">
+                        <p className="ex-label">{day}</p>
+                        <div className="ex-list">
                             {subjects.map((sub, i) => (
-                                <motion.div key={`${day}-${i}`} layoutId={`${day}-${i}-${sub}`} className="p-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)] rounded-md">{sub}</motion.div>
+                                <motion.div key={`${day}-${i}`} layoutId={`${day}-${i}-${sub}`} className="t-sub text-ink-primary">{sub}</motion.div>
                             ))}
                         </div>
                     </div>
                 ))}
             </div>
-        </div></div>;
+        </ExerciseSheet>;
 };
 
 const ProblemTypeSpotter = () => {
@@ -80,27 +90,36 @@ const ProblemTypeSpotter = () => {
         setScore(0);
     };
 
-    return <div className="wr-skin" data-wide="ProblemTypeSpotter"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Problem Spotter</h4>
-             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">Calculus: Don't solve. Just identify the correct rule.</p>
-             <p className="text-center text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-8">Score: {score}/{problems.length}</p>
+    return <ExerciseSheet title="Problem Spotter" sub="Calculus: Don't solve. Just identify the correct rule." name="ProblemTypeSpotter">
+             <p className="ex-count ui-readout">Score: {score}/{problems.length}</p>
+             {/* Each problem: its words and hint as the question, two answers side by side. Choosing locks the answer in;
+                 the right one, once chosen, carries the green tick (no mint or coral fill) */}
+             <div className="ex-questions">
              {problems.map(p => (
-                <div key={p.id} className="mb-4">
-                    <p className="text-center font-mono bg-[var(--module-surface)] dark:bg-[var(--module-surface)] p-4 rounded-xl mb-1">{p.text}</p>
-                    <p className="text-center text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2 italic">Hint: {p.hint}</p>
-                    <div className="grid grid-cols-2 gap-2">
-                        <button onClick={() => handleChoice(p.id, 'chain')} className={`p-2 text-xs rounded-lg border ${choice[p.id] && (choice[p.id] === 'chain' && p.correct === 'chain' ? "bg-[var(--module-success-soft)] border-[var(--module-line)]" : choice[p.id] === 'chain' ? "bg-[var(--module-danger-soft)] border-[var(--module-line)]" : "bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]")}`} data-wide-button="true" data-selected={choice[p.id] === 'chain'} data-tone={p.correct === 'chain' ? 'mint' : 'coral'} aria-pressed={choice[p.id] === 'chain'}>Chain Rule</button>
-                        <button onClick={() => handleChoice(p.id, 'product')} className={`p-2 text-xs rounded-lg border ${choice[p.id] && (choice[p.id] === 'product' && p.correct === 'product' ? "bg-[var(--module-success-soft)] border-[var(--module-line)]" : choice[p.id] === 'product' ? "bg-[var(--module-danger-soft)] border-[var(--module-line)]" : "bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]")}`} data-wide-button="true" data-selected={choice[p.id] === 'product'} data-tone={p.correct === 'product' ? 'mint' : 'coral'} aria-pressed={choice[p.id] === 'product'}>Product Rule</button>
+                <AnswerGroup
+                    key={p.id}
+                    kind="one"
+                    columns={2}
+                    chooseOnArrow={false}
+                    legend={<>
+                        <span className="block">{p.text}</span>
+                        <span className="block t-meta mt-1">Hint: {p.hint}</span>
+                    </>}
+                >
+                    <ChoiceTile tile chosen={choice[p.id] === 'chain'} onClick={() => handleChoice(p.id, 'chain')} label={<span className="inline-flex items-center gap-2">Chain Rule{choice[p.id] === 'chain' && p.correct === 'chain' ? <AnswerTick /> : null}</span>} />
+                    <ChoiceTile tile chosen={choice[p.id] === 'product'} onClick={() => handleChoice(p.id, 'product')} label={<span className="inline-flex items-center gap-2">Product Rule{choice[p.id] === 'product' && p.correct === 'product' ? <AnswerTick /> : null}</span>} />
+                </AnswerGroup>
+             ))}
+             </div>
+             {allAnswered && (
+                <div className="ex-stack">
+                    <AnswerLine tone={score === problems.length ? 'ok' : 'note'}>You got {score} out of {problems.length} correct!</AnswerLine>
+                    <div className="ex-actions">
+                        <TextButton tone="quiet" onClick={handleReset}>Try Again</TextButton>
                     </div>
                 </div>
-             ))}
-             {allAnswered && (
-                <div className="text-center mt-6">
-                    <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-3">You got {score} out of {problems.length} correct!</p>
-                    <button onClick={handleReset} className="px-5 py-2 bg-[var(--module-solid)] hover:bg-[var(--module-solid)] text-[var(--module-ink)] text-sm font-bold rounded-lg transition-colors" data-wide-button="true">Try Again</button>
-                </div>
              )}
-        </div></div>;
+        </ExerciseSheet>;
 };
 
 const RetrospectiveRevisionLog = () => {
@@ -131,26 +150,28 @@ const RetrospectiveRevisionLog = () => {
         setNextTopic(topics[0].name);
     }
 
-    return <div className="wr-skin" data-wide="RetrospectiveRevisionLog"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Retrospective Revision Log</h4>
-             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Update your confidence after studying. The "Worst First" rule will guide you.</p>
-             <div className="space-y-3">
+    return <ExerciseSheet title="Retrospective Revision Log" sub={'Update your confidence after studying. The "Worst First" rule will guide you.'} name="RetrospectiveRevisionLog">
+             {/* Each topic a ruled row; its three marks are the red, amber and green the module names (their only
+                 label), each a 44 x 44 round button with a line, chosen = an ink outline round its colour */}
+             <div className="ex-list">
                 {topics.map(topic => (
-                    <div key={topic.name} className="p-3 rounded-lg flex justify-between items-center" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 10, boxShadow: 'none' }}>
-                        <span className="font-bold text-sm">{topic.name}</span>
+                    <div key={topic.name}>
+                      <div className="flex items-center justify-between gap-3">
+                        <span className="t-row text-ink-primary">{topic.name}</span>
                         <div className="flex gap-1">
-                            <button aria-label="Mark as struggling (red)" onClick={() => updateStatus(topic.name, 'red')} className={`w-6 h-6 rounded-full border ${topic.status === 'red' ? "bg-[var(--module-danger)] border-[var(--module-line)]" : "bg-[var(--module-danger-soft)] border-[var(--module-line)]"}`} data-wide-button="true" data-selected={!!(topic.status === 'red')} data-tone="coral" aria-pressed={!!(topic.status === 'red')}></button>
-                            <button aria-label="Mark as okay (amber)" onClick={() => updateStatus(topic.name, 'amber')} className={`w-6 h-6 rounded-full border ${topic.status === 'amber' ? "bg-[var(--module-surface)] border-[var(--module-line)]" : "bg-[var(--module-surface)] border-[var(--module-line)]"}`} data-wide-button="true" data-selected={!!(topic.status === 'amber')} data-tone="orange" aria-pressed={!!(topic.status === 'amber')}></button>
-                            <button aria-label="Mark as confident (green)" onClick={() => updateStatus(topic.name, 'green')} className={`w-6 h-6 rounded-full border ${topic.status === 'green' ? "bg-[var(--module-success)] border-[var(--module-line)]" : "bg-[var(--module-success-soft)] border-[var(--module-line)]"}`} data-wide-button="true" data-selected={!!(topic.status === 'green')} data-tone="mint" aria-pressed={!!(topic.status === 'green')}></button>
+                            <button type="button" aria-label="Mark as struggling (red)" onClick={() => updateStatus(topic.name, 'red')} className="w-11 h-11 rounded-full grid place-items-center" style={ragRing(topic.status === 'red')} aria-pressed={!!(topic.status === 'red')}><span className="block w-5 h-5 rounded-full" style={{ background: 'var(--danger-tint-ink)', opacity: topic.status === 'red' ? 1 : 0.35 }} /></button>
+                            <button type="button" aria-label="Mark as okay (amber)" onClick={() => updateStatus(topic.name, 'amber')} className="w-11 h-11 rounded-full grid place-items-center" style={ragRing(topic.status === 'amber')} aria-pressed={!!(topic.status === 'amber')}><span className="block w-5 h-5 rounded-full" style={{ background: 'var(--warning-text)', opacity: topic.status === 'amber' ? 1 : 0.35 }} /></button>
+                            <button type="button" aria-label="Mark as confident (green)" onClick={() => updateStatus(topic.name, 'green')} className="w-11 h-11 rounded-full grid place-items-center" style={ragRing(topic.status === 'green')} aria-pressed={!!(topic.status === 'green')}><span className="block w-5 h-5 rounded-full" style={{ background: 'var(--success-hex)', opacity: topic.status === 'green' ? 1 : 0.35 }} /></button>
                         </div>
+                      </div>
                     </div>
                 ))}
              </div>
-             <div className="mt-6 text-center">
-                 <button onClick={findNextTopic} className="px-4 py-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] text-xs font-bold rounded-lg" data-wide-button="true">Find Next Topic</button>
-                 <p className="mt-4 text-sm">Next up: <span className="font-bold text-[var(--module-ink)]">{nextTopic}</span></p>
+             <div className="ex-actions">
+                 <Button onClick={findNextTopic}>Find Next Topic</Button>
              </div>
-        </div></div>;
+             <p className="t-body text-ink-primary text-center">Next up: <b>{nextTopic}</b></p>
+        </ExerciseSheet>;
 }
 
 // --- MODULE COMPONENT ---

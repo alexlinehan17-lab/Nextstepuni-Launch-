@@ -1,5 +1,3 @@
-import { moduleFill } from './learning/brandTokens';
-
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -9,7 +7,6 @@ import { AnimatePresence } from 'framer-motion';
 import {
 BookOpen,
 Brain,
-Highlighter,
 PenSquare,
 Repeat,
 SlidersHorizontal,
@@ -24,6 +21,10 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerLine,ExerciseLabel,ExerciseSheet } from './learning/Exercise';
+import { Button } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
+import { Field } from './ui/Field';
 
 const theme = cyanTheme;
 
@@ -112,26 +113,15 @@ const SplitPageSimulator = () => {
   };
 
   return (
-    <div className="my-10 rounded-2xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] p-6 md:p-8">
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">
-        Split-Page Simulator
-      </h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">
-        Attempt each step, then reveal the expert solution to see where your understanding breaks down.
-      </p>
-
-      {/* Problem Statement */}
-      <div className="mb-8 p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)] rounded-xl text-center">
-        <span className="text-xs font-bold uppercase tracking-widest text-[var(--module-ink)] dark:text-[var(--module-ink)]">
-          {problem.title}
-        </span>
-        <p className="mt-2 font-mono text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">
-          {problem.equation}
-        </p>
+    <ExerciseSheet title="Split-Page Simulator" sub="Attempt each step, then reveal the expert solution to see where your understanding breaks down." name="SplitPageSimulator">
+      {/* Problem Statement: words you read, under their label, not in a box */}
+      <div className="ex-thought">
+        <ExerciseLabel>{problem.title}</ExerciseLabel>
+        <p className="ex-thought-words">{problem.equation}</p>
       </div>
 
-      {/* Steps */}
-      <div className="space-y-4">
+      {/* Steps: ruled like rows on the sheet (a step is not a box you press) */}
+      <div className="ex-list">
         {problem.steps.map((step, i) => {
           const unlocked = i <= currentStep;
           const isRevealed = revealed[i];
@@ -143,27 +133,14 @@ const SplitPageSimulator = () => {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: unlocked ? 1 : 0.4, y: 0 }}
               transition={{ duration: 0.3, delay: i * 0.05 }}
-              className="rounded-xl p-5 transition-colors"
-              style={{
-                backgroundColor: moduleFill(isRevealed ? (match ? "var(--module-success-soft)" : "var(--module-surface)") : "var(--module-surface)"),
-                border: isRevealed ? `2.5px solid ${match ? "var(--module-line)" : "var(--module-line)"}` : "1.5px solid var(--module-line)",
-                boxShadow: 'none',
-              }}
+              className="gap-3"
             >
               {/* Step Header */}
-              <div className="flex items-center gap-3 mb-3">
-                <span
-                  className={`flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-full text-xs font-bold ${
-                    isRevealed
-                      ? match
-                        ? "bg-[var(--module-success)] text-[var(--module-ink)]"
-                        : "bg-[var(--module-surface)] text-[var(--module-ink)]"
-                      : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)]"
-                  }`}
-                >
+              <div className="flex items-center gap-3">
+                <span className={`ex-badge${isRevealed && match ? ' ex-badge--done' : ''}`}>
                   {i + 1}
                 </span>
-                <span className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">
+                <span className="t-row text-ink-primary">
                   {step.prompt}
                 </span>
               </div>
@@ -171,26 +148,21 @@ const SplitPageSimulator = () => {
               {unlocked ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {/* User Attempt */}
-                  <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-1.5">
-                      Your Attempt
-                    </label>
-                    <input
-                      type="text"
-                      value={userInputs[i]}
-                      onChange={(e) => handleInputChange(i, e.target.value)}
-                      disabled={isRevealed}
-                      placeholder="Type your answer..."
-                      className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none disabled:opacity-60"
-                      style={{ border: "1.5px solid var(--module-line)" }}
-                    />
-                  </div>
+                  <Field
+                    label="Your Attempt"
+                    type="text"
+                    value={userInputs[i]}
+                    onChange={(e) => handleInputChange(i, e.target.value)}
+                    disabled={isRevealed}
+                    placeholder="Type your answer..."
+                    className="[&_input:disabled]:opacity-60"
+                  />
 
                   {/* Expert Solution / Reveal Button */}
-                  <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-1.5">
+                  <div className="flex flex-col gap-2">
+                    <p className="ui-field-label">
                       Expert Solution
-                    </label>
+                    </p>
                     <AnimatePresence mode="wait">
                       {isRevealed ? (
                         <MotionDiv
@@ -198,68 +170,67 @@ const SplitPageSimulator = () => {
                           initial={{ opacity: 0, x: 20 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ duration: 0.35 }}
-                          className={`px-4 py-2.5 text-sm rounded-lg font-mono ${
-                            match
-                              ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:text-[var(--module-success-text)]"
-                              : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)]"
-                          }`}
                         >
+                          <AnswerLine tone={match ? 'ok' : 'note'}>
                           <span>{step.expert}</span>
                           {!match && (
-                            <span className="block mt-1 text-xs italic text-[var(--module-ink)] dark:text-[var(--module-ink)]">
+                            <span className="block mt-1 t-meta">
                               Compare your approach
                             </span>
                           )}
+                          </AnswerLine>
                         </MotionDiv>
                       ) : (
-                        <button
+                        <Button
+                          block
                           onClick={() => handleReveal(i)}
-                          disabled={!userInputs[i].trim()}
-                          className="w-full px-4 py-2.5 text-sm font-semibold rounded-lg bg-[var(--module-solid)] hover:bg-[var(--module-solid)] text-[var(--module-ink)] disabled:opacity-40 disabled:cursor-not-allowed transition-colors" data-wide-button="true"
+                          {...{ disabled: !userInputs[i].trim() }}
+                          className="disabled:opacity-40 disabled:cursor-not-allowed"
                         >
                           Reveal Expert Solution
-                        </button>
+                        </Button>
                       )}
                     </AnimatePresence>
                   </div>
                 </div>
               ) : (
-                <div className="h-10 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)] flex items-center justify-center">
-                  <span className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)]">Complete the previous step to unlock</span>
-                </div>
+                <p className="t-meta">Complete the previous step to unlock</p>
               )}
             </MotionDiv>
           );
         })}
       </div>
 
-      {/* Summary */}
+      {/* Summary: the result in words under a hairline, and the exercise's own button */}
       <AnimatePresence>
         {finished && (
           <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mt-8 p-6 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)] text-center"
+            className="ex-result"
           >
-            <p className="text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">
+            <p className="ex-result-name">
               You matched {matchCount}/5 steps.
             </p>
-            <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] max-w-lg mx-auto">
+            <p className="ex-sub">
               The Split-Page Method forces you to try before you peek &mdash; that's the whole trick. Every mismatch shows you exactly what to work on next, not that you've failed.
             </p>
-            <button
-              onClick={switchProblem}
-              className="mt-5 px-6 py-2.5 text-sm font-semibold rounded-lg bg-[var(--module-solid)] hover:bg-[var(--module-solid)] text-[var(--module-ink)] transition-colors" data-wide-button="true"
-            >
-              Try Another Problem
-            </button>
+            <div className="ex-actions mt-2">
+              <Button onClick={switchProblem}>
+                Try Another Problem
+              </Button>
+            </div>
           </MotionDiv>
         )}
       </AnimatePresence>
-    </div>
+    </ExerciseSheet>
   );
 };
+
+/** A highlighter's mark on the paragraph: one neutral marker with an ink underline (the active highlighter is
+ *  named by its button, so the mark needs no colour of its own). */
+const MARK = 'bg-[var(--hairline)] underline decoration-[var(--ink-primary)] decoration-2 underline-offset-4';
 
 const FourHighlighterAudit = () => {
     const [activeHighlighter, setActiveHighlighter] = useState<string | null>(null);
@@ -276,25 +247,27 @@ const FourHighlighterAudit = () => {
     const hl = (id: string, base: string) =>
       `${isHighlighted(id) ? base + ' px-1 rounded-sm' : ''}`;
 
-    return <div className="wr-skin" data-wide="FourHighlighterAudit"><div className="my-10 rounded-2xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] p-6 md:p-8">
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Four-Highlighter Audit</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Click the highlighters to audit the paragraph below.</p>
-            <div className="flex justify-center flex-wrap gap-3 mb-6">
-                <button onClick={() => setActiveHighlighter(activeHighlighter === 'purpose' ? null : 'purpose')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'purpose' ? "bg-[var(--module-solid)] text-[var(--module-ink)] border-[var(--module-line)]" : "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)]"}`} data-wide-button="true" data-selected={!!(activeHighlighter === 'purpose')} data-tone="orange" aria-pressed={!!(activeHighlighter === 'purpose')}> <Highlighter size={16}/> Purpose</button>
-                <button onClick={() => setActiveHighlighter(activeHighlighter === 'coherence' ? null : 'coherence')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'coherence' ? "bg-green-500 text-[var(--module-ink)] border-green-500" : 'bg-green-50 text-green-800 border-green-200'}`} data-wide-button="true" data-selected={!!(activeHighlighter === 'coherence')} data-tone="mint" aria-pressed={!!(activeHighlighter === 'coherence')}> <Highlighter size={16}/> Coherence</button>
-                <button onClick={() => setActiveHighlighter(activeHighlighter === 'language' ? null : 'language')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'language' ? "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)]" : "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)]"}`} data-wide-button="true" data-selected={!!(activeHighlighter === 'language')} data-tone="orange" aria-pressed={!!(activeHighlighter === 'language')}> <Highlighter size={16}/> Language</button>
-                <button onClick={() => setActiveHighlighter(activeHighlighter === 'mechanics' ? null : 'mechanics')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'mechanics' ? "bg-[var(--module-danger)] text-[var(--module-ink)] border-[var(--module-line)]" : "bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] border-[var(--module-line)]"}`} data-wide-button="true" data-selected={!!(activeHighlighter === 'mechanics')} data-tone="coral" aria-pressed={!!(activeHighlighter === 'mechanics')}> <Highlighter size={16}/> Mechanics</button>
+    return <ExerciseSheet title="The Four-Highlighter Audit" sub="Click the highlighters to audit the paragraph below." name="FourHighlighterAudit">
+            {/* The four highlighters: buttons that stay pressed, as today (no glyph: today's look hides it) */}
+            <div className="ui-choices ui-choices--tiles">
+                <ChoiceTile kind="toggle" tile chosen={activeHighlighter === 'purpose'} onClick={() => setActiveHighlighter(activeHighlighter === 'purpose' ? null : 'purpose')} label="Purpose" />
+                <ChoiceTile kind="toggle" tile chosen={activeHighlighter === 'coherence'} onClick={() => setActiveHighlighter(activeHighlighter === 'coherence' ? null : 'coherence')} label="Coherence" />
+                <ChoiceTile kind="toggle" tile chosen={activeHighlighter === 'language'} onClick={() => setActiveHighlighter(activeHighlighter === 'language' ? null : 'language')} label="Language" />
+                <ChoiceTile kind="toggle" tile chosen={activeHighlighter === 'mechanics'} onClick={() => setActiveHighlighter(activeHighlighter === 'mechanics' ? null : 'mechanics')} label="Mechanics" />
             </div>
-            <div className="p-6 rounded-xl border-[1.5px] border-[var(--outline-soft)] bg-[var(--surface-raised)] leading-relaxed text-[var(--ink-primary)]">
-              <span className={hl('s1', "bg-[var(--module-surface)]")}>W.B. Yeats' poem 'The Second Coming' <span className={hl('w1', "bg-[var(--module-surface)]")}>powerfully captures</span> the anxiety of a world <span className={hl('w2', "bg-[var(--module-surface)]")}>descending into chaos</span>.</span>
+            {/* The paragraph: words you read, on the sheet under a hairline, not in a box */}
+            <div className="ex-block">
+              <p className="t-body text-ink-primary">
+              <span className={hl('s1', MARK)}>W.B. Yeats' poem 'The Second Coming' <span className={hl('w1', MARK)}>powerfully captures</span> the anxiety of a world <span className={hl('w2', MARK)}>descending into chaos</span>.</span>
               {' '}
-              <span><span className={hl('t1', 'bg-green-200')}>Initially</span>, the poem presents the image of a falcon <span className={hl('e1', "bg-[var(--module-danger)]")}>loosing</span> control, a metaphor for society's breakdown.</span>
+              <span><span className={hl('t1', MARK)}>Initially</span>, the poem presents the image of a falcon <span className={hl('e1', MARK)}>loosing</span> control, a metaphor for society's breakdown.</span>
               {' '}
-              <span className={hl('s3', "bg-[var(--module-surface)]")}><span className={hl('t2', 'bg-green-200')}>However</span>, Yeats then introduces the <span className={hl('w4', "bg-[var(--module-surface)]")}>terrifying 'rough beast,'</span> <span className={hl('w5', "bg-[var(--module-surface)]")}>slouching</span> towards Bethlehem. This <span className={hl('w6', "bg-[var(--module-surface)]")}>stark image</span> solidifies the poem's <span className={hl('w7', "bg-[var(--module-surface)]")}>apocalyptic vision</span>.</span>
+              <span className={hl('s3', MARK)}><span className={hl('t2', MARK)}>However</span>, Yeats then introduces the <span className={hl('w4', MARK)}>terrifying 'rough beast,'</span> <span className={hl('w5', MARK)}>slouching</span> towards Bethlehem. This <span className={hl('w6', MARK)}>stark image</span> solidifies the poem's <span className={hl('w7', MARK)}>apocalyptic vision</span>.</span>
               {' '}
-              <span className={hl('s4', "bg-[var(--module-surface)]")}><span className={hl('t3', 'bg-green-200')}>Therefore</span>, the poem <span className={hl('w8', "bg-[var(--module-surface)]")}>encapsulates</span> a profound sense of cultural collapse.</span>
+              <span className={hl('s4', MARK)}><span className={hl('t3', MARK)}>Therefore</span>, the poem <span className={hl('w8', MARK)}>encapsulates</span> a profound sense of cultural collapse.</span>
+              </p>
             </div>
-        </div></div>;
+        </ExerciseSheet>;
 };
 
 // --- MODULE COMPONENT ---
