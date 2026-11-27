@@ -65,3 +65,5 @@
 /* A phone: the bar owns the top inset, the page scrolls between, the footer clears the home indicator. */
 .sq-review--over .sq-summary-body { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
 .sq-review--over .sq-summary-footer { flex: none; padding-bottom: calc(var(--space-3) + var(--safe-bottom, 0px)); }
+/* Expand / Contract: its glyph beside its word, as on the practice card's bar. */
+.sq-review .sq-review-bar .ui-btn > span { display: inline-flex; align-items: center; gap: 6px; }
