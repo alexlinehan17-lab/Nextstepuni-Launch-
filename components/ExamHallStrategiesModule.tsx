@@ -52,7 +52,7 @@ export const TriageSimulator = () => {
     }, []);
 
     // The traffic light's own dots (the same three the triage markers are drawn in); the words say the rest.
-    const colorMap = { green: { label: 'Do First', dot: "bg-[var(--module-success)]" }, amber: { label: 'Do Second', dot: "bg-[var(--module-orange)]" }, red: { label: 'Do Last', dot: "bg-[var(--module-danger)]" } };
+    const colorMap = { green: { label: 'Do First', dot: "bg-[var(--success-hex)]" }, amber: { label: 'Do Second', dot: "bg-[var(--warning-text)]" }, red: { label: 'Do Last', dot: "bg-[var(--danger-tint-ink)]" } };
 
     React.useEffect(() => {
         if (phase !== 'drill' || showFeedback) return;
