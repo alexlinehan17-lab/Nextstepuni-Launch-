@@ -1387,3 +1387,10 @@
   .lp-plan-week { padding-top: 28px; }
   .lp-plan-week h3 { font-size: 28px; }
 }
+
+/* The shared SubjectPicker in the shared sheet (area 7b): search, then the subjects as rows. */
+.lp-subject-sheet-body { display: flex; flex-direction: column; gap: var(--space-3); padding-bottom: var(--space-4); }
+.lp-subject-list { margin: 0; padding: 0; list-style: none; }
+.lp-subject-sheet .lp-subject-row.ui-row--select { min-height: 56px; }
+.lp-subject-sheet .lp-subject-row[aria-disabled='true'] .ui-row-title { color: var(--ink-muted); }
+.lp-subject-empty { margin: 0; padding: var(--space-6) 0; }
