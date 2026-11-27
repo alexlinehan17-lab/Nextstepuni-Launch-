@@ -24,7 +24,8 @@
 .gc8-strong { color: var(--ink-primary); }
 .gc8-readout { font-family: 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-size: 13px; line-height: 16px; letter-spacing: 0.02em; font-variant-numeric: tabular-nums; }
 .gc8-sec { display: flex; flex-direction: column; gap: var(--space-3); min-width: 0; }
-.gc8-sechead { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--space-3); min-height: 28px; }
+.gc8-sechead { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--space-2) var(--space-3); min-height: 28px; }
+.gc8-sechead > .gc8-h { flex: none; }
 .gc8-sechead-col { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .gc8-h { font-size: 21px; line-height: 26px; letter-spacing: -0.03em; font-weight: 400; }
 .gc8-sechead > .gc8-meta { flex: none; text-align: right; padding-bottom: 3px; }
@@ -431,3 +432,7 @@
 .gc8-sd-struggle { display: flex; flex-direction: column; gap: var(--space-4); }
 .gc8-sd-struggle ul { display: flex; flex-direction: column; gap: 2px; margin-top: 4px; }
 .gc8-usermenu.ui-menu.ui-menu--panel { width: 236px; padding: 6px; }
+/* A table cell never lets its words run into the next column. */
+.gc8-tr > span, .gc8-ptr > span { min-width: 0; }
+.gc8-tr > span:first-child, .gc8-ptr > span:first-child { overflow: hidden; }
+.gc8-stu.ui-part { max-width: 100%; }

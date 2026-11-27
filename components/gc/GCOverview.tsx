@@ -1246,6 +1246,10 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           </Button>
         ))}
       </div>
+      {/* The full table from 1200px; beside the sidebar on a narrower screen its nine columns do not fit,
+          so the students are the phone's rows there (each opens the student, whose page has flag,
+          reset and delete). */}
+      {!twoMonths ? <ul className="ui-list gc8-list">{filtered.map(studentRowPhone)}</ul> : (
       <div className="gc8-tablewrap">
         <div className="gc8-table" role="table" aria-label="All students">
           <div className="gc8-tr gc8-tr--head" role="row">
@@ -1302,6 +1306,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           })}
         </div>
       </div>
+      )}
       {emptyStudents}
     </section>
   );

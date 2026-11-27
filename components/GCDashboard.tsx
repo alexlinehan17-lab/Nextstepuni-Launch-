@@ -322,6 +322,15 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
     { id: 'gc-events', label: 'Key dates', icon: CalendarDays },
   ];
   const [accountOpen, setAccountOpen] = useState(false);
+  // The phone's bar gains its hairline once the page has scrolled under it (tokens.md, "Bars").
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    if (wide) return undefined;
+    const update = () => setScrolled(window.scrollY > 4);
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    return () => window.removeEventListener('scroll', update);
+  }, [wide]);
   const resetFieldRef = useRef<HTMLInputElement>(null);
   const deleteFieldRef = useRef<HTMLInputElement>(null);
   const roleWords = role === 'gc' ? 'Guidance counsellor' : 'Staff';
@@ -532,6 +541,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
         {!wide && (
           <TopBar
             className="gc8-placebar"
+            ruled={scrolled}
             placeLabel={getSchoolName(school)}
             action={
               <IconButton className="gc8-me" label="Your account" onClick={() => setAccountOpen(true)}

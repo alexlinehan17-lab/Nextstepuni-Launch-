@@ -40,6 +40,8 @@ const GCHandInGrid: React.FC<Props> = ({ students, allCourses, school, onSelectS
   const [filter, setFilter] = useState<CohortTag | null>(null);
   const [ver, setVer] = useState(0); // re-read tags after load / a toggle
   const wide = useWide();
+  // The table and its spelled-out tags fit from 1200px; beside the sidebar below that, the phone's rows.
+  const table = useWide(1200);
 
   // Cohort tags now live in Firestore (security review M-8). Hydrate the cache
   // once for this school, then bump `ver` so the rows re-read getTags().
@@ -105,7 +107,7 @@ const GCHandInGrid: React.FC<Props> = ({ students, allCourses, school, onSelectS
         ))}
       </div>
 
-      {wide ? (
+      {table ? (
         <section className="gc8-sec">
           <div className="gc8-ptablewrap">
             <div className="gc8-ptable" role="table" aria-label="Practice status">
