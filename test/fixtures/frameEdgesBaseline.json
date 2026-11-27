@@ -40,11 +40,8 @@
    "fixed": 1,
    "inset-0": 1
   },
-  "components/ElaborativeInterrogationModule.tsx": {
-   "inset-0": 2
-  },
   "components/EmotionalIntelligenceModule.tsx": {
-   "inset-0": 3
+   "inset-0": 2
   },
   "components/ErrorBoundary.tsx": {
    "h-screen": 1
@@ -144,9 +141,6 @@
   },
   "components/PaperTrail/viewer-chrome.css": {
    "var(--sa*)": 5
-  },
-  "components/PointsOptimizationModule.tsx": {
-   "inset-0": 3
   },
   "components/PullToRefresh.tsx": {
    "env(safe-area-": 1,

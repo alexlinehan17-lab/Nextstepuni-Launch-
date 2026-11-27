@@ -12,6 +12,8 @@ import { slateTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { AnswerLine, ExercisePart, ExerciseSheet } from './learning/Exercise';
+import { Button } from './ui/Button';
 
 const theme = slateTheme;
 
@@ -212,34 +214,35 @@ const DeliberatePracticeWheel: React.FC = () => {
   const ringCircumference = 2 * Math.PI * ringRadius;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+    <ExerciseSheet
+      title={<>
         Deliberate Practice Wheel
-      </h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">
+      </>}
+      sub={<>
         You don’t need to be naturally gifted — the marking scheme rewards process. Spin the wheel and practice a real technique for 2 minutes.
-      </p>
-
-      {/* Progress counter */}
-      <div className="text-center mb-6">
-        <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">
+      </>}
+      name="DeliberatePracticeWheel"
+    >
+      {/* Progress counter: a count in the readout; once all are practised, a line in ink with the tick */}
+      <div className="ex-stack">
+        <p className="ex-count ui-readout">
           {practiced.size}/8 techniques practiced
-        </span>
+        </p>
         {allPracticed && (
           <MotionDiv
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mt-3 p-4 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800"
           >
-            <p className="text-sm text-emerald-700 dark:text-emerald-300 font-medium">
+            <AnswerLine>
               You've experienced deliberate practice across all creative disciplines. None of these required "talent" — just focused attention and willingness to try.
-            </p>
+            </AnswerLine>
           </MotionDiv>
         )}
       </div>
 
-      {/* Wheel layout: 8 pills arranged around a central button */}
-      <div className="relative w-72 h-72 mx-auto mb-8">
+      {/* Wheel layout: 8 labels arranged around a central button (the wheel's own drawing, in ink: the
+          landing spot has an ink outline, practised ones are ink and the rest ink-3; practised dots are green) */}
+      <div className="relative w-72 h-72 mx-auto">
         {techniques.map((tech, i) => {
           const angle = (i / 8) * 2 * Math.PI - Math.PI / 2;
           const radius = 110;
@@ -251,33 +254,33 @@ const DeliberatePracticeWheel: React.FC = () => {
           return (
             <MotionDiv
               key={i}
-              className={`absolute flex items-center justify-center rounded-full px-3 py-1.5 text-xs font-semibold transition-all duration-150 border-2 select-none ${
+              className={`absolute flex items-center justify-center px-3 py-1.5 t-label transition-colors duration-150 select-none ${
                 isHighlighted
-                  ? 'scale-110 shadow-lg z-10'
-                  : 'scale-100'
+                  ? 'z-10'
+                  : ''
               }`}
               style={{
                 left: cx,
                 top: cy,
                 width: 80,
                 height: 32,
-                backgroundColor: isHighlighted ? tech.color : isPracticed ? tech.color + '33' : 'transparent',
-                borderColor: tech.color,
-                color: isHighlighted ? '#fff' : isPracticed ? tech.color : tech.color,
+                borderRadius: 'var(--r-ctl)',
+                border: `1.5px solid ${isHighlighted ? 'var(--ink-primary)' : 'transparent'}`,
+                backgroundColor: 'var(--surface-paper)',
+                color: isHighlighted || isPracticed ? 'var(--ink-primary)' : 'var(--ink-muted)',
               }}
               animate={{
                 scale: isHighlighted ? 1.15 : 1,
-                boxShadow: isHighlighted ? `0 0 20px ${tech.color}55` : '0 0 0px transparent',
               }}
               transition={{ duration: 0.15 }}
             >
-              <span className="truncate text-center leading-tight" style={{ fontSize: '10px' }}>{tech.category}</span>
+              <span className="truncate text-center">{tech.category}</span>
             </MotionDiv>
           );
         })}
 
         {/* Practiced dots ring (inner) */}
-        {techniques.map((tech, i) => {
+        {techniques.map((_, i) => {
           const angle = (i / 8) * 2 * Math.PI - Math.PI / 2;
           const dotRadius = 72;
           const dx = 144 + dotRadius * Math.cos(angle) - 5;
@@ -285,8 +288,14 @@ const DeliberatePracticeWheel: React.FC = () => {
           return (
             <div
               key={`dot-${i}`}
-              className={`absolute w-2.5 h-2.5 rounded-full transition-all duration-300 ${practiced.has(i) ? tech.dot : 'bg-zinc-200 dark:bg-zinc-600'}`}
-              style={{ left: dx, top: dy }}
+              className="absolute w-2.5 h-2.5 rounded-full transition-all duration-300"
+              style={{
+                left: dx,
+                top: dy,
+                ...(practiced.has(i)
+                  ? { backgroundColor: 'var(--success-hex)' }
+                  : { border: '1.5px solid var(--outline-soft)' }),
+              }}
             />
           );
         })}
@@ -296,27 +305,19 @@ const DeliberatePracticeWheel: React.FC = () => {
           className="absolute inset-0 flex items-center justify-center"
         >
           {phase === 'idle' || phase === 'spinning' ? (
-            <MotionDiv
-              whileHover={phase !== 'spinning' ? { scale: 1.08 } : {}}
-              whileTap={phase !== 'spinning' ? { scale: 0.95 } : {}}
+            <Button
+              onClick={spin}
+              {...{ disabled: phase === 'spinning' }}
+              className="disabled:opacity-40"
             >
-              <button
-                onClick={spin}
-                disabled={phase === 'spinning'}
-                className={`w-24 h-24 rounded-full font-bold text-lg text-white shadow-xl transition-colors ${
-                  phase === 'spinning'
-                    ? 'bg-zinc-400 dark:bg-zinc-600 cursor-not-allowed'
-                    : 'bg-zinc-800 dark:bg-white dark:text-zinc-800 hover:bg-zinc-700 dark:hover:bg-zinc-100 cursor-pointer'
-                }`}
-              >
-                {phase === 'spinning' ? '...' : 'SPIN'}
-              </button>
-            </MotionDiv>
+              {phase === 'spinning' ? '...' : 'SPIN'}
+            </Button>
           ) : null}
         </MotionDiv>
       </div>
 
-      {/* Selected technique exercise card */}
+      {/* Selected technique: the exercise the wheel landed on, under a hairline with its own label and
+          title (no tinted card, no coloured pill) */}
       <AnimatePresence mode="wait">
         {(phase === 'active' || phase === 'done') && selected && (
           <MotionDiv
@@ -325,59 +326,41 @@ const DeliberatePracticeWheel: React.FC = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -20, scale: 0.95 }}
             transition={{ duration: 0.4, ease: 'easeOut' }}
-            className={`rounded-xl border p-6 md:p-8 ${selected.bg} ${selected.border}`}
           >
-            {/* Header */}
-            <div className="flex items-center gap-3 mb-4">
-              <span
-                className="px-3 py-1 rounded-full text-xs font-bold text-white"
-                style={{ backgroundColor: selected.color }}
-              >
-                {selected.category}
-              </span>
-              <h5 className={`font-serif text-xl font-semibold ${selected.text}`}>
-                {selected.name}
-              </h5>
-            </div>
-
-            {/* Instruction */}
-            <p className="text-zinc-700 dark:text-zinc-200 mb-6 leading-relaxed">
-              {selected.instruction}
-            </p>
-
-            {/* Timer */}
-            <div className="flex flex-col items-center">
-              <div className="relative w-32 h-32 mb-4">
-                <svg viewBox="0 0 120 120" className="w-full h-full -rotate-90">
-                  {/* Background ring */}
-                  <circle
-                    cx="60"
-                    cy="60"
-                    r={ringRadius}
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="6"
-                    className="text-zinc-200 dark:text-zinc-600"
-                  />
-                  {/* Progress ring */}
-                  <circle
-                    cx="60"
-                    cy="60"
-                    r={ringRadius}
-                    fill="none"
-                    stroke={selected.color}
-                    strokeWidth="6"
-                    strokeLinecap="round"
-                    strokeDasharray={ringCircumference}
-                    strokeDashoffset={ringCircumference * (1 - timerProgress)}
-                    style={{ transition: 'stroke-dashoffset 0.5s linear' }}
-                  />
-                </svg>
-                {/* Timer text */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-zinc-800 dark:text-white font-mono">
-                    {formatTime(timeLeft)}
-                  </span>
+            <ExercisePart label={selected.category} title={selected.name} sub={selected.instruction} level={5}>
+              {/* Timer: the ring in ink on a hairline track */}
+              <div className="ex-figure">
+                <div className="relative w-32 h-32">
+                  <svg viewBox="0 0 120 120" className="w-full h-full -rotate-90">
+                    {/* Background ring */}
+                    <circle
+                      cx="60"
+                      cy="60"
+                      r={ringRadius}
+                      fill="none"
+                      stroke="var(--hairline)"
+                      strokeWidth="6"
+                    />
+                    {/* Progress ring */}
+                    <circle
+                      cx="60"
+                      cy="60"
+                      r={ringRadius}
+                      fill="none"
+                      stroke="var(--ink-primary)"
+                      strokeWidth="6"
+                      strokeLinecap="round"
+                      strokeDasharray={ringCircumference}
+                      strokeDashoffset={ringCircumference * (1 - timerProgress)}
+                      style={{ transition: 'stroke-dashoffset 0.5s linear' }}
+                    />
+                  </svg>
+                  {/* Timer text */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="ui-readout text-ink-primary" style={{ fontSize: 24, lineHeight: '28px' }}>
+                      {formatTime(timeLeft)}
+                    </span>
+                  </div>
                 </div>
               </div>
 
@@ -386,34 +369,31 @@ const DeliberatePracticeWheel: React.FC = () => {
                 <MotionDiv
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="text-center"
                 >
-                  <p className="text-lg font-semibold text-zinc-800 dark:text-white mb-2">
-                    Time's up! How did that feel?
-                  </p>
-                  <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">
+                  <AnswerLine>
+                    <b>
+                      Time's up! How did that feel?
+                    </b>{' '}
                     That was deliberate practice. No talent required.
-                  </p>
+                  </AnswerLine>
                 </MotionDiv>
               ) : (
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4 animate-pulse">
+                <p className="t-sub animate-pulse">
                   Timer running — give it your full focus...
                 </p>
               )}
 
               {/* Spin Again */}
-              <button
-                onClick={spinAgain}
-                className="px-6 py-2.5 rounded-lg font-medium text-sm text-white transition-colors cursor-pointer"
-                style={{ backgroundColor: selected.color }}
-              >
-                Spin Again
-              </button>
-            </div>
+              <div className="ex-actions">
+                <Button onClick={spinAgain}>
+                  Spin Again
+                </Button>
+              </div>
+            </ExercisePart>
           </MotionDiv>
         )}
       </AnimatePresence>
-    </div>
+    </ExerciseSheet>
   );
 };
 

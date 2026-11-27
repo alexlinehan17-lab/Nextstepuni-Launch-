@@ -11,8 +11,13 @@ import { emeraldTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { AnswerLine, ExerciseSheet } from './learning/Exercise';
+import { SelectionBar } from './ui/Choice';
 
 const theme = emeraldTheme;
+
+/** The exercise's title: on the sheet, and the name of its selection bar. */
+const DOPING_TITLE = 'Semiconductor Doping';
 
 // --- INTERACTIVE COMPONENTS ---
 const DopingSimulator = () => {
@@ -35,8 +40,9 @@ const DopingSimulator = () => {
     const label = mode === 'pure' ? 'Si' : mode === 'n' ? 'P' : 'B';
     const group = mode === 'pure' ? 'IV' : mode === 'n' ? 'V' : 'III';
     const valence = mode === 'pure' ? 4 : mode === 'n' ? 5 : 3;
-    const color = mode === 'pure' ? '#71717a' : mode === 'n' ? '#3b82f6' : '#f43f5e';
-    const bgColor = mode === 'pure' ? '#e4e4e7' : mode === 'n' ? '#dbeafe' : '#ffe4e6';
+    // The drawing's own colours, in tokens: pure silicon in the quieter ink, a doped atom in full ink
+    const color = mode === 'pure' ? 'var(--ink-secondary)' : 'var(--ink-primary)';
+    const svgText = { fontFamily: 'var(--font-ui)' };
 
     const info = {
         pure: {
@@ -59,37 +65,27 @@ const DopingSimulator = () => {
     const allViewed = viewed.size === 3;
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Semiconductor Doping</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">See how adding impurities creates free charge carriers in silicon.</p>
-            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">Toggle between states to understand N-type and P-type doping.</p>
+        <ExerciseSheet title={DOPING_TITLE} sub="See how adding impurities creates free charge carriers in silicon." name="DopingSimulator">
+            <p className="t-meta">Toggle between states to understand N-type and P-type doping.</p>
 
-            {/* Toggle */}
-            <div className="flex justify-center gap-1 p-1 bg-zinc-100 dark:bg-zinc-900/50 rounded-full mb-6 max-w-xs mx-auto">
-                {([['pure', 'Pure Si'], ['n', 'N-Type'], ['p', 'P-Type']] as const).map(([key, lbl]) => (
-                    <button key={key} onClick={() => handleMode(key)}
-                        className={`flex-1 px-3 py-2 text-xs font-bold rounded-full transition-all ${
-                            mode === key
-                                ? 'bg-white text-zinc-800 dark:text-white'
-                                : 'text-zinc-500 dark:text-zinc-400'
-                        }`}
-                        style={mode === key ? { boxShadow: '2px 2px 0px 0px #1C1917' } : {}}
-                    >
-                        {lbl}
-                    </button>
-                ))}
-            </div>
+            {/* Toggle: the system's selection bar (three short choices), named by the sheet's own title */}
+            <SelectionBar
+                label={DOPING_TITLE}
+                value={mode}
+                onChange={handleMode}
+                options={([['pure', 'Pure Si'], ['n', 'N-Type'], ['p', 'P-Type']] as const).map(([key, lbl]) => ({ value: key, label: lbl }))}
+            />
 
-            {/* Lattice SVG */}
-            <div className="bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700 p-3 mb-4">
-                <svg viewBox="0 0 300 210" className="w-full mx-auto" style={{ maxWidth: 340 }}>
+            {/* Lattice SVG: the drawing on the sheet (no grey box of its own) */}
+            <div className="ex-figure">
+                <svg viewBox="0 0 300 210" className="ex-figure-art w-full" style={{ maxWidth: 340 }}>
                     {/* Bonds */}
                     {neighbors.map((n, i) => {
                         const isHole = mode === 'p' && i === 0;
                         return (
                             <line key={`b-${i}`}
                                 x1={cx} y1={cy} x2={n.x} y2={n.y}
-                                stroke={isHole ? '#f43f5e' : '#d4d4d8'}
+                                stroke={isHole ? 'var(--ink-primary)' : 'var(--outline-soft)'}
                                 strokeWidth={isHole ? '1.5' : '2'}
                                 strokeDasharray={isHole ? '4 3' : 'none'}
                                 opacity={isHole ? 0.5 : 0.8}
@@ -107,10 +103,10 @@ const DopingSimulator = () => {
                         return (
                             <g key={`dots-${i}`}>
                                 <circle cx={mx + px} cy={my + py} r="2.5"
-                                    fill={isHole ? 'none' : '#a1a1aa'}
-                                    stroke={isHole ? '#f43f5e' : 'none'}
+                                    fill={isHole ? 'none' : 'var(--ink-muted)'}
+                                    stroke={isHole ? 'var(--ink-primary)' : 'none'}
                                     strokeWidth="1" strokeDasharray={isHole ? '2 1.5' : ''} />
-                                <circle cx={mx - px} cy={my - py} r="2.5" fill="#a1a1aa" />
+                                <circle cx={mx - px} cy={my - py} r="2.5" fill="var(--ink-muted)" />
                             </g>
                         );
                     })}
@@ -118,17 +114,18 @@ const DopingSimulator = () => {
                     {/* Neighbor Si atoms */}
                     {neighbors.map((n, i) => (
                         <g key={`a-${i}`}>
-                            <circle cx={n.x} cy={n.y} r={ar} fill="#fafafa" stroke="#d4d4d8" strokeWidth="1.5" className="dark:fill-zinc-800 dark:stroke-zinc-600" />
-                            <text x={n.x} y={n.y + 4} textAnchor="middle" className="text-[10px] font-bold" fill="#71717a">Si</text>
+                            <circle cx={n.x} cy={n.y} r={ar} fill="var(--surface-paper)" stroke="var(--outline-soft)" strokeWidth="1.5" />
+                            <text x={n.x} y={n.y + 4} textAnchor="middle" fontSize="11" style={svgText} fill="var(--ink-secondary)">Si</text>
                         </g>
                     ))}
 
                     {/* Center atom */}
                     <motion.g key={mode} initial={{ scale: 0.85 }} animate={{ scale: 1 }} transition={{ type: 'spring', stiffness: 200 }}>
-                        <circle cx={cx} cy={cy} r={ar + 2} fill={bgColor} stroke={color} strokeWidth="2" />
-                        <text x={cx} y={cy + 5} textAnchor="middle" className="text-[11px] font-bold" fill={color}>{label}</text>
+                        <circle cx={cx} cy={cy} r={ar + 2} fill="var(--surface-paper)" stroke={color} strokeWidth="2" />
+                        <text x={cx} y={cy + 5} textAnchor="middle" fontSize="13" style={svgText} fill={color}>{label}</text>
                     </motion.g>
-                    <text x={cx} y={cy + ar + 16} textAnchor="middle" className="text-[6px]" fill={color}>Group {group} \u00b7 {valence}e\u207b</text>
+                    {/* the group line sits on the bond, so a paper-coloured edge keeps it readable */}
+                    <text x={cx} y={cy + ar + 16} textAnchor="middle" fontSize="11" style={{ ...svgText, paintOrder: 'stroke' }} stroke="var(--surface-paper)" strokeWidth="4" fill={color}>Group {group} \u00b7 {valence}e\u207b</text>
 
                     {/* Free electron (N-type) */}
                     {mode === 'n' && (
@@ -137,11 +134,11 @@ const DopingSimulator = () => {
                                 animate={{ x: [0, 14, -6, 12, 0], y: [0, -10, 8, -14, 0] }}
                                 transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
                             >
-                                <circle cx={cx + 36} cy={cy - 36} r="7" fill="#3b82f6" />
-                                <text x={cx + 36} y={cy - 33.5} textAnchor="middle" className="text-[5px] font-bold" fill="white">e\u207b</text>
+                                <circle cx={cx + 36} cy={cy - 36} r="9" fill="var(--ink-primary)" />
+                                <text x={cx + 36} y={cy - 32} textAnchor="middle" fontSize="11" style={svgText} fill="var(--surface-paper)">e\u207b</text>
                             </motion.g>
-                            <text x={cx + 58} y={cy - 48} textAnchor="start" className="text-[7px] font-bold" fill="#3b82f6">FREE</text>
-                            <text x={cx + 58} y={cy - 39} textAnchor="start" className="text-[7px] font-bold" fill="#3b82f6">ELECTRON</text>
+                            <text x={cx + 58} y={cy - 52} textAnchor="start" fontSize="11" style={svgText} fill="var(--ink-primary)" letterSpacing="0.1em">FREE</text>
+                            <text x={cx + 58} y={cy - 39} textAnchor="start" fontSize="11" style={svgText} fill="var(--ink-primary)" letterSpacing="0.1em">ELECTRON</text>
                         </>
                     )}
 
@@ -150,42 +147,42 @@ const DopingSimulator = () => {
                         <>
                             <motion.circle
                                 cx={cx} cy={cy - dist * 0.5}
-                                r="8" fill="none" stroke="#f43f5e" strokeWidth="2" strokeDasharray="3 2"
+                                r="8" fill="none" stroke="var(--ink-primary)" strokeWidth="2" strokeDasharray="3 2"
                                 animate={{ scale: [1, 1.2, 1], opacity: [0.8, 1, 0.8] }}
                                 transition={{ repeat: Infinity, duration: 1.5 }}
                             />
-                            <text x={cx + 14} y={cy - dist * 0.5 + 3} textAnchor="start" className="text-[7px] font-bold" fill="#f43f5e">HOLE</text>
+                            <text x={cx + 14} y={cy - dist * 0.5 + 4} textAnchor="start" fontSize="11" style={svgText} fill="var(--ink-primary)" letterSpacing="0.1em">HOLE</text>
                         </>
                     )}
 
                     {/* Conductivity label */}
-                    <text x={285} y={200} textAnchor="end" className="text-[7px] font-bold"
-                        fill={mode === 'pure' ? '#a1a1aa' : color}>
+                    <text x={285} y={200} textAnchor="end" fontSize="11" style={svgText} letterSpacing="0.1em"
+                        fill={mode === 'pure' ? 'var(--ink-muted)' : color}>
                         {mode === 'pure' ? 'INSULATOR' : 'CONDUCTOR'}
                     </text>
                 </svg>
             </div>
 
-            {/* Info panel */}
+            {/* Info panel: words you read, under the state's label and a hairline (no tinted box) */}
             <AnimatePresence mode="wait">
                 <motion.div key={mode} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}
-                    className="p-4 rounded-xl border text-center"
-                    style={{ backgroundColor: color + '08', borderColor: color + '25' }}
+                    className="ex-block"
                 >
-                    <p className="text-[10px] font-bold uppercase tracking-wider mb-1.5" style={{ color }}>{info[mode].title}</p>
-                    <p className="text-sm text-zinc-700 dark:text-zinc-300 mb-1">{info[mode].desc}</p>
-                    <p className="text-xs font-semibold" style={{ color }}>{info[mode].result}</p>
+                    <p className="ex-label">{info[mode].title}</p>
+                    <p className="ex-block-text">{info[mode].desc}</p>
+                    <p className="t-body text-ink-primary">{info[mode].result}</p>
                 </motion.div>
             </AnimatePresence>
 
-            {/* PN Junction insight */}
+            {/* PN Junction insight: once all three states are seen, a line in ink with the tick */}
             {allViewed && (
-                <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-                    className="text-center text-xs text-zinc-500 dark:text-zinc-400 mt-4">
-                    When N-type and P-type meet, electrons fill holes at the boundary \u2014 forming the <span className="font-semibold text-emerald-600 dark:text-emerald-400">PN Junction</span>, the foundation of every diode and transistor.
-                </motion.p>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                    <AnswerLine>
+                    When N-type and P-type meet, electrons fill holes at the boundary \u2014 forming the <b>PN Junction</b>, the foundation of every diode and transistor.
+                    </AnswerLine>
+                </motion.div>
             )}
-        </div>
+        </ExerciseSheet>
     );
 };
 

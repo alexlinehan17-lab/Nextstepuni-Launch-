@@ -14,6 +14,9 @@ import { emeraldTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { AnswerGroup, AnswerLine, AnswerTick, ExerciseSheet } from './learning/Exercise';
+import { Button } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = emeraldTheme;
 
@@ -56,19 +59,6 @@ const CurlyArrowDrill = () => {
         setIsCorrect(false);
     };
 
-    const btnStyle = (side: 'a' | 'b'): React.CSSProperties => {
-        const isSource = side === 'a' ? s?.a.isSource : s?.b.isSource;
-        if (isCorrect) {
-            return isSource
-                ? { backgroundColor: '#D1FAE5', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669' }
-                : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', opacity: 0.4 };
-        }
-        if (selected === side && !isSource) {
-            return { backgroundColor: '#FEE2E2', border: '2.5px solid #EF4444', borderRadius: 14, boxShadow: '3px 3px 0px 0px #EF4444' };
-        }
-        return { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' };
-    };
-
     /* Curly arrow SVG: curves from source side to sink side */
     const arrowLR = 'M 6 18 Q 24 -2 42 18'; // left \u2192 right
     const arrowRL = 'M 42 18 Q 24 -2 6 18'; // right \u2192 left
@@ -76,20 +66,19 @@ const CurlyArrowDrill = () => {
     const headRL = '9,12 3,20 10,20';
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Curly Arrow Drill</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Curly arrows always flow from electron SOURCE to electron SINK.</p>
-            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">Click the electron source in each pair.</p>
+        <ExerciseSheet title="Curly Arrow Drill" sub="Curly arrows always flow from electron SOURCE to electron SINK." name="CurlyArrowDrill">
+            <p className="t-meta">Click the electron source in each pair.</p>
 
-            {/* Progress */}
-            <div className="mb-6">
+            {/* Progress: its label and count in the readout, a hairline track with an ink fill */}
+            <div>
                 <div className="flex items-center justify-between mb-1.5">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Progress</span>
-                    <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400">{Math.min(current + (isCorrect ? 1 : 0), scenarios.length)}/{scenarios.length}</span>
+                    <span className="ex-label">Progress</span>
+                    <span className="ex-count ui-readout">{Math.min(current + (isCorrect ? 1 : 0), scenarios.length)}/{scenarios.length}</span>
                 </div>
-                <div className="w-full h-2 bg-zinc-100 dark:bg-surface-paper rounded-full overflow-hidden">
+                <div className="w-full h-1 rounded-sm overflow-hidden" style={{ backgroundColor: 'var(--hairline)' }}>
                     <motion.div
-                        className="h-full rounded-full bg-emerald-400"
+                        className="h-full"
+                        style={{ backgroundColor: 'var(--ink-primary)' }}
                         animate={{ width: `${(Math.min(current + (isCorrect ? 1 : 0), scenarios.length) / scenarios.length) * 100}%` }}
                         transition={{ type: 'spring', stiffness: 80, damping: 15 }}
                     />
@@ -98,85 +87,92 @@ const CurlyArrowDrill = () => {
 
             {!done ? (
                 <AnimatePresence mode="wait">
-                    <motion.div key={current} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
-                        <p className="text-center text-xs text-zinc-500 dark:text-zinc-400 mb-4">
-                            Which is the electron <span className="font-bold text-emerald-600 dark:text-emerald-400">SOURCE</span>?
-                        </p>
+                    <motion.div key={current} className="ex-stack" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
+                        {/* The pair: two answers with the curly arrow drawn between them once the source is found.
+                            The source, once chosen, carries the green tick (no mint or coral fill); a wrong pick can be changed */}
+                        <AnswerGroup kind="one" chooseOnArrow={false} legend={<>Which is the electron <b>SOURCE</b>?</>}>
+                            <div className="flex items-center justify-center gap-3">
+                                <ChoiceTile
+                                    tile
+                                    className="flex-1 min-w-0"
+                                    chosen={selected === 'a'}
+                                    onClick={() => handleSelect('a')}
+                                    disabled={isCorrect}
+                                    label={<span className="inline-flex items-center gap-2 t-heading">{s.a.formula}{isCorrect && selected === 'a' ? <AnswerTick /> : null}</span>}
+                                    meta={s.a.label}
+                                />
 
-                        {/* Reaction pair */}
-                        <div className="flex items-center justify-center gap-3 mb-4">
-                            <button onClick={() => handleSelect('a')} disabled={isCorrect} className="flex-1 max-w-[150px] p-4 text-center transition-all" style={btnStyle('a')}>
-                                <p className="text-2xl font-mono font-bold text-zinc-800 dark:text-white">{s.a.formula}</p>
-                                <p className="text-[10px] text-zinc-500 dark:text-zinc-400 mt-1">{s.a.label}</p>
-                            </button>
+                                <div className="flex-shrink-0 w-12 h-6 flex items-center justify-center">
+                                    {isCorrect ? (
+                                        <motion.svg initial={{ opacity: 0 }} animate={{ opacity: 1 }} width="48" height="24" viewBox="0 0 48 24" aria-hidden="true">
+                                            <motion.path
+                                                d={s.a.isSource ? arrowLR : arrowRL}
+                                                fill="none" stroke="var(--ink-primary)" strokeWidth="2" strokeLinecap="round"
+                                                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+                                                transition={{ duration: 0.5 }}
+                                            />
+                                            <motion.polygon
+                                                points={s.a.isSource ? headLR : headRL}
+                                                fill="var(--ink-primary)"
+                                                initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+                                                transition={{ delay: 0.4 }}
+                                            />
+                                        </motion.svg>
+                                    ) : (
+                                        <span className="t-row text-ink-muted">+</span>
+                                    )}
+                                </div>
 
-                            <div className="flex-shrink-0 w-12 h-6 flex items-center justify-center">
-                                {isCorrect ? (
-                                    <motion.svg initial={{ opacity: 0 }} animate={{ opacity: 1 }} width="48" height="24" viewBox="0 0 48 24">
-                                        <motion.path
-                                            d={s.a.isSource ? arrowLR : arrowRL}
-                                            fill="none" stroke="#10b981" strokeWidth="2.5" strokeLinecap="round"
-                                            initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
-                                            transition={{ duration: 0.5 }}
-                                        />
-                                        <motion.polygon
-                                            points={s.a.isSource ? headLR : headRL}
-                                            fill="#10b981"
-                                            initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-                                            transition={{ delay: 0.4 }}
-                                        />
-                                    </motion.svg>
-                                ) : (
-                                    <span className="text-lg font-bold text-zinc-300 dark:text-zinc-600">+</span>
-                                )}
+                                <ChoiceTile
+                                    tile
+                                    className="flex-1 min-w-0"
+                                    chosen={selected === 'b'}
+                                    onClick={() => handleSelect('b')}
+                                    disabled={isCorrect}
+                                    label={<span className="inline-flex items-center gap-2 t-heading">{s.b.formula}{isCorrect && selected === 'b' ? <AnswerTick /> : null}</span>}
+                                    meta={s.b.label}
+                                />
                             </div>
+                        </AnswerGroup>
 
-                            <button onClick={() => handleSelect('b')} disabled={isCorrect} className="flex-1 max-w-[150px] p-4 text-center transition-all" style={btnStyle('b')}>
-                                <p className="text-2xl font-mono font-bold text-zinc-800 dark:text-white">{s.b.formula}</p>
-                                <p className="text-[10px] text-zinc-500 dark:text-zinc-400 mt-1">{s.b.label}</p>
-                            </button>
-                        </div>
-
-                        {/* Feedback */}
+                        {/* Feedback: a line in ink (the tick once the source is found) */}
                         <AnimatePresence>
                             {selected && !isCorrect && (
-                                <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-                                    className="text-center text-xs text-rose-500 dark:text-rose-400 mb-3">
+                                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                                    <AnswerLine tone="note">
                                     That&apos;s the electron sink &mdash; it&apos;s electron-poor. Try the source.
-                                </motion.p>
+                                    </AnswerLine>
+                                </motion.div>
                             )}
                         </AnimatePresence>
                         {isCorrect && (
-                            <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}
-                                className="p-3 bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/40 rounded-xl text-center mb-4"
-                            >
-                                <p className="text-xs text-emerald-700 dark:text-emerald-300">{s.explanation}</p>
+                            <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
+                                <AnswerLine>{s.explanation}</AnswerLine>
                             </motion.div>
                         )}
                         {isCorrect && (
-                            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center">
-                                <button onClick={handleNext}
-                                    className="px-4 py-2 text-sm font-bold rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition-colors">
+                            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="ex-actions">
+                                <Button onClick={handleNext}>
                                     {current < scenarios.length - 1 ? 'Next Reaction' : 'See Results'}
-                                </button>
+                                </Button>
                             </motion.div>
                         )}
                     </motion.div>
                 </AnimatePresence>
             ) : (
                 <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
-                    className="p-5 bg-emerald-50 dark:bg-emerald-950/20 rounded-xl border border-emerald-200 dark:border-emerald-800/40 text-center"
+                    className="ex-result"
                 >
-                    <p className="text-3xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">{score}/{scenarios.length}</p>
-                    <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-300">
+                    <p className="ex-result-name">{score}/{scenarios.length}</p>
+                    <AnswerLine tone={score === scenarios.length ? 'ok' : 'note'}>
                         {score === scenarios.length ? 'Perfect! You understand the source \u2192 sink principle.' : 'Remember: electrons always flow from rich to poor.'}
-                    </p>
-                    <p className="text-xs text-emerald-600/70 dark:text-emerald-400/60 mt-2">
+                    </AnswerLine>
+                    <p className="ex-sub">
                         The curly arrow always starts at the electron source (lone pair or bond) and points to the electron sink (electron-deficient atom).
                     </p>
                 </motion.div>
             )}
-        </div>
+        </ExerciseSheet>
     );
 };
 
@@ -316,50 +312,34 @@ const KeywordPrecisionTester = () => {
         ? 'Good, but a few synonyms slipped in. Each wrong keyword is a lost mark.'
         : "The synonyms feel right, but the examiner only accepts exact terms. This is Biology's hidden trap.";
 
-  const optionBtnStyle = (idx: number): React.CSSProperties => {
-    if (selected === null) {
-      return { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' };
-    }
-    if (idx === q.correctIndex) {
-      return { backgroundColor: '#D1FAE5', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669' };
-    }
-    if (idx === selected && idx !== q.correctIndex) {
-      return { backgroundColor: '#FEE2E2', border: '2.5px solid #EF4444', borderRadius: 14, boxShadow: '3px 3px 0px 0px #EF4444', opacity: 0.8 };
-    }
-    return { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', opacity: 0.5 };
-  };
-
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Keyword Precision Tester</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">
-        In Biology, close enough is zero marks. Only the exact SEC keyword scores.
-      </p>
+    <ExerciseSheet title="Keyword Precision Tester" sub="In Biology, close enough is zero marks. Only the exact SEC keyword scores." name="KeywordPrecisionTester">
 
-      {/* Stats pills */}
-      <div className="flex items-center justify-center gap-3 mb-6">
-        <span className="px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/20 text-xs font-bold text-emerald-700 dark:text-emerald-300">
+      {/* The score, the streak and the best streak, in the readout (no pills) */}
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+        <span className="ui-readout text-ink-primary">
           Score: {score}/{questions.length}
         </span>
-        <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-surface-paper text-xs font-bold text-zinc-600 dark:text-zinc-300">
+        <span className="ui-readout text-ink-secondary">
           Streak: {streak}
         </span>
-        <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-surface-paper text-xs font-bold text-zinc-600 dark:text-zinc-300">
+        <span className="ui-readout text-ink-secondary">
           Best: {bestStreak}
         </span>
       </div>
 
-      {/* Progress bar */}
-      <div className="mb-6">
+      {/* Progress: its label and count in the readout, a hairline track with an ink fill */}
+      <div>
         <div className="flex items-center justify-between mb-1.5">
-          <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Progress</span>
-          <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400">
+          <span className="ex-label">Progress</span>
+          <span className="ex-count ui-readout">
             {done ? questions.length : current}/{questions.length}
           </span>
         </div>
-        <div className="w-full h-2 bg-zinc-100 dark:bg-surface-paper rounded-full overflow-hidden">
+        <div className="w-full h-1 rounded-sm overflow-hidden" style={{ backgroundColor: 'var(--hairline)' }}>
           <motion.div
-            className="h-full rounded-full bg-emerald-400"
+            className="h-full"
+            style={{ backgroundColor: 'var(--ink-primary)' }}
             animate={{ width: `${((done ? questions.length : current) / questions.length) * 100}%` }}
             transition={{ type: 'spring', stiffness: 80, damping: 15 }}
           />
@@ -368,44 +348,40 @@ const KeywordPrecisionTester = () => {
 
       {!done ? (
         <AnimatePresence mode="wait">
-          <MotionDiv key={current} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
-            {/* Definition card */}
-            <div className="p-5 bg-zinc-50 dark:bg-surface-paper rounded-xl border border-zinc-200 dark:border-zinc-700 mb-5">
-              <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-2">Definition</p>
-              <p className="text-base font-medium text-zinc-800 dark:text-white leading-relaxed">{q.definition}</p>
+          <MotionDiv key={current} className="ex-stack" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
+            {/* The definition: words you read, under its label and a hairline (no grey card) */}
+            <div className="ex-block">
+              <p className="ex-label">Definition</p>
+              <p className="ex-block-title">{q.definition}</p>
             </div>
 
-            {/* Option buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-5">
+            {/* The three keywords: choosing one locks it in; the exact term then carries the green tick */}
+            <AnswerGroup kind="one" chooseOnArrow={false}>
               {q.options.map((opt, idx) => (
-                <button
+                <ChoiceTile
                   key={opt}
                   onClick={() => handleSelect(idx)}
                   disabled={selected !== null}
-                  className="px-5 py-3 text-sm font-semibold transition-all text-zinc-700 dark:text-zinc-200"
-                  style={optionBtnStyle(idx)}
-                >
-                  {opt}
-                </button>
+                  chosen={selected === idx}
+                  label={<span className="inline-flex items-center gap-2">{opt}{selected !== null && idx === q.correctIndex ? <AnswerTick /> : null}</span>}
+                />
               ))}
-            </div>
+            </AnswerGroup>
 
-            {/* Feedback */}
+            {/* Feedback: a line in ink (the tick when it is the exact term) */}
             <AnimatePresence>
               {wasCorrect === true && (
-                <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}
-                  className="p-3 bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/40 rounded-xl text-center">
-                  <p className="text-xs text-emerald-700 dark:text-emerald-300">
+                <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}>
+                  <AnswerLine>
                     Correct — this is the exact term the examiner is looking for.
-                  </p>
+                  </AnswerLine>
                 </MotionDiv>
               )}
               {wasCorrect === false && (
-                <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}
-                  className="p-3 bg-rose-50 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-800/40 rounded-xl text-center">
-                  <p className="text-xs text-rose-700 dark:text-rose-300">
+                <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}>
+                  <AnswerLine tone="note">
                     Close, but the marking scheme specifically requires <strong>{q.options[q.correctIndex]}</strong>.
-                  </p>
+                  </AnswerLine>
                 </MotionDiv>
               )}
             </AnimatePresence>
@@ -413,21 +389,20 @@ const KeywordPrecisionTester = () => {
         </AnimatePresence>
       ) : (
         <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
-          className="p-6 bg-emerald-50 dark:bg-emerald-950/20 rounded-xl border border-emerald-200 dark:border-emerald-800/40 text-center">
-          <p className="text-4xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">{score}/{questions.length}</p>
-          <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-300 mb-3">{resultMessage}</p>
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="px-3 py-1 rounded-full bg-white dark:bg-surface-soft text-xs font-bold text-zinc-600 dark:text-zinc-300">
+          className="ex-result">
+          <p className="ex-result-name">{score}/{questions.length}</p>
+          <AnswerLine tone={score >= 9 ? 'ok' : 'note'}>{resultMessage}</AnswerLine>
+          <p className="ui-readout text-ink-secondary">
               Best Streak: {bestStreak}
-            </span>
+          </p>
+          <div className="ex-actions">
+            <Button onClick={handlePlayAgain}>
+              Play Again
+            </Button>
           </div>
-          <button onClick={handlePlayAgain}
-            className="px-5 py-2.5 text-sm font-bold rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition-colors">
-            Play Again
-          </button>
         </MotionDiv>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 

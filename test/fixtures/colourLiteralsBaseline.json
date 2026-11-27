@@ -22,10 +22,6 @@
   "components/AppRouter.tsx": {
    "hex": 6
   },
-  "components/AppliedSciencesModule.tsx": {
-   "hex": 22,
-   "zinc/neutral-9xx surface": 2
-  },
   "components/AuthActionCard.tsx": {
    "hex": 8,
    "rgb(": 4
@@ -98,12 +94,6 @@
    "hex": 2,
    "tailwind [#…]": 10
   },
-  "components/EmotionalIntelligenceModule.tsx": {
-   "rgb(": 2
-  },
-  "components/ExamHallStrategiesModule.tsx": {
-   "rgb(": 2
-  },
   "components/ExamReps/SubjectPicker.tsx": {
    "hex": 9,
    "tailwind [#…]": 7
@@ -158,14 +148,10 @@
    "tailwind [#…]": 4
   },
   "components/LanguageMasteryModule.tsx": {
-   "hex": 15
+   "hex": 7
   },
   "components/LaunchpadGuidance.tsx": {
    "tailwind [#…]": 1
-  },
-  "components/LearningMathModule.tsx": {
-   "hex": 116,
-   "zinc/neutral-9xx surface": 2
   },
   "components/Library.tsx": {
    "tailwind [#…]": 1,
@@ -233,20 +219,8 @@
   "components/MarkBank/physical-education-rubric.css": {
    "hex": 2
   },
-  "components/MasteringBusinessModule.tsx": {
-   "hex": 30
-  },
-  "components/MasteringEnglishModule.tsx": {
-   "hex": 2
-  },
   "components/MasteringTheCreativesModule.tsx": {
-   "hex": 10
-  },
-  "components/MasteringTheHumanitiesModule.tsx": {
-   "hex": 6
-  },
-  "components/MasteringTheSciencesModule.tsx": {
-   "hex": 28
+   "hex": 8
   },
   "components/MountainLandscape.tsx": {
    "hex": 9
@@ -419,9 +393,6 @@
   "components/SectionCard.tsx": {
    "hex": 1,
    "tailwind [#…]": 2
-  },
-  "components/SelfEfficacyModule.tsx": {
-   "hex": 1
   },
   "components/ShortcutsOverlay.tsx": {
    "hex": 3
@@ -734,7 +705,7 @@
    "tailwind [#…]": 1
   },
   "components/learning/module-brand-review.css": {
-   "hex": 87
+   "hex": 86
   },
   "components/learning/module-reader-preview.css": {
    "hex": 3

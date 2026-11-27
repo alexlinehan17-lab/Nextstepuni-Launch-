@@ -38,23 +38,11 @@
   "components/AdminProgrammePanel.tsx": {
    "button": 3
   },
-  "components/AffirmingValuesModule.tsx": {
-   "button": 4
-  },
-  "components/AgencyProtocolModule.tsx": {
-   "button": 2
-  },
   "components/AnswerArchitect/AnswerArchitect.tsx": {
    "button": 2
   },
-  "components/AnswerEngineeringModule.tsx": {
-   "button": 11
-  },
   "components/AppRouter.tsx": {
    "button": 4
-  },
-  "components/AppliedSciencesModule.tsx": {
-   "button": 1
   },
   "components/AuthActionCard.tsx": {
    "button": 2
@@ -65,17 +53,11 @@
   "components/CareerPaths.tsx": {
    "button": 13
   },
-  "components/CatastrophicThinkingModule.tsx": {
-   "button": 7
-  },
   "components/CatchUpLane/Comeback.tsx": {
    "button": 16
   },
   "components/CatchUpLane/index.tsx": {
    "button": 8
-  },
-  "components/CognitiveEnduranceModule.tsx": {
-   "button": 1
   },
   "components/CollegeCompass.tsx": {
    "button": 12,
@@ -93,9 +75,6 @@
   },
   "components/CommandWordReflex/index.tsx": {
    "button": 4
-  },
-  "components/ControllableVariablesModule.tsx": {
-   "button": 7
   },
   "components/CourseworkCompanion/CourseworkCompanion.tsx": {
    "button": 2
@@ -121,25 +100,13 @@
    "button": 3
   },
   "components/DigitalDistractionModule.tsx": {
-   "button": 2
+   "button": 1
   },
   "components/EffectiveStruggleAndGrowthModule.tsx": {
-   "button": 7
-  },
-  "components/ElaborativeInterrogationModule.tsx": {
-   "button": 4
-  },
-  "components/EmotionalIntelligenceModule.tsx": {
-   "button": 6
+   "button": 1
   },
   "components/ErrorBoundary.tsx": {
    "button": 2
-  },
-  "components/ExamCrisisManagementModule.tsx": {
-   "button": 3
-  },
-  "components/ExamHallStrategiesModule.tsx": {
-   "button": 9
   },
   "components/ExamReps/SubjectPicker.tsx": {
    "button": 4
@@ -173,17 +140,8 @@
    "button": 11,
    "pop-up": 1
   },
-  "components/GameDayModule.tsx": {
-   "button": 7
-  },
-  "components/HopeProtocolModule.tsx": {
-   "button": 5
-  },
   "components/HowTheyDidIt/index.tsx": {
    "button": 10
-  },
-  "components/IllusionOfCompetenceModule.tsx": {
-   "button": 1
   },
   "components/InnovationZone.tsx": {
    "button": 3
@@ -194,25 +152,13 @@
   "components/JourneyPointsGuide.tsx": {
    "button": 1
   },
-  "components/LanguageMasteryModule.tsx": {
-   "button": 2
-  },
   "components/LaunchpadGuidance.tsx": {
    "button": 17,
    "dropdown": 1,
    "pop-up": 2
   },
-  "components/LearningMathModule.tsx": {
-   "button": 13
-  },
-  "components/LeavingCertStrategyModule.tsx": {
-   "button": 5
-  },
   "components/Library.tsx": {
    "button": 12
-  },
-  "components/LinkingStudyFutureGoalsModule.tsx": {
-   "button": 2
   },
   "components/ListeningStudio/StudioSitting.tsx": {
    "button": 15,
@@ -297,44 +243,19 @@
    "button": 10
   },
   "components/MarkingSchemeDecoderModule.tsx": {
-   "button": 8
-  },
-  "components/MasteringActiveRecallModule.tsx": {
    "button": 1
   },
-  "components/MasteringBusinessModule.tsx": {
-   "button": 4
-  },
-  "components/MasteringEnglishModule.tsx": {
+  "components/MasteringInterleavingModule.tsx": {
    "button": 3
   },
-  "components/MasteringInterleavingModule.tsx": {
-   "button": 9
-  },
   "components/MasteringSpacedRepetitionModule.tsx": {
-   "button": 3,
    "dropdown": 1
-  },
-  "components/MasteringTheCreativesModule.tsx": {
-   "button": 2
-  },
-  "components/MasteringTheHumanitiesModule.tsx": {
-   "button": 2
-  },
-  "components/MasteringTheSciencesModule.tsx": {
-   "button": 5
-  },
-  "components/MentalModellingModule.tsx": {
-   "button": 4
   },
   "components/ModuleCompleteScreen.tsx": {
    "pop-up": 1
   },
   "components/ModuleShared.tsx": {
-   "button": 2
-  },
-  "components/NeuroplasticityProtocolModule.tsx": {
-   "button": 7
+   "button": 1
   },
   "components/NorthStarOnboarding.tsx": {
    "button": 4
@@ -428,14 +349,10 @@
    "button": 11
   },
   "components/PointsOptimizationModule.tsx": {
-   "button": 10,
-   "dropdown": 5
+   "dropdown": 1
   },
   "components/PointsPassport.tsx": {
    "button": 17
-  },
-  "components/ProcrastinationModule.tsx": {
-   "button": 3
   },
   "components/RankUpModal.tsx": {
    "button": 3,
@@ -446,7 +363,7 @@
    "pop-up": 2
   },
   "components/ReframingProgressModule.tsx": {
-   "button": 4
+   "button": 3
   },
   "components/ResetPasswordPage.tsx": {
    "button": 3
@@ -457,12 +374,6 @@
   "components/ResumeCard.tsx": {
    "button": 3
   },
-  "components/ReverseEngineeringModule.tsx": {
-   "button": 1
-  },
-  "components/SelfEfficacyModule.tsx": {
-   "button": 3
-  },
   "components/SettingsModal.tsx": {
    "button": 2
   },
@@ -471,7 +382,6 @@
    "pop-up": 1
   },
   "components/StrategicAdvantageModule.tsx": {
-   "button": 3,
    "dropdown": 1
   },
   "components/StreakCelebration.tsx": {
@@ -494,41 +404,11 @@
   "components/SubjectOnboarding.tsx": {
    "button": 1
   },
-  "components/TheAutodidactsEngineModule.tsx": {
-   "button": 6
-  },
-  "components/TheCognitiveArchitectureModule.tsx": {
-   "button": 8
-  },
-  "components/TheCognitiveLoadModule.tsx": {
-   "button": 4
-  },
   "components/TheContextEffectModule.tsx": {
-   "button": 9
-  },
-  "components/TheGrammarOfGritModule.tsx": {
-   "button": 6
-  },
-  "components/TheImplementationProtocolModule.tsx": {
-   "button": 2
-  },
-  "components/TheLearningRadarModule.tsx": {
-   "button": 14
-  },
-  "components/TheMyelinManualModule.tsx": {
-   "button": 2
-  },
-  "components/ThePowerOfYetModule.tsx": {
    "button": 1
   },
-  "components/ThePraiseProtocolModule.tsx": {
-   "button": 11
-  },
-  "components/TheScienceOfMakingMistakesModule.tsx": {
-   "button": 10
-  },
-  "components/TheTeachingEffectModule.tsx": {
-   "button": 3
+  "components/TheLearningRadarModule.tsx": {
+   "button": 1
   },
   "components/Toast.tsx": {
    "button": 1
@@ -712,9 +592,6 @@
   "components/learning/DefinitionPopover.tsx": {
    "button": 1,
    "pop-up": 1
-  },
-  "components/learning/PrivateDraftControls.tsx": {
-   "button": 2
   },
   "components/learning/ResponseSaveStatus.tsx": {
    "button": 1
