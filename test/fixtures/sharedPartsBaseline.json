@@ -79,11 +79,9 @@
    "button": 2
   },
   "components/CourseworkStudio/CourseworkStudio.tsx": {
-   "button": 6,
    "dropdown": 6
   },
   "components/CourseworkStudio/CourseworkSupport.tsx": {
-   "button": 9,
    "dropdown": 1
   },
   "components/CrewEmptyState.tsx": {

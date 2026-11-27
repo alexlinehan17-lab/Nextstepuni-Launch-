@@ -5,6 +5,8 @@ import CourseworkStudio from '../components/CourseworkStudio/CourseworkStudio';
 import { courseworkDemo } from '../components/CourseworkStudio/demo';
 import { emptyWorkspace, type CourseworkWorkspace } from '../components/CourseworkStudio/model';
 import type { CourseworkStore } from '../components/CourseworkStudio/store';
+// The six views are one menu now (area 7b, board c-tools2-coursework: "Overview 1 of 6"), not six tabs.
+const openView=async(name:string|RegExp)=>{fireEvent.click(screen.getByRole('button',{name:/Coursework workspace views/}));fireEvent.click(await screen.findByRole('menuitemradio',{name}));};
 function memoryStore(value:CourseworkWorkspace=courseworkDemo()):CourseworkStore {
   let saved=structuredClone(value);
   return {load:vi.fn(async()=>structuredClone(saved)),save:vi.fn(async(_owner,next)=>{saved={...structuredClone(next),revision:saved.revision+1};return saved;})};
@@ -42,14 +44,14 @@ describe('Coursework Studio working flows',()=>{
     fireEvent.change(screen.getByLabelText('Project name'),{target:{value:'My fieldwork'}});
     fireEvent.click(screen.getByRole('button',{name:'Create my workspace'}));
     await screen.findByRole('heading',{name:'My fieldwork'});
-    fireEvent.click(screen.getByRole('tab',{name:'Brief'}));
+    await openView('Brief');
     expect(await screen.findByText(/2028: 40% Applied Geography Project/)).toBeInTheDocument();
   });
   test('review drafts survive tab navigation and can be saved later',async()=>{
     const store=memoryStore();render(<CourseworkStudio uid="student1" storage={store}/>);await screen.findByRole('heading',{name:'The changing working day'});
-    fireEvent.click(screen.getByRole('tab',{name:'Review'}));
+    await openView('Review');
     fireEvent.change(screen.getByLabelText('What changed in my thinking? What will I ask my teacher?'),{target:{value:'I need to check my assumptions.'}});
-    fireEvent.click(screen.getByRole('tab',{name:'Overview'}));fireEvent.click(screen.getByRole('tab',{name:'Review'}));
+    await openView('Overview');await openView('Review');
     expect(screen.getByLabelText('What changed in my thinking? What will I ask my teacher?')).toHaveValue('I need to check my assumptions.');
     fireEvent.click(screen.getByRole('button',{name:'Save review notes'}));
     await waitFor(()=>expect(store.save).toHaveBeenCalled());
