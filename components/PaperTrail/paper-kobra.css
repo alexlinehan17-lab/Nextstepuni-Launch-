@@ -91,8 +91,8 @@
 .pt-saved .pt-title { font-family: var(--font-ui); font-size: 29px; font-weight: 400; line-height: 33px; letter-spacing: -0.04em; }
 .pt-saved .pt-page-intro { color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
 .pt-saved .pt-section-heading { font-family: var(--font-ui); font-size: 21px; font-weight: 400; line-height: 26px; letter-spacing: -0.03em; }
-.pt-saved .pt-saved-row .pt-saved-title { font-weight: 400; font-size: 16px; }
-.pt-saved .pt-save[aria-pressed='true'] { color: var(--ink-primary); }
+/* Saved papers: the shared rows (each opens its paper), the bookmark beside each row (area 6c). */
+.pt-saved .ui-list { margin-top: var(--space-2); }
 
 /* A laptop: the block at the left, centred in the height of the page; the papers or the subjects beside it. */
 @media (min-width: 1024px) {
@@ -117,3 +117,10 @@
 @media (prefers-reduced-motion: reduce) {
   .ui-press.pt-cover-btn { transition: none; }
 }
+/* A paper's recording (FrenchPaperAudio): Mark Bank's player on the page's own surface (area 6c). */
+.pt-recording { padding: 0 var(--space-3) var(--space-3); color: var(--ink-primary); }
+/* The milestone celebration (area 6c): the shared Sheet; the burst falls once over the top. */
+.pt-milestone-burst { z-index: calc(var(--z-dialog) + 1); width: 100%; height: 100%; pointer-events: none; }
+.pt-milestone .ui-sheet-body > :is(p, h2) { margin: 0; }
+.pt-milestone-label { color: var(--ink-muted); }
+.pt-milestone-title { color: var(--ink-primary); }

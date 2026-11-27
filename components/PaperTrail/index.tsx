@@ -27,7 +27,8 @@ import { useBackStep } from '../../contexts/NavigationContext';
 import PaperSelection, { LEVEL_LABEL, paperLabel, type YearCell } from './PaperSelection';
 import KobraScope from '../approved-ui-runtime';
 import { PaperSubjects, PaperSubjectArtwork, PaperSubjectFinder } from './PaperSubjects';
-import { TextButton } from '../ui/Button';
+import { IconButton, TextButton } from '../ui/Button';
+import { List, Row } from '../ui/List';
 import './paper-kobra.css';
 import './archive.css';
 import { baseName, displayName } from '../shared/subjectNames';
@@ -852,20 +853,19 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       const saved = isPinned(uid, r.key);
       const position = state.recents.find(p => p.key === r.key);
       const page = r.kind === 'scheme' ? position?.schemePage : position?.paperPage;
-      return <article key={r.key} className="pt-saved-row">
-        <button onClick={() => openStoredRef(r)}>
-          <span className="pt-saved-title">{subjectLabelForId(r.subjectId)} · {r.label}</span>
-          <span>{r.year} · {LEVEL_LABEL[r.level]} level · {r.lang === 'ev' ? 'English' : 'Gaeilge'}{r.kind === 'scheme' ? ' · Marking scheme' : ''}{page && page > 1 ? ` · Page ${page}` : ''}</span>
-        </button>
-        <button className="pt-save" onClick={() => handleTogglePin(r)} aria-pressed={saved} aria-label={`${saved ? 'Remove saved' : 'Save'} ${subjectLabelForId(r.subjectId)} ${r.year} ${r.label}`}><Bookmark size={20} fill={saved ? 'currentColor' : 'none'} aria-hidden /></button>
-      </article>;
+      // A row that opens the paper, with its bookmark beside it (never inside it).
+      return <Row key={r.key} className="pt-saved-row" onPress={() => openStoredRef(r)}
+        title={`${subjectLabelForId(r.subjectId)} · ${r.label}`}
+        meta={`${r.year} · ${LEVEL_LABEL[r.level]} level · ${r.lang === 'ev' ? 'English' : 'Gaeilge'}${r.kind === 'scheme' ? ' · Marking scheme' : ''}${page && page > 1 ? ` · Page ${page}` : ''}`}
+        end={<IconButton className="pt-saved-mark" onClick={() => handleTogglePin(r)} aria-pressed={saved} label={`${saved ? 'Remove saved' : 'Save'} ${subjectLabelForId(r.subjectId)} ${r.year} ${r.label}`}
+          icon={<Bookmark className="ui-icon" width={20} height={20} strokeWidth={1.75} fill={saved ? 'currentColor' : 'none'} aria-hidden="true" focusable="false" />} />} />;
     };
     return <section className="pt-archive pt-saved">
       <h1 className="pt-title">Saved papers</h1>
       <p className="pt-page-intro">Your papers, ready when you are.</p>
-      {pins.length ? pins.map(row) : <p className="pt-notice">Tap the bookmark beside a paper to save it here.</p>}
+      {pins.length ? <List label="Saved papers">{pins.map(row)}</List> : <p className="pt-notice">Tap the bookmark beside a paper to save it here.</p>}
       <h2 className="pt-section-heading">Recently opened</h2>
-      {recents.length ? recents.map(row) : <p className="pt-notice">Papers you open will appear here so you can pick up where you left off.</p>}
+      {recents.length ? <List label="Recently opened">{recents.map(row)}</List> : <p className="pt-notice">Papers you open will appear here so you can pick up where you left off.</p>}
     </section>;
   }
 
