@@ -94,7 +94,7 @@
 .mb-practice .mb-p-waysin { margin-top: var(--space-2); }
 
 /* The scheme, under your answer. */
-.mb-practice .mb-scheme-reveal { margin-top: var(--space-8); }
+.mb-practice .mb-scheme-reveal { margin-top: var(--space-8); scroll-margin-top: var(--space-6); }
 .mb-practice .mb-scheme-sheet > .mb-scheme-reveal > fieldset { padding: 0 !important; }
 .mb-practice .mb-scheme-head { padding: 0 0 2px !important; gap: var(--space-3); }
 .mb-practice .mb-scheme-head > span { color: var(--ink-muted) !important; font: 400 11px/14px var(--font-ui) !important; letter-spacing: 0.1em !important; }
@@ -169,12 +169,17 @@
   }
   .mb-practice .mb-paper-session .mb-session-workspace[data-focus="true"] { grid-template-columns: minmax(0, 1fr); }
   /* The progress strip stays under the bar (board mark-bank-laptop-6), on the white page so the
-     work scrolls cleanly beneath it; the question sits below it with the strip's own air
-     (28px), never against the bar. --mb-prog-h is the strip's height: 22 + 14 + 8 + 4 + 28. */
-  .mb-practice { --mb-prog-h: 76px; }
-  .mb-p-progress { position: sticky; top: 0; z-index: 2; align-self: start; grid-column: 1 / -1; padding: 22px 0 28px; background: var(--surface-canvas); }
+     work scrolls cleanly beneath it, and the sticky question sits the standard gap (24px) under
+     the strip, never against it or the bar. --mb-prog-h is the strip's height: 22 + 14 + 8 + 4 + 4;
+     the gap is the grid's row gap, so at rest nothing moves. */
+  .mb-practice { --mb-prog-h: 52px; }
+  .mb-practice .mb-paper-session .mb-session-workspace { row-gap: var(--space-6) !important; }
+  .mb-p-progress { position: sticky; top: 0; z-index: 2; align-self: start; grid-column: 1 / -1; padding: 22px 0 4px; background: var(--surface-canvas); }
+  /* Once the work scrolls under the strip, a hairline at its foot, as a bar has (drawn as a shadow so
+     the strip's height, and the question's place under it, never change). */
+  .mb-p-progress[data-under] { box-shadow: 0 1px 0 var(--hairline); }
   /* Beats the old dialog sheet's static pane (mark-bank-session-paper.css, 0,3,0 !important). */
-  .mb-practice .mb-paper-session .mb-session-workspace > [data-testid="mark-bank-question-pane"] { position: sticky !important; top: var(--mb-prog-h) !important; }
+  .mb-practice .mb-paper-session .mb-session-workspace > [data-testid="mark-bank-question-pane"] { position: sticky !important; top: calc(var(--mb-prog-h) + var(--space-6)) !important; }
   .mb-practice .mb-paper-session .mb-scheme-pane { margin-top: 0 !important; }
   .mb-practice .mb-paper-draft textarea { min-height: 220px; }
   .mb-practice .mb-reveal-area, .mb-practice .mb-grade-area { padding: 0 max(var(--space-6), calc((100% - var(--mb-col)) / 2)) !important; }

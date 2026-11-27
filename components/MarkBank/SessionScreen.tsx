@@ -2805,6 +2805,21 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     requestAnimationFrame(() => (leaveButtonRef.current ?? practiceRef.current?.querySelector<HTMLElement>('[aria-label="Close practice"]'))?.focus());
   }, []);
 
+  // The practice card's bar gains its hairline once the work has scrolled under it, as every
+  // page's bar does (tokens.md, "Bars"); a new card starts at the top, unruled.
+  const [underBar, setUnderBar] = useState(false);
+  useEffect(() => { setUnderBar(false); }, [card?.id]);
+  // On a phone the agreed card opens the scheme scrolled to it (board r5-c2), landing the
+  // standard gap under the bar (scroll-margin-top in practice-card.css).
+  useEffect(() => {
+    if (!paperLayout || embedded || !phone || !revealed || revisit) return undefined;
+    const frame = requestAnimationFrame(() => {
+      practiceRef.current?.querySelector<HTMLElement>('.mb-scheme-reveal')
+        ?.scrollIntoView?.({ block: 'start', behavior: reduced ? 'auto' : 'smooth' });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [paperLayout, embedded, phone, revealed, revisit, reduced, card?.id]);
+
 
   if (!card || !assessmentCard) return null;
 
@@ -2869,7 +2884,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         {/* The practice card's one bar (c-markbank-practice, r5-mark-bank): Close at the top
             left, Mark Bank over the subject. On a laptop, Expand folds the sidebar away and
             Contract brings it back; a phone has no Expand: the card already fills the screen. */}
-        <TopBar tool ruled={!phone} className="mb-practice-bar" leave={{ kind: 'close', onPress: openExitConfirmation, label: 'Close practice' }}
+        <TopBar tool ruled={!phone || underBar} className="mb-practice-bar" leave={{ kind: 'close', onPress: openExitConfirmation, label: 'Close practice' }}
           over="Mark Bank" title={subjectLabel}
           action={phone ? undefined : <UiButton size="sm" aria-label={expanded ? 'Contract to compact view' : 'Expand to full screen'} aria-pressed={expanded}
             onClick={() => setExpanded(value => !value)}><Glyph icon={expanded ? Minimize2 : Maximize2} size={16} />{expanded ? 'Contract' : 'Expand'}</UiButton>} />
@@ -2951,6 +2966,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         key={listeningKey ?? card.id}
         className={embedded ? undefined : 'mb-card-in mb-session-workspace'}
         data-focus={waysInFocusMode}
+        onScroll={paperLayout && !embedded ? event => {
+          const under = event.currentTarget.scrollTop > 4;
+          setUnderBar(previous => (previous === under ? previous : under));
+        } : undefined}
         style={embedded ? undefined : {
           maxWidth: waysInFocusMode ? COLUMN : wide ? SURFACE : COLUMN,
           margin: '0 auto', padding: '38px 16px 0',
@@ -2962,7 +2981,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         const shownTotal = studyReview ? queue.length : exerciseTotal;
         const now = studyReview ? position + 1 : Math.min(distinctDone + 1, exerciseTotal);
         return (
-          <div className="mb-p-progress">
+          <div className="mb-p-progress" data-under={underBar || undefined}>
             <h2 ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined} className="mb-p-progress-label">
               <span>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</span>{' '}
               <span className="mb-p-progress-count">· {now} / {shownTotal}</span>
