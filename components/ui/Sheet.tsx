@@ -102,12 +102,16 @@ export interface SheetProps {
   /** A quiet word at the right of the head that says how things stand ("Saved" on a module's
    *  Notes, which save as you type). Not a button; ignored when there is a `save`. */
   status?: ReactNode;
+  /** Controls at the right of the head that move through what the sheet shows (the marking
+   *  scheme's previous and next question): IconButtons, each 44 x 44. Close stays at the top
+   *  left. Ignored when there is a `save`; takes the place of `status`. */
+  actions?: ReactNode;
   /** start: the title sits at the left beside Close (a module's Contents and Notes). */
   titleAlign?: 'center' | 'start';
   className?: string;
 }
 
-export function Sheet({ open, onClose, title, titleSize = 'heading', hideTitle = false, save, footer, children, closeLabel = 'Close', art, meta, bare = false, dim = true, plain = false, status, titleAlign = 'center', className = '' }: SheetProps) {
+export function Sheet({ open, onClose, title, titleSize = 'heading', hideTitle = false, save, footer, children, closeLabel = 'Close', art, meta, bare = false, dim = true, plain = false, status, actions, titleAlign = 'center', className = '' }: SheetProps) {
   const lead = art !== undefined || meta !== undefined;
   const phase = usePresence(open, SHEET_LEAVE_MS);
   const panel = useRef<HTMLDivElement>(null);
@@ -172,6 +176,7 @@ export function Sheet({ open, onClose, title, titleSize = 'heading', hideTitle =
               <h2 id={titleId} className={`ui-sheet-title${titleSize === 'small' ? ' ui-sheet-title--small' : ''}${hideTitle ? ' sr-only' : ''}`}>{title}</h2>
               {save
                 ? <button type="button" className="ui-sheet-text ui-sheet-text--strong" onClick={save.onPress}>{save.label}</button>
+                : actions ? <span className="ui-sheet-actions">{actions}</span>
                 : status ? <span className="ui-sheet-status">{status}</span> : <span aria-hidden="true" />}
             </div>
             )}

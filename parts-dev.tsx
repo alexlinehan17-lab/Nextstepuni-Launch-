@@ -22,7 +22,7 @@ import React, { useRef, useState, type ReactNode } from 'react';
 import { createRoot } from 'react-dom/client';
 // The app loads its global stylesheet first and the parts after it; so does this page.
 import './index.css';
-import { ChartNoAxesColumn, ChevronLeft, Compass, Ellipsis, House, Map, Search, SlidersHorizontal, Timer } from 'lucide-react';
+import { Bookmark, ChartNoAxesColumn, ChevronLeft, ChevronRight, Compass, Ellipsis, House, Map, Search, SlidersHorizontal, Timer } from 'lucide-react';
 import IllustrationTheme from './components/IllustrationTheme';
 import { Arrow, Button, Glyph, IconButton, TextButton } from './components/ui/Button';
 import { ChoiceGroup, SelectionBar, SelectionMark, SelectionWords, Switch } from './components/ui/Choice';
@@ -293,6 +293,7 @@ function OverSection() {
           <Button onClick={() => setOpen('plain')}>Plain sheet (Finish for now)</Button>
           <Button onClick={() => setOpen('card')}>Sheet with its own headline (a tile's card)</Button>
           <Button onClick={() => setOpen('notes')}>Sheet with its title at the left and a status (a module's Notes)</Button>
+          <Button onClick={() => setOpen('steps')}>Sheet with controls in its head (a marking scheme)</Button>
           <Button onClick={() => setOpen('confirm')}>Confirm</Button>
           <Button onClick={() => showMessage('Saved to your plan', { action: { label: 'Undo', onPress: () => {} } })}>Toast</Button>
         </Line>
@@ -335,11 +336,37 @@ function OverSection() {
       <Sheet open={open === 'notes'} titleAlign="start" titleSize="small" status="Saved" title="Notes" onClose={close}>
         <p className="t-sub">titleAlign start: the title sits at the left beside Close. status: a quiet word at the right of the head that says how things stand; notes save as you type, so there is no Done.</p>
       </Sheet>
+      <Sheet open={open === 'steps'} titleAlign="start" title="Question 3 · marking scheme" onClose={close}
+        actions={<><IconButton label="Previous question’s marking scheme" icon={<Glyph icon={ChevronLeft} />} /><IconButton label="Next question’s marking scheme" icon={<Glyph icon={ChevronRight} />} /></>}>
+        <p className="t-sub">actions: controls at the right of the head that move through what the sheet shows (previous and next question). Close stays at the top left.</p>
+      </Sheet>
       <Confirm open={open === 'confirm'} sentence="Delete your account?"
         detail="Everything you have studied, planned and saved is erased and cannot be brought back."
         keepLabel="Keep my account" onKeep={close} dangerLabel="Delete account" onDanger={close} />
     </Section>
   );
+}
+
+function RowEndDemo() {
+  const [saved, setSaved] = useState(true);
+  return <List label="Saved papers"><Row title="Accounting · Exam Paper" meta="2025 · Higher level · English" onPress={() => {}}
+    end={<IconButton label={`${saved ? 'Remove saved' : 'Save'} Accounting 2025 Exam Paper`} aria-pressed={saved} onClick={() => setSaved(v => !v)}
+      icon={<Bookmark className="ui-icon" width={20} height={20} strokeWidth={1.75} fill={saved ? 'currentColor' : 'none'} aria-hidden="true" focusable="false" />} />} /></List>;
+}
+
+function CompactChoiceDemo() {
+  const [score, setScore] = useState<number | null>(50);
+  const [gap, setGap] = useState<string | null>('process');
+  return <div className="flex flex-col gap-2" style={{ maxWidth: 342 }}>
+    <div className="grid grid-cols-5 gap-2" role="group" aria-label="How did you do against the scheme?">
+      {[{ v: 0, l: 'Blank' }, { v: 25, l: 'Some' }, { v: 50, l: 'Half' }, { v: 75, l: 'Most' }, { v: 100, l: 'Full' }].map(b =>
+        <ChoiceTile key={b.v} compact kind="toggle" chosen={score === b.v} label={b.l} onClick={() => setScore(b.v)} />)}
+    </div>
+    <div className="grid grid-cols-2 gap-2" role="group" aria-label="What went wrong?">
+      {[{ k: 'content', l: 'Didn’t know it' }, { k: 'process', l: 'Wrong method' }, { k: 'careless', l: 'Careless slip' }, { k: 'timing', l: 'Ran out of time' }].map(g =>
+        <ChoiceTile key={g.k} compact kind="toggle" chosen={gap === g.k} label={g.l} onClick={() => setGap(gap === g.k ? null : g.k)} />)}
+    </div>
+  </div>;
 }
 
 function CheckRowDemo() {
@@ -372,6 +399,12 @@ function BarsSection() {
       </Spec>
       <Spec label="A row you tick" caption="CheckRow: the whole row is the checkbox, with the screen's own mark (Time's up: the session's dotted ring).">
         <CheckRowDemo />
+      </Spec>
+      <Spec label="A row with a control beside it" caption="Row end: the row opens something (a saved paper), and a separate control sits beside it on the same ruled line, never inside the row's button (its bookmark).">
+        <RowEndDemo />
+      </Spec>
+      <Spec label="Short choices in a row" caption="ChoiceTile compact (self-mark in the paper viewer: Blank to Full, then why marks were lost): 44px, the words centred; chosen, the ink outline and the tick drawn before the words.">
+        <CompactChoiceDemo />
       </Spec>
       <Spec label="An over-screen with its own controls, on a phone" caption="below: a second row inside the bar, under the name (the paper viewer: Paper or Scheme beside its Answers switch).">
         <div className="border border-dashed border-outline-soft"><TopBar ruled leave={{ kind: 'close', onPress: () => {}, label: 'Close viewer' }} over="2025 · Higher · Exam Paper" title="Physics"

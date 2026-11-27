@@ -201,6 +201,13 @@
 .ui-choice--tile { flex-direction: column; align-items: flex-start; gap: 6px; min-height: 88px; padding: 14px; }
 .ui-choice--tile > .ui-mark { position: absolute; top: 14px; right: 14px; }
 .ui-choice--tile .ui-choice-body { padding-right: 30px; }
+/* Short choices in a row (ChoiceTile compact: self-mark's Blank to Full): 44px, the words
+   centred; chosen, the same ink outline and the tick drawn before the words, with no ring. */
+.ui-choice--compact { justify-content: center; gap: var(--space-1); min-width: 0; min-height: 44px; padding: 0 var(--space-1); text-align: center; }
+.ui-choice--compact > .ui-choice-label { overflow: hidden; font-size: 14px; line-height: 18px; letter-spacing: 0; text-overflow: ellipsis; white-space: nowrap; }
+.ui-choice--compact > .ui-mark { display: none; width: 14px; height: 14px; margin: 0; border: 0; border-radius: 0; background: none; }
+.ui-choice--compact > .ui-mark--on { display: grid; }
+.ui-choice--compact > .ui-mark svg { width: 14px; height: 14px; stroke: var(--ink-primary); stroke-width: 2.2; }
 .ui-choices-group { display: flex; flex-direction: column; gap: var(--space-3); }
 .ui-choices { display: flex; flex-direction: column; gap: var(--space-2); }
 .ui-choices--tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); }
@@ -495,6 +502,8 @@
 /* A quiet word at the right of the head ("Saved"), and a head whose title sits at the left beside Close. */
 .ui-sheet-status { padding: 0 var(--space-3); color: var(--ink-muted); font-size: 15px; line-height: 21px; white-space: nowrap; }
 .ui-sheet-head--start { grid-template-columns: 44px minmax(0, 1fr) auto; column-gap: var(--space-1); }
+/* Controls at the right of the head (the marking scheme's previous and next question). */
+.ui-sheet-actions { display: flex; align-items: center; }
 .ui-sheet-head--start > .ui-sheet-title { justify-self: start; text-align: left; }
 .ui-sheet-body {
   display: flex;
@@ -797,6 +806,10 @@ span.ui-row-art > * { display: block; width: 100%; height: 100%; }
 .ui-row.ui-row--select { padding: 10px var(--space-3); border: 1px solid transparent; border-bottom-color: var(--hairline); border-radius: 0; }
 .ui-row.ui-row--select[aria-pressed='true'] { border-color: var(--ink-primary); border-radius: var(--r-ctl); box-shadow: inset 0 0 0 1px var(--ink-primary), var(--lift-ctl); }
 .ui-row-icon { display: flex; flex: none; color: var(--ink-secondary); }
+/* A control beside a row that opens something (Row `end`): one ruled line, two targets. */
+.ui-row-item--end { display: flex; align-items: center; gap: var(--space-1); border-bottom: 1px solid var(--hairline); }
+.ui-row-item--end > .ui-row { flex: 1; min-width: 0; border-bottom: 0; }
+.ui-row-end { display: flex; flex: none; align-items: center; }
 .ui-row-icon > svg { width: 20px; height: 20px; }
 .ui-row--danger, .ui-row--danger .ui-row-icon { color: var(--danger-tint-ink); }
 

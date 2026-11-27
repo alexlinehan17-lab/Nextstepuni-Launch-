@@ -63,6 +63,10 @@ export interface ChoiceTileProps extends Omit<React.ButtonHTMLAttributes<HTMLBut
    *  black. Don't like the dark green text"); `plain` is a quieter line with no tick. */
   note?: ReactNode;
   noteTone?: 'ok' | 'plain';
+  /** Short choices in a row (self-mark's Blank to Full, why marks were lost): 44px tall, the
+   *  words centred, no ring until chosen, then the ink outline and the tick drawn before the
+   *  words. Not with `art`, `meta`, `note` or `tile`. */
+  compact?: boolean;
 }
 
 /** The green tick that sits beside an answer line: the only green on an answer. */
@@ -76,9 +80,25 @@ export function AnswerTick({ className = '' }: { className?: string }) {
 
 /** One choice: an outlined tile before it is touched; chosen, an ink outline. */
 export const ChoiceTile = React.forwardRef<HTMLButtonElement, ChoiceTileProps>(function ChoiceTile(
-  { chosen, kind = 'one', tile = false, label, meta, art, note, noteTone = 'ok', className = '', type = 'button', ...props },
+  { chosen, kind = 'one', tile = false, label, meta, art, note, noteTone = 'ok', compact = false, className = '', type = 'button', ...props },
   ref,
 ) {
+  if (compact) {
+    return (
+      <button
+        {...props}
+        ref={ref}
+        type={type}
+        role={kind === 'one' ? 'radio' : kind === 'several' ? 'checkbox' : undefined}
+        aria-checked={kind === 'toggle' ? undefined : chosen}
+        aria-pressed={kind === 'toggle' ? chosen : undefined}
+        className={`ui-part ui-choice ui-choice--compact ${className}`.trim()}
+      >
+        <SelectionMark on={chosen} shape={kind === 'several' ? 'square' : 'round'} />
+        <span className="ui-choice-label">{label}</span>
+      </button>
+    );
+  }
   return (
     <button
       {...props}

@@ -75,10 +75,13 @@ export interface RowProps {
   /** One row of a list chosen in place, its detail beside the list (a laptop's topics with the
    *  chosen topic at the right): aria-pressed, an ink outline when chosen, no chevron. */
   selected?: boolean;
+  /** A separate control beside a row that opens something (Saved papers' bookmark): drawn
+   *  after the row inside the same ruled line, never inside the row's own button. */
+  end?: ReactNode;
   className?: string;
 }
 
-export function Row({ title, over, meta, art, label, coach, icon, tone, value, trailing, onPress, href, external = false, forward = false, expanded, lead, progress, selected, className = '' }: RowProps) {
+export function Row({ title, over, meta, art, label, coach, icon, tone, value, trailing, onPress, href, external = false, forward = false, expanded, lead, progress, selected, end, className = '' }: RowProps) {
   const pressable = Boolean(onPress || href);
   const share = progress === undefined ? null : Math.max(0, Math.min(1, progress));
   const content = (
@@ -105,10 +108,11 @@ export function Row({ title, over, meta, art, label, coach, icon, tone, value, t
   );
   const classes = `ui-part ui-row${tone === 'danger' ? ' ui-row--danger' : ''}${selected !== undefined ? ' ui-row--select' : ''} ${className}`.trim();
   return (
-    <li className="ui-row-item">
+    <li className={`ui-row-item${end ? ' ui-row-item--end' : ''}`}>
       {href ? <a className={classes} href={href} aria-label={label} data-coach={coach} {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>{content}</a>
         : onPress ? <button type="button" className={classes} onClick={onPress} aria-label={label} aria-expanded={expanded} aria-pressed={selected} data-coach={coach}>{content}</button>
           : <div className={classes}>{content}</div>}
+      {end ? <span className="ui-row-end">{end}</span> : null}
     </li>
   );
 }
