@@ -19,7 +19,7 @@
  * level-1 lift, which is empty since the owner chose "a line only" over "a line
  * with a hair of lift" (26 Nov 2026). Read-only content is not boxed.
  */
-import { type ButtonHTMLAttributes, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ButtonHTMLAttributes, type CSSProperties, type ReactNode } from 'react';
 import { ArrowRight, ArrowUpRight, ChevronDown, ChevronRight } from 'lucide-react';
 import ThemeArtwork from '../ThemeArtwork';
 import './parts.css';
@@ -135,11 +135,34 @@ export function CheckRow({ checked, onChange, mark, children, className = '', ty
   );
 }
 
+/** How far a back sheet's corner may stand out past the face, in px, when `fitTilt` is on. */
+const PAPER_TILT_REACH = 5;
+const PAPER_TILT_MAX = 1.3;
+
 /** The one raised sheet of a screen: white, a line, the soft lift, and two
- *  more sheets tilted 1.3 degrees behind it, as on sign-in. */
-export function PaperSheet({ children, className = '', label }: { children: ReactNode; className?: string; label?: string }) {
+ *  more sheets tilted 1.3 degrees behind it, as on sign-in.
+ *  `fitTilt` (area 7a): for a sheet that can grow very tall (a College Compass stage), the tilt
+ *  shrinks with the sheet's height so the back sheets' corners stand at most 5px past the face, as
+ *  on a short sheet, and never run into the page margin. Off by default: every other sheet is as it was. */
+export function PaperSheet({ children, className = '', label, fitTilt = false }: { children: ReactNode; className?: string; label?: string; fitTilt?: boolean }) {
+  const ref = useRef<HTMLElement>(null);
+  const [tilt, setTilt] = useState<number | null>(null);
+  useEffect(() => {
+    const node = ref.current;
+    if (!fitTilt || !node || typeof ResizeObserver === 'undefined') return undefined;
+    const measure = () => {
+      const half = node.offsetHeight / 2;
+      const fit = half > 0 ? (Math.asin(Math.min(1, PAPER_TILT_REACH / half)) * 180) / Math.PI : PAPER_TILT_MAX;
+      setTilt(Math.min(PAPER_TILT_MAX, Number(fit.toFixed(2))));
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [fitTilt]);
   return (
-    <section aria-label={label} className={`ui-part ui-paper ${className}`.trim()}>
+    <section ref={ref} aria-label={label} className={`ui-part ui-paper ${className}`.trim()}
+      style={fitTilt && tilt !== null ? ({ '--paper-tilt': `${tilt}deg` } as CSSProperties) : undefined}>
       <div className="ui-paper-face">{children}</div>
     </section>
   );

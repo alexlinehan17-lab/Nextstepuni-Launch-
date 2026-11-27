@@ -137,7 +137,7 @@ const MilestonePanel: React.FC<MilestonePanelProps> = ({ stop, state, mode, chec
   else status = STATUS_LABEL[state.status];
 
   return (
-    <PaperSheet className="cc7-stage" label={stop.title}>
+    <PaperSheet className="cc7-stage" label={stop.title} fitTilt>
       <div id={panelId} role="tabpanel" aria-labelledby={tabId} tabIndex={-1} className="cc7-stage-in">
         <div className="cc7-stage-top">
           <div className="cc7-stage-name">

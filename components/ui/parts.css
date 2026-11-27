@@ -837,9 +837,9 @@ span.ui-row-art > * { display: block; width: 100%; height: 100%; }
   border: 1px solid var(--outline-soft);
   border-radius: var(--r-card);
   background: var(--surface-paper);
-  transform: rotate(-1.3deg);
+  transform: rotate(calc(-1 * var(--paper-tilt, 1.3deg)));
 }
-.ui-paper::after { transform: rotate(1.3deg); }
+.ui-paper::after { transform: rotate(var(--paper-tilt, 1.3deg)); }
 .ui-paper-face {
   position: relative;
   z-index: 1;
