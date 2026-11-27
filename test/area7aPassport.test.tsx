@@ -71,3 +71,22 @@ describe('Points Passport', () => {
     expect(screen.getByRole('radio', { name: 'Biology H5' }).querySelector('.ui-ruler-dot')).not.toBeNull();
   });
 });
+
+describe('College Compass: the HEAR self-check', () => {
+  test('ticking rows keeps the answers and moves the pinned meter, scored as before', async () => {
+    const { default: HearMeter } = await import('@/components/collegeCompass/HearMeter');
+    const { computeHearScore, HEAR_INDICATORS } = await import('@/collegeCompassData');
+    const Harness = () => {
+      const [ids, setIds] = React.useState<string[]>([]);
+      return <HearMeter selected={ids} onChange={setIds} />;
+    };
+    render(<Harness />);
+    const income = HEAR_INDICATORS.find(i => i.isIncomeGate)!;
+    const scored = HEAR_INDICATORS.filter(i => !i.isIncomeGate);
+    fireEvent.click(screen.getByRole('checkbox', { name: new RegExp(income.label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')) }));
+    fireEvent.click(screen.getByRole('checkbox', { name: new RegExp(scored[0].label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')) }));
+    const expected = computeHearScore([income.id, scored[0].id]);
+    expect(document.querySelector('.cc7-mscore')?.textContent).toBe(`${expected.score} / 7`);
+    expect(screen.getByRole('checkbox', { name: new RegExp(scored[0].label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')) })).toHaveAttribute('aria-checked', 'true');
+  });
+});

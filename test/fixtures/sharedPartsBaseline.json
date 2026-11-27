@@ -60,8 +60,7 @@
    "button": 8
   },
   "components/CollegeCompass.tsx": {
-   "button": 12,
-   "pop-up": 1
+   "button": 3
   },
   "components/ComebackEngine.tsx": {
    "button": 13
@@ -428,13 +427,7 @@
   "components/collegeCompass/DareGate.tsx": {
    "button": 2
   },
-  "components/collegeCompass/HearMeter.tsx": {
-   "button": 2
-  },
   "components/collegeCompass/MoneySorter.tsx": {
-   "button": 1
-  },
-  "components/collegeCompass/OpenDoor.tsx": {
    "button": 1
   },
   "components/comeback/FluencyTrap.tsx": {

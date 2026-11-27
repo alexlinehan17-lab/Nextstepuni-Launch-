@@ -44,10 +44,6 @@
    "hex": 20,
    "tailwind [#…]": 3
   },
-  "components/CollegeCompass.tsx": {
-   "hex": 9,
-   "tailwind [#…]": 9
-  },
   "components/ComebackEngine.tsx": {
    "hex": 50,
    "rgb(": 18,
@@ -409,24 +405,20 @@
    "hex": 5
   },
   "components/collegeCompass/DareGate.tsx": {
-   "hex": 11,
+   "hex": 9,
    "tailwind [#…]": 7
   },
   "components/collegeCompass/DocumentChecklist.tsx": {
-   "hex": 9,
+   "hex": 7,
    "tailwind [#…]": 7
-  },
-  "components/collegeCompass/HearMeter.tsx": {
-   "hex": 9,
-   "tailwind [#…]": 8
   },
   "components/collegeCompass/MoneySorter.tsx": {
    "hex": 3,
    "tailwind [#…]": 7
   },
   "components/collegeCompass/OpenDoor.tsx": {
-   "hex": 7,
-   "tailwind [#…]": 14
+   "hex": 3,
+   "tailwind [#…]": 13
   },
   "components/comeback/FluencyTrap.tsx": {
    "hex": 6,

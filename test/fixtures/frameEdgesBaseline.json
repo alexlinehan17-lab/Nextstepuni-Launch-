@@ -186,9 +186,6 @@
    "100vh": 1,
    "fixed": 1
   },
-  "components/collegeCompass/HearMeter.tsx": {
-   "inset-0": 1
-  },
   "components/feedback-listening-room.css": {
    "env(safe-area-": 3
   },
