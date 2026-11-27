@@ -117,7 +117,8 @@ button.mb-claim-row:disabled:active { transform: none; }
 
 .mb-scheme-label { display: block; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: .1em; text-transform: uppercase; }
 legend.mb-scheme-label { padding: 0; margin-bottom: 6px; }
-.mb-scheme-title { margin: 6px 0 4px; color: var(--ink-primary); font: 400 17px/22px var(--font-ui); letter-spacing: -0.015em; }
+.mb-scheme-title { margin: 6px 0 12px; color: var(--ink-primary); font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; }
+.mb-scheme-title + .mb-scheme-sub { margin-top: -6px; }
 .mb-scheme-sub { margin: 0 0 var(--space-3); color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 .mb-scheme-groups { display: grid; }
 .mb-scheme-group { display: grid; gap: var(--space-2); min-width: 0; padding: var(--space-4) 0; border-top: 1px solid var(--hairline); }

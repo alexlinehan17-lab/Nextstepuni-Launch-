@@ -1645,7 +1645,7 @@ const GeographyRubricPanel: React.FC<{
           <section key={criterion.id} className="mb-scheme-group">
             <div className="mb-scheme-group-head">
               <strong className="mb-scheme-group-name">{criterion.label}</strong>
-              <span className="mb-claim-count">
+              <span className="mb-claim-tag" style={{ flex: 'none' }}>
                 {criterion.guidanceKind === 'srp' ? 'SRP allocation' : 'Exact allocation'} · / {criterion.maxMarks}
               </span>
             </div>

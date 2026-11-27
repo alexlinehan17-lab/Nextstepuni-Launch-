@@ -131,6 +131,9 @@
 }
 
 .mb-maths-scale input { accent-color: var(--ink-primary); }
+/* A step's marks at its right: the readout, ink-2, ink once chosen (never bold). */
+.mb-maths-scale fieldset > label > strong { color: var(--ink-secondary); font: 400 13px/16px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; letter-spacing: .02em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.mb-maths-scale fieldset > label.is-selected > strong { color: var(--ink-primary); }
 .mb-maths-scale .mb-maths-scale-deduction { grid-template-columns: 18px 1fr; }
 .mb-maths-scale .mb-maths-scale-deduction:has(input:disabled) { opacity: .55; cursor: default; }
 .mb-maths-scale .mb-maths-scale-total { padding-top: 14px; border-top: 2px solid var(--ink-primary); color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
