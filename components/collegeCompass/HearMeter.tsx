@@ -54,11 +54,12 @@ const HearMeter: React.FC<HearMeterProps> = ({ selected, onChange }) => {
           <p className="cc7-mscore"><b>{score}</b><span className="cc7-of"> / {HEAR_THRESHOLDS.max}</span></p>
         </div>
         <div className="cc7-mtrack" data-ok={outcome !== 'not-eligible' || undefined}>
-          {incomeGateMet ? <i style={{ width: `${pct}%` }} /> : <span className="cc7-locked t-meta"><Lock size={12} aria-hidden="true" /> Locked until income is met</span>}
+          {incomeGateMet ? <i style={{ width: `${pct}%` }} /> : null}
           <span className="cc7-mtick" style={{ left: `${eligiblePct}%` }} />
           <span className="cc7-mtick" style={{ left: `${priorityPct}%` }} />
         </div>
         <div className="cc7-mkey t-meta"><span style={{ left: `${eligiblePct}%` }}>Eligible</span><span style={{ left: `${priorityPct}%` }}>Priority</span></div>
+        {incomeGateMet ? null : <p className="cc7-locked t-meta"><Lock size={12} aria-hidden="true" /> Locked until income is met</p>}
         <p className="cc7-outcome" data-ok={outcome !== 'not-eligible' || undefined}>{outcome !== 'not-eligible' ? <Check size={16} aria-hidden="true" /> : null}<span>{outcomeText}</span></p>
       </div>
 

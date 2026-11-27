@@ -94,7 +94,7 @@
 .cc7-mtrack i { position: absolute; inset: 0 auto 0 0; border-radius: 6px; background: var(--ink-primary); transition: width var(--t-move) var(--ease-out); }
 .cc7-mtrack[data-ok] i { background: var(--success-hex); }
 .cc7-mtick { position: absolute; top: -4px; bottom: -4px; width: 2px; margin-left: -1px; border-radius: 1px; background: var(--ink-secondary); }
-.cc7-locked { position: absolute; inset: -3px 0 auto; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 11px; line-height: 18px; }
+.cc7-locked { display: flex; align-items: center; gap: 4px; }
 .cc7-mkey { position: relative; height: 14px; font-size: 11px; line-height: 14px; }
 .cc7-mkey span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
 .cc7-outcome { display: flex; align-items: center; gap: var(--space-2); font-size: 15px; line-height: 21px; }
