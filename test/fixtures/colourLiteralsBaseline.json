@@ -164,18 +164,6 @@
    "hex": 5,
    "tailwind [#…]": 6
   },
-  "components/MarkBank/AccountingAssessment.tsx": {
-   "hex": 1
-  },
-  "components/MarkBank/AudioSourcePlayer.tsx": {
-   "hex": 6
-  },
-  "components/MarkBank/BusinessRubricPanel.tsx": {
-   "hex": 2
-  },
-  "components/MarkBank/MarkBank.tsx": {
-   "hex": 1
-  },
   "components/MarkBank/PdfRuler.tsx": {
    "hex": 2
   },
@@ -186,38 +174,16 @@
   "components/MarkBank/VideoSourcePlayer.tsx": {
    "hex": 7
   },
-  "components/MarkBank/art-rubric.css": {
-   "hex": 1
-  },
   "components/MarkBank/cards/computer-science/higher.ts": {
    "hex": 2
   },
-  "components/MarkBank/claim-rows.css": {
-   "hex": 1,
-   "rgb(": 2
-  },
   "components/MarkBank/figure-zoom.css": {
    "hex": 3,
-   "rgb(": 3
-  },
-  "components/MarkBank/french-rubric.css": {
-   "hex": 5
-  },
-  "components/MarkBank/geography-choice.css": {
-   "hex": 1
-  },
-  "components/MarkBank/language-rubric.css": {
-   "hex": 8
-  },
-  "components/MarkBank/mark-bank-session-paper.css": {
-   "hex": 1
+   "rgb(": 2
   },
   "components/MarkBank/mathematics.css": {
-   "hex": 19,
+   "hex": 3,
    "rgb(": 1
-  },
-  "components/MarkBank/physical-education-rubric.css": {
-   "hex": 2
   },
   "components/MasteringTheCreativesModule.tsx": {
    "hex": 8

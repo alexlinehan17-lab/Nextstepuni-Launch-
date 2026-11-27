@@ -191,7 +191,7 @@
    "button": 3
   },
   "components/MarkBank/FigureZoom.tsx": {
-   "button": 5,
+   "button": 3,
    "pop-up": 2
   },
   "components/MarkBank/FrenchRubricPanel.tsx": {
@@ -209,11 +209,7 @@
   "components/MarkBank/LanguageRubricPanel.tsx": {
    "button": 1
   },
-  "components/MarkBank/MarkBank.tsx": {
-   "button": 1
-  },
   "components/MarkBank/MathematicsWorkedSolution.tsx": {
-   "button": 3,
    "pop-up": 1
   },
   "components/MarkBank/PdfRuler.tsx": {
