@@ -47,9 +47,9 @@
 .ff7-steps-bar { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
 .ff7-steps-bar i { position: relative; height: 4px; overflow: hidden; border-radius: 2px; background: var(--hairline); }
 .ff7-steps-bar b { position: absolute; inset: 0; border-radius: inherit; background: var(--ink-primary); transform-origin: 0 50%; transition: transform var(--t-move) var(--ease-out); }
-.ff7-card .ui-paper-face { display: flex; flex-direction: column; padding: 22px 18px 18px; }
+.ff7-card .ui-paper-face { display: flex; flex-direction: column; padding: var(--space-6) 18px 18px; }
 .ff7-ask { margin: 0; color: var(--ink-muted); text-align: center; }
-.ff7-q { margin: 10px 4px 18px; outline: none; font-size: 26px; font-weight: 400; line-height: 30px; letter-spacing: -0.035em; text-align: center; text-wrap: balance; }
+.ff7 .ff7-q { margin: var(--space-3) 4px var(--space-6); outline: none; font-size: 26px; font-weight: 400; line-height: 30px; letter-spacing: -0.035em; text-align: center; text-wrap: balance; }
 .ff7-answers { display: flex; flex-direction: column; gap: var(--space-2); }
 .ff7-answer.ui-choice { min-height: 50px; padding: 10px 14px; }
 .ff7-answer-in { display: flex; align-items: center; gap: 10px; }
@@ -59,8 +59,11 @@
 .ff7-pause { align-self: center; }
 /* On a phone the questions are a task: Continue is pinned over the home indicator (the frame's
    floating layer, from the screen's bottom edge, since the tab bar has stepped aside). */
-.ff7-foot-bar.ui-foot { --frame-float-gap: calc(-1 * var(--safe-bottom)); left: 0; right: 0; z-index: var(--z-sticky); padding-left: max(var(--space-6), var(--safe-left)); padding-right: max(var(--space-6), var(--safe-right)); background: var(--surface-canvas); }
-.ff7-question-area { padding-bottom: 120px; }
+/* The frame's floating layer from the screen's foot (the tab bar has stepped aside); the footer inside
+   it is the shared pinned footer, which owns the home-indicator inset. */
+.ff7-foot-wrap { --frame-float-gap: calc(-1 * var(--safe-bottom)); left: 0; right: 0; z-index: var(--z-sticky); }
+.ff7 .ff7-foot-bar.ui-foot { position: static; padding-left: max(var(--space-6), var(--safe-left)); padding-right: max(var(--space-6), var(--safe-right)); background: var(--surface-canvas); }
+.ff7-question-area { padding-bottom: 136px; }
 
 /* ── Your results ────────────────────────────────────────────────────────── */
 .ff7-results-head { display: flex; flex-direction: column; gap: var(--space-2); }
@@ -175,10 +178,11 @@
   .ff7-journey li[data-active] { color: var(--ink-primary); }
   .ff7-journey li[data-active] .t-readout { color: var(--accent-text); }
   .ff7-card .ui-paper-face { padding: 32px 36px 28px; }
-  .ff7-q { font-size: 32px; line-height: 36px; margin: 12px 0 24px; }
+  .ff7 .ff7-q { font-size: 32px; line-height: 36px; margin: var(--space-3) 0 var(--space-6); }
   .ff7-keys { display: block; }
   .ff7-pause { align-self: flex-start; }
-  .ff7-foot-bar.ui-foot { position: static; margin: 0; padding: 0; border: 0; background: none; }
+  .ff7-foot-wrap.frame-float { position: static; }
+  .ff7 .ff7-foot-bar.ui-foot { margin: 0; padding: 0; border: 0; background: none; }
   .ff7-results-head { max-width: 640px; }
   .ff7-results-tools { display: flex; }
   .ff7-results { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 56px; align-items: start; }

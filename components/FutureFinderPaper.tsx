@@ -178,9 +178,9 @@ export default function FutureFinderPaper({uid, profile, resultsOnly = false, on
           <p className="t-meta ff7-keys">You can also use keys 1–5</p>
         </PaperSheet>
         <TextButton tone="quiet" className="ff7-pause" onClick={() => changePhase('intro')}>Pause</TextButton>
-        <PinnedFooter className="ff7-foot-bar frame-float frame-float-bottom" lead={current === undefined ? undefined : `Your answer: ${scale[current - 1]}.`}>
+        <div className="ff7-foot-wrap frame-float frame-float-bottom"><PinnedFooter className="ff7-foot-bar" lead={current === undefined ? undefined : `Your answer: ${scale[current - 1]}.`}>
           <Button kind="main" size="lg" block arrow="forward" missing={current === undefined ? { sentence: 'Choose one to continue.', goTo: answersRef } : undefined} onClick={proceed}>Continue</Button>
-        </PinnedFooter>
+        </PinnedFooter></div>
       </section>
     </div>}
 
