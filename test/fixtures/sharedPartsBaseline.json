@@ -212,9 +212,6 @@
   "components/MarkBank/MarkBank.tsx": {
    "button": 1
   },
-  "components/MarkBank/MarkBankLibrary.tsx": {
-   "button": 3
-  },
   "components/MarkBank/MathematicsWorkedSolution.tsx": {
    "button": 3,
    "pop-up": 1
