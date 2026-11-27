@@ -317,7 +317,7 @@ describe('Overview\'s second and third rows', () => {
     expect(firestoreWhere).toHaveBeenCalledWith('day', 'in', [today()]);
     expect(firestoreWhere).toHaveBeenCalledWith('status', '==', 'new');
     expect(firestoreLimit).toHaveBeenCalledWith(1);
-    expect(vi.mocked(firestoreQuery).mock.calls.filter(call => (call[0] as { name: string }).name === 'funnelEvents')).toHaveLength(7);
+    expect(vi.mocked(firestoreQuery).mock.calls.filter(call => (call[0] as unknown as { name: string }).name === 'funnelEvents')).toHaveLength(7);
     for (const write of Object.values(writes)) expect(write).not.toHaveBeenCalled();
     // The row opens First run, whose own figure is the same "9 of 14".
     fireEvent.click(run);
