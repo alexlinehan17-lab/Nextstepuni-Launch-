@@ -42,6 +42,7 @@ import { MenuAction, MenuPanel } from './ui/Menu';
 import { LoadingShape } from './ui/States';
 import { OverScreen } from './ui/OverScreen';
 import { FramePortal } from './ui/Frame';
+import { MessageHost, showMessage } from './ui/Message';
 import { useWide } from './gc/gcView';
 
 interface GCDashboardProps {
@@ -247,7 +248,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       if (selectedStudentUid === user.uid) setSelectedStudentUid(null);
     } catch (err) {
       console.error('Error deleting student:', err);
-      alert('Failed to delete student. You may not have permission.');
+      showMessage('Failed to delete student. You may not have permission.');
     }
     setIsDeleting(false);
     setDeleteVerificationPassword('');
@@ -274,7 +275,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       setResetResult({ name: result.data.studentName, password: result.data.tempPassword });
     } catch (err) {
       console.error('Failed to reset password:', err);
-      alert('Failed to reset password. Please try again.');
+      showMessage('Failed to reset password. Please try again.');
     }
     setIsResettingPassword(false);
     setResetVerificationPassword('');
@@ -691,6 +692,9 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
           <p className="gc8-meta">Share this with the student. They should change it after logging in.</p>
         </div>
       </Sheet>
+
+      {/* A failed delete or reset says so here (it was a browser alert). */}
+      <MessageHost />
     </div>
   );
 };
