@@ -52,21 +52,60 @@ button.mb-claim-row:disabled:active { transform: none; }
   display: inline-flex; align-items: center; min-height: 32px; margin: 2px 0 0 48px; padding: 0; border: 0; background: none;
   color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); text-decoration: underline; text-underline-offset: 3px; cursor: pointer;
 }
+.mb-step-rows { display: grid; gap: var(--space-3); margin-top: var(--space-2); }
+.mb-step-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-3); }
 .mb-step-part { min-width: 96px; color: var(--ink-secondary); font: 400 14px/20px var(--font-ui); }
 .mb-step-part[data-on="true"] { color: var(--ink-primary); }
 
-.mb-claim-steps { display: flex; gap: 5px; flex-wrap: wrap; justify-content: flex-end; }
-.mb-claim-steps button,
-.mb-claim-marks button {
-  min-width: 34px; height: 32px; padding: 0 9px; border-radius: 8px; cursor: pointer;
-  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
-  font: 700 11px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums;
+/* ---- Mark buttons: the printed marks a row or criterion can take -----------------------------
+   White with a thin line; chosen, the ink outline and the tick beside the number (no charcoal
+   fill). Drawn 36px high and at least 40px wide, 8px apart, each with an invisible 4px hit area
+   all round, so every target is at least 44 x 44 and no two overlap. */
+.mb-claim-steps, .mb-claim-marks, .mb-mark-buttons { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+.mb-claim-steps { justify-content: flex-end; }
+.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn {
+  position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 4px;
+  min-width: 40px; height: 36px; padding: 0 10px; border-radius: var(--r-sm); cursor: pointer;
+  border: 1px solid var(--outline-soft); background: var(--surface-paper); color: var(--ink-primary);
+  font: 400 13px/16px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; letter-spacing: .02em; font-variant-numeric: tabular-nums;
+  transition: border-color var(--t-ui) var(--ease-out), transform var(--t-press) var(--ease-out);
 }
-.mb-claim-steps button { display: inline-flex; align-items: center; justify-content: center; gap: 4px; }
-.mb-claim-steps button[aria-pressed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
-.mb-claim-marks { display: flex; gap: 5px; flex-wrap: wrap; }
-.mb-claim-marks button[aria-pressed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
-.mb-claim-marks button:disabled { cursor: default; opacity: .45; }
+:is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn)::after { content: ''; position: absolute; inset: -4px; }
+:is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn)::before {
+  content: ''; position: absolute; inset: -1px; border-radius: inherit; box-shadow: inset 0 0 0 2px var(--ink-primary);
+  opacity: 0; pointer-events: none; transition: opacity var(--t-press) var(--ease-out);
+}
+:is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn)[aria-pressed="true"] { border-color: var(--ink-primary); }
+:is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn)[aria-pressed="true"]::before { opacity: 1; transition-duration: var(--t-ui); }
+:is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn):active:not(:disabled) { transform: scale(.96); }
+:is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn):disabled { cursor: default; opacity: .4; }
+:is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn):focus-visible { outline: 2px solid var(--outline-strong); outline-offset: 2px; }
+/* A stepper's minus and plus: the same box, 44 x 44 drawn. */
+.mb-mark-btn--step { width: 44px; height: 44px; padding: 0; font: 400 20px/1 var(--font-ui); }
+.mb-mark-btn--step::after { inset: 0; }
+/* A typed mark between a stepper's minus and plus: the shared field, white with a line. */
+.mb-mark-field {
+  width: 100px; min-height: 44px; padding: 10px 12px; text-align: center;
+  border: 1px solid var(--outline-soft); border-radius: var(--r-sm); background: var(--surface-paper); color: var(--ink-primary);
+  font: 400 17px/22px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums;
+}
+.mb-mark-field:focus { outline: none; border-color: var(--outline-strong); box-shadow: inset 0 0 0 1px var(--outline-strong); }
+/* The tick draws once when a mark is chosen. */
+.mb-mark-tick { flex: none; }
+.mb-mark-tick path { stroke-dasharray: 22; stroke-dashoffset: 22; animation: mb-mark-tick-draw var(--t-draw) var(--ease-out) var(--t-draw-wait) forwards; }
+@keyframes mb-mark-tick-draw { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .mb-mark-tick path { animation: none; stroke-dashoffset: 0; }
+  :is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn):active:not(:disabled) { transform: none; }
+}
+/* A slider's readout and its ends, and the quick marks under it. */
+.mb-mark-readout { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.mb-mark-readout strong { color: var(--ink-primary); font: 400 20px/24px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+.mb-mark-range { width: 100%; margin: 9px 0 5px; accent-color: var(--ink-primary); }
+.mb-mark-ends { display: flex; justify-content: space-between; gap: 4px; color: var(--ink-muted); font: 400 11px/14px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; }
+.mb-mark-ends button { min-height: 44px; min-width: 44px; padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.mb-mark-ends button:first-child { text-align: left; }
+.mb-mark-ends button:last-child { text-align: right; }
 
 /* ---- The scheme's groups: on the page, never a box round a group of rows ---------------------
    A group's name and its count sit on the page above its rows; groups are apart by space and one

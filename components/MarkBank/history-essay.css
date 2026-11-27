@@ -51,13 +51,8 @@
   display: grid; grid-template-columns: minmax(9em, 1fr) auto auto; gap: var(--space-3); align-items: center;
   padding: 12px 0; border-top: 1px solid var(--hairline); color: var(--ink-primary); font: 400 15px/21px var(--font-ui);
 }
-.mb-hist-counter { display: inline-flex; align-items: center; gap: 6px; }
-.mb-hist-counter button {
-  min-width: 34px; height: 32px; border-radius: 8px; cursor: pointer;
-  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink);
-  font: 700 15px/1 'Roboto Mono', ui-monospace, monospace;
-}
-.mb-hist-counter button:disabled { cursor: default; opacity: .45; }
+/* Minus and plus are the shared stepper buttons (claim-rows.css, .mb-mark-btn--step). */
+.mb-hist-counter { display: inline-flex; align-items: center; gap: var(--space-2); }
 .mb-hist-counter output { min-width: 22px; text-align: center; font: 400 15px/1 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
 
 .mb-hist-reached { margin: 0; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }

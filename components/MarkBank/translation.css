@@ -21,26 +21,13 @@
 .mb-tr-unit[data-marked="true"] .mb-tr-unit-head .mb-claim-chip { color: var(--ink-primary); }
 .mb-tr-unit-text { margin: 0; color: var(--ink-primary); font: 400 17px/24px var(--font-ui); overflow-wrap: anywhere; }
 
-/* Three square buttons with a visible face and edge before any hover; the
-   chosen one is the charcoal claim face (the approved Mark Bank selection). */
-.mb-tr-choices { display: flex; flex-wrap: wrap; gap: 6px; }
-.mb-tr-choices button {
-  min-height: 36px; padding: 0 12px; border-radius: 9px; cursor: pointer;
-  display: inline-flex; align-items: center; gap: 5px;
-  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
-  font: 650 12.5px/1 'DM Sans', system-ui, sans-serif;
-}
-.mb-tr-choices button:hover { border-color: var(--mb-ink); color: var(--mb-ink); }
-.mb-tr-choices button[aria-pressed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
+/* Full, Partial and None: the shared mark buttons (claim-rows.css), wider for their words. */
+.mb-tr-choices { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.mb-tr-choices button { padding: 0 14px; font: 400 14px/18px var(--font-ui); letter-spacing: 0; }
 
 .mb-tr-partial { display: grid; gap: 6px; }
 .mb-tr-partial > span { color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 .mb-tr-partial .mb-claim-steps { justify-content: flex-start; }
-/* The shared step buttons are drawn for a charcoal (claimed) row, where the
-   pressed step is the paper face. Here they sit on a light panel, so the
-   pressed step takes the charcoal claim face instead. */
-.mb-tr-partial .mb-claim-steps button[aria-pressed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
-
 /* The total: one ruled line, as Politics has it. */
 .mb-tr-total { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-3); padding-top: 14px; border-top: 2px solid var(--ink-primary); }
 .mb-tr-total span { color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }

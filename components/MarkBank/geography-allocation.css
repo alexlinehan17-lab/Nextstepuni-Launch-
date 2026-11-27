@@ -16,14 +16,9 @@
   padding: 12px 0; border-top: 1px solid var(--hairline); color: var(--ink-primary);
   font: 400 15px/21px var(--font-ui);
 }
-.mb-geo-counter { display: inline-flex; align-items: center; gap: 4px; }
-.mb-geo-counter button {
-  min-width: 32px; height: 32px; padding: 0 9px; border-radius: 8px; cursor: pointer;
-  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
-  font: 700 15px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums;
-}
-.mb-geo-counter button:disabled { opacity: .4; cursor: default; }
-.mb-geo-counter output { min-width: 26px; text-align: center; font: 750 15px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; color: var(--mb-ink); }
+/* Minus and plus are the shared stepper buttons (claim-rows.css, .mb-mark-btn--step). */
+.mb-geo-counter { display: inline-flex; align-items: center; gap: var(--space-2); }
+.mb-geo-counter output { min-width: 26px; text-align: center; color: var(--ink-primary); font: 400 15px/1 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
 
 .mb-geo-pool { margin: 0; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 

@@ -4,7 +4,7 @@ import type { BusinessExpectedItem, BusinessRubric, SecRubricCard } from '../../
 import { BUSINESS_OTHER_RESPONSE, businessExpectedId, businessExpectedLayout, businessMarks, businessPoolTarget,
   businessResponseFill, businessResponseMarks, businessScoreId, effectiveBusinessScores,
   type BusinessScoreId, type BusinessScores } from './businessRubric';
-import { ClaimRow } from './ClaimRows';
+import { ClaimRow, MarkTick } from './ClaimRows';
 import SourceMaterialReader from './SourceMaterialReader';
 
 interface Props {
@@ -86,20 +86,12 @@ export default function BusinessRubricPanel({ card, scores, onScore }: Props) {
               <div key={id} style={{ margin: '8px 0' }}>
                 <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
                   <span style={{ color: 'var(--ink-secondary)', font: '400 13px/18px var(--font-ui)' }}>{allocation.label}</span>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+                  <div className="mb-mark-buttons">
                     {allocation.permittedMarks.map(mark => (
-                      <button key={mark} type="button" aria-pressed={selected === mark}
+                      <button key={mark} type="button" className="mb-mark-btn" aria-pressed={selected === mark}
                         aria-label={`Set ${response.label} ${allocation.label} to ${mark} marks`}
                         disabled={Boolean(locked && mark > 0)}
-                        onClick={() => onScore(id, mark)}
-                        style={{
-                          minWidth: 34, minHeight: 34, padding: '4px 9px', borderRadius: 7,
-                          border: '1.5px solid var(--mb-ink)',
-                          background: selected === mark ? '#f59c4c' : 'var(--mb-paper)',
-                          color: selected === mark ? '#202020' : 'var(--mb-ink)',
-                          opacity: locked && mark > 0 ? .45 : 1,
-                          fontWeight: 700, cursor: locked && mark > 0 ? 'not-allowed' : 'pointer',
-                        }}>{mark}</button>
+                        onClick={() => onScore(id, mark)}>{selected === mark && <MarkTick />}{mark}</button>
                     ))}
                   </div>
                 </div>

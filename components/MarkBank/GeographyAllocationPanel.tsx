@@ -52,9 +52,9 @@ const SrpCounter: React.FC<{
         <small>{caption}. One SRP is one valid point that emerges from a coherent answer.</small>
       </span>
       <span className="mb-geo-counter" role="group" aria-label={`${label}: SRPs counted`}>
-        <button type="button" aria-label={`One fewer SRP for ${label}`} disabled={count <= 0} onClick={() => onCount(Math.max(0, count - 1))}>−</button>
+        <button type="button" className="mb-mark-btn mb-mark-btn--step" aria-label={`One fewer SRP for ${label}`} disabled={count <= 0} onClick={() => onCount(Math.max(0, count - 1))}>−</button>
         <output aria-live="polite">{count}</output>
-        <button type="button" aria-label={`One more SRP for ${label}`} disabled={!canAdd} onClick={() => onCount(Math.min(max, count + 1))}>+</button>
+        <button type="button" className="mb-mark-btn mb-mark-btn--step" aria-label={`One more SRP for ${label}`} disabled={!canAdd} onClick={() => onCount(Math.min(max, count + 1))}>+</button>
       </span>
       <span className="mb-claim-chip">{marksLabel(count * srp.marks)}</span>
     </div>

@@ -150,14 +150,16 @@
 .mb-maths-step-awards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
-  gap: 7px;
+  gap: var(--space-2);
 }
+/* A step's awards are mark buttons: white, a thin line; chosen, the ink outline (above). */
 .mb-maths-scale .mb-maths-step-awards label {
   position: relative;
   grid-template-columns: 1fr;
   justify-items: center;
   gap: 2px;
-  padding: 10px 5px;
+  min-height: 52px;
+  padding: 8px 5px;
   text-align: center;
 }
 .mb-maths-step-awards input {
@@ -166,5 +168,5 @@
   height: 1px;
   opacity: 0;
 }
-.mb-maths-step-awards strong { font-size: 18px; }
-.mb-maths-step-awards span { font-size: 10px; }
+.mb-maths-step-awards strong { font: 400 17px/20px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; }
+.mb-maths-step-awards span { color: var(--ink-muted); font: 400 11px/14px var(--font-ui); }

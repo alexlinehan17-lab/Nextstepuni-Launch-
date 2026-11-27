@@ -3,7 +3,6 @@ import React from 'react';
 import type { AccountingRubric, SecRubricCard } from '../../types/markBank';
 import SourceMaterialReader from './SourceMaterialReader';
 import { ClaimRow } from './ClaimRows';
-import { COLORS } from '../../design/tokens';
 
 export const accountingScoreId = 'accounting:allocation' as const;
 export type AccountingScoreId = typeof accountingScoreId | `accounting:row:${string}`;
@@ -57,11 +56,6 @@ const AccountingAssessment: React.FC<{
       </section>
     );
   }
-  const control: React.CSSProperties = {
-    border: '2px solid var(--mb-ink)', borderRadius: 8,
-    background: 'var(--mb-paper)', color: 'var(--mb-ink)',
-    padding: '9px 14px', minHeight: 44, fontWeight: 700,
-  };
   return (
     <section aria-label="Accounting assessment">
       <p style={{ fontWeight: 700, margin: '0 0 8px' }}>Compare your workings with the SEC solution.</p>
@@ -77,16 +71,14 @@ const AccountingAssessment: React.FC<{
       <label htmlFor={`accounting-score-${card.id}`} style={{ display: 'block', fontWeight: 700, marginBottom: 8 }}>
         Your marks out of {card.totalMarks}
       </label>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-        <button type="button" aria-label="Subtract half a mark" disabled={selected === 0}
-          style={{ ...control, cursor: selected === 0 ? 'default' : 'pointer' }}
+      <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+        <button type="button" className="mb-mark-btn mb-mark-btn--step" aria-label="Subtract half a mark" disabled={selected === 0}
           onClick={() => onScore(accountingMark(card.totalMarks, selected - 0.5))}>−</button>
         <input id={`accounting-score-${card.id}`} type="number" inputMode="decimal"
           min={0} max={card.totalMarks} step={0.5} value={selected}
-          style={{ ...control, width: 100, background: COLORS.accent, color: '#171717', textAlign: 'center' }}
+          className="mb-mark-field"
           onChange={event => onScore(accountingMark(card.totalMarks, Number(event.currentTarget.value)))} />
-        <button type="button" aria-label="Add half a mark" disabled={selected === card.totalMarks}
-          style={{ ...control, cursor: selected === card.totalMarks ? 'default' : 'pointer' }}
+        <button type="button" className="mb-mark-btn mb-mark-btn--step" aria-label="Add half a mark" disabled={selected === card.totalMarks}
           onClick={() => onScore(accountingMark(card.totalMarks, selected + 0.5))}>+</button>
       </div>
     </section>

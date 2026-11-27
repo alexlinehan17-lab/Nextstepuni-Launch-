@@ -34,10 +34,11 @@
 .mb-french-count-readout strong { color: var(--ink-primary); font: 400 20px/24px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
 .mb-french-count-readout span:last-child { margin-left: auto; color: var(--ink-primary); font: 400 13px/16px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
 .mb-french-count-controls { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: 10px; margin: 9px 0 5px; }
-.mb-french-count-controls input { width: 100%; margin: 0; accent-color: var(--mb-ink); }
-.mb-french-count-controls button { width: 44px; height: 44px; border: 2px solid var(--mb-ink); border-radius: 8px; background: var(--mb-paper); color: var(--mb-ink); font: 700 20px/1 'DM Sans', system-ui, sans-serif; cursor: pointer; }
+.mb-french-count-controls input { width: 100%; margin: 0; accent-color: var(--ink-primary); }
+/* Minus and plus: the shared stepper look (white, a thin line, 44 x 44). */
+.mb-french-count-controls button { width: 44px; height: 44px; border: 1px solid var(--outline-soft); border-radius: var(--r-sm); background: var(--surface-paper); color: var(--ink-primary); font: 400 20px/1 var(--font-ui); cursor: pointer; }
 .mb-french-count-controls button:disabled { cursor: default; opacity: .4; }
-.mb-french-count-controls button:focus-visible { outline: 3px solid var(--nsu-orange); outline-offset: 3px; }
+.mb-french-count-controls button:focus-visible { outline: 2px solid var(--outline-strong); outline-offset: 2px; }
 .mb-french-count .mb-french-slider-ends { padding: 0 54px; }
 .mb-french-attempt { min-height: 44px; border: 1px solid var(--outline-soft); border-radius: var(--r-sm); padding: 10px 14px; font: 400 15px/21px var(--font-ui); color: var(--ink-primary); background: var(--surface-paper); cursor: pointer; width: 100%; margin: 0 0 15px; text-align: left; }
 .mb-french-attempt[aria-pressed="true"] { border-color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--ink-primary); }

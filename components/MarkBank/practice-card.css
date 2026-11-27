@@ -108,15 +108,6 @@
 
 /* The claim rows themselves are claim-rows.css, the same in every subject and outside this card. */
 .mb-practice .mb-route-chooser button { min-height: 44px; font-size: 14px; }
-/* Stepped marks and a row's parts: the permitted marks as small boxes; chosen, an ink outline. */
-.mb-practice .mb-step {
-  min-width: 44px; min-height: 36px; border-color: var(--outline-soft) !important; border-radius: var(--r-sm) !important;
-  background: var(--surface-paper) !important; color: var(--ink-primary) !important; font: 400 14px/1 'Departure Mono', ui-monospace, monospace !important;
-}
-.mb-practice .mb-step[aria-pressed="true"] { border-color: var(--ink-primary) !important; box-shadow: inset 0 0 0 1px var(--ink-primary); font-weight: 700 !important; }
-/* Applied Maths' orange selected credit becomes the ink outline (no orange fill). */
-.mb-practice .mb-applied-credit button[aria-pressed="true"] { background: var(--surface-paper) !important; color: var(--ink-primary) !important; border-color: var(--ink-primary) !important; box-shadow: inset 0 0 0 1px var(--ink-primary); }
-.mb-practice input[id^="accounting-score-"] { background: var(--surface-paper) !important; color: var(--ink-primary) !important; }
 
 /* The pinned footer: Reveal (the one charcoal button), then Missed it, Shaky and Got it. */
 .mb-practice .mb-paper-session .mb-session-rail {

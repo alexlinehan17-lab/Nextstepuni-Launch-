@@ -41,7 +41,7 @@ import { TopBar } from '../ui/Bars';
 import { Arrow, Button as UiButton, Glyph, TextButton } from '../ui/Button';
 import { OverScreen } from '../ui/OverScreen';
 import { SelectionMark } from '../ui/Choice';
-import { marksLabel } from './ClaimRows';
+import { MarkTick, marksLabel } from './ClaimRows';
 import './mark-bank-session-paper.css';
 import './practice-card.css';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
@@ -139,8 +139,6 @@ const LABEL = 'var(--mb-label)';
 const MUTED_BORDER = 'var(--mb-border)';
 const SUCCESS_TINT = 'var(--mb-success-tint)';
 const SUCCESS_TEXT = 'var(--mb-success-text)';
-const CLAIM = 'var(--mb-claim)';
-const ON_CLAIM = 'var(--mb-on-claim)';
 /** Accent means "this is the action / you are here". Never "correct". */
 const ACCENT = COLORS.accent;
 /** How far the frame layers sit off the card, and the stroke's weight. */
@@ -818,21 +816,18 @@ const MarkRowView: React.FC<{
           <span className="mb-claim-count" data-on={placed > 0}>{placed}m of {row.marks}m</span>
         </div>
         {row.contextNote ? <p className="mb-scheme-sub" style={{ whiteSpace: printedLines(row.contextNote) }}>{row.contextNote}</p> : null}
-        <div style={{ display: 'grid', gap: 8, marginTop: 8 }}>
+        <div className="mb-step-rows">
           {row.parts.map(part => {
             const selected = partMarksClaimed(part, partClaims?.[part.id] ?? 'no');
             return (
-              <div key={part.id} style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 8 }}>
+              <div key={part.id} className="mb-step-row">
                 <span className="mb-step-part" data-on={selected > 0}>{part.verbatim}</span>
-                <div role="group" aria-label={`Marks for ${part.verbatim} · ${row.verbatim}`} style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+                <div role="group" aria-label={`Marks for ${part.verbatim} · ${row.verbatim}`} className="mb-mark-buttons">
                   {part.permittedMarks.map(mark => (
-                    <button key={mark} type="button" className="mb-step" disabled={blocked} aria-pressed={selected === mark}
+                    <button key={mark} type="button" className="mb-step mb-mark-btn" disabled={blocked} aria-pressed={selected === mark}
                       aria-label={`Award ${mark} marks for ${part.verbatim} · ${row.verbatim}`}
-                      onClick={() => onClaim(partClaimId(id, part.id), mark)}
-                      style={{ minWidth: 34, padding: '7px 10px', borderRadius: 6, border: `1px solid ${selected === mark ? CLAIM : MUTED_BORDER}`,
-                        background: selected === mark ? CLAIM : 'var(--mb-paper)',
-                        color: selected === mark ? ON_CLAIM : INK, font: `700 11px/1 ${MONO}`, cursor: blocked ? 'default' : 'pointer' }}>
-                      {mark}
+                      onClick={() => onClaim(partClaimId(id, part.id), mark)}>
+                      {selected === mark && <MarkTick />}{mark}
                     </button>
                   ))}
                 </div>
@@ -851,17 +846,14 @@ const MarkRowView: React.FC<{
     return (
       <section aria-label={`Marking criterion ${index + 1}`} className="mb-criterion">
         <strong className="mb-criterion-name" style={{ whiteSpace: keepLines ? 'pre-line' : printedLines(row.verbatim) }}>{row.verbatim}</strong>
-        {row.accepts?.length ? <p style={{ color: MUTED }}>{row.accepts.join(' · ')}</p> : null}
+        {row.accepts?.length ? <p className="mb-scheme-sub">{row.accepts.join(' · ')}</p> : null}
         {row.contextNote ? <p className="mb-scheme-sub" style={{ whiteSpace: printedLines(row.contextNote) }}>{row.contextNote}</p> : null}
-        <div role="group" aria-label={`Marks for ${row.verbatim}`} style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+        <div role="group" aria-label={`Marks for ${row.verbatim}`} className="mb-mark-buttons">
           {row.permittedMarks.map(mark => (
-            <button key={mark} type="button" className="mb-step" disabled={blocked} aria-pressed={selected === mark}
+            <button key={mark} type="button" className="mb-step mb-mark-btn" disabled={blocked} aria-pressed={selected === mark}
               aria-label={`Award ${mark} marks for ${row.verbatim}`}
-              onClick={() => onClaim(id, mark)}
-              style={{ padding: '8px 12px', borderRadius: 6, border: `1px solid ${MUTED_BORDER}`,
-                background: selected === mark ? INK : 'var(--mb-paper)',
-                color: selected === mark ? 'var(--mb-paper)' : INK, cursor: blocked ? 'default' : 'pointer' }}>
-              {mark}
+              onClick={() => onClaim(id, mark)}>
+              {selected === mark && <MarkTick />}{mark}
             </button>
           ))}
         </div>
@@ -1104,20 +1096,12 @@ const PclmRubricPanel: React.FC<{
       <button
         key={`${id}-${marks}`}
         type="button"
+        className="mb-mark-btn"
         aria-pressed={selected}
         disabled={disabled}
         onClick={() => onScore(id, marks)}
-        style={{
-          minWidth: 34, height: 32, padding: '0 8px', borderRadius: 8,
-          border: `1.5px solid ${selected ? INK : MUTED_BORDER}`,
-          background: selected ? INK : 'var(--mb-paper)',
-          color: selected ? 'var(--mb-paper)' : disabled ? LABEL : INK_2,
-          opacity: disabled ? 0.45 : 1,
-          font: `700 11px/1 ${MONO}`, cursor: disabled ? 'not-allowed' : 'pointer',
-          fontVariantNumeric: 'tabular-nums',
-        }}
       >
-        {marks}
+        {selected && <MarkTick />}{marks}
       </button>
     );
   };
@@ -1183,7 +1167,7 @@ const PclmRubricPanel: React.FC<{
               {assessment.bands.map(band => (
                 <div key={band.grade} className="mb-scheme-band">
                   <strong>{band.grade}</strong>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+                  <div className="mb-mark-buttons">
                     {band.marks.map(mark => scoreButton('combined', mark))}
                   </div>
                 </div>
@@ -1218,7 +1202,7 @@ const PclmRubricPanel: React.FC<{
                       {component.bands.map(band => (
                         <div key={band.grade} className="mb-scheme-band">
                           <strong>{band.grade}</strong>
-                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+                          <div className="mb-mark-buttons">
                             {band.marks.map(mark => scoreButton(scoreId, mark))}
                           </div>
                         </div>
@@ -1264,7 +1248,7 @@ const PclmRubricPanel: React.FC<{
                               {control.waiting ?? control.note}
                             </p>
                           )}
-                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+                          <div className="mb-mark-buttons">
                             {criterion.permittedMarks.map(mark => scoreButton(
                               scoreId,
                               mark,
@@ -1314,7 +1298,7 @@ const PclmRubricPanel: React.FC<{
                       {control.waiting ?? control.note}
                     </p>
                   )}
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+                  <div className="mb-mark-buttons">
                     {criterion.permittedMarks.map(mark => scoreButton(
                       criterion.id,
                       mark,
@@ -1387,7 +1371,7 @@ const IrishRubricPanel: React.FC<{
 
     if (criterion.permittedMarks.length <= 11) {
       return (
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+        <div className="mb-mark-buttons">
           {criterion.permittedMarks.map(mark => {
             const active = scores[id] === mark;
             return (
@@ -1397,16 +1381,9 @@ const IrishRubricPanel: React.FC<{
                 aria-pressed={active}
                 aria-label={`Set ${criterion.label} to ${mark} marks`}
                 onClick={() => onScore(id, mark)}
-                style={{
-                  minWidth: 34, height: 32, padding: '0 8px', borderRadius: 8,
-                  border: `1.5px solid ${active ? INK : MUTED_BORDER}`,
-                  background: active ? INK : 'var(--mb-paper)',
-                  color: active ? 'var(--mb-paper)' : INK_2,
-                  font: `700 11px/1 ${MONO}`, cursor: 'pointer',
-                  fontVariantNumeric: 'tabular-nums',
-                }}
+                className="mb-mark-btn"
               >
-                {prefix}{mark}
+                {active && <MarkTick />}{prefix}{mark}
               </button>
             );
           })}
@@ -1419,11 +1396,11 @@ const IrishRubricPanel: React.FC<{
       .filter(mark => criterion.permittedMarks.includes(mark));
     return (
       <div>
-        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
-          <span style={{ font: `600 10.5px/1.4 ${SANS}`, color: MUTED }}>
+        <div className="mb-mark-readout">
+          <span>
             {criterion.kind === 'deduction' ? 'Deduction selected' : 'Mark selected'}
           </span>
-          <strong style={{ font: `750 18px/1 ${MONO}`, color: INK, fontVariantNumeric: 'tabular-nums' }}>
+          <strong>
             {prefix}{selected}
           </strong>
         </div>
@@ -1435,19 +1412,15 @@ const IrishRubricPanel: React.FC<{
           value={selected}
           aria-label={`${criterion.label} mark`}
           onChange={event => onScore(id, Number(event.currentTarget.value))}
-          style={{ width: '100%', margin: '9px 0 7px', accentColor: INK }}
+          className="mb-mark-range"
         />
-        <div style={{ display: 'flex', justifyContent: 'space-between', gap: 5 }}>
+        <div className="mb-mark-ends">
           {anchors.map(mark => (
             <button
               key={mark}
               type="button"
               onClick={() => onScore(id, mark)}
               aria-label={`Set ${criterion.label} to ${mark} marks`}
-              style={{
-                border: 0, background: 'none', padding: '2px 0', color: LABEL,
-                font: `650 9.5px/1 ${MONO}`, cursor: 'pointer',
-              }}
             >
               {prefix}{mark}
             </button>
@@ -1576,7 +1549,7 @@ const GeographyRubricPanel: React.FC<{
     const selected = scores[id] ?? 0;
     if (criterion.permittedMarks.length <= 11) {
       return (
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+        <div className="mb-mark-buttons">
           {criterion.permittedMarks.map(mark => {
             const active = selected === mark;
             return (
@@ -1586,16 +1559,9 @@ const GeographyRubricPanel: React.FC<{
                 aria-pressed={active}
                 aria-label={`Set ${criterion.label} to ${mark} marks`}
                 onClick={() => onScore(id, mark)}
-                style={{
-                  minWidth: 32, height: 30, padding: '0 7px', borderRadius: 8,
-                  border: `1.5px solid ${active ? INK : MUTED_BORDER}`,
-                  background: active ? INK : 'var(--mb-paper)',
-                  color: active ? 'var(--mb-paper)' : INK_2,
-                  font: `700 10.5px/1 ${MONO}`, cursor: 'pointer',
-                  fontVariantNumeric: 'tabular-nums',
-                }}
+                className="mb-mark-btn"
               >
-                {mark}
+                {active && <MarkTick />}{mark}
               </button>
             );
           })}
@@ -1611,9 +1577,9 @@ const GeographyRubricPanel: React.FC<{
       : 1;
     return (
       <div>
-        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
-          <span style={{ font: `600 10.5px/1.4 ${SANS}`, color: MUTED }}>Mark selected</span>
-          <strong style={{ font: `750 18px/1 ${MONO}`, color: INK, fontVariantNumeric: 'tabular-nums' }}>
+        <div className="mb-mark-readout">
+          <span>Mark selected</span>
+          <strong>
             {selected}
           </strong>
         </div>
@@ -1625,9 +1591,9 @@ const GeographyRubricPanel: React.FC<{
           value={selected}
           aria-label={`${criterion.label} mark`}
           onChange={event => onScore(id, Number(event.currentTarget.value))}
-          style={{ width: '100%', margin: '9px 0 5px', accentColor: INK }}
+          className="mb-mark-range"
         />
-        <div style={{ display: 'flex', justifyContent: 'space-between', color: LABEL, font: `650 9.5px/1 ${MONO}` }}>
+        <div className="mb-mark-ends">
           <span>0</span><span>{criterion.maxMarks}</span>
         </div>
       </div>

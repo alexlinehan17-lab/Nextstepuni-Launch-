@@ -16,7 +16,7 @@
 import React, { useEffect, useState } from 'react';
 import { TRANSLATION_NO_MODEL, type SecRubricCard, type TranslationRubric, type TranslationUnit } from '../../types/markBank';
 import SourceMaterialReader from './SourceMaterialReader';
-import { marksChip, marksLabel } from './ClaimRows';
+import { MarkTick, marksChip, marksLabel } from './ClaimRows';
 import {
   partialSteps,
   translationMarks,
@@ -34,11 +34,7 @@ interface Props {
   onScore: (id: TranslationScoreId, marks: number) => void;
 }
 
-const Tick: React.FC = () => (
-  <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-    <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
+const Tick = MarkTick;
 
 const UnitRow: React.FC<{
   unit: TranslationUnit;
@@ -63,13 +59,13 @@ const UnitRow: React.FC<{
       </div>
       <p className="mb-tr-unit-text" lang={lang} dir="auto">{unit.text}</p>
       <div className="mb-tr-choices" role="group" aria-label={`Marks for ${name}`}>
-        <button type="button" aria-pressed={mark === unit.marks}
+        <button type="button" className="mb-mark-btn" aria-pressed={mark === unit.marks}
           aria-label={`${mark === unit.marks ? 'Clear' : 'Claim'} full marks, ${unit.marks}, for ${name}`}
           onClick={() => { setPartialOpen(false); set(unit.marks); }}>
           {mark === unit.marks && <Tick />}Full · {marksChip(unit.marks)}
         </button>
         {unit.marks > 1 && (
-          <button type="button" aria-pressed={partialOpen || isPartial} aria-expanded={partialOpen || isPartial}
+          <button type="button" className="mb-mark-btn" aria-pressed={partialOpen || isPartial} aria-expanded={partialOpen || isPartial}
             aria-label={`Partial marks for ${name}`}
             onClick={() => {
               if (isPartial) { onScore(id, -1); setPartialOpen(false); } else setPartialOpen(open => !open);
@@ -77,7 +73,7 @@ const UnitRow: React.FC<{
             {isPartial && <Tick />}{isPartial ? `Partial · ${marksChip(mark!)}` : 'Partial'}
           </button>
         )}
-        <button type="button" aria-pressed={mark === 0}
+        <button type="button" className="mb-mark-btn" aria-pressed={mark === 0}
           aria-label={`${mark === 0 ? 'Clear' : 'Claim'} no marks for ${name}`}
           onClick={() => { setPartialOpen(false); set(0); }}>
           {mark === 0 && <Tick />}None · 0m

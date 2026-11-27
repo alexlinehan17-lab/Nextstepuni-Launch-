@@ -13,11 +13,14 @@ import React from 'react';
 import { SelectionMark } from '../ui/Choice';
 import './claim-rows.css';
 
-const Tick: React.FC = () => (
-  <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+/** The tick a chosen mark button carries beside its number; it draws once (claim-rows.css,
+ *  reduced motion honoured). Every mark button in Mark Bank uses this one. */
+export const MarkTick: React.FC = () => (
+  <svg className="mb-mark-tick" width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
     <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
+const Tick = MarkTick;
 
 /** "3m", "−1m" for a deduction, "0m" for an answer the scheme prices at zero: the compact form,
  *  for the places a row's own label is not (mark buttons, running totals, tariff sentences). */
@@ -106,7 +109,7 @@ export const ClaimPart: React.FC<{ label?: string; prompt?: string }> = ({ label
   </h4>
 );
 
-/** The permitted marks of one criterion as buttons; the selected one is ink. */
+/** The permitted marks of one criterion as buttons; the chosen one has the ink outline and the tick. */
 export const MarkStrip: React.FC<{
   label: string;
   marks: readonly number[];
@@ -124,7 +127,7 @@ export const MarkStrip: React.FC<{
         aria-label={`Set ${label} to ${mark} marks`}
         onClick={() => onSelect(mark)}
       >
-        {mark}
+        {selected === mark && <Tick />}{mark}
       </button>
     ))}
   </div>

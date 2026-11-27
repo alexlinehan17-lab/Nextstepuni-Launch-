@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 import type { AppliedMathematicsRubric, SecRubricCard } from '../../types/markBank';
 import SourceMaterialReader from './SourceMaterialReader';
+import { MarkTick } from './ClaimRows';
 import CropView from '../PaperTrail/CropView';
 import { paperStoragePath, paperUrl } from '../PaperTrail/storage';
 import { vaultPdf } from '../PaperTrail/vaultDocs';
@@ -79,11 +80,11 @@ const AppliedMathematicsRubricPanel: React.FC<{
           <div className="mb-applied-credit" aria-label={`${item.label} credit`}>
             {item.credit.map(mark => (
               <button
-                type="button" key={mark}
+                type="button" key={mark} className="mb-mark-btn"
                 aria-label={`Set ${item.label} to ${mark} marks`}
                 aria-pressed={(scores[`applied:${item.id}:credit`] ?? 0) === mark}
                 onClick={() => onScore(`applied:${item.id}:credit`, mark)}
-              >{mark}</button>
+              >{(scores[`applied:${item.id}:credit`] ?? 0) === mark && <MarkTick />}{mark}</button>
             ))}
           </div>
           <div className="mb-applied-deductions">
