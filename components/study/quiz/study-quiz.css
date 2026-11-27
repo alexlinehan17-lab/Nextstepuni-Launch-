@@ -18,3 +18,50 @@
 .sq-summary-body .sq-summary-total { display:flex; align-items:baseline; flex-wrap:wrap; gap:12px; margin-top:28px; font-size:13px; }.sq-summary-total strong { font-size:36px; font-weight:500; letter-spacing:-.04em; color:var(--foreground); }
 .sq-summary-footer { display:flex; align-items:center; justify-content:space-between; flex-shrink:0; gap:18px; border-top:1px solid var(--border); padding:18px 32px; font:400 12px/1.5 'DM Sans',sans-serif; color:var(--muted-foreground); }.sq-summary-footer button { min-height:44px; }
 @media(max-width:700px) { .sq-session-banner { padding:10px 20px; flex-wrap:wrap; gap:8px; }.sq-session-banner>span { flex-wrap:wrap; }.sq-summary-body { padding:28px 20px; }.sq-summary-body h2 { font-size:24px; }.sq-summary-footer,.sq-question-actions { padding:14px 20px; flex-wrap:wrap; }.sq-summary-footer>div,.sq-question-actions>div { width:100%; flex-wrap:wrap; }.sq-summary-footer button,.sq-question-actions button { flex:1; }.sq-summary-total strong { font-size:32px; } }
+
+/* The review after the questions (area 6c, 27 Nov 2026): the practice card's frame, in the agreed
+   look. On a phone a full screen of its own (OverScreen); on a laptop today's dialog. One bar
+   with Close at the top left; the small label, the light headline and its line; ruled rows with
+   the marks in the mono; the total as the number; one charcoal Done in the footer. */
+.nsu-kobra .mb-live-session-dialog.sq-review { display: flex; flex-direction: column; border: 1px solid var(--outline-soft); border-radius: var(--r-card); background: var(--surface-raised); color: var(--ink-primary); box-shadow: var(--float); }
+.nsu-kobra .mb-live-session-dialog.sq-review[data-expanded=true] { border: 0; border-radius: 0; }
+.sq-review .sq-review-bar { flex: none; }
+.sq-review .sq-review-bar.ui-bar { background: transparent; }
+@media (min-width: 768px) {
+  .sq-review .sq-review-bar .ui-bar-row { padding: 0 max(32px, calc((100% - 720px) / 2)); }
+}
+.sq-review .sq-session-banner { border-bottom-color: var(--hairline); background: transparent; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.sq-review .sq-session-banner .study-sound-toggle { min-height: 44px; border-color: var(--outline-soft); border-radius: var(--r-sm); background: var(--surface-paper); color: var(--ink-primary); font: 400 13px/18px var(--font-ui); }
+.sq-review .sq-summary-body { padding: var(--space-6) max(32px, calc((100% - 720px) / 2)) var(--space-8); color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.sq-review .sq-summary-body p { margin: 0 0 var(--space-6); color: var(--ink-secondary); }
+.sq-review .sq-summary-body h2 { margin: 0 0 var(--space-3); color: var(--ink-primary); font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; text-wrap: balance; }
+.sq-review-head { display: flex; flex-direction: column; gap: var(--space-2); margin-bottom: var(--space-8); }
+.sq-review .sq-review-head p { margin: 0; }
+.sq-review .sq-review-head .sq-review-kicker { color: var(--ink-muted); }
+.sq-review .sq-review-title { margin: 0; color: var(--ink-primary); font: 400 29px/33px var(--font-ui); letter-spacing: -0.04em; text-wrap: balance; }
+.sq-review .sq-review-lede { margin: 0; color: var(--ink-secondary); font: 400 15px/21px var(--font-ui); }
+.sq-review .sq-results { margin: 0 0 var(--space-6); border-top-color: var(--hairline); }
+.sq-review .sq-results li { gap: var(--space-3); min-height: 56px; padding: var(--space-3) 0; border-bottom-color: var(--hairline); }
+.sq-review .sq-results strong { display: block; color: var(--ink-primary); font-size: 16px; font-weight: 400; line-height: 21px; letter-spacing: -0.015em; }
+.sq-review .sq-results small { margin-top: 2px; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.sq-review .sq-results li > .ui-readout { flex: none; color: var(--ink-primary); }
+/* The mark beside each question: green when every mark was claimed, ink when worth another look,
+   a ring when skipped. The words beside it say the same. */
+.sq-review .sq-result-dot { width: 8px; height: 8px; background: var(--ink-secondary); }
+.sq-review .sq-results [data-grade=got] .sq-result-dot { background: var(--success-hex); }
+.sq-review .sq-results [data-grade=skipped] .sq-result-dot { border: 1.5px solid var(--outline-soft); background: transparent; }
+.sq-review .sq-summary-body .sq-summary-total { align-items: baseline; gap: var(--space-3); margin: 0; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.sq-review .sq-summary-total strong { color: var(--ink-primary); font-size: 40px; font-weight: 400; line-height: 40px; letter-spacing: -0.055em; font-variant-numeric: tabular-nums; }
+.sq-review .sq-summary-footer { gap: var(--space-4); padding: var(--space-4) max(32px, calc((100% - 720px) / 2)); border-top-color: var(--hairline); background: var(--surface-canvas); color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.nsu-kobra .mb-live-session-dialog.sq-review .sq-summary-footer { background: transparent; }
+.sq-review .sq-summary-footer > div { gap: var(--space-3); }
+.sq-review .sq-summary-footer .ui-btn { min-height: 52px; }
+@media (max-width: 767px) {
+  .sq-review .sq-summary-body { padding: var(--space-6) var(--space-6) var(--space-8); }
+  .sq-review .sq-summary-footer { flex-direction: column; align-items: stretch; gap: var(--space-2); padding: var(--space-3) var(--space-6); }
+  .sq-review .sq-summary-footer > div { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+  .sq-review .sq-summary-footer > div > .ui-btn:only-child { grid-column: 1 / -1; }
+}
+/* A phone: the bar owns the top inset, the page scrolls between, the footer clears the home indicator. */
+.sq-review--over .sq-summary-body { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+.sq-review--over .sq-summary-footer { flex: none; padding-bottom: calc(var(--space-3) + var(--safe-bottom, 0px)); }

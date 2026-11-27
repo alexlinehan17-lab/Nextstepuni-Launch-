@@ -1,7 +1,10 @@
 /** Real Mark Bank practice, after the study session has been safely saved. */
-import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { Check, Maximize2, Minimize2, X } from 'lucide-react';
-import KobraScope, { Button, Dialog, DialogContent, DialogDescription, DialogTitle, useSoundMuted } from '../../approved-ui-runtime';
+import React, { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
+import { Check, Maximize2, Minimize2 } from 'lucide-react';
+import KobraScope, { Dialog, DialogContent, DialogDescription, DialogTitle, useSoundMuted } from '../../approved-ui-runtime';
+import { TopBar } from '../../ui/Bars';
+import { Button, Glyph } from '../../ui/Button';
+import { OverScreen } from '../../ui/OverScreen';
 import SessionScreen, { type SessionCardResult, type SessionResponse } from '../../MarkBank/SessionScreen';
 import { ensureDeck, commitReview, memoryFor, readLocal } from '../../MarkBank/store';
 import { grade as gradeCard, retentionFor } from '../../MarkBank/scheduler';
@@ -28,6 +31,20 @@ interface Props {
   now?: () => number;
 }
 
+/** A phone (under 768px): the review is a full screen of its own, as the practice card is. */
+const usePhone = () => {
+  const query = '(max-width: 767px)';
+  const [phone, setPhone] = useState(() => typeof window !== 'undefined' && Boolean(window.matchMedia?.(query).matches));
+  useEffect(() => {
+    const media = window.matchMedia?.(query);
+    if (!media) return undefined;
+    const update = () => setPhone(media.matches);
+    media.addEventListener?.('change', update);
+    return () => media.removeEventListener?.('change', update);
+  }, []);
+  return phone;
+};
+
 export default function StudySessionQuiz({ uid, subject, seconds = 0, topicSelection, profileSubjects, examDate, initialQuiz, onDone, onSkip, now = Date.now }: Props) {
   const [quiz, setQuiz] = useState<LoadedQuiz | null | undefined>(initialQuiz);
   const [failed, setFailed] = useState(false);
@@ -40,6 +57,7 @@ export default function StudySessionQuiz({ uid, subject, seconds = 0, topicSelec
   const quizEvidence = useRef<{ card: SecCard; result: SessionCardResult }[]>([]);
   const quizSessionId = useRef<string | null>(null);
   const responses = useRef<Record<string, SessionResponse>>({});
+  const phone = usePhone();
   const { play, setEnabled } = useDeckSound();
   const muted = useSoundMuted();
   useEffect(() => { setEnabled(!muted); }, [muted, setEnabled]);
@@ -94,19 +112,28 @@ export default function StudySessionQuiz({ uid, subject, seconds = 0, topicSelec
   const claimed = results.reduce((sum, result) => sum + result.marksClaimed, 0);
   const available = results.reduce((sum, result) => sum + result.marksAvailable, 0);
   const topics = new Set(quiz?.cards.map(card => quizCardTopic(card, topicSelection)));
-  return <KobraScope><Dialog open={quiz !== null} onOpenChange={open => { if (!open) onDone(results); }}>
-    <DialogContent className="mb-live-session-dialog sq-dialog" data-expanded={expanded} showCloseButton={false}>
+  const heading = finished ? 'That’s your review.' : failed ? 'Your session is saved.' : 'Finding your questions…';
+  const lede = finished ? `${results.length} ${results.length === 1 ? 'question' : 'questions'} reviewed · ${topics.size} ${topics.size === 1 ? 'topic' : 'topics'} from your session` : 'Mark Bank questions from the topics you studied.';
+  // On a phone a full screen of its own (the shared OverScreen), as the practice card before it;
+  // on a laptop today's dialog, drawn with the shared parts. One way out at the top left, Close;
+  // on a laptop Expand gives it the whole window and Contract brings it back.
+  const frame = (content: ReactNode) => phone
+    ? <OverScreen label={`Session review: ${subject}`} onEscape={() => onDone(results)} className="sq-review sq-review--over">{content}</OverScreen>
+    : <KobraScope><Dialog open={quiz !== null} onOpenChange={open => { if (!open) onDone(results); }}>
+      <DialogContent className="mb-live-session-dialog sq-dialog sq-review" data-expanded={expanded} showCloseButton={false}>{content}</DialogContent>
+    </Dialog></KobraScope>;
+  return frame(<>
+      <TopBar tool ruled className="sq-review-bar" leave={{ kind: 'close', onPress: leave, label: 'Close review' }} over="Session review" title={subject}
+        action={phone ? undefined : <Button size="sm" aria-label={expanded ? 'Contract to compact view' : 'Expand to full screen'} aria-pressed={expanded}
+          onClick={() => setExpanded(value => !value)}><Glyph icon={expanded ? Minimize2 : Maximize2} size={16} />{expanded ? 'Contract' : 'Expand'}</Button>} />
       {banner}
-      <header className="mb-paper-session-heading">
-        <div><p className="mb-kicker">{subject} / Session review</p>
-          <DialogTitle>{finished ? 'That’s your review.' : failed ? 'Your session is saved.' : 'Finding your questions…'}</DialogTitle>
-          <DialogDescription>{finished ? `${results.length} ${results.length === 1 ? 'question' : 'questions'} reviewed · ${topics.size} ${topics.size === 1 ? 'topic' : 'topics'} from your session` : 'Mark Bank questions from the topics you studied.'}</DialogDescription>
-        </div>
-        <div><Button variant="outline" aria-label={expanded ? 'Contract to compact view' : 'Expand to full screen'} aria-pressed={expanded} onClick={() => setExpanded(value => !value)}>{expanded ? <Minimize2 size={16} /> : <Maximize2 size={16} />}<span>{expanded ? 'Contract' : 'Expand'}</span></Button>
-          <Button variant="outline" size="icon" aria-label="Close review" onClick={leave}><X size={18} /></Button></div>
-      </header>
       <div className="sq-summary-body">
-        {failed ? <><h2>Questions couldn’t load this time.</h2><p>Your study time and points are already saved.</p><Button variant="outline" onClick={() => setAttempt(value => value + 1)}>Try again</Button></> : !finished ? <p role="status">Loading questions for this session…</p> : <>
+        <header className="sq-review-head">
+          <p className="t-label sq-review-kicker">{subject} / Session review</p>
+          {phone ? <h1 className="sq-review-title">{heading}</h1> : <DialogTitle className="sq-review-title">{heading}</DialogTitle>}
+          {phone ? <p className="sq-review-lede">{lede}</p> : <DialogDescription className="sq-review-lede">{lede}</DialogDescription>}
+        </header>
+        {failed ? <><h2>Questions couldn’t load this time.</h2><p>Your study time and points are already saved.</p><Button onClick={() => setAttempt(value => value + 1)}>Try again</Button></> : !finished ? <p role="status">Loading questions for this session…</p> : <>
           <h2>A useful check on what you studied.</h2>
           <p>These are your self-assessed marks. Questions you skipped are left out of the total.</p>
           <ul className="sq-results" aria-label="Question by question">{quiz?.cards.map(card => {
@@ -114,16 +141,15 @@ export default function StudySessionQuiz({ uid, subject, seconds = 0, topicSelec
             return <li key={card.id} data-grade={!result ? 'skipped' : result.marksClaimed === result.marksAvailable ? 'got' : 'shaky'}>
               <span className="sq-result-dot" aria-hidden="true" />
               <div><strong>{quizCardTopic(card, topicSelection)}</strong><small>{card.questionRef} · {!result ? 'Skipped' : result.marksClaimed === result.marksAvailable ? 'Reviewed' : 'Worth another look'}</small></div>
-              <span>{result ? `${result.marksClaimed} / ${result.marksAvailable}` : '—'}</span>
+              <span className="ui-readout">{result ? `${result.marksClaimed} / ${result.marksAvailable}` : '—'}</span>
             </li>;
           })}</ul>
           {results.length > 0 ? <p className="sq-summary-total"><strong>{claimed} / {available}</strong><span>self-assessed marks</span></p> : <p>No marks recorded. Your study session still counts.</p>}
         </>}
       </div>
       <footer className="sq-summary-footer"><span>Your study session is saved.</span><div>
-        {finished && <Button variant="outline" onClick={() => { play('swipe'); setRevisit(true); setFinished(false); }}>Review questions</Button>}
-        <Button className="sq-primary" onClick={() => finished ? onDone(results) : onSkip()}>Done <Check size={16} aria-hidden="true" /></Button>
+        {finished && <Button size="lg" onClick={() => { play('swipe'); setRevisit(true); setFinished(false); }}>Review questions</Button>}
+        <Button kind="main" size="lg" className="sq-primary" onClick={() => finished ? onDone(results) : onSkip()}>Done</Button>
       </div></footer>
-    </DialogContent>
-  </Dialog></KobraScope>;
+    </>);
 }
