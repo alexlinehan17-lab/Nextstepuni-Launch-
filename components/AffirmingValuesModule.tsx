@@ -1,4 +1,3 @@
-import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -12,7 +11,6 @@ UserCheck
 } from 'lucide-react';
 import React,{ useEffect,useRef,useState } from 'react';
 import { AFFIRMING_VALUES_REFERENCE_LIST } from '../data/references/affirmingValues';
-import { COLORS } from '../design/tokens';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useModuleResponses } from '../hooks/useModuleResponses';
 import { blueTheme } from '../moduleThemes';
@@ -21,6 +19,9 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerGroup,AnswerLine,ExerciseSheet } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = blueTheme;
 
@@ -124,66 +125,53 @@ const WorkingMemoryGrid = () => {
   const productiveBlocks = blocks.filter(b => !b.threatened);
   const intrusiveBlocks = blocks.filter(b => b.threatened);
   const showBar = phase === 'threatened' && !animating;
-  // Semantic: 100% = success (green), <70 = danger (red), otherwise warning (amber).
-  const pctColor = percentage === 100 ? COLORS.success : percentage < 70 ? "var(--module-danger-text)" : "var(--module-danger-text)";
 
   return (
-    <div data-success={phase === "restored" || undefined} className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">
-        Working Memory Under Threat
-      </h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">
-        See how invisible pressure steals your brainpower — and how a simple exercise gives it back.
-      </p>
-
-      {/* Capacity meter */}
-      <div className="max-w-md mx-auto mb-6">
+    <ExerciseSheet title="Working Memory Under Threat" sub="See how invisible pressure steals your brainpower — and how a simple exercise gives it back." name="WorkingMemoryGrid">
+      {/* data-success stays on the exercise's own element (the app plays its success sound from it) */}
+      <div data-success={phase === "restored" || undefined} className="ex-stack">
+      {/* Capacity meter: a hairline track, an ink fill */}
+      <div>
         <div className="flex items-baseline justify-between mb-2">
-          <span className="text-xs font-medium tracking-wider uppercase text-[var(--module-muted)]">Brain Capacity</span>
+          <span className="ex-label">Brain Capacity</span>
           <MotionDiv
             key={percentage}
             initial={{ scale: 1.3, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-            className="font-serif font-bold text-xl"
-            style={{ color: moduleText(pctColor) }}
+            className="t-heading text-ink-primary"
           >
             {percentage}%
           </MotionDiv>
         </div>
-        <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2.5px solid var(--module-line)", borderRadius: 12, boxShadow: 'none', height: 20, overflow: 'hidden' }}>
+        <div className="bg-hairline" style={{ borderRadius: 4, height: 8, overflow: 'hidden' }}>
           <MotionDiv
             className="h-full"
-            style={{ backgroundColor: moduleFill(pctColor) }}
+            style={{ backgroundColor: 'var(--ink-primary)' }}
             animate={{ width: `${percentage}%` }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           />
         </div>
       </div>
 
-      {/* Grid view (visible when not in completed threatened state) */}
+      {/* Grid view (visible when not in completed threatened state): productive cells drawn in ink, intrusive ones in the well */}
       {!showBar && (
-        <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 max-w-md mx-auto mb-8">
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
           {blocks.map((block, i) => (
             <MotionDiv
               key={i}
               animate={{ scale: block.threatened ? [1, 0.9, 1] : 1 }}
               transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-              className="relative flex items-center justify-center h-16 text-center px-1"
-              style={{
-                backgroundColor: moduleFill(block.threatened ? 'var(--module-danger)' : 'var(--module-success)'),
-                border: "2.5px solid var(--module-line)",
-                borderRadius: 12,
-                boxShadow: 'none',
-              }}
+              className={`relative flex items-center justify-center h-16 text-center px-1 ${block.threatened ? 'border border-dashed border-outline-soft bg-surface-soft text-ink-muted' : 'border border-outline-strong bg-surface-paper text-ink-primary'}`}
+              style={{ borderRadius: 'var(--r-sm)' }}
             >
               <MotionDiv
                 key={block.label}
                 initial={{ opacity: 0, y: 4 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
-                className="text-xs font-bold leading-tight"
-                style={{ color: moduleText(block.threatened ? "var(--module-danger-text)" : "var(--module-ink)") }}
+                className="t-meta leading-tight"
+                style={{ color: 'inherit' }}
               >
                 {block.label}
               </MotionDiv>
@@ -198,33 +186,32 @@ const WorkingMemoryGrid = () => {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="max-w-md mx-auto mb-8"
         >
-          <div className="flex" style={{ border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none', overflow: 'hidden', height: 80 }}>
+          <div className="flex border border-outline-soft" style={{ borderRadius: 'var(--r-sm)', overflow: 'hidden', height: 80 }}>
             {/* Productive segment */}
-            <div className="flex flex-col items-center justify-center" style={{ flex: activeCount, backgroundColor: 'var(--module-success)', borderRight: threatenedCount > 0 ? "2.5px solid var(--module-line)" : 'none' }}>
-              <span className="text-[11px] font-medium uppercase tracking-wider" style={{ color: 'var(--module-ink)' }}>Productive</span>
-              <span className="font-serif font-bold text-2xl text-[var(--module-ink)]">{percentage}%</span>
+            <div className="flex flex-col items-center justify-center" style={{ flex: activeCount, backgroundColor: 'var(--ink-primary)', color: 'var(--surface-paper)' }}>
+              <span className="t-label">Productive</span>
+              <span className="t-heading">{percentage}%</span>
             </div>
             {/* Intrusive segment */}
             {threatenedCount > 0 && (
-              <div className="flex flex-col items-center justify-center" style={{ flex: threatenedCount, backgroundColor: "var(--module-danger)" }}>
-                <span className="text-[11px] font-medium uppercase tracking-wider" style={{ color: 'var(--module-ink)' }}>Intrusive</span>
-                <span className="font-serif font-bold text-2xl text-[var(--module-ink)]">{100 - percentage}%</span>
+              <div className="flex flex-col items-center justify-center bg-surface-soft text-ink-primary" style={{ flex: threatenedCount }}>
+                <span className="t-label text-ink-muted">Intrusive</span>
+                <span className="t-heading">{100 - percentage}%</span>
               </div>
             )}
           </div>
 
-          {/* Tag chips below the bar */}
+          {/* The cells' names below the bar, as plain words (no tags) */}
           <div className="flex gap-3 mt-3">
-            <div className="flex flex-wrap gap-1.5" style={{ flex: activeCount }}>
+            <div className="flex flex-wrap gap-x-3 gap-y-1" style={{ flex: activeCount }}>
               {productiveBlocks.map((b, i) => (
-                <span key={i} className="text-[11px] font-medium px-2.5 py-1" style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", borderRadius: 8, color: "var(--module-ink)" }}>{b.label}</span>
+                <span key={i} className="t-meta" style={{ color: 'var(--ink-primary)' }}>{b.label}</span>
               ))}
             </div>
-            <div className="flex flex-wrap gap-1.5" style={{ flex: threatenedCount }}>
+            <div className="flex flex-wrap gap-x-3 gap-y-1" style={{ flex: threatenedCount }}>
               {intrusiveBlocks.map((b, i) => (
-                <span key={i} className="text-[11px] font-medium px-2.5 py-1" style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", borderRadius: 8, color: "var(--module-danger-text)" }}>{b.label}</span>
+                <span key={i} className="t-meta">{b.label}</span>
               ))}
             </div>
           </div>
@@ -232,60 +219,49 @@ const WorkingMemoryGrid = () => {
       )}
 
       {/* Buttons */}
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+      <div className="ex-actions">
         {phase === 'full' && (
-          <motion.button
+          <Button
             data-sound="warning" onClick={handleSimulateThreat}
-            disabled={animating}
-            className="px-6 py-3 text-[var(--module-ink)] font-bold text-sm disabled:opacity-50"
-            style={{ backgroundColor: "var(--module-danger)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }}
-            whileHover={{ x: -2, y: -2, boxShadow: 'none' }}
-            whileTap={{ x: 2, y: 2, boxShadow: 'none' }}
-            transition={{ type: 'spring', stiffness: 400, damping: 25 }} data-wide-button="true"
+            {...{ disabled: animating }}
           >
             Simulate Exam Pressure
-          </motion.button>
+          </Button>
         )}
         {phase === 'threatened' && (
-          <motion.button
-            data-sound="select" onClick={handleActivateShield}
-            disabled={animating}
+          <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            className="px-6 py-3 text-[var(--module-ink)] font-bold text-sm disabled:opacity-50"
-            style={{ backgroundColor: moduleFill(COLORS.accent), border: `2.5px solid ${COLORS.accentDark}`, borderRadius: 14, boxShadow: 'none' }}
-            whileHover={{ x: -2, y: -2, boxShadow: 'none' }}
-            whileTap={{ x: 2, y: 2, boxShadow: 'none' }}
-            transition={{ type: 'spring', stiffness: 400, damping: 25 }} data-wide-button="true"
           >
-            Activate Shield (Values Affirmation)
-          </motion.button>
+            <Button
+              data-sound="select" onClick={handleActivateShield}
+              {...{ disabled: animating }}
+            >
+              Activate Shield (Values Affirmation)
+            </Button>
+          </motion.div>
         )}
         {phase === 'restored' && (
           <MotionDiv
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            className="flex flex-col items-center gap-3"
+            className="ex-stack w-full"
           >
-            <div className="p-4 rounded-xl text-center" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", boxShadow: 'none' }}>
-              <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}>
-                Full capacity restored. Affirming your values frees your working memory.
-              </p>
-            </div>
-            <motion.button
+            <AnswerLine>
+              Full capacity restored. Affirming your values frees your working memory.
+            </AnswerLine>
+            <TextButton
+              tone="quiet"
               onClick={handleReset}
-              className="px-5 py-2 font-bold text-sm"
-              style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-ink)" }}
-              whileHover={{ x: -1, y: -1, boxShadow: 'none' }}
-              whileTap={{ x: 1, y: 1, boxShadow: 'none' }}
-              transition={{ type: 'spring', stiffness: 400, damping: 25 }} data-wide-button="true"
+              className="self-center"
             >
               Reset Demo
-            </motion.button>
+            </TextButton>
           </MotionDiv>
         )}
       </div>
-    </div>
+      </div>
+    </ExerciseSheet>
   );
 };
 
@@ -311,29 +287,26 @@ const ValuesSelector = ({ savedValues, onSave }: { savedValues?: string[]; onSav
     };
 
     return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Core Values Audit</h4>
-             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Select your top 3 most important personal values.</p>
-             <div className="flex flex-wrap justify-center gap-3">
+        <ExerciseSheet title="Core Values Audit" sub="Select your top 3 most important personal values." name="ValuesSelector">
+             <AnswerGroup kind="several" columns={2}>
                 {values.map(value => (
-                    <motion.button
+                    <ChoiceTile
                         key={value}
+                        kind="several"
+                        tile
+                        chosen={selected.includes(value)}
                         onClick={() => handleSelect(value)}
-                        className={`px-4 py-2 text-sm font-bold rounded-full transition-all ${selected.includes(value) ? "bg-[var(--module-solid)] text-[var(--module-ink)]" : ''}`}
-                        style={selected.includes(value) ? { border: "2.5px solid var(--module-line)", boxShadow: 'none' } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", boxShadow: 'none' }}
-                        whileHover={{y: -2}} data-wide-button="true" data-selected={!!(selected.includes(value))} data-tone="orange" aria-pressed={!!(selected.includes(value))}
-                    >
-                        {value}
-                    </motion.button>
+                        label={value}
+                    />
                 ))}
-             </div>
+             </AnswerGroup>
              {selected.length === 3 && (
-                <div className="mt-8">
-                    <h5 className="font-bold text-center">Your 15-Minute Writing Prompt:</h5>
-                    <p className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl mt-2 text-center text-sm">Choose ONE of these values: <span className="font-bold">{selected.join(', ')}</span>. Write for 15 minutes about why this value is important to you and describe a time when you lived up to it.</p>
+                <div className="ex-block">
+                    <h5 className="ex-block-title">Your 15-Minute Writing Prompt:</h5>
+                    <p className="ex-block-text">Choose ONE of these values: <span className="font-bold text-ink-primary">{selected.join(', ')}</span>. Write for 15 minutes about why this value is important to you and describe a time when you lived up to it.</p>
                 </div>
              )}
-        </div>
+        </ExerciseSheet>
     );
 };
 

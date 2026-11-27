@@ -12,7 +12,7 @@ Feather,
 FileText,
 Scale
 } from 'lucide-react';
-import React,{ useState } from 'react';
+import React,{ useId,useState } from 'react';
 import { STRATEGIC_ADVANTAGE_REFERENCE_LIST } from '../data/references/strategicAdvantage';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
@@ -23,6 +23,10 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 import NorthStarCallout from './NorthStarCallout';
+import { AnswerGroup,AnswerTick,ExerciseSheet } from './learning/Exercise';
+import { Arrow,Button } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
+import { AreaField } from './ui/Field';
 
 const theme = indigoTheme;
 
@@ -52,58 +56,52 @@ const NarrativeSwitcher = () => {
       setAnimKey(k => k + 1);
     };
 
-    const toneStyles = {
-      neutral: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] border-[var(--module-line)] dark:border-[var(--module-line)]",
-      bad: "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] border-[var(--module-line)] dark:border-[var(--module-line)]",
-      good: "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:text-[var(--module-success-text)] border-[var(--module-line)] dark:border-[var(--module-line)]",
-    };
-
+    // Each line is ink on the page, ruled by a hairline; a redemption line carries the green tick (no mint or coral fill).
     const renderSequence = (steps: typeof contamination | typeof redemption, active: boolean) => (
-      <div className="space-y-3">
+      <div className="border-t border-hairline">
         {steps.map((step, i) => (
           <motion.div
             key={`${animKey}-${i}`}
             initial={active ? { opacity: 0, y: 10 } : { opacity: 0.3 }}
             animate={active ? { opacity: 1, y: 0 } : { opacity: 0.3 }}
             transition={active ? { delay: i * 0.4, duration: 0.4 } : { duration: 0.3 }}
-            className={`p-3 rounded-lg border text-sm font-medium ${active ? toneStyles[step.tone] : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-muted)] dark:text-[var(--module-ink)] border-[var(--module-line)] dark:border-[var(--module-line)]"}`}
+            className={`flex items-start gap-1.5 py-3 border-b border-hairline text-[15px] leading-[21px] ${active ? "text-ink-primary" : "text-ink-muted"}`}
           >
             {i > 0 && active && (
               <motion.span
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: i * 0.4 + 0.1 }}
-                className="mr-1.5"
+                className="text-ink-muted"
               >
                 →
               </motion.span>
             )}
-            {step.text}
+            <span className="flex-1 min-w-0">{step.text}</span>
+            {active && step.tone === 'good' && <AnswerTick className="mt-[3px]" />}
           </motion.div>
         ))}
       </div>
     );
 
-    return <div className="wr-skin" data-wide="NarrativeSwitcher"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Narrative Switcher</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Pivotal Moment: You fail an important mock exam. Which story do you tell?</p>
-            <div className="flex justify-center gap-4 mb-8">
-                <button onClick={() => handleSelect('contamination')} className={`px-5 py-2.5 text-xs font-bold rounded-lg transition-all ${script === 'contamination' ? "bg-[var(--module-danger)] text-[var(--module-ink)] shadow-none shadow-none" : "bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] hover:bg-[var(--module-danger-soft)]"}`} data-wide-button="true" data-selected={!!(script === 'contamination')} data-tone="coral" aria-pressed={!!(script === 'contamination')}>Contamination Script</button>
-                <button onClick={() => handleSelect('redemption')} className={`px-5 py-2.5 text-xs font-bold rounded-lg transition-all ${script === 'redemption' ? "bg-[var(--module-success)] text-[var(--module-ink)] shadow-none shadow-none" : "bg-[var(--module-success-soft)] text-[var(--module-success-text)] hover:bg-[var(--module-success-soft)]"}`} data-wide-button="true" data-selected={!!(script === 'redemption')} data-tone="mint" aria-pressed={!!(script === 'redemption')}>Redemption Script</button>
-            </div>
+    return <ExerciseSheet title="The Narrative Switcher" sub="Pivotal Moment: You fail an important mock exam. Which story do you tell?" name="NarrativeSwitcher">
+            <AnswerGroup kind="one" columns={2}>
+                <ChoiceTile tile chosen={script === 'contamination'} onClick={() => handleSelect('contamination')} label="Contamination Script" />
+                <ChoiceTile tile chosen={script === 'redemption'} onClick={() => handleSelect('redemption')} label="Redemption Script" />
+            </AnswerGroup>
             {script !== 'idle' && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <p className={`text-xs font-bold uppercase tracking-wider mb-3 ${script === 'contamination' ? "text-[var(--module-danger-text)]" : "text-[var(--module-muted)] dark:text-[var(--module-ink)]"}`}>Contamination Script</p>
+                <div className="flex flex-col gap-3">
+                  <p className="ex-label" style={script === 'contamination' ? { color: 'var(--ink-primary)' } : undefined}>Contamination Script</p>
                   {renderSequence(contamination, script === 'contamination')}
                 </div>
-                <div>
-                  <p className={`text-xs font-bold uppercase tracking-wider mb-3 ${script === 'redemption' ? "text-[var(--module-success-text)]" : "text-[var(--module-muted)] dark:text-[var(--module-ink)]"}`}>Redemption Script</p>
+                <div className="flex flex-col gap-3">
+                  <p className="ex-label" style={script === 'redemption' ? { color: 'var(--ink-primary)' } : undefined}>Redemption Script</p>
                   {renderSequence(redemption, script === 'redemption')}
                 </div>
               </div>
             )}
-        </div></div>;
+        </ExerciseSheet>;
 };
 
 
@@ -152,15 +150,17 @@ const DesirableDifficultyComparison = () => {
     };
 
     const easyPhases = [
-        { label: 'Feels productive', x1: 0, x2: 0.33, color: "var(--module-ink)" },
-        { label: 'Confidence high', x1: 0.33, x2: 0.66, color: "var(--module-danger-text)" },
-        { label: 'Exam shock', x1: 0.66, x2: 1, color: "var(--module-danger-text)" },
+        { label: 'Feels productive', x1: 0, x2: 0.33, color: "var(--ink-secondary)" },
+        { label: 'Confidence high', x1: 0.33, x2: 0.66, color: "var(--ink-secondary)" },
+        { label: 'Exam shock', x1: 0.66, x2: 1, color: "var(--ink-secondary)" },
     ];
     const hardPhases = [
-        { label: 'Feels frustrating', x1: 0, x2: 0.33, color: "var(--module-success-text)" },
-        { label: 'Effort pays off', x1: 0.33, x2: 0.66, color: "var(--module-success-text)" },
-        { label: 'Deeply encoded', x1: 0.66, x2: 1, color: "var(--module-success-text)" },
+        { label: 'Feels frustrating', x1: 0, x2: 0.33, color: "var(--ink-secondary)" },
+        { label: 'Effort pays off', x1: 0.33, x2: 0.66, color: "var(--ink-secondary)" },
+        { label: 'Deeply encoded', x1: 0.66, x2: 1, color: "var(--ink-secondary)" },
     ];
+    // Text in the charts: the one typeface, 11 or more.
+    const ui = { fontFamily: 'var(--font-ui)' };
 
     const Chart = ({ comfort, durability, phases, areaColor, areaId, areaData, label }: {
         comfort: number[]; durability: number[]; phases: { label: string; x1: number; x2: number; color: string }[];
@@ -169,16 +169,16 @@ const DesirableDifficultyComparison = () => {
         <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
             <defs>
                 <linearGradient id={areaId} x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor={areaColor} stopOpacity="0.5" />
-                    <stop offset="100%" stopColor={areaColor} stopOpacity="0.05" />
+                    <stop offset="0%" stopColor={areaColor} stopOpacity="0.18" />
+                    <stop offset="100%" stopColor={areaColor} stopOpacity="0.02" />
                 </linearGradient>
             </defs>
             {/* Grid lines */}
             {[0.25, 0.5, 0.75, 1.0].map(v => (
-                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--hairline)" strokeDasharray="3 3" />
             ))}
             {/* Baseline */}
-            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
+            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--outline-soft)" />
             {/* Area fill */}
             <motion.path
                 d={buildArea(areaData)}
@@ -197,7 +197,7 @@ const DesirableDifficultyComparison = () => {
             {/* Durability line (dashed) */}
             <motion.path
                 d={buildLine(durability)}
-                fill="none" stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
+                fill="none" stroke="var(--ink-primary)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
                 initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
                 transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
             />
@@ -208,63 +208,62 @@ const DesirableDifficultyComparison = () => {
                 />
             ))}
             {/* Y-axis labels */}
-            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
-            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
+            <text x={padL + 2} y={toY(1.0) - 4} fontSize="11" fill="var(--ink-muted)" style={ui}>High</text>
+            <text x={padL + 2} y={toY(0) - 4} fontSize="11" fill="var(--ink-muted)" style={ui}>Low</text>
             {/* X-axis labels */}
             {xLabels.map((m, i) => (
-                <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">{m}</text>
+                <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="11" fill="var(--ink-muted)" textAnchor={i === 0 ? 'start' : i === xLabels.length - 1 ? 'end' : 'middle'} style={ui}>{m}</text>
             ))}
             {/* Phase labels */}
             {phases.map((p, i) => (
-                <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+                <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 30} fontSize="11" fill={p.color} textAnchor="middle" style={ui}>{p.label}</text>
             ))}
             {/* Chart label */}
-            <text x={W / 2} y={14} fontSize="11" fill="var(--module-muted)" textAnchor="middle" fontWeight="700">{label}</text>
+            <text x={W / 2} y={14} fontSize="12" fill="var(--ink-primary)" textAnchor="middle" style={ui}>{label}</text>
             {/* Legend */}
-            <line x1={W - padR - 100} x2={W - padR - 84} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-            <text x={W - padR - 80} y={17} fontSize="8" fill="var(--module-surface)">Comfort</text>
-            <line x1={W - padR - 50} x2={W - padR - 34} y1={14} y2={14} stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="4 2" />
-            <text x={W - padR - 30} y={17} fontSize="8" fill="var(--module-surface)">Durability</text>
+            <line x1={W - padR - 142} x2={W - padR - 126} y1={10} y2={10} stroke={areaColor} strokeWidth="2" />
+            <text x={W - padR - 122} y={14} fontSize="11" fill="var(--ink-muted)" style={ui}>Comfort</text>
+            <line x1={W - padR - 74} x2={W - padR - 58} y1={10} y2={10} stroke="var(--ink-primary)" strokeWidth="1.5" strokeDasharray="4 2" />
+            <text x={W - padR - 54} y={14} fontSize="11" fill="var(--ink-muted)" style={ui}>Durability</text>
         </svg>
     );
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Difficulty Dividend</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">The study method that feels worst produces the best results.</p>
-
+        <ExerciseSheet title="The Difficulty Dividend" sub="The study method that feels worst produces the best results." name="DesirableDifficultyComparison">
             {!revealed ? (
-                <div className="text-center">
-                    <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">What happens to comfort and actual retention over 30 days for two very different study strategies?</p>
-                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-solid)] text-[var(--module-ink)] hover:bg-[var(--module-solid)] transition-colors" data-wide-button="true">
-                        Reveal the Dividend
-                    </button>
+                <div className="ex-stack">
+                    <p className="t-body text-ink-secondary">What happens to comfort and actual retention over 30 days for two very different study strategies?</p>
+                    <div className="ex-actions">
+                        <Button onClick={() => setRevealed(true)}>
+                            Reveal the Dividend
+                        </Button>
+                    </div>
                 </div>
             ) : (
-                <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-                    <div className="grid md:grid-cols-2 gap-4 mb-5">
-                        <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] p-3">
+                <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="ex-stack">
+                    {/* The two charts, on the sheet (no tinted box round each); the easy path drawn in ink-3, the hard path in ink */}
+                    <div className="grid md:grid-cols-2 gap-4">
+                        <div>
                             <Chart comfort={easyComfort} durability={easyDurability} phases={easyPhases}
-                                areaColor="var(--module-danger-text)" areaId="easy-grad" areaData={easyComfort} label="The Easy Path" />
+                                areaColor="var(--ink-muted)" areaId="easy-grad" areaData={easyComfort} label="The Easy Path" />
                         </div>
-                        <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] p-3">
+                        <div>
                             <Chart comfort={hardComfort} durability={hardDurability} phases={hardPhases}
-                                areaColor="var(--module-success-text)" areaId="hard-grad" areaData={hardDurability} label="The Hard Path" />
+                                areaColor="var(--ink-primary)" areaId="hard-grad" areaData={hardDurability} label="The Hard Path" />
                         </div>
                     </div>
-                    <div className="grid md:grid-cols-2 gap-4 text-sm">
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                            <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
-                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">Re-reading and highlighting</strong> feel smooth and satisfying. But ease of processing during study doesn't predict long-term retention. This is the fluency illusion.</p>
+                    {/* What each path means: words you read, under a hairline, not in a box */}
+                    <div className="grid md:grid-cols-2 gap-4">
+                        <div className="ex-block">
+                            <p className="ex-block-text"><strong className="text-ink-primary">Re-reading and highlighting</strong> feel smooth and satisfying. But ease of processing during study doesn't predict long-term retention. This is the fluency illusion.</p>
                         </div>
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                            <span className="text-[var(--module-success-text)] text-lg mt-0.5"></span>
-                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Testing yourself, spacing, and interleaving</strong> feel slower and harder. But that desirable difficulty forces deeper encoding. The struggle IS the learning signal.</p>
+                        <div className="ex-block">
+                            <p className="ex-block-text"><strong className="text-ink-primary">Testing yourself, spacing, and interleaving</strong> feel slower and harder. But that desirable difficulty forces deeper encoding. The struggle IS the learning signal.</p>
                         </div>
                     </div>
                 </motion.div>
             )}
-        </div>
+        </ExerciseSheet>
     );
 };
 
@@ -272,6 +271,7 @@ const DesirableDifficultyComparison = () => {
 const StrategicAdvantageModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const essentials = useEssentialsMode();
   const { northStar } = useNorthStar();
+  const failureId = useId();
   const sections = [
     { id: 'narrative-identity', title: 'The Story of You', eyebrow: '01 // Your Internal Script', icon: Feather },
     { id: 'agency-communion', title: 'The Two Pillars', eyebrow: '02 // Agency & Communion', icon: Scale },
@@ -334,19 +334,17 @@ const StrategicAdvantageModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="Your Redemption Script." eyebrow="Step 5" icon={FileText} theme={theme}>
               {essentials ? (<><p>You are the author of your story. Turn contamination into redemption. Balance self-reliance with connection. Reframe difficulty as advantage. Build your own "Failure Resume" below. Turn one past failure into an asset you can use.</p></>) : (<><p>You have the power to be the author of your own story. This module has given you the tools of narrative construction: the ability to turn contamination into redemption, to balance agency with communion, and to reframe difficulty as a desirable advantage. Now it's time to put it into practice.</p>
               <p>The final step is to build your own mini-"Failure Resume." By taking a past failure and actively converting it into an asset, you are practicing the core skill of resilient identity construction. You are forging your own redemption script, turning the lead of your past into the gold of your future.</p></>)}
-              <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">My Redemption Story</h4>
-                 <div className="mt-6 space-y-4">
-                    <div>
-                        <label className="block text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] uppercase ml-4 mb-2">The Failure (Pivotal Moment):</label>
-                        <select className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] outline-none" style={{ border: "1.5px solid var(--module-line)" }}><option>Failed a mock exam</option><option>Missed an assignment deadline</option><option>Didn't understand a topic in class</option></select>
-                    </div>
-                     <div>
-                        <label className="block text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] uppercase ml-4 mb-2">The Lesson (Your Asset):</label>
-                        <textarea placeholder="What is the single most valuable lesson, skill, or piece of wisdom you gained from this experience?" className="w-full h-24 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }}></textarea>
-                    </div>
+              <ExerciseSheet title="My Redemption Story" name="RedemptionStory">
+                {/* The native select, kept as it works today (uncontrolled, the same three options), drawn as the system's field with the menu arrow */}
+                <div className="ui-field">
+                    <label htmlFor={failureId} className="ui-field-label">The Failure (Pivotal Moment):</label>
+                    <span className="ui-field-wrap">
+                        <select id={failureId} className="ui-field-input" style={{ paddingRight: 44, fontFamily: 'var(--font-ui)' }}><option>Failed a mock exam</option><option>Missed an assignment deadline</option><option>Didn't understand a topic in class</option></select>
+                        <span className="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none flex text-ink-muted"><Arrow meaning="menu" size={20} /></span>
+                    </span>
                 </div>
-              </div>
+                <AreaField label="The Lesson (Your Asset):" placeholder="What is the single most valuable lesson, skill, or piece of wisdom you gained from this experience?" />
+              </ExerciseSheet>
             </ReadingSection>
           )}
         </>

@@ -1,5 +1,4 @@
 import { BrandedThoughtReframer } from './learning/BrandedFeatures';
-import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -20,6 +19,8 @@ import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { ConceptCardGrid,Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
+import { AnswerGroup,AnswerLine,ExerciseSheet } from './learning/Exercise';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = blueTheme;
 
@@ -39,34 +40,23 @@ const ExplanatoryStyleQuiz = () => {
 
     const isComplete = answers.every(a => a !== null);
 
-    return <div className="wr-skin" data-wide="ExplanatoryStyleQuiz"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Self-Talk Diagnostic</h4>
-        <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">You fail a test. Which voice is louder in your head?</p>
-        <div className="space-y-6">
-            <div>
-                <p className="text-center font-bold mb-2">"This means I'm stupid." vs "This means my strategy was wrong."</p>
-                <div className="grid grid-cols-2 gap-3">
-                  <button onClick={() => handleAnswer(0, 'pessimistic')} className="p-4 rounded-xl font-bold text-sm" style={{ backgroundColor: moduleFill(answers[0] === 'pessimistic' ? "var(--module-surface)" : "var(--module-surface)"), border: `2.5px solid ${answers[0] === 'pessimistic' ? "var(--module-line)" : "var(--module-line)"}`, borderRadius: 14, boxShadow: 'none', color: moduleText(answers[0] === 'pessimistic' ? "var(--module-danger-text)" : "var(--module-ink)") }} data-wide-button="true" data-selected={!!(answers[0] === 'pessimistic')} data-tone="coral" aria-pressed={!!(answers[0] === 'pessimistic')}>A</button>
-                  <button onClick={() => handleAnswer(0, 'optimistic')} className="p-4 rounded-xl font-bold text-sm" style={{ backgroundColor: moduleFill(answers[0] === 'optimistic' ? "var(--module-success-soft)" : "var(--module-surface)"), border: `2.5px solid ${answers[0] === 'optimistic' ? "var(--module-line)" : "var(--module-line)"}`, borderRadius: 14, boxShadow: 'none', color: moduleText(answers[0] === 'optimistic' ? "var(--module-success-text)" : "var(--module-ink)") }} data-wide-button="true" data-selected={!!(answers[0] === 'optimistic')} data-tone="mint" aria-pressed={!!(answers[0] === 'optimistic')}>B</button>
-                </div>
-            </div>
-             <div>
-                <p className="text-center font-bold mb-2">"I'll never get this." vs "I'll try again tomorrow."</p>
-                <div className="grid grid-cols-2 gap-3">
-                  <button onClick={() => handleAnswer(1, 'pessimistic')} className="p-4 rounded-xl font-bold text-sm" style={{ backgroundColor: moduleFill(answers[1] === 'pessimistic' ? "var(--module-surface)" : "var(--module-surface)"), border: `2.5px solid ${answers[1] === 'pessimistic' ? "var(--module-line)" : "var(--module-line)"}`, borderRadius: 14, boxShadow: 'none', color: moduleText(answers[1] === 'pessimistic' ? "var(--module-danger-text)" : "var(--module-ink)") }} data-wide-button="true" data-selected={!!(answers[1] === 'pessimistic')} data-tone="coral" aria-pressed={!!(answers[1] === 'pessimistic')}>A</button>
-                  <button onClick={() => handleAnswer(1, 'optimistic')} className="p-4 rounded-xl font-bold text-sm" style={{ backgroundColor: moduleFill(answers[1] === 'optimistic' ? "var(--module-success-soft)" : "var(--module-surface)"), border: `2.5px solid ${answers[1] === 'optimistic' ? "var(--module-line)" : "var(--module-line)"}`, borderRadius: 14, boxShadow: 'none', color: moduleText(answers[1] === 'optimistic' ? "var(--module-success-text)" : "var(--module-ink)") }} data-wide-button="true" data-selected={!!(answers[1] === 'optimistic')} data-tone="mint" aria-pressed={!!(answers[1] === 'optimistic')}>B</button>
-                </div>
-            </div>
-             <div>
-                <p className="text-center font-bold mb-2">"This ruins everything." vs "This is just one subject."</p>
-                <div className="grid grid-cols-2 gap-3">
-                  <button onClick={() => handleAnswer(2, 'pessimistic')} className="p-4 rounded-xl font-bold text-sm" style={{ backgroundColor: moduleFill(answers[2] === 'pessimistic' ? "var(--module-surface)" : "var(--module-surface)"), border: `2.5px solid ${answers[2] === 'pessimistic' ? "var(--module-line)" : "var(--module-line)"}`, borderRadius: 14, boxShadow: 'none', color: moduleText(answers[2] === 'pessimistic' ? "var(--module-danger-text)" : "var(--module-ink)") }} data-wide-button="true" data-selected={!!(answers[2] === 'pessimistic')} data-tone="coral" aria-pressed={!!(answers[2] === 'pessimistic')}>A</button>
-                  <button onClick={() => handleAnswer(2, 'optimistic')} className="p-4 rounded-xl font-bold text-sm" style={{ backgroundColor: moduleFill(answers[2] === 'optimistic' ? "var(--module-success-soft)" : "var(--module-surface)"), border: `2.5px solid ${answers[2] === 'optimistic' ? "var(--module-line)" : "var(--module-line)"}`, borderRadius: 14, boxShadow: 'none', color: moduleText(answers[2] === 'optimistic' ? "var(--module-success-text)" : "var(--module-ink)") }} data-wide-button="true" data-selected={!!(answers[2] === 'optimistic')} data-tone="mint" aria-pressed={!!(answers[2] === 'optimistic')}>B</button>
-                </div>
-            </div>
+    return <ExerciseSheet title="Self-Talk Diagnostic" sub="You fail a test. Which voice is louder in your head?" name="ExplanatoryStyleQuiz">
+        <div className="ex-questions">
+            <AnswerGroup kind="one" legend={<>"This means I'm stupid." vs "This means my strategy was wrong."</>} columns={2}>
+                <ChoiceTile tile chosen={answers[0] === 'pessimistic'} onClick={() => handleAnswer(0, 'pessimistic')} label={<>A</>} />
+                <ChoiceTile tile chosen={answers[0] === 'optimistic'} onClick={() => handleAnswer(0, 'optimistic')} label={<>B</>} />
+            </AnswerGroup>
+            <AnswerGroup kind="one" legend={<>"I'll never get this." vs "I'll try again tomorrow."</>} columns={2}>
+                <ChoiceTile tile chosen={answers[1] === 'pessimistic'} onClick={() => handleAnswer(1, 'pessimistic')} label={<>A</>} />
+                <ChoiceTile tile chosen={answers[1] === 'optimistic'} onClick={() => handleAnswer(1, 'optimistic')} label={<>B</>} />
+            </AnswerGroup>
+            <AnswerGroup kind="one" legend={<>"This ruins everything." vs "This is just one subject."</>} columns={2}>
+                <ChoiceTile tile chosen={answers[2] === 'pessimistic'} onClick={() => handleAnswer(2, 'pessimistic')} label={<>A</>} />
+                <ChoiceTile tile chosen={answers[2] === 'optimistic'} onClick={() => handleAnswer(2, 'optimistic')} label={<>B</>} />
+            </AnswerGroup>
         </div>
-         {isComplete && <p className="text-center mt-4 text-sm font-bold">{score > 1 ? <span className="text-[var(--module-success-text)]">Your explanatory style is optimistic and builds resilience.</span> : <span className="text-[var(--module-danger-text)]">Your explanatory style is pessimistic and may be eroding your resilience.</span>}</p>}
-      </div></div>;
+         {isComplete && <AnswerLine tone={score > 1 ? 'ok' : 'note'}>{score > 1 ? <span>Your explanatory style is optimistic and builds resilience.</span> : <span>Your explanatory style is pessimistic and may be eroding your resilience.</span>}</AnswerLine>}
+      </ExerciseSheet>;
 };
 
 // --- MODULE COMPONENT ---

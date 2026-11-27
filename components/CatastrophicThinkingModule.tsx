@@ -1,4 +1,3 @@
-import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -15,7 +14,7 @@ Shield,
 Wrench,
 Zap
 } from 'lucide-react';
-import React,{ useState } from 'react';
+import React,{ useId,useState } from 'react';
 import { CATASTROPHIC_THINKING_REFERENCE_LIST } from '../data/references/catastrophicThinking';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { usePrivateDeviceDraft } from '../hooks/usePrivateDeviceDraft';
@@ -26,6 +25,9 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { ConceptCardGrid,Highlight,MicroCommitment,ReadingSection,SupportSignpost } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerLine,ExerciseLabel,ExerciseRange,ExerciseSheet } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
+import { AreaField,Field } from './ui/Field';
 
 const theme = slateTheme;
 
@@ -38,28 +40,30 @@ const ThoughtRecord = () => {
     const update = (field: string, value: string | number) => draft.update(previous => ({ ...previous, record: { ...previous.record, [field]: value } }));
 
     const steps = ['Situation', 'Emotion', 'Negative Thought', 'Evidence For', 'Evidence Against', 'Alternative', 'Re-Rate'];
+    const intensityId = useId();
+    const reRateId = useId();
 
     return (
-        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Thought Record</h4>
+        <ExerciseSheet title="The Thought Record" name="ThoughtRecord">
              <PrivateDraftControls title="My thought record" retain={draft.retain} setRetain={draft.setRetain} onClear={draft.clear} error={draft.error} text={Object.entries(record).map(([key, value]) => `${key}: ${value}`).join('\n')} />
-             <div className="flex justify-between my-4"><div className="w-full h-1 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full"><motion.div className="h-1 bg-[var(--module-surface)] rounded-full" animate={{width: `${(step / (steps.length - 1)) * 100}%`}}/></div></div>
+             {/* How far through the record: a hairline track, an ink fill */}
+             <div className="w-full h-1 rounded-full" style={{ background: 'var(--hairline)' }}><motion.div className="h-1 rounded-full" style={{ background: 'var(--ink-primary)' }} animate={{width: `${(step / (steps.length - 1)) * 100}%`}}/></div>
              <AnimatePresence mode="wait">
              <motion.div key={step} initial={{opacity:0, x:20}} animate={{opacity:1, x:0}} exit={{opacity:0, x:-20}} >
-                {step === 0 && <div><label className="font-bold">1. Situation:</label><input value={record.situation} onChange={e => update('situation', e.target.value)} placeholder="e.g., Sitting down to study History" className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none transition-all mt-2" style={{ border: "1.5px solid var(--module-line)" }}/></div>}
-                {step === 1 && <div><label className="font-bold">2. Emotion:</label><input value={record.emotion} onChange={e => update('emotion', e.target.value)} placeholder="e.g., Panic" className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none transition-all mt-2" style={{ border: "1.5px solid var(--module-line)" }}/><label>Intensity: {record.intensity}%</label><input type="range" value={record.intensity} onChange={e => update('intensity', e.target.value)} className="chunky-slider chunky-slider-coral"/></div>}
-                {step === 2 && <div><label className="font-bold">3. Negative Automatic Thought (NAT):</label><textarea value={record.nat} onChange={e => update('nat', e.target.value)} placeholder="e.g., I'll never remember all these dates." className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none transition-all mt-2 h-24" style={{ border: "1.5px solid var(--module-line)" }}/></div>}
-                {step === 3 && <div><label className="font-bold">4. Evidence For:</label><textarea value={record.evidenceFor} onChange={e => update('evidenceFor', e.target.value)} placeholder="e.g., I got some dates wrong on last week's test." className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none transition-all mt-2 h-24" style={{ border: "1.5px solid var(--module-line)" }}/></div>}
-                {step === 4 && <div><label className="font-bold">5. Evidence Against:</label><textarea value={record.evidenceAgainst} onChange={e => update('evidenceAgainst', e.target.value)} placeholder="e.g., I passed my last test. I have 3 months to study." className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none transition-all mt-2 h-24" style={{ border: "1.5px solid var(--module-line)" }}/></div>}
-                {step === 5 && <div><label className="font-bold">6. Alternative Thought:</label><textarea value={record.alternative} onChange={e => update('alternative', e.target.value)} placeholder="e.g., History is hard, but if I use flashcards I can pass." className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none transition-all mt-2 h-24" style={{ border: "1.5px solid var(--module-line)" }}/></div>}
-                {step === 6 && <div className="space-y-4"><label className="font-bold">7. Re-Rate Emotion:</label>{record.alternative && <div className="p-3 bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 border border-success/30 dark:border-success/40 rounded-lg"><p className="text-[10px] font-bold uppercase tracking-wider text-[var(--module-success-text)] mb-1">Your Alternative Thought</p><p className="text-sm text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">{record.alternative}</p></div>}<p className="text-sm">Initial Panic: <span className="font-bold text-[var(--module-danger-text)]">{record.intensity}%</span></p><label className="text-sm">New Panic Level: <span className="font-bold">{record.reRate}%</span></label><input type="range" value={record.reRate} onChange={e => update('reRate', e.target.value)} className="chunky-slider chunky-slider-coral"/>{Number(record.reRate) < Number(record.intensity) && <p className="text-xs text-[var(--module-success-text)] dark:text-[var(--module-success-text)] font-medium">You rated this feeling {Number(record.intensity) - Number(record.reRate)} points lower. Notice what helped; there is no required result.</p>}</div>}
+                {step === 0 && <Field label="1. Situation:" value={record.situation} onChange={e => update('situation', e.target.value)} placeholder="e.g., Sitting down to study History" />}
+                {step === 1 && <div className="ex-stack"><Field label="2. Emotion:" value={record.emotion} onChange={e => update('emotion', e.target.value)} placeholder="e.g., Panic" /><div className="ex-slider"><p id={intensityId} className="ex-slider-name">Intensity: {record.intensity}%</p><ExerciseRange value={record.intensity} onChange={e => update('intensity', e.target.value)} aria-labelledby={intensityId} /></div></div>}
+                {step === 2 && <AreaField label="3. Negative Automatic Thought (NAT):" rows={3} value={record.nat} onChange={e => update('nat', e.target.value)} placeholder="e.g., I'll never remember all these dates." />}
+                {step === 3 && <AreaField label="4. Evidence For:" rows={3} value={record.evidenceFor} onChange={e => update('evidenceFor', e.target.value)} placeholder="e.g., I got some dates wrong on last week's test." />}
+                {step === 4 && <AreaField label="5. Evidence Against:" rows={3} value={record.evidenceAgainst} onChange={e => update('evidenceAgainst', e.target.value)} placeholder="e.g., I passed my last test. I have 3 months to study." />}
+                {step === 5 && <AreaField label="6. Alternative Thought:" rows={3} value={record.alternative} onChange={e => update('alternative', e.target.value)} placeholder="e.g., History is hard, but if I use flashcards I can pass." />}
+                {step === 6 && <div className="ex-stack"><p className="ex-slider-name">7. Re-Rate Emotion:</p>{record.alternative && <div className="ex-thought"><ExerciseLabel>Your Alternative Thought</ExerciseLabel><p className="ex-quote">{record.alternative}</p></div>}<p className="t-sub">Initial Panic: <b className="text-ink-primary">{record.intensity}%</b></p><div className="ex-slider"><p id={reRateId} className="ex-slider-name">New Panic Level: <b>{record.reRate}%</b></p><ExerciseRange value={record.reRate} onChange={e => update('reRate', e.target.value)} aria-labelledby={reRateId} /></div>{Number(record.reRate) < Number(record.intensity) && <AnswerLine tone="note">You rated this feeling {Number(record.intensity) - Number(record.reRate)} points lower. Notice what helped; there is no required result.</AnswerLine>}</div>}
              </motion.div>
              </AnimatePresence>
-             <div className="flex justify-between mt-4">
-                <button onClick={() => setStep(s=>Math.max(0,s-1))} disabled={step===0} className="px-3 py-1 text-xs bg-[var(--module-surface)] rounded-md disabled:opacity-50" data-wide-button="true">Prev</button>
-                <button onClick={() => setStep(s=>Math.min(steps.length-1,s+1))} disabled={step===steps.length-1} className="px-3 py-1 text-xs bg-[var(--module-surface)] rounded-md disabled:opacity-50" data-wide-button="true">Next</button>
+             <div className="flex justify-between items-center">
+                <TextButton tone="quiet" onClick={() => setStep(s=>Math.max(0,s-1))} {...{ disabled: step===0 }}>Prev</TextButton>
+                <Button size="sm" onClick={() => setStep(s=>Math.min(steps.length-1,s+1))} {...{ disabled: step===steps.length-1 }}>Next</Button>
              </div>
-        </div>
+        </ExerciseSheet>
     );
 };
 
@@ -70,17 +74,17 @@ const GradedExposureHierarchy = () => {
         { id: 3, text: "Attempt one question (timed)", suds: 80 },
     ]);
     return(
-        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Exposure Hierarchy Builder</h4>
-             <Reorder.Group axis="y" values={items} onReorder={setItems} className="space-y-2 mt-6">
+        <ExerciseSheet title="Exposure Hierarchy Builder" name="GradedExposureHierarchy">
+             {/* A sorter: each step is a box you drag (a line, no shadow) */}
+             <Reorder.Group axis="y" values={items} onReorder={setItems} className="ex-cards">
                 {items.map(item => (
-                    <Reorder.Item key={item.id} value={item} className="flex justify-between items-center cursor-grab active:cursor-grabbing" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, padding: '14px 16px', boxShadow: 'none' }} whileDrag={{ scale: 1.03, y: -2, boxShadow: 'none' }}>
+                    <Reorder.Item key={item.id} value={item} className="flex justify-between items-center gap-3 min-h-[56px] cursor-grab active:cursor-grabbing t-body text-ink-primary" style={{ backgroundColor: "var(--surface-paper)", border: "1px solid var(--outline-soft)", borderRadius: 'var(--r-ctl)', padding: '13px 14px 13px 16px', boxShadow: 'none' }} whileDrag={{ scale: 1.03, y: -2, boxShadow: 'none' }}>
                         <span>{item.text}</span>
-                        <span className="font-bold text-sm text-[var(--module-danger-text)]">{item.suds} SUDS</span>
+                        <span className="ui-readout shrink-0 text-ink-secondary">{item.suds} SUDS</span>
                     </Reorder.Item>
                 ))}
              </Reorder.Group>
-        </div>
+        </ExerciseSheet>
     );
 };
 
@@ -136,33 +140,30 @@ const PassengersOnBus = () => {
 
     // Speed indicator
     const speed = allAcknowledged ? 'Full Speed' : shoutingCount <= 1 ? 'Cruising' : shoutingCount <= 3 ? 'Slowing' : 'Stalled';
-    const speedColor = allAcknowledged ? "text-[var(--module-success-text)]" : shoutingCount <= 1 ? "text-[var(--module-success-text)]" : shoutingCount <= 3 ? "text-[var(--module-ink)]" : "text-[var(--module-danger-text)]";
     const barWidth = allAcknowledged ? 100 : Math.max(5, Math.round(100 - (shoutingCount / Math.max(1, totalCount)) * 100));
-    const barColor = allAcknowledged ? "bg-[var(--module-success)]" : shoutingCount <= 1 ? "bg-[var(--module-success)]" : shoutingCount <= 3 ? "bg-[var(--module-surface)]" : "bg-[var(--module-danger)]";
+    // The bar is ink; it turns the success green only when every passenger is acknowledged (done).
+    const barFill = allAcknowledged ? 'var(--success-hex)' : 'var(--ink-primary)';
 
     return (
-         <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Passengers on the Bus</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">You're driving toward your goal. Negative thoughts are passengers shouting at you.</p>
-            <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">You can't kick them off. But you can choose how to respond.</p>
-
-            {/* Speed indicator */}
-            <div className="mb-6 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl">
-              <div className="flex justify-between items-center mb-2">
-                <p className="text-xs font-bold text-[var(--module-muted)] dark:text-[var(--module-muted)]">Progress Toward Your Goal</p>
-                <p className={`text-xs font-bold ${speedColor}`}>{speed}</p>
+         <ExerciseSheet title="Passengers on the Bus" sub={<>You're driving toward your goal. Negative thoughts are passengers shouting at you.<span className="block mt-1">You can't kick them off. But you can choose how to respond.</span></>} name="PassengersOnBus">
+            {/* Speed indicator: on the sheet, a hairline track and an ink fill */}
+            <div className="flex flex-col gap-2">
+              <div className="flex justify-between items-baseline gap-3">
+                <ExerciseLabel>Progress Toward Your Goal</ExerciseLabel>
+                <p className="t-sub text-ink-primary">{speed}</p>
               </div>
-              <div className="w-full h-2.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full overflow-hidden">
+              <div className="w-full h-2 rounded-full overflow-hidden" style={{ background: 'var(--hairline)' }}>
                 <motion.div
-                  className={`h-full rounded-full ${barColor}`}
+                  className="h-full rounded-full"
+                  style={{ background: barFill }}
                   animate={{ width: `${barWidth}%` }}
                   transition={{ type: 'spring', damping: 15, stiffness: 80 }}
                 />
               </div>
             </div>
 
-            {/* Passenger cards */}
-            <div className="space-y-3 mb-6">
+            {/* Passengers: ruled like rows on the sheet, each with its two buttons */}
+            <div className="ex-list">
               <AnimatePresence>
                 {passengers.map(p => (
                   <motion.div
@@ -171,47 +172,44 @@ const PassengersOnBus = () => {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ duration: 0.3 }}
-                    className={`p-4 rounded-xl border flex items-center justify-between gap-3 transition-colors ${
-                      p.state === 'shouting'
-                        ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]"
-                        : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]"
-                    }`}
                   >
+                   <div className="flex items-center justify-between gap-3">
                     <div className="flex-1 min-w-0">
-                      <p className={`text-sm font-medium ${
+                      <p className={`t-body ${
                         p.state === 'shouting'
-                          ? "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"
-                          : "text-[var(--module-muted)] dark:text-[var(--module-muted)] line-through"
+                          ? "text-ink-primary"
+                          : "text-ink-muted line-through"
                       }`}>
                         {p.state === 'shouting' && (
-                          <motion.span
-                            animate={{ opacity: [1, 0.5, 1] }}
-                            transition={{ duration: 1.5, repeat: Infinity }}
-                            className="inline-block w-2 h-2 rounded-full bg-[var(--module-danger)] mr-2 align-middle"
+                          <span
+                            className="inline-block w-2 h-2 rounded-full mr-2 align-middle"
+                            style={{ background: 'var(--ink-primary)' }}
+                            aria-hidden="true"
                           />
                         )}
                         "{p.text}"
                       </p>
                       {p.state === 'acknowledged' && (
-                        <p className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1">Still here. No longer in control.</p>
+                        <p className="t-meta mt-1">Still here. No longer in control.</p>
                       )}
                     </div>
                     {p.state === 'shouting' && (
                       <div className="flex gap-2 shrink-0">
-                        <button
+                        <Button
+                          size="sm"
                           onClick={() => handleArgue(p.id)}
-                          className="px-3 py-1.5 text-[11px] font-bold bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] rounded-lg hover:bg-[var(--module-danger-soft)] dark:hover:bg-[var(--module-danger-soft)] transition-colors" data-wide-button="true"
                         >
                           Argue
-                        </button>
-                        <button
+                        </Button>
+                        <Button
+                          size="sm"
                           onClick={() => handleAcknowledge(p.id)}
-                          className="px-3 py-1.5 text-[11px] font-bold bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 text-[var(--module-success-text)] dark:text-[var(--module-success-text)] rounded-lg hover:bg-[var(--module-success)]/20 dark:hover:bg-[var(--module-success)]/25 transition-colors" data-wide-button="true"
                         >
                           Acknowledge
-                        </button>
+                        </Button>
                       </div>
                     )}
+                   </div>
                   </motion.div>
                 ))}
               </AnimatePresence>
@@ -219,34 +217,36 @@ const PassengersOnBus = () => {
 
             {/* Feedback */}
             {argued > 0 && shoutingCount > 3 && (
-              <motion.p
+              <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="text-xs text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] font-medium text-center mb-4"
               >
+                <AnswerLine tone="note">
                 Notice: arguing created {passengers.length - 3} new thought{passengers.length - 3 > 1 ? 's' : ''}. Fighting thoughts makes them multiply.
-              </motion.p>
+                </AnswerLine>
+              </motion.div>
             )}
 
             {allAcknowledged && (
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="p-4 bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 border border-success/30 dark:border-success/40 rounded-xl text-sm text-[var(--module-success-text)] dark:text-[var(--module-success-text)] font-medium text-center mb-4"
               >
+                <AnswerLine>
                 The passengers are still on the bus — but you're driving. That's defusion.
+                </AnswerLine>
               </motion.div>
             )}
 
-            <div className="flex justify-center">
-              <button
+            <div className="ex-actions">
+              <TextButton
+                tone="quiet"
                 onClick={handleReset}
-                className="px-4 py-2 text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] rounded-lg hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] transition-colors" data-wide-button="true"
               >
                 Reset
-              </button>
+              </TextButton>
             </div>
-        </div>
+        </ExerciseSheet>
     );
 }
 
@@ -264,6 +264,7 @@ const DownwardArrowDrill = () => {
   const [entries, setEntries] = useState<string[]>(['']);
   const [committed, setCommitted] = useState<boolean[]>([false]);
   const [showReflection, setShowReflection] = useState(false);
+  const chainId = useId();
 
   const currentStep = committed.filter(Boolean).length;
 
@@ -304,71 +305,58 @@ const DownwardArrowDrill = () => {
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-bold text-center" style={{ color: "var(--module-ink)" }}>The Downward Arrow</h4>
-      <p className="text-center text-sm mt-2 mb-8" style={{ color: "var(--module-muted)" }}>Follow the fear to its end. Ask "And then what?" until the catastrophe dissolves.</p>
-
-      <div className="flex flex-col items-center max-w-lg mx-auto">
+    <ExerciseSheet title="The Downward Arrow" sub={'Follow the fear to its end. Ask "And then what?" until the catastrophe dissolves.'} name="DownwardArrowDrill">
+      <div className="flex flex-col">
         {entries.map((entry, index) => {
-          const isActive = !committed[index];
-          const isLocked = index > currentStep;
+          const labelId = `${chainId}-level-${index}`;
           return (
             <React.Fragment key={index}>
-              {/* Connector between cards */}
+              {/* Connector between steps: a hairline and an ink chevron */}
               {index > 0 && (
                 <MotionDiv
                   initial={{ opacity: 0, y: -8 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.1 }}
-                  className="flex flex-col items-center my-1"
+                  className="ex-connector my-2"
                 >
-                  <div style={{ width: 2, height: 32, backgroundColor: moduleFill(committed[index] || isActive ? "var(--module-surface)" : "var(--module-surface)") }} />
-                  <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1L8 8L15 1" stroke={committed[index] || isActive ? "var(--module-danger-text)" : "var(--module-muted)"} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <i aria-hidden="true" />
+                  <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path d="M1 1L8 8L15 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </MotionDiv>
               )}
 
-              {/* Entry card */}
+              {/* Each step on the sheet under its label (no box of its own) */}
               <MotionDiv
                 initial={{ opacity: 0, y: 16, scale: 0.95 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="w-full"
               >
-                <div
-                  style={{
-                    backgroundColor: moduleFill(isActive ? "var(--module-surface)" : isLocked ? "var(--module-surface)" : "var(--module-surface)"),
-                    border: isActive ? "2px solid var(--module-line)" : isLocked ? "2px solid var(--module-line)" : "2px solid var(--module-line)",
-                    borderRadius: 14,
-                    padding: '18px 22px',
-                  }}
-                >
-                  <p className="text-[11px] font-bold uppercase tracking-wider mb-2" style={{ color: moduleText(isLocked ? "var(--module-muted)" : "var(--module-danger-text)") }}>
+                <div className="flex flex-col gap-2">
+                  <p id={labelId} className="ex-label">
                     {index === 0 ? 'The exam thought that scares you most' : `Level ${index + 1}: And then what?`}
                   </p>
 
                   {committed[index] ? (
-                    <p className="font-serif italic" style={{ fontSize: 16, color: "var(--module-ink)" }}>"{entry}"</p>
+                    <p className="ex-quote">"{entry}"</p>
                   ) : (
                     <div className="flex flex-col gap-3">
-                      <input
+                      <Field
                         type="text"
+                        aria-labelledby={labelId}
                         value={entry}
                         onChange={e => handleChange(index, e.target.value)}
                         onKeyDown={e => handleKeyDown(e, index)}
                         placeholder={index === 0 ? "I'll fail my exam" : "If that happened, then..."}
-                        className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-4 py-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none"
-                        style={{ border: "1.5px solid var(--module-line)" }}
                       />
-                      <button
+                      <Button
+                        className="self-end"
                         onClick={() => handleNext(index)}
-                        disabled={!entry.trim()}
-                        className="self-end px-5 py-2.5 text-xs font-bold text-[var(--module-ink)] transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-                        style={{ backgroundColor: "var(--module-danger)", borderRadius: 10 }} data-wide-button="true"
+                        {...{ disabled: !entry.trim() }}
                       >
                         {index + 1 < CHAIN_LENGTH ? 'And then what happens?' : 'See the full chain'}
-                      </button>
+                      </Button>
                     </div>
                   )}
                 </div>
@@ -378,7 +366,7 @@ const DownwardArrowDrill = () => {
         })}
       </div>
 
-      {/* Reflection — catastrophe dissolved */}
+      {/* Reflection — catastrophe dissolved: under a hairline, its label, the chain as numbered lines */}
       <AnimatePresence>
         {showReflection && (
           <MotionDiv
@@ -386,22 +374,21 @@ const DownwardArrowDrill = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-8 max-w-lg mx-auto"
           >
-            <div style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 14, padding: '18px 22px' }}>
-              <p className="text-[11px] font-bold uppercase tracking-wider mb-3" style={{ color: "var(--module-danger-text)" }}>Catastrophe Dissolved</p>
+            <div className="ex-block">
+              <p className="ex-label">Catastrophe Dissolved</p>
 
-              <div className="space-y-2 mb-5">
+              <ol className="flex flex-col gap-2 my-2">
                 {entries.filter((_, i) => committed[i]).map((entry, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <span className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-[10px] font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>{index + 1}</span>
-                    <p className="text-sm font-serif italic" style={{ color: "var(--module-danger-text)" }}>{entry}</p>
-                  </div>
+                  <li key={index} className="flex items-center gap-3">
+                    <span className="ex-badge">{index + 1}</span>
+                    <p className="t-body text-ink-primary">{entry}</p>
+                  </li>
                 ))}
-              </div>
+              </ol>
 
-              <p className="text-sm mb-1" style={{ color: "var(--module-danger-text)" }}>Is your final answer really as catastrophic as the first one felt?</p>
-              <p className="text-sm font-serif italic font-medium" style={{ color: "var(--module-danger-text)" }}>Most catastrophic chains end somewhere manageable. The fear lives in the ambiguity — not the reality.</p>
+              <p className="ex-block-text">Is your final answer really as catastrophic as the first one felt?</p>
+              <p className="t-body text-ink-primary">Most catastrophic chains end somewhere manageable. The fear lives in the ambiguity — not the reality.</p>
             </div>
           </MotionDiv>
         )}
@@ -409,13 +396,13 @@ const DownwardArrowDrill = () => {
 
       {/* Reset */}
       {currentStep > 0 && (
-        <div className="flex justify-center mt-6">
-          <button onClick={handleReset} className="text-sm font-medium transition-colors hover:underline" style={{ color: "var(--module-muted)" }} data-wide-button="true">
+        <div className="ex-actions">
+          <TextButton tone="quiet" onClick={handleReset}>
             Start Over
-          </button>
+          </TextButton>
         </div>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 

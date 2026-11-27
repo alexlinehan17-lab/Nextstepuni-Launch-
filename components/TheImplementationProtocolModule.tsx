@@ -1,4 +1,3 @@
-import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -8,7 +7,6 @@ import { motion } from 'framer-motion';
 import { Flag,GitBranch,Lightbulb,Shield,Target } from 'lucide-react';
 import React,{ useState } from 'react';
 import { IMPLEMENTATION_PROTOCOL_REFERENCE_LIST } from '../data/references/implementationProtocol';
-import { COLORS } from '../design/tokens';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useModuleDraft } from '../hooks/useModuleDraft';
 import { useNorthStar } from '../hooks/useNorthStar';
@@ -20,6 +18,9 @@ import { Cite } from './ModuleReferences';
 import { ConceptCardGrid,Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 import { MotionDiv } from './Motion';
 import NorthStarCallout from './NorthStarCallout';
+import { ExercisePart,ExerciseSheet } from './learning/Exercise';
+import { Button } from './ui/Button';
+import { Field } from './ui/Field';
 
 const theme = roseTheme;
 
@@ -69,37 +70,34 @@ const IntentionGapComparison = () => {
   };
 
   const gapPhases = [
-    { label: 'Excited', x1: 0, x2: 0.33, color: "var(--module-ink)" },
-    { label: 'Slipping', x1: 0.33, x2: 0.66, color: "var(--module-danger-text)" },
-    { label: 'Abandoned', x1: 0.66, x2: 1, color: "var(--module-danger-text)" },
+    { label: 'Excited', x1: 0, x2: 0.33 },
+    { label: 'Slipping', x1: 0.33, x2: 0.66 },
+    { label: 'Abandoned', x1: 0.66, x2: 1 },
   ];
   const implPhases = [
-    { label: 'Planned', x1: 0, x2: 0.33, color: "var(--module-success-text)" },
-    { label: 'Habitual', x1: 0.33, x2: 0.66, color: "var(--module-success-text)" },
-    { label: 'Automatic', x1: 0.66, x2: 1, color: "var(--module-success-text)" },
+    { label: 'Planned', x1: 0, x2: 0.33 },
+    { label: 'Habitual', x1: 0.33, x2: 0.66 },
+    { label: 'Automatic', x1: 0.66, x2: 1 },
   ];
 
-  const Chart = ({ motivation, study, phases, areaColor, areaId, label }: {
-    motivation: number[]; study: number[]; phases: { label: string; x1: number; x2: number; color: string }[];
-    areaColor: string; areaId: string; label: string;
+  // Both charts in ink: motivation the solid line with a flat fill, study hours the dashed ink-2 line
+  // (no red and green charts, no gradients). Text in the one typeface, 11 or more.
+  const font = { fontFamily: 'var(--font-ui)' };
+  const Chart = ({ motivation, study, phases, areaColor, label }: {
+    motivation: number[]; study: number[]; phases: { label: string; x1: number; x2: number }[];
+    areaColor: string; label: string;
   }) => (
-    <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
-      <defs>
-        <linearGradient id={areaId} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor={areaColor} stopOpacity="0.5" />
-          <stop offset="100%" stopColor={areaColor} stopOpacity="0.05" />
-        </linearGradient>
-      </defs>
+    <svg viewBox={`0 0 ${W} ${H}`} className="ex-figure-art w-full">
       {/* Grid lines */}
       {[0.25, 0.5, 0.75, 1.0].map((v) => (
-        <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
+        <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--hairline)" strokeDasharray="3 3" />
       ))}
       {/* Baseline */}
-      <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
+      <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--outline-soft)" />
       {/* Motivation area */}
       <motion.path
         d={buildArea(motivation)}
-        fill={`url(#${areaId})`}
+        fill={areaColor} fillOpacity="0.06"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -114,7 +112,7 @@ const IntentionGapComparison = () => {
       {/* Actual Study Hours line (dashed) */}
       <motion.path
         d={buildLine(study)}
-        fill="none" stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
+        fill="none" stroke="var(--ink-secondary)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
         initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
         transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
       />
@@ -125,63 +123,62 @@ const IntentionGapComparison = () => {
         />
       ))}
       {/* Y-axis labels */}
-      <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
-      <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
+      <text x={padL + 2} y={toY(1.0) - 4} fontSize="11" fill="var(--ink-muted)" style={font}>High</text>
+      <text x={padL + 2} y={toY(0) - 4} fontSize="11" fill="var(--ink-muted)" style={font}>Low</text>
       {/* Week labels */}
       {weeks.map((m, i) => (
-        <text key={m} x={toX(i / (weeks.length - 1))} y={toY(0) + 14} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">{m}</text>
+        <text key={m} x={toX(i / (weeks.length - 1))} y={toY(0) + 15} fontSize="11" fill="var(--ink-muted)" textAnchor={i === 0 ? 'start' : i === weeks.length - 1 ? 'end' : 'middle'} style={font}>{m}</text>
       ))}
       {/* Phase labels */}
       {phases.map((p, i) => (
-        <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+        <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 31} fontSize="11" fill="var(--ink-primary)" textAnchor="middle" style={font}>{p.label}</text>
       ))}
-      {/* Chart label */}
-      <text x={W / 2} y={14} fontSize="11" fill="var(--module-muted)" textAnchor="middle" fontWeight="700">{label}</text>
+      {/* Chart label, at the left, so the legend has the right */}
+      <text x={padL} y={15} fontSize="12" fill="var(--ink-secondary)" style={font}>{label}</text>
       {/* Legend */}
-      <line x1={W - padR - 110} x2={W - padR - 94} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-      <text x={W - padR - 90} y={17} fontSize="8" fill="var(--module-surface)">Motivation</text>
-      <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="4 2" />
-      <text x={W - padR - 24} y={17} fontSize="8" fill="var(--module-surface)">Study</text>
+      <line x1={W - padR - 132} x2={W - padR - 116} y1={11} y2={11} stroke={areaColor} strokeWidth="2.5" />
+      <text x={W - padR - 111} y={15} fontSize="11" fill="var(--ink-secondary)" style={font}>Motivation</text>
+      <line x1={W - padR - 48} x2={W - padR - 32} y1={11} y2={11} stroke="var(--ink-secondary)" strokeWidth="1.5" strokeDasharray="4 2" />
+      <text x={W - padR - 27} y={15} fontSize="11" fill="var(--ink-secondary)" style={font}>Study</text>
     </svg>
   );
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Intention-Action Gap</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Same motivation. Different strategies. Opposite outcomes.</p>
-
+    <ExerciseSheet title="The Intention-Action Gap" sub="Same motivation. Different strategies. Opposite outcomes." name="IntentionGapComparison">
       {!revealed ? (
-        <div className="text-center">
-          <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">Most students rely on motivation alone to actually get studying done. But does that actually work?</p>
-          <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-danger)] text-[var(--module-ink)] hover:bg-[var(--module-danger)] transition-colors" data-wide-button="true">
-            Reveal the Gap
-          </button>
+        <div className="ex-stack">
+          <p className="t-body text-ink-primary">Most students rely on motivation alone to actually get studying done. But does that actually work?</p>
+          <div className="ex-actions">
+            <Button onClick={() => setRevealed(true)}>
+              Reveal the Gap
+            </Button>
+          </div>
         </div>
       ) : (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-          <div className="grid md:grid-cols-2 gap-4 mb-5">
-            <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] p-3">
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="ex-stack">
+          {/* The two charts side by side on the sheet (no boxes, no red and green panels) */}
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="ex-figure">
               <Chart motivation={gapMotivation} study={gapStudy} phases={gapPhases}
-                areaColor="var(--module-danger-text)" areaId="gap-grad" label="Good Intentions Alone" />
+                areaColor="var(--ink-primary)" label="Good Intentions Alone" />
             </div>
-            <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] p-3">
+            <div className="ex-figure">
               <Chart motivation={implMotivation} study={implStudy} phases={implPhases}
-                areaColor="var(--module-success-text)" areaId="impl-grad" label="Implementation Intentions" />
+                areaColor="var(--ink-primary)" label="Implementation Intentions" />
             </div>
           </div>
-          <div className="grid md:grid-cols-2 gap-4 text-sm">
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-              <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
-              <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">Motivation fades</strong> and without a specific plan, study hours collapse with it. By week 6, you've basically stopped -- even though you started out fully committed.</p>
+          {/* What each chart says: words you read, under a hairline */}
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="ex-block">
+              <p className="ex-block-text"><strong className="text-ink-primary">Motivation fades</strong> and without a specific plan, study hours collapse with it. By week 6, you've basically stopped -- even though you started out fully committed.</p>
             </div>
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-              <span className="text-[var(--module-success-text)] text-lg mt-0.5"></span>
-              <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">With if-then plans</strong>, motivation still fades -- but study hours actually go up. The studying becomes automatic, no longer depending on how motivated you feel.</p>
+            <div className="ex-block">
+              <p className="ex-block-text"><strong className="text-ink-primary">With if-then plans</strong>, motivation still fades -- but study hours actually go up. The studying becomes automatic, no longer depending on how motivated you feel.</p>
             </div>
           </div>
         </MotionDiv>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 
@@ -239,11 +236,7 @@ const IfThenPlanBuilder = () => {
   const criteriaNames = ['Specific time', 'Specific location', 'Specific action', 'Specific duration'] as const;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-bold text-center" style={{ color: "var(--module-ink)" }}>If-Then Plan Builder</h4>
-      <p className="text-center text-sm mt-2 mb-8" style={{ color: "var(--module-muted)" }}>Create 3 specific if-then plans for your study schedule.</p>
-
-      <div className="space-y-6">
+    <ExerciseSheet title="If-Then Plan Builder" sub="Create 3 specific if-then plans for your study schedule." name="IfThenPlanBuilder">
         {plans.map((plan, i) => {
           const checks = checkQuality(plan);
           const checkValues = [checks.hasTime, checks.hasLocation, checks.hasAction, checks.hasDuration];
@@ -252,106 +245,84 @@ const IfThenPlanBuilder = () => {
           const hasContent = plan.ifText.trim().length > 0 || plan.thenText.trim().length > 0;
 
           return (
-            <div key={i} className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: '20px 24px' }}>
-              <p className="text-[11px] font-semibold uppercase tracking-wider mb-4" style={{ color: "var(--module-muted)", letterSpacing: '0.08em' }}>Plan {i + 1}</p>
-              <div className="grid md:grid-cols-2 gap-4 mb-4">
-                <div>
-                  <span className="inline-block text-xs font-bold mb-2" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '3px 10px' }}>IF</span>
-                  <input
-                    type="text"
-                    value={plan.ifText}
-                    onChange={(e) => updatePlan(i, 'ifText', e.target.value)}
-                    placeholder={i === 0 ? 'it is 4pm on Monday' : i === 1 ? 'I sit down after dinner' : 'I finish my last class on Wednesday'}
-                    className="w-full outline-none"
-                    style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", borderRadius: 10, padding: '12px 16px', fontSize: 14, color: "var(--module-ink)" }}
-                    onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
-                    onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-muted)"; }}
-                  />
-                </div>
-                <div>
-                  <span className="inline-block text-xs font-bold mb-2" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '3px 10px' }}>THEN</span>
-                  <input
-                    type="text"
-                    value={plan.thenText}
-                    onChange={(e) => updatePlan(i, 'thenText', e.target.value)}
-                    placeholder={i === 0 ? 'do 25 minutes of Maths past papers' : i === 1 ? 'revise Biology flashcards for 30 mins at my desk' : 'practice Chemistry problems for 20 mins in the library'}
-                    className="w-full outline-none"
-                    style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", borderRadius: 10, padding: '12px 16px', fontSize: 14, color: "var(--module-ink)" }}
-                    onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
-                    onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-muted)"; }}
-                  />
-                </div>
+            // Each plan on the sheet under a hairline and its small label (no box round the fields)
+            <ExercisePart key={i} label={<>Plan {i + 1}</>}>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Field
+                  label="IF"
+                  type="text"
+                  value={plan.ifText}
+                  onChange={(e) => updatePlan(i, 'ifText', e.target.value)}
+                  placeholder={i === 0 ? 'it is 4pm on Monday' : i === 1 ? 'I sit down after dinner' : 'I finish my last class on Wednesday'}
+                />
+                <Field
+                  label="THEN"
+                  type="text"
+                  value={plan.thenText}
+                  onChange={(e) => updatePlan(i, 'thenText', e.target.value)}
+                  placeholder={i === 0 ? 'do 25 minutes of Maths past papers' : i === 1 ? 'revise Biology flashcards for 30 mins at my desk' : 'practice Chemistry problems for 20 mins in the library'}
+                />
               </div>
 
               {hasContent && (
-                <MotionDiv initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} transition={{ duration: 0.3 }}>
-                  <div className="flex flex-wrap gap-2 mb-3">
+                <MotionDiv initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} transition={{ duration: 0.3 }} className="ex-stack">
+                  {/* What the plan names: plain words with a green tick or a dash, not pills */}
+                  <div className="flex flex-wrap gap-x-5 gap-y-2">
                     {criteriaNames.map((name, ci) => (
                       <motion.span
                         key={name}
                         animate={checkValues[ci] ? { scale: [1, 1.06, 1] } : {}}
                         transition={{ duration: 0.3 }}
-                        className="inline-flex items-center gap-1.5"
-                        style={{
-                          backgroundColor: moduleFill(checkValues[ci] ? COLORS.successTint : "var(--module-surface)"),
-                          border: checkValues[ci] ? `2px solid ${COLORS.success}` : "2px solid var(--module-line)",
-                          borderRadius: 20,
-                          padding: '6px 14px',
-                        }}
+                        className="inline-flex items-center gap-1.5 t-meta"
                       >
-                        <span style={{ fontWeight: 700, color: moduleText(checkValues[ci] ? COLORS.success : "var(--module-muted)"), fontSize: 13 }}>
+                        <span style={{ color: checkValues[ci] ? 'var(--success-hex)' : 'var(--ink-muted)' }}>
                           {checkValues[ci] ? '\u2713' : '\u2013'}
                         </span>
-                        <span style={{ fontSize: 13, fontWeight: 600, color: moduleText(checkValues[ci] ? COLORS.successDarkText : "var(--module-muted)") }}>
+                        <span className={checkValues[ci] ? 'text-ink-primary' : 'text-ink-muted'}>
                           {name}
                         </span>
                       </motion.span>
                     ))}
                   </div>
+                  {/* Its strength: a hairline track, an ink fill (green once it is strong) */}
                   <div className="flex items-center gap-3">
-                    <div className="flex-1 overflow-hidden" style={{ height: 8, backgroundColor: "var(--module-surface)", borderRadius: 4 }}>
-                      <MotionDiv style={{ height: '100%', backgroundColor: moduleFill(COLORS.accent), borderRadius: 4 }} initial={{ width: 0 }} animate={{ width: `${strength.pct}%` }} transition={{ duration: 0.5 }} />
+                    <div className="flex-1 overflow-hidden" style={{ height: 6, backgroundColor: "var(--hairline)", borderRadius: 3 }}>
+                      <MotionDiv style={{ height: '100%', backgroundColor: detectedCount === 4 ? 'var(--success-hex)' : 'var(--ink-primary)', borderRadius: 3 }} initial={{ width: 0 }} animate={{ width: `${strength.pct}%` }} transition={{ duration: 0.5 }} />
                     </div>
-                    <span className="text-xs font-bold shrink-0" style={{ color: moduleText(detectedCount === 4 ? COLORS.successDarkText : detectedCount >= 2 ? COLORS.accent : "var(--module-muted)"), fontWeight: detectedCount === 4 ? 700 : 600 }}>{strength.label}</span>
+                    <span className={`t-sub shrink-0 ${detectedCount >= 2 ? 'text-ink-primary' : 'text-ink-muted'}`}>{strength.label}</span>
                   </div>
                 </MotionDiv>
               )}
-            </div>
+            </ExercisePart>
           );
         })}
-      </div>
 
       {allFilled && !showSummary && (
-        <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="mt-6 text-center">
-          <motion.button
+        <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="ex-actions">
+          <Button
             onClick={() => setShowSummary(true)}
-            className="px-6 py-3 text-[var(--module-ink)] font-bold text-sm"
-            style={{ backgroundColor: moduleFill(COLORS.accent), border: `2.5px solid ${COLORS.accentDark}`, borderRadius: 14, boxShadow: 'none' }}
-            whileHover={{ x: -2, y: -2, boxShadow: 'none' }}
-            whileTap={{ x: 2, y: 2, boxShadow: 'none' }}
-            transition={{ type: 'spring', stiffness: 400, damping: 25 }} data-wide-button="true"
           >
             View My Protocol
-          </motion.button>
+          </Button>
         </MotionDiv>
       )}
 
       {showSummary && (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="mt-6" style={{ backgroundColor: moduleFill(COLORS.successTint), border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '20px 24px' }}>
-          <h5 className="font-serif text-lg font-semibold mb-4 text-center" style={{ color: moduleText(COLORS.successDarkText) }}>Your Implementation Intentions</h5>
-          <div className="space-y-3">
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="ex-block">
+          <h5 className="ex-block-title">Your Implementation Intentions</h5>
+          <ul className="ex-list">
             {plans.map((plan, i) => (
-              <div key={i} className="p-3 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "1.5px solid var(--module-line)", borderRadius: 10 }}>
-                <p className="text-sm" style={{ color: "var(--module-ink)" }}>
-                  <span className="font-bold" style={{ color: moduleText(COLORS.successDarkText) }}>If</span> {plan.ifText}, <span className="font-bold" style={{ color: moduleText(COLORS.successDarkText) }}>then I will</span> {plan.thenText}.
+              <li key={i}>
+                <p className="t-body text-ink-primary">
+                  <b>If</b> {plan.ifText}, <b>then I will</b> {plan.thenText}.
                 </p>
-              </div>
+              </li>
             ))}
-          </div>
-          <p className="text-xs mt-4 text-center" style={{ color: moduleText(COLORS.success) }}>Write these down. Put them where you'll see them. The specificity is what makes them work.</p>
+          </ul>
+          <p className="ex-block-text">Write these down. Put them where you'll see them. The specificity is what makes them work.</p>
         </MotionDiv>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 
@@ -462,36 +433,36 @@ const TheImplementationProtocolModule: React.FC<{ onBack: () => void; progress: 
               ) : (
                 <p>The Implementation Playbook combines all four tools into one system. Each one tackles a different reason you might not follow through, and together they make studying close to automatic. Here's how to put yours together.</p>
               )}
-              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>1</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Write 3-5 if-then plans</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>Cover your weekly study schedule. Make them specific enough to be automatic. Not "I'll study Biology" but "If it is 5pm on Tuesday and I am at my desk, then I will do 25 minutes of Biology flashcards."</p>
+              <ol className="ex-nums">
+                <li>
+                  <span className="ex-num">1</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Write 3-5 if-then plans</p>
+                    <p className="ex-num-sub">Cover your weekly study schedule. Make them specific enough to be automatic. Not "I'll study Biology" but "If it is 5pm on Tuesday and I am at my desk, then I will do 25 minutes of Biology flashcards."</p>
                   </div>
-                </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>2</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Attach a temptation bundle</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Pick your hardest subject — the one you're most likely to avoid. Make it the only time you get that reward.</p>
+                </li>
+                <li>
+                  <span className="ex-num">2</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Attach a temptation bundle</p>
+                    <p className="ex-num-sub">Pick your hardest subject — the one you're most likely to avoid. Make it the only time you get that reward.</p>
                   </div>
-                </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>3</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Install one commitment device</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Something that raises the cost of skipping. Tell a friend, use an app blocker, or schedule a study partner.</p>
+                </li>
+                <li>
+                  <span className="ex-num">3</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Install one commitment device</p>
+                    <p className="ex-num-sub">Something that raises the cost of skipping. Tell a friend, use an app blocker, or schedule a study partner.</p>
                   </div>
-                </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-success)" }}>4</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}>Review and revise weekly</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-success-text)", opacity: 0.8 }}>Plans that don't work aren't failures — they're data. If your Tuesday 5pm plan keeps failing because you're tired after football practice, move it. Adjust the system, don't blame yourself.</p>
+                </li>
+                <li>
+                  <span className="ex-num">4</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Review and revise weekly</p>
+                    <p className="ex-num-sub">Plans that don't work aren't failures — they're data. If your Tuesday 5pm plan keeps failing because you're tired after football practice, move it. Adjust the system, don't blame yourself.</p>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ol>
               {!essentials && (
                 <p><Highlight description="If-then plans are actually most effective for the students who struggle the most with following through. If you're someone who always plans to study but never does, this is genuinely the best tool for you. It's not just for the organised kids -- it works best for everyone else." theme={theme}>Here's the best part</Highlight>: if-then plans are especially effective for harder goals and for people who struggle most with follow-through.<Cite n={3} /> If you're someone who regularly plans to study and then doesn't -- if that gap between intention and action feels painfully familiar -- then this technique was basically built for you. The students who need it most benefit the most.</p>
               )}

@@ -1,5 +1,4 @@
 import { BrandedHopeDiagnostic } from './learning/BrandedFeatures';
-import { moduleFill,moduleText } from './learning/brandTokens';
 import { BrandedBrainMismatch,BrandedCortisol } from './learning/WideFeatures';
 /**
  * @license
@@ -15,7 +14,7 @@ Shield,
 Waypoints,
 Zap
 } from 'lucide-react';
-import React,{ useState } from 'react';
+import React,{ useId,useState } from 'react';
 import { HOPE_PROTOCOL_REFERENCE_LIST } from '../data/references/hopeProtocol';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
@@ -26,6 +25,10 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { ConceptCardGrid,Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 import NorthStarCallout from './NorthStarCallout';
+import { AnswerGroup,AnswerLine,ExerciseLabel,ExerciseSheet } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
+import { Field } from './ui/Field';
 
 const theme = emeraldTheme;
 
@@ -49,13 +52,11 @@ const DopamineDial = () => {
   const offset = circumference - (motivation / 100) * circumference;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Interactive: The Dopamine Dial</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Scenario: You need to study for a history exam. Choose your thought process.</p>
-
+    <ExerciseSheet title="Interactive: The Dopamine Dial" sub="Scenario: You need to study for a history exam. Choose your thought process." name="DopamineDial">
+      {/* The dial: a hairline track, the student's own motivation in orange */}
       <div className="w-full flex justify-center items-end h-24">
-        <svg width="160" height="80" viewBox="0 0 160 80" className="overflow-visible">
-          <path d="M 20 80 A 60 60 0 0 1 140 80" fill="none" stroke="var(--module-on-fill)" strokeWidth="15" strokeLinecap="round" />
+        <svg width="160" height="80" viewBox="0 0 160 80" className="overflow-visible" aria-hidden="true">
+          <path d="M 20 80 A 60 60 0 0 1 140 80" fill="none" stroke="var(--hairline)" strokeWidth="15" strokeLinecap="round" />
           <motion.path
             d="M 20 80 A 60 60 0 0 1 140 80"
             fill="none"
@@ -69,36 +70,32 @@ const DopamineDial = () => {
           />
           <defs>
             <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style={{stopColor: "var(--module-success)", stopOpacity:1}} />
-              <stop offset="100%" style={{stopColor: "var(--module-success)", stopOpacity:1}} />
+              <stop offset="0%" style={{stopColor: "var(--nsu-orange)", stopOpacity:1}} />
+              <stop offset="100%" style={{stopColor: "var(--nsu-orange)", stopOpacity:1}} />
             </linearGradient>
           </defs>
         </svg>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-        <button onClick={() => handleChoice('cold')} className="p-4 rounded-xl text-left text-sm font-medium" style={{ backgroundColor: moduleFill(choice === 'cold' ? "var(--module-surface)" : "var(--module-surface)"), border: `2.5px solid ${choice === 'cold' ? "var(--module-line)" : "var(--module-line)"}`, borderRadius: 14, boxShadow: 'none', color: moduleText(choice === 'cold' ? "var(--module-danger-text)" : "var(--module-ink)") }} data-wide-button="true" data-selected={!!(choice === 'cold')} data-tone="coral" aria-pressed={!!(choice === 'cold')}><strong>"Cold" Cognition:</strong> "I need to study history."</button>
-        <button onClick={() => handleChoice('hot')} className="p-4 rounded-xl text-left text-sm font-medium" style={{ backgroundColor: moduleFill(choice === 'hot' ? "var(--module-success-soft)" : "var(--module-surface)"), border: `2.5px solid ${choice === 'hot' ? "var(--module-line)" : "var(--module-line)"}`, borderRadius: 14, boxShadow: 'none', color: moduleText(choice === 'hot' ? "var(--module-success-text)" : "var(--module-ink)") }} data-wide-button="true" data-selected={!!(choice === 'hot')} data-tone="mint" aria-pressed={!!(choice === 'hot')}><strong>"Hot" Cognition (EFT):</strong> "Imagine acing that exam..."</button>
-      </div>
+      <AnswerGroup kind="one">
+        <ChoiceTile chosen={choice === 'cold'} onClick={() => handleChoice('cold')} label={<><strong>"Cold" Cognition:</strong> "I need to study history."</>} />
+        <ChoiceTile chosen={choice === 'hot'} onClick={() => handleChoice('hot')} label={<><strong>"Hot" Cognition (EFT):</strong> "Imagine acing that exam..."</>} />
+      </AnswerGroup>
 
       <AnimatePresence>
         {choice !== 'none' && (
           <motion.div
             initial={{opacity:0, y:10}}
             animate={{opacity:1, y:0}}
-            className="mt-8 p-6 rounded-xl"
-            style={{
-              backgroundColor: moduleFill(choice === 'cold' ? "var(--module-surface)" : "var(--module-success-soft)"),
-              border: `2.5px solid ${choice === 'cold' ? "var(--module-line)" : "var(--module-line)"}`,
-              boxShadow: 'none',
-            }}
           >
-            {choice === 'cold' && <p style={{ color: "var(--module-danger-text)" }}><strong>Result:</strong> A small motivational increase. The task is abstract and lacks an immediate reward signal for your brain.</p>}
-            {choice === 'hot' && <p style={{ color: "var(--module-success-text)" }}><strong>Result:</strong> Major dopamine boost! Vividly simulating future success makes the reward feel real <em>now</em>, flooding your brain with the motivation to start.</p>}
+            <AnswerLine tone={choice === 'hot' ? 'ok' : 'note'}>
+              {choice === 'cold' && <span><strong>Result:</strong> A small motivational increase. The task is abstract and lacks an immediate reward signal for your brain.</span>}
+              {choice === 'hot' && <span><strong>Result:</strong> Major dopamine boost! Vividly simulating future success makes the reward feel real <em>now</em>, flooding your brain with the motivation to start.</span>}
+            </AnswerLine>
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </ExerciseSheet>
   );
 };
 
@@ -108,6 +105,7 @@ const HopeMap = () => {
   const [pathway, setPathway] = useState('');
   const [obstacle, setObstacle] = useState('');
   const [solution, setSolution] = useState('');
+  const promptId = useId();
 
   const steps = [
     { label: 'Goal', prompt: 'What is your goal?', hint: 'Be specific. Not "do well in Maths" but "Get a top grade in Maths by June."' },
@@ -122,32 +120,20 @@ const HopeMap = () => {
   const isComplete = step === 4;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">My Hope Circuit Blueprint</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Build your circuit one component at a time.</p>
-
-      {/* Progress dots */}
-      <div className="flex justify-center gap-2 mb-8">
+    <ExerciseSheet title="My Hope Circuit Blueprint" sub="Build your circuit one component at a time." name="HopeMap">
+      {/* Progress: step marks (the current one ink, done ones ticked, the rest a hairline ring) */}
+      <ol className="ex-steps">
         {steps.map((s, i) => (
-          <div key={i} className="flex items-center gap-2">
-            <div
-              className="w-8 h-8 flex items-center justify-center text-xs font-bold transition-all duration-300"
-              style={{
-                borderRadius: 10,
-                backgroundColor: moduleFill(i < step || isComplete ? "var(--module-success)" : i === step && !isComplete ? "var(--module-success-soft)" : "var(--module-surface)"),
-                border: `2px solid ${i < step || isComplete ? "var(--module-line)" : i === step && !isComplete ? "var(--module-line)" : "var(--module-line)"}`,
-                boxShadow: 'none',
-                color: moduleText(i < step || isComplete ? "var(--module-on-fill)" : i === step && !isComplete ? "var(--module-success-text)" : "var(--module-muted)"),
-              }}
-            >
+          <li key={i} className="flex items-center gap-2">
+            <span className={`ex-badge${i < step || isComplete ? ' ex-badge--done' : i === step && !isComplete ? ' ex-badge--on' : ''}`}>
               {i < step || isComplete ? '✓' : i + 1}
-            </div>
+            </span>
             {i < steps.length - 1 && (
-              <div className="w-8 h-0.5 transition-all duration-300" style={{ backgroundColor: moduleFill(i < step || isComplete ? "var(--module-success)" : "var(--module-surface)") }} />
+              <span className={`block w-8 h-px ${i < step || isComplete ? 'bg-outline-strong' : 'bg-hairline'}`} aria-hidden="true" />
             )}
-          </div>
+          </li>
         ))}
-      </div>
+      </ol>
 
       <AnimatePresence mode="wait">
         {!isComplete ? (
@@ -157,37 +143,34 @@ const HopeMap = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.3 }}
-            className="space-y-4"
+            className="ex-stack"
           >
-            <p className="text-xs font-semibold text-[var(--module-success-text)] uppercase tracking-wider">{steps[step].label}</p>
-            <p className="font-serif text-xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{steps[step].prompt}</p>
-            <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)]">{steps[step].hint}</p>
-            <input
+            <div className="ex-head">
+              <ExerciseLabel>{steps[step].label}</ExerciseLabel>
+              <p id={promptId} className="t-heading text-ink-primary">{steps[step].prompt}</p>
+              <p className="ex-sub">{steps[step].hint}</p>
+            </div>
+            <Field
+              aria-labelledby={promptId}
               value={values[step]}
               onChange={(e) => setters[step](e.target.value)}
               placeholder="Type your answer here..."
-              className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none"
-              style={{ border: "1.5px solid var(--module-line)" }}
               autoFocus
             />
-            <div className="flex justify-between items-center pt-2">
-              <button
+            <div className="flex justify-between items-center">
+              <TextButton
+                tone="quiet"
                 onClick={() => setStep(step - 1)}
-                className={`text-sm font-medium text-zinc-400 hover:text-zinc-600 transition-colors ${step === 0 ? 'invisible' : ''}`} data-wide-button="true"
+                className={step === 0 ? 'invisible' : ''}
               >
                 Back
-              </button>
-              <button
+              </TextButton>
+              <Button
                 onClick={() => setStep(step + 1)}
-                disabled={!canAdvance}
-                className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${
-                  canAdvance
-                    ? "bg-[var(--module-success)] text-[var(--module-ink)] hover:bg-[var(--module-success)] shadow-none shadow-none"
-                    : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-muted)] cursor-not-allowed"
-                }`} data-wide-button="true" data-selected={!!(canAdvance)} data-tone="mint" aria-pressed={!!(canAdvance)}
+                {...{ disabled: !canAdvance }}
               >
                 {step === 3 ? 'Complete Blueprint' : 'Next'}
-              </button>
+              </Button>
             </div>
           </motion.div>
         ) : (
@@ -196,66 +179,61 @@ const HopeMap = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4 }}
-            className="space-y-4"
+            className="ex-stack"
           >
-            <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-2xl" style={{ border: "2.5px solid var(--module-line)", boxShadow: 'none', padding: '24px 28px' }}>
+            {/* The finished circuit: words you read, on the sheet with its wires, not in a box */}
+            <div className="flex flex-col pt-3 border-t border-hairline">
               {/* Step 1: Power Source */}
-              <div className="flex items-start gap-4">
-                <div className="w-11 h-11 shrink-0 flex items-center justify-center" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 12, boxShadow: 'none' }}>
-                  <Zap size={18} style={{ color: "var(--module-danger-text)" }} />
-                </div>
-                <div className="pt-0.5">
-                  <p className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--module-muted)" }}>The Power Source</p>
-                  <p className="font-serif font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mt-0.5">{goal}</p>
+              <div className="flex items-start gap-3">
+                <span className="ex-icon w-6 justify-center pt-0.5"><Zap size={18} aria-hidden="true" /></span>
+                <div className="flex flex-col gap-1">
+                  <p className="ex-label">The Power Source</p>
+                  <p className="t-row text-ink-primary">{goal}</p>
                 </div>
               </div>
-              <div className="h-5 flex items-center" style={{ marginLeft: 21 }}><div className="w-0.5 h-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" /></div>
+              <div className="h-5 flex items-center" style={{ marginLeft: 11.5 }}><div className="w-px h-full bg-outline-soft" /></div>
 
               {/* Step 2: Wiring */}
-              <div className="flex items-start gap-4">
-                <div className="w-11 h-11 shrink-0 flex items-center justify-center" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 12, boxShadow: 'none' }}>
-                  <Waypoints size={18} style={{ color: "var(--module-ink)" }} />
-                </div>
-                <div className="pt-0.5">
-                  <p className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--module-muted)" }}>The Wiring</p>
-                  <p className="font-serif font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mt-0.5">{pathway}</p>
+              <div className="flex items-start gap-3">
+                <span className="ex-icon w-6 justify-center pt-0.5"><Waypoints size={18} aria-hidden="true" /></span>
+                <div className="flex flex-col gap-1">
+                  <p className="ex-label">The Wiring</p>
+                  <p className="t-row text-ink-primary">{pathway}</p>
                 </div>
               </div>
-              <div className="h-5 flex items-center" style={{ marginLeft: 21 }}><div className="w-0.5 h-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" /></div>
+              <div className="h-5 flex items-center" style={{ marginLeft: 11.5 }}><div className="w-px h-full bg-outline-soft" /></div>
 
               {/* Step 3: Short Circuit */}
-              <div className="flex items-start gap-4">
-                <div className="w-11 h-11 shrink-0 flex items-center justify-center" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 12, boxShadow: 'none' }}>
-                  <Shield size={18} style={{ color: "var(--module-danger-text)" }} />
-                </div>
-                <div className="pt-0.5">
-                  <p className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--module-muted)" }}>Short Circuit</p>
-                  <p className="font-serif font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mt-0.5">{obstacle}</p>
+              <div className="flex items-start gap-3">
+                <span className="ex-icon w-6 justify-center pt-0.5"><Shield size={18} aria-hidden="true" /></span>
+                <div className="flex flex-col gap-1">
+                  <p className="ex-label">Short Circuit</p>
+                  <p className="t-row text-ink-primary">{obstacle}</p>
                 </div>
               </div>
-              <div className="h-5 flex items-center" style={{ marginLeft: 21 }}><div className="w-0.5 h-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" /></div>
+              <div className="h-5 flex items-center" style={{ marginLeft: 11.5 }}><div className="w-px h-full bg-outline-soft" /></div>
 
               {/* Step 4: The Fix */}
-              <div className="flex items-start gap-4">
-                <div className="w-11 h-11 shrink-0 flex items-center justify-center" style={{ backgroundColor: "var(--module-success-soft)", border: "2px solid var(--module-line)", borderRadius: 12, boxShadow: 'none' }}>
-                  <Activity size={18} style={{ color: "var(--module-success-text)" }} />
-                </div>
-                <div className="pt-0.5">
-                  <p className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--module-muted)" }}>The Fix</p>
-                  <p className="font-serif font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mt-0.5">{solution}</p>
+              <div className="flex items-start gap-3">
+                <span className="ex-icon w-6 justify-center pt-0.5"><Activity size={18} aria-hidden="true" /></span>
+                <div className="flex flex-col gap-1">
+                  <p className="ex-label">The Fix</p>
+                  <p className="t-row text-ink-primary">{solution}</p>
                 </div>
               </div>
             </div>
-            <button
-              onClick={() => { setStep(0); setGoal(''); setPathway(''); setObstacle(''); setSolution(''); }}
-              className="w-full text-center text-sm font-medium text-[var(--module-muted)] hover:text-[var(--module-ink)] hover:underline transition-colors pt-2" data-wide-button="true"
-            >
-              Start a new blueprint
-            </button>
+            <div className="ex-actions">
+              <TextButton
+                tone="quiet"
+                onClick={() => { setStep(0); setGoal(''); setPathway(''); setObstacle(''); setSolution(''); }}
+              >
+                Start a new blueprint
+              </TextButton>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </ExerciseSheet>
   );
 };
 

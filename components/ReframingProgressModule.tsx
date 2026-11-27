@@ -23,10 +23,18 @@ import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 
 import KanbanBoard from './activities/KanbanBoard';
+import { ExerciseSheet } from './learning/Exercise';
+import { Button } from './ui/Button';
 
 const theme = accentTheme;
 
 // --- INTERACTIVE COMPONENTS ---
+
+/** A red/amber/green mark's ring: a line when not chosen, an ink outline when chosen. */
+const ragRing = (chosen: boolean): React.CSSProperties => ({
+    background: 'var(--surface-paper)',
+    border: chosen ? '2px solid var(--ink-primary)' : '1px solid var(--outline-soft)',
+});
 
 const RetrospectiveLog = () => {
     const [topics, setTopics] = useState([
@@ -48,25 +56,30 @@ const RetrospectiveLog = () => {
         setNextTopic("Everything's Green! Review oldest topic.");
     };
 
-    return <div className="wr-skin" data-wide="RetrospectiveLog"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Retrospective Log</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Rate your confidence. Let the "Worst First" rule decide your next move.</p>
+    return <ExerciseSheet title="Retrospective Log" sub={'Rate your confidence. Let the "Worst First" rule decide your next move.'} name="RetrospectiveLog">
+            {/* Each topic a ruled row; its three marks are the red, amber and green the module names (their only
+                label), each a 44 x 44 round button with a line, chosen = an ink outline round its colour */}
+            <div className="ex-list">
             {topics.map(t => (
-                <div key={t.name} className="flex items-center justify-between p-2">
-                    <span className="font-bold">{t.name}</span>
+                <div key={t.name}>
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="t-row text-ink-primary">{t.name}</span>
                     <div className="flex gap-1">
-                        <button aria-label="Mark as struggling (red)" onClick={() => updateStatus(t.name, 'red')} className={`w-6 h-6 rounded-full border ${t.status === 'red' ? "bg-[var(--module-danger)] border-[var(--module-line)]" : "bg-[var(--module-danger-soft)]"}`} data-wide-button="true" data-selected={t.status === 'red'} data-tone="coral" aria-pressed={t.status === 'red'} />
-                        <button aria-label="Mark as okay (amber)" onClick={() => updateStatus(t.name, 'amber')} className={`w-6 h-6 rounded-full border ${t.status === 'amber' ? "bg-[var(--module-surface)] border-[var(--module-line)]" : "bg-[var(--module-surface)]"}`} data-wide-button="true" data-selected={t.status === 'amber'} data-tone="orange" aria-pressed={t.status === 'amber'} />
-                        <button aria-label="Mark as confident (green)" onClick={() => updateStatus(t.name, 'green')} className={`w-6 h-6 rounded-full border ${t.status === 'green' ? "bg-[var(--module-success)] border-[var(--module-line)]" : "bg-[var(--module-success-soft)]"}`} data-wide-button="true" data-selected={t.status === 'green'} data-tone="mint" aria-pressed={t.status === 'green'} />
+                        <button type="button" aria-label="Mark as struggling (red)" onClick={() => updateStatus(t.name, 'red')} className="w-11 h-11 rounded-full grid place-items-center" style={ragRing(t.status === 'red')} aria-pressed={t.status === 'red'}><span className="block w-5 h-5 rounded-full" style={{ background: 'var(--danger-tint-ink)', opacity: t.status === 'red' ? 1 : 0.35 }} /></button>
+                        <button type="button" aria-label="Mark as okay (amber)" onClick={() => updateStatus(t.name, 'amber')} className="w-11 h-11 rounded-full grid place-items-center" style={ragRing(t.status === 'amber')} aria-pressed={t.status === 'amber'}><span className="block w-5 h-5 rounded-full" style={{ background: 'var(--warning-text)', opacity: t.status === 'amber' ? 1 : 0.35 }} /></button>
+                        <button type="button" aria-label="Mark as confident (green)" onClick={() => updateStatus(t.name, 'green')} className="w-11 h-11 rounded-full grid place-items-center" style={ragRing(t.status === 'green')} aria-pressed={t.status === 'green'}><span className="block w-5 h-5 rounded-full" style={{ background: 'var(--success-hex)', opacity: t.status === 'green' ? 1 : 0.35 }} /></button>
                     </div>
+                  </div>
                 </div>
             ))}
-             <div className="mt-6 text-center">
-                 <button onClick={findNext} className="px-4 py-2 bg-[var(--module-surface)] text-[var(--module-ink)] text-xs font-bold rounded-lg" data-wide-button="true">Find Next Task</button>
-                 <p className="mt-4 text-sm">Next up: <span className="font-bold text-[var(--module-danger-text)]">{nextTopic}</span></p>
+            </div>
+             <div className="ex-actions">
+                 <Button onClick={findNext}>Find Next Task</Button>
              </div>
-        </div></div>;
+             <p className="t-body text-ink-primary text-center">Next up: <b>{nextTopic}</b></p>
+        </ExerciseSheet>;
 };
+
 
 
 // --- MODULE COMPONENT ---
