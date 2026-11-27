@@ -1,5 +1,4 @@
 import { BrandedSupport,FocusCompanion } from './learning/WideFeatures';
-import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -7,10 +6,10 @@ import { moduleFill,moduleText } from './learning/brandTokens';
 
 import { motion } from 'framer-motion';
 import { ArrowRight,Quote } from 'lucide-react';
+import { PressBox } from './ui/List';
 import React,{ useContext,useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigation } from '../contexts/NavigationContext';
-import { COLORS } from '../design/tokens';
 import { type ModuleTheme } from '../types';
 import { MotionDiv } from './Motion';
 import { BrandBook } from './learning/BrandBook';
@@ -94,60 +93,37 @@ interface ToolJumpCardProps {
 
 export const ToolJumpCard: React.FC<ToolJumpCardProps> = ({ toolId, title, description, ctaLabel }) => {
   const nav = useNavigation();
+  // A box you press (area 5b): a line, no shadow, no orange disc; its label in small capitals, the arrow in ink.
   return (
     <MotionDiv
       initial={{ opacity: 0, y: 12 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-40px' }}
       transition={{ duration: 0.5, ease: [0.25, 1, 0.5, 1] }}
-      className="my-14"
+      className="ms-tool"
     >
-      <button
-        type="button"
-        onClick={() => nav.navigateToInnovationZone(toolId)}
-        className="module-tool-jump w-full bg-[var(--surface-paper)] text-left text-[var(--ink-primary)]"
-        style={{
-          border: '2px solid var(--outline-strong)',
-          borderRadius: 16,
-          padding: '20px 22px',
-          boxShadow: 'none',
-          transition: 'transform 120ms ease, box-shadow 120ms ease',
-        }}
-        onMouseEnter={(e) => {
-          (e.currentTarget as HTMLButtonElement).style.transform = 'translate(-2px, -2px)';
-          (e.currentTarget as HTMLButtonElement).style.boxShadow = '6px 6px 0px 0px var(--outline-strong)';
-        }}
-        onMouseLeave={(e) => {
-          (e.currentTarget as HTMLButtonElement).style.transform = 'translate(0, 0)';
-          (e.currentTarget as HTMLButtonElement).style.boxShadow = '4px 4px 0px 0px var(--outline-strong)';
-        }} data-wide-button="true"
-      >
-        <div className="flex items-center gap-4">
-          <div className="flex-1 min-w-0">
-            <p className="text-[10px] font-bold uppercase tracking-[0.15em] mb-1.5" style={{ color: 'var(--module-accent-text)' }}>
+      <PressBox onPress={() => nav.navigateToInnovationZone(toolId)} className="module-tool-jump ms-tool-box">
+        <span className="ms-tool-row">
+          <span className="ms-tool-copy">
+            <span className="ex-label ms-tool-label">
               Apply this · Tool
-            </p>
-            <h4 className="font-serif text-lg sm:text-xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-1">
+            </span>
+            <span className="ms-tool-title">
               {title}
-            </h4>
-            <p className="text-[13px] sm:text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] leading-snug">
+            </span>
+            <span className="ms-tool-text">
               {description}
-            </p>
-          </div>
-          <div
-            className="shrink-0 w-11 h-11 rounded-full flex items-center justify-center"
-            style={{ backgroundColor: moduleFill(COLORS.accent) }}
-          >
-            <ArrowRight size={18} style={{ color: "var(--module-on-fill)" }} />
-          </div>
-        </div>
+            </span>
+          </span>
+          <ArrowRight size={20} strokeWidth={1.75} className="ms-tool-arrow" aria-hidden="true" />
+        </span>
         {ctaLabel && (
-          <div className="mt-3 inline-flex items-center gap-1 text-xs font-bold tracking-wide" style={{ color: 'var(--module-accent-text)' }}>
+          <span className="ms-tool-cta">
             {ctaLabel}
-            <ArrowRight size={12} />
-          </div>
+            <ArrowRight size={16} strokeWidth={2} aria-hidden="true" />
+          </span>
         )}
-      </button>
+      </PressBox>
     </MotionDiv>
   );
 };
@@ -272,36 +248,27 @@ interface ConceptCardGridProps {
 }
 
 export const ConceptCardGrid = ({ cards, columns = 2, accentNote }: ConceptCardGridProps) => (
-  <div className="my-8 not-prose">
-    <div className={`grid gap-3 ${columns === 4 ? 'grid-cols-2 md:grid-cols-4' : 'grid-cols-1 md:grid-cols-2'}`}>
+  // Named ideas as numbered lines on the page (area 5b; board c-read-flow): no box round words you read, an ink
+  // numeral, no orange disc; "Key Lever" a small capitals label; the note plain words under a hairline.
+  <div className="my-8 not-prose ms-concepts" data-columns={columns}>
+    <ol className="ex-nums">
       {cards.map((card) => (
-        <div
-          key={card.number}
-          className="relative"
-          style={{
-            backgroundColor: moduleFill(card.highlight ? 'var(--accent-tint)' : 'var(--surface-paper)'),
-            border: card.highlight ? `2px solid ${COLORS.accent}` : '1.5px solid var(--outline-soft)',
-            borderRadius: 14,
-            padding: '18px 20px',
-          }}
-        >
+        <li key={card.number} className={card.highlight ? 'ms-concept ms-concept--key' : 'ms-concept'}>
           {card.highlight && (
-            <span className="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider" style={{ backgroundColor: 'var(--accent-tint)', color: 'var(--accent-tint-ink)', borderRadius: 20, padding: '3px 8px' }}>
+            <span className="ex-label ms-concept-key">
               Key Lever
             </span>
           )}
-          <div className="w-9 h-9 rounded-full flex items-center justify-center mb-3" style={{ backgroundColor: moduleFill(COLORS.accent) }}>
-            <span className="font-serif font-bold text-base text-[var(--module-ink)]">{card.number}</span>
+          <span className="ex-num">{card.number}</span>
+          <div className="ex-num-copy">
+            <p className="ex-num-title">{card.term}</p>
+            <p className="ex-num-sub">{card.description}</p>
           </div>
-          <p className="font-serif font-bold text-base mb-1" style={{ color: 'var(--ink-primary)' }}>{card.term}</p>
-          <p className="text-[13px] leading-relaxed" style={{ color: 'var(--ink-secondary)' }}>{card.description}</p>
-        </div>
+        </li>
       ))}
-    </div>
+    </ol>
     {accentNote && (
-      <div className="mt-3" style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: moduleFill(COLORS.accentTint), padding: '12px 16px', borderRadius: '0 10px 10px 0' }}>
-        <p className="text-[13px] italic" style={{ color: moduleText(COLORS.accentDarkText) }}>{accentNote}</p>
-      </div>
+      <p className="ms-concepts-note">{accentNote}</p>
     )}
   </div>
 );
@@ -322,40 +289,24 @@ interface GlossaryGridProps {
 }
 
 export const GlossaryGrid: React.FC<GlossaryGridProps> = ({ items }) => (
-  <div className="my-8 not-prose" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-    {items.map((item, i) => (
-      <div key={i} style={{
-        background: moduleFill(item.highlight ? 'var(--accent-tint)' : 'var(--surface-paper)'),
-        border: item.highlight ? `2px solid ${COLORS.accent}` : '1.5px solid var(--outline-soft)',
-        borderRadius: 14,
-        padding: '16px 20px',
-        display: 'flex',
-        alignItems: 'flex-start',
-        gap: 16,
-      }}>
-        <div style={{
-          background: moduleFill(item.highlight ? COLORS.accent : 'var(--surface-soft)'),
-          border: item.highlight ? 'none' : '1px solid var(--outline-soft)',
-          borderRadius: 10,
-          padding: '6px 12px',
-          flexShrink: 0,
-          fontFamily: "'Source Serif 4', serif",
-          fontSize: 15,
-          fontWeight: 700,
-          color: moduleText(item.highlight ? 'var(--ink-on-accent)' : 'var(--ink-primary)'),
-          whiteSpace: 'nowrap' as const,
-        }}>
-          &ldquo;{item.term}&rdquo;
-        </div>
-        <div style={{ flex: 1 }}>
-          <div style={{ fontSize: 13, fontWeight: 700, color: moduleText(item.highlight ? 'var(--accent-tint-ink)' : 'var(--accent-text)'), marginBottom: 4 }}>
-            = {item.definition}
+  // Terms and what they mean, ruled like rows on the page (area 5b): no boxes, no orange pill, one typeface.
+  <div className="my-8 not-prose">
+    <div className="ex-list ms-glossary">
+      {items.map((item, i) => (
+        <div key={i} className="ms-glossary-row">
+          <div className="ms-glossary-term">
+            &ldquo;{item.term}&rdquo;
           </div>
-          <div style={{ fontSize: 14, color: 'var(--ink-secondary)', lineHeight: 1.5 }}>
-            {item.explanation}
+          <div className="ms-glossary-copy">
+            <div className="ms-glossary-def">
+              = {item.definition}
+            </div>
+            <div className="ms-glossary-text">
+              {item.explanation}
+            </div>
           </div>
         </div>
-      </div>
-    ))}
+      ))}
+    </div>
   </div>
 );

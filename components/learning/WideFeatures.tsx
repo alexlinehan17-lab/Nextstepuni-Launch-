@@ -1,12 +1,17 @@
 import { motion,Reorder,useDragControls,useReducedMotion } from 'framer-motion';
 import React,{ useId,useLayoutEffect,useRef,useState } from 'react';
 import { useAuth } from '../../contexts/AuthContext';
-import { Button as KButton } from '../approved-ui-runtime';
+import { Button } from '../ui/Button';
+import { ChoiceTile } from '../ui/Choice';
 import { ExerciseHeading } from './BrandedFeatures';
 import { Artwork } from './shared';
 const orange='var(--module-orange)', ink='var(--module-ink)', line='var(--module-line)', muted='var(--module-muted)';
-const mint='var(--module-success)', coral='var(--module-danger)';
-export function WideButton({children,selected,tone='orange',className='',...props}:any){return <KButton variant="outline" className={`wr-button ${className}`} aria-pressed={selected===undefined?undefined:!!selected} data-selected={selected||undefined} data-tone={tone} {...props}>{children}</KButton>}
+// area 5b: green is only for a tick and coral is not in the system; the pairs these drew are ink against ink-3
+const mint='var(--ink-primary)', coral='var(--ink-muted)';
+/** An exercise's own button in the system's look (area 5b): an action is the white button with a line; a choice that
+ *  stays pressed (it has `selected`) is the choice tile, ink outline and drawn mark when chosen, aria-pressed as before.
+ *  No orange, mint or coral fill (the old `tone`). */
+export function WideButton({children,selected,tone:_tone,className='',...props}:any){return selected===undefined?<Button className={`wr-action ${className}`.trim()} {...props}>{children}</Button>:<ChoiceTile kind="toggle" chosen={!!selected} label={children} className={`wr-choice ${className}`.trim()} data-selected={selected||undefined} {...props}/>}
 function Shell({title,children,description,eyebrow}:any){return <section className="wr-exercise"><ExerciseHeading title={title} eyebrow={eyebrow}>{description}</ExerciseHeading>{children}</section>}
 export function Meter({value,label,tone='orange',description}:any){return <div className="wr-meter"><div><strong>{label}</strong><output>{value}%</output></div><div className="wr-meter-track" role="meter" aria-label={label} aria-valuemin={0} aria-valuemax={100} aria-valuenow={value}><motion.div initial={false} animate={{width:`${value}%`}} style={{background:tone==='mint'?mint:tone==='coral'?coral:orange}} transition={{type:'spring',stiffness:140,damping:24}}/></div>{description&&<p>{description}</p>}</div>}
 function Chart({children,label}:any){const ref=useRef<SVGSVGElement>(null),[width,setWidth]=useState(640);useLayoutEffect(()=>{const svg=ref.current;if(!svg)return;const update=()=>setWidth(svg.getBoundingClientRect().width||640);update();const observer=new ResizeObserver(update);observer.observe(svg);return()=>observer.disconnect()},[]);const labelSize=(width<400?10:11)*640/width;return <svg ref={ref} className="wr-chart" style={{'--wr-chart-label-size':`${labelSize}px`} as React.CSSProperties} viewBox="0 0 640 320" role="img" aria-label={label}>{children}</svg>}

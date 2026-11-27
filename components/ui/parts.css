@@ -185,8 +185,8 @@
   transition: opacity var(--t-press) var(--ease-out);
 }
 .ui-choice:active { transform: scale(0.98); }
-.ui-choice[aria-checked='true'] { border-color: var(--ink-primary); }
-.ui-choice[aria-checked='true']::before { opacity: 1; transition-duration: var(--t-ui); }
+.ui-choice:is([aria-checked='true'], [aria-pressed='true']) { border-color: var(--ink-primary); }
+.ui-choice:is([aria-checked='true'], [aria-pressed='true'])::before { opacity: 1; transition-duration: var(--t-ui); }
 .ui-choice-body { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 2px; }
 .ui-choice-label { font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
 .ui-choice-meta { color: var(--ink-muted); font-size: 13px; line-height: 18px; }

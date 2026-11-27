@@ -201,14 +201,18 @@ html[data-version=after] .mr-definition p{font:inherit!important;margin:0!import
 /* Revision 06: markers retain their own colour and an outline on filled answers. */
 .nsu-module-reader [data-triage-choice]:disabled{opacity:1!important}
 .nsu-module-reader [data-triage-choice-marker]{display:block;width:12px;height:12px;margin:0 auto 7px;border:1px solid var(--module-base-ink);border-radius:50%;box-sizing:border-box}
-.nsu-module-reader [data-triage-choice-marker=green],.nsu-module-reader [data-triage-progress=correct]{background:var(--module-success)}
-.nsu-module-reader [data-triage-choice-marker=amber],.nsu-module-reader [data-triage-progress=current]{background:var(--module-orange)}
-.nsu-module-reader [data-triage-choice-marker=red],.nsu-module-reader [data-triage-progress=incorrect]{background:var(--module-danger)}
-.nsu-module-reader [data-triage-choice][data-selected=true] [data-triage-choice-marker]{border:2px solid #202020}
-.nsu-module-reader [data-triage-progress]{display:block;width:10px;height:10px;flex-shrink:0;border:1px solid var(--module-control-line);border-radius:50%;box-sizing:border-box}
-.nsu-module-reader [data-triage-progress=current]{border-color:var(--module-base-ink)}
+/* area 5b: a triage category keeps its traffic-light colour (the exercise's own meaning; amber off the brand orange);
+   the progress marks are the system's step marks: right = green, the one you are on = ink, wrong = an empty ink ring */
+.nsu-module-reader [data-triage-choice-marker=green]{background:var(--success-hex)}
+.nsu-module-reader [data-triage-choice-marker=amber]{background:var(--warning-text)}
+.nsu-module-reader [data-triage-choice-marker=red]{background:var(--danger-tint-ink)}
+.nsu-module-reader [data-triage-progress=correct]{background:var(--success-hex);border-color:var(--success-hex)}
+.nsu-module-reader [data-triage-progress=current]{background:var(--ink-primary)}
+.nsu-module-reader [data-triage-progress=incorrect]{background:transparent;border:1.5px solid var(--outline-strong)}
+.nsu-module-reader [data-triage-choice][data-selected=true] [data-triage-choice-marker]{border:2px solid var(--ink-primary)}
+.nsu-module-reader [data-triage-progress]{display:block;width:10px;height:10px;flex-shrink:0;border:1px solid var(--outline-soft);border-radius:50%;box-sizing:border-box}
+.nsu-module-reader [data-triage-progress=current]{border-color:var(--ink-primary)}
 .nsu-module-reader [data-triage-progress=pending]{background:transparent}
-@media(max-width:400px){.nsu-module-reader [data-triage-choice]{padding-inline:4px!important;min-width:0}}
 .wr-recall-condition,.wr-recall-unit{display:block;color:var(--module-base-muted);font:12px/1.5 'DM Sans',sans-serif}
 .wr-recall-condition{margin:0;max-width:210px}.wr-recall-unit{margin:0}.wr-retention-bars{grid-template-rows:repeat(5,auto)}.wr-retention-bars>div{grid-row:span 5;grid-template-rows:subgrid}
 

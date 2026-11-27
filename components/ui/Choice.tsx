@@ -51,7 +51,9 @@ export interface ChoiceOption<V extends string = string> {
 
 export interface ChoiceTileProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'role'> {
   chosen: boolean;
-  kind?: 'one' | 'several';
+  /** one: a radio (round mark); several: a checkbox (square mark); toggle: a button that stays
+   *  pressed (aria-pressed, round mark), for a screen whose choice is not part of a group. */
+  kind?: 'one' | 'several' | 'toggle';
   tile?: boolean;
   label: ReactNode;
   meta?: ReactNode;
@@ -82,8 +84,9 @@ export const ChoiceTile = React.forwardRef<HTMLButtonElement, ChoiceTileProps>(f
       {...props}
       ref={ref}
       type={type}
-      role={kind === 'one' ? 'radio' : 'checkbox'}
-      aria-checked={chosen}
+      role={kind === 'one' ? 'radio' : kind === 'several' ? 'checkbox' : undefined}
+      aria-checked={kind === 'toggle' ? undefined : chosen}
+      aria-pressed={kind === 'toggle' ? chosen : undefined}
       className={`ui-part ui-choice${tile ? ' ui-choice--tile' : ''} ${className}`.trim()}
     >
       {art ? <ThemeArtwork className="ui-choice-art" src={art} transparentBackground alt="" /> : null}
@@ -94,7 +97,7 @@ export const ChoiceTile = React.forwardRef<HTMLButtonElement, ChoiceTileProps>(f
         {meta ? <>{' '}<span className="ui-choice-meta">{meta}</span></> : null}
         {note ? <>{' '}<span className={`ui-choice-note${noteTone === 'ok' ? ' ui-choice-note--ok' : ''}`}>{noteTone === 'ok' ? <AnswerTick /> : null}<span>{note}</span></span></> : null}
       </span>
-      <SelectionMark on={chosen} shape={kind === 'one' ? 'round' : 'square'} />
+      <SelectionMark on={chosen} shape={kind === 'several' ? 'square' : 'round'} />
     </button>
   );
 });
