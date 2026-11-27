@@ -867,6 +867,8 @@ span.ui-row-art > * { display: block; width: 100%; height: 100%; }
   transition: transform var(--t-press) var(--ease-out), background-color var(--t-press) var(--ease-out);
 }
 .ui-press:active { transform: scale(0.98); background: var(--surface-soft); }
+.ui-press:disabled { cursor: default; }
+.ui-press:disabled:active { transform: none; background: var(--surface-paper); }
 
 /* ── 7. States ───────────────────────────────────────────────────────────── */
 

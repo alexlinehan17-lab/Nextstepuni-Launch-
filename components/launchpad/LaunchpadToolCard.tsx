@@ -17,7 +17,7 @@ interface LaunchpadToolCardProps {
 /** One tool on the Launchpad (boards c-launch-header, r5-launchpad): its drawing, its name with the
  *  chevron and its own line. A row on a phone; a box you press, three a row, on a laptop. */
 export default function LaunchpadToolCard({ tool, title, description, locked, pending, recommendation, onClick }: LaunchpadToolCardProps) {
-  return <PressBox className={`lp7-tool${locked ? ' lp7-tool--locked' : ''}`} label={pending ? `Loading profile for ${title}` : locked ? `Set up profile to unlock ${title}` : `Open ${title}`} onPress={pending ? undefined : onClick}>
+  return <PressBox className={`lp7-tool${locked ? ' lp7-tool--locked' : ''}`} label={pending ? `Loading profile for ${title}` : locked ? `Set up profile to unlock ${title}` : `Open ${title}`} disabled={pending} onPress={onClick}>
     <ToolArtwork tool={tool} className="lp7-tool-art" />
     <span className="lp7-tool-name"><h3 className="lp7-tool-title">{title}</h3><ChevronRight className="ui-icon lp7-tool-chev" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" /></span>
     <span className="lp7-tool-line">{description}</span>
