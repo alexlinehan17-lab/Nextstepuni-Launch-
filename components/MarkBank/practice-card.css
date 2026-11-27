@@ -51,6 +51,9 @@
 /* The command word's orange line was a mark only: the question reads exactly as printed. */
 .mb-practice [data-testid="mark-bank-question-text"] span { text-decoration: none !important; box-shadow: none !important; }
 .mb-practice .mb-question-sheet > div > p { font-family: var(--font-ui) !important; font-size: 16px !important; line-height: 24px !important; }
+/* The figure sits in the question's column: the sheet's old bleed (-18px) and its own top line went
+   with the sheet, so it no longer overhangs the column or doubles the hairline above it. */
+.mb-practice .mb-question-sheet figure { margin-left: 0 !important; margin-right: 0 !important; border-top: 0 !important; }
 .mb-practice .mb-question-sheet figcaption,
 .mb-practice .mb-question-sheet figure [style*="10.5px"] { font-size: 11px !important; }
 /* Today's three links, kept (Alex has not said whether they go), as text buttons. */
@@ -165,9 +168,13 @@
     column-gap: 56px !important; padding: 0 max(var(--space-6), calc((100% - var(--mb-col)) / 2)) var(--space-8) !important;
   }
   .mb-practice .mb-paper-session .mb-session-workspace[data-focus="true"] { grid-template-columns: minmax(0, 1fr); }
-  .mb-p-progress { grid-column: 1 / -1; padding: 22px 0 28px; }
+  /* The progress strip stays under the bar (board mark-bank-laptop-6), on the white page so the
+     work scrolls cleanly beneath it; the question sits below it with the strip's own air
+     (28px), never against the bar. --mb-prog-h is the strip's height: 22 + 14 + 8 + 4 + 28. */
+  .mb-practice { --mb-prog-h: 76px; }
+  .mb-p-progress { position: sticky; top: 0; z-index: 2; align-self: start; grid-column: 1 / -1; padding: 22px 0 28px; background: var(--surface-canvas); }
   /* Beats the old dialog sheet's static pane (mark-bank-session-paper.css, 0,3,0 !important). */
-  .mb-practice .mb-paper-session .mb-session-workspace > [data-testid="mark-bank-question-pane"] { position: sticky !important; top: 0 !important; }
+  .mb-practice .mb-paper-session .mb-session-workspace > [data-testid="mark-bank-question-pane"] { position: sticky !important; top: var(--mb-prog-h) !important; }
   .mb-practice .mb-paper-session .mb-scheme-pane { margin-top: 0 !important; }
   .mb-practice .mb-paper-draft textarea { min-height: 220px; }
   .mb-practice .mb-reveal-area, .mb-practice .mb-grade-area { padding: 0 max(var(--space-6), calc((100% - var(--mb-col)) / 2)) !important; }
