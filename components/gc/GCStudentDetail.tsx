@@ -55,7 +55,7 @@ import { Sheet } from '../ui/Sheet';
 import { ChoiceTile } from '../ui/Choice';
 import { Button, TextButton } from '../ui/Button';
 import { List, Row } from '../ui/List';
-import { StudentArt, StatusWords, Fig, Pct, STATUS_WORDS, SEVERITY_WORDS } from './gcView';
+import { StudentArt, StatusWords, Fig, Pct, STATUS_WORDS, SEVERITY_WORDS, daysSinceBlock } from './gcView';
 
 const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -207,9 +207,13 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   })();
   const flagLabel = flagData ? (flagData.priority === 'high' ? 'Flagged, high' : 'Flagged') : null;
   const whoLabel = [yearLabel, flagLabel].filter(Boolean).join(' · ');
+  const sinceBlock = daysSinceBlock(student);
+  const lastStudied = Number.isFinite(sinceBlock) ? sinceBlock : null;
   const statusMore = [
     previousStatus ? `Was ${STATUS_WORDS[previousStatus].toLowerCase()}` : null,
-    student.streak?.lastActiveDate ? `Last active ${student.streak.lastActiveDate}` : null,
+    // The board's form ("Last studied 10 days ago"), with the same count the student's row shows
+    // (days since their last study session), never the raw date.
+    lastStudied === null ? null : lastStudied <= 0 ? 'Last studied today' : `Last studied ${lastStudied} ${lastStudied === 1 ? 'day' : 'days'} ago`,
   ].filter(Boolean);
 
   const renderStudent = () => (
@@ -245,7 +249,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           </div>
         ))}
         {needsSupport && (
-          <div className="gc8-sd-notice">
+          <div className="gc8-sd-reasons">
             <p className="gc8-label">Needs support</p>
             <ul>
               {supportReasons.map((reason, i) => (

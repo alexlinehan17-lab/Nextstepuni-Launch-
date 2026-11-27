@@ -47,7 +47,7 @@ import { Menu, MenuAction, MenuPanel, MenuRadioRows, MenuRule } from '../ui/Menu
 import { Sheet } from '../ui/Sheet';
 import { SearchField } from '../ui/Field';
 import { List, Row } from '../ui/List';
-import { useWide, STATUS_WORDS, StatusDot, StatusWords, SeverityDot, SEVERITY_WORDS, Fig, Pct, StudentArt, daysWords } from './gcView';
+import { useWide, STATUS_WORDS, StatusDot, StatusWords, SeverityDot, SEVERITY_WORDS, Fig, Pct, StudentArt, daysWords, daysSinceBlock } from './gcView';
 
 // ─── Categories ─────────────────────────────────────────────────────────────
 
@@ -115,21 +115,6 @@ function statusMatch(s: { status: StudentStatus; student: GCStudentFullData }, f
   return true;
 }
 
-/** Days since a student's most recent study block (Infinity if none): the Attention list's own count. */
-function daysSinceBlock(s: GCStudentFullData): number {
-  let daysSince = Infinity;
-  if (s.timetableCompletions) {
-    const now = Date.now();
-    for (const [date, blocks] of Object.entries(s.timetableCompletions)) {
-      if (Array.isArray(blocks) && blocks.length > 0) {
-        const d = new Date(date + 'T00:00:00').getTime();
-        const diff = Math.floor((now - d) / 86400000);
-        if (diff < daysSince) daysSince = diff;
-      }
-    }
-  }
-  return daysSince;
-}
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
@@ -711,7 +696,9 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
         : <StatusWords status={status}>{flag ? ' · flagged' : ''} · {daysWords(daysSince)}</StatusWords>}
       trailing={wide ? <>
         {flag ? <Flag className="ui-icon gc8-flag" width={16} height={16} strokeWidth={2} aria-label={`Flagged: ${flag.priority} priority`} /> : null}
-        <span className="gc8-ago">{daysWords(daysSince)}</span>
+        <span className="gc8-ago">{Number.isFinite(daysSince) && daysSince > 0
+          ? <><b>{daysSince}</b>{daysSince === 1 ? ' day' : ' days'}</>
+          : daysWords(daysSince)}</span>
       </> : undefined}
       onPress={() => { setAllList(null); onSelectStudent(student.user.uid); }}
     />
@@ -741,7 +728,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
 
   const allListSheet = allList ? (() => {
     const lists = {
-      warnings: { title: 'Early warning signals', rows: alerts.map(alert => warningRow(alert, true)) },
+      warnings: { title: 'Early warning signals', rows: alerts.map(alert => warningRow(alert, true)), className: 'gc8-list gc8-warnlist' },
       attention: { title: 'Attention', rows: attentionStudents.map(attentionRow) },
       recent: { title: 'Recently active', rows: recentlyActive.map(recentRow) },
       gaps: { title: 'Subject-level gaps', rows: null },
@@ -1075,7 +1062,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       <Sheet open={!!allListSheet} title={allListSheet?.title ?? ''} onClose={() => setAllList(null)}>
         {allList === 'gaps'
           ? <div className="gc8-pgaps">{topGaps.map(gapRowPhone)}</div>
-          : <List className="gc8-list">{allListSheet?.rows}</List>}
+          : <List className={(allListSheet && 'className' in allListSheet ? allListSheet.className : undefined) ?? 'gc8-list'}>{allListSheet?.rows}</List>}
       </Sheet>
     </>
   );
@@ -1156,7 +1143,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             <button key={s.uid} type="button" className="ui-part gc8-ra" onClick={() => onSelectStudent(s.uid)}>
               <StudentArt seed={s.avatar} size={32} />
               <span className="gc8-ra-copy">
-                <span className="gc8-person">{s.name}</span>
+                <span className="gc8-person" title={s.name}>{s.name}</span>
                 <span className="gc8-meta">{s.blocksCompletedToday > 0 ? `${s.blocksCompletedToday} ${s.blocksCompletedToday === 1 ? 'block' : 'blocks'} today` : 'None today'}</span>
               </span>
               <span className="gc8-meta">{s.timeAgo}</span>
@@ -1172,9 +1159,11 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     </section>
   );
 
-  const countdown = (big: boolean) => (
+  // The one live orange figure is the countdown beside the Exam calendar (board); the one at the top of
+  // a laptop's page is ink.
+  const countdown = (big: boolean, live = true) => (
     <p className={`gc8-countdown${big ? ' gc8-countdown--big' : ''}`}>
-      <span className="gc8-num gc8-live">{daysUntilLC}</span>
+      <span className={`gc8-num${live ? ' gc8-live' : ''}`}>{daysUntilLC}</span>
       <span className="gc8-meta">days to the{big ? ' ' : <br />}Leaving Cert{big ? <><br />{lcDateWords}</> : null}</span>
     </p>
   );
@@ -1272,7 +1261,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               <div key={uid} className="gc8-tr" role="row">
                 <span role="cell">
                   <button type="button" className="ui-part gc8-stu" onClick={() => onSelectStudent(uid)}>
-                    <StudentArt seed={row.student.user.avatar} size={32} /><span>{row.student.user.name}</span>
+                    <StudentArt seed={row.student.user.avatar} size={32} /><span title={row.student.user.name}>{row.student.user.name}</span>
                   </button>
                 </span>
                 <span role="cell" className="gc8-prog"><Pct value={row.progress} /><span className="gc8-bar gc8-bar--thin"><i style={{ width: `${row.progress}%` }} /></span></span>
@@ -1340,7 +1329,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
         </div>
         {wide && (
           <div className="gc8-hero-end">
-            {countdown(false)}
+            {countdown(false, false)}
             <div className="gc8-row-x">
               <Button onClick={() => setShowExportModal(true)}>Export</Button>
               <Button onClick={() => setShowBroadcastModal(true)}>Broadcast</Button>

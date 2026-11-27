@@ -172,7 +172,9 @@
 .gc8-att .ui-row { min-height: 52px; padding: 8px 0; gap: var(--space-3); }
 .gc8-att .ui-row-art { width: 32px; height: 32px; }
 .gc8-att .ui-row-title { font-size: 15px; line-height: 20px; }
-.gc8-ago { min-width: 52px; color: var(--ink-muted); font-size: 13px; line-height: 18px; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.gc8-ago { min-width: 52px; color: var(--ink-muted); font-size: 13px; line-height: 18px; text-align: right; white-space: nowrap; }
+/* The digits line up (tabular); the space after them stays a normal one (Diatype's tabular space is a figure wide). */
+.gc8-ago > b { font-weight: 400; font-variant-numeric: tabular-nums; }
 
 /* ── The activity graph: one series, quiet axes, a reading pinned to the day chosen ── */
 .gc8-chart { position: relative; margin: 0; touch-action: pan-y; }
@@ -196,7 +198,7 @@
 
 /* ── Key dates ───────────────────────────────────────────────────────── */
 .gc8-dates .ui-row { min-height: 56px; padding: 6px 0; gap: 14px; }
-.gc8-dates .ui-row-value { color: var(--ink-secondary); }
+.gc8-dates .ui-row-value, .gc8-list.gc8-dates .ui-row-value { color: var(--ink-secondary); font-family: 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; letter-spacing: 0.02em; }
 .gc8-dates .ui-row-end .ui-icon-btn { margin-right: -10px; }
 .gc8-dates--past .ui-row-title { color: var(--ink-muted); text-decoration: line-through; }
 .gc8-date-tools { display: flex; align-items: center; gap: var(--space-2); }
@@ -211,7 +213,9 @@
 .gc8-recent { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 32px; border-top: 1px solid var(--hairline); }
 .gc8-ra.ui-part { display: flex; align-items: center; gap: var(--space-3); min-height: 56px; padding: 0; border: 0; border-bottom: 1px solid var(--hairline); background: none; color: var(--ink-primary); font-family: var(--font-ui); text-align: left; cursor: pointer; }
 .gc8-ra-copy { display: flex; flex: 1; flex-direction: column; min-width: 0; }
-.gc8-ra-copy .gc8-person { font-size: 15px; line-height: 20px; overflow-wrap: anywhere; }
+.gc8-ra-copy :is(.gc8-person, .gc8-meta) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gc8-ra-copy .gc8-person { font-size: 15px; line-height: 20px; }
+.gc8-ra > .gc8-meta { flex: none; }
 @media (max-width: 1199px) { .gc8-recent { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 /* ── The calendar: months in one frame, today in ink, the chosen day outlined ── */
@@ -313,15 +317,16 @@
 }
 
 /* ── Practice ────────────────────────────────────────────────────────── */
-.gc8-pr { display: grid; grid-template-columns: minmax(0, 1fr) 72px 56px 44px; column-gap: 6px; align-items: center; min-height: 60px; border-bottom: 1px solid var(--hairline); }
+.gc8-pr { display: grid; grid-template-columns: minmax(0, 1fr) 60px 52px 44px; column-gap: 6px; align-items: center; min-height: 60px; border-bottom: 1px solid var(--hairline); }
 .gc8-pr--head { min-height: 30px; }
-.gc8-pr--head .gc8-n { justify-self: end; width: max-content; white-space: nowrap; letter-spacing: 0.06em; }
+.gc8-pr--head .gc8-label.gc8-n { justify-self: end; font-size: 11px; line-height: 14px; letter-spacing: 0.1em; white-space: nowrap; }
 .gc8-pr .gc8-acts { margin-right: -10px; justify-self: end; }
 .gc8-pr .gc8-n { font-size: 15px; line-height: 20px; }
 .gc8-hpct { padding-right: 9px; }
 .gc8-pwho.ui-part { display: flex; align-items: center; gap: var(--space-3); min-width: 0; min-height: 56px; padding: 0; border: 0; background: none; color: var(--ink-primary); font-family: var(--font-ui); text-align: left; cursor: pointer; }
 .gc8-pwho-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-.gc8-pwho-copy .gc8-person { overflow-wrap: anywhere; }
+.gc8-pwho-copy :is(.gc8-person, .gc8-meta) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gc8-pwho-copy .gc8-person { font-size: 15px; line-height: 20px; }
 .gc8-ptable { border-top: 1px solid var(--hairline); }
 .gc8-ptr { display: grid; grid-template-columns: minmax(0, 1fr) 120px 96px 84px 60px 236px; column-gap: var(--space-4); align-items: center; min-height: 46px; border-bottom: 1px solid var(--hairline); font-size: 15px; line-height: 20px; }
 .gc8-ptr--head { min-height: 36px; }
@@ -381,6 +386,9 @@
 /* A notice: a lined box, the page's own white, never tinted. */
 .gc8-sd-notices { display: flex; flex-direction: column; gap: var(--space-3); }
 .gc8-sd-notice { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; padding: 12px 14px; border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); background: var(--surface-paper); }
+/* Needs support cannot be pressed: it lies on the page under its label, a hairline above it. */
+.gc8-sd-reasons { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; padding-top: var(--space-3); border-top: 1px solid var(--hairline); }
+.gc8-sd-reasons ul { display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 0; list-style: none; }
 .gc8-sd-notice ul { display: flex; flex-direction: column; gap: 2px; }
 .gc8-sd-notice .ui-link { min-height: 36px; margin-top: 4px; }
 /* Sections: laid on the page, a hairline between them, never boxed. */
@@ -436,3 +444,9 @@
 .gc8-tr > span, .gc8-ptr > span { min-width: 0; }
 .gc8-tr > span:first-child, .gc8-ptr > span:first-child { overflow: hidden; }
 .gc8-stu.ui-part { max-width: 100%; }
+/* The whole list of warnings (a sheet on a phone): Dismiss first, the row's chevron the last thing at
+   its edge, as the laptop board orders them. The chevron stays part of the row (it opens the student);
+   Dismiss sits over the row's end, its own 44px target, and does not open the student. */
+.gc8-warnlist .ui-row-item--end { position: relative; }
+.gc8-warnlist .ui-row-item--end .ui-row-body { padding-right: 60px; }
+.gc8-warnlist .ui-row-end { position: absolute; top: 50%; right: 28px; transform: translateY(-50%); }

@@ -123,7 +123,7 @@ const GCHandInGrid: React.FC<Props> = ({ students, allCourses, school, onSelectS
                 <div key={r.uid} className="gc8-ptr" role="row">
                   <span role="cell">
                     <button type="button" className="ui-part gc8-stu" onClick={() => onSelectStudent(r.uid)}>
-                      <StudentArt seed={r.avatar} size={32} /><span>{r.name}</span>
+                      <StudentArt seed={r.avatar} size={32} /><span title={r.name}>{r.name}</span>
                     </button>
                   </span>
                   <span role="cell"><StatusDot status={r.status} />{STATUS_WORDS[r.status]}</span>
@@ -158,7 +158,7 @@ const GCHandInGrid: React.FC<Props> = ({ students, allCourses, school, onSelectS
                 <button type="button" className="ui-part gc8-pwho" onClick={() => onSelectStudent(r.uid)}>
                   <StudentArt seed={r.avatar} />
                   <span className="gc8-pwho-copy">
-                    <span className="gc8-person">{r.name}</span>
+                    <span className="gc8-person" title={r.name}>{r.name}</span>
                     <span className="gc8-meta"><StatusWords status={r.status}>{r.tags.length ? ` · ${r.tags.join(', ')}` : ''}</StatusWords></span>
                   </span>
                 </button>

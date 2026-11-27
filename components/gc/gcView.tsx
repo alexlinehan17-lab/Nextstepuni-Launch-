@@ -76,6 +76,23 @@ export function StudentArt({ seed, size = 40 }: { seed: string; size?: 28 | 32 |
   return <Avatar seed={seed} alt="" className={`gc8-art crew-illustration${size !== 40 ? ` gc8-art--${size}` : ''}`} />;
 }
 
+/** Days since a student's most recent study block (Infinity if none): the Attention list's own count,
+ *  and the student page's "Last studied N days ago". */
+export function daysSinceBlock(s: { timetableCompletions: Record<string, unknown> | null }): number {
+  let daysSince = Infinity;
+  if (s.timetableCompletions) {
+    const now = Date.now();
+    for (const [date, blocks] of Object.entries(s.timetableCompletions)) {
+      if (Array.isArray(blocks) && blocks.length > 0) {
+        const d = new Date(date + 'T00:00:00').getTime();
+        const diff = Math.floor((now - d) / 86400000);
+        if (diff < daysSince) daysSince = diff;
+      }
+    }
+  }
+  return daysSince;
+}
+
 /** "In 3 days" style counts on rows: today's numbers, the board's plain words. */
 export function daysWords(days: number): string {
   if (!Number.isFinite(days)) return 'No sessions';
