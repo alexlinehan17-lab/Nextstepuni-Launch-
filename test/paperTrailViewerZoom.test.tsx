@@ -145,6 +145,9 @@ const pageInMiddle = (reader: HTMLElement) => {
   return current;
 };
 const settle = () => act(() => new Promise(resolve => setTimeout(resolve, 20)));
+// Zoom, Go to page and Attempt first are in Tools, a sheet on a phone (area 6a, the agreed viewer).
+const openTools = () => { if (!screen.queryByRole('dialog', { name: 'Tools' })) fireEvent.click(screen.getByRole('button', { name: 'Study tools for this paper' })); };
+const attemptSwitch = () => { openTools(); return screen.getByRole('switch', { name: 'Attempt first' }); };
 
 describe('Paper Trail viewer zoom', () => {
   it('moves to the next question lower on the same page, then to a later page, retaining the original work', async () => {
@@ -152,7 +155,7 @@ describe('Paper Trail viewer zoom', () => {
     const fetchSpy=vi.spyOn(globalThis,'fetch').mockResolvedValue({ok:true,json:async()=>({v:1,paperFileid:'paper.pdf',q:questions})} as Response);
     try {
       render(<Viewer title="Paper" paper={{url:'/paper.pdf',label:'Paper',bytes:0}} scheme={{url:'/scheme.pdf',label:'Scheme',bytes:0}} answersUrl="/map.json" storageNs="student|next-question" initialPaperPage={4} onClose={()=>{}} />);
-      fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
+      fireEvent.click(attemptSwitch());
       const reader=await screen.findByLabelText(`Paper, page 4 of ${PAGES}`);
       await waitFor(()=>expect(screen.getByLabelText('Working on')).toHaveValue('1'));
       await settle();
@@ -180,6 +183,7 @@ describe('Paper Trail viewer zoom', () => {
     render(<Viewer title="Paper" paper={{url:'/paper.pdf',label:'Paper',bytes:0}} initialPaperPage={14} onClose={()=>{}} />);
     const reader=await screen.findByLabelText(`Paper, page 14 of ${PAGES}`);
     await waitFor(()=>expect(position(reader).top).toBeGreaterThan(0));
+    openTools();
     const pageInput=screen.getByRole('spinbutton',{name:'Go to page'});
     fireEvent.change(pageInput,{target:{value:'23'}});
     fireEvent.submit(screen.getByRole('form',{name:'Page navigation'}));
@@ -212,6 +216,7 @@ describe('Paper Trail viewer zoom', () => {
     await settle();
     expect(pageInMiddle(reader)).toBe(14);
 
+    openTools();
     const zoomIn = screen.getByRole('button', { name: 'Zoom in' });
     const zoomOut = screen.getByRole('button', { name: 'Zoom out' });
     const steps = [zoomIn, zoomIn, zoomIn, zoomIn, zoomOut, zoomOut, zoomOut, zoomOut, zoomOut];
@@ -232,6 +237,7 @@ describe('Paper Trail viewer zoom', () => {
     render(<Viewer title="Agricultural Science" paper={{ url: '/paper.pdf', label: 'Paper', bytes: 0 }} initialPaperPage={14} onClose={() => {}} />);
     const reader = await screen.findByLabelText(`Paper, page 14 of ${PAGES}`);
     await waitFor(() => expect(position(reader).top).toBeGreaterThan(0));
+    openTools();
     const zoomIn = screen.getByRole('button', { name: 'Zoom in' });
     for (let i = 0; i < 3; i++) { fireEvent.click(zoomIn); await settle(); } // 200%: content 2000px wide
     reader.scrollLeft = 300; // middle of the view at (300 + 500) / 2000 = 0.4 of the page width

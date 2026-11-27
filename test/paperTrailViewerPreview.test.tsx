@@ -1,6 +1,6 @@
 import React from "react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { cleanup, render, screen, waitFor, fireEvent } from "@testing-library/react";
+import { act, cleanup, render, screen, waitFor, fireEvent } from "@testing-library/react";
 import Lenis from "lenis";
 import {readAnswer} from "../components/PaperTrail/answerDeskStore";
 import Viewer from "../components/PaperTrail/Viewer";
@@ -12,6 +12,16 @@ vi.mock("../components/PaperTrail/pdfCache", () => ({
   fetchPdfCached: vi.fn(() => Promise.resolve(null)),
 }));
 const paper = { url: "/test-paper.pdf", label: "Paper", bytes: 100 };
+// The agreed viewer (area 6a): Answers is a switch in the bar, Paper or Scheme a
+// selection bar, and Attempt first lives in Tools (a sheet on a phone, a menu on a laptop).
+const openTools = () => { if (!screen.queryByRole("dialog", { name: "Tools" })) fireEvent.click(screen.getByRole("button", { name: "Study tools for this paper" })); };
+const attemptSwitch = () => { openTools(); return screen.getByRole("switch", { name: "Attempt first" }); };
+async function tap(element: Element) {
+  const touch = { pointerType: "touch", pointerId: 1, isPrimary: true, button: 0, buttons: 1, bubbles: true };
+  fireEvent.pointerDown(element, touch); fireEvent.pointerUp(element, { ...touch, buttons: 0 });
+  fireEvent.mouseDown(element, { button: 0 }); fireEvent.mouseUp(element, { button: 0 }); fireEvent.click(element, { button: 0, detail: 1 });
+  await act(async () => { await new Promise(resolve => setTimeout(resolve, 20)); });
+}
 const scheme = { url: "/test-scheme.pdf", label: "Scheme", bytes: 100 };
 beforeEach(() => {
   localStorage.clear();
@@ -80,10 +90,10 @@ describe("Paper Trail previews", () => {
       />,
     );
     expect(
-      screen.getByRole("button", {
+      screen.getByRole("switch", {
         name: "Show the marking scheme beside each question",
       }),
-    ).toHaveAttribute("aria-pressed", "true");
+    ).toHaveAttribute("aria-checked", "true");
     await waitFor(() => expect(fetch).toHaveBeenCalledWith("/answer-map.json"));
     expect(fetch).toHaveBeenCalledTimes(1);
   });
@@ -98,10 +108,10 @@ describe("Paper Trail previews", () => {
       />,
     );
     expect(
-      screen.getByRole("button", {
+      screen.getByRole("switch", {
         name: "Show the marking scheme beside each question",
       }),
-    ).toHaveAttribute("aria-pressed", "false");
+    ).toHaveAttribute("aria-checked", "false");
     expect(fetch).not.toHaveBeenCalled();
   });
 });
@@ -113,11 +123,11 @@ describe('Paper Trail desktop question workspace', () => {
     try {
       render(<Viewer title="Test paper" paper={paper} scheme={scheme} answersUrl="/answer-map.json" initialAnswersOn onClose={() => {}} />);
       expect(screen.getByRole('complementary', {name:'Question workspace'})).toBeInTheDocument();
-      expect(screen.getByRole('tab', {name:'Paper'})).toHaveAttribute('aria-selected','true');
-      fireEvent.click(screen.getByRole('tab', {name:'Scheme'}));
-      expect(screen.getByRole('tab', {name:'Scheme'})).toHaveAttribute('aria-selected','true');
+      expect(screen.getByRole('radio', {name:'Paper'})).toHaveAttribute('aria-checked','true');
+      fireEvent.click(screen.getByRole('radio', {name:'Scheme'}));
+      expect(screen.getByRole('radio', {name:'Scheme'})).toHaveAttribute('aria-checked','true');
       expect(screen.queryByRole('complementary', {name:'Question workspace'})).not.toBeInTheDocument();
-      fireEvent.click(screen.getByRole('tab', {name:'Paper'}));
+      fireEvent.click(screen.getByRole('radio', {name:'Paper'}));
       expect(screen.getByRole('complementary', {name:'Question workspace'})).toBeInTheDocument();
     } finally {matchMedia.mockRestore();}
   });
@@ -127,34 +137,34 @@ describe('Attempt first in the real reader',()=>{
  it('starts closed even with an old saved on preference, and opens only when chosen',()=>{
   localStorage.setItem('pt:attempt-first:v1:student','on');
   render(<Viewer title="Test paper" paper={paper} scheme={scheme} answersUrl="/answer-map.json" storageNs="student|paper" onClose={()=>{}}/>);
-  expect(screen.getByRole('switch',{name:'Attempt first'})).not.toBeChecked();
+  expect(attemptSwitch()).not.toBeChecked();
   expect(screen.queryByRole('complementary',{name:'Your answer desk'})).not.toBeInTheDocument();
   expect(fetch).not.toHaveBeenCalled();
-  fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
+  fireEvent.click(attemptSwitch());
   expect(screen.getByRole('complementary',{name:'Your answer desk'})).toBeInTheDocument();
   expect(screen.getByText('Scheme hidden until you choose to reveal.')).toBeInTheDocument();
  });
  it('preserves a draft through off/on, remembers off after reopening, and restores it when enabled',()=>{
   const props={title:'Test paper',paper,scheme,storageNs:'student|paper',onClose:()=>{}};
   const view=render(<Viewer {...props}/>);
-  fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
+  fireEvent.click(attemptSwitch());
   fireEvent.change(screen.getByLabelText('Your attempt'),{target:{value:'My method before the reveal'}});
-  fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
+  fireEvent.click(attemptSwitch());
   expect(screen.queryByRole('complementary',{name:'Your answer desk'})).not.toBeInTheDocument();
   view.unmount();render(<Viewer {...props}/>);
-  expect(screen.getByRole('switch',{name:'Attempt first'})).not.toBeChecked();
-  fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
+  expect(attemptSwitch()).not.toBeChecked();
+  fireEvent.click(attemptSwitch());
   expect(screen.getByLabelText('Your attempt')).toHaveValue('My method before the reveal');
  });
  it('keeps both attempts and reflection, hides the scheme on retry, and restores work on reopen',()=>{
   const props={title:'Test paper',paper,scheme,storageNs:'student|paper',onClose:()=>{}};
   const view=render(<Viewer {...props}/>);
-  fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
+  fireEvent.click(attemptSwitch());
   fireEvent.change(screen.getByLabelText('Your attempt'),{target:{value:'First answer'}});
   // A paper without question links deliberately opens the full original scheme.
   fireEvent.click(screen.getByRole('button',{name:'Keep my attempt & reveal'}));
-  expect(screen.getByRole('tab',{name:'Scheme'})).toHaveAttribute('aria-selected','true');
-  fireEvent.click(screen.getByRole('tab',{name:'Paper'}));
+  expect(screen.getByRole('radio',{name:'Scheme'})).toHaveAttribute('aria-checked','true');
+  fireEvent.click(screen.getByRole('radio',{name:'Paper'}));
   expect(screen.getByText('First answer')).toBeInTheDocument();
   fireEvent.change(screen.getByLabelText('One thing to take into the next attempt.'),{target:{value:'Include the original cost.'}});
   fireEvent.click(screen.getByRole('button',{name:'Try again without the scheme'}));
@@ -165,17 +175,17 @@ describe('Attempt first in the real reader',()=>{
   fireEvent.click(screen.getByRole('button',{name:'Keep both attempts'}));
   view.unmount();render(<Viewer {...props}/>);
   expect(screen.queryByRole('complementary',{name:'Your answer desk'})).not.toBeInTheDocument();
-  fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
+  fireEvent.click(attemptSwitch());
   expect(screen.getByText('First answer')).toBeInTheDocument();expect(screen.getByText('Better answer')).toBeInTheDocument();expect(screen.getByText('Include the original cost.')).toBeInTheDocument();
   expect(readAnswer('student|paper','page:1').record.first?.text).toBe('First answer');
  });
  it('starts a separate workspace if the same viewer changes papers',()=>{
   const view=render(<Viewer title="First paper" paper={paper} storageNs="student|paper1" onClose={()=>{}}/>);
-  fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
+  fireEvent.click(attemptSwitch());
   fireEvent.change(screen.getByLabelText('Your attempt'),{target:{value:'Paper one work'}});
   view.rerender(<Viewer title="Second paper" paper={{...paper,url:'/paper2.pdf'}} storageNs="student|paper2" onClose={()=>{}}/>);
-  expect(screen.getByRole('switch',{name:'Attempt first'})).not.toBeChecked();
-  fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
+  expect(attemptSwitch()).not.toBeChecked();
+  fireEvent.click(attemptSwitch());
   expect(screen.getByLabelText('Your attempt')).toHaveValue('');
   expect(readAnswer('student|paper1','page:1').record.draft.text).toBe('Paper one work');
  });
@@ -186,7 +196,7 @@ describe('Attempt-first save failures',()=>{
  it('keeps unsaved text in memory, shows an honest error and lets the student cancel leaving',()=>{
   const onClose=vi.fn();
   render(<Viewer title="Test" paper={paper} scheme={scheme} storageNs="student|save-failure" onClose={onClose}/>);
-  fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
+  fireEvent.click(attemptSwitch());
   vi.spyOn(Storage.prototype,'setItem').mockImplementation(()=>{throw new DOMException('Full','QuotaExceededError');});
   const confirm=vi.spyOn(window,'confirm').mockReturnValue(false);
   fireEvent.change(screen.getByLabelText('Your attempt'),{target:{value:'Do not lose my method'}});
@@ -199,7 +209,7 @@ describe('Attempt-first save failures',()=>{
  });
  it('retains written work even when no marking scheme is linked',()=>{
   render(<Viewer title="Test" paper={paper} storageNs="student|no-scheme" onClose={()=>{}}/>);
-  fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
+  fireEvent.click(attemptSwitch());
   fireEvent.change(screen.getByLabelText('Your attempt'),{target:{value:'Work without a scheme'}});
   expect(screen.getByRole('button',{name:'Keep my attempt & reveal'})).toBeDisabled();
   expect(readAnswer('student|no-scheme','page:1').record.draft.text).toBe('Work without a scheme');
@@ -210,23 +220,24 @@ describe('Attempt-first save failures',()=>{
 describe('Existing study tools alongside Attempt first',()=>{
  it('keeps Triage, Self-mark and Full Loop discoverable without losing the draft',async()=>{
   render(<Viewer title="Test" paper={paper} scheme={scheme} answersUrl="/answer-map.json" storageNs="student|tools" onClose={()=>{}}/>);
-  fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
+  fireEvent.click(attemptSwitch());
   fireEvent.change(screen.getByLabelText('Your attempt'),{target:{value:'My kept work'}});
-  fireEvent.click(screen.getByRole('button',{name:'Study tools for this paper'}));
-  expect(await screen.findByRole('menuitem',{name:/Triage/})).toBeInTheDocument();
-  expect(screen.getByRole('menuitemcheckbox',{name:/Self-mark/})).toBeInTheDocument();
-  fireEvent.click(screen.getByRole('menuitemcheckbox',{name:/The Full Loop/}));
-  expect(screen.getByRole('switch',{name:'Attempt first'})).not.toBeChecked();
-  fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
+  openTools();
+  expect(await screen.findByRole('button',{name:/Triage/})).toBeInTheDocument();
+  expect(screen.getByRole('switch',{name:'Self-mark'})).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button',{name:/The Full Loop/}));
+  expect(attemptSwitch()).not.toBeChecked();
+  fireEvent.click(attemptSwitch());
   expect(screen.getByLabelText('Your attempt')).toHaveValue('My kept work');
  });
 });
 
 describe('Resizable answer desk',()=>{
- it('supports keyboard resizing and collapse without changing the attempt or selected mode',()=>{
+ it('supports keyboard resizing and collapse without changing the attempt or selected mode',async()=>{
   const matchMedia=vi.spyOn(window,'matchMedia').mockImplementation(query=>({matches:query==='(min-width: 768px)',media:query,onchange:null,addListener:vi.fn(),removeListener:vi.fn(),addEventListener:vi.fn(),removeEventListener:vi.fn(),dispatchEvent:vi.fn()}));
   render(<Viewer title="Test" paper={paper} scheme={scheme} storageNs="student|resize" onClose={()=>{}}/>);
-  fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
+  const menuAttempt=async()=>{await tap(screen.getByRole('button',{name:'Study tools for this paper'}));return screen.findByRole('menuitemcheckbox',{name:/Attempt first/});};
+  await tap(await menuAttempt());
   fireEvent.change(screen.getByLabelText('Your attempt'),{target:{value:'Keep this answer while I resize.'}});
   const handle=screen.getByRole('separator',{name:'Resize answer desk'});
   expect(handle).toHaveAttribute('aria-orientation','vertical');
@@ -235,7 +246,8 @@ describe('Resizable answer desk',()=>{
   expect(Number(handle.getAttribute('aria-valuenow'))).toBeGreaterThan(original);
   fireEvent.click(screen.getByRole('button',{name:'Minimise answer desk'}));
   expect(screen.queryByLabelText('Your attempt')).not.toBeVisible();
-  expect(screen.getByRole('switch',{name:'Attempt first'})).toBeChecked();
+  expect(await menuAttempt()).toBeChecked();
+  await tap(screen.getByRole('button',{name:'Study tools for this paper'}));
   fireEvent.click(screen.getByRole('button',{name:'Expand answer desk'}));
   expect(screen.getByLabelText('Your attempt')).toHaveValue('Keep this answer while I resize.');
   expect(Number(screen.getByRole('separator',{name:'Resize answer desk'}).getAttribute('aria-valuenow'))).toBeGreaterThan(original);

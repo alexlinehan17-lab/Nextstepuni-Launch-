@@ -20,7 +20,7 @@
  * with a hair of lift" (26 Nov 2026). Read-only content is not boxed.
  */
 import { type ButtonHTMLAttributes, type ReactNode } from 'react';
-import { ArrowRight, ChevronDown, ChevronRight } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, ChevronDown, ChevronRight } from 'lucide-react';
 import ThemeArtwork from '../ThemeArtwork';
 import './parts.css';
 
@@ -64,10 +64,13 @@ export interface RowProps {
   expanded?: boolean;
   /** Or a link. */
   href?: string;
+  /** The link leaves the app for the browser (a document to download): it opens there, and
+   *  carries the arrow up-right in place of the chevron. */
+  external?: boolean;
   className?: string;
 }
 
-export function Row({ title, over, meta, art, label, coach, icon, tone, value, trailing, onPress, href, forward = false, expanded, className = '' }: RowProps) {
+export function Row({ title, over, meta, art, label, coach, icon, tone, value, trailing, onPress, href, external = false, forward = false, expanded, className = '' }: RowProps) {
   const pressable = Boolean(onPress || href);
   const content = (
     <>
@@ -82,7 +85,8 @@ export function Row({ title, over, meta, art, label, coach, icon, tone, value, t
       {value !== undefined && value !== null ? <span className="ui-row-value ui-readout">{value}</span> : null}
       {trailing ?? null}
       {pressable && !trailing && tone !== 'danger'
-        ? forward ? <ArrowRight className="ui-icon ui-row-chev" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+        ? href && external ? <ArrowUpRight className="ui-icon ui-row-chev ui-row-chev--leaves" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+        : forward ? <ArrowRight className="ui-icon ui-row-chev" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />
           : expanded !== undefined ? <ChevronDown className="ui-icon ui-row-chev ui-row-chev--down" data-open={expanded || undefined} width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
             : <ChevronRight className="ui-icon ui-row-chev" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
         : null}
@@ -91,7 +95,7 @@ export function Row({ title, over, meta, art, label, coach, icon, tone, value, t
   const classes = `ui-part ui-row${tone === 'danger' ? ' ui-row--danger' : ''} ${className}`.trim();
   return (
     <li className="ui-row-item">
-      {href ? <a className={classes} href={href} aria-label={label} data-coach={coach}>{content}</a>
+      {href ? <a className={classes} href={href} aria-label={label} data-coach={coach} {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>{content}</a>
         : onPress ? <button type="button" className={classes} onClick={onPress} aria-label={label} aria-expanded={expanded} data-coach={coach}>{content}</button>
           : <div className={classes}>{content}</div>}
     </li>

@@ -29,7 +29,7 @@
  */
 import { useState, type ReactNode } from 'react';
 import { Menu as BaseMenu } from '@base-ui/react/menu';
-import { Check, ChevronDown } from 'lucide-react';
+import { ArrowUpRight, Check, ChevronDown, ChevronRight } from 'lucide-react';
 import { readSafeArea } from './Frame';
 import './parts.css';
 
@@ -123,4 +123,82 @@ export function Menu<V extends string>({ label, options, value, onChange, count 
       </BaseMenu.Portal>
     </BaseMenu.Root>
   );
+}
+
+/** A menu of a screen's tools, under its button (the paper viewer's Tools on a laptop: the
+ *  phone's Tools sheet as a menu). Its rows are switches that apply at once and stay open
+ *  (MenuSwitch), rows that open something or leave the app (MenuAction), under small labels
+ *  (MenuLabel). The button shows a face (an icon and a word) and a chevron-down. */
+export interface MenuPanelProps {
+  /** The menu's accessible name ("Tools"). */
+  label: string;
+  /** The button's accessible name, when its face does not say it ("Study tools for this paper"). */
+  buttonLabel?: string;
+  /** What the button shows: an icon and a word. */
+  face: ReactNode;
+  /** A heading row at the top of the menu: the title at the left, a quiet word at the right ("2 on"). */
+  head?: ReactNode;
+  status?: ReactNode;
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
+  /** Which edge of the button the menu lines up with. */
+  align?: 'start' | 'end';
+  children: ReactNode;
+  className?: string;
+}
+
+export function MenuPanel({ label, buttonLabel, face, head, status, open, onOpenChange, align = 'end', children, className = '' }: MenuPanelProps) {
+  const [ownOpen, setOwnOpen] = useState(false);
+  const shown = open ?? ownOpen;
+  const setShown = (next: boolean) => { if (onOpenChange) onOpenChange(next); else setOwnOpen(next); };
+  return (
+    <BaseMenu.Root open={shown} onOpenChange={setShown}>
+      <BaseMenu.Trigger className={`ui-part ui-menu-btn ui-menu-btn--face ${className}`.trim()} aria-label={buttonLabel}>
+        <span className="ui-menu-btn-text">{face}</span>
+        <ChevronDown className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" focusable="false" />
+      </BaseMenu.Trigger>
+      <BaseMenu.Portal>
+        <BaseMenu.Positioner className="ui-menu-layer" side="bottom" align={align} sideOffset={6}
+          collisionPadding={shown ? menuCollisionPadding() : MENU_GAP}>
+          <BaseMenu.Popup className="ui-part ui-menu ui-menu--panel" aria-label={label}>
+            {head ? <div className="ui-menu-head"><span className="ui-menu-head-title">{head}</span>{status ? <span className="ui-menu-head-status">{status}</span> : null}</div> : null}
+            {children}
+          </BaseMenu.Popup>
+        </BaseMenu.Positioner>
+      </BaseMenu.Portal>
+    </BaseMenu.Root>
+  );
+}
+
+/** A small label over a group of a panel's rows ("Switch on", "Start"). */
+export function MenuLabel({ children }: { children: ReactNode }) {
+  return <p className="ui-menu-label" aria-hidden="true">{children}</p>;
+}
+
+/** A row that switches a thing on or off: it applies at once and the menu stays open. */
+export function MenuSwitch({ title, meta, checked, onChange, closeOnClick = false }: {
+  title: ReactNode; meta?: ReactNode; checked: boolean; onChange: (checked: boolean) => void;
+  /** The thing it switches on takes over the screen: close the menu as it applies. */
+  closeOnClick?: boolean;
+}) {
+  return (
+    <BaseMenu.CheckboxItem checked={checked} onCheckedChange={next => onChange(next)} closeOnClick={closeOnClick} className="ui-menu-item ui-menu-item--row">
+      <span className="ui-menu-item-copy"><span className="ui-menu-item-title">{title}</span>{meta ? <span className="ui-menu-item-meta">{meta}</span> : null}</span>
+      <span className="ui-switch" data-on={checked || undefined} aria-hidden="true"><span className="ui-switch-knob" /></span>
+    </BaseMenu.CheckboxItem>
+  );
+}
+
+/** A row that opens something (a chevron) or leaves the app for the browser (href: an arrow up-right). */
+export function MenuAction({ title, meta, onPress, href }: { title: ReactNode; meta?: ReactNode; onPress?: () => void; href?: string }) {
+  const content = (
+    <>
+      <span className="ui-menu-item-copy"><span className="ui-menu-item-title">{title}</span>{meta ? <span className="ui-menu-item-meta">{meta}</span> : null}</span>
+      {href ? <ArrowUpRight className="ui-icon ui-menu-item-glyph" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+        : <ChevronRight className="ui-icon ui-menu-item-glyph" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />}
+    </>
+  );
+  return href
+    ? <BaseMenu.Item className="ui-menu-item ui-menu-item--row" render={<a href={href} target="_blank" rel="noopener noreferrer" />}>{content}</BaseMenu.Item>
+    : <BaseMenu.Item className="ui-menu-item ui-menu-item--row" onClick={onPress}>{content}</BaseMenu.Item>;
 }

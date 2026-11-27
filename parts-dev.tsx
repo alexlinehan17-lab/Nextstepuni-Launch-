@@ -22,11 +22,11 @@ import React, { useRef, useState, type ReactNode } from 'react';
 import { createRoot } from 'react-dom/client';
 // The app loads its global stylesheet first and the parts after it; so does this page.
 import './index.css';
-import { ChartNoAxesColumn, ChevronLeft, Compass, Ellipsis, House, Map, Search, Timer } from 'lucide-react';
+import { ChartNoAxesColumn, ChevronLeft, Compass, Ellipsis, House, Map, Search, SlidersHorizontal, Timer } from 'lucide-react';
 import IllustrationTheme from './components/IllustrationTheme';
 import { Arrow, Button, Glyph, IconButton, TextButton } from './components/ui/Button';
 import { ChoiceGroup, SelectionBar, SelectionMark, SelectionWords, Switch } from './components/ui/Choice';
-import { Menu } from './components/ui/Menu';
+import { Menu, MenuAction, MenuLabel, MenuPanel, MenuSwitch } from './components/ui/Menu';
 import { Confirm, Sheet } from './components/ui/Sheet';
 import { MessageHost, showMessage } from './components/ui/Message';
 import { PinnedFooter, TabBar, TopBar } from './components/ui/Bars';
@@ -226,7 +226,27 @@ function MenuSection() {
         <Menu label="Find a starting point" block value="none" onChange={() => {}} face={<span className="ui-row-body"><span className="ui-row-title">Find a starting point</span><span className="ui-row-meta">Start from what you need help with</span></span>}
           options={[{ value: 'remember', label: 'I forget what I study' }, { value: 'start', label: 'I keep putting it off' }]} />
       </Spec>
+      <Spec label="A menu of a screen's tools" caption="MenuPanel (the paper viewer's Tools on a laptop): the phone's Tools sheet as a menu under its button. A switch turns a thing on and the menu stays open; a row with a chevron opens it; up-right leaves the app.">
+        <Line><span data-demo="menu-panel"><MenuPanelDemo /></span></Line>
+      </Spec>
     </Section>
+  );
+}
+
+function MenuPanelDemo() {
+  const [self, setSelf] = useState(true);
+  const [words, setWords] = useState(true);
+  return (
+    <MenuPanel label="Tools" buttonLabel="Study tools for this paper" head="Tools" status={`${[self, words].filter(Boolean).length} on`}
+      face={<><SlidersHorizontal className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />Tools</>}>
+      <MenuSwitch title="Save this paper" meta="Keeps it in Saved papers" checked={false} onChange={() => {}} />
+      <MenuAction title="Download the paper" meta="Opens in your browser · PDF · 1.3 MB" href="#download" />
+      <MenuLabel>Switch on</MenuLabel>
+      <MenuSwitch title="Self-mark" meta="Score yourself against the scheme" checked={self} onChange={setSelf} />
+      <MenuSwitch title="Command words" meta="Decode what each question demands" checked={words} onChange={setWords} />
+      <MenuLabel>Start</MenuLabel>
+      <MenuAction title="Triage" meta="Rate each question before you start" onPress={() => {}} />
+    </MenuPanel>
   );
 }
 
@@ -329,6 +349,16 @@ function BarsSection() {
       <Spec label="A row you tick" caption="CheckRow: the whole row is the checkbox, with the screen's own mark (Time's up: the session's dotted ring).">
         <CheckRowDemo />
       </Spec>
+      <Spec label="An over-screen with its own controls, on a phone" caption="below: a second row inside the bar, under the name (the paper viewer: Paper or Scheme beside its Answers switch).">
+        <div className="border border-dashed border-outline-soft"><TopBar ruled leave={{ kind: 'close', onPress: () => {}, label: 'Close viewer' }} over="2025 · Higher · Exam Paper" title="Physics"
+          action={<IconButton label="Study tools for this paper" icon={<Glyph icon={SlidersHorizontal} />} />}
+          below={<><SelectionBar label="Paper or marking scheme" size="md" className="flex-1" value="paper" onChange={() => {}} options={[{ value: 'paper', label: 'Paper' }, { value: 'scheme', label: 'Scheme' }]} /><label className="ui-switch-row"><span>Answers</span><Switch checked onChange={() => {}} label="Answers" /></label></>} /></div>
+      </Spec>
+      <Spec label="The same over-screen on a laptop" caption="A title and a centre control together: the name at the left beside Close, the control centred between two equal zones, the actions at the right.">
+        <div className="border border-dashed border-outline-soft"><TopBar ruled leave={{ kind: 'close', onPress: () => {}, label: 'Close viewer' }} over="2025 · Higher · Exam Paper" title="Physics"
+          center={<SelectionBar label="Paper or marking scheme" size="md" value="paper" onChange={() => {}} options={[{ value: 'paper', label: 'Paper' }, { value: 'scheme', label: 'Scheme' }]} />}
+          action={<IconButton label="Study tools for this paper" icon={<Glyph icon={SlidersHorizontal} />} />} /></div>
+      </Spec>
       <Spec label="Something over the top" caption="Close, an X, top left. A hairline once content scrolls under it.">
         <div className="border border-dashed border-outline-soft"><TopBar ruled leave={{ kind: 'close', onPress: () => {} }} title="Practice" /></div>
       </Spec>
@@ -365,6 +395,7 @@ function FieldsSection() {
         <List>
           <Row art={CREW.accounting} title="Accounting" meta={<>Practice · 45 min · <span className="text-accent-text">Up next</span></>} onPress={() => {}} />
           <Row title="Sessions this week" value="6 / 8" />
+          <Row external href="#download" title="Download the paper" meta="Opens in your browser · PDF · 1.3 MB" />
           <Row title="Offer me questions when I finish" trailing={<Switch checked={on} onChange={setOn} label="Offer me questions when I finish" />} />
           <Row art={<img src={CREW.irish} alt="" />} title="Irish" meta="Practice · 45 min" label="Study Irish: Practice, 45 minutes" onPress={() => {}} />
         </List>

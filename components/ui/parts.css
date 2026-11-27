@@ -398,6 +398,25 @@
 .ui-menu-item[data-highlighted] { background: var(--surface-soft); }
 .ui-menu-item[aria-checked='true'] { font-weight: 700; }
 .ui-menu-item-text { display: flex; align-items: baseline; gap: var(--space-3); min-width: 0; }
+/* A panel of a screen's tools (MenuPanel: the paper viewer's Tools on a laptop): a head, small
+   labels over groups, rows with a second line, a switch or a glyph at the trailing edge. */
+.ui-menu-btn--face .ui-menu-btn-text { display: inline-flex; align-items: center; gap: var(--space-2); }
+.ui-menu-btn--face .ui-menu-btn-text .ui-icon { color: var(--ink-primary); }
+.ui-menu.ui-menu--panel { width: 380px; max-width: var(--available-width, 100vw); padding: 4px 6px 8px; }
+.ui-menu-head { display: flex; align-items: center; justify-content: space-between; min-height: 48px; margin: -4px -6px 4px; padding: 0 18px; border-bottom: 1px solid var(--hairline); }
+.ui-menu-head-title { font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.ui-menu-head-status { color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.ui-menu-label { margin: 0; padding: 12px 12px 4px; color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.ui-menu-item.ui-menu-item--row { justify-content: flex-start; min-height: 52px; padding: 5px 12px; color: var(--ink-primary); text-align: left; text-decoration: none; }
+.ui-menu-item--row[aria-checked='true'] { font-weight: inherit; }
+.ui-menu-item-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; }
+.ui-menu-item-title { font-size: 16px; line-height: 21px; }
+.ui-menu-item-meta { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.ui-menu-item--row .ui-icon { visibility: visible; }
+.ui-menu-item-glyph { color: var(--ink-muted); }
+.ui-menu-item .ui-switch[data-on] { background: var(--ink-primary); }
+.ui-menu-item .ui-switch[data-on] .ui-switch-knob { transform: translateX(20px); }
+.dark .ui-menu-item .ui-switch[data-on] .ui-switch-knob { background: var(--action-ink); }
 .ui-menu-num { flex: none; color: var(--ink-muted); font-style: normal; font-weight: 400; }
 .ui-menu-item .ui-icon { visibility: hidden; }
 .ui-menu-item[aria-checked='true'] .ui-icon { visibility: visible; }
@@ -603,6 +622,17 @@
 .ui-bar .ui-bar-cancel { padding: 0 var(--space-4); font-size: 17px; line-height: 22px; }
 .ui-bar-art { display: block; width: 36px; height: 36px; margin-right: 6px; object-fit: contain; }
 .ui-bar-art > :is(svg, img) { display: block; width: 100%; height: 100%; }
+/* A bar with a second row under the name, inside the same bar (the paper
+   viewer on a phone: Paper or Scheme beside its Answers switch). */
+.ui-bar-below { display: flex; align-items: center; gap: var(--space-4); padding: var(--space-1) var(--space-6) var(--space-3); }
+/* A bar with the name at the left beside the leave control, a control in the
+   middle and actions at the right (the paper viewer on a laptop): the middle
+   stays centred between two equal zones. */
+.ui-bar--split .ui-bar-row { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); column-gap: var(--space-4); }
+.ui-bar-zone { display: flex; min-width: 0; align-items: center; gap: var(--space-1); }
+.ui-bar-zone--end { justify-content: flex-end; gap: var(--space-3); }
+.ui-bar--split .ui-bar-mid { position: static; flex: 1; min-width: 0; align-items: flex-start; text-align: left; }
+.ui-bar-center { display: flex; align-items: center; justify-content: center; min-width: 0; }
 /* A page's one-line explanation under its bar (Year Plans), when it has one. */
 .ui-bar-sub { margin: 0; padding: var(--space-2) var(--space-6) 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
 /* A place's opening, where its bar would be: no leave control, its small label

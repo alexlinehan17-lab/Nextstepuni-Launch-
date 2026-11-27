@@ -57,8 +57,13 @@ export interface TopBarProps {
    *  ("How it works" on the island). Ignored when there is a leave control or a place label. */
   lead?: ReactNode;
   /** A control centred in the bar instead of a title (the island's selection bar on a laptop):
-   *  midway between the bar's ends, with the lead and the action balancing it. */
+   *  midway between the bar's ends, with the lead and the action balancing it. Given with a
+   *  title, the name sits at the left beside the leave control and the control stays centred
+   *  between two equal zones (the paper viewer on a laptop: Paper or Scheme in the middle). */
   center?: ReactNode;
+  /** A second row inside the bar, under the name (the paper viewer on a phone: Paper or
+   *  Scheme beside its Answers switch). */
+  below?: ReactNode;
   /** A tool's bar: 52px row, 19px name. */
   tool?: boolean;
   /** A hairline under the bar, once content has scrolled beneath it. */
@@ -66,30 +71,43 @@ export interface TopBarProps {
   className?: string;
 }
 
-export function TopBar({ leave, title, over, placeLabel, art, action, lead, center, tool = false, ruled = false, className = '', ...rest }: TopBarProps & { 'data-student-page-header'?: boolean }) {
+export function TopBar({ leave, title, over, placeLabel, art, action, lead, center, below, tool = false, ruled = false, className = '', ...rest }: TopBarProps & { 'data-student-page-header'?: boolean }) {
   const LeaveGlyph = leave?.kind === 'close' ? X : ChevronLeft;
+  const split = Boolean(title && center);
+  const start = (
+    <span className="ui-bar-slot">
+      {leave?.kind === 'cancel'
+        ? <TextButton className="ui-bar-cancel" onClick={leave.onPress}>{leave.label ?? 'Cancel'}</TextButton>
+        : leave
+        ? <IconButton label={leave.label ?? (leave.kind === 'close' ? 'Close' : 'Back')} onClick={leave.onPress}
+            icon={<LeaveGlyph className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+        : placeLabel ? <span className="ui-bar-label">{placeLabel}</span> : lead ?? null}
+    </span>
+  );
+  const name = title ? (
+    <span className="ui-bar-mid">
+      {over ? <span className="ui-bar-over">{over}</span> : null}
+      <h1 className="ui-bar-title">{title}</h1>
+    </span>
+  ) : null;
+  const end = typeof art === 'string' ? <ThemeArtwork className="ui-bar-art" src={art} transparentBackground alt="" />
+    : art ? <span className="ui-bar-art" aria-hidden="true">{art}</span> : action ?? null;
   return (
-    <header {...rest} className={`ui-part ui-bar frame-bar${tool ? ' ui-bar--tool' : ''}${ruled ? ' ui-bar--ruled' : ''}${art ? ' ui-bar--art' : ''} ${className}`.trim()}>
-      <div className="ui-bar-row">
-        <span className="ui-bar-slot">
-          {leave?.kind === 'cancel'
-            ? <TextButton className="ui-bar-cancel" onClick={leave.onPress}>{leave.label ?? 'Cancel'}</TextButton>
-            : leave
-            ? <IconButton label={leave.label ?? (leave.kind === 'close' ? 'Close' : 'Back')} onClick={leave.onPress}
-                icon={<LeaveGlyph className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
-            : placeLabel ? <span className="ui-bar-label">{placeLabel}</span> : lead ?? null}
-        </span>
-        {title ? (
-          <span className="ui-bar-mid">
-            {over ? <span className="ui-bar-over">{over}</span> : null}
-            <h1 className="ui-bar-title">{title}</h1>
-          </span>
-        ) : center ? <span className="ui-bar-mid ui-bar-mid--control">{center}</span> : null}
-        <span className="ui-bar-slot ui-bar-slot--end">
-          {typeof art === 'string' ? <ThemeArtwork className="ui-bar-art" src={art} transparentBackground alt="" />
-            : art ? <span className="ui-bar-art" aria-hidden="true">{art}</span> : action ?? null}
-        </span>
-      </div>
+    <header {...rest} className={`ui-part ui-bar frame-bar${tool ? ' ui-bar--tool' : ''}${ruled ? ' ui-bar--ruled' : ''}${art ? ' ui-bar--art' : ''}${split ? ' ui-bar--split' : ''}${below ? ' ui-bar--below' : ''} ${className}`.trim()}>
+      {split ? (
+        <div className="ui-bar-row">
+          <span className="ui-bar-zone">{start}{name}</span>
+          <span className="ui-bar-center">{center}</span>
+          <span className="ui-bar-zone ui-bar-zone--end">{end}</span>
+        </div>
+      ) : (
+        <div className="ui-bar-row">
+          {start}
+          {name ?? (center ? <span className="ui-bar-mid ui-bar-mid--control">{center}</span> : null)}
+          <span className="ui-bar-slot ui-bar-slot--end">{end}</span>
+        </div>
+      )}
+      {below ? <div className="ui-bar-below">{below}</div> : null}
     </header>
   );
 }

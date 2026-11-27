@@ -24,44 +24,30 @@ import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useSta
 import { createPortal } from 'react-dom';
 import { AnimatePresence, useReducedMotion } from 'framer-motion';
 import {
-  ArrowLeft,
-  ArrowUpRight,
   BookOpen,
   ChevronLeft,
   ChevronRight,
   Clock3,
   Download,
-  Highlighter,
   Pause,
   Play,
-  ListChecks,
   Minus,
-  PenLine,
   Plus,
-  Repeat2,
   RotateCcw,
   SlidersHorizontal,
-  BookOpenCheck,
-  TrendingUp,
   X,
-  ZoomIn,
-  ZoomOut,
 } from 'lucide-react';
 import { MotionDiv } from '../Motion';
-import { IconButton } from '../ui/Button';
+import { Button as UiButton, IconButton, TextButton } from '../ui/Button';
+import { TopBar } from '../ui/Bars';
+import { SelectionBar, Switch } from '../ui/Choice';
+import { Sheet } from '../ui/Sheet';
+import { List, Row } from '../ui/List';
+import { MenuAction, MenuLabel, MenuPanel, MenuSwitch } from '../ui/Menu';
 import KobraScope, {
   Alert,
   AlertDescription,
-  Button,
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
   Spinner,
-  Switch,
-  Tabs,
-  TabsList,
-  TabsTrigger,
   Toasts,
   toast,
 } from '../approved-ui-runtime';
@@ -215,6 +201,10 @@ const LOAD_TIMEOUT_MS = 30_000;
 const Viewer: React.FC<ViewerProps> = ({
   title,
   subtitle,
+  barName,
+  barOver,
+  saved = false,
+  onSave,
   paper,
   scheme,
   initialSide = 'paper',
@@ -358,22 +348,7 @@ const Viewer: React.FC<ViewerProps> = ({
     [minsPerMark, docTokens],
   );
 
-  // Marks-per-page for the heat-strip — where the marks live across the paper.
-  const marksByPage = useMemo(() => {
-    if (!docTokens) return null;
-    const map = new Map<number, number>();
-    let max = 1;
-    for (const [pg, tok] of docTokens.byPage) {
-      const sum = tok.marks.reduce((a, m) => a + m.value, 0);
-      map.set(pg, sum);
-      if (sum > max) max = sum;
-    }
-    return { map, max };
-  }, [docTokens]);
-
   const onCommand = useCallback((c: CommandToken) => setCommandReveal(c), []);
-
-  const activeToolCount = [answersOn, paceOn, decodeOn, examOn, topicsOn, selfMarkOn].filter(Boolean).length;
 
   // page → its question anchors, memoised so Page's React.memo holds across
   // scroll/zoom re-renders (a fresh filter() each render would defeat it).
@@ -1352,279 +1327,167 @@ const Viewer: React.FC<ViewerProps> = ({
       : null,
   );
 
+  // ── The bar's parts and Tools (boards c-papers-bar, r5-paper-viewer) ──
+  // Answers is a black and white switch beside Paper or Scheme. On the scheme it
+  // steps aside, as today; on a laptop it keeps its place so zoom and Tools stay put.
+  const showAnswers = !attemptFirst && side === 'paper' && Boolean(answersUrl);
+  const documentBar = scheme ? (
+    <SelectionBar label="Paper or marking scheme" size="md" className="pv-document" value={side}
+      onChange={next => deskSide(next)} options={[{ value: 'paper', label: 'Paper' }, { value: 'scheme', label: 'Scheme' }]} />
+  ) : null;
+  const answersSwitch = answersUrl ? (
+    <label className="ui-switch-row pv-answers" hidden={(!isWide && !showAnswers) || undefined} data-ghost={isWide && !showAnswers ? '' : undefined}>
+      <span>Answers</span>
+      <Switch checked={answersOn} onChange={() => toggleAnswers()} label="Show the marking scheme beside each question"
+        tabIndex={showAnswers ? undefined : -1} />
+    </label>
+  ) : null;
+  const zoomControl = (
+    <span className="pv-zoom" role="group" aria-label="Zoom">
+      <IconButton label="Zoom out" aria-disabled={session.state !== 'ready' || zoom === ZOOM_STEPS[0] || undefined}
+        onClick={() => { if (session.state === 'ready') zoomBy(-1); }}
+        icon={<Minus className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+      <span className="ui-readout pv-zoom-value">{Math.round(zoom * 100)}%</span>
+      <IconButton label="Zoom in" aria-disabled={session.state !== 'ready' || zoom === ZOOM_STEPS[ZOOM_STEPS.length - 1] || undefined}
+        onClick={() => { if (session.state === 'ready') zoomBy(1); }}
+        icon={<Plus className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+    </span>
+  );
+  // Go to page: today's page field, kept in Tools (the agreed bar shows the page
+  // count as a readout only).
+  const pageJump = (inMenu = false) => (
+    <form className="pv-page-jump" aria-label="Page navigation" onSubmit={e => { e.preventDefault(); if (scrubbing != null) jumpToPage(Math.max(1, Math.min(session.numPages, scrubbing))); setScrubbing(null); }}>
+      <input type="number" inputMode="numeric" min={1} max={session.numPages || 1} disabled={session.state !== 'ready'} value={scrubbing ?? session.page} aria-label="Go to page"
+        // In the laptop menu the field is out of the tab order, so the menu opens
+        // with its own focus, as drawn; it still takes a click and typing.
+        tabIndex={inMenu ? -1 : undefined}
+        onKeyDown={e => e.stopPropagation()}
+        onChange={e => setScrubbing(e.target.value ? Number(e.target.value) : 1)}
+        onBlur={() => { if (scrubbing != null) jumpToPage(Math.max(1, Math.min(session.numPages, scrubbing))); setScrubbing(null); }} />
+      <span aria-hidden="true">/ {session.numPages || '—'}</span>
+    </form>
+  );
+  type ToolEntry =
+    | { kind: 'switch'; key: string; title: string; meta: string; on: boolean; toggle: () => void; close?: boolean }
+    | { kind: 'open'; key: string; title: string; meta: string; onPress: () => void }
+    | { kind: 'link'; key: string; title: string; meta: string; href: string };
+  const fileWord = side === 'paper' ? 'paper' : 'scheme';
+  const keep: ToolEntry[] = [
+    ...(onSave ? [{ kind: 'switch' as const, key: 'save', title: 'Save this paper', meta: 'Keeps it in Saved papers', on: saved, toggle: onSave }] : []),
+    { kind: 'link', key: 'download', title: `Download the ${fileWord}`, meta: `Opens in your browser · PDF${activeDoc.bytes ? ` · ${prettyBytes(activeDoc.bytes)}` : ''}`, href: activeDoc.url },
+  ];
+  const switchOn: ToolEntry[] = [
+    { kind: 'switch', key: 'attempt', title: 'Attempt first', meta: 'Write your answer before the scheme shows', on: attemptFirst, toggle: () => toggleAttemptFirst(!attemptFirst), close: true },
+    ...(side === 'paper' ? [
+      ...(answersUrl && scheme && storageNs ? [{ kind: 'switch' as const, key: 'self', title: 'Self-mark', meta: 'Score yourself against the scheme', on: selfMarkOn, toggle: toggleSelfMark, close: true }] : []),
+      { kind: 'switch' as const, key: 'decode', title: 'Command words', meta: 'Decode what each question demands', on: decodeOn, toggle: () => toggleTool('decode') },
+      ...(topics ? [{ kind: 'switch' as const, key: 'topics', title: 'Topics & frequency', meta: 'How often each topic comes up', on: topicsOn, toggle: toggleTopics }] : []),
+      ...(timing ? [{ kind: 'switch' as const, key: 'exam', title: 'Exam mode', meta: `Clock set to ${timing.totalMinutes} min`, on: examOn, close: true, toggle: () => {
+        setExamOn(v => {
+          const next = !v;
+          setRunning(next);
+          if (next) setElapsed(0);
+          return next;
+        });
+        setToolsOpen(false);
+      } }] : []),
+    ] : []),
+  ];
+  const start: ToolEntry[] = side === 'paper' ? [
+    ...(answersUrl && storageNs ? [{ kind: 'open' as const, key: 'triage', title: 'Triage', meta: 'Rate each question before you start', onPress: openTriage }] : []),
+    ...(answersUrl && scheme && storageNs ? [{ kind: 'open' as const, key: 'loop', title: 'The Full Loop', meta: resumePlace ? `Resume at question ${resumePlace.idx + 1}` : 'Question by question: attempt, reveal, mark', onPress: resumePlace ? resumeLoop : startLoop }] : []),
+    ...(formulae ? [{ kind: 'open' as const, key: 'formulae', title: 'Formulae & Tables', meta: 'Jump to the booklet section', onPress: openFormulae }] : []),
+  ] : [];
+  const onCount = switchOn.filter(entry => entry.kind === 'switch' && entry.on).length;
+  const scanNote = scanState === 'error' && side === 'paper'
+    ? <p className="pv-tools-note">Couldn’t read this paper’s text layer — overlays unavailable.</p> : null;
+  // On a phone: rows in a sheet. A switch turns a thing on; a row with a chevron opens it.
+  const sheetRow = (entry: ToolEntry) => entry.kind === 'switch'
+    ? <li key={entry.key} className="ui-row-item">
+        <label className="ui-part ui-row pv-switch-row">
+          <span className="ui-row-body"><span className="ui-row-title">{entry.title}</span><span className="ui-row-meta">{entry.meta}</span></span>
+          <Switch checked={entry.on} onChange={() => entry.toggle()} label={entry.title} />
+        </label>
+      </li>
+    : entry.kind === 'link'
+      ? <Row key={entry.key} external href={entry.href} title={entry.title} meta={entry.meta} />
+      : <Row key={entry.key} title={entry.title} meta={entry.meta} onPress={entry.onPress} />;
+  const toolsList = (
+    <div className="pv-tools">
+      <List label="This paper">
+        <Row title="Zoom" trailing={zoomControl} />
+        <Row title="Go to page" trailing={pageJump()} />
+        {keep.map(sheetRow)}
+      </List>
+      <p className="t-label pv-tools-label">Switch on</p>
+      <List label="Switch on">{switchOn.map(sheetRow)}</List>
+      {start.length > 0 && <><p className="t-label pv-tools-label">Start</p><List label="Start">{start.map(sheetRow)}</List></>}
+      {scanNote}
+    </div>
+  );
+  // On a laptop: the same list as a menu under its button; zoom stays in the bar.
+  const menuRow = (entry: ToolEntry) => entry.kind === 'switch'
+    ? <MenuSwitch key={entry.key} title={entry.title} meta={entry.meta} checked={entry.on} onChange={() => entry.toggle()} closeOnClick={entry.close} />
+    : entry.kind === 'link'
+      ? <MenuAction key={entry.key} title={entry.title} meta={entry.meta} href={entry.href} />
+      : <MenuAction key={entry.key} title={entry.title} meta={entry.meta} onPress={entry.onPress} />;
+  const toolsMenu = (
+    <MenuPanel label="Tools" buttonLabel="Study tools for this paper" className="pv-tools-btn" open={toolsOpen} onOpenChange={setToolsOpen}
+      face={<><SlidersHorizontal className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />Tools</>}
+      head="Tools" status={onCount > 0 ? `${onCount} on` : undefined}>
+      {keep.map(menuRow)}
+      <div className="pv-page-row"><span className="ui-menu-item-title">Go to page</span>{pageJump(true)}</div>
+      <MenuLabel>Switch on</MenuLabel>
+      {switchOn.map(menuRow)}
+      {start.length > 0 && <><MenuLabel>Start</MenuLabel>{start.map(menuRow)}</>}
+      {scanNote}
+    </MenuPanel>
+  );
+  const toolsButton = (
+    <IconButton label="Study tools for this paper" onClick={() => setToolsOpen(true)}
+      icon={<SlidersHorizontal className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+  );
+
   // ── render ──
   return createPortal(
     <div
       ref={rootRef}
       data-lenis-prevent
-      className="fixed inset-0 z-[100] flex flex-col bg-zinc-100 dark:bg-surface-canvas"
+      className="pv-root fixed inset-0 z-[100] flex flex-col"
       role="dialog"
       aria-modal="true"
       aria-label={`${title} — document viewer`}
     >
-      {/* Header: Kobra chrome (viewer-chrome.css). */}
-      <KobraScope className="nsu-paper-viewer">
-        <div ref={headerRef} tabIndex={-1} className="pvc-top">
-          <div className="pvc-bar">
-            <div className="pvc-left">
-            {/* The viewer comes up over Paper Trail: its one way out is Close,
-                an X at the top left, back to exactly where you were. */}
-            <IconButton
-              className="pvc-icon pvc-close"
-              onClick={() => onCloseRef.current()}
-              label="Close viewer"
-              icon={<X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />}
-            />
-            <div className="pvc-heading">
-              <p className="pvc-title">{title}</p>
-              {subtitle && <p className="pvc-subtitle">{subtitle}</p>}
-            </div>
-              {scheme && (
-                <Tabs className="pvc-document" value={side} onValueChange={next => deskSide(next as Side)}>
-                  <TabsList aria-label="Paper or marking scheme">
-                    <TabsTrigger value="paper">Paper</TabsTrigger>
-                    <TabsTrigger value="scheme">Scheme</TabsTrigger>
-                  </TabsList>
-                </Tabs>
-              )}
-            </div>
-            <div className="pvc-controls">
-              <label className="pvc-attempt-toggle"><span>Attempt first</span><Switch checked={attemptFirst} onCheckedChange={toggleAttemptFirst} aria-label="Attempt first" /></label>
-              {/* Answers — the flagship per-question marking-scheme reveal. A
-                  standalone one-tap toggle (not buried in the Tools menu), shown
-                  whenever this paper has a verified answer map. */}
-              {!attemptFirst && side === 'paper' && answersUrl && (
-                <Button
-                  className="pvc-answers"
-                  onClick={toggleAnswers}
-                  aria-pressed={answersOn}
-                  aria-label="Show the marking scheme beside each question"
-                >
-                  <span className="pvc-answers-mark" aria-hidden="true" />Answers
-                </Button>
-              )}
-              <div className="pvc-actions">
-              {/* The Kobra menu dismisses itself on an outside tap and on
-                  Escape; it stays controlled so every tool can still close it. */}
-              {side === 'paper' && (
-                <DropdownMenu open={toolsOpen} onOpenChange={open => setToolsOpen(open)}>
-                  <DropdownMenuTrigger
-                    render={
-                      <Button
-                        variant="outline"
-                        className="nsu-ink-outline pvc-tools"
-                        data-active={activeToolCount > 0 || undefined}
-                        aria-label="Study tools for this paper"
-                      />
-                    }
-                  >
-                    <SlidersHorizontal aria-hidden="true" />
-                    <span className="pvc-tools-label">Tools</span>
-                    {activeToolCount > 0 && (
-                      <span className="pvc-count" aria-hidden="true">{activeToolCount}</span>
-                    )}
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="end" sideOffset={8} className="pvc-menu">
-                    <KobraScope className="nsu-paper-viewer">
-                      <p className="pvc-menu-label">Study tools</p>
-                      {answersUrl && (
-                        <ToolRow
-                          icon={<BookOpenCheck />}
-                          title="Answers"
-                          sub="Marking scheme beside each question"
-                          on={answersOn}
-                          onClick={() => {
-                            setAttemptFirst(false);
-                            toggleAnswers();
-                            setToolsOpen(false);
-                          }}
-                        />
-                      )}
-                      {answersUrl && storageNs && (
-                        <ToolRow
-                          icon={<ListChecks />}
-                          title="Triage"
-                          sub="Rate each question before you start"
-                          busy={answerState === 'loading'}
-                          onClick={openTriage}
-                        />
-                      )}
-                      {answersUrl && scheme && storageNs && (
-                        <ToolRow
-                          icon={<PenLine />}
-                          title="Self-mark"
-                          sub="Score yourself against the scheme"
-                          on={selfMarkOn}
-                          busy={selfMarkOn && answerState === 'loading'}
-                          onClick={toggleSelfMark}
-                        />
-                      )}
-                      {answersUrl && scheme && storageNs && (
-                        <ToolRow
-                          icon={<Repeat2 />}
-                          title="The Full Loop"
-                          sub={resumePlace ? `Resume at question ${resumePlace.idx+1}` : 'Work the paper question by question — attempt, reveal, mark'}
-                          on={!!loop}
-                          busy={!!loop && answerState === 'loading'}
-                          onClick={resumePlace ? resumeLoop : startLoop}
-                        />
-                      )}
-                      <ToolRow
-                        icon={<Highlighter />}
-                        title="Command words"
-                        sub="Decode what each question demands"
-                        on={decodeOn}
-                        busy={decodeOn && scanState === 'loading'}
-                        keepOpen
-                        onClick={() => toggleTool('decode')}
-                      />
-                      {timing && (
-                        <ToolRow
-                          icon={<Play />}
-                          title="Exam mode"
-                          sub={`Clock set to ${timing.totalMinutes} min`}
-                          on={examOn}
-                          onClick={() => {
-                            setExamOn(v => {
-                              const next = !v;
-                              setRunning(next);
-                              if (next) setElapsed(0);
-                              return next;
-                            });
-                            setToolsOpen(false);
-                          }}
-                        />
-                      )}
-                      {topics && (
-                        <ToolRow
-                          icon={<TrendingUp />}
-                          title="Topics & frequency"
-                          sub="How often each topic comes up + drill it across years"
-                          on={topicsOn}
-                          busy={topicsOn && answerState === 'loading'}
-                          keepOpen
-                          onClick={toggleTopics}
-                        />
-                      )}
-                      {formulae && (
-                        <ToolRow
-                          icon={<BookOpen />}
-                          title="Formulae & Tables"
-                          sub="Jump to the booklet section"
-                          onClick={openFormulae}
-                        />
-                      )}
-          {/* Minute targets are writing-speed sensitive — say whose speed they
-              assume, with the one-line route into the 2-min calibration. */}
-          {paceOn && side === 'paper' && timing && hasAnyTokens && (
-            <div className="max-w-3xl mx-auto mb-1.5 flex items-center justify-center gap-1.5 text-[10.5px]" style={{ color: '#9e9186' }}>
-              {wpmCal ? (
-                <>
-                  <span>Minute targets personalised to your writing speed ({wpmCal.wpm} wpm)</span>
-                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: COLORS.accent }}>
-                    Redo
-                  </button>
-                </>
-              ) : (
-                <>
-                  <span>Minute targets assume a typical writing speed</span>
-                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: COLORS.accent }}>
-                    Personalise in 2 min
-                  </button>
-                </>
-              )}
-            </div>
-          )}
-          {/* Marks heat-strip — where the marks live across the paper (pace tool). */}
-          {paceOn && side === 'paper' && marksByPage && hasAnyTokens && session.numPages > 1 && (
-            <div className="max-w-3xl mx-auto mb-2">
-              <div className="flex items-center justify-between mb-1">
-                <span className="text-[9px] font-bold uppercase tracking-[0.12em] text-zinc-400">Where the marks are</span>
-                <span className="text-[9px] text-zinc-400">tap a page</span>
-              </div>
-              <div className="flex gap-px h-2.5 rounded overflow-hidden bg-zinc-200 dark:bg-surface-soft">
-                {Array.from({ length: session.numPages }, (_, i) => {
-                  const v = marksByPage.map.get(i + 1) ?? 0;
-                  const intensity = v / marksByPage.max;
-                  return (
-                    <button
-                      key={i}
-                      onClick={() => jumpToPage(i + 1)}
-                      aria-label={`Page ${i + 1}: ${v} marks — go there`}
-                      className="flex-1 min-w-[2px] transition-opacity hover:opacity-80"
-                      style={{ backgroundColor: v ? `rgba(242,107,31,${0.22 + 0.78 * intensity})` : 'transparent' }}
-                    />
-                  );
-                })}
-              </div>
-            </div>
-          )}
-                      {scanState === 'error' && (
-                        <p className="pvc-menu-note">
-                          Couldn’t read this paper’s text layer — overlays unavailable.
-                        </p>
-                      )}
-                    </KobraScope>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              )}
-            <div className="pvc-zoom">
-              <Button
-                variant="outline"
-                size="icon"
-                className="nsu-ink-outline pvc-icon"
-                onClick={() => zoomBy(-1)}
-                disabled={session.state!=='ready' || zoom === ZOOM_STEPS[0]}
-                aria-label="Zoom out"
-              >
-                <ZoomOut aria-hidden="true" />
-              </Button>
-              <Button
-                variant="outline"
-                size="icon"
-                className="nsu-ink-outline pvc-icon"
-                onClick={() => zoomBy(1)}
-                disabled={session.state!=='ready' || zoom === ZOOM_STEPS[ZOOM_STEPS.length - 1]}
-                aria-label="Zoom in"
-              >
-                <ZoomIn aria-hidden="true" />
-              </Button>
-            </div>
-            <form className="pvc-page-jump" aria-label="Page navigation" onSubmit={e=>{e.preventDefault();if(scrubbing!=null)jumpToPage(Math.max(1,Math.min(session.numPages,scrubbing)));setScrubbing(null);}}>
-              <input type="number" min={1} max={session.numPages||1} disabled={session.state!=='ready'} value={scrubbing??session.page} aria-label="Go to page" onChange={e=>setScrubbing(e.target.value ? Number(e.target.value) : 1)} onBlur={()=>{if(scrubbing!=null)jumpToPage(Math.max(1,Math.min(session.numPages,scrubbing)));setScrubbing(null);}} />
-              <span aria-hidden="true">/ {session.numPages||'—'}</span>
-              <span className="pvc-sr" role="status">Page {session.page} of {session.numPages}</span>
-            </form>
-            <a
-              href={activeDoc.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`Open the ${side} in your browser or download it${activeDoc.bytes ? ` (${prettyBytes(activeDoc.bytes)})` : ''}`}
-              className="nsu-ink-outline pvc-link"
-            >
-              <Download aria-hidden="true" />
-            </a>
-            </div>
-            </div>
-          </div>
-        </div>
-      </KobraScope>
+      {/* The bar (c-papers-bar, r5-paper-viewer): on a phone two rows, Close, the
+          paper's name and Tools, then Paper or Scheme beside the Answers switch;
+          on a laptop one line, Close and the name, Paper or Scheme in the
+          middle, then Answers, zoom and Tools. The viewer comes up over Paper
+          Trail: its one way out is Close, top left, back to exactly where you were. */}
+      <div ref={headerRef} tabIndex={-1} className="pv-top">
+        <TopBar ruled className="pv-bar"
+          leave={{ kind: 'close', onPress: () => onCloseRef.current(), label: 'Close viewer' }}
+          over={barOver ?? subtitle} title={barName ?? title}
+          center={isWide && documentBar ? documentBar : undefined}
+          action={isWide ? <div className="pv-actions">{answersSwitch ?? <span />}{zoomControl}{toolsMenu}</div> : toolsButton}
+          below={!isWide && (documentBar || answersSwitch) ? <>{documentBar}{answersSwitch}</> : undefined} />
+      </div>
 
-      {audioSource && <div className="shrink-0 bg-white border-b border-zinc-200">
+      {audioSource && <div className="shrink-0 bg-[var(--surface-canvas)] border-b border-[var(--hairline)]">
         <div className="max-w-3xl mx-auto"><FrenchPaperAudio source={audioSource} /></div>
       </div>}
       <div ref={workspaceRef} className="pt-reader-workspace" style={{'--ad-size':`${deskSizePercent}%`} as React.CSSProperties} data-resizing={deskResizing||undefined} data-attempt={attemptFirst && side==='paper' || undefined} data-split={inlineScheme || undefined}>
       {/* Body */}
+      <div className="pv-doc">
       {session.state === 'ready' && session.pdf ? (
         <div
           ref={attachScroller}
           onScroll={onScroll}
-          className="relative flex-1 overflow-auto overscroll-contain"
+          className="pv-scroller relative flex-1 overflow-auto overscroll-contain"
           aria-label={`${activeDoc.label}, page ${session.page} of ${session.numPages}`}
         >
           <p className="sr-only">
-            This document is shown as page images. For a screen-reader-friendly copy, use the
-            “Open in your browser” button in the header.
+            This document is shown as page images. For a screen-reader-friendly copy, use
+            “Download the {side === 'paper' ? 'paper' : 'scheme'}” in Tools.
           </p>
           <div className="mx-auto py-3 px-2" style={{ width: `${Math.round(zoom * 100)}%`, maxWidth: zoom === 1 ? 820 : undefined }}>
             {Array.from({ length: session.numPages }, (_, i) => (
@@ -1648,60 +1511,54 @@ const Viewer: React.FC<ViewerProps> = ({
               />
             ))}
           </div>
-          <p className="text-center text-[10px] text-zinc-400 pb-3">© State Examinations Commission</p>
+          <p className="pv-copyright">© State Examinations Commission</p>
         </div>
       ) : session.state === 'loading' ? (
-        <div className="flex-1 flex flex-col items-center justify-center gap-3 text-zinc-400">
-          <div className="w-7 h-7 rounded-full border-2 border-zinc-300 border-t-zinc-500 animate-spin" aria-hidden />
-          <p className="text-[13px]">
+        <div className="pv-state">
+          <Spinner />
+          <p className="t-meta">
             Opening {side === 'paper' ? 'the paper' : 'the marking scheme'}…
             {activeDoc.bytes ? ` ${prettyBytes(activeDoc.bytes)}` : ''}
           </p>
-          <a href={activeDoc.url} target="_blank" rel="noopener noreferrer" className="text-[12px] underline underline-offset-2 text-zinc-400">
-            Taking too long? Open in browser
+          <a href={activeDoc.url} target="_blank" rel="noopener noreferrer" className="ui-part ui-link ui-link--quiet">
+            <span>Taking too long? Open in browser</span>
           </a>
         </div>
       ) : (
-        <div className="flex-1 flex flex-col items-center justify-center gap-4 px-8 text-center">
-          <p className="text-[15px] font-semibold text-zinc-800 dark:text-zinc-100">
+        <div className="pv-state">
+          <p className="pv-state-title">
             {session.state === 'unsupported'
               ? 'This phone can’t show PDFs inside the app.'
               : session.httpStatus != null
                 ? 'The paper archive is temporarily unavailable.'
                 : 'That didn’t load.'}
           </p>
-          <p className="text-[13px] text-zinc-500 max-w-sm">
+          <p className="t-sub max-w-sm">
             {session.state === 'unsupported'
               ? 'No problem — the document will open in your browser instead.'
               : session.httpStatus != null
                 ? 'The problem is on our side — not your connection or your phone. Please try again in a little while.'
                 : 'It might be the connection. Try again, or open it in your browser.'}
           </p>
-          <div className="flex items-center gap-2.5">
+          <div className="pv-state-actions">
             {session.state === 'error' && (
-              <button
-                onClick={() => load(side)}
-                className="flex items-center gap-1.5 px-4 py-2 rounded-full text-[13px] font-semibold text-white"
-                style={{ backgroundColor: COLORS.accent, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
-              >
-                <RotateCcw size={14} /> Try again
-              </button>
+              <UiButton kind="main" onClick={() => load(side)}>Try again</UiButton>
             )}
             {/* When the server itself refused (402/403/…), the same URL is just
                 as dead in a browser tab — offering it would be a dead link. */}
             {session.httpStatus == null && (
-              <a
-                href={activeDoc.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 rounded-full text-[13px] font-semibold border-2 border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300"
-              >
-                Open in browser
+              <a href={activeDoc.url} target="_blank" rel="noopener noreferrer" className="ui-part ui-btn">
+                <span>Open in browser</span>
               </a>
             )}
           </div>
         </div>
       )}
+      {session.state === 'ready' && session.numPages > 0 && !(loop && answerMap) && !(resumePlace && !loop && !loopDone && side === 'paper') && (
+        <div className="pv-pos ui-readout" aria-hidden="true">{String(session.page).padStart(2, '0')} / {String(session.numPages).padStart(2, '0')}</div>
+      )}
+      <span className="sr-only" role="status">Page {session.page} of {session.numPages}</span>
+      </div>
 
       {(!attemptFirst || topicsOn) && !isWide && side === 'paper' && session.state === 'ready' && answerMap && (answersOn || topicsOn) && (
         <MobileQuestionTools
@@ -1753,50 +1610,27 @@ const Viewer: React.FC<ViewerProps> = ({
         )}
       </KobraScope>
 
+      {/* Tools on a phone: a sheet from the bottom (c-papers-bar, "Agreed · Tools"). */}
+      <Sheet open={toolsOpen && !isWide} onClose={() => setToolsOpen(false)} title="Tools" titleAlign="start"
+        status={onCount > 0 ? <span className="pv-on-count">{onCount} on</span> : undefined} className="pv-tools-sheet">
+        {toolsList}
+      </Sheet>
+
       {/* Cross-year topic sheet — every sibling question for this subtopic. */}
-      <AnimatePresence>
+      <Sheet open={Boolean(topicReveal && topics)} onClose={() => setTopicReveal(null)} titleAlign="start"
+        title={topicReveal ? topicLabel(topicReveal.subtopicId) : ''}>
         {topicReveal && topics && (
-          <>
-            <MotionDiv
-              key="topic-backdrop"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              onClick={() => setTopicReveal(null)}
-              className="fixed inset-0 z-[110] bg-black/40"
-            />
-            <MotionDiv
-              key="topic-panel"
-              initial={panelHidden}
-              animate={panelShown}
-              exit={panelHidden}
-              transition={GLIDE}
-              role="dialog"
-              aria-modal="true"
-              aria-label={`${topicLabel(topicReveal.subtopicId)} across the years`}
-              style={{ paddingBottom: 'var(--sab, 0px)' }}
-              className={
-                isWide
-                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-surface-paper shadow-2xl border-l border-zinc-200 dark:border-hairline'
-                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-surface-paper rounded-t-2xl shadow-2xl'
-              }
-            >
-              <TopicContent
-                wide={isWide}
-                subtopicId={topicReveal.subtopicId}
-                subjectId={topics.subjectId}
-                current={{ year: topics.year, level: topics.level, lang: topics.lang, fileid: topics.fileid, n: topicReveal.n }}
-                onJump={s => {
-                  setTopicReveal(null);
-                  onCrossYear?.(s);
-                }}
-                onClose={() => setTopicReveal(null)}
-              />
-            </MotionDiv>
-          </>
+          <TopicContent
+            subtopicId={topicReveal.subtopicId}
+            subjectId={topics.subjectId}
+            current={{ year: topics.year, level: topics.level, lang: topics.lang, fileid: topics.fileid, n: topicReveal.n }}
+            onJump={s => {
+              setTopicReveal(null);
+              onCrossYear?.(s);
+            }}
+          />
         )}
-      </AnimatePresence>
+      </Sheet>
 
       {/* Per-question marking-scheme reveal — bottom sheet on phones, right tray
           on tablet+; same sleek glide as the GC dashboard student view. */}
@@ -2017,40 +1851,11 @@ const Viewer: React.FC<ViewerProps> = ({
         />
       )}
 
-      {/* Command-word decoder — same glide as the answer reveal. */}
-      <AnimatePresence>
-        {commandReveal && (
-          <>
-            <MotionDiv
-              key="cmd-backdrop"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              onClick={() => setCommandReveal(null)}
-              className="fixed inset-0 z-[110] bg-black/40"
-            />
-            <MotionDiv
-              key="cmd-panel"
-              initial={panelHidden}
-              animate={panelShown}
-              exit={panelHidden}
-              transition={GLIDE}
-              role="dialog"
-              aria-modal="true"
-              aria-label={`What “${commandReveal.matched}” asks you to do`}
-              style={{ paddingBottom: 'var(--sab, 0px)' }}
-              className={
-                isWide
-                  ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-surface-paper shadow-2xl border-l border-zinc-200 dark:border-hairline'
-                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-surface-paper rounded-t-2xl shadow-2xl'
-              }
-            >
-              <CommandContent wide={isWide} token={commandReveal} onClose={() => setCommandReveal(null)} />
-            </MotionDiv>
-          </>
-        )}
-      </AnimatePresence>
+      {/* Command-word decoder, on the shared Sheet. */}
+      <Sheet open={Boolean(commandReveal)} onClose={() => setCommandReveal(null)} titleAlign="start"
+        title={commandReveal ? `“${commandReveal.entry.word}”` : ''}>
+        {commandReveal && <CommandContent token={commandReveal} />}
+      </Sheet>
 
       {/* "How this subject is marked" card. */}
       <AnimatePresence>
@@ -2127,46 +1932,26 @@ const Viewer: React.FC<ViewerProps> = ({
         )}
       </AnimatePresence>
 
-      {/* Triage — plan-your-attack ratings over the question list. */}
-      <AnimatePresence>
-        {triageOpen && (
-          <>
-            <MotionDiv key="triage-bd" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} onClick={() => setTriageOpen(false)} className="fixed inset-0 z-[110] bg-black/40" />
-            <MotionDiv
-              key="triage-panel"
-              initial={panelHidden}
-              animate={panelShown}
-              exit={panelHidden}
-              transition={GLIDE}
-              role="dialog"
-              aria-modal="true"
-              aria-label="Triage — plan your attack"
-              style={{ paddingBottom: 'var(--sab, 0px)' }}
-              className={isWide ? 'frame-page fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-surface-paper shadow-2xl border-l border-zinc-200 dark:border-hairline' : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-surface-paper rounded-t-2xl shadow-2xl'}
-            >
-              <TriageContent
-                wide={isWide}
-                questions={answerMap?.q ?? null}
-                loading={answerState === 'loading'}
-                ratings={attempt.triage ?? {}}
-                minsPerMark={minsPerMark}
-                onRate={rateTriage}
-                onJump={n => {
-                  const q = answerMap?.q.find(x => x.n === n);
-                  setTriageOpen(false);
-                  if (attemptFirst && q) {setDeskId(n);saveDeskQuestion(deskNs,n);setReveal(null);}
-                  if (q) requestAnimationFrame(() => {
-                    const el = scrollerRef.current;
-                    const target = el?.querySelector<HTMLElement>(`[data-page="${q.pP}"]`);
-                    if (el && target) el.scrollTo({ top: target.offsetTop - 8 + target.clientHeight * Math.max(0, q.pY[0] - 0.02) });
-                  });
-                }}
-                onClose={() => setTriageOpen(false)}
-              />
-            </MotionDiv>
-          </>
-        )}
-      </AnimatePresence>
+      {/* Triage — plan-your-attack ratings over the question list, on the shared Sheet. */}
+      <Sheet open={triageOpen} onClose={() => setTriageOpen(false)} title="Triage — plan your attack" titleAlign="start">
+        <TriageContent
+          questions={answerMap?.q ?? null}
+          loading={answerState === 'loading'}
+          ratings={attempt.triage ?? {}}
+          minsPerMark={minsPerMark}
+          onRate={rateTriage}
+          onJump={n => {
+            const q = answerMap?.q.find(x => x.n === n);
+            setTriageOpen(false);
+            if (attemptFirst && q) {setDeskId(n);saveDeskQuestion(deskNs,n);setReveal(null);}
+            if (q) requestAnimationFrame(() => {
+              const el = scrollerRef.current;
+              const target = el?.querySelector<HTMLElement>(`[data-page="${q.pP}"]`);
+              if (el && target) el.scrollTo({ top: target.offsetTop - 8 + target.clientHeight * Math.max(0, q.pY[0] - 0.02) });
+            });
+          }}
+        />
+      </Sheet>
 
       {/* Examiner insights — Chief Examiner "where marks are lost" card. */}
       <AnimatePresence>
@@ -2252,26 +2037,22 @@ const FormulaeContent: React.FC<{
 
 // ─── triage (plan your attack) ──────────────────────────────
 
-const TRIAGE_OPTS: { r: TriageRating; label: string; bg: string }[] = [
-  { r: 'g', label: 'Confident', bg: '#3A8D5F' },
-  { r: 'a', label: 'Unsure', bg: COLORS.accent },
-  { r: 'r', label: 'Hard', bg: '#1a1a1a' },
+const TRIAGE_OPTS: { r: TriageRating; label: string }[] = [
+  { r: 'g', label: 'Confident' },
+  { r: 'a', label: 'Unsure' },
+  { r: 'r', label: 'Hard' },
 ];
 
+/** Triage on the shared Sheet: each question, then Confident / Unsure / Hard as a
+ *  selection bar (choosing the chosen one again clears it, as before). */
 const TriageContent: React.FC<{
-  wide: boolean;
   questions: PaperAnswerQuestion[] | null;
   loading: boolean;
   ratings: Record<string, TriageRating>;
   minsPerMark: number | null;
   onRate: (n: string, rating: TriageRating | null) => void;
   onJump: (n: string) => void;
-  onClose: () => void;
-}> = ({ wide, questions, loading, ratings, minsPerMark, onRate, onJump, onClose }) => {
-  const closeRef = useRef<HTMLButtonElement | null>(null);
-  useEffect(() => {
-    closeRef.current?.focus();
-  }, []);
+}> = ({ questions, loading, ratings, minsPerMark, onRate, onJump }) => {
   const counts = { g: 0, a: 0, r: 0 };
   for (const q of questions ?? []) {
     const rt = ratings[q.n];
@@ -2280,70 +2061,31 @@ const TriageContent: React.FC<{
   const rated = counts.g + counts.a + counts.r;
   return (
     <>
-      {!wide && (
-        <div className="shrink-0 flex justify-center pt-2 pb-0.5" aria-hidden>
-          <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
-        </div>
-      )}
-      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-hairline">
-        <div className="flex-1 min-w-0">
-          <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Triage — plan your attack</p>
-          <p className="text-[11px] text-zinc-500">Rate each question before you start. Do your confident ones first.</p>
-        </div>
-        <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
-          <X size={18} />
-        </button>
-      </div>
+      <p className="pv-sheet-sub">Rate each question before you start. Do your confident ones first.</p>
       {rated > 0 && (
-        <div className="shrink-0 flex items-center gap-3 px-4 py-2 text-[11px] font-semibold border-b border-zinc-100 dark:border-hairline">
-          <span style={{ color: '#3A8D5F' }}>{counts.g} confident</span>
-          <span style={{ color: COLORS.accent }}>{counts.a} unsure</span>
-          <span style={{ color: '#1a1a1a' }}>{counts.r} hard</span>
+        <p className="pv-tally"><span>{counts.g} confident</span><span>{counts.a} unsure</span><span>{counts.r} hard</span></p>
+      )}
+      {!questions && loading && (
+        <div role="status" className="pv-state" style={{ padding: '40px 0' }}>
+          <Spinner />
+          <span className="t-meta">Loading the question list…</span>
         </div>
       )}
-      <div className="flex-1 overflow-auto overscroll-contain px-3 py-3 space-y-1.5">
-        {!questions && loading && (
-          <div className="flex flex-col items-center gap-2 py-10 text-zinc-400">
-            <div className="w-5 h-5 rounded-full border-2 border-zinc-300 border-t-zinc-500 animate-spin" aria-hidden />
-            <span className="text-[12px]">Loading the question list…</span>
+      {questions?.map(q => {
+        const rt = ratings[q.n];
+        const name = q.label ?? `Question ${q.n}`;
+        return (
+          <div key={q.n} className="pv-triage-q">
+            <TextButton onClick={() => onJump(q.n)}>{name}</TextButton>
+            <SelectionBar label={`How sure are you of ${name}?`} value={rt ?? ''}
+              onChange={next => onRate(q.n, next === rt ? null : next)}
+              options={TRIAGE_OPTS.map(opt => ({ value: opt.r, label: opt.label }))} />
           </div>
-        )}
-        {questions?.map(q => {
-          const rt = ratings[q.n];
-          return (
-            <div key={q.n} className="rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper px-3 py-2.5">
-              <div className="flex items-center justify-between gap-2 mb-1.5">
-                <button onClick={() => onJump(q.n)} className="text-[13px] font-semibold text-left" style={{ color: '#1a1a1a' }}>
-                  {q.label ?? `Question ${q.n}`}
-                </button>
-              </div>
-              <div className="flex items-center gap-1.5">
-                {TRIAGE_OPTS.map(opt => {
-                  const active = rt === opt.r;
-                  return (
-                    <button
-                      key={opt.r}
-                      onClick={() => onRate(q.n, active ? null : opt.r)}
-                      aria-pressed={active}
-                      className="flex-1 py-1.5 rounded-lg text-[12px] font-semibold transition-all border-2"
-                      style={
-                        active
-                          ? { backgroundColor: opt.bg, borderColor: opt.bg, color: '#fff' }
-                          : { backgroundColor: '#fff', borderColor: '#d0cdc8', color: '#7a7068' }
-                      }
-                    >
-                      {opt.label}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          );
-        })}
-      </div>
-      {counts.g + counts.a + counts.r > 0 && (
-        <p className="shrink-0 px-4 py-2.5 text-[12px] border-t border-zinc-200 dark:border-hairline" style={{ color: '#5a5550' }}>
-          Plan: bank the <b style={{ color: '#3A8D5F' }}>{counts.g} confident</b>{minsPerMark ? '' : ''} first, then the {counts.a} unsure, and leave the {counts.r} hard for last.
+        );
+      })}
+      {rated > 0 && (
+        <p className="pv-sheet-foot">
+          Plan: bank the <b>{counts.g} confident</b>{minsPerMark ? '' : ''} first, then the {counts.a} unsure, and leave the {counts.r} hard for last.
         </p>
       )}
     </>
@@ -2417,7 +2159,7 @@ const ExamClock: React.FC<{
   const frac = Math.min(1, Math.max(0, elapsed / totalSec));
   return (
     <div
-      className="absolute left-1/2 -translate-x-1/2 bottom-[calc(76px+var(--sab,0px))] z-[65] flex items-center gap-2.5 pl-3 pr-2 py-2 rounded-2xl bg-white dark:bg-surface-paper border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]"
+      className="absolute left-1/2 -translate-x-1/2 bottom-[calc(56px+var(--sab,0px))] z-[65] flex items-center gap-2.5 pl-3 pr-2 py-2 rounded-2xl bg-white dark:bg-surface-paper border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]"
       role="timer"
       aria-live="off"
     >
@@ -2448,46 +2190,6 @@ const ExamClock: React.FC<{
   );
 };
 
-// ─── tools-menu row ─────────────────────────────────────────
-
-/** One row of the Kobra Tools menu. A tool that switches on and off is a
- *  menuitemcheckbox whose Switch shows its state; the rest open something. */
-const ToolRow: React.FC<{
-  icon: React.ReactNode;
-  title: string;
-  sub: string;
-  on?: boolean;
-  busy?: boolean;
-  /** Leave the menu open after the tap, for a tool the student may flip again. */
-  keepOpen?: boolean;
-  onClick: () => void;
-}> = ({ icon, title, sub, on, busy, keepOpen, onClick }) => {
-  const toggle = on !== undefined;
-  return (
-    <DropdownMenuItem
-      className="pvc-tool"
-      closeOnClick={!keepOpen}
-      onClick={onClick}
-      {...(toggle ? { role: 'menuitemcheckbox', 'aria-checked': on } : {})}
-    >
-      <span className="pvc-tool-icon" data-on={on || undefined} aria-hidden="true">
-        {busy ? <Spinner /> : icon}
-      </span>
-      <span className="pvc-tool-copy">
-        <strong>{title}</strong>
-        <small>{sub}</small>
-      </span>
-      {toggle ? (
-        <span className="pvc-tool-switch" aria-hidden="true">
-          <Switch checked={on} tabIndex={-1} />
-        </span>
-      ) : (
-        <ArrowUpRight className="pvc-tool-open" aria-hidden="true" />
-      )}
-    </DropdownMenuItem>
-  );
-};
-
 // ─── status toasts ──────────────────────────────────────────
 
 type StatusToast = { message: string; state: 'pending' | 'error' | 'info' };
@@ -2513,121 +2215,66 @@ function useStatusToast(id: string, status: StatusToast | null) {
   }, [id, message, state]);
 }
 
-// ─── command-word decoder content ───────────────────────────
+// ─── command-word decoder content (on the shared Sheet) ─────
 
-const CommandContent: React.FC<{ wide: boolean; token: CommandToken; onClose: () => void }> = ({ wide, token, onClose }) => {
-  const closeRef = useRef<HTMLButtonElement | null>(null);
-  useEffect(() => {
-    closeRef.current?.focus();
-  }, []);
+const CommandContent: React.FC<{ token: CommandToken }> = ({ token }) => {
   const { entry, matched } = token;
   const alias = matched.toLowerCase() !== entry.word.toLowerCase();
   return (
     <>
-      {!wide && (
-        <div className="shrink-0 flex justify-center pt-2 pb-0.5" aria-hidden>
-          <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
-        </div>
-      )}
-      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-hairline">
-        <div className="flex-1 min-w-0">
-          <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
-            “{entry.word}”
-            {alias && <span className="ml-1.5 text-[12px] font-sans font-normal text-zinc-500">seen as “{matched}”</span>}
-          </p>
-          <p className="text-[11px] text-zinc-500">Command word · {entry.typicalMarkRange}</p>
-        </div>
-        <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
-          <X size={18} />
-        </button>
+      <p className="pv-sheet-sub">{alias ? `seen as “${matched}” · ` : ''}Command word · {entry.typicalMarkRange}</p>
+      <div className="pv-sheet-section">
+        <p className="t-label">What it asks</p>
+        <p className="pv-sheet-text">{entry.requiredAction}</p>
       </div>
-      <div className="flex-1 overflow-auto overscroll-contain px-4 py-4 space-y-3.5">
-        <div>
-          <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>What it asks</p>
-          <p className="text-[13.5px] leading-relaxed" style={{ color: '#3a3530' }}>{entry.requiredAction}</p>
-        </div>
-        <div className="rounded-xl px-3.5 py-3" style={{ backgroundColor: '#FDEEDF', borderLeft: '3px solid var(--nsu-orange)' }}>
-          <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: COLORS.accentDarkText }}>How to structure it</p>
-          <p className="text-[13px] leading-relaxed" style={{ color: COLORS.accentDarkText }}>{entry.structuralTemplate}</p>
-        </div>
-        <div>
-          <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>Where students lose marks</p>
-          <p className="text-[13px] leading-relaxed" style={{ color: '#5a5550' }}>{entry.commonError}</p>
-        </div>
+      <div className="pv-sheet-section">
+        <p className="t-label">How to structure it</p>
+        <p className="pv-sheet-text">{entry.structuralTemplate}</p>
+      </div>
+      <div className="pv-sheet-section">
+        <p className="t-label">Where students lose marks</p>
+        <p className="pv-sheet-text">{entry.commonError}</p>
       </div>
     </>
   );
 };
 
-// ─── cross-year topic content ───────────────────────────────
+// ─── cross-year topic content (on the shared Sheet) ─────────
 
 const LVL_ABBR: Record<string, string> = { higher: 'HL', ordinary: 'OL', foundation: 'FL', common: 'CL' };
 const paperAbbr = (k: string) => (k === 'p1' ? 'P1' : k === 'p2' ? 'P2' : '');
 
 const TopicContent: React.FC<{
-  wide: boolean;
   subtopicId: string;
   subjectId: string;
   current: { year: number; level: string; lang: string; fileid: string; n: string };
   onJump: (s: TopicSibling) => void;
-  onClose: () => void;
-}> = ({ wide, subtopicId, subjectId, current, onJump, onClose }) => {
-  const closeRef = useRef<HTMLButtonElement | null>(null);
-  useEffect(() => {
-    closeRef.current?.focus();
-  }, []);
+}> = ({ subtopicId, subjectId, current, onJump }) => {
   const siblings = useMemo(() => siblingsFor(subjectId, subtopicId), [subjectId, subtopicId]);
   const years = new Set(siblings.map(s => s.year));
   const isCurrent = (s: TopicSibling) =>
     s.year === current.year && s.level === current.level && s.lang === current.lang && s.fileid === current.fileid && s.n === current.n;
   return (
     <>
-      {!wide && (
-        <div className="shrink-0 flex justify-center pt-2 pb-0.5" aria-hidden>
-          <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
-        </div>
-      )}
-      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-hairline">
-        <div className="flex-1 min-w-0">
-          <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{topicLabel(subtopicId)}</p>
-          <p className="text-[11px] text-zinc-500">
-            {siblings.length} question{siblings.length === 1 ? '' : 's'} across {years.size} tagged year{years.size === 1 ? '' : 's'} — tap to drill it
-          </p>
-        </div>
-        <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
-          <X size={18} />
-        </button>
-      </div>
-      <div className="flex-1 overflow-auto overscroll-contain px-3 py-3 space-y-1.5">
+      <p className="pv-sheet-sub">
+        {siblings.length} question{siblings.length === 1 ? '' : 's'} across {years.size} tagged year{years.size === 1 ? '' : 's'} — tap to drill it
+      </p>
+      <List label={`${topicLabel(subtopicId)} across the years`}>
         {siblings.map(s => {
           const here = isCurrent(s);
+          const detail = `${LVL_ABBR[s.level] ?? s.level}${paperAbbr(s.paperKey) ? ` · ${paperAbbr(s.paperKey)}` : ''}${s.lang === 'iv' ? ' · Gaeilge' : ''} · Question ${s.n}`;
           return (
-            <button
+            <Row
               key={`${s.year}-${s.level}-${s.lang}-${s.fileid}-${s.n}`}
-              onClick={() => !here && onJump(s)}
-              disabled={here}
-              className={`w-full flex items-center gap-3 rounded-xl border-2 px-3.5 py-2.5 text-left transition-transform ${
-                here ? 'border-accent bg-[#FDEEDF]' : 'border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-surface-paper active:translate-y-0.5'
-              }`}
-            >
-              <span className="shrink-0 w-11 text-[13px] font-bold tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{s.year}</span>
-              <span className="flex-1 text-[12.5px]" style={{ color: '#5a5550' }}>
-                {LVL_ABBR[s.level] ?? s.level}
-                {paperAbbr(s.paperKey) ? ` · ${paperAbbr(s.paperKey)}` : ''}
-                {s.lang === 'iv' ? ' · Gaeilge' : ''} · Question {s.n}
-              </span>
-              {here ? (
-                <span className="shrink-0 text-[10px] font-bold uppercase tracking-wide" style={{ color: COLORS.accentDarkText }}>you’re here</span>
-              ) : (
-                <ArrowLeft size={14} className="shrink-0 rotate-180" style={{ color: COLORS.accent }} />
-              )}
-            </button>
+              title={String(s.year)}
+              meta={detail}
+              trailing={here ? <span className="pv-here">you’re here</span> : undefined}
+              onPress={here ? undefined : () => onJump(s)}
+            />
           );
         })}
-      </div>
-      <p className="shrink-0 px-4 py-2 text-[10px] text-zinc-400 border-t border-zinc-200 dark:border-hairline">
-        Frequency reflects the years tagged so far — coverage grows as more papers are added.
-      </p>
+      </List>
+      <p className="pv-sheet-foot">Frequency reflects the years tagged so far — coverage grows as more papers are added.</p>
     </>
   );
 };
