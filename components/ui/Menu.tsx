@@ -31,6 +31,7 @@ import React, { useState, type ReactNode } from 'react';
 import { Menu as BaseMenu } from '@base-ui/react/menu';
 import { ArrowUpRight, Check, ChevronDown, ChevronRight } from 'lucide-react';
 import { readSafeArea } from './Frame';
+import { SelectionMark } from './Choice';
 import './parts.css';
 
 export interface MenuOption<V extends string = string> {
@@ -146,11 +147,15 @@ export interface MenuPanelProps {
   /** The button is a screen's own box you press, not the small menu button (Mark Bank's subject
    *  button on a laptop: its character, its name and level, a chevron-down): its class. */
   buttonClassName?: string;
+  /** false: the button is only its face, with no chevron-down (a row's "…" actions button, area 8a). */
+  chevron?: boolean;
+  /** Which side of the button it prefers (a button in a pinned footer: top); it moves when there is no room. */
+  side?: 'bottom' | 'top';
   children: ReactNode;
   className?: string;
 }
 
-export function MenuPanel({ label, buttonLabel, face, head, status, open, onOpenChange, align = 'end', buttonClassName, children, className = '' }: MenuPanelProps) {
+export function MenuPanel({ label, buttonLabel, face, head, status, open, onOpenChange, align = 'end', buttonClassName, chevron = true, side = 'bottom', children, className = '' }: MenuPanelProps) {
   const [ownOpen, setOwnOpen] = useState(false);
   const shown = open ?? ownOpen;
   const setShown = (next: boolean) => { if (onOpenChange) onOpenChange(next); else setOwnOpen(next); };
@@ -158,10 +163,10 @@ export function MenuPanel({ label, buttonLabel, face, head, status, open, onOpen
     <BaseMenu.Root open={shown} onOpenChange={setShown}>
       <BaseMenu.Trigger className={buttonClassName ? `ui-part ${buttonClassName}` : `ui-part ui-menu-btn ui-menu-btn--face ${className}`.trim()} aria-label={buttonLabel}>
         <span className="ui-menu-btn-text">{face}</span>
-        <ChevronDown className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" focusable="false" />
+        {chevron ? <ChevronDown className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" focusable="false" /> : null}
       </BaseMenu.Trigger>
       <BaseMenu.Portal>
-        <BaseMenu.Positioner className="ui-menu-layer" side="bottom" align={align} sideOffset={6}
+        <BaseMenu.Positioner className="ui-menu-layer" side={side} align={align} sideOffset={6}
           collisionPadding={shown ? menuCollisionPadding() : MENU_GAP}>
           <BaseMenu.Popup className={`ui-part ui-menu ui-menu--panel${buttonClassName && className ? ` ${className}` : ''}`} aria-label={label}>
             {head ? <div className="ui-menu-head"><span className="ui-menu-head-title">{head}</span>{status ? <span className="ui-menu-head-status">{status}</span> : null}</div> : null}
@@ -192,18 +197,47 @@ export function MenuSwitch({ title, meta, checked, onChange, closeOnClick = fals
   );
 }
 
-/** A row that opens something (a chevron) or leaves the app for the browser (href: an arrow up-right). */
-export function MenuAction({ title, meta, onPress, href }: { title: ReactNode; meta?: ReactNode; onPress?: () => void; href?: string }) {
+/** A row that opens something (a chevron) or leaves the app for the browser (href: an arrow up-right).
+ *  `plain`: a row that does a thing where it is (a row's "Reset password" in a staff table, area 8a): no
+ *  glyph, and the menu closes as it applies. `tone="danger"`: a destructive row, its words in red. */
+export function MenuAction({ title, meta, onPress, href, plain = false, tone }: { title: ReactNode; meta?: ReactNode; onPress?: () => void; href?: string; plain?: boolean; tone?: 'danger' }) {
   const content = (
     <>
       <span className="ui-menu-item-copy"><span className="ui-menu-item-title">{title}</span>{meta ? <span className="ui-menu-item-meta">{meta}</span> : null}</span>
-      {href ? <ArrowUpRight className="ui-icon ui-menu-item-glyph" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+      {plain ? null : href ? <ArrowUpRight className="ui-icon ui-menu-item-glyph" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
         : <ChevronRight className="ui-icon ui-menu-item-glyph" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />}
     </>
   );
+  const classes = `ui-menu-item ui-menu-item--row${plain ? ' ui-menu-item--plain' : ''}${tone === 'danger' ? ' ui-menu-item--danger' : ''}`;
   return href
-    ? <BaseMenu.Item className="ui-menu-item ui-menu-item--row" render={<a href={href} target="_blank" rel="noopener noreferrer" />}>{content}</BaseMenu.Item>
-    : <BaseMenu.Item className="ui-menu-item ui-menu-item--row" onClick={onPress}>{content}</BaseMenu.Item>;
+    ? <BaseMenu.Item className={classes} render={<a href={href} target="_blank" rel="noopener noreferrer" />}>{content}</BaseMenu.Item>
+    : <BaseMenu.Item className={classes} onClick={onPress}>{content}</BaseMenu.Item>;
+}
+
+/** A hairline between two groups of a menu's rows (a staff row's flag choices, then its account actions). */
+export function MenuRule() {
+  return <BaseMenu.Separator className="ui-menu-rule" />;
+}
+
+/** Choices you may tick several of, each applying at once while the menu stays open, with the
+ *  pick-several mark (a rounded square that fills ink and draws a tick): a student's cohort tags in
+ *  the counsellor's Practice list on a phone (area 8a). */
+export function MenuCheckRows<V extends string>({ label, options, values, onToggle }: {
+  label: string; options: { value: V; label: ReactNode }[]; values: readonly V[]; onToggle: (value: V, checked: boolean) => void;
+}) {
+  return (
+    <BaseMenu.Group aria-label={label} className="ui-menu-rows">
+      {options.map(option => {
+        const on = values.includes(option.value);
+        return (
+          <BaseMenu.CheckboxItem key={option.value} checked={on} onCheckedChange={next => onToggle(option.value, next)} closeOnClick={false} className="ui-menu-item ui-menu-item--pick ui-menu-item--check">
+            <span className="ui-menu-item-title">{option.label}</span>
+            <SelectionMark on={on} shape="square" />
+          </BaseMenu.CheckboxItem>
+        );
+      })}
+    </BaseMenu.Group>
+  );
 }
 
 /** Two to four short choices inside a menu, drawn as the selection bar (Mark Bank's paper level

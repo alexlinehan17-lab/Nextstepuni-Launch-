@@ -22,6 +22,7 @@
 import React, { useEffect, useRef, type CSSProperties, type ReactNode } from 'react';
 import { FramePortal, useFrameTask } from './Frame';
 import { lockBodyScroll } from '../../utils/bodyScrollLock';
+import { hasOpenModal } from '../../hooks/useModal';
 import './parts.css';
 
 export interface OverScreenProps {
@@ -56,7 +57,9 @@ export const OverScreen = React.forwardRef<HTMLDivElement, OverScreenProps>(func
       (root.querySelector<HTMLElement>('.ui-bar-slot .ui-icon-btn, .ui-bar-slot .ui-link') ?? root).focus();
     });
     const onKey = (event: KeyboardEvent) => {
-      if (event.key !== 'Escape' || event.defaultPrevented) return;
+      // A sheet or dialog opened over it takes the key first (its listener is registered later, so
+      // without this the screen under it would close instead; area 8a).
+      if (event.key !== 'Escape' || event.defaultPrevented || hasOpenModal()) return;
       event.preventDefault();
       escape.current();
     };

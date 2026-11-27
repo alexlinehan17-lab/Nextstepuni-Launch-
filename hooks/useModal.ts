@@ -11,6 +11,12 @@ interface ModalOptions {
   initialFocus?: 'first' | 'dialog';
 }
 const activeModals: symbol[] = [];
+
+/** True while a dialog or sheet that takes Escape for itself is open (area 8a: an over-screen
+ *  under it leaves the key to it, as OverScreen's contract says). */
+export function hasOpenModal(): boolean {
+  return activeModals.length > 0;
+}
 const focusableSelector = 'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
 /** One focus owner, scroll lock and dismissal contract for every modal. */

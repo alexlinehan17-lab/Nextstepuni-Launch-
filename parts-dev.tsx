@@ -22,11 +22,11 @@ import React, { useRef, useState, type ReactNode } from 'react';
 import { createRoot } from 'react-dom/client';
 // The app loads its global stylesheet first and the parts after it; so does this page.
 import './index.css';
-import { Bookmark, ChartNoAxesColumn, ChevronLeft, ChevronRight, Compass, Ellipsis, House, Map, Search, SlidersHorizontal, Timer } from 'lucide-react';
+import { Bookmark, ChartNoAxesColumn, ChevronLeft, ChevronRight, Compass, Ellipsis, House, Map, MoreHorizontal, Search, SlidersHorizontal, Timer } from 'lucide-react';
 import IllustrationTheme from './components/IllustrationTheme';
 import { Arrow, Button, Glyph, IconButton, TextButton } from './components/ui/Button';
 import { ChoiceGroup, ChoiceRuler, SelectionBar, SelectionMark, SelectionWords, Switch } from './components/ui/Choice';
-import { Menu, MenuAction, MenuLabel, MenuPanel, MenuRadioRows, MenuSegment, MenuSwitch } from './components/ui/Menu';
+import { Menu, MenuAction, MenuCheckRows, MenuLabel, MenuPanel, MenuRadioRows, MenuRule, MenuSegment, MenuSwitch } from './components/ui/Menu';
 // The subject button's own look (Mark Bank), shown as the menu's button on the sheet.
 import './components/MarkBank/mark-bank-library.css';
 import { Confirm, Sheet } from './components/ui/Sheet';
@@ -241,6 +241,9 @@ function MenuSection() {
       <Spec label="A box that opens a menu of choices" caption="MenuPanel with the screen's own box as its button (Mark Bank's subject and level on a laptop): a selection bar (MenuSegment) and rows with a character (MenuRadioRows), the current one ticked. Choosing applies at once.">
         <Line><span data-demo="menu-choices"><MenuChoicesDemo /></span></Line>
       </Spec>
+      <Spec label="A row's actions" caption="MenuPanel with chevron={false} and a bare … button (a student's row on the counsellor's dashboard): choices that apply at once (MenuRadioRows), a hairline (MenuRule), plain rows that do a thing where they are (MenuAction plain), a destructive one in red (tone danger), and tags you tick several of with the square mark, the menu staying open (MenuCheckRows).">
+        <Line><span data-demo="menu-row"><RowActionsDemo /></span></Line>
+      </Spec>
     </Section>
   );
 }
@@ -257,6 +260,26 @@ function MenuChoicesDemo() {
       <MenuLabel>Your subjects</MenuLabel>
       <MenuRadioRows label="Your subjects" value={subject} onChange={setSubject}
         options={Object.entries(names).map(([value, label]) => ({ value, label, art: <img src={CREW.accounting} alt="" /> }))} />
+    </MenuPanel>
+  );
+}
+
+function RowActionsDemo() {
+  const [flag, setFlag] = useState<'high' | 'normal' | ''>('high');
+  const [tags, setTags] = useState<string[]>(['Priority']);
+  return (
+    <MenuPanel label="Fionn M." buttonLabel="Actions for Fionn M." buttonClassName="ui-icon-btn" chevron={false}
+      face={<MoreHorizontal className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />}>
+      <MenuRadioRows label="Flag" value={flag} onChange={value => setFlag(value as 'high' | 'normal')}
+        options={[{ value: 'high', label: 'Flagged, high priority' }, { value: 'normal', label: 'Flagged, normal priority' }]} />
+      <MenuAction plain title="Remove flag" onPress={() => setFlag('')} />
+      <MenuRule />
+      <MenuLabel>Cohort tags · private to you</MenuLabel>
+      <MenuCheckRows label="Cohort tags" options={['DEIS', 'At-risk', 'Priority'].map(t => ({ value: t, label: t }))} values={tags}
+        onToggle={(t, on) => setTags(prev => on ? [...prev, t] : prev.filter(x => x !== t))} />
+      <MenuRule />
+      <MenuAction plain title="Reset password" onPress={() => {}} />
+      <MenuAction plain tone="danger" title="Delete account" onPress={() => {}} />
     </MenuPanel>
   );
 }
