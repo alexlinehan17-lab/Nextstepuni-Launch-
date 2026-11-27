@@ -129,9 +129,11 @@ interface Props {
   onOpenTopic?: (topicId: string) => void;
   /** Tells the topic page whether this question showed as the printed paper or as a row into the full paper
    *  (its year then says "Opens in the full paper"). */
-  onKind?: (kind: 'row' | 'printed') => void;
+  onKind?: (kind: 'row' | 'printed', label?: string) => void;
   /** Name the level beside the question (default true); a topic set at one level says it once, above. */
   showLevel?: boolean;
+  /** Only the printed question, as the topic page shows it (Topic Atlas's laptop panel): no line, no buttons. */
+  pictureOnly?: boolean;
 }
 
 /** Printed order of a part from its reference: "Q14(c)(iv)2" reads (c), (iv), 2. Letters, roman numerals and
@@ -229,7 +231,7 @@ const PartsOnThisTopic: React.FC<{ sibling: TopicSibling; topicId: string; onOpe
   );
 };
 
-const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, onOpenInPaper, topicId, onOpenTopic, onKind, showLevel = true }) => {
+const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, onOpenInPaper, topicId, onOpenTopic, onKind, showLevel = true, pictureOnly = false }) => {
   // The single model: when this question's parts sit under several headings, the card leads with the parts filed
   // under this one and keeps the whole printed question one tap away.
   const splitParts = useMemo(() => {
@@ -315,12 +317,24 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
   const onKindRef = useRef(onKind);
   onKindRef.current = onKind;
   useEffect(() => {
-    if (state.s === 'ready') onKindRef.current?.('printed');
+    if (state.s === 'ready') onKindRef.current?.('printed', state.q.label || questionLabel(sibling));
     else if (state.s === 'fallback') onKindRef.current?.('row');
-  }, [state.s]);
+  }, [state, sibling]);
   const isAccountingTask = sibling.subjectId === 'accounting' && state.s === 'ready' && Boolean(state.q.practiceTask);
 
   const name = (state.s === 'ready' && state.q.label) || questionLabel(sibling);
+  // The laptop panel's picture: the same crop of the printed question, nothing else.
+  if (pictureOnly) {
+    return (
+      <div ref={rootRef} className="ta-card--picture">
+        {state.s === 'ready' ? (
+          <div className="ta-crop ta-crop--panel">
+            <CropView pdf={state.pdf} region={state.region} ariaLabel={paperCropLabel} failText="Couldn’t render this question — open the full paper." />
+          </div>
+        ) : null}
+      </div>
+    );
+  }
   const reviewButton = (
     <IconButton className={state.s === 'fallback' ? 'ta-ib ta-ib--plain' : 'ta-ib'} label={saved ? 'Remove from daily review' : 'Add to daily review'} aria-pressed={saved}
       title={saved ? 'In your daily review' : 'Add to daily review'} onClick={onToggleReview}
@@ -463,8 +477,15 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
   );
 };
 
+/** A PE task has no printed crop: the panel's picture moves on to the next question. */
+const NoPicture: React.FC<{ onKind?: Props['onKind'] }> = ({ onKind }) => {
+  useEffect(() => { onKind?.('row'); }, [onKind]);
+  return null;
+};
+
 const VaultQuestionCard: React.FC<Props> = props => {
   const task = physicalEducationTask(props.sibling);
+  if (task && props.pictureOnly) return <NoPicture onKind={props.onKind} />;
   if (task) return <Suspense fallback={<p role="status">Loading question…</p>}>
     <PhysicalEducationTaskCard key={task.cardId} task={task} saved={props.saved} onToggleReview={props.onToggleReview} onOpenInPaper={props.onOpenInPaper} />
   </Suspense>;

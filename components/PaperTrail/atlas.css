@@ -110,6 +110,10 @@
 .ta-skeleton { display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-6) 0; }
 .ta-skeleton > i { display: block; height: 12px; border-radius: 6px; background: var(--surface-soft); }
 .ta-whole { align-self: flex-start; }
+/* The laptop panel's picture: the printed question, cut at a readable height, with its line under it. */
+.ta-panel-picture { display: flex; flex-direction: column; gap: var(--space-2); }
+.ta-card--picture { min-height: 1px; }
+.ta-crop.ta-crop--panel { max-height: 268px; padding: var(--space-2) var(--space-2) 0; }
 .ta-lens { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); }
 .ta-lens-body { display: flex; flex-direction: column; gap: var(--space-3); width: 100%; padding-block: var(--space-2); }
 .ta-lens-body p { margin: 0; }

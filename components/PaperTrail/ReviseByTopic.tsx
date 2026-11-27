@@ -47,6 +47,35 @@ const YearMarks: React.FC<{ years: number[]; asked: Set<number>; label: string; 
     {years.map(y => <i key={y} className={asked.has(y) ? 'on' : undefined} />)}
   </span>
 );
+/** One edition per printed question, newest first: the preferred language where it exists, the other
+ *  edition otherwise (the topic page's own order). */
+const oneEditionNewestFirst = (editions: TopicSibling[], langPref: 'ev' | 'iv') => {
+  const byQ = new Map<string, TopicSibling>();
+  for (const q of editions) {
+    const key = logicalQuestionIdentity(q);
+    const cur = byQ.get(key);
+    if (!cur || (cur.lang !== langPref && q.lang === langPref)) byQ.set(key, q);
+  }
+  return [...byQ.values()].sort((a, b) => b.year - a.year || a.level.localeCompare(b.level) || a.n.localeCompare(b.n, undefined, { numeric: true }));
+};
+
+/** The laptop panel's picture: the newest question on the topic that can show as the printed paper,
+ *  drawn by the topic page's own card (picture only), trying the newest first. No picture: the fallback. */
+const NewestPicture: React.FC<{ candidates: TopicSibling[]; fallback: React.ReactNode }> = ({ candidates, fallback }) => {
+  const [index, setIndex] = useState(0);
+  const [label, setLabel] = useState<string | null>(null);
+  const q = candidates[index];
+  if (!q) return <>{fallback}</>;
+  return (
+    <div className="ta-panel-picture">
+      <VaultQuestionCard key={`${q.year}-${q.level}-${q.lang}-${q.fileid}-${q.n}`} sibling={q} saved={false} pictureOnly
+        onToggleReview={() => {}} onOpenInPaper={() => {}}
+        onKind={(kind, name) => { if (kind === 'printed') setLabel(name ?? null); else setIndex(i => i + 1); }} />
+      {label && <p className="t-meta">Newest as a picture: {q.year}, {label}</p>}
+    </div>
+  );
+};
+
 /** The first, middle and last year under a large row of marks. */
 const YearAxis: React.FC<{ years: number[] }> = ({ years }) => (
   <span className="ta-axis" aria-hidden="true">
@@ -243,15 +272,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   // One edition per printed question: the preferred language where it exists,
   // the other edition otherwise (an Irish-only sitting still shows under
   // English, marked as Gaeilge on the card).
-  const questions = useMemo(() => {
-    const byQ = new Map<string, TopicSibling>();
-    for (const q of allEditions) {
-      const key = logicalQuestionIdentity(q);
-      const cur = byQ.get(key);
-      if (!cur || (cur.lang !== langPref && q.lang === langPref)) byQ.set(key, q);
-    }
-    return [...byQ.values()].sort((a, b) => b.year - a.year || a.level.localeCompare(b.level) || a.n.localeCompare(b.n, undefined, { numeric: true }));
-  }, [allEditions, langPref]);
+  const questions = useMemo(() => oneEditionNewestFirst(allEditions, langPref), [allEditions, langPref]);
 
   if (modelPending) {
     return <div className="w-full max-w-2xl mx-auto pb-12"><p role="status" className="text-[13px] py-6" style={{ color: '#7a7068' }}>Loading this subject’s topics…</p></div>;
@@ -502,7 +523,8 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
             <YearMarks large years={stats.years} asked={selectedYears} label={`Asked in ${selected.years} of the ${stats.years.length} years from ${stats.yearMin} to ${stats.yearMax}`} />
             <YearAxis years={stats.years} />
           </div>}
-          <p className="t-meta">Browse the original questions and open each with its linked marking scheme.</p>
+          <NewestPicture key={`${selected.subtopicId}|${langPref}`} candidates={oneEditionNewestFirst(siblingsFor(subjectId, selected.subtopicId), langPref)}
+            fallback={<p className="t-meta">Browse the original questions and open each with its linked marking scheme.</p>} />
           <Button kind="main" size="lg" block arrow="forward" onClick={() => setSubtopicId(selected.subtopicId)}>Explore this topic</Button>
         </> : <p className="t-meta">Choose a topic from the map.</p>}</aside>
         </div>

@@ -148,7 +148,7 @@ const MOBILE_TOOL_TITLES: Record<string, string> = { 'mark-bank': 'The Mark Bank
 const MOBILE_TOOL_EYEBROWS: Record<string, string> = {
       'mark-bank': 'Work the real questions', planner: 'A little structure',
       'points-passport': 'Your grades, made visible', 'future-finder-revamped': 'Start with you',
-      'paper-trail': 'Your exam archive',
+      'paper-trail': 'Your exam archive', 'topic-atlas': 'Follow the topic',
     };
 /** The Launchpad's own drawing in its bar on a phone: the card dealer (its board, 26 Nov 2026). */
 const LAUNCHPAD_ART = '/assets/star-crew/companions/card-dealer.png';
