@@ -2432,9 +2432,9 @@ const RevealContent: React.FC<{
               <p className="pv-selfmark-ask">Next reps — the same topic came up in other years:</p>
               <div className="pv-reps">
                 {siblings.map(s => (
-                  <UiButton key={s.paperKey + s.n} size="sm" arrow="forward" onClick={() => onJumpSibling(s)}>
+                  <TextButton key={s.paperKey + s.n} arrow="forward" onClick={() => onJumpSibling(s)}>
                     {s.year} · {questionLabel(s, { short: true })}
-                  </UiButton>
+                  </TextButton>
                 ))}
               </div>
             </>
