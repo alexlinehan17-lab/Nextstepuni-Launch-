@@ -1,15 +1,78 @@
-.mb-starting-topics { border:0; padding:0; margin:24px 0; }
-.mb-starting-topics legend { font-weight:600; margin-bottom:12px; }
-.mb-starting-topic { display:flex; align-items:center; gap:14px; padding:14px; margin:8px 0; border:1px solid var(--border); border-radius:10px; cursor:pointer; }
-.mb-starting-topic[data-selected=true] { background:var(--foreground); color:var(--background); }
-.mb-starting-topic small { display:block; font-size:12px; opacity:.75; margin-top:3px; }
-.mb-starting-topic:has(input:disabled) { cursor:default; }
-.mb-starting-topic:has([aria-disabled=true]) { cursor:default; }
-.mb-starting-point .mb-paper-session-heading { display:grid; grid-template-columns:minmax(0,1fr) auto; }
-.mb-starting-point details { border-block:1px solid var(--border); padding:18px 0; margin-bottom:24px; }
-.mb-starting-point summary { cursor:pointer; font-weight:500; }
-.mb-starting-point details p { margin-top:16px; }
-.mb-starting-point .sq-results li { flex-wrap:wrap; }
-.mb-starting-point .sq-results button { white-space:normal; height:auto; min-height:44px; }
+/* "Where should I start?" (StartingPointCheck.tsx) in the agreed look. The frame is today's: a
+   dialog over Mark Bank (mark-bank-session-paper.css, study-quiz.css). Inside it, the shared parts
+   (components/ui): the top bar with one Close at the top left, the light headline, a white search
+   field, the topics as pick-several choices (an ink outline and a drawn tick), ruled rows on the
+   page, and one charcoal Start check in the footer. One typeface; tokens only. */
+
+/* The bar: its Close clears the status bar on a phone, where the dialog starts 3dvh down. */
+.mb-starting-point .mb-starting-bar { flex-shrink: 0; padding-top: max(0px, calc(var(--safe-top) - 5dvh)); background: transparent; }
+@media (min-width: 768px) {
+  .mb-starting-point .mb-starting-bar .ui-bar-row { padding: 0 max(32px, calc((100% - 720px) / 2)); }
+}
+
+.mb-starting-point .sq-summary-body { padding: var(--space-2) max(32px, calc((100% - 720px) / 2)) var(--space-8); color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-starting-point .sq-summary-body p { margin: 0 0 var(--space-6); color: var(--ink-secondary); }
+.mb-starting-point .sq-summary-body h2 { margin: 0 0 var(--space-3); color: var(--ink-primary); font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; text-wrap: balance; }
+
+/* The opening: the small label, the headline, its one line. */
+.mb-starting-head { display: flex; flex-direction: column; gap: var(--space-2); margin-bottom: var(--space-6); }
+.mb-starting-point .mb-starting-head p { margin: 0; }
+.mb-starting-point .mb-starting-head .mb-starting-kicker { color: var(--ink-muted); }
+.mb-starting-point [data-slot=dialog-title].mb-starting-title { margin: 0; color: var(--ink-primary); font: 400 29px/33px var(--font-ui); letter-spacing: -0.04em; text-wrap: balance; }
+.mb-starting-point [data-slot=dialog-description].mb-starting-lede { color: var(--ink-secondary); font: 400 15px/21px var(--font-ui); }
+
+.mb-starting-search { margin-bottom: var(--space-6); }
+
+/* The topics: pick-several choices. One that cannot be chosen keeps its words and says why
+   under its name; its line and mark go quiet and it does not press. */
+.mb-starting-topics { min-width: 0; margin: 0 0 var(--space-8); padding: 0; border: 0; }
+.mb-starting-topics > legend { margin-bottom: var(--space-3); padding: 0; color: var(--ink-muted); }
+.mb-starting-point .ui-choice[aria-disabled='true'] { border-color: var(--hairline); color: var(--ink-muted); cursor: default; }
+.mb-starting-point .ui-choice[aria-disabled='true']:active { transform: none; }
+.mb-starting-point .ui-choice[aria-disabled='true'] .ui-mark { border-color: var(--hairline); }
+
+/* This check, and the results: ruled rows on the page. */
+.mb-starting-sec { margin-top: var(--space-2); }
+.mb-starting-point .sq-results { margin: 0 0 var(--space-6); border-top-color: var(--hairline); }
+.mb-starting-point .sq-results li { flex-wrap: wrap; gap: var(--space-3); min-height: 56px; padding: var(--space-3) 0; border-bottom-color: var(--hairline); }
+.mb-starting-point .sq-results li > div { flex: 1 1 220px; }
+.mb-starting-point .sq-results strong { display: block; color: var(--ink-primary); font-size: 16px; font-weight: 400; line-height: 21px; letter-spacing: -0.015em; }
+.mb-starting-point .sq-results small { margin-top: 2px; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.mb-starting-point .sq-results .ui-btn { flex: none; max-width: 100%; height: auto; min-height: 44px; padding-block: 10px; line-height: 20px; white-space: normal; text-align: left; }
+
+/* Not checked: opens in place under a chevron (no browser triangle). */
+.mb-starting-more { margin: 0 0 var(--space-6); border-block: 1px solid var(--hairline); }
+.mb-starting-more > summary { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); min-height: 52px; color: var(--ink-primary); font-size: 16px; line-height: 21px; list-style: none; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.mb-starting-more > summary::-webkit-details-marker { display: none; }
+.mb-starting-more > summary::marker { content: ''; }
+.mb-starting-more > summary:focus-visible { outline: 2px solid var(--outline-strong); outline-offset: 2px; }
+.mb-starting-more > summary > .ui-icon { color: var(--ink-muted); transition: transform var(--t-ui) var(--ease-out); }
+.mb-starting-more[open] > summary > .ui-icon { transform: rotate(180deg); }
+.mb-starting-point .mb-starting-more p { margin: 0 0 var(--space-3); }
+.mb-starting-more ul { display: flex; flex-direction: column; gap: var(--space-1); margin: 0 0 var(--space-4); padding: 0; color: var(--ink-secondary); list-style: none; }
+
+/* The footer: the count, then the one charcoal Start check. Until a topic is chosen the
+   fieldset holds it disabled, drawn in the well. */
+.mb-starting-point .sq-summary-footer.mb-starting-foot { gap: var(--space-4); padding: var(--space-4) max(32px, calc((100% - 720px) / 2)); border-top-color: var(--hairline); color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.mb-starting-go { flex: 0 0 auto; min-width: 260px; margin: 0; padding: 0; border: 0; }
+.mb-starting-go[disabled] .ui-btn { border-color: var(--hairline); background: var(--surface-soft); color: var(--ink-muted); cursor: default; transform: none; }
+@media (hover: hover) and (pointer: fine) {
+  .mb-starting-go[disabled] .ui-btn:hover { background: var(--surface-soft); }
+}
+
+@media (max-width: 700px) {
+  .mb-starting-point .mb-starting-bar { padding-top: max(0px, calc(var(--safe-top) - 3dvh)); }
+  .mb-starting-point .sq-summary-body { padding: var(--space-2) var(--space-6) var(--space-8); }
+  .mb-starting-point .sq-summary-footer.mb-starting-foot { flex-direction: column; align-items: stretch; gap: var(--space-2); padding: var(--space-3) var(--space-6) calc(var(--space-3) + max(0px, var(--safe-bottom) - 3dvh)); }
+  .mb-starting-go { width: 100%; min-width: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mb-starting-more > summary > .ui-icon { transition: none; }
+}
+
+/* The check's line under the practice bar while the questions are open. */
+.sq-session-banner.mb-starting-banner { border-bottom-color: var(--hairline); color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+
+/* "I tried this on paper", drawn by SessionScreen.tsx while the check is open. */
 .mb-starting-attempt { display:flex; align-items:center; gap:10px; padding:12px 16px; font:400 13px/1.5 'DM Sans',sans-serif; }
 .mb-starting-attempt input { width:18px; height:18px; flex-shrink:0; accent-color:var(--mb-ink); }
