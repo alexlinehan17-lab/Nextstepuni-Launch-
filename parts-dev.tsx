@@ -25,7 +25,7 @@ import './index.css';
 import { Bookmark, ChartNoAxesColumn, ChevronLeft, ChevronRight, Compass, Ellipsis, House, Map, Search, SlidersHorizontal, Timer } from 'lucide-react';
 import IllustrationTheme from './components/IllustrationTheme';
 import { Arrow, Button, Glyph, IconButton, TextButton } from './components/ui/Button';
-import { ChoiceGroup, SelectionBar, SelectionMark, SelectionWords, Switch } from './components/ui/Choice';
+import { ChoiceGroup, ChoiceRuler, SelectionBar, SelectionMark, SelectionWords, Switch } from './components/ui/Choice';
 import { Menu, MenuAction, MenuLabel, MenuPanel, MenuRadioRows, MenuSegment, MenuSwitch } from './components/ui/Menu';
 // The subject button's own look (Mark Bank), shown as the menu's button on the sheet.
 import './components/MarkBank/mark-bank-library.css';
@@ -178,6 +178,7 @@ function ChoosingSection() {
   const [goal, setGoal] = useState('10');
   const [section, setSection] = useState('overview');
   const [period, setPeriod] = useState('week');
+  const [grade, setGrade] = useState('H3');
   return (
     <Section id="part-choosing" title="Choosing">
       <Spec label="One answer" caption="An outlined tile; chosen, it keeps its white face and gains an ink outline. Its round mark fills ink and the tick draws.">
@@ -211,6 +212,9 @@ function ChoosingSection() {
       </Spec>
       <Spec label="Choices as words" caption="Week, Month and Year; the Fieldbook's pages. The current word is ink with a short ink line under it; no tray.">
         <SelectionWords label="Period" value={period} onChange={setPeriod} options={[{ value: 'week', label: 'Week' }, { value: 'month', label: 'Month' }, { value: 'year', label: 'Year' }]} />
+      </Spec>
+      <Spec label="A ruler of short choices" caption="Grades H1 to H8 on Points Passport's What if?: one box divided by hairlines, the chosen grade in the ink outline, a dot under today's grade (area 7a).">
+        <ChoiceRuler label="Geography grade" value={grade} onChange={setGrade} options={['H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'H7', 'H8'].map(g => ({ value: g, label: g, name: `Geography ${g}`, marked: g === 'H4' }))} />
       </Spec>
     </Section>
   );

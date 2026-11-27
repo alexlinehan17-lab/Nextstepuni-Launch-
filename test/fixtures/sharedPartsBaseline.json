@@ -316,9 +316,6 @@
   "components/PointsOptimizationModule.tsx": {
    "dropdown": 1
   },
-  "components/PointsPassport.tsx": {
-   "button": 17
-  },
   "components/RankUpModal.tsx": {
    "button": 3,
    "pop-up": 1

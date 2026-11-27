@@ -311,3 +311,53 @@ export function SelectionBar<V extends string>({ label, options, value, onChange
     </div>
   );
 }
+
+export interface RulerOption<V extends string = string> {
+  value: V;
+  label: ReactNode;
+  /** The choice's accessible name when its label is short ("Mathematics H3"). */
+  name?: string;
+  /** A small dot under the label (today's grade, on Points Passport's What if?). */
+  marked?: boolean;
+}
+
+export interface ChoiceRulerProps<V extends string> {
+  /** What the ruler chooses, for screen readers ("Mathematics grade"). */
+  label: string;
+  options: RulerOption<V>[];
+  /** The chosen value; a value not in `options` means none chosen yet. */
+  value: V | '';
+  onChange: (value: V) => void;
+  className?: string;
+}
+
+/** A ruler of short choices in one row (grades H1 to H8; the boards' c-tools1 "Tap a grade to try
+ *  it"): one box you press, divided by hairlines; the chosen one gains the ink outline. For more
+ *  than four short choices of one kind, where a selection bar would jam. A radio group with arrow
+ *  keys; 44px tall to the finger. */
+export function ChoiceRuler<V extends string>({ label, options, value, onChange, className = '' }: ChoiceRulerProps<V>) {
+  const current = options.findIndex(option => option.value === value);
+  const roving = useRovingRadios(options.length, current, index => onChange(options[index].value));
+  return (
+    <div role="radiogroup" aria-label={label} className={`ui-part ui-ruler ${className}`.trim()} style={{ '--ruler-n': options.length } as React.CSSProperties}>
+      {options.map((option, index) => (
+        <button
+          key={option.value}
+          ref={element => { roving.refs.current[index] = element; }}
+          type="button"
+          role="radio"
+          aria-checked={index === current}
+          aria-label={option.name}
+          tabIndex={roving.tabIndexOf(index)}
+          className="ui-ruler-item"
+          onKeyDown={event => roving.onKeyDown(event, index)}
+          onClick={() => onChange(option.value)}
+        >
+          <span>{option.label}</span>
+          {option.marked ? <i className="ui-ruler-dot" aria-hidden="true" /> : null}
+        </button>
+      ))}
+    </div>
+  );
+}
+

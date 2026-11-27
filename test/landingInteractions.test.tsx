@@ -1,6 +1,6 @@
 import React from 'react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import PassportGlass from '../components/landing/glass/PassportGlass';
 import FutureFinderGlass from '../components/landing/glass/FutureFinderGlass';
@@ -45,13 +45,11 @@ describe('Landing interactions', () => {
     expect(screen.getByText('543')).toBeInTheDocument();
     expect(DEMO_PROFILE.subjects.find(s => s.subjectName === 'English')!.currentGrade).toBe(initialGrade);
     fireEvent.click(screen.getByRole('button', {name:'Explore What If?'}));
-    const tabs = await screen.findByRole('tablist', {name:'Points simulator view'});
-    expect(within(tabs).getByRole('tab', {name:'What-If Explorer'})).toHaveAttribute('aria-selected','true');
-    const overview = within(tabs).getByRole('tab', {name:'Overview'});
-    expect(overview).toHaveAttribute('aria-disabled','true');
-    fireEvent.click(overview);
-    expect(overview).toHaveAttribute('aria-selected','false');
-    expect(overview).toHaveClass('locked-control-shake');
+    // Area 7a: inside Points Passport, What if? opens straight to the grades (the board): one
+    // number pinned over a ruler of grades per subject, and no second tab bar to lock.
+    expect(await screen.findByText('Tap a grade to try it')).toBeInTheDocument();
+    expect(screen.queryByRole('tablist', {name:'Points simulator view'})).not.toBeInTheDocument();
+    expect(screen.getByRole('radiogroup', {name:'English grade'})).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button',{name:'Edit subjects'}));
     expect(await screen.findByRole('combobox',{name:'English current grade'})).toHaveValue('H2');
   });

@@ -303,11 +303,6 @@
   "components/PaperTrail/trimRegion.ts": {
    "hex": 1
   },
-  "components/PointsPassport.tsx": {
-   "hex": 9,
-   "rgb(": 4,
-   "tailwind [#…]": 11
-  },
   "components/PullToRefresh.tsx": {
    "hex": 1,
    "rgb(": 2

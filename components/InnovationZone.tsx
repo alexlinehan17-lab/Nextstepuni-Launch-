@@ -945,7 +945,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
 
   return (
     <div
-      className={`${mobileAppDesign ? 'mobile-editorial ' : ''}${!activeTool || LP7_COLUMN_TOOLS.has(activeTool) ? 'lp7-host ' : ''}${activeTool === 'paper-trail' ? 'paper-trail-host ' : ''}${activeTool === 'mark-bank' ? 'mark-bank-host ' : ''}product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24 pt-[calc(53px+var(--safe-top))] md:pt-[73px]`}
+      className={`${mobileAppDesign ? 'mobile-editorial ' : ''}${!activeTool || LP7_COLUMN_TOOLS.has(activeTool) ? 'lp7-host ' : ''}${activeTool === 'paper-trail' ? 'paper-trail-host ' : ''}${activeTool === 'mark-bank' ? 'mark-bank-host ' : ''}product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 ${activeTool && LP7_COLUMN_TOOLS.has(activeTool) ? 'overflow-x-clip' : 'overflow-x-hidden'} relative flex flex-col items-center pb-36 md:pb-24 pt-[calc(53px+var(--safe-top))] md:pt-[73px]`}
       // Fixed header at top is ~80px tall (back button + eyebrow + title) + safe-area-inset-top.
       // The journey/war-room tools historically had a smaller header offset (pt-14)
       // which left content peeking out behind the bar. Use the same generous offset
