@@ -1,6 +1,6 @@
 import React from 'react';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { fireEvent, render, screen, within } from '@testing-library/react';
+import { act, fireEvent, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import PaperTrail from '../components/PaperTrail';
 import { NavigationProvider, useNavigation } from '../contexts/NavigationContext';
@@ -16,6 +16,7 @@ interface ReaderProps {
   initialPaperPage: number;
   initialSchemePage: number;
   onPosition: (side: 'paper' | 'scheme', page: number) => void;
+  onSave?: () => void;
   onClose: () => void;
 }
 const reader = vi.hoisted(() => ({ props: null as ReaderProps | null }));
@@ -68,6 +69,16 @@ const FrameBack = () => { const nav = useNavigation(); return <button onClick={n
 const start = () => render(<NavigationProvider><FrameBack /><PaperTrail studentSubjects={['Mathematics', 'Biology']} studentLevels={[{ name: 'Mathematics', level: 'Higher' }]} /></NavigationProvider>);
 const click = (name: string | RegExp) => fireEvent.click(screen.getByRole('button', { name: typeof name === 'string' ? new RegExp('^' + name.replaceAll(' ', '\\s*') + '$') : name }));
 const paperOne = () => within(screen.getByRole('article', { name: 'Paper 1' }));
+// Level and year are selection bars and the language a menu (area 6a, the agreed design).
+const radio = (group: string, name: string) => within(screen.getByRole('radiogroup', { name: group })).getByRole('radio', { name });
+async function tap(element: Element) {
+  fireEvent.pointerDown(element, { pointerType: 'mouse', pointerId: 1, isPrimary: true, button: 0, buttons: 1 });
+  fireEvent.pointerUp(element, { pointerType: 'mouse', pointerId: 1, isPrimary: true, button: 0, buttons: 0 });
+  fireEvent.mouseDown(element, { button: 0 });
+  fireEvent.mouseUp(element, { button: 0 });
+  fireEvent.click(element, { button: 0, detail: 1 });
+  await act(async () => { await new Promise(resolve => setTimeout(resolve, 20)); });
+}
 
 describe('Paper Trail archive → existing reader', () => {
   beforeEach(() => { localStorage.clear(); reader.props = null; boot.params = {}; boot.loaded = true; });
@@ -88,15 +99,14 @@ describe('Paper Trail archive → existing reader', () => {
     expect(reader.props?.initialSide).toBe('scheme');
     expect(reader.props?.answersUrl).toBeTruthy();
     click('Close reader');
-    expect(screen.getByRole('button', { name: 'Ordinary level' })).toHaveAttribute('aria-pressed', 'true');
-    expect(screen.getByRole('combobox', { name: 'Paper language' })).toHaveTextContent('Gaeilge');
+    expect(radio('Level', 'Ordinary')).toHaveAttribute('aria-checked', 'true');
+    expect(screen.getByRole('button', { name: /Paper language/ })).toHaveTextContent('Gaeilge');
   });
 
-  it('opens the real-cover preview in the paired reader with Answers and Topics', async () => {
-    start(); click('Mathematics Higher level'); click('Preview Paper 1');
-    const preview = within(await screen.findByRole('dialog'));
-    expect(preview.getByRole('heading', { name: 'Paper 1' })).toBeInTheDocument();
-    fireEvent.click(preview.getByRole('button', { name: 'Open paper' }));
+  // The real cover opens its document (the preview pop-up went with the agreed page).
+  it('opens the paper from its real cover in the paired reader with Answers and Topics', () => {
+    start(); click('Mathematics Higher level');
+    fireEvent.click(paperOne().getByRole('button', { name: 'Open the 2026 Paper 1' }));
     expect(screen.getByLabelText('Paper Trail reader')).toBeInTheDocument();
     expect(reader.props?.paper.url).toContain(encodeURIComponent('papers/lc/mathematics/2026/paper/one.pdf'));
     expect(reader.props?.scheme?.url).toContain(encodeURIComponent('papers/lc/mathematics/2026/scheme/one.pdf'));
@@ -106,15 +116,9 @@ describe('Paper Trail archive → existing reader', () => {
   });
 
 
-  it('shows the paper and scheme attachment previews and opens the matching document', async () => {
+  it('opens the matching document from the scheme’s real cover', () => {
     start(); click('Mathematics Higher level');
-    fireEvent.click(paperOne().getByRole('button', { name: 'Paper & marking scheme' }));
-    const files = within(await screen.findByRole('dialog'));
-    expect(files.getByRole('heading', { name: 'The paper. The points.' })).toBeInTheDocument();
-    expect(files.getByRole('button', { name: 'Inspect Paper 1' })).toBeInTheDocument();
-    fireEvent.click(files.getByRole('button', { name: 'Inspect Marking scheme' }));
-    expect(files.getByRole('heading', { name: 'Marking scheme' })).toBeInTheDocument();
-    fireEvent.click(files.getByRole('button', { name: 'Open paper' }));
+    fireEvent.click(paperOne().getByRole('button', { name: 'Open the 2026 marking scheme for Paper 1' }));
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
     expect(reader.props?.initialSide).toBe('scheme');
     expect(reader.props?.scheme?.url).toContain(encodeURIComponent('/2026/scheme/one.pdf'));
@@ -132,24 +136,28 @@ describe('Paper Trail archive → existing reader', () => {
   });
 
   it('saves the full identity and returns to the correct older year after a saved open', () => {
-    start(); click('Mathematics Higher level'); click('All years'); click('2018'); click('Save Paper 1');
+    // 2018 is past the year bar's newest three: open it from All years and save it from the reader's Tools.
+    start(); click('Mathematics Higher level'); fireEvent.click(radio('Year', 'All years')); click('Open the 2018 Paper 1');
+    act(() => { reader.props?.onSave?.(); });
     expect(listPins()).toHaveLength(1);
     expect(listPins()[0].key).toBe('mathematics|2018|higher|ev|one.pdf');
-    click('Back'); click('Saved'); click(/Mathematics · Paper 1\s*2018/);
+    click('Close reader'); click('Back'); click('Back'); click('Saved');
+    // Saved first, then Recently opened (the reader opened it once already).
+    fireEvent.click(screen.getAllByRole('button', { name: /Mathematics · Paper 1\s*2018/ })[0]);
     expect(reader.props?.paper.url).toContain(encodeURIComponent('/2018/paper/one.pdf'));
     click('Close reader');
-    expect(screen.getByRole('combobox', { name: 'Choose a year' })).toHaveTextContent('2018');
+    expect(radio('Year', '2018')).toHaveAttribute('aria-checked', 'true');
     click('Back');
     expect(screen.getByRole('button', { name: 'Continue' })).toBeInTheDocument();
   });
 
   it('keeps unavailable-year explanations, level/language filters and accessible formats', async () => {
-    start(); click('Mathematics Higher level'); click('All years'); click(/2020 unavailable/);
-    expect(screen.getByRole('status')).toHaveTextContent('The exams were cancelled.');
-    click('2026');
-    click('Ordinary level');
-    fireEvent.click(screen.getByRole('combobox', { name: 'Paper language' }));
-    fireEvent.click(await screen.findByRole('option', { name: 'Gaeilge' }));
+    start(); click('Mathematics Higher level'); fireEvent.click(radio('Year', 'All years'));
+    expect(within(screen.getByRole('list', { name: 'Every paper' })).getByText('The exams were cancelled.')).toBeInTheDocument();
+    fireEvent.click(radio('Year', '2026'));
+    fireEvent.click(radio('Level', 'Ordinary'));
+    await tap(screen.getByRole('button', { name: /Paper language/ }));
+    await tap(await screen.findByRole('menuitemradio', { name: 'Gaeilge' }));
     click('Paper 1 modified · accessible format');
     expect(reader.props?.paper.url).toContain('accessible.pdf');
     expect(reader.props?.answersUrl).toBeUndefined();
@@ -174,6 +182,6 @@ describe('Paper Trail archive → existing reader', () => {
     await user.type(screen.getByRole('combobox', { name: 'Find a subject or paper' }), 'maths 2018 hl');
     expect(screen.queryByRole('button', { name: /LCA/ })).not.toBeInTheDocument();
     fireEvent.click(await screen.findByRole('option', { name: 'Mathematics · 2018 · Higher' }));
-    expect(screen.getByRole('combobox', { name: 'Choose a year' })).toHaveTextContent('2018');
+    expect(radio('Year', '2018')).toHaveAttribute('aria-checked', 'true');
   });
 });

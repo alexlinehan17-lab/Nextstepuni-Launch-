@@ -131,6 +131,13 @@ export interface ViewerDoc {
 interface ViewerProps {
   title: string;
   subtitle?: string;
+  /** The bar's name and the small line over it ("Physics" over "2025 · Higher ·
+   *  Exam Paper"); default the title and subtitle. */
+  barName?: string;
+  barOver?: string;
+  /** The paper is in Saved papers; Tools can save it or take it out ("Save this paper"). */
+  saved?: boolean;
+  onSave?: () => void;
   paper: ViewerDoc;
   scheme?: ViewerDoc;
   initialSide?: 'paper' | 'scheme';

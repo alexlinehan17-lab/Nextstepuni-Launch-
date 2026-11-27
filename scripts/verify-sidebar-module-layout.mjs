@@ -160,7 +160,7 @@ try {
     await frame.getByRole('button', { name:'Start Triage',exact:true }).click();
     assert.equal(await frame.locator('[data-triage-progress]').count(),8);
     assert.equal(await frame.locator('[data-triage-progress=pending]').count(),7);
-    await frame.getByRole('button',{name:'Do First',exact:true}).click();
+    await frame.getByRole('radio',{name:'Do First',exact:true}).click();
     const choices = await frame.locator('[data-triage-choice]').evaluateAll(buttons => buttons.map(b => ({opacity:getComputedStyle(b).opacity,selected:b.dataset.selected,marker:getComputedStyle(b.querySelector('[data-triage-choice-marker]')).borderTopWidth})));
     assert.ok(choices.every(c => c.opacity === '1'), 'Locked triage buttons retain full opacity');
     assert.ok(choices.filter(c => c.selected === 'true').every(c => c.marker === '2px'), 'Selected triage dots have a contrasting outline');

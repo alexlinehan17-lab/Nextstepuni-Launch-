@@ -24,11 +24,10 @@ import { COLORS } from '../../design/tokens';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { ArrowRight, Bookmark } from 'lucide-react';
 import { useBackStep } from '../../contexts/NavigationContext';
-import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
-import ToolMasthead from '../launchpad/ToolMasthead';
 import PaperSelection, { LEVEL_LABEL, paperLabel, type YearCell } from './PaperSelection';
 import KobraScope from '../approved-ui-runtime';
-import { PaperSubjects, PaperSubjectArtwork } from './PaperSubjects';
+import { PaperSubjects, PaperSubjectArtwork, PaperSubjectFinder } from './PaperSubjects';
+import { TextButton } from '../ui/Button';
 import './paper-kobra.css';
 import './archive.css';
 import { baseName, displayName } from '../shared/subjectNames';
@@ -252,7 +251,6 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   onOpenTool,
   initialView,
 }) => {
-  const mobileAppDesign = useMobileAppDesign();
   const { state, isLoaded, recordRecent, updatePage, setFilters, finishReading } = usePaperFinder(uid);
   const profileExamYear = examinationYearFromDate(onboardingExamDate);
   const junior = studentCycle === 'junior-cycle';
@@ -270,9 +268,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   // archive: the top bar's one Back returns to the archive's front page before
   // it leaves the tool (navigation.md: Back returns to the screen you came from).
   // The viewer comes up over the subject and has its own Close.
-  useBackStep(!initialView && view.v !== 'home' && view.v !== 'viewer', () => { setView({ v: 'home' }); setYear(null); });
-  const [desktopArchive, setDesktopArchive] = useState(() => typeof window !== 'undefined' && window.matchMedia('(min-width: 900px)').matches);
-  useEffect(() => {const media = window.matchMedia('(min-width: 900px)');const update = () => setDesktopArchive(media.matches);media.addEventListener('change', update);return () => media.removeEventListener('change',update);}, []);
+  useBackStep(!initialView && view.v !== 'home' && view.v !== 'viewer', () => { setView({ v: 'home' }); setYear(null); setAllYears(false); });
+  // All years on a subject's page: held here so closing the reader returns to the list it was opened from.
+  const [allYears, setAllYears] = useState(false);
   const [scope, setScope] = useState<'mine' | 'all'>('mine');
   const [query, setQuery] = useState('');
   // Learning-milestone celebration — detected once at mount, shown one at a time.
@@ -538,6 +536,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     setYear(selectedYear ?? null);
     setLevel(selectedLevel ?? null);
     setLang(null);
+    setAllYears(false);
     setView({ v: 'subject', subjectId: id });
   };
 
@@ -563,6 +562,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         <ImageViewer
           title={`${paperTrailSubjectLabel(subj)} · ${viewerYearText(view.year, view.item)}`}
           subtitle={`${paperLabel(view.item.label)} · ${LEVEL_LABEL[view.level]}${view.lang === 'iv' ? ' · Gaeilge' : ''}${syllabusSuffix(subj.id, view.year)}`}
+          barName={paperTrailSubjectLabel(subj)}
+          barOver={`${viewerYearText(view.year, view.item)} · ${LEVEL_LABEL[view.level]} · ${paperLabel(view.item.label)}${view.lang === 'iv' ? ' · Gaeilge' : ''}${syllabusSuffix(subj.id, view.year)}`}
           url={url('paper', view.item.doc.f)}
           onClose={() => {
             setLevel(view.level);
@@ -590,6 +591,10 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     // Topic tags — present only when this exact paper is tagged (needs anchors,
     // so also gated on the answer map). The committed record carries a stable
     // paperKey, so pass it through by reference (keeps the viewer's memo stable).
+    // The bar names the subject, with the year, level and paper as its small line;
+    // Tools can save this paper under the same identity as the page's Save.
+    const barOver = `${viewerYearText(view.year, view.item)} · ${LEVEL_LABEL[view.level]} · ${paperLabel(view.item.label)}${view.lang === 'iv' ? ' · Gaeilge' : ''}${syllabusSuffix(subj.id, view.year)}`;
+    const saveRef: Omit<PaperRef, 'at'> = { key, subjectId: subj.id, year: view.year, level: view.level, lang: view.lang, fileid: view.item.doc.f, label: paperLabel(view.item.label), kind: 'paper' };
     const topics =
       (hasAnswers
         ? topicsForPaper(subj.id, view.year, view.level, view.lang, view.item.doc.f)
@@ -598,6 +603,10 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       <Viewer
         title={`${paperTrailSubjectLabel(subj)} · ${viewerYearText(view.year, view.item)}`}
         subtitle={`${paperLabel(view.item.label)} · ${LEVEL_LABEL[view.level]}${view.lang === 'iv' ? ' · Gaeilge' : ''}${syllabusSuffix(subj.id, view.year)}`}
+        barName={paperTrailSubjectLabel(subj)}
+        barOver={barOver}
+        saved={isPinned(uid, key)}
+        onSave={() => handleTogglePin(saveRef)}
         paper={{ url: url('paper', view.item.doc.f), label: paperLabel(view.item.label), bytes: view.item.doc.b }}
         scheme={
           view.item.scheme
@@ -735,8 +744,10 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   }
 
   // ═══════════════════════ SUBJECT ═══════════════════════
-  if (view.v === 'subject' || (desktopArchive && view.v === 'home' && subjects.length > 0)) {
-    const subj = subjectById.get(view.v === 'subject' ? view.subjectId : (visibleSubjects[0] ?? subjects[0]).id)!;
+  // On a laptop too, a subject opens its own page: the list of subjects is
+  // drawn on its own (r5-paper-trail, approved 26 Nov 2026).
+  if (view.v === 'subject') {
+    const subj = subjectById.get(view.subjectId)!;
     const entries = PAPER_TRAIL_INDEX[subj.id] ?? [];
     const activeLevel: PaperLevel =
       level && subj.levels.includes(level)
@@ -789,22 +800,17 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     // June papers, then the deferred sitting's, in one list for the year.
     const entry = yearEntryView(subj.id, slice.filter(e => e.year === activeYear));
     const requestedMissing = year != null && !availableYears.includes(year) && availableYears.length > 0;
+    // Every year's papers at this level and language, newest first (All years).
+    const everyYear = availableYears
+      .map(y => yearEntryView(subj.id, slice.filter(e => e.year === y)))
+      .filter((e): e is PaperEntry => Boolean(e));
 
-    return <KobraScope className="pt-kobra"><section className="pt-archive pt-master-detail">
-      <nav className="pt-toolbar"><button className="pt-text-button" onClick={() => setView({v:'saved'})}><Bookmark size={18} /> Saved</button></nav>
-      <div className="pt-desktop-mast"><ToolMasthead tool="paper-trail" eyebrow="Your exam archive" title="Paper Trail." subtitle="Exam papers & marking schemes." /></div>
-      <div className="pt-master-grid">
-        <aside className="pt-subject-rail">
-          <PaperSubjects subjects={visibleSubjects} selected={subj.id} labelFor={paperTrailSubjectLabel}
-            levelFor={s => LEVEL_LABEL[profileLevelFor(s) ?? (state.lastLevel && s.levels.includes(state.lastLevel) ? state.lastLevel : s.levels[0])]}
-            scope={scope} onScope={setScope} query={query} onQuery={setQuery} suggestions={suggestions} onSelect={pickSubject} />
-          <button className="pt-topic-link" onClick={() => setView({v:'revise'})}>Topic Atlas <ArrowRight size={17} /></button>
-        </aside>
-        <PaperSelection
+    return <PaperSelection
       key={subj.id}
       uid={uid} subject={subj} label={paperTrailSubjectLabel(subj)}
       level={activeLevel} lang={activeLang} langs={langsAtLevel}
-      year={activeYear} years={yearCells} entry={entry}
+      year={activeYear} years={yearCells} entry={entry} everyYear={everyYear}
+      allYears={allYears} onAllYears={setAllYears}
       notice={requestedMissing ? `${year} isn’t available here — showing ${activeYear} instead.` : undefined}
       syllabusNote={entry ? earlierSyllabusNote(subj.id, subjectLabel, entry.year, latestExamYear) ?? undefined : undefined}
       gridNote={syllabusGridNote(subj.id, subjectLabel, latestExamYear) ?? undefined}
@@ -815,11 +821,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       onYear={setYear}
       onOpen={(selectedEntry, item, side) => openItem(subj, selectedEntry, item, side)}
       onSave={handleTogglePin}
-      onBack={() => { setView({ v: 'home' }); setYear(null); }}
+      onBack={() => { setView({ v: 'home' }); setYear(null); setAllYears(false); }}
       onTopics={() => setView({ v: 'revise' })}
-    />
-      </div>
-    </section></KobraScope>;
+    />;
   }
 
   // Saved records always resolve against the live index before being offered.
@@ -972,28 +976,38 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
 
   </section>;
 
+  // Find your paper (c-papers-pick, r5-paper-trail): the big title beside the
+  // character of the student's first subject; search, Saved and which subjects;
+  // then one boxed list, a character on every subject. On a laptop the block
+  // sits at the left, halfway down, and the list beside it.
+  const heroSubject = visibleSubjects[0] ?? subjects[0];
+  const levelFor = (s: PaperTrailSubject) => LEVEL_LABEL[profileLevelFor(s) ?? (state.lastLevel && s.levels.includes(state.lastLevel) ? state.lastLevel : s.levels[0])];
   return <KobraScope className="pt-kobra"><section className="pt-archive pt-home" aria-label="Paper Trail archive">
     {milestone && <MilestoneCelebration milestone={milestone} dateIso={new Date().toISOString().slice(0, 10)} onClose={dismissMilestone} />}
-    <nav className="pt-toolbar" aria-label="Paper Trail">
-      {mobileAppDesign && <p className="pt-page-intro">Exam papers & marking schemes.</p>}
-      <button className="pt-text-button" onClick={() => setView({ v: 'saved' })}><Bookmark size={18} aria-hidden /> Saved</button>
-    </nav>
-    <header className="pt-find-heading">
-      {(visibleSubjects[0] ?? subjects[0]) && <PaperSubjectArtwork label={paperTrailSubjectLabel(visibleSubjects[0] ?? subjects[0])} />}
-      <p className="pt-eyebrow">Your exam archive</p><h1 className="pt-title">Find your paper.</h1>
-    </header>
-    {archiveDownBanner}
-    {lastOpened && <div className="pt-resume">
-      <div><p className="pt-eyebrow">Last opened</p><p className="pt-resume-name">{subjectLabelForId(lastOpened.subjectId)} · {lastOpened.label}</p><p>{lastOpened.year} · {LEVEL_LABEL[lastOpened.level]} level{lastOpened.kind === 'scheme' ? ' · Scheme' : ''}</p></div>
-      <button className="pt-continue" onClick={() => openStoredRef(lastOpened)}>Continue <ArrowRight size={18} aria-hidden /></button>
-    </div>}
-    <PaperSubjects subjects={visibleSubjects} labelFor={paperTrailSubjectLabel}
-      levelFor={s => LEVEL_LABEL[profileLevelFor(s) ?? (state.lastLevel && s.levels.includes(state.lastLevel) ? state.lastLevel : s.levels[0])]}
-      scope={scope} onScope={setScope} query={query} onQuery={setQuery} suggestions={suggestions} onSelect={pickSubject} />
-    <div className="pt-home-links">
-      <button onClick={() => setView({ v: 'revise' })}>Topic Atlas <ArrowRight size={18} aria-hidden /></button>
+    <div className="pt-cols">
+      <div className="pt-lead">
+        <header className="pt-top">
+          <div className="pt-top-copy"><h1 className="t-display">Find your paper.</h1><p className="t-sub">Exam papers & marking schemes.</p></div>
+          {heroSubject && <PaperSubjectArtwork label={paperTrailSubjectLabel(heroSubject)} className="pt-top-art" />}
+        </header>
+        {archiveDownBanner}
+        <PaperSubjectFinder subjects={visibleSubjects} labelFor={paperTrailSubjectLabel}
+          scope={scope} onScope={setScope} query={query} onQuery={setQuery} suggestions={suggestions} onSelect={pickSubject}
+          onSaved={() => setView({ v: 'saved' })} />
+      </div>
+      <div className="pt-side">
+        {lastOpened && <div className="pt-lastopened">
+          <div><p className="t-label">Last opened</p><p className="t-row">{subjectLabelForId(lastOpened.subjectId)} · {lastOpened.label}</p><p className="t-meta">{lastOpened.year} · {LEVEL_LABEL[lastOpened.level]} level{lastOpened.kind === 'scheme' ? ' · Scheme' : ''}</p></div>
+          <TextButton arrow="forward" onClick={() => openStoredRef(lastOpened)}>Continue</TextButton>
+        </div>}
+        <PaperSubjects subjects={visibleSubjects} labelFor={paperTrailSubjectLabel} levelFor={levelFor}
+          scope={scope} onScope={setScope} query={query} onQuery={setQuery} suggestions={suggestions} onSelect={pickSubject} />
+        <section className="pt-end">
+          <TextButton arrow="forward" onClick={() => setView({ v: 'revise' })}>Open Topic Atlas</TextButton>
+          <p className="t-meta">{junior ? 'Junior Cycle' : isLca ? 'Leaving Cert Applied' : 'Leaving Certificate'} · Your subjects, your levels</p>
+        </section>
+      </div>
     </div>
-    <p className="pt-context">{junior ? 'Junior Cycle' : isLca ? 'Leaving Cert Applied' : 'Leaving Certificate'} · Your subjects, your levels</p>
   </section></KobraScope>;
 };
 

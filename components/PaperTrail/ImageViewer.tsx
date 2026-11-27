@@ -22,6 +22,9 @@ const ZOOM_STEPS = [0.75, 1, 1.25, 1.5, 2, 2.5];
 const ImageViewer: React.FC<{
   title: string;
   subtitle?: string;
+  /** The bar's name and the small line over it; default the title and subtitle. */
+  barName?: string;
+  barOver?: string;
   url: string;
   onClose: () => void;
 }> = ({ title, subtitle, url, onClose }) => {
