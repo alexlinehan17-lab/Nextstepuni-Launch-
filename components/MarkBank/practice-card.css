@@ -136,7 +136,8 @@
 .mb-practice .mb-unclaimed > div { display: block !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .mb-practice .mb-unclaimed span { color: var(--ink-muted) !important; font: inherit !important; letter-spacing: 0 !important; text-transform: none !important; }
 .mb-practice .mb-unclaimed > div > span:nth-child(2), .mb-practice .mb-unclaimed > div > span:nth-child(2) * { color: var(--ink-primary) !important; }
-.mb-practice .mb-unclaimed[data-all] span { color: var(--ink-primary) !important; }
+/* Every mark claimed: the same quiet line as the board ("All 3 marks. Nothing left behind."). */
+.mb-practice .mb-unclaimed[data-all] span { color: var(--ink-muted) !important; }
 .mb-practice #mark-bank-grade-guidance { margin: 0 0 var(--space-3) !important; color: var(--ink-primary) !important; font: 400 13px/18px var(--font-ui) !important; }
 .mb-practice #mark-bank-grade-guidance br { display: none; }
 .mb-practice #mark-bank-grade-guidance em { color: var(--ink-muted) !important; font-style: normal; }
