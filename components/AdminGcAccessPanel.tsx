@@ -15,12 +15,14 @@
  *
  * The new password is shown ONCE and never stored — copy it before closing.
  */
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { getFunctions, httpsCallable } from 'firebase/functions';
-import { Check, Copy, Eye, EyeOff, KeyRound, LoaderCircle, Shuffle, TriangleAlert, X } from 'lucide-react';
+import { Check, Copy, Eye, EyeOff, KeyRound, LoaderCircle, Shuffle, X } from 'lucide-react';
 import app, { auth } from '../firebase';
 import { SCHOOLS } from '../schoolData';
 import { reauthMethodFor, reauthenticateCurrentUser } from '../utils/reauthenticate';
+import { Button, IconButton } from './ui/Button';
+import { Field } from './ui/Field';
 
 /**
  * Mirrors MIN_SUPPLIED_PASSWORD_LENGTH in functions/src/gcPasswordPolicy.ts.
@@ -52,6 +54,8 @@ const AdminGcAccessPanel: React.FC = () => {
   const [result, setResult] = useState<ResetResult | null>(null);
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
+  const currentRef = useRef<HTMLInputElement>(null);
+  const chosenRef = useRef<HTMLInputElement>(null);
 
   const closeRow = () => {
     setOpenSchool(null);
@@ -140,78 +144,62 @@ const AdminGcAccessPanel: React.FC = () => {
     }
   };
 
+  const needsCurrent = reauthMethodFor(auth.currentUser) === 'password' && !currentPassword;
+  const glyph = (Icon: typeof KeyRound, spin = false) => (
+    <Icon className={`ui-icon${spin ? ' adm-spin' : ''}`} width={16} height={16} strokeWidth={2} aria-hidden="true" />
+  );
+
   return (
-    <section aria-label="School logins">
-      <div className="mb-5">
-        <h2 className="font-sans text-xl font-semibold text-[var(--admin-ink)]">School logins</h2>
-        <p className="mt-1 max-w-2xl text-sm leading-relaxed text-[var(--admin-muted)]">
+    <section aria-label="School logins" className="adm-access">
+      <header className="gc8-head adm-head">
+        <p className="gc8-label">School access</p>
+        <h1 className="gc8-name">School logins</h1>
+        <p className="gc8-sub">
           Each school has two shared logins: the guidance counsellor&apos;s and the staff room&apos;s.
-          Both sign in with the school name and a password — there is no email inbox behind them, so
+          Both sign in with the school name and a password. There is no email inbox behind them, so
           the usual reset link cannot work. Setting a password here takes effect immediately and shows
           it once; send it to the school and their onboarding is done.
         </p>
-      </div>
+      </header>
 
-      {error && (
-        <p role="alert" className="mb-4 flex items-start gap-2 rounded-lg border border-[var(--admin-accent)] bg-[var(--admin-warning-bg)] px-4 py-3 text-sm text-[var(--admin-accent)]">
-          <TriangleAlert size={16} className="mt-0.5 shrink-0" />
-          {error}
-        </p>
-      )}
+      {error && <p role="alert" className="adm-alert">{error}</p>}
 
       {pendingAdoption && (
-        <div role="alert" className="mb-5 rounded-lg border border-[var(--admin-accent)] bg-[var(--admin-warning-bg)] p-5">
-          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--admin-accent)]">
-            This login already has an account
-          </p>
-          <p className="mt-2 text-sm leading-relaxed text-[var(--admin-accent)]">{pendingAdoption.message}</p>
-          <p className="mt-2 text-sm leading-relaxed text-[var(--admin-accent)]">
+        <div role="alert" className="adm-notice">
+          <p className="gc8-label">This login already has an account</p>
+          <p className="adm-notice-text adm-ink">{pendingAdoption.message}</p>
+          <p className="adm-notice-text">
             If you do not recognise it, someone else may have registered this address. Check it in the
             Firebase console before continuing — adopting it grants that account access to every student
             record in the school.
           </p>
-          <div className="mt-4 flex flex-wrap gap-2">
-            <button
-              type="button"
+          <div className="adm-btnrow">
+            <Button
               onClick={() => {
                 const { loginKey, password } = pendingAdoption;
                 setPendingAdoption(null);
                 void reset(loginKey, password, true);
               }}
-              className="rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 text-xs font-bold text-[var(--admin-ink)]"
             >
               I recognise it — adopt
-            </button>
-            <button
-              type="button"
-              onClick={() => setPendingAdoption(null)}
-              className="rounded-full border border-[var(--admin-rule)] bg-[var(--admin-action)] px-4 py-2 text-xs font-bold text-[var(--admin-action-ink)]"
-            >
-              Stop
-            </button>
+            </Button>
+            <Button kind="main" onClick={() => setPendingAdoption(null)}>Stop</Button>
           </div>
         </div>
       )}
 
       {result && (
-        <div role="status" className="mb-5 rounded-lg border border-[var(--admin-success)] bg-[var(--admin-success-bg)] p-5">
-          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--admin-success)]">
+        <div role="status" className="adm-notice">
+          <p className="gc8-label">
             {result.generated ? 'New password for' : 'Password set for'} {result.email}
           </p>
-          <div className="mt-2 flex flex-wrap items-center gap-3">
-            <code className="select-all rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 font-mono text-lg tracking-wider text-[var(--admin-ink)]">
-              {result.password}
-            </code>
-            <button
-              type="button"
-              onClick={() => void copy()}
-              className="flex items-center gap-1.5 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 text-xs font-bold text-[var(--admin-ink)]"
-            >
-              {copied ? <Check size={14} /> : <Copy size={14} />}
-              {copied ? 'Copied' : 'Copy'}
-            </button>
+          <div className="adm-secretrow">
+            <code className="gc8-code-value adm-secret">{result.password}</code>
+            <Button className="gc8-ib" onClick={() => void copy()}>
+              {copied ? glyph(Check) : glyph(Copy)}{copied ? 'Copied' : 'Copy'}
+            </Button>
           </div>
-          <p className="mt-3 text-xs leading-relaxed text-[var(--admin-success)]">
+          <p className="gc8-meta">
             {result.generated
               ? 'Shown once and never stored — copy it now. '
               : 'Set as typed, and not stored anywhere. '}
@@ -221,93 +209,87 @@ const AdminGcAccessPanel: React.FC = () => {
         </div>
       )}
 
-      <ul className="space-y-2">
+      <ul className="adm-logins">
         {SCHOOLS.flatMap(school => (['gc', 'staff'] as const).map(kind => ({ school, kind, key: `${kind}:${school.id}` }))).map(({ school, kind, key }) => (
-          <li
-            key={key}
-            className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-4"
-          >
-            <div className="min-w-0">
-              <p className="text-sm font-semibold text-[var(--admin-ink)]">
-                {school.name}
-                <span className="ml-2 text-xs font-medium text-[var(--admin-muted)]">{kind === 'gc' ? 'Guidance counsellor' : 'Staff room'}</span>
-              </p>
-              <p className="truncate font-mono text-xs text-[var(--admin-muted)]">{kind}-{school.id}@nextstep.app</p>
-            </div>
-            <button
-              type="button"
-              onClick={() => (openSchool === key ? closeRow() : (closeRow(), setOpenSchool(key)))}
-              disabled={busySchool !== null}
+          <li key={key} className="adm-login">
+            <p className="adm-lwho">
+              <span className="gc8-person">{school.name}</span>
+              <span className="gc8-meta">{kind === 'gc' ? 'Guidance counsellor' : 'Staff room'}</span>
+            </p>
+            <p className="gc8-readout adm-addr">{kind}-{school.id}@nextstep.app</p>
+            <Button
+              className="gc8-ib"
+              onClick={() => { if (busySchool !== null) return; if (openSchool === key) closeRow(); else { closeRow(); setOpenSchool(key); } }}
+              aria-disabled={busySchool !== null || undefined}
               aria-expanded={openSchool === key}
-              className="flex shrink-0 items-center gap-1.5 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 text-xs font-bold text-[var(--admin-ink)] disabled:opacity-40"
             >
               {busySchool === key
-                ? <LoaderCircle size={14} className="animate-spin" />
-                : openSchool === key ? <X size={14} /> : <KeyRound size={14} />}
+                ? glyph(LoaderCircle, true)
+                : openSchool === key ? glyph(X) : glyph(KeyRound)}
               {busySchool === key
                 ? 'Resetting…'
                 : openSchool === key ? 'Cancel' : 'Set password'}
-            </button>
+            </Button>
 
             {openSchool === key && (
-              <div className="w-full border-t border-[var(--admin-rule)] pt-4">
+              <div className="adm-setpw">
                 {reauthMethodFor(auth.currentUser) === 'password' && (
-                  <div className="mb-4">
-                    <label htmlFor={`current-pw-${key}`} className="block text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--admin-muted)]">
-                      Your current administrator password
-                    </label>
-                    <input
-                      id={`current-pw-${key}`}
-                      type="password"
-                      value={currentPassword}
-                      onChange={event => setCurrentPassword(event.target.value)}
-                      autoComplete="current-password"
-                      className="mt-2 w-full rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2.5 text-sm text-[var(--admin-ink)] outline-none focus:ring-4 focus:ring-accent/15"
-                    />
-                  </div>
+                  <Field
+                    ref={currentRef}
+                    id={`current-pw-${key}`}
+                    type="password"
+                    label="Your current administrator password"
+                    value={currentPassword}
+                    onChange={event => setCurrentPassword(event.target.value)}
+                    autoComplete="current-password"
+                  />
                 )}
-                <label htmlFor={`pw-${key}`} className="block text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--admin-muted)]">
-                  Choose a password
-                </label>
-                <div className="mt-2 flex flex-wrap items-center gap-2">
-                  <div className="relative min-w-0 flex-1">
-                    <input
-                      id={`pw-${key}`}
-                      type={showChosen ? 'text' : 'password'}
-                      value={chosen}
-                      onChange={event => setChosen(event.target.value)}
-                      autoComplete="new-password"
-                      placeholder={`At least ${MIN_SUPPLIED_PASSWORD_LENGTH} characters`}
-                      className="w-full rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2.5 pr-11 font-mono text-sm text-[var(--admin-ink)] outline-none placeholder:font-sans placeholder:text-[var(--admin-muted)] focus:ring-4 focus:ring-accent/15"
-                    />
-                    <button
-                      type="button"
-                      onClick={() => setShowChosen(v => !v)}
-                      aria-label={showChosen ? 'Hide password' : 'Show password'}
-                      className="absolute right-3 top-1/2 -translate-y-1/2 text-[var(--admin-muted)]"
-                    >
-                      {showChosen ? <EyeOff size={16} /> : <Eye size={16} />}
-                    </button>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => void reset(key, chosen)}
-                    disabled={chosen.length < MIN_SUPPLIED_PASSWORD_LENGTH || busySchool !== null || (reauthMethodFor(auth.currentUser) === 'password' && !currentPassword)}
-                    className="shrink-0 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-action)] px-4 py-2.5 text-xs font-bold text-[var(--admin-action-ink)] disabled:opacity-40"
+                <div className="adm-pwfield">
+                  <Field
+                    ref={chosenRef}
+                    id={`pw-${key}`}
+                    className="adm-mono"
+                    type={showChosen ? 'text' : 'password'}
+                    label="Choose a password"
+                    value={chosen}
+                    onChange={event => setChosen(event.target.value)}
+                    autoComplete="new-password"
+                    placeholder={`At least ${MIN_SUPPLIED_PASSWORD_LENGTH} characters`}
+                  />
+                  <IconButton
+                    className="adm-eye"
+                    label={showChosen ? 'Hide password' : 'Show password'}
+                    onClick={() => setShowChosen(v => !v)}
+                    icon={showChosen
+                      ? <EyeOff className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />
+                      : <Eye className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />}
+                  />
+                </div>
+                <div className="adm-btnrow">
+                  <Button
+                    kind="main"
+                    missing={needsCurrent
+                      ? { sentence: 'Re-enter your password to continue.', goTo: currentRef }
+                      : chosen.length < MIN_SUPPLIED_PASSWORD_LENGTH
+                        ? { sentence: `Choose a password of at least ${MIN_SUPPLIED_PASSWORD_LENGTH} characters.`, goTo: chosenRef }
+                        : undefined}
+                    onClick={() => { if (busySchool === null) void reset(key, chosen); }}
                   >
                     Set password
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => void reset(key)}
-                    disabled={busySchool !== null || (reauthMethodFor(auth.currentUser) === 'password' && !currentPassword)}
-                    className="flex shrink-0 items-center gap-1.5 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2.5 text-xs font-bold text-[var(--admin-ink)] disabled:opacity-40"
+                  </Button>
+                  <Button
+                    className="gc8-ib"
+                    aria-disabled={needsCurrent || busySchool !== null || undefined}
+                    onClick={() => {
+                      // The sentence over Set password already says what is missing; this goes there too.
+                      if (needsCurrent) { currentRef.current?.focus(); return; }
+                      if (busySchool === null) void reset(key);
+                    }}
                   >
-                    <Shuffle size={14} />
-                    Generate one
-                  </button>
+                    {glyph(Shuffle)}Generate one
+                  </Button>
                 </div>
-                <p className="mt-2 text-xs leading-relaxed text-[var(--admin-muted)]">
+                <p className="gc8-meta">
                   Whichever you choose, the old password stops working immediately.
                 </p>
               </div>

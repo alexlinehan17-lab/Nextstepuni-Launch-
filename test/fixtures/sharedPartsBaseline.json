@@ -21,22 +21,7 @@
    "button": 1
   },
   "components/AdminDashboard.tsx": {
-   "button": 9,
-   "dropdown": 2,
-   "pop-up": 1
-  },
-  "components/AdminFeedbackInbox.tsx": {
-   "button": 3,
-   "dropdown": 1
-  },
-  "components/AdminFunnelPanel.tsx": {
-   "button": 2
-  },
-  "components/AdminGcAccessPanel.tsx": {
-   "button": 7
-  },
-  "components/AdminProgrammePanel.tsx": {
-   "button": 3
+   "button": 1
   },
   "components/AnswerArchitect/AnswerArchitect.tsx": {
    "button": 1

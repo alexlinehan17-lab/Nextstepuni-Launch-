@@ -12,9 +12,6 @@
   "components/AchievementToast.tsx": {
    "tailwind [#…]": 4
   },
-  "components/AdminDashboard.tsx": {
-   "tailwind [#…]": 5
-  },
   "components/AnswerArchitect/AnswerArchitect.tsx": {
    "hex": 11,
    "tailwind [#…]": 3
@@ -360,9 +357,6 @@
   },
   "components/achievement-stamps.css": {
    "hex": 24
-  },
-  "components/admin/admin-dashboard.css": {
-   "hex": 22
   },
   "components/approved-ui-theme.css": {
    "hex": 8

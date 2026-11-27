@@ -3,10 +3,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Activity, CalendarCheck2, RefreshCw, ShieldCheck, Target, UsersRound } from 'lucide-react';
+import { RefreshCw } from 'lucide-react';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import app from '../firebase';
 import { type CourseData } from './Library';
+import { TextButton } from './ui/Button';
+import { SelectionBar } from './ui/Choice';
+import { ErrorState, LoadingShape } from './ui/States';
+import { Fig } from './gc/gcView';
 
 type Ratio = {
   numerator: number | null;
@@ -56,6 +60,8 @@ interface Props {
   schoolFilter: string;
   yearFilter: string;
   allCourses: CourseData[];
+  /** Laid out for a laptop (beside the staff sidebar): every column of the feature table. */
+  wide?: boolean;
 }
 
 const RANGE_OPTIONS = [
@@ -77,24 +83,24 @@ function sentenceCaseId(value: string): string {
     .join(' ');
 }
 
-const EvidenceCard: React.FC<{
-  label: string;
-  value: React.ReactNode;
-  detail: string;
-  icon: React.ReactNode;
-  positive?: boolean;
-}> = ({ label, value, detail, icon, positive = false }) => (
-  <article className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5">
-    <div className="flex items-start justify-between gap-3">
-      <p className="text-xs font-bold uppercase tracking-[0.13em] text-[var(--admin-muted)]">{label}</p>
-      <span className={positive ? 'text-[var(--admin-success)]' : 'text-[var(--admin-accent)]'}>{icon}</span>
-    </div>
-    <strong className="mt-3 block font-sans text-3xl font-bold tabular-nums text-[var(--admin-ink)]">{value}</strong>
-    <p className="mt-1 text-xs leading-relaxed text-[var(--admin-muted)]">{detail}</p>
-  </article>
-);
+/** A count with its thousands comma ("3,690"). */
+function countWords(value: number | string | null | undefined): string {
+  return typeof value === 'number' ? value.toLocaleString('en-IE') : String(value ?? '');
+}
 
-const AdminProgrammePanel: React.FC<Props> = ({ schoolFilter, yearFilter, allCourses }) => {
+/** A figure whose comma or decimal point keeps its own narrow width; only the digits are tabular. */
+function figureWords(text: string): React.ReactNode {
+  return text.split(/([.,])/).map((part, index) => (part === '.' || part === ',' ? <span key={index} className="adm-pu">{part}</span> : part));
+}
+
+/** The time the summary was worked out, for "Data as of 10:42" (never a machine date). */
+function asOfTime(generatedAt?: string): string | null {
+  if (!generatedAt) return null;
+  const at = new Date(generatedAt);
+  return Number.isNaN(at.getTime()) ? null : at.toLocaleTimeString('en-IE', { hour: '2-digit', minute: '2-digit' });
+}
+
+const AdminProgrammePanel: React.FC<Props> = ({ schoolFilter, yearFilter, allCourses, wide = false }) => {
   const [rangeDays, setRangeDays] = useState<7 | 28 | 84>(28);
   const [summary, setSummary] = useState<ProgrammeSummary | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -141,18 +147,15 @@ const AdminProgrammePanel: React.FC<Props> = ({ schoolFilter, yearFilter, allCou
   };
 
   if (isLoading && !summary) {
-    return <div className="grid grid-cols-2 gap-3 lg:grid-cols-4" aria-label="Loading programme evidence">
-      {[0, 1, 2, 3].map(item => <div key={item} className="h-36 animate-pulse rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)]" />)}
-    </div>;
+    return <LoadingShape rows={4} label="Loading programme evidence" />;
   }
 
   if (error && !summary) {
     return (
-      <div role="alert" className="rounded-lg border border-[var(--admin-accent)] bg-[var(--admin-warning-bg)] px-5 py-4 text-sm text-[var(--admin-accent)]">
-        <p className="font-bold not-italic">Programme evidence is unavailable</p>
-        <p className="mt-1">{error}</p>
-        <button type="button" onClick={() => setReloadToken(value => value + 1)} className="mt-3 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 text-xs font-bold not-italic text-[var(--admin-ink)]">Try again</button>
-      </div>
+      <ErrorState
+        sentence={<><span className="adm-ink">Programme evidence is unavailable</span><br />{error}</>}
+        onRetry={() => setReloadToken(value => value + 1)}
+      />
     );
   }
 
@@ -160,10 +163,10 @@ const AdminProgrammePanel: React.FC<Props> = ({ schoolFilter, yearFilter, allCou
 
   if (summary.enabled === false) {
     return (
-      <section className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-6 sm:p-8">
-        <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--admin-accent)]">Governed rollout</p>
-        <h2 className="mt-2 font-sans text-2xl font-semibold text-[var(--admin-ink)]">Programme measurement is staged, not collecting</h2>
-        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[var(--admin-muted)]">
+      <section className="gc8-sec adm-state">
+        <p className="gc8-label">Governed rollout</p>
+        <h2 className="gc8-h">Programme measurement is staged, not collecting</h2>
+        <p className="gc8-sub">
           The event contract, privacy controls and reporting surface are ready for review. Collection remains disabled until controller approval, the updated student-notice decision, and the Year-2 aggregate pipeline are complete.
         </p>
       </section>
@@ -172,10 +175,10 @@ const AdminProgrammePanel: React.FC<Props> = ({ schoolFilter, yearFilter, allCou
 
   if (summary.suppressed) {
     return (
-      <section className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-6">
-        <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--admin-muted)]">Privacy threshold</p>
-        <h2 className="mt-2 font-sans text-2xl font-semibold text-[var(--admin-ink)]">This cohort is too small to report separately</h2>
-        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--admin-muted)]">
+      <section className="gc8-sec adm-state">
+        <p className="gc8-label">Privacy threshold</p>
+        <h2 className="gc8-h">This cohort is too small to report separately</h2>
+        <p className="gc8-sub">
           This selection, or one of the subgroups that could be inferred from it, is below the {summary.suppressionMinimum}-student privacy threshold. Choose a broader view or wait for the cohort to grow.
         </p>
       </section>
@@ -192,147 +195,159 @@ const AdminProgrammePanel: React.FC<Props> = ({ schoolFilter, yearFilter, allCou
     return building;
   };
   const displayCount = (value?: number | null) => value === null ? 'Hidden' : (value ?? 0);
+  const percentFigure = (value: number | null) => value === null ? 'Building' : <Fig value={value} unit="%" />;
+  const asOf = asOfTime(summary.generatedAt);
+  const figures = [
+    { label: 'Registered', value: summary.registeredStudents, detail: 'Current students in this cohort; eligible count still required for reach.' },
+    { label: 'Activated in 7 days', value: percentFigure(activation.percentage), detail: ratioDetail(activation, `${activation.numerator} of ${activation.denominator} measurable new accounts`, 'Starts with accounts created after measurement began') },
+    { label: 'Weekly participation', value: percentFigure(participation.percentage), detail: ratioDetail(participation, `${participation.numerator} of ${participation.denominator} activated students`, 'Requires activated students and a return visit') },
+    { label: 'Four-week retention', value: percentFigure(retention.percentage), detail: ratioDetail(retention, `${retention.numerator} of ${retention.denominator} eligible activations`, 'Appears after a cohort reaches week four') },
+  ];
+  const featureRows = summary.featureRows || [];
 
   return (
-    <div className="space-y-6">
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="flex flex-wrap gap-2" aria-label="Programme reporting period">
-          {RANGE_OPTIONS.map(option => (
-            <button
-              key={option.days}
-              type="button"
-              onClick={() => setRangeDays(option.days)}
-              aria-pressed={rangeDays === option.days}
-              className={`rounded-full border px-4 py-2 text-xs font-bold ${rangeDays === option.days ? 'border-[var(--admin-accent)] bg-[var(--admin-accent)] text-[var(--admin-action-ink)]' : 'border-[var(--admin-rule)] bg-[var(--admin-surface)] text-[var(--admin-ink)]'}`}
-            >
-              {option.label}
-            </button>
-          ))}
+    <div className="adm-progpanel">
+      <div className="adm-progtools">
+        <SelectionBar
+          label="Programme reporting period"
+          size="md"
+          className="adm-range"
+          options={RANGE_OPTIONS.map(option => ({ value: String(option.days) as '7' | '28' | '84', label: option.label }))}
+          value={String(rangeDays) as '7' | '28' | '84'}
+          onChange={value => setRangeDays(Number(value) as 7 | 28 | 84)}
+        />
+        <div className="adm-asof">
+          <span className="gc8-meta">{asOf ? `Data as of ${asOf}` : null}</span>
+          <TextButton tone="quiet" className="gc8-ib" aria-disabled={isLoading || undefined} onClick={() => { if (!isLoading) setReloadToken(value => value + 1); }}>
+            <RefreshCw className={`ui-icon${isLoading ? ' adm-spin' : ''}`} width={16} height={16} strokeWidth={2} aria-hidden="true" />Refresh evidence
+          </TextButton>
         </div>
-        <button type="button" onClick={() => setReloadToken(value => value + 1)} disabled={isLoading} className="inline-flex items-center gap-2 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 text-xs font-bold text-[var(--admin-ink)] disabled:opacity-50">
-          <RefreshCw size={14} className={isLoading ? 'animate-spin' : undefined} /> Refresh evidence
-        </button>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-5">
-        <EvidenceCard label="Registered" value={summary.registeredStudents} detail="Current students in this cohort; eligible count still required for reach." icon={<UsersRound size={19} />} />
-        <EvidenceCard
-          label="Activated in 7 days"
-          value={activation.percentage === null ? 'Building' : `${activation.percentage}%`}
-          detail={ratioDetail(activation, `${activation.numerator} of ${activation.denominator} measurable new accounts`, 'Starts with accounts created after measurement began')}
-          icon={<Target size={19} />}
-          positive={activation.percentage !== null && activation.percentage >= 70}
-        />
-        <EvidenceCard
-          label="Weekly participation"
-          value={participation.percentage === null ? 'Building' : `${participation.percentage}%`}
-          detail={ratioDetail(participation, `${participation.numerator} of ${participation.denominator} activated students`, 'Requires activated students and a return visit')}
-          icon={<Activity size={19} />}
-          positive={participation.percentage !== null && participation.percentage >= 50}
-        />
-        <EvidenceCard
-          label="Four-week retention"
-          value={retention.percentage === null ? 'Building' : `${retention.percentage}%`}
-          detail={ratioDetail(retention, `${retention.numerator} of ${retention.denominator} eligible activations`, 'Appears after a cohort reaches week four')}
-          icon={<CalendarCheck2 size={19} />}
-          positive={retention.percentage !== null && retention.percentage >= 40}
-        />
+      <div className={`adm-stats${wide ? ' adm-stats--four' : ''}`}>
+        {figures.map(item => (
+          <div key={item.label}>
+            <span className="gc8-label">{item.label}</span>
+            <span className="gc8-num adm-statnum">{item.value}</span>
+            <span className="gc8-meta">{item.detail}</span>
+          </div>
+        ))}
       </div>
 
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-        <section className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5 sm:p-6" aria-labelledby="weekly-participation-title">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--admin-muted)]">Participation</p>
-          <h2 id="weekly-participation-title" className="mt-1 font-sans text-2xl font-semibold text-[var(--admin-ink)]">Active students by week</h2>
-          <div className="mt-6 flex h-44 items-end gap-2" aria-label="Twelve-week active-student trend">
+      <div className="adm-progtwo">
+        <section className="gc8-sec" aria-labelledby="weekly-participation-title">
+          <div className="gc8-sechead">
+            <div className="gc8-sechead-col">
+              <p className="gc8-label">Participation</p>
+              <h2 id="weekly-participation-title" className="gc8-h">Active students by week</h2>
+            </div>
+          </div>
+          <div className="adm-weeks" aria-label="Twelve-week active-student trend">
             {(summary.weeklyTrend || []).map(item => (
-              <div key={item.weekStart} className="flex min-w-0 flex-1 flex-col items-center justify-end gap-2">
-                <span className="text-xs font-bold tabular-nums text-[var(--admin-body)]">{item.activeStudents ?? '—'}</span>
-                <div className="w-full rounded-t-sm bg-[var(--admin-accent)]" style={{ height: `${item.activeStudents === null ? 3 : Math.max(3, (item.activeStudents / trendMax) * 112)}px` }} />
-                <span className="hidden text-[11px] text-[var(--admin-muted)] sm:block">{readableDate(item.weekStart)}</span>
+              <div key={item.weekStart}>
+                <span className="gc8-readout">{item.activeStudents ?? '—'}</span>
+                <i style={{ height: `${item.activeStudents === null ? 3 : Math.max(3, (item.activeStudents / trendMax) * 112)}px` }} />
+                {wide ? <span className="adm-weekday">{readableDate(item.weekStart)}</span> : null}
               </div>
             ))}
           </div>
         </section>
 
-        <section className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5 sm:p-6" aria-labelledby="programme-actions-title">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--admin-muted)]">Intentional activity</p>
-          <h2 id="programme-actions-title" className="mt-1 font-sans text-2xl font-semibold text-[var(--admin-ink)]">Actions completed</h2>
-          <dl className="mt-6 divide-y divide-[var(--admin-rule)]">
-            <div className="flex items-end justify-between gap-4 py-4 first:pt-0">
-              <dt className="text-sm font-semibold text-[var(--admin-body)]">Planned study activities</dt>
-              <dd className="font-sans text-3xl font-bold tabular-nums text-[var(--admin-ink)]">{displayCount(summary.planActivitiesCompleted)}</dd>
+        <section className="gc8-sec" aria-labelledby="programme-actions-title">
+          <div className="gc8-sechead">
+            <div className="gc8-sechead-col">
+              <p className="gc8-label">Intentional activity</p>
+              <h2 id="programme-actions-title" className="gc8-h">Actions completed</h2>
             </div>
-            <div className="flex items-end justify-between gap-4 py-4">
-              <dt className="text-sm font-semibold text-[var(--admin-body)]">Study sessions completed</dt>
-              <dd className="font-sans text-3xl font-bold tabular-nums text-[var(--admin-ink)]">{displayCount(summary.studySessionsCompleted)}</dd>
+          </div>
+          <dl className="gc8-figrows adm-figrows">
+            <div>
+              <dt className="gc8-sub">Planned study activities</dt>
+              <dd className="gc8-num">{figureWords(countWords(displayCount(summary.planActivitiesCompleted)))}</dd>
             </div>
-            <div className="flex items-end justify-between gap-4 py-4">
-              <dt>
-                <span className="block text-sm font-semibold text-[var(--admin-body)]">Practice attempts</span>
-                <span className="mt-1 block text-xs text-[var(--admin-muted)]">{summary.strongPracticePercentage === null || summary.strongPracticePercentage === undefined ? 'Accuracy builds with new attempts' : `${summary.strongPracticePercentage}% strong or full self-marks`}</span>
+            <div>
+              <dt className="gc8-sub">Study sessions completed</dt>
+              <dd className="gc8-num">{figureWords(countWords(displayCount(summary.studySessionsCompleted)))}</dd>
+            </div>
+            <div>
+              <dt className="gc8-figrows-col">
+                <span className="gc8-sub">Practice attempts</span>
+                <span className="gc8-meta">{summary.strongPracticePercentage === null || summary.strongPracticePercentage === undefined ? 'Accuracy builds with new attempts' : `${summary.strongPracticePercentage}% strong or full self-marks`}</span>
               </dt>
-              <dd className="font-sans text-3xl font-bold tabular-nums text-[var(--admin-ink)]">{displayCount(summary.practiceAttemptsCompleted)}</dd>
+              <dd className="gc8-num">{figureWords(countWords(displayCount(summary.practiceAttemptsCompleted)))}</dd>
             </div>
-            <div className="flex items-end justify-between gap-4 py-4 last:pb-0">
-              <dt>
-                <span className="block text-sm font-semibold text-[var(--admin-body)]">Confidence after study</span>
-                <span className="mt-1 block text-xs text-[var(--admin-muted)]">{summary.confidenceResponses === null ? 'Hidden for a small response group' : `${summary.confidenceResponses ?? 0} responses`}</span>
+            <div>
+              <dt className="gc8-figrows-col">
+                <span className="gc8-sub">Confidence after study</span>
+                <span className="gc8-meta">{summary.confidenceResponses === null ? 'Hidden for a small response group' : `${countWords(summary.confidenceResponses ?? 0)} responses`}</span>
               </dt>
-              <dd className="font-sans text-3xl font-bold tabular-nums text-[var(--admin-ink)]">{summary.averageConfidence === null || summary.averageConfidence === undefined ? '—' : `${summary.averageConfidence}/5`}</dd>
+              <dd className="gc8-num">{summary.averageConfidence === null || summary.averageConfidence === undefined ? '—' : <>{figureWords(String(summary.averageConfidence))} <span className="adm-of">/ 5</span></>}</dd>
             </div>
           </dl>
         </section>
       </div>
 
-      <section className="overflow-hidden rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)]" aria-labelledby="feature-success-title">
-        <div className="border-b border-[var(--admin-rule)] px-5 py-5 sm:px-6">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--admin-muted)]">Product decisions</p>
-          <h2 id="feature-success-title" className="mt-1 font-sans text-2xl font-semibold text-[var(--admin-ink)]">Feature starts and successful finishes</h2>
-          <p className="mt-2 text-sm text-[var(--admin-muted)]">Rows appear after at least {summary.suppressionMinimum} students have started or completed the flow.</p>
+      <section className="gc8-sec" aria-labelledby="feature-success-title">
+        <div className="gc8-sechead">
+          <div className="gc8-sechead-col">
+            <p className="gc8-label">Product decisions</p>
+            <h2 id="feature-success-title" className="gc8-h">Feature starts and successful finishes</h2>
+          </div>
         </div>
-        <div className="overflow-x-auto">
-          <table className="w-full min-w-[680px] border-collapse text-left">
-            <thead className="bg-[var(--admin-raised)] text-xs font-bold uppercase tracking-[0.1em] text-[var(--admin-muted)]">
-              <tr><th className="px-5 py-3">Feature</th><th className="px-4 py-3 text-right">Exposed</th><th className="px-4 py-3 text-right">Started</th><th className="px-4 py-3 text-right">Completed</th><th className="px-5 py-3 text-right">Success</th></tr>
-            </thead>
-            <tbody className="divide-y divide-[var(--admin-rule)]">
-              {(summary.featureRows || []).length > 0 ? summary.featureRows!.map(row => (
-                <tr key={row.id}>
-                  <th scope="row" className="px-5 py-4 text-sm font-bold text-[var(--admin-ink)]">{featureLabel(row.id)}</th>
-                  <td className="px-4 py-4 text-right text-sm tabular-nums text-[var(--admin-body)]">{row.exposed ?? '—'}</td>
-                  <td className="px-4 py-4 text-right text-sm tabular-nums text-[var(--admin-body)]">{row.started}</td>
-                  <td className="px-4 py-4 text-right text-sm tabular-nums text-[var(--admin-body)]">{row.completed ?? '—'}</td>
-                  <td className="px-5 py-4 text-right text-sm font-bold tabular-nums text-[var(--admin-ink)]">{row.successRate === null ? '—' : `${row.successRate}%`}</td>
-                </tr>
-              )) : (
-                <tr><td colSpan={5} className="px-5 py-10 text-center text-sm text-[var(--admin-muted)]">Feature evidence will appear as students use this version of the app.</td></tr>
-              )}
-            </tbody>
-          </table>
-        </div>
+        <p className="gc8-meta">Rows appear after at least {summary.suppressionMinimum} students have started or completed the flow.</p>
+        <table className={`adm-ftable${wide ? '' : ' adm-ftable--two'}`}>
+          <thead>
+            <tr>
+              <th scope="col" className="gc8-label">Feature</th>
+              <th scope="col" className="gc8-label adm-n">Exposed</th>
+              {wide ? <><th scope="col" className="gc8-label adm-n">Started</th><th scope="col" className="gc8-label adm-n">Completed</th><th scope="col" className="gc8-label adm-n">Success</th></> : null}
+            </tr>
+          </thead>
+          <tbody>
+            {featureRows.length > 0 ? featureRows.map(row => (
+              <tr key={row.id}>
+                <th scope="row">{featureLabel(row.id)}</th>
+                <td className="adm-n">{row.exposed ?? '—'}</td>
+                {wide ? <>
+                  <td className="adm-n">{row.started}</td>
+                  <td className="adm-n">{row.completed ?? '—'}</td>
+                  <td className="adm-n">{row.successRate === null ? '—' : <span className="adm-pct">{row.successRate}<small className="gc8-unit">%</small></span>}</td>
+                </> : null}
+              </tr>
+            )) : (
+              <tr><td colSpan={wide ? 5 : 2} className="gc8-empty">Feature evidence will appear as students use this version of the app.</td></tr>
+            )}
+          </tbody>
+        </table>
+        {wide ? null : (
+          <div className="gc8-best adm-best">
+            <p className="gc8-label">Best on a laptop</p>
+            <p className="gc8-sub">Started, completed and success for each feature, side by side.</p>
+          </div>
+        )}
       </section>
 
-      <section className="grid grid-cols-1 gap-6 rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5 sm:p-6 lg:grid-cols-2">
-        <div>
-          <div className="flex items-center gap-2 text-[var(--admin-success)]"><ShieldCheck size={18} /><span className="text-xs font-bold uppercase tracking-[0.13em]">Measurement coverage</span></div>
-          <p className="mt-3 text-sm leading-relaxed text-[var(--admin-body)]">
+      <section className="adm-cover">
+        <div className="adm-cover-part">
+          <p className="gc8-label">Measurement coverage</p>
+          <p className="adm-cover-text">
             {summary.coverage?.eventCount === null
               ? `Activity volume is hidden until ${summary.suppressionMinimum} students contribute. `
-              : `${summary.coverage?.eventCount ?? 0} structured events in this period. `}
+              : `${countWords(summary.coverage?.eventCount ?? 0)} structured events in this period. `}
             {summary.coverage?.studentsWithAnalyticsId === null
               ? 'Measurement coverage is hidden for the current small contributor group.'
               : `${summary.coverage?.studentsWithAnalyticsId ?? 0} of ${summary.registeredStudents} students now have a separate analytics identifier.`}
           </p>
-          <p className="mt-2 text-xs leading-relaxed text-[var(--admin-muted)]">
+          <p className="gc8-meta">
             {summary.measurementStartedOn
               ? `History begins ${readableDate(summary.measurementStartedOn)}. Earlier product use is not reconstructed or presented as event data.`
               : 'No programme events have been recorded yet; earlier product use will not be reconstructed.'}
           </p>
         </div>
-        <div>
-          <p className="text-xs font-bold uppercase tracking-[0.13em] text-[var(--admin-muted)]">Awaiting programme input</p>
-          <ul className="mt-3 space-y-2 text-sm text-[var(--admin-body)]">
-            {(summary.awaitingProgrammeInput || []).map(item => <li key={item} className="flex gap-2"><span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--admin-accent)]" />{item}</li>)}
+        <div className="adm-cover-part">
+          <p className="gc8-label">Awaiting programme input</p>
+          <ul className="adm-ruled">
+            {(summary.awaitingProgrammeInput || []).map(item => <li key={item}>{item}</li>)}
           </ul>
         </div>
       </section>

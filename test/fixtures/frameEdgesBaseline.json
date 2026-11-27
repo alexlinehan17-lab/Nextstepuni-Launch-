@@ -15,10 +15,6 @@
    "h-screen": 1,
    "var(--sa*)": 1
   },
-  "components/AdminDashboard.tsx": {
-   "fixed": 1,
-   "inset-0": 1
-  },
   "components/AppRouter.tsx": {
    "h-screen": 3
   },
@@ -156,10 +152,6 @@
   },
   "components/account-live.css": {
    "var(--sa*)": 2
-  },
-  "components/admin/admin-dashboard.css": {
-   "100vh": 1,
-   "fixed": 1
   },
   "components/approved-ui-runtime.css": {
    "fixed": 3

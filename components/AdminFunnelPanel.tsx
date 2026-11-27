@@ -16,9 +16,14 @@
  */
 import React, { useCallback, useEffect, useState } from 'react';
 import { collection, getCountFromServer, query, where } from 'firebase/firestore';
-import { RefreshCw, TriangleAlert } from 'lucide-react';
+import { RefreshCw } from 'lucide-react';
 import { db } from '../firebase';
 import { FUNNEL_STEPS, type FunnelStep } from '../utils/funnel';
+import { TopBar } from './ui/Bars';
+import { IconButton } from './ui/Button';
+import { SelectionBar } from './ui/Choice';
+import { PaperSheet } from './ui/List';
+import { Fig } from './gc/gcView';
 
 /** Local (Irish) calendar day — never toISOString, which rolls back a day at UTC+1. */
 function localDay(offsetDays = 0): string {
@@ -56,7 +61,13 @@ const RANGES = [
 
 type RangeId = (typeof RANGES)[number]['id'];
 
-const AdminFunnelPanel: React.FC = () => {
+interface AdminFunnelPanelProps {
+  /** On a phone the page is reached from Overview's second row: Back to it, and the page's Refresh
+   *  in the bar (the agreed board). Without it the panel is the page's body (a laptop). */
+  onBack?: () => void;
+}
+
+const AdminFunnelPanel: React.FC<AdminFunnelPanelProps> = ({ onBack }) => {
   const [range, setRange] = useState<RangeId>('today');
   const [counts, setCounts] = useState<Record<string, number>>({});
   const [isLoading, setIsLoading] = useState(true);
@@ -97,81 +108,64 @@ const AdminFunnelPanel: React.FC = () => {
   // how many actually got through setup?
   const throughRate = started > 0 ? Math.round((completed / started) * 100) : null;
 
-  return (
-    <section aria-label="First-run funnel">
-      <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
-        <div>
-          <h2 className="font-sans text-xl font-semibold text-[var(--admin-ink)]">Are students getting in?</h2>
-          <p className="mt-1 text-sm text-[var(--admin-muted)]">
-            Each student is counted once per visit, at the furthest step they reached.
-          </p>
-        </div>
-        <div className="flex items-center gap-2">
-          {RANGES.map(option => (
-            <button
-              key={option.id}
-              type="button"
-              onClick={() => setRange(option.id)}
-              aria-pressed={range === option.id}
-              className="rounded-full border px-3 py-1.5 text-xs font-bold"
-              style={{
-                borderColor: range === option.id ? 'var(--admin-accent)' : 'var(--admin-rule)',
-                backgroundColor: range === option.id ? 'var(--admin-accent)' : 'var(--admin-surface)',
-                color: range === option.id ? 'var(--admin-action-ink)' : 'var(--admin-ink)',
-              }}
-            >
-              {option.label}
-            </button>
-          ))}
-          <button
-            type="button"
-            onClick={() => void load()}
-            aria-label="Refresh funnel counts"
-            className="flex h-8 w-8 items-center justify-center rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] text-[var(--admin-ink)]"
-          >
-            <RefreshCw size={14} className={isLoading ? 'animate-spin' : undefined} />
-          </button>
-        </div>
-      </div>
+  const refresh = (
+    <IconButton
+      label="Refresh funnel counts"
+      className="adm-refresh"
+      onClick={() => void load()}
+      icon={<RefreshCw className={`ui-icon${isLoading ? ' adm-spin' : ''}`} width={20} height={20} strokeWidth={1.75} aria-hidden="true" />}
+    />
+  );
 
-      {error && (
-        <p role="alert" className="mb-4 flex items-start gap-2 rounded-lg border border-[var(--admin-accent)] bg-[var(--admin-warning-bg)] px-4 py-3 text-sm text-[var(--admin-accent)]">
-          <TriangleAlert size={16} className="mt-0.5 shrink-0" />
-          {error}
+  const body = (
+    <section aria-label="First-run funnel" className="adm-funnel">
+      <header className="gc8-head adm-head">
+        <p className="gc8-label">First run</p>
+        <div className="adm-titlerow">
+          <h1 className="gc8-title">Are students getting in?</h1>
+          {onBack ? null : refresh}
+        </div>
+        <p className="gc8-sub">
+          Each student is counted once per visit, at the furthest step they reached.
         </p>
-      )}
+        <SelectionBar
+          label="Period"
+          size="md"
+          className="adm-seg2"
+          options={RANGES.map(option => ({ value: option.id, label: option.label }))}
+          value={range}
+          onChange={value => setRange(value as RangeId)}
+        />
+      </header>
+
+      {error && <p role="alert" className="adm-alert">{error}</p>}
 
       {throughRate !== null && (
-        <div className="mb-6 rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5">
-          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--admin-muted)]">
-            Made an account → finished setup
+        <PaperSheet className="adm-through" label="Made an account, then finished setup">
+          <p className="gc8-label">Made an account → finished setup</p>
+          {/* The headline figure in ink (the agreed board: not green or orange). */}
+          <p className="gc8-num adm-throughnum"><Fig value={throughRate} unit="%" /></p>
+          <p className="gc8-sub">
+            {completed} of {started}. If this drops, the front door is broken: check the newest step with a fall-off below.
           </p>
-          <p className="mt-1 font-sans text-4xl font-bold" style={{ color: throughRate >= 70 ? 'var(--admin-success)' : 'var(--admin-accent)' }}>
-            {throughRate}%
-          </p>
-          <p className="mt-1 text-sm text-[var(--admin-muted)]">
-            {completed} of {started}. If this drops, the front door is broken — check the newest step with a fall-off below.
-          </p>
-        </div>
+        </PaperSheet>
       )}
 
-      <ol className="space-y-2">
+      <ol className="adm-steps">
         {FUNNEL_PATH.map((step, index) => {
           const value = counts[step] ?? 0;
           const previous = index === 0 ? value : (counts[FUNNEL_PATH[index - 1]] ?? 0);
           const lost = Math.max(0, previous - value);
           const width = top > 0 ? Math.round((value / top) * 100) : 0;
           return (
-            <li key={step} className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-4">
-              <div className="flex items-baseline justify-between gap-4">
-                <span className="text-sm font-semibold text-[var(--admin-ink)]">{STEP_LABELS[step]}</span>
-                <span className="font-sans text-xl font-bold tabular-nums text-[var(--admin-ink)]">{value}</span>
+            <li key={step}>
+              <div className="adm-stephead">
+                <span>{STEP_LABELS[step]}</span>
+                <span className="adm-count">{value}</span>
               </div>
-              <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-[var(--admin-track)]">
-                <div className="h-full rounded-full" style={{ width: `${width}%`, background: 'var(--admin-accent)' }} />
-              </div>
+              <span className="gc8-bar adm-livebar" aria-hidden="true"><i style={{ width: `${width}%` }} /></span>
               {index > 0 && lost > 0 && (
-                <p className="mt-2 text-xs text-[var(--admin-muted)]">
+                <p className="adm-lost">
                   &minus;{lost} lost here{previous > 0 ? ` (${Math.round((lost / previous) * 100)}%)` : ''}
                 </p>
               )}
@@ -180,12 +174,20 @@ const AdminFunnelPanel: React.FC = () => {
         })}
       </ol>
 
-      <p className="mt-5 text-xs leading-relaxed text-[var(--admin-muted)]">
-        Skipped onboarding: <strong>{counts.onboarding_skipped ?? 0}</strong>. Students who abandon on the
-        registration form itself are not counted — writing here requires a signed-in account, so that gap is
-        deliberate (see <code>utils/funnel.ts</code>).
+      <p className="gc8-meta adm-foot">
+        Skipped onboarding: <b>{counts.onboarding_skipped ?? 0}</b>. Students who abandon on the
+        registration form itself are not counted. Writing here requires a signed-in account, so that gap is
+        deliberate.
       </p>
     </section>
+  );
+
+  if (!onBack) return body;
+  return (
+    <>
+      <TopBar className="gc8-placebar adm-pagebar" leave={{ kind: 'back', onPress: onBack, label: 'Back to Overview' }} action={refresh} />
+      <main className="gc8-main adm-main">{body}</main>
+    </>
   );
 };
 
