@@ -117,11 +117,16 @@ describe('sidebar B', () => {
 });
 
 describe('the leaving destinations are reachable elsewhere', () => {
-  it('Learning paths opens from its card on laptop Home; War Room and Future Finder are Launchpad tools; References is under Help', () => {
+  it('Learning paths opens from its card on laptop Home; Future Finder is a Launchpad tool; War Room has left (its address still opens); References is under Help', () => {
     const home = readFileSync(join(process.cwd(), 'components/StudentHomeContent.tsx'), 'utf8');
     expect(home).toMatch(/title: 'Learning Paths'[^}]*go: onGoToLearningPaths/);
     const launchpad = readFileSync(join(process.cwd(), 'components/InnovationZone.tsx'), 'utf8');
+    // Area 7a: War Room's door left the Launchpad (Alex, 24 Nov 2026); its tool entry stays so
+    // its own address still opens it, and the list filters it out through leavingTools.ts.
     expect(launchpad).toMatch(/id: 'war-room'/);
+    expect(launchpad).toMatch(/if \(isLeavingTool\(t\.id\)\) return false;/);
+    const leaving = readFileSync(join(process.cwd(), 'components/launchpad/leavingTools.ts'), 'utf8');
+    expect(leaving).toMatch(/'war-room'/);
     expect(launchpad).toMatch(/id: 'future-finder-revamped'/);
     const sidebar = readFileSync(join(process.cwd(), 'components/navigation/NextStepUniSidebar.tsx'), 'utf8');
     expect(sidebar).toMatch(/onClick=\{nav\.navigateToAccreditation\}>References</);

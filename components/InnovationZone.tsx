@@ -68,6 +68,7 @@ import { SearchField } from './ui/Field';
 import ThemeArtwork from './ThemeArtwork';
 import './launchpad/catalogue.css';
 import { ToolBarContext, type ToolBarState } from './launchpad/toolBar';
+import { isLeavingTool } from './launchpad/leavingTools';
 import { type ToolIconKey } from './ToolIconBlob';
 import { isActiveSeniorYear, isLcaYear } from '../utils/authUtils';
 import LaunchpadGuidance from './LaunchpadGuidance';
@@ -641,7 +642,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <FutureFinder uid={user!.uid} profile={subjectProfile} onOpenCareerPaths={() => setActiveTool('your-possible-life')} /> : null,
+            // No "Explore these as careers": Your Possible Life has left the app for now (its door, leavingTools.ts).
+            component: subjectProfile ? <FutureFinder uid={user!.uid} profile={subjectProfile} /> : null,
         },
         {
             id: 'future-finder-revamped', title: 'Future Finder', description: 'Start with your interests. Explore possible routes.', icon: Compass, needsProfile: true,
@@ -650,7 +652,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
             iconBg: 'bg-pink-100 dark:bg-pink-900/30', iconColor: 'text-pink-700 dark:text-pink-300',
             accentBarColor: 'bg-pink-500', tagBg: 'bg-pink-100 dark:bg-pink-900/30', tagText: 'text-pink-700 dark:text-pink-400',
             hoverBorder: 'hover:border-pink-400/50 dark:hover:border-pink-500/40',
-            component: subjectProfile ? <FutureFinderRevamped uid={user!.uid} profile={subjectProfile} onOpenCareerPaths={() => setActiveTool('your-possible-life')} /> : null,
+            // No "Explore career paths": Your Possible Life has left the app for now (its door, leavingTools.ts).
+            component: subjectProfile ? <FutureFinderRevamped uid={user!.uid} profile={subjectProfile} /> : null,
         },
         {
             // Retained only so saved links and old module completions keep
@@ -865,6 +868,9 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack: _onBack, user, 
       // openable for old links, but never advertise a duplicate product tile.
       if (t.id === 'syllabus-xray') return false;
       if (WIP_TOOL_IDS.has(t.id)) return false;
+      // Four tools have left the app for now: no door on the list, in its categories, in
+      // Meet the tools or Help me choose. Each still opens from its own address.
+      if (isLeavingTool(t.id)) return false;
       const tag = t.curriculum ?? 'senior';
       const okCurriculum = tag === 'both' || tag === curriculumLevel;
       // Tools flagged `seniorYearsOnly` must ALSO be an active senior year

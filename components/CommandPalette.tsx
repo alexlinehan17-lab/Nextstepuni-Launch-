@@ -18,6 +18,7 @@ import { Search, ArrowRight } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
 import { type CourseData } from './Library';
 import { COLORS } from '../design/tokens';
+import { isLeavingTool } from './launchpad/leavingTools';
 
 /** Launchpad tools, mirrored from InnovationZone's internal list.
  *  Keep titles in sync when a tool is added or renamed there. */
@@ -136,7 +137,8 @@ const CommandPalette: React.FC<Props> = ({ courses }) => {
       { kind: 'page', id: 'accreditation', title: 'References', go: () => nav.navigateToAccreditation() },
       { kind: 'page', id: 'year-plans', title: 'Year Plans', go: () => nav.navigateToYearPlans() },
     ];
-    const tools: PaletteEntry[] = Object.entries(TOOL_TITLES).map(([id, title]) => ({
+    // A tool that has left the app for now is not offered (leavingTools.ts).
+    const tools: PaletteEntry[] = Object.entries(TOOL_TITLES).filter(([id]) => !isLeavingTool(id)).map(([id, title]) => ({
       kind: 'tool' as const,
       id,
       title,

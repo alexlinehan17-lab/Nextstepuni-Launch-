@@ -20,6 +20,8 @@ export interface LastVisit {
   at: number;
 }
 
+import { isLeavingTool } from './launchpad/leavingTools';
+
 const KEY = 'nsu-lastvisit:';
 
 export const recordVisit = (uid: string | undefined, v: Omit<LastVisit, 'at'>): void => {
@@ -34,6 +36,8 @@ export const getLastVisit = (uid: string | undefined): LastVisit | null => {
     if (!raw) return null;
     const v = JSON.parse(raw) as LastVisit;
     if (!v || typeof v.id !== 'string' || typeof v.label !== 'string' || (v.kind !== 'module' && v.kind !== 'tool')) return null;
+    // Home's "Pick up where you left off" is not a door to a tool that has left the app for now.
+    if (v.kind === 'tool' && isLeavingTool(v.id)) return null;
     return v;
   } catch {
     return null;

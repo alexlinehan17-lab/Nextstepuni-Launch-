@@ -10,6 +10,7 @@ import { PressBox } from './ui/List';
 import React,{ useContext,useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigation } from '../contexts/NavigationContext';
+import { isLeavingTool } from './launchpad/leavingTools';
 import { type ModuleTheme } from '../types';
 import { MotionDiv } from './Motion';
 import { BrandBook } from './learning/BrandBook';
@@ -93,6 +94,9 @@ interface ToolJumpCardProps {
 
 export const ToolJumpCard: React.FC<ToolJumpCardProps> = ({ toolId, title, description, ctaLabel }) => {
   const nav = useNavigation();
+  // A tool that has left the app for now shows no card: its door goes, the module's words
+  // stay in the code (whether they are cut is the owner's call, through the cut-content record).
+  if (isLeavingTool(toolId)) return null;
   // A box you press (area 5b): a line, no shadow, no orange disc; its label in small capitals, the arrow in ink.
   return (
     <MotionDiv

@@ -86,8 +86,8 @@ export default function NextStepUniSidebar(props: Props) {
   // Sidebar B (agreed 25 Nov 2026): the five places, then Workspace. Ten rows,
   // and nothing scrolls on a 1280 x 800 laptop. What left the list lives under
   // the student's name (Year Plans, Study Passport, Your setup, Insights, My
-  // Direction, Account), on Home (Learning paths) or in the Launchpad (War
-  // Room, Future Finder); References stays in Help.
+  // Direction, Account), on Home (Learning paths) or in the Launchpad (Future
+  // Finder; War Room has left the app for now); References stays in Help.
   const current = sidebarItemFor(nav.state);
   const groups: { title?: string; items: Item[] }[] = [
     { items: [
