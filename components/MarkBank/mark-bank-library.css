@@ -104,3 +104,32 @@
   .mb-panel .mb-topic > .mb-sec + .mb-sec { margin-top: 0; }
   .mb-side .mb-sec-head { min-height: 0; }
 }
+
+/* ── The end of a practice run (MarkBank.tsx, screen 'close') ──────────────────────────────
+   On the white page: a small label, the light headline, one line under it; the three figures
+   in one line, each number over its small label and centred in its column (no boxes, no tint;
+   green only as the small tick by "Marks banked"); the next review under a hairline rule; then
+   two buttons of one height, the charcoal one first. Page margin 24px, one 620px column. */
+.mb-close {
+  min-height: 100dvh;
+  padding: 56px max(var(--space-6), var(--safe-right)) 72px max(var(--space-6), var(--safe-left));
+  background: var(--surface-canvas);
+  color: var(--ink-primary);
+  font-family: var(--font-ui);
+}
+.mb-close :is(h2, p, dl, dt, dd) { margin: 0; }
+.mb-close-col { display: flex; flex-direction: column; max-width: 620px; margin: 0 auto; text-align: center; }
+.mb-close-label { color: var(--ink-muted); }
+.mb-close h2.mb-close-title { margin-top: var(--space-2); font-family: var(--font-ui); font-weight: 400; color: var(--ink-primary); }
+.mb-close-sub { margin-top: var(--space-2); }
+.mb-close-figures { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-2); margin-top: var(--space-8); }
+.mb-close-fig { display: flex; flex-direction: column-reverse; align-items: center; gap: 6px; min-width: 0; }
+.mb-close-fig-value { font-size: 30px; line-height: 30px; letter-spacing: -0.055em; font-variant-numeric: tabular-nums; color: var(--ink-primary); }
+.mb-close-fig-name { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-1); color: var(--ink-muted); overflow-wrap: anywhere; }
+.mb-close .mb-close-tick { width: 11px; height: 11px; margin: 0; }
+.mb-close-note { margin-top: var(--space-4); }
+.mb-close-next { display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-8); padding-top: var(--space-4); border-top: 1px solid var(--hairline); text-align: left; }
+.mb-close-next-title { color: var(--ink-primary); }
+.mb-close-next-done { display: flex; align-items: flex-start; gap: var(--space-2); color: var(--ink-primary); }
+.mb-close-next-done > .mb-close-tick { width: 15px; height: 15px; margin-top: 4.5px; }
+.mb-close-acts { display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-8); text-align: left; }
