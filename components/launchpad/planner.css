@@ -1,0 +1,180 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Planner & Study in the agreed look (area 7a; boards c-tools2-planner on a phone, r5-planner on a
+ * laptop). The week in blocks, each block a box you press with its subject's character standing bare
+ * on it; the days on the page, not in cards; the chosen block's next small step beside the week on a
+ * laptop and in a sheet on a phone. New class names (pl7-) so planner-preview.css cannot reach them.
+ */
+.pl7-planner { color: var(--ink-primary); font-family: var(--font-ui); }
+/* The phone keeps the system's one page margin: the shell's 16px plus 8. */
+.pl7-main { display: flex; flex-direction: column; gap: var(--space-8); padding: var(--space-1) var(--space-2) var(--space-6); }
+.pl7-cols { display: grid; gap: var(--space-8); }
+.pl7-week-col { display: flex; min-width: 0; flex-direction: column; gap: var(--space-3); }
+.pl7-intro { display: flex; flex-direction: column; gap: var(--space-2); margin-bottom: var(--space-2); }
+.pl7-intro > * { margin: 0; }
+/* Two classes and the element, so mobile-editorial's bold DM Sans h1 cannot reach the headline. */
+.pl7-planner .pl7-intro h1.t-title { font-family: var(--font-ui); font-weight: 400; }
+.pl7-inline { display: inline-flex; align-items: center; gap: 6px; }
+
+/* The week and its arrows: boxes you press either side of its dates. */
+.pl7-weekbar { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); }
+.pl7-weeknav { display: flex; flex: 1; align-items: center; gap: var(--space-2); }
+.pl7-arrow.ui-icon-btn { border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); color: var(--ink-primary); }
+.pl7-arrow.ui-icon-btn[aria-disabled='true'] { border-color: var(--hairline); color: var(--ink-muted); cursor: default; }
+.pl7-weekname { display: flex; flex: 1; min-width: 0; flex-direction: column; align-items: center; gap: 2px; text-align: center; }
+.pl7-weekdates { margin: 0; font-size: 17px; font-weight: 400; line-height: 22px; letter-spacing: -0.015em; }
+.pl7-jump { display: none; color: var(--ink-secondary); text-decoration: none; white-space: nowrap; }
+.pl7-thisweek { align-self: center; }
+.pl7-viewbar { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.pl7-seg.ui-seg { width: 148px; flex: none; }
+
+/* The days, on the page. */
+.pl7-agenda { display: flex; flex-direction: column; gap: var(--space-6); margin-top: var(--space-3); }
+.pl7-days { display: flex; flex-direction: column; gap: var(--space-6); }
+.pl7-day { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.pl7-day-head { display: flex; align-items: baseline; gap: var(--space-2); min-height: 24px; }
+.pl7-day-name { position: relative; padding: 0; border: 0; background: none; color: var(--ink-primary); font: inherit; font-size: 17px; line-height: 22px; letter-spacing: -0.015em; cursor: pointer; }
+.pl7-day-name::after { content: ''; position: absolute; inset: -11px -4px; }
+.pl7-today { color: var(--accent-text); font-size: 13px; line-height: 18px; }
+.pl7-day-time { margin-left: auto; color: var(--ink-muted); }
+.pl7-event { margin: 0; padding-bottom: var(--space-2); border-bottom: 1px solid var(--hairline); color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+.pl7-blocks { display: flex; flex-direction: column; gap: var(--space-2); }
+
+/* A block: a box you press, its character bare at the left, a chevron at the right. */
+.pl7-block.ui-press { display: flex; align-items: center; gap: var(--space-3); min-height: 72px; padding: 10px 14px 10px 12px; border-radius: var(--r-ctl); }
+.pl7-block.ui-press[aria-pressed='true'] { border-color: var(--outline-strong); box-shadow: inset 0 0 0 1px var(--outline-strong); }
+.pl7-block .ks-subject-art { flex: none; width: 52px; height: 52px; object-fit: contain; }
+.pl7-block-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 2px; }
+.pl7-block-name { font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.pl7-block-meta { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.pl7-block-chev, .pl7-block-state { flex: none; color: var(--ink-muted); }
+.pl7-block-state .ui-tick { width: 20px; height: 20px; }
+
+/* Day view: the seven days in one row of boxes you press, the chosen one in ink. */
+.pl7-dayrail { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); overflow: hidden; }
+.pl7-dayrail button { position: relative; display: flex; min-height: 56px; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 6px 0; border: 0; border-left: 1px solid var(--hairline); background: var(--surface-paper); color: var(--ink-secondary); font: inherit; font-size: 13px; line-height: 16px; cursor: pointer; }
+.pl7-dayrail button:first-child { border-left: 0; }
+.pl7-dayrail button strong { color: var(--ink-primary); font-size: 17px; font-weight: 400; line-height: 22px; }
+.pl7-dayrail button[aria-pressed='true'] { z-index: 1; border-radius: var(--r-sm); color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--outline-strong), 0 0 0 1px var(--outline-strong); }
+.pl7-dayrail i { width: 4px; height: 4px; border-radius: 50%; }
+.pl7-dayrail i[data-rest] { background: var(--ink-muted); }
+.pl7-daytitle { display: flex; flex-direction: column; gap: var(--space-1); }
+.pl7-daytitle > * { margin: 0; }
+.pl7-daytitle .t-label { color: var(--ink-muted); }
+.pl7-restday { display: flex; flex-direction: column; align-items: center; gap: var(--space-4); padding: var(--space-4) 0; }
+.pl7-empty { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); padding: var(--space-4) 0; }
+.pl7-empty > * { margin: 0; }
+
+/* The next small step. */
+.pl7-step { min-width: 0; }
+.pl7-step-inner { display: flex; flex-direction: column; gap: 14px; }
+.pl7-step-label { margin: 0; color: var(--ink-muted); text-align: center; }
+.pl7-step-head { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 2px 0 4px; text-align: center; }
+.pl7-step-head > * { margin: 0; }
+.pl7-step-head .ks-subject-art { width: 120px; height: 120px; object-fit: contain; }
+.pl7-todo-head { display: flex; align-items: center; justify-content: space-between; }
+.pl7-todo-head .t-label { color: var(--ink-muted); }
+.pl7-todos { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--hairline); }
+.pl7-todos li { display: flex; align-items: flex-start; gap: var(--space-3); padding: 11px 0; border-bottom: 1px solid var(--hairline); font-size: 15px; line-height: 21px; }
+.pl7-todo-mark { flex: none; width: 20px; height: 20px; margin-top: 1px; border: 1.5px dashed var(--outline-soft); border-radius: 50%; }
+.pl7-todos li[data-done] .pl7-todo-mark { border-style: solid; border-color: var(--success-hex); background: var(--success-hex); }
+.pl7-prompt { max-width: 34ch; margin: 2px 0 0; }
+.pl7-state { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); padding: 6px 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+.pl7-ready { display: inline-flex; flex: 1; align-items: center; gap: 6px; color: var(--ink-secondary); font-size: 14px; line-height: 20px; }
+.pl7-ready .ui-icon { color: var(--ink-muted); }
+.pl7-ready .ui-tick { width: 16px; height: 16px; }
+.pl7-cue { border-bottom: 1px solid var(--hairline); }
+.pl7-cue-head { display: flex; min-height: 48px; align-items: center; justify-content: space-between; color: var(--ink-primary); font-size: 15px; line-height: 21px; cursor: pointer; list-style: none; }
+.pl7-cue-head::-webkit-details-marker { display: none; }
+.pl7-cue-head .ui-icon { color: var(--ink-muted); transition: transform var(--t-ui) var(--ease-out); }
+.pl7-cue[open] .pl7-cue-head .ui-icon { transform: rotate(180deg); }
+.pl7-cue-triggers { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: var(--space-1) 0 var(--space-3); }
+.pl7-cue-triggers .ui-choice--compact { flex: 1 1 auto; }
+.pl7-cue .ui-field { margin-bottom: var(--space-3); }
+.pl7-cue-why { margin: var(--space-3) 0; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.pl7-study-label { display: inline-flex; align-items: center; gap: var(--space-3); }
+.pl7-keys { opacity: 0.62; font-size: 12px; }
+.pl7-rest { margin: 0; padding: 0; }
+
+/* The balance of the week: each subject's planned time, drawn. */
+.pl7-workload { display: flex; flex-direction: column; gap: var(--space-3); padding-top: var(--space-6); border-top: 1px solid var(--hairline); scroll-margin-top: 96px; }
+.pl7-ledger-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); }
+.pl7-ledger-head > * { margin: 0; }
+.pl7-ledger { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; }
+.pl7-ledger-row { display: grid; grid-template-columns: 40px minmax(96px, 0.8fr) minmax(0, 2fr) 64px; align-items: center; gap: var(--space-3); min-height: 56px; border-bottom: 1px solid var(--hairline); }
+.pl7-ledger-row .ks-subject-art { width: 40px; height: 40px; object-fit: contain; }
+.pl7-ledger-name { font-size: 15px; line-height: 21px; }
+.pl7-ledger-track { position: relative; height: 4px; border-radius: 2px; background: var(--hairline); }
+.pl7-ledger-track i { position: absolute; inset: 0 auto 0 0; border-radius: inherit; background: var(--ink-primary); }
+.pl7-ledger-time { color: var(--ink-secondary); text-align: right; }
+.pl7-explain-toggle { align-self: flex-start; }
+.pl7-chev[data-open] { transform: rotate(180deg); }
+.pl7-explanation { display: flex; flex-direction: column; gap: var(--space-3); color: var(--ink-secondary); font-size: 15px; line-height: 23px; }
+.pl7-explanation p { margin: 0; }
+
+/* Plan settings, in the shared sheet. */
+.pl7-settings .ui-sheet-body { gap: var(--space-4); }
+.pl7-rest legend { margin-bottom: var(--space-2); color: var(--ink-muted); }
+.pl7-rest-days { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); }
+.pl7-duration { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); }
+.pl7-select.ui-field-input { width: auto; min-width: 150px; height: 44px; padding: 0 var(--space-3); border: 1px solid var(--outline-soft); border-radius: var(--r-sm); background: var(--surface-paper); color: var(--ink-primary); font-size: 16px; }
+
+/* A phone: the step in its sheet. */
+.pl7-step-sheet .ui-sheet-title { color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+
+/* ── From 768px: the week beside its next small step (board r5-planner) ── */
+@media (min-width: 768px) {
+  .pl7-main { padding: var(--space-2) 0 var(--space-8); }
+  .pl7-step-inner { gap: var(--space-3); }
+  .pl7-cols { grid-template-columns: minmax(0, 1fr) 300px; align-items: start; gap: 48px; }
+  .pl7-week-col { gap: 20px; }
+  .pl7-intro { gap: 6px; margin-bottom: 0; }
+  .pl7-intro .t-title { font-size: 40px; line-height: 44px; letter-spacing: -0.045em; }
+  .pl7-intro .t-sub { font-size: 18px; line-height: 27px; }
+  .pl7-weeknav { flex: none; width: 330px; }
+  .pl7-jump { display: inline-flex; min-height: 44px; align-items: center; }
+  .pl7-agenda { margin-top: 0; }
+  .pl7-step-head .ks-subject-art { width: 112px; height: 112px; }
+  .pl7-state .pl7-ready { flex-basis: 100%; min-height: 28px; }
+  .pl7-state .ui-btn { flex: 1; }
+}
+@media (min-width: 1024px) {
+  .pl7-days { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-6) var(--space-4); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pl7-cue-head .ui-icon { transition: none; }
+}
+
+/* "See the allocation in detail": the shared sheet, wide on a laptop; today's content in the
+   system's type: no serif, no orange, no black card; each subject with its character. */
+.pl7-explain-label { margin: 0 0 var(--space-2); color: var(--ink-muted); }
+.pl7-explain-sheet .lp-plan-explanation { font-family: var(--font-ui); }
+.pl7-explain-sheet .lp-plan-explanation .lp-eyebrow { color: var(--ink-muted); font-family: var(--font-ui); font-size: 11px; font-weight: 400; letter-spacing: 0.1em; }
+.pl7-explain-sheet .lp-plan-detail h3,
+.pl7-explain-sheet .lp-plan-week h3 { font-family: var(--font-ui); font-weight: 400; letter-spacing: -0.03em; }
+.pl7-explain-sheet .lp-plan-subjects button { display: flex; align-items: center; gap: var(--space-2); font-weight: 400; }
+.pl7-explain-sheet .lp-plan-subjects button[aria-pressed='true'] { font-weight: 400; box-shadow: inset 0 0 0 1px var(--outline-strong); border-radius: var(--r-sm); }
+.pl7-explain-sheet .lp-plan-subjects button:hover { color: var(--ink-primary); }
+.pl7-explain-sheet .ks-subject-art { flex: none; width: 32px; height: 32px; object-fit: contain; }
+.pl7-explain-sheet .lp-plan-block-count strong,
+.pl7-explain-sheet .lp-plan-total strong { color: var(--ink-primary); font-family: var(--font-ui); font-weight: 400; }
+.pl7-explain-sheet .lp-plan-factors dt { font-weight: 400; }
+.pl7-explain-sheet .lp-plan-factors dt span { color: var(--ink-muted); font-family: 'Departure Mono', ui-monospace, monospace; }
+.pl7-explain-sheet .lp-plan-factors dd { font-weight: 400; }
+.pl7-explain-sheet .lp-plan-score strong { color: var(--ink-primary); }
+.pl7-explain-sheet .lp-plan-target { padding: var(--space-4) 0 0; border-top: 1px solid var(--hairline); border-radius: 0; background: none; color: var(--ink-primary); }
+.pl7-explain-sheet .lp-plan-target .lp-eyebrow { color: var(--ink-muted); }
+.pl7-explain-sheet .lp-plan-total span,
+.pl7-explain-sheet .lp-plan-target > p:not(.lp-eyebrow):not(.lp-plan-total),
+.pl7-explain-sheet .lp-plan-target li small { color: var(--ink-secondary); }
+.pl7-explain-sheet .lp-plan-target li { border-top-color: var(--hairline); }
+.pl7-explain-sheet .lp-plan-target li b { font-weight: 400; }
+.pl7-explain-sheet .lp-plan-outside { border-top-color: var(--hairline); }
+.pl7-explain-sheet .lp-plan-outside strong { color: var(--ink-primary); font-weight: 400; }
+.pl7-explain-sheet .lp-plan-mobile-picker label { font-weight: 400; }
+.pl7-explain-sheet .lp-plan-mobile-picker select { border: 1px solid var(--outline-soft); border-radius: var(--r-sm); background: var(--surface-paper); color: var(--ink-primary); }
+@media (min-width: 768px) {
+  .pl7-explain-sheet.ui-sheet { width: min(100%, 960px); }
+}

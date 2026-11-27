@@ -76,9 +76,6 @@
   "components/KnowledgeTree.tsx": {
    "h-screen": 1
   },
-  "components/LaunchpadGuidance.tsx": {
-   "inset-0": 1
-  },
   "components/LearningPathsView.tsx": {
    "h-screen": 1
   },

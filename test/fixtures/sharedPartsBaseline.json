@@ -538,7 +538,7 @@
    "dropdown": 1
   },
   "components/launchpad/PlannerWorkbench.tsx": {
-   "button": 4,
+   "button": 2,
    "dropdown": 1
   },
   "components/launchpad/SubjectPicker.tsx": {

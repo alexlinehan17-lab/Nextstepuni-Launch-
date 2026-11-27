@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { ArrowRight, ChevronDown } from 'lucide-react';
-import ModalFrame from '../ui/ModalFrame';
+import { Sheet } from '../ui/Sheet';
+import { StudySubjectArtwork } from '../study/StudySubjectPicker';
 import type { SubjectPriority, SessionAllocation } from '../timetableAlgorithm';
-import { getSubjectFill } from '../../utils/subjectColors';
 import './launchpad.css';
+import './planner.css';
 
 interface Props {
   open: boolean;
@@ -26,14 +27,15 @@ export default function PlannerExplanation({ open, onClose, priorities, allocati
   const sessionsFor = (name: string) => allocations.find(a => a.subjectName === name)?.sessions ?? 0;
   const gain = active ? active.bestSixPointsGain ?? active.pointsGain : 0;
   return (
-    <ModalFrame open={open} onClose={onClose} width="xl" eyebrow="The Planner · Behind your plan" title="A little more time where it counts." labelledBy="planner-explanation-title">
+    <Sheet open={open} onClose={onClose} title="A little more time where it counts." titleAlign="start" className="pl7-explain-sheet">
       <div className="lp-plan-explanation">
+        <p className="t-label pl7-explain-label">The Planner · Behind your plan</p>
         <p className="lp-plan-intro">Your targets set the direction. Due reviews and recent subject contact help decide where to spend the time. The plan fits within its time limit.</p>
         {active && <div className="lp-plan-inspector">
           <nav className="lp-plan-subjects" aria-label="Inspect a subject’s allocation">
             <p className="lp-eyebrow">Your subjects <span>Blocks</span></p>
             {priorities.map(p => <button key={p.subjectName} type="button" aria-label={`Inspect ${p.subjectName} allocation`} aria-pressed={p.subjectName === active.subjectName} onClick={() => setSelected(p.subjectName)}>
-              <i aria-hidden="true" style={{ background: getSubjectFill(p.subjectName) }} />
+              <StudySubjectArtwork subject={p.subjectName} size={32} />
               <span>{p.subjectName}</span><b>{sessionsFor(p.subjectName)}</b>
             </button>)}
           </nav>
@@ -43,7 +45,7 @@ export default function PlannerExplanation({ open, onClose, priorities, allocati
           </div>
           <section className="lp-plan-detail" aria-label={`${active.subjectName} allocation details`}>
             <div className="lp-plan-detail-heading">
-              <div><p className="lp-eyebrow">A closer look</p><h3><i aria-hidden="true" style={{ background: getSubjectFill(active.subjectName) }} />{active.subjectName}</h3><p className="lp-plan-grades">{active.currentGrade} <ArrowRight size={15} aria-label="to" /> {active.targetGrade}<span>Your target</span></p></div>
+              <div><p className="lp-eyebrow">A closer look</p><h3>{active.subjectName}</h3><p className="lp-plan-grades">{active.currentGrade} <ArrowRight size={15} aria-label="to" /> {active.targetGrade}<span>Your target</span></p></div>
               <p className="lp-plan-block-count"><strong>{sessionsFor(active.subjectName)}</strong><span>{sessionsFor(active.subjectName) === 1 ? 'block' : 'blocks'} this week</span></p>
             </div>
             <dl className="lp-plan-factors">
@@ -59,12 +61,12 @@ export default function PlannerExplanation({ open, onClose, priorities, allocati
           <section className="lp-plan-target" aria-label="Projected CAO points">
             <p className="lp-eyebrow">If you reach every target</p><p className="lp-plan-total"><strong>{targetTotal}</strong><span>/ 625 points</span></p>
             <p>Your highest six subjects make up this total.</p>
-            <ol>{bestSix.map(p => <li key={p.subjectName}><i aria-hidden="true" style={{ background: getSubjectFill(p.subjectName) }} /><span>{p.subjectName}</span><small>{p.targetGrade}</small><b>{p.targetPoints}</b></li>)}</ol>
+            <ol>{bestSix.map(p => <li key={p.subjectName}><StudySubjectArtwork subject={p.subjectName} size={32} /><span>{p.subjectName}</span><small>{p.targetGrade}</small><b>{p.targetPoints}</b></li>)}</ol>
             {outside.length > 0 && <p className="lp-plan-outside"><strong>Outside this projected six:</strong> {outside.map(p => `${p.subjectName} (${p.targetGrade}, ${p.targetPoints} pts)`).join('; ')}. These subjects still receive study time.</p>}
           </section>
           <section className="lp-plan-week"><p className="lp-eyebrow">Room for the whole week</p><h3>{totalSessions} focused blocks.<br />{Math.floor(totalMinutes / 60)}h{totalMinutes % 60 ? ` ${totalMinutes % 60}m` : ''} of study.</h3><p>{workloadExplanation}</p><p>Blocks are spread across your chosen days, with repeat sessions spaced apart. Subject coverage is balanced within the time limit.</p><p className="lp-plan-footnote">Change your grades or available days and the plan adjusts with you. Completed sessions and confidence alone do not prove recall.</p></section>
         </div>
       </div>
-    </ModalFrame>
+    </Sheet>
   );
 }

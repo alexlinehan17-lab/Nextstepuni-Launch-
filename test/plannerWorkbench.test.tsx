@@ -15,7 +15,7 @@ function props() { return { uid:'student-a', timetable, subjects:['Geography','I
 test('uses each scheduled duration for the full-width subject ledger', () => {
   expect(workloadLedger(timetable, ['Geography','Irish'])).toEqual([{ subject:'Geography', minutes:90 }, { subject:'Irish', minutes:45 }]);
   render(<PlannerWorkbench {...props()} />);
-  const ledger = screen.getByText('The balance of your week').closest('.pp-workload')!;
+  const ledger = screen.getByText('The balance of your week').closest('.pl7-workload')!;
   expect(within(ledger as HTMLElement).getByText('1h 30m')).toBeInTheDocument();
   expect(within(ledger as HTMLElement).getByText('45m')).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name:'Behind your plan' }));
@@ -35,6 +35,8 @@ test('the selected block keeps its real date and stable block id when started or
 });
 test('editing to-dos blocks the start shortcut and keeps account/date/block-scoped work for Study Room', async () => {
   const handlers = props(); const user = userEvent.setup(); render(<PlannerWorkbench {...handlers} />);
+  // Area 7a: on a phone a tapped block's next small step rises in a sheet; its to-dos are edited there.
+  await user.click(screen.getByRole('button', { name:/Geography Practice/ }));
   await user.click(screen.getByRole('button', { name:'Edit to-dos' }));
   const dialog = screen.getByRole('dialog', { name:'Edit your to-dos' });
   const input = within(dialog).getByRole('textbox', { name:'To-do 1' });
@@ -55,7 +57,8 @@ test('rest days and duration save atomically without restricting the student to 
   await user.click(within(dialog).getByRole('checkbox', { name:'Thursday' }));
   expect(within(dialog).getByRole('checkbox', { name:'Thursday' })).toHaveAttribute('aria-checked', 'true');
   await user.selectOptions(within(dialog).getByRole('combobox'), '30');
-  await user.click(within(dialog).getByRole('button', { name:'Save plan settings' }));
+  // Area 7a: the shared sheet's head carries Cancel and Save (the words fit beside the title).
+  await user.click(within(dialog).getByRole('button', { name:'Save' }));
   expect(handlers.onPlanSettingsChange).toHaveBeenCalledWith(['Sunday','Saturday','Friday','Thursday'],30);
 });
 
@@ -65,6 +68,6 @@ test('week view omits empty rest days but retains school events and day navigati
   expect(within(schedule).queryByText('Room to recharge.')).not.toBeInTheDocument();
   expect(within(schedule).getByText('School assembly')).toBeInTheDocument();
   expect(within(schedule).queryByRole('button', { name:/Thursday/ })).not.toBeInTheDocument();
-  await userEvent.click(screen.getByRole('tab', { name:/^Day$/ }));
+  await userEvent.click(screen.getByRole('radio', { name:/^Day$/ }));
   expect(screen.getByRole('button', { name:/Thu/ })).toBeInTheDocument();
 });
