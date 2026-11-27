@@ -1,41 +1,43 @@
-/* History essay marking (HistoryEssayPanel.tsx). The rows, chips and
-   directions are claim-rows.css; this file only lays them out. Every colour
-   is a Mark Bank token, so both themes follow the deck. */
-.mb-hist-essay { color: var(--mb-ink); font-size: 13px; line-height: 1.5; display: grid; gap: 12px; }
-.mb-hist-eyebrow { margin: 0; font: 700 10px/1.4 'DM Sans', system-ui, sans-serif; letter-spacing: .09em; text-transform: uppercase; color: var(--mb-label); }
-.mb-hist-essay h3 { margin: -6px 0 0; font: 600 18px/1.3 'Source Serif 4', Georgia, serif; color: var(--mb-ink); }
+/* History essay marking (HistoryEssayPanel.tsx). The rows, counts and directions are
+   claim-rows.css; this file only lays them out. The Cumulative Mark and the Overall Evaluation sit
+   on the page under their names, apart by space and one hairline; each paragraph is a ruled line
+   with its two small buttons; only the rows and the mark buttons are boxes. */
+.mb-hist-essay { color: var(--ink-primary); font: 400 15px/21px var(--font-ui); display: grid; gap: var(--space-3); }
+.mb-hist-eyebrow { margin: 0; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: .1em; text-transform: uppercase; }
+.mb-hist-essay h3 { margin: -6px 0 0; color: var(--ink-primary); font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; }
 
-.mb-hist-nomodel { padding: 11px 12px; border-radius: 11px; background: var(--mb-raised); border: 1px solid var(--mb-border); display: grid; gap: 5px; }
-.mb-hist-nomodel strong { font: 650 12.5px/1.45 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); }
-.mb-hist-nomodel p { margin: 0; font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-hist-nomodel { display: grid; gap: 4px; padding: 12px 0 0; border-top: 1px solid var(--hairline); }
+.mb-hist-nomodel strong { color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-hist-nomodel p { margin: 0; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 
-.mb-hist-element { display: grid; gap: 7px; }
+.mb-hist-element { display: grid; gap: var(--space-2); }
 /* A note the scheme sets out line by line (Q4's "There are two elements in this
    question:" and its elements) keeps its lines. Notes printed as one line
    carry no line break, so they render exactly as before. */
 .mb-hist-essay .mb-claim-directions li { white-space: pre-line; }
 
-.mb-hist-part { display: grid; gap: 8px; padding: 11px 11px 10px; border-radius: 11px; border: 1px solid var(--mb-border); }
-.mb-hist-part-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
-.mb-hist-part-head h4 { margin: 0; min-width: 0; display: grid; gap: 2px; font: 650 13.5px/1.35 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); }
-.mb-hist-part-head h4 small { font: 400 11.5px/1.45 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); overflow-wrap: anywhere; }
-.mb-hist-chip { flex: none; font-size: 11.5px; padding: 1px 7px; }
+.mb-hist-part { display: grid; gap: var(--space-2); padding: var(--space-4) 0 0; border-top: 1px solid var(--hairline); }
+.mb-hist-part-head { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-3); }
+.mb-hist-part-head h4 { margin: 0; min-width: 0; display: grid; gap: 2px; color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-hist-part-head h4 small { color: var(--ink-muted); font: 400 13px/18px var(--font-ui); overflow-wrap: anywhere; }
+.mb-hist-chip { flex: none; }
 
-.mb-hist-empty { margin: 0; font: 400 12px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
-.mb-hist-paragraphs { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
-.mb-hist-paragraph { border: 1.5px solid var(--mb-border); border-radius: 12px; background: var(--mb-paper); padding: 8px 10px; display: grid; gap: 8px; }
-.mb-hist-paragraph[data-open="true"] { border-color: var(--mb-ink); }
-.mb-hist-paragraph-head { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 4px 10px; }
-.mb-hist-paragraph-name { font: 650 12.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); white-space: nowrap; }
-.mb-hist-paragraph-state { font: 500 12px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink-2); min-width: 0; overflow-wrap: anywhere; }
-.mb-hist-paragraph-actions { display: flex; gap: 6px; }
+.mb-hist-empty { margin: 0; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.mb-hist-paragraphs { margin: 0; padding: 0; list-style: none; display: grid; }
+.mb-hist-paragraph { display: grid; gap: var(--space-2); padding: var(--space-3) 0; border-top: 1px solid var(--hairline); }
+.mb-hist-paragraph-head { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 4px var(--space-3); }
+.mb-hist-paragraph-name { color: var(--ink-primary); font: 400 15px/21px var(--font-ui); white-space: nowrap; }
+.mb-hist-paragraph-state { min-width: 0; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); overflow-wrap: anywhere; }
+/* Change and Remove: the shared second button, small (white, a thin line). */
+.mb-hist-paragraph-actions { display: flex; gap: var(--space-2); }
 .mb-hist-paragraph-actions button {
-  min-height: 30px; padding: 0 10px; border-radius: 8px; cursor: pointer;
-  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
-  font: 650 11.5px/1 'DM Sans', system-ui, sans-serif;
+  position: relative; min-height: 36px; padding: 0 12px; border-radius: var(--r-sm); cursor: pointer;
+  border: 1px solid var(--outline-soft); background: var(--surface-paper); color: var(--ink-primary);
+  font: 400 14px/1 var(--font-ui);
 }
-.mb-hist-paragraph-actions button:hover { border-color: var(--mb-ink); color: var(--mb-ink); }
-.mb-hist-ladder { display: grid; gap: 6px; }
+.mb-hist-paragraph-actions button::after { content: ''; position: absolute; inset: -4px; }
+.mb-hist-paragraph-actions button:active { transform: scale(.98); }
+.mb-hist-ladder { display: grid; }
 /* An OE band offers up to ten marks: its descriptor takes the full width and
    the marks sit under it, rather than squeezing the scheme's words into a
    column beside a wrapped run of buttons. */
@@ -56,24 +58,23 @@
   font: 700 15px/1 'Roboto Mono', ui-monospace, monospace;
 }
 .mb-hist-counter button:disabled { cursor: default; opacity: .45; }
-.mb-hist-counter output { min-width: 22px; text-align: center; font: 700 15px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+.mb-hist-counter output { min-width: 22px; text-align: center; font: 400 15px/1 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
 
-.mb-hist-reached { margin: 0; padding: 8px 10px; border-radius: 9px; background: var(--mb-raised); font: 500 12px/1.45 'DM Sans', system-ui, sans-serif; color: var(--mb-ink-2); }
+.mb-hist-reached { margin: 0; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 
-/* The square ink button the session's "Open Ways In" uses: a visible face
-   and edge before any hover. */
+/* Add a paragraph: the shared second button (white, a thin line, no shadow). */
 .mb-hist-add {
-  justify-self: start; min-height: 42px; padding: 0 16px; cursor: pointer;
-  border: 1.5px solid var(--mb-ink); border-radius: 10px; background: var(--mb-paper);
-  box-shadow: 3px 3px 0 var(--mb-ink); color: var(--mb-ink);
-  font: 650 13px/1 'DM Sans', system-ui, sans-serif;
+  justify-self: start; min-height: 44px; padding: 0 16px; cursor: pointer;
+  border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); background: var(--surface-paper);
+  color: var(--ink-primary); font: 400 15px/1 var(--font-ui);
 }
-.mb-hist-add:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--mb-ink); }
+.mb-hist-add:active { transform: scale(.98); }
 
-.mb-hist-total { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 12px; border-radius: 11px; background: var(--mb-raised); }
-.mb-hist-total span { font: 600 12px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink-2); }
-.mb-hist-total strong { font: 700 17px/1 'Roboto Mono', ui-monospace, monospace; color: var(--mb-ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.mb-hist-note { margin: 0; font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+/* The placement: one ruled line, as Politics has it. */
+.mb-hist-total { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-3); padding-top: 14px; border-top: 2px solid var(--ink-primary); }
+.mb-hist-total span { color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-hist-total strong { color: var(--ink-primary); font: 400 20px/24px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.mb-hist-note { margin: 0; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
 
 /* A paragraph the CM maximum cuts says so in full, on a line of its own. */
 .mb-hist-paragraph[data-capped="true"] .mb-hist-paragraph-head { grid-template-columns: minmax(0, 1fr) auto; }

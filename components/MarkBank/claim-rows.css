@@ -68,13 +68,60 @@ button.mb-claim-row:disabled:active { transform: none; }
 .mb-claim-marks button[aria-pressed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
 .mb-claim-marks button:disabled { cursor: default; opacity: .45; }
 
-.mb-claim-part { margin: 6px 0 0; font: 600 13px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); display: flex; gap: 8px; align-items: baseline; min-width: 0; }
-.mb-claim-part-label { flex: none; font: 700 11px/1.4 'Roboto Mono', ui-monospace, monospace; color: var(--mb-label); }
+/* ---- The scheme's groups: on the page, never a box round a group of rows ---------------------
+   A group's name and its count sit on the page above its rows; groups are apart by space and one
+   hairline; only the rows and the mark buttons are boxes. Counts and tags are plain readout or
+   small-capitals text. Notes and directions sit under a small label and a hairline. */
+.mb-claim-part { margin: 6px 0 0; color: var(--ink-primary); font: 400 15px/21px var(--font-ui); display: flex; gap: var(--space-2); align-items: baseline; min-width: 0; }
+.mb-claim-part-label { flex: none; color: var(--ink-muted); font: 400 13px/16px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; }
 .mb-claim-part-prompt { min-width: 0; overflow-wrap: anywhere; }
 
-.mb-claim-directions { padding: 11px 12px; border-radius: 11px; background: var(--mb-raised); border: 1px solid var(--mb-border); }
-.mb-claim-directions strong { display: block; font: 700 10px/1.4 'DM Sans', system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--mb-ink-2); }
-.mb-claim-directions ul { margin: 6px 0 0; padding-left: 17px; font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); display: grid; gap: 3px; }
+.mb-scheme-label { display: block; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: .1em; text-transform: uppercase; }
+legend.mb-scheme-label { padding: 0; margin-bottom: 6px; }
+.mb-scheme-title { margin: 6px 0 4px; color: var(--ink-primary); font: 400 17px/22px var(--font-ui); letter-spacing: -0.015em; }
+.mb-scheme-sub { margin: 0 0 var(--space-3); color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-scheme-groups { display: grid; }
+.mb-scheme-group { display: grid; gap: var(--space-2); min-width: 0; padding: var(--space-4) 0; border-top: 1px solid var(--hairline); }
+.mb-scheme-group-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); min-width: 0; }
+.mb-scheme-group-name, .mb-criterion-name { min-width: 0; color: var(--ink-primary); font: 400 15px/21px var(--font-ui); overflow-wrap: anywhere; }
+.mb-scheme-group .mb-scheme-sub { margin: 0; }
+.mb-scheme-notes { margin: 0; padding-left: 18px; display: grid; gap: 3px; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-scheme-notes--lines { padding-left: 0; }
+.mb-scheme-notes--lines > p { margin: 0; }
+.mb-scheme-sub-groups { display: grid; }
+.mb-scheme-sub-group { display: grid; gap: var(--space-2); padding: var(--space-3) 0; border-top: 1px solid var(--hairline); }
+.mb-scheme-bands { display: grid; gap: var(--space-2); }
+.mb-scheme-band { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: var(--space-3); align-items: center; }
+.mb-scheme-band > strong { color: var(--ink-secondary); font: 400 13px/16px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; }
+.mb-scheme-unprinted { margin: 0 0 var(--space-4); }
+.mb-scheme-unprinted > p:first-child { margin: 0 0 4px; color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-criterion { padding: var(--space-4) 0; border-bottom: 1px solid var(--hairline); }
+.mb-criterion > [role="group"] { margin-top: var(--space-2); }
+.mb-task-head { margin: var(--space-6) 0 var(--space-2); padding-top: var(--space-3); border-top: 1px solid var(--hairline); color: var(--ink-primary); font: 400 17px/22px var(--font-ui); letter-spacing: -0.015em; }
+
+/* The placement: one ruled line, the words and the figure, never a grey bar. */
+.mb-scheme-total { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-3); margin-top: var(--space-4); padding-top: 14px; border-top: 2px solid var(--ink-primary); }
+.mb-scheme-total > span { color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-scheme-total > strong { color: var(--ink-primary); font: 400 20px/24px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.mb-claim-directions, .mb-scheme-aside { margin-top: var(--space-2); padding: 12px 0 0; border-top: 1px solid var(--hairline); }
+.mb-claim-directions strong, .mb-scheme-aside > strong { display: block; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: .1em; text-transform: uppercase; }
+.mb-claim-directions ul, .mb-scheme-aside ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 3px; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-scheme-aside p { margin: 6px 0 0; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-label-key-list { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 6px; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-label-key-list strong { color: var(--ink-primary); font: 400 13px/18px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; }
+.mb-scheme-cite { margin: 14px 0 0; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+
+/* "Any N of these": the menu's label and its count on the page, then its answers as claim rows. */
+.mb-anyn { margin-bottom: var(--space-2); }
+.mb-anyn-label { margin: 0 0 4px; color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-anyn-head { margin-bottom: var(--space-2); }
+.mb-anyn-heading { color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-anyn-options { display: flex; flex-direction: column; gap: var(--space-2); }
+.mb-anyn-note { margin: var(--space-2) 0 0; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+
+/* Match the route you answered: a label, a line, and the tray of routes; no box round it. */
+.mb-route-chooser { min-width: 0; margin: 18px 0 0; padding: 0; border: 0; }
 
 @media (max-width: 480px) {
   .mb-claim-row--stepped { grid-template-columns: 1fr; }

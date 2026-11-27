@@ -1,12 +1,15 @@
-/* Irish exact answers as rows: sub-questions in their own frames, each with
-   the scheme's tariff; rows, chips and directions come from claim-rows.css. */
-.mb-irish-alloc { display: grid; gap: 12px; }
-.mb-irish-part { display: grid; gap: 7px; padding: 10px 10px 8px; border-radius: 11px; border: 1px solid var(--mb-border); }
-.mb-irish-part-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+/* Irish exact answers as rows: each sub-question on the page under its name and the scheme's
+   tariff, apart by space and one hairline; rows, counts and directions come from claim-rows.css.
+   Only the rows are boxes. */
+.mb-irish-alloc { display: grid; }
+.mb-irish-part { display: grid; gap: var(--space-2); padding: var(--space-4) 0; border-top: 1px solid var(--hairline); }
+.mb-irish-alloc > .mb-irish-part:first-child { padding-top: 0; border-top: 0; }
+.mb-irish-part-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); }
 .mb-irish-part-head .mb-claim-part { margin: 0; flex: 1 1 auto; min-width: 0; }
-.mb-irish-part-chip { flex: none; white-space: normal; text-align: right; max-width: 45%; line-height: 1.5; padding: 2px 6px; }
-.mb-irish-part-total { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding-top: 2px; font: 600 10.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
-.mb-irish-part-total strong { font: 750 13px/1 'Roboto Mono', ui-monospace, monospace; color: var(--mb-ink); font-variant-numeric: tabular-nums; }
-/* One point's printed alternatives (a slash-joined scheme row cut into its items): any one earns the point. */
-.mb-irish-group { display: grid; gap: 6px; padding: 6px 7px 7px; border-radius: 9px; border: 1px solid var(--mb-border); }
-.mb-irish-group-head { justify-self: end; font: 650 10px/1.4 'Roboto Mono', ui-monospace, monospace; color: var(--mb-muted); }
+.mb-irish-part-chip { flex: none; white-space: normal; text-align: right; max-width: 45%; }
+.mb-irish-part-total { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-3); padding-top: 2px; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.mb-irish-part-total strong { color: var(--ink-primary); font: 400 15px/18px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+/* One point's printed alternatives (a slash-joined scheme row cut into its items): any one earns
+   the point. Its tag on the page above them, no box round them. */
+.mb-irish-group { display: grid; gap: var(--space-2); }
+.mb-irish-group-head { color: var(--ink-muted); font: 400 13px/16px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; }

@@ -1,36 +1,38 @@
-.mb-french-rubric { color: var(--mb-ink); font-size: 13px; line-height: 1.5; }
-.mb-french-rubric h3 { font: 600 21px/1.25 Georgia, serif; margin: 5px 0 14px; }
-.mb-french-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
-.mb-french-requirements { padding-left: 20px; }
-.mb-french-caption { margin: 0 0 8px; font: 400 12px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-french-rubric { color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-french-rubric h3 { margin: 6px 0 14px; color: var(--ink-primary); font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; }
+.mb-french-eyebrow { color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: .1em; text-transform: uppercase; }
+.mb-french-requirements { padding-left: 20px; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-french-caption { margin: 0 0 8px; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 
 /* Claimable rows (claim-rows.css) grouped by the scheme's sub-parts. */
-.mb-french-answers { display: grid; gap: 12px; margin: 0 0 16px; }
-.mb-french-group { display: grid; gap: 7px; }
+.mb-french-answers { display: grid; gap: var(--space-4); margin: 0 0 16px; }
+.mb-french-group { display: grid; gap: var(--space-2); }
+.mb-french-group + .mb-french-group { padding-top: var(--space-4); border-top: 1px solid var(--hairline); }
 
 /* The lifted lines as a list when they could not be cut into rows. */
 .mb-french-answer-guide { margin: 0 0 16px; }
-.mb-french-guide { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
-.mb-french-guide-answer { display: grid; grid-template-columns: 16px minmax(0, 1fr); gap: 6px; padding: 8px 10px; border: 1px solid var(--mb-border); border-radius: 9px; background: var(--mb-paper); overflow-wrap: anywhere; }
-.mb-french-guide-answer > span:first-child { color: var(--mb-label); font-weight: 700; }
-.mb-french-guide-note { color: var(--mb-muted); font-size: 12px; padding: 2px 0; overflow-wrap: anywhere; }
+.mb-french-guide { margin: 0; padding: 0; list-style: none; display: grid; }
+.mb-french-guide-answer { display: grid; grid-template-columns: 16px minmax(0, 1fr); gap: 6px; padding: 8px 0; border-top: 1px solid var(--hairline); overflow-wrap: anywhere; }
+.mb-french-guide-answer > span:first-child { color: var(--ink-muted); }
+.mb-french-guide-note { padding: 4px 0; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); overflow-wrap: anywhere; }
 
-.mb-french-criterion { border-top: 1px solid var(--mb-border); padding: 15px 0; }
+.mb-french-criterion { border-top: 1px solid var(--hairline); padding: 15px 0; }
 .mb-french-criterion-heading, .mb-french-total { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; }
-.mb-french-criterion h4 { font-size: 15px; margin: 0; }
+.mb-french-criterion h4 { margin: 0; color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-french-criterion p { color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 .mb-french-criterion p, .mb-french-band ul { margin: 8px 0; }
 .mb-french-band { margin-top: 12px; }
-.mb-french-band ul { padding-left: 19px; color: var(--mb-muted); }
-.mb-french-score { display: grid; gap: 8px; margin-top: 14px; font-weight: 650; }
-.mb-french-slider > div:first-child { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; font: 600 10.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
-.mb-french-slider > div:first-child strong { font: 750 18px/1 'Roboto Mono', ui-monospace, monospace; color: var(--mb-ink); font-variant-numeric: tabular-nums; }
-.mb-french-slider input { width: 100%; margin: 9px 0 5px; accent-color: var(--mb-ink); }
-.mb-french-slider-ends { display: flex; justify-content: space-between; color: var(--mb-label); font: 650 9.5px/1 'Roboto Mono', ui-monospace, monospace; }
+.mb-french-band ul { padding-left: 19px; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-french-score { display: grid; gap: 8px; margin-top: 14px; color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-french-slider > div:first-child { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.mb-french-slider > div:first-child strong { color: var(--ink-primary); font: 400 20px/24px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+.mb-french-slider input { width: 100%; margin: 9px 0 5px; accent-color: var(--ink-primary); }
+.mb-french-slider-ends { display: flex; justify-content: space-between; color: var(--ink-muted); font: 400 11px/14px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; }
 /* A line marked by counting items at a printed rate (Music Composing Section B): how many are right, and the
  * marks that count earns. Steppers either side of the slider for exact counts on a phone. */
-.mb-french-count-readout { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; font: 600 10.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
-.mb-french-count-readout strong { font: 750 18px/1 'Roboto Mono', ui-monospace, monospace; color: var(--mb-ink); font-variant-numeric: tabular-nums; }
-.mb-french-count-readout span:last-child { margin-left: auto; font: 650 12px/1.4 'Roboto Mono', ui-monospace, monospace; color: var(--mb-ink); font-variant-numeric: tabular-nums; }
+.mb-french-count-readout { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.mb-french-count-readout strong { color: var(--ink-primary); font: 400 20px/24px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+.mb-french-count-readout span:last-child { margin-left: auto; color: var(--ink-primary); font: 400 13px/16px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
 .mb-french-count-controls { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: 10px; margin: 9px 0 5px; }
 .mb-french-count-controls input { width: 100%; margin: 0; accent-color: var(--mb-ink); }
 .mb-french-count-controls button { width: 44px; height: 44px; border: 2px solid var(--mb-ink); border-radius: 8px; background: var(--mb-paper); color: var(--mb-ink); font: 700 20px/1 'DM Sans', system-ui, sans-serif; cursor: pointer; }
@@ -43,26 +45,30 @@
 
 /* The section's general rules, folded under the answers. */
 .mb-french-rules { margin: 0 0 14px; }
-.mb-french-rules summary { min-height: 40px; padding: 8px 12px; border: 1.5px solid var(--mb-border); border-radius: 9px; cursor: pointer; font-weight: 650; color: var(--mb-ink-2); }
-.mb-french-rules[open] summary { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
-.mb-french-rules ul { margin: 0; padding: 10px 12px 10px 30px; border: 1.5px solid var(--mb-border); border-top: 0; border-radius: 0 0 9px 9px; color: var(--mb-muted); font-size: 12px; display: grid; gap: 4px; overflow-wrap: anywhere; }
+/* A disclosure you press: its words and a chevron on a hairline; the rules open on the page under it. */
+.mb-french-rules { border-top: 1px solid var(--hairline); }
+.mb-french-rules summary { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); min-height: 44px; padding: 10px 0; cursor: pointer; list-style: none; color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-french-rules summary::-webkit-details-marker { display: none; }
+.mb-french-rules summary::after { content: ''; flex: none; width: 8px; height: 8px; margin-right: 4px; border-right: 1.5px solid var(--ink-muted); border-bottom: 1.5px solid var(--ink-muted); transform: rotate(45deg) translateY(-2px); transition: transform var(--t-ui) var(--ease-out); }
+.mb-french-rules[open] summary::after { transform: rotate(-135deg) translateY(-2px); }
+.mb-french-rules ul { margin: 0; padding: 0 0 10px 18px; display: grid; gap: 4px; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); overflow-wrap: anywhere; }
 
-.mb-french-total { border-top: 2px solid var(--mb-ink); padding-top: 15px; }
-.mb-french-total strong { font-size: 19px; font-variant-numeric: tabular-nums; }
-.mb-french-note { color: var(--mb-muted); margin: 16px 0 0; font-size: 12px; white-space: pre-line; }
-.mb-french-practice { border-top: 1px solid var(--mb-border); margin-top: 18px; padding-top: 14px; }
-.mb-french-practice-source { color: var(--mb-muted); font-size: 12px; margin: 4px 0 8px; }
-.mb-french-practice ul { margin: 0; padding-left: 19px; }
+.mb-french-total { border-top: 2px solid var(--ink-primary); padding-top: 14px; }
+.mb-french-total strong { font: 400 20px/24px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+.mb-french-note { margin: 16px 0 0; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); white-space: pre-line; }
+.mb-french-practice { border-top: 1px solid var(--hairline); margin-top: 18px; padding-top: 14px; }
+.mb-french-practice-source { margin: 4px 0 8px; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.mb-french-practice ul { margin: 0; padding-left: 19px; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 .mb-french-choices { border: 0; margin: 18px 0 0; padding: 0; min-width: 0; }
-.mb-french-choices legend { color: var(--mb-ink); font-size: 12px; font-weight: 650; padding: 0 0 9px; }
+.mb-french-choices legend { padding: 0 0 9px; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: .1em; text-transform: uppercase; }
 .mb-french-choice { display: flex; align-items: center; gap: 12px; min-height: 56px; margin: 0 0 8px; padding: 13px 14px; border: 1px solid var(--outline-soft); border-radius: var(--r-sm); color: var(--ink-primary); background: var(--surface-paper); cursor: pointer; font: 400 15px/21px var(--font-ui); }
 .mb-french-choice input { flex: 0 0 18px; width: 18px; height: 18px; margin: 0; accent-color: var(--ink-primary); }
 .mb-french-choice[data-selected="true"] { border-color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--ink-primary); }
 .mb-french-choice:focus-within { outline: 2px solid var(--outline-strong); outline-offset: 2px; }
 /* A printed lower scale (German "Lower E"): the rule, the toggle and which scale applies. An even
  * neutral border, no coloured side rail. */
-.mb-french-lower { border: 1px solid var(--mb-border); border-radius: 10px; padding: 12px 14px; margin: 12px 0 4px; }
+.mb-french-lower { margin: 12px 0 4px; padding: 12px 0 0; border-top: 1px solid var(--hairline); }
 .mb-french-lower-rule { margin: 0 0 10px; }
 .mb-french-lower .mb-french-attempt { margin: 0 0 10px; }
-.mb-french-lower-status { margin: 0; color: var(--mb-muted); }
-.mb-french-lower-status strong { color: var(--mb-ink); }
+.mb-french-lower-status { margin: 0; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-french-lower-status strong { color: var(--ink-primary); font-weight: 400; }

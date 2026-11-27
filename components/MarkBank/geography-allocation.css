@@ -1,9 +1,11 @@
 /* Geography allocation: the parts of the reveal that are Geography's own. The
-   rows, chips, part headings and directions come from claim-rows.css. */
-.mb-geo-alloc { display: grid; gap: 14px; }
-.mb-geo-group { display: grid; gap: 7px; }
-.mb-geo-unit { display: grid; gap: 7px; }
-.mb-geo-unit-label { font: 700 9.5px/1.5 'DM Sans', system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--mb-label); margin-top: 4px; }
+   rows, counts, part headings and directions come from claim-rows.css. Each
+   part sits on the page, apart by space and one hairline. */
+.mb-geo-alloc { display: grid; gap: var(--space-4); }
+.mb-geo-group { display: grid; gap: var(--space-2); }
+.mb-geo-group + .mb-geo-group { padding-top: var(--space-4); border-top: 1px solid var(--hairline); }
+.mb-geo-unit { display: grid; gap: var(--space-2); }
+.mb-geo-unit-label { margin-top: 4px; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: .1em; text-transform: uppercase; }
 
 /* An SRP counter is a row that is not pressed itself, like a stepped row
    (claim-rows.css): its words on the page, minus, count, plus, and the marks
@@ -23,7 +25,7 @@
 .mb-geo-counter button:disabled { opacity: .4; cursor: default; }
 .mb-geo-counter output { min-width: 26px; text-align: center; font: 750 15px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; color: var(--mb-ink); }
 
-.mb-geo-pool { margin: 0; font: 400 12px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-geo-pool { margin: 0; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 
 @media (max-width: 480px) {
   .mb-geo-srp { grid-template-columns: minmax(0, 1fr) auto; }

@@ -137,7 +137,6 @@ const INK_2 = 'var(--mb-ink-2)';
 const MUTED = 'var(--mb-muted)';
 const LABEL = 'var(--mb-label)';
 const MUTED_BORDER = 'var(--mb-border)';
-const PLATE = 'var(--mb-plate)';
 const SUCCESS_TINT = 'var(--mb-success-tint)';
 const SUCCESS_TEXT = 'var(--mb-success-text)';
 const CLAIM = 'var(--mb-claim)';
@@ -813,12 +812,12 @@ const MarkRowView: React.FC<{
     // is placed on its own marks and the row scores their sum.
     const placed = row.parts.reduce((sum, part) => sum + partMarksClaimed(part, partClaims?.[part.id] ?? 'no'), 0);
     return (
-      <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
-        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
-          <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}`, whiteSpace: keepLines ? 'pre-line' : printedLines(row.verbatim) }}>{row.verbatim}</strong>
+      <section aria-label={`Marking criterion ${index + 1}`} className="mb-criterion">
+        <div className="mb-scheme-group-head">
+          <strong className="mb-criterion-name" style={{ whiteSpace: keepLines ? 'pre-line' : printedLines(row.verbatim) }}>{row.verbatim}</strong>
           <span className="mb-claim-count" data-on={placed > 0}>{placed}m of {row.marks}m</span>
         </div>
-        {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}`, whiteSpace: printedLines(row.contextNote) }}>{row.contextNote}</p> : null}
+        {row.contextNote ? <p className="mb-scheme-sub" style={{ whiteSpace: printedLines(row.contextNote) }}>{row.contextNote}</p> : null}
         <div style={{ display: 'grid', gap: 8, marginTop: 8 }}>
           {row.parts.map(part => {
             const selected = partMarksClaimed(part, partClaims?.[part.id] ?? 'no');
@@ -850,10 +849,10 @@ const MarkRowView: React.FC<{
   if (row.permittedMarks) {
     const selected = criterionMarksClaimed(row, claim);
     return (
-      <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
-        <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}`, whiteSpace: keepLines ? 'pre-line' : printedLines(row.verbatim) }}>{row.verbatim}</strong>
+      <section aria-label={`Marking criterion ${index + 1}`} className="mb-criterion">
+        <strong className="mb-criterion-name" style={{ whiteSpace: keepLines ? 'pre-line' : printedLines(row.verbatim) }}>{row.verbatim}</strong>
         {row.accepts?.length ? <p style={{ color: MUTED }}>{row.accepts.join(' · ')}</p> : null}
-        {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}`, whiteSpace: printedLines(row.contextNote) }}>{row.contextNote}</p> : null}
+        {row.contextNote ? <p className="mb-scheme-sub" style={{ whiteSpace: printedLines(row.contextNote) }}>{row.contextNote}</p> : null}
         <div role="group" aria-label={`Marks for ${row.verbatim}`} style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
           {row.permittedMarks.map(mark => (
             <button key={mark} type="button" className="mb-step" disabled={blocked} aria-pressed={selected === mark}
@@ -893,21 +892,16 @@ const MarkRowView: React.FC<{
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.14, ease: EASE, delay: reduced ? 0 : Math.min(index, 8) * 0.024 }}
         className="mb-anyn"
-        style={{
-          marginBottom: 8, padding: '12px 13px', borderRadius: 12,
-          border: `1.5px solid ${MUTED_BORDER}`,
-          background: 'var(--mb-paper)',
-        }}
       >
         {/* The row's own label ("For — any one"), as the card prints it, so
             two menus on one card can be told apart (sessionText.menuLabel). */}
         {label && (
-          <p dir="auto" style={{ margin: '0 0 5px', font: `600 13.5px/1.4 ${SANS}`, color: INK, whiteSpace: label.includes('\n') ? 'pre-line' : undefined }}>
+          <p dir="auto" className="mb-anyn-label" style={{ whiteSpace: label.includes('\n') ? 'pre-line' : undefined }}>
             {label}
           </p>
         )}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10, marginBottom: 9 }}>
-          <span style={{ font: `600 12.5px/1.35 ${SANS}`, color: INK_2 }}>
+        <div className="mb-scheme-group-head mb-anyn-head">
+          <span className="mb-anyn-heading">
             {/* A descending tariff is stated as it is paid. Saying "5 marks
                 each" of a 6-then-4 split is wrong for both halves. A menu the
                 scheme prices only as a whole (an orderedSplit or questionTotal
@@ -917,17 +911,10 @@ const MarkRowView: React.FC<{
             {anyNHeading(g)}
           </span>
           {showMarks && (
-            <span style={{
-              font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
-              fontVariantNumeric: 'tabular-nums',
-              background: 'var(--mb-raised)',
-              color: INK_2,
-            }}>
-              {chosen} of {g.claimMax}
-            </span>
+            <span className="mb-claim-count">{chosen} of {g.claimMax}</span>
           )}
         </div>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+        <div className="mb-anyn-options">
           {g.options.map((option, oi) => {
             const on = picks.includes(oi);
             // A question marked "7 + 7 + 6" for three answers is carried as one
@@ -985,17 +972,17 @@ const MarkRowView: React.FC<{
             that would not fit an option put it here, believing it showed. Silent
             loss of marking content is worse than a crowded card. */}
         {row.contextNote && (
-          <p style={{ margin: '8px 0 0', font: `400 11.5px/1.45 ${SANS}`, color: MUTED, whiteSpace: printedLines(row.contextNote) }}>
+          <p className="mb-anyn-note" style={{ whiteSpace: printedLines(row.contextNote) }}>
             {row.contextNote}
           </p>
         )}
         {blocked && blockedReason !== '' && (
-          <p style={{ margin: '8px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
+          <p className="mb-anyn-note">
             {blockedReason ?? 'This mark only counts if the point above was right.'}
           </p>
         )}
         {atCap && (
-          <p style={{ margin: '8px 0 0', font: `400 11.5px/1.4 ${SANS}`, color: MUTED }}>
+          <p className="mb-anyn-note">
             {requiresAll
               ? `All ${g.claimMax} published parts are accounted for.`
               : <>That&rsquo;s the {g.claimMax} the examiner marks — any more score nothing.</>}
@@ -1140,16 +1127,16 @@ const PclmRubricPanel: React.FC<{
       {rubric.unprintedAnswer && (
         // A task the scheme sets out no block for (deferred schemes): the fixed line, then the
         // general criteria and grid it is marked on. Even neutral border, no accent.
-        <div style={{ margin: '0 0 16px', padding: '11px 12px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}>
-          <p style={{ margin: 0, font: `600 13px/1.45 ${SANS}`, color: INK }}>{UNPRINTED_ANSWER}</p>
-          <p style={{ margin: '4px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>{rubric.unprintedAnswer.citation}</p>
+        <div className="mb-scheme-unprinted">
+          <p>{UNPRINTED_ANSWER}</p>
+          <p className="mb-scheme-sub">{rubric.unprintedAnswer.citation}</p>
         </div>
       )}
       <div style={{ margin: '0 0 16px', padding: '0 0 15px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
-        <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
+        <span className="mb-scheme-label">
           Task check · no marks added here
         </span>
-        <p style={{ margin: '5px 0 10px', font: `600 17px/1.3 ${SERIF}`, color: INK }}>
+        <p className="mb-scheme-title">
           Did your answer do what was asked?
         </p>
         <div style={{ display: 'grid', gap: 7 }}>
@@ -1173,13 +1160,13 @@ const PclmRubricPanel: React.FC<{
       </div>
 
       <div style={{ marginBottom: 16 }}>
-        <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
+        <span className="mb-scheme-label">
           SEC grade grid
         </span>
-        <p style={{ margin: '5px 0 4px', font: `600 17px/1.3 ${SERIF}`, color: INK }}>
+        <p className="mb-scheme-title">
           Place the response on the real PCLM scale.
         </p>
-        <p style={{ margin: '0 0 12px', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
+        <p className="mb-scheme-sub">
           This is an honest self-assessment, not an automatic examiner mark.
           {assessment.mode !== 'composite' && assessment.printedGrid && (
             <> The grid and cap rule are the ones the {assessment.printedGrid.sitting.split('-')[0]} scheme
@@ -1192,54 +1179,45 @@ const PclmRubricPanel: React.FC<{
 
         {assessment.mode === 'combined' ? (
           <>
-            <div style={{ display: 'grid', gap: 7 }}>
+            <div className="mb-scheme-bands">
               {assessment.bands.map(band => (
-                <div key={band.grade} style={{
-                  display: 'grid', gridTemplateColumns: '36px 1fr', gap: 9, alignItems: 'center',
-                  padding: '8px 10px', borderRadius: 10, background: 'var(--mb-raised)',
-                }}>
-                  <strong style={{ font: `700 11px/1 ${SANS}`, color: INK_2 }}>{band.grade}</strong>
+                <div key={band.grade} className="mb-scheme-band">
+                  <strong>{band.grade}</strong>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
                     {band.marks.map(mark => scoreButton('combined', mark))}
                   </div>
                 </div>
               ))}
             </div>
-            <div style={{ marginTop: 11, padding: '10px 11px', borderRadius: 10, border: `1px solid ${MUTED_BORDER}` }}>
-              <strong style={{ display: 'block', marginBottom: 5, font: `650 11.5px/1.4 ${SANS}`, color: INK_2 }}>
+            <div className="mb-scheme-aside">
+              <strong>
                 The combined judgement considers
               </strong>
-              <ul style={{ margin: 0, paddingLeft: 17, color: MUTED, font: `400 11.5px/1.5 ${SANS}` }}>
+              <ul>
                 {assessment.criteria.map(criterion => <li key={criterion}>{criterion}</li>)}
               </ul>
             </div>
           </>
         ) : assessment.mode === 'composite' ? (
-          <div style={{ display: 'grid', gap: 10 }}>
+          <div className="mb-scheme-groups">
             {assessment.components.map(component => {
               if (component.mode === 'combined') {
                 const scoreId = componentCombinedId(component.id);
                 return (
-                  <section
-                    key={component.id}
-                    style={{ padding: '11px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}
-                  >
-                    <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
-                      <strong style={{ font: `650 13px/1.3 ${SANS}`, color: INK }}>
+                  <section key={component.id} className="mb-scheme-group">
+                    <div className="mb-scheme-group-head">
+                      <strong className="mb-scheme-group-name">
                         {component.label}
                       </strong>
-                      <span style={{ font: `700 10px/1 ${MONO}`, color: LABEL }}>/ {component.totalMarks}</span>
+                      <span className="mb-claim-count">/ {component.totalMarks}</span>
                     </div>
-                    <p style={{ margin: '5px 0 9px', font: `400 11.5px/1.45 ${SANS}`, color: MUTED }}>
+                    <p className="mb-scheme-sub">
                       This part receives its own combined PCLM mark.
                     </p>
-                    <div style={{ display: 'grid', gap: 6 }}>
+                    <div className="mb-scheme-bands">
                       {component.bands.map(band => (
-                        <div key={band.grade} style={{
-                          display: 'grid', gridTemplateColumns: '36px 1fr', gap: 8, alignItems: 'center',
-                          padding: '7px 8px', borderRadius: 9, background: 'var(--mb-raised)',
-                        }}>
-                          <strong style={{ font: `700 10.5px/1 ${SANS}`, color: INK_2 }}>{band.grade}</strong>
+                        <div key={band.grade} className="mb-scheme-band">
+                          <strong>{band.grade}</strong>
                           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
                             {band.marks.map(mark => scoreButton(scoreId, mark))}
                           </div>
@@ -1253,20 +1231,17 @@ const PclmRubricPanel: React.FC<{
               const purposeId = componentCriterionId(component.id, 'purpose');
               const componentPurpose = scores[purposeId];
               return (
-                <section
-                  key={component.id}
-                  style={{ padding: '11px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
-                    <strong style={{ font: `650 13px/1.3 ${SANS}`, color: INK }}>
+                <section key={component.id} className="mb-scheme-group">
+                  <div className="mb-scheme-group-head">
+                    <strong className="mb-scheme-group-name">
                       {component.label}
                     </strong>
-                    <span style={{ font: `700 10px/1 ${MONO}`, color: LABEL }}>/ {component.totalMarks}</span>
+                    <span className="mb-claim-count">/ {component.totalMarks}</span>
                   </div>
-                  <p style={{ margin: '5px 0 9px', font: `400 11.5px/1.45 ${SANS}`, color: MUTED }}>
+                  <p className="mb-scheme-sub">
                     This part receives separate Purpose, Coherence, Language and Mechanics marks.
                   </p>
-                  <div style={{ display: 'grid', gap: 8 }}>
+                  <div className="mb-scheme-sub-groups">
                     {component.criteria.map(criterion => {
                       const scoreId = componentCriterionId(component.id, criterion.id);
                       const control = pclmCriterionControl(
@@ -1274,20 +1249,18 @@ const PclmRubricPanel: React.FC<{
                         scores[componentCriterionId(component.id, 'coherence')],
                       );
                       return (
-                        <div key={criterion.id} style={{
-                          padding: '9px', borderRadius: 9, background: 'var(--mb-raised)',
-                        }}>
-                          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
-                            <strong style={{ font: `650 11.5px/1.3 ${SANS}`, color: INK_2 }}>
+                        <div key={criterion.id} className="mb-scheme-sub-group">
+                          <div className="mb-scheme-group-head">
+                            <strong className="mb-scheme-group-name">
                               {criterion.label}
                             </strong>
-                            <span style={{ font: `700 9.5px/1 ${MONO}`, color: LABEL }}>/ {criterion.maxMarks}</span>
+                            <span className="mb-claim-count">/ {criterion.maxMarks}</span>
                           </div>
-                          <ul style={{ margin: '6px 0 8px', paddingLeft: 16, color: MUTED, font: `400 10.5px/1.42 ${SANS}` }}>
+                          <ul className="mb-scheme-notes">
                             {criterion.guidance.map(note => <li key={note}>{note}</li>)}
                           </ul>
                           {(control.waiting ?? control.note) && (
-                            <p style={{ margin: '0 0 7px', font: `600 10px/1.4 ${SANS}`, color: LABEL }}>
+                            <p className="mb-scheme-sub">
                               {control.waiting ?? control.note}
                             </p>
                           )}
@@ -1310,11 +1283,11 @@ const PclmRubricPanel: React.FC<{
               const combined = assessment.components.find(component => component.mode === 'combined');
               if (!combined || combined.mode !== 'combined') return null;
               return (
-                <div style={{ padding: '10px 11px', borderRadius: 10, border: `1px solid ${MUTED_BORDER}` }}>
-                  <strong style={{ display: 'block', marginBottom: 5, font: `650 11.5px/1.4 ${SANS}`, color: INK_2 }}>
+                <div className="mb-scheme-aside">
+                  <strong>
                     Each short combined part considers
                   </strong>
-                  <ul style={{ margin: 0, paddingLeft: 17, color: MUTED, font: `400 11.5px/1.5 ${SANS}` }}>
+                  <ul>
                     {combined.criteria.map(criterion => <li key={criterion}>{criterion}</li>)}
                   </ul>
                 </div>
@@ -1322,22 +1295,22 @@ const PclmRubricPanel: React.FC<{
             })()}
           </div>
         ) : (
-          <div style={{ display: 'grid', gap: 10 }}>
+          <div className="mb-scheme-groups">
             {assessment.criteria.map(criterion => {
               const control = pclmCriterionControl(pclmCapRule(assessment), criterion.id, purpose, scores.coherence);
               return (
-                <section key={criterion.id} style={{ padding: '11px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}>
-                  <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
-                    <strong style={{ font: `650 13px/1.3 ${SANS}`, color: INK }}>
+                <section key={criterion.id} className="mb-scheme-group">
+                  <div className="mb-scheme-group-head">
+                    <strong className="mb-scheme-group-name">
                       {criterion.label}
                     </strong>
-                    <span style={{ font: `700 10px/1 ${MONO}`, color: LABEL }}>/ {criterion.maxMarks}</span>
+                    <span className="mb-claim-count">/ {criterion.maxMarks}</span>
                   </div>
-                  <ul style={{ margin: '7px 0 9px', paddingLeft: 17, color: MUTED, font: `400 11.5px/1.45 ${SANS}` }}>
+                  <ul className="mb-scheme-notes">
                     {criterion.guidance.map(note => <li key={note}>{note}</li>)}
                   </ul>
                   {(control.waiting ?? control.note) && (
-                    <p style={{ margin: '0 0 7px', font: `600 10.5px/1.4 ${SANS}`, color: LABEL }}>
+                    <p className="mb-scheme-sub">
                       {control.waiting ?? control.note}
                     </p>
                   )}
@@ -1355,30 +1328,27 @@ const PclmRubricPanel: React.FC<{
           </div>
         )}
 
-        <div style={{
-          display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 12,
-          marginTop: 12, padding: '12px', borderRadius: 11, background: 'var(--mb-raised)',
-        }}>
-          <span style={{ font: `600 12px/1.4 ${SANS}`, color: INK_2 }}>Your placement</span>
-          <strong style={{ font: `700 17px/1 ${MONO}`, color: INK, fontVariantNumeric: 'tabular-nums' }}>
+        <div className="mb-scheme-total">
+          <span>Your placement</span>
+          <strong>
             {total} / {card.totalMarks}
           </strong>
         </div>
       </div>
 
-      <aside style={{ padding: '12px', borderRadius: 11, background: 'var(--mb-raised)', border: `1px solid ${MUTED_BORDER}` }}>
-        <strong style={{ display: 'block', font: `700 10px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: INK_2 }}>
+      <aside className="mb-scheme-aside">
+        <strong>
           Possible directions — never a checklist
         </strong>
-        <p style={{ margin: '5px 0 8px', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
+        <p>
           {rubric.indicativeMaterialNote}
         </p>
         {rubric.indicativeMaterial?.length ? (
-          <ul style={{ margin: 0, paddingLeft: 17, font: `400 11.5px/1.5 ${SANS}`, color: INK_2 }}>
+          <ul>
             {rubric.indicativeMaterial.map(item => <li key={item}>{item}</li>)}
           </ul>
         ) : (
-          <p style={{ margin: 0, font: `600 11.5px/1.45 ${SANS}`, color: INK_2 }}>
+          <p>
             The published scheme prescribes no set content for this response.
           </p>
         )}
@@ -1490,10 +1460,10 @@ const IrishRubricPanel: React.FC<{
   return (
     <div>
       <div style={{ margin: '0 0 16px', padding: '0 0 15px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
-        <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
+        <span className="mb-scheme-label">
           Task check · no marks added here
         </span>
-        <p style={{ margin: '5px 0 10px', font: `600 17px/1.3 ${SERIF}`, color: INK }}>
+        <p className="mb-scheme-title">
           Ar fhreagair tú an cheist a cuireadh?
         </p>
         <div style={{ display: 'grid', gap: 7 }}>
@@ -1517,40 +1487,36 @@ const IrishRubricPanel: React.FC<{
       </div>
 
       <div>
-        <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
+        <span className="mb-scheme-label">
           Scéim mharcála an CSS
         </span>
-        <p style={{ margin: '5px 0 4px', font: `600 17px/1.3 ${SERIF}`, color: INK }}>
+        <p className="mb-scheme-title">
           Place your answer on the published Irish scale.
         </p>
-        <p style={{ margin: '0 0 12px', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
+        <p className="mb-scheme-sub">
           Award Eolas/Ábhar and Gaeilge separately where the SEC does; a deduction is never shown as an award.
         </p>
 
-        <div style={{ display: 'grid', gap: 10 }}>
+        <div className="mb-scheme-groups">
           {rubric.criteria.map((criterion, index) => (
-            <section key={criterion.id} style={{ padding: '11px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}>
-              <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
-                <strong style={{ font: `650 13px/1.3 ${SANS}`, color: INK }}>
+            <section key={criterion.id} className="mb-scheme-group">
+              <div className="mb-scheme-group-head">
+                <strong className="mb-scheme-group-name">
                   {criterion.label}
                 </strong>
-                <span style={{ font: `700 10px/1 ${MONO}`, color: LABEL }}>
+                <span className="mb-claim-count">
                   {criterion.kind === 'deduction' ? '0 to −' : '/ '}{criterion.maxMarks}
                 </span>
               </div>
               {/* One chip per run: an announcement's question boxes share one "Official answers" label. */}
               {(index === 0 || guidanceLabel(rubric.criteria[index - 1]) !== guidanceLabel(criterion)
                 || chipRun(rubric.criteria[index - 1]) !== chipRun(criterion)) && (
-                <span style={{
-                  display: 'inline-block', marginTop: 7, padding: '3px 6px', borderRadius: 5,
-                  background: 'var(--mb-raised)', color: LABEL,
-                  font: `750 8.5px/1.2 ${SANS}`, letterSpacing: '.075em', textTransform: 'uppercase',
-                }}>
+                <span className="mb-claim-tag">
                   {guidanceLabel(criterion)}
                 </span>
               )}
               {criterion.allocation ? (
-                <div style={{ marginTop: 10 }}>
+                <div>
                   <IrishAllocationPanel
                     criterionId={criterion.id}
                     allocation={criterion.allocation}
@@ -1561,7 +1527,7 @@ const IrishRubricPanel: React.FC<{
               ) : (
                 <>
                   {criterion.guidance.length > 0 && (
-                    <ul style={{ margin: '7px 0 10px', paddingLeft: 17, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
+                    <ul className="mb-scheme-notes">
                       {criterion.guidance.map((note, index) => <li key={`${criterion.id}-${index}`}>{note}</li>)}
                     </ul>
                   )}
@@ -1572,22 +1538,19 @@ const IrishRubricPanel: React.FC<{
           ))}
         </div>
 
-        <div style={{
-          display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 12,
-          marginTop: 12, padding: '12px', borderRadius: 11, background: 'var(--mb-raised)',
-        }}>
-          <span style={{ font: `600 12px/1.4 ${SANS}`, color: INK_2 }}>Your placement</span>
-          <strong style={{ font: `700 17px/1 ${MONO}`, color: INK, fontVariantNumeric: 'tabular-nums' }}>
+        <div className="mb-scheme-total">
+          <span>Your placement</span>
+          <strong>
             {total} / {card.totalMarks}
           </strong>
         </div>
       </div>
 
-      <aside style={{ marginTop: 12, padding: '12px', borderRadius: 11, background: 'var(--mb-raised)', border: `1px solid ${MUTED_BORDER}` }}>
-        <strong style={{ display: 'block', font: `700 10px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: INK_2 }}>
+      <aside className="mb-scheme-aside">
+        <strong>
           How to use this guide
         </strong>
-        <p style={{ margin: '5px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
+        <p>
           {rubric.markingGuideNote}
         </p>
       </aside>
@@ -1675,7 +1638,7 @@ const GeographyRubricPanel: React.FC<{
     <div>
       {rubric.taskRequirements.length > 0 && (
         <div style={{ margin: '0 0 16px', padding: '0 0 15px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
-          <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
+          <span className="mb-scheme-label">
             Selected route · no marks added here
           </span>
           <div style={{ display: 'grid', gap: 7, marginTop: 8 }}>
@@ -1699,29 +1662,29 @@ const GeographyRubricPanel: React.FC<{
         </div>
       )}
 
-      <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
+      <span className="mb-scheme-label">
         SEC Geography marking scheme
       </span>
-      <p style={{ margin: '5px 0 4px', font: `600 17px/1.3 ${SERIF}`, color: INK }}>
+      <p className="mb-scheme-title">
         {structured ? 'Claim each answer you had, as the scheme prices it.' : 'Place your response on the published allocation.'}
       </p>
-      <p style={{ margin: '0 0 12px', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
+      <p className="mb-scheme-sub">
         {rubric.srpMarks
           ? `One Significant Relevant Point is worth ${rubric.srpMarks} marks on this paper. It must emerge as valid information in a coherent answer.`
           : 'Use the exact answers and allocations below; award alternatives where the published scheme permits them.'}
       </p>
 
-      <div style={{ display: 'grid', gap: 10 }}>
+      <div className="mb-scheme-groups">
         {rubric.criteria.map(criterion => (
-          <section key={criterion.id} style={{ padding: '11px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}>
-            <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
-              <strong style={{ font: `650 13px/1.3 ${SANS}`, color: INK }}>{criterion.label}</strong>
-              <span style={{ font: `700 9px/1 ${MONO}`, color: LABEL, textTransform: 'uppercase' }}>
+          <section key={criterion.id} className="mb-scheme-group">
+            <div className="mb-scheme-group-head">
+              <strong className="mb-scheme-group-name">{criterion.label}</strong>
+              <span className="mb-claim-count">
                 {criterion.guidanceKind === 'srp' ? 'SRP allocation' : 'Exact allocation'} · / {criterion.maxMarks}
               </span>
             </div>
             {criterion.allocation ? (
-              <div style={{ marginTop: 10 }}>
+              <div>
                 {criterion.allocation.choice ? (
                   <GeographyChoicePanel
                     criterion={criterion as React.ComponentProps<typeof GeographyChoicePanel>['criterion']}
@@ -1738,9 +1701,9 @@ const GeographyRubricPanel: React.FC<{
               </div>
             ) : (
               <>
-                <div style={{ display: 'grid', gap: 6, margin: '8px 0 11px' }}>
+                <div className="mb-scheme-notes mb-scheme-notes--lines">
                   {criterion.guidance.map((note, index) => (
-                    <p key={`${criterion.id}-${index}`} style={{ margin: 0, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
+                    <p key={`${criterion.id}-${index}`}>
                       {note}
                     </p>
                   ))}
@@ -1753,13 +1716,13 @@ const GeographyRubricPanel: React.FC<{
       </div>
 
       {rubric.directions && rubric.directions.length > 0 && (
-        <section style={{ marginTop: 14, paddingTop: 12, borderTop: `1px solid ${HAIRLINE_2}` }}>
-          <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
+        <section className="mb-scheme-aside">
+          <span className="mb-scheme-label">
             Examiner directions
           </span>
-          <ul style={{ margin: '7px 0 0', padding: '0 0 0 16px', display: 'grid', gap: 6 }}>
+          <ul>
             {rubric.directions.map((direction, index) => (
-              <li key={`direction-${index}`} style={{ color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
+              <li key={`direction-${index}`}>
                 {direction.replace(/^•\s*/, '')}
               </li>
             ))}
@@ -1767,21 +1730,18 @@ const GeographyRubricPanel: React.FC<{
         </section>
       )}
 
-      <div style={{
-        display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 12,
-        marginTop: 12, padding: '12px', borderRadius: 11, background: 'var(--mb-raised)',
-      }}>
-        <span style={{ font: `600 12px/1.4 ${SANS}`, color: INK_2 }}>Your placement</span>
-        <strong style={{ font: `700 17px/1 ${MONO}`, color: INK, fontVariantNumeric: 'tabular-nums' }}>
+      <div className="mb-scheme-total">
+        <span>Your placement</span>
+        <strong>
           {total} / {card.totalMarks}
         </strong>
       </div>
 
-      <aside style={{ marginTop: 12, padding: '12px', borderRadius: 11, background: 'var(--mb-raised)', border: `1px solid ${MUTED_BORDER}` }}>
-        <strong style={{ display: 'block', font: `700 10px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: INK_2 }}>
+      <aside className="mb-scheme-aside">
+        <strong>
           How to use this guide
         </strong>
-        <p style={{ margin: '5px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
+        <p>
           {rubric.markingGuideNote}
         </p>
       </aside>
@@ -1890,23 +1850,14 @@ const LabelKeyPanel: React.FC<{ keys: LabelKey[] }> = ({ keys }) => {
   const extra = keys.filter(k => !k.askedInThisQuestion);
   if (!extra.length) return null;
   return (
-  <div style={{ marginTop: 12, padding: '11px 13px', borderRadius: 10, background: PLATE }}>
-    <span style={{
-      display: 'block', marginBottom: 6, font: `700 9px/1.6 ${SANS}`,
-      letterSpacing: '.11em', textTransform: 'uppercase', color: LABEL,
-    }}>
+  <div className="mb-scheme-aside mb-label-key">
+    <span className="mb-scheme-label">
       Also on the diagram
     </span>
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+    <div className="mb-label-key-list">
       {extra.map(k => (
-        <span
-          key={k.letter}
-          style={{
-            font: `500 12px/1.5 ${SANS}`, background: 'var(--mb-paper)', borderRadius: 6,
-            padding: '3px 9px', color: MUTED,
-          }}
-        >
-          <strong style={{ fontFamily: MONO, fontSize: 11.5 }}>{k.letter}</strong> — {k.meaning}
+        <span key={k.letter}>
+          <strong>{k.letter}</strong> — {k.meaning}
         </span>
       ))}
     </div>
@@ -3287,17 +3238,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             {!(audioMaterial && !printedQuestionReplacesText && assessmentCard.subjectId !== 'french') && sourceReaders}
 
             {answerVariants.length > 0 && (
-              <fieldset className="mb-route-chooser" style={{
-                margin: '18px 0 0', padding: '14px', border: `1px solid ${HAIRLINE_2}`,
-                borderRadius: 12, background: 'var(--mb-raised)',
-              }}>
-                <legend style={{
-                  padding: '0 5px', font: `700 9.5px/1.5 ${SANS}`,
-                  letterSpacing: '.11em', textTransform: 'uppercase', color: LABEL,
-                }}>
+              <fieldset className="mb-route-chooser">
+                <legend className="mb-scheme-label">
                   Match the route you answered
                 </legend>
-                <p style={{ margin: '0 0 10px', font: `400 12.5px/1.5 ${SANS}`, color: INK_2 }}>
+                <p className="mb-scheme-sub">
                   This is one exam question. Choose your example so the reveal shows its exact SEC scheme.
                 </p>
                 <div className="inline-flex max-w-full flex-wrap items-center gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1">
@@ -3475,7 +3420,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         return (
                           <React.Fragment key={id}>
                           {taskGroup && (
-                            <h3 style={{ margin: '24px 0 8px', paddingTop: 12, borderTop: `1px solid ${HAIRLINE_2}`, font: `600 16px/1.4 ${SERIF}`, color: INK }}>
+                            <h3 className="mb-task-head">
                               {taskGroup.label} · {taskGroup.marks} {marksWord(taskGroup.marks)}
                             </h3>
                           )}
@@ -3603,7 +3548,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
                   {labelKey && <LabelKeyPanel keys={labelKey} />}
 
-                  {!embedded && <p className="mb-scheme-cite" style={{ margin: '14px 0 0', font: `400 10px/1.45 ${SANS}`, color: LABEL }}>
+                  {!embedded && <p className="mb-scheme-cite">
                     {assessmentCard.schemeCitation}
                   </p>}
                 </fieldset>
@@ -3851,7 +3796,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           }}
         >
           <div style={{ width: '100%', maxWidth: 420, padding: '24px', borderRadius: 14, border: `1.5px solid ${MUTED_BORDER}`, background: 'var(--mb-paper)', boxShadow: 'none' }}>
-            <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>Leave session?</span>
+            <span className="mb-scheme-label">Leave session?</span>
             <h2 id="mark-bank-exit-title" style={{ margin: '6px 0 7px', font: `700 23px/1.2 ${SERIF}`, color: INK }}>Your completed cards are safe.</h2>
             <p style={{ margin: '0 0 18px', font: `400 13.5px/1.55 ${SANS}`, color: MUTED }}>
               You have finished {distinctDone} of {exerciseTotal}. This exercise will stay ungraded and return next time.

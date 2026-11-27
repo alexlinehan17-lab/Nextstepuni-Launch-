@@ -74,11 +74,7 @@
 @media (hover: hover) and (pointer: fine) {
   .mb-practice .mb-source-material-trigger:hover { background: var(--surface-soft); }
 }
-/* Match the route you answered: kept, in the system's sizes. */
-.mb-practice .mb-route-chooser { border-color: var(--hairline) !important; border-radius: var(--r-box) !important; background: none !important; }
-.mb-practice .mb-route-chooser legend { color: var(--ink-muted) !important; font: 400 11px/14px var(--font-ui) !important; letter-spacing: 0.1em !important; }
-.mb-practice .mb-route-chooser p { color: var(--ink-secondary) !important; font: 400 13px/18px var(--font-ui) !important; }
-.mb-practice .mb-route-chooser button { min-height: 44px; font-size: 14px; }
+
 
 /* Your answer, under the question. */
 .mb-practice .mb-paper-session .mb-scheme-pane { width: 100% !important; margin-top: var(--space-8) !important; padding: 0 !important; border: 0 !important; }
@@ -111,21 +107,13 @@
 .mb-practice .mb-scheme-reveal :is(h3) { font-weight: 400 !important; }
 
 /* The claim rows themselves are claim-rows.css, the same in every subject and outside this card. */
-/* "Any N of these": the same box; each answer a row you tick; ticked, an ink outline. */
-.mb-practice .mb-anyn { border: 1px solid var(--outline-soft) !important; border-radius: var(--r-ctl) !important; font-family: var(--font-ui); }
-.mb-practice .mb-anyn > p, .mb-practice .mb-anyn > div > span { font-family: var(--font-ui) !important; font-size: 13px !important; }
-.mb-practice .mb-anyn > p { font-size: 13px !important; }
+.mb-practice .mb-route-chooser button { min-height: 44px; font-size: 14px; }
 /* Stepped marks and a row's parts: the permitted marks as small boxes; chosen, an ink outline. */
 .mb-practice .mb-step {
   min-width: 44px; min-height: 36px; border-color: var(--outline-soft) !important; border-radius: var(--r-sm) !important;
   background: var(--surface-paper) !important; color: var(--ink-primary) !important; font: 400 14px/1 'Departure Mono', ui-monospace, monospace !important;
 }
 .mb-practice .mb-step[aria-pressed="true"] { border-color: var(--ink-primary) !important; box-shadow: inset 0 0 0 1px var(--ink-primary); font-weight: 700 !important; }
-.mb-practice section[aria-label^="Marking criterion"] strong { font-family: var(--font-ui) !important; font-weight: 400 !important; font-size: 15px !important; }
-/* Examiner directions (kept, not on the boards): on the page under a small label and a hairline, not in a grey box. */
-.mb-practice .mb-claim-directions { padding: 12px 0 0; border: 0; border-top: 1px solid var(--hairline); border-radius: 0; background: none; }
-.mb-practice .mb-claim-directions strong { color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; }
-.mb-practice .mb-claim-directions ul { color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 /* Applied Maths' orange selected credit becomes the ink outline (no orange fill). */
 .mb-practice .mb-applied-credit button[aria-pressed="true"] { background: var(--surface-paper) !important; color: var(--ink-primary) !important; border-color: var(--ink-primary) !important; box-shadow: inset 0 0 0 1px var(--ink-primary); }
 .mb-practice input[id^="accounting-score-"] { background: var(--surface-paper) !important; color: var(--ink-primary) !important; }
@@ -208,5 +196,3 @@
 
 /* Expand / Contract in the bar: the glyph beside its word. */
 .mb-practice .mb-practice-bar .ui-btn > span { display: inline-flex; align-items: center; gap: 6px; }
-/* A panel's small label over its scheme: the system's label (11px, regular), not 10px bold. */
-.mb-practice .mb-politics-rubric .mb-politics-eyebrow { color: var(--ink-muted); font-size: 11px; font-weight: 400; letter-spacing: 0.1em; }

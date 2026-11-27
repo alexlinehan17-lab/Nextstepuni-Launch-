@@ -13,8 +13,8 @@ interface Props {
   onScore: (id: BusinessScoreId, marks: number) => void;
 }
 
-const HEAD: React.CSSProperties = { fontSize: 10, fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', margin: '0 0 6px' };
-const MUTED: React.CSSProperties = { margin: '6px 0 0', fontSize: 11, lineHeight: 1.45, color: 'var(--mb-muted)' };
+const HEAD: React.CSSProperties = { margin: '0 0 6px', color: 'var(--ink-muted)', font: '400 11px/14px var(--font-ui)', letterSpacing: '.1em', textTransform: 'uppercase' };
+const MUTED: React.CSSProperties = { margin: '6px 0 0', color: 'var(--ink-muted)', font: '400 13px/18px var(--font-ui)' };
 
 /**
  * The SEC's response allocations, with the responses the scheme printed as
@@ -40,10 +40,10 @@ export default function BusinessRubricPanel({ card, scores, onScore }: Props) {
       claimed={claimed(item.id)} onToggle={() => toggle(item.id, responseId)} />
   );
   return (
-    <div style={{ color: 'var(--mb-ink)', fontFamily: 'inherit' }}>
+    <div style={{ color: 'var(--ink-primary)', font: '400 15px/21px var(--font-ui)' }}>
       <p style={HEAD}>SEC Business marking scheme</p>
       {rubric.taskRequirements.map(requirement => (
-        <p key={requirement} style={{ fontSize: 13, lineHeight: 1.5 }}>{requirement}</p>
+        <p key={requirement} className="mb-scheme-sub">{requirement}</p>
       ))}
       <SourceMaterialReader
         source={{
@@ -57,7 +57,7 @@ export default function BusinessRubricPanel({ card, scores, onScore }: Props) {
         paperFileid={rubric.schemeFileid} documentKind="scheme" inline labelNamesMaterial
       />
       {rubric.guidance.map(note => (
-        <p key={note} style={{ fontSize: 12, lineHeight: 1.5, color: 'var(--mb-muted)' }}>{note}</p>
+        <p key={note} className="mb-scheme-sub">{note}</p>
       ))}
       {layout?.kind === 'pool' && (
         <section aria-label={`Scheme responses, page ${rubric.expected!.page}`} style={{ margin: '14px 0' }}>
@@ -72,9 +72,9 @@ export default function BusinessRubricPanel({ card, scores, onScore }: Props) {
       {rubric.responses.map(response => (
         <fieldset key={response.id} style={{
           margin: '14px 0', padding: '11px 0', border: 0,
-          borderTop: '1px solid var(--mb-border)', minWidth: 0,
+          borderTop: '1px solid var(--hairline)', minWidth: 0,
         }}>
-          <legend style={{ paddingRight: 10, fontSize: 13, fontWeight: 650 }}>{response.label}</legend>
+          <legend style={{ paddingRight: 10, font: '400 15px/21px var(--font-ui)' }}>{response.label}</legend>
           {layout?.kind === 'per-response' && layout.items.has(response.id) && row(layout.items.get(response.id)!, response.id)}
           {response.allocations.map(allocation => {
             const id = businessScoreId(response.id, allocation.id);
@@ -85,7 +85,7 @@ export default function BusinessRubricPanel({ card, scores, onScore }: Props) {
             return (
               <div key={id} style={{ margin: '8px 0' }}>
                 <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
-                  <span style={{ fontSize: 12 }}>{allocation.label}</span>
+                  <span style={{ color: 'var(--ink-secondary)', font: '400 13px/18px var(--font-ui)' }}>{allocation.label}</span>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
                     {allocation.permittedMarks.map(mark => (
                       <button key={mark} type="button" aria-pressed={selected === mark}
@@ -103,7 +103,7 @@ export default function BusinessRubricPanel({ card, scores, onScore }: Props) {
                     ))}
                   </div>
                 </div>
-                {locked && <p style={{ margin: '5px 0 0', fontSize: 11, lineHeight: 1.4, color: 'var(--mb-muted)' }}>
+                {locked && <p style={MUTED}>
                   A link earns marks only with relevant theory in this response.
                 </p>}
               </div>
@@ -111,10 +111,10 @@ export default function BusinessRubricPanel({ card, scores, onScore }: Props) {
           })}
         </fieldset>
       ))}
-      <p style={{ display: 'flex', justifyContent: 'space-between', gap: 12, borderTop: '1px solid var(--mb-border)', paddingTop: 14 }}>
+      <p className="mb-scheme-total">
         <span>Your placement</span><strong>{businessMarks(card, scores)} / {card.totalMarks}</strong>
       </p>
-      <p style={{ fontSize: 12, lineHeight: 1.5, color: 'var(--mb-muted)' }}>{rubric.markingGuideNote}</p>
+      <p className="mb-scheme-sub" style={{ marginTop: 12 }}>{rubric.markingGuideNote}</p>
     </div>
   );
 }
