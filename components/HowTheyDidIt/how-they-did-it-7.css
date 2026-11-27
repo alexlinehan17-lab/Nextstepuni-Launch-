@@ -89,16 +89,20 @@
 @media (min-width: 768px) {
   .hw7 { padding: 0 0 var(--space-12); }
   .hw7-filters { flex-wrap: wrap; margin: 0; padding: 0; overflow: visible; }
-  .hw7-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; align-items: start; gap: 48px; }
   .hw7-story .ui-paper-face { align-items: flex-start; gap: 20px; padding: 28px; }
-  .hw7-feature { grid-template-columns: minmax(0, 1fr) 150px; gap: 10px var(--space-6); width: 100%; align-items: center; }
-  .hw7-feature .hw7-portrait { width: 150px; height: 150px; }
-  .hw7 .hw7-name { font-size: 44px; line-height: 48px; letter-spacing: -0.045em; }
-  .hw7-hook { grid-column: 1; }
   .hw7 .hw7-read-btn.ui-btn { width: 260px; margin-top: 0; }
   .hw7-borrow { width: 100%; margin-top: 0; }
   .hw7-read { max-width: 680px; margin: 0 auto; padding-bottom: 0; }
   .hw7-foot-wrap.frame-float { position: static; }
   .hw7 .hw7-foot.ui-foot { flex-direction: row; align-items: center; gap: var(--space-5); margin: 0; padding: 0; border: 0; background: none; }
   .hw7 .hw7-foot .ui-btn--lg { width: 300px; flex: none; }
+}
+/* The two columns start at 1024px: between 768 and 1023 the sidebar is beside the tool and they squeezed the
+   headline to a word a line (area 7b second pass); the rest of the laptop look starts at 768. */
+@media (min-width: 1024px) {
+  .hw7-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; align-items: start; gap: 48px; }
+  .hw7-feature { grid-template-columns: minmax(0, 1fr) 150px; gap: 10px var(--space-6); width: 100%; align-items: center; }
+  .hw7-feature .hw7-portrait { width: 150px; height: 150px; }
+  .hw7 .hw7-name { font-size: 44px; line-height: 48px; letter-spacing: -0.045em; }
+  .hw7-hook { grid-column: 1; }
 }

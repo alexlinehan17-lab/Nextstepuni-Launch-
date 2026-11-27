@@ -15,12 +15,14 @@
 .cr7-loading { padding: var(--space-12) 0; text-align: center; }
 
 /* ── The opening: the example question, then the subjects ───────────────── */
-.cr7-home { display: flex; flex-direction: column; gap: var(--space-8); }
+/* The board's rhythm: the opening words, 24px, then the subjects (c-tools2-command: .large's 24px foot). */
+.cr7-home { display: flex; flex-direction: column; gap: var(--space-6); }
 .cr7-idea { display: flex; flex-direction: column; gap: var(--space-2); }
 .cr7-example--full { display: none; }
 .cr7-cmd { text-decoration: underline; text-decoration-color: var(--nsu-orange); text-decoration-thickness: 3px; text-underline-offset: 6px; }
 .cr7-pick { display: flex; flex-direction: column; gap: var(--space-3); }
-.cr7-pick-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+/* The heading row is the board's 28px; All subjects keeps its 44px target, which reaches 8px into the gaps. */
+.cr7-pick-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); height: 28px; }
 .cr7-subjects { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
 .cr7 .cr7-subject.ui-press { display: flex; align-items: center; gap: var(--space-2); min-height: 68px; padding: var(--space-2) 10px var(--space-2) var(--space-2); border-radius: var(--r-sm); }
 .cr7 .cr7-subject.ui-press[aria-pressed='true'] { border-color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--ink-primary); }
@@ -69,13 +71,17 @@
 
 @media (min-width: 768px) {
   .cr7 { padding: 0 0 var(--space-12); }
-  .cr7-home { display: grid; grid-template-columns: minmax(0, 1fr) 380px; align-items: start; gap: 56px; }
-  .cr7-idea { gap: var(--space-4); }
-  .cr7-example--short { display: none; }
-  .cr7-example--full { display: block; font-size: 34px; line-height: 43px; letter-spacing: -0.035em; text-wrap: pretty; }
   .cr7-pick { gap: var(--space-3); }
   .cr7-play { max-width: 680px; margin: 0 auto; padding-bottom: 0; }
   .cr7-foot-wrap.frame-float { position: static; }
   .cr7 .cr7-foot.ui-foot { margin: 0; padding: 0; border: 0; background: none; }
   .cr7 .cr7-foot .ui-btn--lg { width: 300px; }
+}
+/* The two columns start at 1024px: between 768 and 1023 the sidebar is beside the tool and they squeezed the
+   headline to a word a line (area 7b second pass); the rest of the laptop look starts at 768. */
+@media (min-width: 1024px) {
+  .cr7-home { display: grid; grid-template-columns: minmax(0, 1fr) 380px; align-items: start; gap: 56px; }
+  .cr7-idea { gap: var(--space-4); }
+  .cr7-example--short { display: none; }
+  .cr7-example--full { display: block; font-size: 34px; line-height: 43px; letter-spacing: -0.035em; text-wrap: pretty; }
 }

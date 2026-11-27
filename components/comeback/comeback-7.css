@@ -70,8 +70,6 @@
 
 @media (min-width: 768px) {
   .cb7 { padding: 0 0 var(--space-12); }
-  .cb7-step--aside { display: grid; grid-template-columns: minmax(0, 1fr) 260px; align-items: start; gap: 72px; }
-  .cb7-aside { display: flex; flex-direction: column; gap: 10px; padding-top: 34px; }
   .cb7-main { gap: var(--space-5); }
   .cb7 .cb7-title { font-size: 36px; line-height: 40px; }
   .cb7-step:not(.cb7-step--plan) .cb7-main { padding-bottom: 0; }
@@ -79,5 +77,11 @@
   .cb7 .cb7-foot.ui-foot { flex-direction: row; align-items: center; gap: var(--space-5); margin: 0; padding: 0; border: 0; background: none; }
   .cb7 .cb7-foot .ui-btn--lg { width: 300px; flex: none; }
   .cb7 .cb7-foot .ui-foot-note { order: 3; text-align: left; }
+}
+/* The two columns start at 1024px: between 768 and 1023 the sidebar is beside the tool and they squeezed the
+   headline to a word a line (area 7b second pass); the rest of the laptop look starts at 768. */
+@media (min-width: 1024px) {
+  .cb7-step--aside { display: grid; grid-template-columns: minmax(0, 1fr) 260px; align-items: start; gap: 72px; }
+  .cb7-aside { display: flex; flex-direction: column; gap: 10px; padding-top: 34px; }
   .cb7-plan { display: grid; grid-template-columns: 300px minmax(0, 1fr); align-items: start; gap: var(--space-8); }
 }
