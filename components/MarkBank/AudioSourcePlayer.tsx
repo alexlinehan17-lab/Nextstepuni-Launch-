@@ -36,25 +36,25 @@ const AudioSourcePlayer: React.FC<AudioSourcePlayerProps> = ({ source }) => {
       style={{
         marginTop: 15,
         padding: '13px 14px 14px',
-        border: '1px solid var(--mb-muted-border, #ddd8d1)',
-        borderRadius: 12,
-        background: 'var(--mb-raised)',
+        border: '1px solid var(--outline-soft)',
+        borderRadius: 'var(--r-box)',
+        background: 'var(--surface-paper)',
       }}
     >
       <div style={{ display: 'grid', gridTemplateColumns: '28px 1fr', gap: 9, alignItems: 'center' }}>
-        <span style={{ color: 'var(--mb-ink, #26211d)', display: 'grid', placeItems: 'center' }}>
+        <span style={{ color: 'var(--ink-primary)', display: 'grid', placeItems: 'center' }}>
           <AudioWaveIcon />
         </span>
         <div>
           <span style={{
-            display: 'block', fontSize: 9.5, fontWeight: 750, lineHeight: 1.4,
-            letterSpacing: '.11em', textTransform: 'uppercase', color: 'var(--mb-label, #756e66)',
+            display: 'block', font: '400 11px/14px var(--font-ui)',
+            letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--ink-muted)',
           }}>
             {source.label} · official audio
           </span>
           <strong style={{
-            display: 'block', marginTop: 2, fontSize: 13.5, lineHeight: 1.35,
-            color: 'var(--mb-ink, #26211d)',
+            display: 'block', marginTop: 2, font: '400 15px/21px var(--font-ui)',
+            color: 'var(--ink-primary)',
           }}>
             {source.title}
           </strong>
@@ -73,15 +73,15 @@ const AudioSourcePlayer: React.FC<AudioSourcePlayerProps> = ({ source }) => {
       </audio>
 
       {failed ? (
-        <p style={{ margin: '8px 0 0', fontSize: 11.5, lineHeight: 1.45, color: 'var(--mb-muted, #756e66)' }}>
+        <p style={{ margin: '8px 0 0', font: '400 13px/18px var(--font-ui)', color: 'var(--ink-secondary)' }}>
           The embedded recording could not be loaded.{' '}
-          <a href={source.canonicalUrl} target="_blank" rel="noreferrer" style={{ color: 'inherit', fontWeight: 700 }}>
+          <a href={source.canonicalUrl} target="_blank" rel="noreferrer" style={{ color: 'var(--ink-primary)', textDecoration: 'underline', textUnderlineOffset: 3 }}>
             Open the SEC recording
           </a>
           .
         </p>
       ) : (
-        <p style={{ margin: '7px 0 0', fontSize: 10.5, lineHeight: 1.45, color: 'var(--mb-label, #756e66)' }}>
+        <p style={{ margin: '7px 0 0', font: '400 13px/18px var(--font-ui)', color: 'var(--ink-muted)' }}>
           {source.presentationNote}{hosted ? ` ${source.attribution}` : null}
         </p>
       )}

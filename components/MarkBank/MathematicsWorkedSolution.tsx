@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import type { CardFigure } from '../../types/markBank';
 import { figureUrl } from '../../utils/figureUrl';
+import { Button } from '../ui/Button';
 
 /** Preserve the SEC's typeset equations, diagrams and working at their natural
  * proportions. Tall solutions must never shrink to a fixed-height thumbnail. */
@@ -14,10 +15,10 @@ const MathematicsWorkedSolution: React.FC<{ figure: CardFigure }> = ({ figure })
     <div className="mb-maths-worked">
       <h3>Worked solution</h3>
       <p>Follow the working, then compare your answer with the credit notes.</p>
-      <button ref={trigger} type="button" className="mb-maths-expand" onClick={() => {
+      <Button ref={trigger} size="sm" className="mb-maths-expand" onClick={() => {
         setZoomed(false);
         dialog.current?.showModal();
-      }}>Enlarge worked solution</button>
+      }}>Enlarge worked solution</Button>
       {figure.sourceNote && <p className="mb-maths-source-note">{figure.sourceNote}</p>}
       <figure>
         <img src={src} alt={figure.alt} />
@@ -27,10 +28,10 @@ const MathematicsWorkedSolution: React.FC<{ figure: CardFigure }> = ({ figure })
         onClose={() => trigger.current?.focus()}>
         <div className="mb-maths-solution-toolbar">
           <strong>Worked solution</strong>
-          <button type="button" aria-pressed={zoomed} onClick={() => setZoomed(!zoomed)}>
+          <Button size="sm" aria-pressed={zoomed} onClick={() => setZoomed(!zoomed)}>
             {zoomed ? 'Fit to screen' : 'Zoom in'}
-          </button>
-          <button type="button" onClick={close}>Close solution</button>
+          </Button>
+          <Button size="sm" onClick={close}>Close solution</Button>
           {zoomed && <small>Scroll across and down to follow the working.</small>}
         </div>
         <div className="mb-maths-solution-scroll" tabIndex={0} aria-label="Solution image; scroll to read all working">
