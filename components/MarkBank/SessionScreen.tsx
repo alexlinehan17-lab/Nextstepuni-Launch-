@@ -36,7 +36,7 @@ import { atlasLinkForCard } from '../PaperTrail/atlasModel';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import ActionButton from '../ui/ActionButton';
 import { LogOut, Maximize2, Minimize2 } from 'lucide-react';
-import KobraScope, { Button } from '../approved-ui-runtime';
+import KobraScope from '../approved-ui-runtime';
 import { TopBar } from '../ui/Bars';
 import { Arrow, Button as UiButton, Glyph, TextButton } from '../ui/Button';
 import { OverScreen } from '../ui/OverScreen';
@@ -3623,10 +3623,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       {studyReview && <div className="sq-question-actions">
         <span aria-live="polite">{revisit ? 'Reviewing your answers' : revealed ? `${got} / ${total} self-assessed marks` : 'Try the question before revealing the scheme.'}</span>
         <div>
-          {!revisit && <Button variant="outline" onClick={() => advanceStudy()}>Skip question</Button>}
-          {revealed && <Button className="sq-primary" onClick={() => revisit ? advanceStudy() : commit(suggested)}>
+          {!revisit && <UiButton size="lg" onClick={() => advanceStudy()}>Skip question</UiButton>}
+          {revealed && <UiButton kind="main" size="lg" onClick={() => revisit ? advanceStudy() : commit(suggested)}>
             {position + 1 < queue.length ? 'Next question' : revisit ? 'Back to summary' : 'See review summary'}
-          </Button>}
+          </UiButton>}
         </div>
       </div>}
 

@@ -26,7 +26,9 @@
 .mb-practice [data-testid="mark-bank-question-pane"] { width: 100% !important; position: static !important; }
 
 /* The progress: the topic and the one live figure, then one step per question. */
-.mb-p-progress { display: flex; flex: none; flex-direction: column; gap: var(--space-2); padding: var(--space-2) 0 var(--space-6); }
+/* The workspace lines its children up at the start (an inline style), so the strip stretches itself
+   across the column: one step per question across the full width, as drawn. */
+.mb-p-progress { display: flex; flex: none; flex-direction: column; align-self: stretch; gap: var(--space-2); padding: var(--space-2) 0 var(--space-6); }
 .mb-practice .mb-p-progress-label {
   margin: 0; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; text-transform: uppercase; outline: none;
 }
@@ -150,6 +152,16 @@
 }
 .mb-practice .mb-paper-session .mb-session-rail .mb-grades .mb-grade-button:active { background: var(--surface-soft) !important; }
 .mb-practice .mb-paper-session .mb-session-rail .mb-grades .mb-grade-button[data-suggested="true"] { border-color: var(--ink-primary) !important; box-shadow: inset 0 0 0 1px var(--ink-primary) !important; }
+
+/* A study review's own footer (the study quiz, "Where should I start?"): its count, then Skip and
+   Next as shared Buttons of one height, on the white page under a hairline. */
+.mb-practice .sq-question-actions { flex: none; gap: var(--space-3); padding: 12px var(--space-6) calc(var(--safe-bottom, 0px) + 12px); border-top: 1px solid var(--hairline); background: var(--surface-canvas); color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.mb-practice .sq-question-actions > div { gap: var(--space-2); }
+@media (max-width: 700px) { .mb-practice .sq-question-actions .ui-btn { flex: 1; } }
+/* The old rail paints every button white (mark-bank-session-paper.css, !important): the shared
+   Buttons keep their own faces here, Next in charcoal and Skip white with its line. */
+.mb-practice .mb-paper-session .mb-session-rail .sq-question-actions .ui-btn { border-color: var(--outline-soft) !important; background: var(--surface-paper) !important; color: var(--ink-primary) !important; font-weight: 400 !important; }
+.mb-practice .mb-paper-session .mb-session-rail .sq-question-actions .ui-btn--main { border-color: var(--action) !important; background: var(--action) !important; color: var(--action-ink) !important; }
 
 /* Leave practice? The one centred confirm on a phone. */
 .mb-practice .mb-exit > div { border: 1px solid var(--outline-soft) !important; border-radius: var(--r-card) !important; background: var(--surface-raised) !important; box-shadow: var(--float) !important; }
