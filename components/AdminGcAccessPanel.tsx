@@ -267,7 +267,8 @@ const AdminGcAccessPanel: React.FC = () => {
                 </div>
                 <div className="adm-btnrow">
                   <Button
-                    kind="main"
+                    // While the "already has an account" notice asks you to choose, its Stop is the one charcoal button.
+                    kind={pendingAdoption ? 'second' : 'main'}
                     missing={needsCurrent
                       ? { sentence: 'Re-enter your password to continue.', goTo: currentRef }
                       : chosen.length < MIN_SUPPLIED_PASSWORD_LENGTH
