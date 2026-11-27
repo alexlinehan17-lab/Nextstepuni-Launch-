@@ -223,7 +223,8 @@
   }
   .mb-practice .mb-paper-session .mb-session-workspace[data-focus="true"] { grid-template-columns: minmax(0, 1fr); }
   .mb-p-progress { grid-column: 1 / -1; padding: 22px 0 28px; }
-  .mb-practice [data-testid="mark-bank-question-pane"] { position: sticky !important; top: 0; }
+  /* Beats the old dialog sheet's static pane (mark-bank-session-paper.css, 0,3,0 !important). */
+  .mb-practice .mb-paper-session .mb-session-workspace > [data-testid="mark-bank-question-pane"] { position: sticky !important; top: 0 !important; }
   .mb-practice .mb-paper-session .mb-scheme-pane { margin-top: 0 !important; }
   .mb-practice .mb-paper-draft textarea { min-height: 220px; }
   .mb-practice .mb-reveal-area, .mb-practice .mb-grade-area { padding: 0 max(var(--space-6), calc((100% - var(--mb-col)) / 2)) !important; }
