@@ -1,5 +1,7 @@
 /** @license SPDX-License-Identifier: Apache-2.0 */
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { Button } from '../ui/Button';
+import { ChoiceTile } from '../ui/Choice';
 import { REVIEWED_CARDS } from '../MarkBank/cards/physical-education/factory';
 import SourceMaterialReader from '../MarkBank/SourceMaterialReader';
 import PhysicalEducationRubricPanel from '../MarkBank/PhysicalEducationRubricPanel';
@@ -20,7 +22,7 @@ export default function PhysicalEducationTaskCard({ task, saved, onToggleReview,
   const [revealed, setRevealed] = useState(false);
   const [scores, setScores] = useState<Partial<Record<PhysicalEducationScoreId, number>>>({});
   const card = REVIEWED_CARDS.find(item => item.id === task.cardId);
-  if (!card || !card.sourceMaterial || !card.paperFileid) return <button onClick={onOpenInPaper}>Open {task.questionRef} in the full paper</button>;
+  if (!card || !card.sourceMaterial || !card.paperFileid) return <Button onClick={onOpenInPaper}>Open {task.questionRef} in the full paper</Button>;
   return (
     <article className="pt-pe-task mark-bank-theme" aria-label={`${card.questionRef} · ${task.n}`}>
       <header className="pt-pe-task-heading">
@@ -32,12 +34,12 @@ export default function PhysicalEducationTaskCard({ task, saved, onToggleReview,
         <p className="pt-pe-task-prompt">{card.questionText}</p>
         <SourceMaterialReader source={card.sourceMaterial} subjectId={card.subjectId} year={card.year} paperFileid={card.paperFileid} />
         <div className="pt-pe-task-actions">
-          <button type="button" onClick={onToggleReview} aria-pressed={saved}>{saved ? 'Saved to daily review' : 'Add to daily review'}</button>
-          <button type="button" onClick={onOpenInPaper}>Full paper</button>
+          <ChoiceTile compact kind="toggle" chosen={saved} onClick={onToggleReview} label={saved ? 'Saved to daily review' : 'Add to daily review'} />
+          <Button onClick={onOpenInPaper}>Full paper</Button>
         </div>
-        <button type="button" className="pt-pe-task-reveal" aria-expanded={revealed} onClick={() => setRevealed(value => !value)}>
+        <Button block className="pt-pe-task-reveal" aria-expanded={revealed} onClick={() => setRevealed(value => !value)}>
           {revealed ? 'Hide marking scheme' : 'Show marking scheme'}
-        </button>
+        </Button>
         {revealed && <PhysicalEducationRubricPanel card={card} scores={scores} onScore={(id, marks) => setScores(current => ({ ...current, [id]:marks }))} />}
       </div>
     </article>

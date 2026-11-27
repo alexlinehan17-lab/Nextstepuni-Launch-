@@ -13,8 +13,8 @@
  */
 
 import React, { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
-import { Check, ExternalLink, Plus } from 'lucide-react';
-import { Button, IconButton, TextButton } from '../ui/Button';
+import { Check, Plus } from 'lucide-react';
+import { Arrow, Button, IconButton, TextButton } from '../ui/Button';
 import { List, Row } from '../ui/List';
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 import { type PaperAnswerMap, type PaperAnswerQuestion } from '../../types/paperTrail';
@@ -39,7 +39,6 @@ import AudioSourcePlayer from '../MarkBank/AudioSourcePlayer';
 import { asksForQuestion, isModelSubject, markBankLinkForCards } from './atlasModel';
 import { isUnpricedSectionCard, unpricedSectionChip, type SecCard } from '../../types/markBank';
 
-const INK = '#1a1a1a';
 const LVL: Record<string, string> = { higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common' };
 // A few verified booklet formats deliberately allocate more than three pages
 // to one Paper Trail card. Applied Mathematics questions can span four pages;
@@ -184,48 +183,45 @@ const PartsOnThisTopic: React.FC<{ sibling: TopicSibling; topicId: string; onOpe
     return figure && !figure.solution ? [[figure.src, figure] as const] : [];
   })).values()];
   return (
-    <div className="px-4 pt-3 pb-4" data-testid="atlas-parts-on-topic">
-      <p className="text-[10px] font-bold uppercase tracking-[0.12em]" style={{ color: '#7a7068' }}>
+    <div className="ta-parts" data-testid="atlas-parts-on-topic">
+      <p className="t-label ta-parts-label">
         On this topic: {here.length} of {asks.length} parts{cards && marks ? ` · ${marks} marks` : ''}
       </p>
       {figures.map(figure => (
-        <img key={figure.src} src={figure.src} alt={figure.alt} loading="lazy" className="mt-2 rounded-md"
-          style={{ maxWidth: 'min(100%, 320px)', border: '1px solid #eeebe6' }} />
+        <img key={figure.src} src={figure.src} alt={figure.alt} loading="lazy" className="ta-parts-figure" />
       ))}
-      <ol className="mt-2 space-y-2.5">
+      <ol className="ta-parts-list">
         {(cards ?? []).map(card => {
           const stem = card.stem && card.stem !== lastStem ? card.stem : '';
           if (card.stem) lastStem = card.stem;
           return (
             <li key={card.id}>
-              {stem && <p className="text-[12.5px] italic mb-1" style={{ color: '#5a5550' }}>{stem}</p>}
+              {stem && <p className="ta-parts-stem">{stem}</p>}
 
-              <div className="flex items-baseline gap-3">
-                <span className="shrink-0 text-[12px] font-bold tabular-nums" style={{ color: INK, minWidth: 64 }}>{card.questionRef.replace(/^\d{4} [A-Z]{2} /, '')}</span>
-                <span className="flex-1 text-[13.5px] leading-snug" style={{ color: INK }}>{card.questionText}</span>
-                <span className="shrink-0 text-[12px] font-semibold tabular-nums" style={{ color: '#7a7068' }}>{isUnpricedSectionCard(card) ? unpricedSectionChip(card.unpricedSection) : `${card.totalMarks}m`}</span>
+              <div className="ta-parts-row">
+                <span className="ui-readout ta-parts-ref">{card.questionRef.replace(/^\d{4} [A-Z]{2} /, '')}</span>
+                <span className="ta-parts-text">{card.questionText}</span>
+                <span className="ui-readout ta-parts-marks">{isUnpricedSectionCard(card) ? unpricedSectionChip(card.unpricedSection) : `${card.totalMarks}m`}</span>
               </div>
             </li>
           );
         })}
-        {!cards && <li className="h-3 rounded-full animate-pulse" style={{ backgroundColor: 'var(--surface-soft)', width: '70%' }} />}
+        {!cards && <li className="ta-parts-skel" aria-hidden="true" />}
       </ol>
       {elsewhere.length > 0 && (
-        <div className="mt-3 flex flex-wrap items-baseline gap-x-3 gap-y-1.5 text-[12.5px]" style={{ color: '#5a5550' }}>
+        <div className="ta-parts-else">
           <span>The other parts are under</span>
           {elsewhere.map(([id, e]) => (
-            <button key={id} type="button" onClick={() => onOpenTopic?.(id)} disabled={!onOpenTopic}
-              className="rounded-md px-2 py-0.5 font-semibold underline underline-offset-2"
-              style={{ color: INK, border: '1px solid #d0cdc8' }}>
+            <TextButton key={id} arrow="forward" onClick={() => { if (onOpenTopic) onOpenTopic(id); }} aria-disabled={!onOpenTopic || undefined}>
               {e.label} · {e.parts} {e.parts === 1 ? 'part' : 'parts'}
-            </button>
+            </TextButton>
           ))}
         </div>
       )}
       <a href={markBankLinkForCards(here.map(a => a.cardId))} target="_blank" rel="noopener noreferrer"
-        className="mt-3 inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-[13px] font-semibold"
-        style={{ color: INK, border: '1.5px solid #383838' }}>
-        Practise {here.length === 1 ? 'this part' : `these ${here.length} parts`} in the Mark Bank <ExternalLink size={12} />
+        className="ui-part ui-btn ta-parts-practise">
+        <span>Practise {here.length === 1 ? 'this part' : `these ${here.length} parts`} in the Mark Bank</span>
+        <Arrow meaning="forward" size={20} />
       </a>
     </div>
   );

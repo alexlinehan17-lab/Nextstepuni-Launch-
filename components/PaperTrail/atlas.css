@@ -132,3 +132,41 @@
   .ta-card > .ta-scheme { order: 3; }
   .ta-card > .ta-lens { order: 4; }
 }
+/* The parts of a printed question filed under this topic (area 6c): on the page, the system's type;
+   citations and marks in the mono; other topics as links; Practise as a box you press. */
+.ta-parts { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-2) 0 var(--space-3); }
+.ta-parts :is(p, ol) { margin: 0; }
+.ta-parts-label { color: var(--ink-muted); }
+.ta-parts-figure { display: block; max-width: min(100%, 320px); border: 1px solid var(--hairline); border-radius: var(--r-xs); }
+.ta-parts-list { display: flex; flex-direction: column; gap: var(--space-3); padding: 0; list-style: none; }
+.ta-parts-stem { margin-bottom: var(--space-1) !important; color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+.ta-parts-row { display: flex; align-items: baseline; gap: var(--space-3); }
+.ta-parts-ref { flex: none; min-width: 64px; color: var(--ink-primary); }
+.ta-parts-text { flex: 1; min-width: 0; color: var(--ink-primary); font-size: 15px; line-height: 21px; }
+.ta-parts-marks { flex: none; color: var(--ink-secondary); }
+.ta-parts-skel { width: 70%; height: 12px; border-radius: var(--r-xs); background: var(--hairline); }
+.ta-parts-else { display: flex; flex-wrap: wrap; align-items: center; column-gap: var(--space-3); color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.ta-parts-else .ui-link[aria-disabled='true'] { color: var(--ink-muted); cursor: default; }
+.ta-parts-practise.ui-btn { align-self: flex-start; text-decoration: none; }
+/* Politics and Society's practice tasks (area 6c): the shared year menu, search field and buttons;
+   each task on the page under a hairline; marks in the mono; the source pages a ruled row. */
+.pt-politics-feed { display: flex; flex-direction: column; gap: var(--space-3); color: var(--ink-primary); font-family: var(--font-ui); }
+.pt-politics-feed p { margin: 0; }
+.pt-politics-count, .pt-politics-matching { color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.pt-politics-filters { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
+.pt-politics-filters > .ui-field--search { flex: 1 1 200px; }
+.pt-politics-task { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-5) 0; border-top: 1px solid var(--hairline); }
+.pt-politics-task-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-4); }
+.pt-politics-task-head h3 { margin: 0; font-size: 17px; font-weight: 400; line-height: 22px; letter-spacing: -0.015em; }
+.pt-politics-task-head .ui-readout { flex: none; color: var(--ink-secondary); }
+.pt-politics-stem { color: var(--ink-secondary); font-size: 15px; line-height: 21px; white-space: pre-line; }
+.pt-politics-question { font-size: 16px; line-height: 24px; }
+.pt-politics-guide.ui-btn, .pt-politics-more.ui-btn { align-self: flex-start; }
+.pt-politics-feed .mb-source-material-trigger { width: 100%; margin: 0; padding: 10px 0; grid-template-columns: auto minmax(0, 1fr) auto; gap: var(--space-3); border: 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); border-radius: 0; background: none; color: var(--ink-primary); }
+.pt-politics-feed .mb-source-material-trigger:focus-visible { outline: 2px solid var(--outline-strong); outline-offset: 2px; background: none; }
+.pt-politics-feed .mb-source-material-icon { width: 24px; height: 24px; border: 0; border-radius: 0; background: none; color: var(--ink-secondary); }
+.pt-politics-feed .mb-source-material-copy > span { color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; }
+.pt-politics-feed .mb-source-material-copy strong { color: var(--ink-primary); font: 400 16px/21px var(--font-ui); letter-spacing: -0.015em; }
+.pt-politics-feed .mb-source-material-copy small { color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.pt-politics-feed .mb-source-material-open { width: 20px; height: 20px; border: 0; background: none; color: var(--ink-muted); }
+@media (hover: hover) and (pointer: fine) { .pt-politics-feed .mb-source-material-trigger:hover { background: var(--surface-soft); } }
