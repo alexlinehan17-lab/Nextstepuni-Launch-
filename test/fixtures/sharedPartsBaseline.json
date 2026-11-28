@@ -379,9 +379,6 @@
    "button": 10,
    "pop-up": 1
   },
-  "components/activities/CornellNoteSimulator.tsx": {
-   "button": 2
-  },
   "components/activities/KanbanBoard.tsx": {
    "dropdown": 1
   },

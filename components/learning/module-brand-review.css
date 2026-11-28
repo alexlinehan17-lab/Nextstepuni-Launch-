@@ -223,3 +223,11 @@ html[data-version=after] .mr-definition p{font:inherit!important;margin:0!import
 .cn-input-otp [data-slot=input-otp-group]{max-width:100%}.cn-input-otp [data-slot=input-otp-slot]{width:46px;flex:0 1 46px}.cn-input-otp [data-slot=input-otp-slot]>span:last-child{font-size:clamp(14px,43cqi,24px)!important}
 
 .mr-definition-anchor{display:inline;position:relative}.mr-definition{z-index:1000;display:block;padding:14px 16px;border:1px solid var(--module-control-line);background:var(--module-surface);color:var(--module-base-ink);border-radius:8px;font:12px/1.65 "DM Sans",sans-serif;max-width:calc(100vw - 32px);max-height:min(260px,calc(100vh - 32px));overflow:auto;box-sizing:border-box}.mr-definition p{margin:0}.nsu-module-reader .wr-focus-companion .rs-art{display:block;width:100%;height:100%;object-fit:contain}
+/* Area 9: a citation as the agreed reading board draws it (site c-read.css, .c-read-cite): a small
+   readout in the muted ink after the claim; no pill, no fill, no icon; the tap area is grown by an
+   invisible pad. Only the look changes: its words and its popover are Cite's own. */
+.nsu-kobra .mr-citation.mr-citation{position:relative;margin-left:2px;padding:0 3px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:var(--module-muted)!important;font-family:'Departure Mono','Apercu Mono Pro',ui-monospace,monospace!important;font-size:12px!important;line-height:1!important;letter-spacing:.02em;vertical-align:baseline}
+.nsu-kobra .mr-citation.mr-citation>span{color:inherit!important}
+.nsu-kobra .mr-citation.mr-citation svg,.nsu-kobra .mr-citation.mr-citation>span[aria-hidden=true]{display:none!important}
+.nsu-kobra .mr-citation.mr-citation::after{content:"";position:absolute;inset:-14px -12px}
+.nsu-kobra .mr-citation.mr-citation:is(:hover,[data-popup-open]){background:transparent!important;color:var(--module-ink)!important;text-decoration:underline;text-underline-offset:3px}

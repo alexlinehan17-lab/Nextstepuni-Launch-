@@ -41,25 +41,21 @@ const NorthStarCallout: React.FC<NorthStarCalloutProps> = ({ northStar, variant,
   }
 
   if (variant === 'compact') {
+    // A notice on the page (components.md, "Notices"): a small label, the line and the student's own
+    // words, under the section's own rule (every placement opens a ReadingSection). No box, tint, icon
+    // tile or coloured words (area 9).
     return (
       <MotionDiv
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-        className={`my-8 rounded-xl border ${colors.border} ${colors.bg} p-5`}
+        className="ns-note mb-8 flex flex-col gap-1"
       >
-        <div className="flex items-start gap-3">
-          <div className={`w-9 h-9 rounded-lg ${colors.iconBg} flex items-center justify-center shrink-0`}>
-            {CategoryIcon && <CategoryIcon size={18} className={colors.text} />}
-          </div>
-          <div>
-            <p className="text-[10px] font-bold uppercase tracking-widest text-[var(--accent-hex)] mb-1">Your North Star</p>
-            <p className={`text-sm font-semibold ${colors.text} mb-1`}>{message || category?.label}</p>
-            <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] italic leading-relaxed">
-              "{northStar.statement.length > 120 ? northStar.statement.slice(0, 120) + '...' : northStar.statement}"
-            </p>
-          </div>
-        </div>
+        <p className="t-label text-[var(--module-muted)]">Your North Star</p>
+        <p className="t-row text-[var(--module-ink)]">{message || category?.label}</p>
+        <p className="t-sub text-[var(--module-muted)]">
+          "{northStar.statement.length > 120 ? northStar.statement.slice(0, 120) + '...' : northStar.statement}"
+        </p>
       </MotionDiv>
     );
   }
