@@ -27,8 +27,9 @@ import { type AthleteRank, ATHLETE_RANKS } from '../gamificationConfig';
 import { X } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
 
-const SERIF: React.CSSProperties = { fontFamily: "'Source Serif 4', serif" };
-const SANS: React.CSSProperties = { fontFamily: "'DM Sans', system-ui, sans-serif" };
+// One typeface (area 9): the celebration's headings were serif and its words DM Sans.
+const SERIF: React.CSSProperties = { fontFamily: 'var(--font-ui)' };
+const SANS: React.CSSProperties = { fontFamily: 'var(--font-ui)' };
 const TERRACOTTA = '#D85F47';
 const CREAM = '#ffffff';
 const NODE_BG = '#F5EFE3';
@@ -103,19 +104,18 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
           className="theme-compat frame-takeover z-[var(--z-celebration)] overflow-y-auto"
           style={{ backgroundColor: CREAM }}
         >
-          {/* Close button — top-right of the safe box (components/ui/frame.css), neutral outline */}
+          {/* Close — the one leave control, a bare X at the top left of the safe box (area 9). */}
           <div className="frame-safe-box">
           <button
             onClick={onClose}
             aria-label="Close"
-            className="frame-hit absolute top-6 right-6 w-9 h-9 rounded-full flex items-center justify-center transition-colors hover:bg-black/[0.04]"
-            style={{ border: '1px solid rgba(0,0,0,0.15)', color: 'rgba(0,0,0,0.6)' }}
+            className="ui-part ui-icon-btn absolute top-2 left-2"
           >
-            <X size={16} strokeWidth={2} />
+            <X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />
           </button>
           </div>
 
-          <div className="frame-page frame-foot [--frame-pad-top:2rem] [--frame-pad-bottom:3rem] min-h-screen flex flex-col items-center px-6">
+          <div className="frame-page frame-foot [--frame-pad-top:4rem] [--frame-pad-bottom:3rem] min-h-screen flex flex-col items-center px-6">
             {/* ── Editorial two-column hero ── */}
             <MotionDiv
               initial={{ opacity: 0, y: 16 }}
@@ -200,9 +200,8 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
                     <p
                       style={{
                         ...SERIF,
-                        fontStyle: 'italic',
                         fontSize: 'clamp(22px, 2.6vw, 32px)',
-                        color: TERRACOTTA,
+                        color: TEXT,
                         margin: 0,
                         marginTop: 6,
                         lineHeight: 1.25,
