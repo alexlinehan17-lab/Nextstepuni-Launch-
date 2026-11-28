@@ -2126,8 +2126,6 @@ const ExamClock: React.FC<{
   // Floating over the paper: Close at its left, the time in the pixel mono, a thin track, pause and reset.
   return (
     <div className="pv-clock" role="timer" aria-live="off" data-over={over || undefined}>
-      <IconButton label="Close exam mode" onClick={onClose}
-        icon={<X className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
       <div className="pv-clock-read">
         <span className="ui-readout pv-clock-time">
           {over ? `+${fmtClock(-remaining)}` : fmtClock(remaining)}
@@ -2142,6 +2140,9 @@ const ExamClock: React.FC<{
           : <Play className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
       <IconButton label="Reset timer" onClick={onReset}
         icon={<RotateCcw className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+      {/* Said in words at the end, not an X at the start: the viewer's Close is the screen's one leave
+          control (navigation.md; area 9, as the Full Loop's bar). The name is unchanged. */}
+      <TextButton tone="quiet" className="pv-clock-close" aria-label="Close exam mode" onClick={onClose}>Close</TextButton>
     </div>
   );
 };
