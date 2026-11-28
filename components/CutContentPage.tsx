@@ -4,9 +4,11 @@
  */
 
 import React, { useMemo, useState } from 'react';
-import { ArrowLeft, Printer, ArrowRight, FileText } from 'lucide-react';
+import { ArrowRight, FileText, Printer } from 'lucide-react';
 import { CUT_CONTENT, type CutContentEntry, type CutAction } from '../data/cutContent';
 import { COLORS } from '../design/tokens';
+import PageHeader from './ui/PageHeader';
+import { IconButton } from './ui/Button';
 
 interface CutContentPageProps {
   onBack: () => void;
@@ -215,41 +217,19 @@ const CutContentPage: React.FC<CutContentPageProps> = ({ onBack }) => {
 
   return (
     <div className="min-h-screen print:bg-white theme-compat" style={{ backgroundColor: PAGE }}>
-      {/* Masthead */}
-      <header
-        className="sticky top-0 z-30 px-4 md:px-10 backdrop-blur-sm border-b print:static print:bg-white print:backdrop-blur-none"
-        style={{ backgroundColor: 'color-mix(in srgb, var(--page-canvas) 90%, transparent)', borderColor: HAIRLINE, paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}
-      >
-        <div className="max-w-4xl mx-auto flex items-center justify-between gap-4">
-          <div className="flex items-center gap-4 min-w-0">
-            <button
-              onClick={onBack}
-              className="p-2.5 rounded-xl transition-colors hover:bg-white print:hidden shrink-0"
-              style={{ border: '1px solid rgba(0,0,0,0.08)', backgroundColor: 'white' }}
-              aria-label="Back to home"
-            >
-              <ArrowLeft size={18} style={{ color: INK }} />
-            </button>
-            <div className="min-w-0">
-              <MicroLabel color={ACCENT}>Pre-accreditation review</MicroLabel>
-              <h1
-                className="text-lg md:text-xl font-semibold leading-tight mt-0.5"
-                style={{ fontFamily: SERIF, color: INK }}
-              >
-                Content Verification Log
-              </h1>
-            </div>
-          </div>
-          <button
-            onClick={() => window.print()}
-            className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-[13px] font-semibold transition-colors hover:bg-white print:hidden shrink-0"
-            style={{ border: '1px solid rgba(0,0,0,0.1)', backgroundColor: 'white', color: MUTED, fontFamily: "'DM Sans', sans-serif" }}
-          >
-            <Printer size={15} />
-            <span className="hidden sm:inline">Export / Print</span>
-          </button>
+      {/* Masthead: the shared page bar (Back at the top left, the small line over the name, one
+          action at the right), sticky as before; printed with its words and without its buttons, as before (area 9). */}
+      <div className="sticky top-0 z-30 bg-white dark:bg-surface-canvas print:static print:[&_button]:hidden">
+        <div className="max-w-4xl mx-auto">
+          <PageHeader
+            onBack={onBack}
+            backLabel="Back to home"
+            eyebrow="Pre-accreditation review"
+            title="Content Verification Log"
+            actions={<IconButton label="Export / Print" onClick={() => window.print()} icon={<Printer className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />}
+          />
         </div>
-      </header>
+      </div>
 
       <div className="max-w-4xl mx-auto px-4 md:px-10 py-6 md:py-9">
         {/* Executive summary */}

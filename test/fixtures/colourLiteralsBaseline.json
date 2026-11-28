@@ -62,7 +62,7 @@
   },
   "components/CutContentPage.tsx": {
    "hex": 2,
-   "rgb(": 4
+   "rgb(": 2
   },
   "components/DefinitionDrill/DefinitionDrill.tsx": {
    "hex": 16,
@@ -115,10 +115,6 @@
   },
   "components/InnovationZone.tsx": {
    "hex": 38
-  },
-  "components/JCComingSoon.tsx": {
-   "hex": 6,
-   "tailwind [#…]": 4
   },
   "components/LanguageMasteryModule.tsx": {
    "hex": 7
