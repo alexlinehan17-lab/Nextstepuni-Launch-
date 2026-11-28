@@ -86,7 +86,7 @@ Pilot reference implementation: **Mastering Active Recall** (`compliance/evidenc
 ## Conventions
 
 - All components are functional with hooks; no class components
-- Styling: Tailwind utility classes with dark mode (`dark:` prefix), glass-morphism effects, custom gradients
+- Styling: the shared parts in `components/ui/` and the tokens in `index.css` (see "Visual Design System" below); Tailwind utility classes for layout, with `dark:` where a token does not already cover dark mode. No glass, no gradients
 - Animations: Framer Motion wrappers (`MotionDiv`, `MotionButton` with `as any` cast)
 - Reusable UI primitives in `ModuleShared.tsx`: `Highlight` (interactive tooltip), `ReadingSection` (content block), `MicroCommitment` (action prompt), `ActivityRing` (SVG progress)
 - All source files carry Apache-2.0 license headers
@@ -118,220 +118,57 @@ Pilot reference implementation: **Mastering Active Recall** (`compliance/evidenc
 
 ## Visual Design System — Module Components
 
-<!-- migration notes
-Brand-accent pivot landed 2026-05-22:
-  Old primary: teal #2A7D6F (with #1a5a4e dark, #e8f5f2 tint, #1a6358 dark text)
-  New primary: orange #F26B1F (with #B54D14 dark, #FDEEDF tint, #8C3A0E dark text)
-  New semantic: success green #3A8D5F (with #1F5F3E dark text, #E8F2EC tint)
+The whole app, modules included, is one agreed design system: "the sign-in standard", chosen by Alex on
+24 November 2026 and settled screen by screen on 26 November 2026. It replaced the look this section used to
+teach (orange pill buttons with a hard shadow, Source Serif headings, 2px ink cards, tinted chips, callouts
+with a coloured side rail). Do not bring any of that back.
 
-Source of truth — all three layers must stay in sync when colours change:
-  - design/tokens.ts            inline-style / SVG hex literals
-  - tailwind.config.ts          named Tailwind tokens (accent, accentDark, success, …)
-  - index.html :root            CSS variables consumed by bg-[var(--accent-hex)]
+**The specification** is the design skill, `~/.claude/skills/nextstepuni-design/` (`SKILL.md`, its "Never
+ship" table, and `references/`: `tokens.md`, `components.md`, `navigation.md`, `mobile.md`, `patterns.md`,
+`motion.md`). Alex's rulings in `references/decisions.md` outrank everything else, this file included. Any UI
+work starts there. The rules in brief:
 
-Token rename: the old `brand.teal` Tailwind token is gone. The top-level
-`accent` token was the abandoned rust #CC785C pivot and is now the canonical
-brand orange. Migration of the 700+ hardcoded #2A7D6F literals is happening
-in phases — see git log for the per-step rollout.
+- **One typeface**, ABC Diatype, sentence case, through the named type styles in `index.css` (`t-title`,
+  `t-heading`, `t-row`, `t-body`, `t-sub`, `t-meta`, `t-label`; `t-readout` / `ui-readout` is the mono,
+  Departure Mono, for timers, counters, dates and citations). Headlines are regular weight. No serif, no
+  italic for emphasis, no text under 11px (11px only in the small capitals label).
+- **The page is white** (dark: `#181818`). Depth is four levels: on the page (read it), a box with a 1px line
+  and no shadow (press it), the one raised sheet per screen (`--lift`), and floating layers (menus, sheets,
+  messages; `--float`). Content that cannot be pressed is not boxed: lay it on the page under a hairline.
+- **Charcoal does the work**: one charcoal main button per view (`--action`). There is no orange button,
+  fill, border, tint or tab marker. **Chosen is an ink outline** with a drawn tick (round for "pick one",
+  rounded square for "pick several").
+- **Orange (`--nsu-orange`, `#eb692a`) belongs to the artwork**: the Star Crew, each tool's drawing, the
+  wordmark's full stop, one live word, and the student's own value in a graph. Onboarding's own pages keep
+  `#f26b1f` (`--setup-orange`). **Green (`--success-hex`) is for done and correct** marks; feedback
+  sentences are ink, never green text.
+- **Never**: emoji, sparkle or rocket icons, an icon in a tinted tile, pills or tinted tags, a coloured
+  stripe down one side of anything, gradients, glows, cream, a grey page or a grey-filled control, a hard
+  offset shadow, a box inside a box, a centred pop-up card on a phone (except the two-button confirm), a
+  top-right X, two leave controls on one screen, a target under 44 x 44.
+- **Each screen keeps its character**: the system is the frame (bars, the one leave control, margins, type,
+  buttons, chosen state, colours, safe areas); a screen's own drawing, headline, pictures and graphs stay.
 
-Rule: orange (`accent`) is for brand accent and selected states. It does
-NOT carry "good/correct/complete" semantics — use `success` for those.
-The old "teal feels positive" coincidence does not carry over to orange.
+**In the code** the system lives in three places; use them, never a hand-made copy:
 
-One orange, 2026-10-25: `accent` moved from #F26B1F to #eb692a, the Kobra
-theme's `--nsu-orange` (components/approved-ui-theme.css), which is now also
-published on `:root` in index.css. New styles use `var(--nsu-orange)`; the
-remaining #F26B1F literals are legacy and get replaced screen by screen.
--->
+- **Tokens**: the `:root` and `.dark` blocks at the top of `index.css` (surfaces `--surface-canvas`,
+  `--surface-paper`, `--surface-soft`, `--surface-raised`; ink `--ink-primary`, `--ink-secondary`,
+  `--ink-muted`; lines `--hairline`, `--outline-soft`, `--outline-strong`; `--action`; spacing `--space-*`;
+  radii `--r-*`; motion `--t-*`, `--ease-*`), mirrored for TypeScript in `design/tokens.ts` and for Tailwind
+  in `tailwind.config.ts`. Inside the module reader the `--module-*` names (`components/learning/`) carry the
+  same roles.
+- **Shared parts**: `components/ui/` (Button, TextButton, IconButton, Choice, Menu, Sheet and Confirm,
+  OverScreen, Message and StandingMessage, TopBar / TabBar / PinnedFooter in `Bars.tsx`, PageHeader, Row and
+  List, CheckRow, the selection bar (`HorizontalTabs`), Field and SearchField, EmptyState / LoadingShape /
+  ErrorState in `States.tsx`) with `parts.css`, and the frame (`frame.css`, `Frame.tsx`), which owns the
+  safe areas: only the bars, the pinned footer, sheets and full overlays touch a screen edge. When a part
+  cannot do what a screen needs, extend the part (with its test), then use it.
+- **Guards** that only go down: `test/colourLiterals.guard.test.ts` (a typed colour), `test/sharedParts.guard.test.ts`
+  (a hand-made button, menu, pop-up or header) and `test/frameEdges.guard.test.ts` (a screen positioning
+  against the raw edge). Lower a baseline with the `*_UPDATE=1` run each header describes; never raise one.
 
-### Core Colours
-
-| Token | Hex | CSS var | Tailwind | Usage |
-|-------|-----|---------|----------|-------|
-| Primary accent | `#eb692a` | `--accent-hex` / `--nsu-orange` | `accent` | Active states, slider thumbs, progress fills, CTA buttons, accent number badges |
-| Accent dark | `#B54D14` | `--accent-dark-hex` | `accentDark` | Button bottom-border + drop shadow, paired with the chunky-button language |
-| Accent tint | `#FDEEDF` | `--accent-tint-hex` | `accentTint` | Chip backgrounds, active card tints, callout backgrounds |
-| Accent dark text | `#8C3A0E` | `--accent-dark-text-hex` | `accentDarkText` | Italic body text inside accent callouts; readable on accent tint |
-| Success | `#3A8D5F` | `--success-hex` | `success` | Positive/correct/complete states. NOT a brand colour |
-| Success tint | `#E8F2EC` | `--success-tint-hex` | `successTint` | Backgrounds for success callouts and "good" pills |
-| Success dark text | `#1F5F3E` | `--success-dark-text-hex` | `successDarkText` | Italic body text inside success callouts |
-| Page background | `#f0f0f0` | — | — | Module page background (not the cream shell) |
-| Card background | `#ffffff` | — | — | All cards without exception |
-| Card border | `#1a1a1a` | — | — | Primary card border colour — thick, bold |
-| Muted border | `#d0cdc8` | — | — | Secondary/inactive borders |
-| Body text | `#1a1a1a` | — | — | Headings and primary text |
-| Muted text | `#7a7068` | — | — | Subtitles, descriptions |
-| Label text | `#9e9186` | — | — | Uppercase section labels |
-| Productive blue | `#5B8FD4` | — | — | Only in productive/intrusive simulation pairs (Working Memory module) |
-| Intrusive pink | `#E85D75` | — | — | Only in productive/intrusive simulation pairs — never used as general UI colour |
-
-### Accent vs. success — the most important rule
-
-These two colours are not interchangeable.
-
-- **Accent (orange `#F26B1F`)** signals "this is the brand", "this is the action to take", "this is selected". Use it for primary buttons, selected cards, active tabs, focus rings, the brand number on a stat.
-- **Success (green `#3A8D5F`)** signals "this is correct", "this is complete", "you got it right", "your reflection scored well". Use it for completion ticks, "Good" answer states, healthy metric zones, correct-answer feedback.
-
-If you ever find yourself reaching for orange to mean "good" — stop, and use success instead. The fact that teal used to do double duty was a coincidence of the old palette. Orange does not carry that meaning.
-
-### What is NEVER acceptable
-- Bright/saturated extra accent colours outside the token system — any shade of amber, yellow, lime, etc., as a primary UI colour
-- Bright green other than the success token (e.g. #4ade80, #22c55e) — any shade
-- Purple as a UI accent
-- Red as a primary colour — only acceptable as a semantic "harmful thought" left-border accent
-- Dark/near-black backgrounds (e.g. #1a1a2e, #0f2d3d) inside ANY module component
-- Rainbow multi-colour card sequences (blue card, then orange card, then red card)
-- Coloured card backgrounds as a general pattern — white only, with the one exception below
-- Gradients on cards or backgrounds
-- Using the accent orange for completion/correctness — that's the success green's job
-
-### The One Colour Exception — Simulation Pairs Only
-The blue (#5B8FD4) and pink (#E85D75) colour pair is permitted ONLY in interactive simulations that explicitly contrast productive vs intrusive cognition (e.g. Working Memory Under Threat). This is a deliberate semantic pair, not a general palette.
-
----
-
-### Typography
-
-| Element | Font | Size | Weight | Colour |
-|---------|------|------|--------|--------|
-| Module title | Source Serif 4 | 24–28px | 600 | #1a1a1a |
-| Section heading | Source Serif 4 | 18–22px | 600 | #1a1a1a |
-| Concept card term | Source Serif 4 | 15–16px | 600 | #1a1a1a |
-| Body text | DM Sans | 14–15px | 400 | #3a3530 |
-| Section label | DM Sans | 10–11px | 700 | #9e9186 — UPPERCASE, letter-spacing 0.12em |
-| Muted description | DM Sans | 12–13px | 400 | #7a7068 |
-| Score/stat number | Source Serif 4 | 32–48px | 700 | #F26B1F |
-
----
-
-### Card System
-
-**Primary card** — default for all interactive elements:
-- `background: white`
-- `border: 2px solid #1a1a1a`
-- `border-radius: 14–16px`
-- `padding: 18–24px`
-
-**Active/focus card** — for current input or selected state:
-- `background: #FDEEDF` (accent tint)
-- `border: 2px solid #F26B1F` (accent)
-- `border-radius: 14px`
-
-**Muted/inactive card** — for locked or secondary states:
-- `background: white`
-- `border: 1.5px solid #d0cdc8`
-- `border-radius: 14px`
-
-**Callout** — for insight text, key takeaways:
-- `background: #FDEEDF` (accent tint)
-- `border-left: 3px solid #F26B1F` (accent)
-- `border-radius: 0 10px 10px 0`
-- `padding: 12px 16px`
-- Text: italic, 14px, `#8C3A0E` (accent dark text)
-
-**Success callout** — for completion / correct / "you got it" moments:
-- `background: #E8F2EC` (success tint)
-- `border-left: 3px solid #3A8D5F` (success)
-- `border-radius: 0 10px 10px 0`
-- `padding: 12px 16px`
-- Text: italic, 14px, `#1F5F3E` (success dark text)
-
-**Never**: coloured card backgrounds outside the accent / success tint system. No blue, yellow, raw orange (use the tint), or red as card surfaces.
-
----
-
-### Buttons
-
-**Primary CTA** — high-commitment actions only (Start session, Begin module):
-- `background: #F26B1F` (accent)
-- `border-radius: 100px` (full pill)
-- `border-bottom: 3px solid #B54D14` (accent dark)
-- `box-shadow: 0 4px 0 #B54D14`
-- `padding: 13px 28px`
-- `font-size: 15px`, `font-weight: 600`, white text
-- Press animation: `translateY(3px)`, shadow reduces
-
-**Secondary action** — accent outline:
-- `background: white`, `color: #F26B1F`
-- `border: 2px solid rgba(242,107,31,0.3)`
-- `border-radius: 20px`, `padding: 10px 20px`
-
-**Neutral action** — Reset, Cancel, inactive:
-- `background: white`, `color: #7a7068`
-- `border: 2px solid #d0cdc8`
-- `border-radius: 20px`, `padding: 10px 20px`
-
-**Ghost** — text-only:
-- No border, no background
-- `color: #9e9186`, `font-size: 13px`
-
-**Never**: multi-colour button sets where each button is a different colour. Buttons signalling "correct" or "complete" use the success token, not accent.
-
----
-
-### Chips & Pills
-
-**Category chip** — above section titles:
-- `background: #FDEEDF` (accent tint)
-- `color: #8C3A0E` (accent dark text)
-- `border: 1px solid rgba(242,107,31,0.2)`
-- `border-radius: 20px`, `padding: 4px 12px`
-- Text: UPPERCASE, 10–11px, font-weight 700, letter-spacing 0.06em
-
-**Detected/active chip** — when a quality is detected (positive feedback — use success):
-- `background: #E8F2EC` (success tint), `color: #1F5F3E` (success dark text)
-- `border: 2px solid #3A8D5F` (success)
-- Prefix: `✓` in `#3A8D5F`
-
-**Undetected/inactive chip**:
-- `background: white`, `color: #b0a898`
-- `border: 2px solid #d0cdc8`
-- Prefix: `–` in #d0cdc8
-
----
-
-### Interactive Element Patterns
-
-**Numbered badges** (on concept cards, checklist items, stepper steps):
-- Shape: circle OR rounded square (consistent within a component)
-- Active (current step in a sequence): `background: #F26B1F` (accent), white text
-- Completed (already done): `background: #3A8D5F` (success), white text
-- Inactive/locked: `background: #d0cdc8` or `#e0dbd4`, `color: #9e9186`
-- Size: 32–40px, font Source Serif 4, font-weight 700
-- Never: multi-colour rainbow numbered sequences
-
-**Stepper/progress dots**:
-- Active step: `background: #F26B1F` (accent), size 40–44px
-- Completed step: `background: #3A8D5F` (success)
-- Inactive: `background: #e0dbd4`, `color: #9e9186`
-- Connector line: `background: #d0cdc8`, height 2px
-
-**Sliders**:
-- Thumb: accent rounded square — `#F26B1F`
-- Track: `background: #e0dbd4`, height 6px
-- Value label: `color: #F26B1F`, never red
-- Left/right endpoint labels: `color: #7a7068`, italic for example quotes
-
-**Progress bars**:
-- Fill (in-progress): `background: #F26B1F` (accent)
-- Fill (completed): `background: #3A8D5F` (success)
-- Track: `background: #e0dbd4`, height 8px, border-radius full
-- Percentage label: matches the fill colour
-
-**Flip/reveal cards** (e.g. Hope Circuit Diagnostic):
-- Front: white, `border: 2px solid #1a1a1a`, bold serif text centred
-- Bottom label: `"TAP TO REVEAL"` — uppercase, 10px, #9e9186
-- Revealed state: `background: #FDEEDF` (accent tint), `border-color: #F26B1F`
-
-**Drag-to-reorder lists** (e.g. Pre-Drive Checklist):
-- Row card: white, `border: 2px solid #1a1a1a`, `border-radius: 14px`
-- Number badge: accent circle `#F26B1F` — ALL items same colour, not rainbow
-- Drag handle: `color: #d0cdc8`, left side
-- Text: Source Serif 4, 16px, bold
-
-**Connector arrows between steps** (e.g. Downward Arrow):
-- Vertical line: 2px, `background: #d0cdc8`
-- Chevron: inline SVG, `stroke: #F26B1F`, strokeWidth 2.5
+The simulation pair blue `#5B8FD4` / pink `#E85D75` remains the one sanctioned off-token pair, and only in
+simulations that contrast productive and intrusive cognition (Working Memory Under Threat).
 
 ---
 
@@ -339,11 +176,8 @@ The blue (#5B8FD4) and pink (#E85D75) colour pair is permitted ONLY in interacti
 
 Whenever content has 3 or more named concepts with descriptions, use ConceptCardGrid from ModuleShared.tsx — never embed as "1) Term (description), 2) Term..." prose.
 
-Card: white, `border: 2px solid #1a1a1a`, `border-radius: 14px`, `padding: 16–18px`
-Number badge: accent circle `#F26B1F`, Source Serif 4, 14px bold, white text
-Term: Source Serif 4, 15px, bold, #1a1a1a
-Description: DM Sans, 12–13px, #5a5550
-Highlight variant (key concept): `background: #FDEEDF` (accent tint), `border: 2px solid #F26B1F`, add "KEY LEVER" chip
+Its look comes from the system above (no 2px ink card, no orange badge, no serif); change it in the shared
+component, never per module.
 
 ---
 
