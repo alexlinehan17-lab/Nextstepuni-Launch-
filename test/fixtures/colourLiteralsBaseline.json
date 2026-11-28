@@ -57,10 +57,6 @@
   "components/CourseworkStudio/model.ts": {
    "hex": 3
   },
-  "components/CutContentPage.tsx": {
-   "hex": 2,
-   "rgb(": 2
-  },
   "components/DefinitionDrill/DefinitionDrill.tsx": {
    "hex": 16,
    "tailwind [#…]": 2
@@ -153,10 +149,6 @@
   },
   "components/NorthStarCategoryIcon.tsx": {
    "hex": 10
-  },
-  "components/NorthStarOnboarding.tsx": {
-   "hex": 10,
-   "tailwind [#…]": 5
   },
   "components/Onboarding.desktop.tsx": {
    "hex": 53,
