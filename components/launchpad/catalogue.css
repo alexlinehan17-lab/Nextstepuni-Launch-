@@ -142,3 +142,5 @@
 .lp7-catalogue .jp-reference :is(.jp-guide-header h2, .jp-guide-rate dd, .jp-guide-shop-title) { font-family: var(--font-ui); font-weight: 400; }
 .lp7-catalogue .jp-reference .jp-guide-header .jp-guide-eyebrow,
 .lp7-catalogue .jp-reference .jp-guide-eyebrow { font-family: var(--font-ui); font-weight: 400; color: var(--ink-muted); }
+/* Every rate in ink: orange belongs to the artwork and the student's own value in a graph (area 9). */
+.lp7-catalogue .jp-reference .jp-guide-rate[data-featured] dd { color: var(--ink-primary); }

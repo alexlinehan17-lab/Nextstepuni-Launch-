@@ -79,7 +79,7 @@ const OpenDoor: React.FC = () => {
                   <span className="text-[13px] font-semibold text-[#1A1A1A]">{l.label}</span>
                   <span className="text-[13px] text-right">
                     <span className="line-through text-[#b0a89e] mr-1.5">{l.sticker}</span>
-                    <span className="font-bold" style={{ color: COLORS.successDarkText }}>{l.open}</span>
+                    <span className="font-bold text-[var(--ink-primary)]">{l.open}</span>
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 mt-1">
