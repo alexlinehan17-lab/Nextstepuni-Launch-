@@ -26,9 +26,6 @@
   "components/AnswerArchitect/AnswerArchitect.tsx": {
    "button": 1
   },
-  "components/AppRouter.tsx": {
-   "button": 2
-  },
   "components/AuthActionCard.tsx": {
    "button": 2
   },

@@ -29,10 +29,12 @@ export interface FieldProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 
   help?: ReactNode;
   /** What is wrong and what to do; marks the field invalid. */
   error?: ReactNode;
+  /** A control at the trailing edge inside the field (an IconButton: a password's Show / Hide). */
+  end?: ReactNode;
 }
 
 export const Field = React.forwardRef<HTMLInputElement, FieldProps>(function Field(
-  { label, help, error, id, className = '', type = 'text', ...props },
+  { label, help, error, end, id, className = '', type = 'text', ...props },
   ref,
 ) {
   const ownId = useId();
@@ -41,15 +43,20 @@ export const Field = React.forwardRef<HTMLInputElement, FieldProps>(function Fie
   return (
     <div className={`ui-part ui-field ${className}`.trim()}>
       {label ? <label className="ui-field-label" htmlFor={inputId}>{label}</label> : null}
-      <input
-        {...props}
-        ref={ref}
-        id={inputId}
-        type={type}
-        className="ui-field-input"
-        aria-invalid={error ? true : undefined}
-        aria-describedby={error || help ? noteId : undefined}
-      />
+      {(() => {
+        const input = (
+          <input
+            {...props}
+            ref={ref}
+            id={inputId}
+            type={type}
+            className="ui-field-input"
+            aria-invalid={error ? true : undefined}
+            aria-describedby={error || help ? noteId : undefined}
+          />
+        );
+        return end ? <span className="ui-field-wrap">{input}<span className="ui-field-end">{end}</span></span> : input;
+      })()}
       {error ? <p id={noteId} className="ui-field-error" role="alert">{error}</p>
         : help ? <p id={noteId} className="ui-field-help">{help}</p> : null}
     </div>

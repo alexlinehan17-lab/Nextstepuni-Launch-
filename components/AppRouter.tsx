@@ -1,6 +1,5 @@
 import { getBlockId } from './subjectData';
 import { queueTopicStudy, queueTopicPractice } from '../utils/topicLaunch';
-import { COLORS } from '../design/tokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -18,8 +17,9 @@ import {
   subscribeToRegistrationProvisioning,
 } from '../utils/registrationProvisioning';
 import { LoadingSpinner } from './LoadingSpinner';
-import { Button } from './ui/Button';
+import { Button, IconButton } from './ui/Button';
 import { ErrorState } from './ui/States';
+import { Field } from './ui/Field';
 import { LoadingCrewProvider } from '../contexts/LoadingCrewContext';
 import { getToolLoadingLabel } from '../utils/loadingLabels';
 import { KnowledgeTree, type CategoryType } from './KnowledgeTree';
@@ -956,6 +956,7 @@ const ChangePasswordModal: React.FC<{ user: SessionUser; onComplete: () => Promi
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+  const passwordRef = useRef<HTMLInputElement>(null);
 
   const handleChangePassword = async () => {
     if (newPassword.length < 12) { setError('Password must be at least 12 characters.'); return; }
@@ -975,38 +976,42 @@ const ChangePasswordModal: React.FC<{ user: SessionUser; onComplete: () => Promi
     setIsLoading(false);
   };
 
-  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all bg-white dark:bg-surface-paper border-2 border-zinc-200 dark:border-zinc-700 focus:border-accent";
+  const tooShort = newPassword.length < 12;
+  const tooLong = newPassword.length > 128;
+  // The button never waits silently: what is still needed is said directly above it, in today's words.
+  const stillNeeded = tooLong ? 'Password must be no more than 128 characters.'
+    : tooShort ? `${12 - newPassword.length} more character${12 - newPassword.length !== 1 ? 's' : ''} needed` : null;
 
+  // The sign-in standard (area 9): the words on the page, the shared field and the charcoal button.
   return (
-    <div className="min-h-screen flex items-center justify-center p-5 bg-white dark:bg-surface-canvas">
-      <div className="w-full max-w-md bg-white dark:bg-surface-paper rounded-2xl p-8 md:p-10" style={{ border: '2px solid #1a1a1a' }}>
-        <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Set a new password</h2>
-        <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Your password was reset by your guidance counsellor. Please choose a new password to continue.</p>
-        <div className="space-y-4">
-          <div>
-            <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>New Password</label>
-            <div className="relative">
-              <input type={showPassword ? 'text' : 'password'} value={newPassword} onChange={e => { setNewPassword(e.target.value); setError(''); }} placeholder="Choose a new password" className={inputClass} autoFocus />
-              <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
-                {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
-              </button>
-            </div>
-            {newPassword.length > 0 && newPassword.length < 12 && (
-              <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{12 - newPassword.length} more character{12 - newPassword.length !== 1 ? 's' : ''} needed</p>
-            )}
-            {newPassword.length >= 12 && newPassword.length <= 128 && (
-              <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: COLORS.accent }}><Check size={12} /> Looks good</p>
-            )}
-          </div>
-          {error && <p className="text-sm text-red-500 font-medium">{error}</p>}
-          <button
-            onClick={handleChangePassword}
-            disabled={isLoading || newPassword.length < 12 || newPassword.length > 128}
-            className="w-full py-3.5 rounded-full text-white text-[15px] font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-            style={{ backgroundColor: COLORS.accent, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 4px 0 var(--accent-dark-hex)' }}
-          >
+    <div className="min-h-screen flex items-center justify-center px-6 py-10 bg-white dark:bg-surface-canvas">
+      <div className="w-full max-w-md flex flex-col gap-2">
+        <h2 className="t-title text-[var(--ink-primary)]">Set a new password</h2>
+        <p className="t-sub">Your password was reset by your guidance counsellor. Please choose a new password to continue.</p>
+        <div className="mt-6 flex flex-col gap-4">
+          <Field
+            ref={passwordRef}
+            label="New Password"
+            type={showPassword ? 'text' : 'password'}
+            value={newPassword}
+            onChange={e => { setNewPassword(e.target.value); setError(''); }}
+            placeholder="Choose a new password"
+            autoComplete="new-password"
+            autoCapitalize="off"
+            autoCorrect="off"
+            spellCheck={false}
+            enterKeyHint="done"
+            autoFocus
+            error={error || undefined}
+            help={!stillNeeded ? <span className="inline-flex items-center gap-1"><Check size={16} className="text-[var(--success-hex)]" aria-hidden="true" /> Looks good</span> : undefined}
+            end={<IconButton label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} onClick={() => setShowPassword(!showPassword)}
+              icon={showPassword ? <EyeOff className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" /> : <Eye className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />}
+          />
+          <Button kind="main" size="lg" block
+            missing={stillNeeded ? { sentence: stillNeeded, goTo: () => passwordRef.current?.focus() } : undefined}
+            onClick={() => { if (!isLoading) void handleChangePassword(); }}>
             {isLoading ? 'Saving...' : 'Set Password'}
-          </button>
+          </Button>
         </div>
       </div>
     </div>

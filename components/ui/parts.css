@@ -776,6 +776,10 @@
 }
 .ui-field-input::placeholder { color: var(--ink-muted); opacity: 1; }
 .ui-field--search .ui-field-input { height: 44px; padding-left: 44px; }
+/* A field with a control at its trailing edge (Field `end`): the control sits inside the field's
+   48px row, the text stops short of it. */
+.ui-field-wrap:has(> .ui-field-end) .ui-field-input { padding-right: 52px; }
+.ui-field-end { position: absolute; top: 2px; right: 2px; bottom: 2px; display: flex; align-items: center; }
 /* The browser's own clear button once something is typed (a blue x in Chrome): the system's X, in
    ink-3, the same glyph as Close. It still clears the field, as the browser's does. */
 .ui-field--search .ui-field-input::-webkit-search-cancel-button {

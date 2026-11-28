@@ -90,3 +90,17 @@ test('a control that focuses itself on arrival (Mark Bank\'s Reveal) is quiet un
   const session = readFileSync(join(process.cwd(), 'components/MarkBank/SessionScreen.tsx'), 'utf8');
   expect(session).toMatch(/className="mb-reveal-button"\s+autoFocus=\{answerVariants\.length === 0\}\s+\/\/[^\n]*\n\s+data-quiet-focus=\{answerVariants\.length === 0 \? quietFocus\(\) : undefined\}/);
 });
+
+test('a Field can carry a control at its trailing edge (a password\'s Show), inside the field; a plain Field is unchanged', async () => {
+  const { Field } = await import('@/components/ui/Field');
+  const { IconButton } = await import('@/components/ui/Button');
+  const { container } = render(<>
+    <Field label="New Password" type="password" end={<IconButton label="Show password" icon={<span />} onClick={() => {}} />} />
+    <Field label="First name" />
+  </>);
+  const input = screen.getByLabelText('New Password');
+  expect(input.parentElement).toHaveClass('ui-field-wrap');
+  expect(input.parentElement?.querySelector('.ui-field-end button')).toHaveAccessibleName('Show password');
+  expect(screen.getByLabelText('First name').parentElement).toHaveClass('ui-field');
+  expect(container.querySelectorAll('.ui-field-wrap')).toHaveLength(1);
+});
